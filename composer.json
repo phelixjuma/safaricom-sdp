@@ -1,0 +1,31 @@
+{
+    "name": "phelix/safaricom-sdp",
+    "description": "An encapsulation of the Safaricom SDP platform eg premium sms (MT and MO), bulk sms et al",
+    "keywords": ["phelix", "safaricom", "prsp", "bulk sms", "sdp", "premium sms"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Phelix Juma",
+            "email": "jumaphelix@kuzalab.com"
+        }
+    ],
+    "type": "package",
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "require": {
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "ext-iconv": "*",
+        "ext-curl": "*",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phelix\\SafaricomSDP\\": "src/"
+        }
+    }
+}
