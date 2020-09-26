@@ -54,10 +54,10 @@ final class Request {
      * @param $uri
      * @param null $token
      * @param null $body
-     * @param null $query
+     * @param null $query_params
      * @return $this
      */
-    public function request($method, $uri, $token=null, $body=null, $query=null) {
+    public function request($method, $uri, $token=null, $body=null, $query_params=null) {
 
         try {
 
@@ -66,53 +66,64 @@ final class Request {
             }
 
             $options['headers'] = $this->headers;
+            $options['verify'] = false;
 
             if (!is_null($body)) {
-                $options['body'] = $body;
+                $options['json'] = $body;
             }
-            if (!is_null($query)) {
-                $options['query'] = $query;
+            if (!is_null($query_params)) {
+                $options['query'] = $query_params;
             }
 
             $response = $this->client->request($method, $uri, $options);
+            //$response = $this->sendCurlRequest($method, $uri, $this->headers, $body, $query_params);
 
             $this->statusCode = $response->getStatusCode();
             $this->statusText = $response->getReasonPhrase();
-            $this->responseBody = $response->getBody();
+            $this->responseBody = json_decode($response->getBody()->getContents(), JSON_FORCE_OBJECT);
 
         } catch (RequestException $e) {
 
             $this->success = false;
 
-            $this->debugRequestTrace = Psr7\str($e->getRequest());
-            $this->debugResponseTrace = Psr7\str($e->getResponse());
+            $this->debugRequestTrace = $e->getRequest();
+            $this->debugResponseTrace = $e->getResponse();
 
             if ($e->hasResponse()) {
 
                 // we set the response
                 $response = $e->getResponse();
 
-                $responseBody = $response->getBody();
+                $responseBody = json_decode($response->getBody()->getContents(), JSON_FORCE_OBJECT);
 
                 $this->statusCode = $response->getStatusCode();
                 $this->statusText = $response->getReasonPhrase();
 
                 $this->errorCode = isset($responseBody['errorCode']) ? $responseBody['errorCode'] : "";
                 $this->errorMessage = isset($responseBody['message']) ? $responseBody['message'] : "";
+            } else {
+
+                $this->statusCode = 500;
+                $this->statusText = "Internal Server Error";
+
+                $this->errorCode = $e->getCode();
+                $this->errorMessage = $e->getMessage();
 
             }
+
         } catch (GuzzleException $e) {
 
             $this->success = false;
 
+            $this->debugRequestTrace = $e->getTrace();
+
             $this->statusCode = 500;
             $this->statusText = "Internal Server Error";
 
-            $this->errorCode = $this->statusCode;
-            $this->errorMessage = $this->statusText;
+            $this->errorCode = $e->getCode();
+            $this->errorMessage = $e->getMessage();
         }
 
         return $this;
     }
-
 }

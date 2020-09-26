@@ -23,13 +23,15 @@ final class Response {
 
         return [
             "success" => $response->success,
+            "statusCode" => $response->statusCode,
+            "statusText" => $response->statusText,
             "errorCode" => $response->errorCode,
             "errorMessage" => $response->errorMessage,
             "data" => $response->responseBody,
-            "debugTrace" => [
+            "debugTrace" => $_ENV['SFC_SDP_DEBUG'] == 1 ? [
                 'request' => $response->debugRequestTrace,
                 'response' => $response->debugResponseTrace
-            ]
+            ] : null
         ];
     }
 }

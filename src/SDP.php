@@ -72,6 +72,9 @@ final class SDP {
      */
     public $token;
 
+    /**
+     * @var Request $request
+     */
     public $request;
 
 
@@ -92,8 +95,6 @@ final class SDP {
         $this->cpUsername = $cpUsername;
 
         $this->baseURL = $this->sandbox_base_url; // by default we use the testing environment
-
-        $this->request = new Request($this->baseURL);
     }
 
     /**
@@ -121,7 +122,15 @@ final class SDP {
      * @throws Exceptions\SDPException
      */
     public function init() {
+
+        $this->request = new Request($this->baseURL);
+
         $this->token = $this->generateToken($this->apiUsername, $this->apiPassword);
+
+        // reset the reques body to null
+        $this->request->responseBody = null;
+
+        return $this;
     }
 
     /**
@@ -139,7 +148,7 @@ final class SDP {
             'password' => $password
         ];
 
-        $response = $this->request->request("post", "auth/login", null, $body);
+        $response = $this->request->request("POST", "auth/login", null, $body);
 
         if (!$response->success) {
             throw new SDPException($response->errorMessage, $response->errorCode);
