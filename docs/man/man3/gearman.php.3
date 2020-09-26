@@ -1,0 +1,2106 @@
+.TH "vendor/jetbrains/phpstorm-stubs/gearman/gearman.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/gearman/gearman.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBGearmanClient\fP"
+.br
+.ti -1c
+.RI "class \fBGearmanTask\fP"
+.br
+.ti -1c
+.RI "class \fBGearmanWorker\fP"
+.br
+.ti -1c
+.RI "class \fBGearmanJob\fP"
+.br
+.ti -1c
+.RI "class \fBGearmanException\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBgearman_version\fP ()"
+.br
+.ti -1c
+.RI "\fBgearman_bugreport\fP ()"
+.br
+.ti -1c
+.RI "\fBgearman_verbose_name\fP ($verbose)"
+.br
+.ti -1c
+.RI "\fBgearman_client_return_code\fP ($client_object)"
+.br
+.ti -1c
+.RI "\fBgearman_client_create\fP ($client_object)"
+.br
+.ti -1c
+.RI "\fBgearman_client_clone\fP ($client_object)"
+.br
+.ti -1c
+.RI "\fBgearman_client_error\fP ($client_object)"
+.br
+.ti -1c
+.RI "\fBgearman_client_errno\fP ($client_object)"
+.br
+.ti -1c
+.RI "\fBgearman_client_options\fP ($client_object)"
+.br
+.ti -1c
+.RI "\fBgearman_client_set_options\fP ($client_object, $option)"
+.br
+.ti -1c
+.RI "\fBgearman_client_add_options\fP ($client_object, $option)"
+.br
+.ti -1c
+.RI "\fBgearman_client_remove_options\fP ($client_object, $option)"
+.br
+.ti -1c
+.RI "\fBgearman_client_timeout\fP ($client_object)"
+.br
+.ti -1c
+.RI "\fBgearman_client_set_timeout\fP ($client_object, $timeout)"
+.br
+.ti -1c
+.RI "\fBgearman_client_context\fP ($client_object)"
+.br
+.ti -1c
+.RI "\fBgearman_client_set_context\fP ($client_object, $context)"
+.br
+.ti -1c
+.RI "\fBgearman_client_add_server\fP ($client_object, $host, $port)"
+.br
+.ti -1c
+.RI "\fBgearman_client_add_servers\fP ($client_object, $servers)"
+.br
+.ti -1c
+.RI "\fBgearman_client_wait\fP ($client_object)"
+.br
+.ti -1c
+.RI "\fBgearman_client_do\fP ($client_object, $function_name, $workload, $unique)"
+.br
+.ti -1c
+.RI "\fBgearman_client_do_high\fP ($client_object, $function_name, $workload, $unique)"
+.br
+.ti -1c
+.RI "\fBgearman_client_do_normal\fP ($client_object, $function_name, $workload, $unique)"
+.br
+.ti -1c
+.RI "\fBgearman_client_do_low\fP ($client_object, $function_name, $workload, $unique)"
+.br
+.ti -1c
+.RI "\fBgearman_client_do_job_handle\fP ($client_object)"
+.br
+.ti -1c
+.RI "\fBgearman_client_do_status\fP ($client_object)"
+.br
+.ti -1c
+.RI "\fBgearman_client_do_background\fP ($client_object, $function_name, $workload, $unique)"
+.br
+.ti -1c
+.RI "\fBgearman_client_do_high_background\fP ($client_object, $function_name, $workload, $unique)"
+.br
+.ti -1c
+.RI "\fBgearman_client_do_low_background\fP ($client_object, $function_name, $workload, $unique)"
+.br
+.ti -1c
+.RI "\fBgearman_client_job_status\fP ($client_object, $job_handle)"
+.br
+.ti -1c
+.RI "\fBgearman_client_echo\fP ($client_object, $workload)"
+.br
+.ti -1c
+.RI "\fBgearman_client_add_task\fP ($client_object, $function_name, $workload, $context, $unique)"
+.br
+.ti -1c
+.RI "\fBgearman_client_add_task_high\fP ($client_object, $function_name, $workload, $context, $unique)"
+.br
+.ti -1c
+.RI "\fBgearman_client_add_task_low\fP ($client_object, $function_name, $workload, $context, $unique)"
+.br
+.ti -1c
+.RI "\fBgearman_client_add_task_background\fP ($client_object, $function_name, $workload, $context, $unique)"
+.br
+.ti -1c
+.RI "\fBgearman_client_add_task_high_background\fP ($client_object, $function_name, $workload, $context, $unique)"
+.br
+.ti -1c
+.RI "\fBgearman_client_add_task_low_background\fP ($client_object, $function_name, $workload, $context, $unique)"
+.br
+.ti -1c
+.RI "\fBgearman_client_add_task_status\fP ($client_object, $job_handle, $context)"
+.br
+.ti -1c
+.RI "\fBgearman_client_set_workload_fn\fP ($client_object, $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBgearman_client_set_created_fn\fP ($client_object, $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBgearman_client_set_data_fn\fP ($client_object, $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBgearman_client_set_warning_fn\fP ($client_object, $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBgearman_client_set_status_fn\fP ($client_object, $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBgearman_client_set_complete_fn\fP ($client_object, $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBgearman_client_set_exception_fn\fP ($client_object, $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBgearman_client_set_fail_fn\fP ($client_object, $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBgearman_client_clear_fn\fP ($client_object)"
+.br
+.ti -1c
+.RI "\fBgearman_client_run_tasks\fP ($data)"
+.br
+.ti -1c
+.RI "\fBgearman_task_return_code\fP ($task_object)"
+.br
+.ti -1c
+.RI "\fBgearman_task_function_name\fP ($task_object)"
+.br
+.ti -1c
+.RI "\fBgearman_task_unique\fP ($task_object)"
+.br
+.ti -1c
+.RI "\fBgearman_task_job_handle\fP ($task_object)"
+.br
+.ti -1c
+.RI "\fBgearman_task_is_known\fP ($task_object)"
+.br
+.ti -1c
+.RI "\fBgearman_task_is_running\fP ($task_object)"
+.br
+.ti -1c
+.RI "\fBgearman_task_numerator\fP ($task_object)"
+.br
+.ti -1c
+.RI "\fBgearman_task_denominator\fP ($task_object)"
+.br
+.ti -1c
+.RI "\fBgearman_task_send_workload\fP ($task_object, $data)"
+.br
+.ti -1c
+.RI "\fBgearman_task_data\fP ($task_object)"
+.br
+.ti -1c
+.RI "\fBgearman_task_data_size\fP ($task_object)"
+.br
+.ti -1c
+.RI "\fBgearman_task_recv_data\fP ($task_object, $data_len)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_return_code\fP ($worker_object)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_create\fP ()"
+.br
+.ti -1c
+.RI "\fBgearman_worker_clone\fP ($worker_object)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_error\fP ($worker_object)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_errno\fP ($worker_object)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_options\fP ($worker_object)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_set_options\fP ($worker_object, $option)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_add_options\fP ($worker_object, $option)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_remove_options\fP ($worker_object, $option)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_timeout\fP ($worker_object)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_set_timeout\fP ($worker_object, $timeout)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_add_server\fP ($worker_object, $host, $port)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_add_servers\fP ($worker_object, $servers)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_wait\fP ($worker_object)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_register\fP ($worker_object, $function_name, $timeout)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_unregister\fP ($worker_object, $function_name)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_unregister_all\fP ($worker_object)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_grab_job\fP ($worker_object)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_add_function\fP ($worker_object, $function_name, $\fBfunction\fP, $data, $timeout)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_work\fP ($worker_object)"
+.br
+.ti -1c
+.RI "\fBgearman_worker_echo\fP ($worker_object, $workload)"
+.br
+.ti -1c
+.RI "\fBgearman_job_return_code\fP ($job_object)"
+.br
+.ti -1c
+.RI "\fBgearman_job_send_data\fP ($job_object, $data)"
+.br
+.ti -1c
+.RI "\fBgearman_job_send_warning\fP ($job_object, $warning)"
+.br
+.ti -1c
+.RI "\fBgearman_job_send_status\fP ($job_object, $numerator, $denominator)"
+.br
+.ti -1c
+.RI "\fBgearman_job_send_complete\fP ($job_object, $result)"
+.br
+.ti -1c
+.RI "\fBgearman_job_send_exception\fP ($job_object, $exception)"
+.br
+.ti -1c
+.RI "\fBgearman_job_send_fail\fP ($job_object)"
+.br
+.ti -1c
+.RI "\fBgearman_job_handle\fP ($job_object)"
+.br
+.ti -1c
+.RI "\fBgearman_job_function_name\fP ($job_object)"
+.br
+.ti -1c
+.RI "\fBgearman_job_unique\fP ($job_object)"
+.br
+.ti -1c
+.RI "\fBgearman_job_workload\fP ($job_object)"
+.br
+.ti -1c
+.RI "\fBgearman_job_workload_size\fP ($job_object)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBGEARMAN_DEFAULT_TCP_HOST\fP '127\&.0\&.0\&.1'"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_DEFAULT_TCP_PORT\fP 4730"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_DEFAULT_SOCKET_TIMEOUT\fP 10"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_DEFAULT_SOCKET_SEND_SIZE\fP 32768"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_DEFAULT_SOCKET_RECV_SIZE\fP 32768"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_MAX_ERROR_SIZE\fP 1024"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_PACKET_HEADER_SIZE\fP 12"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_JOB_HANDLE_SIZE\fP 64"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_OPTION_SIZE\fP 64"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_UNIQUE_SIZE\fP 64"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_MAX_COMMAND_ARGS\fP 8"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_ARGS_BUFFER_SIZE\fP 128"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_SEND_BUFFER_SIZE\fP 8192"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_RECV_BUFFER_SIZE\fP 8192"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_WAIT_TIMEOUT\fP 10000"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_SUCCESS\fP 0"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_IO_WAIT\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_SHUTDOWN\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_SHUTDOWN_GRACEFUL\fP 3"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_ERRNO\fP 4"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_EVENT\fP 5"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_TOO_MANY_ARGS\fP 6"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_NO_ACTIVE_FDS\fP 7"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_INVALID_MAGIC\fP 8"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_INVALID_COMMAND\fP 9"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_INVALID_PACKET\fP 10"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_UNEXPECTED_PACKET\fP 11"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_GETADDRINFO\fP 12"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_NO_SERVERS\fP 13"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_LOST_CONNECTION\fP 14"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_MEMORY_ALLOCATION_FAILURE\fP 15"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_JOB_EXISTS\fP 16"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_JOB_QUEUE_FULL\fP 17"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_SERVER_ERROR\fP 18"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORK_ERROR\fP 19"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORK_DATA\fP 20"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORK_WARNING\fP 21"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORK_STATUS\fP 22"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORK_EXCEPTION\fP 23"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORK_FAIL\fP 24"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_NOT_CONNECTED\fP 25"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COULD_NOT_CONNECT\fP 26"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_SEND_IN_PROGRESS\fP 27"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_RECV_IN_PROGRESS\fP 28"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_NOT_FLUSHING\fP 29"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_DATA_TOO_LARGE\fP 30"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_INVALID_FUNCTION_NAME\fP 31"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_INVALID_WORKER_FUNCTION\fP 32"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_NO_REGISTERED_FUNCTIONS\fP 34"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_NO_JOBS\fP 35"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_ECHO_DATA_CORRUPTION\fP 36"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_NEED_WORKLOAD_FN\fP 37"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_PAUSE\fP 38"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_UNKNOWN_STATE\fP 39"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_PTHREAD\fP 40"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_PIPE_EOF\fP 41"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_QUEUE_ERROR\fP 42"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_FLUSH_DATA\fP 43"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_SEND_BUFFER_TOO_SMALL\fP 44"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_IGNORE_PACKET\fP 45"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_UNKNOWN_OPTION\fP 46"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_TIMEOUT\fP 47"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_MAX_RETURN\fP 49"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_VERBOSE_NEVER\fP 0"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_VERBOSE_FATAL\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_VERBOSE_ERROR\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_VERBOSE_INFO\fP 3"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_VERBOSE_DEBUG\fP 4"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_VERBOSE_CRAZY\fP 5"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_VERBOSE_MAX\fP 6"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_NON_BLOCKING\fP 0"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_DONT_TRACK_PACKETS\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CON_READY\fP 0"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CON_PACKET_IN_USE\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CON_EXTERNAL_FD\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CON_IGNORE_LOST_CONNECTION\fP 3"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CON_CLOSE_AFTER_FLUSH\fP 4"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CON_SEND_STATE_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CON_RECV_STATE_READ_DATA\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_MAGIC_TEXT\fP 0"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_MAGIC_REQUEST\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_MAGIC_RESPONSE\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_TEXT\fP 0"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_CAN_DO\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_CANT_DO\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_RESET_ABILITIES\fP 3"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_PRE_SLEEP\fP 4"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_UNUSED\fP 5"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_NOOP\fP 6"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_SUBMIT_JOB\fP 7"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_JOB_CREATED\fP 8"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_GRAB_JOB\fP 9"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_NO_JOB\fP 10"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_JOB_ASSIGN\fP 11"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_WORK_STATUS\fP 12"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_WORK_COMPLETE\fP 13"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_WORK_FAIL\fP 14"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_GET_STATUS\fP 15"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_ECHO_REQ\fP 16"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_ECHO_RES\fP 17"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_SUBMIT_JOB_BG\fP 18"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_ERROR\fP 19"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_STATUS_RES\fP 20"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_SUBMIT_JOB_HIGH\fP 21"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_SET_CLIENT_ID\fP 22"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_CAN_DO_TIMEOUT\fP 23"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_ALL_YOURS\fP 24"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_WORK_EXCEPTION\fP 25"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_OPTION_REQ\fP 26"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_OPTION_RES\fP 27"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_WORK_DATA\fP 28"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_WORK_WARNING\fP 29"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_GRAB_JOB_UNIQ\fP 30"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_JOB_ASSIGN_UNIQ\fP 31"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_SUBMIT_JOB_HIGH_BG\fP 32"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_SUBMIT_JOB_LOW\fP 33"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_SUBMIT_JOB_LOW_BG\fP 34"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_SUBMIT_JOB_SCHED\fP 35"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_SUBMIT_JOB_EPOCH\fP 36"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_COMMAND_MAX\fP 37"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_TASK_STATE_NEW\fP 0"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_TASK_STATE_SUBMIT\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_TASK_STATE_WORKLOAD\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_TASK_STATE_WORK\fP 3"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_TASK_STATE_CREATED\fP 4"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_TASK_STATE_DATA\fP 5"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_TASK_STATE_WARNING\fP 6"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_TASK_STATE_STATUS\fP 7"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_TASK_STATE_COMPLETE\fP 8"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_TASK_STATE_EXCEPTION\fP 9"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_TASK_STATE_FAIL\fP 10"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_TASK_STATE_FINISHED\fP 11"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_JOB_PRIORITY_HIGH\fP 0"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_JOB_PRIORITY_NORMAL\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_JOB_PRIORITY_LOW\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_JOB_PRIORITY_MAX\fP 3"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CLIENT_ALLOCATED\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CLIENT_NON_BLOCKING\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CLIENT_TASK_IN_USE\fP 4"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CLIENT_UNBUFFERED_RESULT\fP 8"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CLIENT_NO_NEW\fP 16"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CLIENT_FREE_TASKS\fP 32"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CLIENT_STATE_IDLE\fP 0"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CLIENT_STATE_NEW\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CLIENT_STATE_SUBMIT\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_CLIENT_STATE_PACKET\fP 3"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_ALLOCATED\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_NON_BLOCKING\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_PACKET_INIT\fP 4"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_GRAB_JOB_IN_USE\fP 8"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_PRE_SLEEP_IN_USE\fP 16"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_WORK_JOB_IN_USE\fP 32"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_CHANGE\fP 64"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_GRAB_UNIQ\fP 128"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_TIMEOUT_RETURN\fP 256"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_STATE_START\fP 0"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_STATE_FUNCTION_SEND\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_STATE_CONNECT\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_STATE_GRAB_JOB_SEND\fP 3"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_STATE_GRAB_JOB_RECV\fP 4"
+.br
+.ti -1c
+.RI "const \fBGEARMAN_WORKER_STATE_PRE_SLEEP\fP 5"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "gearman_bugreport ()"
+
+.SS "gearman_client_add_options ( $client_object,  $option)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$option\fP 
+.RE
+.PP
+
+.SS "gearman_client_add_server ( $client_object,  $host,  $port)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$host\fP 
+.br
+\fI$port\fP 
+.RE
+.PP
+
+.SS "gearman_client_add_servers ( $client_object,  $servers)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$servers\fP 
+.RE
+.PP
+
+.SS "gearman_client_add_task ( $client_object,  $function_name,  $workload,  $context,  $unique)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$function_name\fP 
+.br
+\fI$workload\fP 
+.br
+\fI$context\fP 
+.br
+\fI$unique\fP 
+.RE
+.PP
+
+.SS "gearman_client_add_task_background ( $client_object,  $function_name,  $workload,  $context,  $unique)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$function_name\fP 
+.br
+\fI$workload\fP 
+.br
+\fI$context\fP 
+.br
+\fI$unique\fP 
+.RE
+.PP
+
+.SS "gearman_client_add_task_high ( $client_object,  $function_name,  $workload,  $context,  $unique)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$function_name\fP 
+.br
+\fI$workload\fP 
+.br
+\fI$context\fP 
+.br
+\fI$unique\fP 
+.RE
+.PP
+
+.SS "gearman_client_add_task_high_background ( $client_object,  $function_name,  $workload,  $context,  $unique)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$function_name\fP 
+.br
+\fI$workload\fP 
+.br
+\fI$context\fP 
+.br
+\fI$unique\fP 
+.RE
+.PP
+
+.SS "gearman_client_add_task_low ( $client_object,  $function_name,  $workload,  $context,  $unique)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$function_name\fP 
+.br
+\fI$workload\fP 
+.br
+\fI$context\fP 
+.br
+\fI$unique\fP 
+.RE
+.PP
+
+.SS "gearman_client_add_task_low_background ( $client_object,  $function_name,  $workload,  $context,  $unique)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$function_name\fP 
+.br
+\fI$workload\fP 
+.br
+\fI$context\fP 
+.br
+\fI$unique\fP 
+.RE
+.PP
+
+.SS "gearman_client_add_task_status ( $client_object,  $job_handle,  $context)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$job_handle\fP 
+.br
+\fI$context\fP 
+.RE
+.PP
+
+.SS "gearman_client_clear_fn ( $client_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.RE
+.PP
+
+.SS "gearman_client_clone ( $client_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.RE
+.PP
+
+.SS "gearman_client_context ( $client_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.RE
+.PP
+
+.SS "gearman_client_create ( $client_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.RE
+.PP
+
+.SS "gearman_client_do ( $client_object,  $function_name,  $workload,  $unique)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$function_name\fP 
+.br
+\fI$workload\fP 
+.br
+\fI$unique\fP 
+.RE
+.PP
+
+.SS "gearman_client_do_background ( $client_object,  $function_name,  $workload,  $unique)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$function_name\fP 
+.br
+\fI$workload\fP 
+.br
+\fI$unique\fP 
+.RE
+.PP
+
+.SS "gearman_client_do_high ( $client_object,  $function_name,  $workload,  $unique)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$function_name\fP 
+.br
+\fI$workload\fP 
+.br
+\fI$unique\fP 
+.RE
+.PP
+
+.SS "gearman_client_do_high_background ( $client_object,  $function_name,  $workload,  $unique)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$function_name\fP 
+.br
+\fI$workload\fP 
+.br
+\fI$unique\fP 
+.RE
+.PP
+
+.SS "gearman_client_do_job_handle ( $client_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.RE
+.PP
+
+.SS "gearman_client_do_low ( $client_object,  $function_name,  $workload,  $unique)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$function_name\fP 
+.br
+\fI$workload\fP 
+.br
+\fI$unique\fP 
+.RE
+.PP
+
+.SS "gearman_client_do_low_background ( $client_object,  $function_name,  $workload,  $unique)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$function_name\fP 
+.br
+\fI$workload\fP 
+.br
+\fI$unique\fP 
+.RE
+.PP
+
+.SS "gearman_client_do_normal ( $client_object,  $function_name,  $workload,  $unique)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$function_name\fP 
+.br
+\fI$workload\fP 
+.br
+\fI$unique\fP 
+.RE
+.PP
+
+.SS "gearman_client_do_status ( $client_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.RE
+.PP
+
+.SS "gearman_client_echo ( $client_object,  $workload)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$workload\fP 
+.RE
+.PP
+
+.SS "gearman_client_errno ( $client_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.RE
+.PP
+
+.SS "gearman_client_error ( $client_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.RE
+.PP
+
+.SS "gearman_client_job_status ( $client_object,  $job_handle)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$job_handle\fP 
+.RE
+.PP
+
+.SS "gearman_client_options ( $client_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.RE
+.PP
+
+.SS "gearman_client_remove_options ( $client_object,  $option)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$option\fP 
+.RE
+.PP
+
+.SS "gearman_client_return_code ( $client_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.RE
+.PP
+
+.SS "gearman_client_run_tasks ( $data)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+
+.SS "gearman_client_set_complete_fn ( $client_object,  $callback)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+
+.SS "gearman_client_set_context ( $client_object,  $context)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$context\fP 
+.RE
+.PP
+
+.SS "gearman_client_set_created_fn ( $client_object,  $callback)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+
+.SS "gearman_client_set_data_fn ( $client_object,  $callback)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+
+.SS "gearman_client_set_exception_fn ( $client_object,  $callback)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+
+.SS "gearman_client_set_fail_fn ( $client_object,  $callback)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+
+.SS "gearman_client_set_options ( $client_object,  $option)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$option\fP 
+.RE
+.PP
+
+.SS "gearman_client_set_status_fn ( $client_object,  $callback)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+
+.SS "gearman_client_set_timeout ( $client_object,  $timeout)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$timeout\fP 
+.RE
+.PP
+
+.SS "gearman_client_set_warning_fn ( $client_object,  $callback)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+
+.SS "gearman_client_set_workload_fn ( $client_object,  $callback)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+
+.SS "gearman_client_timeout ( $client_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.RE
+.PP
+
+.SS "gearman_client_wait ( $client_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_object\fP 
+.RE
+.PP
+
+.SS "gearman_job_function_name ( $job_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$job_object\fP 
+.RE
+.PP
+
+.SS "gearman_job_handle ( $job_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$job_object\fP 
+.RE
+.PP
+
+.SS "gearman_job_return_code ( $job_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$job_object\fP 
+.RE
+.PP
+
+.SS "gearman_job_send_complete ( $job_object,  $result)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$job_object\fP 
+.br
+\fI$result\fP 
+.RE
+.PP
+
+.SS "gearman_job_send_data ( $job_object,  $data)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$job_object\fP 
+.br
+\fI$data\fP 
+.RE
+.PP
+
+.SS "gearman_job_send_exception ( $job_object,  $exception)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$job_object\fP 
+.br
+\fI$exception\fP 
+.RE
+.PP
+
+.SS "gearman_job_send_fail ( $job_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$job_object\fP 
+.RE
+.PP
+
+.SS "gearman_job_send_status ( $job_object,  $numerator,  $denominator)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$job_object\fP 
+.br
+\fI$numerator\fP 
+.br
+\fI$denominator\fP 
+.RE
+.PP
+
+.SS "gearman_job_send_warning ( $job_object,  $warning)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$job_object\fP 
+.br
+\fI$warning\fP 
+.RE
+.PP
+
+.SS "gearman_job_unique ( $job_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$job_object\fP 
+.RE
+.PP
+
+.SS "gearman_job_workload ( $job_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$job_object\fP 
+.RE
+.PP
+
+.SS "gearman_job_workload_size ( $job_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$job_object\fP 
+.RE
+.PP
+
+.SS "gearman_task_data ( $task_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$task_object\fP 
+.RE
+.PP
+
+.SS "gearman_task_data_size ( $task_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$task_object\fP 
+.RE
+.PP
+
+.SS "gearman_task_denominator ( $task_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$task_object\fP 
+.RE
+.PP
+
+.SS "gearman_task_function_name ( $task_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$task_object\fP 
+.RE
+.PP
+
+.SS "gearman_task_is_known ( $task_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$task_object\fP 
+.RE
+.PP
+
+.SS "gearman_task_is_running ( $task_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$task_object\fP 
+.RE
+.PP
+
+.SS "gearman_task_job_handle ( $task_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$task_object\fP 
+.RE
+.PP
+
+.SS "gearman_task_numerator ( $task_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$task_object\fP 
+.RE
+.PP
+
+.SS "gearman_task_recv_data ( $task_object,  $data_len)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$task_object\fP 
+.br
+\fI$data_len\fP 
+.RE
+.PP
+
+.SS "gearman_task_return_code ( $task_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$task_object\fP 
+.RE
+.PP
+
+.SS "gearman_task_send_workload ( $task_object,  $data)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$task_object\fP 
+.br
+\fI$data\fP 
+.RE
+.PP
+
+.SS "gearman_task_unique ( $task_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$task_object\fP 
+.RE
+.PP
+
+.SS "gearman_verbose_name ( $verbose)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$verbose\fP 
+.RE
+.PP
+
+.SS "gearman_version ()"
+
+.SS "gearman_worker_add_function ( $worker_object,  $function_name,  $function,  $data,  $timeout)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.br
+\fI$function_name\fP 
+.br
+\fI$function\fP 
+.br
+\fI$data\fP 
+.br
+\fI$timeout\fP 
+.RE
+.PP
+
+.SS "gearman_worker_add_options ( $worker_object,  $option)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.br
+\fI$option\fP 
+.RE
+.PP
+
+.SS "gearman_worker_add_server ( $worker_object,  $host,  $port)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.br
+\fI$host\fP 
+.br
+\fI$port\fP 
+.RE
+.PP
+
+.SS "gearman_worker_add_servers ( $worker_object,  $servers)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.br
+\fI$servers\fP 
+.RE
+.PP
+
+.SS "gearman_worker_clone ( $worker_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.RE
+.PP
+
+.SS "gearman_worker_create ()"
+
+.SS "gearman_worker_echo ( $worker_object,  $workload)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.br
+\fI$workload\fP 
+.RE
+.PP
+
+.SS "gearman_worker_errno ( $worker_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.RE
+.PP
+
+.SS "gearman_worker_error ( $worker_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.RE
+.PP
+
+.SS "gearman_worker_grab_job ( $worker_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.RE
+.PP
+
+.SS "gearman_worker_options ( $worker_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.RE
+.PP
+
+.SS "gearman_worker_register ( $worker_object,  $function_name,  $timeout)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.br
+\fI$function_name\fP 
+.br
+\fI$timeout\fP 
+.RE
+.PP
+
+.SS "gearman_worker_remove_options ( $worker_object,  $option)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.br
+\fI$option\fP 
+.RE
+.PP
+
+.SS "gearman_worker_return_code ( $worker_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.RE
+.PP
+
+.SS "gearman_worker_set_options ( $worker_object,  $option)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.br
+\fI$option\fP 
+.RE
+.PP
+
+.SS "gearman_worker_set_timeout ( $worker_object,  $timeout)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.br
+\fI$timeout\fP 
+.RE
+.PP
+
+.SS "gearman_worker_timeout ( $worker_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.RE
+.PP
+
+.SS "gearman_worker_unregister ( $worker_object,  $function_name)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.br
+\fI$function_name\fP 
+.RE
+.PP
+
+.SS "gearman_worker_unregister_all ( $worker_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.RE
+.PP
+
+.SS "gearman_worker_wait ( $worker_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.RE
+.PP
+
+.SS "gearman_worker_work ( $worker_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$worker_object\fP 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const GEARMAN_ARGS_BUFFER_SIZE 128"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CLIENT_ALLOCATED 1"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CLIENT_FREE_TASKS 32"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CLIENT_NO_NEW 16"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CLIENT_NON_BLOCKING 2"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CLIENT_STATE_IDLE 0"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CLIENT_STATE_NEW 1"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CLIENT_STATE_PACKET 3"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CLIENT_STATE_SUBMIT 2"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CLIENT_TASK_IN_USE 4"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CLIENT_UNBUFFERED_RESULT 8"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_ALL_YOURS 24"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_CAN_DO 1"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_CAN_DO_TIMEOUT 23"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_CANT_DO 2"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_ECHO_REQ 16"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_ECHO_RES 17"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_ERROR 19"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_GET_STATUS 15"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_GRAB_JOB 9"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_GRAB_JOB_UNIQ 30"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_JOB_ASSIGN 11"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_JOB_ASSIGN_UNIQ 31"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_JOB_CREATED 8"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_MAX 37"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_NO_JOB 10"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_NOOP 6"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_OPTION_REQ 26"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_OPTION_RES 27"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_PRE_SLEEP 4"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_RESET_ABILITIES 3"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_SET_CLIENT_ID 22"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_STATUS_RES 20"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_SUBMIT_JOB 7"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_SUBMIT_JOB_BG 18"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_SUBMIT_JOB_EPOCH 36"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_SUBMIT_JOB_HIGH 21"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_SUBMIT_JOB_HIGH_BG 32"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_SUBMIT_JOB_LOW 33"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_SUBMIT_JOB_LOW_BG 34"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_SUBMIT_JOB_SCHED 35"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_TEXT 0"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_UNUSED 5"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_WORK_COMPLETE 13"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_WORK_DATA 28"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_WORK_EXCEPTION 25"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_WORK_FAIL 14"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_WORK_STATUS 12"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COMMAND_WORK_WARNING 29"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CON_CLOSE_AFTER_FLUSH 4"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CON_EXTERNAL_FD 2"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CON_IGNORE_LOST_CONNECTION 3"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CON_PACKET_IN_USE 1"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CON_READY 0"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CON_RECV_STATE_READ_DATA 2"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_CON_SEND_STATE_NONE 0"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_COULD_NOT_CONNECT 26"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_DATA_TOO_LARGE 30"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_DEFAULT_SOCKET_RECV_SIZE 32768"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_DEFAULT_SOCKET_SEND_SIZE 32768"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_DEFAULT_SOCKET_TIMEOUT 10"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_DEFAULT_TCP_HOST '127\&.0\&.0\&.1'"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_DEFAULT_TCP_PORT 4730"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_DONT_TRACK_PACKETS 1"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_ECHO_DATA_CORRUPTION 36"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_ERRNO 4"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_EVENT 5"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_FLUSH_DATA 43"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_GETADDRINFO 12"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_IGNORE_PACKET 45"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_INVALID_COMMAND 9"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_INVALID_FUNCTION_NAME 31"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_INVALID_MAGIC 8"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_INVALID_PACKET 10"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_INVALID_WORKER_FUNCTION 32"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_IO_WAIT 1"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_JOB_EXISTS 16"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_JOB_HANDLE_SIZE 64"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_JOB_PRIORITY_HIGH 0"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_JOB_PRIORITY_LOW 2"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_JOB_PRIORITY_MAX 3"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_JOB_PRIORITY_NORMAL 1"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_JOB_QUEUE_FULL 17"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_LOST_CONNECTION 14"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_MAGIC_REQUEST 1"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_MAGIC_RESPONSE 2"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_MAGIC_TEXT 0"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_MAX_COMMAND_ARGS 8"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_MAX_ERROR_SIZE 1024"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_MAX_RETURN 49"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_MEMORY_ALLOCATION_FAILURE 15"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_NEED_WORKLOAD_FN 37"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_NO_ACTIVE_FDS 7"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_NO_JOBS 35"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_NO_REGISTERED_FUNCTIONS 34"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_NO_SERVERS 13"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_NON_BLOCKING 0"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_NOT_CONNECTED 25"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_NOT_FLUSHING 29"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_OPTION_SIZE 64"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_PACKET_HEADER_SIZE 12"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_PAUSE 38"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_PIPE_EOF 41"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_PTHREAD 40"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_QUEUE_ERROR 42"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_RECV_BUFFER_SIZE 8192"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_RECV_IN_PROGRESS 28"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_SEND_BUFFER_SIZE 8192"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_SEND_BUFFER_TOO_SMALL 44"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_SEND_IN_PROGRESS 27"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_SERVER_ERROR 18"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_SHUTDOWN 2"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_SHUTDOWN_GRACEFUL 3"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_SUCCESS 0"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_TASK_STATE_COMPLETE 8"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_TASK_STATE_CREATED 4"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_TASK_STATE_DATA 5"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_TASK_STATE_EXCEPTION 9"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_TASK_STATE_FAIL 10"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_TASK_STATE_FINISHED 11"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_TASK_STATE_NEW 0"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_TASK_STATE_STATUS 7"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_TASK_STATE_SUBMIT 1"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_TASK_STATE_WARNING 6"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_TASK_STATE_WORK 3"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_TASK_STATE_WORKLOAD 2"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_TIMEOUT 47"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_TOO_MANY_ARGS 6"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_UNEXPECTED_PACKET 11"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_UNIQUE_SIZE 64"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_UNKNOWN_OPTION 46"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_UNKNOWN_STATE 39"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_VERBOSE_CRAZY 5"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_VERBOSE_DEBUG 4"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_VERBOSE_ERROR 2"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_VERBOSE_FATAL 1"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_VERBOSE_INFO 3"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_VERBOSE_MAX 6"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_VERBOSE_NEVER 0"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORK_DATA 20"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORK_ERROR 19"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORK_EXCEPTION 23"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORK_FAIL 24"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORK_STATUS 22"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORK_WARNING 21"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_ALLOCATED 1"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_CHANGE 64"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_GRAB_JOB_IN_USE 8"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_GRAB_UNIQ 128"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_NON_BLOCKING 2"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_PACKET_INIT 4"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_PRE_SLEEP_IN_USE 16"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_STATE_CONNECT 2"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_STATE_FUNCTION_SEND 1"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_STATE_GRAB_JOB_RECV 4"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_STATE_GRAB_JOB_SEND 3"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_STATE_PRE_SLEEP 5"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_STATE_START 0"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_TIMEOUT_RETURN 256"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_WAIT_TIMEOUT 10000"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SS "const GEARMAN_WORKER_WORK_JOB_IN_USE 32"
+\fBhttps://php\&.net/manual/en/gearman\&.constants\&.php\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

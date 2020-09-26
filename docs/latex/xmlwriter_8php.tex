@@ -1,0 +1,961 @@
+\hypertarget{xmlwriter_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/xmlwriter/xmlwriter.php File Reference}
+\label{xmlwriter_8php}\index{vendor/jetbrains/phpstorm-\/stubs/xmlwriter/xmlwriter.php@{vendor/jetbrains/phpstorm-\/stubs/xmlwriter/xmlwriter.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a12aea72daf18b38f6226b4fa61fcac91}{xmlwriter\+\_\+open\+\_\+uri}} (\$uri)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_aa7485732d60f40f675eed4082dadbdf5}{xmlwriter\+\_\+open\+\_\+memory}} ()
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a7870c9799d5b689f0fbfe98f5cfe8afc}{xmlwriter\+\_\+set\+\_\+indent}} (\$xmlwriter, \$indent)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_aded8bacd1933acf5250faad8239e7360}{xmlwriter\+\_\+set\+\_\+indent\+\_\+string}} (\$xmlwriter, \$indent\+String)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_af575fba6f3238cd3bbb9bcc25051468c}{xmlwriter\+\_\+start\+\_\+comment}} (\$xmlwriter)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_ac50f372de1b37e152d4d0307f38b3a5d}{xmlwriter\+\_\+end\+\_\+comment}} (\$xmlwriter)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_af82f2a856de3a84adc669362d5ff6e82}{xmlwriter\+\_\+start\+\_\+attribute}} (\$xmlwriter, \$name)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_adb022fef65acfa36cf8e28b484db4157}{xmlwriter\+\_\+end\+\_\+attribute}} (\$xmlwriter)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a7e8fe2ef893d5ce047a6ae1e9a92c94e}{xmlwriter\+\_\+write\+\_\+attribute}} (\$xmlwriter, \$name, \$value)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a87f8220d2bb700c4387810640ef1c8d2}{xmlwriter\+\_\+start\+\_\+attribute\+\_\+ns}} (\$xmlwriter, \$prefix, \$name, \$uri)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a30cae372cd7c26fe7afc8cc736a2710a}{xmlwriter\+\_\+write\+\_\+attribute\+\_\+ns}} (\$xmlwriter, \$prefix, \$name, \$uri, \$content)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_ac0262284bde806194a510a88cc76a494}{xmlwriter\+\_\+start\+\_\+element}} (\$xmlwriter, \$name)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a6c359d532719e1ada04a341504780139}{xmlwriter\+\_\+end\+\_\+element}} (\$xmlwriter)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_ab100fd800f6b39c5a6c133f5f80da752}{xmlwriter\+\_\+full\+\_\+end\+\_\+element}} (\$xmlwriter)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a86121aed2c2e46642f01007bde8a45fb}{xmlwriter\+\_\+start\+\_\+element\+\_\+ns}} (\$xmlwriter, \$prefix, \$name, \$uri)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a42327e9b75d2e9098f3e17b3b17068ba}{xmlwriter\+\_\+write\+\_\+element}} (\$xmlwriter, \$name, \$content=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a7af7e759fbd9d590d1e83465ae820386}{xmlwriter\+\_\+write\+\_\+element\+\_\+ns}} (\$xmlwriter, \$prefix, \$name, \$uri, \$content=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a335e5bec538d1cbf3a4d4f0c2c40ec0f}{xmlwriter\+\_\+start\+\_\+pi}} (\$xmlwriter, \$target)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a0e746e1a7142497e2903d154741b5984}{xmlwriter\+\_\+end\+\_\+pi}} (\$xmlwriter)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a799bc8d69b56be313056cdf6128116b6}{xmlwriter\+\_\+write\+\_\+pi}} (\$xmlwriter, \$target, \$content)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a5a01bdd84abfb6c2b32c39086248708e}{xmlwriter\+\_\+start\+\_\+cdata}} (\$xmlwriter)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_af4fbd619f3ee205fb58b53a7c362e447}{xmlwriter\+\_\+end\+\_\+cdata}} (\$xmlwriter)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_abe209391a9cdbb89d5e6107147c1e7a9}{xmlwriter\+\_\+write\+\_\+cdata}} (\$xmlwriter, \$content)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a51ba5bce3c5e82db23975b3c3ebd54a8}{xmlwriter\+\_\+text}} (\$xmlwriter, \$content)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_ac34cd79a80e10128fad5ff9562a68457}{xmlwriter\+\_\+write\+\_\+raw}} (\$xmlwriter, \$content)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_af0bbe9bc6549233dda1fc9af396849a6}{xmlwriter\+\_\+start\+\_\+document}} (\$xmlwriter, \$\mbox{\hyperlink{pcov_8php_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}=\textquotesingle{}1.\+0\textquotesingle{}, \$encoding=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$standalone=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a000222b8ce12242e7cb91b2f4c2d4bc7}{xmlwriter\+\_\+end\+\_\+document}} (\$xmlwriter)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a01996e0fb5cb24eef5d3c80c664305c6}{xmlwriter\+\_\+write\+\_\+comment}} (\$xmlwriter, \$content)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_ae13a4af1d2f0f146abb3461c4877044d}{xmlwriter\+\_\+start\+\_\+dtd}} (\$xmlwriter, \$qualified\+Name, \$public\+Id=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$system\+Id=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a327a9f6794a2263c25cdf32960ed6113}{xmlwriter\+\_\+end\+\_\+dtd}} (\$xmlwriter)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a29d085954bd7f7df1b6071db47b0ebbd}{xmlwriter\+\_\+write\+\_\+dtd}} (\$xmlwriter, \$name, \$public\+Id=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$system\+Id=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$subset=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a7ba0a2cf6aabda222feaed703163da78}{xmlwriter\+\_\+start\+\_\+dtd\+\_\+element}} (\$xmlwriter, \$qualified\+Name)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a581b6962508fb736637f6a1751994fca}{xmlwriter\+\_\+end\+\_\+dtd\+\_\+element}} (\$xmlwriter)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_adb55e69411520c5d9b7a5366c1928c8a}{xmlwriter\+\_\+write\+\_\+dtd\+\_\+element}} (\$xmlwriter, \$name, \$content)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_ab5182527b21f08e45319711d73e9abe7}{xmlwriter\+\_\+start\+\_\+dtd\+\_\+attlist}} (\$xmlwriter, \$name)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_aa79f6ab1a3645512c6eeb755a276234e}{xmlwriter\+\_\+end\+\_\+dtd\+\_\+attlist}} (\$xmlwriter)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a8f8a427b7c3b0b7455866d249aa7ea86}{xmlwriter\+\_\+write\+\_\+dtd\+\_\+attlist}} (\$xmlwriter, \$name, \$content)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a87316ea5fb6cd39632221163a2173dac}{xmlwriter\+\_\+start\+\_\+dtd\+\_\+entity}} (\$xmlwriter, \$name, \$isparam)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a0fcfc497e60f922e09897d90c60f197e}{xmlwriter\+\_\+end\+\_\+dtd\+\_\+entity}} (\$xmlwriter)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a7d4199d1eaf16bfda8009383617d2c4d}{xmlwriter\+\_\+write\+\_\+dtd\+\_\+entity}} (\$xmlwriter, \$name, \$content, \$pe, \$pubid, \$sysid, \$ndataid)
+\item 
+\mbox{\hyperlink{xmlwriter_8php_a04cf988a9eff6fab56e2ae852b14d133}{xmlwriter\+\_\+output\+\_\+memory}} (\$xmlwriter, \$\mbox{\hyperlink{standard__0_8php_a7751f77b5263bcf940ece6e824a05b38}{flush}}=\mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}})
+\item 
+\mbox{\hyperlink{xmlwriter_8php_ae419293a7fd4391fc801eed62874fb2c}{xmlwriter\+\_\+flush}} (\$xmlwriter, \$empty=\mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{xmlwriter_8php_adb022fef65acfa36cf8e28b484db4157}\label{xmlwriter_8php_adb022fef65acfa36cf8e28b484db4157}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_end\_attribute@{xmlwriter\_end\_attribute}}
+\index{xmlwriter\_end\_attribute@{xmlwriter\_end\_attribute}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_end\_attribute()}{xmlwriter\_end\_attribute()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+end\+\_\+attribute (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ End attribute \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+$\ast$ \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_af4fbd619f3ee205fb58b53a7c362e447}\label{xmlwriter_8php_af4fbd619f3ee205fb58b53a7c362e447}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_end\_cdata@{xmlwriter\_end\_cdata}}
+\index{xmlwriter\_end\_cdata@{xmlwriter\_end\_cdata}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_end\_cdata()}{xmlwriter\_end\_cdata()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+end\+\_\+cdata (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ End current C\+D\+A\+TA \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_ac50f372de1b37e152d4d0307f38b3a5d}\label{xmlwriter_8php_ac50f372de1b37e152d4d0307f38b3a5d}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_end\_comment@{xmlwriter\_end\_comment}}
+\index{xmlwriter\_end\_comment@{xmlwriter\_end\_comment}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_end\_comment()}{xmlwriter\_end\_comment()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+end\+\_\+comment (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 1.\+0.\+0)~\newline
+ Create end comment \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a000222b8ce12242e7cb91b2f4c2d4bc7}\label{xmlwriter_8php_a000222b8ce12242e7cb91b2f4c2d4bc7}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_end\_document@{xmlwriter\_end\_document}}
+\index{xmlwriter\_end\_document@{xmlwriter\_end\_document}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_end\_document()}{xmlwriter\_end\_document()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+end\+\_\+document (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ End current document \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a327a9f6794a2263c25cdf32960ed6113}\label{xmlwriter_8php_a327a9f6794a2263c25cdf32960ed6113}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_end\_dtd@{xmlwriter\_end\_dtd}}
+\index{xmlwriter\_end\_dtd@{xmlwriter\_end\_dtd}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_end\_dtd()}{xmlwriter\_end\_dtd()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+end\+\_\+dtd (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ End current D\+TD \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+$\ast$ \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_aa79f6ab1a3645512c6eeb755a276234e}\label{xmlwriter_8php_aa79f6ab1a3645512c6eeb755a276234e}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_end\_dtd\_attlist@{xmlwriter\_end\_dtd\_attlist}}
+\index{xmlwriter\_end\_dtd\_attlist@{xmlwriter\_end\_dtd\_attlist}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_end\_dtd\_attlist()}{xmlwriter\_end\_dtd\_attlist()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+end\+\_\+dtd\+\_\+attlist (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ End current D\+TD Att\+List \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+$\ast$ \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a581b6962508fb736637f6a1751994fca}\label{xmlwriter_8php_a581b6962508fb736637f6a1751994fca}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_end\_dtd\_element@{xmlwriter\_end\_dtd\_element}}
+\index{xmlwriter\_end\_dtd\_element@{xmlwriter\_end\_dtd\_element}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_end\_dtd\_element()}{xmlwriter\_end\_dtd\_element()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+end\+\_\+dtd\+\_\+element (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ End current D\+TD element \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$xmlwriter  bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. }}\mbox{\Hypertarget{xmlwriter_8php_a0fcfc497e60f922e09897d90c60f197e}\label{xmlwriter_8php_a0fcfc497e60f922e09897d90c60f197e}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_end\_dtd\_entity@{xmlwriter\_end\_dtd\_entity}}
+\index{xmlwriter\_end\_dtd\_entity@{xmlwriter\_end\_dtd\_entity}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_end\_dtd\_entity()}{xmlwriter\_end\_dtd\_entity()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+end\+\_\+dtd\+\_\+entity (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ End current D\+TD Entity \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+$\ast$ \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a6c359d532719e1ada04a341504780139}\label{xmlwriter_8php_a6c359d532719e1ada04a341504780139}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_end\_element@{xmlwriter\_end\_element}}
+\index{xmlwriter\_end\_element@{xmlwriter\_end\_element}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_end\_element()}{xmlwriter\_end\_element()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+end\+\_\+element (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ End current element \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+$\ast$ \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a0e746e1a7142497e2903d154741b5984}\label{xmlwriter_8php_a0e746e1a7142497e2903d154741b5984}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_end\_pi@{xmlwriter\_end\_pi}}
+\index{xmlwriter\_end\_pi@{xmlwriter\_end\_pi}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_end\_pi()}{xmlwriter\_end\_pi()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+end\+\_\+pi (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ End current PI \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+$\ast$ \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_ae419293a7fd4391fc801eed62874fb2c}\label{xmlwriter_8php_ae419293a7fd4391fc801eed62874fb2c}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_flush@{xmlwriter\_flush}}
+\index{xmlwriter\_flush@{xmlwriter\_flush}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_flush()}{xmlwriter\_flush()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+flush (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$empty = {\ttfamily \mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 1.\+0.\+0)~\newline
+ Flush current buffer \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$empty} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Whether to empty the buffer or not. Default is {\bfseries{T\+R\+UE}}. 
+
+\begin{DoxyReturn}{Returns}
+mixed If you opened the writer in memory, this function returns the generated X\+ML buffer, Else, if using U\+RI, this function will write the buffer and return the number of written bytes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_ab100fd800f6b39c5a6c133f5f80da752}\label{xmlwriter_8php_ab100fd800f6b39c5a6c133f5f80da752}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_full\_end\_element@{xmlwriter\_full\_end\_element}}
+\index{xmlwriter\_full\_end\_element@{xmlwriter\_full\_end\_element}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_full\_end\_element()}{xmlwriter\_full\_end\_element()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+full\+\_\+end\+\_\+element (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+2.\+0, P\+E\+CL xmlwriter $>$= 2.\+0.\+4)~\newline
+ End current element \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+$\ast$ \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_aa7485732d60f40f675eed4082dadbdf5}\label{xmlwriter_8php_aa7485732d60f40f675eed4082dadbdf5}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_open\_memory@{xmlwriter\_open\_memory}}
+\index{xmlwriter\_open\_memory@{xmlwriter\_open\_memory}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_open\_memory()}{xmlwriter\_open\_memory()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+open\+\_\+memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Create new xmlwriter using memory for string output \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{bool Object oriented style\+: Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. }} 
+
+Procedural style\+: Returns a new xmlwriter resource for later use with the xmlwriter functions on success, {\bfseries{F\+A\+L\+SE}} on error. \mbox{\Hypertarget{xmlwriter_8php_a12aea72daf18b38f6226b4fa61fcac91}\label{xmlwriter_8php_a12aea72daf18b38f6226b4fa61fcac91}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_open\_uri@{xmlwriter\_open\_uri}}
+\index{xmlwriter\_open\_uri@{xmlwriter\_open\_uri}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_open\_uri()}{xmlwriter\_open\_uri()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+open\+\_\+uri (\begin{DoxyParamCaption}\item[{}]{\$uri }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Create new xmlwriter using source uri for output \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$uri }} The U\+RI of the resource for the output. 
+
+\begin{DoxyReturn}{Returns}
+bool Object oriented style\+: Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+
+
+Procedural style\+: Returns a new xmlwriter resource for later use with the xmlwriter functions on success, {\bfseries{F\+A\+L\+SE}} on error. \mbox{\Hypertarget{xmlwriter_8php_a04cf988a9eff6fab56e2ae852b14d133}\label{xmlwriter_8php_a04cf988a9eff6fab56e2ae852b14d133}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_output\_memory@{xmlwriter\_output\_memory}}
+\index{xmlwriter\_output\_memory@{xmlwriter\_output\_memory}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_output\_memory()}{xmlwriter\_output\_memory()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+output\+\_\+memory (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$flush = {\ttfamily \mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Returns current buffer \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$flush} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Whether to flush the output buffer or not. Default is {\bfseries{T\+R\+UE}}. 
+
+\begin{DoxyReturn}{Returns}
+string the current buffer as a string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a7870c9799d5b689f0fbfe98f5cfe8afc}\label{xmlwriter_8php_a7870c9799d5b689f0fbfe98f5cfe8afc}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_set\_indent@{xmlwriter\_set\_indent}}
+\index{xmlwriter\_set\_indent@{xmlwriter\_set\_indent}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_set\_indent()}{xmlwriter\_set\_indent()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+set\+\_\+indent (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$indent }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Toggle indentation on/off \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$indent} & \\
+\hline
+\end{DoxyParams}
+Whether indentation is enabled. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_aded8bacd1933acf5250faad8239e7360}\label{xmlwriter_8php_aded8bacd1933acf5250faad8239e7360}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_set\_indent\_string@{xmlwriter\_set\_indent\_string}}
+\index{xmlwriter\_set\_indent\_string@{xmlwriter\_set\_indent\_string}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_set\_indent\_string()}{xmlwriter\_set\_indent\_string()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+set\+\_\+indent\+\_\+string (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$indent\+String }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Set string used for indenting \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$indent\+String} & \\
+\hline
+\end{DoxyParams}
+The indentation string. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_af82f2a856de3a84adc669362d5ff6e82}\label{xmlwriter_8php_af82f2a856de3a84adc669362d5ff6e82}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_start\_attribute@{xmlwriter\_start\_attribute}}
+\index{xmlwriter\_start\_attribute@{xmlwriter\_start\_attribute}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_start\_attribute()}{xmlwriter\_start\_attribute()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+start\+\_\+attribute (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$name }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Create start attribute \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+The attribute name. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a87f8220d2bb700c4387810640ef1c8d2}\label{xmlwriter_8php_a87f8220d2bb700c4387810640ef1c8d2}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_start\_attribute\_ns@{xmlwriter\_start\_attribute\_ns}}
+\index{xmlwriter\_start\_attribute\_ns@{xmlwriter\_start\_attribute\_ns}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_start\_attribute\_ns()}{xmlwriter\_start\_attribute\_ns()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+start\+\_\+attribute\+\_\+ns (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$prefix,  }\item[{}]{\$name,  }\item[{}]{\$uri }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Create start namespaced attribute \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+The namespace prefix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+The attribute name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+\end{DoxyParams}
+The namespace U\+RI. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a5a01bdd84abfb6c2b32c39086248708e}\label{xmlwriter_8php_a5a01bdd84abfb6c2b32c39086248708e}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_start\_cdata@{xmlwriter\_start\_cdata}}
+\index{xmlwriter\_start\_cdata@{xmlwriter\_start\_cdata}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_start\_cdata()}{xmlwriter\_start\_cdata()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+start\+\_\+cdata (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Create start C\+D\+A\+TA tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_af575fba6f3238cd3bbb9bcc25051468c}\label{xmlwriter_8php_af575fba6f3238cd3bbb9bcc25051468c}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_start\_comment@{xmlwriter\_start\_comment}}
+\index{xmlwriter\_start\_comment@{xmlwriter\_start\_comment}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_start\_comment()}{xmlwriter\_start\_comment()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+start\+\_\+comment (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 1.\+0.\+0)~\newline
+ Create start comment \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+$\ast$ \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_af0bbe9bc6549233dda1fc9af396849a6}\label{xmlwriter_8php_af0bbe9bc6549233dda1fc9af396849a6}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_start\_document@{xmlwriter\_start\_document}}
+\index{xmlwriter\_start\_document@{xmlwriter\_start\_document}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_start\_document()}{xmlwriter\_start\_document()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+start\+\_\+document (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$version = {\ttfamily \textquotesingle{}1.0\textquotesingle{}},  }\item[{}]{\$encoding = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$standalone = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Create document tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$version} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The version number of the document as part of the X\+ML declaration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$encoding} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The encoding of the document as part of the X\+ML declaration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$standalone} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+yes or no. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_ae13a4af1d2f0f146abb3461c4877044d}\label{xmlwriter_8php_ae13a4af1d2f0f146abb3461c4877044d}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_start\_dtd@{xmlwriter\_start\_dtd}}
+\index{xmlwriter\_start\_dtd@{xmlwriter\_start\_dtd}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_start\_dtd()}{xmlwriter\_start\_dtd()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+start\+\_\+dtd (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$qualified\+Name,  }\item[{}]{\$public\+Id = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$system\+Id = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Create start D\+TD tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$qualified\+Name} & \\
+\hline
+\end{DoxyParams}
+The qualified name of the document type to create. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$public\+Id} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The external subset public identifier. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$system\+Id} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The external subset system identifier. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_ab5182527b21f08e45319711d73e9abe7}\label{xmlwriter_8php_ab5182527b21f08e45319711d73e9abe7}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_start\_dtd\_attlist@{xmlwriter\_start\_dtd\_attlist}}
+\index{xmlwriter\_start\_dtd\_attlist@{xmlwriter\_start\_dtd\_attlist}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_start\_dtd\_attlist()}{xmlwriter\_start\_dtd\_attlist()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+start\+\_\+dtd\+\_\+attlist (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$name }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Create start D\+TD Att\+List \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+The attribute list name. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a7ba0a2cf6aabda222feaed703163da78}\label{xmlwriter_8php_a7ba0a2cf6aabda222feaed703163da78}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_start\_dtd\_element@{xmlwriter\_start\_dtd\_element}}
+\index{xmlwriter\_start\_dtd\_element@{xmlwriter\_start\_dtd\_element}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_start\_dtd\_element()}{xmlwriter\_start\_dtd\_element()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+start\+\_\+dtd\+\_\+element (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$qualified\+Name }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Create start D\+TD element \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$qualified\+Name} & \\
+\hline
+\end{DoxyParams}
+The qualified name of the document type to create. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a87316ea5fb6cd39632221163a2173dac}\label{xmlwriter_8php_a87316ea5fb6cd39632221163a2173dac}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_start\_dtd\_entity@{xmlwriter\_start\_dtd\_entity}}
+\index{xmlwriter\_start\_dtd\_entity@{xmlwriter\_start\_dtd\_entity}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_start\_dtd\_entity()}{xmlwriter\_start\_dtd\_entity()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+start\+\_\+dtd\+\_\+entity (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$name,  }\item[{}]{\$isparam }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Create start D\+TD Entity \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+The name of the entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$isparam} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_ac0262284bde806194a510a88cc76a494}\label{xmlwriter_8php_ac0262284bde806194a510a88cc76a494}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_start\_element@{xmlwriter\_start\_element}}
+\index{xmlwriter\_start\_element@{xmlwriter\_start\_element}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_start\_element()}{xmlwriter\_start\_element()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+start\+\_\+element (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$name }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Create start element tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+The element name. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a86121aed2c2e46642f01007bde8a45fb}\label{xmlwriter_8php_a86121aed2c2e46642f01007bde8a45fb}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_start\_element\_ns@{xmlwriter\_start\_element\_ns}}
+\index{xmlwriter\_start\_element\_ns@{xmlwriter\_start\_element\_ns}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_start\_element\_ns()}{xmlwriter\_start\_element\_ns()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+start\+\_\+element\+\_\+ns (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$prefix,  }\item[{}]{\$name,  }\item[{}]{\$uri }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Create start namespaced element tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+The namespace prefix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+The element name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+\end{DoxyParams}
+The namespace U\+RI. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a335e5bec538d1cbf3a4d4f0c2c40ec0f}\label{xmlwriter_8php_a335e5bec538d1cbf3a4d4f0c2c40ec0f}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_start\_pi@{xmlwriter\_start\_pi}}
+\index{xmlwriter\_start\_pi@{xmlwriter\_start\_pi}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_start\_pi()}{xmlwriter\_start\_pi()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+start\+\_\+pi (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$target }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Create start PI tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target} & \\
+\hline
+\end{DoxyParams}
+The target of the processing instruction. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a51ba5bce3c5e82db23975b3c3ebd54a8}\label{xmlwriter_8php_a51ba5bce3c5e82db23975b3c3ebd54a8}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_text@{xmlwriter\_text}}
+\index{xmlwriter\_text@{xmlwriter\_text}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_text()}{xmlwriter\_text()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+text (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$content }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Write text \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \\
+\hline
+\end{DoxyParams}
+The contents of the text. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a7e8fe2ef893d5ce047a6ae1e9a92c94e}\label{xmlwriter_8php_a7e8fe2ef893d5ce047a6ae1e9a92c94e}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_write\_attribute@{xmlwriter\_write\_attribute}}
+\index{xmlwriter\_write\_attribute@{xmlwriter\_write\_attribute}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_write\_attribute()}{xmlwriter\_write\_attribute()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+write\+\_\+attribute (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Write full attribute \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+The name of the attribute. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+The value of the attribute. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a30cae372cd7c26fe7afc8cc736a2710a}\label{xmlwriter_8php_a30cae372cd7c26fe7afc8cc736a2710a}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_write\_attribute\_ns@{xmlwriter\_write\_attribute\_ns}}
+\index{xmlwriter\_write\_attribute\_ns@{xmlwriter\_write\_attribute\_ns}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_write\_attribute\_ns()}{xmlwriter\_write\_attribute\_ns()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+write\+\_\+attribute\+\_\+ns (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$prefix,  }\item[{}]{\$name,  }\item[{}]{\$uri,  }\item[{}]{\$content }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Write full namespaced attribute \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+The namespace prefix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+The attribute name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+\end{DoxyParams}
+The namespace U\+RI. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \\
+\hline
+\end{DoxyParams}
+The attribute value. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_abe209391a9cdbb89d5e6107147c1e7a9}\label{xmlwriter_8php_abe209391a9cdbb89d5e6107147c1e7a9}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_write\_cdata@{xmlwriter\_write\_cdata}}
+\index{xmlwriter\_write\_cdata@{xmlwriter\_write\_cdata}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_write\_cdata()}{xmlwriter\_write\_cdata()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+write\+\_\+cdata (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$content }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Write full C\+D\+A\+TA tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \\
+\hline
+\end{DoxyParams}
+The contents of the C\+D\+A\+TA. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a01996e0fb5cb24eef5d3c80c664305c6}\label{xmlwriter_8php_a01996e0fb5cb24eef5d3c80c664305c6}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_write\_comment@{xmlwriter\_write\_comment}}
+\index{xmlwriter\_write\_comment@{xmlwriter\_write\_comment}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_write\_comment()}{xmlwriter\_write\_comment()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+write\+\_\+comment (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$content }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Write full comment tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \\
+\hline
+\end{DoxyParams}
+The contents of the comment. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a29d085954bd7f7df1b6071db47b0ebbd}\label{xmlwriter_8php_a29d085954bd7f7df1b6071db47b0ebbd}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_write\_dtd@{xmlwriter\_write\_dtd}}
+\index{xmlwriter\_write\_dtd@{xmlwriter\_write\_dtd}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_write\_dtd()}{xmlwriter\_write\_dtd()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+write\+\_\+dtd (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$name,  }\item[{}]{\$public\+Id = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$system\+Id = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$subset = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Write full D\+TD tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+The D\+TD name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$public\+Id} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The external subset public identifier. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$system\+Id} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The external subset system identifier. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$subset} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The content of the D\+TD. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a8f8a427b7c3b0b7455866d249aa7ea86}\label{xmlwriter_8php_a8f8a427b7c3b0b7455866d249aa7ea86}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_write\_dtd\_attlist@{xmlwriter\_write\_dtd\_attlist}}
+\index{xmlwriter\_write\_dtd\_attlist@{xmlwriter\_write\_dtd\_attlist}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_write\_dtd\_attlist()}{xmlwriter\_write\_dtd\_attlist()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+write\+\_\+dtd\+\_\+attlist (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$name,  }\item[{}]{\$content }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Write full D\+TD Att\+List tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+The name of the D\+TD attribute list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \\
+\hline
+\end{DoxyParams}
+The content of the D\+TD attribute list. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_adb55e69411520c5d9b7a5366c1928c8a}\label{xmlwriter_8php_adb55e69411520c5d9b7a5366c1928c8a}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_write\_dtd\_element@{xmlwriter\_write\_dtd\_element}}
+\index{xmlwriter\_write\_dtd\_element@{xmlwriter\_write\_dtd\_element}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_write\_dtd\_element()}{xmlwriter\_write\_dtd\_element()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+write\+\_\+dtd\+\_\+element (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$name,  }\item[{}]{\$content }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Write full D\+TD element tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+The name of the D\+TD element. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \\
+\hline
+\end{DoxyParams}
+The content of the element. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a7d4199d1eaf16bfda8009383617d2c4d}\label{xmlwriter_8php_a7d4199d1eaf16bfda8009383617d2c4d}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_write\_dtd\_entity@{xmlwriter\_write\_dtd\_entity}}
+\index{xmlwriter\_write\_dtd\_entity@{xmlwriter\_write\_dtd\_entity}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_write\_dtd\_entity()}{xmlwriter\_write\_dtd\_entity()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+write\+\_\+dtd\+\_\+entity (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$name,  }\item[{}]{\$content,  }\item[{}]{\$pe,  }\item[{}]{\$pubid,  }\item[{}]{\$sysid,  }\item[{}]{\$ndataid }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Write full D\+TD Entity tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+The name of the entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \\
+\hline
+\end{DoxyParams}
+The content of the entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$pe} & \\
+\hline
+string & {\em \$pubid} & \\
+\hline
+string & {\em \$sysid} & \\
+\hline
+string & {\em \$ndataid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a42327e9b75d2e9098f3e17b3b17068ba}\label{xmlwriter_8php_a42327e9b75d2e9098f3e17b3b17068ba}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_write\_element@{xmlwriter\_write\_element}}
+\index{xmlwriter\_write\_element@{xmlwriter\_write\_element}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_write\_element()}{xmlwriter\_write\_element()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+write\+\_\+element (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$name,  }\item[{}]{\$content = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Write full element tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+The element name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The element contents. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a7af7e759fbd9d590d1e83465ae820386}\label{xmlwriter_8php_a7af7e759fbd9d590d1e83465ae820386}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_write\_element\_ns@{xmlwriter\_write\_element\_ns}}
+\index{xmlwriter\_write\_element\_ns@{xmlwriter\_write\_element\_ns}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_write\_element\_ns()}{xmlwriter\_write\_element\_ns()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+write\+\_\+element\+\_\+ns (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$prefix,  }\item[{}]{\$name,  }\item[{}]{\$uri,  }\item[{}]{\$content = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Write full namespaced element tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+The namespace prefix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+The element name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+\end{DoxyParams}
+The namespace U\+RI. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The element contents. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_a799bc8d69b56be313056cdf6128116b6}\label{xmlwriter_8php_a799bc8d69b56be313056cdf6128116b6}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_write\_pi@{xmlwriter\_write\_pi}}
+\index{xmlwriter\_write\_pi@{xmlwriter\_write\_pi}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_write\_pi()}{xmlwriter\_write\_pi()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+write\+\_\+pi (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$target,  }\item[{}]{\$content }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL xmlwriter $>$= 0.\+1.\+0)~\newline
+ Writes a PI \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target} & \\
+\hline
+\end{DoxyParams}
+The target of the processing instruction. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \\
+\hline
+\end{DoxyParams}
+The content of the processing instruction. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xmlwriter_8php_ac34cd79a80e10128fad5ff9562a68457}\label{xmlwriter_8php_ac34cd79a80e10128fad5ff9562a68457}} 
+\index{xmlwriter.php@{xmlwriter.php}!xmlwriter\_write\_raw@{xmlwriter\_write\_raw}}
+\index{xmlwriter\_write\_raw@{xmlwriter\_write\_raw}!xmlwriter.php@{xmlwriter.php}}
+\doxysubsubsection{\texorpdfstring{xmlwriter\_write\_raw()}{xmlwriter\_write\_raw()}}
+{\footnotesize\ttfamily xmlwriter\+\_\+write\+\_\+raw (\begin{DoxyParamCaption}\item[{}]{\$xmlwriter,  }\item[{}]{\$content }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+2.\+0, P\+E\+CL xmlwriter $>$= 2.\+0.\+4)~\newline
+ Write a raw X\+ML text \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$xmlwriter }}Only for procedural calls. The \mbox{\hyperlink{class_x_m_l_writer}{X\+M\+L\+Writer}} \mbox{\hyperlink{}{resource}} that is being modified. This resource comes from a call to \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+uri()}} or \mbox{\hyperlink{}{xmlwriter\+\_\+open\+\_\+memory()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \\
+\hline
+\end{DoxyParams}
+The text string to write. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}

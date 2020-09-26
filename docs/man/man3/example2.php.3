@@ -1,0 +1,48 @@
+.TH "vendor/roave/better-reflection/demo/parsing-whole-directory/example2.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/roave/better-reflection/demo/parsing-whole-directory/example2.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$directories\fP = [\fB__DIR__\fP \&. '/\&.\&./\&.\&./src']"
+.br
+.ti -1c
+.RI "\fB$sourceLocator\fP"
+.br
+.ti -1c
+.RI "\fB$classReflector\fP = new \fBClassReflector\fP($sourceLocator)"
+.br
+.ti -1c
+.RI "\fB$classReflections\fP = $classReflector\->getAllClasses()"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$classReflections = $classReflector\->getAllClasses()"
+
+.SS "$classReflector = new \fBClassReflector\fP($sourceLocator)"
+
+.SS "$directories = [\fB__DIR__\fP \&. '/\&.\&./\&.\&./src']"
+
+.SS "$sourceLocator"
+\fBInitial value:\fP
+.PP
+.nf
+= new AggregateSourceLocator([
+    new DirectoriesSourceLocator(
+        $directories,
+        (new BetterReflection())->astLocator()
+    ),
+    
+    new AutoloadSourceLocator((new BetterReflection())->astLocator())
+])
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

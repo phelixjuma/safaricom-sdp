@@ -1,0 +1,299 @@
+.TH "vendor/jetbrains/phpstorm-stubs/rrd/rrd.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/rrd/rrd.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBRRDCreator\fP"
+.br
+.ti -1c
+.RI "class \fBRRDGraph\fP"
+.br
+.ti -1c
+.RI "class \fBRRDUpdater\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBrrd_error\fP ()"
+.br
+.ti -1c
+.RI "\fBrrd_create\fP ($filename, $options)"
+.br
+.ti -1c
+.RI "\fBrrd_fetch\fP ($filename, $options)"
+.br
+.ti -1c
+.RI "\fBrrd_first\fP ($\fBfile\fP, $raaindex=0)"
+.br
+.ti -1c
+.RI "\fBrrd_graph\fP ($filename, $options)"
+.br
+.ti -1c
+.RI "\fBrrd_info\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBrrd_last\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBrrd_lastupdate\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBrrd_restore\fP ($xml_file, $rrd_file, $options=array())"
+.br
+.ti -1c
+.RI "\fBrrd_tune\fP ($filename, $options)"
+.br
+.ti -1c
+.RI "\fBrrd_update\fP ($filename, $options)"
+.br
+.ti -1c
+.RI "\fBrrd_version\fP ()"
+.br
+.ti -1c
+.RI "\fBrrd_xport\fP ($options)"
+.br
+.ti -1c
+.RI "\fBrrd_disconnect\fP ()"
+.br
+.ti -1c
+.RI "\fBrrdc_disconnect\fP ()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "rrd_create ( $filename,  $options)"
+Creates rrd database file \fBstring $filename \fP Filename for newly created rrd file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP 
+.RE
+.PP
+Options for rrd create - list of strings\&. See man page of rrd create for whole list of options\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool TRUE on success or FALSE on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+PECL rrd >= 0\&.9\&.0 
+.RE
+.PP
+
+.SS "rrd_disconnect ()"
+Close any outstanding connection to rrd caching daemon 
+.PP
+This function is automatically called when the whole PHP process is terminated\&. It depends on used SAPI\&. For example, it's called automatically at the end of command line script\&.
+.PP
+It's up user whether he wants to call this function at the end of every request or otherwise\&.
+.PP
+\fBvoid  PECL rrd >= 1\&.1\&.2 \fP
+.SS "rrd_error ()"
+Stubs for PECL/rrd extension Description taken from official documenation \fBOlegs Capligins shader@dautkom.lv Returns latest global rrd error message\&.  https://php.net/manual/en/function.rrd-error.php  string Latest error message\&.  PECL rrd >= 0\&.9\&.0 \fP
+.SS "rrd_fetch ( $filename,  $options)"
+Gets data for graph output from RRD database file as array\&. This function has same result as \fBrrd_graph()\fP, but fetched data are returned as array, no image file is created\&. \fBstring $filename \fP RRD database file name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP 
+.RE
+.PP
+Array of options for resolution specification\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array Array with information about retrieved graph data\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+PECL rrd >= 0\&.9\&.0 
+.RE
+.PP
+
+.SS "rrd_first ( $file,  $raaindex = \fC0\fP)"
+Gets the timestamp of the first sample from from the specified RRA of the RRD file\&. \fBstring $file \fP RRD database file name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$raaindex\fP 
+.RE
+.PP
+The index number of the RRA that is to be examined\&. Default value is 0\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false Integer as unix timestamp, FALSE if some error occurs\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+PECL rrd >= 0\&.9\&.0 
+.RE
+.PP
+
+.SS "rrd_graph ( $filename,  $options)"
+Creates image from a data\&. \fBstring $filename \fP The filename to output the graph to\&. This will generally end in either \&.png, \&.svg or \&.eps, depending on the format you want to output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP 
+.RE
+.PP
+Options for generating image\&. See man page of rrd graph for all possible options\&. All options (data definitions, variable defintions, etc\&.) are allowed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false If image is created successfully an array with information about generated image is returned, FALSE when error occurs\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+PECL rrd >= 0\&.9\&.0 
+.RE
+.PP
+
+.SS "rrd_info ( $filename)"
+Returns information about particular RRD database file\&. \fBstring $filename \fP RRD database file name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false Array with information about requsted RRD file, FALSE when error occurs\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+PECL rrd >= 0\&.9\&.0 
+.RE
+.PP
+
+.SS "rrd_last ( $filename)"
+Returns the UNIX timestamp of the most recent update of the RRD database\&. \fBstring $filename \fP RRD database file name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int Integer as unix timestamp of the most recent data from the RRD database\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+PECL rrd >= 0\&.9\&.0 
+.RE
+.PP
+
+.SS "rrd_lastupdate ( $filename)"
+Gets array of the UNIX timestamp and the values stored for each date in the most recent update of the RRD database file\&. \fBstring $filename \fP RRD database file name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false Array of information about last update, FALSE when error occurs\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+PECL rrd >= 0\&.9\&.0 
+.RE
+.PP
+
+.SS "rrd_restore ( $xml_file,  $rrd_file,  $options = \fCarray()\fP)"
+Restores the RRD file from the XML dump\&. \fBstring $xml_file \fP XML filename with the dump of the original RRD database file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$rrd_file\fP 
+.RE
+.PP
+Restored RRD database file name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP 
+.RE
+.PP
+Array of options for restoring\&. See man page for rrd restore\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns TRUE on success, FALSE otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+PECL rrd >= 0\&.9\&.0 
+.RE
+.PP
+
+.SS "rrd_tune ( $filename,  $options)"
+Change some options in the RRD dabase header file\&. E\&.g\&. renames the source for the data etc\&. \fBstring $filename \fP RRD database file name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP 
+.RE
+.PP
+Options with RRD database file properties which will be changed\&. See rrd tune man page for details\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns TRUE on success, FALSE otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+PECL rrd >= 0\&.9\&.0 
+.RE
+.PP
+
+.SS "rrd_update ( $filename,  $options)"
+Updates the RRD database file\&. The input data is time interpolated according to the properties of the RRD database file\&. \fBstring $filename \fP RRD database file name\&. This database will be updated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP 
+.RE
+.PP
+Options for updating the RRD database\&. This is list of strings\&. See man page of rrd update for whole list of options\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Updates the RRD database file\&. The input data is time interpolated according to the properties of the RRD database file\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+PECL rrd >= 0\&.9\&.0 
+.RE
+.PP
+
+.SS "rrd_version ()"
+Returns information about underlying rrdtool library\&. \fBstring String with rrdtool version number e\&.g\&. '1\&.4\&.3'\&.  PECL rrd >= 1\&.0\&.0 \fP
+.SS "rrd_xport ( $options)"
+Exports the information about RRD database file\&. This data can be converted to XML file via user space PHP script and then restored back as RRD database file\&. \fBarray $options \fP Array of options for the export, see rrd xport man page\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false Array with information about RRD database file, FALSE when error occurs\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+PECL rrd >= 0\&.9\&.0 
+.RE
+.PP
+
+.SS "rrdc_disconnect ()"
+Close any outstanding connection to rrd caching daemon\&. This function is automatically called when the whole PHP process is terminated\&. It depends on used SAPI\&. For example, it's called automatically at the end of command line script\&. It's up user whether he wants to call this function at the end of every request or otherwise\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

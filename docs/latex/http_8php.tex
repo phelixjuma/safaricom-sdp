@@ -1,0 +1,1963 @@
+\hypertarget{http_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/http/http.php File Reference}
+\label{http_8php}\index{vendor/jetbrains/phpstorm-\/stubs/http/http.php@{vendor/jetbrains/phpstorm-\/stubs/http/http.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_http_exception}{Http\+Exception}}
+\item 
+class \mbox{\hyperlink{class_http_runtime_exception}{Http\+Runtime\+Exception}}
+\item 
+class \mbox{\hyperlink{class_http_invalid_param_exception}{Http\+Invalid\+Param\+Exception}}
+\item 
+class \mbox{\hyperlink{class_http_header_exception}{Http\+Header\+Exception}}
+\item 
+class \mbox{\hyperlink{class_http_malformed_headers_exception}{Http\+Malformed\+Headers\+Exception}}
+\item 
+class \mbox{\hyperlink{class_http_request_method_exception}{Http\+Request\+Method\+Exception}}
+\item 
+class \mbox{\hyperlink{class_http_message_type_exception}{Http\+Message\+Type\+Exception}}
+\item 
+class \mbox{\hyperlink{class_http_encoding_exception}{Http\+Encoding\+Exception}}
+\item 
+class \mbox{\hyperlink{class_http_request_exception}{Http\+Request\+Exception}}
+\item 
+class \mbox{\hyperlink{class_http_request_pool_exception}{Http\+Request\+Pool\+Exception}}
+\item 
+class \mbox{\hyperlink{class_http_socket_exception}{Http\+Socket\+Exception}}
+\item 
+class \mbox{\hyperlink{class_http_response_exception}{Http\+Response\+Exception}}
+\item 
+class \mbox{\hyperlink{class_http_url_exception}{Http\+Url\+Exception}}
+\item 
+class \mbox{\hyperlink{class_http_query_string_exception}{Http\+Query\+String\+Exception}}
+\item 
+class \mbox{\hyperlink{class_http_deflate_stream}{Http\+Deflate\+Stream}}
+\item 
+class \mbox{\hyperlink{class_http_inflate_stream}{Http\+Inflate\+Stream}}
+\item 
+class \mbox{\hyperlink{class_http_message}{Http\+Message}}
+\item 
+class \mbox{\hyperlink{class_http_query_string}{Http\+Query\+String}}
+\item 
+class \mbox{\hyperlink{class_http_request}{Http\+Request}}
+\item 
+class \mbox{\hyperlink{class_http_request_data_share}{Http\+Request\+Data\+Share}}
+\item 
+class \mbox{\hyperlink{class_http_request_pool}{Http\+Request\+Pool}}
+\item 
+class \mbox{\hyperlink{class_http_response}{Http\+Response}}
+\item 
+class \mbox{\hyperlink{class_http_util}{Http\+Util}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{http_8php_a894ee45346bbb733a6b3677a74737522}{http\+\_\+date}} (\$timestamp=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a36fee5d43bde0713d9f39a802c234607}{http\+\_\+build\+\_\+url}} (\$url=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$parts=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$flags=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \&\$new\+\_\+url=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a946515119c732539917922273385b8e7}{http\+\_\+build\+\_\+str}} (array \$query, \$prefix=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$arg\+\_\+separator=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_abb07fcb5c243b8135789119eca364b08}{http\+\_\+negotiate\+\_\+language}} (array \$supported, array \&\$result=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_aada5ba8a21b16ca636636f24e85e9e3b}{http\+\_\+negotiate\+\_\+charset}} (array \$supported, array \&\$result=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_ad0f801464bb17bef115ba6d232b38522}{http\+\_\+negotiate\+\_\+content\+\_\+type}} (array \$supported, array \&\$result=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a74db9a6f81e0856e4cecf9b72416fc5d}{http\+\_\+redirect}} (\$url=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$params=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$session=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$status=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_ae202009c0f15070de737e9d5844490b6}{http\+\_\+throttle}} (\$sec=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$bytes=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a7d81ef728601171a5e18be7633c7956f}{http\+\_\+send\+\_\+status}} (\$status)
+\item 
+\mbox{\hyperlink{http_8php_a2f84c00ba6b43f8b2bcaf7664882365b}{http\+\_\+send\+\_\+last\+\_\+modified}} (\$timestamp=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a5e9cdac0ce5fcd62392995049e07c6dd}{http\+\_\+send\+\_\+content\+\_\+type}} (\$content\+\_\+type=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a8efa3d7f060a07d6d8427b677f440d49}{http\+\_\+send\+\_\+content\+\_\+disposition}} (\$filename, \$inline=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a1718171b777ff491b2f8576517fd3b18}{http\+\_\+match\+\_\+modified}} (\$timestamp=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$for\+\_\+range=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a1780fbe0777c420334041ba13f987ff1}{http\+\_\+match\+\_\+etag}} (\$etag, \$for\+\_\+range=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_afb7b46e2cac691431ee90cc86561685d}{http\+\_\+cache\+\_\+last\+\_\+modified}} (\$timestamp\+\_\+or\+\_\+expires=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a185ec7cdeed05af77ae5b7e230442836}{http\+\_\+cache\+\_\+etag}} (\$etag=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a67077aa3f10f3d7e650e5b7726d3cf30}{http\+\_\+send\+\_\+data}} (\$data)
+\item 
+\mbox{\hyperlink{http_8php_a1757240f57fefdd5b516a721c8128e34}{http\+\_\+send\+\_\+file}} (\$\mbox{\hyperlink{standard__5_8php_ac0d353a97d1662c811425338985026b1}{file}})
+\item 
+\mbox{\hyperlink{http_8php_a3592338744e7ef1fb3457c058cb2cac0}{http\+\_\+send\+\_\+stream}} (\$stream)
+\item 
+\mbox{\hyperlink{http_8php_afcd7985398c043e810426ffaecc90f32}{http\+\_\+chunked\+\_\+decode}} (\$encoded)
+\item 
+\mbox{\hyperlink{http_8php_a4c4cc3897a8bad8fc00448580af57d40}{http\+\_\+parse\+\_\+message}} (\$message)
+\item 
+\mbox{\hyperlink{http_8php_aa900002f5fe62ce014a84edd0046869f}{http\+\_\+parse\+\_\+headers}} (\$\mbox{\hyperlink{standard__4_8php_ac55e164292560bad3c753ba51f50915c}{header}})
+\item 
+\mbox{\hyperlink{http_8php_a7005bbad3c18ff03982a684311dba2bf}{http\+\_\+parse\+\_\+cookie}} (\$cookie, \$flags=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$allowed\+\_\+extras=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a3cc8a9bb82ea6d55074398d34f80b31b}{http\+\_\+build\+\_\+cookie}} (array \$cookie)
+\item 
+\mbox{\hyperlink{http_8php_a2dcf1a9bd095e4124944a99b2ae21ee4}{http\+\_\+parse\+\_\+params}} (\$param, \$flags=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a5284b097aa176ba833c296c69e95f102}{http\+\_\+get\+\_\+request\+\_\+headers}} ()
+\item 
+\mbox{\hyperlink{http_8php_ab4ba13419d984a885611aba1f441b544}{http\+\_\+get\+\_\+request\+\_\+body}} ()
+\item 
+\mbox{\hyperlink{http_8php_af5e88795781df7f2ffb51c6fa6b112bc}{http\+\_\+get\+\_\+request\+\_\+body\+\_\+stream}} ()
+\item 
+\mbox{\hyperlink{http_8php_a8d83149cfb65a22b22dc543b1f9febca}{http\+\_\+match\+\_\+request\+\_\+header}} (\$\mbox{\hyperlink{standard__4_8php_ac55e164292560bad3c753ba51f50915c}{header}}, \$value, \$match\+\_\+case=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a13c1785fdf1d481994c1c4c8485bf132}{http\+\_\+persistent\+\_\+handles\+\_\+count}} ()
+\item 
+\mbox{\hyperlink{http_8php_a0629a8119d38743a080bc53e158985a0}{http\+\_\+persistent\+\_\+handles\+\_\+clean}} (\$ident=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a83494eb8e0e684167ed439eca5b4b364}{http\+\_\+persistent\+\_\+handles\+\_\+ident}} (\$ident)
+\item 
+\mbox{\hyperlink{http_8php_ad6e5b70b5bd77f2500e49748dd70f21a}{http\+\_\+get}} (\$url, array \$options=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \&\$info=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a831f1ffe89de18c313546ea33f4f75aa}{http\+\_\+head}} (\$url=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$options=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \&\$info=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a17d66f5dbd74c9264d335841585a079c}{http\+\_\+post\+\_\+data}} (\$url, \$data=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$options=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \&\$info=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a99212109d7f8945dbec95a1777f7e166}{http\+\_\+post\+\_\+fields}} (\$url, array \$data=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$files=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$options=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \&\$info=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a62e86e6330fd37687e9243bd7086126d}{http\+\_\+put\+\_\+data}} (\$url, \$data=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$options=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \&\$info=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a4175928079b6b9fef6a14fc18809d616}{http\+\_\+put\+\_\+file}} (\$url, \$\mbox{\hyperlink{standard__5_8php_ac0d353a97d1662c811425338985026b1}{file}}=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$options=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \&\$info=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a66561598943980b31d68263865281b8d}{http\+\_\+put\+\_\+stream}} (\$url, \$stream=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$options=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \&\$info=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a47e914840ea2c564c72169ded33f89b2}{http\+\_\+request}} (\$method, \$url=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$body=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$options=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \&\$info=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_aec1c81f1db6c9f8922e75b0eac3c0879}{http\+\_\+request\+\_\+body\+\_\+encode}} (array \$fields, array \$files)
+\item 
+\mbox{\hyperlink{http_8php_a123a3d9972c0db4be35d51612120d89f}{http\+\_\+request\+\_\+method\+\_\+register}} (\$method)
+\item 
+\mbox{\hyperlink{http_8php_ae8e897c534a6eca774ac56c4d4612571}{http\+\_\+request\+\_\+method\+\_\+unregister}} (\$method)
+\item 
+\mbox{\hyperlink{http_8php_aefb1e9190fb764a09988f09d786459a6}{http\+\_\+request\+\_\+method\+\_\+exists}} (\$method)
+\item 
+\mbox{\hyperlink{http_8php_af588a0e41944136080148526aca50129}{http\+\_\+request\+\_\+method\+\_\+name}} (\$method)
+\item 
+\mbox{\hyperlink{http_8php_a58aa28cd80a1eeb0186f7286f7c104cf}{ob\+\_\+etaghandler}} (\$data, \$mode)
+\item 
+\mbox{\hyperlink{http_8php_afe58609226894a9d57436e2776930598}{http\+\_\+deflate}} (\$data, \$flags=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{http_8php_a3bd57c6935f430a733d520d8ff04a9e5}{http\+\_\+inflate}} (\$data)
+\item 
+\mbox{\hyperlink{http_8php_a16c70f26704812a84dbe6d6c0f7ceeda}{ob\+\_\+deflatehandler}} (\$data, \$mode)
+\item 
+\mbox{\hyperlink{http_8php_a88f177cbfb7da503e41f2a4dc05dee4d}{ob\+\_\+inflatehandler}} (\$data, \$mode)
+\item 
+\mbox{\hyperlink{http_8php_a1aefb2c30c438de44ada1993f2fb9d17}{http\+\_\+support}} (\$feature=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{http_8php_ab260f57b4ea2e05a2c714fc9d973293f}{H\+T\+T\+P\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+P\+A\+R\+S\+E\+\_\+\+R\+AW}} 1
+\item 
+const \mbox{\hyperlink{http_8php_afd1845e326dada900417a6fd482922fb}{H\+T\+T\+P\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+S\+E\+C\+U\+RE}} 16
+\item 
+const \mbox{\hyperlink{http_8php_a419b06ac8b95a5706dbaecbb0b87bfcb}{H\+T\+T\+P\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+H\+T\+T\+P\+O\+N\+LY}} 32
+\item 
+const \mbox{\hyperlink{http_8php_a4aefbc6ebefd58240b36cf2870dfddd8}{H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+EF}} 0
+\item 
+const \mbox{\hyperlink{http_8php_a25ba6a7eb5863050a1a22f853978440a}{H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+IN}} 1
+\item 
+const \mbox{\hyperlink{http_8php_a5c4ef9c65994f45563dc6f29ce630af1}{H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+AX}} 9
+\item 
+const \mbox{\hyperlink{http_8php_a675acc656e3e7b4d6479925dbc5ee97d}{H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+Z\+L\+IB}} 0
+\item 
+const \mbox{\hyperlink{http_8php_a1b4ecb1ed7b787cbb199f14f7bd7c101}{H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+Z\+IP}} 16
+\item 
+const \mbox{\hyperlink{http_8php_adeced5c30d7d405787f96a994c7194bc}{H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+AW}} 32
+\item 
+const \mbox{\hyperlink{http_8php_a6974f2cbb9e689a0a229a11a44ff150d}{H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+D\+EF}} 0
+\item 
+const \mbox{\hyperlink{http_8php_acc21c95717301041b2fe9ffadcc302db}{H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+F\+I\+LT}} 256
+\item 
+const \mbox{\hyperlink{http_8php_aa7b5f4ad338787cff1dfd8acde5e3bbe}{H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+H\+U\+FF}} 512
+\item 
+const \mbox{\hyperlink{http_8php_aeb18a1fd877350110a5d2cd1a2cfb2de}{H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+R\+LE}} 768
+\item 
+const \mbox{\hyperlink{http_8php_a15980ff6869ab6ee06da2652b5da738a}{H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+F\+I\+X\+ED}} 1024
+\item 
+const \mbox{\hyperlink{http_8php_a983134dd15732b253f9e70024a6b019a}{H\+T\+T\+P\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+F\+L\+U\+S\+H\+\_\+\+N\+O\+NE}} 0
+\item 
+const \mbox{\hyperlink{http_8php_ae3246cfdc1a32e46ab2795c52eabce65}{H\+T\+T\+P\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+F\+L\+U\+S\+H\+\_\+\+S\+Y\+NC}} 1048576
+\item 
+const \mbox{\hyperlink{http_8php_a33fe80557a5ea45c83ca173b942f9838}{H\+T\+T\+P\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+F\+L\+U\+S\+H\+\_\+\+F\+U\+LL}} 2097152
+\item 
+const \mbox{\hyperlink{http_8php_a6b6dbaa026839a100332be35850fbe54}{H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+\_\+\+B\+A\+S\+IC}} 1
+\item 
+const \mbox{\hyperlink{http_8php_afb951f712442a8feeb49ff44e7c0188d}{H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+\_\+\+D\+I\+G\+E\+ST}} 2
+\item 
+const \mbox{\hyperlink{http_8php_ab191d98ffae37b5a5a80eb3b227cd0b8}{H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+\_\+\+N\+T\+LM}} 8
+\item 
+const \mbox{\hyperlink{http_8php_aa25093c8b764a0a4601ec4dc38d93aa4}{H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+\_\+\+G\+S\+S\+N\+EG}} 4
+\item 
+const \mbox{\hyperlink{http_8php_acad72e1e777c0cb7af3f46c17ba42fd1}{H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+\_\+\+A\+NY}} -\/1
+\item 
+const \mbox{\hyperlink{http_8php_a33b23db9f63415e6e2fc28534b68a357}{H\+T\+T\+P\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+O\+NE}} 0
+\item 
+const \mbox{\hyperlink{http_8php_ad6320041300cfdefbd299f55014ecd63}{H\+T\+T\+P\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+0}} 1
+\item 
+const \mbox{\hyperlink{http_8php_a10b361efdef01d7c9df1cb37993cc1d2}{H\+T\+T\+P\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1}} 2
+\item 
+const \mbox{\hyperlink{http_8php_ad591f78fa327bb9edbb93ac2fcbaab58}{H\+T\+T\+P\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+NY}} 0
+\item 
+const \mbox{\hyperlink{http_8php_a21a9785165eeccf573803b8c0d96ac02}{H\+T\+T\+P\+\_\+\+S\+S\+L\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+T\+L\+Sv1}} 1
+\item 
+const \mbox{\hyperlink{http_8php_ad66e3bddef532079916e826ff39782b2}{H\+T\+T\+P\+\_\+\+S\+S\+L\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+S\+Lv2}} 2
+\item 
+const \mbox{\hyperlink{http_8php_a3ef0df053cd53c24a36baf6a8a03fb56}{H\+T\+T\+P\+\_\+\+S\+S\+L\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+S\+Lv3}} 3
+\item 
+const \mbox{\hyperlink{http_8php_aa6a57c6b5a43766a6466ebddd186922a}{H\+T\+T\+P\+\_\+\+S\+S\+L\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+NY}} 0
+\item 
+const \mbox{\hyperlink{http_8php_ac1a4a75ecf7cfe75c7d1bfb6c9fec11c}{H\+T\+T\+P\+\_\+\+I\+P\+R\+E\+S\+O\+L\+V\+E\+\_\+\+V4}} 1
+\item 
+const \mbox{\hyperlink{http_8php_afeef8e628e115765f37970842ce2ad8d}{H\+T\+T\+P\+\_\+\+I\+P\+R\+E\+S\+O\+L\+V\+E\+\_\+\+V6}} 2
+\item 
+const \mbox{\hyperlink{http_8php_a7c58c2051c41c84bbf9f2bf7c61fe43a}{H\+T\+T\+P\+\_\+\+I\+P\+R\+E\+S\+O\+L\+V\+E\+\_\+\+A\+NY}} 0
+\item 
+const \mbox{\hyperlink{http_8php_a130798351de9623c0b5de87d08e77cff}{H\+T\+T\+P\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+S\+O\+C\+K\+S4}} 4
+\item 
+const \mbox{\hyperlink{http_8php_ac2ab0abbcb607a9a969005449aee1260}{H\+T\+T\+P\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+S\+O\+C\+K\+S5}} 5
+\item 
+const \mbox{\hyperlink{http_8php_af5b19e30312aeba60c6d90d0c61d8720}{H\+T\+T\+P\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+H\+T\+TP}} 0
+\item 
+const \mbox{\hyperlink{http_8php_ab7a533f46e708578a9c52aef1bed94eb}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+G\+ET}} 1
+\item 
+const \mbox{\hyperlink{http_8php_a88de02642f0ba4e4894e333db427a263}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+H\+E\+AD}} 2
+\item 
+const \mbox{\hyperlink{http_8php_a666f8f173a00455c153401217453a03a}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+P\+O\+ST}} 3
+\item 
+const \mbox{\hyperlink{http_8php_a362fef3fd11728da91bc1d0daafd4d69}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+P\+UT}} 4
+\item 
+const \mbox{\hyperlink{http_8php_aed6ac6e035a4bbed18a1609171e6395a}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+D\+E\+L\+E\+TE}} 5
+\item 
+const \mbox{\hyperlink{http_8php_a07d88d0c2c8843852251cab0075da904}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+O\+P\+T\+I\+O\+NS}} 6
+\item 
+const \mbox{\hyperlink{http_8php_a79a087ff60d89770d7c1362fe025247c}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+T\+R\+A\+CE}} 7
+\item 
+const \mbox{\hyperlink{http_8php_af4e8a1abbf5a1b3e011177b6234c45a8}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+C\+O\+N\+N\+E\+CT}} 8
+\item 
+const \mbox{\hyperlink{http_8php_ab3c4485c844a93cbf337c6916a941178}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+P\+R\+O\+P\+F\+I\+ND}} 9
+\item 
+const \mbox{\hyperlink{http_8php_a26eb2b6ae28c97f2e23704f1e7a8ab1e}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+P\+R\+O\+P\+P\+A\+T\+CH}} 10
+\item 
+const \mbox{\hyperlink{http_8php_a66a053fa3fb1541573895c1b9c4e83e6}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+M\+K\+C\+OL}} 11
+\item 
+const \mbox{\hyperlink{http_8php_aef64467fcfcea1452d8bab286a6ba407}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+C\+O\+PY}} 12
+\item 
+const \mbox{\hyperlink{http_8php_a6bfa441487a5812de0fe6a2fe8e1ef87}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+M\+O\+VE}} 13
+\item 
+const \mbox{\hyperlink{http_8php_ae71924ab9820134ed3a278e27bfa61c1}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+L\+O\+CK}} 14
+\item 
+const \mbox{\hyperlink{http_8php_a59027ff180475e23831f5c9dc268fcfa}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+U\+N\+L\+O\+CK}} 15
+\item 
+const \mbox{\hyperlink{http_8php_a4a1c9e09546aaf453d78570a15859d37}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+C\+O\+N\+T\+R\+OL}} 16
+\item 
+const \mbox{\hyperlink{http_8php_a5596dc0042d6ed5ef4dc8ec5a13f1b19}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+R\+E\+P\+O\+RT}} 17
+\item 
+const \mbox{\hyperlink{http_8php_aa7db0f1231a29287e213f60e7783b8e4}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+C\+H\+E\+C\+K\+O\+UT}} 18
+\item 
+const \mbox{\hyperlink{http_8php_a50d02484609d7396323a965ba47c094f}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+C\+H\+E\+C\+K\+IN}} 19
+\item 
+const \mbox{\hyperlink{http_8php_a55bcc706f7a97740a73b61bd1d5a1230}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+U\+N\+C\+H\+E\+C\+K\+O\+UT}} 20
+\item 
+const \mbox{\hyperlink{http_8php_a8831f12840b9b8fd76f2da57e837c113}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+M\+K\+W\+O\+R\+K\+S\+P\+A\+CE}} 21
+\item 
+const \mbox{\hyperlink{http_8php_aa0b43ee6774f752ef42e1e7db3602aee}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+U\+P\+D\+A\+TE}} 22
+\item 
+const \mbox{\hyperlink{http_8php_aaf05b08f30efde7d88c49eebea0232b0}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+L\+A\+B\+EL}} 23
+\item 
+const \mbox{\hyperlink{http_8php_ad221752558cfdb38b9543c8f090c2164}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+M\+E\+R\+GE}} 24
+\item 
+const \mbox{\hyperlink{http_8php_a20bfa158ad2fbf5db1e01129ebdc3612}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+B\+A\+S\+E\+L\+I\+N\+E\+\_\+\+C\+O\+N\+T\+R\+OL}} 25
+\item 
+const \mbox{\hyperlink{http_8php_a94ebb410fc7eb416c1b804daee3f2d3a}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+M\+K\+A\+C\+T\+I\+V\+I\+TY}} 26
+\item 
+const \mbox{\hyperlink{http_8php_a1dfd0236c65d5c9602c7052742c4a408}{H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+A\+CL}} 27
+\item 
+const \mbox{\hyperlink{http_8php_a25f5c92ede92a34992fe7fb1346aa358}{H\+T\+T\+P\+\_\+\+R\+E\+D\+I\+R\+E\+CT}} 0
+\item 
+const \mbox{\hyperlink{http_8php_a32c4846e4934785f50812bb59ab921cf}{H\+T\+T\+P\+\_\+\+R\+E\+D\+I\+R\+E\+C\+T\+\_\+\+P\+E\+RM}} 301
+\item 
+const \mbox{\hyperlink{http_8php_a1974db2f56954925317309f4ab23b232}{H\+T\+T\+P\+\_\+\+R\+E\+D\+I\+R\+E\+C\+T\+\_\+\+F\+O\+U\+ND}} 302
+\item 
+const \mbox{\hyperlink{http_8php_ab5dbea35af6e0838762c8b994ebd851b}{H\+T\+T\+P\+\_\+\+R\+E\+D\+I\+R\+E\+C\+T\+\_\+\+P\+O\+ST}} 303
+\item 
+const \mbox{\hyperlink{http_8php_a4908351a4c05bad789ff5074d48da709}{H\+T\+T\+P\+\_\+\+R\+E\+D\+I\+R\+E\+C\+T\+\_\+\+P\+R\+O\+XY}} 305
+\item 
+const \mbox{\hyperlink{http_8php_a5b1e11ecfdb79c1b6302e0ee965c68b1}{H\+T\+T\+P\+\_\+\+R\+E\+D\+I\+R\+E\+C\+T\+\_\+\+T\+E\+MP}} 307
+\item 
+const \mbox{\hyperlink{http_8php_a57886f4bdb6eb040307661665325faa5}{H\+T\+T\+P\+\_\+\+S\+U\+P\+P\+O\+RT}} 1
+\item 
+const \mbox{\hyperlink{http_8php_a95a37331099171b637cc1744943a3d02}{H\+T\+T\+P\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+R\+E\+Q\+U\+E\+S\+TS}} 2
+\item 
+const \mbox{\hyperlink{http_8php_a18d39217125be47e83c6d761140f7202}{H\+T\+T\+P\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+M\+A\+G\+I\+C\+M\+I\+ME}} 4
+\item 
+const \mbox{\hyperlink{http_8php_a0b3d02b23d6af96110fd4d0a3417f384}{H\+T\+T\+P\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+E\+N\+C\+O\+D\+I\+N\+GS}} 8
+\item 
+const \mbox{\hyperlink{http_8php_a289bc00beb8f588e90a1c8aa6165eb54}{H\+T\+T\+P\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+S\+S\+L\+R\+E\+Q\+U\+E\+S\+TS}} 32
+\item 
+const \mbox{\hyperlink{http_8php_a5ac985ad95dd39b2fc85bb9d4a8becc7}{H\+T\+T\+P\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+E\+V\+E\+N\+TS}} 128
+\item 
+const \mbox{\hyperlink{http_8php_ac7d0ab238bb8aee81087b319bd973246}{H\+T\+T\+P\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+A\+L\+L\+O\+W\+\_\+\+C\+O\+M\+MA}} 1
+\item 
+const \mbox{\hyperlink{http_8php_a48879a65d4e0cb5cfcf2648255860b3e}{H\+T\+T\+P\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+A\+L\+L\+O\+W\+\_\+\+F\+A\+I\+L\+U\+RE}} 2
+\item 
+const \mbox{\hyperlink{http_8php_a6b5249f4ed3f7e6a200a64d20970acea}{H\+T\+T\+P\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+R\+A\+I\+S\+E\+\_\+\+E\+R\+R\+OR}} 4
+\item 
+const \mbox{\hyperlink{http_8php_a42c7bba1135a3d51fbb218b5a117348d}{H\+T\+T\+P\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+D\+E\+F\+A\+U\+LT}} 7
+\item 
+const \mbox{\hyperlink{http_8php_a747e2fe4b0a98bfde4c41f3bf5fa3739}{H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+R\+E\+P\+L\+A\+CE}} 0
+\item 
+const \mbox{\hyperlink{http_8php_a6d0915eb962ee874487c6cf33157d4db}{H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+J\+O\+I\+N\+\_\+\+P\+A\+TH}} 1
+\item 
+const \mbox{\hyperlink{http_8php_a864f5ee831232f58e567d782e6d94eae}{H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+J\+O\+I\+N\+\_\+\+Q\+U\+E\+RY}} 2
+\item 
+const \mbox{\hyperlink{http_8php_a8fe1b1673df3da17505b31591a43b8a8}{H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+U\+S\+ER}} 4
+\item 
+const \mbox{\hyperlink{http_8php_aaf8c84746c2523ea54ad2839c7be4f6c}{H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+P\+A\+SS}} 8
+\item 
+const \mbox{\hyperlink{http_8php_ad9b6597e070eac82fd400c5aff4c7f7c}{H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+A\+U\+TH}} 12
+\item 
+const \mbox{\hyperlink{http_8php_a16c3a6b41be14f5577f262684a511c60}{H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+P\+O\+RT}} 32
+\item 
+const \mbox{\hyperlink{http_8php_a4db2b603b61c67e8aacd0be973d5dd2f}{H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+P\+A\+TH}} 64
+\item 
+const \mbox{\hyperlink{http_8php_a0fdc2bf7e3f44c047e88fb447e144207}{H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+Q\+U\+E\+RY}} 128
+\item 
+const \mbox{\hyperlink{http_8php_a82af830f9e647ef05b75dbd1a5b91070}{H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+F\+R\+A\+G\+M\+E\+NT}} 256
+\item 
+const \mbox{\hyperlink{http_8php_ae9f261abe4a352720154938242d96066}{H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+A\+LL}} 492
+\item 
+const \mbox{\hyperlink{http_8php_afb0db2ef17ce84003d41ccc9d6ec00d6}{H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+F\+R\+O\+M\+\_\+\+E\+NV}} 4096
+\item 
+const \mbox{\hyperlink{http_8php_a91ec8071b480b996c701921da5896a00}{H\+T\+T\+P\+\_\+\+E\+\_\+\+R\+U\+N\+T\+I\+ME}} 1
+\item 
+const \mbox{\hyperlink{http_8php_a6ed23ebf3a2a6a0b43815d86bde88e8b}{H\+T\+T\+P\+\_\+\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+AM}} 2
+\item 
+const \mbox{\hyperlink{http_8php_ac6f5bf860235ed50cde0bc1bc69a8095}{H\+T\+T\+P\+\_\+\+E\+\_\+\+H\+E\+A\+D\+ER}} 3
+\item 
+const \mbox{\hyperlink{http_8php_a89ea7b6f082b6e55566ed29485dadc55}{H\+T\+T\+P\+\_\+\+E\+\_\+\+M\+A\+L\+F\+O\+R\+M\+E\+D\+\_\+\+H\+E\+A\+D\+E\+RS}} 4
+\item 
+const \mbox{\hyperlink{http_8php_a8a0ea1c6f4dd2a6030be68ef7aea6d17}{H\+T\+T\+P\+\_\+\+E\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+M\+E\+T\+H\+OD}} 5
+\item 
+const \mbox{\hyperlink{http_8php_a110605b29e4ed2741b9a9581beeaf895}{H\+T\+T\+P\+\_\+\+E\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+T\+Y\+PE}} 6
+\item 
+const \mbox{\hyperlink{http_8php_a6405f2af29f8f4f83a5b314c5efb0d99}{H\+T\+T\+P\+\_\+\+E\+\_\+\+E\+N\+C\+O\+D\+I\+NG}} 7
+\item 
+const \mbox{\hyperlink{http_8php_a14be94e820409943ddd206114c8b08cb}{H\+T\+T\+P\+\_\+\+E\+\_\+\+R\+E\+Q\+U\+E\+ST}} 8
+\item 
+const \mbox{\hyperlink{http_8php_ad60c60c1aa7d292b1225cac3276d6e6d}{H\+T\+T\+P\+\_\+\+E\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+P\+O\+OL}} 9
+\item 
+const \mbox{\hyperlink{http_8php_af0baf18083d27f3974faa9702ee7512b}{H\+T\+T\+P\+\_\+\+E\+\_\+\+S\+O\+C\+K\+ET}} 10
+\item 
+const \mbox{\hyperlink{http_8php_affc31fe1eaab08bef82926fbd8aa6e34}{H\+T\+T\+P\+\_\+\+E\+\_\+\+R\+E\+S\+P\+O\+N\+SE}} 11
+\item 
+const \mbox{\hyperlink{http_8php_a76e0740bd9fd5bdca2723d19c75c3e76}{H\+T\+T\+P\+\_\+\+E\+\_\+\+U\+RL}} 12
+\item 
+const \mbox{\hyperlink{http_8php_a635dd2aaaa17dcecfa1b997a81222385}{H\+T\+T\+P\+\_\+\+E\+\_\+\+Q\+U\+E\+R\+Y\+S\+T\+R\+I\+NG}} 13
+\item 
+const \mbox{\hyperlink{http_8php_afafc74bc086447012b0e897e386d36ee}{H\+T\+T\+P\+\_\+\+M\+S\+G\+\_\+\+N\+O\+NE}} 0
+\item 
+const \mbox{\hyperlink{http_8php_af98700d8065eb3dc2222fa3a424fbf63}{H\+T\+T\+P\+\_\+\+M\+S\+G\+\_\+\+R\+E\+Q\+U\+E\+ST}} 1
+\item 
+const \mbox{\hyperlink{http_8php_a4406e73d02f5acb855369b94e062a7c7}{H\+T\+T\+P\+\_\+\+M\+S\+G\+\_\+\+R\+E\+S\+P\+O\+N\+SE}} 2
+\item 
+const \mbox{\hyperlink{http_8php_ae001112df94646b95c237c71c93e6c4a}{H\+T\+T\+P\+\_\+\+Q\+U\+E\+R\+Y\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+O\+OL}} 3
+\item 
+const \mbox{\hyperlink{http_8php_a30193bcbb2042112a398ea522690478e}{H\+T\+T\+P\+\_\+\+Q\+U\+E\+R\+Y\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+NT}} 1
+\item 
+const \mbox{\hyperlink{http_8php_ae1651a3d96d185ebc336e05c3488304a}{H\+T\+T\+P\+\_\+\+Q\+U\+E\+R\+Y\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+L\+O\+AT}} 2
+\item 
+const \mbox{\hyperlink{http_8php_a64546ae22062c3ecc3132bf743f0eb09}{H\+T\+T\+P\+\_\+\+Q\+U\+E\+R\+Y\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+T\+R\+I\+NG}} 6
+\item 
+const \mbox{\hyperlink{http_8php_ad0e744b42eb7fa3ff0facc75e12d733f}{H\+T\+T\+P\+\_\+\+Q\+U\+E\+R\+Y\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+R\+R\+AY}} 4
+\item 
+const \mbox{\hyperlink{http_8php_a09418339ab150fb7c3fc265677106ff2}{H\+T\+T\+P\+\_\+\+Q\+U\+E\+R\+Y\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+CT}} 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{http_8php_a3cc8a9bb82ea6d55074398d34f80b31b}\label{http_8php_a3cc8a9bb82ea6d55074398d34f80b31b}} 
+\index{http.php@{http.php}!http\_build\_cookie@{http\_build\_cookie}}
+\index{http\_build\_cookie@{http\_build\_cookie}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_build\_cookie()}{http\_build\_cookie()}}
+{\footnotesize\ttfamily http\+\_\+build\+\_\+cookie (\begin{DoxyParamCaption}\item[{array}]{\$cookie }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 1.\+2.\+0)~\newline
+ Build cookie string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array \$cookie }} a cookie list like returned from http\+\_\+parse\+\_\+cookie 
+
+\begin{DoxyReturn}{Returns}
+string the cookie(s) as string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a946515119c732539917922273385b8e7}\label{http_8php_a946515119c732539917922273385b8e7}} 
+\index{http.php@{http.php}!http\_build\_str@{http\_build\_str}}
+\index{http\_build\_str@{http\_build\_str}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_build\_str()}{http\_build\_str()}}
+{\footnotesize\ttfamily http\+\_\+build\+\_\+str (\begin{DoxyParamCaption}\item[{array}]{\$query,  }\item[{}]{\$prefix = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$arg\+\_\+separator = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+23.\+0)~\newline
+ Build query string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array \$query }} associative array of query string parameters 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+top level prefix 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$arg\+\_\+separator} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+argument separator to use (by default the I\+NI setting arg\+\_\+separator.\+output will be used, or "{}\&"{} if neither is set 
+
+\begin{DoxyReturn}{Returns}
+string the built query as string on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a36fee5d43bde0713d9f39a802c234607}\label{http_8php_a36fee5d43bde0713d9f39a802c234607}} 
+\index{http.php@{http.php}!http\_build\_url@{http\_build\_url}}
+\index{http\_build\_url@{http\_build\_url}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_build\_url()}{http\_build\_url()}}
+{\footnotesize\ttfamily http\+\_\+build\+\_\+url (\begin{DoxyParamCaption}\item[{}]{\$url = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$parts = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$flags = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array \&}]{\$new\+\_\+url = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+21.\+0)~\newline
+ Build an U\+RL \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mixed \$url \mbox{[}optional\mbox{]} }} (part(s) of) an U\+RL in form of a string or associative array like parse\+\_\+url returns 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$parts} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+same as the first argument 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+a bitmask of binary or\textquotesingle{}ed H\+T\+T\+P\+\_\+\+U\+RL constants; H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+R\+E\+P\+L\+A\+CE is the default 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$new\+\_\+url} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+if set, it will be filled with the parts of the composed url like parse\+\_\+url would return 
+
+\begin{DoxyReturn}{Returns}
+string the new U\+RL as string on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a185ec7cdeed05af77ae5b7e230442836}\label{http_8php_a185ec7cdeed05af77ae5b7e230442836}} 
+\index{http.php@{http.php}!http\_cache\_etag@{http\_cache\_etag}}
+\index{http\_cache\_etag@{http\_cache\_etag}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_cache\_etag()}{http\_cache\_etag()}}
+{\footnotesize\ttfamily http\+\_\+cache\+\_\+etag (\begin{DoxyParamCaption}\item[{}]{\$etag = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Caching by E\+Tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$etag \mbox{[}optional\mbox{]} }} custom E\+Tag 
+
+\begin{DoxyReturn}{Returns}
+bool \&returns.\+http.\+false.\+orexits; with 304 Not Modified if the entity is cached. \&see.\+http.\+configuration.\+force\+\_\+exit; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_afb7b46e2cac691431ee90cc86561685d}\label{http_8php_afb7b46e2cac691431ee90cc86561685d}} 
+\index{http.php@{http.php}!http\_cache\_last\_modified@{http\_cache\_last\_modified}}
+\index{http\_cache\_last\_modified@{http\_cache\_last\_modified}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_cache\_last\_modified()}{http\_cache\_last\_modified()}}
+{\footnotesize\ttfamily http\+\_\+cache\+\_\+last\+\_\+modified (\begin{DoxyParamCaption}\item[{}]{\$timestamp\+\_\+or\+\_\+expires = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Caching by last modification \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$timestamp\+\_\+or\+\_\+expires \mbox{[}optional\mbox{]} }} Unix timestamp 
+
+\begin{DoxyReturn}{Returns}
+bool \&returns.\+http.\+false.\+orexits; with 304 Not Modified if the entity is cached. \&see.\+http.\+configuration.\+force\+\_\+exit; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_afcd7985398c043e810426ffaecc90f32}\label{http_8php_afcd7985398c043e810426ffaecc90f32}} 
+\index{http.php@{http.php}!http\_chunked\_decode@{http\_chunked\_decode}}
+\index{http\_chunked\_decode@{http\_chunked\_decode}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_chunked\_decode()}{http\_chunked\_decode()}}
+{\footnotesize\ttfamily http\+\_\+chunked\+\_\+decode (\begin{DoxyParamCaption}\item[{}]{\$encoded }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Decode chunked-\/encoded data \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$encoded }} chunked encoded string 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false the decoded string on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a894ee45346bbb733a6b3677a74737522}\label{http_8php_a894ee45346bbb733a6b3677a74737522}} 
+\index{http.php@{http.php}!http\_date@{http\_date}}
+\index{http\_date@{http\_date}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_date()}{http\_date()}}
+{\footnotesize\ttfamily http\+\_\+date (\begin{DoxyParamCaption}\item[{}]{\$timestamp = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Compose H\+T\+TP R\+FC compliant date \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$timestamp \mbox{[}optional\mbox{]} }} Unix timestamp; current time if omitted 
+
+\begin{DoxyReturn}{Returns}
+string the H\+T\+TP date as string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_afe58609226894a9d57436e2776930598}\label{http_8php_afe58609226894a9d57436e2776930598}} 
+\index{http.php@{http.php}!http\_deflate@{http\_deflate}}
+\index{http\_deflate@{http\_deflate}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_deflate()}{http\_deflate()}}
+{\footnotesize\ttfamily http\+\_\+deflate (\begin{DoxyParamCaption}\item[{}]{\$data,  }\item[{}]{\$flags = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+15.\+0)~\newline
+ Deflate data \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data }} String containing the data that should be encoded 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+deflate options 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$null the encoded string on success, or N\+U\+LL on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_ad6e5b70b5bd77f2500e49748dd70f21a}\label{http_8php_ad6e5b70b5bd77f2500e49748dd70f21a}} 
+\index{http.php@{http.php}!http\_get@{http\_get}}
+\index{http\_get@{http\_get}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_get()}{http\_get()}}
+{\footnotesize\ttfamily http\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$url,  }\item[{array}]{\$options = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array \&}]{\$info = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Perform G\+ET request \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$url }} U\+RL 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\&link.\+http.\+request.\+options; 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$info} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Will be filled with request/response information 
+
+\begin{DoxyReturn}{Returns}
+string \&returns.\+http.\+response; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_ab4ba13419d984a885611aba1f441b544}\label{http_8php_ab4ba13419d984a885611aba1f441b544}} 
+\index{http.php@{http.php}!http\_get\_request\_body@{http\_get\_request\_body}}
+\index{http\_get\_request\_body@{http\_get\_request\_body}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_get\_request\_body()}{http\_get\_request\_body()}}
+{\footnotesize\ttfamily http\+\_\+get\+\_\+request\+\_\+body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+10.\+0)~\newline
+ Get request body as string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string$\vert$null the raw request body as string on success or N\+U\+LL on failure. }}\mbox{\Hypertarget{http_8php_af5e88795781df7f2ffb51c6fa6b112bc}\label{http_8php_af5e88795781df7f2ffb51c6fa6b112bc}} 
+\index{http.php@{http.php}!http\_get\_request\_body\_stream@{http\_get\_request\_body\_stream}}
+\index{http\_get\_request\_body\_stream@{http\_get\_request\_body\_stream}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_get\_request\_body\_stream()}{http\_get\_request\_body\_stream()}}
+{\footnotesize\ttfamily http\+\_\+get\+\_\+request\+\_\+body\+\_\+stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+22.\+0)~\newline
+ Get request body as stream \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource$\vert$null the raw request body as stream on success or N\+U\+LL on failure. }}\mbox{\Hypertarget{http_8php_a5284b097aa176ba833c296c69e95f102}\label{http_8php_a5284b097aa176ba833c296c69e95f102}} 
+\index{http.php@{http.php}!http\_get\_request\_headers@{http\_get\_request\_headers}}
+\index{http\_get\_request\_headers@{http\_get\_request\_headers}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_get\_request\_headers()}{http\_get\_request\_headers()}}
+{\footnotesize\ttfamily http\+\_\+get\+\_\+request\+\_\+headers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+10.\+0)~\newline
+ Get request headers as array \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array an associative array of incoming request headers. }}\mbox{\Hypertarget{http_8php_a831f1ffe89de18c313546ea33f4f75aa}\label{http_8php_a831f1ffe89de18c313546ea33f4f75aa}} 
+\index{http.php@{http.php}!http\_head@{http\_head}}
+\index{http\_head@{http\_head}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_head()}{http\_head()}}
+{\footnotesize\ttfamily http\+\_\+head (\begin{DoxyParamCaption}\item[{}]{\$url = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$options = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array \&}]{\$info = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Perform H\+E\+AD request \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$url \mbox{[}optional\mbox{]} }} U\+RL 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\&link.\+http.\+request.\+options; 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$info} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\&link.\+http.\+request.\+info; 
+
+\begin{DoxyReturn}{Returns}
+string \&returns.\+http.\+response; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a3bd57c6935f430a733d520d8ff04a9e5}\label{http_8php_a3bd57c6935f430a733d520d8ff04a9e5}} 
+\index{http.php@{http.php}!http\_inflate@{http\_inflate}}
+\index{http\_inflate@{http\_inflate}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_inflate()}{http\_inflate()}}
+{\footnotesize\ttfamily http\+\_\+inflate (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+15.\+0)~\newline
+ Inflate data \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data }} string containing the compressed data 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$null the decoded string on success, or N\+U\+LL on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a1780fbe0777c420334041ba13f987ff1}\label{http_8php_a1780fbe0777c420334041ba13f987ff1}} 
+\index{http.php@{http.php}!http\_match\_etag@{http\_match\_etag}}
+\index{http\_match\_etag@{http\_match\_etag}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_match\_etag()}{http\_match\_etag()}}
+{\footnotesize\ttfamily http\+\_\+match\+\_\+etag (\begin{DoxyParamCaption}\item[{}]{\$etag,  }\item[{}]{\$for\+\_\+range = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Match E\+Tag \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$etag }} the E\+Tag to match 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$for\+\_\+range} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+if set to true, the header usually used to validate H\+T\+TP ranges will be checked 
+
+\begin{DoxyReturn}{Returns}
+bool true if E\+Tag matches or the header contained the asterisk ("{}$\ast$"{}), else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a1718171b777ff491b2f8576517fd3b18}\label{http_8php_a1718171b777ff491b2f8576517fd3b18}} 
+\index{http.php@{http.php}!http\_match\_modified@{http\_match\_modified}}
+\index{http\_match\_modified@{http\_match\_modified}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_match\_modified()}{http\_match\_modified()}}
+{\footnotesize\ttfamily http\+\_\+match\+\_\+modified (\begin{DoxyParamCaption}\item[{}]{\$timestamp = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$for\+\_\+range = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Match last modification \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$timestamp \mbox{[}optional\mbox{]} }} Unix timestamp; current time, if omitted 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$for\+\_\+range} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+if set to true, the header usually used to validate H\+T\+TP ranges will be checked 
+
+\begin{DoxyReturn}{Returns}
+bool true if timestamp represents an earlier date than the header, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a8d83149cfb65a22b22dc543b1f9febca}\label{http_8php_a8d83149cfb65a22b22dc543b1f9febca}} 
+\index{http.php@{http.php}!http\_match\_request\_header@{http\_match\_request\_header}}
+\index{http\_match\_request\_header@{http\_match\_request\_header}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_match\_request\_header()}{http\_match\_request\_header()}}
+{\footnotesize\ttfamily http\+\_\+match\+\_\+request\+\_\+header (\begin{DoxyParamCaption}\item[{}]{\$header,  }\item[{}]{\$value,  }\item[{}]{\$match\+\_\+case = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+10.\+0)~\newline
+ Match any header \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$header }} the header name (case-\/insensitive) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+the header value that should be compared 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$match\+\_\+case} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+whether the value should be compared case sensitively 
+
+\begin{DoxyReturn}{Returns}
+bool true if header value matches, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_aada5ba8a21b16ca636636f24e85e9e3b}\label{http_8php_aada5ba8a21b16ca636636f24e85e9e3b}} 
+\index{http.php@{http.php}!http\_negotiate\_charset@{http\_negotiate\_charset}}
+\index{http\_negotiate\_charset@{http\_negotiate\_charset}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_negotiate\_charset()}{http\_negotiate\_charset()}}
+{\footnotesize\ttfamily http\+\_\+negotiate\+\_\+charset (\begin{DoxyParamCaption}\item[{array}]{\$supported,  }\item[{array \&}]{\$result = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Negotiate clients preferred character set \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array \$supported }} array containing the supported charsets as values 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$result} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+will be filled with an array containing the negotiation results 
+
+\begin{DoxyReturn}{Returns}
+string the negotiated charset or the default charset (i.\+e. first array entry) if none match. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_ad0f801464bb17bef115ba6d232b38522}\label{http_8php_ad0f801464bb17bef115ba6d232b38522}} 
+\index{http.php@{http.php}!http\_negotiate\_content\_type@{http\_negotiate\_content\_type}}
+\index{http\_negotiate\_content\_type@{http\_negotiate\_content\_type}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_negotiate\_content\_type()}{http\_negotiate\_content\_type()}}
+{\footnotesize\ttfamily http\+\_\+negotiate\+\_\+content\+\_\+type (\begin{DoxyParamCaption}\item[{array}]{\$supported,  }\item[{array \&}]{\$result = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+19.\+0)~\newline
+ Negotiate clients preferred content type \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array \$supported }} array containing the supported content types as values 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$result} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+will be filled with an array containing the negotiation results 
+
+\begin{DoxyReturn}{Returns}
+string the negotiated content type or the default content type (i.\+e. first array entry) if none match. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_abb07fcb5c243b8135789119eca364b08}\label{http_8php_abb07fcb5c243b8135789119eca364b08}} 
+\index{http.php@{http.php}!http\_negotiate\_language@{http\_negotiate\_language}}
+\index{http\_negotiate\_language@{http\_negotiate\_language}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_negotiate\_language()}{http\_negotiate\_language()}}
+{\footnotesize\ttfamily http\+\_\+negotiate\+\_\+language (\begin{DoxyParamCaption}\item[{array}]{\$supported,  }\item[{array \&}]{\$result = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Negotiate clients preferred language \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array \$supported }} array containing the supported languages as values 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$result} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+will be filled with an array containing the negotiation results 
+
+\begin{DoxyReturn}{Returns}
+string the negotiated language or the default language (i.\+e. first array entry) if none match. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a7005bbad3c18ff03982a684311dba2bf}\label{http_8php_a7005bbad3c18ff03982a684311dba2bf}} 
+\index{http.php@{http.php}!http\_parse\_cookie@{http\_parse\_cookie}}
+\index{http\_parse\_cookie@{http\_parse\_cookie}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_parse\_cookie()}{http\_parse\_cookie()}}
+{\footnotesize\ttfamily http\+\_\+parse\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{\$cookie,  }\item[{}]{\$flags = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$allowed\+\_\+extras = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+20.\+0)~\newline
+ Parse H\+T\+TP cookie \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$cookie }} string containing the value of a Set-\/\+Cookie response header 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+parse flags (H\+T\+T\+P\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+P\+A\+R\+S\+E\+\_\+\+R\+AW) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$allowed\+\_\+extras} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+array containing recognized extra keys; by default all unknown keys will be treated as cookie names 
+
+\begin{DoxyReturn}{Returns}
+std\+Class$\vert$false a \mbox{\hyperlink{classstd_class}{std\+Class}} object on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_aa900002f5fe62ce014a84edd0046869f}\label{http_8php_aa900002f5fe62ce014a84edd0046869f}} 
+\index{http.php@{http.php}!http\_parse\_headers@{http\_parse\_headers}}
+\index{http\_parse\_headers@{http\_parse\_headers}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_parse\_headers()}{http\_parse\_headers()}}
+{\footnotesize\ttfamily http\+\_\+parse\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{\$header }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+10.\+0)~\newline
+ Parse H\+T\+TP headers \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$header }} string containing H\+T\+TP headers 
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false an array on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a4c4cc3897a8bad8fc00448580af57d40}\label{http_8php_a4c4cc3897a8bad8fc00448580af57d40}} 
+\index{http.php@{http.php}!http\_parse\_message@{http\_parse\_message}}
+\index{http\_parse\_message@{http\_parse\_message}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_parse\_message()}{http\_parse\_message()}}
+{\footnotesize\ttfamily http\+\_\+parse\+\_\+message (\begin{DoxyParamCaption}\item[{}]{\$message }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+12.\+0)~\newline
+ Parse H\+T\+TP messages \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$message }} string containing a single H\+T\+TP message or several consecutive H\+T\+TP messages 
+
+\begin{DoxyReturn}{Returns}
+object a hierarchical object structure of the parsed messages. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a2dcf1a9bd095e4124944a99b2ae21ee4}\label{http_8php_a2dcf1a9bd095e4124944a99b2ae21ee4}} 
+\index{http.php@{http.php}!http\_parse\_params@{http\_parse\_params}}
+\index{http\_parse\_params@{http\_parse\_params}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_parse\_params()}{http\_parse\_params()}}
+{\footnotesize\ttfamily http\+\_\+parse\+\_\+params (\begin{DoxyParamCaption}\item[{}]{\$param,  }\item[{}]{\$flags = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 1.\+0.\+0)~\newline
+ Parse parameter list \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$param }} Parameters 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Parse flags 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classstd_class}{std\+Class}} parameter list as \mbox{\hyperlink{classstd_class}{std\+Class}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a0629a8119d38743a080bc53e158985a0}\label{http_8php_a0629a8119d38743a080bc53e158985a0}} 
+\index{http.php@{http.php}!http\_persistent\_handles\_clean@{http\_persistent\_handles\_clean}}
+\index{http\_persistent\_handles\_clean@{http\_persistent\_handles\_clean}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_persistent\_handles\_clean()}{http\_persistent\_handles\_clean()}}
+{\footnotesize\ttfamily http\+\_\+persistent\+\_\+handles\+\_\+clean (\begin{DoxyParamCaption}\item[{}]{\$ident = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 1.\+5.\+0)~\newline
+ Clean up persistent handles \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$ident \mbox{[}optional\mbox{]}  string }}\mbox{\Hypertarget{http_8php_a13c1785fdf1d481994c1c4c8485bf132}\label{http_8php_a13c1785fdf1d481994c1c4c8485bf132}} 
+\index{http.php@{http.php}!http\_persistent\_handles\_count@{http\_persistent\_handles\_count}}
+\index{http\_persistent\_handles\_count@{http\_persistent\_handles\_count}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_persistent\_handles\_count()}{http\_persistent\_handles\_count()}}
+{\footnotesize\ttfamily http\+\_\+persistent\+\_\+handles\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 1.\+5.\+0)~\newline
+ Stat persistent handles \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{std\+Class$\vert$false persistent handles statistics as std\+Class object on success or false on failure. }}\mbox{\Hypertarget{http_8php_a83494eb8e0e684167ed439eca5b4b364}\label{http_8php_a83494eb8e0e684167ed439eca5b4b364}} 
+\index{http.php@{http.php}!http\_persistent\_handles\_ident@{http\_persistent\_handles\_ident}}
+\index{http\_persistent\_handles\_ident@{http\_persistent\_handles\_ident}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_persistent\_handles\_ident()}{http\_persistent\_handles\_ident()}}
+{\footnotesize\ttfamily http\+\_\+persistent\+\_\+handles\+\_\+ident (\begin{DoxyParamCaption}\item[{}]{\$ident }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 1.\+5.\+0)~\newline
+ Get/set ident of persistent handles \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$ident }} the identification string 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false the prior ident as string on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a17d66f5dbd74c9264d335841585a079c}\label{http_8php_a17d66f5dbd74c9264d335841585a079c}} 
+\index{http.php@{http.php}!http\_post\_data@{http\_post\_data}}
+\index{http\_post\_data@{http\_post\_data}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_post\_data()}{http\_post\_data()}}
+{\footnotesize\ttfamily http\+\_\+post\+\_\+data (\begin{DoxyParamCaption}\item[{}]{\$url,  }\item[{}]{\$data = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$options = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array \&}]{\$info = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Perform P\+O\+ST request with pre-\/encoded data \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$url }} U\+RL 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+String containing the pre-\/encoded post data 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\&link.\+http.\+request.\+options; 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$info} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\&link.\+http.\+request.\+info; 
+
+\begin{DoxyReturn}{Returns}
+string \&returns.\+http.\+response; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a99212109d7f8945dbec95a1777f7e166}\label{http_8php_a99212109d7f8945dbec95a1777f7e166}} 
+\index{http.php@{http.php}!http\_post\_fields@{http\_post\_fields}}
+\index{http\_post\_fields@{http\_post\_fields}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_post\_fields()}{http\_post\_fields()}}
+{\footnotesize\ttfamily http\+\_\+post\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{\$url,  }\item[{array}]{\$data = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$files = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$options = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array \&}]{\$info = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+10.\+0)~\newline
+ Perform P\+O\+ST request with data to be encoded \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$url }} U\+RL 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Associative array of P\+O\+ST values 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$files} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Array of files to post 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\&link.\+http.\+request.\+options; 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$info} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\&link.\+http.\+request.\+info; 
+
+\begin{DoxyReturn}{Returns}
+string \&returns.\+http.\+response; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a62e86e6330fd37687e9243bd7086126d}\label{http_8php_a62e86e6330fd37687e9243bd7086126d}} 
+\index{http.php@{http.php}!http\_put\_data@{http\_put\_data}}
+\index{http\_put\_data@{http\_put\_data}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_put\_data()}{http\_put\_data()}}
+{\footnotesize\ttfamily http\+\_\+put\+\_\+data (\begin{DoxyParamCaption}\item[{}]{\$url,  }\item[{}]{\$data = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$options = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array \&}]{\$info = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+25.\+0)~\newline
+ Perform P\+UT request with data \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$url }} U\+RL 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+P\+UT request body 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\&link.\+http.\+request.\+options; 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$info} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\&link.\+http.\+request.\+info; 
+
+\begin{DoxyReturn}{Returns}
+string \&returns.\+http.\+response; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a4175928079b6b9fef6a14fc18809d616}\label{http_8php_a4175928079b6b9fef6a14fc18809d616}} 
+\index{http.php@{http.php}!http\_put\_file@{http\_put\_file}}
+\index{http\_put\_file@{http\_put\_file}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_put\_file()}{http\_put\_file()}}
+{\footnotesize\ttfamily http\+\_\+put\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$url,  }\item[{}]{\$file = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$options = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array \&}]{\$info = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+10.\+0)~\newline
+ Perform P\+UT request with file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$url }} U\+RL 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The file to put 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\&link.\+http.\+request.\+options; 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$info} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\&link.\+http.\+request.\+info; 
+
+\begin{DoxyReturn}{Returns}
+string \&returns.\+http.\+response; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a66561598943980b31d68263865281b8d}\label{http_8php_a66561598943980b31d68263865281b8d}} 
+\index{http.php@{http.php}!http\_put\_stream@{http\_put\_stream}}
+\index{http\_put\_stream@{http\_put\_stream}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_put\_stream()}{http\_put\_stream()}}
+{\footnotesize\ttfamily http\+\_\+put\+\_\+stream (\begin{DoxyParamCaption}\item[{}]{\$url,  }\item[{}]{\$stream = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$options = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array \&}]{\$info = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+10.\+0)~\newline
+ Perform P\+UT request with stream \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$url }} U\+RL 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$stream} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The stream to read the P\+UT request body from 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\&link.\+http.\+request.\+options; 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$info} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\&link.\+http.\+request.\+info; 
+
+\begin{DoxyReturn}{Returns}
+string \&returns.\+http.\+response; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a74db9a6f81e0856e4cecf9b72416fc5d}\label{http_8php_a74db9a6f81e0856e4cecf9b72416fc5d}} 
+\index{http.php@{http.php}!http\_redirect@{http\_redirect}}
+\index{http\_redirect@{http\_redirect}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_redirect()}{http\_redirect()}}
+{\footnotesize\ttfamily http\+\_\+redirect (\begin{DoxyParamCaption}\item[{}]{\$url = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$params = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$session = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$status = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Issue H\+T\+TP redirect \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$url \mbox{[}optional\mbox{]} }} the U\+RL to redirect to 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+associative array of query parameters 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$session} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+whether to append session information 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$status} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+custom response status code 
+
+\begin{DoxyReturn}{Returns}
+void returns false or exits with the specified redirection status code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a47e914840ea2c564c72169ded33f89b2}\label{http_8php_a47e914840ea2c564c72169ded33f89b2}} 
+\index{http.php@{http.php}!http\_request@{http\_request}}
+\index{http\_request@{http\_request}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_request()}{http\_request()}}
+{\footnotesize\ttfamily http\+\_\+request (\begin{DoxyParamCaption}\item[{}]{\$method,  }\item[{}]{\$url = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$body = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$options = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array \&}]{\$info = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 1.\+0.\+0)~\newline
+ Perform custom request \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$method }} Request method 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+U\+RL 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$body} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Request body 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\&link.\+http.\+request.\+options; 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$info} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\&link.\+http.\+request.\+info; 
+
+\begin{DoxyReturn}{Returns}
+string \&returns.\+http.\+response; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_aec1c81f1db6c9f8922e75b0eac3c0879}\label{http_8php_aec1c81f1db6c9f8922e75b0eac3c0879}} 
+\index{http.php@{http.php}!http\_request\_body\_encode@{http\_request\_body\_encode}}
+\index{http\_request\_body\_encode@{http\_request\_body\_encode}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_request\_body\_encode()}{http\_request\_body\_encode()}}
+{\footnotesize\ttfamily http\+\_\+request\+\_\+body\+\_\+encode (\begin{DoxyParamCaption}\item[{array}]{\$fields,  }\item[{array}]{\$files }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 1.\+0.\+0)~\newline
+ Encode request body \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array \$fields }} P\+O\+ST fields 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$files} & \\
+\hline
+\end{DoxyParams}
+P\+O\+ST files 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false encoded string on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_aefb1e9190fb764a09988f09d786459a6}\label{http_8php_aefb1e9190fb764a09988f09d786459a6}} 
+\index{http.php@{http.php}!http\_request\_method\_exists@{http\_request\_method\_exists}}
+\index{http\_request\_method\_exists@{http\_request\_method\_exists}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_request\_method\_exists()}{http\_request\_method\_exists()}}
+{\footnotesize\ttfamily http\+\_\+request\+\_\+method\+\_\+exists (\begin{DoxyParamCaption}\item[{}]{\$method }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+10.\+0)~\newline
+ Check whether request method exists \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mixed \$method }} request method name or ID 
+
+\begin{DoxyReturn}{Returns}
+bool true if the request method is known, else false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_af588a0e41944136080148526aca50129}\label{http_8php_af588a0e41944136080148526aca50129}} 
+\index{http.php@{http.php}!http\_request\_method\_name@{http\_request\_method\_name}}
+\index{http\_request\_method\_name@{http\_request\_method\_name}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_request\_method\_name()}{http\_request\_method\_name()}}
+{\footnotesize\ttfamily http\+\_\+request\+\_\+method\+\_\+name (\begin{DoxyParamCaption}\item[{}]{\$method }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+10.\+0)~\newline
+ Get request method name \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$method }} request method ID 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false the request method name as string on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a123a3d9972c0db4be35d51612120d89f}\label{http_8php_a123a3d9972c0db4be35d51612120d89f}} 
+\index{http.php@{http.php}!http\_request\_method\_register@{http\_request\_method\_register}}
+\index{http\_request\_method\_register@{http\_request\_method\_register}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_request\_method\_register()}{http\_request\_method\_register()}}
+{\footnotesize\ttfamily http\+\_\+request\+\_\+method\+\_\+register (\begin{DoxyParamCaption}\item[{}]{\$method }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+10.\+0)~\newline
+ Register request method \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$method }} the request method name to register 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false the ID of the request method on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_ae8e897c534a6eca774ac56c4d4612571}\label{http_8php_ae8e897c534a6eca774ac56c4d4612571}} 
+\index{http.php@{http.php}!http\_request\_method\_unregister@{http\_request\_method\_unregister}}
+\index{http\_request\_method\_unregister@{http\_request\_method\_unregister}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_request\_method\_unregister()}{http\_request\_method\_unregister()}}
+{\footnotesize\ttfamily http\+\_\+request\+\_\+method\+\_\+unregister (\begin{DoxyParamCaption}\item[{}]{\$method }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+10.\+0)~\newline
+ Unregister request method \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mixed \$method }} The request method name or ID 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a8efa3d7f060a07d6d8427b677f440d49}\label{http_8php_a8efa3d7f060a07d6d8427b677f440d49}} 
+\index{http.php@{http.php}!http\_send\_content\_disposition@{http\_send\_content\_disposition}}
+\index{http\_send\_content\_disposition@{http\_send\_content\_disposition}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_send\_content\_disposition()}{http\_send\_content\_disposition()}}
+{\footnotesize\ttfamily http\+\_\+send\+\_\+content\+\_\+disposition (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$inline = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+10.\+0)~\newline
+ Send Content-\/\+Disposition \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} the file name the "{}Save as..."{} dialog should display 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$inline} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+if set to true and the user agent knows how to handle the content type, it will probably not cause the popup window to be shown 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a5e9cdac0ce5fcd62392995049e07c6dd}\label{http_8php_a5e9cdac0ce5fcd62392995049e07c6dd}} 
+\index{http.php@{http.php}!http\_send\_content\_type@{http\_send\_content\_type}}
+\index{http\_send\_content\_type@{http\_send\_content\_type}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_send\_content\_type()}{http\_send\_content\_type()}}
+{\footnotesize\ttfamily http\+\_\+send\+\_\+content\+\_\+type (\begin{DoxyParamCaption}\item[{}]{\$content\+\_\+type = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+10.\+0)~\newline
+ Send Content-\/\+Type \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$content\+\_\+type \mbox{[}optional\mbox{]} }} the desired content type (primary/secondary) 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a67077aa3f10f3d7e650e5b7726d3cf30}\label{http_8php_a67077aa3f10f3d7e650e5b7726d3cf30}} 
+\index{http.php@{http.php}!http\_send\_data@{http\_send\_data}}
+\index{http\_send\_data@{http\_send\_data}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_send\_data()}{http\_send\_data()}}
+{\footnotesize\ttfamily http\+\_\+send\+\_\+data (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Send arbitrary data \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data }} data to send 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a1757240f57fefdd5b516a721c8128e34}\label{http_8php_a1757240f57fefdd5b516a721c8128e34}} 
+\index{http.php@{http.php}!http\_send\_file@{http\_send\_file}}
+\index{http\_send\_file@{http\_send\_file}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_send\_file()}{http\_send\_file()}}
+{\footnotesize\ttfamily http\+\_\+send\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$file }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Send file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$file }} the file to send 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a2f84c00ba6b43f8b2bcaf7664882365b}\label{http_8php_a2f84c00ba6b43f8b2bcaf7664882365b}} 
+\index{http.php@{http.php}!http\_send\_last\_modified@{http\_send\_last\_modified}}
+\index{http\_send\_last\_modified@{http\_send\_last\_modified}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_send\_last\_modified()}{http\_send\_last\_modified()}}
+{\footnotesize\ttfamily http\+\_\+send\+\_\+last\+\_\+modified (\begin{DoxyParamCaption}\item[{}]{\$timestamp = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Send Last-\/\+Modified \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$timestamp \mbox{[}optional\mbox{]} }} a Unix timestamp, converted to a valid H\+T\+TP date; if omitted, the current time will be sent 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a7d81ef728601171a5e18be7633c7956f}\label{http_8php_a7d81ef728601171a5e18be7633c7956f}} 
+\index{http.php@{http.php}!http\_send\_status@{http\_send\_status}}
+\index{http\_send\_status@{http\_send\_status}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_send\_status()}{http\_send\_status()}}
+{\footnotesize\ttfamily http\+\_\+send\+\_\+status (\begin{DoxyParamCaption}\item[{}]{\$status }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Send H\+T\+TP response status \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$status }} H\+T\+TP status code (100-\/599) 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a3592338744e7ef1fb3457c058cb2cac0}\label{http_8php_a3592338744e7ef1fb3457c058cb2cac0}} 
+\index{http.php@{http.php}!http\_send\_stream@{http\_send\_stream}}
+\index{http\_send\_stream@{http\_send\_stream}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_send\_stream()}{http\_send\_stream()}}
+{\footnotesize\ttfamily http\+\_\+send\+\_\+stream (\begin{DoxyParamCaption}\item[{}]{\$stream }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+1.\+0)~\newline
+ Send stream \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$stream }} stream to read from (must be seekable) 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a1aefb2c30c438de44ada1993f2fb9d17}\label{http_8php_a1aefb2c30c438de44ada1993f2fb9d17}} 
+\index{http.php@{http.php}!http\_support@{http\_support}}
+\index{http\_support@{http\_support}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_support()}{http\_support()}}
+{\footnotesize\ttfamily http\+\_\+support (\begin{DoxyParamCaption}\item[{}]{\$feature = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+15.\+0)~\newline
+ Check built-\/in H\+T\+TP support \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$feature \mbox{[}optional\mbox{]} }} feature to probe for 
+
+\begin{DoxyReturn}{Returns}
+int integer, whether requested feature is supported, or a bitmask with all supported features if feature was omitted. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_ae202009c0f15070de737e9d5844490b6}\label{http_8php_ae202009c0f15070de737e9d5844490b6}} 
+\index{http.php@{http.php}!http\_throttle@{http\_throttle}}
+\index{http\_throttle@{http\_throttle}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{http\_throttle()}{http\_throttle()}}
+{\footnotesize\ttfamily http\+\_\+throttle (\begin{DoxyParamCaption}\item[{}]{\$sec = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$bytes = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+10.\+0)~\newline
+ H\+T\+TP throttling \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{float \$sec \mbox{[}optional\mbox{]} }} seconds to sleep after each chunk sent 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$bytes} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+the chunk size in bytes 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{http_8php_a16c70f26704812a84dbe6d6c0f7ceeda}\label{http_8php_a16c70f26704812a84dbe6d6c0f7ceeda}} 
+\index{http.php@{http.php}!ob\_deflatehandler@{ob\_deflatehandler}}
+\index{ob\_deflatehandler@{ob\_deflatehandler}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{ob\_deflatehandler()}{ob\_deflatehandler()}}
+{\footnotesize\ttfamily ob\+\_\+deflatehandler (\begin{DoxyParamCaption}\item[{}]{\$data,  }\item[{}]{\$mode }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+21.\+0)~\newline
+ Deflate output handler \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data  int \$mode  string }}\mbox{\Hypertarget{http_8php_a58aa28cd80a1eeb0186f7286f7c104cf}\label{http_8php_a58aa28cd80a1eeb0186f7286f7c104cf}} 
+\index{http.php@{http.php}!ob\_etaghandler@{ob\_etaghandler}}
+\index{ob\_etaghandler@{ob\_etaghandler}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{ob\_etaghandler()}{ob\_etaghandler()}}
+{\footnotesize\ttfamily ob\+\_\+etaghandler (\begin{DoxyParamCaption}\item[{}]{\$data,  }\item[{}]{\$mode }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+10.\+0)~\newline
+ E\+Tag output handler \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data  int \$mode  string }}\mbox{\Hypertarget{http_8php_a88f177cbfb7da503e41f2a4dc05dee4d}\label{http_8php_a88f177cbfb7da503e41f2a4dc05dee4d}} 
+\index{http.php@{http.php}!ob\_inflatehandler@{ob\_inflatehandler}}
+\index{ob\_inflatehandler@{ob\_inflatehandler}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{ob\_inflatehandler()}{ob\_inflatehandler()}}
+{\footnotesize\ttfamily ob\+\_\+inflatehandler (\begin{DoxyParamCaption}\item[{}]{\$data,  }\item[{}]{\$mode }\end{DoxyParamCaption})}
+
+(P\+E\+CL pecl\+\_\+http $>$= 0.\+21.\+0)~\newline
+ Inflate output handler \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data  int \$mode  string }}
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{http_8php_acad72e1e777c0cb7af3f46c17ba42fd1}\label{http_8php_acad72e1e777c0cb7af3f46c17ba42fd1}} 
+\index{http.php@{http.php}!HTTP\_AUTH\_ANY@{HTTP\_AUTH\_ANY}}
+\index{HTTP\_AUTH\_ANY@{HTTP\_AUTH\_ANY}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_AUTH\_ANY}{HTTP\_AUTH\_ANY}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+\_\+\+A\+NY -\/1}
+
+try any authentication scheme \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a6b6dbaa026839a100332be35850fbe54}\label{http_8php_a6b6dbaa026839a100332be35850fbe54}} 
+\index{http.php@{http.php}!HTTP\_AUTH\_BASIC@{HTTP\_AUTH\_BASIC}}
+\index{HTTP\_AUTH\_BASIC@{HTTP\_AUTH\_BASIC}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_AUTH\_BASIC}{HTTP\_AUTH\_BASIC}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+\_\+\+B\+A\+S\+IC 1}
+
+use "{}basic"{} authentication \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_afb951f712442a8feeb49ff44e7c0188d}\label{http_8php_afb951f712442a8feeb49ff44e7c0188d}} 
+\index{http.php@{http.php}!HTTP\_AUTH\_DIGEST@{HTTP\_AUTH\_DIGEST}}
+\index{HTTP\_AUTH\_DIGEST@{HTTP\_AUTH\_DIGEST}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_AUTH\_DIGEST}{HTTP\_AUTH\_DIGEST}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+\_\+\+D\+I\+G\+E\+ST 2}
+
+use "{}digest"{} authentication \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_aa25093c8b764a0a4601ec4dc38d93aa4}\label{http_8php_aa25093c8b764a0a4601ec4dc38d93aa4}} 
+\index{http.php@{http.php}!HTTP\_AUTH\_GSSNEG@{HTTP\_AUTH\_GSSNEG}}
+\index{HTTP\_AUTH\_GSSNEG@{HTTP\_AUTH\_GSSNEG}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_AUTH\_GSSNEG}{HTTP\_AUTH\_GSSNEG}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+\_\+\+G\+S\+S\+N\+EG 4}
+
+use "{}G\+S\+S-\/\+N\+E\+G\+O\+T\+I\+A\+TE"{} authentication \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_ab191d98ffae37b5a5a80eb3b227cd0b8}\label{http_8php_ab191d98ffae37b5a5a80eb3b227cd0b8}} 
+\index{http.php@{http.php}!HTTP\_AUTH\_NTLM@{HTTP\_AUTH\_NTLM}}
+\index{HTTP\_AUTH\_NTLM@{HTTP\_AUTH\_NTLM}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_AUTH\_NTLM}{HTTP\_AUTH\_NTLM}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+\_\+\+N\+T\+LM 8}
+
+use "{}N\+T\+LM"{} authentication \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a419b06ac8b95a5706dbaecbb0b87bfcb}\label{http_8php_a419b06ac8b95a5706dbaecbb0b87bfcb}} 
+\index{http.php@{http.php}!HTTP\_COOKIE\_HTTPONLY@{HTTP\_COOKIE\_HTTPONLY}}
+\index{HTTP\_COOKIE\_HTTPONLY@{HTTP\_COOKIE\_HTTPONLY}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_COOKIE\_HTTPONLY}{HTTP\_COOKIE\_HTTPONLY}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+H\+T\+T\+P\+O\+N\+LY 32}
+
+whether "{}http\+Only"{} was found in the cookie\textquotesingle{}s parameter list \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_ab260f57b4ea2e05a2c714fc9d973293f}\label{http_8php_ab260f57b4ea2e05a2c714fc9d973293f}} 
+\index{http.php@{http.php}!HTTP\_COOKIE\_PARSE\_RAW@{HTTP\_COOKIE\_PARSE\_RAW}}
+\index{HTTP\_COOKIE\_PARSE\_RAW@{HTTP\_COOKIE\_PARSE\_RAW}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_COOKIE\_PARSE\_RAW}{HTTP\_COOKIE\_PARSE\_RAW}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+P\+A\+R\+S\+E\+\_\+\+R\+AW 1}
+
+don\textquotesingle{}t urldecode values \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_afd1845e326dada900417a6fd482922fb}\label{http_8php_afd1845e326dada900417a6fd482922fb}} 
+\index{http.php@{http.php}!HTTP\_COOKIE\_SECURE@{HTTP\_COOKIE\_SECURE}}
+\index{HTTP\_COOKIE\_SECURE@{HTTP\_COOKIE\_SECURE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_COOKIE\_SECURE}{HTTP\_COOKIE\_SECURE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+S\+E\+C\+U\+RE 16}
+
+whether "{}secure"{} was found in the cookie\textquotesingle{}s parameters list \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a4aefbc6ebefd58240b36cf2870dfddd8}\label{http_8php_a4aefbc6ebefd58240b36cf2870dfddd8}} 
+\index{http.php@{http.php}!HTTP\_DEFLATE\_LEVEL\_DEF@{HTTP\_DEFLATE\_LEVEL\_DEF}}
+\index{HTTP\_DEFLATE\_LEVEL\_DEF@{HTTP\_DEFLATE\_LEVEL\_DEF}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_DEFLATE\_LEVEL\_DEF}{HTTP\_DEFLATE\_LEVEL\_DEF}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+EF 0}
+
+\mbox{\Hypertarget{http_8php_a5c4ef9c65994f45563dc6f29ce630af1}\label{http_8php_a5c4ef9c65994f45563dc6f29ce630af1}} 
+\index{http.php@{http.php}!HTTP\_DEFLATE\_LEVEL\_MAX@{HTTP\_DEFLATE\_LEVEL\_MAX}}
+\index{HTTP\_DEFLATE\_LEVEL\_MAX@{HTTP\_DEFLATE\_LEVEL\_MAX}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_DEFLATE\_LEVEL\_MAX}{HTTP\_DEFLATE\_LEVEL\_MAX}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+AX 9}
+
+\mbox{\Hypertarget{http_8php_a25ba6a7eb5863050a1a22f853978440a}\label{http_8php_a25ba6a7eb5863050a1a22f853978440a}} 
+\index{http.php@{http.php}!HTTP\_DEFLATE\_LEVEL\_MIN@{HTTP\_DEFLATE\_LEVEL\_MIN}}
+\index{HTTP\_DEFLATE\_LEVEL\_MIN@{HTTP\_DEFLATE\_LEVEL\_MIN}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_DEFLATE\_LEVEL\_MIN}{HTTP\_DEFLATE\_LEVEL\_MIN}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+IN 1}
+
+\mbox{\Hypertarget{http_8php_a6974f2cbb9e689a0a229a11a44ff150d}\label{http_8php_a6974f2cbb9e689a0a229a11a44ff150d}} 
+\index{http.php@{http.php}!HTTP\_DEFLATE\_STRATEGY\_DEF@{HTTP\_DEFLATE\_STRATEGY\_DEF}}
+\index{HTTP\_DEFLATE\_STRATEGY\_DEF@{HTTP\_DEFLATE\_STRATEGY\_DEF}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_DEFLATE\_STRATEGY\_DEF}{HTTP\_DEFLATE\_STRATEGY\_DEF}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+D\+EF 0}
+
+\mbox{\Hypertarget{http_8php_acc21c95717301041b2fe9ffadcc302db}\label{http_8php_acc21c95717301041b2fe9ffadcc302db}} 
+\index{http.php@{http.php}!HTTP\_DEFLATE\_STRATEGY\_FILT@{HTTP\_DEFLATE\_STRATEGY\_FILT}}
+\index{HTTP\_DEFLATE\_STRATEGY\_FILT@{HTTP\_DEFLATE\_STRATEGY\_FILT}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_DEFLATE\_STRATEGY\_FILT}{HTTP\_DEFLATE\_STRATEGY\_FILT}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+F\+I\+LT 256}
+
+\mbox{\Hypertarget{http_8php_a15980ff6869ab6ee06da2652b5da738a}\label{http_8php_a15980ff6869ab6ee06da2652b5da738a}} 
+\index{http.php@{http.php}!HTTP\_DEFLATE\_STRATEGY\_FIXED@{HTTP\_DEFLATE\_STRATEGY\_FIXED}}
+\index{HTTP\_DEFLATE\_STRATEGY\_FIXED@{HTTP\_DEFLATE\_STRATEGY\_FIXED}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_DEFLATE\_STRATEGY\_FIXED}{HTTP\_DEFLATE\_STRATEGY\_FIXED}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+F\+I\+X\+ED 1024}
+
+\mbox{\Hypertarget{http_8php_aa7b5f4ad338787cff1dfd8acde5e3bbe}\label{http_8php_aa7b5f4ad338787cff1dfd8acde5e3bbe}} 
+\index{http.php@{http.php}!HTTP\_DEFLATE\_STRATEGY\_HUFF@{HTTP\_DEFLATE\_STRATEGY\_HUFF}}
+\index{HTTP\_DEFLATE\_STRATEGY\_HUFF@{HTTP\_DEFLATE\_STRATEGY\_HUFF}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_DEFLATE\_STRATEGY\_HUFF}{HTTP\_DEFLATE\_STRATEGY\_HUFF}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+H\+U\+FF 512}
+
+\mbox{\Hypertarget{http_8php_aeb18a1fd877350110a5d2cd1a2cfb2de}\label{http_8php_aeb18a1fd877350110a5d2cd1a2cfb2de}} 
+\index{http.php@{http.php}!HTTP\_DEFLATE\_STRATEGY\_RLE@{HTTP\_DEFLATE\_STRATEGY\_RLE}}
+\index{HTTP\_DEFLATE\_STRATEGY\_RLE@{HTTP\_DEFLATE\_STRATEGY\_RLE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_DEFLATE\_STRATEGY\_RLE}{HTTP\_DEFLATE\_STRATEGY\_RLE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+S\+T\+R\+A\+T\+E\+G\+Y\+\_\+\+R\+LE 768}
+
+\mbox{\Hypertarget{http_8php_a1b4ecb1ed7b787cbb199f14f7bd7c101}\label{http_8php_a1b4ecb1ed7b787cbb199f14f7bd7c101}} 
+\index{http.php@{http.php}!HTTP\_DEFLATE\_TYPE\_GZIP@{HTTP\_DEFLATE\_TYPE\_GZIP}}
+\index{HTTP\_DEFLATE\_TYPE\_GZIP@{HTTP\_DEFLATE\_TYPE\_GZIP}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_DEFLATE\_TYPE\_GZIP}{HTTP\_DEFLATE\_TYPE\_GZIP}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+Z\+IP 16}
+
+\mbox{\Hypertarget{http_8php_adeced5c30d7d405787f96a994c7194bc}\label{http_8php_adeced5c30d7d405787f96a994c7194bc}} 
+\index{http.php@{http.php}!HTTP\_DEFLATE\_TYPE\_RAW@{HTTP\_DEFLATE\_TYPE\_RAW}}
+\index{HTTP\_DEFLATE\_TYPE\_RAW@{HTTP\_DEFLATE\_TYPE\_RAW}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_DEFLATE\_TYPE\_RAW}{HTTP\_DEFLATE\_TYPE\_RAW}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+AW 32}
+
+\mbox{\Hypertarget{http_8php_a675acc656e3e7b4d6479925dbc5ee97d}\label{http_8php_a675acc656e3e7b4d6479925dbc5ee97d}} 
+\index{http.php@{http.php}!HTTP\_DEFLATE\_TYPE\_ZLIB@{HTTP\_DEFLATE\_TYPE\_ZLIB}}
+\index{HTTP\_DEFLATE\_TYPE\_ZLIB@{HTTP\_DEFLATE\_TYPE\_ZLIB}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_DEFLATE\_TYPE\_ZLIB}{HTTP\_DEFLATE\_TYPE\_ZLIB}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+D\+E\+F\+L\+A\+T\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+Z\+L\+IB 0}
+
+\mbox{\Hypertarget{http_8php_a6405f2af29f8f4f83a5b314c5efb0d99}\label{http_8php_a6405f2af29f8f4f83a5b314c5efb0d99}} 
+\index{http.php@{http.php}!HTTP\_E\_ENCODING@{HTTP\_E\_ENCODING}}
+\index{HTTP\_E\_ENCODING@{HTTP\_E\_ENCODING}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_E\_ENCODING}{HTTP\_E\_ENCODING}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+\_\+\+E\+N\+C\+O\+D\+I\+NG 7}
+
+encoding/decoding error \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_ac6f5bf860235ed50cde0bc1bc69a8095}\label{http_8php_ac6f5bf860235ed50cde0bc1bc69a8095}} 
+\index{http.php@{http.php}!HTTP\_E\_HEADER@{HTTP\_E\_HEADER}}
+\index{HTTP\_E\_HEADER@{HTTP\_E\_HEADER}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_E\_HEADER}{HTTP\_E\_HEADER}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+\_\+\+H\+E\+A\+D\+ER 3}
+
+\mbox{\hyperlink{standard__4_8php_ac55e164292560bad3c753ba51f50915c}{header()}} or similar operation failed \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a6ed23ebf3a2a6a0b43815d86bde88e8b}\label{http_8php_a6ed23ebf3a2a6a0b43815d86bde88e8b}} 
+\index{http.php@{http.php}!HTTP\_E\_INVALID\_PARAM@{HTTP\_E\_INVALID\_PARAM}}
+\index{HTTP\_E\_INVALID\_PARAM@{HTTP\_E\_INVALID\_PARAM}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_E\_INVALID\_PARAM}{HTTP\_E\_INVALID\_PARAM}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+AM 2}
+
+an invalid parameter was passed \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a89ea7b6f082b6e55566ed29485dadc55}\label{http_8php_a89ea7b6f082b6e55566ed29485dadc55}} 
+\index{http.php@{http.php}!HTTP\_E\_MALFORMED\_HEADERS@{HTTP\_E\_MALFORMED\_HEADERS}}
+\index{HTTP\_E\_MALFORMED\_HEADERS@{HTTP\_E\_MALFORMED\_HEADERS}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_E\_MALFORMED\_HEADERS}{HTTP\_E\_MALFORMED\_HEADERS}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+\_\+\+M\+A\+L\+F\+O\+R\+M\+E\+D\+\_\+\+H\+E\+A\+D\+E\+RS 4}
+
+H\+T\+TP header parse error \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a110605b29e4ed2741b9a9581beeaf895}\label{http_8php_a110605b29e4ed2741b9a9581beeaf895}} 
+\index{http.php@{http.php}!HTTP\_E\_MESSAGE\_TYPE@{HTTP\_E\_MESSAGE\_TYPE}}
+\index{HTTP\_E\_MESSAGE\_TYPE@{HTTP\_E\_MESSAGE\_TYPE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_E\_MESSAGE\_TYPE}{HTTP\_E\_MESSAGE\_TYPE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+T\+Y\+PE 6}
+
+with operation incompatible message type \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a635dd2aaaa17dcecfa1b997a81222385}\label{http_8php_a635dd2aaaa17dcecfa1b997a81222385}} 
+\index{http.php@{http.php}!HTTP\_E\_QUERYSTRING@{HTTP\_E\_QUERYSTRING}}
+\index{HTTP\_E\_QUERYSTRING@{HTTP\_E\_QUERYSTRING}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_E\_QUERYSTRING}{HTTP\_E\_QUERYSTRING}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+\_\+\+Q\+U\+E\+R\+Y\+S\+T\+R\+I\+NG 13}
+
+querystring operation failure \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a14be94e820409943ddd206114c8b08cb}\label{http_8php_a14be94e820409943ddd206114c8b08cb}} 
+\index{http.php@{http.php}!HTTP\_E\_REQUEST@{HTTP\_E\_REQUEST}}
+\index{HTTP\_E\_REQUEST@{HTTP\_E\_REQUEST}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_E\_REQUEST}{HTTP\_E\_REQUEST}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+\_\+\+R\+E\+Q\+U\+E\+ST 8}
+
+request failure \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a8a0ea1c6f4dd2a6030be68ef7aea6d17}\label{http_8php_a8a0ea1c6f4dd2a6030be68ef7aea6d17}} 
+\index{http.php@{http.php}!HTTP\_E\_REQUEST\_METHOD@{HTTP\_E\_REQUEST\_METHOD}}
+\index{HTTP\_E\_REQUEST\_METHOD@{HTTP\_E\_REQUEST\_METHOD}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_E\_REQUEST\_METHOD}{HTTP\_E\_REQUEST\_METHOD}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+M\+E\+T\+H\+OD 5}
+
+unknown/invalid request method \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_ad60c60c1aa7d292b1225cac3276d6e6d}\label{http_8php_ad60c60c1aa7d292b1225cac3276d6e6d}} 
+\index{http.php@{http.php}!HTTP\_E\_REQUEST\_POOL@{HTTP\_E\_REQUEST\_POOL}}
+\index{HTTP\_E\_REQUEST\_POOL@{HTTP\_E\_REQUEST\_POOL}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_E\_REQUEST\_POOL}{HTTP\_E\_REQUEST\_POOL}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+P\+O\+OL 9}
+
+request pool failure \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_affc31fe1eaab08bef82926fbd8aa6e34}\label{http_8php_affc31fe1eaab08bef82926fbd8aa6e34}} 
+\index{http.php@{http.php}!HTTP\_E\_RESPONSE@{HTTP\_E\_RESPONSE}}
+\index{HTTP\_E\_RESPONSE@{HTTP\_E\_RESPONSE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_E\_RESPONSE}{HTTP\_E\_RESPONSE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+\_\+\+R\+E\+S\+P\+O\+N\+SE 11}
+
+response failure \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a91ec8071b480b996c701921da5896a00}\label{http_8php_a91ec8071b480b996c701921da5896a00}} 
+\index{http.php@{http.php}!HTTP\_E\_RUNTIME@{HTTP\_E\_RUNTIME}}
+\index{HTTP\_E\_RUNTIME@{HTTP\_E\_RUNTIME}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_E\_RUNTIME}{HTTP\_E\_RUNTIME}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+\_\+\+R\+U\+N\+T\+I\+ME 1}
+
+runtime error \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_af0baf18083d27f3974faa9702ee7512b}\label{http_8php_af0baf18083d27f3974faa9702ee7512b}} 
+\index{http.php@{http.php}!HTTP\_E\_SOCKET@{HTTP\_E\_SOCKET}}
+\index{HTTP\_E\_SOCKET@{HTTP\_E\_SOCKET}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_E\_SOCKET}{HTTP\_E\_SOCKET}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+\_\+\+S\+O\+C\+K\+ET 10}
+
+socket exception \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a76e0740bd9fd5bdca2723d19c75c3e76}\label{http_8php_a76e0740bd9fd5bdca2723d19c75c3e76}} 
+\index{http.php@{http.php}!HTTP\_E\_URL@{HTTP\_E\_URL}}
+\index{HTTP\_E\_URL@{HTTP\_E\_URL}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_E\_URL}{HTTP\_E\_URL}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+\_\+\+U\+RL 12}
+
+invalid U\+RL \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a33fe80557a5ea45c83ca173b942f9838}\label{http_8php_a33fe80557a5ea45c83ca173b942f9838}} 
+\index{http.php@{http.php}!HTTP\_ENCODING\_STREAM\_FLUSH\_FULL@{HTTP\_ENCODING\_STREAM\_FLUSH\_FULL}}
+\index{HTTP\_ENCODING\_STREAM\_FLUSH\_FULL@{HTTP\_ENCODING\_STREAM\_FLUSH\_FULL}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_ENCODING\_STREAM\_FLUSH\_FULL}{HTTP\_ENCODING\_STREAM\_FLUSH\_FULL}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+F\+L\+U\+S\+H\+\_\+\+F\+U\+LL 2097152}
+
+full data flush \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a983134dd15732b253f9e70024a6b019a}\label{http_8php_a983134dd15732b253f9e70024a6b019a}} 
+\index{http.php@{http.php}!HTTP\_ENCODING\_STREAM\_FLUSH\_NONE@{HTTP\_ENCODING\_STREAM\_FLUSH\_NONE}}
+\index{HTTP\_ENCODING\_STREAM\_FLUSH\_NONE@{HTTP\_ENCODING\_STREAM\_FLUSH\_NONE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_ENCODING\_STREAM\_FLUSH\_NONE}{HTTP\_ENCODING\_STREAM\_FLUSH\_NONE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+F\+L\+U\+S\+H\+\_\+\+N\+O\+NE 0}
+
+don\textquotesingle{}t flush \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_ae3246cfdc1a32e46ab2795c52eabce65}\label{http_8php_ae3246cfdc1a32e46ab2795c52eabce65}} 
+\index{http.php@{http.php}!HTTP\_ENCODING\_STREAM\_FLUSH\_SYNC@{HTTP\_ENCODING\_STREAM\_FLUSH\_SYNC}}
+\index{HTTP\_ENCODING\_STREAM\_FLUSH\_SYNC@{HTTP\_ENCODING\_STREAM\_FLUSH\_SYNC}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_ENCODING\_STREAM\_FLUSH\_SYNC}{HTTP\_ENCODING\_STREAM\_FLUSH\_SYNC}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+F\+L\+U\+S\+H\+\_\+\+S\+Y\+NC 1048576}
+
+synchronized flush only \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a7c58c2051c41c84bbf9f2bf7c61fe43a}\label{http_8php_a7c58c2051c41c84bbf9f2bf7c61fe43a}} 
+\index{http.php@{http.php}!HTTP\_IPRESOLVE\_ANY@{HTTP\_IPRESOLVE\_ANY}}
+\index{HTTP\_IPRESOLVE\_ANY@{HTTP\_IPRESOLVE\_ANY}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_IPRESOLVE\_ANY}{HTTP\_IPRESOLVE\_ANY}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+I\+P\+R\+E\+S\+O\+L\+V\+E\+\_\+\+A\+NY 0}
+
+use any IP mechanism only for name lookups \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_ac1a4a75ecf7cfe75c7d1bfb6c9fec11c}\label{http_8php_ac1a4a75ecf7cfe75c7d1bfb6c9fec11c}} 
+\index{http.php@{http.php}!HTTP\_IPRESOLVE\_V4@{HTTP\_IPRESOLVE\_V4}}
+\index{HTTP\_IPRESOLVE\_V4@{HTTP\_IPRESOLVE\_V4}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_IPRESOLVE\_V4}{HTTP\_IPRESOLVE\_V4}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+I\+P\+R\+E\+S\+O\+L\+V\+E\+\_\+\+V4 1}
+
+use I\+Pv4 only for name lookups \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_afeef8e628e115765f37970842ce2ad8d}\label{http_8php_afeef8e628e115765f37970842ce2ad8d}} 
+\index{http.php@{http.php}!HTTP\_IPRESOLVE\_V6@{HTTP\_IPRESOLVE\_V6}}
+\index{HTTP\_IPRESOLVE\_V6@{HTTP\_IPRESOLVE\_V6}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_IPRESOLVE\_V6}{HTTP\_IPRESOLVE\_V6}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+I\+P\+R\+E\+S\+O\+L\+V\+E\+\_\+\+V6 2}
+
+use I\+Pv6 only for name lookups \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a1dfd0236c65d5c9602c7052742c4a408}\label{http_8php_a1dfd0236c65d5c9602c7052742c4a408}} 
+\index{http.php@{http.php}!HTTP\_METH\_ACL@{HTTP\_METH\_ACL}}
+\index{HTTP\_METH\_ACL@{HTTP\_METH\_ACL}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_ACL}{HTTP\_METH\_ACL}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+A\+CL 27}
+
+\mbox{\Hypertarget{http_8php_a20bfa158ad2fbf5db1e01129ebdc3612}\label{http_8php_a20bfa158ad2fbf5db1e01129ebdc3612}} 
+\index{http.php@{http.php}!HTTP\_METH\_BASELINE\_CONTROL@{HTTP\_METH\_BASELINE\_CONTROL}}
+\index{HTTP\_METH\_BASELINE\_CONTROL@{HTTP\_METH\_BASELINE\_CONTROL}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_BASELINE\_CONTROL}{HTTP\_METH\_BASELINE\_CONTROL}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+B\+A\+S\+E\+L\+I\+N\+E\+\_\+\+C\+O\+N\+T\+R\+OL 25}
+
+\mbox{\Hypertarget{http_8php_a50d02484609d7396323a965ba47c094f}\label{http_8php_a50d02484609d7396323a965ba47c094f}} 
+\index{http.php@{http.php}!HTTP\_METH\_CHECKIN@{HTTP\_METH\_CHECKIN}}
+\index{HTTP\_METH\_CHECKIN@{HTTP\_METH\_CHECKIN}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_CHECKIN}{HTTP\_METH\_CHECKIN}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+C\+H\+E\+C\+K\+IN 19}
+
+\mbox{\Hypertarget{http_8php_aa7db0f1231a29287e213f60e7783b8e4}\label{http_8php_aa7db0f1231a29287e213f60e7783b8e4}} 
+\index{http.php@{http.php}!HTTP\_METH\_CHECKOUT@{HTTP\_METH\_CHECKOUT}}
+\index{HTTP\_METH\_CHECKOUT@{HTTP\_METH\_CHECKOUT}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_CHECKOUT}{HTTP\_METH\_CHECKOUT}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+C\+H\+E\+C\+K\+O\+UT 18}
+
+\mbox{\Hypertarget{http_8php_af4e8a1abbf5a1b3e011177b6234c45a8}\label{http_8php_af4e8a1abbf5a1b3e011177b6234c45a8}} 
+\index{http.php@{http.php}!HTTP\_METH\_CONNECT@{HTTP\_METH\_CONNECT}}
+\index{HTTP\_METH\_CONNECT@{HTTP\_METH\_CONNECT}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_CONNECT}{HTTP\_METH\_CONNECT}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+C\+O\+N\+N\+E\+CT 8}
+
+\mbox{\Hypertarget{http_8php_aef64467fcfcea1452d8bab286a6ba407}\label{http_8php_aef64467fcfcea1452d8bab286a6ba407}} 
+\index{http.php@{http.php}!HTTP\_METH\_COPY@{HTTP\_METH\_COPY}}
+\index{HTTP\_METH\_COPY@{HTTP\_METH\_COPY}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_COPY}{HTTP\_METH\_COPY}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+C\+O\+PY 12}
+
+\mbox{\Hypertarget{http_8php_aed6ac6e035a4bbed18a1609171e6395a}\label{http_8php_aed6ac6e035a4bbed18a1609171e6395a}} 
+\index{http.php@{http.php}!HTTP\_METH\_DELETE@{HTTP\_METH\_DELETE}}
+\index{HTTP\_METH\_DELETE@{HTTP\_METH\_DELETE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_DELETE}{HTTP\_METH\_DELETE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+D\+E\+L\+E\+TE 5}
+
+\mbox{\Hypertarget{http_8php_ab7a533f46e708578a9c52aef1bed94eb}\label{http_8php_ab7a533f46e708578a9c52aef1bed94eb}} 
+\index{http.php@{http.php}!HTTP\_METH\_GET@{HTTP\_METH\_GET}}
+\index{HTTP\_METH\_GET@{HTTP\_METH\_GET}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_GET}{HTTP\_METH\_GET}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+G\+ET 1}
+
+\mbox{\Hypertarget{http_8php_a88de02642f0ba4e4894e333db427a263}\label{http_8php_a88de02642f0ba4e4894e333db427a263}} 
+\index{http.php@{http.php}!HTTP\_METH\_HEAD@{HTTP\_METH\_HEAD}}
+\index{HTTP\_METH\_HEAD@{HTTP\_METH\_HEAD}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_HEAD}{HTTP\_METH\_HEAD}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+H\+E\+AD 2}
+
+\mbox{\Hypertarget{http_8php_aaf05b08f30efde7d88c49eebea0232b0}\label{http_8php_aaf05b08f30efde7d88c49eebea0232b0}} 
+\index{http.php@{http.php}!HTTP\_METH\_LABEL@{HTTP\_METH\_LABEL}}
+\index{HTTP\_METH\_LABEL@{HTTP\_METH\_LABEL}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_LABEL}{HTTP\_METH\_LABEL}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+L\+A\+B\+EL 23}
+
+\mbox{\Hypertarget{http_8php_ae71924ab9820134ed3a278e27bfa61c1}\label{http_8php_ae71924ab9820134ed3a278e27bfa61c1}} 
+\index{http.php@{http.php}!HTTP\_METH\_LOCK@{HTTP\_METH\_LOCK}}
+\index{HTTP\_METH\_LOCK@{HTTP\_METH\_LOCK}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_LOCK}{HTTP\_METH\_LOCK}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+L\+O\+CK 14}
+
+\mbox{\Hypertarget{http_8php_ad221752558cfdb38b9543c8f090c2164}\label{http_8php_ad221752558cfdb38b9543c8f090c2164}} 
+\index{http.php@{http.php}!HTTP\_METH\_MERGE@{HTTP\_METH\_MERGE}}
+\index{HTTP\_METH\_MERGE@{HTTP\_METH\_MERGE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_MERGE}{HTTP\_METH\_MERGE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+M\+E\+R\+GE 24}
+
+\mbox{\Hypertarget{http_8php_a94ebb410fc7eb416c1b804daee3f2d3a}\label{http_8php_a94ebb410fc7eb416c1b804daee3f2d3a}} 
+\index{http.php@{http.php}!HTTP\_METH\_MKACTIVITY@{HTTP\_METH\_MKACTIVITY}}
+\index{HTTP\_METH\_MKACTIVITY@{HTTP\_METH\_MKACTIVITY}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_MKACTIVITY}{HTTP\_METH\_MKACTIVITY}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+M\+K\+A\+C\+T\+I\+V\+I\+TY 26}
+
+\mbox{\Hypertarget{http_8php_a66a053fa3fb1541573895c1b9c4e83e6}\label{http_8php_a66a053fa3fb1541573895c1b9c4e83e6}} 
+\index{http.php@{http.php}!HTTP\_METH\_MKCOL@{HTTP\_METH\_MKCOL}}
+\index{HTTP\_METH\_MKCOL@{HTTP\_METH\_MKCOL}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_MKCOL}{HTTP\_METH\_MKCOL}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+M\+K\+C\+OL 11}
+
+\mbox{\Hypertarget{http_8php_a8831f12840b9b8fd76f2da57e837c113}\label{http_8php_a8831f12840b9b8fd76f2da57e837c113}} 
+\index{http.php@{http.php}!HTTP\_METH\_MKWORKSPACE@{HTTP\_METH\_MKWORKSPACE}}
+\index{HTTP\_METH\_MKWORKSPACE@{HTTP\_METH\_MKWORKSPACE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_MKWORKSPACE}{HTTP\_METH\_MKWORKSPACE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+M\+K\+W\+O\+R\+K\+S\+P\+A\+CE 21}
+
+\mbox{\Hypertarget{http_8php_a6bfa441487a5812de0fe6a2fe8e1ef87}\label{http_8php_a6bfa441487a5812de0fe6a2fe8e1ef87}} 
+\index{http.php@{http.php}!HTTP\_METH\_MOVE@{HTTP\_METH\_MOVE}}
+\index{HTTP\_METH\_MOVE@{HTTP\_METH\_MOVE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_MOVE}{HTTP\_METH\_MOVE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+M\+O\+VE 13}
+
+\mbox{\Hypertarget{http_8php_a07d88d0c2c8843852251cab0075da904}\label{http_8php_a07d88d0c2c8843852251cab0075da904}} 
+\index{http.php@{http.php}!HTTP\_METH\_OPTIONS@{HTTP\_METH\_OPTIONS}}
+\index{HTTP\_METH\_OPTIONS@{HTTP\_METH\_OPTIONS}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_OPTIONS}{HTTP\_METH\_OPTIONS}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+O\+P\+T\+I\+O\+NS 6}
+
+\mbox{\Hypertarget{http_8php_a666f8f173a00455c153401217453a03a}\label{http_8php_a666f8f173a00455c153401217453a03a}} 
+\index{http.php@{http.php}!HTTP\_METH\_POST@{HTTP\_METH\_POST}}
+\index{HTTP\_METH\_POST@{HTTP\_METH\_POST}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_POST}{HTTP\_METH\_POST}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+P\+O\+ST 3}
+
+\mbox{\Hypertarget{http_8php_ab3c4485c844a93cbf337c6916a941178}\label{http_8php_ab3c4485c844a93cbf337c6916a941178}} 
+\index{http.php@{http.php}!HTTP\_METH\_PROPFIND@{HTTP\_METH\_PROPFIND}}
+\index{HTTP\_METH\_PROPFIND@{HTTP\_METH\_PROPFIND}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_PROPFIND}{HTTP\_METH\_PROPFIND}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+P\+R\+O\+P\+F\+I\+ND 9}
+
+\mbox{\Hypertarget{http_8php_a26eb2b6ae28c97f2e23704f1e7a8ab1e}\label{http_8php_a26eb2b6ae28c97f2e23704f1e7a8ab1e}} 
+\index{http.php@{http.php}!HTTP\_METH\_PROPPATCH@{HTTP\_METH\_PROPPATCH}}
+\index{HTTP\_METH\_PROPPATCH@{HTTP\_METH\_PROPPATCH}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_PROPPATCH}{HTTP\_METH\_PROPPATCH}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+P\+R\+O\+P\+P\+A\+T\+CH 10}
+
+\mbox{\Hypertarget{http_8php_a362fef3fd11728da91bc1d0daafd4d69}\label{http_8php_a362fef3fd11728da91bc1d0daafd4d69}} 
+\index{http.php@{http.php}!HTTP\_METH\_PUT@{HTTP\_METH\_PUT}}
+\index{HTTP\_METH\_PUT@{HTTP\_METH\_PUT}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_PUT}{HTTP\_METH\_PUT}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+P\+UT 4}
+
+\mbox{\Hypertarget{http_8php_a5596dc0042d6ed5ef4dc8ec5a13f1b19}\label{http_8php_a5596dc0042d6ed5ef4dc8ec5a13f1b19}} 
+\index{http.php@{http.php}!HTTP\_METH\_REPORT@{HTTP\_METH\_REPORT}}
+\index{HTTP\_METH\_REPORT@{HTTP\_METH\_REPORT}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_REPORT}{HTTP\_METH\_REPORT}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+R\+E\+P\+O\+RT 17}
+
+\mbox{\Hypertarget{http_8php_a79a087ff60d89770d7c1362fe025247c}\label{http_8php_a79a087ff60d89770d7c1362fe025247c}} 
+\index{http.php@{http.php}!HTTP\_METH\_TRACE@{HTTP\_METH\_TRACE}}
+\index{HTTP\_METH\_TRACE@{HTTP\_METH\_TRACE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_TRACE}{HTTP\_METH\_TRACE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+T\+R\+A\+CE 7}
+
+\mbox{\Hypertarget{http_8php_a55bcc706f7a97740a73b61bd1d5a1230}\label{http_8php_a55bcc706f7a97740a73b61bd1d5a1230}} 
+\index{http.php@{http.php}!HTTP\_METH\_UNCHECKOUT@{HTTP\_METH\_UNCHECKOUT}}
+\index{HTTP\_METH\_UNCHECKOUT@{HTTP\_METH\_UNCHECKOUT}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_UNCHECKOUT}{HTTP\_METH\_UNCHECKOUT}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+U\+N\+C\+H\+E\+C\+K\+O\+UT 20}
+
+\mbox{\Hypertarget{http_8php_a59027ff180475e23831f5c9dc268fcfa}\label{http_8php_a59027ff180475e23831f5c9dc268fcfa}} 
+\index{http.php@{http.php}!HTTP\_METH\_UNLOCK@{HTTP\_METH\_UNLOCK}}
+\index{HTTP\_METH\_UNLOCK@{HTTP\_METH\_UNLOCK}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_UNLOCK}{HTTP\_METH\_UNLOCK}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+U\+N\+L\+O\+CK 15}
+
+\mbox{\Hypertarget{http_8php_aa0b43ee6774f752ef42e1e7db3602aee}\label{http_8php_aa0b43ee6774f752ef42e1e7db3602aee}} 
+\index{http.php@{http.php}!HTTP\_METH\_UPDATE@{HTTP\_METH\_UPDATE}}
+\index{HTTP\_METH\_UPDATE@{HTTP\_METH\_UPDATE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_UPDATE}{HTTP\_METH\_UPDATE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+U\+P\+D\+A\+TE 22}
+
+\mbox{\Hypertarget{http_8php_a4a1c9e09546aaf453d78570a15859d37}\label{http_8php_a4a1c9e09546aaf453d78570a15859d37}} 
+\index{http.php@{http.php}!HTTP\_METH\_VERSION\_CONTROL@{HTTP\_METH\_VERSION\_CONTROL}}
+\index{HTTP\_METH\_VERSION\_CONTROL@{HTTP\_METH\_VERSION\_CONTROL}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METH\_VERSION\_CONTROL}{HTTP\_METH\_VERSION\_CONTROL}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+E\+T\+H\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+C\+O\+N\+T\+R\+OL 16}
+
+\mbox{\Hypertarget{http_8php_afafc74bc086447012b0e897e386d36ee}\label{http_8php_afafc74bc086447012b0e897e386d36ee}} 
+\index{http.php@{http.php}!HTTP\_MSG\_NONE@{HTTP\_MSG\_NONE}}
+\index{HTTP\_MSG\_NONE@{HTTP\_MSG\_NONE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_MSG\_NONE}{HTTP\_MSG\_NONE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+S\+G\+\_\+\+N\+O\+NE 0}
+
+the message is of no specific type \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_af98700d8065eb3dc2222fa3a424fbf63}\label{http_8php_af98700d8065eb3dc2222fa3a424fbf63}} 
+\index{http.php@{http.php}!HTTP\_MSG\_REQUEST@{HTTP\_MSG\_REQUEST}}
+\index{HTTP\_MSG\_REQUEST@{HTTP\_MSG\_REQUEST}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_MSG\_REQUEST}{HTTP\_MSG\_REQUEST}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+S\+G\+\_\+\+R\+E\+Q\+U\+E\+ST 1}
+
+request style message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a4406e73d02f5acb855369b94e062a7c7}\label{http_8php_a4406e73d02f5acb855369b94e062a7c7}} 
+\index{http.php@{http.php}!HTTP\_MSG\_RESPONSE@{HTTP\_MSG\_RESPONSE}}
+\index{HTTP\_MSG\_RESPONSE@{HTTP\_MSG\_RESPONSE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_MSG\_RESPONSE}{HTTP\_MSG\_RESPONSE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+M\+S\+G\+\_\+\+R\+E\+S\+P\+O\+N\+SE 2}
+
+response style message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_ac7d0ab238bb8aee81087b319bd973246}\label{http_8php_ac7d0ab238bb8aee81087b319bd973246}} 
+\index{http.php@{http.php}!HTTP\_PARAMS\_ALLOW\_COMMA@{HTTP\_PARAMS\_ALLOW\_COMMA}}
+\index{HTTP\_PARAMS\_ALLOW\_COMMA@{HTTP\_PARAMS\_ALLOW\_COMMA}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_PARAMS\_ALLOW\_COMMA}{HTTP\_PARAMS\_ALLOW\_COMMA}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+A\+L\+L\+O\+W\+\_\+\+C\+O\+M\+MA 1}
+
+allow commands additionally to semicolons as separator \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a48879a65d4e0cb5cfcf2648255860b3e}\label{http_8php_a48879a65d4e0cb5cfcf2648255860b3e}} 
+\index{http.php@{http.php}!HTTP\_PARAMS\_ALLOW\_FAILURE@{HTTP\_PARAMS\_ALLOW\_FAILURE}}
+\index{HTTP\_PARAMS\_ALLOW\_FAILURE@{HTTP\_PARAMS\_ALLOW\_FAILURE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_PARAMS\_ALLOW\_FAILURE}{HTTP\_PARAMS\_ALLOW\_FAILURE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+A\+L\+L\+O\+W\+\_\+\+F\+A\+I\+L\+U\+RE 2}
+
+continue parsing after an error occurred \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a42c7bba1135a3d51fbb218b5a117348d}\label{http_8php_a42c7bba1135a3d51fbb218b5a117348d}} 
+\index{http.php@{http.php}!HTTP\_PARAMS\_DEFAULT@{HTTP\_PARAMS\_DEFAULT}}
+\index{HTTP\_PARAMS\_DEFAULT@{HTTP\_PARAMS\_DEFAULT}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_PARAMS\_DEFAULT}{HTTP\_PARAMS\_DEFAULT}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+D\+E\+F\+A\+U\+LT 7}
+
+all three values above, bitwise or\textquotesingle{}ed \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a6b5249f4ed3f7e6a200a64d20970acea}\label{http_8php_a6b5249f4ed3f7e6a200a64d20970acea}} 
+\index{http.php@{http.php}!HTTP\_PARAMS\_RAISE\_ERROR@{HTTP\_PARAMS\_RAISE\_ERROR}}
+\index{HTTP\_PARAMS\_RAISE\_ERROR@{HTTP\_PARAMS\_RAISE\_ERROR}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_PARAMS\_RAISE\_ERROR}{HTTP\_PARAMS\_RAISE\_ERROR}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+R\+A\+I\+S\+E\+\_\+\+E\+R\+R\+OR 4}
+
+raise P\+HP warnings on parse errors \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_af5b19e30312aeba60c6d90d0c61d8720}\label{http_8php_af5b19e30312aeba60c6d90d0c61d8720}} 
+\index{http.php@{http.php}!HTTP\_PROXY\_HTTP@{HTTP\_PROXY\_HTTP}}
+\index{HTTP\_PROXY\_HTTP@{HTTP\_PROXY\_HTTP}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_PROXY\_HTTP}{HTTP\_PROXY\_HTTP}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+H\+T\+TP 0}
+
+standard H\+T\+TP proxy \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a130798351de9623c0b5de87d08e77cff}\label{http_8php_a130798351de9623c0b5de87d08e77cff}} 
+\index{http.php@{http.php}!HTTP\_PROXY\_SOCKS4@{HTTP\_PROXY\_SOCKS4}}
+\index{HTTP\_PROXY\_SOCKS4@{HTTP\_PROXY\_SOCKS4}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_PROXY\_SOCKS4}{HTTP\_PROXY\_SOCKS4}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+S\+O\+C\+K\+S4 4}
+
+the proxy is a S\+O\+C\+K\+S4 type proxy \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_ac2ab0abbcb607a9a969005449aee1260}\label{http_8php_ac2ab0abbcb607a9a969005449aee1260}} 
+\index{http.php@{http.php}!HTTP\_PROXY\_SOCKS5@{HTTP\_PROXY\_SOCKS5}}
+\index{HTTP\_PROXY\_SOCKS5@{HTTP\_PROXY\_SOCKS5}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_PROXY\_SOCKS5}{HTTP\_PROXY\_SOCKS5}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+S\+O\+C\+K\+S5 5}
+
+the proxy is a S\+O\+C\+K\+S5 type proxy \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_ad0e744b42eb7fa3ff0facc75e12d733f}\label{http_8php_ad0e744b42eb7fa3ff0facc75e12d733f}} 
+\index{http.php@{http.php}!HTTP\_QUERYSTRING\_TYPE\_ARRAY@{HTTP\_QUERYSTRING\_TYPE\_ARRAY}}
+\index{HTTP\_QUERYSTRING\_TYPE\_ARRAY@{HTTP\_QUERYSTRING\_TYPE\_ARRAY}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_QUERYSTRING\_TYPE\_ARRAY}{HTTP\_QUERYSTRING\_TYPE\_ARRAY}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+Q\+U\+E\+R\+Y\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+R\+R\+AY 4}
+
+\mbox{\Hypertarget{http_8php_ae001112df94646b95c237c71c93e6c4a}\label{http_8php_ae001112df94646b95c237c71c93e6c4a}} 
+\index{http.php@{http.php}!HTTP\_QUERYSTRING\_TYPE\_BOOL@{HTTP\_QUERYSTRING\_TYPE\_BOOL}}
+\index{HTTP\_QUERYSTRING\_TYPE\_BOOL@{HTTP\_QUERYSTRING\_TYPE\_BOOL}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_QUERYSTRING\_TYPE\_BOOL}{HTTP\_QUERYSTRING\_TYPE\_BOOL}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+Q\+U\+E\+R\+Y\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+O\+OL 3}
+
+\mbox{\Hypertarget{http_8php_ae1651a3d96d185ebc336e05c3488304a}\label{http_8php_ae1651a3d96d185ebc336e05c3488304a}} 
+\index{http.php@{http.php}!HTTP\_QUERYSTRING\_TYPE\_FLOAT@{HTTP\_QUERYSTRING\_TYPE\_FLOAT}}
+\index{HTTP\_QUERYSTRING\_TYPE\_FLOAT@{HTTP\_QUERYSTRING\_TYPE\_FLOAT}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_QUERYSTRING\_TYPE\_FLOAT}{HTTP\_QUERYSTRING\_TYPE\_FLOAT}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+Q\+U\+E\+R\+Y\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+L\+O\+AT 2}
+
+\mbox{\Hypertarget{http_8php_a30193bcbb2042112a398ea522690478e}\label{http_8php_a30193bcbb2042112a398ea522690478e}} 
+\index{http.php@{http.php}!HTTP\_QUERYSTRING\_TYPE\_INT@{HTTP\_QUERYSTRING\_TYPE\_INT}}
+\index{HTTP\_QUERYSTRING\_TYPE\_INT@{HTTP\_QUERYSTRING\_TYPE\_INT}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_QUERYSTRING\_TYPE\_INT}{HTTP\_QUERYSTRING\_TYPE\_INT}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+Q\+U\+E\+R\+Y\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+NT 1}
+
+\mbox{\Hypertarget{http_8php_a09418339ab150fb7c3fc265677106ff2}\label{http_8php_a09418339ab150fb7c3fc265677106ff2}} 
+\index{http.php@{http.php}!HTTP\_QUERYSTRING\_TYPE\_OBJECT@{HTTP\_QUERYSTRING\_TYPE\_OBJECT}}
+\index{HTTP\_QUERYSTRING\_TYPE\_OBJECT@{HTTP\_QUERYSTRING\_TYPE\_OBJECT}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_QUERYSTRING\_TYPE\_OBJECT}{HTTP\_QUERYSTRING\_TYPE\_OBJECT}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+Q\+U\+E\+R\+Y\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+CT 5}
+
+\mbox{\Hypertarget{http_8php_a64546ae22062c3ecc3132bf743f0eb09}\label{http_8php_a64546ae22062c3ecc3132bf743f0eb09}} 
+\index{http.php@{http.php}!HTTP\_QUERYSTRING\_TYPE\_STRING@{HTTP\_QUERYSTRING\_TYPE\_STRING}}
+\index{HTTP\_QUERYSTRING\_TYPE\_STRING@{HTTP\_QUERYSTRING\_TYPE\_STRING}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_QUERYSTRING\_TYPE\_STRING}{HTTP\_QUERYSTRING\_TYPE\_STRING}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+Q\+U\+E\+R\+Y\+S\+T\+R\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+T\+R\+I\+NG 6}
+
+\mbox{\Hypertarget{http_8php_a25f5c92ede92a34992fe7fb1346aa358}\label{http_8php_a25f5c92ede92a34992fe7fb1346aa358}} 
+\index{http.php@{http.php}!HTTP\_REDIRECT@{HTTP\_REDIRECT}}
+\index{HTTP\_REDIRECT@{HTTP\_REDIRECT}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_REDIRECT}{HTTP\_REDIRECT}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+R\+E\+D\+I\+R\+E\+CT 0}
+
+guess applicable redirect method \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a1974db2f56954925317309f4ab23b232}\label{http_8php_a1974db2f56954925317309f4ab23b232}} 
+\index{http.php@{http.php}!HTTP\_REDIRECT\_FOUND@{HTTP\_REDIRECT\_FOUND}}
+\index{HTTP\_REDIRECT\_FOUND@{HTTP\_REDIRECT\_FOUND}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_REDIRECT\_FOUND}{HTTP\_REDIRECT\_FOUND}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+R\+E\+D\+I\+R\+E\+C\+T\+\_\+\+F\+O\+U\+ND 302}
+
+standard redirect (302 Found) R\+FC 1945 and R\+FC 2068 specify that the client is not allowed to change the method on the redirected request. However, most existing user agent implementations treat 302 as if it were a 303 response, performing a G\+ET on the Location field-\/value regardless of the original request method. The status codes 303 and 307 have been added for servers that wish to make unambiguously clear which kind of reaction is expected of the client. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a32c4846e4934785f50812bb59ab921cf}\label{http_8php_a32c4846e4934785f50812bb59ab921cf}} 
+\index{http.php@{http.php}!HTTP\_REDIRECT\_PERM@{HTTP\_REDIRECT\_PERM}}
+\index{HTTP\_REDIRECT\_PERM@{HTTP\_REDIRECT\_PERM}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_REDIRECT\_PERM}{HTTP\_REDIRECT\_PERM}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+R\+E\+D\+I\+R\+E\+C\+T\+\_\+\+P\+E\+RM 301}
+
+permanent redirect (301 Moved permanently) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_ab5dbea35af6e0838762c8b994ebd851b}\label{http_8php_ab5dbea35af6e0838762c8b994ebd851b}} 
+\index{http.php@{http.php}!HTTP\_REDIRECT\_POST@{HTTP\_REDIRECT\_POST}}
+\index{HTTP\_REDIRECT\_POST@{HTTP\_REDIRECT\_POST}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_REDIRECT\_POST}{HTTP\_REDIRECT\_POST}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+R\+E\+D\+I\+R\+E\+C\+T\+\_\+\+P\+O\+ST 303}
+
+redirect applicable to P\+O\+ST requests (303 See other) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a4908351a4c05bad789ff5074d48da709}\label{http_8php_a4908351a4c05bad789ff5074d48da709}} 
+\index{http.php@{http.php}!HTTP\_REDIRECT\_PROXY@{HTTP\_REDIRECT\_PROXY}}
+\index{HTTP\_REDIRECT\_PROXY@{HTTP\_REDIRECT\_PROXY}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_REDIRECT\_PROXY}{HTTP\_REDIRECT\_PROXY}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+R\+E\+D\+I\+R\+E\+C\+T\+\_\+\+P\+R\+O\+XY 305}
+
+proxy redirect (305 Use proxy) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a5b1e11ecfdb79c1b6302e0ee965c68b1}\label{http_8php_a5b1e11ecfdb79c1b6302e0ee965c68b1}} 
+\index{http.php@{http.php}!HTTP\_REDIRECT\_TEMP@{HTTP\_REDIRECT\_TEMP}}
+\index{HTTP\_REDIRECT\_TEMP@{HTTP\_REDIRECT\_TEMP}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_REDIRECT\_TEMP}{HTTP\_REDIRECT\_TEMP}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+R\+E\+D\+I\+R\+E\+C\+T\+\_\+\+T\+E\+MP 307}
+
+temporary redirect (307 Temporary Redirect) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_aa6a57c6b5a43766a6466ebddd186922a}\label{http_8php_aa6a57c6b5a43766a6466ebddd186922a}} 
+\index{http.php@{http.php}!HTTP\_SSL\_VERSION\_ANY@{HTTP\_SSL\_VERSION\_ANY}}
+\index{HTTP\_SSL\_VERSION\_ANY@{HTTP\_SSL\_VERSION\_ANY}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_SSL\_VERSION\_ANY}{HTTP\_SSL\_VERSION\_ANY}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+S\+S\+L\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+NY 0}
+
+no specific S\+SL protocol version \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_ad66e3bddef532079916e826ff39782b2}\label{http_8php_ad66e3bddef532079916e826ff39782b2}} 
+\index{http.php@{http.php}!HTTP\_SSL\_VERSION\_SSLv2@{HTTP\_SSL\_VERSION\_SSLv2}}
+\index{HTTP\_SSL\_VERSION\_SSLv2@{HTTP\_SSL\_VERSION\_SSLv2}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_SSL\_VERSION\_SSLv2}{HTTP\_SSL\_VERSION\_SSLv2}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+S\+S\+L\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+S\+Lv2 2}
+
+use S\+S\+Lv2 only \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a3ef0df053cd53c24a36baf6a8a03fb56}\label{http_8php_a3ef0df053cd53c24a36baf6a8a03fb56}} 
+\index{http.php@{http.php}!HTTP\_SSL\_VERSION\_SSLv3@{HTTP\_SSL\_VERSION\_SSLv3}}
+\index{HTTP\_SSL\_VERSION\_SSLv3@{HTTP\_SSL\_VERSION\_SSLv3}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_SSL\_VERSION\_SSLv3}{HTTP\_SSL\_VERSION\_SSLv3}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+S\+S\+L\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+S\+S\+Lv3 3}
+
+use S\+S\+Lv3 only \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a21a9785165eeccf573803b8c0d96ac02}\label{http_8php_a21a9785165eeccf573803b8c0d96ac02}} 
+\index{http.php@{http.php}!HTTP\_SSL\_VERSION\_TLSv1@{HTTP\_SSL\_VERSION\_TLSv1}}
+\index{HTTP\_SSL\_VERSION\_TLSv1@{HTTP\_SSL\_VERSION\_TLSv1}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_SSL\_VERSION\_TLSv1}{HTTP\_SSL\_VERSION\_TLSv1}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+S\+S\+L\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+T\+L\+Sv1 1}
+
+use T\+L\+Sv1 only \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a57886f4bdb6eb040307661665325faa5}\label{http_8php_a57886f4bdb6eb040307661665325faa5}} 
+\index{http.php@{http.php}!HTTP\_SUPPORT@{HTTP\_SUPPORT}}
+\index{HTTP\_SUPPORT@{HTTP\_SUPPORT}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_SUPPORT}{HTTP\_SUPPORT}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+S\+U\+P\+P\+O\+RT 1}
+
+querying for this constant will always return true \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a0b3d02b23d6af96110fd4d0a3417f384}\label{http_8php_a0b3d02b23d6af96110fd4d0a3417f384}} 
+\index{http.php@{http.php}!HTTP\_SUPPORT\_ENCODINGS@{HTTP\_SUPPORT\_ENCODINGS}}
+\index{HTTP\_SUPPORT\_ENCODINGS@{HTTP\_SUPPORT\_ENCODINGS}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_SUPPORT\_ENCODINGS}{HTTP\_SUPPORT\_ENCODINGS}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+E\+N\+C\+O\+D\+I\+N\+GS 8}
+
+whether support for zlib encodings is given, ie. libz support was compiled in \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a5ac985ad95dd39b2fc85bb9d4a8becc7}\label{http_8php_a5ac985ad95dd39b2fc85bb9d4a8becc7}} 
+\index{http.php@{http.php}!HTTP\_SUPPORT\_EVENTS@{HTTP\_SUPPORT\_EVENTS}}
+\index{HTTP\_SUPPORT\_EVENTS@{HTTP\_SUPPORT\_EVENTS}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_SUPPORT\_EVENTS}{HTTP\_SUPPORT\_EVENTS}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+E\+V\+E\+N\+TS 128}
+
+\mbox{\Hypertarget{http_8php_a18d39217125be47e83c6d761140f7202}\label{http_8php_a18d39217125be47e83c6d761140f7202}} 
+\index{http.php@{http.php}!HTTP\_SUPPORT\_MAGICMIME@{HTTP\_SUPPORT\_MAGICMIME}}
+\index{HTTP\_SUPPORT\_MAGICMIME@{HTTP\_SUPPORT\_MAGICMIME}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_SUPPORT\_MAGICMIME}{HTTP\_SUPPORT\_MAGICMIME}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+M\+A\+G\+I\+C\+M\+I\+ME 4}
+
+whether support to guess the Content-\/\+Type of H\+T\+TP messages is given, ie. libmagic support was compiled in \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a95a37331099171b637cc1744943a3d02}\label{http_8php_a95a37331099171b637cc1744943a3d02}} 
+\index{http.php@{http.php}!HTTP\_SUPPORT\_REQUESTS@{HTTP\_SUPPORT\_REQUESTS}}
+\index{HTTP\_SUPPORT\_REQUESTS@{HTTP\_SUPPORT\_REQUESTS}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_SUPPORT\_REQUESTS}{HTTP\_SUPPORT\_REQUESTS}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+R\+E\+Q\+U\+E\+S\+TS 2}
+
+whether support to issue H\+T\+TP requests is given, ie. libcurl support was compiled in \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a289bc00beb8f588e90a1c8aa6165eb54}\label{http_8php_a289bc00beb8f588e90a1c8aa6165eb54}} 
+\index{http.php@{http.php}!HTTP\_SUPPORT\_SSLREQUESTS@{HTTP\_SUPPORT\_SSLREQUESTS}}
+\index{HTTP\_SUPPORT\_SSLREQUESTS@{HTTP\_SUPPORT\_SSLREQUESTS}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_SUPPORT\_SSLREQUESTS}{HTTP\_SUPPORT\_SSLREQUESTS}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+S\+S\+L\+R\+E\+Q\+U\+E\+S\+TS 32}
+
+whether support to issue H\+T\+TP requests over S\+SL is given, ie. linked libcurl was built with S\+SL support \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_afb0db2ef17ce84003d41ccc9d6ec00d6}\label{http_8php_afb0db2ef17ce84003d41ccc9d6ec00d6}} 
+\index{http.php@{http.php}!HTTP\_URL\_FROM\_ENV@{HTTP\_URL\_FROM\_ENV}}
+\index{HTTP\_URL\_FROM\_ENV@{HTTP\_URL\_FROM\_ENV}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_URL\_FROM\_ENV}{HTTP\_URL\_FROM\_ENV}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+F\+R\+O\+M\+\_\+\+E\+NV 4096}
+
+\mbox{\Hypertarget{http_8php_a6d0915eb962ee874487c6cf33157d4db}\label{http_8php_a6d0915eb962ee874487c6cf33157d4db}} 
+\index{http.php@{http.php}!HTTP\_URL\_JOIN\_PATH@{HTTP\_URL\_JOIN\_PATH}}
+\index{HTTP\_URL\_JOIN\_PATH@{HTTP\_URL\_JOIN\_PATH}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_URL\_JOIN\_PATH}{HTTP\_URL\_JOIN\_PATH}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+J\+O\+I\+N\+\_\+\+P\+A\+TH 1}
+
+join relative paths \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a864f5ee831232f58e567d782e6d94eae}\label{http_8php_a864f5ee831232f58e567d782e6d94eae}} 
+\index{http.php@{http.php}!HTTP\_URL\_JOIN\_QUERY@{HTTP\_URL\_JOIN\_QUERY}}
+\index{HTTP\_URL\_JOIN\_QUERY@{HTTP\_URL\_JOIN\_QUERY}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_URL\_JOIN\_QUERY}{HTTP\_URL\_JOIN\_QUERY}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+J\+O\+I\+N\+\_\+\+Q\+U\+E\+RY 2}
+
+join query strings \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a747e2fe4b0a98bfde4c41f3bf5fa3739}\label{http_8php_a747e2fe4b0a98bfde4c41f3bf5fa3739}} 
+\index{http.php@{http.php}!HTTP\_URL\_REPLACE@{HTTP\_URL\_REPLACE}}
+\index{HTTP\_URL\_REPLACE@{HTTP\_URL\_REPLACE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_URL\_REPLACE}{HTTP\_URL\_REPLACE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+R\+E\+P\+L\+A\+CE 0}
+
+replace every part of the first U\+RL when there\textquotesingle{}s one of the second U\+RL \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_ae9f261abe4a352720154938242d96066}\label{http_8php_ae9f261abe4a352720154938242d96066}} 
+\index{http.php@{http.php}!HTTP\_URL\_STRIP\_ALL@{HTTP\_URL\_STRIP\_ALL}}
+\index{HTTP\_URL\_STRIP\_ALL@{HTTP\_URL\_STRIP\_ALL}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_URL\_STRIP\_ALL}{HTTP\_URL\_STRIP\_ALL}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+A\+LL 492}
+
+strip anything but scheme and host \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_ad9b6597e070eac82fd400c5aff4c7f7c}\label{http_8php_ad9b6597e070eac82fd400c5aff4c7f7c}} 
+\index{http.php@{http.php}!HTTP\_URL\_STRIP\_AUTH@{HTTP\_URL\_STRIP\_AUTH}}
+\index{HTTP\_URL\_STRIP\_AUTH@{HTTP\_URL\_STRIP\_AUTH}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_URL\_STRIP\_AUTH}{HTTP\_URL\_STRIP\_AUTH}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+A\+U\+TH 12}
+
+strip any authentication information \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a82af830f9e647ef05b75dbd1a5b91070}\label{http_8php_a82af830f9e647ef05b75dbd1a5b91070}} 
+\index{http.php@{http.php}!HTTP\_URL\_STRIP\_FRAGMENT@{HTTP\_URL\_STRIP\_FRAGMENT}}
+\index{HTTP\_URL\_STRIP\_FRAGMENT@{HTTP\_URL\_STRIP\_FRAGMENT}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_URL\_STRIP\_FRAGMENT}{HTTP\_URL\_STRIP\_FRAGMENT}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+F\+R\+A\+G\+M\+E\+NT 256}
+
+strip any fragments (\#identifier) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_aaf8c84746c2523ea54ad2839c7be4f6c}\label{http_8php_aaf8c84746c2523ea54ad2839c7be4f6c}} 
+\index{http.php@{http.php}!HTTP\_URL\_STRIP\_PASS@{HTTP\_URL\_STRIP\_PASS}}
+\index{HTTP\_URL\_STRIP\_PASS@{HTTP\_URL\_STRIP\_PASS}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_URL\_STRIP\_PASS}{HTTP\_URL\_STRIP\_PASS}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+P\+A\+SS 8}
+
+strip any password authentication information \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a4db2b603b61c67e8aacd0be973d5dd2f}\label{http_8php_a4db2b603b61c67e8aacd0be973d5dd2f}} 
+\index{http.php@{http.php}!HTTP\_URL\_STRIP\_PATH@{HTTP\_URL\_STRIP\_PATH}}
+\index{HTTP\_URL\_STRIP\_PATH@{HTTP\_URL\_STRIP\_PATH}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_URL\_STRIP\_PATH}{HTTP\_URL\_STRIP\_PATH}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+P\+A\+TH 64}
+
+strip complete path \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a16c3a6b41be14f5577f262684a511c60}\label{http_8php_a16c3a6b41be14f5577f262684a511c60}} 
+\index{http.php@{http.php}!HTTP\_URL\_STRIP\_PORT@{HTTP\_URL\_STRIP\_PORT}}
+\index{HTTP\_URL\_STRIP\_PORT@{HTTP\_URL\_STRIP\_PORT}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_URL\_STRIP\_PORT}{HTTP\_URL\_STRIP\_PORT}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+P\+O\+RT 32}
+
+strip explicit port numbers \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a0fdc2bf7e3f44c047e88fb447e144207}\label{http_8php_a0fdc2bf7e3f44c047e88fb447e144207}} 
+\index{http.php@{http.php}!HTTP\_URL\_STRIP\_QUERY@{HTTP\_URL\_STRIP\_QUERY}}
+\index{HTTP\_URL\_STRIP\_QUERY@{HTTP\_URL\_STRIP\_QUERY}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_URL\_STRIP\_QUERY}{HTTP\_URL\_STRIP\_QUERY}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+Q\+U\+E\+RY 128}
+
+strip query string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a8fe1b1673df3da17505b31591a43b8a8}\label{http_8php_a8fe1b1673df3da17505b31591a43b8a8}} 
+\index{http.php@{http.php}!HTTP\_URL\_STRIP\_USER@{HTTP\_URL\_STRIP\_USER}}
+\index{HTTP\_URL\_STRIP\_USER@{HTTP\_URL\_STRIP\_USER}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_URL\_STRIP\_USER}{HTTP\_URL\_STRIP\_USER}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+U\+R\+L\+\_\+\+S\+T\+R\+I\+P\+\_\+\+U\+S\+ER 4}
+
+strip any user authentication information \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_ad6320041300cfdefbd299f55014ecd63}\label{http_8php_ad6320041300cfdefbd299f55014ecd63}} 
+\index{http.php@{http.php}!HTTP\_VERSION\_1\_0@{HTTP\_VERSION\_1\_0}}
+\index{HTTP\_VERSION\_1\_0@{HTTP\_VERSION\_1\_0}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_VERSION\_1\_0}{HTTP\_VERSION\_1\_0}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+0 1}
+
+H\+T\+TP version 1.\+0 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a10b361efdef01d7c9df1cb37993cc1d2}\label{http_8php_a10b361efdef01d7c9df1cb37993cc1d2}} 
+\index{http.php@{http.php}!HTTP\_VERSION\_1\_1@{HTTP\_VERSION\_1\_1}}
+\index{HTTP\_VERSION\_1\_1@{HTTP\_VERSION\_1\_1}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_VERSION\_1\_1}{HTTP\_VERSION\_1\_1}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+1\+\_\+1 2}
+
+H\+T\+TP version 1.\+1 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_ad591f78fa327bb9edbb93ac2fcbaab58}\label{http_8php_ad591f78fa327bb9edbb93ac2fcbaab58}} 
+\index{http.php@{http.php}!HTTP\_VERSION\_ANY@{HTTP\_VERSION\_ANY}}
+\index{HTTP\_VERSION\_ANY@{HTTP\_VERSION\_ANY}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_VERSION\_ANY}{HTTP\_VERSION\_ANY}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+NY 0}
+
+no specific H\+T\+TP protocol version \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/http.\+constants.\+php}}\mbox{\Hypertarget{http_8php_a33b23db9f63415e6e2fc28534b68a357}\label{http_8php_a33b23db9f63415e6e2fc28534b68a357}} 
+\index{http.php@{http.php}!HTTP\_VERSION\_NONE@{HTTP\_VERSION\_NONE}}
+\index{HTTP\_VERSION\_NONE@{HTTP\_VERSION\_NONE}!http.php@{http.php}}
+\doxysubsubsection{\texorpdfstring{HTTP\_VERSION\_NONE}{HTTP\_VERSION\_NONE}}
+{\footnotesize\ttfamily const H\+T\+T\+P\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+O\+NE 0}
+

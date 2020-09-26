@@ -1,0 +1,226 @@
+.TH "vendor/jetbrains/phpstorm-stubs/ctype/ctype.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/ctype/ctype.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBctype_alnum\fP ($text)"
+.br
+.ti -1c
+.RI "\fBctype_alpha\fP ($text)"
+.br
+.ti -1c
+.RI "\fBctype_cntrl\fP ($text)"
+.br
+.ti -1c
+.RI "\fBctype_digit\fP ($text)"
+.br
+.ti -1c
+.RI "\fBctype_lower\fP ($text)"
+.br
+.ti -1c
+.RI "\fBctype_graph\fP ($text)"
+.br
+.ti -1c
+.RI "\fBctype_print\fP ($text)"
+.br
+.ti -1c
+.RI "\fBctype_punct\fP ($text)"
+.br
+.ti -1c
+.RI "\fBctype_space\fP ($text)"
+.br
+.ti -1c
+.RI "\fBctype_upper\fP ($text)"
+.br
+.ti -1c
+.RI "\fBctype_xdigit\fP ($text)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "ctype_alnum ( $text)"
+Check for alphanumeric character(s) \fBstring $text \fP The tested string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if every character in \fItext\fP is either a letter or a digit, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ctype_alpha ( $text)"
+Check for alphabetic character(s) \fBstring $text \fP The tested string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if every character in \fItext\fP is a letter from the current locale, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ctype_cntrl ( $text)"
+Check for control character(s) \fBstring $text \fP The tested string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if every character in \fItext\fP is a control character from the current locale, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ctype_digit ( $text)"
+Check for numeric character(s) \fBstring $text \fP The tested string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if every character in the string \fItext\fP is a decimal digit, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ctype_graph ( $text)"
+Check for any printable character(s) except space \fBstring $text \fP The tested string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if every character in \fItext\fP is printable and actually creates visible output (no white space), \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ctype_lower ( $text)"
+Check for lowercase character(s) \fBstring $text \fP The tested string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if every character in \fItext\fP is a lowercase letter in the current locale\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ctype_print ( $text)"
+Check for printable character(s) \fBstring $text \fP The tested string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if every character in \fItext\fP will actually create output (including blanks)\&. Returns \fBFALSE\fP if \fItext\fP contains control characters or characters that do not have any output or control function at all\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ctype_punct ( $text)"
+Check for any printable character which is not whitespace or an 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 alphanumeric character \fBstring $text \fP The tested string\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if every character in \fItext\fP is printable, but neither letter, digit or blank, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+
+.SS "ctype_space ( $text)"
+Check for whitespace character(s) \fBstring $text \fP The tested string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if every character in \fItext\fP creates some sort of white space, \fBFALSE\fP otherwise\&. Besides the blank character this also includes tab, vertical tab, line feed, carriage return and form feed characters\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ctype_upper ( $text)"
+Check for uppercase character(s) \fBstring $text \fP The tested string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if every character in \fItext\fP is an uppercase letter in the current locale\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ctype_xdigit ( $text)"
+Check for character(s) representing a hexadecimal digit \fBstring $text \fP The tested string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if every character in \fItext\fP is a hexadecimal 'digit', that is a decimal digit or a character from [A-Fa-f] , \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

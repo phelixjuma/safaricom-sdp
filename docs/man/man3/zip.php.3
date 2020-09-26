@@ -1,0 +1,190 @@
+.TH "vendor/jetbrains/phpstorm-stubs/zip/zip.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/zip/zip.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBZipArchive\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBzip_open\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBzip_close\fP ($zip)"
+.br
+.ti -1c
+.RI "\fBzip_read\fP ($zip)"
+.br
+.ti -1c
+.RI "\fBzip_entry_open\fP ($zip, $zip_entry, $mode=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBzip_entry_close\fP ($zip_entry)"
+.br
+.ti -1c
+.RI "\fBzip_entry_read\fP ($zip_entry, $length=1024)"
+.br
+.ti -1c
+.RI "\fBzip_entry_filesize\fP ($zip_entry)"
+.br
+.ti -1c
+.RI "\fBzip_entry_name\fP ($zip_entry)"
+.br
+.ti -1c
+.RI "\fBzip_entry_compressedsize\fP ($zip_entry)"
+.br
+.ti -1c
+.RI "\fBzip_entry_compressionmethod\fP ($zip_entry)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "zip_close ( $zip)"
+(PHP 4 >= 4\&.1\&.0, PHP 5 >= 5\&.2\&.0, PECL zip >= 1\&.0\&.0)
+.br
+ Close a ZIP file archive \fBresource $zip \fP \fBA\fP ZIP file previously opened with \fBzip_open\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void No value is returned\&. 
+.RE
+.PP
+
+.SS "zip_entry_close ( $zip_entry)"
+(PHP 4 >= 4\&.1\&.0, PHP 5 >= 5\&.2\&.0, PECL zip >= 1\&.0\&.0)
+.br
+ Close a directory entry \fBresource $zip_entry \fP \fBA\fP directory entry previously opened \fBzip_entry_open\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "zip_entry_compressedsize ( $zip_entry)"
+(PHP 4 >= 4\&.1\&.0, PHP 5 >= 5\&.2\&.0, PECL zip >= 1\&.0\&.0)
+.br
+ Retrieve the compressed size of a directory entry \fBresource $zip_entry \fP \fBA\fP directory entry returned by \fBzip_read\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The compressed size\&. 
+.RE
+.PP
+
+.SS "zip_entry_compressionmethod ( $zip_entry)"
+(PHP 4 >= 4\&.1\&.0, PHP 5 >= 5\&.2\&.0, PECL zip >= 1\&.0\&.0)
+.br
+ Retrieve the compression method of a directory entry \fBresource $zip_entry \fP \fBA\fP directory entry returned by \fBzip_read\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The compression method\&. 
+.RE
+.PP
+
+.SS "zip_entry_filesize ( $zip_entry)"
+(PHP 4 >= 4\&.1\&.0, PHP 5 >= 5\&.2\&.0, PECL zip >= 1\&.0\&.0)
+.br
+ Retrieve the actual file size of a directory entry \fBresource $zip_entry \fP \fBA\fP directory entry returned by \fBzip_read\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The size of the directory entry\&. 
+.RE
+.PP
+
+.SS "zip_entry_name ( $zip_entry)"
+(PHP 4 >= 4\&.1\&.0, PHP 5 >= 5\&.2\&.0, PECL zip >= 1\&.0\&.0)
+.br
+ Retrieve the name of a directory entry \fBresource $zip_entry \fP \fBA\fP directory entry returned by \fBzip_read\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The name of the directory entry\&. 
+.RE
+.PP
+
+.SS "zip_entry_open ( $zip,  $zip_entry,  $mode = \fC\fBnull\fP\fP)"
+(PHP 4 >= 4\&.1\&.0, PHP 5 >= 5\&.2\&.0, PECL zip >= 1\&.0\&.0)
+.br
+ Open a directory entry for reading \fBresource $zip \fP \fBA\fP valid resource handle returned by \fBzip_open\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$zip_entry\fP 
+.RE
+.PP
+\fBA\fP directory entry returned by \fBzip_read\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+Any of the modes specified in the documentation of \fBfopen\fP\&. 
+.PP
+Currently, \fImode\fP is ignored and is always 'rb'\&. This is due to the fact that zip support in PHP is read only access\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+Unlike \fBfopen\fP and other similar functions, the return value of \fBzip_entry_open\fP only indicates the result of the operation and is not needed for reading or closing the directory entry\&. 
+.SS "zip_entry_read ( $zip_entry,  $length = \fC1024\fP)"
+(PHP 4 >= 4\&.1\&.0, PHP 5 >= 5\&.2\&.0, PECL zip >= 1\&.0\&.0)
+.br
+ Read from an open directory entry \fBresource $zip_entry \fP \fBA\fP directory entry returned by \fBzip_read\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+The number of bytes to return\&. 
+.PP
+This should be the uncompressed length you wish to read\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the data read, empty string on end of a file, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "zip_open ( $filename)"
+(PHP 4 >= 4\&.1\&.0, PHP 5 >= 5\&.2\&.0, PECL zip >= 1\&.0\&.0)
+.br
+ Open a ZIP file archive \fBstring $filename \fP The file name of the ZIP archive to open\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource a resource handle for later use with \fBzip_read\fP and \fBzip_close\fP or returns the number of error if \fIfilename\fP does not exist or in case of other error\&. 
+.RE
+.PP
+
+.SS "zip_read ( $zip)"
+(PHP 4 >= 4\&.1\&.0, PHP 5 >= 5\&.2\&.0, PECL zip >= 1\&.0\&.0)
+.br
+ Read next entry in a ZIP file archive \fBresource $zip \fP \fBA\fP ZIP file previously opened with \fBzip_open\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource a directory entry resource for later use with the zip_entry_\&.\&.\&. functions, or \fBFALSE\fP if there are no more entries to read, or an error code if an error occurred\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

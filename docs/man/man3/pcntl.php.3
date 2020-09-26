@@ -1,0 +1,1246 @@
+.TH "vendor/jetbrains/phpstorm-stubs/pcntl/pcntl.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/pcntl/pcntl.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBpcntl_fork\fP ()"
+.br
+.ti -1c
+.RI "\fBpcntl_waitpid\fP ($pid, &$status, $options=0, array &$rusage)"
+.br
+.ti -1c
+.RI "\fBpcntl_wait\fP (&$status, $options=0, &$rusage)"
+.br
+.ti -1c
+.RI "\fBpcntl_signal\fP ($signo, $handler, $restart_syscalls=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBpcntl_signal_dispatch\fP ()"
+.br
+.ti -1c
+.RI "\fBpcntl_wifexited\fP ($status)"
+.br
+.ti -1c
+.RI "\fBpcntl_wifstopped\fP ($status)"
+.br
+.ti -1c
+.RI "\fBpcntl_wifsignaled\fP ($status)"
+.br
+.ti -1c
+.RI "\fBpcntl_wexitstatus\fP ($status)"
+.br
+.ti -1c
+.RI "\fBpcntl_wifcontinued\fP ( $status)"
+.br
+.ti -1c
+.RI "\fBpcntl_wtermsig\fP ($status)"
+.br
+.ti -1c
+.RI "\fBpcntl_wstopsig\fP ($status)"
+.br
+.ti -1c
+.RI "\fBpcntl_exec\fP ($path, array $args=\fBnull\fP, array $envs=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpcntl_alarm\fP ($seconds)"
+.br
+.ti -1c
+.RI "\fBpcntl_get_last_error\fP ()"
+.br
+.ti -1c
+.RI "\fBpcntl_errno\fP ()"
+.br
+.ti -1c
+.RI "\fBpcntl_strerror\fP ($errno)"
+.br
+.ti -1c
+.RI "\fBpcntl_getpriority\fP ($pid, $process_identifier=\fBPRIO_PROCESS\fP)"
+.br
+.ti -1c
+.RI "\fBpcntl_setpriority\fP ($priority, $pid, $process_identifier=\fBPRIO_PROCESS\fP)"
+.br
+.ti -1c
+.RI "\fBpcntl_sigprocmask\fP ($how, array $set, array &$oldset=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpcntl_sigwaitinfo\fP (array $set, array &$siginfo=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpcntl_sigtimedwait\fP (array $set, array &$siginfo=\fBnull\fP, $seconds=0, $nanoseconds=0)"
+.br
+.ti -1c
+.RI "\fBpcntl_async_signals\fP ($on=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpcntl_signal_get_handler\fP ($signo)"
+.br
+.ti -1c
+.RI "\fBpcntl_unshare\fP ($flags)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBWNOHANG\fP 1"
+.br
+.ti -1c
+.RI "const \fBWUNTRACED\fP 2"
+.br
+.ti -1c
+.RI "const \fBWCONTINUED\fP 8"
+.br
+.ti -1c
+.RI "const \fBSIG_IGN\fP 1"
+.br
+.ti -1c
+.RI "const \fBSIG_DFL\fP 0"
+.br
+.ti -1c
+.RI "const \fBSIG_ERR\fP \-1"
+.br
+.ti -1c
+.RI "const \fBSIGHUP\fP 1"
+.br
+.ti -1c
+.RI "const \fBSIGINT\fP 2"
+.br
+.ti -1c
+.RI "const \fBSIGQUIT\fP 3"
+.br
+.ti -1c
+.RI "const \fBSIGILL\fP 4"
+.br
+.ti -1c
+.RI "const \fBSIGTRAP\fP 5"
+.br
+.ti -1c
+.RI "const \fBSIGABRT\fP 6"
+.br
+.ti -1c
+.RI "const \fBSIGIOT\fP 6"
+.br
+.ti -1c
+.RI "const \fBSIGBUS\fP 7"
+.br
+.ti -1c
+.RI "const \fBSIGFPE\fP 8"
+.br
+.ti -1c
+.RI "const \fBSIGKILL\fP 9"
+.br
+.ti -1c
+.RI "const \fBSIGUSR1\fP 10"
+.br
+.ti -1c
+.RI "const \fBSIGSEGV\fP 11"
+.br
+.ti -1c
+.RI "const \fBSIGUSR2\fP 12"
+.br
+.ti -1c
+.RI "const \fBSIGPIPE\fP 13"
+.br
+.ti -1c
+.RI "const \fBSIGALRM\fP 14"
+.br
+.ti -1c
+.RI "const \fBSIGTERM\fP 15"
+.br
+.ti -1c
+.RI "const \fBSIGSTKFLT\fP 16"
+.br
+.ti -1c
+.RI "const \fBSIGCLD\fP 17"
+.br
+.ti -1c
+.RI "const \fBSIGCHLD\fP 17"
+.br
+.ti -1c
+.RI "const \fBSIGCONT\fP 18"
+.br
+.ti -1c
+.RI "const \fBSIGSTOP\fP 19"
+.br
+.ti -1c
+.RI "const \fBSIGTSTP\fP 20"
+.br
+.ti -1c
+.RI "const \fBSIGTTIN\fP 21"
+.br
+.ti -1c
+.RI "const \fBSIGTTOU\fP 22"
+.br
+.ti -1c
+.RI "const \fBSIGURG\fP 23"
+.br
+.ti -1c
+.RI "const \fBSIGXCPU\fP 24"
+.br
+.ti -1c
+.RI "const \fBSIGXFSZ\fP 25"
+.br
+.ti -1c
+.RI "const \fBSIGVTALRM\fP 26"
+.br
+.ti -1c
+.RI "const \fBSIGPROF\fP 27"
+.br
+.ti -1c
+.RI "const \fBSIGWINCH\fP 28"
+.br
+.ti -1c
+.RI "const \fBSIGPOLL\fP 29"
+.br
+.ti -1c
+.RI "const \fBSIGIO\fP 29"
+.br
+.ti -1c
+.RI "const \fBSIGPWR\fP 30"
+.br
+.ti -1c
+.RI "const \fBSIGSYS\fP 31"
+.br
+.ti -1c
+.RI "const \fBSIGBABY\fP 31"
+.br
+.ti -1c
+.RI "const \fBPRIO_PGRP\fP 1"
+.br
+.ti -1c
+.RI "const \fBPRIO_USER\fP 2"
+.br
+.ti -1c
+.RI "const \fBPRIO_PROCESS\fP 0"
+.br
+.ti -1c
+.RI "const \fBSIG_BLOCK\fP 0"
+.br
+.ti -1c
+.RI "const \fBSIG_UNBLOCK\fP 1"
+.br
+.ti -1c
+.RI "const \fBSIG_SETMASK\fP 2"
+.br
+.ti -1c
+.RI "const \fBSIGRTMIN\fP 34"
+.br
+.ti -1c
+.RI "const \fBSIGRTMAX\fP 64"
+.br
+.ti -1c
+.RI "const \fBSI_USER\fP 0"
+.br
+.ti -1c
+.RI "const \fBSI_KERNEL\fP 128"
+.br
+.ti -1c
+.RI "const \fBSI_QUEUE\fP \-1"
+.br
+.ti -1c
+.RI "const \fBSI_TIMER\fP \-2"
+.br
+.ti -1c
+.RI "const \fBSI_MESGQ\fP \-3"
+.br
+.ti -1c
+.RI "const \fBSI_ASYNCIO\fP \-4"
+.br
+.ti -1c
+.RI "const \fBSI_SIGIO\fP \-5"
+.br
+.ti -1c
+.RI "const \fBSI_TKILL\fP \-6"
+.br
+.ti -1c
+.RI "const \fBCLD_EXITED\fP 1"
+.br
+.ti -1c
+.RI "const \fBCLD_KILLED\fP 2"
+.br
+.ti -1c
+.RI "const \fBCLD_DUMPED\fP 3"
+.br
+.ti -1c
+.RI "const \fBCLD_TRAPPED\fP 4"
+.br
+.ti -1c
+.RI "const \fBCLD_STOPPED\fP 5"
+.br
+.ti -1c
+.RI "const \fBCLD_CONTINUED\fP 6"
+.br
+.ti -1c
+.RI "const \fBTRAP_BRKPT\fP 1"
+.br
+.ti -1c
+.RI "const \fBTRAP_TRACE\fP 2"
+.br
+.ti -1c
+.RI "const \fBPOLL_IN\fP 1"
+.br
+.ti -1c
+.RI "const \fBPOLL_OUT\fP 2"
+.br
+.ti -1c
+.RI "const \fBPOLL_MSG\fP 3"
+.br
+.ti -1c
+.RI "const \fBPOLL_ERR\fP 4"
+.br
+.ti -1c
+.RI "const \fBPOLL_PRI\fP 5"
+.br
+.ti -1c
+.RI "const \fBPOLL_HUP\fP 6"
+.br
+.ti -1c
+.RI "const \fBILL_ILLOPC\fP 1"
+.br
+.ti -1c
+.RI "const \fBILL_ILLOPN\fP 2"
+.br
+.ti -1c
+.RI "const \fBILL_ILLADR\fP 3"
+.br
+.ti -1c
+.RI "const \fBILL_ILLTRP\fP 4"
+.br
+.ti -1c
+.RI "const \fBILL_PRVOPC\fP 5"
+.br
+.ti -1c
+.RI "const \fBILL_PRVREG\fP 6"
+.br
+.ti -1c
+.RI "const \fBILL_COPROC\fP 7"
+.br
+.ti -1c
+.RI "const \fBILL_BADSTK\fP 8"
+.br
+.ti -1c
+.RI "const \fBFPE_INTDIV\fP 1"
+.br
+.ti -1c
+.RI "const \fBFPE_INTOVF\fP 2"
+.br
+.ti -1c
+.RI "const \fBFPE_FLTDIV\fP 3"
+.br
+.ti -1c
+.RI "const \fBFPE_FLTOVF\fP 4"
+.br
+.ti -1c
+.RI "const \fBFPE_FLTUND\fP 7"
+.br
+.ti -1c
+.RI "const \fBFPE_FLTRES\fP 6"
+.br
+.ti -1c
+.RI "const \fBFPE_FLTINV\fP 7"
+.br
+.ti -1c
+.RI "const \fBFPE_FLTSUB\fP 8"
+.br
+.ti -1c
+.RI "const \fBSEGV_MAPERR\fP 1"
+.br
+.ti -1c
+.RI "const \fBSEGV_ACCERR\fP 2"
+.br
+.ti -1c
+.RI "const \fBBUS_ADRALN\fP 1"
+.br
+.ti -1c
+.RI "const \fBBUS_ADRERR\fP 2"
+.br
+.ti -1c
+.RI "const \fBBUS_OBJERR\fP 3"
+.br
+.ti -1c
+.RI "const \fBPCNTL_EINTR\fP 4"
+.br
+.ti -1c
+.RI "const \fBPCNTL_ECHILD\fP 10"
+.br
+.ti -1c
+.RI "const \fBPCNTL_EINVAL\fP 22"
+.br
+.ti -1c
+.RI "const \fBPCNTL_EAGAIN\fP 11"
+.br
+.ti -1c
+.RI "const \fBPCNTL_ESRCH\fP 3"
+.br
+.ti -1c
+.RI "const \fBPCNTL_EACCES\fP 13"
+.br
+.ti -1c
+.RI "const \fBPCNTL_EPERM\fP 1"
+.br
+.ti -1c
+.RI "const \fBPCNTL_ENOMEM\fP 12"
+.br
+.ti -1c
+.RI "const \fBPCNTL_E2BIG\fP 7"
+.br
+.ti -1c
+.RI "const \fBPCNTL_EFAULT\fP 14"
+.br
+.ti -1c
+.RI "const \fBPCNTL_EIO\fP 5"
+.br
+.ti -1c
+.RI "const \fBPCNTL_EISDIR\fP 21"
+.br
+.ti -1c
+.RI "const \fBPCNTL_ELIBBAD\fP 80"
+.br
+.ti -1c
+.RI "const \fBPCNTL_ELOOP\fP 40"
+.br
+.ti -1c
+.RI "const \fBPCNTL_EMFILE\fP 24"
+.br
+.ti -1c
+.RI "const \fBPCNTL_ENAMETOOLONG\fP 36"
+.br
+.ti -1c
+.RI "const \fBPCNTL_ENFILE\fP 23"
+.br
+.ti -1c
+.RI "const \fBPCNTL_ENOENT\fP 2"
+.br
+.ti -1c
+.RI "const \fBPCNTL_ENOEXEC\fP 8"
+.br
+.ti -1c
+.RI "const \fBPCNTL_ENOTDIR\fP 20"
+.br
+.ti -1c
+.RI "const \fBPCNTL_ETXTBSY\fP 26"
+.br
+.ti -1c
+.RI "const \fBPCNTL_ENOSPC\fP 28"
+.br
+.ti -1c
+.RI "const \fBPCNTL_EUSERS\fP 87"
+.br
+.ti -1c
+.RI "const \fBCLONE_NEWNS\fP 131072"
+.br
+.ti -1c
+.RI "const \fBCLONE_NEWIPC\fP 134217728"
+.br
+.ti -1c
+.RI "const \fBCLONE_NEWUTS\fP 67108864"
+.br
+.ti -1c
+.RI "const \fBCLONE_NEWNET\fP 1073741824"
+.br
+.ti -1c
+.RI "const \fBCLONE_NEWPID\fP 536870912"
+.br
+.ti -1c
+.RI "const \fBCLONE_NEWUSER\fP 268435456"
+.br
+.ti -1c
+.RI "const \fBCLONE_NEWCGROUP\fP 33554432"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "pcntl_alarm ( $seconds)"
+Set an alarm clock for delivery of a signal \fBint $seconds \fP The number of seconds to wait\&. If \fIseconds\fP is zero, no new alarm is created\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the time in seconds that any previously scheduled alarm had remaining before it was to be delivered, or 0 if there was no previously scheduled alarm\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pcntl_async_signals ( $on = \fC\fBnull\fP\fP)"
+Enable/disable asynchronous signal handling or return the old setting\&.
+.br
+ If the \fBon\fP parameter is omitted, it returns whether asynchronous signal handling is enabled\&. \fBbool $on [optional] \fP Whether asynchronous signal handling should be enabled\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.1 
+.RE
+.PP
+
+.SS "pcntl_errno ()"
+Alias of \fBpcntl_strerror\fP \fB5\&.3\&.4 \fP
+.SS "pcntl_exec ( $path, array $args = \fC\fBnull\fP\fP, array $envs = \fC\fBnull\fP\fP)"
+Executes specified program in current process space \fBstring $path \fP \fIpath\fP must be the path to a binary executable or a script with a valid path pointing to an executable in the shebang ( #!/usr/local/bin/perl for example) as the first line\&. See your system's man execve(2) page for additional information\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$args\fP [optional] 
+.RE
+.PP
+\fIargs\fP is an array of argument strings passed to the program\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$envs\fP [optional] 
+.RE
+.PP
+\fIenvs\fP is an array of strings which are passed as environment to the program\&. The array is in the format of name => value, the key being the name of the environmental variable and the value being the value of that variable\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void \fBFALSE\fP on error and does not return on success\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pcntl_fork ()"
+Forks the currently running process \fBint On success, the PID of the child process is returned in the parent's thread of execution, and a 0 is returned in the child's thread of execution\&. On failure, a -1 will be returned in the parent's context, no child process will be created, and a PHP error is raised\&.  4\&.1  5\&.0 \fP
+.SS "pcntl_get_last_error ()"
+Retrieve the error number set by the last pcntl function which failed \fBint error code\&.  5\&.3\&.4 \fP
+.SS "pcntl_getpriority ( $pid,  $process_identifier = \fC\fBPRIO_PROCESS\fP\fP)"
+Get the priority of any process \fBint $pid [optional] \fP If not specified, the pid of the current process (\fBgetmypid()\fP) is used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$process_identifier\fP [optional] 
+.RE
+.PP
+One of \fBPRIO_PGRP\fP, \fBPRIO_USER\fP or \fBPRIO_PROCESS\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int \fBpcntl_getpriority\fP returns the priority of the process or \fBFALSE\fP on error\&. \fBA\fP lower numerical value causes more favorable scheduling\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "pcntl_setpriority ( $priority,  $pid,  $process_identifier = \fC\fBPRIO_PROCESS\fP\fP)"
+Change the priority of any process \fBint $priority \fP \fIpriority\fP is generally a value in the range -20 to 20\&. The default priority is 0 while a lower numerical value causes more favorable scheduling\&. Because priority levels can differ between system types and kernel versions, please see your system's setpriority(2) man page for specific details\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pid\fP [optional] 
+.RE
+.PP
+If not specified, the pid of the current process (\fBgetmypid()\fP) is used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$process_identifier\fP [optional] 
+.RE
+.PP
+One of \fBPRIO_PGRP\fP, \fBPRIO_USER\fP or \fBPRIO_PROCESS\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "pcntl_signal ( $signo,  $handler,  $restart_syscalls = \fC\fBtrue\fP\fP)"
+Installs a signal handler \fBint $signo \fP The signal number\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handler\fP 
+.RE
+.PP
+The signal handler\&. This may be either a callable, which will be invoked to handle the signal, or either of the two global constants \fBSIG_IGN\fP or \fBSIG_DFL\fP, which will ignore the signal or restore the default signal handler respectively\&. 
+.PP
+If a callable is given, it must implement the following signature: 
+.PP
+void\fBhandler\fP \fBint\fIsigno\fP\fP \fIsigno\fP The signal being handled\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$restart_syscalls\fP [optional] 
+.RE
+.PP
+Specifies whether system call restarting should be used when this signal arrives\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pcntl_signal_dispatch ()"
+Calls signal handlers for pending signals \fBbool \fBTRUE\fP on success or \fBFALSE\fP on failure\&.  5\&.3 \fP
+.SS "pcntl_signal_get_handler ( $signo)"
+Get the current handler for specified signal\&. \fBint $signo \fP The signal number\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.1 
+.RE
+.PP
+
+.SS "pcntl_sigprocmask ( $how, array $set, array & $oldset = \fC\fBnull\fP\fP)"
+Sets and retrieves blocked signals \fBint $how \fP Sets the behavior of \fBpcntl_sigprocmask\fP\&. Possible values: \fBSIG_BLOCK\fP: Add the signals to the currently blocked signals\&. \fBSIG_UNBLOCK\fP: Remove the signals from the currently blocked signals\&. \fBSIG_SETMASK\fP: Replace the currently blocked signals by the given list of signals\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$set\fP 
+.RE
+.PP
+List of signals\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$oldset\fP [optional] 
+.RE
+.PP
+The \fIoldset\fP parameter is set to an array containing the list of the previously blocked signals\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "pcntl_sigtimedwait (array $set, array & $siginfo = \fC\fBnull\fP\fP,  $seconds = \fC0\fP,  $nanoseconds = \fC0\fP)"
+Waits for signals, with a timeout \fBarray $set \fP Array of signals to wait for\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$siginfo\fP [optional] 
+.RE
+.PP
+The \fIsiginfo\fP is set to an array containing informations about the signal\&. See \fBpcntl_sigwaitinfo\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$seconds\fP [optional] 
+.RE
+.PP
+Timeout in seconds\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$nanoseconds\fP [optional] 
+.RE
+.PP
+Timeout in nanoseconds\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int On success, \fBpcntl_sigtimedwait\fP returns a signal number\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "pcntl_sigwaitinfo (array $set, array & $siginfo = \fC\fBnull\fP\fP)"
+Waits for signals \fBarray $set \fP Array of signals to wait for\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$siginfo\fP [optional] 
+.RE
+.PP
+The \fIsiginfo\fP parameter is set to an array containing informations about the signal\&. 
+.PP
+The following elements are set for all signals: signo: Signal number errno: An error number code: Signal code 
+.PP
+The following elements may be set for the \fBSIGCHLD\fP signal: status: Exit value or signal utime: User time consumed stime: System time consumed pid: Sending process ID uid: Real user ID of sending process 
+.PP
+The following elements may be set for the \fBSIGILL\fP, \fBSIGFPE\fP, \fBSIGSEGV\fP and \fBSIGBUS\fP signals: addr: Memory location which caused fault 
+.PP
+The following element may be set for the \fBSIGPOLL\fP signal: band: Band event fd: File descriptor number 
+.PP
+\fBReturns\fP
+.RS 4
+int On success, \fBpcntl_sigwaitinfo\fP returns a signal number\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "pcntl_strerror ( $errno)"
+Retrieve the system error message associated with the given errno \fBint $errno \fP 
+.PP
+\fBReturns\fP
+.RS 4
+string|false error description on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3\&.4 
+.RE
+.PP
+
+.SS "pcntl_unshare ( $flags)"
+@sine 7\&.4 
+.SS "pcntl_wait (& $status,  $options = \fC0\fP, & $rusage)"
+Waits on or returns the status of a forked child \fBint $status \fP \fBpcntl_wait\fP will store status information in the \fIstatus\fP parameter which can be evaluated using the following functions: \fBpcntl_wifexited\fP, \fBpcntl_wifstopped\fP, \fBpcntl_wifsignaled\fP, \fBpcntl_wexitstatus\fP, \fBpcntl_wtermsig\fP and \fBpcntl_wstopsig\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+If wait3 is available on your system (mostly BSD-style systems), you can provide the optional \fIoptions\fP parameter\&. If this parameter is not provided, wait will be used for the system call\&. If wait3 is not available, providing a value for \fIoptions \fP will have no effect\&. The value of \fIoptions \fP is the value of zero or more of the following two constants OR'ed together: values for \fIoptions\fP 
+.PP
+WNOHANG 
+.PP
+Return immediately if no child has exited\&.   
+.PP
+WUNTRACED 
+.PP
+Return for children which are stopped, and whose status has not been reported\&.   
+.PP
+\fBParameters\fP
+.RS 4
+\fI&$rusage\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int \fBpcntl_wait\fP returns the process ID of the child which exited, -1 on error or zero if WNOHANG was provided as an option (on wait3-available systems) and no child was available\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "pcntl_waitpid ( $pid, & $status,  $options = \fC0\fP, array & $rusage)"
+Waits on or returns the status of a forked child \fBint $pid \fP The value of \fIpid\fP can be one of the following: values for \fIpid\fP 
+.PP
+< -1 
+.PP
+wait for any child process whose process group ID is equal to the absolute value of \fIpid\fP\&.   
+.PP
+-1 
+.PP
+wait for any child process; this is the same behaviour that the wait function exhibits\&.   
+.PP
+0 
+.PP
+wait for any child process whose process group ID is equal to that of the calling process\&.   
+.PP
+> 0 
+.PP
+wait for the child whose process ID is equal to the value of \fIpid\fP\&.   
+.PP
+Specifying -1 as the \fIpid\fP is equivalent to the functionality \fBpcntl_wait\fP provides (minus \fIoptions\fP)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$status\fP 
+.RE
+.PP
+\fBpcntl_waitpid\fP will store status information in the \fIstatus\fP parameter which can be evaluated using the following functions: \fBpcntl_wifexited\fP, \fBpcntl_wifstopped\fP, \fBpcntl_wifsignaled\fP, \fBpcntl_wexitstatus\fP, \fBpcntl_wtermsig\fP and \fBpcntl_wstopsig\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+The value of \fIoptions\fP is the value of zero or more of the following two global constants OR'ed together: values for \fIoptions\fP 
+.PP
+WNOHANG 
+.PP
+return immediately if no child has exited\&.   
+.PP
+WUNTRACED 
+.PP
+return for children which are stopped, and whose status has not been reported\&.   
+.PP
+\fBParameters\fP
+.RS 4
+\fI&$rusage\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int \fBpcntl_waitpid\fP returns the process ID of the child which exited, -1 on error or zero if \fBWNOHANG\fP was used and no child was available 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pcntl_wexitstatus ( $status)"
+Returns the return code of a terminated child \fBint $status The \fIstatus\fP parameter is the status parameter supplied to a successful call to \fBpcntl_waitpid\fP\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+int the return code, as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pcntl_wifcontinued ( $status)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$status\fP 
+.RE
+.PP
+
+.SS "pcntl_wifexited ( $status)"
+Checks if status code represents a normal exit \fBint $status The \fIstatus\fP parameter is the status parameter supplied to a successful call to \fBpcntl_waitpid\fP\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if the child status code represents a normal exit, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pcntl_wifsignaled ( $status)"
+Checks whether the status code represents a termination due to a signal \fBint $status The \fIstatus\fP parameter is the status parameter supplied to a successful call to \fBpcntl_waitpid\fP\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if the child process exited because of a signal which was not caught, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pcntl_wifstopped ( $status)"
+Checks whether the child process is currently stopped \fBint $status The \fIstatus\fP parameter is the status parameter supplied to a successful call to \fBpcntl_waitpid\fP\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if the child process which caused the return is currently stopped, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pcntl_wstopsig ( $status)"
+Returns the signal which caused the child to stop \fBint $status The \fIstatus\fP parameter is the status parameter supplied to a successful call to \fBpcntl_waitpid\fP\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+int the signal number\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pcntl_wtermsig ( $status)"
+Returns the signal which caused the child to terminate \fBint $status The \fIstatus\fP parameter is the status parameter supplied to a successful call to \fBpcntl_waitpid\fP\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+int the signal number, as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const BUS_ADRALN 1"
+\fB5\&.3 \fP
+.SS "const BUS_ADRERR 2"
+\fB5\&.3 \fP
+.SS "const BUS_OBJERR 3"
+\fB5\&.3 \fP
+.SS "const CLD_CONTINUED 6"
+\fB5\&.3 \fP
+.SS "const CLD_DUMPED 3"
+\fB5\&.3 \fP
+.SS "const CLD_EXITED 1"
+\fB5\&.3 \fP
+.SS "const CLD_KILLED 2"
+\fB5\&.3 \fP
+.SS "const CLD_STOPPED 5"
+\fB5\&.3 \fP
+.SS "const CLD_TRAPPED 4"
+\fB5\&.3 \fP
+.SS "const CLONE_NEWCGROUP 33554432"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "const CLONE_NEWIPC 134217728"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "const CLONE_NEWNET 1073741824"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "const CLONE_NEWNS 131072"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "const CLONE_NEWPID 536870912"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "const CLONE_NEWUSER 268435456"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "const CLONE_NEWUTS 67108864"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "const FPE_FLTDIV 3"
+\fB5\&.3 \fP
+.SS "const FPE_FLTINV 7"
+\fB5\&.3 \fP
+.SS "const FPE_FLTOVF 4"
+\fB5\&.3 \fP
+.SS "const FPE_FLTRES 6"
+\fB5\&.3 \fP
+.SS "const FPE_FLTSUB 8"
+\fB5\&.3 \fP
+.SS "const FPE_FLTUND 7"
+\fB5\&.3 \fP
+.SS "const FPE_INTDIV 1"
+\fB5\&.3 \fP
+.SS "const FPE_INTOVF 2"
+\fB5\&.3 \fP
+.SS "const ILL_BADSTK 8"
+\fB5\&.3 \fP
+.SS "const ILL_COPROC 7"
+\fB5\&.3 \fP
+.SS "const ILL_ILLADR 3"
+\fB5\&.3 \fP
+.SS "const ILL_ILLOPC 1"
+\fB5\&.3 \fP
+.SS "const ILL_ILLOPN 2"
+\fB5\&.3 \fP
+.SS "const ILL_ILLTRP 4"
+\fB5\&.3 \fP
+.SS "const ILL_PRVOPC 5"
+\fB5\&.3 \fP
+.SS "const ILL_PRVREG 6"
+\fB5\&.3 \fP
+.SS "const PCNTL_E2BIG 7"
+
+.SS "const PCNTL_EACCES 13"
+
+.SS "const PCNTL_EAGAIN 11"
+
+.SS "const PCNTL_ECHILD 10"
+
+.SS "const PCNTL_EFAULT 14"
+
+.SS "const PCNTL_EINTR 4"
+
+.SS "const PCNTL_EINVAL 22"
+
+.SS "const PCNTL_EIO 5"
+
+.SS "const PCNTL_EISDIR 21"
+
+.SS "const PCNTL_ELIBBAD 80"
+
+.SS "const PCNTL_ELOOP 40"
+
+.SS "const PCNTL_EMFILE 24"
+
+.SS "const PCNTL_ENAMETOOLONG 36"
+
+.SS "const PCNTL_ENFILE 23"
+
+.SS "const PCNTL_ENOENT 2"
+
+.SS "const PCNTL_ENOEXEC 8"
+
+.SS "const PCNTL_ENOMEM 12"
+
+.SS "const PCNTL_ENOSPC 28"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "const PCNTL_ENOTDIR 20"
+
+.SS "const PCNTL_EPERM 1"
+
+.SS "const PCNTL_ESRCH 3"
+
+.SS "const PCNTL_ETXTBSY 26"
+
+.SS "const PCNTL_EUSERS 87"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "const POLL_ERR 4"
+\fB5\&.3 \fP
+.SS "const POLL_HUP 6"
+\fB5\&.3 \fP
+.SS "const POLL_IN 1"
+\fB5\&.3 \fP
+.SS "const POLL_MSG 3"
+\fB5\&.3 \fP
+.SS "const POLL_OUT 2"
+\fB5\&.3 \fP
+.SS "const POLL_PRI 5"
+\fB5\&.3 \fP
+.SS "const PRIO_PGRP 1"
+
+.SS "const PRIO_PROCESS 0"
+
+.SS "const PRIO_USER 2"
+
+.SS "const SEGV_ACCERR 2"
+\fB5\&.3 \fP
+.SS "const SEGV_MAPERR 1"
+\fB5\&.3 \fP
+.SS "const SI_ASYNCIO \-4"
+\fB5\&.3 \fP
+.SS "const SI_KERNEL 128"
+\fB5\&.3 \fP
+.SS "const SI_MESGQ \-3"
+
+.SS "const SI_QUEUE \-1"
+\fB5\&.3 \fP
+.SS "const SI_SIGIO \-5"
+\fB5\&.3 \fP
+.SS "const SI_TIMER \-2"
+\fB5\&.3 \fP
+.SS "const SI_TKILL \-6"
+\fB5\&.3 \fP
+.SS "const SI_USER 0"
+\fB5\&.3 \fP
+.SS "const SIG_BLOCK 0"
+\fB5\&.3 \fP
+.SS "const SIG_DFL 0"
+
+.SS "const SIG_ERR \-1"
+
+.SS "const SIG_IGN 1"
+
+.SS "const SIG_SETMASK 2"
+\fB5\&.3 \fP
+.SS "const SIG_UNBLOCK 1"
+\fB5\&.3 \fP
+.SS "const SIGABRT 6"
+
+.SS "const SIGALRM 14"
+
+.SS "const SIGBABY 31"
+
+.SS "const SIGBUS 7"
+
+.SS "const SIGCHLD 17"
+
+.SS "const SIGCLD 17"
+
+.SS "const SIGCONT 18"
+
+.SS "const SIGFPE 8"
+
+.SS "const SIGHUP 1"
+
+.SS "const SIGILL 4"
+
+.SS "const SIGINT 2"
+
+.SS "const SIGIO 29"
+
+.SS "const SIGIOT 6"
+
+.SS "const SIGKILL 9"
+
+.SS "const SIGPIPE 13"
+
+.SS "const SIGPOLL 29"
+
+.SS "const SIGPROF 27"
+
+.SS "const SIGPWR 30"
+
+.SS "const SIGQUIT 3"
+
+.SS "const SIGRTMAX 64"
+\fB5\&.3 \fP
+.SS "const SIGRTMIN 34"
+\fB5\&.3 \fP
+.SS "const SIGSEGV 11"
+
+.SS "const SIGSTKFLT 16"
+
+.SS "const SIGSTOP 19"
+
+.SS "const SIGSYS 31"
+
+.SS "const SIGTERM 15"
+
+.SS "const SIGTRAP 5"
+
+.SS "const SIGTSTP 20"
+
+.SS "const SIGTTIN 21"
+
+.SS "const SIGTTOU 22"
+
+.SS "const SIGURG 23"
+
+.SS "const SIGUSR1 10"
+
+.SS "const SIGUSR2 12"
+
+.SS "const SIGVTALRM 26"
+
+.SS "const SIGWINCH 28"
+
+.SS "const SIGXCPU 24"
+
+.SS "const SIGXFSZ 25"
+
+.SS "const TRAP_BRKPT 1"
+\fB5\&.3 \fP
+.SS "const TRAP_TRACE 2"
+\fB5\&.3 \fP
+.SS "const WCONTINUED 8"
+
+.SS "const WNOHANG 1"
+
+.SS "const WUNTRACED 2"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

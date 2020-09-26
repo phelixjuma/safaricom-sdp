@@ -1,0 +1,703 @@
+\hypertarget{soap_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/soap/soap.php File Reference}
+\label{soap_8php}\index{vendor/jetbrains/phpstorm-\/stubs/soap/soap.php@{vendor/jetbrains/phpstorm-\/stubs/soap/soap.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_soap_client}{Soap\+Client}}
+\item 
+class \mbox{\hyperlink{class_soap_var}{Soap\+Var}}
+\item 
+class \mbox{\hyperlink{class_soap_server}{Soap\+Server}}
+\item 
+class \mbox{\hyperlink{class_soap_fault}{Soap\+Fault}}
+\item 
+class \mbox{\hyperlink{class_soap_param}{Soap\+Param}}
+\item 
+class \mbox{\hyperlink{class_soap_header}{Soap\+Header}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{soap_8php_a7f8e87f2105e228fbb3c651ce6cee2ca}{use\+\_\+soap\+\_\+error\+\_\+handler}} (\$handler=\mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}})
+\item 
+\mbox{\hyperlink{soap_8php_a1ad5dc5b3381de31e795b622e039cd70}{is\+\_\+soap\+\_\+fault}} (\$object)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{soap_8php_afcd3b47d676f8dd47e2676db93db794e}{S\+O\+A\+P\+\_\+1\+\_\+1}} 1
+\item 
+const \mbox{\hyperlink{soap_8php_a871c7045403dd96d206b2987317ea7ea}{S\+O\+A\+P\+\_\+1\+\_\+2}} 2
+\item 
+const \mbox{\hyperlink{soap_8php_a61207066bf7465a34228857fb403dd14}{S\+O\+A\+P\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+S\+E\+S\+S\+I\+ON}} 1
+\item 
+const \mbox{\hyperlink{soap_8php_aa5fb44106e5b83cc8f2e8a4e47585048}{S\+O\+A\+P\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+R\+E\+Q\+U\+E\+ST}} 2
+\item 
+const \mbox{\hyperlink{soap_8php_a7caf8766921bac1f2b6d29625dce8944}{S\+O\+A\+P\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S\+\_\+\+A\+LL}} 999
+\item 
+const \mbox{\hyperlink{soap_8php_a00ab1222b877d98bed6ed85eba712b9c}{S\+O\+A\+P\+\_\+\+E\+N\+C\+O\+D\+ED}} 1
+\item 
+const \mbox{\hyperlink{soap_8php_ab4754f01af7c6706878392ff86babd3e}{S\+O\+A\+P\+\_\+\+L\+I\+T\+E\+R\+AL}} 2
+\item 
+const \mbox{\hyperlink{soap_8php_adbfdb910c35ab06fa5b10f15a8df3311}{S\+O\+A\+P\+\_\+\+R\+PC}} 1
+\item 
+const \mbox{\hyperlink{soap_8php_aae17c90f8365b4be84dc0fbddb6f7a87}{S\+O\+A\+P\+\_\+\+D\+O\+C\+U\+M\+E\+NT}} 2
+\item 
+const \mbox{\hyperlink{soap_8php_a1bcb3da47230c99a9269be405cd23fc8}{S\+O\+A\+P\+\_\+\+A\+C\+T\+O\+R\+\_\+\+N\+E\+XT}} 1
+\item 
+const \mbox{\hyperlink{soap_8php_a89e50b5b415cf7f3b7c4494cb06e77fe}{S\+O\+A\+P\+\_\+\+A\+C\+T\+O\+R\+\_\+\+N\+O\+NE}} 2
+\item 
+const \mbox{\hyperlink{soap_8php_a995993b71d56baf801f7d02ca919607e}{S\+O\+A\+P\+\_\+\+A\+C\+T\+O\+R\+\_\+\+U\+N\+L\+I\+M\+A\+T\+E\+R\+E\+C\+E\+I\+V\+ER}} 3
+\item 
+const \mbox{\hyperlink{soap_8php_aa8dac71506a3550d79507bf58cb6c62d}{S\+O\+A\+P\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+O\+N\+\_\+\+A\+C\+C\+E\+PT}} 32
+\item 
+const \mbox{\hyperlink{soap_8php_aea626b5293706f2efc20c76c8a5d8fde}{S\+O\+A\+P\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+O\+N\+\_\+\+G\+Z\+IP}} 0
+\item 
+const \mbox{\hyperlink{soap_8php_ab1fa7734988ffd516f1db9b8978e9823}{S\+O\+A\+P\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+O\+N\+\_\+\+D\+E\+F\+L\+A\+TE}} 16
+\item 
+const \mbox{\hyperlink{soap_8php_a99ddb0861fb981c5cf8c770ac025530b}{S\+O\+A\+P\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+B\+A\+S\+IC}} 0
+\item 
+const \mbox{\hyperlink{soap_8php_a741b8071413d830280d65eace58edd79}{S\+O\+A\+P\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+I\+G\+E\+ST}} 1
+\item 
+const \mbox{\hyperlink{soap_8php_a26f5b76a783cb64fc4d51ef83a63a38e}{U\+N\+K\+N\+O\+W\+N\+\_\+\+T\+Y\+PE}} 999998
+\item 
+const \mbox{\hyperlink{soap_8php_a5e0c7afcb07ba1d42c2f3e6e4eff84e6}{X\+S\+D\+\_\+\+S\+T\+R\+I\+NG}} 101
+\item 
+const \mbox{\hyperlink{soap_8php_afb67bffe76855c9902c999f8f730e515}{X\+S\+D\+\_\+\+B\+O\+O\+L\+E\+AN}} 102
+\item 
+const \mbox{\hyperlink{soap_8php_a8b5aa18c1aea083ebe8157b50f2e5755}{X\+S\+D\+\_\+\+D\+E\+C\+I\+M\+AL}} 103
+\item 
+const \mbox{\hyperlink{soap_8php_a120314794a2c9ec4bfb13bacca0e50d7}{X\+S\+D\+\_\+\+F\+L\+O\+AT}} 104
+\item 
+const \mbox{\hyperlink{soap_8php_acdd9ab55954cc60b733d73cf9b2d64ca}{X\+S\+D\+\_\+\+D\+O\+U\+B\+LE}} 105
+\item 
+const \mbox{\hyperlink{soap_8php_a974e2028d901e206c2daf9939334e1a3}{X\+S\+D\+\_\+\+D\+U\+R\+A\+T\+I\+ON}} 106
+\item 
+const \mbox{\hyperlink{soap_8php_aef5a6e512f904f9f07e9a9ba5ace6710}{X\+S\+D\+\_\+\+D\+A\+T\+E\+T\+I\+ME}} 107
+\item 
+const \mbox{\hyperlink{soap_8php_a62736e73a3b91bb3bc98dda73bf9b9aa}{X\+S\+D\+\_\+\+T\+I\+ME}} 108
+\item 
+const \mbox{\hyperlink{soap_8php_a892f5f48dff1bad29c39aafc9ff0116c}{X\+S\+D\+\_\+\+D\+A\+TE}} 109
+\item 
+const \mbox{\hyperlink{soap_8php_ac9cf9010be12fda28da248f823e86f6c}{X\+S\+D\+\_\+\+G\+Y\+E\+A\+R\+M\+O\+N\+TH}} 110
+\item 
+const \mbox{\hyperlink{soap_8php_aa06e844bbd49b69cffce1d1c024ec03d}{X\+S\+D\+\_\+\+G\+Y\+E\+AR}} 111
+\item 
+const \mbox{\hyperlink{soap_8php_a650705c4ce489fa73968c20d47d0be08}{X\+S\+D\+\_\+\+G\+M\+O\+N\+T\+H\+D\+AY}} 112
+\item 
+const \mbox{\hyperlink{soap_8php_afeb0e4383d7cce3a6dbfd6a1c6a735c3}{X\+S\+D\+\_\+\+G\+D\+AY}} 113
+\item 
+const \mbox{\hyperlink{soap_8php_ae8e793aef01faf6063f6ac4ab55b34f4}{X\+S\+D\+\_\+\+G\+M\+O\+N\+TH}} 114
+\item 
+const \mbox{\hyperlink{soap_8php_aab0972ae18e7cc8a9a61988300f48b07}{X\+S\+D\+\_\+\+H\+E\+X\+B\+I\+N\+A\+RY}} 115
+\item 
+const \mbox{\hyperlink{soap_8php_ae1840f3e9b14811bfda809b6be065906}{X\+S\+D\+\_\+\+B\+A\+S\+E64\+B\+I\+N\+A\+RY}} 116
+\item 
+const \mbox{\hyperlink{soap_8php_af717089d86f28c51cc65fb85e01278c5}{X\+S\+D\+\_\+\+A\+N\+Y\+U\+RI}} 117
+\item 
+const \mbox{\hyperlink{soap_8php_a3a6f183639bf85264f0714e3bbf45617}{X\+S\+D\+\_\+\+Q\+N\+A\+ME}} 118
+\item 
+const \mbox{\hyperlink{soap_8php_aac79ef139d2e244476f06033acdaeb50}{X\+S\+D\+\_\+\+N\+O\+T\+A\+T\+I\+ON}} 119
+\item 
+const \mbox{\hyperlink{soap_8php_a3386b59eec71ffd07e003c9113e7cf56}{X\+S\+D\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E\+D\+S\+T\+R\+I\+NG}} 120
+\item 
+const \mbox{\hyperlink{soap_8php_a1d192fd215f5d83c782e3a8625deeb0f}{X\+S\+D\+\_\+\+T\+O\+K\+EN}} 121
+\item 
+const \mbox{\hyperlink{soap_8php_a0e78ebb2e5863b2184e35154fc340715}{X\+S\+D\+\_\+\+L\+A\+N\+G\+U\+A\+GE}} 122
+\item 
+const \mbox{\hyperlink{soap_8php_ae95dd368afb35fbe4c411da7c43d941d}{X\+S\+D\+\_\+\+N\+M\+T\+O\+K\+EN}} 123
+\item 
+const \mbox{\hyperlink{soap_8php_a38edef7d9fe9ac53dca20bb041745aa5}{X\+S\+D\+\_\+\+N\+A\+ME}} 124
+\item 
+const \mbox{\hyperlink{soap_8php_a8932c7a1fe43cd07808b9e17c1c41a52}{X\+S\+D\+\_\+\+N\+C\+N\+A\+ME}} 125
+\item 
+const \mbox{\hyperlink{soap_8php_a1da1c6d375bb2b748d3dbeb588a078ae}{X\+S\+D\+\_\+\+ID}} 126
+\item 
+const \mbox{\hyperlink{soap_8php_abee98b38eae44f9bc66a0a0d7914794f}{X\+S\+D\+\_\+\+I\+D\+R\+EF}} 127
+\item 
+const \mbox{\hyperlink{soap_8php_acc0a3bf4812b1ff1a2c182564fee70c2}{X\+S\+D\+\_\+\+I\+D\+R\+E\+FS}} 128
+\item 
+const \mbox{\hyperlink{soap_8php_a1cbc7eab2f8aa0c9106f21fedb77db5b}{X\+S\+D\+\_\+\+E\+N\+T\+I\+TY}} 129
+\item 
+const \mbox{\hyperlink{soap_8php_a38d397520ec30b21d5ef690240b9dd4c}{X\+S\+D\+\_\+\+E\+N\+T\+I\+T\+I\+ES}} 130
+\item 
+const \mbox{\hyperlink{soap_8php_a5f1d6f667c37da03aac1325a577df89b}{X\+S\+D\+\_\+\+I\+N\+T\+E\+G\+ER}} 131
+\item 
+const \mbox{\hyperlink{soap_8php_a4f493b2c55d08e02ce02a5d28c4390ae}{X\+S\+D\+\_\+\+N\+O\+N\+P\+O\+S\+I\+T\+I\+V\+E\+I\+N\+T\+E\+G\+ER}} 132
+\item 
+const \mbox{\hyperlink{soap_8php_ac77fd8245a8c45de861dbe6dd6c84f16}{X\+S\+D\+\_\+\+N\+E\+G\+A\+T\+I\+V\+E\+I\+N\+T\+E\+G\+ER}} 133
+\item 
+const \mbox{\hyperlink{soap_8php_ac5e8aceb22220d4ff6b9d6f40a29e7ae}{X\+S\+D\+\_\+\+L\+O\+NG}} 134
+\item 
+const \mbox{\hyperlink{soap_8php_a1a6383381d1c1b95254cc9b3b0137871}{X\+S\+D\+\_\+\+I\+NT}} 135
+\item 
+const \mbox{\hyperlink{soap_8php_a45850089913798a9efd8dd24d0b17a97}{X\+S\+D\+\_\+\+S\+H\+O\+RT}} 136
+\item 
+const \mbox{\hyperlink{soap_8php_aad846d499a9cba390a3b20dfa78d77e3}{X\+S\+D\+\_\+\+B\+Y\+TE}} 137
+\item 
+const \mbox{\hyperlink{soap_8php_aeacf11fe44724dc8e550885a62a0864e}{X\+S\+D\+\_\+\+N\+O\+N\+N\+E\+G\+A\+T\+I\+V\+E\+I\+N\+T\+E\+G\+ER}} 138
+\item 
+const \mbox{\hyperlink{soap_8php_a6b4cae56651f6f77d169c2b46f10d66e}{X\+S\+D\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+L\+O\+NG}} 139
+\item 
+const \mbox{\hyperlink{soap_8php_a9c45a6dfd8f5277596614e2e020fb8b2}{X\+S\+D\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+I\+NT}} 140
+\item 
+const \mbox{\hyperlink{soap_8php_a22e854b416360e4369afb5bcbc5b4d4f}{X\+S\+D\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+S\+H\+O\+RT}} 141
+\item 
+const \mbox{\hyperlink{soap_8php_a04c1986e5a1a52a821d01c540af91884}{X\+S\+D\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+B\+Y\+TE}} 142
+\item 
+const \mbox{\hyperlink{soap_8php_ad5f210e18638c029ac8aa75f30f184e9}{X\+S\+D\+\_\+\+P\+O\+S\+I\+T\+I\+V\+E\+I\+N\+T\+E\+G\+ER}} 143
+\item 
+const \mbox{\hyperlink{soap_8php_a98b7dcf7e4faa00527787081c04d40c9}{X\+S\+D\+\_\+\+N\+M\+T\+O\+K\+E\+NS}} 144
+\item 
+const \mbox{\hyperlink{soap_8php_a58c85d5eb5f772dd090d336c1673a1c9}{X\+S\+D\+\_\+\+A\+N\+Y\+T\+Y\+PE}} 145
+\item 
+const \mbox{\hyperlink{soap_8php_a23ca4e714e08681fd16796f58c98a8ae}{X\+S\+D\+\_\+\+A\+N\+Y\+X\+ML}} 147
+\item 
+const \mbox{\hyperlink{soap_8php_a23cc42bdd5807f1f02ed39580350f13e}{A\+P\+A\+C\+H\+E\+\_\+\+M\+AP}} 200
+\item 
+const \mbox{\hyperlink{soap_8php_a58557c67bab42e645566077b1c667e09}{S\+O\+A\+P\+\_\+\+E\+N\+C\+\_\+\+O\+B\+J\+E\+CT}} 301
+\item 
+const \mbox{\hyperlink{soap_8php_aa2b9207933d2827f604462545d8c9f4b}{S\+O\+A\+P\+\_\+\+E\+N\+C\+\_\+\+A\+R\+R\+AY}} 300
+\item 
+const \mbox{\hyperlink{soap_8php_a8982e2a258e3a5c1a0e204a8bab6782f}{X\+S\+D\+\_\+1999\+\_\+\+T\+I\+M\+E\+I\+N\+S\+T\+A\+NT}} 401
+\item 
+const \mbox{\hyperlink{soap_8php_a221166eec90051f79973ad8054124acb}{X\+S\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}} \char`\"{}http\+://www.\+w3.\+org/2001/X\+M\+L\+Schema\char`\"{}
+\item 
+const \mbox{\hyperlink{soap_8php_a624a8b19274d4334d4804f452c90a72a}{X\+S\+D\+\_\+1999\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}} \char`\"{}http\+://www.\+w3.\+org/1999/X\+M\+L\+Schema\char`\"{}
+\item 
+const \mbox{\hyperlink{soap_8php_a75ad7651dc35840c1aec9603b77b2f82}{S\+O\+A\+P\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+A\+R\+R\+A\+YS}} 1
+\item 
+const \mbox{\hyperlink{soap_8php_a8ac3c6b19b350e8d00c89458dea0381c}{S\+O\+A\+P\+\_\+\+W\+A\+I\+T\+\_\+\+O\+N\+E\+\_\+\+W\+A\+Y\+\_\+\+C\+A\+L\+LS}} 2
+\item 
+const \mbox{\hyperlink{soap_8php_ae856608058c67c9e1273dbfd9c638e57}{S\+O\+A\+P\+\_\+\+U\+S\+E\+\_\+\+X\+S\+I\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+T\+Y\+PE}} 4
+\item 
+const \mbox{\hyperlink{soap_8php_aeac0019c0d9f41b44b1b74e8dd4d6f0c}{W\+S\+D\+L\+\_\+\+C\+A\+C\+H\+E\+\_\+\+N\+O\+NE}} 0
+\item 
+const \mbox{\hyperlink{soap_8php_a96c2557a18acc0299d24d0d92b69e92b}{W\+S\+D\+L\+\_\+\+C\+A\+C\+H\+E\+\_\+\+D\+I\+SK}} 1
+\item 
+const \mbox{\hyperlink{soap_8php_a8d6289773564d5812a1f1959dce26ed8}{W\+S\+D\+L\+\_\+\+C\+A\+C\+H\+E\+\_\+\+M\+E\+M\+O\+RY}} 2
+\item 
+const \mbox{\hyperlink{soap_8php_a592411f91dd6e56a3333541288f878d8}{W\+S\+D\+L\+\_\+\+C\+A\+C\+H\+E\+\_\+\+B\+O\+TH}} 3
+\item 
+const \mbox{\hyperlink{soap_8php_a8e334e240f3a4dd52f5b37bd1badadc8}{S\+O\+A\+P\+\_\+\+S\+S\+L\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+T\+LS}} 0
+\item 
+const \mbox{\hyperlink{soap_8php_a68fe970fb01eae03b0e1b0729b8888a1}{S\+O\+A\+P\+\_\+\+S\+S\+L\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+S\+S\+Lv2}} 1
+\item 
+const \mbox{\hyperlink{soap_8php_a2de76e97f2cc60ff69a94c0ec7cc8b9a}{S\+O\+A\+P\+\_\+\+S\+S\+L\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+S\+S\+Lv3}} 2
+\item 
+const \mbox{\hyperlink{soap_8php_a3418a84387297947614a8c3bf230db39}{S\+O\+A\+P\+\_\+\+S\+S\+L\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+S\+S\+Lv23}} 3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{soap_8php_a1ad5dc5b3381de31e795b622e039cd70}\label{soap_8php_a1ad5dc5b3381de31e795b622e039cd70}} 
+\index{soap.php@{soap.php}!is\_soap\_fault@{is\_soap\_fault}}
+\index{is\_soap\_fault@{is\_soap\_fault}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{is\_soap\_fault()}{is\_soap\_fault()}}
+{\footnotesize\ttfamily is\+\_\+soap\+\_\+fault (\begin{DoxyParamCaption}\item[{}]{\$object }\end{DoxyParamCaption})}
+
+Checks if a S\+O\+AP call has failed \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mixed \$object }} The object to test. 
+
+\begin{DoxyReturn}{Returns}
+bool This will return {\bfseries{T\+R\+UE}} on error, and {\bfseries{F\+A\+L\+SE}} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{soap_8php_a7f8e87f2105e228fbb3c651ce6cee2ca}\label{soap_8php_a7f8e87f2105e228fbb3c651ce6cee2ca}} 
+\index{soap.php@{soap.php}!use\_soap\_error\_handler@{use\_soap\_error\_handler}}
+\index{use\_soap\_error\_handler@{use\_soap\_error\_handler}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{use\_soap\_error\_handler()}{use\_soap\_error\_handler()}}
+{\footnotesize\ttfamily use\+\_\+soap\+\_\+error\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{\$handler = {\ttfamily \mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}} }\end{DoxyParamCaption})}
+
+Set whether to use the S\+O\+AP error handler \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{bool \$handler \mbox{[}optional\mbox{]} }} Set to {\bfseries{T\+R\+UE}} to send error details to clients. 
+
+\begin{DoxyReturn}{Returns}
+bool the original value. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{soap_8php_a23cc42bdd5807f1f02ed39580350f13e}\label{soap_8php_a23cc42bdd5807f1f02ed39580350f13e}} 
+\index{soap.php@{soap.php}!APACHE\_MAP@{APACHE\_MAP}}
+\index{APACHE\_MAP@{APACHE\_MAP}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{APACHE\_MAP}{APACHE\_MAP}}
+{\footnotesize\ttfamily const A\+P\+A\+C\+H\+E\+\_\+\+M\+AP 200}
+
+\mbox{\Hypertarget{soap_8php_afcd3b47d676f8dd47e2676db93db794e}\label{soap_8php_afcd3b47d676f8dd47e2676db93db794e}} 
+\index{soap.php@{soap.php}!SOAP\_1\_1@{SOAP\_1\_1}}
+\index{SOAP\_1\_1@{SOAP\_1\_1}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_1\_1}{SOAP\_1\_1}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+1\+\_\+1 1}
+
+\mbox{\Hypertarget{soap_8php_a871c7045403dd96d206b2987317ea7ea}\label{soap_8php_a871c7045403dd96d206b2987317ea7ea}} 
+\index{soap.php@{soap.php}!SOAP\_1\_2@{SOAP\_1\_2}}
+\index{SOAP\_1\_2@{SOAP\_1\_2}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_1\_2}{SOAP\_1\_2}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+1\+\_\+2 2}
+
+\mbox{\Hypertarget{soap_8php_a1bcb3da47230c99a9269be405cd23fc8}\label{soap_8php_a1bcb3da47230c99a9269be405cd23fc8}} 
+\index{soap.php@{soap.php}!SOAP\_ACTOR\_NEXT@{SOAP\_ACTOR\_NEXT}}
+\index{SOAP\_ACTOR\_NEXT@{SOAP\_ACTOR\_NEXT}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_ACTOR\_NEXT}{SOAP\_ACTOR\_NEXT}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+A\+C\+T\+O\+R\+\_\+\+N\+E\+XT 1}
+
+\mbox{\Hypertarget{soap_8php_a89e50b5b415cf7f3b7c4494cb06e77fe}\label{soap_8php_a89e50b5b415cf7f3b7c4494cb06e77fe}} 
+\index{soap.php@{soap.php}!SOAP\_ACTOR\_NONE@{SOAP\_ACTOR\_NONE}}
+\index{SOAP\_ACTOR\_NONE@{SOAP\_ACTOR\_NONE}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_ACTOR\_NONE}{SOAP\_ACTOR\_NONE}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+A\+C\+T\+O\+R\+\_\+\+N\+O\+NE 2}
+
+\mbox{\Hypertarget{soap_8php_a995993b71d56baf801f7d02ca919607e}\label{soap_8php_a995993b71d56baf801f7d02ca919607e}} 
+\index{soap.php@{soap.php}!SOAP\_ACTOR\_UNLIMATERECEIVER@{SOAP\_ACTOR\_UNLIMATERECEIVER}}
+\index{SOAP\_ACTOR\_UNLIMATERECEIVER@{SOAP\_ACTOR\_UNLIMATERECEIVER}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_ACTOR\_UNLIMATERECEIVER}{SOAP\_ACTOR\_UNLIMATERECEIVER}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+A\+C\+T\+O\+R\+\_\+\+U\+N\+L\+I\+M\+A\+T\+E\+R\+E\+C\+E\+I\+V\+ER 3}
+
+\mbox{\Hypertarget{soap_8php_a99ddb0861fb981c5cf8c770ac025530b}\label{soap_8php_a99ddb0861fb981c5cf8c770ac025530b}} 
+\index{soap.php@{soap.php}!SOAP\_AUTHENTICATION\_BASIC@{SOAP\_AUTHENTICATION\_BASIC}}
+\index{SOAP\_AUTHENTICATION\_BASIC@{SOAP\_AUTHENTICATION\_BASIC}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_AUTHENTICATION\_BASIC}{SOAP\_AUTHENTICATION\_BASIC}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+B\+A\+S\+IC 0}
+
+\mbox{\Hypertarget{soap_8php_a741b8071413d830280d65eace58edd79}\label{soap_8php_a741b8071413d830280d65eace58edd79}} 
+\index{soap.php@{soap.php}!SOAP\_AUTHENTICATION\_DIGEST@{SOAP\_AUTHENTICATION\_DIGEST}}
+\index{SOAP\_AUTHENTICATION\_DIGEST@{SOAP\_AUTHENTICATION\_DIGEST}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_AUTHENTICATION\_DIGEST}{SOAP\_AUTHENTICATION\_DIGEST}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+I\+G\+E\+ST 1}
+
+\mbox{\Hypertarget{soap_8php_aa8dac71506a3550d79507bf58cb6c62d}\label{soap_8php_aa8dac71506a3550d79507bf58cb6c62d}} 
+\index{soap.php@{soap.php}!SOAP\_COMPRESSION\_ACCEPT@{SOAP\_COMPRESSION\_ACCEPT}}
+\index{SOAP\_COMPRESSION\_ACCEPT@{SOAP\_COMPRESSION\_ACCEPT}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_COMPRESSION\_ACCEPT}{SOAP\_COMPRESSION\_ACCEPT}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+O\+N\+\_\+\+A\+C\+C\+E\+PT 32}
+
+\mbox{\Hypertarget{soap_8php_ab1fa7734988ffd516f1db9b8978e9823}\label{soap_8php_ab1fa7734988ffd516f1db9b8978e9823}} 
+\index{soap.php@{soap.php}!SOAP\_COMPRESSION\_DEFLATE@{SOAP\_COMPRESSION\_DEFLATE}}
+\index{SOAP\_COMPRESSION\_DEFLATE@{SOAP\_COMPRESSION\_DEFLATE}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_COMPRESSION\_DEFLATE}{SOAP\_COMPRESSION\_DEFLATE}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+O\+N\+\_\+\+D\+E\+F\+L\+A\+TE 16}
+
+\mbox{\Hypertarget{soap_8php_aea626b5293706f2efc20c76c8a5d8fde}\label{soap_8php_aea626b5293706f2efc20c76c8a5d8fde}} 
+\index{soap.php@{soap.php}!SOAP\_COMPRESSION\_GZIP@{SOAP\_COMPRESSION\_GZIP}}
+\index{SOAP\_COMPRESSION\_GZIP@{SOAP\_COMPRESSION\_GZIP}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_COMPRESSION\_GZIP}{SOAP\_COMPRESSION\_GZIP}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+O\+N\+\_\+\+G\+Z\+IP 0}
+
+\mbox{\Hypertarget{soap_8php_aae17c90f8365b4be84dc0fbddb6f7a87}\label{soap_8php_aae17c90f8365b4be84dc0fbddb6f7a87}} 
+\index{soap.php@{soap.php}!SOAP\_DOCUMENT@{SOAP\_DOCUMENT}}
+\index{SOAP\_DOCUMENT@{SOAP\_DOCUMENT}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_DOCUMENT}{SOAP\_DOCUMENT}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+D\+O\+C\+U\+M\+E\+NT 2}
+
+\mbox{\Hypertarget{soap_8php_aa2b9207933d2827f604462545d8c9f4b}\label{soap_8php_aa2b9207933d2827f604462545d8c9f4b}} 
+\index{soap.php@{soap.php}!SOAP\_ENC\_ARRAY@{SOAP\_ENC\_ARRAY}}
+\index{SOAP\_ENC\_ARRAY@{SOAP\_ENC\_ARRAY}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_ENC\_ARRAY}{SOAP\_ENC\_ARRAY}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+E\+N\+C\+\_\+\+A\+R\+R\+AY 300}
+
+\mbox{\Hypertarget{soap_8php_a58557c67bab42e645566077b1c667e09}\label{soap_8php_a58557c67bab42e645566077b1c667e09}} 
+\index{soap.php@{soap.php}!SOAP\_ENC\_OBJECT@{SOAP\_ENC\_OBJECT}}
+\index{SOAP\_ENC\_OBJECT@{SOAP\_ENC\_OBJECT}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_ENC\_OBJECT}{SOAP\_ENC\_OBJECT}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+E\+N\+C\+\_\+\+O\+B\+J\+E\+CT 301}
+
+\mbox{\Hypertarget{soap_8php_a00ab1222b877d98bed6ed85eba712b9c}\label{soap_8php_a00ab1222b877d98bed6ed85eba712b9c}} 
+\index{soap.php@{soap.php}!SOAP\_ENCODED@{SOAP\_ENCODED}}
+\index{SOAP\_ENCODED@{SOAP\_ENCODED}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_ENCODED}{SOAP\_ENCODED}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+E\+N\+C\+O\+D\+ED 1}
+
+\mbox{\Hypertarget{soap_8php_a7caf8766921bac1f2b6d29625dce8944}\label{soap_8php_a7caf8766921bac1f2b6d29625dce8944}} 
+\index{soap.php@{soap.php}!SOAP\_FUNCTIONS\_ALL@{SOAP\_FUNCTIONS\_ALL}}
+\index{SOAP\_FUNCTIONS\_ALL@{SOAP\_FUNCTIONS\_ALL}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_FUNCTIONS\_ALL}{SOAP\_FUNCTIONS\_ALL}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+S\+\_\+\+A\+LL 999}
+
+\mbox{\Hypertarget{soap_8php_ab4754f01af7c6706878392ff86babd3e}\label{soap_8php_ab4754f01af7c6706878392ff86babd3e}} 
+\index{soap.php@{soap.php}!SOAP\_LITERAL@{SOAP\_LITERAL}}
+\index{SOAP\_LITERAL@{SOAP\_LITERAL}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_LITERAL}{SOAP\_LITERAL}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+L\+I\+T\+E\+R\+AL 2}
+
+\mbox{\Hypertarget{soap_8php_aa5fb44106e5b83cc8f2e8a4e47585048}\label{soap_8php_aa5fb44106e5b83cc8f2e8a4e47585048}} 
+\index{soap.php@{soap.php}!SOAP\_PERSISTENCE\_REQUEST@{SOAP\_PERSISTENCE\_REQUEST}}
+\index{SOAP\_PERSISTENCE\_REQUEST@{SOAP\_PERSISTENCE\_REQUEST}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_PERSISTENCE\_REQUEST}{SOAP\_PERSISTENCE\_REQUEST}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+R\+E\+Q\+U\+E\+ST 2}
+
+\mbox{\Hypertarget{soap_8php_a61207066bf7465a34228857fb403dd14}\label{soap_8php_a61207066bf7465a34228857fb403dd14}} 
+\index{soap.php@{soap.php}!SOAP\_PERSISTENCE\_SESSION@{SOAP\_PERSISTENCE\_SESSION}}
+\index{SOAP\_PERSISTENCE\_SESSION@{SOAP\_PERSISTENCE\_SESSION}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_PERSISTENCE\_SESSION}{SOAP\_PERSISTENCE\_SESSION}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+P\+E\+R\+S\+I\+S\+T\+E\+N\+C\+E\+\_\+\+S\+E\+S\+S\+I\+ON 1}
+
+\mbox{\Hypertarget{soap_8php_adbfdb910c35ab06fa5b10f15a8df3311}\label{soap_8php_adbfdb910c35ab06fa5b10f15a8df3311}} 
+\index{soap.php@{soap.php}!SOAP\_RPC@{SOAP\_RPC}}
+\index{SOAP\_RPC@{SOAP\_RPC}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_RPC}{SOAP\_RPC}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+R\+PC 1}
+
+\mbox{\Hypertarget{soap_8php_a75ad7651dc35840c1aec9603b77b2f82}\label{soap_8php_a75ad7651dc35840c1aec9603b77b2f82}} 
+\index{soap.php@{soap.php}!SOAP\_SINGLE\_ELEMENT\_ARRAYS@{SOAP\_SINGLE\_ELEMENT\_ARRAYS}}
+\index{SOAP\_SINGLE\_ELEMENT\_ARRAYS@{SOAP\_SINGLE\_ELEMENT\_ARRAYS}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_SINGLE\_ELEMENT\_ARRAYS}{SOAP\_SINGLE\_ELEMENT\_ARRAYS}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+A\+R\+R\+A\+YS 1}
+
+\mbox{\Hypertarget{soap_8php_a68fe970fb01eae03b0e1b0729b8888a1}\label{soap_8php_a68fe970fb01eae03b0e1b0729b8888a1}} 
+\index{soap.php@{soap.php}!SOAP\_SSL\_METHOD\_SSLv2@{SOAP\_SSL\_METHOD\_SSLv2}}
+\index{SOAP\_SSL\_METHOD\_SSLv2@{SOAP\_SSL\_METHOD\_SSLv2}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_SSL\_METHOD\_SSLv2}{SOAP\_SSL\_METHOD\_SSLv2}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+S\+S\+L\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+S\+S\+Lv2 1}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+5 }}\mbox{\Hypertarget{soap_8php_a3418a84387297947614a8c3bf230db39}\label{soap_8php_a3418a84387297947614a8c3bf230db39}} 
+\index{soap.php@{soap.php}!SOAP\_SSL\_METHOD\_SSLv23@{SOAP\_SSL\_METHOD\_SSLv23}}
+\index{SOAP\_SSL\_METHOD\_SSLv23@{SOAP\_SSL\_METHOD\_SSLv23}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_SSL\_METHOD\_SSLv23}{SOAP\_SSL\_METHOD\_SSLv23}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+S\+S\+L\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+S\+S\+Lv23 3}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+5 }}\mbox{\Hypertarget{soap_8php_a2de76e97f2cc60ff69a94c0ec7cc8b9a}\label{soap_8php_a2de76e97f2cc60ff69a94c0ec7cc8b9a}} 
+\index{soap.php@{soap.php}!SOAP\_SSL\_METHOD\_SSLv3@{SOAP\_SSL\_METHOD\_SSLv3}}
+\index{SOAP\_SSL\_METHOD\_SSLv3@{SOAP\_SSL\_METHOD\_SSLv3}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_SSL\_METHOD\_SSLv3}{SOAP\_SSL\_METHOD\_SSLv3}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+S\+S\+L\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+S\+S\+Lv3 2}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+5 }}\mbox{\Hypertarget{soap_8php_a8e334e240f3a4dd52f5b37bd1badadc8}\label{soap_8php_a8e334e240f3a4dd52f5b37bd1badadc8}} 
+\index{soap.php@{soap.php}!SOAP\_SSL\_METHOD\_TLS@{SOAP\_SSL\_METHOD\_TLS}}
+\index{SOAP\_SSL\_METHOD\_TLS@{SOAP\_SSL\_METHOD\_TLS}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_SSL\_METHOD\_TLS}{SOAP\_SSL\_METHOD\_TLS}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+S\+S\+L\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+T\+LS 0}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+5 }}\mbox{\Hypertarget{soap_8php_ae856608058c67c9e1273dbfd9c638e57}\label{soap_8php_ae856608058c67c9e1273dbfd9c638e57}} 
+\index{soap.php@{soap.php}!SOAP\_USE\_XSI\_ARRAY\_TYPE@{SOAP\_USE\_XSI\_ARRAY\_TYPE}}
+\index{SOAP\_USE\_XSI\_ARRAY\_TYPE@{SOAP\_USE\_XSI\_ARRAY\_TYPE}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_USE\_XSI\_ARRAY\_TYPE}{SOAP\_USE\_XSI\_ARRAY\_TYPE}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+U\+S\+E\+\_\+\+X\+S\+I\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+T\+Y\+PE 4}
+
+\mbox{\Hypertarget{soap_8php_a8ac3c6b19b350e8d00c89458dea0381c}\label{soap_8php_a8ac3c6b19b350e8d00c89458dea0381c}} 
+\index{soap.php@{soap.php}!SOAP\_WAIT\_ONE\_WAY\_CALLS@{SOAP\_WAIT\_ONE\_WAY\_CALLS}}
+\index{SOAP\_WAIT\_ONE\_WAY\_CALLS@{SOAP\_WAIT\_ONE\_WAY\_CALLS}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{SOAP\_WAIT\_ONE\_WAY\_CALLS}{SOAP\_WAIT\_ONE\_WAY\_CALLS}}
+{\footnotesize\ttfamily const S\+O\+A\+P\+\_\+\+W\+A\+I\+T\+\_\+\+O\+N\+E\+\_\+\+W\+A\+Y\+\_\+\+C\+A\+L\+LS 2}
+
+\mbox{\Hypertarget{soap_8php_a26f5b76a783cb64fc4d51ef83a63a38e}\label{soap_8php_a26f5b76a783cb64fc4d51ef83a63a38e}} 
+\index{soap.php@{soap.php}!UNKNOWN\_TYPE@{UNKNOWN\_TYPE}}
+\index{UNKNOWN\_TYPE@{UNKNOWN\_TYPE}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{UNKNOWN\_TYPE}{UNKNOWN\_TYPE}}
+{\footnotesize\ttfamily const U\+N\+K\+N\+O\+W\+N\+\_\+\+T\+Y\+PE 999998}
+
+\mbox{\Hypertarget{soap_8php_a592411f91dd6e56a3333541288f878d8}\label{soap_8php_a592411f91dd6e56a3333541288f878d8}} 
+\index{soap.php@{soap.php}!WSDL\_CACHE\_BOTH@{WSDL\_CACHE\_BOTH}}
+\index{WSDL\_CACHE\_BOTH@{WSDL\_CACHE\_BOTH}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{WSDL\_CACHE\_BOTH}{WSDL\_CACHE\_BOTH}}
+{\footnotesize\ttfamily const W\+S\+D\+L\+\_\+\+C\+A\+C\+H\+E\+\_\+\+B\+O\+TH 3}
+
+\mbox{\Hypertarget{soap_8php_a96c2557a18acc0299d24d0d92b69e92b}\label{soap_8php_a96c2557a18acc0299d24d0d92b69e92b}} 
+\index{soap.php@{soap.php}!WSDL\_CACHE\_DISK@{WSDL\_CACHE\_DISK}}
+\index{WSDL\_CACHE\_DISK@{WSDL\_CACHE\_DISK}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{WSDL\_CACHE\_DISK}{WSDL\_CACHE\_DISK}}
+{\footnotesize\ttfamily const W\+S\+D\+L\+\_\+\+C\+A\+C\+H\+E\+\_\+\+D\+I\+SK 1}
+
+\mbox{\Hypertarget{soap_8php_a8d6289773564d5812a1f1959dce26ed8}\label{soap_8php_a8d6289773564d5812a1f1959dce26ed8}} 
+\index{soap.php@{soap.php}!WSDL\_CACHE\_MEMORY@{WSDL\_CACHE\_MEMORY}}
+\index{WSDL\_CACHE\_MEMORY@{WSDL\_CACHE\_MEMORY}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{WSDL\_CACHE\_MEMORY}{WSDL\_CACHE\_MEMORY}}
+{\footnotesize\ttfamily const W\+S\+D\+L\+\_\+\+C\+A\+C\+H\+E\+\_\+\+M\+E\+M\+O\+RY 2}
+
+\mbox{\Hypertarget{soap_8php_aeac0019c0d9f41b44b1b74e8dd4d6f0c}\label{soap_8php_aeac0019c0d9f41b44b1b74e8dd4d6f0c}} 
+\index{soap.php@{soap.php}!WSDL\_CACHE\_NONE@{WSDL\_CACHE\_NONE}}
+\index{WSDL\_CACHE\_NONE@{WSDL\_CACHE\_NONE}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{WSDL\_CACHE\_NONE}{WSDL\_CACHE\_NONE}}
+{\footnotesize\ttfamily const W\+S\+D\+L\+\_\+\+C\+A\+C\+H\+E\+\_\+\+N\+O\+NE 0}
+
+\mbox{\Hypertarget{soap_8php_a624a8b19274d4334d4804f452c90a72a}\label{soap_8php_a624a8b19274d4334d4804f452c90a72a}} 
+\index{soap.php@{soap.php}!XSD\_1999\_NAMESPACE@{XSD\_1999\_NAMESPACE}}
+\index{XSD\_1999\_NAMESPACE@{XSD\_1999\_NAMESPACE}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_1999\_NAMESPACE}{XSD\_1999\_NAMESPACE}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+1999\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE \char`\"{}http\+://www.\+w3.\+org/1999/X\+M\+L\+Schema\char`\"{}}
+
+\mbox{\Hypertarget{soap_8php_a8982e2a258e3a5c1a0e204a8bab6782f}\label{soap_8php_a8982e2a258e3a5c1a0e204a8bab6782f}} 
+\index{soap.php@{soap.php}!XSD\_1999\_TIMEINSTANT@{XSD\_1999\_TIMEINSTANT}}
+\index{XSD\_1999\_TIMEINSTANT@{XSD\_1999\_TIMEINSTANT}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_1999\_TIMEINSTANT}{XSD\_1999\_TIMEINSTANT}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+1999\+\_\+\+T\+I\+M\+E\+I\+N\+S\+T\+A\+NT 401}
+
+\mbox{\Hypertarget{soap_8php_a58c85d5eb5f772dd090d336c1673a1c9}\label{soap_8php_a58c85d5eb5f772dd090d336c1673a1c9}} 
+\index{soap.php@{soap.php}!XSD\_ANYTYPE@{XSD\_ANYTYPE}}
+\index{XSD\_ANYTYPE@{XSD\_ANYTYPE}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_ANYTYPE}{XSD\_ANYTYPE}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+A\+N\+Y\+T\+Y\+PE 145}
+
+\mbox{\Hypertarget{soap_8php_af717089d86f28c51cc65fb85e01278c5}\label{soap_8php_af717089d86f28c51cc65fb85e01278c5}} 
+\index{soap.php@{soap.php}!XSD\_ANYURI@{XSD\_ANYURI}}
+\index{XSD\_ANYURI@{XSD\_ANYURI}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_ANYURI}{XSD\_ANYURI}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+A\+N\+Y\+U\+RI 117}
+
+\mbox{\Hypertarget{soap_8php_a23ca4e714e08681fd16796f58c98a8ae}\label{soap_8php_a23ca4e714e08681fd16796f58c98a8ae}} 
+\index{soap.php@{soap.php}!XSD\_ANYXML@{XSD\_ANYXML}}
+\index{XSD\_ANYXML@{XSD\_ANYXML}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_ANYXML}{XSD\_ANYXML}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+A\+N\+Y\+X\+ML 147}
+
+\mbox{\Hypertarget{soap_8php_ae1840f3e9b14811bfda809b6be065906}\label{soap_8php_ae1840f3e9b14811bfda809b6be065906}} 
+\index{soap.php@{soap.php}!XSD\_BASE64BINARY@{XSD\_BASE64BINARY}}
+\index{XSD\_BASE64BINARY@{XSD\_BASE64BINARY}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_BASE64BINARY}{XSD\_BASE64BINARY}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+B\+A\+S\+E64\+B\+I\+N\+A\+RY 116}
+
+\mbox{\Hypertarget{soap_8php_afb67bffe76855c9902c999f8f730e515}\label{soap_8php_afb67bffe76855c9902c999f8f730e515}} 
+\index{soap.php@{soap.php}!XSD\_BOOLEAN@{XSD\_BOOLEAN}}
+\index{XSD\_BOOLEAN@{XSD\_BOOLEAN}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_BOOLEAN}{XSD\_BOOLEAN}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+B\+O\+O\+L\+E\+AN 102}
+
+\mbox{\Hypertarget{soap_8php_aad846d499a9cba390a3b20dfa78d77e3}\label{soap_8php_aad846d499a9cba390a3b20dfa78d77e3}} 
+\index{soap.php@{soap.php}!XSD\_BYTE@{XSD\_BYTE}}
+\index{XSD\_BYTE@{XSD\_BYTE}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_BYTE}{XSD\_BYTE}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+B\+Y\+TE 137}
+
+\mbox{\Hypertarget{soap_8php_a892f5f48dff1bad29c39aafc9ff0116c}\label{soap_8php_a892f5f48dff1bad29c39aafc9ff0116c}} 
+\index{soap.php@{soap.php}!XSD\_DATE@{XSD\_DATE}}
+\index{XSD\_DATE@{XSD\_DATE}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_DATE}{XSD\_DATE}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+D\+A\+TE 109}
+
+\mbox{\Hypertarget{soap_8php_aef5a6e512f904f9f07e9a9ba5ace6710}\label{soap_8php_aef5a6e512f904f9f07e9a9ba5ace6710}} 
+\index{soap.php@{soap.php}!XSD\_DATETIME@{XSD\_DATETIME}}
+\index{XSD\_DATETIME@{XSD\_DATETIME}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_DATETIME}{XSD\_DATETIME}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+D\+A\+T\+E\+T\+I\+ME 107}
+
+\mbox{\Hypertarget{soap_8php_a8b5aa18c1aea083ebe8157b50f2e5755}\label{soap_8php_a8b5aa18c1aea083ebe8157b50f2e5755}} 
+\index{soap.php@{soap.php}!XSD\_DECIMAL@{XSD\_DECIMAL}}
+\index{XSD\_DECIMAL@{XSD\_DECIMAL}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_DECIMAL}{XSD\_DECIMAL}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+D\+E\+C\+I\+M\+AL 103}
+
+\mbox{\Hypertarget{soap_8php_acdd9ab55954cc60b733d73cf9b2d64ca}\label{soap_8php_acdd9ab55954cc60b733d73cf9b2d64ca}} 
+\index{soap.php@{soap.php}!XSD\_DOUBLE@{XSD\_DOUBLE}}
+\index{XSD\_DOUBLE@{XSD\_DOUBLE}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_DOUBLE}{XSD\_DOUBLE}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+D\+O\+U\+B\+LE 105}
+
+\mbox{\Hypertarget{soap_8php_a974e2028d901e206c2daf9939334e1a3}\label{soap_8php_a974e2028d901e206c2daf9939334e1a3}} 
+\index{soap.php@{soap.php}!XSD\_DURATION@{XSD\_DURATION}}
+\index{XSD\_DURATION@{XSD\_DURATION}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_DURATION}{XSD\_DURATION}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+D\+U\+R\+A\+T\+I\+ON 106}
+
+\mbox{\Hypertarget{soap_8php_a38d397520ec30b21d5ef690240b9dd4c}\label{soap_8php_a38d397520ec30b21d5ef690240b9dd4c}} 
+\index{soap.php@{soap.php}!XSD\_ENTITIES@{XSD\_ENTITIES}}
+\index{XSD\_ENTITIES@{XSD\_ENTITIES}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_ENTITIES}{XSD\_ENTITIES}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+E\+N\+T\+I\+T\+I\+ES 130}
+
+\mbox{\Hypertarget{soap_8php_a1cbc7eab2f8aa0c9106f21fedb77db5b}\label{soap_8php_a1cbc7eab2f8aa0c9106f21fedb77db5b}} 
+\index{soap.php@{soap.php}!XSD\_ENTITY@{XSD\_ENTITY}}
+\index{XSD\_ENTITY@{XSD\_ENTITY}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_ENTITY}{XSD\_ENTITY}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+E\+N\+T\+I\+TY 129}
+
+\mbox{\Hypertarget{soap_8php_a120314794a2c9ec4bfb13bacca0e50d7}\label{soap_8php_a120314794a2c9ec4bfb13bacca0e50d7}} 
+\index{soap.php@{soap.php}!XSD\_FLOAT@{XSD\_FLOAT}}
+\index{XSD\_FLOAT@{XSD\_FLOAT}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_FLOAT}{XSD\_FLOAT}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+F\+L\+O\+AT 104}
+
+\mbox{\Hypertarget{soap_8php_afeb0e4383d7cce3a6dbfd6a1c6a735c3}\label{soap_8php_afeb0e4383d7cce3a6dbfd6a1c6a735c3}} 
+\index{soap.php@{soap.php}!XSD\_GDAY@{XSD\_GDAY}}
+\index{XSD\_GDAY@{XSD\_GDAY}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_GDAY}{XSD\_GDAY}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+G\+D\+AY 113}
+
+\mbox{\Hypertarget{soap_8php_ae8e793aef01faf6063f6ac4ab55b34f4}\label{soap_8php_ae8e793aef01faf6063f6ac4ab55b34f4}} 
+\index{soap.php@{soap.php}!XSD\_GMONTH@{XSD\_GMONTH}}
+\index{XSD\_GMONTH@{XSD\_GMONTH}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_GMONTH}{XSD\_GMONTH}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+G\+M\+O\+N\+TH 114}
+
+\mbox{\Hypertarget{soap_8php_a650705c4ce489fa73968c20d47d0be08}\label{soap_8php_a650705c4ce489fa73968c20d47d0be08}} 
+\index{soap.php@{soap.php}!XSD\_GMONTHDAY@{XSD\_GMONTHDAY}}
+\index{XSD\_GMONTHDAY@{XSD\_GMONTHDAY}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_GMONTHDAY}{XSD\_GMONTHDAY}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+G\+M\+O\+N\+T\+H\+D\+AY 112}
+
+\mbox{\Hypertarget{soap_8php_aa06e844bbd49b69cffce1d1c024ec03d}\label{soap_8php_aa06e844bbd49b69cffce1d1c024ec03d}} 
+\index{soap.php@{soap.php}!XSD\_GYEAR@{XSD\_GYEAR}}
+\index{XSD\_GYEAR@{XSD\_GYEAR}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_GYEAR}{XSD\_GYEAR}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+G\+Y\+E\+AR 111}
+
+\mbox{\Hypertarget{soap_8php_ac9cf9010be12fda28da248f823e86f6c}\label{soap_8php_ac9cf9010be12fda28da248f823e86f6c}} 
+\index{soap.php@{soap.php}!XSD\_GYEARMONTH@{XSD\_GYEARMONTH}}
+\index{XSD\_GYEARMONTH@{XSD\_GYEARMONTH}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_GYEARMONTH}{XSD\_GYEARMONTH}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+G\+Y\+E\+A\+R\+M\+O\+N\+TH 110}
+
+\mbox{\Hypertarget{soap_8php_aab0972ae18e7cc8a9a61988300f48b07}\label{soap_8php_aab0972ae18e7cc8a9a61988300f48b07}} 
+\index{soap.php@{soap.php}!XSD\_HEXBINARY@{XSD\_HEXBINARY}}
+\index{XSD\_HEXBINARY@{XSD\_HEXBINARY}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_HEXBINARY}{XSD\_HEXBINARY}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+H\+E\+X\+B\+I\+N\+A\+RY 115}
+
+\mbox{\Hypertarget{soap_8php_a1da1c6d375bb2b748d3dbeb588a078ae}\label{soap_8php_a1da1c6d375bb2b748d3dbeb588a078ae}} 
+\index{soap.php@{soap.php}!XSD\_ID@{XSD\_ID}}
+\index{XSD\_ID@{XSD\_ID}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_ID}{XSD\_ID}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+ID 126}
+
+\mbox{\Hypertarget{soap_8php_abee98b38eae44f9bc66a0a0d7914794f}\label{soap_8php_abee98b38eae44f9bc66a0a0d7914794f}} 
+\index{soap.php@{soap.php}!XSD\_IDREF@{XSD\_IDREF}}
+\index{XSD\_IDREF@{XSD\_IDREF}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_IDREF}{XSD\_IDREF}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+I\+D\+R\+EF 127}
+
+\mbox{\Hypertarget{soap_8php_acc0a3bf4812b1ff1a2c182564fee70c2}\label{soap_8php_acc0a3bf4812b1ff1a2c182564fee70c2}} 
+\index{soap.php@{soap.php}!XSD\_IDREFS@{XSD\_IDREFS}}
+\index{XSD\_IDREFS@{XSD\_IDREFS}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_IDREFS}{XSD\_IDREFS}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+I\+D\+R\+E\+FS 128}
+
+\mbox{\Hypertarget{soap_8php_a1a6383381d1c1b95254cc9b3b0137871}\label{soap_8php_a1a6383381d1c1b95254cc9b3b0137871}} 
+\index{soap.php@{soap.php}!XSD\_INT@{XSD\_INT}}
+\index{XSD\_INT@{XSD\_INT}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_INT}{XSD\_INT}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+I\+NT 135}
+
+\mbox{\Hypertarget{soap_8php_a5f1d6f667c37da03aac1325a577df89b}\label{soap_8php_a5f1d6f667c37da03aac1325a577df89b}} 
+\index{soap.php@{soap.php}!XSD\_INTEGER@{XSD\_INTEGER}}
+\index{XSD\_INTEGER@{XSD\_INTEGER}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_INTEGER}{XSD\_INTEGER}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+I\+N\+T\+E\+G\+ER 131}
+
+\mbox{\Hypertarget{soap_8php_a0e78ebb2e5863b2184e35154fc340715}\label{soap_8php_a0e78ebb2e5863b2184e35154fc340715}} 
+\index{soap.php@{soap.php}!XSD\_LANGUAGE@{XSD\_LANGUAGE}}
+\index{XSD\_LANGUAGE@{XSD\_LANGUAGE}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_LANGUAGE}{XSD\_LANGUAGE}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+L\+A\+N\+G\+U\+A\+GE 122}
+
+\mbox{\Hypertarget{soap_8php_ac5e8aceb22220d4ff6b9d6f40a29e7ae}\label{soap_8php_ac5e8aceb22220d4ff6b9d6f40a29e7ae}} 
+\index{soap.php@{soap.php}!XSD\_LONG@{XSD\_LONG}}
+\index{XSD\_LONG@{XSD\_LONG}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_LONG}{XSD\_LONG}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+L\+O\+NG 134}
+
+\mbox{\Hypertarget{soap_8php_a38edef7d9fe9ac53dca20bb041745aa5}\label{soap_8php_a38edef7d9fe9ac53dca20bb041745aa5}} 
+\index{soap.php@{soap.php}!XSD\_NAME@{XSD\_NAME}}
+\index{XSD\_NAME@{XSD\_NAME}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_NAME}{XSD\_NAME}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+N\+A\+ME 124}
+
+\mbox{\Hypertarget{soap_8php_a221166eec90051f79973ad8054124acb}\label{soap_8php_a221166eec90051f79973ad8054124acb}} 
+\index{soap.php@{soap.php}!XSD\_NAMESPACE@{XSD\_NAMESPACE}}
+\index{XSD\_NAMESPACE@{XSD\_NAMESPACE}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_NAMESPACE}{XSD\_NAMESPACE}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE \char`\"{}http\+://www.\+w3.\+org/2001/X\+M\+L\+Schema\char`\"{}}
+
+\mbox{\Hypertarget{soap_8php_a8932c7a1fe43cd07808b9e17c1c41a52}\label{soap_8php_a8932c7a1fe43cd07808b9e17c1c41a52}} 
+\index{soap.php@{soap.php}!XSD\_NCNAME@{XSD\_NCNAME}}
+\index{XSD\_NCNAME@{XSD\_NCNAME}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_NCNAME}{XSD\_NCNAME}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+N\+C\+N\+A\+ME 125}
+
+\mbox{\Hypertarget{soap_8php_ac77fd8245a8c45de861dbe6dd6c84f16}\label{soap_8php_ac77fd8245a8c45de861dbe6dd6c84f16}} 
+\index{soap.php@{soap.php}!XSD\_NEGATIVEINTEGER@{XSD\_NEGATIVEINTEGER}}
+\index{XSD\_NEGATIVEINTEGER@{XSD\_NEGATIVEINTEGER}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_NEGATIVEINTEGER}{XSD\_NEGATIVEINTEGER}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+N\+E\+G\+A\+T\+I\+V\+E\+I\+N\+T\+E\+G\+ER 133}
+
+\mbox{\Hypertarget{soap_8php_ae95dd368afb35fbe4c411da7c43d941d}\label{soap_8php_ae95dd368afb35fbe4c411da7c43d941d}} 
+\index{soap.php@{soap.php}!XSD\_NMTOKEN@{XSD\_NMTOKEN}}
+\index{XSD\_NMTOKEN@{XSD\_NMTOKEN}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_NMTOKEN}{XSD\_NMTOKEN}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+N\+M\+T\+O\+K\+EN 123}
+
+\mbox{\Hypertarget{soap_8php_a98b7dcf7e4faa00527787081c04d40c9}\label{soap_8php_a98b7dcf7e4faa00527787081c04d40c9}} 
+\index{soap.php@{soap.php}!XSD\_NMTOKENS@{XSD\_NMTOKENS}}
+\index{XSD\_NMTOKENS@{XSD\_NMTOKENS}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_NMTOKENS}{XSD\_NMTOKENS}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+N\+M\+T\+O\+K\+E\+NS 144}
+
+\mbox{\Hypertarget{soap_8php_aeacf11fe44724dc8e550885a62a0864e}\label{soap_8php_aeacf11fe44724dc8e550885a62a0864e}} 
+\index{soap.php@{soap.php}!XSD\_NONNEGATIVEINTEGER@{XSD\_NONNEGATIVEINTEGER}}
+\index{XSD\_NONNEGATIVEINTEGER@{XSD\_NONNEGATIVEINTEGER}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_NONNEGATIVEINTEGER}{XSD\_NONNEGATIVEINTEGER}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+N\+O\+N\+N\+E\+G\+A\+T\+I\+V\+E\+I\+N\+T\+E\+G\+ER 138}
+
+\mbox{\Hypertarget{soap_8php_a4f493b2c55d08e02ce02a5d28c4390ae}\label{soap_8php_a4f493b2c55d08e02ce02a5d28c4390ae}} 
+\index{soap.php@{soap.php}!XSD\_NONPOSITIVEINTEGER@{XSD\_NONPOSITIVEINTEGER}}
+\index{XSD\_NONPOSITIVEINTEGER@{XSD\_NONPOSITIVEINTEGER}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_NONPOSITIVEINTEGER}{XSD\_NONPOSITIVEINTEGER}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+N\+O\+N\+P\+O\+S\+I\+T\+I\+V\+E\+I\+N\+T\+E\+G\+ER 132}
+
+\mbox{\Hypertarget{soap_8php_a3386b59eec71ffd07e003c9113e7cf56}\label{soap_8php_a3386b59eec71ffd07e003c9113e7cf56}} 
+\index{soap.php@{soap.php}!XSD\_NORMALIZEDSTRING@{XSD\_NORMALIZEDSTRING}}
+\index{XSD\_NORMALIZEDSTRING@{XSD\_NORMALIZEDSTRING}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_NORMALIZEDSTRING}{XSD\_NORMALIZEDSTRING}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+N\+O\+R\+M\+A\+L\+I\+Z\+E\+D\+S\+T\+R\+I\+NG 120}
+
+\mbox{\Hypertarget{soap_8php_aac79ef139d2e244476f06033acdaeb50}\label{soap_8php_aac79ef139d2e244476f06033acdaeb50}} 
+\index{soap.php@{soap.php}!XSD\_NOTATION@{XSD\_NOTATION}}
+\index{XSD\_NOTATION@{XSD\_NOTATION}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_NOTATION}{XSD\_NOTATION}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+N\+O\+T\+A\+T\+I\+ON 119}
+
+\mbox{\Hypertarget{soap_8php_ad5f210e18638c029ac8aa75f30f184e9}\label{soap_8php_ad5f210e18638c029ac8aa75f30f184e9}} 
+\index{soap.php@{soap.php}!XSD\_POSITIVEINTEGER@{XSD\_POSITIVEINTEGER}}
+\index{XSD\_POSITIVEINTEGER@{XSD\_POSITIVEINTEGER}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_POSITIVEINTEGER}{XSD\_POSITIVEINTEGER}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+P\+O\+S\+I\+T\+I\+V\+E\+I\+N\+T\+E\+G\+ER 143}
+
+\mbox{\Hypertarget{soap_8php_a3a6f183639bf85264f0714e3bbf45617}\label{soap_8php_a3a6f183639bf85264f0714e3bbf45617}} 
+\index{soap.php@{soap.php}!XSD\_QNAME@{XSD\_QNAME}}
+\index{XSD\_QNAME@{XSD\_QNAME}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_QNAME}{XSD\_QNAME}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+Q\+N\+A\+ME 118}
+
+\mbox{\Hypertarget{soap_8php_a45850089913798a9efd8dd24d0b17a97}\label{soap_8php_a45850089913798a9efd8dd24d0b17a97}} 
+\index{soap.php@{soap.php}!XSD\_SHORT@{XSD\_SHORT}}
+\index{XSD\_SHORT@{XSD\_SHORT}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_SHORT}{XSD\_SHORT}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+S\+H\+O\+RT 136}
+
+\mbox{\Hypertarget{soap_8php_a5e0c7afcb07ba1d42c2f3e6e4eff84e6}\label{soap_8php_a5e0c7afcb07ba1d42c2f3e6e4eff84e6}} 
+\index{soap.php@{soap.php}!XSD\_STRING@{XSD\_STRING}}
+\index{XSD\_STRING@{XSD\_STRING}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_STRING}{XSD\_STRING}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+S\+T\+R\+I\+NG 101}
+
+\mbox{\Hypertarget{soap_8php_a62736e73a3b91bb3bc98dda73bf9b9aa}\label{soap_8php_a62736e73a3b91bb3bc98dda73bf9b9aa}} 
+\index{soap.php@{soap.php}!XSD\_TIME@{XSD\_TIME}}
+\index{XSD\_TIME@{XSD\_TIME}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_TIME}{XSD\_TIME}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+T\+I\+ME 108}
+
+\mbox{\Hypertarget{soap_8php_a1d192fd215f5d83c782e3a8625deeb0f}\label{soap_8php_a1d192fd215f5d83c782e3a8625deeb0f}} 
+\index{soap.php@{soap.php}!XSD\_TOKEN@{XSD\_TOKEN}}
+\index{XSD\_TOKEN@{XSD\_TOKEN}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_TOKEN}{XSD\_TOKEN}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+T\+O\+K\+EN 121}
+
+\mbox{\Hypertarget{soap_8php_a04c1986e5a1a52a821d01c540af91884}\label{soap_8php_a04c1986e5a1a52a821d01c540af91884}} 
+\index{soap.php@{soap.php}!XSD\_UNSIGNEDBYTE@{XSD\_UNSIGNEDBYTE}}
+\index{XSD\_UNSIGNEDBYTE@{XSD\_UNSIGNEDBYTE}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_UNSIGNEDBYTE}{XSD\_UNSIGNEDBYTE}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+B\+Y\+TE 142}
+
+\mbox{\Hypertarget{soap_8php_a9c45a6dfd8f5277596614e2e020fb8b2}\label{soap_8php_a9c45a6dfd8f5277596614e2e020fb8b2}} 
+\index{soap.php@{soap.php}!XSD\_UNSIGNEDINT@{XSD\_UNSIGNEDINT}}
+\index{XSD\_UNSIGNEDINT@{XSD\_UNSIGNEDINT}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_UNSIGNEDINT}{XSD\_UNSIGNEDINT}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+I\+NT 140}
+
+\mbox{\Hypertarget{soap_8php_a6b4cae56651f6f77d169c2b46f10d66e}\label{soap_8php_a6b4cae56651f6f77d169c2b46f10d66e}} 
+\index{soap.php@{soap.php}!XSD\_UNSIGNEDLONG@{XSD\_UNSIGNEDLONG}}
+\index{XSD\_UNSIGNEDLONG@{XSD\_UNSIGNEDLONG}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_UNSIGNEDLONG}{XSD\_UNSIGNEDLONG}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+L\+O\+NG 139}
+
+\mbox{\Hypertarget{soap_8php_a22e854b416360e4369afb5bcbc5b4d4f}\label{soap_8php_a22e854b416360e4369afb5bcbc5b4d4f}} 
+\index{soap.php@{soap.php}!XSD\_UNSIGNEDSHORT@{XSD\_UNSIGNEDSHORT}}
+\index{XSD\_UNSIGNEDSHORT@{XSD\_UNSIGNEDSHORT}!soap.php@{soap.php}}
+\doxysubsubsection{\texorpdfstring{XSD\_UNSIGNEDSHORT}{XSD\_UNSIGNEDSHORT}}
+{\footnotesize\ttfamily const X\+S\+D\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+S\+H\+O\+RT 141}
+

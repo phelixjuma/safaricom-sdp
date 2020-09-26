@@ -1,0 +1,59 @@
+.TH "vendor/jetbrains/phpstorm-stubs/igbinary/igbinary.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/igbinary/igbinary.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBigbinary_serialize\fP ($value)"
+.br
+.ti -1c
+.RI "\fBigbinary_unserialize\fP ($str)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "igbinary_serialize ( $value)"
+Generates a storable representation of a value\&. This is useful for storing or passing PHP values around without losing their type and structure\&. To make the serialized string into a PHP value again, use \fBigbinary_unserialize\fP\&.
+.PP
+\fBigbinary_serialize()\fP handles all types, except the resource-type\&. You can even \fBserialize()\fP arrays that contain references to itself\&. Circular references inside the array/object you are \fBserialize()\fPing will also be stored\&.
+.PP
+If object implements \fBSerializable\fP -interface, PHP will call the member function serialize to get serialized representation of object\&.
+.PP
+When serializing objects, PHP will attempt to call the member function __sleep prior to serialization\&. This is to allow the object to do any last minute clean-up, etc\&. prior to being serialized\&. Likewise, when the object is restored using \fBunserialize()\fP the __wakeup member function is called\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP The value to be serialized\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string Returns a string containing a byte-stream representation of value that can be stored anywhere\&. \fBPHP default serialize \fP
+.RE
+.PP
+
+.SS "igbinary_unserialize ( $str)"
+Creates a PHP value from a stored representation\&. \fBigbinary_unserialize()\fP takes a single serialized variable and converts it back into a PHP value\&.
+.PP
+If the variable being unserialized is an object, after successfully reconstructing the object PHP will automatically attempt to call the __wakeup() member function (if it exists)\&. In case the passed string is not unserializeable, NULL is returned and E_WARNING is issued\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$str\fP The serialized string\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+mixed The converted value is returned, and can be a boolean, integer, float, string, array or object\&. \fBPHP default unserialize  https://secure.php.net/~helly/php/ext/spl/interfaceSerializable.html Serializable \fP
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

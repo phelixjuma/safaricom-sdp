@@ -1,0 +1,594 @@
+.TH "vendor/jetbrains/phpstorm-stubs/libevent/libevent.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/libevent/libevent.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBevent_base_new\fP ()"
+.br
+.ti -1c
+.RI "\fBevent_base_free\fP ($event_base)"
+.br
+.ti -1c
+.RI "\fBevent_base_loop\fP ($event_base, $flags=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBevent_base_loopbreak\fP ($event_base)"
+.br
+.ti -1c
+.RI "\fBevent_base_loopexit\fP ($event_base, $timeout=\-1)"
+.br
+.ti -1c
+.RI "\fBevent_base_set\fP ($event, $base)"
+.br
+.ti -1c
+.RI "\fBevent_base_priority_init\fP ($event_base, $npriorities)"
+.br
+.ti -1c
+.RI "\fBevent_new\fP ()"
+.br
+.ti -1c
+.RI "\fBevent_free\fP ($event)"
+.br
+.ti -1c
+.RI "\fBevent_add\fP ($event, $timeout=\-1)"
+.br
+.ti -1c
+.RI "\fBevent_set\fP ($event, $fd, $events, $\fBcallback\fP, $arg=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBevent_del\fP ($event)"
+.br
+.ti -1c
+.RI "\fBevent_buffer_new\fP ($stream, $readcb, $writecb, $errorcb, $arg=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBevent_buffer_free\fP ($bevent)"
+.br
+.ti -1c
+.RI "\fBevent_buffer_base_set\fP ($bevent, $event_base)"
+.br
+.ti -1c
+.RI "\fBevent_buffer_priority_set\fP ($bevent, $priority)"
+.br
+.ti -1c
+.RI "\fBevent_buffer_write\fP ($bevent, $data, $data_size=\-1)"
+.br
+.ti -1c
+.RI "\fBevent_buffer_read\fP ($bevent, $data_size)"
+.br
+.ti -1c
+.RI "\fBevent_buffer_enable\fP ($bevent, $events)"
+.br
+.ti -1c
+.RI "\fBevent_buffer_disable\fP ($bevent, $events)"
+.br
+.ti -1c
+.RI "\fBevent_buffer_timeout_set\fP ($bevent, $read_timeout, $write_timeout)"
+.br
+.ti -1c
+.RI "\fBevent_buffer_watermark_set\fP ($bevent, $events, $lowmark, $highmark)"
+.br
+.ti -1c
+.RI "\fBevent_buffer_fd_set\fP ($bevent, $fd)"
+.br
+.ti -1c
+.RI "\fBevent_buffer_set_callback\fP ($bevent, $readcb, $writecb, $errorcb, $arg=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBevent_timer_new\fP ()"
+.br
+.ti -1c
+.RI "\fBevent_timer_set\fP ($event, $\fBcallback\fP, $arg=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBevent_timer_pending\fP ($event, $timeout=\-1)"
+.br
+.ti -1c
+.RI "\fBevent_timer_add\fP ($event, $timeout=\-1)"
+.br
+.ti -1c
+.RI "\fBevent_timer_del\fP ($event)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBEV_TIMEOUT\fP 1"
+.br
+.ti -1c
+.RI "const \fBEV_READ\fP 2"
+.br
+.ti -1c
+.RI "const \fBEV_WRITE\fP 4"
+.br
+.ti -1c
+.RI "const \fBEV_SIGNAL\fP 8"
+.br
+.ti -1c
+.RI "const \fBEV_PERSIST\fP 16"
+.br
+.ti -1c
+.RI "const \fBEVLOOP_ONCE\fP 1"
+.br
+.ti -1c
+.RI "const \fBEVLOOP_NONBLOCK\fP 2"
+.br
+.ti -1c
+.RI "const \fBEVBUFFER_READ\fP 1"
+.br
+.ti -1c
+.RI "const \fBEVBUFFER_WRITE\fP 2"
+.br
+.ti -1c
+.RI "const \fBEVBUFFER_EOF\fP 16"
+.br
+.ti -1c
+.RI "const \fBEVBUFFER_ERROR\fP 32"
+.br
+.ti -1c
+.RI "const \fBEVBUFFER_TIMEOUT\fP 64"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "event_add ( $event,  $timeout = \fC\-1\fP)"
+Add an event to the set of monitored events
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+Schedules the execution of the non-pending event (makes it pending in it's configured base) when the event specified in \fBevent_set\fP() occurs or in at least the time specified by the timeout argument\&. If timeout was not specified, not timeout is set\&. The event must be already initalized by \fBevent_set\fP() and \fBevent_base_set\fP() functions\&. If the event already has a timeout set, it is replaced by the new one\&.
+.PP
+If you call \fBevent_add\fP() on an event that is already pending, it will leave it pending, and reschedule it with the provided timeout\&.
+.PP
+\fBresource $event \fP Valid event resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+Optional timeout (in microseconds)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool returns TRUE on success or FALSE on error\&. 
+.RE
+.PP
+
+.SS "event_base_free ( $event_base)"
+Destroy event base
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+Destroys the specified event_base and frees all the resources associated\&. Note that it's not possible to destroy an event base with events attached to it\&.
+.PP
+\fBresource $event_base Valid event base resource\&.  void \fP
+.SS "event_base_loop ( $event_base,  $flags = \fC\fBnull\fP\fP)"
+Handle events
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+Starts event loop for the specified event base\&.
+.PP
+By default, the \fBevent_base_loop\fP() function runs an event_base until there are no more events registered in it\&. To run the loop, it repeatedly checks whether any of the registered events has triggered (for example, if a read event's file descriptor is ready to read, or if a timeout event's timeout is ready to expire)\&. Once this happens, it marks all triggered events as 'active', and starts to run them\&. 
+.PP
+You can change the behavior of \fBevent_base_loop()\fP by setting one or more flags in its flags argument\&. If EVLOOP_ONCE is set, then the loop will wait until some events become active, then run active events until there are no more to run, then return\&. If EVLOOP_NONBLOCK is set, then the loop will not wait for events to trigger: it will only check whether any events are ready to trigger immediately, and run their callbacks if so\&. 
+.PP
+\fBresource $event_base Valid event base resource\&.  int $flags [optional] Optional parameter, which can take any combination of EVLOOP_ONCE and EVLOOP_NONBLOCK\&.  int \fP Returns 0 if it exited normally, -1 if it exited because of some unhandled error in the backend and 1 if no events were registered\&. 
+.SS "event_base_loopbreak ( $event_base)"
+Tells the event_base to exit its loop immediately\&.
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+It differs from \fBevent_base_loopexit\fP() in that if the event_base is currently running callbacks for any active events, it will exit immediately after finishing the one it's currently processing\&. The behaviour is similar to break statement\&.
+.PP
+\fBresource $event_base Valid event base resource\&.  bool returns TRUE on success or FALSE on error\&. \fP
+.SS "event_base_loopexit ( $event_base,  $timeout = \fC\-1\fP)"
+Tells an event_base to stop looping after a given time has elapsed
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+If the event_base is currently running callbacks for any active events, it will continue running them, and not exit until they have all been run\&.
+.PP
+If event loop isn't running \fBevent_base_loopexit\fP() schedules the next instance of the event loop to stop right after the next round of callbacks are run (as if it had been invoked with EVLOOP_ONCE)\&.
+.PP
+\fBresource $event_base \fP Valid event base resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+Optional timeout parameter (in microseconds)\&. If lower then 1, the event_base stops looping without a delay\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool returns TRUE on success or FALSE on error\&. 
+.RE
+.PP
+
+.SS "event_base_new ()"
+Create and initialize new event base
+.PP
+Returns new event base, which can be used later in \fBevent_base_set\fP(), \fBevent_base_loop\fP() and other functions\&.
+.PP
+\fBresource|false returns valid event base resource on success or FALSE on error\&. \fP
+.SS "event_base_priority_init ( $event_base,  $npriorities)"
+Set the number of different event priority levels
+.PP
+(PECL libevent >= 0\&.0\&.2)
+.PP
+By default all events are scheduled with the same priority (npriorities/2)\&. Using \fBevent_base_priority_init\fP() you can change the number of event priority levels and then set a desired priority for each event\&.
+.PP
+\fBresource $event_base Valid event base resource\&.  int $npriorities The number of event priority levels\&.  bool returns TRUE on success or FALSE on error\&. \fP
+.SS "event_base_set ( $event,  $base)"
+Associate event base with an event
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+Associates the event_base with the event\&.
+.PP
+\fBresource $event Valid event resource\&.  resource $base Valid event base resource\&.  bool returns TRUE on success or FALSE on error\&. \fP
+.SS "event_buffer_base_set ( $bevent,  $event_base)"
+Associate buffered event with an event base
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+Assign the specified bevent to the event_base\&.
+.PP
+\fBresource $bevent Valid buffered event resource\&.  resource $event_base Valid event base resource\&.  bool returns TRUE on success or FALSE on error\&. \fP
+.SS "event_buffer_disable ( $bevent,  $events)"
+Disable a buffered event
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+Disables the specified buffered event\&.
+.PP
+\fBresource $bevent Valid buffered event resource\&.  int $events Any combination of EV_READ and EV_WRITE\&.  bool returns TRUE on success or FALSE on error\&. \fP
+.SS "event_buffer_enable ( $bevent,  $events)"
+Enables the specified buffered event\&.
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+\fBresource $bevent Valid buffered event resource\&.  int $events Any combination of EV_READ and EV_WRITE\&.  bool returns TRUE on success or FALSE on error\&. \fP
+.SS "event_buffer_fd_set ( $bevent,  $fd)"
+Changes the file descriptor on which the buffered event operates\&.
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+\fBresource $bevent Valid buffered event resource\&.  resource $fd Valid PHP stream, must be castable to file descriptor\&.  void \fP
+.SS "event_buffer_free ( $bevent)"
+Destroys the specified buffered event and frees all the resources associated\&.
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+\fBresource $bevent Valid buffered event resource\&.  void \fP
+.SS "event_buffer_new ( $stream,  $readcb,  $writecb,  $errorcb,  $arg = \fC\fBnull\fP\fP)"
+Create new buffered event
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+Libevent provides an abstraction layer on top of the regular event API\&. Using buffered event you don't need to deal with the I/O manually, instead it provides input and output buffers that get filled and drained automatically\&.
+.PP
+Every bufferevent has two data-related callbacks: a read callback and a write callback\&. By default, the read callback is called whenever any data is read from the underlying transport, and the write callback is called whenever enough data from the output buffer is emptied to the underlying transport\&. You can override the behavior of these functions by adjusting the read and write 'watermarks' of the bufferevent (see \fBevent_buffer_watermark_set\fP())\&.
+.PP
+\fBA\fP bufferevent also has an 'error' or 'event' callback that gets invoked to tell the application about non-data-oriented events, like when a connection is closed or an error occurs\&.
+.PP
+\fBresource $stream Valid PHP stream resource\&. Must be castable to file descriptor\&.  callback|null $readcb Callback to invoke where there is data to read, or NULL if no callback is desired\&.  callback|null $writecb Callback to invoke where the descriptor is ready for writing, or NULL if no callback is desired\&.  callback $errorcb Callback to invoke where there is an error on the descriptor, cannot be NULL\&.  mixed $arg An argument that will be passed to each of the callbacks (optional)\&.  resource|false returns new buffered event resource on success or FALSE on error\&. \fP
+.SS "event_buffer_priority_set ( $bevent,  $priority)"
+Assign a priority to a buffered event\&. Use it after initializing event, but before adding an event to the event_base\&.
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+When multiple events trigger at the same time, Libevent does not define any order with respect to when their callbacks will be executed\&. You can define some events as more important than others by using priorities\&.
+.PP
+When multiple events of multiple priorities become active, the low-priority events are not run\&. Instead, Libevent runs the high priority events, then checks for events again\&. Only when no high-priority events are active are the low-priority events run\&.
+.PP
+When you do not set the priority for an event, the default is the number of queues in the event base, divided by 2\&.
+.PP
+\fBevent_base_priority_init  resource $bevent \fP Valid buffered event resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$priority\fP 
+.RE
+.PP
+Priority level\&. Cannot be less than 0 and cannot exceed maximum priority level of the event base (see \fBevent_base_priority_init\fP())\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool returns TRUE on success or FALSE on error\&. 
+.RE
+.PP
+
+.SS "event_buffer_read ( $bevent,  $data_size)"
+Reads data from the input buffer of the buffered event\&.
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+\fBresource $bevent Valid buffered event resource\&.  int $data_size Data size in bytes\&.  string \fP
+.SS "event_buffer_set_callback ( $bevent,  $readcb,  $writecb,  $errorcb,  $arg = \fC\fBnull\fP\fP)"
+Set or reset callbacks for a buffered event
+.PP
+(PECL libevent >= 0\&.0\&.4)
+.PP
+Sets or changes existing callbacks for the buffered event\&.
+.PP
+\fBresource $bevent Valid buffered event resource\&.  callback|null $readcb Callback to invoke where there is data to read, or NULL if no callback is desired\&.  callback|null $writecb Callback to invoke where the descriptor is ready for writing, or NULL if no callback is desired\&.  callback $errorcb Callback to invoke where there is an error on the descriptor, cannot be NULL\&.  mixed $arg An argument that will be passed to each of the callbacks (optional)\&.  bool returns TRUE on success or FALSE on error\&. \fP
+.SS "event_buffer_timeout_set ( $bevent,  $read_timeout,  $write_timeout)"
+Sets the read and write timeouts for the specified buffered event\&.
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+\fBresource $bevent Valid buffered event resource\&.  int $read_timeout Read timeout (in seconds)\&.  int $write_timeout Write timeout (in seconds)\&.  void \fP
+.SS "event_buffer_watermark_set ( $bevent,  $events,  $lowmark,  $highmark)"
+Set the watermarks for read and write events\&.
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+Every bufferevent has four watermarks:
+.PP
+\fBRead low-water mark\fP
+.br
+ Whenever a read occurs that leaves the bufferevent's input buffer at this level or higher, the bufferevent's read callback is invoked\&. Defaults to 0, so that every read results in the read callback being invoked\&.
+.PP
+\fBRead high-water mark\fP
+.br
+ If the bufferevent's input buffer ever gets to this level, the bufferevent stops reading until enough data is drained from the input buffer to take us below it again\&. Defaults to unlimited, so that we never stop reading because of the size of the input buffer\&.
+.PP
+\fBWrite low-water mark\fP
+.br
+ Whenever a write occurs that takes us to this level or below, we invoke the write callback\&. Defaults to 0, so that a write callback is not invoked unless the output buffer is emptied\&.
+.PP
+\fBWrite high-water mark\fP
+.br
+ Not used by a bufferevent directly, this watermark can have special meaning when a bufferevent is used as the underlying transport of another bufferevent\&.
+.PP
+Libevent does not invoke read callback unless there is at least lowmark bytes in the input buffer; if the read buffer is beyond the highmark, reading is stopped\&. On output, the write callback is invoked whenever the buffered data falls below the lowmark\&.
+.PP
+\fBresource $bevent Valid buffered event resource\&.  int $events Any combination of EV_READ and EV_WRITE\&.  int $lowmark Low watermark\&.  int $highmark High watermark\&.  void \fP
+.SS "event_buffer_write ( $bevent,  $data,  $data_size = \fC\-1\fP)"
+Writes data to the specified buffered event\&.
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+The data is appended to the output buffer and written to the descriptor when it becomes available for writing\&.
+.PP
+\fBresource $bevent Valid buffered event resource\&.  string $data The data to be written\&.  int $data_size Optional size parameter\&.  event_buffer_write}() writes all the data by default  bool returns TRUE on success or FALSE on error\&. \fP
+.SS "event_del ( $event)"
+Remove an event from the set of monitored events\&.
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+Calling \fBevent_del\fP() on an initialized event makes it non-pending and non-active\&. If the event was not pending or active, there is no effect\&.
+.PP
+\fBresource $event Valid event resource\&.  bool returns TRUE on success or FALSE on error\&. \fP
+.SS "event_free ( $event)"
+Free event resource\&.
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+\fBresource $event Valid event resource\&.  void \fP
+.SS "event_new ()"
+Creates and returns a new event resource\&.
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+\fBresource|false returns a new event resource on success or FALSE on error\&. \fP
+.SS "event_set ( $event,  $fd,  $events,  $callback,  $arg = \fC\fBnull\fP\fP)"
+Prepares the event to be used in \fBevent_add\fP()\&.
+.PP
+(PECL libevent >= 0\&.0\&.1)
+.PP
+The event is prepared to call the function specified by the callback on the events specified in parameter events, which is a set of the following flags: EV_TIMEOUT, EV_SIGNAL, EV_READ, EV_WRITE and EV_PERSIST\&.
+.PP
+EV_SIGNAL support was added in version 0\&.0\&.4
+.PP
+After initializing the event, use \fBevent_base_set\fP() to associate the event with its event base\&.
+.PP
+In case of matching event, these three arguments are passed to the callback function: \fB$fd\fP Signal number or resource indicating the stream\&.  \fB$events\fP \fBA\fP flag indicating the event\&. Consists of the following flags: EV_TIMEOUT, EV_SIGNAL, EV_READ, EV_WRITE and EV_PERSIST\&.  \fB$arg\fP Optional parameter, previously passed to \fBevent_set\fP() as arg\&.  
+.PP
+\fBresource $event \fP Valid event resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fd\fP 
+.RE
+.PP
+Valid PHP stream resource\&. The stream must be castable to file descriptor, so you most likely won't be able to use any of filtered streams\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$events\fP 
+.RE
+.PP
+\fBA\fP set of flags indicating the desired event, can be EV_READ and/or EV_WRITE\&. The additional flag EV_PERSIST makes the event to persist until \fBevent_del\fP() is called, otherwise the callback is invoked only once\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$callback\fP 
+.RE
+.PP
+Callback function to be called when the matching event occurs\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$arg\fP [optional] 
+.RE
+.PP
+Optional callback parameter\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool returns TRUE on success or FALSE on error\&. 
+.RE
+.PP
+
+.SS "event_timer_add ( $event,  $timeout = \fC\-1\fP)"
+Alias of \fBevent_add\fP()\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$event\fP 
+.RE
+.PP
+Valid event resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+Optional timeout (in microseconds)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool returns TRUE on success or FALSE on error\&. 
+.RE
+.PP
+
+.SS "event_timer_del ( $event)"
+Alias of \fBevent_del\fP()\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$event\fP Valid event resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool returns TRUE on success or FALSE on error\&. 
+.RE
+.PP
+
+.SS "event_timer_new ()"
+Alias of \fBevent_new\fP()\&.
+.PP
+\fBReturns\fP
+.RS 4
+resource|false returns valid event base resource on success or FALSE on error\&. 
+.RE
+.PP
+
+.SS "event_timer_pending ( $event,  $timeout = \fC\-1\fP)"
+Checks if a specific event is pending or scheduled\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$event\fP 
+.RE
+.PP
+Valid event resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+Optional timeout (in microseconds)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool TRUE if event is not scheduled (added) FALSE otherwise 
+.RE
+.PP
+
+.SS "event_timer_set ( $event,  $callback,  $arg = \fC\fBnull\fP\fP)"
+Prepares the timer event to be used in \fBevent_add\fP()\&.
+.PP
+The event is prepared to call the function specified by the callback on the timeout event (EV_TIMEOUT)\&.
+.PP
+After initializing the event, use \fBevent_base_set\fP() to associate the event with its event base\&.
+.PP
+In case of matching event, these three arguments are passed to the callback function: \fB$fd\fP null  \fB$events\fP \fBA\fP flag indicating the event\&. EV_TIMEOUT\&.  \fB$arg\fP Optional parameter, previously passed to \fBevent_timer_set\fP() as arg\&.  
+.PP
+\fBParameters\fP
+.RS 4
+\fI$event\fP 
+.RE
+.PP
+Valid event resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$callback\fP 
+.RE
+.PP
+Callback function to be called when the matching event occurs\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$arg\fP [optional] 
+.RE
+.PP
+Optional callback parameter\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const EV_PERSIST 16"
+Indicates that the event is persistent\&.
+.PP
+By default, whenever a pending event becomes active (because its fd is ready to read or write, or because its timeout expires), it becomes non-pending right before its callback is executed\&. Thus, if you want to make the event pending again, you can call \fBevent_add()\fP on it again from inside the callback function\&.
+.PP
+If the EV_PERSIST flag is set on an event, however, the event is persistent\&. This means that event remains pending even when its callback is activated\&. If you want to make it non-pending from within its callback, you can call \fBevent_del()\fP on it\&.
+.PP
+The timeout on a persistent event resets whenever the event's callback runs\&. Thus, if you have an event with flags EV_READ|EV_PERSIST and a timeout of five seconds, the event will become active:
+.PP
+Whenever the socket is ready for reading\&.
+.PP
+Whenever five seconds have passed since the event last became active\&. 
+.SS "const EV_READ 2"
+This flag indicates an event that becomes active when the provided file descriptor is ready for reading\&. 
+.SS "const EV_SIGNAL 8"
+Used to implement signal detection\&. 
+.SS "const EV_TIMEOUT 1"
+This flag indicates an event that becomes active after a timeout elapses\&.
+.PP
+The EV_TIMEOUT flag is ignored when constructing an event: you can either set a timeout when you add the event, or not\&. It is set in the 'what' argument to the callback function when a timeout has occurred\&. 
+.SS "const EV_WRITE 4"
+This flag indicates an event that becomes active when the provided file descriptor is ready for writing\&. 
+.SS "const EVBUFFER_EOF 16"
+We finished a requested connection on the bufferevent\&. 
+.SS "const EVBUFFER_ERROR 32"
+An error occurred during a bufferevent operation\&. For more information on what the error was, call \fBsocket_strerror\fP()\&. 
+.SS "const EVBUFFER_READ 1"
+An event occured during a read operation on the bufferevent\&. See the other flags for which event it was\&. 
+.SS "const EVBUFFER_TIMEOUT 64"
+\fBA\fP timeout expired on the bufferevent\&. 
+.SS "const EVBUFFER_WRITE 2"
+An event occured during a write operation on the bufferevent\&. See the other flags for which event it was\&. 
+.SS "const EVLOOP_NONBLOCK 2"
+\fBEvent\fP base loop mode\&. Not wait for events to trigger, only check whether any events are ready to trigger immediately\&.
+.PP
+\fBSee also\fP
+.RS 4
+\fBevent_base_loop\fP 
+.RE
+.PP
+
+.SS "const EVLOOP_ONCE 1"
+\fBEvent\fP base loop mode\&. Starts only one iteration of loop\&.
+.PP
+\fBSee also\fP
+.RS 4
+\fBevent_base_loop\fP 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

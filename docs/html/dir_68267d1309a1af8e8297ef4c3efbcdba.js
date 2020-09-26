@@ -10,13 +10,13 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "Request.php", "_request_8php.html", [
       [ "Request", "class_phelix_1_1_safaricom_s_d_p_1_1_request.html", "class_phelix_1_1_safaricom_s_d_p_1_1_request" ]
     ] ],
-    [ "Response.php", "_response_8php.html", [
-      [ "Response", "class_phelix_1_1_safaricom_s_d_p_1_1_response.html", null ]
-    ] ],
     [ "SDP.php", "_s_d_p_8php.html", [
       [ "SDP", "class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p.html", "class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p" ]
     ] ],
     [ "Subscription.php", "_subscription_8php.html", [
       [ "Subscription", "class_phelix_1_1_safaricom_s_d_p_1_1_subscription.html", "class_phelix_1_1_safaricom_s_d_p_1_1_subscription" ]
+    ] ],
+    [ "Utils.php", "_utils_8php.html", [
+      [ "Utils", "class_phelix_1_1_safaricom_s_d_p_1_1_utils.html", null ]
     ] ]
 ];

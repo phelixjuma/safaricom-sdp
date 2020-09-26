@@ -1,0 +1,853 @@
+.TH "vendor/jetbrains/phpstorm-stubs/posix/posix.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/posix/posix.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBposix_kill\fP ($pid, $sig)"
+.br
+.ti -1c
+.RI "\fBposix_getpid\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_getppid\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_getuid\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_setuid\fP ($uid)"
+.br
+.ti -1c
+.RI "\fBposix_geteuid\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_seteuid\fP ($uid)"
+.br
+.ti -1c
+.RI "\fBposix_setrlimit\fP ($resource, $softlimit, $hardlimit)"
+.br
+.ti -1c
+.RI "\fBposix_getgid\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_setgid\fP ($gid)"
+.br
+.ti -1c
+.RI "\fBposix_getegid\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_setegid\fP ($gid)"
+.br
+.ti -1c
+.RI "\fBposix_getgroups\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_getlogin\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_getpgrp\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_setsid\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_setpgid\fP ($pid, $pgid)"
+.br
+.ti -1c
+.RI "\fBposix_getpgid\fP ($pid)"
+.br
+.ti -1c
+.RI "\fBposix_getsid\fP ($pid)"
+.br
+.ti -1c
+.RI "\fBposix_uname\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_times\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_ctermid\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_ttyname\fP ($fd)"
+.br
+.ti -1c
+.RI "\fBposix_isatty\fP ($fd)"
+.br
+.ti -1c
+.RI "\fBposix_getcwd\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_mkfifo\fP ($pathname, $mode)"
+.br
+.ti -1c
+.RI "\fBposix_mknod\fP ($pathname, $mode, $major=0, $minor=0)"
+.br
+.ti -1c
+.RI "\fBposix_access\fP ($\fBfile\fP, $mode=\fBPOSIX_F_OK\fP)"
+.br
+.ti -1c
+.RI "\fBposix_getgrnam\fP ($name)"
+.br
+.ti -1c
+.RI "\fBposix_getgrgid\fP ($gid)"
+.br
+.ti -1c
+.RI "\fBposix_getpwnam\fP ($username)"
+.br
+.ti -1c
+.RI "\fBposix_getpwuid\fP ($uid)"
+.br
+.ti -1c
+.RI "\fBposix_getrlimit\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_get_last_error\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_errno\fP ()"
+.br
+.ti -1c
+.RI "\fBposix_strerror\fP ($errno)"
+.br
+.ti -1c
+.RI "\fBposix_initgroups\fP ($name, $base_group_id)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBPOSIX_F_OK\fP 0"
+.br
+.ti -1c
+.RI "const \fBPOSIX_X_OK\fP 1"
+.br
+.ti -1c
+.RI "const \fBPOSIX_W_OK\fP 2"
+.br
+.ti -1c
+.RI "const \fBPOSIX_R_OK\fP 4"
+.br
+.ti -1c
+.RI "const \fBPOSIX_S_IFREG\fP 32768"
+.br
+.ti -1c
+.RI "const \fBPOSIX_S_IFCHR\fP 8192"
+.br
+.ti -1c
+.RI "const \fBPOSIX_S_IFBLK\fP 24576"
+.br
+.ti -1c
+.RI "const \fBPOSIX_S_IFIFO\fP 4096"
+.br
+.ti -1c
+.RI "const \fBPOSIX_S_IFSOCK\fP 49152"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_AS\fP 5"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_CORE\fP 4"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_CPU\fP 0"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_DATA\fP 2"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_FSIZE\fP 1"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_LOCKS\fP 10"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_MSGQUEUE\fP 12"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_NICE\fP 13"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_RTPRIO\fP 14"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_RTTIME\fP 15"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_SIGPENDING\fP 11"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_MEMLOCK\fP 6"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_NOFILE\fP 8"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_NPROC\fP 7"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_RSS\fP 5"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_STACK\fP 3"
+.br
+.ti -1c
+.RI "const \fBPOSIX_RLIMIT_INFINITY\fP 9223372036854775807"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "posix_access ( $file,  $mode = \fC\fBPOSIX_F_OK\fP\fP)"
+Determine accessibility of a file \fBstring $file \fP The name of the file to be tested\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+\fBA\fP mask consisting of one or more of \fBPOSIX_F_OK\fP, \fBPOSIX_R_OK\fP, \fBPOSIX_W_OK\fP and \fBPOSIX_X_OK\fP\&. 
+.PP
+\fBPOSIX_R_OK\fP, \fBPOSIX_W_OK\fP and \fBPOSIX_X_OK\fP request checking whether the file exists and has read, write and execute permissions, respectively\&. \fBPOSIX_F_OK\fP just requests checking for the existence of the file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "posix_ctermid ()"
+Get path name of controlling terminal \fBstring|false Upon successful completion, returns string of the pathname to the current controlling terminal\&. Otherwise \fBFALSE\fP is returned and errno is set, which can be checked with \fBposix_get_last_error\fP\&.  4\&.0  5\&.0 \fP
+.SS "posix_errno ()"
+Alias of \fBposix_get_last_error\fP \fB4\&.2  5\&.0 \fP
+.SS "posix_get_last_error ()"
+Retrieve the error number set by the last posix function that failed \fBint the errno (error number) set by the last posix function that failed\&. If no errors exist, 0 is returned\&.  4\&.2  5\&.0 \fP
+.SS "posix_getcwd ()"
+Pathname of current directory \fBstring a string of the absolute pathname on success\&. On error, returns \fBFALSE\fP and sets errno which can be checked with \fBposix_get_last_error\fP\&.  4\&.0  5\&.0 \fP
+.SS "posix_getegid ()"
+Return the effective group ID of the current process \fBint an integer of the effective group ID\&.  4\&.0  5\&.0 \fP
+.SS "posix_geteuid ()"
+Return the effective user ID of the current process \fBint the user id, as an integer  4\&.0  5\&.0 \fP
+.SS "posix_getgid ()"
+Return the real group ID of the current process \fBint the real group id, as an integer\&.  4\&.0  5\&.0 \fP
+.SS "posix_getgrgid ( $gid)"
+Return info about a group by group id \fBint $gid \fP The group id\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array The array elements returned are: group information array 
+.RE
+.PP
+.PP
+Element 
+.PP
+Description  
+.PP
+name 
+.PP
+The name element contains the name of the group\&. This is a short, usually less than 16 character 'handle' of the group, not the real, full name\&.   
+.PP
+passwd 
+.PP
+The passwd element contains the group's password in an encrypted format\&. Often, for example on a system employing 'shadow' passwords, an asterisk is returned instead\&.   
+.PP
+gid 
+.PP
+Group ID, should be the same as the \fIgid\fP parameter used when calling the function, and hence redundant\&.   
+.PP
+members 
+.PP
+This consists of an array of string's for all the members in the group\&.   
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_getgrnam ( $name)"
+Return info about a group by name \fBstring $name \fPThe name of the group
+.PP
+\fBReturns\fP
+.RS 4
+array The array elements returned are: group information array 
+.RE
+.PP
+.PP
+Element 
+.PP
+Description  
+.PP
+name 
+.PP
+The name element contains the name of the group\&. This is a short, usually less than 16 character 'handle' of the group, not the real, full name\&. This should be the same as the \fIname\fP parameter used when calling the function, and hence redundant\&.   
+.PP
+passwd 
+.PP
+The passwd element contains the group's password in an encrypted format\&. Often, for example on a system employing 'shadow' passwords, an asterisk is returned instead\&.   
+.PP
+gid 
+.PP
+Group ID of the group in numeric form\&.   
+.PP
+members 
+.PP
+This consists of an array of string's for all the members in the group\&.   
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_getgroups ()"
+Return the group set of the current process \fBarray an array of integers containing the numeric group ids of the group set of the current process\&.  4\&.0  5\&.0 \fP
+.SS "posix_getlogin ()"
+Return login name \fBstring the login name of the user, as a string\&.  4\&.0  5\&.0 \fP
+.SS "posix_getpgid ( $pid)"
+Get process group id for job control \fBint $pid \fP The process id\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the identifier, as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_getpgrp ()"
+Return the current process group identifier \fBint the identifier, as an integer\&.  4\&.0  5\&.0 \fP
+.SS "posix_getpid ()"
+Return the current process identifier \fBint the identifier, as an integer\&.  4\&.0  5\&.0 \fP
+.SS "posix_getppid ()"
+Return the parent process identifier \fBint the identifier, as an integer\&.  4\&.0  5\&.0 \fP
+.SS "posix_getpwnam ( $username)"
+Return info about a user by username \fBstring $username \fP An alphanumeric username\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array On success an array with the following elements is returned, else \fBFALSE\fP is returned: user information array 
+.RE
+.PP
+.PP
+Element 
+.PP
+Description  
+.PP
+name 
+.PP
+The name element contains the username of the user\&. This is a short, usually less than 16 character 'handle' of the user, not the real, full name\&. This should be the same as the \fIusername\fP parameter used when calling the function, and hence redundant\&.   
+.PP
+passwd 
+.PP
+The passwd element contains the user's password in an encrypted format\&. Often, for example on a system employing 'shadow' passwords, an asterisk is returned instead\&.   
+.PP
+uid 
+.PP
+User ID of the user in numeric form\&.   
+.PP
+gid 
+.PP
+The group ID of the user\&. Use the function \fBposix_getgrgid\fP to resolve the group name and a list of its members\&.   
+.PP
+gecos 
+.PP
+GECOS is an obsolete term that refers to the finger information field on a Honeywell batch processing system\&. The field, however, lives on, and its contents have been formalized by POSIX\&. The field contains a comma separated list containing the user's full name, office phone, office number, and home phone number\&. On most systems, only the user's full name is available\&.   
+.PP
+dir 
+.PP
+This element contains the absolute path to the home directory of the user\&.   
+.PP
+shell 
+.PP
+The shell element contains the absolute path to the executable of the user's default shell\&.   
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_getpwuid ( $uid)"
+Return info about a user by user id \fBint $uid \fP The user identifier\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an associative array with the following elements: user information array 
+.RE
+.PP
+.PP
+Element 
+.PP
+Description  
+.PP
+name 
+.PP
+The name element contains the username of the user\&. This is a short, usually less than 16 character 'handle' of the user, not the real, full name\&.   
+.PP
+passwd 
+.PP
+The passwd element contains the user's password in an encrypted format\&. Often, for example on a system employing 'shadow' passwords, an asterisk is returned instead\&.   
+.PP
+uid 
+.PP
+User ID, should be the same as the \fIuid\fP parameter used when calling the function, and hence redundant\&.   
+.PP
+gid 
+.PP
+The group ID of the user\&. Use the function \fBposix_getgrgid\fP to resolve the group name and a list of its members\&.   
+.PP
+gecos 
+.PP
+GECOS is an obsolete term that refers to the finger information field on a Honeywell batch processing system\&. The field, however, lives on, and its contents have been formalized by POSIX\&. The field contains a comma separated list containing the user's full name, office phone, office number, and home phone number\&. On most systems, only the user's full name is available\&.   
+.PP
+dir 
+.PP
+This element contains the absolute path to the home directory of the user\&.   
+.PP
+shell 
+.PP
+The shell element contains the absolute path to the executable of the user's default shell\&.   
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_getrlimit ()"
+Return info about system resource limits \fBarray an associative array of elements for each limit that is defined\&. Each limit has a soft and a hard limit\&. \fP List of possible limits returned 
+.PP
+Limit name 
+.PP
+Limit description  
+.PP
+core 
+.PP
+The maximum size of the core file\&. When 0, not core files are created\&. When core files are larger than this size, they will be truncated at this size\&.   
+.PP
+totalmem 
+.PP
+The maximum size of the memory of the process, in bytes\&.   
+.PP
+virtualmem 
+.PP
+The maximum size of the virtual memory for the process, in bytes\&.   
+.PP
+data 
+.PP
+The maximum size of the data segment for the process, in bytes\&.   
+.PP
+stack 
+.PP
+The maximum size of the process stack, in bytes\&.   
+.PP
+rss 
+.PP
+The maximum number of virtual pages resident in RAM   
+.PP
+maxproc 
+.PP
+The maximum number of processes that can be created for the real user ID of the calling process\&.   
+.PP
+memlock 
+.PP
+The maximum number of bytes of memory that may be locked into RAM\&.   
+.PP
+cpu 
+.PP
+The amount of time the process is allowed to use the CPU\&.   
+.PP
+filesize 
+.PP
+The maximum size of the data segment for the process, in bytes\&.   
+.PP
+openfiles 
+.PP
+One more than the maximum number of open file descriptors\&.   
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_getsid ( $pid)"
+Get the current sid of the process \fBint $pid \fP The process identifier\&. If set to 0, the current process is assumed\&. If an invalid \fIpid\fP is specified, then \fBFALSE\fP is returned and an error is set which can be checked with \fBposix_get_last_error\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the identifier, as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_getuid ()"
+Return the real user ID of the current process \fBint the user id, as an integer  4\&.0  5\&.0 \fP
+.SS "posix_initgroups ( $name,  $base_group_id)"
+Calculate the group access list \fBstring $name \fP The user to calculate the list for\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$base_group_id\fP 
+.RE
+.PP
+Typically the group number from the password file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "posix_isatty ( $fd)"
+Determine if a file descriptor is an interactive terminal \fBmixed $fd \fP The file descriptor, which is expected to be either a file resource or an integer\&. An integer will be assumed to be a file descriptor that can be passed directly to the underlying system call\&.
+.br
+ In almost all cases, you will want to provide a file resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if \fIfd\fP is an open descriptor connected to a terminal and \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_kill ( $pid,  $sig)"
+Send a signal to a process \fBint $pid \fP The process identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sig\fP 
+.RE
+.PP
+One of the PCNTL signals constants\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_mkfifo ( $pathname,  $mode)"
+Create a fifo special file (a named pipe) \fBstring $pathname \fP Path to the FIFO file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+The second parameter \fImode\fP has to be given in octal notation (e\&.g\&. 0644)\&. The permission of the newly created FIFO also depends on the setting of the current \fBumask\fP\&. The permissions of the created file are (mode &#38;#38; ~umask)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_mknod ( $pathname,  $mode,  $major = \fC0\fP,  $minor = \fC0\fP)"
+Create a special or ordinary file (POSIX\&.1) \fBstring $pathname \fP The file to create 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+This parameter is constructed by a bitwise OR between file type (one of the following constants: \fBPOSIX_S_IFREG\fP, \fBPOSIX_S_IFCHR\fP, \fBPOSIX_S_IFBLK\fP, \fBPOSIX_S_IFIFO\fP or \fBPOSIX_S_IFSOCK\fP) and permissions\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$major\fP [optional] 
+.RE
+.PP
+The major device kernel identifier (required to pass when using \fBS_IFCHR\fP or \fBS_IFBLK\fP)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$minor\fP [optional] 
+.RE
+.PP
+The minor device kernel identifier\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "posix_setegid ( $gid)"
+Set the effective GID of the current process \fBint $gid \fP The group id\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_seteuid ( $uid)"
+Set the effective UID of the current process \fBint $uid \fP The user id\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_setgid ( $gid)"
+Set the GID of the current process \fBint $gid \fP The group id\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_setpgid ( $pid,  $pgid)"
+Set process group id for job control \fBint $pid \fP The process id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pgid\fP 
+.RE
+.PP
+The process group id\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_setrlimit ( $resource,  $softlimit,  $hardlimit)"
+Set system resource limits \fBint $resource \fP The \fBresource limit constant\fP corresponding to the limit that is being set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$softlimit\fP The soft limit, in whatever unit the resource limit requires, or POSIX_RLIMIT_INFINITY\&. 
+.br
+\fI$hardlimit\fP The hard limit, in whatever unit the resource limit requires, or POSIX_RLIMIT_INFINITY\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns TRUE on success or FALSE on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.0 
+.RE
+.PP
+
+.SS "posix_setsid ()"
+Make the current process a session leader \fBint the session id, or -1 on errors\&.  4\&.0  5\&.0 \fP
+.SS "posix_setuid ( $uid)"
+Set the UID of the current process \fBint $uid \fP The user id\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_strerror ( $errno)"
+Retrieve the system error message associated with the given errno \fBint $errno \fP \fBA\fP POSIX error number, returned by \fBposix_get_last_error\fP\&. If set to 0, then the string 'Success' is returned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the error message, as a string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_times ()"
+Get process times \fBarray a hash of strings with information about the current process CPU usage\&. The indices of the hash are: ticks - the number of clock ticks that have elapsed since reboot\&. utime - user time used by the current process\&. stime - system time used by the current process\&. cutime - user time used by current process and children\&. cstime - system time used by current process and children\&.  4\&.0  5\&.0 \fP
+.SS "posix_ttyname ( $fd)"
+Determine terminal device name \fBint $fd \fP The file descriptor\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false On success, returns a string of the absolute path of the \fIfd\fP\&. On failure, returns \fBFALSE\fP 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "posix_uname ()"
+Get system name \fBarray a hash of strings with information about the system\&. The indices of the hash are sysname - operating system name (e\&.g\&. Linux) nodename - system name (e\&.g\&. valiant) release - operating system release (e\&.g\&. 2\&.2\&.10) version - operating system version (e\&.g\&. #4 Tue Jul 20 17:01:36 MEST 1999) machine - system architecture (e\&.g\&. i586) domainname - DNS domainname (e\&.g\&. example\&.com) \fP 
+.PP
+domainname is a GNU extension and not part of POSIX\&.1, so this field is only available on GNU systems or when using the GNU libc\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const POSIX_F_OK 0"
+Check whether the file exists\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.php\fP
+.SS "const POSIX_R_OK 4"
+Check whether the file exists and has read permissions\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.php\fP
+.SS "const POSIX_RLIMIT_AS 5"
+The maximum size of the process's address space in bytes\&. See also PHP's memory_limit configuration directive\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_CORE 4"
+The maximum size of a core file\&. If the limit is set to 0, no core file will be generated\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_CPU 0"
+The maximum amount of CPU time that the process can use, in seconds\&. When the soft limit is hit, a SIGXCPU signal will be sent, which can be caught with \fBpcntl_signal()\fP\&. Depending on the operating system, additional SIGXCPU signals may be sent each second until the hard limit is hit, at which point an uncatchable SIGKILL signal is sent\&. See also \fBset_time_limit()\fP\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_DATA 2"
+The maximum size of the process's data segment, in bytes\&. It is extremely unlikely that this will have any effect on the execution of PHP unless an extension is in use that calls brk() or sbrk()\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_FSIZE 1"
+The maximum size of files that the process can create, in bytes\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_INFINITY 9223372036854775807"
+Used to indicate an infinite value for a resource limit\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_LOCKS 10"
+The maximum number of locks that the process can create\&. This is only supported on extremely old Linux kernels\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_MEMLOCK 6"
+The maximum number of bytes that can be locked into memory\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_MSGQUEUE 12"
+The maximum number of bytes that can be allocated for POSIX message queues\&. PHP does not ship with support for POSIX message queues, so this limit will not have any effect unless you are using an extension that implements that support\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_NICE 13"
+The maximum value to which the process can be \fCreniced\fP to\&. The value that will be used will be 20 - limit, as resource limit values cannot be negative\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_NOFILE 8"
+\fBA\fP value one greater than the maximum file descriptor number that can be opened by this process\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_NPROC 7"
+The maximum number of processes (and/or threads, on some operating systems) that can be created for the real user ID of the process\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_RSS 5"
+The maximum size of the process's resident set, in pages\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_RTPRIO 14"
+The maximum real time priority that can be set via the sched_setscheduler() and sched_setparam() system calls\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_RTTIME 15"
+The maximum amount of CPU time, in microseconds, that the process can consume without making a blocking system call if it is using real time scheduling\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_SIGPENDING 11"
+The maximum number of signals that can be queued for the real user ID of the process\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_RLIMIT_STACK 3"
+The maximum size of the process stack, in bytes\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.setrlimit\&.php\fP
+.SS "const POSIX_S_IFBLK 24576"
+Block special file \fBhttps://php\&.net/manual/en/posix\&.constants\&.php\fP
+.SS "const POSIX_S_IFCHR 8192"
+Character special file \fBhttps://php\&.net/manual/en/posix\&.constants\&.php\fP
+.SS "const POSIX_S_IFIFO 4096"
+FIFO (named pipe) special file \fBhttps://php\&.net/manual/en/posix\&.constants\&.php\fP
+.SS "const POSIX_S_IFREG 32768"
+Normal file \fBhttps://php\&.net/manual/en/posix\&.constants\&.php\fP
+.SS "const POSIX_S_IFSOCK 49152"
+Socket \fBhttps://php\&.net/manual/en/posix\&.constants\&.php\fP
+.SS "const POSIX_W_OK 2"
+Check whether the file exists and has write permissions\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.php\fP
+.SS "const POSIX_X_OK 1"
+Check whether the file exists and has execute permissions\&. \fBhttps://php\&.net/manual/en/posix\&.constants\&.php\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

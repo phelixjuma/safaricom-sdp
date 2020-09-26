@@ -1,0 +1,226 @@
+.TH "vendor/jetbrains/phpstorm-stubs/standard/_types.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/standard/_types.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBGenerator\fP"
+.br
+.ti -1c
+.RI "class \fBClosedGeneratorException\fP"
+.br
+.ti -1c
+.RI "class \fBPS_UNRESERVE_PREFIX_this\fP"
+.br
+.ti -1c
+.RI "class \fBPS_UNRESERVE_PREFIX_static\fP"
+.br
+.ti -1c
+.RI "class \fBobject\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fB___PHPSTORM_HELPERS\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPS_UNRESERVE_PREFIX_array\fP (\&.\&.\&. $\fB_\fP)"
+.br
+.ti -1c
+.RI "\fBPS_UNRESERVE_PREFIX_list\fP ($var1,\&.\&.\&. $\fB_\fP)"
+.br
+.ti -1c
+.RI "\fBPS_UNRESERVE_PREFIX_die\fP ($status='')"
+.br
+.ti -1c
+.RI "\fBPS_UNRESERVE_PREFIX_exit\fP ($status='')"
+.br
+.ti -1c
+.RI "\fBPS_UNRESERVE_PREFIX_empty\fP ($var)"
+.br
+.ti -1c
+.RI "\fBPS_UNRESERVE_PREFIX_isset\fP ($var,\&.\&.\&. $\fB_\fP)"
+.br
+.ti -1c
+.RI "\fBPS_UNRESERVE_PREFIX_unset\fP ($var,\&.\&.\&. $\fB_\fP)"
+.br
+.ti -1c
+.RI "\fBPS_UNRESERVE_PREFIX_eval\fP ($code)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "PS_UNRESERVE_PREFIX_array ( $_)"
+Creates an array\&. \fBmixed $_ [optional] \fP Syntax 'index => values', separated by commas, define index and values\&. index may be of type string or integer\&. When index is omitted, an integer index is automatically generated, starting at 0\&. If index is an integer, next generated index will be the biggest integer index + 1\&. Note that when two identical index are defined, the last overwrite the first\&. 
+.PP
+Having a trailing comma after the last defined array entry, while unusual, is a valid syntax\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array of the parameters\&. The parameters can be given an index with the => operator\&. 
+.RE
+.PP
+
+.SS "PS_UNRESERVE_PREFIX_die ( $status = \fC''\fP)"
+Terminates execution of the script\&. Shutdown functions and object destructors will always be executed even if exit is called\&.
+.PP
+die is a language construct and it can be called without parentheses if no status is passed\&.
+.PP
+\fBint|string $status [optional] \fP If status is a string, this function prints the status just before exiting\&. 
+.PP
+If status is an integer, that value will be used as the exit status and not printed\&. Exit statuses should be in the range 0 to 254, the exit status 255 is reserved by PHP and shall not be used\&. The status 0 is used to terminate the program successfully\&. 
+.PP
+Note: PHP >= 4\&.2\&.0 does NOT print the status if it is an integer\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "PS_UNRESERVE_PREFIX_empty ( $var)"
+Determine whether a variable is considered to be empty\&. \fBA\fP variable is considered empty if it does not exist or if its value equals \fBFALSE\fP\&. \fBempty()\fP does not generate a warning if the variable does not exist\&. \fBmixed $var \fPVariable to be checked\&.
+.PP
+Note: Prior to PHP 5\&.5, \fBempty()\fP only supports variables; anything else will result in a parse error\&. In other words, the following will not work: \fBempty(trim($name))\fP\&. Instead, use \fBtrim($name) == false\fP\&. 
+.PP
+No warning is generated if the variable does not exist\&. That means \fBempty()\fP is essentially the concise equivalent to \fB!isset($var) || $var == false\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBFALSE\fP if var exists and has a non-empty, non-zero value\&. Otherwise returns \fBTRUE\fP\&.
+.PP
+The following things are considered to be empty: 
+.PD 0
+
+.IP "\(bu" 2
+'' (an empty string) 
+.IP "\(bu" 2
+0 (0 as an integer) 
+.IP "\(bu" 2
+0\&.0 (0 as a float) 
+.IP "\(bu" 2
+'0' (0 as a string) 
+.IP "\(bu" 2
+\fBNULL\fP 
+.IP "\(bu" 2
+\fBFALSE\fP 
+.IP "\(bu" 2
+array() (an empty array) 
+.IP "\(bu" 2
+$var; (a variable declared, but without a value) 
+.PP
+
+.SS "PS_UNRESERVE_PREFIX_eval ( $code)"
+Evaluates the given code as PHP\&.
+.PP
+Caution: The \fBeval()\fP language construct is very dangerous because it allows execution of arbitrary PHP code\&. Its use thus is discouraged\&. If you have carefully verified that there is no other option than to use this construct, pay special attention not to pass any user provided data into it without properly validating it beforehand\&.
+.PP
+\fBstring $code \fP Valid PHP code to be evaluated\&. 
+.PP
+The code must not be wrapped in opening and closing PHP tags, i\&.e\&. 'echo 'Hi!';' must be passed instead of '<?php echo 'Hi!'; ?>'\&. It is still possible to leave and re-enter PHP mode though using the appropriate PHP tags, e\&.g\&. 'echo 'In PHP mode!'; ?>In HTML mode!<?php echo 'Back in PHP mode!';'\&. 
+.PP
+Apart from that the passed code must be valid PHP\&. This includes that all statements must be properly terminated using a semicolon\&. 'echo 'Hi!'' for example will cause a parse error, whereas 'echo 'Hi!';' will work\&. 
+.PP
+\fBA\fP return statement will immediately terminate the evaluation of the code\&. 
+.PP
+The code will be executed in the scope of the code calling \fBeval()\fP\&. Thus any variables defined or changed in the \fBeval()\fP call will remain visible after it terminates\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed \fBNULL\fP unless return is called in the evaluated code, in which case the value passed to return is returned\&. As of PHP 7, if there is a parse error in the evaluated code, \fBeval()\fP throws a \fBParseError\fP exception\&. Before PHP 7, in this case \fBeval()\fP returned \fBFALSE\fP and execution of the following code continued normally\&. It is not possible to catch a parse error in \fBeval()\fP using \fBset_error_handler()\fP\&. 
+.RE
+.PP
+
+.SS "PS_UNRESERVE_PREFIX_exit ( $status = \fC''\fP)"
+Terminates execution of the script\&. Shutdown functions and object destructors will always be executed even if exit is called\&.
+.PP
+exit is a language construct and it can be called without parentheses if no status is passed\&.
+.PP
+\fBint|string $status [optional] \fP If status is a string, this function prints the status just before exiting\&. 
+.PP
+If status is an integer, that value will be used as the exit status and not printed\&. Exit statuses should be in the range 0 to 254, the exit status 255 is reserved by PHP and shall not be used\&. The status 0 is used to terminate the program successfully\&. 
+.PP
+Note: PHP >= 4\&.2\&.0 does NOT print the status if it is an integer\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "PS_UNRESERVE_PREFIX_isset ( $var,  $_)"
+Determine if a variable is set and is not \fBNULL\fP\&.
+.PP
+If a variable has been unset with unset(), it will no longer be set\&. \fBisset()\fP will return \fBFALSE\fP if testing a variable that has been set to \fBNULL\fP\&. Also note that a null character ('\\0') is not equivalent to the PHP \fBNULL\fP constant\&.
+.PP
+If multiple parameters are supplied then \fBisset()\fP will return \fBTRUE\fP only if all of the parameters are set\&. Evaluation goes from left to right and stops as soon as an unset variable is encountered\&.
+.PP
+\fBmixed $var \fPThe variable to be checked\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+Another variable \&.\&.\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP if var exists and has value other than \fBNULL\fP, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+
+.SS "PS_UNRESERVE_PREFIX_list ( $var1,  $_)"
+Assigns a list of variables in one operation\&. \fBmixed $var1 \fP\fBA\fP variable\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+Another variable \&.\&.\&.
+.PP
+\fBReturns\fP
+.RS 4
+array the assigned array\&. 
+.RE
+.PP
+
+.SS "PS_UNRESERVE_PREFIX_unset ( $var,  $_)"
+Destroys the specified variables\&.
+.PP
+The behavior of \fBunset()\fP inside of a function can vary depending on what type of variable you are attempting to destroy\&.
+.PP
+\fBmixed $var \fPThe variable to be unset\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+Another variable \&.\&.\&.
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

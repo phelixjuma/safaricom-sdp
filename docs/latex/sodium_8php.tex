@@ -1,0 +1,2296 @@
+\hypertarget{sodium_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/sodium/sodium.php File Reference}
+\label{sodium_8php}\index{vendor/jetbrains/phpstorm-\/stubs/sodium/sodium.php@{vendor/jetbrains/phpstorm-\/stubs/sodium/sodium.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_sodium_exception}{Sodium\+Exception}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{sodium_8php_a776f625aebdb432a040c02db58696c49}{sodium\+\_\+crypto\+\_\+aead\+\_\+aes256gcm\+\_\+is\+\_\+available}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_a0e5fe3babbccd42e5cc9be3b4f301d57}{sodium\+\_\+crypto\+\_\+aead\+\_\+aes256gcm\+\_\+decrypt}} (string \$ciphertext, string \$ad, string \$nonce, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_abe1d4371e6511fcfb1aff1e7c2a41259}{sodium\+\_\+crypto\+\_\+aead\+\_\+aes256gcm\+\_\+encrypt}} (string \$msg, string \$ad, string \$nonce, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_a7c02eece69abdf35c132670ef024e45d}{sodium\+\_\+crypto\+\_\+aead\+\_\+chacha20poly1305\+\_\+decrypt}} (string \$ciphertext, string \$ad, string \$nonce, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_a786e4fc9fb2a0c60e4651a7db928021c}{sodium\+\_\+crypto\+\_\+aead\+\_\+chacha20poly1305\+\_\+encrypt}} (string \$msg, string \$ad, string \$nonce, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_a3cc0e441bb196e0de3b6df4347cc73ce}{sodium\+\_\+crypto\+\_\+aead\+\_\+chacha20poly1305\+\_\+ietf\+\_\+decrypt}} (string \$ciphertext, string \$ad, string \$nonce, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_ab8045ca31d86358d855d836ba7517340}{sodium\+\_\+crypto\+\_\+aead\+\_\+chacha20poly1305\+\_\+ietf\+\_\+encrypt}} (string \$msg, string \$ad, string \$nonce, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_a5c134c96a2193b5287614c6e312a0b51}{sodium\+\_\+crypto\+\_\+auth}} (string \$msg, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_a15337ac4160b4f710cfc42a1ac1b41a3}{sodium\+\_\+crypto\+\_\+auth\+\_\+keygen}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_a7e1aa14f554271e43153e49f277e4853}{sodium\+\_\+crypto\+\_\+kx\+\_\+keypair}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_a26258dba26cc041fdad276a67efeba58}{sodium\+\_\+crypto\+\_\+kx\+\_\+publickey}} (string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_a58d0b3f0fd79d79c0ff724bfef89cc83}{sodium\+\_\+crypto\+\_\+kx\+\_\+secretkey}} (string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_a19ccb5e6eab5ab0bf7c45d4e3037a13e}{sodium\+\_\+crypto\+\_\+kx\+\_\+seed\+\_\+keypair}} (string \$string)
+\item 
+\mbox{\hyperlink{sodium_8php_a335fdf24a22a33ae326a72e5e6003092}{sodium\+\_\+crypto\+\_\+kx\+\_\+server\+\_\+session\+\_\+keys}} (string \$server\+\_\+keypair, string \$client\+\_\+key)
+\item 
+\mbox{\hyperlink{sodium_8php_a252d23c2a91684ade3f140d85823f5af}{sodium\+\_\+crypto\+\_\+generichash\+\_\+keygen}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_a16b6ea092ec53365c7c17a78408d304c}{sodium\+\_\+crypto\+\_\+kx\+\_\+client\+\_\+session\+\_\+keys}} (string \$client\+\_\+keypair, string \$server\+\_\+key)
+\item 
+\mbox{\hyperlink{sodium_8php_af4745de3c7b2cc426fa97658f38bcb36}{sodium\+\_\+crypto\+\_\+kdf\+\_\+derive\+\_\+from\+\_\+key}} (int \$subkey\+\_\+len, int \$subkey\+\_\+id, string \$context, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_ab0b9989b65195197f3c7cb0503b1dc96}{sodium\+\_\+crypto\+\_\+kdf\+\_\+keygen}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_aa62cd933748a7b377f361e2cf6328c87}{sodium\+\_\+crypto\+\_\+shorthash\+\_\+keygen}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_a1ad43fc4a92f018daa2aa6935be4516a}{sodium\+\_\+crypto\+\_\+stream\+\_\+keygen}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_a54a9e74da3c38178c94b39210ddc5ac0}{sodium\+\_\+pad}} (\$string, \$length)
+\item 
+\mbox{\hyperlink{sodium_8php_a4b28507978e0feb5644b0f6c616eba03}{sodium\+\_\+unpad}} (\$string, \$length)
+\item 
+\mbox{\hyperlink{sodium_8php_ac99e4ee37fa7301fbc8e12e57eb44875}{sodium\+\_\+crypto\+\_\+auth\+\_\+verify}} (string \$mac, string \$msg, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_a46c0019daf92dcd2da60c0b09787dabf}{sodium\+\_\+crypto\+\_\+box}} (string \$msg, string \$nonce, string \$keypair)
+\item 
+\mbox{\hyperlink{sodium_8php_a06fbe7ade060ad4e0f8026b579dc9522}{sodium\+\_\+crypto\+\_\+box\+\_\+keypair}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_aca1dd7e5645a0e09d3326bc8c03db152}{sodium\+\_\+crypto\+\_\+box\+\_\+seed\+\_\+keypair}} (string \$seed)
+\item 
+\mbox{\hyperlink{sodium_8php_af7e754d9eda3f6932559880b850eb890}{sodium\+\_\+crypto\+\_\+box\+\_\+keypair\+\_\+from\+\_\+secretkey\+\_\+and\+\_\+publickey}} (string \$secretkey, string \$publickey)
+\item 
+\mbox{\hyperlink{sodium_8php_a772dfe3e8c0b0a0b6b81d212799234c7}{sodium\+\_\+crypto\+\_\+box\+\_\+open}} (string \$msg, string \$nonce, string \$keypair)
+\item 
+\mbox{\hyperlink{sodium_8php_a1a1c8b7f5cd56b85ea63233270e0396a}{sodium\+\_\+crypto\+\_\+box\+\_\+publickey}} (string \$keypair)
+\item 
+\mbox{\hyperlink{sodium_8php_ae24d19d1d534f3bf2e688c0345d5668e}{sodium\+\_\+crypto\+\_\+box\+\_\+publickey\+\_\+from\+\_\+secretkey}} (string \$secretkey)
+\item 
+\mbox{\hyperlink{sodium_8php_aa4d6cdc6c8c135c90a82bdd0269229dd}{sodium\+\_\+crypto\+\_\+box\+\_\+seal}} (string \$message, string \$publickey)
+\item 
+\mbox{\hyperlink{sodium_8php_a7dfee0586dec1f493bd2defc5c696669}{sodium\+\_\+crypto\+\_\+box\+\_\+seal\+\_\+open}} (string \$encrypted, string \$keypair)
+\item 
+\mbox{\hyperlink{sodium_8php_a9a34636d61f63f9ec6908245b6a0121f}{sodium\+\_\+crypto\+\_\+box\+\_\+secretkey}} (string \$keypair)
+\item 
+\mbox{\hyperlink{sodium_8php_a309c51189eb2793fc2f02bebc53d7f0e}{sodium\+\_\+crypto\+\_\+kx}} (string \$secretkey, string \$publickey, string \$client\+\_\+publickey, string \$server\+\_\+publickey)
+\item 
+\mbox{\hyperlink{sodium_8php_a4286b47a412f347aeb4687b0aca56646}{sodium\+\_\+crypto\+\_\+generichash}} (string \$input, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}=\textquotesingle{}\textquotesingle{}, int \$length=32)
+\item 
+\mbox{\hyperlink{sodium_8php_ac8a3f450e1b771f1685c4abcfad661fe}{sodium\+\_\+crypto\+\_\+generichash\+\_\+init}} (string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}=\textquotesingle{}\textquotesingle{}, int \$length=32)
+\item 
+\mbox{\hyperlink{sodium_8php_a2a74bb9ddefc50c9d4aa8475812fc629}{sodium\+\_\+crypto\+\_\+generichash\+\_\+update}} (string \&\$state, string \$append)
+\item 
+\mbox{\hyperlink{sodium_8php_a16539084f3847048ae000cb150d9990c}{sodium\+\_\+crypto\+\_\+generichash\+\_\+final}} (string \$state, int \$length=32)
+\item 
+\mbox{\hyperlink{sodium_8php_ab0b73b73482979c9678dfd96fdf4ba5d}{sodium\+\_\+crypto\+\_\+pwhash}} (int \$out\+\_\+len, string \$passwd, string \$salt, int \$opslimit, int \$memlimit, int \$alg)
+\item 
+\mbox{\hyperlink{sodium_8php_adf3ce6886732ac6b8ae7447c287ccd29}{sodium\+\_\+crypto\+\_\+pwhash\+\_\+str}} (string \$passwd, int \$opslimit, int \$memlimit)
+\item 
+\mbox{\hyperlink{sodium_8php_ad73ad41f56f5a3f5a09ecdbf41bc6c97}{sodium\+\_\+crypto\+\_\+pwhash\+\_\+str\+\_\+verify}} (string \$\mbox{\hyperlink{hash_8php_ad87f77157db7d7ac70fc8608f25ae8de}{hash}}, string \$passwd)
+\item 
+\mbox{\hyperlink{sodium_8php_a8752ef9aca87e6bce12f6a7d20bdd101}{sodium\+\_\+crypto\+\_\+pwhash\+\_\+scryptsalsa208sha256}} (int \$out\+\_\+len, string \$passwd, string \$salt, int \$opslimit, int \$memlimit, int \$alg)
+\item 
+\mbox{\hyperlink{sodium_8php_a84d5bb9e7512be376f9c70b0560a01cb}{sodium\+\_\+crypto\+\_\+pwhash\+\_\+scryptsalsa208sha256\+\_\+str}} (string \$passwd, int \$opslimit, int \$memlimit)
+\item 
+\mbox{\hyperlink{sodium_8php_a7bfbd7ccc792f708163da2e848f8ca40}{sodium\+\_\+crypto\+\_\+pwhash\+\_\+scryptsalsa208sha256\+\_\+str\+\_\+verify}} (string \$\mbox{\hyperlink{hash_8php_ad87f77157db7d7ac70fc8608f25ae8de}{hash}}, string \$passwd)
+\item 
+\mbox{\hyperlink{sodium_8php_adba353c1ad69ac738ccdcdf51727e852}{sodium\+\_\+crypto\+\_\+scalarmult}} (string \$ecdhA, string \$ecdhB)
+\item 
+\mbox{\hyperlink{sodium_8php_ab0a31de1fca56cc2041d65ed14f3a604}{sodium\+\_\+crypto\+\_\+secretbox}} (string \$plaintext, string \$nonce, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_a2665dc497a58db38be2b475ac570888f}{sodium\+\_\+crypto\+\_\+secretbox\+\_\+open}} (string \$ciphertext, string \$nonce, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_a13a7a53991c149acea33b5f6dc7bd46a}{sodium\+\_\+crypto\+\_\+shorthash}} (string \$message, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_adf5458d915598993f911a449da6808b6}{sodium\+\_\+crypto\+\_\+sign}} (string \$message, string \$secretkey)
+\item 
+\mbox{\hyperlink{sodium_8php_a8ce4449a85e313aec0a5735acfc9814c}{sodium\+\_\+crypto\+\_\+sign\+\_\+detached}} (string \$message, string \$secretkey)
+\item 
+\mbox{\hyperlink{sodium_8php_a36a76252f2d997ea4e164f1222464299}{sodium\+\_\+crypto\+\_\+sign\+\_\+ed25519\+\_\+pk\+\_\+to\+\_\+curve25519}} (string \$sign\+\_\+pk)
+\item 
+\mbox{\hyperlink{sodium_8php_a9e05c25fc08c69b24dfa0e8e6dd263fe}{sodium\+\_\+crypto\+\_\+sign\+\_\+ed25519\+\_\+sk\+\_\+to\+\_\+curve25519}} (string \$sign\+\_\+sk)
+\item 
+\mbox{\hyperlink{sodium_8php_a1fefb2aaa5a3c8e554f6ed9b9cdbdaba}{sodium\+\_\+crypto\+\_\+sign\+\_\+keypair}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_a70b9e95b3980d28593fcb26e82058719}{sodium\+\_\+crypto\+\_\+sign\+\_\+keypair\+\_\+from\+\_\+secretkey\+\_\+and\+\_\+publickey}} (string \$secretkey, string \$publickey)
+\item 
+\mbox{\hyperlink{sodium_8php_a183f004e8f355f4ce25d05f76446df15}{sodium\+\_\+crypto\+\_\+sign\+\_\+open}} (string \$signed\+\_\+message, string \$publickey)
+\item 
+\mbox{\hyperlink{sodium_8php_ac901f0f00e86f230dd48adcf92a081f5}{sodium\+\_\+crypto\+\_\+sign\+\_\+publickey}} (string \$keypair)
+\item 
+\mbox{\hyperlink{sodium_8php_a826eecda6345e0c5d4955558c3cbe2f3}{sodium\+\_\+crypto\+\_\+sign\+\_\+secretkey}} (string \$keypair)
+\item 
+\mbox{\hyperlink{sodium_8php_a4545fffa2ca0be18799698aae3ac18f6}{sodium\+\_\+crypto\+\_\+sign\+\_\+publickey\+\_\+from\+\_\+secretkey}} (string \$secretkey)
+\item 
+\mbox{\hyperlink{sodium_8php_a59c24b544a599b568f754034c60ad30e}{sodium\+\_\+crypto\+\_\+sign\+\_\+seed\+\_\+keypair}} (string \$seed)
+\item 
+\mbox{\hyperlink{sodium_8php_a98b355cd69607623bb90dd9ba4feb20b}{sodium\+\_\+crypto\+\_\+sign\+\_\+verify\+\_\+detached}} (string \$signature, string \$msg, string \$publickey)
+\item 
+\mbox{\hyperlink{sodium_8php_a8a577411df846f8b492092361f91e764}{sodium\+\_\+crypto\+\_\+stream}} (int \$length, string \$nonce, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_a8e2bb6ac7d97fe851be8aaae964a74c2}{sodium\+\_\+crypto\+\_\+stream\+\_\+xor}} (string \$plaintext, string \$nonce, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_a9582cafad76cb6cecef344930704198b}{sodium\+\_\+randombytes\+\_\+buf}} (int \$length)
+\item 
+\mbox{\hyperlink{sodium_8php_a838a539a655b340a21a516d31a0ac0f5}{sodium\+\_\+randombytes\+\_\+random16}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_abf4976d7fb0a81870b8eba097746eba4}{sodium\+\_\+randombytes\+\_\+uniform}} (int \$upper\+Bound\+Non\+Inclusive)
+\item 
+\mbox{\hyperlink{sodium_8php_a10a7766885c1afbd101053f72575b592}{sodium\+\_\+bin2hex}} (string \$binary)
+\item 
+\mbox{\hyperlink{sodium_8php_a00d76039ba8322808348f1efe467e5ae}{sodium\+\_\+compare}} (string \$left, string \$right)
+\item 
+\mbox{\hyperlink{sodium_8php_a389eae8e482c73f8db5dda4e19ac5dcc}{sodium\+\_\+hex2bin}} (string \$hex, string \$ignore)
+\item 
+\mbox{\hyperlink{sodium_8php_abaa3f17e46d7d8e9282c4c69ff6c963e}{sodium\+\_\+increment}} (string \&\$nonce)
+\item 
+\mbox{\hyperlink{sodium_8php_afa67f38990774ba8a5127481ef9df7d0}{sodium\+\_\+add}} (string \&\$left, string \$right)
+\item 
+\mbox{\hyperlink{sodium_8php_adb137fe748e50f26cfe6de549f38953c}{sodium\+\_\+library\+\_\+version\+\_\+major}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_afb193729cbf4e0c4b69c9c610f4751a4}{sodium\+\_\+library\+\_\+version\+\_\+minor}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_a4c4e8c5581a29ea9ce2761f558c0f878}{sodium\+\_\+memcmp}} (string \$left, string \$right)
+\item 
+\mbox{\hyperlink{sodium_8php_a1c30d6f5c99a304d197f0e28080cdcae}{sodium\+\_\+memzero}} (\&\$reference)
+\item 
+\mbox{\hyperlink{sodium_8php_a1d57235fb848f9f9ef6acd3c40aedf34}{sodium\+\_\+version\+\_\+string}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_a9a2d84db78eb8f5686c7364af5cfb912}{sodium\+\_\+crypto\+\_\+scalarmult\+\_\+base}} (string \$string\+\_\+1, string \$string\+\_\+2)
+\item 
+\mbox{\hyperlink{sodium_8php_a3e977248881f78522af7c07f9d944854}{sodium\+\_\+crypto\+\_\+secretbox\+\_\+keygen}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_a77a98cd449369c31a8e59a98a42e6ce3}{sodium\+\_\+crypto\+\_\+aead\+\_\+aes256gcm\+\_\+keygen}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_ac16e736c328c8d7777923279fa80141f}{sodium\+\_\+crypto\+\_\+aead\+\_\+chacha20poly1305\+\_\+keygen}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_a164e25cea2636c506aef20f975569ec6}{sodium\+\_\+crypto\+\_\+aead\+\_\+chacha20poly1305\+\_\+ietf\+\_\+keygen}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_ab03d70694b23a895c4471a823cc30f99}{sodium\+\_\+crypto\+\_\+aead\+\_\+xchacha20poly1305\+\_\+ietf\+\_\+decrypt}} (string \$ciphertext, string \$ad, string \$nonce, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_af0383f8d3a624d010692f331cd636b0d}{sodium\+\_\+crypto\+\_\+aead\+\_\+xchacha20poly1305\+\_\+ietf\+\_\+encrypt}} (string \$msg, string \$ad, string \$nonce, string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_a8a52c76ae21ac6b71b443f4a4f9a449a}{sodium\+\_\+crypto\+\_\+aead\+\_\+xchacha20poly1305\+\_\+ietf\+\_\+keygen}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_ac6c898f2062eb02307e5afa4c4d6a9ec}{sodium\+\_\+crypto\+\_\+pwhash\+\_\+str\+\_\+needs\+\_\+rehash}} (string \$password, int \$opslimit, int \$memlimit)
+\item 
+\mbox{\hyperlink{sodium_8php_af2811b426b0ccb7a93a0703e5da51496}{sodium\+\_\+crypto\+\_\+secretstream\+\_\+xchacha20poly1305\+\_\+keygen}} ()
+\item 
+\mbox{\hyperlink{sodium_8php_a4d8612575f50036c286c2f4229a21060}{sodium\+\_\+crypto\+\_\+secretstream\+\_\+xchacha20poly1305\+\_\+init\+\_\+push}} (string \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_abd2ba8ffdbba79f39b8a0f95ec667eaf}{sodium\+\_\+crypto\+\_\+secretstream\+\_\+xchacha20poly1305\+\_\+push}} (string \&\$state, string \$msg, string \$ad, int \$tag)
+\item 
+\mbox{\hyperlink{sodium_8php_aaf77e02ad65f5cc83f6fd521265f4e2d}{sodium\+\_\+crypto\+\_\+secretstream\+\_\+xchacha20poly1305\+\_\+init\+\_\+pull}} (\$\mbox{\hyperlink{standard__4_8php_ac55e164292560bad3c753ba51f50915c}{header}}, \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{sodium_8php_acad8f0bde744054f9322ca1b15f724cd}{sodium\+\_\+crypto\+\_\+secretstream\+\_\+xchacha20poly1305\+\_\+pull}} (string \&\$state, string \$\mbox{\hyperlink{classc}{c}}, string \$ad=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{sodium_8php_aff7b6054802cadfdca3b46d1515fc0f1}{sodium\+\_\+crypto\+\_\+secretstream\+\_\+xchacha20poly1305\+\_\+rekey}} (string \&\$state)
+\item 
+\mbox{\hyperlink{sodium_8php_ad60958c216d9d6415a4c8dbbd89e36ec}{sodium\+\_\+bin2base64}} (string \$bin, int \$id)
+\item 
+\mbox{\hyperlink{sodium_8php_ad8c24ebd7f534fd5e7f2396d3cbc8428}{sodium\+\_\+base642bin}} (string \$b64, int \$id, string \$ignore=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{sodium_8php_a23b0704c0d29c9c9098a82e0a47c61f9}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+A\+E\+S256\+G\+C\+M\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a2d79240a0afd5d8387cbefca3c681806}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+A\+E\+S256\+G\+C\+M\+\_\+\+N\+S\+E\+C\+B\+Y\+T\+ES}} = 0
+\item 
+const \mbox{\hyperlink{sodium_8php_af818eed26cb00e9fc285709366cb70ee}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+A\+E\+S256\+G\+C\+M\+\_\+\+N\+P\+U\+B\+B\+Y\+T\+ES}} = 12
+\item 
+const \mbox{\hyperlink{sodium_8php_acc72d09e03c04acd84eadbf316e6b919}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+A\+E\+S256\+G\+C\+M\+\_\+\+A\+B\+Y\+T\+ES}} = 16
+\item 
+const \mbox{\hyperlink{sodium_8php_a782bd51638ceae71afeca18b08e9e45c}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_ac25178c7ed64ce1f9871d415f9893b67}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+N\+S\+E\+C\+B\+Y\+T\+ES}} = 0
+\item 
+const \mbox{\hyperlink{sodium_8php_a6da9a5e5ad30f29faf99cc1c1742ca1c}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+N\+P\+U\+B\+B\+Y\+T\+ES}} = 8
+\item 
+const \mbox{\hyperlink{sodium_8php_adefcef5e048381f8274ddf576510ce22}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+A\+B\+Y\+T\+ES}} = 16
+\item 
+const \mbox{\hyperlink{sodium_8php_a1dfa09a61ae2d60b5c22adb337021837}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_ab50dfa0cae0ecf72ef6b0397159d3ec8}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+N\+S\+E\+C\+B\+Y\+T\+ES}} = 0
+\item 
+const \mbox{\hyperlink{sodium_8php_a15ecb179fbaa112b1ad34e2abf6c5904}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+N\+P\+U\+B\+B\+Y\+T\+ES}} = 12
+\item 
+const \mbox{\hyperlink{sodium_8php_a1d5079baca39f3cc142a0440d2965552}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+A\+B\+Y\+T\+ES}} = 16
+\item 
+const \mbox{\hyperlink{sodium_8php_a4aaecbc3f1de5ffb709476dc7d1491e2}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a47ce0edcb80e4552c5a21c888db6808b}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+N\+S\+E\+C\+B\+Y\+T\+ES}} = 0
+\item 
+const \mbox{\hyperlink{sodium_8php_a22bdac514fe1d2fd0d27231e8d5130e2}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+N\+P\+U\+B\+B\+Y\+T\+ES}} = 24
+\item 
+const \mbox{\hyperlink{sodium_8php_ac73454a43a73715730042d3272c46376}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+A\+B\+Y\+T\+ES}} = 16
+\item 
+const \mbox{\hyperlink{sodium_8php_acc12b3eb8d895ae941cd084cc58be025}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+A\+B\+Y\+T\+ES}} = 17
+\item 
+const \mbox{\hyperlink{sodium_8php_a421fce192f3fb1936bc87451da64f6d8}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+H\+E\+A\+D\+E\+R\+B\+Y\+T\+ES}} = 24
+\item 
+const \mbox{\hyperlink{sodium_8php_a4b8d8d415132c647476c599cde610ae4}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_acb2360b67dbaa31d0c5f6ee0aa40b320}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+M\+E\+S\+S\+A\+G\+E\+B\+Y\+T\+E\+S\+\_\+\+M\+AX}} = 274877906816
+\item 
+const \mbox{\hyperlink{sodium_8php_a91a0f5ec072e55f9b956de5472973177}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+T\+A\+G\+\_\+\+M\+E\+S\+S\+A\+GE}} = 0
+\item 
+const \mbox{\hyperlink{sodium_8php_a1c6f439be6076b97a2202e6d9289a0ac}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+T\+A\+G\+\_\+\+P\+U\+SH}} = 1
+\item 
+const \mbox{\hyperlink{sodium_8php_acdbf4900c2b6c78af5e142fd41b7ad49}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+T\+A\+G\+\_\+\+R\+E\+K\+EY}} = 2
+\item 
+const \mbox{\hyperlink{sodium_8php_a8f5824ef0662af035a0875d229285e82}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+T\+A\+G\+\_\+\+F\+I\+N\+AL}} = 3
+\item 
+const \mbox{\hyperlink{sodium_8php_a29be6bb97b1234ca2ce530d3734a0207}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+A\+L\+G\+\_\+\+A\+R\+G\+O\+N2\+I\+D13}} = 2
+\item 
+const \mbox{\hyperlink{sodium_8php_aa5f8b42dc513bd1e3a3b318a8a1dabc0}{S\+O\+D\+I\+U\+M\+\_\+\+B\+A\+S\+E64\+\_\+\+V\+A\+R\+I\+A\+N\+T\+\_\+\+O\+R\+I\+G\+I\+N\+AL}} = 1
+\item 
+const \mbox{\hyperlink{sodium_8php_a56442cda4e994cb74c50a4d6479cde8b}{S\+O\+D\+I\+U\+M\+\_\+\+B\+A\+S\+E64\+\_\+\+V\+A\+R\+I\+A\+N\+T\+\_\+\+O\+R\+I\+G\+I\+N\+A\+L\+\_\+\+N\+O\+\_\+\+P\+A\+D\+D\+I\+NG}} = 3
+\item 
+const \mbox{\hyperlink{sodium_8php_a7af66d9ad1345222a065cf2955943d35}{S\+O\+D\+I\+U\+M\+\_\+\+B\+A\+S\+E64\+\_\+\+V\+A\+R\+I\+A\+N\+T\+\_\+\+U\+R\+L\+S\+A\+FE}} = 5
+\item 
+const \mbox{\hyperlink{sodium_8php_a512cb639b82f575253e2cebeb378169c}{S\+O\+D\+I\+U\+M\+\_\+\+B\+A\+S\+E64\+\_\+\+V\+A\+R\+I\+A\+N\+T\+\_\+\+U\+R\+L\+S\+A\+F\+E\+\_\+\+N\+O\+\_\+\+P\+A\+D\+D\+I\+NG}} = 7
+\item 
+const \mbox{\hyperlink{sodium_8php_aa7a761010b3292c2c74bceafbd02d177}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+U\+T\+H\+\_\+\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a155e51ecb4e13ab7d8ea4a05dd7f5bd3}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+U\+T\+H\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a086badedf5b925912dc55bfd0ea14a01}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+B\+O\+X\+\_\+\+S\+E\+A\+L\+B\+Y\+T\+ES}} = 48
+\item 
+const \mbox{\hyperlink{sodium_8php_a655bf346ceb0ad965f5b826da7c443c3}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+B\+O\+X\+\_\+\+S\+E\+C\+R\+E\+T\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a83e3f3fa24aa617ffc6b9c2b1d021cf1}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+B\+O\+X\+\_\+\+P\+U\+B\+L\+I\+C\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a763b0b8ad3ae102b34d706b318852189}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+B\+O\+X\+\_\+\+K\+E\+Y\+P\+A\+I\+R\+B\+Y\+T\+ES}} = 64
+\item 
+const \mbox{\hyperlink{sodium_8php_afbf899d50dd3a1a9d290b53147b3ecb5}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+B\+O\+X\+\_\+\+M\+A\+C\+B\+Y\+T\+ES}} = 16
+\item 
+const \mbox{\hyperlink{sodium_8php_a84648dfefda4dd76698cccbc17052a68}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+B\+O\+X\+\_\+\+N\+O\+N\+C\+E\+B\+Y\+T\+ES}} = 24
+\item 
+const \mbox{\hyperlink{sodium_8php_ab434a58963814888c2a3e33d77e132bc}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+B\+O\+X\+\_\+\+S\+E\+E\+D\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_aac5b56a69243a4a6b11cdb433f5f29e7}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+X\+\_\+\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a97ea66224dd400fe17b9f59f2755fb1b}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+X\+\_\+\+P\+U\+B\+L\+I\+C\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_ae8a91eac96de4a0f0cfd4922df15069f}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+X\+\_\+\+S\+E\+C\+R\+E\+T\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_aa506b24f8dd1b8f7ca31fc1768f046ad}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+G\+E\+N\+E\+R\+I\+C\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a014ca3788939cf51460084800a6aa04e}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+G\+E\+N\+E\+R\+I\+C\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+IN}} = 16
+\item 
+const \mbox{\hyperlink{sodium_8php_a5a9eb20d44a2232f062d2c58b0502e8f}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+G\+E\+N\+E\+R\+I\+C\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+AX}} = 64
+\item 
+const \mbox{\hyperlink{sodium_8php_a1ffe992b0e6fb50705aa836255dc6170}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+G\+E\+N\+E\+R\+I\+C\+H\+A\+S\+H\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a3e3c5cdb2e142481009e07893641ad3b}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+G\+E\+N\+E\+R\+I\+C\+H\+A\+S\+H\+\_\+\+K\+E\+Y\+B\+Y\+T\+E\+S\+\_\+\+M\+IN}} = 16
+\item 
+const \mbox{\hyperlink{sodium_8php_ae90a062547d9fa7f35fbcf8dd9842532}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+G\+E\+N\+E\+R\+I\+C\+H\+A\+S\+H\+\_\+\+K\+E\+Y\+B\+Y\+T\+E\+S\+\_\+\+M\+AX}} = 64
+\item 
+const \mbox{\hyperlink{sodium_8php_a00c2ecd75a3e2da2f73e0528ef2f9d88}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+C\+R\+Y\+P\+T\+S\+A\+L\+S\+A208\+S\+H\+A256\+\_\+\+S\+A\+L\+T\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_af43109798423de4c9b6522532f748a1e}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+C\+R\+Y\+P\+T\+S\+A\+L\+S\+A208\+S\+H\+A256\+\_\+\+S\+T\+R\+P\+R\+E\+F\+IX}} = \textquotesingle{}\$7\$\textquotesingle{}
+\item 
+const \mbox{\hyperlink{sodium_8php_a7fb11ccab8662c311b9d9a4da87f74a3}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+C\+R\+Y\+P\+T\+S\+A\+L\+S\+A208\+S\+H\+A256\+\_\+\+O\+P\+S\+L\+I\+M\+I\+T\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE}} = 524288
+\item 
+const \mbox{\hyperlink{sodium_8php_a9f12f048a1e408d6eb96e92a7cda98ab}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+C\+R\+Y\+P\+T\+S\+A\+L\+S\+A208\+S\+H\+A256\+\_\+\+M\+E\+M\+L\+I\+M\+I\+T\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE}} = 16777216
+\item 
+const \mbox{\hyperlink{sodium_8php_a128305e95af4da884a90ae6c208cb2f6}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+C\+R\+Y\+P\+T\+S\+A\+L\+S\+A208\+S\+H\+A256\+\_\+\+O\+P\+S\+L\+I\+M\+I\+T\+\_\+\+S\+E\+N\+S\+I\+T\+I\+VE}} = 33554432
+\item 
+const \mbox{\hyperlink{sodium_8php_a2ac09803fdc1345a636df028b0942da0}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+C\+R\+Y\+P\+T\+S\+A\+L\+S\+A208\+S\+H\+A256\+\_\+\+M\+E\+M\+L\+I\+M\+I\+T\+\_\+\+S\+E\+N\+S\+I\+T\+I\+VE}} = 1073741824
+\item 
+const \mbox{\hyperlink{sodium_8php_a137f4066a580d1b4fe85e6cec43224d8}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+C\+A\+L\+A\+R\+M\+U\+L\+T\+\_\+\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a88e603aa6386fad903ec8aa7a5756e50}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+C\+A\+L\+A\+R\+M\+U\+L\+T\+\_\+\+S\+C\+A\+L\+A\+R\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a661889dfa9ceb062924a8b107741e45c}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+H\+O\+R\+T\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES}} = 8
+\item 
+const \mbox{\hyperlink{sodium_8php_ab525885aee813118df08a26605bdbc7d}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+H\+O\+R\+T\+H\+A\+S\+H\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES}} = 16
+\item 
+const \mbox{\hyperlink{sodium_8php_a256b2323483bf4e72308299d1cf413ce}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+B\+O\+X\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a3f2ab0ac5243204e06a0d346ed0b4418}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+B\+O\+X\+\_\+\+M\+A\+C\+B\+Y\+T\+ES}} = 16
+\item 
+const \mbox{\hyperlink{sodium_8php_a1cb4de34a51eb7286b0559ee294e8a17}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+B\+O\+X\+\_\+\+N\+O\+N\+C\+E\+B\+Y\+T\+ES}} = 24
+\item 
+const \mbox{\hyperlink{sodium_8php_abfe5dadc2fce5f33c08c00bfdaf27e30}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+I\+G\+N\+\_\+\+B\+Y\+T\+ES}} = 64
+\item 
+const \mbox{\hyperlink{sodium_8php_ada2f6e2a075d602fe186736b706a1c71}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+I\+G\+N\+\_\+\+S\+E\+E\+D\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a10e1d399f28ebb8861dd0d138788d127}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+I\+G\+N\+\_\+\+P\+U\+B\+L\+I\+C\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_ae1d4a545b0494f39c30bac13cee92028}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+I\+G\+N\+\_\+\+S\+E\+C\+R\+E\+T\+K\+E\+Y\+B\+Y\+T\+ES}} = 64
+\item 
+const \mbox{\hyperlink{sodium_8php_a44e9e9f57947fb4799c53c6cc00f8529}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+I\+G\+N\+\_\+\+K\+E\+Y\+P\+A\+I\+R\+B\+Y\+T\+ES}} = 96
+\item 
+const \mbox{\hyperlink{sodium_8php_a9b5ba53e46a0f9158b0f7c95aa7238ed}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a4d27f770330347f2ba2d9644abd544c1}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+N\+O\+N\+C\+E\+B\+Y\+T\+ES}} = 24
+\item 
+const \mbox{\hyperlink{sodium_8php_ac521ede36db1b02182a7aff428e922b1}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+O\+P\+S\+L\+I\+M\+I\+T\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE}} = 2
+\item 
+const \mbox{\hyperlink{sodium_8php_af70f7c547127c757d3d244d547b15ff0}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+M\+E\+M\+L\+I\+M\+I\+T\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE}} = 67108864
+\item 
+const \mbox{\hyperlink{sodium_8php_a3162c4b980a3d1649c936478cb42fe4d}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+O\+P\+S\+L\+I\+M\+I\+T\+\_\+\+M\+O\+D\+E\+R\+A\+TE}} = 3
+\item 
+const \mbox{\hyperlink{sodium_8php_a47a21118a82c5f469487d56a1668c9d2}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+M\+E\+M\+L\+I\+M\+I\+T\+\_\+\+M\+O\+D\+E\+R\+A\+TE}} = 268435456
+\item 
+const \mbox{\hyperlink{sodium_8php_ab617f3d0d93604802b85fe04872dad4a}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+O\+P\+S\+L\+I\+M\+I\+T\+\_\+\+S\+E\+N\+S\+I\+T\+I\+VE}} = 4
+\item 
+const \mbox{\hyperlink{sodium_8php_ad331ccb7a9b819f80bc14d30c2475952}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+M\+E\+M\+L\+I\+M\+I\+T\+\_\+\+S\+E\+N\+S\+I\+T\+I\+VE}} = 1073741824
+\item 
+const \mbox{\hyperlink{sodium_8php_acd07066fa19807f0d25a3e3013024005}{S\+O\+D\+I\+U\+M\+\_\+\+L\+I\+B\+R\+A\+R\+Y\+\_\+\+V\+E\+R\+S\+I\+ON}} =\char`\"{}1.\+0.\+17\char`\"{}
+\item 
+const \mbox{\hyperlink{sodium_8php_aa5076273234da12b3dff08fd99c2e608}{S\+O\+D\+I\+U\+M\+\_\+\+L\+I\+B\+R\+A\+R\+Y\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}} = 10
+\item 
+const \mbox{\hyperlink{sodium_8php_a832013b35ef20f381d5c30e4a1e87946}{S\+O\+D\+I\+U\+M\+\_\+\+L\+I\+B\+R\+A\+R\+Y\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}} = 2
+\item 
+const \mbox{\hyperlink{sodium_8php_acc07f0cfbcbea0037ecc9cedb12b33a9}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+D\+F\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+IN}} = 16
+\item 
+const \mbox{\hyperlink{sodium_8php_a970cfa0ed1320eae526b6fee15bccec0}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+D\+F\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+AX}} = 64
+\item 
+const \mbox{\hyperlink{sodium_8php_add677d2f2548cee23f7de028a4ef98ca}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+D\+F\+\_\+\+C\+O\+N\+T\+E\+X\+T\+B\+Y\+T\+ES}} = 8
+\item 
+const \mbox{\hyperlink{sodium_8php_aa7d7fd084bb446e660385d7495bf829d}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+D\+F\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a712dd817893cd9bd353187a921409b8c}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+X\+\_\+\+S\+E\+E\+D\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_ab52611d54d95e1286b69244e07ecef21}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+X\+\_\+\+S\+E\+S\+S\+I\+O\+N\+K\+E\+Y\+B\+Y\+T\+ES}} = 32
+\item 
+const \mbox{\hyperlink{sodium_8php_a2e613fd8dd6ae5d5f93e0deb823b01d9}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+X\+\_\+\+K\+E\+Y\+P\+A\+I\+R\+B\+Y\+T\+ES}} = 64
+\item 
+const \mbox{\hyperlink{sodium_8php_a385ffb35692bd7fc753c086b98e6edac}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+A\+L\+G\+\_\+\+A\+R\+G\+O\+N2\+I13}} = 1
+\item 
+const \mbox{\hyperlink{sodium_8php_a2ffeab7c1c727b326c0945c070711520}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+A\+L\+G\+\_\+\+D\+E\+F\+A\+U\+LT}} = 2
+\item 
+const \mbox{\hyperlink{sodium_8php_ae95fe51eda08a20b5630a7972eeae319}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+A\+L\+T\+B\+Y\+T\+ES}} = 16
+\item 
+const \mbox{\hyperlink{sodium_8php_a693aa9e28740c41786ed834ba0a394b4}{S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+T\+R\+P\+R\+E\+F\+IX}} = \textquotesingle{}\$argon2id\$\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sodium_8php_afa67f38990774ba8a5127481ef9df7d0}\label{sodium_8php_afa67f38990774ba8a5127481ef9df7d0}} 
+\index{sodium.php@{sodium.php}!sodium\_add@{sodium\_add}}
+\index{sodium\_add@{sodium\_add}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_add()}{sodium\_add()}}
+{\footnotesize\ttfamily sodium\+\_\+add (\begin{DoxyParamCaption}\item[{string \&}]{\$left,  }\item[{string}]{\$right }\end{DoxyParamCaption})}
+
+Add the right operand to the left
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \&\$left} & \\
+\hline
+string & {\em \$right} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sodium_8php_ad8c24ebd7f534fd5e7f2396d3cbc8428}\label{sodium_8php_ad8c24ebd7f534fd5e7f2396d3cbc8428}} 
+\index{sodium.php@{sodium.php}!sodium\_base642bin@{sodium\_base642bin}}
+\index{sodium\_base642bin@{sodium\_base642bin}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_base642bin()}{sodium\_base642bin()}}
+{\footnotesize\ttfamily sodium\+\_\+base642bin (\begin{DoxyParamCaption}\item[{string}]{\$b64,  }\item[{int}]{\$id,  }\item[{string}]{\$ignore = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.php.net/manual/en/function.sodium-base642bin.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+sodium-\/base642bin.\+php}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{sodium_8php_ad60958c216d9d6415a4c8dbbd89e36ec}\label{sodium_8php_ad60958c216d9d6415a4c8dbbd89e36ec}} 
+\index{sodium.php@{sodium.php}!sodium\_bin2base64@{sodium\_bin2base64}}
+\index{sodium\_bin2base64@{sodium\_bin2base64}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_bin2base64()}{sodium\_bin2base64()}}
+{\footnotesize\ttfamily sodium\+\_\+bin2base64 (\begin{DoxyParamCaption}\item[{string}]{\$bin,  }\item[{int}]{\$id }\end{DoxyParamCaption})}
+
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.php.net/manual/en/function.sodium-bin2base64.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+sodium-\/bin2base64.\+php}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{sodium_8php_a10a7766885c1afbd101053f72575b592}\label{sodium_8php_a10a7766885c1afbd101053f72575b592}} 
+\index{sodium.php@{sodium.php}!sodium\_bin2hex@{sodium\_bin2hex}}
+\index{sodium\_bin2hex@{sodium\_bin2hex}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_bin2hex()}{sodium\_bin2hex()}}
+{\footnotesize\ttfamily sodium\+\_\+bin2hex (\begin{DoxyParamCaption}\item[{string}]{\$binary }\end{DoxyParamCaption})}
+
+Convert to hex without side-\/chanels
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$binary} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a00d76039ba8322808348f1efe467e5ae}\label{sodium_8php_a00d76039ba8322808348f1efe467e5ae}} 
+\index{sodium.php@{sodium.php}!sodium\_compare@{sodium\_compare}}
+\index{sodium\_compare@{sodium\_compare}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_compare()}{sodium\_compare()}}
+{\footnotesize\ttfamily sodium\+\_\+compare (\begin{DoxyParamCaption}\item[{string}]{\$left,  }\item[{string}]{\$right }\end{DoxyParamCaption})}
+
+Compare two strings in constant time
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$left} & \\
+\hline
+string & {\em \$right} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a0e5fe3babbccd42e5cc9be3b4f301d57}\label{sodium_8php_a0e5fe3babbccd42e5cc9be3b4f301d57}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_aead\_aes256gcm\_decrypt@{sodium\_crypto\_aead\_aes256gcm\_decrypt}}
+\index{sodium\_crypto\_aead\_aes256gcm\_decrypt@{sodium\_crypto\_aead\_aes256gcm\_decrypt}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_aead\_aes256gcm\_decrypt()}{sodium\_crypto\_aead\_aes256gcm\_decrypt()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+aead\+\_\+aes256gcm\+\_\+decrypt (\begin{DoxyParamCaption}\item[{string}]{\$ciphertext,  }\item[{string}]{\$ad,  }\item[{string}]{\$nonce,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+Authenticated Encryption with Associated Data (decrypt) A\+E\+S-\/256-\/\+G\+CM
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ciphertext} & encrypted message \\
+\hline
+string & {\em \$ad} & additional data \\
+\hline
+string & {\em \$nonce} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_abe1d4371e6511fcfb1aff1e7c2a41259}\label{sodium_8php_abe1d4371e6511fcfb1aff1e7c2a41259}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_aead\_aes256gcm\_encrypt@{sodium\_crypto\_aead\_aes256gcm\_encrypt}}
+\index{sodium\_crypto\_aead\_aes256gcm\_encrypt@{sodium\_crypto\_aead\_aes256gcm\_encrypt}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_aead\_aes256gcm\_encrypt()}{sodium\_crypto\_aead\_aes256gcm\_encrypt()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+aead\+\_\+aes256gcm\+\_\+encrypt (\begin{DoxyParamCaption}\item[{string}]{\$msg,  }\item[{string}]{\$ad,  }\item[{string}]{\$nonce,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+Authenticated Encryption with Associated Data (encrypt) A\+E\+S-\/256-\/\+G\+CM
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msg} & plaintext message \\
+\hline
+string & {\em \$ad} & \\
+\hline
+string & {\em \$nonce} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a776f625aebdb432a040c02db58696c49}\label{sodium_8php_a776f625aebdb432a040c02db58696c49}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_aead\_aes256gcm\_is\_available@{sodium\_crypto\_aead\_aes256gcm\_is\_available}}
+\index{sodium\_crypto\_aead\_aes256gcm\_is\_available@{sodium\_crypto\_aead\_aes256gcm\_is\_available}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_aead\_aes256gcm\_is\_available()}{sodium\_crypto\_aead\_aes256gcm\_is\_available()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+aead\+\_\+aes256gcm\+\_\+is\+\_\+available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Can you access A\+E\+S-\/256-\/\+G\+CM? This is only available if you have supported hardware.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a77a98cd449369c31a8e59a98a42e6ce3}\label{sodium_8php_a77a98cd449369c31a8e59a98a42e6ce3}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_aead\_aes256gcm\_keygen@{sodium\_crypto\_aead\_aes256gcm\_keygen}}
+\index{sodium\_crypto\_aead\_aes256gcm\_keygen@{sodium\_crypto\_aead\_aes256gcm\_keygen}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_aead\_aes256gcm\_keygen()}{sodium\_crypto\_aead\_aes256gcm\_keygen()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+aead\+\_\+aes256gcm\+\_\+keygen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a random key
+
+It is equivalent to calling \mbox{\hyperlink{_c_s_p_r_n_g_8php_a05b35ea73bc2a5f66f88b85b623ad77d}{random\+\_\+bytes()}} but improves code clarity and can prevent misuse by ensuring that the provided key length is always be correct.
+
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://secure.php.net/manual/en/function.sodium-crypto-aead-aes256gcm-keygen.php}{\texttt{ https\+://secure.\+php.\+net/manual/en/function.\+sodium-\/crypto-\/aead-\/aes256gcm-\/keygen.\+php}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{sodium_8php_a7c02eece69abdf35c132670ef024e45d}\label{sodium_8php_a7c02eece69abdf35c132670ef024e45d}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_aead\_chacha20poly1305\_decrypt@{sodium\_crypto\_aead\_chacha20poly1305\_decrypt}}
+\index{sodium\_crypto\_aead\_chacha20poly1305\_decrypt@{sodium\_crypto\_aead\_chacha20poly1305\_decrypt}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_aead\_chacha20poly1305\_decrypt()}{sodium\_crypto\_aead\_chacha20poly1305\_decrypt()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+aead\+\_\+chacha20poly1305\+\_\+decrypt (\begin{DoxyParamCaption}\item[{string}]{\$ciphertext,  }\item[{string}]{\$ad,  }\item[{string}]{\$nonce,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+Authenticated Encryption with Associated Data (decrypt) Cha\+Cha20 + Poly1305
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ciphertext} & encrypted message \\
+\hline
+string & {\em \$ad} & additional data \\
+\hline
+string & {\em \$nonce} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a786e4fc9fb2a0c60e4651a7db928021c}\label{sodium_8php_a786e4fc9fb2a0c60e4651a7db928021c}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_aead\_chacha20poly1305\_encrypt@{sodium\_crypto\_aead\_chacha20poly1305\_encrypt}}
+\index{sodium\_crypto\_aead\_chacha20poly1305\_encrypt@{sodium\_crypto\_aead\_chacha20poly1305\_encrypt}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_aead\_chacha20poly1305\_encrypt()}{sodium\_crypto\_aead\_chacha20poly1305\_encrypt()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+aead\+\_\+chacha20poly1305\+\_\+encrypt (\begin{DoxyParamCaption}\item[{string}]{\$msg,  }\item[{string}]{\$ad,  }\item[{string}]{\$nonce,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+Authenticated Encryption with Associated Data (encrypt) Cha\+Cha20 + Poly1305
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msg} & plaintext message \\
+\hline
+string & {\em \$ad} & additional data \\
+\hline
+string & {\em \$nonce} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a3cc0e441bb196e0de3b6df4347cc73ce}\label{sodium_8php_a3cc0e441bb196e0de3b6df4347cc73ce}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_aead\_chacha20poly1305\_ietf\_decrypt@{sodium\_crypto\_aead\_chacha20poly1305\_ietf\_decrypt}}
+\index{sodium\_crypto\_aead\_chacha20poly1305\_ietf\_decrypt@{sodium\_crypto\_aead\_chacha20poly1305\_ietf\_decrypt}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_aead\_chacha20poly1305\_ietf\_decrypt()}{sodium\_crypto\_aead\_chacha20poly1305\_ietf\_decrypt()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+aead\+\_\+chacha20poly1305\+\_\+ietf\+\_\+decrypt (\begin{DoxyParamCaption}\item[{string}]{\$ciphertext,  }\item[{string}]{\$ad,  }\item[{string}]{\$nonce,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+Authenticated Encryption with Associated Data (decrypt) Cha\+Cha20 + Poly1305 (I\+E\+TF version)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ciphertext} & encrypted message \\
+\hline
+string & {\em \$ad} & additional data \\
+\hline
+string & {\em \$nonce} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_ab8045ca31d86358d855d836ba7517340}\label{sodium_8php_ab8045ca31d86358d855d836ba7517340}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_aead\_chacha20poly1305\_ietf\_encrypt@{sodium\_crypto\_aead\_chacha20poly1305\_ietf\_encrypt}}
+\index{sodium\_crypto\_aead\_chacha20poly1305\_ietf\_encrypt@{sodium\_crypto\_aead\_chacha20poly1305\_ietf\_encrypt}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_aead\_chacha20poly1305\_ietf\_encrypt()}{sodium\_crypto\_aead\_chacha20poly1305\_ietf\_encrypt()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+aead\+\_\+chacha20poly1305\+\_\+ietf\+\_\+encrypt (\begin{DoxyParamCaption}\item[{string}]{\$msg,  }\item[{string}]{\$ad,  }\item[{string}]{\$nonce,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+Authenticated Encryption with Associated Data (encrypt) Cha\+Cha20 + Poly1305 (I\+E\+TF version)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msg} & plaintext message \\
+\hline
+string & {\em \$ad} & additional data \\
+\hline
+string & {\em \$nonce} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a164e25cea2636c506aef20f975569ec6}\label{sodium_8php_a164e25cea2636c506aef20f975569ec6}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_aead\_chacha20poly1305\_ietf\_keygen@{sodium\_crypto\_aead\_chacha20poly1305\_ietf\_keygen}}
+\index{sodium\_crypto\_aead\_chacha20poly1305\_ietf\_keygen@{sodium\_crypto\_aead\_chacha20poly1305\_ietf\_keygen}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_aead\_chacha20poly1305\_ietf\_keygen()}{sodium\_crypto\_aead\_chacha20poly1305\_ietf\_keygen()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+aead\+\_\+chacha20poly1305\+\_\+ietf\+\_\+keygen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a random key
+
+It is equivalent to calling \mbox{\hyperlink{_c_s_p_r_n_g_8php_a05b35ea73bc2a5f66f88b85b623ad77d}{random\+\_\+bytes()}} but improves code clarity and can prevent misuse by ensuring that the provided key length is always be correct.
+
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://secure.php.net/manual/en/function.sodium-crypto-aead-chacha20poly1305-ietf-keygen.php}{\texttt{ https\+://secure.\+php.\+net/manual/en/function.\+sodium-\/crypto-\/aead-\/chacha20poly1305-\/ietf-\/keygen.\+php}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{sodium_8php_ac16e736c328c8d7777923279fa80141f}\label{sodium_8php_ac16e736c328c8d7777923279fa80141f}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_aead\_chacha20poly1305\_keygen@{sodium\_crypto\_aead\_chacha20poly1305\_keygen}}
+\index{sodium\_crypto\_aead\_chacha20poly1305\_keygen@{sodium\_crypto\_aead\_chacha20poly1305\_keygen}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_aead\_chacha20poly1305\_keygen()}{sodium\_crypto\_aead\_chacha20poly1305\_keygen()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+aead\+\_\+chacha20poly1305\+\_\+keygen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a random key It is equivalent to calling \mbox{\hyperlink{_c_s_p_r_n_g_8php_a05b35ea73bc2a5f66f88b85b623ad77d}{random\+\_\+bytes()}} but improves code clarity and can prevent misuse by ensuring that the provided key length is always be correct.
+
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://secure.php.net/manual/en/function.sodium-crypto-aead-chacha20poly1305-keygen.php}{\texttt{ https\+://secure.\+php.\+net/manual/en/function.\+sodium-\/crypto-\/aead-\/chacha20poly1305-\/keygen.\+php}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{sodium_8php_ab03d70694b23a895c4471a823cc30f99}\label{sodium_8php_ab03d70694b23a895c4471a823cc30f99}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_decrypt@{sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_decrypt}}
+\index{sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_decrypt@{sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_decrypt}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_decrypt()}{sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_decrypt()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+aead\+\_\+xchacha20poly1305\+\_\+ietf\+\_\+decrypt (\begin{DoxyParamCaption}\item[{string}]{\$ciphertext,  }\item[{string}]{\$ad,  }\item[{string}]{\$nonce,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.php.net/manual/en/function.sodium-crypto-aead-xchacha20poly1305-ietf-decrypt.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+sodium-\/crypto-\/aead-\/xchacha20poly1305-\/ietf-\/decrypt.\+php}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{sodium_8php_af0383f8d3a624d010692f331cd636b0d}\label{sodium_8php_af0383f8d3a624d010692f331cd636b0d}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_encrypt@{sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_encrypt}}
+\index{sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_encrypt@{sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_encrypt}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_encrypt()}{sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_encrypt()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+aead\+\_\+xchacha20poly1305\+\_\+ietf\+\_\+encrypt (\begin{DoxyParamCaption}\item[{string}]{\$msg,  }\item[{string}]{\$ad,  }\item[{string}]{\$nonce,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+\begin{DoxySince}{Since}
+7.\+2 \href{https://www.php.net/manual/en/function.sodium-crypto-aead-xchacha20poly1305-ietf-encrypt.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+sodium-\/crypto-\/aead-\/xchacha20poly1305-\/ietf-\/encrypt.\+php}} 
+\end{DoxySince}
+\mbox{\Hypertarget{sodium_8php_a8a52c76ae21ac6b71b443f4a4f9a449a}\label{sodium_8php_a8a52c76ae21ac6b71b443f4a4f9a449a}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_keygen@{sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_keygen}}
+\index{sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_keygen@{sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_keygen}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_keygen()}{sodium\_crypto\_aead\_xchacha20poly1305\_ietf\_keygen()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+aead\+\_\+xchacha20poly1305\+\_\+ietf\+\_\+keygen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.php.net/manual/en/function.sodium-crypto-aead-xchacha20poly1305-ietf-keygen.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+sodium-\/crypto-\/aead-\/xchacha20poly1305-\/ietf-\/keygen.\+php}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{sodium_8php_a5c134c96a2193b5287614c6e312a0b51}\label{sodium_8php_a5c134c96a2193b5287614c6e312a0b51}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_auth@{sodium\_crypto\_auth}}
+\index{sodium\_crypto\_auth@{sodium\_crypto\_auth}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_auth()}{sodium\_crypto\_auth()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+auth (\begin{DoxyParamCaption}\item[{string}]{\$msg,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+Secret-\/key message authentication H\+M\+AC S\+H\+A-\/512/256
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msg} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a15337ac4160b4f710cfc42a1ac1b41a3}\label{sodium_8php_a15337ac4160b4f710cfc42a1ac1b41a3}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_auth\_keygen@{sodium\_crypto\_auth\_keygen}}
+\index{sodium\_crypto\_auth\_keygen@{sodium\_crypto\_auth\_keygen}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_auth\_keygen()}{sodium\_crypto\_auth\_keygen()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+auth\+\_\+keygen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get random bytes for key \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string }}\mbox{\Hypertarget{sodium_8php_ac99e4ee37fa7301fbc8e12e57eb44875}\label{sodium_8php_ac99e4ee37fa7301fbc8e12e57eb44875}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_auth\_verify@{sodium\_crypto\_auth\_verify}}
+\index{sodium\_crypto\_auth\_verify@{sodium\_crypto\_auth\_verify}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_auth\_verify()}{sodium\_crypto\_auth\_verify()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+auth\+\_\+verify (\begin{DoxyParamCaption}\item[{string}]{\$mac,  }\item[{string}]{\$msg,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+Secret-\/key message verification H\+M\+AC S\+H\+A-\/512/256
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mac} & \\
+\hline
+string & {\em \$msg} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a46c0019daf92dcd2da60c0b09787dabf}\label{sodium_8php_a46c0019daf92dcd2da60c0b09787dabf}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_box@{sodium\_crypto\_box}}
+\index{sodium\_crypto\_box@{sodium\_crypto\_box}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_box()}{sodium\_crypto\_box()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+box (\begin{DoxyParamCaption}\item[{string}]{\$msg,  }\item[{string}]{\$nonce,  }\item[{string}]{\$keypair }\end{DoxyParamCaption})}
+
+Public-\/key authenticated encryption (encrypt) X25519 + Xsalsa20 + Poly1305
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msg} & \\
+\hline
+string & {\em \$nonce} & \\
+\hline
+string & {\em \$keypair} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a06fbe7ade060ad4e0f8026b579dc9522}\label{sodium_8php_a06fbe7ade060ad4e0f8026b579dc9522}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_box\_keypair@{sodium\_crypto\_box\_keypair}}
+\index{sodium\_crypto\_box\_keypair@{sodium\_crypto\_box\_keypair}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_box\_keypair()}{sodium\_crypto\_box\_keypair()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+box\+\_\+keypair (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Generate an X25519 keypair for use with the sodium\+\_\+crypto\+\_\+box A\+PI
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_af7e754d9eda3f6932559880b850eb890}\label{sodium_8php_af7e754d9eda3f6932559880b850eb890}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_box\_keypair\_from\_secretkey\_and\_publickey@{sodium\_crypto\_box\_keypair\_from\_secretkey\_and\_publickey}}
+\index{sodium\_crypto\_box\_keypair\_from\_secretkey\_and\_publickey@{sodium\_crypto\_box\_keypair\_from\_secretkey\_and\_publickey}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_box\_keypair\_from\_secretkey\_and\_publickey()}{sodium\_crypto\_box\_keypair\_from\_secretkey\_and\_publickey()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+box\+\_\+keypair\+\_\+from\+\_\+secretkey\+\_\+and\+\_\+publickey (\begin{DoxyParamCaption}\item[{string}]{\$secretkey,  }\item[{string}]{\$publickey }\end{DoxyParamCaption})}
+
+Create an X25519 keypair from an X25519 secret key and X25519 public key
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$secretkey} & \\
+\hline
+string & {\em \$publickey} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a772dfe3e8c0b0a0b6b81d212799234c7}\label{sodium_8php_a772dfe3e8c0b0a0b6b81d212799234c7}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_box\_open@{sodium\_crypto\_box\_open}}
+\index{sodium\_crypto\_box\_open@{sodium\_crypto\_box\_open}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_box\_open()}{sodium\_crypto\_box\_open()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+box\+\_\+open (\begin{DoxyParamCaption}\item[{string}]{\$msg,  }\item[{string}]{\$nonce,  }\item[{string}]{\$keypair }\end{DoxyParamCaption})}
+
+Public-\/key authenticated encryption (decrypt) X25519 + Xsalsa20 + Poly1305
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msg} & \\
+\hline
+string & {\em \$nonce} & \\
+\hline
+string & {\em \$keypair} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a1a1c8b7f5cd56b85ea63233270e0396a}\label{sodium_8php_a1a1c8b7f5cd56b85ea63233270e0396a}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_box\_publickey@{sodium\_crypto\_box\_publickey}}
+\index{sodium\_crypto\_box\_publickey@{sodium\_crypto\_box\_publickey}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_box\_publickey()}{sodium\_crypto\_box\_publickey()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+box\+\_\+publickey (\begin{DoxyParamCaption}\item[{string}]{\$keypair }\end{DoxyParamCaption})}
+
+Get an X25519 public key from an X25519 keypair
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$keypair} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_ae24d19d1d534f3bf2e688c0345d5668e}\label{sodium_8php_ae24d19d1d534f3bf2e688c0345d5668e}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_box\_publickey\_from\_secretkey@{sodium\_crypto\_box\_publickey\_from\_secretkey}}
+\index{sodium\_crypto\_box\_publickey\_from\_secretkey@{sodium\_crypto\_box\_publickey\_from\_secretkey}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_box\_publickey\_from\_secretkey()}{sodium\_crypto\_box\_publickey\_from\_secretkey()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+box\+\_\+publickey\+\_\+from\+\_\+secretkey (\begin{DoxyParamCaption}\item[{string}]{\$secretkey }\end{DoxyParamCaption})}
+
+Derive an X25519 public key from an X25519 secret key
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$secretkey} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_aa4d6cdc6c8c135c90a82bdd0269229dd}\label{sodium_8php_aa4d6cdc6c8c135c90a82bdd0269229dd}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_box\_seal@{sodium\_crypto\_box\_seal}}
+\index{sodium\_crypto\_box\_seal@{sodium\_crypto\_box\_seal}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_box\_seal()}{sodium\_crypto\_box\_seal()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+box\+\_\+seal (\begin{DoxyParamCaption}\item[{string}]{\$message,  }\item[{string}]{\$publickey }\end{DoxyParamCaption})}
+
+Anonymous public-\/key encryption (encrypt) X25519 + Xsalsa20 + Poly1305 + B\+L\+A\+K\+E2b
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & \\
+\hline
+string & {\em \$publickey} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a7dfee0586dec1f493bd2defc5c696669}\label{sodium_8php_a7dfee0586dec1f493bd2defc5c696669}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_box\_seal\_open@{sodium\_crypto\_box\_seal\_open}}
+\index{sodium\_crypto\_box\_seal\_open@{sodium\_crypto\_box\_seal\_open}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_box\_seal\_open()}{sodium\_crypto\_box\_seal\_open()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+box\+\_\+seal\+\_\+open (\begin{DoxyParamCaption}\item[{string}]{\$encrypted,  }\item[{string}]{\$keypair }\end{DoxyParamCaption})}
+
+Anonymous public-\/key encryption (decrypt) X25519 + Xsalsa20 + Poly1305 + B\+L\+A\+K\+E2b
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$encrypted} & \\
+\hline
+string & {\em \$keypair} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a9a34636d61f63f9ec6908245b6a0121f}\label{sodium_8php_a9a34636d61f63f9ec6908245b6a0121f}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_box\_secretkey@{sodium\_crypto\_box\_secretkey}}
+\index{sodium\_crypto\_box\_secretkey@{sodium\_crypto\_box\_secretkey}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_box\_secretkey()}{sodium\_crypto\_box\_secretkey()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+box\+\_\+secretkey (\begin{DoxyParamCaption}\item[{string}]{\$keypair }\end{DoxyParamCaption})}
+
+Extract the X25519 secret key from an X25519 keypair
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$keypair} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_aca1dd7e5645a0e09d3326bc8c03db152}\label{sodium_8php_aca1dd7e5645a0e09d3326bc8c03db152}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_box\_seed\_keypair@{sodium\_crypto\_box\_seed\_keypair}}
+\index{sodium\_crypto\_box\_seed\_keypair@{sodium\_crypto\_box\_seed\_keypair}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_box\_seed\_keypair()}{sodium\_crypto\_box\_seed\_keypair()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+box\+\_\+seed\+\_\+keypair (\begin{DoxyParamCaption}\item[{string}]{\$seed }\end{DoxyParamCaption})}
+
+Derive an X25519 keypair for use with the sodium\+\_\+crypto\+\_\+box A\+PI from a seed
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$seed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a4286b47a412f347aeb4687b0aca56646}\label{sodium_8php_a4286b47a412f347aeb4687b0aca56646}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_generichash@{sodium\_crypto\_generichash}}
+\index{sodium\_crypto\_generichash@{sodium\_crypto\_generichash}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_generichash()}{sodium\_crypto\_generichash()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+generichash (\begin{DoxyParamCaption}\item[{string}]{\$input,  }\item[{string}]{\$key = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{int}]{\$length = {\ttfamily 32} }\end{DoxyParamCaption})}
+
+Fast and secure cryptographic hash
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a16539084f3847048ae000cb150d9990c}\label{sodium_8php_a16539084f3847048ae000cb150d9990c}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_generichash\_final@{sodium\_crypto\_generichash\_final}}
+\index{sodium\_crypto\_generichash\_final@{sodium\_crypto\_generichash\_final}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_generichash\_final()}{sodium\_crypto\_generichash\_final()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+generichash\+\_\+final (\begin{DoxyParamCaption}\item[{string}]{\$state,  }\item[{int}]{\$length = {\ttfamily 32} }\end{DoxyParamCaption})}
+
+Get the final hash B\+L\+A\+K\+E2b
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$state} & \\
+\hline
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_ac8a3f450e1b771f1685c4abcfad661fe}\label{sodium_8php_ac8a3f450e1b771f1685c4abcfad661fe}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_generichash\_init@{sodium\_crypto\_generichash\_init}}
+\index{sodium\_crypto\_generichash\_init@{sodium\_crypto\_generichash\_init}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_generichash\_init()}{sodium\_crypto\_generichash\_init()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+generichash\+\_\+init (\begin{DoxyParamCaption}\item[{string}]{\$key = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{int}]{\$length = {\ttfamily 32} }\end{DoxyParamCaption})}
+
+Create a new hash state (e.\+g. to use for streams) B\+L\+A\+K\+E2b
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a252d23c2a91684ade3f140d85823f5af}\label{sodium_8php_a252d23c2a91684ade3f140d85823f5af}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_generichash\_keygen@{sodium\_crypto\_generichash\_keygen}}
+\index{sodium\_crypto\_generichash\_keygen@{sodium\_crypto\_generichash\_keygen}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_generichash\_keygen()}{sodium\_crypto\_generichash\_keygen()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+generichash\+\_\+keygen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get random bytes for key \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+2  string }}\mbox{\Hypertarget{sodium_8php_a2a74bb9ddefc50c9d4aa8475812fc629}\label{sodium_8php_a2a74bb9ddefc50c9d4aa8475812fc629}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_generichash\_update@{sodium\_crypto\_generichash\_update}}
+\index{sodium\_crypto\_generichash\_update@{sodium\_crypto\_generichash\_update}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_generichash\_update()}{sodium\_crypto\_generichash\_update()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+generichash\+\_\+update (\begin{DoxyParamCaption}\item[{string \&}]{\$state,  }\item[{string}]{\$append }\end{DoxyParamCaption})}
+
+Update the hash state with some data B\+L\+A\+K\+E2b
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \&\$state} & \\
+\hline
+string & {\em \$append} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_af4745de3c7b2cc426fa97658f38bcb36}\label{sodium_8php_af4745de3c7b2cc426fa97658f38bcb36}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_kdf\_derive\_from\_key@{sodium\_crypto\_kdf\_derive\_from\_key}}
+\index{sodium\_crypto\_kdf\_derive\_from\_key@{sodium\_crypto\_kdf\_derive\_from\_key}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_kdf\_derive\_from\_key()}{sodium\_crypto\_kdf\_derive\_from\_key()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+kdf\+\_\+derive\+\_\+from\+\_\+key (\begin{DoxyParamCaption}\item[{int}]{\$subkey\+\_\+len,  }\item[{int}]{\$subkey\+\_\+id,  }\item[{string}]{\$context,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+2  int \$subkey\+\_\+len  int \$subkey\+\_\+id  string \$context  string \$key  string }}\mbox{\Hypertarget{sodium_8php_ab0b9989b65195197f3c7cb0503b1dc96}\label{sodium_8php_ab0b9989b65195197f3c7cb0503b1dc96}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_kdf\_keygen@{sodium\_crypto\_kdf\_keygen}}
+\index{sodium\_crypto\_kdf\_keygen@{sodium\_crypto\_kdf\_keygen}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_kdf\_keygen()}{sodium\_crypto\_kdf\_keygen()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+kdf\+\_\+keygen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get random bytes for key \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+2  string }}\mbox{\Hypertarget{sodium_8php_a309c51189eb2793fc2f02bebc53d7f0e}\label{sodium_8php_a309c51189eb2793fc2f02bebc53d7f0e}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_kx@{sodium\_crypto\_kx}}
+\index{sodium\_crypto\_kx@{sodium\_crypto\_kx}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_kx()}{sodium\_crypto\_kx()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+kx (\begin{DoxyParamCaption}\item[{string}]{\$secretkey,  }\item[{string}]{\$publickey,  }\item[{string}]{\$client\+\_\+publickey,  }\item[{string}]{\$server\+\_\+publickey }\end{DoxyParamCaption})}
+
+Elliptic Curve Diffie Hellman Key Exchange X25519
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$secretkey} & \\
+\hline
+string & {\em \$publickey} & \\
+\hline
+string & {\em \$client\+\_\+publickey} & \\
+\hline
+string & {\em \$server\+\_\+publickey} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a16b6ea092ec53365c7c17a78408d304c}\label{sodium_8php_a16b6ea092ec53365c7c17a78408d304c}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_kx\_client\_session\_keys@{sodium\_crypto\_kx\_client\_session\_keys}}
+\index{sodium\_crypto\_kx\_client\_session\_keys@{sodium\_crypto\_kx\_client\_session\_keys}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_kx\_client\_session\_keys()}{sodium\_crypto\_kx\_client\_session\_keys()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+kx\+\_\+client\+\_\+session\+\_\+keys (\begin{DoxyParamCaption}\item[{string}]{\$client\+\_\+keypair,  }\item[{string}]{\$server\+\_\+key }\end{DoxyParamCaption})}
+
+\begin{DoxySince}{Since}
+7.\+2 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$client\+\_\+keypair  string \$server\+\_\+key  string\mbox{[}\mbox{]} }}
+\end{DoxySince}
+\mbox{\Hypertarget{sodium_8php_a7e1aa14f554271e43153e49f277e4853}\label{sodium_8php_a7e1aa14f554271e43153e49f277e4853}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_kx\_keypair@{sodium\_crypto\_kx\_keypair}}
+\index{sodium\_crypto\_kx\_keypair@{sodium\_crypto\_kx\_keypair}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_kx\_keypair()}{sodium\_crypto\_kx\_keypair()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+kx\+\_\+keypair (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+2  string }}\mbox{\Hypertarget{sodium_8php_a26258dba26cc041fdad276a67efeba58}\label{sodium_8php_a26258dba26cc041fdad276a67efeba58}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_kx\_publickey@{sodium\_crypto\_kx\_publickey}}
+\index{sodium\_crypto\_kx\_publickey@{sodium\_crypto\_kx\_publickey}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_kx\_publickey()}{sodium\_crypto\_kx\_publickey()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+kx\+\_\+publickey (\begin{DoxyParamCaption}\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+2  string \$key  string }}\mbox{\Hypertarget{sodium_8php_a58d0b3f0fd79d79c0ff724bfef89cc83}\label{sodium_8php_a58d0b3f0fd79d79c0ff724bfef89cc83}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_kx\_secretkey@{sodium\_crypto\_kx\_secretkey}}
+\index{sodium\_crypto\_kx\_secretkey@{sodium\_crypto\_kx\_secretkey}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_kx\_secretkey()}{sodium\_crypto\_kx\_secretkey()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+kx\+\_\+secretkey (\begin{DoxyParamCaption}\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+2  string \$key  string }}\mbox{\Hypertarget{sodium_8php_a19ccb5e6eab5ab0bf7c45d4e3037a13e}\label{sodium_8php_a19ccb5e6eab5ab0bf7c45d4e3037a13e}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_kx\_seed\_keypair@{sodium\_crypto\_kx\_seed\_keypair}}
+\index{sodium\_crypto\_kx\_seed\_keypair@{sodium\_crypto\_kx\_seed\_keypair}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_kx\_seed\_keypair()}{sodium\_crypto\_kx\_seed\_keypair()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+kx\+\_\+seed\+\_\+keypair (\begin{DoxyParamCaption}\item[{string}]{\$string }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+2  string \$string  string }}\mbox{\Hypertarget{sodium_8php_a335fdf24a22a33ae326a72e5e6003092}\label{sodium_8php_a335fdf24a22a33ae326a72e5e6003092}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_kx\_server\_session\_keys@{sodium\_crypto\_kx\_server\_session\_keys}}
+\index{sodium\_crypto\_kx\_server\_session\_keys@{sodium\_crypto\_kx\_server\_session\_keys}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_kx\_server\_session\_keys()}{sodium\_crypto\_kx\_server\_session\_keys()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+kx\+\_\+server\+\_\+session\+\_\+keys (\begin{DoxyParamCaption}\item[{string}]{\$server\+\_\+keypair,  }\item[{string}]{\$client\+\_\+key }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+2  string \$server\+\_\+keypair  string \$client\+\_\+key  string\mbox{[}\mbox{]} }}\mbox{\Hypertarget{sodium_8php_ab0b73b73482979c9678dfd96fdf4ba5d}\label{sodium_8php_ab0b73b73482979c9678dfd96fdf4ba5d}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_pwhash@{sodium\_crypto\_pwhash}}
+\index{sodium\_crypto\_pwhash@{sodium\_crypto\_pwhash}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_pwhash()}{sodium\_crypto\_pwhash()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+pwhash (\begin{DoxyParamCaption}\item[{int}]{\$out\+\_\+len,  }\item[{string}]{\$passwd,  }\item[{string}]{\$salt,  }\item[{int}]{\$opslimit,  }\item[{int}]{\$memlimit,  }\item[{int}]{\$alg }\end{DoxyParamCaption})}
+
+Secure password-\/based key derivation function Argon2i
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$out\+\_\+len} & \\
+\hline
+string & {\em \$passwd} & \\
+\hline
+string & {\em \$salt} & \\
+\hline
+int & {\em \$opslimit} & \\
+\hline
+int & {\em \$memlimit} & \\
+\hline
+int & {\em \$alg} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a8752ef9aca87e6bce12f6a7d20bdd101}\label{sodium_8php_a8752ef9aca87e6bce12f6a7d20bdd101}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_pwhash\_scryptsalsa208sha256@{sodium\_crypto\_pwhash\_scryptsalsa208sha256}}
+\index{sodium\_crypto\_pwhash\_scryptsalsa208sha256@{sodium\_crypto\_pwhash\_scryptsalsa208sha256}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_pwhash\_scryptsalsa208sha256()}{sodium\_crypto\_pwhash\_scryptsalsa208sha256()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+pwhash\+\_\+scryptsalsa208sha256 (\begin{DoxyParamCaption}\item[{int}]{\$out\+\_\+len,  }\item[{string}]{\$passwd,  }\item[{string}]{\$salt,  }\item[{int}]{\$opslimit,  }\item[{int}]{\$memlimit,  }\item[{int}]{\$alg }\end{DoxyParamCaption})}
+
+Secure password-\/based key derivation function Scrypt
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$out\+\_\+len} & \\
+\hline
+string & {\em \$passwd} & \\
+\hline
+string & {\em \$salt} & \\
+\hline
+int & {\em \$opslimit} & \\
+\hline
+int & {\em \$memlimit} & \\
+\hline
+int & {\em \$alg} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a84d5bb9e7512be376f9c70b0560a01cb}\label{sodium_8php_a84d5bb9e7512be376f9c70b0560a01cb}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_pwhash\_scryptsalsa208sha256\_str@{sodium\_crypto\_pwhash\_scryptsalsa208sha256\_str}}
+\index{sodium\_crypto\_pwhash\_scryptsalsa208sha256\_str@{sodium\_crypto\_pwhash\_scryptsalsa208sha256\_str}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_pwhash\_scryptsalsa208sha256\_str()}{sodium\_crypto\_pwhash\_scryptsalsa208sha256\_str()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+pwhash\+\_\+scryptsalsa208sha256\+\_\+str (\begin{DoxyParamCaption}\item[{string}]{\$passwd,  }\item[{int}]{\$opslimit,  }\item[{int}]{\$memlimit }\end{DoxyParamCaption})}
+
+Get a formatted password hash (for storage) Scrypt
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$passwd} & \\
+\hline
+int & {\em \$opslimit} & \\
+\hline
+int & {\em \$memlimit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a7bfbd7ccc792f708163da2e848f8ca40}\label{sodium_8php_a7bfbd7ccc792f708163da2e848f8ca40}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_pwhash\_scryptsalsa208sha256\_str\_verify@{sodium\_crypto\_pwhash\_scryptsalsa208sha256\_str\_verify}}
+\index{sodium\_crypto\_pwhash\_scryptsalsa208sha256\_str\_verify@{sodium\_crypto\_pwhash\_scryptsalsa208sha256\_str\_verify}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_pwhash\_scryptsalsa208sha256\_str\_verify()}{sodium\_crypto\_pwhash\_scryptsalsa208sha256\_str\_verify()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+pwhash\+\_\+scryptsalsa208sha256\+\_\+str\+\_\+verify (\begin{DoxyParamCaption}\item[{string}]{\$hash,  }\item[{string}]{\$passwd }\end{DoxyParamCaption})}
+
+Verify a password against a hash Scrypt
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$hash} & \\
+\hline
+string & {\em \$passwd} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_adf3ce6886732ac6b8ae7447c287ccd29}\label{sodium_8php_adf3ce6886732ac6b8ae7447c287ccd29}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_pwhash\_str@{sodium\_crypto\_pwhash\_str}}
+\index{sodium\_crypto\_pwhash\_str@{sodium\_crypto\_pwhash\_str}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_pwhash\_str()}{sodium\_crypto\_pwhash\_str()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+pwhash\+\_\+str (\begin{DoxyParamCaption}\item[{string}]{\$passwd,  }\item[{int}]{\$opslimit,  }\item[{int}]{\$memlimit }\end{DoxyParamCaption})}
+
+Get a formatted password hash (for storage) Argon2i
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$passwd} & \\
+\hline
+int & {\em \$opslimit} & \\
+\hline
+int & {\em \$memlimit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_ac6c898f2062eb02307e5afa4c4d6a9ec}\label{sodium_8php_ac6c898f2062eb02307e5afa4c4d6a9ec}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_pwhash\_str\_needs\_rehash@{sodium\_crypto\_pwhash\_str\_needs\_rehash}}
+\index{sodium\_crypto\_pwhash\_str\_needs\_rehash@{sodium\_crypto\_pwhash\_str\_needs\_rehash}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_pwhash\_str\_needs\_rehash()}{sodium\_crypto\_pwhash\_str\_needs\_rehash()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+pwhash\+\_\+str\+\_\+needs\+\_\+rehash (\begin{DoxyParamCaption}\item[{string}]{\$password,  }\item[{int}]{\$opslimit,  }\item[{int}]{\$memlimit }\end{DoxyParamCaption})}
+
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.php.net/manual/en/function.sodium-crypto-pwhash-str-needs-rehash.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+sodium-\/crypto-\/pwhash-\/str-\/needs-\/rehash.\+php}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{sodium_8php_ad73ad41f56f5a3f5a09ecdbf41bc6c97}\label{sodium_8php_ad73ad41f56f5a3f5a09ecdbf41bc6c97}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_pwhash\_str\_verify@{sodium\_crypto\_pwhash\_str\_verify}}
+\index{sodium\_crypto\_pwhash\_str\_verify@{sodium\_crypto\_pwhash\_str\_verify}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_pwhash\_str\_verify()}{sodium\_crypto\_pwhash\_str\_verify()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+pwhash\+\_\+str\+\_\+verify (\begin{DoxyParamCaption}\item[{string}]{\$hash,  }\item[{string}]{\$passwd }\end{DoxyParamCaption})}
+
+Verify a password against a hash Argon2i
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$hash} & \\
+\hline
+string & {\em \$passwd} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_adba353c1ad69ac738ccdcdf51727e852}\label{sodium_8php_adba353c1ad69ac738ccdcdf51727e852}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_scalarmult@{sodium\_crypto\_scalarmult}}
+\index{sodium\_crypto\_scalarmult@{sodium\_crypto\_scalarmult}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_scalarmult()}{sodium\_crypto\_scalarmult()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+scalarmult (\begin{DoxyParamCaption}\item[{string}]{\$ecdhA,  }\item[{string}]{\$ecdhB }\end{DoxyParamCaption})}
+
+Elliptic Curve Diffie Hellman over Curve25519 X25519
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ecdhA} & \\
+\hline
+string & {\em \$ecdhB} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a9a2d84db78eb8f5686c7364af5cfb912}\label{sodium_8php_a9a2d84db78eb8f5686c7364af5cfb912}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_scalarmult\_base@{sodium\_crypto\_scalarmult\_base}}
+\index{sodium\_crypto\_scalarmult\_base@{sodium\_crypto\_scalarmult\_base}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_scalarmult\_base()}{sodium\_crypto\_scalarmult\_base()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+scalarmult\+\_\+base (\begin{DoxyParamCaption}\item[{string}]{\$string\+\_\+1,  }\item[{string}]{\$string\+\_\+2 }\end{DoxyParamCaption})}
+
+Scalar multiplication of the base point and your key
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string\+\_\+1} & \\
+\hline
+string & {\em \$string\+\_\+2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_ab0a31de1fca56cc2041d65ed14f3a604}\label{sodium_8php_ab0a31de1fca56cc2041d65ed14f3a604}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_secretbox@{sodium\_crypto\_secretbox}}
+\index{sodium\_crypto\_secretbox@{sodium\_crypto\_secretbox}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_secretbox()}{sodium\_crypto\_secretbox()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+secretbox (\begin{DoxyParamCaption}\item[{string}]{\$plaintext,  }\item[{string}]{\$nonce,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+Authenticated secret-\/key encryption (encrypt) Xsals20 + Poly1305
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$plaintext} & \\
+\hline
+string & {\em \$nonce} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a3e977248881f78522af7c07f9d944854}\label{sodium_8php_a3e977248881f78522af7c07f9d944854}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_secretbox\_keygen@{sodium\_crypto\_secretbox\_keygen}}
+\index{sodium\_crypto\_secretbox\_keygen@{sodium\_crypto\_secretbox\_keygen}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_secretbox\_keygen()}{sodium\_crypto\_secretbox\_keygen()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+secretbox\+\_\+keygen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a random key
+
+It is equivalent to calling \mbox{\hyperlink{_c_s_p_r_n_g_8php_a05b35ea73bc2a5f66f88b85b623ad77d}{random\+\_\+bytes()}} but improves code clarity and can prevent misuse by ensuring that the provided key length is always be correct.
+
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://secure.php.net/manual/en/function.sodium-crypto-secretbox-keygen.php}{\texttt{ https\+://secure.\+php.\+net/manual/en/function.\+sodium-\/crypto-\/secretbox-\/keygen.\+php}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{sodium_8php_a2665dc497a58db38be2b475ac570888f}\label{sodium_8php_a2665dc497a58db38be2b475ac570888f}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_secretbox\_open@{sodium\_crypto\_secretbox\_open}}
+\index{sodium\_crypto\_secretbox\_open@{sodium\_crypto\_secretbox\_open}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_secretbox\_open()}{sodium\_crypto\_secretbox\_open()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+secretbox\+\_\+open (\begin{DoxyParamCaption}\item[{string}]{\$ciphertext,  }\item[{string}]{\$nonce,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+Authenticated secret-\/key encryption (decrypt) Xsals20 + Poly1305
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ciphertext} & \\
+\hline
+string & {\em \$nonce} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_aaf77e02ad65f5cc83f6fd521265f4e2d}\label{sodium_8php_aaf77e02ad65f5cc83f6fd521265f4e2d}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_secretstream\_xchacha20poly1305\_init\_pull@{sodium\_crypto\_secretstream\_xchacha20poly1305\_init\_pull}}
+\index{sodium\_crypto\_secretstream\_xchacha20poly1305\_init\_pull@{sodium\_crypto\_secretstream\_xchacha20poly1305\_init\_pull}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_secretstream\_xchacha20poly1305\_init\_pull()}{sodium\_crypto\_secretstream\_xchacha20poly1305\_init\_pull()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+secretstream\+\_\+xchacha20poly1305\+\_\+init\+\_\+pull (\begin{DoxyParamCaption}\item[{}]{\$header,  }\item[{}]{\$key }\end{DoxyParamCaption})}
+
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.php.net/manual/en/function.sodium-crypto-secretstream-xchacha20poly1305-init-pull.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+sodium-\/crypto-\/secretstream-\/xchacha20poly1305-\/init-\/pull.\+php}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{sodium_8php_a4d8612575f50036c286c2f4229a21060}\label{sodium_8php_a4d8612575f50036c286c2f4229a21060}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_secretstream\_xchacha20poly1305\_init\_push@{sodium\_crypto\_secretstream\_xchacha20poly1305\_init\_push}}
+\index{sodium\_crypto\_secretstream\_xchacha20poly1305\_init\_push@{sodium\_crypto\_secretstream\_xchacha20poly1305\_init\_push}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_secretstream\_xchacha20poly1305\_init\_push()}{sodium\_crypto\_secretstream\_xchacha20poly1305\_init\_push()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+secretstream\+\_\+xchacha20poly1305\+\_\+init\+\_\+push (\begin{DoxyParamCaption}\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.php.net/manual/en/function.sodium-crypto-secretstream-xchacha20poly1305-init-push.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+sodium-\/crypto-\/secretstream-\/xchacha20poly1305-\/init-\/push.\+php}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{sodium_8php_af2811b426b0ccb7a93a0703e5da51496}\label{sodium_8php_af2811b426b0ccb7a93a0703e5da51496}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_secretstream\_xchacha20poly1305\_keygen@{sodium\_crypto\_secretstream\_xchacha20poly1305\_keygen}}
+\index{sodium\_crypto\_secretstream\_xchacha20poly1305\_keygen@{sodium\_crypto\_secretstream\_xchacha20poly1305\_keygen}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_secretstream\_xchacha20poly1305\_keygen()}{sodium\_crypto\_secretstream\_xchacha20poly1305\_keygen()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+secretstream\+\_\+xchacha20poly1305\+\_\+keygen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.php.net/manual/en/function.sodium-crypto-secretstream-xchacha20poly1305-keygen.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+sodium-\/crypto-\/secretstream-\/xchacha20poly1305-\/keygen.\+php}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{sodium_8php_acad8f0bde744054f9322ca1b15f724cd}\label{sodium_8php_acad8f0bde744054f9322ca1b15f724cd}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_secretstream\_xchacha20poly1305\_pull@{sodium\_crypto\_secretstream\_xchacha20poly1305\_pull}}
+\index{sodium\_crypto\_secretstream\_xchacha20poly1305\_pull@{sodium\_crypto\_secretstream\_xchacha20poly1305\_pull}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_secretstream\_xchacha20poly1305\_pull()}{sodium\_crypto\_secretstream\_xchacha20poly1305\_pull()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+secretstream\+\_\+xchacha20poly1305\+\_\+pull (\begin{DoxyParamCaption}\item[{string \&}]{\$state,  }\item[{string}]{\$c,  }\item[{string}]{\$ad = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.php.net/manual/en/function.sodium-crypto-secretstream-xchacha20poly1305-pull.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+sodium-\/crypto-\/secretstream-\/xchacha20poly1305-\/pull.\+php}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{sodium_8php_abd2ba8ffdbba79f39b8a0f95ec667eaf}\label{sodium_8php_abd2ba8ffdbba79f39b8a0f95ec667eaf}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_secretstream\_xchacha20poly1305\_push@{sodium\_crypto\_secretstream\_xchacha20poly1305\_push}}
+\index{sodium\_crypto\_secretstream\_xchacha20poly1305\_push@{sodium\_crypto\_secretstream\_xchacha20poly1305\_push}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_secretstream\_xchacha20poly1305\_push()}{sodium\_crypto\_secretstream\_xchacha20poly1305\_push()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+secretstream\+\_\+xchacha20poly1305\+\_\+push (\begin{DoxyParamCaption}\item[{string \&}]{\$state,  }\item[{string}]{\$msg,  }\item[{string}]{\$ad,  }\item[{int}]{\$tag }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$state} & \\
+\hline
+string & {\em \$msg} & \\
+\hline
+string & {\em \$ad} & \mbox{[}optional\mbox{]} \\
+\hline
+int & {\em \$tag} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.php.net/manual/en/function.sodium-crypto-secretstream-xchacha20poly1305-push.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+sodium-\/crypto-\/secretstream-\/xchacha20poly1305-\/push.\+php}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{sodium_8php_aff7b6054802cadfdca3b46d1515fc0f1}\label{sodium_8php_aff7b6054802cadfdca3b46d1515fc0f1}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_secretstream\_xchacha20poly1305\_rekey@{sodium\_crypto\_secretstream\_xchacha20poly1305\_rekey}}
+\index{sodium\_crypto\_secretstream\_xchacha20poly1305\_rekey@{sodium\_crypto\_secretstream\_xchacha20poly1305\_rekey}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_secretstream\_xchacha20poly1305\_rekey()}{sodium\_crypto\_secretstream\_xchacha20poly1305\_rekey()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+secretstream\+\_\+xchacha20poly1305\+\_\+rekey (\begin{DoxyParamCaption}\item[{string \&}]{\$state }\end{DoxyParamCaption})}
+
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.php.net/manual/en/function.sodium-crypto-secretstream-xchacha20poly1305-rekey.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+sodium-\/crypto-\/secretstream-\/xchacha20poly1305-\/rekey.\+php}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{sodium_8php_a13a7a53991c149acea33b5f6dc7bd46a}\label{sodium_8php_a13a7a53991c149acea33b5f6dc7bd46a}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_shorthash@{sodium\_crypto\_shorthash}}
+\index{sodium\_crypto\_shorthash@{sodium\_crypto\_shorthash}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_shorthash()}{sodium\_crypto\_shorthash()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+shorthash (\begin{DoxyParamCaption}\item[{string}]{\$message,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_a}{A}} short keyed hash suitable for data structures Sip\+Hash-\/2-\/4
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_aa62cd933748a7b377f361e2cf6328c87}\label{sodium_8php_aa62cd933748a7b377f361e2cf6328c87}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_shorthash\_keygen@{sodium\_crypto\_shorthash\_keygen}}
+\index{sodium\_crypto\_shorthash\_keygen@{sodium\_crypto\_shorthash\_keygen}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_shorthash\_keygen()}{sodium\_crypto\_shorthash\_keygen()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+shorthash\+\_\+keygen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get random bytes for key \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+2  string }}\mbox{\Hypertarget{sodium_8php_adf5458d915598993f911a449da6808b6}\label{sodium_8php_adf5458d915598993f911a449da6808b6}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_sign@{sodium\_crypto\_sign}}
+\index{sodium\_crypto\_sign@{sodium\_crypto\_sign}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_sign()}{sodium\_crypto\_sign()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+sign (\begin{DoxyParamCaption}\item[{string}]{\$message,  }\item[{string}]{\$secretkey }\end{DoxyParamCaption})}
+
+Digital Signature Ed25519
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & \\
+\hline
+string & {\em \$secretkey} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a8ce4449a85e313aec0a5735acfc9814c}\label{sodium_8php_a8ce4449a85e313aec0a5735acfc9814c}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_sign\_detached@{sodium\_crypto\_sign\_detached}}
+\index{sodium\_crypto\_sign\_detached@{sodium\_crypto\_sign\_detached}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_sign\_detached()}{sodium\_crypto\_sign\_detached()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+sign\+\_\+detached (\begin{DoxyParamCaption}\item[{string}]{\$message,  }\item[{string}]{\$secretkey }\end{DoxyParamCaption})}
+
+Digital Signature (detached) Ed25519
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & \\
+\hline
+string & {\em \$secretkey} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a36a76252f2d997ea4e164f1222464299}\label{sodium_8php_a36a76252f2d997ea4e164f1222464299}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_sign\_ed25519\_pk\_to\_curve25519@{sodium\_crypto\_sign\_ed25519\_pk\_to\_curve25519}}
+\index{sodium\_crypto\_sign\_ed25519\_pk\_to\_curve25519@{sodium\_crypto\_sign\_ed25519\_pk\_to\_curve25519}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_sign\_ed25519\_pk\_to\_curve25519()}{sodium\_crypto\_sign\_ed25519\_pk\_to\_curve25519()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+sign\+\_\+ed25519\+\_\+pk\+\_\+to\+\_\+curve25519 (\begin{DoxyParamCaption}\item[{string}]{\$sign\+\_\+pk }\end{DoxyParamCaption})}
+
+Convert an Ed25519 public key to an X25519 public key
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sign\+\_\+pk} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a9e05c25fc08c69b24dfa0e8e6dd263fe}\label{sodium_8php_a9e05c25fc08c69b24dfa0e8e6dd263fe}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_sign\_ed25519\_sk\_to\_curve25519@{sodium\_crypto\_sign\_ed25519\_sk\_to\_curve25519}}
+\index{sodium\_crypto\_sign\_ed25519\_sk\_to\_curve25519@{sodium\_crypto\_sign\_ed25519\_sk\_to\_curve25519}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_sign\_ed25519\_sk\_to\_curve25519()}{sodium\_crypto\_sign\_ed25519\_sk\_to\_curve25519()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+sign\+\_\+ed25519\+\_\+sk\+\_\+to\+\_\+curve25519 (\begin{DoxyParamCaption}\item[{string}]{\$sign\+\_\+sk }\end{DoxyParamCaption})}
+
+Convert an Ed25519 secret key to an X25519 secret key
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sign\+\_\+sk} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a1fefb2aaa5a3c8e554f6ed9b9cdbdaba}\label{sodium_8php_a1fefb2aaa5a3c8e554f6ed9b9cdbdaba}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_sign\_keypair@{sodium\_crypto\_sign\_keypair}}
+\index{sodium\_crypto\_sign\_keypair@{sodium\_crypto\_sign\_keypair}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_sign\_keypair()}{sodium\_crypto\_sign\_keypair()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+sign\+\_\+keypair (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Generate an Ed25519 keypair for use with the crypto\+\_\+sign A\+PI
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a70b9e95b3980d28593fcb26e82058719}\label{sodium_8php_a70b9e95b3980d28593fcb26e82058719}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_sign\_keypair\_from\_secretkey\_and\_publickey@{sodium\_crypto\_sign\_keypair\_from\_secretkey\_and\_publickey}}
+\index{sodium\_crypto\_sign\_keypair\_from\_secretkey\_and\_publickey@{sodium\_crypto\_sign\_keypair\_from\_secretkey\_and\_publickey}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_sign\_keypair\_from\_secretkey\_and\_publickey()}{sodium\_crypto\_sign\_keypair\_from\_secretkey\_and\_publickey()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+sign\+\_\+keypair\+\_\+from\+\_\+secretkey\+\_\+and\+\_\+publickey (\begin{DoxyParamCaption}\item[{string}]{\$secretkey,  }\item[{string}]{\$publickey }\end{DoxyParamCaption})}
+
+Create an Ed25519 keypair from an Ed25519 secret key + Ed25519 public key
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$secretkey} & \\
+\hline
+string & {\em \$publickey} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a183f004e8f355f4ce25d05f76446df15}\label{sodium_8php_a183f004e8f355f4ce25d05f76446df15}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_sign\_open@{sodium\_crypto\_sign\_open}}
+\index{sodium\_crypto\_sign\_open@{sodium\_crypto\_sign\_open}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_sign\_open()}{sodium\_crypto\_sign\_open()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+sign\+\_\+open (\begin{DoxyParamCaption}\item[{string}]{\$signed\+\_\+message,  }\item[{string}]{\$publickey }\end{DoxyParamCaption})}
+
+Verify a signed message and return the plaintext
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$signed\+\_\+message} & \\
+\hline
+string & {\em \$publickey} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_ac901f0f00e86f230dd48adcf92a081f5}\label{sodium_8php_ac901f0f00e86f230dd48adcf92a081f5}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_sign\_publickey@{sodium\_crypto\_sign\_publickey}}
+\index{sodium\_crypto\_sign\_publickey@{sodium\_crypto\_sign\_publickey}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_sign\_publickey()}{sodium\_crypto\_sign\_publickey()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+sign\+\_\+publickey (\begin{DoxyParamCaption}\item[{string}]{\$keypair }\end{DoxyParamCaption})}
+
+Get the public key from an Ed25519 keypair
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$keypair} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a4545fffa2ca0be18799698aae3ac18f6}\label{sodium_8php_a4545fffa2ca0be18799698aae3ac18f6}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_sign\_publickey\_from\_secretkey@{sodium\_crypto\_sign\_publickey\_from\_secretkey}}
+\index{sodium\_crypto\_sign\_publickey\_from\_secretkey@{sodium\_crypto\_sign\_publickey\_from\_secretkey}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_sign\_publickey\_from\_secretkey()}{sodium\_crypto\_sign\_publickey\_from\_secretkey()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+sign\+\_\+publickey\+\_\+from\+\_\+secretkey (\begin{DoxyParamCaption}\item[{string}]{\$secretkey }\end{DoxyParamCaption})}
+
+Derive an Ed25519 public key from an Ed25519 secret key
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$secretkey} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a826eecda6345e0c5d4955558c3cbe2f3}\label{sodium_8php_a826eecda6345e0c5d4955558c3cbe2f3}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_sign\_secretkey@{sodium\_crypto\_sign\_secretkey}}
+\index{sodium\_crypto\_sign\_secretkey@{sodium\_crypto\_sign\_secretkey}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_sign\_secretkey()}{sodium\_crypto\_sign\_secretkey()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+sign\+\_\+secretkey (\begin{DoxyParamCaption}\item[{string}]{\$keypair }\end{DoxyParamCaption})}
+
+Get the secret key from an Ed25519 keypair
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$keypair} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a59c24b544a599b568f754034c60ad30e}\label{sodium_8php_a59c24b544a599b568f754034c60ad30e}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_sign\_seed\_keypair@{sodium\_crypto\_sign\_seed\_keypair}}
+\index{sodium\_crypto\_sign\_seed\_keypair@{sodium\_crypto\_sign\_seed\_keypair}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_sign\_seed\_keypair()}{sodium\_crypto\_sign\_seed\_keypair()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+sign\+\_\+seed\+\_\+keypair (\begin{DoxyParamCaption}\item[{string}]{\$seed }\end{DoxyParamCaption})}
+
+Derive an Ed25519 keypair for use with the crypto\+\_\+sign A\+PI from a seed
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$seed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a98b355cd69607623bb90dd9ba4feb20b}\label{sodium_8php_a98b355cd69607623bb90dd9ba4feb20b}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_sign\_verify\_detached@{sodium\_crypto\_sign\_verify\_detached}}
+\index{sodium\_crypto\_sign\_verify\_detached@{sodium\_crypto\_sign\_verify\_detached}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_sign\_verify\_detached()}{sodium\_crypto\_sign\_verify\_detached()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+sign\+\_\+verify\+\_\+detached (\begin{DoxyParamCaption}\item[{string}]{\$signature,  }\item[{string}]{\$msg,  }\item[{string}]{\$publickey }\end{DoxyParamCaption})}
+
+Verify a detached signature
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$signature} & \\
+\hline
+string & {\em \$msg} & \\
+\hline
+string & {\em \$publickey} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a8a577411df846f8b492092361f91e764}\label{sodium_8php_a8a577411df846f8b492092361f91e764}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_stream@{sodium\_crypto\_stream}}
+\index{sodium\_crypto\_stream@{sodium\_crypto\_stream}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_stream()}{sodium\_crypto\_stream()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+stream (\begin{DoxyParamCaption}\item[{int}]{\$length,  }\item[{string}]{\$nonce,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+Create a keystream from a key and nonce Xsalsa20
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \\
+\hline
+string & {\em \$nonce} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a1ad43fc4a92f018daa2aa6935be4516a}\label{sodium_8php_a1ad43fc4a92f018daa2aa6935be4516a}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_stream\_keygen@{sodium\_crypto\_stream\_keygen}}
+\index{sodium\_crypto\_stream\_keygen@{sodium\_crypto\_stream\_keygen}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_stream\_keygen()}{sodium\_crypto\_stream\_keygen()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+stream\+\_\+keygen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get random bytes for key \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+2  string }}\mbox{\Hypertarget{sodium_8php_a8e2bb6ac7d97fe851be8aaae964a74c2}\label{sodium_8php_a8e2bb6ac7d97fe851be8aaae964a74c2}} 
+\index{sodium.php@{sodium.php}!sodium\_crypto\_stream\_xor@{sodium\_crypto\_stream\_xor}}
+\index{sodium\_crypto\_stream\_xor@{sodium\_crypto\_stream\_xor}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_crypto\_stream\_xor()}{sodium\_crypto\_stream\_xor()}}
+{\footnotesize\ttfamily sodium\+\_\+crypto\+\_\+stream\+\_\+xor (\begin{DoxyParamCaption}\item[{string}]{\$plaintext,  }\item[{string}]{\$nonce,  }\item[{string}]{\$key }\end{DoxyParamCaption})}
+
+Encrypt a message using a stream cipher Xsalsa20
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$plaintext} & \\
+\hline
+string & {\em \$nonce} & \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a389eae8e482c73f8db5dda4e19ac5dcc}\label{sodium_8php_a389eae8e482c73f8db5dda4e19ac5dcc}} 
+\index{sodium.php@{sodium.php}!sodium\_hex2bin@{sodium\_hex2bin}}
+\index{sodium\_hex2bin@{sodium\_hex2bin}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_hex2bin()}{sodium\_hex2bin()}}
+{\footnotesize\ttfamily sodium\+\_\+hex2bin (\begin{DoxyParamCaption}\item[{string}]{\$hex,  }\item[{string}]{\$ignore }\end{DoxyParamCaption})}
+
+Convert from hex without side-\/chanels
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$binary} & \\
+\hline
+string & {\em \$ignore} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_abaa3f17e46d7d8e9282c4c69ff6c963e}\label{sodium_8php_abaa3f17e46d7d8e9282c4c69ff6c963e}} 
+\index{sodium.php@{sodium.php}!sodium\_increment@{sodium\_increment}}
+\index{sodium\_increment@{sodium\_increment}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_increment()}{sodium\_increment()}}
+{\footnotesize\ttfamily sodium\+\_\+increment (\begin{DoxyParamCaption}\item[{string \&}]{\$nonce }\end{DoxyParamCaption})}
+
+Increment a string in little-\/endian
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \&\$nonce} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_adb137fe748e50f26cfe6de549f38953c}\label{sodium_8php_adb137fe748e50f26cfe6de549f38953c}} 
+\index{sodium.php@{sodium.php}!sodium\_library\_version\_major@{sodium\_library\_version\_major}}
+\index{sodium\_library\_version\_major@{sodium\_library\_version\_major}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_library\_version\_major()}{sodium\_library\_version\_major()}}
+{\footnotesize\ttfamily sodium\+\_\+library\+\_\+version\+\_\+major (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the true major version of libsodium \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_afb193729cbf4e0c4b69c9c610f4751a4}\label{sodium_8php_afb193729cbf4e0c4b69c9c610f4751a4}} 
+\index{sodium.php@{sodium.php}!sodium\_library\_version\_minor@{sodium\_library\_version\_minor}}
+\index{sodium\_library\_version\_minor@{sodium\_library\_version\_minor}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_library\_version\_minor()}{sodium\_library\_version\_minor()}}
+{\footnotesize\ttfamily sodium\+\_\+library\+\_\+version\+\_\+minor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the true minor version of libsodium \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a4c4e8c5581a29ea9ce2761f558c0f878}\label{sodium_8php_a4c4e8c5581a29ea9ce2761f558c0f878}} 
+\index{sodium.php@{sodium.php}!sodium\_memcmp@{sodium\_memcmp}}
+\index{sodium\_memcmp@{sodium\_memcmp}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_memcmp()}{sodium\_memcmp()}}
+{\footnotesize\ttfamily sodium\+\_\+memcmp (\begin{DoxyParamCaption}\item[{string}]{\$left,  }\item[{string}]{\$right }\end{DoxyParamCaption})}
+
+Compare two strings in constant time
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$left} & \\
+\hline
+string & {\em \$right} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a1c30d6f5c99a304d197f0e28080cdcae}\label{sodium_8php_a1c30d6f5c99a304d197f0e28080cdcae}} 
+\index{sodium.php@{sodium.php}!sodium\_memzero@{sodium\_memzero}}
+\index{sodium\_memzero@{sodium\_memzero}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_memzero()}{sodium\_memzero()}}
+{\footnotesize\ttfamily sodium\+\_\+memzero (\begin{DoxyParamCaption}\item[{\&}]{\$reference }\end{DoxyParamCaption})}
+
+Wipe a buffer
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \&\$nonce} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{sodium_8php_a54a9e74da3c38178c94b39210ddc5ac0}\label{sodium_8php_a54a9e74da3c38178c94b39210ddc5ac0}} 
+\index{sodium.php@{sodium.php}!sodium\_pad@{sodium\_pad}}
+\index{sodium\_pad@{sodium\_pad}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_pad()}{sodium\_pad()}}
+{\footnotesize\ttfamily sodium\+\_\+pad (\begin{DoxyParamCaption}\item[{}]{\$string,  }\item[{}]{\$length }\end{DoxyParamCaption})}
+
+Add padding data \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+2  string \$string  int \$length  string }}\mbox{\Hypertarget{sodium_8php_a9582cafad76cb6cecef344930704198b}\label{sodium_8php_a9582cafad76cb6cecef344930704198b}} 
+\index{sodium.php@{sodium.php}!sodium\_randombytes\_buf@{sodium\_randombytes\_buf}}
+\index{sodium\_randombytes\_buf@{sodium\_randombytes\_buf}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_randombytes\_buf()}{sodium\_randombytes\_buf()}}
+{\footnotesize\ttfamily sodium\+\_\+randombytes\+\_\+buf (\begin{DoxyParamCaption}\item[{int}]{\$length }\end{DoxyParamCaption})}
+
+Generate a string of random bytes /dev/urandom
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a838a539a655b340a21a516d31a0ac0f5}\label{sodium_8php_a838a539a655b340a21a516d31a0ac0f5}} 
+\index{sodium.php@{sodium.php}!sodium\_randombytes\_random16@{sodium\_randombytes\_random16}}
+\index{sodium\_randombytes\_random16@{sodium\_randombytes\_random16}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_randombytes\_random16()}{sodium\_randombytes\_random16()}}
+{\footnotesize\ttfamily sodium\+\_\+randombytes\+\_\+random16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Generate a 16-\/bit integer /dev/urandom
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_abf4976d7fb0a81870b8eba097746eba4}\label{sodium_8php_abf4976d7fb0a81870b8eba097746eba4}} 
+\index{sodium.php@{sodium.php}!sodium\_randombytes\_uniform@{sodium\_randombytes\_uniform}}
+\index{sodium\_randombytes\_uniform@{sodium\_randombytes\_uniform}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_randombytes\_uniform()}{sodium\_randombytes\_uniform()}}
+{\footnotesize\ttfamily sodium\+\_\+randombytes\+\_\+uniform (\begin{DoxyParamCaption}\item[{int}]{\$upper\+Bound\+Non\+Inclusive }\end{DoxyParamCaption})}
+
+Generate an unbiased random integer between 0 and a specified value /dev/urandom
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$upper\+Bound\+Non\+Inclusive} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sodium_8php_a4b28507978e0feb5644b0f6c616eba03}\label{sodium_8php_a4b28507978e0feb5644b0f6c616eba03}} 
+\index{sodium.php@{sodium.php}!sodium\_unpad@{sodium\_unpad}}
+\index{sodium\_unpad@{sodium\_unpad}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_unpad()}{sodium\_unpad()}}
+{\footnotesize\ttfamily sodium\+\_\+unpad (\begin{DoxyParamCaption}\item[{}]{\$string,  }\item[{}]{\$length }\end{DoxyParamCaption})}
+
+Remove padding data \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+2  string \$string  int \$length }}\mbox{\Hypertarget{sodium_8php_a1d57235fb848f9f9ef6acd3c40aedf34}\label{sodium_8php_a1d57235fb848f9f9ef6acd3c40aedf34}} 
+\index{sodium.php@{sodium.php}!sodium\_version\_string@{sodium\_version\_string}}
+\index{sodium\_version\_string@{sodium\_version\_string}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{sodium\_version\_string()}{sodium\_version\_string()}}
+{\footnotesize\ttfamily sodium\+\_\+version\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the version string
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{sodium_8php_aa5f8b42dc513bd1e3a3b318a8a1dabc0}\label{sodium_8php_aa5f8b42dc513bd1e3a3b318a8a1dabc0}} 
+\index{sodium.php@{sodium.php}!SODIUM\_BASE64\_VARIANT\_ORIGINAL@{SODIUM\_BASE64\_VARIANT\_ORIGINAL}}
+\index{SODIUM\_BASE64\_VARIANT\_ORIGINAL@{SODIUM\_BASE64\_VARIANT\_ORIGINAL}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_BASE64\_VARIANT\_ORIGINAL}{SODIUM\_BASE64\_VARIANT\_ORIGINAL}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+B\+A\+S\+E64\+\_\+\+V\+A\+R\+I\+A\+N\+T\+\_\+\+O\+R\+I\+G\+I\+N\+AL = 1}
+
+\mbox{\Hypertarget{sodium_8php_a56442cda4e994cb74c50a4d6479cde8b}\label{sodium_8php_a56442cda4e994cb74c50a4d6479cde8b}} 
+\index{sodium.php@{sodium.php}!SODIUM\_BASE64\_VARIANT\_ORIGINAL\_NO\_PADDING@{SODIUM\_BASE64\_VARIANT\_ORIGINAL\_NO\_PADDING}}
+\index{SODIUM\_BASE64\_VARIANT\_ORIGINAL\_NO\_PADDING@{SODIUM\_BASE64\_VARIANT\_ORIGINAL\_NO\_PADDING}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_BASE64\_VARIANT\_ORIGINAL\_NO\_PADDING}{SODIUM\_BASE64\_VARIANT\_ORIGINAL\_NO\_PADDING}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+B\+A\+S\+E64\+\_\+\+V\+A\+R\+I\+A\+N\+T\+\_\+\+O\+R\+I\+G\+I\+N\+A\+L\+\_\+\+N\+O\+\_\+\+P\+A\+D\+D\+I\+NG = 3}
+
+\mbox{\Hypertarget{sodium_8php_a7af66d9ad1345222a065cf2955943d35}\label{sodium_8php_a7af66d9ad1345222a065cf2955943d35}} 
+\index{sodium.php@{sodium.php}!SODIUM\_BASE64\_VARIANT\_URLSAFE@{SODIUM\_BASE64\_VARIANT\_URLSAFE}}
+\index{SODIUM\_BASE64\_VARIANT\_URLSAFE@{SODIUM\_BASE64\_VARIANT\_URLSAFE}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_BASE64\_VARIANT\_URLSAFE}{SODIUM\_BASE64\_VARIANT\_URLSAFE}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+B\+A\+S\+E64\+\_\+\+V\+A\+R\+I\+A\+N\+T\+\_\+\+U\+R\+L\+S\+A\+FE = 5}
+
+\mbox{\Hypertarget{sodium_8php_a512cb639b82f575253e2cebeb378169c}\label{sodium_8php_a512cb639b82f575253e2cebeb378169c}} 
+\index{sodium.php@{sodium.php}!SODIUM\_BASE64\_VARIANT\_URLSAFE\_NO\_PADDING@{SODIUM\_BASE64\_VARIANT\_URLSAFE\_NO\_PADDING}}
+\index{SODIUM\_BASE64\_VARIANT\_URLSAFE\_NO\_PADDING@{SODIUM\_BASE64\_VARIANT\_URLSAFE\_NO\_PADDING}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_BASE64\_VARIANT\_URLSAFE\_NO\_PADDING}{SODIUM\_BASE64\_VARIANT\_URLSAFE\_NO\_PADDING}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+B\+A\+S\+E64\+\_\+\+V\+A\+R\+I\+A\+N\+T\+\_\+\+U\+R\+L\+S\+A\+F\+E\+\_\+\+N\+O\+\_\+\+P\+A\+D\+D\+I\+NG = 7}
+
+\mbox{\Hypertarget{sodium_8php_acc72d09e03c04acd84eadbf316e6b919}\label{sodium_8php_acc72d09e03c04acd84eadbf316e6b919}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_AES256GCM\_ABYTES@{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_ABYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_ABYTES@{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_ABYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_ABYTES}{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_ABYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+A\+E\+S256\+G\+C\+M\+\_\+\+A\+B\+Y\+T\+ES = 16}
+
+\mbox{\Hypertarget{sodium_8php_a23b0704c0d29c9c9098a82e0a47c61f9}\label{sodium_8php_a23b0704c0d29c9c9098a82e0a47c61f9}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_AES256GCM\_KEYBYTES@{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_KEYBYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_KEYBYTES@{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_KEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_KEYBYTES}{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_KEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+A\+E\+S256\+G\+C\+M\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_af818eed26cb00e9fc285709366cb70ee}\label{sodium_8php_af818eed26cb00e9fc285709366cb70ee}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_AES256GCM\_NPUBBYTES@{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_NPUBBYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_NPUBBYTES@{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_NPUBBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_NPUBBYTES}{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_NPUBBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+A\+E\+S256\+G\+C\+M\+\_\+\+N\+P\+U\+B\+B\+Y\+T\+ES = 12}
+
+\mbox{\Hypertarget{sodium_8php_a2d79240a0afd5d8387cbefca3c681806}\label{sodium_8php_a2d79240a0afd5d8387cbefca3c681806}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_AES256GCM\_NSECBYTES@{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_NSECBYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_NSECBYTES@{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_NSECBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_NSECBYTES}{SODIUM\_CRYPTO\_AEAD\_AES256GCM\_NSECBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+A\+E\+S256\+G\+C\+M\+\_\+\+N\+S\+E\+C\+B\+Y\+T\+ES = 0}
+
+\mbox{\Hypertarget{sodium_8php_adefcef5e048381f8274ddf576510ce22}\label{sodium_8php_adefcef5e048381f8274ddf576510ce22}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_ABYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_ABYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_ABYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_ABYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_ABYTES}{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_ABYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+A\+B\+Y\+T\+ES = 16}
+
+\mbox{\Hypertarget{sodium_8php_a1d5079baca39f3cc142a0440d2965552}\label{sodium_8php_a1d5079baca39f3cc142a0440d2965552}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_ABYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_ABYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_ABYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_ABYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_ABYTES}{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_ABYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+A\+B\+Y\+T\+ES = 16}
+
+\mbox{\Hypertarget{sodium_8php_a1dfa09a61ae2d60b5c22adb337021837}\label{sodium_8php_a1dfa09a61ae2d60b5c22adb337021837}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_KEYBYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_KEYBYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_KEYBYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_KEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_KEYBYTES}{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_KEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_a15ecb179fbaa112b1ad34e2abf6c5904}\label{sodium_8php_a15ecb179fbaa112b1ad34e2abf6c5904}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_NPUBBYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_NPUBBYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_NPUBBYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_NPUBBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_NPUBBYTES}{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_NPUBBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+N\+P\+U\+B\+B\+Y\+T\+ES = 12}
+
+\mbox{\Hypertarget{sodium_8php_ab50dfa0cae0ecf72ef6b0397159d3ec8}\label{sodium_8php_ab50dfa0cae0ecf72ef6b0397159d3ec8}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_NSECBYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_NSECBYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_NSECBYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_NSECBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_NSECBYTES}{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_IETF\_NSECBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+N\+S\+E\+C\+B\+Y\+T\+ES = 0}
+
+\mbox{\Hypertarget{sodium_8php_a782bd51638ceae71afeca18b08e9e45c}\label{sodium_8php_a782bd51638ceae71afeca18b08e9e45c}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_KEYBYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_KEYBYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_KEYBYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_KEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_KEYBYTES}{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_KEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_a6da9a5e5ad30f29faf99cc1c1742ca1c}\label{sodium_8php_a6da9a5e5ad30f29faf99cc1c1742ca1c}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_NPUBBYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_NPUBBYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_NPUBBYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_NPUBBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_NPUBBYTES}{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_NPUBBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+N\+P\+U\+B\+B\+Y\+T\+ES = 8}
+
+\mbox{\Hypertarget{sodium_8php_ac25178c7ed64ce1f9871d415f9893b67}\label{sodium_8php_ac25178c7ed64ce1f9871d415f9893b67}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_NSECBYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_NSECBYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_NSECBYTES@{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_NSECBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_NSECBYTES}{SODIUM\_CRYPTO\_AEAD\_CHACHA20POLY1305\_NSECBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+N\+S\+E\+C\+B\+Y\+T\+ES = 0}
+
+\mbox{\Hypertarget{sodium_8php_ac73454a43a73715730042d3272c46376}\label{sodium_8php_ac73454a43a73715730042d3272c46376}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_ABYTES@{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_ABYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_ABYTES@{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_ABYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_ABYTES}{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_ABYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+A\+B\+Y\+T\+ES = 16}
+
+\mbox{\Hypertarget{sodium_8php_a4aaecbc3f1de5ffb709476dc7d1491e2}\label{sodium_8php_a4aaecbc3f1de5ffb709476dc7d1491e2}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_KEYBYTES@{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_KEYBYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_KEYBYTES@{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_KEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_KEYBYTES}{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_KEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_a22bdac514fe1d2fd0d27231e8d5130e2}\label{sodium_8php_a22bdac514fe1d2fd0d27231e8d5130e2}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_NPUBBYTES@{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_NPUBBYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_NPUBBYTES@{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_NPUBBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_NPUBBYTES}{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_NPUBBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+N\+P\+U\+B\+B\+Y\+T\+ES = 24}
+
+\mbox{\Hypertarget{sodium_8php_a47ce0edcb80e4552c5a21c888db6808b}\label{sodium_8php_a47ce0edcb80e4552c5a21c888db6808b}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_NSECBYTES@{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_NSECBYTES}}
+\index{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_NSECBYTES@{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_NSECBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_NSECBYTES}{SODIUM\_CRYPTO\_AEAD\_XCHACHA20POLY1305\_IETF\_NSECBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+E\+A\+D\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+I\+E\+T\+F\+\_\+\+N\+S\+E\+C\+B\+Y\+T\+ES = 0}
+
+\mbox{\Hypertarget{sodium_8php_aa7a761010b3292c2c74bceafbd02d177}\label{sodium_8php_aa7a761010b3292c2c74bceafbd02d177}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AUTH\_BYTES@{SODIUM\_CRYPTO\_AUTH\_BYTES}}
+\index{SODIUM\_CRYPTO\_AUTH\_BYTES@{SODIUM\_CRYPTO\_AUTH\_BYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AUTH\_BYTES}{SODIUM\_CRYPTO\_AUTH\_BYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+U\+T\+H\+\_\+\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_a155e51ecb4e13ab7d8ea4a05dd7f5bd3}\label{sodium_8php_a155e51ecb4e13ab7d8ea4a05dd7f5bd3}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_AUTH\_KEYBYTES@{SODIUM\_CRYPTO\_AUTH\_KEYBYTES}}
+\index{SODIUM\_CRYPTO\_AUTH\_KEYBYTES@{SODIUM\_CRYPTO\_AUTH\_KEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_AUTH\_KEYBYTES}{SODIUM\_CRYPTO\_AUTH\_KEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+A\+U\+T\+H\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_a763b0b8ad3ae102b34d706b318852189}\label{sodium_8php_a763b0b8ad3ae102b34d706b318852189}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_BOX\_KEYPAIRBYTES@{SODIUM\_CRYPTO\_BOX\_KEYPAIRBYTES}}
+\index{SODIUM\_CRYPTO\_BOX\_KEYPAIRBYTES@{SODIUM\_CRYPTO\_BOX\_KEYPAIRBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_BOX\_KEYPAIRBYTES}{SODIUM\_CRYPTO\_BOX\_KEYPAIRBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+B\+O\+X\+\_\+\+K\+E\+Y\+P\+A\+I\+R\+B\+Y\+T\+ES = 64}
+
+\mbox{\Hypertarget{sodium_8php_afbf899d50dd3a1a9d290b53147b3ecb5}\label{sodium_8php_afbf899d50dd3a1a9d290b53147b3ecb5}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_BOX\_MACBYTES@{SODIUM\_CRYPTO\_BOX\_MACBYTES}}
+\index{SODIUM\_CRYPTO\_BOX\_MACBYTES@{SODIUM\_CRYPTO\_BOX\_MACBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_BOX\_MACBYTES}{SODIUM\_CRYPTO\_BOX\_MACBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+B\+O\+X\+\_\+\+M\+A\+C\+B\+Y\+T\+ES = 16}
+
+\mbox{\Hypertarget{sodium_8php_a84648dfefda4dd76698cccbc17052a68}\label{sodium_8php_a84648dfefda4dd76698cccbc17052a68}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_BOX\_NONCEBYTES@{SODIUM\_CRYPTO\_BOX\_NONCEBYTES}}
+\index{SODIUM\_CRYPTO\_BOX\_NONCEBYTES@{SODIUM\_CRYPTO\_BOX\_NONCEBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_BOX\_NONCEBYTES}{SODIUM\_CRYPTO\_BOX\_NONCEBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+B\+O\+X\+\_\+\+N\+O\+N\+C\+E\+B\+Y\+T\+ES = 24}
+
+\mbox{\Hypertarget{sodium_8php_a83e3f3fa24aa617ffc6b9c2b1d021cf1}\label{sodium_8php_a83e3f3fa24aa617ffc6b9c2b1d021cf1}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_BOX\_PUBLICKEYBYTES@{SODIUM\_CRYPTO\_BOX\_PUBLICKEYBYTES}}
+\index{SODIUM\_CRYPTO\_BOX\_PUBLICKEYBYTES@{SODIUM\_CRYPTO\_BOX\_PUBLICKEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_BOX\_PUBLICKEYBYTES}{SODIUM\_CRYPTO\_BOX\_PUBLICKEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+B\+O\+X\+\_\+\+P\+U\+B\+L\+I\+C\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_a086badedf5b925912dc55bfd0ea14a01}\label{sodium_8php_a086badedf5b925912dc55bfd0ea14a01}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_BOX\_SEALBYTES@{SODIUM\_CRYPTO\_BOX\_SEALBYTES}}
+\index{SODIUM\_CRYPTO\_BOX\_SEALBYTES@{SODIUM\_CRYPTO\_BOX\_SEALBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_BOX\_SEALBYTES}{SODIUM\_CRYPTO\_BOX\_SEALBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+B\+O\+X\+\_\+\+S\+E\+A\+L\+B\+Y\+T\+ES = 48}
+
+\mbox{\Hypertarget{sodium_8php_a655bf346ceb0ad965f5b826da7c443c3}\label{sodium_8php_a655bf346ceb0ad965f5b826da7c443c3}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_BOX\_SECRETKEYBYTES@{SODIUM\_CRYPTO\_BOX\_SECRETKEYBYTES}}
+\index{SODIUM\_CRYPTO\_BOX\_SECRETKEYBYTES@{SODIUM\_CRYPTO\_BOX\_SECRETKEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_BOX\_SECRETKEYBYTES}{SODIUM\_CRYPTO\_BOX\_SECRETKEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+B\+O\+X\+\_\+\+S\+E\+C\+R\+E\+T\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_ab434a58963814888c2a3e33d77e132bc}\label{sodium_8php_ab434a58963814888c2a3e33d77e132bc}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_BOX\_SEEDBYTES@{SODIUM\_CRYPTO\_BOX\_SEEDBYTES}}
+\index{SODIUM\_CRYPTO\_BOX\_SEEDBYTES@{SODIUM\_CRYPTO\_BOX\_SEEDBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_BOX\_SEEDBYTES}{SODIUM\_CRYPTO\_BOX\_SEEDBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+B\+O\+X\+\_\+\+S\+E\+E\+D\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_aa506b24f8dd1b8f7ca31fc1768f046ad}\label{sodium_8php_aa506b24f8dd1b8f7ca31fc1768f046ad}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_GENERICHASH\_BYTES@{SODIUM\_CRYPTO\_GENERICHASH\_BYTES}}
+\index{SODIUM\_CRYPTO\_GENERICHASH\_BYTES@{SODIUM\_CRYPTO\_GENERICHASH\_BYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_GENERICHASH\_BYTES}{SODIUM\_CRYPTO\_GENERICHASH\_BYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+G\+E\+N\+E\+R\+I\+C\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_a5a9eb20d44a2232f062d2c58b0502e8f}\label{sodium_8php_a5a9eb20d44a2232f062d2c58b0502e8f}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_GENERICHASH\_BYTES\_MAX@{SODIUM\_CRYPTO\_GENERICHASH\_BYTES\_MAX}}
+\index{SODIUM\_CRYPTO\_GENERICHASH\_BYTES\_MAX@{SODIUM\_CRYPTO\_GENERICHASH\_BYTES\_MAX}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_GENERICHASH\_BYTES\_MAX}{SODIUM\_CRYPTO\_GENERICHASH\_BYTES\_MAX}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+G\+E\+N\+E\+R\+I\+C\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+AX = 64}
+
+\mbox{\Hypertarget{sodium_8php_a014ca3788939cf51460084800a6aa04e}\label{sodium_8php_a014ca3788939cf51460084800a6aa04e}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_GENERICHASH\_BYTES\_MIN@{SODIUM\_CRYPTO\_GENERICHASH\_BYTES\_MIN}}
+\index{SODIUM\_CRYPTO\_GENERICHASH\_BYTES\_MIN@{SODIUM\_CRYPTO\_GENERICHASH\_BYTES\_MIN}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_GENERICHASH\_BYTES\_MIN}{SODIUM\_CRYPTO\_GENERICHASH\_BYTES\_MIN}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+G\+E\+N\+E\+R\+I\+C\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+IN = 16}
+
+\mbox{\Hypertarget{sodium_8php_a1ffe992b0e6fb50705aa836255dc6170}\label{sodium_8php_a1ffe992b0e6fb50705aa836255dc6170}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES@{SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES}}
+\index{SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES@{SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES}{SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+G\+E\+N\+E\+R\+I\+C\+H\+A\+S\+H\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_ae90a062547d9fa7f35fbcf8dd9842532}\label{sodium_8php_ae90a062547d9fa7f35fbcf8dd9842532}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES\_MAX@{SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES\_MAX}}
+\index{SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES\_MAX@{SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES\_MAX}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES\_MAX}{SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES\_MAX}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+G\+E\+N\+E\+R\+I\+C\+H\+A\+S\+H\+\_\+\+K\+E\+Y\+B\+Y\+T\+E\+S\+\_\+\+M\+AX = 64}
+
+\mbox{\Hypertarget{sodium_8php_a3e3c5cdb2e142481009e07893641ad3b}\label{sodium_8php_a3e3c5cdb2e142481009e07893641ad3b}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES\_MIN@{SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES\_MIN}}
+\index{SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES\_MIN@{SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES\_MIN}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES\_MIN}{SODIUM\_CRYPTO\_GENERICHASH\_KEYBYTES\_MIN}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+G\+E\+N\+E\+R\+I\+C\+H\+A\+S\+H\+\_\+\+K\+E\+Y\+B\+Y\+T\+E\+S\+\_\+\+M\+IN = 16}
+
+\mbox{\Hypertarget{sodium_8php_a970cfa0ed1320eae526b6fee15bccec0}\label{sodium_8php_a970cfa0ed1320eae526b6fee15bccec0}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_KDF\_BYTES\_MAX@{SODIUM\_CRYPTO\_KDF\_BYTES\_MAX}}
+\index{SODIUM\_CRYPTO\_KDF\_BYTES\_MAX@{SODIUM\_CRYPTO\_KDF\_BYTES\_MAX}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_KDF\_BYTES\_MAX}{SODIUM\_CRYPTO\_KDF\_BYTES\_MAX}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+D\+F\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+AX = 64}
+
+\mbox{\Hypertarget{sodium_8php_acc07f0cfbcbea0037ecc9cedb12b33a9}\label{sodium_8php_acc07f0cfbcbea0037ecc9cedb12b33a9}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_KDF\_BYTES\_MIN@{SODIUM\_CRYPTO\_KDF\_BYTES\_MIN}}
+\index{SODIUM\_CRYPTO\_KDF\_BYTES\_MIN@{SODIUM\_CRYPTO\_KDF\_BYTES\_MIN}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_KDF\_BYTES\_MIN}{SODIUM\_CRYPTO\_KDF\_BYTES\_MIN}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+D\+F\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+IN = 16}
+
+\mbox{\Hypertarget{sodium_8php_add677d2f2548cee23f7de028a4ef98ca}\label{sodium_8php_add677d2f2548cee23f7de028a4ef98ca}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_KDF\_CONTEXTBYTES@{SODIUM\_CRYPTO\_KDF\_CONTEXTBYTES}}
+\index{SODIUM\_CRYPTO\_KDF\_CONTEXTBYTES@{SODIUM\_CRYPTO\_KDF\_CONTEXTBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_KDF\_CONTEXTBYTES}{SODIUM\_CRYPTO\_KDF\_CONTEXTBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+D\+F\+\_\+\+C\+O\+N\+T\+E\+X\+T\+B\+Y\+T\+ES = 8}
+
+\mbox{\Hypertarget{sodium_8php_aa7d7fd084bb446e660385d7495bf829d}\label{sodium_8php_aa7d7fd084bb446e660385d7495bf829d}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_KDF\_KEYBYTES@{SODIUM\_CRYPTO\_KDF\_KEYBYTES}}
+\index{SODIUM\_CRYPTO\_KDF\_KEYBYTES@{SODIUM\_CRYPTO\_KDF\_KEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_KDF\_KEYBYTES}{SODIUM\_CRYPTO\_KDF\_KEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+D\+F\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_aac5b56a69243a4a6b11cdb433f5f29e7}\label{sodium_8php_aac5b56a69243a4a6b11cdb433f5f29e7}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_KX\_BYTES@{SODIUM\_CRYPTO\_KX\_BYTES}}
+\index{SODIUM\_CRYPTO\_KX\_BYTES@{SODIUM\_CRYPTO\_KX\_BYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_KX\_BYTES}{SODIUM\_CRYPTO\_KX\_BYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+X\+\_\+\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_a2e613fd8dd6ae5d5f93e0deb823b01d9}\label{sodium_8php_a2e613fd8dd6ae5d5f93e0deb823b01d9}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_KX\_KEYPAIRBYTES@{SODIUM\_CRYPTO\_KX\_KEYPAIRBYTES}}
+\index{SODIUM\_CRYPTO\_KX\_KEYPAIRBYTES@{SODIUM\_CRYPTO\_KX\_KEYPAIRBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_KX\_KEYPAIRBYTES}{SODIUM\_CRYPTO\_KX\_KEYPAIRBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+X\+\_\+\+K\+E\+Y\+P\+A\+I\+R\+B\+Y\+T\+ES = 64}
+
+\mbox{\Hypertarget{sodium_8php_a97ea66224dd400fe17b9f59f2755fb1b}\label{sodium_8php_a97ea66224dd400fe17b9f59f2755fb1b}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_KX\_PUBLICKEYBYTES@{SODIUM\_CRYPTO\_KX\_PUBLICKEYBYTES}}
+\index{SODIUM\_CRYPTO\_KX\_PUBLICKEYBYTES@{SODIUM\_CRYPTO\_KX\_PUBLICKEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_KX\_PUBLICKEYBYTES}{SODIUM\_CRYPTO\_KX\_PUBLICKEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+X\+\_\+\+P\+U\+B\+L\+I\+C\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_ae8a91eac96de4a0f0cfd4922df15069f}\label{sodium_8php_ae8a91eac96de4a0f0cfd4922df15069f}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_KX\_SECRETKEYBYTES@{SODIUM\_CRYPTO\_KX\_SECRETKEYBYTES}}
+\index{SODIUM\_CRYPTO\_KX\_SECRETKEYBYTES@{SODIUM\_CRYPTO\_KX\_SECRETKEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_KX\_SECRETKEYBYTES}{SODIUM\_CRYPTO\_KX\_SECRETKEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+X\+\_\+\+S\+E\+C\+R\+E\+T\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_a712dd817893cd9bd353187a921409b8c}\label{sodium_8php_a712dd817893cd9bd353187a921409b8c}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_KX\_SEEDBYTES@{SODIUM\_CRYPTO\_KX\_SEEDBYTES}}
+\index{SODIUM\_CRYPTO\_KX\_SEEDBYTES@{SODIUM\_CRYPTO\_KX\_SEEDBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_KX\_SEEDBYTES}{SODIUM\_CRYPTO\_KX\_SEEDBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+X\+\_\+\+S\+E\+E\+D\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_ab52611d54d95e1286b69244e07ecef21}\label{sodium_8php_ab52611d54d95e1286b69244e07ecef21}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_KX\_SESSIONKEYBYTES@{SODIUM\_CRYPTO\_KX\_SESSIONKEYBYTES}}
+\index{SODIUM\_CRYPTO\_KX\_SESSIONKEYBYTES@{SODIUM\_CRYPTO\_KX\_SESSIONKEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_KX\_SESSIONKEYBYTES}{SODIUM\_CRYPTO\_KX\_SESSIONKEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+K\+X\+\_\+\+S\+E\+S\+S\+I\+O\+N\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_a385ffb35692bd7fc753c086b98e6edac}\label{sodium_8php_a385ffb35692bd7fc753c086b98e6edac}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_ALG\_ARGON2I13@{SODIUM\_CRYPTO\_PWHASH\_ALG\_ARGON2I13}}
+\index{SODIUM\_CRYPTO\_PWHASH\_ALG\_ARGON2I13@{SODIUM\_CRYPTO\_PWHASH\_ALG\_ARGON2I13}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_ALG\_ARGON2I13}{SODIUM\_CRYPTO\_PWHASH\_ALG\_ARGON2I13}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+A\+L\+G\+\_\+\+A\+R\+G\+O\+N2\+I13 = 1}
+
+\mbox{\Hypertarget{sodium_8php_a29be6bb97b1234ca2ce530d3734a0207}\label{sodium_8php_a29be6bb97b1234ca2ce530d3734a0207}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_ALG\_ARGON2ID13@{SODIUM\_CRYPTO\_PWHASH\_ALG\_ARGON2ID13}}
+\index{SODIUM\_CRYPTO\_PWHASH\_ALG\_ARGON2ID13@{SODIUM\_CRYPTO\_PWHASH\_ALG\_ARGON2ID13}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_ALG\_ARGON2ID13}{SODIUM\_CRYPTO\_PWHASH\_ALG\_ARGON2ID13}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+A\+L\+G\+\_\+\+A\+R\+G\+O\+N2\+I\+D13 = 2}
+
+\mbox{\Hypertarget{sodium_8php_a2ffeab7c1c727b326c0945c070711520}\label{sodium_8php_a2ffeab7c1c727b326c0945c070711520}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_ALG\_DEFAULT@{SODIUM\_CRYPTO\_PWHASH\_ALG\_DEFAULT}}
+\index{SODIUM\_CRYPTO\_PWHASH\_ALG\_DEFAULT@{SODIUM\_CRYPTO\_PWHASH\_ALG\_DEFAULT}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_ALG\_DEFAULT}{SODIUM\_CRYPTO\_PWHASH\_ALG\_DEFAULT}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+A\+L\+G\+\_\+\+D\+E\+F\+A\+U\+LT = 2}
+
+\mbox{\Hypertarget{sodium_8php_af70f7c547127c757d3d244d547b15ff0}\label{sodium_8php_af70f7c547127c757d3d244d547b15ff0}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_INTERACTIVE@{SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_INTERACTIVE}}
+\index{SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_INTERACTIVE@{SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_INTERACTIVE}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_INTERACTIVE}{SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_INTERACTIVE}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+M\+E\+M\+L\+I\+M\+I\+T\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE = 67108864}
+
+\mbox{\Hypertarget{sodium_8php_a47a21118a82c5f469487d56a1668c9d2}\label{sodium_8php_a47a21118a82c5f469487d56a1668c9d2}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_MODERATE@{SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_MODERATE}}
+\index{SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_MODERATE@{SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_MODERATE}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_MODERATE}{SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_MODERATE}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+M\+E\+M\+L\+I\+M\+I\+T\+\_\+\+M\+O\+D\+E\+R\+A\+TE = 268435456}
+
+\mbox{\Hypertarget{sodium_8php_ad331ccb7a9b819f80bc14d30c2475952}\label{sodium_8php_ad331ccb7a9b819f80bc14d30c2475952}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_SENSITIVE@{SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_SENSITIVE}}
+\index{SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_SENSITIVE@{SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_SENSITIVE}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_SENSITIVE}{SODIUM\_CRYPTO\_PWHASH\_MEMLIMIT\_SENSITIVE}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+M\+E\+M\+L\+I\+M\+I\+T\+\_\+\+S\+E\+N\+S\+I\+T\+I\+VE = 1073741824}
+
+\mbox{\Hypertarget{sodium_8php_ac521ede36db1b02182a7aff428e922b1}\label{sodium_8php_ac521ede36db1b02182a7aff428e922b1}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_INTERACTIVE@{SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_INTERACTIVE}}
+\index{SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_INTERACTIVE@{SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_INTERACTIVE}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_INTERACTIVE}{SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_INTERACTIVE}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+O\+P\+S\+L\+I\+M\+I\+T\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE = 2}
+
+\mbox{\Hypertarget{sodium_8php_a3162c4b980a3d1649c936478cb42fe4d}\label{sodium_8php_a3162c4b980a3d1649c936478cb42fe4d}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_MODERATE@{SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_MODERATE}}
+\index{SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_MODERATE@{SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_MODERATE}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_MODERATE}{SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_MODERATE}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+O\+P\+S\+L\+I\+M\+I\+T\+\_\+\+M\+O\+D\+E\+R\+A\+TE = 3}
+
+\mbox{\Hypertarget{sodium_8php_ab617f3d0d93604802b85fe04872dad4a}\label{sodium_8php_ab617f3d0d93604802b85fe04872dad4a}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_SENSITIVE@{SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_SENSITIVE}}
+\index{SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_SENSITIVE@{SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_SENSITIVE}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_SENSITIVE}{SODIUM\_CRYPTO\_PWHASH\_OPSLIMIT\_SENSITIVE}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+O\+P\+S\+L\+I\+M\+I\+T\+\_\+\+S\+E\+N\+S\+I\+T\+I\+VE = 4}
+
+\mbox{\Hypertarget{sodium_8php_ae95fe51eda08a20b5630a7972eeae319}\label{sodium_8php_ae95fe51eda08a20b5630a7972eeae319}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_SALTBYTES@{SODIUM\_CRYPTO\_PWHASH\_SALTBYTES}}
+\index{SODIUM\_CRYPTO\_PWHASH\_SALTBYTES@{SODIUM\_CRYPTO\_PWHASH\_SALTBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_SALTBYTES}{SODIUM\_CRYPTO\_PWHASH\_SALTBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+A\+L\+T\+B\+Y\+T\+ES = 16}
+
+\mbox{\Hypertarget{sodium_8php_a9f12f048a1e408d6eb96e92a7cda98ab}\label{sodium_8php_a9f12f048a1e408d6eb96e92a7cda98ab}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_MEMLIMIT\_INTERACTIVE@{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_MEMLIMIT\_INTERACTIVE}}
+\index{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_MEMLIMIT\_INTERACTIVE@{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_MEMLIMIT\_INTERACTIVE}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_MEMLIMIT\_INTERACTIVE}{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_MEMLIMIT\_INTERACTIVE}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+C\+R\+Y\+P\+T\+S\+A\+L\+S\+A208\+S\+H\+A256\+\_\+\+M\+E\+M\+L\+I\+M\+I\+T\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE = 16777216}
+
+\mbox{\Hypertarget{sodium_8php_a2ac09803fdc1345a636df028b0942da0}\label{sodium_8php_a2ac09803fdc1345a636df028b0942da0}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_MEMLIMIT\_SENSITIVE@{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_MEMLIMIT\_SENSITIVE}}
+\index{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_MEMLIMIT\_SENSITIVE@{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_MEMLIMIT\_SENSITIVE}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_MEMLIMIT\_SENSITIVE}{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_MEMLIMIT\_SENSITIVE}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+C\+R\+Y\+P\+T\+S\+A\+L\+S\+A208\+S\+H\+A256\+\_\+\+M\+E\+M\+L\+I\+M\+I\+T\+\_\+\+S\+E\+N\+S\+I\+T\+I\+VE = 1073741824}
+
+\mbox{\Hypertarget{sodium_8php_a7fb11ccab8662c311b9d9a4da87f74a3}\label{sodium_8php_a7fb11ccab8662c311b9d9a4da87f74a3}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_OPSLIMIT\_INTERACTIVE@{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_OPSLIMIT\_INTERACTIVE}}
+\index{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_OPSLIMIT\_INTERACTIVE@{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_OPSLIMIT\_INTERACTIVE}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_OPSLIMIT\_INTERACTIVE}{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_OPSLIMIT\_INTERACTIVE}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+C\+R\+Y\+P\+T\+S\+A\+L\+S\+A208\+S\+H\+A256\+\_\+\+O\+P\+S\+L\+I\+M\+I\+T\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE = 524288}
+
+\mbox{\Hypertarget{sodium_8php_a128305e95af4da884a90ae6c208cb2f6}\label{sodium_8php_a128305e95af4da884a90ae6c208cb2f6}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_OPSLIMIT\_SENSITIVE@{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_OPSLIMIT\_SENSITIVE}}
+\index{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_OPSLIMIT\_SENSITIVE@{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_OPSLIMIT\_SENSITIVE}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_OPSLIMIT\_SENSITIVE}{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_OPSLIMIT\_SENSITIVE}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+C\+R\+Y\+P\+T\+S\+A\+L\+S\+A208\+S\+H\+A256\+\_\+\+O\+P\+S\+L\+I\+M\+I\+T\+\_\+\+S\+E\+N\+S\+I\+T\+I\+VE = 33554432}
+
+\mbox{\Hypertarget{sodium_8php_a00c2ecd75a3e2da2f73e0528ef2f9d88}\label{sodium_8php_a00c2ecd75a3e2da2f73e0528ef2f9d88}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_SALTBYTES@{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_SALTBYTES}}
+\index{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_SALTBYTES@{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_SALTBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_SALTBYTES}{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_SALTBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+C\+R\+Y\+P\+T\+S\+A\+L\+S\+A208\+S\+H\+A256\+\_\+\+S\+A\+L\+T\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_af43109798423de4c9b6522532f748a1e}\label{sodium_8php_af43109798423de4c9b6522532f748a1e}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_STRPREFIX@{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_STRPREFIX}}
+\index{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_STRPREFIX@{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_STRPREFIX}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_STRPREFIX}{SODIUM\_CRYPTO\_PWHASH\_SCRYPTSALSA208SHA256\_STRPREFIX}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+C\+R\+Y\+P\+T\+S\+A\+L\+S\+A208\+S\+H\+A256\+\_\+\+S\+T\+R\+P\+R\+E\+F\+IX = \textquotesingle{}\$7\$\textquotesingle{}}
+
+\mbox{\Hypertarget{sodium_8php_a693aa9e28740c41786ed834ba0a394b4}\label{sodium_8php_a693aa9e28740c41786ed834ba0a394b4}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_PWHASH\_STRPREFIX@{SODIUM\_CRYPTO\_PWHASH\_STRPREFIX}}
+\index{SODIUM\_CRYPTO\_PWHASH\_STRPREFIX@{SODIUM\_CRYPTO\_PWHASH\_STRPREFIX}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_PWHASH\_STRPREFIX}{SODIUM\_CRYPTO\_PWHASH\_STRPREFIX}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+P\+W\+H\+A\+S\+H\+\_\+\+S\+T\+R\+P\+R\+E\+F\+IX = \textquotesingle{}\$argon2id\$\textquotesingle{}}
+
+\mbox{\Hypertarget{sodium_8php_a137f4066a580d1b4fe85e6cec43224d8}\label{sodium_8php_a137f4066a580d1b4fe85e6cec43224d8}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SCALARMULT\_BYTES@{SODIUM\_CRYPTO\_SCALARMULT\_BYTES}}
+\index{SODIUM\_CRYPTO\_SCALARMULT\_BYTES@{SODIUM\_CRYPTO\_SCALARMULT\_BYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SCALARMULT\_BYTES}{SODIUM\_CRYPTO\_SCALARMULT\_BYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+C\+A\+L\+A\+R\+M\+U\+L\+T\+\_\+\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_a88e603aa6386fad903ec8aa7a5756e50}\label{sodium_8php_a88e603aa6386fad903ec8aa7a5756e50}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SCALARMULT\_SCALARBYTES@{SODIUM\_CRYPTO\_SCALARMULT\_SCALARBYTES}}
+\index{SODIUM\_CRYPTO\_SCALARMULT\_SCALARBYTES@{SODIUM\_CRYPTO\_SCALARMULT\_SCALARBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SCALARMULT\_SCALARBYTES}{SODIUM\_CRYPTO\_SCALARMULT\_SCALARBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+C\+A\+L\+A\+R\+M\+U\+L\+T\+\_\+\+S\+C\+A\+L\+A\+R\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_a256b2323483bf4e72308299d1cf413ce}\label{sodium_8php_a256b2323483bf4e72308299d1cf413ce}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SECRETBOX\_KEYBYTES@{SODIUM\_CRYPTO\_SECRETBOX\_KEYBYTES}}
+\index{SODIUM\_CRYPTO\_SECRETBOX\_KEYBYTES@{SODIUM\_CRYPTO\_SECRETBOX\_KEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SECRETBOX\_KEYBYTES}{SODIUM\_CRYPTO\_SECRETBOX\_KEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+B\+O\+X\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_a3f2ab0ac5243204e06a0d346ed0b4418}\label{sodium_8php_a3f2ab0ac5243204e06a0d346ed0b4418}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SECRETBOX\_MACBYTES@{SODIUM\_CRYPTO\_SECRETBOX\_MACBYTES}}
+\index{SODIUM\_CRYPTO\_SECRETBOX\_MACBYTES@{SODIUM\_CRYPTO\_SECRETBOX\_MACBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SECRETBOX\_MACBYTES}{SODIUM\_CRYPTO\_SECRETBOX\_MACBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+B\+O\+X\+\_\+\+M\+A\+C\+B\+Y\+T\+ES = 16}
+
+\mbox{\Hypertarget{sodium_8php_a1cb4de34a51eb7286b0559ee294e8a17}\label{sodium_8php_a1cb4de34a51eb7286b0559ee294e8a17}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SECRETBOX\_NONCEBYTES@{SODIUM\_CRYPTO\_SECRETBOX\_NONCEBYTES}}
+\index{SODIUM\_CRYPTO\_SECRETBOX\_NONCEBYTES@{SODIUM\_CRYPTO\_SECRETBOX\_NONCEBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SECRETBOX\_NONCEBYTES}{SODIUM\_CRYPTO\_SECRETBOX\_NONCEBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+B\+O\+X\+\_\+\+N\+O\+N\+C\+E\+B\+Y\+T\+ES = 24}
+
+\mbox{\Hypertarget{sodium_8php_acc12b3eb8d895ae941cd084cc58be025}\label{sodium_8php_acc12b3eb8d895ae941cd084cc58be025}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_ABYTES@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_ABYTES}}
+\index{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_ABYTES@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_ABYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_ABYTES}{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_ABYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+A\+B\+Y\+T\+ES = 17}
+
+\mbox{\Hypertarget{sodium_8php_a421fce192f3fb1936bc87451da64f6d8}\label{sodium_8php_a421fce192f3fb1936bc87451da64f6d8}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_HEADERBYTES@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_HEADERBYTES}}
+\index{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_HEADERBYTES@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_HEADERBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_HEADERBYTES}{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_HEADERBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+H\+E\+A\+D\+E\+R\+B\+Y\+T\+ES = 24}
+
+\mbox{\Hypertarget{sodium_8php_a4b8d8d415132c647476c599cde610ae4}\label{sodium_8php_a4b8d8d415132c647476c599cde610ae4}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_KEYBYTES@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_KEYBYTES}}
+\index{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_KEYBYTES@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_KEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_KEYBYTES}{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_KEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_acb2360b67dbaa31d0c5f6ee0aa40b320}\label{sodium_8php_acb2360b67dbaa31d0c5f6ee0aa40b320}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_MESSAGEBYTES\_MAX@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_MESSAGEBYTES\_MAX}}
+\index{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_MESSAGEBYTES\_MAX@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_MESSAGEBYTES\_MAX}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_MESSAGEBYTES\_MAX}{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_MESSAGEBYTES\_MAX}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+M\+E\+S\+S\+A\+G\+E\+B\+Y\+T\+E\+S\+\_\+\+M\+AX = 274877906816}
+
+\mbox{\Hypertarget{sodium_8php_a8f5824ef0662af035a0875d229285e82}\label{sodium_8php_a8f5824ef0662af035a0875d229285e82}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_FINAL@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_FINAL}}
+\index{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_FINAL@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_FINAL}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_FINAL}{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_FINAL}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+T\+A\+G\+\_\+\+F\+I\+N\+AL = 3}
+
+\mbox{\Hypertarget{sodium_8php_a91a0f5ec072e55f9b956de5472973177}\label{sodium_8php_a91a0f5ec072e55f9b956de5472973177}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_MESSAGE@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_MESSAGE}}
+\index{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_MESSAGE@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_MESSAGE}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_MESSAGE}{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_MESSAGE}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+T\+A\+G\+\_\+\+M\+E\+S\+S\+A\+GE = 0}
+
+\mbox{\Hypertarget{sodium_8php_a1c6f439be6076b97a2202e6d9289a0ac}\label{sodium_8php_a1c6f439be6076b97a2202e6d9289a0ac}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_PUSH@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_PUSH}}
+\index{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_PUSH@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_PUSH}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_PUSH}{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_PUSH}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+T\+A\+G\+\_\+\+P\+U\+SH = 1}
+
+\mbox{\Hypertarget{sodium_8php_acdbf4900c2b6c78af5e142fd41b7ad49}\label{sodium_8php_acdbf4900c2b6c78af5e142fd41b7ad49}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_REKEY@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_REKEY}}
+\index{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_REKEY@{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_REKEY}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_REKEY}{SODIUM\_CRYPTO\_SECRETSTREAM\_XCHACHA20POLY1305\_TAG\_REKEY}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+E\+C\+R\+E\+T\+S\+T\+R\+E\+A\+M\+\_\+\+X\+C\+H\+A\+C\+H\+A20\+P\+O\+L\+Y1305\+\_\+\+T\+A\+G\+\_\+\+R\+E\+K\+EY = 2}
+
+\mbox{\Hypertarget{sodium_8php_a661889dfa9ceb062924a8b107741e45c}\label{sodium_8php_a661889dfa9ceb062924a8b107741e45c}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SHORTHASH\_BYTES@{SODIUM\_CRYPTO\_SHORTHASH\_BYTES}}
+\index{SODIUM\_CRYPTO\_SHORTHASH\_BYTES@{SODIUM\_CRYPTO\_SHORTHASH\_BYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SHORTHASH\_BYTES}{SODIUM\_CRYPTO\_SHORTHASH\_BYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+H\+O\+R\+T\+H\+A\+S\+H\+\_\+\+B\+Y\+T\+ES = 8}
+
+\mbox{\Hypertarget{sodium_8php_ab525885aee813118df08a26605bdbc7d}\label{sodium_8php_ab525885aee813118df08a26605bdbc7d}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SHORTHASH\_KEYBYTES@{SODIUM\_CRYPTO\_SHORTHASH\_KEYBYTES}}
+\index{SODIUM\_CRYPTO\_SHORTHASH\_KEYBYTES@{SODIUM\_CRYPTO\_SHORTHASH\_KEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SHORTHASH\_KEYBYTES}{SODIUM\_CRYPTO\_SHORTHASH\_KEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+H\+O\+R\+T\+H\+A\+S\+H\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES = 16}
+
+\mbox{\Hypertarget{sodium_8php_abfe5dadc2fce5f33c08c00bfdaf27e30}\label{sodium_8php_abfe5dadc2fce5f33c08c00bfdaf27e30}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SIGN\_BYTES@{SODIUM\_CRYPTO\_SIGN\_BYTES}}
+\index{SODIUM\_CRYPTO\_SIGN\_BYTES@{SODIUM\_CRYPTO\_SIGN\_BYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SIGN\_BYTES}{SODIUM\_CRYPTO\_SIGN\_BYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+I\+G\+N\+\_\+\+B\+Y\+T\+ES = 64}
+
+\mbox{\Hypertarget{sodium_8php_a44e9e9f57947fb4799c53c6cc00f8529}\label{sodium_8php_a44e9e9f57947fb4799c53c6cc00f8529}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SIGN\_KEYPAIRBYTES@{SODIUM\_CRYPTO\_SIGN\_KEYPAIRBYTES}}
+\index{SODIUM\_CRYPTO\_SIGN\_KEYPAIRBYTES@{SODIUM\_CRYPTO\_SIGN\_KEYPAIRBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SIGN\_KEYPAIRBYTES}{SODIUM\_CRYPTO\_SIGN\_KEYPAIRBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+I\+G\+N\+\_\+\+K\+E\+Y\+P\+A\+I\+R\+B\+Y\+T\+ES = 96}
+
+\mbox{\Hypertarget{sodium_8php_a10e1d399f28ebb8861dd0d138788d127}\label{sodium_8php_a10e1d399f28ebb8861dd0d138788d127}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SIGN\_PUBLICKEYBYTES@{SODIUM\_CRYPTO\_SIGN\_PUBLICKEYBYTES}}
+\index{SODIUM\_CRYPTO\_SIGN\_PUBLICKEYBYTES@{SODIUM\_CRYPTO\_SIGN\_PUBLICKEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SIGN\_PUBLICKEYBYTES}{SODIUM\_CRYPTO\_SIGN\_PUBLICKEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+I\+G\+N\+\_\+\+P\+U\+B\+L\+I\+C\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_ae1d4a545b0494f39c30bac13cee92028}\label{sodium_8php_ae1d4a545b0494f39c30bac13cee92028}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SIGN\_SECRETKEYBYTES@{SODIUM\_CRYPTO\_SIGN\_SECRETKEYBYTES}}
+\index{SODIUM\_CRYPTO\_SIGN\_SECRETKEYBYTES@{SODIUM\_CRYPTO\_SIGN\_SECRETKEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SIGN\_SECRETKEYBYTES}{SODIUM\_CRYPTO\_SIGN\_SECRETKEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+I\+G\+N\+\_\+\+S\+E\+C\+R\+E\+T\+K\+E\+Y\+B\+Y\+T\+ES = 64}
+
+\mbox{\Hypertarget{sodium_8php_ada2f6e2a075d602fe186736b706a1c71}\label{sodium_8php_ada2f6e2a075d602fe186736b706a1c71}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_SIGN\_SEEDBYTES@{SODIUM\_CRYPTO\_SIGN\_SEEDBYTES}}
+\index{SODIUM\_CRYPTO\_SIGN\_SEEDBYTES@{SODIUM\_CRYPTO\_SIGN\_SEEDBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_SIGN\_SEEDBYTES}{SODIUM\_CRYPTO\_SIGN\_SEEDBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+I\+G\+N\+\_\+\+S\+E\+E\+D\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_a9b5ba53e46a0f9158b0f7c95aa7238ed}\label{sodium_8php_a9b5ba53e46a0f9158b0f7c95aa7238ed}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_STREAM\_KEYBYTES@{SODIUM\_CRYPTO\_STREAM\_KEYBYTES}}
+\index{SODIUM\_CRYPTO\_STREAM\_KEYBYTES@{SODIUM\_CRYPTO\_STREAM\_KEYBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_STREAM\_KEYBYTES}{SODIUM\_CRYPTO\_STREAM\_KEYBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+K\+E\+Y\+B\+Y\+T\+ES = 32}
+
+\mbox{\Hypertarget{sodium_8php_a4d27f770330347f2ba2d9644abd544c1}\label{sodium_8php_a4d27f770330347f2ba2d9644abd544c1}} 
+\index{sodium.php@{sodium.php}!SODIUM\_CRYPTO\_STREAM\_NONCEBYTES@{SODIUM\_CRYPTO\_STREAM\_NONCEBYTES}}
+\index{SODIUM\_CRYPTO\_STREAM\_NONCEBYTES@{SODIUM\_CRYPTO\_STREAM\_NONCEBYTES}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_CRYPTO\_STREAM\_NONCEBYTES}{SODIUM\_CRYPTO\_STREAM\_NONCEBYTES}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+N\+O\+N\+C\+E\+B\+Y\+T\+ES = 24}
+
+\mbox{\Hypertarget{sodium_8php_aa5076273234da12b3dff08fd99c2e608}\label{sodium_8php_aa5076273234da12b3dff08fd99c2e608}} 
+\index{sodium.php@{sodium.php}!SODIUM\_LIBRARY\_MAJOR\_VERSION@{SODIUM\_LIBRARY\_MAJOR\_VERSION}}
+\index{SODIUM\_LIBRARY\_MAJOR\_VERSION@{SODIUM\_LIBRARY\_MAJOR\_VERSION}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_LIBRARY\_MAJOR\_VERSION}{SODIUM\_LIBRARY\_MAJOR\_VERSION}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+L\+I\+B\+R\+A\+R\+Y\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON = 10}
+
+\mbox{\Hypertarget{sodium_8php_a832013b35ef20f381d5c30e4a1e87946}\label{sodium_8php_a832013b35ef20f381d5c30e4a1e87946}} 
+\index{sodium.php@{sodium.php}!SODIUM\_LIBRARY\_MINOR\_VERSION@{SODIUM\_LIBRARY\_MINOR\_VERSION}}
+\index{SODIUM\_LIBRARY\_MINOR\_VERSION@{SODIUM\_LIBRARY\_MINOR\_VERSION}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_LIBRARY\_MINOR\_VERSION}{SODIUM\_LIBRARY\_MINOR\_VERSION}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+L\+I\+B\+R\+A\+R\+Y\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON = 2}
+
+\mbox{\Hypertarget{sodium_8php_acd07066fa19807f0d25a3e3013024005}\label{sodium_8php_acd07066fa19807f0d25a3e3013024005}} 
+\index{sodium.php@{sodium.php}!SODIUM\_LIBRARY\_VERSION@{SODIUM\_LIBRARY\_VERSION}}
+\index{SODIUM\_LIBRARY\_VERSION@{SODIUM\_LIBRARY\_VERSION}!sodium.php@{sodium.php}}
+\doxysubsubsection{\texorpdfstring{SODIUM\_LIBRARY\_VERSION}{SODIUM\_LIBRARY\_VERSION}}
+{\footnotesize\ttfamily const S\+O\+D\+I\+U\+M\+\_\+\+L\+I\+B\+R\+A\+R\+Y\+\_\+\+V\+E\+R\+S\+I\+ON =\char`\"{}1.\+0.\+17\char`\"{}}
+

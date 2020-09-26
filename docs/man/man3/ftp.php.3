@@ -1,0 +1,1207 @@
+.TH "vendor/jetbrains/phpstorm-stubs/ftp/ftp.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/ftp/ftp.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBftp_append\fP ($ftp, $remote_file, $local_file, $mode=\fBFTP_BINARY\fP)"
+.br
+.ti -1c
+.RI "\fBftp_mlsd\fP ($ftp, $directory)"
+.br
+.ti -1c
+.RI "\fBftp_connect\fP ($host, $port=21, $timeout=90)"
+.br
+.ti -1c
+.RI "\fBftp_ssl_connect\fP ($host, $port=21, $timeout=90)"
+.br
+.ti -1c
+.RI "\fBftp_login\fP ($ftp_stream, $username, $password)"
+.br
+.ti -1c
+.RI "\fBftp_pwd\fP ($ftp_stream)"
+.br
+.ti -1c
+.RI "\fBftp_cdup\fP ($ftp_stream)"
+.br
+.ti -1c
+.RI "\fBftp_chdir\fP ($ftp_stream, $directory)"
+.br
+.ti -1c
+.RI "\fBftp_exec\fP ($ftp_stream, $command)"
+.br
+.ti -1c
+.RI "\fBftp_raw\fP ($ftp_stream, $command)"
+.br
+.ti -1c
+.RI "\fBftp_mkdir\fP ($ftp_stream, $directory)"
+.br
+.ti -1c
+.RI "\fBftp_rmdir\fP ($ftp_stream, $directory)"
+.br
+.ti -1c
+.RI "\fBftp_chmod\fP ($ftp_stream, $mode, $filename)"
+.br
+.ti -1c
+.RI "\fBftp_alloc\fP ($ftp_stream, $\fBfilesize\fP, &$result=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBftp_nlist\fP ($ftp_stream, $directory)"
+.br
+.ti -1c
+.RI "\fBftp_rawlist\fP ($ftp_stream, $directory, $recursive=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBftp_systype\fP ($ftp_stream)"
+.br
+.ti -1c
+.RI "\fBftp_pasv\fP ($ftp_stream, $pasv)"
+.br
+.ti -1c
+.RI "\fBftp_get\fP ($ftp_stream, $local_file, $remote_file, $mode=\fBFTP_BINARY\fP, $resumepos=0)"
+.br
+.ti -1c
+.RI "\fBftp_fget\fP ($ftp_stream, $handle, $remote_file, $mode=\fBFTP_BINARY\fP, $resumepos=0)"
+.br
+.ti -1c
+.RI "\fBftp_put\fP ($ftp_stream, $remote_file, $local_file, $mode=\fBFTP_BINARY\fP, $startpos=0)"
+.br
+.ti -1c
+.RI "\fBftp_fput\fP ($ftp_stream, $remote_file, $handle, $mode=\fBFTP_BINARY\fP, $startpos=0)"
+.br
+.ti -1c
+.RI "\fBftp_size\fP ($ftp_stream, $remote_file)"
+.br
+.ti -1c
+.RI "\fBftp_mdtm\fP ($ftp_stream, $remote_file)"
+.br
+.ti -1c
+.RI "\fBftp_rename\fP ($ftp_stream, $oldname, $newname)"
+.br
+.ti -1c
+.RI "\fBftp_delete\fP ($ftp_stream, $path)"
+.br
+.ti -1c
+.RI "\fBftp_site\fP ($ftp_stream, $command)"
+.br
+.ti -1c
+.RI "\fBftp_close\fP ($ftp_stream)"
+.br
+.ti -1c
+.RI "\fBftp_set_option\fP ($ftp_stream, $option, $value)"
+.br
+.ti -1c
+.RI "\fBftp_get_option\fP ($ftp_stream, $option)"
+.br
+.ti -1c
+.RI "\fBftp_nb_fget\fP ($ftp_stream, $handle, $remote_file, $mode=\fBFTP_BINARY\fP, $resumepos=0)"
+.br
+.ti -1c
+.RI "\fBftp_nb_get\fP ($ftp_stream, $local_file, $remote_file, $mode=\fBFTP_BINARY\fP, $resumepos=0)"
+.br
+.ti -1c
+.RI "\fBftp_nb_continue\fP ($ftp_stream)"
+.br
+.ti -1c
+.RI "\fBftp_nb_put\fP ($ftp_stream, $remote_file, $local_file, $mode=\fBFTP_BINARY\fP, $startpos=0)"
+.br
+.ti -1c
+.RI "\fBftp_nb_fput\fP ($ftp_stream, $remote_file, $handle, $mode=\fBFTP_BINARY\fP, $startpos=0)"
+.br
+.ti -1c
+.RI "\fBftp_quit\fP ($ftp)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBFTP_ASCII\fP 1"
+.br
+.ti -1c
+.RI "const \fBFTP_TEXT\fP 1"
+.br
+.ti -1c
+.RI "const \fBFTP_BINARY\fP 2"
+.br
+.ti -1c
+.RI "const \fBFTP_IMAGE\fP 2"
+.br
+.ti -1c
+.RI "const \fBFTP_AUTORESUME\fP \-1"
+.br
+.ti -1c
+.RI "const \fBFTP_TIMEOUT_SEC\fP 0"
+.br
+.ti -1c
+.RI "const \fBFTP_AUTOSEEK\fP 1"
+.br
+.ti -1c
+.RI "const \fBFTP_USEPASVADDRESS\fP 2"
+.br
+.ti -1c
+.RI "const \fBFTP_FAILED\fP 0"
+.br
+.ti -1c
+.RI "const \fBFTP_FINISHED\fP 1"
+.br
+.ti -1c
+.RI "const \fBFTP_MOREDATA\fP 2"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "ftp_alloc ( $ftp_stream,  $filesize, & $result = \fC\fBnull\fP\fP)"
+Allocates space for a file to be uploaded \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filesize\fP 
+.RE
+.PP
+The number of bytes to allocate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP [optional] 
+.RE
+.PP
+\fBA\fP textual representation of the servers response will be returned by reference in \fIresult\fP if a variable is provided\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_append ( $ftp,  $remote_file,  $local_file,  $mode = \fC\fBFTP_BINARY\fP\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ftp\fP 
+.br
+\fI$remote_file\fP 
+.br
+\fI$local_file\fP 
+.br
+\fI$mode\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "ftp_cdup ( $ftp_stream)"
+Changes to the parent directory \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_chdir ( $ftp_stream,  $directory)"
+Changes the current directory on a FTP server \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$directory\fP 
+.RE
+.PP
+The target directory\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. If changing directory fails, PHP will also throw a warning\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_chmod ( $ftp_stream,  $mode,  $filename)"
+Set permissions on a file via FTP \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+The new permissions, given as an octal value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP 
+.RE
+.PP
+The remote file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the new file permissions on success or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_close ( $ftp_stream)"
+Closes an FTP connection \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_connect ( $host,  $port = \fC21\fP,  $timeout = \fC90\fP)"
+Opens an FTP connection \fBstring $host \fP The FTP server address\&. This parameter shouldn't have any trailing slashes and shouldn't be prefixed with ftp://\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$port\fP [optional] 
+.RE
+.PP
+This parameter specifies an alternate port to connect to\&. If it is omitted or set to zero, then the default FTP port, 21, will be used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+This parameter specifies the timeout for all subsequent network operations\&. If omitted, the default value is 90 seconds\&. The timeout can be changed and queried at any time with \fBftp_set_option\fP and \fBftp_get_option\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a FTP stream on success or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_delete ( $ftp_stream,  $path)"
+Deletes a file on the FTP server \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$path\fP 
+.RE
+.PP
+The file to delete\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_exec ( $ftp_stream,  $command)"
+Requests execution of a command on the FTP server \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$command\fP 
+.RE
+.PP
+The command to execute\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if the command was successful (server sent response code: 200); otherwise returns \fBFALSE\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_fget ( $ftp_stream,  $handle,  $remote_file,  $mode = \fC\fBFTP_BINARY\fP\fP,  $resumepos = \fC0\fP)"
+Downloads a file from the FTP server and saves to an open file \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+An open file pointer in which we store the data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$remote_file\fP 
+.RE
+.PP
+The remote file path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+The transfer mode\&. Must be either \fBFTP_ASCII\fP or \fBFTP_BINARY\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$resumepos\fP [optional] 
+.RE
+.PP
+The position in the remote file to start downloading from\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_fput ( $ftp_stream,  $remote_file,  $handle,  $mode = \fC\fBFTP_BINARY\fP\fP,  $startpos = \fC0\fP)"
+Uploads from an open file to the FTP server \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$remote_file\fP 
+.RE
+.PP
+The remote file path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+An open file pointer on the local file\&. Reading stops at end of file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+The transfer mode\&. Must be either \fBFTP_ASCII\fP or \fBFTP_BINARY\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$startpos\fP [optional] 
+.RE
+.PP
+The position in the remote file to start uploading to\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_get ( $ftp_stream,  $local_file,  $remote_file,  $mode = \fC\fBFTP_BINARY\fP\fP,  $resumepos = \fC0\fP)"
+Downloads a file from the FTP server \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$local_file\fP 
+.RE
+.PP
+The local file path (will be overwritten if the file already exists)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$remote_file\fP 
+.RE
+.PP
+The remote file path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+The transfer mode\&. Must be either \fBFTP_ASCII\fP or \fBFTP_BINARY\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$resumepos\fP [optional] 
+.RE
+.PP
+The position in the remote file to start downloading from\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_get_option ( $ftp_stream,  $option)"
+Retrieves various runtime behaviours of the current FTP stream \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$option\fP 
+.RE
+.PP
+Currently, the following options are supported: runtime FTP options 
+.PP
+\fBFTP_TIMEOUT_SEC\fP 
+.PP
+Returns the current timeout used for network related operations\&.   
+.PP
+\fBFTP_AUTOSEEK\fP 
+.PP
+Returns \fBTRUE\fP if this option is on, \fBFALSE\fP otherwise\&.   
+.PP
+\fBReturns\fP
+.RS 4
+mixed the value on success or \fBFALSE\fP if the given \fIoption\fP is not supported\&. In the latter case, a warning message is also thrown\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_login ( $ftp_stream,  $username,  $password)"
+Logs in to an FTP connection \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP 
+.RE
+.PP
+The username (USER)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP 
+.RE
+.PP
+The password (PASS)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. If login fails, PHP will also throw a warning\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_mdtm ( $ftp_stream,  $remote_file)"
+Returns the last modified time of the given file \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$remote_file\fP 
+.RE
+.PP
+The file from which to extract the last modification time\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the last modified time as a Unix timestamp on success, or -1 on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_mkdir ( $ftp_stream,  $directory)"
+Creates a directory \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$directory\fP 
+.RE
+.PP
+The name of the directory that will be created\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the newly created directory name on success or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_mlsd ( $ftp,  $directory)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ftp\fP 
+.br
+\fI$directory\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "ftp_nb_continue ( $ftp_stream)"
+Continues retrieving/sending a file (non-blocking) \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int \fBFTP_FAILED\fP or \fBFTP_FINISHED\fP or \fBFTP_MOREDATA\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_nb_fget ( $ftp_stream,  $handle,  $remote_file,  $mode = \fC\fBFTP_BINARY\fP\fP,  $resumepos = \fC0\fP)"
+Retrieves a file from the FTP server and writes it to an open file (non-blocking) \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+An open file pointer in which we store the data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$remote_file\fP 
+.RE
+.PP
+The remote file path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+The transfer mode\&. Must be either \fBFTP_ASCII\fP or \fBFTP_BINARY\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$resumepos\fP [optional] 
+.RE
+.PP
+The position in the remote file to start downloading from\&.
+.PP
+\fBReturns\fP
+.RS 4
+int \fBFTP_FAILED\fP or \fBFTP_FINISHED\fP or \fBFTP_MOREDATA\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_nb_fput ( $ftp_stream,  $remote_file,  $handle,  $mode = \fC\fBFTP_BINARY\fP\fP,  $startpos = \fC0\fP)"
+Stores a file from an open file to the FTP server (non-blocking) \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$remote_file\fP 
+.RE
+.PP
+The remote file path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+An open file pointer on the local file\&. Reading stops at end of file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+The transfer mode\&. Must be either \fBFTP_ASCII\fP or \fBFTP_BINARY\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$startpos\fP [optional] 
+.RE
+.PP
+The position in the remote file to start uploading to\&.
+.PP
+\fBReturns\fP
+.RS 4
+int \fBFTP_FAILED\fP or \fBFTP_FINISHED\fP or \fBFTP_MOREDATA\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_nb_get ( $ftp_stream,  $local_file,  $remote_file,  $mode = \fC\fBFTP_BINARY\fP\fP,  $resumepos = \fC0\fP)"
+Retrieves a file from the FTP server and writes it to a local file (non-blocking) \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$local_file\fP 
+.RE
+.PP
+The local file path (will be overwritten if the file already exists)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$remote_file\fP 
+.RE
+.PP
+The remote file path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+The transfer mode\&. Must be either \fBFTP_ASCII\fP or \fBFTP_BINARY\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$resumepos\fP [optional] 
+.RE
+.PP
+The position in the remote file to start downloading from\&.
+.PP
+\fBReturns\fP
+.RS 4
+int \fBFTP_FAILED\fP or \fBFTP_FINISHED\fP or \fBFTP_MOREDATA\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_nb_put ( $ftp_stream,  $remote_file,  $local_file,  $mode = \fC\fBFTP_BINARY\fP\fP,  $startpos = \fC0\fP)"
+Stores a file on the FTP server (non-blocking) \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$remote_file\fP 
+.RE
+.PP
+The remote file path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$local_file\fP 
+.RE
+.PP
+The local file path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+The transfer mode\&. Must be either \fBFTP_ASCII\fP or \fBFTP_BINARY\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$startpos\fP [optional] 
+.RE
+.PP
+The position in the remote file to start uploading to\&.
+.PP
+\fBReturns\fP
+.RS 4
+int \fBFTP_FAILED\fP or \fBFTP_FINISHED\fP or \fBFTP_MOREDATA\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_nlist ( $ftp_stream,  $directory)"
+Returns a list of files in the given directory \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$directory\fP 
+.RE
+.PP
+The directory to be listed\&. This parameter can also include arguments, eg\&. ftp_nlist($conn_id, '-la /your/dir'); Note that this parameter isn't escaped so there may be some issues with filenames containing spaces and other characters\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array of filenames from the specified directory on success or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_pasv ( $ftp_stream,  $pasv)"
+Turns passive mode on or off \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pasv\fP 
+.RE
+.PP
+If \fBTRUE\fP, the passive mode is turned on, else it's turned off\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_put ( $ftp_stream,  $remote_file,  $local_file,  $mode = \fC\fBFTP_BINARY\fP\fP,  $startpos = \fC0\fP)"
+Uploads a file to the FTP server \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$remote_file\fP 
+.RE
+.PP
+The remote file path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$local_file\fP 
+.RE
+.PP
+The local file path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+The transfer mode\&. Must be either \fBFTP_ASCII\fP or \fBFTP_BINARY\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$startpos\fP [optional] 
+.RE
+.PP
+The position in the remote file to start uploading to\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_pwd ( $ftp_stream)"
+Returns the current directory name \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the current directory name or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_quit ( $ftp)"
+Alias of \fBftp_close\fP \fB$ftp  4\&.0  5\&.0 \fP
+.SS "ftp_raw ( $ftp_stream,  $command)"
+Sends an arbitrary command to an FTP server \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$command\fP 
+.RE
+.PP
+The command to execute\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array the server's response as an array of strings\&. No parsing is performed on the response string, nor does \fBftp_raw\fP determine if the command succeeded\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_rawlist ( $ftp_stream,  $directory,  $recursive = \fC\fBfalse\fP\fP)"
+Returns a detailed list of files in the given directory \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$directory\fP 
+.RE
+.PP
+The directory path\&. May include arguments for the LIST command\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$recursive\fP [optional] 
+.RE
+.PP
+If set to \fBTRUE\fP, the issued command will be LIST -R\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array where each element corresponds to one line of text\&. 
+.RE
+.PP
+.PP
+The output is not parsed in any way\&. The system type identifier returned by \fBftp_systype\fP can be used to determine how the results should be interpreted\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_rename ( $ftp_stream,  $oldname,  $newname)"
+Renames a file or a directory on the FTP server \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$oldname\fP 
+.RE
+.PP
+The old file/directory name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$newname\fP 
+.RE
+.PP
+The new name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_rmdir ( $ftp_stream,  $directory)"
+Removes a directory \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$directory\fP 
+.RE
+.PP
+The directory to delete\&. This must be either an absolute or relative path to an empty directory\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_set_option ( $ftp_stream,  $option,  $value)"
+Set miscellaneous runtime FTP options \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$option\fP 
+.RE
+.PP
+Currently, the following options are supported: runtime FTP options 
+.PP
+\fBFTP_TIMEOUT_SEC\fP 
+.PP
+Changes the timeout in seconds used for all network related functions\&. \fIvalue\fP must be an integer that is greater than 0\&. The default timeout is 90 seconds\&.   
+.PP
+\fBFTP_AUTOSEEK\fP 
+.PP
+When enabled, GET or PUT requests with a \fIresumepos\fP or \fIstartpos\fP parameter will first seek to the requested position within the file\&. This is enabled by default\&.   
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+This parameter depends on which \fIoption\fP is chosen to be altered\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if the option could be set; \fBFALSE\fP if not\&. \fBA\fP warning message will be thrown if the \fIoption\fP is not supported or the passed \fIvalue\fP doesn't match the expected value for the given \fIoption\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_site ( $ftp_stream,  $command)"
+Sends a SITE command to the server \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$command\fP 
+.RE
+.PP
+The SITE command\&. Note that this parameter isn't escaped so there may be some issues with filenames containing spaces and other characters\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_size ( $ftp_stream,  $remote_file)"
+Returns the size of the given file \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$remote_file\fP 
+.RE
+.PP
+The remote file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the file size on success, or -1 on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_ssl_connect ( $host,  $port = \fC21\fP,  $timeout = \fC90\fP)"
+Opens an Secure SSL-FTP connection \fBstring $host \fP The FTP server address\&. This parameter shouldn't have any trailing slashes and shouldn't be prefixed with ftp://\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$port\fP [optional] 
+.RE
+.PP
+This parameter specifies an alternate port to connect to\&. If it is omitted or set to zero, then the default FTP port, 21, will be used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+This parameter specifies the timeout for all subsequent network operations\&. If omitted, the default value is 90 seconds\&. The timeout can be changed and queried at any time with \fBftp_set_option\fP and \fBftp_get_option\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a SSL-FTP stream on success or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftp_systype ( $ftp_stream)"
+Returns the system type identifier of the remote FTP server \fBresource $ftp_stream \fP The link identifier of the FTP connection\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the remote system type, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const FTP_ASCII 1"
+\fBhttps://php\&.net/manual/en/ftp\&.constants\&.php\fP
+.SS "const FTP_AUTORESUME \-1"
+Automatically determine resume position and start position for GET and PUT requests (only works if FTP_AUTOSEEK is enabled) 
+.PP
+\fBhttps://php\&.net/manual/en/ftp\&.constants\&.php\fP
+.SS "const FTP_AUTOSEEK 1"
+See \fBftp_set_option\fP for information\&. 
+.PP
+\fBhttps://php\&.net/manual/en/ftp\&.constants\&.php\fP
+.SS "const FTP_BINARY 2"
+\fBhttps://php\&.net/manual/en/ftp\&.constants\&.php\fP
+.SS "const FTP_FAILED 0"
+Asynchronous transfer has failed 
+.PP
+\fBhttps://php\&.net/manual/en/ftp\&.constants\&.php\fP
+.SS "const FTP_FINISHED 1"
+Asynchronous transfer has finished 
+.PP
+\fBhttps://php\&.net/manual/en/ftp\&.constants\&.php\fP
+.SS "const FTP_IMAGE 2"
+\fBhttps://php\&.net/manual/en/ftp\&.constants\&.php\fP
+.SS "const FTP_MOREDATA 2"
+Asynchronous transfer is still active 
+.PP
+\fBhttps://php\&.net/manual/en/ftp\&.constants\&.php\fP
+.SS "const FTP_TEXT 1"
+\fBhttps://php\&.net/manual/en/ftp\&.constants\&.php\fP
+.SS "const FTP_TIMEOUT_SEC 0"
+See \fBftp_set_option\fP for information\&. 
+.PP
+\fBhttps://php\&.net/manual/en/ftp\&.constants\&.php\fP
+.SS "const FTP_USEPASVADDRESS 2"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

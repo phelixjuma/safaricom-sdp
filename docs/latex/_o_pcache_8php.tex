@@ -1,0 +1,80 @@
+\hypertarget{_o_pcache_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/\+Zend O\+Pcache/\+O\+Pcache.php File Reference}
+\label{_o_pcache_8php}\index{vendor/jetbrains/phpstorm-\/stubs/Zend OPcache/OPcache.php@{vendor/jetbrains/phpstorm-\/stubs/Zend OPcache/OPcache.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_o_pcache_8php_a106490ef728bce2cf3bb8b29243627cb}{opcache\+\_\+compile\+\_\+file}} (\$\mbox{\hyperlink{standard__5_8php_ac0d353a97d1662c811425338985026b1}{file}})
+\item 
+\mbox{\hyperlink{_o_pcache_8php_af1568e5710b7d4790bb595d4e9f41278}{opcache\+\_\+invalidate}} (\$script, \$force=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{_o_pcache_8php_a03be7465a787b0185dcb2b71a1c56635}{opcache\+\_\+reset}} ()
+\item 
+\mbox{\hyperlink{_o_pcache_8php_af11ee83a4ff5970152b939152996e3af}{opcache\+\_\+get\+\_\+status}} (\$get\+\_\+scripts=T\+R\+UE)
+\item 
+\mbox{\hyperlink{_o_pcache_8php_a06f97a011bedeb4d89ceb9c24abdb414}{opcache\+\_\+get\+\_\+configuration}} ()
+\item 
+\mbox{\hyperlink{_o_pcache_8php_acd1f0924be42b8176db98bd7369fc758}{opcache\+\_\+is\+\_\+script\+\_\+cached}} (\$\mbox{\hyperlink{standard__5_8php_ac0d353a97d1662c811425338985026b1}{file}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_o_pcache_8php_a106490ef728bce2cf3bb8b29243627cb}\label{_o_pcache_8php_a106490ef728bce2cf3bb8b29243627cb}} 
+\index{OPcache.php@{OPcache.php}!opcache\_compile\_file@{opcache\_compile\_file}}
+\index{opcache\_compile\_file@{opcache\_compile\_file}!OPcache.php@{OPcache.php}}
+\doxysubsubsection{\texorpdfstring{opcache\_compile\_file()}{opcache\_compile\_file()}}
+{\footnotesize\ttfamily opcache\+\_\+compile\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$file }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+5.\+5, P\+E\+CL Zend\+Opcache $>$= 7.\+0.\+2 )~\newline
+ Compiles and caches a P\+HP script without executing it \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$file The path to the P\+HP script to be compiled.  bool Returns {\bfseries{T\+R\+UE}} if the opcode cache for {\itshape script} was invalidated or if there was nothing to invalidate, or {\bfseries{F\+A\+L\+SE}} if the opcode cache is disabled. }}\mbox{\Hypertarget{_o_pcache_8php_a06f97a011bedeb4d89ceb9c24abdb414}\label{_o_pcache_8php_a06f97a011bedeb4d89ceb9c24abdb414}} 
+\index{OPcache.php@{OPcache.php}!opcache\_get\_configuration@{opcache\_get\_configuration}}
+\index{opcache\_get\_configuration@{opcache\_get\_configuration}!OPcache.php@{OPcache.php}}
+\doxysubsubsection{\texorpdfstring{opcache\_get\_configuration()}{opcache\_get\_configuration()}}
+{\footnotesize\ttfamily opcache\+\_\+get\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+5.\+5, P\+E\+CL Zend\+Opcache $>$= 7.\+0.\+2 )~\newline
+ Get configuration information about the cache \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array }}Returns an array of information, including ini, blacklist and version\mbox{\Hypertarget{_o_pcache_8php_af11ee83a4ff5970152b939152996e3af}\label{_o_pcache_8php_af11ee83a4ff5970152b939152996e3af}} 
+\index{OPcache.php@{OPcache.php}!opcache\_get\_status@{opcache\_get\_status}}
+\index{opcache\_get\_status@{opcache\_get\_status}!OPcache.php@{OPcache.php}}
+\doxysubsubsection{\texorpdfstring{opcache\_get\_status()}{opcache\_get\_status()}}
+{\footnotesize\ttfamily opcache\+\_\+get\+\_\+status (\begin{DoxyParamCaption}\item[{}]{\$get\+\_\+scripts = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+5.\+5, P\+E\+CL Zend\+Opcache $>$= 7.\+0.\+2 )~\newline
+ Get status information about the cache \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{bool \$get\+\_\+scripts }}Include script specific state information
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+Returns an array of information, optionally containing script specific state information\mbox{\Hypertarget{_o_pcache_8php_af1568e5710b7d4790bb595d4e9f41278}\label{_o_pcache_8php_af1568e5710b7d4790bb595d4e9f41278}} 
+\index{OPcache.php@{OPcache.php}!opcache\_invalidate@{opcache\_invalidate}}
+\index{opcache\_invalidate@{opcache\_invalidate}!OPcache.php@{OPcache.php}}
+\doxysubsubsection{\texorpdfstring{opcache\_invalidate()}{opcache\_invalidate()}}
+{\footnotesize\ttfamily opcache\+\_\+invalidate (\begin{DoxyParamCaption}\item[{}]{\$script,  }\item[{}]{\$force = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+5.\+0, P\+E\+CL Zend\+Opcache $>$= 7.\+0.\+0 )~\newline
+ Invalidates a cached script \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$script }}The path to the script being invalidated.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$force} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If set to {\bfseries{T\+R\+UE}}, the script will be invalidated regardless of whether invalidation is necessary.
+
+\begin{DoxyReturn}{Returns}
+bool Returns {\bfseries{T\+R\+UE}} if the opcode cache for {\itshape script} was invalidated or if there was nothing to invalidate, or {\bfseries{F\+A\+L\+SE}} if the opcode cache is disabled. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_o_pcache_8php_acd1f0924be42b8176db98bd7369fc758}\label{_o_pcache_8php_acd1f0924be42b8176db98bd7369fc758}} 
+\index{OPcache.php@{OPcache.php}!opcache\_is\_script\_cached@{opcache\_is\_script\_cached}}
+\index{opcache\_is\_script\_cached@{opcache\_is\_script\_cached}!OPcache.php@{OPcache.php}}
+\doxysubsubsection{\texorpdfstring{opcache\_is\_script\_cached()}{opcache\_is\_script\_cached()}}
+{\footnotesize\ttfamily opcache\+\_\+is\+\_\+script\+\_\+cached (\begin{DoxyParamCaption}\item[{}]{\$file }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+6, P\+E\+CL Zend\+Opcache $>$= 7.\+0.\+4 )~\newline
+ This function checks if a P\+HP script has been cached in O\+P\+Cache. This can be used to more easily detect the \char`\"{}warming\char`\"{} of the cache for a particular script. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$file The path to the P\+HP script to be checked.  bool Returns T\+R\+UE if file is cached in O\+P\+Cache, F\+A\+L\+SE otherwise. }}\mbox{\Hypertarget{_o_pcache_8php_a03be7465a787b0185dcb2b71a1c56635}\label{_o_pcache_8php_a03be7465a787b0185dcb2b71a1c56635}} 
+\index{OPcache.php@{OPcache.php}!opcache\_reset@{opcache\_reset}}
+\index{opcache\_reset@{opcache\_reset}!OPcache.php@{OPcache.php}}
+\doxysubsubsection{\texorpdfstring{opcache\_reset()}{opcache\_reset()}}
+{\footnotesize\ttfamily opcache\+\_\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+5.\+0, P\+E\+CL Zend\+Opcache $>$= 7.\+0.\+0 )~\newline
+ Resets the contents of the opcode cache \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{bool Returns {\bfseries{T\+R\+UE}} if the opcode cache was reset, or {\bfseries{F\+A\+L\+SE}} if the opcode cache is disabled. }}

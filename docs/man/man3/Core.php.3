@@ -1,0 +1,1201 @@
+.TH "vendor/jetbrains/phpstorm-stubs/Core/Core.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/Core/Core.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBzend_version\fP ()"
+.br
+.ti -1c
+.RI "\fBfunc_num_args\fP ()"
+.br
+.ti -1c
+.RI "\fBfunc_get_arg\fP ($arg_num)"
+.br
+.ti -1c
+.RI "\fBfunc_get_args\fP ()"
+.br
+.ti -1c
+.RI "\fBstrlen\fP ($string)"
+.br
+.ti -1c
+.RI "\fBstrcmp\fP ($str1, $str2)"
+.br
+.ti -1c
+.RI "\fBstrncmp\fP ($str1, $str2, $len)"
+.br
+.ti -1c
+.RI "\fBstrcasecmp\fP ($str1, $str2)"
+.br
+.ti -1c
+.RI "\fBstrncasecmp\fP ($str1, $str2, $len)"
+.br
+.ti -1c
+.RI "\fBeach\fP (array &$array)"
+.br
+.ti -1c
+.RI "\fBerror_reporting\fP ($level=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdefine\fP ($name, $value, $case_insensitive=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBdefined\fP ($name)"
+.br
+.ti -1c
+.RI "\fBget_class\fP ($object=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBget_called_class\fP ()"
+.br
+.ti -1c
+.RI "\fBget_parent_class\fP ($object=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmethod_exists\fP ($object, $method_name)"
+.br
+.ti -1c
+.RI "\fBproperty_exists\fP ($\fBclass\fP, $property)"
+.br
+.ti -1c
+.RI "\fBtrait_exists\fP ($traitname, $autoload)"
+.br
+.ti -1c
+.RI "\fBclass_exists\fP ($class_name, $autoload=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBinterface_exists\fP ($interface_name, $autoload=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBfunction_exists\fP ($function_name)"
+.br
+.ti -1c
+.RI "\fBclass_alias\fP ($original, $alias, $autoload=TRUE)"
+.br
+.ti -1c
+.RI "\fBget_included_files\fP ()"
+.br
+.ti -1c
+.RI "\fBget_required_files\fP ()"
+.br
+.ti -1c
+.RI "\fBis_subclass_of\fP ($object, $class_name, $allow_string=TRUE)"
+.br
+.ti -1c
+.RI "\fBis_a\fP ($object, $class_name, $allow_string=FALSE)"
+.br
+.ti -1c
+.RI "\fBget_class_vars\fP ($class_name)"
+.br
+.ti -1c
+.RI "\fBget_object_vars\fP ($object)"
+.br
+.ti -1c
+.RI "\fBget_class_methods\fP ($class_name)"
+.br
+.ti -1c
+.RI "\fBtrigger_error\fP ($error_msg, $error_type=\fBE_USER_NOTICE\fP)"
+.br
+.ti -1c
+.RI "\fBuser_error\fP ($message, $error_type=\fBE_USER_NOTICE\fP)"
+.br
+.ti -1c
+.RI "\fBset_error_handler\fP ($error_handler, $error_types=\fBE_ALL\fP|\fBE_STRICT\fP)"
+.br
+.ti -1c
+.RI "\fBrestore_error_handler\fP ()"
+.br
+.ti -1c
+.RI "\fBset_exception_handler\fP ($exception_handler)"
+.br
+.ti -1c
+.RI "\fBrestore_exception_handler\fP ()"
+.br
+.ti -1c
+.RI "\fBget_declared_classes\fP ()"
+.br
+.ti -1c
+.RI "\fBget_declared_interfaces\fP ()"
+.br
+.ti -1c
+.RI "\fBget_declared_traits\fP ()"
+.br
+.ti -1c
+.RI "\fBget_defined_functions\fP ($exclude_disabled=FALSE)"
+.br
+.ti -1c
+.RI "\fBget_defined_vars\fP ()"
+.br
+.ti -1c
+.RI "\fBcreate_function\fP ($args, $code)"
+.br
+.ti -1c
+.RI "\fBget_resource_type\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBget_loaded_extensions\fP ($zend_extensions=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBextension_loaded\fP ($name)"
+.br
+.ti -1c
+.RI "\fBget_extension_funcs\fP ($module_name)"
+.br
+.ti -1c
+.RI "\fBget_defined_constants\fP ($categorize=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBdebug_backtrace\fP ($options=\fBDEBUG_BACKTRACE_PROVIDE_OBJECT\fP, $limit=0)"
+.br
+.ti -1c
+.RI "\fBdebug_print_backtrace\fP ($options=0, $limit=0)"
+.br
+.ti -1c
+.RI "\fBgc_collect_cycles\fP ()"
+.br
+.ti -1c
+.RI "\fBgc_enabled\fP ()"
+.br
+.ti -1c
+.RI "\fBgc_enable\fP ()"
+.br
+.ti -1c
+.RI "\fBgc_disable\fP ()"
+.br
+.ti -1c
+.RI "\fBgc_status\fP ()"
+.br
+.ti -1c
+.RI "\fBgc_mem_caches\fP ()"
+.br
+.ti -1c
+.RI "\fBget_resources\fP ($type)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "class_alias ( $original,  $alias,  $autoload = \fCTRUE\fP)"
+Creates an alias for a class \fBstring $original The original class\&.  string $alias The alias name for the class\&.  bool $autoload [optional] Whether to autoload if the original class is not found\&.  bool true on success or false on failure\&.  5\&.3 \fP
+.SS "class_exists ( $class_name,  $autoload = \fC\fBtrue\fP\fP)"
+Checks if the class has been defined \fBstring $class_name \fP The class name\&. The name is matched in a case-insensitive manner\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$autoload\fP [optional] 
+.RE
+.PP
+Whether or not to call &link\&.autoload; by default\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if \fIclass_name\fP is a defined class, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "create_function ( $args,  $code)"
+Create an anonymous (lambda-style) function \fBstring $args \fP The function arguments\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$code\fP 
+.RE
+.PP
+The function code\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a unique function name as a string, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.2 Use anonymous functions instead\&. 
+.RE
+.PP
+
+.SS "debug_backtrace ( $options = \fC\fBDEBUG_BACKTRACE_PROVIDE_OBJECT\fP\fP,  $limit = \fC0\fP)"
+Generates a backtrace \fBint $options [optional] \fP As of 5\&.3\&.6, this parameter is a bitmask for the following options: debug_backtrace options 
+.PP
+DEBUG_BACKTRACE_PROVIDE_OBJECT 
+.PP
+Whether or not to populate the 'object' index\&.   
+.PP
+DEBUG_BACKTRACE_IGNORE_ARGS 
+.PP
+Whether or not to omit the 'args' index, and thus all the function/method arguments, to save memory\&.   
+.PP
+Before 5\&.3\&.6, the only values recognized are true or false, which are the same as setting or not setting the \fBDEBUG_BACKTRACE_PROVIDE_OBJECT\fP option respectively\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$limit\fP [optional] 
+.RE
+.PP
+As of 5\&.4\&.0, this parameter can be used to limit the number of stack frames returned\&. By default (\fIlimit\fP=0) it returns all stack frames\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array of associative arrays\&. The possible returned elements are as follows: 
+.RE
+.PP
+.PP
+returned elements from \fBdebug_backtrace\fP 
+.PP
+Description  
+.PP
+function 
+.PP
+string 
+.PP
+The current function name\&. See also \fBFUNCTION\fP\&.   
+.PP
+line 
+.PP
+integer 
+.PP
+The current line number\&. See also \fBLINE\fP\&.   
+.PP
+file 
+.PP
+string 
+.PP
+The current file name\&. See also \fBFILE\fP\&.   
+.PP
+class 
+.PP
+string 
+.PP
+The current class name\&. See also \fBCLASS\fP   
+.PP
+object 
+.PP
+object 
+.PP
+The current object\&.   
+.PP
+type 
+.PP
+string 
+.PP
+The current call type\&. If a method call, '->' is returned\&. If a static method call, '::' is returned\&. If a function call, nothing is returned\&.   
+.PP
+args 
+.PP
+array 
+.PP
+If inside a function, this lists the functions arguments\&. If inside an included file, this lists the included file name(s)\&.   
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "debug_print_backtrace ( $options = \fC0\fP,  $limit = \fC0\fP)"
+Prints a backtrace \fBint $options [optional] \fP As of 5\&.3\&.6, this parameter is a bitmask for the following options: debug_print_backtrace options 
+.PP
+DEBUG_BACKTRACE_IGNORE_ARGS 
+.PP
+Whether or not to omit the 'args' index, and thus all the function/method arguments, to save memory\&.   
+.PP
+\fBParameters\fP
+.RS 4
+\fI$limit\fP [optional] 
+.RE
+.PP
+As of 5\&.4\&.0, this parameter can be used to limit the number of stack frames printed\&. By default (\fIlimit\fP=0) it prints all stack frames\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "define ( $name,  $value,  $case_insensitive = \fC\fBfalse\fP\fP)"
+Defines a named constant \fBstring $name \fP The name of the constant\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+The value of the constant; only scalar and null values are allowed\&. Scalar values are integer, float, string or boolean values\&. It is possible to define resource constants, however it is not recommended and may cause unpredictable behavior\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$case_insensitive\fP [optional] 
+.RE
+.PP
+If set to true, the constant will be defined case-insensitive\&. The default behavior is case-sensitive; i\&.e\&. CONSTANT and Constant represent different values\&. 
+.PP
+Case-insensitive constants are stored as lower-case\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "defined ( $name)"
+Checks whether a given named constant exists \fBstring $name \fP The constant name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if the named constant given by \fIname\fP has been defined, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "each (array & $array)"
+Return the current key and value pair from an array and advance the array cursor \fBarray|ArrayObject $array \fP The input array\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array the current key and value pair from the array \fIarray\fP\&. This pair is returned in a four-element array, with the keys 0, 1, key, and value\&. Elements 0 and key contain the key name of the array element, and 1 and value contain the data\&. 
+.RE
+.PP
+.PP
+If the internal pointer for the array points past the end of the array contents, \fBeach\fP returns false\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.2 Use a foreach loop instead\&. 
+.RE
+.PP
+
+.SS "error_reporting ( $level = \fC\fBnull\fP\fP)"
+Sets which PHP errors are reported \fBint $level [optional] \fP The new error_reporting level\&. It takes on either a bitmask, or named constants\&. Using named constants is strongly encouraged to ensure compatibility for future versions\&. As error levels are added, the range of integers increases, so older integer-based error levels will not always behave as expected\&. 
+.PP
+The available error level constants and the actual meanings of these error levels are described in the predefined constants\&. level constants and bit values 
+.PP
+value 
+.PP
+constant  
+.PP
+1 
+.PP
+E_ERROR   
+.PP
+2 
+.PP
+E_WARNING   
+.PP
+4 
+.PP
+E_PARSE   
+.PP
+8 
+.PP
+E_NOTICE   
+.PP
+16 
+.PP
+E_CORE_ERROR   
+.PP
+32 
+.PP
+E_CORE_WARNING   
+.PP
+64 
+.PP
+E_COMPILE_ERROR   
+.PP
+128 
+.PP
+E_COMPILE_WARNING   
+.PP
+256 
+.PP
+E_USER_ERROR   
+.PP
+512 
+.PP
+E_USER_WARNING   
+.PP
+1024 
+.PP
+E_USER_NOTICE   
+.PP
+32767 
+.PP
+E_ALL   
+.PP
+2048 
+.PP
+E_STRICT   
+.PP
+4096 
+.PP
+E_RECOVERABLE_ERROR   
+.PP
+8192 
+.PP
+E_DEPRECATED   
+.PP
+16384 
+.PP
+E_USER_DEPRECATED   
+.PP
+\fBReturns\fP
+.RS 4
+int the old error_reporting level or the current level if no \fIlevel\fP parameter is given\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "extension_loaded ( $name)"
+Find out whether an extension is loaded \fBstring $name \fP The extension name\&. 
+.PP
+You can see the names of various extensions by using \fBphpinfo\fP or if you're using the CGI or CLI version of PHP you can use the -m switch to list all available extensions: 
+.PP
+.nf
+
+$ php -m
+[PHP Modules]
+xml
+tokenizer
+standard
+sockets
+session
+posix
+pcre
+overload
+mysql
+mbstring
+ctype
+[\fBZend\fP Modules]
+.fi
+.PP
+ 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if the extension identified by \fIname\fP is loaded, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "func_get_arg ( $arg_num)"
+Return an item from the argument list \fBint $arg_num \fP The argument offset\&. Function arguments are counted starting from zero\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed the specified argument, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "func_get_args ()"
+Returns an array comprising a function's argument list \fBarray an array in which each element is a copy of the corresponding member of the current user-defined function's argument list\&.  4\&.0  5\&.0 \fP
+.SS "func_num_args ()"
+Returns the number of arguments passed to the function \fBint the number of arguments passed into the current user-defined function\&.  4\&.0  5\&.0 \fP
+.SS "function_exists ( $function_name)"
+Return true if the given function has been defined \fBstring $function_name \fP The function name, as a string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if \fIfunction_name\fP exists and is a function, false otherwise\&. 
+.RE
+.PP
+.PP
+This function will return false for constructs, such as \fBinclude_once\fP and \fBecho\fP\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gc_collect_cycles ()"
+Forces collection of any existing garbage cycles \fBint number of collected cycles\&.  5\&.3 \fP
+.SS "gc_disable ()"
+Deactivates the circular reference collector \fBvoid  5\&.3 \fP
+.SS "gc_enable ()"
+Activates the circular reference collector \fBvoid  5\&.3 \fP
+.SS "gc_enabled ()"
+Returns status of the circular reference collector \fBbool true if the garbage collector is enabled, false otherwise\&.  5\&.3 \fP
+.SS "gc_mem_caches ()"
+Reclaims memory used by the \fBZend\fP Engine memory manager \fBint Returns the number of bytes freed\&.  7\&.0 \fP
+.SS "gc_status ()"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.3 
+.RE
+.PP
+
+.SS "get_called_class ()"
+the 'Late Static Binding' class name \fBstring the class name\&. Returns false if called from outside a class\&.  5\&.3 \fP
+.SS "get_class ( $object = \fC\fBnull\fP\fP)"
+Returns the name of the class of an object \fBobject $object [optional] \fP The tested object\&. This parameter may be omitted when inside a class\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the name of the class of which \fIobject\fP is an instance\&. Returns false if \fIobject\fP is not an object\&. 
+.RE
+.PP
+.PP
+If \fIobject\fP is omitted when inside a class, the name of that class is returned\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "get_class_methods ( $class_name)"
+Gets the class methods' names \fBmixed $class_name \fP The class name or an object instance 
+.PP
+\fBReturns\fP
+.RS 4
+array an array of method names defined for the class specified by \fIclass_name\fP\&. In case of an error, it returns null\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "get_class_vars ( $class_name)"
+Get the default properties of the class \fBstring $class_name \fP The class name 
+.PP
+\fBReturns\fP
+.RS 4
+array an associative array of declared properties visible from the current scope, with their default value\&. The resulting array elements are in the form of varname => value\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "get_declared_classes ()"
+Returns an array with the name of the defined classes \fBarray an array of the names of the declared classes in the current script\&. \fP 
+.PP
+Note that depending on what extensions you have compiled or loaded into PHP, additional classes could be present\&. This means that you will not be able to define your own classes using these names\&. There is a list of predefined classes in the Predefined Classes section of the appendices\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "get_declared_interfaces ()"
+Returns an array of all declared interfaces \fBarray an array of the names of the declared interfaces in the current script\&.  5\&.0 \fP
+.SS "get_declared_traits ()"
+Returns an array of all declared traits 
+.PP
+\fBReturns\fP
+.RS 4
+array with names of all declared traits in values\&. Returns NULL in case of a failure\&. \fBclass_uses()  5\&.4 \fP
+.RE
+.PP
+
+.SS "get_defined_constants ( $categorize = \fC\fBfalse\fP\fP)"
+Returns an associative array with the names of all the constants and their values \fBbool $categorize [optional] \fP Causing this function to return a multi-dimensional array with categories in the keys of the first dimension and constants and their values in the second dimension\&. \fC define('MY_CONSTANT', 1); print_r(get_defined_constants(true)); \fP The above example will output something similar to: 
+.PP
+.nf
+
+Array
+(
+[Core] => Array
+(
+[E_ERROR] => 1
+[E_WARNING] => 2
+[E_PARSE] => 4
+[E_NOTICE] => 8
+[E_CORE_ERROR] => 16
+[E_CORE_WARNING] => 32
+[E_COMPILE_ERROR] => 64
+[E_COMPILE_WARNING] => 128
+[E_USER_ERROR] => 256
+[E_USER_WARNING] => 512
+[E_USER_NOTICE] => 1024
+[E_STRICT] => 2048
+[E_RECOVERABLE_ERROR] => 4096
+[E_DEPRECATED] => 8192
+[E_USER_DEPRECATED] => 16384
+[E_ALL] => 32767
+[TRUE] => 1
+)
+[pcre] => Array
+(
+[PREG_PATTERN_ORDER] => 1
+[PREG_SET_ORDER] => 2
+[PREG_OFFSET_CAPTURE] => 256
+[PREG_SPLIT_NO_EMPTY] => 1
+[PREG_SPLIT_DELIM_CAPTURE] => 2
+[PREG_SPLIT_OFFSET_CAPTURE] => 4
+[PREG_GREP_INVERT] => 1
+)
+[user] => Array
+(
+[MY_CONSTANT] => 1
+)
+)
+.fi
+.PP
+ 
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "get_defined_functions ( $exclude_disabled = \fCFALSE\fP)"
+Returns an array of all defined functions \fBbool $exclude_disabled [optional] Whether disabled functions should be excluded from the return value\&.  array an multidimensional array containing a list of all defined functions, both built-in (internal) and user-defined\&. The internal functions will be accessible via $arr['internal'], and the user defined ones using $arr['user'] (see example below)\&.  4\&.0\&.4  5\&.0 \fP
+.SS "get_defined_vars ()"
+Returns an array of all defined variables \fBarray A multidimensional array with all the variables\&.  4\&.0\&.4  5\&.0 \fP
+.SS "get_extension_funcs ( $module_name)"
+Returns an array with the names of the functions of a module \fBstring $module_name \fP The module name\&. 
+.PP
+This parameter must be in lowercase\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array with all the functions, or false if \fImodule_name\fP is not a valid extension\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "get_included_files ()"
+Returns an array with the names of included or required files \fBstring[] an array of the names of all files\&. \fP 
+.PP
+The script originally called is considered an 'included file,' so it will be listed together with the files referenced by \fBinclude\fP and family\&. 
+.PP
+Files that are included or required multiple times only show up once in the returned array\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "get_loaded_extensions ( $zend_extensions = \fC\fBfalse\fP\fP)"
+Returns an array with the names of all modules compiled and loaded \fBbool $zend_extensions [optional] \fP Only return \fBZend\fP extensions, if not then regular extensions, like mysqli are listed\&. Defaults to false (return regular extensions)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an indexed array of all the modules names\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "get_object_vars ( $object)"
+Gets the properties of the given object \fBobject $object \fP An object instance\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an associative array of defined object accessible non-static properties for the specified \fIobject\fP in scope\&. If a property have not been assigned a value, it will be returned with a null value\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "get_parent_class ( $object = \fC\fBnull\fP\fP)"
+Retrieves the parent class name for object or class \fBmixed $object [optional] \fP The tested object or class name 
+.PP
+\fBReturns\fP
+.RS 4
+string the name of the parent class of the class of which \fIobject\fP is an instance or the name\&. 
+.RE
+.PP
+.PP
+If the object does not have a parent false will be returned\&. 
+.PP
+If called without parameter outside object, this function returns false\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "get_required_files ()"
+Alias of \fBget_included_files\fP \fBstring[]  4\&.0  5\&.0 \fP
+.SS "get_resource_type ( $handle)"
+Returns the resource type \fBresource $handle \fP The evaluated resource handle\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string If the given \fIhandle\fP is a resource, this function will return a string representing its type\&. If the type is not identified by this function, the return value will be the string Unknown\&. 
+.RE
+.PP
+.PP
+This function will return false and generate an error if \fIhandle\fP is not a resource\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "get_resources ( $type)"
+Returns active resources \fBstring $type [optional]\fP
+.PP
+If defined, this will cause \fBget_resources()\fP to only return resources of the given type\&. \fBA\fP list of resource types is available\&.
+.PP
+If the string Unknown is provided as the type, then only resources that are of an unknown type will be returned\&.
+.PP
+If omitted, all resources will be returned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array Returns an array of currently active resources, indexed by resource number\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.0 
+.RE
+.PP
+
+.SS "interface_exists ( $interface_name,  $autoload = \fC\fBtrue\fP\fP)"
+Checks if the interface has been defined \fBstring $interface_name \fP The interface name 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$autoload\fP [optional] 
+.RE
+.PP
+Whether to call &link\&.autoload; or not by default\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if the interface given by \fIinterface_name\fP has been defined, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0\&.2 
+.RE
+.PP
+
+.SS "is_a ( $object,  $class_name,  $allow_string = \fCFALSE\fP)"
+Checks if the object is of this class or has this class as one of its parents \fBobject|string $object \fP The tested object 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$class_name\fP 
+.RE
+.PP
+The class name 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$allow_string\fP [optional] 
+.RE
+.PP
+If this parameter set to \fBFALSE\fP, string class name as \fI\fBobject\fP\fP is not allowed\&. This also prevents from calling autoloader if the class doesn't exist\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if the object is of this class or has this class as one of its parents, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "is_subclass_of ( $object,  $class_name,  $allow_string = \fCTRUE\fP)"
+Checks if the object has this class as one of its parents \fBmixed $object \fP \fBA\fP class name or an object instance 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$class_name\fP 
+.RE
+.PP
+The class name 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$allow_string\fP [optional] 
+.RE
+.PP
+If this parameter set to false, string class name as object is not allowed\&. This also prevents from calling autoloader if the class doesn't exist\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool This function returns true if the object \fIobject\fP, belongs to a class which is a subclass of \fIclass_name\fP, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "method_exists ( $object,  $method_name)"
+Checks if the class method exists \fBmixed $object \fP An object instance or a class name 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$method_name\fP 
+.RE
+.PP
+The method name 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if the method given by \fImethod_name\fP has been defined for the given \fIobject\fP, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "property_exists ( $class,  $property)"
+Checks if the object or class has a property \fBmixed $class \fP The class name or an object of the class to test for 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$property\fP 
+.RE
+.PP
+The name of the property 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if the property exists, false if it doesn't exist or null in case of an error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "restore_error_handler ()"
+Restores the previous error handler function \fBbool This function always returns true\&.  4\&.0\&.4  5\&.0 \fP
+.SS "restore_exception_handler ()"
+Restores the previously defined exception handler function \fBbool This function always returns true\&.  5\&.0 \fP
+.SS "set_error_handler ( $error_handler,  $error_types = \fC\fBE_ALL\fP | \fBE_STRICT\fP\fP)"
+Sets a user-defined error handler function \fBcallable|null $error_handler \fP The user function needs to accept two parameters: the error code, and a string describing the error\&. Then there are three optional parameters that may be supplied: the filename in which the error occurred, the line number in which the error occurred, and the context in which the error occurred (an array that points to the active symbol table at the point the error occurred)\&. The function can be shown as: 
+.PP
+\fBhandler\fP \fBint\fIerrno\fP\fP \fBstring\fIerrstr\fP\fP \fBstring\fIerrfile\fP\fP \fBint\fIerrline\fP\fP \fBarray\fIerrcontext\fP\fP \fIerrno\fP The first parameter, \fIerrno\fP, contains the level of the error raised, as an integer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$error_types\fP [optional] 
+.RE
+.PP
+Can be used to mask the triggering of the \fIerror_handler\fP function just like the error_reporting ini setting controls which errors are shown\&. Without this mask set the \fIerror_handler\fP will be called for every error regardless to the setting of the error_reporting setting\&. 
+.PP
+\fBReturns\fP
+.RS 4
+callable|null a string containing the previously defined error handler (if any)\&. If the built-in error handler is used null is returned\&. null is also returned in case of an error such as an invalid callback\&. If the previous error handler was a class method, this function will return an indexed array with the class and the method name\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "set_exception_handler ( $exception_handler)"
+Sets a user-defined exception handler function \fBcallable|null $exception_handler \fP Name of the function to be called when an uncaught exception occurs\&. This function must be defined before calling \fBset_exception_handler\fP\&. This handler function needs to accept one parameter, which will be the exception object that was thrown\&. NULL may be passed instead, to reset this handler to its default state\&. 
+.PP
+\fBReturns\fP
+.RS 4
+callable|null the name of the previously defined exception handler, or null on error\&. If no previous handler was defined, null is also returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "strcasecmp ( $str1,  $str2)"
+Binary safe case-insensitive string comparison \fBstring $str1 \fP The first string 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$str2\fP 
+.RE
+.PP
+The second string 
+.PP
+\fBReturns\fP
+.RS 4
+int < 0 if \fIstr1\fP is less than \fIstr2\fP; > 0 if \fIstr1\fP is greater than \fIstr2\fP, and 0 if they are equal\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strcmp ( $str1,  $str2)"
+Binary safe string comparison \fBstring $str1 \fP The first string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$str2\fP 
+.RE
+.PP
+The second string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int < 0 if \fIstr1\fP is less than \fIstr2\fP; > 0 if \fIstr1\fP is greater than \fIstr2\fP, and 0 if they are equal\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strlen ( $string)"
+Get string length \fBstring $string \fP The string being measured for length\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The length of the \fIstring\fP on success, and 0 if the \fIstring\fP is empty\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.PP
+\fBExamples\fP
+.in +1c
+\fB/usr/local/var/www/safaricom\-sdp\-sdk/vendor/jetbrains/phpstorm\-stubs/redis/Redis\&.php\fP\&.
+.SS "strncasecmp ( $str1,  $str2,  $len)"
+Binary safe case-insensitive string comparison of the first n characters \fBstring $str1 \fP The first string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$str2\fP 
+.RE
+.PP
+The second string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$len\fP 
+.RE
+.PP
+The length of strings to be used in the comparison\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int < 0 if \fIstr1\fP is less than \fIstr2\fP; > 0 if \fIstr1\fP is greater than \fIstr2\fP, and 0 if they are equal\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strncmp ( $str1,  $str2,  $len)"
+Binary safe string comparison of the first n characters \fBstring $str1 \fP The first string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$str2\fP 
+.RE
+.PP
+The second string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$len\fP 
+.RE
+.PP
+Number of characters to use in the comparison\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int < 0 if \fIstr1\fP is less than \fIstr2\fP; > 0 if \fIstr1\fP is greater than \fIstr2\fP, and 0 if they are equal\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "trait_exists ( $traitname,  $autoload)"
+Checks if the trait exists 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$traitname\fP Name of the trait to check 
+.br
+\fI$autoload\fP [optional] Whether to autoload if not already loaded\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns TRUE if trait exists, FALSE if not, NULL in case of an error\&. \fB5\&.4 \fP
+.RE
+.PP
+
+.SS "trigger_error ( $error_msg,  $error_type = \fC\fBE_USER_NOTICE\fP\fP)"
+Generates a user-level error/warning/notice message \fBstring $error_msg \fP The designated error message for this error\&. It's limited to 1024 characters in length\&. Any additional characters beyond 1024 will be truncated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$error_type\fP [optional] 
+.RE
+.PP
+The designated error type for this error\&. It only works with the E_USER family of constants, and will default to \fBE_USER_NOTICE\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool This function returns false if wrong \fIerror_type\fP is specified, true otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "user_error ( $message,  $error_type = \fC\fBE_USER_NOTICE\fP\fP)"
+Alias of \fBtrigger_error\fP \fBstring $message  int $error_type [optional]  4\&.0  5\&.0 \fP
+.SS "zend_version ()"
+Gets the version of the current \fBZend\fP engine \fBstring the Zend Engine version number, as a string\&. \fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

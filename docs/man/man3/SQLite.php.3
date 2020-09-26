@@ -1,0 +1,1150 @@
+.TH "vendor/jetbrains/phpstorm-stubs/SQLite/SQLite.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/SQLite/SQLite.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBSQLiteDatabase\fP"
+.br
+.ti -1c
+.RI "class \fBSQLiteResult\fP"
+.br
+.ti -1c
+.RI "class \fBSQLiteUnbuffered\fP"
+.br
+.ti -1c
+.RI "class \fBSQLiteException\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsqlite_open\fP ($filename, $mode=\fBnull\fP, &$error_message=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_popen\fP ($filename, $mode=\fBnull\fP, &$error_message=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_close\fP ($dbhandle)"
+.br
+.ti -1c
+.RI "\fBsqlite_query\fP ($query, $dbhandle, $result_type=\fBnull\fP, &$error_msg=\fBSQLITE_BOTH\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_exec\fP ($dbhandle, $query, &$error_msg=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_array_query\fP ($dbhandle, $query, $result_type=\fBnull\fP, $decode_binary=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_single_query\fP ($db, $query, $first_row_only=\fBnull\fP, $decode_binary=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_fetch_array\fP ($result, $result_type=\fBSQLITE_BOTH\fP, $decode_binary=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_fetch_object\fP ($result, $class_name=\fBnull\fP, array $ctor_params=\fBnull\fP, $decode_binary=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_fetch_single\fP ($result, $decode_binary=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_fetch_string\fP ($result, $decode_binary)"
+.br
+.ti -1c
+.RI "\fBsqlite_fetch_all\fP ($result_type=\fBnull\fP, $decode_binary=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_current\fP ($result, $result_type=\fBnull\fP, $decode_binary=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_column\fP ($result, $index_or_name, $decode_binary=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_libversion\fP ()"
+.br
+.ti -1c
+.RI "\fBsqlite_libencoding\fP ()"
+.br
+.ti -1c
+.RI "\fBsqlite_changes\fP ($db)"
+.br
+.ti -1c
+.RI "\fBsqlite_last_insert_rowid\fP ($dbhandle)"
+.br
+.ti -1c
+.RI "\fBsqlite_num_rows\fP ($result)"
+.br
+.ti -1c
+.RI "\fBsqlite_num_fields\fP ($result)"
+.br
+.ti -1c
+.RI "\fBsqlite_field_name\fP ($result, $field_index)"
+.br
+.ti -1c
+.RI "\fBsqlite_seek\fP ($result, $rownum)"
+.br
+.ti -1c
+.RI "\fBsqlite_rewind\fP ($result)"
+.br
+.ti -1c
+.RI "\fBsqlite_next\fP ($result)"
+.br
+.ti -1c
+.RI "\fBsqlite_prev\fP ($result)"
+.br
+.ti -1c
+.RI "\fBsqlite_valid\fP ($result)"
+.br
+.ti -1c
+.RI "\fBsqlite_has_more\fP ($result)"
+.br
+.ti -1c
+.RI "\fBsqlite_has_prev\fP ($result)"
+.br
+.ti -1c
+.RI "\fBsqlite_escape_string\fP ($item)"
+.br
+.ti -1c
+.RI "\fBsqlite_busy_timeout\fP ($dbhandle, $milliseconds)"
+.br
+.ti -1c
+.RI "\fBsqlite_last_error\fP ($dbhandle)"
+.br
+.ti -1c
+.RI "\fBsqlite_error_string\fP ($error_code)"
+.br
+.ti -1c
+.RI "\fBsqlite_unbuffered_query\fP ($dbhandle, $query, $result_type=\fBSQLITE_BOTH\fP, &$error_msg=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_create_aggregate\fP ($dbhandle, $function_name, $step_func, $finalize_func, $num_args=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_create_function\fP ($dbhandle, $function_name, $\fBcallback\fP, $num_args=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_factory\fP ($filename, $mode=\fBnull\fP, &$error_message=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlite_udf_encode_binary\fP ($data)"
+.br
+.ti -1c
+.RI "\fBsqlite_udf_decode_binary\fP ($data)"
+.br
+.ti -1c
+.RI "\fBsqlite_fetch_column_types\fP ($dbhandle, $table_name, $result_type=\fBnull\fP)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBSQLITE_BOTH\fP 3"
+.br
+.ti -1c
+.RI "const \fBSQLITE_NUM\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQLITE_ASSOC\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQLITE_OK\fP 0"
+.br
+.ti -1c
+.RI "const \fBSQLITE_ERROR\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQLITE_INTERNAL\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQLITE_PERM\fP 3"
+.br
+.ti -1c
+.RI "const \fBSQLITE_ABORT\fP 4"
+.br
+.ti -1c
+.RI "const \fBSQLITE_BUSY\fP 5"
+.br
+.ti -1c
+.RI "const \fBSQLITE_LOCKED\fP 6"
+.br
+.ti -1c
+.RI "const \fBSQLITE_NOMEM\fP 7"
+.br
+.ti -1c
+.RI "const \fBSQLITE_READONLY\fP 8"
+.br
+.ti -1c
+.RI "const \fBSQLITE_INTERRUPT\fP 9"
+.br
+.ti -1c
+.RI "const \fBSQLITE_IOERR\fP 10"
+.br
+.ti -1c
+.RI "const \fBSQLITE_CORRUPT\fP 11"
+.br
+.ti -1c
+.RI "const \fBSQLITE_NOTFOUND\fP 12"
+.br
+.ti -1c
+.RI "const \fBSQLITE_FULL\fP 13"
+.br
+.ti -1c
+.RI "const \fBSQLITE_CANTOPEN\fP 14"
+.br
+.ti -1c
+.RI "const \fBSQLITE_PROTOCOL\fP 15"
+.br
+.ti -1c
+.RI "const \fBSQLITE_EMPTY\fP 16"
+.br
+.ti -1c
+.RI "const \fBSQLITE_SCHEMA\fP 17"
+.br
+.ti -1c
+.RI "const \fBSQLITE_TOOBIG\fP 18"
+.br
+.ti -1c
+.RI "const \fBSQLITE_CONSTRAINT\fP 19"
+.br
+.ti -1c
+.RI "const \fBSQLITE_MISMATCH\fP 20"
+.br
+.ti -1c
+.RI "const \fBSQLITE_MISUSE\fP 21"
+.br
+.ti -1c
+.RI "const \fBSQLITE_NOLFS\fP 22"
+.br
+.ti -1c
+.RI "const \fBSQLITE_AUTH\fP 23"
+.br
+.ti -1c
+.RI "const \fBSQLITE_NOTADB\fP 26"
+.br
+.ti -1c
+.RI "const \fBSQLITE_FORMAT\fP 24"
+.br
+.ti -1c
+.RI "const \fBSQLITE_ROW\fP 100"
+.br
+.ti -1c
+.RI "const \fBSQLITE_DONE\fP 101"
+.br
+.ti -1c
+.RI "const \fBSQLITE3_DETERMINISTIC\fP 2048"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "sqlite_array_query ( $dbhandle,  $query,  $result_type = \fC\fBnull\fP\fP,  $decode_binary = \fC\fBnull\fP\fP)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Execute a query against a given database and returns an array \fBstring $query \fP The query to be executed\&. 
+.PP
+Data inside the query should be properly escaped\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dbhandle\fP 
+.RE
+.PP
+The SQLite Database resource; returned from {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_open()\fP} when used procedurally\&. This parameter is not required when using the object-oriented method\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_type\fP [optional] &sqlite\&.result-type; 
+.RE
+.PP
+The optional \fIresult_type\fP parameter accepts a constant and determines how the returned array will be indexed\&. Using \fBSQLITE_ASSOC\fP will return only associative indices (named fields) while \fBSQLITE_NUM\fP will return only numerical indices (ordinal field numbers)\&. \fBSQLITE_BOTH\fP will return both associative and numerical indices\&. \fBSQLITE_BOTH\fP is the default for this function\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$decode_binary\fP [optional] &sqlite\&.decode-bin; 
+.RE
+.PP
+When the \fIdecode_binary\fP parameter is set to \fBTRUE\fP (the default), PHP will decode the binary encoding it applied to the data if it was encoded using the \fBsqlite_escape_string()\fP\&. You should normally leave this value at its default, unless you are interoperating with databases created by other sqlite capable applications\&.
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array of the entire result set; false otherwise\&. 
+.RE
+.PP
+The column names returned by \fBSQLITE_ASSOC\fP and \fBSQLITE_BOTH\fP will be case-folded according to the value of the \fBsqlite\&.assoc_case\fP configuration option\&.
+.SS "sqlite_busy_timeout ( $dbhandle,  $milliseconds)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Set busy timeout duration, or disable busy handlers \fBresource $dbhandle \fPThe SQLite Database resource; returned from {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_open()\fP} when used procedurally\&. This parameter is not required when using the object-oriented method\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$milliseconds\fP 
+.RE
+.PP
+The number of milliseconds\&. When set to 0, busy handlers will be disabled and SQLite will return immediately with a \fBSQLITE_BUSY\fP status code if another process/thread has the database locked for an update\&. 
+.PP
+PHP sets the default busy timeout to be 60 seconds when the database is opened\&. 
+.PP
+There are one thousand (1000) milliseconds in one second\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "sqlite_changes ( $db)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Returns the number of rows that were changed by the most recent SQL statement \fB$db  int the number of changed rows\&. \fP
+.SS "sqlite_close ( $dbhandle)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Closes an open SQLite database \fBresource $dbhandle \fP The SQLite Database resource; returned from sqlite_open when used procedurally\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "sqlite_column ( $result,  $index_or_name,  $decode_binary = \fC\fBnull\fP\fP)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Fetches a column from the current row of a result set \fBresource $result \fPThe SQLite result resource\&. This parameter is not required when using the object-oriented method\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$index_or_name\fP 
+.RE
+.PP
+The column index or name to fetch\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$decode_binary\fP [optional] 
+.RE
+.PP
+When the \fBdecode_binary\fP parameter is set to \fBTRUE\fP (the default), PHP will decode the binary encoding it applied to the data if it was encoded using the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_escape_string()\fP}\&. You should normally leave this value \fBat\fP its default, unless you are interoperating with databases created by other sqlite capable applications\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+mixed the column value\&. 
+.RE
+.PP
+
+.SS "sqlite_create_aggregate ( $dbhandle,  $function_name,  $step_func,  $finalize_func,  $num_args = \fC\fBnull\fP\fP)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Register an aggregating UDF for use in SQL statements \fBresource $dbhandle \fPThe SQLite Database resource; returned from {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_open()\fP} when used procedurally\&. This parameter is not required when using the object-oriented method\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$function_name\fP 
+.RE
+.PP
+The name of the function used in SQL statements\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$step_func\fP 
+.RE
+.PP
+Callback function called for each row of the result set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$finalize_func\fP 
+.RE
+.PP
+Callback function to aggregate the 'stepped' data from each row\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$num_args\fP [optional] 
+.RE
+.PP
+Hint to the SQLite parser if the callback function accepts a predetermined number of arguments\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "sqlite_create_function ( $dbhandle,  $function_name,  $callback,  $num_args = \fC\fBnull\fP\fP)"
+(PHP 5, sqlite >= 1\&.0\&.0)
+.br
+ Registers a 'regular' User Defined Function for use in SQL statements \fBresource $dbhandle \fPThe SQLite Database resource; returned from {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_open()\fP} when used procedurally\&. This parameter is not required when using the object-oriented method\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$function_name\fP 
+.RE
+.PP
+The name of the function used in SQL statements\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$callback\fP 
+.RE
+.PP
+Callback function to handle the defined SQL function\&. 
+.PP
+Callback functions should return a type understood by SQLite (i\&.e\&. scalar type)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$num_args\fP [optional] 
+.RE
+.PP
+Hint to the SQLite parser if the callback function accepts a predetermined number of arguments\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "sqlite_current ( $result,  $result_type = \fC\fBnull\fP\fP,  $decode_binary = \fC\fBnull\fP\fP)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Fetches the current row from a result set as an array \fBresource $result \fPThe SQLite result resource\&. This parameter is not required when using the object-oriented method\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_type\fP [optional] 
+.RE
+.PP
+The optional result_type parameter accepts a constant and determines how the returned array will be indexed\&. Using \fBSQLITE_ASSOC\fP will return only associative indices (named fields) while \fBSQLITE_NUM\fP will return only numerical indices (ordinal field numbers)\&. \fBSQLITE_BOTH\fP will return both associative and numerical indices\&. \fBSQLITE_BOTH\fP is the default for this function\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$decode_binary\fP [optional] 
+.RE
+.PP
+When the decode_binary parameter is set to \fBTRUE\fP (the default), PHP will decode the binary encoding it applied to the data if it was encoded using the \fBsqlite_escape_string()\fP\&. You should normally leave this value at its default, unless you are interoperating with databases created by other sqlite capable applications\&.
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array of the current row from a result set; false if the current position is beyond the final row\&. 
+.RE
+.PP
+
+.SS "sqlite_error_string ( $error_code)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Returns the textual description of an error code \fBint $error_code \fP The error code being used, which might be passed in from {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_last_error\fP}\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string a human readable description of the error_code, as a string\&. 
+.RE
+.PP
+
+.SS "sqlite_escape_string ( $item)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Escapes a string for use as a query parameter \fBstring $item \fP The string being quoted\&. 
+.PP
+If the item contains a NUL character, or if it begins with a character whose ordinal value is 0x01, PHP will apply a binary encoding scheme so that you can safely store and retrieve binary data\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string an escaped string for use in an SQLite SQL statement\&. 
+.RE
+.PP
+
+.SS "sqlite_exec ( $dbhandle,  $query, & $error_msg = \fC\fBnull\fP\fP)"
+(PHP 5, PECL sqlite >= 1\&.0\&.3)
+.br
+ Executes a result-less query against a given database \fBstring $query \fP The query to be executed\&. 
+.PP
+Data inside the query should be properly escaped\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dbhandle\fP 
+.RE
+.PP
+The SQLite Database resource; returned from {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_open()\fP} when used procedurally\&. This parameter is not required when using the object-oriented method\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$error_msg\fP [optional] 
+.RE
+.PP
+The specified variable will be filled if an error occurs\&. This is specially important because SQL syntax errors can't be fetched using the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_last_error\fP} \fBfunction\fP\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+This function will return a boolean result; true for success or false for failure\&. If you need to run a query that returns rows, see sqlite_query\&.
+.SS "sqlite_factory ( $filename,  $mode = \fC\fBnull\fP\fP, & $error_message = \fC\fBnull\fP\fP)"
+Opens a SQLite database and returns a \fBSQLiteDatabase\fP object \fBstring $filename \fP The filename of the SQLite database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+The mode of the file\&. Intended to be used to open the database in read-only mode\&. Presently, this parameter is ignored by the sqlite library\&. The default value for mode is the octal value 0666 and this is the recommended value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$error_message\fP [optional] 
+.RE
+.PP
+Passed by reference and is set to hold a descriptive error message explaining why the database could not be opened if there was an error\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBSQLiteDatabase\fP a \fBSQLiteDatabase\fP object on success,  on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "sqlite_fetch_all ( $result_type = \fC\fBnull\fP\fP,  $decode_binary = \fC\fBnull\fP\fP)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Fetches all rows from a result set as an array of arrays \fBint $result_type [optional] &sqlite\&.result-type;  bool $decode_binary [optional] &sqlite\&.decode-bin;  array \fPan array of the remaining rows in a result set\&. If called right after {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_query\fP}, it returns \fBall\fP rows\&. If called after {
+.PP
+\fBsqlite_fetch_array\fP}, it returns the rest\&. If there are no rows in \fBa\fP result set, it returns an empty array\&.
+.RE
+.PP
+.PP
+The column names returned by \fBSQLITE_ASSOC\fP and \fBSQLITE_BOTH\fP will be case-folded according to the value of the \fBsqlite\&.assoc_case\fP configuration option\&.
+.SS "sqlite_fetch_array ( $result,  $result_type = \fC\fBSQLITE_BOTH\fP\fP,  $decode_binary = \fC\fBnull\fP\fP)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Fetches the next row from a result set as an array \fBresource $result \fPThe SQLite result resource\&. This parameter is not required when using the object-oriented method\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_type\fP [optional] &sqlite\&.result-type; 
+.br
+\fI$decode_binary\fP [optional] &sqlite\&.decode-bin; 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|false 
+.RE
+.PP
+an array of the next row from a result set; false if the next position is beyond the final row\&.
+.SS "sqlite_fetch_column_types ( $dbhandle,  $table_name,  $result_type = \fC\fBnull\fP\fP)"
+Return an array of column types from a particular table \fBstring $table_name \fP The table name to query\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dbhandle\fP 
+.RE
+.PP
+The SQLite Database resource; returned from {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_open()\fP} when used procedurally\&. This parameter is not required when using the object-oriented method\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_type\fP [optional] 
+.RE
+.PP
+The optional result_type parameter accepts a constant and determines how the returned array will be indexed\&. Using \fBSQLITE_ASSOC\fP will return only associative indices (named fields) while \fBSQLITE_NUM\fP will return only numerical indices (ordinal field numbers)\&. SQLITE_BOTH will return both associative and numerical indices\&. \fBSQLITE_ASSOC\fP is the default for this function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array of column data types; false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "sqlite_fetch_object ( $result,  $class_name = \fC\fBnull\fP\fP, array $ctor_params = \fC\fBnull\fP\fP,  $decode_binary = \fC\fBnull\fP\fP)"
+Fetches the next row from a result set as an object \fBresource $result  string $class_name [optional]  array $ctor_params [optional]  bool $decode_binary [optional]  object  5\&.0 \fP
+.SS "sqlite_fetch_single ( $result,  $decode_binary = \fC\fBnull\fP\fP)"
+(PHP 5, PECL sqlite >= 1\&.0\&.1)
+.br
+ Fetches the first column of a result set as a string \fBresource $result \fPThe SQLite result resource\&. This parameter is not required when using the object-oriented method\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$decode_binary\fP [optional] 
+.RE
+.PP
+When the \fBdecode_binary\fP parameter is set to \fBTRUE\fP (the default), PHP will decode the binary encoding it applied to the data if it was encoded using the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_escape_string()\fP}\&. You should normally leave this value \fBat\fP its default, unless you are interoperating with databases created by other sqlite capable applications\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+the first column value, as a string\&.
+.SS "sqlite_fetch_string ( $result,  $decode_binary)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+  {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_fetch_single\fP} \fBresource $result \fPThe SQLite result resource\&. This parameter is not required when using the object-oriented method\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$decode_binary\fP [optional] 
+.RE
+.PP
+When the \fBdecode_binary\fP parameter is set to \fBTRUE\fP (the default), PHP will decode the binary encoding it applied to the data if it was encoded using the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_escape_string()\fP}\&. You should normally leave this value \fBat\fP its default, unless you are interoperating with databases created by other sqlite capable applications\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+the first column value, as a string\&.
+.SS "sqlite_field_name ( $result,  $field_index)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Returns the name of a particular field \fBresource $result \fPThe SQLite result resource\&. This parameter is not required when using the object-oriented method\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_index\fP 
+.RE
+.PP
+The ordinal column number in the result set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the name of a field in an SQLite result set, given the ordinal column number; false on error\&. 
+.RE
+.PP
+
+.SS "sqlite_has_more ( $result)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Finds whether or not more rows are available \fBresource $result \fP The SQLite result resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if there are more rows available from the result handle, or \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+
+.SS "sqlite_has_prev ( $result)"
+Returns whether or not a previous row is available \fBresource $result \fP The SQLite result resource\&. This parameter is not required when using the object-oriented method\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if there are more previous rows available from the result handle, or \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "sqlite_last_error ( $dbhandle)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Returns the error code of the last error for a database \fBresource $dbhandle \fPThe SQLite Database resource; returned from {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_open()\fP} when used procedurally\&. This parameter is not required when using the object-oriented method\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int an error code, or 0 if no error occurred\&. 
+.RE
+.PP
+
+.SS "sqlite_last_insert_rowid ( $dbhandle)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Returns the rowid of the most recently inserted row \fBresource $dbhandle \fPThe SQLite Database resource; returned from {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_open()\fP} when used procedurally\&. This parameter is not required when using the object-oriented method\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int the row id, as an integer\&. 
+.RE
+.PP
+
+.SS "sqlite_libencoding ()"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Returns the encoding of the linked SQLite library \fBstring the library encoding\&. \fP
+.SS "sqlite_libversion ()"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Returns the version of the linked SQLite library \fBstring the library version, as a string\&. \fP
+.SS "sqlite_next ( $result)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Seek to the next row number \fBresource $result \fP The SQLite result resource\&. This parameter is not required when using the object-oriented method\&. 
+.PP
+.RS 4
+.PP
+\fBNote\fP: 
+.PP
+.PP
+This function cannot be used with unbuffered result handles\&.
+.PP
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success, or \fBFALSE\fP if there are no more rows\&. 
+.RE
+.PP
+
+.SS "sqlite_num_fields ( $result)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Returns the number of fields in a result set \fBresource $result \fPThe SQLite result resource\&. This parameter is not required when using the object-oriented method\&.
+.PP
+\fBReturns\fP
+.RS 4
+int the number of fields, as an integer\&. 
+.RE
+.PP
+
+.SS "sqlite_num_rows ( $result)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Returns the number of rows in a buffered result set \fB$result \fP The SQLite result resource\&. This parameter is not required when using the object-oriented method\&. 
+.PP
+.RS 4
+.PP
+\fBNote\fP: 
+.PP
+.PP
+This function cannot be used with unbuffered result handles\&.
+.PP
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int the number of rows, as an integer\&. 
+.RE
+.PP
+
+.SS "sqlite_open ( $filename,  $mode = \fC\fBnull\fP\fP, & $error_message = \fC\fBnull\fP\fP)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Opens a SQLite database and create the database if it does not exist \fBstring $filename \fP The filename of the SQLite database\&. If the file does not exist, SQLite will attempt to create it\&. PHP must have write permissions to the file if data is inserted, the database schema is modified or to create the database if it does not exist\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+The mode of the file\&. Intended to be used to open the database in read-only mode\&. Presently, this parameter is ignored by the sqlite library\&. The default value for mode is the octal value 0666 and this is the recommended value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$error_message\fP [optional] 
+.RE
+.PP
+Passed by reference and is set to hold a descriptive error message explaining why the database could not be opened if there was an error\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a resource (database handle) on success, false on error\&. 
+.RE
+.PP
+
+.SS "sqlite_popen ( $filename,  $mode = \fC\fBnull\fP\fP, & $error_message = \fC\fBnull\fP\fP)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Opens a persistent handle to an SQLite database and create the database if it does not exist \fBstring $filename \fP The filename of the SQLite database\&. If the file does not exist, SQLite will attempt to create it\&. PHP must have write permissions to the file if data is inserted, the database schema is modified or to create the database if it does not exist\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+The mode of the file\&. Intended to be used to open the database in read-only mode\&. Presently, this parameter is ignored by the sqlite library\&. The default value for mode is the octal value 0666 and this is the recommended value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$error_message\fP [optional] 
+.RE
+.PP
+Passed by reference and is set to hold a descriptive error message explaining why the database could not be opened if there was an error\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false 
+.RE
+.PP
+a resource (database handle) on success, false on error\&.
+.SS "sqlite_prev ( $result)"
+Seek to the previous row number of a result set \fBresource $result \fP The SQLite result resource\&. This parameter is not required when using the object-oriented method\&. 
+.PP
+.RS 4
+.PP
+\fBNote\fP: 
+.PP
+.PP
+This function cannot be used with unbuffered result handles\&.
+.PP
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success, or false if there are no more previous rows\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "sqlite_query ( $query,  $dbhandle,  $result_type = \fC\fBnull\fP\fP, & $error_msg = \fC\fBSQLITE_BOTH\fP\fP)"
+(PHP 5 < 5\&.4\&.0, PECL sqlite >= 1\&.0\&.0)
+.br
+ Executes a query against a given database and returns a result handle there are two signatures with \fI$query\fP first and with \fI$dbhandle\fP first\&. \fBstring|resource $query \fP The query to be executed\&. 
+.PP
+Data inside the query should be properly escaped\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dbhandle\fP The SQLite Database resource; returned from \fBsqlite_open()\fP when used procedurally\&. This parameter is not required when using the object-oriented method\&. 
+.br
+\fI$result_type\fP [optional] &sqlite\&.result-type;
+.RE
+.PP
+The optional \fIresult_type\fP parameter accepts a constant and determines how the returned array will be indexed\&. Using \fBSQLITE_ASSOC\fP will return only associative indices (named fields) while \fBSQLITE_NUM\fP will return only numerical indices (ordinal field numbers)\&. \fBSQLITE_BOTH\fP will return both associative and numerical indices\&. \fBSQLITE_BOTH\fP is the default for this function\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$error_msg\fP [optional] 
+.RE
+.PP
+The specified variable will be filled if an error occurs\&. This is specially important because SQL syntax errors can't be fetched using the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_last_error\fP} \fBfunction\fP\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false This function will return a result handle or \fBFALSE\fP on failure\&. For queries that return rows, the result handle can then be used with functions such as {
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_fetch_array\fP} and {
+.PP
+\fBsqlite_seek\fP}\&. 
+.RE
+.PP
+.PP
+Regardless of the query type, this function will return false if the query failed\&. 
+.PP
+{
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_query\fP} returns \fBa\fP buffered, seekable result handle\&. This is useful for reasonably small queries where you need to be able to randomly access the rows\&. Buffered result handles will allocate memory to hold the entire result and will not \fBreturn\fP until it has been fetched\&. If you only need sequential access to the data, it is recommended that you use the much higher performance {
+.PP
+\fBsqlite_unbuffered_query\fP} instead\&. 
+.RE
+.PP
+
+.SS "sqlite_rewind ( $result)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Seek to the first row number \fBresource $result \fP The SQLite result resource\&. This parameter is not required when using the object-oriented method\&. 
+.PP
+.RS 4
+.PP
+\fBNote\fP: 
+.PP
+.PP
+This function cannot be used with unbuffered result handles\&.
+.PP
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool false if there are no rows in the result set, true otherwise\&. 
+.RE
+.PP
+
+.SS "sqlite_seek ( $result,  $rownum)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Seek to a particular row number of a buffered result set \fBresource $result \fP The SQLite result resource\&. This parameter is not required when using the object-oriented method\&. 
+.PP
+.RS 4
+.PP
+\fBNote\fP: 
+.PP
+.PP
+This function cannot be used with unbuffered result handles\&.
+.PP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$rownum\fP 
+.RE
+.PP
+The ordinal row number to seek to\&. The row number is zero-based (0 is the first row)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool false if the row does not exist, true otherwise\&. 
+.RE
+.PP
+
+.SS "sqlite_single_query ( $db,  $query,  $first_row_only = \fC\fBnull\fP\fP,  $decode_binary = \fC\fBnull\fP\fP)"
+(PHP 5, PECL sqlite >= 1\&.0\&.1)
+.br
+ Executes a query and returns either an array for one single column or the value of the first row \fBresource $db  string $query  bool $first_row_only [optional]  bool $decode_binary [optional]  array \fP
+.SS "sqlite_udf_decode_binary ( $data)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Decode binary data passed as parameters to an <acronym>UDF</acronym> \fBstring $data \fP The encoded data that will be decoded, data that was applied by either sqlite_udf_encode_binary or sqlite_escape_string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The decoded string\&. 
+.RE
+.PP
+
+.SS "sqlite_udf_encode_binary ( $data)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Encode binary data before returning it from an UDF \fBstring $data \fP The string being encoded\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The encoded string\&. 
+.RE
+.PP
+
+.SS "sqlite_unbuffered_query ( $dbhandle,  $query,  $result_type = \fC\fBSQLITE_BOTH\fP\fP, & $error_msg = \fC\fBnull\fP\fP)"
+(PHP 5, PECL sqlite >= 1\&.0\&.0)
+.br
+ Execute a query that does not prefetch and buffer all data \fBresource $dbhandle \fPThe SQLite Database resource; returned from {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsqlite_open()\fP} when used procedurally\&. This parameter is not required when using the object-oriented method\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$query\fP 
+.RE
+.PP
+The query to be executed\&. 
+.PP
+Data inside the query should be properly escaped\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_type\fP [optional] &sqlite\&.result-type; 
+.br
+\fI$error_msg\fP [optional] 
+.RE
+.PP
+The specified variable will be filled if an error occurs\&. This is specially important because SQL syntax errors can't be fetched using the sqlite_last_error function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+SQLiteUnbuffered|false a result handle or false on failure\&. 
+.RE
+.PP
+.PP
+sqlite_unbuffered_query returns a sequential forward-only result set that can only be used to read each row, one after the other\&. 
+.SS "sqlite_valid ( $result)"
+Returns whether more rows are available \fBresource $result \fP The SQLite result resource\&. This parameter is not required when using the object-oriented method\&. 
+.PP
+.RS 4
+.PP
+\fBNote\fP: 
+.PP
+.PP
+This function cannot be used with unbuffered result handles\&.
+.PP
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if there are more rows available from the result handle, or \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const SQLITE3_DETERMINISTIC 2048"
+Specifies that a function created with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBSQLite3::createFunction()\fP} is deterministic, i\&.e\&. it always returns the same result given the same inputs within \fBa\fP single SQL statement\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.1\&.4 \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const SQLITE_ABORT 4"
+Callback routine requested an abort\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_ASSOC 1"
+Columns are returned into the array having the field name as the array index\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_AUTH 23"
+Authorized failed\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_BOTH 3"
+Columns are returned into the array having both a numerical index and the field name as the array index\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_BUSY 5"
+The database file is locked\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_CANTOPEN 14"
+Unable to open the database file\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_CONSTRAINT 19"
+Abort due to constraint violation\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_CORRUPT 11"
+The database disk image is malformed\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_DONE 101"
+Internal process has finished executing\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_EMPTY 16"
+(Internal) Database table is empty\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_ERROR 1"
+SQL error or missing database\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_FORMAT 24"
+Auxiliary database format error\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_FULL 13"
+Insertion failed because database is full\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_INTERNAL 2"
+An internal logic error in SQLite\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_INTERRUPT 9"
+Operation terminated internally\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_IOERR 10"
+Disk I/O error occurred\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_LOCKED 6"
+\fBA\fP table in the database is locked\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_MISMATCH 20"
+Data type mismatch\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_MISUSE 21"
+Library used incorrectly\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_NOLFS 22"
+Uses of OS features not supported on host\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_NOMEM 7"
+Memory allocation failed\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_NOTADB 26"
+File opened that is not a database file\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_NOTFOUND 12"
+(Internal) Table or record not found\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_NUM 2"
+Columns are returned into the array having a numerical index to the fields\&. This index starts with 0, the first field in the result\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_OK 0"
+Successful result\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_PERM 3"
+Access permission denied\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_PROTOCOL 15"
+Database lock protocol error\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_READONLY 8"
+Attempt to write a readonly database\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_ROW 100"
+Internal process has another row ready\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_SCHEMA 17"
+The database schema changed\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SS "const SQLITE_TOOBIG 18"
+Too much data for one row of a table\&. \fBhttps://php\&.net/manual/en/sqlite\&.constants\&.php\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

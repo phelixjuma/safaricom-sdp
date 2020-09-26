@@ -1,0 +1,206 @@
+.TH "vendor/jetbrains/phpstorm-stubs/readline/readline.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/readline/readline.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBreadline\fP ($prompt=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBreadline_info\fP ($varname=\fBnull\fP, $newvalue=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBreadline_add_history\fP ($\fBline\fP)"
+.br
+.ti -1c
+.RI "\fBreadline_clear_history\fP ()"
+.br
+.ti -1c
+.RI "\fBreadline_list_history\fP ()"
+.br
+.ti -1c
+.RI "\fBreadline_read_history\fP ($filename=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBreadline_write_history\fP ($filename=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBreadline_completion_function\fP (callable $\fBfunction\fP)"
+.br
+.ti -1c
+.RI "\fBreadline_callback_handler_install\fP ($prompt, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBreadline_callback_read_char\fP ()"
+.br
+.ti -1c
+.RI "\fBreadline_callback_handler_remove\fP ()"
+.br
+.ti -1c
+.RI "\fBreadline_redisplay\fP ()"
+.br
+.ti -1c
+.RI "\fBreadline_on_new_line\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBREADLINE_LIB\fP 'libedit'"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "readline ( $prompt = \fC\fBnull\fP\fP)"
+Reads a line \fBstring $prompt [optional] \fP You may specify a string with which to prompt the user\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a single string from the user\&. The line returned has the ending newline removed\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "readline_add_history ( $line)"
+Adds a line to the history \fBstring $line \fP The line to be added in the history\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "readline_callback_handler_install ( $prompt, callable $callback)"
+Initializes the readline callback interface and terminal, prints the prompt and returns immediately \fBstring $prompt \fP The prompt message\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$callback\fP 
+.RE
+.PP
+The \fIcallback\fP function takes one parameter; the user input returned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "readline_callback_handler_remove ()"
+Removes a previously installed callback handler and restores terminal settings \fBbool \fBTRUE\fP if a previously installed callback handler was removed, or \fBFALSE\fP if one could not be found\&.  5\&.1 \fP
+.SS "readline_callback_read_char ()"
+Reads a character and informs the readline callback interface when a line is received \fBvoid No value is returned\&.  5\&.1 \fP
+.SS "readline_clear_history ()"
+Clears the history \fBbool \fBTRUE\fP on success or \fBFALSE\fP on failure\&.  4\&.0  5\&.0 \fP
+.SS "readline_completion_function (callable $function)"
+Registers a completion function \fBcallable $function \fP You must supply the name of an existing function which accepts a partial command line and returns an array of possible matches\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "readline_info ( $varname = \fC\fBnull\fP\fP,  $newvalue = \fC\fBnull\fP\fP)"
+Gets/sets various internal readline variables \fBstring $varname [optional] \fP \fBA\fP variable name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$newvalue\fP [optional] 
+.RE
+.PP
+If provided, this will be the new value of the setting\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed If called with no parameters, this function returns an array of values for all the setting readline uses\&. The elements will be indexed by the following values: done, end, erase_empty_line, library_version, line_buffer, mark, pending_input, point, prompt, readline_name, and terminal_name\&. 
+.RE
+.PP
+.PP
+If called with one or two parameters, the old value is returned\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "readline_list_history ()"
+Lists the history \fBarray an array of the entire command line history\&. The elements are indexed by integers starting at zero\&.  4\&.0  5\&.0 \fP
+.SS "readline_on_new_line ()"
+Inform readline that the cursor has moved to a new line \fBvoid No value is returned\&.  5\&.1 \fP
+.SS "readline_read_history ( $filename = \fC\fBnull\fP\fP)"
+Reads the history \fBstring $filename [optional] \fP Path to the filename containing the command history\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "readline_redisplay ()"
+Redraws the display \fBvoid No value is returned\&.  5\&.1 \fP
+.SS "readline_write_history ( $filename = \fC\fBnull\fP\fP)"
+Writes the history \fBstring $filename [optional] \fP Path to the saved file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const READLINE_LIB 'libedit'"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

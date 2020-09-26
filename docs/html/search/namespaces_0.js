@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kuzalab_48',['Kuzalab',['../namespace_kuzalab.html',1,'']]]
+  ['kuzalab_50',['Kuzalab',['../namespace_kuzalab.html',1,'']]]
 ];

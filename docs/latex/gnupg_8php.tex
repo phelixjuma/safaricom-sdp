@@ -1,0 +1,213 @@
+\hypertarget{gnupg_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/gnupg/gnupg.php File Reference}
+\label{gnupg_8php}\index{vendor/jetbrains/phpstorm-\/stubs/gnupg/gnupg.php@{vendor/jetbrains/phpstorm-\/stubs/gnupg/gnupg.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classgnupg}{gnupg}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{gnupg_8php_afbfd81a262bee73f0355113d11a916cf}{G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+\_\+\+M\+O\+D\+E\+\_\+\+N\+O\+R\+M\+AL}} 0
+\item 
+const \mbox{\hyperlink{gnupg_8php_ae331505dfa76a2bc0acba31507a60e3f}{G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+T\+A\+CH}} 1
+\item 
+const \mbox{\hyperlink{gnupg_8php_a87d3bf881bbc73b9d5c972c0eb6616ad}{G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+\_\+\+M\+O\+D\+E\+\_\+\+C\+L\+E\+AR}} 2
+\item 
+const \mbox{\hyperlink{gnupg_8php_a88e6ee6d35a1237d88500a30749b5f33}{G\+N\+U\+P\+G\+\_\+\+V\+A\+L\+I\+D\+I\+T\+Y\+\_\+\+U\+N\+K\+N\+O\+WN}} 0
+\item 
+const \mbox{\hyperlink{gnupg_8php_aaf4af67e4d7f7e83e7e129c8e9320ac5}{G\+N\+U\+P\+G\+\_\+\+V\+A\+L\+I\+D\+I\+T\+Y\+\_\+\+U\+N\+D\+E\+F\+I\+N\+ED}} 1
+\item 
+const \mbox{\hyperlink{gnupg_8php_afa74f3ca33d2b44c2c51499f37fdcad8}{G\+N\+U\+P\+G\+\_\+\+V\+A\+L\+I\+D\+I\+T\+Y\+\_\+\+N\+E\+V\+ER}} 2
+\item 
+const \mbox{\hyperlink{gnupg_8php_a9662046924043981319cc3f4e5b79ca5}{G\+N\+U\+P\+G\+\_\+\+V\+A\+L\+I\+D\+I\+T\+Y\+\_\+\+M\+A\+R\+G\+I\+N\+AL}} 3
+\item 
+const \mbox{\hyperlink{gnupg_8php_a82df48206e812da28b57401608e571f1}{G\+N\+U\+P\+G\+\_\+\+V\+A\+L\+I\+D\+I\+T\+Y\+\_\+\+F\+U\+LL}} 4
+\item 
+const \mbox{\hyperlink{gnupg_8php_ae406f271dcd8bc0f8d97286500f8b46a}{G\+N\+U\+P\+G\+\_\+\+V\+A\+L\+I\+D\+I\+T\+Y\+\_\+\+U\+L\+T\+I\+M\+A\+TE}} 5
+\item 
+const \mbox{\hyperlink{gnupg_8php_ab3a299fb4cea1fa893d2cfd6cb280884}{G\+N\+U\+P\+G\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+Open\+P\+GP}} 0
+\item 
+const \mbox{\hyperlink{gnupg_8php_a8169cdb08d3a1b3a5dae6724b96345c9}{G\+N\+U\+P\+G\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+C\+MS}} 1
+\item 
+const \mbox{\hyperlink{gnupg_8php_a380b818352aea1ff0652ab5e4183bccd}{G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+V\+A\+L\+ID}} 1
+\item 
+const \mbox{\hyperlink{gnupg_8php_ae775fca25e9eef02a37f7af157fc2799}{G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+G\+R\+E\+EN}} 2
+\item 
+const \mbox{\hyperlink{gnupg_8php_a0349da59c208a29e96a2adf4fdf8a9ab}{G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+R\+ED}} 4
+\item 
+const \mbox{\hyperlink{gnupg_8php_af72f65a9e768a90296b54aa7f27a8df6}{G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+V\+O\+K\+ED}} 16
+\item 
+const \mbox{\hyperlink{gnupg_8php_a8f2574098de87f52ab4168d5428c3e9c}{G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+K\+E\+Y\+\_\+\+E\+X\+P\+I\+R\+ED}} 32
+\item 
+const \mbox{\hyperlink{gnupg_8php_ae92ece4d112e106774d2e124299811fc}{G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+S\+I\+G\+\_\+\+E\+X\+P\+I\+R\+ED}} 64
+\item 
+const \mbox{\hyperlink{gnupg_8php_a7bf8a05d896acb873361fa25c557f8df}{G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+K\+E\+Y\+\_\+\+M\+I\+S\+S\+I\+NG}} 128
+\item 
+const \mbox{\hyperlink{gnupg_8php_a69d448300ba54570bed277464f93e480}{G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+C\+R\+L\+\_\+\+M\+I\+S\+S\+I\+NG}} 256
+\item 
+const \mbox{\hyperlink{gnupg_8php_a2aa2f859f343154ff8b63a9028d3baac}{G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+C\+R\+L\+\_\+\+T\+O\+O\+\_\+\+O\+LD}} 512
+\item 
+const \mbox{\hyperlink{gnupg_8php_aa981560631b596e31fa2d44c2db4dfd5}{G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+B\+A\+D\+\_\+\+P\+O\+L\+I\+CY}} 1024
+\item 
+const \mbox{\hyperlink{gnupg_8php_acded1dfd16f69d7ddb17da955f626fa6}{G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+S\+Y\+S\+\_\+\+E\+R\+R\+OR}} 2048
+\item 
+const \mbox{\hyperlink{gnupg_8php_a370e619095dd0066246960b06377d237}{G\+N\+U\+P\+G\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+A\+R\+N\+I\+NG}} 1
+\item 
+const \mbox{\hyperlink{gnupg_8php_ae2f04f1ea078d14922ef6637dc4cd8de}{G\+N\+U\+P\+G\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}} 2
+\item 
+const \mbox{\hyperlink{gnupg_8php_ac5440d5bc85b945d1a2d8cf1f66605d4}{G\+N\+U\+P\+G\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+I\+L\+E\+NT}} 3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{gnupg_8php_ae2f04f1ea078d14922ef6637dc4cd8de}\label{gnupg_8php_ae2f04f1ea078d14922ef6637dc4cd8de}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_ERROR\_EXCEPTION@{GNUPG\_ERROR\_EXCEPTION}}
+\index{GNUPG\_ERROR\_EXCEPTION@{GNUPG\_ERROR\_EXCEPTION}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_ERROR\_EXCEPTION}{GNUPG\_ERROR\_EXCEPTION}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON 2}
+
+\mbox{\Hypertarget{gnupg_8php_ac5440d5bc85b945d1a2d8cf1f66605d4}\label{gnupg_8php_ac5440d5bc85b945d1a2d8cf1f66605d4}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_ERROR\_SILENT@{GNUPG\_ERROR\_SILENT}}
+\index{GNUPG\_ERROR\_SILENT@{GNUPG\_ERROR\_SILENT}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_ERROR\_SILENT}{GNUPG\_ERROR\_SILENT}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+I\+L\+E\+NT 3}
+
+\mbox{\Hypertarget{gnupg_8php_a370e619095dd0066246960b06377d237}\label{gnupg_8php_a370e619095dd0066246960b06377d237}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_ERROR\_WARNING@{GNUPG\_ERROR\_WARNING}}
+\index{GNUPG\_ERROR\_WARNING@{GNUPG\_ERROR\_WARNING}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_ERROR\_WARNING}{GNUPG\_ERROR\_WARNING}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+A\+R\+N\+I\+NG 1}
+
+\mbox{\Hypertarget{gnupg_8php_a8169cdb08d3a1b3a5dae6724b96345c9}\label{gnupg_8php_a8169cdb08d3a1b3a5dae6724b96345c9}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_PROTOCOL\_CMS@{GNUPG\_PROTOCOL\_CMS}}
+\index{GNUPG\_PROTOCOL\_CMS@{GNUPG\_PROTOCOL\_CMS}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_PROTOCOL\_CMS}{GNUPG\_PROTOCOL\_CMS}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+C\+MS 1}
+
+\mbox{\Hypertarget{gnupg_8php_ab3a299fb4cea1fa893d2cfd6cb280884}\label{gnupg_8php_ab3a299fb4cea1fa893d2cfd6cb280884}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_PROTOCOL\_OpenPGP@{GNUPG\_PROTOCOL\_OpenPGP}}
+\index{GNUPG\_PROTOCOL\_OpenPGP@{GNUPG\_PROTOCOL\_OpenPGP}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_PROTOCOL\_OpenPGP}{GNUPG\_PROTOCOL\_OpenPGP}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+Open\+P\+GP 0}
+
+\mbox{\Hypertarget{gnupg_8php_a87d3bf881bbc73b9d5c972c0eb6616ad}\label{gnupg_8php_a87d3bf881bbc73b9d5c972c0eb6616ad}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_SIG\_MODE\_CLEAR@{GNUPG\_SIG\_MODE\_CLEAR}}
+\index{GNUPG\_SIG\_MODE\_CLEAR@{GNUPG\_SIG\_MODE\_CLEAR}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_SIG\_MODE\_CLEAR}{GNUPG\_SIG\_MODE\_CLEAR}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+\_\+\+M\+O\+D\+E\+\_\+\+C\+L\+E\+AR 2}
+
+\mbox{\Hypertarget{gnupg_8php_ae331505dfa76a2bc0acba31507a60e3f}\label{gnupg_8php_ae331505dfa76a2bc0acba31507a60e3f}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_SIG\_MODE\_DETACH@{GNUPG\_SIG\_MODE\_DETACH}}
+\index{GNUPG\_SIG\_MODE\_DETACH@{GNUPG\_SIG\_MODE\_DETACH}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_SIG\_MODE\_DETACH}{GNUPG\_SIG\_MODE\_DETACH}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+T\+A\+CH 1}
+
+\mbox{\Hypertarget{gnupg_8php_afbfd81a262bee73f0355113d11a916cf}\label{gnupg_8php_afbfd81a262bee73f0355113d11a916cf}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_SIG\_MODE\_NORMAL@{GNUPG\_SIG\_MODE\_NORMAL}}
+\index{GNUPG\_SIG\_MODE\_NORMAL@{GNUPG\_SIG\_MODE\_NORMAL}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_SIG\_MODE\_NORMAL}{GNUPG\_SIG\_MODE\_NORMAL}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+\_\+\+M\+O\+D\+E\+\_\+\+N\+O\+R\+M\+AL 0}
+
+G\+N\+U\+PG Constants \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/gnupg.\+constants.\+php}}\mbox{\Hypertarget{gnupg_8php_aa981560631b596e31fa2d44c2db4dfd5}\label{gnupg_8php_aa981560631b596e31fa2d44c2db4dfd5}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_SIGSUM\_BAD\_POLICY@{GNUPG\_SIGSUM\_BAD\_POLICY}}
+\index{GNUPG\_SIGSUM\_BAD\_POLICY@{GNUPG\_SIGSUM\_BAD\_POLICY}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_SIGSUM\_BAD\_POLICY}{GNUPG\_SIGSUM\_BAD\_POLICY}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+B\+A\+D\+\_\+\+P\+O\+L\+I\+CY 1024}
+
+\mbox{\Hypertarget{gnupg_8php_a69d448300ba54570bed277464f93e480}\label{gnupg_8php_a69d448300ba54570bed277464f93e480}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_SIGSUM\_CRL\_MISSING@{GNUPG\_SIGSUM\_CRL\_MISSING}}
+\index{GNUPG\_SIGSUM\_CRL\_MISSING@{GNUPG\_SIGSUM\_CRL\_MISSING}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_SIGSUM\_CRL\_MISSING}{GNUPG\_SIGSUM\_CRL\_MISSING}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+C\+R\+L\+\_\+\+M\+I\+S\+S\+I\+NG 256}
+
+\mbox{\Hypertarget{gnupg_8php_a2aa2f859f343154ff8b63a9028d3baac}\label{gnupg_8php_a2aa2f859f343154ff8b63a9028d3baac}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_SIGSUM\_CRL\_TOO\_OLD@{GNUPG\_SIGSUM\_CRL\_TOO\_OLD}}
+\index{GNUPG\_SIGSUM\_CRL\_TOO\_OLD@{GNUPG\_SIGSUM\_CRL\_TOO\_OLD}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_SIGSUM\_CRL\_TOO\_OLD}{GNUPG\_SIGSUM\_CRL\_TOO\_OLD}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+C\+R\+L\+\_\+\+T\+O\+O\+\_\+\+O\+LD 512}
+
+\mbox{\Hypertarget{gnupg_8php_ae775fca25e9eef02a37f7af157fc2799}\label{gnupg_8php_ae775fca25e9eef02a37f7af157fc2799}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_SIGSUM\_GREEN@{GNUPG\_SIGSUM\_GREEN}}
+\index{GNUPG\_SIGSUM\_GREEN@{GNUPG\_SIGSUM\_GREEN}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_SIGSUM\_GREEN}{GNUPG\_SIGSUM\_GREEN}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+G\+R\+E\+EN 2}
+
+\mbox{\Hypertarget{gnupg_8php_a8f2574098de87f52ab4168d5428c3e9c}\label{gnupg_8php_a8f2574098de87f52ab4168d5428c3e9c}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_SIGSUM\_KEY\_EXPIRED@{GNUPG\_SIGSUM\_KEY\_EXPIRED}}
+\index{GNUPG\_SIGSUM\_KEY\_EXPIRED@{GNUPG\_SIGSUM\_KEY\_EXPIRED}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_SIGSUM\_KEY\_EXPIRED}{GNUPG\_SIGSUM\_KEY\_EXPIRED}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+K\+E\+Y\+\_\+\+E\+X\+P\+I\+R\+ED 32}
+
+\mbox{\Hypertarget{gnupg_8php_a7bf8a05d896acb873361fa25c557f8df}\label{gnupg_8php_a7bf8a05d896acb873361fa25c557f8df}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_SIGSUM\_KEY\_MISSING@{GNUPG\_SIGSUM\_KEY\_MISSING}}
+\index{GNUPG\_SIGSUM\_KEY\_MISSING@{GNUPG\_SIGSUM\_KEY\_MISSING}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_SIGSUM\_KEY\_MISSING}{GNUPG\_SIGSUM\_KEY\_MISSING}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+K\+E\+Y\+\_\+\+M\+I\+S\+S\+I\+NG 128}
+
+\mbox{\Hypertarget{gnupg_8php_af72f65a9e768a90296b54aa7f27a8df6}\label{gnupg_8php_af72f65a9e768a90296b54aa7f27a8df6}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_SIGSUM\_KEY\_REVOKED@{GNUPG\_SIGSUM\_KEY\_REVOKED}}
+\index{GNUPG\_SIGSUM\_KEY\_REVOKED@{GNUPG\_SIGSUM\_KEY\_REVOKED}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_SIGSUM\_KEY\_REVOKED}{GNUPG\_SIGSUM\_KEY\_REVOKED}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+V\+O\+K\+ED 16}
+
+\mbox{\Hypertarget{gnupg_8php_a0349da59c208a29e96a2adf4fdf8a9ab}\label{gnupg_8php_a0349da59c208a29e96a2adf4fdf8a9ab}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_SIGSUM\_RED@{GNUPG\_SIGSUM\_RED}}
+\index{GNUPG\_SIGSUM\_RED@{GNUPG\_SIGSUM\_RED}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_SIGSUM\_RED}{GNUPG\_SIGSUM\_RED}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+R\+ED 4}
+
+\mbox{\Hypertarget{gnupg_8php_ae92ece4d112e106774d2e124299811fc}\label{gnupg_8php_ae92ece4d112e106774d2e124299811fc}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_SIGSUM\_SIG\_EXPIRED@{GNUPG\_SIGSUM\_SIG\_EXPIRED}}
+\index{GNUPG\_SIGSUM\_SIG\_EXPIRED@{GNUPG\_SIGSUM\_SIG\_EXPIRED}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_SIGSUM\_SIG\_EXPIRED}{GNUPG\_SIGSUM\_SIG\_EXPIRED}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+S\+I\+G\+\_\+\+E\+X\+P\+I\+R\+ED 64}
+
+\mbox{\Hypertarget{gnupg_8php_acded1dfd16f69d7ddb17da955f626fa6}\label{gnupg_8php_acded1dfd16f69d7ddb17da955f626fa6}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_SIGSUM\_SYS\_ERROR@{GNUPG\_SIGSUM\_SYS\_ERROR}}
+\index{GNUPG\_SIGSUM\_SYS\_ERROR@{GNUPG\_SIGSUM\_SYS\_ERROR}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_SIGSUM\_SYS\_ERROR}{GNUPG\_SIGSUM\_SYS\_ERROR}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+S\+Y\+S\+\_\+\+E\+R\+R\+OR 2048}
+
+\mbox{\Hypertarget{gnupg_8php_a380b818352aea1ff0652ab5e4183bccd}\label{gnupg_8php_a380b818352aea1ff0652ab5e4183bccd}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_SIGSUM\_VALID@{GNUPG\_SIGSUM\_VALID}}
+\index{GNUPG\_SIGSUM\_VALID@{GNUPG\_SIGSUM\_VALID}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_SIGSUM\_VALID}{GNUPG\_SIGSUM\_VALID}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+S\+I\+G\+S\+U\+M\+\_\+\+V\+A\+L\+ID 1}
+
+\mbox{\Hypertarget{gnupg_8php_a82df48206e812da28b57401608e571f1}\label{gnupg_8php_a82df48206e812da28b57401608e571f1}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_VALIDITY\_FULL@{GNUPG\_VALIDITY\_FULL}}
+\index{GNUPG\_VALIDITY\_FULL@{GNUPG\_VALIDITY\_FULL}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_VALIDITY\_FULL}{GNUPG\_VALIDITY\_FULL}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+V\+A\+L\+I\+D\+I\+T\+Y\+\_\+\+F\+U\+LL 4}
+
+\mbox{\Hypertarget{gnupg_8php_a9662046924043981319cc3f4e5b79ca5}\label{gnupg_8php_a9662046924043981319cc3f4e5b79ca5}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_VALIDITY\_MARGINAL@{GNUPG\_VALIDITY\_MARGINAL}}
+\index{GNUPG\_VALIDITY\_MARGINAL@{GNUPG\_VALIDITY\_MARGINAL}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_VALIDITY\_MARGINAL}{GNUPG\_VALIDITY\_MARGINAL}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+V\+A\+L\+I\+D\+I\+T\+Y\+\_\+\+M\+A\+R\+G\+I\+N\+AL 3}
+
+\mbox{\Hypertarget{gnupg_8php_afa74f3ca33d2b44c2c51499f37fdcad8}\label{gnupg_8php_afa74f3ca33d2b44c2c51499f37fdcad8}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_VALIDITY\_NEVER@{GNUPG\_VALIDITY\_NEVER}}
+\index{GNUPG\_VALIDITY\_NEVER@{GNUPG\_VALIDITY\_NEVER}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_VALIDITY\_NEVER}{GNUPG\_VALIDITY\_NEVER}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+V\+A\+L\+I\+D\+I\+T\+Y\+\_\+\+N\+E\+V\+ER 2}
+
+\mbox{\Hypertarget{gnupg_8php_ae406f271dcd8bc0f8d97286500f8b46a}\label{gnupg_8php_ae406f271dcd8bc0f8d97286500f8b46a}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_VALIDITY\_ULTIMATE@{GNUPG\_VALIDITY\_ULTIMATE}}
+\index{GNUPG\_VALIDITY\_ULTIMATE@{GNUPG\_VALIDITY\_ULTIMATE}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_VALIDITY\_ULTIMATE}{GNUPG\_VALIDITY\_ULTIMATE}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+V\+A\+L\+I\+D\+I\+T\+Y\+\_\+\+U\+L\+T\+I\+M\+A\+TE 5}
+
+\mbox{\Hypertarget{gnupg_8php_aaf4af67e4d7f7e83e7e129c8e9320ac5}\label{gnupg_8php_aaf4af67e4d7f7e83e7e129c8e9320ac5}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_VALIDITY\_UNDEFINED@{GNUPG\_VALIDITY\_UNDEFINED}}
+\index{GNUPG\_VALIDITY\_UNDEFINED@{GNUPG\_VALIDITY\_UNDEFINED}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_VALIDITY\_UNDEFINED}{GNUPG\_VALIDITY\_UNDEFINED}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+V\+A\+L\+I\+D\+I\+T\+Y\+\_\+\+U\+N\+D\+E\+F\+I\+N\+ED 1}
+
+\mbox{\Hypertarget{gnupg_8php_a88e6ee6d35a1237d88500a30749b5f33}\label{gnupg_8php_a88e6ee6d35a1237d88500a30749b5f33}} 
+\index{gnupg.php@{gnupg.php}!GNUPG\_VALIDITY\_UNKNOWN@{GNUPG\_VALIDITY\_UNKNOWN}}
+\index{GNUPG\_VALIDITY\_UNKNOWN@{GNUPG\_VALIDITY\_UNKNOWN}!gnupg.php@{gnupg.php}}
+\doxysubsubsection{\texorpdfstring{GNUPG\_VALIDITY\_UNKNOWN}{GNUPG\_VALIDITY\_UNKNOWN}}
+{\footnotesize\ttfamily const G\+N\+U\+P\+G\+\_\+\+V\+A\+L\+I\+D\+I\+T\+Y\+\_\+\+U\+N\+K\+N\+O\+WN 0}
+

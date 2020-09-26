@@ -1,0 +1,200 @@
+\hypertarget{xmlrpc_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/xmlrpc/xmlrpc.php File Reference}
+\label{xmlrpc_8php}\index{vendor/jetbrains/phpstorm-\/stubs/xmlrpc/xmlrpc.php@{vendor/jetbrains/phpstorm-\/stubs/xmlrpc/xmlrpc.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{xmlrpc_8php_a2513a785b13422aecfcf457b900fdffb}{xmlrpc\+\_\+encode}} (\$value)
+\item 
+\mbox{\hyperlink{xmlrpc_8php_a310616ec6e867734d88e4c287e3ac034}{xmlrpc\+\_\+decode}} (\$\mbox{\hyperlink{application__run3_8txt_ac83e0cc0928c360f4853be5655d6e6ea}{xml}}, \$encoding=\char`\"{}iso-\/8859-\/1\char`\"{})
+\item 
+\mbox{\hyperlink{xmlrpc_8php_aee33de60363f8af4bf02f7d438938d18}{xmlrpc\+\_\+decode\+\_\+request}} (\$\mbox{\hyperlink{application__run3_8txt_ac83e0cc0928c360f4853be5655d6e6ea}{xml}}, \&\$method, \$encoding=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{xmlrpc_8php_afdec8ed3760fe9b1df093dfa8f85a193}{xmlrpc\+\_\+encode\+\_\+request}} (\$method, \$params, array \$output\+\_\+options=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{xmlrpc_8php_af30e3ab69b625870614e2b90850488d7}{xmlrpc\+\_\+get\+\_\+type}} (\$value)
+\item 
+\mbox{\hyperlink{xmlrpc_8php_a183d8f88892d1fc6dbf347f9abea6314}{xmlrpc\+\_\+set\+\_\+type}} (\&\$value, \$type)
+\item 
+\mbox{\hyperlink{xmlrpc_8php_a4dc04178d57a14f5b1bea6c2dae7548e}{xmlrpc\+\_\+is\+\_\+fault}} (array \$arg)
+\item 
+\mbox{\hyperlink{xmlrpc_8php_a0834bcc4d14b4b66e009b5950cc78704}{xmlrpc\+\_\+server\+\_\+create}} ()
+\item 
+\mbox{\hyperlink{xmlrpc_8php_a0bfe77aa932f42230b9872a9f3778230}{xmlrpc\+\_\+server\+\_\+destroy}} (\$server)
+\item 
+\mbox{\hyperlink{xmlrpc_8php_a9776216341097f995e95a71c0544115f}{xmlrpc\+\_\+server\+\_\+register\+\_\+method}} (\$server, \$method\+\_\+name, \$\mbox{\hyperlink{interactive__command__1_8php_ab203aa61d1e8a9ac29ea9b66299b7d46}{function}})
+\item 
+\mbox{\hyperlink{xmlrpc_8php_a37817c95b13944108411d14a14ce0204}{xmlrpc\+\_\+server\+\_\+call\+\_\+method}} (\$server, \$\mbox{\hyperlink{application__run3_8txt_ac83e0cc0928c360f4853be5655d6e6ea}{xml}}, \$user\+\_\+data, array \$output\+\_\+options=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{xmlrpc_8php_a17ebc3b603009181e32649ebcc82ee56}{xmlrpc\+\_\+parse\+\_\+method\+\_\+descriptions}} (\$\mbox{\hyperlink{application__run3_8txt_ac83e0cc0928c360f4853be5655d6e6ea}{xml}})
+\item 
+\mbox{\hyperlink{xmlrpc_8php_ab80ed29cf8f34c55c950237dfff82ff2}{xmlrpc\+\_\+server\+\_\+add\+\_\+introspection\+\_\+data}} (\$server, array \$desc)
+\item 
+\mbox{\hyperlink{xmlrpc_8php_a3b949a1698e456094a9c0a68ef300a5a}{xmlrpc\+\_\+server\+\_\+register\+\_\+introspection\+\_\+callback}} (\$server, \$\mbox{\hyperlink{interactive__command__1_8php_ab203aa61d1e8a9ac29ea9b66299b7d46}{function}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{xmlrpc_8php_a310616ec6e867734d88e4c287e3ac034}\label{xmlrpc_8php_a310616ec6e867734d88e4c287e3ac034}} 
+\index{xmlrpc.php@{xmlrpc.php}!xmlrpc\_decode@{xmlrpc\_decode}}
+\index{xmlrpc\_decode@{xmlrpc\_decode}!xmlrpc.php@{xmlrpc.php}}
+\doxysubsubsection{\texorpdfstring{xmlrpc\_decode()}{xmlrpc\_decode()}}
+{\footnotesize\ttfamily xmlrpc\+\_\+decode (\begin{DoxyParamCaption}\item[{}]{\$xml,  }\item[{}]{\$encoding = {\ttfamily \char`\"{}iso-\/8859-\/1\char`\"{}} }\end{DoxyParamCaption})}
+
+Decodes X\+ML into native P\+HP types \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$xml }} X\+ML response returned by X\+M\+L\+R\+PC method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$encoding} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Input encoding supported by iconv. 
+
+\begin{DoxyReturn}{Returns}
+mixed either an array, or an integer, or a string, or a boolean according to the response returned by the X\+M\+L\+R\+PC method. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xmlrpc_8php_aee33de60363f8af4bf02f7d438938d18}\label{xmlrpc_8php_aee33de60363f8af4bf02f7d438938d18}} 
+\index{xmlrpc.php@{xmlrpc.php}!xmlrpc\_decode\_request@{xmlrpc\_decode\_request}}
+\index{xmlrpc\_decode\_request@{xmlrpc\_decode\_request}!xmlrpc.php@{xmlrpc.php}}
+\doxysubsubsection{\texorpdfstring{xmlrpc\_decode\_request()}{xmlrpc\_decode\_request()}}
+{\footnotesize\ttfamily xmlrpc\+\_\+decode\+\_\+request (\begin{DoxyParamCaption}\item[{}]{\$xml,  }\item[{\&}]{\$method,  }\item[{}]{\$encoding = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Decodes X\+ML into native P\+HP types \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$xml  string \$method  string \$encoding \mbox{[}optional\mbox{]}  mixed  4.\+1  5.\+0 }}\mbox{\Hypertarget{xmlrpc_8php_a2513a785b13422aecfcf457b900fdffb}\label{xmlrpc_8php_a2513a785b13422aecfcf457b900fdffb}} 
+\index{xmlrpc.php@{xmlrpc.php}!xmlrpc\_encode@{xmlrpc\_encode}}
+\index{xmlrpc\_encode@{xmlrpc\_encode}!xmlrpc.php@{xmlrpc.php}}
+\doxysubsubsection{\texorpdfstring{xmlrpc\_encode()}{xmlrpc\_encode()}}
+{\footnotesize\ttfamily xmlrpc\+\_\+encode (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Generates X\+ML for a P\+HP value \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mixed \$value  string  4.\+1  5.\+0 }}\mbox{\Hypertarget{xmlrpc_8php_afdec8ed3760fe9b1df093dfa8f85a193}\label{xmlrpc_8php_afdec8ed3760fe9b1df093dfa8f85a193}} 
+\index{xmlrpc.php@{xmlrpc.php}!xmlrpc\_encode\_request@{xmlrpc\_encode\_request}}
+\index{xmlrpc\_encode\_request@{xmlrpc\_encode\_request}!xmlrpc.php@{xmlrpc.php}}
+\doxysubsubsection{\texorpdfstring{xmlrpc\_encode\_request()}{xmlrpc\_encode\_request()}}
+{\footnotesize\ttfamily xmlrpc\+\_\+encode\+\_\+request (\begin{DoxyParamCaption}\item[{}]{\$method,  }\item[{}]{\$params,  }\item[{array}]{\$output\+\_\+options = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Generates X\+ML for a method request \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$method }} Name of the method to call. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$params} & \\
+\hline
+\end{DoxyParams}
+Method parameters compatible with method signature. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$output\+\_\+options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Array specifying output options may contain (default values are emphasised)\+: 
+
+output\+\_\+type\+: php, xml
+
+\begin{DoxyReturn}{Returns}
+string a string containing the X\+ML representation of the request. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xmlrpc_8php_af30e3ab69b625870614e2b90850488d7}\label{xmlrpc_8php_af30e3ab69b625870614e2b90850488d7}} 
+\index{xmlrpc.php@{xmlrpc.php}!xmlrpc\_get\_type@{xmlrpc\_get\_type}}
+\index{xmlrpc\_get\_type@{xmlrpc\_get\_type}!xmlrpc.php@{xmlrpc.php}}
+\doxysubsubsection{\texorpdfstring{xmlrpc\_get\_type()}{xmlrpc\_get\_type()}}
+{\footnotesize\ttfamily xmlrpc\+\_\+get\+\_\+type (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Gets xmlrpc type for a P\+HP value \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mixed \$value }} P\+HP value 
+
+\begin{DoxyReturn}{Returns}
+string the X\+M\+L-\/\+R\+PC type. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xmlrpc_8php_a4dc04178d57a14f5b1bea6c2dae7548e}\label{xmlrpc_8php_a4dc04178d57a14f5b1bea6c2dae7548e}} 
+\index{xmlrpc.php@{xmlrpc.php}!xmlrpc\_is\_fault@{xmlrpc\_is\_fault}}
+\index{xmlrpc\_is\_fault@{xmlrpc\_is\_fault}!xmlrpc.php@{xmlrpc.php}}
+\doxysubsubsection{\texorpdfstring{xmlrpc\_is\_fault()}{xmlrpc\_is\_fault()}}
+{\footnotesize\ttfamily xmlrpc\+\_\+is\+\_\+fault (\begin{DoxyParamCaption}\item[{array}]{\$arg }\end{DoxyParamCaption})}
+
+Determines if an array value represents an X\+M\+L\+R\+PC fault \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array \$arg }} Array returned by {\bfseries{xmlrpc\+\_\+decode}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} if the argument means fault, {\bfseries{F\+A\+L\+SE}} otherwise. Fault description is available in \$arg\mbox{[}\char`\"{}fault\+String\char`\"{}\mbox{]}, fault code is in \$arg\mbox{[}\char`\"{}fault\+Code\char`\"{}\mbox{]}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xmlrpc_8php_a17ebc3b603009181e32649ebcc82ee56}\label{xmlrpc_8php_a17ebc3b603009181e32649ebcc82ee56}} 
+\index{xmlrpc.php@{xmlrpc.php}!xmlrpc\_parse\_method\_descriptions@{xmlrpc\_parse\_method\_descriptions}}
+\index{xmlrpc\_parse\_method\_descriptions@{xmlrpc\_parse\_method\_descriptions}!xmlrpc.php@{xmlrpc.php}}
+\doxysubsubsection{\texorpdfstring{xmlrpc\_parse\_method\_descriptions()}{xmlrpc\_parse\_method\_descriptions()}}
+{\footnotesize\ttfamily xmlrpc\+\_\+parse\+\_\+method\+\_\+descriptions (\begin{DoxyParamCaption}\item[{}]{\$xml }\end{DoxyParamCaption})}
+
+Decodes X\+ML into a list of method descriptions \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$xml  array  4.\+1  5.\+0 }}\mbox{\Hypertarget{xmlrpc_8php_ab80ed29cf8f34c55c950237dfff82ff2}\label{xmlrpc_8php_ab80ed29cf8f34c55c950237dfff82ff2}} 
+\index{xmlrpc.php@{xmlrpc.php}!xmlrpc\_server\_add\_introspection\_data@{xmlrpc\_server\_add\_introspection\_data}}
+\index{xmlrpc\_server\_add\_introspection\_data@{xmlrpc\_server\_add\_introspection\_data}!xmlrpc.php@{xmlrpc.php}}
+\doxysubsubsection{\texorpdfstring{xmlrpc\_server\_add\_introspection\_data()}{xmlrpc\_server\_add\_introspection\_data()}}
+{\footnotesize\ttfamily xmlrpc\+\_\+server\+\_\+add\+\_\+introspection\+\_\+data (\begin{DoxyParamCaption}\item[{}]{\$server,  }\item[{array}]{\$desc }\end{DoxyParamCaption})}
+
+Adds introspection documentation \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$server  array \$desc  int  4.\+1  5.\+0 }}\mbox{\Hypertarget{xmlrpc_8php_a37817c95b13944108411d14a14ce0204}\label{xmlrpc_8php_a37817c95b13944108411d14a14ce0204}} 
+\index{xmlrpc.php@{xmlrpc.php}!xmlrpc\_server\_call\_method@{xmlrpc\_server\_call\_method}}
+\index{xmlrpc\_server\_call\_method@{xmlrpc\_server\_call\_method}!xmlrpc.php@{xmlrpc.php}}
+\doxysubsubsection{\texorpdfstring{xmlrpc\_server\_call\_method()}{xmlrpc\_server\_call\_method()}}
+{\footnotesize\ttfamily xmlrpc\+\_\+server\+\_\+call\+\_\+method (\begin{DoxyParamCaption}\item[{}]{\$server,  }\item[{}]{\$xml,  }\item[{}]{\$user\+\_\+data,  }\item[{array}]{\$output\+\_\+options = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Parses X\+ML requests and call methods \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$server  string \$xml  mixed \$user\+\_\+data  array \$output\+\_\+options \mbox{[}optional\mbox{]}  string  4.\+1  5.\+0 }}\mbox{\Hypertarget{xmlrpc_8php_a0834bcc4d14b4b66e009b5950cc78704}\label{xmlrpc_8php_a0834bcc4d14b4b66e009b5950cc78704}} 
+\index{xmlrpc.php@{xmlrpc.php}!xmlrpc\_server\_create@{xmlrpc\_server\_create}}
+\index{xmlrpc\_server\_create@{xmlrpc\_server\_create}!xmlrpc.php@{xmlrpc.php}}
+\doxysubsubsection{\texorpdfstring{xmlrpc\_server\_create()}{xmlrpc\_server\_create()}}
+{\footnotesize\ttfamily xmlrpc\+\_\+server\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates an xmlrpc server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource  4.\+1  5.\+0 }}\mbox{\Hypertarget{xmlrpc_8php_a0bfe77aa932f42230b9872a9f3778230}\label{xmlrpc_8php_a0bfe77aa932f42230b9872a9f3778230}} 
+\index{xmlrpc.php@{xmlrpc.php}!xmlrpc\_server\_destroy@{xmlrpc\_server\_destroy}}
+\index{xmlrpc\_server\_destroy@{xmlrpc\_server\_destroy}!xmlrpc.php@{xmlrpc.php}}
+\doxysubsubsection{\texorpdfstring{xmlrpc\_server\_destroy()}{xmlrpc\_server\_destroy()}}
+{\footnotesize\ttfamily xmlrpc\+\_\+server\+\_\+destroy (\begin{DoxyParamCaption}\item[{}]{\$server }\end{DoxyParamCaption})}
+
+Destroys server resources \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$server  int  4.\+1  5.\+0 }}\mbox{\Hypertarget{xmlrpc_8php_a3b949a1698e456094a9c0a68ef300a5a}\label{xmlrpc_8php_a3b949a1698e456094a9c0a68ef300a5a}} 
+\index{xmlrpc.php@{xmlrpc.php}!xmlrpc\_server\_register\_introspection\_callback@{xmlrpc\_server\_register\_introspection\_callback}}
+\index{xmlrpc\_server\_register\_introspection\_callback@{xmlrpc\_server\_register\_introspection\_callback}!xmlrpc.php@{xmlrpc.php}}
+\doxysubsubsection{\texorpdfstring{xmlrpc\_server\_register\_introspection\_callback()}{xmlrpc\_server\_register\_introspection\_callback()}}
+{\footnotesize\ttfamily xmlrpc\+\_\+server\+\_\+register\+\_\+introspection\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{\$server,  }\item[{}]{\$function }\end{DoxyParamCaption})}
+
+Register a P\+HP function to generate documentation \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$server  string \$function  bool  4.\+1  5.\+0 }}\mbox{\Hypertarget{xmlrpc_8php_a9776216341097f995e95a71c0544115f}\label{xmlrpc_8php_a9776216341097f995e95a71c0544115f}} 
+\index{xmlrpc.php@{xmlrpc.php}!xmlrpc\_server\_register\_method@{xmlrpc\_server\_register\_method}}
+\index{xmlrpc\_server\_register\_method@{xmlrpc\_server\_register\_method}!xmlrpc.php@{xmlrpc.php}}
+\doxysubsubsection{\texorpdfstring{xmlrpc\_server\_register\_method()}{xmlrpc\_server\_register\_method()}}
+{\footnotesize\ttfamily xmlrpc\+\_\+server\+\_\+register\+\_\+method (\begin{DoxyParamCaption}\item[{}]{\$server,  }\item[{}]{\$method\+\_\+name,  }\item[{}]{\$function }\end{DoxyParamCaption})}
+
+Register a P\+HP function to resource method matching method\+\_\+name \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$server  string \$method\+\_\+name  callable \$function  bool  4.\+1  5.\+0 }}\mbox{\Hypertarget{xmlrpc_8php_a183d8f88892d1fc6dbf347f9abea6314}\label{xmlrpc_8php_a183d8f88892d1fc6dbf347f9abea6314}} 
+\index{xmlrpc.php@{xmlrpc.php}!xmlrpc\_set\_type@{xmlrpc\_set\_type}}
+\index{xmlrpc\_set\_type@{xmlrpc\_set\_type}!xmlrpc.php@{xmlrpc.php}}
+\doxysubsubsection{\texorpdfstring{xmlrpc\_set\_type()}{xmlrpc\_set\_type()}}
+{\footnotesize\ttfamily xmlrpc\+\_\+set\+\_\+type (\begin{DoxyParamCaption}\item[{\&}]{\$value,  }\item[{}]{\$type }\end{DoxyParamCaption})}
+
+Sets xmlrpc type, base64 or datetime, for a P\+HP string value \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$value }} Value to set the type 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\textquotesingle{}base64\textquotesingle{} or \textquotesingle{}datetime\textquotesingle{} 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. If successful, {\itshape value} is converted to an object. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}

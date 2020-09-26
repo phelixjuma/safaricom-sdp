@@ -1,0 +1,254 @@
+.TH "vendor/jetbrains/phpstorm-stubs/regex/ereg.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/regex/ereg.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBereg\fP ($pattern, $string, array &$regs=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBereg_replace\fP ($pattern, $replacement, $string)"
+.br
+.ti -1c
+.RI "\fBeregi\fP ($pattern, $string, array &$regs=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBeregi_replace\fP ($pattern, $replacement, $string)"
+.br
+.ti -1c
+.RI "\fBsplit\fP ($pattern, $string, $limit=\-1)"
+.br
+.ti -1c
+.RI "\fBspliti\fP ($pattern, $string, $limit=\-1)"
+.br
+.ti -1c
+.RI "\fBsql_regcase\fP ($string)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "ereg ( $pattern,  $string, array & $regs = \fC\fBnull\fP\fP)"
+Regular expression match \fBdeprecated 244\&. string $pattern \fP Case sensitive regular expression\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$string\fP 
+.RE
+.PP
+The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$regs\fP [optional] 
+.RE
+.PP
+If matches are found for parenthesized substrings of \fIpattern\fP and the function is called with the third argument \fIregs\fP, the matches will be stored in the elements of the array \fIregs\fP\&. 
+.PP
+$regs[1] will contain the substring which starts at the first left parenthesis; $regs[2] will contain the substring starting at the second, and so on\&. $regs[0] will contain a copy of the complete string matched\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the length of the matched string if a match for \fIpattern\fP was found in \fIstring\fP, or \fBFALSE\fP if no matches were found or an error occurred\&. 
+.RE
+.PP
+.PP
+If the optional parameter \fIregs\fP was not passed or the length of the matched string is 0, this function returns 1\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ereg_replace ( $pattern,  $replacement,  $string)"
+Replace regular expression \fBdeprecated 245\&. string $pattern \fP \fBA\fP POSIX extended regular expression\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$replacement\fP 
+.RE
+.PP
+If \fIpattern\fP contains parenthesized substrings, \fIreplacement\fP may contain substrings of the form \\digit, which will be replaced by the text matching the digit'th parenthesized substring; \\0 will produce the entire contents of string\&. Up to nine substrings may be used\&. Parentheses may be nested, in which case they are counted by the opening parenthesis\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$string\fP 
+.RE
+.PP
+The input string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The modified string is returned\&. If no matches are found in \fIstring\fP, then it will be returned unchanged\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "eregi ( $pattern,  $string, array & $regs = \fC\fBnull\fP\fP)"
+Case insensitive regular expression match \fBdeprecated 246\&. string $pattern \fP Case insensitive regular expression\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$string\fP 
+.RE
+.PP
+The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$regs\fP [optional] 
+.RE
+.PP
+If matches are found for parenthesized substrings of \fIpattern\fP and the function is called with the third argument \fIregs\fP, the matches will be stored in the elements of the array \fIregs\fP\&. 
+.PP
+$regs[1] will contain the substring which starts at the first left parenthesis; $regs[2] will contain the substring starting at the second, and so on\&. $regs[0] will contain a copy of the complete string matched\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the length of the matched string if a match for \fIpattern\fP was found in \fIstring\fP, or \fBFALSE\fP if no matches were found or an error occurred\&. 
+.RE
+.PP
+.PP
+If the optional parameter \fIregs\fP was not passed or the length of the matched string is 0, this function returns 1\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "eregi_replace ( $pattern,  $replacement,  $string)"
+Replace regular expression case insensitive \fBdeprecated 247\&. string $pattern \fP \fBA\fP POSIX extended regular expression\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$replacement\fP 
+.RE
+.PP
+If \fIpattern\fP contains parenthesized substrings, \fIreplacement\fP may contain substrings of the form \\digit, which will be replaced by the text matching the digit'th parenthesized substring; \\0 will produce the entire contents of string\&. Up to nine substrings may be used\&. Parentheses may be nested, in which case they are counted by the opening parenthesis\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$string\fP 
+.RE
+.PP
+The input string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The modified string is returned\&. If no matches are found in \fIstring\fP, then it will be returned unchanged\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "split ( $pattern,  $string,  $limit = \fC\-1\fP)"
+Split string into array by regular expression \fBdeprecated 248\&. string $pattern \fP Case sensitive regular expression\&. 
+.PP
+If you want to split on any of the characters which are considered special by regular expressions, you'll need to escape them first\&. If you think \fBsplit\fP (or any other regex function, for that matter) is doing something weird, please read the file regex\&.7, included in the regex/ subdirectory of the PHP distribution\&. It's in manpage format, so you'll want to do something along the lines of man /usr/local/src/regex/regex\&.7 in order to read it\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$string\fP 
+.RE
+.PP
+The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$limit\fP [optional] 
+.RE
+.PP
+If \fIlimit\fP is set, the returned array will contain a maximum of \fIlimit\fP elements with the last element containing the whole rest of \fIstring\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array of strings, each of which is a substring of \fIstring\fP formed by splitting it on boundaries formed by the case-sensitive regular expression \fIpattern\fP\&. 
+.RE
+.PP
+.PP
+If there are n occurrences of \fIpattern\fP, the returned array will contain n+1 items\&. For example, if there is no occurrence of \fIpattern\fP, an array with only one element will be returned\&. Of course, this is also true if \fIstring\fP is empty\&. If an error occurs, \fBsplit\fP returns \fBFALSE\fP\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "spliti ( $pattern,  $string,  $limit = \fC\-1\fP)"
+Split string into array by regular expression case insensitive \fBdeprecated 249\&. string $pattern \fP Case insensitive regular expression\&. 
+.PP
+If you want to split on any of the characters which are considered special by regular expressions, you'll need to escape them first\&. If you think \fBspliti\fP (or any other regex function, for that matter) is doing something weird, please read the file regex\&.7, included in the regex/ subdirectory of the PHP distribution\&. It's in manpage format, so you'll want to do something along the lines of man /usr/local/src/regex/regex\&.7 in order to read it\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$string\fP 
+.RE
+.PP
+The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$limit\fP [optional] 
+.RE
+.PP
+If \fIlimit\fP is set, the returned array will contain a maximum of \fIlimit\fP elements with the last element containing the whole rest of \fIstring\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array of strings, each of which is a substring of \fIstring\fP formed by splitting it on boundaries formed by the case insensitive regular expression \fIpattern\fP\&. 
+.RE
+.PP
+.PP
+If there are n occurrences of \fIpattern\fP, the returned array will contain n+1 items\&. For example, if there is no occurrence of \fIpattern\fP, an array with only one element will be returned\&. Of course, this is also true if \fIstring\fP is empty\&. If an error occurs, \fBspliti\fP returns \fBFALSE\fP\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "sql_regcase ( $string)"
+Make regular expression for case insensitive match \fBdeprecated 250\&. string $string \fP The input string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a valid regular expression which will match \fIstring\fP, ignoring case\&. This expression is \fIstring\fP with each alphabetic character converted to a bracket expression; this bracket expression contains that character's uppercase and lowercase form\&. \fBOther\fP characters remain unchanged\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

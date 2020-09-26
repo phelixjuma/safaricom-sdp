@@ -1,0 +1,2294 @@
+.TH "vendor/jetbrains/phpstorm-stubs/sockets/sockets.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/sockets/sockets.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsocket_addrinfo_lookup\fP ($host, $service, $hints)"
+.br
+.ti -1c
+.RI "\fBsocket_addrinfo_connect\fP ($addr)"
+.br
+.ti -1c
+.RI "\fBsocket_addrinfo_bind\fP ($addr)"
+.br
+.ti -1c
+.RI "\fBsocket_addrinfo_explain\fP ($addr)"
+.br
+.ti -1c
+.RI "\fBsocket_select\fP (array &$read, array &$write, array &$except, $tv_sec, $tv_usec=0)"
+.br
+.ti -1c
+.RI "\fBsocket_create\fP ($domain, $type, $protocol)"
+.br
+.ti -1c
+.RI "\fBsocket_export_stream\fP ($socket)"
+.br
+.ti -1c
+.RI "\fBsocket_create_listen\fP ($port, $backlog=128)"
+.br
+.ti -1c
+.RI "\fBsocket_create_pair\fP ($domain, $type, $protocol, array &$fd)"
+.br
+.ti -1c
+.RI "\fBsocket_accept\fP ($socket)"
+.br
+.ti -1c
+.RI "\fBsocket_set_nonblock\fP ($socket)"
+.br
+.ti -1c
+.RI "\fBsocket_set_block\fP ($socket)"
+.br
+.ti -1c
+.RI "\fBsocket_listen\fP ($socket, $backlog=0)"
+.br
+.ti -1c
+.RI "\fBsocket_close\fP ($socket)"
+.br
+.ti -1c
+.RI "\fBsocket_write\fP ($socket, $buffer, $length=0)"
+.br
+.ti -1c
+.RI "\fBsocket_read\fP ($socket, $length, $type=\fBPHP_BINARY_READ\fP)"
+.br
+.ti -1c
+.RI "\fBsocket_getsockname\fP ($socket, &$addr, &$port=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsocket_getpeername\fP ($socket, &$address, &$port=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsocket_connect\fP ($socket, $address, $port=0)"
+.br
+.ti -1c
+.RI "\fBsocket_strerror\fP ($errno)"
+.br
+.ti -1c
+.RI "\fBsocket_bind\fP ($socket, $address, $port=0)"
+.br
+.ti -1c
+.RI "\fBsocket_recv\fP ($socket, &$buf, $len, $flags)"
+.br
+.ti -1c
+.RI "\fBsocket_send\fP ($socket, $buf, $len, $flags)"
+.br
+.ti -1c
+.RI "\fBsocket_sendmsg\fP ($socket, array $message, $flags)"
+.br
+.ti -1c
+.RI "\fBsocket_recvfrom\fP ($socket, &$buf, $len, $flags, &$name, &$port=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsocket_recvmsg\fP ($socket, $message, $flags)"
+.br
+.ti -1c
+.RI "\fBsocket_sendto\fP ($socket, $buf, $len, $flags, $addr, $port=0)"
+.br
+.ti -1c
+.RI "\fBsocket_get_option\fP ($socket, $level, $optname)"
+.br
+.ti -1c
+.RI "\fBsocket_set_option\fP ($socket, $level, $optname, $optval)"
+.br
+.ti -1c
+.RI "\fBsocket_shutdown\fP ($socket, $how=2)"
+.br
+.ti -1c
+.RI "\fBsocket_last_error\fP ($socket=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsocket_clear_error\fP ($socket=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsocket_import_stream\fP ($stream)"
+.br
+.ti -1c
+.RI "\fBsocket_cmsg_space\fP ($level, $type, $\fBn\fP=0)"
+.br
+.ti -1c
+.RI "\fBsocket_getopt\fP ($socket, $level, $optname)"
+.br
+.ti -1c
+.RI "\fBsocket_setopt\fP ($socket, $level, $optname, $optval)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBAF_UNIX\fP 1"
+.br
+.ti -1c
+.RI "const \fBAF_INET\fP 2"
+.br
+.ti -1c
+.RI "const \fBAF_INET6\fP 10"
+.br
+.ti -1c
+.RI "const \fBSOCK_STREAM\fP 1"
+.br
+.ti -1c
+.RI "const \fBSOCK_DGRAM\fP 2"
+.br
+.ti -1c
+.RI "const \fBSOCK_RAW\fP 3"
+.br
+.ti -1c
+.RI "const \fBSOCK_SEQPACKET\fP 5"
+.br
+.ti -1c
+.RI "const \fBSOCK_RDM\fP 4"
+.br
+.ti -1c
+.RI "const \fBMSG_OOB\fP 1"
+.br
+.ti -1c
+.RI "const \fBMSG_WAITALL\fP 256"
+.br
+.ti -1c
+.RI "const \fBMSG_CTRUNC\fP 8"
+.br
+.ti -1c
+.RI "const \fBMSG_TRUNC\fP 32"
+.br
+.ti -1c
+.RI "const \fBMSG_PEEK\fP 2"
+.br
+.ti -1c
+.RI "const \fBMSG_DONTROUTE\fP 4"
+.br
+.ti -1c
+.RI "const \fBMSG_EOR\fP 128"
+.br
+.ti -1c
+.RI "const \fBMSG_EOF\fP 512"
+.br
+.ti -1c
+.RI "const \fBMSG_CONFIRM\fP 2048"
+.br
+.ti -1c
+.RI "const \fBMSG_ERRQUEUE\fP 8192"
+.br
+.ti -1c
+.RI "const \fBMSG_NOSIGNAL\fP 16384"
+.br
+.ti -1c
+.RI "const \fBMSG_DONTWAIT\fP 64"
+.br
+.ti -1c
+.RI "const \fBMSG_MORE\fP 32768"
+.br
+.ti -1c
+.RI "const \fBMSG_WAITFORONE\fP 65536"
+.br
+.ti -1c
+.RI "const \fBMSG_CMSG_CLOEXEC\fP 1073741824"
+.br
+.ti -1c
+.RI "const \fBSO_DEBUG\fP 1"
+.br
+.ti -1c
+.RI "const \fBSO_REUSEADDR\fP 2"
+.br
+.ti -1c
+.RI "const \fBSO_REUSEPORT\fP 15"
+.br
+.ti -1c
+.RI "const \fBSO_KEEPALIVE\fP 9"
+.br
+.ti -1c
+.RI "const \fBSO_DONTROUTE\fP 5"
+.br
+.ti -1c
+.RI "const \fBSO_LINGER\fP 13"
+.br
+.ti -1c
+.RI "const \fBSO_BROADCAST\fP 6"
+.br
+.ti -1c
+.RI "const \fBSO_OOBINLINE\fP 10"
+.br
+.ti -1c
+.RI "const \fBSO_SNDBUF\fP 7"
+.br
+.ti -1c
+.RI "const \fBSO_RCVBUF\fP 8"
+.br
+.ti -1c
+.RI "const \fBSO_SNDLOWAT\fP 19"
+.br
+.ti -1c
+.RI "const \fBSO_RCVLOWAT\fP 18"
+.br
+.ti -1c
+.RI "const \fBSO_SNDTIMEO\fP 21"
+.br
+.ti -1c
+.RI "const \fBSO_RCVTIMEO\fP 20"
+.br
+.ti -1c
+.RI "const \fBSO_TYPE\fP 3"
+.br
+.ti -1c
+.RI "const \fBSO_ERROR\fP 4"
+.br
+.ti -1c
+.RI "const \fBSO_BINDTODEVICE\fP 25"
+.br
+.ti -1c
+.RI "const \fBSOL_SOCKET\fP 1"
+.br
+.ti -1c
+.RI "const \fBSOMAXCONN\fP 128"
+.br
+.ti -1c
+.RI "const \fBTCP_NODELAY\fP 1"
+.br
+.ti -1c
+.RI "const \fBPHP_NORMAL_READ\fP 1"
+.br
+.ti -1c
+.RI "const \fBPHP_BINARY_READ\fP 2"
+.br
+.ti -1c
+.RI "const \fBMCAST_JOIN_GROUP\fP 42"
+.br
+.ti -1c
+.RI "const \fBMCAST_LEAVE_GROUP\fP 45"
+.br
+.ti -1c
+.RI "const \fBMCAST_BLOCK_SOURCE\fP 43"
+.br
+.ti -1c
+.RI "const \fBMCAST_UNBLOCK_SOURCE\fP 44"
+.br
+.ti -1c
+.RI "const \fBMCAST_JOIN_SOURCE_GROUP\fP 46"
+.br
+.ti -1c
+.RI "const \fBMCAST_LEAVE_SOURCE_GROUP\fP 47"
+.br
+.ti -1c
+.RI "const \fBIP_MULTICAST_IF\fP 32"
+.br
+.ti -1c
+.RI "const \fBIP_MULTICAST_TTL\fP 33"
+.br
+.ti -1c
+.RI "const \fBIP_MULTICAST_LOOP\fP 34"
+.br
+.ti -1c
+.RI "const \fBIPV6_MULTICAST_IF\fP 17"
+.br
+.ti -1c
+.RI "const \fBIPV6_MULTICAST_HOPS\fP 18"
+.br
+.ti -1c
+.RI "const \fBIPV6_MULTICAST_LOOP\fP 19"
+.br
+.ti -1c
+.RI "const \fBIPV6_V6ONLY\fP 26"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EPERM\fP 1"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOENT\fP 2"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EINTR\fP 4"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EIO\fP 5"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENXIO\fP 6"
+.br
+.ti -1c
+.RI "const \fBSOCKET_E2BIG\fP 7"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EBADF\fP 9"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EAGAIN\fP 11"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOMEM\fP 12"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EACCES\fP 13"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EFAULT\fP 14"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOTBLK\fP 15"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EBUSY\fP 16"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EEXIST\fP 17"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EXDEV\fP 18"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENODEV\fP 19"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOTDIR\fP 20"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EISDIR\fP 21"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EINVAL\fP 22"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENFILE\fP 23"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EMFILE\fP 24"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOTTY\fP 25"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOSPC\fP 28"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ESPIPE\fP 29"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EROFS\fP 30"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EMLINK\fP 31"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EPIPE\fP 32"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENAMETOOLONG\fP 36"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOLCK\fP 37"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOSYS\fP 38"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOTEMPTY\fP 39"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ELOOP\fP 40"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EWOULDBLOCK\fP 11"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOMSG\fP 42"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EIDRM\fP 43"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ECHRNG\fP 44"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EL2NSYNC\fP 45"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EL3HLT\fP 46"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EL3RST\fP 47"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ELNRNG\fP 48"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EUNATCH\fP 49"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOCSI\fP 50"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EL2HLT\fP 51"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EBADE\fP 52"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EBADR\fP 53"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EXFULL\fP 54"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOANO\fP 55"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EBADRQC\fP 56"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EBADSLT\fP 57"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOSTR\fP 60"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENODATA\fP 61"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ETIME\fP 62"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOSR\fP 63"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENONET\fP 64"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EREMOTE\fP 66"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOLINK\fP 67"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EADV\fP 68"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ESRMNT\fP 69"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ECOMM\fP 70"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EPROTO\fP 71"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EMULTIHOP\fP 72"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EBADMSG\fP 74"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOTUNIQ\fP 76"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EBADFD\fP 77"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EREMCHG\fP 78"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ERESTART\fP 85"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ESTRPIPE\fP 86"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EUSERS\fP 87"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOTSOCK\fP 88"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EDESTADDRREQ\fP 89"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EMSGSIZE\fP 90"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EPROTOTYPE\fP 91"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOPROTOOPT\fP 92"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EPROTONOSUPPORT\fP 93"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ESOCKTNOSUPPORT\fP 94"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EOPNOTSUPP\fP 95"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EPFNOSUPPORT\fP 96"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EAFNOSUPPORT\fP 97"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EADDRINUSE\fP 98"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EADDRNOTAVAIL\fP 99"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENETDOWN\fP 100"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENETUNREACH\fP 101"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENETRESET\fP 102"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ECONNABORTED\fP 103"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ECONNRESET\fP 104"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOBUFS\fP 105"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EISCONN\fP 106"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOTCONN\fP 107"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ESHUTDOWN\fP 108"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ETOOMANYREFS\fP 109"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ETIMEDOUT\fP 110"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ECONNREFUSED\fP 111"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EHOSTDOWN\fP 112"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EHOSTUNREACH\fP 113"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EALREADY\fP 114"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EINPROGRESS\fP 115"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EISNAM\fP 120"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EREMOTEIO\fP 121"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EDQUOT\fP 122"
+.br
+.ti -1c
+.RI "const \fBSOCKET_ENOMEDIUM\fP 123"
+.br
+.ti -1c
+.RI "const \fBSOCKET_EMEDIUMTYPE\fP 124"
+.br
+.ti -1c
+.RI "const \fBIPPROTO_IP\fP 0"
+.br
+.ti -1c
+.RI "const \fBIPPROTO_IPV6\fP 41"
+.br
+.ti -1c
+.RI "const \fBSOL_TCP\fP 6"
+.br
+.ti -1c
+.RI "const \fBSOL_UDP\fP 17"
+.br
+.ti -1c
+.RI "const \fBIPV6_UNICAST_HOPS\fP 16"
+.br
+.ti -1c
+.RI "const \fBIPV6_RECVPKTINFO\fP 49"
+.br
+.ti -1c
+.RI "const \fBIPV6_PKTINFO\fP 50"
+.br
+.ti -1c
+.RI "const \fBIPV6_RECVHOPLIMIT\fP 51"
+.br
+.ti -1c
+.RI "const \fBIPV6_HOPLIMIT\fP 52"
+.br
+.ti -1c
+.RI "const \fBIPV6_RECVTCLASS\fP 66"
+.br
+.ti -1c
+.RI "const \fBIPV6_TCLASS\fP 67"
+.br
+.ti -1c
+.RI "const \fBSCM_RIGHTS\fP 1"
+.br
+.ti -1c
+.RI "const \fBSCM_CREDENTIALS\fP 2"
+.br
+.ti -1c
+.RI "const \fBSO_PASSCRED\fP 16"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "socket_accept ( $socket)"
+Accepts a connection on a socket \fBresource $socket \fP \fBA\fP valid socket resource created with \fBsocket_create\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a new socket resource on success, or \fBFALSE\fP on error\&. The actual error code can be retrieved by calling \fBsocket_last_error\fP\&. This error code may be passed to \fBsocket_strerror\fP to get a textual explanation of the error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_addrinfo_bind ( $addr)"
+(PHP 7 >= 7\&.2\&.0)
+.br
+ Create a Socket resource, and bind it to the provided AddrInfo resource\&.
+.br
+ The return value of this function may be used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsocket_listen()\fP}\&. \fBresource $addr \fP Resource created from {
+.PP
+\fBsocket_addrinfo_lookup()\fP} 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource Socket resource on success or NULL on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "socket_addrinfo_connect ( $addr)"
+(PHP 7 >= 7\&.2\&.0)
+.br
+ Create a Socket resource, and connect it to the provided AddrInfo resource\&.
+.br
+ The return value of this function may be used with the rest of the socket functions\&. \fBresource $addr \fP Resource created from {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsocket_addrinfo_lookup()\fP} 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource Socket resource on success or NULL on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "socket_addrinfo_explain ( $addr)"
+(PHP 7 >= 7\&.2\&.0)
+.br
+ Get information about addrinfo \fBresource $addr \fP Resource created from {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsocket_addrinfo_lookup()\fP} 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array containing the fields in the addrinfo structure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "socket_addrinfo_lookup ( $host,  $service,  $hints)"
+(PHP 7 >= 7\&.2\&.0)
+.br
+ Get array with contents of getaddrinfo about the given hostname\&. \fBstring $host \fP Hostname to search\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$service\fP [optional] 
+.RE
+.PP
+The service to connect to\&. If service is a name, it is translated to the corresponding port number\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hints\fP [optional] 
+.RE
+.PP
+Hints provide criteria for selecting addresses returned\&. You may specify the hints as defined by getadrinfo\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array of AddrInfo resource handles that can be used with the other socket_addrinfo functions\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "socket_bind ( $socket,  $address,  $port = \fC0\fP)"
+Binds a name to a socket \fBresource $socket \fP \fBA\fP valid socket resource created with \fBsocket_create\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$address\fP 
+.RE
+.PP
+If the socket is of the \fBAF_INET\fP family, the \fIaddress\fP is an IP in dotted-quad notation (e\&.g\&. 127\&.0\&.0\&.1)\&. 
+.PP
+If the socket is of the \fBAF_UNIX\fP family, the \fIaddress\fP is the path of a Unix-domain socket (e\&.g\&. /tmp/my\&.sock)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$port\fP [optional] 
+.RE
+.PP
+The \fIport\fP parameter is only used when binding an \fBAF_INET\fP socket, and designates the port on which to listen for connections\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+The error code can be retrieved with \fBsocket_last_error\fP\&. This code may be passed to \fBsocket_strerror\fP to get a textual explanation of the error\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_clear_error ( $socket = \fC\fBnull\fP\fP)"
+Clears the error on the socket or the last error code \fBresource $socket [optional] \fP \fBA\fP valid socket resource created with \fBsocket_create\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void No value is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_close ( $socket)"
+Closes a socket resource \fBresource $socket \fP \fBA\fP valid socket resource created with \fBsocket_create\fP or \fBsocket_accept\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void No value is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_cmsg_space ( $level,  $type,  $n = \fC0\fP)"
+Calculate message buffer size \fBint $level  int $type  int $n [optional]  int  5\&.5 \fP
+.SS "socket_connect ( $socket,  $address,  $port = \fC0\fP)"
+Initiates a connection on a socket \fBresource $socket  string $address \fP The \fIaddress\fP parameter is either an IPv4 address in dotted-quad notation (e\&.g\&. 127\&.0\&.0\&.1) if \fIsocket\fP is \fBAF_INET\fP, a valid IPv6 address (e\&.g\&. ::1) if IPv6 support is enabled and \fIsocket\fP is \fBAF_INET6\fP or the pathname of a Unix domain socket, if the socket family is \fBAF_UNIX\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$port\fP [optional] 
+.RE
+.PP
+The \fIport\fP parameter is only used and is mandatory when connecting to an \fBAF_INET\fP or an \fBAF_INET6\fP socket, and designates the port on the remote host to which a connection should be made\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. The error code can be retrieved with \fBsocket_last_error\fP\&. This code may be passed to \fBsocket_strerror\fP to get a textual explanation of the error\&. 
+.RE
+.PP
+.PP
+If the socket is non-blocking then this function returns \fBFALSE\fP with an error Operation now in progress\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_create ( $domain,  $type,  $protocol)"
+Create a socket (endpoint for communication) \fBint $domain \fP The \fIdomain\fP parameter specifies the protocol family to be used by the socket\&. 
+.PP
+address/protocol families 
+.PP
+Domain 
+.PP
+Description  
+.PP
+\fBAF_INET\fP 
+.PP
+IPv4 Internet based protocols\&. TCP and UDP are common protocols of this protocol family\&.   
+.PP
+\fBAF_INET6\fP 
+.PP
+IPv6 Internet based protocols\&. TCP and UDP are common protocols of this protocol family\&.   
+.PP
+\fBAF_UNIX\fP 
+.PP
+Local communication protocol family\&. High efficiency and low overhead make it a great form of IPC (Interprocess Communication)\&.   
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP 
+.RE
+.PP
+The \fItype\fP parameter selects the type of communication to be used by the socket\&. 
+.PP
+socket types 
+.PP
+Type 
+.PP
+Description  
+.PP
+\fBSOCK_STREAM\fP 
+.PP
+Provides sequenced, reliable, full-duplex, connection-based byte streams\&. An out-of-band data transmission mechanism may be supported\&. The TCP protocol is based on this socket type\&.   
+.PP
+\fBSOCK_DGRAM\fP 
+.PP
+Supports datagrams (connectionless, unreliable messages of a fixed maximum length)\&. The UDP protocol is based on this socket type\&.   
+.PP
+\fBSOCK_SEQPACKET\fP 
+.PP
+Provides a sequenced, reliable, two-way connection-based data transmission path for datagrams of fixed maximum length; a consumer is required to read an entire packet with each read call\&.   
+.PP
+\fBSOCK_RAW\fP 
+.PP
+Provides raw network protocol access\&. This special type of socket can be used to manually construct any type of protocol\&. \fBA\fP common use for this socket type is to perform ICMP requests (like ping)\&.   
+.PP
+\fBSOCK_RDM\fP 
+.PP
+Provides a reliable datagram layer that does not guarantee ordering\&. This is most likely not implemented on your operating system\&.   
+.PP
+\fBParameters\fP
+.RS 4
+\fI$protocol\fP 
+.RE
+.PP
+The \fIprotocol\fP parameter sets the specific protocol within the specified \fIdomain\fP to be used when communicating on the returned socket\&. The proper value can be retrieved by name by using \fBgetprotobyname\fP\&. If the desired protocol is TCP, or UDP the corresponding constants \fBSOL_TCP\fP, and \fBSOL_UDP\fP can also be used\&. 
+.PP
+protocols 
+.PP
+Name 
+.PP
+Description  
+.PP
+icmp 
+.PP
+The Internet Control Message Protocol is used primarily by gateways and hosts to report errors in datagram communication\&. The 'ping' command (present in most modern operating systems) is an example application of ICMP\&.   
+.PP
+udp 
+.PP
+The User Datagram Protocol is a connectionless, unreliable, protocol with fixed record lengths\&. Due to these aspects, UDP requires a minimum amount of protocol overhead\&.   
+.PP
+tcp 
+.PP
+The Transmission Control Protocol is a reliable, connection based, stream oriented, full duplex protocol\&. TCP guarantees that all data packets will be received in the order in which they were sent\&. If any packet is somehow lost during communication, TCP will automatically retransmit the packet until the destination host acknowledges that packet\&. For reliability and performance reasons, the TCP implementation itself decides the appropriate octet boundaries of the underlying datagram communication layer\&. Therefore, TCP applications must allow for the possibility of partial record transmission\&.   
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBsocket_create\fP returns a socket resource on success, or \fBFALSE\fP on error\&. The actual error code can be retrieved by calling \fBsocket_last_error\fP\&. This error code may be passed to \fBsocket_strerror\fP to get a textual explanation of the error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_create_listen ( $port,  $backlog = \fC128\fP)"
+Opens a socket on port to accept connections \fBint $port \fP The port on which to listen on all interfaces\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$backlog\fP [optional] 
+.RE
+.PP
+The \fIbacklog\fP parameter defines the maximum length the queue of pending connections may grow to\&. \fBSOMAXCONN\fP may be passed as \fIbacklog\fP parameter, see \fBsocket_listen\fP for more information\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBsocket_create_listen\fP returns a new socket resource on success or \fBFALSE\fP on error\&. The error code can be retrieved with \fBsocket_last_error\fP\&. This code may be passed to \fBsocket_strerror\fP to get a textual explanation of the error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_create_pair ( $domain,  $type,  $protocol, array & $fd)"
+Creates a pair of indistinguishable sockets and stores them in an array \fBint $domain \fP The \fIdomain\fP parameter specifies the protocol family to be used by the socket\&. See \fBsocket_create\fP for the full list\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP 
+.RE
+.PP
+The \fItype\fP parameter selects the type of communication to be used by the socket\&. See \fBsocket_create\fP for the full list\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$protocol\fP 
+.RE
+.PP
+The \fIprotocol\fP parameter sets the specific protocol within the specified \fIdomain\fP to be used when communicating on the returned socket\&. The proper value can be retrieved by name by using \fBgetprotobyname\fP\&. If the desired protocol is TCP, or UDP the corresponding constants \fBSOL_TCP\fP, and \fBSOL_UDP\fP can also be used\&. 
+.PP
+See \fBsocket_create\fP for the full list of supported protocols\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fd\fP 
+.RE
+.PP
+Reference to an array in which the two socket resources will be inserted\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_export_stream ( $socket)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$socket\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false 
+.RE
+.PP
+
+.SS "socket_get_option ( $socket,  $level,  $optname)"
+Gets socket options for the socket \fBresource $socket \fP \fBA\fP valid socket resource created with \fBsocket_create\fP or \fBsocket_accept\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$level\fP 
+.RE
+.PP
+The \fIlevel\fP parameter specifies the protocol level at which the option resides\&. For example, to retrieve options at the socket level, a \fIlevel\fP parameter of \fBSOL_SOCKET\fP would be used\&. \fBOther\fP levels, such as \fBTCP\fP, can be used by specifying the protocol number of that level\&. Protocol numbers can be found by using the \fBgetprotobyname\fP function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$optname\fP Socket Options 
+.RE
+.PP
+.PP
+Option 
+.PP
+Description 
+.PP
+Type  
+.PP
+\fBSO_DEBUG\fP 
+.PP
+Reports whether debugging information is being recorded\&.  
+.PP
+int   
+.PP
+\fBSO_BROADCAST\fP 
+.PP
+Reports whether transmission of broadcast messages is supported\&.  
+.PP
+int   
+.PP
+\fBSO_REUSEADDR\fP 
+.PP
+Reports whether local addresses can be reused\&.  
+.PP
+int   
+.PP
+\fBSO_KEEPALIVE\fP 
+.PP
+Reports whether connections are kept active with periodic transmission of messages\&. If the connected socket fails to respond to these messages, the connection is broken and processes writing to that socket are notified with a SIGPIPE signal\&.  
+.PP
+int   
+.PP
+\fBSO_LINGER\fP 
+.PP
+Reports whether the \fIsocket\fP lingers on \fBsocket_close\fP if data is present\&. By default, when the socket is closed, it attempts to send all unsent data\&. In the case of a connection-oriented socket, \fBsocket_close\fP will wait for its peer to acknowledge the data\&. 
+.PP
+If l_onoff is non-zero and l_linger is zero, all the unsent data will be discarded and RST (reset) is sent to the peer in the case of a connection-oriented socket\&. 
+.PP
+On the other hand, if l_onoff is non-zero and l_linger is non-zero, \fBsocket_close\fP will block until all the data is sent or the time specified in l_linger elapses\&. If the socket is non-blocking, \fBsocket_close\fP will fail and return an error\&. 
+.PP
+array\&. The array will contain two keys: l_onoff and l_linger\&.   
+.PP
+\fBSO_OOBINLINE\fP 
+.PP
+Reports whether the \fIsocket\fP leaves out-of-band data inline\&.  
+.PP
+int   
+.PP
+\fBSO_SNDBUF\fP 
+.PP
+Reports the size of the send buffer\&.  
+.PP
+int   
+.PP
+\fBSO_RCVBUF\fP 
+.PP
+Reports the size of the receive buffer\&.  
+.PP
+int   
+.PP
+\fBSO_ERROR\fP 
+.PP
+Reports information about error status and clears it\&.  
+.PP
+int (cannot be set by \fBsocket_set_option\fP)   
+.PP
+\fBSO_TYPE\fP 
+.PP
+Reports the \fIsocket\fP type (e\&.g\&. \fBSOCK_STREAM\fP)\&.  
+.PP
+int (cannot be set by \fBsocket_set_option\fP)   
+.PP
+\fBSO_DONTROUTE\fP 
+.PP
+Reports whether outgoing messages bypass the standard routing facilities\&.  
+.PP
+int   
+.PP
+\fBSO_RCVLOWAT\fP 
+.PP
+Reports the minimum number of bytes to process for \fIsocket\fP input operations\&.  
+.PP
+int   
+.PP
+\fBSO_RCVTIMEO\fP 
+.PP
+Reports the timeout value for input operations\&.  
+.PP
+array\&. The array will contain two keys: sec which is the seconds part on the timeout value and usec which is the microsecond part of the timeout value\&.   
+.PP
+\fBSO_SNDTIMEO\fP 
+.PP
+Reports the timeout value specifying the amount of time that an output function blocks because flow control prevents data from being sent\&.  
+.PP
+array\&. The array will contain two keys: sec which is the seconds part on the timeout value and usec which is the microsecond part of the timeout value\&.   
+.PP
+\fBSO_SNDLOWAT\fP 
+.PP
+Reports the minimum number of bytes to process for \fIsocket\fP output operations\&.  
+.PP
+int   
+.PP
+\fBTCP_NODELAY\fP 
+.PP
+Reports whether the Nagle TCP algorithm is disabled\&.  
+.PP
+int   
+.PP
+\fBMCAST_JOIN_GROUP\fP 
+.PP
+Joins a multicast group\&. (added in PHP 5\&.4)  
+.PP
+array with keys 'group', specifying a string with an IPv4 or IPv6 multicast address and 'interface', specifying either an interface number (type int) or a string with the interface name, like 'eth0'\&. 0 can be specified to indicate the interface should be selected using routing rules\&. (can only be used in \fBsocket_set_option\fP)   
+.PP
+\fBMCAST_LEAVE_GROUP\fP 
+.PP
+Leaves a multicast group\&. (added in PHP 5\&.4)  
+.PP
+array\&. See \fBMCAST_JOIN_GROUP\fP for more information\&. (can only be used in \fBsocket_set_option\fP)   
+.PP
+\fBMCAST_BLOCK_SOURCE\fP 
+.PP
+Blocks packets arriving from a specific source to a specific multicast group, which must have been previously joined\&. (added in PHP 5\&.4)  
+.PP
+array with the same keys as \fBMCAST_JOIN_GROUP\fP, plus one extra key, source, which maps to a string specifying an IPv4 or IPv6 address of the source to be blocked\&. (can only be used in \fBsocket_set_option\fP)   
+.PP
+\fBMCAST_UNBLOCK_SOURCE\fP 
+.PP
+Unblocks (start receiving again) packets arriving from a specific source address to a specific multicast group, which must have been previously joined\&. (added in PHP 5\&.4)  
+.PP
+array with the same format as \fBMCAST_BLOCK_SOURCE\fP\&. (can only be used in \fBsocket_set_option\fP)   
+.PP
+\fBMCAST_JOIN_SOURCE_GROUP\fP 
+.PP
+Receive packets destined to a specific multicast group whose source address matches a specific value\&. (added in PHP 5\&.4)  
+.PP
+array with the same format as \fBMCAST_BLOCK_SOURCE\fP\&. (can only be used in \fBsocket_set_option\fP)   
+.PP
+\fBMCAST_LEAVE_SOURCE_GROUP\fP 
+.PP
+Stop receiving packets destined to a specific multicast group whose soure address matches a specific value\&. (added in PHP 5\&.4)  
+.PP
+array with the same format as \fBMCAST_BLOCK_SOURCE\fP\&. (can only be used in \fBsocket_set_option\fP)   
+.PP
+\fBIP_MULTICAST_IF\fP 
+.PP
+The outgoing interface for IPv4 multicast packets\&. (added in PHP 5\&.4)  
+.PP
+Either int specifying the interface number or a string with an interface name, like eth0\&. The value 0 can be used to indicate the routing table is to used in the interface selection\&. The function \fBsocket_get_option\fP returns an interface index\&. Note that, unlike the C API, this option does NOT take an IP address\&. This eliminates the interface difference between \fBIP_MULTICAST_IF\fP and \fBIPV6_MULTICAST_IF\fP\&.   
+.PP
+\fBIPV6_MULTICAST_IF\fP 
+.PP
+The outgoing interface for IPv6 multicast packets\&. (added in PHP 5\&.4)  
+.PP
+The same as \fBIP_MULTICAST_IF\fP\&.   
+.PP
+\fBIP_MULTICAST_LOOP\fP 
+.PP
+The multicast loopback policy for IPv4 packets, which determines whether multicast packets sent by this socket also reach receivers in the same host that have joined the same multicast group on the outgoing interface used by this socket\&. This is the case by default\&. (added in PHP 5\&.4)  
+.PP
+int (either 0 or 1)\&. For \fBsocket_set_option\fP any value will be accepted and will be converted to a boolean following the usual PHP rules\&.   
+.PP
+\fBIPV6_MULTICAST_LOOP\fP 
+.PP
+Analogous to \fBIP_MULTICAST_LOOP\fP, but for IPv6\&. (added in PHP 5\&.4)  
+.PP
+int\&. See \fBIP_MULTICAST_LOOP\fP\&.   
+.PP
+\fBIP_MULTICAST_TTL\fP 
+.PP
+The time-to-live of outgoing IPv4 multicast packets\&. This should be a value between 0 (don't leave the interface) and 255\&. The default value is 1 (only the local network is reached)\&. (added in PHP 5\&.4)  
+.PP
+int between 0 and 255\&.   
+.PP
+\fBIPV6_MULTICAST_HOPS\fP 
+.PP
+Analogous to \fBIP_MULTICAST_TTL\fP, but for IPv6 packets\&. The value -1 is also accepted, meaning the route default should be used\&. (added in PHP 5\&.4)  
+.PP
+int between -1 and 255\&.   
+.PP
+\fBReturns\fP
+.RS 4
+mixed|false the value of the given option, or \fBFALSE\fP on errors\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_getopt ( $socket,  $level,  $optname)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$socket\fP 
+.br
+\fI$level\fP 
+.br
+\fI$optname\fP 
+.RE
+.PP
+
+.SS "socket_getpeername ( $socket, & $address, & $port = \fC\fBnull\fP\fP)"
+Queries the remote side of the given socket which may either result in host/port or in a Unix filesystem path, dependent on its type \fBresource $socket \fP \fBA\fP valid socket resource created with \fBsocket_create\fP or \fBsocket_accept\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$address\fP 
+.RE
+.PP
+If the given socket is of type \fBAF_INET\fP or \fBAF_INET6\fP, \fBsocket_getpeername\fP will return the peers (remote) IP address in appropriate notation (e\&.g\&. 127\&.0\&.0\&.1 or fe80::1) in the \fIaddress\fP parameter and, if the optional \fIport\fP parameter is present, also the associated port\&. 
+.PP
+If the given socket is of type \fBAF_UNIX\fP, \fBsocket_getpeername\fP will return the Unix filesystem path (e\&.g\&. /var/run/daemon\&.sock) in the \fIaddress\fP parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$port\fP [optional] 
+.RE
+.PP
+If given, this will hold the port associated to \fIaddress\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. \fBsocket_getpeername\fP may also return \fBFALSE\fP if the socket type is not any of \fBAF_INET\fP, \fBAF_INET6\fP, or \fBAF_UNIX\fP, in which case the last socket error code is not updated\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_getsockname ( $socket, & $addr, & $port = \fC\fBnull\fP\fP)"
+Queries the local side of the given socket which may either result in host/port or in a Unix filesystem path, dependent on its type \fBresource $socket \fP \fBA\fP valid socket resource created with \fBsocket_create\fP or \fBsocket_accept\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$addr\fP 
+.RE
+.PP
+If the given socket is of type \fBAF_INET\fP or \fBAF_INET6\fP, \fBsocket_getsockname\fP will return the local IP address in appropriate notation (e\&.g\&. 127\&.0\&.0\&.1 or fe80::1) in the \fIaddress\fP parameter and, if the optional \fIport\fP parameter is present, also the associated port\&. 
+.PP
+If the given socket is of type \fBAF_UNIX\fP, \fBsocket_getsockname\fP will return the Unix filesystem path (e\&.g\&. /var/run/daemon\&.sock) in the \fIaddress\fP parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$port\fP [optional] 
+.RE
+.PP
+If provided, this will hold the associated port\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. \fBsocket_getsockname\fP may also return \fBFALSE\fP if the socket type is not any of \fBAF_INET\fP, \fBAF_INET6\fP, or \fBAF_UNIX\fP, in which case the last socket error code is not updated\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_import_stream ( $stream)"
+Import a stream \fBresource $stream \fP The stream resource to import\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false|null \fBFALSE\fP or \fBNULL\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 
+.RE
+.PP
+
+.SS "socket_last_error ( $socket = \fC\fBnull\fP\fP)"
+Returns the last error on the socket \fBresource $socket [optional] \fP \fBA\fP valid socket resource created with \fBsocket_create\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int This function returns a socket error code\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_listen ( $socket,  $backlog = \fC0\fP)"
+Listens for a connection on a socket \fBresource $socket \fP \fBA\fP valid socket resource created with \fBsocket_create\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$backlog\fP [optional] 
+.RE
+.PP
+\fBA\fP maximum of \fIbacklog\fP incoming connections will be queued for processing\&. If a connection request arrives with the queue full the client may receive an error with an indication of ECONNREFUSED, or, if the underlying protocol supports retransmission, the request may be ignored so that retries may succeed\&. 
+.PP
+The maximum number passed to the \fIbacklog\fP parameter highly depends on the underlying platform\&. On Linux, it is silently truncated to \fBSOMAXCONN\fP\&. On win32, if passed \fBSOMAXCONN\fP, the underlying service provider responsible for the socket will set the backlog to a maximum reasonable value\&. There is no standard provision to find out the actual backlog value on this platform\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. The error code can be retrieved with \fBsocket_last_error\fP\&. This code may be passed to \fBsocket_strerror\fP to get a textual explanation of the error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_read ( $socket,  $length,  $type = \fC\fBPHP_BINARY_READ\fP\fP)"
+Reads a maximum of length bytes from a socket \fBresource $socket \fP \fBA\fP valid socket resource created with \fBsocket_create\fP or \fBsocket_accept\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP 
+.RE
+.PP
+The maximum number of bytes read is specified by the \fIlength\fP parameter\&. Otherwise you can use \fB&#92;r\fP, \fB&#92;n\fP, or \fB&#92;0\fP to end reading (depending on the \fItype\fP parameter, see below)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP [optional] 
+.RE
+.PP
+Optional \fItype\fP parameter is a named constant: \fBPHP_BINARY_READ\fP (Default) - use the system recv() function\&. Safe for reading binary data\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false \fBsocket_read\fP returns the data as a string on success, or \fBFALSE\fP on error (including if the remote host has closed the connection)\&. The error code can be retrieved with \fBsocket_last_error\fP\&. This code may be passed to \fBsocket_strerror\fP to get a textual representation of the error\&. 
+.RE
+.PP
+.PP
+\fBsocket_read\fP returns a zero length string ('') when there is no more data to read\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_recv ( $socket, & $buf,  $len,  $flags)"
+Receives data from a connected socket \fBresource $socket \fP The \fIsocket\fP must be a socket resource previously created by \fBsocket_create()\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$buf\fP 
+.RE
+.PP
+The data received will be fetched to the variable specified with \fIbuf\fP\&. If an error occurs, if the connection is reset, or if no data is available, \fIbuf\fP will be set to \fBNULL\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$len\fP 
+.RE
+.PP
+Up to \fIlen\fP bytes will be fetched from remote host\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP 
+.RE
+.PP
+The value of \fIflags\fP can be any combination of the following flags, joined with the binary OR (|) operator\&. 
+.PP
+values for \fIflags\fP 
+.PP
+Flag 
+.PP
+Description  
+.PP
+\fBMSG_OOB\fP 
+.PP
+Process out-of-band data\&.   
+.PP
+\fBMSG_PEEK\fP 
+.PP
+Receive data from the beginning of the receive queue without removing it from the queue\&.   
+.PP
+\fBMSG_WAITALL\fP 
+.PP
+Block until at least \fIlen\fP are received\&. However, if a signal is caught or the remote host disconnects, the function may return less data\&.   
+.PP
+\fBMSG_DONTWAIT\fP 
+.PP
+With this flag set, the function returns even if it would normally have blocked\&.   
+.PP
+\fBReturns\fP
+.RS 4
+int|false \fBsocket_recv\fP returns the number of bytes received, or \fBFALSE\fP if there was an error\&. The actual error code can be retrieved by calling \fBsocket_last_error\fP\&. This error code may be passed to \fBsocket_strerror\fP to get a textual explanation of the error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_recvfrom ( $socket, & $buf,  $len,  $flags, & $name, & $port = \fC\fBnull\fP\fP)"
+Receives data from a socket whether or not it is connection-oriented \fBresource $socket \fP The \fIsocket\fP must be a socket resource previously created by \fBsocket_create()\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$buf\fP 
+.RE
+.PP
+The data received will be fetched to the variable specified with \fIbuf\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$len\fP 
+.RE
+.PP
+Up to \fIlen\fP bytes will be fetched from remote host\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP 
+.RE
+.PP
+The value of \fIflags\fP can be any combination of the following flags, joined with the binary OR (|) operator\&. 
+.PP
+values for \fIflags\fP 
+.PP
+Flag 
+.PP
+Description  
+.PP
+\fBMSG_OOB\fP 
+.PP
+Process out-of-band data\&.   
+.PP
+\fBMSG_PEEK\fP 
+.PP
+Receive data from the beginning of the receive queue without removing it from the queue\&.   
+.PP
+\fBMSG_WAITALL\fP 
+.PP
+Block until at least \fIlen\fP are received\&. However, if a signal is caught or the remote host disconnects, the function may return less data\&.   
+.PP
+\fBMSG_DONTWAIT\fP 
+.PP
+With this flag set, the function returns even if it would normally have blocked\&.   
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+If the socket is of the type \fBAF_UNIX\fP type, \fIname\fP is the path to the file\&. Else, for unconnected sockets, \fIname\fP is the IP address of, the remote host, or \fBNULL\fP if the socket is connection-oriented\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$port\fP [optional] 
+.RE
+.PP
+This argument only applies to \fBAF_INET\fP and \fBAF_INET6\fP sockets, and specifies the remote port from which the data is received\&. If the socket is connection-oriented, \fIport\fP will be \fBNULL\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false \fBsocket_recvfrom\fP returns the number of bytes received, or \fBFALSE\fP if there was an error\&. The actual error code can be retrieved by calling \fBsocket_last_error\fP\&. This error code may be passed to \fBsocket_strerror\fP to get a textual explanation of the error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_recvmsg ( $socket,  $message,  $flags)"
+Read a message \fBresource $socket  string $message  int $flags [optional]  int|false  5\&.5 \fP
+.SS "socket_select (array & $read, array & $write, array & $except,  $tv_sec,  $tv_usec = \fC0\fP)"
+Runs the select() system call on the given arrays of sockets with a specified timeout \fBarray $read \fP The sockets listed in the \fIread\fP array will be watched to see if characters become available for reading (more precisely, to see if a read will not block - in particular, a socket resource is also ready on end-of-file, in which case a \fBsocket_read\fP will return a zero length string)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$write\fP 
+.RE
+.PP
+The sockets listed in the \fIwrite\fP array will be watched to see if a write will not block\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$except\fP 
+.RE
+.PP
+The sockets listed in the \fIexcept\fP array will be watched for exceptions\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tv_sec\fP 
+.RE
+.PP
+The \fItv_sec\fP and \fItv_usec\fP together form the timeout parameter\&. The timeout is an upper bound on the amount of time elapsed before \fBsocket_select\fP return\&. \fItv_sec\fP may be zero , causing \fBsocket_select\fP to return immediately\&. This is useful for polling\&. If \fItv_sec\fP is \fBNULL\fP (no timeout), \fBsocket_select\fP can block indefinitely\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tv_usec\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false On success \fBsocket_select\fP returns the number of socket resources contained in the modified arrays, which may be zero if the timeout expires before anything interesting happens\&. On error \fBFALSE\fP is returned\&. The error code can be retrieved with \fBsocket_last_error\fP\&. 
+.RE
+.PP
+.PP
+Be sure to use the === operator when checking for an error\&. Since the \fBsocket_select\fP may return 0 the comparison with == would evaluate to \fBTRUE\fP: Understanding \fBsocket_select\fP's result \fC $e = NULL; if (false === socket_select($r, $w, $e, 0)) { echo 'socket_select() failed, reason: ' \&. socket_strerror(socket_last_error()) \&. '\\n'; } \fP 
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_send ( $socket,  $buf,  $len,  $flags)"
+Sends data to a connected socket \fBresource $socket \fP \fBA\fP valid socket resource created with \fBsocket_create\fP or \fBsocket_accept\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$buf\fP 
+.RE
+.PP
+\fBA\fP buffer containing the data that will be sent to the remote host\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$len\fP 
+.RE
+.PP
+The number of bytes that will be sent to the remote host from \fIbuf\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP 
+.RE
+.PP
+The value of \fIflags\fP can be any combination of the following flags, joined with the binary OR (|) operator\&. values for \fIflags\fP 
+.PP
+\fBMSG_OOB\fP 
+.PP
+Send OOB (out-of-band) data\&.   
+.PP
+\fBMSG_EOR\fP 
+.PP
+Indicate a record mark\&. The sent data completes the record\&.   
+.PP
+\fBMSG_EOF\fP 
+.PP
+Close the sender side of the socket and include an appropriate notification of this at the end of the sent data\&. The sent data completes the transaction\&.   
+.PP
+\fBMSG_DONTROUTE\fP 
+.PP
+Bypass routing, use direct interface\&.   
+.PP
+\fBReturns\fP
+.RS 4
+int|false \fBsocket_send\fP returns the number of bytes sent, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_sendmsg ( $socket, array $message,  $flags)"
+(PHP 5 >=5\&.5\&.0)
+.br
+ Send a message \fBresource $socket  array $message  int $flags  int|false  5\&.5 \fP
+.SS "socket_sendto ( $socket,  $buf,  $len,  $flags,  $addr,  $port = \fC0\fP)"
+Sends a message to a socket, whether it is connected or not \fBresource $socket \fP \fBA\fP valid socket resource created using \fBsocket_create\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$buf\fP 
+.RE
+.PP
+The sent data will be taken from buffer \fIbuf\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$len\fP 
+.RE
+.PP
+\fIlen\fP bytes from \fIbuf\fP will be sent\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP 
+.RE
+.PP
+The value of \fIflags\fP can be any combination of the following flags, joined with the binary OR (|) operator\&. values for \fIflags\fP 
+.PP
+\fBMSG_OOB\fP 
+.PP
+Send OOB (out-of-band) data\&.   
+.PP
+\fBMSG_EOR\fP 
+.PP
+Indicate a record mark\&. The sent data completes the record\&.   
+.PP
+\fBMSG_EOF\fP 
+.PP
+Close the sender side of the socket and include an appropriate notification of this at the end of the sent data\&. The sent data completes the transaction\&.   
+.PP
+\fBMSG_DONTROUTE\fP 
+.PP
+Bypass routing, use direct interface\&.   
+.PP
+\fBParameters\fP
+.RS 4
+\fI$addr\fP 
+.RE
+.PP
+IP address of the remote host\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$port\fP [optional] 
+.RE
+.PP
+\fIport\fP is the remote port number at which the data will be sent\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false \fBsocket_sendto\fP returns the number of bytes sent to the remote host, or \fBFALSE\fP if an error occurred\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_set_block ( $socket)"
+Sets blocking mode on a socket resource \fBresource $socket \fP \fBA\fP valid socket resource created with \fBsocket_create\fP or \fBsocket_accept\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_set_nonblock ( $socket)"
+Sets nonblocking mode for file descriptor fd \fBresource $socket \fP \fBA\fP valid socket resource created with \fBsocket_create\fP or \fBsocket_accept\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_set_option ( $socket,  $level,  $optname,  $optval)"
+Sets socket options for the socket \fBresource $socket \fP \fBA\fP valid socket resource created with \fBsocket_create\fP or \fBsocket_accept\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$level\fP 
+.RE
+.PP
+The \fIlevel\fP parameter specifies the protocol level at which the option resides\&. For example, to retrieve options at the socket level, a \fIlevel\fP parameter of \fBSOL_SOCKET\fP would be used\&. \fBOther\fP levels, such as TCP, can be used by specifying the protocol number of that level\&. Protocol numbers can be found by using the \fBgetprotobyname\fP function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$optname\fP 
+.RE
+.PP
+The available socket options are the same as those for the \fBsocket_get_option\fP function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$optval\fP 
+.RE
+.PP
+The option value\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_setopt ( $socket,  $level,  $optname,  $optval)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$socket\fP 
+.br
+\fI$level\fP 
+.br
+\fI$optname\fP 
+.br
+\fI$optval\fP 
+.RE
+.PP
+
+.SS "socket_shutdown ( $socket,  $how = \fC2\fP)"
+Shuts down a socket for receiving, sending, or both \fBresource $socket \fP \fBA\fP valid socket resource created with \fBsocket_create\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$how\fP [optional] 
+.RE
+.PP
+The value of \fIhow\fP can be one of the following: values for \fIhow\fP 
+.PP
+0 
+.PP
+Shutdown socket reading   
+.PP
+1 
+.PP
+Shutdown socket writing   
+.PP
+2 
+.PP
+Shutdown socket reading and writing   
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_strerror ( $errno)"
+Return a string describing a socket error \fBint $errno \fP \fBA\fP valid socket error number, likely produced by \fBsocket_last_error\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the error message associated with the \fIerrno\fP parameter\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_write ( $socket,  $buffer,  $length = \fC0\fP)"
+Write to a socket \fBresource $socket  string $buffer \fP The buffer to be written\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+The optional parameter \fIlength\fP can specify an alternate length of bytes written to the socket\&. If this length is greater then the buffer length, it is silently truncated to the length of the buffer\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the number of bytes successfully written to the socket or \fBFALSE\fP on failure\&. The error code can be retrieved with \fBsocket_last_error\fP\&. This code may be passed to \fBsocket_strerror\fP to get a textual explanation of the error\&. 
+.RE
+.PP
+.PP
+It is perfectly valid for \fBsocket_write\fP to return zero which means no bytes have been written\&. Be sure to use the === operator to check for \fBFALSE\fP in case of an error\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const AF_INET 2"
+
+.SS "const AF_INET6 10"
+Only available if compiled with IPv6 support\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const AF_UNIX 1"
+
+.SS "const IP_MULTICAST_IF 32"
+The outgoing interface for IPv4 multicast packets\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 \fBhttps://php\&.net/manual/en/function\&.socket-get-option\&.php\fP
+.RE
+.PP
+
+.SS "const IP_MULTICAST_LOOP 34"
+The multicast loopback policy for IPv4 packets, which determines whether multicast packets sent by this socket also reach receivers in the same host that have joined the same multicast group on the outgoing interface used by this socket\&. This is the case by default\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 \fBhttps://php\&.net/manual/en/function\&.socket-get-option\&.php\fP
+.RE
+.PP
+
+.SS "const IP_MULTICAST_TTL 33"
+The outgoing interface for IPv6 multicast packets\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 \fBhttps://php\&.net/manual/en/function\&.socket-get-option\&.php\fP
+.RE
+.PP
+
+.SS "const IPPROTO_IP 0"
+
+.SS "const IPPROTO_IPV6 41"
+
+.SS "const IPV6_HOPLIMIT 52"
+
+.SS "const IPV6_MULTICAST_HOPS 18"
+The time-to-live of outgoing IPv4 multicast packets\&. This should be a value between 0 (don't leave the interface) and 255\&. The default value is 1 (only the local network is reached)\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 \fBhttps://php\&.net/manual/en/function\&.socket-get-option\&.php\fP
+.RE
+.PP
+
+.SS "const IPV6_MULTICAST_IF 17"
+Analogous to IP_MULTICAST_LOOP, but for IPv6\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 \fBhttps://php\&.net/manual/en/function\&.socket-get-option\&.php\fP
+.RE
+.PP
+
+.SS "const IPV6_MULTICAST_LOOP 19"
+Analogous to IP_MULTICAST_TTL, but for IPv6 packets\&. The value -1 is also accepted, meaning the route default should be used\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 \fBhttps://php\&.net/manual/en/function\&.socket-get-option\&.php\fP
+.RE
+.PP
+
+.SS "const IPV6_PKTINFO 50"
+
+.SS "const IPV6_RECVHOPLIMIT 51"
+
+.SS "const IPV6_RECVPKTINFO 49"
+
+.SS "const IPV6_RECVTCLASS 66"
+
+.SS "const IPV6_TCLASS 67"
+
+.SS "const IPV6_UNICAST_HOPS 16"
+
+.SS "const IPV6_V6ONLY 26"
+
+.SS "const MCAST_BLOCK_SOURCE 43"
+Blocks packets arriving from a specific source to a specific multicast group, which must have been previously joined\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 \fBhttps://php\&.net/manual/en/function\&.socket-get-option\&.php\fP
+.RE
+.PP
+
+.SS "const MCAST_JOIN_GROUP 42"
+Joins a multicast group\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 \fBhttps://php\&.net/manual/en/function\&.socket-get-option\&.php\fP
+.RE
+.PP
+
+.SS "const MCAST_JOIN_SOURCE_GROUP 46"
+Receive packets destined to a specific multicast group whose source address matches a specific value\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 \fBhttps://php\&.net/manual/en/function\&.socket-get-option\&.php\fP
+.RE
+.PP
+
+.SS "const MCAST_LEAVE_GROUP 45"
+Leaves a multicast group\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 \fBhttps://php\&.net/manual/en/function\&.socket-get-option\&.php\fP
+.RE
+.PP
+
+.SS "const MCAST_LEAVE_SOURCE_GROUP 47"
+Stop receiving packets destined to a specific multicast group whose soure address matches a specific value\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 \fBhttps://php\&.net/manual/en/function\&.socket-get-option\&.php\fP
+.RE
+.PP
+
+.SS "const MCAST_UNBLOCK_SOURCE 44"
+Unblocks (start receiving again) packets arriving from a specific source address to a specific multicast group, which must have been previously joined\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 \fBhttps://php\&.net/manual/en/function\&.socket-get-option\&.php\fP
+.RE
+.PP
+
+.SS "const MSG_CMSG_CLOEXEC 1073741824"
+
+.SS "const MSG_CONFIRM 2048"
+
+.SS "const MSG_CTRUNC 8"
+
+.SS "const MSG_DONTROUTE 4"
+
+.SS "const MSG_DONTWAIT 64"
+
+.SS "const MSG_EOF 512"
+Not available on Windows platforms\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const MSG_EOR 128"
+Not available on Windows platforms\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const MSG_ERRQUEUE 8192"
+
+.SS "const MSG_MORE 32768"
+
+.SS "const MSG_NOSIGNAL 16384"
+
+.SS "const MSG_OOB 1"
+
+.SS "const MSG_PEEK 2"
+
+.SS "const MSG_TRUNC 32"
+
+.SS "const MSG_WAITALL 256"
+
+.SS "const MSG_WAITFORONE 65536"
+
+.SS "const PHP_BINARY_READ 2"
+
+.SS "const PHP_NORMAL_READ 1"
+
+.SS "const SCM_CREDENTIALS 2"
+
+.SS "const SCM_RIGHTS 1"
+
+.SS "const SO_BINDTODEVICE 25"
+
+.SS "const SO_BROADCAST 6"
+
+.SS "const SO_DEBUG 1"
+
+.SS "const SO_DONTROUTE 5"
+
+.SS "const SO_ERROR 4"
+
+.SS "const SO_KEEPALIVE 9"
+
+.SS "const SO_LINGER 13"
+
+.SS "const SO_OOBINLINE 10"
+
+.SS "const SO_PASSCRED 16"
+
+.SS "const SO_RCVBUF 8"
+
+.SS "const SO_RCVLOWAT 18"
+
+.SS "const SO_RCVTIMEO 20"
+
+.SS "const SO_REUSEADDR 2"
+
+.SS "const SO_REUSEPORT 15"
+This constant is only available in PHP 5\&.4\&.10 or later on platforms that support the \fBSO_REUSEPORT\fP socket option: this includes Mac OS X and FreeBSD, but does not include Linux or Windows\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SO_SNDBUF 7"
+
+.SS "const SO_SNDLOWAT 19"
+
+.SS "const SO_SNDTIMEO 21"
+
+.SS "const SO_TYPE 3"
+
+.SS "const SOCK_DGRAM 2"
+
+.SS "const SOCK_RAW 3"
+
+.SS "const SOCK_RDM 4"
+
+.SS "const SOCK_SEQPACKET 5"
+
+.SS "const SOCK_STREAM 1"
+
+.SS "const SOCKET_E2BIG 7"
+Arg list too long\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EACCES 13"
+Permission denied\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EADDRINUSE 98"
+
+.SS "const SOCKET_EADDRNOTAVAIL 99"
+Cannot assign requested address\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EADV 68"
+Advertise error\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EAFNOSUPPORT 97"
+Address family not supported by protocol\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EAGAIN 11"
+Try again\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EALREADY 114"
+Operation already in progress\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EBADE 52"
+Invalid exchange\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EBADF 9"
+Bad file number\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EBADFD 77"
+File descriptor in bad state\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EBADMSG 74"
+Not a data message\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EBADR 53"
+Invalid request descriptor\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EBADRQC 56"
+Invalid request code\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EBADSLT 57"
+Invalid slot\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EBUSY 16"
+Device or resource busy\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ECHRNG 44"
+Channel number out of range\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ECOMM 70"
+Communication error on send\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ECONNABORTED 103"
+Software caused connection abort\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ECONNREFUSED 111"
+Connection refused\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ECONNRESET 104"
+Connection reset by peer\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EDESTADDRREQ 89"
+Destination address required\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EDQUOT 122"
+Quota exceeded\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EEXIST 17"
+File exists\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EFAULT 14"
+Bad address\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EHOSTDOWN 112"
+Host is down\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EHOSTUNREACH 113"
+No route to host\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EIDRM 43"
+Identifier removed\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EINPROGRESS 115"
+Operation now in progress\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EINTR 4"
+Interrupted system call\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EINVAL 22"
+Invalid argument\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EIO 5"
+I/O error\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EISCONN 106"
+Transport endpoint is already connected\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EISDIR 21"
+Is a directory\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EISNAM 120"
+Is a named type file\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EL2HLT 51"
+Level 2 halted\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EL2NSYNC 45"
+Level 2 not synchronized\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EL3HLT 46"
+Level 3 halted\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EL3RST 47"
+Level 3 reset\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ELNRNG 48"
+Link number out of range\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ELOOP 40"
+Too many symbolic links encountered\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EMEDIUMTYPE 124"
+Wrong medium type\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EMFILE 24"
+Too many open files\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EMLINK 31"
+Too many links\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EMSGSIZE 90"
+Message too long\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EMULTIHOP 72"
+Multihop attempted\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENAMETOOLONG 36"
+File name too long\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENETDOWN 100"
+Network is down\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENETRESET 102"
+Network dropped connection because of reset\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENETUNREACH 101"
+Network is unreachable\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENFILE 23"
+File table overflow\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOANO 55"
+No anode\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOBUFS 105"
+No buffer space available\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOCSI 50"
+No CSI structure available\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENODATA 61"
+No data available\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENODEV 19"
+No such device\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOENT 2"
+No such file or directory\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOLCK 37"
+No record locks available\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOLINK 67"
+Link has been severed\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOMEDIUM 123"
+No medium found\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOMEM 12"
+Out of memory\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOMSG 42"
+No message of desired type\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENONET 64"
+Machine is not on the network\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOPROTOOPT 92"
+
+.SS "const SOCKET_ENOSPC 28"
+No space left on device\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOSR 63"
+Out of streams resources\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOSTR 60"
+Device not a stream\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOSYS 38"
+Function not implemented\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOTBLK 15"
+Block device required\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOTCONN 107"
+Transport endpoint is not connected\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOTDIR 20"
+Not a directory\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOTEMPTY 39"
+\fBDirectory\fP not empty\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOTSOCK 88"
+Socket operation on non-socket\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOTTY 25"
+Not a typewriter\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENOTUNIQ 76"
+Name not unique on network\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ENXIO 6"
+No such device or address\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EOPNOTSUPP 95"
+Operation not supported on transport endpoint\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EPERM 1"
+Operation not permitted\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EPFNOSUPPORT 96"
+Protocol family not supported\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EPIPE 32"
+Broken pipe\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EPROTO 71"
+Protocol error\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EPROTONOSUPPORT 93"
+Protocol not supported\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EPROTOTYPE 91"
+Protocol wrong type for socket\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EREMCHG 78"
+Remote address changed\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EREMOTE 66"
+Object is remote\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EREMOTEIO 121"
+Remote I/O error\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ERESTART 85"
+Interrupted system call should be restarted\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EROFS 30"
+Read-only file system\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ESHUTDOWN 108"
+Cannot send after transport endpoint shutdown\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ESOCKTNOSUPPORT 94"
+Socket type not supported\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ESPIPE 29"
+Illegal seek\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ESRMNT 69"
+Srmount error\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ESTRPIPE 86"
+Streams pipe error\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ETIME 62"
+Timer expired\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ETIMEDOUT 110"
+Connection timed out\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_ETOOMANYREFS 109"
+Too many references: cannot splice\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EUNATCH 49"
+Protocol driver not attached\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EUSERS 87"
+Too many users\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EWOULDBLOCK 11"
+Operation would block\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EXDEV 18"
+Cross-device link\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOCKET_EXFULL 54"
+Exchange full\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SS "const SOL_SOCKET 1"
+
+.SS "const SOL_TCP 6"
+
+.SS "const SOL_UDP 17"
+
+.SS "const SOMAXCONN 128"
+
+.SS "const TCP_NODELAY 1"
+Used to disable Nagle TCP algorithm\&. Added in PHP 5\&.2\&.7\&. \fBhttps://php\&.net/manual/en/sockets\&.constants\&.php\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

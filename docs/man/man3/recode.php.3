@@ -1,0 +1,81 @@
+.TH "vendor/jetbrains/phpstorm-stubs/recode/recode.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/recode/recode.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBrecode_string\fP ($request, $string)"
+.br
+.ti -1c
+.RI "\fBrecode_file\fP ($request, $input, $output)"
+.br
+.ti -1c
+.RI "\fBrecode\fP ($request, $str)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "recode ( $request,  $str)"
+Alias of \fBrecode_string\fP \fB$request  $str  4\&.0  5\&.0 \fP
+.SS "recode_file ( $request,  $input,  $output)"
+Recode from file to file according to recode request \fBstring $request \fP The desired recode request type 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$input\fP 
+.RE
+.PP
+\fBA\fP local file handle resource for the \fIinput\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$output\fP 
+.RE
+.PP
+\fBA\fP local file handle resource for the \fIoutput\fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBFALSE\fP, if unable to comply, \fBTRUE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "recode_string ( $request,  $string)"
+Recode a string according to a recode request \fBstring $request \fP The desired recode request type 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$string\fP 
+.RE
+.PP
+The string to be recoded 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the recoded string or \fBFALSE\fP, if unable to perform the recode request\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

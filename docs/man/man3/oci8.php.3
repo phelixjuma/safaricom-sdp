@@ -1,0 +1,2996 @@
+.TH "vendor/jetbrains/phpstorm-stubs/oci8/oci8.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/oci8/oci8.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBOCI_Lob\fP"
+.br
+.ti -1c
+.RI "class \fBOCI_Collection\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBoci_register_taf_callback\fP ($connection, $callbackFn)"
+.br
+.ti -1c
+.RI "\fBoci_unregister_taf_callback\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBoci_define_by_name\fP ($statement, $column_name, &$variable, $type=\fBSQLT_CHR\fP)"
+.br
+.ti -1c
+.RI "\fBoci_bind_by_name\fP ($statement, $bv_name, &$variable, $maxlength=\-1, $type=\fBSQLT_CHR\fP)"
+.br
+.ti -1c
+.RI "\fBoci_bind_array_by_name\fP ($statement, $name, array &$var_array, $max_table_length, $max_item_length=\-1, $type=\fBSQLT_AFC\fP)"
+.br
+.ti -1c
+.RI "\fBoci_field_is_null\fP ($statement, $field)"
+.br
+.ti -1c
+.RI "\fBoci_field_name\fP ($statement, $field)"
+.br
+.ti -1c
+.RI "\fBoci_field_size\fP ($statement, $field)"
+.br
+.ti -1c
+.RI "\fBoci_field_scale\fP ($statement, $field)"
+.br
+.ti -1c
+.RI "\fBoci_field_precision\fP ($statement, $field)"
+.br
+.ti -1c
+.RI "\fBoci_field_type\fP ($statement, $field)"
+.br
+.ti -1c
+.RI "\fBoci_field_type_raw\fP ($statement, $field)"
+.br
+.ti -1c
+.RI "\fBoci_execute\fP ($statement, $mode=\fBOCI_COMMIT_ON_SUCCESS\fP)"
+.br
+.ti -1c
+.RI "\fBoci_cancel\fP ($statement)"
+.br
+.ti -1c
+.RI "\fBoci_fetch\fP ($statement)"
+.br
+.ti -1c
+.RI "\fBoci_fetch_object\fP ($statement)"
+.br
+.ti -1c
+.RI "\fBoci_fetch_row\fP ($statement)"
+.br
+.ti -1c
+.RI "\fBoci_fetch_assoc\fP ($statement)"
+.br
+.ti -1c
+.RI "\fBoci_fetch_array\fP ($statement, $mode=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBocifetchinto\fP ($statement_resource, &$result, $mode=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBoci_fetch_all\fP ($statement, array &$output, $skip=0, $maxrows=\-1, $flags=\fBOCI_FETCHSTATEMENT_BY_COLUMN\fP|\fBOCI_ASSOC\fP)"
+.br
+.ti -1c
+.RI "\fBoci_free_statement\fP ($statement)"
+.br
+.ti -1c
+.RI "\fBoci_internal_debug\fP ($onoff)"
+.br
+.ti -1c
+.RI "\fBoci_num_fields\fP ($statement)"
+.br
+.ti -1c
+.RI "\fBoci_parse\fP ($connection, $sql_text)"
+.br
+.ti -1c
+.RI "\fBoci_get_implicit_resultset\fP ($statement)"
+.br
+.ti -1c
+.RI "\fBoci_new_cursor\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBoci_result\fP ($statement, $field)"
+.br
+.ti -1c
+.RI "\fBoci_client_version\fP ()"
+.br
+.ti -1c
+.RI "\fBoci_server_version\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBoci_statement_type\fP ($statement)"
+.br
+.ti -1c
+.RI "\fBoci_num_rows\fP ($statement)"
+.br
+.ti -1c
+.RI "\fBoci_close\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBoci_connect\fP ($username, $password, $connection_string=\fBnull\fP, $character_set=\fBnull\fP, $session_mode=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBoci_new_connect\fP ($username, $password, $connection_string=\fBnull\fP, $character_set=\fBnull\fP, $session_mode=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBoci_pconnect\fP ($username, $password, $connection_string=\fBnull\fP, $character_set=\fBnull\fP, $session_mode=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBoci_error\fP ($resource=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBoci_free_descriptor\fP ($descriptor)"
+.br
+.ti -1c
+.RI "\fBoci_lob_is_equal\fP (\fBOCI_Lob\fP $lob1, \fBOCI_Lob\fP $lob2)"
+.br
+.ti -1c
+.RI "\fBoci_lob_copy\fP (\fBOCI_Lob\fP $lob_to, \fBOCI_Lob\fP $lob_from, $length=0)"
+.br
+.ti -1c
+.RI "\fBoci_commit\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBoci_rollback\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBoci_new_descriptor\fP ($connection, $type=\fBOCI_DTYPE_LOB\fP)"
+.br
+.ti -1c
+.RI "\fBoci_set_prefetch\fP ($statement, $rows)"
+.br
+.ti -1c
+.RI "\fBoci_set_client_identifier\fP ($connection, $client_identifier)"
+.br
+.ti -1c
+.RI "\fBoci_set_edition\fP ($edition)"
+.br
+.ti -1c
+.RI "\fBoci_set_module_name\fP ($connection, $module_name)"
+.br
+.ti -1c
+.RI "\fBoci_set_action\fP ($connection, $action_name)"
+.br
+.ti -1c
+.RI "\fBoci_set_client_info\fP ($connection, $client_info)"
+.br
+.ti -1c
+.RI "\fBoci_password_change\fP ($connection, $username, $old_password, $new_password)"
+.br
+.ti -1c
+.RI "\fBoci_new_collection\fP ($connection, $tdo, $schema=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBoci_free_cursor\fP ($statement_resource)"
+.br
+.ti -1c
+.RI "\fBocifreecursor\fP ($statement_resource)"
+.br
+.ti -1c
+.RI "\fBocibindbyname\fP ($statement, $column_name, &$variable, $maximum_length=\-1, $type=\fBSQLT_CHR\fP)"
+.br
+.ti -1c
+.RI "\fBocidefinebyname\fP ($statement, $column_name, &$variable, $type=\fBSQLT_CHR\fP)"
+.br
+.ti -1c
+.RI "\fBocicolumnisnull\fP ($statement, $column_number_or_name)"
+.br
+.ti -1c
+.RI "\fBocicolumnname\fP ($statement, $column_number)"
+.br
+.ti -1c
+.RI "\fBocicolumnsize\fP ($statement, $column_number_or_name)"
+.br
+.ti -1c
+.RI "\fBocicolumnscale\fP ($statement_resource, $column_number)"
+.br
+.ti -1c
+.RI "\fBocicolumnprecision\fP ($statement_resource, $column_number)"
+.br
+.ti -1c
+.RI "\fBocicolumntype\fP ($statement_resource, $column_number)"
+.br
+.ti -1c
+.RI "\fBocicolumntyperaw\fP ($statement_resource, $column_number)"
+.br
+.ti -1c
+.RI "\fBociexecute\fP ($statement_resource, $mode=\fBOCI_COMMIT_ON_SUCCESS\fP)"
+.br
+.ti -1c
+.RI "\fBocicancel\fP ($statement_resource)"
+.br
+.ti -1c
+.RI "\fBocifetch\fP ($statement_resource)"
+.br
+.ti -1c
+.RI "\fBocifetchstatement\fP ($statement_resource, &$output, $skip, $maximum_rows, $flags)"
+.br
+.ti -1c
+.RI "\fBocifreestatement\fP ($statement_resource)"
+.br
+.ti -1c
+.RI "\fBociinternaldebug\fP ($mode)"
+.br
+.ti -1c
+.RI "\fBocinumcols\fP ($statement_resource)"
+.br
+.ti -1c
+.RI "\fBociparse\fP ($connection_resource, $sql_text)"
+.br
+.ti -1c
+.RI "\fBocinewcursor\fP ($connection_resource)"
+.br
+.ti -1c
+.RI "\fBociresult\fP ($statement_resource, $column_number_or_name)"
+.br
+.ti -1c
+.RI "\fBociserverversion\fP ($connection_resource)"
+.br
+.ti -1c
+.RI "\fBocistatementtype\fP ($statement_resource)"
+.br
+.ti -1c
+.RI "\fBocirowcount\fP ($statement_resource)"
+.br
+.ti -1c
+.RI "\fBocilogoff\fP ($connection_resource)"
+.br
+.ti -1c
+.RI "\fBocilogon\fP ($username, $password, $connection_string, $character_set, $session_mode)"
+.br
+.ti -1c
+.RI "\fBocinlogon\fP ($username, $password, $connection_string, $character_set, $session_mode)"
+.br
+.ti -1c
+.RI "\fBociplogon\fP ($username, $password, $connection_string, $character_set, $session_mode)"
+.br
+.ti -1c
+.RI "\fBocierror\fP ($connection_or_statement_resource)"
+.br
+.ti -1c
+.RI "\fBocifreedesc\fP ($lob_descriptor)"
+.br
+.ti -1c
+.RI "\fBocisavelob\fP ($lob_descriptor, $data, $offset)"
+.br
+.ti -1c
+.RI "\fBocisavelobfile\fP ($lob_descriptor, $filename)"
+.br
+.ti -1c
+.RI "\fBociwritelobtofile\fP ($lob_descriptor, $filename, $start, $length)"
+.br
+.ti -1c
+.RI "\fBociloadlob\fP ($lob_descriptor)"
+.br
+.ti -1c
+.RI "\fBocicommit\fP ($connection_resource)"
+.br
+.ti -1c
+.RI "\fBocirollback\fP ($connection_resource)"
+.br
+.ti -1c
+.RI "\fBocinewdescriptor\fP ($connection_resource, $type=\fBOCI_DTYPE_LOB\fP)"
+.br
+.ti -1c
+.RI "\fBocisetprefetch\fP ($statement_resource, $number_of_rows)"
+.br
+.ti -1c
+.RI "\fBocipasswordchange\fP ($connection_resource_or_connection_string_or_dbname, $username, $old_password, $new_password)"
+.br
+.ti -1c
+.RI "\fBocifreecollection\fP ($collection)"
+.br
+.ti -1c
+.RI "\fBocinewcollection\fP ($connection_resource, $tdo, $schema=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBocicollappend\fP ($collection, $value)"
+.br
+.ti -1c
+.RI "\fBocicollgetelem\fP ($collection, $index)"
+.br
+.ti -1c
+.RI "\fBocicollassignelem\fP ($collection, $index, $value)"
+.br
+.ti -1c
+.RI "\fBocicollsize\fP ($collection)"
+.br
+.ti -1c
+.RI "\fBocicollmax\fP ($collection)"
+.br
+.ti -1c
+.RI "\fBocicolltrim\fP ($collection, $number)"
+.br
+.ti -1c
+.RI "\fBociwritetemporarylob\fP ($lob_descriptor, $data, $lob_type=\fBOCI_TEMP_CLOB\fP)"
+.br
+.ti -1c
+.RI "\fBocicloselob\fP ($lob_descriptor)"
+.br
+.ti -1c
+.RI "\fBocicollassign\fP ($to, $from)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBOCI_DEFAULT\fP 0"
+.br
+.ti -1c
+.RI "const \fBOCI_SYSOPER\fP 4"
+.br
+.ti -1c
+.RI "const \fBOCI_SYSDBA\fP 2"
+.br
+.ti -1c
+.RI "const \fBOCI_CRED_EXT\fP \-2147483648"
+.br
+.ti -1c
+.RI "const \fBOCI_DESCRIBE_ONLY\fP 16"
+.br
+.ti -1c
+.RI "const \fBOCI_COMMIT_ON_SUCCESS\fP 32"
+.br
+.ti -1c
+.RI "const \fBOCI_NO_AUTO_COMMIT\fP 0"
+.br
+.ti -1c
+.RI "const \fBOCI_EXACT_FETCH\fP 2"
+.br
+.ti -1c
+.RI "const \fBOCI_SEEK_SET\fP 0"
+.br
+.ti -1c
+.RI "const \fBOCI_SEEK_CUR\fP 1"
+.br
+.ti -1c
+.RI "const \fBOCI_SEEK_END\fP 2"
+.br
+.ti -1c
+.RI "const \fBOCI_LOB_BUFFER_FREE\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQLT_BFILEE\fP 114"
+.br
+.ti -1c
+.RI "const \fBSQLT_CFILEE\fP 115"
+.br
+.ti -1c
+.RI "const \fBSQLT_CLOB\fP 112"
+.br
+.ti -1c
+.RI "const \fBSQLT_BLOB\fP 113"
+.br
+.ti -1c
+.RI "const \fBSQLT_RDD\fP 104"
+.br
+.ti -1c
+.RI "const \fBSQLT_INT\fP 3"
+.br
+.ti -1c
+.RI "const \fBSQLT_NUM\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQLT_RSET\fP 116"
+.br
+.ti -1c
+.RI "const \fBSQLT_AFC\fP 96"
+.br
+.ti -1c
+.RI "const \fBSQLT_CHR\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQLT_VCS\fP 9"
+.br
+.ti -1c
+.RI "const \fBSQLT_AVC\fP 97"
+.br
+.ti -1c
+.RI "const \fBSQLT_STR\fP 5"
+.br
+.ti -1c
+.RI "const \fBSQLT_LVC\fP 94"
+.br
+.ti -1c
+.RI "const \fBSQLT_FLT\fP 4"
+.br
+.ti -1c
+.RI "const \fBSQLT_UIN\fP 68"
+.br
+.ti -1c
+.RI "const \fBSQLT_LNG\fP 8"
+.br
+.ti -1c
+.RI "const \fBSQLT_LBI\fP 24"
+.br
+.ti -1c
+.RI "const \fBSQLT_BIN\fP 23"
+.br
+.ti -1c
+.RI "const \fBSQLT_ODT\fP 156"
+.br
+.ti -1c
+.RI "const \fBSQLT_BDOUBLE\fP 22"
+.br
+.ti -1c
+.RI "const \fBSQLT_BFLOAT\fP 21"
+.br
+.ti -1c
+.RI "const \fBOCI_B_NTY\fP 108"
+.br
+.ti -1c
+.RI "const \fBSQLT_NTY\fP 108"
+.br
+.ti -1c
+.RI "const \fBOCI_SYSDATE\fP 'SYSDATE'"
+.br
+.ti -1c
+.RI "const \fBOCI_B_BFILE\fP 114"
+.br
+.ti -1c
+.RI "const \fBOCI_B_CFILEE\fP 115"
+.br
+.ti -1c
+.RI "const \fBOCI_B_CLOB\fP 112"
+.br
+.ti -1c
+.RI "const \fBOCI_B_BLOB\fP 113"
+.br
+.ti -1c
+.RI "const \fBOCI_B_ROWID\fP 104"
+.br
+.ti -1c
+.RI "const \fBOCI_B_CURSOR\fP 116"
+.br
+.ti -1c
+.RI "const \fBOCI_B_BIN\fP 23"
+.br
+.ti -1c
+.RI "const \fBOCI_B_INT\fP 3"
+.br
+.ti -1c
+.RI "const \fBOCI_B_NUM\fP 2"
+.br
+.ti -1c
+.RI "const \fBOCI_FETCHSTATEMENT_BY_COLUMN\fP 16"
+.br
+.ti -1c
+.RI "const \fBOCI_FETCHSTATEMENT_BY_ROW\fP 32"
+.br
+.ti -1c
+.RI "const \fBOCI_ASSOC\fP 1"
+.br
+.ti -1c
+.RI "const \fBOCI_NUM\fP 2"
+.br
+.ti -1c
+.RI "const \fBOCI_BOTH\fP 3"
+.br
+.ti -1c
+.RI "const \fBOCI_RETURN_NULLS\fP 4"
+.br
+.ti -1c
+.RI "const \fBOCI_RETURN_LOBS\fP 8"
+.br
+.ti -1c
+.RI "const \fBOCI_DTYPE_FILE\fP 56"
+.br
+.ti -1c
+.RI "const \fBOCI_DTYPE_LOB\fP 50"
+.br
+.ti -1c
+.RI "const \fBOCI_DTYPE_ROWID\fP 54"
+.br
+.ti -1c
+.RI "const \fBOCI_D_FILE\fP 56"
+.br
+.ti -1c
+.RI "const \fBOCI_D_LOB\fP 50"
+.br
+.ti -1c
+.RI "const \fBOCI_D_ROWID\fP 54"
+.br
+.ti -1c
+.RI "const \fBOCI_TEMP_CLOB\fP 2"
+.br
+.ti -1c
+.RI "const \fBOCI_TEMP_BLOB\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQLT_BOL\fP 252"
+.br
+.ti -1c
+.RI "const \fBOCI_B_BOL\fP 252"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "oci_bind_array_by_name ( $statement,  $name, array & $var_array,  $max_table_length,  $max_item_length = \fC\-1\fP,  $type = \fC\fBSQLT_AFC\fP\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL OCI8 >= 1\&.2\&.0)
+.br
+ Binds a PHP array to an Oracle PL/SQL array parameter \fBresource $statement \fP \fBA\fP valid OCI statement identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The Oracle placeholder\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$var_array\fP 
+.RE
+.PP
+An array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$max_table_length\fP 
+.RE
+.PP
+Sets the maximum length both for incoming and result arrays\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$max_item_length\fP [optional] 
+.RE
+.PP
+Sets maximum length for array items\&. If not specified or equals to -1, {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_array_by_name\fP} will find the longest element in the incoming array and will use it as the maximum length\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP [optional] 
+.RE
+.PP
+Should be used to set the type of PL/SQL array items\&. See list of available types below: 
+.PP
+\fBSQLT_NUM\fP - for arrays of NUMBER\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_bind_by_name ( $statement,  $bv_name, & $variable,  $maxlength = \fC\-1\fP,  $type = \fC\fBSQLT_CHR\fP\fP)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Binds a PHP variable to an Oracle placeholder \fBresource $statement \fP \fBA\fP valid OCI8 statement identifer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bv_name\fP 
+.RE
+.PP
+The colon-prefixed bind variable placeholder used in the statement\&. The colon is optional in \fIbv_name\fP\&. Oracle does not use question marks for placeholders\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$variable\fP 
+.RE
+.PP
+The PHP variable to be associated with \fIbv_name\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$maxlength\fP [optional] 
+.RE
+.PP
+Sets the maximum length for the data\&. If you set it to -1, this function will use the current length of \fIvariable\fP to set the maximum length\&. In this case the \fIvariable\fP must exist and contain data when {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_by_name\fP} is called\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP [optional] 
+.RE
+.PP
+The datatype that Oracle will treat the data as\&. The default \fItype\fP used is \fBSQLT_CHR\fP\&. Oracle will convert the data between this type and the database column (or PL/SQL variable type), when possible\&. 
+.PP
+If you need to bind an abstract datatype (LOB/ROWID/BFILE) you need to allocate it first using the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_new_descriptor\fP} \fBfunction\fP\&. The \fIlength\fP is not used for abstract datatypes and should be set to -1\&. 
+.RE
+.PP
+.PP
+Possible values for \fItype\fP are: 
+.PP
+\fBSQLT_BFILEE\fP or \fBOCI_B_BFILE\fP
+.IP "\(bu" 2
+for BFILEs; 
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_cancel ( $statement)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Cancels reading from cursor \fBresource $statement \fP An OCI statement\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_client_version ()"
+(PHP 5\&.3\&.7, PECL OCI8 >= 1\&.4\&.6)
+.br
+ Returns the Oracle client library version \fBstring the version number as a string\&. \fP
+.SS "oci_close ( $connection)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Closes an Oracle connection \fBresource $connection \fP An Oracle connection identifier returned by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_connect\fP}, {
+.PP
+\fBoci_pconnect\fP}, or {
+.PP
+\fBoci_new_connect\fP}\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_commit ( $connection)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Commits the outstanding database transaction \fBresource $connection \fP An Oracle connection identifier, returned by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_connect\fP}, {
+.PP
+\fBoci_pconnect\fP}, or {
+.PP
+\fBoci_new_connect\fP}\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_connect ( $username,  $password,  $connection_string = \fC\fBnull\fP\fP,  $character_set = \fC\fBnull\fP\fP,  $session_mode = \fC\fBnull\fP\fP)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Connect to an Oracle database \fBstring $username \fP The Oracle user name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP 
+.RE
+.PP
+The password for \fIusername\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection_string\fP [optional] Contains the Oracle instance to connect to\&. It can be an Easy Connect string, or a Connect Name from the tnsnames\&.ora file, or the name of a local Oracle instance\&. 
+.RE
+.PP
+If not specified, PHP uses environment variables such as \fBTWO_TASK\fP (on Linux) or \fBLOCAL\fP (on Windows) and \fBORACLE_SID\fP to determine the Oracle instance to connect to\&. 
+.PP
+To use the Easy Connect naming method, PHP must be linked with Oracle 10g or greater Client libraries\&. The Easy Connect string for Oracle 10g is of the form: [//]host_name[:port][/service_name]\&. From Oracle 11g, the syntax is: [//]host_name[:port][/service_name][:server_type][/instance_name]\&. Service names can be found by running the Oracle utility lsnrctl status on the database server machine\&. 
+.PP
+The tnsnames\&.ora file can be in the Oracle Net search path, which includes $ORACLE_HOME/network/admin and /etc\&. Alternatively set TNS_ADMIN so that $TNS_ADMIN/tnsnames\&.ora is read\&. Make sure the web daemon has read access to the file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$character_set\fP [optional] Determines the character set used by the Oracle Client libraries\&. The character set does not need to match the character set used by the database\&. If it doesn't match, Oracle will do its best to convert data to and from the database character set\&. Depending on the character sets this may not give usable results\&. Conversion also adds some time overhead\&. 
+.RE
+.PP
+If not specified, the Oracle Client libraries determine a character set from the \fBNLS_LANG\fP environment variable\&. 
+.PP
+Passing this parameter can reduce the time taken to connect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$session_mode\fP [optional] This parameter is available since version PHP 5 (PECL OCI8 1\&.1) and accepts the following values: \fBOCI_DEFAULT\fP, \fBOCI_SYSOPER\fP and \fBOCI_SYSDBA\fP\&. If either \fBOCI_SYSOPER\fP or \fBOCI_SYSDBA\fP were specified, this function will try to establish privileged connection using external credentials\&. Privileged connections are disabled by default\&. To enable them you need to set oci8\&.privileged_connect to On\&. 
+.RE
+.PP
+PHP 5\&.3 (PECL OCI8 1\&.3\&.4) introduced the \fBOCI_CRED_EXT\fP mode value\&. This tells Oracle to use External or OS authentication, which must be configured in the database\&. The \fBOCI_CRED_EXT\fP flag can only be used with username of &#x00022;/&#x00022; and a empty password\&. oci8\&.privileged_connect may be On or Off\&. 
+.PP
+\fBOCI_CRED_EXT\fP may be combined with the \fBOCI_SYSOPER\fP or \fBOCI_SYSDBA\fP modes\&. 
+.PP
+\fBOCI_CRED_EXT\fP is not supported on Windows for security reasons\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP connection identifier or \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "oci_define_by_name ( $statement,  $column_name, & $variable,  $type = \fC\fBSQLT_CHR\fP\fP)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Associates a PHP variable with a column for query fetches \fBresource $statement A valid OCI8 statement identifier created by { oci_parse} and executed by { oci_execute}, or a REF CURSOR statement identifier\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$column_name\fP 
+.RE
+.PP
+The column name used in the query\&. 
+.PP
+Use uppercase for Oracle's default, non-case sensitive column names\&. Use the exact column name case for case-sensitive column names\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$variable\fP 
+.RE
+.PP
+The PHP variable that will contain the returned column value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP [optional] 
+.RE
+.PP
+The data type to be returned\&. Generally not needed\&. Note that Oracle-style data conversions are not performed\&. For example, SQLT_INT will be ignored and the returned data type will still be SQLT_CHR\&. 
+.PP
+You can optionally use {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_new_descriptor\fP} to allocate LOB/ROWID/BFILE descriptors\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_error ( $resource = \fC\fBnull\fP\fP)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Returns the last error found \fBresource $resource [optional] \fP For most errors, \fIresource\fP is the resource handle that was passed to the failing function call\&. For connection errors with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_connect\fP}, {
+.PP
+\fBoci_new_connect\fP} or {
+.PP
+\fBoci_pconnect\fP} do not pass \fIresource\fP\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|false If no error is found, {
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_error\fP} returns \fBFALSE\fP\&. Otherwise, {
+.PP
+\fBoci_error\fP} returns the error information as an associative array\&. 
+.RE
+.PP
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_error\fP} Array Description 
+.RE
+.PP
+.PP
+Array key 
+.PP
+Type 
+.PP
+Description  
+.PP
+code 
+.PP
+integer 
+.PP
+The Oracle error number\&.   
+.PP
+message 
+.PP
+string 
+.PP
+The Oracle error text\&.   
+.PP
+offset 
+.PP
+integer 
+.PP
+The byte position of an error in the SQL statement\&. If there was no statement, this is 0   
+.PP
+sqltext 
+.PP
+string 
+.PP
+The SQL statement text\&. If there was no statement, this is an empty string\&.   
+.SS "oci_execute ( $statement,  $mode = \fC\fBOCI_COMMIT_ON_SUCCESS\fP\fP)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Executes a statement \fBresource $statement \fP \fBA\fP valid OCI statement identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+An optional second parameter can be one of the following constants: Modes 
+.PP
+Constant 
+.PP
+Description  
+.PP
+\fBOCI_COMMIT_ON_SUCCESS\fP 
+.PP
+Automatically commit all outstanding changes for this connection when the statement has succeeded\&. This is the default\&.  
+.PP
+\fBOCI_DESCRIBE_ONLY\fP 
+.PP
+Make query meta data available to functions like {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_field_name\fP} but do not create \fBa\fP result set\&. Any subsequent fetch call such as {
+.PP
+\fBoci_fetch_array\fP} will fail\&.  
+.RE
+.PP
+.PP
+\fBOCI_NO_AUTO_COMMIT\fP 
+.PP
+Do not automatically commit changes\&. Prior to PHP 5\&.3\&.2 (PECL OCI8 1\&.4) use \fBOCI_DEFAULT\fP which is equivalent to \fBOCI_NO_AUTO_COMMIT\fP\&.  
+.PP
+Using \fBOCI_NO_AUTO_COMMIT\fP mode starts or continues a transaction\&. Transactions are automatically rolled back when the connection is closed, or when the script ends\&. Explicitly call {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_commit\fP} to commit \fBa\fP transaction, or {
+.PP
+\fBoci_rollback\fP} to abort it\&. 
+.RE
+.PP
+.PP
+When inserting or updating data, using transactions is recommended for relational data consistency and for performance reasons\&. 
+.PP
+If \fBOCI_NO_AUTO_COMMIT\fP mode is used for any statement including queries, and {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_commit\fP} or {
+.PP
+\fBoci_rollback\fP} is not subsequently called, then OCI8 will perform \fBa\fP rollback \fBat\fP the \fBend\fP of the script even \fBif\fP no data was changed\&. To avoid an unnecessary rollback, many scripts do not use \fB\fBOCI_NO_AUTO_COMMIT\fP\fP mode for queries or PL/SQL\&. Be careful to ensure the appropriate transactional consistency for the application when using {
+.PP
+\fBoci_execute\fP} with different modes in the same script\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_fetch ( $statement)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Fetches the next row from a query into internal buffers \fBresource $statement A valid OCI8 statement identifier created by { oci_parse} and executed by { oci_execute}, or a REF CURSOR statement identifier\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP if there are no more rows in the \fIstatement\fP\&. 
+.RE
+.PP
+
+.SS "oci_fetch_all ( $statement, array & $output,  $skip = \fC0\fP,  $maxrows = \fC\-1\fP,  $flags = \fC\fBOCI_FETCHSTATEMENT_BY_COLUMN\fP | \fBOCI_ASSOC\fP\fP)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Fetches multiple rows from a query into a two-dimensional array \fBresource $statement A valid OCI8 statement identifier created by { oci_parse} and executed by { oci_execute}, or a REF CURSOR statement identifier\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$output\fP 
+.RE
+.PP
+The variable to contain the returned rows\&. 
+.PP
+LOB columns are returned as strings, where Oracle supports conversion\&. 
+.PP
+See {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_fetch_array\fP} for more information on how data and types are fetched\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$skip\fP [optional] 
+.RE
+.PP
+The number of initial rows to discard when fetching the result\&. The default value is 0, so the first row onwards is returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$maxrows\fP [optional] 
+.RE
+.PP
+The number of rows to return\&. The default is -1 meaning return all the rows from \fIskip\fP + 1 onwards\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+Parameter \fIflags\fP indicates the array structure and whether associative arrays should be used\&. 
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_fetch_all\fP} Array Structure Modes 
+.RE
+.PP
+.PP
+Constant 
+.PP
+Description  
+.PP
+\fBOCI_FETCHSTATEMENT_BY_ROW\fP 
+.PP
+The outer array will contain one sub-array per query row\&.  
+.PP
+\fBOCI_FETCHSTATEMENT_BY_COLUMN\fP 
+.PP
+The outer array will contain one sub-array per query column\&. This is the default\&.  
+.PP
+Arrays can be indexed by column heading or numerically\&. 
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_fetch_all\fP} Array Index Modes 
+.RE
+.PP
+.PP
+Constant 
+.PP
+Description  
+.PP
+\fBOCI_NUM\fP 
+.PP
+Numeric indexes are used for each column's array\&.  
+.PP
+\fBOCI_ASSOC\fP 
+.PP
+Associative indexes are used for each column's array\&. This is the default\&.  
+.PP
+Use the addition operator &#x00022;+&#x00022; to choose a combination of array structure and index modes\&. 
+.PP
+Oracle's default, non-case sensitive column names will have uppercase array keys\&. Case-sensitive column names will have array keys using the exact column case\&. Use \fBvar_dump\fP on \fIoutput\fP to verify the appropriate case to use for each query\&. 
+.PP
+Queries that have more than one column with the same name should use column aliases\&. Otherwise only one of the columns will appear in an associative array\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false The number of rows in \fIoutput\fP, which may be 0 or more, or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_fetch_array ( $statement,  $mode = \fC\fBnull\fP\fP)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Returns the next row from a query as an associative or numeric array \fBresource $statement A valid OCI8 statement identifier created by { oci_parse} and executed by { oci_execute}, or a REF CURSOR statement identifier\&.\fP 
+.PP
+Can also be a statement identifier returned by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_get_implicit_resultset\fP}\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+An optional second parameter can be any combination of the following constants: 
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_fetch_array\fP} Modes 
+.RE
+.PP
+.PP
+Constant 
+.PP
+Description  
+.PP
+\fBOCI_BOTH\fP 
+.PP
+Returns an array with both associative and numeric indices\&. This is the same as \fBOCI_ASSOC\fP
+.IP "\(bu" 2
+\fBOCI_NUM\fP and is the default behavior\&.  
+.PP
+.PP
+\fBOCI_ASSOC\fP 
+.PP
+Returns an associative array\&.  
+.PP
+\fBOCI_NUM\fP 
+.PP
+Returns a numeric array\&.  
+.PP
+\fBOCI_RETURN_NULLS\fP 
+.PP
+Creates elements for \fBNULL\fP fields\&. The element values will be a PHP \fBNULL\fP\&.   
+.PP
+\fBOCI_RETURN_LOBS\fP 
+.PP
+Returns the contents of LOBs instead of the LOB descriptors\&.  
+.PP
+The default \fImode\fP is \fBOCI_BOTH\fP\&. 
+.PP
+Use the addition operator &#x00022;+&#x00022; to specify more than one mode at a time\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false An array with associative and/or numeric indices\&. If there are no more rows in the \fIstatement\fP then \fBFALSE\fP is returned\&. 
+.RE
+.PP
+.PP
+By default, LOB columns are returned as LOB descriptors\&. 
+.PP
+DATE columns are returned as strings formatted to the current date format\&. The default format can be changed with Oracle environment variables such as NLS_LANG or by a previously executed ALTER SESSION SET NLS_DATE_FORMAT command\&. 
+.PP
+Oracle's default, non-case sensitive column names will have uppercase associative indices in the result array\&. Case-sensitive column names will have array indices using the exact column case\&. Use \fBvar_dump\fP on the result array to verify the appropriate case to use for each query\&. 
+.PP
+The table name is not included in the array index\&. If your query contains two different columns with the same name, use \fBOCI_NUM\fP or add a column alias to the query to ensure name uniqueness, see example #7\&. Otherwise only one column will be returned via PHP\&. 
+.SS "oci_fetch_assoc ( $statement)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Returns the next row from a query as an associative array \fBresource $statement A valid OCI8 statement identifier created by { oci_parse} and executed by { oci_execute}, or a REF CURSOR statement identifier\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+array|false An associative array\&. If there are no more rows in the \fIstatement\fP then \fBFALSE\fP is returned\&. 
+.RE
+.PP
+
+.SS "oci_fetch_object ( $statement)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Returns the next row from a query as an object \fBresource $statement A valid OCI8 statement identifier created by { oci_parse} and executed by { oci_execute}, or a REF CURSOR statement identifier\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+object|false An object\&. Each attribute of the object corresponds to a column of the row\&. If there are no more rows in the \fIstatement\fP then \fBFALSE\fP is returned\&. 
+.RE
+.PP
+.PP
+Any LOB columns are returned as LOB descriptors\&. 
+.PP
+DATE columns are returned as strings formatted to the current date format\&. The default format can be changed with Oracle environment variables such as NLS_LANG or by a previously executed ALTER SESSION SET NLS_DATE_FORMAT command\&. 
+.PP
+Oracle's default, non-case sensitive column names will have uppercase attribute names\&. Case-sensitive column names will have attribute names using the exact column case\&. Use \fBvar_dump\fP on the result object to verify the appropriate case for attribute access\&. 
+.PP
+Attribute values will be \fBNULL\fP for any NULL data fields\&. 
+.SS "oci_fetch_row ( $statement)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Returns the next row from a query as a numeric array \fBresource $statement A valid OCI8 statement identifier created by { oci_parse} and executed by { oci_execute}, or a REF CURSOR statement identifier\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+array|false \fBA\fP numerically indexed array\&. If there are no more rows in the \fIstatement\fP then \fBFALSE\fP is returned\&. 
+.RE
+.PP
+
+.SS "oci_field_is_null ( $statement,  $field)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Checks if the field is \fBNULL\fP \fBresource $statement \fP \fBA\fP valid OCI statement identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+Can be a field's index or a field's name (uppercased)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if \fIfield\fP is \fBNULL\fP, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+
+.SS "oci_field_name ( $statement,  $field)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Returns the name of a field from the statement \fBresource $statement \fP \fBA\fP valid OCI statement identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+Can be the field's index (1-based) or name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The name as a string, or \fBFALSE\fP on errors\&. 
+.RE
+.PP
+
+.SS "oci_field_precision ( $statement,  $field)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Tell the precision of a field \fBresource $statement \fP \fBA\fP valid OCI statement identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+Can be the field's index (1-based) or name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false The precision as an integer, or \fBFALSE\fP on errors\&. 
+.RE
+.PP
+
+.SS "oci_field_scale ( $statement,  $field)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Tell the scale of the field \fBresource $statement \fP \fBA\fP valid OCI statement identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+Can be the field's index (1-based) or name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false The scale as an integer, or \fBFALSE\fP on errors\&. 
+.RE
+.PP
+
+.SS "oci_field_size ( $statement,  $field)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Returns field's size \fBresource $statement \fP \fBA\fP valid OCI statement identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+Can be the field's index (1-based) or name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false The size of a \fIfield\fP in bytes, or \fBFALSE\fP on errors\&. 
+.RE
+.PP
+
+.SS "oci_field_type ( $statement,  $field)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Returns field's data type \fBresource $statement \fP \fBA\fP valid OCI statement identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+Can be the field's index (1-based) or name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed the field data type as a string, or \fBFALSE\fP on errors\&. 
+.RE
+.PP
+
+.SS "oci_field_type_raw ( $statement,  $field)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Tell the raw Oracle data type of the field \fBresource $statement \fP \fBA\fP valid OCI statement identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+Can be the field's index (1-based) or name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false Oracle's raw data type as a string, or \fBFALSE\fP on errors\&. 
+.RE
+.PP
+
+.SS "oci_free_cursor ( $statement_resource)"
+Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_free_statement()\fP} \fB$statement_resource  bool Returns TRUE on success or FALSE on failure\&. \fP
+.RE
+.PP
+
+.SS "oci_free_descriptor ( $descriptor)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Frees a descriptor \fBresource $descriptor  bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. \fP
+.SS "oci_free_statement ( $statement)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Frees all resources associated with statement or cursor \fBresource $statement \fP \fBA\fP valid OCI statement identifier\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_get_implicit_resultset ( $statement)"
+(PECL OCI8 >= 2\&.0\&.0)
+.br
+ Returns the next child statement resource from a parent statement resource that has Oracle Database 12c Implicit Result Sets \fBresource $statement \fP\fBA\fP valid OCI8 statement identifier created by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_parse\fP} and executed by {
+.PP
+\fBoci_execute\fP}\&. The statement identifier may or may not be associated with \fBa\fP SQL statement that returns Implicit Result Sets\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP statement handle for the next child statement available on \fIstatement\fP\&. Returns \fBFALSE\fP when child statements do not exist, or all child statements have been returned by previous calls to {
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_get_implicit_resultset\fP}\&. 
+.RE
+.PP
+
+.SS "oci_internal_debug ( $onoff)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Enables or disables internal debug output \fBbool $onoff \fP Set this to \fBFALSE\fP to turn debug output off or \fBTRUE\fP to turn it on\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void No value is returned\&. 
+.RE
+.PP
+
+.SS "oci_lob_copy (\fBOCI_Lob\fP $lob_to, \fBOCI_Lob\fP $lob_from,  $length = \fC0\fP)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Copies large object \fBOCI_Lob $lob_to \fP The destination LOB\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$lob_from\fP 
+.RE
+.PP
+The copied LOB\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+Indicates the length of data to be copied\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_lob_is_equal (\fBOCI_Lob\fP $lob1, \fBOCI_Lob\fP $lob2)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Compares two LOB/FILE locators for equality \fBOCI_Lob $lob1 \fP \fBA\fP LOB identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$lob2\fP 
+.RE
+.PP
+\fBA\fP LOB identifier\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if these objects are equal, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+
+.SS "oci_new_collection ( $connection,  $tdo,  $schema = \fC\fBnull\fP\fP)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Allocates new collection object \fBresource $connection \fP An Oracle connection identifier, returned by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_connect\fP} or {
+.PP
+\fBoci_pconnect\fP}\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tdo\fP 
+.RE
+.PP
+Should be a valid named type (uppercase)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$schema\fP [optional] 
+.RE
+.PP
+Should point to the scheme, where the named type was created\&. The name of the current user is the default value\&. 
+.PP
+\fBReturns\fP
+.RS 4
+OCI_Collection|false \fBA\fP new \fBOCICollection\fP object or \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "oci_new_connect ( $username,  $password,  $connection_string = \fC\fBnull\fP\fP,  $character_set = \fC\fBnull\fP\fP,  $session_mode = \fC\fBnull\fP\fP)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Connect to the Oracle server using a unique connection \fBstring $username \fP The Oracle user name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP 
+.RE
+.PP
+The password for \fIusername\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection_string\fP [optional] Contains the Oracle instance to connect to\&. It can be an Easy Connect string, or a Connect Name from the tnsnames\&.ora file, or the name of a local Oracle instance\&. 
+.RE
+.PP
+If not specified, PHP uses environment variables such as \fBTWO_TASK\fP (on Linux) or \fBLOCAL\fP (on Windows) and \fBORACLE_SID\fP to determine the Oracle instance to connect to\&. 
+.PP
+To use the Easy Connect naming method, PHP must be linked with Oracle 10g or greater Client libraries\&. The Easy Connect string for Oracle 10g is of the form: [//]host_name[:port][/service_name]\&. From Oracle 11g, the syntax is: [//]host_name[:port][/service_name][:server_type][/instance_name]\&. Service names can be found by running the Oracle utility lsnrctl status on the database server machine\&. 
+.PP
+The tnsnames\&.ora file can be in the Oracle Net search path, which includes $ORACLE_HOME/network/admin and /etc\&. Alternatively set TNS_ADMIN so that $TNS_ADMIN/tnsnames\&.ora is read\&. Make sure the web daemon has read access to the file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$character_set\fP [optional] Determines the character set used by the Oracle Client libraries\&. The character set does not need to match the character set used by the database\&. If it doesn't match, Oracle will do its best to convert data to and from the database character set\&. Depending on the character sets this may not give usable results\&. Conversion also adds some time overhead\&. 
+.RE
+.PP
+If not specified, the Oracle Client libraries determine a character set from the \fBNLS_LANG\fP environment variable\&. 
+.PP
+Passing this parameter can reduce the time taken to connect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$session_mode\fP [optional] This parameter is available since version PHP 5 (PECL OCI8 1\&.1) and accepts the following values: \fBOCI_DEFAULT\fP, \fBOCI_SYSOPER\fP and \fBOCI_SYSDBA\fP\&. If either \fBOCI_SYSOPER\fP or \fBOCI_SYSDBA\fP were specified, this function will try to establish privileged connection using external credentials\&. Privileged connections are disabled by default\&. To enable them you need to set oci8\&.privileged_connect to On\&. 
+.RE
+.PP
+PHP 5\&.3 (PECL OCI8 1\&.3\&.4) introduced the \fBOCI_CRED_EXT\fP mode value\&. This tells Oracle to use External or OS authentication, which must be configured in the database\&. The \fBOCI_CRED_EXT\fP flag can only be used with username of &#x00022;/&#x00022; and a empty password\&. oci8\&.privileged_connect may be On or Off\&. 
+.PP
+\fBOCI_CRED_EXT\fP may be combined with the \fBOCI_SYSOPER\fP or \fBOCI_SYSDBA\fP modes\&. 
+.PP
+\fBOCI_CRED_EXT\fP is not supported on Windows for security reasons\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP connection identifier or \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "oci_new_cursor ( $connection)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Allocates and returns a new cursor (statement handle) \fBresource $connection \fP An Oracle connection identifier, returned by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_connect\fP} or {
+.PP
+\fBoci_pconnect\fP}\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP new statement handle, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "oci_new_descriptor ( $connection,  $type = \fC\fBOCI_DTYPE_LOB\fP\fP)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Initializes a new empty LOB or FILE descriptor \fBresource $connection \fP An Oracle connection identifier, returned by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_connect\fP} or {
+.PP
+\fBoci_pconnect\fP}\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP [optional] 
+.RE
+.PP
+Valid values for \fItype\fP are: \fBOCI_DTYPE_FILE\fP, \fBOCI_DTYPE_LOB\fP and \fBOCI_DTYPE_ROWID\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+OCI_Lob|false \fBA\fP new LOB or FILE descriptor on success, \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "oci_num_fields ( $statement)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Returns the number of result columns in a statement \fBresource $statement \fP \fBA\fP valid OCI statement identifier\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false The number of columns as an integer, or \fBFALSE\fP on errors\&. 
+.RE
+.PP
+
+.SS "oci_num_rows ( $statement)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Returns number of rows affected during statement execution \fBresource $statement \fP \fBA\fP valid OCI statement identifier\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false The number of rows affected as an integer, or \fBFALSE\fP on errors\&. 
+.RE
+.PP
+
+.SS "oci_parse ( $connection,  $sql_text)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Prepares an Oracle statement for execution \fBresource $connection \fP An Oracle connection identifier, returned by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_connect\fP}, {
+.PP
+\fBoci_pconnect\fP}, or {
+.PP
+\fBoci_new_connect\fP}\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sql_text\fP 
+.RE
+.PP
+The SQL or PL/SQL statement\&. 
+.PP
+SQL statements should not end with a semi-colon (&#x00022;;&#x00022;)\&. PL/SQL statements should end with a semi-colon (&#x00022;;&#x00022;)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP statement handle on success, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "oci_password_change ( $connection,  $username,  $old_password,  $new_password)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Changes password of Oracle's user \fBresource $connection \fP An Oracle connection identifier, returned by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_connect\fP} or {
+.PP
+\fBoci_pconnect\fP}\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP 
+.RE
+.PP
+The Oracle user name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$old_password\fP 
+.RE
+.PP
+The old password\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$new_password\fP 
+.RE
+.PP
+The new password to be set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_pconnect ( $username,  $password,  $connection_string = \fC\fBnull\fP\fP,  $character_set = \fC\fBnull\fP\fP,  $session_mode = \fC\fBnull\fP\fP)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Connect to an Oracle database using a persistent connection \fBstring $username \fP The Oracle user name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP 
+.RE
+.PP
+The password for \fIusername\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection_string\fP [optional] Contains the Oracle instance to connect to\&. It can be an Easy Connect string, or a Connect Name from the tnsnames\&.ora file, or the name of a local Oracle instance\&. 
+.RE
+.PP
+If not specified, PHP uses environment variables such as \fBTWO_TASK\fP (on Linux) or \fBLOCAL\fP (on Windows) and \fBORACLE_SID\fP to determine the Oracle instance to connect to\&. 
+.PP
+To use the Easy Connect naming method, PHP must be linked with Oracle 10g or greater Client libraries\&. The Easy Connect string for Oracle 10g is of the form: [//]host_name[:port][/service_name]\&. From Oracle 11g, the syntax is: [//]host_name[:port][/service_name][:server_type][/instance_name]\&. Service names can be found by running the Oracle utility lsnrctl status on the database server machine\&. 
+.PP
+The tnsnames\&.ora file can be in the Oracle Net search path, which includes $ORACLE_HOME/network/admin and /etc\&. Alternatively set TNS_ADMIN so that $TNS_ADMIN/tnsnames\&.ora is read\&. Make sure the web daemon has read access to the file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$character_set\fP [optional] Determines the character set used by the Oracle Client libraries\&. The character set does not need to match the character set used by the database\&. If it doesn't match, Oracle will do its best to convert data to and from the database character set\&. Depending on the character sets this may not give usable results\&. Conversion also adds some time overhead\&. 
+.RE
+.PP
+If not specified, the Oracle Client libraries determine a character set from the \fBNLS_LANG\fP environment variable\&. 
+.PP
+Passing this parameter can reduce the time taken to connect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$session_mode\fP [optional] This parameter is available since version PHP 5 (PECL OCI8 1\&.1) and accepts the following values: \fBOCI_DEFAULT\fP, \fBOCI_SYSOPER\fP and \fBOCI_SYSDBA\fP\&. If either \fBOCI_SYSOPER\fP or \fBOCI_SYSDBA\fP were specified, this function will try to establish privileged connection using external credentials\&. Privileged connections are disabled by default\&. To enable them you need to set oci8\&.privileged_connect to On\&. 
+.RE
+.PP
+PHP 5\&.3 (PECL OCI8 1\&.3\&.4) introduced the \fBOCI_CRED_EXT\fP mode value\&. This tells Oracle to use External or OS authentication, which must be configured in the database\&. The \fBOCI_CRED_EXT\fP flag can only be used with username of &#x00022;/&#x00022; and a empty password\&. oci8\&.privileged_connect may be On or Off\&. 
+.PP
+\fBOCI_CRED_EXT\fP may be combined with the \fBOCI_SYSOPER\fP or \fBOCI_SYSDBA\fP modes\&. 
+.PP
+\fBOCI_CRED_EXT\fP is not supported on Windows for security reasons\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP connection identifier or \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "oci_register_taf_callback ( $connection,  $callbackFn)"
+Register a user-defined callback function for Oracle Database TAF\&. \fBresource $connection \fP An Oracle connection identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$callbackFn\fP [optional] 
+.RE
+.PP
+\fBA\fP user-defined callback to register for Oracle TAF\&. It can be a string of the function name or a \fBClosure\fP (anonymous function)\&.
+.br
+ The interface of a TAF user-defined callback function is as follows:
+.br
+ \fIuserCallbackFn ( resource $connection , int $event , int $type ) : int\fP
+.br
+ See the parameter description and an example on \fCOCI8 Transparent Application Failover (TAF) Support\fP page\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool TRUE on success or FALSE on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "oci_result ( $statement,  $field)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Returns field's value from the fetched row \fBresource $statement  mixed $field \fP Can be either use the column number (1-based) or the column name\&. The case of the column name must be the case that Oracle meta data describes the column as, which is uppercase for columns created case insensitively\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed everything as strings except for abstract types (ROWIDs, LOBs and FILEs)\&. Returns \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "oci_rollback ( $connection)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Rolls back the outstanding database transaction \fBresource $connection \fP An Oracle connection identifier, returned by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_connect\fP}, {
+.PP
+\fBoci_pconnect\fP} or {
+.PP
+\fBoci_new_connect\fP}\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_server_version ( $connection)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Returns the Oracle Database version \fBresource $connection  string|false The version information as a string or \fBFALSE\fP on error\&. \fP
+.SS "oci_set_action ( $connection,  $action_name)"
+(PHP 5\&.3\&.2, PECL OCI8 >= 1\&.4\&.0)
+.br
+ Sets the action name \fBresource $connection An Oracle connection identifier, returned by { oci_connect}, { oci_pconnect}, or { oci_new_connect}\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$action_name\fP 
+.RE
+.PP
+User chosen string up to 32 bytes long\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_set_client_identifier ( $connection,  $client_identifier)"
+(PHP 5\&.3\&.2, PECL OCI8 >= 1\&.4\&.0)
+.br
+ Sets the client identifier \fBresource $connection An Oracle connection identifier, returned by { oci_connect}, { oci_pconnect}, or { oci_new_connect}\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_identifier\fP 
+.RE
+.PP
+User chosen string up to 64 bytes long\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_set_client_info ( $connection,  $client_info)"
+(PHP 5\&.3\&.2, PECL OCI8 >= 1\&.4\&.0)
+.br
+ Sets the client information \fBresource $connection An Oracle connection identifier, returned by { oci_connect}, { oci_pconnect}, or { oci_new_connect}\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_info\fP 
+.RE
+.PP
+User chosen string up to 64 bytes long\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_set_edition ( $edition)"
+(PHP 5\&.3\&.2, PECL OCI8 >= 1\&.4\&.0)
+.br
+ Sets the database edition \fBstring $edition \fP Oracle Database edition name previously created with the SQL 'CREATE EDITION' command\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_set_module_name ( $connection,  $module_name)"
+(PHP 5\&.3\&.2, PECL OCI8 >= 1\&.4\&.0)
+.br
+ Sets the module name \fBresource $connection An Oracle connection identifier, returned by { oci_connect}, { oci_pconnect}, or { oci_new_connect}\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$module_name\fP 
+.RE
+.PP
+User chosen string up to 48 bytes long\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_set_prefetch ( $statement,  $rows)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Sets number of rows to be prefetched by queries \fBresource $statement A valid OCI8 statement identifier created by { oci_parse} and executed by { oci_execute}, or a REF CURSOR statement identifier\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$rows\fP 
+.RE
+.PP
+The number of rows to be prefetched, >= 0 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "oci_statement_type ( $statement)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Returns the type of a statement \fBresource $statement \fP \fBA\fP valid OCI8 statement identifier from {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_parse\fP}\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false The type of \fIstatement\fP as one of the following strings\&. type 
+.RE
+.PP
+.PP
+Return String 
+.PP
+Notes  
+.PP
+ALTER 
+.PP
+BEGIN 
+.PP
+CALL 
+.PP
+Introduced in PHP 5\&.2\&.1 (PECL OCI8 1\&.2\&.3)  
+.PP
+CREATE 
+.PP
+DECLARE 
+.PP
+DELETE 
+.PP
+DROP 
+.PP
+INSERT 
+.PP
+SELECT 
+.PP
+UPDATE 
+.PP
+UNKNOWN 
+.PP
+Returns \fBFALSE\fP on error\&. 
+.SS "oci_unregister_taf_callback ( $connection)"
+Unregister a user-defined callback function for Oracle Database TAF\&. \fBresource $connection \fP An Oracle connection identifier\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool TRUE on success or FALSE on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "ocibindbyname ( $statement,  $column_name, & $variable,  $maximum_length = \fC\-1\fP,  $type = \fC\fBSQLT_CHR\fP\fP)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_by_name\fP} \fBresource $statement  $column_name  $variable  $maximum_length [optional]  $type [optional]  bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&. \fP
+.RE
+.PP
+
+.SS "ocicancel ( $statement_resource)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_cancel\fP} \fBresource $statement_resource  bool Returns TRUE on success or FALSE on failure \fP
+.RE
+.PP
+
+.SS "ocicloselob ( $lob_descriptor)"
+(PHP 4 >= 4\&.0\&.6, PECL OCI8 1\&.0) Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+OCI-Lob::close()} \fBOCI_Lob $lob_descriptor  bool \fPReturns TRUE on success or FALSE on failure\&.
+.RE
+.PP
+
+.SS "ocicollappend ( $collection,  $value)"
+(PHP 4 >= 4\&.0\&.6, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of (
+.PP
+\fBSee also\fP
+.RS 4
+\fBOCI_Collection::append\fP) \fBOCI_Collection $collection  mixed $value \fPThe value to be added to the collection\&. Can be \fBa\fP string or \fBa\fP number\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&.
+.SS "ocicollassign ( $to,  $from)"
+(PHP 4 >= 4\&.0\&.6, PECL OCI8 1\&.0) Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+OCI-Collection::assign()} Assigns \fBa\fP value to the collection from another existing collection \fBOCI_Collection $to  OCI_Collection $from An instance of OCI-Collection\&.  bool \fPReturns TRUE on success or FALSE on failure\&.
+.RE
+.PP
+
+.SS "ocicollassignelem ( $collection,  $index,  $value)"
+(PHP 4 >= 4\&.0\&.6, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+OCI_Collection::assignElem} \fBOCI_Collection $collection  $index \fPThe element index\&. First index is 0\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+Can be a string or a number\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+Returns TRUE on success or FALSE on failure\&.
+.SS "ocicollgetelem ( $collection,  $index)"
+(PHP 4 >= 4\&.0\&.6, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+OCI_COLLection::getElem} \fBOCI_Collection $collection  int $index \fPThe element index\&. First index is 0\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+mixed 
+.RE
+.PP
+Returns \fBFALSE\fP if such element doesn't exist; \fBNULL\fP if element is \fBNULL\fP; string if element is column of a string datatype or number if element is numeric field\&. 
+.SS "ocicollmax ( $collection)"
+(PHP 4 >= 4\&.0\&.6, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+OCI_COLLection::max} \fBOCI_Collection $collection  int|false \fP Returns the maximum number as an integer, or \fBFALSE\fP on errors\&. If the returned value is 0, then the number of elements is not limited\&. 
+.RE
+.PP
+
+.SS "ocicollsize ( $collection)"
+(PHP 4 >= 4\&.0\&.6, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+OCI_COLLection::size} \fBOCI_Collection $collection  int|false \fPReturns the number of elements in the collection or \fBFALSE\fP on error\&.
+.RE
+.PP
+
+.SS "ocicolltrim ( $collection,  $number)"
+(PHP 4 >= 4\&.0\&.6, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBOCI_Collection::trim\fP} \fBOCI_Collection $collection  int|float $number  bool Returns \fBTRUE\fP or \fBFALSE\fP on failure\&. \fP
+.RE
+.PP
+
+.SS "ocicolumnisnull ( $statement,  $column_number_or_name)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_field_is_null\fP} \fBresource $statement  mixed $column_number_or_name  bool Returns TRUE if field is NULL, FALSE otherwise\&. \fP
+.RE
+.PP
+
+.SS "ocicolumnname ( $statement,  $column_number)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_field_name\fP} \fBresource $statement  mixed $column_number  string|false Returns the name as a string, or FALSE on errors\&. \fP
+.RE
+.PP
+
+.SS "ocicolumnprecision ( $statement_resource,  $column_number)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_field_precision\fP} \fBresource $statement_resource  string|int $column_number  int|false Returns the precision as an integer, or \fBFALSE\fP on errors\&. \fP
+.RE
+.PP
+
+.SS "ocicolumnscale ( $statement_resource,  $column_number)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_field_scale\fP} \fBresource $statement_resource  $column_number  int|false Returns the scale as an integer, or \fBFALSE\fP on errors\&. \fP
+.RE
+.PP
+
+.SS "ocicolumnsize ( $statement,  $column_number_or_name)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_field_size\fP} \fBresource $statement  mixed $column_number_or_name  int|false Returns the size of a field in bytes, or \fBFALSE\fP on errors\&. \fP
+.RE
+.PP
+
+.SS "ocicolumntype ( $statement_resource,  $column_number)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_field_type\fP} \fBresource $statement_resource  string|int $column_number  mixed|false Returns the field data type as a string, or FALSE on errors\&. \fP
+.RE
+.PP
+
+.SS "ocicolumntyperaw ( $statement_resource,  $column_number)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_field_type_raw\fP} \fBresource $statement_resource  string|int $column_number  int|false Returns Oracle's raw data type as a number, or FALSE on errors\&. \fP
+.RE
+.PP
+
+.SS "ocicommit ( $connection_resource)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_commit\fP} \fB$connection_resource \fP An Oracle connection identifier, returned by {
+.PP
+\fBoci_connect()\fP}, {
+.PP
+\fBoci_pconnect()\fP}, or {
+.PP
+\fBoci_new_connect()\fP}\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&.
+.SS "ocidefinebyname ( $statement,  $column_name, & $variable,  $type = \fC\fBSQLT_CHR\fP\fP)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_define_by_name\fP} \fBresource $statement \fP\fBA\fP valid OCI8 statement identifier created by {
+.PP
+\fBoci_parse()\fP} and executed by {
+.PP
+\fBoci_execute()\fP}, or \fBa\fP REF CURSOR statement identifier\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$column_name\fP 
+.RE
+.PP
+The column name used in the query\&. Use uppercase for Oracle's default, non-case sensitive column names\&. Use the exact column name case for case-sensitive column names\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$variable\fP 
+.RE
+.PP
+The PHP variable that will contain the returned column value\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP [optional] 
+.RE
+.PP
+The data type to be returned\&. Generally not needed\&. Note that Oracle-style data conversions are not performed\&. For example, SQLT_INT will be ignored and the returned data type will still be SQLT_CHR\&. You can optionally use {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_new_descriptor()\fP} to allocate LOB/ROWID/BFILE descriptors\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "ocierror ( $connection_or_statement_resource)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_error\fP} \fBresource $connection_or_statement_resource [optional] For most errors, resource is the resource handle that was passed to the failing function call\&. For connection errors with oci_connect(), oci_new_connect() or oci_pconnect() do not pass resource\&.  array|false If no error is found, oci_error() returns FALSE\&. Otherwise, oci_error() returns the error information as an associative array\&. \fP
+.RE
+.PP
+
+.SS "ociexecute ( $statement_resource,  $mode = \fC\fBOCI_COMMIT_ON_SUCCESS\fP\fP)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_execute\fP} \fB$statement_resource  $mode [optional]  bool Returns TRUE on success or FALSE on failure \fP
+.RE
+.PP
+
+.SS "ocifetch ( $statement_resource)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_fetch\fP} \fBresource $statement_resource  bool Returns TRUE on success or FALSE if there are no more rows in the statement\&. \fP
+.RE
+.PP
+
+.SS "ocifetchinto ( $statement_resource, & $result,  $mode = \fC\fBnull\fP\fP)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Obsolete variant of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_fetch_array\fP}, {
+.PP
+\fBoci_fetch_object\fP}, {
+.PP
+\fBoci_fetch_assoc\fP} and {
+.PP
+\fBoci_fetch_row\fP} \fBresource $statement_resource  array &$result  int $mode [optional]  int|bool \fP
+.RE
+.PP
+
+.SS "ocifetchstatement ( $statement_resource, & $output,  $skip,  $maximum_rows,  $flags)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_fetch_all\fP} \fB$statement_resource  $output  $skip [optional]  $maximum_rows [optional]  $flags [optional]  int|false Returns the number of rows in output, which may be 0 or more, or FALSE on failure\&. \fP
+.RE
+.PP
+
+.SS "ocifreecollection ( $collection)"
+(PHP 4 >= 4\&.0\&.7, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBOCI_Collection::free\fP} \fBOCI_Collection $collection  bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&. \fP
+.RE
+.PP
+
+.SS "ocifreecursor ( $statement_resource)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_free_statement\fP} \fBresource $statement_resource  bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. \fP
+.RE
+.PP
+
+.SS "ocifreedesc ( $lob_descriptor)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+OCI-Lob::free} \fB$lob_descriptor  bool \fPReturns \fBTRUE\fP on success or \fBFALSE\fP on failure\&.
+.RE
+.PP
+
+.SS "ocifreestatement ( $statement_resource)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_free_statement\fP} \fBresource $statement_resource  bool Returns TRUE on success or FALSE on failure\&. \fP
+.RE
+.PP
+
+.SS "ociinternaldebug ( $mode)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_internal_debug\fP} \fBbool $mode \fP
+.RE
+.PP
+
+.SS "ociloadlob ( $lob_descriptor)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBOCI_Lob::load\fP} \fBOCI_Lob $lob_descriptor  string|false \fPReturns the contents of the object, or \fBFALSE\fP on errors\&.
+.RE
+.PP
+
+.SS "ocilogoff ( $connection_resource)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_close\fP} \fBresource $connection_resource  bool Returns TRUE on success or FALSE on failure\&. \fP
+.RE
+.PP
+
+.SS "ocilogon ( $username,  $password,  $connection_string,  $character_set,  $session_mode)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_connect\fP} \fBstring $username  string $password  string $connection_string[optional]  string $character_set[optional]  int $session_mode[optional]  resource|false Returns a connection identifier or FALSE on error\&. \fP
+.RE
+.PP
+
+.SS "ocinewcollection ( $connection_resource,  $tdo,  $schema = \fC\fBnull\fP\fP)"
+(PHP 4 >= 4\&.0\&.6, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_new_collection\fP} \fB$connection_resource \fP An Oracle connection identifier, returned by {
+.PP
+\fBoci_connect()\fP} or {
+.PP
+\fBoci_pconnect()\fP}\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tdo\fP 
+.RE
+.PP
+Should be a valid named type (uppercase)\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$schema\fP 
+.RE
+.PP
+Should point to the scheme, where the named type was created\&. The name of the current user is the default value\&.
+.PP
+\fBReturns\fP
+.RS 4
+OCI_Collection|false 
+.RE
+.PP
+Returns a new \fBOCI_Collection\fP object or FALSE on error\&.
+.SS "ocinewcursor ( $connection_resource)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_new_cursor\fP} \fBresource $connection_resource  resource|false Returns a new statement handle, or FALSE on error\&. \fP
+.RE
+.PP
+
+.SS "ocinewdescriptor ( $connection_resource,  $type = \fC\fBOCI_DTYPE_LOB\fP\fP)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_new_descriptor\fP} \fBresource $connection_resource \fP An Oracle connection identifier, returned by {
+.PP
+\fBoci_connect()\fP} or {
+.PP
+\fBoci_pconnect()\fP}\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP [optional] 
+.RE
+.PP
+Valid values for type are: \fBOCI_DTYPE_FILE\fP, \fBOCI_DTYPE_LOB\fP and \fBOCI_DTYPE_ROWID\fP\&.
+.PP
+\fBReturns\fP
+.RS 4
+OCI_LOB|false Returns a new LOB or FILE descriptor on success, FALSE on error\&. 
+.RE
+.PP
+
+.SS "ocinlogon ( $username,  $password,  $connection_string,  $character_set,  $session_mode)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_new_connect\fP} \fB$username  $password  $connection_string [optional]  $character_set [optional]  $session_mode [optional]  resource|false \fPReturns \fBa\fP connection identifier or \fBFALSE\fP on error\&.
+.RE
+.PP
+
+.SS "ocinumcols ( $statement_resource)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_num_fields\fP} \fBresource $statement_resource  int|false Returns the number of columns as an integer, or FALSE on errors\&. \fP
+.RE
+.PP
+
+.SS "ociparse ( $connection_resource,  $sql_text)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_parse\fP} \fBresource $connection_resource  string $sql_text  resource|false Returns a statement handle on success, or FALSE on error\&. \fP
+.RE
+.PP
+
+.SS "ocipasswordchange ( $connection_resource_or_connection_string_or_dbname,  $username,  $old_password,  $new_password)"
+(PHP 5, PECL OCI8 >= 1\&.1\&.0)
+.br
+ Changes password of Oracle's user 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection_resource_or_connection_string_or_dbname\fP 
+.RE
+.PP
+An Oracle connection identifier, returned by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_connect()\fP} or {
+.PP
+\fBoci_pconnect()\fP}\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP 
+.RE
+.PP
+The Oracle user name\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$old_password\fP 
+.RE
+.PP
+The new password to be set\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$new_password\fP 
+.RE
+.PP
+The new password to be set\&.
+.PP
+\fBReturns\fP
+.RS 4
+resource|bool 
+.RE
+.PP
+Returns \fBTRUE\fP on success or \fBFALSE\fP on failure or \fBresource\fP, depending on the function parameters\&.
+.SS "ociplogon ( $username,  $password,  $connection_string,  $character_set,  $session_mode)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_pconnect\fP} \fBstring $username \fPThe Oracle user name\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP 
+.RE
+.PP
+The password for username
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection_string\fP [optional] 
+.br
+\fI$character_set\fP [optional] 
+.br
+\fI$session_mode\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false 
+.RE
+.PP
+Returns a connection identifier or \fBFALSE\fP on error\&.
+.SS "ociresult ( $statement_resource,  $column_number_or_name)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_result\fP} \fBresource $statement_resource  $column_number_or_name  false|mixed Returns everything as strings except for abstract types (ROWIDs, LOBs and FILEs)\&. Returns FALSE on error\&. \fP
+.RE
+.PP
+
+.SS "ocirollback ( $connection_resource)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_rollback\fP} \fBresource $connection_resource  bool \fPReturns \fBTRUE\fP on success or \fBFALSE\fP on failure\&.
+.RE
+.PP
+
+.SS "ocirowcount ( $statement_resource)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_num_rows\fP} \fBresource $statement_resource  int|false Returns the number of rows affected as an integer, or FALSE on errors\&. \fP
+.RE
+.PP
+
+.SS "ocisavelob ( $lob_descriptor,  $data,  $offset)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+OCI-Lob::save} \fBOCI_Lob $lob_descriptor  string $data  int $offset [optional]  bool \fP
+.RE
+.PP
+
+.SS "ocisavelobfile ( $lob_descriptor,  $filename)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBOCI_Lob::import\fP} \fBOCI_Lob $lob_descriptor  string $filename  bool \fP
+.RE
+.PP
+
+.SS "ociserverversion ( $connection_resource)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_server_version\fP} \fB$connection_resource  string|false Returns the version information as a string or FALSE on error\&. \fP
+.RE
+.PP
+
+.SS "ocisetprefetch ( $statement_resource,  $number_of_rows)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_set_prefetch\fP} \fBresource $statement_resource \fP\fBA\fP valid OCI8 statement identifier created by {
+.PP
+\fBoci_parse()\fP} and executed by {
+.PP
+\fBoci_execute()\fP}, or \fBa\fP \fIREF CURSOR\fP statement identifier\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$number_of_rows\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&.
+.SS "ocistatementtype ( $statement_resource)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_statement_type\fP} \fBresource $statement_resource  string Returns everything as strings except for abstract types (ROWIDs, LOBs and FILEs)\&. Returns FALSE on error\&. \fP
+.RE
+.PP
+
+.SS "ociwritelobtofile ( $lob_descriptor,  $filename,  $start,  $length)"
+(PHP 4, PHP 5, PECL OCI8 >= 1\&.0\&.0)
+.br
+ Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBOCI_Lob::export\fP} \fBOCI_Lob $lob_descriptor  string $filename \fPPath to the \fBfile\fP\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$start\fP [optional] 
+.RE
+.PP
+Indicates from where to start exporting\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+Indicates the length of data to be exported\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "ociwritetemporarylob ( $lob_descriptor,  $data,  $lob_type = \fC\fBOCI_TEMP_CLOB\fP\fP)"
+(PHP 4 >= 4\&.0\&.6, PECL OCI8 1\&.0) Writes a temporary large object Alias of {
+.PP
+\fBSee also\fP
+.RS 4
+OCI-Lob::writeTemporary()} \fBOCI_Lob $lob_descriptor  string $data \fPThe data to write\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$lob_type\fP 
+.RE
+.PP
+Can be one of the following: 
+.PP
+.PD 0
+.IP "\(bu" 2
+\fBOCI_TEMP_BLOB\fP is used to create temporary BLOBs  
+.IP "\(bu" 2
+\fBOCI_TEMP_CLOB\fP is used to create temporary CLOBs  
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+Returns TRUE on success or FALSE on failure\&.
+.SH "Variable Documentation"
+.PP 
+.SS "const OCI_ASSOC 1"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_fetch_all\fP} and {
+.PP
+\fBoci_fetch_array\fP} to get results as an associative array\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_B_BFILE 114"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_by_name\fP} when binding BFILEs\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_B_BIN 23"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_by_name\fP} to bind RAW values\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_B_BLOB 113"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_by_name\fP} when binding BLOBs\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_B_BOL 252"
+(PECL OCI8 >= 2\&.0\&.7)
+.br
+ Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_by_name\fP} when binding PL/SQL BOOLEAN\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_B_CFILEE 115"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_by_name\fP} when binding CFILEs\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_B_CLOB 112"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_by_name\fP} when binding CLOBs\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_B_CURSOR 116"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_by_name\fP} when binding cursors, previously allocated with {
+.PP
+\fBoci_new_descriptor\fP}\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_B_INT 3"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_array_by_name\fP} to bind arrays of INTEGER\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_B_NTY 108"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_by_name\fP} when binding named data types\&. Note: in PHP < 5\&.0 it was called \fBOCI_B_SQLT_NTY\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_B_NUM 2"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_array_by_name\fP} to bind arrays of NUMBER\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_B_ROWID 104"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_by_name\fP} when binding ROWIDs\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_BOTH 3"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_fetch_all\fP} and {
+.PP
+\fBoci_fetch_array\fP} to get results as an array with both associative and number indices\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_COMMIT_ON_SUCCESS 32"
+Statement execution mode for {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_execute\fP} call\&. Automatically commit changes when the statement has succeeded\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_CRED_EXT \-2147483648"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_connect\fP} for using Oracles' External or OS authentication\&. Introduced in PHP 5\&.3 and PECL OCI8 1\&.3\&.4\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_D_FILE 56"
+The same as \fBOCI_DTYPE_FILE\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const OCI_D_LOB 50"
+The same as \fBOCI_DTYPE_LOB\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const OCI_D_ROWID 54"
+The same as \fBOCI_DTYPE_ROWID\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const OCI_DEFAULT 0"
+See \fBOCI_NO_AUTO_COMMIT\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const OCI_DESCRIBE_ONLY 16"
+Statement execution mode for {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_execute\fP}\&. Use this mode \fBif\fP you want meta data such as the column names but don't want to fetch rows from the query\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_DTYPE_FILE 56"
+This flag tells {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_new_descriptor\fP} to initialize \fBa\fP new FILE descriptor\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_DTYPE_LOB 50"
+This flag tells {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_new_descriptor\fP} to initialize \fBa\fP new LOB descriptor\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_DTYPE_ROWID 54"
+This flag tells {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_new_descriptor\fP} to initialize \fBa\fP new ROWID descriptor\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_EXACT_FETCH 2"
+Obsolete\&. Statement fetch mode\&. Used when the application knows in advance exactly how many rows it will be fetching\&. This mode turns prefetching off for Oracle release 8 or later mode\&. The cursor is canceled after the desired rows are fetched which may result in reduced server-side resource usage\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const OCI_FETCHSTATEMENT_BY_COLUMN 16"
+Default mode of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_fetch_all\fP}\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_FETCHSTATEMENT_BY_ROW 32"
+Alternative mode of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_fetch_all\fP}\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_LOB_BUFFER_FREE 1"
+Used with to free buffers used\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const OCI_NO_AUTO_COMMIT 0"
+Statement execution mode for {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_execute\fP}\&. The transaction is not automatically committed when using this mode\&. For readability in new code, use this value instead of the older, equivalent \fB\fBOCI_DEFAULT\fP\fP \fBconstant\fP\&. Introduced in PHP 5\&.3\&.2 (PECL OCI8 1\&.4)\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_NUM 2"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_fetch_all\fP} and {
+.PP
+\fBoci_fetch_array\fP} to get results as an enumerated array\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_RETURN_LOBS 8"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_fetch_array\fP} to get the data value of the LOB instead of the descriptor\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_RETURN_NULLS 4"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_fetch_array\fP} to get empty array elements \fBif\fP the row items value is \fBNULL\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_SEEK_CUR 1"
+Used with to set the seek position\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const OCI_SEEK_END 2"
+Used with to set the seek position\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const OCI_SEEK_SET 0"
+Used with to set the seek position\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const OCI_SYSDATE 'SYSDATE'"
+Obsolete\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const OCI_SYSDBA 2"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_connect\fP} to connect with the SYSDBA privilege\&. The \fIphp\&.ini\fP setting oci8\&.privileged_connect should be enabled to use this\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_SYSOPER 4"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_connect\fP} to connect with the SYSOPER privilege\&. The \fIphp\&.ini\fP setting oci8\&.privileged_connect should be enabled to use this\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const OCI_TEMP_BLOB 1"
+Used with to indicate that a temporary BLOB should be created\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const OCI_TEMP_CLOB 2"
+Used with to indicate that a temporary CLOB should be created\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const SQLT_AFC 96"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_array_by_name\fP} to bind arrays of CHAR\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const SQLT_AVC 97"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_array_by_name\fP} to bind arrays of VARCHAR2\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const SQLT_BDOUBLE 22"
+Not supported\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const SQLT_BFILEE 114"
+The same as \fBOCI_B_BFILE\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const SQLT_BFLOAT 21"
+Not supported\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const SQLT_BIN 23"
+The same as \fBOCI_B_BIN\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const SQLT_BLOB 113"
+The same as \fBOCI_B_BLOB\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const SQLT_BOL 252"
+(PECL OCI8 >= 2\&.0\&.7)
+.br
+ The same as \fBOCI_B_BOL\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const SQLT_CFILEE 115"
+The same as \fBOCI_B_CFILEE\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const SQLT_CHR 1"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_array_by_name\fP} to bind arrays of VARCHAR2\&. Also used with {
+.PP
+\fBoci_bind_by_name\fP}\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const SQLT_CLOB 112"
+The same as \fBOCI_B_CLOB\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const SQLT_FLT 4"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_array_by_name\fP} to bind arrays of FLOAT\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const SQLT_INT 3"
+The same as \fBOCI_B_INT\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const SQLT_LBI 24"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_by_name\fP} to bind LONG RAW values\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const SQLT_LNG 8"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_by_name\fP} to bind LONG values\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const SQLT_LVC 94"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_array_by_name\fP} to bind arrays of LONG VARCHAR\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const SQLT_NTY 108"
+The same as \fBOCI_B_NTY\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const SQLT_NUM 2"
+The same as \fBOCI_B_NUM\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const SQLT_ODT 156"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_array_by_name\fP} to bind arrays of LONG\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const SQLT_RDD 104"
+The same as \fBOCI_B_ROWID\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const SQLT_RSET 116"
+The same as \fBOCI_B_CURSOR\fP\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const SQLT_STR 5"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_array_by_name\fP} to bind arrays of STRING\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const SQLT_UIN 68"
+Not supported\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.SS "const SQLT_VCS 9"
+Used with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBoci_bind_array_by_name\fP} to bind arrays of VARCHAR\&. \fBhttps://php\&.net/manual/en/oci8\&.constants\&.php\fP
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

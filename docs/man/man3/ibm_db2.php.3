@@ -1,0 +1,1836 @@
+.TH "vendor/jetbrains/phpstorm-stubs/ibm_db2/ibm_db2.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/ibm_db2/ibm_db2.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBdb2_connect\fP ($database, $username, $password, array $options=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_commit\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBdb2_pconnect\fP ($database, $username, $password, array $options=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_autocommit\fP ($connection, $value=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_bind_param\fP ($stmt, $parameter_number, $variable_name, $parameter_type=\fBnull\fP, $data_type=\fBnull\fP, $precision=\fBnull\fP, $scale=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_close\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBdb2_column_privileges\fP ($connection, $qualifier=\fBnull\fP, $schema=\fBnull\fP, $table_name=\fBnull\fP, $column_name=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_columnprivileges\fP ()"
+.br
+.ti -1c
+.RI "\fBdb2_columns\fP ($connection, $qualifier=\fBnull\fP, $schema=\fBnull\fP, $table_name=\fBnull\fP, $column_name=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_foreign_keys\fP ($connection, $qualifier, $schema, $table_name)"
+.br
+.ti -1c
+.RI "\fBdb2_foreignkeys\fP ()"
+.br
+.ti -1c
+.RI "\fBdb2_primary_keys\fP ($connection, $qualifier, $schema, $table_name)"
+.br
+.ti -1c
+.RI "\fBdb2_primarykeys\fP ()"
+.br
+.ti -1c
+.RI "\fBdb2_procedure_columns\fP ($connection, $qualifier, $schema, $procedure, $parameter)"
+.br
+.ti -1c
+.RI "\fBdb2_procedurecolumns\fP ()"
+.br
+.ti -1c
+.RI "\fBdb2_procedures\fP ($connection, $qualifier, $schema, $procedure)"
+.br
+.ti -1c
+.RI "\fBdb2_special_columns\fP ($connection, $qualifier, $schema, $table_name, $scope)"
+.br
+.ti -1c
+.RI "\fBdb2_specialcolumns\fP ()"
+.br
+.ti -1c
+.RI "\fBdb2_statistics\fP ($connection, $qualifier, $schema, $table_name, $unique)"
+.br
+.ti -1c
+.RI "\fBdb2_table_privileges\fP ($connection, $qualifier=\fBnull\fP, $schema=\fBnull\fP, $table_name=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_tableprivileges\fP ()"
+.br
+.ti -1c
+.RI "\fBdb2_tables\fP ($connection, $qualifier=\fBnull\fP, $schema=\fBnull\fP, $table_name=\fBnull\fP, $table_type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_exec\fP ($connection, $statement, array $options=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_prepare\fP ($connection, $statement, array $options=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_execute\fP ($stmt, array $parameters=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_stmt_errormsg\fP ($stmt=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_conn_errormsg\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_conn_error\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_stmt_error\fP ($stmt=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_next_result\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBdb2_num_fields\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBdb2_num_rows\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBdb2_field_name\fP ($stmt, $column)"
+.br
+.ti -1c
+.RI "\fBdb2_field_display_size\fP ($stmt, $column)"
+.br
+.ti -1c
+.RI "\fBdb2_field_num\fP ($stmt, $column)"
+.br
+.ti -1c
+.RI "\fBdb2_field_precision\fP ($stmt, $column)"
+.br
+.ti -1c
+.RI "\fBdb2_field_scale\fP ($stmt, $column)"
+.br
+.ti -1c
+.RI "\fBdb2_field_type\fP ($stmt, $column)"
+.br
+.ti -1c
+.RI "\fBdb2_field_width\fP ($stmt, $column)"
+.br
+.ti -1c
+.RI "\fBdb2_cursor_type\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBdb2_rollback\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBdb2_free_stmt\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBdb2_result\fP ($stmt, $column)"
+.br
+.ti -1c
+.RI "\fBdb2_fetch_row\fP ($stmt, $row_number=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_fetch_assoc\fP ($stmt, $row_number=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_fetch_array\fP ($stmt, $row_number=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_fetch_both\fP ($stmt, $row_number=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_free_result\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBdb2_set_option\fP ($resource, array $options, $type)"
+.br
+.ti -1c
+.RI "\fBdb2_setoption\fP ()"
+.br
+.ti -1c
+.RI "\fBdb2_fetch_object\fP ($stmt, $row_number=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdb2_server_info\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBdb2_client_info\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBdb2_escape_string\fP ($string_literal)"
+.br
+.ti -1c
+.RI "\fBdb2_lob_read\fP ($stmt, $colnum, $length)"
+.br
+.ti -1c
+.RI "\fBdb2_get_option\fP ($resource, $option)"
+.br
+.ti -1c
+.RI "\fBdb2_last_insert_id\fP ($resource)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBDB2_BINARY\fP 1"
+.br
+.ti -1c
+.RI "const \fBDB2_CONVERT\fP 2"
+.br
+.ti -1c
+.RI "const \fBDB2_PASSTHRU\fP 3"
+.br
+.ti -1c
+.RI "const \fBDB2_SCROLLABLE\fP 1"
+.br
+.ti -1c
+.RI "const \fBDB2_FORWARD_ONLY\fP 0"
+.br
+.ti -1c
+.RI "const \fBDB2_PARAM_IN\fP 1"
+.br
+.ti -1c
+.RI "const \fBDB2_PARAM_OUT\fP 4"
+.br
+.ti -1c
+.RI "const \fBDB2_PARAM_INOUT\fP 2"
+.br
+.ti -1c
+.RI "const \fBDB2_PARAM_FILE\fP 11"
+.br
+.ti -1c
+.RI "const \fBDB2_AUTOCOMMIT_ON\fP 1"
+.br
+.ti -1c
+.RI "const \fBDB2_AUTOCOMMIT_OFF\fP 0"
+.br
+.ti -1c
+.RI "const \fBDB2_DEFERRED_PREPARE_ON\fP 1"
+.br
+.ti -1c
+.RI "const \fBDB2_DEFERRED_PREPARE_OFF\fP 0"
+.br
+.ti -1c
+.RI "const \fBDB2_DOUBLE\fP 8"
+.br
+.ti -1c
+.RI "const \fBDB2_LONG\fP 4"
+.br
+.ti -1c
+.RI "const \fBDB2_CHAR\fP 1"
+.br
+.ti -1c
+.RI "const \fBDB2_XML\fP \-370"
+.br
+.ti -1c
+.RI "const \fBDB2_CASE_NATURAL\fP 0"
+.br
+.ti -1c
+.RI "const \fBDB2_CASE_LOWER\fP 1"
+.br
+.ti -1c
+.RI "const \fBDB2_CASE_UPPER\fP 2"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "db2_autocommit ( $connection,  $value = \fC\fBnull\fP\fP)"
+Returns or sets the AUTOCOMMIT state for a database connection \fBresource $connection \fP \fBA\fP valid database connection resource variable as returned from db2_connect or db2_pconnect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+One of the following constants: DB2_AUTOCOMMIT_OFF 
+.PP
+Turns AUTOCOMMIT off\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed When db2_autocommit receives only the connection parameter, it returns the current state of AUTOCOMMIT for the requested connection as an integer value\&. \fBA\fP value of 0 indicates that AUTOCOMMIT is off, while a value of 1 indicates that AUTOCOMMIT is on\&. 
+.RE
+.PP
+.PP
+When db2_autocommit receives both the connection parameter and autocommit parameter, it attempts to set the AUTOCOMMIT state of the requested connection to the corresponding state\&. true on success or false on failure\&. 
+.SS "db2_bind_param ( $stmt,  $parameter_number,  $variable_name,  $parameter_type = \fC\fBnull\fP\fP,  $data_type = \fC\fBnull\fP\fP,  $precision = \fC\fBnull\fP\fP,  $scale = \fC\fBnull\fP\fP)"
+Binds a PHP variable to an SQL statement parameter \fBresource $stmt \fP \fBA\fP prepared statement returned from db2_prepare\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parameter_number\fP 
+.br
+\fI$variable_name\fP 
+.br
+\fI$parameter_type\fP 
+.br
+\fI$data_type\fP 
+.br
+\fI$precision\fP 
+.RE
+.PP
+Specifies the precision with which the variable should be bound to the database\&. This parameter can also be used for retrieving XML output values from stored procedures\&. \fBA\fP non-negative value specifies the maximum size of the XML data that will be retrieved from the database\&. If this parameter is not used, a default of 1MB will be assumed for retrieving the XML output value from the stored procedure\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$scale\fP 
+.RE
+.PP
+Specifies the scale with which the variable should be bound to the database\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "db2_client_info ( $connection)"
+Returns an object with properties that describe the DB2 database client \fBresource $connection \fP Specifies an active DB2 client connection\&. 
+.PP
+\fBReturns\fP
+.RS 4
+object|false An object on a successful call\&. Returns false on failure\&. 
+.RE
+.PP
+
+.SS "db2_close ( $connection)"
+Closes a database connection \fBresource $connection \fP Specifies an active DB2 client connection\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "db2_column_privileges ( $connection,  $qualifier = \fC\fBnull\fP\fP,  $schema = \fC\fBnull\fP\fP,  $table_name = \fC\fBnull\fP\fP,  $column_name = \fC\fBnull\fP\fP)"
+Returns a result set listing the columns and associated privileges for a table \fBresource $connection \fP \fBA\fP valid connection to an IBM DB2, Cloudscape, or Apache Derby database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP 
+.RE
+.PP
+\fBA\fP qualifier for DB2 databases running on OS/390 or z/OS servers\&. For other databases, pass  or an empty string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$schema\fP 
+.RE
+.PP
+The schema which contains the tables\&. To match all schemas, pass  or an empty string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.br
+\fI$column_name\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a statement resource with a result set containing rows describing the column privileges for columns matching the specified parameters\&. The rows are composed of the following columns: 
+.RE
+.PP
+.PP
+Column name 
+.PP
+Description  
+.PP
+TABLE_CAT 
+.PP
+Name of the catalog\&. The value is NULL if this table does not have catalogs\&.  
+.PP
+TABLE_SCHEM 
+.PP
+Name of the schema\&.  
+.PP
+TABLE_NAME 
+.PP
+Name of the table or view\&.  
+.PP
+COLUMN_NAME 
+.PP
+Name of the column\&.  
+.PP
+GRANTOR 
+.PP
+Authorization ID of the user who granted the privilege\&.  
+.PP
+GRANTEE 
+.PP
+Authorization ID of the user to whom the privilege was granted\&.  
+.PP
+PRIVILEGE 
+.PP
+The privilege for the column\&.  
+.PP
+IS_GRANTABLE 
+.PP
+Whether the GRANTEE is permitted to grant this privilege to other users\&.  
+.SS "db2_columnprivileges ()"
+
+.SS "db2_columns ( $connection,  $qualifier = \fC\fBnull\fP\fP,  $schema = \fC\fBnull\fP\fP,  $table_name = \fC\fBnull\fP\fP,  $column_name = \fC\fBnull\fP\fP)"
+Returns a result set listing the columns and associated metadata for a table \fBresource $connection \fP \fBA\fP valid connection to an IBM DB2, Cloudscape, or Apache Derby database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP 
+.RE
+.PP
+\fBA\fP qualifier for DB2 databases running on OS/390 or z/OS servers\&. For other databases, pass  or an empty string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$schema\fP 
+.RE
+.PP
+The schema which contains the tables\&. To match all schemas, pass ''\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.br
+\fI$column_name\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP statement resource with a result set containing rows describing the columns matching the specified parameters\&. The rows are composed of the following columns: 
+.RE
+.PP
+.PP
+Column name 
+.PP
+Description  
+.PP
+TABLE_CAT 
+.PP
+Name of the catalog\&. The value is NULL if this table does not have catalogs\&.  
+.PP
+TABLE_SCHEM 
+.PP
+Name of the schema\&.  
+.PP
+TABLE_NAME 
+.PP
+Name of the table or view\&.  
+.PP
+COLUMN_NAME 
+.PP
+Name of the column\&.  
+.PP
+DATA_TYPE 
+.PP
+The SQL data type for the column represented as an integer value\&.  
+.PP
+TYPE_NAME 
+.PP
+\fBA\fP string representing the data type for the column\&.  
+.PP
+COLUMN_SIZE 
+.PP
+An integer value representing the size of the column\&.  
+.PP
+BUFFER_LENGTH 
+.PP
+Maximum number of bytes necessary to store data from this column\&.   
+.PP
+DECIMAL_DIGITS 
+.PP
+The scale of the column, or  where scale is not applicable\&.   
+.PP
+NUM_PREC_RADIX 
+.PP
+An integer value of either 10 (representing an exact numeric data type), 2 (representing an approximate numeric data type), or  (representing a data type for which radix is not applicable)\&.   
+.PP
+NULLABLE 
+.PP
+An integer value representing whether the column is nullable or not\&.  
+.PP
+REMARKS 
+.PP
+Description of the column\&.  
+.PP
+COLUMN_DEF 
+.PP
+Default value for the column\&.  
+.PP
+SQL_DATA_TYPE 
+.PP
+An integer value representing the size of the column\&.  
+.PP
+SQL_DATETIME_SUB 
+.PP
+Returns an integer value representing a datetime subtype code, or  for SQL data types to which this does not apply\&.   
+.PP
+CHAR_OCTET_LENGTH 
+.PP
+Maximum length in octets for a character data type column, which matches COLUMN_SIZE for single-byte character set data, or  for non-character data types\&.   
+.PP
+ORDINAL_POSITION 
+.PP
+The 1-indexed position of the column in the table\&.  
+.PP
+IS_NULLABLE 
+.PP
+\fBA\fP string value where 'YES' means that the column is nullable and 'NO' means that the column is not nullable\&.   
+.SS "db2_commit ( $connection)"
+Commits a transaction \fBresource $connection \fP \fBA\fP valid database connection resource variable as returned from db2_connect or db2_pconnect\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "db2_conn_error ( $connection = \fC\fBnull\fP\fP)"
+Returns a string containing the SQLSTATE returned by the last connection attempt \fBresource $connection \fP \fBA\fP connection resource associated with a connection that initially succeeded, but which over time became invalid\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the SQLSTATE value resulting from a failed connection attempt\&. Returns an empty string if there is no error associated with the last connection attempt\&. 
+.RE
+.PP
+
+.SS "db2_conn_errormsg ( $connection = \fC\fBnull\fP\fP)"
+Returns the last connection error message and SQLCODE value \fBresource $connection \fP \fBA\fP connection resource associated with a connection that initially succeeded, but which over time became invalid\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string containing the error message and SQLCODE value resulting from a failed connection attempt\&. If there is no error associated with the last connection attempt, db2_conn_errormsg returns an empty string\&. 
+.RE
+.PP
+
+.SS "db2_connect ( $database,  $username,  $password, array $options = \fC\fBnull\fP\fP)"
+Returns a connection to a database \fBstring $database \fP For a cataloged connection to a database, database represents the database alias in the DB2 client catalog\&. 
+.PP
+For an uncataloged connection to a database, database represents a complete connection string in the following format: DATABASE=database;HOSTNAME=hostname;PORT=port;PROTOCOL=TCPIP;UID=username;PWD=password; where the parameters represent the following values: database 
+.PP
+The name of the database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP 
+.RE
+.PP
+The username with which you are connecting to the database\&. 
+.PP
+For uncataloged connections, you must pass a  value or empty string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP 
+.RE
+.PP
+The password with which you are connecting to the database\&. 
+.PP
+For uncataloged connections, you must pass a  value or empty string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP 
+.RE
+.PP
+An associative array of connection options that affect the behavior of the connection, where valid array keys include: autocommit 
+.PP
+Passing the DB2_AUTOCOMMIT_ON value turns autocommit on for this connection handle\&. 
+.PP
+Passing the DB2_AUTOCOMMIT_OFF value turns autocommit off for this connection handle\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP connection handle resource if the connection attempt is successful\&. If the connection attempt fails, db2_connect returns false\&. 
+.RE
+.PP
+
+.SS "db2_cursor_type ( $stmt)"
+Returns the cursor type used by a statement resource \fBresource $stmt \fP \fBA\fP valid statement resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int either DB2_FORWARD_ONLY if the statement resource uses a forward-only cursor or DB2_SCROLLABLE if the statement resource uses a scrollable cursor\&. 
+.RE
+.PP
+
+.SS "db2_escape_string ( $string_literal)"
+Used to escape certain characters \fBstring $string_literal \fP The string that contains special characters that need to be modified\&. Characters that are prepended with a backslash are \\x00, 
+.br
+, \\r, \\, ', " and \\x1a\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string string_literal with the special characters noted above prepended with backslashes\&. 
+.RE
+.PP
+
+.SS "db2_exec ( $connection,  $statement, array $options = \fC\fBnull\fP\fP)"
+Executes an SQL statement directly \fBresource $connection \fP \fBA\fP valid database connection resource variable as returned from db2_connect or db2_pconnect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$statement\fP 
+.RE
+.PP
+An SQL statement\&. The statement cannot contain any parameter markers\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP 
+.RE
+.PP
+An associative array containing statement options\&. You can use this parameter to request a scrollable cursor on database servers that support this functionality\&. cursor 
+.PP
+Passing the DB2_FORWARD_ONLY value requests a forward-only cursor for this SQL statement\&. This is the default type of cursor, and it is supported by all database servers\&. It is also much faster than a scrollable cursor\&. 
+.PP
+Passing the DB2_SCROLLABLE value requests a scrollable cursor for this SQL statement\&. This type of cursor enables you to fetch rows non-sequentially from the database server\&. However, it is only supported by DB2 servers, and is much slower than forward-only cursors\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP statement resource if the SQL statement was issued successfully, or false if the database failed to execute the SQL statement\&. 
+.RE
+.PP
+
+.SS "db2_execute ( $stmt, array $parameters = \fC\fBnull\fP\fP)"
+Executes a prepared SQL statement \fBresource $stmt \fP \fBA\fP prepared statement returned from db2_prepare\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parameters\fP 
+.RE
+.PP
+An array of input parameters matching any parameter markers contained in the prepared statement\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "db2_fetch_array ( $stmt,  $row_number = \fC\fBnull\fP\fP)"
+Returns an array, indexed by column position, representing a row in a result set \fBresource $stmt \fP \fBA\fP valid stmt resource containing a result set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row_number\fP 
+.RE
+.PP
+Requests a specific 1-indexed row from the result set\&. Passing this parameter results in a PHP warning if the result set uses a forward-only cursor\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false \fBA\fP 0-indexed array with column values indexed by the column position representing the next or requested row in the result set\&. Returns false if there are no rows left in the result set, or if the row requested by row_number does not exist in the result set\&. 
+.RE
+.PP
+
+.SS "db2_fetch_assoc ( $stmt,  $row_number = \fC\fBnull\fP\fP)"
+Returns an array, indexed by column name, representing a row in a result set \fBresource $stmt \fP \fBA\fP valid stmt resource containing a result set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row_number\fP 
+.RE
+.PP
+Requests a specific 1-indexed row from the result set\&. Passing this parameter results in a PHP warning if the result set uses a forward-only cursor\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false An associative array with column values indexed by the column name representing the next or requested row in the result set\&. Returns false if there are no rows left in the result set, or if the row requested by row_number does not exist in the result set\&. 
+.RE
+.PP
+
+.SS "db2_fetch_both ( $stmt,  $row_number = \fC\fBnull\fP\fP)"
+Returns an array, indexed by both column name and position, representing a row in a result set \fBresource $stmt \fP \fBA\fP valid stmt resource containing a result set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row_number\fP 
+.RE
+.PP
+Requests a specific 1-indexed row from the result set\&. Passing this parameter results in a PHP warning if the result set uses a forward-only cursor\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false An associative array with column values indexed by both the column name and 0-indexed column number\&. The array represents the next or requested row in the result set\&. Returns false if there are no rows left in the result set, or if the row requested by row_number does not exist in the result set\&. 
+.RE
+.PP
+
+.SS "db2_fetch_object ( $stmt,  $row_number = \fC\fBnull\fP\fP)"
+Returns an object with properties representing columns in the fetched row \fBresource $stmt \fP \fBA\fP valid stmt resource containing a result set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row_number\fP 
+.RE
+.PP
+Requests a specific 1-indexed row from the result set\&. Passing this parameter results in a PHP warning if the result set uses a forward-only cursor\&. 
+.PP
+\fBReturns\fP
+.RS 4
+object|false An object representing a single row in the result set\&. The properties of the object map to the names of the columns in the result set\&. 
+.RE
+.PP
+.PP
+The IBM DB2, Cloudscape, and Apache Derby database servers typically fold column names to upper-case, so the object properties will reflect that case\&. 
+.PP
+If your SELECT statement calls a scalar function to modify the value of a column, the database servers return the column number as the name of the column in the result set\&. If you prefer a more descriptive column name and object property, you can use the AS clause to assign a name to the column in the result set\&. 
+.PP
+Returns false if no row was retrieved\&. 
+.SS "db2_fetch_row ( $stmt,  $row_number = \fC\fBnull\fP\fP)"
+Sets the result set pointer to the next row or requested row \fBresource $stmt \fP \fBA\fP valid stmt resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row_number\fP 
+.RE
+.PP
+With scrollable cursors, you can request a specific row number in the result set\&. Row numbering is 1-indexed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if the requested row exists in the result set\&. Returns false if the requested row does not exist in the result set\&. 
+.RE
+.PP
+
+.SS "db2_field_display_size ( $stmt,  $column)"
+Returns the maximum number of bytes required to display a column \fBresource $stmt \fP Specifies a statement resource containing a result set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$column\fP 
+.RE
+.PP
+Specifies the column in the result set\&. This can either be an integer representing the 0-indexed position of the column, or a string containing the name of the column\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false An integer value with the maximum number of bytes required to display the specified column\&. If the column does not exist in the result set, db2_field_display_size returns false\&. 
+.RE
+.PP
+
+.SS "db2_field_name ( $stmt,  $column)"
+Returns the name of the column in the result set \fBresource $stmt \fP Specifies a statement resource containing a result set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$column\fP 
+.RE
+.PP
+Specifies the column in the result set\&. This can either be an integer representing the 0-indexed position of the column, or a string containing the name of the column\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false \fBA\fP string containing the name of the specified column\&. If the specified column does not exist in the result set, db2_field_name returns false\&. 
+.RE
+.PP
+
+.SS "db2_field_num ( $stmt,  $column)"
+Returns the position of the named column in a result set \fBresource $stmt \fP Specifies a statement resource containing a result set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$column\fP 
+.RE
+.PP
+Specifies the column in the result set\&. This can either be an integer representing the 0-indexed position of the column, or a string containing the name of the column\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false An integer containing the 0-indexed position of the named column in the result set\&. If the specified column does not exist in the result set, db2_field_num returns false\&. 
+.RE
+.PP
+
+.SS "db2_field_precision ( $stmt,  $column)"
+Returns the precision of the indicated column in a result set \fBresource $stmt \fP Specifies a statement resource containing a result set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$column\fP 
+.RE
+.PP
+Specifies the column in the result set\&. This can either be an integer representing the 0-indexed position of the column, or a string containing the name of the column\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false An integer containing the precision of the specified column\&. If the specified column does not exist in the result set, db2_field_precision returns false\&. 
+.RE
+.PP
+
+.SS "db2_field_scale ( $stmt,  $column)"
+Returns the scale of the indicated column in a result set \fBresource $stmt \fP Specifies a statement resource containing a result set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$column\fP 
+.RE
+.PP
+Specifies the column in the result set\&. This can either be an integer representing the 0-indexed position of the column, or a string containing the name of the column\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false An integer containing the scale of the specified column\&. If the specified column does not exist in the result set, db2_field_scale returns false\&. 
+.RE
+.PP
+
+.SS "db2_field_type ( $stmt,  $column)"
+Returns the data type of the indicated column in a result set \fBresource $stmt \fP Specifies a statement resource containing a result set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$column\fP 
+.RE
+.PP
+Specifies the column in the result set\&. This can either be an integer representing the 0-indexed position of the column, or a string containing the name of the column\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false \fBA\fP string containing the defined data type of the specified column\&. If the specified column does not exist in the result set, db2_field_type returns false\&. 
+.RE
+.PP
+
+.SS "db2_field_width ( $stmt,  $column)"
+Returns the width of the current value of the indicated column in a result set \fBresource $stmt \fP Specifies a statement resource containing a result set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$column\fP 
+.RE
+.PP
+Specifies the column in the result set\&. This can either be an integer representing the 0-indexed position of the column, or a string containing the name of the column\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false An integer containing the width of the specified character or binary data type column in a result set\&. If the specified column does not exist in the result set, db2_field_width returns false\&. 
+.RE
+.PP
+
+.SS "db2_foreign_keys ( $connection,  $qualifier,  $schema,  $table_name)"
+Returns a result set listing the foreign keys for a table \fBresource $connection \fP \fBA\fP valid connection to an IBM DB2, Cloudscape, or Apache Derby database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP 
+.RE
+.PP
+\fBA\fP qualifier for DB2 databases running on OS/390 or z/OS servers\&. For other databases, pass  or an empty string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$schema\fP 
+.RE
+.PP
+The schema which contains the tables\&. If schema is , db2_foreign_keys matches the schema for the current connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP statement resource with a result set containing rows describing the foreign keys for the specified table\&. The result set is composed of the following columns: 
+.RE
+.PP
+.PP
+Column name 
+.PP
+Description  
+.PP
+PKTABLE_CAT 
+.PP
+Name of the catalog for the table containing the primary key\&. The value is NULL if this table does not have catalogs\&.   
+.PP
+PKTABLE_SCHEM 
+.PP
+Name of the schema for the table containing the primary key\&.   
+.PP
+PKTABLE_NAME 
+.PP
+Name of the table containing the primary key\&.  
+.PP
+PKCOLUMN_NAME 
+.PP
+Name of the column containing the primary key\&.  
+.PP
+FKTABLE_CAT 
+.PP
+Name of the catalog for the table containing the foreign key\&. The value is NULL if this table does not have catalogs\&.   
+.PP
+FKTABLE_SCHEM 
+.PP
+Name of the schema for the table containing the foreign key\&.   
+.PP
+FKTABLE_NAME 
+.PP
+Name of the table containing the foreign key\&.  
+.PP
+FKCOLUMN_NAME 
+.PP
+Name of the column containing the foreign key\&.  
+.PP
+KEY_SEQ 
+.PP
+1-indexed position of the column in the key\&.  
+.PP
+UPDATE_RULE 
+.PP
+Integer value representing the action applied to the foreign key when the SQL operation is UPDATE\&.   
+.PP
+DELETE_RULE 
+.PP
+Integer value representing the action applied to the foreign key when the SQL operation is DELETE\&.   
+.PP
+FK_NAME 
+.PP
+The name of the foreign key\&.  
+.PP
+PK_NAME 
+.PP
+The name of the primary key\&.  
+.PP
+DEFERRABILITY 
+.PP
+An integer value representing whether the foreign key deferrability is SQL_INITIALLY_DEFERRED, SQL_INITIALLY_IMMEDIATE, or SQL_NOT_DEFERRABLE\&.   
+.SS "db2_foreignkeys ()"
+
+.SS "db2_free_result ( $stmt)"
+Frees resources associated with a result set \fBresource $stmt \fP \fBA\fP valid statement resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "db2_free_stmt ( $stmt)"
+Frees resources associated with the indicated statement resource \fBresource $stmt \fP \fBA\fP valid statement resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "db2_get_option ( $resource,  $option)"
+Retrieves an option value for a statement resource or a connection resource \fBresource $resource \fP \fBA\fP valid statement resource as returned from db2_prepare or a valid connection resource as returned from db2_connect or db2_pconnect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$option\fP 
+.RE
+.PP
+\fBA\fP valid statement or connection options\&. The following new options are available as of ibm_db2 version 1\&.6\&.0\&. They provide useful tracking information that can be set during execution with db2_get_option\&. Note 
+.PP
+Prior versions of ibm_db2 do not support these new options\&. 
+.PP
+When the value in each option is being set, some servers might not handle the entire length provided and might truncate the value\&. 
+.PP
+To ensure that the data specified in each option is converted correctly when transmitted to a host system, use only the characters \fBA\fP through Z, 0 through 9, and the underscore (_) or period (\&.)\&. 
+.PP
+userid 
+.PP
+SQL_ATTR_INFO_USERID - \fBA\fP pointer to a null-terminated character string used to identify the client user ID sent to the host database server when using DB2 Connect\&. Note 
+.PP
+DB2 for z/OS and OS/390 servers support up to a length of 16 characters\&. This user-id is not to be confused with the authentication user-id, it is for identification purposes only and is not used for any authorization\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The current setting of the connection attribute provided on success or false on failure\&. 
+.RE
+.PP
+
+.SS "db2_last_insert_id ( $resource)"
+\fBReturns the auto generated ID of the last insert query that successfully executed on this connection\&. The result of this function is not affected by any of the following: \fP\fBA\fP single row INSERT statement with a VALUES clause for a table without an identity column\&. \fBA\fP multiple row INSERT statement with a VALUES clause\&. An INSERT statement with a fullselect\&. \fBA\fP ROLLBACK TO SAVEPOINT statement\&.  
+.PP
+\fBParameters\fP
+.RS 4
+\fI$resource\fP \fBA\fP valid connection resource as returned from \fBdb2_connect()\fP or \fBdb2_pconnect()\fP\&. The value of this parameter cannot be a statement resource or result set resource\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string Returns the auto generated ID of last insert query that successfully executed on this connection\&. 
+.RE
+.PP
+
+.SS "db2_lob_read ( $stmt,  $colnum,  $length)"
+Gets a user defined size of LOB files with each invocation \fBresource $stmt \fP \fBA\fP valid stmt resource containing LOB data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$colnum\fP 
+.RE
+.PP
+\fBA\fP valid column number in the result set of the stmt resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP 
+.RE
+.PP
+The size of the LOB data to be retrieved from the stmt resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The amount of data the user specifies\&. Returns false if the data cannot be retrieved\&. 
+.RE
+.PP
+
+.SS "db2_next_result ( $stmt)"
+Requests the next result set from a stored procedure \fBresource $stmt \fP \fBA\fP prepared statement returned from db2_exec or db2_execute\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP new statement resource containing the next result set if the stored procedure returned another result set\&. Returns false if the stored procedure did not return another result set\&. 
+.RE
+.PP
+
+.SS "db2_num_fields ( $stmt)"
+Returns the number of fields contained in a result set \fBresource $stmt \fP \fBA\fP valid statement resource containing a result set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false An integer value representing the number of fields in the result set associated with the specified statement resource\&. Returns false if the statement resource is not a valid input value\&. 
+.RE
+.PP
+
+.SS "db2_num_rows ( $stmt)"
+Returns the number of rows affected by an SQL statement \fBresource $stmt \fP \fBA\fP valid stmt resource containing a result set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of rows affected by the last SQL statement issued by the specified statement handle\&. 
+.RE
+.PP
+
+.SS "db2_pconnect ( $database,  $username,  $password, array $options = \fC\fBnull\fP\fP)"
+Returns a persistent connection to a database \fBstring $database \fP The database alias in the DB2 client catalog\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP 
+.RE
+.PP
+The username with which you are connecting to the database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP 
+.RE
+.PP
+The password with which you are connecting to the database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP 
+.RE
+.PP
+An associative array of connection options that affect the behavior of the connection, where valid array keys include: autocommit 
+.PP
+Passing the DB2_AUTOCOMMIT_ON value turns autocommit on for this connection handle\&. 
+.PP
+Passing the DB2_AUTOCOMMIT_OFF value turns autocommit off for this connection handle\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP connection handle resource if the connection attempt is successful\&. db2_pconnect tries to reuse an existing connection resource that exactly matches the database, username, and password parameters\&. If the connection attempt fails, db2_pconnect returns false\&. 
+.RE
+.PP
+
+.SS "db2_prepare ( $connection,  $statement, array $options = \fC\fBnull\fP\fP)"
+Prepares an SQL statement to be executed \fBresource $connection \fP \fBA\fP valid database connection resource variable as returned from db2_connect or db2_pconnect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$statement\fP 
+.RE
+.PP
+An SQL statement, optionally containing one or more parameter markers\&.\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP 
+.RE
+.PP
+An associative array containing statement options\&. You can use this parameter to request a scrollable cursor on database servers that support this functionality\&. cursor 
+.PP
+Passing the DB2_FORWARD_ONLY value requests a forward-only cursor for this SQL statement\&. This is the default type of cursor, and it is supported by all database servers\&. It is also much faster than a scrollable cursor\&. 
+.PP
+Passing the DB2_SCROLLABLE value requests a scrollable cursor for this SQL statement\&. This type of cursor enables you to fetch rows non-sequentially from the database server\&. However, it is only supported by DB2 servers, and is much slower than forward-only cursors\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP statement resource if the SQL statement was successfully parsed and prepared by the database server\&. Returns false if the database server returned an error\&. You can determine which error was returned by calling db2_stmt_error or db2_stmt_errormsg\&. 
+.RE
+.PP
+
+.SS "db2_primary_keys ( $connection,  $qualifier,  $schema,  $table_name)"
+Returns a result set listing primary keys for a table \fBresource $connection \fP \fBA\fP valid connection to an IBM DB2, Cloudscape, or Apache Derby database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP 
+.RE
+.PP
+\fBA\fP qualifier for DB2 databases running on OS/390 or z/OS servers\&. For other databases, pass  or an empty string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$schema\fP 
+.RE
+.PP
+The schema which contains the tables\&. If schema is , db2_primary_keys matches the schema for the current connection\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP statement resource with a result set containing rows describing the primary keys for the specified table\&. The result set is composed of the following columns: 
+.RE
+.PP
+.PP
+Column name 
+.PP
+Description  
+.PP
+TABLE_CAT 
+.PP
+Name of the catalog for the table containing the primary key\&. The value is NULL if this table does not have catalogs\&.   
+.PP
+TABLE_SCHEM 
+.PP
+Name of the schema for the table containing the primary key\&.   
+.PP
+TABLE_NAME 
+.PP
+Name of the table containing the primary key\&.  
+.PP
+COLUMN_NAME 
+.PP
+Name of the column containing the primary key\&.  
+.PP
+KEY_SEQ 
+.PP
+1-indexed position of the column in the key\&.  
+.PP
+PK_NAME 
+.PP
+The name of the primary key\&.  
+.SS "db2_primarykeys ()"
+
+.SS "db2_procedure_columns ( $connection,  $qualifier,  $schema,  $procedure,  $parameter)"
+Returns a result set listing stored procedure parameters \fBresource $connection \fP \fBA\fP valid connection to an IBM DB2, Cloudscape, or Apache Derby database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP 
+.RE
+.PP
+\fBA\fP qualifier for DB2 databases running on OS/390 or z/OS servers\&. For other databases, pass  or an empty string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$schema\fP 
+.RE
+.PP
+The schema which contains the procedures\&. This parameter accepts a search pattern containing _ and % as wildcards\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$procedure\fP 
+.RE
+.PP
+The name of the procedure\&. This parameter accepts a search pattern containing _ and % as wildcards\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parameter\fP 
+.RE
+.PP
+The name of the parameter\&. This parameter accepts a search pattern containing _ and % as wildcards\&. If this parameter is , all parameters for the specified stored procedures are returned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP statement resource with a result set containing rows describing the parameters for the stored procedures matching the specified parameters\&. The rows are composed of the following columns: 
+.RE
+.PP
+.PP
+Column name 
+.PP
+Description  
+.PP
+PROCEDURE_CAT 
+.PP
+The catalog that contains the procedure\&. The value is  if this table does not have catalogs\&.  
+.PP
+PROCEDURE_SCHEM 
+.PP
+Name of the schema that contains the stored procedure\&.  
+.PP
+PROCEDURE_NAME 
+.PP
+Name of the procedure\&.  
+.PP
+COLUMN_NAME 
+.PP
+Name of the parameter\&.  
+.PP
+COLUMN_TYPE 
+.PP
+An integer value representing the type of the parameter: 
+.PP
+Return value 
+.PP
+Parameter type  
+.PP
+1 (SQL_PARAM_INPUT) 
+.PP
+Input (IN) parameter\&.  
+.PP
+2 (SQL_PARAM_INPUT_OUTPUT) 
+.PP
+Input/output (INOUT) parameter\&.  
+.PP
+3 (SQL_PARAM_OUTPUT) 
+.PP
+Output (OUT) parameter\&.  
+.PP
+DATA_TYPE 
+.PP
+The SQL data type for the parameter represented as an integer value\&.  
+.PP
+TYPE_NAME 
+.PP
+\fBA\fP string representing the data type for the parameter\&.  
+.PP
+COLUMN_SIZE 
+.PP
+An integer value representing the size of the parameter\&.  
+.PP
+BUFFER_LENGTH 
+.PP
+Maximum number of bytes necessary to store data for this parameter\&.   
+.PP
+DECIMAL_DIGITS 
+.PP
+The scale of the parameter, or  where scale is not applicable\&.   
+.PP
+NUM_PREC_RADIX 
+.PP
+An integer value of either 10 (representing an exact numeric data type), 2 (representing an approximate numeric data type), or  (representing a data type for which radix is not applicable)\&.   
+.PP
+NULLABLE 
+.PP
+An integer value representing whether the parameter is nullable or not\&.  
+.PP
+REMARKS 
+.PP
+Description of the parameter\&.  
+.PP
+COLUMN_DEF 
+.PP
+Default value for the parameter\&.  
+.PP
+SQL_DATA_TYPE 
+.PP
+An integer value representing the size of the parameter\&.  
+.PP
+SQL_DATETIME_SUB 
+.PP
+Returns an integer value representing a datetime subtype code, or  for SQL data types to which this does not apply\&.   
+.PP
+CHAR_OCTET_LENGTH 
+.PP
+Maximum length in octets for a character data type parameter, which matches COLUMN_SIZE for single-byte character set data, or  for non-character data types\&.   
+.PP
+ORDINAL_POSITION 
+.PP
+The 1-indexed position of the parameter in the CALL statement\&.  
+.PP
+IS_NULLABLE 
+.PP
+\fBA\fP string value where 'YES' means that the parameter accepts or returns  values and 'NO' means that the parameter does not accept or return  values\&.   
+.SS "db2_procedurecolumns ()"
+
+.SS "db2_procedures ( $connection,  $qualifier,  $schema,  $procedure)"
+Returns a result set listing the stored procedures registered in a database \fBresource $connection \fP \fBA\fP valid connection to an IBM DB2, Cloudscape, or Apache Derby database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP 
+.RE
+.PP
+\fBA\fP qualifier for DB2 databases running on OS/390 or z/OS servers\&. For other databases, pass  or an empty string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$schema\fP 
+.RE
+.PP
+The schema which contains the procedures\&. This parameter accepts a search pattern containing _ and % as wildcards\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$procedure\fP 
+.RE
+.PP
+The name of the procedure\&. This parameter accepts a search pattern containing _ and % as wildcards\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP statement resource with a result set containing rows describing the stored procedures matching the specified parameters\&. The rows are composed of the following columns: 
+.RE
+.PP
+.PP
+Column name 
+.PP
+Description  
+.PP
+PROCEDURE_CAT 
+.PP
+The catalog that contains the procedure\&. The value is  if this table does not have catalogs\&.  
+.PP
+PROCEDURE_SCHEM 
+.PP
+Name of the schema that contains the stored procedure\&.  
+.PP
+PROCEDURE_NAME 
+.PP
+Name of the procedure\&.  
+.PP
+NUM_INPUT_PARAMS 
+.PP
+Number of input (IN) parameters for the stored procedure\&.  
+.PP
+NUM_OUTPUT_PARAMS 
+.PP
+Number of output (OUT) parameters for the stored procedure\&.  
+.PP
+NUM_RESULT_SETS 
+.PP
+Number of result sets returned by the stored procedure\&.  
+.PP
+REMARKS 
+.PP
+Any comments about the stored procedure\&.  
+.PP
+PROCEDURE_TYPE 
+.PP
+Always returns 1, indicating that the stored procedure does not return a return value\&.  
+.SS "db2_result ( $stmt,  $column)"
+Returns a single column from a row in the result set \fBresource $stmt \fP \fBA\fP valid stmt resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$column\fP 
+.RE
+.PP
+Either an integer mapping to the 0-indexed field in the result set, or a string matching the name of the column\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed the value of the requested field if the field exists in the result set\&. Returns NULL if the field does not exist, and issues a warning\&. 
+.RE
+.PP
+
+.SS "db2_rollback ( $connection)"
+Rolls back a transaction \fBresource $connection \fP \fBA\fP valid database connection resource variable as returned from db2_connect or db2_pconnect\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "db2_server_info ( $connection)"
+Returns an object with properties that describe the DB2 database server \fBresource $connection \fP Specifies an active DB2 client connection\&. 
+.PP
+\fBReturns\fP
+.RS 4
+object|false An object on a successful call\&. Returns false on failure\&. 
+.RE
+.PP
+
+.SS "db2_set_option ( $resource, array $options,  $type)"
+Set options for connection or statement resources \fBresource $resource \fP \fBA\fP valid statement resource as returned from db2_prepare or a valid connection resource as returned from db2_connect or db2_pconnect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP 
+.RE
+.PP
+An associative array containing valid statement or connection options\&. This parameter can be used to change autocommit values, cursor types (scrollable or forward), and to specify the case of the column names (lower, upper, or natural) that will appear in a result set\&. autocommit 
+.PP
+Passing DB2_AUTOCOMMIT_ON turns autocommit on for the specified connection resource\&. 
+.PP
+Passing DB2_AUTOCOMMIT_OFF turns autocommit off for the specified connection resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP 
+.RE
+.PP
+An integer value that specifies the type of resource that was passed into the function\&. The type of resource and this value must correspond\&. 
+.PP
+Passing 1 as the value specifies that a connection resource has been passed into the function\&. 
+.PP
+Passing any integer not equal to 1 as the value specifies that a statement resource has been passed into the function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "db2_setoption ()"
+
+.SS "db2_special_columns ( $connection,  $qualifier,  $schema,  $table_name,  $scope)"
+Returns a result set listing the unique row identifier columns for a table \fBresource $connection \fP \fBA\fP valid connection to an IBM DB2, Cloudscape, or Apache Derby database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP 
+.RE
+.PP
+\fBA\fP qualifier for DB2 databases running on OS/390 or z/OS servers\&. For other databases, pass  or an empty string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$schema\fP 
+.RE
+.PP
+The schema which contains the tables\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+The name of the table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$scope\fP 
+.RE
+.PP
+Integer value representing the minimum duration for which the unique row identifier is valid\&. This can be one of the following values: 
+.PP
+Integer value 
+.PP
+SQL constant 
+.PP
+Description  
+.PP
+0 
+.PP
+SQL_SCOPE_CURROW 
+.PP
+Row identifier is valid only while the cursor is positioned on the row\&.  
+.PP
+1 
+.PP
+SQL_SCOPE_TRANSACTION 
+.PP
+Row identifier is valid for the duration of the transaction\&.  
+.PP
+2 
+.PP
+SQL_SCOPE_SESSION 
+.PP
+Row identifier is valid for the duration of the connection\&.  
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP statement resource with a result set containing rows with unique row identifier information for a table\&. The rows are composed of the following columns: 
+.RE
+.PP
+.PP
+Column name 
+.PP
+Description  
+.PP
+SCOPE 
+.PP
+Integer value 
+.PP
+SQL constant 
+.PP
+Description  
+.PP
+0 
+.PP
+SQL_SCOPE_CURROW 
+.PP
+Row identifier is valid only while the cursor is positioned on the row\&.  
+.PP
+1 
+.PP
+SQL_SCOPE_TRANSACTION 
+.PP
+Row identifier is valid for the duration of the transaction\&.  
+.PP
+2 
+.PP
+SQL_SCOPE_SESSION 
+.PP
+Row identifier is valid for the duration of the connection\&.  
+.PP
+COLUMN_NAME 
+.PP
+Name of the unique column\&.  
+.PP
+DATA_TYPE 
+.PP
+SQL data type for the column\&.  
+.PP
+TYPE_NAME 
+.PP
+Character string representation of the SQL data type for the column\&.  
+.PP
+COLUMN_SIZE 
+.PP
+An integer value representing the size of the column\&.  
+.PP
+BUFFER_LENGTH 
+.PP
+Maximum number of bytes necessary to store data from this column\&.   
+.PP
+DECIMAL_DIGITS 
+.PP
+The scale of the column, or  where scale is not applicable\&.   
+.PP
+NUM_PREC_RADIX 
+.PP
+An integer value of either 10 (representing an exact numeric data type), 2 (representing an approximate numeric data type), or  (representing a data type for which radix is not applicable)\&.   
+.PP
+PSEUDO_COLUMN 
+.PP
+Always returns 1\&.  
+.SS "db2_specialcolumns ()"
+
+.SS "db2_statistics ( $connection,  $qualifier,  $schema,  $table_name,  $unique)"
+Returns a result set listing the index and statistics for a table \fBresource $connection \fP \fBA\fP valid connection to an IBM DB2, Cloudscape, or Apache Derby database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP 
+.RE
+.PP
+\fBA\fP qualifier for DB2 databases running on OS/390 or z/OS servers\&. For other databases, pass  or an empty string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$schema\fP 
+.RE
+.PP
+The schema that contains the targeted table\&. If this parameter is , the statistics and indexes are returned for the schema of the current user\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+The name of the table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$unique\fP 
+.RE
+.PP
+An integer value representing the type of index information to return\&. 0 
+.PP
+Return only the information for unique indexes on the table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP statement resource with a result set containing rows describing the statistics and indexes for the base tables matching the specified parameters\&. The rows are composed of the following columns: 
+.RE
+.PP
+.PP
+Column name 
+.PP
+Description  
+.PP
+TABLE_CAT 
+.PP
+The catalog that contains the table\&. The value is  if this table does not have catalogs\&.  
+.PP
+TABLE_SCHEM 
+.PP
+Name of the schema that contains the table\&.  
+.PP
+TABLE_NAME 
+.PP
+Name of the table\&.  
+.PP
+NON_UNIQUE 
+.PP
+An integer value representing whether the index prohibits unique values, or whether the row represents statistics on the table itself: 
+.PP
+Return value 
+.PP
+Parameter type  
+.PP
+0 (SQL_FALSE) 
+.PP
+The index allows duplicate values\&.  
+.PP
+1 (SQL_TRUE) 
+.PP
+The index values must be unique\&.  
+.PP
+This row is statistics information for the table itself\&.  
+.PP
+INDEX_QUALIFIER 
+.PP
+\fBA\fP string value representing the qualifier that would have to be prepended to INDEX_NAME to fully qualify the index\&.  
+.PP
+INDEX_NAME 
+.PP
+\fBA\fP string representing the name of the index\&.  
+.PP
+TYPE 
+.PP
+An integer value representing the type of information contained in this row of the result set: 
+.PP
+Return value 
+.PP
+Parameter type  
+.PP
+0 (SQL_TABLE_STAT) 
+.PP
+The row contains statistics about the table itself\&.  
+.PP
+1 (SQL_INDEX_CLUSTERED) 
+.PP
+The row contains information about a clustered index\&.  
+.PP
+2 (SQL_INDEX_HASH) 
+.PP
+The row contains information about a hashed index\&.  
+.PP
+3 (SQL_INDEX_OTHER) 
+.PP
+The row contains information about a type of index that is neither clustered nor hashed\&.  
+.PP
+ORDINAL_POSITION 
+.PP
+The 1-indexed position of the column in the index\&.  if the row contains statistics information about the table itself\&.  
+.PP
+COLUMN_NAME 
+.PP
+The name of the column in the index\&.  if the row contains statistics information about the table itself\&.  
+.PP
+ASC_OR_DESC 
+.PP
+\fBA\fP if the column is sorted in ascending order, D if the column is sorted in descending order,  if the row contains statistics information about the table itself\&.   
+.PP
+CARDINALITY 
+.PP
+If the row contains information about an index, this column contains an integer value representing the number of unique values in the index\&. 
+.PP
+If the row contains information about the table itself, this column contains an integer value representing the number of rows in the table\&. 
+.PP
+PAGES 
+.PP
+If the row contains information about an index, this column contains an integer value representing the number of pages used to store the index\&. 
+.PP
+If the row contains information about the table itself, this column contains an integer value representing the number of pages used to store the table\&. 
+.PP
+FILTER_CONDITION 
+.PP
+Always returns \&.  
+.SS "db2_stmt_error ( $stmt = \fC\fBnull\fP\fP)"
+Returns a string containing the SQLSTATE returned by an SQL statement \fBresource $stmt \fP \fBA\fP valid statement resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string containing an SQLSTATE value\&. 
+.RE
+.PP
+
+.SS "db2_stmt_errormsg ( $stmt = \fC\fBnull\fP\fP)"
+Returns a string containing the last SQL statement error message \fBresource $stmt \fP \fBA\fP valid statement resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string containing the error message and SQLCODE value for the last error that occurred issuing an SQL statement\&. 
+.RE
+.PP
+
+.SS "db2_table_privileges ( $connection,  $qualifier = \fC\fBnull\fP\fP,  $schema = \fC\fBnull\fP\fP,  $table_name = \fC\fBnull\fP\fP)"
+Returns a result set listing the tables and associated privileges in a database \fBresource $connection \fP \fBA\fP valid connection to an IBM DB2, Cloudscape, or Apache Derby database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP 
+.RE
+.PP
+\fBA\fP qualifier for DB2 databases running on OS/390 or z/OS servers\&. For other databases, pass  or an empty string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$schema\fP 
+.RE
+.PP
+The schema which contains the tables\&. This parameter accepts a search pattern containing _ and % as wildcards\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+The name of the table\&. This parameter accepts a search pattern containing _ and % as wildcards\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP statement resource with a result set containing rows describing the privileges for the tables that match the specified parameters\&. The rows are composed of the following columns: 
+.RE
+.PP
+.PP
+Column name 
+.PP
+Description  
+.PP
+TABLE_CAT 
+.PP
+The catalog that contains the table\&. The value is  if this table does not have catalogs\&.  
+.PP
+TABLE_SCHEM 
+.PP
+Name of the schema that contains the table\&.  
+.PP
+TABLE_NAME 
+.PP
+Name of the table\&.  
+.PP
+GRANTOR 
+.PP
+Authorization ID of the user who granted the privilege\&.  
+.PP
+GRANTEE 
+.PP
+Authorization ID of the user to whom the privilege was granted\&.  
+.PP
+PRIVILEGE 
+.PP
+The privilege that has been granted\&. This can be one of ALTER, CONTROL, DELETE, INDEX, INSERT, REFERENCES, SELECT, or UPDATE\&.   
+.PP
+IS_GRANTABLE 
+.PP
+\fBA\fP string value of 'YES' or 'NO' indicating whether the grantee can grant the privilege to other users\&.   
+.SS "db2_tableprivileges ()"
+
+.SS "db2_tables ( $connection,  $qualifier = \fC\fBnull\fP\fP,  $schema = \fC\fBnull\fP\fP,  $table_name = \fC\fBnull\fP\fP,  $table_type = \fC\fBnull\fP\fP)"
+Returns a result set listing the tables and associated metadata in a database \fBresource $connection \fP \fBA\fP valid connection to an IBM DB2, Cloudscape, or Apache Derby database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP 
+.RE
+.PP
+\fBA\fP qualifier for DB2 databases running on OS/390 or z/OS servers\&. For other databases, pass  or an empty string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$schema\fP 
+.RE
+.PP
+The schema which contains the tables\&. This parameter accepts a search pattern containing _ and % as wildcards\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.br
+\fI$table_type\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP statement resource with a result set containing rows describing the tables that match the specified parameters\&. The rows are composed of the following columns: 
+.RE
+.PP
+.PP
+Column name 
+.PP
+Description  
+.PP
+TABLE_CAT 
+.PP
+The catalog that contains the table\&. The value is  if this table does not have catalogs\&.  
+.PP
+TABLE_SCHEM 
+.PP
+Name of the schema that contains the table\&.  
+.PP
+TABLE_NAME 
+.PP
+Name of the table\&.  
+.PP
+TABLE_TYPE 
+.PP
+Table type identifier for the table\&.  
+.PP
+REMARKS 
+.PP
+Description of the table\&.  
+.SH "Variable Documentation"
+.PP 
+.SS "const DB2_AUTOCOMMIT_OFF 0"
+Specifies that autocommit should be turned off\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_AUTOCOMMIT_ON 1"
+Specifies that autocommit should be turned on\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_BINARY 1"
+Specifies that binary data shall be returned as is\&. This is the default mode\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_CASE_LOWER 1"
+Specifies that column names will be returned in lower case\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_CASE_NATURAL 0"
+Specifies that column names will be returned in their natural case\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_CASE_UPPER 2"
+Specifies that column names will be returned in upper case\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_CHAR 1"
+Specifies that the variable should be bound as a CHAR or VARCHAR data type\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_CONVERT 2"
+Specifies that binary data shall be converted to a hexadecimal encoding and returned as an ASCII string\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_DEFERRED_PREPARE_OFF 0"
+Specifies that deferred prepare should be turned off for the specified statement resource\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_DEFERRED_PREPARE_ON 1"
+Specifies that deferred prepare should be turned on for the specified statement resource\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_DOUBLE 8"
+Specifies that the variable should be bound as a DOUBLE, FLOAT, or REAL data type\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_FORWARD_ONLY 0"
+Specifies a forward-only cursor for a statement resource\&. This is the default cursor type and is supported on all database servers\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_LONG 4"
+Specifies that the variable should be bound as a SMALLINT, INTEGER, or BIGINT data type\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_PARAM_FILE 11"
+Specifies that the column should be bound directly to a file for input\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_PARAM_IN 1"
+Specifies the PHP variable should be bound as an IN parameter for a stored procedure\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_PARAM_INOUT 2"
+Specifies the PHP variable should be bound as an INOUT parameter for a stored procedure\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_PARAM_OUT 4"
+Specifies the PHP variable should be bound as an OUT parameter for a stored procedure\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_PASSTHRU 3"
+Specifies that binary data shall be converted to a  value\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_SCROLLABLE 1"
+Specifies a scrollable cursor for a statement resource\&. This mode enables random access to rows in a result set, but currently is supported only by IBM DB2 Universal Database\&. \fBhttps://php\&.net/manual/en/ibm-db2\&.constants\&.php\fP
+.SS "const DB2_XML \-370"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,1986 @@
+.TH "vendor/jetbrains/phpstorm-stubs/sqlsrv/sqlsrv.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/sqlsrv/sqlsrv.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsqlsrv_connect\fP ($server_name, $connection_info=array())"
+.br
+.ti -1c
+.RI "\fBsqlsrv_close\fP ($conn)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_commit\fP ($conn)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_begin_transaction\fP ($conn)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_rollback\fP ($conn)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_errors\fP ($errorsAndOrWarnings=\fBSQLSRV_ERR_ALL\fP)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_configure\fP ($setting, $value)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_get_config\fP ($setting)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_prepare\fP ($conn, $tsql, $params=array(), $options=array())"
+.br
+.ti -1c
+.RI "\fBsqlsrv_execute\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_query\fP ($conn, $tsql, $params=array(), $options=array())"
+.br
+.ti -1c
+.RI "\fBsqlsrv_fetch\fP ($stmt, $row=\fBnull\fP, $offset=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_get_field\fP ($stmt, $field_index, $get_as_type)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_fetch_array\fP ($stmt, $fetch_type=\fBnull\fP, $row=\fBnull\fP, $offset=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_fetch_object\fP ($stmt, $class_name=\fBnull\fP, $ctor_params=\fBnull\fP, $row=\fBnull\fP, $offset=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_has_rows\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_num_fields\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_next_result\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_num_rows\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_rows_affected\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_client_info\fP ($conn)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_server_info\fP ($conn)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_cancel\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_free_stmt\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_field_metadata\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBsqlsrv_send_stream_data\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBSQLSRV_PHPTYPE_STREAM\fP ($encoding)"
+.br
+.ti -1c
+.RI "\fBSQLSRV_PHPTYPE_STRING\fP ($encoding)"
+.br
+.ti -1c
+.RI "\fBSQLSRV_SQLTYPE_BINARY\fP ($byteCount)"
+.br
+.ti -1c
+.RI "\fBSQLSRV_SQLTYPE_VARBINARY\fP ($byteCount)"
+.br
+.ti -1c
+.RI "\fBSQLSRV_SQLTYPE_VARCHAR\fP ($charCount)"
+.br
+.ti -1c
+.RI "\fBSQLSRV_SQLTYPE_CHAR\fP ($charCount)"
+.br
+.ti -1c
+.RI "\fBSQLSRV_SQLTYPE_NCHAR\fP ($charCount)"
+.br
+.ti -1c
+.RI "\fBSQLSRV_SQLTYPE_NVARCHAR\fP ($charCount)"
+.br
+.ti -1c
+.RI "\fBSQLSRV_SQLTYPE_DECIMAL\fP ($precision, $scale)"
+.br
+.ti -1c
+.RI "\fBSQLSRV_SQLTYPE_NUMERIC\fP ($precision, $scale)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBSQLSRV_ERR_ERRORS\fP 0"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_ERR_WARNINGS\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_ERR_ALL\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_LOG_SYSTEM_ALL\fP \-1"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_LOG_SYSTEM_OFF\fP 0"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_LOG_SYSTEM_INIT\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_LOG_SYSTEM_CONN\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_LOG_SYSTEM_STMT\fP 4"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_LOG_SYSTEM_UTIL\fP 8"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_LOG_SEVERITY_ALL\fP \-1"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_LOG_SEVERITY_ERROR\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_LOG_SEVERITY_NOTICE\fP 4"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_LOG_SEVERITY_WARNING\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_FETCH_NUMERIC\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_FETCH_ASSOC\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_FETCH_BOTH\fP 3"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_PHPTYPE_NULL\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_PHPTYPE_INT\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_PHPTYPE_FLOAT\fP 3"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_PHPTYPE_DATETIME\fP 4"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_ENC_BINARY\fP 'binary'"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_ENC_CHAR\fP 'char'"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_NULLABLE_NO\fP 0"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_NULLABLE_YES\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_NULLABLE_UNKNOWN\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_BIGINT\fP \-5"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_BIT\fP \-7"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_DATETIME\fP 25177693"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_FLOAT\fP 6"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_IMAGE\fP \-4"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_INT\fP 4"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_MONEY\fP 33564163"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_NTEXT\fP \-10"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_TEXT\fP \-1"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_REAL\fP 7"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_SMALLDATETIME\fP 8285"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_SMALLINT\fP 5"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_SMALLMONEY\fP 33559555"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_TIMESTAMP\fP 4606"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_TINYINT\fP \-6"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_UDT\fP \-151"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_UNIQUEIDENTIFIER\fP \-11"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_XML\fP \-152"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_DATE\fP 5211"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_TIME\fP 58728806"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_DATETIMEOFFSET\fP 58738021"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SQLTYPE_DATETIME2\fP 58734173"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_PARAM_IN\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_PARAM_INOUT\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_PARAM_OUT\fP 4"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_TXN_READ_UNCOMMITTED\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_TXN_READ_COMMITTED\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_TXN_REPEATABLE_READ\fP 4"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_TXN_SERIALIZABLE\fP 8"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_TXN_SNAPSHOT\fP 32"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SCROLL_NEXT\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SCROLL_PRIOR\fP 4"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SCROLL_FIRST\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SCROLL_LAST\fP 3"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SCROLL_ABSOLUTE\fP 5"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_SCROLL_RELATIVE\fP 6"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_CURSOR_FORWARD\fP 'forward'"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_CURSOR_STATIC\fP 'static'"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_CURSOR_DYNAMIC\fP 'dynamic'"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_CURSOR_KEYSET\fP 'keyset'"
+.br
+.ti -1c
+.RI "const \fBSQLSRV_CURSOR_CLIENT_BUFFERED\fP 'buffered'"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "sqlsrv_begin_transaction ( $conn)"
+Begins a transaction\&.
+.PP
+
+.br
+Begins a transaction on a specified connection\&. The current transaction includes all statements on the specified connection that were executed after the call to sqlsrv_begin_transaction and before any calls to sqlsrv_rollback or sqlsrv_commit\&.
+.br
+.PP
+The Microsoft Drivers for PHP for SQL Server is in auto-commit mode by default\&. This means that all queries are automatically committed upon success unless they have been designated as part of an explicit transaction by using sqlsrv_begin_transaction\&.
+.br
+.PP
+If sqlsrv_begin_transaction is called after a transaction has already been initiated on the connection but not completed by calling either sqlsrv_commit or sqlsrv_rollback, the call returns false and an Already in Transaction error is added to the error collection\&.
+.br
+.PP
+Do not use embedded Transact-SQL to perform transactions\&. For example, do not execute a statement with 'BEGIN TRANSACTION' as the Transact-SQL query to begin a transaction\&. The expected transactional behavior cannot be guaranteed when using embedded Transact-SQL to perform transactions\&.
+.br
+.PP
+Additional Information at \fBHow to Perform Transactions\fP and \fBSQLSRV Driver API Reference\fP
+.br
+ \fBresource $conn The connection with which the transaction is associated\&.  bool A Boolean value: true if the transaction was successfully begun\&. Otherwise, false\&. \fP
+.SS "sqlsrv_cancel ( $stmt)"
+Cancels a statement; discards any pending results for the statement\&.
+.PP
+
+.br
+Cancels a statement\&. This means that any pending results for the statement are discarded\&. After this function is called, the statement can be re-executed if it was prepared with \fBsqlsrv_prepare\fP\&. Calling this function is not necessary if all the results associated with the statement have been consumed\&.
+.br
+.PP
+\fBA\fP statement that is prepared and executed using the combination of \fBsqlsrv_prepare\fP and \fBsqlsrv_execute\fP can be re-executed with \fBsqlsrv_execute\fP after calling sqlsrv_cancel\&. \fBA\fP statement that is executed with \fBsqlsrv_query\fP cannot be re-executed after calling sqlsrv_cancel\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBresource $stmt The statement to be canceled\&.  bool A Boolean value: true if the operation was successful\&. Otherwise, false\&. \fP
+.SS "sqlsrv_client_info ( $conn)"
+Provides information about the client\&.
+.PP
+
+.br
+Returns information about the connection and client stack\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBresource $conn The connection resource by which the client is connected\&.  array|false An associative array with keys described in the table below, or false if the connection resource is null\&.\fP 
+.PD 0
+
+.IP "\(bu" 2
+DriverDllName - SQLNCLI10\&.DLL (Microsoft Drivers for PHP for SQL Server version 2\&.0) 
+.IP "\(bu" 2
+DriverODBCVer - ODBC version (xx\&.yy) 
+.IP "\(bu" 2
+DriverVer - SQL Server Native Client DLL version: 10\&.50\&.xxx (Microsoft Drivers for PHP for SQL Server version 2\&.0) 
+.IP "\(bu" 2
+ExtensionVer - php_sqlsrv\&.dll version: 2\&.0\&.xxxx\&.x(Microsoft Drivers for PHP for SQL Server version 2\&.0)
+.PP
+
+.SS "sqlsrv_close ( $conn)"
+Closes a connection\&. Frees all resources associated with the connection\&.
+.PP
+
+.br
+Null is a valid parameter for this function\&. This allows the function to be called multiple times in a script\&. For example, if you close a connection in an error condition and close it again at the end of the script, the second call to sqlsrv_close will return true because the first call to sqlsrv_close (in the error condition) sets the connection resource to null\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBresource|null $conn The connection to be closed\&.  bool The Boolean value true unless the function is called with an invalid parameter\&. If the function is called with an invalid parameter, false is returned\&. \fP
+.SS "sqlsrv_commit ( $conn)"
+Commits a transaction\&.
+.PP
+
+.br
+Commits the current transaction on the specified connection and returns the connection to the auto-commit mode\&. The current transaction includes all statements on the specified connection that were executed after the call to sqlsrv_begin_transaction and before any calls to sqlsrv_rollback or sqlsrv_commit\&.
+.br
+.PP
+The Microsoft Drivers for PHP for SQL Server is in auto-commit mode by default\&. This means that all queries are automatically committed upon success unless they have been designated as part of an explicit transaction by using sqlsrv_begin_transaction\&.
+.br
+.PP
+If sqlsrv_commit is called on a connection that is not in an active transaction and that was initiated with sqlsrv_begin_transaction, the call returns false and a Not in Transaction error is added to the error collection\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBresource $conn The connection on which the transaction is active\&.  bool A Boolean value: true if the transaction was successfully committed\&. Otherwise, false\&. \fP
+.SS "sqlsrv_configure ( $setting,  $value)"
+Changes error handling and logging configurations\&.
+.PP
+
+.br
+Changes the settings for error handling and logging options\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBstring $setting The name of the setting to be configured\&. See table below for list of settings\&.  mixed $value The value to be applied to the setting specified in the $setting parameter\&. The possible values for this parameter depend on which setting is specified\&. The following table lists the possible combinations\&.\fP ClientBufferMaxKBSize (Default: 10240)
+.br
+ For more information about client-side queries, see \fBCursor Types (SQLSRV Driver)\fP\&. 
+.PD 0
+
+.IP "\(bu" 2
+\fBA\fP non negative number up to the PHP memory limit\&. 
+.IP "\(bu" 2
+Zero (0) means no limit to the buffer size\&. 
+.PP
+LogSeverity (Default: SQLSRV_LOG_SEVERITY_ERROR )
+.br
+ For more information about logging activity, see \fBLogging Activity\fP\&. 
+.PD 0
+
+.IP "\(bu" 2
+SQLSRV_LOG_SEVERITY_ALL (-1) 
+.IP "\(bu" 2
+SQLSRV_LOG_SEVERITY_ERROR (1) 
+.IP "\(bu" 2
+SQLSRV_LOG_SEVERITY_NOTICE (4) 
+.IP "\(bu" 2
+SQLSRV_LOG_SEVERITY_WARNING (2)
+.PP
+WarningsReturnAsErrors (Default: true )
+.br
+ For more information about configuring error and warning handling, see \fBHow to: Configure Error and Warning Handling Using the SQLSRV Driver\fP\&. 
+.PD 0
+
+.IP "\(bu" 2
+true (1) 
+.IP "\(bu" 2
+false (0)
+.PP
+\fBReturns\fP
+.RS 4
+bool If sqlsrv_configure is called with an unsupported setting or value, the function returns false\&. Otherwise, the function returns true\&. 
+.RE
+.PP
+
+.SS "sqlsrv_connect ( $server_name,  $connection_info = \fCarray()\fP)"
+Creates and opens a connection\&.
+.PP
+
+.br
+Creates a connection resource and opens a connection\&. By default, the connection is attempted using Windows Authentication\&.
+.br
+.PP
+If values for the UID and PWD keys are not specified in the optional $connectionInfo parameter, the connection will be attempted using Windows Authentication\&. For more information about connecting to the server, see \fBHow to: Connect Using Windows Authentication\fP and \fBHow to: Connect Using SQL Server Authentication\&.\fP
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBstring $server_name A string specifying the name of the server to which a connection is being established\&. An instance name (for example, 'myServer\\instanceName') or port number (for example, 'myServer, 1521') can be included as part of this string\&. For a complete description of the options available for this parameter, see the Server keyword in the ODBC Driver Connection String Keywords section of  http://go.microsoft.com/fwlink/?LinkId=105504 Using Connection String Keywords with SQL Native Client}\&.\fP
+.PP
+Beginning in version 3\&.0 of the Microsoft Drivers for PHP for SQL Server, you can also specify a LocalDB instance with '(localdb)\\instancename'\&. For more information, see \fBPHP Driver for SQL Server Support for LocalDB\fP \&.
+.br
+.PP
+Also beginning in version 3\&.0 of the Microsoft Drivers for PHP for SQL Server, you can specify a virtual network name, to connect to an AlwaysOn availability group\&. For more information about Microsoft Drivers for PHP for SQL Server support for AlwaysOn Availability Groups, see \fBPHP Driver for SQL Server Support for High Availability, Disaster Recovery\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection_info\fP [optional] An associative array that contains connection attributes (for example, array('Database' => 'AdventureWorks'))\&. See \fBConnection Options\fP for a list of the supported keys for the array\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP PHP connection resource\&. If a connection cannot be successfully created and opened, false is returned\&. 
+.RE
+.PP
+
+.SS "sqlsrv_errors ( $errorsAndOrWarnings = \fC\fBSQLSRV_ERR_ALL\fP\fP)"
+Returns error and/or warning information about the last operation\&.
+.PP
+
+.br
+Returns extended error and/or warning information about the last sqlsrv operation performed\&. 
+.br
+.PP
+The sqlsrv_errors function can return error and/or warning information by calling it with one of the parameter values specified in the Parameters section below\&. 
+.br
+.PP
+By default, warnings generated on a call to any sqlsrv function are treated as errors; if a warning occurs on a call to a sqlsrv function, the function returns false\&. However, warnings that correspond to SQLSTATE values 01000, 01001, 01003, and 01S02 are never treated as errors\&. 
+.br
+.PP
+The following line of code turns off the behavior mentioned above; a warning generated by a call to a sqlsrv function does not cause the function to return false: 
+.br
+.PP
+\fC\fBsqlsrv_configure\fP('WarningsReturnAsErrors', 0);\fP
+.PP
+The following line of code reinstates the default behavior; warnings (with exceptions, noted above) are treated as errors: 
+.br
+.PP
+\fC\fBsqlsrv_configure\fP('WarningsReturnAsErrors', 1);\fP
+.PP
+Regardless of the setting, warnings can only be retrieved by calling sqlsrv_errors with either the SQLSRV_ERR_ALL or SQLSRV_ERR_WARNINGS parameter value (see Parameters section below for details)\&. 
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBint $errorsAndOrWarnings [optional] A predefined constant\&. This parameter can take one of the values in the following list: SQLSRV_ERR_ALL, SQLSRV_ERR_ERRORS, SQLSRV_ERR_WARNINGS\&. If no parameter value is supplied, both errors and warnings generated by the last sqlsrv function call are returned\&.  array|null An array of arrays, or null\&. Each array in the returned array contains three key-value pairs\&. The following table lists each key and its description: \fP SQLSTATE: 
+.PD 0
+
+.IP "\(bu" 2
+For errors that originate from the ODBC driver, the SQLSTATE returned by ODBC\&.For information about SQLSTATE values for ODBC, see \fBODBC Error Codes\fP\&. 
+.IP "\(bu" 2
+For errors that originate from the Microsoft Drivers for PHP for SQL Server, a SQLSTATE of IMSSP\&. 
+.IP "\(bu" 2
+For warnings that originate from the Microsoft Drivers for PHP for SQL Server, a SQLSTATE of 01SSP\&. 
+.PP
+code: 
+.PD 0
+
+.IP "\(bu" 2
+For errors that originate from SQL Server, the native SQL Server error code\&. 
+.IP "\(bu" 2
+For errors that originate from the ODBC driver, the error code returned by ODBC\&. 
+.IP "\(bu" 2
+For errors that originate from the Microsoft Drivers for PHP for SQL Server, the Microsoft Drivers for PHP for SQL Server error code\&. For more information, see \fBHandling Errors and Warnings\fP\&. 
+.PP
+message: \fBA\fP description of the error\&.
+.br
+.PP
+The array values can also be accessed with numeric keys 0, 1, and 2\&.
+.br
+
+.br
+.PP
+If no errors or warnings occur, null is returned\&.
+.br
+ 
+.SS "sqlsrv_execute ( $stmt)"
+Executes a prepared statement\&.
+.PP
+
+.br
+Executes a previously prepared statement\&. See \fBsqlsrv_prepare\fP for information on preparing a statement for execution\&.
+.br
+.PP
+This function is ideal for executing a prepared statement multiple times with different parameter values\&.
+.br
+.PP
+For additional Information see: 
+.PD 0
+
+.IP "\(bu" 2
+\fBsqlsrv_query\fP 
+.IP "\(bu" 2
+\fBHow to: Perform Parameterized Queries\fP 
+.IP "\(bu" 2
+\fBSQLSRV Driver API Reference\fP
+.PP
+\fBresource $stmt A resource specifying the statement to be executed\&. For more information about how to create a statement resource, see  sqlsrv_prepare() sqlsrv_prepare}\&.  bool A Boolean value: true if the statement was successfully executed\&. Otherwise, false\&. \fP
+.SS "sqlsrv_fetch ( $stmt,  $row = \fC\fBnull\fP\fP,  $offset = \fC\fBnull\fP\fP)"
+Makes the next row of data available for reading\&.
+.PP
+
+.br
+Makes the next row of a result set available for reading\&. Use \fBsqlsrv_get_field\fP to read fields of the row\&.
+.br
+.PP
+\fBA\fP statement must be executed before results can be retrieved\&. For information on executing a statement, see \fBsqlsrv_query\fP and \fBsqlsrv_execute\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBresource|null $stmt A statement resource corresponding to an executed statement\&.  int|null $row [optional]: One of the following values, specifying the row to access in a result set that uses a scrollable cursor: SQLSRV_SCROLL_NEXT, SQLSRV_SCROLL_PRIOR, SQLSRV_SCROLL_FIRST, SQLSRV_SCROLL_LAST, SQLSRV_SCROLL_ABSOLUTE, SQLSRV_SCROLL_RELATIVE\&. \fP
+.PP
+For more information on these values, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] Used with SQLSRV_SCROLL_ABSOLUTE and SQLSRV_SCROLL_RELATIVE to specify the row to retrieve\&. The first record in the result set is 0\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool|null If the next row of the result set was successfully retrieved, true is returned\&. If there are no more results in the result set, null is returned\&. If an error occurred, false is returned\&. 
+.RE
+.PP
+
+.SS "sqlsrv_fetch_array ( $stmt,  $fetch_type = \fC\fBnull\fP\fP,  $row = \fC\fBnull\fP\fP,  $offset = \fC\fBnull\fP\fP)"
+Retrieves the next row of data as a numerically indexed array, an associative array, or both\&.
+.PP
+
+.br
+If a column with no name is returned, the associative key for the array element will be an empty string ('')\&. For example, consider this Transact-SQL statement that inserts a value into a database table and retrieves the server-generated primary key: \fC INSERT INTO Production\&.ProductPhoto (LargePhoto) VALUES (?); SELECT SCOPE_IDENTITY()\fP If the result set returned by the SELECT SCOPE_IDENTITY() portion of this statement is retrieved as an associative array, the key for the returned value will be an empty string ('') because the returned column has no name\&. To avoid this, you can retrieve the result as a numeric array, or you can specify a name for the returned column in the Transact-SQL statement\&. The following is one way to specify a column name in Transact-SQL: \fCSELECT SCOPE_IDENTITY() AS PictureID\fP If a result set contains multiple columns without names, the value of the last unnamed column will be assigned to the empty string ('') key\&.
+.br
+.PP
+The sqlsrv_fetch_array function always returns data according to the \fBDefault PHP Data Types\fP\&. For information about how to specify the PHP data type, see \fBHow to: Specify PHP Data Types\fP\&.
+.br
+.PP
+If a field with no name is retrieved, the associative key for the array element will be an empty string ('')\&. For more information, see \fBsqlsrv_fetch_array\fP\&.
+.br
+.PP
+Additional Information at \fBRetrieving Data\fP and \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBresource|null $stmt A statement resource corresponding to an executed statement\&.  int $fetch_type [optional] A predefined constant\&. This parameter can take on one of the values listed in the following table: \fPSQLSRV_FETCH_NUMERIC - The next row of data is returned as a numeric array\&. SQLSRV_FETCH_ASSOC - The next row of data is returned as an associative array\&. The array keys are the column names in the result set\&. SQLSRV_FETCH_BOTH - The next row of data is returned as both a numeric array and an associative array\&. This is the default value\&.  
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row\fP [optional]: One of the following values, specifying the row to access in a result set that uses a scrollable cursor: SQLSRV_SCROLL_NEXT, SQLSRV_SCROLL_PRIOR, SQLSRV_SCROLL_FIRST, SQLSRV_SCROLL_LAST, SQLSRV_SCROLL_ABSOLUTE, SQLSRV_SCROLL_RELATIVE\&. 
+.br
+.RE
+.PP
+For more information on these values, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] Used with SQLSRV_SCROLL_ABSOLUTE and SQLSRV_SCROLL_RELATIVE to specify the row to retrieve\&. The first record in the result set is 0\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|null|false If a row of data is retrieved, an array is returned\&. If there are no more rows to retrieve, null is returned\&. If an error occurs, false is returned\&. 
+.RE
+.PP
+
+.SS "sqlsrv_fetch_object ( $stmt,  $class_name = \fC\fBnull\fP\fP,  $ctor_params = \fC\fBnull\fP\fP,  $row = \fC\fBnull\fP\fP,  $offset = \fC\fBnull\fP\fP)"
+Retrieves the next row of data as an object\&.
+.PP
+
+.br
+Retrieves the next row of data as a PHP object\&.
+.br
+.PP
+Additional Information at \fBRetrieving Data\fP and \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBresource $stmt A statement resource corresponding to an executed statement\&.  string|null $class_name [optional] A string specifying the name of the class to instantiate\&. If a value for the $className parameter is not specified, an instance of the PHP  stdClass} is instantiated\&.  array|null $ctor_params [optional] An array that contains values passed to the constructor of the class specified with the $className parameter\&. If the constructor of the specified class accepts parameter values, the $ctorParams parameter must be used when calling sqlsrv_fetch_object\&.  int|null $row [optional] One of the following values, specifying the row to access in a result set that uses a scrollable cursor: SQLSRV_SCROLL_NEXT, SQLSRV_SCROLL_PRIOR, SQLSRV_SCROLL_FIRST, SQLSRV_SCROLL_LAST, SQLSRV_SCROLL_ABSOLUTE, SQLSRV_SCROLL_RELATIVE\&. \fP
+.PP
+For more information on these values, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] Used with SQLSRV_SCROLL_ABSOLUTE and SQLSRV_SCROLL_RELATIVE to specify the row to retrieve\&. The first record in the result set is 0\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+object|false|null \fBA\fP PHP object with properties that correspond to result set field names\&. Property values are populated with the corresponding result set field values\&. If the class specified with the optional $className parameter does not exist or if there is no active result set associated with the specified statement, false is returned\&. If there are no more rows to retrieve, null is returned\&.
+.br
+
+.br
+.RE
+.PP
+The data type of a value in the returned object will be the default PHP data type\&. For information on default PHP data types, see \fBDefault PHP Data Types\fP\&.
+.br
+ 
+.SS "sqlsrv_field_metadata ( $stmt)"
+Returns field metadata\&.
+.PP
+
+.br
+Retrieves metadata for the fields of a prepared statement\&. For information about preparing a statement, see \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP\&. Note that sqlsrv_field_metadata can be called on any prepared statement, pre- or post-execution\&.
+.br
+.PP
+Additional Information at \fBsqlsrv_cancel\fP and \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBresource $stmt A statement resource for which field metadata is sought\&.  array|false An array of arrays or false\&. The array consists of one array for each field in the result set\&. Each sub-array has keys as described in the table below\&. If there is an error in retrieving field metadata, false is returned\&. \fPName - Name of the column to which the field corresponds\&. Type - Numeric value that corresponds to a SQL type\&. Size - Number of characters for fields of character type (char(n), varchar(n), nchar(n), nvarchar(n), XML)\&. Number of bytes for fields of binary type (binary(n), varbinary(n), UDT)\&. NULL for other SQL Server data types\&. Precision - The precision for types of variable precision (real, numeric, decimal, datetime2, datetimeoffset, and time)\&. NULL for other SQL Server data types\&. Scale - The scale for types of variable scale (numeric, decimal, datetime2, datetimeoffset, and time)\&. NULL for other SQL Server data types\&. Nullable - An enumerated value indicating whether the column is nullable (SQLSRV_NULLABLE_YES), the column is not nullable (SQLSRV_NULLABLE_NO), or it is not known if the column is nullable (SQLSRV_NULLABLE_UNKNOWN)\&. See the \fBfunction documentation\fP for more information on the keys for each sub-array\&. 
+.SS "sqlsrv_free_stmt ( $stmt)"
+Closes a statement\&. Frees all resources associated with the statement\&.
+.PP
+
+.br
+Frees all resources associated with the specified statement\&. The statement cannot be used again after this function has been called\&.
+.br
+.PP
+Null is a valid parameter for this function\&. This allows the function to be called multiple times in a script\&. For example, if you free a statement in an error condition and free it again at the end of the script, the second call to sqlsrv_free_stmt will return true because the first call to sqlsrv_free_stmt (in the error condition) sets the statement resource to null\&.
+.br
+.PP
+Additional Information at \fBsqlsrv_cancel\fP and \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBresource|null $stmt The statement to be closed\&.  bool The Boolean value true unless the function is called with an invalid parameter\&. If the function is called with an invalid parameter, false is returned\&. \fP
+.SS "sqlsrv_get_config ( $setting)"
+Returns the current value of the specified configuration setting\&.
+.PP
+
+.br
+If false is returned by sqlsrv_get_config, you must call \fBsqlsrv_errors\fP to determine if an error occurred or if false is the value of the setting specified by the $setting parameter\&.
+.br
+.PP
+For a list of configurable settings, see \fBsqlsrv_configure\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBstring $setting The configuration setting for which the value is returned\&.  mixed The value of the setting specified by the $setting parameter\&. If an invalid setting is specified, false is returned and an error is added to the error collection\&. \fP
+.SS "sqlsrv_get_field ( $stmt,  $field_index,  $get_as_type)"
+Retrieves a field in the current row by index\&. The PHP return type can be specified\&.
+.PP
+
+.br
+Retrieves data from the specified field of the current row\&. Field data must be accessed in order\&. For example, data from the first field cannot be accessed after data from the second field has been accessed\&.
+.br
+.PP
+The combination of \fBsqlsrv_fetch\fP and \fBsqlsrv_get_field\fP provides forward-only access to data\&.
+.br
+.PP
+The combination of \fBsqlsrv_fetch\fP and \fBsqlsrv_get_field\fP loads only one field of a result set row into script memory and allows PHP return type specification\&. (For information about how to specify the PHP return type, see \fBHow to: Specify PHP Data Types\fP\&.) This combination of functions also allows data to be retrieved as a stream\&. (For information about retrieving data as a stream, see \fBRetrieving Data as a Stream Using the SQLSRV Driver\fP\&.)
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBresource $stmt A statement resource corresponding to an executed statement\&.  int $field_index The index of the field to be retrieved\&. Indexes begin at zero\&.  int $get_as_type [optional] A SQLSRV constant (SQLSRV_PHPTYPE_*) that determines the PHP data type for the returned data\&. For information about supported data types, see  https://docs.microsoft.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server Constants (Microsoft Drivers for PHP for SQL Server)}\&. If no return type is specified, a default PHP type will be returned\&. For information about default PHP types, see  http://msdn.microsoft.com/en-us/library/cc296193.aspx Default PHP Data Types}\&. For information about specifying PHP data types, see  http://msdn.microsoft.com/en-us/library/cc296208.aspx How to: Specify PHP Data Types}\&.  mixed The field data\&. You can specify the PHP data type of the returned data by using the $getAsType parameter\&. If no return data type is specified, the default PHP data type will be returned\&. For information about default PHP types, see  http://msdn.microsoft.com/en-us/library/cc296193.aspx Default PHP Data Types}\&. For information about specifying PHP data types, see  http://msdn.microsoft.com/en-us/library/cc296208.aspx How to: Specify PHP Data Types}\&. \fP
+.SS "sqlsrv_has_rows ( $stmt)"
+Detects if a result set has one or more rows\&.
+.PP
+
+.br
+Indicates if the result set has one or more rows\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBresource $stmt The executed statement\&.  bool If there are rows in the result set, the return value will be true\&. If there are no rows, or if the function call fails, the return value will be false\&. \fP
+.SS "sqlsrv_next_result ( $stmt)"
+Makes the next result available for processing\&.
+.PP
+
+.br
+Makes the next result (result set, row count, or output parameter) of the specified statement active\&.
+.br
+.PP
+The first (or only) result returned by a batch query or stored procedure is active without a call to sqlsrv_next_result\&.
+.br
+.PP
+Additional Information at \fBUpdating Data (Microsoft Drivers for PHP for SQL Server)\fP and \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBresource $stmt The executed statement on which the next result is made active\&.  bool|null If the next result was successfully made active, the Boolean value true is returned\&. If an error occurred in making the next result active, false is returned\&. If no more results are available, null is returned\&. \fP
+.SS "sqlsrv_num_fields ( $stmt)"
+Retrieves the number of fields in an active result set\&.
+.PP
+
+.br
+Retrieves the number of fields in an active result set\&. Note that sqlsrv_num_fields can be called on any prepared statement, before or after execution\&.
+.br
+.PP
+Additional Information at \fBsqlsrv_field_metadata\fP and \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBresource $stmt The statement on which the targeted result set is active\&.  int|false An integer value that represents the number of fields in the active result set\&. If an error occurs, the Boolean value false is returned\&. \fP
+.SS "sqlsrv_num_rows ( $stmt)"
+Reports the number of rows in a result set\&.
+.PP
+
+.br
+sqlsrv_num_rows requires a client-side, static, or keyset cursor, and will return false if you use a forward cursor or a dynamic cursor\&. (\fBA\fP forward cursor is the default\&.) For more information about cursors, see \fBsqlsrv_prepare\fP, \fBsqlsrv_query\fP and \fBCursor Types (SQLSRV Driver)\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBresource $stmt The result set for which to count the rows\&.  int|false False if there was an error calculating the number of rows\&. Otherwise, returns the number of rows in the result set\&. \fP
+.SS "SQLSRV_PHPTYPE_STREAM ( $encoding)"
+Specifies the encoding of a stream of data from the server\&.
+.PP
+
+.br
+When specifying the PHP data type of a value being returned from the server, this allows you to specify the encoding used to process the value if the value is a stream\&.
+.br
+.PP
+In the documentation this is presented as a constant that accepts an arguement\&.
+.br
+.PP
+When you use SQLSRV_PHPTYPE_STREAM, the encoding must be specified\&. If no parameter is supplied, an error will be returned\&.
+.br
+.PP
+Additional Information at: 
+.PD 0
+
+.IP "\(bu" 2
+\fBHow to: Specify PHP Data Types\fP 
+.IP "\(bu" 2
+\fBHow to: Retrieve Character Data as a Stream Using the SQLSRV Driver\&.\fP 
+.IP "\(bu" 2
+\fBHow to: Send and Retrieve UTF-8 Data Using Built-In UTF-8 Support\&.\fP 
+.IP "\(bu" 2
+\fBSQLSRV Driver API Reference\fP</ui>
+.PP
+\fBstring $encoding The encoding to use for the stream\&. The valid options are SQLSRV_ENC_BINARY, SQLSRV_ENC_CHAR or 'UTF-8'\&.  int Value to use in any place that accepts a SQLSRV_PHPTYPE_* constant to represent a PHP stream with the given encoding\&. \fP
+.PP
+
+.SS "SQLSRV_PHPTYPE_STRING ( $encoding)"
+Specifies the encoding of a string being received form the server\&.
+.PP
+
+.br
+When specifying the PHP data type of a value being returned from the server, this allows you to specify the encoding used to process the value if the value is a string\&.
+.br
+.PP
+In the documentation this is presented as a constant that accepts an arguement\&.
+.br
+.PP
+When you use SQLSRV_PHPTYPE_STRING, the encoding must be specified\&. If no parameter is supplied, an error will be returned\&.
+.br
+.PP
+Additional Information at: 
+.PD 0
+
+.IP "\(bu" 2
+\fBHow to: Specify PHP Data Types\fP 
+.IP "\(bu" 2
+\fBHow to: Retrieve Character Data as a Stream Using the SQLSRV Driver\&.\fP 
+.IP "\(bu" 2
+\fBHow to: Send and Retrieve UTF-8 Data Using Built-In UTF-8 Support\&.\fP 
+.IP "\(bu" 2
+\fBSQLSRV Driver API Reference\fP</ui>
+.PP
+\fBstring $encoding The encoding to use for the stream\&. The valid options are SQLSRV_ENC_BINARY, SQLSRV_ENC_CHAR or 'UTF-8'\&.  int Value to use in any place that accepts a SQLSRV_PHPTYPE_* constant to represent a PHP string with the given encoding\&. \fP
+.PP
+
+.SS "sqlsrv_prepare ( $conn,  $tsql,  $params = \fCarray()\fP,  $options = \fCarray()\fP)"
+Prepares a Transact-SQL query without executing it\&. Implicitly binds parameters\&.
+.PP
+
+.br
+Creates a statement resource associated with the specified connection\&. This function is useful for execution of multiple queries\&.
+.br
+.PP
+Variables passed as query parameters should be passed by reference instead of by value\&. For example, pass &$myVariable instead of $myVariable\&. \fBA\fP PHP warning will be raised when a query with by-value parameters is executed\&.
+.br
+.PP
+When you prepare a statement that uses variables as parameters, the variables are bound to the statement\&. That means that if you update the values of the variables, the next time you execute the statement it will run with updated parameter values\&.
+.br
+.PP
+The combination of sqlsrv_prepare and \fBsqlsrv_execute\fP separates statement preparation and statement execution in to two function calls and can be used to execute parameterized queries\&. This function is ideal to execute a statement multiple times with different parameter values for each execution\&.
+.br
+.PP
+For alternative strategies for writing and reading large amounts of information, see \fBBatches of SQL Statements\fP and \fBBULK INSERT\fP\&.
+.br
+.PP
+For more information, see \fBHow to: Retrieve Output Parameters Using the SQLSRV Driver\&.\fP
+.br
+.PP
+For additional Information see: 
+.PD 0
+
+.IP "\(bu" 2
+\fBUsing Directional Parameters\fP 
+.IP "\(bu" 2
+\fBUpdating Data (Microsoft Drivers for PHP for SQL Server)\fP 
+.IP "\(bu" 2
+\fBHow to: Perform Parameterized Queries\fP 
+.IP "\(bu" 2
+\fBHow to: Send Data as a Stream\fP 
+.IP "\(bu" 2
+\fBSQLSRV Driver API Reference\fP
+.PP
+\fBresource $conn The connection resource associated with the created statement\&.  string $tsql The Transact-SQL expression that corresponds to the created statement\&.  array $params [optional]: An array of values that correspond to parameters in a parameterized query\&. Each element of the array can be one of the following: a literal value, a reference to a PHP variable, or an array with the following structure: \fCarray(&$value [, $direction [, $phpType [, $sqlType]]])\fP The following table describes these array elements: \fP&$value - \fBA\fP literal value or a reference to a PHP variable\&. $direction[optional] - One of the following SQLSRV_PARAM_* constants used to indicate the parameter direction: SQLSRV_PARAM_IN, SQLSRV_PARAM_OUT, SQLSRV_PARAM_INOUT\&. The default value is SQLSRV_PARAM_IN\&. For more information about PHP constants, see \fBConstants (Microsoft Drivers for PHP for SQL Server)\fP\&. $phpType[optional] - \fBA\fP SQLSRV_PHPTYPE_* constant that specifies PHP data type of the returned value\&. $sqlType[optional] - \fBA\fP SQLSRV_SQLTYPE_* constant that specifies the SQL Server data type of the input value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional]: An associative array that sets query properties\&. The table below lists the supported keys and corresponding values:
+.br
+.RE
+.PP
+QueryTimeout (int) - Sets the query timeout in seconds\&. By default, the driver will wait indefinitely for results\&. Any positive integer value\&.
+.br
+.PP
+SendStreamParamsAtExec (bool) - Configures the driver to send all stream data at execution (true), or to send stream data in chunks (false)\&. By default, the value is set to true\&. For more information, see \fBsqlsrv_send_stream_data\fP\&.
+.br
+.PP
+Scrollable - For more information about these values, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&. 
+.PD 0
+
+.IP "\(bu" 2
+SQLSRV_CURSOR_FORWARD 
+.IP "\(bu" 2
+SQLSRV_CURSOR_STATIC 
+.IP "\(bu" 2
+SQLSRV_CURSOR_DYNAMIC 
+.IP "\(bu" 2
+SQLSRV_CURSOR_KEYSET 
+.IP "\(bu" 2
+SQLSRV_CURSOR_CLIENT_BUFFERED
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP statement resource\&. If the statement resource cannot be created, false is returned\&. 
+.RE
+.PP
+
+.SS "sqlsrv_query ( $conn,  $tsql,  $params = \fCarray()\fP,  $options = \fCarray()\fP)"
+Prepares and executes a Transact-SQL query\&.
+.PP
+
+.br
+Prepares and executes a statement\&.
+.br
+.PP
+The sqlsrv_query function is well-suited for one-time queries and should be the default choice to execute queries unless special circumstances apply\&. This function provides a streamlined method to execute a query with a minimum amount of code\&. The sqlsrv_query function does both statement preparation and statement execution, and can be used to execute parameterized queries\&.
+.br
+.PP
+For more information, see \fBHow to: Retrieve Output Parameters Using the SQLSRV Driver\&.\fP
+.br
+.PP
+For additional Information see: 
+.PD 0
+
+.IP "\(bu" 2
+\fBUsing Directional Parameters\fP 
+.IP "\(bu" 2
+\fBUpdating Data (Microsoft Drivers for PHP for SQL Server)\fP 
+.IP "\(bu" 2
+\fBHow to: Perform Parameterized Queries\fP 
+.IP "\(bu" 2
+\fBHow to: Send Data as a Stream\fP 
+.IP "\(bu" 2
+\fBSQLSRV Driver API Reference\fP
+.PP
+\fBresource $conn The connection resource associated with the prepared statement\&.  string $tsql The Transact-SQL expression that corresponds to the prepared statement\&.  array $params [optional]: An array of values that correspond to parameters in a parameterized query\&. Each element of the array can be one of the following: a literal value, a reference to a PHP variable, or an array with the following structure: \fCarray($value [, $direction [, $phpType [, $sqlType]]])\fP The following table describes these array elements: \fP&$value - \fBA\fP literal value, a PHP variable, or a PHP by-reference variable\&. $direction[optional] - One of the following SQLSRV_PARAM_* constants used to indicate the parameter direction: SQLSRV_PARAM_IN, SQLSRV_PARAM_OUT, SQLSRV_PARAM_INOUT\&. The default value is SQLSRV_PARAM_IN\&. For more information about PHP constants, see \fBConstants (Microsoft Drivers for PHP for SQL Server)\fP\&. $phpType[optional] - \fBA\fP SQLSRV_PHPTYPE_* constant that specifies PHP data type of the returned value\&. $sqlType[optional] - \fBA\fP SQLSRV_SQLTYPE_* constant that specifies the SQL Server data type of the input value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional]: An associative array that sets query properties\&. The table below lists the supported keys and corresponding values:
+.br
+.RE
+.PP
+QueryTimeout (int) - Sets the query timeout in seconds\&. By default, the driver will wait indefinitely for results\&. Any positive integer value\&.
+.br
+.PP
+SendStreamParamsAtExec (bool) - Configures the driver to send all stream data at execution (true), or to send stream data in chunks (false)\&. By default, the value is set to true\&. For more information, see \fBsqlsrv_send_stream_data\fP\&.
+.br
+.PP
+Scrollable - For more information about these values, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&. 
+.PD 0
+
+.IP "\(bu" 2
+SQLSRV_CURSOR_FORWARD 
+.IP "\(bu" 2
+SQLSRV_CURSOR_STATIC 
+.IP "\(bu" 2
+SQLSRV_CURSOR_DYNAMIC 
+.IP "\(bu" 2
+SQLSRV_CURSOR_KEYSET 
+.IP "\(bu" 2
+SQLSRV_CURSOR_CLIENT_BUFFERED
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP statement resource\&. If the statement cannot be created and/or executed, false is returned\&. 
+.RE
+.PP
+
+.SS "sqlsrv_rollback ( $conn)"
+Rolls back a transaction\&.
+.PP
+
+.br
+Rolls back the current transaction on the specified connection and returns the connection to the auto-commit mode\&. The current transaction includes all statements on the specified connection that were executed after the call to sqlsrv_begin_transaction and before any calls to \fBsqlsrv_rollback\fP or \fBsqlsrv_commit\fP\&.
+.br
+.PP
+The Microsoft Drivers for PHP for SQL Server is in auto-commit mode by default\&. This means that all queries are automatically committed upon success unless they have been designated as part of an explicit transaction by using \fBsqlsrv_begin_transaction\fP\&.
+.br
+.PP
+If sqlsrv_rollback is called on a connection that is not in an active transaction that was initiated with \fBsqlsrv_begin_transaction\fP, the call returns false and a Not in Transaction error is added to the error collection\&.
+.br
+.PP
+Additional Information at \fBHow to Perform Transactions\fP and \fBSQLSRV Driver API Reference\fP
+.br
+ \fBresource $conn The connection on which the transaction is active\&.  bool A Boolean value: true if the transaction was successfully rolled back\&. Otherwise, false\&. \fP
+.SS "sqlsrv_rows_affected ( $stmt)"
+Returns the number of modified rows\&.
+.PP
+
+.br
+Returns the number of rows modified by the last statement executed\&. This function does not return the number of rows returned by a SELECT statement\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBresource $stmt A statement resource corresponding to an executed statement\&.  int|false An integer indicating the number of rows modified by the last executed statement\&. If no rows were modified, zero (0) is returned\&. If no information about the number of modified rows is available, negative one (-1) is returned\&. If an error occurred in retrieving the number of modified rows, false is returned\&. \fP
+.SS "sqlsrv_send_stream_data ( $stmt)"
+Sends up to eight kilobytes (8 KB) of data to the server with each call to the function\&.
+.PP
+
+.br
+Sends data from parameter streams to the server\&. Up to eight kilobytes (8K) of data is sent with each call to sqlsrv_send_stream_data\&.
+.br
+.PP
+By default, all stream data is sent to the server when a query is executed\&. If this default behavior is not changed, you do not have to use sqlsrv_send_stream_data to send stream data to the server\&. For information about changing the default behavior, see the Parameters section of \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBresource $stmt A statement resource corresponding to an executed statement\&.  bool Boolean : true if there is more data to be sent\&. Otherwise, false\&. \fP
+.SS "sqlsrv_server_info ( $conn)"
+Provides information about the server\&.
+.PP
+
+.br
+Returns information about the server\&. \fBA\fP connection must be established before calling this function\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBresource $conn The connection resource by which the client and server are connected\&.  array An associative array with the following keys: \fPCurrentDatabase - The database currently being targeted\&. SQLServerVersion - The version of SQL Server\&. SQLServerName - The name of the server\&. 
+.SS "SQLSRV_SQLTYPE_BINARY ( $byteCount)"
+Specifies a SQL Server binary field\&.
+.PP
+
+.br
+In the documentation this is presented as a constant that accepts an arguement\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBint $byteCount Must be between 1 and 8000\&.  int Value to use in any place that accepts a SQLSRV_SQLTYPE_* constant to represent the 'binary' data type\&. \fP
+.SS "SQLSRV_SQLTYPE_CHAR ( $charCount)"
+Specifies a SQL Server char field\&.
+.PP
+
+.br
+In the documentation this is presented as a constant that accepts an arguement\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBint $charCount Must be between 1 and 8000\&.  int Value to use in any place that accepts a SQLSRV_SQLTYPE_* constant to represent the char data type\&. \fP
+.SS "SQLSRV_SQLTYPE_DECIMAL ( $precision,  $scale)"
+Specifies a SQL Server decimal field\&.
+.PP
+
+.br
+In the documentation this is presented as a constant that accepts an arguement\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBint $precision Must be between 1 and 38\&.  int $scale Must be between 1 and $precision\&.  int Value to use in any place that accepts a SQLSRV_SQLTYPE_* constant to represent the decimal data type\&. \fP
+.SS "SQLSRV_SQLTYPE_NCHAR ( $charCount)"
+Specifies a SQL Server nchar field\&.
+.PP
+
+.br
+In the documentation this is presented as a constant that accepts an arguement\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBint $charCount Must be between 1 and 4000\&.  int Value to use in any place that accepts a SQLSRV_SQLTYPE_* constant to represent the nchar data type\&. \fP
+.SS "SQLSRV_SQLTYPE_NUMERIC ( $precision,  $scale)"
+Specifies a SQL Server numeric field\&.
+.PP
+
+.br
+In the documentation this is presented as a constant that accepts an arguement\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBint $precision Must be between 1 and 38\&.  int $scale Must be between 1 and $precision\&.  int Value to use in any place that accepts a SQLSRV_SQLTYPE_* constant to represent the numeric data type\&. \fP
+.SS "SQLSRV_SQLTYPE_NVARCHAR ( $charCount)"
+Specifies a SQL Server nvarchar field\&.
+.PP
+
+.br
+In the documentation this is presented as a constant that accepts an arguement\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBint|string $charCount Must be between 1 and 4000 or 'max'\&.  int Value to use in any place that accepts a SQLSRV_SQLTYPE_* constant to represent the nvarchar data type\&. \fP
+.SS "SQLSRV_SQLTYPE_VARBINARY ( $byteCount)"
+Specifies a SQL Server varbinary field\&.
+.PP
+
+.br
+In the documentation this is presented as a constant that accepts an arguement\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBint|string $byteCount Must be between 1 and 8000 or 'max'\&.  int Value to use in any place that accepts a SQLSRV_SQLTYPE_* constant to represent the varbinary data type\&. \fP
+.SS "SQLSRV_SQLTYPE_VARCHAR ( $charCount)"
+Specifies a SQL Server varchar filed\&.
+.PP
+
+.br
+In the documentation this is presented as a constant that accepts an arguement\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBint|string $charCount Must be between 1 and 8000 or 'max'\&.  int Value to use in any place that accepts a SQLSRV_SQLTYPE_* constant to represent the varchar data type\&. \fP
+.SH "Variable Documentation"
+.PP 
+.SS "const SQLSRV_CURSOR_CLIENT_BUFFERED 'buffered'"
+Lets you access rows in any order\&.
+.PP
+
+.br
+Creates a client-side cursor query\&.
+.br
+.PP
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the kind of cursor that you can use in a result set\&. For information on using these constants, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_CURSOR_DYNAMIC 'dynamic'"
+Lets you access rows in any order and will reflect changes in the database\&.
+.PP
+
+.br
+\fBsqlsrv_num_rows\fP returns an error for result sets created with this cursor type\&.
+.br
+.PP
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the kind of cursor that you can use in a result set\&. For information on using these constants, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_CURSOR_FORWARD 'forward'"
+Lets you move one row at a time starting at the first row of the result set until you reach the end of the result set\&.
+.PP
+
+.br
+This is the default cursor type\&.
+.br
+.PP
+\fBsqlsrv_num_rows\fP returns an error for result sets created with this cursor type\&.
+.br
+.PP
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the kind of cursor that you can use in a result set\&. For information on using these constants, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_CURSOR_KEYSET 'keyset'"
+Lets you access rows in any order\&.
+.PP
+
+.br
+However, a keyset cursor does not update the row count if a row is deleted from the table (a deleted row is returned with no values)\&.
+.br
+.PP
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the kind of cursor that you can use in a result set\&. For information on using these constants, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_CURSOR_STATIC 'static'"
+Lets you access rows in any order but will not reflect changes in the database\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the kind of cursor that you can use in a result set\&. For information on using these constants, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_ENC_BINARY 'binary'"
+Binary Encoding
+.PP
+
+.br
+Data is returned as a raw byte stream from the server without performing encoding or translation\&.
+.br
+.PP
+Used with \fBsqlsrv_prepare\fP, \fBsqlsrv_query\fP and \fBsqlsrv_get_field\fP to request a field be return as a specific PHP type\&.
+.br
+.PP
+This is used with \fBSQLSRV_PHPTYPE_STREAM\fP and \fBSQLSRV_PHPTYPE_STRING\fP to specify the encoding of those PHP types types\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_ENC_CHAR 'char'"
+Character Encoding
+.PP
+
+.br
+Data is returned in 8-bit characters as specified in the code page of the Windows locale that is set on the system\&. Any multi-byte characters or characters that do not map into this code page are substituted with a single byte question mark (?) character\&.
+.br
+.PP
+This is the default encoding\&.
+.br
+.PP
+Used with \fBsqlsrv_prepare\fP, \fBsqlsrv_query\fP and \fBsqlsrv_get_field\fP to request a field be return as a specific PHP type\&.
+.br
+.PP
+This is used with \fBSQLSRV_PHPTYPE_STREAM\fP and \fBSQLSRV_PHPTYPE_STRING\fP to specify the encoding of those PHP types types\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_ERR_ALL 2"
+Errors and warnings generated on the last sqlsrv function call are returned\&.
+.PP
+
+.br
+This is the default value\&.
+.br
+.PP
+Used to specify if \fBsqlsrv_errors\fP returns errors, warnings, or both\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_ERR_ERRORS 0"
+SQLSRV Extension Stub File\&.
+.PP
+Current through version 3\&.0\&.1 (rel March 22, 2012) of Microsoft Drivers for PHP for SQL Server\&.
+.PP
+Documentation taken from \fBhttp://msdn\&.microsoft\&.com/en-us/library/ee229547(v=sql\&.10)\&.aspx\fP on Mar 22, 2012\&. Additional information from using \fBReflection\fP\&. Errors generated on the last sqlsrv function call are returned\&.
+.PP
+
+.br
+Used to specify if \fBsqlsrv_errors\fP returns errors, warnings, or both\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_ERR_WARNINGS 1"
+Warnings generated on the last sqlsrv function call are returned\&.
+.PP
+
+.br
+Used to specify if \fBsqlsrv_errors\fP returns errors, warnings, or both\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_FETCH_ASSOC 2"
+Returns an associative array\&.
+.PP
+
+.br
+\fBsqlsrv_fetch_array\fP returns the next row of data as an associative array\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_FETCH_BOTH 3"
+Returns both a numeric and associative array\&.
+.PP
+
+.br
+\fBsqlsrv_fetch_array\fP returns the next row of data as an array with both numeric and associative keys\&.
+.br
+.PP
+This is the default value\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_FETCH_NUMERIC 1"
+Returns numerically indexed array\&.
+.PP
+
+.br
+\fBsqlsrv_fetch_array\fP returns the next row of data as a numerically indexed array\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_LOG_SEVERITY_ALL \-1"
+Specifies that errors, warnings, and notices will be logged\&.
+.PP
+
+.br
+Used as the value for the LogSeverity setting with \fBsqlsrv_configure\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_LOG_SEVERITY_ERROR 1"
+Specifies that errors will be logged\&.
+.PP
+
+.br
+Used as the value for the LogSeverity setting with \fBsqlsrv_configure\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_LOG_SEVERITY_NOTICE 4"
+Specifies that notices will be logged\&.
+.PP
+
+.br
+Used as the value for the LogSeverity setting with \fBsqlsrv_configure\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_LOG_SEVERITY_WARNING 2"
+Specifies that warnings will be logged\&.
+.PP
+
+.br
+Used as the value for the LogSeverity setting with \fBsqlsrv_configure\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_LOG_SYSTEM_ALL \-1"
+Turns on logging of all subsystems\&.
+.PP
+
+.br
+Used as the value for the LogSubsystems setting with \fBsqlsrv_configure\fP\&.
+.br
+ Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_LOG_SYSTEM_CONN 2"
+Turns on logging of connection activity\&.
+.PP
+
+.br
+Used as the value for the LogSubsystems setting with \fBsqlsrv_configure\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_LOG_SYSTEM_INIT 1"
+Turns on logging of initialization activity\&.
+.PP
+
+.br
+Used as the value for the LogSubsystems setting with \fBsqlsrv_configure\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_LOG_SYSTEM_OFF 0"
+Turns logging off\&.
+.PP
+
+.br
+Used as the value for the LogSubsystems setting with \fBsqlsrv_configure\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_LOG_SYSTEM_STMT 4"
+Turns on logging of statement activity\&.
+.PP
+
+.br
+Used as the value for the LogSubsystems setting with \fBsqlsrv_configure\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_LOG_SYSTEM_UTIL 8"
+Turns on logging of error functions activity (such as handle_error and handle_warning)\&.
+.PP
+
+.br
+Used as the value for the LogSubsystems setting with \fBsqlsrv_configure\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_NULLABLE_NO 0"
+The column is not nullable\&.
+.PP
+
+.br
+You can compare the value of the Nullable key that is returned by \fBsqlsrv_field_metadata\fP to determine the column's nullable status\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_NULLABLE_UNKNOWN 2"
+It is not known if the column is nullable\&.
+.PP
+
+.br
+You can compare the value of the Nullable key that is returned by \fBsqlsrv_field_metadata\fP to determine the column's nullable status\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_NULLABLE_YES 1"
+The column is nullable\&.
+.PP
+
+.br
+You can compare the value of the Nullable key that is returned by \fBsqlsrv_field_metadata\fP to determine the column's nullable status\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_PARAM_IN 1"
+Indicates an input parameter\&.
+.PP
+
+.br
+Used for specifying parameter direction when you call \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_PARAM_INOUT 2"
+Indicates a bidirectional parameter\&.
+.PP
+
+.br
+Used for specifying parameter direction when you call \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_PARAM_OUT 4"
+Indicates an output parameter\&.
+.PP
+
+.br
+Used for specifying parameter direction when you call \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_PHPTYPE_DATETIME 4"
+Datetime
+.PP
+
+.br
+Used with \fBsqlsrv_prepare\fP, \fBsqlsrv_query\fP and \fBsqlsrv_get_field\fP to request a field be return as a specific PHP type\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_PHPTYPE_FLOAT 3"
+Float
+.PP
+
+.br
+Used with \fBsqlsrv_prepare\fP, \fBsqlsrv_query\fP and \fBsqlsrv_get_field\fP to request a field be return as a specific PHP type\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_PHPTYPE_INT 2"
+Integer
+.PP
+
+.br
+Used with \fBsqlsrv_prepare\fP, \fBsqlsrv_query\fP and \fBsqlsrv_get_field\fP to request a field be return as a specific PHP type\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_PHPTYPE_NULL 1"
+Null
+.PP
+
+.br
+Used with \fBsqlsrv_prepare\fP, \fBsqlsrv_query\fP and \fBsqlsrv_get_field\fP to request a field be return as a specific PHP type\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SCROLL_ABSOLUTE 5"
+Specifies the row specified with the offset parameter\&.
+.PP
+
+.br
+Used with \fBsqlsrv_fetch\fP, \fBsqlsrv_fetch_array\fP, or \fBsqlsrv_fetch_object\fP to specify a row\&.
+.br
+.PP
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify which row to select in the result set\&. For information on using these constants, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SCROLL_FIRST 2"
+Specifies the first row in the result set\&.
+.PP
+
+.br
+Used with \fBsqlsrv_fetch\fP, \fBsqlsrv_fetch_array\fP, or \fBsqlsrv_fetch_object\fP to specify a row\&.
+.br
+.PP
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify which row to select in the result set\&. For information on using these constants, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SCROLL_LAST 3"
+Specifies the last row in the result set\&.
+.PP
+
+.br
+Used with \fBsqlsrv_fetch\fP, \fBsqlsrv_fetch_array\fP, or \fBsqlsrv_fetch_object\fP to specify a row\&.
+.br
+.PP
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify which row to select in the result set\&. For information on using these constants, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SCROLL_NEXT 1"
+Specifies the next row\&.
+.PP
+
+.br
+This is the default value, if you do not specify the row parameter for a scrollable result set\&.
+.br
+.PP
+Used with \fBsqlsrv_fetch\fP, \fBsqlsrv_fetch_array\fP, or \fBsqlsrv_fetch_object\fP to specify a row\&.
+.br
+.PP
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify which row to select in the result set\&. For information on using these constants, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SCROLL_PRIOR 4"
+Specifies the row before the current row\&.
+.PP
+
+.br
+Used with \fBsqlsrv_fetch\fP, \fBsqlsrv_fetch_array\fP, or \fBsqlsrv_fetch_object\fP to specify a row\&.
+.br
+.PP
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify which row to select in the result set\&. For information on using these constants, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SCROLL_RELATIVE 6"
+Specifies the row specified with the offset parameter from the current row\&.
+.PP
+
+.br
+Used with \fBsqlsrv_fetch\fP, \fBsqlsrv_fetch_array\fP, or \fBsqlsrv_fetch_object\fP to specify a row\&.
+.br
+.PP
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify which row to select in the result set\&. For information on using these constants, see \fBSpecifying a Cursor Type and Selecting Rows\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_BIGINT \-5"
+bigint\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_BIT \-7"
+bit\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+.PP
+\fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_DATE 5211"
+date\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_DATETIME 25177693"
+datetime\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_DATETIME2 58734173"
+datetime2\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_DATETIMEOFFSET 58738021"
+datetimeoffset\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_FLOAT 6"
+float\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_IMAGE \-4"
+image\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_INT 4"
+int\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_MONEY 33564163"
+money\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_NTEXT \-10"
+ntext\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_REAL 7"
+real\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_SMALLDATETIME 8285"
+smalldatetime\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_SMALLINT 5"
+smallint\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_SMALLMONEY 33559555"
+smallmoney\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_TEXT \-1"
+text\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_TIME 58728806"
+time\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_TIMESTAMP 4606"
+timestamp\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_TINYINT \-6"
+tinyint\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_UDT \-151"
+udt\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_UNIQUEIDENTIFIER \-11"
+uniqueidentifier\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_SQLTYPE_XML \-152"
+xml\&.
+.PP
+
+.br
+Used when calling \fBsqlsrv_query\fP or \fBsqlsrv_prepare\fP to specify the SQL Server data type of a parameter\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_TXN_READ_COMMITTED 2"
+Read Committed\&.
+.PP
+
+.br
+Specifies that statements cannot read data that has been modified but not committed by other transactions\&. This prevents dirty reads\&. Data can be changed by other transactions between individual statements within the current transaction, resulting in nonrepeatable reads or phantom data\&. This option is the SQL Server default\&.
+.br
+.PP
+The behavior of READ COMMITTED depends on the setting of the READ_COMMITTED_SNAPSHOT database option\&.
+.br
+.PP
+Used with the TransactionIsolation key when calling \fBsqlsrv_connect\fP\&. For information on using these constants, see \fBSET TRANSACTION ISOLATION LEVEL (Transact-SQL)\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_TXN_READ_UNCOMMITTED 1"
+Read Uncommitted\&.
+.PP
+
+.br
+Specifies that statements can read rows that have been modified by other transactions but not yet committed\&.
+.br
+.PP
+Transactions running at the READ UNCOMMITTED level do not issue shared locks to prevent other transactions from modifying data read by the current transaction\&. READ UNCOMMITTED transactions are also not blocked by exclusive locks that would prevent the current transaction from reading rows that have been modified but not committed by other transactions\&. When this option is set, it is possible to read uncommitted modifications, which are called dirty reads\&. Values in the data can be changed and rows can appear or disappear in the data set before the end of the transaction\&. This option has the same effect as setting NOLOCK on all tables in all SELECT statements in a transaction\&. This is the least restrictive of the isolation levels\&.
+.br
+.PP
+Used with the TransactionIsolation key when calling \fBsqlsrv_connect\fP\&. For information on using these constants, see \fBSET TRANSACTION ISOLATION LEVEL (Transact-SQL)\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_TXN_REPEATABLE_READ 4"
+Repeatable Read\&.
+.PP
+
+.br
+Specifies that statements cannot read data that has been modified but not yet committed by other transactions and that no other transactions can modify data that has been read by the current transaction until the current transaction completes\&.
+.br
+.PP
+Shared locks are placed on all data read by each statement in the transaction and are held until the transaction completes\&. This prevents other transactions from modifying any rows that have been read by the current transaction\&. \fBOther\fP transactions can insert new rows that match the search conditions of statements issued by the current transaction\&. If the current transaction then retries the statement it will retrieve the new rows, which results in phantom reads\&. Because shared locks are held to the end of a transaction instead of being released at the end of each statement, concurrency is lower than the default READ COMMITTED isolation level\&.
+.br
+.PP
+Use this option only when necessary\&.
+.br
+.PP
+Used with the TransactionIsolation key when calling \fBsqlsrv_connect\fP\&. For information on using these constants, see \fBSET TRANSACTION ISOLATION LEVEL (Transact-SQL)\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_TXN_SERIALIZABLE 8"
+\fBSerializable\fP\&.
+.PP
+
+.br
+Specifies the following: 
+.PD 0
+
+.IP "\(bu" 2
+Statements cannot read data that has been modified but not yet committed by other transactions\&. 
+.IP "\(bu" 2
+No other transactions can modify data that has been read by the current transaction until the current transaction completes\&. 
+.IP "\(bu" 2
+\fBOther\fP transactions cannot insert new rows with key values that would fall in the range of keys read by any statements in the current transaction until the current transaction completes\&.
+.PP
+.PP
+Range locks are placed in the range of key values that match the search conditions of each statement executed in a transaction\&. This blocks other transactions from updating or inserting any rows that would qualify for any of the statements executed by the current transaction\&. This means that if any of the statements in a transaction are executed a second time, they will read the same set of rows\&. The range locks are held until the transaction completes\&. This is the most restrictive of the isolation levels because it locks entire ranges of keys and holds the locks until the transaction completes\&. Because concurrency is lower, use this option only when necessary\&. This option has the same effect as setting HOLDLOCK on all tables in all SELECT statements in a transaction\&.
+.br
+.PP
+Used with the TransactionIsolation key when calling \fBsqlsrv_connect\fP\&. For information on using these constants, see \fBSET TRANSACTION ISOLATION LEVEL (Transact-SQL)\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SS "const SQLSRV_TXN_SNAPSHOT 32"
+Snapshot\&.
+.PP
+
+.br
+Specifies that data read by any statement in a transaction will be the transactionally consistent version of the data that existed at the start of the transaction\&. The transaction can only recognize data modifications that were committed before the start of the transaction\&. Data modifications made by other transactions after the start of the current transaction are not visible to statements executing in the current transaction\&. The effect is as if the statements in a transaction get a snapshot of the committed data as it existed at the start of the transaction\&.
+.br
+.PP
+Except when a database is being recovered, SNAPSHOT transactions do not request locks when reading data\&. SNAPSHOT transactions reading data do not block other transactions from writing data\&. Transactions writing data do not block SNAPSHOT transactions from reading data\&.
+.br
+.PP
+During the roll-back phase of a database recovery, SNAPSHOT transactions will request a lock if an attempt is made to read data that is locked by another transaction that is being rolled back\&. The SNAPSHOT transaction is blocked until that transaction has been rolled back\&. The lock is released immediately after it has been granted\&.
+.br
+.PP
+The ALLOW_SNAPSHOT_ISOLATION database option must be set to ON before you can start a transaction that uses the SNAPSHOT isolation level\&. If a transaction using the SNAPSHOT isolation level accesses data in multiple databases, ALLOW_SNAPSHOT_ISOLATION must be set to ON in each database\&.
+.br
+.PP
+\fBA\fP transaction cannot be set to SNAPSHOT isolation level that started with another isolation level; doing so will cause the transaction to abort\&. If a transaction starts in the SNAPSHOT isolation level, you can change it to another isolation level and then back to SNAPSHOT\&. \fBA\fP transaction starts the first time it accesses data\&.
+.br
+.PP
+\fBA\fP transaction running under SNAPSHOT isolation level can view changes made by that transaction\&. For example, if the transaction performs an UPDATE on a table and then issues a SELECT statement against the same table, the modified data will be included in the result set\&.
+.br
+.PP
+Used with the TransactionIsolation key when calling \fBsqlsrv_connect\fP\&. For information on using these constants, see \fBSET TRANSACTION ISOLATION LEVEL (Transact-SQL)\fP\&.
+.br
+.PP
+Additional Information at \fBSQLSRV Driver API Reference\fP
+.br
+ \fBhttps://docs\&.microsoft\&.com/en-us/sql/connect/php/constants-microsoft-drivers-for-php-for-sql-server\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,1143 @@
+.TH "vendor/jetbrains/phpstorm-stubs/tidy/tidy.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/tidy/tidy.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBtidy\fP"
+.br
+.ti -1c
+.RI "class \fBtidyNode\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBtidy_getopt\fP (\fBtidy\fP $object, $option)"
+.br
+.ti -1c
+.RI "\fBtidy_parse_string\fP ($input, $config=\fBnull\fP, $encoding=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBtidy_parse_file\fP ($filename, $config=\fBnull\fP, $encoding=\fBnull\fP, $use_include_path=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBtidy_get_output\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_get_error_buffer\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_clean_repair\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_repair_string\fP ($data, $config=\fBnull\fP, $encoding=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBtidy_repair_file\fP ($filename, $config=\fBnull\fP, $encoding=\fBnull\fP, $use_include_path=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBtidy_diagnose\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_get_release\fP ()"
+.br
+.ti -1c
+.RI "\fBtidy_get_config\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_get_status\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_get_html_ver\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_is_xhtml\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_is_xml\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_error_count\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_warning_count\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_access_count\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_config_count\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_get_opt_doc\fP (\fBtidy\fP $object, $optname)"
+.br
+.ti -1c
+.RI "\fBtidy_get_root\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_get_head\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_get_html\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBtidy_get_body\fP (\fBtidy\fP $object)"
+.br
+.ti -1c
+.RI "\fBob_tidyhandler\fP ($input, $mode=\fBnull\fP)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBTIDY_TAG_UNKNOWN\fP 0"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_A\fP 1"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_ABBR\fP 2"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_ACRONYM\fP 3"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_ADDRESS\fP 4"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_ALIGN\fP 5"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_APPLET\fP 6"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_AREA\fP 7"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_B\fP 8"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_BASE\fP 9"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_BASEFONT\fP 10"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_BDO\fP 11"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_BGSOUND\fP 12"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_BIG\fP 13"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_BLINK\fP 14"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_BLOCKQUOTE\fP 15"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_BODY\fP 16"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_BR\fP 17"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_BUTTON\fP 18"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_CAPTION\fP 19"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_CENTER\fP 20"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_CITE\fP 21"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_CODE\fP 22"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_COL\fP 23"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_COLGROUP\fP 24"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_COMMENT\fP 25"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_DD\fP 26"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_DEL\fP 27"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_DFN\fP 28"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_DIR\fP 29"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_DIV\fP 30"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_DL\fP 31"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_DT\fP 32"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_EM\fP 33"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_EMBED\fP 34"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_FIELDSET\fP 35"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_FONT\fP 36"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_FORM\fP 37"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_FRAME\fP 38"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_FRAMESET\fP 39"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_H1\fP 40"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_H2\fP 41"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_H3\fP 42"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_H4\fP 43"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_H5\fP 44"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_H6\fP 45"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_HEAD\fP 46"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_HR\fP 47"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_HTML\fP 48"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_I\fP 49"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_IFRAME\fP 50"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_ILAYER\fP 51"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_IMG\fP 52"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_INPUT\fP 53"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_INS\fP 54"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_ISINDEX\fP 55"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_KBD\fP 56"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_KEYGEN\fP 57"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_LABEL\fP 58"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_LAYER\fP 59"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_LEGEND\fP 60"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_LI\fP 61"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_LINK\fP 62"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_LISTING\fP 63"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_MAP\fP 64"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_MARQUEE\fP 65"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_MENU\fP 66"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_META\fP 67"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_MULTICOL\fP 68"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_NOBR\fP 69"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_NOEMBED\fP 70"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_NOFRAMES\fP 71"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_NOLAYER\fP 72"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_NOSAVE\fP 73"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_NOSCRIPT\fP 74"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_OBJECT\fP 75"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_OL\fP 76"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_OPTGROUP\fP 77"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_OPTION\fP 78"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_P\fP 79"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_PARAM\fP 80"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_PLAINTEXT\fP 81"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_PRE\fP 82"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_Q\fP 83"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_RB\fP 84"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_RBC\fP 85"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_RP\fP 86"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_RT\fP 87"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_RTC\fP 88"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_RUBY\fP 89"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_S\fP 90"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_SAMP\fP 91"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_SCRIPT\fP 92"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_SELECT\fP 93"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_SERVER\fP 94"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_SERVLET\fP 95"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_SMALL\fP 96"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_SPACER\fP 97"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_SPAN\fP 98"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_STRIKE\fP 99"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_STRONG\fP 100"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_STYLE\fP 101"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_SUB\fP 102"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_SUP\fP 103"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_TABLE\fP 104"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_TBODY\fP 105"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_TD\fP 106"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_TEXTAREA\fP 107"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_TFOOT\fP 108"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_TH\fP 109"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_THEAD\fP 110"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_TITLE\fP 111"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_TR\fP 112"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_TT\fP 113"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_U\fP 114"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_UL\fP 115"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_VAR\fP 116"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_WBR\fP 117"
+.br
+.ti -1c
+.RI "const \fBTIDY_TAG_XMP\fP 118"
+.br
+.ti -1c
+.RI "const \fBTIDY_NODETYPE_ROOT\fP 0"
+.br
+.ti -1c
+.RI "const \fBTIDY_NODETYPE_DOCTYPE\fP 1"
+.br
+.ti -1c
+.RI "const \fBTIDY_NODETYPE_COMMENT\fP 2"
+.br
+.ti -1c
+.RI "const \fBTIDY_NODETYPE_PROCINS\fP 3"
+.br
+.ti -1c
+.RI "const \fBTIDY_NODETYPE_TEXT\fP 4"
+.br
+.ti -1c
+.RI "const \fBTIDY_NODETYPE_START\fP 5"
+.br
+.ti -1c
+.RI "const \fBTIDY_NODETYPE_END\fP 6"
+.br
+.ti -1c
+.RI "const \fBTIDY_NODETYPE_STARTEND\fP 7"
+.br
+.ti -1c
+.RI "const \fBTIDY_NODETYPE_CDATA\fP 8"
+.br
+.ti -1c
+.RI "const \fBTIDY_NODETYPE_SECTION\fP 9"
+.br
+.ti -1c
+.RI "const \fBTIDY_NODETYPE_ASP\fP 10"
+.br
+.ti -1c
+.RI "const \fBTIDY_NODETYPE_JSTE\fP 11"
+.br
+.ti -1c
+.RI "const \fBTIDY_NODETYPE_PHP\fP 12"
+.br
+.ti -1c
+.RI "const \fBTIDY_NODETYPE_XMLDECL\fP 13"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "ob_tidyhandler ( $input,  $mode = \fC\fBnull\fP\fP)"
+ob_start callback function to repair the buffer \fBstring $input \fP The buffer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+The buffer mode\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the modified buffer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "tidy_access_count (\fBtidy\fP $object)"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Returns the Number of Tidy accessibility warnings encountered for specified document \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of warnings\&. 
+.RE
+.PP
+
+.SS "tidy_clean_repair (\fBtidy\fP $object)"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Execute configured cleanup and repair operations on parsed markup \fBtidy $object The Tidy object\&.  bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. \fP
+.SS "tidy_config_count (\fBtidy\fP $object)"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Returns the Number of Tidy configuration errors encountered for specified document \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of errors\&. 
+.RE
+.PP
+
+.SS "tidy_diagnose (\fBtidy\fP $object)"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Run configured diagnostics on parsed and repaired markup \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "tidy_error_count (\fBtidy\fP $object)"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Returns the Number of Tidy errors encountered for specified document \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of errors\&. 
+.RE
+.PP
+
+.SS "tidy_get_body (\fBtidy\fP $object)"
+(PHP 5, PECL tidy 0\&.5\&.2-1\&.0)
+.br
+ Returns a \fB\fBtidyNode\fP\fP object starting from the <body> tag of the tidy parse tree \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBtidyNode\fP a \fB\fBtidyNode\fP\fP object starting from the <body> tag of the tidy parse tree\&. 
+.RE
+.PP
+
+.SS "tidy_get_config (\fBtidy\fP $object)"
+(PHP 5, PECL tidy >= 0\&.7\&.0)
+.br
+ Get current Tidy configuration \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array of configuration options\&. 
+.RE
+.PP
+.PP
+For an explanation about each option, visit http://tidy.sourceforge.net/docs/quickref.html\&. 
+.SS "tidy_get_error_buffer (\fBtidy\fP $object)"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Return warnings and errors which occurred parsing the specified document \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed the error buffer as a string\&. 
+.RE
+.PP
+
+.SS "tidy_get_head (\fBtidy\fP $object)"
+(PHP 5, PECL tidy 0\&.5\&.2-1\&.0\&.0)
+.br
+ Returns a \fB\fBtidyNode\fP\fP object starting from the <head> tag of the tidy parse tree \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBtidyNode\fP the \fB\fBtidyNode\fP\fP object\&. 
+.RE
+.PP
+
+.SS "tidy_get_html (\fBtidy\fP $object)"
+(PHP 5, PECL tidy 0\&.5\&.2-1\&.0\&.0)
+.br
+ Returns a \fB\fBtidyNode\fP\fP object starting from the <html> tag of the tidy parse tree \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBtidyNode\fP the \fB\fBtidyNode\fP\fP object\&. 
+.RE
+.PP
+
+.SS "tidy_get_html_ver (\fBtidy\fP $object)"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Get the Detected HTML version for the specified document \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the detected HTML version\&. 
+.RE
+.PP
+.PP
+This function is not yet implemented in the Tidylib itself, so it always return 0\&. 
+.SS "tidy_get_opt_doc (\fBtidy\fP $object,  $optname)"
+Returns the documentation for the given option name \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$optname\fP 
+.RE
+.PP
+The option name 
+.PP
+\fBReturns\fP
+.RS 4
+string a string if the option exists and has documentation available, or \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "tidy_get_output (\fBtidy\fP $object)"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Return a string representing the parsed tidy markup \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the parsed tidy markup\&. 
+.RE
+.PP
+
+.SS "tidy_get_release ()"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Get release date (version) for Tidy library \fBstring a string with the release date of the Tidy library\&. \fP
+.SS "tidy_get_root (\fBtidy\fP $object)"
+(PHP 5, PECL tidy 0\&.5\&.2-1\&.0\&.0)
+.br
+ Returns a \fB\fBtidyNode\fP\fP object representing the root of the tidy parse tree \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBtidyNode\fP the \fB\fBtidyNode\fP\fP object\&. 
+.RE
+.PP
+
+.SS "tidy_get_status (\fBtidy\fP $object)"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Get status of specified document \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int 0 if no error/warning was raised, 1 for warnings or accessibility errors, or 2 for errors\&. 
+.RE
+.PP
+
+.SS "tidy_getopt (\fBtidy\fP $object,  $option)"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Returns the value of the specified configuration option for the tidy document \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$option\fP 
+.RE
+.PP
+You will find a list with each configuration option and their types at: http://tidy.sourceforge.net/docs/quickref.html\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed the value of the specified \fIoption\fP\&. The return type depends on the type of the specified one\&. 
+.RE
+.PP
+
+.SS "tidy_is_xhtml (\fBtidy\fP $object)"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Indicates if the document is a XHTML document \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool This function returns \fBTRUE\fP if the specified tidy \fIobject\fP is a XHTML document, or \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+.PP
+This function is not yet implemented in the Tidylib itself, so it always return \fBFALSE\fP\&. 
+.SS "tidy_is_xml (\fBtidy\fP $object)"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Indicates if the document is a generic (non HTML/XHTML) XML document \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool This function returns \fBTRUE\fP if the specified tidy \fIobject\fP is a generic XML document (non HTML/XHTML), or \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+.PP
+This function is not yet implemented in the Tidylib itself, so it always return \fBFALSE\fP\&. 
+.SS "tidy_parse_file ( $filename,  $config = \fC\fBnull\fP\fP,  $encoding = \fC\fBnull\fP\fP,  $use_include_path = \fC\fBfalse\fP\fP)"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Parse markup in file or URI \fBstring $filename \fP If the \fIfilename\fP parameter is given, this function will also read that file and initialize the object with the file, acting like \fBtidy_parse_file\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$config\fP [optional] 
+.RE
+.PP
+The config \fIconfig\fP can be passed either as an array or as a string\&. If a string is passed, it is interpreted as the name of the configuration file, otherwise, it is interpreted as the options themselves\&. 
+.PP
+For an explanation about each option, see http://tidy.sourceforge.net/docs/quickref.html\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP [optional] 
+.RE
+.PP
+The \fIencoding\fP parameter sets the encoding for input/output documents\&. The possible values for encoding are: ascii, latin0, latin1, raw, utf8, iso2022, mac, win1252, ibm858, utf16, utf16le, utf16be, big5, and shiftjis\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$use_include_path\fP [optional] 
+.RE
+.PP
+Search for the file in the include_path\&. 
+.PP
+\fBReturns\fP
+.RS 4
+tidy a new \fBtidy\fP instance\&. 
+.RE
+.PP
+
+.SS "tidy_parse_string ( $input,  $config = \fC\fBnull\fP\fP,  $encoding = \fC\fBnull\fP\fP)"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Parse a document stored in a string \fBstring $input \fP The data to be parsed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$config\fP [optional] 
+.RE
+.PP
+The config \fIconfig\fP can be passed either as an array or as a string\&. If a string is passed, it is interpreted as the name of the configuration file, otherwise, it is interpreted as the options themselves\&. 
+.PP
+For an explanation about each option, visit http://tidy.sourceforge.net/docs/quickref.html\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP [optional] 
+.RE
+.PP
+The \fIencoding\fP parameter sets the encoding for input/output documents\&. The possible values for encoding are: ascii, latin0, latin1, raw, utf8, iso2022, mac, win1252, ibm858, utf16, utf16le, utf16be, big5, and shiftjis\&. 
+.PP
+\fBReturns\fP
+.RS 4
+tidy a new \fBtidy\fP instance\&. 
+.RE
+.PP
+
+.SS "tidy_repair_file ( $filename,  $config = \fC\fBnull\fP\fP,  $encoding = \fC\fBnull\fP\fP,  $use_include_path = \fC\fBfalse\fP\fP)"
+(PHP 5, PECL tidy >= 0\&.7\&.0)
+.br
+ Repair a file and return it as a string \fBstring $filename \fP The file to be repaired\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$config\fP [optional] 
+.RE
+.PP
+The config \fIconfig\fP can be passed either as an array or as a string\&. If a string is passed, it is interpreted as the name of the configuration file, otherwise, it is interpreted as the options themselves\&. 
+.PP
+Check http://tidy.sourceforge.net/docs/quickref.html for an explanation about each option\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP [optional] 
+.RE
+.PP
+The \fIencoding\fP parameter sets the encoding for input/output documents\&. The possible values for encoding are: ascii, latin0, latin1, raw, utf8, iso2022, mac, win1252, ibm858, utf16, utf16le, utf16be, big5, and shiftjis\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$use_include_path\fP [optional] 
+.RE
+.PP
+Search for the file in the include_path\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the repaired contents as a string\&. 
+.RE
+.PP
+
+.SS "tidy_repair_string ( $data,  $config = \fC\fBnull\fP\fP,  $encoding = \fC\fBnull\fP\fP)"
+(PHP 5, PECL tidy >= 0\&.7\&.0)
+.br
+ Repair a string using an optionally provided configuration file \fBstring $data \fP The data to be repaired\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$config\fP [optional] 
+.RE
+.PP
+The config \fIconfig\fP can be passed either as an array or as a string\&. If a string is passed, it is interpreted as the name of the configuration file, otherwise, it is interpreted as the options themselves\&. 
+.PP
+Check http://tidy.sourceforge.net/docs/quickref.html for an explanation about each option\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP [optional] 
+.RE
+.PP
+The \fIencoding\fP parameter sets the encoding for input/output documents\&. The possible values for encoding are: ascii, latin0, latin1, raw, utf8, iso2022, mac, win1252, ibm858, utf16, utf16le, utf16be, big5, and shiftjis\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the repaired string\&. 
+.RE
+.PP
+
+.SS "tidy_warning_count (\fBtidy\fP $object)"
+(PHP 5, PECL tidy >= 0\&.5\&.2)
+.br
+ Returns the Number of Tidy warnings encountered for specified document \fBtidy $object \fP The \fBTidy\fP object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of warnings\&. 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const TIDY_NODETYPE_ASP 10"
+ASP code \fBhttps://php\&.net/manual/en/tidy\&.constants\&.php\fP
+.SS "const TIDY_NODETYPE_CDATA 8"
+CDATA \fBhttps://php\&.net/manual/en/tidy\&.constants\&.php\fP
+.SS "const TIDY_NODETYPE_COMMENT 2"
+HTML comment \fBhttps://php\&.net/manual/en/tidy\&.constants\&.php\fP
+.SS "const TIDY_NODETYPE_DOCTYPE 1"
+doctype \fBhttps://php\&.net/manual/en/tidy\&.constants\&.php\fP
+.SS "const TIDY_NODETYPE_END 6"
+end tag \fBhttps://php\&.net/manual/en/tidy\&.constants\&.php\fP
+.SS "const TIDY_NODETYPE_JSTE 11"
+JSTE code \fBhttps://php\&.net/manual/en/tidy\&.constants\&.php\fP
+.SS "const TIDY_NODETYPE_PHP 12"
+PHP code \fBhttps://php\&.net/manual/en/tidy\&.constants\&.php\fP
+.SS "const TIDY_NODETYPE_PROCINS 3"
+Processing Instruction \fBhttps://php\&.net/manual/en/tidy\&.constants\&.php\fP
+.SS "const TIDY_NODETYPE_ROOT 0"
+root node \fBhttps://php\&.net/manual/en/tidy\&.constants\&.php\fP
+.SS "const TIDY_NODETYPE_SECTION 9"
+XML section \fBhttps://php\&.net/manual/en/tidy\&.constants\&.php\fP
+.SS "const TIDY_NODETYPE_START 5"
+start tag \fBhttps://php\&.net/manual/en/tidy\&.constants\&.php\fP
+.SS "const TIDY_NODETYPE_STARTEND 7"
+empty tag \fBhttps://php\&.net/manual/en/tidy\&.constants\&.php\fP
+.SS "const TIDY_NODETYPE_TEXT 4"
+Text \fBhttps://php\&.net/manual/en/tidy\&.constants\&.php\fP
+.SS "const TIDY_NODETYPE_XMLDECL 13"
+XML declaration \fBhttps://php\&.net/manual/en/tidy\&.constants\&.php\fP
+.SS "const TIDY_TAG_A 1"
+
+.SS "const TIDY_TAG_ABBR 2"
+
+.SS "const TIDY_TAG_ACRONYM 3"
+
+.SS "const TIDY_TAG_ADDRESS 4"
+
+.SS "const TIDY_TAG_ALIGN 5"
+
+.SS "const TIDY_TAG_APPLET 6"
+
+.SS "const TIDY_TAG_AREA 7"
+
+.SS "const TIDY_TAG_B 8"
+
+.SS "const TIDY_TAG_BASE 9"
+
+.SS "const TIDY_TAG_BASEFONT 10"
+
+.SS "const TIDY_TAG_BDO 11"
+
+.SS "const TIDY_TAG_BGSOUND 12"
+
+.SS "const TIDY_TAG_BIG 13"
+
+.SS "const TIDY_TAG_BLINK 14"
+
+.SS "const TIDY_TAG_BLOCKQUOTE 15"
+
+.SS "const TIDY_TAG_BODY 16"
+
+.SS "const TIDY_TAG_BR 17"
+
+.SS "const TIDY_TAG_BUTTON 18"
+
+.SS "const TIDY_TAG_CAPTION 19"
+
+.SS "const TIDY_TAG_CENTER 20"
+
+.SS "const TIDY_TAG_CITE 21"
+
+.SS "const TIDY_TAG_CODE 22"
+
+.SS "const TIDY_TAG_COL 23"
+
+.SS "const TIDY_TAG_COLGROUP 24"
+
+.SS "const TIDY_TAG_COMMENT 25"
+
+.SS "const TIDY_TAG_DD 26"
+
+.SS "const TIDY_TAG_DEL 27"
+
+.SS "const TIDY_TAG_DFN 28"
+
+.SS "const TIDY_TAG_DIR 29"
+
+.SS "const TIDY_TAG_DIV 30"
+
+.SS "const TIDY_TAG_DL 31"
+
+.SS "const TIDY_TAG_DT 32"
+
+.SS "const TIDY_TAG_EM 33"
+
+.SS "const TIDY_TAG_EMBED 34"
+
+.SS "const TIDY_TAG_FIELDSET 35"
+
+.SS "const TIDY_TAG_FONT 36"
+
+.SS "const TIDY_TAG_FORM 37"
+
+.SS "const TIDY_TAG_FRAME 38"
+
+.SS "const TIDY_TAG_FRAMESET 39"
+
+.SS "const TIDY_TAG_H1 40"
+
+.SS "const TIDY_TAG_H2 41"
+
+.SS "const TIDY_TAG_H3 42"
+
+.SS "const TIDY_TAG_H4 43"
+
+.SS "const TIDY_TAG_H5 44"
+
+.SS "const TIDY_TAG_H6 45"
+
+.SS "const TIDY_TAG_HEAD 46"
+
+.SS "const TIDY_TAG_HR 47"
+
+.SS "const TIDY_TAG_HTML 48"
+
+.SS "const TIDY_TAG_I 49"
+
+.SS "const TIDY_TAG_IFRAME 50"
+
+.SS "const TIDY_TAG_ILAYER 51"
+
+.SS "const TIDY_TAG_IMG 52"
+
+.SS "const TIDY_TAG_INPUT 53"
+
+.SS "const TIDY_TAG_INS 54"
+
+.SS "const TIDY_TAG_ISINDEX 55"
+
+.SS "const TIDY_TAG_KBD 56"
+
+.SS "const TIDY_TAG_KEYGEN 57"
+
+.SS "const TIDY_TAG_LABEL 58"
+
+.SS "const TIDY_TAG_LAYER 59"
+
+.SS "const TIDY_TAG_LEGEND 60"
+
+.SS "const TIDY_TAG_LI 61"
+
+.SS "const TIDY_TAG_LINK 62"
+
+.SS "const TIDY_TAG_LISTING 63"
+
+.SS "const TIDY_TAG_MAP 64"
+
+.SS "const TIDY_TAG_MARQUEE 65"
+
+.SS "const TIDY_TAG_MENU 66"
+
+.SS "const TIDY_TAG_META 67"
+
+.SS "const TIDY_TAG_MULTICOL 68"
+
+.SS "const TIDY_TAG_NOBR 69"
+
+.SS "const TIDY_TAG_NOEMBED 70"
+
+.SS "const TIDY_TAG_NOFRAMES 71"
+
+.SS "const TIDY_TAG_NOLAYER 72"
+
+.SS "const TIDY_TAG_NOSAVE 73"
+
+.SS "const TIDY_TAG_NOSCRIPT 74"
+
+.SS "const TIDY_TAG_OBJECT 75"
+
+.SS "const TIDY_TAG_OL 76"
+
+.SS "const TIDY_TAG_OPTGROUP 77"
+
+.SS "const TIDY_TAG_OPTION 78"
+
+.SS "const TIDY_TAG_P 79"
+
+.SS "const TIDY_TAG_PARAM 80"
+
+.SS "const TIDY_TAG_PLAINTEXT 81"
+
+.SS "const TIDY_TAG_PRE 82"
+
+.SS "const TIDY_TAG_Q 83"
+
+.SS "const TIDY_TAG_RB 84"
+
+.SS "const TIDY_TAG_RBC 85"
+
+.SS "const TIDY_TAG_RP 86"
+
+.SS "const TIDY_TAG_RT 87"
+
+.SS "const TIDY_TAG_RTC 88"
+
+.SS "const TIDY_TAG_RUBY 89"
+
+.SS "const TIDY_TAG_S 90"
+
+.SS "const TIDY_TAG_SAMP 91"
+
+.SS "const TIDY_TAG_SCRIPT 92"
+
+.SS "const TIDY_TAG_SELECT 93"
+
+.SS "const TIDY_TAG_SERVER 94"
+
+.SS "const TIDY_TAG_SERVLET 95"
+
+.SS "const TIDY_TAG_SMALL 96"
+
+.SS "const TIDY_TAG_SPACER 97"
+
+.SS "const TIDY_TAG_SPAN 98"
+
+.SS "const TIDY_TAG_STRIKE 99"
+
+.SS "const TIDY_TAG_STRONG 100"
+
+.SS "const TIDY_TAG_STYLE 101"
+
+.SS "const TIDY_TAG_SUB 102"
+
+.SS "const TIDY_TAG_SUP 103"
+
+.SS "const TIDY_TAG_TABLE 104"
+
+.SS "const TIDY_TAG_TBODY 105"
+
+.SS "const TIDY_TAG_TD 106"
+
+.SS "const TIDY_TAG_TEXTAREA 107"
+
+.SS "const TIDY_TAG_TFOOT 108"
+
+.SS "const TIDY_TAG_TH 109"
+
+.SS "const TIDY_TAG_THEAD 110"
+
+.SS "const TIDY_TAG_TITLE 111"
+
+.SS "const TIDY_TAG_TR 112"
+
+.SS "const TIDY_TAG_TT 113"
+
+.SS "const TIDY_TAG_U 114"
+
+.SS "const TIDY_TAG_UL 115"
+
+.SS "const TIDY_TAG_UNKNOWN 0"
+description \fBhttps://php\&.net/manual/en/tidy\&.constants\&.php\fP
+.SS "const TIDY_TAG_VAR 116"
+
+.SS "const TIDY_TAG_WBR 117"
+
+.SS "const TIDY_TAG_XMP 118"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

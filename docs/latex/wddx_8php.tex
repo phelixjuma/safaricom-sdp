@@ -1,0 +1,140 @@
+\hypertarget{wddx_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/wddx/wddx.php File Reference}
+\label{wddx_8php}\index{vendor/jetbrains/phpstorm-\/stubs/wddx/wddx.php@{vendor/jetbrains/phpstorm-\/stubs/wddx/wddx.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{wddx_8php_a8b813e19f43d01a3772d7ca898a872ef}{wddx\+\_\+serialize\+\_\+value}} (\$var, \$comment=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{wddx_8php_aac59148a9238a4e85430bd9be821680e}{wddx\+\_\+serialize\+\_\+vars}} (\$var\+\_\+name, \$\mbox{\hyperlink{gettext_8php_a846b230f82cfd260aff26f4287060106}{\+\_\+}}=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{wddx_8php_acc878913887a60853c52512fda1a92ea}{wddx\+\_\+packet\+\_\+start}} (\$comment=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{wddx_8php_ab6358c5958a8518504a199b4fb6f4f6d}{wddx\+\_\+packet\+\_\+end}} (\$packet\+\_\+id)
+\item 
+\mbox{\hyperlink{wddx_8php_aeafc89222bb02551e5e49b19fca41e84}{wddx\+\_\+add\+\_\+vars}} (\$packet\+\_\+id, \$var\+\_\+name, \$\mbox{\hyperlink{gettext_8php_a846b230f82cfd260aff26f4287060106}{\+\_\+}}=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{wddx_8php_ac90fdfd4306d563c44873e456aa15613}{wddx\+\_\+deserialize}} (\$packet)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{wddx_8php_aeafc89222bb02551e5e49b19fca41e84}\label{wddx_8php_aeafc89222bb02551e5e49b19fca41e84}} 
+\index{wddx.php@{wddx.php}!wddx\_add\_vars@{wddx\_add\_vars}}
+\index{wddx\_add\_vars@{wddx\_add\_vars}!wddx.php@{wddx.php}}
+\doxysubsubsection{\texorpdfstring{wddx\_add\_vars()}{wddx\_add\_vars()}}
+{\footnotesize\ttfamily wddx\+\_\+add\+\_\+vars (\begin{DoxyParamCaption}\item[{}]{\$packet\+\_\+id,  }\item[{}]{\$var\+\_\+name,  }\item[{}]{\$\+\_\+ = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Add variables to a W\+D\+DX packet with the specified ID \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$packet\+\_\+id }} \mbox{\hyperlink{class_a}{A}} W\+D\+DX packet, returned by {\bfseries{wddx\+\_\+packet\+\_\+start}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$var\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+Can be either a string naming a variable or an array containing strings naming the variables or another array, etc. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$\+\_\+} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{wddx_8php_ac90fdfd4306d563c44873e456aa15613}\label{wddx_8php_ac90fdfd4306d563c44873e456aa15613}} 
+\index{wddx.php@{wddx.php}!wddx\_deserialize@{wddx\_deserialize}}
+\index{wddx\_deserialize@{wddx\_deserialize}!wddx.php@{wddx.php}}
+\doxysubsubsection{\texorpdfstring{wddx\_deserialize()}{wddx\_deserialize()}}
+{\footnotesize\ttfamily wddx\+\_\+deserialize (\begin{DoxyParamCaption}\item[{}]{\$packet }\end{DoxyParamCaption})}
+
+Unserializes a W\+D\+DX packet \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$packet }} \mbox{\hyperlink{class_a}{A}} W\+D\+DX packet, as a string or stream. 
+
+\begin{DoxyReturn}{Returns}
+mixed the deserialized value which can be a string, a number or an array. Note that structures are deserialized into associative arrays. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{wddx_8php_ab6358c5958a8518504a199b4fb6f4f6d}\label{wddx_8php_ab6358c5958a8518504a199b4fb6f4f6d}} 
+\index{wddx.php@{wddx.php}!wddx\_packet\_end@{wddx\_packet\_end}}
+\index{wddx\_packet\_end@{wddx\_packet\_end}!wddx.php@{wddx.php}}
+\doxysubsubsection{\texorpdfstring{wddx\_packet\_end()}{wddx\_packet\_end()}}
+{\footnotesize\ttfamily wddx\+\_\+packet\+\_\+end (\begin{DoxyParamCaption}\item[{}]{\$packet\+\_\+id }\end{DoxyParamCaption})}
+
+Ends a W\+D\+DX packet with the specified ID \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$packet\+\_\+id }} \mbox{\hyperlink{class_a}{A}} W\+D\+DX packet, returned by {\bfseries{wddx\+\_\+packet\+\_\+start}}. 
+
+\begin{DoxyReturn}{Returns}
+string the string containing the W\+D\+DX packet. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{wddx_8php_acc878913887a60853c52512fda1a92ea}\label{wddx_8php_acc878913887a60853c52512fda1a92ea}} 
+\index{wddx.php@{wddx.php}!wddx\_packet\_start@{wddx\_packet\_start}}
+\index{wddx\_packet\_start@{wddx\_packet\_start}!wddx.php@{wddx.php}}
+\doxysubsubsection{\texorpdfstring{wddx\_packet\_start()}{wddx\_packet\_start()}}
+{\footnotesize\ttfamily wddx\+\_\+packet\+\_\+start (\begin{DoxyParamCaption}\item[{}]{\$comment = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Starts a new W\+D\+DX packet with structure inside it \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$comment \mbox{[}optional\mbox{]} }} An optional comment string. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false a packet ID for use in later functions, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{wddx_8php_a8b813e19f43d01a3772d7ca898a872ef}\label{wddx_8php_a8b813e19f43d01a3772d7ca898a872ef}} 
+\index{wddx.php@{wddx.php}!wddx\_serialize\_value@{wddx\_serialize\_value}}
+\index{wddx\_serialize\_value@{wddx\_serialize\_value}!wddx.php@{wddx.php}}
+\doxysubsubsection{\texorpdfstring{wddx\_serialize\_value()}{wddx\_serialize\_value()}}
+{\footnotesize\ttfamily wddx\+\_\+serialize\+\_\+value (\begin{DoxyParamCaption}\item[{}]{\$var,  }\item[{}]{\$comment = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Serialize a single value into a W\+D\+DX packet \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mixed \$var }} The value to be serialized 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$comment} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+An optional comment string that appears in the packet header. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false the W\+D\+DX packet, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{wddx_8php_aac59148a9238a4e85430bd9be821680e}\label{wddx_8php_aac59148a9238a4e85430bd9be821680e}} 
+\index{wddx.php@{wddx.php}!wddx\_serialize\_vars@{wddx\_serialize\_vars}}
+\index{wddx\_serialize\_vars@{wddx\_serialize\_vars}!wddx.php@{wddx.php}}
+\doxysubsubsection{\texorpdfstring{wddx\_serialize\_vars()}{wddx\_serialize\_vars()}}
+{\footnotesize\ttfamily wddx\+\_\+serialize\+\_\+vars (\begin{DoxyParamCaption}\item[{}]{\$var\+\_\+name,  }\item[{}]{\$\+\_\+ = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Serialize variables into a W\+D\+DX packet \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mixed \$var\+\_\+name }} Can be either a string naming a variable or an array containing strings naming the variables or another array, etc. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$\+\_\+} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$false the W\+D\+DX packet, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}

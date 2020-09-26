@@ -1,0 +1,2809 @@
+\hypertarget{oci8_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/oci8/oci8.php File Reference}
+\label{oci8_8php}\index{vendor/jetbrains/phpstorm-\/stubs/oci8/oci8.php@{vendor/jetbrains/phpstorm-\/stubs/oci8/oci8.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_o_c_i___lob}{O\+C\+I\+\_\+\+Lob}}
+\item 
+class \mbox{\hyperlink{class_o_c_i___collection}{O\+C\+I\+\_\+\+Collection}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{oci8_8php_abd13b3f8c2ffec998251452be0d74d42}{oci\+\_\+register\+\_\+taf\+\_\+callback}} (\$connection, \$callback\+Fn)
+\item 
+\mbox{\hyperlink{oci8_8php_a7b1c7c40ee22a92b9bfbb6e49f619417}{oci\+\_\+unregister\+\_\+taf\+\_\+callback}} (\$connection)
+\item 
+\mbox{\hyperlink{oci8_8php_af96e991a2644c20138bb21c5c99cba49}{oci\+\_\+define\+\_\+by\+\_\+name}} (\$statement, \$column\+\_\+name, \&\$variable, \$type=\mbox{\hyperlink{oci8_8php_a8e49b70c48299fc44d085c6261025a88}{S\+Q\+L\+T\+\_\+\+C\+HR}})
+\item 
+\mbox{\hyperlink{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}{oci\+\_\+bind\+\_\+by\+\_\+name}} (\$statement, \$bv\+\_\+name, \&\$variable, \$maxlength=-\/1, \$type=\mbox{\hyperlink{oci8_8php_a8e49b70c48299fc44d085c6261025a88}{S\+Q\+L\+T\+\_\+\+C\+HR}})
+\item 
+\mbox{\hyperlink{oci8_8php_a9526805102b685894287ec1a42810a49}{oci\+\_\+bind\+\_\+array\+\_\+by\+\_\+name}} (\$statement, \$name, array \&\$var\+\_\+array, \$max\+\_\+table\+\_\+length, \$max\+\_\+item\+\_\+length=-\/1, \$type=\mbox{\hyperlink{oci8_8php_a1242ba37b6bbb48e7766129df27f7d97}{S\+Q\+L\+T\+\_\+\+A\+FC}})
+\item 
+\mbox{\hyperlink{oci8_8php_ae837d45b6ae2f9469a156bd5e09e4e39}{oci\+\_\+field\+\_\+is\+\_\+null}} (\$statement, \$field)
+\item 
+\mbox{\hyperlink{oci8_8php_a1c301eb31fd6f61d8e0b04f027a35e1c}{oci\+\_\+field\+\_\+name}} (\$statement, \$field)
+\item 
+\mbox{\hyperlink{oci8_8php_a546e9a2ab970bcd56fb8361817262137}{oci\+\_\+field\+\_\+size}} (\$statement, \$field)
+\item 
+\mbox{\hyperlink{oci8_8php_a425b5686c1c939ef7d91931b3a93b9a8}{oci\+\_\+field\+\_\+scale}} (\$statement, \$field)
+\item 
+\mbox{\hyperlink{oci8_8php_a30cb427c0f6409a1a4cd84332b362d22}{oci\+\_\+field\+\_\+precision}} (\$statement, \$field)
+\item 
+\mbox{\hyperlink{oci8_8php_a53242061930c42f21cf503fbd8b50a4f}{oci\+\_\+field\+\_\+type}} (\$statement, \$field)
+\item 
+\mbox{\hyperlink{oci8_8php_aa9828d6b25350860a98d8d7689b6f554}{oci\+\_\+field\+\_\+type\+\_\+raw}} (\$statement, \$field)
+\item 
+\mbox{\hyperlink{oci8_8php_a6903a3e99b93b3a9142edf53e2c36513}{oci\+\_\+execute}} (\$statement, \$mode=\mbox{\hyperlink{oci8_8php_a04375f75e51f187b06a9fd129708118a}{O\+C\+I\+\_\+\+C\+O\+M\+M\+I\+T\+\_\+\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS}})
+\item 
+\mbox{\hyperlink{oci8_8php_ac08f327ac13a56194e51c918a1ba2559}{oci\+\_\+cancel}} (\$statement)
+\item 
+\mbox{\hyperlink{oci8_8php_ab069f2f2bc9d35eb4031ea1109c96a0e}{oci\+\_\+fetch}} (\$statement)
+\item 
+\mbox{\hyperlink{oci8_8php_a8fcea9cb2c5d5d2343c69452ad77abd6}{oci\+\_\+fetch\+\_\+object}} (\$statement)
+\item 
+\mbox{\hyperlink{oci8_8php_a9c0a6225da2080e26871a6eeee4f4747}{oci\+\_\+fetch\+\_\+row}} (\$statement)
+\item 
+\mbox{\hyperlink{oci8_8php_a21852c9b8cc607a1695d8e222a6c6da5}{oci\+\_\+fetch\+\_\+assoc}} (\$statement)
+\item 
+\mbox{\hyperlink{oci8_8php_ae3641f58cc05c8320463b30fadd6edcb}{oci\+\_\+fetch\+\_\+array}} (\$statement, \$mode=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{oci8_8php_ab0c04999061802889ec539f534a78f27}{ocifetchinto}} (\$statement\+\_\+resource, \&\$result, \$mode=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{oci8_8php_a9ad0594abe383aebbc6b81f53989c60d}{oci\+\_\+fetch\+\_\+all}} (\$statement, array \&\$output, \$skip=0, \$maxrows=-\/1, \$flags=\mbox{\hyperlink{oci8_8php_a11060dd6c60c8f13e70fdb602f8e915a}{O\+C\+I\+\_\+\+F\+E\+T\+C\+H\+S\+T\+A\+T\+E\+M\+E\+N\+T\+\_\+\+B\+Y\+\_\+\+C\+O\+L\+U\+MN}}$\vert$\mbox{\hyperlink{oci8_8php_a326c74b03f18b7c233a928684d1a2d78}{O\+C\+I\+\_\+\+A\+S\+S\+OC}})
+\item 
+\mbox{\hyperlink{oci8_8php_a15e435317899ee3062c679d7d6093939}{oci\+\_\+free\+\_\+statement}} (\$statement)
+\item 
+\mbox{\hyperlink{oci8_8php_a7c05be48610bc8a7780805c29071cc04}{oci\+\_\+internal\+\_\+debug}} (\$onoff)
+\item 
+\mbox{\hyperlink{oci8_8php_af1e1a9c3d0f5afd6c0dff7d134fd8fc9}{oci\+\_\+num\+\_\+fields}} (\$statement)
+\item 
+\mbox{\hyperlink{oci8_8php_add430a818c3628ee70a3479ef838c7c5}{oci\+\_\+parse}} (\$connection, \$sql\+\_\+text)
+\item 
+\mbox{\hyperlink{oci8_8php_a95b2b26c9b8e4d3af14a15253e3f8983}{oci\+\_\+get\+\_\+implicit\+\_\+resultset}} (\$statement)
+\item 
+\mbox{\hyperlink{oci8_8php_a4d539ba8974cfb3d70fc80a9fc19ce79}{oci\+\_\+new\+\_\+cursor}} (\$connection)
+\item 
+\mbox{\hyperlink{oci8_8php_aae49c7c9b14cb1d3c03b29f46f29089f}{oci\+\_\+result}} (\$statement, \$field)
+\item 
+\mbox{\hyperlink{oci8_8php_ab5ede9ba5b7557690846e30b41e04e45}{oci\+\_\+client\+\_\+version}} ()
+\item 
+\mbox{\hyperlink{oci8_8php_a62a0e94ecb2fb8c456e4b5c0975d0a1c}{oci\+\_\+server\+\_\+version}} (\$connection)
+\item 
+\mbox{\hyperlink{oci8_8php_ae271ab3a28622f4eaa5b823ea5f40cb4}{oci\+\_\+statement\+\_\+type}} (\$statement)
+\item 
+\mbox{\hyperlink{oci8_8php_add31cad7606def8ef459e8aeb3fccfb5}{oci\+\_\+num\+\_\+rows}} (\$statement)
+\item 
+\mbox{\hyperlink{oci8_8php_ad4b903dfc7c2bb30942941b30579d0c4}{oci\+\_\+close}} (\$connection)
+\item 
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect}} (\$username, \$password, \$connection\+\_\+string=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$character\+\_\+set=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$session\+\_\+mode=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{oci8_8php_a9a7a91924a356cc80fa21813f94cd2d5}{oci\+\_\+new\+\_\+connect}} (\$username, \$password, \$connection\+\_\+string=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$character\+\_\+set=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$session\+\_\+mode=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}{oci\+\_\+pconnect}} (\$username, \$password, \$connection\+\_\+string=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$character\+\_\+set=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$session\+\_\+mode=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{oci8_8php_a49c7d8f00a42735d6c51f7b93ca46b96}{oci\+\_\+error}} (\$resource=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{oci8_8php_af7c1ca4403622325772d5411f4ccd2a8}{oci\+\_\+free\+\_\+descriptor}} (\$descriptor)
+\item 
+\mbox{\hyperlink{oci8_8php_adac73fa8c6ff555b7edf8c259fd349fc}{oci\+\_\+lob\+\_\+is\+\_\+equal}} (\mbox{\hyperlink{class_o_c_i___lob}{O\+C\+I\+\_\+\+Lob}} \$lob1, \mbox{\hyperlink{class_o_c_i___lob}{O\+C\+I\+\_\+\+Lob}} \$lob2)
+\item 
+\mbox{\hyperlink{oci8_8php_a1094714bd657b815bd71933f4a5ca394}{oci\+\_\+lob\+\_\+copy}} (\mbox{\hyperlink{class_o_c_i___lob}{O\+C\+I\+\_\+\+Lob}} \$lob\+\_\+to, \mbox{\hyperlink{class_o_c_i___lob}{O\+C\+I\+\_\+\+Lob}} \$lob\+\_\+from, \$length=0)
+\item 
+\mbox{\hyperlink{oci8_8php_ada2d2982ccfb7879b268149bd7b2d0e7}{oci\+\_\+commit}} (\$connection)
+\item 
+\mbox{\hyperlink{oci8_8php_a107d1602edd917a08e32d7462070b110}{oci\+\_\+rollback}} (\$connection)
+\item 
+\mbox{\hyperlink{oci8_8php_a9043438924908090cce22df49f79a974}{oci\+\_\+new\+\_\+descriptor}} (\$connection, \$type=\mbox{\hyperlink{oci8_8php_a8b6edb8a5b4bc0989edf98bf4e79679e}{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+L\+OB}})
+\item 
+\mbox{\hyperlink{oci8_8php_af7dc6c30e5d0fa2ec78cb51901b31071}{oci\+\_\+set\+\_\+prefetch}} (\$statement, \$rows)
+\item 
+\mbox{\hyperlink{oci8_8php_a837bd3f9af59eea79352152158f20ee9}{oci\+\_\+set\+\_\+client\+\_\+identifier}} (\$connection, \$client\+\_\+identifier)
+\item 
+\mbox{\hyperlink{oci8_8php_ae2cd293254241a6404841ea49b3fca60}{oci\+\_\+set\+\_\+edition}} (\$edition)
+\item 
+\mbox{\hyperlink{oci8_8php_ab57bf25bb4f821902923afd0d33d874a}{oci\+\_\+set\+\_\+module\+\_\+name}} (\$connection, \$module\+\_\+name)
+\item 
+\mbox{\hyperlink{oci8_8php_acb5ea83dee60224a67ce88c100351da7}{oci\+\_\+set\+\_\+action}} (\$connection, \$action\+\_\+name)
+\item 
+\mbox{\hyperlink{oci8_8php_aba4693dbe2a7a5ae7f1a8c386b6ae9e0}{oci\+\_\+set\+\_\+client\+\_\+info}} (\$connection, \$client\+\_\+info)
+\item 
+\mbox{\hyperlink{oci8_8php_ad20f5a053ee3c78627294190ee337dfa}{oci\+\_\+password\+\_\+change}} (\$connection, \$username, \$old\+\_\+password, \$new\+\_\+password)
+\item 
+\mbox{\hyperlink{oci8_8php_a358402ca9d071a2ad79502b7e0e60328}{oci\+\_\+new\+\_\+collection}} (\$connection, \$tdo, \$schema=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{oci8_8php_ae5368bc44fb0449b3874e139b32c2745}{oci\+\_\+free\+\_\+cursor}} (\$statement\+\_\+resource)
+\item 
+\mbox{\hyperlink{oci8_8php_a659148536b1b36720ad846ba639d025c}{ocifreecursor}} (\$statement\+\_\+resource)
+\item 
+\mbox{\hyperlink{oci8_8php_aa5b0611185f3a1c60b78195f1998ccac}{ocibindbyname}} (\$statement, \$column\+\_\+name, \&\$variable, \$maximum\+\_\+length=-\/1, \$type=\mbox{\hyperlink{oci8_8php_a8e49b70c48299fc44d085c6261025a88}{S\+Q\+L\+T\+\_\+\+C\+HR}})
+\item 
+\mbox{\hyperlink{oci8_8php_a7d75043a6b3ccf38931a1f53ba8691da}{ocidefinebyname}} (\$statement, \$column\+\_\+name, \&\$variable, \$type=\mbox{\hyperlink{oci8_8php_a8e49b70c48299fc44d085c6261025a88}{S\+Q\+L\+T\+\_\+\+C\+HR}})
+\item 
+\mbox{\hyperlink{oci8_8php_a394e2faaf2b4f16d0e61e630055e918a}{ocicolumnisnull}} (\$statement, \$column\+\_\+number\+\_\+or\+\_\+name)
+\item 
+\mbox{\hyperlink{oci8_8php_ac870c4eba01b8deb921103e4f0ab7364}{ocicolumnname}} (\$statement, \$column\+\_\+number)
+\item 
+\mbox{\hyperlink{oci8_8php_a2024f63c92747398be3475d1f3093da4}{ocicolumnsize}} (\$statement, \$column\+\_\+number\+\_\+or\+\_\+name)
+\item 
+\mbox{\hyperlink{oci8_8php_a5dd2a53bee6b357baedecf441081033e}{ocicolumnscale}} (\$statement\+\_\+resource, \$column\+\_\+number)
+\item 
+\mbox{\hyperlink{oci8_8php_a526f89f7cf97f4f77fd095e0062fd302}{ocicolumnprecision}} (\$statement\+\_\+resource, \$column\+\_\+number)
+\item 
+\mbox{\hyperlink{oci8_8php_a837fef446f62fa3e5c16f9cfa8b76005}{ocicolumntype}} (\$statement\+\_\+resource, \$column\+\_\+number)
+\item 
+\mbox{\hyperlink{oci8_8php_a786c29a3e72dbad788c85a8a7d18be87}{ocicolumntyperaw}} (\$statement\+\_\+resource, \$column\+\_\+number)
+\item 
+\mbox{\hyperlink{oci8_8php_ae0270cec4adb740937fd7ad3c6149672}{ociexecute}} (\$statement\+\_\+resource, \$mode=\mbox{\hyperlink{oci8_8php_a04375f75e51f187b06a9fd129708118a}{O\+C\+I\+\_\+\+C\+O\+M\+M\+I\+T\+\_\+\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS}})
+\item 
+\mbox{\hyperlink{oci8_8php_a08fd4232bb722fec0ec0704523a834b9}{ocicancel}} (\$statement\+\_\+resource)
+\item 
+\mbox{\hyperlink{oci8_8php_a8554dc0677c867cba60555f1f48a4ab3}{ocifetch}} (\$statement\+\_\+resource)
+\item 
+\mbox{\hyperlink{oci8_8php_aa5a458547000bb9c4db943f11a334bb3}{ocifetchstatement}} (\$statement\+\_\+resource, \&\$output, \$skip, \$maximum\+\_\+rows, \$flags)
+\item 
+\mbox{\hyperlink{oci8_8php_af7cdbdb5e75e11c601e48af93e480c92}{ocifreestatement}} (\$statement\+\_\+resource)
+\item 
+\mbox{\hyperlink{oci8_8php_aa2e4b9721d3188c84be9f0d6ce104d87}{ociinternaldebug}} (\$mode)
+\item 
+\mbox{\hyperlink{oci8_8php_aa74ba3f6795b2618026d8bf4a43294a1}{ocinumcols}} (\$statement\+\_\+resource)
+\item 
+\mbox{\hyperlink{oci8_8php_afa6b898a07c4c4b920687659fa02337a}{ociparse}} (\$connection\+\_\+resource, \$sql\+\_\+text)
+\item 
+\mbox{\hyperlink{oci8_8php_a68286d4aaa73d81494766549b552700d}{ocinewcursor}} (\$connection\+\_\+resource)
+\item 
+\mbox{\hyperlink{oci8_8php_a400f4f104c4f447fa6796b2613692f5d}{ociresult}} (\$statement\+\_\+resource, \$column\+\_\+number\+\_\+or\+\_\+name)
+\item 
+\mbox{\hyperlink{oci8_8php_a549dc352fedf6fdbbdd1042426a9d2b8}{ociserverversion}} (\$connection\+\_\+resource)
+\item 
+\mbox{\hyperlink{oci8_8php_a6373ff2b8bc9c28c72895583a1cfea90}{ocistatementtype}} (\$statement\+\_\+resource)
+\item 
+\mbox{\hyperlink{oci8_8php_ab0f5f9b7166ec0687221434249070c7c}{ocirowcount}} (\$statement\+\_\+resource)
+\item 
+\mbox{\hyperlink{oci8_8php_a40ee2cdca3874081e038bfa63af4593e}{ocilogoff}} (\$connection\+\_\+resource)
+\item 
+\mbox{\hyperlink{oci8_8php_a984c1a30f8f30caf21c575c7603f83d5}{ocilogon}} (\$username, \$password, \$connection\+\_\+string, \$character\+\_\+set, \$session\+\_\+mode)
+\item 
+\mbox{\hyperlink{oci8_8php_af93d4c3ec47b7891dff2b03038c32c37}{ocinlogon}} (\$username, \$password, \$connection\+\_\+string, \$character\+\_\+set, \$session\+\_\+mode)
+\item 
+\mbox{\hyperlink{oci8_8php_a675e2b3aa72153ffe56bcff8279505a7}{ociplogon}} (\$username, \$password, \$connection\+\_\+string, \$character\+\_\+set, \$session\+\_\+mode)
+\item 
+\mbox{\hyperlink{oci8_8php_a0e72bcc75992d44ce7da3dd6e0544d72}{ocierror}} (\$connection\+\_\+or\+\_\+statement\+\_\+resource)
+\item 
+\mbox{\hyperlink{oci8_8php_af5e7d216cb03e88734dd399e05ec5698}{ocifreedesc}} (\$lob\+\_\+descriptor)
+\item 
+\mbox{\hyperlink{oci8_8php_ad55bab77c91b0f97a4cf8d55bc325b5f}{ocisavelob}} (\$lob\+\_\+descriptor, \$data, \$offset)
+\item 
+\mbox{\hyperlink{oci8_8php_a64cd468f69e4c346589ac7743dc36490}{ocisavelobfile}} (\$lob\+\_\+descriptor, \$filename)
+\item 
+\mbox{\hyperlink{oci8_8php_a4423bb615f6206ac9067f5fa607c5569}{ociwritelobtofile}} (\$lob\+\_\+descriptor, \$filename, \$start, \$length)
+\item 
+\mbox{\hyperlink{oci8_8php_a82d73fe4f83adeb801e8ebdac6caf0b1}{ociloadlob}} (\$lob\+\_\+descriptor)
+\item 
+\mbox{\hyperlink{oci8_8php_af772b55915a2d7c56c1b12bdfc0dcc60}{ocicommit}} (\$connection\+\_\+resource)
+\item 
+\mbox{\hyperlink{oci8_8php_a33cab798da80179e849408e6dc14de1b}{ocirollback}} (\$connection\+\_\+resource)
+\item 
+\mbox{\hyperlink{oci8_8php_a9e8514256eb1af5d66a75f4b70302f43}{ocinewdescriptor}} (\$connection\+\_\+resource, \$type=\mbox{\hyperlink{oci8_8php_a8b6edb8a5b4bc0989edf98bf4e79679e}{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+L\+OB}})
+\item 
+\mbox{\hyperlink{oci8_8php_a8e81275c9384b2bb77ba3090ee569010}{ocisetprefetch}} (\$statement\+\_\+resource, \$number\+\_\+of\+\_\+rows)
+\item 
+\mbox{\hyperlink{oci8_8php_a244cca936170509551b300c654bdb2ac}{ocipasswordchange}} (\$connection\+\_\+resource\+\_\+or\+\_\+connection\+\_\+string\+\_\+or\+\_\+dbname, \$username, \$old\+\_\+password, \$new\+\_\+password)
+\item 
+\mbox{\hyperlink{oci8_8php_a4ff053820ebe5c6b82fc4feac7bf879c}{ocifreecollection}} (\$collection)
+\item 
+\mbox{\hyperlink{oci8_8php_a095c8c1946e0ef36fa37c693b160e092}{ocinewcollection}} (\$connection\+\_\+resource, \$tdo, \$schema=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{oci8_8php_af54596e5d4279db3b2e7134a7fdf2bf3}{ocicollappend}} (\$collection, \$value)
+\item 
+\mbox{\hyperlink{oci8_8php_a0a85f5873c0ef4b3799490fb6febf736}{ocicollgetelem}} (\$collection, \$index)
+\item 
+\mbox{\hyperlink{oci8_8php_aa94580000360835d7b86303984efe846}{ocicollassignelem}} (\$collection, \$index, \$value)
+\item 
+\mbox{\hyperlink{oci8_8php_a74bf2a6c7a1a704300af96c68b33f91d}{ocicollsize}} (\$collection)
+\item 
+\mbox{\hyperlink{oci8_8php_a4e3e0e8bfd26869c1fa42c3928188107}{ocicollmax}} (\$collection)
+\item 
+\mbox{\hyperlink{oci8_8php_a2b3284377c1ea120058b842be3d2f39e}{ocicolltrim}} (\$collection, \$number)
+\item 
+\mbox{\hyperlink{oci8_8php_abce8748e44db871cb5eea96d94c257b6}{ociwritetemporarylob}} (\$lob\+\_\+descriptor, \$data, \$lob\+\_\+type=\mbox{\hyperlink{oci8_8php_a0ab065add6d654f24af180f57a3b0768}{O\+C\+I\+\_\+\+T\+E\+M\+P\+\_\+\+C\+L\+OB}})
+\item 
+\mbox{\hyperlink{oci8_8php_a0441f73039f700bd32c7d164e2689e48}{ocicloselob}} (\$lob\+\_\+descriptor)
+\item 
+\mbox{\hyperlink{oci8_8php_a6ea60be86bdee58741f6fca7b10926f5}{ocicollassign}} (\$to, \$from)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{oci8_8php_ad30ca5102e6f5899be4ea992722a74bb}{O\+C\+I\+\_\+\+D\+E\+F\+A\+U\+LT}} 0
+\item 
+const \mbox{\hyperlink{oci8_8php_a6af9d0c9a16b7baab53bef78e0a1a541}{O\+C\+I\+\_\+\+S\+Y\+S\+O\+P\+ER}} 4
+\item 
+const \mbox{\hyperlink{oci8_8php_aa79fbfee4d238779ba13948fc76282b8}{O\+C\+I\+\_\+\+S\+Y\+S\+D\+BA}} 2
+\item 
+const \mbox{\hyperlink{oci8_8php_ac354390ae43f559fef31b11c9a26d41f}{O\+C\+I\+\_\+\+C\+R\+E\+D\+\_\+\+E\+XT}} -\/2147483648
+\item 
+const \mbox{\hyperlink{oci8_8php_abd454a9999465e8a848fe35066c30927}{O\+C\+I\+\_\+\+D\+E\+S\+C\+R\+I\+B\+E\+\_\+\+O\+N\+LY}} 16
+\item 
+const \mbox{\hyperlink{oci8_8php_a04375f75e51f187b06a9fd129708118a}{O\+C\+I\+\_\+\+C\+O\+M\+M\+I\+T\+\_\+\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS}} 32
+\item 
+const \mbox{\hyperlink{oci8_8php_a45a2231cb583ec63d062f4e07f68144d}{O\+C\+I\+\_\+\+N\+O\+\_\+\+A\+U\+T\+O\+\_\+\+C\+O\+M\+M\+IT}} 0
+\item 
+const \mbox{\hyperlink{oci8_8php_ac4300686846c9e106aba7d70deb27565}{O\+C\+I\+\_\+\+E\+X\+A\+C\+T\+\_\+\+F\+E\+T\+CH}} 2
+\item 
+const \mbox{\hyperlink{oci8_8php_a4918c5a44b3574e5c53a130b25d12b62}{O\+C\+I\+\_\+\+S\+E\+E\+K\+\_\+\+S\+ET}} 0
+\item 
+const \mbox{\hyperlink{oci8_8php_a082834ee771376635cfc4ecdd103f933}{O\+C\+I\+\_\+\+S\+E\+E\+K\+\_\+\+C\+UR}} 1
+\item 
+const \mbox{\hyperlink{oci8_8php_a44f5c9a15263f05e91948cda7278022a}{O\+C\+I\+\_\+\+S\+E\+E\+K\+\_\+\+E\+ND}} 2
+\item 
+const \mbox{\hyperlink{oci8_8php_aa1991b32b954da664422f55d35c0f4e7}{O\+C\+I\+\_\+\+L\+O\+B\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+F\+R\+EE}} 1
+\item 
+const \mbox{\hyperlink{oci8_8php_a68cee4812729bd9f549488cd6a90aba4}{S\+Q\+L\+T\+\_\+\+B\+F\+I\+L\+EE}} 114
+\item 
+const \mbox{\hyperlink{oci8_8php_aba15850828f3410a01b209c4614dfede}{S\+Q\+L\+T\+\_\+\+C\+F\+I\+L\+EE}} 115
+\item 
+const \mbox{\hyperlink{oci8_8php_aa7485493b3f62c9d30cb53c4ff5d6771}{S\+Q\+L\+T\+\_\+\+C\+L\+OB}} 112
+\item 
+const \mbox{\hyperlink{oci8_8php_aa7e08fe001e83d26b09fa9b0a07b62d2}{S\+Q\+L\+T\+\_\+\+B\+L\+OB}} 113
+\item 
+const \mbox{\hyperlink{oci8_8php_ae7c6f5bfe7f0d6f944fbfd69a7ff9dce}{S\+Q\+L\+T\+\_\+\+R\+DD}} 104
+\item 
+const \mbox{\hyperlink{oci8_8php_a060e7ddbcd37ee245a79c6cdf1bad538}{S\+Q\+L\+T\+\_\+\+I\+NT}} 3
+\item 
+const \mbox{\hyperlink{oci8_8php_ab81d8502e74fb810723a2dc3cdd5afeb}{S\+Q\+L\+T\+\_\+\+N\+UM}} 2
+\item 
+const \mbox{\hyperlink{oci8_8php_a7581c59d3f119c19d281d359deba41bc}{S\+Q\+L\+T\+\_\+\+R\+S\+ET}} 116
+\item 
+const \mbox{\hyperlink{oci8_8php_a1242ba37b6bbb48e7766129df27f7d97}{S\+Q\+L\+T\+\_\+\+A\+FC}} 96
+\item 
+const \mbox{\hyperlink{oci8_8php_a8e49b70c48299fc44d085c6261025a88}{S\+Q\+L\+T\+\_\+\+C\+HR}} 1
+\item 
+const \mbox{\hyperlink{oci8_8php_ae19ed94dabc92accea24bf40346efa3f}{S\+Q\+L\+T\+\_\+\+V\+CS}} 9
+\item 
+const \mbox{\hyperlink{oci8_8php_a5c7aedeaaf70f807a44d6fdd6a2cbc36}{S\+Q\+L\+T\+\_\+\+A\+VC}} 97
+\item 
+const \mbox{\hyperlink{oci8_8php_aee550fa483295fd1e611584a7b65720c}{S\+Q\+L\+T\+\_\+\+S\+TR}} 5
+\item 
+const \mbox{\hyperlink{oci8_8php_a8b96e17cd9ccae72b94486087b58648e}{S\+Q\+L\+T\+\_\+\+L\+VC}} 94
+\item 
+const \mbox{\hyperlink{oci8_8php_a9a18352edb30f212480d4389598c7469}{S\+Q\+L\+T\+\_\+\+F\+LT}} 4
+\item 
+const \mbox{\hyperlink{oci8_8php_a809a4f5de890f267831113fd8b34bbcd}{S\+Q\+L\+T\+\_\+\+U\+IN}} 68
+\item 
+const \mbox{\hyperlink{oci8_8php_ae99599362d58c04fa25f6d4c8cd0c90b}{S\+Q\+L\+T\+\_\+\+L\+NG}} 8
+\item 
+const \mbox{\hyperlink{oci8_8php_afdc60d230015df672b2555a7961ebcbd}{S\+Q\+L\+T\+\_\+\+L\+BI}} 24
+\item 
+const \mbox{\hyperlink{oci8_8php_abab94c0fa5be68dc182f372859944100}{S\+Q\+L\+T\+\_\+\+B\+IN}} 23
+\item 
+const \mbox{\hyperlink{oci8_8php_ac5e9d51dcd785f4b22e7243582234a7c}{S\+Q\+L\+T\+\_\+\+O\+DT}} 156
+\item 
+const \mbox{\hyperlink{oci8_8php_a179a0124d74f9db954a4bfaa410af660}{S\+Q\+L\+T\+\_\+\+B\+D\+O\+U\+B\+LE}} 22
+\item 
+const \mbox{\hyperlink{oci8_8php_a4e56c9b7678285b4c4faa32ff9ebf207}{S\+Q\+L\+T\+\_\+\+B\+F\+L\+O\+AT}} 21
+\item 
+const \mbox{\hyperlink{oci8_8php_a17b1d0780f22238b2d2ce13e7cf066d2}{O\+C\+I\+\_\+\+B\+\_\+\+N\+TY}} 108
+\item 
+const \mbox{\hyperlink{oci8_8php_aba54cf59a6c2bdac1a4e3ead7449f377}{S\+Q\+L\+T\+\_\+\+N\+TY}} 108
+\item 
+const \mbox{\hyperlink{oci8_8php_a5ec4ac66742be25ed7cd5b6db0b56d0b}{O\+C\+I\+\_\+\+S\+Y\+S\+D\+A\+TE}} \char`\"{}S\+Y\+S\+D\+A\+TE\char`\"{}
+\item 
+const \mbox{\hyperlink{oci8_8php_a2fded2d518fded26068b9c4688f52a60}{O\+C\+I\+\_\+\+B\+\_\+\+B\+F\+I\+LE}} 114
+\item 
+const \mbox{\hyperlink{oci8_8php_a3c81af3cdeb565247fdf19aa75d9765f}{O\+C\+I\+\_\+\+B\+\_\+\+C\+F\+I\+L\+EE}} 115
+\item 
+const \mbox{\hyperlink{oci8_8php_a0faa4e8ee4ef07c1f52246b28c8c6827}{O\+C\+I\+\_\+\+B\+\_\+\+C\+L\+OB}} 112
+\item 
+const \mbox{\hyperlink{oci8_8php_a822ad3a3919ad75fae28b070aa8dd66f}{O\+C\+I\+\_\+\+B\+\_\+\+B\+L\+OB}} 113
+\item 
+const \mbox{\hyperlink{oci8_8php_a43a5612ef3b92d86ec5536da45f29334}{O\+C\+I\+\_\+\+B\+\_\+\+R\+O\+W\+ID}} 104
+\item 
+const \mbox{\hyperlink{oci8_8php_af3c839c865c312cc49e5360591d9c014}{O\+C\+I\+\_\+\+B\+\_\+\+C\+U\+R\+S\+OR}} 116
+\item 
+const \mbox{\hyperlink{oci8_8php_aa585f01989facd70f75c52e4ddaf2316}{O\+C\+I\+\_\+\+B\+\_\+\+B\+IN}} 23
+\item 
+const \mbox{\hyperlink{oci8_8php_a1118b30800ef66cc4415b16948629bbc}{O\+C\+I\+\_\+\+B\+\_\+\+I\+NT}} 3
+\item 
+const \mbox{\hyperlink{oci8_8php_a51a4f7eed39c933efbdf8ad0676c401c}{O\+C\+I\+\_\+\+B\+\_\+\+N\+UM}} 2
+\item 
+const \mbox{\hyperlink{oci8_8php_a11060dd6c60c8f13e70fdb602f8e915a}{O\+C\+I\+\_\+\+F\+E\+T\+C\+H\+S\+T\+A\+T\+E\+M\+E\+N\+T\+\_\+\+B\+Y\+\_\+\+C\+O\+L\+U\+MN}} 16
+\item 
+const \mbox{\hyperlink{oci8_8php_acdd7e1539acb7325a00f752afc3406b6}{O\+C\+I\+\_\+\+F\+E\+T\+C\+H\+S\+T\+A\+T\+E\+M\+E\+N\+T\+\_\+\+B\+Y\+\_\+\+R\+OW}} 32
+\item 
+const \mbox{\hyperlink{oci8_8php_a326c74b03f18b7c233a928684d1a2d78}{O\+C\+I\+\_\+\+A\+S\+S\+OC}} 1
+\item 
+const \mbox{\hyperlink{oci8_8php_a3d159cff225c21c228c7e1bb79ad77b7}{O\+C\+I\+\_\+\+N\+UM}} 2
+\item 
+const \mbox{\hyperlink{oci8_8php_a69360e5ae2b673a0402856c1b6085109}{O\+C\+I\+\_\+\+B\+O\+TH}} 3
+\item 
+const \mbox{\hyperlink{oci8_8php_a15d6df669ef6452f516f8faa720e09af}{O\+C\+I\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+N\+U\+L\+LS}} 4
+\item 
+const \mbox{\hyperlink{oci8_8php_a9d95c0542a9520ed5295fed1a1f15666}{O\+C\+I\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+L\+O\+BS}} 8
+\item 
+const \mbox{\hyperlink{oci8_8php_a3e810e0936f4401f0d57e04c3cc8d770}{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+F\+I\+LE}} 56
+\item 
+const \mbox{\hyperlink{oci8_8php_a8b6edb8a5b4bc0989edf98bf4e79679e}{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+L\+OB}} 50
+\item 
+const \mbox{\hyperlink{oci8_8php_a716b8b13f42603c3b49c365386eb33f1}{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+R\+O\+W\+ID}} 54
+\item 
+const \mbox{\hyperlink{oci8_8php_a67a89033d121fda50dd2ee914bf88f75}{O\+C\+I\+\_\+\+D\+\_\+\+F\+I\+LE}} 56
+\item 
+const \mbox{\hyperlink{oci8_8php_a30575c85d9657d0ce6183caeb21750b4}{O\+C\+I\+\_\+\+D\+\_\+\+L\+OB}} 50
+\item 
+const \mbox{\hyperlink{oci8_8php_a54d2184e85706f46b942e36bcc384864}{O\+C\+I\+\_\+\+D\+\_\+\+R\+O\+W\+ID}} 54
+\item 
+const \mbox{\hyperlink{oci8_8php_a0ab065add6d654f24af180f57a3b0768}{O\+C\+I\+\_\+\+T\+E\+M\+P\+\_\+\+C\+L\+OB}} 2
+\item 
+const \mbox{\hyperlink{oci8_8php_ac6c46ce8bdc6dfefbf10149cf24390ed}{O\+C\+I\+\_\+\+T\+E\+M\+P\+\_\+\+B\+L\+OB}} 1
+\item 
+const \mbox{\hyperlink{oci8_8php_ac67a5eecb26425620bcbfb866ffd06ed}{S\+Q\+L\+T\+\_\+\+B\+OL}} 252
+\item 
+const \mbox{\hyperlink{oci8_8php_a6f57f9aa2a6c0bc2db1004a9863570fa}{O\+C\+I\+\_\+\+B\+\_\+\+B\+OL}} 252
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{oci8_8php_a9526805102b685894287ec1a42810a49}\label{oci8_8php_a9526805102b685894287ec1a42810a49}} 
+\index{oci8.php@{oci8.php}!oci\_bind\_array\_by\_name@{oci\_bind\_array\_by\_name}}
+\index{oci\_bind\_array\_by\_name@{oci\_bind\_array\_by\_name}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_bind\_array\_by\_name()}{oci\_bind\_array\_by\_name()}}
+{\footnotesize\ttfamily oci\+\_\+bind\+\_\+array\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$name,  }\item[{array \&}]{\$var\+\_\+array,  }\item[{}]{\$max\+\_\+table\+\_\+length,  }\item[{}]{\$max\+\_\+item\+\_\+length = {\ttfamily -\/1},  }\item[{}]{\$type = {\ttfamily \mbox{\hyperlink{oci8_8php_a1242ba37b6bbb48e7766129df27f7d97}{S\+Q\+L\+T\+\_\+\+A\+FC}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL O\+C\+I8 $>$= 1.\+2.\+0)~\newline
+ Binds a P\+HP array to an Oracle P\+L/\+S\+QL array parameter \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }} \mbox{\hyperlink{class_a}{A}} valid O\+CI statement identifier. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+The Oracle placeholder. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$var\+\_\+array} & \\
+\hline
+\end{DoxyParams}
+An array. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$max\+\_\+table\+\_\+length} & \\
+\hline
+\end{DoxyParams}
+Sets the maximum length both for incoming and result arrays. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$max\+\_\+item\+\_\+length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Sets maximum length for array items. If not specified or equals to -\/1, \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9526805102b685894287ec1a42810a49}{oci\+\_\+bind\+\_\+array\+\_\+by\+\_\+name}}\} will find the longest element in the incoming array and will use it as the maximum length. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$type} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Should be used to set the type of P\+L/\+S\+QL array items. See list of available types below\+: 
+
+{\bfseries{S\+Q\+L\+T\+\_\+\+N\+UM}} -\/ for arrays of N\+U\+M\+B\+ER. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}\label{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}} 
+\index{oci8.php@{oci8.php}!oci\_bind\_by\_name@{oci\_bind\_by\_name}}
+\index{oci\_bind\_by\_name@{oci\_bind\_by\_name}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_bind\_by\_name()}{oci\_bind\_by\_name()}}
+{\footnotesize\ttfamily oci\+\_\+bind\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$bv\+\_\+name,  }\item[{\&}]{\$variable,  }\item[{}]{\$maxlength = {\ttfamily -\/1},  }\item[{}]{\$type = {\ttfamily \mbox{\hyperlink{oci8_8php_a8e49b70c48299fc44d085c6261025a88}{S\+Q\+L\+T\+\_\+\+C\+HR}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Binds a P\+HP variable to an Oracle placeholder \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }} \mbox{\hyperlink{class_a}{A}} valid O\+C\+I8 statement identifer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$bv\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+The colon-\/prefixed bind variable placeholder used in the statement. The colon is optional in {\itshape bv\+\_\+name}. Oracle does not use question marks for placeholders. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$variable} & \\
+\hline
+\end{DoxyParams}
+The P\+HP variable to be associated with {\itshape bv\+\_\+name} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$maxlength} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Sets the maximum length for the data. If you set it to -\/1, this function will use the current length of {\itshape variable} to set the maximum length. In this case the {\itshape variable} must exist and contain data when \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}{oci\+\_\+bind\+\_\+by\+\_\+name}}\} is called. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$type} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The datatype that Oracle will treat the data as. The default {\itshape type} used is {\bfseries{S\+Q\+L\+T\+\_\+\+C\+HR}}. Oracle will convert the data between this type and the database column (or P\+L/\+S\+QL variable type), when possible. 
+
+If you need to bind an abstract datatype (L\+O\+B/\+R\+O\+W\+I\+D/\+B\+F\+I\+LE) you need to allocate it first using the \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9043438924908090cce22df49f79a974}{oci\+\_\+new\+\_\+descriptor}}\} \mbox{\hyperlink{interactive__command__1_8php_ab203aa61d1e8a9ac29ea9b66299b7d46}{function}}. The {\itshape length} is not used for abstract datatypes and should be set to -\/1. 
+\end{DoxySeeAlso}
+
+
+Possible values for {\itshape type} are\+: 
+
+{\bfseries{S\+Q\+L\+T\+\_\+\+B\+F\+I\+L\+EE}} or {\bfseries{O\+C\+I\+\_\+\+B\+\_\+\+B\+F\+I\+LE}}
+\begin{DoxyItemize}
+\item for B\+F\+I\+L\+Es; 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_ac08f327ac13a56194e51c918a1ba2559}\label{oci8_8php_ac08f327ac13a56194e51c918a1ba2559}} 
+\index{oci8.php@{oci8.php}!oci\_cancel@{oci\_cancel}}
+\index{oci\_cancel@{oci\_cancel}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_cancel()}{oci\_cancel()}}
+{\footnotesize\ttfamily oci\+\_\+cancel (\begin{DoxyParamCaption}\item[{}]{\$statement }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Cancels reading from cursor \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }} An O\+CI statement. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_ab5ede9ba5b7557690846e30b41e04e45}\label{oci8_8php_ab5ede9ba5b7557690846e30b41e04e45}} 
+\index{oci8.php@{oci8.php}!oci\_client\_version@{oci\_client\_version}}
+\index{oci\_client\_version@{oci\_client\_version}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_client\_version()}{oci\_client\_version()}}
+{\footnotesize\ttfamily oci\+\_\+client\+\_\+version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5.\+3.\+7, P\+E\+CL O\+C\+I8 $>$= 1.\+4.\+6)~\newline
+ Returns the Oracle client library version \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string the version number as a string. }}\mbox{\Hypertarget{oci8_8php_ad4b903dfc7c2bb30942941b30579d0c4}\label{oci8_8php_ad4b903dfc7c2bb30942941b30579d0c4}} 
+\index{oci8.php@{oci8.php}!oci\_close@{oci\_close}}
+\index{oci\_close@{oci\_close}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_close()}{oci\_close()}}
+{\footnotesize\ttfamily oci\+\_\+close (\begin{DoxyParamCaption}\item[{}]{\$connection }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Closes an Oracle connection \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection }} An Oracle connection identifier returned by \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect}}\}, \{
+
+\mbox{\hyperlink{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}{oci\+\_\+pconnect}}\}, or \{
+
+\mbox{\hyperlink{oci8_8php_a9a7a91924a356cc80fa21813f94cd2d5}{oci\+\_\+new\+\_\+connect}}\}. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_ada2d2982ccfb7879b268149bd7b2d0e7}\label{oci8_8php_ada2d2982ccfb7879b268149bd7b2d0e7}} 
+\index{oci8.php@{oci8.php}!oci\_commit@{oci\_commit}}
+\index{oci\_commit@{oci\_commit}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_commit()}{oci\_commit()}}
+{\footnotesize\ttfamily oci\+\_\+commit (\begin{DoxyParamCaption}\item[{}]{\$connection }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Commits the outstanding database transaction \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection }} An Oracle connection identifier, returned by \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect}}\}, \{
+
+\mbox{\hyperlink{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}{oci\+\_\+pconnect}}\}, or \{
+
+\mbox{\hyperlink{oci8_8php_a9a7a91924a356cc80fa21813f94cd2d5}{oci\+\_\+new\+\_\+connect}}\}. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}\label{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}} 
+\index{oci8.php@{oci8.php}!oci\_connect@{oci\_connect}}
+\index{oci\_connect@{oci\_connect}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_connect()}{oci\_connect()}}
+{\footnotesize\ttfamily oci\+\_\+connect (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$password,  }\item[{}]{\$connection\+\_\+string = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$character\+\_\+set = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$session\+\_\+mode = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Connect to an Oracle database \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$username }} The Oracle user name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+The password for {\itshape username}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+\_\+string} & \mbox{[}optional\mbox{]} Contains the Oracle instance to connect to. It can be an Easy Connect string, or a Connect Name from the tnsnames.\+ora file, or the name of a local Oracle instance. \\
+\hline
+\end{DoxyParams}
+If not specified, P\+HP uses environment variables such as {\bfseries{T\+W\+O\+\_\+\+T\+A\+SK}} (on Linux) or {\bfseries{L\+O\+C\+AL}} (on Windows) and {\bfseries{O\+R\+A\+C\+L\+E\+\_\+\+S\+ID}} to determine the Oracle instance to connect to. 
+
+To use the Easy Connect naming method, P\+HP must be linked with Oracle 10g or greater Client libraries. The Easy Connect string for Oracle 10g is of the form\+: \mbox{[}//\mbox{]}host\+\_\+name\mbox{[}\+:port\mbox{]}\mbox{[}/service\+\_\+name\mbox{]}. From Oracle 11g, the syntax is\+: \mbox{[}//\mbox{]}host\+\_\+name\mbox{[}\+:port\mbox{]}\mbox{[}/service\+\_\+name\mbox{]}\mbox{[}\+:server\+\_\+type\mbox{]}\mbox{[}/instance\+\_\+name\mbox{]}. Service names can be found by running the Oracle utility lsnrctl status on the database server machine. 
+
+The tnsnames.\+ora file can be in the Oracle Net search path, which includes \$\+O\+R\+A\+C\+L\+E\+\_\+\+H\+O\+ME/network/admin and /etc. Alternatively set T\+N\+S\+\_\+\+A\+D\+M\+IN so that \$\+T\+N\+S\+\_\+\+A\+D\+M\+IN/tnsnames.ora is read. Make sure the web daemon has read access to the file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$character\+\_\+set} & \mbox{[}optional\mbox{]} Determines the character set used by the Oracle Client libraries. The character set does not need to match the character set used by the database. If it doesn\textquotesingle{}t match, Oracle will do its best to convert data to and from the database character set. Depending on the character sets this may not give usable results. Conversion also adds some time overhead. \\
+\hline
+\end{DoxyParams}
+If not specified, the Oracle Client libraries determine a character set from the {\bfseries{N\+L\+S\+\_\+\+L\+A\+NG}} environment variable. 
+
+Passing this parameter can reduce the time taken to connect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$session\+\_\+mode} & \mbox{[}optional\mbox{]} This parameter is available since version P\+HP 5 (P\+E\+CL O\+C\+I8 1.\+1) and accepts the following values\+: {\bfseries{O\+C\+I\+\_\+\+D\+E\+F\+A\+U\+LT}}, {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+O\+P\+ER}} and {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+D\+BA}}. If either {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+O\+P\+ER}} or {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+D\+BA}} were specified, this function will try to establish privileged connection using external credentials. Privileged connections are disabled by default. To enable them you need to set oci8.\+privileged\+\_\+connect to On. \\
+\hline
+\end{DoxyParams}
+P\+HP 5.\+3 (P\+E\+CL O\+C\+I8 1.\+3.\+4) introduced the {\bfseries{O\+C\+I\+\_\+\+C\+R\+E\+D\+\_\+\+E\+XT}} mode value. This tells Oracle to use External or OS authentication, which must be configured in the database. The {\bfseries{O\+C\+I\+\_\+\+C\+R\+E\+D\+\_\+\+E\+XT}} flag can only be used with username of \&\#x00022;/\&\#x00022; and a empty password. oci8.\+privileged\+\_\+connect may be On or Off. 
+
+{\bfseries{O\+C\+I\+\_\+\+C\+R\+E\+D\+\_\+\+E\+XT}} may be combined with the {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+O\+P\+ER}} or {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+D\+BA}} modes. 
+
+{\bfseries{O\+C\+I\+\_\+\+C\+R\+E\+D\+\_\+\+E\+XT}} is not supported on Windows for security reasons. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false \mbox{\hyperlink{class_a}{A}} connection identifier or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_af96e991a2644c20138bb21c5c99cba49}\label{oci8_8php_af96e991a2644c20138bb21c5c99cba49}} 
+\index{oci8.php@{oci8.php}!oci\_define\_by\_name@{oci\_define\_by\_name}}
+\index{oci\_define\_by\_name@{oci\_define\_by\_name}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_define\_by\_name()}{oci\_define\_by\_name()}}
+{\footnotesize\ttfamily oci\+\_\+define\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$column\+\_\+name,  }\item[{\&}]{\$variable,  }\item[{}]{\$type = {\ttfamily \mbox{\hyperlink{oci8_8php_a8e49b70c48299fc44d085c6261025a88}{S\+Q\+L\+T\+\_\+\+C\+HR}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Associates a P\+HP variable with a column for query fetches \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement A valid O\+C\+I8 statement identifier created by \{ oci\+\_\+parse\} and executed by \{ oci\+\_\+execute\}, or a R\+EF C\+U\+R\+S\+OR statement identifier.}} 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+The column name used in the query. 
+
+Use uppercase for Oracle\textquotesingle{}s default, non-\/case sensitive column names. Use the exact column name case for case-\/sensitive column names. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$variable} & \\
+\hline
+\end{DoxyParams}
+The P\+HP variable that will contain the returned column value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$type} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The data type to be returned. Generally not needed. Note that Oracle-\/style data conversions are not performed. For example, S\+Q\+L\+T\+\_\+\+I\+NT will be ignored and the returned data type will still be S\+Q\+L\+T\+\_\+\+C\+HR. 
+
+You can optionally use \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9043438924908090cce22df49f79a974}{oci\+\_\+new\+\_\+descriptor}}\} to allocate L\+O\+B/\+R\+O\+W\+I\+D/\+B\+F\+I\+LE descriptors. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a49c7d8f00a42735d6c51f7b93ca46b96}\label{oci8_8php_a49c7d8f00a42735d6c51f7b93ca46b96}} 
+\index{oci8.php@{oci8.php}!oci\_error@{oci\_error}}
+\index{oci\_error@{oci\_error}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_error()}{oci\_error()}}
+{\footnotesize\ttfamily oci\+\_\+error (\begin{DoxyParamCaption}\item[{}]{\$resource = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Returns the last error found \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$resource \mbox{[}optional\mbox{]} }} For most errors, {\itshape resource} is the resource handle that was passed to the failing function call. For connection errors with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect}}\}, \{
+
+\mbox{\hyperlink{oci8_8php_a9a7a91924a356cc80fa21813f94cd2d5}{oci\+\_\+new\+\_\+connect}}\} or \{
+
+\mbox{\hyperlink{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}{oci\+\_\+pconnect}}\} do not pass {\itshape resource}. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+array$\vert$false If no error is found, \{
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a49c7d8f00a42735d6c51f7b93ca46b96}{oci\+\_\+error}}\} returns {\bfseries{F\+A\+L\+SE}}. Otherwise, \{
+
+\mbox{\hyperlink{oci8_8php_a49c7d8f00a42735d6c51f7b93ca46b96}{oci\+\_\+error}}\} returns the error information as an associative array. 
+\end{DoxySeeAlso}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a49c7d8f00a42735d6c51f7b93ca46b96}{oci\+\_\+error}}\} Array Description 
+\end{DoxySeeAlso}
+
+
+Array key 
+
+Type 
+
+Description  
+
+code 
+
+integer 
+
+The Oracle error number.   
+
+message 
+
+string 
+
+The Oracle error text.   
+
+offset 
+
+integer 
+
+The byte position of an error in the S\+QL statement. If there was no statement, this is 0   
+
+sqltext 
+
+string 
+
+The S\+QL statement text. If there was no statement, this is an empty string.   \mbox{\Hypertarget{oci8_8php_a6903a3e99b93b3a9142edf53e2c36513}\label{oci8_8php_a6903a3e99b93b3a9142edf53e2c36513}} 
+\index{oci8.php@{oci8.php}!oci\_execute@{oci\_execute}}
+\index{oci\_execute@{oci\_execute}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_execute()}{oci\_execute()}}
+{\footnotesize\ttfamily oci\+\_\+execute (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{oci8_8php_a04375f75e51f187b06a9fd129708118a}{O\+C\+I\+\_\+\+C\+O\+M\+M\+I\+T\+\_\+\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Executes a statement \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }} \mbox{\hyperlink{class_a}{A}} valid O\+CI statement identifier. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+An optional second parameter can be one of the following constants\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+Modes 
+
+Constant 
+
+Description  
+
+{\bfseries{O\+C\+I\+\_\+\+C\+O\+M\+M\+I\+T\+\_\+\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS}} 
+
+Automatically commit all outstanding changes for this connection when the statement has succeeded. This is the default.  
+
+{\bfseries{O\+C\+I\+\_\+\+D\+E\+S\+C\+R\+I\+B\+E\+\_\+\+O\+N\+LY}} 
+
+Make query meta data available to functions like \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a1c301eb31fd6f61d8e0b04f027a35e1c}{oci\+\_\+field\+\_\+name}}\} but do not create \mbox{\hyperlink{interfacea}{a}} result set. Any subsequent fetch call such as \{
+
+\mbox{\hyperlink{oci8_8php_ae3641f58cc05c8320463b30fadd6edcb}{oci\+\_\+fetch\+\_\+array}}\} will fail.  
+\end{DoxySeeAlso}
+
+
+{\bfseries{O\+C\+I\+\_\+\+N\+O\+\_\+\+A\+U\+T\+O\+\_\+\+C\+O\+M\+M\+IT}} 
+
+Do not automatically commit changes. Prior to P\+HP 5.\+3.\+2 (P\+E\+CL O\+C\+I8 1.\+4) use {\bfseries{O\+C\+I\+\_\+\+D\+E\+F\+A\+U\+LT}} which is equivalent to {\bfseries{O\+C\+I\+\_\+\+N\+O\+\_\+\+A\+U\+T\+O\+\_\+\+C\+O\+M\+M\+IT}}.  
+
+Using {\bfseries{O\+C\+I\+\_\+\+N\+O\+\_\+\+A\+U\+T\+O\+\_\+\+C\+O\+M\+M\+IT}} mode starts or continues a transaction. Transactions are automatically rolled back when the connection is closed, or when the script ends. Explicitly call \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_ada2d2982ccfb7879b268149bd7b2d0e7}{oci\+\_\+commit}}\} to commit \mbox{\hyperlink{interfacea}{a}} transaction, or \{
+
+\mbox{\hyperlink{oci8_8php_a107d1602edd917a08e32d7462070b110}{oci\+\_\+rollback}}\} to abort it. 
+\end{DoxySeeAlso}
+
+
+When inserting or updating data, using transactions is recommended for relational data consistency and for performance reasons. 
+
+If {\bfseries{O\+C\+I\+\_\+\+N\+O\+\_\+\+A\+U\+T\+O\+\_\+\+C\+O\+M\+M\+IT}} mode is used for any statement including queries, and \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_ada2d2982ccfb7879b268149bd7b2d0e7}{oci\+\_\+commit}}\} or \{
+
+\mbox{\hyperlink{oci8_8php_a107d1602edd917a08e32d7462070b110}{oci\+\_\+rollback}}\} is not subsequently called, then O\+C\+I8 will perform \mbox{\hyperlink{interfacea}{a}} rollback \mbox{\hyperlink{phpunit_2phpunit_2src_2_framework_2_assert_2_functions_8php_a1638aacf03530a73b0a3c373471ac79b}{at}} the \mbox{\hyperlink{standard__8_8php_a9693c30a69484b090a74cd1cceb58399}{end}} of the script even \mbox{\hyperlink{apigen_2apigen_2bin_2bootstrap_8php_a18b663b7f311baed73ccaa681a5d3507}{if}} no data was changed. To avoid an unnecessary rollback, many scripts do not use {\bfseries{\mbox{\hyperlink{oci8_8php_a45a2231cb583ec63d062f4e07f68144d}{O\+C\+I\+\_\+\+N\+O\+\_\+\+A\+U\+T\+O\+\_\+\+C\+O\+M\+M\+IT}}}} mode for queries or P\+L/\+S\+QL. Be careful to ensure the appropriate transactional consistency for the application when using \{
+
+\mbox{\hyperlink{oci8_8php_a6903a3e99b93b3a9142edf53e2c36513}{oci\+\_\+execute}}\} with different modes in the same script. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_ab069f2f2bc9d35eb4031ea1109c96a0e}\label{oci8_8php_ab069f2f2bc9d35eb4031ea1109c96a0e}} 
+\index{oci8.php@{oci8.php}!oci\_fetch@{oci\_fetch}}
+\index{oci\_fetch@{oci\_fetch}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_fetch()}{oci\_fetch()}}
+{\footnotesize\ttfamily oci\+\_\+fetch (\begin{DoxyParamCaption}\item[{}]{\$statement }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Fetches the next row from a query into internal buffers \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement A valid O\+C\+I8 statement identifier created by \{ oci\+\_\+parse\} and executed by \{ oci\+\_\+execute\}, or a R\+EF C\+U\+R\+S\+OR statement identifier.}} \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} if there are no more rows in the {\itshape statement}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a9ad0594abe383aebbc6b81f53989c60d}\label{oci8_8php_a9ad0594abe383aebbc6b81f53989c60d}} 
+\index{oci8.php@{oci8.php}!oci\_fetch\_all@{oci\_fetch\_all}}
+\index{oci\_fetch\_all@{oci\_fetch\_all}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_fetch\_all()}{oci\_fetch\_all()}}
+{\footnotesize\ttfamily oci\+\_\+fetch\+\_\+all (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{array \&}]{\$output,  }\item[{}]{\$skip = {\ttfamily 0},  }\item[{}]{\$maxrows = {\ttfamily -\/1},  }\item[{}]{\$flags = {\ttfamily \mbox{\hyperlink{oci8_8php_a11060dd6c60c8f13e70fdb602f8e915a}{O\+C\+I\+\_\+\+F\+E\+T\+C\+H\+S\+T\+A\+T\+E\+M\+E\+N\+T\+\_\+\+B\+Y\+\_\+\+C\+O\+L\+U\+MN}}~$\vert$~\mbox{\hyperlink{oci8_8php_a326c74b03f18b7c233a928684d1a2d78}{O\+C\+I\+\_\+\+A\+S\+S\+OC}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Fetches multiple rows from a query into a two-\/dimensional array \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement A valid O\+C\+I8 statement identifier created by \{ oci\+\_\+parse\} and executed by \{ oci\+\_\+execute\}, or a R\+EF C\+U\+R\+S\+OR statement identifier.}} 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$output} & \\
+\hline
+\end{DoxyParams}
+The variable to contain the returned rows. 
+
+L\+OB columns are returned as strings, where Oracle supports conversion. 
+
+See \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_ae3641f58cc05c8320463b30fadd6edcb}{oci\+\_\+fetch\+\_\+array}}\} for more information on how data and types are fetched. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$skip} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of initial rows to discard when fetching the result. The default value is 0, so the first row onwards is returned. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$maxrows} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of rows to return. The default is -\/1 meaning return all the rows from {\itshape skip} + 1 onwards. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Parameter {\itshape flags} indicates the array structure and whether associative arrays should be used. \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9ad0594abe383aebbc6b81f53989c60d}{oci\+\_\+fetch\+\_\+all}}\} Array Structure Modes 
+\end{DoxySeeAlso}
+
+
+Constant 
+
+Description  
+
+{\bfseries{O\+C\+I\+\_\+\+F\+E\+T\+C\+H\+S\+T\+A\+T\+E\+M\+E\+N\+T\+\_\+\+B\+Y\+\_\+\+R\+OW}} 
+
+The outer array will contain one sub-\/array per query row.  
+
+{\bfseries{O\+C\+I\+\_\+\+F\+E\+T\+C\+H\+S\+T\+A\+T\+E\+M\+E\+N\+T\+\_\+\+B\+Y\+\_\+\+C\+O\+L\+U\+MN}} 
+
+The outer array will contain one sub-\/array per query column. This is the default.  
+
+Arrays can be indexed by column heading or numerically. \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9ad0594abe383aebbc6b81f53989c60d}{oci\+\_\+fetch\+\_\+all}}\} Array Index Modes 
+\end{DoxySeeAlso}
+
+
+Constant 
+
+Description  
+
+{\bfseries{O\+C\+I\+\_\+\+N\+UM}} 
+
+Numeric indexes are used for each column\textquotesingle{}s array.  
+
+{\bfseries{O\+C\+I\+\_\+\+A\+S\+S\+OC}} 
+
+Associative indexes are used for each column\textquotesingle{}s array. This is the default.  
+
+Use the addition operator \&\#x00022;+\&\#x00022; to choose a combination of array structure and index modes. 
+
+Oracle\textquotesingle{}s default, non-\/case sensitive column names will have uppercase array keys. Case-\/sensitive column names will have array keys using the exact column case. Use {\bfseries{var\+\_\+dump}} on {\itshape output} to verify the appropriate case to use for each query. 
+
+Queries that have more than one column with the same name should use column aliases. Otherwise only one of the columns will appear in an associative array. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false The number of rows in {\itshape output}, which may be 0 or more, or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_ae3641f58cc05c8320463b30fadd6edcb}\label{oci8_8php_ae3641f58cc05c8320463b30fadd6edcb}} 
+\index{oci8.php@{oci8.php}!oci\_fetch\_array@{oci\_fetch\_array}}
+\index{oci\_fetch\_array@{oci\_fetch\_array}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_fetch\_array()}{oci\_fetch\_array()}}
+{\footnotesize\ttfamily oci\+\_\+fetch\+\_\+array (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Returns the next row from a query as an associative or numeric array \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement A valid O\+C\+I8 statement identifier created by \{ oci\+\_\+parse\} and executed by \{ oci\+\_\+execute\}, or a R\+EF C\+U\+R\+S\+OR statement identifier.}} 
+
+Can also be a statement identifier returned by \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a95b2b26c9b8e4d3af14a15253e3f8983}{oci\+\_\+get\+\_\+implicit\+\_\+resultset}}\}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+An optional second parameter can be any combination of the following constants\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_ae3641f58cc05c8320463b30fadd6edcb}{oci\+\_\+fetch\+\_\+array}}\} Modes 
+\end{DoxySeeAlso}
+
+
+Constant 
+
+Description  
+
+{\bfseries{O\+C\+I\+\_\+\+B\+O\+TH}} 
+
+Returns an array with both associative and numeric indices. This is the same as {\bfseries{O\+C\+I\+\_\+\+A\+S\+S\+OC}}
+\begin{DoxyItemize}
+\item {\bfseries{O\+C\+I\+\_\+\+N\+UM}} and is the default behavior.  
+\end{DoxyItemize}
+
+{\bfseries{O\+C\+I\+\_\+\+A\+S\+S\+OC}} 
+
+Returns an associative array.  
+
+{\bfseries{O\+C\+I\+\_\+\+N\+UM}} 
+
+Returns a numeric array.  
+
+{\bfseries{O\+C\+I\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+N\+U\+L\+LS}} 
+
+Creates elements for {\bfseries{N\+U\+LL}} fields. The element values will be a P\+HP {\bfseries{N\+U\+LL}}.   
+
+{\bfseries{O\+C\+I\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+L\+O\+BS}} 
+
+Returns the contents of L\+O\+Bs instead of the L\+OB descriptors.  
+
+The default {\itshape mode} is {\bfseries{O\+C\+I\+\_\+\+B\+O\+TH}}. 
+
+Use the addition operator \&\#x00022;+\&\#x00022; to specify more than one mode at a time. 
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false An array with associative and/or numeric indices. If there are no more rows in the {\itshape statement} then {\bfseries{F\+A\+L\+SE}} is returned. 
+\end{DoxyReturn}
+
+
+By default, L\+OB columns are returned as L\+OB descriptors. 
+
+D\+A\+TE columns are returned as strings formatted to the current date format. The default format can be changed with Oracle environment variables such as N\+L\+S\+\_\+\+L\+A\+NG or by a previously executed A\+L\+T\+ER S\+E\+S\+S\+I\+ON S\+ET N\+L\+S\+\_\+\+D\+A\+T\+E\+\_\+\+F\+O\+R\+M\+AT command. 
+
+Oracle\textquotesingle{}s default, non-\/case sensitive column names will have uppercase associative indices in the result array. Case-\/sensitive column names will have array indices using the exact column case. Use {\bfseries{var\+\_\+dump}} on the result array to verify the appropriate case to use for each query. 
+
+The table name is not included in the array index. If your query contains two different columns with the same name, use {\bfseries{O\+C\+I\+\_\+\+N\+UM}} or add a column alias to the query to ensure name uniqueness, see example \#7. Otherwise only one column will be returned via P\+HP. \mbox{\Hypertarget{oci8_8php_a21852c9b8cc607a1695d8e222a6c6da5}\label{oci8_8php_a21852c9b8cc607a1695d8e222a6c6da5}} 
+\index{oci8.php@{oci8.php}!oci\_fetch\_assoc@{oci\_fetch\_assoc}}
+\index{oci\_fetch\_assoc@{oci\_fetch\_assoc}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_fetch\_assoc()}{oci\_fetch\_assoc()}}
+{\footnotesize\ttfamily oci\+\_\+fetch\+\_\+assoc (\begin{DoxyParamCaption}\item[{}]{\$statement }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Returns the next row from a query as an associative array \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement A valid O\+C\+I8 statement identifier created by \{ oci\+\_\+parse\} and executed by \{ oci\+\_\+execute\}, or a R\+EF C\+U\+R\+S\+OR statement identifier.}} \begin{DoxyReturn}{Returns}
+array$\vert$false An associative array. If there are no more rows in the {\itshape statement} then {\bfseries{F\+A\+L\+SE}} is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a8fcea9cb2c5d5d2343c69452ad77abd6}\label{oci8_8php_a8fcea9cb2c5d5d2343c69452ad77abd6}} 
+\index{oci8.php@{oci8.php}!oci\_fetch\_object@{oci\_fetch\_object}}
+\index{oci\_fetch\_object@{oci\_fetch\_object}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_fetch\_object()}{oci\_fetch\_object()}}
+{\footnotesize\ttfamily oci\+\_\+fetch\+\_\+object (\begin{DoxyParamCaption}\item[{}]{\$statement }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Returns the next row from a query as an object \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement A valid O\+C\+I8 statement identifier created by \{ oci\+\_\+parse\} and executed by \{ oci\+\_\+execute\}, or a R\+EF C\+U\+R\+S\+OR statement identifier.}} \begin{DoxyReturn}{Returns}
+object$\vert$false An object. Each attribute of the object corresponds to a column of the row. If there are no more rows in the {\itshape statement} then {\bfseries{F\+A\+L\+SE}} is returned. 
+\end{DoxyReturn}
+
+
+Any L\+OB columns are returned as L\+OB descriptors. 
+
+D\+A\+TE columns are returned as strings formatted to the current date format. The default format can be changed with Oracle environment variables such as N\+L\+S\+\_\+\+L\+A\+NG or by a previously executed A\+L\+T\+ER S\+E\+S\+S\+I\+ON S\+ET N\+L\+S\+\_\+\+D\+A\+T\+E\+\_\+\+F\+O\+R\+M\+AT command. 
+
+Oracle\textquotesingle{}s default, non-\/case sensitive column names will have uppercase attribute names. Case-\/sensitive column names will have attribute names using the exact column case. Use {\bfseries{var\+\_\+dump}} on the result object to verify the appropriate case for attribute access. 
+
+Attribute values will be {\bfseries{N\+U\+LL}} for any N\+U\+LL data fields. \mbox{\Hypertarget{oci8_8php_a9c0a6225da2080e26871a6eeee4f4747}\label{oci8_8php_a9c0a6225da2080e26871a6eeee4f4747}} 
+\index{oci8.php@{oci8.php}!oci\_fetch\_row@{oci\_fetch\_row}}
+\index{oci\_fetch\_row@{oci\_fetch\_row}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_fetch\_row()}{oci\_fetch\_row()}}
+{\footnotesize\ttfamily oci\+\_\+fetch\+\_\+row (\begin{DoxyParamCaption}\item[{}]{\$statement }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Returns the next row from a query as a numeric array \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement A valid O\+C\+I8 statement identifier created by \{ oci\+\_\+parse\} and executed by \{ oci\+\_\+execute\}, or a R\+EF C\+U\+R\+S\+OR statement identifier.}} \begin{DoxyReturn}{Returns}
+array$\vert$false \mbox{\hyperlink{class_a}{A}} numerically indexed array. If there are no more rows in the {\itshape statement} then {\bfseries{F\+A\+L\+SE}} is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_ae837d45b6ae2f9469a156bd5e09e4e39}\label{oci8_8php_ae837d45b6ae2f9469a156bd5e09e4e39}} 
+\index{oci8.php@{oci8.php}!oci\_field\_is\_null@{oci\_field\_is\_null}}
+\index{oci\_field\_is\_null@{oci\_field\_is\_null}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_field\_is\_null()}{oci\_field\_is\_null()}}
+{\footnotesize\ttfamily oci\+\_\+field\+\_\+is\+\_\+null (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$field }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Checks if the field is {\bfseries{N\+U\+LL}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }} \mbox{\hyperlink{class_a}{A}} valid O\+CI statement identifier. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$field} & \\
+\hline
+\end{DoxyParams}
+Can be a field\textquotesingle{}s index or a field\textquotesingle{}s name (uppercased). 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} if {\itshape field} is {\bfseries{N\+U\+LL}}, {\bfseries{F\+A\+L\+SE}} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a1c301eb31fd6f61d8e0b04f027a35e1c}\label{oci8_8php_a1c301eb31fd6f61d8e0b04f027a35e1c}} 
+\index{oci8.php@{oci8.php}!oci\_field\_name@{oci\_field\_name}}
+\index{oci\_field\_name@{oci\_field\_name}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_field\_name()}{oci\_field\_name()}}
+{\footnotesize\ttfamily oci\+\_\+field\+\_\+name (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$field }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Returns the name of a field from the statement \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }} \mbox{\hyperlink{class_a}{A}} valid O\+CI statement identifier. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$field} & \\
+\hline
+\end{DoxyParams}
+Can be the field\textquotesingle{}s index (1-\/based) or name. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false The name as a string, or {\bfseries{F\+A\+L\+SE}} on errors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a30cb427c0f6409a1a4cd84332b362d22}\label{oci8_8php_a30cb427c0f6409a1a4cd84332b362d22}} 
+\index{oci8.php@{oci8.php}!oci\_field\_precision@{oci\_field\_precision}}
+\index{oci\_field\_precision@{oci\_field\_precision}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_field\_precision()}{oci\_field\_precision()}}
+{\footnotesize\ttfamily oci\+\_\+field\+\_\+precision (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$field }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Tell the precision of a field \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }} \mbox{\hyperlink{class_a}{A}} valid O\+CI statement identifier. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$field} & \\
+\hline
+\end{DoxyParams}
+Can be the field\textquotesingle{}s index (1-\/based) or name. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false The precision as an integer, or {\bfseries{F\+A\+L\+SE}} on errors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a425b5686c1c939ef7d91931b3a93b9a8}\label{oci8_8php_a425b5686c1c939ef7d91931b3a93b9a8}} 
+\index{oci8.php@{oci8.php}!oci\_field\_scale@{oci\_field\_scale}}
+\index{oci\_field\_scale@{oci\_field\_scale}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_field\_scale()}{oci\_field\_scale()}}
+{\footnotesize\ttfamily oci\+\_\+field\+\_\+scale (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$field }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Tell the scale of the field \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }} \mbox{\hyperlink{class_a}{A}} valid O\+CI statement identifier. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$field} & \\
+\hline
+\end{DoxyParams}
+Can be the field\textquotesingle{}s index (1-\/based) or name. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false The scale as an integer, or {\bfseries{F\+A\+L\+SE}} on errors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a546e9a2ab970bcd56fb8361817262137}\label{oci8_8php_a546e9a2ab970bcd56fb8361817262137}} 
+\index{oci8.php@{oci8.php}!oci\_field\_size@{oci\_field\_size}}
+\index{oci\_field\_size@{oci\_field\_size}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_field\_size()}{oci\_field\_size()}}
+{\footnotesize\ttfamily oci\+\_\+field\+\_\+size (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$field }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Returns field\textquotesingle{}s size \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }} \mbox{\hyperlink{class_a}{A}} valid O\+CI statement identifier. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$field} & \\
+\hline
+\end{DoxyParams}
+Can be the field\textquotesingle{}s index (1-\/based) or name. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false The size of a {\itshape field} in bytes, or {\bfseries{F\+A\+L\+SE}} on errors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a53242061930c42f21cf503fbd8b50a4f}\label{oci8_8php_a53242061930c42f21cf503fbd8b50a4f}} 
+\index{oci8.php@{oci8.php}!oci\_field\_type@{oci\_field\_type}}
+\index{oci\_field\_type@{oci\_field\_type}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_field\_type()}{oci\_field\_type()}}
+{\footnotesize\ttfamily oci\+\_\+field\+\_\+type (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$field }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Returns field\textquotesingle{}s data type \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }} \mbox{\hyperlink{class_a}{A}} valid O\+CI statement identifier. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$field} & \\
+\hline
+\end{DoxyParams}
+Can be the field\textquotesingle{}s index (1-\/based) or name. 
+
+\begin{DoxyReturn}{Returns}
+mixed the field data type as a string, or {\bfseries{F\+A\+L\+SE}} on errors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_aa9828d6b25350860a98d8d7689b6f554}\label{oci8_8php_aa9828d6b25350860a98d8d7689b6f554}} 
+\index{oci8.php@{oci8.php}!oci\_field\_type\_raw@{oci\_field\_type\_raw}}
+\index{oci\_field\_type\_raw@{oci\_field\_type\_raw}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_field\_type\_raw()}{oci\_field\_type\_raw()}}
+{\footnotesize\ttfamily oci\+\_\+field\+\_\+type\+\_\+raw (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$field }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Tell the raw Oracle data type of the field \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }} \mbox{\hyperlink{class_a}{A}} valid O\+CI statement identifier. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$field} & \\
+\hline
+\end{DoxyParams}
+Can be the field\textquotesingle{}s index (1-\/based) or name. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false Oracle\textquotesingle{}s raw data type as a string, or {\bfseries{F\+A\+L\+SE}} on errors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_ae5368bc44fb0449b3874e139b32c2745}\label{oci8_8php_ae5368bc44fb0449b3874e139b32c2745}} 
+\index{oci8.php@{oci8.php}!oci\_free\_cursor@{oci\_free\_cursor}}
+\index{oci\_free\_cursor@{oci\_free\_cursor}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_free\_cursor()}{oci\_free\_cursor()}}
+{\footnotesize\ttfamily oci\+\_\+free\+\_\+cursor (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource }\end{DoxyParamCaption})}
+
+Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a15e435317899ee3062c679d7d6093939}{oci\+\_\+free\+\_\+statement()}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$statement\+\_\+resource  bool Returns T\+R\+UE on success or F\+A\+L\+SE on failure. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_af7c1ca4403622325772d5411f4ccd2a8}\label{oci8_8php_af7c1ca4403622325772d5411f4ccd2a8}} 
+\index{oci8.php@{oci8.php}!oci\_free\_descriptor@{oci\_free\_descriptor}}
+\index{oci\_free\_descriptor@{oci\_free\_descriptor}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_free\_descriptor()}{oci\_free\_descriptor()}}
+{\footnotesize\ttfamily oci\+\_\+free\+\_\+descriptor (\begin{DoxyParamCaption}\item[{}]{\$descriptor }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Frees a descriptor \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$descriptor  bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. }}\mbox{\Hypertarget{oci8_8php_a15e435317899ee3062c679d7d6093939}\label{oci8_8php_a15e435317899ee3062c679d7d6093939}} 
+\index{oci8.php@{oci8.php}!oci\_free\_statement@{oci\_free\_statement}}
+\index{oci\_free\_statement@{oci\_free\_statement}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_free\_statement()}{oci\_free\_statement()}}
+{\footnotesize\ttfamily oci\+\_\+free\+\_\+statement (\begin{DoxyParamCaption}\item[{}]{\$statement }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Frees all resources associated with statement or cursor \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }} \mbox{\hyperlink{class_a}{A}} valid O\+CI statement identifier. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a95b2b26c9b8e4d3af14a15253e3f8983}\label{oci8_8php_a95b2b26c9b8e4d3af14a15253e3f8983}} 
+\index{oci8.php@{oci8.php}!oci\_get\_implicit\_resultset@{oci\_get\_implicit\_resultset}}
+\index{oci\_get\_implicit\_resultset@{oci\_get\_implicit\_resultset}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_get\_implicit\_resultset()}{oci\_get\_implicit\_resultset()}}
+{\footnotesize\ttfamily oci\+\_\+get\+\_\+implicit\+\_\+resultset (\begin{DoxyParamCaption}\item[{}]{\$statement }\end{DoxyParamCaption})}
+
+(P\+E\+CL O\+C\+I8 $>$= 2.\+0.\+0)~\newline
+ Returns the next child statement resource from a parent statement resource that has Oracle Database 12c Implicit Result Sets \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }}\mbox{\hyperlink{class_a}{A}} valid O\+C\+I8 statement identifier created by \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_add430a818c3628ee70a3479ef838c7c5}{oci\+\_\+parse}}\} and executed by \{
+
+\mbox{\hyperlink{oci8_8php_a6903a3e99b93b3a9142edf53e2c36513}{oci\+\_\+execute}}\}. The statement identifier may or may not be associated with \mbox{\hyperlink{interfacea}{a}} S\+QL statement that returns Implicit Result Sets. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+resource$\vert$false \mbox{\hyperlink{class_a}{A}} statement handle for the next child statement available on {\itshape statement}. Returns {\bfseries{F\+A\+L\+SE}} when child statements do not exist, or all child statements have been returned by previous calls to \{
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a95b2b26c9b8e4d3af14a15253e3f8983}{oci\+\_\+get\+\_\+implicit\+\_\+resultset}}\}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a7c05be48610bc8a7780805c29071cc04}\label{oci8_8php_a7c05be48610bc8a7780805c29071cc04}} 
+\index{oci8.php@{oci8.php}!oci\_internal\_debug@{oci\_internal\_debug}}
+\index{oci\_internal\_debug@{oci\_internal\_debug}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_internal\_debug()}{oci\_internal\_debug()}}
+{\footnotesize\ttfamily oci\+\_\+internal\+\_\+debug (\begin{DoxyParamCaption}\item[{}]{\$onoff }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Enables or disables internal debug output \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{bool \$onoff }} Set this to {\bfseries{F\+A\+L\+SE}} to turn debug output off or {\bfseries{T\+R\+UE}} to turn it on. 
+
+\begin{DoxyReturn}{Returns}
+void No value is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a1094714bd657b815bd71933f4a5ca394}\label{oci8_8php_a1094714bd657b815bd71933f4a5ca394}} 
+\index{oci8.php@{oci8.php}!oci\_lob\_copy@{oci\_lob\_copy}}
+\index{oci\_lob\_copy@{oci\_lob\_copy}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_lob\_copy()}{oci\_lob\_copy()}}
+{\footnotesize\ttfamily oci\+\_\+lob\+\_\+copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_c_i___lob}{O\+C\+I\+\_\+\+Lob}}}]{\$lob\+\_\+to,  }\item[{\mbox{\hyperlink{class_o_c_i___lob}{O\+C\+I\+\_\+\+Lob}}}]{\$lob\+\_\+from,  }\item[{}]{\$length = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Copies large object \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Lob \$lob\+\_\+to }} The destination L\+OB. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_o_c_i___lob}{O\+C\+I\+\_\+\+Lob}} & {\em \$lob\+\_\+from} & \\
+\hline
+\end{DoxyParams}
+The copied L\+OB. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Indicates the length of data to be copied. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_adac73fa8c6ff555b7edf8c259fd349fc}\label{oci8_8php_adac73fa8c6ff555b7edf8c259fd349fc}} 
+\index{oci8.php@{oci8.php}!oci\_lob\_is\_equal@{oci\_lob\_is\_equal}}
+\index{oci\_lob\_is\_equal@{oci\_lob\_is\_equal}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_lob\_is\_equal()}{oci\_lob\_is\_equal()}}
+{\footnotesize\ttfamily oci\+\_\+lob\+\_\+is\+\_\+equal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_o_c_i___lob}{O\+C\+I\+\_\+\+Lob}}}]{\$lob1,  }\item[{\mbox{\hyperlink{class_o_c_i___lob}{O\+C\+I\+\_\+\+Lob}}}]{\$lob2 }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Compares two L\+O\+B/\+F\+I\+LE locators for equality \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Lob \$lob1 }} \mbox{\hyperlink{class_a}{A}} L\+OB identifier. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_o_c_i___lob}{O\+C\+I\+\_\+\+Lob}} & {\em \$lob2} & \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} L\+OB identifier. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} if these objects are equal, {\bfseries{F\+A\+L\+SE}} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a358402ca9d071a2ad79502b7e0e60328}\label{oci8_8php_a358402ca9d071a2ad79502b7e0e60328}} 
+\index{oci8.php@{oci8.php}!oci\_new\_collection@{oci\_new\_collection}}
+\index{oci\_new\_collection@{oci\_new\_collection}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_new\_collection()}{oci\_new\_collection()}}
+{\footnotesize\ttfamily oci\+\_\+new\+\_\+collection (\begin{DoxyParamCaption}\item[{}]{\$connection,  }\item[{}]{\$tdo,  }\item[{}]{\$schema = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Allocates new collection object \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection }} An Oracle connection identifier, returned by \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect}}\} or \{
+
+\mbox{\hyperlink{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}{oci\+\_\+pconnect}}\}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tdo} & \\
+\hline
+\end{DoxyParams}
+Should be a valid named type (uppercase). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$schema} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Should point to the scheme, where the named type was created. The name of the current user is the default value. 
+
+\begin{DoxyReturn}{Returns}
+O\+C\+I\+\_\+\+Collection$\vert$false \mbox{\hyperlink{class_a}{A}} new {\bfseries{O\+C\+I\+Collection}} object or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a9a7a91924a356cc80fa21813f94cd2d5}\label{oci8_8php_a9a7a91924a356cc80fa21813f94cd2d5}} 
+\index{oci8.php@{oci8.php}!oci\_new\_connect@{oci\_new\_connect}}
+\index{oci\_new\_connect@{oci\_new\_connect}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_new\_connect()}{oci\_new\_connect()}}
+{\footnotesize\ttfamily oci\+\_\+new\+\_\+connect (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$password,  }\item[{}]{\$connection\+\_\+string = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$character\+\_\+set = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$session\+\_\+mode = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Connect to the Oracle server using a unique connection \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$username }} The Oracle user name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+The password for {\itshape username}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+\_\+string} & \mbox{[}optional\mbox{]} Contains the Oracle instance to connect to. It can be an Easy Connect string, or a Connect Name from the tnsnames.\+ora file, or the name of a local Oracle instance. \\
+\hline
+\end{DoxyParams}
+If not specified, P\+HP uses environment variables such as {\bfseries{T\+W\+O\+\_\+\+T\+A\+SK}} (on Linux) or {\bfseries{L\+O\+C\+AL}} (on Windows) and {\bfseries{O\+R\+A\+C\+L\+E\+\_\+\+S\+ID}} to determine the Oracle instance to connect to. 
+
+To use the Easy Connect naming method, P\+HP must be linked with Oracle 10g or greater Client libraries. The Easy Connect string for Oracle 10g is of the form\+: \mbox{[}//\mbox{]}host\+\_\+name\mbox{[}\+:port\mbox{]}\mbox{[}/service\+\_\+name\mbox{]}. From Oracle 11g, the syntax is\+: \mbox{[}//\mbox{]}host\+\_\+name\mbox{[}\+:port\mbox{]}\mbox{[}/service\+\_\+name\mbox{]}\mbox{[}\+:server\+\_\+type\mbox{]}\mbox{[}/instance\+\_\+name\mbox{]}. Service names can be found by running the Oracle utility lsnrctl status on the database server machine. 
+
+The tnsnames.\+ora file can be in the Oracle Net search path, which includes \$\+O\+R\+A\+C\+L\+E\+\_\+\+H\+O\+ME/network/admin and /etc. Alternatively set T\+N\+S\+\_\+\+A\+D\+M\+IN so that \$\+T\+N\+S\+\_\+\+A\+D\+M\+IN/tnsnames.ora is read. Make sure the web daemon has read access to the file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$character\+\_\+set} & \mbox{[}optional\mbox{]} Determines the character set used by the Oracle Client libraries. The character set does not need to match the character set used by the database. If it doesn\textquotesingle{}t match, Oracle will do its best to convert data to and from the database character set. Depending on the character sets this may not give usable results. Conversion also adds some time overhead. \\
+\hline
+\end{DoxyParams}
+If not specified, the Oracle Client libraries determine a character set from the {\bfseries{N\+L\+S\+\_\+\+L\+A\+NG}} environment variable. 
+
+Passing this parameter can reduce the time taken to connect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$session\+\_\+mode} & \mbox{[}optional\mbox{]} This parameter is available since version P\+HP 5 (P\+E\+CL O\+C\+I8 1.\+1) and accepts the following values\+: {\bfseries{O\+C\+I\+\_\+\+D\+E\+F\+A\+U\+LT}}, {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+O\+P\+ER}} and {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+D\+BA}}. If either {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+O\+P\+ER}} or {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+D\+BA}} were specified, this function will try to establish privileged connection using external credentials. Privileged connections are disabled by default. To enable them you need to set oci8.\+privileged\+\_\+connect to On. \\
+\hline
+\end{DoxyParams}
+P\+HP 5.\+3 (P\+E\+CL O\+C\+I8 1.\+3.\+4) introduced the {\bfseries{O\+C\+I\+\_\+\+C\+R\+E\+D\+\_\+\+E\+XT}} mode value. This tells Oracle to use External or OS authentication, which must be configured in the database. The {\bfseries{O\+C\+I\+\_\+\+C\+R\+E\+D\+\_\+\+E\+XT}} flag can only be used with username of \&\#x00022;/\&\#x00022; and a empty password. oci8.\+privileged\+\_\+connect may be On or Off. 
+
+{\bfseries{O\+C\+I\+\_\+\+C\+R\+E\+D\+\_\+\+E\+XT}} may be combined with the {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+O\+P\+ER}} or {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+D\+BA}} modes. 
+
+{\bfseries{O\+C\+I\+\_\+\+C\+R\+E\+D\+\_\+\+E\+XT}} is not supported on Windows for security reasons. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false \mbox{\hyperlink{class_a}{A}} connection identifier or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a4d539ba8974cfb3d70fc80a9fc19ce79}\label{oci8_8php_a4d539ba8974cfb3d70fc80a9fc19ce79}} 
+\index{oci8.php@{oci8.php}!oci\_new\_cursor@{oci\_new\_cursor}}
+\index{oci\_new\_cursor@{oci\_new\_cursor}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_new\_cursor()}{oci\_new\_cursor()}}
+{\footnotesize\ttfamily oci\+\_\+new\+\_\+cursor (\begin{DoxyParamCaption}\item[{}]{\$connection }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Allocates and returns a new cursor (statement handle) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection }} An Oracle connection identifier, returned by \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect}}\} or \{
+
+\mbox{\hyperlink{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}{oci\+\_\+pconnect}}\}. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+resource$\vert$false \mbox{\hyperlink{class_a}{A}} new statement handle, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a9043438924908090cce22df49f79a974}\label{oci8_8php_a9043438924908090cce22df49f79a974}} 
+\index{oci8.php@{oci8.php}!oci\_new\_descriptor@{oci\_new\_descriptor}}
+\index{oci\_new\_descriptor@{oci\_new\_descriptor}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_new\_descriptor()}{oci\_new\_descriptor()}}
+{\footnotesize\ttfamily oci\+\_\+new\+\_\+descriptor (\begin{DoxyParamCaption}\item[{}]{\$connection,  }\item[{}]{\$type = {\ttfamily \mbox{\hyperlink{oci8_8php_a8b6edb8a5b4bc0989edf98bf4e79679e}{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+L\+OB}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Initializes a new empty L\+OB or F\+I\+LE descriptor \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection }} An Oracle connection identifier, returned by \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect}}\} or \{
+
+\mbox{\hyperlink{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}{oci\+\_\+pconnect}}\}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$type} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Valid values for {\itshape type} are\+: {\bfseries{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+F\+I\+LE}}, {\bfseries{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+L\+OB}} and {\bfseries{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+R\+O\+W\+ID}}. 
+
+\begin{DoxyReturn}{Returns}
+O\+C\+I\+\_\+\+Lob$\vert$false \mbox{\hyperlink{class_a}{A}} new L\+OB or F\+I\+LE descriptor on success, {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_af1e1a9c3d0f5afd6c0dff7d134fd8fc9}\label{oci8_8php_af1e1a9c3d0f5afd6c0dff7d134fd8fc9}} 
+\index{oci8.php@{oci8.php}!oci\_num\_fields@{oci\_num\_fields}}
+\index{oci\_num\_fields@{oci\_num\_fields}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_num\_fields()}{oci\_num\_fields()}}
+{\footnotesize\ttfamily oci\+\_\+num\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{\$statement }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Returns the number of result columns in a statement \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }} \mbox{\hyperlink{class_a}{A}} valid O\+CI statement identifier. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false The number of columns as an integer, or {\bfseries{F\+A\+L\+SE}} on errors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_add31cad7606def8ef459e8aeb3fccfb5}\label{oci8_8php_add31cad7606def8ef459e8aeb3fccfb5}} 
+\index{oci8.php@{oci8.php}!oci\_num\_rows@{oci\_num\_rows}}
+\index{oci\_num\_rows@{oci\_num\_rows}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_num\_rows()}{oci\_num\_rows()}}
+{\footnotesize\ttfamily oci\+\_\+num\+\_\+rows (\begin{DoxyParamCaption}\item[{}]{\$statement }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Returns number of rows affected during statement execution \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }} \mbox{\hyperlink{class_a}{A}} valid O\+CI statement identifier. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false The number of rows affected as an integer, or {\bfseries{F\+A\+L\+SE}} on errors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_add430a818c3628ee70a3479ef838c7c5}\label{oci8_8php_add430a818c3628ee70a3479ef838c7c5}} 
+\index{oci8.php@{oci8.php}!oci\_parse@{oci\_parse}}
+\index{oci\_parse@{oci\_parse}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_parse()}{oci\_parse()}}
+{\footnotesize\ttfamily oci\+\_\+parse (\begin{DoxyParamCaption}\item[{}]{\$connection,  }\item[{}]{\$sql\+\_\+text }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Prepares an Oracle statement for execution \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection }} An Oracle connection identifier, returned by \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect}}\}, \{
+
+\mbox{\hyperlink{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}{oci\+\_\+pconnect}}\}, or \{
+
+\mbox{\hyperlink{oci8_8php_a9a7a91924a356cc80fa21813f94cd2d5}{oci\+\_\+new\+\_\+connect}}\}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sql\+\_\+text} & \\
+\hline
+\end{DoxyParams}
+The S\+QL or P\+L/\+S\+QL statement. 
+
+S\+QL statements should not end with a semi-\/colon (\&\#x00022;;\&\#x00022;). P\+L/\+S\+QL statements should end with a semi-\/colon (\&\#x00022;;\&\#x00022;). 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false \mbox{\hyperlink{class_a}{A}} statement handle on success, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_ad20f5a053ee3c78627294190ee337dfa}\label{oci8_8php_ad20f5a053ee3c78627294190ee337dfa}} 
+\index{oci8.php@{oci8.php}!oci\_password\_change@{oci\_password\_change}}
+\index{oci\_password\_change@{oci\_password\_change}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_password\_change()}{oci\_password\_change()}}
+{\footnotesize\ttfamily oci\+\_\+password\+\_\+change (\begin{DoxyParamCaption}\item[{}]{\$connection,  }\item[{}]{\$username,  }\item[{}]{\$old\+\_\+password,  }\item[{}]{\$new\+\_\+password }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Changes password of Oracle\textquotesingle{}s user \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection }} An Oracle connection identifier, returned by \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect}}\} or \{
+
+\mbox{\hyperlink{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}{oci\+\_\+pconnect}}\}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+\end{DoxyParams}
+The Oracle user name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$old\+\_\+password} & \\
+\hline
+\end{DoxyParams}
+The old password. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$new\+\_\+password} & \\
+\hline
+\end{DoxyParams}
+The new password to be set. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}\label{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}} 
+\index{oci8.php@{oci8.php}!oci\_pconnect@{oci\_pconnect}}
+\index{oci\_pconnect@{oci\_pconnect}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_pconnect()}{oci\_pconnect()}}
+{\footnotesize\ttfamily oci\+\_\+pconnect (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$password,  }\item[{}]{\$connection\+\_\+string = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$character\+\_\+set = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$session\+\_\+mode = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Connect to an Oracle database using a persistent connection \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$username }} The Oracle user name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+The password for {\itshape username}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+\_\+string} & \mbox{[}optional\mbox{]} Contains the Oracle instance to connect to. It can be an Easy Connect string, or a Connect Name from the tnsnames.\+ora file, or the name of a local Oracle instance. \\
+\hline
+\end{DoxyParams}
+If not specified, P\+HP uses environment variables such as {\bfseries{T\+W\+O\+\_\+\+T\+A\+SK}} (on Linux) or {\bfseries{L\+O\+C\+AL}} (on Windows) and {\bfseries{O\+R\+A\+C\+L\+E\+\_\+\+S\+ID}} to determine the Oracle instance to connect to. 
+
+To use the Easy Connect naming method, P\+HP must be linked with Oracle 10g or greater Client libraries. The Easy Connect string for Oracle 10g is of the form\+: \mbox{[}//\mbox{]}host\+\_\+name\mbox{[}\+:port\mbox{]}\mbox{[}/service\+\_\+name\mbox{]}. From Oracle 11g, the syntax is\+: \mbox{[}//\mbox{]}host\+\_\+name\mbox{[}\+:port\mbox{]}\mbox{[}/service\+\_\+name\mbox{]}\mbox{[}\+:server\+\_\+type\mbox{]}\mbox{[}/instance\+\_\+name\mbox{]}. Service names can be found by running the Oracle utility lsnrctl status on the database server machine. 
+
+The tnsnames.\+ora file can be in the Oracle Net search path, which includes \$\+O\+R\+A\+C\+L\+E\+\_\+\+H\+O\+ME/network/admin and /etc. Alternatively set T\+N\+S\+\_\+\+A\+D\+M\+IN so that \$\+T\+N\+S\+\_\+\+A\+D\+M\+IN/tnsnames.ora is read. Make sure the web daemon has read access to the file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$character\+\_\+set} & \mbox{[}optional\mbox{]} Determines the character set used by the Oracle Client libraries. The character set does not need to match the character set used by the database. If it doesn\textquotesingle{}t match, Oracle will do its best to convert data to and from the database character set. Depending on the character sets this may not give usable results. Conversion also adds some time overhead. \\
+\hline
+\end{DoxyParams}
+If not specified, the Oracle Client libraries determine a character set from the {\bfseries{N\+L\+S\+\_\+\+L\+A\+NG}} environment variable. 
+
+Passing this parameter can reduce the time taken to connect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$session\+\_\+mode} & \mbox{[}optional\mbox{]} This parameter is available since version P\+HP 5 (P\+E\+CL O\+C\+I8 1.\+1) and accepts the following values\+: {\bfseries{O\+C\+I\+\_\+\+D\+E\+F\+A\+U\+LT}}, {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+O\+P\+ER}} and {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+D\+BA}}. If either {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+O\+P\+ER}} or {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+D\+BA}} were specified, this function will try to establish privileged connection using external credentials. Privileged connections are disabled by default. To enable them you need to set oci8.\+privileged\+\_\+connect to On. \\
+\hline
+\end{DoxyParams}
+P\+HP 5.\+3 (P\+E\+CL O\+C\+I8 1.\+3.\+4) introduced the {\bfseries{O\+C\+I\+\_\+\+C\+R\+E\+D\+\_\+\+E\+XT}} mode value. This tells Oracle to use External or OS authentication, which must be configured in the database. The {\bfseries{O\+C\+I\+\_\+\+C\+R\+E\+D\+\_\+\+E\+XT}} flag can only be used with username of \&\#x00022;/\&\#x00022; and a empty password. oci8.\+privileged\+\_\+connect may be On or Off. 
+
+{\bfseries{O\+C\+I\+\_\+\+C\+R\+E\+D\+\_\+\+E\+XT}} may be combined with the {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+O\+P\+ER}} or {\bfseries{O\+C\+I\+\_\+\+S\+Y\+S\+D\+BA}} modes. 
+
+{\bfseries{O\+C\+I\+\_\+\+C\+R\+E\+D\+\_\+\+E\+XT}} is not supported on Windows for security reasons. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false \mbox{\hyperlink{class_a}{A}} connection identifier or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_abd13b3f8c2ffec998251452be0d74d42}\label{oci8_8php_abd13b3f8c2ffec998251452be0d74d42}} 
+\index{oci8.php@{oci8.php}!oci\_register\_taf\_callback@{oci\_register\_taf\_callback}}
+\index{oci\_register\_taf\_callback@{oci\_register\_taf\_callback}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_register\_taf\_callback()}{oci\_register\_taf\_callback()}}
+{\footnotesize\ttfamily oci\+\_\+register\+\_\+taf\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{\$connection,  }\item[{}]{\$callback\+Fn }\end{DoxyParamCaption})}
+
+Register a user-\/defined callback function for Oracle Database T\+AF. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection }} An Oracle connection identifier. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$callback\+Fn} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} user-\/defined callback to register for Oracle T\+AF. It can be a string of the function name or a \mbox{\hyperlink{class_closure}{Closure}} (anonymous function).~\newline
+ The interface of a T\+AF user-\/defined callback function is as follows\+:~\newline
+ {\itshape user\+Callback\+Fn ( resource \$connection , int \$event , int \$type ) \+: int}~\newline
+ See the parameter description and an example on \href{https://www.php.net/manual/en/oci8.taf.php}{\texttt{ O\+C\+I8 Transparent Application Failover (T\+AF) Support}} page. 
+
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE on success or F\+A\+L\+SE on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{oci8_8php_aae49c7c9b14cb1d3c03b29f46f29089f}\label{oci8_8php_aae49c7c9b14cb1d3c03b29f46f29089f}} 
+\index{oci8.php@{oci8.php}!oci\_result@{oci\_result}}
+\index{oci\_result@{oci\_result}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_result()}{oci\_result()}}
+{\footnotesize\ttfamily oci\+\_\+result (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$field }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Returns field\textquotesingle{}s value from the fetched row \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement  mixed \$field }} Can be either use the column number (1-\/based) or the column name. The case of the column name must be the case that Oracle meta data describes the column as, which is uppercase for columns created case insensitively. 
+
+\begin{DoxyReturn}{Returns}
+mixed everything as strings except for abstract types (R\+O\+W\+I\+Ds, L\+O\+Bs and F\+I\+L\+Es). Returns {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a107d1602edd917a08e32d7462070b110}\label{oci8_8php_a107d1602edd917a08e32d7462070b110}} 
+\index{oci8.php@{oci8.php}!oci\_rollback@{oci\_rollback}}
+\index{oci\_rollback@{oci\_rollback}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_rollback()}{oci\_rollback()}}
+{\footnotesize\ttfamily oci\+\_\+rollback (\begin{DoxyParamCaption}\item[{}]{\$connection }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Rolls back the outstanding database transaction \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection }} An Oracle connection identifier, returned by \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect}}\}, \{
+
+\mbox{\hyperlink{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}{oci\+\_\+pconnect}}\} or \{
+
+\mbox{\hyperlink{oci8_8php_a9a7a91924a356cc80fa21813f94cd2d5}{oci\+\_\+new\+\_\+connect}}\}. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a62a0e94ecb2fb8c456e4b5c0975d0a1c}\label{oci8_8php_a62a0e94ecb2fb8c456e4b5c0975d0a1c}} 
+\index{oci8.php@{oci8.php}!oci\_server\_version@{oci\_server\_version}}
+\index{oci\_server\_version@{oci\_server\_version}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_server\_version()}{oci\_server\_version()}}
+{\footnotesize\ttfamily oci\+\_\+server\+\_\+version (\begin{DoxyParamCaption}\item[{}]{\$connection }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Returns the Oracle Database version \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection  string$\vert$false The version information as a string or {\bfseries{F\+A\+L\+SE}} on error. }}\mbox{\Hypertarget{oci8_8php_acb5ea83dee60224a67ce88c100351da7}\label{oci8_8php_acb5ea83dee60224a67ce88c100351da7}} 
+\index{oci8.php@{oci8.php}!oci\_set\_action@{oci\_set\_action}}
+\index{oci\_set\_action@{oci\_set\_action}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_set\_action()}{oci\_set\_action()}}
+{\footnotesize\ttfamily oci\+\_\+set\+\_\+action (\begin{DoxyParamCaption}\item[{}]{\$connection,  }\item[{}]{\$action\+\_\+name }\end{DoxyParamCaption})}
+
+(P\+HP 5.\+3.\+2, P\+E\+CL O\+C\+I8 $>$= 1.\+4.\+0)~\newline
+ Sets the action name \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection An Oracle connection identifier, returned by \{ oci\+\_\+connect\}, \{ oci\+\_\+pconnect\}, or \{ oci\+\_\+new\+\_\+connect\}.}} 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$action\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+User chosen string up to 32 bytes long. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a837bd3f9af59eea79352152158f20ee9}\label{oci8_8php_a837bd3f9af59eea79352152158f20ee9}} 
+\index{oci8.php@{oci8.php}!oci\_set\_client\_identifier@{oci\_set\_client\_identifier}}
+\index{oci\_set\_client\_identifier@{oci\_set\_client\_identifier}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_set\_client\_identifier()}{oci\_set\_client\_identifier()}}
+{\footnotesize\ttfamily oci\+\_\+set\+\_\+client\+\_\+identifier (\begin{DoxyParamCaption}\item[{}]{\$connection,  }\item[{}]{\$client\+\_\+identifier }\end{DoxyParamCaption})}
+
+(P\+HP 5.\+3.\+2, P\+E\+CL O\+C\+I8 $>$= 1.\+4.\+0)~\newline
+ Sets the client identifier \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection An Oracle connection identifier, returned by \{ oci\+\_\+connect\}, \{ oci\+\_\+pconnect\}, or \{ oci\+\_\+new\+\_\+connect\}.}} 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$client\+\_\+identifier} & \\
+\hline
+\end{DoxyParams}
+User chosen string up to 64 bytes long. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_aba4693dbe2a7a5ae7f1a8c386b6ae9e0}\label{oci8_8php_aba4693dbe2a7a5ae7f1a8c386b6ae9e0}} 
+\index{oci8.php@{oci8.php}!oci\_set\_client\_info@{oci\_set\_client\_info}}
+\index{oci\_set\_client\_info@{oci\_set\_client\_info}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_set\_client\_info()}{oci\_set\_client\_info()}}
+{\footnotesize\ttfamily oci\+\_\+set\+\_\+client\+\_\+info (\begin{DoxyParamCaption}\item[{}]{\$connection,  }\item[{}]{\$client\+\_\+info }\end{DoxyParamCaption})}
+
+(P\+HP 5.\+3.\+2, P\+E\+CL O\+C\+I8 $>$= 1.\+4.\+0)~\newline
+ Sets the client information \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection An Oracle connection identifier, returned by \{ oci\+\_\+connect\}, \{ oci\+\_\+pconnect\}, or \{ oci\+\_\+new\+\_\+connect\}.}} 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$client\+\_\+info} & \\
+\hline
+\end{DoxyParams}
+User chosen string up to 64 bytes long. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_ae2cd293254241a6404841ea49b3fca60}\label{oci8_8php_ae2cd293254241a6404841ea49b3fca60}} 
+\index{oci8.php@{oci8.php}!oci\_set\_edition@{oci\_set\_edition}}
+\index{oci\_set\_edition@{oci\_set\_edition}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_set\_edition()}{oci\_set\_edition()}}
+{\footnotesize\ttfamily oci\+\_\+set\+\_\+edition (\begin{DoxyParamCaption}\item[{}]{\$edition }\end{DoxyParamCaption})}
+
+(P\+HP 5.\+3.\+2, P\+E\+CL O\+C\+I8 $>$= 1.\+4.\+0)~\newline
+ Sets the database edition \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$edition }} Oracle Database edition name previously created with the S\+QL \char`\"{}\+C\+R\+E\+A\+T\+E E\+D\+I\+T\+I\+O\+N\char`\"{} command. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_ab57bf25bb4f821902923afd0d33d874a}\label{oci8_8php_ab57bf25bb4f821902923afd0d33d874a}} 
+\index{oci8.php@{oci8.php}!oci\_set\_module\_name@{oci\_set\_module\_name}}
+\index{oci\_set\_module\_name@{oci\_set\_module\_name}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_set\_module\_name()}{oci\_set\_module\_name()}}
+{\footnotesize\ttfamily oci\+\_\+set\+\_\+module\+\_\+name (\begin{DoxyParamCaption}\item[{}]{\$connection,  }\item[{}]{\$module\+\_\+name }\end{DoxyParamCaption})}
+
+(P\+HP 5.\+3.\+2, P\+E\+CL O\+C\+I8 $>$= 1.\+4.\+0)~\newline
+ Sets the module name \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection An Oracle connection identifier, returned by \{ oci\+\_\+connect\}, \{ oci\+\_\+pconnect\}, or \{ oci\+\_\+new\+\_\+connect\}.}} 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$module\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+User chosen string up to 48 bytes long. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_af7dc6c30e5d0fa2ec78cb51901b31071}\label{oci8_8php_af7dc6c30e5d0fa2ec78cb51901b31071}} 
+\index{oci8.php@{oci8.php}!oci\_set\_prefetch@{oci\_set\_prefetch}}
+\index{oci\_set\_prefetch@{oci\_set\_prefetch}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_set\_prefetch()}{oci\_set\_prefetch()}}
+{\footnotesize\ttfamily oci\+\_\+set\+\_\+prefetch (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$rows }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Sets number of rows to be prefetched by queries \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement A valid O\+C\+I8 statement identifier created by \{ oci\+\_\+parse\} and executed by \{ oci\+\_\+execute\}, or a R\+EF C\+U\+R\+S\+OR statement identifier.}} 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$rows} & \\
+\hline
+\end{DoxyParams}
+The number of rows to be prefetched, $>$= 0 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_ae271ab3a28622f4eaa5b823ea5f40cb4}\label{oci8_8php_ae271ab3a28622f4eaa5b823ea5f40cb4}} 
+\index{oci8.php@{oci8.php}!oci\_statement\_type@{oci\_statement\_type}}
+\index{oci\_statement\_type@{oci\_statement\_type}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_statement\_type()}{oci\_statement\_type()}}
+{\footnotesize\ttfamily oci\+\_\+statement\+\_\+type (\begin{DoxyParamCaption}\item[{}]{\$statement }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Returns the type of a statement \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }} \mbox{\hyperlink{class_a}{A}} valid O\+C\+I8 statement identifier from \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_add430a818c3628ee70a3479ef838c7c5}{oci\+\_\+parse}}\}. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+string$\vert$false The type of {\itshape statement} as one of the following strings. \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+type 
+\end{DoxyReturn}
+
+
+Return String 
+
+Notes  
+
+A\+L\+T\+ER 
+
+B\+E\+G\+IN 
+
+C\+A\+LL 
+
+Introduced in P\+HP 5.\+2.\+1 (P\+E\+CL O\+C\+I8 1.\+2.\+3)  
+
+C\+R\+E\+A\+TE 
+
+D\+E\+C\+L\+A\+RE 
+
+D\+E\+L\+E\+TE 
+
+D\+R\+OP 
+
+I\+N\+S\+E\+RT 
+
+S\+E\+L\+E\+CT 
+
+U\+P\+D\+A\+TE 
+
+U\+N\+K\+N\+O\+WN 
+
+Returns {\bfseries{F\+A\+L\+SE}} on error. \mbox{\Hypertarget{oci8_8php_a7b1c7c40ee22a92b9bfbb6e49f619417}\label{oci8_8php_a7b1c7c40ee22a92b9bfbb6e49f619417}} 
+\index{oci8.php@{oci8.php}!oci\_unregister\_taf\_callback@{oci\_unregister\_taf\_callback}}
+\index{oci\_unregister\_taf\_callback@{oci\_unregister\_taf\_callback}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{oci\_unregister\_taf\_callback()}{oci\_unregister\_taf\_callback()}}
+{\footnotesize\ttfamily oci\+\_\+unregister\+\_\+taf\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{\$connection }\end{DoxyParamCaption})}
+
+Unregister a user-\/defined callback function for Oracle Database T\+AF. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection }} An Oracle connection identifier. 
+
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE on success or F\+A\+L\+SE on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{oci8_8php_aa5b0611185f3a1c60b78195f1998ccac}\label{oci8_8php_aa5b0611185f3a1c60b78195f1998ccac}} 
+\index{oci8.php@{oci8.php}!ocibindbyname@{ocibindbyname}}
+\index{ocibindbyname@{ocibindbyname}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocibindbyname()}{ocibindbyname()}}
+{\footnotesize\ttfamily ocibindbyname (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$column\+\_\+name,  }\item[{\&}]{\$variable,  }\item[{}]{\$maximum\+\_\+length = {\ttfamily -\/1},  }\item[{}]{\$type = {\ttfamily \mbox{\hyperlink{oci8_8php_a8e49b70c48299fc44d085c6261025a88}{S\+Q\+L\+T\+\_\+\+C\+HR}}} }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}{oci\+\_\+bind\+\_\+by\+\_\+name}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement  \$column\+\_\+name  \$variable  \$maximum\+\_\+length \mbox{[}optional\mbox{]}  \$type \mbox{[}optional\mbox{]}  bool Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a08fd4232bb722fec0ec0704523a834b9}\label{oci8_8php_a08fd4232bb722fec0ec0704523a834b9}} 
+\index{oci8.php@{oci8.php}!ocicancel@{ocicancel}}
+\index{ocicancel@{ocicancel}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicancel()}{ocicancel()}}
+{\footnotesize\ttfamily ocicancel (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_ac08f327ac13a56194e51c918a1ba2559}{oci\+\_\+cancel}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement\+\_\+resource  bool Returns T\+R\+UE on success or F\+A\+L\+SE on failure }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a0441f73039f700bd32c7d164e2689e48}\label{oci8_8php_a0441f73039f700bd32c7d164e2689e48}} 
+\index{oci8.php@{oci8.php}!ocicloselob@{ocicloselob}}
+\index{ocicloselob@{ocicloselob}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicloselob()}{ocicloselob()}}
+{\footnotesize\ttfamily ocicloselob (\begin{DoxyParamCaption}\item[{}]{\$lob\+\_\+descriptor }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+0.\+6, P\+E\+CL O\+C\+I8 1.\+0) Alias of \{\begin{DoxySeeAlso}{See also}
+O\+C\+I-\/\+Lob\+::close()\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Lob \$lob\+\_\+descriptor  bool }}Returns T\+R\+UE on success or F\+A\+L\+SE on failure.
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_af54596e5d4279db3b2e7134a7fdf2bf3}\label{oci8_8php_af54596e5d4279db3b2e7134a7fdf2bf3}} 
+\index{oci8.php@{oci8.php}!ocicollappend@{ocicollappend}}
+\index{ocicollappend@{ocicollappend}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicollappend()}{ocicollappend()}}
+{\footnotesize\ttfamily ocicollappend (\begin{DoxyParamCaption}\item[{}]{\$collection,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+0.\+6, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of (\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_o_c_i___collection_a69974c706b3c3ac7f97c4aebe9db9e85}{O\+C\+I\+\_\+\+Collection\+::append}}) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Collection \$collection  mixed \$value }}The value to be added to the collection. Can be \mbox{\hyperlink{interfacea}{a}} string or \mbox{\hyperlink{interfacea}{a}} number.
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure.\mbox{\Hypertarget{oci8_8php_a6ea60be86bdee58741f6fca7b10926f5}\label{oci8_8php_a6ea60be86bdee58741f6fca7b10926f5}} 
+\index{oci8.php@{oci8.php}!ocicollassign@{ocicollassign}}
+\index{ocicollassign@{ocicollassign}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicollassign()}{ocicollassign()}}
+{\footnotesize\ttfamily ocicollassign (\begin{DoxyParamCaption}\item[{}]{\$to,  }\item[{}]{\$from }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+0.\+6, P\+E\+CL O\+C\+I8 1.\+0) Alias of \{\begin{DoxySeeAlso}{See also}
+O\+C\+I-\/\+Collection\+::assign()\} Assigns \mbox{\hyperlink{interfacea}{a}} value to the collection from another existing collection \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Collection \$to  O\+C\+I\+\_\+\+Collection \$from An instance of O\+C\+I-\/\+Collection.  bool }}Returns T\+R\+UE on success or F\+A\+L\+SE on failure.
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_aa94580000360835d7b86303984efe846}\label{oci8_8php_aa94580000360835d7b86303984efe846}} 
+\index{oci8.php@{oci8.php}!ocicollassignelem@{ocicollassignelem}}
+\index{ocicollassignelem@{ocicollassignelem}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicollassignelem()}{ocicollassignelem()}}
+{\footnotesize\ttfamily ocicollassignelem (\begin{DoxyParamCaption}\item[{}]{\$collection,  }\item[{}]{\$index,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+0.\+6, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+O\+C\+I\+\_\+\+Collection\+::assign\+Elem\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Collection \$collection  \$index }}The element index. First index is 0.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em \$value} & \\
+\hline
+\end{DoxyParams}
+Can be a string or a number.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+Returns T\+R\+UE on success or F\+A\+L\+SE on failure.\mbox{\Hypertarget{oci8_8php_a0a85f5873c0ef4b3799490fb6febf736}\label{oci8_8php_a0a85f5873c0ef4b3799490fb6febf736}} 
+\index{oci8.php@{oci8.php}!ocicollgetelem@{ocicollgetelem}}
+\index{ocicollgetelem@{ocicollgetelem}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicollgetelem()}{ocicollgetelem()}}
+{\footnotesize\ttfamily ocicollgetelem (\begin{DoxyParamCaption}\item[{}]{\$collection,  }\item[{}]{\$index }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+0.\+6, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+O\+C\+I\+\_\+\+C\+O\+L\+Lection\+::get\+Elem\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Collection \$collection  int \$index }}The element index. First index is 0.
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+Returns {\bfseries{F\+A\+L\+SE}} if such element doesn\textquotesingle{}t exist; {\bfseries{N\+U\+LL}} if element is {\bfseries{N\+U\+LL}}; string if element is column of a string datatype or number if element is numeric field. \mbox{\Hypertarget{oci8_8php_a4e3e0e8bfd26869c1fa42c3928188107}\label{oci8_8php_a4e3e0e8bfd26869c1fa42c3928188107}} 
+\index{oci8.php@{oci8.php}!ocicollmax@{ocicollmax}}
+\index{ocicollmax@{ocicollmax}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicollmax()}{ocicollmax()}}
+{\footnotesize\ttfamily ocicollmax (\begin{DoxyParamCaption}\item[{}]{\$collection }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+0.\+6, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+O\+C\+I\+\_\+\+C\+O\+L\+Lection\+::max\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Collection \$collection  int$\vert$false }} Returns the maximum number as an integer, or {\bfseries{F\+A\+L\+SE}} on errors. If the returned value is 0, then the number of elements is not limited. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a74bf2a6c7a1a704300af96c68b33f91d}\label{oci8_8php_a74bf2a6c7a1a704300af96c68b33f91d}} 
+\index{oci8.php@{oci8.php}!ocicollsize@{ocicollsize}}
+\index{ocicollsize@{ocicollsize}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicollsize()}{ocicollsize()}}
+{\footnotesize\ttfamily ocicollsize (\begin{DoxyParamCaption}\item[{}]{\$collection }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+0.\+6, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+O\+C\+I\+\_\+\+C\+O\+L\+Lection\+::size\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Collection \$collection  int$\vert$false }}Returns the number of elements in the collection or {\bfseries{F\+A\+L\+SE}} on error.
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a2b3284377c1ea120058b842be3d2f39e}\label{oci8_8php_a2b3284377c1ea120058b842be3d2f39e}} 
+\index{oci8.php@{oci8.php}!ocicolltrim@{ocicolltrim}}
+\index{ocicolltrim@{ocicolltrim}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicolltrim()}{ocicolltrim()}}
+{\footnotesize\ttfamily ocicolltrim (\begin{DoxyParamCaption}\item[{}]{\$collection,  }\item[{}]{\$number }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+0.\+6, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_o_c_i___collection_a1af99a7154de3b0f77c47ffbcd4752fb}{O\+C\+I\+\_\+\+Collection\+::trim}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Collection \$collection  int$\vert$float \$number  bool Returns {\bfseries{T\+R\+UE}} or {\bfseries{F\+A\+L\+SE}} on failure. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a394e2faaf2b4f16d0e61e630055e918a}\label{oci8_8php_a394e2faaf2b4f16d0e61e630055e918a}} 
+\index{oci8.php@{oci8.php}!ocicolumnisnull@{ocicolumnisnull}}
+\index{ocicolumnisnull@{ocicolumnisnull}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicolumnisnull()}{ocicolumnisnull()}}
+{\footnotesize\ttfamily ocicolumnisnull (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$column\+\_\+number\+\_\+or\+\_\+name }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_ae837d45b6ae2f9469a156bd5e09e4e39}{oci\+\_\+field\+\_\+is\+\_\+null}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement  mixed \$column\+\_\+number\+\_\+or\+\_\+name  bool Returns T\+R\+UE if field is N\+U\+LL, F\+A\+L\+SE otherwise. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_ac870c4eba01b8deb921103e4f0ab7364}\label{oci8_8php_ac870c4eba01b8deb921103e4f0ab7364}} 
+\index{oci8.php@{oci8.php}!ocicolumnname@{ocicolumnname}}
+\index{ocicolumnname@{ocicolumnname}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicolumnname()}{ocicolumnname()}}
+{\footnotesize\ttfamily ocicolumnname (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$column\+\_\+number }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a1c301eb31fd6f61d8e0b04f027a35e1c}{oci\+\_\+field\+\_\+name}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement  mixed \$column\+\_\+number  string$\vert$false Returns the name as a string, or F\+A\+L\+SE on errors. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a526f89f7cf97f4f77fd095e0062fd302}\label{oci8_8php_a526f89f7cf97f4f77fd095e0062fd302}} 
+\index{oci8.php@{oci8.php}!ocicolumnprecision@{ocicolumnprecision}}
+\index{ocicolumnprecision@{ocicolumnprecision}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicolumnprecision()}{ocicolumnprecision()}}
+{\footnotesize\ttfamily ocicolumnprecision (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource,  }\item[{}]{\$column\+\_\+number }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a30cb427c0f6409a1a4cd84332b362d22}{oci\+\_\+field\+\_\+precision}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement\+\_\+resource  string$\vert$int \$column\+\_\+number  int$\vert$false Returns the precision as an integer, or {\bfseries{F\+A\+L\+SE}} on errors. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a5dd2a53bee6b357baedecf441081033e}\label{oci8_8php_a5dd2a53bee6b357baedecf441081033e}} 
+\index{oci8.php@{oci8.php}!ocicolumnscale@{ocicolumnscale}}
+\index{ocicolumnscale@{ocicolumnscale}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicolumnscale()}{ocicolumnscale()}}
+{\footnotesize\ttfamily ocicolumnscale (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource,  }\item[{}]{\$column\+\_\+number }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a425b5686c1c939ef7d91931b3a93b9a8}{oci\+\_\+field\+\_\+scale}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement\+\_\+resource  \$column\+\_\+number  int$\vert$false Returns the scale as an integer, or {\bfseries{F\+A\+L\+SE}} on errors. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a2024f63c92747398be3475d1f3093da4}\label{oci8_8php_a2024f63c92747398be3475d1f3093da4}} 
+\index{oci8.php@{oci8.php}!ocicolumnsize@{ocicolumnsize}}
+\index{ocicolumnsize@{ocicolumnsize}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicolumnsize()}{ocicolumnsize()}}
+{\footnotesize\ttfamily ocicolumnsize (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$column\+\_\+number\+\_\+or\+\_\+name }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a546e9a2ab970bcd56fb8361817262137}{oci\+\_\+field\+\_\+size}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement  mixed \$column\+\_\+number\+\_\+or\+\_\+name  int$\vert$false Returns the size of a field in bytes, or {\bfseries{F\+A\+L\+SE}} on errors. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a837fef446f62fa3e5c16f9cfa8b76005}\label{oci8_8php_a837fef446f62fa3e5c16f9cfa8b76005}} 
+\index{oci8.php@{oci8.php}!ocicolumntype@{ocicolumntype}}
+\index{ocicolumntype@{ocicolumntype}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicolumntype()}{ocicolumntype()}}
+{\footnotesize\ttfamily ocicolumntype (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource,  }\item[{}]{\$column\+\_\+number }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a53242061930c42f21cf503fbd8b50a4f}{oci\+\_\+field\+\_\+type}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement\+\_\+resource  string$\vert$int \$column\+\_\+number  mixed$\vert$false Returns the field data type as a string, or F\+A\+L\+SE on errors. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a786c29a3e72dbad788c85a8a7d18be87}\label{oci8_8php_a786c29a3e72dbad788c85a8a7d18be87}} 
+\index{oci8.php@{oci8.php}!ocicolumntyperaw@{ocicolumntyperaw}}
+\index{ocicolumntyperaw@{ocicolumntyperaw}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicolumntyperaw()}{ocicolumntyperaw()}}
+{\footnotesize\ttfamily ocicolumntyperaw (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource,  }\item[{}]{\$column\+\_\+number }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_aa9828d6b25350860a98d8d7689b6f554}{oci\+\_\+field\+\_\+type\+\_\+raw}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement\+\_\+resource  string$\vert$int \$column\+\_\+number  int$\vert$false Returns Oracle\textquotesingle{}s raw data type as a number, or F\+A\+L\+SE on errors. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_af772b55915a2d7c56c1b12bdfc0dcc60}\label{oci8_8php_af772b55915a2d7c56c1b12bdfc0dcc60}} 
+\index{oci8.php@{oci8.php}!ocicommit@{ocicommit}}
+\index{ocicommit@{ocicommit}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocicommit()}{ocicommit()}}
+{\footnotesize\ttfamily ocicommit (\begin{DoxyParamCaption}\item[{}]{\$connection\+\_\+resource }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_ada2d2982ccfb7879b268149bd7b2d0e7}{oci\+\_\+commit}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$connection\+\_\+resource }} An Oracle connection identifier, returned by \{
+
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect()}}\}, \{
+
+\mbox{\hyperlink{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}{oci\+\_\+pconnect()}}\}, or \{
+
+\mbox{\hyperlink{oci8_8php_a9a7a91924a356cc80fa21813f94cd2d5}{oci\+\_\+new\+\_\+connect()}}\}. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure.\mbox{\Hypertarget{oci8_8php_a7d75043a6b3ccf38931a1f53ba8691da}\label{oci8_8php_a7d75043a6b3ccf38931a1f53ba8691da}} 
+\index{oci8.php@{oci8.php}!ocidefinebyname@{ocidefinebyname}}
+\index{ocidefinebyname@{ocidefinebyname}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocidefinebyname()}{ocidefinebyname()}}
+{\footnotesize\ttfamily ocidefinebyname (\begin{DoxyParamCaption}\item[{}]{\$statement,  }\item[{}]{\$column\+\_\+name,  }\item[{\&}]{\$variable,  }\item[{}]{\$type = {\ttfamily \mbox{\hyperlink{oci8_8php_a8e49b70c48299fc44d085c6261025a88}{S\+Q\+L\+T\+\_\+\+C\+HR}}} }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_af96e991a2644c20138bb21c5c99cba49}{oci\+\_\+define\+\_\+by\+\_\+name}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement }}\mbox{\hyperlink{class_a}{A}} valid O\+C\+I8 statement identifier created by \{
+
+\mbox{\hyperlink{oci8_8php_add430a818c3628ee70a3479ef838c7c5}{oci\+\_\+parse()}}\} and executed by \{
+
+\mbox{\hyperlink{oci8_8php_a6903a3e99b93b3a9142edf53e2c36513}{oci\+\_\+execute()}}\}, or \mbox{\hyperlink{interfacea}{a}} R\+EF C\+U\+R\+S\+OR statement identifier.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+The column name used in the query. Use uppercase for Oracle\textquotesingle{}s default, non-\/case sensitive column names. Use the exact column name case for case-\/sensitive column names.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$variable} & \\
+\hline
+\end{DoxyParams}
+The P\+HP variable that will contain the returned column value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$type} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The data type to be returned. Generally not needed. Note that Oracle-\/style data conversions are not performed. For example, S\+Q\+L\+T\+\_\+\+I\+NT will be ignored and the returned data type will still be S\+Q\+L\+T\+\_\+\+C\+HR. You can optionally use \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9043438924908090cce22df49f79a974}{oci\+\_\+new\+\_\+descriptor()}}\} to allocate L\+O\+B/\+R\+O\+W\+I\+D/\+B\+F\+I\+LE descriptors.
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+bool Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_a0e72bcc75992d44ce7da3dd6e0544d72}\label{oci8_8php_a0e72bcc75992d44ce7da3dd6e0544d72}} 
+\index{oci8.php@{oci8.php}!ocierror@{ocierror}}
+\index{ocierror@{ocierror}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocierror()}{ocierror()}}
+{\footnotesize\ttfamily ocierror (\begin{DoxyParamCaption}\item[{}]{\$connection\+\_\+or\+\_\+statement\+\_\+resource }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a49c7d8f00a42735d6c51f7b93ca46b96}{oci\+\_\+error}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection\+\_\+or\+\_\+statement\+\_\+resource \mbox{[}optional\mbox{]} For most errors, resource is the resource handle that was passed to the failing function call. For connection errors with oci\+\_\+connect(), oci\+\_\+new\+\_\+connect() or oci\+\_\+pconnect() do not pass resource.  array$\vert$false If no error is found, oci\+\_\+error() returns F\+A\+L\+SE. Otherwise, oci\+\_\+error() returns the error information as an associative array. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_ae0270cec4adb740937fd7ad3c6149672}\label{oci8_8php_ae0270cec4adb740937fd7ad3c6149672}} 
+\index{oci8.php@{oci8.php}!ociexecute@{ociexecute}}
+\index{ociexecute@{ociexecute}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ociexecute()}{ociexecute()}}
+{\footnotesize\ttfamily ociexecute (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{oci8_8php_a04375f75e51f187b06a9fd129708118a}{O\+C\+I\+\_\+\+C\+O\+M\+M\+I\+T\+\_\+\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS}}} }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a6903a3e99b93b3a9142edf53e2c36513}{oci\+\_\+execute}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$statement\+\_\+resource  \$mode \mbox{[}optional\mbox{]}  bool Returns T\+R\+UE on success or F\+A\+L\+SE on failure }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a8554dc0677c867cba60555f1f48a4ab3}\label{oci8_8php_a8554dc0677c867cba60555f1f48a4ab3}} 
+\index{oci8.php@{oci8.php}!ocifetch@{ocifetch}}
+\index{ocifetch@{ocifetch}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocifetch()}{ocifetch()}}
+{\footnotesize\ttfamily ocifetch (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_ab069f2f2bc9d35eb4031ea1109c96a0e}{oci\+\_\+fetch}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement\+\_\+resource  bool Returns T\+R\+UE on success or F\+A\+L\+SE if there are no more rows in the statement. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_ab0c04999061802889ec539f534a78f27}\label{oci8_8php_ab0c04999061802889ec539f534a78f27}} 
+\index{oci8.php@{oci8.php}!ocifetchinto@{ocifetchinto}}
+\index{ocifetchinto@{ocifetchinto}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocifetchinto()}{ocifetchinto()}}
+{\footnotesize\ttfamily ocifetchinto (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource,  }\item[{\&}]{\$result,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Obsolete variant of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_ae3641f58cc05c8320463b30fadd6edcb}{oci\+\_\+fetch\+\_\+array}}\}, \{
+
+\mbox{\hyperlink{oci8_8php_a8fcea9cb2c5d5d2343c69452ad77abd6}{oci\+\_\+fetch\+\_\+object}}\}, \{
+
+\mbox{\hyperlink{oci8_8php_a21852c9b8cc607a1695d8e222a6c6da5}{oci\+\_\+fetch\+\_\+assoc}}\} and \{
+
+\mbox{\hyperlink{oci8_8php_a9c0a6225da2080e26871a6eeee4f4747}{oci\+\_\+fetch\+\_\+row}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement\+\_\+resource  array \&\$result  int \$mode \mbox{[}optional\mbox{]}  int$\vert$bool }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_aa5a458547000bb9c4db943f11a334bb3}\label{oci8_8php_aa5a458547000bb9c4db943f11a334bb3}} 
+\index{oci8.php@{oci8.php}!ocifetchstatement@{ocifetchstatement}}
+\index{ocifetchstatement@{ocifetchstatement}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocifetchstatement()}{ocifetchstatement()}}
+{\footnotesize\ttfamily ocifetchstatement (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource,  }\item[{\&}]{\$output,  }\item[{}]{\$skip,  }\item[{}]{\$maximum\+\_\+rows,  }\item[{}]{\$flags }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9ad0594abe383aebbc6b81f53989c60d}{oci\+\_\+fetch\+\_\+all}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$statement\+\_\+resource  \$output  \$skip \mbox{[}optional\mbox{]}  \$maximum\+\_\+rows \mbox{[}optional\mbox{]}  \$flags \mbox{[}optional\mbox{]}  int$\vert$false Returns the number of rows in output, which may be 0 or more, or F\+A\+L\+SE on failure. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a4ff053820ebe5c6b82fc4feac7bf879c}\label{oci8_8php_a4ff053820ebe5c6b82fc4feac7bf879c}} 
+\index{oci8.php@{oci8.php}!ocifreecollection@{ocifreecollection}}
+\index{ocifreecollection@{ocifreecollection}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocifreecollection()}{ocifreecollection()}}
+{\footnotesize\ttfamily ocifreecollection (\begin{DoxyParamCaption}\item[{}]{\$collection }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+0.\+7, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_o_c_i___collection_a5ad8044ee4b8a2c8bdb8b5c3dc786424}{O\+C\+I\+\_\+\+Collection\+::free}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Collection \$collection  bool Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a659148536b1b36720ad846ba639d025c}\label{oci8_8php_a659148536b1b36720ad846ba639d025c}} 
+\index{oci8.php@{oci8.php}!ocifreecursor@{ocifreecursor}}
+\index{ocifreecursor@{ocifreecursor}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocifreecursor()}{ocifreecursor()}}
+{\footnotesize\ttfamily ocifreecursor (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a15e435317899ee3062c679d7d6093939}{oci\+\_\+free\+\_\+statement}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement\+\_\+resource  bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_af5e7d216cb03e88734dd399e05ec5698}\label{oci8_8php_af5e7d216cb03e88734dd399e05ec5698}} 
+\index{oci8.php@{oci8.php}!ocifreedesc@{ocifreedesc}}
+\index{ocifreedesc@{ocifreedesc}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocifreedesc()}{ocifreedesc()}}
+{\footnotesize\ttfamily ocifreedesc (\begin{DoxyParamCaption}\item[{}]{\$lob\+\_\+descriptor }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+O\+C\+I-\/\+Lob\+::free\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$lob\+\_\+descriptor  bool }}Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure.
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_af7cdbdb5e75e11c601e48af93e480c92}\label{oci8_8php_af7cdbdb5e75e11c601e48af93e480c92}} 
+\index{oci8.php@{oci8.php}!ocifreestatement@{ocifreestatement}}
+\index{ocifreestatement@{ocifreestatement}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocifreestatement()}{ocifreestatement()}}
+{\footnotesize\ttfamily ocifreestatement (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a15e435317899ee3062c679d7d6093939}{oci\+\_\+free\+\_\+statement}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement\+\_\+resource  bool Returns T\+R\+UE on success or F\+A\+L\+SE on failure. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_aa2e4b9721d3188c84be9f0d6ce104d87}\label{oci8_8php_aa2e4b9721d3188c84be9f0d6ce104d87}} 
+\index{oci8.php@{oci8.php}!ociinternaldebug@{ociinternaldebug}}
+\index{ociinternaldebug@{ociinternaldebug}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ociinternaldebug()}{ociinternaldebug()}}
+{\footnotesize\ttfamily ociinternaldebug (\begin{DoxyParamCaption}\item[{}]{\$mode }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a7c05be48610bc8a7780805c29071cc04}{oci\+\_\+internal\+\_\+debug}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{bool \$mode }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a82d73fe4f83adeb801e8ebdac6caf0b1}\label{oci8_8php_a82d73fe4f83adeb801e8ebdac6caf0b1}} 
+\index{oci8.php@{oci8.php}!ociloadlob@{ociloadlob}}
+\index{ociloadlob@{ociloadlob}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ociloadlob()}{ociloadlob()}}
+{\footnotesize\ttfamily ociloadlob (\begin{DoxyParamCaption}\item[{}]{\$lob\+\_\+descriptor }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_o_c_i___lob_a4dcaa8f72c8423d4de25a9e87fa6f3e4}{O\+C\+I\+\_\+\+Lob\+::load}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Lob \$lob\+\_\+descriptor  string$\vert$false }}Returns the contents of the object, or {\bfseries{F\+A\+L\+SE}} on errors.
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a40ee2cdca3874081e038bfa63af4593e}\label{oci8_8php_a40ee2cdca3874081e038bfa63af4593e}} 
+\index{oci8.php@{oci8.php}!ocilogoff@{ocilogoff}}
+\index{ocilogoff@{ocilogoff}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocilogoff()}{ocilogoff()}}
+{\footnotesize\ttfamily ocilogoff (\begin{DoxyParamCaption}\item[{}]{\$connection\+\_\+resource }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_ad4b903dfc7c2bb30942941b30579d0c4}{oci\+\_\+close}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection\+\_\+resource  bool Returns T\+R\+UE on success or F\+A\+L\+SE on failure. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a984c1a30f8f30caf21c575c7603f83d5}\label{oci8_8php_a984c1a30f8f30caf21c575c7603f83d5}} 
+\index{oci8.php@{oci8.php}!ocilogon@{ocilogon}}
+\index{ocilogon@{ocilogon}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocilogon()}{ocilogon()}}
+{\footnotesize\ttfamily ocilogon (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$password,  }\item[{}]{\$connection\+\_\+string,  }\item[{}]{\$character\+\_\+set,  }\item[{}]{\$session\+\_\+mode }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$username  string \$password  string \$connection\+\_\+string\mbox{[}optional\mbox{]}  string \$character\+\_\+set\mbox{[}optional\mbox{]}  int \$session\+\_\+mode\mbox{[}optional\mbox{]}  resource$\vert$false Returns a connection identifier or F\+A\+L\+SE on error. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a095c8c1946e0ef36fa37c693b160e092}\label{oci8_8php_a095c8c1946e0ef36fa37c693b160e092}} 
+\index{oci8.php@{oci8.php}!ocinewcollection@{ocinewcollection}}
+\index{ocinewcollection@{ocinewcollection}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocinewcollection()}{ocinewcollection()}}
+{\footnotesize\ttfamily ocinewcollection (\begin{DoxyParamCaption}\item[{}]{\$connection\+\_\+resource,  }\item[{}]{\$tdo,  }\item[{}]{\$schema = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+0.\+6, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a358402ca9d071a2ad79502b7e0e60328}{oci\+\_\+new\+\_\+collection}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$connection\+\_\+resource }} An Oracle connection identifier, returned by \{
+
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect()}}\} or \{
+
+\mbox{\hyperlink{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}{oci\+\_\+pconnect()}}\}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em \$tdo} & \\
+\hline
+\end{DoxyParams}
+Should be a valid named type (uppercase).
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$schema} & \\
+\hline
+\end{DoxyParams}
+Should point to the scheme, where the named type was created. The name of the current user is the default value.
+
+\begin{DoxyReturn}{Returns}
+O\+C\+I\+\_\+\+Collection$\vert$false 
+\end{DoxyReturn}
+Returns a new \mbox{\hyperlink{class_o_c_i___collection}{O\+C\+I\+\_\+\+Collection}} object or F\+A\+L\+SE on error.\mbox{\Hypertarget{oci8_8php_a68286d4aaa73d81494766549b552700d}\label{oci8_8php_a68286d4aaa73d81494766549b552700d}} 
+\index{oci8.php@{oci8.php}!ocinewcursor@{ocinewcursor}}
+\index{ocinewcursor@{ocinewcursor}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocinewcursor()}{ocinewcursor()}}
+{\footnotesize\ttfamily ocinewcursor (\begin{DoxyParamCaption}\item[{}]{\$connection\+\_\+resource }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a4d539ba8974cfb3d70fc80a9fc19ce79}{oci\+\_\+new\+\_\+cursor}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection\+\_\+resource  resource$\vert$false Returns a new statement handle, or F\+A\+L\+SE on error. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a9e8514256eb1af5d66a75f4b70302f43}\label{oci8_8php_a9e8514256eb1af5d66a75f4b70302f43}} 
+\index{oci8.php@{oci8.php}!ocinewdescriptor@{ocinewdescriptor}}
+\index{ocinewdescriptor@{ocinewdescriptor}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocinewdescriptor()}{ocinewdescriptor()}}
+{\footnotesize\ttfamily ocinewdescriptor (\begin{DoxyParamCaption}\item[{}]{\$connection\+\_\+resource,  }\item[{}]{\$type = {\ttfamily \mbox{\hyperlink{oci8_8php_a8b6edb8a5b4bc0989edf98bf4e79679e}{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+L\+OB}}} }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9043438924908090cce22df49f79a974}{oci\+\_\+new\+\_\+descriptor}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection\+\_\+resource }} An Oracle connection identifier, returned by \{
+
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect()}}\} or \{
+
+\mbox{\hyperlink{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}{oci\+\_\+pconnect()}}\}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em \$type} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Valid values for type are\+: {\bfseries{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+F\+I\+LE}}, {\bfseries{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+L\+OB}} and {\bfseries{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+R\+O\+W\+ID}}.
+
+\begin{DoxyReturn}{Returns}
+O\+C\+I\+\_\+\+L\+O\+B$\vert$false Returns a new L\+OB or F\+I\+LE descriptor on success, F\+A\+L\+SE on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_af93d4c3ec47b7891dff2b03038c32c37}\label{oci8_8php_af93d4c3ec47b7891dff2b03038c32c37}} 
+\index{oci8.php@{oci8.php}!ocinlogon@{ocinlogon}}
+\index{ocinlogon@{ocinlogon}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocinlogon()}{ocinlogon()}}
+{\footnotesize\ttfamily ocinlogon (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$password,  }\item[{}]{\$connection\+\_\+string,  }\item[{}]{\$character\+\_\+set,  }\item[{}]{\$session\+\_\+mode }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9a7a91924a356cc80fa21813f94cd2d5}{oci\+\_\+new\+\_\+connect}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$username  \$password  \$connection\+\_\+string \mbox{[}optional\mbox{]}  \$character\+\_\+set \mbox{[}optional\mbox{]}  \$session\+\_\+mode \mbox{[}optional\mbox{]}  resource$\vert$false }}Returns \mbox{\hyperlink{interfacea}{a}} connection identifier or {\bfseries{F\+A\+L\+SE}} on error.
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_aa74ba3f6795b2618026d8bf4a43294a1}\label{oci8_8php_aa74ba3f6795b2618026d8bf4a43294a1}} 
+\index{oci8.php@{oci8.php}!ocinumcols@{ocinumcols}}
+\index{ocinumcols@{ocinumcols}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocinumcols()}{ocinumcols()}}
+{\footnotesize\ttfamily ocinumcols (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_af1e1a9c3d0f5afd6c0dff7d134fd8fc9}{oci\+\_\+num\+\_\+fields}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement\+\_\+resource  int$\vert$false Returns the number of columns as an integer, or F\+A\+L\+SE on errors. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_afa6b898a07c4c4b920687659fa02337a}\label{oci8_8php_afa6b898a07c4c4b920687659fa02337a}} 
+\index{oci8.php@{oci8.php}!ociparse@{ociparse}}
+\index{ociparse@{ociparse}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ociparse()}{ociparse()}}
+{\footnotesize\ttfamily ociparse (\begin{DoxyParamCaption}\item[{}]{\$connection\+\_\+resource,  }\item[{}]{\$sql\+\_\+text }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_add430a818c3628ee70a3479ef838c7c5}{oci\+\_\+parse}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection\+\_\+resource  string \$sql\+\_\+text  resource$\vert$false Returns a statement handle on success, or F\+A\+L\+SE on error. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a244cca936170509551b300c654bdb2ac}\label{oci8_8php_a244cca936170509551b300c654bdb2ac}} 
+\index{oci8.php@{oci8.php}!ocipasswordchange@{ocipasswordchange}}
+\index{ocipasswordchange@{ocipasswordchange}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocipasswordchange()}{ocipasswordchange()}}
+{\footnotesize\ttfamily ocipasswordchange (\begin{DoxyParamCaption}\item[{}]{\$connection\+\_\+resource\+\_\+or\+\_\+connection\+\_\+string\+\_\+or\+\_\+dbname,  }\item[{}]{\$username,  }\item[{}]{\$old\+\_\+password,  }\item[{}]{\$new\+\_\+password }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+1.\+0)~\newline
+ Changes password of Oracle\textquotesingle{}s user 
+\begin{DoxyParams}[1]{Parameters}
+resource | string & {\em \$connection\+\_\+resource\+\_\+or\+\_\+connection\+\_\+string\+\_\+or\+\_\+dbname} & \\
+\hline
+\end{DoxyParams}
+An Oracle connection identifier, returned by \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect()}}\} or \{
+
+\mbox{\hyperlink{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}{oci\+\_\+pconnect()}}\}.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+\end{DoxyParams}
+The Oracle user name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$old\+\_\+password} & \\
+\hline
+\end{DoxyParams}
+The new password to be set.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$new\+\_\+password} & \\
+\hline
+\end{DoxyParams}
+The new password to be set.
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$bool 
+\end{DoxyReturn}
+Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure or {\bfseries{resource}}, depending on the function parameters.\mbox{\Hypertarget{oci8_8php_a675e2b3aa72153ffe56bcff8279505a7}\label{oci8_8php_a675e2b3aa72153ffe56bcff8279505a7}} 
+\index{oci8.php@{oci8.php}!ociplogon@{ociplogon}}
+\index{ociplogon@{ociplogon}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ociplogon()}{ociplogon()}}
+{\footnotesize\ttfamily ociplogon (\begin{DoxyParamCaption}\item[{}]{\$username,  }\item[{}]{\$password,  }\item[{}]{\$connection\+\_\+string,  }\item[{}]{\$character\+\_\+set,  }\item[{}]{\$session\+\_\+mode }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_ad2775c6aaa0508571fff8d6b065284d9}{oci\+\_\+pconnect}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$username }}The Oracle user name.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+The password for username
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$connection\+\_\+string} & \mbox{[}optional\mbox{]} \\
+\hline
+{\em \$character\+\_\+set} & \mbox{[}optional\mbox{]} \\
+\hline
+{\em \$session\+\_\+mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource$\vert$false 
+\end{DoxyReturn}
+Returns a connection identifier or {\bfseries{F\+A\+L\+SE}} on error.\mbox{\Hypertarget{oci8_8php_a400f4f104c4f447fa6796b2613692f5d}\label{oci8_8php_a400f4f104c4f447fa6796b2613692f5d}} 
+\index{oci8.php@{oci8.php}!ociresult@{ociresult}}
+\index{ociresult@{ociresult}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ociresult()}{ociresult()}}
+{\footnotesize\ttfamily ociresult (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource,  }\item[{}]{\$column\+\_\+number\+\_\+or\+\_\+name }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_aae49c7c9b14cb1d3c03b29f46f29089f}{oci\+\_\+result}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement\+\_\+resource  \$column\+\_\+number\+\_\+or\+\_\+name  false$\vert$mixed Returns everything as strings except for abstract types (R\+O\+W\+I\+Ds, L\+O\+Bs and F\+I\+L\+Es). Returns F\+A\+L\+SE on error. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a33cab798da80179e849408e6dc14de1b}\label{oci8_8php_a33cab798da80179e849408e6dc14de1b}} 
+\index{oci8.php@{oci8.php}!ocirollback@{ocirollback}}
+\index{ocirollback@{ocirollback}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocirollback()}{ocirollback()}}
+{\footnotesize\ttfamily ocirollback (\begin{DoxyParamCaption}\item[{}]{\$connection\+\_\+resource }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a107d1602edd917a08e32d7462070b110}{oci\+\_\+rollback}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$connection\+\_\+resource  bool }}Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure.
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_ab0f5f9b7166ec0687221434249070c7c}\label{oci8_8php_ab0f5f9b7166ec0687221434249070c7c}} 
+\index{oci8.php@{oci8.php}!ocirowcount@{ocirowcount}}
+\index{ocirowcount@{ocirowcount}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocirowcount()}{ocirowcount()}}
+{\footnotesize\ttfamily ocirowcount (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_add31cad7606def8ef459e8aeb3fccfb5}{oci\+\_\+num\+\_\+rows}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement\+\_\+resource  int$\vert$false Returns the number of rows affected as an integer, or F\+A\+L\+SE on errors. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_ad55bab77c91b0f97a4cf8d55bc325b5f}\label{oci8_8php_ad55bab77c91b0f97a4cf8d55bc325b5f}} 
+\index{oci8.php@{oci8.php}!ocisavelob@{ocisavelob}}
+\index{ocisavelob@{ocisavelob}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocisavelob()}{ocisavelob()}}
+{\footnotesize\ttfamily ocisavelob (\begin{DoxyParamCaption}\item[{}]{\$lob\+\_\+descriptor,  }\item[{}]{\$data,  }\item[{}]{\$offset }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+O\+C\+I-\/\+Lob\+::save\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Lob \$lob\+\_\+descriptor  string \$data  int \$offset \mbox{[}optional\mbox{]}  bool }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a64cd468f69e4c346589ac7743dc36490}\label{oci8_8php_a64cd468f69e4c346589ac7743dc36490}} 
+\index{oci8.php@{oci8.php}!ocisavelobfile@{ocisavelobfile}}
+\index{ocisavelobfile@{ocisavelobfile}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocisavelobfile()}{ocisavelobfile()}}
+{\footnotesize\ttfamily ocisavelobfile (\begin{DoxyParamCaption}\item[{}]{\$lob\+\_\+descriptor,  }\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_o_c_i___lob_ade090be1f1c4e06544f1b29bd9e67bde}{O\+C\+I\+\_\+\+Lob\+::import}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Lob \$lob\+\_\+descriptor  string \$filename  bool }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a549dc352fedf6fdbbdd1042426a9d2b8}\label{oci8_8php_a549dc352fedf6fdbbdd1042426a9d2b8}} 
+\index{oci8.php@{oci8.php}!ociserverversion@{ociserverversion}}
+\index{ociserverversion@{ociserverversion}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ociserverversion()}{ociserverversion()}}
+{\footnotesize\ttfamily ociserverversion (\begin{DoxyParamCaption}\item[{}]{\$connection\+\_\+resource }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a62a0e94ecb2fb8c456e4b5c0975d0a1c}{oci\+\_\+server\+\_\+version}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$connection\+\_\+resource  string$\vert$false Returns the version information as a string or F\+A\+L\+SE on error. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a8e81275c9384b2bb77ba3090ee569010}\label{oci8_8php_a8e81275c9384b2bb77ba3090ee569010}} 
+\index{oci8.php@{oci8.php}!ocisetprefetch@{ocisetprefetch}}
+\index{ocisetprefetch@{ocisetprefetch}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocisetprefetch()}{ocisetprefetch()}}
+{\footnotesize\ttfamily ocisetprefetch (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource,  }\item[{}]{\$number\+\_\+of\+\_\+rows }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_af7dc6c30e5d0fa2ec78cb51901b31071}{oci\+\_\+set\+\_\+prefetch}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement\+\_\+resource }}\mbox{\hyperlink{class_a}{A}} valid O\+C\+I8 statement identifier created by \{
+
+\mbox{\hyperlink{oci8_8php_add430a818c3628ee70a3479ef838c7c5}{oci\+\_\+parse()}}\} and executed by \{
+
+\mbox{\hyperlink{oci8_8php_a6903a3e99b93b3a9142edf53e2c36513}{oci\+\_\+execute()}}\}, or \mbox{\hyperlink{interfacea}{a}} {\itshape R\+EF C\+U\+R\+S\+OR} statement identifier.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em \$number\+\_\+of\+\_\+rows} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure.\mbox{\Hypertarget{oci8_8php_a6373ff2b8bc9c28c72895583a1cfea90}\label{oci8_8php_a6373ff2b8bc9c28c72895583a1cfea90}} 
+\index{oci8.php@{oci8.php}!ocistatementtype@{ocistatementtype}}
+\index{ocistatementtype@{ocistatementtype}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ocistatementtype()}{ocistatementtype()}}
+{\footnotesize\ttfamily ocistatementtype (\begin{DoxyParamCaption}\item[{}]{\$statement\+\_\+resource }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_ae271ab3a28622f4eaa5b823ea5f40cb4}{oci\+\_\+statement\+\_\+type}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$statement\+\_\+resource  string Returns everything as strings except for abstract types (R\+O\+W\+I\+Ds, L\+O\+Bs and F\+I\+L\+Es). Returns F\+A\+L\+SE on error. }}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a4423bb615f6206ac9067f5fa607c5569}\label{oci8_8php_a4423bb615f6206ac9067f5fa607c5569}} 
+\index{oci8.php@{oci8.php}!ociwritelobtofile@{ociwritelobtofile}}
+\index{ociwritelobtofile@{ociwritelobtofile}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ociwritelobtofile()}{ociwritelobtofile()}}
+{\footnotesize\ttfamily ociwritelobtofile (\begin{DoxyParamCaption}\item[{}]{\$lob\+\_\+descriptor,  }\item[{}]{\$filename,  }\item[{}]{\$start,  }\item[{}]{\$length }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5, P\+E\+CL O\+C\+I8 $>$= 1.\+0.\+0)~\newline
+ Alias of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_o_c_i___lob_a4e70915316d7b280538f107123e364b3}{O\+C\+I\+\_\+\+Lob\+::export}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Lob \$lob\+\_\+descriptor  string \$filename }}Path to the \mbox{\hyperlink{standard__5_8php_ac0d353a97d1662c811425338985026b1}{file}}.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$start} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Indicates from where to start exporting.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Indicates the length of data to be exported.
+
+\begin{DoxyReturn}{Returns}
+bool Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{oci8_8php_abce8748e44db871cb5eea96d94c257b6}\label{oci8_8php_abce8748e44db871cb5eea96d94c257b6}} 
+\index{oci8.php@{oci8.php}!ociwritetemporarylob@{ociwritetemporarylob}}
+\index{ociwritetemporarylob@{ociwritetemporarylob}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{ociwritetemporarylob()}{ociwritetemporarylob()}}
+{\footnotesize\ttfamily ociwritetemporarylob (\begin{DoxyParamCaption}\item[{}]{\$lob\+\_\+descriptor,  }\item[{}]{\$data,  }\item[{}]{\$lob\+\_\+type = {\ttfamily \mbox{\hyperlink{oci8_8php_a0ab065add6d654f24af180f57a3b0768}{O\+C\+I\+\_\+\+T\+E\+M\+P\+\_\+\+C\+L\+OB}}} }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+0.\+6, P\+E\+CL O\+C\+I8 1.\+0) Writes a temporary large object Alias of \{\begin{DoxySeeAlso}{See also}
+O\+C\+I-\/\+Lob\+::write\+Temporary()\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{O\+C\+I\+\_\+\+Lob \$lob\+\_\+descriptor  string \$data }}The data to write.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$lob\+\_\+type} & \\
+\hline
+\end{DoxyParams}
+Can be one of the following\+: 
+
+
+\begin{DoxyItemize}
+\item {\bfseries{O\+C\+I\+\_\+\+T\+E\+M\+P\+\_\+\+B\+L\+OB}} is used to create temporary B\+L\+O\+Bs  
+\item {\bfseries{O\+C\+I\+\_\+\+T\+E\+M\+P\+\_\+\+C\+L\+OB}} is used to create temporary C\+L\+O\+Bs  
+\end{DoxyItemize}\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+Returns T\+R\+UE on success or F\+A\+L\+SE on failure.
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{oci8_8php_a326c74b03f18b7c233a928684d1a2d78}\label{oci8_8php_a326c74b03f18b7c233a928684d1a2d78}} 
+\index{oci8.php@{oci8.php}!OCI\_ASSOC@{OCI\_ASSOC}}
+\index{OCI\_ASSOC@{OCI\_ASSOC}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_ASSOC}{OCI\_ASSOC}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+A\+S\+S\+OC 1}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9ad0594abe383aebbc6b81f53989c60d}{oci\+\_\+fetch\+\_\+all}}\} and \{
+
+\mbox{\hyperlink{oci8_8php_ae3641f58cc05c8320463b30fadd6edcb}{oci\+\_\+fetch\+\_\+array}}\} to get results as an associative array. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a2fded2d518fded26068b9c4688f52a60}\label{oci8_8php_a2fded2d518fded26068b9c4688f52a60}} 
+\index{oci8.php@{oci8.php}!OCI\_B\_BFILE@{OCI\_B\_BFILE}}
+\index{OCI\_B\_BFILE@{OCI\_B\_BFILE}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_B\_BFILE}{OCI\_B\_BFILE}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+B\+\_\+\+B\+F\+I\+LE 114}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}{oci\+\_\+bind\+\_\+by\+\_\+name}}\} when binding B\+F\+I\+L\+Es. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_aa585f01989facd70f75c52e4ddaf2316}\label{oci8_8php_aa585f01989facd70f75c52e4ddaf2316}} 
+\index{oci8.php@{oci8.php}!OCI\_B\_BIN@{OCI\_B\_BIN}}
+\index{OCI\_B\_BIN@{OCI\_B\_BIN}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_B\_BIN}{OCI\_B\_BIN}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+B\+\_\+\+B\+IN 23}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}{oci\+\_\+bind\+\_\+by\+\_\+name}}\} to bind R\+AW values. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a822ad3a3919ad75fae28b070aa8dd66f}\label{oci8_8php_a822ad3a3919ad75fae28b070aa8dd66f}} 
+\index{oci8.php@{oci8.php}!OCI\_B\_BLOB@{OCI\_B\_BLOB}}
+\index{OCI\_B\_BLOB@{OCI\_B\_BLOB}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_B\_BLOB}{OCI\_B\_BLOB}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+B\+\_\+\+B\+L\+OB 113}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}{oci\+\_\+bind\+\_\+by\+\_\+name}}\} when binding B\+L\+O\+Bs. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a6f57f9aa2a6c0bc2db1004a9863570fa}\label{oci8_8php_a6f57f9aa2a6c0bc2db1004a9863570fa}} 
+\index{oci8.php@{oci8.php}!OCI\_B\_BOL@{OCI\_B\_BOL}}
+\index{OCI\_B\_BOL@{OCI\_B\_BOL}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_B\_BOL}{OCI\_B\_BOL}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+B\+\_\+\+B\+OL 252}
+
+(P\+E\+CL O\+C\+I8 $>$= 2.\+0.\+7)~\newline
+ Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}{oci\+\_\+bind\+\_\+by\+\_\+name}}\} when binding P\+L/\+S\+QL B\+O\+O\+L\+E\+AN. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a3c81af3cdeb565247fdf19aa75d9765f}\label{oci8_8php_a3c81af3cdeb565247fdf19aa75d9765f}} 
+\index{oci8.php@{oci8.php}!OCI\_B\_CFILEE@{OCI\_B\_CFILEE}}
+\index{OCI\_B\_CFILEE@{OCI\_B\_CFILEE}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_B\_CFILEE}{OCI\_B\_CFILEE}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+B\+\_\+\+C\+F\+I\+L\+EE 115}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}{oci\+\_\+bind\+\_\+by\+\_\+name}}\} when binding C\+F\+I\+L\+Es. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a0faa4e8ee4ef07c1f52246b28c8c6827}\label{oci8_8php_a0faa4e8ee4ef07c1f52246b28c8c6827}} 
+\index{oci8.php@{oci8.php}!OCI\_B\_CLOB@{OCI\_B\_CLOB}}
+\index{OCI\_B\_CLOB@{OCI\_B\_CLOB}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_B\_CLOB}{OCI\_B\_CLOB}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+B\+\_\+\+C\+L\+OB 112}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}{oci\+\_\+bind\+\_\+by\+\_\+name}}\} when binding C\+L\+O\+Bs. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_af3c839c865c312cc49e5360591d9c014}\label{oci8_8php_af3c839c865c312cc49e5360591d9c014}} 
+\index{oci8.php@{oci8.php}!OCI\_B\_CURSOR@{OCI\_B\_CURSOR}}
+\index{OCI\_B\_CURSOR@{OCI\_B\_CURSOR}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_B\_CURSOR}{OCI\_B\_CURSOR}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+B\+\_\+\+C\+U\+R\+S\+OR 116}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}{oci\+\_\+bind\+\_\+by\+\_\+name}}\} when binding cursors, previously allocated with \{
+
+\mbox{\hyperlink{oci8_8php_a9043438924908090cce22df49f79a974}{oci\+\_\+new\+\_\+descriptor}}\}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a1118b30800ef66cc4415b16948629bbc}\label{oci8_8php_a1118b30800ef66cc4415b16948629bbc}} 
+\index{oci8.php@{oci8.php}!OCI\_B\_INT@{OCI\_B\_INT}}
+\index{OCI\_B\_INT@{OCI\_B\_INT}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_B\_INT}{OCI\_B\_INT}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+B\+\_\+\+I\+NT 3}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9526805102b685894287ec1a42810a49}{oci\+\_\+bind\+\_\+array\+\_\+by\+\_\+name}}\} to bind arrays of I\+N\+T\+E\+G\+ER. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a17b1d0780f22238b2d2ce13e7cf066d2}\label{oci8_8php_a17b1d0780f22238b2d2ce13e7cf066d2}} 
+\index{oci8.php@{oci8.php}!OCI\_B\_NTY@{OCI\_B\_NTY}}
+\index{OCI\_B\_NTY@{OCI\_B\_NTY}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_B\_NTY}{OCI\_B\_NTY}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+B\+\_\+\+N\+TY 108}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}{oci\+\_\+bind\+\_\+by\+\_\+name}}\} when binding named data types. Note\+: in P\+HP $<$ 5.\+0 it was called {\bfseries{O\+C\+I\+\_\+\+B\+\_\+\+S\+Q\+L\+T\+\_\+\+N\+TY}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a51a4f7eed39c933efbdf8ad0676c401c}\label{oci8_8php_a51a4f7eed39c933efbdf8ad0676c401c}} 
+\index{oci8.php@{oci8.php}!OCI\_B\_NUM@{OCI\_B\_NUM}}
+\index{OCI\_B\_NUM@{OCI\_B\_NUM}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_B\_NUM}{OCI\_B\_NUM}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+B\+\_\+\+N\+UM 2}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9526805102b685894287ec1a42810a49}{oci\+\_\+bind\+\_\+array\+\_\+by\+\_\+name}}\} to bind arrays of N\+U\+M\+B\+ER. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a43a5612ef3b92d86ec5536da45f29334}\label{oci8_8php_a43a5612ef3b92d86ec5536da45f29334}} 
+\index{oci8.php@{oci8.php}!OCI\_B\_ROWID@{OCI\_B\_ROWID}}
+\index{OCI\_B\_ROWID@{OCI\_B\_ROWID}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_B\_ROWID}{OCI\_B\_ROWID}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+B\+\_\+\+R\+O\+W\+ID 104}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}{oci\+\_\+bind\+\_\+by\+\_\+name}}\} when binding R\+O\+W\+I\+Ds. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a69360e5ae2b673a0402856c1b6085109}\label{oci8_8php_a69360e5ae2b673a0402856c1b6085109}} 
+\index{oci8.php@{oci8.php}!OCI\_BOTH@{OCI\_BOTH}}
+\index{OCI\_BOTH@{OCI\_BOTH}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_BOTH}{OCI\_BOTH}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+B\+O\+TH 3}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9ad0594abe383aebbc6b81f53989c60d}{oci\+\_\+fetch\+\_\+all}}\} and \{
+
+\mbox{\hyperlink{oci8_8php_ae3641f58cc05c8320463b30fadd6edcb}{oci\+\_\+fetch\+\_\+array}}\} to get results as an array with both associative and number indices. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a04375f75e51f187b06a9fd129708118a}\label{oci8_8php_a04375f75e51f187b06a9fd129708118a}} 
+\index{oci8.php@{oci8.php}!OCI\_COMMIT\_ON\_SUCCESS@{OCI\_COMMIT\_ON\_SUCCESS}}
+\index{OCI\_COMMIT\_ON\_SUCCESS@{OCI\_COMMIT\_ON\_SUCCESS}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_COMMIT\_ON\_SUCCESS}{OCI\_COMMIT\_ON\_SUCCESS}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+C\+O\+M\+M\+I\+T\+\_\+\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS 32}
+
+Statement execution mode for \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a6903a3e99b93b3a9142edf53e2c36513}{oci\+\_\+execute}}\} call. Automatically commit changes when the statement has succeeded. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_ac354390ae43f559fef31b11c9a26d41f}\label{oci8_8php_ac354390ae43f559fef31b11c9a26d41f}} 
+\index{oci8.php@{oci8.php}!OCI\_CRED\_EXT@{OCI\_CRED\_EXT}}
+\index{OCI\_CRED\_EXT@{OCI\_CRED\_EXT}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_CRED\_EXT}{OCI\_CRED\_EXT}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+C\+R\+E\+D\+\_\+\+E\+XT -\/2147483648}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect}}\} for using Oracles\textquotesingle{} External or OS authentication. Introduced in P\+HP 5.\+3 and P\+E\+CL O\+C\+I8 1.\+3.\+4. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a67a89033d121fda50dd2ee914bf88f75}\label{oci8_8php_a67a89033d121fda50dd2ee914bf88f75}} 
+\index{oci8.php@{oci8.php}!OCI\_D\_FILE@{OCI\_D\_FILE}}
+\index{OCI\_D\_FILE@{OCI\_D\_FILE}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_D\_FILE}{OCI\_D\_FILE}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+D\+\_\+\+F\+I\+LE 56}
+
+The same as {\bfseries{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+F\+I\+LE}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_a30575c85d9657d0ce6183caeb21750b4}\label{oci8_8php_a30575c85d9657d0ce6183caeb21750b4}} 
+\index{oci8.php@{oci8.php}!OCI\_D\_LOB@{OCI\_D\_LOB}}
+\index{OCI\_D\_LOB@{OCI\_D\_LOB}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_D\_LOB}{OCI\_D\_LOB}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+D\+\_\+\+L\+OB 50}
+
+The same as {\bfseries{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+L\+OB}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_a54d2184e85706f46b942e36bcc384864}\label{oci8_8php_a54d2184e85706f46b942e36bcc384864}} 
+\index{oci8.php@{oci8.php}!OCI\_D\_ROWID@{OCI\_D\_ROWID}}
+\index{OCI\_D\_ROWID@{OCI\_D\_ROWID}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_D\_ROWID}{OCI\_D\_ROWID}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+D\+\_\+\+R\+O\+W\+ID 54}
+
+The same as {\bfseries{O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+R\+O\+W\+ID}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_ad30ca5102e6f5899be4ea992722a74bb}\label{oci8_8php_ad30ca5102e6f5899be4ea992722a74bb}} 
+\index{oci8.php@{oci8.php}!OCI\_DEFAULT@{OCI\_DEFAULT}}
+\index{OCI\_DEFAULT@{OCI\_DEFAULT}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_DEFAULT}{OCI\_DEFAULT}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+D\+E\+F\+A\+U\+LT 0}
+
+See {\bfseries{O\+C\+I\+\_\+\+N\+O\+\_\+\+A\+U\+T\+O\+\_\+\+C\+O\+M\+M\+IT}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_abd454a9999465e8a848fe35066c30927}\label{oci8_8php_abd454a9999465e8a848fe35066c30927}} 
+\index{oci8.php@{oci8.php}!OCI\_DESCRIBE\_ONLY@{OCI\_DESCRIBE\_ONLY}}
+\index{OCI\_DESCRIBE\_ONLY@{OCI\_DESCRIBE\_ONLY}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_DESCRIBE\_ONLY}{OCI\_DESCRIBE\_ONLY}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+D\+E\+S\+C\+R\+I\+B\+E\+\_\+\+O\+N\+LY 16}
+
+Statement execution mode for \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a6903a3e99b93b3a9142edf53e2c36513}{oci\+\_\+execute}}\}. Use this mode \mbox{\hyperlink{apigen_2apigen_2bin_2bootstrap_8php_a18b663b7f311baed73ccaa681a5d3507}{if}} you want meta data such as the column names but don\textquotesingle{}t want to fetch rows from the query. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a3e810e0936f4401f0d57e04c3cc8d770}\label{oci8_8php_a3e810e0936f4401f0d57e04c3cc8d770}} 
+\index{oci8.php@{oci8.php}!OCI\_DTYPE\_FILE@{OCI\_DTYPE\_FILE}}
+\index{OCI\_DTYPE\_FILE@{OCI\_DTYPE\_FILE}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_DTYPE\_FILE}{OCI\_DTYPE\_FILE}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+F\+I\+LE 56}
+
+This flag tells \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9043438924908090cce22df49f79a974}{oci\+\_\+new\+\_\+descriptor}}\} to initialize \mbox{\hyperlink{interfacea}{a}} new F\+I\+LE descriptor. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a8b6edb8a5b4bc0989edf98bf4e79679e}\label{oci8_8php_a8b6edb8a5b4bc0989edf98bf4e79679e}} 
+\index{oci8.php@{oci8.php}!OCI\_DTYPE\_LOB@{OCI\_DTYPE\_LOB}}
+\index{OCI\_DTYPE\_LOB@{OCI\_DTYPE\_LOB}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_DTYPE\_LOB}{OCI\_DTYPE\_LOB}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+L\+OB 50}
+
+This flag tells \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9043438924908090cce22df49f79a974}{oci\+\_\+new\+\_\+descriptor}}\} to initialize \mbox{\hyperlink{interfacea}{a}} new L\+OB descriptor. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a716b8b13f42603c3b49c365386eb33f1}\label{oci8_8php_a716b8b13f42603c3b49c365386eb33f1}} 
+\index{oci8.php@{oci8.php}!OCI\_DTYPE\_ROWID@{OCI\_DTYPE\_ROWID}}
+\index{OCI\_DTYPE\_ROWID@{OCI\_DTYPE\_ROWID}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_DTYPE\_ROWID}{OCI\_DTYPE\_ROWID}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+D\+T\+Y\+P\+E\+\_\+\+R\+O\+W\+ID 54}
+
+This flag tells \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9043438924908090cce22df49f79a974}{oci\+\_\+new\+\_\+descriptor}}\} to initialize \mbox{\hyperlink{interfacea}{a}} new R\+O\+W\+ID descriptor. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_ac4300686846c9e106aba7d70deb27565}\label{oci8_8php_ac4300686846c9e106aba7d70deb27565}} 
+\index{oci8.php@{oci8.php}!OCI\_EXACT\_FETCH@{OCI\_EXACT\_FETCH}}
+\index{OCI\_EXACT\_FETCH@{OCI\_EXACT\_FETCH}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_EXACT\_FETCH}{OCI\_EXACT\_FETCH}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+E\+X\+A\+C\+T\+\_\+\+F\+E\+T\+CH 2}
+
+Obsolete. Statement fetch mode. Used when the application knows in advance exactly how many rows it will be fetching. This mode turns prefetching off for Oracle release 8 or later mode. The cursor is canceled after the desired rows are fetched which may result in reduced server-\/side resource usage. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_a11060dd6c60c8f13e70fdb602f8e915a}\label{oci8_8php_a11060dd6c60c8f13e70fdb602f8e915a}} 
+\index{oci8.php@{oci8.php}!OCI\_FETCHSTATEMENT\_BY\_COLUMN@{OCI\_FETCHSTATEMENT\_BY\_COLUMN}}
+\index{OCI\_FETCHSTATEMENT\_BY\_COLUMN@{OCI\_FETCHSTATEMENT\_BY\_COLUMN}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_FETCHSTATEMENT\_BY\_COLUMN}{OCI\_FETCHSTATEMENT\_BY\_COLUMN}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+F\+E\+T\+C\+H\+S\+T\+A\+T\+E\+M\+E\+N\+T\+\_\+\+B\+Y\+\_\+\+C\+O\+L\+U\+MN 16}
+
+Default mode of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9ad0594abe383aebbc6b81f53989c60d}{oci\+\_\+fetch\+\_\+all}}\}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_acdd7e1539acb7325a00f752afc3406b6}\label{oci8_8php_acdd7e1539acb7325a00f752afc3406b6}} 
+\index{oci8.php@{oci8.php}!OCI\_FETCHSTATEMENT\_BY\_ROW@{OCI\_FETCHSTATEMENT\_BY\_ROW}}
+\index{OCI\_FETCHSTATEMENT\_BY\_ROW@{OCI\_FETCHSTATEMENT\_BY\_ROW}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_FETCHSTATEMENT\_BY\_ROW}{OCI\_FETCHSTATEMENT\_BY\_ROW}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+F\+E\+T\+C\+H\+S\+T\+A\+T\+E\+M\+E\+N\+T\+\_\+\+B\+Y\+\_\+\+R\+OW 32}
+
+Alternative mode of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9ad0594abe383aebbc6b81f53989c60d}{oci\+\_\+fetch\+\_\+all}}\}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_aa1991b32b954da664422f55d35c0f4e7}\label{oci8_8php_aa1991b32b954da664422f55d35c0f4e7}} 
+\index{oci8.php@{oci8.php}!OCI\_LOB\_BUFFER\_FREE@{OCI\_LOB\_BUFFER\_FREE}}
+\index{OCI\_LOB\_BUFFER\_FREE@{OCI\_LOB\_BUFFER\_FREE}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_LOB\_BUFFER\_FREE}{OCI\_LOB\_BUFFER\_FREE}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+L\+O\+B\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+F\+R\+EE 1}
+
+Used with to free buffers used. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_a45a2231cb583ec63d062f4e07f68144d}\label{oci8_8php_a45a2231cb583ec63d062f4e07f68144d}} 
+\index{oci8.php@{oci8.php}!OCI\_NO\_AUTO\_COMMIT@{OCI\_NO\_AUTO\_COMMIT}}
+\index{OCI\_NO\_AUTO\_COMMIT@{OCI\_NO\_AUTO\_COMMIT}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_NO\_AUTO\_COMMIT}{OCI\_NO\_AUTO\_COMMIT}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+N\+O\+\_\+\+A\+U\+T\+O\+\_\+\+C\+O\+M\+M\+IT 0}
+
+Statement execution mode for \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a6903a3e99b93b3a9142edf53e2c36513}{oci\+\_\+execute}}\}. The transaction is not automatically committed when using this mode. For readability in new code, use this value instead of the older, equivalent {\bfseries{\mbox{\hyperlink{oci8_8php_ad30ca5102e6f5899be4ea992722a74bb}{O\+C\+I\+\_\+\+D\+E\+F\+A\+U\+LT}}}} \mbox{\hyperlink{standard__0_8php_afdd4db30380f5865f7ec87ece943cd6e}{constant}}. Introduced in P\+HP 5.\+3.\+2 (P\+E\+CL O\+C\+I8 1.\+4). \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a3d159cff225c21c228c7e1bb79ad77b7}\label{oci8_8php_a3d159cff225c21c228c7e1bb79ad77b7}} 
+\index{oci8.php@{oci8.php}!OCI\_NUM@{OCI\_NUM}}
+\index{OCI\_NUM@{OCI\_NUM}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_NUM}{OCI\_NUM}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+N\+UM 2}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9ad0594abe383aebbc6b81f53989c60d}{oci\+\_\+fetch\+\_\+all}}\} and \{
+
+\mbox{\hyperlink{oci8_8php_ae3641f58cc05c8320463b30fadd6edcb}{oci\+\_\+fetch\+\_\+array}}\} to get results as an enumerated array. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a9d95c0542a9520ed5295fed1a1f15666}\label{oci8_8php_a9d95c0542a9520ed5295fed1a1f15666}} 
+\index{oci8.php@{oci8.php}!OCI\_RETURN\_LOBS@{OCI\_RETURN\_LOBS}}
+\index{OCI\_RETURN\_LOBS@{OCI\_RETURN\_LOBS}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_RETURN\_LOBS}{OCI\_RETURN\_LOBS}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+L\+O\+BS 8}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_ae3641f58cc05c8320463b30fadd6edcb}{oci\+\_\+fetch\+\_\+array}}\} to get the data value of the L\+OB instead of the descriptor. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a15d6df669ef6452f516f8faa720e09af}\label{oci8_8php_a15d6df669ef6452f516f8faa720e09af}} 
+\index{oci8.php@{oci8.php}!OCI\_RETURN\_NULLS@{OCI\_RETURN\_NULLS}}
+\index{OCI\_RETURN\_NULLS@{OCI\_RETURN\_NULLS}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_RETURN\_NULLS}{OCI\_RETURN\_NULLS}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+N\+U\+L\+LS 4}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_ae3641f58cc05c8320463b30fadd6edcb}{oci\+\_\+fetch\+\_\+array}}\} to get empty array elements \mbox{\hyperlink{apigen_2apigen_2bin_2bootstrap_8php_a18b663b7f311baed73ccaa681a5d3507}{if}} the row items value is {\bfseries{N\+U\+LL}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a082834ee771376635cfc4ecdd103f933}\label{oci8_8php_a082834ee771376635cfc4ecdd103f933}} 
+\index{oci8.php@{oci8.php}!OCI\_SEEK\_CUR@{OCI\_SEEK\_CUR}}
+\index{OCI\_SEEK\_CUR@{OCI\_SEEK\_CUR}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_SEEK\_CUR}{OCI\_SEEK\_CUR}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+S\+E\+E\+K\+\_\+\+C\+UR 1}
+
+Used with to set the seek position. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_a44f5c9a15263f05e91948cda7278022a}\label{oci8_8php_a44f5c9a15263f05e91948cda7278022a}} 
+\index{oci8.php@{oci8.php}!OCI\_SEEK\_END@{OCI\_SEEK\_END}}
+\index{OCI\_SEEK\_END@{OCI\_SEEK\_END}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_SEEK\_END}{OCI\_SEEK\_END}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+S\+E\+E\+K\+\_\+\+E\+ND 2}
+
+Used with to set the seek position. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_a4918c5a44b3574e5c53a130b25d12b62}\label{oci8_8php_a4918c5a44b3574e5c53a130b25d12b62}} 
+\index{oci8.php@{oci8.php}!OCI\_SEEK\_SET@{OCI\_SEEK\_SET}}
+\index{OCI\_SEEK\_SET@{OCI\_SEEK\_SET}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_SEEK\_SET}{OCI\_SEEK\_SET}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+S\+E\+E\+K\+\_\+\+S\+ET 0}
+
+Used with to set the seek position. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_a5ec4ac66742be25ed7cd5b6db0b56d0b}\label{oci8_8php_a5ec4ac66742be25ed7cd5b6db0b56d0b}} 
+\index{oci8.php@{oci8.php}!OCI\_SYSDATE@{OCI\_SYSDATE}}
+\index{OCI\_SYSDATE@{OCI\_SYSDATE}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_SYSDATE}{OCI\_SYSDATE}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+S\+Y\+S\+D\+A\+TE \char`\"{}S\+Y\+S\+D\+A\+TE\char`\"{}}
+
+Obsolete. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_aa79fbfee4d238779ba13948fc76282b8}\label{oci8_8php_aa79fbfee4d238779ba13948fc76282b8}} 
+\index{oci8.php@{oci8.php}!OCI\_SYSDBA@{OCI\_SYSDBA}}
+\index{OCI\_SYSDBA@{OCI\_SYSDBA}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_SYSDBA}{OCI\_SYSDBA}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+S\+Y\+S\+D\+BA 2}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect}}\} to connect with the S\+Y\+S\+D\+BA privilege. The {\itshape php.\+ini} setting oci8.\+privileged\+\_\+connect should be enabled to use this. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a6af9d0c9a16b7baab53bef78e0a1a541}\label{oci8_8php_a6af9d0c9a16b7baab53bef78e0a1a541}} 
+\index{oci8.php@{oci8.php}!OCI\_SYSOPER@{OCI\_SYSOPER}}
+\index{OCI\_SYSOPER@{OCI\_SYSOPER}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_SYSOPER}{OCI\_SYSOPER}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+S\+Y\+S\+O\+P\+ER 4}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a69582c9ade73b5ee952fd87a32849c15}{oci\+\_\+connect}}\} to connect with the S\+Y\+S\+O\+P\+ER privilege. The {\itshape php.\+ini} setting oci8.\+privileged\+\_\+connect should be enabled to use this. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_ac6c46ce8bdc6dfefbf10149cf24390ed}\label{oci8_8php_ac6c46ce8bdc6dfefbf10149cf24390ed}} 
+\index{oci8.php@{oci8.php}!OCI\_TEMP\_BLOB@{OCI\_TEMP\_BLOB}}
+\index{OCI\_TEMP\_BLOB@{OCI\_TEMP\_BLOB}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_TEMP\_BLOB}{OCI\_TEMP\_BLOB}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+T\+E\+M\+P\+\_\+\+B\+L\+OB 1}
+
+Used with to indicate that a temporary B\+L\+OB should be created. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_a0ab065add6d654f24af180f57a3b0768}\label{oci8_8php_a0ab065add6d654f24af180f57a3b0768}} 
+\index{oci8.php@{oci8.php}!OCI\_TEMP\_CLOB@{OCI\_TEMP\_CLOB}}
+\index{OCI\_TEMP\_CLOB@{OCI\_TEMP\_CLOB}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{OCI\_TEMP\_CLOB}{OCI\_TEMP\_CLOB}}
+{\footnotesize\ttfamily const O\+C\+I\+\_\+\+T\+E\+M\+P\+\_\+\+C\+L\+OB 2}
+
+Used with to indicate that a temporary C\+L\+OB should be created. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_a1242ba37b6bbb48e7766129df27f7d97}\label{oci8_8php_a1242ba37b6bbb48e7766129df27f7d97}} 
+\index{oci8.php@{oci8.php}!SQLT\_AFC@{SQLT\_AFC}}
+\index{SQLT\_AFC@{SQLT\_AFC}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_AFC}{SQLT\_AFC}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+A\+FC 96}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9526805102b685894287ec1a42810a49}{oci\+\_\+bind\+\_\+array\+\_\+by\+\_\+name}}\} to bind arrays of C\+H\+AR. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a5c7aedeaaf70f807a44d6fdd6a2cbc36}\label{oci8_8php_a5c7aedeaaf70f807a44d6fdd6a2cbc36}} 
+\index{oci8.php@{oci8.php}!SQLT\_AVC@{SQLT\_AVC}}
+\index{SQLT\_AVC@{SQLT\_AVC}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_AVC}{SQLT\_AVC}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+A\+VC 97}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9526805102b685894287ec1a42810a49}{oci\+\_\+bind\+\_\+array\+\_\+by\+\_\+name}}\} to bind arrays of V\+A\+R\+C\+H\+A\+R2. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a179a0124d74f9db954a4bfaa410af660}\label{oci8_8php_a179a0124d74f9db954a4bfaa410af660}} 
+\index{oci8.php@{oci8.php}!SQLT\_BDOUBLE@{SQLT\_BDOUBLE}}
+\index{SQLT\_BDOUBLE@{SQLT\_BDOUBLE}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_BDOUBLE}{SQLT\_BDOUBLE}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+B\+D\+O\+U\+B\+LE 22}
+
+Not supported. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_a68cee4812729bd9f549488cd6a90aba4}\label{oci8_8php_a68cee4812729bd9f549488cd6a90aba4}} 
+\index{oci8.php@{oci8.php}!SQLT\_BFILEE@{SQLT\_BFILEE}}
+\index{SQLT\_BFILEE@{SQLT\_BFILEE}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_BFILEE}{SQLT\_BFILEE}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+B\+F\+I\+L\+EE 114}
+
+The same as {\bfseries{O\+C\+I\+\_\+\+B\+\_\+\+B\+F\+I\+LE}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_a4e56c9b7678285b4c4faa32ff9ebf207}\label{oci8_8php_a4e56c9b7678285b4c4faa32ff9ebf207}} 
+\index{oci8.php@{oci8.php}!SQLT\_BFLOAT@{SQLT\_BFLOAT}}
+\index{SQLT\_BFLOAT@{SQLT\_BFLOAT}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_BFLOAT}{SQLT\_BFLOAT}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+B\+F\+L\+O\+AT 21}
+
+Not supported. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_abab94c0fa5be68dc182f372859944100}\label{oci8_8php_abab94c0fa5be68dc182f372859944100}} 
+\index{oci8.php@{oci8.php}!SQLT\_BIN@{SQLT\_BIN}}
+\index{SQLT\_BIN@{SQLT\_BIN}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_BIN}{SQLT\_BIN}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+B\+IN 23}
+
+The same as {\bfseries{O\+C\+I\+\_\+\+B\+\_\+\+B\+IN}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_aa7e08fe001e83d26b09fa9b0a07b62d2}\label{oci8_8php_aa7e08fe001e83d26b09fa9b0a07b62d2}} 
+\index{oci8.php@{oci8.php}!SQLT\_BLOB@{SQLT\_BLOB}}
+\index{SQLT\_BLOB@{SQLT\_BLOB}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_BLOB}{SQLT\_BLOB}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+B\+L\+OB 113}
+
+The same as {\bfseries{O\+C\+I\+\_\+\+B\+\_\+\+B\+L\+OB}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_ac67a5eecb26425620bcbfb866ffd06ed}\label{oci8_8php_ac67a5eecb26425620bcbfb866ffd06ed}} 
+\index{oci8.php@{oci8.php}!SQLT\_BOL@{SQLT\_BOL}}
+\index{SQLT\_BOL@{SQLT\_BOL}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_BOL}{SQLT\_BOL}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+B\+OL 252}
+
+(P\+E\+CL O\+C\+I8 $>$= 2.\+0.\+7)~\newline
+ The same as {\bfseries{O\+C\+I\+\_\+\+B\+\_\+\+B\+OL}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_aba15850828f3410a01b209c4614dfede}\label{oci8_8php_aba15850828f3410a01b209c4614dfede}} 
+\index{oci8.php@{oci8.php}!SQLT\_CFILEE@{SQLT\_CFILEE}}
+\index{SQLT\_CFILEE@{SQLT\_CFILEE}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_CFILEE}{SQLT\_CFILEE}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+C\+F\+I\+L\+EE 115}
+
+The same as {\bfseries{O\+C\+I\+\_\+\+B\+\_\+\+C\+F\+I\+L\+EE}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_a8e49b70c48299fc44d085c6261025a88}\label{oci8_8php_a8e49b70c48299fc44d085c6261025a88}} 
+\index{oci8.php@{oci8.php}!SQLT\_CHR@{SQLT\_CHR}}
+\index{SQLT\_CHR@{SQLT\_CHR}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_CHR}{SQLT\_CHR}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+C\+HR 1}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9526805102b685894287ec1a42810a49}{oci\+\_\+bind\+\_\+array\+\_\+by\+\_\+name}}\} to bind arrays of V\+A\+R\+C\+H\+A\+R2. Also used with \{
+
+\mbox{\hyperlink{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}{oci\+\_\+bind\+\_\+by\+\_\+name}}\}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_aa7485493b3f62c9d30cb53c4ff5d6771}\label{oci8_8php_aa7485493b3f62c9d30cb53c4ff5d6771}} 
+\index{oci8.php@{oci8.php}!SQLT\_CLOB@{SQLT\_CLOB}}
+\index{SQLT\_CLOB@{SQLT\_CLOB}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_CLOB}{SQLT\_CLOB}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+C\+L\+OB 112}
+
+The same as {\bfseries{O\+C\+I\+\_\+\+B\+\_\+\+C\+L\+OB}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_a9a18352edb30f212480d4389598c7469}\label{oci8_8php_a9a18352edb30f212480d4389598c7469}} 
+\index{oci8.php@{oci8.php}!SQLT\_FLT@{SQLT\_FLT}}
+\index{SQLT\_FLT@{SQLT\_FLT}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_FLT}{SQLT\_FLT}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+F\+LT 4}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9526805102b685894287ec1a42810a49}{oci\+\_\+bind\+\_\+array\+\_\+by\+\_\+name}}\} to bind arrays of F\+L\+O\+AT. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a060e7ddbcd37ee245a79c6cdf1bad538}\label{oci8_8php_a060e7ddbcd37ee245a79c6cdf1bad538}} 
+\index{oci8.php@{oci8.php}!SQLT\_INT@{SQLT\_INT}}
+\index{SQLT\_INT@{SQLT\_INT}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_INT}{SQLT\_INT}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+I\+NT 3}
+
+The same as {\bfseries{O\+C\+I\+\_\+\+B\+\_\+\+I\+NT}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_afdc60d230015df672b2555a7961ebcbd}\label{oci8_8php_afdc60d230015df672b2555a7961ebcbd}} 
+\index{oci8.php@{oci8.php}!SQLT\_LBI@{SQLT\_LBI}}
+\index{SQLT\_LBI@{SQLT\_LBI}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_LBI}{SQLT\_LBI}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+L\+BI 24}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}{oci\+\_\+bind\+\_\+by\+\_\+name}}\} to bind L\+O\+NG R\+AW values. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_ae99599362d58c04fa25f6d4c8cd0c90b}\label{oci8_8php_ae99599362d58c04fa25f6d4c8cd0c90b}} 
+\index{oci8.php@{oci8.php}!SQLT\_LNG@{SQLT\_LNG}}
+\index{SQLT\_LNG@{SQLT\_LNG}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_LNG}{SQLT\_LNG}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+L\+NG 8}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a2472fca3aefd4c6d030a42d7de0105bc}{oci\+\_\+bind\+\_\+by\+\_\+name}}\} to bind L\+O\+NG values. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a8b96e17cd9ccae72b94486087b58648e}\label{oci8_8php_a8b96e17cd9ccae72b94486087b58648e}} 
+\index{oci8.php@{oci8.php}!SQLT\_LVC@{SQLT\_LVC}}
+\index{SQLT\_LVC@{SQLT\_LVC}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_LVC}{SQLT\_LVC}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+L\+VC 94}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9526805102b685894287ec1a42810a49}{oci\+\_\+bind\+\_\+array\+\_\+by\+\_\+name}}\} to bind arrays of L\+O\+NG V\+A\+R\+C\+H\+AR. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_aba54cf59a6c2bdac1a4e3ead7449f377}\label{oci8_8php_aba54cf59a6c2bdac1a4e3ead7449f377}} 
+\index{oci8.php@{oci8.php}!SQLT\_NTY@{SQLT\_NTY}}
+\index{SQLT\_NTY@{SQLT\_NTY}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_NTY}{SQLT\_NTY}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+N\+TY 108}
+
+The same as {\bfseries{O\+C\+I\+\_\+\+B\+\_\+\+N\+TY}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_ab81d8502e74fb810723a2dc3cdd5afeb}\label{oci8_8php_ab81d8502e74fb810723a2dc3cdd5afeb}} 
+\index{oci8.php@{oci8.php}!SQLT\_NUM@{SQLT\_NUM}}
+\index{SQLT\_NUM@{SQLT\_NUM}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_NUM}{SQLT\_NUM}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+N\+UM 2}
+
+The same as {\bfseries{O\+C\+I\+\_\+\+B\+\_\+\+N\+UM}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_ac5e9d51dcd785f4b22e7243582234a7c}\label{oci8_8php_ac5e9d51dcd785f4b22e7243582234a7c}} 
+\index{oci8.php@{oci8.php}!SQLT\_ODT@{SQLT\_ODT}}
+\index{SQLT\_ODT@{SQLT\_ODT}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_ODT}{SQLT\_ODT}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+O\+DT 156}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9526805102b685894287ec1a42810a49}{oci\+\_\+bind\+\_\+array\+\_\+by\+\_\+name}}\} to bind arrays of L\+O\+NG. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_ae7c6f5bfe7f0d6f944fbfd69a7ff9dce}\label{oci8_8php_ae7c6f5bfe7f0d6f944fbfd69a7ff9dce}} 
+\index{oci8.php@{oci8.php}!SQLT\_RDD@{SQLT\_RDD}}
+\index{SQLT\_RDD@{SQLT\_RDD}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_RDD}{SQLT\_RDD}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+R\+DD 104}
+
+The same as {\bfseries{O\+C\+I\+\_\+\+B\+\_\+\+R\+O\+W\+ID}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_a7581c59d3f119c19d281d359deba41bc}\label{oci8_8php_a7581c59d3f119c19d281d359deba41bc}} 
+\index{oci8.php@{oci8.php}!SQLT\_RSET@{SQLT\_RSET}}
+\index{SQLT\_RSET@{SQLT\_RSET}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_RSET}{SQLT\_RSET}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+R\+S\+ET 116}
+
+The same as {\bfseries{O\+C\+I\+\_\+\+B\+\_\+\+C\+U\+R\+S\+OR}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_aee550fa483295fd1e611584a7b65720c}\label{oci8_8php_aee550fa483295fd1e611584a7b65720c}} 
+\index{oci8.php@{oci8.php}!SQLT\_STR@{SQLT\_STR}}
+\index{SQLT\_STR@{SQLT\_STR}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_STR}{SQLT\_STR}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+S\+TR 5}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9526805102b685894287ec1a42810a49}{oci\+\_\+bind\+\_\+array\+\_\+by\+\_\+name}}\} to bind arrays of S\+T\+R\+I\+NG. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{oci8_8php_a809a4f5de890f267831113fd8b34bbcd}\label{oci8_8php_a809a4f5de890f267831113fd8b34bbcd}} 
+\index{oci8.php@{oci8.php}!SQLT\_UIN@{SQLT\_UIN}}
+\index{SQLT\_UIN@{SQLT\_UIN}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_UIN}{SQLT\_UIN}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+U\+IN 68}
+
+Not supported. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}\mbox{\Hypertarget{oci8_8php_ae19ed94dabc92accea24bf40346efa3f}\label{oci8_8php_ae19ed94dabc92accea24bf40346efa3f}} 
+\index{oci8.php@{oci8.php}!SQLT\_VCS@{SQLT\_VCS}}
+\index{SQLT\_VCS@{SQLT\_VCS}!oci8.php@{oci8.php}}
+\doxysubsubsection{\texorpdfstring{SQLT\_VCS}{SQLT\_VCS}}
+{\footnotesize\ttfamily const S\+Q\+L\+T\+\_\+\+V\+CS 9}
+
+Used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{oci8_8php_a9526805102b685894287ec1a42810a49}{oci\+\_\+bind\+\_\+array\+\_\+by\+\_\+name}}\} to bind arrays of V\+A\+R\+C\+H\+AR. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/oci8.\+constants.\+php}}
+\end{DoxySeeAlso}

@@ -1,0 +1,254 @@
+.TH "vendor/jetbrains/phpstorm-stubs/inotify/inotify.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/inotify/inotify.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBinotify_add_watch\fP ( $inotify_instance, $pathname, $mask)"
+.br
+.ti -1c
+.RI "\fBinotify_init\fP ()"
+.br
+.ti -1c
+.RI "\fBinotify_queue_len\fP ( $inotify_instance)"
+.br
+.ti -1c
+.RI "\fBinotify_read\fP ( $inotify_instance)"
+.br
+.ti -1c
+.RI "\fBinotify_rm_watch\fP ( $inotify_instance, $watch_descriptor)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBIN_ACCESS\fP = 1"
+.br
+.ti -1c
+.RI "const \fBIN_MODIFY\fP = 2"
+.br
+.ti -1c
+.RI "const \fBIN_ATTRIB\fP = 4"
+.br
+.ti -1c
+.RI "const \fBIN_CLOSE_WRITE\fP = 8"
+.br
+.ti -1c
+.RI "const \fBIN_CLOSE_NOWRITE\fP = 16"
+.br
+.ti -1c
+.RI "const \fBIN_OPEN\fP = 32"
+.br
+.ti -1c
+.RI "const \fBIN_MOVED_FROM\fP = 64"
+.br
+.ti -1c
+.RI "const \fBIN_MOVED_TO\fP = 128"
+.br
+.ti -1c
+.RI "const \fBIN_CREATE\fP = 256"
+.br
+.ti -1c
+.RI "const \fBIN_DELETE\fP = 512"
+.br
+.ti -1c
+.RI "const \fBIN_DELETE_SELF\fP = 1024"
+.br
+.ti -1c
+.RI "const \fBIN_MOVE_SELF\fP = 2048"
+.br
+.ti -1c
+.RI "const \fBIN_UNMOUNT\fP = 8192"
+.br
+.ti -1c
+.RI "const \fBIN_Q_OVERFLOW\fP = 16384"
+.br
+.ti -1c
+.RI "const \fBIN_IGNORED\fP = 32768"
+.br
+.ti -1c
+.RI "const \fBIN_CLOSE\fP = 24"
+.br
+.ti -1c
+.RI "const \fBIN_MOVE\fP = 192"
+.br
+.ti -1c
+.RI "const \fBIN_ALL_EVENTS\fP = 4095"
+.br
+.ti -1c
+.RI "const \fBIN_ONLYDIR\fP = 16777216"
+.br
+.ti -1c
+.RI "const \fBIN_DONT_FOLLOW\fP = 33554432"
+.br
+.ti -1c
+.RI "const \fBIN_MASK_ADD\fP = 536870912"
+.br
+.ti -1c
+.RI "const \fBIN_ISDIR\fP = 1073741824"
+.br
+.ti -1c
+.RI "const \fBIN_ONESHOT\fP = 2147483648"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "inotify_add_watch ( $inotify_instance,  $pathname,  $mask)"
+(PHP >= 5\&.2\&.0, PECL inotify >= 0\&.1\&.2)
+.br
+ Add a watch to an initialized inotify instance
+.PP
+\fBresource $inotify_instance \fPresource returned by \fBinotify_init()\fP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pathname\fP 
+.RE
+.PP
+File or directory to watch
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mask\fP 
+.RE
+.PP
+Events to watch for\&. See \fBPredefined Constants\fP\&.
+.PP
+\fBReturns\fP
+.RS 4
+int a unique (\fIinotify\fP instance-wide) watch descriptor\&. 
+.RE
+.PP
+
+.SS "inotify_init ()"
+(PHP >= 5\&.2\&.0, PECL inotify >= 0\&.1\&.2)
+.br
+ Initialize an inotify instance for use with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBinotify_add_watch\fP}
+.RE
+.PP
+\fBresource|false a stream resource or \fBFALSE\fP on error\&. \fP
+.SS "inotify_queue_len ( $inotify_instance)"
+(PHP >= 5\&.2\&.0, PECL inotify >= 0\&.1\&.2)
+.br
+ This function allows to know if {
+.PP
+\fBSee also\fP
+.RS 4
+\fBinotify_read\fP} will block or not\&. If \fBa\fP number upper than zero is returned, there are pending events and {
+.PP
+\fBinotify_read\fP} will not block\&.
+.RE
+.PP
+\fBresource $inotify_instance \fPresource returned by \fBinotify_init()\fP
+.PP
+\fBReturns\fP
+.RS 4
+int a number greater than zero if events are pending, otherwise zero\&. 
+.RE
+.PP
+
+.SS "inotify_read ( $inotify_instance)"
+(PHP >= 5\&.2\&.0, PECL inotify >= 0\&.1\&.2)
+.br
+ Read inotify events from an inotify instance\&.
+.PP
+\fBresource $inotify_instance \fPresource returned by \fBinotify_init()\fP
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array of inotify events or \fBFALSE\fP if no events were pending and \fIinotify_instance\fP is non-blocking\&. Each event is an array with the following keys:
+.RE
+.PP
+.PD 0
+.IP "\(bu" 2
+\fBwd\fP is a watch descriptor returned by \fBinotify_add_watch()\fP 
+.IP "\(bu" 2
+\fBmask\fP is a bit mask of events 
+.IP "\(bu" 2
+\fBcookie\fP is a unique id to connect related events (e\&.g\&. IN_MOVE_FROM and IN_MOVE_TO) 
+.IP "\(bu" 2
+\fBname\fP is the name of a file (e\&.g\&. if a file was modified in a watched directory) 
+.PP
+
+.SS "inotify_rm_watch ( $inotify_instance,  $watch_descriptor)"
+(PHP >= 5\&.2\&.0, PECL inotify >= 0\&.1\&.2)
+.br
+ Removes the watch \fI$watch_descriptor\fP from the inotify instance \fI$inotify_instance\fP\&.
+.PP
+\fBresource $inotify_instance \fPresource returned by \fBinotify_init()\fP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$watch_descriptor\fP 
+.RE
+.PP
+watch to remove from the instance
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const IN_ACCESS = 1"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_ALL_EVENTS = 4095"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_ATTRIB = 4"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_CLOSE = 24"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_CLOSE_NOWRITE = 16"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_CLOSE_WRITE = 8"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_CREATE = 256"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_DELETE = 512"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_DELETE_SELF = 1024"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_DONT_FOLLOW = 33554432"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_IGNORED = 32768"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_ISDIR = 1073741824"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_MASK_ADD = 536870912"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_MODIFY = 2"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_MOVE = 192"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_MOVE_SELF = 2048"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_MOVED_FROM = 64"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_MOVED_TO = 128"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_ONESHOT = 2147483648"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_ONLYDIR = 16777216"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_OPEN = 32"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_Q_OVERFLOW = 16384"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SS "const IN_UNMOUNT = 8192"
+@type int \fBhttps://php\&.net/manual/en/inotify\&.constants\&.php\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,3407 @@
+.TH "vendor/jetbrains/phpstorm-stubs/pdflib/PDFlib.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/pdflib/PDFlib.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBPDFlib\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPDF_activate_item\fP ($pdf, $id)"
+.br
+.ti -1c
+.RI "\fBPDF_add_launchlink\fP ($pdf, $llx, $lly, $urx, $ury, $filename)"
+.br
+.ti -1c
+.RI "\fBPDF_add_locallink\fP ($pdf, $lowerleftx, $lowerlefty, $upperrightx, $upperrighty, $page, $dest)"
+.br
+.ti -1c
+.RI "\fBPDF_add_nameddest\fP ($pdf, $name, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_add_note\fP ($pdf, $llx, $lly, $urx, $ury, $contents, $title, $icon, $open)"
+.br
+.ti -1c
+.RI "\fBPDF_add_pdflink\fP ($pdf, $bottom_left_x, $bottom_left_y, $up_right_x, $up_right_y, $filename, $page, $dest)"
+.br
+.ti -1c
+.RI "\fBPDF_add_table_cell\fP ($pdf, $table, $column, $row, $text, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_add_textflow\fP ($pdf, $textflow, $text, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_add_thumbnail\fP ($pdf, $image)"
+.br
+.ti -1c
+.RI "\fBPDF_add_weblink\fP ($pdf, $lowerleftx, $lowerlefty, $upperrightx, $upperrighty, $url)"
+.br
+.ti -1c
+.RI "\fBPDF_arc\fP ($pdf, $x, $y, $r, $alpha, $beta)"
+.br
+.ti -1c
+.RI "\fBPDF_arcn\fP ($pdf, $x, $y, $r, $alpha, $beta)"
+.br
+.ti -1c
+.RI "\fBPDF_attach_file\fP ($pdf, $llx, $lly, $urx, $ury, $filename, $description, $author, $mimetype, $icon)"
+.br
+.ti -1c
+.RI "\fBPDF_begin_document\fP ($pdf, $filename, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_begin_font\fP ($pdf, $filename, $\fBa\fP, $\fBb\fP, $\fBc\fP, $d, $e, $f, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_begin_glyph\fP ($pdf, $glyphname, $wx, $llx, $lly, $urx, $ury)"
+.br
+.ti -1c
+.RI "\fBPDF_begin_item\fP ($pdf, $tag, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_begin_layer\fP ($pdf, $layer)"
+.br
+.ti -1c
+.RI "\fBPDF_begin_page_ext\fP ($pdf, $width, $height, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_begin_page\fP ($pdf, $width, $height)"
+.br
+.ti -1c
+.RI "\fBPDF_begin_pattern\fP ($pdf, $width, $height, $xstep, $ystep, $painttype)"
+.br
+.ti -1c
+.RI "\fBPDF_begin_template_ext\fP ($pdf, $width, $height, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_begin_template\fP ($pdf, $width, $height)"
+.br
+.ti -1c
+.RI "\fBPDF_circle\fP ($pdf, $x, $y, $r)"
+.br
+.ti -1c
+.RI "\fBPDF_clip\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_close_image\fP ($pdf, $image)"
+.br
+.ti -1c
+.RI "\fBPDF_close_pdi_page\fP ($pdf, $page)"
+.br
+.ti -1c
+.RI "\fBPDF_close_pdi\fP ($pdf, $doc)"
+.br
+.ti -1c
+.RI "\fBPDF_close\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_closepath_fill_stroke\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_closepath_stroke\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_closepath\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_concat\fP ($pdf, $\fBa\fP, $\fBb\fP, $\fBc\fP, $d, $e, $f)"
+.br
+.ti -1c
+.RI "\fBPDF_continue_text\fP ($pdf, $text)"
+.br
+.ti -1c
+.RI "\fBPDF_create_3dview\fP ($pdf, $username, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_create_action\fP ($pdf, $type, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_create_annotation\fP ($pdf, $llx, $lly, $urx, $ury, $type, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_create_bookmark\fP ($pdf, $text, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_create_field\fP ($pdf, $llx, $lly, $urx, $ury, $name, $type, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_create_fieldgroup\fP ($pdf, $name, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_create_gstate\fP ($pdf, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_create_pvf\fP ($pdf, $filename, $data, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_create_textflow\fP ($pdf, $text, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_curveto\fP ($pdf, $x1, $y1, $x2, $y2, $x3, $y3)"
+.br
+.ti -1c
+.RI "\fBPDF_define_layer\fP ($pdf, $name, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_delete_pvf\fP ($pdf, $filename)"
+.br
+.ti -1c
+.RI "\fBPDF_delete_table\fP ($pdf, $table, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_delete_textflow\fP ($pdf, $textflow)"
+.br
+.ti -1c
+.RI "\fBPDF_delete\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_encoding_set_char\fP ($pdf, $encoding, $slot, $glyphname, $uv)"
+.br
+.ti -1c
+.RI "\fBPDF_end_document\fP ($pdf, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_end_font\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_end_glyph\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_end_item\fP ($pdf, $id)"
+.br
+.ti -1c
+.RI "\fBPDF_end_layer\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_end_page_ext\fP ($pdf, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_end_page\fP ($p)"
+.br
+.ti -1c
+.RI "\fBPDF_end_pattern\fP ($p)"
+.br
+.ti -1c
+.RI "\fBPDF_end_template\fP ($p)"
+.br
+.ti -1c
+.RI "\fBPDF_endpath\fP ($p)"
+.br
+.ti -1c
+.RI "\fBPDF_fill_imageblock\fP ($pdf, $page, $blockname, $image, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_fill_pdfblock\fP ($pdf, $page, $blockname, $contents, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_fill_stroke\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_fill_textblock\fP ($pdf, $page, $blockname, $text, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_fill\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_findfont\fP ($pdf, $fontname, $encoding, $embed)"
+.br
+.ti -1c
+.RI "\fBPDF_fit_image\fP ($pdf, $image, $x, $y, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_fit_pdi_page\fP ($pdf, $page, $x, $y, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_fit_table\fP ($pdf, $table, $llx, $lly, $urx, $ury, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_fit_textflow\fP ($pdf, $textflow, $llx, $lly, $urx, $ury, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_fit_textline\fP ($pdf, $text, $x, $y, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_get_apiname\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_get_buffer\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_get_errmsg\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_get_errnum\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_get_majorversion\fP ()"
+.br
+.ti -1c
+.RI "\fBPDF_get_minorversion\fP ()"
+.br
+.ti -1c
+.RI "\fBPDF_get_parameter\fP ($pdf, $\fBkey\fP, $modifier)"
+.br
+.ti -1c
+.RI "\fBPDF_get_pdi_parameter\fP ($pdf, $\fBkey\fP, $doc, $page, $reserved)"
+.br
+.ti -1c
+.RI "\fBPDF_get_pdi_value\fP ($pdf, $\fBkey\fP, $doc, $page, $reserved)"
+.br
+.ti -1c
+.RI "\fBPDF_get_value\fP ($pdf, $\fBkey\fP, $modifier)"
+.br
+.ti -1c
+.RI "\fBPDF_info_font\fP ($pdf, $font, $keyword, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_info_matchbox\fP ($pdf, $boxname, $num, $keyword)"
+.br
+.ti -1c
+.RI "\fBPDF_info_table\fP ($pdf, $table, $keyword)"
+.br
+.ti -1c
+.RI "\fBPDF_info_textflow\fP ($pdf, $textflow, $keyword)"
+.br
+.ti -1c
+.RI "\fBPDF_info_textline\fP ($pdf, $text, $keyword, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_initgraphics\fP ($pdf)"
+.br
+.ti -1c
+.RI "\fBPDF_lineto\fP ($pdf, $x, $y)"
+.br
+.ti -1c
+.RI "\fBPDF_load_3ddata\fP ($pdf, $filename, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_load_font\fP ($pdf, $fontname, $encoding, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_load_iccprofile\fP ($pdf, $profilename, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_load_image\fP ($pdf, $imagetype, $filename, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_makespotcolor\fP ($pdf, $spotname)"
+.br
+.ti -1c
+.RI "\fBPDF_moveto\fP ($pdf, $x, $y)"
+.br
+.ti -1c
+.RI "\fBPDF_new\fP ()"
+.br
+.ti -1c
+.RI "\fBPDF_open_ccitt\fP ($pdf, $filename, $width, $height, $BitReverse, $k, $Blackls1)"
+.br
+.ti -1c
+.RI "\fBPDF_open_file\fP ($pdf, $filename)"
+.br
+.ti -1c
+.RI "\fBPDF_open_image_file\fP ($pdf, $imagetype, $filename, $stringparam, $intparam)"
+.br
+.ti -1c
+.RI "\fBPDF_open_image\fP ($pdf, $imagetype, $source, $data, $length, $width, $height, $components, $bpc, $params)"
+.br
+.ti -1c
+.RI "\fBPDF_open_memory_image\fP ($pdf, $image)"
+.br
+.ti -1c
+.RI "\fBPDF_open_pdi_document\fP ($pdf, $filename, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_open_pdi_page\fP ($pdf, $doc, $pagenumber, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_open_pdi\fP ($pdf, $filename, $optlist, $len)"
+.br
+.ti -1c
+.RI "\fBPDF_pcos_get_number\fP ($pdf, $doc, $path)"
+.br
+.ti -1c
+.RI "\fBPDF_pcos_get_stream\fP ($pdf, $doc, $optlist, $path)"
+.br
+.ti -1c
+.RI "\fBPDF_pcos_get_string\fP ($pdf, $doc, $path)"
+.br
+.ti -1c
+.RI "\fBPDF_place_image\fP ($pdf, $image, $x, $y, $scale)"
+.br
+.ti -1c
+.RI "\fBPDF_place_pdi_page\fP ($pdf, $page, $x, $y, $sx, $sy)"
+.br
+.ti -1c
+.RI "\fBPDF_process_pdi\fP ($pdf, $doc, $page, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_rect\fP ($pdf, $x, $y, $width, $height)"
+.br
+.ti -1c
+.RI "\fBPDF_restore\fP ($p)"
+.br
+.ti -1c
+.RI "\fBPDF_resume_page\fP ($pdf, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_rotate\fP ($pdf, $phi)"
+.br
+.ti -1c
+.RI "\fBPDF_save\fP ($p)"
+.br
+.ti -1c
+.RI "\fBPDF_scale\fP ($pdf, $sx, $sy)"
+.br
+.ti -1c
+.RI "\fBPDF_set_border_color\fP ($pdf, $red, $green, $blue)"
+.br
+.ti -1c
+.RI "\fBPDF_set_border_dash\fP ($pdf, $black, $white)"
+.br
+.ti -1c
+.RI "\fBPDF_set_border_style\fP ($pdf, $style, $width)"
+.br
+.ti -1c
+.RI "\fBPDF_set_gstate\fP ($pdf, $gstate)"
+.br
+.ti -1c
+.RI "\fBPDF_set_info\fP ($pdf, $\fBkey\fP, $value)"
+.br
+.ti -1c
+.RI "\fBPDF_set_layer_dependency\fP ($pdf, $type, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_set_parameter\fP ($pdf, $\fBkey\fP, $value)"
+.br
+.ti -1c
+.RI "\fBPDF_set_text_pos\fP ($pdf, $x, $y)"
+.br
+.ti -1c
+.RI "\fBPDF_set_value\fP ($pdf, $\fBkey\fP, $value)"
+.br
+.ti -1c
+.RI "\fBPDF_setcolor\fP ($pdf, $fstype, $colorspace, $c1, $c2, $c3, $c4)"
+.br
+.ti -1c
+.RI "\fBPDF_setdash\fP ($pdf, $\fBb\fP, $w)"
+.br
+.ti -1c
+.RI "\fBPDF_setdashpattern\fP ($pdf, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_setflat\fP ($pdf, $flatness)"
+.br
+.ti -1c
+.RI "\fBPDF_setfont\fP ($pdf, $font, $fontsize)"
+.br
+.ti -1c
+.RI "\fBPDF_setgray_fill\fP ($pdf, $\fBg\fP)"
+.br
+.ti -1c
+.RI "\fBPDF_setgray_stroke\fP ($pdf, $\fBg\fP)"
+.br
+.ti -1c
+.RI "\fBPDF_setgray\fP ($pdf, $\fBg\fP)"
+.br
+.ti -1c
+.RI "\fBPDF_setlinecap\fP ($pdf, $linecap)"
+.br
+.ti -1c
+.RI "\fBPDF_setlinejoin\fP ($pdf, $value)"
+.br
+.ti -1c
+.RI "\fBPDF_setlinewidth\fP ($pdf, $width)"
+.br
+.ti -1c
+.RI "\fBPDF_setmatrix\fP ($pdf, $\fBa\fP, $\fBb\fP, $\fBc\fP, $d, $e, $f)"
+.br
+.ti -1c
+.RI "\fBPDF_setmiterlimit\fP ($pdf, $miter)"
+.br
+.ti -1c
+.RI "\fBPDF_setrgbcolor_fill\fP ($pdf, $red, $green, $blue)"
+.br
+.ti -1c
+.RI "\fBPDF_setrgbcolor_stroke\fP ($pdf, $red, $green, $blue)"
+.br
+.ti -1c
+.RI "\fBPDF_setrgbcolor\fP ($pdf, $red, $green, $blue)"
+.br
+.ti -1c
+.RI "\fBPDF_shading_pattern\fP ($pdf, $shading, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_shading\fP ($pdf, $shtype, $x0, $y0, $x1, $y1, $c1, $c2, $c3, $c4, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_shfill\fP ($pdf, $shading)"
+.br
+.ti -1c
+.RI "\fBPDF_show_boxed\fP ($pdf, $text, $left, $top, $width, $height, $mode, $feature)"
+.br
+.ti -1c
+.RI "\fBPDF_show_xy\fP ($pdf, $text, $x, $y)"
+.br
+.ti -1c
+.RI "\fBPDF_show\fP ($pdf, $text)"
+.br
+.ti -1c
+.RI "\fBPDF_skew\fP ($pdf, $alpha, $beta)"
+.br
+.ti -1c
+.RI "\fBPDF_stringwidth\fP ($pdf, $text, $font, $fontsize)"
+.br
+.ti -1c
+.RI "\fBPDF_stroke\fP ($p)"
+.br
+.ti -1c
+.RI "\fBPDF_suspend_page\fP ($pdf, $optlist)"
+.br
+.ti -1c
+.RI "\fBPDF_translate\fP ($pdf, $tx, $ty)"
+.br
+.ti -1c
+.RI "\fBPDF_utf16_to_utf8\fP ($pdf, $utf16string)"
+.br
+.ti -1c
+.RI "\fBPDF_utf32_to_utf16\fP ($pdf, $utf32string, $ordering)"
+.br
+.ti -1c
+.RI "\fBPDF_utf8_to_utf16\fP ($pdf, $utf8string, $ordering)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "PDF_activate_item ( $pdf,  $id)"
+Activates a previously created structure element or other content item\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$id\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-activate-item\&.php\fP
+.SS "PDF_add_launchlink ( $pdf,  $llx,  $lly,  $urx,  $ury,  $filename)"
+Adds a link to a web resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$llx\fP 
+.br
+\fI$lly\fP 
+.br
+\fI$urx\fP 
+.br
+\fI$ury\fP 
+.br
+\fI$filename\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBdeprecated 210\&. \fP
+.SS "PDF_add_locallink ( $pdf,  $lowerleftx,  $lowerlefty,  $upperrightx,  $upperrighty,  $page,  $dest)"
+Add a link annotation to a target within the current PDF file\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$lowerleftx\fP 
+.br
+\fI$lowerlefty\fP 
+.br
+\fI$upperrightx\fP 
+.br
+\fI$upperrighty\fP 
+.br
+\fI$page\fP 
+.br
+\fI$dest\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBdeprecated 211\&. \fP
+.SS "PDF_add_nameddest ( $pdf,  $name,  $optlist)"
+Creates a named destination on an arbitrary page in the current document\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$name\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-add-nameddest\&.php\fP
+.SS "PDF_add_note ( $pdf,  $llx,  $lly,  $urx,  $ury,  $contents,  $title,  $icon,  $open)"
+Sets an annotation for the current page\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$llx\fP 
+.br
+\fI$lly\fP 
+.br
+\fI$urx\fP 
+.br
+\fI$ury\fP 
+.br
+\fI$contents\fP 
+.br
+\fI$title\fP 
+.br
+\fI$icon\fP 
+.br
+\fI$open\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBdeprecated 212\&. \fP
+.SS "PDF_add_pdflink ( $pdf,  $bottom_left_x,  $bottom_left_y,  $up_right_x,  $up_right_y,  $filename,  $page,  $dest)"
+Add a file link annotation to a PDF target\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$bottom_left_x\fP 
+.br
+\fI$bottom_left_y\fP 
+.br
+\fI$up_right_x\fP 
+.br
+\fI$up_right_y\fP 
+.br
+\fI$filename\fP 
+.br
+\fI$page\fP 
+.br
+\fI$dest\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBdeprecated 213\&. \fP
+.SS "PDF_add_table_cell ( $pdf,  $table,  $column,  $row,  $text,  $optlist)"
+Adds a cell to a new or existing table\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$table\fP 
+.br
+\fI$column\fP 
+.br
+\fI$row\fP 
+.br
+\fI$text\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-add-table-cell\&.php\fP
+.SS "PDF_add_textflow ( $pdf,  $textflow,  $text,  $optlist)"
+Creates a Textflow object, or adds text and explicit options to an existing Textflow\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$textflow\fP 
+.br
+\fI$text\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-add-textflow\&.php\fP
+.SS "PDF_add_thumbnail ( $pdf,  $image)"
+Adds an existing image as thumbnail for the current page\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$image\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-add-thumbnail\&.php\fP
+.SS "PDF_add_weblink ( $pdf,  $lowerleftx,  $lowerlefty,  $upperrightx,  $upperrighty,  $url)"
+Adds a weblink annotation to a target url on the Web\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$lowerleftx\fP 
+.br
+\fI$lowerlefty\fP 
+.br
+\fI$upperrightx\fP 
+.br
+\fI$upperrighty\fP 
+.br
+\fI$url\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+This function is deprecated since \fBPDFlib\fP version 6, use \fBPDF_create_action()\fP with type=URI and \fBPDF_create_annotation()\fP with type=Link instead\&.
+.RE
+.PP
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-add-weblink\&.php\fP
+.SS "PDF_arc ( $pdf,  $x,  $y,  $r,  $alpha,  $beta)"
+Adds a counterclockwise circular arc
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$x\fP 
+.br
+\fI$y\fP 
+.br
+\fI$r\fP 
+.br
+\fI$alpha\fP 
+.br
+\fI$beta\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-arc\&.php\fP
+.SS "PDF_arcn ( $pdf,  $x,  $y,  $r,  $alpha,  $beta)"
+Except for the drawing direction, this function behaves exactly like \fBPDF_arc()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$x\fP 
+.br
+\fI$y\fP 
+.br
+\fI$r\fP 
+.br
+\fI$alpha\fP 
+.br
+\fI$beta\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-arcn\&.php\fP
+.SS "PDF_attach_file ( $pdf,  $llx,  $lly,  $urx,  $ury,  $filename,  $description,  $author,  $mimetype,  $icon)"
+Adds a file attachment annotation\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$llx\fP 
+.br
+\fI$lly\fP 
+.br
+\fI$urx\fP 
+.br
+\fI$ury\fP 
+.br
+\fI$filename\fP 
+.br
+\fI$description\fP 
+.br
+\fI$author\fP 
+.br
+\fI$mimetype\fP 
+.br
+\fI$icon\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+This function is deprecated since \fBPDFlib\fP version 6, use \fBPDF_create_annotation()\fP with type=FileAttachment instead\&.
+.RE
+.PP
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-attach-file\&.php\fP
+.SS "PDF_begin_document ( $pdf,  $filename,  $optlist)"
+Creates a new PDF file subject to various options\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$filename\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://www.pdflib.com/fileadmin/pdflib/pdf/manuals/PDFlib-9.1.2-API-reference.pdf \fP
+.SS "PDF_begin_font ( $pdf,  $filename,  $a,  $b,  $c,  $d,  $e,  $f,  $optlist)"
+Starts a Type 3 font definition\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$filename\fP 
+.br
+\fI$a\fP 
+.br
+\fI$b\fP 
+.br
+\fI$c\fP 
+.br
+\fI$d\fP 
+.br
+\fI$e\fP 
+.br
+\fI$f\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-begin-font\&.php\fP
+.SS "PDF_begin_glyph ( $pdf,  $glyphname,  $wx,  $llx,  $lly,  $urx,  $ury)"
+Starts a glyph definition for a Type 3 font\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$glyphname\fP 
+.br
+\fI$wx\fP 
+.br
+\fI$llx\fP 
+.br
+\fI$lly\fP 
+.br
+\fI$urx\fP 
+.br
+\fI$ury\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-begin-glyph\&.php\fP
+.SS "PDF_begin_item ( $pdf,  $tag,  $optlist)"
+Opens a structure element or other content item with attributes supplied as options\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$tag\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-begin-item\&.php\fP
+.SS "PDF_begin_layer ( $pdf,  $layer)"
+Starts a layer for subsequent output on the page\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$layer\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-begin-layer\&.php\fP
+.SS "PDF_begin_page ( $pdf,  $width,  $height)"
+Adds a new page to the document\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBdeprecated 216\&. \fP
+.SS "PDF_begin_page_ext ( $pdf,  $width,  $height,  $optlist)"
+Adds a new page to the document, and specifies various options\&. The parameters width and height are the dimensions of the new page in points\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-begin-page-ext\&.php\fP
+.SS "PDF_begin_pattern ( $pdf,  $width,  $height,  $xstep,  $ystep,  $painttype)"
+Starts a new pattern definition\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.br
+\fI$xstep\fP 
+.br
+\fI$ystep\fP 
+.br
+\fI$painttype\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-begin-pattern\&.php\fP
+.SS "PDF_begin_template ( $pdf,  $width,  $height)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBdeprecated 217\&. \fP
+.SS "PDF_begin_template_ext ( $pdf,  $width,  $height,  $optlist)"
+Starts a new template definition\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-begin-template-ext\&.php\fP
+.SS "PDF_circle ( $pdf,  $x,  $y,  $r)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$x\fP 
+.br
+\fI$y\fP 
+.br
+\fI$r\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-circle\&.php\fP
+.SS "PDF_clip ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-clip\&.php\fP
+.SS "PDF_close ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBdeprecated 219\&. \fP
+.SS "PDF_close_image ( $pdf,  $image)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$image\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-close-image\&.php\fP
+.SS "PDF_close_pdi ( $pdf,  $doc)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$doc\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBdeprecated 218\&. \fP
+.SS "PDF_close_pdi_page ( $pdf,  $page)"
+Closes the page handle, and frees all page-related resources
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$page\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-close-pdi-page\&.php\fP
+.SS "PDF_closepath ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-closepath\&.php\fP
+.SS "PDF_closepath_fill_stroke ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-closepath-fill-stroke\&.php\fP
+.SS "PDF_closepath_stroke ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-closepath-stroke\&.php\fP
+.SS "PDF_concat ( $pdf,  $a,  $b,  $c,  $d,  $e,  $f)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$a\fP 
+.br
+\fI$b\fP 
+.br
+\fI$c\fP 
+.br
+\fI$d\fP 
+.br
+\fI$e\fP 
+.br
+\fI$f\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-concat\&.php\fP
+.SS "PDF_continue_text ( $pdf,  $text)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$text\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-continue-text\&.php\fP
+.SS "PDF_create_3dview ( $pdf,  $username,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$username\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-create-3dview\&.php\fP
+.SS "PDF_create_action ( $pdf,  $type,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$type\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-create-action\&.php\fP
+.SS "PDF_create_annotation ( $pdf,  $llx,  $lly,  $urx,  $ury,  $type,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$llx\fP 
+.br
+\fI$lly\fP 
+.br
+\fI$urx\fP 
+.br
+\fI$ury\fP 
+.br
+\fI$type\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-create-annotation\&.php\fP
+.SS "PDF_create_bookmark ( $pdf,  $text,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$text\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-create-bookmark\&.php\fP
+.SS "PDF_create_field ( $pdf,  $llx,  $lly,  $urx,  $ury,  $name,  $type,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$llx\fP 
+.br
+\fI$lly\fP 
+.br
+\fI$urx\fP 
+.br
+\fI$ury\fP 
+.br
+\fI$name\fP 
+.br
+\fI$type\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-create-field\&.php\fP
+.SS "PDF_create_fieldgroup ( $pdf,  $name,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$name\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-create-fieldgroup\&.php\fP
+.SS "PDF_create_gstate ( $pdf,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-create-gstate\&.php\fP
+.SS "PDF_create_pvf ( $pdf,  $filename,  $data,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$filename\fP 
+.br
+\fI$data\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-create-pvf\&.php\fP
+.SS "PDF_create_textflow ( $pdf,  $text,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$text\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-create-textflow\&.php\fP
+.SS "PDF_curveto ( $pdf,  $x1,  $y1,  $x2,  $y2,  $x3,  $y3)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$x1\fP 
+.br
+\fI$y1\fP 
+.br
+\fI$x2\fP 
+.br
+\fI$y2\fP 
+.br
+\fI$x3\fP 
+.br
+\fI$y3\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-curveto\&.php\fP
+.SS "PDF_define_layer ( $pdf,  $name,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$name\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-define-layer\&.php\fP
+.SS "PDF_delete ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-delete\&.php\fP
+.SS "PDF_delete_pvf ( $pdf,  $filename)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$filename\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-delete-pvf\&.php\fP
+.SS "PDF_delete_table ( $pdf,  $table,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$table\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-delete-table\&.php\fP
+.SS "PDF_delete_textflow ( $pdf,  $textflow)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$textflow\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-delete-textflow\&.php\fP
+.SS "PDF_encoding_set_char ( $pdf,  $encoding,  $slot,  $glyphname,  $uv)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$encoding\fP 
+.br
+\fI$slot\fP 
+.br
+\fI$glyphname\fP 
+.br
+\fI$uv\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-encoding-set-char\&.php\fP
+.SS "PDF_end_document ( $pdf,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-end-document\&.php\fP
+.SS "PDF_end_font ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-end-font\&.php\fP
+.SS "PDF_end_glyph ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-end-glyph\&.php\fP
+.SS "PDF_end_item ( $pdf,  $id)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$id\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-end-item\&.php\fP
+.SS "PDF_end_layer ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-end-layer\&.php\fP
+.SS "PDF_end_page ( $p)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-end-page\&.php\fP
+.SS "PDF_end_page_ext ( $pdf,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-end-page-ext\&.php\fP
+.SS "PDF_end_pattern ( $p)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-end-pattern\&.php\fP
+.SS "PDF_end_template ( $p)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-end-template\&.php\fP
+.SS "PDF_endpath ( $p)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-endpath\&.php\fP
+.SS "PDF_fill ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-fill\&.php\fP
+.SS "PDF_fill_imageblock ( $pdf,  $page,  $blockname,  $image,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$page\fP 
+.br
+\fI$blockname\fP 
+.br
+\fI$image\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-fill-imageblock\&.php\fP
+.SS "PDF_fill_pdfblock ( $pdf,  $page,  $blockname,  $contents,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$page\fP 
+.br
+\fI$blockname\fP 
+.br
+\fI$contents\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-fill-pdfblock\&.php\fP
+.SS "PDF_fill_stroke ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-fill-stroke\&.php\fP
+.SS "PDF_fill_textblock ( $pdf,  $page,  $blockname,  $text,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$page\fP 
+.br
+\fI$blockname\fP 
+.br
+\fI$text\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-fill-textblock\&.php\fP
+.SS "PDF_findfont ( $pdf,  $fontname,  $encoding,  $embed)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$fontname\fP 
+.br
+\fI$encoding\fP 
+.br
+\fI$embed\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-findfont\&.php(Dep)\fP
+.SS "PDF_fit_image ( $pdf,  $image,  $x,  $y,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$image\fP 
+.br
+\fI$x\fP 
+.br
+\fI$y\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-fit-image\&.php\fP
+.SS "PDF_fit_pdi_page ( $pdf,  $page,  $x,  $y,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$page\fP 
+.br
+\fI$x\fP 
+.br
+\fI$y\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-fit-pdi-page\&.php\fP
+.SS "PDF_fit_table ( $pdf,  $table,  $llx,  $lly,  $urx,  $ury,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$table\fP 
+.br
+\fI$llx\fP 
+.br
+\fI$lly\fP 
+.br
+\fI$urx\fP 
+.br
+\fI$ury\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-fit-table\&.php\fP
+.SS "PDF_fit_textflow ( $pdf,  $textflow,  $llx,  $lly,  $urx,  $ury,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$textflow\fP 
+.br
+\fI$llx\fP 
+.br
+\fI$lly\fP 
+.br
+\fI$urx\fP 
+.br
+\fI$ury\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-fit-textflow\&.php\fP
+.SS "PDF_fit_textline ( $pdf,  $text,  $x,  $y,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$text\fP 
+.br
+\fI$x\fP 
+.br
+\fI$y\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-fit-textline\&.php\fP
+.SS "PDF_get_apiname ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-get-apiname\&.php\fP
+.SS "PDF_get_buffer ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-get-buffer\&.php\fP
+.SS "PDF_get_errmsg ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-get-errmsg\&.php\fP
+.SS "PDF_get_errnum ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-get-errnum\&.php\fP
+.SS "PDF_get_majorversion ()"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIvoid\fP $
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-get-majorversion\&.php(dep)\fP
+.SS "PDF_get_minorversion ()"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIvoid\fP $
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-get-minorversion\&.php(dep)\fP
+.SS "PDF_get_parameter ( $pdf,  $key,  $modifier)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$key\fP 
+.br
+\fI$modifier\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-get-parameter\&.php\fP
+.SS "PDF_get_pdi_parameter ( $pdf,  $key,  $doc,  $page,  $reserved)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$key\fP 
+.br
+\fI$doc\fP 
+.br
+\fI$page\fP 
+.br
+\fI$reserved\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-get-pdi-parameter\&.php\fP
+.SS "PDF_get_pdi_value ( $pdf,  $key,  $doc,  $page,  $reserved)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$key\fP 
+.br
+\fI$doc\fP 
+.br
+\fI$page\fP 
+.br
+\fI$reserved\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-get-pdi-value\&.php\fP
+.SS "PDF_get_value ( $pdf,  $key,  $modifier)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$key\fP 
+.br
+\fI$modifier\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-get-value\&.php\fP
+.SS "PDF_info_font ( $pdf,  $font,  $keyword,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$font\fP 
+.br
+\fI$keyword\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-info-font\&.php\fP
+.SS "PDF_info_matchbox ( $pdf,  $boxname,  $num,  $keyword)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$boxname\fP 
+.br
+\fI$num\fP 
+.br
+\fI$keyword\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-info-matchbox\&.php\fP
+.SS "PDF_info_table ( $pdf,  $table,  $keyword)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$table\fP 
+.br
+\fI$keyword\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-info-table\&.php\fP
+.SS "PDF_info_textflow ( $pdf,  $textflow,  $keyword)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$textflow\fP 
+.br
+\fI$keyword\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-info-textflow\&.php\fP
+.SS "PDF_info_textline ( $pdf,  $text,  $keyword,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$text\fP 
+.br
+\fI$keyword\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-info-textline\&.php\fP
+.SS "PDF_initgraphics ( $pdf)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-initgraphics\&.php\fP
+.SS "PDF_lineto ( $pdf,  $x,  $y)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$x\fP 
+.br
+\fI$y\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-lineto\&.php\fP
+.SS "PDF_load_3ddata ( $pdf,  $filename,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$filename\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-load-3ddata\&.php\fP
+.SS "PDF_load_font ( $pdf,  $fontname,  $encoding,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$fontname\fP 
+.br
+\fI$encoding\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-load-font\&.php\fP
+.SS "PDF_load_iccprofile ( $pdf,  $profilename,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$profilename\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-load-iccprofile\&.php\fP
+.SS "PDF_load_image ( $pdf,  $imagetype,  $filename,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$imagetype\fP 
+.br
+\fI$filename\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-load-image\&.php\fP
+.SS "PDF_makespotcolor ( $pdf,  $spotname)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$spotname\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-makespotcolor\&.php\fP
+.SS "PDF_moveto ( $pdf,  $x,  $y)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$x\fP 
+.br
+\fI$y\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-moveto\&.php\fP
+.SS "PDF_new ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+resource
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-new\&.php\fP
+.SS "PDF_open_ccitt ( $pdf,  $filename,  $width,  $height,  $BitReverse,  $k,  $Blackls1)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$filename\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.br
+\fI$BitReverse\fP 
+.br
+\fI$k\fP 
+.br
+\fI$Blackls1\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-open-ccitt\&.php(dep)\fP
+.SS "PDF_open_file ( $pdf,  $filename)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$filename\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-open-file\&.php(dep)\fP
+.SS "PDF_open_image ( $pdf,  $imagetype,  $source,  $data,  $length,  $width,  $height,  $components,  $bpc,  $params)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$imagetype\fP 
+.br
+\fI$source\fP 
+.br
+\fI$data\fP 
+.br
+\fI$length\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.br
+\fI$components\fP 
+.br
+\fI$bpc\fP 
+.br
+\fI$params\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-open-image\&.php(dep)\fP
+.SS "PDF_open_image_file ( $pdf,  $imagetype,  $filename,  $stringparam,  $intparam)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$imagetype\fP 
+.br
+\fI$filename\fP 
+.br
+\fI$stringparam\fP 
+.br
+\fI$intparam\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-open-image-file\&.php(dep)\fP
+.SS "PDF_open_memory_image ( $pdf,  $image)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$image\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-open-memory-image\&.php(not supported)\fP
+.SS "PDF_open_pdi ( $pdf,  $filename,  $optlist,  $len)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$filename\fP 
+.br
+\fI$optlist\fP 
+.br
+\fI$len\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-open-pdi\&.php\fP
+.SS "PDF_open_pdi_document ( $pdf,  $filename,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$filename\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-open-pdi-document\&.php\fP
+.SS "PDF_open_pdi_page ( $pdf,  $doc,  $pagenumber,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$doc\fP 
+.br
+\fI$pagenumber\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-open-pdi-page\&.php\fP
+.SS "PDF_pcos_get_number ( $pdf,  $doc,  $path)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$doc\fP 
+.br
+\fI$path\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-pcos-get-number\&.php\fP
+.SS "PDF_pcos_get_stream ( $pdf,  $doc,  $optlist,  $path)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$doc\fP 
+.br
+\fI$optlist\fP 
+.br
+\fI$path\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-pcos-get-stream\&.php\fP
+.SS "PDF_pcos_get_string ( $pdf,  $doc,  $path)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$doc\fP 
+.br
+\fI$path\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-pcos-get-string\&.php\fP
+.SS "PDF_place_image ( $pdf,  $image,  $x,  $y,  $scale)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$image\fP 
+.br
+\fI$x\fP 
+.br
+\fI$y\fP 
+.br
+\fI$scale\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fB(dep) \fP
+.SS "PDF_place_pdi_page ( $pdf,  $page,  $x,  $y,  $sx,  $sy)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$page\fP 
+.br
+\fI$x\fP 
+.br
+\fI$y\fP 
+.br
+\fI$sx\fP 
+.br
+\fI$sy\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fB(dep) \fP
+.SS "PDF_process_pdi ( $pdf,  $doc,  $page,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$doc\fP 
+.br
+\fI$page\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-process-pdi\&.php\fP
+.SS "PDF_rect ( $pdf,  $x,  $y,  $width,  $height)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$x\fP 
+.br
+\fI$y\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-rect\&.php\fP
+.SS "PDF_restore ( $p)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-restore\&.php\fP
+.SS "PDF_resume_page ( $pdf,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-resume-page\&.php\fP
+.SS "PDF_rotate ( $pdf,  $phi)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$phi\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-rotate\&.php\fP
+.SS "PDF_save ( $p)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-save\&.php\fP
+.SS "PDF_scale ( $pdf,  $sx,  $sy)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$sx\fP 
+.br
+\fI$sy\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-scale\&.php\fP
+.SS "PDF_set_border_color ( $pdf,  $red,  $green,  $blue)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$red\fP 
+.br
+\fI$green\fP 
+.br
+\fI$blue\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fB(dep) \fP
+.SS "PDF_set_border_dash ( $pdf,  $black,  $white)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$black\fP 
+.br
+\fI$white\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fB(dep) \fP
+.SS "PDF_set_border_style ( $pdf,  $style,  $width)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$style\fP 
+.br
+\fI$width\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fB(dep) \fP
+.SS "PDF_set_gstate ( $pdf,  $gstate)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$gstate\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-set-gstate\&.php\fP
+.SS "PDF_set_info ( $pdf,  $key,  $value)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$key\fP 
+.br
+\fI$value\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-set-info\&.php\fP
+.SS "PDF_set_layer_dependency ( $pdf,  $type,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$type\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-set-layer-dependency\&.php\fP
+.SS "PDF_set_parameter ( $pdf,  $key,  $value)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$key\fP 
+.br
+\fI$value\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-set-parameter\&.php\fP
+.SS "PDF_set_text_pos ( $pdf,  $x,  $y)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$x\fP 
+.br
+\fI$y\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-set-text-pos\&.php\fP
+.SS "PDF_set_value ( $pdf,  $key,  $value)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$key\fP 
+.br
+\fI$value\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-set-value\&.php\fP
+.SS "PDF_setcolor ( $pdf,  $fstype,  $colorspace,  $c1,  $c2,  $c3,  $c4)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$fstype\fP 
+.br
+\fI$colorspace\fP 
+.br
+\fI$c1\fP 
+.br
+\fI$c2\fP 
+.br
+\fI$c3\fP 
+.br
+\fI$c4\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-setcolor\&.php\fP
+.SS "PDF_setdash ( $pdf,  $b,  $w)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$b\fP 
+.br
+\fI$w\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-setdash\&.php\fP
+.SS "PDF_setdashpattern ( $pdf,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-setdashpattern\&.php\fP
+.SS "PDF_setflat ( $pdf,  $flatness)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$flatness\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-setflat\&.php\fP
+.SS "PDF_setfont ( $pdf,  $font,  $fontsize)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$font\fP 
+.br
+\fI$fontsize\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-setfont\&.php\fP
+.SS "PDF_setgray ( $pdf,  $g)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$g\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fB(dep) \fP
+.SS "PDF_setgray_fill ( $pdf,  $g)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$g\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fB(dep) \fP
+.SS "PDF_setgray_stroke ( $pdf,  $g)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$g\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fB(dep) \fP
+.SS "PDF_setlinecap ( $pdf,  $linecap)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$linecap\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-setlinecap\&.php\fP
+.SS "PDF_setlinejoin ( $pdf,  $value)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$value\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-setlinejoin\&.php\fP
+.SS "PDF_setlinewidth ( $pdf,  $width)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$width\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-setlinewidth\&.php\fP
+.SS "PDF_setmatrix ( $pdf,  $a,  $b,  $c,  $d,  $e,  $f)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$a\fP 
+.br
+\fI$b\fP 
+.br
+\fI$c\fP 
+.br
+\fI$d\fP 
+.br
+\fI$e\fP 
+.br
+\fI$f\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-setmatrix\&.php\fP
+.SS "PDF_setmiterlimit ( $pdf,  $miter)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$miter\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-setmiterlimit\&.php\fP
+.SS "PDF_setrgbcolor ( $pdf,  $red,  $green,  $blue)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$red\fP 
+.br
+\fI$green\fP 
+.br
+\fI$blue\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fB(dep) \fP
+.SS "PDF_setrgbcolor_fill ( $pdf,  $red,  $green,  $blue)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$red\fP 
+.br
+\fI$green\fP 
+.br
+\fI$blue\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fB(dep) \fP
+.SS "PDF_setrgbcolor_stroke ( $pdf,  $red,  $green,  $blue)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$red\fP 
+.br
+\fI$green\fP 
+.br
+\fI$blue\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fB(dep) \fP
+.SS "PDF_shading ( $pdf,  $shtype,  $x0,  $y0,  $x1,  $y1,  $c1,  $c2,  $c3,  $c4,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$shtype\fP 
+.br
+\fI$x0\fP 
+.br
+\fI$y0\fP 
+.br
+\fI$x1\fP 
+.br
+\fI$y1\fP 
+.br
+\fI$c1\fP 
+.br
+\fI$c2\fP 
+.br
+\fI$c3\fP 
+.br
+\fI$c4\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-shading\&.php\fP
+.SS "PDF_shading_pattern ( $pdf,  $shading,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$shading\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-shading-pattern\&.php\fP
+.SS "PDF_shfill ( $pdf,  $shading)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$shading\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-shfill\&.php\fP
+.SS "PDF_show ( $pdf,  $text)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$text\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-show\&.php\fP
+.SS "PDF_show_boxed ( $pdf,  $text,  $left,  $top,  $width,  $height,  $mode,  $feature)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$text\fP 
+.br
+\fI$left\fP 
+.br
+\fI$top\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.br
+\fI$mode\fP 
+.br
+\fI$feature\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int
+.RE
+.PP
+\fB(dep) \fP
+.SS "PDF_show_xy ( $pdf,  $text,  $x,  $y)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$text\fP 
+.br
+\fI$x\fP 
+.br
+\fI$y\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-show-xy\&.php\fP
+.SS "PDF_skew ( $pdf,  $alpha,  $beta)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$alpha\fP 
+.br
+\fI$beta\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-skew\&.php\fP
+.SS "PDF_stringwidth ( $pdf,  $text,  $font,  $fontsize)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$text\fP 
+.br
+\fI$font\fP 
+.br
+\fI$fontsize\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-stringwidth\&.php\fP
+.SS "PDF_stroke ( $p)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-stroke\&.php\fP
+.SS "PDF_suspend_page ( $pdf,  $optlist)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$optlist\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-suspend-page\&.php\fP
+.SS "PDF_translate ( $pdf,  $tx,  $ty)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$tx\fP 
+.br
+\fI$ty\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-translate\&.php\fP
+.SS "PDF_utf16_to_utf8 ( $pdf,  $utf16string)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$utf16string\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-utf16-to-utf8\&.php\fP
+.SS "PDF_utf32_to_utf16 ( $pdf,  $utf32string,  $ordering)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$utf32string\fP 
+.br
+\fI$ordering\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-utf32-to-utf16\&.php\fP
+.SS "PDF_utf8_to_utf16 ( $pdf,  $utf8string,  $ordering)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pdf\fP 
+.br
+\fI$utf8string\fP 
+.br
+\fI$ordering\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string
+.RE
+.PP
+\fBhttps://secure\&.php\&.net/manual/en/function\&.pdf-utf8-to-utf16\&.php\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

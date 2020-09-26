@@ -1,0 +1,248 @@
+.TH "vendor/jetbrains/phpstorm-stubs/gettext/gettext.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/gettext/gettext.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBtextdomain\fP ($text_domain)"
+.br
+.ti -1c
+.RI "\fBgettext\fP ($message)"
+.br
+.ti -1c
+.RI "\fB_\fP ($message)"
+.br
+.ti -1c
+.RI "\fBdgettext\fP ($domain, $message)"
+.br
+.ti -1c
+.RI "\fBdcgettext\fP ($domain, $message, $category)"
+.br
+.ti -1c
+.RI "\fBbindtextdomain\fP ($domain, $directory)"
+.br
+.ti -1c
+.RI "\fBngettext\fP ($msgid1, $msgid2, $\fBn\fP)"
+.br
+.ti -1c
+.RI "\fBdngettext\fP ($domain, $msgid1, $msgid2, $\fBn\fP)"
+.br
+.ti -1c
+.RI "\fBdcngettext\fP ($domain, $msgid1, $msgid2, $\fBn\fP, $category)"
+.br
+.ti -1c
+.RI "\fBbind_textdomain_codeset\fP ($domain, $codeset)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "_ ( $message)"
+Lookup a message in the current domain \fBstring $message \fP The message being translated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a translated string if one is found in the translation table, or the submitted message if not found\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "bind_textdomain_codeset ( $domain,  $codeset)"
+Specify the character encoding in which the messages from the DOMAIN message catalog will be returned \fBstring $domain \fP The domain 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$codeset\fP 
+.RE
+.PP
+The code set 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string on success\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "bindtextdomain ( $domain,  $directory)"
+Sets the path for a domain \fBstring $domain \fP The domain 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$directory\fP 
+.RE
+.PP
+The directory path 
+.PP
+\fBReturns\fP
+.RS 4
+string The full pathname for the \fIdomain\fP currently being set\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dcgettext ( $domain,  $message,  $category)"
+Overrides the domain for a single lookup \fBstring $domain \fP The domain 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$message\fP 
+.RE
+.PP
+The message 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$category\fP 
+.RE
+.PP
+The category 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string on success\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dcngettext ( $domain,  $msgid1,  $msgid2,  $n,  $category)"
+Plural version of dcgettext \fBstring $domain \fP The domain 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$msgid1\fP 
+.br
+\fI$msgid2\fP 
+.br
+\fI$n\fP 
+.br
+\fI$category\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string on success\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dgettext ( $domain,  $message)"
+Override the current domain \fBstring $domain \fP The domain 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$message\fP 
+.RE
+.PP
+The message 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string on success\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dngettext ( $domain,  $msgid1,  $msgid2,  $n)"
+Plural version of dgettext \fBstring $domain \fP The domain 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$msgid1\fP 
+.br
+\fI$msgid2\fP 
+.br
+\fI$n\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string on success\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gettext ( $message)"
+Lookup a message in the current domain \fBstring $message \fP The message being translated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a translated string if one is found in the translation table, or the submitted message if not found\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ngettext ( $msgid1,  $msgid2,  $n)"
+Plural version of gettext \fBstring $msgid1  string $msgid2  int $n  string correct plural form of message identified by \fImsgid1\fP and \fImsgid2\fP for count \fIn\fP\&.  4\&.2  5\&.0 \fP
+.SS "textdomain ( $text_domain)"
+Sets the default domain \fBstring $text_domain \fP The new message domain, or \fBNULL\fP to get the current setting without changing it 
+.PP
+\fBReturns\fP
+.RS 4
+string If successful, this function returns the current message domain, after possibly changing it\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

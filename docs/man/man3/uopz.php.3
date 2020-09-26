@@ -1,0 +1,173 @@
+.TH "vendor/jetbrains/phpstorm-stubs/uopz/uopz.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/uopz/uopz.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBuopz_add_function\fP (string $\fBclass\fP, string $\fBfunction\fP, \fBClosure\fP $handler, int $flags=\fBZEND_ACC_PUBLIC\fP, bool $\fBall\fP=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBuopz_allow_exit\fP (bool $allow)"
+.br
+.ti -1c
+.RI "\fBuopz_del_function\fP (string $\fBclass\fP, string $\fBfunction\fP, bool $\fBall\fP=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBuopz_extend\fP (string $\fBclass\fP, string $parent)"
+.br
+.ti -1c
+.RI "\fBuopz_flags\fP (string $\fBclass\fP, string $\fBfunction\fP, int $flags)"
+.br
+.ti -1c
+.RI "\fBuopz_get_exit_status\fP ()"
+.br
+.ti -1c
+.RI "\fBuopz_get_hook\fP (string $\fBclass\fP, string $\fBfunction\fP)"
+.br
+.ti -1c
+.RI "\fBuopz_get_mock\fP (string $\fBclass\fP)"
+.br
+.ti -1c
+.RI "\fBuopz_get_property\fP ($\fBclass\fP, string $property)"
+.br
+.ti -1c
+.RI "\fBuopz_get_return\fP (string $\fBclass\fP, string $\fBfunction\fP)"
+.br
+.ti -1c
+.RI "\fBuopz_get_static\fP (string $\fBclass\fP, string $\fBfunction\fP)"
+.br
+.ti -1c
+.RI "\fBuopz_implement\fP (string $\fBclass\fP, string $interface)"
+.br
+.ti -1c
+.RI "\fBuopz_redefine\fP (string $\fBclass\fP, string $\fBconstant\fP, $value)"
+.br
+.ti -1c
+.RI "\fBuopz_set_hook\fP (string $\fBclass\fP, string $\fBfunction\fP, \fBClosure\fP $hook)"
+.br
+.ti -1c
+.RI "\fBuopz_set_mock\fP (string $\fBclass\fP, $mock)"
+.br
+.ti -1c
+.RI "\fBuopz_set_property\fP ($\fBclass\fP, string $property, mixed $value)"
+.br
+.ti -1c
+.RI "\fBuopz_set_return\fP (string $\fBclass\fP, string $\fBfunction\fP, $value, $execute=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBuopz_set_static\fP (string $\fBclass\fP, string $\fBfunction\fP, array $static)"
+.br
+.ti -1c
+.RI "\fBuopz_undefine\fP (string $\fBclass\fP, string $\fBconstant\fP)"
+.br
+.ti -1c
+.RI "\fBuopz_unset_hook\fP (string $\fBclass\fP, string $\fBfunction\fP)"
+.br
+.ti -1c
+.RI "\fBuopz_unset_mock\fP (string $\fBclass\fP)"
+.br
+.ti -1c
+.RI "\fBuopz_unset_return\fP (string $\fBclass\fP, string $\fBfunction\fP)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBZEND_ACC_PUBLIC\fP 256"
+.br
+.ti -1c
+.RI "const \fBZEND_ACC_PROTECTED\fP 512"
+.br
+.ti -1c
+.RI "const \fBZEND_ACC_PRIVATE\fP 1024"
+.br
+.ti -1c
+.RI "const \fBZEND_ACC_STATIC\fP 1"
+.br
+.ti -1c
+.RI "const \fBZEND_ACC_FINAL\fP 4"
+.br
+.ti -1c
+.RI "const \fBZEND_ACC_ABSTRACT\fP 2"
+.br
+.ti -1c
+.RI "const \fBZEND_ACC_FETCH\fP \fBPHP_INT_MAX\fP"
+.br
+.ti -1c
+.RI "const \fBZEND_ACC_PPP_MASK\fP \fBZEND_ACC_PUBLIC\fP | \fBZEND_ACC_PROTECTED\fP | \fBZEND_ACC_PRIVATE\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "uopz_add_function (string $class, string $function, \fBClosure\fP $handler, int $flags = \fC\fBZEND_ACC_PUBLIC\fP\fP, bool $all = \fC\fBtrue\fP\fP)"
+Adds non-existent method \fBstring $class The name of the class  string $function The name of the method  Closure $handler The Closure that defines the new method  int $flags Flags to set for the new method  bool $all Whether all classes that descend from class will also be affected  bool TRUE on success or FALSE on failure  RuntimeException if the method to add already exists \fP
+.SS "uopz_allow_exit (bool $allow)"
+Allows control over disabled exit opcode \fBbool $allow Whether to allow the execution of exit opcodes or not\&.  void  5\&.4 \fP
+.SS "uopz_del_function (string $class, string $function, bool $all = \fC\fBtrue\fP\fP)"
+Deletes previously added method \fBstring $class The name of the class  string $function The name of the method  bool $all Whether all classes that descend from class will also be affected  bool TRUE on success or FALSE on failure  RuntimeException if the method to delete has not been added by uopz_add_function() \fP
+.SS "uopz_extend (string $class, string $parent)"
+Extend a class at runtime \fBstring $class The name of the class to extend  string $parent The name of the class to inherit  bool TRUE on success or FALSE on failure  5\&.4 \fP
+.SS "uopz_flags (string $class, string $function, int $flags)"
+Get or set flags on function or class \fBstring $class The name of a class  string $function The name of the function  int $flags A valid set of ZEND_ACC_ flags, ZEND_ACC_FETCH to read flags  int If setting, returns old flags, else returns flags  5\&.4 \fP
+.SS "uopz_get_exit_status ()"
+Retrieve the last set exit status \fBint|null The last exit status, or NULL if exit() has not been called  5\&.4 \fP
+.SS "uopz_get_hook (string $class, string $function)"
+Gets previously set hook on method \fBstring $class The name of the class  string $function The name of the method  Closure|null The previously set hook, or NULL if no hook has been set \fP
+.SS "uopz_get_mock (string $class)"
+Get the current mock for a class \fBstring $class The name of the mocked class  string|object|null Either a string containing the name of the mock, or an object, or NULL if no mock has been set  5\&.4 \fP
+.SS "uopz_get_property ( $class, string $property)"
+Gets the value of a static class property, if class is given, or the value of an instance property, if instance is given \fBstring|object $class The name of the class or the object instance  string $property The name of the property  mixed The value of the class or instance property, or NULL if the property is not defined \fP
+.SS "uopz_get_return (string $class, string $function)"
+Gets a previous set return value for a function \fBstring $class The name of the class containing the function  string $function The name of the function  mixed  5\&.4 \fP
+.SS "uopz_get_static (string $class, string $function)"
+Gets the static variables from method scope \fBstring $class The name of the class  string $function The name of the method  array|null An associative array of variable names mapped to their current values on success, or NULL if the method does not exist \fP
+.SS "uopz_implement (string $class, string $interface)"
+Implements an interface at runtime \fBstring $class The name of the class  string $interface The name of the interface  bool  5\&.4 \fP
+.SS "uopz_redefine (string $class, string $constant,  $value)"
+Redefine a constant \fBstring $class The name of the class containing the constant  string $constant The name of the constant  mixed $value The new value for the constant, must be a valid type for a constant variable  bool  5\&.4 \fP
+.SS "uopz_set_hook (string $class, string $function, \fBClosure\fP $hook)"
+Sets hook to execute when entering a method \fBstring $class The name of the class  string $function The name of the method  Closure $hook A closure to execute when entering the method  bool TRUE on success or FALSE on failure \fP
+.SS "uopz_set_mock (string $class,  $mock)"
+Use mock instead of class for new objects \fBstring $class The name of the class to be mocked  string|object $mock The mock to use in the form of a string containing the name of the class to use or an object  void  7\&.0 \fP
+.SS "uopz_set_property ( $class, string $property, mixed $value)"
+Sets the value of an existing static class property, if class is given, or the value of an existing instance property, if instance is given \fBstring|object $class The name of the class or the object instance  string $property The name of the property  mixed $value The value to assign to the property  void \fP
+.SS "uopz_set_return (string $class, string $function,  $value,  $execute = \fC\fBfalse\fP\fP)"
+Provide a return value for an existing function \fBstring $class The name of the class containing the function  string $function The name of an existing function  mixed $value The value the function should return\&. If a Closure is provided and the execute flag is set, the Closure will be executed in place of the original function  bool $execute If true, and a Closure was provided as the value, the Closure will be executed in place of the original function\&.  bool  7\&.0 \fP
+.SS "uopz_set_static (string $class, string $function, array $static)"
+Sets the static variables in method scope \fBstring $class The name of the class  string $function The name of the method  array $static The associative array of variable names mapped to their values  void \fP
+.SS "uopz_undefine (string $class, string $constant)"
+Undefine a constant \fBstring $class The name of the class containing the constant  string $constant The name of the constant  bool  5\&.4 \fP
+.SS "uopz_unset_hook (string $class, string $function)"
+Removes the previously set hook on a method \fBstring $class The name of the class  string $function The name of the method  bool TRUE on success or FALSE on failure \fP
+.SS "uopz_unset_mock (string $class)"
+Unset previously set mock \fBstring $class The name of the mocked class  void  7\&.0 \fP
+.SS "uopz_unset_return (string $class, string $function)"
+Unsets a previously set return value for a function \fBstring $class The name of the class containing the function  string $function The name of an existing function  bool  7\&.0 \fP
+.SH "Variable Documentation"
+.PP 
+.SS "const ZEND_ACC_ABSTRACT 2"
+Mark function as abstract \fBhttps://secure\&.php\&.net/manual/en/uopz\&.constants\&.php#constant\&.zend-acc-abstract\fP
+.SS "const ZEND_ACC_FETCH \fBPHP_INT_MAX\fP"
+Used for getting flags only \fBhttps://secure\&.php\&.net/manual/en/uopz\&.constants\&.php#constant\&.zend-acc-fetch\fP
+.SS "const ZEND_ACC_FINAL 4"
+Mark function as final \fBhttps://secure\&.php\&.net/manual/en/uopz\&.constants\&.php#constant\&.zend-acc-final\fP
+.SS "const ZEND_ACC_PPP_MASK \fBZEND_ACC_PUBLIC\fP | \fBZEND_ACC_PROTECTED\fP | \fBZEND_ACC_PRIVATE\fP"
+The bitmask of ZEND_ACC_PUBLIC | ZEND_ACC_PROTECTED | ZEND_ACC_PRIVATE 
+.SS "const ZEND_ACC_PRIVATE 1024"
+Mark function as private \fBhttps://secure\&.php\&.net/manual/en/uopz\&.constants\&.php#constant\&.zend-acc-private\fP
+.SS "const ZEND_ACC_PROTECTED 512"
+Mark function as protected \fBhttps://secure\&.php\&.net/manual/en/uopz\&.constants\&.php#constant\&.zend-acc-protected\fP
+.SS "const ZEND_ACC_PUBLIC 256"
+Mark function as public, the default \fBhttps://secure\&.php\&.net/manual/en/uopz\&.constants\&.php#constant\&.zend-acc-public\fP
+.SS "const ZEND_ACC_STATIC 1"
+Mark function as static \fBhttps://secure\&.php\&.net/manual/en/uopz\&.constants\&.php#constant\&.zend-acc-static\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

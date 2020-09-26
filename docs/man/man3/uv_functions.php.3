@@ -1,0 +1,2674 @@
+.TH "vendor/jetbrains/phpstorm-stubs/uv/uv_functions.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/uv/uv_functions.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBuv_unref\fP ($uv_t)"
+.br
+.ti -1c
+.RI "\fBuv_last_error\fP ($uv_loop=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBuv_err_name\fP (int $error_code)"
+.br
+.ti -1c
+.RI "\fBuv_strerror\fP (int $error_code)"
+.br
+.ti -1c
+.RI "\fBuv_update_time\fP ($uv_loop)"
+.br
+.ti -1c
+.RI "\fBuv_ref\fP ($uv_handle)"
+.br
+.ti -1c
+.RI "\fBuv_run\fP ($uv_loop=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBuv_run_once\fP ($uv_loop=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBuv_loop_delete\fP ($uv_loop)"
+.br
+.ti -1c
+.RI "\fBuv_now\fP ()"
+.br
+.ti -1c
+.RI "\fBuv_tcp_bind\fP ($uv_tcp, $uv_sockaddr)"
+.br
+.ti -1c
+.RI "\fBuv_tcp_bind6\fP ($uv_tcp, $uv_sockaddr)"
+.br
+.ti -1c
+.RI "\fBuv_write\fP ($handle, string $data, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_write2\fP ($handle, string $data, $send, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_tcp_nodelay\fP ($handle, bool $enable)"
+.br
+.ti -1c
+.RI "\fBuv_accept\fP ($server, $client)"
+.br
+.ti -1c
+.RI "\fBuv_shutdown\fP ($handle, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_close\fP ($handle, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_read_start\fP ($handle, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_read2_start\fP ($handle, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_read_stop\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBuv_ip4_addr\fP (string $ipv4_addr, int $port)"
+.br
+.ti -1c
+.RI "\fBuv_ip6_addr\fP (string $ipv6_addr, int $port)"
+.br
+.ti -1c
+.RI "\fBuv_listen\fP ($handle, int $backlog, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_tcp_connect\fP ($handle, $ipv4_addr, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_tcp_connect6\fP ($handle, $ipv6_addr, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_timer_init\fP ($loop=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBuv_timer_start\fP ($timer, int $timeout, int $repeat, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_timer_stop\fP ($timer)"
+.br
+.ti -1c
+.RI "\fBuv_timer_again\fP ($timer)"
+.br
+.ti -1c
+.RI "\fBuv_timer_set_repeat\fP ($timer, int $repeat)"
+.br
+.ti -1c
+.RI "\fBuv_timer_get_repeat\fP ($timer)"
+.br
+.ti -1c
+.RI "\fBuv_idle_init\fP ($loop=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBuv_idle_start\fP ($idle, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_idle_stop\fP ($idle)"
+.br
+.ti -1c
+.RI "\fBuv_getaddrinfo\fP ($loop, callable $\fBcallback\fP, string $node, string $service, array $hints)"
+.br
+.ti -1c
+.RI "\fBuv_tcp_init\fP ($loop=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBuv_default_loop\fP ()"
+.br
+.ti -1c
+.RI "\fBuv_loop_new\fP ()"
+.br
+.ti -1c
+.RI "\fBuv_udp_init\fP ($loop=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBuv_udp_bind\fP ($resource, $address, int $flags)"
+.br
+.ti -1c
+.RI "\fBuv_udp_bind6\fP ($resource, $address, int $flags)"
+.br
+.ti -1c
+.RI "\fBuv_udp_recv_start\fP ($handle, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_udp_recv_stop\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBuv_udp_set_membership\fP ($handle, string $multicast_addr, string $interface_addr, int $membership)"
+.br
+.ti -1c
+.RI "\fBuv_udp_set_multicast_loop\fP ($handle, int $enabled)"
+.br
+.ti -1c
+.RI "\fBuv_udp_set_multicast_ttl\fP ($handle, int $ttl)"
+.br
+.ti -1c
+.RI "\fBuv_udp_set_broadcast\fP ($handle, bool $enabled)"
+.br
+.ti -1c
+.RI "\fBuv_udp_send\fP ($handle, string $data, $uv_addr, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_udp_send6\fP ($handle, string $data, $uv_addr6, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_is_active\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBuv_is_readable\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBuv_is_writable\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBuv_walk\fP ($loop, callable $closure, array $opaque=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBuv_guess_handle\fP ($uv)"
+.br
+.ti -1c
+.RI "\fBuv_handle_type\fP ($uv)"
+.br
+.ti -1c
+.RI "\fBuv_pipe_init\fP ($loop, int $ipc)"
+.br
+.ti -1c
+.RI "\fBuv_pipe_open\fP ($handle, int $pipe)"
+.br
+.ti -1c
+.RI "\fBuv_pipe_bind\fP ($handle, string $name)"
+.br
+.ti -1c
+.RI "\fBuv_pipe_connect\fP ($handle, string $path, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_pipe_pending_instances\fP ($handle, $\fBcount\fP)"
+.br
+.ti -1c
+.RI "\fBuv_ares_init_options\fP ($loop, array $options, int $optmask)"
+.br
+.ti -1c
+.RI "\fBares_gethostbyname\fP ($handle, string $name, int $flag, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_loadavg\fP ()"
+.br
+.ti -1c
+.RI "\fBuv_uptime\fP ()"
+.br
+.ti -1c
+.RI "\fBuv_get_free_memory\fP ()"
+.br
+.ti -1c
+.RI "\fBuv_get_total_memory\fP ()"
+.br
+.ti -1c
+.RI "\fBuv_hrtime\fP ()"
+.br
+.ti -1c
+.RI "\fBuv_exepath\fP ()"
+.br
+.ti -1c
+.RI "\fBuv_cpu_info\fP ()"
+.br
+.ti -1c
+.RI "\fBuv_interface_addresses\fP ()"
+.br
+.ti -1c
+.RI "\fBuv_stdio_new\fP ($fd, int $flags)"
+.br
+.ti -1c
+.RI "\fBuv_spawn\fP ($loop, string $command, array $args, array $stdio, string $cwd, array $env=array(), callable $\fBcallback\fP=\fBnull\fP, int $flags=\fBnull\fP, array $options=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBuv_process_kill\fP ($handle, int $signal)"
+.br
+.ti -1c
+.RI "\fBuv_kill\fP (int $pid, int $signal)"
+.br
+.ti -1c
+.RI "\fBuv_chdir\fP (string $directory)"
+.br
+.ti -1c
+.RI "\fBuv_rwlock_init\fP ()"
+.br
+.ti -1c
+.RI "\fBuv_rwlock_rdlock\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBuv_rwlock_tryrdlock\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBuv_rwlock_rdunlock\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBuv_rwlock_wrlock\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBuv_rwlock_trywrlock\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBuv_rwlock_wrunlock\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBuv_mutex_init\fP ()"
+.br
+.ti -1c
+.RI "\fBuv_mutex_lock\fP ($lock)"
+.br
+.ti -1c
+.RI "\fBuv_mutex_trylock\fP ($lock)"
+.br
+.ti -1c
+.RI "\fBuv_sem_init\fP (int $value)"
+.br
+.ti -1c
+.RI "\fBuv_sem_post\fP ($sem)"
+.br
+.ti -1c
+.RI "\fBuv_sem_wait\fP ($sem)"
+.br
+.ti -1c
+.RI "\fBuv_sem_trywait\fP ($sem)"
+.br
+.ti -1c
+.RI "\fBuv_prepare_init\fP ($loop)"
+.br
+.ti -1c
+.RI "\fBuv_prepare_start\fP ($handle, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_prepare_stop\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBuv_check_init\fP ($loop)"
+.br
+.ti -1c
+.RI "\fBuv_check_start\fP ($handle, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_check_stop\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBuv_async_init\fP ($loop, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_async_send\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBuv_queue_work\fP ($loop, callable $\fBcallback\fP, callable $after_callback)"
+.br
+.ti -1c
+.RI "\fBuv_fs_open\fP ($loop, string $path, int $flag, int $mode, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_read\fP ($loop, $fd, int $offset, int $length, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_close\fP ($loop, $fd, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_write\fP ($loop, $fd, string $buffer, int $offset, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_fsync\fP ($loop, $fd, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_fdatasync\fP ($loop, $fd, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_ftruncate\fP ($loop, $fd, int $offset, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_mkdir\fP ($loop, string $path, int $mode, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_rmdir\fP ($loop, string $path, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_unlink\fP ($loop, string $path, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_rename\fP ($loop, string $from, string $to, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_utime\fP ($loop, string $path, int $utime, int $atime, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_futime\fP ($loop, $fd, int $utime, int $atime, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_chmod\fP ($loop, string $path, int $mode, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_fchmod\fP ($loop, $fd, int $mode, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_chown\fP ($loop, string $path, int $uid, int $gid, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_fchown\fP ($loop, $fd, int $uid, int $gid, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_link\fP ($loop, string $from, string $to, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_symlink\fP ($loop, string $from, string $to, int $flags, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_readlink\fP ($loop, string $path, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_stat\fP ($loop, string $path, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_lstat\fP ($loop, string $path, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_fstat\fP ($loop, $fd, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_readdir\fP ($loop, string $path, int $flags, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_sendfile\fP ($loop, $in_fd, $out_fd, int $offset, int $length, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_event_init\fP ($loop, string $path, callable $\fBcallback\fP, int $flags=0)"
+.br
+.ti -1c
+.RI "\fBuv_tty_init\fP ($loop, $fd, int $readable)"
+.br
+.ti -1c
+.RI "\fBuv_tty_get_winsize\fP ($tty, int &$width, int &$height)"
+.br
+.ti -1c
+.RI "\fBuv_tty_set_mode\fP ($tty, int $mode)"
+.br
+.ti -1c
+.RI "\fBuv_tty_reset_mode\fP ()"
+.br
+.ti -1c
+.RI "\fBuv_tcp_getsockname\fP ($uv_sockaddr)"
+.br
+.ti -1c
+.RI "\fBuv_tcp_getpeername\fP ($uv_sockaddr)"
+.br
+.ti -1c
+.RI "\fBuv_udp_getsockname\fP ($uv_sockaddr)"
+.br
+.ti -1c
+.RI "\fBuv_resident_set_memory\fP ()"
+.br
+.ti -1c
+.RI "\fBuv_ip4_name\fP ($address)"
+.br
+.ti -1c
+.RI "\fBuv_ip6_name\fP ($address)"
+.br
+.ti -1c
+.RI "\fBuv_poll_init\fP ($uv_loop, $fd)"
+.br
+.ti -1c
+.RI "\fBuv_poll_start\fP ($handle, int $events, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBuv_poll_stop\fP ($poll)"
+.br
+.ti -1c
+.RI "\fBuv_fs_poll_init\fP ($uv_loop=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBuv_fs_poll_start\fP ($handle, $\fBcallback\fP, string $path, int $interval)"
+.br
+.ti -1c
+.RI "\fBuv_fs_poll_stop\fP ($poll)"
+.br
+.ti -1c
+.RI "\fBuv_stop\fP ($uv_loop)"
+.br
+.ti -1c
+.RI "\fBuv_signal_stop\fP ($sig_handle)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "ares_gethostbyname ( $handle, string $name, int $flag, callable $callback)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.br
+\fI$name\fP 
+.br
+\fI$flag\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_accept ( $server,  $client)"
+Accepts a connection on a socket\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$server\fP uv_tcp or uv_pipe server resource\&. 
+.br
+\fI$client\fP uv_tcp or uv_pipe client resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_ares_init_options ( $loop, array $options, int $optmask)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP 
+.br
+\fI$options\fP 
+.br
+\fI$optmask\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_async_init ( $loop, callable $callback)"
+Setup async callback\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop resource 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource uv async resource\&. 
+.RE
+.PP
+
+.SS "uv_async_send ( $handle)"
+Send async callback immidiately\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv async handle\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_chdir (string $directory)"
+Change working directory\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$directory\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "uv_check_init ( $loop)"
+Setup check resource\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_check_start ( $handle, callable $callback)"
+Stats check loop callback\&. (after loop callback)
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (check)\&. 
+.br
+\fI$callback\fP this callback parameter expects (resource $check, long $status)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_check_stop ( $handle)"
+Stop check callback\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (check)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_close ( $handle, callable $callback)"
+Close uv handle\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resources (uv_tcp, uv_udp, uv_pipe \&.\&.\&.etc\&.)\&. 
+.br
+\fI$callback\fP callable variables\&. this callback expects (resource $handle, long $status)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_cpu_info ()"
+Returns current cpu informations\&.
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SS "uv_default_loop ()"
+Return default loop handle\&.
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_err_name (int $error_code)"
+Get error code name\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$error_code\fP libuv error code\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "uv_exepath ()"
+Returns current exepath\&. basically this will returns current php path\&.
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "uv_fs_chmod ( $loop, string $path, int $mode, callable $callback)"
+Async chmod\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle\&. 
+.br
+\fI$path\fP 
+.br
+\fI$mode\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_chown ( $loop, string $path, int $uid, int $gid, callable $callback)"
+Async chown\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle\&. 
+.br
+\fI$path\fP 
+.br
+\fI$uid\fP 
+.br
+\fI$gid\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_close ( $loop,  $fd, callable $callback)"
+Close specified file descriptor\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv_loop resource\&. 
+.br
+\fI$fd\fP file descriptor\&. this expects long $fd, resource $php_stream or resource $php_socket\&. 
+.br
+\fI$callback\fP this callback parameter expects (resource $stream)
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_event_init ( $loop, string $path, callable $callback, int $flags = \fC0\fP)"
+Initialize fs event\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle 
+.br
+\fI$path\fP 
+.br
+\fI$callback\fP 
+.br
+\fI$flags\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_fs_fchmod ( $loop,  $fd, int $mode, callable $callback)"
+Async fchmod\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle\&. 
+.br
+\fI$fd\fP 
+.br
+\fI$mode\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_fchown ( $loop,  $fd, int $uid, int $gid, callable $callback)"
+Async fchown\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle\&. 
+.br
+\fI$fd\fP 
+.br
+\fI$uid\fP 
+.br
+\fI$gid\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_fdatasync ( $loop,  $fd, callable $callback)"
+Async fdatasync\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle\&. 
+.br
+\fI$fd\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_fstat ( $loop,  $fd, callable $callback)"
+Async fstat\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle\&. 
+.br
+\fI$fd\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_fsync ( $loop,  $fd, callable $callback)"
+Async fsync\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle\&. 
+.br
+\fI$fd\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_ftruncate ( $loop,  $fd, int $offset, callable $callback)"
+Async ftruncate\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle\&. 
+.br
+\fI$fd\fP 
+.br
+\fI$offset\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_futime ( $loop,  $fd, int $utime, int $atime, callable $callback)"
+Async futime\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle\&. 
+.br
+\fI$fd\fP 
+.br
+\fI$utime\fP 
+.br
+\fI$atime\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_link ( $loop, string $from, string $to, callable $callback)"
+Async link\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle\&. 
+.br
+\fI$from\fP 
+.br
+\fI$to\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_lstat ( $loop, string $path, callable $callback)"
+Async lstat\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle 
+.br
+\fI$path\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_mkdir ( $loop, string $path, int $mode, callable $callback)"
+Async mkdir\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle 
+.br
+\fI$path\fP 
+.br
+\fI$mode\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_open ( $loop, string $path, int $flag, int $mode, callable $callback)"
+Open specified file\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv_loop resource\&. 
+.br
+\fI$path\fP file path 
+.br
+\fI$flag\fP file flag\&. this should be \fBUV::O_RDONLY\fP and some constants flag\&. 
+.br
+\fI$mode\fP mode flag\&. this should be \fBUV::S_IRWXU\fP and some mode flag\&. 
+.br
+\fI$callback\fP this callback parameter expects (resource $stream)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_fs_poll_init ( $uv_loop = \fC\fBnull\fP\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv_loop\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_fs_poll_start ( $handle,  $callback, string $path, int $interval)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.br
+\fI$callback\fP 
+.br
+\fI$path\fP 
+.br
+\fI$interval\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_fs_poll_stop ( $poll)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$poll\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_read ( $loop,  $fd, int $offset, int $length, callable $callback)"
+Async read\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle 
+.br
+\fI$fd\fP this expects long $fd, resource $php_stream or resource $php_socket\&. 
+.br
+\fI$offset\fP the offset position in the file at which reading should commence\&. 
+.br
+\fI$length\fP the length in bytes that should be read starting at position $offset\&. 
+.br
+\fI$callback\fP this callback parameter expects (zval $fd, long $nread, string $buffer)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_readdir ( $loop, string $path, int $flags, callable $callback)"
+Async readdir\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle 
+.br
+\fI$path\fP 
+.br
+\fI$flags\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_readlink ( $loop, string $path, callable $callback)"
+Async readlink\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle 
+.br
+\fI$path\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_rename ( $loop, string $from, string $to, callable $callback)"
+Async rename\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle\&. 
+.br
+\fI$from\fP 
+.br
+\fI$to\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_rmdir ( $loop, string $path, callable $callback)"
+Async rmdir\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle 
+.br
+\fI$path\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_sendfile ( $loop,  $in_fd,  $out_fd, int $offset, int $length, callable $callback)"
+Async sendfile\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle 
+.br
+\fI$in_fd\fP 
+.br
+\fI$out_fd\fP 
+.br
+\fI$offset\fP 
+.br
+\fI$length\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+
+.SS "uv_fs_stat ( $loop, string $path, callable $callback)"
+Async stat\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle 
+.br
+\fI$path\fP 
+.br
+\fI$callback\fP this callback parameter expects (resource $stream, array $stat)
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_symlink ( $loop, string $from, string $to, int $flags, callable $callback)"
+Async symlink\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle\&. 
+.br
+\fI$from\fP 
+.br
+\fI$to\fP 
+.br
+\fI$flags\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_unlink ( $loop, string $path, callable $callback)"
+Async unlink\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle 
+.br
+\fI$path\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_utime ( $loop, string $path, int $utime, int $atime, callable $callback)"
+Async utime\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle\&. 
+.br
+\fI$path\fP 
+.br
+\fI$utime\fP 
+.br
+\fI$atime\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_fs_write ( $loop,  $fd, string $buffer, int $offset, callable $callback)"
+Write buffer to specified file descriptor\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv_loop resource\&. 
+.br
+\fI$fd\fP file descriptor\&. this expects long $fd, resource $php_stream or resource $php_socket\&. 
+.br
+\fI$buffer\fP buffer\&. 
+.br
+\fI$offset\fP 
+.br
+\fI$callback\fP this callback parameter expects (resource $stream, long $result)
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_get_free_memory ()"
+Returns current free memory size\&.
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "uv_get_total_memory ()"
+Returns total memory size\&.
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "uv_getaddrinfo ( $loop, callable $callback, string $node, string $service, array $hints)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP 
+.br
+\fI$callback\fP 
+.br
+\fI$node\fP 
+.br
+\fI$service\fP 
+.br
+\fI$hints\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_guess_handle ( $uv)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "uv_handle_type ( $uv)"
+Returns current uv type\&. (this is not libuv function\&. util for php-uv)\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv\fP uv_handle\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int should return UV::IS_UV_* constatns\&. e\&.g) \fBUV::IS_UV_TCP\fP\&. 
+.RE
+.PP
+
+.SS "uv_hrtime ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "uv_idle_init ( $loop = \fC\fBnull\fP\fP)"
+Initialize uv idle handle\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv_loop resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource initialized idle handle\&. 
+.RE
+.PP
+
+.SS "uv_idle_start ( $idle, callable $callback)"
+start idle callback\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$idle\fP uv_idle resource\&. 
+.br
+\fI$callback\fP idle callback\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_idle_stop ( $idle)"
+Stop idle callback\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$idle\fP uv_idle resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_interface_addresses ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SS "uv_ip4_addr (string $ipv4_addr, int $port)"
+Create a ipv4 sockaddr\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ipv4_addr\fP ipv4 address 
+.br
+\fI$port\fP port number\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_ip4_name ( $address)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$address\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "uv_ip6_addr (string $ipv6_addr, int $port)"
+Create a ipv6 sockaddr\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ipv6_addr\fP ipv6 address\&. 
+.br
+\fI$port\fP port number\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_ip6_name ( $address)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$address\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "uv_is_active ( $handle)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "uv_is_readable ( $handle)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "uv_is_writable ( $handle)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "uv_kill (int $pid, int $signal)"
+Send signal to specified pid\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pid\fP process id\&. 
+.br
+\fI$signal\fP 
+.RE
+.PP
+
+.SS "uv_last_error ( $uv_loop = \fC\fBnull\fP\fP)"
+Get last error code\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv_loop\fP uv loop handle\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "uv_listen ( $handle, int $backlog, callable $callback)"
+Listens for a connection on a uv handle\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (tcp, udp and pipe)\&. 
+.br
+\fI$backlog\fP backlog\&. 
+.br
+\fI$callback\fP this callback parameter expects (resource $connection, long $status)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_loadavg ()"
+Returns current loadaverage\&.
+.PP
+Note: returns array on windows box\&. (does not support load average on windows)\&.
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SS "uv_loop_delete ( $uv_loop)"
+Delete specified loop resource\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv_loop\fP uv_loop resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_loop_new ()"
+Create a new loop handle\&.
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_mutex_init ()"
+Initialize mutex resource\&.
+.PP
+\fBReturns\fP
+.RS 4
+resource uv mutex resource 
+.RE
+.PP
+
+.SS "uv_mutex_lock ( $lock)"
+Lock mutex\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$lock\fP uv resource handle (uv mutex)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_mutex_trylock ( $lock)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$lock\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "uv_now ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "uv_pipe_bind ( $handle, string $name)"
+Create a named pipe\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv pipe handle\&. 
+.br
+\fI$name\fP dunnno\&. maybe file descriptor\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "uv_pipe_connect ( $handle, string $path, callable $callback)"
+Connect to named pipe\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv pipe handle\&. 
+.br
+\fI$path\fP named pipe path\&. 
+.br
+\fI$callback\fP this callback parameter expects (resource $pipe, long $status)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_pipe_init ( $loop, int $ipc)"
+Initialize pipe resource\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv_loop resource\&. 
+.br
+\fI$ipc\fP when this pipe use for ipc, please set true otherwise false\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_pipe_open ( $handle, int $pipe)"
+Open a pipe resource\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv pipe handle\&. 
+.br
+\fI$pipe\fP dunnno\&. maybe file descriptor\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_pipe_pending_instances ( $handle,  $count)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.br
+\fI$count\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_poll_init ( $uv_loop,  $fd)"
+Initialize poll\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv_loop\fP uv_loop resource\&. 
+.br
+\fI$fd\fP this expects long fd, PHP's stream or PHP's socket resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource uv resource which initialized poll\&. 
+.RE
+.PP
+
+.SS "uv_poll_start ( $handle, int $events, callable $callback)"
+Start polling\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv poll resource\&. 
+.br
+\fI$events\fP UV::READBLE and \fBUV::WRITABLE\fP flags\&. 
+.br
+\fI$callback\fP this callback parameter expects (resource $poll, long $status, long $events, mixed $connection)\&. the connection parameter passes uv_poll_init'd fd\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_poll_stop ( $poll)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$poll\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_prepare_init ( $loop)"
+Initialize prepare resource\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_prepare_start ( $handle, callable $callback)"
+Setup prepare loop callback\&. (pre loop callback)
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (prepare) 
+.br
+\fI$callback\fP this callback parameter expects (resource $prepare, long $status)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_prepare_stop ( $handle)"
+Stop prepare callback\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (prepare)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_process_kill ( $handle, int $signal)"
+Send signal to specified uv process resource\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (process)\&. 
+.br
+\fI$signal\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_queue_work ( $loop, callable $callback, callable $after_callback)"
+Execute callbacks in another thread (requires \fBThread\fP Safe enabled PHP)\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP 
+.br
+\fI$callback\fP 
+.br
+\fI$after_callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_read2_start ( $handle, callable $callback)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_read_start ( $handle, callable $callback)"
+Starts read callback for uv resources\&.
+.PP
+Note: You have to handle erorrs correctly\&. otherwise this will leak\&. Note: if you want to use PHP's stream or socket resource\&. see uv_fs_poll_init and uv_fs_read\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resources (uv_tcp, uv_udp, uv_pipe \&.\&.\&.etc\&.) 
+.br
+\fI$callback\fP callable variables\&. this callback parameter expects (resource $handle, long $nread, string buffer)\&. 
+.RE
+.PP
+
+.SS "uv_read_stop ( $handle)"
+Stop read callback\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle which started uv_read\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_ref ( $uv_handle)"
+Increment reference count\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv_handle\fP uv resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_resident_set_memory ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "uv_run ( $uv_loop = \fC\fBnull\fP\fP)"
+Run event loop\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv_loop\fP uv_loop resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_run_once ( $uv_loop = \fC\fBnull\fP\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv_loop\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_rwlock_init ()"
+Initialize rwlock resource\&.
+.PP
+\fBReturns\fP
+.RS 4
+resource returns uv rwlock resource\&. 
+.RE
+.PP
+
+.SS "uv_rwlock_rdlock ( $handle)"
+Set read lock\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (uv rwlock)\&. 
+.RE
+.PP
+
+.SS "uv_rwlock_rdunlock ( $handle)"
+Unlock read lock\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (uv rwlock)
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_rwlock_tryrdlock ( $handle)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "uv_rwlock_trywrlock ( $handle)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+
+.SS "uv_rwlock_wrlock ( $handle)"
+Set write lock\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (uv rwlock)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_rwlock_wrunlock ( $handle)"
+Unlock write lock\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (uv rwlock)\&. 
+.RE
+.PP
+
+.SS "uv_sem_init (int $value)"
+Initialize semaphore resource\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_sem_post ( $sem)"
+Post semaphore\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sem\fP uv resource handle (uv sem)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_sem_trywait ( $sem)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sem\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_sem_wait ( $sem)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sem\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_shutdown ( $handle, callable $callback)"
+Shutdown uv handle\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resources (uv_tcp, uv_udp, uv_pipe \&.\&.\&.etc\&.)\&. 
+.br
+\fI$callback\fP callable variables\&. this callback expects (resource $handle, long $status)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_signal_stop ( $sig_handle)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sig_handle\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "uv_spawn ( $loop, string $command, array $args, array $stdio, string $cwd, array $env = \fCarray()\fP, callable $callback = \fC\fBnull\fP\fP, int $flags = \fC\fBnull\fP\fP, array $options = \fC\fBnull\fP\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP 
+.br
+\fI$command\fP 
+.br
+\fI$args\fP 
+.br
+\fI$stdio\fP 
+.br
+\fI$cwd\fP 
+.br
+\fI$env\fP 
+.br
+\fI$callback\fP 
+.br
+\fI$flags\fP 
+.br
+\fI$options\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_stdio_new ( $fd, int $flags)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fd\fP 
+.br
+\fI$flags\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_stop ( $uv_loop)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv_loop\fP uv loop handle
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_strerror (int $error_code)"
+Get error message\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$error_code\fP libuv error code 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "uv_tcp_bind ( $uv_tcp,  $uv_sockaddr)"
+Binds a name to a socket\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv_tcp\fP uv_tcp resource 
+.br
+\fI$uv_sockaddr\fP uv sockaddr4 resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_tcp_bind6 ( $uv_tcp,  $uv_sockaddr)"
+Binds a name to a socket\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv_tcp\fP uv_tcp resource 
+.br
+\fI$uv_sockaddr\fP uv sockaddr6 resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_tcp_connect ( $handle,  $ipv4_addr, callable $callback)"
+Connect to specified ip address and port\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP requires \fBuv_tcp_init()\fP resource\&. 
+.br
+\fI$ipv4_addr\fP requires uv_sockaddr resource\&. 
+.br
+\fI$callback\fP callable variables\&. This callback expects (resource $tcp_handle, $status)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_tcp_connect6 ( $handle,  $ipv6_addr, callable $callback)"
+Connect to specified ip address and port\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP requires \fBuv_tcp_init()\fP resource\&. 
+.br
+\fI$ipv6_addr\fP requires uv_sockaddr resource\&. 
+.br
+\fI$callback\fP callable variables\&. This callback expects (resource $tcp_handle, $status)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_tcp_getpeername ( $uv_sockaddr)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv_sockaddr\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "uv_tcp_getsockname ( $uv_sockaddr)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv_sockaddr\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "uv_tcp_init ( $loop = \fC\fBnull\fP\fP)"
+Create a tcp socket\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP loop resource or null\&. if not specified loop resource then use uv_default_loop resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource uv resource which initialized for tcp\&. 
+.RE
+.PP
+
+.SS "uv_tcp_nodelay ( $handle, bool $enable)"
+Set Nagel's flags for specified tcp resource\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP libuv tcp resource\&. 
+.br
+\fI$enable\fP true means enabled\&. false means disabled\&. 
+.RE
+.PP
+
+.SS "uv_timer_again ( $timer)"
+Restart timer\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timer\fP uv_timer resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_timer_get_repeat ( $timer)"
+Returns repeat interval\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timer\fP uv_timer resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "uv_timer_init ( $loop = \fC\fBnull\fP\fP)"
+Initialize timer handle\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv_loop resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_timer_set_repeat ( $timer, int $repeat)"
+Set repeat count\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timer\fP uv_timer resource\&. 
+.br
+\fI$repeat\fP repeat count\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_timer_start ( $timer, int $timeout, int $repeat, callable $callback)"
+Initialize timer handle\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timer\fP uv_loop resource\&. 
+.br
+\fI$timeout\fP periodical event starts when after this timeout\&. 1000 is 1 sec\&. 
+.br
+\fI$repeat\fP repeat interval\&. 1000 is 1 sec\&. 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_timer_stop ( $timer)"
+stop specified timer\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timer\fP uv timer resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "uv_tty_get_winsize ( $tty, int & $width, int & $height)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tty\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "uv_tty_init ( $loop,  $fd, int $readable)"
+Initialize tty resource\&. you have to open tty your hand\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP uv loop handle\&. 
+.br
+\fI$fd\fP 
+.br
+\fI$readable\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "uv_tty_reset_mode ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_tty_set_mode ( $tty, int $mode)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tty\fP 
+.br
+\fI$mode\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "uv_udp_bind ( $resource,  $address, int $flags)"
+Listens for a connection on a uv udp handle\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$resource\fP uv resource handle (udp)\&. 
+.br
+\fI$address\fP uv sockaddr(ipv4) resource\&. 
+.br
+\fI$flags\fP unused\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_udp_bind6 ( $resource,  $address, int $flags)"
+Listens for a connection on a uv udp handle\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$resource\fP uv resource handle (udp)\&. 
+.br
+\fI$address\fP uv sockaddr(ipv6) resource\&. 
+.br
+\fI$flags\fP Should be 0 or UV::UDP_IPV6ONLY\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_udp_getsockname ( $uv_sockaddr)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv_sockaddr\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "uv_udp_init ( $loop = \fC\fBnull\fP\fP)"
+Create a udp socket\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP loop resource or null\&. if not specified loop resource then use uv_default_loop resource\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource uv resource which initialized for udp\&. 
+.RE
+.PP
+
+.SS "uv_udp_recv_start ( $handle, callable $callback)"
+Start receive callback\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (udp)\&. 
+.br
+\fI$callback\fP this callback parameter expects (resource $stream, long $nread, string $buffer)\&.\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_udp_recv_stop ( $handle)"
+Stop receive callback\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_udp_send ( $handle, string $data,  $uv_addr, callable $callback)"
+Send buffer to specified address\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (udp)\&. 
+.br
+\fI$data\fP data\&. 
+.br
+\fI$uv_addr\fP uv_ip4_addr\&. 
+.br
+\fI$callback\fP this callback parameter expects (resource $stream, long $status)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_udp_send6 ( $handle, string $data,  $uv_addr6, callable $callback)"
+Send buffer to specified address\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (udp)\&. 
+.br
+\fI$data\fP data\&. 
+.br
+\fI$uv_addr6\fP uv_ip6_addr\&. 
+.br
+\fI$callback\fP this callback parameter expects (resource $stream, long $status)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_udp_set_broadcast ( $handle, bool $enabled)"
+Set udp broadcast\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (udp)\&. 
+.br
+\fI$enabled\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_udp_set_membership ( $handle, string $multicast_addr, string $interface_addr, int $membership)"
+Join or leave udp muticast group\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (udp)\&. 
+.br
+\fI$multicast_addr\fP multicast address\&. 
+.br
+\fI$interface_addr\fP interface address\&. 
+.br
+\fI$membership\fP \fBUV::JOIN_GROUP\fP or \fBUV::LEAVE_GROUP\fP
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "uv_udp_set_multicast_loop ( $handle, int $enabled)"
+Set multicast loop\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (udp)\&. 
+.br
+\fI$enabled\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_udp_set_multicast_ttl ( $handle, int $ttl)"
+Set multicast ttl\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resource handle (udp)\&. 
+.br
+\fI$ttl\fP multicast ttl\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_unref ( $uv_t)"
+Decrement reference\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv_t\fP resource handle\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_update_time ( $uv_loop)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uv_loop\fP uv loop handle\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_uptime ()"
+Returns current uptime\&.
+.PP
+\fBReturns\fP
+.RS 4
+float 
+.RE
+.PP
+
+.SS "uv_walk ( $loop, callable $closure, array $opaque = \fC\fBnull\fP\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$loop\fP 
+.br
+\fI$closure\fP 
+.br
+\fI$opaque\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "uv_write ( $handle, string $data, callable $callback)"
+Send buffer to speicified uv resource\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP uv resources (uv_tcp, uv_udp, uv_pipe \&.\&.\&.etc\&.)\&. 
+.br
+\fI$data\fP buffer\&. 
+.br
+\fI$callback\fP callable variables\&. This callback expects (resource $handle, long $status)\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "uv_write2 ( $handle, string $data,  $send, callable $callback)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.br
+\fI$data\fP 
+.br
+\fI$send\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

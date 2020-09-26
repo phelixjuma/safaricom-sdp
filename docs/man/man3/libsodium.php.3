@@ -1,0 +1,362 @@
+.TH "vendor/jetbrains/phpstorm-stubs/libsodium/libsodium.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/libsodium/libsodium.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBSodium\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcrypto_aead_aes256gcm_is_available\fP ()"
+.br
+.ti -1c
+.RI "\fBcrypto_aead_aes256gcm_decrypt\fP (string $msg, string $nonce, string $\fBkey\fP, string $ad='')"
+.br
+.ti -1c
+.RI "\fBcrypto_aead_aes256gcm_encrypt\fP (string $msg, string $nonce, string $\fBkey\fP, string $ad='')"
+.br
+.ti -1c
+.RI "\fBcrypto_aead_chacha20poly1305_decrypt\fP (string $msg, string $nonce, string $\fBkey\fP, string $ad='')"
+.br
+.ti -1c
+.RI "\fBcrypto_aead_chacha20poly1305_encrypt\fP (string $msg, string $nonce, string $\fBkey\fP, string $ad='')"
+.br
+.ti -1c
+.RI "\fBcrypto_auth\fP (string $msg, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBcrypto_auth_verify\fP (string $mac, string $msg, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBcrypto_box\fP (string $msg, string $nonce, string $keypair)"
+.br
+.ti -1c
+.RI "\fBcrypto_box_keypair\fP ()"
+.br
+.ti -1c
+.RI "\fBcrypto_box_seed_keypair\fP (string $seed)"
+.br
+.ti -1c
+.RI "\fBcrypto_box_keypair_from_secretkey_and_publickey\fP (string $secretkey, string $publickey)"
+.br
+.ti -1c
+.RI "\fBcrypto_box_open\fP (string $msg, string $nonce, string $keypair)"
+.br
+.ti -1c
+.RI "\fBcrypto_box_publickey\fP (string $keypair)"
+.br
+.ti -1c
+.RI "\fBcrypto_box_publickey_from_secretkey\fP (string $secretkey)"
+.br
+.ti -1c
+.RI "\fBcrypto_box_seal\fP (string $message, string $publickey)"
+.br
+.ti -1c
+.RI "\fBcrypto_box_seal_open\fP (string $encrypted, string $keypair)"
+.br
+.ti -1c
+.RI "\fBcrypto_box_secretkey\fP (string $keypair)"
+.br
+.ti -1c
+.RI "\fBcrypto_kx\fP (string $secretkey, string $publickey, string $client_publickey, string $server_publickey)"
+.br
+.ti -1c
+.RI "\fBcrypto_generichash\fP (string $input, string $\fBkey\fP='', int $length=32)"
+.br
+.ti -1c
+.RI "\fBcrypto_generichash_init\fP (string $\fBkey\fP='', int $length=32)"
+.br
+.ti -1c
+.RI "\fBcrypto_generichash_update\fP (string &$hashState, string $append)"
+.br
+.ti -1c
+.RI "\fBcrypto_generichash_final\fP (string $state, int $length=32)"
+.br
+.ti -1c
+.RI "\fBcrypto_pwhash\fP (int $out_len, string $passwd, string $salt, int $opslimit, int $memlimit)"
+.br
+.ti -1c
+.RI "\fBcrypto_pwhash_str\fP (string $passwd, int $opslimit, int $memlimit)"
+.br
+.ti -1c
+.RI "\fBcrypto_pwhash_str_verify\fP (string $\fBhash\fP, string $passwd)"
+.br
+.ti -1c
+.RI "\fBcrypto_pwhash_scryptsalsa208sha256\fP (int $out_len, string $passwd, string $salt, int $opslimit, int $memlimit)"
+.br
+.ti -1c
+.RI "\fBcrypto_pwhash_scryptsalsa208sha256_str\fP (string $passwd, int $opslimit, int $memlimit)"
+.br
+.ti -1c
+.RI "\fBcrypto_pwhash_scryptsalsa208sha256_str_verify\fP (string $\fBhash\fP, string $passwd)"
+.br
+.ti -1c
+.RI "\fBcrypto_scalarmult\fP (string $ecdhA, string $ecdhB)"
+.br
+.ti -1c
+.RI "\fBcrypto_secretbox\fP (string $plaintext, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBcrypto_secretbox_open\fP (string $ciphertext, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBcrypto_shorthash\fP (string $message, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBcrypto_sign\fP (string $message, string $secretkey)"
+.br
+.ti -1c
+.RI "\fBcrypto_sign_detached\fP (string $message, string $secretkey)"
+.br
+.ti -1c
+.RI "\fBcrypto_sign_ed25519_pk_to_curve25519\fP (string $sign_pk)"
+.br
+.ti -1c
+.RI "\fBcrypto_sign_ed25519_sk_to_curve25519\fP (string $sign_sk)"
+.br
+.ti -1c
+.RI "\fBcrypto_sign_keypair\fP ()"
+.br
+.ti -1c
+.RI "\fBcrypto_sign_keypair_from_secretkey_and_publickey\fP (string $secretkey, string $publickey)"
+.br
+.ti -1c
+.RI "\fBcrypto_sign_open\fP (string $signed_message, string $publickey)"
+.br
+.ti -1c
+.RI "\fBcrypto_sign_publickey\fP (string $keypair)"
+.br
+.ti -1c
+.RI "\fBcrypto_sign_secretkey\fP (string $keypair)"
+.br
+.ti -1c
+.RI "\fBcrypto_sign_publickey_from_secretkey\fP (string $secretkey)"
+.br
+.ti -1c
+.RI "\fBcrypto_sign_seed_keypair\fP (string $seed)"
+.br
+.ti -1c
+.RI "\fBcrypto_sign_verify_detached\fP (string $signature, string $msg, string $publickey)"
+.br
+.ti -1c
+.RI "\fBcrypto_stream\fP (int $length, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBcrypto_stream_xor\fP (string $plaintext, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBrandombytes_buf\fP (int $length)"
+.br
+.ti -1c
+.RI "\fBrandombytes_random16\fP ()"
+.br
+.ti -1c
+.RI "\fBrandombytes_uniform\fP (int $upperBoundNonInclusive)"
+.br
+.ti -1c
+.RI "\fBbin2hex\fP (string $binary)"
+.br
+.ti -1c
+.RI "\fBcompare\fP (string $left, string $right)"
+.br
+.ti -1c
+.RI "\fBhex2bin\fP (string $hex)"
+.br
+.ti -1c
+.RI "\fBincrement\fP (string &$nonce)"
+.br
+.ti -1c
+.RI "\fBadd\fP (string &$left, string $right)"
+.br
+.ti -1c
+.RI "\fBlibrary_version_major\fP ()"
+.br
+.ti -1c
+.RI "\fBlibrary_version_minor\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcmp\fP (string $left, string $right)"
+.br
+.ti -1c
+.RI "\fBmemzero\fP (string &$target)"
+.br
+.ti -1c
+.RI "\fBversion_string\fP ()"
+.br
+.ti -1c
+.RI "\fBcrypto_scalarmult_base\fP (string $sk)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBCRYPTO_AEAD_AES256GCM_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_AEAD_AES256GCM_NSECBYTES\fP = 0"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_AEAD_AES256GCM_NPUBBYTES\fP = 12"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_AEAD_AES256GCM_ABYTES\fP = 16"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_AEAD_CHACHA20POLY1305_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_AEAD_CHACHA20POLY1305_NSECBYTES\fP = 0"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_AEAD_CHACHA20POLY1305_NPUBBYTES\fP = 8"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_AEAD_CHACHA20POLY1305_ABYTES\fP = 16"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_AUTH_BYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_AUTH_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_BOX_SEALBYTES\fP = 16"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_BOX_SECRETKEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_BOX_PUBLICKEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_BOX_KEYPAIRBYTES\fP = 64"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_BOX_MACBYTES\fP = 16"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_BOX_NONCEBYTES\fP = 24"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_BOX_SEEDBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_KX_BYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_KX_PUBLICKEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_KX_SECRETKEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_GENERICHASH_BYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_GENERICHASH_BYTES_MIN\fP = 16"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_GENERICHASH_BYTES_MAX\fP = 64"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_GENERICHASH_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_GENERICHASH_KEYBYTES_MIN\fP = 16"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_GENERICHASH_KEYBYTES_MAX\fP = 64"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_PWHASH_SCRYPTSALSA208SHA256_SALTBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_PWHASH_SCRYPTSALSA208SHA256_STRPREFIX\fP = '$7$'"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_PWHASH_SCRYPTSALSA208SHA256_OPSLIMIT_INTERACTIVE\fP = 534288"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_PWHASH_SCRYPTSALSA208SHA256_MEMLIMIT_INTERACTIVE\fP = 16777216"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_PWHASH_SCRYPTSALSA208SHA256_OPSLIMIT_SENSITIVE\fP = 33554432"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_PWHASH_SCRYPTSALSA208SHA256_MEMLIMIT_SENSITIVE\fP = 1073741824"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_SCALARMULT_BYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_SCALARMULT_SCALARBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_SHORTHASH_BYTES\fP = 8"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_SHORTHASH_KEYBYTES\fP = 16"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_SECRETBOX_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_SECRETBOX_MACBYTES\fP = 16"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_SECRETBOX_NONCEBYTES\fP = 24"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_SIGN_BYTES\fP = 64"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_SIGN_SEEDBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_SIGN_PUBLICKEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_SIGN_SECRETKEYBYTES\fP = 64"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_SIGN_KEYPAIRBYTES\fP = 96"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_STREAM_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_STREAM_NONCEBYTES\fP = 24"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_PWHASH_OPSLIMIT_INTERACTIVE\fP = 4"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_PWHASH_MEMLIMIT_INTERACTIVE\fP = 33554432"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_PWHASH_OPSLIMIT_MODERATE\fP = 6"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_PWHASH_MEMLIMIT_MODERATE\fP = 134217728"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_PWHASH_OPSLIMIT_SENSITIVE\fP = 8"
+.br
+.ti -1c
+.RI "const \fBCRYPTO_PWHASH_MEMLIMIT_SENSITIVE\fP = 536870912"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,292 @@
+\hypertarget{mailparse_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/mailparse/mailparse.php File Reference}
+\label{mailparse_8php}\index{vendor/jetbrains/phpstorm-\/stubs/mailparse/mailparse.php@{vendor/jetbrains/phpstorm-\/stubs/mailparse/mailparse.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mailparse_8php_a07490ca6cf75e4b2d8a924d0440bc4cf}{mailparse\+\_\+determine\+\_\+best\+\_\+xfer\+\_\+encoding}} (\$fp)
+\item 
+\mbox{\hyperlink{mailparse_8php_acaf944ff3f378e1a93f0ebf2fdd9d172}{mailparse\+\_\+msg\+\_\+create}} ()
+\item 
+\mbox{\hyperlink{mailparse_8php_ac004af476b2b98f52da5e37a36a1c8c3}{mailparse\+\_\+msg\+\_\+extract\+\_\+part\+\_\+file}} (\$mimemail, \$filename, \$callbackfunc)
+\item 
+\mbox{\hyperlink{mailparse_8php_ae94c04b13839c47e4781c7b33e897c6c}{mailparse\+\_\+msg\+\_\+extract\+\_\+part}} (\$mimemail, \$msgbody, \$callbackfunc)
+\item 
+\mbox{\hyperlink{mailparse_8php_a4d0c38ba2909f90d899ea4fa85f43a4a}{mailparse\+\_\+msg\+\_\+extract\+\_\+whole\+\_\+part\+\_\+file}} (\$mimemail, \$filename, \$callbackfunc)
+\item 
+\mbox{\hyperlink{mailparse_8php_aab0b49b05d0b3d857e9582add9f4528c}{mailparse\+\_\+msg\+\_\+free}} (\$mimemail)
+\item 
+\mbox{\hyperlink{mailparse_8php_a320868a1224e9736b0e1b951b0f6c95b}{mailparse\+\_\+msg\+\_\+get\+\_\+part\+\_\+data}} (\$mimemail)
+\item 
+\mbox{\hyperlink{mailparse_8php_a68138ba7d930f4827e46adf9e76de3c4}{mailparse\+\_\+msg\+\_\+get\+\_\+part}} (\$mimemail, \$mimesection)
+\item 
+\mbox{\hyperlink{mailparse_8php_a82ef880515f800d7062d5b82527f612d}{mailparse\+\_\+msg\+\_\+get\+\_\+structure}} (\$mimemail)
+\item 
+\mbox{\hyperlink{mailparse_8php_ae2b9c46910d20a55f8f030cbffb9d940}{mailparse\+\_\+msg\+\_\+parse\+\_\+file}} (\$filename)
+\item 
+\mbox{\hyperlink{mailparse_8php_a091528c40e2a6b6f2bb612703510a24a}{mailparse\+\_\+msg\+\_\+parse}} (\$mimemail, \$data)
+\item 
+\mbox{\hyperlink{mailparse_8php_adeabd6bfae5fa68f1dba5449f5f69e39}{mailparse\+\_\+rfc822\+\_\+parse\+\_\+addresses}} (\$addresses)
+\item 
+\mbox{\hyperlink{mailparse_8php_a1b5c2d4b7b0ea4274bf7e6598453faaa}{mailparse\+\_\+stream\+\_\+encode}} (\$sourcefp, \$destfp, \$encoding)
+\item 
+\mbox{\hyperlink{mailparse_8php_a064acb6d4fe1aa404bb440dd79106466}{mailparse\+\_\+uudecode\+\_\+all}} (\$fp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{mailparse_8php_abf7023738294812aa5ea690d248f0cc8}{M\+A\+I\+L\+P\+A\+R\+S\+E\+\_\+\+E\+X\+T\+R\+A\+C\+T\+\_\+\+O\+U\+T\+P\+UT}} 0
+\item 
+const \mbox{\hyperlink{mailparse_8php_a0cf2a1211d081bd78499a8db4100578d}{M\+A\+I\+L\+P\+A\+R\+S\+E\+\_\+\+E\+X\+T\+R\+A\+C\+T\+\_\+\+S\+T\+R\+E\+AM}} 1
+\item 
+const \mbox{\hyperlink{mailparse_8php_a4f2404d8dbde51bb57593b0b4b6a018a}{M\+A\+I\+L\+P\+A\+R\+S\+E\+\_\+\+E\+X\+T\+R\+A\+C\+T\+\_\+\+R\+E\+T\+U\+RN}} 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mailparse_8php_a07490ca6cf75e4b2d8a924d0440bc4cf}\label{mailparse_8php_a07490ca6cf75e4b2d8a924d0440bc4cf}} 
+\index{mailparse.php@{mailparse.php}!mailparse\_determine\_best\_xfer\_encoding@{mailparse\_determine\_best\_xfer\_encoding}}
+\index{mailparse\_determine\_best\_xfer\_encoding@{mailparse\_determine\_best\_xfer\_encoding}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{mailparse\_determine\_best\_xfer\_encoding()}{mailparse\_determine\_best\_xfer\_encoding()}}
+{\footnotesize\ttfamily mailparse\+\_\+determine\+\_\+best\+\_\+xfer\+\_\+encoding (\begin{DoxyParamCaption}\item[{}]{\$fp }\end{DoxyParamCaption})}
+
+(P\+E\+CL mailparse $>$= 0.\+9.\+0) Figures out the best way of encoding the content read from the given file pointer. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$fp }} \mbox{\hyperlink{class_a}{A}} valid file pointer, which must be seek-\/able. 
+
+\begin{DoxyReturn}{Returns}
+string Returns one of the character encodings supported by the \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mbstring}} module. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mailparse_8php_acaf944ff3f378e1a93f0ebf2fdd9d172}\label{mailparse_8php_acaf944ff3f378e1a93f0ebf2fdd9d172}} 
+\index{mailparse.php@{mailparse.php}!mailparse\_msg\_create@{mailparse\_msg\_create}}
+\index{mailparse\_msg\_create@{mailparse\_msg\_create}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{mailparse\_msg\_create()}{mailparse\_msg\_create()}}
+{\footnotesize\ttfamily mailparse\+\_\+msg\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+E\+CL mailparse $>$= 0.\+9.\+0) Create a M\+I\+ME mail resource. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource Returns a handle that can be used to parse a message. }}\mbox{\Hypertarget{mailparse_8php_ae94c04b13839c47e4781c7b33e897c6c}\label{mailparse_8php_ae94c04b13839c47e4781c7b33e897c6c}} 
+\index{mailparse.php@{mailparse.php}!mailparse\_msg\_extract\_part@{mailparse\_msg\_extract\_part}}
+\index{mailparse\_msg\_extract\_part@{mailparse\_msg\_extract\_part}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{mailparse\_msg\_extract\_part()}{mailparse\_msg\_extract\_part()}}
+{\footnotesize\ttfamily mailparse\+\_\+msg\+\_\+extract\+\_\+part (\begin{DoxyParamCaption}\item[{}]{\$mimemail,  }\item[{}]{\$msgbody,  }\item[{}]{\$callbackfunc }\end{DoxyParamCaption})}
+
+(P\+E\+CL mailparse $>$= 0.\+9.\+0) Extracts/decodes a message section \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$mimemail }} \mbox{\hyperlink{class_a}{A}} valid M\+I\+ME resource. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msgbody} & \\
+\hline
+callable & {\em \$callbackfunc} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mailparse_8php_ac004af476b2b98f52da5e37a36a1c8c3}\label{mailparse_8php_ac004af476b2b98f52da5e37a36a1c8c3}} 
+\index{mailparse.php@{mailparse.php}!mailparse\_msg\_extract\_part\_file@{mailparse\_msg\_extract\_part\_file}}
+\index{mailparse\_msg\_extract\_part\_file@{mailparse\_msg\_extract\_part\_file}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{mailparse\_msg\_extract\_part\_file()}{mailparse\_msg\_extract\_part\_file()}}
+{\footnotesize\ttfamily mailparse\+\_\+msg\+\_\+extract\+\_\+part\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$mimemail,  }\item[{}]{\$filename,  }\item[{}]{\$callbackfunc }\end{DoxyParamCaption})}
+
+(P\+E\+CL mailparse $>$= 0.\+9.\+0) Extracts/decodes a message section from the supplied filename. The contents of the section will be decoded according to their transfer encoding -\/ base64, quoted-\/printable and uuencoded text are supported. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$mimemail }} \mbox{\hyperlink{class_a}{A}} valid M\+I\+ME resource, created with \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mailparse\+\_\+msg\+\_\+create()}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+Can be a file name or a valid stream resource. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callbackfunc} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If set, this must be either a valid callback that will be passed the extracted section, or {\bfseries{N\+U\+LL}} to make this function return the extracted section. 
+
+If not specified, the contents will be sent to \char`\"{}stdout\char`\"{}. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+If callbackfunc is not {\bfseries{N\+U\+LL}} returns {\bfseries{T\+R\+UE}} on success. 
+
+If callbackfunc is set to {\bfseries{N\+U\+LL}}, returns the extracted section as a string. 
+
+Returns F\+A\+L\+SE on error. \mbox{\Hypertarget{mailparse_8php_a4d0c38ba2909f90d899ea4fa85f43a4a}\label{mailparse_8php_a4d0c38ba2909f90d899ea4fa85f43a4a}} 
+\index{mailparse.php@{mailparse.php}!mailparse\_msg\_extract\_whole\_part\_file@{mailparse\_msg\_extract\_whole\_part\_file}}
+\index{mailparse\_msg\_extract\_whole\_part\_file@{mailparse\_msg\_extract\_whole\_part\_file}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{mailparse\_msg\_extract\_whole\_part\_file()}{mailparse\_msg\_extract\_whole\_part\_file()}}
+{\footnotesize\ttfamily mailparse\+\_\+msg\+\_\+extract\+\_\+whole\+\_\+part\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$mimemail,  }\item[{}]{\$filename,  }\item[{}]{\$callbackfunc }\end{DoxyParamCaption})}
+
+(P\+E\+CL mailparse $>$= 0.\+9.\+0) Extracts a message section including headers without decoding the transfer encoding \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$mimemail }} \mbox{\hyperlink{class_a}{A}} valid M\+I\+ME resource 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+callable & {\em \$callbackfunc} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mailparse_8php_aab0b49b05d0b3d857e9582add9f4528c}\label{mailparse_8php_aab0b49b05d0b3d857e9582add9f4528c}} 
+\index{mailparse.php@{mailparse.php}!mailparse\_msg\_free@{mailparse\_msg\_free}}
+\index{mailparse\_msg\_free@{mailparse\_msg\_free}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{mailparse\_msg\_free()}{mailparse\_msg\_free()}}
+{\footnotesize\ttfamily mailparse\+\_\+msg\+\_\+free (\begin{DoxyParamCaption}\item[{}]{\$mimemail }\end{DoxyParamCaption})}
+
+(P\+E\+CL mailparse $>$= 0.\+9.\+0) Frees a M\+I\+ME resource. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$mimemail }} \mbox{\hyperlink{class_a}{A}} valid M\+I\+ME resource allocated by \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mailparse\+\_\+msg\+\_\+create()}} or \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mailparse\+\_\+msg\+\_\+parse\+\_\+file()}}. 
+
+\begin{DoxyReturn}{Returns}
+bool Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mailparse_8php_a68138ba7d930f4827e46adf9e76de3c4}\label{mailparse_8php_a68138ba7d930f4827e46adf9e76de3c4}} 
+\index{mailparse.php@{mailparse.php}!mailparse\_msg\_get\_part@{mailparse\_msg\_get\_part}}
+\index{mailparse\_msg\_get\_part@{mailparse\_msg\_get\_part}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{mailparse\_msg\_get\_part()}{mailparse\_msg\_get\_part()}}
+{\footnotesize\ttfamily mailparse\+\_\+msg\+\_\+get\+\_\+part (\begin{DoxyParamCaption}\item[{}]{\$mimemail,  }\item[{}]{\$mimesection }\end{DoxyParamCaption})}
+
+(P\+E\+CL mailparse $>$= 0.\+9.\+0) Returns a handle on a given section in a mimemessage \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$mimemail }} \mbox{\hyperlink{class_a}{A}} valid M\+I\+ME resource. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mimesection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mailparse_8php_a320868a1224e9736b0e1b951b0f6c95b}\label{mailparse_8php_a320868a1224e9736b0e1b951b0f6c95b}} 
+\index{mailparse.php@{mailparse.php}!mailparse\_msg\_get\_part\_data@{mailparse\_msg\_get\_part\_data}}
+\index{mailparse\_msg\_get\_part\_data@{mailparse\_msg\_get\_part\_data}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{mailparse\_msg\_get\_part\_data()}{mailparse\_msg\_get\_part\_data()}}
+{\footnotesize\ttfamily mailparse\+\_\+msg\+\_\+get\+\_\+part\+\_\+data (\begin{DoxyParamCaption}\item[{}]{\$mimemail }\end{DoxyParamCaption})}
+
+(P\+E\+CL mailparse $>$= 0.\+9.\+0) Returns an associative array of info about the message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$mimemail }} \mbox{\hyperlink{class_a}{A}} valid M\+I\+ME resource. 
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mailparse_8php_a82ef880515f800d7062d5b82527f612d}\label{mailparse_8php_a82ef880515f800d7062d5b82527f612d}} 
+\index{mailparse.php@{mailparse.php}!mailparse\_msg\_get\_structure@{mailparse\_msg\_get\_structure}}
+\index{mailparse\_msg\_get\_structure@{mailparse\_msg\_get\_structure}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{mailparse\_msg\_get\_structure()}{mailparse\_msg\_get\_structure()}}
+{\footnotesize\ttfamily mailparse\+\_\+msg\+\_\+get\+\_\+structure (\begin{DoxyParamCaption}\item[{}]{\$mimemail }\end{DoxyParamCaption})}
+
+(P\+E\+CL mailparse $>$= 0.\+9.\+0) Returns an array of mime section names in the supplied message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$mimemail }} \mbox{\hyperlink{class_a}{A}} valid M\+I\+ME resource. 
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mailparse_8php_a091528c40e2a6b6f2bb612703510a24a}\label{mailparse_8php_a091528c40e2a6b6f2bb612703510a24a}} 
+\index{mailparse.php@{mailparse.php}!mailparse\_msg\_parse@{mailparse\_msg\_parse}}
+\index{mailparse\_msg\_parse@{mailparse\_msg\_parse}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{mailparse\_msg\_parse()}{mailparse\_msg\_parse()}}
+{\footnotesize\ttfamily mailparse\+\_\+msg\+\_\+parse (\begin{DoxyParamCaption}\item[{}]{\$mimemail,  }\item[{}]{\$data }\end{DoxyParamCaption})}
+
+(P\+E\+CL mailparse $>$= 0.\+9.\+0) Incrementally parse data into the supplied mime mail resource. This function allow you to stream portions of a file at a time, rather than read and parse the whole thing. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$mimemail }} \mbox{\hyperlink{class_a}{A}} valid M\+I\+ME resource. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mailparse_8php_ae2b9c46910d20a55f8f030cbffb9d940}\label{mailparse_8php_ae2b9c46910d20a55f8f030cbffb9d940}} 
+\index{mailparse.php@{mailparse.php}!mailparse\_msg\_parse\_file@{mailparse\_msg\_parse\_file}}
+\index{mailparse\_msg\_parse\_file@{mailparse\_msg\_parse\_file}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{mailparse\_msg\_parse\_file()}{mailparse\_msg\_parse\_file()}}
+{\footnotesize\ttfamily mailparse\+\_\+msg\+\_\+parse\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+(P\+E\+CL mailparse $>$= 0.\+9.\+0) Parses a file. This is the optimal way of parsing a mail file that you have on disk. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} Path to the file holding the message. The file is opened and streamed through the parser. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false Returns a M\+I\+ME resource representing the structure, or $<$b\+F\+A\+L\+SE on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mailparse_8php_adeabd6bfae5fa68f1dba5449f5f69e39}\label{mailparse_8php_adeabd6bfae5fa68f1dba5449f5f69e39}} 
+\index{mailparse.php@{mailparse.php}!mailparse\_rfc822\_parse\_addresses@{mailparse\_rfc822\_parse\_addresses}}
+\index{mailparse\_rfc822\_parse\_addresses@{mailparse\_rfc822\_parse\_addresses}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{mailparse\_rfc822\_parse\_addresses()}{mailparse\_rfc822\_parse\_addresses()}}
+{\footnotesize\ttfamily mailparse\+\_\+rfc822\+\_\+parse\+\_\+addresses (\begin{DoxyParamCaption}\item[{}]{\$addresses }\end{DoxyParamCaption})}
+
+(P\+E\+CL mailparse $>$= 0.\+9.\+0) Parses a \mbox{\hyperlink{}{R\+FC 822}} compliant recipient list, such as that found in the To\+: header. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$addresses }} \mbox{\hyperlink{class_a}{A}} string containing addresses, like in\+: Wez Furlong \href{mailto:wez@example.com}{\texttt{ wez@example.\+com}}, \href{mailto:doe@example.com}{\texttt{ doe@example.\+com}} Note\+: This string must not include the header name. 
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+Returns an array of associative arrays with the following keys for each recipient\+: 
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+display &The recipient name, for display purpose. If this part is not set for a recipient, this key will hold the same value as address.  \\\cline{1-2}
+address &The email address  \\\cline{1-2}
+is\+\_\+group &{\bfseries{T\+R\+UE}} if the recipient is a newsgroup, {\bfseries{F\+A\+L\+SE}} otherwise.  \\\cline{1-2}
+\end{longtabu}
+\mbox{\Hypertarget{mailparse_8php_a1b5c2d4b7b0ea4274bf7e6598453faaa}\label{mailparse_8php_a1b5c2d4b7b0ea4274bf7e6598453faaa}} 
+\index{mailparse.php@{mailparse.php}!mailparse\_stream\_encode@{mailparse\_stream\_encode}}
+\index{mailparse\_stream\_encode@{mailparse\_stream\_encode}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{mailparse\_stream\_encode()}{mailparse\_stream\_encode()}}
+{\footnotesize\ttfamily mailparse\+\_\+stream\+\_\+encode (\begin{DoxyParamCaption}\item[{}]{\$sourcefp,  }\item[{}]{\$destfp,  }\item[{}]{\$encoding }\end{DoxyParamCaption})}
+
+(P\+E\+CL mailparse $>$= 0.\+9.\+0) Streams data from the source file pointer, apply encoding and write to the destination file pointer. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$sourcefp }} \mbox{\hyperlink{class_a}{A}} valid file handle. The file is streamed through the parser. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$destfp} & \\
+\hline
+\end{DoxyParams}
+The destination file handle in which the encoded data will be written. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$encoding} & \\
+\hline
+\end{DoxyParams}
+One of the character encodings supported by the \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mbstring}} module. 
+
+\begin{DoxyReturn}{Returns}
+bool Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mailparse_8php_a064acb6d4fe1aa404bb440dd79106466}\label{mailparse_8php_a064acb6d4fe1aa404bb440dd79106466}} 
+\index{mailparse.php@{mailparse.php}!mailparse\_uudecode\_all@{mailparse\_uudecode\_all}}
+\index{mailparse\_uudecode\_all@{mailparse\_uudecode\_all}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{mailparse\_uudecode\_all()}{mailparse\_uudecode\_all()}}
+{\footnotesize\ttfamily mailparse\+\_\+uudecode\+\_\+all (\begin{DoxyParamCaption}\item[{}]{\$fp }\end{DoxyParamCaption})}
+
+(P\+E\+CL mailparse $>$= 0.\+9.\+0) Scans the data from the given file pointer and extract each embedded uuencoded file into a temporary file. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$fp }} \mbox{\hyperlink{class_a}{A}} valid file pointer. 
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+Returns an array of associative arrays listing filename information. 
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+filename &Path to the temporary file name created  \\\cline{1-2}
+origfilename &The original filename, for uuencoded parts only  \\\cline{1-2}
+\end{longtabu}
+
+
+The first filename entry is the message body. The next entries are the decoded uuencoded files. 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{mailparse_8php_abf7023738294812aa5ea690d248f0cc8}\label{mailparse_8php_abf7023738294812aa5ea690d248f0cc8}} 
+\index{mailparse.php@{mailparse.php}!MAILPARSE\_EXTRACT\_OUTPUT@{MAILPARSE\_EXTRACT\_OUTPUT}}
+\index{MAILPARSE\_EXTRACT\_OUTPUT@{MAILPARSE\_EXTRACT\_OUTPUT}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{MAILPARSE\_EXTRACT\_OUTPUT}{MAILPARSE\_EXTRACT\_OUTPUT}}
+{\footnotesize\ttfamily const M\+A\+I\+L\+P\+A\+R\+S\+E\+\_\+\+E\+X\+T\+R\+A\+C\+T\+\_\+\+O\+U\+T\+P\+UT 0}
+
+\mbox{\Hypertarget{mailparse_8php_a4f2404d8dbde51bb57593b0b4b6a018a}\label{mailparse_8php_a4f2404d8dbde51bb57593b0b4b6a018a}} 
+\index{mailparse.php@{mailparse.php}!MAILPARSE\_EXTRACT\_RETURN@{MAILPARSE\_EXTRACT\_RETURN}}
+\index{MAILPARSE\_EXTRACT\_RETURN@{MAILPARSE\_EXTRACT\_RETURN}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{MAILPARSE\_EXTRACT\_RETURN}{MAILPARSE\_EXTRACT\_RETURN}}
+{\footnotesize\ttfamily const M\+A\+I\+L\+P\+A\+R\+S\+E\+\_\+\+E\+X\+T\+R\+A\+C\+T\+\_\+\+R\+E\+T\+U\+RN 2}
+
+\mbox{\Hypertarget{mailparse_8php_a0cf2a1211d081bd78499a8db4100578d}\label{mailparse_8php_a0cf2a1211d081bd78499a8db4100578d}} 
+\index{mailparse.php@{mailparse.php}!MAILPARSE\_EXTRACT\_STREAM@{MAILPARSE\_EXTRACT\_STREAM}}
+\index{MAILPARSE\_EXTRACT\_STREAM@{MAILPARSE\_EXTRACT\_STREAM}!mailparse.php@{mailparse.php}}
+\doxysubsubsection{\texorpdfstring{MAILPARSE\_EXTRACT\_STREAM}{MAILPARSE\_EXTRACT\_STREAM}}
+{\footnotesize\ttfamily const M\+A\+I\+L\+P\+A\+R\+S\+E\+\_\+\+E\+X\+T\+R\+A\+C\+T\+\_\+\+S\+T\+R\+E\+AM 1}
+

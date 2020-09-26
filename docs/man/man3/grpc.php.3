@@ -1,0 +1,191 @@
+.TH "vendor/jetbrains/phpstorm-stubs/grpc/grpc.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/grpc/grpc.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBServer\fP"
+.br
+.ti -1c
+.RI "class \fBServerCredentials\fP"
+.br
+.ti -1c
+.RI "class \fBChannel\fP"
+.br
+.ti -1c
+.RI "class \fBChannelCredentials\fP"
+.br
+.ti -1c
+.RI "class \fBCall\fP"
+.br
+.ti -1c
+.RI "class \fBCallCredentials\fP"
+.br
+.ti -1c
+.RI "class \fBTimeval\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBGrpc\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBCALL_OK\fP = 0"
+.br
+.ti -1c
+.RI "const \fBCALL_ERROR\fP = 1"
+.br
+.ti -1c
+.RI "const \fBCALL_ERROR_NOT_ON_SERVER\fP = 2"
+.br
+.ti -1c
+.RI "const \fBCALL_ERROR_NOT_ON_CLIENT\fP = 3"
+.br
+.ti -1c
+.RI "const \fBCALL_ERROR_ALREADY_ACCEPTED\fP = 4"
+.br
+.ti -1c
+.RI "const \fBCALL_ERROR_ALREADY_INVOKED\fP = 5"
+.br
+.ti -1c
+.RI "const \fBCALL_ERROR_NOT_INVOKED\fP = 6"
+.br
+.ti -1c
+.RI "const \fBCALL_ERROR_ALREADY_FINISHED\fP = 7"
+.br
+.ti -1c
+.RI "const \fBCALL_ERROR_TOO_MANY_OPERATIONS\fP = 8"
+.br
+.ti -1c
+.RI "const \fBCALL_ERROR_INVALID_FLAGS\fP = 9"
+.br
+.ti -1c
+.RI "const \fBCALL_ERROR_INVALID_METADATA\fP = 10"
+.br
+.ti -1c
+.RI "const \fBCALL_ERROR_INVALID_MESSAGE\fP = 11"
+.br
+.ti -1c
+.RI "const \fBCALL_ERROR_NOT_SERVER_COMPLETION_QUEUE\fP = 12"
+.br
+.ti -1c
+.RI "const \fBCALL_ERROR_BATCH_TOO_BIG\fP = 13"
+.br
+.ti -1c
+.RI "const \fBCALL_ERROR_PAYLOAD_TYPE_MISMATCH\fP = 14"
+.br
+.ti -1c
+.RI "const \fBWRITE_BUFFER_HINT\fP = 1"
+.br
+.ti -1c
+.RI "const \fBWRITE_NO_COMPRESS\fP = 2"
+.br
+.ti -1c
+.RI "const \fBSTATUS_OK\fP = 0"
+.br
+.ti -1c
+.RI "const \fBSTATUS_CANCELLED\fP = 1"
+.br
+.ti -1c
+.RI "const \fBSTATUS_UNKNOWN\fP = 2"
+.br
+.ti -1c
+.RI "const \fBSTATUS_INVALID_ARGUMENT\fP = 3"
+.br
+.ti -1c
+.RI "const \fBSTATUS_DEADLINE_EXCEEDED\fP = 4"
+.br
+.ti -1c
+.RI "const \fBSTATUS_NOT_FOUND\fP = 5"
+.br
+.ti -1c
+.RI "const \fBSTATUS_ALREADY_EXISTS\fP = 6"
+.br
+.ti -1c
+.RI "const \fBSTATUS_PERMISSION_DENIED\fP = 7"
+.br
+.ti -1c
+.RI "const \fBSTATUS_UNAUTHENTICATED\fP = 16"
+.br
+.ti -1c
+.RI "const \fBSTATUS_RESOURCE_EXHAUSTED\fP = 8"
+.br
+.ti -1c
+.RI "const \fBSTATUS_FAILED_PRECONDITION\fP = 9"
+.br
+.ti -1c
+.RI "const \fBSTATUS_ABORTED\fP = 10"
+.br
+.ti -1c
+.RI "const \fBSTATUS_OUT_OF_RANGE\fP = 11"
+.br
+.ti -1c
+.RI "const \fBSTATUS_UNIMPLEMENTED\fP = 12"
+.br
+.ti -1c
+.RI "const \fBSTATUS_INTERNAL\fP = 13"
+.br
+.ti -1c
+.RI "const \fBSTATUS_UNAVAILABLE\fP = 14"
+.br
+.ti -1c
+.RI "const \fBSTATUS_DATA_LOSS\fP = 15"
+.br
+.ti -1c
+.RI "const \fBOP_SEND_INITIAL_METADATA\fP = 0"
+.br
+.ti -1c
+.RI "const \fBOP_SEND_MESSAGE\fP = 1"
+.br
+.ti -1c
+.RI "const \fBOP_SEND_CLOSE_FROM_CLIENT\fP = 2"
+.br
+.ti -1c
+.RI "const \fBOP_SEND_STATUS_FROM_SERVER\fP = 3"
+.br
+.ti -1c
+.RI "const \fBOP_RECV_INITIAL_METADATA\fP = 4"
+.br
+.ti -1c
+.RI "const \fBOP_RECV_MESSAGE\fP = 5"
+.br
+.ti -1c
+.RI "const \fBOP_RECV_STATUS_ON_CLIENT\fP = 6"
+.br
+.ti -1c
+.RI "const \fBOP_RECV_CLOSE_ON_SERVER\fP = 7"
+.br
+.ti -1c
+.RI "const \fBCHANNEL_IDLE\fP = 0"
+.br
+.ti -1c
+.RI "const \fBCHANNEL_CONNECTING\fP = 1"
+.br
+.ti -1c
+.RI "const \fBCHANNEL_READY\fP = 2"
+.br
+.ti -1c
+.RI "const \fBCHANNEL_TRANSIENT_FAILURE\fP = 3"
+.br
+.ti -1c
+.RI "const \fBCHANNEL_SHUTDOWN\fP = 4"
+.br
+.ti -1c
+.RI "const \fBCHANNEL_FATAL_FAILURE\fP = 4"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

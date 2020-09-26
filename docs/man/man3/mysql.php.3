@@ -1,0 +1,1871 @@
+.TH "vendor/jetbrains/phpstorm-stubs/mysql/mysql.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/mysql/mysql.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBmysql_connect\fP ($server='\fBini_get\fP('mysql\&.default_host')', $username='\fBini_get\fP('mysql\&.default_user')', $password='\fBini_get\fP('mysql\&.default_password')', $new_link=\fBfalse\fP, $client_flags=0)"
+.br
+.ti -1c
+.RI "\fBmysql_pconnect\fP ($server='\fBini_get\fP('mysql\&.default_host')', $username='\fBini_get\fP('mysql\&.default_user')', $password='\fBini_get\fP('mysql\&.default_password')', $client_flags=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_close\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_select_db\fP ($database_name, $link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_query\fP ($query, $link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_unbuffered_query\fP ($query, $link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_db_query\fP ($database, $query, $link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_list_dbs\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_list_tables\fP ($database, $link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_list_fields\fP ($database_name, $table_name, $link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_list_processes\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_error\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_errno\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_affected_rows\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_insert_id\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_result\fP ($result, $row, $field=0)"
+.br
+.ti -1c
+.RI "\fBmysql_num_rows\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysql_num_fields\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysql_fetch_row\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysql_fetch_array\fP ($result, $result_type=\fBMYSQL_BOTH\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_fetch_assoc\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysql_fetch_object\fP ($result, $class_name='\fBstdClass\fP', array $params=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_data_seek\fP ($result, $row_number)"
+.br
+.ti -1c
+.RI "\fBmysql_fetch_lengths\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysql_fetch_field\fP ($result, $field_offset=0)"
+.br
+.ti -1c
+.RI "\fBmysql_field_seek\fP ($result, $field_offset)"
+.br
+.ti -1c
+.RI "\fBmysql_free_result\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysql_field_name\fP ($result, $field_offset)"
+.br
+.ti -1c
+.RI "\fBmysql_field_table\fP ($result, $field_offset)"
+.br
+.ti -1c
+.RI "\fBmysql_field_len\fP ($result, $field_offset)"
+.br
+.ti -1c
+.RI "\fBmysql_field_type\fP ($result, $field_offset)"
+.br
+.ti -1c
+.RI "\fBmysql_field_flags\fP ($result, $field_offset)"
+.br
+.ti -1c
+.RI "\fBmysql_escape_string\fP ($unescaped_string)"
+.br
+.ti -1c
+.RI "\fBmysql_real_escape_string\fP ($unescaped_string, $link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_stat\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_thread_id\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_client_encoding\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_ping\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_get_client_info\fP ()"
+.br
+.ti -1c
+.RI "\fBmysql_get_host_info\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_get_proto_info\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_get_server_info\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_info\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_set_charset\fP ($charset, $link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql\fP ($database_name, $query, $link_identifier)"
+.br
+.ti -1c
+.RI "\fBmysql_fieldname\fP ($result, $field_index)"
+.br
+.ti -1c
+.RI "\fBmysql_fieldtable\fP ($result, $field_offset)"
+.br
+.ti -1c
+.RI "\fBmysql_fieldlen\fP ($result, $field_offset)"
+.br
+.ti -1c
+.RI "\fBmysql_fieldtype\fP ($result, $field_offset)"
+.br
+.ti -1c
+.RI "\fBmysql_fieldflags\fP ($result, $field_offset)"
+.br
+.ti -1c
+.RI "\fBmysql_selectdb\fP ($database_name, $link_identifier)"
+.br
+.ti -1c
+.RI "\fBmysql_freeresult\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysql_numfields\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysql_numrows\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysql_listdbs\fP ($link_identifier)"
+.br
+.ti -1c
+.RI "\fBmysql_listtables\fP ($database_name, $link_identifier)"
+.br
+.ti -1c
+.RI "\fBmysql_listfields\fP ($database_name, $table_name, $link_identifier)"
+.br
+.ti -1c
+.RI "\fBmysql_db_name\fP ($result, $row, $field=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_dbname\fP ($result, $row, $field)"
+.br
+.ti -1c
+.RI "\fBmysql_tablename\fP ($result, $\fBi\fP)"
+.br
+.ti -1c
+.RI "\fBmysql_table_name\fP ($result, $row, $field)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBMYSQL_ASSOC\fP 1"
+.br
+.ti -1c
+.RI "const \fBMYSQL_NUM\fP 2"
+.br
+.ti -1c
+.RI "const \fBMYSQL_BOTH\fP 3"
+.br
+.ti -1c
+.RI "const \fBMYSQL_CLIENT_COMPRESS\fP 32"
+.br
+.ti -1c
+.RI "const \fBMYSQL_CLIENT_SSL\fP 2048"
+.br
+.ti -1c
+.RI "const \fBMYSQL_CLIENT_INTERACTIVE\fP 1024"
+.br
+.ti -1c
+.RI "const \fBMYSQL_CLIENT_IGNORE_SPACE\fP 256"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "mysql ( $database_name,  $query,  $link_identifier)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$database_name\fP 
+.br
+\fI$query\fP 
+.br
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.3 Use mysql_db_query instead\&. 
+.RE
+.PP
+
+.SS "mysql_affected_rows ( $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get number of affected rows in previous MySQL operation \fBhttps://php\&.net/manual/en/function\&.mysql-affected-rows\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int the number of affected rows on success, and -1 if the last query failed\&. 
+.RE
+.PP
+.PP
+If the last query was a DELETE query with no WHERE clause, all of the records will have been deleted from the table but this function will return zero with MySQL versions prior to 4\&.1\&.2\&. 
+.PP
+When using UPDATE, MySQL will not update columns where the new value is the same as the old value\&. This creates the possibility that \fBmysql_affected_rows\fP may not actually equal the number of rows matched, only the number of rows that were literally affected by the query\&. 
+.PP
+The REPLACE statement first deletes the record with the same primary key and then inserts the new record\&. This function returns the number of deleted records plus the number of inserted records\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_client_encoding ( $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Returns the name of the character set \fBhttps://php\&.net/manual/en/function\&.mysql-client-encoding\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string the default character set name for the current connection\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_close ( $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Close MySQL connection \fBhttps://php\&.net/manual/en/function\&.mysql-close\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_connect ( $server = \fC'\fBini_get\fP('mysql\&.default_host')'\fP,  $username = \fC'\fBini_get\fP('mysql\&.default_user')'\fP,  $password = \fC'\fBini_get\fP('mysql\&.default_password')'\fP,  $new_link = \fC\fBfalse\fP\fP,  $client_flags = \fC0\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Open a connection to a MySQL Server \fBhttps://php\&.net/manual/en/function\&.mysql-connect\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$server\fP [optional] 
+.RE
+.PP
+The MySQL server\&. It can also include a port number\&. e\&.g\&. 'hostname:port' or a path to a local socket e\&.g\&. ':/path/to/socket' for the localhost\&. 
+.PP
+If the PHP directive mysql\&.default_host is undefined (default), then the default value is 'localhost:3306'\&. In , this parameter is ignored and value 'localhost:3306' is always used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP [optional] 
+.RE
+.PP
+The username\&. Default value is defined by mysql\&.default_user\&. In , this parameter is ignored and the name of the user that owns the server process is used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP [optional] 
+.RE
+.PP
+The password\&. Default value is defined by mysql\&.default_password\&. In , this parameter is ignored and empty password is used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$new_link\fP [optional] 
+.RE
+.PP
+If a second call is made to \fBmysql_connect\fP with the same arguments, no new link will be established, but instead, the link identifier of the already opened link will be returned\&. The \fInew_link\fP parameter modifies this behavior and makes \fBmysql_connect\fP always open a new link, even if \fBmysql_connect\fP was called before with the same parameters\&. In , this parameter is ignored\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_flags\fP [optional] 
+.RE
+.PP
+The \fIclient_flags\fP parameter can be a combination of the following constants: 128 (enable LOAD DATA LOCAL handling), \fBMYSQL_CLIENT_SSL\fP, \fBMYSQL_CLIENT_COMPRESS\fP, \fBMYSQL_CLIENT_IGNORE_SPACE\fP or \fBMYSQL_CLIENT_INTERACTIVE\fP\&. Read the section about for further information\&. In , this parameter is ignored\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a MySQL link identifier on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_data_seek ( $result,  $row_number)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Move internal result pointer \fBhttps://php\&.net/manual/en/function\&.mysql-data-seek\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$row_number\fP 
+.RE
+.PP
+The desired row number of the new result pointer\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_db_name ( $result,  $row,  $field = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Retrieves database name from the call to \fBmysql_list_dbs\fP \fBhttps://php\&.net/manual/en/function\&.mysql-db-name\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.RE
+.PP
+The result pointer from a call to \fBmysql_list_dbs\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row\fP 
+.RE
+.PP
+The index into the result set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP [optional] 
+.RE
+.PP
+The field name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the database name on success, and false on failure\&. If false is returned, use \fBmysql_error\fP to determine the nature of the error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_db_query ( $database,  $query,  $link_identifier = \fC\fBnull\fP\fP)"
+Selects a database and executes a query on it \fBdeprecated 137\&. string $database \fP The name of the database that will be selected\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$query\fP 
+.RE
+.PP
+The MySQL query\&. 
+.PP
+Data inside the query should be properly escaped\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource a positive MySQL result resource to the query result, or false on error\&. The function also returns true/false for INSERT/UPDATE/DELETE queries to indicate success/failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_dbname ( $result,  $row,  $field)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$row\fP 
+.br
+\fI$field\fP [optional] 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Use mysql_db_name instead\&. 
+.RE
+.PP
+
+.SS "mysql_errno ( $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Returns the numerical value of the error message from previous MySQL operation \fBhttps://php\&.net/manual/en/function\&.mysql-errno\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int the error number from the last MySQL function, or 0 (zero) if no error occurred\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_error ( $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Returns the text of the error message from previous MySQL operation \fBhttps://php\&.net/manual/en/function\&.mysql-error\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string the error text from the last MySQL function, or '' (empty string) if no error occurred\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_escape_string ( $unescaped_string)"
+Escapes a string for use in a mysql_query \fBdeprecated 163\&. string $unescaped_string \fP The string that is to be escaped\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the escaped string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_fetch_array ( $result,  $result_type = \fC\fBMYSQL_BOTH\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Fetch a result row as an associative array, a numeric array, or both \fBhttps://php\&.net/manual/en/function\&.mysql-fetch-array\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$result_type\fP [optional] 
+.RE
+.PP
+The type of array that is to be fetched\&. It's a constant and can take the following values: \fBMYSQL_ASSOC\fP, \fBMYSQL_NUM\fP, and \fBMYSQL_BOTH\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array of strings that corresponds to the fetched row, or false if there are no more rows\&. The type of returned array depends on how \fIresult_type\fP is defined\&. By using \fBMYSQL_BOTH\fP (default), you'll get an array with both associative and number indices\&. Using \fBMYSQL_ASSOC\fP, you only get associative indices (as \fBmysql_fetch_assoc\fP works), using \fBMYSQL_NUM\fP, you only get number indices (as \fBmysql_fetch_row\fP works)\&. 
+.RE
+.PP
+.PP
+If two or more columns of the result have the same field names, the last column will take precedence\&. To access the other column(s) of the same name, you must use the numeric index of the column or make an alias for the column\&. For aliased columns, you cannot access the contents with the original column name\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_fetch_assoc ( $result)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Fetch a result row as an associative array \fBhttps://php\&.net/manual/en/function\&.mysql-fetch-assoc\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array an associative array of strings that corresponds to the fetched row, or false if there are no more rows\&. 
+.RE
+.PP
+.PP
+If two or more columns of the result have the same field names, the last column will take precedence\&. To access the other column(s) of the same name, you either need to access the result with numeric indices by using \fBmysql_fetch_row\fP or add alias names\&. See the example at the \fBmysql_fetch_array\fP description about aliases\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_fetch_field ( $result,  $field_offset = \fC0\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get column information from a result and return as an object \fBhttps://php\&.net/manual/en/function\&.mysql-fetch-field\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_offset\fP [optional] 
+.RE
+.PP
+The numerical field offset\&. If the field offset is not specified, the next field that was not yet retrieved by this function is retrieved\&. The \fIfield_offset\fP starts at 0\&. 
+.PP
+\fBReturns\fP
+.RS 4
+object an object containing field information\&. The properties of the object are: 
+.RE
+.PP
+.PP
+name - column name table - name of the table the column belongs to def - default value of the column max_length - maximum length of the column not_null - 1 if the column cannot be null primary_key - 1 if the column is a primary key unique_key - 1 if the column is a unique key multiple_key - 1 if the column is a non-unique key numeric - 1 if the column is numeric blob - 1 if the column is a BLOB type - the type of the column unsigned - 1 if the column is unsigned zerofill - 1 if the column is zero-filled 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_fetch_lengths ( $result)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get the length of each output in a result \fBhttps://php\&.net/manual/en/function\&.mysql-fetch-lengths\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|false An array of lengths on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_fetch_object ( $result,  $class_name = \fC'\fBstdClass\fP'\fP, array $params = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Fetch a result row as an object \fBhttps://php\&.net/manual/en/function\&.mysql-fetch-object\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$class_name\fP [optional] 
+.RE
+.PP
+The name of the class to instantiate, set the properties of and return\&. If not specified, a \fB\fBstdClass\fP\fP object is returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$params\fP [optional] 
+.RE
+.PP
+An optional array of parameters to pass to the constructor for \fIclass_name\fP objects\&. 
+.PP
+\fBReturns\fP
+.RS 4
+stdClass|object an object with string properties that correspond to the fetched row, or false if there are no more rows\&. 
+.RE
+.PP
+.PP
+mysql_fetch_row fetches one row of data from the result associated with the specified result identifier\&. The row is returned as an array\&. Each result column is stored in an array offset, starting at offset 0\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_fetch_row ( $result)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get a result row as an enumerated array \fBhttps://php\&.net/manual/en/function\&.mysql-fetch-row\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array an numerical array of strings that corresponds to the fetched row, or false if there are no more rows\&. 
+.RE
+.PP
+.PP
+\fBmysql_fetch_row\fP fetches one row of data from the result associated with the specified result identifier\&. The row is returned as an array\&. Each result column is stored in an array offset, starting at offset 0\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_field_flags ( $result,  $field_offset)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get the flags associated with the specified field in a result \fBhttps://php\&.net/manual/en/function\&.mysql-field-flags\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_offset\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false a string of flags associated with the result or false on failure\&. 
+.RE
+.PP
+.PP
+The following flags are reported, if your version of MySQL is current enough to support them: 'not_null', 'primary_key', 'unique_key', 'multiple_key', 'blob', 'unsigned', 'zerofill', 'binary', 'enum', 'auto_increment' and 'timestamp'\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_field_len ( $result,  $field_offset)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Returns the length of the specified field \fBhttps://php\&.net/manual/en/function\&.mysql-field-len\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_offset\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The length of the specified field index on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_field_name ( $result,  $field_offset)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get the name of the specified field in a result \fBhttps://php\&.net/manual/en/function\&.mysql-field-name\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_offset\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false The name of the specified field index on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_field_seek ( $result,  $field_offset)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Set result pointer to a specified field offset \fBhttps://php\&.net/manual/en/function\&.mysql-field-seek\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_offset\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_field_table ( $result,  $field_offset)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get name of the table the specified field is in \fBhttps://php\&.net/manual/en/function\&.mysql-field-table\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_offset\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string The name of the table on success\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_field_type ( $result,  $field_offset)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get the type of the specified field in a result \fBhttps://php\&.net/manual/en/function\&.mysql-field-type\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_offset\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string The returned field type will be one of 'int', 'real', 'string', 'blob', and others as detailed in the MySQL documentation\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_fieldflags ( $result,  $field_offset)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_offset\fP 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Use mysql_field_flags instead\&. 
+.RE
+.PP
+
+.SS "mysql_fieldlen ( $result,  $field_offset)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_offset\fP 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Use mysql_field_len instead\&. 
+.RE
+.PP
+
+.SS "mysql_fieldname ( $result,  $field_index)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_index\fP 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Use mysql_field_name instead\&. 
+.RE
+.PP
+
+.SS "mysql_fieldtable ( $result,  $field_offset)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_offset\fP 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Use mysql_field_table instead\&. 
+.RE
+.PP
+
+.SS "mysql_fieldtype ( $result,  $field_offset)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_offset\fP 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Use mysql_field_type instead\&. 
+.RE
+.PP
+
+.SS "mysql_free_result ( $result)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Free result memory \fBhttps://php\&.net/manual/en/function\&.mysql-free-result\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+.PP
+If a non-resource is used for the result, an error of level E_WARNING will be emitted\&. It's worth noting that mysql_query only returns a resource for SELECT, SHOW, EXPLAIN, and DESCRIBE queries\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_freeresult ( $result)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Use mysql_free_result instead\&. 
+.RE
+.PP
+
+.SS "mysql_get_client_info ()"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get MySQL client info \fBhttps://php\&.net/manual/en/function\&.mysql-get-client-info\&.php\fP
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string The MySQL client version\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_get_host_info ( $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get MySQL host info \fBhttps://php\&.net/manual/en/function\&.mysql-get-host-info\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string a string describing the type of MySQL connection in use for the connection or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_get_proto_info ( $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get MySQL protocol info \fBhttps://php\&.net/manual/en/function\&.mysql-get-proto-info\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false the MySQL protocol on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_get_server_info ( $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get MySQL server info \fBhttps://php\&.net/manual/en/function\&.mysql-get-server-info\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false the MySQL server version on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_info ( $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get information about the most recent query \fBhttps://php\&.net/manual/en/function\&.mysql-info\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false information about the statement on success, or false on failure\&. See the example below for which statements provide information, and what the returned value may look like\&. Statements that are not listed will return false\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_insert_id ( $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get the ID generated in the last query \fBhttps://php\&.net/manual/en/function\&.mysql-insert-id\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int The ID generated for an AUTO_INCREMENT column by the previous query on success, 0 if the previous query does not generate an AUTO_INCREMENT value, or false if no MySQL connection was established\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_list_dbs ( $link_identifier = \fC\fBnull\fP\fP)"
+List databases available on a MySQL server \fBresource $link_identifier [optional]  resource|false a result pointer resource on success, or false on failure\&. Use the \fBmysql_tablename\fP function to traverse this result pointer, or any function for result tables, such as \fBmysql_fetch_array\fP\&.  deprecated 138\&. 4\&.0  5\&.0 \fP
+.SS "mysql_list_fields ( $database_name,  $table_name,  $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 List MySQL table fields \fBhttps://php\&.net/manual/en/function\&.mysql-list-fields\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$database_name\fP 
+.RE
+.PP
+The name of the database that's being queried\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+The name of the table that's being queried\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP result pointer resource on success, or false on failure\&. 
+.RE
+.PP
+.PP
+The returned result can be used with \fBmysql_field_flags\fP, \fBmysql_field_len\fP, \fBmysql_field_name\fP \fBmysql_field_type\fP\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_list_processes ( $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 List MySQL processes \fBhttps://php\&.net/manual/en/function\&.mysql-list-processes\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP result pointer resource on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_list_tables ( $database,  $link_identifier = \fC\fBnull\fP\fP)"
+List tables in a MySQL database \fBstring $database \fP The name of the database 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP result pointer resource on success or false on failure\&. 
+.RE
+.PP
+.PP
+Use the \fBmysql_tablename\fP function to traverse this result pointer, or any function for result tables, such as \fBmysql_fetch_array\fP\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_listdbs ( $link_identifier)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Use mysql_list_dbs instead\&. 
+.RE
+.PP
+
+.SS "mysql_listfields ( $database_name,  $table_name,  $link_identifier)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$database_name\fP 
+.br
+\fI$table_name\fP 
+.br
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Use mysql_list_fields instead\&. 
+.RE
+.PP
+
+.SS "mysql_listtables ( $database_name,  $link_identifier)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$database_name\fP 
+.br
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Use mysql_list_tables instead\&. 
+.RE
+.PP
+
+.SS "mysql_num_fields ( $result)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get number of fields in result \fBhttps://php\&.net/manual/en/function\&.mysql-num-fields\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int the number of fields in the result set resource on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_num_rows ( $result)"
+Get number of rows in result \fBresource $result \fPThe result resource that is being evaluated\&. This result comes from a call to \fBmysql_query()\fP\&.
+.PP
+\fBReturns\fP
+.RS 4
+int|false 
+.RE
+.PP
+The number of rows in the result set on success or FALSE on failure\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "mysql_numfields ( $result)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Use mysql_num_fields instead\&. 
+.RE
+.PP
+
+.SS "mysql_numrows ( $result)"
+(PHP 4, PHP 5) Alias of \fBmysql_num_rows()\fP \fBresource $result \fPThe result resource that is being evaluated\&. This result comes from a call to \fBmysql_query()\fP\&.
+.PP
+\fBReturns\fP
+.RS 4
+int|false 
+.RE
+.PP
+The number of rows in the result set on success or FALSE on failure\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Use mysql_num_rows instead\&. 
+.RE
+.PP
+
+.SS "mysql_pconnect ( $server = \fC'\fBini_get\fP('mysql\&.default_host')'\fP,  $username = \fC'\fBini_get\fP('mysql\&.default_user')'\fP,  $password = \fC'\fBini_get\fP('mysql\&.default_password')'\fP,  $client_flags = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Open a persistent connection to a MySQL server \fBhttps://php\&.net/manual/en/function\&.mysql-pconnect\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$server\fP [optional] 
+.RE
+.PP
+The MySQL server\&. It can also include a port number\&. e\&.g\&. 'hostname:port' or a path to a local socket e\&.g\&. ':/path/to/socket' for the localhost\&. 
+.PP
+If the PHP directive mysql\&.default_host is undefined (default), then the default value is 'localhost:3306' 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP [optional] 
+.RE
+.PP
+The username\&. Default value is the name of the user that owns the server process\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP [optional] 
+.RE
+.PP
+The password\&. Default value is an empty password\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$client_flags\fP [optional] 
+.RE
+.PP
+The \fIclient_flags\fP parameter can be a combination of the following constants: 128 (enable LOAD DATA LOCAL handling), \fBMYSQL_CLIENT_SSL\fP, \fBMYSQL_CLIENT_COMPRESS\fP, \fBMYSQL_CLIENT_IGNORE_SPACE\fP or \fBMYSQL_CLIENT_INTERACTIVE\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a MySQL persistent link identifier on success, or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_ping ( $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Ping a server connection or reconnect if there is no connection \fBhttps://php\&.net/manual/en/function\&.mysql-ping\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true if the connection to the server MySQL server is working, otherwise false\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_query ( $query,  $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Send a MySQL query \fBhttps://php\&.net/manual/en/function\&.mysql-query\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$query\fP 
+.RE
+.PP
+An SQL query 
+.PP
+The query string should not end with a semicolon\&. Data inside the query should be properly escaped\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|bool For SELECT, SHOW, DESCRIBE, EXPLAIN and other statements returning resultset, \fBmysql_query\fP returns a resource on success, or false on error\&. 
+.RE
+.PP
+.PP
+For other type of SQL statements, INSERT, UPDATE, DELETE, DROP, etc, \fBmysql_query\fP returns true on success or false on error\&. 
+.PP
+The returned result resource should be passed to \fBmysql_fetch_array\fP, and other functions for dealing with result tables, to access the returned data\&. 
+.PP
+Use \fBmysql_num_rows\fP to find out how many rows were returned for a SELECT statement or \fBmysql_affected_rows\fP to find out how many rows were affected by a DELETE, INSERT, REPLACE, or UPDATE statement\&. 
+.PP
+\fBmysql_query\fP will also fail and return false if the user does not have permission to access the table(s) referenced by the query\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_real_escape_string ( $unescaped_string,  $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Escapes special characters in a string for use in an SQL statement \fBhttps://php\&.net/manual/en/function\&.mysql-real-escape-string\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$unescaped_string\fP 
+.RE
+.PP
+The string that is to be escaped\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false the escaped string, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_result ( $result,  $row,  $field = \fC0\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get result data \fBhttps://php\&.net/manual/en/function\&.mysql-result\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$row\fP 
+.RE
+.PP
+The row number from the result that's being retrieved\&. Row numbers start at 0\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP [optional] 
+.RE
+.PP
+The name or offset of the field being retrieved\&. 
+.PP
+It can be the field's offset, the field's name, or the field's table dot field name (tablename\&.fieldname)\&. If the column name has been aliased ('select foo as bar from\&.\&.\&.'), use the alias instead of the column name\&. If undefined, the first field is retrieved\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The contents of one cell from a MySQL result set on success, or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_select_db ( $database_name,  $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Select a MySQL database \fBhttps://php\&.net/manual/en/function\&.mysql-select-db\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$database_name\fP 
+.RE
+.PP
+The name of the database that is to be selected\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_selectdb ( $database_name,  $link_identifier)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$database_name\fP 
+.br
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Use mysql_select_db instead\&. 
+.RE
+.PP
+
+.SS "mysql_set_charset ( $charset,  $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Use mysqli_set_charset instead\&. Sets the client character set \fBhttps://php\&.net/manual/en/function\&.mysql-set-charset\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charset\fP 
+.RE
+.PP
+\fBA\fP valid character set name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2\&.3 
+.RE
+.PP
+
+.SS "mysql_stat ( $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get current system status \fBhttps://php\&.net/manual/en/function\&.mysql-stat\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string a string with the status for uptime, threads, queries, open tables, flush tables and queries per second\&. For a complete list of other status variables, you have to use the SHOW STATUS SQL command\&. If \fIlink_identifier\fP is invalid, null is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_table_name ( $result,  $row,  $field)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$row\fP 
+.br
+\fI$field\fP [optional] 
+.RE
+.PP
+
+.SS "mysql_tablename ( $result,  $i)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Get table name of field \fBhttps://php\&.net/manual/en/function\&.mysql-tablename\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.RE
+.PP
+\fBA\fP result pointer resource that's returned from \fBmysql_list_tables\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$i\fP 
+.RE
+.PP
+The integer index (row/table number) 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The name of the table on success or false on failure\&. 
+.RE
+.PP
+.PP
+Use the \fBmysql_tablename\fP function to traverse this result pointer, or any function for result tables, such as \fBmysql_fetch_array\fP\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_thread_id ( $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Return the current thread ID \fBhttps://php\&.net/manual/en/function\&.mysql-thread-id\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The thread ID on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mysql_unbuffered_query ( $query,  $link_identifier = \fC\fBnull\fP\fP)"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Send an SQL query to MySQL without fetching and buffering the result rows\&. \fBhttps://php\&.net/manual/en/function\&.mysql-unbuffered-query\&.php\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$query\fP 
+.RE
+.PP
+The SQL query to execute\&. 
+.PP
+Data inside the query should be properly escaped\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource For SELECT, SHOW, DESCRIBE or EXPLAIN statements, \fBmysql_unbuffered_query\fP returns a resource on success, or false on error\&. 
+.RE
+.PP
+.PP
+For other type of SQL statements, UPDATE, DELETE, DROP, etc, \fBmysql_unbuffered_query\fP returns true on success or false on error\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const MYSQL_ASSOC 1"
+Columns are returned into the array having the fieldname as the array index\&. \fBdeprecated 192\&. \fP
+.SS "const MYSQL_BOTH 3"
+Columns are returned into the array having both a numerical index and the fieldname as the array index\&. \fBdeprecated 194\&. \fP
+.SS "const MYSQL_CLIENT_COMPRESS 32"
+Use compression protocol \fBdeprecated 195\&. \fP
+.SS "const MYSQL_CLIENT_IGNORE_SPACE 256"
+Allow space after function names \fBdeprecated 198\&. \fP
+.SS "const MYSQL_CLIENT_INTERACTIVE 1024"
+Allow interactive_timeout seconds (instead of wait_timeout) of inactivity before closing the connection\&. \fBdeprecated 197\&. \fP
+.SS "const MYSQL_CLIENT_SSL 2048"
+Use SSL encryption\&. This flag is only available with version 4\&.x of the MySQL client library or newer\&. Version 3\&.23\&.x is bundled both with PHP 4 and Windows binaries of PHP 5\&. \fBdeprecated 196\&. \fP
+.SS "const MYSQL_NUM 2"
+Columns are returned into the array having a numerical index to the fields\&. This index starts with 0, the first field in the result\&. \fBdeprecated 193\&. \fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

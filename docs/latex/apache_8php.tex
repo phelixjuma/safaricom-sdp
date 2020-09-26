@@ -1,0 +1,165 @@
+\hypertarget{apache_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/apache/apache.php File Reference}
+\label{apache_8php}\index{vendor/jetbrains/phpstorm-\/stubs/apache/apache.php@{vendor/jetbrains/phpstorm-\/stubs/apache/apache.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{apache_8php_a76063df57a18ac1c8dcd6a2d99d27251}{apache\+\_\+child\+\_\+terminate}} ()
+\item 
+\mbox{\hyperlink{apache_8php_a0781542fd23a606e50fd86d884e1c02c}{apache\+\_\+get\+\_\+modules}} ()
+\item 
+\mbox{\hyperlink{apache_8php_acd8156ab4321e8ca38dc4d4c6608503f}{apache\+\_\+get\+\_\+version}} ()
+\item 
+\mbox{\hyperlink{apache_8php_a73d245a063d590112452556282cca111}{apache\+\_\+getenv}} ( \$variable, \$walk\+\_\+to\+\_\+top=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{apache_8php_a4a77a7f8177a7479f68d3b864e57e8ad}{apache\+\_\+lookup\+\_\+uri}} ( \$filename)
+\item 
+\mbox{\hyperlink{apache_8php_a9e7943aa1801ab9471b0efb6014e2e92}{apache\+\_\+note}} ( \$note\+\_\+name, \$note\+\_\+value=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{apache_8php_a0731cd94050880742a19f5546e8c6480}{apache\+\_\+request\+\_\+headers}} ()
+\item 
+\mbox{\hyperlink{apache_8php_a9e1155a747927144ae62959b3a171411}{apache\+\_\+reset\+\_\+timeout}} ()
+\item 
+\mbox{\hyperlink{apache_8php_a457827ecb32e830dcb8a841e03a1b7c4}{apache\+\_\+response\+\_\+headers}} ()
+\item 
+\mbox{\hyperlink{apache_8php_ac53643815759fb5624aba8816ca505ef}{apache\+\_\+setenv}} ( \$variable, \$value, \$walk\+\_\+to\+\_\+top=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{apache_8php_ae05ac79b309c9bc5bc9a6ba333db809b}{getallheaders}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{apache_8php_a76063df57a18ac1c8dcd6a2d99d27251}\label{apache_8php_a76063df57a18ac1c8dcd6a2d99d27251}} 
+\index{apache.php@{apache.php}!apache\_child\_terminate@{apache\_child\_terminate}}
+\index{apache\_child\_terminate@{apache\_child\_terminate}!apache.php@{apache.php}}
+\doxysubsubsection{\texorpdfstring{apache\_child\_terminate()}{apache\_child\_terminate()}}
+{\footnotesize\ttfamily apache\+\_\+child\+\_\+terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Terminate apache process after this request \mbox{\hyperlink{apache_8php_a76063df57a18ac1c8dcd6a2d99d27251}{apache\+\_\+child\+\_\+terminate()}} will register the Apache process executing the current P\+HP request for termination once execution of P\+HP code is completed. It may be used to terminate a process after a script with high memory consumption has been run as memory will usually only be freed internally but not given back to the operating system. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{bool {\bfseries{T\+R\+UE}} if P\+HP is running as an Apache 1 module, the Apache version is non-\/multithreaded, and the child\+\_\+terminate P\+HP directive is enabled (disabled by default). If these conditions are not met, {\bfseries{F\+A\+L\+SE}} is returned and an error of level {\bfseries{E\+\_\+\+W\+A\+R\+N\+I\+NG}} is generated.  4.\+0.\+5  5.\+0 }}\mbox{\Hypertarget{apache_8php_a0781542fd23a606e50fd86d884e1c02c}\label{apache_8php_a0781542fd23a606e50fd86d884e1c02c}} 
+\index{apache.php@{apache.php}!apache\_get\_modules@{apache\_get\_modules}}
+\index{apache\_get\_modules@{apache\_get\_modules}!apache.php@{apache.php}}
+\doxysubsubsection{\texorpdfstring{apache\_get\_modules()}{apache\_get\_modules()}}
+{\footnotesize\ttfamily apache\+\_\+get\+\_\+modules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get a list of loaded Apache modules \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array of loaded Apache modules.  4.\+3.\+2  5.\+0 }}\mbox{\Hypertarget{apache_8php_acd8156ab4321e8ca38dc4d4c6608503f}\label{apache_8php_acd8156ab4321e8ca38dc4d4c6608503f}} 
+\index{apache.php@{apache.php}!apache\_get\_version@{apache\_get\_version}}
+\index{apache\_get\_version@{apache\_get\_version}!apache.php@{apache.php}}
+\doxysubsubsection{\texorpdfstring{apache\_get\_version()}{apache\_get\_version()}}
+{\footnotesize\ttfamily apache\+\_\+get\+\_\+version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fetch the Apache version \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string$\vert$false the Apache version on success or {\bfseries{F\+A\+L\+SE}} on failure.  4.\+3.\+2  5.\+0 }}\mbox{\Hypertarget{apache_8php_a73d245a063d590112452556282cca111}\label{apache_8php_a73d245a063d590112452556282cca111}} 
+\index{apache.php@{apache.php}!apache\_getenv@{apache\_getenv}}
+\index{apache\_getenv@{apache\_getenv}!apache.php@{apache.php}}
+\doxysubsubsection{\texorpdfstring{apache\_getenv()}{apache\_getenv()}}
+{\footnotesize\ttfamily apache\+\_\+getenv (\begin{DoxyParamCaption}\item[{}]{\$variable,  }\item[{}]{\$walk\+\_\+to\+\_\+top = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+Get an Apache subprocess\+\_\+env variable Retrieve an Apache environment variable specified by \$variable. This function requires Apache 2 otherwise it\textquotesingle{}s undefined. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$variable }} The Apache environment variable. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$walk\+\_\+to\+\_\+top} & \\
+\hline
+\end{DoxyParams}
+Whether to get the top-\/level variable available to all Apache layers. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false The value of the Apache environment variable on success, or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{apache_8php_a4a77a7f8177a7479f68d3b864e57e8ad}\label{apache_8php_a4a77a7f8177a7479f68d3b864e57e8ad}} 
+\index{apache.php@{apache.php}!apache\_lookup\_uri@{apache\_lookup\_uri}}
+\index{apache\_lookup\_uri@{apache\_lookup\_uri}!apache.php@{apache.php}}
+\doxysubsubsection{\texorpdfstring{apache\_lookup\_uri()}{apache\_lookup\_uri()}}
+{\footnotesize\ttfamily apache\+\_\+lookup\+\_\+uri (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+Perform a partial request for the specified U\+RI and return all info about it This performs a partial request for a U\+RI. It goes just far enough to obtain all the important information about the given resource. This function is supported when P\+HP is installed as an Apache module or by the N\+S\+A\+PI server module in Netscape/i\+Planet/\+Sun\+O\+NE webservers. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} The filename (U\+RI) that\textquotesingle{}s being requested. 
+
+\begin{DoxyReturn}{Returns}
+object of related U\+RI information. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{apache_8php_a9e7943aa1801ab9471b0efb6014e2e92}\label{apache_8php_a9e7943aa1801ab9471b0efb6014e2e92}} 
+\index{apache.php@{apache.php}!apache\_note@{apache\_note}}
+\index{apache\_note@{apache\_note}!apache.php@{apache.php}}
+\doxysubsubsection{\texorpdfstring{apache\_note()}{apache\_note()}}
+{\footnotesize\ttfamily apache\+\_\+note (\begin{DoxyParamCaption}\item[{}]{\$note\+\_\+name,  }\item[{}]{\$note\+\_\+value = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Get and set apache request notes This function is a wrapper for Apache\textquotesingle{}s table\+\_\+get and table\+\_\+set. It edits the table of notes that exists during a request. The table\textquotesingle{}s purpose is to allow Apache modules to communicate. The main use for \mbox{\hyperlink{apache_8php_a9e7943aa1801ab9471b0efb6014e2e92}{apache\+\_\+note()}} is to pass information from one module to another within the same request. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$note\+\_\+name }} The name of the note. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$note\+\_\+value} & \\
+\hline
+\end{DoxyParams}
+The value of the note. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false If called with one argument, it returns the current value of note note\+\_\+name. If called with two arguments, it sets the value of note note\+\_\+name to note\+\_\+value and returns the previous value of note note\+\_\+name. If the note cannot be retrieved, {\bfseries{F\+A\+L\+SE}} is returned. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{apache_8php_a0731cd94050880742a19f5546e8c6480}\label{apache_8php_a0731cd94050880742a19f5546e8c6480}} 
+\index{apache.php@{apache.php}!apache\_request\_headers@{apache\_request\_headers}}
+\index{apache\_request\_headers@{apache\_request\_headers}!apache.php@{apache.php}}
+\doxysubsubsection{\texorpdfstring{apache\_request\_headers()}{apache\_request\_headers()}}
+{\footnotesize\ttfamily apache\+\_\+request\+\_\+headers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fetches all H\+T\+TP request headers from the current request \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array$\vert$false An associative array of all the H\+T\+TP headers in the current request, or {\bfseries{F\+A\+L\+SE$<$/b on failure.  4.\+3  5.\+0 }}}}\mbox{\Hypertarget{apache_8php_a9e1155a747927144ae62959b3a171411}\label{apache_8php_a9e1155a747927144ae62959b3a171411}} 
+\index{apache.php@{apache.php}!apache\_reset\_timeout@{apache\_reset\_timeout}}
+\index{apache\_reset\_timeout@{apache\_reset\_timeout}!apache.php@{apache.php}}
+\doxysubsubsection{\texorpdfstring{apache\_reset\_timeout()}{apache\_reset\_timeout()}}
+{\footnotesize\ttfamily apache\+\_\+reset\+\_\+timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reset the Apache write timer \mbox{\hyperlink{apache_8php_a9e1155a747927144ae62959b3a171411}{apache\+\_\+reset\+\_\+timeout()}} resets the Apache write timer, which defaults to 300 seconds. With set\+\_\+time\+\_\+limit(0); ignore\+\_\+user\+\_\+abort(true) and periodic \mbox{\hyperlink{apache_8php_a9e1155a747927144ae62959b3a171411}{apache\+\_\+reset\+\_\+timeout()}} calls, Apache can theoretically run forever. This function requires Apache 1. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure.  5.\+1 }}\mbox{\Hypertarget{apache_8php_a457827ecb32e830dcb8a841e03a1b7c4}\label{apache_8php_a457827ecb32e830dcb8a841e03a1b7c4}} 
+\index{apache.php@{apache.php}!apache\_response\_headers@{apache\_response\_headers}}
+\index{apache\_response\_headers@{apache\_response\_headers}!apache.php@{apache.php}}
+\doxysubsubsection{\texorpdfstring{apache\_response\_headers()}{apache\_response\_headers()}}
+{\footnotesize\ttfamily apache\+\_\+response\+\_\+headers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fetch all H\+T\+TP response headers \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array$\vert$false An array of all Apache response headers on success or {\bfseries{F\+A\+L\+SE}} on failure.  4.\+3  5.\+0 }}\mbox{\Hypertarget{apache_8php_ac53643815759fb5624aba8816ca505ef}\label{apache_8php_ac53643815759fb5624aba8816ca505ef}} 
+\index{apache.php@{apache.php}!apache\_setenv@{apache\_setenv}}
+\index{apache\_setenv@{apache\_setenv}!apache.php@{apache.php}}
+\doxysubsubsection{\texorpdfstring{apache\_setenv()}{apache\_setenv()}}
+{\footnotesize\ttfamily apache\+\_\+setenv (\begin{DoxyParamCaption}\item[{}]{\$variable,  }\item[{}]{\$value,  }\item[{}]{\$walk\+\_\+to\+\_\+top = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+Sets the value of the Apache environment variable specified by variable. Note\+: When setting an Apache environment variable, the corresponding \$\+\_\+\+S\+E\+R\+V\+ER variable is not changed. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$variable }} The environment variable that\textquotesingle{}s being set. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+The new variable value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$walk\+\_\+to\+\_\+top} & \\
+\hline
+\end{DoxyParams}
+Whether to set the top-\/level variable available to all Apache layers. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{apache_8php_ae05ac79b309c9bc5bc9a6ba333db809b}\label{apache_8php_ae05ac79b309c9bc5bc9a6ba333db809b}} 
+\index{apache.php@{apache.php}!getallheaders@{getallheaders}}
+\index{getallheaders@{getallheaders}!apache.php@{apache.php}}
+\doxysubsubsection{\texorpdfstring{getallheaders()}{getallheaders()}}
+{\footnotesize\ttfamily getallheaders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fetches all H\+T\+TP headers from the current request. This function is an alias for \mbox{\hyperlink{apache_8php_a0731cd94050880742a19f5546e8c6480}{apache\+\_\+request\+\_\+headers()}}. Please read the \mbox{\hyperlink{apache_8php_a0731cd94050880742a19f5546e8c6480}{apache\+\_\+request\+\_\+headers()}} documentation for more information on how this function works. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array$\vert$false An associative array of all the H\+T\+TP headers in the current request, or {\bfseries{F\+A\+L\+SE}} on failure.  4.\+0  5.\+0 }}

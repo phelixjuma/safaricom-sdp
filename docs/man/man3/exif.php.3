@@ -1,0 +1,176 @@
+.TH "vendor/jetbrains/phpstorm-stubs/exif/exif.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/exif/exif.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBexif_read_data\fP ($stream, $sections=\fBnull\fP, $arrays=\fBfalse\fP, $thumbnail=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBread_exif_data\fP ($filename, $sections=\fBnull\fP, $arrays=\fBfalse\fP, $thumbnail=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBexif_tagname\fP ($index)"
+.br
+.ti -1c
+.RI "\fBexif_thumbnail\fP ($stream, &$width=\fBnull\fP, &$height=\fBnull\fP, &$imagetype=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBexif_imagetype\fP ($filename)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBEXIF_USE_MBSTRING\fP 1"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "exif_imagetype ( $filename)"
+Determine the type of an image \fBstring $filename The image being checked\&.  int|false When a correct signature is found, the appropriate constant value will be returned otherwise the return value is \fBFALSE\fP\&. The return value is the same value that \fBgetimagesize\fP returns in index 2 but \fBexif_imagetype\fP is much faster\&. \fP 
+.PP
+\fBexif_imagetype\fP will emit an \fBE_NOTICE\fP and return \fBFALSE\fP if it is unable to read enough bytes from the file to determine the image type\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "exif_read_data ( $stream,  $sections = \fC\fBnull\fP\fP,  $arrays = \fC\fBfalse\fP\fP,  $thumbnail = \fC\fBfalse\fP\fP)"
+Reads the EXIF headers from JPEG or TIFF \fBstring|resource $stream \fP The location of the image file\&. This cannot be an URL\&. Since 7\&.2\&.0 this can either be a path to the file (stream wrappers are also supported as usual) or a stream resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sections\fP [optional] 
+.RE
+.PP
+Is a comma separated list of sections that need to be present in file to produce a result array\&. If none of the requested sections could be found the return value is \fBFALSE\fP\&. 
+.PP
+FILE 
+.PP
+FileName, FileSize, FileDateTime, SectionsFound  
+.PP
+COMPUTED 
+.PP
+html, Width, Height, IsColor, and more if available\&. Height and Width are computed the same way \fBgetimagesize\fP does so their values must not be part of any header returned\&. Also, html is a height/width text string to be used inside normal HTML\&.   
+.PP
+ANY_TAG 
+.PP
+Any information that has a Tag e\&.g\&. IFD0, EXIF, \&.\&.\&.  
+.PP
+IFD0 
+.PP
+All tagged data of IFD0\&. In normal imagefiles this contains image size and so forth\&.   
+.PP
+THUMBNAIL 
+.PP
+\fBA\fP file is supposed to contain a thumbnail if it has a second IFD\&. All tagged information about the embedded thumbnail is stored in this section\&.   
+.PP
+COMMENT 
+.PP
+Comment headers of JPEG images\&.  
+.PP
+EXIF 
+.PP
+The EXIF section is a sub section of IFD0\&. It contains more detailed information about an image\&. Most of these entries are digital camera related\&.   
+.PP
+\fBParameters\fP
+.RS 4
+\fI$arrays\fP [optional] 
+.RE
+.PP
+Specifies whether or not each section becomes an array\&. The \fIsections\fP COMPUTED, THUMBNAIL, and COMMENT always become arrays as they may contain values whose names conflict with other sections\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$thumbnail\fP [optional] 
+.RE
+.PP
+When set to \fBTRUE\fP the thumbnail itself is read\&. Otherwise, only the tagged data is read\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array It returns an associative array where the array indexes are the header names and the array values are the values associated with those headers\&. If no data can be returned, \fBexif_read_data\fP will return \fBFALSE\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "exif_tagname ( $index)"
+Get the header name for an index \fBint $index \fP The Tag ID for which a Tag Name will be looked up\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the header name, or \fBFALSE\fP if \fIindex\fP is not a defined EXIF tag id\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "exif_thumbnail ( $stream, & $width = \fC\fBnull\fP\fP, & $height = \fC\fBnull\fP\fP, & $imagetype = \fC\fBnull\fP\fP)"
+Retrieve the embedded thumbnail of a TIFF or JPEG image \fBstring|resource $stream \fP The location of the image file\&. This cannot be an URL\&. Since 7\&.2\&.0 this can either be a path to the file (stream wrappers are also supported as usual) or a stream resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$width\fP [optional] 
+.RE
+.PP
+The return width of the returned thumbnail\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$height\fP [optional] 
+.RE
+.PP
+The returned height of the returned thumbnail\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$imagetype\fP [optional] 
+.RE
+.PP
+The returned image type of the returned thumbnail\&. This is either TIFF or JPEG\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the embedded thumbnail, or \fBFALSE\fP if the image contains no thumbnail\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "read_exif_data ( $filename,  $sections = \fC\fBnull\fP\fP,  $arrays = \fC\fBfalse\fP\fP,  $thumbnail = \fC\fBfalse\fP\fP)"
+Alias of \fBexif_read_data\fP \fB$filename  $sections [optional]  $arrays [optional]  $thumbnail [optional]  4\&.0\&.1  5\&.0  deprecated 36\&. exif_read_data()} instead\&. \fP
+.SH "Variable Documentation"
+.PP 
+.SS "const EXIF_USE_MBSTRING 1"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

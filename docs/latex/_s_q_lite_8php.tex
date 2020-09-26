@@ -1,0 +1,1168 @@
+\hypertarget{_s_q_lite_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/\+S\+Q\+Lite/\+S\+Q\+Lite.php File Reference}
+\label{_s_q_lite_8php}\index{vendor/jetbrains/phpstorm-\/stubs/SQLite/SQLite.php@{vendor/jetbrains/phpstorm-\/stubs/SQLite/SQLite.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_s_q_lite_database}{S\+Q\+Lite\+Database}}
+\item 
+class \mbox{\hyperlink{class_s_q_lite_result}{S\+Q\+Lite\+Result}}
+\item 
+class \mbox{\hyperlink{class_s_q_lite_unbuffered}{S\+Q\+Lite\+Unbuffered}}
+\item 
+class \mbox{\hyperlink{class_s_q_lite_exception}{S\+Q\+Lite\+Exception}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a5fd31608ba2ac5b194638c39bd102166}{sqlite\+\_\+open}} (\$filename, \$mode=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \&\$error\+\_\+message=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_af0aaecf9da57bc30c79d5c0e84d83e0c}{sqlite\+\_\+popen}} (\$filename, \$mode=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \&\$error\+\_\+message=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a41f77332baf8af4b44f6cdb9185cfa7e}{sqlite\+\_\+close}} (\$dbhandle)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a91c8d16fdda94ccb200b2cdb4e8522cc}{sqlite\+\_\+query}} (\$query, \$dbhandle, \$result\+\_\+type=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \&\$error\+\_\+msg=\mbox{\hyperlink{_s_q_lite_8php_aa7c179706de888eaf8c7759e1ed41c45}{S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a709f47d7f14d52d7dc383dbf30a2bad0}{sqlite\+\_\+exec}} (\$dbhandle, \$query, \&\$error\+\_\+msg=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_abbebd1bb8abc20f574de7198c4652c68}{sqlite\+\_\+array\+\_\+query}} (\$dbhandle, \$query, \$result\+\_\+type=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$decode\+\_\+binary=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a6b88a151cb38ab8b39aac57fa1b4508f}{sqlite\+\_\+single\+\_\+query}} (\$db, \$query, \$first\+\_\+row\+\_\+only=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$decode\+\_\+binary=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a384b137de75ba0c0e20c3e254531a252}{sqlite\+\_\+fetch\+\_\+array}} (\$result, \$result\+\_\+type=\mbox{\hyperlink{_s_q_lite_8php_aa7c179706de888eaf8c7759e1ed41c45}{S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH}}, \$decode\+\_\+binary=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_ae43a37ce7283971482fccb72bb6d0f41}{sqlite\+\_\+fetch\+\_\+object}} (\$result, \$class\+\_\+name=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$ctor\+\_\+params=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$decode\+\_\+binary=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a6abaa496ca1d8befc90be3d4540a1ee1}{sqlite\+\_\+fetch\+\_\+single}} (\$result, \$decode\+\_\+binary=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a9ad55d36c95c6137fa7236b792f1c4bf}{sqlite\+\_\+fetch\+\_\+string}} (\$result, \$decode\+\_\+binary)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a5dfbc4456735af9a0b1f7d73fbfb3138}{sqlite\+\_\+fetch\+\_\+all}} (\$result\+\_\+type=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$decode\+\_\+binary=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a59c6c62d468f4100fb98907b99f2ba1f}{sqlite\+\_\+current}} (\$result, \$result\+\_\+type=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$decode\+\_\+binary=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a7209bb4d1190c7a49ce494a4cad7c438}{sqlite\+\_\+column}} (\$result, \$index\+\_\+or\+\_\+name, \$decode\+\_\+binary=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a9f68a16613901045df141fbb7e6dfe27}{sqlite\+\_\+libversion}} ()
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_aa12923b25e00833f658ea6b23be392d7}{sqlite\+\_\+libencoding}} ()
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_ad25a73fed12c4a7325a628d257071745}{sqlite\+\_\+changes}} (\$db)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_ad40698c65adf64d7b22b7986b0c8e9ff}{sqlite\+\_\+last\+\_\+insert\+\_\+rowid}} (\$dbhandle)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a33773dc86779c2889a200e6112fa52fb}{sqlite\+\_\+num\+\_\+rows}} (\$result)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a344036bc45c0c97ac327b74850775353}{sqlite\+\_\+num\+\_\+fields}} (\$result)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_ac5ee0a5c568838f120ba9da3b7fc797d}{sqlite\+\_\+field\+\_\+name}} (\$result, \$field\+\_\+index)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a0600a8090c50fab4006185aae652e8ef}{sqlite\+\_\+seek}} (\$result, \$rownum)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_ae3c8881b17ba4ca4c37485adb9b77127}{sqlite\+\_\+rewind}} (\$result)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a398e9661a15cc8ad4cebda4fcd2e4a9f}{sqlite\+\_\+next}} (\$result)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a7cf38b275d3888487c402cdb39dfeadf}{sqlite\+\_\+prev}} (\$result)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a084798c9ed6d12cf6432f80ca951c202}{sqlite\+\_\+valid}} (\$result)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a12f66f618d413b036d4278d048af6c72}{sqlite\+\_\+has\+\_\+more}} (\$result)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_ab3e17491713ab6106aaa37dfa02586b3}{sqlite\+\_\+has\+\_\+prev}} (\$result)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_ad3072a18b10d506c1862d2878665aea4}{sqlite\+\_\+escape\+\_\+string}} (\$item)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a3d302e1ef4e12da8cc05e0b418251cd4}{sqlite\+\_\+busy\+\_\+timeout}} (\$dbhandle, \$milliseconds)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a3cd27cd4d400e3cd5626f512c8cbe083}{sqlite\+\_\+last\+\_\+error}} (\$dbhandle)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a65643f63ef4b01ae358a619f300902aa}{sqlite\+\_\+error\+\_\+string}} (\$error\+\_\+code)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a74a7af766fdedd07a0a63ba937b737d8}{sqlite\+\_\+unbuffered\+\_\+query}} (\$dbhandle, \$query, \$result\+\_\+type=\mbox{\hyperlink{_s_q_lite_8php_aa7c179706de888eaf8c7759e1ed41c45}{S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH}}, \&\$error\+\_\+msg=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_acf1b025d19501853577dbc0f30db09cc}{sqlite\+\_\+create\+\_\+aggregate}} (\$dbhandle, \$function\+\_\+name, \$step\+\_\+func, \$finalize\+\_\+func, \$num\+\_\+args=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_ac57911a76e2ef5557fadf461c4edcb04}{sqlite\+\_\+create\+\_\+function}} (\$dbhandle, \$function\+\_\+name, \$\mbox{\hyperlink{phpunit_2phpunit_2src_2_framework_2_assert_2_functions_8php_ae2242eb47799ca6a822b022dc1bd1ac9}{callback}}, \$num\+\_\+args=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a3d1ac07e6c29e61a6d2e5a4a07bfb583}{sqlite\+\_\+factory}} (\$filename, \$mode=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \&\$error\+\_\+message=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_aaddbe3be823d8784f85d8ab29a2512e1}{sqlite\+\_\+udf\+\_\+encode\+\_\+binary}} (\$data)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_a11432eb319fe9fb38d418e125c7b38e8}{sqlite\+\_\+udf\+\_\+decode\+\_\+binary}} (\$data)
+\item 
+\mbox{\hyperlink{_s_q_lite_8php_ac7f63dd68bd5baba5d13c577cdad9084}{sqlite\+\_\+fetch\+\_\+column\+\_\+types}} (\$dbhandle, \$table\+\_\+name, \$result\+\_\+type=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_aa7c179706de888eaf8c7759e1ed41c45}{S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH}} 3
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a188da140a3429e6fb54ba1e989b8a441}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+UM}} 2
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a53c006c03e90065d7dee77941c2169d8}{S\+Q\+L\+I\+T\+E\+\_\+\+A\+S\+S\+OC}} 1
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_afc3e40c922322b7ce83a55cbab35c70b}{S\+Q\+L\+I\+T\+E\+\_\+\+OK}} 0
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_aa49859dd3cd57313d53c564b589cbde1}{S\+Q\+L\+I\+T\+E\+\_\+\+E\+R\+R\+OR}} 1
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_ae68783ffe764dbd82f74b3e716e6cd48}{S\+Q\+L\+I\+T\+E\+\_\+\+I\+N\+T\+E\+R\+N\+AL}} 2
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a2986bbc84dd2096c02514a85a1e30a34}{S\+Q\+L\+I\+T\+E\+\_\+\+P\+E\+RM}} 3
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a2b04ac57379f7f812f737044c58045c1}{S\+Q\+L\+I\+T\+E\+\_\+\+A\+B\+O\+RT}} 4
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a39643126b179936e113301bb772756e8}{S\+Q\+L\+I\+T\+E\+\_\+\+B\+U\+SY}} 5
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a33ffec82a4cfd5c19b65a3a60f1f0335}{S\+Q\+L\+I\+T\+E\+\_\+\+L\+O\+C\+K\+ED}} 6
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a7949d3efc43be8a87bf44880325a891c}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+M\+EM}} 7
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_aa288a5b77eccf7df4b70643e3db44c74}{S\+Q\+L\+I\+T\+E\+\_\+\+R\+E\+A\+D\+O\+N\+LY}} 8
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a7f5b1f8bd07ad79d86eecf845e94c48a}{S\+Q\+L\+I\+T\+E\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}} 9
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a8d860c3c6c4f1037339d8a4d312c2592}{S\+Q\+L\+I\+T\+E\+\_\+\+I\+O\+E\+RR}} 10
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a2d785869ff3633b0cd6cd96021e55cb5}{S\+Q\+L\+I\+T\+E\+\_\+\+C\+O\+R\+R\+U\+PT}} 11
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_ae1236f836db3d93940aa0c586ecfa602}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+F\+O\+U\+ND}} 12
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_ae808f56b25aae94ff48df9b61138b60f}{S\+Q\+L\+I\+T\+E\+\_\+\+F\+U\+LL}} 13
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a3594ccc26db7b3e2ac0e0f7201966e0a}{S\+Q\+L\+I\+T\+E\+\_\+\+C\+A\+N\+T\+O\+P\+EN}} 14
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_aeb6b2c8971f50238937cca8e3c09d294}{S\+Q\+L\+I\+T\+E\+\_\+\+P\+R\+O\+T\+O\+C\+OL}} 15
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_af97a187c194c2737e8a7f6b88b7500b5}{S\+Q\+L\+I\+T\+E\+\_\+\+E\+M\+P\+TY}} 16
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a3b4a22e1c22e4481ed893c8282f8860c}{S\+Q\+L\+I\+T\+E\+\_\+\+S\+C\+H\+E\+MA}} 17
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a1fba3870e77aea95b22fa188f06b1ab5}{S\+Q\+L\+I\+T\+E\+\_\+\+T\+O\+O\+B\+IG}} 18
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a93243df0df56c34ef5e8ad345a8d53c1}{S\+Q\+L\+I\+T\+E\+\_\+\+C\+O\+N\+S\+T\+R\+A\+I\+NT}} 19
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a5493705fd53321eaf8e74a632e271094}{S\+Q\+L\+I\+T\+E\+\_\+\+M\+I\+S\+M\+A\+T\+CH}} 20
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a481340fe11a9f877b78b4bf0ce2c4efa}{S\+Q\+L\+I\+T\+E\+\_\+\+M\+I\+S\+U\+SE}} 21
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_ad64d542a1a6f0cf950713495b8ce8ec8}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+L\+FS}} 22
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_ad16ad14a35efad74eab822d89eb2b1da}{S\+Q\+L\+I\+T\+E\+\_\+\+A\+U\+TH}} 23
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a16ade2c98eb0f00c0d95cd4e34c44788}{S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+A\+DB}} 26
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_abfd565f9ba48010648ecca863f2ff079}{S\+Q\+L\+I\+T\+E\+\_\+\+F\+O\+R\+M\+AT}} 24
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a7d7da3ffc213d744999839ce8a22d356}{S\+Q\+L\+I\+T\+E\+\_\+\+R\+OW}} 100
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a824708c4796cd73be486efac5e1e7599}{S\+Q\+L\+I\+T\+E\+\_\+\+D\+O\+NE}} 101
+\item 
+const \mbox{\hyperlink{_s_q_lite_8php_a88b0c1e93a86f71b8e379ed89cecb8cb}{S\+Q\+L\+I\+T\+E3\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+I\+S\+T\+IC}} 2048
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_s_q_lite_8php_abbebd1bb8abc20f574de7198c4652c68}\label{_s_q_lite_8php_abbebd1bb8abc20f574de7198c4652c68}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_array\_query@{sqlite\_array\_query}}
+\index{sqlite\_array\_query@{sqlite\_array\_query}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_array\_query()}{sqlite\_array\_query()}}
+{\footnotesize\ttfamily sqlite\+\_\+array\+\_\+query (\begin{DoxyParamCaption}\item[{}]{\$dbhandle,  }\item[{}]{\$query,  }\item[{}]{\$result\+\_\+type = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$decode\+\_\+binary = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Execute a query against a given database and returns an array \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$query }} The query to be executed. 
+
+Data inside the query should be properly escaped. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$dbhandle} & \\
+\hline
+\end{DoxyParams}
+The S\+Q\+Lite Database resource; returned from \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a5fd31608ba2ac5b194638c39bd102166}{sqlite\+\_\+open()}}\} when used procedurally. This parameter is not required when using the object-\/oriented method. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$result\+\_\+type} & \mbox{[}optional\mbox{]} \&sqlite.\+result-\/type; \\
+\hline
+\end{DoxyParams}
+The optional {\itshape result\+\_\+type} parameter accepts a constant and determines how the returned array will be indexed. Using {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+A\+S\+S\+OC}} will return only associative indices (named fields) while {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+N\+UM}} will return only numerical indices (ordinal field numbers). {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH}} will return both associative and numerical indices. {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH}} is the default for this function.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$decode\+\_\+binary} & \mbox{[}optional\mbox{]} \&sqlite.\+decode-\/bin; \\
+\hline
+\end{DoxyParams}
+When the {\itshape decode\+\_\+binary} parameter is set to {\bfseries{T\+R\+UE}} (the default), P\+HP will decode the binary encoding it applied to the data if it was encoded using the \mbox{\hyperlink{_s_q_lite_8php_ad3072a18b10d506c1862d2878665aea4}{sqlite\+\_\+escape\+\_\+string()}}. You should normally leave this value at its default, unless you are interoperating with databases created by other sqlite capable applications.
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false an array of the entire result set; false otherwise. 
+\end{DoxyReturn}
+The column names returned by {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+A\+S\+S\+OC}} and {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH}} will be case-\/folded according to the value of the \mbox{\hyperlink{}{sqlite.\+assoc\+\_\+case}} configuration option.\mbox{\Hypertarget{_s_q_lite_8php_a3d302e1ef4e12da8cc05e0b418251cd4}\label{_s_q_lite_8php_a3d302e1ef4e12da8cc05e0b418251cd4}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_busy\_timeout@{sqlite\_busy\_timeout}}
+\index{sqlite\_busy\_timeout@{sqlite\_busy\_timeout}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_busy\_timeout()}{sqlite\_busy\_timeout()}}
+{\footnotesize\ttfamily sqlite\+\_\+busy\+\_\+timeout (\begin{DoxyParamCaption}\item[{}]{\$dbhandle,  }\item[{}]{\$milliseconds }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Set busy timeout duration, or disable busy handlers \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$dbhandle }}The S\+Q\+Lite Database resource; returned from \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a5fd31608ba2ac5b194638c39bd102166}{sqlite\+\_\+open()}}\} when used procedurally. This parameter is not required when using the object-\/oriented method.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$milliseconds} & \\
+\hline
+\end{DoxyParams}
+The number of milliseconds. When set to 0, busy handlers will be disabled and S\+Q\+Lite will return immediately with a {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+B\+U\+SY}} status code if another process/thread has the database locked for an update. 
+
+P\+HP sets the default busy timeout to be 60 seconds when the database is opened. 
+
+There are one thousand (1000) milliseconds in one second. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_ad25a73fed12c4a7325a628d257071745}\label{_s_q_lite_8php_ad25a73fed12c4a7325a628d257071745}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_changes@{sqlite\_changes}}
+\index{sqlite\_changes@{sqlite\_changes}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_changes()}{sqlite\_changes()}}
+{\footnotesize\ttfamily sqlite\+\_\+changes (\begin{DoxyParamCaption}\item[{}]{\$db }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Returns the number of rows that were changed by the most recent S\+QL statement \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$db  int the number of changed rows. }}\mbox{\Hypertarget{_s_q_lite_8php_a41f77332baf8af4b44f6cdb9185cfa7e}\label{_s_q_lite_8php_a41f77332baf8af4b44f6cdb9185cfa7e}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_close@{sqlite\_close}}
+\index{sqlite\_close@{sqlite\_close}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_close()}{sqlite\_close()}}
+{\footnotesize\ttfamily sqlite\+\_\+close (\begin{DoxyParamCaption}\item[{}]{\$dbhandle }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Closes an open S\+Q\+Lite database \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$dbhandle }} The S\+Q\+Lite Database resource; returned from sqlite\+\_\+open when used procedurally. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_a7209bb4d1190c7a49ce494a4cad7c438}\label{_s_q_lite_8php_a7209bb4d1190c7a49ce494a4cad7c438}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_column@{sqlite\_column}}
+\index{sqlite\_column@{sqlite\_column}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_column()}{sqlite\_column()}}
+{\footnotesize\ttfamily sqlite\+\_\+column (\begin{DoxyParamCaption}\item[{}]{\$result,  }\item[{}]{\$index\+\_\+or\+\_\+name,  }\item[{}]{\$decode\+\_\+binary = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Fetches a column from the current row of a result set \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result }}The S\+Q\+Lite result resource. This parameter is not required when using the object-\/oriented method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$index\+\_\+or\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+The column index or name to fetch. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$decode\+\_\+binary} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+When the {\bfseries{decode\+\_\+binary}} parameter is set to {\bfseries{T\+R\+UE}} (the default), P\+HP will decode the binary encoding it applied to the data if it was encoded using the \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_ad3072a18b10d506c1862d2878665aea4}{sqlite\+\_\+escape\+\_\+string()}}\}. You should normally leave this value \mbox{\hyperlink{phpunit_2phpunit_2src_2_framework_2_assert_2_functions_8php_a1638aacf03530a73b0a3c373471ac79b}{at}} its default, unless you are interoperating with databases created by other sqlite capable applications.
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+mixed the column value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_acf1b025d19501853577dbc0f30db09cc}\label{_s_q_lite_8php_acf1b025d19501853577dbc0f30db09cc}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_create\_aggregate@{sqlite\_create\_aggregate}}
+\index{sqlite\_create\_aggregate@{sqlite\_create\_aggregate}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_create\_aggregate()}{sqlite\_create\_aggregate()}}
+{\footnotesize\ttfamily sqlite\+\_\+create\+\_\+aggregate (\begin{DoxyParamCaption}\item[{}]{\$dbhandle,  }\item[{}]{\$function\+\_\+name,  }\item[{}]{\$step\+\_\+func,  }\item[{}]{\$finalize\+\_\+func,  }\item[{}]{\$num\+\_\+args = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Register an aggregating U\+DF for use in S\+QL statements \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$dbhandle }}The S\+Q\+Lite Database resource; returned from \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a5fd31608ba2ac5b194638c39bd102166}{sqlite\+\_\+open()}}\} when used procedurally. This parameter is not required when using the object-\/oriented method. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$function\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+The name of the function used in S\+QL statements. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+callback & {\em \$step\+\_\+func} & \\
+\hline
+\end{DoxyParams}
+Callback function called for each row of the result set. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+callback & {\em \$finalize\+\_\+func} & \\
+\hline
+\end{DoxyParams}
+Callback function to aggregate the \char`\"{}stepped\char`\"{} data from each row. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$num\+\_\+args} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Hint to the S\+Q\+Lite parser if the callback function accepts a predetermined number of arguments. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_ac57911a76e2ef5557fadf461c4edcb04}\label{_s_q_lite_8php_ac57911a76e2ef5557fadf461c4edcb04}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_create\_function@{sqlite\_create\_function}}
+\index{sqlite\_create\_function@{sqlite\_create\_function}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_create\_function()}{sqlite\_create\_function()}}
+{\footnotesize\ttfamily sqlite\+\_\+create\+\_\+function (\begin{DoxyParamCaption}\item[{}]{\$dbhandle,  }\item[{}]{\$function\+\_\+name,  }\item[{}]{\$callback,  }\item[{}]{\$num\+\_\+args = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, sqlite $>$= 1.\+0.\+0)~\newline
+ Registers a \char`\"{}regular\char`\"{} User Defined Function for use in S\+QL statements \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$dbhandle }}The S\+Q\+Lite Database resource; returned from \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a5fd31608ba2ac5b194638c39bd102166}{sqlite\+\_\+open()}}\} when used procedurally. This parameter is not required when using the object-\/oriented method. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$function\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+The name of the function used in S\+QL statements. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+callback & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+Callback function to handle the defined S\+QL function. 
+
+Callback functions should return a type understood by S\+Q\+Lite (i.\+e. scalar type). 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$num\+\_\+args} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Hint to the S\+Q\+Lite parser if the callback function accepts a predetermined number of arguments. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_a59c6c62d468f4100fb98907b99f2ba1f}\label{_s_q_lite_8php_a59c6c62d468f4100fb98907b99f2ba1f}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_current@{sqlite\_current}}
+\index{sqlite\_current@{sqlite\_current}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_current()}{sqlite\_current()}}
+{\footnotesize\ttfamily sqlite\+\_\+current (\begin{DoxyParamCaption}\item[{}]{\$result,  }\item[{}]{\$result\+\_\+type = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$decode\+\_\+binary = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Fetches the current row from a result set as an array \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result }}The S\+Q\+Lite result resource. This parameter is not required when using the object-\/oriented method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$result\+\_\+type} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The optional result\+\_\+type parameter accepts a constant and determines how the returned array will be indexed. Using {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+A\+S\+S\+OC}} will return only associative indices (named fields) while {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+N\+UM}} will return only numerical indices (ordinal field numbers). {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH}} will return both associative and numerical indices. {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH}} is the default for this function.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$decode\+\_\+binary} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+When the decode\+\_\+binary parameter is set to {\bfseries{T\+R\+UE}} (the default), P\+HP will decode the binary encoding it applied to the data if it was encoded using the \mbox{\hyperlink{_s_q_lite_8php_ad3072a18b10d506c1862d2878665aea4}{sqlite\+\_\+escape\+\_\+string()}}. You should normally leave this value at its default, unless you are interoperating with databases created by other sqlite capable applications.
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false an array of the current row from a result set; false if the current position is beyond the final row. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_a65643f63ef4b01ae358a619f300902aa}\label{_s_q_lite_8php_a65643f63ef4b01ae358a619f300902aa}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_error\_string@{sqlite\_error\_string}}
+\index{sqlite\_error\_string@{sqlite\_error\_string}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_error\_string()}{sqlite\_error\_string()}}
+{\footnotesize\ttfamily sqlite\+\_\+error\+\_\+string (\begin{DoxyParamCaption}\item[{}]{\$error\+\_\+code }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Returns the textual description of an error code \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$error\+\_\+code }} The error code being used, which might be passed in from \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a3cd27cd4d400e3cd5626f512c8cbe083}{sqlite\+\_\+last\+\_\+error}}\}. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+string a human readable description of the error\+\_\+code, as a string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_ad3072a18b10d506c1862d2878665aea4}\label{_s_q_lite_8php_ad3072a18b10d506c1862d2878665aea4}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_escape\_string@{sqlite\_escape\_string}}
+\index{sqlite\_escape\_string@{sqlite\_escape\_string}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_escape\_string()}{sqlite\_escape\_string()}}
+{\footnotesize\ttfamily sqlite\+\_\+escape\+\_\+string (\begin{DoxyParamCaption}\item[{}]{\$item }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Escapes a string for use as a query parameter \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$item }} The string being quoted. 
+
+If the item contains a N\+UL character, or if it begins with a character whose ordinal value is 0x01, P\+HP will apply a binary encoding scheme so that you can safely store and retrieve binary data. 
+
+\begin{DoxyReturn}{Returns}
+string an escaped string for use in an S\+Q\+Lite S\+QL statement. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_a709f47d7f14d52d7dc383dbf30a2bad0}\label{_s_q_lite_8php_a709f47d7f14d52d7dc383dbf30a2bad0}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_exec@{sqlite\_exec}}
+\index{sqlite\_exec@{sqlite\_exec}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_exec()}{sqlite\_exec()}}
+{\footnotesize\ttfamily sqlite\+\_\+exec (\begin{DoxyParamCaption}\item[{}]{\$dbhandle,  }\item[{}]{\$query,  }\item[{\&}]{\$error\+\_\+msg = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+3)~\newline
+ Executes a result-\/less query against a given database \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$query }} The query to be executed. 
+
+Data inside the query should be properly escaped. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$dbhandle} & \\
+\hline
+\end{DoxyParams}
+The S\+Q\+Lite Database resource; returned from \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a5fd31608ba2ac5b194638c39bd102166}{sqlite\+\_\+open()}}\} when used procedurally. This parameter is not required when using the object-\/oriented method. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$error\+\_\+msg} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The specified variable will be filled if an error occurs. This is specially important because S\+QL syntax errors can\textquotesingle{}t be fetched using the \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a3cd27cd4d400e3cd5626f512c8cbe083}{sqlite\+\_\+last\+\_\+error}}\} \mbox{\hyperlink{interactive__command__1_8php_ab203aa61d1e8a9ac29ea9b66299b7d46}{function}}. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+This function will return a boolean result; true for success or false for failure. If you need to run a query that returns rows, see sqlite\+\_\+query.\mbox{\Hypertarget{_s_q_lite_8php_a3d1ac07e6c29e61a6d2e5a4a07bfb583}\label{_s_q_lite_8php_a3d1ac07e6c29e61a6d2e5a4a07bfb583}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_factory@{sqlite\_factory}}
+\index{sqlite\_factory@{sqlite\_factory}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_factory()}{sqlite\_factory()}}
+{\footnotesize\ttfamily sqlite\+\_\+factory (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{\&}]{\$error\+\_\+message = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Opens a S\+Q\+Lite database and returns a \mbox{\hyperlink{class_s_q_lite_database}{S\+Q\+Lite\+Database}} object \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} The filename of the S\+Q\+Lite database. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The mode of the file. Intended to be used to open the database in read-\/only mode. Presently, this parameter is ignored by the sqlite library. The default value for mode is the octal value 0666 and this is the recommended value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$error\+\_\+message} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Passed by reference and is set to hold a descriptive error message explaining why the database could not be opened if there was an error. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_s_q_lite_database}{S\+Q\+Lite\+Database}} a \mbox{\hyperlink{class_s_q_lite_database}{S\+Q\+Lite\+Database}} object on success,  on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{_s_q_lite_8php_a5dfbc4456735af9a0b1f7d73fbfb3138}\label{_s_q_lite_8php_a5dfbc4456735af9a0b1f7d73fbfb3138}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_fetch\_all@{sqlite\_fetch\_all}}
+\index{sqlite\_fetch\_all@{sqlite\_fetch\_all}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_fetch\_all()}{sqlite\_fetch\_all()}}
+{\footnotesize\ttfamily sqlite\+\_\+fetch\+\_\+all (\begin{DoxyParamCaption}\item[{}]{\$result\+\_\+type = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$decode\+\_\+binary = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Fetches all rows from a result set as an array of arrays \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$result\+\_\+type \mbox{[}optional\mbox{]} \&sqlite.\+result-\/type;  bool \$decode\+\_\+binary \mbox{[}optional\mbox{]} \&sqlite.\+decode-\/bin;  array }}an array of the remaining rows in a result set. If called right after \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a91c8d16fdda94ccb200b2cdb4e8522cc}{sqlite\+\_\+query}}\}, it returns \mbox{\hyperlink{pcov_8php_a534bebbd04566dfb851be122bd5dc05a}{all}} rows. If called after \{
+
+\mbox{\hyperlink{_s_q_lite_8php_a384b137de75ba0c0e20c3e254531a252}{sqlite\+\_\+fetch\+\_\+array}}\}, it returns the rest. If there are no rows in \mbox{\hyperlink{interfacea}{a}} result set, it returns an empty array.
+\end{DoxySeeAlso}
+
+
+The column names returned by {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+A\+S\+S\+OC}} and {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH}} will be case-\/folded according to the value of the \mbox{\hyperlink{}{sqlite.\+assoc\+\_\+case}} configuration option.\mbox{\Hypertarget{_s_q_lite_8php_a384b137de75ba0c0e20c3e254531a252}\label{_s_q_lite_8php_a384b137de75ba0c0e20c3e254531a252}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_fetch\_array@{sqlite\_fetch\_array}}
+\index{sqlite\_fetch\_array@{sqlite\_fetch\_array}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_fetch\_array()}{sqlite\_fetch\_array()}}
+{\footnotesize\ttfamily sqlite\+\_\+fetch\+\_\+array (\begin{DoxyParamCaption}\item[{}]{\$result,  }\item[{}]{\$result\+\_\+type = {\ttfamily \mbox{\hyperlink{_s_q_lite_8php_aa7c179706de888eaf8c7759e1ed41c45}{S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH}}},  }\item[{}]{\$decode\+\_\+binary = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Fetches the next row from a result set as an array \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result }}The S\+Q\+Lite result resource. This parameter is not required when using the object-\/oriented method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$result\+\_\+type} & \mbox{[}optional\mbox{]} \&sqlite.\+result-\/type; \\
+\hline
+bool & {\em \$decode\+\_\+binary} & \mbox{[}optional\mbox{]} \&sqlite.\+decode-\/bin; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$\vert$false 
+\end{DoxyReturn}
+an array of the next row from a result set; false if the next position is beyond the final row.\mbox{\Hypertarget{_s_q_lite_8php_ac7f63dd68bd5baba5d13c577cdad9084}\label{_s_q_lite_8php_ac7f63dd68bd5baba5d13c577cdad9084}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_fetch\_column\_types@{sqlite\_fetch\_column\_types}}
+\index{sqlite\_fetch\_column\_types@{sqlite\_fetch\_column\_types}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_fetch\_column\_types()}{sqlite\_fetch\_column\_types()}}
+{\footnotesize\ttfamily sqlite\+\_\+fetch\+\_\+column\+\_\+types (\begin{DoxyParamCaption}\item[{}]{\$dbhandle,  }\item[{}]{\$table\+\_\+name,  }\item[{}]{\$result\+\_\+type = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Return an array of column types from a particular table \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$table\+\_\+name }} The table name to query. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$dbhandle} & \\
+\hline
+\end{DoxyParams}
+The S\+Q\+Lite Database resource; returned from \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a5fd31608ba2ac5b194638c39bd102166}{sqlite\+\_\+open()}}\} when used procedurally. This parameter is not required when using the object-\/oriented method.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$result\+\_\+type} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The optional result\+\_\+type parameter accepts a constant and determines how the returned array will be indexed. Using {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+A\+S\+S\+OC}} will return only associative indices (named fields) while {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+N\+UM}} will return only numerical indices (ordinal field numbers). S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH will return both associative and numerical indices. {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+A\+S\+S\+OC}} is the default for this function. 
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false an array of column data types; false on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{_s_q_lite_8php_ae43a37ce7283971482fccb72bb6d0f41}\label{_s_q_lite_8php_ae43a37ce7283971482fccb72bb6d0f41}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_fetch\_object@{sqlite\_fetch\_object}}
+\index{sqlite\_fetch\_object@{sqlite\_fetch\_object}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_fetch\_object()}{sqlite\_fetch\_object()}}
+{\footnotesize\ttfamily sqlite\+\_\+fetch\+\_\+object (\begin{DoxyParamCaption}\item[{}]{\$result,  }\item[{}]{\$class\+\_\+name = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$ctor\+\_\+params = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$decode\+\_\+binary = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Fetches the next row from a result set as an object \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result  string \$class\+\_\+name \mbox{[}optional\mbox{]}  array \$ctor\+\_\+params \mbox{[}optional\mbox{]}  bool \$decode\+\_\+binary \mbox{[}optional\mbox{]}  object  5.\+0 }}\mbox{\Hypertarget{_s_q_lite_8php_a6abaa496ca1d8befc90be3d4540a1ee1}\label{_s_q_lite_8php_a6abaa496ca1d8befc90be3d4540a1ee1}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_fetch\_single@{sqlite\_fetch\_single}}
+\index{sqlite\_fetch\_single@{sqlite\_fetch\_single}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_fetch\_single()}{sqlite\_fetch\_single()}}
+{\footnotesize\ttfamily sqlite\+\_\+fetch\+\_\+single (\begin{DoxyParamCaption}\item[{}]{\$result,  }\item[{}]{\$decode\+\_\+binary = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+1)~\newline
+ Fetches the first column of a result set as a string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result }}The S\+Q\+Lite result resource. This parameter is not required when using the object-\/oriented method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$decode\+\_\+binary} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+When the {\bfseries{decode\+\_\+binary}} parameter is set to {\bfseries{T\+R\+UE}} (the default), P\+HP will decode the binary encoding it applied to the data if it was encoded using the \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_ad3072a18b10d506c1862d2878665aea4}{sqlite\+\_\+escape\+\_\+string()}}\}. You should normally leave this value \mbox{\hyperlink{phpunit_2phpunit_2src_2_framework_2_assert_2_functions_8php_a1638aacf03530a73b0a3c373471ac79b}{at}} its default, unless you are interoperating with databases created by other sqlite capable applications.
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+the first column value, as a string.\mbox{\Hypertarget{_s_q_lite_8php_a9ad55d36c95c6137fa7236b792f1c4bf}\label{_s_q_lite_8php_a9ad55d36c95c6137fa7236b792f1c4bf}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_fetch\_string@{sqlite\_fetch\_string}}
+\index{sqlite\_fetch\_string@{sqlite\_fetch\_string}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_fetch\_string()}{sqlite\_fetch\_string()}}
+{\footnotesize\ttfamily sqlite\+\_\+fetch\+\_\+string (\begin{DoxyParamCaption}\item[{}]{\$result,  }\item[{}]{\$decode\+\_\+binary }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+  \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a6abaa496ca1d8befc90be3d4540a1ee1}{sqlite\+\_\+fetch\+\_\+single}}\} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result }}The S\+Q\+Lite result resource. This parameter is not required when using the object-\/oriented method.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$decode\+\_\+binary} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+When the {\bfseries{decode\+\_\+binary}} parameter is set to {\bfseries{T\+R\+UE}} (the default), P\+HP will decode the binary encoding it applied to the data if it was encoded using the \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_ad3072a18b10d506c1862d2878665aea4}{sqlite\+\_\+escape\+\_\+string()}}\}. You should normally leave this value \mbox{\hyperlink{phpunit_2phpunit_2src_2_framework_2_assert_2_functions_8php_a1638aacf03530a73b0a3c373471ac79b}{at}} its default, unless you are interoperating with databases created by other sqlite capable applications.
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+the first column value, as a string.\mbox{\Hypertarget{_s_q_lite_8php_ac5ee0a5c568838f120ba9da3b7fc797d}\label{_s_q_lite_8php_ac5ee0a5c568838f120ba9da3b7fc797d}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_field\_name@{sqlite\_field\_name}}
+\index{sqlite\_field\_name@{sqlite\_field\_name}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_field\_name()}{sqlite\_field\_name()}}
+{\footnotesize\ttfamily sqlite\+\_\+field\+\_\+name (\begin{DoxyParamCaption}\item[{}]{\$result,  }\item[{}]{\$field\+\_\+index }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Returns the name of a particular field \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result }}The S\+Q\+Lite result resource. This parameter is not required when using the object-\/oriented method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$field\+\_\+index} & \\
+\hline
+\end{DoxyParams}
+The ordinal column number in the result set. 
+
+\begin{DoxyReturn}{Returns}
+string the name of a field in an S\+Q\+Lite result set, given the ordinal column number; false on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_a12f66f618d413b036d4278d048af6c72}\label{_s_q_lite_8php_a12f66f618d413b036d4278d048af6c72}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_has\_more@{sqlite\_has\_more}}
+\index{sqlite\_has\_more@{sqlite\_has\_more}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_has\_more()}{sqlite\_has\_more()}}
+{\footnotesize\ttfamily sqlite\+\_\+has\+\_\+more (\begin{DoxyParamCaption}\item[{}]{\$result }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Finds whether or not more rows are available \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result }} The S\+Q\+Lite result resource. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} if there are more rows available from the result handle, or {\bfseries{F\+A\+L\+SE}} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_ab3e17491713ab6106aaa37dfa02586b3}\label{_s_q_lite_8php_ab3e17491713ab6106aaa37dfa02586b3}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_has\_prev@{sqlite\_has\_prev}}
+\index{sqlite\_has\_prev@{sqlite\_has\_prev}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_has\_prev()}{sqlite\_has\_prev()}}
+{\footnotesize\ttfamily sqlite\+\_\+has\+\_\+prev (\begin{DoxyParamCaption}\item[{}]{\$result }\end{DoxyParamCaption})}
+
+Returns whether or not a previous row is available \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result }} The S\+Q\+Lite result resource. This parameter is not required when using the object-\/oriented method. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} if there are more previous rows available from the result handle, or {\bfseries{F\+A\+L\+SE}} otherwise. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{_s_q_lite_8php_a3cd27cd4d400e3cd5626f512c8cbe083}\label{_s_q_lite_8php_a3cd27cd4d400e3cd5626f512c8cbe083}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_last\_error@{sqlite\_last\_error}}
+\index{sqlite\_last\_error@{sqlite\_last\_error}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_last\_error()}{sqlite\_last\_error()}}
+{\footnotesize\ttfamily sqlite\+\_\+last\+\_\+error (\begin{DoxyParamCaption}\item[{}]{\$dbhandle }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Returns the error code of the last error for a database \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$dbhandle }}The S\+Q\+Lite Database resource; returned from \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a5fd31608ba2ac5b194638c39bd102166}{sqlite\+\_\+open()}}\} when used procedurally. This parameter is not required when using the object-\/oriented method.
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+int an error code, or 0 if no error occurred. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_ad40698c65adf64d7b22b7986b0c8e9ff}\label{_s_q_lite_8php_ad40698c65adf64d7b22b7986b0c8e9ff}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_last\_insert\_rowid@{sqlite\_last\_insert\_rowid}}
+\index{sqlite\_last\_insert\_rowid@{sqlite\_last\_insert\_rowid}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_last\_insert\_rowid()}{sqlite\_last\_insert\_rowid()}}
+{\footnotesize\ttfamily sqlite\+\_\+last\+\_\+insert\+\_\+rowid (\begin{DoxyParamCaption}\item[{}]{\$dbhandle }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Returns the rowid of the most recently inserted row \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$dbhandle }}The S\+Q\+Lite Database resource; returned from \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a5fd31608ba2ac5b194638c39bd102166}{sqlite\+\_\+open()}}\} when used procedurally. This parameter is not required when using the object-\/oriented method.
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+int the row id, as an integer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_aa12923b25e00833f658ea6b23be392d7}\label{_s_q_lite_8php_aa12923b25e00833f658ea6b23be392d7}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_libencoding@{sqlite\_libencoding}}
+\index{sqlite\_libencoding@{sqlite\_libencoding}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_libencoding()}{sqlite\_libencoding()}}
+{\footnotesize\ttfamily sqlite\+\_\+libencoding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Returns the encoding of the linked S\+Q\+Lite library \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string the library encoding. }}\mbox{\Hypertarget{_s_q_lite_8php_a9f68a16613901045df141fbb7e6dfe27}\label{_s_q_lite_8php_a9f68a16613901045df141fbb7e6dfe27}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_libversion@{sqlite\_libversion}}
+\index{sqlite\_libversion@{sqlite\_libversion}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_libversion()}{sqlite\_libversion()}}
+{\footnotesize\ttfamily sqlite\+\_\+libversion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Returns the version of the linked S\+Q\+Lite library \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string the library version, as a string. }}\mbox{\Hypertarget{_s_q_lite_8php_a398e9661a15cc8ad4cebda4fcd2e4a9f}\label{_s_q_lite_8php_a398e9661a15cc8ad4cebda4fcd2e4a9f}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_next@{sqlite\_next}}
+\index{sqlite\_next@{sqlite\_next}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_next()}{sqlite\_next()}}
+{\footnotesize\ttfamily sqlite\+\_\+next (\begin{DoxyParamCaption}\item[{}]{\$result }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Seek to the next row number \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result }} The S\+Q\+Lite result resource. This parameter is not required when using the object-\/oriented method. 
+
+\begin{quote}
+
+
+{\bfseries{Note}}\+: 
+
+
+
+This function cannot be used with unbuffered result handles.
+
+\end{quote}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success, or {\bfseries{F\+A\+L\+SE}} if there are no more rows. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_a344036bc45c0c97ac327b74850775353}\label{_s_q_lite_8php_a344036bc45c0c97ac327b74850775353}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_num\_fields@{sqlite\_num\_fields}}
+\index{sqlite\_num\_fields@{sqlite\_num\_fields}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_num\_fields()}{sqlite\_num\_fields()}}
+{\footnotesize\ttfamily sqlite\+\_\+num\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{\$result }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Returns the number of fields in a result set \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result }}The S\+Q\+Lite result resource. This parameter is not required when using the object-\/oriented method.
+
+\begin{DoxyReturn}{Returns}
+int the number of fields, as an integer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_a33773dc86779c2889a200e6112fa52fb}\label{_s_q_lite_8php_a33773dc86779c2889a200e6112fa52fb}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_num\_rows@{sqlite\_num\_rows}}
+\index{sqlite\_num\_rows@{sqlite\_num\_rows}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_num\_rows()}{sqlite\_num\_rows()}}
+{\footnotesize\ttfamily sqlite\+\_\+num\+\_\+rows (\begin{DoxyParamCaption}\item[{}]{\$result }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Returns the number of rows in a buffered result set \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$result }} The S\+Q\+Lite result resource. This parameter is not required when using the object-\/oriented method. 
+
+\begin{quote}
+
+
+{\bfseries{Note}}\+: 
+
+
+
+This function cannot be used with unbuffered result handles.
+
+\end{quote}
+\begin{DoxyReturn}{Returns}
+int the number of rows, as an integer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_a5fd31608ba2ac5b194638c39bd102166}\label{_s_q_lite_8php_a5fd31608ba2ac5b194638c39bd102166}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_open@{sqlite\_open}}
+\index{sqlite\_open@{sqlite\_open}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_open()}{sqlite\_open()}}
+{\footnotesize\ttfamily sqlite\+\_\+open (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{\&}]{\$error\+\_\+message = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Opens a S\+Q\+Lite database and create the database if it does not exist \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} The filename of the S\+Q\+Lite database. If the file does not exist, S\+Q\+Lite will attempt to create it. P\+HP must have write permissions to the file if data is inserted, the database schema is modified or to create the database if it does not exist. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The mode of the file. Intended to be used to open the database in read-\/only mode. Presently, this parameter is ignored by the sqlite library. The default value for mode is the octal value 0666 and this is the recommended value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$error\+\_\+message} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Passed by reference and is set to hold a descriptive error message explaining why the database could not be opened if there was an error. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false a resource (database handle) on success, false on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_af0aaecf9da57bc30c79d5c0e84d83e0c}\label{_s_q_lite_8php_af0aaecf9da57bc30c79d5c0e84d83e0c}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_popen@{sqlite\_popen}}
+\index{sqlite\_popen@{sqlite\_popen}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_popen()}{sqlite\_popen()}}
+{\footnotesize\ttfamily sqlite\+\_\+popen (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{\&}]{\$error\+\_\+message = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Opens a persistent handle to an S\+Q\+Lite database and create the database if it does not exist \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} The filename of the S\+Q\+Lite database. If the file does not exist, S\+Q\+Lite will attempt to create it. P\+HP must have write permissions to the file if data is inserted, the database schema is modified or to create the database if it does not exist. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The mode of the file. Intended to be used to open the database in read-\/only mode. Presently, this parameter is ignored by the sqlite library. The default value for mode is the octal value 0666 and this is the recommended value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$error\+\_\+message} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Passed by reference and is set to hold a descriptive error message explaining why the database could not be opened if there was an error. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false 
+\end{DoxyReturn}
+a resource (database handle) on success, false on error.\mbox{\Hypertarget{_s_q_lite_8php_a7cf38b275d3888487c402cdb39dfeadf}\label{_s_q_lite_8php_a7cf38b275d3888487c402cdb39dfeadf}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_prev@{sqlite\_prev}}
+\index{sqlite\_prev@{sqlite\_prev}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_prev()}{sqlite\_prev()}}
+{\footnotesize\ttfamily sqlite\+\_\+prev (\begin{DoxyParamCaption}\item[{}]{\$result }\end{DoxyParamCaption})}
+
+Seek to the previous row number of a result set \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result }} The S\+Q\+Lite result resource. This parameter is not required when using the object-\/oriented method. 
+
+\begin{quote}
+
+
+{\bfseries{Note}}\+: 
+
+
+
+This function cannot be used with unbuffered result handles.
+
+\end{quote}
+\begin{DoxyReturn}{Returns}
+bool true on success, or false if there are no more previous rows. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{_s_q_lite_8php_a91c8d16fdda94ccb200b2cdb4e8522cc}\label{_s_q_lite_8php_a91c8d16fdda94ccb200b2cdb4e8522cc}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_query@{sqlite\_query}}
+\index{sqlite\_query@{sqlite\_query}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_query()}{sqlite\_query()}}
+{\footnotesize\ttfamily sqlite\+\_\+query (\begin{DoxyParamCaption}\item[{}]{\$query,  }\item[{}]{\$dbhandle,  }\item[{}]{\$result\+\_\+type = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{\&}]{\$error\+\_\+msg = {\ttfamily \mbox{\hyperlink{_s_q_lite_8php_aa7c179706de888eaf8c7759e1ed41c45}{S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $<$ 5.\+4.\+0, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Executes a query against a given database and returns a result handle there are two signatures with {\itshape \$query} first and with {\itshape \$dbhandle} first. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string$\vert$resource \$query }} The query to be executed. 
+
+Data inside the query should be properly escaped. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource | string & {\em \$dbhandle} & The S\+Q\+Lite Database resource; returned from \mbox{\hyperlink{_s_q_lite_8php_a5fd31608ba2ac5b194638c39bd102166}{sqlite\+\_\+open()}} when used procedurally. This parameter is not required when using the object-\/oriented method. \\
+\hline
+int & {\em \$result\+\_\+type} & \mbox{[}optional\mbox{]} \&sqlite.\+result-\/type;\\
+\hline
+\end{DoxyParams}
+The optional {\itshape result\+\_\+type} parameter accepts a constant and determines how the returned array will be indexed. Using {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+A\+S\+S\+OC}} will return only associative indices (named fields) while {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+N\+UM}} will return only numerical indices (ordinal field numbers). {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH}} will return both associative and numerical indices. {\bfseries{S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH}} is the default for this function.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$error\+\_\+msg} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The specified variable will be filled if an error occurs. This is specially important because S\+QL syntax errors can\textquotesingle{}t be fetched using the \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a3cd27cd4d400e3cd5626f512c8cbe083}{sqlite\+\_\+last\+\_\+error}}\} \mbox{\hyperlink{interactive__command__1_8php_ab203aa61d1e8a9ac29ea9b66299b7d46}{function}}. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+resource$\vert$false This function will return a result handle or {\bfseries{F\+A\+L\+SE}} on failure. For queries that return rows, the result handle can then be used with functions such as \{
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a384b137de75ba0c0e20c3e254531a252}{sqlite\+\_\+fetch\+\_\+array}}\} and \{
+
+\mbox{\hyperlink{_s_q_lite_8php_a0600a8090c50fab4006185aae652e8ef}{sqlite\+\_\+seek}}\}. 
+\end{DoxySeeAlso}
+
+
+Regardless of the query type, this function will return false if the query failed. 
+
+\{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a91c8d16fdda94ccb200b2cdb4e8522cc}{sqlite\+\_\+query}}\} returns \mbox{\hyperlink{interfacea}{a}} buffered, seekable result handle. This is useful for reasonably small queries where you need to be able to randomly access the rows. Buffered result handles will allocate memory to hold the entire result and will not \mbox{\hyperlink{title_case_regexp_8php_a9717e7bbecb906637e86cef6da3d83c2}{return}} until it has been fetched. If you only need sequential access to the data, it is recommended that you use the much higher performance \{
+
+\mbox{\hyperlink{_s_q_lite_8php_a74a7af766fdedd07a0a63ba937b737d8}{sqlite\+\_\+unbuffered\+\_\+query}}\} instead. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_s_q_lite_8php_ae3c8881b17ba4ca4c37485adb9b77127}\label{_s_q_lite_8php_ae3c8881b17ba4ca4c37485adb9b77127}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_rewind@{sqlite\_rewind}}
+\index{sqlite\_rewind@{sqlite\_rewind}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_rewind()}{sqlite\_rewind()}}
+{\footnotesize\ttfamily sqlite\+\_\+rewind (\begin{DoxyParamCaption}\item[{}]{\$result }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Seek to the first row number \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result }} The S\+Q\+Lite result resource. This parameter is not required when using the object-\/oriented method. 
+
+\begin{quote}
+
+
+{\bfseries{Note}}\+: 
+
+
+
+This function cannot be used with unbuffered result handles.
+
+\end{quote}
+\begin{DoxyReturn}{Returns}
+bool false if there are no rows in the result set, true otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_a0600a8090c50fab4006185aae652e8ef}\label{_s_q_lite_8php_a0600a8090c50fab4006185aae652e8ef}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_seek@{sqlite\_seek}}
+\index{sqlite\_seek@{sqlite\_seek}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_seek()}{sqlite\_seek()}}
+{\footnotesize\ttfamily sqlite\+\_\+seek (\begin{DoxyParamCaption}\item[{}]{\$result,  }\item[{}]{\$rownum }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Seek to a particular row number of a buffered result set \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result }} The S\+Q\+Lite result resource. This parameter is not required when using the object-\/oriented method. 
+
+\begin{quote}
+
+
+{\bfseries{Note}}\+: 
+
+
+
+This function cannot be used with unbuffered result handles.
+
+\end{quote}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$rownum} & \\
+\hline
+\end{DoxyParams}
+The ordinal row number to seek to. The row number is zero-\/based (0 is the first row). 
+
+\begin{DoxyReturn}{Returns}
+bool false if the row does not exist, true otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_a6b88a151cb38ab8b39aac57fa1b4508f}\label{_s_q_lite_8php_a6b88a151cb38ab8b39aac57fa1b4508f}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_single\_query@{sqlite\_single\_query}}
+\index{sqlite\_single\_query@{sqlite\_single\_query}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_single\_query()}{sqlite\_single\_query()}}
+{\footnotesize\ttfamily sqlite\+\_\+single\+\_\+query (\begin{DoxyParamCaption}\item[{}]{\$db,  }\item[{}]{\$query,  }\item[{}]{\$first\+\_\+row\+\_\+only = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$decode\+\_\+binary = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+1)~\newline
+ Executes a query and returns either an array for one single column or the value of the first row \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$db  string \$query  bool \$first\+\_\+row\+\_\+only \mbox{[}optional\mbox{]}  bool \$decode\+\_\+binary \mbox{[}optional\mbox{]}  array }}\mbox{\Hypertarget{_s_q_lite_8php_a11432eb319fe9fb38d418e125c7b38e8}\label{_s_q_lite_8php_a11432eb319fe9fb38d418e125c7b38e8}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_udf\_decode\_binary@{sqlite\_udf\_decode\_binary}}
+\index{sqlite\_udf\_decode\_binary@{sqlite\_udf\_decode\_binary}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_udf\_decode\_binary()}{sqlite\_udf\_decode\_binary()}}
+{\footnotesize\ttfamily sqlite\+\_\+udf\+\_\+decode\+\_\+binary (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Decode binary data passed as parameters to an $<$acronym$>$U\+DF$<$/acronym$>$ \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data }} The encoded data that will be decoded, data that was applied by either sqlite\+\_\+udf\+\_\+encode\+\_\+binary or sqlite\+\_\+escape\+\_\+string. 
+
+\begin{DoxyReturn}{Returns}
+string The decoded string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_aaddbe3be823d8784f85d8ab29a2512e1}\label{_s_q_lite_8php_aaddbe3be823d8784f85d8ab29a2512e1}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_udf\_encode\_binary@{sqlite\_udf\_encode\_binary}}
+\index{sqlite\_udf\_encode\_binary@{sqlite\_udf\_encode\_binary}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_udf\_encode\_binary()}{sqlite\_udf\_encode\_binary()}}
+{\footnotesize\ttfamily sqlite\+\_\+udf\+\_\+encode\+\_\+binary (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Encode binary data before returning it from an U\+DF \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data }} The string being encoded. 
+
+\begin{DoxyReturn}{Returns}
+string The encoded string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_s_q_lite_8php_a74a7af766fdedd07a0a63ba937b737d8}\label{_s_q_lite_8php_a74a7af766fdedd07a0a63ba937b737d8}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_unbuffered\_query@{sqlite\_unbuffered\_query}}
+\index{sqlite\_unbuffered\_query@{sqlite\_unbuffered\_query}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_unbuffered\_query()}{sqlite\_unbuffered\_query()}}
+{\footnotesize\ttfamily sqlite\+\_\+unbuffered\+\_\+query (\begin{DoxyParamCaption}\item[{}]{\$dbhandle,  }\item[{}]{\$query,  }\item[{}]{\$result\+\_\+type = {\ttfamily \mbox{\hyperlink{_s_q_lite_8php_aa7c179706de888eaf8c7759e1ed41c45}{S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH}}},  }\item[{\&}]{\$error\+\_\+msg = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5, P\+E\+CL sqlite $>$= 1.\+0.\+0)~\newline
+ Execute a query that does not prefetch and buffer all data \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$dbhandle }}The S\+Q\+Lite Database resource; returned from \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_s_q_lite_8php_a5fd31608ba2ac5b194638c39bd102166}{sqlite\+\_\+open()}}\} when used procedurally. This parameter is not required when using the object-\/oriented method.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & \\
+\hline
+\end{DoxyParams}
+The query to be executed. 
+
+Data inside the query should be properly escaped. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$result\+\_\+type} & \mbox{[}optional\mbox{]} \&sqlite.\+result-\/type; \\
+\hline
+string & {\em \$error\+\_\+msg} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The specified variable will be filled if an error occurs. This is specially important because S\+QL syntax errors can\textquotesingle{}t be fetched using the sqlite\+\_\+last\+\_\+error function. 
+
+\begin{DoxyReturn}{Returns}
+S\+Q\+Lite\+Unbuffered$\vert$false a result handle or false on failure. 
+\end{DoxyReturn}
+
+
+sqlite\+\_\+unbuffered\+\_\+query returns a sequential forward-\/only result set that can only be used to read each row, one after the other. \mbox{\Hypertarget{_s_q_lite_8php_a084798c9ed6d12cf6432f80ca951c202}\label{_s_q_lite_8php_a084798c9ed6d12cf6432f80ca951c202}} 
+\index{SQLite.php@{SQLite.php}!sqlite\_valid@{sqlite\_valid}}
+\index{sqlite\_valid@{sqlite\_valid}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{sqlite\_valid()}{sqlite\_valid()}}
+{\footnotesize\ttfamily sqlite\+\_\+valid (\begin{DoxyParamCaption}\item[{}]{\$result }\end{DoxyParamCaption})}
+
+Returns whether more rows are available \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result }} The S\+Q\+Lite result resource. This parameter is not required when using the object-\/oriented method. 
+
+\begin{quote}
+
+
+{\bfseries{Note}}\+: 
+
+
+
+This function cannot be used with unbuffered result handles.
+
+\end{quote}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} if there are more rows available from the result handle, or {\bfseries{F\+A\+L\+SE}} otherwise. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_s_q_lite_8php_a88b0c1e93a86f71b8e379ed89cecb8cb}\label{_s_q_lite_8php_a88b0c1e93a86f71b8e379ed89cecb8cb}} 
+\index{SQLite.php@{SQLite.php}!SQLITE3\_DETERMINISTIC@{SQLITE3\_DETERMINISTIC}}
+\index{SQLITE3\_DETERMINISTIC@{SQLITE3\_DETERMINISTIC}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE3\_DETERMINISTIC}{SQLITE3\_DETERMINISTIC}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E3\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+I\+S\+T\+IC 2048}
+
+Specifies that a function created with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_s_q_lite3_a146917232f32b98b043bfa7ced388ade}{S\+Q\+Lite3\+::create\+Function()}}\} is deterministic, i.\+e. it always returns the same result given the same inputs within \mbox{\hyperlink{interfacea}{a}} single S\+QL statement. 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+7.\+1.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{_s_q_lite_8php_a2b04ac57379f7f812f737044c58045c1}\label{_s_q_lite_8php_a2b04ac57379f7f812f737044c58045c1}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_ABORT@{SQLITE\_ABORT}}
+\index{SQLITE\_ABORT@{SQLITE\_ABORT}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_ABORT}{SQLITE\_ABORT}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+A\+B\+O\+RT 4}
+
+Callback routine requested an abort. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a53c006c03e90065d7dee77941c2169d8}\label{_s_q_lite_8php_a53c006c03e90065d7dee77941c2169d8}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_ASSOC@{SQLITE\_ASSOC}}
+\index{SQLITE\_ASSOC@{SQLITE\_ASSOC}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_ASSOC}{SQLITE\_ASSOC}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+A\+S\+S\+OC 1}
+
+Columns are returned into the array having the field name as the array index. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_ad16ad14a35efad74eab822d89eb2b1da}\label{_s_q_lite_8php_ad16ad14a35efad74eab822d89eb2b1da}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_AUTH@{SQLITE\_AUTH}}
+\index{SQLITE\_AUTH@{SQLITE\_AUTH}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_AUTH}{SQLITE\_AUTH}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+A\+U\+TH 23}
+
+Authorized failed. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_aa7c179706de888eaf8c7759e1ed41c45}\label{_s_q_lite_8php_aa7c179706de888eaf8c7759e1ed41c45}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_BOTH@{SQLITE\_BOTH}}
+\index{SQLITE\_BOTH@{SQLITE\_BOTH}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_BOTH}{SQLITE\_BOTH}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+B\+O\+TH 3}
+
+Columns are returned into the array having both a numerical index and the field name as the array index. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a39643126b179936e113301bb772756e8}\label{_s_q_lite_8php_a39643126b179936e113301bb772756e8}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_BUSY@{SQLITE\_BUSY}}
+\index{SQLITE\_BUSY@{SQLITE\_BUSY}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_BUSY}{SQLITE\_BUSY}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+B\+U\+SY 5}
+
+The database file is locked. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a3594ccc26db7b3e2ac0e0f7201966e0a}\label{_s_q_lite_8php_a3594ccc26db7b3e2ac0e0f7201966e0a}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_CANTOPEN@{SQLITE\_CANTOPEN}}
+\index{SQLITE\_CANTOPEN@{SQLITE\_CANTOPEN}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_CANTOPEN}{SQLITE\_CANTOPEN}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+C\+A\+N\+T\+O\+P\+EN 14}
+
+Unable to open the database file. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a93243df0df56c34ef5e8ad345a8d53c1}\label{_s_q_lite_8php_a93243df0df56c34ef5e8ad345a8d53c1}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_CONSTRAINT@{SQLITE\_CONSTRAINT}}
+\index{SQLITE\_CONSTRAINT@{SQLITE\_CONSTRAINT}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_CONSTRAINT}{SQLITE\_CONSTRAINT}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+C\+O\+N\+S\+T\+R\+A\+I\+NT 19}
+
+Abort due to constraint violation. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a2d785869ff3633b0cd6cd96021e55cb5}\label{_s_q_lite_8php_a2d785869ff3633b0cd6cd96021e55cb5}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_CORRUPT@{SQLITE\_CORRUPT}}
+\index{SQLITE\_CORRUPT@{SQLITE\_CORRUPT}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_CORRUPT}{SQLITE\_CORRUPT}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+C\+O\+R\+R\+U\+PT 11}
+
+The database disk image is malformed. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a824708c4796cd73be486efac5e1e7599}\label{_s_q_lite_8php_a824708c4796cd73be486efac5e1e7599}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_DONE@{SQLITE\_DONE}}
+\index{SQLITE\_DONE@{SQLITE\_DONE}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_DONE}{SQLITE\_DONE}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+D\+O\+NE 101}
+
+Internal process has finished executing. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_af97a187c194c2737e8a7f6b88b7500b5}\label{_s_q_lite_8php_af97a187c194c2737e8a7f6b88b7500b5}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_EMPTY@{SQLITE\_EMPTY}}
+\index{SQLITE\_EMPTY@{SQLITE\_EMPTY}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_EMPTY}{SQLITE\_EMPTY}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+E\+M\+P\+TY 16}
+
+(Internal) Database table is empty. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_aa49859dd3cd57313d53c564b589cbde1}\label{_s_q_lite_8php_aa49859dd3cd57313d53c564b589cbde1}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_ERROR@{SQLITE\_ERROR}}
+\index{SQLITE\_ERROR@{SQLITE\_ERROR}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_ERROR}{SQLITE\_ERROR}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+E\+R\+R\+OR 1}
+
+S\+QL error or missing database. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_abfd565f9ba48010648ecca863f2ff079}\label{_s_q_lite_8php_abfd565f9ba48010648ecca863f2ff079}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_FORMAT@{SQLITE\_FORMAT}}
+\index{SQLITE\_FORMAT@{SQLITE\_FORMAT}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_FORMAT}{SQLITE\_FORMAT}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+F\+O\+R\+M\+AT 24}
+
+Auxiliary database format error. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_ae808f56b25aae94ff48df9b61138b60f}\label{_s_q_lite_8php_ae808f56b25aae94ff48df9b61138b60f}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_FULL@{SQLITE\_FULL}}
+\index{SQLITE\_FULL@{SQLITE\_FULL}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_FULL}{SQLITE\_FULL}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+F\+U\+LL 13}
+
+Insertion failed because database is full. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_ae68783ffe764dbd82f74b3e716e6cd48}\label{_s_q_lite_8php_ae68783ffe764dbd82f74b3e716e6cd48}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_INTERNAL@{SQLITE\_INTERNAL}}
+\index{SQLITE\_INTERNAL@{SQLITE\_INTERNAL}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_INTERNAL}{SQLITE\_INTERNAL}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+I\+N\+T\+E\+R\+N\+AL 2}
+
+An internal logic error in S\+Q\+Lite. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a7f5b1f8bd07ad79d86eecf845e94c48a}\label{_s_q_lite_8php_a7f5b1f8bd07ad79d86eecf845e94c48a}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_INTERRUPT@{SQLITE\_INTERRUPT}}
+\index{SQLITE\_INTERRUPT@{SQLITE\_INTERRUPT}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_INTERRUPT}{SQLITE\_INTERRUPT}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT 9}
+
+Operation terminated internally. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a8d860c3c6c4f1037339d8a4d312c2592}\label{_s_q_lite_8php_a8d860c3c6c4f1037339d8a4d312c2592}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_IOERR@{SQLITE\_IOERR}}
+\index{SQLITE\_IOERR@{SQLITE\_IOERR}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_IOERR}{SQLITE\_IOERR}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+I\+O\+E\+RR 10}
+
+Disk I/O error occurred. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a33ffec82a4cfd5c19b65a3a60f1f0335}\label{_s_q_lite_8php_a33ffec82a4cfd5c19b65a3a60f1f0335}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_LOCKED@{SQLITE\_LOCKED}}
+\index{SQLITE\_LOCKED@{SQLITE\_LOCKED}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_LOCKED}{SQLITE\_LOCKED}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+L\+O\+C\+K\+ED 6}
+
+\mbox{\hyperlink{class_a}{A}} table in the database is locked. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a5493705fd53321eaf8e74a632e271094}\label{_s_q_lite_8php_a5493705fd53321eaf8e74a632e271094}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_MISMATCH@{SQLITE\_MISMATCH}}
+\index{SQLITE\_MISMATCH@{SQLITE\_MISMATCH}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_MISMATCH}{SQLITE\_MISMATCH}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+M\+I\+S\+M\+A\+T\+CH 20}
+
+Data type mismatch. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a481340fe11a9f877b78b4bf0ce2c4efa}\label{_s_q_lite_8php_a481340fe11a9f877b78b4bf0ce2c4efa}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_MISUSE@{SQLITE\_MISUSE}}
+\index{SQLITE\_MISUSE@{SQLITE\_MISUSE}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_MISUSE}{SQLITE\_MISUSE}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+M\+I\+S\+U\+SE 21}
+
+Library used incorrectly. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_ad64d542a1a6f0cf950713495b8ce8ec8}\label{_s_q_lite_8php_ad64d542a1a6f0cf950713495b8ce8ec8}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_NOLFS@{SQLITE\_NOLFS}}
+\index{SQLITE\_NOLFS@{SQLITE\_NOLFS}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_NOLFS}{SQLITE\_NOLFS}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+L\+FS 22}
+
+Uses of OS features not supported on host. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a7949d3efc43be8a87bf44880325a891c}\label{_s_q_lite_8php_a7949d3efc43be8a87bf44880325a891c}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_NOMEM@{SQLITE\_NOMEM}}
+\index{SQLITE\_NOMEM@{SQLITE\_NOMEM}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_NOMEM}{SQLITE\_NOMEM}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+M\+EM 7}
+
+Memory allocation failed. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a16ade2c98eb0f00c0d95cd4e34c44788}\label{_s_q_lite_8php_a16ade2c98eb0f00c0d95cd4e34c44788}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_NOTADB@{SQLITE\_NOTADB}}
+\index{SQLITE\_NOTADB@{SQLITE\_NOTADB}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_NOTADB}{SQLITE\_NOTADB}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+A\+DB 26}
+
+File opened that is not a database file. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_ae1236f836db3d93940aa0c586ecfa602}\label{_s_q_lite_8php_ae1236f836db3d93940aa0c586ecfa602}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_NOTFOUND@{SQLITE\_NOTFOUND}}
+\index{SQLITE\_NOTFOUND@{SQLITE\_NOTFOUND}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_NOTFOUND}{SQLITE\_NOTFOUND}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+N\+O\+T\+F\+O\+U\+ND 12}
+
+(Internal) Table or record not found. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a188da140a3429e6fb54ba1e989b8a441}\label{_s_q_lite_8php_a188da140a3429e6fb54ba1e989b8a441}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_NUM@{SQLITE\_NUM}}
+\index{SQLITE\_NUM@{SQLITE\_NUM}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_NUM}{SQLITE\_NUM}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+N\+UM 2}
+
+Columns are returned into the array having a numerical index to the fields. This index starts with 0, the first field in the result. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_afc3e40c922322b7ce83a55cbab35c70b}\label{_s_q_lite_8php_afc3e40c922322b7ce83a55cbab35c70b}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_OK@{SQLITE\_OK}}
+\index{SQLITE\_OK@{SQLITE\_OK}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_OK}{SQLITE\_OK}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+OK 0}
+
+Successful result. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a2986bbc84dd2096c02514a85a1e30a34}\label{_s_q_lite_8php_a2986bbc84dd2096c02514a85a1e30a34}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_PERM@{SQLITE\_PERM}}
+\index{SQLITE\_PERM@{SQLITE\_PERM}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_PERM}{SQLITE\_PERM}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+P\+E\+RM 3}
+
+Access permission denied. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_aeb6b2c8971f50238937cca8e3c09d294}\label{_s_q_lite_8php_aeb6b2c8971f50238937cca8e3c09d294}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_PROTOCOL@{SQLITE\_PROTOCOL}}
+\index{SQLITE\_PROTOCOL@{SQLITE\_PROTOCOL}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_PROTOCOL}{SQLITE\_PROTOCOL}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+P\+R\+O\+T\+O\+C\+OL 15}
+
+Database lock protocol error. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_aa288a5b77eccf7df4b70643e3db44c74}\label{_s_q_lite_8php_aa288a5b77eccf7df4b70643e3db44c74}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_READONLY@{SQLITE\_READONLY}}
+\index{SQLITE\_READONLY@{SQLITE\_READONLY}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_READONLY}{SQLITE\_READONLY}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+R\+E\+A\+D\+O\+N\+LY 8}
+
+Attempt to write a readonly database. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a7d7da3ffc213d744999839ce8a22d356}\label{_s_q_lite_8php_a7d7da3ffc213d744999839ce8a22d356}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_ROW@{SQLITE\_ROW}}
+\index{SQLITE\_ROW@{SQLITE\_ROW}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_ROW}{SQLITE\_ROW}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+R\+OW 100}
+
+Internal process has another row ready. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a3b4a22e1c22e4481ed893c8282f8860c}\label{_s_q_lite_8php_a3b4a22e1c22e4481ed893c8282f8860c}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_SCHEMA@{SQLITE\_SCHEMA}}
+\index{SQLITE\_SCHEMA@{SQLITE\_SCHEMA}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_SCHEMA}{SQLITE\_SCHEMA}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+S\+C\+H\+E\+MA 17}
+
+The database schema changed. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}\mbox{\Hypertarget{_s_q_lite_8php_a1fba3870e77aea95b22fa188f06b1ab5}\label{_s_q_lite_8php_a1fba3870e77aea95b22fa188f06b1ab5}} 
+\index{SQLite.php@{SQLite.php}!SQLITE\_TOOBIG@{SQLITE\_TOOBIG}}
+\index{SQLITE\_TOOBIG@{SQLITE\_TOOBIG}!SQLite.php@{SQLite.php}}
+\doxysubsubsection{\texorpdfstring{SQLITE\_TOOBIG}{SQLITE\_TOOBIG}}
+{\footnotesize\ttfamily const S\+Q\+L\+I\+T\+E\+\_\+\+T\+O\+O\+B\+IG 18}
+
+Too much data for one row of a table. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sqlite.\+constants.\+php}}

@@ -1,0 +1,3049 @@
+.TH "vendor/jetbrains/phpstorm-stubs/pgsql/pgsql.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/pgsql/pgsql.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBpg_connect\fP ($connection_string, $connect_type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_pconnect\fP ($connection_string, $connect_type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_close\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_connect_poll\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_connection_status\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBpg_connection_busy\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBpg_connection_reset\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBpg_socket\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBpg_host\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_dbname\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_port\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_tty\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_options\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_version\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_ping\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_parameter_status\fP ($connection=\fBnull\fP, $param_name)"
+.br
+.ti -1c
+.RI "\fBpg_transaction_status\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBpg_query\fP ($connection=\fBnull\fP, $query)"
+.br
+.ti -1c
+.RI "\fBpg_query_params\fP ($connection=\fBnull\fP, $query, array $params)"
+.br
+.ti -1c
+.RI "\fBpg_prepare\fP ($connection=\fBnull\fP, $stmtname, $query)"
+.br
+.ti -1c
+.RI "\fBpg_execute\fP ($connection=\fBnull\fP, $stmtname, array $params)"
+.br
+.ti -1c
+.RI "\fBpg_send_query\fP ($connection, $query)"
+.br
+.ti -1c
+.RI "\fBpg_send_query_params\fP ($connection, $query, array $params)"
+.br
+.ti -1c
+.RI "\fBpg_send_prepare\fP ($connection, $stmtname, $query)"
+.br
+.ti -1c
+.RI "\fBpg_send_execute\fP ($connection, $stmtname, array $params)"
+.br
+.ti -1c
+.RI "\fBpg_cancel_query\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBpg_fetch_result\fP ($result, $row=\fBnull\fP, $field)"
+.br
+.ti -1c
+.RI "\fBpg_fetch_row\fP ($result, $row=\fBnull\fP, $result_type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_fetch_assoc\fP ($result, $row=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_fetch_array\fP ($result, $row=\fBnull\fP, $result_type=\fBPGSQL_BOTH\fP)"
+.br
+.ti -1c
+.RI "\fBpg_fetch_object\fP ($result, $row=\fBnull\fP, $result_type=\fBPGSQL_ASSOC\fP)"
+.br
+.ti -1c
+.RI "\fBpg_fetch_all\fP ($result, $result_type=\fBPGSQL_ASSOC\fP)"
+.br
+.ti -1c
+.RI "\fBpg_fetch_all_columns\fP ($result, $column=0)"
+.br
+.ti -1c
+.RI "\fBpg_affected_rows\fP ($result)"
+.br
+.ti -1c
+.RI "\fBpg_get_result\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_result_seek\fP ($result, $offset)"
+.br
+.ti -1c
+.RI "\fBpg_result_status\fP ($result, $type=\fBPGSQL_STATUS_LONG\fP)"
+.br
+.ti -1c
+.RI "\fBpg_free_result\fP ($result)"
+.br
+.ti -1c
+.RI "\fBpg_last_oid\fP ($result)"
+.br
+.ti -1c
+.RI "\fBpg_num_rows\fP ($result)"
+.br
+.ti -1c
+.RI "\fBpg_num_fields\fP ($result)"
+.br
+.ti -1c
+.RI "\fBpg_field_name\fP ($result, $field_number)"
+.br
+.ti -1c
+.RI "\fBpg_field_num\fP ($result, $field_name)"
+.br
+.ti -1c
+.RI "\fBpg_field_size\fP ($result, $field_number)"
+.br
+.ti -1c
+.RI "\fBpg_field_type\fP ($result, $field_number)"
+.br
+.ti -1c
+.RI "\fBpg_field_type_oid\fP ($result, $field_number)"
+.br
+.ti -1c
+.RI "\fBpg_field_prtlen\fP ($result, $row_number, $field_name_or_number)"
+.br
+.ti -1c
+.RI "\fBpg_field_is_null\fP ($result, $row, $field)"
+.br
+.ti -1c
+.RI "\fBpg_field_table\fP ($result, $field_number, $oid_only=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBpg_get_notify\fP ($connection, $result_type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_get_pid\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBpg_result_error\fP ($result)"
+.br
+.ti -1c
+.RI "\fBpg_result_error_field\fP ($result, $fieldcode)"
+.br
+.ti -1c
+.RI "\fBpg_last_error\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_last_notice\fP ($connection, $operation)"
+.br
+.ti -1c
+.RI "\fBpg_put_line\fP ($connection=\fBnull\fP, $data)"
+.br
+.ti -1c
+.RI "\fBpg_end_copy\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_copy_to\fP ($connection, $table_name, $delimiter=\fBnull\fP, $null_as=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_copy_from\fP ($connection, $table_name, array $rows, $delimiter=\fBnull\fP, $null_as=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_trace\fP ($pathname, $mode='w', $connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_untrace\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_lo_create\fP ($connection=\fBnull\fP, $object_id=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_lo_unlink\fP ($connection, $oid)"
+.br
+.ti -1c
+.RI "\fBpg_lo_open\fP ($connection, $oid, $mode)"
+.br
+.ti -1c
+.RI "\fBpg_lo_close\fP ($large_object)"
+.br
+.ti -1c
+.RI "\fBpg_lo_read\fP ($large_object, $len=8192)"
+.br
+.ti -1c
+.RI "\fBpg_lo_write\fP ($large_object, $data, $len=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_lo_read_all\fP ($large_object)"
+.br
+.ti -1c
+.RI "\fBpg_lo_import\fP ($connection=\fBnull\fP, $pathname, $object_id=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_lo_export\fP ($connection=\fBnull\fP, $oid, $pathname)"
+.br
+.ti -1c
+.RI "\fBpg_lo_seek\fP ($large_object, $offset, $whence=\fBPGSQL_SEEK_CUR\fP)"
+.br
+.ti -1c
+.RI "\fBpg_lo_tell\fP ($large_object)"
+.br
+.ti -1c
+.RI "\fBpg_escape_string\fP ($connection=\fBnull\fP, $data)"
+.br
+.ti -1c
+.RI "\fBpg_escape_bytea\fP ($connection=\fBnull\fP, $data)"
+.br
+.ti -1c
+.RI "\fBpg_escape_identifier\fP ($connection=\fBnull\fP, $data)"
+.br
+.ti -1c
+.RI "\fBpg_escape_literal\fP ($connection=\fBnull\fP, $data)"
+.br
+.ti -1c
+.RI "\fBpg_unescape_bytea\fP ($data)"
+.br
+.ti -1c
+.RI "\fBpg_set_error_verbosity\fP ($connection=\fBnull\fP, $verbosity)"
+.br
+.ti -1c
+.RI "\fBpg_client_encoding\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpg_set_client_encoding\fP ($connection=\fBnull\fP, $encoding)"
+.br
+.ti -1c
+.RI "\fBpg_meta_data\fP ($connection, $table_name)"
+.br
+.ti -1c
+.RI "\fBpg_convert\fP ($connection, $table_name, array $assoc_array, $options=0)"
+.br
+.ti -1c
+.RI "\fBpg_insert\fP ($connection, $table_name, array $assoc_array, $options=\fBPGSQL_DML_EXEC\fP)"
+.br
+.ti -1c
+.RI "\fBpg_update\fP ($connection, $table_name, array $data, array $condition, $options=\fBPGSQL_DML_EXEC\fP)"
+.br
+.ti -1c
+.RI "\fBpg_delete\fP ($connection, $table_name, array $assoc_array, $options=\fBPGSQL_DML_EXEC\fP)"
+.br
+.ti -1c
+.RI "\fBpg_select\fP ($connection, $table_name, array $assoc_array, $options=\fBPGSQL_DML_EXEC\fP, $result_type=\fBPGSQL_ASSOC\fP)"
+.br
+.ti -1c
+.RI "\fBpg_exec\fP ($connection, $query)"
+.br
+.ti -1c
+.RI "\fBpg_getlastoid\fP ($result)"
+.br
+.ti -1c
+.RI "\fBpg_cmdtuples\fP ($result)"
+.br
+.ti -1c
+.RI "\fBpg_errormessage\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBpg_numrows\fP ($result)"
+.br
+.ti -1c
+.RI "\fBpg_numfields\fP ($result)"
+.br
+.ti -1c
+.RI "\fBpg_fieldname\fP ($result, $field_number)"
+.br
+.ti -1c
+.RI "\fBpg_fieldsize\fP ($result, $field_number)"
+.br
+.ti -1c
+.RI "\fBpg_fieldtype\fP ($result, $field_number)"
+.br
+.ti -1c
+.RI "\fBpg_fieldnum\fP ($result, $field_name)"
+.br
+.ti -1c
+.RI "\fBpg_fieldprtlen\fP ($result, $row, $field_name_or_number)"
+.br
+.ti -1c
+.RI "\fBpg_fieldisnull\fP ($result, $row, $field_name_or_number)"
+.br
+.ti -1c
+.RI "\fBpg_freeresult\fP ($result)"
+.br
+.ti -1c
+.RI "\fBpg_result\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBpg_loreadall\fP ($large_object)"
+.br
+.ti -1c
+.RI "\fBpg_locreate\fP ($connection, $large_object_id)"
+.br
+.ti -1c
+.RI "\fBpg_lounlink\fP ($connection, $large_object_oid)"
+.br
+.ti -1c
+.RI "\fBpg_loopen\fP ($connection, $large_object_oid, $mode)"
+.br
+.ti -1c
+.RI "\fBpg_loclose\fP ($large_object)"
+.br
+.ti -1c
+.RI "\fBpg_loread\fP ($large_object, $len)"
+.br
+.ti -1c
+.RI "\fBpg_lowrite\fP ($large_object, $buf, $len)"
+.br
+.ti -1c
+.RI "\fBpg_loimport\fP ($connection, $filename, $large_object_oid)"
+.br
+.ti -1c
+.RI "\fBpg_loexport\fP ($connection, $objoid, $filename)"
+.br
+.ti -1c
+.RI "\fBpg_clientencoding\fP ($connection)"
+.br
+.ti -1c
+.RI "\fBpg_setclientencoding\fP ($connection, $encoding)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBPGSQL_LIBPQ_VERSION\fP '9\&.1\&.10'"
+.br
+.ti -1c
+.RI "const \fBPGSQL_LIBPQ_VERSION_STR\fP 'PostgreSQL 9\&.1\&.10 on x86_64\-unknown\-linux\-gnu, compiled by gcc (Ubuntu/Linaro 4\&.8\&.1\-10ubuntu7) 4\&.8\&.1, 64\-bit'"
+.br
+.ti -1c
+.RI "const \fBPGSQL_CONNECT_FORCE_NEW\fP 2"
+.br
+.ti -1c
+.RI "const \fBPGSQL_ASSOC\fP 1"
+.br
+.ti -1c
+.RI "const \fBPGSQL_NUM\fP 2"
+.br
+.ti -1c
+.RI "const \fBPGSQL_BOTH\fP 3"
+.br
+.ti -1c
+.RI "const \fBPGSQL_CONNECTION_BAD\fP 1"
+.br
+.ti -1c
+.RI "const \fBPGSQL_CONNECTION_OK\fP 0"
+.br
+.ti -1c
+.RI "const \fBPGSQL_TRANSACTION_IDLE\fP 0"
+.br
+.ti -1c
+.RI "const \fBPGSQL_TRANSACTION_ACTIVE\fP 1"
+.br
+.ti -1c
+.RI "const \fBPGSQL_TRANSACTION_INTRANS\fP 2"
+.br
+.ti -1c
+.RI "const \fBPGSQL_TRANSACTION_INERROR\fP 3"
+.br
+.ti -1c
+.RI "const \fBPGSQL_TRANSACTION_UNKNOWN\fP 4"
+.br
+.ti -1c
+.RI "const \fBPGSQL_ERRORS_TERSE\fP 0"
+.br
+.ti -1c
+.RI "const \fBPGSQL_ERRORS_DEFAULT\fP 1"
+.br
+.ti -1c
+.RI "const \fBPGSQL_ERRORS_VERBOSE\fP 2"
+.br
+.ti -1c
+.RI "const \fBPGSQL_SEEK_SET\fP 0"
+.br
+.ti -1c
+.RI "const \fBPGSQL_SEEK_CUR\fP 1"
+.br
+.ti -1c
+.RI "const \fBPGSQL_SEEK_END\fP 2"
+.br
+.ti -1c
+.RI "const \fBPGSQL_STATUS_LONG\fP 1"
+.br
+.ti -1c
+.RI "const \fBPGSQL_STATUS_STRING\fP 2"
+.br
+.ti -1c
+.RI "const \fBPGSQL_EMPTY_QUERY\fP 0"
+.br
+.ti -1c
+.RI "const \fBPGSQL_COMMAND_OK\fP 1"
+.br
+.ti -1c
+.RI "const \fBPGSQL_TUPLES_OK\fP 2"
+.br
+.ti -1c
+.RI "const \fBPGSQL_COPY_OUT\fP 3"
+.br
+.ti -1c
+.RI "const \fBPGSQL_COPY_IN\fP 4"
+.br
+.ti -1c
+.RI "const \fBPGSQL_BAD_RESPONSE\fP 5"
+.br
+.ti -1c
+.RI "const \fBPGSQL_NONFATAL_ERROR\fP 6"
+.br
+.ti -1c
+.RI "const \fBPGSQL_FATAL_ERROR\fP 7"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DIAG_SEVERITY\fP 83"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DIAG_SQLSTATE\fP 67"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DIAG_MESSAGE_PRIMARY\fP 77"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DIAG_MESSAGE_DETAIL\fP 68"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DIAG_MESSAGE_HINT\fP 72"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DIAG_STATEMENT_POSITION\fP 80"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DIAG_INTERNAL_POSITION\fP 112"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DIAG_INTERNAL_QUERY\fP 113"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DIAG_CONTEXT\fP 87"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DIAG_SOURCE_FILE\fP 70"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DIAG_SOURCE_LINE\fP 76"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DIAG_SOURCE_FUNCTION\fP 82"
+.br
+.ti -1c
+.RI "const \fBPGSQL_CONV_IGNORE_DEFAULT\fP 2"
+.br
+.ti -1c
+.RI "const \fBPGSQL_CONV_FORCE_NULL\fP 4"
+.br
+.ti -1c
+.RI "const \fBPGSQL_CONV_IGNORE_NOT_NULL\fP 8"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DML_NO_CONV\fP 256"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DML_EXEC\fP 512"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DML_ASYNC\fP 1024"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DML_STRING\fP 2048"
+.br
+.ti -1c
+.RI "const \fBPGSQL_NOTICE_LAST\fP 1"
+.br
+.ti -1c
+.RI "const \fBPGSQL_NOTICE_ALL\fP 2"
+.br
+.ti -1c
+.RI "const \fBPGSQL_NOTICE_CLEAR\fP 3"
+.br
+.ti -1c
+.RI "const \fBPGSQL_CONNECT_ASYNC\fP = 4"
+.br
+.ti -1c
+.RI "const \fBPGSQL_CONNECTION_AUTH_OK\fP = 5"
+.br
+.ti -1c
+.RI "const \fBPGSQL_CONNECTION_AWAITING_RESPONSE\fP = 4"
+.br
+.ti -1c
+.RI "const \fBPGSQL_CONNECTION_MADE\fP = 3"
+.br
+.ti -1c
+.RI "const \fBPGSQL_CONNECTION_SETENV\fP = 6"
+.br
+.ti -1c
+.RI "const \fBPGSQL_CONNECTION_STARTED\fP = 2"
+.br
+.ti -1c
+.RI "const \fBPGSQL_DML_ESCAPE\fP = 4096"
+.br
+.ti -1c
+.RI "const \fBPGSQL_POLLING_ACTIVE\fP = 4"
+.br
+.ti -1c
+.RI "const \fBPGSQL_POLLING_FAILED\fP = 0"
+.br
+.ti -1c
+.RI "const \fBPGSQL_POLLING_OK\fP = 3"
+.br
+.ti -1c
+.RI "const \fBPGSQL_POLLING_READING\fP = 1"
+.br
+.ti -1c
+.RI "const \fBPGSQL_POLLING_WRITING\fP = 2"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "pg_affected_rows ( $result)"
+Returns number of affected records (tuples) \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The number of rows affected by the query\&. If no tuple is affected, it will return 0\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_cancel_query ( $connection)"
+Cancel an asynchronous query \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_client_encoding ( $connection = \fC\fBnull\fP\fP)"
+Gets the client encoding \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The client encoding, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_clientencoding ( $connection)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "pg_close ( $connection = \fC\fBnull\fP\fP)"
+Closes a PostgreSQL connection \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_cmdtuples ( $result)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.RE
+.PP
+
+.SS "pg_connect ( $connection_string,  $connect_type = \fC\fBnull\fP\fP)"
+Open a PostgreSQL connection \fBstring $connection_string \fP The \fIconnection_string\fP can be empty to use all default parameters, or it can contain one or more parameter settings separated by whitespace\&. Each parameter setting is in the form keyword = value\&. Spaces around the equal sign are optional\&. To write an empty value or a value containing spaces, surround it with single quotes, e\&.g\&., keyword = 'a value'\&. Single quotes and backslashes within the value must be escaped with a backslash, i\&.e\&., \\' and \\\&. 
+.PP
+The currently recognized parameter keywords are: \fIhost\fP, \fIhostaddr\fP, \fIport\fP, \fIdbname\fP (defaults to value of \fIuser\fP), \fIuser\fP, \fIpassword\fP, \fIconnect_timeout\fP, \fIoptions\fP, \fItty\fP (ignored), \fIsslmode\fP, \fIrequiressl\fP (deprecated in favor of \fIsslmode\fP), and \fIservice\fP\&. Which of these arguments exist depends on your PostgreSQL version\&. 
+.PP
+The \fIoptions\fP parameter can be used to set command line parameters to be invoked by the server\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connect_type\fP [optional] 
+.RE
+.PP
+If \fBPGSQL_CONNECT_FORCE_NEW\fP is passed, then a new connection is created, even if the \fIconnection_string\fP is identical to an existing connection\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false PostgreSQL connection resource on success, \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_connect_poll ( $connection = \fC\fBnull\fP\fP)"
+Poll the status of an in-progress asynchronous PostgreSQL connection attempt\&. \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int \fBPGSQL_POLLING_FAILED\fP, \fBPGSQL_POLLING_READING\fP, \fBPGSQL_POLLING_WRITING\fP, \fBPGSQL_POLLING_OK\fP, or \fBPGSQL_POLLING_ACTIVE\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.6 
+.RE
+.PP
+
+.SS "pg_connection_busy ( $connection)"
+Get connection is busy or not \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if the connection is busy, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_connection_reset ( $connection)"
+Reset connection (reconnect) \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_connection_status ( $connection)"
+Get connection status \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int \fBPGSQL_CONNECTION_OK\fP or \fBPGSQL_CONNECTION_BAD\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_convert ( $connection,  $table_name, array $assoc_array,  $options = \fC0\fP)"
+Convert associative array values into suitable for SQL statement \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+Name of the table against which to convert types\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$assoc_array\fP 
+.RE
+.PP
+Data to be converted\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+Any number of \fBPGSQL_CONV_IGNORE_DEFAULT\fP, \fBPGSQL_CONV_FORCE_NULL\fP or \fBPGSQL_CONV_IGNORE_NOT_NULL\fP, combined\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array An array of converted values, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_copy_from ( $connection,  $table_name, array $rows,  $delimiter = \fC\fBnull\fP\fP,  $null_as = \fC\fBnull\fP\fP)"
+Insert records into a table from an array \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+Name of the table into which to copy the \fIrows\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$rows\fP 
+.RE
+.PP
+An array of data to be copied into \fItable_name\fP\&. Each value in \fIrows\fP becomes a row in \fItable_name\fP\&. Each value in \fIrows\fP should be a delimited string of the values to insert into each field\&. Values should be linefeed terminated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$delimiter\fP [optional] 
+.RE
+.PP
+The token that separates values for each field in each element of \fIrows\fP\&. Default is TAB\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$null_as\fP [optional] 
+.RE
+.PP
+How SQL NULL values are represented in the \fIrows\fP\&. Default is \\N ('\\\\N')\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_copy_to ( $connection,  $table_name,  $delimiter = \fC\fBnull\fP\fP,  $null_as = \fC\fBnull\fP\fP)"
+Copy a table to an array \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+Name of the table from which to copy the data into \fIrows\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$delimiter\fP [optional] 
+.RE
+.PP
+The token that separates values for each field in each element of \fIrows\fP\&. Default is TAB\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$null_as\fP [optional] 
+.RE
+.PP
+How SQL NULL values are represented in the \fIrows\fP\&. Default is \\N ('\\\\N')\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false An array with one element for each line of COPY data\&. It returns \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_dbname ( $connection = \fC\fBnull\fP\fP)"
+Get the database name \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false \fBA\fP string containing the name of the database the \fIconnection\fP is to, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_delete ( $connection,  $table_name, array $assoc_array,  $options = \fC\fBPGSQL_DML_EXEC\fP\fP)"
+Deletes records \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+Name of the table from which to delete rows\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$assoc_array\fP 
+.RE
+.PP
+An array whose keys are field names in the table \fItable_name\fP, and whose values are the values of those fields that are to be deleted\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+Any number of \fBPGSQL_CONV_FORCE_NULL\fP, \fBPGSQL_DML_NO_CONV\fP, \fBPGSQL_DML_EXEC\fP or \fBPGSQL_DML_STRING\fP combined\&. If \fBPGSQL_DML_STRING\fP is part of the \fIoptions\fP then query string is returned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed \fBTRUE\fP on success or \fBFALSE\fP on failure\&. Returns string if \fBPGSQL_DML_STRING\fP is passed via \fIoptions\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_end_copy ( $connection = \fC\fBnull\fP\fP)"
+Sync with PostgreSQL backend \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_errormessage ( $connection)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "pg_escape_bytea ( $connection = \fC\fBnull\fP\fP,  $data)"
+Escape a string for insertion into a bytea field \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+\fBA\fP string containing text or binary data to be inserted into a bytea column\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string containing the escaped data\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_escape_identifier ( $connection = \fC\fBnull\fP\fP,  $data)"
+Escape a identifier for insertion into a text field \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+\fBA\fP string containing text to be escaped\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string containing the escaped data\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.4\&.4 
+.RE
+.PP
+
+.SS "pg_escape_literal ( $connection = \fC\fBnull\fP\fP,  $data)"
+Escape a literal for insertion into a text field \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+\fBA\fP string containing text to be escaped\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string containing the escaped data\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.4\&.4 
+.RE
+.PP
+
+.SS "pg_escape_string ( $connection = \fC\fBnull\fP\fP,  $data)"
+Escape a string for query \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+\fBA\fP string containing text to be escaped\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string containing the escaped data\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_exec ( $connection,  $query)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection\fP [optional] 
+.br
+\fI$query\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+mixed 
+.RE
+.PP
+
+.SS "pg_execute ( $connection = \fC\fBnull\fP\fP,  $stmtname, array $params)"
+Sends a request to execute a prepared statement with given parameters, and waits for the result\&. \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$stmtname\fP 
+.RE
+.PP
+The name of the prepared statement to execute\&. if '' is specified, then the unnamed statement is executed\&. The name must have been previously prepared using \fBpg_prepare\fP, \fBpg_send_prepare\fP or a PREPARE SQL command\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$params\fP 
+.RE
+.PP
+An array of parameter values to substitute for the $1, $2, etc\&. placeholders in the original prepared query string\&. The number of elements in the array must match the number of placeholders\&. 
+.PP
+Elements are converted to strings by calling this function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP query result resource on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "pg_fetch_all ( $result,  $result_type = \fC\fBPGSQL_ASSOC\fP\fP)"
+Fetches all rows from a result as an array \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_type\fP [optional] 
+.RE
+.PP
+An optional parameter that controls how the returned array is indexed\&. \fIresult_type\fP is a constant and can take the following values: \fBPGSQL_ASSOC\fP, \fBPGSQL_NUM\fP and \fBPGSQL_BOTH\fP\&. Using \fBPGSQL_NUM\fP, \fBpg_fetch_array\fP will return an array with numerical indices, using \fBPGSQL_ASSOC\fP it will return only associative indices while \fBPGSQL_BOTH\fP, the default, will return both numerical and associative indices\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array An array with all rows in the result\&. Each row is an array of field values indexed by field name\&. 
+.RE
+.PP
+.PP
+\fBFALSE\fP is returned if there are no rows in the result, or on any other error\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_fetch_all_columns ( $result,  $column = \fC0\fP)"
+Fetches all rows in a particular result column as an array \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$column\fP [optional] 
+.RE
+.PP
+Column number, zero-based, to be retrieved from the result resource\&. Defaults to the first column if not specified\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array An array with all values in the result column\&. 
+.RE
+.PP
+.PP
+\fBFALSE\fP is returned if \fIcolumn\fP is larger than the number of columns in the result, or on any other error\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "pg_fetch_array ( $result,  $row = \fC\fBnull\fP\fP,  $result_type = \fC\fBPGSQL_BOTH\fP\fP)"
+Fetch a row as an array \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row\fP [optional] 
+.RE
+.PP
+Row number in result to fetch\&. Rows are numbered from 0 upwards\&. If omitted or \fBNULL\fP, the next row is fetched\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_type\fP [optional] 
+.RE
+.PP
+An optional parameter that controls how the returned array is indexed\&. \fIresult_type\fP is a constant and can take the following values: \fBPGSQL_ASSOC\fP, \fBPGSQL_NUM\fP and \fBPGSQL_BOTH\fP\&. Using \fBPGSQL_NUM\fP, \fBpg_fetch_array\fP will return an array with numerical indices, using \fBPGSQL_ASSOC\fP it will return only associative indices while \fBPGSQL_BOTH\fP, the default, will return both numerical and associative indices\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array An array indexed numerically (beginning with 0) or associatively (indexed by field name), or both\&. Each value in the array is represented as a string\&. Database NULL values are returned as \fBNULL\fP\&. 
+.RE
+.PP
+.PP
+\fBFALSE\fP is returned if \fIrow\fP exceeds the number of rows in the set, there are no more rows, or on any other error\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_fetch_assoc ( $result,  $row = \fC\fBnull\fP\fP)"
+Fetch a row as an associative array \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row\fP [optional] 
+.RE
+.PP
+Row number in result to fetch\&. Rows are numbered from 0 upwards\&. If omitted or \fBNULL\fP, the next row is fetched\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array An array indexed associatively (by field name)\&. Each value in the array is represented as a string\&. Database NULL values are returned as \fBNULL\fP\&. 
+.RE
+.PP
+.PP
+\fBFALSE\fP is returned if \fIrow\fP exceeds the number of rows in the set, there are no more rows, or on any other error\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_fetch_object ( $result,  $row = \fC\fBnull\fP\fP,  $result_type = \fC\fBPGSQL_ASSOC\fP\fP)"
+Fetch a row as an object \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row\fP [optional] 
+.RE
+.PP
+Row number in result to fetch\&. Rows are numbered from 0 upwards\&. If omitted or \fBNULL\fP, the next row is fetched\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_type\fP [optional] 
+.RE
+.PP
+Ignored and deprecated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+object An object with one attribute for each field name in the result\&. Database NULL values are returned as \fBNULL\fP\&. 
+.RE
+.PP
+.PP
+\fBFALSE\fP is returned if \fIrow\fP exceeds the number of rows in the set, there are no more rows, or on any other error\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_fetch_result ( $result,  $row = \fC\fBnull\fP\fP,  $field)"
+Returns values from a result resource \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row\fP [optional]
+.RE
+.PP
+Row number in result to fetch\&. Rows are numbered from 0 upwards\&. If omitted, next row is fetched\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+\fBA\fP string representing the name of the field (column) to fetch, otherwise an int representing the field number to fetch\&. Fields are numbered from 0 upwards\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string Boolean is returned as &#x00022;t&#x00022; or &#x00022;f&#x00022;\&. All other types, including arrays are returned as strings formatted in the same default PostgreSQL manner that you would see in the psql program\&. Database NULL values are returned as \fBNULL\fP\&. 
+.RE
+.PP
+.PP
+\fBFALSE\fP is returned if \fIrow\fP exceeds the number of rows in the set, or on any other error\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_fetch_row ( $result,  $row = \fC\fBnull\fP\fP,  $result_type = \fC\fBnull\fP\fP)"
+Get a row as an enumerated array \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row\fP [optional] 
+.RE
+.PP
+Row number in result to fetch\&. Rows are numbered from 0 upwards\&. If omitted or \fBNULL\fP, the next row is fetched\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_type\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array An array, indexed from 0 upwards, with each value represented as a string\&. Database NULL values are returned as \fBNULL\fP\&. 
+.RE
+.PP
+.PP
+\fBFALSE\fP is returned if \fIrow\fP exceeds the number of rows in the set, there are no more rows, or on any other error\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_field_is_null ( $result,  $row,  $field)"
+\fBTest\fP if a field is SQL NULL \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row\fP 
+.RE
+.PP
+Row number in result to fetch\&. Rows are numbered from 0 upwards\&. If omitted, current row is fetched\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+Field number (starting from 0) as an integer or the field name as a string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int 1 if the field in the given row is SQL NULL, 0 if not\&. \fBFALSE\fP is returned if the row is out of range, or upon any other error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_field_name ( $result,  $field_number)"
+Returns the name of a field \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_number\fP 
+.RE
+.PP
+Field number, starting from 0\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The field name, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_field_num ( $result,  $field_name)"
+Returns the field number of the named field \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_name\fP 
+.RE
+.PP
+The name of the field\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The field number (numbered from 0), or -1 on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_field_prtlen ( $result,  $row_number,  $field_name_or_number)"
+Returns the printed length \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row_number\fP 
+.br
+\fI$field_name_or_number\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The field printed length, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_field_size ( $result,  $field_number)"
+Returns the internal storage size of the named field \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_number\fP 
+.RE
+.PP
+Field number, starting from 0\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The internal field storage size (in bytes)\&. -1 indicates a variable length field\&. \fBFALSE\fP is returned on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_field_table ( $result,  $field_number,  $oid_only = \fC\fBfalse\fP\fP)"
+Returns the name or oid of the tables field \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_number\fP 
+.RE
+.PP
+Field number, starting from 0\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$oid_only\fP [optional] 
+.RE
+.PP
+By default the tables name that field belongs to is returned but if \fIoid_only\fP is set to \fBTRUE\fP, then the oid will instead be returned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed On success either the fields table name or oid\&. Or, \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "pg_field_type ( $result,  $field_number)"
+Returns the type name for the corresponding field number \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_number\fP 
+.RE
+.PP
+Field number, starting from 0\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false \fBA\fP string containing the base name of the field's type, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_field_type_oid ( $result,  $field_number)"
+Returns the type ID (OID) for the corresponding field number \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_number\fP 
+.RE
+.PP
+Field number, starting from 0\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false The OID of the field's base type\&. \fBFALSE\fP is returned on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "pg_fieldisnull ( $result,  $row,  $field_name_or_number)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$row\fP [optional] 
+.br
+\fI$field_name_or_number\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "pg_fieldname ( $result,  $field_number)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_number\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "pg_fieldnum ( $result,  $field_name)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_name\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "pg_fieldprtlen ( $result,  $row,  $field_name_or_number)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$row\fP [optional] 
+.br
+\fI$field_name_or_number\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "pg_fieldsize ( $result,  $field_number)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_number\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "pg_fieldtype ( $result,  $field_number)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$field_number\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "pg_free_result ( $result)"
+Free result memory \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_freeresult ( $result)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "pg_get_notify ( $connection,  $result_type = \fC\fBnull\fP\fP)"
+Gets SQL NOTIFY message \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_type\fP [optional] 
+.RE
+.PP
+An optional parameter that controls how the returned array is indexed\&. \fIresult_type\fP is a constant and can take the following values: \fBPGSQL_ASSOC\fP, \fBPGSQL_NUM\fP and \fBPGSQL_BOTH\fP\&. Using \fBPGSQL_NUM\fP, \fBpg_get_notify\fP will return an array with numerical indices, using \fBPGSQL_ASSOC\fP it will return only associative indices while \fBPGSQL_BOTH\fP, the default, will return both numerical and associative indices\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false An array containing the NOTIFY message name and backend PID\&. Otherwise if no NOTIFY is waiting, then \fBFALSE\fP is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_get_pid ( $connection)"
+Gets the backend's process ID \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The backend database process ID\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_get_result ( $connection = \fC\fBnull\fP\fP)"
+Get asynchronous query result \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false The result resource, or \fBFALSE\fP if no more results are available\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_getlastoid ( $result)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "pg_host ( $connection = \fC\fBnull\fP\fP)"
+Returns the host name associated with the connection \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false \fBA\fP string containing the name of the host the \fIconnection\fP is to, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_insert ( $connection,  $table_name, array $assoc_array,  $options = \fC\fBPGSQL_DML_EXEC\fP\fP)"
+Insert array into table \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+Name of the table into which to insert rows\&. The table \fItable_name\fP must at least have as many columns as \fIassoc_array\fP has elements\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$assoc_array\fP 
+.RE
+.PP
+An array whose keys are field names in the table \fItable_name\fP, and whose values are the values of those fields that are to be inserted\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+Any number of \fBPGSQL_CONV_OPTS\fP, \fBPGSQL_DML_NO_CONV\fP, \fBPGSQL_DML_EXEC\fP, \fBPGSQL_DML_ASYNC\fP or \fBPGSQL_DML_STRING\fP combined\&. If \fBPGSQL_DML_STRING\fP is part of the \fIoptions\fP then query string is returned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed \fBTRUE\fP on success or \fBFALSE\fP on failure\&. Returns string if \fBPGSQL_DML_STRING\fP is passed via \fIoptions\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_last_error ( $connection = \fC\fBnull\fP\fP)"
+Get the last error message string of a connection \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string containing the last error message on the given \fIconnection\fP, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_last_notice ( $connection,  $operation)"
+Returns the last notice message from PostgreSQL server \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$operation\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string containing the last notice on the given \fIconnection\fP, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_last_oid ( $result)"
+Returns the last row's OID \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string containing the OID assigned to the most recently inserted row in the specified \fIconnection\fP, or \fBFALSE\fP on error or no available OID\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_lo_close ( $large_object)"
+Close a large object \fBresource $large_object  bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&.  4\&.2  5\&.0 \fP
+.SS "pg_lo_create ( $connection = \fC\fBnull\fP\fP,  $object_id = \fC\fBnull\fP\fP)"
+Create a large object \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP [optional] 
+.RE
+.PP
+If an \fIobject_id\fP is given the function will try to create a large object with this id, else a free object id is assigned by the server\&. The parameter was added in PHP 5\&.3 and relies on functionality that first appeared in PostgreSQL 8\&.1\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false \fBA\fP large object OID or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_lo_export ( $connection = \fC\fBnull\fP\fP,  $oid,  $pathname)"
+Export a large object to file \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$oid\fP 
+.RE
+.PP
+The OID of the large object in the database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pathname\fP 
+.RE
+.PP
+The full path and file name of the file in which to write the large object on the client filesystem\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_lo_import ( $connection = \fC\fBnull\fP\fP,  $pathname,  $object_id = \fC\fBnull\fP\fP)"
+Import a large object from file \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pathname\fP 
+.RE
+.PP
+The full path and file name of the file on the client filesystem from which to read the large object data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP [optional] 
+.RE
+.PP
+If an \fIobject_id\fP is given the function will try to create a large object with this id, else a free object id is assigned by the server\&. The parameter was added in PHP 5\&.3 and relies on functionality that first appeared in PostgreSQL 8\&.1\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The OID of the newly created large object, or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_lo_open ( $connection,  $oid,  $mode)"
+Open a large object \fBresource $connection \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$oid\fP 
+.RE
+.PP
+The OID of the large object in the database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+Can be either 'r' for read-only, 'w' for write only or 'rw' for read and write\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP large object resource or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_lo_read ( $large_object,  $len = \fC8192\fP)"
+Read a large object \fBresource $large_object \fP PostgreSQL large object (LOB) resource, returned by \fBpg_lo_open\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$len\fP [optional] 
+.RE
+.PP
+An optional maximum number of bytes to return\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string containing \fIlen\fP bytes from the large object, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_lo_read_all ( $large_object)"
+Reads an entire large object and send straight to browser \fBresource $large_object \fP PostgreSQL large object (LOB) resource, returned by \fBpg_lo_open\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false Number of bytes read or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_lo_seek ( $large_object,  $offset,  $whence = \fC\fBPGSQL_SEEK_CUR\fP\fP)"
+Seeks position within a large object \fBresource $large_object \fP PostgreSQL large object (LOB) resource, returned by \fBpg_lo_open\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP 
+.RE
+.PP
+The number of bytes to seek\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$whence\fP [optional] 
+.RE
+.PP
+One of the constants \fBPGSQL_SEEK_SET\fP (seek from object start), \fBPGSQL_SEEK_CUR\fP (seek from current position) or \fBPGSQL_SEEK_END\fP (seek from object end) \&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_lo_tell ( $large_object)"
+Returns current seek position a of large object \fBresource $large_object \fP PostgreSQL large object (LOB) resource, returned by \fBpg_lo_open\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The current seek offset (in number of bytes) from the beginning of the large object\&. If there is an error, the return value is negative\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_lo_unlink ( $connection,  $oid)"
+Delete a large object \fBresource $connection \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$oid\fP 
+.RE
+.PP
+The OID of the large object in the database\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_lo_write ( $large_object,  $data,  $len = \fC\fBnull\fP\fP)"
+Write to a large object \fBresource $large_object \fP PostgreSQL large object (LOB) resource, returned by \fBpg_lo_open\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+The data to be written to the large object\&. If \fIlen\fP is specified and is less than the length of \fIdata\fP, only \fIlen\fP bytes will be written\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$len\fP [optional] 
+.RE
+.PP
+An optional maximum number of bytes to write\&. Must be greater than zero and no greater than the length of \fIdata\fP\&. Defaults to the length of \fIdata\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false The number of bytes written to the large object, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_loclose ( $large_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$large_object\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "pg_locreate ( $connection,  $large_object_id)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection\fP [optional] 
+.br
+\fI$large_object_id\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "pg_loexport ( $connection,  $objoid,  $filename)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection\fP [optional] 
+.br
+\fI$objoid\fP [optional] 
+.br
+\fI$filename\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "pg_loimport ( $connection,  $filename,  $large_object_oid)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection\fP [optional] 
+.br
+\fI$filename\fP [optional] 
+.br
+\fI$large_object_oid\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "pg_loopen ( $connection,  $large_object_oid,  $mode)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection\fP [optional] 
+.br
+\fI$large_object_oid\fP [optional] 
+.br
+\fI$mode\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "pg_loread ( $large_object,  $len)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$large_object\fP 
+.br
+\fI$len\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "pg_loreadall ( $large_object)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$large_object\fP 
+.RE
+.PP
+
+.SS "pg_lounlink ( $connection,  $large_object_oid)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection\fP [optional] 
+.br
+\fI$large_object_oid\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "pg_lowrite ( $large_object,  $buf,  $len)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$large_object\fP 
+.br
+\fI$buf\fP 
+.br
+\fI$len\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "pg_meta_data ( $connection,  $table_name)"
+Get meta data for table \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+The name of the table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array An array of the table definition, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_num_fields ( $result)"
+Returns the number of fields in a result \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The number of fields (columns) in the result\&. On error, -1 is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_num_rows ( $result)"
+Returns the number of rows in a result \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The number of rows in the result\&. On error, -1 is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_numfields ( $result)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "pg_numrows ( $result)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "pg_options ( $connection = \fC\fBnull\fP\fP)"
+Get the options associated with the connection \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string containing the \fIconnection\fP options, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_parameter_status ( $connection = \fC\fBnull\fP\fP,  $param_name)"
+Looks up a current parameter setting of the server\&. \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$param_name\fP 
+.RE
+.PP
+Possible \fIparam_name\fP values include server_version, server_encoding, client_encoding, is_superuser, session_authorization, DateStyle, TimeZone, and integer_datetimes\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false \fBA\fP string containing the value of the parameter, \fBFALSE\fP on failure or invalid \fIparam_name\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "pg_pconnect ( $connection_string,  $connect_type = \fC\fBnull\fP\fP)"
+Open a persistent PostgreSQL connection \fBstring $connection_string \fP The \fIconnection_string\fP can be empty to use all default parameters, or it can contain one or more parameter settings separated by whitespace\&. Each parameter setting is in the form keyword = value\&. Spaces around the equal sign are optional\&. To write an empty value or a value containing spaces, surround it with single quotes, e\&.g\&., keyword = 'a value'\&. Single quotes and backslashes within the value must be escaped with a backslash, i\&.e\&., \\' and \\\&. 
+.PP
+The currently recognized parameter keywords are: \fIhost\fP, \fIhostaddr\fP, \fIport\fP, \fIdbname\fP, \fIuser\fP, \fIpassword\fP, \fIconnect_timeout\fP, \fIoptions\fP, \fItty\fP (ignored), \fIsslmode\fP, \fIrequiressl\fP (deprecated in favor of \fIsslmode\fP), and \fIservice\fP\&. Which of these arguments exist depends on your PostgreSQL version\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connect_type\fP [optional] 
+.RE
+.PP
+If \fBPGSQL_CONNECT_FORCE_NEW\fP is passed, then a new connection is created, even if the \fIconnection_string\fP is identical to an existing connection\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false PostgreSQL connection resource on success, \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_ping ( $connection = \fC\fBnull\fP\fP)"
+Ping database connection \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_port ( $connection = \fC\fBnull\fP\fP)"
+Return the port number associated with the connection \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int An int containing the port number of the database server the \fIconnection\fP is to, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_prepare ( $connection = \fC\fBnull\fP\fP,  $stmtname,  $query)"
+Submits a request to create a prepared statement with the 
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 given parameters, and waits for completion\&. \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$stmtname\fP 
+.RE
+.PP
+The name to give the prepared statement\&. Must be unique per-connection\&. If '' is specified, then an unnamed statement is created, overwriting any previously defined unnamed statement\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$query\fP 
+.RE
+.PP
+The parameterized SQL statement\&. Must contain only a single statement\&. (multiple statements separated by semi-colons are not allowed\&.) If any parameters are used, they are referred to as $1, $2, etc\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP query result resource on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "pg_put_line ( $connection = \fC\fBnull\fP\fP,  $data)"
+Send a NULL-terminated string to PostgreSQL backend \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+\fBA\fP line of text to be sent directly to the PostgreSQL backend\&. \fBA\fP NULL terminator is added automatically\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_query ( $connection = \fC\fBnull\fP\fP,  $query)"
+Execute a query \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$query\fP 
+.RE
+.PP
+The SQL statement or statements to be executed\&. When multiple statements are passed to the function, they are automatically executed as one transaction, unless there are explicit BEGIN/COMMIT commands included in the query string\&. However, using multiple transactions in one function call is not recommended\&. 
+.PP
+String interpolation of user-supplied data is extremely dangerous and is likely to lead to SQL injection vulnerabilities\&. In most cases \fBpg_query_params\fP should be preferred, passing user-supplied values as parameters rather than substituting them into the query string\&. 
+.PP
+Any user-supplied data substituted directly into a query string should be properly escaped\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP query result resource on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_query_params ( $connection = \fC\fBnull\fP\fP,  $query, array $params)"
+Submits a command to the server and waits for the result, with the ability to pass parameters separately from the SQL command text\&. \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$query\fP 
+.RE
+.PP
+The parameterized SQL statement\&. Must contain only a single statement\&. (multiple statements separated by semi-colons are not allowed\&.) If any parameters are used, they are referred to as $1, $2, etc\&. 
+.PP
+User-supplied values should always be passed as parameters, not interpolated into the query string, where they form possible SQL injection attack vectors and introduce bugs when handling data containing quotes\&. If for some reason you cannot use a parameter, ensure that interpolated values are properly escaped\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$params\fP 
+.RE
+.PP
+An array of parameter values to substitute for the $1, $2, etc\&. placeholders in the original prepared query string\&. The number of elements in the array must match the number of placeholders\&. 
+.PP
+Values intended for bytea fields are not supported as parameters\&. Use \fBpg_escape_bytea\fP instead, or use the large object functions\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP query result resource on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "pg_result ( $connection)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection\fP 
+.RE
+.PP
+
+.SS "pg_result_error ( $result)"
+Get error message associated with result \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string if there is an error associated with the \fIresult\fP parameter, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_result_error_field ( $result,  $fieldcode)"
+Returns an individual field of an error report\&. \fBresource $result \fP \fBA\fP PostgreSQL query result resource from a previously executed statement\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fieldcode\fP 
+.RE
+.PP
+Possible \fIfieldcode\fP values are: \fBPGSQL_DIAG_SEVERITY\fP, \fBPGSQL_DIAG_SQLSTATE\fP, \fBPGSQL_DIAG_MESSAGE_PRIMARY\fP, \fBPGSQL_DIAG_MESSAGE_DETAIL\fP, \fBPGSQL_DIAG_MESSAGE_HINT\fP, \fBPGSQL_DIAG_STATEMENT_POSITION\fP, \fBPGSQL_DIAG_INTERNAL_POSITION\fP (PostgreSQL 8\&.0+ only), \fBPGSQL_DIAG_INTERNAL_QUERY\fP (PostgreSQL 8\&.0+ only), \fBPGSQL_DIAG_CONTEXT\fP, \fBPGSQL_DIAG_SOURCE_FILE\fP, \fBPGSQL_DIAG_SOURCE_LINE\fP or \fBPGSQL_DIAG_SOURCE_FUNCTION\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|null|false \fBA\fP string containing the contents of the error field, \fBNULL\fP if the field does not exist or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "pg_result_seek ( $result,  $offset)"
+Set internal row offset in result resource \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP 
+.RE
+.PP
+Row to move the internal offset to in the \fIresult\fP resource\&. Rows are numbered starting from zero\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_result_status ( $result,  $type = \fC\fBPGSQL_STATUS_LONG\fP\fP)"
+Get status of query result \fBresource $result \fP PostgreSQL query result resource, returned by \fBpg_query\fP, \fBpg_query_params\fP or \fBpg_execute\fP (among others)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP [optional] 
+.RE
+.PP
+Either \fBPGSQL_STATUS_LONG\fP to return the numeric status of the \fIresult\fP, or \fBPGSQL_STATUS_STRING\fP to return the command tag of the \fIresult\fP\&. If not specified, \fBPGSQL_STATUS_LONG\fP is the default\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed Possible return values are \fBPGSQL_EMPTY_QUERY\fP, \fBPGSQL_COMMAND_OK\fP, \fBPGSQL_TUPLES_OK\fP, \fBPGSQL_COPY_OUT\fP, \fBPGSQL_COPY_IN\fP, \fBPGSQL_BAD_RESPONSE\fP, \fBPGSQL_NONFATAL_ERROR\fP and \fBPGSQL_FATAL_ERROR\fP if \fBPGSQL_STATUS_LONG\fP is specified\&. Otherwise, a string containing the PostgreSQL command tag is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_select ( $connection,  $table_name, array $assoc_array,  $options = \fC\fBPGSQL_DML_EXEC\fP\fP,  $result_type = \fC\fBPGSQL_ASSOC\fP\fP)"
+Select records \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+Name of the table from which to select rows\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$assoc_array\fP 
+.RE
+.PP
+An array whose keys are field names in the table \fItable_name\fP, and whose values are the conditions that a row must meet to be retrieved\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+Any number of \fBPGSQL_CONV_FORCE_NULL\fP, \fBPGSQL_DML_NO_CONV\fP, \fBPGSQL_DML_EXEC\fP, \fBPGSQL_DML_ASYNC\fP or \fBPGSQL_DML_STRING\fP combined\&. If \fBPGSQL_DML_STRING\fP is part of the \fIoptions\fP then query string is returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_type\fP [optional] 
+.RE
+.PP
+An optional parameter that controls how the returned array is indexed\&. \fIresult_type\fP is a constant and can take the following values: \fBPGSQL_ASSOC\fP, \fBPGSQL_NUM\fP and \fBPGSQL_BOTH\fP\&. Using \fBPGSQL_NUM\fP, \fBpg_fetch_array\fP will return an array with numerical indices, using \fBPGSQL_ASSOC\fP it will return only associative indices while \fBPGSQL_BOTH\fP, the default, will return both numerical and associative indices\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed \fBTRUE\fP on success or \fBFALSE\fP on failure\&. Returns string if \fBPGSQL_DML_STRING\fP is passed via \fIoptions\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_send_execute ( $connection,  $stmtname, array $params)"
+Sends a request to execute a prepared statement with given parameters, without waiting for the result(s)\&. \fBresource $connection \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$stmtname\fP 
+.RE
+.PP
+The name of the prepared statement to execute\&. if '' is specified, then the unnamed statement is executed\&. The name must have been previously prepared using \fBpg_prepare\fP, \fBpg_send_prepare\fP or a PREPARE SQL command\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$params\fP 
+.RE
+.PP
+An array of parameter values to substitute for the $1, $2, etc\&. placeholders in the original prepared query string\&. The number of elements in the array must match the number of placeholders\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success, \fBFALSE\fP on failure\&. Use \fBpg_get_result\fP to determine the query result\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "pg_send_prepare ( $connection,  $stmtname,  $query)"
+Sends a request to create a prepared statement with the given parameters, without waiting for completion\&. \fBresource $connection \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$stmtname\fP 
+.RE
+.PP
+The name to give the prepared statement\&. Must be unique per-connection\&. If '' is specified, then an unnamed statement is created, overwriting any previously defined unnamed statement\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$query\fP 
+.RE
+.PP
+The parameterized SQL statement\&. Must contain only a single statement\&. (multiple statements separated by semi-colons are not allowed\&.) If any parameters are used, they are referred to as $1, $2, etc\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success, \fBFALSE\fP on failure\&. Use \fBpg_get_result\fP to determine the query result\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "pg_send_query ( $connection,  $query)"
+Sends asynchronous query \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$query\fP 
+.RE
+.PP
+The SQL statement or statements to be executed\&. 
+.PP
+Data inside the query should be properly escaped\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&.
+.RE
+.PP
+.PP
+Use \fBpg_get_result\fP to determine the query result\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_send_query_params ( $connection,  $query, array $params)"
+Submits a command and separate parameters to the server without waiting for the result(s)\&. \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$query\fP 
+.RE
+.PP
+The parameterized SQL statement\&. Must contain only a single statement\&. (multiple statements separated by semi-colons are not allowed\&.) If any parameters are used, they are referred to as $1, $2, etc\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$params\fP 
+.RE
+.PP
+An array of parameter values to substitute for the $1, $2, etc\&. placeholders in the original prepared query string\&. The number of elements in the array must match the number of placeholders\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&.
+.RE
+.PP
+.PP
+Use \fBpg_get_result\fP to determine the query result\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "pg_set_client_encoding ( $connection = \fC\fBnull\fP\fP,  $encoding)"
+Set the client encoding \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP 
+.RE
+.PP
+The required client encoding\&. One of SQL_ASCII, EUC_JP, EUC_CN, EUC_KR, EUC_TW, UNICODE, MULE_INTERNAL, LATINX (X=1\&.\&.\&.9), KOI8, WIN, ALT, SJIS, BIG5 or WIN1250\&. 
+.PP
+The exact list of available encodings depends on your PostgreSQL version, so check your PostgreSQL manual for a more specific list\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int 0 on success or -1 on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_set_error_verbosity ( $connection = \fC\fBnull\fP\fP,  $verbosity)"
+Determines the verbosity of messages returned by \fBpg_last_error\fP 
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 and \fBpg_result_error\fP\&. \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$verbosity\fP 
+.RE
+.PP
+The required verbosity: \fBPGSQL_ERRORS_TERSE\fP, \fBPGSQL_ERRORS_DEFAULT\fP or \fBPGSQL_ERRORS_VERBOSE\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The previous verbosity level: \fBPGSQL_ERRORS_TERSE\fP, \fBPGSQL_ERRORS_DEFAULT\fP or \fBPGSQL_ERRORS_VERBOSE\fP\&. 
+.RE
+.PP
+
+.SS "pg_setclientencoding ( $connection,  $encoding)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection\fP [optional] 
+.br
+\fI$encoding\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "pg_socket ( $connection)"
+Get a read only handle to the socket underlying a PostgreSQL connection \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false \fBA\fP socket resource on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.6 
+.RE
+.PP
+
+.SS "pg_trace ( $pathname,  $mode = \fC'w'\fP,  $connection = \fC\fBnull\fP\fP)"
+Enable tracing a PostgreSQL connection \fBstring $pathname \fP The full path and file name of the file in which to write the trace log\&. Same as in \fBfopen\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+An optional file access mode, same as for \fBfopen\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.br
+\fI$connection\fP [optional] 
+.RE
+.PP
+PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_transaction_status ( $connection)"
+Returns the current in-transaction status of the server\&. \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The status can be \fBPGSQL_TRANSACTION_IDLE\fP (currently idle), \fBPGSQL_TRANSACTION_ACTIVE\fP (a command is in progress), \fBPGSQL_TRANSACTION_INTRANS\fP (idle, in a valid transaction block), or \fBPGSQL_TRANSACTION_INERROR\fP (idle, in a failed transaction block)\&. \fBPGSQL_TRANSACTION_UNKNOWN\fP is reported if the connection is bad\&. \fBPGSQL_TRANSACTION_ACTIVE\fP is reported only when a query has been sent to the server and not yet completed\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "pg_tty ( $connection = \fC\fBnull\fP\fP)"
+Return the TTY name associated with the connection \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string containing the debug TTY of the \fIconnection\fP, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_unescape_bytea ( $data)"
+Unescape binary for bytea type \fBstring $data \fP \fBA\fP string containing PostgreSQL bytea data to be converted into a PHP binary string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string containing the unescaped data\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_untrace ( $connection = \fC\fBnull\fP\fP)"
+Disable tracing of a PostgreSQL connection \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Always returns \fBTRUE\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_update ( $connection,  $table_name, array $data, array $condition,  $options = \fC\fBPGSQL_DML_EXEC\fP\fP)"
+Update table \fBresource $connection \fP PostgreSQL database connection resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+Name of the table into which to update rows\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+An array whose keys are field names in the table \fItable_name\fP, and whose values are what matched rows are to be updated to\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$condition\fP 
+.RE
+.PP
+An array whose keys are field names in the table \fItable_name\fP, and whose values are the conditions that a row must meet to be updated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+Any number of \fBPGSQL_CONV_OPTS\fP, \fBPGSQL_DML_NO_CONV\fP, \fBPGSQL_DML_EXEC\fP or \fBPGSQL_DML_STRING\fP combined\&. If \fBPGSQL_DML_STRING\fP is part of the \fIoptions\fP then query string is returned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed \fBTRUE\fP on success or \fBFALSE\fP on failure\&. Returns string if \fBPGSQL_DML_STRING\fP is passed via \fIoptions\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pg_version ( $connection = \fC\fBnull\fP\fP)"
+Returns an array with client, protocol and server version (when available) \fBresource $connection [optional] \fP PostgreSQL database connection resource\&. When \fIconnection\fP is not present, the default connection is used\&. The default connection is the last connection made by \fBpg_connect\fP or \fBpg_pconnect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array with client, protocol and server keys and values (if available)\&. Returns \fBFALSE\fP on error or invalid connection\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const PGSQL_ASSOC 1"
+Passed to \fBpg_fetch_array\fP\&. Return an associative array of field names and values\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_BAD_RESPONSE 5"
+Returned by \fBpg_result_status\fP\&. The server's response was not understood\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_BOTH 3"
+Passed to \fBpg_fetch_array\fP\&. Return an array of field values that is both numerically indexed (by field number) and associated (by field name)\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_COMMAND_OK 1"
+Returned by \fBpg_result_status\fP\&. Successful completion of a command returning no data\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_CONNECT_ASYNC = 4"
+
+.SS "const PGSQL_CONNECT_FORCE_NEW 2"
+Passed to \fBpg_connect\fP to force the creation of a new connection, rather than re-using an existing identical connection\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_CONNECTION_AUTH_OK = 5"
+
+.SS "const PGSQL_CONNECTION_AWAITING_RESPONSE = 4"
+
+.SS "const PGSQL_CONNECTION_BAD 1"
+Returned by \fBpg_connection_status\fP indicating that the database connection is in an invalid state\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_CONNECTION_MADE = 3"
+
+.SS "const PGSQL_CONNECTION_OK 0"
+Returned by \fBpg_connection_status\fP indicating that the database connection is in a valid state\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_CONNECTION_SETENV = 6"
+
+.SS "const PGSQL_CONNECTION_STARTED = 2"
+
+.SS "const PGSQL_CONV_FORCE_NULL 4"
+Passed to \fBpg_convert\fP\&. Use SQL NULL in place of an empty string\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_CONV_IGNORE_DEFAULT 2"
+Passed to \fBpg_convert\fP\&. Ignore default values in the table during conversion\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_CONV_IGNORE_NOT_NULL 8"
+Passed to \fBpg_convert\fP\&. Ignore conversion of \fBNULL\fP into SQL NOT NULL columns\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_COPY_IN 4"
+Returned by \fBpg_result_status\fP\&. Copy In (to server) data transfer started\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_COPY_OUT 3"
+Returned by \fBpg_result_status\fP\&. Copy Out (from server) data transfer started\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_DIAG_CONTEXT 87"
+Passed to \fBpg_result_error_field\fP\&. An indication of the context in which the error occurred\&. Presently this includes a call stack traceback of active procedural language functions and internally-generated queries\&. The trace is one entry per line, most recent first\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_DIAG_INTERNAL_POSITION 112"
+Passed to \fBpg_result_error_field\fP\&. This is defined the same as the \fBPG_DIAG_STATEMENT_POSITION\fP field, but it is used when the cursor position refers to an internally generated command rather than the one submitted by the client\&. The \fBPG_DIAG_INTERNAL_QUERY\fP field will always appear when this field appears\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_DIAG_INTERNAL_QUERY 113"
+Passed to \fBpg_result_error_field\fP\&. The text of a failed internally-generated command\&. This could be, for example, a SQL query issued by a PL/pgSQL function\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_DIAG_MESSAGE_DETAIL 68"
+Passed to \fBpg_result_error_field\fP\&. Detail: an optional secondary error message carrying more detail about the problem\&. May run to multiple lines\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_DIAG_MESSAGE_HINT 72"
+Passed to \fBpg_result_error_field\fP\&. Hint: an optional suggestion what to do about the problem\&. This is intended to differ from detail in that it offers advice (potentially inappropriate) rather than hard facts\&. May run to multiple lines\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_DIAG_MESSAGE_PRIMARY 77"
+Passed to \fBpg_result_error_field\fP\&. The primary human-readable error message (typically one line)\&. Always present\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_DIAG_SEVERITY 83"
+Passed to \fBpg_result_error_field\fP\&. The severity; the field contents are ERROR, FATAL, or PANIC (in an error message), or WARNING, NOTICE, DEBUG, INFO, or LOG (in a notice message), or a localized translation of one of these\&. Always present\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_DIAG_SOURCE_FILE 70"
+Passed to \fBpg_result_error_field\fP\&. The file name of the PostgreSQL source-code location where the error was reported\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_DIAG_SOURCE_FUNCTION 82"
+Passed to \fBpg_result_error_field\fP\&. The name of the PostgreSQL source-code function reporting the error\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_DIAG_SOURCE_LINE 76"
+Passed to \fBpg_result_error_field\fP\&. The line number of the PostgreSQL source-code location where the error was reported\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_DIAG_SQLSTATE 67"
+Passed to \fBpg_result_error_field\fP\&. The SQLSTATE code for the error\&. The SQLSTATE code identifies the type of error that has occurred; it can be used by front-end applications to perform specific operations (such as error handling) in response to a particular database error\&. This field is not localizable, and is always present\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_DIAG_STATEMENT_POSITION 80"
+Passed to \fBpg_result_error_field\fP\&. \fBA\fP string containing a decimal integer indicating an error cursor position as an index into the original statement string\&. The first character has index 1, and positions are measured in characters not bytes\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_DML_ASYNC 1024"
+
+.SS "const PGSQL_DML_ESCAPE = 4096"
+
+.SS "const PGSQL_DML_EXEC 512"
+
+.SS "const PGSQL_DML_NO_CONV 256"
+
+.SS "const PGSQL_DML_STRING 2048"
+
+.SS "const PGSQL_EMPTY_QUERY 0"
+Returned by \fBpg_result_status\fP\&. The string sent to the server was empty\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_ERRORS_DEFAULT 1"
+Passed to \fBpg_set_error_verbosity\fP\&. The default mode produces messages that include the above plus any detail, hint, or context fields (these may span multiple lines)\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_ERRORS_TERSE 0"
+Passed to \fBpg_set_error_verbosity\fP\&. Specified that returned messages include severity, primary text, and position only; this will normally fit on a single line\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_ERRORS_VERBOSE 2"
+Passed to \fBpg_set_error_verbosity\fP\&. The verbose mode includes all available fields\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_FATAL_ERROR 7"
+Returned by \fBpg_result_status\fP\&. \fBA\fP fatal error occurred\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_LIBPQ_VERSION '9\&.1\&.10'"
+
+.SS "const PGSQL_LIBPQ_VERSION_STR 'PostgreSQL 9\&.1\&.10 on x86_64\-unknown\-linux\-gnu, compiled by gcc (Ubuntu/Linaro 4\&.8\&.1\-10ubuntu7) 4\&.8\&.1, 64\-bit'"
+
+.SS "const PGSQL_NONFATAL_ERROR 6"
+Returned by \fBpg_result_status\fP\&. \fBA\fP nonfatal error (a notice or warning) occurred\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_NOTICE_ALL 2"
+\fB7\&.1 \fP
+.SS "const PGSQL_NOTICE_CLEAR 3"
+\fB7\&.1 \fP
+.SS "const PGSQL_NOTICE_LAST 1"
+\fB7\&.1 \fP
+.SS "const PGSQL_NUM 2"
+Passed to \fBpg_fetch_array\fP\&. Return a numerically indexed array of field numbers and values\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_POLLING_ACTIVE = 4"
+
+.SS "const PGSQL_POLLING_FAILED = 0"
+
+.SS "const PGSQL_POLLING_OK = 3"
+
+.SS "const PGSQL_POLLING_READING = 1"
+
+.SS "const PGSQL_POLLING_WRITING = 2"
+
+.SS "const PGSQL_SEEK_CUR 1"
+Passed to \fBpg_lo_seek\fP\&. Seek operation is to begin from the current position\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_SEEK_END 2"
+Passed to \fBpg_lo_seek\fP\&. Seek operation is to begin from the end of the object\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_SEEK_SET 0"
+Passed to \fBpg_lo_seek\fP\&. Seek operation is to begin from the start of the object\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_STATUS_LONG 1"
+Passed to \fBpg_result_status\fP\&. Indicates that numerical result code is desired\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_STATUS_STRING 2"
+Passed to \fBpg_result_status\fP\&. Indicates that textual result command tag is desired\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_TRANSACTION_ACTIVE 1"
+Returned by \fBpg_transaction_status\fP\&. \fBA\fP command is in progress on the connection\&. \fBA\fP query has been sent via the connection and not yet completed\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_TRANSACTION_IDLE 0"
+Returned by \fBpg_transaction_status\fP\&. Connection is currently idle, not in a transaction\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_TRANSACTION_INERROR 3"
+Returned by \fBpg_transaction_status\fP\&. The connection is idle, in a failed transaction block\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_TRANSACTION_INTRANS 2"
+Returned by \fBpg_transaction_status\fP\&. The connection is idle, in a transaction block\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_TRANSACTION_UNKNOWN 4"
+Returned by \fBpg_transaction_status\fP\&. The connection is bad\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SS "const PGSQL_TUPLES_OK 2"
+Returned by \fBpg_result_status\fP\&. Successful completion of a command returning data (such as a SELECT or SHOW)\&. \fBhttps://php\&.net/manual/en/pgsql\&.constants\&.php\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

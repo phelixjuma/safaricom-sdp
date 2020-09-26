@@ -1,0 +1,662 @@
+\hypertarget{filter_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/filter/filter.php File Reference}
+\label{filter_8php}\index{vendor/jetbrains/phpstorm-\/stubs/filter/filter.php@{vendor/jetbrains/phpstorm-\/stubs/filter/filter.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{filter_8php_ac6f373e28c22182fe9ce9f7952ea3e9a}{filter\+\_\+input}} (\$type, \$variable\+\_\+name, \$filter=\mbox{\hyperlink{filter_8php_a8c045287fe11b26bc17872944dcefe9b}{F\+I\+L\+T\+E\+R\+\_\+\+D\+E\+F\+A\+U\+LT}}, \$options=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{filter_8php_a2824f9379aff662de082c1e4108a14c0}{filter\+\_\+var}} (\$variable, \$filter=\mbox{\hyperlink{filter_8php_a8c045287fe11b26bc17872944dcefe9b}{F\+I\+L\+T\+E\+R\+\_\+\+D\+E\+F\+A\+U\+LT}}, \$options=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{filter_8php_a080ff208188891a146512b47d9058614}{filter\+\_\+input\+\_\+array}} (\$type, \$definition=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$add\+\_\+empty=\mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}})
+\item 
+\mbox{\hyperlink{filter_8php_a079d5d4943ce48ae999d74fb48fe5f98}{filter\+\_\+var\+\_\+array}} (array \$data, \$definition=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$add\+\_\+empty=\mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}})
+\item 
+\mbox{\hyperlink{filter_8php_a29ecd4e2bab079a451cf8c345242e25e}{filter\+\_\+list}} ()
+\item 
+\mbox{\hyperlink{filter_8php_abcef8ccf5bb2d5de27fc393d9099355b}{filter\+\_\+has\+\_\+var}} (\$type, \$variable\+\_\+name)
+\item 
+\mbox{\hyperlink{filter_8php_a6df5a7ed9aa4bfbe4d247682f76c980f}{filter\+\_\+id}} (\$filtername)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{filter_8php_aed02ed7d9ec469b2ef009b70466ef803}{I\+N\+P\+U\+T\+\_\+\+P\+O\+ST}} 0
+\item 
+const \mbox{\hyperlink{filter_8php_a00184241ab30fb176599cc4152170680}{I\+N\+P\+U\+T\+\_\+\+G\+ET}} 1
+\item 
+const \mbox{\hyperlink{filter_8php_a7ee1374d179018ef3ed48182ed581928}{I\+N\+P\+U\+T\+\_\+\+C\+O\+O\+K\+IE}} 2
+\item 
+const \mbox{\hyperlink{filter_8php_a175897190ab3198e55648e30120fdfea}{I\+N\+P\+U\+T\+\_\+\+E\+NV}} 4
+\item 
+const \mbox{\hyperlink{filter_8php_a7ed96aceae95ec239f8a3dc0e82fefd1}{I\+N\+P\+U\+T\+\_\+\+S\+E\+R\+V\+ER}} 5
+\item 
+const \mbox{\hyperlink{filter_8php_afde083a1a55e4ac61ac47b6983d25563}{I\+N\+P\+U\+T\+\_\+\+S\+E\+S\+S\+I\+ON}} 6
+\item 
+const \mbox{\hyperlink{filter_8php_a5ac745200a37a99e441579b18956d499}{I\+N\+P\+U\+T\+\_\+\+R\+E\+Q\+U\+E\+ST}} 99
+\item 
+const \mbox{\hyperlink{filter_8php_a5ebdebf29b00bb054ed6ecf89d5fc6cc}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+NE}} 0
+\item 
+const \mbox{\hyperlink{filter_8php_a51997e63863baaa76c7d121ca800b2cc}{F\+I\+L\+T\+E\+R\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+S\+C\+A\+L\+AR}} 33554432
+\item 
+const \mbox{\hyperlink{filter_8php_a4769258fddad4f6e2fb763f793c6f65a}{F\+I\+L\+T\+E\+R\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+A\+R\+R\+AY}} 16777216
+\item 
+const \mbox{\hyperlink{filter_8php_a683b301b489fed0d9866a588c5c174e9}{F\+I\+L\+T\+E\+R\+\_\+\+F\+O\+R\+C\+E\+\_\+\+A\+R\+R\+AY}} 67108864
+\item 
+const \mbox{\hyperlink{filter_8php_a9bfe66bd2be720a01134a03d9dce22d2}{F\+I\+L\+T\+E\+R\+\_\+\+N\+U\+L\+L\+\_\+\+O\+N\+\_\+\+F\+A\+I\+L\+U\+RE}} 134217728
+\item 
+const \mbox{\hyperlink{filter_8php_a478aa6b077d9647bf84c8cdbdf2b31ff}{F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+I\+NT}} 257
+\item 
+const \mbox{\hyperlink{filter_8php_a96d532ed851a74ba4aedc5442ecb04ff}{F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+B\+O\+O\+L\+E\+AN}} 258
+\item 
+const \mbox{\hyperlink{filter_8php_a149fd02ee6e966d3149b5432be21af7b}{F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+F\+L\+O\+AT}} 259
+\item 
+const \mbox{\hyperlink{filter_8php_ad2def5a87e51f3d08e95485e64da6cbe}{F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+R\+E\+G\+E\+XP}} 272
+\item 
+const \mbox{\hyperlink{filter_8php_a1d17a4c308d9822b80b69f67e307f847}{F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+D\+O\+M\+A\+IN}} 277
+\item 
+const \mbox{\hyperlink{filter_8php_a88123136b92036e777bdbadc1c723e30}{F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+U\+RL}} 273
+\item 
+const \mbox{\hyperlink{filter_8php_ab50b38dce1194796d3e1b95592217535}{F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+E\+M\+A\+IL}} 274
+\item 
+const \mbox{\hyperlink{filter_8php_abc6eea909a7a60831a539210f2681976}{F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+IP}} 275
+\item 
+const \mbox{\hyperlink{filter_8php_afe7e66b50cc49489f2393ec788bfbcf0}{F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+M\+AC}} 276
+\item 
+const \mbox{\hyperlink{filter_8php_a8c045287fe11b26bc17872944dcefe9b}{F\+I\+L\+T\+E\+R\+\_\+\+D\+E\+F\+A\+U\+LT}} 516
+\item 
+const \mbox{\hyperlink{filter_8php_ab5a5d348fa1383027fef15ee95e4c2f8}{F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+A\+D\+D\+\_\+\+S\+L\+A\+S\+H\+ES}} 523
+\item 
+const \mbox{\hyperlink{filter_8php_a903b0da2668d7e8e194fb62eb5856f86}{F\+I\+L\+T\+E\+R\+\_\+\+U\+N\+S\+A\+F\+E\+\_\+\+R\+AW}} 516
+\item 
+const \mbox{\hyperlink{filter_8php_a0b036997e3b96080df546224f98f55a2}{F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+S\+T\+R\+I\+NG}} 513
+\item 
+const \mbox{\hyperlink{filter_8php_aaaf8201095dc77bcd0c6af7294203602}{F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+S\+T\+R\+I\+P\+P\+ED}} 513
+\item 
+const \mbox{\hyperlink{filter_8php_a2c48afb329050fd6a51943208a751751}{F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+E\+N\+C\+O\+D\+ED}} 514
+\item 
+const \mbox{\hyperlink{filter_8php_abae1cd101517c3a65bbab2eee79cdcc2}{F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+S\+P\+E\+C\+I\+A\+L\+\_\+\+C\+H\+A\+RS}} 515
+\item 
+const \mbox{\hyperlink{filter_8php_affcf93f6a4285e7d3fcf10f665b9053f}{F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+F\+U\+L\+L\+\_\+\+S\+P\+E\+C\+I\+A\+L\+\_\+\+C\+H\+A\+RS}} 522
+\item 
+const \mbox{\hyperlink{filter_8php_a98a854bb7800a3fb740f98ae8ef8e092}{F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+E\+M\+A\+IL}} 517
+\item 
+const \mbox{\hyperlink{filter_8php_a8a35a5d6bb8b2aeaf142a2aaacdb2ee9}{F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+U\+RL}} 518
+\item 
+const \mbox{\hyperlink{filter_8php_a5b9ed1c5e5548efd776a36f1e18731dd}{F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+I\+NT}} 519
+\item 
+const \mbox{\hyperlink{filter_8php_aa489fdd2298c32ae30dd12b77f2eda9f}{F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+F\+L\+O\+AT}} 520
+\item 
+const \mbox{\hyperlink{filter_8php_ad2102fa3cdc0067f8278037fb5af71c6}{F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+Q\+U\+O\+T\+ES}} 521
+\item 
+const \mbox{\hyperlink{filter_8php_ab374fc39d50d85f58ee07a3b9504b7dd}{F\+I\+L\+T\+E\+R\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} 1024
+\item 
+const \mbox{\hyperlink{filter_8php_a94e141b5a49005bdf5931e58c0ebc51b}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+O\+C\+T\+AL}} 1
+\item 
+const \mbox{\hyperlink{filter_8php_a524bc67d8f997448e44b076602be7146}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+H\+EX}} 2
+\item 
+const \mbox{\hyperlink{filter_8php_ab53b46c29fd372ccbdb3e1bcfa1cae57}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+R\+I\+P\+\_\+\+L\+OW}} 4
+\item 
+const \mbox{\hyperlink{filter_8php_a56404018231604159dd284e757306173}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+R\+I\+P\+\_\+\+H\+I\+GH}} 8
+\item 
+const \mbox{\hyperlink{filter_8php_a123df16ef2ebedc172ba1cb7a42dc2b4}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+R\+I\+P\+\_\+\+B\+A\+C\+K\+T\+I\+CK}} 512
+\item 
+const \mbox{\hyperlink{filter_8php_ae25f167a8360dc3a37a21aad45618fb3}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+L\+OW}} 16
+\item 
+const \mbox{\hyperlink{filter_8php_a0290a8a40a9ffa13cb7df54251014811}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+H\+I\+GH}} 32
+\item 
+const \mbox{\hyperlink{filter_8php_a8430d5e2eecf6b9e8c4106a9158f6b7b}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+A\+MP}} 64
+\item 
+const \mbox{\hyperlink{filter_8php_ab121a6ef824b278aa86b586cb77bf689}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+Q\+U\+O\+T\+ES}} 128
+\item 
+const \mbox{\hyperlink{filter_8php_a7301954ebce40b77a62f5b082980109d}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+N\+U\+LL}} 256
+\item 
+const \mbox{\hyperlink{filter_8php_a4207657f3529afa83490b456ca7facfc}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+F\+R\+A\+C\+T\+I\+ON}} 4096
+\item 
+const \mbox{\hyperlink{filter_8php_a5db84151fae9eade8ee4d1d4bff4ba01}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+T\+H\+O\+U\+S\+A\+ND}} 8192
+\item 
+const \mbox{\hyperlink{filter_8php_aeb8934fab0ebd35db0854c4dbd9af345}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+S\+C\+I\+E\+N\+T\+I\+F\+IC}} 16384
+\item 
+const \mbox{\hyperlink{filter_8php_a693493a50bb5e44af8ebf3a469e6d1ce}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+S\+C\+H\+E\+M\+E\+\_\+\+R\+E\+Q\+U\+I\+R\+ED}} 65536
+\item 
+const \mbox{\hyperlink{filter_8php_a9bb062933f690512c6fd385c5ca30a3b}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+H\+O\+S\+T\+\_\+\+R\+E\+Q\+U\+I\+R\+ED}} 131072
+\item 
+const \mbox{\hyperlink{filter_8php_a77e754245981dbae2fe6562a269dcc94}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+P\+A\+T\+H\+\_\+\+R\+E\+Q\+U\+I\+R\+ED}} 262144
+\item 
+const \mbox{\hyperlink{filter_8php_a099c87318159827477e9c4ba474b34b6}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+R\+E\+Q\+U\+I\+R\+ED}} 524288
+\item 
+const \mbox{\hyperlink{filter_8php_a654c570f57a159f9ab21530ff59d4c70}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+I\+P\+V4}} 1048576
+\item 
+const \mbox{\hyperlink{filter_8php_ab940c9d7680a26e510640e6d6e2d75e3}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+I\+P\+V6}} 2097152
+\item 
+const \mbox{\hyperlink{filter_8php_a3e7cdad46b24987b7c525c7f373f1c08}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+\_\+\+R\+E\+S\+\_\+\+R\+A\+N\+GE}} 4194304
+\item 
+const \mbox{\hyperlink{filter_8php_aa79b901c5967e04129613ab05a894f0c}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+\_\+\+P\+R\+I\+V\+\_\+\+R\+A\+N\+GE}} 8388608
+\item 
+const \mbox{\hyperlink{filter_8php_a9548899abc40b9831e538060d0404f20}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+H\+O\+S\+T\+N\+A\+ME}} 1048576
+\item 
+const \mbox{\hyperlink{filter_8php_a442fc0039a70e2f9771aecacaa4fe3da}{F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+E\+M\+A\+I\+L\+\_\+\+U\+N\+I\+C\+O\+DE}} 1048576
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{filter_8php_abcef8ccf5bb2d5de27fc393d9099355b}\label{filter_8php_abcef8ccf5bb2d5de27fc393d9099355b}} 
+\index{filter.php@{filter.php}!filter\_has\_var@{filter\_has\_var}}
+\index{filter\_has\_var@{filter\_has\_var}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{filter\_has\_var()}{filter\_has\_var()}}
+{\footnotesize\ttfamily filter\+\_\+has\+\_\+var (\begin{DoxyParamCaption}\item[{}]{\$type,  }\item[{}]{\$variable\+\_\+name }\end{DoxyParamCaption})}
+
+Checks if variable of specified type exists \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$type }} One of {\bfseries{I\+N\+P\+U\+T\+\_\+\+G\+ET}}, {\bfseries{I\+N\+P\+U\+T\+\_\+\+P\+O\+ST}}, {\bfseries{I\+N\+P\+U\+T\+\_\+\+C\+O\+O\+K\+IE}}, {\bfseries{I\+N\+P\+U\+T\+\_\+\+S\+E\+R\+V\+ER}}, or {\bfseries{I\+N\+P\+U\+T\+\_\+\+E\+NV}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$variable\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+Name of a variable to check. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{filter_8php_a6df5a7ed9aa4bfbe4d247682f76c980f}\label{filter_8php_a6df5a7ed9aa4bfbe4d247682f76c980f}} 
+\index{filter.php@{filter.php}!filter\_id@{filter\_id}}
+\index{filter\_id@{filter\_id}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{filter\_id()}{filter\_id()}}
+{\footnotesize\ttfamily filter\+\_\+id (\begin{DoxyParamCaption}\item[{}]{\$filtername }\end{DoxyParamCaption})}
+
+Returns the filter ID belonging to a named filter \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filtername }} Name of a filter to get. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false ID of a filter on success or {\bfseries{F\+A\+L\+SE}} if filter doesn\textquotesingle{}t exist. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{filter_8php_ac6f373e28c22182fe9ce9f7952ea3e9a}\label{filter_8php_ac6f373e28c22182fe9ce9f7952ea3e9a}} 
+\index{filter.php@{filter.php}!filter\_input@{filter\_input}}
+\index{filter\_input@{filter\_input}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{filter\_input()}{filter\_input()}}
+{\footnotesize\ttfamily filter\+\_\+input (\begin{DoxyParamCaption}\item[{}]{\$type,  }\item[{}]{\$variable\+\_\+name,  }\item[{}]{\$filter = {\ttfamily \mbox{\hyperlink{filter_8php_a8c045287fe11b26bc17872944dcefe9b}{F\+I\+L\+T\+E\+R\+\_\+\+D\+E\+F\+A\+U\+LT}}},  }\item[{}]{\$options = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Gets a specific external variable by name and optionally filters it \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$type }} One of {\bfseries{I\+N\+P\+U\+T\+\_\+\+G\+ET}}, {\bfseries{I\+N\+P\+U\+T\+\_\+\+P\+O\+ST}}, {\bfseries{I\+N\+P\+U\+T\+\_\+\+C\+O\+O\+K\+IE}}, {\bfseries{I\+N\+P\+U\+T\+\_\+\+S\+E\+R\+V\+ER}}, or {\bfseries{I\+N\+P\+U\+T\+\_\+\+E\+NV}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$variable\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+Name of a variable to get. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$filter} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The ID of the filter to apply. The manual page lists the available filters. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Associative array of options or bitwise disjunction of flags. If filter accepts options, flags can be provided in \char`\"{}flags\char`\"{} field of array. 
+
+\begin{DoxyReturn}{Returns}
+mixed Value of the requested variable on success, {\bfseries{F\+A\+L\+SE}} if the filter fails, or {\bfseries{N\+U\+LL}} if the {\itshape variable\+\_\+name} variable is not set. If the flag {\bfseries{F\+I\+L\+T\+E\+R\+\_\+\+N\+U\+L\+L\+\_\+\+O\+N\+\_\+\+F\+A\+I\+L\+U\+RE}} is used, it returns {\bfseries{F\+A\+L\+SE}} if the variable is not set and {\bfseries{N\+U\+LL}} if the filter fails. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{filter_8php_a080ff208188891a146512b47d9058614}\label{filter_8php_a080ff208188891a146512b47d9058614}} 
+\index{filter.php@{filter.php}!filter\_input\_array@{filter\_input\_array}}
+\index{filter\_input\_array@{filter\_input\_array}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{filter\_input\_array()}{filter\_input\_array()}}
+{\footnotesize\ttfamily filter\+\_\+input\+\_\+array (\begin{DoxyParamCaption}\item[{}]{\$type,  }\item[{}]{\$definition = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$add\+\_\+empty = {\ttfamily \mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}} }\end{DoxyParamCaption})}
+
+Gets external variables and optionally filters them \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$type }} One of {\bfseries{I\+N\+P\+U\+T\+\_\+\+G\+ET}}, {\bfseries{I\+N\+P\+U\+T\+\_\+\+P\+O\+ST}}, {\bfseries{I\+N\+P\+U\+T\+\_\+\+C\+O\+O\+K\+IE}}, {\bfseries{I\+N\+P\+U\+T\+\_\+\+S\+E\+R\+V\+ER}}, or {\bfseries{I\+N\+P\+U\+T\+\_\+\+E\+NV}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$definition} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+An array defining the arguments. \mbox{\hyperlink{class_a}{A}} valid key is a string containing a variable name and a valid value is either a filter type, or an array optionally specifying the filter, flags and options. If the value is an array, valid keys are filter which specifies the filter type, flags which specifies any flags that apply to the filter, and options which specifies any options that apply to the filter. See the example below for a better understanding. 
+
+This parameter can be also an integer holding a filter constant. Then all values in the input array are filtered by this filter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$add\+\_\+empty} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Add missing keys as {\bfseries{N\+U\+LL}} to the return value. 
+
+\begin{DoxyReturn}{Returns}
+mixed An array containing the values of the requested variables on success, or {\bfseries{F\+A\+L\+SE}} on failure. An array value will be {\bfseries{F\+A\+L\+SE}} if the filter fails, or {\bfseries{N\+U\+LL}} if the variable is not set. Or if the flag {\bfseries{F\+I\+L\+T\+E\+R\+\_\+\+N\+U\+L\+L\+\_\+\+O\+N\+\_\+\+F\+A\+I\+L\+U\+RE}} is used, it returns {\bfseries{F\+A\+L\+SE}} if the variable is not set and {\bfseries{N\+U\+LL}} if the filter fails. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{filter_8php_a29ecd4e2bab079a451cf8c345242e25e}\label{filter_8php_a29ecd4e2bab079a451cf8c345242e25e}} 
+\index{filter.php@{filter.php}!filter\_list@{filter\_list}}
+\index{filter\_list@{filter\_list}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{filter\_list()}{filter\_list()}}
+{\footnotesize\ttfamily filter\+\_\+list (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a list of all supported filters \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array an array of names of all supported filters, empty array if there are no such filters. Indexes of this array are not filter I\+Ds, they can be obtained with {\bfseries{filter\+\_\+id}} from a name instead.  5.\+2 }}\mbox{\Hypertarget{filter_8php_a2824f9379aff662de082c1e4108a14c0}\label{filter_8php_a2824f9379aff662de082c1e4108a14c0}} 
+\index{filter.php@{filter.php}!filter\_var@{filter\_var}}
+\index{filter\_var@{filter\_var}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{filter\_var()}{filter\_var()}}
+{\footnotesize\ttfamily filter\+\_\+var (\begin{DoxyParamCaption}\item[{}]{\$variable,  }\item[{}]{\$filter = {\ttfamily \mbox{\hyperlink{filter_8php_a8c045287fe11b26bc17872944dcefe9b}{F\+I\+L\+T\+E\+R\+\_\+\+D\+E\+F\+A\+U\+LT}}},  }\item[{}]{\$options = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Filters a variable with a specified filter \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mixed \$variable }} Value to filter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$filter} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The ID of the filter to apply. The manual page lists the available filters. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Associative array of options or bitwise disjunction of flags. If filter accepts options, flags can be provided in \char`\"{}flags\char`\"{} field of array. For the \char`\"{}callback\char`\"{} filter, callable type should be passed. The callback must accept one argument, the value to be filtered, and return the value after filtering/sanitizing it. 
+
+{\ttfamily  // for filters that accept options, use this format \$options = array( \textquotesingle{}options\textquotesingle{} =$>$ array( \textquotesingle{}default\textquotesingle{} =$>$ 3, // value to return if the filter fails // other options here \textquotesingle{}min\+\_\+range\textquotesingle{} =$>$ 0 ), \textquotesingle{}flags\textquotesingle{} =$>$ F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+O\+C\+T\+AL, ); \$var = filter\+\_\+var(\textquotesingle{}0755\textquotesingle{}, F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+I\+NT, \$options); // for filter that only accept flags, you can pass them directly \$var = filter\+\_\+var(\textquotesingle{}oops\textquotesingle{}, F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+B\+O\+O\+L\+E\+AN, F\+I\+L\+T\+E\+R\+\_\+\+N\+U\+L\+L\+\_\+\+O\+N\+\_\+\+F\+A\+I\+L\+U\+RE); // for filter that only accept flags, you can also pass as an array \$var = filter\+\_\+var(\textquotesingle{}oops\textquotesingle{}, F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+B\+O\+O\+L\+E\+AN, array(\textquotesingle{}flags\textquotesingle{} =$>$ F\+I\+L\+T\+E\+R\+\_\+\+N\+U\+L\+L\+\_\+\+O\+N\+\_\+\+F\+A\+I\+L\+U\+RE)); // callback validate filter function foo(\$value) \{ // Expected format\+: Surname, Given\+Names if (strpos(\$value, \char`\"{}, \char`\"{}) === false) return false; list(\$surname, \$givennames) = explode(\char`\"{}, \char`\"{}, \$value, 2); \$empty = (empty(\$surname) $\vert$$\vert$ empty(\$givennames)); \$notstrings = (!is\+\_\+string(\$surname) $\vert$$\vert$ !is\+\_\+string(\$givennames)); if (\$empty $\vert$$\vert$ \$notstrings) \{ return false; \} else \{ return \$value; \} \} \$var = filter\+\_\+var(\textquotesingle{}Doe, Jane Sue\textquotesingle{}, F\+I\+L\+T\+E\+R\+\_\+\+C\+A\+L\+L\+B\+A\+CK, array(\textquotesingle{}options\textquotesingle{} =$>$ \textquotesingle{}foo\textquotesingle{})); } 
+
+\begin{DoxyReturn}{Returns}
+mixed the filtered data, or {\bfseries{F\+A\+L\+SE}} if the filter fails. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{filter_8php_a079d5d4943ce48ae999d74fb48fe5f98}\label{filter_8php_a079d5d4943ce48ae999d74fb48fe5f98}} 
+\index{filter.php@{filter.php}!filter\_var\_array@{filter\_var\_array}}
+\index{filter\_var\_array@{filter\_var\_array}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{filter\_var\_array()}{filter\_var\_array()}}
+{\footnotesize\ttfamily filter\+\_\+var\+\_\+array (\begin{DoxyParamCaption}\item[{array}]{\$data,  }\item[{}]{\$definition = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$add\+\_\+empty = {\ttfamily \mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}} }\end{DoxyParamCaption})}
+
+Gets multiple variables and optionally filters them \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array \$data }} An array with string keys containing the data to filter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$definition} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+An array defining the arguments. \mbox{\hyperlink{class_a}{A}} valid key is a string containing a variable name and a valid value is either a filter type, or an array optionally specifying the filter, flags and options. If the value is an array, valid keys are filter which specifies the filter type, flags which specifies any flags that apply to the filter, and options which specifies any options that apply to the filter. See the example below for a better understanding. 
+
+This parameter can be also an integer holding a filter constant. Then all values in the input array are filtered by this filter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$add\+\_\+empty} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Add missing keys as {\bfseries{N\+U\+LL}} to the return value. 
+
+\begin{DoxyReturn}{Returns}
+mixed An array containing the values of the requested variables on success, or {\bfseries{F\+A\+L\+SE}} on failure. An array value will be {\bfseries{F\+A\+L\+SE}} if the filter fails, or {\bfseries{N\+U\+LL}} if the variable is not set. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+2 
+\end{DoxySince}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{filter_8php_ab374fc39d50d85f58ee07a3b9504b7dd}\label{filter_8php_ab374fc39d50d85f58ee07a3b9504b7dd}} 
+\index{filter.php@{filter.php}!FILTER\_CALLBACK@{FILTER\_CALLBACK}}
+\index{FILTER\_CALLBACK@{FILTER\_CALLBACK}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_CALLBACK}{FILTER\_CALLBACK}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+C\+A\+L\+L\+B\+A\+CK 1024}
+
+ID of \char`\"{}callback\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a8c045287fe11b26bc17872944dcefe9b}\label{filter_8php_a8c045287fe11b26bc17872944dcefe9b}} 
+\index{filter.php@{filter.php}!FILTER\_DEFAULT@{FILTER\_DEFAULT}}
+\index{FILTER\_DEFAULT@{FILTER\_DEFAULT}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_DEFAULT}{FILTER\_DEFAULT}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+D\+E\+F\+A\+U\+LT 516}
+
+ID of default (\char`\"{}string\char`\"{}) filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a4207657f3529afa83490b456ca7facfc}\label{filter_8php_a4207657f3529afa83490b456ca7facfc}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_ALLOW\_FRACTION@{FILTER\_FLAG\_ALLOW\_FRACTION}}
+\index{FILTER\_FLAG\_ALLOW\_FRACTION@{FILTER\_FLAG\_ALLOW\_FRACTION}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_ALLOW\_FRACTION}{FILTER\_FLAG\_ALLOW\_FRACTION}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+F\+R\+A\+C\+T\+I\+ON 4096}
+
+Allow fractional part in \char`\"{}number\+\_\+float\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a524bc67d8f997448e44b076602be7146}\label{filter_8php_a524bc67d8f997448e44b076602be7146}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_ALLOW\_HEX@{FILTER\_FLAG\_ALLOW\_HEX}}
+\index{FILTER\_FLAG\_ALLOW\_HEX@{FILTER\_FLAG\_ALLOW\_HEX}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_ALLOW\_HEX}{FILTER\_FLAG\_ALLOW\_HEX}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+H\+EX 2}
+
+Allow hex notation (0x\mbox{[}0-\/9a-\/f\+A-\/F\mbox{]}+) in \char`\"{}int\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a94e141b5a49005bdf5931e58c0ebc51b}\label{filter_8php_a94e141b5a49005bdf5931e58c0ebc51b}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_ALLOW\_OCTAL@{FILTER\_FLAG\_ALLOW\_OCTAL}}
+\index{FILTER\_FLAG\_ALLOW\_OCTAL@{FILTER\_FLAG\_ALLOW\_OCTAL}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_ALLOW\_OCTAL}{FILTER\_FLAG\_ALLOW\_OCTAL}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+O\+C\+T\+AL 1}
+
+Allow octal notation (0\mbox{[}0-\/7\mbox{]}+) in \char`\"{}int\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_aeb8934fab0ebd35db0854c4dbd9af345}\label{filter_8php_aeb8934fab0ebd35db0854c4dbd9af345}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_ALLOW\_SCIENTIFIC@{FILTER\_FLAG\_ALLOW\_SCIENTIFIC}}
+\index{FILTER\_FLAG\_ALLOW\_SCIENTIFIC@{FILTER\_FLAG\_ALLOW\_SCIENTIFIC}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_ALLOW\_SCIENTIFIC}{FILTER\_FLAG\_ALLOW\_SCIENTIFIC}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+S\+C\+I\+E\+N\+T\+I\+F\+IC 16384}
+
+Allow scientific notation (e, \mbox{\hyperlink{interface_e}{E}}) in \char`\"{}number\+\_\+float\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a5db84151fae9eade8ee4d1d4bff4ba01}\label{filter_8php_a5db84151fae9eade8ee4d1d4bff4ba01}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_ALLOW\_THOUSAND@{FILTER\_FLAG\_ALLOW\_THOUSAND}}
+\index{FILTER\_FLAG\_ALLOW\_THOUSAND@{FILTER\_FLAG\_ALLOW\_THOUSAND}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_ALLOW\_THOUSAND}{FILTER\_FLAG\_ALLOW\_THOUSAND}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+A\+L\+L\+O\+W\+\_\+\+T\+H\+O\+U\+S\+A\+ND 8192}
+
+Allow thousand separator (,) in \char`\"{}number\+\_\+float\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a442fc0039a70e2f9771aecacaa4fe3da}\label{filter_8php_a442fc0039a70e2f9771aecacaa4fe3da}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_EMAIL\_UNICODE@{FILTER\_FLAG\_EMAIL\_UNICODE}}
+\index{FILTER\_FLAG\_EMAIL\_UNICODE@{FILTER\_FLAG\_EMAIL\_UNICODE}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_EMAIL\_UNICODE}{FILTER\_FLAG\_EMAIL\_UNICODE}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+E\+M\+A\+I\+L\+\_\+\+U\+N\+I\+C\+O\+DE 1048576}
+
+\mbox{\Hypertarget{filter_8php_a7301954ebce40b77a62f5b082980109d}\label{filter_8php_a7301954ebce40b77a62f5b082980109d}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_EMPTY\_STRING\_NULL@{FILTER\_FLAG\_EMPTY\_STRING\_NULL}}
+\index{FILTER\_FLAG\_EMPTY\_STRING\_NULL@{FILTER\_FLAG\_EMPTY\_STRING\_NULL}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_EMPTY\_STRING\_NULL}{FILTER\_FLAG\_EMPTY\_STRING\_NULL}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+N\+U\+LL 256}
+
+(No use for now.) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a8430d5e2eecf6b9e8c4106a9158f6b7b}\label{filter_8php_a8430d5e2eecf6b9e8c4106a9158f6b7b}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_ENCODE\_AMP@{FILTER\_FLAG\_ENCODE\_AMP}}
+\index{FILTER\_FLAG\_ENCODE\_AMP@{FILTER\_FLAG\_ENCODE\_AMP}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_ENCODE\_AMP}{FILTER\_FLAG\_ENCODE\_AMP}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+A\+MP 64}
+
+Encode \&\#38;\#38;. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a0290a8a40a9ffa13cb7df54251014811}\label{filter_8php_a0290a8a40a9ffa13cb7df54251014811}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_ENCODE\_HIGH@{FILTER\_FLAG\_ENCODE\_HIGH}}
+\index{FILTER\_FLAG\_ENCODE\_HIGH@{FILTER\_FLAG\_ENCODE\_HIGH}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_ENCODE\_HIGH}{FILTER\_FLAG\_ENCODE\_HIGH}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+H\+I\+GH 32}
+
+Encode characters with A\+S\+C\+II value greater than 127. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_ae25f167a8360dc3a37a21aad45618fb3}\label{filter_8php_ae25f167a8360dc3a37a21aad45618fb3}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_ENCODE\_LOW@{FILTER\_FLAG\_ENCODE\_LOW}}
+\index{FILTER\_FLAG\_ENCODE\_LOW@{FILTER\_FLAG\_ENCODE\_LOW}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_ENCODE\_LOW}{FILTER\_FLAG\_ENCODE\_LOW}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+L\+OW 16}
+
+Encode characters with A\+S\+C\+II value less than 32. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a9bb062933f690512c6fd385c5ca30a3b}\label{filter_8php_a9bb062933f690512c6fd385c5ca30a3b}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_HOST\_REQUIRED@{FILTER\_FLAG\_HOST\_REQUIRED}}
+\index{FILTER\_FLAG\_HOST\_REQUIRED@{FILTER\_FLAG\_HOST\_REQUIRED}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_HOST\_REQUIRED}{FILTER\_FLAG\_HOST\_REQUIRED}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+H\+O\+S\+T\+\_\+\+R\+E\+Q\+U\+I\+R\+ED 131072}
+
+Require host in \char`\"{}validate\+\_\+url\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{deprecated 39. }}\mbox{\Hypertarget{filter_8php_a9548899abc40b9831e538060d0404f20}\label{filter_8php_a9548899abc40b9831e538060d0404f20}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_HOSTNAME@{FILTER\_FLAG\_HOSTNAME}}
+\index{FILTER\_FLAG\_HOSTNAME@{FILTER\_FLAG\_HOSTNAME}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_HOSTNAME}{FILTER\_FLAG\_HOSTNAME}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+H\+O\+S\+T\+N\+A\+ME 1048576}
+
+\mbox{\Hypertarget{filter_8php_a654c570f57a159f9ab21530ff59d4c70}\label{filter_8php_a654c570f57a159f9ab21530ff59d4c70}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_IPV4@{FILTER\_FLAG\_IPV4}}
+\index{FILTER\_FLAG\_IPV4@{FILTER\_FLAG\_IPV4}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_IPV4}{FILTER\_FLAG\_IPV4}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+I\+P\+V4 1048576}
+
+Allow only I\+Pv4 address in \char`\"{}validate\+\_\+ip\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_ab940c9d7680a26e510640e6d6e2d75e3}\label{filter_8php_ab940c9d7680a26e510640e6d6e2d75e3}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_IPV6@{FILTER\_FLAG\_IPV6}}
+\index{FILTER\_FLAG\_IPV6@{FILTER\_FLAG\_IPV6}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_IPV6}{FILTER\_FLAG\_IPV6}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+I\+P\+V6 2097152}
+
+Allow only I\+Pv6 address in \char`\"{}validate\+\_\+ip\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_ab121a6ef824b278aa86b586cb77bf689}\label{filter_8php_ab121a6ef824b278aa86b586cb77bf689}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_NO\_ENCODE\_QUOTES@{FILTER\_FLAG\_NO\_ENCODE\_QUOTES}}
+\index{FILTER\_FLAG\_NO\_ENCODE\_QUOTES@{FILTER\_FLAG\_NO\_ENCODE\_QUOTES}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_NO\_ENCODE\_QUOTES}{FILTER\_FLAG\_NO\_ENCODE\_QUOTES}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+Q\+U\+O\+T\+ES 128}
+
+Don\textquotesingle{}t encode \textquotesingle{} and "{}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_aa79b901c5967e04129613ab05a894f0c}\label{filter_8php_aa79b901c5967e04129613ab05a894f0c}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_NO\_PRIV\_RANGE@{FILTER\_FLAG\_NO\_PRIV\_RANGE}}
+\index{FILTER\_FLAG\_NO\_PRIV\_RANGE@{FILTER\_FLAG\_NO\_PRIV\_RANGE}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_NO\_PRIV\_RANGE}{FILTER\_FLAG\_NO\_PRIV\_RANGE}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+\_\+\+P\+R\+I\+V\+\_\+\+R\+A\+N\+GE 8388608}
+
+Deny private addresses in \char`\"{}validate\+\_\+ip\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a3e7cdad46b24987b7c525c7f373f1c08}\label{filter_8php_a3e7cdad46b24987b7c525c7f373f1c08}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_NO\_RES\_RANGE@{FILTER\_FLAG\_NO\_RES\_RANGE}}
+\index{FILTER\_FLAG\_NO\_RES\_RANGE@{FILTER\_FLAG\_NO\_RES\_RANGE}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_NO\_RES\_RANGE}{FILTER\_FLAG\_NO\_RES\_RANGE}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+\_\+\+R\+E\+S\+\_\+\+R\+A\+N\+GE 4194304}
+
+Deny reserved addresses in \char`\"{}validate\+\_\+ip\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a5ebdebf29b00bb054ed6ecf89d5fc6cc}\label{filter_8php_a5ebdebf29b00bb054ed6ecf89d5fc6cc}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_NONE@{FILTER\_FLAG\_NONE}}
+\index{FILTER\_FLAG\_NONE@{FILTER\_FLAG\_NONE}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_NONE}{FILTER\_FLAG\_NONE}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+N\+O\+NE 0}
+
+No flags. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a77e754245981dbae2fe6562a269dcc94}\label{filter_8php_a77e754245981dbae2fe6562a269dcc94}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_PATH\_REQUIRED@{FILTER\_FLAG\_PATH\_REQUIRED}}
+\index{FILTER\_FLAG\_PATH\_REQUIRED@{FILTER\_FLAG\_PATH\_REQUIRED}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_PATH\_REQUIRED}{FILTER\_FLAG\_PATH\_REQUIRED}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+P\+A\+T\+H\+\_\+\+R\+E\+Q\+U\+I\+R\+ED 262144}
+
+Require path in \char`\"{}validate\+\_\+url\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a099c87318159827477e9c4ba474b34b6}\label{filter_8php_a099c87318159827477e9c4ba474b34b6}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_QUERY\_REQUIRED@{FILTER\_FLAG\_QUERY\_REQUIRED}}
+\index{FILTER\_FLAG\_QUERY\_REQUIRED@{FILTER\_FLAG\_QUERY\_REQUIRED}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_QUERY\_REQUIRED}{FILTER\_FLAG\_QUERY\_REQUIRED}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+R\+E\+Q\+U\+I\+R\+ED 524288}
+
+Require query in \char`\"{}validate\+\_\+url\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a693493a50bb5e44af8ebf3a469e6d1ce}\label{filter_8php_a693493a50bb5e44af8ebf3a469e6d1ce}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_SCHEME\_REQUIRED@{FILTER\_FLAG\_SCHEME\_REQUIRED}}
+\index{FILTER\_FLAG\_SCHEME\_REQUIRED@{FILTER\_FLAG\_SCHEME\_REQUIRED}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_SCHEME\_REQUIRED}{FILTER\_FLAG\_SCHEME\_REQUIRED}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+S\+C\+H\+E\+M\+E\+\_\+\+R\+E\+Q\+U\+I\+R\+ED 65536}
+
+Require scheme in \char`\"{}validate\+\_\+url\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{deprecated 38. }}\mbox{\Hypertarget{filter_8php_a123df16ef2ebedc172ba1cb7a42dc2b4}\label{filter_8php_a123df16ef2ebedc172ba1cb7a42dc2b4}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_STRIP\_BACKTICK@{FILTER\_FLAG\_STRIP\_BACKTICK}}
+\index{FILTER\_FLAG\_STRIP\_BACKTICK@{FILTER\_FLAG\_STRIP\_BACKTICK}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_STRIP\_BACKTICK}{FILTER\_FLAG\_STRIP\_BACKTICK}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+R\+I\+P\+\_\+\+B\+A\+C\+K\+T\+I\+CK 512}
+
+\mbox{\Hypertarget{filter_8php_a56404018231604159dd284e757306173}\label{filter_8php_a56404018231604159dd284e757306173}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_STRIP\_HIGH@{FILTER\_FLAG\_STRIP\_HIGH}}
+\index{FILTER\_FLAG\_STRIP\_HIGH@{FILTER\_FLAG\_STRIP\_HIGH}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_STRIP\_HIGH}{FILTER\_FLAG\_STRIP\_HIGH}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+R\+I\+P\+\_\+\+H\+I\+GH 8}
+
+Strip characters with A\+S\+C\+II value greater than 127. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_ab53b46c29fd372ccbdb3e1bcfa1cae57}\label{filter_8php_ab53b46c29fd372ccbdb3e1bcfa1cae57}} 
+\index{filter.php@{filter.php}!FILTER\_FLAG\_STRIP\_LOW@{FILTER\_FLAG\_STRIP\_LOW}}
+\index{FILTER\_FLAG\_STRIP\_LOW@{FILTER\_FLAG\_STRIP\_LOW}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FLAG\_STRIP\_LOW}{FILTER\_FLAG\_STRIP\_LOW}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+R\+I\+P\+\_\+\+L\+OW 4}
+
+Strip characters with A\+S\+C\+II value less than 32. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a683b301b489fed0d9866a588c5c174e9}\label{filter_8php_a683b301b489fed0d9866a588c5c174e9}} 
+\index{filter.php@{filter.php}!FILTER\_FORCE\_ARRAY@{FILTER\_FORCE\_ARRAY}}
+\index{FILTER\_FORCE\_ARRAY@{FILTER\_FORCE\_ARRAY}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_FORCE\_ARRAY}{FILTER\_FORCE\_ARRAY}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+F\+O\+R\+C\+E\+\_\+\+A\+R\+R\+AY 67108864}
+
+Always returns an array. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a9bfe66bd2be720a01134a03d9dce22d2}\label{filter_8php_a9bfe66bd2be720a01134a03d9dce22d2}} 
+\index{filter.php@{filter.php}!FILTER\_NULL\_ON\_FAILURE@{FILTER\_NULL\_ON\_FAILURE}}
+\index{FILTER\_NULL\_ON\_FAILURE@{FILTER\_NULL\_ON\_FAILURE}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_NULL\_ON\_FAILURE}{FILTER\_NULL\_ON\_FAILURE}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+N\+U\+L\+L\+\_\+\+O\+N\+\_\+\+F\+A\+I\+L\+U\+RE 134217728}
+
+Use N\+U\+LL instead of F\+A\+L\+SE on failure. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a4769258fddad4f6e2fb763f793c6f65a}\label{filter_8php_a4769258fddad4f6e2fb763f793c6f65a}} 
+\index{filter.php@{filter.php}!FILTER\_REQUIRE\_ARRAY@{FILTER\_REQUIRE\_ARRAY}}
+\index{FILTER\_REQUIRE\_ARRAY@{FILTER\_REQUIRE\_ARRAY}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_REQUIRE\_ARRAY}{FILTER\_REQUIRE\_ARRAY}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+A\+R\+R\+AY 16777216}
+
+Require an array as input. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a51997e63863baaa76c7d121ca800b2cc}\label{filter_8php_a51997e63863baaa76c7d121ca800b2cc}} 
+\index{filter.php@{filter.php}!FILTER\_REQUIRE\_SCALAR@{FILTER\_REQUIRE\_SCALAR}}
+\index{FILTER\_REQUIRE\_SCALAR@{FILTER\_REQUIRE\_SCALAR}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_REQUIRE\_SCALAR}{FILTER\_REQUIRE\_SCALAR}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+S\+C\+A\+L\+AR 33554432}
+
+Flag used to require scalar as input \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_ab5a5d348fa1383027fef15ee95e4c2f8}\label{filter_8php_ab5a5d348fa1383027fef15ee95e4c2f8}} 
+\index{filter.php@{filter.php}!FILTER\_SANITIZE\_ADD\_SLASHES@{FILTER\_SANITIZE\_ADD\_SLASHES}}
+\index{FILTER\_SANITIZE\_ADD\_SLASHES@{FILTER\_SANITIZE\_ADD\_SLASHES}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_SANITIZE\_ADD\_SLASHES}{FILTER\_SANITIZE\_ADD\_SLASHES}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+A\+D\+D\+\_\+\+S\+L\+A\+S\+H\+ES 523}
+
+\begin{DoxySince}{Since}
+7.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{filter_8php_a98a854bb7800a3fb740f98ae8ef8e092}\label{filter_8php_a98a854bb7800a3fb740f98ae8ef8e092}} 
+\index{filter.php@{filter.php}!FILTER\_SANITIZE\_EMAIL@{FILTER\_SANITIZE\_EMAIL}}
+\index{FILTER\_SANITIZE\_EMAIL@{FILTER\_SANITIZE\_EMAIL}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_SANITIZE\_EMAIL}{FILTER\_SANITIZE\_EMAIL}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+E\+M\+A\+IL 517}
+
+ID of \char`\"{}email\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a2c48afb329050fd6a51943208a751751}\label{filter_8php_a2c48afb329050fd6a51943208a751751}} 
+\index{filter.php@{filter.php}!FILTER\_SANITIZE\_ENCODED@{FILTER\_SANITIZE\_ENCODED}}
+\index{FILTER\_SANITIZE\_ENCODED@{FILTER\_SANITIZE\_ENCODED}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_SANITIZE\_ENCODED}{FILTER\_SANITIZE\_ENCODED}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+E\+N\+C\+O\+D\+ED 514}
+
+ID of \char`\"{}encoded\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_affcf93f6a4285e7d3fcf10f665b9053f}\label{filter_8php_affcf93f6a4285e7d3fcf10f665b9053f}} 
+\index{filter.php@{filter.php}!FILTER\_SANITIZE\_FULL\_SPECIAL\_CHARS@{FILTER\_SANITIZE\_FULL\_SPECIAL\_CHARS}}
+\index{FILTER\_SANITIZE\_FULL\_SPECIAL\_CHARS@{FILTER\_SANITIZE\_FULL\_SPECIAL\_CHARS}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_SANITIZE\_FULL\_SPECIAL\_CHARS}{FILTER\_SANITIZE\_FULL\_SPECIAL\_CHARS}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+F\+U\+L\+L\+\_\+\+S\+P\+E\+C\+I\+A\+L\+\_\+\+C\+H\+A\+RS 522}
+
+\mbox{\Hypertarget{filter_8php_ad2102fa3cdc0067f8278037fb5af71c6}\label{filter_8php_ad2102fa3cdc0067f8278037fb5af71c6}} 
+\index{filter.php@{filter.php}!FILTER\_SANITIZE\_MAGIC\_QUOTES@{FILTER\_SANITIZE\_MAGIC\_QUOTES}}
+\index{FILTER\_SANITIZE\_MAGIC\_QUOTES@{FILTER\_SANITIZE\_MAGIC\_QUOTES}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_SANITIZE\_MAGIC\_QUOTES}{FILTER\_SANITIZE\_MAGIC\_QUOTES}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+M\+A\+G\+I\+C\+\_\+\+Q\+U\+O\+T\+ES 521}
+
+ID of \char`\"{}magic\+\_\+quotes\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{deprecated 37. }}\mbox{\Hypertarget{filter_8php_aa489fdd2298c32ae30dd12b77f2eda9f}\label{filter_8php_aa489fdd2298c32ae30dd12b77f2eda9f}} 
+\index{filter.php@{filter.php}!FILTER\_SANITIZE\_NUMBER\_FLOAT@{FILTER\_SANITIZE\_NUMBER\_FLOAT}}
+\index{FILTER\_SANITIZE\_NUMBER\_FLOAT@{FILTER\_SANITIZE\_NUMBER\_FLOAT}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_SANITIZE\_NUMBER\_FLOAT}{FILTER\_SANITIZE\_NUMBER\_FLOAT}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+F\+L\+O\+AT 520}
+
+ID of \char`\"{}number\+\_\+float\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a5b9ed1c5e5548efd776a36f1e18731dd}\label{filter_8php_a5b9ed1c5e5548efd776a36f1e18731dd}} 
+\index{filter.php@{filter.php}!FILTER\_SANITIZE\_NUMBER\_INT@{FILTER\_SANITIZE\_NUMBER\_INT}}
+\index{FILTER\_SANITIZE\_NUMBER\_INT@{FILTER\_SANITIZE\_NUMBER\_INT}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_SANITIZE\_NUMBER\_INT}{FILTER\_SANITIZE\_NUMBER\_INT}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+I\+NT 519}
+
+ID of \char`\"{}number\+\_\+int\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_abae1cd101517c3a65bbab2eee79cdcc2}\label{filter_8php_abae1cd101517c3a65bbab2eee79cdcc2}} 
+\index{filter.php@{filter.php}!FILTER\_SANITIZE\_SPECIAL\_CHARS@{FILTER\_SANITIZE\_SPECIAL\_CHARS}}
+\index{FILTER\_SANITIZE\_SPECIAL\_CHARS@{FILTER\_SANITIZE\_SPECIAL\_CHARS}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_SANITIZE\_SPECIAL\_CHARS}{FILTER\_SANITIZE\_SPECIAL\_CHARS}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+S\+P\+E\+C\+I\+A\+L\+\_\+\+C\+H\+A\+RS 515}
+
+ID of \char`\"{}special\+\_\+chars\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a0b036997e3b96080df546224f98f55a2}\label{filter_8php_a0b036997e3b96080df546224f98f55a2}} 
+\index{filter.php@{filter.php}!FILTER\_SANITIZE\_STRING@{FILTER\_SANITIZE\_STRING}}
+\index{FILTER\_SANITIZE\_STRING@{FILTER\_SANITIZE\_STRING}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_SANITIZE\_STRING}{FILTER\_SANITIZE\_STRING}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+S\+T\+R\+I\+NG 513}
+
+ID of \char`\"{}string\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_aaaf8201095dc77bcd0c6af7294203602}\label{filter_8php_aaaf8201095dc77bcd0c6af7294203602}} 
+\index{filter.php@{filter.php}!FILTER\_SANITIZE\_STRIPPED@{FILTER\_SANITIZE\_STRIPPED}}
+\index{FILTER\_SANITIZE\_STRIPPED@{FILTER\_SANITIZE\_STRIPPED}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_SANITIZE\_STRIPPED}{FILTER\_SANITIZE\_STRIPPED}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+S\+T\+R\+I\+P\+P\+ED 513}
+
+ID of \char`\"{}stripped\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a8a35a5d6bb8b2aeaf142a2aaacdb2ee9}\label{filter_8php_a8a35a5d6bb8b2aeaf142a2aaacdb2ee9}} 
+\index{filter.php@{filter.php}!FILTER\_SANITIZE\_URL@{FILTER\_SANITIZE\_URL}}
+\index{FILTER\_SANITIZE\_URL@{FILTER\_SANITIZE\_URL}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_SANITIZE\_URL}{FILTER\_SANITIZE\_URL}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+S\+A\+N\+I\+T\+I\+Z\+E\+\_\+\+U\+RL 518}
+
+ID of \char`\"{}url\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a903b0da2668d7e8e194fb62eb5856f86}\label{filter_8php_a903b0da2668d7e8e194fb62eb5856f86}} 
+\index{filter.php@{filter.php}!FILTER\_UNSAFE\_RAW@{FILTER\_UNSAFE\_RAW}}
+\index{FILTER\_UNSAFE\_RAW@{FILTER\_UNSAFE\_RAW}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_UNSAFE\_RAW}{FILTER\_UNSAFE\_RAW}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+U\+N\+S\+A\+F\+E\+\_\+\+R\+AW 516}
+
+ID of \char`\"{}unsafe\+\_\+raw\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a96d532ed851a74ba4aedc5442ecb04ff}\label{filter_8php_a96d532ed851a74ba4aedc5442ecb04ff}} 
+\index{filter.php@{filter.php}!FILTER\_VALIDATE\_BOOLEAN@{FILTER\_VALIDATE\_BOOLEAN}}
+\index{FILTER\_VALIDATE\_BOOLEAN@{FILTER\_VALIDATE\_BOOLEAN}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_VALIDATE\_BOOLEAN}{FILTER\_VALIDATE\_BOOLEAN}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+B\+O\+O\+L\+E\+AN 258}
+
+ID of \char`\"{}boolean\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a1d17a4c308d9822b80b69f67e307f847}\label{filter_8php_a1d17a4c308d9822b80b69f67e307f847}} 
+\index{filter.php@{filter.php}!FILTER\_VALIDATE\_DOMAIN@{FILTER\_VALIDATE\_DOMAIN}}
+\index{FILTER\_VALIDATE\_DOMAIN@{FILTER\_VALIDATE\_DOMAIN}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_VALIDATE\_DOMAIN}{FILTER\_VALIDATE\_DOMAIN}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+D\+O\+M\+A\+IN 277}
+
+\mbox{\Hypertarget{filter_8php_ab50b38dce1194796d3e1b95592217535}\label{filter_8php_ab50b38dce1194796d3e1b95592217535}} 
+\index{filter.php@{filter.php}!FILTER\_VALIDATE\_EMAIL@{FILTER\_VALIDATE\_EMAIL}}
+\index{FILTER\_VALIDATE\_EMAIL@{FILTER\_VALIDATE\_EMAIL}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_VALIDATE\_EMAIL}{FILTER\_VALIDATE\_EMAIL}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+E\+M\+A\+IL 274}
+
+ID of \char`\"{}validate\+\_\+email\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a149fd02ee6e966d3149b5432be21af7b}\label{filter_8php_a149fd02ee6e966d3149b5432be21af7b}} 
+\index{filter.php@{filter.php}!FILTER\_VALIDATE\_FLOAT@{FILTER\_VALIDATE\_FLOAT}}
+\index{FILTER\_VALIDATE\_FLOAT@{FILTER\_VALIDATE\_FLOAT}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_VALIDATE\_FLOAT}{FILTER\_VALIDATE\_FLOAT}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+F\+L\+O\+AT 259}
+
+ID of \char`\"{}float\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a478aa6b077d9647bf84c8cdbdf2b31ff}\label{filter_8php_a478aa6b077d9647bf84c8cdbdf2b31ff}} 
+\index{filter.php@{filter.php}!FILTER\_VALIDATE\_INT@{FILTER\_VALIDATE\_INT}}
+\index{FILTER\_VALIDATE\_INT@{FILTER\_VALIDATE\_INT}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_VALIDATE\_INT}{FILTER\_VALIDATE\_INT}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+I\+NT 257}
+
+ID of \char`\"{}int\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_abc6eea909a7a60831a539210f2681976}\label{filter_8php_abc6eea909a7a60831a539210f2681976}} 
+\index{filter.php@{filter.php}!FILTER\_VALIDATE\_IP@{FILTER\_VALIDATE\_IP}}
+\index{FILTER\_VALIDATE\_IP@{FILTER\_VALIDATE\_IP}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_VALIDATE\_IP}{FILTER\_VALIDATE\_IP}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+IP 275}
+
+ID of \char`\"{}validate\+\_\+ip\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_afe7e66b50cc49489f2393ec788bfbcf0}\label{filter_8php_afe7e66b50cc49489f2393ec788bfbcf0}} 
+\index{filter.php@{filter.php}!FILTER\_VALIDATE\_MAC@{FILTER\_VALIDATE\_MAC}}
+\index{FILTER\_VALIDATE\_MAC@{FILTER\_VALIDATE\_MAC}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_VALIDATE\_MAC}{FILTER\_VALIDATE\_MAC}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+M\+AC 276}
+
+\mbox{\Hypertarget{filter_8php_ad2def5a87e51f3d08e95485e64da6cbe}\label{filter_8php_ad2def5a87e51f3d08e95485e64da6cbe}} 
+\index{filter.php@{filter.php}!FILTER\_VALIDATE\_REGEXP@{FILTER\_VALIDATE\_REGEXP}}
+\index{FILTER\_VALIDATE\_REGEXP@{FILTER\_VALIDATE\_REGEXP}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_VALIDATE\_REGEXP}{FILTER\_VALIDATE\_REGEXP}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+R\+E\+G\+E\+XP 272}
+
+ID of \char`\"{}validate\+\_\+regexp\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a88123136b92036e777bdbadc1c723e30}\label{filter_8php_a88123136b92036e777bdbadc1c723e30}} 
+\index{filter.php@{filter.php}!FILTER\_VALIDATE\_URL@{FILTER\_VALIDATE\_URL}}
+\index{FILTER\_VALIDATE\_URL@{FILTER\_VALIDATE\_URL}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{FILTER\_VALIDATE\_URL}{FILTER\_VALIDATE\_URL}}
+{\footnotesize\ttfamily const F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+U\+RL 273}
+
+ID of \char`\"{}validate\+\_\+url\char`\"{} filter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a7ee1374d179018ef3ed48182ed581928}\label{filter_8php_a7ee1374d179018ef3ed48182ed581928}} 
+\index{filter.php@{filter.php}!INPUT\_COOKIE@{INPUT\_COOKIE}}
+\index{INPUT\_COOKIE@{INPUT\_COOKIE}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{INPUT\_COOKIE}{INPUT\_COOKIE}}
+{\footnotesize\ttfamily const I\+N\+P\+U\+T\+\_\+\+C\+O\+O\+K\+IE 2}
+
+C\+O\+O\+K\+IE variables. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a175897190ab3198e55648e30120fdfea}\label{filter_8php_a175897190ab3198e55648e30120fdfea}} 
+\index{filter.php@{filter.php}!INPUT\_ENV@{INPUT\_ENV}}
+\index{INPUT\_ENV@{INPUT\_ENV}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{INPUT\_ENV}{INPUT\_ENV}}
+{\footnotesize\ttfamily const I\+N\+P\+U\+T\+\_\+\+E\+NV 4}
+
+E\+NV variables. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a00184241ab30fb176599cc4152170680}\label{filter_8php_a00184241ab30fb176599cc4152170680}} 
+\index{filter.php@{filter.php}!INPUT\_GET@{INPUT\_GET}}
+\index{INPUT\_GET@{INPUT\_GET}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{INPUT\_GET}{INPUT\_GET}}
+{\footnotesize\ttfamily const I\+N\+P\+U\+T\+\_\+\+G\+ET 1}
+
+G\+ET variables. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_aed02ed7d9ec469b2ef009b70466ef803}\label{filter_8php_aed02ed7d9ec469b2ef009b70466ef803}} 
+\index{filter.php@{filter.php}!INPUT\_POST@{INPUT\_POST}}
+\index{INPUT\_POST@{INPUT\_POST}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{INPUT\_POST}{INPUT\_POST}}
+{\footnotesize\ttfamily const I\+N\+P\+U\+T\+\_\+\+P\+O\+ST 0}
+
+P\+O\+ST variables. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a5ac745200a37a99e441579b18956d499}\label{filter_8php_a5ac745200a37a99e441579b18956d499}} 
+\index{filter.php@{filter.php}!INPUT\_REQUEST@{INPUT\_REQUEST}}
+\index{INPUT\_REQUEST@{INPUT\_REQUEST}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{INPUT\_REQUEST}{INPUT\_REQUEST}}
+{\footnotesize\ttfamily const I\+N\+P\+U\+T\+\_\+\+R\+E\+Q\+U\+E\+ST 99}
+
+R\+E\+Q\+U\+E\+ST variables. (not implemented yet) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_a7ed96aceae95ec239f8a3dc0e82fefd1}\label{filter_8php_a7ed96aceae95ec239f8a3dc0e82fefd1}} 
+\index{filter.php@{filter.php}!INPUT\_SERVER@{INPUT\_SERVER}}
+\index{INPUT\_SERVER@{INPUT\_SERVER}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{INPUT\_SERVER}{INPUT\_SERVER}}
+{\footnotesize\ttfamily const I\+N\+P\+U\+T\+\_\+\+S\+E\+R\+V\+ER 5}
+
+S\+E\+R\+V\+ER variables. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}\mbox{\Hypertarget{filter_8php_afde083a1a55e4ac61ac47b6983d25563}\label{filter_8php_afde083a1a55e4ac61ac47b6983d25563}} 
+\index{filter.php@{filter.php}!INPUT\_SESSION@{INPUT\_SESSION}}
+\index{INPUT\_SESSION@{INPUT\_SESSION}!filter.php@{filter.php}}
+\doxysubsubsection{\texorpdfstring{INPUT\_SESSION}{INPUT\_SESSION}}
+{\footnotesize\ttfamily const I\+N\+P\+U\+T\+\_\+\+S\+E\+S\+S\+I\+ON 6}
+
+S\+E\+S\+S\+I\+ON variables. (not implemented yet) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/filter.\+constants.\+php}}

@@ -1,0 +1,2190 @@
+.TH "vendor/jetbrains/phpstorm-stubs/ldap/ldap.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/ldap/ldap.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBldap_exop_passwd\fP ($\fBlink\fP, $user='', $oldpw='', $newpw='', array &$serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_exop_refresh\fP ($\fBlink\fP, $dn, $ttl)"
+.br
+.ti -1c
+.RI "\fBldap_exop_whoami\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBldap_exop\fP ($\fBlink\fP, $reqoid, $reqdata=\fBnull\fP, $serverctrls=[], &$retdata, &$retoid)"
+.br
+.ti -1c
+.RI "\fBldap_parse_exop\fP ($\fBlink\fP, $result, &$retdata, &$retoid)"
+.br
+.ti -1c
+.RI "\fBldap_8859_to_t61\fP ($value)"
+.br
+.ti -1c
+.RI "\fBldap_t61_to_8859\fP ($value)"
+.br
+.ti -1c
+.RI "\fBldap_connect\fP ($hostname=\fBnull\fP, $port=389)"
+.br
+.ti -1c
+.RI "\fBldap_close\fP ($link_identifier)"
+.br
+.ti -1c
+.RI "\fBldap_bind\fP ($link_identifier, $bind_rdn=\fBnull\fP, $bind_password=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBldap_bind_ext\fP ($link_identifier, $bind_rdn=\fBnull\fP, $bind_password=\fBnull\fP, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_sasl_bind\fP ($\fBlink\fP, $binddn=\fBnull\fP, $password=\fBnull\fP, $sasl_mech=\fBnull\fP, $sasl_realm=\fBnull\fP, $sasl_authc_id=\fBnull\fP, $sasl_authz_id=\fBnull\fP, $props=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBldap_unbind\fP ($link_identifier)"
+.br
+.ti -1c
+.RI "\fBldap_read\fP ($link_identifier, $base_dn, $filter, array $attributes=\fBnull\fP, $attrsonly=\fBnull\fP, $sizelimit=\fBnull\fP, $timelimit=\fBnull\fP, $deref=\fBnull\fP, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_list\fP ($link_identifier, $base_dn, $filter, array $attributes=\fBnull\fP, $attrsonly=\fBnull\fP, $sizelimit=\fBnull\fP, $timelimit=\fBnull\fP, $deref=\fBnull\fP, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_search\fP ($link_identifier, $base_dn, $filter, array $attributes=\fBnull\fP, $attrsonly=\fBnull\fP, $sizelimit=\fBnull\fP, $timelimit=\fBnull\fP, $deref=\fBnull\fP, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_free_result\fP ($result_identifier)"
+.br
+.ti -1c
+.RI "\fBldap_count_entries\fP ($link_identifier, $result_identifier)"
+.br
+.ti -1c
+.RI "\fBldap_first_entry\fP ($link_identifier, $result_identifier)"
+.br
+.ti -1c
+.RI "\fBldap_next_entry\fP ($link_identifier, $result_entry_identifier)"
+.br
+.ti -1c
+.RI "\fBldap_get_entries\fP ($link_identifier, $result_identifier)"
+.br
+.ti -1c
+.RI "\fBldap_first_attribute\fP ($link_identifier, $result_entry_identifier)"
+.br
+.ti -1c
+.RI "\fBldap_next_attribute\fP ($link_identifier, $result_entry_identifier)"
+.br
+.ti -1c
+.RI "\fBldap_get_attributes\fP ($link_identifier, $result_entry_identifier)"
+.br
+.ti -1c
+.RI "\fBldap_get_values\fP ($link_identifier, $result_entry_identifier, $\fBattribute\fP)"
+.br
+.ti -1c
+.RI "\fBldap_get_values_len\fP ($link_identifier, $result_entry_identifier, $\fBattribute\fP)"
+.br
+.ti -1c
+.RI "\fBldap_get_dn\fP ($link_identifier, $result_entry_identifier)"
+.br
+.ti -1c
+.RI "\fBldap_explode_dn\fP ($dn, $with_attrib)"
+.br
+.ti -1c
+.RI "\fBldap_dn2ufn\fP ($dn)"
+.br
+.ti -1c
+.RI "\fBldap_add\fP ($link_identifier, $dn, array $entry, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_add_ext\fP ($link_identifier, $dn, array $entry, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_delete\fP ($link_identifier, $dn, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_delete_ext\fP ($link_identifier, $dn, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_modify\fP ($link_identifier, $dn, array $entry, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_mod_add\fP ($link_identifier, $dn, array $entry, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_mod_add_ext\fP ($link_identifier, $dn, array $entry, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_mod_replace\fP ($link_identifier, $dn, array $entry, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_mod_replace_ext\fP ($link_identifier, $dn, array $entry, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_mod_del\fP ($link_identifier, $dn, array $entry, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_mod_del_ext\fP ($link_identifier, $dn, array $entry, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_errno\fP ($link_identifier)"
+.br
+.ti -1c
+.RI "\fBldap_err2str\fP ($errno)"
+.br
+.ti -1c
+.RI "\fBldap_error\fP ($link_identifier)"
+.br
+.ti -1c
+.RI "\fBldap_compare\fP ($link_identifier, $dn, $\fBattribute\fP, $value, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_sort\fP ($\fBlink\fP, $result, $sortfilter)"
+.br
+.ti -1c
+.RI "\fBldap_rename\fP ($link_identifier, $dn, $newrdn, $newparent, $deleteoldrdn, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_rename_ext\fP ($link_identifier, $dn, $newrdn, $newparent, $deleteoldrdn, $serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_get_option\fP ($link_identifier, $option, &$retval)"
+.br
+.ti -1c
+.RI "\fBldap_set_option\fP ($link_identifier, $option, $newval)"
+.br
+.ti -1c
+.RI "\fBldap_first_reference\fP ($\fBlink\fP, $result)"
+.br
+.ti -1c
+.RI "\fBldap_next_reference\fP ($\fBlink\fP, $entry)"
+.br
+.ti -1c
+.RI "\fBldap_parse_reference\fP ($\fBlink\fP, $entry, array &$referrals)"
+.br
+.ti -1c
+.RI "\fBldap_parse_result\fP ($\fBlink\fP, $result, &$errcode, &$matcheddn=\fBnull\fP, &$errmsg=\fBnull\fP, array &$referrals=\fBnull\fP, &$serverctrls=[])"
+.br
+.ti -1c
+.RI "\fBldap_start_tls\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBldap_set_rebind_proc\fP ($\fBlink\fP, callable $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBldap_control_paged_result\fP ($\fBlink\fP, $pagesize, $iscritical=\fBfalse\fP, $cookie='')"
+.br
+.ti -1c
+.RI "\fBldap_control_paged_result_response\fP ($\fBlink\fP, $result, &$cookie=\fBnull\fP, &$estimated=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBldap_escape\fP ($value, $ignore='', $flags=0)"
+.br
+.ti -1c
+.RI "\fBldap_modify_batch\fP ( $link_identifier, $dn, $entry, $serverctrls=[])"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBLDAP_ESCAPE_FILTER\fP 1"
+.br
+.ti -1c
+.RI "const \fBLDAP_ESCAPE_DN\fP 2"
+.br
+.ti -1c
+.RI "const \fBLDAP_DEREF_NEVER\fP 0"
+.br
+.ti -1c
+.RI "const \fBLDAP_DEREF_SEARCHING\fP 1"
+.br
+.ti -1c
+.RI "const \fBLDAP_DEREF_FINDING\fP 2"
+.br
+.ti -1c
+.RI "const \fBLDAP_DEREF_ALWAYS\fP 3"
+.br
+.ti -1c
+.RI "const \fBLDAP_MODIFY_BATCH_REMOVE\fP 2"
+.br
+.ti -1c
+.RI "const \fBLDAP_MODIFY_BATCH_ADD\fP 1"
+.br
+.ti -1c
+.RI "const \fBLDAP_MODIFY_BATCH_REMOVE_ALL\fP 18"
+.br
+.ti -1c
+.RI "const \fBLDAP_MODIFY_BATCH_REPLACE\fP 3"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_REQUIRE_CERT\fP 24582"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_NEVER\fP 0"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_HARD\fP 1"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_DEMAND\fP 2"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_ALLOW\fP 3"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_TRY\fP 4"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_CERTFILE\fP 24580"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_CIPHER_SUITE\fP 24584"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_KEYFILE\fP 24581"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_DHFILE\fP 24590"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_CRLFILE\fP 24592"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_RANDOM_FILE\fP 24585"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_CRLCHECK\fP 24587"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_CRL_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_CRL_PEER\fP 1"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_CRL_ALL\fP 2"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_PROTOCOL_MIN\fP 24583"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_PROTOCOL_SSL2\fP 512"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_PROTOCOL_SSL3\fP 768"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_PROTOCOL_TLS1_0\fP 769"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_PROTOCOL_TLS1_1\fP 770"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_PROTOCOL_TLS1_2\fP 771"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_PACKAGE\fP 24593"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_KEEPALIVE_IDLE\fP 25344"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_KEEPALIVE_PROBES\fP 25345"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_KEEPALIVE_INTERVAL\fP 25346"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_SASL_USERNAME\fP 24844"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_SASL_NOCANON\fP 24843"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_DEREF\fP 2"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_SIZELIMIT\fP 3"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_TIMELIMIT\fP 4"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_NETWORK_TIMEOUT\fP 20485"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_PROTOCOL_VERSION\fP 17"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_ERROR_NUMBER\fP 49"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_REFERRALS\fP 8"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_RESTART\fP 9"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_HOST_NAME\fP 48"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_ERROR_STRING\fP 50"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_MATCHED_DN\fP 51"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_SERVER_CONTROLS\fP 18"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_CLIENT_CONTROLS\fP 19"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_DEBUG_LEVEL\fP 20481"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_SASL_MECH\fP 24832"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_SASL_REALM\fP 24833"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_SASL_AUTHCID\fP 24834"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_SASL_AUTHZID\fP 24835"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_CACERTDIR\fP 24579"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_X_TLS_CACERTFILE\fP 24578"
+.br
+.ti -1c
+.RI "const \fBLDAP_MODIFY_BATCH_ATTRIB\fP 'attrib'"
+.br
+.ti -1c
+.RI "const \fBLDAP_MODIFY_BATCH_MODTYPE\fP 'modtype'"
+.br
+.ti -1c
+.RI "const \fBLDAP_MODIFY_BATCH_VALUES\fP 'values'"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_TIMEOUT\fP 20482"
+.br
+.ti -1c
+.RI "const \fBLDAP_OPT_DIAGNOSTIC_MESSAGE\fP 50"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_MANAGEDSAIT\fP '2\&.16\&.840\&.1\&.113730\&.3\&.4\&.2'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_SUBENTRIES\fP '1\&.3\&.6\&.1\&.4\&.1\&.4203\&.1\&.10\&.1'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_VALUESRETURNFILTER\fP '1\&.2\&.826\&.0\&.1\&.3344810\&.2\&.3'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_ASSERT\fP '1\&.3\&.6\&.1\&.1\&.12'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_PRE_READ\fP '1\&.3\&.6\&.1\&.1\&.13\&.1'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_POST_READ\fP '1\&.3\&.6\&.1\&.1\&.13\&.2'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_SORTREQUEST\fP '1\&.2\&.840\&.113556\&.1\&.4\&.473'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_SORTRESPONSE\fP '1\&.2\&.840\&.113556\&.1\&.4\&.474'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_PAGEDRESULTS\fP '1\&.2\&.840\&.113556\&.1\&.4\&.319'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_SYNC\fP '1\&.3\&.6\&.1\&.4\&.1\&.4203\&.1\&.9\&.1\&.1'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_SYNC_STATE\fP '1\&.3\&.6\&.1\&.4\&.1\&.4203\&.1\&.9\&.1\&.2'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_SYNC_DONE\fP '1\&.3\&.6\&.1\&.4\&.1\&.4203\&.1\&.9\&.1\&.3'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_DONTUSECOPY\fP '1\&.3\&.6\&.1\&.1\&.22'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_PASSWORDPOLICYREQUEST\fP '1\&.3\&.6\&.1\&.4\&.1\&.42\&.2\&.27\&.8\&.5\&.1'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_PASSWORDPOLICYRESPONSE\fP '1\&.3\&.6\&.1\&.4\&.1\&.42\&.2\&.27\&.8\&.5\&.1'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_X_INCREMENTAL_VALUES\fP '1\&.2\&.840\&.113556\&.1\&.4\&.802'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_X_DOMAIN_SCOPE\fP '1\&.2\&.840\&.113556\&.1\&.4\&.1339'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_X_PERMISSIVE_MODIFY\fP '1\&.2\&.840\&.113556\&.1\&.4\&.1413'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_X_SEARCH_OPTIONS\fP '1\&.2\&.840\&.113556\&.1\&.4\&.1340'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_X_TREE_DELETE\fP '1\&.2\&.840\&.113556\&.1\&.4\&.805'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_X_EXTENDED_DN\fP '1\&.2\&.840\&.113556\&.1\&.4\&.529'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_VLVREQUEST\fP '2\&.16\&.840\&.1\&.113730\&.3\&.4\&.9'"
+.br
+.ti -1c
+.RI "const \fBLDAP_CONTROL_VLVRESPONSE\fP '2\&.16\&.840\&.1\&.113730\&.3\&.4\&.10'"
+.br
+.ti -1c
+.RI "const \fBLDAP_EXOP_MODIFY_PASSWD\fP '1\&.3\&.6\&.1\&.4\&.1\&.4203\&.1\&.11\&.1'"
+.br
+.ti -1c
+.RI "const \fBLDAP_EXOP_REFRESH\fP '1\&.3\&.6\&.1\&.4\&.1\&.1466\&.101\&.119\&.1'"
+.br
+.ti -1c
+.RI "const \fBLDAP_EXOP_START_TLS\fP '1\&.3\&.6\&.1\&.4\&.1\&.1466\&.20037'"
+.br
+.ti -1c
+.RI "const \fBLDAP_EXOP_TURN\fP '1\&.3\&.6\&.1\&.1\&.19'"
+.br
+.ti -1c
+.RI "const \fBLDAP_EXOP_WHO_AM_I\fP '1\&.3\&.6\&.1\&.4\&.1\&.4203\&.1\&.11\&.3'"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "ldap_8859_to_t61 ( $value)"
+Translate 8859 characters to t61 characters \fBstring $value  string  4\&.0\&.2  5\&.0  7\&.0 \fP
+.SS "ldap_add ( $link_identifier,  $dn, array $entry,  $serverctrls = \fC[]\fP)"
+Add entries to LDAP directory \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dn\fP 
+.RE
+.PP
+The distinguished name of an LDAP entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$entry\fP 
+.RE
+.PP
+An array that specifies the information about the entry\&. The values in the entries are indexed by individual attributes\&. In case of multiple values for an attribute, they are indexed using integers starting with 0\&. \fC $entree['attribut1'] = 'value'; $entree['attribut2'][0] = 'value1'; $entree['attribut2'][1] = 'value2'; \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_add_ext ( $link_identifier,  $dn, array $entry,  $serverctrls = \fC[]\fP)"
+Add entries to LDAP directory Does the same thing as \fBldap_add()\fP but returns the LDAP result resource to be parsed with \fBldap_parse_result()\fP\&. \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dn\fP 
+.RE
+.PP
+The distinguished name of an LDAP entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$entry\fP 
+.RE
+.PP
+An array that specifies the information about the entry\&. The values in the entries are indexed by individual attributes\&. In case of multiple values for an attribute, they are indexed using integers starting with 0\&. \fC $entree['attribut1'] = 'value'; $entree['attribut2'][0] = 'value1'; $entree['attribut2'][1] = 'value2'; \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "ldap_bind ( $link_identifier,  $bind_rdn = \fC\fBnull\fP\fP,  $bind_password = \fC\fBnull\fP\fP)"
+Bind to LDAP directory \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bind_rdn\fP [optional] 
+.br
+\fI$bind_password\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "ldap_bind_ext ( $link_identifier,  $bind_rdn = \fC\fBnull\fP\fP,  $bind_password = \fC\fBnull\fP\fP,  $serverctrls = \fC[]\fP)"
+Bind to LDAP directory Does the same thing as \fBldap_bind()\fP but returns the LDAP result resource to be parsed with \fBldap_parse_result()\fP\&. \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bind_rdn\fP [optional] 
+.br
+\fI$bind_password\fP [optional] 
+.br
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.3 
+.RE
+.PP
+
+.SS "ldap_close ( $link_identifier)"
+Alias of \fBldap_unbind\fP \fB$link_identifier  4\&.0  5\&.0 \fP
+.SS "ldap_compare ( $link_identifier,  $dn,  $attribute,  $value,  $serverctrls = \fC[]\fP)"
+Compare value of attribute found in entry specified with DN \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dn\fP 
+.RE
+.PP
+The distinguished name of an LDAP entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$attribute\fP 
+.RE
+.PP
+The attribute name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+The compared value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+mixed \fBTRUE\fP if \fIvalue\fP matches otherwise returns \fBFALSE\fP\&. Returns -1 on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "ldap_connect ( $hostname = \fC\fBnull\fP\fP,  $port = \fC389\fP)"
+Connect to an LDAP server \fBstring $hostname [optional] \fP If you are using OpenLDAP 2\&.x\&.x you can specify a URL instead of the hostname\&. To use LDAP with SSL, compile OpenLDAP 2\&.x\&.x with SSL support, configure PHP with SSL, and set this parameter as ldaps://hostname/\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$port\fP [optional] 
+.RE
+.PP
+The port to connect to\&. Not used when using URLs\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a positive LDAP link identifier on success, or \fBFALSE\fP on error\&. When OpenLDAP 2\&.x\&.x is used, \fBldap_connect\fP will always return a resource as it does not actually connect but just initializes the connecting parameters\&. The actual connect happens with the next calls to ldap_* funcs, usually with \fBldap_bind\fP\&. 
+.RE
+.PP
+.PP
+If no arguments are specified then the link identifier of the already opened link will be returned\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_control_paged_result ( $link,  $pagesize,  $iscritical = \fC\fBfalse\fP\fP,  $cookie = \fC''\fP)"
+Send LDAP pagination control \fBresource $link \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pagesize\fP 
+.RE
+.PP
+The number of entries by page\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$iscritical\fP [optional] 
+.RE
+.PP
+Indicates whether the pagination is critical of not\&. If true and if the server doesn't support pagination, the search will return no result\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cookie\fP [optional] 
+.RE
+.PP
+An opaque structure sent by the server (\fBldap_control_paged_result_response\fP)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+Since 7\&.4 
+.RE
+.PP
+
+.SS "ldap_control_paged_result_response ( $link,  $result, & $cookie = \fC\fBnull\fP\fP, & $estimated = \fC\fBnull\fP\fP)"
+Retrieve the LDAP pagination cookie \fBresource $link \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.br
+\fI$cookie\fP [optional] 
+.RE
+.PP
+An opaque structure sent by the server\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$estimated\fP [optional] 
+.RE
+.PP
+The estimated number of entries to retrieve\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+Since 7\&.4 
+.RE
+.PP
+
+.SS "ldap_count_entries ( $link_identifier,  $result_identifier)"
+Count the number of entries in a search \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_identifier\fP 
+.RE
+.PP
+The internal LDAP result\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false number of entries in the result or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_delete ( $link_identifier,  $dn,  $serverctrls = \fC[]\fP)"
+Delete an entry from a directory \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dn\fP 
+.RE
+.PP
+The distinguished name of an LDAP entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "ldap_delete_ext ( $link_identifier,  $dn,  $serverctrls = \fC[]\fP)"
+Delete an entry from a directory Does the same thing as \fBldap_delete()\fP but returns the LDAP result resource to be parsed with \fBldap_parse_result()\fP\&. \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dn\fP 
+.RE
+.PP
+The distinguished name of an LDAP entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.3 
+.RE
+.PP
+
+.SS "ldap_dn2ufn ( $dn)"
+Convert DN to User Friendly Naming format \fBstring $dn \fP The distinguished name of an LDAP entity\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the user friendly name\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_err2str ( $errno)"
+Convert LDAP error number into string error message \fBint $errno \fP The error number\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the error message, as a string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_errno ( $link_identifier)"
+Return the LDAP error number of the last LDAP command \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int Return the LDAP error number of the last LDAP command for this link\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_error ( $link_identifier)"
+Return the LDAP error message of the last LDAP command \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string string error message\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_escape ( $value,  $ignore = \fC''\fP,  $flags = \fC0\fP)"
+Escape a string for use in an LDAP filter or DN 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP The value to escape\&. 
+.br
+\fI$ignore\fP [optional] Characters to ignore when escaping\&. 
+.br
+\fI$flags\fP [optional] The context the escaped string will be used in: LDAP_ESCAPE_FILTER for filters to be used with \fBldap_search()\fP, or LDAP_ESCAPE_DN for DNs\&. If neither flag is passed, all chars are escaped\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.6 
+.RE
+.PP
+
+.SS "ldap_exop ( $link,  $reqoid,  $reqdata = \fC\fBnull\fP\fP,  $serverctrls = \fC[]\fP, & $retdata, & $retoid)"
+Performs an extended operation on the specified link with reqoid the OID of the operation and reqdata the data\&. \fBresource $link An LDAP link identifier, returned by ldap_connect()\&.  string $reqoid The extended operation request OID\&. You may use one of LDAP_EXOP_START_TLS, LDAP_EXOP_MODIFY_PASSWD, LDAP_EXOP_REFRESH, LDAP_EXOP_WHO_AM_I, LDAP_EXOP_TURN, or a string with the OID of the operation you want to send\&.  string $reqdata [optional] The extended operation request data\&. May be NULL for some operations like LDAP_EXOP_WHO_AM_I, may also need to be BER encoded\&.  array $serverctrls [optional] If provided, a password policy request control is send with the request and this is filled with an array of LDAP Controls returned with the request\&.  string $retdata [optional] Will be filled with the extended operation response data if provided\&. If not provided you may use ldap_parse_exop on the result object later to get this data\&.  string $retoid [optional] Will be filled with the response OID if provided, usually equal to the request OID\&.  mixed When used with retdata, returns TRUE on success or FALSE on error\&. When used without retdata, returns a result identifier or FALSE on error\&.  7\&.2 \fP
+.SS "ldap_exop_passwd ( $link,  $user = \fC''\fP,  $oldpw = \fC''\fP,  $newpw = \fC''\fP, array & $serverctrls = \fC[]\fP)"
+PASSWD extended operation helper \fBresource $link An LDAP link identifier, returned by ldap_connect()\&.  string $user [optional] dn of the user to change the password of\&.  string $oldpw [optional] The old password of this user\&. May be ommited depending of server configuration\&.  string $newpw [optional] The new password for this user\&. May be omitted or empty to have a generated password\&.  array $serverctrls [optional] If provided, a password policy request control is send with the request and this is filled with an array of LDAP Controls returned with the request\&.  mixed Returns the generated password if newpw is empty or omitted\&. Otherwise returns TRUE on success and FALSE on failure\&.  7\&.2 \fP
+.SS "ldap_exop_refresh ( $link,  $dn,  $ttl)"
+Refresh extended operation helper \fBresource $link An LDAP link identifier, returned by ldap_connect()\&.  string $dn dn of the entry to refresh\&.  int $ttl $ttl Time in seconds (between 1 and 31557600) that the client requests that the entry exists in the directory before being automatically removed\&.  mixed From RFC: The responseTtl field is the time in seconds which the server chooses to have as the time-to-live field for that entry\&. It must not be any smaller than that which the client requested, and it may be larger\&. However, to allow servers to maintain a relatively accurate directory, and to prevent clients from abusing the dynamic extensions, servers are permitted to shorten a client-requested time-to-live value, down to a minimum of 86400 seconds (one day)\&. FALSE will be returned on error\&.  7\&.3 \fP
+.SS "ldap_exop_whoami ( $link)"
+WHOAMI extended operation helper \fBresource $link An LDAP link identifier, returned by ldap_connect()\&.  mixed The data returned by the server, or FALSE on error\&.  7\&.2 \fP
+.SS "ldap_explode_dn ( $dn,  $with_attrib)"
+Splits DN into its component parts \fBstring $dn \fP The distinguished name of an LDAP entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$with_attrib\fP 
+.RE
+.PP
+Used to request if the RDNs are returned with only values or their attributes as well\&. To get RDNs with the attributes (i\&.e\&. in attribute=value format) set \fIwith_attrib\fP to 0 and to get only values set it to 1\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array of all DN components\&. The first element in this array has count key and represents the number of returned values, next elements are numerically indexed DN components\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_first_attribute ( $link_identifier,  $result_entry_identifier)"
+Return first attribute \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_entry_identifier\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false the first attribute in the entry on success and \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_first_entry ( $link_identifier,  $result_identifier)"
+Return first result id \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_identifier\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource the result entry identifier for the first entry on success and \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_first_reference ( $link,  $result)"
+Return first reference \fBresource $link  resource $result  resource  4\&.0\&.5  5\&.0 \fP
+.SS "ldap_free_result ( $result_identifier)"
+Free result memory \fBresource $result_identifier  bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&.  4\&.0  5\&.0 \fP
+.SS "ldap_get_attributes ( $link_identifier,  $result_entry_identifier)"
+Get attributes from a search result entry \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_entry_identifier\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array a complete entry information in a multi-dimensional array on success and \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_get_dn ( $link_identifier,  $result_entry_identifier)"
+Get the DN of a result entry \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_entry_identifier\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false the DN of the result entry and \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_get_entries ( $link_identifier,  $result_identifier)"
+Get all result entries \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_identifier\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array a complete result information in a multi-dimensional array on success and \fBFALSE\fP on error\&. 
+.RE
+.PP
+.PP
+The structure of the array is as follows\&. The attribute index is converted to lowercase\&. (Attributes are case-insensitive for directory servers, but not when used as array indices\&.) 
+.PP
+.nf
+
+return_value['count'] = number of entries in the result
+return_value[0] : refers to the details of first entry
+return_value[i]['dn'] = DN of the ith entry in the result
+return_value[i]['count'] = number of attributes in ith entry
+return_value[i][j] = NAME of the jth attribute in the ith entry in the result
+return_value[i]['attribute']['count'] = number of values for
+attribute in ith entry
+return_value[i]['attribute'][j] = jth value of attribute in ith entry
+.fi
+.PP
+ 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_get_option ( $link_identifier,  $option, & $retval)"
+Get the current value for given option \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$option\fP 
+.RE
+.PP
+The parameter \fIoption\fP can be one of: 
+.PP
+Option 
+.PP
+Type  
+.PP
+\fBLDAP_OPT_DEREF\fP 
+.PP
+integer  
+.PP
+\fBLDAP_OPT_SIZELIMIT\fP 
+.PP
+integer  
+.PP
+\fBLDAP_OPT_TIMELIMIT\fP 
+.PP
+integer  
+.PP
+\fBLDAP_OPT_NETWORK_TIMEOUT\fP 
+.PP
+integer  
+.PP
+\fBLDAP_OPT_PROTOCOL_VERSION\fP 
+.PP
+integer  
+.PP
+\fBLDAP_OPT_ERROR_NUMBER\fP 
+.PP
+integer  
+.PP
+\fBLDAP_OPT_REFERRALS\fP 
+.PP
+bool  
+.PP
+\fBLDAP_OPT_RESTART\fP 
+.PP
+bool  
+.PP
+\fBLDAP_OPT_HOST_NAME\fP 
+.PP
+string  
+.PP
+\fBLDAP_OPT_ERROR_STRING\fP 
+.PP
+string  
+.PP
+\fBLDAP_OPT_MATCHED_DN\fP 
+.PP
+string  
+.PP
+\fBLDAP_OPT_SERVER_CONTROLS\fP 
+.PP
+array  
+.PP
+\fBLDAP_OPT_CLIENT_CONTROLS\fP 
+.PP
+array  
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retval\fP 
+.RE
+.PP
+This will be set to the option value\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_get_values ( $link_identifier,  $result_entry_identifier,  $attribute)"
+Get all values from a result entry \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_entry_identifier\fP 
+.br
+\fI$attribute\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array of values for the attribute on success and \fBFALSE\fP on error\&. The number of values can be found by indexing 'count' in the resultant array\&. Individual values are accessed by integer index in the array\&. The first index is 0\&. 
+.RE
+.PP
+.PP
+LDAP allows more than one entry for an attribute, so it can, for example, store a number of email addresses for one person's directory entry all labeled with the attribute 'mail' return_value['count'] = number of values for attribute return_value[0] = first value of attribute return_value[i] = ith value of attribute 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_get_values_len ( $link_identifier,  $result_entry_identifier,  $attribute)"
+Get all binary values from a result entry \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_entry_identifier\fP 
+.br
+\fI$attribute\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array of values for the attribute on success and \fBFALSE\fP on error\&. Individual values are accessed by integer index in the array\&. The first index is 0\&. The number of values can be found by indexing 'count' in the resultant array\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_list ( $link_identifier,  $base_dn,  $filter, array $attributes = \fC\fBnull\fP\fP,  $attrsonly = \fC\fBnull\fP\fP,  $sizelimit = \fC\fBnull\fP\fP,  $timelimit = \fC\fBnull\fP\fP,  $deref = \fC\fBnull\fP\fP,  $serverctrls = \fC[]\fP)"
+Single-level search \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$base_dn\fP 
+.RE
+.PP
+The base DN for the directory\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filter\fP 
+.br
+\fI$attributes\fP [optional] 
+.RE
+.PP
+An array of the required attributes, e\&.g\&. array('mail', 'sn', 'cn')\&. Note that the 'dn' is always returned irrespective of which attributes types are requested\&. 
+.PP
+Using this parameter is much more efficient than the default action (which is to return all attributes and their associated values)\&. The use of this parameter should therefore be considered good practice\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$attrsonly\fP [optional] 
+.RE
+.PP
+Should be set to 1 if only attribute types are wanted\&. If set to 0 both attributes types and attribute values are fetched which is the default behaviour\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sizelimit\fP [optional] 
+.RE
+.PP
+Enables you to limit the count of entries fetched\&. Setting this to 0 means no limit\&. 
+.PP
+This parameter can NOT override server-side preset sizelimit\&. You can set it lower though\&. 
+.PP
+Some directory server hosts will be configured to return no more than a preset number of entries\&. If this occurs, the server will indicate that it has only returned a partial results set\&. This also occurs if you use this parameter to limit the count of fetched entries\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timelimit\fP [optional] 
+.RE
+.PP
+Sets the number of seconds how long is spend on the search\&. Setting this to 0 means no limit\&. 
+.PP
+This parameter can NOT override server-side preset timelimit\&. You can set it lower though\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$deref\fP [optional] 
+.RE
+.PP
+Specifies how aliases should be handled during the search\&. It can be one of the following: \fBLDAP_DEREF_NEVER\fP - (default) aliases are never dereferenced\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a search result identifier or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_mod_add ( $link_identifier,  $dn, array $entry,  $serverctrls = \fC[]\fP)"
+Add attribute values to current attributes \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dn\fP 
+.RE
+.PP
+The distinguished name of an LDAP entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$entry\fP 
+.br
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "ldap_mod_add_ext ( $link_identifier,  $dn, array $entry,  $serverctrls = \fC[]\fP)"
+Add attribute values to current attributes Does the same thing as \fBldap_mod_add()\fP but returns the LDAP result resource to be parsed with \fBldap_parse_result()\fP\&. \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dn\fP 
+.RE
+.PP
+The distinguished name of an LDAP entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$entry\fP 
+.br
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "ldap_mod_del ( $link_identifier,  $dn, array $entry,  $serverctrls = \fC[]\fP)"
+Delete attribute values from current attributes \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dn\fP 
+.RE
+.PP
+The distinguished name of an LDAP entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$entry\fP 
+.br
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "ldap_mod_del_ext ( $link_identifier,  $dn, array $entry,  $serverctrls = \fC[]\fP)"
+Delete attribute values from current attributes Does the same thing as \fBldap_mod_del()\fP but returns the LDAP result resource to be parsed with \fBldap_parse_result()\fP\&. \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dn\fP 
+.RE
+.PP
+The distinguished name of an LDAP entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$entry\fP 
+.br
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.3 
+.RE
+.PP
+
+.SS "ldap_mod_replace ( $link_identifier,  $dn, array $entry,  $serverctrls = \fC[]\fP)"
+Replace attribute values with new ones \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dn\fP 
+.RE
+.PP
+The distinguished name of an LDAP entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$entry\fP 
+.br
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "ldap_mod_replace_ext ( $link_identifier,  $dn, array $entry,  $serverctrls = \fC[]\fP)"
+Replace attribute values with new ones Does the same thing as \fBldap_mod_replace()\fP but returns the LDAP result resource to be parsed with \fBldap_parse_result()\fP\&. \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dn\fP 
+.RE
+.PP
+The distinguished name of an LDAP entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$entry\fP 
+.br
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.3 
+.RE
+.PP
+
+.SS "ldap_modify ( $link_identifier,  $dn, array $entry,  $serverctrls = \fC[]\fP)"
+This function is an alias of: \fBldap_mod_replace()\fP\&. Replace attribute values with new ones \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dn\fP 
+.RE
+.PP
+The distinguished name of an LDAP entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$entry\fP 
+.br
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "ldap_modify_batch ( $link_identifier,  $dn,  $entry,  $serverctrls = \fC[]\fP)"
+(PHP 5\&.4 >= 5\&.4\&.26, PHP 5\&.5 >= 5\&.5\&.10, PHP 5\&.6 >= 5\&.6\&.0) Batch and execute modifications on an LDAP entry \fB$link_identifier \fP An LDAP link identifier, returned by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBldap_connect()\fP}\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dn\fP 
+.RE
+.PP
+The distinguished name of an LDAP entity\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$entry\fP 
+.RE
+.PP
+An array that specifies the modifications to make\&. Each entry in this array is an associative array with two or three keys: \fIattrib\fP maps to the name of the attribute to modify, \fImodtype\fP maps to the type of modification to perform, and (depending on the type of modification) \fIvalues\fP maps to an array of attribute values relevant to the modification\&. 
+.PP
+Possible values for \fImodtype\fP include: 
+.PP
+.IP "\fB\fBLDAP_MODIFY_BATCH_ADD\fP \fP" 1c
+.PP
+.PP
+Each value specified through \fIvalues\fP is added (as an additional value) to the attribute named by \fIattrib\fP\&. 
+.PP
+.PP
+.IP "\fB\fBLDAP_MODIFY_BATCH_REMOVE\fP \fP" 1c
+.PP
+.PP
+Each value specified through \fIvalues\fP is removed from the attribute named by \fIattrib\fP\&. Any value of the attribute not contained in the \fIvalues\fP array will remain untouched\&. 
+.PP
+.IP "\fB\fBLDAP_MODIFY_BATCH_REMOVE_ALL\fP \fP" 1c
+.PP
+.PP
+All values are removed from the attribute named by \fIattrib\fP\&. \fBA\fP \fIvalues\fP entry must not be provided\&. 
+.PP
+.PP
+.IP "\fB\fBLDAP_MODIFY_BATCH_REPLACE\fP \fP" 1c
+.PP
+.PP
+All current values of the attribute named by \fIattrib\fP are replaced with the values specified through \fIvalues\fP\&. 
+.PP
+.PP
+.PP
+Note that any value for \fIattrib\fP must be a string, any value for \fIvalues\fP must be an array of strings, and any value for \fImodtype\fP must be one of the \fBLDAP_MODIFY_BATCH_*\fP constants listed above\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 
+.RE
+.PP
+
+.SS "ldap_next_attribute ( $link_identifier,  $result_entry_identifier)"
+Get the next attribute in result \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_entry_identifier\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false the next attribute in an entry on success and \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_next_entry ( $link_identifier,  $result_entry_identifier)"
+Get next result entry \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_entry_identifier\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false entry identifier for the next entry in the result whose entries are being read starting with \fBldap_first_entry\fP\&. If there are no more entries in the result then it returns \fBFALSE\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_next_reference ( $link,  $entry)"
+Get next reference \fBresource $link  resource $entry  resource  4\&.0\&.5  5\&.0 \fP
+.SS "ldap_parse_exop ( $link,  $result, & $retdata, & $retoid)"
+Parse LDAP extended operation data from result object result \fBresource $link An LDAP link identifier, returned by ldap_connect()\&.  resource $result An LDAP result resource, returned by ldap_exop()\&.  string $retdata [optional] Will be filled by the response data\&.  string $retoid [optional] Will be filled by the response OID\&.  bool Returns TRUE on success or FALSE on failure\&.  7\&.2 \fP
+.SS "ldap_parse_reference ( $link,  $entry, array & $referrals)"
+Extract information from reference entry \fBresource $link  resource $entry  array $referrals  bool  4\&.0\&.5  5\&.0 \fP
+.SS "ldap_parse_result ( $link,  $result, & $errcode, & $matcheddn = \fC\fBnull\fP\fP, & $errmsg = \fC\fBnull\fP\fP, array & $referrals = \fC\fBnull\fP\fP, & $serverctrls = \fC[]\fP)"
+Extract information from result \fBresource $link  resource $result  int $errcode  string $matcheddn [optional]  string $errmsg [optional]  array $referrals [optional]  array $serverctrls [optional] An array of LDAP Controls which have been sent with the response\&.  bool  4\&.0\&.5  5\&.0 \fP
+.SS "ldap_read ( $link_identifier,  $base_dn,  $filter, array $attributes = \fC\fBnull\fP\fP,  $attrsonly = \fC\fBnull\fP\fP,  $sizelimit = \fC\fBnull\fP\fP,  $timelimit = \fC\fBnull\fP\fP,  $deref = \fC\fBnull\fP\fP,  $serverctrls = \fC[]\fP)"
+Read an entry \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$base_dn\fP 
+.RE
+.PP
+The base DN for the directory\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filter\fP 
+.RE
+.PP
+An empty filter is not allowed\&. If you want to retrieve absolutely all information for this entry, use a filter of objectClass=*\&. If you know which entry types are used on the directory server, you might use an appropriate filter such as objectClass=inetOrgPerson\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$attributes\fP [optional] 
+.RE
+.PP
+An array of the required attributes, e\&.g\&. array('mail', 'sn', 'cn')\&. Note that the 'dn' is always returned irrespective of which attributes types are requested\&. 
+.PP
+Using this parameter is much more efficient than the default action (which is to return all attributes and their associated values)\&. The use of this parameter should therefore be considered good practice\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$attrsonly\fP [optional] 
+.RE
+.PP
+Should be set to 1 if only attribute types are wanted\&. If set to 0 both attributes types and attribute values are fetched which is the default behaviour\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sizelimit\fP [optional] 
+.RE
+.PP
+Enables you to limit the count of entries fetched\&. Setting this to 0 means no limit\&. 
+.PP
+This parameter can NOT override server-side preset sizelimit\&. You can set it lower though\&. 
+.PP
+Some directory server hosts will be configured to return no more than a preset number of entries\&. If this occurs, the server will indicate that it has only returned a partial results set\&. This also occurs if you use this parameter to limit the count of fetched entries\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timelimit\fP [optional] 
+.RE
+.PP
+Sets the number of seconds how long is spend on the search\&. Setting this to 0 means no limit\&. 
+.PP
+This parameter can NOT override server-side preset timelimit\&. You can set it lower though\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$deref\fP [optional] 
+.RE
+.PP
+Specifies how aliases should be handled during the search\&. It can be one of the following: \fBLDAP_DEREF_NEVER\fP - (default) aliases are never dereferenced\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a search result identifier or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_rename ( $link_identifier,  $dn,  $newrdn,  $newparent,  $deleteoldrdn,  $serverctrls = \fC[]\fP)"
+Modify the name of an entry \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dn\fP 
+.RE
+.PP
+The distinguished name of an LDAP entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$newrdn\fP 
+.RE
+.PP
+The new RDN\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$newparent\fP 
+.RE
+.PP
+The new parent/superior entry\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$deleteoldrdn\fP 
+.RE
+.PP
+If \fBTRUE\fP the old RDN value(s) is removed, else the old RDN value(s) is retained as non-distinguished values of the entry\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "ldap_rename_ext ( $link_identifier,  $dn,  $newrdn,  $newparent,  $deleteoldrdn,  $serverctrls = \fC[]\fP)"
+Modify the name of an entry Does the same thing as \fBldap_rename()\fP but returns the LDAP result resource to be parsed with \fBldap_parse_result()\fP\&. \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dn\fP 
+.RE
+.PP
+The distinguished name of an LDAP entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$newrdn\fP 
+.RE
+.PP
+The new RDN\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$newparent\fP 
+.RE
+.PP
+The new parent/superior entry\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$deleteoldrdn\fP 
+.RE
+.PP
+If \fBTRUE\fP the old RDN value(s) is removed, else the old RDN value(s) is retained as non-distinguished values of the entry\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.3 
+.RE
+.PP
+
+.SS "ldap_sasl_bind ( $link,  $binddn = \fC\fBnull\fP\fP,  $password = \fC\fBnull\fP\fP,  $sasl_mech = \fC\fBnull\fP\fP,  $sasl_realm = \fC\fBnull\fP\fP,  $sasl_authc_id = \fC\fBnull\fP\fP,  $sasl_authz_id = \fC\fBnull\fP\fP,  $props = \fC\fBnull\fP\fP)"
+Bind to LDAP directory using SASL \fBresource $link  string $binddn [optional]  string $password [optional]  string $sasl_mech [optional]  string $sasl_realm [optional]  string $sasl_authc_id [optional]  string $sasl_authz_id [optional]  string $props [optional]  bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&.  5\&.0 \fP
+.SS "ldap_search ( $link_identifier,  $base_dn,  $filter, array $attributes = \fC\fBnull\fP\fP,  $attrsonly = \fC\fBnull\fP\fP,  $sizelimit = \fC\fBnull\fP\fP,  $timelimit = \fC\fBnull\fP\fP,  $deref = \fC\fBnull\fP\fP,  $serverctrls = \fC[]\fP)"
+Search LDAP tree \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$base_dn\fP 
+.RE
+.PP
+The base DN for the directory\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filter\fP 
+.RE
+.PP
+The search filter can be simple or advanced, using boolean operators in the format described in the LDAP documentation (see the Netscape \fBDirectory\fP SDK for full information on filters)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$attributes\fP [optional] 
+.RE
+.PP
+An array of the required attributes, e\&.g\&. array('mail', 'sn', 'cn')\&. Note that the 'dn' is always returned irrespective of which attributes types are requested\&. 
+.PP
+Using this parameter is much more efficient than the default action (which is to return all attributes and their associated values)\&. The use of this parameter should therefore be considered good practice\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$attrsonly\fP [optional] 
+.RE
+.PP
+Should be set to 1 if only attribute types are wanted\&. If set to 0 both attributes types and attribute values are fetched which is the default behaviour\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sizelimit\fP [optional] 
+.RE
+.PP
+Enables you to limit the count of entries fetched\&. Setting this to 0 means no limit\&. 
+.PP
+This parameter can NOT override server-side preset sizelimit\&. You can set it lower though\&. 
+.PP
+Some directory server hosts will be configured to return no more than a preset number of entries\&. If this occurs, the server will indicate that it has only returned a partial results set\&. This also occurs if you use this parameter to limit the count of fetched entries\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timelimit\fP [optional] 
+.RE
+.PP
+Sets the number of seconds how long is spend on the search\&. Setting this to 0 means no limit\&. 
+.PP
+This parameter can NOT override server-side preset timelimit\&. You can set it lower though\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$deref\fP [optional] 
+.RE
+.PP
+Specifies how aliases should be handled during the search\&. It can be one of the following: \fBLDAP_DEREF_NEVER\fP - (default) aliases are never dereferenced\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$serverctrls\fP [optional] Array of LDAP Controls to send with the request\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a search result identifier or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_set_option ( $link_identifier,  $option,  $newval)"
+Set the value of the given option \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$option\fP 
+.RE
+.PP
+The parameter \fIoption\fP can be one of: 
+.PP
+Option 
+.PP
+Type 
+.PP
+Available since  
+.PP
+\fBLDAP_OPT_DEREF\fP 
+.PP
+integer 
+.PP
+\fBLDAP_OPT_SIZELIMIT\fP 
+.PP
+integer 
+.PP
+\fBLDAP_OPT_TIMELIMIT\fP 
+.PP
+integer 
+.PP
+\fBLDAP_OPT_NETWORK_TIMEOUT\fP 
+.PP
+integer 
+.PP
+PHP 5\&.3\&.0  
+.PP
+\fBLDAP_OPT_PROTOCOL_VERSION\fP 
+.PP
+integer 
+.PP
+\fBLDAP_OPT_ERROR_NUMBER\fP 
+.PP
+integer 
+.PP
+\fBLDAP_OPT_REFERRALS\fP 
+.PP
+bool 
+.PP
+\fBLDAP_OPT_RESTART\fP 
+.PP
+bool 
+.PP
+\fBLDAP_OPT_HOST_NAME\fP 
+.PP
+string 
+.PP
+\fBLDAP_OPT_ERROR_STRING\fP 
+.PP
+string 
+.PP
+\fBLDAP_OPT_MATCHED_DN\fP 
+.PP
+string 
+.PP
+\fBLDAP_OPT_SERVER_CONTROLS\fP 
+.PP
+array 
+.PP
+\fBLDAP_OPT_CLIENT_CONTROLS\fP 
+.PP
+array 
+.PP
+\fBLDAP_OPT_SERVER_CONTROLS\fP and \fBLDAP_OPT_CLIENT_CONTROLS\fP require a list of controls, this means that the value must be an array of controls\&. \fBA\fP control consists of an oid identifying the control, an optional value, and an optional flag for criticality\&. In PHP a control is given by an array containing an element with the key oid and string value, and two optional elements\&. The optional elements are key value with string value and key iscritical with boolean value\&. iscritical defaults to \fBFALSE\fP if not supplied\&. See draft-ietf-ldapext-ldap-c-api-xx\&.txt for details\&. See also the second example below\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$newval\fP 
+.RE
+.PP
+The new value for the specified \fIoption\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_set_rebind_proc ( $link, callable $callback)"
+Set a callback function to do re-binds on referral chasing \fBresource $link  callable $callback  bool  4\&.2  5\&.0 \fP
+.SS "ldap_sort ( $link,  $result,  $sortfilter)"
+Sort LDAP result entries \fBresource $link \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP 
+.RE
+.PP
+An search result identifier, returned by \fBldap_search\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sortfilter\fP 
+.RE
+.PP
+The attribute to use as a key in the sort\&. 
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.0 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ldap_start_tls ( $link)"
+Start TLS \fBresource $link  bool  4\&.2  5\&.0 \fP
+.SS "ldap_t61_to_8859 ( $value)"
+Translate t61 characters to 8859 characters \fBstring $value  string  4\&.0\&.2  5\&.0  7\&.0 \fP
+.SS "ldap_unbind ( $link_identifier)"
+Unbind from LDAP directory \fBresource $link_identifier \fP An LDAP link identifier, returned by \fBldap_connect\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const LDAP_CONTROL_ASSERT '1\&.3\&.6\&.1\&.1\&.12'"
+Control Constant - Assertion (» RFC 4528) \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_DONTUSECOPY '1\&.3\&.6\&.1\&.1\&.22'"
+Control Constant - Don't Use Copy (» RFC 6171) \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_MANAGEDSAIT '2\&.16\&.840\&.1\&.113730\&.3\&.4\&.2'"
+Control Constant - Manage DSA IT (» RFC 3296) \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_PAGEDRESULTS '1\&.2\&.840\&.113556\&.1\&.4\&.319'"
+Control Constant - Paged results (» RFC 2696) \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_PASSWORDPOLICYREQUEST '1\&.3\&.6\&.1\&.4\&.1\&.42\&.2\&.27\&.8\&.5\&.1'"
+Control Constant - Password Policy Request \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_PASSWORDPOLICYRESPONSE '1\&.3\&.6\&.1\&.4\&.1\&.42\&.2\&.27\&.8\&.5\&.1'"
+Control Constant - Password Policy Response \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_POST_READ '1\&.3\&.6\&.1\&.1\&.13\&.2'"
+Control Constant - Post read (» RFC 4527) \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_PRE_READ '1\&.3\&.6\&.1\&.1\&.13\&.1'"
+Control Constant - Pre read (» RFC 4527) \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_SORTREQUEST '1\&.2\&.840\&.113556\&.1\&.4\&.473'"
+Control Constant - Sort request (» RFC 2891) \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_SORTRESPONSE '1\&.2\&.840\&.113556\&.1\&.4\&.474'"
+Control Constant - Sort response (» RFC 2891) \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_SUBENTRIES '1\&.3\&.6\&.1\&.4\&.1\&.4203\&.1\&.10\&.1'"
+Control Constant - Subentries (» RFC 3672) \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_SYNC '1\&.3\&.6\&.1\&.4\&.1\&.4203\&.1\&.9\&.1\&.1'"
+Control Constant - Content Synchronization Operation (» RFC 4533) \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_SYNC_DONE '1\&.3\&.6\&.1\&.4\&.1\&.4203\&.1\&.9\&.1\&.3'"
+Control Constant - Content Synchronization Operation Done (» RFC 4533) \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_SYNC_STATE '1\&.3\&.6\&.1\&.4\&.1\&.4203\&.1\&.9\&.1\&.2'"
+Control Constant - Content Synchronization Operation State (» RFC 4533) \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_VALUESRETURNFILTER '1\&.2\&.826\&.0\&.1\&.3344810\&.2\&.3'"
+Control Constant - Filter returned values (» RFC 3876) \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_VLVREQUEST '2\&.16\&.840\&.1\&.113730\&.3\&.4\&.9'"
+Control Constant - Virtual List View Request \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_VLVRESPONSE '2\&.16\&.840\&.1\&.113730\&.3\&.4\&.10'"
+Control Constant - Virtual List View Response \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_X_DOMAIN_SCOPE '1\&.2\&.840\&.113556\&.1\&.4\&.1339'"
+Control Constant - Active \fBDirectory\fP Domain Scope \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_X_EXTENDED_DN '1\&.2\&.840\&.113556\&.1\&.4\&.529'"
+Control Constant - Active \fBDirectory\fP Extended DN \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_X_INCREMENTAL_VALUES '1\&.2\&.840\&.113556\&.1\&.4\&.802'"
+Control Constant - Active \fBDirectory\fP Incremental Values \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_X_PERMISSIVE_MODIFY '1\&.2\&.840\&.113556\&.1\&.4\&.1413'"
+Control Constant - Active \fBDirectory\fP Permissive Modify \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_X_SEARCH_OPTIONS '1\&.2\&.840\&.113556\&.1\&.4\&.1340'"
+Control Constant - Active \fBDirectory\fP Search Options \fB7\&.3 \fP
+.SS "const LDAP_CONTROL_X_TREE_DELETE '1\&.2\&.840\&.113556\&.1\&.4\&.805'"
+Control Constant - Active \fBDirectory\fP Tree Delete \fB7\&.3 \fP
+.SS "const LDAP_DEREF_ALWAYS 3"
+
+.SS "const LDAP_DEREF_FINDING 2"
+
+.SS "const LDAP_DEREF_NEVER 0"
+
+.SS "const LDAP_DEREF_SEARCHING 1"
+
+.SS "const LDAP_ESCAPE_DN 2"
+
+.SS "const LDAP_ESCAPE_FILTER 1"
+
+.SS "const LDAP_EXOP_MODIFY_PASSWD '1\&.3\&.6\&.1\&.4\&.1\&.4203\&.1\&.11\&.1'"
+Extended Operation constant - Modify password 
+.SS "const LDAP_EXOP_REFRESH '1\&.3\&.6\&.1\&.4\&.1\&.1466\&.101\&.119\&.1'"
+Extended Operation Constant - Refresh 
+.SS "const LDAP_EXOP_START_TLS '1\&.3\&.6\&.1\&.4\&.1\&.1466\&.20037'"
+Extended Operation constant - Start TLS 
+.SS "const LDAP_EXOP_TURN '1\&.3\&.6\&.1\&.1\&.19'"
+Extended Operation Constant - Turn 
+.SS "const LDAP_EXOP_WHO_AM_I '1\&.3\&.6\&.1\&.4\&.1\&.4203\&.1\&.11\&.3'"
+Extended Operation Constant - WHOAMI 
+.SS "const LDAP_MODIFY_BATCH_ADD 1"
+
+.SS "const LDAP_MODIFY_BATCH_ATTRIB 'attrib'"
+
+.SS "const LDAP_MODIFY_BATCH_MODTYPE 'modtype'"
+
+.SS "const LDAP_MODIFY_BATCH_REMOVE 2"
+
+.SS "const LDAP_MODIFY_BATCH_REMOVE_ALL 18"
+
+.SS "const LDAP_MODIFY_BATCH_REPLACE 3"
+
+.SS "const LDAP_MODIFY_BATCH_VALUES 'values'"
+
+.SS "const LDAP_OPT_CLIENT_CONTROLS 19"
+Specifies a default list of client controls to be processed with each request\&. \fBhttps://php\&.net/manual/en/ldap\&.constants\&.php\fP
+.SS "const LDAP_OPT_DEBUG_LEVEL 20481"
+Specifies a bitwise level for debug traces\&. \fBhttps://php\&.net/manual/en/ldap\&.constants\&.php\fP
+.SS "const LDAP_OPT_DEREF 2"
+Specifies alternative rules for following aliases at the server\&. \fBhttps://php\&.net/manual/en/ldap\&.constants\&.php\fP
+.SS "const LDAP_OPT_DIAGNOSTIC_MESSAGE 50"
+
+.SS "const LDAP_OPT_ERROR_NUMBER 49"
+
+.SS "const LDAP_OPT_ERROR_STRING 50"
+
+.SS "const LDAP_OPT_HOST_NAME 48"
+
+.SS "const LDAP_OPT_MATCHED_DN 51"
+
+.SS "const LDAP_OPT_NETWORK_TIMEOUT 20485"
+Option for \fBldap_set_option\fP to allow setting network timeout\&. (Available as of PHP 5\&.3\&.0) \fBhttps://php\&.net/manual/en/ldap\&.constants\&.php\fP
+.SS "const LDAP_OPT_PROTOCOL_VERSION 17"
+Specifies the LDAP protocol to be used (V2 or V3)\&. \fBhttps://php\&.net/manual/en/ldap\&.constants\&.php\fP
+.SS "const LDAP_OPT_REFERRALS 8"
+Specifies whether to automatically follow referrals returned by the LDAP server\&. \fBhttps://php\&.net/manual/en/ldap\&.constants\&.php\fP
+.SS "const LDAP_OPT_RESTART 9"
+
+.SS "const LDAP_OPT_SERVER_CONTROLS 18"
+Specifies a default list of server controls to be sent with each request\&. \fBhttps://php\&.net/manual/en/ldap\&.constants\&.php\fP
+.SS "const LDAP_OPT_SIZELIMIT 3"
+Specifies the maximum number of entries that can be returned on a search operation\&. 
+.PP
+The actual size limit for operations is also bounded by the server's configured maximum number of return entries\&. The lesser of these two settings is the actual size limit\&. \fBhttps://php\&.net/manual/en/ldap\&.constants\&.php\fP
+.SS "const LDAP_OPT_TIMELIMIT 4"
+Specifies the number of seconds to wait for search results\&. The actual time limit for operations is also bounded by the server's configured maximum time\&. The lesser of these two settings is the actual time limit\&. \fBhttps://php\&.net/manual/en/ldap\&.constants\&.php\fP
+.SS "const LDAP_OPT_TIMEOUT 20482"
+
+.SS "const LDAP_OPT_X_KEEPALIVE_IDLE 25344"
+
+.SS "const LDAP_OPT_X_KEEPALIVE_INTERVAL 25346"
+
+.SS "const LDAP_OPT_X_KEEPALIVE_PROBES 25345"
+
+.SS "const LDAP_OPT_X_SASL_AUTHCID 24834"
+
+.SS "const LDAP_OPT_X_SASL_AUTHZID 24835"
+
+.SS "const LDAP_OPT_X_SASL_MECH 24832"
+
+.SS "const LDAP_OPT_X_SASL_NOCANON 24843"
+
+.SS "const LDAP_OPT_X_SASL_REALM 24833"
+
+.SS "const LDAP_OPT_X_SASL_USERNAME 24844"
+
+.SS "const LDAP_OPT_X_TLS_ALLOW 3"
+
+.SS "const LDAP_OPT_X_TLS_CACERTDIR 24579"
+Specifies the path of the directory containing CA certificates\&. \fB7\&.1 \fP
+.SS "const LDAP_OPT_X_TLS_CACERTFILE 24578"
+Specifies the full-path of the CA certificate file\&. \fB7\&.1 \fP
+.SS "const LDAP_OPT_X_TLS_CERTFILE 24580"
+
+.SS "const LDAP_OPT_X_TLS_CIPHER_SUITE 24584"
+
+.SS "const LDAP_OPT_X_TLS_CRL_ALL 2"
+
+.SS "const LDAP_OPT_X_TLS_CRL_NONE 0"
+
+.SS "const LDAP_OPT_X_TLS_CRL_PEER 1"
+
+.SS "const LDAP_OPT_X_TLS_CRLCHECK 24587"
+
+.SS "const LDAP_OPT_X_TLS_CRLFILE 24592"
+
+.SS "const LDAP_OPT_X_TLS_DEMAND 2"
+
+.SS "const LDAP_OPT_X_TLS_DHFILE 24590"
+
+.SS "const LDAP_OPT_X_TLS_HARD 1"
+
+.SS "const LDAP_OPT_X_TLS_KEYFILE 24581"
+
+.SS "const LDAP_OPT_X_TLS_NEVER 0"
+
+.SS "const LDAP_OPT_X_TLS_PACKAGE 24593"
+
+.SS "const LDAP_OPT_X_TLS_PROTOCOL_MIN 24583"
+
+.SS "const LDAP_OPT_X_TLS_PROTOCOL_SSL2 512"
+
+.SS "const LDAP_OPT_X_TLS_PROTOCOL_SSL3 768"
+
+.SS "const LDAP_OPT_X_TLS_PROTOCOL_TLS1_0 769"
+
+.SS "const LDAP_OPT_X_TLS_PROTOCOL_TLS1_1 770"
+
+.SS "const LDAP_OPT_X_TLS_PROTOCOL_TLS1_2 771"
+
+.SS "const LDAP_OPT_X_TLS_RANDOM_FILE 24585"
+
+.SS "const LDAP_OPT_X_TLS_REQUIRE_CERT 24582"
+
+.SS "const LDAP_OPT_X_TLS_TRY 4"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,982 @@
+\hypertarget{zlib_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/zlib/zlib.php File Reference}
+\label{zlib_8php}\index{vendor/jetbrains/phpstorm-\/stubs/zlib/zlib.php@{vendor/jetbrains/phpstorm-\/stubs/zlib/zlib.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zlib_8php_ac23fb7205748d55d5feaa1eba04c77ea}{readgzfile}} (\$filename, \$use\+\_\+include\+\_\+path=0)
+\item 
+\mbox{\hyperlink{zlib_8php_aaa17156ae89aa5045606f093837ee373}{gzrewind}} (\$zp)
+\item 
+\mbox{\hyperlink{zlib_8php_a83474e3f3c6c7d976b474547c2fc7264}{gzclose}} (\$zp)
+\item 
+\mbox{\hyperlink{zlib_8php_a77c38265f8d2b337f0f873949bc3b366}{gzeof}} (\$zp)
+\item 
+\mbox{\hyperlink{zlib_8php_a095e9ce1beb6999e73407bacc167a202}{gzgetc}} (\$zp)
+\item 
+\mbox{\hyperlink{zlib_8php_ac1a297b4e7ffead02861dd95b72b066c}{gzgets}} (\$zp, \$length)
+\item 
+\mbox{\hyperlink{zlib_8php_a049818593078fbd46491f26a30725fde}{gzgetss}} (\$zp, \$length, \$allowable\+\_\+tags=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{zlib_8php_ada38e2b1f566af45281108a05ff6fe8b}{gzread}} (\$zp, \$length)
+\item 
+\mbox{\hyperlink{zlib_8php_a685cf76ca78f0bdb1c4a41362e8f5118}{gzopen}} (\$filename, \$mode, \$use\+\_\+include\+\_\+path=0)
+\item 
+\mbox{\hyperlink{zlib_8php_a22e89b900befb2d0de35b75d96296ee4}{gzpassthru}} (\$zp)
+\item 
+\mbox{\hyperlink{zlib_8php_a55f5231b49e5d19b27e728a5777b543d}{gzseek}} (\$zp, \$offset, \$whence=\mbox{\hyperlink{standard__defines_8php_a84ad37a27829430e57c9e58467d4605b}{S\+E\+E\+K\+\_\+\+S\+ET}})
+\item 
+\mbox{\hyperlink{zlib_8php_a9fc07f715644f6406dbfab5649be31e0}{gztell}} (\$zp)
+\item 
+\mbox{\hyperlink{zlib_8php_a72845228be7d1efeb01c01ecaa598e57}{gzwrite}} (\$zp, \$string, \$length=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{zlib_8php_a450aa4291c844a80c49009406eb1517d}{gzputs}} (\$fp, \$str, \$length)
+\item 
+\mbox{\hyperlink{zlib_8php_a8f21de6c0d994c993997a7e1bac94b87}{gzfile}} (\$filename, \$use\+\_\+include\+\_\+path=0)
+\item 
+\mbox{\hyperlink{zlib_8php_a8905cff4f3ca05c3505281d7c2369e4f}{gzcompress}} (\$data, \$level=-\/1, \$encoding=\mbox{\hyperlink{zlib_8php_a6bd98e5ada1637270de865096fa3e32c}{Z\+L\+I\+B\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+D\+E\+F\+L\+A\+TE}})
+\item 
+\mbox{\hyperlink{zlib_8php_ad94717d3b745d63a14b2a3cfb3884481}{gzuncompress}} (\$data, \$length=0)
+\item 
+\mbox{\hyperlink{zlib_8php_ac61618d3af20e5b282da1436c624bd9c}{gzdeflate}} (\$data, \$level=-\/1, \$encoding=\mbox{\hyperlink{zlib_8php_aa3617054585e49f6b6cd8eae6f8f7380}{Z\+L\+I\+B\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+R\+AW}})
+\item 
+\mbox{\hyperlink{zlib_8php_a9e7f7f3c2997ef90dec974a295649e05}{gzinflate}} (\$data, \$length=0)
+\item 
+\mbox{\hyperlink{zlib_8php_acec36d6f7da45aaefdd557bbceb3e3f3}{gzencode}} (\$data, \$level=-\/1, \$encoding\+\_\+mode=\mbox{\hyperlink{zlib_8php_a9abaf24aaadf2b44aee001e9c490b15b}{F\+O\+R\+C\+E\+\_\+\+G\+Z\+IP}})
+\item 
+\mbox{\hyperlink{zlib_8php_a5c4fd9a7fe43b6b0302286e0f5d2bdb0}{gzdecode}} (\$data, \$length=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{zlib_8php_a8a23fda0c185b034545dae57a2925062}{zlib\+\_\+encode}} (\$data, \$encoding, \$level)
+\item 
+\mbox{\hyperlink{zlib_8php_a8702770995cacdb57d968bf15f0759b2}{zlib\+\_\+decode}} (\$data, \$max\+\_\+decoded\+\_\+len=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{zlib_8php_ac30d744fa245f1a078d2e56588f28573}{zlib\+\_\+get\+\_\+coding\+\_\+type}} ()
+\item 
+\mbox{\hyperlink{zlib_8php_afbac0bd08d730404602e1ff6ea3bf324}{ob\+\_\+gzhandler}} (\$buffer, \$mode)
+\item 
+\mbox{\hyperlink{zlib_8php_a987aed5b3819ca15ad15ec69711b25f1}{deflate\+\_\+init}} (\$encoding, \$options=array())
+\item 
+\mbox{\hyperlink{zlib_8php_af00602f6ad19407bb2d6267e22904e65}{deflate\+\_\+add}} (\$context, \$data, \$flush\+\_\+mode=\mbox{\hyperlink{zlib_8php_ad4e0eb9868e6442033d3d00d0a030e0a}{Z\+L\+I\+B\+\_\+\+S\+Y\+N\+C\+\_\+\+F\+L\+U\+SH}})
+\item 
+\mbox{\hyperlink{zlib_8php_a811d42978f8eccbd074a40a676a37720}{inflate\+\_\+init}} (\$encoding, \$options=array())
+\item 
+\mbox{\hyperlink{zlib_8php_a3d6ebb33c3486361c25037511589c59b}{inflate\+\_\+add}} (\$context, \$encoded\+\_\+data, \$flush\+\_\+mode=\mbox{\hyperlink{zlib_8php_ad4e0eb9868e6442033d3d00d0a030e0a}{Z\+L\+I\+B\+\_\+\+S\+Y\+N\+C\+\_\+\+F\+L\+U\+SH}})
+\item 
+\mbox{\hyperlink{zlib_8php_ad5f656204bffd3a1e325448f8a2eba58}{inflate\+\_\+get\+\_\+read\+\_\+len}} (\$context)
+\item 
+\mbox{\hyperlink{zlib_8php_ad3ed1602ce4723946e373e0bf0160ace}{inflate\+\_\+get\+\_\+status}} (\$context)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{zlib_8php_a9abaf24aaadf2b44aee001e9c490b15b}{F\+O\+R\+C\+E\+\_\+\+G\+Z\+IP}} 31
+\item 
+const \mbox{\hyperlink{zlib_8php_ae51e1e8475764b680e412f5e6e3f7867}{F\+O\+R\+C\+E\+\_\+\+D\+E\+F\+L\+A\+TE}} 15
+\item 
+const \mbox{\hyperlink{zlib_8php_aa3617054585e49f6b6cd8eae6f8f7380}{Z\+L\+I\+B\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+R\+AW}} -\/15
+\item 
+const \mbox{\hyperlink{zlib_8php_a08951a176c903ac47934185192232d93}{Z\+L\+I\+B\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+G\+Z\+IP}} 31
+\item 
+const \mbox{\hyperlink{zlib_8php_a6bd98e5ada1637270de865096fa3e32c}{Z\+L\+I\+B\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+D\+E\+F\+L\+A\+TE}} 15
+\item 
+const \mbox{\hyperlink{zlib_8php_a58ec7d737e3583b9b7c8bc76cd4a4308}{Z\+L\+I\+B\+\_\+\+N\+O\+\_\+\+F\+L\+U\+SH}} 0
+\item 
+const \mbox{\hyperlink{zlib_8php_ab89f5b2e58565542edf02addecf50267}{Z\+L\+I\+B\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+F\+L\+U\+SH}} 1
+\item 
+const \mbox{\hyperlink{zlib_8php_ad4e0eb9868e6442033d3d00d0a030e0a}{Z\+L\+I\+B\+\_\+\+S\+Y\+N\+C\+\_\+\+F\+L\+U\+SH}} 2
+\item 
+const \mbox{\hyperlink{zlib_8php_a23f7ac80e3f926609af26cff87595284}{Z\+L\+I\+B\+\_\+\+F\+U\+L\+L\+\_\+\+F\+L\+U\+SH}} 3
+\item 
+const \mbox{\hyperlink{zlib_8php_a1e62fc336fbc478833fa7baadabf2c9a}{Z\+L\+I\+B\+\_\+\+B\+L\+O\+CK}} 5
+\item 
+const \mbox{\hyperlink{zlib_8php_a2ddf60dc02506e828ad4328c2f9b644b}{Z\+L\+I\+B\+\_\+\+F\+I\+N\+I\+SH}} 4
+\item 
+const \mbox{\hyperlink{zlib_8php_a4a694cabcdebc5928ec7f14f7aa7c8bc}{Z\+L\+I\+B\+\_\+\+F\+I\+L\+T\+E\+R\+ED}} 1
+\item 
+const \mbox{\hyperlink{zlib_8php_aead816365597bfbba4b58531478464bc}{Z\+L\+I\+B\+\_\+\+H\+U\+F\+F\+M\+A\+N\+\_\+\+O\+N\+LY}} 2
+\item 
+const \mbox{\hyperlink{zlib_8php_ae52314b28eae562144962c38fc75654d}{Z\+L\+I\+B\+\_\+\+R\+LE}} 3
+\item 
+const \mbox{\hyperlink{zlib_8php_aa70203a6a124cc33ef5203f712e33210}{Z\+L\+I\+B\+\_\+\+F\+I\+X\+ED}} 4
+\item 
+const \mbox{\hyperlink{zlib_8php_ad1439e288f4fcdb9dceb2749c350bd96}{Z\+L\+I\+B\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+R\+A\+T\+E\+GY}} 0
+\item 
+const \mbox{\hyperlink{zlib_8php_a1f35de2d87be0c82b521998b470f3129}{Z\+L\+I\+B\+\_\+\+OK}} 0
+\item 
+const \mbox{\hyperlink{zlib_8php_aca8fca9efbb07e56c7dcd58791cee3cf}{Z\+L\+I\+B\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+ND}} 1
+\item 
+const \mbox{\hyperlink{zlib_8php_adb727e252b72b12f35c6d6dbbfba5db3}{Z\+L\+I\+B\+\_\+\+N\+E\+E\+D\+\_\+\+D\+I\+CT}} 2
+\item 
+const \mbox{\hyperlink{zlib_8php_a20f7b676dfbf5fc7df3ecd6db8018adf}{Z\+L\+I\+B\+\_\+\+E\+R\+R\+NO}} -\/1
+\item 
+const \mbox{\hyperlink{zlib_8php_ab1ee9d8ad018a051de52568541a76467}{Z\+L\+I\+B\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+OR}} -\/2
+\item 
+const \mbox{\hyperlink{zlib_8php_a180f909c05094f66612bbf4a5fa2dc67}{Z\+L\+I\+B\+\_\+\+D\+A\+T\+A\+\_\+\+E\+R\+R\+OR}} -\/3
+\item 
+const \mbox{\hyperlink{zlib_8php_ad1cd279b1050f08b83e321ba202119f1}{Z\+L\+I\+B\+\_\+\+M\+E\+M\+\_\+\+E\+R\+R\+OR}} -\/4
+\item 
+const \mbox{\hyperlink{zlib_8php_a5670eb4c765ef7f675c5709d0dbaa864}{Z\+L\+I\+B\+\_\+\+B\+U\+F\+\_\+\+E\+R\+R\+OR}} -\/5
+\item 
+const \mbox{\hyperlink{zlib_8php_a64fbb69f8dd5cd19121454ffd166bc15}{Z\+L\+I\+B\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+E\+R\+R\+OR}} -\/6
+\item 
+const \mbox{\hyperlink{zlib_8php_adea0a70ded397a9da875916d3cbcf997}{Z\+L\+I\+B\+\_\+\+V\+E\+R\+S\+I\+ON}} \textquotesingle{}zlib\+\_\+version\+\_\+string\textquotesingle{}
+\item 
+const \mbox{\hyperlink{zlib_8php_afcd1feb6557a9667d474ae040b9f01b1}{Z\+L\+I\+B\+\_\+\+V\+E\+R\+N\+UM}} \textquotesingle{}zlib\+\_\+version\+\_\+string\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{zlib_8php_af00602f6ad19407bb2d6267e22904e65}\label{zlib_8php_af00602f6ad19407bb2d6267e22904e65}} 
+\index{zlib.php@{zlib.php}!deflate\_add@{deflate\_add}}
+\index{deflate\_add@{deflate\_add}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{deflate\_add()}{deflate\_add()}}
+{\footnotesize\ttfamily deflate\+\_\+add (\begin{DoxyParamCaption}\item[{}]{\$context,  }\item[{}]{\$data,  }\item[{}]{\$flush\+\_\+mode = {\ttfamily \mbox{\hyperlink{zlib_8php_ad4e0eb9868e6442033d3d00d0a030e0a}{Z\+L\+I\+B\+\_\+\+S\+Y\+N\+C\+\_\+\+F\+L\+U\+SH}}} }\end{DoxyParamCaption})}
+
+Incrementally deflate data \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$context }} \mbox{\hyperlink{class_a}{A}} context created with {\bfseries{\mbox{\hyperlink{zlib_8php_a987aed5b3819ca15ad15ec69711b25f1}{deflate\+\_\+init()}}}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} chunk of data to compress. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flush\+\_\+mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+One of {\bfseries{Z\+L\+I\+B\+\_\+\+B\+L\+O\+CK}}, {\bfseries{Z\+L\+I\+B\+\_\+\+N\+O\+\_\+\+F\+L\+U\+SH}}, {\bfseries{Z\+L\+I\+B\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+F\+L\+U\+SH}}, {\bfseries{Z\+L\+I\+B\+\_\+\+S\+Y\+N\+C\+\_\+\+F\+L\+U\+SH}} (default), {\bfseries{Z\+L\+I\+B\+\_\+\+F\+U\+L\+L\+\_\+\+F\+L\+U\+SH}}, {\bfseries{Z\+L\+I\+B\+\_\+\+F\+I\+N\+I\+SH}}. Normally you will want to set {\bfseries{Z\+L\+I\+B\+\_\+\+N\+O\+\_\+\+F\+L\+U\+SH}} to maximize compression, and {\bfseries{Z\+L\+I\+B\+\_\+\+F\+I\+N\+I\+SH}} to terminate with the last chunk of data. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false 
+\end{DoxyReturn}
+Returns a chunk of compressed data, or {\bfseries{F\+A\+L\+SE}} on failure. 
+
+\begin{DoxySince}{Since}
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a987aed5b3819ca15ad15ec69711b25f1}\label{zlib_8php_a987aed5b3819ca15ad15ec69711b25f1}} 
+\index{zlib.php@{zlib.php}!deflate\_init@{deflate\_init}}
+\index{deflate\_init@{deflate\_init}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{deflate\_init()}{deflate\_init()}}
+{\footnotesize\ttfamily deflate\+\_\+init (\begin{DoxyParamCaption}\item[{}]{\$encoding,  }\item[{}]{\$options = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Initialize an incremental deflate context \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$encoding }} One of the {\bfseries{Z\+L\+I\+B\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+$\ast$}} constants. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+An associative array which may contain the following elements\+: {\bfseries{level}}The compression level in range -\/1..9; defaults to -\/1. {\bfseries{memory}}The compression memory level in range 1..9; defaults to 8. {\bfseries{window}}The zlib window size (logarithmic) in range 8..15; defaults to 15. {\bfseries{strategy}}One of {\bfseries{Z\+L\+I\+B\+\_\+\+F\+I\+L\+T\+E\+R\+ED}}, {\bfseries{Z\+L\+I\+B\+\_\+\+H\+U\+F\+F\+M\+A\+N\+\_\+\+O\+N\+LY}}, {\bfseries{Z\+L\+I\+B\+\_\+\+R\+LE}}, {\bfseries{Z\+L\+I\+B\+\_\+\+F\+I\+X\+ED}} or {\bfseries{Z\+L\+I\+B\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+R\+A\+T\+E\+GY}} (the default). {\bfseries{dictionary}}\mbox{\hyperlink{class_a}{A}} string or an array of strings of the preset dictionary (default\+: no preset dictionary).
+
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+Returns a deflate context resource (zlib.\+deflate) on success, or {\bfseries{F\+A\+L\+SE}} on failure. 
+
+\begin{DoxySince}{Since}
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a83474e3f3c6c7d976b474547c2fc7264}\label{zlib_8php_a83474e3f3c6c7d976b474547c2fc7264}} 
+\index{zlib.php@{zlib.php}!gzclose@{gzclose}}
+\index{gzclose@{gzclose}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzclose()}{gzclose()}}
+{\footnotesize\ttfamily gzclose (\begin{DoxyParamCaption}\item[{}]{\$zp }\end{DoxyParamCaption})}
+
+Close an open gz-\/file pointer \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zp }} The gz-\/file pointer. It must be valid, and must point to a file successfully opened by {\bfseries{gzopen}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a8905cff4f3ca05c3505281d7c2369e4f}\label{zlib_8php_a8905cff4f3ca05c3505281d7c2369e4f}} 
+\index{zlib.php@{zlib.php}!gzcompress@{gzcompress}}
+\index{gzcompress@{gzcompress}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzcompress()}{gzcompress()}}
+{\footnotesize\ttfamily gzcompress (\begin{DoxyParamCaption}\item[{}]{\$data,  }\item[{}]{\$level = {\ttfamily -\/1},  }\item[{}]{\$encoding = {\ttfamily \mbox{\hyperlink{zlib_8php_a6bd98e5ada1637270de865096fa3e32c}{Z\+L\+I\+B\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+D\+E\+F\+L\+A\+TE}}} }\end{DoxyParamCaption})}
+
+Compress a string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data }} The data to compress. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$level} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The level of compression. Can be given as 0 for no compression up to 9 for maximum compression. 
+
+If -\/1 is used, the default compression of the zlib library is used which is 6. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$encoding} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+One of {\bfseries{Z\+L\+I\+B\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+$\ast$}} constants. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false The compressed string or {\bfseries{F\+A\+L\+SE}} if an error occurred. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a5c4fd9a7fe43b6b0302286e0f5d2bdb0}\label{zlib_8php_a5c4fd9a7fe43b6b0302286e0f5d2bdb0}} 
+\index{zlib.php@{zlib.php}!gzdecode@{gzdecode}}
+\index{gzdecode@{gzdecode}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzdecode()}{gzdecode()}}
+{\footnotesize\ttfamily gzdecode (\begin{DoxyParamCaption}\item[{}]{\$data,  }\item[{}]{\$length = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Decodes a gzip compressed string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data }} The data to decode, encoded by {\bfseries{gzencode}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The maximum length of data to decode. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false The decoded string, or {\bfseries{F\+A\+L\+SE}} if an error occurred. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_ac61618d3af20e5b282da1436c624bd9c}\label{zlib_8php_ac61618d3af20e5b282da1436c624bd9c}} 
+\index{zlib.php@{zlib.php}!gzdeflate@{gzdeflate}}
+\index{gzdeflate@{gzdeflate}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzdeflate()}{gzdeflate()}}
+{\footnotesize\ttfamily gzdeflate (\begin{DoxyParamCaption}\item[{}]{\$data,  }\item[{}]{\$level = {\ttfamily -\/1},  }\item[{}]{\$encoding = {\ttfamily \mbox{\hyperlink{zlib_8php_aa3617054585e49f6b6cd8eae6f8f7380}{Z\+L\+I\+B\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+R\+AW}}} }\end{DoxyParamCaption})}
+
+Deflate a string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data }} The data to deflate. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$level} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The level of compression. Can be given as 0 for no compression up to 9 for maximum compression. If not given, the default compression level will be the default compression level of the zlib library. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$encoding} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+One of {\bfseries{Z\+L\+I\+B\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+$\ast$}} constants. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false The deflated string or {\bfseries{F\+A\+L\+SE}} if an error occurred. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_acec36d6f7da45aaefdd557bbceb3e3f3}\label{zlib_8php_acec36d6f7da45aaefdd557bbceb3e3f3}} 
+\index{zlib.php@{zlib.php}!gzencode@{gzencode}}
+\index{gzencode@{gzencode}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzencode()}{gzencode()}}
+{\footnotesize\ttfamily gzencode (\begin{DoxyParamCaption}\item[{}]{\$data,  }\item[{}]{\$level = {\ttfamily -\/1},  }\item[{}]{\$encoding\+\_\+mode = {\ttfamily \mbox{\hyperlink{zlib_8php_a9abaf24aaadf2b44aee001e9c490b15b}{F\+O\+R\+C\+E\+\_\+\+G\+Z\+IP}}} }\end{DoxyParamCaption})}
+
+Create a gzip compressed string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data }} The data to encode. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$level} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The level of compression. Can be given as 0 for no compression up to 9 for maximum compression. If not given, the default compression level will be the default compression level of the zlib library. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$encoding\+\_\+mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The encoding mode. Can be {\bfseries{F\+O\+R\+C\+E\+\_\+\+G\+Z\+IP}} (the default) or {\bfseries{F\+O\+R\+C\+E\+\_\+\+D\+E\+F\+L\+A\+TE}}. 
+
+Prior to P\+HP 5.\+4.\+0, using {\bfseries{F\+O\+R\+C\+E\+\_\+\+D\+E\+F\+L\+A\+TE}} results in a standard zlib deflated string (inclusive zlib headers) after a gzip file header but without the trailing crc32 checksum. 
+
+In P\+HP 5.\+4.\+0 and later, {\bfseries{F\+O\+R\+C\+E\+\_\+\+D\+E\+F\+L\+A\+TE}} generates R\+FC 1950 compliant output, consisting of a zlib header, the deflated data, and an Adler checksum. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false The encoded string, or {\bfseries{F\+A\+L\+SE}} if an error occurred. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a77c38265f8d2b337f0f873949bc3b366}\label{zlib_8php_a77c38265f8d2b337f0f873949bc3b366}} 
+\index{zlib.php@{zlib.php}!gzeof@{gzeof}}
+\index{gzeof@{gzeof}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzeof()}{gzeof()}}
+{\footnotesize\ttfamily gzeof (\begin{DoxyParamCaption}\item[{}]{\$zp }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_test}{Test}} for E\+OF on a gz-\/file pointer \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zp }} The gz-\/file pointer. It must be valid, and must point to a file successfully opened by {\bfseries{gzopen}}. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$bool {\bfseries{T\+R\+UE}} if the gz-\/file pointer is at E\+OF or an error occurs; otherwise returns {\bfseries{F\+A\+L\+SE}}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a8f21de6c0d994c993997a7e1bac94b87}\label{zlib_8php_a8f21de6c0d994c993997a7e1bac94b87}} 
+\index{zlib.php@{zlib.php}!gzfile@{gzfile}}
+\index{gzfile@{gzfile}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzfile()}{gzfile()}}
+{\footnotesize\ttfamily gzfile (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$use\+\_\+include\+\_\+path = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Read entire gz-\/file into an array \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} The file name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$use\+\_\+include\+\_\+path} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+You can set this optional parameter to 1, if you want to search for the file in the include\+\_\+path too. 
+
+\begin{DoxyReturn}{Returns}
+array An array containing the file, one line per cell. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a095e9ce1beb6999e73407bacc167a202}\label{zlib_8php_a095e9ce1beb6999e73407bacc167a202}} 
+\index{zlib.php@{zlib.php}!gzgetc@{gzgetc}}
+\index{gzgetc@{gzgetc}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzgetc()}{gzgetc()}}
+{\footnotesize\ttfamily gzgetc (\begin{DoxyParamCaption}\item[{}]{\$zp }\end{DoxyParamCaption})}
+
+Get character from gz-\/file pointer \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zp }} The gz-\/file pointer. It must be valid, and must point to a file successfully opened by {\bfseries{gzopen}}. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false The uncompressed character or {\bfseries{F\+A\+L\+SE}} on E\+OF (unlike {\bfseries{gzeof}}). 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_ac1a297b4e7ffead02861dd95b72b066c}\label{zlib_8php_ac1a297b4e7ffead02861dd95b72b066c}} 
+\index{zlib.php@{zlib.php}!gzgets@{gzgets}}
+\index{gzgets@{gzgets}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzgets()}{gzgets()}}
+{\footnotesize\ttfamily gzgets (\begin{DoxyParamCaption}\item[{}]{\$zp,  }\item[{}]{\$length }\end{DoxyParamCaption})}
+
+Get line from file pointer \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zp }} The gz-\/file pointer. It must be valid, and must point to a file successfully opened by {\bfseries{gzopen}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The length of data to get. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false The uncompressed string, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a049818593078fbd46491f26a30725fde}\label{zlib_8php_a049818593078fbd46491f26a30725fde}} 
+\index{zlib.php@{zlib.php}!gzgetss@{gzgetss}}
+\index{gzgetss@{gzgetss}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzgetss()}{gzgetss()}}
+{\footnotesize\ttfamily gzgetss (\begin{DoxyParamCaption}\item[{}]{\$zp,  }\item[{}]{\$length,  }\item[{}]{\$allowable\+\_\+tags = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Get line from gz-\/file pointer and strip H\+T\+ML tags \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zp }} The gz-\/file pointer. It must be valid, and must point to a file successfully opened by {\bfseries{gzopen}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+The length of data to get. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$allowable\+\_\+tags} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+You can use this optional parameter to specify tags which should not be stripped. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false The uncompressed and striped string, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000292}{Deprecated}}]7.\+3 \end{DoxyRefDesc}
+\mbox{\Hypertarget{zlib_8php_a9e7f7f3c2997ef90dec974a295649e05}\label{zlib_8php_a9e7f7f3c2997ef90dec974a295649e05}} 
+\index{zlib.php@{zlib.php}!gzinflate@{gzinflate}}
+\index{gzinflate@{gzinflate}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzinflate()}{gzinflate()}}
+{\footnotesize\ttfamily gzinflate (\begin{DoxyParamCaption}\item[{}]{\$data,  }\item[{}]{\$length = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Inflate a deflated string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data }} The data compressed by {\bfseries{gzdeflate}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The maximum length of data to decode. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false The original uncompressed data or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+
+
+The function will return an error if the uncompressed data is more than 32768 times the length of the compressed input {\itshape data} or more than the optional parameter {\itshape length}. \begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a685cf76ca78f0bdb1c4a41362e8f5118}\label{zlib_8php_a685cf76ca78f0bdb1c4a41362e8f5118}} 
+\index{zlib.php@{zlib.php}!gzopen@{gzopen}}
+\index{gzopen@{gzopen}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzopen()}{gzopen()}}
+{\footnotesize\ttfamily gzopen (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$mode,  }\item[{}]{\$use\+\_\+include\+\_\+path = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Open gz-\/file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} The file name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+As in {\bfseries{fopen}} (rb or wb) but can also include a compression level (wb9) or a strategy\+: f for filtered data as in wb6f, h for Huffman only compression as in wb1h. (See the description of deflate\+Init2 in zlib.\+h for more information about the strategy parameter.) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$use\+\_\+include\+\_\+path} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+You can set this optional parameter to 1, if you want to search for the file in the include\+\_\+path too. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false a file pointer to the file opened, after that, everything you read from this file descriptor will be transparently decompressed and what you write gets compressed. 
+\end{DoxyReturn}
+
+
+If the open fails, the function returns {\bfseries{F\+A\+L\+SE}}. \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a22e89b900befb2d0de35b75d96296ee4}\label{zlib_8php_a22e89b900befb2d0de35b75d96296ee4}} 
+\index{zlib.php@{zlib.php}!gzpassthru@{gzpassthru}}
+\index{gzpassthru@{gzpassthru}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzpassthru()}{gzpassthru()}}
+{\footnotesize\ttfamily gzpassthru (\begin{DoxyParamCaption}\item[{}]{\$zp }\end{DoxyParamCaption})}
+
+Output all remaining data on a gz-\/file pointer \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zp }} The gz-\/file pointer. It must be valid, and must point to a file successfully opened by {\bfseries{gzopen}}. 
+
+\begin{DoxyReturn}{Returns}
+int The number of uncompressed characters read from {\itshape gz} and passed through to the input, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a450aa4291c844a80c49009406eb1517d}\label{zlib_8php_a450aa4291c844a80c49009406eb1517d}} 
+\index{zlib.php@{zlib.php}!gzputs@{gzputs}}
+\index{gzputs@{gzputs}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzputs()}{gzputs()}}
+{\footnotesize\ttfamily gzputs (\begin{DoxyParamCaption}\item[{}]{\$fp,  }\item[{}]{\$str,  }\item[{}]{\$length }\end{DoxyParamCaption})}
+
+Alias of {\bfseries{gzwrite}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$fp  \$str  \$length \mbox{[}optional\mbox{]}  4.\+0  5.\+0 }}\mbox{\Hypertarget{zlib_8php_ada38e2b1f566af45281108a05ff6fe8b}\label{zlib_8php_ada38e2b1f566af45281108a05ff6fe8b}} 
+\index{zlib.php@{zlib.php}!gzread@{gzread}}
+\index{gzread@{gzread}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzread()}{gzread()}}
+{\footnotesize\ttfamily gzread (\begin{DoxyParamCaption}\item[{}]{\$zp,  }\item[{}]{\$length }\end{DoxyParamCaption})}
+
+Binary-\/safe gz-\/file read \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zp }} The gz-\/file pointer. It must be valid, and must point to a file successfully opened by {\bfseries{gzopen}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+The number of bytes to read. 
+
+\begin{DoxyReturn}{Returns}
+string The data that have been read. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_aaa17156ae89aa5045606f093837ee373}\label{zlib_8php_aaa17156ae89aa5045606f093837ee373}} 
+\index{zlib.php@{zlib.php}!gzrewind@{gzrewind}}
+\index{gzrewind@{gzrewind}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzrewind()}{gzrewind()}}
+{\footnotesize\ttfamily gzrewind (\begin{DoxyParamCaption}\item[{}]{\$zp }\end{DoxyParamCaption})}
+
+Rewind the position of a gz-\/file pointer \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zp }} The gz-\/file pointer. It must be valid, and must point to a file successfully opened by {\bfseries{gzopen}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a55f5231b49e5d19b27e728a5777b543d}\label{zlib_8php_a55f5231b49e5d19b27e728a5777b543d}} 
+\index{zlib.php@{zlib.php}!gzseek@{gzseek}}
+\index{gzseek@{gzseek}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzseek()}{gzseek()}}
+{\footnotesize\ttfamily gzseek (\begin{DoxyParamCaption}\item[{}]{\$zp,  }\item[{}]{\$offset,  }\item[{}]{\$whence = {\ttfamily \mbox{\hyperlink{standard__defines_8php_a84ad37a27829430e57c9e58467d4605b}{S\+E\+E\+K\+\_\+\+S\+ET}}} }\end{DoxyParamCaption})}
+
+Seek on a gz-\/file pointer \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zp }} The gz-\/file pointer. It must be valid, and must point to a file successfully opened by {\bfseries{gzopen}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$offset} & \\
+\hline
+\end{DoxyParams}
+The seeked offset. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$whence} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+{\itshape whence} values are\+: {\bfseries{S\+E\+E\+K\+\_\+\+S\+ET}} -\/ Set position equal to {\itshape offset} bytes. {\bfseries{S\+E\+E\+K\+\_\+\+C\+UR}} -\/ Set position to current location plus {\itshape offset}. 
+
+If {\itshape whence} is not specified, it is assumed to be {\bfseries{S\+E\+E\+K\+\_\+\+S\+ET}}. 
+
+\begin{DoxyReturn}{Returns}
+int Upon success, returns 0; otherwise, returns -\/1. Note that seeking past E\+OF is not considered an error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a9fc07f715644f6406dbfab5649be31e0}\label{zlib_8php_a9fc07f715644f6406dbfab5649be31e0}} 
+\index{zlib.php@{zlib.php}!gztell@{gztell}}
+\index{gztell@{gztell}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gztell()}{gztell()}}
+{\footnotesize\ttfamily gztell (\begin{DoxyParamCaption}\item[{}]{\$zp }\end{DoxyParamCaption})}
+
+Tell gz-\/file pointer read/write position \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zp }} The gz-\/file pointer. It must be valid, and must point to a file successfully opened by {\bfseries{gzopen}}. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false The position of the file pointer or {\bfseries{F\+A\+L\+SE}} if an error occurs. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_ad94717d3b745d63a14b2a3cfb3884481}\label{zlib_8php_ad94717d3b745d63a14b2a3cfb3884481}} 
+\index{zlib.php@{zlib.php}!gzuncompress@{gzuncompress}}
+\index{gzuncompress@{gzuncompress}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzuncompress()}{gzuncompress()}}
+{\footnotesize\ttfamily gzuncompress (\begin{DoxyParamCaption}\item[{}]{\$data,  }\item[{}]{\$length = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Uncompress a compressed string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data }} The data compressed by {\bfseries{gzcompress}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The maximum length of data to decode. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false The original uncompressed data or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+
+
+The function will return an error if the uncompressed data is more than 32768 times the length of the compressed input {\itshape data} or more than the optional parameter {\itshape length}. \begin{DoxySince}{Since}
+4.\+0.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a72845228be7d1efeb01c01ecaa598e57}\label{zlib_8php_a72845228be7d1efeb01c01ecaa598e57}} 
+\index{zlib.php@{zlib.php}!gzwrite@{gzwrite}}
+\index{gzwrite@{gzwrite}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{gzwrite()}{gzwrite()}}
+{\footnotesize\ttfamily gzwrite (\begin{DoxyParamCaption}\item[{}]{\$zp,  }\item[{}]{\$string,  }\item[{}]{\$length = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Binary-\/safe gz-\/file write \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zp }} The gz-\/file pointer. It must be valid, and must point to a file successfully opened by {\bfseries{gzopen}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+The string to write. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of uncompressed bytes to write. If supplied, writing will stop after {\itshape length} (uncompressed) bytes have been written or the end of {\itshape string} is reached, whichever comes first. 
+
+Note that if the {\itshape length} argument is given, then the magic\+\_\+quotes\+\_\+runtime configuration option will be ignored and no slashes will be stripped from {\itshape string}. 
+
+\begin{DoxyReturn}{Returns}
+int the number of (uncompressed) bytes written to the given gz-\/file stream. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a3d6ebb33c3486361c25037511589c59b}\label{zlib_8php_a3d6ebb33c3486361c25037511589c59b}} 
+\index{zlib.php@{zlib.php}!inflate\_add@{inflate\_add}}
+\index{inflate\_add@{inflate\_add}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{inflate\_add()}{inflate\_add()}}
+{\footnotesize\ttfamily inflate\+\_\+add (\begin{DoxyParamCaption}\item[{}]{\$context,  }\item[{}]{\$encoded\+\_\+data,  }\item[{}]{\$flush\+\_\+mode = {\ttfamily \mbox{\hyperlink{zlib_8php_ad4e0eb9868e6442033d3d00d0a030e0a}{Z\+L\+I\+B\+\_\+\+S\+Y\+N\+C\+\_\+\+F\+L\+U\+SH}}} }\end{DoxyParamCaption})}
+
+Incrementally inflate data \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$context }} \mbox{\hyperlink{class_a}{A}} context created with {\bfseries{\mbox{\hyperlink{zlib_8php_a811d42978f8eccbd074a40a676a37720}{inflate\+\_\+init()}}}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$encoded\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} chunk of compressed data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flush\+\_\+mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+One of {\bfseries{Z\+L\+I\+B\+\_\+\+B\+L\+O\+CK}}, {\bfseries{Z\+L\+I\+B\+\_\+\+N\+O\+\_\+\+F\+L\+U\+SH}}, {\bfseries{Z\+L\+I\+B\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+F\+L\+U\+SH}}, {\bfseries{Z\+L\+I\+B\+\_\+\+S\+Y\+N\+C\+\_\+\+F\+L\+U\+SH}} (default), {\bfseries{Z\+L\+I\+B\+\_\+\+F\+U\+L\+L\+\_\+\+F\+L\+U\+SH}}, {\bfseries{Z\+L\+I\+B\+\_\+\+F\+I\+N\+I\+SH}}. Normally you will want to set {\bfseries{Z\+L\+I\+B\+\_\+\+N\+O\+\_\+\+F\+L\+U\+SH}} to maximize compression, and {\bfseries{Z\+L\+I\+B\+\_\+\+F\+I\+N\+I\+SH}} to terminate with the last chunk of data. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false 
+\end{DoxyReturn}
+Returns a chunk of uncompressed data, or {\bfseries{F\+A\+L\+SE}} on failure. 
+
+\begin{DoxySince}{Since}
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_ad5f656204bffd3a1e325448f8a2eba58}\label{zlib_8php_ad5f656204bffd3a1e325448f8a2eba58}} 
+\index{zlib.php@{zlib.php}!inflate\_get\_read\_len@{inflate\_get\_read\_len}}
+\index{inflate\_get\_read\_len@{inflate\_get\_read\_len}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{inflate\_get\_read\_len()}{inflate\_get\_read\_len()}}
+{\footnotesize\ttfamily inflate\+\_\+get\+\_\+read\+\_\+len (\begin{DoxyParamCaption}\item[{}]{\$context }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$context} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_ad3ed1602ce4723946e373e0bf0160ace}\label{zlib_8php_ad3ed1602ce4723946e373e0bf0160ace}} 
+\index{zlib.php@{zlib.php}!inflate\_get\_status@{inflate\_get\_status}}
+\index{inflate\_get\_status@{inflate\_get\_status}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{inflate\_get\_status()}{inflate\_get\_status()}}
+{\footnotesize\ttfamily inflate\+\_\+get\+\_\+status (\begin{DoxyParamCaption}\item[{}]{\$context }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$context} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a811d42978f8eccbd074a40a676a37720}\label{zlib_8php_a811d42978f8eccbd074a40a676a37720}} 
+\index{zlib.php@{zlib.php}!inflate\_init@{inflate\_init}}
+\index{inflate\_init@{inflate\_init}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{inflate\_init()}{inflate\_init()}}
+{\footnotesize\ttfamily inflate\+\_\+init (\begin{DoxyParamCaption}\item[{}]{\$encoding,  }\item[{}]{\$options = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Initialize an incremental inflate context \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$encoding }} One of the Z\+L\+I\+B\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+$\ast$ constants. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+An associative array which may contain the following elements\+: {\bfseries{level}}The compression level in range -\/1..9; defaults to -\/1. {\bfseries{memory}}The compression memory level in range 1..9; defaults to 8. {\bfseries{window}}The zlib window size (logarithmic) in range 8..15; defaults to 15. {\bfseries{strategy}}One of {\bfseries{Z\+L\+I\+B\+\_\+\+F\+I\+L\+T\+E\+R\+ED}}, {\bfseries{Z\+L\+I\+B\+\_\+\+H\+U\+F\+F\+M\+A\+N\+\_\+\+O\+N\+LY}}, {\bfseries{Z\+L\+I\+B\+\_\+\+R\+LE}}, {\bfseries{Z\+L\+I\+B\+\_\+\+F\+I\+X\+ED}} or {\bfseries{Z\+L\+I\+B\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+R\+A\+T\+E\+GY}} (the default). {\bfseries{dictionary}}\mbox{\hyperlink{class_a}{A}} string or an array of strings of the preset dictionary (default\+: no preset dictionary).
+
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+Returns an inflate context resource (zlib.\+inflate) on success, or {\bfseries{F\+A\+L\+SE}} on failure. 
+
+\begin{DoxySince}{Since}
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_afbac0bd08d730404602e1ff6ea3bf324}\label{zlib_8php_afbac0bd08d730404602e1ff6ea3bf324}} 
+\index{zlib.php@{zlib.php}!ob\_gzhandler@{ob\_gzhandler}}
+\index{ob\_gzhandler@{ob\_gzhandler}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ob\_gzhandler()}{ob\_gzhandler()}}
+{\footnotesize\ttfamily ob\+\_\+gzhandler (\begin{DoxyParamCaption}\item[{}]{\$buffer,  }\item[{}]{\$mode }\end{DoxyParamCaption})}
+
+ob\+\_\+start callback function to gzip output buffer \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$buffer  int \$mode  string  4.\+0.\+4  5.\+0 }}\mbox{\Hypertarget{zlib_8php_ac23fb7205748d55d5feaa1eba04c77ea}\label{zlib_8php_ac23fb7205748d55d5feaa1eba04c77ea}} 
+\index{zlib.php@{zlib.php}!readgzfile@{readgzfile}}
+\index{readgzfile@{readgzfile}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{readgzfile()}{readgzfile()}}
+{\footnotesize\ttfamily readgzfile (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$use\+\_\+include\+\_\+path = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Output a gz-\/file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} The file name. This file will be opened from the filesystem and its contents written to standard output. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$use\+\_\+include\+\_\+path} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+You can set this optional parameter to 1, if you want to search for the file in the include\+\_\+path too. 
+
+\begin{DoxyReturn}{Returns}
+int the number of (uncompressed) bytes read from the file. If an error occurs, {\bfseries{F\+A\+L\+SE}} is returned and unless the function was called as @readgzfile, an error message is printed. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a8702770995cacdb57d968bf15f0759b2}\label{zlib_8php_a8702770995cacdb57d968bf15f0759b2}} 
+\index{zlib.php@{zlib.php}!zlib\_decode@{zlib\_decode}}
+\index{zlib\_decode@{zlib\_decode}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{zlib\_decode()}{zlib\_decode()}}
+{\footnotesize\ttfamily zlib\+\_\+decode (\begin{DoxyParamCaption}\item[{}]{\$data,  }\item[{}]{\$max\+\_\+decoded\+\_\+len = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Uncompress any raw/gzip/zlib encoded data \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data }} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$max\+\_\+decoded\+\_\+len} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_a8a23fda0c185b034545dae57a2925062}\label{zlib_8php_a8a23fda0c185b034545dae57a2925062}} 
+\index{zlib.php@{zlib.php}!zlib\_encode@{zlib\_encode}}
+\index{zlib\_encode@{zlib\_encode}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{zlib\_encode()}{zlib\_encode()}}
+{\footnotesize\ttfamily zlib\+\_\+encode (\begin{DoxyParamCaption}\item[{}]{\$data,  }\item[{}]{\$encoding,  }\item[{}]{\$level }\end{DoxyParamCaption})}
+
+Compress data with the specified encoding \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data }} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$encoding} & \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$level} & \mbox{[}optional\mbox{]} default -\/1 \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{zlib_8php_ac30d744fa245f1a078d2e56588f28573}\label{zlib_8php_ac30d744fa245f1a078d2e56588f28573}} 
+\index{zlib.php@{zlib.php}!zlib\_get\_coding\_type@{zlib\_get\_coding\_type}}
+\index{zlib\_get\_coding\_type@{zlib\_get\_coding\_type}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{zlib\_get\_coding\_type()}{zlib\_get\_coding\_type()}}
+{\footnotesize\ttfamily zlib\+\_\+get\+\_\+coding\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the coding type used for output compression \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string Possible return values are gzip, deflate, or {\bfseries{F\+A\+L\+SE}}.  4.\+3.\+2  5.\+0 }}
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{zlib_8php_ae51e1e8475764b680e412f5e6e3f7867}\label{zlib_8php_ae51e1e8475764b680e412f5e6e3f7867}} 
+\index{zlib.php@{zlib.php}!FORCE\_DEFLATE@{FORCE\_DEFLATE}}
+\index{FORCE\_DEFLATE@{FORCE\_DEFLATE}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{FORCE\_DEFLATE}{FORCE\_DEFLATE}}
+{\footnotesize\ttfamily const F\+O\+R\+C\+E\+\_\+\+D\+E\+F\+L\+A\+TE 15}
+
+\mbox{\Hypertarget{zlib_8php_a9abaf24aaadf2b44aee001e9c490b15b}\label{zlib_8php_a9abaf24aaadf2b44aee001e9c490b15b}} 
+\index{zlib.php@{zlib.php}!FORCE\_GZIP@{FORCE\_GZIP}}
+\index{FORCE\_GZIP@{FORCE\_GZIP}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{FORCE\_GZIP}{FORCE\_GZIP}}
+{\footnotesize\ttfamily const F\+O\+R\+C\+E\+\_\+\+G\+Z\+IP 31}
+
+\mbox{\Hypertarget{zlib_8php_a1e62fc336fbc478833fa7baadabf2c9a}\label{zlib_8php_a1e62fc336fbc478833fa7baadabf2c9a}} 
+\index{zlib.php@{zlib.php}!ZLIB\_BLOCK@{ZLIB\_BLOCK}}
+\index{ZLIB\_BLOCK@{ZLIB\_BLOCK}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_BLOCK}{ZLIB\_BLOCK}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+B\+L\+O\+CK 5}
+
+\mbox{\Hypertarget{zlib_8php_a5670eb4c765ef7f675c5709d0dbaa864}\label{zlib_8php_a5670eb4c765ef7f675c5709d0dbaa864}} 
+\index{zlib.php@{zlib.php}!ZLIB\_BUF\_ERROR@{ZLIB\_BUF\_ERROR}}
+\index{ZLIB\_BUF\_ERROR@{ZLIB\_BUF\_ERROR}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_BUF\_ERROR}{ZLIB\_BUF\_ERROR}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+B\+U\+F\+\_\+\+E\+R\+R\+OR -\/5}
+
+\mbox{\Hypertarget{zlib_8php_a180f909c05094f66612bbf4a5fa2dc67}\label{zlib_8php_a180f909c05094f66612bbf4a5fa2dc67}} 
+\index{zlib.php@{zlib.php}!ZLIB\_DATA\_ERROR@{ZLIB\_DATA\_ERROR}}
+\index{ZLIB\_DATA\_ERROR@{ZLIB\_DATA\_ERROR}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_DATA\_ERROR}{ZLIB\_DATA\_ERROR}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+D\+A\+T\+A\+\_\+\+E\+R\+R\+OR -\/3}
+
+\mbox{\Hypertarget{zlib_8php_ad1439e288f4fcdb9dceb2749c350bd96}\label{zlib_8php_ad1439e288f4fcdb9dceb2749c350bd96}} 
+\index{zlib.php@{zlib.php}!ZLIB\_DEFAULT\_STRATEGY@{ZLIB\_DEFAULT\_STRATEGY}}
+\index{ZLIB\_DEFAULT\_STRATEGY@{ZLIB\_DEFAULT\_STRATEGY}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_DEFAULT\_STRATEGY}{ZLIB\_DEFAULT\_STRATEGY}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+R\+A\+T\+E\+GY 0}
+
+\mbox{\Hypertarget{zlib_8php_a6bd98e5ada1637270de865096fa3e32c}\label{zlib_8php_a6bd98e5ada1637270de865096fa3e32c}} 
+\index{zlib.php@{zlib.php}!ZLIB\_ENCODING\_DEFLATE@{ZLIB\_ENCODING\_DEFLATE}}
+\index{ZLIB\_ENCODING\_DEFLATE@{ZLIB\_ENCODING\_DEFLATE}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_ENCODING\_DEFLATE}{ZLIB\_ENCODING\_DEFLATE}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+D\+E\+F\+L\+A\+TE 15}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/zlib.\+constants.\+php}}\mbox{\Hypertarget{zlib_8php_a08951a176c903ac47934185192232d93}\label{zlib_8php_a08951a176c903ac47934185192232d93}} 
+\index{zlib.php@{zlib.php}!ZLIB\_ENCODING\_GZIP@{ZLIB\_ENCODING\_GZIP}}
+\index{ZLIB\_ENCODING\_GZIP@{ZLIB\_ENCODING\_GZIP}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_ENCODING\_GZIP}{ZLIB\_ENCODING\_GZIP}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+G\+Z\+IP 31}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/zlib.\+constants.\+php}}\mbox{\Hypertarget{zlib_8php_aa3617054585e49f6b6cd8eae6f8f7380}\label{zlib_8php_aa3617054585e49f6b6cd8eae6f8f7380}} 
+\index{zlib.php@{zlib.php}!ZLIB\_ENCODING\_RAW@{ZLIB\_ENCODING\_RAW}}
+\index{ZLIB\_ENCODING\_RAW@{ZLIB\_ENCODING\_RAW}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_ENCODING\_RAW}{ZLIB\_ENCODING\_RAW}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+\_\+\+R\+AW -\/15}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/zlib.\+constants.\+php}}\mbox{\Hypertarget{zlib_8php_a20f7b676dfbf5fc7df3ecd6db8018adf}\label{zlib_8php_a20f7b676dfbf5fc7df3ecd6db8018adf}} 
+\index{zlib.php@{zlib.php}!ZLIB\_ERRNO@{ZLIB\_ERRNO}}
+\index{ZLIB\_ERRNO@{ZLIB\_ERRNO}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_ERRNO}{ZLIB\_ERRNO}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+E\+R\+R\+NO -\/1}
+
+\mbox{\Hypertarget{zlib_8php_a4a694cabcdebc5928ec7f14f7aa7c8bc}\label{zlib_8php_a4a694cabcdebc5928ec7f14f7aa7c8bc}} 
+\index{zlib.php@{zlib.php}!ZLIB\_FILTERED@{ZLIB\_FILTERED}}
+\index{ZLIB\_FILTERED@{ZLIB\_FILTERED}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_FILTERED}{ZLIB\_FILTERED}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+F\+I\+L\+T\+E\+R\+ED 1}
+
+\mbox{\Hypertarget{zlib_8php_a2ddf60dc02506e828ad4328c2f9b644b}\label{zlib_8php_a2ddf60dc02506e828ad4328c2f9b644b}} 
+\index{zlib.php@{zlib.php}!ZLIB\_FINISH@{ZLIB\_FINISH}}
+\index{ZLIB\_FINISH@{ZLIB\_FINISH}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_FINISH}{ZLIB\_FINISH}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+F\+I\+N\+I\+SH 4}
+
+\mbox{\Hypertarget{zlib_8php_aa70203a6a124cc33ef5203f712e33210}\label{zlib_8php_aa70203a6a124cc33ef5203f712e33210}} 
+\index{zlib.php@{zlib.php}!ZLIB\_FIXED@{ZLIB\_FIXED}}
+\index{ZLIB\_FIXED@{ZLIB\_FIXED}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_FIXED}{ZLIB\_FIXED}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+F\+I\+X\+ED 4}
+
+\mbox{\Hypertarget{zlib_8php_a23f7ac80e3f926609af26cff87595284}\label{zlib_8php_a23f7ac80e3f926609af26cff87595284}} 
+\index{zlib.php@{zlib.php}!ZLIB\_FULL\_FLUSH@{ZLIB\_FULL\_FLUSH}}
+\index{ZLIB\_FULL\_FLUSH@{ZLIB\_FULL\_FLUSH}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_FULL\_FLUSH}{ZLIB\_FULL\_FLUSH}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+F\+U\+L\+L\+\_\+\+F\+L\+U\+SH 3}
+
+\mbox{\Hypertarget{zlib_8php_aead816365597bfbba4b58531478464bc}\label{zlib_8php_aead816365597bfbba4b58531478464bc}} 
+\index{zlib.php@{zlib.php}!ZLIB\_HUFFMAN\_ONLY@{ZLIB\_HUFFMAN\_ONLY}}
+\index{ZLIB\_HUFFMAN\_ONLY@{ZLIB\_HUFFMAN\_ONLY}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_HUFFMAN\_ONLY}{ZLIB\_HUFFMAN\_ONLY}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+H\+U\+F\+F\+M\+A\+N\+\_\+\+O\+N\+LY 2}
+
+\mbox{\Hypertarget{zlib_8php_ad1cd279b1050f08b83e321ba202119f1}\label{zlib_8php_ad1cd279b1050f08b83e321ba202119f1}} 
+\index{zlib.php@{zlib.php}!ZLIB\_MEM\_ERROR@{ZLIB\_MEM\_ERROR}}
+\index{ZLIB\_MEM\_ERROR@{ZLIB\_MEM\_ERROR}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_MEM\_ERROR}{ZLIB\_MEM\_ERROR}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+M\+E\+M\+\_\+\+E\+R\+R\+OR -\/4}
+
+\mbox{\Hypertarget{zlib_8php_adb727e252b72b12f35c6d6dbbfba5db3}\label{zlib_8php_adb727e252b72b12f35c6d6dbbfba5db3}} 
+\index{zlib.php@{zlib.php}!ZLIB\_NEED\_DICT@{ZLIB\_NEED\_DICT}}
+\index{ZLIB\_NEED\_DICT@{ZLIB\_NEED\_DICT}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_NEED\_DICT}{ZLIB\_NEED\_DICT}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+N\+E\+E\+D\+\_\+\+D\+I\+CT 2}
+
+\mbox{\Hypertarget{zlib_8php_a58ec7d737e3583b9b7c8bc76cd4a4308}\label{zlib_8php_a58ec7d737e3583b9b7c8bc76cd4a4308}} 
+\index{zlib.php@{zlib.php}!ZLIB\_NO\_FLUSH@{ZLIB\_NO\_FLUSH}}
+\index{ZLIB\_NO\_FLUSH@{ZLIB\_NO\_FLUSH}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_NO\_FLUSH}{ZLIB\_NO\_FLUSH}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+N\+O\+\_\+\+F\+L\+U\+SH 0}
+
+\mbox{\Hypertarget{zlib_8php_a1f35de2d87be0c82b521998b470f3129}\label{zlib_8php_a1f35de2d87be0c82b521998b470f3129}} 
+\index{zlib.php@{zlib.php}!ZLIB\_OK@{ZLIB\_OK}}
+\index{ZLIB\_OK@{ZLIB\_OK}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_OK}{ZLIB\_OK}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+OK 0}
+
+\mbox{\Hypertarget{zlib_8php_ab89f5b2e58565542edf02addecf50267}\label{zlib_8php_ab89f5b2e58565542edf02addecf50267}} 
+\index{zlib.php@{zlib.php}!ZLIB\_PARTIAL\_FLUSH@{ZLIB\_PARTIAL\_FLUSH}}
+\index{ZLIB\_PARTIAL\_FLUSH@{ZLIB\_PARTIAL\_FLUSH}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_PARTIAL\_FLUSH}{ZLIB\_PARTIAL\_FLUSH}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+F\+L\+U\+SH 1}
+
+\mbox{\Hypertarget{zlib_8php_ae52314b28eae562144962c38fc75654d}\label{zlib_8php_ae52314b28eae562144962c38fc75654d}} 
+\index{zlib.php@{zlib.php}!ZLIB\_RLE@{ZLIB\_RLE}}
+\index{ZLIB\_RLE@{ZLIB\_RLE}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_RLE}{ZLIB\_RLE}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+R\+LE 3}
+
+\mbox{\Hypertarget{zlib_8php_aca8fca9efbb07e56c7dcd58791cee3cf}\label{zlib_8php_aca8fca9efbb07e56c7dcd58791cee3cf}} 
+\index{zlib.php@{zlib.php}!ZLIB\_STREAM\_END@{ZLIB\_STREAM\_END}}
+\index{ZLIB\_STREAM\_END@{ZLIB\_STREAM\_END}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_STREAM\_END}{ZLIB\_STREAM\_END}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+ND 1}
+
+\mbox{\Hypertarget{zlib_8php_ab1ee9d8ad018a051de52568541a76467}\label{zlib_8php_ab1ee9d8ad018a051de52568541a76467}} 
+\index{zlib.php@{zlib.php}!ZLIB\_STREAM\_ERROR@{ZLIB\_STREAM\_ERROR}}
+\index{ZLIB\_STREAM\_ERROR@{ZLIB\_STREAM\_ERROR}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_STREAM\_ERROR}{ZLIB\_STREAM\_ERROR}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+E\+R\+R\+OR -\/2}
+
+\mbox{\Hypertarget{zlib_8php_ad4e0eb9868e6442033d3d00d0a030e0a}\label{zlib_8php_ad4e0eb9868e6442033d3d00d0a030e0a}} 
+\index{zlib.php@{zlib.php}!ZLIB\_SYNC\_FLUSH@{ZLIB\_SYNC\_FLUSH}}
+\index{ZLIB\_SYNC\_FLUSH@{ZLIB\_SYNC\_FLUSH}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_SYNC\_FLUSH}{ZLIB\_SYNC\_FLUSH}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+S\+Y\+N\+C\+\_\+\+F\+L\+U\+SH 2}
+
+\mbox{\Hypertarget{zlib_8php_afcd1feb6557a9667d474ae040b9f01b1}\label{zlib_8php_afcd1feb6557a9667d474ae040b9f01b1}} 
+\index{zlib.php@{zlib.php}!ZLIB\_VERNUM@{ZLIB\_VERNUM}}
+\index{ZLIB\_VERNUM@{ZLIB\_VERNUM}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_VERNUM}{ZLIB\_VERNUM}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+V\+E\+R\+N\+UM \textquotesingle{}zlib\+\_\+version\+\_\+string\textquotesingle{}}
+
+\mbox{\Hypertarget{zlib_8php_adea0a70ded397a9da875916d3cbcf997}\label{zlib_8php_adea0a70ded397a9da875916d3cbcf997}} 
+\index{zlib.php@{zlib.php}!ZLIB\_VERSION@{ZLIB\_VERSION}}
+\index{ZLIB\_VERSION@{ZLIB\_VERSION}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_VERSION}{ZLIB\_VERSION}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+V\+E\+R\+S\+I\+ON \textquotesingle{}zlib\+\_\+version\+\_\+string\textquotesingle{}}
+
+\mbox{\Hypertarget{zlib_8php_a64fbb69f8dd5cd19121454ffd166bc15}\label{zlib_8php_a64fbb69f8dd5cd19121454ffd166bc15}} 
+\index{zlib.php@{zlib.php}!ZLIB\_VERSION\_ERROR@{ZLIB\_VERSION\_ERROR}}
+\index{ZLIB\_VERSION\_ERROR@{ZLIB\_VERSION\_ERROR}!zlib.php@{zlib.php}}
+\doxysubsubsection{\texorpdfstring{ZLIB\_VERSION\_ERROR}{ZLIB\_VERSION\_ERROR}}
+{\footnotesize\ttfamily const Z\+L\+I\+B\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+E\+R\+R\+OR -\/6}
+

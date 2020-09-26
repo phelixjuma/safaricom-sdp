@@ -1,0 +1,243 @@
+.TH "vendor/jetbrains/phpstorm-stubs/mysql_xdevapi/mysql_xdevapi.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/mysql_xdevapi/mysql_xdevapi.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "interface \fBBaseResult\fP"
+.br
+.ti -1c
+.RI "class \fBCollection\fP"
+.br
+.ti -1c
+.RI "class \fBCollectionAdd\fP"
+.br
+.ti -1c
+.RI "class \fBCollectionFind\fP"
+.br
+.ti -1c
+.RI "class \fBCollectionModify\fP"
+.br
+.ti -1c
+.RI "class \fBCollectionRemove\fP"
+.br
+.ti -1c
+.RI "class \fBColumnResult\fP"
+.br
+.ti -1c
+.RI "interface \fBCrudOperationBindable\fP"
+.br
+.ti -1c
+.RI "interface \fBCrudOperationLimitable\fP"
+.br
+.ti -1c
+.RI "interface \fBCrudOperationSkippable\fP"
+.br
+.ti -1c
+.RI "interface \fBCrudOperationSortable\fP"
+.br
+.ti -1c
+.RI "interface \fBDatabaseObject\fP"
+.br
+.ti -1c
+.RI "class \fBDocResult\fP"
+.br
+.ti -1c
+.RI "class \fBException\fP"
+.br
+.ti -1c
+.RI "interface \fBExecutable\fP"
+.br
+.ti -1c
+.RI "class \fBExecutionStatus\fP"
+.br
+.ti -1c
+.RI "class \fBExpression\fP"
+.br
+.ti -1c
+.RI "class \fBResult\fP"
+.br
+.ti -1c
+.RI "class \fBRowResult\fP"
+.br
+.ti -1c
+.RI "class \fBSchema\fP"
+.br
+.ti -1c
+.RI "interface \fBSchemaObject\fP"
+.br
+.ti -1c
+.RI "class \fBSession\fP"
+.br
+.ti -1c
+.RI "class \fBSqlStatement\fP"
+.br
+.ti -1c
+.RI "class \fBSqlStatementResult\fP"
+.br
+.ti -1c
+.RI "class \fBStatement\fP"
+.br
+.ti -1c
+.RI "class \fBTable\fP"
+.br
+.ti -1c
+.RI "class \fBTableDelete\fP"
+.br
+.ti -1c
+.RI "class \fBTableInsert\fP"
+.br
+.ti -1c
+.RI "class \fBTableSelect\fP"
+.br
+.ti -1c
+.RI "class \fBTableUpdate\fP"
+.br
+.ti -1c
+.RI "class \fBWarning\fP"
+.br
+.ti -1c
+.RI "class \fBXSession\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBmysql_xdevapi\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBgetSession\fP ($uri)"
+.br
+.ti -1c
+.RI "\fBexpression\fP ($expression)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBMYSQLX_LOCK_DEFAULT\fP 0"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_DECIMAL\fP 0"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_TINY\fP 1"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_SHORT\fP 2"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_SMALLINT\fP 17"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_MEDIUMINT\fP 18"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_INT\fP 19"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_BIGINT\fP 20"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_LONG\fP 3"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_FLOAT\fP 4"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_DOUBLE\fP 5"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_NULL\fP 6"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_TIMESTAMP\fP 7"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_LONGLONG\fP 8"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_INT24\fP 9"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_DATE\fP 10"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_TIME\fP 11"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_DATETIME\fP 12"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_YEAR\fP 13"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_NEWDATE\fP 14"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_ENUM\fP 247"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_SET\fP 248"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_TINY_BLOB\fP 249"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_MEDIUM_BLOB\fP 250"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_LONG_BLOB\fP 251"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_BLOB\fP 252"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_VAR_STRING\fP 253"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_STRING\fP 254"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_CHAR\fP 1"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_BYTES\fP 21"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_INTERVAL\fP 247"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_GEOMETRY\fP 255"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_JSON\fP 245"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_NEWDECIMAL\fP 246"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_TYPE_BIT\fP 16"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_LOCK_NOWAIT\fP 1"
+.br
+.ti -1c
+.RI "const \fBMYSQLX_LOCK_SKIP_LOCKED\fP 2"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,506 @@
+\hypertarget{dba_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/dba/dba.php File Reference}
+\label{dba_8php}\index{vendor/jetbrains/phpstorm-\/stubs/dba/dba.php@{vendor/jetbrains/phpstorm-\/stubs/dba/dba.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{dba_8php_a573f0971cdec2b927b2cc8378a31628f}{dba\+\_\+open}} (\$path, \$mode, \$handler=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$\mbox{\hyperlink{gettext_8php_a846b230f82cfd260aff26f4287060106}{\+\_\+}}=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{dba_8php_a17a72cbee059fd76a00a7ac78340f3b0}{dba\+\_\+popen}} (\$path, \$mode, \$handler=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$\mbox{\hyperlink{gettext_8php_a846b230f82cfd260aff26f4287060106}{\+\_\+}}=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{dba_8php_aab9d3409fe84048aefdc82910613722e}{dba\+\_\+close}} (\$handle)
+\item 
+\mbox{\hyperlink{dba_8php_ae5a1f253800b1a450eda7a94de932f37}{dba\+\_\+delete}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}, \$handle)
+\item 
+\mbox{\hyperlink{dba_8php_a0ed82fec5f19e04bf7a55ed6b5a52674}{dba\+\_\+exists}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}, \$handle)
+\item 
+\mbox{\hyperlink{dba_8php_af4d6041077691c2f069275d26a211381}{dba\+\_\+fetch}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}, \$handle)
+\item 
+\mbox{\hyperlink{dba_8php_ab6a956cb65f955f08b38fdb930a3906f}{dba\+\_\+fetch}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}, \$skip, \$handle)
+\item 
+\mbox{\hyperlink{dba_8php_a82d5372d4342596dde66f5b6cd36b430}{dba\+\_\+insert}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}, \$value, \$handle)
+\item 
+\mbox{\hyperlink{dba_8php_a41545d33616d1c0825ac336d6c2dcbc2}{dba\+\_\+replace}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}, \$value, \$handle)
+\item 
+\mbox{\hyperlink{dba_8php_ab46a36d00e4713785e70cfbf761717f6}{dba\+\_\+firstkey}} (\$handle)
+\item 
+\mbox{\hyperlink{dba_8php_a60768204780fcd38b667a2bd4679f1a7}{dba\+\_\+nextkey}} (\$handle)
+\item 
+\mbox{\hyperlink{dba_8php_afa8769571533d879d30975645b9e4744}{dba\+\_\+optimize}} (\$handle)
+\item 
+\mbox{\hyperlink{dba_8php_acd38a98eb82a7341a835d8e821eafb55}{dba\+\_\+sync}} (\$handle)
+\item 
+\mbox{\hyperlink{dba_8php_ac60d89e5c0e0d3eb45c6b0b3407fca2d}{dba\+\_\+handlers}} (\$full\+\_\+info=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{dba_8php_a1c0a48f42b3bdc152f8ac54aa8a701be}{dba\+\_\+list}} ()
+\item 
+\mbox{\hyperlink{dba_8php_a597abbe37cb1f15193cb7c1129d0f5ee}{dba\+\_\+key\+\_\+split}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{dba_8php_aab9d3409fe84048aefdc82910613722e}\label{dba_8php_aab9d3409fe84048aefdc82910613722e}} 
+\index{dba.php@{dba.php}!dba\_close@{dba\_close}}
+\index{dba\_close@{dba\_close}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_close()}{dba\_close()}}
+{\footnotesize\ttfamily dba\+\_\+close (\begin{DoxyParamCaption}\item[{}]{\$handle }\end{DoxyParamCaption})}
+
+Close a D\+BA database \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$handle }} The database handler, returned by {\bfseries{dba\+\_\+open}} or {\bfseries{dba\+\_\+popen}}. 
+
+\begin{DoxyReturn}{Returns}
+void No value is returned. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{dba_8php_ae5a1f253800b1a450eda7a94de932f37}\label{dba_8php_ae5a1f253800b1a450eda7a94de932f37}} 
+\index{dba.php@{dba.php}!dba\_delete@{dba\_delete}}
+\index{dba\_delete@{dba\_delete}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_delete()}{dba\_delete()}}
+{\footnotesize\ttfamily dba\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$handle }\end{DoxyParamCaption})}
+
+Delete D\+BA entry specified by key \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$key }} The key of the entry which is deleted. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$handle} & \\
+\hline
+\end{DoxyParams}
+The database handler, returned by {\bfseries{dba\+\_\+open}} or {\bfseries{dba\+\_\+popen}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{dba_8php_a0ed82fec5f19e04bf7a55ed6b5a52674}\label{dba_8php_a0ed82fec5f19e04bf7a55ed6b5a52674}} 
+\index{dba.php@{dba.php}!dba\_exists@{dba\_exists}}
+\index{dba\_exists@{dba\_exists}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_exists()}{dba\_exists()}}
+{\footnotesize\ttfamily dba\+\_\+exists (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$handle }\end{DoxyParamCaption})}
+
+Check whether key exists \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$key }} The key the check is performed for. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$handle} & \\
+\hline
+\end{DoxyParams}
+The database handler, returned by {\bfseries{dba\+\_\+open}} or {\bfseries{dba\+\_\+popen}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} if the key exists, {\bfseries{F\+A\+L\+SE}} otherwise. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{dba_8php_af4d6041077691c2f069275d26a211381}\label{dba_8php_af4d6041077691c2f069275d26a211381}} 
+\index{dba.php@{dba.php}!dba\_fetch@{dba\_fetch}}
+\index{dba\_fetch@{dba\_fetch}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_fetch()}{dba\_fetch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily dba\+\_\+fetch (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$handle }\end{DoxyParamCaption})}
+
+Fetch data specified by key \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$key }} The key the data is specified by. 
+
+When working with inifiles this function accepts arrays as keys where index 0 is the group and index 1 is the value name. See\+: {\bfseries{dba\+\_\+key\+\_\+split}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$handle} & \\
+\hline
+\end{DoxyParams}
+The database handler, returned by {\bfseries{dba\+\_\+open}} or {\bfseries{dba\+\_\+popen}}. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false the associated string if the key/data pair is found, {\bfseries{F\+A\+L\+SE}} otherwise. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{dba_8php_ab6a956cb65f955f08b38fdb930a3906f}\label{dba_8php_ab6a956cb65f955f08b38fdb930a3906f}} 
+\index{dba.php@{dba.php}!dba\_fetch@{dba\_fetch}}
+\index{dba\_fetch@{dba\_fetch}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_fetch()}{dba\_fetch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily dba\+\_\+fetch (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$skip,  }\item[{}]{\$handle }\end{DoxyParamCaption})}
+
+Fetch data specified by key \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$key }} The key the data is specified by. 
+
+When working with inifiles this function accepts arrays as keys where index 0 is the group and index 1 is the value name. See\+: {\bfseries{dba\+\_\+key\+\_\+split}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$skip} & The number of key-\/value pairs to ignore when using cdb databases. This value is ignored for all other databases which do not support multiple keys with the same name. \\
+\hline
+resource & {\em \$handle} & \\
+\hline
+\end{DoxyParams}
+The database handler, returned by {\bfseries{dba\+\_\+open}} or {\bfseries{dba\+\_\+popen}}. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false the associated string if the key/data pair is found, {\bfseries{F\+A\+L\+SE}} otherwise. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{dba_8php_ab46a36d00e4713785e70cfbf761717f6}\label{dba_8php_ab46a36d00e4713785e70cfbf761717f6}} 
+\index{dba.php@{dba.php}!dba\_firstkey@{dba\_firstkey}}
+\index{dba\_firstkey@{dba\_firstkey}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_firstkey()}{dba\_firstkey()}}
+{\footnotesize\ttfamily dba\+\_\+firstkey (\begin{DoxyParamCaption}\item[{}]{\$handle }\end{DoxyParamCaption})}
+
+Fetch first key \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$handle }} The database handler, returned by {\bfseries{dba\+\_\+open}} or {\bfseries{dba\+\_\+popen}}. 
+
+\begin{DoxyReturn}{Returns}
+string the key on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{dba_8php_ac60d89e5c0e0d3eb45c6b0b3407fca2d}\label{dba_8php_ac60d89e5c0e0d3eb45c6b0b3407fca2d}} 
+\index{dba.php@{dba.php}!dba\_handlers@{dba\_handlers}}
+\index{dba\_handlers@{dba\_handlers}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_handlers()}{dba\_handlers()}}
+{\footnotesize\ttfamily dba\+\_\+handlers (\begin{DoxyParamCaption}\item[{}]{\$full\+\_\+info = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+List all the handlers available \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{bool \$full\+\_\+info \mbox{[}optional\mbox{]} }} Turns on/off full information display in the result. 
+
+\begin{DoxyReturn}{Returns}
+array an array of database handlers. If {\itshape full\+\_\+info} is set to {\bfseries{T\+R\+UE}}, the array will be associative with the handlers names as keys, and their version information as value. Otherwise, the result will be an indexed array of handlers names. 
+\end{DoxyReturn}
+
+
+When the internal cdb library is used you will see cdb and cdb\+\_\+make. \begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{dba_8php_a82d5372d4342596dde66f5b6cd36b430}\label{dba_8php_a82d5372d4342596dde66f5b6cd36b430}} 
+\index{dba.php@{dba.php}!dba\_insert@{dba\_insert}}
+\index{dba\_insert@{dba\_insert}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_insert()}{dba\_insert()}}
+{\footnotesize\ttfamily dba\+\_\+insert (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$value,  }\item[{}]{\$handle }\end{DoxyParamCaption})}
+
+Insert entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$key }} The key of the entry to be inserted. If this key already exist in the database, this function will fail. Use {\bfseries{dba\+\_\+replace}} if you need to replace an existent key. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+The value to be inserted. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$handle} & \\
+\hline
+\end{DoxyParams}
+The database handler, returned by {\bfseries{dba\+\_\+open}} or {\bfseries{dba\+\_\+popen}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{dba_8php_a597abbe37cb1f15193cb7c1129d0f5ee}\label{dba_8php_a597abbe37cb1f15193cb7c1129d0f5ee}} 
+\index{dba.php@{dba.php}!dba\_key\_split@{dba\_key\_split}}
+\index{dba\_key\_split@{dba\_key\_split}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_key\_split()}{dba\_key\_split()}}
+{\footnotesize\ttfamily dba\+\_\+key\+\_\+split (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Splits a key in string representation into array representation \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mixed \$key }} The key in string representation. 
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false an array of the form array(0 =$>$ group, 1 =$>$ value\+\_\+name). This function will return {\bfseries{F\+A\+L\+SE}} if {\itshape key} is {\bfseries{N\+U\+LL}} or {\bfseries{F\+A\+L\+SE}}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{dba_8php_a1c0a48f42b3bdc152f8ac54aa8a701be}\label{dba_8php_a1c0a48f42b3bdc152f8ac54aa8a701be}} 
+\index{dba.php@{dba.php}!dba\_list@{dba\_list}}
+\index{dba\_list@{dba\_list}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_list()}{dba\_list()}}
+{\footnotesize\ttfamily dba\+\_\+list (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+List all open database files \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array An associative array, in the form resourceid =$>$ filename.  4.\+3  5.\+0 }}\mbox{\Hypertarget{dba_8php_a60768204780fcd38b667a2bd4679f1a7}\label{dba_8php_a60768204780fcd38b667a2bd4679f1a7}} 
+\index{dba.php@{dba.php}!dba\_nextkey@{dba\_nextkey}}
+\index{dba\_nextkey@{dba\_nextkey}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_nextkey()}{dba\_nextkey()}}
+{\footnotesize\ttfamily dba\+\_\+nextkey (\begin{DoxyParamCaption}\item[{}]{\$handle }\end{DoxyParamCaption})}
+
+Fetch next key \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$handle }} The database handler, returned by {\bfseries{dba\+\_\+open}} or {\bfseries{dba\+\_\+popen}}. 
+
+\begin{DoxyReturn}{Returns}
+string the key on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{dba_8php_a573f0971cdec2b927b2cc8378a31628f}\label{dba_8php_a573f0971cdec2b927b2cc8378a31628f}} 
+\index{dba.php@{dba.php}!dba\_open@{dba\_open}}
+\index{dba\_open@{dba\_open}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_open()}{dba\_open()}}
+{\footnotesize\ttfamily dba\+\_\+open (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$mode,  }\item[{}]{\$handler = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$\+\_\+ = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Open database \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$path }} Commonly a regular path in your filesystem. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+It is r for read access, w for read/write access to an already existing database, c for read/write access and database creation if it doesn\textquotesingle{}t currently exist, and n for create, truncate and read/write access. The database is created in B\+Tree mode, other modes (like Hash or Queue) are not supported. 
+
+Additionally you can set the database lock method with the next char. Use l to lock the database with a .lck file or d to lock the databasefile itself. It is important that all of your applications do this consistently. 
+
+If you want to test the access and do not want to wait for the lock you can add t as third character. When you are absolutely sure that you do not require database locking you can do so by using -\/ instead of l or d. When none of d, l or -\/ is used, dba will lock on the database file as it would with d. 
+
+There can only be one writer for one database file. When you use dba on a web server and more than one request requires write operations they can only be done one after another. Also read during write is not allowed. The dba extension uses locks to prevent this. See the following table\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+locking 
+
+already open 
+
+{\itshape mode} = \char`\"{}rl\char`\"{} 
+
+{\itshape mode} = \char`\"{}rlt\char`\"{} 
+
+{\itshape mode} = \char`\"{}wl\char`\"{} 
+
+{\itshape mode} = \char`\"{}wlt\char`\"{} 
+
+{\itshape mode} = \char`\"{}rd\char`\"{} 
+
+{\itshape mode} = \char`\"{}rdt\char`\"{} 
+
+{\itshape mode} = \char`\"{}wd\char`\"{} 
+
+{\itshape mode} = \char`\"{}wdt\char`\"{}  
+
+not open 
+
+ok 
+
+ok 
+
+ok 
+
+ok 
+
+ok 
+
+ok 
+
+ok 
+
+ok  
+
+{\itshape mode} = \char`\"{}rl\char`\"{} 
+
+ok 
+
+ok 
+
+wait 
+
+false 
+
+illegal 
+
+illegal 
+
+illegal 
+
+illegal  
+
+{\itshape mode} = \char`\"{}wl\char`\"{} 
+
+wait 
+
+false 
+
+wait 
+
+false 
+
+illegal 
+
+illegal 
+
+illegal 
+
+illegal  
+
+{\itshape mode} = \char`\"{}rd\char`\"{} 
+
+illegal 
+
+illegal 
+
+illegal 
+
+illegal 
+
+ok 
+
+ok 
+
+wait 
+
+false  
+
+{\itshape mode} = \char`\"{}wd\char`\"{} 
+
+illegal 
+
+illegal 
+
+illegal 
+
+illegal 
+
+wait 
+
+false 
+
+wait 
+
+false  
+
+ok\+: the second call will be successfull. wait\+: the second call waits until {\bfseries{dba\+\_\+close}} is called for the first. false\+: the second call returns false. illegal\+: you must not mix \char`\"{}l\char`\"{} and \char`\"{}d\char`\"{} modifiers for {\itshape mode} parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$handler} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The name of the handler which shall be used for accessing {\itshape path}. It is passed all optional parameters given to {\bfseries{dba\+\_\+open}} and can act on behalf of them. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$\+\_\+} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource a positive handle on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{dba_8php_afa8769571533d879d30975645b9e4744}\label{dba_8php_afa8769571533d879d30975645b9e4744}} 
+\index{dba.php@{dba.php}!dba\_optimize@{dba\_optimize}}
+\index{dba\_optimize@{dba\_optimize}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_optimize()}{dba\_optimize()}}
+{\footnotesize\ttfamily dba\+\_\+optimize (\begin{DoxyParamCaption}\item[{}]{\$handle }\end{DoxyParamCaption})}
+
+Optimize database \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$handle }} The database handler, returned by {\bfseries{dba\+\_\+open}} or {\bfseries{dba\+\_\+popen}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{dba_8php_a17a72cbee059fd76a00a7ac78340f3b0}\label{dba_8php_a17a72cbee059fd76a00a7ac78340f3b0}} 
+\index{dba.php@{dba.php}!dba\_popen@{dba\_popen}}
+\index{dba\_popen@{dba\_popen}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_popen()}{dba\_popen()}}
+{\footnotesize\ttfamily dba\+\_\+popen (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$mode,  }\item[{}]{\$handler = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$\+\_\+ = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Open database persistently \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$path }} Commonly a regular path in your filesystem. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+It is r for read access, w for read/write access to an already existing database, c for read/write access and database creation if it doesn\textquotesingle{}t currently exist, and n for create, truncate and read/write access. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$handler} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The name of the handler which shall be used for accessing {\itshape path}. It is passed all optional parameters given to {\bfseries{dba\+\_\+popen}} and can act on behalf of them. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$\+\_\+} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource a positive handle on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{dba_8php_a41545d33616d1c0825ac336d6c2dcbc2}\label{dba_8php_a41545d33616d1c0825ac336d6c2dcbc2}} 
+\index{dba.php@{dba.php}!dba\_replace@{dba\_replace}}
+\index{dba\_replace@{dba\_replace}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_replace()}{dba\_replace()}}
+{\footnotesize\ttfamily dba\+\_\+replace (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$value,  }\item[{}]{\$handle }\end{DoxyParamCaption})}
+
+Replace or insert entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$key }} The key of the entry to be replaced. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+The value to be replaced. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$handle} & \\
+\hline
+\end{DoxyParams}
+The database handler, returned by {\bfseries{dba\+\_\+open}} or {\bfseries{dba\+\_\+popen}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{dba_8php_acd38a98eb82a7341a835d8e821eafb55}\label{dba_8php_acd38a98eb82a7341a835d8e821eafb55}} 
+\index{dba.php@{dba.php}!dba\_sync@{dba\_sync}}
+\index{dba\_sync@{dba\_sync}!dba.php@{dba.php}}
+\doxysubsubsection{\texorpdfstring{dba\_sync()}{dba\_sync()}}
+{\footnotesize\ttfamily dba\+\_\+sync (\begin{DoxyParamCaption}\item[{}]{\$handle }\end{DoxyParamCaption})}
+
+Synchronize database \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$handle }} The database handler, returned by {\bfseries{dba\+\_\+open}} or {\bfseries{dba\+\_\+popen}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}

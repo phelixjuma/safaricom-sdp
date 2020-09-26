@@ -1,0 +1,314 @@
+.TH "vendor/jetbrains/phpstorm-stubs/zend/zend_f.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/zend/zend_f.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBset_job_failed\fP ( $error_string)"
+.br
+.ti -1c
+.RI "\fBjobqueue_license_info\fP ()"
+.br
+.ti -1c
+.RI "\fBjava\fP ($\fBclass\fP)"
+.br
+.ti -1c
+.RI "\fBjava_last_exception_get\fP ()"
+.br
+.ti -1c
+.RI "\fBjava_last_exception_clear\fP ()"
+.br
+.ti -1c
+.RI "\fBjava_set_ignore_case\fP ($ignore)"
+.br
+.ti -1c
+.RI "\fBjava_set_encoding\fP ($encoding)"
+.br
+.ti -1c
+.RI "\fBjava_throw_exceptions\fP ($throw)"
+.br
+.ti -1c
+.RI "\fBjava_reload\fP ($new_jarpath)"
+.br
+.ti -1c
+.RI "\fBjava_require\fP ($new_classpath)"
+.br
+.ti -1c
+.RI "\fBzend_loader_enabled\fP ()"
+.br
+.ti -1c
+.RI "\fBzend_loader_file_encoded\fP ()"
+.br
+.ti -1c
+.RI "\fBzend_loader_file_licensed\fP ()"
+.br
+.ti -1c
+.RI "\fBzend_loader_current_file\fP ()"
+.br
+.ti -1c
+.RI "\fBzend_loader_install_license\fP ($license_file, $override)"
+.br
+.ti -1c
+.RI "\fBzend_obfuscate_function_name\fP ($function_name)"
+.br
+.ti -1c
+.RI "\fBzend_obfuscate_class_name\fP ($class_name)"
+.br
+.ti -1c
+.RI "\fBzend_current_obfuscation_level\fP ()"
+.br
+.ti -1c
+.RI "\fBzend_runtime_obfuscate\fP ()"
+.br
+.ti -1c
+.RI "\fBzend_get_id\fP ($all_ids=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBzend_optimizer_version\fP ()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBjava\fP ( $class)"
+Create Java object
+.PP
+\fBReturns\fP
+.RS 4
+object 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$class\fP @vararg \&.\&.\&. 
+.RE
+.PP
+
+.SS "java_last_exception_clear ()"
+Clear last Java exception object record\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "java_last_exception_get ()"
+Return Java exception object for last exception 
+.PP
+\fBReturns\fP
+.RS 4
+object Java \fBException\fP object, if there was an exception, false otherwise 
+.RE
+.PP
+
+.SS "java_reload ( $new_jarpath)"
+Reload Jar's that were dynamically loaded
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$new_jarpath\fP 
+.RE
+.PP
+
+.SS "java_require ( $new_classpath)"
+Add to Java's classpath in runtime
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$new_classpath\fP 
+.RE
+.PP
+
+.SS "java_set_encoding ( $encoding)"
+Set encoding for strings received by Java from PHP\&. Default is UTF-8\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SS "java_set_ignore_case ( $ignore)"
+Set case sensitivity for Java calls\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ignore\fP if set, Java attribute and method names would be resolved disregarding case\&. NOTE: this does not make any Java functions case insensi tive, just things like $foo->bar and $foo->\fBbar()\fP would match \fBBar\fP too\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "java_throw_exceptions ( $throw)"
+Control if exceptions are thrown on Java exception\&. Only for PHP5\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$throw\fP If true, PHP exception is thrown when Java exception happens\&. If set to false, use \fBjava_last_exception_get()\fP to check for exception\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "jobqueue_license_info ()"
+returns array containing following fields: 'license_ok' - whether license allows use of JobQueue 'expires' - license expiration date 
+.SS "set_job_failed ( $error_string)"
+causes a job to fail logically can be used to indicate an error in the script logic (e\&.g\&. database connection problem) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$error_string\fP the error string to display 
+.RE
+.PP
+
+.SS "zend_current_obfuscation_level ()"
+Returns the current obfuscation level support (set by zend_optimizer\&.obfuscation_level_support) 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "zend_get_id ( $all_ids = \fC\fBfalse\fP\fP)"
+Returns array of the host ids\&. If all_ids is true, then all IDs are returned, otehrwise only IDs considered 'primary' are returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$all_ids\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SS "zend_loader_current_file ()"
+Returns the name of the file currently being executed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "zend_loader_enabled ()"
+Shown if loader is enabled 
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "zend_loader_file_encoded ()"
+Returns true if the current file is a Zend-encoded file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "zend_loader_file_licensed ()"
+Returns license (array with fields) if the current file has a valid license and is encoded, otherwise it returns false\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SS "zend_loader_install_license ( $license_file,  $override)"
+Dynamically loads a license for applications encoded with \fBZend\fP SafeGuard\&. The Override controls if it will override old licenses for the same product\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$license_file\fP 
+.br
+\fI$override\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "zend_obfuscate_class_name ( $class_name)"
+Obfuscate and return the given class name with the internal obfuscation function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$class_name\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "zend_obfuscate_function_name ( $function_name)"
+Obfuscate and return the given function name with the internal obfuscation function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$function_name\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "zend_optimizer_version ()"
+Returns Optimizer version\&. Alias: zend_loader_version() 
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "zend_runtime_obfuscate ()"
+Start runtime-obfuscation support that allows limited mixing of obfuscated and un-obfuscated code\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

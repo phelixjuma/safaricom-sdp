@@ -1,0 +1,412 @@
+.TH "vendor/jetbrains/phpstorm-stubs/zend/zend.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/zend/zend.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBZendAPI_Queue\fP"
+.br
+.ti -1c
+.RI "class \fBZendAPI_Job\fP"
+.br
+.ti -1c
+.RI "class \fBjava\fP"
+.br
+.ti -1c
+.RI "class \fBJavaException\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBaccelerator_set_status\fP ($status)"
+.br
+.ti -1c
+.RI "\fBoutput_cache_disable\fP ()"
+.br
+.ti -1c
+.RI "\fBoutput_cache_disable_compression\fP ()"
+.br
+.ti -1c
+.RI "\fBoutput_cache_fetch\fP ($\fBkey\fP, $\fBfunction\fP, $lifetime)"
+.br
+.ti -1c
+.RI "\fBoutput_cache_output\fP ($\fBkey\fP, $\fBfunction\fP, $lifetime)"
+.br
+.ti -1c
+.RI "\fBoutput_cache_remove\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBoutput_cache_remove_url\fP ($url)"
+.br
+.ti -1c
+.RI "\fBoutput_cache_remove_key\fP ($\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBoutput_cache_put\fP ($\fBkey\fP, $data)"
+.br
+.ti -1c
+.RI "\fBoutput_cache_get\fP ($\fBkey\fP, $lifetime)"
+.br
+.ti -1c
+.RI "\fBoutput_cache_exists\fP ($\fBkey\fP, $lifetime)"
+.br
+.ti -1c
+.RI "\fBoutput_cache_stop\fP ()"
+.br
+.ti -1c
+.RI "\fBmonitor_pass_error\fP ($errno, $errstr, $errfile, $errline)"
+.br
+.ti -1c
+.RI "\fBmonitor_set_aggregation_hint\fP ($hint)"
+.br
+.ti -1c
+.RI "\fBmonitor_custom_event\fP ($\fBclass\fP, $text, $severe=\fBnull\fP, $user_data=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmonitor_httperror_event\fP ($error_code, $url, $severe=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmonitor_license_info\fP ()"
+.br
+.ti -1c
+.RI "\fBregister_event_handler\fP ($event_handler_func, $handler_register_name, $event_type_mask)"
+.br
+.ti -1c
+.RI "\fBunregister_event_handler\fP ($handler_name)"
+.br
+.ti -1c
+.RI "\fBzend_send_file\fP ($filename, $mime_type, $custom_headers)"
+.br
+.ti -1c
+.RI "\fBzend_send_buffer\fP ($buffer, $mime_type, $custom_headers)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "accelerator_set_status ( $status)"
+Disable/enable the Code Acceleration functionality at run time\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$status\fP bool If false, Acceleration is disabled, if true - enabled 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "monitor_custom_event ( $class,  $text,  $severe = \fC\fBnull\fP\fP,  $user_data = \fC\fBnull\fP\fP)"
+Creates a custom event with class $class, text $text and possibly severity and other user data 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$class\fP 
+.br
+\fI$text\fP 
+.br
+\fI$severe\fP [optional] 
+.br
+\fI$user_data\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "monitor_httperror_event ( $error_code,  $url,  $severe = \fC\fBnull\fP\fP)"
+Create an HTTPERROR event 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$error_code\fP the http error code to be associated with this event 
+.br
+\fI$url\fP the URL to be associated with this event 
+.br
+\fI$severe\fP [optional] the severety of the event: 0 - not severe, 1 - severe 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "monitor_license_info ()"
+Returns an array containing information about module loading status (and cause of error if module failed to load) module license status (and cause of error if license not valid) 
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SS "monitor_pass_error ( $errno,  $errstr,  $errfile,  $errline)"
+Should be called from a custom error handler to pass the error to the monitor\&. The user function needs to accept two parameters: the error code, and a string describing the error\&. Then there are two optional parameters that may be supplied: the filename in which the error occurred and the line number in which the error occurred\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$errno\fP int 
+.br
+\fI$errstr\fP string 
+.br
+\fI$errfile\fP string 
+.br
+\fI$errline\fP integer 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "monitor_set_aggregation_hint ( $hint)"
+Limited in the database to 255 chars 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hint\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "output_cache_disable ()"
+Disables output caching for currently running scripts\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "output_cache_disable_compression ()"
+Does not allow the cache to perform compression on the output of the current page\&. This output will not be compressed, even if the global set tings would normally allow compression on files of this type\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "output_cache_exists ( $key,  $lifetime)"
+If data for assigned key exists, this function outputs it and returns a value of true\&. If not, it starts capturing the output\&. To be used in pair with output_cache_stop\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP string cache key 
+.br
+\fI$lifetime\fP int cache validity time (seconds) 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true if cached data exists 
+.RE
+.PP
+
+.SS "output_cache_fetch ( $key,  $function,  $lifetime)"
+Gets the code’s return value from the cache if it is there, if not - run function and cache the value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP string cache key 
+.br
+\fI$function\fP string PHP expression 
+.br
+\fI$lifetime\fP int data lifetime in cache (seconds) 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string function's return 
+.RE
+.PP
+
+.SS "output_cache_get ( $key,  $lifetime)"
+Gets cached data according to the assigned key\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP string cache key 
+.br
+\fI$lifetime\fP int cache validity time (seconds) 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+mixed cached data if cache exists, false otherwise 
+.RE
+.PP
+
+.SS "output_cache_output ( $key,  $function,  $lifetime)"
+If they cache for the key exists, output it, otherwise capture expression output, cache and pass it out\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP string cache key 
+.br
+\fI$function\fP string PHP expression 
+.br
+\fI$lifetime\fP int data lifetime in cache (seconds) 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+expression output 
+.RE
+.PP
+
+.SS "output_cache_put ( $key,  $data)"
+Puts data in cache according to the assigned key\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP string cache key 
+.br
+\fI$data\fP mixed cached data (must not contain objects or resources) 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true if OK 
+.RE
+.PP
+
+.SS "output_cache_remove ( $filename)"
+Removes all the cache data for the given filename\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP string full script path on local filesystem 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true if OK, false if something went wrong 
+.RE
+.PP
+
+.SS "output_cache_remove_key ( $key)"
+Remove item from PHP API cache by key 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP string cache key as given to output_cache_get/output_cache_put 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true if OK 
+.RE
+.PP
+
+.SS "output_cache_remove_url ( $url)"
+Remove cache data for the script with given URL (all dependent data is removed) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$url\fP string the local url for the script 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true if OK 
+.RE
+.PP
+
+.SS "output_cache_stop ()"
+If output was captured by output_cache_exists, this function stops the output capture and stores the data under the key that was given to \fBoutput_cache_exists()\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "register_event_handler ( $event_handler_func,  $handler_register_name,  $event_type_mask)"
+Allow you to register a user function as an event handler\&.When a monitor event is triggerd all the user event handler are called and the return value from the handler is saved in an array keyed by the name the event handler was registered under\&. The event handlers results array is saved in the event_extra_data table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$event_handler_func\fP The callback function that will be call when the event is triggered, object methods may also be invoked statically using t his function by passing array($objectname, $methodname) to the function parameter 
+.br
+\fI$handler_register_name\fP [optional] The name this function is registered under - if none is supplied, the function will be registerd under it's own name 
+.br
+\fI$event_type_mask\fP The mask of event types that the handler should be called on by default it's set to MONITOR_EVENT_ALL\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool TRUE on sucess and FALSE if an error occurs\&. 
+.RE
+.PP
+
+.SS "unregister_event_handler ( $handler_name)"
+Allow you to unregister an event handler\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handler_name\fP the name you registered with the handler you now wish to unregister\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool TRUE on sucess and FALSE if no handler we registered under the given name\&. 
+.RE
+.PP
+
+.SS "zend_send_buffer ( $buffer,  $mime_type,  $custom_headers)"
+Send a buffer using ZDS 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$buffer\fP the content that will be send 
+.br
+\fI$mime_type\fP [optional] MIME type of the buffer, if omitted, taken from configured MIME types file 
+.br
+\fI$custom_headers\fP [optional] user defined headers that will be send instead of regular ZDS headers\&. few basic essential headers will be send anyway 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void|false FALSE if sending file failed, does not return otherwise 
+.RE
+.PP
+
+.SS "zend_send_file ( $filename,  $mime_type,  $custom_headers)"
+Send a file using ZDS 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP path to the file 
+.br
+\fI$mime_type\fP [optional] MIME type of the file, if omitted, taken from configured MIME types file 
+.br
+\fI$custom_headers\fP [optional] user defined headers that will be send instead of regular ZDS headers\&. few basic essential headers will be send anyway 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void|false FALSE if sending file failed, does not return otherwise 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,983 @@
+.TH "vendor/jetbrains/phpstorm-stubs/xmlwriter/xmlwriter.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/xmlwriter/xmlwriter.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBXMLWriter\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBxmlwriter_open_uri\fP ($uri)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_open_memory\fP ()"
+.br
+.ti -1c
+.RI "\fBxmlwriter_set_indent\fP ($xmlwriter, $indent)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_set_indent_string\fP ($xmlwriter, $indentString)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_start_comment\fP ($xmlwriter)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_end_comment\fP ($xmlwriter)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_start_attribute\fP ($xmlwriter, $name)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_end_attribute\fP ($xmlwriter)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_write_attribute\fP ($xmlwriter, $name, $value)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_start_attribute_ns\fP ($xmlwriter, $prefix, $name, $uri)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_write_attribute_ns\fP ($xmlwriter, $prefix, $name, $uri, $content)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_start_element\fP ($xmlwriter, $name)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_end_element\fP ($xmlwriter)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_full_end_element\fP ($xmlwriter)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_start_element_ns\fP ($xmlwriter, $prefix, $name, $uri)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_write_element\fP ($xmlwriter, $name, $content=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_write_element_ns\fP ($xmlwriter, $prefix, $name, $uri, $content=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_start_pi\fP ($xmlwriter, $target)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_end_pi\fP ($xmlwriter)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_write_pi\fP ($xmlwriter, $target, $content)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_start_cdata\fP ($xmlwriter)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_end_cdata\fP ($xmlwriter)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_write_cdata\fP ($xmlwriter, $content)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_text\fP ($xmlwriter, $content)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_write_raw\fP ($xmlwriter, $content)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_start_document\fP ($xmlwriter, $\fBversion\fP='1\&.0', $encoding=\fBnull\fP, $standalone=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_end_document\fP ($xmlwriter)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_write_comment\fP ($xmlwriter, $content)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_start_dtd\fP ($xmlwriter, $qualifiedName, $publicId=\fBnull\fP, $systemId=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_end_dtd\fP ($xmlwriter)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_write_dtd\fP ($xmlwriter, $name, $publicId=\fBnull\fP, $systemId=\fBnull\fP, $subset=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_start_dtd_element\fP ($xmlwriter, $qualifiedName)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_end_dtd_element\fP ($xmlwriter)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_write_dtd_element\fP ($xmlwriter, $name, $content)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_start_dtd_attlist\fP ($xmlwriter, $name)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_end_dtd_attlist\fP ($xmlwriter)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_write_dtd_attlist\fP ($xmlwriter, $name, $content)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_start_dtd_entity\fP ($xmlwriter, $name, $isparam)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_end_dtd_entity\fP ($xmlwriter)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_write_dtd_entity\fP ($xmlwriter, $name, $content, $pe, $pubid, $sysid, $ndataid)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_output_memory\fP ($xmlwriter, $\fBflush\fP=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBxmlwriter_flush\fP ($xmlwriter, $empty=\fBtrue\fP)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "xmlwriter_end_attribute ( $xmlwriter)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ End attribute \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+* 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_end_cdata ( $xmlwriter)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ End current CDATA \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_end_comment ( $xmlwriter)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 1\&.0\&.0)
+.br
+ Create end comment \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_end_document ( $xmlwriter)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ End current document \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_end_dtd ( $xmlwriter)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ End current DTD \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+* 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_end_dtd_attlist ( $xmlwriter)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ End current DTD AttList \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+* 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_end_dtd_element ( $xmlwriter)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ End current DTD element \fB$xmlwriter  bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. \fP
+.SS "xmlwriter_end_dtd_entity ( $xmlwriter)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ End current DTD Entity \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+* 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_end_element ( $xmlwriter)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ End current element \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+* 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_end_pi ( $xmlwriter)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ End current PI \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+* 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_flush ( $xmlwriter,  $empty = \fC\fBtrue\fP\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 1\&.0\&.0)
+.br
+ Flush current buffer \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$empty\fP [optional] 
+.RE
+.PP
+Whether to empty the buffer or not\&. Default is \fBTRUE\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed If you opened the writer in memory, this function returns the generated XML buffer, Else, if using URI, this function will write the buffer and return the number of written bytes\&. 
+.RE
+.PP
+
+.SS "xmlwriter_full_end_element ( $xmlwriter)"
+(PHP 5 >= 5\&.2\&.0, PECL xmlwriter >= 2\&.0\&.4)
+.br
+ End current element \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+* 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_open_memory ()"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Create new xmlwriter using memory for string output \fBbool Object oriented style: Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&. \fP 
+.PP
+Procedural style: Returns a new xmlwriter resource for later use with the xmlwriter functions on success, \fBFALSE\fP on error\&. 
+.SS "xmlwriter_open_uri ( $uri)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Create new xmlwriter using source uri for output \fBstring $uri \fP The URI of the resource for the output\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Object oriented style: Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+Procedural style: Returns a new xmlwriter resource for later use with the xmlwriter functions on success, \fBFALSE\fP on error\&. 
+.SS "xmlwriter_output_memory ( $xmlwriter,  $flush = \fC\fBtrue\fP\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Returns current buffer \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flush\fP [optional] 
+.RE
+.PP
+Whether to flush the output buffer or not\&. Default is \fBTRUE\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the current buffer as a string\&. 
+.RE
+.PP
+
+.SS "xmlwriter_set_indent ( $xmlwriter,  $indent)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Toggle indentation on/off \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$indent\fP 
+.RE
+.PP
+Whether indentation is enabled\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_set_indent_string ( $xmlwriter,  $indentString)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Set string used for indenting \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$indentString\fP 
+.RE
+.PP
+The indentation string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_start_attribute ( $xmlwriter,  $name)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Create start attribute \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The attribute name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_start_attribute_ns ( $xmlwriter,  $prefix,  $name,  $uri)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Create start namespaced attribute \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$prefix\fP 
+.RE
+.PP
+The namespace prefix\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The attribute name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uri\fP 
+.RE
+.PP
+The namespace URI\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_start_cdata ( $xmlwriter)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Create start CDATA tag \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_start_comment ( $xmlwriter)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 1\&.0\&.0)
+.br
+ Create start comment \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+* 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_start_document ( $xmlwriter,  $version = \fC'1\&.0'\fP,  $encoding = \fC\fBnull\fP\fP,  $standalone = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Create document tag \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$version\fP [optional] 
+.RE
+.PP
+The version number of the document as part of the XML declaration\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP [optional] 
+.RE
+.PP
+The encoding of the document as part of the XML declaration\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$standalone\fP [optional] 
+.RE
+.PP
+yes or no\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_start_dtd ( $xmlwriter,  $qualifiedName,  $publicId = \fC\fBnull\fP\fP,  $systemId = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Create start DTD tag \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifiedName\fP 
+.RE
+.PP
+The qualified name of the document type to create\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$publicId\fP [optional] 
+.RE
+.PP
+The external subset public identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$systemId\fP [optional] 
+.RE
+.PP
+The external subset system identifier\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_start_dtd_attlist ( $xmlwriter,  $name)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Create start DTD AttList \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The attribute list name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_start_dtd_element ( $xmlwriter,  $qualifiedName)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Create start DTD element \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifiedName\fP 
+.RE
+.PP
+The qualified name of the document type to create\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_start_dtd_entity ( $xmlwriter,  $name,  $isparam)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Create start DTD Entity \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The name of the entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$isparam\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_start_element ( $xmlwriter,  $name)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Create start element tag \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The element name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_start_element_ns ( $xmlwriter,  $prefix,  $name,  $uri)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Create start namespaced element tag \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$prefix\fP 
+.RE
+.PP
+The namespace prefix\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The element name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uri\fP 
+.RE
+.PP
+The namespace URI\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_start_pi ( $xmlwriter,  $target)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Create start PI tag \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$target\fP 
+.RE
+.PP
+The target of the processing instruction\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_text ( $xmlwriter,  $content)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Write text \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$content\fP 
+.RE
+.PP
+The contents of the text\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_write_attribute ( $xmlwriter,  $name,  $value)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Write full attribute \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The name of the attribute\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+The value of the attribute\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_write_attribute_ns ( $xmlwriter,  $prefix,  $name,  $uri,  $content)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Write full namespaced attribute \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$prefix\fP 
+.RE
+.PP
+The namespace prefix\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The attribute name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uri\fP 
+.RE
+.PP
+The namespace URI\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$content\fP 
+.RE
+.PP
+The attribute value\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_write_cdata ( $xmlwriter,  $content)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Write full CDATA tag \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$content\fP 
+.RE
+.PP
+The contents of the CDATA\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_write_comment ( $xmlwriter,  $content)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Write full comment tag \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$content\fP 
+.RE
+.PP
+The contents of the comment\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_write_dtd ( $xmlwriter,  $name,  $publicId = \fC\fBnull\fP\fP,  $systemId = \fC\fBnull\fP\fP,  $subset = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Write full DTD tag \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The DTD name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$publicId\fP [optional] 
+.RE
+.PP
+The external subset public identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$systemId\fP [optional] 
+.RE
+.PP
+The external subset system identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$subset\fP [optional] 
+.RE
+.PP
+The content of the DTD\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_write_dtd_attlist ( $xmlwriter,  $name,  $content)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Write full DTD AttList tag \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The name of the DTD attribute list\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$content\fP 
+.RE
+.PP
+The content of the DTD attribute list\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_write_dtd_element ( $xmlwriter,  $name,  $content)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Write full DTD element tag \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The name of the DTD element\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$content\fP 
+.RE
+.PP
+The content of the element\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_write_dtd_entity ( $xmlwriter,  $name,  $content,  $pe,  $pubid,  $sysid,  $ndataid)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Write full DTD Entity tag \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The name of the entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$content\fP 
+.RE
+.PP
+The content of the entity\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pe\fP 
+.br
+\fI$pubid\fP 
+.br
+\fI$sysid\fP 
+.br
+\fI$ndataid\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_write_element ( $xmlwriter,  $name,  $content = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Write full element tag \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The element name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$content\fP [optional] 
+.RE
+.PP
+The element contents\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_write_element_ns ( $xmlwriter,  $prefix,  $name,  $uri,  $content = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Write full namespaced element tag \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$prefix\fP 
+.RE
+.PP
+The namespace prefix\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The element name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uri\fP 
+.RE
+.PP
+The namespace URI\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$content\fP [optional] 
+.RE
+.PP
+The element contents\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_write_pi ( $xmlwriter,  $target,  $content)"
+(PHP 5 >= 5\&.1\&.2, PECL xmlwriter >= 0\&.1\&.0)
+.br
+ Writes a PI \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$target\fP 
+.RE
+.PP
+The target of the processing instruction\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$content\fP 
+.RE
+.PP
+The content of the processing instruction\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "xmlwriter_write_raw ( $xmlwriter,  $content)"
+(PHP 5 >= 5\&.2\&.0, PECL xmlwriter >= 2\&.0\&.4)
+.br
+ Write a raw XML text \fBresource $xmlwriter \fPOnly for procedural calls\&. The \fBXMLWriter\fP \fBresource\fP that is being modified\&. This resource comes from a call to \fBxmlwriter_open_uri()\fP or \fBxmlwriter_open_memory()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$content\fP 
+.RE
+.PP
+The text string to write\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

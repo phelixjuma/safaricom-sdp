@@ -1,0 +1,475 @@
+\hypertarget{iconv_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/iconv/iconv.php File Reference}
+\label{iconv_8php}\index{vendor/jetbrains/phpstorm-\/stubs/iconv/iconv.php@{vendor/jetbrains/phpstorm-\/stubs/iconv/iconv.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{iconv_8php_a96c0becf345d83d8474d462656c90884}{iconv}} (\$in\+\_\+charset, \$out\+\_\+charset, \$str)
+\item 
+\mbox{\hyperlink{iconv_8php_acb8db46ca2c61022f7019427cebdb6b7}{ob\+\_\+iconv\+\_\+handler}} (\$contents, \$status)
+\item 
+\mbox{\hyperlink{iconv_8php_a20b80b3db5294c51f86ba67f2aa576f7}{iconv\+\_\+get\+\_\+encoding}} (\$type=\char`\"{}all\char`\"{})
+\item 
+\mbox{\hyperlink{iconv_8php_a99521f5d446297786df022a2d5f0c749}{iconv\+\_\+set\+\_\+encoding}} (\$type, \$charset)
+\item 
+\mbox{\hyperlink{iconv_8php_a54794cb4bd7e5f751aa9965064e2c054}{iconv\+\_\+strlen}} (\$str, \$charset=\textquotesingle{}\mbox{\hyperlink{standard__4_8php_a7fdf128fba28e17cde74c5dcaae42c9c}{ini\+\_\+get}}(\char`\"{}iconv.\+internal\+\_\+encoding\char`\"{})\textquotesingle{})
+\item 
+\mbox{\hyperlink{iconv_8php_a57199a186ebe4e0639df6cc4c2bff970}{iconv\+\_\+substr}} (\$str, \$offset, \$length=\textquotesingle{}\mbox{\hyperlink{iconv_8php_a54794cb4bd7e5f751aa9965064e2c054}{iconv\+\_\+strlen}}(\$str, \$charset)\textquotesingle{}, \$charset=\textquotesingle{}\mbox{\hyperlink{standard__4_8php_a7fdf128fba28e17cde74c5dcaae42c9c}{ini\+\_\+get}}(\char`\"{}iconv.\+internal\+\_\+encoding\char`\"{})\textquotesingle{})
+\item 
+\mbox{\hyperlink{iconv_8php_aec9746aa4e04b4484026a26237dc0551}{iconv\+\_\+strpos}} (\$haystack, \$needle, \$offset=0, \$charset=\textquotesingle{}\mbox{\hyperlink{standard__4_8php_a7fdf128fba28e17cde74c5dcaae42c9c}{ini\+\_\+get}}(\char`\"{}iconv.\+internal\+\_\+encoding\char`\"{})\textquotesingle{})
+\item 
+\mbox{\hyperlink{iconv_8php_ab9a9ec670b547bc58f0b2b67d2eb2397}{iconv\+\_\+strrpos}} (\$haystack, \$needle, \$charset=\textquotesingle{}\mbox{\hyperlink{standard__4_8php_a7fdf128fba28e17cde74c5dcaae42c9c}{ini\+\_\+get}}(\char`\"{}iconv.\+internal\+\_\+encoding\char`\"{})\textquotesingle{})
+\item 
+\mbox{\hyperlink{iconv_8php_afa91c85f21120fdd56c77cacf95ba520}{iconv\+\_\+mime\+\_\+encode}} (\$field\+\_\+name, \$field\+\_\+value, array \$preferences=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{iconv_8php_ac0e3a555b387373403aa0df8fa957e24}{iconv\+\_\+mime\+\_\+decode}} (\$encoded\+\_\+header, \$mode=0, \$charset=\textquotesingle{}\mbox{\hyperlink{standard__4_8php_a7fdf128fba28e17cde74c5dcaae42c9c}{ini\+\_\+get}}(\char`\"{}iconv.\+internal\+\_\+encoding\char`\"{})\textquotesingle{})
+\item 
+\mbox{\hyperlink{iconv_8php_a647cadbac5e30beb97ea30342c343dfd}{iconv\+\_\+mime\+\_\+decode\+\_\+headers}} (\$encoded\+\_\+headers, \$mode=0, \$charset=\textquotesingle{}\mbox{\hyperlink{standard__4_8php_a7fdf128fba28e17cde74c5dcaae42c9c}{ini\+\_\+get}}(\char`\"{}iconv.\+internal\+\_\+encoding\char`\"{})\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{iconv_8php_a861c42c5e89c5ce7899e717ca7171f90}{I\+C\+O\+N\+V\+\_\+\+I\+M\+PL}} \char`\"{}glibc\char`\"{}
+\item 
+const \mbox{\hyperlink{iconv_8php_a0f8a5317d593cc842102786a555946b9}{I\+C\+O\+N\+V\+\_\+\+V\+E\+R\+S\+I\+ON}} 2.\+17
+\item 
+const \mbox{\hyperlink{iconv_8php_a548051e023a888cd7d2dc9e6b6192c6f}{I\+C\+O\+N\+V\+\_\+\+M\+I\+M\+E\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+S\+T\+R\+I\+CT}} 1
+\item 
+const \mbox{\hyperlink{iconv_8php_a0893c1f013e40fe6390fbc3f20aade5f}{I\+C\+O\+N\+V\+\_\+\+M\+I\+M\+E\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+C\+O\+N\+T\+I\+N\+U\+E\+\_\+\+O\+N\+\_\+\+E\+R\+R\+OR}} 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{iconv_8php_a96c0becf345d83d8474d462656c90884}\label{iconv_8php_a96c0becf345d83d8474d462656c90884}} 
+\index{iconv.php@{iconv.php}!iconv@{iconv}}
+\index{iconv@{iconv}!iconv.php@{iconv.php}}
+\doxysubsubsection{\texorpdfstring{iconv()}{iconv()}}
+{\footnotesize\ttfamily iconv (\begin{DoxyParamCaption}\item[{}]{\$in\+\_\+charset,  }\item[{}]{\$out\+\_\+charset,  }\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Convert string to requested character encoding \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$in\+\_\+charset }} The input charset. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$out\+\_\+charset} & \\
+\hline
+\end{DoxyParams}
+The output charset. 
+
+If you append the string //\+T\+R\+A\+N\+S\+L\+IT to {\itshape out\+\_\+charset} transliteration is activated. This means that when a character can\textquotesingle{}t be represented in the target charset, it can be approximated through one or several similarly looking characters. If you append the string //\+I\+G\+N\+O\+RE, characters that cannot be represented in the target charset are silently discarded. Otherwise, {\itshape str} is cut from the first illegal character and an {\bfseries{E\+\_\+\+N\+O\+T\+I\+CE}} is generated. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+The string to be converted. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false the converted string or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+5 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{iconv_8php_a20b80b3db5294c51f86ba67f2aa576f7}\label{iconv_8php_a20b80b3db5294c51f86ba67f2aa576f7}} 
+\index{iconv.php@{iconv.php}!iconv\_get\_encoding@{iconv\_get\_encoding}}
+\index{iconv\_get\_encoding@{iconv\_get\_encoding}!iconv.php@{iconv.php}}
+\doxysubsubsection{\texorpdfstring{iconv\_get\_encoding()}{iconv\_get\_encoding()}}
+{\footnotesize\ttfamily iconv\+\_\+get\+\_\+encoding (\begin{DoxyParamCaption}\item[{}]{\$type = {\ttfamily \char`\"{}all\char`\"{}} }\end{DoxyParamCaption})}
+
+Retrieve internal configuration variables of iconv extension \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$type \mbox{[}optional\mbox{]} }} The value of the optional {\itshape type} can be\+: all input\+\_\+encoding output\+\_\+encoding internal\+\_\+encoding 
+
+\begin{DoxyReturn}{Returns}
+mixed the current value of the internal configuration variable if successful or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+
+
+If {\itshape type} is omitted or set to \char`\"{}all\char`\"{}, {\bfseries{iconv\+\_\+get\+\_\+encoding}} returns an array that stores all these variables. \begin{DoxySince}{Since}
+4.\+0.\+5 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{iconv_8php_ac0e3a555b387373403aa0df8fa957e24}\label{iconv_8php_ac0e3a555b387373403aa0df8fa957e24}} 
+\index{iconv.php@{iconv.php}!iconv\_mime\_decode@{iconv\_mime\_decode}}
+\index{iconv\_mime\_decode@{iconv\_mime\_decode}!iconv.php@{iconv.php}}
+\doxysubsubsection{\texorpdfstring{iconv\_mime\_decode()}{iconv\_mime\_decode()}}
+{\footnotesize\ttfamily iconv\+\_\+mime\+\_\+decode (\begin{DoxyParamCaption}\item[{}]{\$encoded\+\_\+header,  }\item[{}]{\$mode = {\ttfamily 0},  }\item[{}]{\$charset = {\ttfamily \textquotesingle{}\mbox{\hyperlink{standard__4_8php_a7fdf128fba28e17cde74c5dcaae42c9c}{ini\+\_\+get}}(\char`\"{}iconv.internal\+\_\+encoding\char`\"{})\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Decodes a M\+I\+ME header field \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$encoded\+\_\+header }} The encoded header, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+{\itshape mode} determines the behaviour in the event {\bfseries{iconv\+\_\+mime\+\_\+decode}} encounters a malformed M\+I\+ME header field. You can specify any combination of the following bitmasks. \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+acceptable to {\bfseries{iconv\+\_\+mime\+\_\+decode}} 
+
+Value 
+
+Constant 
+
+Description  
+
+1 
+
+I\+C\+O\+N\+V\+\_\+\+M\+I\+M\+E\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+S\+T\+R\+I\+CT 
+
+If set, the given header is decoded in full conformance with the standards defined in R\+F\+C2047. This option is disabled by default because there are a lot of broken mail user agents that don\textquotesingle{}t follow the specification and don\textquotesingle{}t produce correct M\+I\+ME headers.   
+
+2 
+
+I\+C\+O\+N\+V\+\_\+\+M\+I\+M\+E\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+C\+O\+N\+T\+I\+N\+U\+E\+\_\+\+O\+N\+\_\+\+E\+R\+R\+OR 
+
+If set, {\bfseries{iconv\+\_\+mime\+\_\+decode\+\_\+headers}} attempts to ignore any grammatical errors and continue to process a given header.   
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The optional {\itshape charset} parameter specifies the character set to represent the result by. If omitted, iconv.\+internal\+\_\+encoding will be used. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false a decoded M\+I\+ME field on success, or {\bfseries{F\+A\+L\+SE}} if an error occurs during the decoding. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{iconv_8php_a647cadbac5e30beb97ea30342c343dfd}\label{iconv_8php_a647cadbac5e30beb97ea30342c343dfd}} 
+\index{iconv.php@{iconv.php}!iconv\_mime\_decode\_headers@{iconv\_mime\_decode\_headers}}
+\index{iconv\_mime\_decode\_headers@{iconv\_mime\_decode\_headers}!iconv.php@{iconv.php}}
+\doxysubsubsection{\texorpdfstring{iconv\_mime\_decode\_headers()}{iconv\_mime\_decode\_headers()}}
+{\footnotesize\ttfamily iconv\+\_\+mime\+\_\+decode\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{\$encoded\+\_\+headers,  }\item[{}]{\$mode = {\ttfamily 0},  }\item[{}]{\$charset = {\ttfamily \textquotesingle{}\mbox{\hyperlink{standard__4_8php_a7fdf128fba28e17cde74c5dcaae42c9c}{ini\+\_\+get}}(\char`\"{}iconv.internal\+\_\+encoding\char`\"{})\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Decodes multiple M\+I\+ME header fields at once \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$encoded\+\_\+headers }} The encoded headers, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+{\itshape mode} determines the behaviour in the event {\bfseries{iconv\+\_\+mime\+\_\+decode\+\_\+headers}} encounters a malformed M\+I\+ME header field. You can specify any combination of the following bitmasks. \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+acceptable to {\bfseries{iconv\+\_\+mime\+\_\+decode\+\_\+headers}} 
+
+Value 
+
+Constant 
+
+Description  
+
+1 
+
+I\+C\+O\+N\+V\+\_\+\+M\+I\+M\+E\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+S\+T\+R\+I\+CT 
+
+If set, the given header is decoded in full conformance with the standards defined in R\+F\+C2047. This option is disabled by default because there are a lot of broken mail user agents that don\textquotesingle{}t follow the specification and don\textquotesingle{}t produce correct M\+I\+ME headers.   
+
+2 
+
+I\+C\+O\+N\+V\+\_\+\+M\+I\+M\+E\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+C\+O\+N\+T\+I\+N\+U\+E\+\_\+\+O\+N\+\_\+\+E\+R\+R\+OR 
+
+If set, {\bfseries{iconv\+\_\+mime\+\_\+decode\+\_\+headers}} attempts to ignore any grammatical errors and continue to process a given header.   
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The optional {\itshape charset} parameter specifies the character set to represent the result by. If omitted, iconv.\+internal\+\_\+encoding will be used. 
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false an associative array that holds a whole set of M\+I\+ME header fields specified by {\itshape encoded\+\_\+headers} on success, or {\bfseries{F\+A\+L\+SE}} if an error occurs during the decoding. 
+\end{DoxyReturn}
+
+
+Each key of the return value represents an individual field name and the corresponding element represents a field value. If more than one field of the same name are present, {\bfseries{iconv\+\_\+mime\+\_\+decode\+\_\+headers}} automatically incorporates them into a numerically indexed array in the order of occurrence. \begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{iconv_8php_afa91c85f21120fdd56c77cacf95ba520}\label{iconv_8php_afa91c85f21120fdd56c77cacf95ba520}} 
+\index{iconv.php@{iconv.php}!iconv\_mime\_encode@{iconv\_mime\_encode}}
+\index{iconv\_mime\_encode@{iconv\_mime\_encode}!iconv.php@{iconv.php}}
+\doxysubsubsection{\texorpdfstring{iconv\_mime\_encode()}{iconv\_mime\_encode()}}
+{\footnotesize\ttfamily iconv\+\_\+mime\+\_\+encode (\begin{DoxyParamCaption}\item[{}]{\$field\+\_\+name,  }\item[{}]{\$field\+\_\+value,  }\item[{array}]{\$preferences = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Composes a M\+I\+ME header field \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$field\+\_\+name }} The field name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$field\+\_\+value} & \\
+\hline
+\end{DoxyParams}
+The field value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$preferences} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+You can control the behaviour of {\bfseries{iconv\+\_\+mime\+\_\+encode}} by specifying an associative array that contains configuration items to the optional third parameter {\itshape preferences}. The items supported by {\bfseries{iconv\+\_\+mime\+\_\+encode}} are listed below. Note that item names are treated case-\/sensitive. \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+items supported by {\bfseries{iconv\+\_\+mime\+\_\+encode}} 
+
+Item 
+
+Type 
+
+Description 
+
+Default value 
+
+\mbox{\hyperlink{class_example}{Example}}  
+
+scheme 
+
+string 
+
+Specifies the method to encode a field value by. The value of this item may be either \char`\"{}\+B\char`\"{} or \char`\"{}\+Q\char`\"{}, where \char`\"{}\+B\char`\"{} stands for base64 encoding scheme and \char`\"{}\+Q\char`\"{} stands for quoted-\/printable encoding scheme.  
+
+\mbox{\hyperlink{class_b}{B}} 
+
+\mbox{\hyperlink{class_b}{B}}  
+
+input-\/charset 
+
+string 
+
+Specifies the character set in which the first parameter {\itshape field\+\_\+name} and the second parameter {\itshape field\+\_\+value} are presented. If not given, {\bfseries{iconv\+\_\+mime\+\_\+encode}} assumes those parameters are presented to it in the iconv.\+internal\+\_\+encoding ini setting.  
+
+iconv.\+internal\+\_\+encoding  
+
+I\+S\+O-\/8859-\/1  
+
+output-\/charset 
+
+string 
+
+Specifies the character set to use to compose the M\+I\+ME header.  
+
+iconv.\+internal\+\_\+encoding  
+
+U\+T\+F-\/8  
+
+line-\/length 
+
+integer 
+
+Specifies the maximum length of the header lines. The resulting header is \char`\"{}folded\char`\"{} to a set of multiple lines in case the resulting header field would be longer than the value of this parameter, according to R\+F\+C2822 -\/ Internet Message Format. If not given, the length will be limited to 76 characters.  
+
+76 
+
+996  
+
+line-\/break-\/chars 
+
+string 
+
+Specifies the sequence of characters to append to each line as an end-\/of-\/line sign when \char`\"{}folding\char`\"{} is performed on a long header field. If not given, this defaults to \char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{} (CR LF). Note that this parameter is always treated as an A\+S\+C\+II string regardless of the value of input-\/charset.  
+
+\textbackslash{}r~\newline
+ 
+
+~\newline
+  
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false an encoded M\+I\+ME field on success, or {\bfseries{F\+A\+L\+SE}} if an error occurs during the encoding. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{iconv_8php_a99521f5d446297786df022a2d5f0c749}\label{iconv_8php_a99521f5d446297786df022a2d5f0c749}} 
+\index{iconv.php@{iconv.php}!iconv\_set\_encoding@{iconv\_set\_encoding}}
+\index{iconv\_set\_encoding@{iconv\_set\_encoding}!iconv.php@{iconv.php}}
+\doxysubsubsection{\texorpdfstring{iconv\_set\_encoding()}{iconv\_set\_encoding()}}
+{\footnotesize\ttfamily iconv\+\_\+set\+\_\+encoding (\begin{DoxyParamCaption}\item[{}]{\$type,  }\item[{}]{\$charset }\end{DoxyParamCaption})}
+
+Set current setting for character encoding conversion \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$type }} The value of {\itshape type} can be any one of these\+: input\+\_\+encoding output\+\_\+encoding internal\+\_\+encoding 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \\
+\hline
+\end{DoxyParams}
+The character set. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+5 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{iconv_8php_a54794cb4bd7e5f751aa9965064e2c054}\label{iconv_8php_a54794cb4bd7e5f751aa9965064e2c054}} 
+\index{iconv.php@{iconv.php}!iconv\_strlen@{iconv\_strlen}}
+\index{iconv\_strlen@{iconv\_strlen}!iconv.php@{iconv.php}}
+\doxysubsubsection{\texorpdfstring{iconv\_strlen()}{iconv\_strlen()}}
+{\footnotesize\ttfamily iconv\+\_\+strlen (\begin{DoxyParamCaption}\item[{}]{\$str,  }\item[{}]{\$charset = {\ttfamily \textquotesingle{}\mbox{\hyperlink{standard__4_8php_a7fdf128fba28e17cde74c5dcaae42c9c}{ini\+\_\+get}}(\char`\"{}iconv.internal\+\_\+encoding\char`\"{})\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Returns the character count of string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$str }} The string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If {\itshape charset} parameter is omitted, {\itshape str} is assumed to be encoded in iconv.\+internal\+\_\+encoding. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false the character count of {\itshape str}, as an integer. False on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{iconv_8php_aec9746aa4e04b4484026a26237dc0551}\label{iconv_8php_aec9746aa4e04b4484026a26237dc0551}} 
+\index{iconv.php@{iconv.php}!iconv\_strpos@{iconv\_strpos}}
+\index{iconv\_strpos@{iconv\_strpos}!iconv.php@{iconv.php}}
+\doxysubsubsection{\texorpdfstring{iconv\_strpos()}{iconv\_strpos()}}
+{\footnotesize\ttfamily iconv\+\_\+strpos (\begin{DoxyParamCaption}\item[{}]{\$haystack,  }\item[{}]{\$needle,  }\item[{}]{\$offset = {\ttfamily 0},  }\item[{}]{\$charset = {\ttfamily \textquotesingle{}\mbox{\hyperlink{standard__4_8php_a7fdf128fba28e17cde74c5dcaae42c9c}{ini\+\_\+get}}(\char`\"{}iconv.internal\+\_\+encoding\char`\"{})\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Finds position of first occurrence of a needle within a haystack \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$haystack }} The entire string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$needle} & \\
+\hline
+\end{DoxyParams}
+The searched substring. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$offset} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The optional {\itshape offset} parameter specifies the position from which the search should be performed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If {\itshape charset} parameter is omitted, {\itshape string} are assumed to be encoded in iconv.\+internal\+\_\+encoding. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false the numeric position of the first occurrence of {\itshape needle} in {\itshape haystack}. 
+\end{DoxyReturn}
+
+
+If {\itshape needle} is not found, {\bfseries{iconv\+\_\+strpos}} will return {\bfseries{F\+A\+L\+SE}}. \begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{iconv_8php_ab9a9ec670b547bc58f0b2b67d2eb2397}\label{iconv_8php_ab9a9ec670b547bc58f0b2b67d2eb2397}} 
+\index{iconv.php@{iconv.php}!iconv\_strrpos@{iconv\_strrpos}}
+\index{iconv\_strrpos@{iconv\_strrpos}!iconv.php@{iconv.php}}
+\doxysubsubsection{\texorpdfstring{iconv\_strrpos()}{iconv\_strrpos()}}
+{\footnotesize\ttfamily iconv\+\_\+strrpos (\begin{DoxyParamCaption}\item[{}]{\$haystack,  }\item[{}]{\$needle,  }\item[{}]{\$charset = {\ttfamily \textquotesingle{}\mbox{\hyperlink{standard__4_8php_a7fdf128fba28e17cde74c5dcaae42c9c}{ini\+\_\+get}}(\char`\"{}iconv.internal\+\_\+encoding\char`\"{})\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Finds the last occurrence of a needle within a haystack \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$haystack }} The entire string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$needle} & \\
+\hline
+\end{DoxyParams}
+The searched substring. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If {\itshape charset} parameter is omitted, {\itshape string} are assumed to be encoded in iconv.\+internal\+\_\+encoding. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false the numeric position of the last occurrence of {\itshape needle} in {\itshape haystack}. 
+\end{DoxyReturn}
+
+
+If {\itshape needle} is not found, {\bfseries{iconv\+\_\+strrpos}} will return {\bfseries{F\+A\+L\+SE}}. \begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{iconv_8php_a57199a186ebe4e0639df6cc4c2bff970}\label{iconv_8php_a57199a186ebe4e0639df6cc4c2bff970}} 
+\index{iconv.php@{iconv.php}!iconv\_substr@{iconv\_substr}}
+\index{iconv\_substr@{iconv\_substr}!iconv.php@{iconv.php}}
+\doxysubsubsection{\texorpdfstring{iconv\_substr()}{iconv\_substr()}}
+{\footnotesize\ttfamily iconv\+\_\+substr (\begin{DoxyParamCaption}\item[{}]{\$str,  }\item[{}]{\$offset,  }\item[{}]{\$length = {\ttfamily \textquotesingle{}\mbox{\hyperlink{iconv_8php_a54794cb4bd7e5f751aa9965064e2c054}{iconv\+\_\+strlen}}(\$str,~\$charset)\textquotesingle{}},  }\item[{}]{\$charset = {\ttfamily \textquotesingle{}\mbox{\hyperlink{standard__4_8php_a7fdf128fba28e17cde74c5dcaae42c9c}{ini\+\_\+get}}(\char`\"{}iconv.internal\+\_\+encoding\char`\"{})\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Cut out part of a string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$str }} The original string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$offset} & \\
+\hline
+\end{DoxyParams}
+If {\itshape offset} is non-\/negative, {\bfseries{iconv\+\_\+substr}} cuts the portion out of {\itshape str} beginning at {\itshape offset}\textquotesingle{}th character, counting from zero. 
+
+If {\itshape offset} is negative, {\bfseries{iconv\+\_\+substr}} cuts out the portion beginning at the position, {\itshape offset} characters away from the end of {\itshape str}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If {\itshape length} is given and is positive, the return value will contain at most {\itshape length} characters of the portion that begins at {\itshape offset} (depending on the length of {\itshape string}). 
+
+If negative {\itshape length} is passed, {\bfseries{iconv\+\_\+substr}} cuts the portion out of {\itshape str} from the {\itshape offset}\textquotesingle{}th character up to the character that is {\itshape length} characters away from the end of the string. In case {\itshape offset} is also negative, the start position is calculated beforehand according to the rule explained above. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If {\itshape charset} parameter is omitted, {\itshape string} are assumed to be encoded in iconv.\+internal\+\_\+encoding. 
+
+Note that {\itshape offset} and {\itshape length} parameters are always deemed to represent offsets that are calculated on the basis of the character set determined by {\itshape charset}, whilst the counterpart {\bfseries{substr}} always takes these for byte offsets. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false the portion of {\itshape str} specified by the {\itshape offset} and {\itshape length} parameters. 
+\end{DoxyReturn}
+
+
+If {\itshape str} is shorter than {\itshape offset} characters long, {\bfseries{F\+A\+L\+SE}} will be returned. \begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{iconv_8php_acb8db46ca2c61022f7019427cebdb6b7}\label{iconv_8php_acb8db46ca2c61022f7019427cebdb6b7}} 
+\index{iconv.php@{iconv.php}!ob\_iconv\_handler@{ob\_iconv\_handler}}
+\index{ob\_iconv\_handler@{ob\_iconv\_handler}!iconv.php@{iconv.php}}
+\doxysubsubsection{\texorpdfstring{ob\_iconv\_handler()}{ob\_iconv\_handler()}}
+{\footnotesize\ttfamily ob\+\_\+iconv\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{\$contents,  }\item[{}]{\$status }\end{DoxyParamCaption})}
+
+Convert character encoding as output buffer handler \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$contents  int \$status  string See {\bfseries{ob\+\_\+start}} for information about this handler return values.  4.\+0.\+5  5.\+0 }}
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{iconv_8php_a861c42c5e89c5ce7899e717ca7171f90}\label{iconv_8php_a861c42c5e89c5ce7899e717ca7171f90}} 
+\index{iconv.php@{iconv.php}!ICONV\_IMPL@{ICONV\_IMPL}}
+\index{ICONV\_IMPL@{ICONV\_IMPL}!iconv.php@{iconv.php}}
+\doxysubsubsection{\texorpdfstring{ICONV\_IMPL}{ICONV\_IMPL}}
+{\footnotesize\ttfamily const I\+C\+O\+N\+V\+\_\+\+I\+M\+PL \char`\"{}glibc\char`\"{}}
+
+string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/iconv.\+constants.\+php}}\mbox{\Hypertarget{iconv_8php_a0893c1f013e40fe6390fbc3f20aade5f}\label{iconv_8php_a0893c1f013e40fe6390fbc3f20aade5f}} 
+\index{iconv.php@{iconv.php}!ICONV\_MIME\_DECODE\_CONTINUE\_ON\_ERROR@{ICONV\_MIME\_DECODE\_CONTINUE\_ON\_ERROR}}
+\index{ICONV\_MIME\_DECODE\_CONTINUE\_ON\_ERROR@{ICONV\_MIME\_DECODE\_CONTINUE\_ON\_ERROR}!iconv.php@{iconv.php}}
+\doxysubsubsection{\texorpdfstring{ICONV\_MIME\_DECODE\_CONTINUE\_ON\_ERROR}{ICONV\_MIME\_DECODE\_CONTINUE\_ON\_ERROR}}
+{\footnotesize\ttfamily const I\+C\+O\+N\+V\+\_\+\+M\+I\+M\+E\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+C\+O\+N\+T\+I\+N\+U\+E\+\_\+\+O\+N\+\_\+\+E\+R\+R\+OR 2}
+
+integer \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/iconv.\+constants.\+php}}\mbox{\Hypertarget{iconv_8php_a548051e023a888cd7d2dc9e6b6192c6f}\label{iconv_8php_a548051e023a888cd7d2dc9e6b6192c6f}} 
+\index{iconv.php@{iconv.php}!ICONV\_MIME\_DECODE\_STRICT@{ICONV\_MIME\_DECODE\_STRICT}}
+\index{ICONV\_MIME\_DECODE\_STRICT@{ICONV\_MIME\_DECODE\_STRICT}!iconv.php@{iconv.php}}
+\doxysubsubsection{\texorpdfstring{ICONV\_MIME\_DECODE\_STRICT}{ICONV\_MIME\_DECODE\_STRICT}}
+{\footnotesize\ttfamily const I\+C\+O\+N\+V\+\_\+\+M\+I\+M\+E\+\_\+\+D\+E\+C\+O\+D\+E\+\_\+\+S\+T\+R\+I\+CT 1}
+
+integer \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/iconv.\+constants.\+php}}\mbox{\Hypertarget{iconv_8php_a0f8a5317d593cc842102786a555946b9}\label{iconv_8php_a0f8a5317d593cc842102786a555946b9}} 
+\index{iconv.php@{iconv.php}!ICONV\_VERSION@{ICONV\_VERSION}}
+\index{ICONV\_VERSION@{ICONV\_VERSION}!iconv.php@{iconv.php}}
+\doxysubsubsection{\texorpdfstring{ICONV\_VERSION}{ICONV\_VERSION}}
+{\footnotesize\ttfamily const I\+C\+O\+N\+V\+\_\+\+V\+E\+R\+S\+I\+ON 2.\+17}
+
+string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/iconv.\+constants.\+php}}

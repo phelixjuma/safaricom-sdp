@@ -1,0 +1,163 @@
+\hypertarget{shmop_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/shmop/shmop.php File Reference}
+\label{shmop_8php}\index{vendor/jetbrains/phpstorm-\/stubs/shmop/shmop.php@{vendor/jetbrains/phpstorm-\/stubs/shmop/shmop.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{shmop_8php_a478a9860ae83ef55657c2f1deb6c99fe}{shmop\+\_\+open}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}, \$flags, \$mode, \$size)
+\item 
+\mbox{\hyperlink{shmop_8php_aa4ad6415a21914dccd1a545fb82eba74}{shmop\+\_\+read}} (\$shmid, \$start, \$\mbox{\hyperlink{standard__8_8php_a8001b641484c1428b4ec3c9b560a63fc}{count}})
+\item 
+\mbox{\hyperlink{shmop_8php_a25849ee9a8028cc2fe789aff52b0bdf0}{shmop\+\_\+close}} (\$shmid)
+\item 
+\mbox{\hyperlink{shmop_8php_a930fb50acd849ba115f05b8b1a91c9b9}{shmop\+\_\+size}} (\$shmid)
+\item 
+\mbox{\hyperlink{shmop_8php_a905d4811bceaaac5178c155616951fdb}{shmop\+\_\+write}} (\$shmid, \$data, \$offset)
+\item 
+\mbox{\hyperlink{shmop_8php_ada261956f962158b510e8f3abad402a1}{shmop\+\_\+delete}} (\$shmid)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{shmop_8php_a25849ee9a8028cc2fe789aff52b0bdf0}\label{shmop_8php_a25849ee9a8028cc2fe789aff52b0bdf0}} 
+\index{shmop.php@{shmop.php}!shmop\_close@{shmop\_close}}
+\index{shmop\_close@{shmop\_close}!shmop.php@{shmop.php}}
+\doxysubsubsection{\texorpdfstring{shmop\_close()}{shmop\_close()}}
+{\footnotesize\ttfamily shmop\+\_\+close (\begin{DoxyParamCaption}\item[{}]{\$shmid }\end{DoxyParamCaption})}
+
+Close shared memory block \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$shmid }} The shared memory block identifier created by {\bfseries{shmop\+\_\+open}} 
+
+\begin{DoxyReturn}{Returns}
+void No value is returned. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{shmop_8php_ada261956f962158b510e8f3abad402a1}\label{shmop_8php_ada261956f962158b510e8f3abad402a1}} 
+\index{shmop.php@{shmop.php}!shmop\_delete@{shmop\_delete}}
+\index{shmop\_delete@{shmop\_delete}!shmop.php@{shmop.php}}
+\doxysubsubsection{\texorpdfstring{shmop\_delete()}{shmop\_delete()}}
+{\footnotesize\ttfamily shmop\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{\$shmid }\end{DoxyParamCaption})}
+
+Delete shared memory block \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$shmid }} The shared memory block identifier created by {\bfseries{shmop\+\_\+open}} 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{shmop_8php_a478a9860ae83ef55657c2f1deb6c99fe}\label{shmop_8php_a478a9860ae83ef55657c2f1deb6c99fe}} 
+\index{shmop.php@{shmop.php}!shmop\_open@{shmop\_open}}
+\index{shmop\_open@{shmop\_open}!shmop.php@{shmop.php}}
+\doxysubsubsection{\texorpdfstring{shmop\_open()}{shmop\_open()}}
+{\footnotesize\ttfamily shmop\+\_\+open (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$flags,  }\item[{}]{\$mode,  }\item[{}]{\$size }\end{DoxyParamCaption})}
+
+Create or open shared memory block \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$key }} System\textquotesingle{}s id for the shared memory block. Can be passed as a decimal or hex. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$flags} & \\
+\hline
+\end{DoxyParams}
+The flags that you can use\+: \char`\"{}a\char`\"{} for access (sets S\+H\+M\+\_\+\+R\+D\+O\+N\+LY for shmat) use this flag when you need to open an existing shared memory segment for read only 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+The permissions that you wish to assign to your memory segment, those are the same as permission for a file. Permissions need to be passed in octal form, like for example 0644 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$size} & \\
+\hline
+\end{DoxyParams}
+The size of the shared memory block you wish to create in bytes 
+
+\begin{DoxyReturn}{Returns}
+resource On success {\bfseries{shmop\+\_\+open}} will return an id that you can use to access the shared memory segment you\textquotesingle{}ve created. {\bfseries{F\+A\+L\+SE}} is returned on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{shmop_8php_aa4ad6415a21914dccd1a545fb82eba74}\label{shmop_8php_aa4ad6415a21914dccd1a545fb82eba74}} 
+\index{shmop.php@{shmop.php}!shmop\_read@{shmop\_read}}
+\index{shmop\_read@{shmop\_read}!shmop.php@{shmop.php}}
+\doxysubsubsection{\texorpdfstring{shmop\_read()}{shmop\_read()}}
+{\footnotesize\ttfamily shmop\+\_\+read (\begin{DoxyParamCaption}\item[{}]{\$shmid,  }\item[{}]{\$start,  }\item[{}]{\$count }\end{DoxyParamCaption})}
+
+Read data from shared memory block \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$shmid }} The shared memory block identifier created by {\bfseries{shmop\+\_\+open}} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$start} & \\
+\hline
+\end{DoxyParams}
+Offset from which to start reading 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & \\
+\hline
+\end{DoxyParams}
+The number of bytes to read 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false the data or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{shmop_8php_a930fb50acd849ba115f05b8b1a91c9b9}\label{shmop_8php_a930fb50acd849ba115f05b8b1a91c9b9}} 
+\index{shmop.php@{shmop.php}!shmop\_size@{shmop\_size}}
+\index{shmop\_size@{shmop\_size}!shmop.php@{shmop.php}}
+\doxysubsubsection{\texorpdfstring{shmop\_size()}{shmop\_size()}}
+{\footnotesize\ttfamily shmop\+\_\+size (\begin{DoxyParamCaption}\item[{}]{\$shmid }\end{DoxyParamCaption})}
+
+Get size of shared memory block \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$shmid }} The shared memory block identifier created by {\bfseries{shmop\+\_\+open}} 
+
+\begin{DoxyReturn}{Returns}
+int an int, which represents the number of bytes the shared memory block occupies. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{shmop_8php_a905d4811bceaaac5178c155616951fdb}\label{shmop_8php_a905d4811bceaaac5178c155616951fdb}} 
+\index{shmop.php@{shmop.php}!shmop\_write@{shmop\_write}}
+\index{shmop\_write@{shmop\_write}!shmop.php@{shmop.php}}
+\doxysubsubsection{\texorpdfstring{shmop\_write()}{shmop\_write()}}
+{\footnotesize\ttfamily shmop\+\_\+write (\begin{DoxyParamCaption}\item[{}]{\$shmid,  }\item[{}]{\$data,  }\item[{}]{\$offset }\end{DoxyParamCaption})}
+
+Write data into shared memory block \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$shmid }} The shared memory block identifier created by {\bfseries{shmop\+\_\+open}} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} string to write into shared memory block 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$offset} & \\
+\hline
+\end{DoxyParams}
+Specifies where to start writing data inside the shared memory segment. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false The size of the written {\itshape data}, or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}

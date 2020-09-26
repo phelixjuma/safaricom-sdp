@@ -1,0 +1,180 @@
+.TH "vendor/jetbrains/phpstorm-stubs/shmop/shmop.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/shmop/shmop.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBshmop_open\fP ($\fBkey\fP, $flags, $mode, $size)"
+.br
+.ti -1c
+.RI "\fBshmop_read\fP ($shmid, $start, $\fBcount\fP)"
+.br
+.ti -1c
+.RI "\fBshmop_close\fP ($shmid)"
+.br
+.ti -1c
+.RI "\fBshmop_size\fP ($shmid)"
+.br
+.ti -1c
+.RI "\fBshmop_write\fP ($shmid, $data, $offset)"
+.br
+.ti -1c
+.RI "\fBshmop_delete\fP ($shmid)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "shmop_close ( $shmid)"
+Close shared memory block \fBresource $shmid \fP The shared memory block identifier created by \fBshmop_open\fP 
+.PP
+\fBReturns\fP
+.RS 4
+void No value is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "shmop_delete ( $shmid)"
+Delete shared memory block \fBresource $shmid \fP The shared memory block identifier created by \fBshmop_open\fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "shmop_open ( $key,  $flags,  $mode,  $size)"
+Create or open shared memory block \fBint $key \fP System's id for the shared memory block\&. Can be passed as a decimal or hex\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP 
+.RE
+.PP
+The flags that you can use: 'a' for access (sets SHM_RDONLY for shmat) use this flag when you need to open an existing shared memory segment for read only 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+The permissions that you wish to assign to your memory segment, those are the same as permission for a file\&. Permissions need to be passed in octal form, like for example 0644 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$size\fP 
+.RE
+.PP
+The size of the shared memory block you wish to create in bytes 
+.PP
+\fBReturns\fP
+.RS 4
+resource On success \fBshmop_open\fP will return an id that you can use to access the shared memory segment you've created\&. \fBFALSE\fP is returned on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "shmop_read ( $shmid,  $start,  $count)"
+Read data from shared memory block \fBresource $shmid \fP The shared memory block identifier created by \fBshmop_open\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$start\fP 
+.RE
+.PP
+Offset from which to start reading 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$count\fP 
+.RE
+.PP
+The number of bytes to read 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the data or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "shmop_size ( $shmid)"
+Get size of shared memory block \fBresource $shmid \fP The shared memory block identifier created by \fBshmop_open\fP 
+.PP
+\fBReturns\fP
+.RS 4
+int an int, which represents the number of bytes the shared memory block occupies\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "shmop_write ( $shmid,  $data,  $offset)"
+Write data into shared memory block \fBresource $shmid \fP The shared memory block identifier created by \fBshmop_open\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+\fBA\fP string to write into shared memory block 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP 
+.RE
+.PP
+Specifies where to start writing data inside the shared memory segment\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false The size of the written \fIdata\fP, or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

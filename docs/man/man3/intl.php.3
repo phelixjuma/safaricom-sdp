@@ -1,0 +1,4010 @@
+.TH "vendor/jetbrains/phpstorm-stubs/intl/intl.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/intl/intl.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBCollator\fP"
+.br
+.ti -1c
+.RI "class \fBNumberFormatter\fP"
+.br
+.ti -1c
+.RI "class \fBNormalizer\fP"
+.br
+.ti -1c
+.RI "class \fBLocale\fP"
+.br
+.ti -1c
+.RI "class \fBMessageFormatter\fP"
+.br
+.ti -1c
+.RI "class \fBIntlDateFormatter\fP"
+.br
+.ti -1c
+.RI "class \fBResourceBundle\fP"
+.br
+.ti -1c
+.RI "class \fBTransliterator\fP"
+.br
+.ti -1c
+.RI "class \fBSpoofchecker\fP"
+.br
+.ti -1c
+.RI "class \fBIntlGregorianCalendar\fP"
+.br
+.ti -1c
+.RI "class \fBIntlCalendar\fP"
+.br
+.ti -1c
+.RI "class \fBIntlIterator\fP"
+.br
+.ti -1c
+.RI "class \fBIntlException\fP"
+.br
+.ti -1c
+.RI "class \fBIntlTimeZone\fP"
+.br
+.ti -1c
+.RI "class \fBIntlBreakIterator\fP"
+.br
+.ti -1c
+.RI "class \fBIntlRuleBasedBreakIterator\fP"
+.br
+.ti -1c
+.RI "class \fBIntlCodePointBreakIterator\fP"
+.br
+.ti -1c
+.RI "class \fBUConverter\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcollator_create\fP ($locale)"
+.br
+.ti -1c
+.RI "\fBcollator_compare\fP (\fBCollator\fP $object, $str1, $str2)"
+.br
+.ti -1c
+.RI "\fBcollator_get_attribute\fP (\fBCollator\fP $object, $attr)"
+.br
+.ti -1c
+.RI "\fBcollator_set_attribute\fP (\fBCollator\fP $object, $attr, $val)"
+.br
+.ti -1c
+.RI "\fBcollator_get_strength\fP (\fBCollator\fP $object)"
+.br
+.ti -1c
+.RI "\fBcollator_set_strength\fP (\fBCollator\fP $object, $strength)"
+.br
+.ti -1c
+.RI "\fBcollator_sort\fP (\fBCollator\fP $object, array &$arr, $sort_flag=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBcollator_sort_with_sort_keys\fP (\fBCollator\fP $object, array &$arr)"
+.br
+.ti -1c
+.RI "\fBcollator_asort\fP (\fBCollator\fP $object, array &$arr, $sort_flag=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBcollator_get_locale\fP (\fBCollator\fP $object, $type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBcollator_get_error_code\fP (\fBCollator\fP $object)"
+.br
+.ti -1c
+.RI "\fBcollator_get_error_message\fP (\fBCollator\fP $object)"
+.br
+.ti -1c
+.RI "\fBcollator_get_sort_key\fP (\fBCollator\fP $object, $str)"
+.br
+.ti -1c
+.RI "\fBnumfmt_create\fP ($locale, $style, $pattern=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBnumfmt_format\fP (\fBNumberFormatter\fP $fmt, $value, $type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBnumfmt_parse\fP (\fBNumberFormatter\fP $fmt, $value, $type=\fBnull\fP, &$position=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBnumfmt_format_currency\fP (\fBNumberFormatter\fP $fmt, $value, $currency)"
+.br
+.ti -1c
+.RI "\fBnumfmt_parse_currency\fP (\fBNumberFormatter\fP $fmt, $value, &$currency, &$position=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBnumfmt_set_attribute\fP (\fBNumberFormatter\fP $fmt, $attr, $value)"
+.br
+.ti -1c
+.RI "\fBnumfmt_get_attribute\fP (\fBNumberFormatter\fP $fmt, $attr)"
+.br
+.ti -1c
+.RI "\fBnumfmt_set_text_attribute\fP (\fBNumberFormatter\fP $fmt, $attr, $value)"
+.br
+.ti -1c
+.RI "\fBnumfmt_get_text_attribute\fP (\fBNumberFormatter\fP $fmt, $attr)"
+.br
+.ti -1c
+.RI "\fBnumfmt_set_symbol\fP (\fBNumberFormatter\fP $fmt, $attr, $value)"
+.br
+.ti -1c
+.RI "\fBnumfmt_get_symbol\fP (\fBNumberFormatter\fP $fmt, $attr)"
+.br
+.ti -1c
+.RI "\fBnumfmt_set_pattern\fP (\fBNumberFormatter\fP $fmt, $pattern)"
+.br
+.ti -1c
+.RI "\fBnumfmt_get_pattern\fP (\fBNumberFormatter\fP $fmt, $nf)"
+.br
+.ti -1c
+.RI "\fBnumfmt_get_locale\fP (\fBNumberFormatter\fP $fmt, $type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBnumfmt_get_error_code\fP (\fBNumberFormatter\fP $fmt, $nf)"
+.br
+.ti -1c
+.RI "\fBnumfmt_get_error_message\fP (\fBNumberFormatter\fP $fmt, $nf)"
+.br
+.ti -1c
+.RI "\fBnormalizer_normalize\fP ($input, $form=\fBNormalizer::FORM_C\fP)"
+.br
+.ti -1c
+.RI "\fBnormalizer_is_normalized\fP ($input, $form=\fBNormalizer::FORM_C\fP)"
+.br
+.ti -1c
+.RI "\fBlocale_get_default\fP ()"
+.br
+.ti -1c
+.RI "\fBlocale_set_default\fP ($name)"
+.br
+.ti -1c
+.RI "\fBlocale_get_primary_language\fP ($locale)"
+.br
+.ti -1c
+.RI "\fBlocale_get_script\fP ($locale)"
+.br
+.ti -1c
+.RI "\fBlocale_get_region\fP ($locale)"
+.br
+.ti -1c
+.RI "\fBlocale_get_keywords\fP ($locale)"
+.br
+.ti -1c
+.RI "\fBlocale_get_display_script\fP ($locale, $in_locale=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBlocale_get_display_region\fP ($locale, $in_locale=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBlocale_get_display_name\fP ($locale, $in_locale=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBlocale_get_display_language\fP ($locale, $in_locale=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBlocale_get_display_variant\fP ($locale, $in_locale=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBlocale_compose\fP (array $subtags)"
+.br
+.ti -1c
+.RI "\fBlocale_parse\fP ($locale)"
+.br
+.ti -1c
+.RI "\fBlocale_get_all_variants\fP ($locale)"
+.br
+.ti -1c
+.RI "\fBlocale_filter_matches\fP ($langtag, $locale, $canonicalize=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBlocale_canonicalize\fP ($arg1)"
+.br
+.ti -1c
+.RI "\fBlocale_lookup\fP (array $langtag, $locale, $canonicalize=\fBfalse\fP, $default=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBlocale_accept_from_http\fP ($\fBheader\fP)"
+.br
+.ti -1c
+.RI "\fBmsgfmt_create\fP ($locale, $pattern)"
+.br
+.ti -1c
+.RI "\fBmsgfmt_format\fP (\fBMessageFormatter\fP $fmt, array $args)"
+.br
+.ti -1c
+.RI "\fBmsgfmt_format_message\fP (string $locale, string $pattern, array $args)"
+.br
+.ti -1c
+.RI "\fBmsgfmt_parse\fP (\fBMessageFormatter\fP $fmt, $value)"
+.br
+.ti -1c
+.RI "\fBmsgfmt_parse_message\fP (\fBMessageFormatter\fP $fmt, $locale, $pattern, $source)"
+.br
+.ti -1c
+.RI "\fBmsgfmt_set_pattern\fP (\fBMessageFormatter\fP $fmt, $pattern)"
+.br
+.ti -1c
+.RI "\fBmsgfmt_get_pattern\fP (\fBMessageFormatter\fP $fmt, $mf)"
+.br
+.ti -1c
+.RI "\fBmsgfmt_get_locale\fP (\fBMessageFormatter\fP $fmt, $mf)"
+.br
+.ti -1c
+.RI "\fBmsgfmt_get_error_code\fP (\fBMessageFormatter\fP $fmt, $nf)"
+.br
+.ti -1c
+.RI "\fBmsgfmt_get_error_message\fP (\fBMessageFormatter\fP $fmt, $coll)"
+.br
+.ti -1c
+.RI "\fBdatefmt_create\fP ($locale, $datetype, $timetype, $timezone=\fBnull\fP, $calendar=\fBnull\fP, $pattern='')"
+.br
+.ti -1c
+.RI "\fBdatefmt_get_datetype\fP (\fBMessageFormatter\fP $mf)"
+.br
+.ti -1c
+.RI "\fBdatefmt_get_timetype\fP (\fBMessageFormatter\fP $mf)"
+.br
+.ti -1c
+.RI "\fBdatefmt_get_calendar\fP (\fBMessageFormatter\fP $mf)"
+.br
+.ti -1c
+.RI "\fBdatefmt_set_calendar\fP (\fBMessageFormatter\fP $mf, $which)"
+.br
+.ti -1c
+.RI "\fBdatefmt_get_locale\fP (\fBMessageFormatter\fP $mf, $which=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdatefmt_get_timezone_id\fP (\fBMessageFormatter\fP $mf)"
+.br
+.ti -1c
+.RI "\fBdatefmt_get_calendar_object\fP ()"
+.br
+.ti -1c
+.RI "\fBdatefmt_get_timezone\fP ()"
+.br
+.ti -1c
+.RI "\fBdatefmt_set_timezone_id\fP (\fBMessageFormatter\fP $mf, $zone)"
+.br
+.ti -1c
+.RI "\fBdatefmt_set_timezone\fP (\fBMessageFormatter\fP $mf, $zone)"
+.br
+.ti -1c
+.RI "\fBdatefmt_get_pattern\fP (\fBMessageFormatter\fP $mf)"
+.br
+.ti -1c
+.RI "\fBdatefmt_set_pattern\fP (\fBMessageFormatter\fP $mf, $pattern)"
+.br
+.ti -1c
+.RI "\fBdatefmt_is_lenient\fP (\fBMessageFormatter\fP $mf)"
+.br
+.ti -1c
+.RI "\fBdatefmt_set_lenient\fP (\fBMessageFormatter\fP $mf, $lenient)"
+.br
+.ti -1c
+.RI "\fBdatefmt_format\fP (\fBMessageFormatter\fP $mf, $value)"
+.br
+.ti -1c
+.RI "\fBdatefmt_format_object\fP ($object, $format=NULL, $locale=NULL)"
+.br
+.ti -1c
+.RI "\fBdatefmt_parse\fP (\fBMessageFormatter\fP $mf, $value, &$position=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdatefmt_localtime\fP (\fBMessageFormatter\fP $mf, $value, &$position=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdatefmt_get_error_code\fP (\fBMessageFormatter\fP $mf)"
+.br
+.ti -1c
+.RI "\fBdatefmt_get_error_message\fP (\fBMessageFormatter\fP $mf, $coll)"
+.br
+.ti -1c
+.RI "\fBgrapheme_strlen\fP ($input)"
+.br
+.ti -1c
+.RI "\fBgrapheme_strpos\fP ($haystack, $needle, $offset=0)"
+.br
+.ti -1c
+.RI "\fBgrapheme_stripos\fP ($haystack, $needle, $offset=0)"
+.br
+.ti -1c
+.RI "\fBgrapheme_strrpos\fP ($haystack, $needle, $offset=0)"
+.br
+.ti -1c
+.RI "\fBgrapheme_strripos\fP ($haystack, $needle, $offset=0)"
+.br
+.ti -1c
+.RI "\fBgrapheme_substr\fP ($string, $start, $length=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBgrapheme_strstr\fP ($haystack, $needle, $before_needle=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBgrapheme_stristr\fP ($haystack, $needle, $before_needle=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBgrapheme_extract\fP ($haystack, $size, $extract_type=\fBnull\fP, $start=0, &$\fBnext\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBidn_to_ascii\fP ($domain, $options=0, $variant=\fBINTL_IDNA_VARIANT_2003\fP, array &$idna_info)"
+.br
+.ti -1c
+.RI "\fBidn_to_utf8\fP ($domain, $options=0, $variant=\fBINTL_IDNA_VARIANT_2003\fP, array &$idna_info)"
+.br
+.ti -1c
+.RI "\fBintlcal_create_instance\fP ($timeZone=NULL, $locale=NULL)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_keyword_values_for_locale\fP ($\fBkey\fP, $locale, $commonlyUsed)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_now\fP ()"
+.br
+.ti -1c
+.RI "\fBintlcal_get_available_locales\fP ()"
+.br
+.ti -1c
+.RI "\fBintl_get\fP ($calendar, $field)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_time\fP ($calendar)"
+.br
+.ti -1c
+.RI "\fBintlcal_set_time\fP ($\fBdate\fP)"
+.br
+.ti -1c
+.RI "\fBintlcal_add\fP ($calendar, $field, $amount)"
+.br
+.ti -1c
+.RI "\fBintlcal_set_time_zone\fP ($calendar, $timeZone)"
+.br
+.ti -1c
+.RI "\fBintlcal_after\fP (\fBIntlCalendar\fP $calendarObject, \fBIntlCalendar\fP $calendar)"
+.br
+.ti -1c
+.RI "\fBintlcal_before\fP (\fBIntlCalendar\fP $calendarObject, \fBIntlCalendar\fP $calendar)"
+.br
+.ti -1c
+.RI "\fBintlcal_set\fP ($calendar, $year, $month, $dayOfMonth=NULL, $hour=NULL, $minute=NULL, $second=NULL)"
+.br
+.ti -1c
+.RI "\fBintlcal_roll\fP ($calendar, $field, $amountOrUpOrDown)"
+.br
+.ti -1c
+.RI "\fBintlcal_clear\fP ($calendar, $field=NULL)"
+.br
+.ti -1c
+.RI "\fBintlcal_field_difference\fP ($calendar, $when, $field)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_actual_maximum\fP ($calendar, $field)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_actual_minimum\fP ($calendar, $field)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_day_of_week_type\fP ($calendar, $dayOfWeek)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_first_day_of_week\fP ($calendar)"
+.br
+.ti -1c
+.RI "\fBintlcal_greates_minimum\fP ($calendar, $field)"
+.br
+.ti -1c
+.RI "\fBintlcal_get\fP ($calendar, $index)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_least_maximum\fP ($calendar, $field)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_greatest_minimum\fP ($calendar, $field)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_locale\fP ($calendar, $localeType)"
+.br
+.ti -1c
+.RI "\fBintcal_get_maximum\fP ($calendar, $field)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_minimal_days_in_first_week\fP ($calendar)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_minimum\fP ($calendar, $field)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_time_zone\fP ($calendar)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_type\fP ($calendar)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_weekend_transition\fP ($calendar, $dayOfWeek)"
+.br
+.ti -1c
+.RI "\fBintlcal_in_daylight_time\fP ($calendar)"
+.br
+.ti -1c
+.RI "\fBintlcal_is_lenient\fP ($calendar)"
+.br
+.ti -1c
+.RI "\fBintlcal_is_set\fP ($calendar, $field)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_maximum\fP ($calendar, $field)"
+.br
+.ti -1c
+.RI "\fBintlcal_is_equivalent_to\fP (\fBIntlCalendar\fP $calendarObject, \fBIntlCalendar\fP $calendar)"
+.br
+.ti -1c
+.RI "\fBintlcal_is_weekend\fP ($calendar, $\fBdate\fP=NULL)"
+.br
+.ti -1c
+.RI "\fBintlcal_set_first_day_of_week\fP ($calendar, $dayOfWeek)"
+.br
+.ti -1c
+.RI "\fBintlcal_set_lenient\fP ($calendar, $isLenient)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_repeated_wall_time_option\fP ($calendar)"
+.br
+.ti -1c
+.RI "\fBintlcal_equals\fP ($calendarObject, $calendar)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_skipped_wall_time_option\fP ($calendar)"
+.br
+.ti -1c
+.RI "\fBintlcal_set_repeated_wall_time_option\fP ($calendar, $wallTimeOption)"
+.br
+.ti -1c
+.RI "\fBintlcal_set_skipped_wall_time_option\fP ($calendar, $wallTimeOption)"
+.br
+.ti -1c
+.RI "\fBintlcal_from_date_time\fP ($dateTime)"
+.br
+.ti -1c
+.RI "\fBintlcal_to_date_time\fP ($calendar)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_error_code\fP ($calendar)"
+.br
+.ti -1c
+.RI "\fBintlcal_get_error_message\fP ($calendar)"
+.br
+.ti -1c
+.RI "\fBintltz_count_equivalent_ids\fP ($zoneId)"
+.br
+.ti -1c
+.RI "\fBintlz_create_default\fP ()"
+.br
+.ti -1c
+.RI "\fBintltz_create_enumeration\fP ($countryOrRawOffset)"
+.br
+.ti -1c
+.RI "\fBintltz_create_time_zone\fP ($zoneId)"
+.br
+.ti -1c
+.RI "\fBintltz_from_date_time_zone\fP ($zoneId)"
+.br
+.ti -1c
+.RI "\fBintltz_get_canonical_id\fP ($zoneId, &$isSystemID)"
+.br
+.ti -1c
+.RI "\fBintltz_get_display_name\fP ($obj, $isDaylight, $style, $locale)"
+.br
+.ti -1c
+.RI "\fBintltz_get_dst_savings\fP ($obj)"
+.br
+.ti -1c
+.RI "\fBintltz_get_equivalent_id\fP ($zoneId, $index)"
+.br
+.ti -1c
+.RI "\fBintltz_get_error_code\fP ($obj)"
+.br
+.ti -1c
+.RI "\fBintltz_get_error_message\fP ($obj)"
+.br
+.ti -1c
+.RI "\fBintltz_getGMT\fP ()"
+.br
+.ti -1c
+.RI "\fBintltz_get_id\fP ($obj)"
+.br
+.ti -1c
+.RI "\fBintltz_get_offset\fP ($obj, $\fBdate\fP, $local, &$rawOffset, &$dstOffset)"
+.br
+.ti -1c
+.RI "\fBintltz_get_raw_offset\fP ($obj)"
+.br
+.ti -1c
+.RI "\fBintltz_get_tz_data_version\fP ($obj)"
+.br
+.ti -1c
+.RI "\fBintltz_has_same_rules\fP ($obj, $otherTimeZone)"
+.br
+.ti -1c
+.RI "\fBintltz_to_date_time_zone\fP ($obj)"
+.br
+.ti -1c
+.RI "\fBintltz_use_daylight_time\fP ($obj)"
+.br
+.ti -1c
+.RI "\fBintlgregcal_create_instance\fP ($timeZone=NULL, $locale=NULL)"
+.br
+.ti -1c
+.RI "\fBintlgregcal_set_gregorian_change\fP ($obj, $change)"
+.br
+.ti -1c
+.RI "\fBintlgregcal_get_gregorian_change\fP ($obj)"
+.br
+.ti -1c
+.RI "\fBintlgregcal_is_leap_year\fP ($year)"
+.br
+.ti -1c
+.RI "\fBresourcebundle_create\fP ($locale, $bundlename, $fallback=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBresourcebundle_get\fP (\fBResourceBundle\fP $r, $index)"
+.br
+.ti -1c
+.RI "\fBresourcebundle_count\fP (\fBResourceBundle\fP $r, $bundle)"
+.br
+.ti -1c
+.RI "\fBresourcebundle_locales\fP ($bundlename)"
+.br
+.ti -1c
+.RI "\fBresourcebundle_get_error_code\fP (\fBResourceBundle\fP $bundle)"
+.br
+.ti -1c
+.RI "\fBresourcebundle_get_error_message\fP (\fBResourceBundle\fP $bundle)"
+.br
+.ti -1c
+.RI "\fBtransliterator_create\fP ($id, $direction=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBtransliterator_create_from_rules\fP ($rules, $direction=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBtransliterator_list_ids\fP ()"
+.br
+.ti -1c
+.RI "\fBtransliterator_create_inverse\fP (\fBTransliterator\fP $orig_trans)"
+.br
+.ti -1c
+.RI "\fBtransliterator_transliterate\fP ($transliterator, $subject, $start=\fBnull\fP, $\fBend\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBtransliterator_get_error_code\fP (\fBTransliterator\fP $trans)"
+.br
+.ti -1c
+.RI "\fBtransliterator_get_error_message\fP (\fBTransliterator\fP $trans)"
+.br
+.ti -1c
+.RI "\fBintl_get_error_code\fP ()"
+.br
+.ti -1c
+.RI "\fBintl_get_error_message\fP ()"
+.br
+.ti -1c
+.RI "\fBintl_is_failure\fP ($error_code)"
+.br
+.ti -1c
+.RI "\fBintl_error_name\fP ($error_code)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBINTL_MAX_LOCALE_LEN\fP 80"
+.br
+.ti -1c
+.RI "const \fBINTL_ICU_VERSION\fP '4\&.8\&.1\&.1'"
+.br
+.ti -1c
+.RI "const \fBINTL_ICU_DATA_VERSION\fP '4\&.8\&.1'"
+.br
+.ti -1c
+.RI "const \fBULOC_ACTUAL_LOCALE\fP 0"
+.br
+.ti -1c
+.RI "const \fBULOC_VALID_LOCALE\fP 1"
+.br
+.ti -1c
+.RI "const \fBGRAPHEME_EXTR_COUNT\fP 0"
+.br
+.ti -1c
+.RI "const \fBGRAPHEME_EXTR_MAXBYTES\fP 1"
+.br
+.ti -1c
+.RI "const \fBGRAPHEME_EXTR_MAXCHARS\fP 2"
+.br
+.ti -1c
+.RI "const \fBU_USING_FALLBACK_WARNING\fP \-128"
+.br
+.ti -1c
+.RI "const \fBU_ERROR_WARNING_START\fP \-128"
+.br
+.ti -1c
+.RI "const \fBU_USING_DEFAULT_WARNING\fP \-127"
+.br
+.ti -1c
+.RI "const \fBU_SAFECLONE_ALLOCATED_WARNING\fP \-126"
+.br
+.ti -1c
+.RI "const \fBU_STATE_OLD_WARNING\fP \-125"
+.br
+.ti -1c
+.RI "const \fBU_STRING_NOT_TERMINATED_WARNING\fP \-124"
+.br
+.ti -1c
+.RI "const \fBU_SORT_KEY_TOO_SHORT_WARNING\fP \-123"
+.br
+.ti -1c
+.RI "const \fBU_AMBIGUOUS_ALIAS_WARNING\fP \-122"
+.br
+.ti -1c
+.RI "const \fBU_DIFFERENT_UCA_VERSION\fP \-121"
+.br
+.ti -1c
+.RI "const \fBU_ERROR_WARNING_LIMIT\fP \-119"
+.br
+.ti -1c
+.RI "const \fBU_ZERO_ERROR\fP 0"
+.br
+.ti -1c
+.RI "const \fBU_ILLEGAL_ARGUMENT_ERROR\fP 1"
+.br
+.ti -1c
+.RI "const \fBU_MISSING_RESOURCE_ERROR\fP 2"
+.br
+.ti -1c
+.RI "const \fBU_INVALID_FORMAT_ERROR\fP 3"
+.br
+.ti -1c
+.RI "const \fBU_FILE_ACCESS_ERROR\fP 4"
+.br
+.ti -1c
+.RI "const \fBU_INTERNAL_PROGRAM_ERROR\fP 5"
+.br
+.ti -1c
+.RI "const \fBU_MESSAGE_PARSE_ERROR\fP 6"
+.br
+.ti -1c
+.RI "const \fBU_MEMORY_ALLOCATION_ERROR\fP 7"
+.br
+.ti -1c
+.RI "const \fBU_INDEX_OUTOFBOUNDS_ERROR\fP 8"
+.br
+.ti -1c
+.RI "const \fBU_PARSE_ERROR\fP 9"
+.br
+.ti -1c
+.RI "const \fBU_INVALID_CHAR_FOUND\fP 10"
+.br
+.ti -1c
+.RI "const \fBU_TRUNCATED_CHAR_FOUND\fP 11"
+.br
+.ti -1c
+.RI "const \fBU_ILLEGAL_CHAR_FOUND\fP 12"
+.br
+.ti -1c
+.RI "const \fBU_INVALID_TABLE_FORMAT\fP 13"
+.br
+.ti -1c
+.RI "const \fBU_INVALID_TABLE_FILE\fP 14"
+.br
+.ti -1c
+.RI "const \fBU_BUFFER_OVERFLOW_ERROR\fP 15"
+.br
+.ti -1c
+.RI "const \fBU_UNSUPPORTED_ERROR\fP 16"
+.br
+.ti -1c
+.RI "const \fBU_RESOURCE_TYPE_MISMATCH\fP 17"
+.br
+.ti -1c
+.RI "const \fBU_ILLEGAL_ESCAPE_SEQUENCE\fP 18"
+.br
+.ti -1c
+.RI "const \fBU_UNSUPPORTED_ESCAPE_SEQUENCE\fP 19"
+.br
+.ti -1c
+.RI "const \fBU_NO_SPACE_AVAILABLE\fP 20"
+.br
+.ti -1c
+.RI "const \fBU_CE_NOT_FOUND_ERROR\fP 21"
+.br
+.ti -1c
+.RI "const \fBU_PRIMARY_TOO_LONG_ERROR\fP 22"
+.br
+.ti -1c
+.RI "const \fBU_STATE_TOO_OLD_ERROR\fP 23"
+.br
+.ti -1c
+.RI "const \fBU_TOO_MANY_ALIASES_ERROR\fP 24"
+.br
+.ti -1c
+.RI "const \fBU_ENUM_OUT_OF_SYNC_ERROR\fP 25"
+.br
+.ti -1c
+.RI "const \fBU_INVARIANT_CONVERSION_ERROR\fP 26"
+.br
+.ti -1c
+.RI "const \fBU_INVALID_STATE_ERROR\fP 27"
+.br
+.ti -1c
+.RI "const \fBU_COLLATOR_VERSION_MISMATCH\fP 28"
+.br
+.ti -1c
+.RI "const \fBU_USELESS_COLLATOR_ERROR\fP 29"
+.br
+.ti -1c
+.RI "const \fBU_NO_WRITE_PERMISSION\fP 30"
+.br
+.ti -1c
+.RI "const \fBU_STANDARD_ERROR_LIMIT\fP 31"
+.br
+.ti -1c
+.RI "const \fBU_BAD_VARIABLE_DEFINITION\fP 65536"
+.br
+.ti -1c
+.RI "const \fBU_PARSE_ERROR_START\fP 65536"
+.br
+.ti -1c
+.RI "const \fBU_MALFORMED_RULE\fP 65537"
+.br
+.ti -1c
+.RI "const \fBU_MALFORMED_SET\fP 65538"
+.br
+.ti -1c
+.RI "const \fBU_MALFORMED_SYMBOL_REFERENCE\fP 65539"
+.br
+.ti -1c
+.RI "const \fBU_MALFORMED_UNICODE_ESCAPE\fP 65540"
+.br
+.ti -1c
+.RI "const \fBU_MALFORMED_VARIABLE_DEFINITION\fP 65541"
+.br
+.ti -1c
+.RI "const \fBU_MALFORMED_VARIABLE_REFERENCE\fP 65542"
+.br
+.ti -1c
+.RI "const \fBU_MISMATCHED_SEGMENT_DELIMITERS\fP 65543"
+.br
+.ti -1c
+.RI "const \fBU_MISPLACED_ANCHOR_START\fP 65544"
+.br
+.ti -1c
+.RI "const \fBU_MISPLACED_CURSOR_OFFSET\fP 65545"
+.br
+.ti -1c
+.RI "const \fBU_MISPLACED_QUANTIFIER\fP 65546"
+.br
+.ti -1c
+.RI "const \fBU_MISSING_OPERATOR\fP 65547"
+.br
+.ti -1c
+.RI "const \fBU_MISSING_SEGMENT_CLOSE\fP 65548"
+.br
+.ti -1c
+.RI "const \fBU_MULTIPLE_ANTE_CONTEXTS\fP 65549"
+.br
+.ti -1c
+.RI "const \fBU_MULTIPLE_CURSORS\fP 65550"
+.br
+.ti -1c
+.RI "const \fBU_MULTIPLE_POST_CONTEXTS\fP 65551"
+.br
+.ti -1c
+.RI "const \fBU_TRAILING_BACKSLASH\fP 65552"
+.br
+.ti -1c
+.RI "const \fBU_UNDEFINED_SEGMENT_REFERENCE\fP 65553"
+.br
+.ti -1c
+.RI "const \fBU_UNDEFINED_VARIABLE\fP 65554"
+.br
+.ti -1c
+.RI "const \fBU_UNQUOTED_SPECIAL\fP 65555"
+.br
+.ti -1c
+.RI "const \fBU_UNTERMINATED_QUOTE\fP 65556"
+.br
+.ti -1c
+.RI "const \fBU_RULE_MASK_ERROR\fP 65557"
+.br
+.ti -1c
+.RI "const \fBU_MISPLACED_COMPOUND_FILTER\fP 65558"
+.br
+.ti -1c
+.RI "const \fBU_MULTIPLE_COMPOUND_FILTERS\fP 65559"
+.br
+.ti -1c
+.RI "const \fBU_INVALID_RBT_SYNTAX\fP 65560"
+.br
+.ti -1c
+.RI "const \fBU_INVALID_PROPERTY_PATTERN\fP 65561"
+.br
+.ti -1c
+.RI "const \fBU_MALFORMED_PRAGMA\fP 65562"
+.br
+.ti -1c
+.RI "const \fBU_UNCLOSED_SEGMENT\fP 65563"
+.br
+.ti -1c
+.RI "const \fBU_ILLEGAL_CHAR_IN_SEGMENT\fP 65564"
+.br
+.ti -1c
+.RI "const \fBU_VARIABLE_RANGE_EXHAUSTED\fP 65565"
+.br
+.ti -1c
+.RI "const \fBU_VARIABLE_RANGE_OVERLAP\fP 65566"
+.br
+.ti -1c
+.RI "const \fBU_ILLEGAL_CHARACTER\fP 65567"
+.br
+.ti -1c
+.RI "const \fBU_INTERNAL_TRANSLITERATOR_ERROR\fP 65568"
+.br
+.ti -1c
+.RI "const \fBU_INVALID_ID\fP 65569"
+.br
+.ti -1c
+.RI "const \fBU_INVALID_FUNCTION\fP 65570"
+.br
+.ti -1c
+.RI "const \fBU_PARSE_ERROR_LIMIT\fP 65571"
+.br
+.ti -1c
+.RI "const \fBU_UNEXPECTED_TOKEN\fP 65792"
+.br
+.ti -1c
+.RI "const \fBU_FMT_PARSE_ERROR_START\fP 65792"
+.br
+.ti -1c
+.RI "const \fBU_MULTIPLE_DECIMAL_SEPARATORS\fP 65793"
+.br
+.ti -1c
+.RI "const \fBU_MULTIPLE_DECIMAL_SEPERATORS\fP 65793"
+.br
+.ti -1c
+.RI "const \fBU_MULTIPLE_EXPONENTIAL_SYMBOLS\fP 65794"
+.br
+.ti -1c
+.RI "const \fBU_MALFORMED_EXPONENTIAL_PATTERN\fP 65795"
+.br
+.ti -1c
+.RI "const \fBU_MULTIPLE_PERCENT_SYMBOLS\fP 65796"
+.br
+.ti -1c
+.RI "const \fBU_MULTIPLE_PERMILL_SYMBOLS\fP 65797"
+.br
+.ti -1c
+.RI "const \fBU_MULTIPLE_PAD_SPECIFIERS\fP 65798"
+.br
+.ti -1c
+.RI "const \fBU_PATTERN_SYNTAX_ERROR\fP 65799"
+.br
+.ti -1c
+.RI "const \fBU_ILLEGAL_PAD_POSITION\fP 65800"
+.br
+.ti -1c
+.RI "const \fBU_UNMATCHED_BRACES\fP 65801"
+.br
+.ti -1c
+.RI "const \fBU_UNSUPPORTED_PROPERTY\fP 65802"
+.br
+.ti -1c
+.RI "const \fBU_UNSUPPORTED_ATTRIBUTE\fP 65803"
+.br
+.ti -1c
+.RI "const \fBU_FMT_PARSE_ERROR_LIMIT\fP 65810"
+.br
+.ti -1c
+.RI "const \fBU_BRK_INTERNAL_ERROR\fP 66048"
+.br
+.ti -1c
+.RI "const \fBU_BRK_ERROR_START\fP 66048"
+.br
+.ti -1c
+.RI "const \fBU_BRK_HEX_DIGITS_EXPECTED\fP 66049"
+.br
+.ti -1c
+.RI "const \fBU_BRK_SEMICOLON_EXPECTED\fP 66050"
+.br
+.ti -1c
+.RI "const \fBU_BRK_RULE_SYNTAX\fP 66051"
+.br
+.ti -1c
+.RI "const \fBU_BRK_UNCLOSED_SET\fP 66052"
+.br
+.ti -1c
+.RI "const \fBU_BRK_ASSIGN_ERROR\fP 66053"
+.br
+.ti -1c
+.RI "const \fBU_BRK_VARIABLE_REDFINITION\fP 66054"
+.br
+.ti -1c
+.RI "const \fBU_BRK_MISMATCHED_PAREN\fP 66055"
+.br
+.ti -1c
+.RI "const \fBU_BRK_NEW_LINE_IN_QUOTED_STRING\fP 66056"
+.br
+.ti -1c
+.RI "const \fBU_BRK_UNDEFINED_VARIABLE\fP 66057"
+.br
+.ti -1c
+.RI "const \fBU_BRK_INIT_ERROR\fP 66058"
+.br
+.ti -1c
+.RI "const \fBU_BRK_RULE_EMPTY_SET\fP 66059"
+.br
+.ti -1c
+.RI "const \fBU_BRK_UNRECOGNIZED_OPTION\fP 66060"
+.br
+.ti -1c
+.RI "const \fBU_BRK_MALFORMED_RULE_TAG\fP 66061"
+.br
+.ti -1c
+.RI "const \fBU_BRK_ERROR_LIMIT\fP 66062"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_INTERNAL_ERROR\fP 66304"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_ERROR_START\fP 66304"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_RULE_SYNTAX\fP 66305"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_INVALID_STATE\fP 66306"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_BAD_ESCAPE_SEQUENCE\fP 66307"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_PROPERTY_SYNTAX\fP 66308"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_UNIMPLEMENTED\fP 66309"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_MISMATCHED_PAREN\fP 66310"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_NUMBER_TOO_BIG\fP 66311"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_BAD_INTERVAL\fP 66312"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_MAX_LT_MIN\fP 66313"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_INVALID_BACK_REF\fP 66314"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_INVALID_FLAG\fP 66315"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_LOOK_BEHIND_LIMIT\fP 66316"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_SET_CONTAINS_STRING\fP 66317"
+.br
+.ti -1c
+.RI "const \fBU_REGEX_ERROR_LIMIT\fP 66324"
+.br
+.ti -1c
+.RI "const \fBU_IDNA_PROHIBITED_ERROR\fP 66560"
+.br
+.ti -1c
+.RI "const \fBU_IDNA_ERROR_START\fP 66560"
+.br
+.ti -1c
+.RI "const \fBU_IDNA_UNASSIGNED_ERROR\fP 66561"
+.br
+.ti -1c
+.RI "const \fBU_IDNA_CHECK_BIDI_ERROR\fP 66562"
+.br
+.ti -1c
+.RI "const \fBU_IDNA_STD3_ASCII_RULES_ERROR\fP 66563"
+.br
+.ti -1c
+.RI "const \fBU_IDNA_ACE_PREFIX_ERROR\fP 66564"
+.br
+.ti -1c
+.RI "const \fBU_IDNA_VERIFICATION_ERROR\fP 66565"
+.br
+.ti -1c
+.RI "const \fBU_IDNA_LABEL_TOO_LONG_ERROR\fP 66566"
+.br
+.ti -1c
+.RI "const \fBU_IDNA_ZERO_LENGTH_LABEL_ERROR\fP 66567"
+.br
+.ti -1c
+.RI "const \fBU_IDNA_DOMAIN_NAME_TOO_LONG_ERROR\fP 66568"
+.br
+.ti -1c
+.RI "const \fBU_IDNA_ERROR_LIMIT\fP 66569"
+.br
+.ti -1c
+.RI "const \fBU_STRINGPREP_PROHIBITED_ERROR\fP 66560"
+.br
+.ti -1c
+.RI "const \fBU_STRINGPREP_UNASSIGNED_ERROR\fP 66561"
+.br
+.ti -1c
+.RI "const \fBU_STRINGPREP_CHECK_BIDI_ERROR\fP 66562"
+.br
+.ti -1c
+.RI "const \fBU_ERROR_LIMIT\fP 66818"
+.br
+.ti -1c
+.RI "const \fBIDNA_DEFAULT\fP 0"
+.br
+.ti -1c
+.RI "const \fBIDNA_ALLOW_UNASSIGNED\fP 1"
+.br
+.ti -1c
+.RI "const \fBIDNA_USE_STD3_RULES\fP 2"
+.br
+.ti -1c
+.RI "const \fBIDNA_CHECK_BIDI\fP 4"
+.br
+.ti -1c
+.RI "const \fBIDNA_CHECK_CONTEXTJ\fP 8"
+.br
+.ti -1c
+.RI "const \fBIDNA_NONTRANSITIONAL_TO_ASCII\fP 16"
+.br
+.ti -1c
+.RI "const \fBIDNA_NONTRANSITIONAL_TO_UNICODE\fP 32"
+.br
+.ti -1c
+.RI "const \fBINTL_IDNA_VARIANT_2003\fP 0"
+.br
+.ti -1c
+.RI "const \fBINTL_IDNA_VARIANT_UTS46\fP 1"
+.br
+.ti -1c
+.RI "const \fBIDNA_ERROR_EMPTY_LABEL\fP 1"
+.br
+.ti -1c
+.RI "const \fBIDNA_ERROR_LABEL_TOO_LONG\fP 2"
+.br
+.ti -1c
+.RI "const \fBIDNA_ERROR_DOMAIN_NAME_TOO_LONG\fP 4"
+.br
+.ti -1c
+.RI "const \fBIDNA_ERROR_LEADING_HYPHEN\fP 8"
+.br
+.ti -1c
+.RI "const \fBIDNA_ERROR_TRAILING_HYPHEN\fP 16"
+.br
+.ti -1c
+.RI "const \fBIDNA_ERROR_HYPHEN_3_4\fP 32"
+.br
+.ti -1c
+.RI "const \fBIDNA_ERROR_LEADING_COMBINING_MARK\fP 64"
+.br
+.ti -1c
+.RI "const \fBIDNA_ERROR_DISALLOWED\fP 128"
+.br
+.ti -1c
+.RI "const \fBIDNA_ERROR_PUNYCODE\fP 256"
+.br
+.ti -1c
+.RI "const \fBIDNA_ERROR_LABEL_HAS_DOT\fP 512"
+.br
+.ti -1c
+.RI "const \fBIDNA_ERROR_INVALID_ACE_LABEL\fP 1024"
+.br
+.ti -1c
+.RI "const \fBIDNA_ERROR_BIDI\fP 2048"
+.br
+.ti -1c
+.RI "const \fBIDNA_ERROR_CONTEXTJ\fP 4096"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "collator_asort (\fBCollator\fP $object, array & $arr,  $sort_flag = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Sort array maintaining index association \fBCollator $object  array $arr \fPArray of strings to sort\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sort_flag\fP [optional] 
+.RE
+.PP
+Optional sorting type, one of the following: 
+.PP
+\fB\fBCollator::SORT_REGULAR\fP\fP
+.IP "\(bu" 2
+compare items normally (don't change types) 
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "collator_compare (\fBCollator\fP $object,  $str1,  $str2)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Compare two Unicode strings \fBCollator $object  string $str1 \fP The first string to compare\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$str2\fP 
+.RE
+.PP
+The second string to compare\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int Return comparison result:
+.RE
+.PP
+.PP
+1 if \fIstr1\fP is greater than \fIstr2\fP ; 
+.PP
+0 if \fIstr1\fP is equal to \fIstr2\fP; 
+.PP
+-1 if \fIstr1\fP is less than \fIstr2\fP \&. 
+.PP
+On error boolean \fBFALSE\fP is returned\&. 
+.SS "collator_create ( $locale)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Create a collator \fBstring $locale \fP The locale containing the required collation rules\&. Special values for locales can be passed in - if null is passed for the locale, the default locale collation rules will be used\&. If empty string ('') or 'root' are passed, UCA rules will be used\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBCollator\fP Return new instance of \fB\fBCollator\fP\fP object, or \fBNULL\fP on error\&. 
+.RE
+.PP
+
+.SS "collator_get_attribute (\fBCollator\fP $object,  $attr)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get collation attribute value \fBCollator $object  int $attr \fP Attribute to get value for\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false Attribute value, or boolean \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "collator_get_error_code (\fBCollator\fP $object)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get collator's last error code \fBCollator $object  int Error code returned by the last Collator API function call\&. \fP
+.SS "collator_get_error_message (\fBCollator\fP $object)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get text for collator's last error code \fBCollator $object  string Description of an error occurred in the last Collator API function call\&. \fP
+.SS "collator_get_locale (\fBCollator\fP $object,  $type = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get the locale name of the collator \fBCollator $object  int $type [optional] \fP You can choose between valid and actual locale ( \fB\fBLocale::VALID_LOCALE\fP\fP and \fB\fBLocale::ACTUAL_LOCALE\fP\fP, respectively)\&. The default is the actual locale\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string Real locale name from which the collation data comes\&. If the collator was instantiated from rules or an error occurred, returns boolean \fBFALSE\fP\&. 
+.RE
+.PP
+
+.SS "collator_get_sort_key (\fBCollator\fP $object,  $str)"
+(No version information available, might only be in SVN)
+.br
+ Get sorting key for a string \fBCollator $object  string $str \fP The string to produce the key from\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the collation key for the string\&. Collation keys can be compared directly instead of strings\&. 
+.RE
+.PP
+
+.SS "collator_get_strength (\fBCollator\fP $object)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get current collation strength \fBCollator $object  int|false current collation strength, or boolean \fBFALSE\fP on error\&. \fP
+.SS "collator_set_attribute (\fBCollator\fP $object,  $attr,  $val)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Set collation attribute \fBCollator $object  int $attr \fPAttribute\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$val\fP 
+.RE
+.PP
+Attribute value\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "collator_set_strength (\fBCollator\fP $object,  $strength)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Set collation strength \fBCollator $object  int $strength \fPStrength to set\&.
+.PP
+Possible values are: 
+.PP
+\fB\fBCollator::PRIMARY\fP\fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "collator_sort (\fBCollator\fP $object, array & $arr,  $sort_flag = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Sort array using specified collator \fBCollator $object  array $arr \fP Array of strings to sort\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sort_flag\fP [optional] 
+.RE
+.PP
+Optional sorting type, one of the following: 
+.PP
+\fB\fBCollator::SORT_REGULAR\fP\fP
+.IP "\(bu" 2
+compare items normally (don't change types) 
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "collator_sort_with_sort_keys (\fBCollator\fP $object, array & $arr)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Sort array using specified collator and sort keys \fBCollator $object  array $arr \fPArray of strings to sort
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "datefmt_create ( $locale,  $datetype,  $timetype,  $timezone = \fC\fBnull\fP\fP,  $calendar = \fC\fBnull\fP\fP,  $pattern = \fC''\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Create a date formatter \fBstring|null $locale \fP \fBLocale\fP to use when formatting or parsing\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$datetype\fP 
+.RE
+.PP
+Date type to use (\fBnone\fP, \fBshort\fP, \fBmedium\fP, \fBlong\fP, \fBfull\fP)\&. This is one of the \fBIntlDateFormatter\fP constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timetype\fP 
+.RE
+.PP
+Time type to use (\fBnone\fP, \fBshort\fP, \fBmedium\fP, \fBlong\fP, \fBfull\fP)\&. This is one of the \fBIntlDateFormatter\fP constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timezone\fP [optional] 
+.RE
+.PP
+Time zone ID, default is system default\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$calendar\fP [optional] 
+.RE
+.PP
+Calendar to use for formatting or parsing; default is Gregorian\&. This is one of the \fBIntlDateFormatter\fP calendar constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pattern\fP [optional] 
+.RE
+.PP
+Optional pattern to use when formatting or parsing\&. Possible patterns are documented at http://userguide.icu-project.org/formatparse/datetime\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBIntlDateFormatter\fP 
+.RE
+.PP
+
+.SS "datefmt_format (\fBMessageFormatter\fP $mf,  $value)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Format the date/time value as a string \fBMessageFormatter $mf  mixed $value \fP Value to format\&. This may be a \fB\fBDateTime\fP\fP object, an integer representing a Unix timestamp value (seconds since epoch, UTC) or an array in the format output by \fBlocaltime\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The formatted string or, if an error occurred, \fBFALSE\fP\&. 
+.RE
+.PP
+
+.SS "datefmt_format_object ( $object,  $format = \fCNULL\fP,  $locale = \fCNULL\fP)"
+(PHP 5 >= 5\&.5\&.0, PECL intl >= 3\&.0\&.0)
+.br
+ Formats an object \fBobject $object \fP An object of type \fBIntlCalendar\fP or \fBDateTime\fP\&. The timezone information in the object will be used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$format\fP [optional] 
+.RE
+.PP
+How to format the date/time\&. This can either be an {https://secure.php.net/manual/en/language.types.array.php array} with two elements (first the date style, then the time style, these being one of the constants \fB\fBIntlDateFormatter::NONE\fP\fP, \fB\fBIntlDateFormatter::SHORT\fP\fP, \fB\fBIntlDateFormatter::MEDIUM\fP\fP, \fB\fBIntlDateFormatter::LONG\fP\fP, \fB\fBIntlDateFormatter::FULL\fP\fP), a long with the value of one of these constants (in which case it will be used both for the time and the date) or a \fBhttps://secure\&.php\&.net/manual/en/language\&.types\&.string\&.php\fP with the format described in \fBthe ICU documentation\fP documentation\&. If \fBNULL\fP, the default style will be used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$locale\fP [optional] 
+.RE
+.PP
+The locale to use, or NULL to use the default one\&.
+.PP
+\fBReturns\fP
+.RS 4
+string|false The formatted string or, if an error occurred, \fBFALSE\fP\&. 
+.RE
+.PP
+
+.SS "datefmt_get_calendar (\fBMessageFormatter\fP $mf)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get the calendar used for the \fBIntlDateFormatter\fP \fB$mf  int The calendar being used by the formatter\&. \fP
+.SS "datefmt_get_calendar_object ()"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 3\&.0\&.0)
+.br
+ Get copy of formatter's calendar object \fBIntlCalendar A copy of the internal calendar object used by this formatter\&. \fP
+.SS "datefmt_get_datetype (\fBMessageFormatter\fP $mf)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get the datetype used for the \fBIntlDateFormatter\fP \fB$mf  int The current date type value of the formatter\&. \fP
+.SS "datefmt_get_error_code (\fBMessageFormatter\fP $mf)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get the error code from last operation \fBMessageFormatter $mf  int The error code, one of UErrorCode values\&. Initial value is U_ZERO_ERROR\&. \fP
+.SS "datefmt_get_error_message (\fBMessageFormatter\fP $mf,  $coll)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get the error text from the last operation\&. \fBMessageFormatter $mf  $coll  string Description of the last error\&. \fP
+.SS "datefmt_get_locale (\fBMessageFormatter\fP $mf,  $which = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get the locale used by formatter \fBMessageFormatter $mf  int $which [optional]  string|false the locale of this formatter or 'false' if error \fP
+.SS "datefmt_get_pattern (\fBMessageFormatter\fP $mf)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get the pattern used for the \fBIntlDateFormatter\fP \fB$mf  string The pattern string being used to format/parse\&. \fP
+.SS "datefmt_get_timetype (\fBMessageFormatter\fP $mf)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get the timetype used for the \fBIntlDateFormatter\fP \fB$mf  int The current date type value of the formatter\&. \fP
+.SS "datefmt_get_timezone ()"
+(PHP 5 >= 5\&.5\&.0, PECL intl >= 3\&.0\&.0)
+.br
+ Get formatter's timezone \fBIntlTimeZone|false The associated IntlTimeZone object or FALSE on failure\&. \fP
+.SS "datefmt_get_timezone_id (\fBMessageFormatter\fP $mf)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get the timezone-id used for the \fBIntlDateFormatter\fP \fB$mf  string ID string for the time zone used by this formatter\&. \fP
+.SS "datefmt_is_lenient (\fBMessageFormatter\fP $mf)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get the lenient used for the \fBIntlDateFormatter\fP \fB$mf  bool \fBTRUE\fP if parser is lenient, \fBFALSE\fP if parser is strict\&. By default the parser is lenient\&. \fP
+.SS "datefmt_localtime (\fBMessageFormatter\fP $mf,  $value, & $position = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Parse string to a field-based time value \fBMessageFormatter $mf  string $value \fP string to convert to a time 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$position\fP [optional] 
+.RE
+.PP
+Position at which to start the parsing in $value (zero-based)\&. If no error occurs before $value is consumed, $parse_pos will contain -1 otherwise it will contain the position at which parsing ended \&. If $parse_pos > strlen($value), the parse fails immediately\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array Localtime compatible array of integers : contains 24 hour clock value in tm_hour field 
+.RE
+.PP
+
+.SS "datefmt_parse (\fBMessageFormatter\fP $mf,  $value, & $position = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Parse string to a timestamp value \fBMessageFormatter $mf  string $value \fP string to convert to a time 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$position\fP [optional] 
+.RE
+.PP
+Position at which to start the parsing in $value (zero-based)\&. If no error occurs before $value is consumed, $parse_pos will contain -1 otherwise it will contain the position at which parsing ended (and the error occurred)\&. This variable will contain the end position if the parse fails\&. If $parse_pos > strlen($value), the parse fails immediately\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int timestamp parsed value 
+.RE
+.PP
+
+.SS "datefmt_set_calendar (\fBMessageFormatter\fP $mf,  $which)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ sets the calendar used to the appropriate calendar, which must be \fBMessageFormatter $mf  int $which \fP The calendar to use\&. Default is \fB\fBIntlDateFormatter::GREGORIAN\fP\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "datefmt_set_lenient (\fBMessageFormatter\fP $mf,  $lenient)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Set the leniency of the parser \fBMessageFormatter $mf  bool $lenient \fP Sets whether the parser is lenient or not, default is \fBTRUE\fP (lenient)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "datefmt_set_pattern (\fBMessageFormatter\fP $mf,  $pattern)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Set the pattern used for the \fBIntlDateFormatter\fP \fBMessageFormatter $mf  string $pattern \fP New pattern string to use\&. Possible patterns are documented at http://userguide.icu-project.org/formatparse/datetime\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. Bad formatstrings are usually the cause of the failure\&. 
+.RE
+.PP
+
+.SS "datefmt_set_timezone (\fBMessageFormatter\fP $mf,  $zone)"
+(PHP 5 >= 5\&.5\&.0, PECL intl >= 3\&.0\&.0)
+.br
+ Sets formatter's timezone \fBMessageFormatter $mf  mixed $zone \fP The timezone to use for this formatter\&. This can be specified in the following forms: 
+.PD 0
+
+.IP "\(bu" 2
+.PP
+\fBNULL\fP, in which case the default timezone will be used, as specified in the ini setting \fBdate\&.timezone\fP or through the function \fBdate_default_timezone_set()\fP and as returned by \fBdate_default_timezone_get()\fP\&. 
+.PP
+
+.IP "\(bu" 2
+.PP
+An \fBIntlTimeZone\fP, which will be used directly\&. 
+.PP
+
+.IP "\(bu" 2
+.PP
+\fBA\fP \fBDateTimeZone\fP\&. Its identifier will be extracted and an ICU timezone object will be created; the timezone will be backed by ICU's database, not PHP's\&. 
+.PP
+
+.IP "\(bu" 2
+.PP
+\fBA\fP \fBstring\fP, which should be a valid ICU timezone identifier\&. See \fB\fBIntlTimeZone::createTimeZoneIDEnumeration()\fP\fP\&. Raw offsets such as \fI'GMT+08:30'\fP are also accepted\&. 
+.PP
+
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "datefmt_set_timezone_id (\fBMessageFormatter\fP $mf,  $zone)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Sets the time zone to use \fBMessageFormatter $mf  string $zone \fP The time zone ID string of the time zone to use\&. If \fBNULL\fP or the empty string, the default time zone for the runtime is used\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 https://secure.php.net/manual/en/migration55.deprecated.php 
+.RE
+.PP
+
+.SS "grapheme_extract ( $haystack,  $size,  $extract_type = \fC\fBnull\fP\fP,  $start = \fC0\fP, & $next = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Function to extract a sequence of default grapheme clusters from a text buffer, which must be encoded in UTF-8\&. \fBstring $haystack \fP String to search\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$size\fP 
+.RE
+.PP
+Maximum number items - based on the $extract_type - to return\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$extract_type\fP [optional] 
+.RE
+.PP
+Defines the type of units referred to by the $size parameter: 
+.PP
+GRAPHEME_EXTR_COUNT (default) - $size is the number of default grapheme clusters to extract\&. GRAPHEME_EXTR_MAXBYTES - $size is the maximum number of bytes returned\&. GRAPHEME_EXTR_MAXCHARS - $size is the maximum number of UTF-8 characters returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$start\fP [optional] 
+.RE
+.PP
+Starting position in $haystack in bytes - if given, it must be zero or a positive value that is less than or equal to the length of $haystack in bytes\&. If $start does not point to the first byte of a UTF-8 character, the start position is moved to the next character boundary\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$next\fP [optional] 
+.RE
+.PP
+Reference to a value that will be set to the next starting position\&. When the call returns, this may point to the first byte position past the end of the string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false \fBA\fP string starting at offset $start and ending on a default grapheme cluster boundary that conforms to the $size and $extract_type specified\&. 
+.RE
+.PP
+
+.SS "grapheme_stripos ( $haystack,  $needle,  $offset = \fC0\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Find position (in grapheme units) of first occurrence of a case-insensitive string \fBstring $haystack \fP The string to look in\&. Must be valid UTF-8\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+The string to look for\&. Must be valid UTF-8\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+The optional $offset parameter allows you to specify where in haystack to start searching as an offset in grapheme units (not bytes or characters)\&. The position returned is still relative to the beginning of haystack regardless of the value of $offset\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the position as an integer\&. If needle is not found, \fBgrapheme_stripos()\fP will return boolean FALSE\&. 
+.RE
+.PP
+
+.SS "grapheme_stristr ( $haystack,  $needle,  $before_needle = \fC\fBfalse\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Returns part of haystack string from the first occurrence of case-insensitive needle to the end of haystack\&. \fBstring $haystack \fP The input string\&. Must be valid UTF-8\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+The string to look for\&. Must be valid UTF-8\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$before_needle\fP [optional] 
+.RE
+.PP
+If \fBTRUE\fP, \fBgrapheme_strstr()\fP returns the part of the haystack before the first occurrence of the needle (excluding needle)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the portion of $haystack, or FALSE if $needle is not found\&. 
+.RE
+.PP
+
+.SS "grapheme_strlen ( $input)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get string length in grapheme units \fBstring $input \fP The string being measured for length\&. It must be a valid UTF-8 string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false|null The length of the string on success, and 0 if the string is empty\&. 
+.RE
+.PP
+
+.SS "grapheme_strpos ( $haystack,  $needle,  $offset = \fC0\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Find position (in grapheme units) of first occurrence of a string \fBstring $haystack \fP The string to look in\&. Must be valid UTF-8\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+The string to look for\&. Must be valid UTF-8\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+The optional $offset parameter allows you to specify where in $haystack to start searching as an offset in grapheme units (not bytes or characters)\&. The position returned is still relative to the beginning of haystack regardless of the value of $offset\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the position as an integer\&. If needle is not found, \fBstrpos()\fP will return boolean FALSE\&. 
+.RE
+.PP
+
+.SS "grapheme_strripos ( $haystack,  $needle,  $offset = \fC0\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Find position (in grapheme units) of last occurrence of a case-insensitive string \fBstring $haystack \fP The string to look in\&. Must be valid UTF-8\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+The string to look for\&. Must be valid UTF-8\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+The optional $offset parameter allows you to specify where in $haystack to start searching as an offset in grapheme units (not bytes or characters)\&. The position returned is still relative to the beginning of haystack regardless of the value of $offset\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the position as an integer\&. If needle is not found, \fBgrapheme_strripos()\fP will return boolean FALSE\&. 
+.RE
+.PP
+
+.SS "grapheme_strrpos ( $haystack,  $needle,  $offset = \fC0\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Find position (in grapheme units) of last occurrence of a string \fBstring $haystack \fP The string to look in\&. Must be valid UTF-8\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+The string to look for\&. Must be valid UTF-8\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+The optional $offset parameter allows you to specify where in $haystack to start searching as an offset in grapheme units (not bytes or characters)\&. The position returned is still relative to the beginning of haystack regardless of the value of $offset\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the position as an integer\&. If needle is not found, \fBgrapheme_strrpos()\fP will return boolean FALSE\&. 
+.RE
+.PP
+
+.SS "grapheme_strstr ( $haystack,  $needle,  $before_needle = \fC\fBfalse\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Returns part of haystack string from the first occurrence of needle to the end of haystack\&. \fBstring $haystack \fP The input string\&. Must be valid UTF-8\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+The string to look for\&. Must be valid UTF-8\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$before_needle\fP [optional] 
+.RE
+.PP
+If \fBTRUE\fP, \fBgrapheme_strstr()\fP returns the part of the haystack before the first occurrence of the needle (excluding the needle)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the portion of string, or FALSE if needle is not found\&. 
+.RE
+.PP
+
+.SS "grapheme_substr ( $string,  $start,  $length = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Return part of a string \fBstring $string \fP The input string\&. Must be valid UTF-8\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$start\fP 
+.RE
+.PP
+Start position in default grapheme units\&. If $start is non-negative, the returned string will start at the $start'th position in $string, counting from zero\&. If $start is negative, the returned string will start at the $start'th grapheme unit from the end of string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+Length in grapheme units\&. If $length is given and is positive, the string returned will contain at most $length grapheme units beginning from $start (depending on the length of string)\&. If $length is given and is negative, then that many grapheme units will be omitted from the end of string (after the start position has been calculated when a start is negative)\&. If $start denotes a position beyond this truncation, \fBFALSE\fP will be returned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false 
+.RE
+.PP
+the extracted part of $string,
+.br
+ or \fBFALSE\fP if $length is negative and $start denotes a position beyond truncation $length,
+.br
+ or also \fBFALSE\fP if $start denotes a position beyond $string length
+.SS "idn_to_ascii ( $domain,  $options = \fC0\fP,  $variant = \fC\fBINTL_IDNA_VARIANT_2003\fP\fP, array & $idna_info)"
+(PHP 5 >= 5\&.3\&.0, PHP 7, PECL intl >= 1\&.0\&.2, PHP 7, PECL idn >= 0\&.1)
+.br
+ Convert domain name to IDNA ASCII form\&. \fBstring $domain \fP Domain to convert\&. In PHP 5 must be UTF-8 encoded\&. If e\&.g\&. an ISO-8859-1 (aka Western Europe latin1) encoded string is passed it will be converted into an ACE encoded 'xn--' string\&. It will not be the one you expected though! 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+Conversion options - combination of IDNA_* constants (except IDNA_ERROR_* constants)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$variant\fP [optional] 
+.RE
+.PP
+Either INTL_IDNA_VARIANT_2003 for IDNA 2003 or INTL_IDNA_VARIANT_UTS46 for UTS #46\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$idna_info\fP [optional] 
+.RE
+.PP
+This parameter can be used only if INTL_IDNA_VARIANT_UTS46 was used for variant\&. In that case, it will be filled with an array with the keys 'result', the possibly illegal result of the transformation, 'isTransitionalDifferent', a boolean indicating whether the usage of the transitional mechanisms of UTS #46 either has or would have changed the result and 'errors', which is an int representing a bitset of the error constants IDNA_ERROR_*\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The ACE encoded version of the domain name or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "idn_to_utf8 ( $domain,  $options = \fC0\fP,  $variant = \fC\fBINTL_IDNA_VARIANT_2003\fP\fP, array & $idna_info)"
+(PHP 5 >= 5\&.3\&.0, PHP 7, PECL intl >= 1\&.0\&.2, PHP 7, PECL idn >= 0\&.1)
+.br
+ Convert domain name from IDNA ASCII to Unicode\&. \fBstring $domain \fP Domain to convert in IDNA ASCII-compatible format\&. The ASCII encoded domain name\&. Looks like 'xn--\&.\&.\&.' if the it originally contained non-ASCII characters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+Conversion options - combination of IDNA_* constants (except IDNA_ERROR_* constants)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$variant\fP [optional] 
+.RE
+.PP
+Either INTL_IDNA_VARIANT_2003 for IDNA 2003 or INTL_IDNA_VARIANT_UTS46 for UTS #46\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI&$idna_info\fP [optional] 
+.RE
+.PP
+This parameter can be used only if INTL_IDNA_VARIANT_UTS46 was used for variant\&. In that case, it will be filled with an array with the keys 'result', the possibly illegal result of the transformation, 'isTransitionalDifferent', a boolean indicating whether the usage of the transitional mechanisms of UTS #46 either has or would have changed the result and 'errors', which is an int representing a bitset of the error constants IDNA_ERROR_*\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The UTF-8 encoded version of the domain name or \fBFALSE\fP on failure\&. RFC 3490 4\&.2 states though 'ToUnicode never fails\&. If any step fails, then the original input
+sequence is returned immediately in that step\&.' 
+.RE
+.PP
+
+.SS "intcal_get_maximum ( $calendar,  $field)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the global maximum value for a field \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+One of the \fBIntlCalendar\fP date/time \fBfield constants\fP\&. These are integer values between \fI0\fP and \fBIntlCalendar::FIELD_COUNT\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP locale string or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intl_error_name ( $error_code)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get symbolic name for a given error code \fBint $error_code \fP ICU error code\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The returned string will be the same as the name of the error code constant\&. 
+.RE
+.PP
+
+.SS "intl_get ( $calendar,  $field)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the value for a field \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+One of the \fBIntlCalendar\fP date/time \fBfield constants\fP\&. These are integer values between \fI0\fP and \fBIntlCalendar::FIELD_COUNT\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int An integer with the value of the time field\&. 
+.RE
+.PP
+
+.SS "intl_get_error_code ()"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get the last error code \fBint Error code returned by the last API function call\&. \fP
+.SS "intl_get_error_message ()"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get description of the last error \fBstring Description of an error occurred in the last API function call\&. \fP
+.SS "intl_is_failure ( $error_code)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Check whether the given error code indicates failure \fBint $error_code \fP is a value that returned by functions: \fBintl_get_error_code\fP, \fBcollator_get_error_code\fP \&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if it the code indicates some failure, and \fBFALSE\fP in case of success or a warning\&. 
+.RE
+.PP
+
+.SS "intlcal_add ( $calendar,  $field,  $amount)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Add a (signed) amount of time to a field \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+One of the \fBIntlCalendar\fP date/time \fBfield constants\fP\&. These are integer values between \fI0\fP and \fBIntlCalendar::FIELD_COUNT\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$amount\fP 
+.RE
+.PP
+The signed amount to add to the current field\&. If the amount is positive, the instant will be moved forward; if it is negative, the instant wil be moved into the past\&. The unit is implicit to the field type\&. For instance, hours for \fBIntlCalendar::FIELD_HOUR_OF_DAY\fP\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_after (\fBIntlCalendar\fP $calendarObject, \fBIntlCalendar\fP $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Whether this object's time is after that of the passed object https://secure.php.net/manual/en/intlcalendar.after.php 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$calendarObject\fP 
+.RE
+.PP
+The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$calendar\fP 
+.RE
+.PP
+The calendar whose time will be checked against this object's time\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP if this object's current time is after that of the \fIcalendar\fP argument's time\&. Returns \fBFALSE\fP otherwise\&. Also returns \fBFALSE\fP on failure\&. You can use \fBexceptions\fP or \fBintl_get_error_code()\fP to detect error conditions\&. 
+.RE
+.PP
+
+.SS "intlcal_before (\fBIntlCalendar\fP $calendarObject, \fBIntlCalendar\fP $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Whether this object's time is before that of the passed object \fBIntlCalendar $calendarObject \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$calendar\fP 
+.RE
+.PP
+The calendar whose time will be checked against this object's time\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP if this object's current time is before that of the \fIcalendar\fP argument's time\&. Returns \fBFALSE\fP otherwise\&. Also returns \fBFALSE\fP on failure\&. You can use \fBexceptions\fP or \fBintl_get_error_code()\fP to detect error conditions\&. 
+.RE
+.PP
+
+.SS "intlcal_clear ( $calendar,  $field = \fCNULL\fP)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Clear a field or all fields \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP [optional] 
+.RE
+.PP
+One of the \fBIntlCalendar\fP date/time \fBfield constants\fP\&. These are integer values between \fI0\fP and \fBIntlCalendar::FIELD_COUNT\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&. \fBFailure\fP can only occur is invalid arguments are provided\&. 
+.RE
+.PP
+
+.SS "intlcal_create_instance ( $timeZone = \fCNULL\fP,  $locale = \fCNULL\fP)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Create a new \fBIntlCalendar\fP \fBmixed $timeZone [optional] \fP 
+.PP
+The timezone to use\&. 
+.PP
+.PD 0
+.IP "\(bu" 2
+.PP
+\fBNULL\fP, in which case the default timezone will be used, as specified in the ini setting \fBdate\&.timezone\fP or through the function \fBdate_default_timezone_set()\fP and as returned by \fBdate_default_timezone_get()\fP\&. 
+.PP
+
+.IP "\(bu" 2
+.PP
+An \fBIntlTimeZone\fP, which will be used directly\&. 
+.PP
+
+.IP "\(bu" 2
+.PP
+\fBA\fP \fBDateTimeZone\fP\&. Its identifier will be extracted and an ICU timezone object will be created; the timezone will be backed by ICU's database, not PHP's\&. 
+.PP
+
+.IP "\(bu" 2
+.PP
+\fBA\fP \fBstring\fP, which should be a valid ICU timezone identifier\&. See \fB\fBIntlTimeZone::createTimeZoneIDEnumeration()\fP\fP\&. Raw offsets such as \fI'GMT+08:30'\fP are also accepted\&. 
+.PP
+
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$locale\fP [optional] 
+.RE
+.PP
+\fBA\fP locale to use or \fBNULL\fP to use \fBthe default locale\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBIntlCalendar\fP The created \fBIntlCalendar\fP instance or \fBNULL\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_equals ( $calendarObject,  $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Compare time of two \fBIntlCalendar\fP objects for equality \fBIntlCalendar $calendarObject \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$calendar\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+Returns \fBTRUE\fP if the current time of both this and the passed in \fBIntlCalendar\fP object are the same, or \fBFALSE\fP otherwise\&. The value \fBFALSE\fP can also be returned on failure\&. This can only happen if bad arguments are passed in\&. In any case, the two cases can be distinguished by calling \fBintl_get_error_code()\fP\&. 
+.SS "intlcal_field_difference ( $calendar,  $when,  $field)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Calculate difference between given time and this object's time \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$when\fP 
+.RE
+.PP
+The time against which to compare the quantity represented by the \fIfield\fP\&. For the result to be positive, the time given for this parameter must be ahead of the time of the object the method is being invoked on\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+The field that represents the quantity being compared\&. 
+.PP
+One of the \fBIntlCalendar\fP date/time \fBfield constants\fP\&. These are integer values between \fI0\fP and \fBIntlCalendar::FIELD_COUNT\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int Returns a (signed) difference of time in the unit associated with the specified field or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_from_date_time ( $dateTime)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a2)
+.br
+ Create an \fBIntlCalendar\fP from a \fBDateTime\fP object or string \fBmixed $dateTime \fP \fBA\fP \fBDateTime\fP object or a \fBstring\fP that can be passed to \fBDateTime::__construct()\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBIntlCalendar\fP The created \fBIntlCalendar\fP object or \fBNULL\fP in case of failure\&. If a \fBstring\fP is passed, any exception that occurs inside the \fBDateTime\fP constructor is propagated\&. 
+.RE
+.PP
+
+.SS "intlcal_get ( $calendar,  $index)"
+(PHP >= 5\&.3\&.2, PECL intl >= 2\&.0\&.0)
+.br
+ Get data from the bundle \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$index\fP 
+.RE
+.PP
+Data index, must be string or integer\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed the data located at the index or \fBNULL\fP on error\&. Strings, integers and binary data strings are returned as corresponding PHP types, integer array is returned as PHP array\&. Complex types are returned as \fB\fBResourceBundle\fP\fP object\&. 
+.RE
+.PP
+
+.SS "intlcal_get_actual_maximum ( $calendar,  $field)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ The maximum value for a field, considering the object's current time \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+One of the \fBIntlCalendar\fP date/time \fBfield constants\fP\&. These are integer values between \fI0\fP and \fBIntlCalendar::FIELD_COUNT\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int An \fBint\fP representing the maximum value in the units associated with the given \fIfield\fP or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_get_actual_minimum ( $calendar,  $field)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ The minimum value for a field, considering the object's current time \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+One of the \fBIntlCalendar\fP date/time \fBfield constants\fP\&. These are integer values between \fI0\fP and \fBIntlCalendar::FIELD_COUNT\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int An \fBint\fP representing the minimum value in the field's unit or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_get_available_locales ()"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get array of locales for which there is data \fBarray An array of strings, one for which locale\&. \fP
+.SS "intlcal_get_day_of_week_type ( $calendar,  $dayOfWeek)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ \fBTell whether a day is a weekday, weekend or a day that has a transition between the two  IntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dayOfWeek\fP 
+.RE
+.PP
+One of the constants \fB\fBIntlCalendar::DOW_SUNDAY\fP\fP, \fB\fBIntlCalendar::DOW_MONDAY\fP\fP, \&.\&.\&., \fB\fBIntlCalendar::DOW_SATURDAY\fP\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int Returns one of the constants \fB\fBIntlCalendar::DOW_TYPE_WEEKDAY\fP\fP, \fB\fBIntlCalendar::DOW_TYPE_WEEKEND\fP\fP, \fB\fBIntlCalendar::DOW_TYPE_WEEKEND_OFFSET\fP\fP or \fB\fBIntlCalendar::DOW_TYPE_WEEKEND_CEASE\fP\fP or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_get_error_code ( $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get last error code on the object \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int An ICU error code indicating either success, failure or a warning\&. 
+.RE
+.PP
+
+.SS "intlcal_get_error_message ( $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get last error message on the object \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The error message associated with last error that occurred in a function call on this object, or a string indicating the non-existance of an error\&. 
+.RE
+.PP
+
+.SS "intlcal_get_first_day_of_week ( $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the first day of the week for the calendar's locale \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int One of the constants \fB\fBIntlCalendar::DOW_SUNDAY\fP\fP, \fB\fBIntlCalendar::DOW_MONDAY\fP\fP, \&.\&.\&., \fB\fBIntlCalendar::DOW_SATURDAY\fP\fP or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_get_greatest_minimum ( $calendar,  $field)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the largest local minimum value for a field \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+One of the \fBIntlCalendar\fP date/time \fBfield constants\fP\&. These are integer values between \fI0\fP and \fBIntlCalendar::FIELD_COUNT\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int An \fBint\fP representing a field value, in the field's unit, or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_get_keyword_values_for_locale ( $key,  $locale,  $commonlyUsed)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get set of locale keyword values 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP 
+.RE
+.PP
+The locale keyword for which relevant values are to be queried\&. Only \fI'calendar'\fP is supported\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$locale\fP 
+.RE
+.PP
+The locale onto which the keyword/value pair are to be appended\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$commonlyUsed\fP 
+.RE
+.PP
+Whether to show only the values commonly used for the specified locale\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Iterator|false An iterator that yields strings with the locale keyword values or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_get_least_maximum ( $calendar,  $field)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the smallest local maximum for a field \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+One of the \fBIntlCalendar\fP date/time \fBfield constants\fP\&. These are integer values between \fI0\fP and \fBIntlCalendar::FIELD_COUNT\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int An \fBint\fP representing a field value in the field's unit or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_get_locale ( $calendar,  $localeType)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the locale associated with the object \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$localeType\fP 
+.RE
+.PP
+Whether to fetch the actual locale (the locale from which the calendar data originates, with \fB\fBLocale::ACTUAL_LOCALE\fP\fP) or the valid locale, i\&.e\&., the most specific locale supported by ICU relatively to the requested locale – see \fB\fBLocale::VALID_LOCALE\fP\fP\&. From the most general to the most specific, the locales are ordered in this fashion – actual locale, valid locale, requested locale\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP locale string or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_get_maximum ( $calendar,  $field)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the global maximum value for a field \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+One of the \fBIntlCalendar\fP date/time \fBfield constants\fP\&. These are integer values between \fI0\fP and \fBIntlCalendar::FIELD_COUNT\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP locale string or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_get_minimal_days_in_first_week ( $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ \fBGet minimal number of days the first week in a year or month can have  IntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int An \fBint\fP representing a number of days or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_get_minimum ( $calendar,  $field)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the global minimum value for a field \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+One of the \fBIntlCalendar\fP date/time \fBfield\fP\&. These are integer values between \fI0\fP and \fBIntlCalendar::FIELD_COUNT\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int An int representing a value for the given field in the field's unit or FALSE on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_get_now ()"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get number representing the current time \fBfloat A float representing a number of milliseconds since the epoch, not counting leap seconds\&. \fP
+.SS "intlcal_get_repeated_wall_time_option ( $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get behavior for handling repeating wall time \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int One of the constants \fB\fBIntlCalendar::WALLTIME_FIRST\fP\fP or \fB\fBIntlCalendar::WALLTIME_LAST\fP\fP\&. 
+.RE
+.PP
+
+.SS "intlcal_get_skipped_wall_time_option ( $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get behavior for handling skipped wall time \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int One of the constants \fB\fBIntlCalendar::WALLTIME_FIRST\fP\fP, \fB\fBIntlCalendar::WALLTIME_LAST\fP\fP or \fB\fBIntlCalendar::WALLTIME_NEXT_VALID\fP\fP\&. 
+.RE
+.PP
+
+.SS "intlcal_get_time ( $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get time currently represented by the object 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$calendar\fP 
+.RE
+.PP
+The calendar whose time will be checked against this object's time\&.
+.PP
+\fBReturns\fP
+.RS 4
+float \fBA\fP \fBfloat\fP representing the number of milliseconds elapsed since the reference time (1 Jan 1970 00:00:00 UTC)\&. 
+.RE
+.PP
+
+.SS "intlcal_get_time_zone ( $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the object's timezone \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBIntlTimeZone\fP An \fBIntlTimeZone\fP object corresponding to the one used internally in this object\&. 
+.RE
+.PP
+
+.SS "intlcal_get_type ( $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the calendar type \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP \fBstring\fP representing the calendar type, such as \fI'gregorian'\fP, \fI'islamic'\fP, etc\&. 
+.RE
+.PP
+
+.SS "intlcal_get_weekend_transition ( $calendar,  $dayOfWeek)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get time of the day at which weekend begins or ends \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dayOfWeek\fP 
+.RE
+.PP
+One of the constants \fB\fBIntlCalendar::DOW_SUNDAY\fP\fP, \fB\fBIntlCalendar::DOW_MONDAY\fP\fP, \&.\&.\&., \fB\fBIntlCalendar::DOW_SATURDAY\fP\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The number of milliseconds into the day at which the the weekend begins or ends or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_greates_minimum ( $calendar,  $field)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the largest local minimum value for a field \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+One of the \fBIntlCalendar\fP date/time \fBfield constants\fP\&. These are integer values between \fI0\fP and \fBIntlCalendar::FIELD_COUNT\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int An \fBint\fP representing a field value, in the field's unit, or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_in_daylight_time ( $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Whether the object's time is in Daylight Savings Time \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP if the date is in Daylight Savings Time, \fBFALSE\fP otherwise\&. The value \fBFALSE\fP may also be returned on failure, for instance after specifying invalid field values on non-lenient mode; use \fBexceptions\fP or query \fBintl_get_error_code()\fP to disambiguate\&. 
+.RE
+.PP
+
+.SS "intlcal_is_equivalent_to (\fBIntlCalendar\fP $calendarObject, \fBIntlCalendar\fP $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Whether another calendar is equal but for a different time \fBIntlCalendar $calendarObject \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$calendar\fP The other calendar against which the comparison is to be made\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool Assuming there are no argument errors, returns \fBTRUE\fP iif the calendars are equivalent except possibly for their set time\&. 
+.RE
+.PP
+
+.SS "intlcal_is_lenient ( $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Whether date/time interpretation is in lenient mode \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBA\fP \fBbool\fP representing whether the calendar is set to lenient mode\&. 
+.RE
+.PP
+
+.SS "intlcal_is_set ( $calendar,  $field)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Whether a field is set \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+One of the \fBIntlCalendar\fP date/time \fBfield constants\fP\&. These are integer values between \fI0\fP and \fBIntlCalendar::FIELD_COUNT\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Assuming there are no argument errors, returns \fBTRUE\fP iif the field is set\&. 
+.RE
+.PP
+
+.SS "intlcal_is_weekend ( $calendar,  $date = \fCNULL\fP)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Whether a certain date/time is in the weekend \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$date\fP [optional] 
+.RE
+.PP
+An optional timestamp representing the number of milliseconds since the epoch, excluding leap seconds\&. If \fBNULL\fP, this object's current time is used instead\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBA\fP \fBbool\fP indicating whether the given or this object's time occurs in a weekend\&. 
+.PP
+The value \fBFALSE\fP may also be returned on failure, for instance after giving a date out of bounds on non-lenient mode; use \fBexceptions\fP or query \fBintl_get_error_code()\fP to disambiguate\&.
+.SS "intlcal_roll ( $calendar,  $field,  $amountOrUpOrDown)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Add value to field without carrying into more significant fields \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+One of the \fBIntlCalendar\fP date/time \fBfield constants\fP\&. These are integer values between \fI0\fP and \fBIntlCalendar::FIELD_COUNT\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$amountOrUpOrDown\fP 
+.RE
+.PP
+The (signed) amount to add to the field, \fBTRUE\fP for rolling up (adding \fI1\fP), or \fBFALSE\fP for rolling down (subtracting \fI1\fP)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_set ( $calendar,  $year,  $month,  $dayOfMonth = \fCNULL\fP,  $hour = \fCNULL\fP,  $minute = \fCNULL\fP,  $second = \fCNULL\fP)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Set a time field or several common fields at once \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$year\fP 
+.RE
+.PP
+One of the \fBIntlCalendar\fP date/time \fBfield constants\fP\&. These are integer values between \fI0\fP and \fBIntlCalendar::FIELD_COUNT\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$month\fP 
+.RE
+.PP
+The new value for \fB\fBIntlCalendar::FIELD_MONTH\fP\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dayOfMonth\fP [optional] 
+.RE
+.PP
+The new value for \fB\fBIntlCalendar::FIELD_DAY_OF_MONTH\fP\fP\&. The month sequence is zero-based, i\&.e\&., January is represented by 0, February by 1, \&.\&.\&., December is 11 and Undecember (if the calendar has it) is 12\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hour\fP [optional] 
+.RE
+.PP
+The new value for \fB\fBIntlCalendar::FIELD_HOUR_OF_DAY\fP\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$minute\fP [optional] 
+.RE
+.PP
+The new value for \fB\fBIntlCalendar::FIELD_MINUTE\fP\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$second\fP [optional] 
+.RE
+.PP
+The new value for \fB\fBIntlCalendar::FIELD_SECOND\fP\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success and \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_set_first_day_of_week ( $calendar,  $dayOfWeek)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Set the day on which the week is deemed to start \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dayOfWeek\fP 
+.RE
+.PP
+One of the constants \fB\fBIntlCalendar::DOW_SUNDAY\fP\fP, \fB\fBIntlCalendar::DOW_MONDAY\fP\fP, \&.\&.\&., \fB\fBIntlCalendar::DOW_SATURDAY\fP\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns TRUE on success\&. \fBFailure\fP can only happen due to invalid parameters\&. 
+.RE
+.PP
+
+.SS "intlcal_set_lenient ( $calendar,  $isLenient)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Set whether date/time interpretation is to be lenient \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$isLenient\fP 
+.RE
+.PP
+Use \fBTRUE\fP to activate the lenient mode; \fBFALSE\fP otherwise\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success\&. \fBFailure\fP can only happen due to invalid parameters\&. 
+.RE
+.PP
+
+.SS "intlcal_set_repeated_wall_time_option ( $calendar,  $wallTimeOption)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Set behavior for handling repeating wall times at negative timezone offset transitions \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wallTimeOption\fP 
+.RE
+.PP
+One of the constants \fB\fBIntlCalendar::WALLTIME_FIRST\fP\fP or \fB\fBIntlCalendar::WALLTIME_LAST\fP\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success\&. \fBFailure\fP can only happen due to invalid parameters\&. 
+.RE
+.PP
+
+.SS "intlcal_set_skipped_wall_time_option ( $calendar,  $wallTimeOption)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Set behavior for handling skipped wall times at positive timezone offset transitions \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wallTimeOption\fP 
+.RE
+.PP
+One of the constants \fB\fBIntlCalendar::WALLTIME_FIRST\fP\fP, \fB\fBIntlCalendar::WALLTIME_LAST\fP\fP or \fB\fBIntlCalendar::WALLTIME_NEXT_VALID\fP\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+Returns \fBTRUE\fP on success\&. \fBFailure\fP can only happen due to invalid parameters\&. 
+.SS "intlcal_set_time ( $date)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Set the calendar time in milliseconds since the epoch \fBfloat $date \fP An instant represented by the number of number of milliseconds between such instant and the epoch, ignoring leap seconds\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success and \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_set_time_zone ( $calendar,  $timeZone)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Set the timezone used by this calendar \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeZone\fP 
+.RE
+.PP
+The new timezone to be used by this calendar\&. It can be specified in the following ways:
+.PP
+.PD 0
+.IP "\(bu" 2
+.PP
+\fBNULL\fP, in which case the default timezone will be used, as specified in the ini setting \fBdate\&.timezone\fP or through the function \fBdate_default_timezone_set()\fP and as returned by \fBdate_default_timezone_get()\fP\&. 
+.PP
+
+.IP "\(bu" 2
+.PP
+An \fBIntlTimeZone\fP, which will be used directly\&. 
+.PP
+
+.IP "\(bu" 2
+.PP
+\fBA\fP \fBDateTimeZone\fP\&. Its identifier will be extracted and an ICU timezone object will be created; the timezone will be backed by ICU's database, not PHP's\&. 
+.PP
+
+.IP "\(bu" 2
+.PP
+\fBA\fP \fBstring\fP, which should be a valid ICU timezone identifier\&. See \fB\fBIntlTimeZone::createTimeZoneIDEnumeration()\fP\fP\&. Raw offsets such as \fI'GMT+08:30'\fP are also accepted\&. 
+.PP
+
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success and \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlcal_to_date_time ( $calendar)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a2)
+.br
+ Convert an \fBIntlCalendar\fP into a \fBDateTime\fP object \fBIntlCalendar $calendar \fP The calendar object, on the procedural style interface\&. 
+.PP
+\fBReturns\fP
+.RS 4
+DateTime|false \fBA\fP \fBDateTime\fP object with the same timezone as this object (though using PHP's database instead of ICU's) and the same time, except for the smaller precision (second precision instead of millisecond)\&. Returns \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "intlgregcal_create_instance ( $timeZone = \fCNULL\fP,  $locale = \fCNULL\fP)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeZone\fP 
+.br
+\fI$locale\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBIntlGregorianCalendar\fP 
+.RE
+.PP
+
+.SS "intlgregcal_get_gregorian_change ( $obj)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$obj\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+double $change 
+.RE
+.PP
+
+.SS "intlgregcal_is_leap_year ( $year)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$year\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "intlgregcal_set_gregorian_change ( $obj,  $change)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$obj\fP 
+.br
+\fI$change\fP 
+.RE
+.PP
+
+.SS "intltz_count_equivalent_ids ( $zoneId)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the number of IDs in the equivalency group that includes the given ID \fBstring $zoneId  int \fP
+.SS "intltz_create_enumeration ( $countryOrRawOffset)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ \fBmixed $countryOrRawOffset [optional]  IntlIterator \fP
+.SS "intltz_create_time_zone ( $zoneId)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ \fBstring $zoneId  IntlTimeZone \fP
+.SS "intltz_from_date_time_zone ( $zoneId)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ \fBDateTimeZone $zoneId  IntlTimeZone \fP
+.SS "intltz_get_canonical_id ( $zoneId, & $isSystemID)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the canonical system timezone ID or the normalized custom time zone ID for the given time zone ID \fBstring $zoneId  bool $isSystemID [optional]  string \fP
+.SS "intltz_get_display_name ( $obj,  $isDaylight,  $style,  $locale)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get a name of this time zone suitable for presentation to the user 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$obj\fP - 
+.RE
+.PP
+The time zone object, on the procedural style interface\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$isDaylight\fP [optional] 
+.br
+\fI$style\fP [optional] 
+.br
+\fI$locale\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "intltz_get_dst_savings ( $obj)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the amount of time to be added to local standard time to get local wall clock time 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$obj\fP - 
+.RE
+.PP
+The time zone object, on the procedural style interface\&. 
+.PP
+\fBint \fP
+.SS "intltz_get_equivalent_id ( $zoneId,  $index)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get an ID in the equivalency group that includes the given ID \fBstring $zoneId  int $index  string \fP
+.SS "intltz_get_error_code ( $obj)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get last error code on the object \fBIntlTimeZone $obj - \fP The time zone object, on the procedural style interface\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "intltz_get_error_message ( $obj)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get last error message on the object \fBIntlTimeZone $obj - \fP The time zone object, on the procedural style interface\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "intltz_get_id ( $obj)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get timezone ID \fBIntlTimeZone $obj  string \fP
+.SS "intltz_get_offset ( $obj,  $date,  $local, & $rawOffset, & $dstOffset)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the time zone raw and GMT offset for the given moment in time \fBIntlTimeZone $obj  float $date  bool $local  int $rawOffset  int $dstOffset  int \fP
+.SS "intltz_get_raw_offset ( $obj)"
+Get the raw GMT offset (before taking daylight savings time into account \fBIntlTimeZone $obj  int \fP
+.SS "intltz_get_tz_data_version ( $obj)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Get the timezone data version currently used by ICU \fBIntlTimeZone $obj  string \fP
+.SS "intltz_getGMT ()"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Create GMT (UTC) timezone \fBIntlTimeZone \fP
+.SS "intltz_has_same_rules ( $obj,  $otherTimeZone)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Check if this zone has the same rules and offset as another zone \fBIntlTimeZone $obj  IntlTimeZone $otherTimeZone  bool \fP
+.SS "intltz_to_date_time_zone ( $obj)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Convert to \fBDateTimeZone\fP object \fB$obj  DateTimeZone \fP
+.SS "intltz_use_daylight_time ( $obj)"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Check if this time zone uses daylight savings time \fB$obj  bool \fP
+.SS "intlz_create_default ()"
+(PHP 5 >=5\&.5\&.0 PECL intl >= 3\&.0\&.0a1)
+.br
+ Create a new copy of the default timezone for this host \fBIntlTimeZone \fP
+.SS "locale_accept_from_http ( $header)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Tries to find out best available locale based on HTTP 'Accept-Language' header \fBstring $header \fP The string containing the 'Accept-Language' header according to format in RFC 2616\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The corresponding locale identifier\&. 
+.RE
+.PP
+
+.SS "locale_canonicalize ( $arg1)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$arg1\fP 
+.RE
+.PP
+
+.SS "locale_compose (array $subtags)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Returns a correctly ordered and delimited locale ID \fBarray $subtags \fP an array containing a list of key-value pairs, where the keys identify the particular locale ID subtags, and the values are the associated subtag values\&. 
+.PP
+The 'variant' and 'private' subtags can take maximum 15 values whereas 'extlang' can take maximum 3 values\&.e\&.g\&. Variants are allowed with the suffix ranging from 0-14\&. Hence the keys for the input array can be variant0, variant1, \&.\&.\&.,variant14\&. In the returned locale id, the subtag is ordered by suffix resulting in variant0 followed by variant1 followed by variant2 and so on\&. 
+.PP
+The 'variant', 'private' and 'extlang' multiple values can be specified both as array under specific key (e\&.g\&. 'variant') and as multiple numbered keys (e\&.g\&. 'variant0', 'variant1', etc\&.)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The corresponding locale identifier\&. 
+.RE
+.PP
+
+.SS "locale_filter_matches ( $langtag,  $locale,  $canonicalize = \fC\fBfalse\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Checks if a language tag filter matches with locale \fBstring $langtag \fP The language tag to check 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$locale\fP 
+.RE
+.PP
+The language range to check against 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$canonicalize\fP [optional] 
+.RE
+.PP
+If true, the arguments will be converted to canonical form before matching\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if $locale matches $langtag \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+
+.SS "locale_get_all_variants ( $locale)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Gets the variants for the input locale \fBstring $locale \fP The locale to extract the variants from 
+.PP
+\fBReturns\fP
+.RS 4
+array The array containing the list of all variants subtag for the locale or \fBNULL\fP if not present 
+.RE
+.PP
+
+.SS "locale_get_default ()"
+Get the default \fBLocale\fP \fBstring a string with the current Locale\&. \fP
+.SS "locale_get_display_language ( $locale,  $in_locale = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Returns an appropriately localized display name for language of the inputlocale \fBstring $locale \fP The locale to return a display language for 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$in_locale\fP [optional] 
+.RE
+.PP
+Optional format locale to use to display the language name 
+.PP
+\fBReturns\fP
+.RS 4
+string display name of the language for the $locale in the format appropriate for $in_locale\&. 
+.RE
+.PP
+
+.SS "locale_get_display_name ( $locale,  $in_locale = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Returns an appropriately localized display name for the input locale \fBstring $locale \fP The locale to return a display name for\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$in_locale\fP [optional] 
+.RE
+.PP
+optional format locale
+.PP
+\fBReturns\fP
+.RS 4
+string Display name of the locale in the format appropriate for $in_locale\&. 
+.RE
+.PP
+
+.SS "locale_get_display_region ( $locale,  $in_locale = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Returns an appropriately localized display name for region of the input locale \fBstring $locale \fP The locale to return a display region for\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$in_locale\fP [optional] 
+.RE
+.PP
+Optional format locale to use to display the region name 
+.PP
+\fBReturns\fP
+.RS 4
+string display name of the region for the $locale in the format appropriate for $in_locale\&. 
+.RE
+.PP
+
+.SS "locale_get_display_script ( $locale,  $in_locale = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Returns an appropriately localized display name for script of the input locale \fBstring $locale \fP The locale to return a display script for 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$in_locale\fP [optional] 
+.RE
+.PP
+Optional format locale to use to display the script name 
+.PP
+\fBReturns\fP
+.RS 4
+string Display name of the script for the $locale in the format appropriate for $in_locale\&. 
+.RE
+.PP
+
+.SS "locale_get_display_variant ( $locale,  $in_locale = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Returns an appropriately localized display name for variants of the input locale \fBstring $locale \fP The locale to return a display variant for 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$in_locale\fP [optional] 
+.RE
+.PP
+Optional format locale to use to display the variant name 
+.PP
+\fBReturns\fP
+.RS 4
+string Display name of the variant for the $locale in the format appropriate for $in_locale\&. 
+.RE
+.PP
+
+.SS "locale_get_keywords ( $locale)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Gets the keywords for the input locale \fBstring $locale \fP The locale to extract the keywords from 
+.PP
+\fBReturns\fP
+.RS 4
+array Associative array containing the keyword-value pairs for this locale 
+.RE
+.PP
+
+.SS "locale_get_primary_language ( $locale)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Gets the primary language for the input locale \fBstring $locale \fP The locale to extract the primary language code from 
+.PP
+\fBReturns\fP
+.RS 4
+string The language code associated with the language or \fBNULL\fP in case of error\&. 
+.RE
+.PP
+
+.SS "locale_get_region ( $locale)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Gets the region for the input locale \fBstring $locale \fP The locale to extract the region code from 
+.PP
+\fBReturns\fP
+.RS 4
+string The region subtag for the locale or \fBNULL\fP if not present 
+.RE
+.PP
+
+.SS "locale_get_script ( $locale)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Gets the script for the input locale \fBstring $locale \fP The locale to extract the script code from 
+.PP
+\fBReturns\fP
+.RS 4
+string The script subtag for the locale or \fBNULL\fP if not present 
+.RE
+.PP
+
+.SS "locale_lookup (array $langtag,  $locale,  $canonicalize = \fC\fBfalse\fP\fP,  $default = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Searches the language tag list for the best match to the language \fBarray $langtag \fP An array containing a list of language tags to compare to \fIlocale\fP\&. Maximum 100 items allowed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$locale\fP 
+.RE
+.PP
+The locale to use as the language range when matching\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$canonicalize\fP [optional] 
+.RE
+.PP
+If true, the arguments will be converted to canonical form before matching\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$default\fP [optional] 
+.RE
+.PP
+The locale to use if no match is found\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The closest matching language tag or default value\&. 
+.RE
+.PP
+
+.SS "locale_parse ( $locale)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Returns a key-value array of locale ID subtag elements\&. \fBstring $locale \fP The locale to extract the subtag array from\&. Note: The 'variant' and 'private' subtags can take maximum 15 values whereas 'extlang' can take maximum 3 values\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array containing a list of key-value pairs, where the keys identify the particular locale ID subtags, and the values are the associated subtag values\&. The array will be ordered as the locale id subtags e\&.g\&. in the locale id if variants are '-varX-varY-varZ' then the returned array will have variant0=>varX , variant1=>varY , variant2=>varZ 
+.RE
+.PP
+
+.SS "locale_set_default ( $name)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Set the default \fBLocale\fP \fBstring $name \fP The new \fBLocale\fP name\&. \fBA\fP comprehensive list of the supported locales is available at \&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "msgfmt_create ( $locale,  $pattern)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$locale\fP 
+.br
+\fI$pattern\fP 
+.RE
+.PP
+
+.SS "msgfmt_format (\fBMessageFormatter\fP $fmt, array $args)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Format the message \fBMessageFormatter $fmt  array $args \fP Arguments to insert into the format string 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The formatted string, or \fBFALSE\fP if an error occurred 
+.RE
+.PP
+
+.SS "msgfmt_format_message (string $locale, string $pattern, array $args)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Quick format message \fBstring $locale \fP The locale to use for formatting locale-dependent parts 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pattern\fP 
+.RE
+.PP
+The pattern string to insert things into\&. The pattern uses an 'apostrophe-friendly' syntax; it is run through umsg_autoQuoteApostrophe before being interpreted\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$args\fP 
+.RE
+.PP
+The array of values to insert into the format string 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The formatted pattern string or \fBFALSE\fP if an error occurred 
+.RE
+.PP
+
+.SS "msgfmt_get_error_code (\fBMessageFormatter\fP $fmt,  $nf)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get the error code from last operation \fBMessageFormatter $fmt  $nf  int The error code, one of UErrorCode values\&. Initial value is U_ZERO_ERROR\&. \fP
+.SS "msgfmt_get_error_message (\fBMessageFormatter\fP $fmt,  $coll)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get the error text from the last operation \fBMessageFormatter $fmt  $coll  string Description of the last error\&. \fP
+.SS "msgfmt_get_locale (\fBMessageFormatter\fP $fmt,  $mf)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get the locale for which the formatter was created\&. \fBMessageFormatter $fmt  $mf  string The locale name \fP
+.SS "msgfmt_get_pattern (\fBMessageFormatter\fP $fmt,  $mf)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get the pattern used by the formatter \fBMessageFormatter $fmt  $mf  string The pattern string for this message formatter \fP
+.SS "msgfmt_parse (\fBMessageFormatter\fP $fmt,  $value)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Parse input string according to pattern \fBMessageFormatter $fmt  string $value \fP The string to parse 
+.PP
+\fBReturns\fP
+.RS 4
+array|false An array containing the items extracted, or \fBFALSE\fP on error 
+.RE
+.PP
+
+.SS "msgfmt_parse_message (\fBMessageFormatter\fP $fmt,  $locale,  $pattern,  $source)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Quick parse input string \fBMessageFormatter $fmt  string $locale \fP The locale to use for parsing locale-dependent parts 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pattern\fP 
+.RE
+.PP
+The pattern with which to parse the \fIvalue\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$source\fP 
+.RE
+.PP
+The string to parse, conforming to the \fIpattern\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false An array containing items extracted, or \fBFALSE\fP on error 
+.RE
+.PP
+
+.SS "msgfmt_set_pattern (\fBMessageFormatter\fP $fmt,  $pattern)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Set the pattern used by the formatter \fBMessageFormatter $fmt  string $pattern \fP The pattern string to use in this message formatter\&. The pattern uses an 'apostrophe-friendly' syntax; it is run through umsg_autoQuoteApostrophe before being interpreted\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "normalizer_is_normalized ( $input,  $form = \fC\fBNormalizer::FORM_C\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Checks if the provided string is already in the specified normalization form\&. \fBstring $input \fPThe input string to normalize
+.PP
+\fBParameters\fP
+.RS 4
+\fI$form\fP [optional] 
+.RE
+.PP
+One of the normalization forms\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if normalized, \fBFALSE\fP otherwise or if there an error 
+.RE
+.PP
+
+.SS "normalizer_normalize ( $input,  $form = \fC\fBNormalizer::FORM_C\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Normalizes the input provided and returns the normalized string \fBstring $input \fPThe input string to normalize
+.PP
+\fBParameters\fP
+.RS 4
+\fI$form\fP [optional] 
+.RE
+.PP
+One of the normalization forms\&.
+.PP
+\fBReturns\fP
+.RS 4
+string The normalized string or \fBNULL\fP if an error occurred\&. 
+.RE
+.PP
+
+.SS "numfmt_create ( $locale,  $style,  $pattern = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Create a number formatter \fBstring $locale \fP \fBLocale\fP in which the number would be formatted (locale name, e\&.g\&. en_CA)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$style\fP 
+.RE
+.PP
+Style of the formatting, one of the format style constants\&. If \fB\fBNumberFormatter::PATTERN_DECIMAL\fP\fP or \fB\fBNumberFormatter::PATTERN_RULEBASED\fP\fP is passed then the number format is opened using the given pattern, which must conform to the syntax described in ICU DecimalFormat documentation or ICU RuleBasedNumberFormat documentation, respectively\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pattern\fP [optional] 
+.RE
+.PP
+Pattern string if the chosen style requires a pattern\&. 
+.PP
+\fBReturns\fP
+.RS 4
+NumberFormatter|false \fB\fBNumberFormatter\fP\fP object or \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "numfmt_format (\fBNumberFormatter\fP $fmt,  $value,  $type = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Format a number \fBNumberFormatter $fmt  int|float $value \fP The value to format\&. Can be integer or float, other values will be converted to a numeric value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP [optional] 
+.RE
+.PP
+The formatting type to use\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the string containing formatted value, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "numfmt_format_currency (\fBNumberFormatter\fP $fmt,  $value,  $currency)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Format a currency value \fBNumberFormatter $fmt  float $value \fP The numeric currency value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$currency\fP 
+.RE
+.PP
+The 3-letter ISO 4217 currency code indicating the currency to use\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string String representing the formatted currency value\&. 
+.RE
+.PP
+
+.SS "numfmt_get_attribute (\fBNumberFormatter\fP $fmt,  $attr)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get an attribute \fBNumberFormatter $fmt  int $attr \fP Attribute specifier - one of the numeric attribute constants\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false Return attribute value on success, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "numfmt_get_error_code (\fBNumberFormatter\fP $fmt,  $nf)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get formatter's last error code\&. \fBNumberFormatter $fmt  $nf  int error code from last formatter call\&. \fP
+.SS "numfmt_get_error_message (\fBNumberFormatter\fP $fmt,  $nf)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get formatter's last error message\&. \fBNumberFormatter $fmt  $nf  string error message from last formatter call\&. \fP
+.SS "numfmt_get_locale (\fBNumberFormatter\fP $fmt,  $type = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get formatter locale \fBNumberFormatter $fmt  int $type [optional] \fP You can choose between valid and actual locale ( \fB\fBLocale::VALID_LOCALE\fP\fP, \fB\fBLocale::ACTUAL_LOCALE\fP\fP, respectively)\&. The default is the actual locale\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The locale name used to create the formatter\&. 
+.RE
+.PP
+
+.SS "numfmt_get_pattern (\fBNumberFormatter\fP $fmt,  $nf)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get formatter pattern \fBNumberFormatter $fmt  $nf  string|false Pattern string that is used by the formatter, or \fBFALSE\fP if an error happens\&. \fP
+.SS "numfmt_get_symbol (\fBNumberFormatter\fP $fmt,  $attr)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get a symbol value \fBNumberFormatter $fmt  int $attr \fP Symbol specifier, one of the format symbol constants\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The symbol string or \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "numfmt_get_text_attribute (\fBNumberFormatter\fP $fmt,  $attr)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Get a text attribute \fBNumberFormatter $fmt  int $attr \fP Attribute specifier - one of the text attribute constants\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false Return attribute value on success, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "numfmt_parse (\fBNumberFormatter\fP $fmt,  $value,  $type = \fC\fBnull\fP\fP, & $position = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Parse a number \fBNumberFormatter $fmt  string $value  int $type [optional] \fP The formatting type to use\&. By default, \fB\fBNumberFormatter::TYPE_DOUBLE\fP\fP is used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$position\fP [optional] 
+.RE
+.PP
+Offset in the string at which to begin parsing\&. On return, this value will hold the offset at which parsing ended\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed The value of the parsed number or \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "numfmt_parse_currency (\fBNumberFormatter\fP $fmt,  $value, & $currency, & $position = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Parse a currency number \fBNumberFormatter $fmt  string $value  string $currency \fP Parameter to receive the currency name (3-letter ISO 4217 currency code)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$position\fP [optional] 
+.RE
+.PP
+Offset in the string at which to begin parsing\&. On return, this value will hold the offset at which parsing ended\&. 
+.PP
+\fBReturns\fP
+.RS 4
+float|false The parsed numeric value or \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "numfmt_set_attribute (\fBNumberFormatter\fP $fmt,  $attr,  $value)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Set an attribute \fBNumberFormatter $fmt  int $attr \fP Attribute specifier - one of the numeric attribute constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+The attribute value\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "numfmt_set_pattern (\fBNumberFormatter\fP $fmt,  $pattern)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Set formatter pattern \fBNumberFormatter $fmt  string $pattern \fP Pattern in syntax described in ICU DecimalFormat documentation\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "numfmt_set_symbol (\fBNumberFormatter\fP $fmt,  $attr,  $value)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Set a symbol value \fBNumberFormatter $fmt  int $attr \fP Symbol specifier, one of the format symbol constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+Text for the symbol\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "numfmt_set_text_attribute (\fBNumberFormatter\fP $fmt,  $attr,  $value)"
+(PHP 5 >= 5\&.3\&.0, PECL intl >= 1\&.0\&.0)
+.br
+ Set a text attribute \fBNumberFormatter $fmt  int $attr \fP Attribute specifier - one of the text attribute constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+Text for the attribute value\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "resourcebundle_count (\fBResourceBundle\fP $r,  $bundle)"
+(PHP >= 5\&.3\&.2, PECL intl >= 2\&.0\&.0)
+.br
+ Get number of elements in the bundle \fBResourceBundle $r  $bundle  int number of elements in the bundle\&. \fP
+.SS "resourcebundle_create ( $locale,  $bundlename,  $fallback = \fC\fBnull\fP\fP)"
+(PHP >= 5\&.3\&.2, PECL intl >= 2\&.0\&.0)
+.br
+ Create a resource bundle \fBstring $locale \fP \fBLocale\fP for which the resources should be loaded (locale name, e\&.g\&. en_CA)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bundlename\fP 
+.RE
+.PP
+The directory where the data is stored or the name of the \&.dat file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fallback\fP [optional] 
+.RE
+.PP
+Whether locale should match exactly or fallback to parent locale is allowed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+ResourceBundle|false \fB\fBResourceBundle\fP\fP object or \fBFALSE\fP on error\&. 
+.RE
+.PP
+
+.SS "resourcebundle_get (\fBResourceBundle\fP $r,  $index)"
+(PHP >= 5\&.3\&.2, PECL intl >= 2\&.0\&.0)
+.br
+ Get data from the bundle \fBResourceBundle $r  string|int $index \fP Data index, must be string or integer\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed the data located at the index or \fBNULL\fP on error\&. Strings, integers and binary data strings are returned as corresponding PHP types, integer array is returned as PHP array\&. Complex types are returned as \fB\fBResourceBundle\fP\fP object\&. 
+.RE
+.PP
+
+.SS "resourcebundle_get_error_code (\fBResourceBundle\fP $bundle)"
+(PHP >= 5\&.3\&.2, PECL intl >= 2\&.0\&.0)
+.br
+ Get bundle's last error code\&. \fB$bundle  int error code from last bundle object call\&. \fP
+.SS "resourcebundle_get_error_message (\fBResourceBundle\fP $bundle)"
+(PHP >= 5\&.3\&.2, PECL intl >= 2\&.0\&.0)
+.br
+ Get bundle's last error message\&. \fB$bundle  string error message from last bundle object's call\&. \fP
+.SS "resourcebundle_locales ( $bundlename)"
+(PHP >= 5\&.3\&.2, PECL intl >= 2\&.0\&.0)
+.br
+ Get supported locales \fBstring $bundlename \fP Path of \fBResourceBundle\fP for which to get available locales, or empty string for default locales list\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array the list of locales supported by the bundle\&. 
+.RE
+.PP
+
+.SS "transliterator_create ( $id,  $direction = \fC\fBnull\fP\fP)"
+(PHP >= 5\&.4\&.0, PECL intl >= 2\&.0\&.0)
+.br
+ Create a transliterator \fBstring $id \fP The id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$direction\fP [optional] 
+.RE
+.PP
+The direction, defaults to >\fBTransliterator::FORWARD\fP\&. May also be set to \fBTransliterator::REVERSE\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Transliterator|null a \fB\fBTransliterator\fP\fP object on success, or \fBNULL\fP on failure\&. 
+.RE
+.PP
+
+.SS "transliterator_create_from_rules ( $rules,  $direction = \fC\fBnull\fP\fP)"
+(PHP >= 5\&.4\&.0, PECL intl >= 2\&.0\&.0)
+.br
+ Create transliterator from rules \fBstring $rules \fP The rules\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$direction\fP [optional] 
+.RE
+.PP
+The direction, defaults to >\fBTransliterator::FORWARD\fP\&. May also be set to \fBTransliterator::REVERSE\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBTransliterator\fP a \fB\fBTransliterator\fP\fP object on success, or \fBNULL\fP on failure\&. 
+.RE
+.PP
+
+.SS "transliterator_create_inverse (\fBTransliterator\fP $orig_trans)"
+(PHP >= 5\&.4\&.0, PECL intl >= 2\&.0\&.0)
+.br
+ Create an inverse transliterator \fBTransliterator $orig_trans  Transliterator a \fBTransliterator\fP object on success, or \fBNULL\fP on failure \fP
+.SS "transliterator_get_error_code (\fBTransliterator\fP $trans)"
+(PHP >= 5\&.4\&.0, PECL intl >= 2\&.0\&.0)
+.br
+ Get last error code \fBTransliterator $trans  int The error code on success, or \fBFALSE\fP if none exists, or on failure\&. \fP
+.SS "transliterator_get_error_message (\fBTransliterator\fP $trans)"
+(PHP >= 5\&.4\&.0, PECL intl >= 2\&.0\&.0)
+.br
+ Get last error message \fBTransliterator $trans  string The error code on success, or \fBFALSE\fP if none exists, or on failure\&. \fP
+.SS "transliterator_list_ids ()"
+(PHP >= 5\&.4\&.0, PECL intl >= 2\&.0\&.0)
+.br
+ Get transliterator IDs \fBarray An array of registered transliterator IDs on success, or \fBFALSE\fP on failure\&. \fP
+.SS "transliterator_transliterate ( $transliterator,  $subject,  $start = \fC\fBnull\fP\fP,  $end = \fC\fBnull\fP\fP)"
+(PHP >= 5\&.4\&.0, PECL intl >= 2\&.0\&.0)
+.br
+ Transliterate a string \fBTransliterator|string $transliterator  string $subject \fP The string to be transformed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$start\fP [optional] 
+.RE
+.PP
+The start index (in UTF-16 code units) from which the string will start to be transformed, inclusive\&. Indexing starts at 0\&. The text before will be left as is\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$end\fP [optional] 
+.RE
+.PP
+The end index (in UTF-16 code units) until which the string will be transformed, exclusive\&. Indexing starts at 0\&. The text after will be left as is\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The transfomed string on success, or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const GRAPHEME_EXTR_COUNT 0"
+
+.SS "const GRAPHEME_EXTR_MAXBYTES 1"
+
+.SS "const GRAPHEME_EXTR_MAXCHARS 2"
+
+.SS "const IDNA_ALLOW_UNASSIGNED 1"
+Allow processing of unassigned codepoints in the input for IDN functions\&. \fBhttps://php\&.net/manual/en/intl\&.constants\&.php\fP
+.SS "const IDNA_CHECK_BIDI 4"
+Check whether the input conforms to the BiDi rules\&. Ignored by the IDNA2003 implementation, which always performs this check\&. \fBhttps://php\&.net/manual/en/intl\&.constants\&.php\fP
+.SS "const IDNA_CHECK_CONTEXTJ 8"
+Check whether the input conforms to the CONTEXTJ rules\&. Ignored by the IDNA2003 implementation, as this check is new in IDNA2008\&. \fBhttps://php\&.net/manual/en/intl\&.constants\&.php\fP
+.SS "const IDNA_DEFAULT 0"
+Prohibit processing of unassigned codepoints in the input for IDN functions and do not check if the input conforms to domain name ASCII rules\&. \fBhttps://php\&.net/manual/en/intl\&.constants\&.php\fP
+.SS "const IDNA_ERROR_BIDI 2048"
+\fB5\&.4 \fP
+.SS "const IDNA_ERROR_CONTEXTJ 4096"
+\fB5\&.4 \fP
+.SS "const IDNA_ERROR_DISALLOWED 128"
+\fB5\&.4 \fP
+.SS "const IDNA_ERROR_DOMAIN_NAME_TOO_LONG 4"
+\fB5\&.4 \fP
+.SS "const IDNA_ERROR_EMPTY_LABEL 1"
+Errors reported in a bitset returned by the UTS #46 algorithm in \fBidn_to_utf8\fP and \fBidn_to_ascii\fP\&. \fBhttps://php\&.net/manual/en/intl\&.constants\&.php\fP
+.SS "const IDNA_ERROR_HYPHEN_3_4 32"
+\fB5\&.4 \fP
+.SS "const IDNA_ERROR_INVALID_ACE_LABEL 1024"
+\fB5\&.4 \fP
+.SS "const IDNA_ERROR_LABEL_HAS_DOT 512"
+\fB5\&.4 \fP
+.SS "const IDNA_ERROR_LABEL_TOO_LONG 2"
+\fB5\&.4 \fP
+.SS "const IDNA_ERROR_LEADING_COMBINING_MARK 64"
+\fB5\&.4 \fP
+.SS "const IDNA_ERROR_LEADING_HYPHEN 8"
+\fB5\&.4 \fP
+.SS "const IDNA_ERROR_PUNYCODE 256"
+\fB5\&.4 \fP
+.SS "const IDNA_ERROR_TRAILING_HYPHEN 16"
+\fB5\&.4 \fP
+.SS "const IDNA_NONTRANSITIONAL_TO_ASCII 16"
+Option for nontransitional processing in \fBidn_to_ascii\fP\&. Transitional processing is activated by default\&. This option is ignored by the IDNA2003 implementation\&. \fBhttps://php\&.net/manual/en/intl\&.constants\&.php\fP
+.SS "const IDNA_NONTRANSITIONAL_TO_UNICODE 32"
+Option for nontransitional processing in \fBidn_to_utf8\fP\&. Transitional processing is activated by default\&. This option is ignored by the IDNA2003 implementation\&. \fBhttps://php\&.net/manual/en/intl\&.constants\&.php\fP
+.SS "const IDNA_USE_STD3_RULES 2"
+Check if the input for IDN functions conforms to domain name ASCII rules\&. \fBhttps://php\&.net/manual/en/intl\&.constants\&.php\fP
+.SS "const INTL_ICU_DATA_VERSION '4\&.8\&.1'"
+
+.SS "const INTL_ICU_VERSION '4\&.8\&.1\&.1'"
+
+.SS "const INTL_IDNA_VARIANT_2003 0"
+Use IDNA 2003 algorithm in {
+.PP
+\fBSee also\fP
+.RS 4
+\fBidn_to_utf8\fP} and {
+.PP
+\fBidn_to_ascii\fP}\&. This is the default\&. \fBdeprecated 56\&. INTL_IDNA_VARIANT_UTS46} instead\&. \fP
+.RE
+.PP
+
+.SS "const INTL_IDNA_VARIANT_UTS46 1"
+Use UTS #46 algorithm in \fBidn_to_utf8\fP and \fBidn_to_ascii\fP\&. \fBhttps://php\&.net/manual/en/intl\&.constants\&.php\fP
+.SS "const INTL_MAX_LOCALE_LEN 80"
+Limit on locale length, set to 80 in PHP code\&. \fBLocale\fP names longer than this limit will not be accepted\&. \fBhttps://php\&.net/manual/en/intl\&.constants\&.php\fP
+.SS "const U_AMBIGUOUS_ALIAS_WARNING \-122"
+
+.SS "const U_BAD_VARIABLE_DEFINITION 65536"
+
+.SS "const U_BRK_ASSIGN_ERROR 66053"
+
+.SS "const U_BRK_ERROR_LIMIT 66062"
+
+.SS "const U_BRK_ERROR_START 66048"
+
+.SS "const U_BRK_HEX_DIGITS_EXPECTED 66049"
+
+.SS "const U_BRK_INIT_ERROR 66058"
+
+.SS "const U_BRK_INTERNAL_ERROR 66048"
+
+.SS "const U_BRK_MALFORMED_RULE_TAG 66061"
+
+.SS "const U_BRK_MISMATCHED_PAREN 66055"
+
+.SS "const U_BRK_NEW_LINE_IN_QUOTED_STRING 66056"
+
+.SS "const U_BRK_RULE_EMPTY_SET 66059"
+
+.SS "const U_BRK_RULE_SYNTAX 66051"
+
+.SS "const U_BRK_SEMICOLON_EXPECTED 66050"
+
+.SS "const U_BRK_UNCLOSED_SET 66052"
+
+.SS "const U_BRK_UNDEFINED_VARIABLE 66057"
+
+.SS "const U_BRK_UNRECOGNIZED_OPTION 66060"
+
+.SS "const U_BRK_VARIABLE_REDFINITION 66054"
+
+.SS "const U_BUFFER_OVERFLOW_ERROR 15"
+
+.SS "const U_CE_NOT_FOUND_ERROR 21"
+
+.SS "const U_COLLATOR_VERSION_MISMATCH 28"
+
+.SS "const U_DIFFERENT_UCA_VERSION \-121"
+
+.SS "const U_ENUM_OUT_OF_SYNC_ERROR 25"
+
+.SS "const U_ERROR_LIMIT 66818"
+
+.SS "const U_ERROR_WARNING_LIMIT \-119"
+
+.SS "const U_ERROR_WARNING_START \-128"
+
+.SS "const U_FILE_ACCESS_ERROR 4"
+
+.SS "const U_FMT_PARSE_ERROR_LIMIT 65810"
+
+.SS "const U_FMT_PARSE_ERROR_START 65792"
+
+.SS "const U_IDNA_ACE_PREFIX_ERROR 66564"
+
+.SS "const U_IDNA_CHECK_BIDI_ERROR 66562"
+
+.SS "const U_IDNA_DOMAIN_NAME_TOO_LONG_ERROR 66568"
+
+.SS "const U_IDNA_ERROR_LIMIT 66569"
+
+.SS "const U_IDNA_ERROR_START 66560"
+
+.SS "const U_IDNA_LABEL_TOO_LONG_ERROR 66566"
+
+.SS "const U_IDNA_PROHIBITED_ERROR 66560"
+
+.SS "const U_IDNA_STD3_ASCII_RULES_ERROR 66563"
+
+.SS "const U_IDNA_UNASSIGNED_ERROR 66561"
+
+.SS "const U_IDNA_VERIFICATION_ERROR 66565"
+
+.SS "const U_IDNA_ZERO_LENGTH_LABEL_ERROR 66567"
+
+.SS "const U_ILLEGAL_ARGUMENT_ERROR 1"
+
+.SS "const U_ILLEGAL_CHAR_FOUND 12"
+
+.SS "const U_ILLEGAL_CHAR_IN_SEGMENT 65564"
+
+.SS "const U_ILLEGAL_CHARACTER 65567"
+
+.SS "const U_ILLEGAL_ESCAPE_SEQUENCE 18"
+
+.SS "const U_ILLEGAL_PAD_POSITION 65800"
+
+.SS "const U_INDEX_OUTOFBOUNDS_ERROR 8"
+
+.SS "const U_INTERNAL_PROGRAM_ERROR 5"
+
+.SS "const U_INTERNAL_TRANSLITERATOR_ERROR 65568"
+
+.SS "const U_INVALID_CHAR_FOUND 10"
+
+.SS "const U_INVALID_FORMAT_ERROR 3"
+
+.SS "const U_INVALID_FUNCTION 65570"
+
+.SS "const U_INVALID_ID 65569"
+
+.SS "const U_INVALID_PROPERTY_PATTERN 65561"
+
+.SS "const U_INVALID_RBT_SYNTAX 65560"
+
+.SS "const U_INVALID_STATE_ERROR 27"
+
+.SS "const U_INVALID_TABLE_FILE 14"
+
+.SS "const U_INVALID_TABLE_FORMAT 13"
+
+.SS "const U_INVARIANT_CONVERSION_ERROR 26"
+
+.SS "const U_MALFORMED_EXPONENTIAL_PATTERN 65795"
+
+.SS "const U_MALFORMED_PRAGMA 65562"
+
+.SS "const U_MALFORMED_RULE 65537"
+
+.SS "const U_MALFORMED_SET 65538"
+
+.SS "const U_MALFORMED_SYMBOL_REFERENCE 65539"
+
+.SS "const U_MALFORMED_UNICODE_ESCAPE 65540"
+
+.SS "const U_MALFORMED_VARIABLE_DEFINITION 65541"
+
+.SS "const U_MALFORMED_VARIABLE_REFERENCE 65542"
+
+.SS "const U_MEMORY_ALLOCATION_ERROR 7"
+
+.SS "const U_MESSAGE_PARSE_ERROR 6"
+
+.SS "const U_MISMATCHED_SEGMENT_DELIMITERS 65543"
+
+.SS "const U_MISPLACED_ANCHOR_START 65544"
+
+.SS "const U_MISPLACED_COMPOUND_FILTER 65558"
+
+.SS "const U_MISPLACED_CURSOR_OFFSET 65545"
+
+.SS "const U_MISPLACED_QUANTIFIER 65546"
+
+.SS "const U_MISSING_OPERATOR 65547"
+
+.SS "const U_MISSING_RESOURCE_ERROR 2"
+
+.SS "const U_MISSING_SEGMENT_CLOSE 65548"
+
+.SS "const U_MULTIPLE_ANTE_CONTEXTS 65549"
+
+.SS "const U_MULTIPLE_COMPOUND_FILTERS 65559"
+
+.SS "const U_MULTIPLE_CURSORS 65550"
+
+.SS "const U_MULTIPLE_DECIMAL_SEPARATORS 65793"
+
+.SS "const U_MULTIPLE_DECIMAL_SEPERATORS 65793"
+
+.SS "const U_MULTIPLE_EXPONENTIAL_SYMBOLS 65794"
+
+.SS "const U_MULTIPLE_PAD_SPECIFIERS 65798"
+
+.SS "const U_MULTIPLE_PERCENT_SYMBOLS 65796"
+
+.SS "const U_MULTIPLE_PERMILL_SYMBOLS 65797"
+
+.SS "const U_MULTIPLE_POST_CONTEXTS 65551"
+
+.SS "const U_NO_SPACE_AVAILABLE 20"
+
+.SS "const U_NO_WRITE_PERMISSION 30"
+
+.SS "const U_PARSE_ERROR 9"
+
+.SS "const U_PARSE_ERROR_LIMIT 65571"
+
+.SS "const U_PARSE_ERROR_START 65536"
+
+.SS "const U_PATTERN_SYNTAX_ERROR 65799"
+
+.SS "const U_PRIMARY_TOO_LONG_ERROR 22"
+
+.SS "const U_REGEX_BAD_ESCAPE_SEQUENCE 66307"
+
+.SS "const U_REGEX_BAD_INTERVAL 66312"
+
+.SS "const U_REGEX_ERROR_LIMIT 66324"
+
+.SS "const U_REGEX_ERROR_START 66304"
+
+.SS "const U_REGEX_INTERNAL_ERROR 66304"
+
+.SS "const U_REGEX_INVALID_BACK_REF 66314"
+
+.SS "const U_REGEX_INVALID_FLAG 66315"
+
+.SS "const U_REGEX_INVALID_STATE 66306"
+
+.SS "const U_REGEX_LOOK_BEHIND_LIMIT 66316"
+
+.SS "const U_REGEX_MAX_LT_MIN 66313"
+
+.SS "const U_REGEX_MISMATCHED_PAREN 66310"
+
+.SS "const U_REGEX_NUMBER_TOO_BIG 66311"
+
+.SS "const U_REGEX_PROPERTY_SYNTAX 66308"
+
+.SS "const U_REGEX_RULE_SYNTAX 66305"
+
+.SS "const U_REGEX_SET_CONTAINS_STRING 66317"
+
+.SS "const U_REGEX_UNIMPLEMENTED 66309"
+
+.SS "const U_RESOURCE_TYPE_MISMATCH 17"
+
+.SS "const U_RULE_MASK_ERROR 65557"
+
+.SS "const U_SAFECLONE_ALLOCATED_WARNING \-126"
+
+.SS "const U_SORT_KEY_TOO_SHORT_WARNING \-123"
+
+.SS "const U_STANDARD_ERROR_LIMIT 31"
+
+.SS "const U_STATE_OLD_WARNING \-125"
+
+.SS "const U_STATE_TOO_OLD_ERROR 23"
+
+.SS "const U_STRING_NOT_TERMINATED_WARNING \-124"
+
+.SS "const U_STRINGPREP_CHECK_BIDI_ERROR 66562"
+
+.SS "const U_STRINGPREP_PROHIBITED_ERROR 66560"
+
+.SS "const U_STRINGPREP_UNASSIGNED_ERROR 66561"
+
+.SS "const U_TOO_MANY_ALIASES_ERROR 24"
+
+.SS "const U_TRAILING_BACKSLASH 65552"
+
+.SS "const U_TRUNCATED_CHAR_FOUND 11"
+
+.SS "const U_UNCLOSED_SEGMENT 65563"
+
+.SS "const U_UNDEFINED_SEGMENT_REFERENCE 65553"
+
+.SS "const U_UNDEFINED_VARIABLE 65554"
+
+.SS "const U_UNEXPECTED_TOKEN 65792"
+
+.SS "const U_UNMATCHED_BRACES 65801"
+
+.SS "const U_UNQUOTED_SPECIAL 65555"
+
+.SS "const U_UNSUPPORTED_ATTRIBUTE 65803"
+
+.SS "const U_UNSUPPORTED_ERROR 16"
+
+.SS "const U_UNSUPPORTED_ESCAPE_SEQUENCE 19"
+
+.SS "const U_UNSUPPORTED_PROPERTY 65802"
+
+.SS "const U_UNTERMINATED_QUOTE 65556"
+
+.SS "const U_USELESS_COLLATOR_ERROR 29"
+
+.SS "const U_USING_DEFAULT_WARNING \-127"
+
+.SS "const U_USING_FALLBACK_WARNING \-128"
+
+.SS "const U_VARIABLE_RANGE_EXHAUSTED 65565"
+
+.SS "const U_VARIABLE_RANGE_OVERLAP 65566"
+
+.SS "const U_ZERO_ERROR 0"
+
+.SS "const ULOC_ACTUAL_LOCALE 0"
+
+.SS "const ULOC_VALID_LOCALE 1"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

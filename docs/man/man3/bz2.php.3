@@ -1,0 +1,260 @@
+.TH "vendor/jetbrains/phpstorm-stubs/bz2/bz2.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/bz2/bz2.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBbzopen\fP ($filename, $mode)"
+.br
+.ti -1c
+.RI "\fBbzread\fP ($bz, $length=1024)"
+.br
+.ti -1c
+.RI "\fBbzwrite\fP ($bz, $data, $length=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBbzflush\fP ($bz)"
+.br
+.ti -1c
+.RI "\fBbzclose\fP ($bz)"
+.br
+.ti -1c
+.RI "\fBbzerrno\fP ($bz)"
+.br
+.ti -1c
+.RI "\fBbzerrstr\fP ($bz)"
+.br
+.ti -1c
+.RI "\fBbzerror\fP ($bz)"
+.br
+.ti -1c
+.RI "\fBbzcompress\fP ($source, $blocksize=4, $workfactor=0)"
+.br
+.ti -1c
+.RI "\fBbzdecompress\fP ($source, $small=0)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "bzclose ( $bz)"
+Close a bzip2 file \fBresource $bz \fP The file pointer\&. It must be valid and must point to a file successfully opened by \fBbzopen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "bzcompress ( $source,  $blocksize = \fC4\fP,  $workfactor = \fC0\fP)"
+Compress a string into bzip2 encoded data \fBstring $source \fP The string to compress\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blocksize\fP [optional] 
+.RE
+.PP
+Specifies the blocksize used during compression and should be a number from 1 to 9 with 9 giving the best compression, but using more resources to do so\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$workfactor\fP [optional] 
+.RE
+.PP
+Controls how the compression phase behaves when presented with worst case, highly repetitive, input data\&. The value can be between 0 and 250 with 0 being a special case\&. 
+.PP
+Regardless of the \fIworkfactor\fP, the generated output is the same\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed The compressed string, or an error number if an error occurred\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "bzdecompress ( $source,  $small = \fC0\fP)"
+Decompresses bzip2 encoded data \fBstring $source \fP The string to decompress\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$small\fP [optional] 
+.RE
+.PP
+If \fBTRUE\fP, an alternative decompression algorithm will be used which uses less memory (the maximum memory requirement drops to around 2300K) but works at roughly half the speed\&. 
+.PP
+See the bzip2 documentation for more information about this feature\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed The decompressed string, or an error number if an error occurred\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "bzerrno ( $bz)"
+Returns a bzip2 error number \fBresource $bz \fP The file pointer\&. It must be valid and must point to a file successfully opened by \fBbzopen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the error number as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "bzerror ( $bz)"
+Returns the bzip2 error number and error string in an array \fBresource $bz \fP The file pointer\&. It must be valid and must point to a file successfully opened by \fBbzopen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an associative array, with the error code in the errno entry, and the error message in the errstr entry\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "bzerrstr ( $bz)"
+Returns a bzip2 error string \fBresource $bz \fP The file pointer\&. It must be valid and must point to a file successfully opened by \fBbzopen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string containing the error message\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "bzflush ( $bz)"
+Force a write of all buffered data \fBresource $bz \fP The file pointer\&. It must be valid and must point to a file successfully opened by \fBbzopen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "bzopen ( $filename,  $mode)"
+Opens a bzip2 compressed file \fBstring $filename \fP The name of the file to open, or an existing stream resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+Similar to the \fBfopen\fP function, only 'r' (read) and 'w' (write) are supported\&. Everything else will cause bzopen to return \fBFALSE\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource If the open fails, \fBbzopen\fP returns \fBFALSE\fP, otherwise it returns a pointer to the newly opened file\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "bzread ( $bz,  $length = \fC1024\fP)"
+Binary safe bzip2 file read \fBresource $bz \fP The file pointer\&. It must be valid and must point to a file successfully opened by \fBbzopen\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+If not specified, \fBbzread\fP will read 1024 (uncompressed) bytes at a time\&. \fBA\fP maximum of 8192 uncompressed bytes will be read at a time\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the uncompressed data, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "bzwrite ( $bz,  $data,  $length = \fC\fBnull\fP\fP)"
+Binary safe bzip2 file write \fBresource $bz \fP The file pointer\&. It must be valid and must point to a file successfully opened by \fBbzopen\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+The written data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+If supplied, writing will stop after \fIlength\fP (uncompressed) bytes have been written or the end of \fIdata\fP is reached, whichever comes first\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of bytes written, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

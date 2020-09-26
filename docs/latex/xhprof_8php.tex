@@ -1,0 +1,96 @@
+\hypertarget{xhprof_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/xhprof/xhprof.php File Reference}
+\label{xhprof_8php}\index{vendor/jetbrains/phpstorm-\/stubs/xhprof/xhprof.php@{vendor/jetbrains/phpstorm-\/stubs/xhprof/xhprof.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{xhprof_8php_a9ca2d8c4fb6345c30bcf09103b20466c}{xhprof\+\_\+enable}} ( \$flags=0, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{xhprof_8php_a838caa0cf0504354beb6e6a91bb1b36d}{xhprof\+\_\+disable}} ()
+\item 
+\mbox{\hyperlink{xhprof_8php_a251ef07b7b04c661a230daa4c1b784be}{xhprof\+\_\+sample\+\_\+enable}} ()
+\item 
+\mbox{\hyperlink{xhprof_8php_a6c4a21ec93d5d49030bfd8ed76a1f8c9}{xhprof\+\_\+sample\+\_\+disable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{xhprof_8php_a5ee124144ba597a5f275787039837c5a}{X\+H\+P\+R\+O\+F\+\_\+\+F\+L\+A\+G\+S\+\_\+\+N\+O\+\_\+\+B\+U\+I\+L\+T\+I\+NS}} = 1
+\item 
+const \mbox{\hyperlink{xhprof_8php_af3fd7afdf54682c451375ae2de64bd19}{X\+H\+P\+R\+O\+F\+\_\+\+F\+L\+A\+G\+S\+\_\+\+C\+PU}} = 2
+\item 
+const \mbox{\hyperlink{xhprof_8php_acb9f95d350cec7875b1a23c193444764}{X\+H\+P\+R\+O\+F\+\_\+\+F\+L\+A\+G\+S\+\_\+\+M\+E\+M\+O\+RY}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{xhprof_8php_a838caa0cf0504354beb6e6a91bb1b36d}\label{xhprof_8php_a838caa0cf0504354beb6e6a91bb1b36d}} 
+\index{xhprof.php@{xhprof.php}!xhprof\_disable@{xhprof\_disable}}
+\index{xhprof\_disable@{xhprof\_disable}!xhprof.php@{xhprof.php}}
+\doxysubsubsection{\texorpdfstring{xhprof\_disable()}{xhprof\_disable()}}
+{\footnotesize\ttfamily xhprof\+\_\+disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP $>$= 5.\+2.\+0, P\+E\+CL xhprof $>$= 0.\+9.\+0)~\newline
+ Stops the profiler, and returns xhprof data from the run.
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array an array of xhprof data, from the run. }}\mbox{\Hypertarget{xhprof_8php_a9ca2d8c4fb6345c30bcf09103b20466c}\label{xhprof_8php_a9ca2d8c4fb6345c30bcf09103b20466c}} 
+\index{xhprof.php@{xhprof.php}!xhprof\_enable@{xhprof\_enable}}
+\index{xhprof\_enable@{xhprof\_enable}!xhprof.php@{xhprof.php}}
+\doxysubsubsection{\texorpdfstring{xhprof\_enable()}{xhprof\_enable()}}
+{\footnotesize\ttfamily xhprof\+\_\+enable (\begin{DoxyParamCaption}\item[{}]{\$flags = {\ttfamily 0},  }\item[{array}]{\$options = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+(P\+HP $>$= 5.\+2.\+0, P\+E\+CL xhprof $>$= 0.\+9.\+0)~\newline
+ Start xhprof profiling.
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$flags }}Optional flags to add additional information to the profiling. See the a href=\char`\"{}https\+://secure.\+php.\+net/manual/en/xhprof.\+constants.\+php\char`\"{}$>$X\+Hprof constants for further information about these flags, e.\+g., {\bfseries{X\+H\+P\+R\+O\+F\+\_\+\+F\+L\+A\+G\+S\+\_\+\+M\+E\+M\+O\+RY}} to enable memory profiling.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+An array of optional options, namely, the \textquotesingle{}ignored\+\_\+functions\textquotesingle{} option to pass in functions to be ignored during profiling.
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{xhprof_8php_a6c4a21ec93d5d49030bfd8ed76a1f8c9}\label{xhprof_8php_a6c4a21ec93d5d49030bfd8ed76a1f8c9}} 
+\index{xhprof.php@{xhprof.php}!xhprof\_sample\_disable@{xhprof\_sample\_disable}}
+\index{xhprof\_sample\_disable@{xhprof\_sample\_disable}!xhprof.php@{xhprof.php}}
+\doxysubsubsection{\texorpdfstring{xhprof\_sample\_disable()}{xhprof\_sample\_disable()}}
+{\footnotesize\ttfamily xhprof\+\_\+sample\+\_\+disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP $>$= 5.\+2.\+0, P\+E\+CL xhprof $>$= 0.\+9.\+0)~\newline
+ Stops the sample mode xhprof profiler, and returns xhprof data from the run.
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array an array of xhprof sample data, from the run. }}\mbox{\Hypertarget{xhprof_8php_a251ef07b7b04c661a230daa4c1b784be}\label{xhprof_8php_a251ef07b7b04c661a230daa4c1b784be}} 
+\index{xhprof.php@{xhprof.php}!xhprof\_sample\_enable@{xhprof\_sample\_enable}}
+\index{xhprof\_sample\_enable@{xhprof\_sample\_enable}!xhprof.php@{xhprof.php}}
+\doxysubsubsection{\texorpdfstring{xhprof\_sample\_enable()}{xhprof\_sample\_enable()}}
+{\footnotesize\ttfamily xhprof\+\_\+sample\+\_\+enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP $>$= 5.\+2.\+0, P\+E\+CL xhprof $>$= 0.\+9.\+0)~\newline
+ Starts profiling in sample mode, which is a lighter weight version of \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{xhprof_8php_a9ca2d8c4fb6345c30bcf09103b20466c}{xhprof\+\_\+enable()}}\}. The sampling interval is 0.\+1 seconds, and samples record the full \mbox{\hyperlink{interactive__command__1_8php_ab203aa61d1e8a9ac29ea9b66299b7d46}{function}} call stack. The main use case is when lower overhead is required when doing performance monitoring and diagnostics.
+\end{DoxySeeAlso}
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{null }}
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{xhprof_8php_af3fd7afdf54682c451375ae2de64bd19}\label{xhprof_8php_af3fd7afdf54682c451375ae2de64bd19}} 
+\index{xhprof.php@{xhprof.php}!XHPROF\_FLAGS\_CPU@{XHPROF\_FLAGS\_CPU}}
+\index{XHPROF\_FLAGS\_CPU@{XHPROF\_FLAGS\_CPU}!xhprof.php@{xhprof.php}}
+\doxysubsubsection{\texorpdfstring{XHPROF\_FLAGS\_CPU}{XHPROF\_FLAGS\_CPU}}
+{\footnotesize\ttfamily const X\+H\+P\+R\+O\+F\+\_\+\+F\+L\+A\+G\+S\+\_\+\+C\+PU = 2}
+
+@type int \mbox{\hyperlink{}{https\+://php.\+net/manual/en/xhprof.\+constants.\+php\#constant.\+xhprof-\/flags-\/cpu}}\mbox{\Hypertarget{xhprof_8php_acb9f95d350cec7875b1a23c193444764}\label{xhprof_8php_acb9f95d350cec7875b1a23c193444764}} 
+\index{xhprof.php@{xhprof.php}!XHPROF\_FLAGS\_MEMORY@{XHPROF\_FLAGS\_MEMORY}}
+\index{XHPROF\_FLAGS\_MEMORY@{XHPROF\_FLAGS\_MEMORY}!xhprof.php@{xhprof.php}}
+\doxysubsubsection{\texorpdfstring{XHPROF\_FLAGS\_MEMORY}{XHPROF\_FLAGS\_MEMORY}}
+{\footnotesize\ttfamily const X\+H\+P\+R\+O\+F\+\_\+\+F\+L\+A\+G\+S\+\_\+\+M\+E\+M\+O\+RY = 4}
+
+@type int \mbox{\hyperlink{}{https\+://php.\+net/manual/en/xhprof.\+constants.\+php\#\#constant.\+xhprof-\/flags-\/memory}}\mbox{\Hypertarget{xhprof_8php_a5ee124144ba597a5f275787039837c5a}\label{xhprof_8php_a5ee124144ba597a5f275787039837c5a}} 
+\index{xhprof.php@{xhprof.php}!XHPROF\_FLAGS\_NO\_BUILTINS@{XHPROF\_FLAGS\_NO\_BUILTINS}}
+\index{XHPROF\_FLAGS\_NO\_BUILTINS@{XHPROF\_FLAGS\_NO\_BUILTINS}!xhprof.php@{xhprof.php}}
+\doxysubsubsection{\texorpdfstring{XHPROF\_FLAGS\_NO\_BUILTINS}{XHPROF\_FLAGS\_NO\_BUILTINS}}
+{\footnotesize\ttfamily const X\+H\+P\+R\+O\+F\+\_\+\+F\+L\+A\+G\+S\+\_\+\+N\+O\+\_\+\+B\+U\+I\+L\+T\+I\+NS = 1}
+
+@type int \mbox{\hyperlink{}{https\+://php.\+net/manual/en/xhprof.\+constants.\+php\#constant.\+xhprof-\/flags-\/no-\/builtins}}

@@ -1,0 +1,1561 @@
+\hypertarget{pcntl_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/pcntl/pcntl.php File Reference}
+\label{pcntl_8php}\index{vendor/jetbrains/phpstorm-\/stubs/pcntl/pcntl.php@{vendor/jetbrains/phpstorm-\/stubs/pcntl/pcntl.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{pcntl_8php_af89b1f097e251602508c663c93a2dbc2}{pcntl\+\_\+fork}} ()
+\item 
+\mbox{\hyperlink{pcntl_8php_a6c6b7d9419d1a876c48397a3945cf62b}{pcntl\+\_\+waitpid}} (\$pid, \&\$status, \$options=0, array \&\$rusage)
+\item 
+\mbox{\hyperlink{pcntl_8php_a3abfcefdc224b6f46ab16ddd081c8201}{pcntl\+\_\+wait}} (\&\$status, \$options=0, \&\$rusage)
+\item 
+\mbox{\hyperlink{pcntl_8php_a83b9e4f09eeb00647598c82cde28b963}{pcntl\+\_\+signal}} (\$signo, \$handler, \$restart\+\_\+syscalls=\mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}})
+\item 
+\mbox{\hyperlink{pcntl_8php_aa8af01f5cdb15e348b9579a2edea966e}{pcntl\+\_\+signal\+\_\+dispatch}} ()
+\item 
+\mbox{\hyperlink{pcntl_8php_a77fc10f8e820f9ee2ac1dba7d1245873}{pcntl\+\_\+wifexited}} (\$status)
+\item 
+\mbox{\hyperlink{pcntl_8php_a87910467b209a169e5c396172cef2731}{pcntl\+\_\+wifstopped}} (\$status)
+\item 
+\mbox{\hyperlink{pcntl_8php_a1e4eb667474a257d9b72352cda8dc52f}{pcntl\+\_\+wifsignaled}} (\$status)
+\item 
+\mbox{\hyperlink{pcntl_8php_ab80ce3bc749e2822aa17bedefb48872d}{pcntl\+\_\+wexitstatus}} (\$status)
+\item 
+\mbox{\hyperlink{pcntl_8php_aa4d3392b38e9304c2d0631b33c88c52f}{pcntl\+\_\+wifcontinued}} ( \$status)
+\item 
+\mbox{\hyperlink{pcntl_8php_ace1737110f8348e4ea87ddd772ae3b28}{pcntl\+\_\+wtermsig}} (\$status)
+\item 
+\mbox{\hyperlink{pcntl_8php_afccbba7ff4b6cbe3eeb3214945a10801}{pcntl\+\_\+wstopsig}} (\$status)
+\item 
+\mbox{\hyperlink{pcntl_8php_a044dd5490ab574ee62f11ae009645542}{pcntl\+\_\+exec}} (\$path, array \$args=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$envs=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{pcntl_8php_aa48fdbaa9465603d3a340bdc55e2730f}{pcntl\+\_\+alarm}} (\$seconds)
+\item 
+\mbox{\hyperlink{pcntl_8php_a54cd2420ceddafab0eed13e6235bb9b9}{pcntl\+\_\+get\+\_\+last\+\_\+error}} ()
+\item 
+\mbox{\hyperlink{pcntl_8php_a7ce32bb320a6e154ff44c10241275b87}{pcntl\+\_\+errno}} ()
+\item 
+\mbox{\hyperlink{pcntl_8php_a0ee896bc0086fa66d3bb2069360ac74f}{pcntl\+\_\+strerror}} (\$errno)
+\item 
+\mbox{\hyperlink{pcntl_8php_a22c7e6baeb76fc928266d573637cc236}{pcntl\+\_\+getpriority}} (\$pid, \$process\+\_\+identifier=\mbox{\hyperlink{pcntl_8php_aef6be5755bf0015decc6ae4bb9cf1ad1}{P\+R\+I\+O\+\_\+\+P\+R\+O\+C\+E\+SS}})
+\item 
+\mbox{\hyperlink{pcntl_8php_a5f24581cd7979808abb725fd7127f73d}{pcntl\+\_\+setpriority}} (\$priority, \$pid, \$process\+\_\+identifier=\mbox{\hyperlink{pcntl_8php_aef6be5755bf0015decc6ae4bb9cf1ad1}{P\+R\+I\+O\+\_\+\+P\+R\+O\+C\+E\+SS}})
+\item 
+\mbox{\hyperlink{pcntl_8php_a36b1ba6ba398a48298e4f5688ee8ab17}{pcntl\+\_\+sigprocmask}} (\$how, array \$set, array \&\$oldset=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{pcntl_8php_a8cc95cd31b86fbb615525269cbc9d8dc}{pcntl\+\_\+sigwaitinfo}} (array \$set, array \&\$siginfo=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{pcntl_8php_a54d08ac631987f743518d1d3d2c603bd}{pcntl\+\_\+sigtimedwait}} (array \$set, array \&\$siginfo=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$seconds=0, \$nanoseconds=0)
+\item 
+\mbox{\hyperlink{pcntl_8php_a621730271311b7103a15c00f1ad752bb}{pcntl\+\_\+async\+\_\+signals}} (\$on=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{pcntl_8php_a73cbd1609e1406037f5d8a441700dcf3}{pcntl\+\_\+signal\+\_\+get\+\_\+handler}} (\$signo)
+\item 
+\mbox{\hyperlink{pcntl_8php_ab7883235e517dcfe0ac870baea62dd1b}{pcntl\+\_\+unshare}} (\$flags)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{pcntl_8php_a59708065114efdf8854cfbb1358f7c0f}{W\+N\+O\+H\+A\+NG}} 1
+\item 
+const \mbox{\hyperlink{pcntl_8php_aae95661f82e47f4ccc22efeb23115323}{W\+U\+N\+T\+R\+A\+C\+ED}} 2
+\item 
+const \mbox{\hyperlink{pcntl_8php_af7c8ece98bdc0380416e6c2ba10ab4aa}{W\+C\+O\+N\+T\+I\+N\+U\+ED}} 8
+\item 
+const \mbox{\hyperlink{pcntl_8php_a3f43cf5c7644485d39624480c7d00f0d}{S\+I\+G\+\_\+\+I\+GN}} 1
+\item 
+const \mbox{\hyperlink{pcntl_8php_a631d5f13df9b4bf42916fa24122780f1}{S\+I\+G\+\_\+\+D\+FL}} 0
+\item 
+const \mbox{\hyperlink{pcntl_8php_a1e34fa921f9fd28d65ca68631f1675f7}{S\+I\+G\+\_\+\+E\+RR}} -\/1
+\item 
+const \mbox{\hyperlink{pcntl_8php_a6c9d0ab386f59dedab75e0f6547aa7df}{S\+I\+G\+H\+UP}} 1
+\item 
+const \mbox{\hyperlink{pcntl_8php_a0dee92e3bcb84ab4cc22357eaa20ed48}{S\+I\+G\+I\+NT}} 2
+\item 
+const \mbox{\hyperlink{pcntl_8php_a4a4f8ca7e856f2a4df918bbdf4b4c340}{S\+I\+G\+Q\+U\+IT}} 3
+\item 
+const \mbox{\hyperlink{pcntl_8php_a5fc3453fbd19c0b958d0009e46aa19c1}{S\+I\+G\+I\+LL}} 4
+\item 
+const \mbox{\hyperlink{pcntl_8php_a39f003634b0ff4fefdbbbd0e80c84f1f}{S\+I\+G\+T\+R\+AP}} 5
+\item 
+const \mbox{\hyperlink{pcntl_8php_a4b3476b97aad475035fbeb1096cf6ddf}{S\+I\+G\+A\+B\+RT}} 6
+\item 
+const \mbox{\hyperlink{pcntl_8php_a525af1e7236e340a7eebb6da8b9556fc}{S\+I\+G\+I\+OT}} 6
+\item 
+const \mbox{\hyperlink{pcntl_8php_ab5bf96bb27dc5b96cbf6823ad9ec1881}{S\+I\+G\+B\+US}} 7
+\item 
+const \mbox{\hyperlink{pcntl_8php_a7a7e38c0a1abd4c268f694a5e39c0900}{S\+I\+G\+F\+PE}} 8
+\item 
+const \mbox{\hyperlink{pcntl_8php_a0487c976fc216c404ae65e7520dfe66b}{S\+I\+G\+K\+I\+LL}} 9
+\item 
+const \mbox{\hyperlink{pcntl_8php_a5524f66ff99c316e0e43af5745627e1f}{S\+I\+G\+U\+S\+R1}} 10
+\item 
+const \mbox{\hyperlink{pcntl_8php_a5ce4dfce0d342096d707cf391d932136}{S\+I\+G\+S\+E\+GV}} 11
+\item 
+const \mbox{\hyperlink{pcntl_8php_aca8934a49af695b471caf71e1d2a218d}{S\+I\+G\+U\+S\+R2}} 12
+\item 
+const \mbox{\hyperlink{pcntl_8php_a6b7d31697903ac6b994d5f5d0d5ae829}{S\+I\+G\+P\+I\+PE}} 13
+\item 
+const \mbox{\hyperlink{pcntl_8php_ab3157c99860dfaa05c7e3c0e832ca3ba}{S\+I\+G\+A\+L\+RM}} 14
+\item 
+const \mbox{\hyperlink{pcntl_8php_a38dc7d5824c8c0a2f96186b5f71be007}{S\+I\+G\+T\+E\+RM}} 15
+\item 
+const \mbox{\hyperlink{pcntl_8php_afc1600b0f3509cd6d24ddf76f5fce441}{S\+I\+G\+S\+T\+K\+F\+LT}} 16
+\item 
+const \mbox{\hyperlink{pcntl_8php_ace5430b74ac2602d73db9d59295df0d0}{S\+I\+G\+C\+LD}} 17
+\item 
+const \mbox{\hyperlink{pcntl_8php_a5f4733c66da47179da4e0c727240d670}{S\+I\+G\+C\+H\+LD}} 17
+\item 
+const \mbox{\hyperlink{pcntl_8php_a50b0caa91e78ba3f2d508ba2e3f71c2e}{S\+I\+G\+C\+O\+NT}} 18
+\item 
+const \mbox{\hyperlink{pcntl_8php_a920ccd8d6458ea9649a45b812b980569}{S\+I\+G\+S\+T\+OP}} 19
+\item 
+const \mbox{\hyperlink{pcntl_8php_a85f86a13eede870baac23b07bad639d5}{S\+I\+G\+T\+S\+TP}} 20
+\item 
+const \mbox{\hyperlink{pcntl_8php_ab4c27ce481c881f59418e60e04ee8adb}{S\+I\+G\+T\+T\+IN}} 21
+\item 
+const \mbox{\hyperlink{pcntl_8php_a772a170b387a48aafea2387a8facf994}{S\+I\+G\+T\+T\+OU}} 22
+\item 
+const \mbox{\hyperlink{pcntl_8php_aa304eaf501e7d0dc45bec6eab3cfb874}{S\+I\+G\+U\+RG}} 23
+\item 
+const \mbox{\hyperlink{pcntl_8php_a2009f907338f85e1eeb8bfa36974e1d1}{S\+I\+G\+X\+C\+PU}} 24
+\item 
+const \mbox{\hyperlink{pcntl_8php_ad13dbbb9986151156ef76a9626cc6a43}{S\+I\+G\+X\+F\+SZ}} 25
+\item 
+const \mbox{\hyperlink{pcntl_8php_a209f6caa8aea6f2a11faf937401488b3}{S\+I\+G\+V\+T\+A\+L\+RM}} 26
+\item 
+const \mbox{\hyperlink{pcntl_8php_a903bb01a1527d84503215e101174c437}{S\+I\+G\+P\+R\+OF}} 27
+\item 
+const \mbox{\hyperlink{pcntl_8php_ac39e21d8dfbacc9454e361e36e371584}{S\+I\+G\+W\+I\+N\+CH}} 28
+\item 
+const \mbox{\hyperlink{pcntl_8php_a039504324ea518d8a57d5cebd5d951ff}{S\+I\+G\+P\+O\+LL}} 29
+\item 
+const \mbox{\hyperlink{pcntl_8php_acd2d285f0a19613f81195b0ad22c9f11}{S\+I\+G\+IO}} 29
+\item 
+const \mbox{\hyperlink{pcntl_8php_a0d1fb1ccf7d1e6f2e79069fe8387f9c2}{S\+I\+G\+P\+WR}} 30
+\item 
+const \mbox{\hyperlink{pcntl_8php_a6e307d02704fdae1e684db9d85a0d1bb}{S\+I\+G\+S\+YS}} 31
+\item 
+const \mbox{\hyperlink{pcntl_8php_a0e14c7f9a015bccf296f9a1cee8ea604}{S\+I\+G\+B\+A\+BY}} 31
+\item 
+const \mbox{\hyperlink{pcntl_8php_a0805977339d5425421ec943f93bd16d6}{P\+R\+I\+O\+\_\+\+P\+G\+RP}} 1
+\item 
+const \mbox{\hyperlink{pcntl_8php_a2d40c94b3c8c2de6bea0c228644bf8d6}{P\+R\+I\+O\+\_\+\+U\+S\+ER}} 2
+\item 
+const \mbox{\hyperlink{pcntl_8php_aef6be5755bf0015decc6ae4bb9cf1ad1}{P\+R\+I\+O\+\_\+\+P\+R\+O\+C\+E\+SS}} 0
+\item 
+const \mbox{\hyperlink{pcntl_8php_a1111253a058638fc51cee4836b2b820f}{S\+I\+G\+\_\+\+B\+L\+O\+CK}} 0
+\item 
+const \mbox{\hyperlink{pcntl_8php_a3d99d1fa76a3704cd8919592e0c956d5}{S\+I\+G\+\_\+\+U\+N\+B\+L\+O\+CK}} 1
+\item 
+const \mbox{\hyperlink{pcntl_8php_a95889c82892f9bcd91bfcc0fd40c9d7f}{S\+I\+G\+\_\+\+S\+E\+T\+M\+A\+SK}} 2
+\item 
+const \mbox{\hyperlink{pcntl_8php_a93c68832df5602ba17edab0a724b1175}{S\+I\+G\+R\+T\+M\+IN}} 34
+\item 
+const \mbox{\hyperlink{pcntl_8php_a28202b6347250bd7212118a540180053}{S\+I\+G\+R\+T\+M\+AX}} 64
+\item 
+const \mbox{\hyperlink{pcntl_8php_a2111a78f143af347ed8c82bbee4802ff}{S\+I\+\_\+\+U\+S\+ER}} 0
+\item 
+const \mbox{\hyperlink{pcntl_8php_aca4b11f39d5998c67581eebfff71886e}{S\+I\+\_\+\+K\+E\+R\+N\+EL}} 128
+\item 
+const \mbox{\hyperlink{pcntl_8php_a578745f77b649c9ca674faf557ebc256}{S\+I\+\_\+\+Q\+U\+E\+UE}} -\/1
+\item 
+const \mbox{\hyperlink{pcntl_8php_abaef954835220cc31fdb524eb2c4e6b4}{S\+I\+\_\+\+T\+I\+M\+ER}} -\/2
+\item 
+const \mbox{\hyperlink{pcntl_8php_aa73e168e469c1f4819b960fc43c95ed8}{S\+I\+\_\+\+M\+E\+S\+GQ}} -\/3
+\item 
+const \mbox{\hyperlink{pcntl_8php_af5ad06a2b6f3bf3f05bf225f6a9a703b}{S\+I\+\_\+\+A\+S\+Y\+N\+C\+IO}} -\/4
+\item 
+const \mbox{\hyperlink{pcntl_8php_a5ee6b179fb3ee464f3680f16fe7d503b}{S\+I\+\_\+\+S\+I\+G\+IO}} -\/5
+\item 
+const \mbox{\hyperlink{pcntl_8php_ace26d108a66660a3490b8be2af02ca2e}{S\+I\+\_\+\+T\+K\+I\+LL}} -\/6
+\item 
+const \mbox{\hyperlink{pcntl_8php_aafaa933e759a6b1e8e32d300622b88a8}{C\+L\+D\+\_\+\+E\+X\+I\+T\+ED}} 1
+\item 
+const \mbox{\hyperlink{pcntl_8php_aa958563d6035d9ad174acdf2822bfd14}{C\+L\+D\+\_\+\+K\+I\+L\+L\+ED}} 2
+\item 
+const \mbox{\hyperlink{pcntl_8php_a98626fdf5f7eec857f5db68239aa6b76}{C\+L\+D\+\_\+\+D\+U\+M\+P\+ED}} 3
+\item 
+const \mbox{\hyperlink{pcntl_8php_a8ce051ba657f78ee933cf3465a00127c}{C\+L\+D\+\_\+\+T\+R\+A\+P\+P\+ED}} 4
+\item 
+const \mbox{\hyperlink{pcntl_8php_acc1845b429a67309e149a8ce25d16dfb}{C\+L\+D\+\_\+\+S\+T\+O\+P\+P\+ED}} 5
+\item 
+const \mbox{\hyperlink{pcntl_8php_af5d56701587150c79188f2bbeaa52734}{C\+L\+D\+\_\+\+C\+O\+N\+T\+I\+N\+U\+ED}} 6
+\item 
+const \mbox{\hyperlink{pcntl_8php_ab87110c16552b9769bb9049b25238baa}{T\+R\+A\+P\+\_\+\+B\+R\+K\+PT}} 1
+\item 
+const \mbox{\hyperlink{pcntl_8php_a1fe718a6d6af98afe3c9555db2874356}{T\+R\+A\+P\+\_\+\+T\+R\+A\+CE}} 2
+\item 
+const \mbox{\hyperlink{pcntl_8php_a7e724939a91faab090e2cce1a50abf76}{P\+O\+L\+L\+\_\+\+IN}} 1
+\item 
+const \mbox{\hyperlink{pcntl_8php_abfd718e4a055603f22007088559515e4}{P\+O\+L\+L\+\_\+\+O\+UT}} 2
+\item 
+const \mbox{\hyperlink{pcntl_8php_aef7325a2c44e448c35de711094ac94d9}{P\+O\+L\+L\+\_\+\+M\+SG}} 3
+\item 
+const \mbox{\hyperlink{pcntl_8php_af33871b7ad1eb7d79cfa35da6dc48f86}{P\+O\+L\+L\+\_\+\+E\+RR}} 4
+\item 
+const \mbox{\hyperlink{pcntl_8php_a295c36d233fa7651182264a42cda5690}{P\+O\+L\+L\+\_\+\+P\+RI}} 5
+\item 
+const \mbox{\hyperlink{pcntl_8php_af569fcca59b4d6319a9665900545f281}{P\+O\+L\+L\+\_\+\+H\+UP}} 6
+\item 
+const \mbox{\hyperlink{pcntl_8php_a94bc822a054434e8dae523d4a9631978}{I\+L\+L\+\_\+\+I\+L\+L\+O\+PC}} 1
+\item 
+const \mbox{\hyperlink{pcntl_8php_ad13c751ba8f145b64aac6df040279daf}{I\+L\+L\+\_\+\+I\+L\+L\+O\+PN}} 2
+\item 
+const \mbox{\hyperlink{pcntl_8php_aefdb2affdd5b64e5d479427314094113}{I\+L\+L\+\_\+\+I\+L\+L\+A\+DR}} 3
+\item 
+const \mbox{\hyperlink{pcntl_8php_accd80ff83d1d289942671d68b93b0c13}{I\+L\+L\+\_\+\+I\+L\+L\+T\+RP}} 4
+\item 
+const \mbox{\hyperlink{pcntl_8php_a59d1d009d648f71f6e2138821e6dec9c}{I\+L\+L\+\_\+\+P\+R\+V\+O\+PC}} 5
+\item 
+const \mbox{\hyperlink{pcntl_8php_af876fe60a5ea49d705ae5926f214adcf}{I\+L\+L\+\_\+\+P\+R\+V\+R\+EG}} 6
+\item 
+const \mbox{\hyperlink{pcntl_8php_a5c465fbb49073224fc5de664e5668a33}{I\+L\+L\+\_\+\+C\+O\+P\+R\+OC}} 7
+\item 
+const \mbox{\hyperlink{pcntl_8php_a6e44513bdf67af0d524df28288a3ba00}{I\+L\+L\+\_\+\+B\+A\+D\+S\+TK}} 8
+\item 
+const \mbox{\hyperlink{pcntl_8php_a697c309ba9d8050714ae1c281a1c0af9}{F\+P\+E\+\_\+\+I\+N\+T\+D\+IV}} 1
+\item 
+const \mbox{\hyperlink{pcntl_8php_ad77c66cdfb6ea8289816646a618dae35}{F\+P\+E\+\_\+\+I\+N\+T\+O\+VF}} 2
+\item 
+const \mbox{\hyperlink{pcntl_8php_ac10828ad43e3d320e90d5808e938a6f0}{F\+P\+E\+\_\+\+F\+L\+T\+D\+IV}} 3
+\item 
+const \mbox{\hyperlink{pcntl_8php_a9d5670dc7e68e6b563a9ac7bddce9767}{F\+P\+E\+\_\+\+F\+L\+T\+O\+VF}} 4
+\item 
+const \mbox{\hyperlink{pcntl_8php_a125387fed373802e0e6ced2e675eb750}{F\+P\+E\+\_\+\+F\+L\+T\+U\+ND}} 7
+\item 
+const \mbox{\hyperlink{pcntl_8php_a53272b4e24b491fbbcc5b1299ee30df8}{F\+P\+E\+\_\+\+F\+L\+T\+R\+ES}} 6
+\item 
+const \mbox{\hyperlink{pcntl_8php_aaf6180a11d7046f4fe4205e35af0fa8e}{F\+P\+E\+\_\+\+F\+L\+T\+I\+NV}} 7
+\item 
+const \mbox{\hyperlink{pcntl_8php_a1f288747109403911bab2dccb9c113c7}{F\+P\+E\+\_\+\+F\+L\+T\+S\+UB}} 8
+\item 
+const \mbox{\hyperlink{pcntl_8php_a6832e1ab692f5b53892d136e09bf68fc}{S\+E\+G\+V\+\_\+\+M\+A\+P\+E\+RR}} 1
+\item 
+const \mbox{\hyperlink{pcntl_8php_a0bb56fceeb4b21d7288ae46e636140e1}{S\+E\+G\+V\+\_\+\+A\+C\+C\+E\+RR}} 2
+\item 
+const \mbox{\hyperlink{pcntl_8php_ac2ce6dae554aee261f1f2968e3c649de}{B\+U\+S\+\_\+\+A\+D\+R\+A\+LN}} 1
+\item 
+const \mbox{\hyperlink{pcntl_8php_a53c755239ecf68735f465ff88be4e5fd}{B\+U\+S\+\_\+\+A\+D\+R\+E\+RR}} 2
+\item 
+const \mbox{\hyperlink{pcntl_8php_a184a650c118c9499f136e987669f1ab0}{B\+U\+S\+\_\+\+O\+B\+J\+E\+RR}} 3
+\item 
+const \mbox{\hyperlink{pcntl_8php_a055e29cf4be7f2bb654967a7a7bda882}{P\+C\+N\+T\+L\+\_\+\+E\+I\+N\+TR}} 4
+\item 
+const \mbox{\hyperlink{pcntl_8php_ac776d6c86f7641fe6e78b36daeb0080d}{P\+C\+N\+T\+L\+\_\+\+E\+C\+H\+I\+LD}} 10
+\item 
+const \mbox{\hyperlink{pcntl_8php_a1d970f7d179e1af19d97f98b47a13a91}{P\+C\+N\+T\+L\+\_\+\+E\+I\+N\+V\+AL}} 22
+\item 
+const \mbox{\hyperlink{pcntl_8php_ac5dc5239792b39eab571d22443b79cb1}{P\+C\+N\+T\+L\+\_\+\+E\+A\+G\+A\+IN}} 11
+\item 
+const \mbox{\hyperlink{pcntl_8php_ad6bf8d69e7c75da7fed13b218c5761c1}{P\+C\+N\+T\+L\+\_\+\+E\+S\+R\+CH}} 3
+\item 
+const \mbox{\hyperlink{pcntl_8php_a541281a11107e1fd2997ba5d731ff5ac}{P\+C\+N\+T\+L\+\_\+\+E\+A\+C\+C\+ES}} 13
+\item 
+const \mbox{\hyperlink{pcntl_8php_ac8cc56da7c807f5fc8c11ac8546586fc}{P\+C\+N\+T\+L\+\_\+\+E\+P\+E\+RM}} 1
+\item 
+const \mbox{\hyperlink{pcntl_8php_ac42dc9b53f002726434ebfb54d67ed4c}{P\+C\+N\+T\+L\+\_\+\+E\+N\+O\+M\+EM}} 12
+\item 
+const \mbox{\hyperlink{pcntl_8php_a47a921248b4d43cf0494f9d2cdb21a50}{P\+C\+N\+T\+L\+\_\+\+E2\+B\+IG}} 7
+\item 
+const \mbox{\hyperlink{pcntl_8php_ac75949f0a3099b3e74882b536a2abcad}{P\+C\+N\+T\+L\+\_\+\+E\+F\+A\+U\+LT}} 14
+\item 
+const \mbox{\hyperlink{pcntl_8php_a2c598c056a40d3acdbfbe154e6e43d20}{P\+C\+N\+T\+L\+\_\+\+E\+IO}} 5
+\item 
+const \mbox{\hyperlink{pcntl_8php_aaf103352163cdcba77405280768ace3d}{P\+C\+N\+T\+L\+\_\+\+E\+I\+S\+D\+IR}} 21
+\item 
+const \mbox{\hyperlink{pcntl_8php_a98c6e7b3d941c9c7dde5ef09884c9e05}{P\+C\+N\+T\+L\+\_\+\+E\+L\+I\+B\+B\+AD}} 80
+\item 
+const \mbox{\hyperlink{pcntl_8php_ac9dcace2473f124cf6a8a92045237a0e}{P\+C\+N\+T\+L\+\_\+\+E\+L\+O\+OP}} 40
+\item 
+const \mbox{\hyperlink{pcntl_8php_a500a6dda73f86287ab59c7fa0cdd8441}{P\+C\+N\+T\+L\+\_\+\+E\+M\+F\+I\+LE}} 24
+\item 
+const \mbox{\hyperlink{pcntl_8php_af7387966bf292917ae59318293189985}{P\+C\+N\+T\+L\+\_\+\+E\+N\+A\+M\+E\+T\+O\+O\+L\+O\+NG}} 36
+\item 
+const \mbox{\hyperlink{pcntl_8php_a6f000122837586e83075804834ed6777}{P\+C\+N\+T\+L\+\_\+\+E\+N\+F\+I\+LE}} 23
+\item 
+const \mbox{\hyperlink{pcntl_8php_abf85ad9c182e19a7be41f4853e85043d}{P\+C\+N\+T\+L\+\_\+\+E\+N\+O\+E\+NT}} 2
+\item 
+const \mbox{\hyperlink{pcntl_8php_aab5589f47d494ab25d091eccc6abfe5f}{P\+C\+N\+T\+L\+\_\+\+E\+N\+O\+E\+X\+EC}} 8
+\item 
+const \mbox{\hyperlink{pcntl_8php_a30a2e769588e26b8df3ad84d186044dd}{P\+C\+N\+T\+L\+\_\+\+E\+N\+O\+T\+D\+IR}} 20
+\item 
+const \mbox{\hyperlink{pcntl_8php_ac5b4bc499a16247a75dca7a43a34cf82}{P\+C\+N\+T\+L\+\_\+\+E\+T\+X\+T\+B\+SY}} 26
+\item 
+const \mbox{\hyperlink{pcntl_8php_a125a2863430ad76ad3a6cc7bf98dfcd0}{P\+C\+N\+T\+L\+\_\+\+E\+N\+O\+S\+PC}} 28
+\item 
+const \mbox{\hyperlink{pcntl_8php_a10689bfbf8361b1971afb49d75184eaa}{P\+C\+N\+T\+L\+\_\+\+E\+U\+S\+E\+RS}} 87
+\item 
+const \mbox{\hyperlink{pcntl_8php_a8f83215dffdc5c9c81c62818cf51f8ad}{C\+L\+O\+N\+E\+\_\+\+N\+E\+W\+NS}} 131072
+\item 
+const \mbox{\hyperlink{pcntl_8php_a41462b585629a703ebc1b4735f67bb54}{C\+L\+O\+N\+E\+\_\+\+N\+E\+W\+I\+PC}} 134217728
+\item 
+const \mbox{\hyperlink{pcntl_8php_aff5d692c1c650c81f23a03eeeed86fe2}{C\+L\+O\+N\+E\+\_\+\+N\+E\+W\+U\+TS}} 67108864
+\item 
+const \mbox{\hyperlink{pcntl_8php_a6d2b1c470c168a824b5eef50894a6384}{C\+L\+O\+N\+E\+\_\+\+N\+E\+W\+N\+ET}} 1073741824
+\item 
+const \mbox{\hyperlink{pcntl_8php_a6cff23192c228c91033554f984d502cb}{C\+L\+O\+N\+E\+\_\+\+N\+E\+W\+P\+ID}} 536870912
+\item 
+const \mbox{\hyperlink{pcntl_8php_ac6145b91ba48718c785012c8cdcdcfb2}{C\+L\+O\+N\+E\+\_\+\+N\+E\+W\+U\+S\+ER}} 268435456
+\item 
+const \mbox{\hyperlink{pcntl_8php_a6738593e4afc50ce36b3257fece8f44d}{C\+L\+O\+N\+E\+\_\+\+N\+E\+W\+C\+G\+R\+O\+UP}} 33554432
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{pcntl_8php_aa48fdbaa9465603d3a340bdc55e2730f}\label{pcntl_8php_aa48fdbaa9465603d3a340bdc55e2730f}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_alarm@{pcntl\_alarm}}
+\index{pcntl\_alarm@{pcntl\_alarm}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_alarm()}{pcntl\_alarm()}}
+{\footnotesize\ttfamily pcntl\+\_\+alarm (\begin{DoxyParamCaption}\item[{}]{\$seconds }\end{DoxyParamCaption})}
+
+Set an alarm clock for delivery of a signal \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$seconds }} The number of seconds to wait. If {\itshape seconds} is zero, no new alarm is created. 
+
+\begin{DoxyReturn}{Returns}
+int the time in seconds that any previously scheduled alarm had remaining before it was to be delivered, or 0 if there was no previously scheduled alarm. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a621730271311b7103a15c00f1ad752bb}\label{pcntl_8php_a621730271311b7103a15c00f1ad752bb}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_async\_signals@{pcntl\_async\_signals}}
+\index{pcntl\_async\_signals@{pcntl\_async\_signals}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_async\_signals()}{pcntl\_async\_signals()}}
+{\footnotesize\ttfamily pcntl\+\_\+async\+\_\+signals (\begin{DoxyParamCaption}\item[{}]{\$on = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Enable/disable asynchronous signal handling or return the old setting.~\newline
+ If the {\bfseries{on}} parameter is omitted, it returns whether asynchronous signal handling is enabled. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{bool \$on \mbox{[}optional\mbox{]} }} Whether asynchronous signal handling should be enabled. 
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+1 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a7ce32bb320a6e154ff44c10241275b87}\label{pcntl_8php_a7ce32bb320a6e154ff44c10241275b87}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_errno@{pcntl\_errno}}
+\index{pcntl\_errno@{pcntl\_errno}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_errno()}{pcntl\_errno()}}
+{\footnotesize\ttfamily pcntl\+\_\+errno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Alias of {\bfseries{pcntl\+\_\+strerror}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3.\+4 }}\mbox{\Hypertarget{pcntl_8php_a044dd5490ab574ee62f11ae009645542}\label{pcntl_8php_a044dd5490ab574ee62f11ae009645542}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_exec@{pcntl\_exec}}
+\index{pcntl\_exec@{pcntl\_exec}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_exec()}{pcntl\_exec()}}
+{\footnotesize\ttfamily pcntl\+\_\+exec (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{array}]{\$args = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$envs = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Executes specified program in current process space \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$path }} {\itshape path} must be the path to a binary executable or a script with a valid path pointing to an executable in the shebang ( \#!/usr/local/bin/perl for example) as the first line. See your system\textquotesingle{}s man execve(2) page for additional information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$args} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+{\itshape args} is an array of argument strings passed to the program. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$envs} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+{\itshape envs} is an array of strings which are passed as environment to the program. The array is in the format of name =$>$ value, the key being the name of the environmental variable and the value being the value of that variable. 
+
+\begin{DoxyReturn}{Returns}
+void {\bfseries{F\+A\+L\+SE}} on error and does not return on success. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_af89b1f097e251602508c663c93a2dbc2}\label{pcntl_8php_af89b1f097e251602508c663c93a2dbc2}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_fork@{pcntl\_fork}}
+\index{pcntl\_fork@{pcntl\_fork}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_fork()}{pcntl\_fork()}}
+{\footnotesize\ttfamily pcntl\+\_\+fork (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Forks the currently running process \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int On success, the P\+ID of the child process is returned in the parent\textquotesingle{}s thread of execution, and a 0 is returned in the child\textquotesingle{}s thread of execution. On failure, a -\/1 will be returned in the parent\textquotesingle{}s context, no child process will be created, and a P\+HP error is raised.  4.\+1  5.\+0 }}\mbox{\Hypertarget{pcntl_8php_a54cd2420ceddafab0eed13e6235bb9b9}\label{pcntl_8php_a54cd2420ceddafab0eed13e6235bb9b9}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_get\_last\_error@{pcntl\_get\_last\_error}}
+\index{pcntl\_get\_last\_error@{pcntl\_get\_last\_error}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_get\_last\_error()}{pcntl\_get\_last\_error()}}
+{\footnotesize\ttfamily pcntl\+\_\+get\+\_\+last\+\_\+error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the error number set by the last pcntl function which failed \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int error code.  5.\+3.\+4 }}\mbox{\Hypertarget{pcntl_8php_a22c7e6baeb76fc928266d573637cc236}\label{pcntl_8php_a22c7e6baeb76fc928266d573637cc236}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_getpriority@{pcntl\_getpriority}}
+\index{pcntl\_getpriority@{pcntl\_getpriority}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_getpriority()}{pcntl\_getpriority()}}
+{\footnotesize\ttfamily pcntl\+\_\+getpriority (\begin{DoxyParamCaption}\item[{}]{\$pid,  }\item[{}]{\$process\+\_\+identifier = {\ttfamily \mbox{\hyperlink{pcntl_8php_aef6be5755bf0015decc6ae4bb9cf1ad1}{P\+R\+I\+O\+\_\+\+P\+R\+O\+C\+E\+SS}}} }\end{DoxyParamCaption})}
+
+Get the priority of any process \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$pid \mbox{[}optional\mbox{]} }} If not specified, the pid of the current process (\mbox{\hyperlink{standard__2_8php_ae92eb3d0776d8969e9d7f85847895693}{getmypid()}}) is used. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$process\+\_\+identifier} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+One of {\bfseries{P\+R\+I\+O\+\_\+\+P\+G\+RP}}, {\bfseries{P\+R\+I\+O\+\_\+\+U\+S\+ER}} or {\bfseries{P\+R\+I\+O\+\_\+\+P\+R\+O\+C\+E\+SS}}. 
+
+\begin{DoxyReturn}{Returns}
+int {\bfseries{pcntl\+\_\+getpriority}} returns the priority of the process or {\bfseries{F\+A\+L\+SE}} on error. \mbox{\hyperlink{class_a}{A}} lower numerical value causes more favorable scheduling. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a5f24581cd7979808abb725fd7127f73d}\label{pcntl_8php_a5f24581cd7979808abb725fd7127f73d}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_setpriority@{pcntl\_setpriority}}
+\index{pcntl\_setpriority@{pcntl\_setpriority}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_setpriority()}{pcntl\_setpriority()}}
+{\footnotesize\ttfamily pcntl\+\_\+setpriority (\begin{DoxyParamCaption}\item[{}]{\$priority,  }\item[{}]{\$pid,  }\item[{}]{\$process\+\_\+identifier = {\ttfamily \mbox{\hyperlink{pcntl_8php_aef6be5755bf0015decc6ae4bb9cf1ad1}{P\+R\+I\+O\+\_\+\+P\+R\+O\+C\+E\+SS}}} }\end{DoxyParamCaption})}
+
+Change the priority of any process \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$priority }} {\itshape priority} is generally a value in the range -\/20 to 20. The default priority is 0 while a lower numerical value causes more favorable scheduling. Because priority levels can differ between system types and kernel versions, please see your system\textquotesingle{}s setpriority(2) man page for specific details. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$pid} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If not specified, the pid of the current process (\mbox{\hyperlink{standard__2_8php_ae92eb3d0776d8969e9d7f85847895693}{getmypid()}}) is used. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$process\+\_\+identifier} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+One of {\bfseries{P\+R\+I\+O\+\_\+\+P\+G\+RP}}, {\bfseries{P\+R\+I\+O\+\_\+\+U\+S\+ER}} or {\bfseries{P\+R\+I\+O\+\_\+\+P\+R\+O\+C\+E\+SS}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a83b9e4f09eeb00647598c82cde28b963}\label{pcntl_8php_a83b9e4f09eeb00647598c82cde28b963}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_signal@{pcntl\_signal}}
+\index{pcntl\_signal@{pcntl\_signal}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_signal()}{pcntl\_signal()}}
+{\footnotesize\ttfamily pcntl\+\_\+signal (\begin{DoxyParamCaption}\item[{}]{\$signo,  }\item[{}]{\$handler,  }\item[{}]{\$restart\+\_\+syscalls = {\ttfamily \mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}} }\end{DoxyParamCaption})}
+
+Installs a signal handler \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$signo }} The signal number. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | int & {\em \$handler} & \\
+\hline
+\end{DoxyParams}
+The signal handler. This may be either a callable, which will be invoked to handle the signal, or either of the two global constants {\bfseries{S\+I\+G\+\_\+\+I\+GN}} or {\bfseries{S\+I\+G\+\_\+\+D\+FL}}, which will ignore the signal or restore the default signal handler respectively. 
+
+If a callable is given, it must implement the following signature\+: 
+
+void{\bfseries{handler}} {\bfseries{int{\itshape signo}}} {\itshape signo} The signal being handled. 
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$restart\+\_\+syscalls} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Specifies whether system call restarting should be used when this signal arrives. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_aa8af01f5cdb15e348b9579a2edea966e}\label{pcntl_8php_aa8af01f5cdb15e348b9579a2edea966e}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_signal\_dispatch@{pcntl\_signal\_dispatch}}
+\index{pcntl\_signal\_dispatch@{pcntl\_signal\_dispatch}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_signal\_dispatch()}{pcntl\_signal\_dispatch()}}
+{\footnotesize\ttfamily pcntl\+\_\+signal\+\_\+dispatch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Calls signal handlers for pending signals \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure.  5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a73cbd1609e1406037f5d8a441700dcf3}\label{pcntl_8php_a73cbd1609e1406037f5d8a441700dcf3}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_signal\_get\_handler@{pcntl\_signal\_get\_handler}}
+\index{pcntl\_signal\_get\_handler@{pcntl\_signal\_get\_handler}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_signal\_get\_handler()}{pcntl\_signal\_get\_handler()}}
+{\footnotesize\ttfamily pcntl\+\_\+signal\+\_\+get\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{\$signo }\end{DoxyParamCaption})}
+
+Get the current handler for specified signal. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$signo }} The signal number. 
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+1 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a36b1ba6ba398a48298e4f5688ee8ab17}\label{pcntl_8php_a36b1ba6ba398a48298e4f5688ee8ab17}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_sigprocmask@{pcntl\_sigprocmask}}
+\index{pcntl\_sigprocmask@{pcntl\_sigprocmask}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_sigprocmask()}{pcntl\_sigprocmask()}}
+{\footnotesize\ttfamily pcntl\+\_\+sigprocmask (\begin{DoxyParamCaption}\item[{}]{\$how,  }\item[{array}]{\$set,  }\item[{array \&}]{\$oldset = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Sets and retrieves blocked signals \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$how }} Sets the behavior of {\bfseries{pcntl\+\_\+sigprocmask}}. Possible values\+: {\bfseries{S\+I\+G\+\_\+\+B\+L\+O\+CK}}\+: Add the signals to the currently blocked signals. {\bfseries{S\+I\+G\+\_\+\+U\+N\+B\+L\+O\+CK}}\+: Remove the signals from the currently blocked signals. {\bfseries{S\+I\+G\+\_\+\+S\+E\+T\+M\+A\+SK}}\+: Replace the currently blocked signals by the given list of signals. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$set} & \\
+\hline
+\end{DoxyParams}
+List of signals. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$oldset} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The {\itshape oldset} parameter is set to an array containing the list of the previously blocked signals. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a54d08ac631987f743518d1d3d2c603bd}\label{pcntl_8php_a54d08ac631987f743518d1d3d2c603bd}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_sigtimedwait@{pcntl\_sigtimedwait}}
+\index{pcntl\_sigtimedwait@{pcntl\_sigtimedwait}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_sigtimedwait()}{pcntl\_sigtimedwait()}}
+{\footnotesize\ttfamily pcntl\+\_\+sigtimedwait (\begin{DoxyParamCaption}\item[{array}]{\$set,  }\item[{array \&}]{\$siginfo = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$seconds = {\ttfamily 0},  }\item[{}]{\$nanoseconds = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Waits for signals, with a timeout \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array \$set }} Array of signals to wait for. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$siginfo} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The {\itshape siginfo} is set to an array containing informations about the signal. See {\bfseries{pcntl\+\_\+sigwaitinfo}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$seconds} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Timeout in seconds. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$nanoseconds} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Timeout in nanoseconds. 
+
+\begin{DoxyReturn}{Returns}
+int On success, {\bfseries{pcntl\+\_\+sigtimedwait}} returns a signal number. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a8cc95cd31b86fbb615525269cbc9d8dc}\label{pcntl_8php_a8cc95cd31b86fbb615525269cbc9d8dc}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_sigwaitinfo@{pcntl\_sigwaitinfo}}
+\index{pcntl\_sigwaitinfo@{pcntl\_sigwaitinfo}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_sigwaitinfo()}{pcntl\_sigwaitinfo()}}
+{\footnotesize\ttfamily pcntl\+\_\+sigwaitinfo (\begin{DoxyParamCaption}\item[{array}]{\$set,  }\item[{array \&}]{\$siginfo = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Waits for signals \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array \$set }} Array of signals to wait for. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$siginfo} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The {\itshape siginfo} parameter is set to an array containing informations about the signal. 
+
+The following elements are set for all signals\+: signo\+: Signal number errno\+: An error number code\+: Signal code 
+
+The following elements may be set for the {\bfseries{S\+I\+G\+C\+H\+LD}} signal\+: status\+: Exit value or signal utime\+: User time consumed stime\+: System time consumed pid\+: Sending process ID uid\+: Real user ID of sending process 
+
+The following elements may be set for the {\bfseries{S\+I\+G\+I\+LL}}, {\bfseries{S\+I\+G\+F\+PE}}, {\bfseries{S\+I\+G\+S\+E\+GV}} and {\bfseries{S\+I\+G\+B\+US}} signals\+: addr\+: Memory location which caused fault 
+
+The following element may be set for the {\bfseries{S\+I\+G\+P\+O\+LL}} signal\+: band\+: Band event fd\+: File descriptor number 
+
+\begin{DoxyReturn}{Returns}
+int On success, {\bfseries{pcntl\+\_\+sigwaitinfo}} returns a signal number. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a0ee896bc0086fa66d3bb2069360ac74f}\label{pcntl_8php_a0ee896bc0086fa66d3bb2069360ac74f}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_strerror@{pcntl\_strerror}}
+\index{pcntl\_strerror@{pcntl\_strerror}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_strerror()}{pcntl\_strerror()}}
+{\footnotesize\ttfamily pcntl\+\_\+strerror (\begin{DoxyParamCaption}\item[{}]{\$errno }\end{DoxyParamCaption})}
+
+Retrieve the system error message associated with the given errno \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$errno }} 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false error description on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+3.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_ab7883235e517dcfe0ac870baea62dd1b}\label{pcntl_8php_ab7883235e517dcfe0ac870baea62dd1b}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_unshare@{pcntl\_unshare}}
+\index{pcntl\_unshare@{pcntl\_unshare}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_unshare()}{pcntl\_unshare()}}
+{\footnotesize\ttfamily pcntl\+\_\+unshare (\begin{DoxyParamCaption}\item[{}]{\$flags }\end{DoxyParamCaption})}
+
+@sine 7.\+4 \mbox{\Hypertarget{pcntl_8php_a3abfcefdc224b6f46ab16ddd081c8201}\label{pcntl_8php_a3abfcefdc224b6f46ab16ddd081c8201}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_wait@{pcntl\_wait}}
+\index{pcntl\_wait@{pcntl\_wait}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_wait()}{pcntl\_wait()}}
+{\footnotesize\ttfamily pcntl\+\_\+wait (\begin{DoxyParamCaption}\item[{\&}]{\$status,  }\item[{}]{\$options = {\ttfamily 0},  }\item[{\&}]{\$rusage }\end{DoxyParamCaption})}
+
+Waits on or returns the status of a forked child \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$status }} {\bfseries{pcntl\+\_\+wait}} will store status information in the {\itshape status} parameter which can be evaluated using the following functions\+: {\bfseries{pcntl\+\_\+wifexited}}, {\bfseries{pcntl\+\_\+wifstopped}}, {\bfseries{pcntl\+\_\+wifsignaled}}, {\bfseries{pcntl\+\_\+wexitstatus}}, {\bfseries{pcntl\+\_\+wtermsig}} and {\bfseries{pcntl\+\_\+wstopsig}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If wait3 is available on your system (mostly B\+S\+D-\/style systems), you can provide the optional {\itshape options} parameter. If this parameter is not provided, wait will be used for the system call. If wait3 is not available, providing a value for {\itshape options } will have no effect. The value of {\itshape options } is the value of zero or more of the following two constants OR\textquotesingle{}ed together\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+values for {\itshape options} 
+
+W\+N\+O\+H\+A\+NG 
+
+Return immediately if no child has exited.   
+
+W\+U\+N\+T\+R\+A\+C\+ED 
+
+Return for children which are stopped, and whose status has not been reported.   
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \&\$rusage} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int {\bfseries{pcntl\+\_\+wait}} returns the process ID of the child which exited, -\/1 on error or zero if W\+N\+O\+H\+A\+NG was provided as an option (on wait3-\/available systems) and no child was available. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a6c6b7d9419d1a876c48397a3945cf62b}\label{pcntl_8php_a6c6b7d9419d1a876c48397a3945cf62b}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_waitpid@{pcntl\_waitpid}}
+\index{pcntl\_waitpid@{pcntl\_waitpid}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_waitpid()}{pcntl\_waitpid()}}
+{\footnotesize\ttfamily pcntl\+\_\+waitpid (\begin{DoxyParamCaption}\item[{}]{\$pid,  }\item[{\&}]{\$status,  }\item[{}]{\$options = {\ttfamily 0},  }\item[{array \&}]{\$rusage }\end{DoxyParamCaption})}
+
+Waits on or returns the status of a forked child \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$pid }} The value of {\itshape pid} can be one of the following\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+values for {\itshape pid} 
+
+$<$ -\/1 
+
+wait for any child process whose process group ID is equal to the absolute value of {\itshape pid}.   
+
+-\/1 
+
+wait for any child process; this is the same behaviour that the wait function exhibits.   
+
+0 
+
+wait for any child process whose process group ID is equal to that of the calling process.   
+
+$>$ 0 
+
+wait for the child whose process ID is equal to the value of {\itshape pid}.   
+
+Specifying -\/1 as the {\itshape pid} is equivalent to the functionality {\bfseries{pcntl\+\_\+wait}} provides (minus {\itshape options}). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$status} & \\
+\hline
+\end{DoxyParams}
+{\bfseries{pcntl\+\_\+waitpid}} will store status information in the {\itshape status} parameter which can be evaluated using the following functions\+: {\bfseries{pcntl\+\_\+wifexited}}, {\bfseries{pcntl\+\_\+wifstopped}}, {\bfseries{pcntl\+\_\+wifsignaled}}, {\bfseries{pcntl\+\_\+wexitstatus}}, {\bfseries{pcntl\+\_\+wtermsig}} and {\bfseries{pcntl\+\_\+wstopsig}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The value of {\itshape options} is the value of zero or more of the following two global constants OR\textquotesingle{}ed together\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+values for {\itshape options} 
+
+W\+N\+O\+H\+A\+NG 
+
+return immediately if no child has exited.   
+
+W\+U\+N\+T\+R\+A\+C\+ED 
+
+return for children which are stopped, and whose status has not been reported.   
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \&\$rusage} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int {\bfseries{pcntl\+\_\+waitpid}} returns the process ID of the child which exited, -\/1 on error or zero if {\bfseries{W\+N\+O\+H\+A\+NG}} was used and no child was available 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_ab80ce3bc749e2822aa17bedefb48872d}\label{pcntl_8php_ab80ce3bc749e2822aa17bedefb48872d}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_wexitstatus@{pcntl\_wexitstatus}}
+\index{pcntl\_wexitstatus@{pcntl\_wexitstatus}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_wexitstatus()}{pcntl\_wexitstatus()}}
+{\footnotesize\ttfamily pcntl\+\_\+wexitstatus (\begin{DoxyParamCaption}\item[{}]{\$status }\end{DoxyParamCaption})}
+
+Returns the return code of a terminated child \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$status The {\itshape status} parameter is the status parameter supplied to a successful call to {\bfseries{pcntl\+\_\+waitpid}}.}} \begin{DoxyReturn}{Returns}
+int the return code, as an integer. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_aa4d3392b38e9304c2d0631b33c88c52f}\label{pcntl_8php_aa4d3392b38e9304c2d0631b33c88c52f}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_wifcontinued@{pcntl\_wifcontinued}}
+\index{pcntl\_wifcontinued@{pcntl\_wifcontinued}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_wifcontinued()}{pcntl\_wifcontinued()}}
+{\footnotesize\ttfamily pcntl\+\_\+wifcontinued (\begin{DoxyParamCaption}\item[{}]{\$status }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$status} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{pcntl_8php_a77fc10f8e820f9ee2ac1dba7d1245873}\label{pcntl_8php_a77fc10f8e820f9ee2ac1dba7d1245873}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_wifexited@{pcntl\_wifexited}}
+\index{pcntl\_wifexited@{pcntl\_wifexited}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_wifexited()}{pcntl\_wifexited()}}
+{\footnotesize\ttfamily pcntl\+\_\+wifexited (\begin{DoxyParamCaption}\item[{}]{\$status }\end{DoxyParamCaption})}
+
+Checks if status code represents a normal exit \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$status The {\itshape status} parameter is the status parameter supplied to a successful call to {\bfseries{pcntl\+\_\+waitpid}}.}} \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} if the child status code represents a normal exit, {\bfseries{F\+A\+L\+SE}} otherwise. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a1e4eb667474a257d9b72352cda8dc52f}\label{pcntl_8php_a1e4eb667474a257d9b72352cda8dc52f}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_wifsignaled@{pcntl\_wifsignaled}}
+\index{pcntl\_wifsignaled@{pcntl\_wifsignaled}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_wifsignaled()}{pcntl\_wifsignaled()}}
+{\footnotesize\ttfamily pcntl\+\_\+wifsignaled (\begin{DoxyParamCaption}\item[{}]{\$status }\end{DoxyParamCaption})}
+
+Checks whether the status code represents a termination due to a signal \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$status The {\itshape status} parameter is the status parameter supplied to a successful call to {\bfseries{pcntl\+\_\+waitpid}}.}} \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} if the child process exited because of a signal which was not caught, {\bfseries{F\+A\+L\+SE}} otherwise. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a87910467b209a169e5c396172cef2731}\label{pcntl_8php_a87910467b209a169e5c396172cef2731}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_wifstopped@{pcntl\_wifstopped}}
+\index{pcntl\_wifstopped@{pcntl\_wifstopped}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_wifstopped()}{pcntl\_wifstopped()}}
+{\footnotesize\ttfamily pcntl\+\_\+wifstopped (\begin{DoxyParamCaption}\item[{}]{\$status }\end{DoxyParamCaption})}
+
+Checks whether the child process is currently stopped \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$status The {\itshape status} parameter is the status parameter supplied to a successful call to {\bfseries{pcntl\+\_\+waitpid}}.}} \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} if the child process which caused the return is currently stopped, {\bfseries{F\+A\+L\+SE}} otherwise. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_afccbba7ff4b6cbe3eeb3214945a10801}\label{pcntl_8php_afccbba7ff4b6cbe3eeb3214945a10801}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_wstopsig@{pcntl\_wstopsig}}
+\index{pcntl\_wstopsig@{pcntl\_wstopsig}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_wstopsig()}{pcntl\_wstopsig()}}
+{\footnotesize\ttfamily pcntl\+\_\+wstopsig (\begin{DoxyParamCaption}\item[{}]{\$status }\end{DoxyParamCaption})}
+
+Returns the signal which caused the child to stop \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$status The {\itshape status} parameter is the status parameter supplied to a successful call to {\bfseries{pcntl\+\_\+waitpid}}.}} \begin{DoxyReturn}{Returns}
+int the signal number. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_ace1737110f8348e4ea87ddd772ae3b28}\label{pcntl_8php_ace1737110f8348e4ea87ddd772ae3b28}} 
+\index{pcntl.php@{pcntl.php}!pcntl\_wtermsig@{pcntl\_wtermsig}}
+\index{pcntl\_wtermsig@{pcntl\_wtermsig}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{pcntl\_wtermsig()}{pcntl\_wtermsig()}}
+{\footnotesize\ttfamily pcntl\+\_\+wtermsig (\begin{DoxyParamCaption}\item[{}]{\$status }\end{DoxyParamCaption})}
+
+Returns the signal which caused the child to terminate \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$status The {\itshape status} parameter is the status parameter supplied to a successful call to {\bfseries{pcntl\+\_\+waitpid}}.}} \begin{DoxyReturn}{Returns}
+int the signal number, as an integer. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{pcntl_8php_ac2ce6dae554aee261f1f2968e3c649de}\label{pcntl_8php_ac2ce6dae554aee261f1f2968e3c649de}} 
+\index{pcntl.php@{pcntl.php}!BUS\_ADRALN@{BUS\_ADRALN}}
+\index{BUS\_ADRALN@{BUS\_ADRALN}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{BUS\_ADRALN}{BUS\_ADRALN}}
+{\footnotesize\ttfamily const B\+U\+S\+\_\+\+A\+D\+R\+A\+LN 1}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a53c755239ecf68735f465ff88be4e5fd}\label{pcntl_8php_a53c755239ecf68735f465ff88be4e5fd}} 
+\index{pcntl.php@{pcntl.php}!BUS\_ADRERR@{BUS\_ADRERR}}
+\index{BUS\_ADRERR@{BUS\_ADRERR}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{BUS\_ADRERR}{BUS\_ADRERR}}
+{\footnotesize\ttfamily const B\+U\+S\+\_\+\+A\+D\+R\+E\+RR 2}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a184a650c118c9499f136e987669f1ab0}\label{pcntl_8php_a184a650c118c9499f136e987669f1ab0}} 
+\index{pcntl.php@{pcntl.php}!BUS\_OBJERR@{BUS\_OBJERR}}
+\index{BUS\_OBJERR@{BUS\_OBJERR}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{BUS\_OBJERR}{BUS\_OBJERR}}
+{\footnotesize\ttfamily const B\+U\+S\+\_\+\+O\+B\+J\+E\+RR 3}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_af5d56701587150c79188f2bbeaa52734}\label{pcntl_8php_af5d56701587150c79188f2bbeaa52734}} 
+\index{pcntl.php@{pcntl.php}!CLD\_CONTINUED@{CLD\_CONTINUED}}
+\index{CLD\_CONTINUED@{CLD\_CONTINUED}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{CLD\_CONTINUED}{CLD\_CONTINUED}}
+{\footnotesize\ttfamily const C\+L\+D\+\_\+\+C\+O\+N\+T\+I\+N\+U\+ED 6}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a98626fdf5f7eec857f5db68239aa6b76}\label{pcntl_8php_a98626fdf5f7eec857f5db68239aa6b76}} 
+\index{pcntl.php@{pcntl.php}!CLD\_DUMPED@{CLD\_DUMPED}}
+\index{CLD\_DUMPED@{CLD\_DUMPED}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{CLD\_DUMPED}{CLD\_DUMPED}}
+{\footnotesize\ttfamily const C\+L\+D\+\_\+\+D\+U\+M\+P\+ED 3}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_aafaa933e759a6b1e8e32d300622b88a8}\label{pcntl_8php_aafaa933e759a6b1e8e32d300622b88a8}} 
+\index{pcntl.php@{pcntl.php}!CLD\_EXITED@{CLD\_EXITED}}
+\index{CLD\_EXITED@{CLD\_EXITED}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{CLD\_EXITED}{CLD\_EXITED}}
+{\footnotesize\ttfamily const C\+L\+D\+\_\+\+E\+X\+I\+T\+ED 1}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_aa958563d6035d9ad174acdf2822bfd14}\label{pcntl_8php_aa958563d6035d9ad174acdf2822bfd14}} 
+\index{pcntl.php@{pcntl.php}!CLD\_KILLED@{CLD\_KILLED}}
+\index{CLD\_KILLED@{CLD\_KILLED}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{CLD\_KILLED}{CLD\_KILLED}}
+{\footnotesize\ttfamily const C\+L\+D\+\_\+\+K\+I\+L\+L\+ED 2}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_acc1845b429a67309e149a8ce25d16dfb}\label{pcntl_8php_acc1845b429a67309e149a8ce25d16dfb}} 
+\index{pcntl.php@{pcntl.php}!CLD\_STOPPED@{CLD\_STOPPED}}
+\index{CLD\_STOPPED@{CLD\_STOPPED}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{CLD\_STOPPED}{CLD\_STOPPED}}
+{\footnotesize\ttfamily const C\+L\+D\+\_\+\+S\+T\+O\+P\+P\+ED 5}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a8ce051ba657f78ee933cf3465a00127c}\label{pcntl_8php_a8ce051ba657f78ee933cf3465a00127c}} 
+\index{pcntl.php@{pcntl.php}!CLD\_TRAPPED@{CLD\_TRAPPED}}
+\index{CLD\_TRAPPED@{CLD\_TRAPPED}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{CLD\_TRAPPED}{CLD\_TRAPPED}}
+{\footnotesize\ttfamily const C\+L\+D\+\_\+\+T\+R\+A\+P\+P\+ED 4}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a6738593e4afc50ce36b3257fece8f44d}\label{pcntl_8php_a6738593e4afc50ce36b3257fece8f44d}} 
+\index{pcntl.php@{pcntl.php}!CLONE\_NEWCGROUP@{CLONE\_NEWCGROUP}}
+\index{CLONE\_NEWCGROUP@{CLONE\_NEWCGROUP}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{CLONE\_NEWCGROUP}{CLONE\_NEWCGROUP}}
+{\footnotesize\ttfamily const C\+L\+O\+N\+E\+\_\+\+N\+E\+W\+C\+G\+R\+O\+UP 33554432}
+
+\begin{DoxySince}{Since}
+7.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a41462b585629a703ebc1b4735f67bb54}\label{pcntl_8php_a41462b585629a703ebc1b4735f67bb54}} 
+\index{pcntl.php@{pcntl.php}!CLONE\_NEWIPC@{CLONE\_NEWIPC}}
+\index{CLONE\_NEWIPC@{CLONE\_NEWIPC}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{CLONE\_NEWIPC}{CLONE\_NEWIPC}}
+{\footnotesize\ttfamily const C\+L\+O\+N\+E\+\_\+\+N\+E\+W\+I\+PC 134217728}
+
+\begin{DoxySince}{Since}
+7.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a6d2b1c470c168a824b5eef50894a6384}\label{pcntl_8php_a6d2b1c470c168a824b5eef50894a6384}} 
+\index{pcntl.php@{pcntl.php}!CLONE\_NEWNET@{CLONE\_NEWNET}}
+\index{CLONE\_NEWNET@{CLONE\_NEWNET}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{CLONE\_NEWNET}{CLONE\_NEWNET}}
+{\footnotesize\ttfamily const C\+L\+O\+N\+E\+\_\+\+N\+E\+W\+N\+ET 1073741824}
+
+\begin{DoxySince}{Since}
+7.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a8f83215dffdc5c9c81c62818cf51f8ad}\label{pcntl_8php_a8f83215dffdc5c9c81c62818cf51f8ad}} 
+\index{pcntl.php@{pcntl.php}!CLONE\_NEWNS@{CLONE\_NEWNS}}
+\index{CLONE\_NEWNS@{CLONE\_NEWNS}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{CLONE\_NEWNS}{CLONE\_NEWNS}}
+{\footnotesize\ttfamily const C\+L\+O\+N\+E\+\_\+\+N\+E\+W\+NS 131072}
+
+\begin{DoxySince}{Since}
+7.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a6cff23192c228c91033554f984d502cb}\label{pcntl_8php_a6cff23192c228c91033554f984d502cb}} 
+\index{pcntl.php@{pcntl.php}!CLONE\_NEWPID@{CLONE\_NEWPID}}
+\index{CLONE\_NEWPID@{CLONE\_NEWPID}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{CLONE\_NEWPID}{CLONE\_NEWPID}}
+{\footnotesize\ttfamily const C\+L\+O\+N\+E\+\_\+\+N\+E\+W\+P\+ID 536870912}
+
+\begin{DoxySince}{Since}
+7.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_ac6145b91ba48718c785012c8cdcdcfb2}\label{pcntl_8php_ac6145b91ba48718c785012c8cdcdcfb2}} 
+\index{pcntl.php@{pcntl.php}!CLONE\_NEWUSER@{CLONE\_NEWUSER}}
+\index{CLONE\_NEWUSER@{CLONE\_NEWUSER}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{CLONE\_NEWUSER}{CLONE\_NEWUSER}}
+{\footnotesize\ttfamily const C\+L\+O\+N\+E\+\_\+\+N\+E\+W\+U\+S\+ER 268435456}
+
+\begin{DoxySince}{Since}
+7.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_aff5d692c1c650c81f23a03eeeed86fe2}\label{pcntl_8php_aff5d692c1c650c81f23a03eeeed86fe2}} 
+\index{pcntl.php@{pcntl.php}!CLONE\_NEWUTS@{CLONE\_NEWUTS}}
+\index{CLONE\_NEWUTS@{CLONE\_NEWUTS}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{CLONE\_NEWUTS}{CLONE\_NEWUTS}}
+{\footnotesize\ttfamily const C\+L\+O\+N\+E\+\_\+\+N\+E\+W\+U\+TS 67108864}
+
+\begin{DoxySince}{Since}
+7.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_ac10828ad43e3d320e90d5808e938a6f0}\label{pcntl_8php_ac10828ad43e3d320e90d5808e938a6f0}} 
+\index{pcntl.php@{pcntl.php}!FPE\_FLTDIV@{FPE\_FLTDIV}}
+\index{FPE\_FLTDIV@{FPE\_FLTDIV}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{FPE\_FLTDIV}{FPE\_FLTDIV}}
+{\footnotesize\ttfamily const F\+P\+E\+\_\+\+F\+L\+T\+D\+IV 3}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_aaf6180a11d7046f4fe4205e35af0fa8e}\label{pcntl_8php_aaf6180a11d7046f4fe4205e35af0fa8e}} 
+\index{pcntl.php@{pcntl.php}!FPE\_FLTINV@{FPE\_FLTINV}}
+\index{FPE\_FLTINV@{FPE\_FLTINV}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{FPE\_FLTINV}{FPE\_FLTINV}}
+{\footnotesize\ttfamily const F\+P\+E\+\_\+\+F\+L\+T\+I\+NV 7}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a9d5670dc7e68e6b563a9ac7bddce9767}\label{pcntl_8php_a9d5670dc7e68e6b563a9ac7bddce9767}} 
+\index{pcntl.php@{pcntl.php}!FPE\_FLTOVF@{FPE\_FLTOVF}}
+\index{FPE\_FLTOVF@{FPE\_FLTOVF}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{FPE\_FLTOVF}{FPE\_FLTOVF}}
+{\footnotesize\ttfamily const F\+P\+E\+\_\+\+F\+L\+T\+O\+VF 4}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a53272b4e24b491fbbcc5b1299ee30df8}\label{pcntl_8php_a53272b4e24b491fbbcc5b1299ee30df8}} 
+\index{pcntl.php@{pcntl.php}!FPE\_FLTRES@{FPE\_FLTRES}}
+\index{FPE\_FLTRES@{FPE\_FLTRES}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{FPE\_FLTRES}{FPE\_FLTRES}}
+{\footnotesize\ttfamily const F\+P\+E\+\_\+\+F\+L\+T\+R\+ES 6}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a1f288747109403911bab2dccb9c113c7}\label{pcntl_8php_a1f288747109403911bab2dccb9c113c7}} 
+\index{pcntl.php@{pcntl.php}!FPE\_FLTSUB@{FPE\_FLTSUB}}
+\index{FPE\_FLTSUB@{FPE\_FLTSUB}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{FPE\_FLTSUB}{FPE\_FLTSUB}}
+{\footnotesize\ttfamily const F\+P\+E\+\_\+\+F\+L\+T\+S\+UB 8}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a125387fed373802e0e6ced2e675eb750}\label{pcntl_8php_a125387fed373802e0e6ced2e675eb750}} 
+\index{pcntl.php@{pcntl.php}!FPE\_FLTUND@{FPE\_FLTUND}}
+\index{FPE\_FLTUND@{FPE\_FLTUND}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{FPE\_FLTUND}{FPE\_FLTUND}}
+{\footnotesize\ttfamily const F\+P\+E\+\_\+\+F\+L\+T\+U\+ND 7}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a697c309ba9d8050714ae1c281a1c0af9}\label{pcntl_8php_a697c309ba9d8050714ae1c281a1c0af9}} 
+\index{pcntl.php@{pcntl.php}!FPE\_INTDIV@{FPE\_INTDIV}}
+\index{FPE\_INTDIV@{FPE\_INTDIV}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{FPE\_INTDIV}{FPE\_INTDIV}}
+{\footnotesize\ttfamily const F\+P\+E\+\_\+\+I\+N\+T\+D\+IV 1}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_ad77c66cdfb6ea8289816646a618dae35}\label{pcntl_8php_ad77c66cdfb6ea8289816646a618dae35}} 
+\index{pcntl.php@{pcntl.php}!FPE\_INTOVF@{FPE\_INTOVF}}
+\index{FPE\_INTOVF@{FPE\_INTOVF}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{FPE\_INTOVF}{FPE\_INTOVF}}
+{\footnotesize\ttfamily const F\+P\+E\+\_\+\+I\+N\+T\+O\+VF 2}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a6e44513bdf67af0d524df28288a3ba00}\label{pcntl_8php_a6e44513bdf67af0d524df28288a3ba00}} 
+\index{pcntl.php@{pcntl.php}!ILL\_BADSTK@{ILL\_BADSTK}}
+\index{ILL\_BADSTK@{ILL\_BADSTK}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{ILL\_BADSTK}{ILL\_BADSTK}}
+{\footnotesize\ttfamily const I\+L\+L\+\_\+\+B\+A\+D\+S\+TK 8}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a5c465fbb49073224fc5de664e5668a33}\label{pcntl_8php_a5c465fbb49073224fc5de664e5668a33}} 
+\index{pcntl.php@{pcntl.php}!ILL\_COPROC@{ILL\_COPROC}}
+\index{ILL\_COPROC@{ILL\_COPROC}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{ILL\_COPROC}{ILL\_COPROC}}
+{\footnotesize\ttfamily const I\+L\+L\+\_\+\+C\+O\+P\+R\+OC 7}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_aefdb2affdd5b64e5d479427314094113}\label{pcntl_8php_aefdb2affdd5b64e5d479427314094113}} 
+\index{pcntl.php@{pcntl.php}!ILL\_ILLADR@{ILL\_ILLADR}}
+\index{ILL\_ILLADR@{ILL\_ILLADR}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{ILL\_ILLADR}{ILL\_ILLADR}}
+{\footnotesize\ttfamily const I\+L\+L\+\_\+\+I\+L\+L\+A\+DR 3}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a94bc822a054434e8dae523d4a9631978}\label{pcntl_8php_a94bc822a054434e8dae523d4a9631978}} 
+\index{pcntl.php@{pcntl.php}!ILL\_ILLOPC@{ILL\_ILLOPC}}
+\index{ILL\_ILLOPC@{ILL\_ILLOPC}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{ILL\_ILLOPC}{ILL\_ILLOPC}}
+{\footnotesize\ttfamily const I\+L\+L\+\_\+\+I\+L\+L\+O\+PC 1}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_ad13c751ba8f145b64aac6df040279daf}\label{pcntl_8php_ad13c751ba8f145b64aac6df040279daf}} 
+\index{pcntl.php@{pcntl.php}!ILL\_ILLOPN@{ILL\_ILLOPN}}
+\index{ILL\_ILLOPN@{ILL\_ILLOPN}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{ILL\_ILLOPN}{ILL\_ILLOPN}}
+{\footnotesize\ttfamily const I\+L\+L\+\_\+\+I\+L\+L\+O\+PN 2}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_accd80ff83d1d289942671d68b93b0c13}\label{pcntl_8php_accd80ff83d1d289942671d68b93b0c13}} 
+\index{pcntl.php@{pcntl.php}!ILL\_ILLTRP@{ILL\_ILLTRP}}
+\index{ILL\_ILLTRP@{ILL\_ILLTRP}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{ILL\_ILLTRP}{ILL\_ILLTRP}}
+{\footnotesize\ttfamily const I\+L\+L\+\_\+\+I\+L\+L\+T\+RP 4}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a59d1d009d648f71f6e2138821e6dec9c}\label{pcntl_8php_a59d1d009d648f71f6e2138821e6dec9c}} 
+\index{pcntl.php@{pcntl.php}!ILL\_PRVOPC@{ILL\_PRVOPC}}
+\index{ILL\_PRVOPC@{ILL\_PRVOPC}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{ILL\_PRVOPC}{ILL\_PRVOPC}}
+{\footnotesize\ttfamily const I\+L\+L\+\_\+\+P\+R\+V\+O\+PC 5}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_af876fe60a5ea49d705ae5926f214adcf}\label{pcntl_8php_af876fe60a5ea49d705ae5926f214adcf}} 
+\index{pcntl.php@{pcntl.php}!ILL\_PRVREG@{ILL\_PRVREG}}
+\index{ILL\_PRVREG@{ILL\_PRVREG}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{ILL\_PRVREG}{ILL\_PRVREG}}
+{\footnotesize\ttfamily const I\+L\+L\+\_\+\+P\+R\+V\+R\+EG 6}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a47a921248b4d43cf0494f9d2cdb21a50}\label{pcntl_8php_a47a921248b4d43cf0494f9d2cdb21a50}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_E2BIG@{PCNTL\_E2BIG}}
+\index{PCNTL\_E2BIG@{PCNTL\_E2BIG}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_E2BIG}{PCNTL\_E2BIG}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E2\+B\+IG 7}
+
+\mbox{\Hypertarget{pcntl_8php_a541281a11107e1fd2997ba5d731ff5ac}\label{pcntl_8php_a541281a11107e1fd2997ba5d731ff5ac}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_EACCES@{PCNTL\_EACCES}}
+\index{PCNTL\_EACCES@{PCNTL\_EACCES}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_EACCES}{PCNTL\_EACCES}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+A\+C\+C\+ES 13}
+
+\mbox{\Hypertarget{pcntl_8php_ac5dc5239792b39eab571d22443b79cb1}\label{pcntl_8php_ac5dc5239792b39eab571d22443b79cb1}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_EAGAIN@{PCNTL\_EAGAIN}}
+\index{PCNTL\_EAGAIN@{PCNTL\_EAGAIN}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_EAGAIN}{PCNTL\_EAGAIN}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+A\+G\+A\+IN 11}
+
+\mbox{\Hypertarget{pcntl_8php_ac776d6c86f7641fe6e78b36daeb0080d}\label{pcntl_8php_ac776d6c86f7641fe6e78b36daeb0080d}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_ECHILD@{PCNTL\_ECHILD}}
+\index{PCNTL\_ECHILD@{PCNTL\_ECHILD}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_ECHILD}{PCNTL\_ECHILD}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+C\+H\+I\+LD 10}
+
+\mbox{\Hypertarget{pcntl_8php_ac75949f0a3099b3e74882b536a2abcad}\label{pcntl_8php_ac75949f0a3099b3e74882b536a2abcad}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_EFAULT@{PCNTL\_EFAULT}}
+\index{PCNTL\_EFAULT@{PCNTL\_EFAULT}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_EFAULT}{PCNTL\_EFAULT}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+F\+A\+U\+LT 14}
+
+\mbox{\Hypertarget{pcntl_8php_a055e29cf4be7f2bb654967a7a7bda882}\label{pcntl_8php_a055e29cf4be7f2bb654967a7a7bda882}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_EINTR@{PCNTL\_EINTR}}
+\index{PCNTL\_EINTR@{PCNTL\_EINTR}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_EINTR}{PCNTL\_EINTR}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+I\+N\+TR 4}
+
+\mbox{\Hypertarget{pcntl_8php_a1d970f7d179e1af19d97f98b47a13a91}\label{pcntl_8php_a1d970f7d179e1af19d97f98b47a13a91}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_EINVAL@{PCNTL\_EINVAL}}
+\index{PCNTL\_EINVAL@{PCNTL\_EINVAL}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_EINVAL}{PCNTL\_EINVAL}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+I\+N\+V\+AL 22}
+
+\mbox{\Hypertarget{pcntl_8php_a2c598c056a40d3acdbfbe154e6e43d20}\label{pcntl_8php_a2c598c056a40d3acdbfbe154e6e43d20}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_EIO@{PCNTL\_EIO}}
+\index{PCNTL\_EIO@{PCNTL\_EIO}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_EIO}{PCNTL\_EIO}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+IO 5}
+
+\mbox{\Hypertarget{pcntl_8php_aaf103352163cdcba77405280768ace3d}\label{pcntl_8php_aaf103352163cdcba77405280768ace3d}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_EISDIR@{PCNTL\_EISDIR}}
+\index{PCNTL\_EISDIR@{PCNTL\_EISDIR}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_EISDIR}{PCNTL\_EISDIR}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+I\+S\+D\+IR 21}
+
+\mbox{\Hypertarget{pcntl_8php_a98c6e7b3d941c9c7dde5ef09884c9e05}\label{pcntl_8php_a98c6e7b3d941c9c7dde5ef09884c9e05}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_ELIBBAD@{PCNTL\_ELIBBAD}}
+\index{PCNTL\_ELIBBAD@{PCNTL\_ELIBBAD}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_ELIBBAD}{PCNTL\_ELIBBAD}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+L\+I\+B\+B\+AD 80}
+
+\mbox{\Hypertarget{pcntl_8php_ac9dcace2473f124cf6a8a92045237a0e}\label{pcntl_8php_ac9dcace2473f124cf6a8a92045237a0e}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_ELOOP@{PCNTL\_ELOOP}}
+\index{PCNTL\_ELOOP@{PCNTL\_ELOOP}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_ELOOP}{PCNTL\_ELOOP}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+L\+O\+OP 40}
+
+\mbox{\Hypertarget{pcntl_8php_a500a6dda73f86287ab59c7fa0cdd8441}\label{pcntl_8php_a500a6dda73f86287ab59c7fa0cdd8441}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_EMFILE@{PCNTL\_EMFILE}}
+\index{PCNTL\_EMFILE@{PCNTL\_EMFILE}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_EMFILE}{PCNTL\_EMFILE}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+M\+F\+I\+LE 24}
+
+\mbox{\Hypertarget{pcntl_8php_af7387966bf292917ae59318293189985}\label{pcntl_8php_af7387966bf292917ae59318293189985}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_ENAMETOOLONG@{PCNTL\_ENAMETOOLONG}}
+\index{PCNTL\_ENAMETOOLONG@{PCNTL\_ENAMETOOLONG}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_ENAMETOOLONG}{PCNTL\_ENAMETOOLONG}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+N\+A\+M\+E\+T\+O\+O\+L\+O\+NG 36}
+
+\mbox{\Hypertarget{pcntl_8php_a6f000122837586e83075804834ed6777}\label{pcntl_8php_a6f000122837586e83075804834ed6777}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_ENFILE@{PCNTL\_ENFILE}}
+\index{PCNTL\_ENFILE@{PCNTL\_ENFILE}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_ENFILE}{PCNTL\_ENFILE}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+N\+F\+I\+LE 23}
+
+\mbox{\Hypertarget{pcntl_8php_abf85ad9c182e19a7be41f4853e85043d}\label{pcntl_8php_abf85ad9c182e19a7be41f4853e85043d}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_ENOENT@{PCNTL\_ENOENT}}
+\index{PCNTL\_ENOENT@{PCNTL\_ENOENT}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_ENOENT}{PCNTL\_ENOENT}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+N\+O\+E\+NT 2}
+
+\mbox{\Hypertarget{pcntl_8php_aab5589f47d494ab25d091eccc6abfe5f}\label{pcntl_8php_aab5589f47d494ab25d091eccc6abfe5f}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_ENOEXEC@{PCNTL\_ENOEXEC}}
+\index{PCNTL\_ENOEXEC@{PCNTL\_ENOEXEC}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_ENOEXEC}{PCNTL\_ENOEXEC}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+N\+O\+E\+X\+EC 8}
+
+\mbox{\Hypertarget{pcntl_8php_ac42dc9b53f002726434ebfb54d67ed4c}\label{pcntl_8php_ac42dc9b53f002726434ebfb54d67ed4c}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_ENOMEM@{PCNTL\_ENOMEM}}
+\index{PCNTL\_ENOMEM@{PCNTL\_ENOMEM}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_ENOMEM}{PCNTL\_ENOMEM}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+N\+O\+M\+EM 12}
+
+\mbox{\Hypertarget{pcntl_8php_a125a2863430ad76ad3a6cc7bf98dfcd0}\label{pcntl_8php_a125a2863430ad76ad3a6cc7bf98dfcd0}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_ENOSPC@{PCNTL\_ENOSPC}}
+\index{PCNTL\_ENOSPC@{PCNTL\_ENOSPC}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_ENOSPC}{PCNTL\_ENOSPC}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+N\+O\+S\+PC 28}
+
+\begin{DoxySince}{Since}
+7.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_a30a2e769588e26b8df3ad84d186044dd}\label{pcntl_8php_a30a2e769588e26b8df3ad84d186044dd}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_ENOTDIR@{PCNTL\_ENOTDIR}}
+\index{PCNTL\_ENOTDIR@{PCNTL\_ENOTDIR}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_ENOTDIR}{PCNTL\_ENOTDIR}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+N\+O\+T\+D\+IR 20}
+
+\mbox{\Hypertarget{pcntl_8php_ac8cc56da7c807f5fc8c11ac8546586fc}\label{pcntl_8php_ac8cc56da7c807f5fc8c11ac8546586fc}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_EPERM@{PCNTL\_EPERM}}
+\index{PCNTL\_EPERM@{PCNTL\_EPERM}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_EPERM}{PCNTL\_EPERM}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+P\+E\+RM 1}
+
+\mbox{\Hypertarget{pcntl_8php_ad6bf8d69e7c75da7fed13b218c5761c1}\label{pcntl_8php_ad6bf8d69e7c75da7fed13b218c5761c1}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_ESRCH@{PCNTL\_ESRCH}}
+\index{PCNTL\_ESRCH@{PCNTL\_ESRCH}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_ESRCH}{PCNTL\_ESRCH}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+S\+R\+CH 3}
+
+\mbox{\Hypertarget{pcntl_8php_ac5b4bc499a16247a75dca7a43a34cf82}\label{pcntl_8php_ac5b4bc499a16247a75dca7a43a34cf82}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_ETXTBSY@{PCNTL\_ETXTBSY}}
+\index{PCNTL\_ETXTBSY@{PCNTL\_ETXTBSY}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_ETXTBSY}{PCNTL\_ETXTBSY}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+T\+X\+T\+B\+SY 26}
+
+\mbox{\Hypertarget{pcntl_8php_a10689bfbf8361b1971afb49d75184eaa}\label{pcntl_8php_a10689bfbf8361b1971afb49d75184eaa}} 
+\index{pcntl.php@{pcntl.php}!PCNTL\_EUSERS@{PCNTL\_EUSERS}}
+\index{PCNTL\_EUSERS@{PCNTL\_EUSERS}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PCNTL\_EUSERS}{PCNTL\_EUSERS}}
+{\footnotesize\ttfamily const P\+C\+N\+T\+L\+\_\+\+E\+U\+S\+E\+RS 87}
+
+\begin{DoxySince}{Since}
+7.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{pcntl_8php_af33871b7ad1eb7d79cfa35da6dc48f86}\label{pcntl_8php_af33871b7ad1eb7d79cfa35da6dc48f86}} 
+\index{pcntl.php@{pcntl.php}!POLL\_ERR@{POLL\_ERR}}
+\index{POLL\_ERR@{POLL\_ERR}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{POLL\_ERR}{POLL\_ERR}}
+{\footnotesize\ttfamily const P\+O\+L\+L\+\_\+\+E\+RR 4}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_af569fcca59b4d6319a9665900545f281}\label{pcntl_8php_af569fcca59b4d6319a9665900545f281}} 
+\index{pcntl.php@{pcntl.php}!POLL\_HUP@{POLL\_HUP}}
+\index{POLL\_HUP@{POLL\_HUP}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{POLL\_HUP}{POLL\_HUP}}
+{\footnotesize\ttfamily const P\+O\+L\+L\+\_\+\+H\+UP 6}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a7e724939a91faab090e2cce1a50abf76}\label{pcntl_8php_a7e724939a91faab090e2cce1a50abf76}} 
+\index{pcntl.php@{pcntl.php}!POLL\_IN@{POLL\_IN}}
+\index{POLL\_IN@{POLL\_IN}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{POLL\_IN}{POLL\_IN}}
+{\footnotesize\ttfamily const P\+O\+L\+L\+\_\+\+IN 1}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_aef7325a2c44e448c35de711094ac94d9}\label{pcntl_8php_aef7325a2c44e448c35de711094ac94d9}} 
+\index{pcntl.php@{pcntl.php}!POLL\_MSG@{POLL\_MSG}}
+\index{POLL\_MSG@{POLL\_MSG}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{POLL\_MSG}{POLL\_MSG}}
+{\footnotesize\ttfamily const P\+O\+L\+L\+\_\+\+M\+SG 3}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_abfd718e4a055603f22007088559515e4}\label{pcntl_8php_abfd718e4a055603f22007088559515e4}} 
+\index{pcntl.php@{pcntl.php}!POLL\_OUT@{POLL\_OUT}}
+\index{POLL\_OUT@{POLL\_OUT}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{POLL\_OUT}{POLL\_OUT}}
+{\footnotesize\ttfamily const P\+O\+L\+L\+\_\+\+O\+UT 2}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a295c36d233fa7651182264a42cda5690}\label{pcntl_8php_a295c36d233fa7651182264a42cda5690}} 
+\index{pcntl.php@{pcntl.php}!POLL\_PRI@{POLL\_PRI}}
+\index{POLL\_PRI@{POLL\_PRI}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{POLL\_PRI}{POLL\_PRI}}
+{\footnotesize\ttfamily const P\+O\+L\+L\+\_\+\+P\+RI 5}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a0805977339d5425421ec943f93bd16d6}\label{pcntl_8php_a0805977339d5425421ec943f93bd16d6}} 
+\index{pcntl.php@{pcntl.php}!PRIO\_PGRP@{PRIO\_PGRP}}
+\index{PRIO\_PGRP@{PRIO\_PGRP}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PRIO\_PGRP}{PRIO\_PGRP}}
+{\footnotesize\ttfamily const P\+R\+I\+O\+\_\+\+P\+G\+RP 1}
+
+\mbox{\Hypertarget{pcntl_8php_aef6be5755bf0015decc6ae4bb9cf1ad1}\label{pcntl_8php_aef6be5755bf0015decc6ae4bb9cf1ad1}} 
+\index{pcntl.php@{pcntl.php}!PRIO\_PROCESS@{PRIO\_PROCESS}}
+\index{PRIO\_PROCESS@{PRIO\_PROCESS}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PRIO\_PROCESS}{PRIO\_PROCESS}}
+{\footnotesize\ttfamily const P\+R\+I\+O\+\_\+\+P\+R\+O\+C\+E\+SS 0}
+
+\mbox{\Hypertarget{pcntl_8php_a2d40c94b3c8c2de6bea0c228644bf8d6}\label{pcntl_8php_a2d40c94b3c8c2de6bea0c228644bf8d6}} 
+\index{pcntl.php@{pcntl.php}!PRIO\_USER@{PRIO\_USER}}
+\index{PRIO\_USER@{PRIO\_USER}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{PRIO\_USER}{PRIO\_USER}}
+{\footnotesize\ttfamily const P\+R\+I\+O\+\_\+\+U\+S\+ER 2}
+
+\mbox{\Hypertarget{pcntl_8php_a0bb56fceeb4b21d7288ae46e636140e1}\label{pcntl_8php_a0bb56fceeb4b21d7288ae46e636140e1}} 
+\index{pcntl.php@{pcntl.php}!SEGV\_ACCERR@{SEGV\_ACCERR}}
+\index{SEGV\_ACCERR@{SEGV\_ACCERR}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SEGV\_ACCERR}{SEGV\_ACCERR}}
+{\footnotesize\ttfamily const S\+E\+G\+V\+\_\+\+A\+C\+C\+E\+RR 2}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a6832e1ab692f5b53892d136e09bf68fc}\label{pcntl_8php_a6832e1ab692f5b53892d136e09bf68fc}} 
+\index{pcntl.php@{pcntl.php}!SEGV\_MAPERR@{SEGV\_MAPERR}}
+\index{SEGV\_MAPERR@{SEGV\_MAPERR}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SEGV\_MAPERR}{SEGV\_MAPERR}}
+{\footnotesize\ttfamily const S\+E\+G\+V\+\_\+\+M\+A\+P\+E\+RR 1}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_af5ad06a2b6f3bf3f05bf225f6a9a703b}\label{pcntl_8php_af5ad06a2b6f3bf3f05bf225f6a9a703b}} 
+\index{pcntl.php@{pcntl.php}!SI\_ASYNCIO@{SI\_ASYNCIO}}
+\index{SI\_ASYNCIO@{SI\_ASYNCIO}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SI\_ASYNCIO}{SI\_ASYNCIO}}
+{\footnotesize\ttfamily const S\+I\+\_\+\+A\+S\+Y\+N\+C\+IO -\/4}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_aca4b11f39d5998c67581eebfff71886e}\label{pcntl_8php_aca4b11f39d5998c67581eebfff71886e}} 
+\index{pcntl.php@{pcntl.php}!SI\_KERNEL@{SI\_KERNEL}}
+\index{SI\_KERNEL@{SI\_KERNEL}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SI\_KERNEL}{SI\_KERNEL}}
+{\footnotesize\ttfamily const S\+I\+\_\+\+K\+E\+R\+N\+EL 128}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_aa73e168e469c1f4819b960fc43c95ed8}\label{pcntl_8php_aa73e168e469c1f4819b960fc43c95ed8}} 
+\index{pcntl.php@{pcntl.php}!SI\_MESGQ@{SI\_MESGQ}}
+\index{SI\_MESGQ@{SI\_MESGQ}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SI\_MESGQ}{SI\_MESGQ}}
+{\footnotesize\ttfamily const S\+I\+\_\+\+M\+E\+S\+GQ -\/3}
+
+\mbox{\Hypertarget{pcntl_8php_a578745f77b649c9ca674faf557ebc256}\label{pcntl_8php_a578745f77b649c9ca674faf557ebc256}} 
+\index{pcntl.php@{pcntl.php}!SI\_QUEUE@{SI\_QUEUE}}
+\index{SI\_QUEUE@{SI\_QUEUE}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SI\_QUEUE}{SI\_QUEUE}}
+{\footnotesize\ttfamily const S\+I\+\_\+\+Q\+U\+E\+UE -\/1}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a5ee6b179fb3ee464f3680f16fe7d503b}\label{pcntl_8php_a5ee6b179fb3ee464f3680f16fe7d503b}} 
+\index{pcntl.php@{pcntl.php}!SI\_SIGIO@{SI\_SIGIO}}
+\index{SI\_SIGIO@{SI\_SIGIO}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SI\_SIGIO}{SI\_SIGIO}}
+{\footnotesize\ttfamily const S\+I\+\_\+\+S\+I\+G\+IO -\/5}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_abaef954835220cc31fdb524eb2c4e6b4}\label{pcntl_8php_abaef954835220cc31fdb524eb2c4e6b4}} 
+\index{pcntl.php@{pcntl.php}!SI\_TIMER@{SI\_TIMER}}
+\index{SI\_TIMER@{SI\_TIMER}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SI\_TIMER}{SI\_TIMER}}
+{\footnotesize\ttfamily const S\+I\+\_\+\+T\+I\+M\+ER -\/2}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_ace26d108a66660a3490b8be2af02ca2e}\label{pcntl_8php_ace26d108a66660a3490b8be2af02ca2e}} 
+\index{pcntl.php@{pcntl.php}!SI\_TKILL@{SI\_TKILL}}
+\index{SI\_TKILL@{SI\_TKILL}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SI\_TKILL}{SI\_TKILL}}
+{\footnotesize\ttfamily const S\+I\+\_\+\+T\+K\+I\+LL -\/6}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a2111a78f143af347ed8c82bbee4802ff}\label{pcntl_8php_a2111a78f143af347ed8c82bbee4802ff}} 
+\index{pcntl.php@{pcntl.php}!SI\_USER@{SI\_USER}}
+\index{SI\_USER@{SI\_USER}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SI\_USER}{SI\_USER}}
+{\footnotesize\ttfamily const S\+I\+\_\+\+U\+S\+ER 0}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a1111253a058638fc51cee4836b2b820f}\label{pcntl_8php_a1111253a058638fc51cee4836b2b820f}} 
+\index{pcntl.php@{pcntl.php}!SIG\_BLOCK@{SIG\_BLOCK}}
+\index{SIG\_BLOCK@{SIG\_BLOCK}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIG\_BLOCK}{SIG\_BLOCK}}
+{\footnotesize\ttfamily const S\+I\+G\+\_\+\+B\+L\+O\+CK 0}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a631d5f13df9b4bf42916fa24122780f1}\label{pcntl_8php_a631d5f13df9b4bf42916fa24122780f1}} 
+\index{pcntl.php@{pcntl.php}!SIG\_DFL@{SIG\_DFL}}
+\index{SIG\_DFL@{SIG\_DFL}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIG\_DFL}{SIG\_DFL}}
+{\footnotesize\ttfamily const S\+I\+G\+\_\+\+D\+FL 0}
+
+\mbox{\Hypertarget{pcntl_8php_a1e34fa921f9fd28d65ca68631f1675f7}\label{pcntl_8php_a1e34fa921f9fd28d65ca68631f1675f7}} 
+\index{pcntl.php@{pcntl.php}!SIG\_ERR@{SIG\_ERR}}
+\index{SIG\_ERR@{SIG\_ERR}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIG\_ERR}{SIG\_ERR}}
+{\footnotesize\ttfamily const S\+I\+G\+\_\+\+E\+RR -\/1}
+
+\mbox{\Hypertarget{pcntl_8php_a3f43cf5c7644485d39624480c7d00f0d}\label{pcntl_8php_a3f43cf5c7644485d39624480c7d00f0d}} 
+\index{pcntl.php@{pcntl.php}!SIG\_IGN@{SIG\_IGN}}
+\index{SIG\_IGN@{SIG\_IGN}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIG\_IGN}{SIG\_IGN}}
+{\footnotesize\ttfamily const S\+I\+G\+\_\+\+I\+GN 1}
+
+\mbox{\Hypertarget{pcntl_8php_a95889c82892f9bcd91bfcc0fd40c9d7f}\label{pcntl_8php_a95889c82892f9bcd91bfcc0fd40c9d7f}} 
+\index{pcntl.php@{pcntl.php}!SIG\_SETMASK@{SIG\_SETMASK}}
+\index{SIG\_SETMASK@{SIG\_SETMASK}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIG\_SETMASK}{SIG\_SETMASK}}
+{\footnotesize\ttfamily const S\+I\+G\+\_\+\+S\+E\+T\+M\+A\+SK 2}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a3d99d1fa76a3704cd8919592e0c956d5}\label{pcntl_8php_a3d99d1fa76a3704cd8919592e0c956d5}} 
+\index{pcntl.php@{pcntl.php}!SIG\_UNBLOCK@{SIG\_UNBLOCK}}
+\index{SIG\_UNBLOCK@{SIG\_UNBLOCK}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIG\_UNBLOCK}{SIG\_UNBLOCK}}
+{\footnotesize\ttfamily const S\+I\+G\+\_\+\+U\+N\+B\+L\+O\+CK 1}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a4b3476b97aad475035fbeb1096cf6ddf}\label{pcntl_8php_a4b3476b97aad475035fbeb1096cf6ddf}} 
+\index{pcntl.php@{pcntl.php}!SIGABRT@{SIGABRT}}
+\index{SIGABRT@{SIGABRT}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGABRT}{SIGABRT}}
+{\footnotesize\ttfamily const S\+I\+G\+A\+B\+RT 6}
+
+\mbox{\Hypertarget{pcntl_8php_ab3157c99860dfaa05c7e3c0e832ca3ba}\label{pcntl_8php_ab3157c99860dfaa05c7e3c0e832ca3ba}} 
+\index{pcntl.php@{pcntl.php}!SIGALRM@{SIGALRM}}
+\index{SIGALRM@{SIGALRM}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGALRM}{SIGALRM}}
+{\footnotesize\ttfamily const S\+I\+G\+A\+L\+RM 14}
+
+\mbox{\Hypertarget{pcntl_8php_a0e14c7f9a015bccf296f9a1cee8ea604}\label{pcntl_8php_a0e14c7f9a015bccf296f9a1cee8ea604}} 
+\index{pcntl.php@{pcntl.php}!SIGBABY@{SIGBABY}}
+\index{SIGBABY@{SIGBABY}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGBABY}{SIGBABY}}
+{\footnotesize\ttfamily const S\+I\+G\+B\+A\+BY 31}
+
+\mbox{\Hypertarget{pcntl_8php_ab5bf96bb27dc5b96cbf6823ad9ec1881}\label{pcntl_8php_ab5bf96bb27dc5b96cbf6823ad9ec1881}} 
+\index{pcntl.php@{pcntl.php}!SIGBUS@{SIGBUS}}
+\index{SIGBUS@{SIGBUS}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGBUS}{SIGBUS}}
+{\footnotesize\ttfamily const S\+I\+G\+B\+US 7}
+
+\mbox{\Hypertarget{pcntl_8php_a5f4733c66da47179da4e0c727240d670}\label{pcntl_8php_a5f4733c66da47179da4e0c727240d670}} 
+\index{pcntl.php@{pcntl.php}!SIGCHLD@{SIGCHLD}}
+\index{SIGCHLD@{SIGCHLD}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGCHLD}{SIGCHLD}}
+{\footnotesize\ttfamily const S\+I\+G\+C\+H\+LD 17}
+
+\mbox{\Hypertarget{pcntl_8php_ace5430b74ac2602d73db9d59295df0d0}\label{pcntl_8php_ace5430b74ac2602d73db9d59295df0d0}} 
+\index{pcntl.php@{pcntl.php}!SIGCLD@{SIGCLD}}
+\index{SIGCLD@{SIGCLD}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGCLD}{SIGCLD}}
+{\footnotesize\ttfamily const S\+I\+G\+C\+LD 17}
+
+\mbox{\Hypertarget{pcntl_8php_a50b0caa91e78ba3f2d508ba2e3f71c2e}\label{pcntl_8php_a50b0caa91e78ba3f2d508ba2e3f71c2e}} 
+\index{pcntl.php@{pcntl.php}!SIGCONT@{SIGCONT}}
+\index{SIGCONT@{SIGCONT}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGCONT}{SIGCONT}}
+{\footnotesize\ttfamily const S\+I\+G\+C\+O\+NT 18}
+
+\mbox{\Hypertarget{pcntl_8php_a7a7e38c0a1abd4c268f694a5e39c0900}\label{pcntl_8php_a7a7e38c0a1abd4c268f694a5e39c0900}} 
+\index{pcntl.php@{pcntl.php}!SIGFPE@{SIGFPE}}
+\index{SIGFPE@{SIGFPE}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGFPE}{SIGFPE}}
+{\footnotesize\ttfamily const S\+I\+G\+F\+PE 8}
+
+\mbox{\Hypertarget{pcntl_8php_a6c9d0ab386f59dedab75e0f6547aa7df}\label{pcntl_8php_a6c9d0ab386f59dedab75e0f6547aa7df}} 
+\index{pcntl.php@{pcntl.php}!SIGHUP@{SIGHUP}}
+\index{SIGHUP@{SIGHUP}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGHUP}{SIGHUP}}
+{\footnotesize\ttfamily const S\+I\+G\+H\+UP 1}
+
+\mbox{\Hypertarget{pcntl_8php_a5fc3453fbd19c0b958d0009e46aa19c1}\label{pcntl_8php_a5fc3453fbd19c0b958d0009e46aa19c1}} 
+\index{pcntl.php@{pcntl.php}!SIGILL@{SIGILL}}
+\index{SIGILL@{SIGILL}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGILL}{SIGILL}}
+{\footnotesize\ttfamily const S\+I\+G\+I\+LL 4}
+
+\mbox{\Hypertarget{pcntl_8php_a0dee92e3bcb84ab4cc22357eaa20ed48}\label{pcntl_8php_a0dee92e3bcb84ab4cc22357eaa20ed48}} 
+\index{pcntl.php@{pcntl.php}!SIGINT@{SIGINT}}
+\index{SIGINT@{SIGINT}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGINT}{SIGINT}}
+{\footnotesize\ttfamily const S\+I\+G\+I\+NT 2}
+
+\mbox{\Hypertarget{pcntl_8php_acd2d285f0a19613f81195b0ad22c9f11}\label{pcntl_8php_acd2d285f0a19613f81195b0ad22c9f11}} 
+\index{pcntl.php@{pcntl.php}!SIGIO@{SIGIO}}
+\index{SIGIO@{SIGIO}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGIO}{SIGIO}}
+{\footnotesize\ttfamily const S\+I\+G\+IO 29}
+
+\mbox{\Hypertarget{pcntl_8php_a525af1e7236e340a7eebb6da8b9556fc}\label{pcntl_8php_a525af1e7236e340a7eebb6da8b9556fc}} 
+\index{pcntl.php@{pcntl.php}!SIGIOT@{SIGIOT}}
+\index{SIGIOT@{SIGIOT}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGIOT}{SIGIOT}}
+{\footnotesize\ttfamily const S\+I\+G\+I\+OT 6}
+
+\mbox{\Hypertarget{pcntl_8php_a0487c976fc216c404ae65e7520dfe66b}\label{pcntl_8php_a0487c976fc216c404ae65e7520dfe66b}} 
+\index{pcntl.php@{pcntl.php}!SIGKILL@{SIGKILL}}
+\index{SIGKILL@{SIGKILL}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGKILL}{SIGKILL}}
+{\footnotesize\ttfamily const S\+I\+G\+K\+I\+LL 9}
+
+\mbox{\Hypertarget{pcntl_8php_a6b7d31697903ac6b994d5f5d0d5ae829}\label{pcntl_8php_a6b7d31697903ac6b994d5f5d0d5ae829}} 
+\index{pcntl.php@{pcntl.php}!SIGPIPE@{SIGPIPE}}
+\index{SIGPIPE@{SIGPIPE}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGPIPE}{SIGPIPE}}
+{\footnotesize\ttfamily const S\+I\+G\+P\+I\+PE 13}
+
+\mbox{\Hypertarget{pcntl_8php_a039504324ea518d8a57d5cebd5d951ff}\label{pcntl_8php_a039504324ea518d8a57d5cebd5d951ff}} 
+\index{pcntl.php@{pcntl.php}!SIGPOLL@{SIGPOLL}}
+\index{SIGPOLL@{SIGPOLL}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGPOLL}{SIGPOLL}}
+{\footnotesize\ttfamily const S\+I\+G\+P\+O\+LL 29}
+
+\mbox{\Hypertarget{pcntl_8php_a903bb01a1527d84503215e101174c437}\label{pcntl_8php_a903bb01a1527d84503215e101174c437}} 
+\index{pcntl.php@{pcntl.php}!SIGPROF@{SIGPROF}}
+\index{SIGPROF@{SIGPROF}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGPROF}{SIGPROF}}
+{\footnotesize\ttfamily const S\+I\+G\+P\+R\+OF 27}
+
+\mbox{\Hypertarget{pcntl_8php_a0d1fb1ccf7d1e6f2e79069fe8387f9c2}\label{pcntl_8php_a0d1fb1ccf7d1e6f2e79069fe8387f9c2}} 
+\index{pcntl.php@{pcntl.php}!SIGPWR@{SIGPWR}}
+\index{SIGPWR@{SIGPWR}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGPWR}{SIGPWR}}
+{\footnotesize\ttfamily const S\+I\+G\+P\+WR 30}
+
+\mbox{\Hypertarget{pcntl_8php_a4a4f8ca7e856f2a4df918bbdf4b4c340}\label{pcntl_8php_a4a4f8ca7e856f2a4df918bbdf4b4c340}} 
+\index{pcntl.php@{pcntl.php}!SIGQUIT@{SIGQUIT}}
+\index{SIGQUIT@{SIGQUIT}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGQUIT}{SIGQUIT}}
+{\footnotesize\ttfamily const S\+I\+G\+Q\+U\+IT 3}
+
+\mbox{\Hypertarget{pcntl_8php_a28202b6347250bd7212118a540180053}\label{pcntl_8php_a28202b6347250bd7212118a540180053}} 
+\index{pcntl.php@{pcntl.php}!SIGRTMAX@{SIGRTMAX}}
+\index{SIGRTMAX@{SIGRTMAX}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGRTMAX}{SIGRTMAX}}
+{\footnotesize\ttfamily const S\+I\+G\+R\+T\+M\+AX 64}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a93c68832df5602ba17edab0a724b1175}\label{pcntl_8php_a93c68832df5602ba17edab0a724b1175}} 
+\index{pcntl.php@{pcntl.php}!SIGRTMIN@{SIGRTMIN}}
+\index{SIGRTMIN@{SIGRTMIN}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGRTMIN}{SIGRTMIN}}
+{\footnotesize\ttfamily const S\+I\+G\+R\+T\+M\+IN 34}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a5ce4dfce0d342096d707cf391d932136}\label{pcntl_8php_a5ce4dfce0d342096d707cf391d932136}} 
+\index{pcntl.php@{pcntl.php}!SIGSEGV@{SIGSEGV}}
+\index{SIGSEGV@{SIGSEGV}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGSEGV}{SIGSEGV}}
+{\footnotesize\ttfamily const S\+I\+G\+S\+E\+GV 11}
+
+\mbox{\Hypertarget{pcntl_8php_afc1600b0f3509cd6d24ddf76f5fce441}\label{pcntl_8php_afc1600b0f3509cd6d24ddf76f5fce441}} 
+\index{pcntl.php@{pcntl.php}!SIGSTKFLT@{SIGSTKFLT}}
+\index{SIGSTKFLT@{SIGSTKFLT}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGSTKFLT}{SIGSTKFLT}}
+{\footnotesize\ttfamily const S\+I\+G\+S\+T\+K\+F\+LT 16}
+
+\mbox{\Hypertarget{pcntl_8php_a920ccd8d6458ea9649a45b812b980569}\label{pcntl_8php_a920ccd8d6458ea9649a45b812b980569}} 
+\index{pcntl.php@{pcntl.php}!SIGSTOP@{SIGSTOP}}
+\index{SIGSTOP@{SIGSTOP}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGSTOP}{SIGSTOP}}
+{\footnotesize\ttfamily const S\+I\+G\+S\+T\+OP 19}
+
+\mbox{\Hypertarget{pcntl_8php_a6e307d02704fdae1e684db9d85a0d1bb}\label{pcntl_8php_a6e307d02704fdae1e684db9d85a0d1bb}} 
+\index{pcntl.php@{pcntl.php}!SIGSYS@{SIGSYS}}
+\index{SIGSYS@{SIGSYS}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGSYS}{SIGSYS}}
+{\footnotesize\ttfamily const S\+I\+G\+S\+YS 31}
+
+\mbox{\Hypertarget{pcntl_8php_a38dc7d5824c8c0a2f96186b5f71be007}\label{pcntl_8php_a38dc7d5824c8c0a2f96186b5f71be007}} 
+\index{pcntl.php@{pcntl.php}!SIGTERM@{SIGTERM}}
+\index{SIGTERM@{SIGTERM}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGTERM}{SIGTERM}}
+{\footnotesize\ttfamily const S\+I\+G\+T\+E\+RM 15}
+
+\mbox{\Hypertarget{pcntl_8php_a39f003634b0ff4fefdbbbd0e80c84f1f}\label{pcntl_8php_a39f003634b0ff4fefdbbbd0e80c84f1f}} 
+\index{pcntl.php@{pcntl.php}!SIGTRAP@{SIGTRAP}}
+\index{SIGTRAP@{SIGTRAP}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGTRAP}{SIGTRAP}}
+{\footnotesize\ttfamily const S\+I\+G\+T\+R\+AP 5}
+
+\mbox{\Hypertarget{pcntl_8php_a85f86a13eede870baac23b07bad639d5}\label{pcntl_8php_a85f86a13eede870baac23b07bad639d5}} 
+\index{pcntl.php@{pcntl.php}!SIGTSTP@{SIGTSTP}}
+\index{SIGTSTP@{SIGTSTP}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGTSTP}{SIGTSTP}}
+{\footnotesize\ttfamily const S\+I\+G\+T\+S\+TP 20}
+
+\mbox{\Hypertarget{pcntl_8php_ab4c27ce481c881f59418e60e04ee8adb}\label{pcntl_8php_ab4c27ce481c881f59418e60e04ee8adb}} 
+\index{pcntl.php@{pcntl.php}!SIGTTIN@{SIGTTIN}}
+\index{SIGTTIN@{SIGTTIN}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGTTIN}{SIGTTIN}}
+{\footnotesize\ttfamily const S\+I\+G\+T\+T\+IN 21}
+
+\mbox{\Hypertarget{pcntl_8php_a772a170b387a48aafea2387a8facf994}\label{pcntl_8php_a772a170b387a48aafea2387a8facf994}} 
+\index{pcntl.php@{pcntl.php}!SIGTTOU@{SIGTTOU}}
+\index{SIGTTOU@{SIGTTOU}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGTTOU}{SIGTTOU}}
+{\footnotesize\ttfamily const S\+I\+G\+T\+T\+OU 22}
+
+\mbox{\Hypertarget{pcntl_8php_aa304eaf501e7d0dc45bec6eab3cfb874}\label{pcntl_8php_aa304eaf501e7d0dc45bec6eab3cfb874}} 
+\index{pcntl.php@{pcntl.php}!SIGURG@{SIGURG}}
+\index{SIGURG@{SIGURG}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGURG}{SIGURG}}
+{\footnotesize\ttfamily const S\+I\+G\+U\+RG 23}
+
+\mbox{\Hypertarget{pcntl_8php_a5524f66ff99c316e0e43af5745627e1f}\label{pcntl_8php_a5524f66ff99c316e0e43af5745627e1f}} 
+\index{pcntl.php@{pcntl.php}!SIGUSR1@{SIGUSR1}}
+\index{SIGUSR1@{SIGUSR1}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGUSR1}{SIGUSR1}}
+{\footnotesize\ttfamily const S\+I\+G\+U\+S\+R1 10}
+
+\mbox{\Hypertarget{pcntl_8php_aca8934a49af695b471caf71e1d2a218d}\label{pcntl_8php_aca8934a49af695b471caf71e1d2a218d}} 
+\index{pcntl.php@{pcntl.php}!SIGUSR2@{SIGUSR2}}
+\index{SIGUSR2@{SIGUSR2}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGUSR2}{SIGUSR2}}
+{\footnotesize\ttfamily const S\+I\+G\+U\+S\+R2 12}
+
+\mbox{\Hypertarget{pcntl_8php_a209f6caa8aea6f2a11faf937401488b3}\label{pcntl_8php_a209f6caa8aea6f2a11faf937401488b3}} 
+\index{pcntl.php@{pcntl.php}!SIGVTALRM@{SIGVTALRM}}
+\index{SIGVTALRM@{SIGVTALRM}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGVTALRM}{SIGVTALRM}}
+{\footnotesize\ttfamily const S\+I\+G\+V\+T\+A\+L\+RM 26}
+
+\mbox{\Hypertarget{pcntl_8php_ac39e21d8dfbacc9454e361e36e371584}\label{pcntl_8php_ac39e21d8dfbacc9454e361e36e371584}} 
+\index{pcntl.php@{pcntl.php}!SIGWINCH@{SIGWINCH}}
+\index{SIGWINCH@{SIGWINCH}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGWINCH}{SIGWINCH}}
+{\footnotesize\ttfamily const S\+I\+G\+W\+I\+N\+CH 28}
+
+\mbox{\Hypertarget{pcntl_8php_a2009f907338f85e1eeb8bfa36974e1d1}\label{pcntl_8php_a2009f907338f85e1eeb8bfa36974e1d1}} 
+\index{pcntl.php@{pcntl.php}!SIGXCPU@{SIGXCPU}}
+\index{SIGXCPU@{SIGXCPU}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGXCPU}{SIGXCPU}}
+{\footnotesize\ttfamily const S\+I\+G\+X\+C\+PU 24}
+
+\mbox{\Hypertarget{pcntl_8php_ad13dbbb9986151156ef76a9626cc6a43}\label{pcntl_8php_ad13dbbb9986151156ef76a9626cc6a43}} 
+\index{pcntl.php@{pcntl.php}!SIGXFSZ@{SIGXFSZ}}
+\index{SIGXFSZ@{SIGXFSZ}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{SIGXFSZ}{SIGXFSZ}}
+{\footnotesize\ttfamily const S\+I\+G\+X\+F\+SZ 25}
+
+\mbox{\Hypertarget{pcntl_8php_ab87110c16552b9769bb9049b25238baa}\label{pcntl_8php_ab87110c16552b9769bb9049b25238baa}} 
+\index{pcntl.php@{pcntl.php}!TRAP\_BRKPT@{TRAP\_BRKPT}}
+\index{TRAP\_BRKPT@{TRAP\_BRKPT}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{TRAP\_BRKPT}{TRAP\_BRKPT}}
+{\footnotesize\ttfamily const T\+R\+A\+P\+\_\+\+B\+R\+K\+PT 1}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_a1fe718a6d6af98afe3c9555db2874356}\label{pcntl_8php_a1fe718a6d6af98afe3c9555db2874356}} 
+\index{pcntl.php@{pcntl.php}!TRAP\_TRACE@{TRAP\_TRACE}}
+\index{TRAP\_TRACE@{TRAP\_TRACE}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{TRAP\_TRACE}{TRAP\_TRACE}}
+{\footnotesize\ttfamily const T\+R\+A\+P\+\_\+\+T\+R\+A\+CE 2}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3 }}\mbox{\Hypertarget{pcntl_8php_af7c8ece98bdc0380416e6c2ba10ab4aa}\label{pcntl_8php_af7c8ece98bdc0380416e6c2ba10ab4aa}} 
+\index{pcntl.php@{pcntl.php}!WCONTINUED@{WCONTINUED}}
+\index{WCONTINUED@{WCONTINUED}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{WCONTINUED}{WCONTINUED}}
+{\footnotesize\ttfamily const W\+C\+O\+N\+T\+I\+N\+U\+ED 8}
+
+\mbox{\Hypertarget{pcntl_8php_a59708065114efdf8854cfbb1358f7c0f}\label{pcntl_8php_a59708065114efdf8854cfbb1358f7c0f}} 
+\index{pcntl.php@{pcntl.php}!WNOHANG@{WNOHANG}}
+\index{WNOHANG@{WNOHANG}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{WNOHANG}{WNOHANG}}
+{\footnotesize\ttfamily const W\+N\+O\+H\+A\+NG 1}
+
+\mbox{\Hypertarget{pcntl_8php_aae95661f82e47f4ccc22efeb23115323}\label{pcntl_8php_aae95661f82e47f4ccc22efeb23115323}} 
+\index{pcntl.php@{pcntl.php}!WUNTRACED@{WUNTRACED}}
+\index{WUNTRACED@{WUNTRACED}!pcntl.php@{pcntl.php}}
+\doxysubsubsection{\texorpdfstring{WUNTRACED}{WUNTRACED}}
+{\footnotesize\ttfamily const W\+U\+N\+T\+R\+A\+C\+ED 2}
+

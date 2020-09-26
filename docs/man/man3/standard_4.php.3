@@ -1,0 +1,1245 @@
+.TH "vendor/jetbrains/phpstorm-stubs/standard/standard_4.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/standard/standard_4.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBerror_get_last\fP ()"
+.br
+.ti -1c
+.RI "\fBcall_user_func\fP ($\fBfunction\fP,\&.\&.\&. $parameter)"
+.br
+.ti -1c
+.RI "\fBcall_user_func_array\fP ($\fBfunction\fP, array $param_arr)"
+.br
+.ti -1c
+.RI "\fBcall_user_method\fP ($method_name, &$obj, $parameter=\fBnull\fP, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBcall_user_method_array\fP ($method_name, &$obj, array $params)"
+.br
+.ti -1c
+.RI "\fBforward_static_call\fP ($\fBfunction\fP, $parameter=\fBnull\fP, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBforward_static_call_array\fP ($\fBfunction\fP, array $parameters=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBserialize\fP ($value)"
+.br
+.ti -1c
+.RI "\fBunserialize\fP ($str, array $options=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBvar_dump\fP ($expression, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBvar_export\fP ($expression, $\fBreturn\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdebug_zval_dump\fP ($variable)"
+.br
+.ti -1c
+.RI "\fBprint_r\fP ($expression, $\fBreturn\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmemory_get_usage\fP ($real_usage=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmemory_get_peak_usage\fP ($real_usage=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBregister_shutdown_function\fP ($\fBfunction\fP, $parameter=\fBnull\fP, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBregister_tick_function\fP ($\fBfunction\fP, $arg=\fBnull\fP, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBunregister_tick_function\fP ($\fBfunction\fP)"
+.br
+.ti -1c
+.RI "\fBhighlight_file\fP ($filename, $\fBreturn\fP=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBshow_source\fP ($file_name, $\fBreturn\fP=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBhighlight_string\fP ($str, $\fBreturn\fP=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBhrtime\fP ($get_as_number=FALSE)"
+.br
+.ti -1c
+.RI "\fBphp_strip_whitespace\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBini_get\fP ($varname)"
+.br
+.ti -1c
+.RI "\fBini_get_all\fP ($extension=\fBnull\fP, $details=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBini_set\fP ($varname, $newvalue)"
+.br
+.ti -1c
+.RI "\fBini_alter\fP ($varname, $newvalue)"
+.br
+.ti -1c
+.RI "\fBini_restore\fP ($varname)"
+.br
+.ti -1c
+.RI "\fBget_include_path\fP ()"
+.br
+.ti -1c
+.RI "\fBset_include_path\fP ($new_include_path)"
+.br
+.ti -1c
+.RI "\fBrestore_include_path\fP ()"
+.br
+.ti -1c
+.RI "\fBsetcookie\fP ($name, $value='', $expire=0, $path='', $domain='', $secure=\fBfalse\fP, $httponly=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBsetcookie\fP ($name, $value='', array $options=[])"
+.br
+.ti -1c
+.RI "\fBsetrawcookie\fP ($name, $value='', $expire=0, $path='', $domain='', $secure=\fBfalse\fP, $httponly=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBsetrawcookie\fP ($name, $value='', array $options=[])"
+.br
+.ti -1c
+.RI "\fBheader\fP ($string, $replace=\fBtrue\fP, $\fBhttp_response_code\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBheader_remove\fP ($name=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBheaders_sent\fP (&$\fBfile\fP=\fBnull\fP, &$\fBline\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBheaders_list\fP ()"
+.br
+.ti -1c
+.RI "\fBconnection_aborted\fP ()"
+.br
+.ti -1c
+.RI "\fBconnection_status\fP ()"
+.br
+.ti -1c
+.RI "\fBignore_user_abort\fP ($value=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBparse_ini_file\fP ($filename, $process_sections=\fBfalse\fP, $scanner_mode=\fBINI_SCANNER_NORMAL\fP)"
+.br
+.ti -1c
+.RI "\fBparse_ini_string\fP ($ini, $process_sections=\fBfalse\fP, $scanner_mode=\fBINI_SCANNER_NORMAL\fP)"
+.br
+.ti -1c
+.RI "\fBis_uploaded_file\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBmove_uploaded_file\fP ($filename, $destination)"
+.br
+.ti -1c
+.RI "\fBnet_get_interfaces\fP ()"
+.br
+.ti -1c
+.RI "\fBgethostbyaddr\fP ($ip_address)"
+.br
+.ti -1c
+.RI "\fBgethostbyname\fP ($hostname)"
+.br
+.ti -1c
+.RI "\fBgethostbynamel\fP ($hostname)"
+.br
+.ti -1c
+.RI "\fBgethostname\fP ()"
+.br
+.ti -1c
+.RI "\fBdns_check_record\fP ($host, $type='MX')"
+.br
+.ti -1c
+.RI "\fBcheckdnsrr\fP ($host, $type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdns_get_mx\fP ($hostname, array &$mxhosts, array &$weight=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBgetmxrr\fP ($hostname, array &$mxhosts, array &$weight=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdns_get_record\fP ($hostname, $type=\fBDNS_ANY\fP, array &$authns=\fBnull\fP, array &$addtl=\fBnull\fP, &$raw=\fBfalse\fP)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "call_user_func ( $function,  $parameter)"
+Call a user function given by the first parameter \fBcallback $function \fP The function to be called\&. Class methods may also be invoked statically using this function by passing array($classname, $methodname) to this parameter\&. Additionally class methods of an object instance may be called by passing array($objectinstance, $methodname) to this parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parameter\fP [optional] 
+.RE
+.PP
+Zero or more parameters to be passed to the function\&. 
+.PP
+Note that the parameters for call_user_func are not passed by reference\&. call_user_func example and references &example\&.outputs; 
+.PP
+\fBReturns\fP
+.RS 4
+mixed the function result, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "call_user_func_array ( $function, array $param_arr)"
+Call a user function given with an array of parameters \fBcallback $function \fP The function to be called\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$param_arr\fP 
+.RE
+.PP
+The parameters to be passed to the function, as an indexed array\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed the function result, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "call_user_method ( $method_name, & $obj,  $parameter = \fC\fBnull\fP\fP,  $_ = \fC\fBnull\fP\fP)"
+Call a user method on an specific object \fBdeprecated 269\&. string $method_name  object $obj  mixed $parameter [optional]  mixed $_ [optional]  mixed  4\&.0  5\&.0 \fP
+.SS "call_user_method_array ( $method_name, & $obj, array $params)"
+Call a user method given with an array of parameters \fBdeprecated 270\&. string $method_name  object $obj  array $params  mixed  4\&.0\&.5  5\&.0 \fP
+.SS "checkdnsrr ( $host,  $type = \fC\fBnull\fP\fP)"
+Check DNS records corresponding to a given Internet host name or IP address \fBstring $host \fP host may either be the IP address in dotted-quad notation or the host name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP [optional] 
+.RE
+.PP
+type may be any one of: \fBA\fP, MX, NS, SOA, PTR, CNAME, AAAA, A6, SRV, NAPTR, TXT or ANY\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if any records are found; returns false if no records were found or if an error occurred\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "connection_aborted ()"
+Check whether client disconnected \fBint 1 if client disconnected, 0 otherwise\&.  4\&.0  5\&.0 \fP
+.SS "connection_status ()"
+Returns connection status bitfield \fBint the connection status bitfield, which can be used against the CONNECTION_XXX constants to determine the connection status\&.  4\&.0  5\&.0 \fP
+.SS "debug_zval_dump ( $variable)"
+Dumps a string representation of an internal zend value to output \fBmixed $variable \fP The variable being evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dns_check_record ( $host,  $type = \fC'MX'\fP)"
+<function>checkdnsrr</function> \fB$host \fP \fBhost\fP may either be the IP address in dotted-quad notation or the host name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP [optional] 
+.RE
+.PP
+\fBtype\fP may be any one of: \fBA\fP, MX, NS, SOA, PTR, CNAME, AAAA, A6, SRV, NAPTR, TXT or ANY\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP if any records are found; returns \fBFALSE\fP if no records were found or if an error occurred\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "dns_get_mx ( $hostname, array & $mxhosts, array & $weight = \fC\fBnull\fP\fP)"
+<function>getmxrr</function> \fB$hostname  $mxhosts  $weight [optional]  5\&.0 \fP
+.SS "dns_get_record ( $hostname,  $type = \fC\fBDNS_ANY\fP\fP, array & $authns = \fC\fBnull\fP\fP, array & $addtl = \fC\fBnull\fP\fP, & $raw = \fC\fBfalse\fP\fP)"
+Fetch DNS Resource Records associated with a hostname \fBstring $hostname \fP hostname should be a valid DNS hostname such as 'www\&.example\&.com'\&. Reverse lookups can be generated using in-addr\&.arpa notation, but gethostbyaddr is more suitable for the majority of reverse lookups\&. 
+.PP
+Per DNS standards, email addresses are given in user\&.host format (for example: hostmaster\&.example\&.com as opposed to hostmaster@example.com), be sure to check this value and modify if necessary before using it with a functions such as mail\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP [optional] 
+.RE
+.PP
+By default, dns_get_record will search for any resource records associated with hostname\&. To limit the query, specify the optional type parameter\&. May be any one of the following: DNS_A, DNS_CNAME, DNS_HINFO, DNS_MX, DNS_NS, DNS_PTR, DNS_SOA, DNS_TXT, DNS_AAAA, DNS_SRV, DNS_NAPTR, DNS_A6, DNS_ALL or DNS_ANY\&. 
+.PP
+Because of eccentricities in the performance of libresolv between platforms, DNS_ANY will not always return every record, the slower DNS_ALL will collect all records more reliably\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$authns\fP [optional] 
+.RE
+.PP
+Passed by reference and, if given, will be populated with Resource Records for the Authoritative Name Servers\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$addtl\fP [optional] 
+.RE
+.PP
+Passed by reference and, if given, will be populated with any Additional Records\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$raw\fP [optional] 
+.RE
+.PP
+In case of raw mode, we query only the requested type instead of looping type by type before going with the additional info stuff\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array This function returns an array of associative arrays\&. Each associative array contains at minimum the following keys: DNS attributes 
+.RE
+.PP
+.PP
+Attribute 
+.PP
+Meaning  
+.PP
+host 
+.PP
+The record in the DNS namespace to which the rest of the associated data refers\&.   
+.PP
+class 
+.PP
+dns_get_record only returns Internet class records and as such this parameter will always return IN\&.   
+.PP
+type 
+.PP
+String containing the record type\&. Additional attributes will also be contained in the resulting array dependant on the value of type\&. See table below\&.   
+.PP
+ttl 
+.PP
+'Time To Live' remaining for this record\&. This will not equal the record's original ttl, but will rather equal the original ttl minus whatever length of time has passed since the authoritative name server was queried\&.   
+.PP
+keys in associative arrays dependant on 'type' 
+.PP
+Type 
+.PP
+Extra Columns  
+.PP
+\fBA\fP 
+.PP
+ip: An IPv4 addresses in dotted decimal notation\&.   
+.PP
+MX 
+.PP
+pri: Priority of mail exchanger\&. Lower numbers indicate greater priority\&. target: FQDN of the mail exchanger\&. See also dns_get_mx\&.   
+.PP
+CNAME 
+.PP
+target: FQDN of location in DNS namespace to which the record is aliased\&.   
+.PP
+NS 
+.PP
+target: FQDN of the name server which is authoritative for this hostname\&.   
+.PP
+PTR 
+.PP
+target: Location within the DNS namespace to which this record points\&.   
+.PP
+TXT 
+.PP
+txt: Arbitrary string data associated with this record\&.   
+.PP
+HINFO 
+.PP
+cpu: IANA number designating the CPU of the machine referenced by this record\&. os: IANA number designating the Operating System on the machine referenced by this record\&. See IANA's Operating System Names for the meaning of these values\&.   
+.PP
+SOA 
+.PP
+mname: FQDN of the machine from which the resource records originated\&. rname: Email address of the administrative contain for this domain\&. serial: Serial # of this revision of the requested domain\&. refresh: Refresh interval (seconds) secondary name servers should use when updating remote copies of this domain\&. retry: Length of time (seconds) to wait after a failed refresh before making a second attempt\&. expire: Maximum length of time (seconds) a secondary DNS server should retain remote copies of the zone data without a successful refresh before discarding\&. minimum-ttl: Minimum length of time (seconds) a client can continue to use a DNS resolution before it should request a new resolution from the server\&. Can be overridden by individual resource records\&.   
+.PP
+AAAA 
+.PP
+ipv6: IPv6 address   
+.PP
+A6(PHP >= 5\&.1\&.0) 
+.PP
+masklen: Length (in bits) to inherit from the target specified by chain\&. ipv6: Address for this specific record to merge with chain\&. chain: Parent record to merge with ipv6 data\&.   
+.PP
+SRV 
+.PP
+pri: (Priority) lowest priorities should be used first\&. weight: Ranking to weight which of commonly prioritized targets should be chosen at random\&. target and port: hostname and port where the requested service can be found\&. For additional information see: RFC 2782   
+.PP
+NAPTR 
+.PP
+order and pref: Equivalent to pri and weight above\&. flags, services, regex, and replacement: Parameters as defined by RFC 2915\&.   
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "error_get_last ()"
+Get the last occurred error \fBarray an associative array describing the last error with keys 'type', 'message', 'file' and 'line'\&. Returns  if there hasn't been an error yet\&.  5\&.2 \fP
+.SS "forward_static_call ( $function,  $parameter = \fC\fBnull\fP\fP,  $_ = \fC\fBnull\fP\fP)"
+Call a static method \fBcallback $function \fP The function or method to be called\&. This parameter may be an array, with the name of the class, and the method, or a string, with a function name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parameter\fP [optional] 
+.RE
+.PP
+Zero or more parameters to be passed to the function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+mixed the function result, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "forward_static_call_array ( $function, array $parameters = \fC\fBnull\fP\fP)"
+Call a static method and pass the arguments as array \fBcallback $function \fP The function or method to be called\&. This parameter may be an , with the name of the class, and the method, or a , with a function name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parameters\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+mixed the function result, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "get_include_path ()"
+Gets the current include_path configuration option \fBstring the path, as a string\&.  4\&.3  5\&.0 \fP
+.SS "gethostbyaddr ( $ip_address)"
+Get the Internet host name corresponding to a given IP address \fBstring $ip_address \fP The host IP address\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the host name or the unmodified ip_address on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gethostbyname ( $hostname)"
+Get the IPv4 address corresponding to a given Internet host name \fBstring $hostname \fP The host name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the IPv4 address or a string containing the unmodified hostname on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gethostbynamel ( $hostname)"
+Get a list of IPv4 addresses corresponding to a given Internet host 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 name \fBstring $hostname \fP The host name\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array an array of IPv4 addresses or false if hostname could not be resolved\&. 
+.RE
+.PP
+
+.SS "gethostname ()"
+Gets the host name \fBstring|false a string with the hostname on success, otherwise false is returned\&.  5\&.3 \fP
+.SS "getmxrr ( $hostname, array & $mxhosts, array & $weight = \fC\fBnull\fP\fP)"
+Get MX records corresponding to a given Internet host name \fBstring $hostname \fP The Internet host name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mxhosts\fP 
+.RE
+.PP
+\fBA\fP list of the MX records found is placed into the array mxhosts\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$weight\fP [optional] 
+.RE
+.PP
+If the weight array is given, it will be filled with the weight information gathered\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if any records are found; returns false if no records were found or if an error occurred\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "header ( $string,  $replace = \fC\fBtrue\fP\fP,  $http_response_code = \fC\fBnull\fP\fP)"
+Send a raw HTTP header \fBstring $string \fP The header string\&. 
+.PP
+There are two special-case header calls\&. The first is a header that starts with the string 'HTTP/' (case is not significant), which will be used to figure out the HTTP status code to send\&. For example, if you have configured Apache to use a PHP script to handle requests for missing files (using the ErrorDocument directive), you may want to make sure that your script generates the proper status code\&. 
+.PP
+The second special case is the 'Location:' header\&. Not only does it send this header back to the browser, but it also returns a REDIRECT (302) status code to the browser unless the 201 or a 3xx status code has already been set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$replace\fP [optional] 
+.RE
+.PP
+The optional replace parameter indicates whether the header should replace a previous similar header, or add a second header of the same type\&. By default it will replace, but if you pass in false as the second argument you can force multiple headers of the same type\&. For example: 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$http_response_code\fP [optional] 
+.RE
+.PP
+Forces the HTTP response code to the specified value\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "header_remove ( $name = \fC\fBnull\fP\fP)"
+Remove previously set headers \fBstring $name [optional] \fP The header name to be removed\&. 
+.PP
+This parameter is case-insensitive\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "headers_list ()"
+Returns a list of response headers sent (or ready to send) \fBarray a numerically indexed array of headers\&.  5\&.0 \fP
+.SS "headers_sent (& $file = \fC\fBnull\fP\fP, & $line = \fC\fBnull\fP\fP)"
+Checks if or where headers have been sent \fBstring $file [optional] \fP If the optional file and line parameters are set, headers_sent will put the PHP source file name and line number where output started in the file and line variables\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$line\fP [optional] 
+.RE
+.PP
+The line number where the output started\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool headers_sent will return false if no HTTP headers have already been sent or true otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "highlight_file ( $filename,  $return = \fC\fBfalse\fP\fP)"
+Syntax highlighting of a file \fBstring $filename \fP Path to the PHP file to be highlighted\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$return\fP [optional] 
+.RE
+.PP
+Set this parameter to true to make this function return the highlighted code\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|bool If return is set to true, returns the highlighted code as a string instead of printing it out\&. Otherwise, it will return true on success, false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "highlight_string ( $str,  $return = \fC\fBfalse\fP\fP)"
+Syntax highlighting of a string \fBstring $str \fP The PHP code to be highlighted\&. This should include the opening tag\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$return\fP [optional] 
+.RE
+.PP
+Set this parameter to true to make this function return the highlighted code\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|bool If return is set to true, returns the highlighted code as a string instead of printing it out\&. Otherwise, it will return true on success, false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "hrtime ( $get_as_number = \fCFALSE\fP)"
+Get the system's high resolution time \fBbool $get_as_number \fPWhether the high resolution time should be returned as array or number\&.
+.PP
+\fBSince\fP
+.RS 4
+7\&.3 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int[]|int|float Returns an array of integers in the form [seconds, nanoseconds], if the parameter get_as_number is false\&. Otherwise the nanoseconds are returned as integer (64bit platforms) or float (32bit platforms)\&. 
+.RE
+.PP
+
+.SS "ignore_user_abort ( $value = \fC\fBnull\fP\fP)"
+Set whether a client disconnect should abort script execution \fBstring $value [optional] \fP If set, this function will set the ignore_user_abort ini setting to the given value\&. If not, this function will only return the previous setting without changing it\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the previous setting, as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ini_alter ( $varname,  $newvalue)"
+<function>ini_set</function> \fBhttps://php.net/manual/en/ini.list.php  $varname  $newvalue  4\&.0  5\&.0 \fP
+.SS "ini_get ( $varname)"
+Gets the value of a configuration option \fBhttps://php.net/manual/en/ini.list.php  string $varname \fP The configuration option name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the value of the configuration option as a string on success, or an empty string on failure or for null values\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ini_get_all ( $extension = \fC\fBnull\fP\fP,  $details = \fC\fBnull\fP\fP)"
+Gets all configuration options \fBhttps://php.net/manual/en/ini.list.php  string $extension [optional] \fP An optional extension name\&. If set, the function return only options specific for that extension\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$details\fP [optional] 
+.RE
+.PP
+Retrieve details settings or only the current value for each setting\&. Default is true (retrieve details)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an associative array with directive name as the array key\&. 
+.RE
+.PP
+.PP
+When details is true (default) the array will contain global_value (set in &php\&.ini;), local_value (perhaps set with ini_set or ), and access (the access level)\&. 
+.PP
+When details is false the value will be the current value of the option\&. 
+.PP
+See the manual section for information on what access levels mean\&. 
+.PP
+It's possible for a directive to have multiple access levels, which is why access shows the appropriate bitmask values\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ini_restore ( $varname)"
+Restores the value of a configuration option \fBhttps://php.net/manual/en/ini.list.php  string $varname \fP The configuration option name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ini_set ( $varname,  $newvalue)"
+Sets the value of a configuration option \fBhttps://php.net/manual/en/ini.list.php  string $varname \fP 
+.PP
+Not all the available options can be changed using ini_set\&. There is a list of all available options in the appendix\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$newvalue\fP 
+.RE
+.PP
+The new value for the option\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the old value on success, false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "is_uploaded_file ( $filename)"
+Tells whether the file was uploaded via HTTP POST \fBstring $filename \fP The filename being checked\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "memory_get_peak_usage ( $real_usage = \fC\fBnull\fP\fP)"
+Returns the peak of memory allocated by PHP \fBbool $real_usage [optional] \fP Set this to true to get the real size of memory allocated from system\&. If not set or false only the memory used by emalloc() is reported\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the memory peak in bytes\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "memory_get_usage ( $real_usage = \fC\fBnull\fP\fP)"
+Returns the amount of memory allocated to PHP \fBbool $real_usage [optional] \fP Set this to true to get the real size of memory allocated from system\&. If not set or false only the memory used by emalloc() is reported\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the memory amount in bytes\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "move_uploaded_file ( $filename,  $destination)"
+Moves an uploaded file to a new location \fBstring $filename \fP The filename of the uploaded file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$destination\fP 
+.RE
+.PP
+The destination of the moved file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool If filename is not a valid upload file, then no action will occur, and move_uploaded_file will return false\&. 
+.RE
+.PP
+.PP
+If filename is a valid upload file, but cannot be moved for some reason, no action will occur, and move_uploaded_file will return false\&. Additionally, a warning will be issued\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "net_get_interfaces ()"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.3 
+.RE
+.PP
+
+.SS "parse_ini_file ( $filename,  $process_sections = \fC\fBfalse\fP\fP,  $scanner_mode = \fC\fBINI_SCANNER_NORMAL\fP\fP)"
+Parse a configuration file \fBstring $filename \fP The filename of the ini file being parsed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$process_sections\fP [optional] 
+.RE
+.PP
+By setting the process_sections parameter to true, you get a multidimensional array, with the section names and settings included\&. The default for process_sections is false 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$scanner_mode\fP [optional] 
+.RE
+.PP
+Can either be INI_SCANNER_NORMAL (default) or INI_SCANNER_RAW\&. If INI_SCANNER_RAW is supplied, then option values will not be parsed\&. 
+.PP
+As of PHP 5\&.6\&.1 can also be specified as \fB\fCINI_SCANNER_TYPED\fP\fP\&. In this mode boolean, null and integer types are preserved when possible\&. String values \fI'true'\fP, \fI'on'\fP and \fI'yes'\fP are converted to \fBTRUE\fP\&. \fI'false'\fP, \fI'off'\fP, \fI'no'\fP and \fI'none'\fP are considered \fBFALSE\fP\&. \fI'null'\fP is converted to \fBNULL\fP in typed mode\&. Also, all numeric strings are converted to integer type if it is possible\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false The settings are returned as an associative array on success, and false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "parse_ini_string ( $ini,  $process_sections = \fC\fBfalse\fP\fP,  $scanner_mode = \fC\fBINI_SCANNER_NORMAL\fP\fP)"
+Parse a configuration string \fBstring $ini \fP The contents of the ini file being parsed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$process_sections\fP [optional] 
+.RE
+.PP
+By setting the process_sections parameter to true, you get a multidimensional array, with the section names and settings included\&. The default for process_sections is false 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$scanner_mode\fP [optional] 
+.RE
+.PP
+Can either be INI_SCANNER_NORMAL (default) or INI_SCANNER_RAW\&. If INI_SCANNER_RAW is supplied, then option values will not be parsed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false The settings are returned as an associative array on success, and false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "php_strip_whitespace ( $filename)"
+Return source with stripped comments and whitespace \fBstring $filename \fP Path to the PHP file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The stripped source code will be returned on success, or an empty string on failure\&. 
+.RE
+.PP
+.PP
+This function works as described as of PHP 5\&.0\&.1\&. Before this it would only return an empty string\&. For more information on this bug and its prior behavior, see bug report #29606\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "print_r ( $expression,  $return = \fC\fBnull\fP\fP)"
+Prints human-readable information about a variable \fBmixed $expression \fP The expression to be printed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$return\fP [optional] 
+.RE
+.PP
+If you would like to capture the output of print_r, use the return parameter\&. If this parameter is set to true, print_r will return its output, instead of printing it (which it does by default)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|true If given a string, integer or float, the value itself will be printed\&. If given an array, values will be presented in a format that shows keys and elements\&. Similar notation is used for objects\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "register_shutdown_function ( $function,  $parameter = \fC\fBnull\fP\fP,  $_ = \fC\fBnull\fP\fP)"
+Register a function for execution on shutdown \fBcallback $function \fP The shutdown function to register\&. 
+.PP
+The shutdown functions are called as the part of the request so that it's possible to send the output from them\&. There is currently no way to process the data with output buffering functions in the shutdown function\&. 
+.PP
+Shutdown functions are called after closing all opened output buffers thus, for example, its output will not be compressed if zlib\&.output_compression is enabled\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parameter\fP [optional] 
+.RE
+.PP
+It is possible to pass parameters to the shutdown function by passing additional parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "register_tick_function ( $function,  $arg = \fC\fBnull\fP\fP,  $_ = \fC\fBnull\fP\fP)"
+Register a function for execution on each tick \fBcallback $function \fP The function name as a string, or an array consisting of an object and a method\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$arg\fP [optional] 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "restore_include_path ()"
+Restores the value of the include_path configuration option \fBvoid  4\&.3  5\&.0  deprecated 271\&. \fP
+.SS "serialize ( $value)"
+Generates a storable representation of a value \fBmixed $value \fP The value to be serialized\&. serialize handles all types, except the resource-type\&. You can even serialize arrays that contain references to itself\&. Circular references inside the array/object you are serializing will also be stored\&. Any other reference will be lost\&. 
+.PP
+When serializing objects, PHP will attempt to call the member function __sleep prior to serialization\&. This is to allow the object to do any last minute clean-up, etc\&. prior to being serialized\&. Likewise, when the object is restored using unserialize the __wakeup member function is called\&. 
+.PP
+Object's private members have the class name prepended to the member name; protected members have a '*' prepended to the member name\&. These prepended values have null bytes on either side\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string containing a byte-stream representation of value that can be stored anywhere\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "set_include_path ( $new_include_path)"
+Sets the include_path configuration option \fBstring $new_include_path \fP The new value for the include_path 
+.PP
+\fBReturns\fP
+.RS 4
+string|bool the old include_path on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "setcookie ( $name,  $value = \fC''\fP,  $expire = \fC0\fP,  $path = \fC''\fP,  $domain = \fC''\fP,  $secure = \fC\fBfalse\fP\fP,  $httponly = \fC\fBfalse\fP\fP)"
+Send a cookie \fBstring $name \fP The name of the cookie\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP [optional] 
+.RE
+.PP
+The value of the cookie\&. This value is stored on the clients computer; do not store sensitive information\&. Assuming the name is 'cookiename', this value is retrieved through $_COOKIE['cookiename'] 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$expire\fP [optional] 
+.RE
+.PP
+The time the cookie expires\&. This is a Unix timestamp so is in number of seconds since the epoch\&. In other words, you'll most likely set this with the time function plus the number of seconds before you want it to expire\&. Or you might use mktime\&. \fBtime()\fP+60*60*24*30 will set the cookie to expire in 30 days\&. If set to 0, or omitted, the cookie will expire at the end of the session (when the browser closes)\&. 
+.PP
+You may notice the expire parameter takes on a Unix timestamp, as opposed to the date format Wdy, DD-Mon-YYYY HH:MM:SS GMT, this is because PHP does this conversion internally\&. 
+.PP
+expire is compared to the client's time which can differ from server's time\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$path\fP [optional] 
+.RE
+.PP
+The path on the server in which the cookie will be available on\&. If set to '/', the cookie will be available within the entire domain\&. If set to '/foo/', the cookie will only be available within the /foo/ directory and all sub-directories such as /foo/bar/ of domain\&. The default value is the current directory that the cookie is being set in\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$domain\fP [optional] 
+.RE
+.PP
+The domain that the cookie is available\&. To make the cookie available on all subdomains of example\&.com then you'd set it to '\&.example\&.com'\&. The \&. is not required but makes it compatible with more browsers\&. Setting it to www\&.example\&.com will make the cookie only available in the www subdomain\&. Refer to tail matching in the spec for details\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$secure\fP [optional] 
+.RE
+.PP
+Indicates that the cookie should only be transmitted over a secure HTTPS connection from the client\&. When set to true, the cookie will only be set if a secure connection exists\&. On the server-side, it's on the programmer to send this kind of cookie only on secure connection (e\&.g\&. with respect to $_SERVER['HTTPS'])\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$httponly\fP [optional] 
+.RE
+.PP
+When true the cookie will be made accessible only through the HTTP protocol\&. This means that the cookie won't be accessible by scripting languages, such as JavaScript\&. This setting can effectively help to reduce identity theft through XSS attacks (although it is not supported by all browsers)\&. Added in PHP 5\&.2\&.0\&. true or false 
+.PP
+\fBReturns\fP
+.RS 4
+bool If output exists prior to calling this function, setcookie will fail and return false\&. If setcookie successfully runs, it will return true\&. This does not indicate whether the user accepted the cookie\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "setcookie ( $name,  $value = \fC''\fP, array $options = \fC[]\fP)"
+Send a cookie
+.PP
+\fBstring $name The name of the cookie\&.  string $value [optional] The value of the cookie\&. This value is stored on the clients computer; do not store sensitive information\&. Assuming the name is 'cookiename', this value is retrieved through $_COOKIE['cookiename']  array $options [optional] An associative array which may have any of the keys expires, path, domain, secure, httponly and samesite\&. The values have the same meaning as described for the parameters with the same name\&. The value of the samesite element should be either Lax or Strict\&. If any of the allowed options are not given, their default values are the same as the default values of the explicit parameters\&. If the samesite element is omitted, no SameSite cookie attribute is set\&.  bool If output exists prior to calling this function, setcookie will fail and return false\&. If setcookie successfully runs, it will return true\&. This does not indicate whether the user accepted the cookie\&.  7\&.3 \fP
+.SS "setrawcookie ( $name,  $value = \fC''\fP,  $expire = \fC0\fP,  $path = \fC''\fP,  $domain = \fC''\fP,  $secure = \fC\fBfalse\fP\fP,  $httponly = \fC\fBfalse\fP\fP)"
+Send a cookie without urlencoding the cookie value \fBstring $name  string $value [optional]  int $expire [optional]  string $path [optional]  string $domain [optional]  bool $secure [optional]  bool $httponly [optional]  bool true on success or false on failure\&.  5\&.0 \fP
+.SS "setrawcookie ( $name,  $value = \fC''\fP, array $options = \fC[]\fP)"
+Send a cookie without urlencoding the cookie value
+.PP
+\fBstring $name The name of the cookie\&.  string $value [optional] The value of the cookie\&. This value is stored on the clients computer; do not store sensitive information\&. Assuming the name is 'cookiename', this value is retrieved through $_COOKIE['cookiename']  array $options [optional] An associative array which may have any of the keys expires, path, domain, secure, httponly and samesite\&. The values have the same meaning as described for the parameters with the same name\&. The value of the samesite element should be either Lax or Strict\&. If any of the allowed options are not given, their default values are the same as the default values of the explicit parameters\&. If the samesite element is omitted, no SameSite cookie attribute is set\&.  bool If output exists prior to calling this function, setcookie will fail and return false\&. If setcookie successfully runs, it will return true\&. This does not indicate whether the user accepted the cookie\&. \fP
+.SS "show_source ( $file_name,  $return = \fC\fBfalse\fP\fP)"
+<function>highlight_file</function> \fB$file_name  $return [optional]  4\&.0  5\&.0 \fP
+.SS "unregister_tick_function ( $function)"
+De-register a function for execution on each tick \fBcallable $function \fP The function name as a string, or an array consisting of an object and a method\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "unserialize ( $str, array $options = \fC\fBnull\fP\fP)"
+Creates a PHP value from a stored representation \fBstring $str \fP The serialized string\&. 
+.PP
+If the variable being unserialized is an object, after successfully reconstructing the object PHP will automatically attempt to call the __wakeup member function (if it exists)\&. 
+.PP
+unserialize_callback_func directive 
+.PP
+It's possible to set a callback-function which will be called, if an undefined class should be instantiated during unserializing\&. (to prevent getting an incomplete object '__PHP_Incomplete_Class'\&.) Use your &php\&.ini;, ini_set or  to define 'unserialize_callback_func'\&. Everytime an undefined class should be instantiated, it'll be called\&. To disable this feature just empty this setting\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+Any options to be provided to \fBunserialize()\fP, as an associative array\&.
+.PP
+Either an array of class names which should be accepted, FALSE to accept no classes, or TRUE to accept all classes\&. If this option is defined and \fBunserialize()\fP encounters an object of a class that isn't to be accepted, then the object will be instantiated as \fB__PHP_Incomplete_Class\fP instead\&. Omitting this option is the same as defining it as TRUE: PHP will attempt to instantiate objects of any class\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed The converted value is returned, and can be a boolean, integer, float, string, array or object\&. 
+.RE
+.PP
+.PP
+In case the passed string is not unserializeable, false is returned and E_NOTICE is issued\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "var_dump ( $expression,  $_ = \fC\fBnull\fP\fP)"
+Dumps information about a variable \fBmixed $expression \fP The variable you want to export\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "var_export ( $expression,  $return = \fC\fBnull\fP\fP)"
+Outputs or returns a parsable string representation of a variable \fBmixed $expression \fP The variable you want to export\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$return\fP [optional] 
+.RE
+.PP
+If used and set to true, var_export will return the variable representation instead of outputing it\&. 
+.PP
+&note\&.uses-ob; 
+.PP
+\fBReturns\fP
+.RS 4
+string|null the variable representation when the return parameter is used and evaluates to true\&. Otherwise, this function will return \&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

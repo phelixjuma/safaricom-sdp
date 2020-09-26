@@ -1,0 +1,187 @@
+.TH "vendor/jetbrains/phpstorm-stubs/xmlrpc/xmlrpc.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/xmlrpc/xmlrpc.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBxmlrpc_encode\fP ($value)"
+.br
+.ti -1c
+.RI "\fBxmlrpc_decode\fP ($\fBxml\fP, $encoding='iso\-8859\-1')"
+.br
+.ti -1c
+.RI "\fBxmlrpc_decode_request\fP ($\fBxml\fP, &$method, $encoding=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBxmlrpc_encode_request\fP ($method, $params, array $output_options=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBxmlrpc_get_type\fP ($value)"
+.br
+.ti -1c
+.RI "\fBxmlrpc_set_type\fP (&$value, $type)"
+.br
+.ti -1c
+.RI "\fBxmlrpc_is_fault\fP (array $arg)"
+.br
+.ti -1c
+.RI "\fBxmlrpc_server_create\fP ()"
+.br
+.ti -1c
+.RI "\fBxmlrpc_server_destroy\fP ($server)"
+.br
+.ti -1c
+.RI "\fBxmlrpc_server_register_method\fP ($server, $method_name, $\fBfunction\fP)"
+.br
+.ti -1c
+.RI "\fBxmlrpc_server_call_method\fP ($server, $\fBxml\fP, $user_data, array $output_options=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBxmlrpc_parse_method_descriptions\fP ($\fBxml\fP)"
+.br
+.ti -1c
+.RI "\fBxmlrpc_server_add_introspection_data\fP ($server, array $desc)"
+.br
+.ti -1c
+.RI "\fBxmlrpc_server_register_introspection_callback\fP ($server, $\fBfunction\fP)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "xmlrpc_decode ( $xml,  $encoding = \fC'iso\-8859\-1'\fP)"
+Decodes XML into native PHP types \fBstring $xml \fP XML response returned by XMLRPC method\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP [optional] 
+.RE
+.PP
+Input encoding supported by iconv\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed either an array, or an integer, or a string, or a boolean according to the response returned by the XMLRPC method\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "xmlrpc_decode_request ( $xml, & $method,  $encoding = \fC\fBnull\fP\fP)"
+Decodes XML into native PHP types \fBstring $xml  string $method  string $encoding [optional]  mixed  4\&.1  5\&.0 \fP
+.SS "xmlrpc_encode ( $value)"
+Generates XML for a PHP value \fBmixed $value  string  4\&.1  5\&.0 \fP
+.SS "xmlrpc_encode_request ( $method,  $params, array $output_options = \fC\fBnull\fP\fP)"
+Generates XML for a method request \fBstring $method \fP Name of the method to call\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$params\fP 
+.RE
+.PP
+Method parameters compatible with method signature\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$output_options\fP [optional] 
+.RE
+.PP
+Array specifying output options may contain (default values are emphasised): 
+.PP
+output_type: php, xml
+.PP
+\fBReturns\fP
+.RS 4
+string a string containing the XML representation of the request\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "xmlrpc_get_type ( $value)"
+Gets xmlrpc type for a PHP value \fBmixed $value \fP PHP value 
+.PP
+\fBReturns\fP
+.RS 4
+string the XML-RPC type\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "xmlrpc_is_fault (array $arg)"
+Determines if an array value represents an XMLRPC fault \fBarray $arg \fP Array returned by \fBxmlrpc_decode\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if the argument means fault, \fBFALSE\fP otherwise\&. Fault description is available in $arg['faultString'], fault code is in $arg['faultCode']\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "xmlrpc_parse_method_descriptions ( $xml)"
+Decodes XML into a list of method descriptions \fBstring $xml  array  4\&.1  5\&.0 \fP
+.SS "xmlrpc_server_add_introspection_data ( $server, array $desc)"
+Adds introspection documentation \fBresource $server  array $desc  int  4\&.1  5\&.0 \fP
+.SS "xmlrpc_server_call_method ( $server,  $xml,  $user_data, array $output_options = \fC\fBnull\fP\fP)"
+Parses XML requests and call methods \fBresource $server  string $xml  mixed $user_data  array $output_options [optional]  string  4\&.1  5\&.0 \fP
+.SS "xmlrpc_server_create ()"
+Creates an xmlrpc server \fBresource  4\&.1  5\&.0 \fP
+.SS "xmlrpc_server_destroy ( $server)"
+Destroys server resources \fBresource $server  int  4\&.1  5\&.0 \fP
+.SS "xmlrpc_server_register_introspection_callback ( $server,  $function)"
+Register a PHP function to generate documentation \fBresource $server  string $function  bool  4\&.1  5\&.0 \fP
+.SS "xmlrpc_server_register_method ( $server,  $method_name,  $function)"
+Register a PHP function to resource method matching method_name \fBresource $server  string $method_name  callable $function  bool  4\&.1  5\&.0 \fP
+.SS "xmlrpc_set_type (& $value,  $type)"
+Sets xmlrpc type, base64 or datetime, for a PHP string value \fBstring $value \fP Value to set the type 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP 
+.RE
+.PP
+'base64' or 'datetime' 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. If successful, \fIvalue\fP is converted to an object\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

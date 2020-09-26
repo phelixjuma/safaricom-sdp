@@ -1,0 +1,474 @@
+.TH "vendor/jetbrains/phpstorm-stubs/soap/soap.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/soap/soap.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBSoapClient\fP"
+.br
+.ti -1c
+.RI "class \fBSoapVar\fP"
+.br
+.ti -1c
+.RI "class \fBSoapServer\fP"
+.br
+.ti -1c
+.RI "class \fBSoapFault\fP"
+.br
+.ti -1c
+.RI "class \fBSoapParam\fP"
+.br
+.ti -1c
+.RI "class \fBSoapHeader\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBuse_soap_error_handler\fP ($handler=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBis_soap_fault\fP ($object)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBSOAP_1_1\fP 1"
+.br
+.ti -1c
+.RI "const \fBSOAP_1_2\fP 2"
+.br
+.ti -1c
+.RI "const \fBSOAP_PERSISTENCE_SESSION\fP 1"
+.br
+.ti -1c
+.RI "const \fBSOAP_PERSISTENCE_REQUEST\fP 2"
+.br
+.ti -1c
+.RI "const \fBSOAP_FUNCTIONS_ALL\fP 999"
+.br
+.ti -1c
+.RI "const \fBSOAP_ENCODED\fP 1"
+.br
+.ti -1c
+.RI "const \fBSOAP_LITERAL\fP 2"
+.br
+.ti -1c
+.RI "const \fBSOAP_RPC\fP 1"
+.br
+.ti -1c
+.RI "const \fBSOAP_DOCUMENT\fP 2"
+.br
+.ti -1c
+.RI "const \fBSOAP_ACTOR_NEXT\fP 1"
+.br
+.ti -1c
+.RI "const \fBSOAP_ACTOR_NONE\fP 2"
+.br
+.ti -1c
+.RI "const \fBSOAP_ACTOR_UNLIMATERECEIVER\fP 3"
+.br
+.ti -1c
+.RI "const \fBSOAP_COMPRESSION_ACCEPT\fP 32"
+.br
+.ti -1c
+.RI "const \fBSOAP_COMPRESSION_GZIP\fP 0"
+.br
+.ti -1c
+.RI "const \fBSOAP_COMPRESSION_DEFLATE\fP 16"
+.br
+.ti -1c
+.RI "const \fBSOAP_AUTHENTICATION_BASIC\fP 0"
+.br
+.ti -1c
+.RI "const \fBSOAP_AUTHENTICATION_DIGEST\fP 1"
+.br
+.ti -1c
+.RI "const \fBUNKNOWN_TYPE\fP 999998"
+.br
+.ti -1c
+.RI "const \fBXSD_STRING\fP 101"
+.br
+.ti -1c
+.RI "const \fBXSD_BOOLEAN\fP 102"
+.br
+.ti -1c
+.RI "const \fBXSD_DECIMAL\fP 103"
+.br
+.ti -1c
+.RI "const \fBXSD_FLOAT\fP 104"
+.br
+.ti -1c
+.RI "const \fBXSD_DOUBLE\fP 105"
+.br
+.ti -1c
+.RI "const \fBXSD_DURATION\fP 106"
+.br
+.ti -1c
+.RI "const \fBXSD_DATETIME\fP 107"
+.br
+.ti -1c
+.RI "const \fBXSD_TIME\fP 108"
+.br
+.ti -1c
+.RI "const \fBXSD_DATE\fP 109"
+.br
+.ti -1c
+.RI "const \fBXSD_GYEARMONTH\fP 110"
+.br
+.ti -1c
+.RI "const \fBXSD_GYEAR\fP 111"
+.br
+.ti -1c
+.RI "const \fBXSD_GMONTHDAY\fP 112"
+.br
+.ti -1c
+.RI "const \fBXSD_GDAY\fP 113"
+.br
+.ti -1c
+.RI "const \fBXSD_GMONTH\fP 114"
+.br
+.ti -1c
+.RI "const \fBXSD_HEXBINARY\fP 115"
+.br
+.ti -1c
+.RI "const \fBXSD_BASE64BINARY\fP 116"
+.br
+.ti -1c
+.RI "const \fBXSD_ANYURI\fP 117"
+.br
+.ti -1c
+.RI "const \fBXSD_QNAME\fP 118"
+.br
+.ti -1c
+.RI "const \fBXSD_NOTATION\fP 119"
+.br
+.ti -1c
+.RI "const \fBXSD_NORMALIZEDSTRING\fP 120"
+.br
+.ti -1c
+.RI "const \fBXSD_TOKEN\fP 121"
+.br
+.ti -1c
+.RI "const \fBXSD_LANGUAGE\fP 122"
+.br
+.ti -1c
+.RI "const \fBXSD_NMTOKEN\fP 123"
+.br
+.ti -1c
+.RI "const \fBXSD_NAME\fP 124"
+.br
+.ti -1c
+.RI "const \fBXSD_NCNAME\fP 125"
+.br
+.ti -1c
+.RI "const \fBXSD_ID\fP 126"
+.br
+.ti -1c
+.RI "const \fBXSD_IDREF\fP 127"
+.br
+.ti -1c
+.RI "const \fBXSD_IDREFS\fP 128"
+.br
+.ti -1c
+.RI "const \fBXSD_ENTITY\fP 129"
+.br
+.ti -1c
+.RI "const \fBXSD_ENTITIES\fP 130"
+.br
+.ti -1c
+.RI "const \fBXSD_INTEGER\fP 131"
+.br
+.ti -1c
+.RI "const \fBXSD_NONPOSITIVEINTEGER\fP 132"
+.br
+.ti -1c
+.RI "const \fBXSD_NEGATIVEINTEGER\fP 133"
+.br
+.ti -1c
+.RI "const \fBXSD_LONG\fP 134"
+.br
+.ti -1c
+.RI "const \fBXSD_INT\fP 135"
+.br
+.ti -1c
+.RI "const \fBXSD_SHORT\fP 136"
+.br
+.ti -1c
+.RI "const \fBXSD_BYTE\fP 137"
+.br
+.ti -1c
+.RI "const \fBXSD_NONNEGATIVEINTEGER\fP 138"
+.br
+.ti -1c
+.RI "const \fBXSD_UNSIGNEDLONG\fP 139"
+.br
+.ti -1c
+.RI "const \fBXSD_UNSIGNEDINT\fP 140"
+.br
+.ti -1c
+.RI "const \fBXSD_UNSIGNEDSHORT\fP 141"
+.br
+.ti -1c
+.RI "const \fBXSD_UNSIGNEDBYTE\fP 142"
+.br
+.ti -1c
+.RI "const \fBXSD_POSITIVEINTEGER\fP 143"
+.br
+.ti -1c
+.RI "const \fBXSD_NMTOKENS\fP 144"
+.br
+.ti -1c
+.RI "const \fBXSD_ANYTYPE\fP 145"
+.br
+.ti -1c
+.RI "const \fBXSD_ANYXML\fP 147"
+.br
+.ti -1c
+.RI "const \fBAPACHE_MAP\fP 200"
+.br
+.ti -1c
+.RI "const \fBSOAP_ENC_OBJECT\fP 301"
+.br
+.ti -1c
+.RI "const \fBSOAP_ENC_ARRAY\fP 300"
+.br
+.ti -1c
+.RI "const \fBXSD_1999_TIMEINSTANT\fP 401"
+.br
+.ti -1c
+.RI "const \fBXSD_NAMESPACE\fP 'http://www\&.w3\&.org/2001/XMLSchema'"
+.br
+.ti -1c
+.RI "const \fBXSD_1999_NAMESPACE\fP 'http://www\&.w3\&.org/1999/XMLSchema'"
+.br
+.ti -1c
+.RI "const \fBSOAP_SINGLE_ELEMENT_ARRAYS\fP 1"
+.br
+.ti -1c
+.RI "const \fBSOAP_WAIT_ONE_WAY_CALLS\fP 2"
+.br
+.ti -1c
+.RI "const \fBSOAP_USE_XSI_ARRAY_TYPE\fP 4"
+.br
+.ti -1c
+.RI "const \fBWSDL_CACHE_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBWSDL_CACHE_DISK\fP 1"
+.br
+.ti -1c
+.RI "const \fBWSDL_CACHE_MEMORY\fP 2"
+.br
+.ti -1c
+.RI "const \fBWSDL_CACHE_BOTH\fP 3"
+.br
+.ti -1c
+.RI "const \fBSOAP_SSL_METHOD_TLS\fP 0"
+.br
+.ti -1c
+.RI "const \fBSOAP_SSL_METHOD_SSLv2\fP 1"
+.br
+.ti -1c
+.RI "const \fBSOAP_SSL_METHOD_SSLv3\fP 2"
+.br
+.ti -1c
+.RI "const \fBSOAP_SSL_METHOD_SSLv23\fP 3"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "is_soap_fault ( $object)"
+Checks if a SOAP call has failed \fBmixed $object \fP The object to test\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool This will return \fBTRUE\fP on error, and \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+
+.SS "use_soap_error_handler ( $handler = \fC\fBtrue\fP\fP)"
+Set whether to use the SOAP error handler \fBbool $handler [optional] \fP Set to \fBTRUE\fP to send error details to clients\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool the original value\&. 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const APACHE_MAP 200"
+
+.SS "const SOAP_1_1 1"
+
+.SS "const SOAP_1_2 2"
+
+.SS "const SOAP_ACTOR_NEXT 1"
+
+.SS "const SOAP_ACTOR_NONE 2"
+
+.SS "const SOAP_ACTOR_UNLIMATERECEIVER 3"
+
+.SS "const SOAP_AUTHENTICATION_BASIC 0"
+
+.SS "const SOAP_AUTHENTICATION_DIGEST 1"
+
+.SS "const SOAP_COMPRESSION_ACCEPT 32"
+
+.SS "const SOAP_COMPRESSION_DEFLATE 16"
+
+.SS "const SOAP_COMPRESSION_GZIP 0"
+
+.SS "const SOAP_DOCUMENT 2"
+
+.SS "const SOAP_ENC_ARRAY 300"
+
+.SS "const SOAP_ENC_OBJECT 301"
+
+.SS "const SOAP_ENCODED 1"
+
+.SS "const SOAP_FUNCTIONS_ALL 999"
+
+.SS "const SOAP_LITERAL 2"
+
+.SS "const SOAP_PERSISTENCE_REQUEST 2"
+
+.SS "const SOAP_PERSISTENCE_SESSION 1"
+
+.SS "const SOAP_RPC 1"
+
+.SS "const SOAP_SINGLE_ELEMENT_ARRAYS 1"
+
+.SS "const SOAP_SSL_METHOD_SSLv2 1"
+\fB5\&.5 \fP
+.SS "const SOAP_SSL_METHOD_SSLv23 3"
+\fB5\&.5 \fP
+.SS "const SOAP_SSL_METHOD_SSLv3 2"
+\fB5\&.5 \fP
+.SS "const SOAP_SSL_METHOD_TLS 0"
+\fB5\&.5 \fP
+.SS "const SOAP_USE_XSI_ARRAY_TYPE 4"
+
+.SS "const SOAP_WAIT_ONE_WAY_CALLS 2"
+
+.SS "const UNKNOWN_TYPE 999998"
+
+.SS "const WSDL_CACHE_BOTH 3"
+
+.SS "const WSDL_CACHE_DISK 1"
+
+.SS "const WSDL_CACHE_MEMORY 2"
+
+.SS "const WSDL_CACHE_NONE 0"
+
+.SS "const XSD_1999_NAMESPACE 'http://www\&.w3\&.org/1999/XMLSchema'"
+
+.SS "const XSD_1999_TIMEINSTANT 401"
+
+.SS "const XSD_ANYTYPE 145"
+
+.SS "const XSD_ANYURI 117"
+
+.SS "const XSD_ANYXML 147"
+
+.SS "const XSD_BASE64BINARY 116"
+
+.SS "const XSD_BOOLEAN 102"
+
+.SS "const XSD_BYTE 137"
+
+.SS "const XSD_DATE 109"
+
+.SS "const XSD_DATETIME 107"
+
+.SS "const XSD_DECIMAL 103"
+
+.SS "const XSD_DOUBLE 105"
+
+.SS "const XSD_DURATION 106"
+
+.SS "const XSD_ENTITIES 130"
+
+.SS "const XSD_ENTITY 129"
+
+.SS "const XSD_FLOAT 104"
+
+.SS "const XSD_GDAY 113"
+
+.SS "const XSD_GMONTH 114"
+
+.SS "const XSD_GMONTHDAY 112"
+
+.SS "const XSD_GYEAR 111"
+
+.SS "const XSD_GYEARMONTH 110"
+
+.SS "const XSD_HEXBINARY 115"
+
+.SS "const XSD_ID 126"
+
+.SS "const XSD_IDREF 127"
+
+.SS "const XSD_IDREFS 128"
+
+.SS "const XSD_INT 135"
+
+.SS "const XSD_INTEGER 131"
+
+.SS "const XSD_LANGUAGE 122"
+
+.SS "const XSD_LONG 134"
+
+.SS "const XSD_NAME 124"
+
+.SS "const XSD_NAMESPACE 'http://www\&.w3\&.org/2001/XMLSchema'"
+
+.SS "const XSD_NCNAME 125"
+
+.SS "const XSD_NEGATIVEINTEGER 133"
+
+.SS "const XSD_NMTOKEN 123"
+
+.SS "const XSD_NMTOKENS 144"
+
+.SS "const XSD_NONNEGATIVEINTEGER 138"
+
+.SS "const XSD_NONPOSITIVEINTEGER 132"
+
+.SS "const XSD_NORMALIZEDSTRING 120"
+
+.SS "const XSD_NOTATION 119"
+
+.SS "const XSD_POSITIVEINTEGER 143"
+
+.SS "const XSD_QNAME 118"
+
+.SS "const XSD_SHORT 136"
+
+.SS "const XSD_STRING 101"
+
+.SS "const XSD_TIME 108"
+
+.SS "const XSD_TOKEN 121"
+
+.SS "const XSD_UNSIGNEDBYTE 142"
+
+.SS "const XSD_UNSIGNEDINT 140"
+
+.SS "const XSD_UNSIGNEDLONG 139"
+
+.SS "const XSD_UNSIGNEDSHORT 141"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

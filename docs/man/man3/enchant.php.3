@@ -1,0 +1,420 @@
+.TH "vendor/jetbrains/phpstorm-stubs/enchant/enchant.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/enchant/enchant.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBenchant_broker_init\fP ()"
+.br
+.ti -1c
+.RI "\fBenchant_broker_free\fP ($broker)"
+.br
+.ti -1c
+.RI "\fBenchant_broker_get_error\fP ($broker)"
+.br
+.ti -1c
+.RI "\fBenchant_broker_set_dict_path\fP ($broker, $name, $value)"
+.br
+.ti -1c
+.RI "\fBenchant_broker_get_dict_path\fP ($broker, $name)"
+.br
+.ti -1c
+.RI "\fBenchant_broker_list_dicts\fP ($broker)"
+.br
+.ti -1c
+.RI "\fBenchant_broker_request_dict\fP ($broker, $tag)"
+.br
+.ti -1c
+.RI "\fBenchant_broker_request_pwl_dict\fP ($broker, $filename)"
+.br
+.ti -1c
+.RI "\fBenchant_broker_free_dict\fP ($dict)"
+.br
+.ti -1c
+.RI "\fBenchant_broker_dict_exists\fP ($broker, $tag)"
+.br
+.ti -1c
+.RI "\fBenchant_broker_set_ordering\fP ($broker, $tag, $ordering)"
+.br
+.ti -1c
+.RI "\fBenchant_broker_describe\fP ($broker)"
+.br
+.ti -1c
+.RI "\fBenchant_dict_check\fP ($dict, $word)"
+.br
+.ti -1c
+.RI "\fBenchant_dict_suggest\fP ($dict, $word)"
+.br
+.ti -1c
+.RI "\fBenchant_dict_add_to_personal\fP ($dict, $word)"
+.br
+.ti -1c
+.RI "\fBenchant_dict_add_to_session\fP ($dict, $word)"
+.br
+.ti -1c
+.RI "\fBenchant_dict_is_in_session\fP ($dict, $word)"
+.br
+.ti -1c
+.RI "\fBenchant_dict_store_replacement\fP ($dict, $mis, $cor)"
+.br
+.ti -1c
+.RI "\fBenchant_dict_get_error\fP ($dict)"
+.br
+.ti -1c
+.RI "\fBenchant_dict_describe\fP ($dict)"
+.br
+.ti -1c
+.RI "\fBenchant_dict_quick_check\fP ($dict, $word, array &$suggestions=\fBnull\fP)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBENCHANT_MYSPELL\fP 1"
+.br
+.ti -1c
+.RI "const \fBENCHANT_ISPELL\fP 2"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "enchant_broker_describe ( $broker)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0)
+.br
+ Enumerates the Enchant providers \fBresource $broker \fP Broker resource 
+.PP
+\fBReturns\fP
+.RS 4
+array|false 
+.RE
+.PP
+
+.SS "enchant_broker_dict_exists ( $broker,  $tag)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ Whether a dictionary exists or not\&. Using non-empty tag \fBresource $broker \fP Broker resource 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tag\fP 
+.RE
+.PP
+non-empty tag in the LOCALE format, ex: us_US, ch_DE, etc\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP when the tag exist or \fBFALSE\fP when not\&. 
+.RE
+.PP
+
+.SS "enchant_broker_free ( $broker)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ Free the broker resource and its dictionnaries \fBresource $broker \fP Broker resource 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "enchant_broker_free_dict ( $dict)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ Free a dictionary resource \fBresource $dict \fP Dictionary resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "enchant_broker_get_dict_path ( $broker,  $name)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$broker\fP 
+.br
+\fI$name\fP 
+.RE
+.PP
+
+.SS "enchant_broker_get_error ( $broker)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ Returns the last error of the broker \fBresource $broker \fP Broker resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string Return the msg string if an error was found or \fBFALSE\fP 
+.RE
+.PP
+
+.SS "enchant_broker_init ()"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ create a new broker object capable of requesting \fBresource a broker resource on success or \fBFALSE\fP\&. \fP
+.SS "enchant_broker_list_dicts ( $broker)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 1\&.0\&.1)
+.br
+ Returns a list of available dictionaries \fBresource $broker \fP Broker resource 
+.PP
+\fBReturns\fP
+.RS 4
+mixed \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "enchant_broker_request_dict ( $broker,  $tag)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ create a new dictionary using a tag \fBresource $broker \fP Broker resource 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tag\fP 
+.RE
+.PP
+\fBA\fP tag describing the locale, for example en_US, de_DE 
+.PP
+\fBReturns\fP
+.RS 4
+resource a dictionary resource on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "enchant_broker_request_pwl_dict ( $broker,  $filename)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ creates a dictionary using a PWL file \fBresource $broker \fP Broker resource 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP 
+.RE
+.PP
+Path to the PWL file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource a dictionary resource on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "enchant_broker_set_dict_path ( $broker,  $name,  $value)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$broker\fP 
+.br
+\fI$name\fP 
+.br
+\fI$value\fP 
+.RE
+.PP
+
+.SS "enchant_broker_set_ordering ( $broker,  $tag,  $ordering)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ Declares a preference of dictionaries to use for the language \fBresource $broker \fP Broker resource 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tag\fP 
+.RE
+.PP
+Language tag\&. The special '*' tag can be used as a language tag to declare a default ordering for any language that does not explicitly declare an ordering\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ordering\fP 
+.RE
+.PP
+Comma delimited list of provider names 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "enchant_dict_add_to_personal ( $dict,  $word)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ add a word to personal word list \fBresource $dict \fP Dictionary resource 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$word\fP 
+.RE
+.PP
+The word to add 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "enchant_dict_add_to_session ( $dict,  $word)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ add 'word' to this spell-checking session \fBresource $dict \fP Dictionary resource 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$word\fP 
+.RE
+.PP
+The word to add 
+.PP
+\fBReturns\fP
+.RS 4
+void \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "enchant_dict_check ( $dict,  $word)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ Check whether a word is correctly spelled or not \fBresource $dict \fP Dictionary resource 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$word\fP 
+.RE
+.PP
+The word to check 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if the word is spelled correctly, \fBFALSE\fP if not\&. 
+.RE
+.PP
+
+.SS "enchant_dict_describe ( $dict)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ Describes an individual dictionary \fBresource $dict \fP Dictionary resource 
+.PP
+\fBReturns\fP
+.RS 4
+mixed \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "enchant_dict_get_error ( $dict)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ Returns the last error of the current spelling-session \fBresource $dict \fP Dictinaray resource 
+.PP
+\fBReturns\fP
+.RS 4
+string the error message as string or \fBFALSE\fP if no error occurred\&. 
+.RE
+.PP
+
+.SS "enchant_dict_is_in_session ( $dict,  $word)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ whether or not 'word' exists in this spelling-session \fBresource $dict \fP Dictionary resource 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$word\fP 
+.RE
+.PP
+The word to lookup 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if the word exists or \fBFALSE\fP 
+.RE
+.PP
+
+.SS "enchant_dict_quick_check ( $dict,  $word, array & $suggestions = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant:0\&.2\&.0-1\&.0\&.1)
+.br
+ Check the word is correctly spelled and provide suggestions \fBresource $dict \fP Dictionary resource 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$word\fP 
+.RE
+.PP
+The word to check 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$suggestions\fP [optional] 
+.RE
+.PP
+If the word is not correctly spelled, this variable will contain an array of suggestions\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if the word is correctly spelled or \fBFALSE\fP 
+.RE
+.PP
+
+.SS "enchant_dict_store_replacement ( $dict,  $mis,  $cor)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ Add a correction for a word \fBresource $dict \fP Dictionary resource 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mis\fP 
+.RE
+.PP
+The work to fix 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cor\fP 
+.RE
+.PP
+The correct word 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "enchant_dict_suggest ( $dict,  $word)"
+(PHP 5 >= 5\&.3\&.0, PECL enchant >= 0\&.1\&.0 )
+.br
+ Will return a list of values if any of those pre-conditions are not met \fBresource $dict \fP Dictionary resource 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$word\fP 
+.RE
+.PP
+Word to use for the suggestions\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false Will returns an array of suggestions if the word is bad spelled\&. 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const ENCHANT_ISPELL 2"
+
+.SS "const ENCHANT_MYSPELL 1"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

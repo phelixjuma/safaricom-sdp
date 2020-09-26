@@ -1,0 +1,766 @@
+\hypertarget{win32service_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/win32service/win32service.php File Reference}
+\label{win32service_8php}\index{vendor/jetbrains/phpstorm-\/stubs/win32service/win32service.php@{vendor/jetbrains/phpstorm-\/stubs/win32service/win32service.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{win32service_8php_a6ddfa1e966f0506b06368ff8a6531eb7}{win32\+\_\+continue\+\_\+service}} ( \$service\+Name, \$machine=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{win32service_8php_a31163fbe6b4e6e2f7f51b33cbcb362d6}{win32\+\_\+create\+\_\+service}} ( \$details, \$machine=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{win32service_8php_a029da33b4c8bc97bdcc18e35af2e58c0}{win32\+\_\+delete\+\_\+service}} ( \$service\+Name, \$machine=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{win32service_8php_a37a6b3a1e37bcbe4dd4d5ac4131e9072}{win32\+\_\+get\+\_\+last\+\_\+control\+\_\+message}} ()
+\item 
+\mbox{\hyperlink{win32service_8php_ab0a7f98bb355c4947277dc22ff04a29f}{win32\+\_\+pause\+\_\+service}} ( \$service\+Name, \$machine=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{win32service_8php_a44ece0312165719e4bbd658b7a08b6e1}{win32\+\_\+query\+\_\+service\+\_\+status}} ( \$service\+Name, \$machine=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{win32service_8php_a534c8e247b14c9ffb2f457e2ef2773f1}{win32\+\_\+set\+\_\+service\+\_\+status}} ( \$status, \$checkpoint=0)
+\item 
+\mbox{\hyperlink{win32service_8php_a67f0c7280d6763f5ed3c46417a90338e}{win32\+\_\+start\+\_\+service\+\_\+ctrl\+\_\+dispatcher}} ( \$name)
+\item 
+\mbox{\hyperlink{win32service_8php_a362290589b8b826111eb32b3683e30ed}{win32\+\_\+start\+\_\+service}} ( \$service\+Name, \$machine=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{win32service_8php_a85cd985b6a352fc24df82d5e206e2881}{win32\+\_\+stop\+\_\+service}} ( \$service\+Name, \$machine=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{win32service_8php_a816d55c26f8dffd3879742d464014718}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+W\+I\+N32\+\_\+\+O\+W\+N\+\_\+\+P\+R\+O\+C\+E\+SS}} 0x00000010
+\item 
+const \mbox{\hyperlink{win32service_8php_a683fabcebee5596b4a62db50fb77a75a}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+V\+E\+\_\+\+P\+R\+O\+C\+E\+SS}} 0x00000100
+\item 
+const \mbox{\hyperlink{win32service_8php_ad81861ddf05c3ecc47bf2d45d76b9b3c}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+W\+I\+N32\+\_\+\+O\+W\+N\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE}} 0x00000110
+\item 
+const \mbox{\hyperlink{win32service_8php_a72f6eab4028d46ee7cea158e6acb4f20}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+I\+N\+U\+E\+\_\+\+P\+E\+N\+D\+I\+NG}} 0x00000005
+\item 
+const \mbox{\hyperlink{win32service_8php_aec8909bd2294615a0787120371664d7f}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P\+A\+U\+S\+E\+\_\+\+P\+E\+N\+D\+I\+NG}} 0x00000006
+\item 
+const \mbox{\hyperlink{win32service_8php_a100a89e2eb4f3917d7dcc59e97dd7ca2}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P\+A\+U\+S\+ED}} 0x00000007
+\item 
+const \mbox{\hyperlink{win32service_8php_ab34d7bf8064bab9c742b10d9a4ef6d33}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+R\+U\+N\+N\+I\+NG}} 0x00000004
+\item 
+const \mbox{\hyperlink{win32service_8php_a12d6f025b1622f775bf8499bf60eee0d}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+E\+N\+D\+I\+NG}} 0x00000002
+\item 
+const \mbox{\hyperlink{win32service_8php_aa4fa7932441ace0cd5bd168409f3da6a}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+T\+O\+P\+\_\+\+P\+E\+N\+D\+I\+NG}} 0x00000003
+\item 
+const \mbox{\hyperlink{win32service_8php_ae78d46fd637a116898019e78dd4c3254}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+T\+O\+P\+P\+ED}} 0x00000001
+\item 
+const \mbox{\hyperlink{win32service_8php_a7897fad9e2220f3aaa509ce8e106a0a3}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+C\+O\+N\+T\+I\+N\+UE}} 0x00000003
+\item 
+const \mbox{\hyperlink{win32service_8php_a98aaf1927887bd90a79b1dca094592d6}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+N\+T\+E\+R\+R\+O\+G\+A\+TE}} 0x00000004
+\item 
+const \mbox{\hyperlink{win32service_8php_a388ac40690e98fe6b2cce84eff0f0f42}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+A\+U\+SE}} 0x00000002
+\item 
+const \mbox{\hyperlink{win32service_8php_a2c835ae6b402f1753c5c8a95d56b5db5}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+R\+E\+S\+H\+U\+T\+D\+O\+WN}} 0x0000000F
+\item 
+const \mbox{\hyperlink{win32service_8php_acd6b28c1638e6871ee5400044f12887a}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+H\+U\+T\+D\+O\+WN}} 0x00000005
+\item 
+const \mbox{\hyperlink{win32service_8php_a78840631e4bfeb6bdb60497e6fa9ef8f}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+T\+OP}} 0x00000001
+\item 
+const \mbox{\hyperlink{win32service_8php_a2b6ee187cc11a192a1329c3053110600}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+P\+A\+U\+S\+E\+\_\+\+C\+O\+N\+T\+I\+N\+UE}} 0x00000002
+\item 
+const \mbox{\hyperlink{win32service_8php_af02cca7ddc0af3db85fc963c4d215a41}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+P\+R\+E\+S\+H\+U\+T\+D\+O\+WN}} 0x00000100
+\item 
+const \mbox{\hyperlink{win32service_8php_a3ffa60a6df05fa752f463234b631a314}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+S\+H\+U\+T\+D\+O\+WN}} 0x00000004
+\item 
+const \mbox{\hyperlink{win32service_8php_a0fc27880aa99742acb45a71f9ffa8a9b}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+S\+T\+OP}} 0x00000001
+\item 
+const \mbox{\hyperlink{win32service_8php_a130d3210f331edee3a35cfbe7784f82e}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+U\+T\+O\+\_\+\+S\+T\+A\+RT}} 0x00000002
+\item 
+const \mbox{\hyperlink{win32service_8php_acc4d11a5b024371eb20d185b818bb6a8}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+D\+E\+M\+A\+N\+D\+\_\+\+S\+T\+A\+RT}} 0x00000003
+\item 
+const \mbox{\hyperlink{win32service_8php_a88813a2d5b7c067ffcc41372ce23e91b}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED}} 0x00000004
+\item 
+const \mbox{\hyperlink{win32service_8php_a0a6032c17a4dbcfdc9d6fde761d74ae3}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+G\+N\+O\+RE}} 0x00000000
+\item 
+const \mbox{\hyperlink{win32service_8php_accf965e1f02bfd8b9555b02502f0e3d2}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+R\+M\+AL}} 0x00000001
+\item 
+const \mbox{\hyperlink{win32service_8php_a53da60d9b77a0fba830ed436e616297b}{W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+R\+U\+N\+S\+\_\+\+I\+N\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+P\+R\+O\+C\+E\+SS}} 0x00000001
+\item 
+const \mbox{\hyperlink{win32service_8php_a17dcfdbb9cbc43ec8df43dd82b3c8197}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+D\+E\+N\+I\+ED}} 0x00000005
+\item 
+const \mbox{\hyperlink{win32service_8php_a4f01defacfea5e4442267915fbcac1e2}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+I\+R\+C\+U\+L\+A\+R\+\_\+\+D\+E\+P\+E\+N\+D\+E\+N\+CY}} 0x00000423
+\item 
+const \mbox{\hyperlink{win32service_8php_a4d966f1603b292ebc7ea526db2c78dc0}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+D\+O\+E\+S\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+ST}} 0x00000429
+\item 
+const \mbox{\hyperlink{win32service_8php_ad3cd70ef63814cbaf6e225103d764f8c}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+E\+P\+E\+N\+D\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+R\+U\+N\+N\+I\+NG}} 0x0000041B
+\item 
+const \mbox{\hyperlink{win32service_8php_a28b23563acd48d53337ba636f44b3dce}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+U\+P\+L\+I\+C\+A\+T\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+N\+A\+ME}} 0x00000436
+\item 
+const \mbox{\hyperlink{win32service_8php_a24fd5a7de38bc84bd1fe758f30d37665}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+\_\+\+C\+O\+N\+N\+E\+CT}} 0x00000427
+\item 
+const \mbox{\hyperlink{win32service_8php_aa237282068432f054ccddf46c6afbb8c}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+S\+U\+F\+F\+I\+C\+I\+E\+N\+T\+\_\+\+B\+U\+F\+F\+ER}} 0x0000007A
+\item 
+const \mbox{\hyperlink{win32service_8php_a357c5d5fee3e689caa1c8248f22ce481}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+D\+A\+TA}} 0x0000000D
+\item 
+const \mbox{\hyperlink{win32service_8php_a28d32de1cda21d0ee433ee303a791604}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+H\+A\+N\+D\+LE}} 0x00000006
+\item 
+const \mbox{\hyperlink{win32service_8php_a1fcea82a878ecbb9b35f4438ccd7245c}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+L\+E\+V\+EL}} 0x0000007C
+\item 
+const \mbox{\hyperlink{win32service_8php_a2901e93d3ba1b28e74e3b5ee9809c904}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+N\+A\+ME}} 0x0000007B
+\item 
+const \mbox{\hyperlink{win32service_8php_a5fe98b6f7336c4e7a4f4fdb1fc2a80fa}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER}} 0x00000057
+\item 
+const \mbox{\hyperlink{win32service_8php_ad1af40365f6d7ee0bd9a8d4dc76bfc77}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+C\+C\+O\+U\+NT}} 0x00000421
+\item 
+const \mbox{\hyperlink{win32service_8php_a5d719b54a98276250e67db922d8a3f78}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+OL}} 0x0000041C
+\item 
+const \mbox{\hyperlink{win32service_8php_a991958373dc6ff038bc3cfda70a048e6}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+P\+A\+T\+H\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}} 0x00000003
+\item 
+const \mbox{\hyperlink{win32service_8php_a6e7a5b4a741beca3870a4b722a964222}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+R\+U\+N\+N\+I\+NG}} 0x00000420
+\item 
+const \mbox{\hyperlink{win32service_8php_a5dd76b4de775e2aba0b5534ab5320d9f}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+A\+N\+N\+O\+T\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+C\+T\+RL}} 0x00000425
+\item 
+const \mbox{\hyperlink{win32service_8php_a12fdc75807f9f30ed35de19308a19021}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+L\+O\+C\+K\+ED}} 0x0000041F
+\item 
+const \mbox{\hyperlink{win32service_8php_a450cad522591884631d533fbd43bb501}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+D\+E\+P\+E\+N\+D\+E\+N\+C\+Y\+\_\+\+D\+E\+L\+E\+T\+ED}} 0x00000433
+\item 
+const \mbox{\hyperlink{win32service_8php_a84dc2f60bab3488d6d7c466230655870}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+D\+E\+P\+E\+N\+D\+E\+N\+C\+Y\+\_\+\+F\+A\+IL}} 0x0000042C
+\item 
+const \mbox{\hyperlink{win32service_8php_ab7f08a2e4139e5868db8a55a42d4674b}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED}} 0x00000422
+\item 
+const \mbox{\hyperlink{win32service_8php_ab1f931769f0835bc1413af5c53e0755c}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+D\+O\+E\+S\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+ST}} 0x00000424
+\item 
+const \mbox{\hyperlink{win32service_8php_aea30f3abf8de8d7f134f9f1936e1373e}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+E\+X\+I\+S\+TS}} 0x00000431
+\item 
+const \mbox{\hyperlink{win32service_8php_aecde199b6e69896bb0272f89d774a1b1}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+L\+O\+G\+O\+N\+\_\+\+F\+A\+I\+L\+ED}} 0x0000042D
+\item 
+const \mbox{\hyperlink{win32service_8php_a403c15ed74afc047950af5d7ece7c6f0}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+R\+K\+E\+D\+\_\+\+F\+O\+R\+\_\+\+D\+E\+L\+E\+TE}} 0x00000430
+\item 
+const \mbox{\hyperlink{win32service_8php_a8b365a3befc4ca9ca336acd9ff796c62}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+N\+O\+\_\+\+T\+H\+R\+E\+AD}} 0x0000041E
+\item 
+const \mbox{\hyperlink{win32service_8php_a1a1a5c54ad50bafc77f43d3497ea5b01}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+N\+O\+T\+\_\+\+A\+C\+T\+I\+VE}} 0x00000426
+\item 
+const \mbox{\hyperlink{win32service_8php_a89109c254b03ed92ac904192ddd74d17}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+T\+I\+M\+E\+O\+UT}} 0x0000041D
+\item 
+const \mbox{\hyperlink{win32service_8php_abd64935965e6844b6985b587ca2eef7f}{W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+H\+U\+T\+D\+O\+W\+N\+\_\+\+I\+N\+\_\+\+P\+R\+O\+G\+R\+E\+SS}} 0x0000045B
+\item 
+const \mbox{\hyperlink{win32service_8php_a9cd1383ad7deb28bd288b3fb6f9ff165}{W\+I\+N32\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR}} 0x00000000
+\item 
+const \mbox{\hyperlink{win32service_8php_a15810916586293798564f1f03470bdaa}{W\+I\+N32\+\_\+\+A\+B\+O\+V\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS}} 0x00008000
+\item 
+const \mbox{\hyperlink{win32service_8php_a41df49b9c18db52e0fe6d35edc46d1bd}{W\+I\+N32\+\_\+\+B\+E\+L\+O\+W\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS}} 0x00004000
+\item 
+const \mbox{\hyperlink{win32service_8php_ab586513e9f7ae05f28360776c85cecc6}{W\+I\+N32\+\_\+\+H\+I\+G\+H\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS}} 0x00000080
+\item 
+const \mbox{\hyperlink{win32service_8php_af2e22e720b79331154577cd73df61c12}{W\+I\+N32\+\_\+\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS}} 0x00000040
+\item 
+const \mbox{\hyperlink{win32service_8php_a92bc3582e3e1cf789292b0927efca169}{W\+I\+N32\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS}} 0x00000020
+\item 
+const \mbox{\hyperlink{win32service_8php_aa83039863a2c5f38e1f436d69b7ec351}{W\+I\+N32\+\_\+\+R\+E\+A\+L\+T\+I\+M\+E\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS}} 0x00000100
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{win32service_8php_a6ddfa1e966f0506b06368ff8a6531eb7}\label{win32service_8php_a6ddfa1e966f0506b06368ff8a6531eb7}} 
+\index{win32service.php@{win32service.php}!win32\_continue\_service@{win32\_continue\_service}}
+\index{win32\_continue\_service@{win32\_continue\_service}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{win32\_continue\_service()}{win32\_continue\_service()}}
+{\footnotesize\ttfamily win32\+\_\+continue\+\_\+service (\begin{DoxyParamCaption}\item[{}]{\$service\+Name,  }\item[{}]{\$machine = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+resumes a paused service
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$service\+Name} & The short name of the service. \\
+\hline
+string & {\em \$machine} & Optional machine name. If omitted, the local machine is used.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\vert$false Returns W\+I\+N32\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR on success, F\+A\+L\+SE if there is a problem with the parameters or a Win32 \mbox{\hyperlink{class_error}{Error}} Code on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{win32service_8php_a31163fbe6b4e6e2f7f51b33cbcb362d6}\label{win32service_8php_a31163fbe6b4e6e2f7f51b33cbcb362d6}} 
+\index{win32service.php@{win32service.php}!win32\_create\_service@{win32\_create\_service}}
+\index{win32\_create\_service@{win32\_create\_service}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{win32\_create\_service()}{win32\_create\_service()}}
+{\footnotesize\ttfamily win32\+\_\+create\+\_\+service (\begin{DoxyParamCaption}\item[{}]{\$details,  }\item[{}]{\$machine = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Creates a new service entry in the S\+CM database
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$details} & 
+\begin{DoxyItemize}
+\item {\itshape service} The short name of the service. This is the name that you will use to control the service using the net command. The service must be unique (no two services can share the same name), and, ideally, should avoid having spaces in the name. 
+
+
+\item {\itshape display} The display name of the service. This is the name that you will see in the Services Applet. 
+
+
+\item {\itshape description} The long description of the service. This is the description that you will see in the Services Applet. 
+
+
+\item {\itshape user} The name of the user account under which you want the service to run. If omitted, the service will run as the Local\+System account. If the username is specified, you must also provide a password. 
+
+
+\item {\itshape password} The password that corresponds to the user. 
+
+
+\item {\itshape path} The full path to the executable module that will be launched when the service is started. If omitted, the path to the current P\+HP process will be used. 
+
+
+\item {\itshape params} Command line parameters to pass to the service when it starts. If you want to run a P\+HP script as the service, then the first parameter should be the full path to the P\+HP script that you intend to run. If the script name or path contains spaces, then wrap the full path to the P\+HP script with "{}. 
+
+
+\item {\itshape load\+\_\+order} Controls the load\+\_\+order. This is not yet fully supported. 
+
+
+\item {\itshape svc\+\_\+type} Sets the service type. If omitted, the default value is W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+W\+I\+N32\+\_\+\+O\+W\+N\+\_\+\+P\+R\+O\+C\+E\+SS. Don\textquotesingle{}t change this unless you know what you\textquotesingle{}re doing. 
+
+
+\item {\itshape start\+\_\+type} Specifies how the service should be started. The default is W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+U\+T\+O\+\_\+\+S\+T\+A\+RT which means the service will be launched when the machine starts up. 
+
+
+\item {\itshape error\+\_\+control} Informs the S\+CM what it should do when it detects a problem with the service. The default is W\+I\+N32\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+G\+N\+O\+RE. Changing this value is not yet fully supported. 
+
+
+\item {\itshape delayed\+\_\+start} If delayed\+\_\+start is set to T\+R\+UE, then this will inform the S\+CM that this service should be started after other auto-\/start services are started plus a short delay.
+
+Any service can be marked as a delayed auto-\/start service; however, this setting has no effect unless the service\textquotesingle{}s start\+\_\+type is W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+U\+T\+O\+\_\+\+S\+T\+A\+RT.
+
+This setting is only applicable on Windows Vista and Windows Server 2008 or greater. 
+
+
+\item {\itshape base\+\_\+priority} To reduce the impact on processor utilisation, it may be necessary to set a base priority lower than normal.
+
+The base\+\_\+priority can be set to one of the constants define in Win32 Base Priority Classes.  
+\end{DoxyItemize}\\
+\hline
+string & {\em \$machine} & The optional machine name on which you want to create a service. If omitted, it will use the local machine.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\vert$false Returns W\+I\+N32\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR on success, F\+A\+L\+SE if there is a problem with the parameters or a Win32 \mbox{\hyperlink{class_error}{Error}} Code on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{win32service_8php_a029da33b4c8bc97bdcc18e35af2e58c0}\label{win32service_8php_a029da33b4c8bc97bdcc18e35af2e58c0}} 
+\index{win32service.php@{win32service.php}!win32\_delete\_service@{win32\_delete\_service}}
+\index{win32\_delete\_service@{win32\_delete\_service}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{win32\_delete\_service()}{win32\_delete\_service()}}
+{\footnotesize\ttfamily win32\+\_\+delete\+\_\+service (\begin{DoxyParamCaption}\item[{}]{\$service\+Name,  }\item[{}]{\$machine = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Deletes a service entry from the S\+CM database This function really just marks the service for deletion. If other processes (such as the Services Applet) are open, then the deletion will be deferred until those applications are closed. If a service is marked for deletion, further attempts to delete it will fail, and attempts to create a new service with that name will also fail.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$service\+Name} & The short name of the service. \\
+\hline
+string & {\em \$machine} & Optional machine name. If omitted, the local machine is used.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\vert$false Returns W\+I\+N32\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR on success, F\+A\+L\+SE if there is a problem with the parameters or a Win32 \mbox{\hyperlink{class_error}{Error}} Code on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{win32service_8php_a37a6b3a1e37bcbe4dd4d5ac4131e9072}\label{win32service_8php_a37a6b3a1e37bcbe4dd4d5ac4131e9072}} 
+\index{win32service.php@{win32service.php}!win32\_get\_last\_control\_message@{win32\_get\_last\_control\_message}}
+\index{win32\_get\_last\_control\_message@{win32\_get\_last\_control\_message}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{win32\_get\_last\_control\_message()}{win32\_get\_last\_control\_message()}}
+{\footnotesize\ttfamily win32\+\_\+get\+\_\+last\+\_\+control\+\_\+message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the last control message that was sent to this service When running as a service you should periodically check this to determine if your service needs to stop running. 
+
+{\bfseries{Caution}} Since version 0.\+2.\+0, this function work only in \char`\"{}cli\char`\"{} S\+A\+PI. On other S\+A\+PI this function is disabled. 
+
+\begin{DoxyReturn}{Returns}
+int Returns a control constant which will be one of the Win32\+Service Service Control Message Constants\+: W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+C\+O\+N\+T\+I\+N\+UE, W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+N\+T\+E\+R\+R\+O\+G\+A\+TE, W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+A\+U\+SE, W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+R\+E\+S\+H\+U\+T\+D\+O\+WN, W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+H\+U\+T\+D\+O\+WN, W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+T\+OP. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{win32service_8php_ab0a7f98bb355c4947277dc22ff04a29f}\label{win32service_8php_ab0a7f98bb355c4947277dc22ff04a29f}} 
+\index{win32service.php@{win32service.php}!win32\_pause\_service@{win32\_pause\_service}}
+\index{win32\_pause\_service@{win32\_pause\_service}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{win32\_pause\_service()}{win32\_pause\_service()}}
+{\footnotesize\ttfamily win32\+\_\+pause\+\_\+service (\begin{DoxyParamCaption}\item[{}]{\$service\+Name,  }\item[{}]{\$machine = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Pauses a named service. Requires administrative privileges.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$service\+Name} & The short name of the service. \\
+\hline
+string & {\em \$machine} & Optional machine name. If omitted, the local machine is used.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\vert$false Returns W\+I\+N32\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR on success, F\+A\+L\+SE if there is a problem with the parameters or a Win32 \mbox{\hyperlink{class_error}{Error}} Code on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{win32service_8php_a44ece0312165719e4bbd658b7a08b6e1}\label{win32service_8php_a44ece0312165719e4bbd658b7a08b6e1}} 
+\index{win32service.php@{win32service.php}!win32\_query\_service\_status@{win32\_query\_service\_status}}
+\index{win32\_query\_service\_status@{win32\_query\_service\_status}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{win32\_query\_service\_status()}{win32\_query\_service\_status()}}
+{\footnotesize\ttfamily win32\+\_\+query\+\_\+service\+\_\+status (\begin{DoxyParamCaption}\item[{}]{\$service\+Name,  }\item[{}]{\$machine = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Queries the current status for a service, returning an array of information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$service\+Name} & The short name of the service. \\
+\hline
+string & {\em \$machine} & Optional machine name. If omitted, the local machine is used.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$\vert$false Returns an array consisting of the following information on success, F\+A\+L\+SE if there is a problem with the parameters or a Win32 \mbox{\hyperlink{class_error}{Error}} Code on failure. 
+\begin{DoxyItemize}
+\item {\itshape Service\+Type} The dw\+Service\+Type. See Win32\+Service Service Type Bitmasks.  
+\item {\itshape Current\+State} The dw\+Current\+State. See Win32\+Service Service Status Constants.  
+\item {\itshape Controls\+Accepted} Which service controls are accepted by the service. See Win32\+Service Service Control Message Accepted Bitmasks.  
+\item {\itshape Win32\+Exit\+Code} If the service exited, the return code from the process.  
+\item {\itshape Service\+Specific\+Exit\+Code} If the service exited with an error condition, the service specific code that is logged in the event log is visible here.  
+\item {\itshape Check\+Point} If the service is shutting down, holds the current check point number. This is used by the S\+CM as a kind of heart-\/beat to detect a wedged service process. The value of the check point is best interpreted in conjunction with the Wait\+Hint value.  
+\item {\itshape Wait\+Hint} If the service is shutting down it will set Wait\+Hint to a checkpoint value that will indicate 100\% completion. This can be used to implement a progress indicator.  
+\item {\itshape Process\+Id} The Windows process identifier. If 0, the process is not running.  
+\item {\itshape Service\+Flags} The dw\+Service\+Flags. See Win32\+Service Service Service Flag Constants.  
+\end{DoxyItemize}
+\end{DoxyReturn}
+\mbox{\Hypertarget{win32service_8php_a534c8e247b14c9ffb2f457e2ef2773f1}\label{win32service_8php_a534c8e247b14c9ffb2f457e2ef2773f1}} 
+\index{win32service.php@{win32service.php}!win32\_set\_service\_status@{win32\_set\_service\_status}}
+\index{win32\_set\_service\_status@{win32\_set\_service\_status}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{win32\_set\_service\_status()}{win32\_set\_service\_status()}}
+{\footnotesize\ttfamily win32\+\_\+set\+\_\+service\+\_\+status (\begin{DoxyParamCaption}\item[{}]{\$status,  }\item[{}]{\$checkpoint = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Update the service status Informs the S\+CM of the current status of a running service. This call is only valid for a running service process. 
+
+{\bfseries{Caution}} Since version 0.\+2.\+0, this function work only in \char`\"{}cli\char`\"{} S\+A\+PI. On other S\+A\+PI this function is disabled. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$status} & The service status code, one of W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+R\+U\+N\+N\+I\+NG, W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+T\+O\+P\+P\+ED, W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+T\+O\+P\+\_\+\+P\+E\+N\+D\+I\+NG, W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+E\+N\+D\+I\+NG, W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+I\+N\+U\+E\+\_\+\+P\+E\+N\+D\+I\+NG, W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P\+A\+U\+S\+E\+\_\+\+P\+E\+N\+D\+I\+NG, W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P\+A\+U\+S\+ED. \\
+\hline
+int & {\em \$checkpoint} & The checkpoint value the service increments periodically to report its progress during a lengthy start, stop, pause, or continue operation. For example, the service should increment this value as it completes each step of its initialization when it is starting up. The checkpoint is only valid when the status is one of W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+T\+O\+P\+\_\+\+P\+E\+N\+D\+I\+NG, W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+E\+N\+D\+I\+NG, W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+I\+N\+U\+E\+\_\+\+P\+E\+N\+D\+I\+NG or W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P\+A\+U\+S\+E\+\_\+\+P\+E\+N\+D\+I\+NG.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Returns T\+R\+UE on success, F\+A\+L\+SE if there is a problem with the parameters or a Win32 \mbox{\hyperlink{class_error}{Error}} Code on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{win32service_8php_a362290589b8b826111eb32b3683e30ed}\label{win32service_8php_a362290589b8b826111eb32b3683e30ed}} 
+\index{win32service.php@{win32service.php}!win32\_start\_service@{win32\_start\_service}}
+\index{win32\_start\_service@{win32\_start\_service}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{win32\_start\_service()}{win32\_start\_service()}}
+{\footnotesize\ttfamily win32\+\_\+start\+\_\+service (\begin{DoxyParamCaption}\item[{}]{\$service\+Name,  }\item[{}]{\$machine = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Starts a service Attempts to start the named service. Usually requires administrative privileges.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$service\+Name} & The short name of the service. \\
+\hline
+string & {\em \$machine} & Optional machine name. If omitted, the local machine is used.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\vert$false Returns W\+I\+N32\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR on success, F\+A\+L\+SE if there is a problem with the parameters or a Win32 \mbox{\hyperlink{class_error}{Error}} Code on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{win32service_8php_a67f0c7280d6763f5ed3c46417a90338e}\label{win32service_8php_a67f0c7280d6763f5ed3c46417a90338e}} 
+\index{win32service.php@{win32service.php}!win32\_start\_service\_ctrl\_dispatcher@{win32\_start\_service\_ctrl\_dispatcher}}
+\index{win32\_start\_service\_ctrl\_dispatcher@{win32\_start\_service\_ctrl\_dispatcher}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{win32\_start\_service\_ctrl\_dispatcher()}{win32\_start\_service\_ctrl\_dispatcher()}}
+{\footnotesize\ttfamily win32\+\_\+start\+\_\+service\+\_\+ctrl\+\_\+dispatcher (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Registers the script with the S\+CM, so that it can act as the service with the given name When launched via the Service Control Manager, a service process is required to \char`\"{}check-\/in\char`\"{} with it to establish service monitoring and communication facilities. This function performs the check-\/in by spawning a thread to handle the lower-\/level communication with the service control manager.
+
+Once started, the service process should do 2 things. The first is to tell the Service Control Manager that the service is running. This is achieved by calling \mbox{\hyperlink{win32service_8php_a534c8e247b14c9ffb2f457e2ef2773f1}{win32\+\_\+set\+\_\+service\+\_\+status()}} with the W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+R\+U\+N\+N\+I\+NG constant. If you need to perform some lengthy process before the service is actually running, then you can use the W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+E\+N\+D\+I\+NG constant. The second is to continue to check-\/in with the service control manager so that it can determine if it should terminate. This is achieved by periodically calling \mbox{\hyperlink{win32service_8php_a37a6b3a1e37bcbe4dd4d5ac4131e9072}{win32\+\_\+get\+\_\+last\+\_\+control\+\_\+message()}} and handling the return code appropriately. 
+
+{\bfseries{Caution}} Since version 0.\+2.\+0, this function work only in \char`\"{}cli\char`\"{} S\+A\+PI. On other S\+A\+PI this function is disabled. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The short-\/name of the service, as registered by \mbox{\hyperlink{win32service_8php_a31163fbe6b4e6e2f7f51b33cbcb362d6}{win32\+\_\+create\+\_\+service()}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Returns T\+R\+UE on success, F\+A\+L\+SE if there is a problem with the parameters or a Win32 \mbox{\hyperlink{class_error}{Error}} Code on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{win32service_8php_a85cd985b6a352fc24df82d5e206e2881}\label{win32service_8php_a85cd985b6a352fc24df82d5e206e2881}} 
+\index{win32service.php@{win32service.php}!win32\_stop\_service@{win32\_stop\_service}}
+\index{win32\_stop\_service@{win32\_stop\_service}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{win32\_stop\_service()}{win32\_stop\_service()}}
+{\footnotesize\ttfamily win32\+\_\+stop\+\_\+service (\begin{DoxyParamCaption}\item[{}]{\$service\+Name,  }\item[{}]{\$machine = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Stops a named service. Requires administrative privileges.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$service\+Name} & The short name of the service. \\
+\hline
+string & {\em \$machine} & Optional machine name. If omitted, the local machine is used.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\vert$false Returns W\+I\+N32\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR on success, F\+A\+L\+SE if there is a problem with the parameters or a Win32 \mbox{\hyperlink{class_error}{Error}} Code on failure. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{win32service_8php_a15810916586293798564f1f03470bdaa}\label{win32service_8php_a15810916586293798564f1f03470bdaa}} 
+\index{win32service.php@{win32service.php}!WIN32\_ABOVE\_NORMAL\_PRIORITY\_CLASS@{WIN32\_ABOVE\_NORMAL\_PRIORITY\_CLASS}}
+\index{WIN32\_ABOVE\_NORMAL\_PRIORITY\_CLASS@{WIN32\_ABOVE\_NORMAL\_PRIORITY\_CLASS}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ABOVE\_NORMAL\_PRIORITY\_CLASS}{WIN32\_ABOVE\_NORMAL\_PRIORITY\_CLASS}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+A\+B\+O\+V\+E\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS 0x00008000}
+
+Process that has priority above W\+I\+N32\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS but below W\+I\+N32\+\_\+\+H\+I\+G\+H\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS. \mbox{\Hypertarget{win32service_8php_a41df49b9c18db52e0fe6d35edc46d1bd}\label{win32service_8php_a41df49b9c18db52e0fe6d35edc46d1bd}} 
+\index{win32service.php@{win32service.php}!WIN32\_BELOW\_NORMAL\_PRIORITY\_CLASS@{WIN32\_BELOW\_NORMAL\_PRIORITY\_CLASS}}
+\index{WIN32\_BELOW\_NORMAL\_PRIORITY\_CLASS@{WIN32\_BELOW\_NORMAL\_PRIORITY\_CLASS}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_BELOW\_NORMAL\_PRIORITY\_CLASS}{WIN32\_BELOW\_NORMAL\_PRIORITY\_CLASS}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+B\+E\+L\+O\+W\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS 0x00004000}
+
+Process that has priority above W\+I\+N32\+\_\+\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS but below W\+I\+N32\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS. \mbox{\Hypertarget{win32service_8php_a17dcfdbb9cbc43ec8df43dd82b3c8197}\label{win32service_8php_a17dcfdbb9cbc43ec8df43dd82b3c8197}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_ACCESS\_DENIED@{WIN32\_ERROR\_ACCESS\_DENIED}}
+\index{WIN32\_ERROR\_ACCESS\_DENIED@{WIN32\_ERROR\_ACCESS\_DENIED}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_ACCESS\_DENIED}{WIN32\_ERROR\_ACCESS\_DENIED}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+D\+E\+N\+I\+ED 0x00000005}
+
+The handle to the S\+CM database does not have the appropriate access rights. \mbox{\Hypertarget{win32service_8php_a4f01defacfea5e4442267915fbcac1e2}\label{win32service_8php_a4f01defacfea5e4442267915fbcac1e2}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_CIRCULAR\_DEPENDENCY@{WIN32\_ERROR\_CIRCULAR\_DEPENDENCY}}
+\index{WIN32\_ERROR\_CIRCULAR\_DEPENDENCY@{WIN32\_ERROR\_CIRCULAR\_DEPENDENCY}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_CIRCULAR\_DEPENDENCY}{WIN32\_ERROR\_CIRCULAR\_DEPENDENCY}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+I\+R\+C\+U\+L\+A\+R\+\_\+\+D\+E\+P\+E\+N\+D\+E\+N\+CY 0x00000423}
+
+\mbox{\hyperlink{class_a}{A}} circular service dependency was specified. \mbox{\Hypertarget{win32service_8php_a4d966f1603b292ebc7ea526db2c78dc0}\label{win32service_8php_a4d966f1603b292ebc7ea526db2c78dc0}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_DATABASE\_DOES\_NOT\_EXIST@{WIN32\_ERROR\_DATABASE\_DOES\_NOT\_EXIST}}
+\index{WIN32\_ERROR\_DATABASE\_DOES\_NOT\_EXIST@{WIN32\_ERROR\_DATABASE\_DOES\_NOT\_EXIST}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_DATABASE\_DOES\_NOT\_EXIST}{WIN32\_ERROR\_DATABASE\_DOES\_NOT\_EXIST}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+D\+O\+E\+S\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+ST 0x00000429}
+
+The specified database does not exist. \mbox{\Hypertarget{win32service_8php_ad3cd70ef63814cbaf6e225103d764f8c}\label{win32service_8php_ad3cd70ef63814cbaf6e225103d764f8c}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_DEPENDENT\_SERVICES\_RUNNING@{WIN32\_ERROR\_DEPENDENT\_SERVICES\_RUNNING}}
+\index{WIN32\_ERROR\_DEPENDENT\_SERVICES\_RUNNING@{WIN32\_ERROR\_DEPENDENT\_SERVICES\_RUNNING}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_DEPENDENT\_SERVICES\_RUNNING}{WIN32\_ERROR\_DEPENDENT\_SERVICES\_RUNNING}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+E\+P\+E\+N\+D\+E\+N\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+S\+\_\+\+R\+U\+N\+N\+I\+NG 0x0000041B}
+
+The service cannot be stopped because other running services are dependent on it. \mbox{\Hypertarget{win32service_8php_a28b23563acd48d53337ba636f44b3dce}\label{win32service_8php_a28b23563acd48d53337ba636f44b3dce}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_DUPLICATE\_SERVICE\_NAME@{WIN32\_ERROR\_DUPLICATE\_SERVICE\_NAME}}
+\index{WIN32\_ERROR\_DUPLICATE\_SERVICE\_NAME@{WIN32\_ERROR\_DUPLICATE\_SERVICE\_NAME}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_DUPLICATE\_SERVICE\_NAME}{WIN32\_ERROR\_DUPLICATE\_SERVICE\_NAME}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+U\+P\+L\+I\+C\+A\+T\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+N\+A\+ME 0x00000436}
+
+The display name already exists in the service control manager database either as a service name or as another display name. \mbox{\Hypertarget{win32service_8php_a24fd5a7de38bc84bd1fe758f30d37665}\label{win32service_8php_a24fd5a7de38bc84bd1fe758f30d37665}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_FAILED\_SERVICE\_CONTROLLER\_CONNECT@{WIN32\_ERROR\_FAILED\_SERVICE\_CONTROLLER\_CONNECT}}
+\index{WIN32\_ERROR\_FAILED\_SERVICE\_CONTROLLER\_CONNECT@{WIN32\_ERROR\_FAILED\_SERVICE\_CONTROLLER\_CONNECT}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_FAILED\_SERVICE\_CONTROLLER\_CONNECT}{WIN32\_ERROR\_FAILED\_SERVICE\_CONTROLLER\_CONNECT}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+\_\+\+C\+O\+N\+N\+E\+CT 0x00000427}
+
+This error is returned if the program is being run as a console application rather than as a service. If the program will be run as a console application for debugging purposes, structure it such that service-\/specific code is not called. \mbox{\Hypertarget{win32service_8php_aa237282068432f054ccddf46c6afbb8c}\label{win32service_8php_aa237282068432f054ccddf46c6afbb8c}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_INSUFFICIENT\_BUFFER@{WIN32\_ERROR\_INSUFFICIENT\_BUFFER}}
+\index{WIN32\_ERROR\_INSUFFICIENT\_BUFFER@{WIN32\_ERROR\_INSUFFICIENT\_BUFFER}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_INSUFFICIENT\_BUFFER}{WIN32\_ERROR\_INSUFFICIENT\_BUFFER}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+S\+U\+F\+F\+I\+C\+I\+E\+N\+T\+\_\+\+B\+U\+F\+F\+ER 0x0000007A}
+
+The buffer is too small for the service status structure. Nothing was written to the structure. \mbox{\Hypertarget{win32service_8php_a357c5d5fee3e689caa1c8248f22ce481}\label{win32service_8php_a357c5d5fee3e689caa1c8248f22ce481}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_INVALID\_DATA@{WIN32\_ERROR\_INVALID\_DATA}}
+\index{WIN32\_ERROR\_INVALID\_DATA@{WIN32\_ERROR\_INVALID\_DATA}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_INVALID\_DATA}{WIN32\_ERROR\_INVALID\_DATA}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+D\+A\+TA 0x0000000D}
+
+The specified service status structure is invalid. \mbox{\Hypertarget{win32service_8php_a28d32de1cda21d0ee433ee303a791604}\label{win32service_8php_a28d32de1cda21d0ee433ee303a791604}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_INVALID\_HANDLE@{WIN32\_ERROR\_INVALID\_HANDLE}}
+\index{WIN32\_ERROR\_INVALID\_HANDLE@{WIN32\_ERROR\_INVALID\_HANDLE}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_INVALID\_HANDLE}{WIN32\_ERROR\_INVALID\_HANDLE}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+H\+A\+N\+D\+LE 0x00000006}
+
+The handle to the specified service control manager database is invalid. \mbox{\Hypertarget{win32service_8php_a1fcea82a878ecbb9b35f4438ccd7245c}\label{win32service_8php_a1fcea82a878ecbb9b35f4438ccd7245c}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_INVALID\_LEVEL@{WIN32\_ERROR\_INVALID\_LEVEL}}
+\index{WIN32\_ERROR\_INVALID\_LEVEL@{WIN32\_ERROR\_INVALID\_LEVEL}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_INVALID\_LEVEL}{WIN32\_ERROR\_INVALID\_LEVEL}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+L\+E\+V\+EL 0x0000007C}
+
+The Info\+Level parameter contains an unsupported value. \mbox{\Hypertarget{win32service_8php_a2901e93d3ba1b28e74e3b5ee9809c904}\label{win32service_8php_a2901e93d3ba1b28e74e3b5ee9809c904}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_INVALID\_NAME@{WIN32\_ERROR\_INVALID\_NAME}}
+\index{WIN32\_ERROR\_INVALID\_NAME@{WIN32\_ERROR\_INVALID\_NAME}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_INVALID\_NAME}{WIN32\_ERROR\_INVALID\_NAME}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+N\+A\+ME 0x0000007B}
+
+The specified service name is invalid. \mbox{\Hypertarget{win32service_8php_a5fe98b6f7336c4e7a4f4fdb1fc2a80fa}\label{win32service_8php_a5fe98b6f7336c4e7a4f4fdb1fc2a80fa}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_INVALID\_PARAMETER@{WIN32\_ERROR\_INVALID\_PARAMETER}}
+\index{WIN32\_ERROR\_INVALID\_PARAMETER@{WIN32\_ERROR\_INVALID\_PARAMETER}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_INVALID\_PARAMETER}{WIN32\_ERROR\_INVALID\_PARAMETER}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER 0x00000057}
+
+\mbox{\hyperlink{class_a}{A}} parameter that was specified is invalid. \mbox{\Hypertarget{win32service_8php_ad1af40365f6d7ee0bd9a8d4dc76bfc77}\label{win32service_8php_ad1af40365f6d7ee0bd9a8d4dc76bfc77}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_INVALID\_SERVICE\_ACCOUNT@{WIN32\_ERROR\_INVALID\_SERVICE\_ACCOUNT}}
+\index{WIN32\_ERROR\_INVALID\_SERVICE\_ACCOUNT@{WIN32\_ERROR\_INVALID\_SERVICE\_ACCOUNT}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_INVALID\_SERVICE\_ACCOUNT}{WIN32\_ERROR\_INVALID\_SERVICE\_ACCOUNT}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+C\+C\+O\+U\+NT 0x00000421}
+
+The user account name specified in the user parameter does not exist. See \mbox{\hyperlink{win32service_8php_a31163fbe6b4e6e2f7f51b33cbcb362d6}{win32\+\_\+create\+\_\+service()}}. \mbox{\Hypertarget{win32service_8php_a5d719b54a98276250e67db922d8a3f78}\label{win32service_8php_a5d719b54a98276250e67db922d8a3f78}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_INVALID\_SERVICE\_CONTROL@{WIN32\_ERROR\_INVALID\_SERVICE\_CONTROL}}
+\index{WIN32\_ERROR\_INVALID\_SERVICE\_CONTROL@{WIN32\_ERROR\_INVALID\_SERVICE\_CONTROL}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_INVALID\_SERVICE\_CONTROL}{WIN32\_ERROR\_INVALID\_SERVICE\_CONTROL}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+OL 0x0000041C}
+
+The requested control code is not valid, or it is unacceptable to the service. \mbox{\Hypertarget{win32service_8php_a991958373dc6ff038bc3cfda70a048e6}\label{win32service_8php_a991958373dc6ff038bc3cfda70a048e6}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_PATH\_NOT\_FOUND@{WIN32\_ERROR\_PATH\_NOT\_FOUND}}
+\index{WIN32\_ERROR\_PATH\_NOT\_FOUND@{WIN32\_ERROR\_PATH\_NOT\_FOUND}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_PATH\_NOT\_FOUND}{WIN32\_ERROR\_PATH\_NOT\_FOUND}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+P\+A\+T\+H\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND 0x00000003}
+
+The service binary file could not be found. \mbox{\Hypertarget{win32service_8php_a6e7a5b4a741beca3870a4b722a964222}\label{win32service_8php_a6e7a5b4a741beca3870a4b722a964222}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_SERVICE\_ALREADY\_RUNNING@{WIN32\_ERROR\_SERVICE\_ALREADY\_RUNNING}}
+\index{WIN32\_ERROR\_SERVICE\_ALREADY\_RUNNING@{WIN32\_ERROR\_SERVICE\_ALREADY\_RUNNING}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_SERVICE\_ALREADY\_RUNNING}{WIN32\_ERROR\_SERVICE\_ALREADY\_RUNNING}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+R\+U\+N\+N\+I\+NG 0x00000420}
+
+An instance of the service is already running. \mbox{\Hypertarget{win32service_8php_a5dd76b4de775e2aba0b5534ab5320d9f}\label{win32service_8php_a5dd76b4de775e2aba0b5534ab5320d9f}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_SERVICE\_CANNOT\_ACCEPT\_CTRL@{WIN32\_ERROR\_SERVICE\_CANNOT\_ACCEPT\_CTRL}}
+\index{WIN32\_ERROR\_SERVICE\_CANNOT\_ACCEPT\_CTRL@{WIN32\_ERROR\_SERVICE\_CANNOT\_ACCEPT\_CTRL}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_SERVICE\_CANNOT\_ACCEPT\_CTRL}{WIN32\_ERROR\_SERVICE\_CANNOT\_ACCEPT\_CTRL}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+A\+N\+N\+O\+T\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+C\+T\+RL 0x00000425}
+
+The requested control code cannot be sent to the service because the state of the service is W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+T\+O\+P\+P\+ED, W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+E\+N\+D\+I\+NG, or W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+T\+O\+P\+\_\+\+P\+E\+N\+D\+I\+NG. \mbox{\Hypertarget{win32service_8php_a12fdc75807f9f30ed35de19308a19021}\label{win32service_8php_a12fdc75807f9f30ed35de19308a19021}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_SERVICE\_DATABASE\_LOCKED@{WIN32\_ERROR\_SERVICE\_DATABASE\_LOCKED}}
+\index{WIN32\_ERROR\_SERVICE\_DATABASE\_LOCKED@{WIN32\_ERROR\_SERVICE\_DATABASE\_LOCKED}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_SERVICE\_DATABASE\_LOCKED}{WIN32\_ERROR\_SERVICE\_DATABASE\_LOCKED}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+L\+O\+C\+K\+ED 0x0000041F}
+
+The database is locked. \mbox{\Hypertarget{win32service_8php_a450cad522591884631d533fbd43bb501}\label{win32service_8php_a450cad522591884631d533fbd43bb501}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_SERVICE\_DEPENDENCY\_DELETED@{WIN32\_ERROR\_SERVICE\_DEPENDENCY\_DELETED}}
+\index{WIN32\_ERROR\_SERVICE\_DEPENDENCY\_DELETED@{WIN32\_ERROR\_SERVICE\_DEPENDENCY\_DELETED}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_SERVICE\_DEPENDENCY\_DELETED}{WIN32\_ERROR\_SERVICE\_DEPENDENCY\_DELETED}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+D\+E\+P\+E\+N\+D\+E\+N\+C\+Y\+\_\+\+D\+E\+L\+E\+T\+ED 0x00000433}
+
+The service depends on a service that does not exist or has been marked for deletion. \mbox{\Hypertarget{win32service_8php_a84dc2f60bab3488d6d7c466230655870}\label{win32service_8php_a84dc2f60bab3488d6d7c466230655870}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_SERVICE\_DEPENDENCY\_FAIL@{WIN32\_ERROR\_SERVICE\_DEPENDENCY\_FAIL}}
+\index{WIN32\_ERROR\_SERVICE\_DEPENDENCY\_FAIL@{WIN32\_ERROR\_SERVICE\_DEPENDENCY\_FAIL}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_SERVICE\_DEPENDENCY\_FAIL}{WIN32\_ERROR\_SERVICE\_DEPENDENCY\_FAIL}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+D\+E\+P\+E\+N\+D\+E\+N\+C\+Y\+\_\+\+F\+A\+IL 0x0000042C}
+
+The service depends on another service that has failed to start. \mbox{\Hypertarget{win32service_8php_ab7f08a2e4139e5868db8a55a42d4674b}\label{win32service_8php_ab7f08a2e4139e5868db8a55a42d4674b}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_SERVICE\_DISABLED@{WIN32\_ERROR\_SERVICE\_DISABLED}}
+\index{WIN32\_ERROR\_SERVICE\_DISABLED@{WIN32\_ERROR\_SERVICE\_DISABLED}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_SERVICE\_DISABLED}{WIN32\_ERROR\_SERVICE\_DISABLED}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED 0x00000422}
+
+The service has been disabled. \mbox{\Hypertarget{win32service_8php_ab1f931769f0835bc1413af5c53e0755c}\label{win32service_8php_ab1f931769f0835bc1413af5c53e0755c}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_SERVICE\_DOES\_NOT\_EXIST@{WIN32\_ERROR\_SERVICE\_DOES\_NOT\_EXIST}}
+\index{WIN32\_ERROR\_SERVICE\_DOES\_NOT\_EXIST@{WIN32\_ERROR\_SERVICE\_DOES\_NOT\_EXIST}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_SERVICE\_DOES\_NOT\_EXIST}{WIN32\_ERROR\_SERVICE\_DOES\_NOT\_EXIST}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+D\+O\+E\+S\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+ST 0x00000424}
+
+The specified service does not exist as an installed service. \mbox{\Hypertarget{win32service_8php_aea30f3abf8de8d7f134f9f1936e1373e}\label{win32service_8php_aea30f3abf8de8d7f134f9f1936e1373e}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_SERVICE\_EXISTS@{WIN32\_ERROR\_SERVICE\_EXISTS}}
+\index{WIN32\_ERROR\_SERVICE\_EXISTS@{WIN32\_ERROR\_SERVICE\_EXISTS}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_SERVICE\_EXISTS}{WIN32\_ERROR\_SERVICE\_EXISTS}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+E\+X\+I\+S\+TS 0x00000431}
+
+The specified service already exists in this database. \mbox{\Hypertarget{win32service_8php_aecde199b6e69896bb0272f89d774a1b1}\label{win32service_8php_aecde199b6e69896bb0272f89d774a1b1}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_SERVICE\_LOGON\_FAILED@{WIN32\_ERROR\_SERVICE\_LOGON\_FAILED}}
+\index{WIN32\_ERROR\_SERVICE\_LOGON\_FAILED@{WIN32\_ERROR\_SERVICE\_LOGON\_FAILED}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_SERVICE\_LOGON\_FAILED}{WIN32\_ERROR\_SERVICE\_LOGON\_FAILED}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+L\+O\+G\+O\+N\+\_\+\+F\+A\+I\+L\+ED 0x0000042D}
+
+The service did not start due to a logon failure. This error occurs if the service is configured to run under an account that does not have the \char`\"{}\+Log on as a service\char`\"{} right. \mbox{\Hypertarget{win32service_8php_a403c15ed74afc047950af5d7ece7c6f0}\label{win32service_8php_a403c15ed74afc047950af5d7ece7c6f0}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_SERVICE\_MARKED\_FOR\_DELETE@{WIN32\_ERROR\_SERVICE\_MARKED\_FOR\_DELETE}}
+\index{WIN32\_ERROR\_SERVICE\_MARKED\_FOR\_DELETE@{WIN32\_ERROR\_SERVICE\_MARKED\_FOR\_DELETE}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_SERVICE\_MARKED\_FOR\_DELETE}{WIN32\_ERROR\_SERVICE\_MARKED\_FOR\_DELETE}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+R\+K\+E\+D\+\_\+\+F\+O\+R\+\_\+\+D\+E\+L\+E\+TE 0x00000430}
+
+The specified service has already been marked for deletion. \mbox{\Hypertarget{win32service_8php_a8b365a3befc4ca9ca336acd9ff796c62}\label{win32service_8php_a8b365a3befc4ca9ca336acd9ff796c62}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_SERVICE\_NO\_THREAD@{WIN32\_ERROR\_SERVICE\_NO\_THREAD}}
+\index{WIN32\_ERROR\_SERVICE\_NO\_THREAD@{WIN32\_ERROR\_SERVICE\_NO\_THREAD}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_SERVICE\_NO\_THREAD}{WIN32\_ERROR\_SERVICE\_NO\_THREAD}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+N\+O\+\_\+\+T\+H\+R\+E\+AD 0x0000041E}
+
+\mbox{\hyperlink{class_a}{A}} thread could not be created for the service. \mbox{\Hypertarget{win32service_8php_a1a1a5c54ad50bafc77f43d3497ea5b01}\label{win32service_8php_a1a1a5c54ad50bafc77f43d3497ea5b01}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_SERVICE\_NOT\_ACTIVE@{WIN32\_ERROR\_SERVICE\_NOT\_ACTIVE}}
+\index{WIN32\_ERROR\_SERVICE\_NOT\_ACTIVE@{WIN32\_ERROR\_SERVICE\_NOT\_ACTIVE}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_SERVICE\_NOT\_ACTIVE}{WIN32\_ERROR\_SERVICE\_NOT\_ACTIVE}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+N\+O\+T\+\_\+\+A\+C\+T\+I\+VE 0x00000426}
+
+The service has not been started. \mbox{\Hypertarget{win32service_8php_a89109c254b03ed92ac904192ddd74d17}\label{win32service_8php_a89109c254b03ed92ac904192ddd74d17}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_SERVICE\_REQUEST\_TIMEOUT@{WIN32\_ERROR\_SERVICE\_REQUEST\_TIMEOUT}}
+\index{WIN32\_ERROR\_SERVICE\_REQUEST\_TIMEOUT@{WIN32\_ERROR\_SERVICE\_REQUEST\_TIMEOUT}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_SERVICE\_REQUEST\_TIMEOUT}{WIN32\_ERROR\_SERVICE\_REQUEST\_TIMEOUT}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+T\+I\+M\+E\+O\+UT 0x0000041D}
+
+The process for the service was started, but it did not call Start\+Service\+Ctrl\+Dispatcher, or the thread that called Start\+Service\+Ctrl\+Dispatcher may be blocked in a control handler function. \mbox{\Hypertarget{win32service_8php_abd64935965e6844b6985b587ca2eef7f}\label{win32service_8php_abd64935965e6844b6985b587ca2eef7f}} 
+\index{win32service.php@{win32service.php}!WIN32\_ERROR\_SHUTDOWN\_IN\_PROGRESS@{WIN32\_ERROR\_SHUTDOWN\_IN\_PROGRESS}}
+\index{WIN32\_ERROR\_SHUTDOWN\_IN\_PROGRESS@{WIN32\_ERROR\_SHUTDOWN\_IN\_PROGRESS}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_ERROR\_SHUTDOWN\_IN\_PROGRESS}{WIN32\_ERROR\_SHUTDOWN\_IN\_PROGRESS}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+H\+U\+T\+D\+O\+W\+N\+\_\+\+I\+N\+\_\+\+P\+R\+O\+G\+R\+E\+SS 0x0000045B}
+
+The system is shutting down; this function cannot be called. \mbox{\Hypertarget{win32service_8php_ab586513e9f7ae05f28360776c85cecc6}\label{win32service_8php_ab586513e9f7ae05f28360776c85cecc6}} 
+\index{win32service.php@{win32service.php}!WIN32\_HIGH\_PRIORITY\_CLASS@{WIN32\_HIGH\_PRIORITY\_CLASS}}
+\index{WIN32\_HIGH\_PRIORITY\_CLASS@{WIN32\_HIGH\_PRIORITY\_CLASS}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_HIGH\_PRIORITY\_CLASS}{WIN32\_HIGH\_PRIORITY\_CLASS}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+H\+I\+G\+H\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS 0x00000080}
+
+Process that performs time-\/critical tasks that must be executed immediately. The threads of the process preempt the threads of normal or idle priority class processes. An example is the Task List, which must respond quickly when called by the user, regardless of the load on the operating system. Use extreme care when using the high-\/priority class, because a high-\/priority class application can use nearly all available C\+PU time. \mbox{\Hypertarget{win32service_8php_af2e22e720b79331154577cd73df61c12}\label{win32service_8php_af2e22e720b79331154577cd73df61c12}} 
+\index{win32service.php@{win32service.php}!WIN32\_IDLE\_PRIORITY\_CLASS@{WIN32\_IDLE\_PRIORITY\_CLASS}}
+\index{WIN32\_IDLE\_PRIORITY\_CLASS@{WIN32\_IDLE\_PRIORITY\_CLASS}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_IDLE\_PRIORITY\_CLASS}{WIN32\_IDLE\_PRIORITY\_CLASS}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS 0x00000040}
+
+Process whose threads run only when the system is idle. The threads of the process are preempted by the threads of any process running in a higher priority class. An example is a screen saver. The idle-\/priority class is inherited by child processes. \mbox{\Hypertarget{win32service_8php_a9cd1383ad7deb28bd288b3fb6f9ff165}\label{win32service_8php_a9cd1383ad7deb28bd288b3fb6f9ff165}} 
+\index{win32service.php@{win32service.php}!WIN32\_NO\_ERROR@{WIN32\_NO\_ERROR}}
+\index{WIN32\_NO\_ERROR@{WIN32\_NO\_ERROR}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_NO\_ERROR}{WIN32\_NO\_ERROR}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR 0x00000000}
+
+No error. \mbox{\Hypertarget{win32service_8php_a92bc3582e3e1cf789292b0927efca169}\label{win32service_8php_a92bc3582e3e1cf789292b0927efca169}} 
+\index{win32service.php@{win32service.php}!WIN32\_NORMAL\_PRIORITY\_CLASS@{WIN32\_NORMAL\_PRIORITY\_CLASS}}
+\index{WIN32\_NORMAL\_PRIORITY\_CLASS@{WIN32\_NORMAL\_PRIORITY\_CLASS}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_NORMAL\_PRIORITY\_CLASS}{WIN32\_NORMAL\_PRIORITY\_CLASS}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS 0x00000020}
+
+Process with no special scheduling needs. \mbox{\Hypertarget{win32service_8php_aa83039863a2c5f38e1f436d69b7ec351}\label{win32service_8php_aa83039863a2c5f38e1f436d69b7ec351}} 
+\index{win32service.php@{win32service.php}!WIN32\_REALTIME\_PRIORITY\_CLASS@{WIN32\_REALTIME\_PRIORITY\_CLASS}}
+\index{WIN32\_REALTIME\_PRIORITY\_CLASS@{WIN32\_REALTIME\_PRIORITY\_CLASS}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_REALTIME\_PRIORITY\_CLASS}{WIN32\_REALTIME\_PRIORITY\_CLASS}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+R\+E\+A\+L\+T\+I\+M\+E\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+C\+L\+A\+SS 0x00000100}
+
+Process that has the highest possible priority. The threads of the process preempt the threads of all other processes, including operating system processes performing important tasks. For example, a real-\/time process that executes for more than a very brief interval can cause disk caches not to flush or cause the mouse to be unresponsive. \mbox{\Hypertarget{win32service_8php_a2b6ee187cc11a192a1329c3053110600}\label{win32service_8php_a2b6ee187cc11a192a1329c3053110600}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_ACCEPT\_PAUSE\_CONTINUE@{WIN32\_SERVICE\_ACCEPT\_PAUSE\_CONTINUE}}
+\index{WIN32\_SERVICE\_ACCEPT\_PAUSE\_CONTINUE@{WIN32\_SERVICE\_ACCEPT\_PAUSE\_CONTINUE}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_ACCEPT\_PAUSE\_CONTINUE}{WIN32\_SERVICE\_ACCEPT\_PAUSE\_CONTINUE}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+P\+A\+U\+S\+E\+\_\+\+C\+O\+N\+T\+I\+N\+UE 0x00000002}
+
+The service can be paused and continued. This control code allows the service to receive W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+A\+U\+SE and W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+C\+O\+N\+T\+I\+N\+UE notifications. \mbox{\Hypertarget{win32service_8php_af02cca7ddc0af3db85fc963c4d215a41}\label{win32service_8php_af02cca7ddc0af3db85fc963c4d215a41}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_ACCEPT\_PRESHUTDOWN@{WIN32\_SERVICE\_ACCEPT\_PRESHUTDOWN}}
+\index{WIN32\_SERVICE\_ACCEPT\_PRESHUTDOWN@{WIN32\_SERVICE\_ACCEPT\_PRESHUTDOWN}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_ACCEPT\_PRESHUTDOWN}{WIN32\_SERVICE\_ACCEPT\_PRESHUTDOWN}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+P\+R\+E\+S\+H\+U\+T\+D\+O\+WN 0x00000100}
+
+The service can perform preshutdown tasks. This control code enables the service to receive W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+R\+E\+S\+H\+U\+T\+D\+O\+WN notifications. This value is not supported by Windows Server 2003 and Windows X\+P/2000. \mbox{\Hypertarget{win32service_8php_a3ffa60a6df05fa752f463234b631a314}\label{win32service_8php_a3ffa60a6df05fa752f463234b631a314}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_ACCEPT\_SHUTDOWN@{WIN32\_SERVICE\_ACCEPT\_SHUTDOWN}}
+\index{WIN32\_SERVICE\_ACCEPT\_SHUTDOWN@{WIN32\_SERVICE\_ACCEPT\_SHUTDOWN}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_ACCEPT\_SHUTDOWN}{WIN32\_SERVICE\_ACCEPT\_SHUTDOWN}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+S\+H\+U\+T\+D\+O\+WN 0x00000004}
+
+The service is notified when system shutdown occurs. This control code allows the service to receive W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+H\+U\+T\+D\+O\+WN notifications. \mbox{\Hypertarget{win32service_8php_a0fc27880aa99742acb45a71f9ffa8a9b}\label{win32service_8php_a0fc27880aa99742acb45a71f9ffa8a9b}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_ACCEPT\_STOP@{WIN32\_SERVICE\_ACCEPT\_STOP}}
+\index{WIN32\_SERVICE\_ACCEPT\_STOP@{WIN32\_SERVICE\_ACCEPT\_STOP}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_ACCEPT\_STOP}{WIN32\_SERVICE\_ACCEPT\_STOP}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+C\+C\+E\+P\+T\+\_\+\+S\+T\+OP 0x00000001}
+
+The service can be stopped. This control code allows the service to receive W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+T\+OP notifications. \mbox{\Hypertarget{win32service_8php_a130d3210f331edee3a35cfbe7784f82e}\label{win32service_8php_a130d3210f331edee3a35cfbe7784f82e}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_AUTO\_START@{WIN32\_SERVICE\_AUTO\_START}}
+\index{WIN32\_SERVICE\_AUTO\_START@{WIN32\_SERVICE\_AUTO\_START}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_AUTO\_START}{WIN32\_SERVICE\_AUTO\_START}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+A\+U\+T\+O\+\_\+\+S\+T\+A\+RT 0x00000002}
+
+\mbox{\hyperlink{class_a}{A}} service started automatically by the service control manager during system startup. \mbox{\Hypertarget{win32service_8php_a72f6eab4028d46ee7cea158e6acb4f20}\label{win32service_8php_a72f6eab4028d46ee7cea158e6acb4f20}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_CONTINUE\_PENDING@{WIN32\_SERVICE\_CONTINUE\_PENDING}}
+\index{WIN32\_SERVICE\_CONTINUE\_PENDING@{WIN32\_SERVICE\_CONTINUE\_PENDING}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_CONTINUE\_PENDING}{WIN32\_SERVICE\_CONTINUE\_PENDING}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+I\+N\+U\+E\+\_\+\+P\+E\+N\+D\+I\+NG 0x00000005}
+
+The service continue is pending. \mbox{\Hypertarget{win32service_8php_a7897fad9e2220f3aaa509ce8e106a0a3}\label{win32service_8php_a7897fad9e2220f3aaa509ce8e106a0a3}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_CONTROL\_CONTINUE@{WIN32\_SERVICE\_CONTROL\_CONTINUE}}
+\index{WIN32\_SERVICE\_CONTROL\_CONTINUE@{WIN32\_SERVICE\_CONTROL\_CONTINUE}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_CONTROL\_CONTINUE}{WIN32\_SERVICE\_CONTROL\_CONTINUE}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+C\+O\+N\+T\+I\+N\+UE 0x00000003}
+
+Notifies a paused service that it should resume. \mbox{\Hypertarget{win32service_8php_a98aaf1927887bd90a79b1dca094592d6}\label{win32service_8php_a98aaf1927887bd90a79b1dca094592d6}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_CONTROL\_INTERROGATE@{WIN32\_SERVICE\_CONTROL\_INTERROGATE}}
+\index{WIN32\_SERVICE\_CONTROL\_INTERROGATE@{WIN32\_SERVICE\_CONTROL\_INTERROGATE}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_CONTROL\_INTERROGATE}{WIN32\_SERVICE\_CONTROL\_INTERROGATE}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+I\+N\+T\+E\+R\+R\+O\+G\+A\+TE 0x00000004}
+
+Notifies a service that it should report its current status information to the service control manager. \mbox{\Hypertarget{win32service_8php_a388ac40690e98fe6b2cce84eff0f0f42}\label{win32service_8php_a388ac40690e98fe6b2cce84eff0f0f42}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_CONTROL\_PAUSE@{WIN32\_SERVICE\_CONTROL\_PAUSE}}
+\index{WIN32\_SERVICE\_CONTROL\_PAUSE@{WIN32\_SERVICE\_CONTROL\_PAUSE}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_CONTROL\_PAUSE}{WIN32\_SERVICE\_CONTROL\_PAUSE}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+A\+U\+SE 0x00000002}
+
+Notifies a service that it should pause. \mbox{\Hypertarget{win32service_8php_a2c835ae6b402f1753c5c8a95d56b5db5}\label{win32service_8php_a2c835ae6b402f1753c5c8a95d56b5db5}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_CONTROL\_PRESHUTDOWN@{WIN32\_SERVICE\_CONTROL\_PRESHUTDOWN}}
+\index{WIN32\_SERVICE\_CONTROL\_PRESHUTDOWN@{WIN32\_SERVICE\_CONTROL\_PRESHUTDOWN}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_CONTROL\_PRESHUTDOWN}{WIN32\_SERVICE\_CONTROL\_PRESHUTDOWN}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+R\+E\+S\+H\+U\+T\+D\+O\+WN 0x0000000F}
+
+Notifies a service that the system will be shutting down. \mbox{\hyperlink{class_a}{A}} service that handles this notification blocks system shutdown until the service stops or the preshutdown time-\/out interval expires. This value is not supported by Windows Server 2003 and Windows X\+P/2000. \mbox{\Hypertarget{win32service_8php_acd6b28c1638e6871ee5400044f12887a}\label{win32service_8php_acd6b28c1638e6871ee5400044f12887a}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_CONTROL\_SHUTDOWN@{WIN32\_SERVICE\_CONTROL\_SHUTDOWN}}
+\index{WIN32\_SERVICE\_CONTROL\_SHUTDOWN@{WIN32\_SERVICE\_CONTROL\_SHUTDOWN}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_CONTROL\_SHUTDOWN}{WIN32\_SERVICE\_CONTROL\_SHUTDOWN}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+H\+U\+T\+D\+O\+WN 0x00000005}
+
+Notifies a service that the system is shutting down so the service can perform cleanup tasks. If a service accepts this control code, it must stop after it performs its cleanup tasks. After the S\+CM sends this control code, it will not send other control codes to the service. \mbox{\Hypertarget{win32service_8php_a78840631e4bfeb6bdb60497e6fa9ef8f}\label{win32service_8php_a78840631e4bfeb6bdb60497e6fa9ef8f}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_CONTROL\_STOP@{WIN32\_SERVICE\_CONTROL\_STOP}}
+\index{WIN32\_SERVICE\_CONTROL\_STOP@{WIN32\_SERVICE\_CONTROL\_STOP}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_CONTROL\_STOP}{WIN32\_SERVICE\_CONTROL\_STOP}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+T\+OP 0x00000001}
+
+Notifies a service that it should stop. \mbox{\Hypertarget{win32service_8php_acc4d11a5b024371eb20d185b818bb6a8}\label{win32service_8php_acc4d11a5b024371eb20d185b818bb6a8}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_DEMAND\_START@{WIN32\_SERVICE\_DEMAND\_START}}
+\index{WIN32\_SERVICE\_DEMAND\_START@{WIN32\_SERVICE\_DEMAND\_START}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_DEMAND\_START}{WIN32\_SERVICE\_DEMAND\_START}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+D\+E\+M\+A\+N\+D\+\_\+\+S\+T\+A\+RT 0x00000003}
+
+\mbox{\hyperlink{class_a}{A}} service started by the service control manager when a process calls the Start\+Service function. \mbox{\Hypertarget{win32service_8php_a88813a2d5b7c067ffcc41372ce23e91b}\label{win32service_8php_a88813a2d5b7c067ffcc41372ce23e91b}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_DISABLED@{WIN32\_SERVICE\_DISABLED}}
+\index{WIN32\_SERVICE\_DISABLED@{WIN32\_SERVICE\_DISABLED}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_DISABLED}{WIN32\_SERVICE\_DISABLED}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED 0x00000004}
+
+\mbox{\hyperlink{class_a}{A}} service that cannot be started. Attempts to start the service result in the error code W\+I\+N32\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED. \mbox{\Hypertarget{win32service_8php_a0a6032c17a4dbcfdc9d6fde761d74ae3}\label{win32service_8php_a0a6032c17a4dbcfdc9d6fde761d74ae3}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_ERROR\_IGNORE@{WIN32\_SERVICE\_ERROR\_IGNORE}}
+\index{WIN32\_SERVICE\_ERROR\_IGNORE@{WIN32\_SERVICE\_ERROR\_IGNORE}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_ERROR\_IGNORE}{WIN32\_SERVICE\_ERROR\_IGNORE}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+G\+N\+O\+RE 0x00000000}
+
+The startup program ignores the error and continues the startup operation. \mbox{\Hypertarget{win32service_8php_accf965e1f02bfd8b9555b02502f0e3d2}\label{win32service_8php_accf965e1f02bfd8b9555b02502f0e3d2}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_ERROR\_NORMAL@{WIN32\_SERVICE\_ERROR\_NORMAL}}
+\index{WIN32\_SERVICE\_ERROR\_NORMAL@{WIN32\_SERVICE\_ERROR\_NORMAL}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_ERROR\_NORMAL}{WIN32\_SERVICE\_ERROR\_NORMAL}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+R\+M\+AL 0x00000001}
+
+The startup program logs the error in the event log but continues the startup operation. \mbox{\Hypertarget{win32service_8php_a683fabcebee5596b4a62db50fb77a75a}\label{win32service_8php_a683fabcebee5596b4a62db50fb77a75a}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_INTERACTIVE\_PROCESS@{WIN32\_SERVICE\_INTERACTIVE\_PROCESS}}
+\index{WIN32\_SERVICE\_INTERACTIVE\_PROCESS@{WIN32\_SERVICE\_INTERACTIVE\_PROCESS}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_INTERACTIVE\_PROCESS}{WIN32\_SERVICE\_INTERACTIVE\_PROCESS}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+V\+E\+\_\+\+P\+R\+O\+C\+E\+SS 0x00000100}
+
+The service can interact with the desktop. This option is not available on Windows Vista or later. \mbox{\Hypertarget{win32service_8php_aec8909bd2294615a0787120371664d7f}\label{win32service_8php_aec8909bd2294615a0787120371664d7f}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_PAUSE\_PENDING@{WIN32\_SERVICE\_PAUSE\_PENDING}}
+\index{WIN32\_SERVICE\_PAUSE\_PENDING@{WIN32\_SERVICE\_PAUSE\_PENDING}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_PAUSE\_PENDING}{WIN32\_SERVICE\_PAUSE\_PENDING}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P\+A\+U\+S\+E\+\_\+\+P\+E\+N\+D\+I\+NG 0x00000006}
+
+The service pause is pending. \mbox{\Hypertarget{win32service_8php_a100a89e2eb4f3917d7dcc59e97dd7ca2}\label{win32service_8php_a100a89e2eb4f3917d7dcc59e97dd7ca2}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_PAUSED@{WIN32\_SERVICE\_PAUSED}}
+\index{WIN32\_SERVICE\_PAUSED@{WIN32\_SERVICE\_PAUSED}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_PAUSED}{WIN32\_SERVICE\_PAUSED}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P\+A\+U\+S\+ED 0x00000007}
+
+The service is paused. \mbox{\Hypertarget{win32service_8php_ab34d7bf8064bab9c742b10d9a4ef6d33}\label{win32service_8php_ab34d7bf8064bab9c742b10d9a4ef6d33}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_RUNNING@{WIN32\_SERVICE\_RUNNING}}
+\index{WIN32\_SERVICE\_RUNNING@{WIN32\_SERVICE\_RUNNING}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_RUNNING}{WIN32\_SERVICE\_RUNNING}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+R\+U\+N\+N\+I\+NG 0x00000004}
+
+The service is running. \mbox{\Hypertarget{win32service_8php_a53da60d9b77a0fba830ed436e616297b}\label{win32service_8php_a53da60d9b77a0fba830ed436e616297b}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_RUNS\_IN\_SYSTEM\_PROCESS@{WIN32\_SERVICE\_RUNS\_IN\_SYSTEM\_PROCESS}}
+\index{WIN32\_SERVICE\_RUNS\_IN\_SYSTEM\_PROCESS@{WIN32\_SERVICE\_RUNS\_IN\_SYSTEM\_PROCESS}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_RUNS\_IN\_SYSTEM\_PROCESS}{WIN32\_SERVICE\_RUNS\_IN\_SYSTEM\_PROCESS}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+R\+U\+N\+S\+\_\+\+I\+N\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+P\+R\+O\+C\+E\+SS 0x00000001}
+
+The service runs in a system process that must always be running. \mbox{\Hypertarget{win32service_8php_a12d6f025b1622f775bf8499bf60eee0d}\label{win32service_8php_a12d6f025b1622f775bf8499bf60eee0d}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_START\_PENDING@{WIN32\_SERVICE\_START\_PENDING}}
+\index{WIN32\_SERVICE\_START\_PENDING@{WIN32\_SERVICE\_START\_PENDING}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_START\_PENDING}{WIN32\_SERVICE\_START\_PENDING}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+E\+N\+D\+I\+NG 0x00000002}
+
+The service is starting. \mbox{\Hypertarget{win32service_8php_aa4fa7932441ace0cd5bd168409f3da6a}\label{win32service_8php_aa4fa7932441ace0cd5bd168409f3da6a}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_STOP\_PENDING@{WIN32\_SERVICE\_STOP\_PENDING}}
+\index{WIN32\_SERVICE\_STOP\_PENDING@{WIN32\_SERVICE\_STOP\_PENDING}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_STOP\_PENDING}{WIN32\_SERVICE\_STOP\_PENDING}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+T\+O\+P\+\_\+\+P\+E\+N\+D\+I\+NG 0x00000003}
+
+The service is stopping. \mbox{\Hypertarget{win32service_8php_ae78d46fd637a116898019e78dd4c3254}\label{win32service_8php_ae78d46fd637a116898019e78dd4c3254}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_STOPPED@{WIN32\_SERVICE\_STOPPED}}
+\index{WIN32\_SERVICE\_STOPPED@{WIN32\_SERVICE\_STOPPED}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_STOPPED}{WIN32\_SERVICE\_STOPPED}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+T\+O\+P\+P\+ED 0x00000001}
+
+The service is not running. \mbox{\Hypertarget{win32service_8php_a816d55c26f8dffd3879742d464014718}\label{win32service_8php_a816d55c26f8dffd3879742d464014718}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_WIN32\_OWN\_PROCESS@{WIN32\_SERVICE\_WIN32\_OWN\_PROCESS}}
+\index{WIN32\_SERVICE\_WIN32\_OWN\_PROCESS@{WIN32\_SERVICE\_WIN32\_OWN\_PROCESS}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_WIN32\_OWN\_PROCESS}{WIN32\_SERVICE\_WIN32\_OWN\_PROCESS}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+W\+I\+N32\+\_\+\+O\+W\+N\+\_\+\+P\+R\+O\+C\+E\+SS 0x00000010}
+
+The service runs in its own process. \mbox{\Hypertarget{win32service_8php_ad81861ddf05c3ecc47bf2d45d76b9b3c}\label{win32service_8php_ad81861ddf05c3ecc47bf2d45d76b9b3c}} 
+\index{win32service.php@{win32service.php}!WIN32\_SERVICE\_WIN32\_OWN\_PROCESS\_INTERACTIVE@{WIN32\_SERVICE\_WIN32\_OWN\_PROCESS\_INTERACTIVE}}
+\index{WIN32\_SERVICE\_WIN32\_OWN\_PROCESS\_INTERACTIVE@{WIN32\_SERVICE\_WIN32\_OWN\_PROCESS\_INTERACTIVE}!win32service.php@{win32service.php}}
+\doxysubsubsection{\texorpdfstring{WIN32\_SERVICE\_WIN32\_OWN\_PROCESS\_INTERACTIVE}{WIN32\_SERVICE\_WIN32\_OWN\_PROCESS\_INTERACTIVE}}
+{\footnotesize\ttfamily const W\+I\+N32\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+W\+I\+N32\+\_\+\+O\+W\+N\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE 0x00000110}
+
+The service runs in its own process and can interact with the desktop. This option is not available on Windows Vista or later. 

@@ -1,0 +1,334 @@
+\hypertarget{stomp_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/stomp/stomp.php File Reference}
+\label{stomp_8php}\index{vendor/jetbrains/phpstorm-\/stubs/stomp/stomp.php@{vendor/jetbrains/phpstorm-\/stubs/stomp/stomp.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_stomp}{Stomp}}
+\item 
+class \mbox{\hyperlink{class_stomp_frame}{Stomp\+Frame}}
+\item 
+class \mbox{\hyperlink{class_stomp_exception}{Stomp\+Exception}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{stomp_8php_a1d0880a2c7e5bfe894c2dbf2a05695a7}{stomp\+\_\+version}} ()
+\item 
+\mbox{\hyperlink{stomp_8php_aa486a266f0136a756cd9750436089729}{stomp\+\_\+connect}} (\$broker=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$username=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$password=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$headers=array())
+\item 
+\mbox{\hyperlink{stomp_8php_a76aec9ef1fdb565182295571d416698f}{stomp\+\_\+get\+\_\+session\+\_\+id}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}})
+\item 
+\mbox{\hyperlink{stomp_8php_abd29be0b5a0636377155c6a2143be23a}{stomp\+\_\+close}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}})
+\item 
+\mbox{\hyperlink{stomp_8php_a1aa224f7c25e0be773d65b9e16b6b7f1}{stomp\+\_\+send}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$destination, \$msg, array \$headers=array())
+\item 
+\mbox{\hyperlink{stomp_8php_ae59552c7bf71532bf4d0dff24891d2db}{stomp\+\_\+subscribe}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$destination, array \$headers=array())
+\item 
+\mbox{\hyperlink{stomp_8php_a69b33104d3833896dfc0c231ec2df58c}{stomp\+\_\+unsubscribe}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$destination, array \$headers=array())
+\item 
+\mbox{\hyperlink{stomp_8php_ac1bd2fa55f5525f2545ce9b2865384f5}{stomp\+\_\+has\+\_\+frame}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}})
+\item 
+\mbox{\hyperlink{stomp_8php_a715d9c3c01f8270a07a7c6a5bd2514c4}{stomp\+\_\+read\+\_\+frame}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}})
+\item 
+\mbox{\hyperlink{stomp_8php_a418aa95f6fea620bf7c9340f3ce1a2a6}{stomp\+\_\+begin}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$transaction\+\_\+id)
+\item 
+\mbox{\hyperlink{stomp_8php_a11813cab073aa359834cc1852f8918e0}{stomp\+\_\+commit}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$transaction\+\_\+id)
+\item 
+\mbox{\hyperlink{stomp_8php_a4df22f17755c26a4f8e69213f7fa1be5}{stomp\+\_\+abort}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$transaction\+\_\+id)
+\item 
+\mbox{\hyperlink{stomp_8php_aec0243f791d10d1c16cc0b9b7b361c17}{stomp\+\_\+ack}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$msg, array \$headers=array())
+\item 
+\mbox{\hyperlink{stomp_8php_a80dbc950594509640d43ad1865bbaa93}{stomp\+\_\+error}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}})
+\item 
+\mbox{\hyperlink{stomp_8php_ab32f59ffdedae171bd352d146395b83f}{stomp\+\_\+set\+\_\+timeout}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$seconds, \$microseconds=0)
+\item 
+\mbox{\hyperlink{stomp_8php_ab6ad6dfe13777ec3051ad0fade4ba546}{stomp\+\_\+get\+\_\+timeout}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{stomp_8php_a4df22f17755c26a4f8e69213f7fa1be5}\label{stomp_8php_a4df22f17755c26a4f8e69213f7fa1be5}} 
+\index{stomp.php@{stomp.php}!stomp\_abort@{stomp\_abort}}
+\index{stomp\_abort@{stomp\_abort}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_abort()}{stomp\_abort()}}
+{\footnotesize\ttfamily stomp\+\_\+abort (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$transaction\+\_\+id }\end{DoxyParamCaption})}
+
+Roll back a transaction in progress
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$link} & identifier returned by stomp\+\_\+connect \\
+\hline
+string & {\em \$transaction\+\_\+id} & transaction id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean T\+R\+UE on success, or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stomp_8php_aec0243f791d10d1c16cc0b9b7b361c17}\label{stomp_8php_aec0243f791d10d1c16cc0b9b7b361c17}} 
+\index{stomp.php@{stomp.php}!stomp\_ack@{stomp\_ack}}
+\index{stomp\_ack@{stomp\_ack}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_ack()}{stomp\_ack()}}
+{\footnotesize\ttfamily stomp\+\_\+ack (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$msg,  }\item[{array}]{\$headers = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Acknowledge consumption of a message from a subscription using client acknowledgment
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$link} & identifier returned by stomp\+\_\+connect \\
+\hline
+string | \mbox{\hyperlink{class_stomp_frame}{Stomp\+Frame}} & {\em \$msg} & message/message\+Id to be acknowledged \\
+\hline
+array & {\em \$headers} & additional headers (example\+: receipt). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean T\+R\+UE on success, or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stomp_8php_a418aa95f6fea620bf7c9340f3ce1a2a6}\label{stomp_8php_a418aa95f6fea620bf7c9340f3ce1a2a6}} 
+\index{stomp.php@{stomp.php}!stomp\_begin@{stomp\_begin}}
+\index{stomp\_begin@{stomp\_begin}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_begin()}{stomp\_begin()}}
+{\footnotesize\ttfamily stomp\+\_\+begin (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$transaction\+\_\+id }\end{DoxyParamCaption})}
+
+Start a transaction
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$link} & identifier returned by stomp\+\_\+connect \\
+\hline
+string & {\em \$transaction\+\_\+id} & transaction id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean T\+R\+UE on success, or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stomp_8php_abd29be0b5a0636377155c6a2143be23a}\label{stomp_8php_abd29be0b5a0636377155c6a2143be23a}} 
+\index{stomp.php@{stomp.php}!stomp\_close@{stomp\_close}}
+\index{stomp\_close@{stomp\_close}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_close()}{stomp\_close()}}
+{\footnotesize\ttfamily stomp\+\_\+close (\begin{DoxyParamCaption}\item[{}]{\$link }\end{DoxyParamCaption})}
+
+Close stomp connection
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$link} & identifier returned by stomp\+\_\+connect \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean T\+R\+UE on success, or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stomp_8php_a11813cab073aa359834cc1852f8918e0}\label{stomp_8php_a11813cab073aa359834cc1852f8918e0}} 
+\index{stomp.php@{stomp.php}!stomp\_commit@{stomp\_commit}}
+\index{stomp\_commit@{stomp\_commit}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_commit()}{stomp\_commit()}}
+{\footnotesize\ttfamily stomp\+\_\+commit (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$transaction\+\_\+id }\end{DoxyParamCaption})}
+
+Commit a transaction in progress
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$link} & identifier returned by stomp\+\_\+connect \\
+\hline
+string & {\em \$transaction\+\_\+id} & transaction id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean T\+R\+UE on success, or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stomp_8php_aa486a266f0136a756cd9750436089729}\label{stomp_8php_aa486a266f0136a756cd9750436089729}} 
+\index{stomp.php@{stomp.php}!stomp\_connect@{stomp\_connect}}
+\index{stomp\_connect@{stomp\_connect}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_connect()}{stomp\_connect()}}
+{\footnotesize\ttfamily stomp\+\_\+connect (\begin{DoxyParamCaption}\item[{}]{\$broker = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$username = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$password = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$headers = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Connect to server
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$broker} & broker U\+RI \\
+\hline
+string & {\em \$username} & The username \\
+\hline
+string & {\em \$password} & The password \\
+\hline
+array & {\em \$headers} & additional headers (example\+: receipt). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource stomp connection identifier on success, or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stomp_8php_a80dbc950594509640d43ad1865bbaa93}\label{stomp_8php_a80dbc950594509640d43ad1865bbaa93}} 
+\index{stomp.php@{stomp.php}!stomp\_error@{stomp\_error}}
+\index{stomp\_error@{stomp\_error}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_error()}{stomp\_error()}}
+{\footnotesize\ttfamily stomp\+\_\+error (\begin{DoxyParamCaption}\item[{}]{\$link }\end{DoxyParamCaption})}
+
+Get the last stomp error
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$link} & identifier returned by stomp\+\_\+connect \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \mbox{\hyperlink{class_error}{Error}} message, or F\+A\+L\+SE if no error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stomp_8php_a76aec9ef1fdb565182295571d416698f}\label{stomp_8php_a76aec9ef1fdb565182295571d416698f}} 
+\index{stomp.php@{stomp.php}!stomp\_get\_session\_id@{stomp\_get\_session\_id}}
+\index{stomp\_get\_session\_id@{stomp\_get\_session\_id}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_get\_session\_id()}{stomp\_get\_session\_id()}}
+{\footnotesize\ttfamily stomp\+\_\+get\+\_\+session\+\_\+id (\begin{DoxyParamCaption}\item[{}]{\$link }\end{DoxyParamCaption})}
+
+Get the current stomp session ID
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$link} & identifier returned by stomp\+\_\+connect \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string stomp session ID if it exists, or F\+A\+L\+SE otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stomp_8php_ab6ad6dfe13777ec3051ad0fade4ba546}\label{stomp_8php_ab6ad6dfe13777ec3051ad0fade4ba546}} 
+\index{stomp.php@{stomp.php}!stomp\_get\_timeout@{stomp\_get\_timeout}}
+\index{stomp\_get\_timeout@{stomp\_get\_timeout}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_get\_timeout()}{stomp\_get\_timeout()}}
+{\footnotesize\ttfamily stomp\+\_\+get\+\_\+timeout (\begin{DoxyParamCaption}\item[{}]{\$link }\end{DoxyParamCaption})}
+
+Get timeout
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$link} & identifier returned by stomp\+\_\+connect \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Array with timeout informations 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stomp_8php_ac1bd2fa55f5525f2545ce9b2865384f5}\label{stomp_8php_ac1bd2fa55f5525f2545ce9b2865384f5}} 
+\index{stomp.php@{stomp.php}!stomp\_has\_frame@{stomp\_has\_frame}}
+\index{stomp\_has\_frame@{stomp\_has\_frame}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_has\_frame()}{stomp\_has\_frame()}}
+{\footnotesize\ttfamily stomp\+\_\+has\+\_\+frame (\begin{DoxyParamCaption}\item[{}]{\$link }\end{DoxyParamCaption})}
+
+Indicate whether or not there is a frame ready to read
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$link} & identifier returned by stomp\+\_\+connect \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean T\+R\+UE if there is one, or F\+A\+L\+SE otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stomp_8php_a715d9c3c01f8270a07a7c6a5bd2514c4}\label{stomp_8php_a715d9c3c01f8270a07a7c6a5bd2514c4}} 
+\index{stomp.php@{stomp.php}!stomp\_read\_frame@{stomp\_read\_frame}}
+\index{stomp\_read\_frame@{stomp\_read\_frame}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_read\_frame()}{stomp\_read\_frame()}}
+{\footnotesize\ttfamily stomp\+\_\+read\+\_\+frame (\begin{DoxyParamCaption}\item[{}]{\$link }\end{DoxyParamCaption})}
+
+Read the next frame
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$link} & identifier returned by stomp\+\_\+connect \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array on success, or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stomp_8php_a1aa224f7c25e0be773d65b9e16b6b7f1}\label{stomp_8php_a1aa224f7c25e0be773d65b9e16b6b7f1}} 
+\index{stomp.php@{stomp.php}!stomp\_send@{stomp\_send}}
+\index{stomp\_send@{stomp\_send}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_send()}{stomp\_send()}}
+{\footnotesize\ttfamily stomp\+\_\+send (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$destination,  }\item[{}]{\$msg,  }\item[{array}]{\$headers = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Sends a message to a destination in the messaging system
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$link} & identifier returned by stomp\+\_\+connect \\
+\hline
+string & {\em \$destination} & indicates where to send the message \\
+\hline
+string | \mbox{\hyperlink{class_stomp_frame}{Stomp\+Frame}} & {\em \$msg} & message to be sent \\
+\hline
+array & {\em \$headers} & additional headers (example\+: receipt). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean T\+R\+UE on success, or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stomp_8php_ab32f59ffdedae171bd352d146395b83f}\label{stomp_8php_ab32f59ffdedae171bd352d146395b83f}} 
+\index{stomp.php@{stomp.php}!stomp\_set\_timeout@{stomp\_set\_timeout}}
+\index{stomp\_set\_timeout@{stomp\_set\_timeout}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_set\_timeout()}{stomp\_set\_timeout()}}
+{\footnotesize\ttfamily stomp\+\_\+set\+\_\+timeout (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$seconds,  }\item[{}]{\$microseconds = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Set timeout
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$link} & identifier returned by stomp\+\_\+connect \\
+\hline
+int & {\em \$seconds} & the seconds part of the timeout to be set \\
+\hline
+int & {\em \$microseconds} & the microseconds part of the timeout to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stomp_8php_ae59552c7bf71532bf4d0dff24891d2db}\label{stomp_8php_ae59552c7bf71532bf4d0dff24891d2db}} 
+\index{stomp.php@{stomp.php}!stomp\_subscribe@{stomp\_subscribe}}
+\index{stomp\_subscribe@{stomp\_subscribe}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_subscribe()}{stomp\_subscribe()}}
+{\footnotesize\ttfamily stomp\+\_\+subscribe (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$destination,  }\item[{array}]{\$headers = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Register to listen to a given destination
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$link} & identifier returned by stomp\+\_\+connect \\
+\hline
+string & {\em \$destination} & indicates which destination to subscribe to \\
+\hline
+array & {\em \$headers} & additional headers (example\+: receipt). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean T\+R\+UE on success, or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stomp_8php_a69b33104d3833896dfc0c231ec2df58c}\label{stomp_8php_a69b33104d3833896dfc0c231ec2df58c}} 
+\index{stomp.php@{stomp.php}!stomp\_unsubscribe@{stomp\_unsubscribe}}
+\index{stomp\_unsubscribe@{stomp\_unsubscribe}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_unsubscribe()}{stomp\_unsubscribe()}}
+{\footnotesize\ttfamily stomp\+\_\+unsubscribe (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$destination,  }\item[{array}]{\$headers = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Remove an existing subscription
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$link} & identifier returned by stomp\+\_\+connect \\
+\hline
+string & {\em \$destination} & indicates which subscription to remove \\
+\hline
+array & {\em \$headers} & additional headers (example\+: receipt). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean T\+R\+UE on success, or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stomp_8php_a1d0880a2c7e5bfe894c2dbf2a05695a7}\label{stomp_8php_a1d0880a2c7e5bfe894c2dbf2a05695a7}} 
+\index{stomp.php@{stomp.php}!stomp\_version@{stomp\_version}}
+\index{stomp\_version@{stomp\_version}!stomp.php@{stomp.php}}
+\doxysubsubsection{\texorpdfstring{stomp\_version()}{stomp\_version()}}
+{\footnotesize\ttfamily stomp\+\_\+version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the current version of the stomp extension
+
+\begin{DoxyReturn}{Returns}
+string version 
+\end{DoxyReturn}

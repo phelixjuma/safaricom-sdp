@@ -1,0 +1,240 @@
+.TH "vendor/jetbrains/phpstorm-stubs/couchbase/couchbase.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/couchbase/couchbase.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBException\fP"
+.br
+.ti -1c
+.RI "class \fBDocument\fP"
+.br
+.ti -1c
+.RI "class \fBDocumentFragment\fP"
+.br
+.ti -1c
+.RI "class \fBCluster\fP"
+.br
+.ti -1c
+.RI "class \fBClusterManager\fP"
+.br
+.ti -1c
+.RI "class \fBUserSettings\fP"
+.br
+.ti -1c
+.RI "class \fBBucket\fP"
+.br
+.ti -1c
+.RI "class \fBBucketManager\fP"
+.br
+.ti -1c
+.RI "interface \fBAuthenticator\fP"
+.br
+.ti -1c
+.RI "class \fBClassicAuthenticator\fP"
+.br
+.ti -1c
+.RI "class \fBPasswordAuthenticator\fP"
+.br
+.ti -1c
+.RI "class \fBMutationToken\fP"
+.br
+.ti -1c
+.RI "class \fBMutationState\fP"
+.br
+.ti -1c
+.RI "interface \fBViewQueryEncodable\fP"
+.br
+.ti -1c
+.RI "class \fBViewQuery\fP"
+.br
+.ti -1c
+.RI "class \fBSpatialViewQuery\fP"
+.br
+.ti -1c
+.RI "class \fBN1qlQuery\fP"
+.br
+.ti -1c
+.RI "class \fBN1qlIndex\fP"
+.br
+.ti -1c
+.RI "class \fBLookupInBuilder\fP"
+.br
+.ti -1c
+.RI "class \fBMutateInBuilder\fP"
+.br
+.ti -1c
+.RI "class \fBSearchQuery\fP"
+.br
+.ti -1c
+.RI "interface \fBSearchQueryPart\fP"
+.br
+.ti -1c
+.RI "class \fBBooleanFieldSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBBooleanSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBConjunctionSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBDisjunctionSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBDateRangeSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBNumericRangeSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBDocIdSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBMatchAllSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBMatchNoneSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBMatchPhraseSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBMatchSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBPhraseSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBRegexpSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBWildcardSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBPrefixSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBQueryStringSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBTermSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBTermRangeSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBGeoDistanceSearchQuery\fP"
+.br
+.ti -1c
+.RI "class \fBGeoBoundingBoxSearchQuery\fP"
+.br
+.ti -1c
+.RI "interface \fBSearchFacet\fP"
+.br
+.ti -1c
+.RI "class \fBTermSearchFacet\fP"
+.br
+.ti -1c
+.RI "class \fBDateRangeSearchFacet\fP"
+.br
+.ti -1c
+.RI "class \fBNumericRangeSearchFacet\fP"
+.br
+.ti -1c
+.RI "class \fBSearchSort\fP"
+.br
+.ti -1c
+.RI "class \fBSearchSortId\fP"
+.br
+.ti -1c
+.RI "class \fBSearchSortScore\fP"
+.br
+.ti -1c
+.RI "class \fBSearchSortField\fP"
+.br
+.ti -1c
+.RI "class \fBSearchSortGeoDistance\fP"
+.br
+.ti -1c
+.RI "class \fBAnalyticsQuery\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBCouchbase\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBfastlzCompress\fP ($data)"
+.br
+.ti -1c
+.RI "\fBfastlzDecompress\fP ($data)"
+.br
+.ti -1c
+.RI "\fBzlibCompress\fP ($data)"
+.br
+.ti -1c
+.RI "\fBzlibDecompress\fP ($data)"
+.br
+.ti -1c
+.RI "\fBpassthruDecoder\fP ($bytes, $flags, $datatype)"
+.br
+.ti -1c
+.RI "\fBpassthruEncoder\fP ($value)"
+.br
+.ti -1c
+.RI "\fBdefaultDecoder\fP ($bytes, $flags, $datatype)"
+.br
+.ti -1c
+.RI "\fBdefaultEncoder\fP ($value)"
+.br
+.ti -1c
+.RI "\fBbasicDecoderV1\fP ($bytes, $flags, $datatype, $options)"
+.br
+.ti -1c
+.RI "\fBbasicEncoderV1\fP ($value, $options)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBHAVE_IGBINARY\fP 1"
+.br
+.ti -1c
+.RI "const \fBHAVE_ZLIB\fP 1"
+.br
+.ti -1c
+.RI "const \fBENCODER_FORMAT_JSON\fP 0"
+.br
+.ti -1c
+.RI "const \fBENCODER_FORMAT_IGBINARY\fP 1"
+.br
+.ti -1c
+.RI "const \fBENCODER_FORMAT_PHP\fP 2"
+.br
+.ti -1c
+.RI "const \fBENCODER_COMPRESSION_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBENCODER_COMPRESSION_ZLIB\fP 1"
+.br
+.ti -1c
+.RI "const \fBENCODER_COMPRESSION_FASTLZ\fP 2"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

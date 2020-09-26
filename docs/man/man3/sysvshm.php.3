@@ -1,0 +1,197 @@
+.TH "vendor/jetbrains/phpstorm-stubs/sysvshm/sysvshm.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/sysvshm/sysvshm.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBshm_attach\fP ($\fBkey\fP, $memsize=\fBnull\fP, $perm=0666)"
+.br
+.ti -1c
+.RI "\fBshm_remove\fP ($shm_identifier)"
+.br
+.ti -1c
+.RI "\fBshm_detach\fP ($shm_identifier)"
+.br
+.ti -1c
+.RI "\fBshm_put_var\fP ($shm_identifier, $variable_key, $variable)"
+.br
+.ti -1c
+.RI "\fBshm_has_var\fP ($shm_identifier, $variable_key)"
+.br
+.ti -1c
+.RI "\fBshm_get_var\fP ($shm_identifier, $variable_key)"
+.br
+.ti -1c
+.RI "\fBshm_remove_var\fP ($shm_identifier, $variable_key)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "shm_attach ( $key,  $memsize = \fC\fBnull\fP\fP,  $perm = \fC0666\fP)"
+Creates or open a shared memory segment \fBint $key \fP \fBA\fP numeric shared memory segment ID 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$memsize\fP [optional] 
+.RE
+.PP
+The memory size\&. If not provided, default to the sysvshm\&.init_mem in the \fIphp\&.ini\fP, otherwise 10000 bytes\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$perm\fP [optional] 
+.RE
+.PP
+The optional permission bits\&. Default to 0666\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource a shared memory segment identifier\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "shm_detach ( $shm_identifier)"
+Disconnects from shared memory segment \fBresource $shm_identifier \fP \fBA\fP shared memory resource handle as returned by \fBshm_attach\fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBshm_detach\fP always returns \fBTRUE\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "shm_get_var ( $shm_identifier,  $variable_key)"
+Returns a variable from shared memory \fBresource $shm_identifier \fP Shared memory segment, obtained from \fBshm_attach\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$variable_key\fP 
+.RE
+.PP
+The variable key\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed the variable with the given key\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "shm_has_var ( $shm_identifier,  $variable_key)"
+Check whether a specific entry exists \fBresource $shm_identifier \fP Shared memory segment, obtained from \fBshm_attach\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$variable_key\fP 
+.RE
+.PP
+The variable key\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if the entry exists, otherwise \fBFALSE\fP 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "shm_put_var ( $shm_identifier,  $variable_key,  $variable)"
+Inserts or updates a variable in shared memory \fBresource $shm_identifier \fP \fBA\fP shared memory resource handle as returned by \fBshm_attach\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$variable_key\fP 
+.RE
+.PP
+The variable key\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$variable\fP 
+.RE
+.PP
+The variable\&. All variable types that \fBserialize\fP supports may be used: generally this means all types except for resources and some internal objects that cannot be serialized\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "shm_remove ( $shm_identifier)"
+Removes shared memory from Unix systems \fBresource $shm_identifier \fP The shared memory identifier as returned by \fBshm_attach\fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "shm_remove_var ( $shm_identifier,  $variable_key)"
+Removes a variable from shared memory \fBresource $shm_identifier \fP The shared memory identifier as returned by \fBshm_attach\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$variable_key\fP 
+.RE
+.PP
+The variable key\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

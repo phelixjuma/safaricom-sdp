@@ -1,0 +1,65 @@
+\hypertarget{_2usr_2local_2var_2www_2safaricom-sdp-sdk_2vendor_2roave_2better-reflection_2src_2_source_locatob4f54a0f53c5d31ce36ed107c7a8b110}{}\doxysection{/usr/local/var/www/safaricom-\/sdp-\/sdk/vendor/roave/better-\/reflection/src/\+Source\+Locator/\+Type/\+Abstract\+Source\+Locator.\+php}
+Children should implement this method and return a Located\+Source object which contains the source and the file from which it was located.
+
+return new Located\+Source(\mbox{[}\textquotesingle{}$<$?php class \mbox{\hyperlink{class_foo}{Foo}} \{\}\textquotesingle{}, null\mbox{]}); return new Located\+Source(\mbox{[}\textbackslash{}file\+\_\+get\+\_\+contents(\textquotesingle{}Foo.\+php\textquotesingle{}), \textquotesingle{}Foo.\+php\textquotesingle{}\mbox{]});
+
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{<?\mbox{\hyperlink{patch_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{php}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{declare(strict\_types=1);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_roave_1_1_better_reflection_1_1_source_locator_1_1_type}{Roave\(\backslash\)BetterReflection\(\backslash\)SourceLocator\(\backslash\)Type}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_identifier_1_1_identifier}{Roave\(\backslash\)BetterReflection\(\backslash\)Identifier\(\backslash\)Identifier}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_identifier_1_1_identifier_type}{Roave\(\backslash\)BetterReflection\(\backslash\)Identifier\(\backslash\)IdentifierType}};}
+\DoxyCodeLine{use \mbox{\hyperlink{interface_roave_1_1_better_reflection_1_1_reflection_1_1_reflection}{Roave\(\backslash\)BetterReflection\(\backslash\)Reflection\(\backslash\)Reflection}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflector_1_1_exception_1_1_identifier_not_found}{Roave\(\backslash\)BetterReflection\(\backslash\)Reflector\(\backslash\)Exception\(\backslash\)IdentifierNotFound}};}
+\DoxyCodeLine{use \mbox{\hyperlink{interface_roave_1_1_better_reflection_1_1_reflector_1_1_reflector}{Roave\(\backslash\)BetterReflection\(\backslash\)Reflector\(\backslash\)Reflector}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_source_locator_1_1_ast_1_1_exception_1_1_parse_to_ast_failure}{Roave\(\backslash\)BetterReflection\(\backslash\)SourceLocator\(\backslash\)Ast\(\backslash\)Exception\(\backslash\)ParseToAstFailure}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_source_locator_1_1_ast_1_1_locator}{Roave\(\backslash\)BetterReflection\(\backslash\)SourceLocator\(\backslash\)Ast\(\backslash\)Locator}} as AstLocator;}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_source_locator_1_1_located_1_1_located_source}{Roave\(\backslash\)BetterReflection\(\backslash\)SourceLocator\(\backslash\)Located\(\backslash\)LocatedSource}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{abstract} \textcolor{keyword}{class }AbstractSourceLocator \textcolor{keyword}{implements} SourceLocator}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keyword}{private} AstLocator \$astLocator;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{abstract} \textcolor{keyword}{protected} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_source_locator_1_1_type_1_1_abstract_source_locator_a58b9f6a61a95bf0ffd8973190eb77db8}{createLocatedSource}}(Identifier \$identifier): ?LocatedSource;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_source_locator_1_1_type_1_1_abstract_source_locator_a02c5698630e584ad61d4f91b089a379b}{\_\_construct}}(AstLocator \$astLocator)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$this-\/>astLocator = \$astLocator;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_source_locator_1_1_type_1_1_abstract_source_locator_aca4f97141439ab4cfa461ab0f14be567}{locateIdentifier}}(\mbox{\hyperlink{interface_reflector}{Reflector}} \mbox{\hyperlink{example3_8php_a115d92bb17a873ed18747549d1888b15}{\$reflector}}, Identifier \$identifier): ?\mbox{\hyperlink{class_reflection}{Reflection}}}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$locatedSource = \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_source_locator_1_1_type_1_1_abstract_source_locator_a58b9f6a61a95bf0ffd8973190eb77db8}{createLocatedSource}}(\$identifier);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! \$locatedSource) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \$this-\/>astLocator-\/>findReflection(\mbox{\hyperlink{example3_8php_a115d92bb17a873ed18747549d1888b15}{\$reflector}}, \$locatedSource, \$identifier);}
+\DoxyCodeLine{        \} \textcolor{keywordflow}{catch} (IdentifierNotFound \$exception) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{final} \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_source_locator_1_1_type_1_1_abstract_source_locator_a1e11d999931c895ce7d2217582683602}{locateIdentifiersByType}}(\mbox{\hyperlink{interface_reflector}{Reflector}} \mbox{\hyperlink{example3_8php_a115d92bb17a873ed18747549d1888b15}{\$reflector}}, IdentifierType \$identifierType): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$locatedSource = \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_source_locator_1_1_type_1_1_abstract_source_locator_a58b9f6a61a95bf0ffd8973190eb77db8}{createLocatedSource}}(\textcolor{keyword}{new} Identifier(Identifier::WILDCARD, \$identifierType));}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! \$locatedSource) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} [];}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>astLocator-\/>findReflectionsOfType(}
+\DoxyCodeLine{            \mbox{\hyperlink{example3_8php_a115d92bb17a873ed18747549d1888b15}{\$reflector}},}
+\DoxyCodeLine{            \$locatedSource,}
+\DoxyCodeLine{            \$identifierType,}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\end{DoxyCodeInclude}
+ 

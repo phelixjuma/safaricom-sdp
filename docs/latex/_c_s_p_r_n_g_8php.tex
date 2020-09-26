@@ -1,0 +1,25 @@
+\hypertarget{_c_s_p_r_n_g_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/standard/\+C\+S\+P\+R\+NG.php File Reference}
+\label{_c_s_p_r_n_g_8php}\index{vendor/jetbrains/phpstorm-\/stubs/standard/CSPRNG.php@{vendor/jetbrains/phpstorm-\/stubs/standard/CSPRNG.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_s_p_r_n_g_8php_a05b35ea73bc2a5f66f88b85b623ad77d}{random\+\_\+bytes}} (\$length)
+\item 
+\mbox{\hyperlink{_c_s_p_r_n_g_8php_a5239adc846dee1292a57728388d870fe}{random\+\_\+int}} (\$\mbox{\hyperlink{standard__8_8php_ab768fa1b15362a2e51386323e5ae56a0}{min}}, \$\mbox{\hyperlink{standard__8_8php_a1851c25342e1faf77e9156044ef13579}{max}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_c_s_p_r_n_g_8php_a05b35ea73bc2a5f66f88b85b623ad77d}\label{_c_s_p_r_n_g_8php_a05b35ea73bc2a5f66f88b85b623ad77d}} 
+\index{CSPRNG.php@{CSPRNG.php}!random\_bytes@{random\_bytes}}
+\index{random\_bytes@{random\_bytes}!CSPRNG.php@{CSPRNG.php}}
+\doxysubsubsection{\texorpdfstring{random\_bytes()}{random\_bytes()}}
+{\footnotesize\ttfamily random\+\_\+bytes (\begin{DoxyParamCaption}\item[{}]{\$length }\end{DoxyParamCaption})}
+
+Generates cryptographically secure pseudo-\/random bytes \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$length The length of the random string that should be returned in bytes.  string Returns a string containing the requested number of cryptographically secure random bytes.  7.\+0  Exception if it was not possible to gather sufficient entropy. }}\mbox{\Hypertarget{_c_s_p_r_n_g_8php_a5239adc846dee1292a57728388d870fe}\label{_c_s_p_r_n_g_8php_a5239adc846dee1292a57728388d870fe}} 
+\index{CSPRNG.php@{CSPRNG.php}!random\_int@{random\_int}}
+\index{random\_int@{random\_int}!CSPRNG.php@{CSPRNG.php}}
+\doxysubsubsection{\texorpdfstring{random\_int()}{random\_int()}}
+{\footnotesize\ttfamily random\+\_\+int (\begin{DoxyParamCaption}\item[{}]{\$min,  }\item[{}]{\$max }\end{DoxyParamCaption})}
+
+Generates cryptographically secure pseudo-\/random integers \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$min The lowest value to be returned, which must be P\+H\+P\+\_\+\+I\+N\+T\+\_\+\+M\+IN or higher.  int \$max The highest value to be returned, which must be less than or equal to P\+H\+P\+\_\+\+I\+N\+T\+\_\+\+M\+AX.  int Returns a cryptographically secure random integer in the range min to max, inclusive.  7.\+0  Exception if it was not possible to gather sufficient entropy. }}

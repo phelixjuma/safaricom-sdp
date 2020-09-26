@@ -1,0 +1,524 @@
+.TH "vendor/jetbrains/phpstorm-stubs/dba/dba.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/dba/dba.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBdba_open\fP ($path, $mode, $handler=\fBnull\fP, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdba_popen\fP ($path, $mode, $handler=\fBnull\fP, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdba_close\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBdba_delete\fP ($\fBkey\fP, $handle)"
+.br
+.ti -1c
+.RI "\fBdba_exists\fP ($\fBkey\fP, $handle)"
+.br
+.ti -1c
+.RI "\fBdba_fetch\fP ($\fBkey\fP, $handle)"
+.br
+.ti -1c
+.RI "\fBdba_fetch\fP ($\fBkey\fP, $skip, $handle)"
+.br
+.ti -1c
+.RI "\fBdba_insert\fP ($\fBkey\fP, $value, $handle)"
+.br
+.ti -1c
+.RI "\fBdba_replace\fP ($\fBkey\fP, $value, $handle)"
+.br
+.ti -1c
+.RI "\fBdba_firstkey\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBdba_nextkey\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBdba_optimize\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBdba_sync\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBdba_handlers\fP ($full_info=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBdba_list\fP ()"
+.br
+.ti -1c
+.RI "\fBdba_key_split\fP ($\fBkey\fP)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "dba_close ( $handle)"
+Close a DBA database \fBresource $handle \fP The database handler, returned by \fBdba_open\fP or \fBdba_popen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void No value is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dba_delete ( $key,  $handle)"
+Delete DBA entry specified by key \fBstring $key \fP The key of the entry which is deleted\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+The database handler, returned by \fBdba_open\fP or \fBdba_popen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dba_exists ( $key,  $handle)"
+Check whether key exists \fBstring $key \fP The key the check is performed for\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+The database handler, returned by \fBdba_open\fP or \fBdba_popen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if the key exists, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dba_fetch ( $key,  $handle)"
+Fetch data specified by key \fBstring $key \fP The key the data is specified by\&. 
+.PP
+When working with inifiles this function accepts arrays as keys where index 0 is the group and index 1 is the value name\&. See: \fBdba_key_split\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+The database handler, returned by \fBdba_open\fP or \fBdba_popen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the associated string if the key/data pair is found, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dba_fetch ( $key,  $skip,  $handle)"
+Fetch data specified by key \fBstring $key \fP The key the data is specified by\&. 
+.PP
+When working with inifiles this function accepts arrays as keys where index 0 is the group and index 1 is the value name\&. See: \fBdba_key_split\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$skip\fP The number of key-value pairs to ignore when using cdb databases\&. This value is ignored for all other databases which do not support multiple keys with the same name\&. 
+.br
+\fI$handle\fP 
+.RE
+.PP
+The database handler, returned by \fBdba_open\fP or \fBdba_popen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the associated string if the key/data pair is found, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dba_firstkey ( $handle)"
+Fetch first key \fBresource $handle \fP The database handler, returned by \fBdba_open\fP or \fBdba_popen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the key on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dba_handlers ( $full_info = \fC\fBfalse\fP\fP)"
+List all the handlers available \fBbool $full_info [optional] \fP Turns on/off full information display in the result\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array of database handlers\&. If \fIfull_info\fP is set to \fBTRUE\fP, the array will be associative with the handlers names as keys, and their version information as value\&. Otherwise, the result will be an indexed array of handlers names\&. 
+.RE
+.PP
+.PP
+When the internal cdb library is used you will see cdb and cdb_make\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dba_insert ( $key,  $value,  $handle)"
+Insert entry \fBstring $key \fP The key of the entry to be inserted\&. If this key already exist in the database, this function will fail\&. Use \fBdba_replace\fP if you need to replace an existent key\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+The value to be inserted\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+The database handler, returned by \fBdba_open\fP or \fBdba_popen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dba_key_split ( $key)"
+Splits a key in string representation into array representation \fBmixed $key \fP The key in string representation\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array of the form array(0 => group, 1 => value_name)\&. This function will return \fBFALSE\fP if \fIkey\fP is \fBNULL\fP or \fBFALSE\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "dba_list ()"
+List all open database files \fBarray An associative array, in the form resourceid => filename\&.  4\&.3  5\&.0 \fP
+.SS "dba_nextkey ( $handle)"
+Fetch next key \fBresource $handle \fP The database handler, returned by \fBdba_open\fP or \fBdba_popen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the key on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dba_open ( $path,  $mode,  $handler = \fC\fBnull\fP\fP,  $_ = \fC\fBnull\fP\fP)"
+Open database \fBstring $path \fP Commonly a regular path in your filesystem\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+It is r for read access, w for read/write access to an already existing database, c for read/write access and database creation if it doesn't currently exist, and n for create, truncate and read/write access\&. The database is created in BTree mode, other modes (like Hash or Queue) are not supported\&. 
+.PP
+Additionally you can set the database lock method with the next char\&. Use l to lock the database with a \&.lck file or d to lock the databasefile itself\&. It is important that all of your applications do this consistently\&. 
+.PP
+If you want to test the access and do not want to wait for the lock you can add t as third character\&. When you are absolutely sure that you do not require database locking you can do so by using - instead of l or d\&. When none of d, l or - is used, dba will lock on the database file as it would with d\&. 
+.PP
+There can only be one writer for one database file\&. When you use dba on a web server and more than one request requires write operations they can only be done one after another\&. Also read during write is not allowed\&. The dba extension uses locks to prevent this\&. See the following table: locking 
+.PP
+already open 
+.PP
+\fImode\fP = 'rl' 
+.PP
+\fImode\fP = 'rlt' 
+.PP
+\fImode\fP = 'wl' 
+.PP
+\fImode\fP = 'wlt' 
+.PP
+\fImode\fP = 'rd' 
+.PP
+\fImode\fP = 'rdt' 
+.PP
+\fImode\fP = 'wd' 
+.PP
+\fImode\fP = 'wdt'  
+.PP
+not open 
+.PP
+ok 
+.PP
+ok 
+.PP
+ok 
+.PP
+ok 
+.PP
+ok 
+.PP
+ok 
+.PP
+ok 
+.PP
+ok  
+.PP
+\fImode\fP = 'rl' 
+.PP
+ok 
+.PP
+ok 
+.PP
+wait 
+.PP
+false 
+.PP
+illegal 
+.PP
+illegal 
+.PP
+illegal 
+.PP
+illegal  
+.PP
+\fImode\fP = 'wl' 
+.PP
+wait 
+.PP
+false 
+.PP
+wait 
+.PP
+false 
+.PP
+illegal 
+.PP
+illegal 
+.PP
+illegal 
+.PP
+illegal  
+.PP
+\fImode\fP = 'rd' 
+.PP
+illegal 
+.PP
+illegal 
+.PP
+illegal 
+.PP
+illegal 
+.PP
+ok 
+.PP
+ok 
+.PP
+wait 
+.PP
+false  
+.PP
+\fImode\fP = 'wd' 
+.PP
+illegal 
+.PP
+illegal 
+.PP
+illegal 
+.PP
+illegal 
+.PP
+wait 
+.PP
+false 
+.PP
+wait 
+.PP
+false  
+.PP
+ok: the second call will be successfull\&. wait: the second call waits until \fBdba_close\fP is called for the first\&. false: the second call returns false\&. illegal: you must not mix 'l' and 'd' modifiers for \fImode\fP parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handler\fP [optional] 
+.RE
+.PP
+The name of the handler which shall be used for accessing \fIpath\fP\&. It is passed all optional parameters given to \fBdba_open\fP and can act on behalf of them\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource a positive handle on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dba_optimize ( $handle)"
+Optimize database \fBresource $handle \fP The database handler, returned by \fBdba_open\fP or \fBdba_popen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dba_popen ( $path,  $mode,  $handler = \fC\fBnull\fP\fP,  $_ = \fC\fBnull\fP\fP)"
+Open database persistently \fBstring $path \fP Commonly a regular path in your filesystem\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+It is r for read access, w for read/write access to an already existing database, c for read/write access and database creation if it doesn't currently exist, and n for create, truncate and read/write access\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handler\fP [optional] 
+.RE
+.PP
+The name of the handler which shall be used for accessing \fIpath\fP\&. It is passed all optional parameters given to \fBdba_popen\fP and can act on behalf of them\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource a positive handle on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dba_replace ( $key,  $value,  $handle)"
+Replace or insert entry \fBstring $key \fP The key of the entry to be replaced\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+The value to be replaced\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+The database handler, returned by \fBdba_open\fP or \fBdba_popen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dba_sync ( $handle)"
+Synchronize database \fBresource $handle \fP The database handler, returned by \fBdba_open\fP or \fBdba_popen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

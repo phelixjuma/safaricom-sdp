@@ -1,0 +1,155 @@
+.TH "vendor/jetbrains/phpstorm-stubs/wddx/wddx.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/wddx/wddx.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBwddx_serialize_value\fP ($var, $comment=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwddx_serialize_vars\fP ($var_name, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwddx_packet_start\fP ($comment=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwddx_packet_end\fP ($packet_id)"
+.br
+.ti -1c
+.RI "\fBwddx_add_vars\fP ($packet_id, $var_name, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwddx_deserialize\fP ($packet)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "wddx_add_vars ( $packet_id,  $var_name,  $_ = \fC\fBnull\fP\fP)"
+Add variables to a WDDX packet with the specified ID \fBresource $packet_id \fP \fBA\fP WDDX packet, returned by \fBwddx_packet_start\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$var_name\fP 
+.RE
+.PP
+Can be either a string naming a variable or an array containing strings naming the variables or another array, etc\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "wddx_deserialize ( $packet)"
+Unserializes a WDDX packet \fBstring $packet \fP \fBA\fP WDDX packet, as a string or stream\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed the deserialized value which can be a string, a number or an array\&. Note that structures are deserialized into associative arrays\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "wddx_packet_end ( $packet_id)"
+Ends a WDDX packet with the specified ID \fBresource $packet_id \fP \fBA\fP WDDX packet, returned by \fBwddx_packet_start\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the string containing the WDDX packet\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "wddx_packet_start ( $comment = \fC\fBnull\fP\fP)"
+Starts a new WDDX packet with structure inside it \fBstring $comment [optional] \fP An optional comment string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a packet ID for use in later functions, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "wddx_serialize_value ( $var,  $comment = \fC\fBnull\fP\fP)"
+Serialize a single value into a WDDX packet \fBmixed $var \fP The value to be serialized 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$comment\fP [optional] 
+.RE
+.PP
+An optional comment string that appears in the packet header\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the WDDX packet, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "wddx_serialize_vars ( $var_name,  $_ = \fC\fBnull\fP\fP)"
+Serialize variables into a WDDX packet \fBmixed $var_name \fP Can be either a string naming a variable or an array containing strings naming the variables or another array, etc\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false the WDDX packet, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

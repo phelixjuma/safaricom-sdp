@@ -1,0 +1,820 @@
+\hypertarget{hash_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/hash/hash.php File Reference}
+\label{hash_8php}\index{vendor/jetbrains/phpstorm-\/stubs/hash/hash.php@{vendor/jetbrains/phpstorm-\/stubs/hash/hash.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_hash_context}{Hash\+Context}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{hash_8php_ad87f77157db7d7ac70fc8608f25ae8de}{hash}} (\$algo, \$data, \$raw\+\_\+output=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{hash_8php_ad588191090b045ae16e3833ee6a68bbf}{hash\+\_\+equals}} (\$known\+\_\+string, \$user\+\_\+string)
+\item 
+\mbox{\hyperlink{hash_8php_a47ff601292f755b6e67e60c848e1039b}{hash\+\_\+file}} (\$algo, \$filename, \$raw\+\_\+output=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{hash_8php_a7702d28d21575c0ae07d4680833b2eec}{hash\+\_\+hmac}} (\$algo, \$data, \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}, \$raw\+\_\+output=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{hash_8php_aa8853c576507970084fde332a1ec48a7}{hash\+\_\+hmac\+\_\+file}} (\$algo, \$filename, \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}, \$raw\+\_\+output=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{hash_8php_aef54eda45b406c998176a6c15c859898}{hash\+\_\+init}} (\$algo, \$options=0, \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{hash_8php_a9c8e26274f9296c3a3d807d224253145}{hash\+\_\+update}} (\$context, \$data)
+\item 
+\mbox{\hyperlink{hash_8php_a160c84c6072825442f3046a3bf99b3d6}{hash\+\_\+update\+\_\+stream}} (\$context, \$handle, \$length=-\/1)
+\item 
+\mbox{\hyperlink{hash_8php_a14a7f5c2b26bd9e10b7c756d0426db86}{hash\+\_\+update\+\_\+file}} (\$hcontext, \$filename, \$scontext=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{hash_8php_a8c80b274e5139039a6cf443d5c53d177}{hash\+\_\+final}} (\$context, \$raw\+\_\+output=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{hash_8php_ab52e21f16803c624762e023ffe568023}{hash\+\_\+copy}} (\$context)
+\item 
+\mbox{\hyperlink{hash_8php_a1fe7cf1578c67e0cb6e71c28f22f9cc3}{hash\+\_\+algos}} ()
+\item 
+\mbox{\hyperlink{hash_8php_a3ab1f1460c9a999b6a1dd40b0fec1e49}{hash\+\_\+hkdf}} (string \$algo, string \$ikm, int \$length=0, string \$info=\textquotesingle{}\textquotesingle{}, string \$salt=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{hash_8php_aba3c30a021dd79188aacd2b2f5179103}{hash\+\_\+hmac\+\_\+algos}} ()
+\item 
+\mbox{\hyperlink{hash_8php_a2960f2f50f70afa8006a73fe20212889}{hash\+\_\+pbkdf2}} (\$algo, \$password, \$salt, \$iterations, \$length=0, \$raw\+\_\+output=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{hash_8php_ab0c6dd02cdab9d30a9c35f9038963905}{mhash\+\_\+keygen\+\_\+s2k}} (\$\mbox{\hyperlink{hash_8php_ad87f77157db7d7ac70fc8608f25ae8de}{hash}}, \$password, \$salt, \$bytes)
+\item 
+\mbox{\hyperlink{hash_8php_afc7accc11a0564b4c606f423c3e377a6}{mhash\+\_\+get\+\_\+block\+\_\+size}} (\$\mbox{\hyperlink{hash_8php_ad87f77157db7d7ac70fc8608f25ae8de}{hash}})
+\item 
+\mbox{\hyperlink{hash_8php_a3797532f3916b233c9a8108cb46dec52}{mhash\+\_\+get\+\_\+hash\+\_\+name}} (\$\mbox{\hyperlink{hash_8php_ad87f77157db7d7ac70fc8608f25ae8de}{hash}})
+\item 
+\mbox{\hyperlink{hash_8php_a09f342b98bb6b3be193aa0bb7851bc95}{mhash\+\_\+count}} ()
+\item 
+\mbox{\hyperlink{hash_8php_a58e181170bf2ddff0bdeaf816db94f2b}{mhash}} (\$\mbox{\hyperlink{hash_8php_ad87f77157db7d7ac70fc8608f25ae8de}{hash}}, \$data, \$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{hash_8php_ae85f479c79461907b09e618f36b78ade}{H\+A\+S\+H\+\_\+\+H\+M\+AC}} 1
+\item 
+const \mbox{\hyperlink{hash_8php_ae789b01323b8cb1c04227a6733cb0abc}{M\+H\+A\+S\+H\+\_\+\+C\+R\+C32}} 0
+\item 
+const \mbox{\hyperlink{hash_8php_a8253562409d8756b1683971784cd6837}{M\+H\+A\+S\+H\+\_\+\+C\+R\+C32C}} 34
+\item 
+const \mbox{\hyperlink{hash_8php_a49bb2b38dd52212e1962f7432e6662c5}{M\+H\+A\+S\+H\+\_\+\+M\+D5}} 1
+\item 
+const \mbox{\hyperlink{hash_8php_a4f808ea5dd8384c75217e7136a9564a8}{M\+H\+A\+S\+H\+\_\+\+S\+H\+A1}} 2
+\item 
+const \mbox{\hyperlink{hash_8php_aee1a403dde462054b347d5d687444536}{M\+H\+A\+S\+H\+\_\+\+H\+A\+V\+A\+L256}} 3
+\item 
+const \mbox{\hyperlink{hash_8php_aa66194eb579e3de4ed97ae1038260360}{M\+H\+A\+S\+H\+\_\+\+R\+I\+P\+E\+M\+D160}} 5
+\item 
+const \mbox{\hyperlink{hash_8php_a1257c2ed6076cc6990b4ed2bac8abfa4}{M\+H\+A\+S\+H\+\_\+\+T\+I\+G\+ER}} 7
+\item 
+const \mbox{\hyperlink{hash_8php_ae0dde81387ab0dee44da7f6b88be0b29}{M\+H\+A\+S\+H\+\_\+\+G\+O\+ST}} 8
+\item 
+const \mbox{\hyperlink{hash_8php_a2a503a659852b9542f10b92fe75b2530}{M\+H\+A\+S\+H\+\_\+\+C\+R\+C32B}} 9
+\item 
+const \mbox{\hyperlink{hash_8php_adf12880f3ecfdf8ac7f706474051e65a}{M\+H\+A\+S\+H\+\_\+\+H\+A\+V\+A\+L224}} 10
+\item 
+const \mbox{\hyperlink{hash_8php_a3057305d729f604335fd675ff338a35a}{M\+H\+A\+S\+H\+\_\+\+H\+A\+V\+A\+L192}} 11
+\item 
+const \mbox{\hyperlink{hash_8php_ab5c766ae3f3f5d8f651c135a30beacfa}{M\+H\+A\+S\+H\+\_\+\+H\+A\+V\+A\+L160}} 12
+\item 
+const \mbox{\hyperlink{hash_8php_a42486c988d0f36ce58a9e12570ef8ae6}{M\+H\+A\+S\+H\+\_\+\+H\+A\+V\+A\+L128}} 13
+\item 
+const \mbox{\hyperlink{hash_8php_ad6bf45f0252b70e34719a53bcd6a1381}{M\+H\+A\+S\+H\+\_\+\+T\+I\+G\+E\+R128}} 14
+\item 
+const \mbox{\hyperlink{hash_8php_a4842156042f2f3eb11e39041eb6f3bb5}{M\+H\+A\+S\+H\+\_\+\+T\+I\+G\+E\+R160}} 15
+\item 
+const \mbox{\hyperlink{hash_8php_ae6982a188d3fa1d51f416b0e60102bef}{M\+H\+A\+S\+H\+\_\+\+M\+D4}} 16
+\item 
+const \mbox{\hyperlink{hash_8php_a9bb239f65c0bf8c0d19cde7bbe93fc3e}{M\+H\+A\+S\+H\+\_\+\+S\+H\+A256}} 17
+\item 
+const \mbox{\hyperlink{hash_8php_af29c1a0b5c3446a4628ab8f8a82d9b8f}{M\+H\+A\+S\+H\+\_\+\+A\+D\+L\+E\+R32}} 18
+\item 
+const \mbox{\hyperlink{hash_8php_ab44c52d5b05537ecc97d37a0b3cabb1d}{M\+H\+A\+S\+H\+\_\+\+S\+H\+A224}} 19
+\item 
+const \mbox{\hyperlink{hash_8php_af13eab636d4e6301a453bbd9e4355f68}{M\+H\+A\+S\+H\+\_\+\+S\+H\+A512}} 20
+\item 
+const \mbox{\hyperlink{hash_8php_ad72ed8c91e1ae608cdb213f755d5510b}{M\+H\+A\+S\+H\+\_\+\+S\+H\+A384}} 21
+\item 
+const \mbox{\hyperlink{hash_8php_aabfc395a365c6c5d52bfe314b25565f3}{M\+H\+A\+S\+H\+\_\+\+W\+H\+I\+R\+L\+P\+O\+OL}} 22
+\item 
+const \mbox{\hyperlink{hash_8php_aaf02cf3101f59339b791ef8b045ff383}{M\+H\+A\+S\+H\+\_\+\+R\+I\+P\+E\+M\+D128}} 23
+\item 
+const \mbox{\hyperlink{hash_8php_ac44ccbe4c1bed6d790bb87fdd9749de2}{M\+H\+A\+S\+H\+\_\+\+R\+I\+P\+E\+M\+D256}} 24
+\item 
+const \mbox{\hyperlink{hash_8php_a2b27b2a6b68c457eb9149d1f0546bf8f}{M\+H\+A\+S\+H\+\_\+\+R\+I\+P\+E\+M\+D320}} 25
+\item 
+const \mbox{\hyperlink{hash_8php_a7bc00b94400d258b536ee096446c90e6}{M\+H\+A\+S\+H\+\_\+\+S\+N\+E\+F\+R\+U256}} 27
+\item 
+const \mbox{\hyperlink{hash_8php_a2fb41c12f9a6989d6cdd6270c465cc4f}{M\+H\+A\+S\+H\+\_\+\+M\+D2}} 28
+\item 
+const \mbox{\hyperlink{hash_8php_a302f9a4efbf9d0c9aad11e3c7222c855}{M\+H\+A\+S\+H\+\_\+\+F\+N\+V132}} 29
+\item 
+const \mbox{\hyperlink{hash_8php_a58aa461f8ec2b7e0f7eae0709f64800a}{M\+H\+A\+S\+H\+\_\+\+F\+N\+V1\+A32}} 30
+\item 
+const \mbox{\hyperlink{hash_8php_a4c5037bfd9226f4af59c42e556669e5e}{M\+H\+A\+S\+H\+\_\+\+F\+N\+V164}} 31
+\item 
+const \mbox{\hyperlink{hash_8php_a306843e173ae302e445eedf579a700e2}{M\+H\+A\+S\+H\+\_\+\+F\+N\+V1\+A64}} 32
+\item 
+const \mbox{\hyperlink{hash_8php_a672146c02f1722a705f923fa6f386058}{M\+H\+A\+S\+H\+\_\+\+J\+O\+A\+AT}} 33
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{hash_8php_ad87f77157db7d7ac70fc8608f25ae8de}\label{hash_8php_ad87f77157db7d7ac70fc8608f25ae8de}} 
+\index{hash.php@{hash.php}!hash@{hash}}
+\index{hash@{hash}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{hash()}{hash()}}
+{\footnotesize\ttfamily hash (\begin{DoxyParamCaption}\item[{}]{\$algo,  }\item[{}]{\$data,  }\item[{}]{\$raw\+\_\+output = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL hash $>$= 1.\+1)~\newline
+ Generate a hash value (message digest) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$algo }} Name of selected hashing algorithm (i.\+e. \char`\"{}md5\char`\"{}, \char`\"{}sha256\char`\"{}, \char`\"{}haval160,4\char`\"{}, etc..) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+Message to be hashed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$raw\+\_\+output} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+When set to {\bfseries{T\+R\+UE}}, outputs raw binary data. {\bfseries{F\+A\+L\+SE}} outputs lowercase hexits. 
+
+\begin{DoxyReturn}{Returns}
+string a string containing the calculated message digest as lowercase hexits unless {\itshape raw\+\_\+output} is set to true in which case the raw binary representation of the message digest is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hash_8php_a1fe7cf1578c67e0cb6e71c28f22f9cc3}\label{hash_8php_a1fe7cf1578c67e0cb6e71c28f22f9cc3}} 
+\index{hash.php@{hash.php}!hash\_algos@{hash\_algos}}
+\index{hash\_algos@{hash\_algos}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{hash\_algos()}{hash\_algos()}}
+{\footnotesize\ttfamily hash\+\_\+algos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL hash $>$= 1.\+1)~\newline
+ Return a list of registered hashing algorithms \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array a numerically indexed array containing the list of supported hashing algorithms. }}\mbox{\Hypertarget{hash_8php_ab52e21f16803c624762e023ffe568023}\label{hash_8php_ab52e21f16803c624762e023ffe568023}} 
+\index{hash.php@{hash.php}!hash\_copy@{hash\_copy}}
+\index{hash\_copy@{hash\_copy}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{hash\_copy()}{hash\_copy()}}
+{\footnotesize\ttfamily hash\+\_\+copy (\begin{DoxyParamCaption}\item[{}]{\$context }\end{DoxyParamCaption})}
+
+Copy hashing context \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$context }} Hashing context returned by {\bfseries{hash\+\_\+init}}. 
+
+\begin{DoxyReturn}{Returns}
+resource a copy of Hashing Context resource. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{hash_8php_ad588191090b045ae16e3833ee6a68bbf}\label{hash_8php_ad588191090b045ae16e3833ee6a68bbf}} 
+\index{hash.php@{hash.php}!hash\_equals@{hash\_equals}}
+\index{hash\_equals@{hash\_equals}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{hash\_equals()}{hash\_equals()}}
+{\footnotesize\ttfamily hash\+\_\+equals (\begin{DoxyParamCaption}\item[{}]{\$known\+\_\+string,  }\item[{}]{\$user\+\_\+string }\end{DoxyParamCaption})}
+
+Timing attack safe string comparison \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$known\+\_\+string }}The string of known length to compare against
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$user\+\_\+string} & \\
+\hline
+\end{DoxyParams}
+The user-\/supplied string
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+Returns {\bfseries{T\+R\+UE}} when the two strings are equal, {\bfseries{F\+A\+L\+SE}} otherwise.
+
+\begin{DoxySince}{Since}
+5.\+6 
+\end{DoxySince}
+\mbox{\Hypertarget{hash_8php_a47ff601292f755b6e67e60c848e1039b}\label{hash_8php_a47ff601292f755b6e67e60c848e1039b}} 
+\index{hash.php@{hash.php}!hash\_file@{hash\_file}}
+\index{hash\_file@{hash\_file}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{hash\_file()}{hash\_file()}}
+{\footnotesize\ttfamily hash\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$algo,  }\item[{}]{\$filename,  }\item[{}]{\$raw\+\_\+output = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL hash $>$= 1.\+1)~\newline
+ Generate a hash value using the contents of a given file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$algo }} Name of selected hashing algorithm (i.\+e. \char`\"{}md5\char`\"{}, \char`\"{}sha256\char`\"{}, \char`\"{}haval160,4\char`\"{}, etc..) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+U\+RL describing location of file to be hashed; Supports fopen wrappers. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$raw\+\_\+output} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+When set to {\bfseries{T\+R\+UE}}, outputs raw binary data. {\bfseries{F\+A\+L\+SE}} outputs lowercase hexits. 
+
+\begin{DoxyReturn}{Returns}
+string a string containing the calculated message digest as lowercase hexits unless {\itshape raw\+\_\+output} is set to true in which case the raw binary representation of the message digest is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hash_8php_a8c80b274e5139039a6cf443d5c53d177}\label{hash_8php_a8c80b274e5139039a6cf443d5c53d177}} 
+\index{hash.php@{hash.php}!hash\_final@{hash\_final}}
+\index{hash\_final@{hash\_final}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{hash\_final()}{hash\_final()}}
+{\footnotesize\ttfamily hash\+\_\+final (\begin{DoxyParamCaption}\item[{}]{\$context,  }\item[{}]{\$raw\+\_\+output = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL hash $>$= 1.\+1)~\newline
+ Finalize an incremental hash and return resulting digest \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$context }} Hashing context returned by {\bfseries{hash\+\_\+init}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$raw\+\_\+output} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+When set to {\bfseries{T\+R\+UE}}, outputs raw binary data. {\bfseries{F\+A\+L\+SE}} outputs lowercase hexits. 
+
+\begin{DoxyReturn}{Returns}
+string a string containing the calculated message digest as lowercase hexits unless {\itshape raw\+\_\+output} is set to true in which case the raw binary representation of the message digest is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hash_8php_a3ab1f1460c9a999b6a1dd40b0fec1e49}\label{hash_8php_a3ab1f1460c9a999b6a1dd40b0fec1e49}} 
+\index{hash.php@{hash.php}!hash\_hkdf@{hash\_hkdf}}
+\index{hash\_hkdf@{hash\_hkdf}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{hash\_hkdf()}{hash\_hkdf()}}
+{\footnotesize\ttfamily hash\+\_\+hkdf (\begin{DoxyParamCaption}\item[{string}]{\$algo,  }\item[{string}]{\$ikm,  }\item[{int}]{\$length = {\ttfamily 0},  }\item[{string}]{\$info = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{string}]{\$salt = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxySince}{Since}
+7.\+1.\+2 Generate a H\+K\+DF key derivation of a supplied key input \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$algo Name of selected hashing algorithm (i.\+e. \char`\"{}sha256\char`\"{}, \char`\"{}sha512\char`\"{}, \char`\"{}haval160,4\char`\"{}, etc..) See \{ hash\+\_\+algos()\} for a list of supported algorithms. }} 
+\end{DoxySince}
+{\bfseries{Note}}
+
+Non-\/cryptographic hash functions are not allowed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ikm} & \\
+\hline
+\end{DoxyParams}
+Input keying material (raw binary). Cannot be empty.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Desired output length in bytes. Cannot be greater than 255 times the chosen hash function size. If {\bfseries{length}} is 0, the output length will default to the chosen hash function size. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$info} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Application/context-\/specific info string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$salt} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Salt to use during derivation. While optional, adding random salt significantly improves the strength of H\+K\+DF.
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false 
+\end{DoxyReturn}
+Returns a string containing a raw binary representation of the derived key (also known as output keying material -\/ O\+KM); or {\bfseries{F\+A\+L\+SE}} on failure.\mbox{\Hypertarget{hash_8php_a7702d28d21575c0ae07d4680833b2eec}\label{hash_8php_a7702d28d21575c0ae07d4680833b2eec}} 
+\index{hash.php@{hash.php}!hash\_hmac@{hash\_hmac}}
+\index{hash\_hmac@{hash\_hmac}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{hash\_hmac()}{hash\_hmac()}}
+{\footnotesize\ttfamily hash\+\_\+hmac (\begin{DoxyParamCaption}\item[{}]{\$algo,  }\item[{}]{\$data,  }\item[{}]{\$key,  }\item[{}]{\$raw\+\_\+output = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL hash $>$= 1.\+1)~\newline
+ Generate a keyed hash value using the H\+M\+AC method \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$algo }} Name of selected hashing algorithm (i.\+e. \char`\"{}md5\char`\"{}, \char`\"{}sha256\char`\"{}, \char`\"{}haval160,4\char`\"{}, etc..) See {\bfseries{hash\+\_\+algos}} for a list of supported algorithms.~\newline
+ Since 7.\+2.\+0 usage of non-\/cryptographic hash functions (adler32, crc32, crc32b, fnv132, fnv1a32, fnv164, fnv1a64, joaat) was disabled. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+Message to be hashed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+Shared secret key used for generating the H\+M\+AC variant of the message digest. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$raw\+\_\+output} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+When set to {\bfseries{T\+R\+UE}}, outputs raw binary data. {\bfseries{F\+A\+L\+SE}} outputs lowercase hexits. 
+
+\begin{DoxyReturn}{Returns}
+string a string containing the calculated message digest as lowercase hexits unless {\itshape raw\+\_\+output} is set to true in which case the raw binary representation of the message digest is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hash_8php_aba3c30a021dd79188aacd2b2f5179103}\label{hash_8php_aba3c30a021dd79188aacd2b2f5179103}} 
+\index{hash.php@{hash.php}!hash\_hmac\_algos@{hash\_hmac\_algos}}
+\index{hash\_hmac\_algos@{hash\_hmac\_algos}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{hash\_hmac\_algos()}{hash\_hmac\_algos()}}
+{\footnotesize\ttfamily hash\+\_\+hmac\+\_\+algos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxySince}{Since}
+7.\+2 Return a list of registered hashing algorithms suitable for hash\+\_\+hmac 
+\end{DoxySince}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} Returns a numerically indexed array containing the list of supported hashing algorithms suitable for \{
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{hash_8php_a7702d28d21575c0ae07d4680833b2eec}{hash\+\_\+hmac()}}\}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{hash_8php_aa8853c576507970084fde332a1ec48a7}\label{hash_8php_aa8853c576507970084fde332a1ec48a7}} 
+\index{hash.php@{hash.php}!hash\_hmac\_file@{hash\_hmac\_file}}
+\index{hash\_hmac\_file@{hash\_hmac\_file}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{hash\_hmac\_file()}{hash\_hmac\_file()}}
+{\footnotesize\ttfamily hash\+\_\+hmac\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$algo,  }\item[{}]{\$filename,  }\item[{}]{\$key,  }\item[{}]{\$raw\+\_\+output = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL hash $>$= 1.\+1)~\newline
+ Generate a keyed hash value using the H\+M\+AC method and the contents of a given file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$algo }} Name of selected hashing algorithm (i.\+e. \char`\"{}md5\char`\"{}, \char`\"{}sha256\char`\"{}, \char`\"{}haval160,4\char`\"{}, etc..) See {\bfseries{hash\+\_\+algos}} for a list of supported algorithms.~\newline
+ Since 7.\+2.\+0 usage of non-\/cryptographic hash functions (adler32, crc32, crc32b, fnv132, fnv1a32, fnv164, fnv1a64, joaat) was disabled. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+U\+RL describing location of file to be hashed; Supports fopen wrappers. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+Shared secret key used for generating the H\+M\+AC variant of the message digest. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$raw\+\_\+output} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+When set to {\bfseries{T\+R\+UE}}, outputs raw binary data. {\bfseries{F\+A\+L\+SE}} outputs lowercase hexits. 
+
+\begin{DoxyReturn}{Returns}
+string a string containing the calculated message digest as lowercase hexits unless {\itshape raw\+\_\+output} is set to true in which case the raw binary representation of the message digest is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hash_8php_aef54eda45b406c998176a6c15c859898}\label{hash_8php_aef54eda45b406c998176a6c15c859898}} 
+\index{hash.php@{hash.php}!hash\_init@{hash\_init}}
+\index{hash\_init@{hash\_init}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{hash\_init()}{hash\_init()}}
+{\footnotesize\ttfamily hash\+\_\+init (\begin{DoxyParamCaption}\item[{}]{\$algo,  }\item[{}]{\$options = {\ttfamily 0},  }\item[{}]{\$key = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL hash $>$= 1.\+1)~\newline
+ Initialize an incremental hashing context \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$algo }} Name of selected hashing algorithm (i.\+e. \char`\"{}md5\char`\"{}, \char`\"{}sha256\char`\"{}, \char`\"{}haval160,4\char`\"{}, etc..). For a list of supported algorithms see {\bfseries{hash\+\_\+algos}}.~\newline
+ Since 7.\+2.\+0 usage of non-\/cryptographic hash functions (adler32, crc32, crc32b, fnv132, fnv1a32, fnv164, fnv1a64, joaat) was disabled. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Optional settings for hash generation, currently supports only one option\+: {\bfseries{H\+A\+S\+H\+\_\+\+H\+M\+AC}}. When specified, the {\itshape key} must be specified. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+When {\bfseries{H\+A\+S\+H\+\_\+\+H\+M\+AC}} is specified for {\itshape options}, a shared secret key to be used with the H\+M\+AC hashing method must be supplied in this parameter. 
+
+\begin{DoxyReturn}{Returns}
+resource a Hashing Context resource for use with {\bfseries{hash\+\_\+update}}, {\bfseries{hash\+\_\+update\+\_\+stream}}, {\bfseries{hash\+\_\+update\+\_\+file}}, and {\bfseries{hash\+\_\+final}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hash_8php_a2960f2f50f70afa8006a73fe20212889}\label{hash_8php_a2960f2f50f70afa8006a73fe20212889}} 
+\index{hash.php@{hash.php}!hash\_pbkdf2@{hash\_pbkdf2}}
+\index{hash\_pbkdf2@{hash\_pbkdf2}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{hash\_pbkdf2()}{hash\_pbkdf2()}}
+{\footnotesize\ttfamily hash\+\_\+pbkdf2 (\begin{DoxyParamCaption}\item[{}]{\$algo,  }\item[{}]{\$password,  }\item[{}]{\$salt,  }\item[{}]{\$iterations,  }\item[{}]{\$length = {\ttfamily 0},  }\item[{}]{\$raw\+\_\+output = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Generate a P\+B\+K\+D\+F2 key derivation of a supplied password \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$algo }} Name of selected hashing algorithm (i.\+e. \char`\"{}md5\char`\"{}, \char`\"{}sha256\char`\"{}, \char`\"{}haval160,4\char`\"{}, etc..) See {\bfseries{hash\+\_\+algos}} for a list of supported algorithms.~\newline
+ Since 7.\+2.\+0 usage of non-\/cryptographic hash functions (adler32, crc32, crc32b, fnv132, fnv1a32, fnv164, fnv1a64, joaat) was disabled. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+The password to use for the derivation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$salt} & \\
+\hline
+\end{DoxyParams}
+The salt to use for the derivation. This value should be generated randomly. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$iterations} & \\
+\hline
+\end{DoxyParams}
+The number of internal iterations to perform for the derivation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The length of the output string. If raw\+\_\+output is T\+R\+UE this corresponds to the byte-\/length of the derived key, if raw\+\_\+output is F\+A\+L\+SE this corresponds to twice the byte-\/length of the derived key (as every byte of the key is returned as two hexits). ~\newline
+ If 0 is passed, the entire output of the supplied algorithm is used. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$raw\+\_\+output} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+When set to T\+R\+UE, outputs raw binary data. F\+A\+L\+SE outputs lowercase hexits. 
+
+\begin{DoxyReturn}{Returns}
+mixed a string containing the derived key as lowercase hexits unless {\itshape raw\+\_\+output} is set to {\bfseries{T\+R\+UE}} in which case the raw binary representation of the derived key is returned. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+5 
+\end{DoxySince}
+\mbox{\Hypertarget{hash_8php_a9c8e26274f9296c3a3d807d224253145}\label{hash_8php_a9c8e26274f9296c3a3d807d224253145}} 
+\index{hash.php@{hash.php}!hash\_update@{hash\_update}}
+\index{hash\_update@{hash\_update}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{hash\_update()}{hash\_update()}}
+{\footnotesize\ttfamily hash\+\_\+update (\begin{DoxyParamCaption}\item[{}]{\$context,  }\item[{}]{\$data }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL hash $>$= 1.\+1)~\newline
+ Pump data into an active hashing context \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$context }} Hashing context returned by {\bfseries{hash\+\_\+init}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+Message to be included in the hash digest. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hash_8php_a14a7f5c2b26bd9e10b7c756d0426db86}\label{hash_8php_a14a7f5c2b26bd9e10b7c756d0426db86}} 
+\index{hash.php@{hash.php}!hash\_update\_file@{hash\_update\_file}}
+\index{hash\_update\_file@{hash\_update\_file}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{hash\_update\_file()}{hash\_update\_file()}}
+{\footnotesize\ttfamily hash\+\_\+update\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$hcontext,  }\item[{}]{\$filename,  }\item[{}]{\$scontext = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL hash $>$= 1.\+1)~\newline
+ Pump data into an active hashing context from a file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$hcontext }} Hashing context returned by {\bfseries{hash\+\_\+init}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+U\+RL describing location of file to be hashed; Supports fopen wrappers. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$scontext} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Stream context as returned by {\bfseries{stream\+\_\+context\+\_\+create}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hash_8php_a160c84c6072825442f3046a3bf99b3d6}\label{hash_8php_a160c84c6072825442f3046a3bf99b3d6}} 
+\index{hash.php@{hash.php}!hash\_update\_stream@{hash\_update\_stream}}
+\index{hash\_update\_stream@{hash\_update\_stream}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{hash\_update\_stream()}{hash\_update\_stream()}}
+{\footnotesize\ttfamily hash\+\_\+update\+\_\+stream (\begin{DoxyParamCaption}\item[{}]{\$context,  }\item[{}]{\$handle,  }\item[{}]{\$length = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+1.\+2, P\+E\+CL hash $>$= 1.\+1)~\newline
+ Pump data into an active hashing context from an open stream \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$context }} Hashing context returned by {\bfseries{hash\+\_\+init}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$handle} & \\
+\hline
+\end{DoxyParams}
+Open file handle as returned by any stream creation function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Maximum number of characters to copy from {\itshape handle} into the hashing context. 
+
+\begin{DoxyReturn}{Returns}
+int Actual number of bytes added to the hashing context from {\itshape handle}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{hash_8php_a58e181170bf2ddff0bdeaf816db94f2b}\label{hash_8php_a58e181170bf2ddff0bdeaf816db94f2b}} 
+\index{hash.php@{hash.php}!mhash@{mhash}}
+\index{mhash@{mhash}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{mhash()}{mhash()}}
+{\footnotesize\ttfamily mhash (\begin{DoxyParamCaption}\item[{}]{\$hash,  }\item[{}]{\$data,  }\item[{}]{\$key = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Computes hash \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$hash }} The hash ID. One of the {\bfseries{M\+H\+A\+S\+H\+\_\+hashname}} constants. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+The user input, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If specified, the function will return the resulting H\+M\+AC instead. H\+M\+AC is keyed hashing for message authentication, or simply a message digest that depends on the specified key. Not all algorithms supported in mhash can be used in H\+M\+AC mode. 
+
+\begin{DoxyReturn}{Returns}
+string the resulting hash (also called digest) or H\+M\+AC as a string, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{hash_8php_a09f342b98bb6b3be193aa0bb7851bc95}\label{hash_8php_a09f342b98bb6b3be193aa0bb7851bc95}} 
+\index{hash.php@{hash.php}!mhash\_count@{mhash\_count}}
+\index{mhash\_count@{mhash\_count}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{mhash\_count()}{mhash\_count()}}
+{\footnotesize\ttfamily mhash\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the highest available hash ID \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int the highest available hash ID. Hashes are numbered from 0 to this hash ID.  4.\+0  5.\+0 }}\mbox{\Hypertarget{hash_8php_afc7accc11a0564b4c606f423c3e377a6}\label{hash_8php_afc7accc11a0564b4c606f423c3e377a6}} 
+\index{hash.php@{hash.php}!mhash\_get\_block\_size@{mhash\_get\_block\_size}}
+\index{mhash\_get\_block\_size@{mhash\_get\_block\_size}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{mhash\_get\_block\_size()}{mhash\_get\_block\_size()}}
+{\footnotesize\ttfamily mhash\+\_\+get\+\_\+block\+\_\+size (\begin{DoxyParamCaption}\item[{}]{\$hash }\end{DoxyParamCaption})}
+
+Gets the block size of the specified hash \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$hash }} The hash ID. One of the {\bfseries{M\+H\+A\+S\+H\+\_\+hashname}} constants. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false the size in bytes or {\bfseries{F\+A\+L\+SE}}, if the {\itshape hash} does not exist. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{hash_8php_a3797532f3916b233c9a8108cb46dec52}\label{hash_8php_a3797532f3916b233c9a8108cb46dec52}} 
+\index{hash.php@{hash.php}!mhash\_get\_hash\_name@{mhash\_get\_hash\_name}}
+\index{mhash\_get\_hash\_name@{mhash\_get\_hash\_name}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{mhash\_get\_hash\_name()}{mhash\_get\_hash\_name()}}
+{\footnotesize\ttfamily mhash\+\_\+get\+\_\+hash\+\_\+name (\begin{DoxyParamCaption}\item[{}]{\$hash }\end{DoxyParamCaption})}
+
+Gets the name of the specified hash \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$hash }} The hash ID. One of the {\bfseries{M\+H\+A\+S\+H\+\_\+hashname}} constants. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false the name of the hash or {\bfseries{F\+A\+L\+SE}}, if the hash does not exist. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{hash_8php_ab0c6dd02cdab9d30a9c35f9038963905}\label{hash_8php_ab0c6dd02cdab9d30a9c35f9038963905}} 
+\index{hash.php@{hash.php}!mhash\_keygen\_s2k@{mhash\_keygen\_s2k}}
+\index{mhash\_keygen\_s2k@{mhash\_keygen\_s2k}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{mhash\_keygen\_s2k()}{mhash\_keygen\_s2k()}}
+{\footnotesize\ttfamily mhash\+\_\+keygen\+\_\+s2k (\begin{DoxyParamCaption}\item[{}]{\$hash,  }\item[{}]{\$password,  }\item[{}]{\$salt,  }\item[{}]{\$bytes }\end{DoxyParamCaption})}
+
+Generates a key \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$hash }} The hash ID used to create the key. One of the {\bfseries{M\+H\+A\+S\+H\+\_\+hashname}} constants. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+An user supplied password. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$salt} & \\
+\hline
+\end{DoxyParams}
+Must be different and random enough for every key you generate in order to create different keys. Because {\itshape salt} must be known when you check the keys, it is a good idea to append the key to it. Salt has a fixed length of 8 bytes and will be padded with zeros if you supply less bytes. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$bytes} & \\
+\hline
+\end{DoxyParams}
+The key length, in bytes. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false the generated key as a string, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{hash_8php_ae85f479c79461907b09e618f36b78ade}\label{hash_8php_ae85f479c79461907b09e618f36b78ade}} 
+\index{hash.php@{hash.php}!HASH\_HMAC@{HASH\_HMAC}}
+\index{HASH\_HMAC@{HASH\_HMAC}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{HASH\_HMAC}{HASH\_HMAC}}
+{\footnotesize\ttfamily const H\+A\+S\+H\+\_\+\+H\+M\+AC 1}
+
+Optional flag for {\bfseries{hash\+\_\+init}}. Indicates that the H\+M\+AC digest-\/keying algorithm should be applied to the current hashing context. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/hash.\+constants.\+php}}\mbox{\Hypertarget{hash_8php_af29c1a0b5c3446a4628ab8f8a82d9b8f}\label{hash_8php_af29c1a0b5c3446a4628ab8f8a82d9b8f}} 
+\index{hash.php@{hash.php}!MHASH\_ADLER32@{MHASH\_ADLER32}}
+\index{MHASH\_ADLER32@{MHASH\_ADLER32}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_ADLER32}{MHASH\_ADLER32}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+A\+D\+L\+E\+R32 18}
+
+\mbox{\Hypertarget{hash_8php_ae789b01323b8cb1c04227a6733cb0abc}\label{hash_8php_ae789b01323b8cb1c04227a6733cb0abc}} 
+\index{hash.php@{hash.php}!MHASH\_CRC32@{MHASH\_CRC32}}
+\index{MHASH\_CRC32@{MHASH\_CRC32}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_CRC32}{MHASH\_CRC32}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+C\+R\+C32 0}
+
+\mbox{\Hypertarget{hash_8php_a2a503a659852b9542f10b92fe75b2530}\label{hash_8php_a2a503a659852b9542f10b92fe75b2530}} 
+\index{hash.php@{hash.php}!MHASH\_CRC32B@{MHASH\_CRC32B}}
+\index{MHASH\_CRC32B@{MHASH\_CRC32B}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_CRC32B}{MHASH\_CRC32B}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+C\+R\+C32B 9}
+
+\mbox{\Hypertarget{hash_8php_a8253562409d8756b1683971784cd6837}\label{hash_8php_a8253562409d8756b1683971784cd6837}} 
+\index{hash.php@{hash.php}!MHASH\_CRC32C@{MHASH\_CRC32C}}
+\index{MHASH\_CRC32C@{MHASH\_CRC32C}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_CRC32C}{MHASH\_CRC32C}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+C\+R\+C32C 34}
+
+\begin{DoxySince}{Since}
+7.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{hash_8php_a302f9a4efbf9d0c9aad11e3c7222c855}\label{hash_8php_a302f9a4efbf9d0c9aad11e3c7222c855}} 
+\index{hash.php@{hash.php}!MHASH\_FNV132@{MHASH\_FNV132}}
+\index{MHASH\_FNV132@{MHASH\_FNV132}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_FNV132}{MHASH\_FNV132}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+F\+N\+V132 29}
+
+\mbox{\Hypertarget{hash_8php_a4c5037bfd9226f4af59c42e556669e5e}\label{hash_8php_a4c5037bfd9226f4af59c42e556669e5e}} 
+\index{hash.php@{hash.php}!MHASH\_FNV164@{MHASH\_FNV164}}
+\index{MHASH\_FNV164@{MHASH\_FNV164}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_FNV164}{MHASH\_FNV164}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+F\+N\+V164 31}
+
+\mbox{\Hypertarget{hash_8php_a58aa461f8ec2b7e0f7eae0709f64800a}\label{hash_8php_a58aa461f8ec2b7e0f7eae0709f64800a}} 
+\index{hash.php@{hash.php}!MHASH\_FNV1A32@{MHASH\_FNV1A32}}
+\index{MHASH\_FNV1A32@{MHASH\_FNV1A32}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_FNV1A32}{MHASH\_FNV1A32}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+F\+N\+V1\+A32 30}
+
+\mbox{\Hypertarget{hash_8php_a306843e173ae302e445eedf579a700e2}\label{hash_8php_a306843e173ae302e445eedf579a700e2}} 
+\index{hash.php@{hash.php}!MHASH\_FNV1A64@{MHASH\_FNV1A64}}
+\index{MHASH\_FNV1A64@{MHASH\_FNV1A64}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_FNV1A64}{MHASH\_FNV1A64}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+F\+N\+V1\+A64 32}
+
+\mbox{\Hypertarget{hash_8php_ae0dde81387ab0dee44da7f6b88be0b29}\label{hash_8php_ae0dde81387ab0dee44da7f6b88be0b29}} 
+\index{hash.php@{hash.php}!MHASH\_GOST@{MHASH\_GOST}}
+\index{MHASH\_GOST@{MHASH\_GOST}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_GOST}{MHASH\_GOST}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+G\+O\+ST 8}
+
+\mbox{\Hypertarget{hash_8php_a42486c988d0f36ce58a9e12570ef8ae6}\label{hash_8php_a42486c988d0f36ce58a9e12570ef8ae6}} 
+\index{hash.php@{hash.php}!MHASH\_HAVAL128@{MHASH\_HAVAL128}}
+\index{MHASH\_HAVAL128@{MHASH\_HAVAL128}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_HAVAL128}{MHASH\_HAVAL128}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+H\+A\+V\+A\+L128 13}
+
+\mbox{\Hypertarget{hash_8php_ab5c766ae3f3f5d8f651c135a30beacfa}\label{hash_8php_ab5c766ae3f3f5d8f651c135a30beacfa}} 
+\index{hash.php@{hash.php}!MHASH\_HAVAL160@{MHASH\_HAVAL160}}
+\index{MHASH\_HAVAL160@{MHASH\_HAVAL160}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_HAVAL160}{MHASH\_HAVAL160}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+H\+A\+V\+A\+L160 12}
+
+\mbox{\Hypertarget{hash_8php_a3057305d729f604335fd675ff338a35a}\label{hash_8php_a3057305d729f604335fd675ff338a35a}} 
+\index{hash.php@{hash.php}!MHASH\_HAVAL192@{MHASH\_HAVAL192}}
+\index{MHASH\_HAVAL192@{MHASH\_HAVAL192}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_HAVAL192}{MHASH\_HAVAL192}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+H\+A\+V\+A\+L192 11}
+
+\mbox{\Hypertarget{hash_8php_adf12880f3ecfdf8ac7f706474051e65a}\label{hash_8php_adf12880f3ecfdf8ac7f706474051e65a}} 
+\index{hash.php@{hash.php}!MHASH\_HAVAL224@{MHASH\_HAVAL224}}
+\index{MHASH\_HAVAL224@{MHASH\_HAVAL224}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_HAVAL224}{MHASH\_HAVAL224}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+H\+A\+V\+A\+L224 10}
+
+\mbox{\Hypertarget{hash_8php_aee1a403dde462054b347d5d687444536}\label{hash_8php_aee1a403dde462054b347d5d687444536}} 
+\index{hash.php@{hash.php}!MHASH\_HAVAL256@{MHASH\_HAVAL256}}
+\index{MHASH\_HAVAL256@{MHASH\_HAVAL256}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_HAVAL256}{MHASH\_HAVAL256}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+H\+A\+V\+A\+L256 3}
+
+\mbox{\Hypertarget{hash_8php_a672146c02f1722a705f923fa6f386058}\label{hash_8php_a672146c02f1722a705f923fa6f386058}} 
+\index{hash.php@{hash.php}!MHASH\_JOAAT@{MHASH\_JOAAT}}
+\index{MHASH\_JOAAT@{MHASH\_JOAAT}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_JOAAT}{MHASH\_JOAAT}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+J\+O\+A\+AT 33}
+
+\mbox{\Hypertarget{hash_8php_a2fb41c12f9a6989d6cdd6270c465cc4f}\label{hash_8php_a2fb41c12f9a6989d6cdd6270c465cc4f}} 
+\index{hash.php@{hash.php}!MHASH\_MD2@{MHASH\_MD2}}
+\index{MHASH\_MD2@{MHASH\_MD2}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_MD2}{MHASH\_MD2}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+M\+D2 28}
+
+\mbox{\Hypertarget{hash_8php_ae6982a188d3fa1d51f416b0e60102bef}\label{hash_8php_ae6982a188d3fa1d51f416b0e60102bef}} 
+\index{hash.php@{hash.php}!MHASH\_MD4@{MHASH\_MD4}}
+\index{MHASH\_MD4@{MHASH\_MD4}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_MD4}{MHASH\_MD4}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+M\+D4 16}
+
+\mbox{\Hypertarget{hash_8php_a49bb2b38dd52212e1962f7432e6662c5}\label{hash_8php_a49bb2b38dd52212e1962f7432e6662c5}} 
+\index{hash.php@{hash.php}!MHASH\_MD5@{MHASH\_MD5}}
+\index{MHASH\_MD5@{MHASH\_MD5}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_MD5}{MHASH\_MD5}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+M\+D5 1}
+
+\mbox{\Hypertarget{hash_8php_aaf02cf3101f59339b791ef8b045ff383}\label{hash_8php_aaf02cf3101f59339b791ef8b045ff383}} 
+\index{hash.php@{hash.php}!MHASH\_RIPEMD128@{MHASH\_RIPEMD128}}
+\index{MHASH\_RIPEMD128@{MHASH\_RIPEMD128}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_RIPEMD128}{MHASH\_RIPEMD128}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+R\+I\+P\+E\+M\+D128 23}
+
+\mbox{\Hypertarget{hash_8php_aa66194eb579e3de4ed97ae1038260360}\label{hash_8php_aa66194eb579e3de4ed97ae1038260360}} 
+\index{hash.php@{hash.php}!MHASH\_RIPEMD160@{MHASH\_RIPEMD160}}
+\index{MHASH\_RIPEMD160@{MHASH\_RIPEMD160}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_RIPEMD160}{MHASH\_RIPEMD160}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+R\+I\+P\+E\+M\+D160 5}
+
+\mbox{\Hypertarget{hash_8php_ac44ccbe4c1bed6d790bb87fdd9749de2}\label{hash_8php_ac44ccbe4c1bed6d790bb87fdd9749de2}} 
+\index{hash.php@{hash.php}!MHASH\_RIPEMD256@{MHASH\_RIPEMD256}}
+\index{MHASH\_RIPEMD256@{MHASH\_RIPEMD256}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_RIPEMD256}{MHASH\_RIPEMD256}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+R\+I\+P\+E\+M\+D256 24}
+
+\mbox{\Hypertarget{hash_8php_a2b27b2a6b68c457eb9149d1f0546bf8f}\label{hash_8php_a2b27b2a6b68c457eb9149d1f0546bf8f}} 
+\index{hash.php@{hash.php}!MHASH\_RIPEMD320@{MHASH\_RIPEMD320}}
+\index{MHASH\_RIPEMD320@{MHASH\_RIPEMD320}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_RIPEMD320}{MHASH\_RIPEMD320}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+R\+I\+P\+E\+M\+D320 25}
+
+\mbox{\Hypertarget{hash_8php_a4f808ea5dd8384c75217e7136a9564a8}\label{hash_8php_a4f808ea5dd8384c75217e7136a9564a8}} 
+\index{hash.php@{hash.php}!MHASH\_SHA1@{MHASH\_SHA1}}
+\index{MHASH\_SHA1@{MHASH\_SHA1}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_SHA1}{MHASH\_SHA1}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+S\+H\+A1 2}
+
+\mbox{\Hypertarget{hash_8php_ab44c52d5b05537ecc97d37a0b3cabb1d}\label{hash_8php_ab44c52d5b05537ecc97d37a0b3cabb1d}} 
+\index{hash.php@{hash.php}!MHASH\_SHA224@{MHASH\_SHA224}}
+\index{MHASH\_SHA224@{MHASH\_SHA224}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_SHA224}{MHASH\_SHA224}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+S\+H\+A224 19}
+
+\mbox{\Hypertarget{hash_8php_a9bb239f65c0bf8c0d19cde7bbe93fc3e}\label{hash_8php_a9bb239f65c0bf8c0d19cde7bbe93fc3e}} 
+\index{hash.php@{hash.php}!MHASH\_SHA256@{MHASH\_SHA256}}
+\index{MHASH\_SHA256@{MHASH\_SHA256}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_SHA256}{MHASH\_SHA256}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+S\+H\+A256 17}
+
+\mbox{\Hypertarget{hash_8php_ad72ed8c91e1ae608cdb213f755d5510b}\label{hash_8php_ad72ed8c91e1ae608cdb213f755d5510b}} 
+\index{hash.php@{hash.php}!MHASH\_SHA384@{MHASH\_SHA384}}
+\index{MHASH\_SHA384@{MHASH\_SHA384}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_SHA384}{MHASH\_SHA384}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+S\+H\+A384 21}
+
+\mbox{\Hypertarget{hash_8php_af13eab636d4e6301a453bbd9e4355f68}\label{hash_8php_af13eab636d4e6301a453bbd9e4355f68}} 
+\index{hash.php@{hash.php}!MHASH\_SHA512@{MHASH\_SHA512}}
+\index{MHASH\_SHA512@{MHASH\_SHA512}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_SHA512}{MHASH\_SHA512}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+S\+H\+A512 20}
+
+\mbox{\Hypertarget{hash_8php_a7bc00b94400d258b536ee096446c90e6}\label{hash_8php_a7bc00b94400d258b536ee096446c90e6}} 
+\index{hash.php@{hash.php}!MHASH\_SNEFRU256@{MHASH\_SNEFRU256}}
+\index{MHASH\_SNEFRU256@{MHASH\_SNEFRU256}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_SNEFRU256}{MHASH\_SNEFRU256}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+S\+N\+E\+F\+R\+U256 27}
+
+\mbox{\Hypertarget{hash_8php_a1257c2ed6076cc6990b4ed2bac8abfa4}\label{hash_8php_a1257c2ed6076cc6990b4ed2bac8abfa4}} 
+\index{hash.php@{hash.php}!MHASH\_TIGER@{MHASH\_TIGER}}
+\index{MHASH\_TIGER@{MHASH\_TIGER}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_TIGER}{MHASH\_TIGER}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+T\+I\+G\+ER 7}
+
+\mbox{\Hypertarget{hash_8php_ad6bf45f0252b70e34719a53bcd6a1381}\label{hash_8php_ad6bf45f0252b70e34719a53bcd6a1381}} 
+\index{hash.php@{hash.php}!MHASH\_TIGER128@{MHASH\_TIGER128}}
+\index{MHASH\_TIGER128@{MHASH\_TIGER128}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_TIGER128}{MHASH\_TIGER128}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+T\+I\+G\+E\+R128 14}
+
+\mbox{\Hypertarget{hash_8php_a4842156042f2f3eb11e39041eb6f3bb5}\label{hash_8php_a4842156042f2f3eb11e39041eb6f3bb5}} 
+\index{hash.php@{hash.php}!MHASH\_TIGER160@{MHASH\_TIGER160}}
+\index{MHASH\_TIGER160@{MHASH\_TIGER160}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_TIGER160}{MHASH\_TIGER160}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+T\+I\+G\+E\+R160 15}
+
+\mbox{\Hypertarget{hash_8php_aabfc395a365c6c5d52bfe314b25565f3}\label{hash_8php_aabfc395a365c6c5d52bfe314b25565f3}} 
+\index{hash.php@{hash.php}!MHASH\_WHIRLPOOL@{MHASH\_WHIRLPOOL}}
+\index{MHASH\_WHIRLPOOL@{MHASH\_WHIRLPOOL}!hash.php@{hash.php}}
+\doxysubsubsection{\texorpdfstring{MHASH\_WHIRLPOOL}{MHASH\_WHIRLPOOL}}
+{\footnotesize\ttfamily const M\+H\+A\+S\+H\+\_\+\+W\+H\+I\+R\+L\+P\+O\+OL 22}
+

@@ -4,7 +4,7 @@ var namespace_phelix_1_1_safaricom_s_d_p =
     [ "BulkSMS", "class_phelix_1_1_safaricom_s_d_p_1_1_bulk_s_m_s.html", "class_phelix_1_1_safaricom_s_d_p_1_1_bulk_s_m_s" ],
     [ "PremiumSMS", "class_phelix_1_1_safaricom_s_d_p_1_1_premium_s_m_s.html", "class_phelix_1_1_safaricom_s_d_p_1_1_premium_s_m_s" ],
     [ "Request", "class_phelix_1_1_safaricom_s_d_p_1_1_request.html", "class_phelix_1_1_safaricom_s_d_p_1_1_request" ],
-    [ "Response", "class_phelix_1_1_safaricom_s_d_p_1_1_response.html", null ],
     [ "SDP", "class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p.html", "class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p" ],
-    [ "Subscription", "class_phelix_1_1_safaricom_s_d_p_1_1_subscription.html", "class_phelix_1_1_safaricom_s_d_p_1_1_subscription" ]
+    [ "Subscription", "class_phelix_1_1_safaricom_s_d_p_1_1_subscription.html", "class_phelix_1_1_safaricom_s_d_p_1_1_subscription" ],
+    [ "Utils", "class_phelix_1_1_safaricom_s_d_p_1_1_utils.html", null ]
 ];

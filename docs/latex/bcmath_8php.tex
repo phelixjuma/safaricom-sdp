@@ -1,0 +1,332 @@
+\hypertarget{bcmath_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/bcmath/bcmath.php File Reference}
+\label{bcmath_8php}\index{vendor/jetbrains/phpstorm-\/stubs/bcmath/bcmath.php@{vendor/jetbrains/phpstorm-\/stubs/bcmath/bcmath.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{bcmath_8php_a87300a6ee36c815adea419bf2df7c500}{bcadd}} (\$left\+\_\+operand, \$right\+\_\+operand, \$scale=0)
+\item 
+\mbox{\hyperlink{bcmath_8php_a1e8db101efcc7f8419557b8b07be3bcf}{bcsub}} (\$left\+\_\+operand, \$right\+\_\+operand, \$scale=0)
+\item 
+\mbox{\hyperlink{bcmath_8php_ab0b30289636d92156616c2b159e4f594}{bcmul}} (\$left\+\_\+operand, \$right\+\_\+operand, \$scale=0)
+\item 
+\mbox{\hyperlink{bcmath_8php_a90e7520a684ebf7b466bccfa31a17d2e}{bcdiv}} (\$dividend, \$divisor, \$scale=0)
+\item 
+\mbox{\hyperlink{bcmath_8php_a514d36f073cb720bc057c77549b73234}{bcmod}} (\$dividend, \$divisor, \$scale=0)
+\item 
+\mbox{\hyperlink{bcmath_8php_a85c6540a3c26a37bc506d8ccaa7302ed}{bcpow}} (\$base, \$exponent, \$scale=0)
+\item 
+\mbox{\hyperlink{bcmath_8php_a36878287f3ce218820a3bd7bedc4ed1b}{bcsqrt}} (\$operand, \$scale=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{bcmath_8php_a7403a8f4244ac443938de8c6a71e6763}{bcscale}} (\$scale)
+\item 
+\mbox{\hyperlink{bcmath_8php_a98bdb2a822e56fc8cd3bf71f01576489}{bccomp}} (\$left\+\_\+operand, \$right\+\_\+operand, \$scale=0)
+\item 
+\mbox{\hyperlink{bcmath_8php_acfccbdbad69eb8c86f2c63169766475a}{bcpowmod}} (\$base, \$exponent, \$modulus, \$scale=0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{bcmath_8php_a87300a6ee36c815adea419bf2df7c500}\label{bcmath_8php_a87300a6ee36c815adea419bf2df7c500}} 
+\index{bcmath.php@{bcmath.php}!bcadd@{bcadd}}
+\index{bcadd@{bcadd}!bcmath.php@{bcmath.php}}
+\doxysubsubsection{\texorpdfstring{bcadd()}{bcadd()}}
+{\footnotesize\ttfamily bcadd (\begin{DoxyParamCaption}\item[{}]{\$left\+\_\+operand,  }\item[{}]{\$right\+\_\+operand,  }\item[{}]{\$scale = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Add two arbitrary precision numbers \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$left\+\_\+operand }} The left operand, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$right\+\_\+operand} & \\
+\hline
+\end{DoxyParams}
+The right operand, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$scale} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This optional parameter is used to set the number of digits after the decimal place in the result. If omitted, it will default to the scale set globally with the \mbox{\hyperlink{bcmath_8php_a7403a8f4244ac443938de8c6a71e6763}{bcscale()}} function, or fallback to 0 if this has not been set. 
+
+\begin{DoxyReturn}{Returns}
+string The sum of the two operands, as a string. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bcmath_8php_a98bdb2a822e56fc8cd3bf71f01576489}\label{bcmath_8php_a98bdb2a822e56fc8cd3bf71f01576489}} 
+\index{bcmath.php@{bcmath.php}!bccomp@{bccomp}}
+\index{bccomp@{bccomp}!bcmath.php@{bcmath.php}}
+\doxysubsubsection{\texorpdfstring{bccomp()}{bccomp()}}
+{\footnotesize\ttfamily bccomp (\begin{DoxyParamCaption}\item[{}]{\$left\+\_\+operand,  }\item[{}]{\$right\+\_\+operand,  }\item[{}]{\$scale = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Compare two arbitrary precision numbers \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$left\+\_\+operand }} The left operand, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$right\+\_\+operand} & \\
+\hline
+\end{DoxyParams}
+The right operand, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$scale} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The optional {\itshape scale} parameter is used to set the number of digits after the decimal place which will be used in the comparison. 
+
+\begin{DoxyReturn}{Returns}
+int 0 if the two operands are equal, 1 if the {\itshape left\+\_\+operand} is larger than the {\itshape right\+\_\+operand}, -\/1 otherwise. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bcmath_8php_a90e7520a684ebf7b466bccfa31a17d2e}\label{bcmath_8php_a90e7520a684ebf7b466bccfa31a17d2e}} 
+\index{bcmath.php@{bcmath.php}!bcdiv@{bcdiv}}
+\index{bcdiv@{bcdiv}!bcmath.php@{bcmath.php}}
+\doxysubsubsection{\texorpdfstring{bcdiv()}{bcdiv()}}
+{\footnotesize\ttfamily bcdiv (\begin{DoxyParamCaption}\item[{}]{\$dividend,  }\item[{}]{\$divisor,  }\item[{}]{\$scale = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Divide two arbitrary precision numbers \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$dividend }} The dividend, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$divisor} & \\
+\hline
+\end{DoxyParams}
+The divisor, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$scale} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This optional parameter is used to set the number of digits after the decimal place in the result. If omitted, it will default to the scale set globally with the \mbox{\hyperlink{bcmath_8php_a7403a8f4244ac443938de8c6a71e6763}{bcscale()}} function, or fallback to 0 if this has not been set. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$null the result of the division as a string, or {\bfseries{N\+U\+LL}} if {\itshape divisor} is 0. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bcmath_8php_a514d36f073cb720bc057c77549b73234}\label{bcmath_8php_a514d36f073cb720bc057c77549b73234}} 
+\index{bcmath.php@{bcmath.php}!bcmod@{bcmod}}
+\index{bcmod@{bcmod}!bcmath.php@{bcmath.php}}
+\doxysubsubsection{\texorpdfstring{bcmod()}{bcmod()}}
+{\footnotesize\ttfamily bcmod (\begin{DoxyParamCaption}\item[{}]{\$dividend,  }\item[{}]{\$divisor,  }\item[{}]{\$scale = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Get modulus of an arbitrary precision number \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$dividend }} The dividend, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$divisor} & \\
+\hline
+\end{DoxyParams}
+The divisor, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$scale} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This optional parameter is used to set the number of digits after the decimal place in the result. If omitted, it will default to the scale set globally with the \mbox{\hyperlink{bcmath_8php_a7403a8f4244ac443938de8c6a71e6763}{bcscale()}} function, or fallback to 0 if this has not been set. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$null the modulus as a string, or {\bfseries{N\+U\+LL}} if {\itshape divisor} is 0. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+
+7.\+2 scale param added, dividend/divisor no longer truncated 
+\end{DoxySince}
+\mbox{\Hypertarget{bcmath_8php_ab0b30289636d92156616c2b159e4f594}\label{bcmath_8php_ab0b30289636d92156616c2b159e4f594}} 
+\index{bcmath.php@{bcmath.php}!bcmul@{bcmul}}
+\index{bcmul@{bcmul}!bcmath.php@{bcmath.php}}
+\doxysubsubsection{\texorpdfstring{bcmul()}{bcmul()}}
+{\footnotesize\ttfamily bcmul (\begin{DoxyParamCaption}\item[{}]{\$left\+\_\+operand,  }\item[{}]{\$right\+\_\+operand,  }\item[{}]{\$scale = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Multiply two arbitrary precision numbers \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$left\+\_\+operand }} The left operand, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$right\+\_\+operand} & \\
+\hline
+\end{DoxyParams}
+The right operand, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$scale} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This optional parameter is used to set the number of digits after the decimal place in the result. If omitted, it will default to the scale set globally with the \mbox{\hyperlink{bcmath_8php_a7403a8f4244ac443938de8c6a71e6763}{bcscale()}} function, or fallback to 0 if this has not been set. 
+
+\begin{DoxyReturn}{Returns}
+string the result as a string. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bcmath_8php_a85c6540a3c26a37bc506d8ccaa7302ed}\label{bcmath_8php_a85c6540a3c26a37bc506d8ccaa7302ed}} 
+\index{bcmath.php@{bcmath.php}!bcpow@{bcpow}}
+\index{bcpow@{bcpow}!bcmath.php@{bcmath.php}}
+\doxysubsubsection{\texorpdfstring{bcpow()}{bcpow()}}
+{\footnotesize\ttfamily bcpow (\begin{DoxyParamCaption}\item[{}]{\$base,  }\item[{}]{\$exponent,  }\item[{}]{\$scale = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Raise an arbitrary precision number to another \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$base }} The base, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$exponent} & \\
+\hline
+\end{DoxyParams}
+The exponent, as a string. If the exponent is non-\/integral, it is truncated. The valid range of the exponent is platform specific, but is at least -\/2147483648 to 2147483647. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$scale} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This optional parameter is used to set the number of digits after the decimal place in the result. If omitted, it will default to the scale set globally with the \mbox{\hyperlink{bcmath_8php_a7403a8f4244ac443938de8c6a71e6763}{bcscale()}} function, or fallback to 0 if this has not been set. 
+
+\begin{DoxyReturn}{Returns}
+string the result as a string. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bcmath_8php_acfccbdbad69eb8c86f2c63169766475a}\label{bcmath_8php_acfccbdbad69eb8c86f2c63169766475a}} 
+\index{bcmath.php@{bcmath.php}!bcpowmod@{bcpowmod}}
+\index{bcpowmod@{bcpowmod}!bcmath.php@{bcmath.php}}
+\doxysubsubsection{\texorpdfstring{bcpowmod()}{bcpowmod()}}
+{\footnotesize\ttfamily bcpowmod (\begin{DoxyParamCaption}\item[{}]{\$base,  }\item[{}]{\$exponent,  }\item[{}]{\$modulus,  }\item[{}]{\$scale = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Raise an arbitrary precision number to another, reduced by a specified modulus \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$base }} The base, as an integral string (i.\+e. the scale has to be zero). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$exponent} & \\
+\hline
+\end{DoxyParams}
+The exponent, as an non-\/negative, integral string (i.\+e. the scale has to be zero). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$modulus} & \\
+\hline
+\end{DoxyParams}
+The modulus, as an integral string (i.\+e. the scale has to be zero). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$scale} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This optional parameter is used to set the number of digits after the decimal place in the result. If omitted, it will default to the scale set globally with the \mbox{\hyperlink{bcmath_8php_a7403a8f4244ac443938de8c6a71e6763}{bcscale()}} function, or fallback to 0 if this has not been set. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$null the result as a string, or {\bfseries{N\+U\+LL}} if {\itshape modulus} is 0 or {\itshape exponent} is negative. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bcmath_8php_a7403a8f4244ac443938de8c6a71e6763}\label{bcmath_8php_a7403a8f4244ac443938de8c6a71e6763}} 
+\index{bcmath.php@{bcmath.php}!bcscale@{bcscale}}
+\index{bcscale@{bcscale}!bcmath.php@{bcmath.php}}
+\doxysubsubsection{\texorpdfstring{bcscale()}{bcscale()}}
+{\footnotesize\ttfamily bcscale (\begin{DoxyParamCaption}\item[{}]{\$scale }\end{DoxyParamCaption})}
+
+Set default scale parameter for all bc math functions \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$scale }} The scale factor. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bcmath_8php_a36878287f3ce218820a3bd7bedc4ed1b}\label{bcmath_8php_a36878287f3ce218820a3bd7bedc4ed1b}} 
+\index{bcmath.php@{bcmath.php}!bcsqrt@{bcsqrt}}
+\index{bcsqrt@{bcsqrt}!bcmath.php@{bcmath.php}}
+\doxysubsubsection{\texorpdfstring{bcsqrt()}{bcsqrt()}}
+{\footnotesize\ttfamily bcsqrt (\begin{DoxyParamCaption}\item[{}]{\$operand,  }\item[{}]{\$scale = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Get the square root of an arbitrary precision number \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$operand }} The operand, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$scale} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the square root as a string, or {\bfseries{N\+U\+LL}} if {\itshape operand} is negative. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bcmath_8php_a1e8db101efcc7f8419557b8b07be3bcf}\label{bcmath_8php_a1e8db101efcc7f8419557b8b07be3bcf}} 
+\index{bcmath.php@{bcmath.php}!bcsub@{bcsub}}
+\index{bcsub@{bcsub}!bcmath.php@{bcmath.php}}
+\doxysubsubsection{\texorpdfstring{bcsub()}{bcsub()}}
+{\footnotesize\ttfamily bcsub (\begin{DoxyParamCaption}\item[{}]{\$left\+\_\+operand,  }\item[{}]{\$right\+\_\+operand,  }\item[{}]{\$scale = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Subtract one arbitrary precision number from another \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$left\+\_\+operand }} The left operand, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$right\+\_\+operand} & \\
+\hline
+\end{DoxyParams}
+The right operand, as a string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$scale} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This optional parameter is used to set the number of digits after the decimal place in the result. If omitted, it will default to the scale set globally with the \mbox{\hyperlink{bcmath_8php_a7403a8f4244ac443938de8c6a71e6763}{bcscale()}} function, or fallback to 0 if this has not been set. 
+
+\begin{DoxyReturn}{Returns}
+string The result of the subtraction, as a string. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}

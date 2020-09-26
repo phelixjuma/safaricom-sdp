@@ -1,0 +1,114 @@
+.TH "vendor/jetbrains/phpstorm-stubs/sysvsem/sysvsem.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/sysvsem/sysvsem.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsem_get\fP ($\fBkey\fP, $max_acquire=1, $perm=0666, $auto_release=1)"
+.br
+.ti -1c
+.RI "\fBsem_acquire\fP ($sem_identifier, $nowait=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBsem_release\fP ($sem_identifier)"
+.br
+.ti -1c
+.RI "\fBsem_remove\fP ($sem_identifier)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "sem_acquire ( $sem_identifier,  $nowait = \fC\fBfalse\fP\fP)"
+Acquire a semaphore \fBresource $sem_identifier \fP \fIsem_identifier\fP is a semaphore resource, obtained from \fBsem_get\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$nowait\fP [optional] 
+.RE
+.PP
+Specifies if the process shouldn't wait for the semaphore to be acquired\&. If set to \fItrue\fP, the call will return \fIfalse\fP immediately if a semaphore cannot be immediately acquired\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "sem_get ( $key,  $max_acquire = \fC1\fP,  $perm = \fC0666\fP,  $auto_release = \fC1\fP)"
+Get a semaphore id \fBint $key  int $max_acquire [optional] \fP The number of processes that can acquire the semaphore simultaneously is set to \fImax_acquire\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$perm\fP [optional] 
+.RE
+.PP
+The semaphore permissions\&. Actually this value is set only if the process finds it is the only process currently attached to the semaphore\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$auto_release\fP [optional] 
+.RE
+.PP
+Specifies if the semaphore should be automatically released on request shutdown\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a positive semaphore identifier on success, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "sem_release ( $sem_identifier)"
+Release a semaphore \fBresource $sem_identifier \fP \fBA\fP Semaphore resource handle as returned by \fBsem_get\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "sem_remove ( $sem_identifier)"
+Remove a semaphore \fBresource $sem_identifier \fP \fBA\fP semaphore resource identifier as returned by \fBsem_get\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

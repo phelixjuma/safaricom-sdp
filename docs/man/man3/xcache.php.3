@@ -1,0 +1,494 @@
+.TH "vendor/jetbrains/phpstorm-stubs/xcache/xcache.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/xcache/xcache.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBxcache_get\fP ($name)"
+.br
+.ti -1c
+.RI "\fBxcache_set\fP ($name, $value, $ttl=0)"
+.br
+.ti -1c
+.RI "\fBxcache_isset\fP ($name)"
+.br
+.ti -1c
+.RI "\fBxcache_unset\fP ($name)"
+.br
+.ti -1c
+.RI "\fBxcache_unset_by_prefix\fP ($prefix)"
+.br
+.ti -1c
+.RI "\fBxcache_inc\fP ($name, $value=1, $ttl=0)"
+.br
+.ti -1c
+.RI "\fBxcache_dec\fP ($name, $value=1, $ttl=0)"
+.br
+.ti -1c
+.RI "\fBxcache_count\fP ($type)"
+.br
+.ti -1c
+.RI "\fBxcache_info\fP ($type, $id)"
+.br
+.ti -1c
+.RI "\fBxcache_list\fP ($type, $id)"
+.br
+.ti -1c
+.RI "\fBxcache_clear_cache\fP ($type, $id=\-1)"
+.br
+.ti -1c
+.RI "\fBxcache_coredump\fP ($op_type)"
+.br
+.ti -1c
+.RI "\fBxcache_coverager_decode\fP ($data)"
+.br
+.ti -1c
+.RI "\fBxcache_coverager_start\fP ($clean=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBxcache_coverager_stop\fP ($clean=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBxcache_coverager_get\fP ($clean=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBxcache_asm\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBxcache_dasm_file\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBxcache_dasm_string\fP ($code)"
+.br
+.ti -1c
+.RI "\fBxcache_encode\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBxcache_decode\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBxcache_get_op_type\fP ($op_type)"
+.br
+.ti -1c
+.RI "\fBxcache_get_data_type\fP ($type)"
+.br
+.ti -1c
+.RI "\fBxcache_get_opcode\fP ($opcode)"
+.br
+.ti -1c
+.RI "\fBxcache_get_op_spec\fP ($op_type)"
+.br
+.ti -1c
+.RI "\fBxcache_get_opcode_spec\fP ($opcode)"
+.br
+.ti -1c
+.RI "\fBxcache_is_autoglobal\fP ($name)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "xcache_asm ( $filename)"
+Opcode Functions 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "xcache_clear_cache ( $type,  $id = \fC\-1\fP)"
+Clear cache by id on specified cache type
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP 
+.br
+\fI$id\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "xcache_coredump ( $op_type)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$op_type\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "xcache_count ( $type)"
+Administrator Functions Return count of cache on specified cache type
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "xcache_coverager_decode ( $data)"
+Coverager Functions 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SS "xcache_coverager_get ( $clean = \fC\fBfalse\fP\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$clean\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SS "xcache_coverager_start ( $clean = \fC\fBtrue\fP\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$clean\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "xcache_coverager_stop ( $clean = \fC\fBfalse\fP\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$clean\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "xcache_dasm_file ( $filename)"
+Disassemble file into opcode array by filename
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "xcache_dasm_string ( $code)"
+Disassemble php code into opcode array
+.PP
+\fBParameters\fP
+.RS 4
+\fI$code\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "xcache_dec ( $name,  $value = \fC1\fP,  $ttl = \fC0\fP)"
+Decrease an int counter in cache by specified name, create it if not exists
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.br
+\fI$value\fP 
+.br
+\fI$ttl\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "xcache_decode ( $filename)"
+Decode(load) opcode from XCache encoded format file
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "xcache_encode ( $filename)"
+Encode php file into XCache opcode encoded format
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "xcache_get ( $name)"
+Common Used Functions Get cached data by specified name
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP Key name 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+mixed 
+.RE
+.PP
+
+.SS "xcache_get_data_type ( $type)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "xcache_get_op_spec ( $op_type)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$op_type\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "xcache_get_op_type ( $op_type)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$op_type\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "xcache_get_opcode ( $opcode)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$opcode\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "xcache_get_opcode_spec ( $opcode)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$opcode\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "xcache_inc ( $name,  $value = \fC1\fP,  $ttl = \fC0\fP)"
+Increase an int counter in cache by specified name, create it if not exists
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.br
+\fI$value\fP 
+.br
+\fI$ttl\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "xcache_info ( $type,  $id)"
+Get cache info by id on specified cache type
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP 
+.br
+\fI$id\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SS "xcache_is_autoglobal ( $name)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "xcache_isset ( $name)"
+Check if an entry exists in cache by specified name
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP Key name 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool TRUE if key exists, FALSE otherwise 
+.RE
+.PP
+
+.SS "xcache_list ( $type,  $id)"
+Get cache entries list by id on specified cache type
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP 
+.br
+\fI$id\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SS "xcache_set ( $name,  $value,  $ttl = \fC0\fP)"
+Store data to cache by specified name
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP Key name 
+.br
+\fI$value\fP Value to store 
+.br
+\fI$ttl\fP TTL in seconds 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool TRUE on success, FALSE otherwise 
+.RE
+.PP
+
+.SS "xcache_unset ( $name)"
+Unset existing data in cache by specified name
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP Key name 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "xcache_unset_by_prefix ( $prefix)"
+Unset existing data in cache by specified prefix
+.PP
+\fBParameters\fP
+.RS 4
+\fI$prefix\fP Keys' prefix 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

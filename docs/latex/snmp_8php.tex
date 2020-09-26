@@ -1,0 +1,1488 @@
+\hypertarget{snmp_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/snmp/snmp.php File Reference}
+\label{snmp_8php}\index{vendor/jetbrains/phpstorm-\/stubs/snmp/snmp.php@{vendor/jetbrains/phpstorm-\/stubs/snmp/snmp.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}}
+\item 
+class \mbox{\hyperlink{class_s_n_m_p_exception}{S\+N\+M\+P\+Exception}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{snmp_8php_a371ad67b253c66995ee3f45dfad78ec4}{snmpget}} (\$hostname, \$community, \$object\+\_\+id, \$timeout=1000000, \$retries=5)
+\item 
+\mbox{\hyperlink{snmp_8php_a5f2befad6f81afb30c706ec8016fc4f7}{snmpgetnext}} (\$host, \$community, \$object\+\_\+id, \$timeout=1000000, \$retries=5)
+\item 
+\mbox{\hyperlink{snmp_8php_af07e27dd2fb759418e6c5099ceb5c4f3}{snmpwalk}} (\$hostname, \$community, \$object\+\_\+id, \$timeout=1000000, \$retries=5)
+\item 
+\mbox{\hyperlink{snmp_8php_a7664924d428d1f86a3aaa505ad639991}{snmprealwalk}} (\$host, \$community, \$object\+\_\+id, \$timeout=1000000, \$retries=5)
+\item 
+\mbox{\hyperlink{snmp_8php_a6255349821eb220f2cb23cb83fd859ba}{snmpwalkoid}} (\$hostname, \$community, \$object\+\_\+id, \$timeout=1000000, \$retries=5)
+\item 
+\mbox{\hyperlink{snmp_8php_ad467441675250708975b34318bff6718}{snmpset}} (\$host, \$community, \$object\+\_\+id, \$type, \$value, \$timeout=1000000, \$retries=5)
+\item 
+\mbox{\hyperlink{snmp_8php_a3324dcc1cca51cbac38e5494dac3e19c}{snmp\+\_\+get\+\_\+quick\+\_\+print}} ()
+\item 
+\mbox{\hyperlink{snmp_8php_ae34c216b15d84d946f65fb2164541438}{snmp\+\_\+set\+\_\+quick\+\_\+print}} (\$quick\+\_\+print)
+\item 
+\mbox{\hyperlink{snmp_8php_ad84ce007f10b372ea912c0c10dfca589}{snmp\+\_\+set\+\_\+enum\+\_\+print}} (\$enum\+\_\+print)
+\item 
+\mbox{\hyperlink{snmp_8php_a6506ecb5243d072c5dc191a811368b37}{snmp\+\_\+set\+\_\+oid\+\_\+output\+\_\+format}} (\$oid\+\_\+format=\mbox{\hyperlink{snmp_8php_aa9b8f1c49b0cec82920403f332c6bbe2}{S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+M\+O\+D\+U\+LE}})
+\item 
+\mbox{\hyperlink{snmp_8php_aa6e5f1bf12d596080b1bfb9275e2399f}{snmp\+\_\+set\+\_\+oid\+\_\+numeric\+\_\+print}} (\$oid\+\_\+format)
+\item 
+\mbox{\hyperlink{snmp_8php_af4d241c7637c6420561958f4eb75049e}{snmp2\+\_\+get}} (\$host, \$community, \$object\+\_\+id, \$timeout=1000000, \$retries=5)
+\item 
+\mbox{\hyperlink{snmp_8php_a8ad8c0cf0c097998ca278b76f460ccff}{snmp2\+\_\+getnext}} (\$host, \$community, \$object\+\_\+id, \$timeout=1000000, \$retries=5)
+\item 
+\mbox{\hyperlink{snmp_8php_a9b6aa8967f377d9d6843844b5b91a025}{snmp2\+\_\+walk}} (\$host, \$community, \$object\+\_\+id, \$timeout=1000000, \$retries=5)
+\item 
+\mbox{\hyperlink{snmp_8php_adadcd4f9ba62b04f24e2f368e7c4a8bb}{snmp2\+\_\+real\+\_\+walk}} (\$host, \$community, \$object\+\_\+id, \$timeout=1000000, \$retries=5)
+\item 
+\mbox{\hyperlink{snmp_8php_aebc4f2c0de3d90c92b186df1d55d7ebb}{snmp2\+\_\+set}} (\$host, \$community, \$object\+\_\+id, \$type, \$value, \$timeout=1000000, \$retries=5)
+\item 
+\mbox{\hyperlink{snmp_8php_a546d6855f011ae1e90bbd394cb8e2e1f}{snmp3\+\_\+get}} (\$host, \$sec\+\_\+name, \$sec\+\_\+level, \$auth\+\_\+protocol, \$auth\+\_\+passphrase, \$priv\+\_\+protocol, \$priv\+\_\+passphrase, \$object\+\_\+id, \$timeout=1000000, \$retries=5)
+\item 
+\mbox{\hyperlink{snmp_8php_a714efa3ee81580e415b1f45b89fb3e2b}{snmp3\+\_\+getnext}} (\$host, \$sec\+\_\+name, \$sec\+\_\+level, \$auth\+\_\+protocol, \$auth\+\_\+passphrase, \$priv\+\_\+protocol, \$priv\+\_\+passphrase, \$object\+\_\+id, \$timeout=1000000, \$retries=5)
+\item 
+\mbox{\hyperlink{snmp_8php_a7a8f78e01c6625312346b47585de962b}{snmp3\+\_\+walk}} (\$host, \$sec\+\_\+name, \$sec\+\_\+level, \$auth\+\_\+protocol, \$auth\+\_\+passphrase, \$priv\+\_\+protocol, \$priv\+\_\+passphrase, \$object\+\_\+id, \$timeout=1000000, \$retries=5)
+\item 
+\mbox{\hyperlink{snmp_8php_afcd466d45c25cb65964574f7432552cb}{snmp3\+\_\+real\+\_\+walk}} (\$host, \$sec\+\_\+name, \$sec\+\_\+level, \$auth\+\_\+protocol, \$auth\+\_\+passphrase, \$priv\+\_\+protocol, \$priv\+\_\+passphrase, \$object\+\_\+id, \$timeout=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$retries=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{snmp_8php_a8118eca154089bdea0c114ef8fcceffb}{snmp3\+\_\+set}} (\$host, \$sec\+\_\+name, \$sec\+\_\+level, \$auth\+\_\+protocol, \$auth\+\_\+passphrase, \$priv\+\_\+protocol, \$priv\+\_\+passphrase, \$object\+\_\+id, \$type, \$value, \$timeout=1000000, \$retries=5)
+\item 
+\mbox{\hyperlink{snmp_8php_a5d714b59f57841f64410915f47aca929}{snmp\+\_\+set\+\_\+valueretrieval}} (\$method)
+\item 
+\mbox{\hyperlink{snmp_8php_ac0e8750fbe0f9223111c1b4d2ae1e8dc}{snmp\+\_\+get\+\_\+valueretrieval}} ()
+\item 
+\mbox{\hyperlink{snmp_8php_a9d531c2b778d0f6970ac5738d078288d}{snmp\+\_\+read\+\_\+mib}} (\$filename)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{snmp_8php_a852a68bf302b2d90608263e8751a1a53}{S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+S\+U\+F\+F\+IX}} 1
+\item 
+const \mbox{\hyperlink{snmp_8php_aa9b8f1c49b0cec82920403f332c6bbe2}{S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+M\+O\+D\+U\+LE}} 2
+\item 
+const \mbox{\hyperlink{snmp_8php_a1dc5f238a8c6f9933bfff47930ff32fb}{S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+F\+U\+LL}} 3
+\item 
+const \mbox{\hyperlink{snmp_8php_a5f5584242fda544a79b1bf72ed63cf59}{S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+N\+U\+M\+E\+R\+IC}} 4
+\item 
+const \mbox{\hyperlink{snmp_8php_a78dd6612090943318d9d86a4b5b6059d}{S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+U\+CD}} 5
+\item 
+const \mbox{\hyperlink{snmp_8php_aadabf22fd44195ea87f08a9dd756e187}{S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+N\+O\+NE}} 6
+\item 
+const \mbox{\hyperlink{snmp_8php_a253aa5c7ab9ad70b2f0e574abd364026}{S\+N\+M\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+I\+B\+R\+A\+RY}} 0
+\item 
+const \mbox{\hyperlink{snmp_8php_a91161b211289698a22e3cf835270ca7a}{S\+N\+M\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+P\+L\+A\+IN}} 1
+\item 
+const \mbox{\hyperlink{snmp_8php_ae9f90c8951b1793b091e04ba366c5f46}{S\+N\+M\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+O\+B\+J\+E\+CT}} 2
+\item 
+const \mbox{\hyperlink{snmp_8php_ad7195b00c14321aed2c463e14b421677}{S\+N\+M\+P\+\_\+\+B\+I\+T\+\_\+\+S\+TR}} 3
+\item 
+const \mbox{\hyperlink{snmp_8php_a45d6f96a6f6c62f169e5b364e34dab13}{S\+N\+M\+P\+\_\+\+O\+C\+T\+E\+T\+\_\+\+S\+TR}} 4
+\item 
+const \mbox{\hyperlink{snmp_8php_af513d6ffd7d4f6a762a8aed6e51c9dd9}{S\+N\+M\+P\+\_\+\+O\+P\+A\+Q\+UE}} 68
+\item 
+const \mbox{\hyperlink{snmp_8php_aefc464b25f0d4b07ebf57bc3f7fd159b}{S\+N\+M\+P\+\_\+\+N\+U\+LL}} 5
+\item 
+const \mbox{\hyperlink{snmp_8php_ad7c9ee3aad7fcc27a37214a20e94de1d}{S\+N\+M\+P\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+ID}} 6
+\item 
+const \mbox{\hyperlink{snmp_8php_a27035fd318bd589c601444c0fee6a88f}{S\+N\+M\+P\+\_\+\+I\+P\+A\+D\+D\+R\+E\+SS}} 64
+\item 
+const \mbox{\hyperlink{snmp_8php_a85558a716fc66d5a54033a6646991651}{S\+N\+M\+P\+\_\+\+C\+O\+U\+N\+T\+ER}} 66
+\item 
+const \mbox{\hyperlink{snmp_8php_a93c5b44f1da5bdd0042ad395c33646eb}{S\+N\+M\+P\+\_\+\+U\+N\+S\+I\+G\+N\+ED}} 66
+\item 
+const \mbox{\hyperlink{snmp_8php_aa3e66e4731fed4935bbd8ebda25c7530}{S\+N\+M\+P\+\_\+\+T\+I\+M\+E\+T\+I\+C\+KS}} 67
+\item 
+const \mbox{\hyperlink{snmp_8php_a1f7864e7dd4ed8c65b0cb6a79ea71716}{S\+N\+M\+P\+\_\+\+U\+I\+N\+T\+E\+G\+ER}} 71
+\item 
+const \mbox{\hyperlink{snmp_8php_aa0246a55ce7762d7a0cabd9b7537b02c}{S\+N\+M\+P\+\_\+\+I\+N\+T\+E\+G\+ER}} 2
+\item 
+const \mbox{\hyperlink{snmp_8php_ac34560cb0df6f54df4cba1e7331d98ce}{S\+N\+M\+P\+\_\+\+C\+O\+U\+N\+T\+E\+R64}} 70
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{snmp_8php_af4d241c7637c6420561958f4eb75049e}\label{snmp_8php_af4d241c7637c6420561958f4eb75049e}} 
+\index{snmp.php@{snmp.php}!snmp2\_get@{snmp2\_get}}
+\index{snmp2\_get@{snmp2\_get}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp2\_get()}{snmp2\_get()}}
+{\footnotesize\ttfamily snmp2\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$community,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$timeout = {\ttfamily 1000000},  }\item[{}]{\$retries = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Fetch an \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }} The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$community} & \\
+\hline
+\end{DoxyParams}
+The read community. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object value on success or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_a8ad8c0cf0c097998ca278b76f460ccff}\label{snmp_8php_a8ad8c0cf0c097998ca278b76f460ccff}} 
+\index{snmp.php@{snmp.php}!snmp2\_getnext@{snmp2\_getnext}}
+\index{snmp2\_getnext@{snmp2\_getnext}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp2\_getnext()}{snmp2\_getnext()}}
+{\footnotesize\ttfamily snmp2\+\_\+getnext (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$community,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$timeout = {\ttfamily 1000000},  }\item[{}]{\$retries = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Fetch the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object which follows the given object id \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }} The hostname of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent (server). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$community} & \\
+\hline
+\end{DoxyParams}
+The read community. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object id which precedes the wanted one. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object value on success or {\bfseries{F\+A\+L\+SE}} on error. In case of an error, an E\+\_\+\+W\+A\+R\+N\+I\+NG message is shown. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_adadcd4f9ba62b04f24e2f368e7c4a8bb}\label{snmp_8php_adadcd4f9ba62b04f24e2f368e7c4a8bb}} 
+\index{snmp.php@{snmp.php}!snmp2\_real\_walk@{snmp2\_real\_walk}}
+\index{snmp2\_real\_walk@{snmp2\_real\_walk}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp2\_real\_walk()}{snmp2\_real\_walk()}}
+{\footnotesize\ttfamily snmp2\+\_\+real\+\_\+walk (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$community,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$timeout = {\ttfamily 1000000},  }\item[{}]{\$retries = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Return all objects including their respective object ID within the specified one \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }} The hostname of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent (server). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$community} & \\
+\hline
+\end{DoxyParams}
+The read community. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object id which precedes the wanted one. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur. 
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false an associative array of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object ids and their values on success or {\bfseries{F\+A\+L\+SE}} on error. In case of an error, an E\+\_\+\+W\+A\+R\+N\+I\+NG message is shown. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_aebc4f2c0de3d90c92b186df1d55d7ebb}\label{snmp_8php_aebc4f2c0de3d90c92b186df1d55d7ebb}} 
+\index{snmp.php@{snmp.php}!snmp2\_set@{snmp2\_set}}
+\index{snmp2\_set@{snmp2\_set}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp2\_set()}{snmp2\_set()}}
+{\footnotesize\ttfamily snmp2\+\_\+set (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$community,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$type,  }\item[{}]{\$value,  }\item[{}]{\$timeout = {\ttfamily 1000000},  }\item[{}]{\$retries = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Set the value of an \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }} The hostname of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent (server). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$community} & \\
+\hline
+\end{DoxyParams}
+The write community. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & The M\+IB defines the type of each object id. It has to be specified as a single character from the below list. \\
+\hline
+\end{DoxyParams}
+types 
+
+=
+
+The type is taken from the M\+IB 
+
+i
+
+I\+N\+T\+E\+G\+ER  
+
+u
+
+I\+N\+T\+E\+G\+ER 
+
+s
+
+S\+T\+R\+I\+NG 
+
+x
+
+H\+EX S\+T\+R\+I\+NG 
+
+d
+
+D\+E\+C\+I\+M\+AL S\+T\+R\+I\+NG 
+
+n
+
+N\+U\+L\+L\+O\+BJ 
+
+o
+
+O\+B\+J\+ID 
+
+t
+
+T\+I\+M\+E\+T\+I\+C\+KS 
+
+a
+
+I\+P\+A\+D\+D\+R\+E\+SS 
+
+b
+
+B\+I\+TS 
+
+If {\bfseries{O\+P\+A\+Q\+U\+E\+\_\+\+S\+P\+E\+C\+I\+A\+L\+\_\+\+T\+Y\+P\+ES}} was defined while compiling the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} library, the following are also valid\+: 
+
+types 
+
+U
+
+unsigned int64 
+
+I
+
+signed int64 
+
+F
+
+float 
+
+D
+
+double 
+
+Most of these will use the obvious corresponding A\+S\+N.\+1 type. \&\#x00027;s\&\#x00027;, \&\#x00027;x\&\#x00027;, \&\#x00027;d\&\#x00027; and \&\#x00027;b\&\#x00027; are all different ways of specifying an O\+C\+T\+ET S\+T\+R\+I\+NG value, and the \&\#x00027;u\&\#x00027; unsigned type is also used for handling Gauge32 values. 
+
+If the M\+I\+B-\/\+Files are loaded by into the M\+IB Tree with \char`\"{}snmp\+\_\+read\+\_\+mib\char`\"{} or by specifying it in the libsnmp config, \&\#x00027;=\&\#x00027; may be used as the {\itshape type} parameter for all object ids as the type can then be automatically read from the M\+IB. 
+
+Note that there are two ways to set a variable of the type B\+I\+TS like e.\+g. \char`\"{}\+S\+Y\+N\+T\+A\+X B\+I\+T\+S \{telnet(0), ftp(1), http(2), icmp(3), snmp(4), ssh(5), https(6)\}\char`\"{}\+: 
+
+Using type \char`\"{}b\char`\"{} and a list of bit numbers. This method is not recommended since G\+ET query for the same O\+ID would return e.\+g. 0x\+F8. Using type \char`\"{}x\char`\"{} and a hex number but without(!) the usual \char`\"{}0x\char`\"{} prefix. See examples section for more details. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+The new value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+
+
+If the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} host rejects the data type, an E\+\_\+\+W\+A\+R\+N\+I\+NG message like \char`\"{}\+Warning\+: Error in packet. Reason\+: (bad\+Value) The value given has the wrong type or length.\char`\"{} is shown. If an unknown or invalid O\+ID is specified the warning probably reads \char`\"{}\+Could not add variable\char`\"{}. \begin{DoxySince}{Since}
+5.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_a9b6aa8967f377d9d6843844b5b91a025}\label{snmp_8php_a9b6aa8967f377d9d6843844b5b91a025}} 
+\index{snmp.php@{snmp.php}!snmp2\_walk@{snmp2\_walk}}
+\index{snmp2\_walk@{snmp2\_walk}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp2\_walk()}{snmp2\_walk()}}
+{\footnotesize\ttfamily snmp2\+\_\+walk (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$community,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$timeout = {\ttfamily 1000000},  }\item[{}]{\$retries = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Fetch all the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} objects from an agent \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }} The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent (server). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$community} & \\
+\hline
+\end{DoxyParams}
+The read community. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+If {\bfseries{N\+U\+LL}}, {\itshape object\+\_\+id} is taken as the root of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} objects tree and all objects under that tree are returned as an array. 
+
+If {\itshape object\+\_\+id} is specified, all the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} objects below that {\itshape object\+\_\+id} are returned. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur. 
+
+\begin{DoxyReturn}{Returns}
+array an array of \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object values starting from the {\itshape object\+\_\+id} as root or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_a546d6855f011ae1e90bbd394cb8e2e1f}\label{snmp_8php_a546d6855f011ae1e90bbd394cb8e2e1f}} 
+\index{snmp.php@{snmp.php}!snmp3\_get@{snmp3\_get}}
+\index{snmp3\_get@{snmp3\_get}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp3\_get()}{snmp3\_get()}}
+{\footnotesize\ttfamily snmp3\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$sec\+\_\+name,  }\item[{}]{\$sec\+\_\+level,  }\item[{}]{\$auth\+\_\+protocol,  }\item[{}]{\$auth\+\_\+passphrase,  }\item[{}]{\$priv\+\_\+protocol,  }\item[{}]{\$priv\+\_\+passphrase,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$timeout = {\ttfamily 1000000},  }\item[{}]{\$retries = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Fetch an \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }} The hostname of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent (server). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sec\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+the security name, usually some kind of username 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sec\+\_\+level} & \\
+\hline
+\end{DoxyParams}
+the security level (no\+Auth\+No\+Priv$\vert$auth\+No\+Priv$\vert$auth\+Priv) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$auth\+\_\+protocol} & \\
+\hline
+\end{DoxyParams}
+the authentication protocol (M\+D5 or S\+HA) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$auth\+\_\+passphrase} & \\
+\hline
+\end{DoxyParams}
+the authentication pass phrase 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$priv\+\_\+protocol} & \\
+\hline
+\end{DoxyParams}
+the privacy protocol (D\+ES or A\+ES) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$priv\+\_\+passphrase} & \\
+\hline
+\end{DoxyParams}
+the privacy pass phrase 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object value on success or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_a714efa3ee81580e415b1f45b89fb3e2b}\label{snmp_8php_a714efa3ee81580e415b1f45b89fb3e2b}} 
+\index{snmp.php@{snmp.php}!snmp3\_getnext@{snmp3\_getnext}}
+\index{snmp3\_getnext@{snmp3\_getnext}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp3\_getnext()}{snmp3\_getnext()}}
+{\footnotesize\ttfamily snmp3\+\_\+getnext (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$sec\+\_\+name,  }\item[{}]{\$sec\+\_\+level,  }\item[{}]{\$auth\+\_\+protocol,  }\item[{}]{\$auth\+\_\+passphrase,  }\item[{}]{\$priv\+\_\+protocol,  }\item[{}]{\$priv\+\_\+passphrase,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$timeout = {\ttfamily 1000000},  }\item[{}]{\$retries = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Fetch the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object which follows the given object id \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }} The hostname of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent (server). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sec\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+the security name, usually some kind of username 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sec\+\_\+level} & \\
+\hline
+\end{DoxyParams}
+the security level (no\+Auth\+No\+Priv$\vert$auth\+No\+Priv$\vert$auth\+Priv) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$auth\+\_\+protocol} & \\
+\hline
+\end{DoxyParams}
+the authentication protocol (M\+D5 or S\+HA) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$auth\+\_\+passphrase} & \\
+\hline
+\end{DoxyParams}
+the authentication pass phrase 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$priv\+\_\+protocol} & \\
+\hline
+\end{DoxyParams}
+the privacy protocol (D\+ES or A\+ES) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$priv\+\_\+passphrase} & \\
+\hline
+\end{DoxyParams}
+the privacy pass phrase 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object value on success or {\bfseries{F\+A\+L\+SE}} on error. In case of an error, an E\+\_\+\+W\+A\+R\+N\+I\+NG message is shown. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_afcd466d45c25cb65964574f7432552cb}\label{snmp_8php_afcd466d45c25cb65964574f7432552cb}} 
+\index{snmp.php@{snmp.php}!snmp3\_real\_walk@{snmp3\_real\_walk}}
+\index{snmp3\_real\_walk@{snmp3\_real\_walk}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp3\_real\_walk()}{snmp3\_real\_walk()}}
+{\footnotesize\ttfamily snmp3\+\_\+real\+\_\+walk (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$sec\+\_\+name,  }\item[{}]{\$sec\+\_\+level,  }\item[{}]{\$auth\+\_\+protocol,  }\item[{}]{\$auth\+\_\+passphrase,  }\item[{}]{\$priv\+\_\+protocol,  }\item[{}]{\$priv\+\_\+passphrase,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$timeout = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$retries = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Return all objects including their respective object ID within the specified one \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }} The hostname of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent (server). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sec\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+the security name, usually some kind of username 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sec\+\_\+level} & \\
+\hline
+\end{DoxyParams}
+the security level (no\+Auth\+No\+Priv$\vert$auth\+No\+Priv$\vert$auth\+Priv) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$auth\+\_\+protocol} & \\
+\hline
+\end{DoxyParams}
+the authentication protocol (M\+D5 or S\+HA) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$auth\+\_\+passphrase} & \\
+\hline
+\end{DoxyParams}
+the authentication pass phrase 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$priv\+\_\+protocol} & \\
+\hline
+\end{DoxyParams}
+the privacy protocol (D\+ES or A\+ES) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$priv\+\_\+passphrase} & \\
+\hline
+\end{DoxyParams}
+the privacy pass phrase 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur. 
+
+\begin{DoxyReturn}{Returns}
+array an associative array of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object ids and their values on success or {\bfseries{F\+A\+L\+SE}} on error. In case of an error, an E\+\_\+\+W\+A\+R\+N\+I\+NG message is shown. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_a8118eca154089bdea0c114ef8fcceffb}\label{snmp_8php_a8118eca154089bdea0c114ef8fcceffb}} 
+\index{snmp.php@{snmp.php}!snmp3\_set@{snmp3\_set}}
+\index{snmp3\_set@{snmp3\_set}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp3\_set()}{snmp3\_set()}}
+{\footnotesize\ttfamily snmp3\+\_\+set (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$sec\+\_\+name,  }\item[{}]{\$sec\+\_\+level,  }\item[{}]{\$auth\+\_\+protocol,  }\item[{}]{\$auth\+\_\+passphrase,  }\item[{}]{\$priv\+\_\+protocol,  }\item[{}]{\$priv\+\_\+passphrase,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$type,  }\item[{}]{\$value,  }\item[{}]{\$timeout = {\ttfamily 1000000},  }\item[{}]{\$retries = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Set the value of an \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }} The hostname of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent (server). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sec\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+the security name, usually some kind of username 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sec\+\_\+level} & \\
+\hline
+\end{DoxyParams}
+the security level (no\+Auth\+No\+Priv$\vert$auth\+No\+Priv$\vert$auth\+Priv) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$auth\+\_\+protocol} & \\
+\hline
+\end{DoxyParams}
+the authentication protocol (M\+D5 or S\+HA) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$auth\+\_\+passphrase} & \\
+\hline
+\end{DoxyParams}
+the authentication pass phrase 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$priv\+\_\+protocol} & \\
+\hline
+\end{DoxyParams}
+the privacy protocol (D\+ES or A\+ES) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$priv\+\_\+passphrase} & \\
+\hline
+\end{DoxyParams}
+the privacy pass phrase 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & The M\+IB defines the type of each object id. It has to be specified as a single character from the below list. \\
+\hline
+\end{DoxyParams}
+types 
+
+=
+
+The type is taken from the M\+IB 
+
+i
+
+I\+N\+T\+E\+G\+ER  
+
+u
+
+I\+N\+T\+E\+G\+ER 
+
+s
+
+S\+T\+R\+I\+NG 
+
+x
+
+H\+EX S\+T\+R\+I\+NG 
+
+d
+
+D\+E\+C\+I\+M\+AL S\+T\+R\+I\+NG 
+
+n
+
+N\+U\+L\+L\+O\+BJ 
+
+o
+
+O\+B\+J\+ID 
+
+t
+
+T\+I\+M\+E\+T\+I\+C\+KS 
+
+a
+
+I\+P\+A\+D\+D\+R\+E\+SS 
+
+b
+
+B\+I\+TS 
+
+If {\bfseries{O\+P\+A\+Q\+U\+E\+\_\+\+S\+P\+E\+C\+I\+A\+L\+\_\+\+T\+Y\+P\+ES}} was defined while compiling the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} library, the following are also valid\+: 
+
+types 
+
+U
+
+unsigned int64 
+
+I
+
+signed int64 
+
+F
+
+float 
+
+D
+
+double 
+
+Most of these will use the obvious corresponding A\+S\+N.\+1 type. \&\#x00027;s\&\#x00027;, \&\#x00027;x\&\#x00027;, \&\#x00027;d\&\#x00027; and \&\#x00027;b\&\#x00027; are all different ways of specifying an O\+C\+T\+ET S\+T\+R\+I\+NG value, and the \&\#x00027;u\&\#x00027; unsigned type is also used for handling Gauge32 values. 
+
+If the M\+I\+B-\/\+Files are loaded by into the M\+IB Tree with \char`\"{}snmp\+\_\+read\+\_\+mib\char`\"{} or by specifying it in the libsnmp config, \&\#x00027;=\&\#x00027; may be used as the {\itshape type} parameter for all object ids as the type can then be automatically read from the M\+IB. 
+
+Note that there are two ways to set a variable of the type B\+I\+TS like e.\+g. \char`\"{}\+S\+Y\+N\+T\+A\+X B\+I\+T\+S \{telnet(0), ftp(1), http(2), icmp(3), snmp(4), ssh(5), https(6)\}\char`\"{}\+: 
+
+Using type \char`\"{}b\char`\"{} and a list of bit numbers. This method is not recommended since G\+ET query for the same O\+ID would return e.\+g. 0x\+F8. Using type \char`\"{}x\char`\"{} and a hex number but without(!) the usual \char`\"{}0x\char`\"{} prefix. See examples section for more details. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+The new value 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+
+
+If the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} host rejects the data type, an E\+\_\+\+W\+A\+R\+N\+I\+NG message like \char`\"{}\+Warning\+: Error in packet. Reason\+: (bad\+Value) The value given has the wrong type or length.\char`\"{} is shown. If an unknown or invalid O\+ID is specified the warning probably reads \char`\"{}\+Could not add variable\char`\"{}. \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_a7a8f78e01c6625312346b47585de962b}\label{snmp_8php_a7a8f78e01c6625312346b47585de962b}} 
+\index{snmp.php@{snmp.php}!snmp3\_walk@{snmp3\_walk}}
+\index{snmp3\_walk@{snmp3\_walk}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp3\_walk()}{snmp3\_walk()}}
+{\footnotesize\ttfamily snmp3\+\_\+walk (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$sec\+\_\+name,  }\item[{}]{\$sec\+\_\+level,  }\item[{}]{\$auth\+\_\+protocol,  }\item[{}]{\$auth\+\_\+passphrase,  }\item[{}]{\$priv\+\_\+protocol,  }\item[{}]{\$priv\+\_\+passphrase,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$timeout = {\ttfamily 1000000},  }\item[{}]{\$retries = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Fetch all the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} objects from an agent \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }} The hostname of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent (server). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sec\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+the security name, usually some kind of username 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sec\+\_\+level} & \\
+\hline
+\end{DoxyParams}
+the security level (no\+Auth\+No\+Priv$\vert$auth\+No\+Priv$\vert$auth\+Priv) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$auth\+\_\+protocol} & \\
+\hline
+\end{DoxyParams}
+the authentication protocol (M\+D5 or S\+HA) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$auth\+\_\+passphrase} & \\
+\hline
+\end{DoxyParams}
+the authentication pass phrase 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$priv\+\_\+protocol} & \\
+\hline
+\end{DoxyParams}
+the privacy protocol (D\+ES or A\+ES) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$priv\+\_\+passphrase} & \\
+\hline
+\end{DoxyParams}
+the privacy pass phrase 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+If {\bfseries{N\+U\+LL}}, {\itshape object\+\_\+id} is taken as the root of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} objects tree and all objects under that tree are returned as an array. 
+
+If {\itshape object\+\_\+id} is specified, all the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} objects below that {\itshape object\+\_\+id} are returned. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur. 
+
+\begin{DoxyReturn}{Returns}
+array an array of \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object values starting from the {\itshape object\+\_\+id} as root or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_a3324dcc1cca51cbac38e5494dac3e19c}\label{snmp_8php_a3324dcc1cca51cbac38e5494dac3e19c}} 
+\index{snmp.php@{snmp.php}!snmp\_get\_quick\_print@{snmp\_get\_quick\_print}}
+\index{snmp\_get\_quick\_print@{snmp\_get\_quick\_print}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp\_get\_quick\_print()}{snmp\_get\_quick\_print()}}
+{\footnotesize\ttfamily snmp\+\_\+get\+\_\+quick\+\_\+print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fetches the current value of the U\+CD library\textquotesingle{}s quick\+\_\+print setting \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{bool {\bfseries{T\+R\+UE}} if quick\+\_\+print is on, {\bfseries{F\+A\+L\+SE}} otherwise.  4.\+0  5.\+0 }}\mbox{\Hypertarget{snmp_8php_ac0e8750fbe0f9223111c1b4d2ae1e8dc}\label{snmp_8php_ac0e8750fbe0f9223111c1b4d2ae1e8dc}} 
+\index{snmp.php@{snmp.php}!snmp\_get\_valueretrieval@{snmp\_get\_valueretrieval}}
+\index{snmp\_get\_valueretrieval@{snmp\_get\_valueretrieval}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp\_get\_valueretrieval()}{snmp\_get\_valueretrieval()}}
+{\footnotesize\ttfamily snmp\+\_\+get\+\_\+valueretrieval (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the method how the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} values will be returned \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int O\+R-\/ed combitantion of constants ( {\bfseries{S\+N\+M\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+I\+B\+R\+A\+RY}} or {\bfseries{S\+N\+M\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+P\+L\+A\+IN}} ) with possible S\+N\+M\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+O\+B\+J\+E\+CT set.  4.\+3.\+3  5.\+0 }}\mbox{\Hypertarget{snmp_8php_a9d531c2b778d0f6970ac5738d078288d}\label{snmp_8php_a9d531c2b778d0f6970ac5738d078288d}} 
+\index{snmp.php@{snmp.php}!snmp\_read\_mib@{snmp\_read\_mib}}
+\index{snmp\_read\_mib@{snmp\_read\_mib}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp\_read\_mib()}{snmp\_read\_mib()}}
+{\footnotesize\ttfamily snmp\+\_\+read\+\_\+mib (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+Reads and parses a M\+IB file into the active M\+IB tree \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }}The filename of the M\+IB.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_ad84ce007f10b372ea912c0c10dfca589}\label{snmp_8php_ad84ce007f10b372ea912c0c10dfca589}} 
+\index{snmp.php@{snmp.php}!snmp\_set\_enum\_print@{snmp\_set\_enum\_print}}
+\index{snmp\_set\_enum\_print@{snmp\_set\_enum\_print}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp\_set\_enum\_print()}{snmp\_set\_enum\_print()}}
+{\footnotesize\ttfamily snmp\+\_\+set\+\_\+enum\+\_\+print (\begin{DoxyParamCaption}\item[{}]{\$enum\+\_\+print }\end{DoxyParamCaption})}
+
+Return all values that are enums with their enum value instead of the raw integer \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$enum\+\_\+print }} As the value is interpreted as boolean by the Net-\/\+S\+N\+MP library, it can only be \char`\"{}0\char`\"{} or \char`\"{}1\char`\"{}. 
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_aa6e5f1bf12d596080b1bfb9275e2399f}\label{snmp_8php_aa6e5f1bf12d596080b1bfb9275e2399f}} 
+\index{snmp.php@{snmp.php}!snmp\_set\_oid\_numeric\_print@{snmp\_set\_oid\_numeric\_print}}
+\index{snmp\_set\_oid\_numeric\_print@{snmp\_set\_oid\_numeric\_print}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp\_set\_oid\_numeric\_print()}{snmp\_set\_oid\_numeric\_print()}}
+{\footnotesize\ttfamily snmp\+\_\+set\+\_\+oid\+\_\+numeric\+\_\+print (\begin{DoxyParamCaption}\item[{}]{\$oid\+\_\+format }\end{DoxyParamCaption})}
+
+Return all objects including their respective object id within the specified one \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$oid\+\_\+format  void  4.\+3  5.\+0 }}\mbox{\Hypertarget{snmp_8php_a6506ecb5243d072c5dc191a811368b37}\label{snmp_8php_a6506ecb5243d072c5dc191a811368b37}} 
+\index{snmp.php@{snmp.php}!snmp\_set\_oid\_output\_format@{snmp\_set\_oid\_output\_format}}
+\index{snmp\_set\_oid\_output\_format@{snmp\_set\_oid\_output\_format}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp\_set\_oid\_output\_format()}{snmp\_set\_oid\_output\_format()}}
+{\footnotesize\ttfamily snmp\+\_\+set\+\_\+oid\+\_\+output\+\_\+format (\begin{DoxyParamCaption}\item[{}]{\$oid\+\_\+format = {\ttfamily \mbox{\hyperlink{snmp_8php_aa9b8f1c49b0cec82920403f332c6bbe2}{S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+M\+O\+D\+U\+LE}}} }\end{DoxyParamCaption})}
+
+Set the O\+ID output format \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$oid\+\_\+format \mbox{[}optional\mbox{]} }} O\+ID .1.\+3.\+6.\+1.\+2.\+1.\+1.\+3.\+0 representation for various {\itshape oid\+\_\+format} values 
+
+{\bfseries{S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+F\+U\+LL}}
+
+.iso.\+org.\+dod.\+internet.\+mgmt.\+mib-\/2.\+system.\+sys\+Up\+Time.\+sys\+Up\+Time\+Instance 
+
+{\bfseries{S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+N\+U\+M\+E\+R\+IC}}
+
+.1.\+3.\+6.\+1.\+2.\+1.\+1.\+3.\+0  
+
+Begining from P\+HP 5.\+4.\+0 four additional constants available\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+{\bfseries{S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+M\+O\+D\+U\+LE}}&D\+I\+S\+M\+A\+N-\/\+E\+V\+E\+N\+T-\/\+M\+IB\+::sys\+Up\+Time\+Instance \\\cline{1-2}
+{\bfseries{S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+S\+U\+F\+F\+IX}}&sys\+Up\+Time\+Instance \\\cline{1-2}
+{\bfseries{S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+U\+CD}}&system.\+sys\+Up\+Time.\+sys\+Up\+Time\+Instance \\\cline{1-2}
+{\bfseries{S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+N\+O\+NE}}&Undefined \\\cline{1-2}
+\end{longtabu}
+
+
+\begin{DoxyReturn}{Returns}
+bool No value is returned. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_ae34c216b15d84d946f65fb2164541438}\label{snmp_8php_ae34c216b15d84d946f65fb2164541438}} 
+\index{snmp.php@{snmp.php}!snmp\_set\_quick\_print@{snmp\_set\_quick\_print}}
+\index{snmp\_set\_quick\_print@{snmp\_set\_quick\_print}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp\_set\_quick\_print()}{snmp\_set\_quick\_print()}}
+{\footnotesize\ttfamily snmp\+\_\+set\+\_\+quick\+\_\+print (\begin{DoxyParamCaption}\item[{}]{\$quick\+\_\+print }\end{DoxyParamCaption})}
+
+Set the value of {\itshape quick\+\_\+print} within the U\+CD \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} library \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{bool \$quick\+\_\+print  bool No value is returned.  4.\+0  5.\+0 }}\mbox{\Hypertarget{snmp_8php_a5d714b59f57841f64410915f47aca929}\label{snmp_8php_a5d714b59f57841f64410915f47aca929}} 
+\index{snmp.php@{snmp.php}!snmp\_set\_valueretrieval@{snmp\_set\_valueretrieval}}
+\index{snmp\_set\_valueretrieval@{snmp\_set\_valueretrieval}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmp\_set\_valueretrieval()}{snmp\_set\_valueretrieval()}}
+{\footnotesize\ttfamily snmp\+\_\+set\+\_\+valueretrieval (\begin{DoxyParamCaption}\item[{}]{\$method }\end{DoxyParamCaption})}
+
+Specify the method how the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} values will be returned \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$method }} types 
+
+S\+N\+M\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+I\+B\+R\+A\+RY 
+
+The return values will be as returned by the Net-\/\+S\+N\+MP library.  
+
+S\+N\+M\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+P\+L\+A\+IN 
+
+The return values will be the plain value without the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} type hint.  
+
+S\+N\+M\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+O\+B\+J\+E\+CT 
+
+The return values will be objects with the properties \char`\"{}value\char`\"{} and \char`\"{}type\char`\"{}, where the latter is one of the S\+N\+M\+P\+\_\+\+O\+C\+T\+E\+T\+\_\+\+S\+TR, S\+N\+M\+P\+\_\+\+C\+O\+U\+N\+T\+ER etc. constants. The way \char`\"{}value\char`\"{} is returned is based on which one of constants {\bfseries{S\+N\+M\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+I\+B\+R\+A\+RY}}, {\bfseries{S\+N\+M\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+P\+L\+A\+IN}} is set.   
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_a371ad67b253c66995ee3f45dfad78ec4}\label{snmp_8php_a371ad67b253c66995ee3f45dfad78ec4}} 
+\index{snmp.php@{snmp.php}!snmpget@{snmpget}}
+\index{snmpget@{snmpget}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmpget()}{snmpget()}}
+{\footnotesize\ttfamily snmpget (\begin{DoxyParamCaption}\item[{}]{\$hostname,  }\item[{}]{\$community,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$timeout = {\ttfamily 1000000},  }\item[{}]{\$retries = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Fetch an \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$hostname }} The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$community} & \\
+\hline
+\end{DoxyParams}
+The read community. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object value on success or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_a5f2befad6f81afb30c706ec8016fc4f7}\label{snmp_8php_a5f2befad6f81afb30c706ec8016fc4f7}} 
+\index{snmp.php@{snmp.php}!snmpgetnext@{snmpgetnext}}
+\index{snmpgetnext@{snmpgetnext}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmpgetnext()}{snmpgetnext()}}
+{\footnotesize\ttfamily snmpgetnext (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$community,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$timeout = {\ttfamily 1000000},  }\item[{}]{\$retries = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Fetch the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object which follows the given object id \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }}The hostname of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent (server).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$community} & \\
+\hline
+\end{DoxyParams}
+The read community.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object id which precedes the wanted one.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur.
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object value on success or {\bfseries{F\+A\+L\+SE}} on error. In case of an error, an E\+\_\+\+W\+A\+R\+N\+I\+NG message is shown. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_a7664924d428d1f86a3aaa505ad639991}\label{snmp_8php_a7664924d428d1f86a3aaa505ad639991}} 
+\index{snmp.php@{snmp.php}!snmprealwalk@{snmprealwalk}}
+\index{snmprealwalk@{snmprealwalk}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmprealwalk()}{snmprealwalk()}}
+{\footnotesize\ttfamily snmprealwalk (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$community,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$timeout = {\ttfamily 1000000},  }\item[{}]{\$retries = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Return all objects including their respective object ID within the specified one \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }}The hostname of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent (server).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$community} & \\
+\hline
+\end{DoxyParams}
+The read community.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object id which precedes the wanted one.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur.
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false an associative array of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object ids and their values on success or {\bfseries{F\+A\+L\+SE}} on error. In case of an error, an E\+\_\+\+W\+A\+R\+N\+I\+NG message is shown. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_ad467441675250708975b34318bff6718}\label{snmp_8php_ad467441675250708975b34318bff6718}} 
+\index{snmp.php@{snmp.php}!snmpset@{snmpset}}
+\index{snmpset@{snmpset}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmpset()}{snmpset()}}
+{\footnotesize\ttfamily snmpset (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$community,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$type,  }\item[{}]{\$value,  }\item[{}]{\$timeout = {\ttfamily 1000000},  }\item[{}]{\$retries = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Set the value of an \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }} The hostname of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent (server). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$community} & \\
+\hline
+\end{DoxyParams}
+The write community. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & The M\+IB defines the type of each object id. It has to be specified as a single character from the below list. \\
+\hline
+\end{DoxyParams}
+types 
+
+=
+
+The type is taken from the M\+IB 
+
+i
+
+I\+N\+T\+E\+G\+ER  
+
+u
+
+I\+N\+T\+E\+G\+ER 
+
+s
+
+S\+T\+R\+I\+NG 
+
+x
+
+H\+EX S\+T\+R\+I\+NG 
+
+d
+
+D\+E\+C\+I\+M\+AL S\+T\+R\+I\+NG 
+
+n
+
+N\+U\+L\+L\+O\+BJ 
+
+o
+
+O\+B\+J\+ID 
+
+t
+
+T\+I\+M\+E\+T\+I\+C\+KS 
+
+a
+
+I\+P\+A\+D\+D\+R\+E\+SS 
+
+b
+
+B\+I\+TS 
+
+If {\bfseries{O\+P\+A\+Q\+U\+E\+\_\+\+S\+P\+E\+C\+I\+A\+L\+\_\+\+T\+Y\+P\+ES}} was defined while compiling the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} library, the following are also valid\+: 
+
+types 
+
+U
+
+unsigned int64 
+
+I
+
+signed int64 
+
+F
+
+float 
+
+D
+
+double 
+
+Most of these will use the obvious corresponding A\+S\+N.\+1 type. \&\#x00027;s\&\#x00027;, \&\#x00027;x\&\#x00027;, \&\#x00027;d\&\#x00027; and \&\#x00027;b\&\#x00027; are all different ways of specifying an O\+C\+T\+ET S\+T\+R\+I\+NG value, and the \&\#x00027;u\&\#x00027; unsigned type is also used for handling Gauge32 values. 
+
+If the M\+I\+B-\/\+Files are loaded by into the M\+IB Tree with \char`\"{}snmp\+\_\+read\+\_\+mib\char`\"{} or by specifying it in the libsnmp config, \&\#x00027;=\&\#x00027; may be used as the {\itshape type} parameter for all object ids as the type can then be automatically read from the M\+IB. 
+
+Note that there are two ways to set a variable of the type B\+I\+TS like e.\+g. \char`\"{}\+S\+Y\+N\+T\+A\+X B\+I\+T\+S \{telnet(0), ftp(1), http(2), icmp(3), snmp(4), ssh(5), https(6)\}\char`\"{}\+: 
+
+Using type \char`\"{}b\char`\"{} and a list of bit numbers. This method is not recommended since G\+ET query for the same O\+ID would return e.\+g. 0x\+F8. Using type \char`\"{}x\char`\"{} and a hex number but without(!) the usual \char`\"{}0x\char`\"{} prefix. See examples section for more details. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+The new value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+
+
+If the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} host rejects the data type, an E\+\_\+\+W\+A\+R\+N\+I\+NG message like \char`\"{}\+Warning\+: Error in packet. Reason\+: (bad\+Value) The value given has the wrong type or length.\char`\"{} is shown. If an unknown or invalid O\+ID is specified the warning probably reads \char`\"{}\+Could not add variable\char`\"{}. \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_af07e27dd2fb759418e6c5099ceb5c4f3}\label{snmp_8php_af07e27dd2fb759418e6c5099ceb5c4f3}} 
+\index{snmp.php@{snmp.php}!snmpwalk@{snmpwalk}}
+\index{snmpwalk@{snmpwalk}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmpwalk()}{snmpwalk()}}
+{\footnotesize\ttfamily snmpwalk (\begin{DoxyParamCaption}\item[{}]{\$hostname,  }\item[{}]{\$community,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$timeout = {\ttfamily 1000000},  }\item[{}]{\$retries = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Fetch all the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} objects from an agent \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$hostname }} The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent (server). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$community} & \\
+\hline
+\end{DoxyParams}
+The read community. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+If {\bfseries{N\+U\+LL}}, {\itshape object\+\_\+id} is taken as the root of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} objects tree and all objects under that tree are returned as an array. 
+
+If {\itshape object\+\_\+id} is specified, all the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} objects below that {\itshape object\+\_\+id} are returned. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur.
+
+\begin{DoxyReturn}{Returns}
+array an array of \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} object values starting from the {\itshape object\+\_\+id} as root or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{snmp_8php_a6255349821eb220f2cb23cb83fd859ba}\label{snmp_8php_a6255349821eb220f2cb23cb83fd859ba}} 
+\index{snmp.php@{snmp.php}!snmpwalkoid@{snmpwalkoid}}
+\index{snmpwalkoid@{snmpwalkoid}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{snmpwalkoid()}{snmpwalkoid()}}
+{\footnotesize\ttfamily snmpwalkoid (\begin{DoxyParamCaption}\item[{}]{\$hostname,  }\item[{}]{\$community,  }\item[{}]{\$object\+\_\+id,  }\item[{}]{\$timeout = {\ttfamily 1000000},  }\item[{}]{\$retries = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Query for a tree of information about a network entity \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$hostname }} The \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} agent. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$community} & \\
+\hline
+\end{DoxyParams}
+The read community. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$object\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+If {\bfseries{N\+U\+LL}}, {\itshape object\+\_\+id} is taken as the root of the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} objects tree and all objects under that tree are returned as an array. 
+
+If {\itshape object\+\_\+id} is specified, all the \mbox{\hyperlink{class_s_n_m_p}{S\+N\+MP}} objects below that {\itshape object\+\_\+id} are returned. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of microseconds until the first timeout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of times to retry if timeouts occur. 
+
+\begin{DoxyReturn}{Returns}
+array an associative array with object ids and their respective object value starting from the {\itshape object\+\_\+id} as root or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{snmp_8php_ad7195b00c14321aed2c463e14b421677}\label{snmp_8php_ad7195b00c14321aed2c463e14b421677}} 
+\index{snmp.php@{snmp.php}!SNMP\_BIT\_STR@{SNMP\_BIT\_STR}}
+\index{SNMP\_BIT\_STR@{SNMP\_BIT\_STR}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_BIT\_STR}{SNMP\_BIT\_STR}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+B\+I\+T\+\_\+\+S\+TR 3}
+
+\mbox{\Hypertarget{snmp_8php_a85558a716fc66d5a54033a6646991651}\label{snmp_8php_a85558a716fc66d5a54033a6646991651}} 
+\index{snmp.php@{snmp.php}!SNMP\_COUNTER@{SNMP\_COUNTER}}
+\index{SNMP\_COUNTER@{SNMP\_COUNTER}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_COUNTER}{SNMP\_COUNTER}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+C\+O\+U\+N\+T\+ER 66}
+
+\mbox{\Hypertarget{snmp_8php_ac34560cb0df6f54df4cba1e7331d98ce}\label{snmp_8php_ac34560cb0df6f54df4cba1e7331d98ce}} 
+\index{snmp.php@{snmp.php}!SNMP\_COUNTER64@{SNMP\_COUNTER64}}
+\index{SNMP\_COUNTER64@{SNMP\_COUNTER64}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_COUNTER64}{SNMP\_COUNTER64}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+C\+O\+U\+N\+T\+E\+R64 70}
+
+\mbox{\Hypertarget{snmp_8php_aa0246a55ce7762d7a0cabd9b7537b02c}\label{snmp_8php_aa0246a55ce7762d7a0cabd9b7537b02c}} 
+\index{snmp.php@{snmp.php}!SNMP\_INTEGER@{SNMP\_INTEGER}}
+\index{SNMP\_INTEGER@{SNMP\_INTEGER}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_INTEGER}{SNMP\_INTEGER}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+I\+N\+T\+E\+G\+ER 2}
+
+\mbox{\Hypertarget{snmp_8php_a27035fd318bd589c601444c0fee6a88f}\label{snmp_8php_a27035fd318bd589c601444c0fee6a88f}} 
+\index{snmp.php@{snmp.php}!SNMP\_IPADDRESS@{SNMP\_IPADDRESS}}
+\index{SNMP\_IPADDRESS@{SNMP\_IPADDRESS}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_IPADDRESS}{SNMP\_IPADDRESS}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+I\+P\+A\+D\+D\+R\+E\+SS 64}
+
+\mbox{\Hypertarget{snmp_8php_aefc464b25f0d4b07ebf57bc3f7fd159b}\label{snmp_8php_aefc464b25f0d4b07ebf57bc3f7fd159b}} 
+\index{snmp.php@{snmp.php}!SNMP\_NULL@{SNMP\_NULL}}
+\index{SNMP\_NULL@{SNMP\_NULL}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_NULL}{SNMP\_NULL}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+N\+U\+LL 5}
+
+\mbox{\Hypertarget{snmp_8php_ad7c9ee3aad7fcc27a37214a20e94de1d}\label{snmp_8php_ad7c9ee3aad7fcc27a37214a20e94de1d}} 
+\index{snmp.php@{snmp.php}!SNMP\_OBJECT\_ID@{SNMP\_OBJECT\_ID}}
+\index{SNMP\_OBJECT\_ID@{SNMP\_OBJECT\_ID}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_OBJECT\_ID}{SNMP\_OBJECT\_ID}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+ID 6}
+
+\mbox{\Hypertarget{snmp_8php_a45d6f96a6f6c62f169e5b364e34dab13}\label{snmp_8php_a45d6f96a6f6c62f169e5b364e34dab13}} 
+\index{snmp.php@{snmp.php}!SNMP\_OCTET\_STR@{SNMP\_OCTET\_STR}}
+\index{SNMP\_OCTET\_STR@{SNMP\_OCTET\_STR}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_OCTET\_STR}{SNMP\_OCTET\_STR}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+O\+C\+T\+E\+T\+\_\+\+S\+TR 4}
+
+\mbox{\Hypertarget{snmp_8php_a1dc5f238a8c6f9933bfff47930ff32fb}\label{snmp_8php_a1dc5f238a8c6f9933bfff47930ff32fb}} 
+\index{snmp.php@{snmp.php}!SNMP\_OID\_OUTPUT\_FULL@{SNMP\_OID\_OUTPUT\_FULL}}
+\index{SNMP\_OID\_OUTPUT\_FULL@{SNMP\_OID\_OUTPUT\_FULL}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_OID\_OUTPUT\_FULL}{SNMP\_OID\_OUTPUT\_FULL}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+F\+U\+LL 3}
+
+As of 5.\+2 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/snmp.\+constants.\+php}}\mbox{\Hypertarget{snmp_8php_aa9b8f1c49b0cec82920403f332c6bbe2}\label{snmp_8php_aa9b8f1c49b0cec82920403f332c6bbe2}} 
+\index{snmp.php@{snmp.php}!SNMP\_OID\_OUTPUT\_MODULE@{SNMP\_OID\_OUTPUT\_MODULE}}
+\index{SNMP\_OID\_OUTPUT\_MODULE@{SNMP\_OID\_OUTPUT\_MODULE}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_OID\_OUTPUT\_MODULE}{SNMP\_OID\_OUTPUT\_MODULE}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+M\+O\+D\+U\+LE 2}
+
+As of 5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/snmp.\+constants.\+php}}\mbox{\Hypertarget{snmp_8php_aadabf22fd44195ea87f08a9dd756e187}\label{snmp_8php_aadabf22fd44195ea87f08a9dd756e187}} 
+\index{snmp.php@{snmp.php}!SNMP\_OID\_OUTPUT\_NONE@{SNMP\_OID\_OUTPUT\_NONE}}
+\index{SNMP\_OID\_OUTPUT\_NONE@{SNMP\_OID\_OUTPUT\_NONE}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_OID\_OUTPUT\_NONE}{SNMP\_OID\_OUTPUT\_NONE}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+N\+O\+NE 6}
+
+As of 5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/snmp.\+constants.\+php}}\mbox{\Hypertarget{snmp_8php_a5f5584242fda544a79b1bf72ed63cf59}\label{snmp_8php_a5f5584242fda544a79b1bf72ed63cf59}} 
+\index{snmp.php@{snmp.php}!SNMP\_OID\_OUTPUT\_NUMERIC@{SNMP\_OID\_OUTPUT\_NUMERIC}}
+\index{SNMP\_OID\_OUTPUT\_NUMERIC@{SNMP\_OID\_OUTPUT\_NUMERIC}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_OID\_OUTPUT\_NUMERIC}{SNMP\_OID\_OUTPUT\_NUMERIC}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+N\+U\+M\+E\+R\+IC 4}
+
+As of 5.\+2 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/snmp.\+constants.\+php}}\mbox{\Hypertarget{snmp_8php_a852a68bf302b2d90608263e8751a1a53}\label{snmp_8php_a852a68bf302b2d90608263e8751a1a53}} 
+\index{snmp.php@{snmp.php}!SNMP\_OID\_OUTPUT\_SUFFIX@{SNMP\_OID\_OUTPUT\_SUFFIX}}
+\index{SNMP\_OID\_OUTPUT\_SUFFIX@{SNMP\_OID\_OUTPUT\_SUFFIX}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_OID\_OUTPUT\_SUFFIX}{SNMP\_OID\_OUTPUT\_SUFFIX}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+S\+U\+F\+F\+IX 1}
+
+As of 5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/snmp.\+constants.\+php}}\mbox{\Hypertarget{snmp_8php_a78dd6612090943318d9d86a4b5b6059d}\label{snmp_8php_a78dd6612090943318d9d86a4b5b6059d}} 
+\index{snmp.php@{snmp.php}!SNMP\_OID\_OUTPUT\_UCD@{SNMP\_OID\_OUTPUT\_UCD}}
+\index{SNMP\_OID\_OUTPUT\_UCD@{SNMP\_OID\_OUTPUT\_UCD}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_OID\_OUTPUT\_UCD}{SNMP\_OID\_OUTPUT\_UCD}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+O\+I\+D\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+U\+CD 5}
+
+As of 5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/snmp.\+constants.\+php}}\mbox{\Hypertarget{snmp_8php_af513d6ffd7d4f6a762a8aed6e51c9dd9}\label{snmp_8php_af513d6ffd7d4f6a762a8aed6e51c9dd9}} 
+\index{snmp.php@{snmp.php}!SNMP\_OPAQUE@{SNMP\_OPAQUE}}
+\index{SNMP\_OPAQUE@{SNMP\_OPAQUE}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_OPAQUE}{SNMP\_OPAQUE}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+O\+P\+A\+Q\+UE 68}
+
+\mbox{\Hypertarget{snmp_8php_aa3e66e4731fed4935bbd8ebda25c7530}\label{snmp_8php_aa3e66e4731fed4935bbd8ebda25c7530}} 
+\index{snmp.php@{snmp.php}!SNMP\_TIMETICKS@{SNMP\_TIMETICKS}}
+\index{SNMP\_TIMETICKS@{SNMP\_TIMETICKS}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_TIMETICKS}{SNMP\_TIMETICKS}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+T\+I\+M\+E\+T\+I\+C\+KS 67}
+
+\mbox{\Hypertarget{snmp_8php_a1f7864e7dd4ed8c65b0cb6a79ea71716}\label{snmp_8php_a1f7864e7dd4ed8c65b0cb6a79ea71716}} 
+\index{snmp.php@{snmp.php}!SNMP\_UINTEGER@{SNMP\_UINTEGER}}
+\index{SNMP\_UINTEGER@{SNMP\_UINTEGER}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_UINTEGER}{SNMP\_UINTEGER}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+U\+I\+N\+T\+E\+G\+ER 71}
+
+\mbox{\Hypertarget{snmp_8php_a93c5b44f1da5bdd0042ad395c33646eb}\label{snmp_8php_a93c5b44f1da5bdd0042ad395c33646eb}} 
+\index{snmp.php@{snmp.php}!SNMP\_UNSIGNED@{SNMP\_UNSIGNED}}
+\index{SNMP\_UNSIGNED@{SNMP\_UNSIGNED}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_UNSIGNED}{SNMP\_UNSIGNED}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+U\+N\+S\+I\+G\+N\+ED 66}
+
+\mbox{\Hypertarget{snmp_8php_a253aa5c7ab9ad70b2f0e574abd364026}\label{snmp_8php_a253aa5c7ab9ad70b2f0e574abd364026}} 
+\index{snmp.php@{snmp.php}!SNMP\_VALUE\_LIBRARY@{SNMP\_VALUE\_LIBRARY}}
+\index{SNMP\_VALUE\_LIBRARY@{SNMP\_VALUE\_LIBRARY}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_VALUE\_LIBRARY}{SNMP\_VALUE\_LIBRARY}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+I\+B\+R\+A\+RY 0}
+
+\mbox{\Hypertarget{snmp_8php_ae9f90c8951b1793b091e04ba366c5f46}\label{snmp_8php_ae9f90c8951b1793b091e04ba366c5f46}} 
+\index{snmp.php@{snmp.php}!SNMP\_VALUE\_OBJECT@{SNMP\_VALUE\_OBJECT}}
+\index{SNMP\_VALUE\_OBJECT@{SNMP\_VALUE\_OBJECT}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_VALUE\_OBJECT}{SNMP\_VALUE\_OBJECT}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+O\+B\+J\+E\+CT 2}
+
+\mbox{\Hypertarget{snmp_8php_a91161b211289698a22e3cf835270ca7a}\label{snmp_8php_a91161b211289698a22e3cf835270ca7a}} 
+\index{snmp.php@{snmp.php}!SNMP\_VALUE\_PLAIN@{SNMP\_VALUE\_PLAIN}}
+\index{SNMP\_VALUE\_PLAIN@{SNMP\_VALUE\_PLAIN}!snmp.php@{snmp.php}}
+\doxysubsubsection{\texorpdfstring{SNMP\_VALUE\_PLAIN}{SNMP\_VALUE\_PLAIN}}
+{\footnotesize\ttfamily const S\+N\+M\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+P\+L\+A\+IN 1}
+

@@ -1,0 +1,1423 @@
+.TH "vendor/jetbrains/phpstorm-stubs/standard/standard_2.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/standard/standard_2.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBnl_langinfo\fP ($item)"
+.br
+.ti -1c
+.RI "\fBsoundex\fP ($str)"
+.br
+.ti -1c
+.RI "\fBlevenshtein\fP ($str1, $str2, $cost_ins=\fBnull\fP, $cost_rep=\fBnull\fP, $cost_del=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBchr\fP ($ascii)"
+.br
+.ti -1c
+.RI "\fBord\fP ($string)"
+.br
+.ti -1c
+.RI "\fBparse_str\fP ($str, array &$result=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstr_getcsv\fP ($input, $delimiter=',', $enclosure=''', $escape = '\\\\') "
+.br
+.ti -1c
+.RI "\fBstr_pad\fP ($input, $pad_length, $pad_string=' ', $pad_type=\fBSTR_PAD_RIGHT\fP)"
+.br
+.ti -1c
+.RI "\fBchop\fP ($str, $character_mask=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstrchr\fP ($haystack, $needle, $part=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBsprintf\fP ($format, $args=\fBnull\fP, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBprintf\fP ($format, $args=\fBnull\fP, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBvprintf\fP ($format, array $args)"
+.br
+.ti -1c
+.RI "\fBvsprintf\fP ($format, array $args)"
+.br
+.ti -1c
+.RI "\fBfprintf\fP ($handle, $format, $args=\fBnull\fP, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBvfprintf\fP ($handle, $format, array $args)"
+.br
+.ti -1c
+.RI "\fBsscanf\fP ($str, $format, &\&.\&.\&. $\fB_\fP)"
+.br
+.ti -1c
+.RI "\fBfscanf\fP ($handle, $format, &$\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBparse_url\fP ($url, $component=\-1)"
+.br
+.ti -1c
+.RI "\fBurlencode\fP ($str)"
+.br
+.ti -1c
+.RI "\fBurldecode\fP ($str)"
+.br
+.ti -1c
+.RI "\fBrawurlencode\fP ($str)"
+.br
+.ti -1c
+.RI "\fBrawurldecode\fP ($str)"
+.br
+.ti -1c
+.RI "\fBhttp_build_query\fP ($query_data, $numeric_prefix=\fBnull\fP, $arg_separator=\fBnull\fP, $enc_type=\fBPHP_QUERY_RFC1738\fP)"
+.br
+.ti -1c
+.RI "\fBreadlink\fP ($path)"
+.br
+.ti -1c
+.RI "\fBlinkinfo\fP ($path)"
+.br
+.ti -1c
+.RI "\fBsymlink\fP ($target, $\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBlink\fP (string $target, string $link)"
+.br
+.ti -1c
+.RI "\fBunlink\fP ($filename, $context=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBexec\fP ($command, array &$output=\fBnull\fP, &$return_var=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsystem\fP ($command, &$return_var=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBescapeshellcmd\fP ($command)"
+.br
+.ti -1c
+.RI "\fBescapeshellarg\fP ($arg)"
+.br
+.ti -1c
+.RI "\fBpassthru\fP ($command, &$return_var=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBshell_exec\fP ($cmd)"
+.br
+.ti -1c
+.RI "\fBproc_open\fP ($cmd, array $descriptorspec, array &$pipes, $cwd=\fBnull\fP, array $env=\fBnull\fP, array $other_options=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBproc_close\fP ($process)"
+.br
+.ti -1c
+.RI "\fBproc_terminate\fP ($process, $signal=15)"
+.br
+.ti -1c
+.RI "\fBproc_get_status\fP ($process)"
+.br
+.ti -1c
+.RI "\fBproc_nice\fP ($increment)"
+.br
+.ti -1c
+.RI "\fBrand\fP ($\fBmin\fP=0, $\fBmax\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsrand\fP ($seed=\fBnull\fP, $mode=\fBMT_RAND_MT19937\fP)"
+.br
+.ti -1c
+.RI "\fBgetrandmax\fP ()"
+.br
+.ti -1c
+.RI "\fBmt_rand\fP ($\fBmin\fP=0, $\fBmax\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmt_srand\fP ($seed=\fBnull\fP, $mode=\fBMT_RAND_MT19937\fP)"
+.br
+.ti -1c
+.RI "\fBmt_getrandmax\fP ()"
+.br
+.ti -1c
+.RI "\fBgetservbyname\fP ($service, $protocol)"
+.br
+.ti -1c
+.RI "\fBgetservbyport\fP ($port, $protocol)"
+.br
+.ti -1c
+.RI "\fBgetprotobyname\fP ($name)"
+.br
+.ti -1c
+.RI "\fBgetprotobynumber\fP ($number)"
+.br
+.ti -1c
+.RI "\fBgetmyuid\fP ()"
+.br
+.ti -1c
+.RI "\fBgetmygid\fP ()"
+.br
+.ti -1c
+.RI "\fBgetmypid\fP ()"
+.br
+.ti -1c
+.RI "\fBgetmyinode\fP ()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "chop ( $str,  $character_mask = \fC\fBnull\fP\fP)"
+<function>rtrim</function> 
+.PP
+\fBSee also\fP
+.RS 4
+\fBrtrim()\fP \fBstring $str The input string\&.  string $character_mask [optional]  string the modified string\&.  4\&.0  5\&.0 \fP
+.RE
+.PP
+
+.SS "chr ( $ascii)"
+Return a specific character \fBint $ascii \fP The ascii code\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the specified character\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "escapeshellarg ( $arg)"
+Escape a string to be used as a shell argument \fBstring $arg \fP The argument that will be escaped\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The escaped string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "escapeshellcmd ( $command)"
+Escape shell metacharacters \fBstring $command \fP The command that will be escaped\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The escaped string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "exec ( $command, array & $output = \fC\fBnull\fP\fP, & $return_var = \fC\fBnull\fP\fP)"
+Execute an external program \fBstring $command \fP The command that will be executed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$output\fP [optional] 
+.RE
+.PP
+If the output argument is present, then the specified array will be filled with every line of output from the command\&. Trailing whitespace, such as 
+.br
+, is not included in this array\&. Note that if the array already contains some elements, exec will append to the end of the array\&. If you do not want the function to append elements, call unset on the array before passing it to exec\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$return_var\fP [optional] 
+.RE
+.PP
+If the return_var argument is present along with the output argument, then the return status of the executed command will be written to this variable\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The last line from the result of the command\&. If you need to execute a command and have all the data from the command passed directly back without any interference, use the passthru function\&. 
+.RE
+.PP
+.PP
+To get the output of the executed command, be sure to set and use the output parameter\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.PP
+\fBExamples\fP
+.in +1c
+\fB/usr/local/var/www/safaricom\-sdp\-sdk/vendor/jetbrains/phpstorm\-stubs/redis/Redis\&.php\fP\&.
+.SS "fprintf ( $handle,  $format,  $args = \fC\fBnull\fP\fP,  $_ = \fC\fBnull\fP\fP)"
+Write a formatted string to a stream \fBresource $handle &fs\&.file\&.pointer;  string $format \fP See sprintf for a description of format\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$args\fP [optional] 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int the length of the string written\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "fscanf ( $handle,  $format, & $_ = \fC\fBnull\fP\fP)"
+Parses input from a file according to a format \fBresource $handle &fs\&.file\&.pointer;  string $format \fP The specified format as described in the sprintf documentation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|int If only two parameters were passed to this function, the values parsed will be returned as an array\&. Otherwise, if optional parameters are passed, the function will return the number of assigned values\&. The optional parameters must be passed by reference\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "getmygid ()"
+Get PHP script owner's GID \fBint the group ID of the current script, or false on error\&.  4\&.1  5\&.0 \fP
+.SS "getmyinode ()"
+Gets the inode of the current script \fBint the current script's inode as an integer, or false on error\&.  4\&.0  5\&.0 \fP
+.SS "getmypid ()"
+Gets PHP's process ID \fBint the current PHP process ID, or false on error\&.  4\&.0  5\&.0 \fP
+.SS "getmyuid ()"
+Gets PHP script owner's UID \fBint the user ID of the current script, or false on error\&.  4\&.0  5\&.0 \fP
+.SS "getprotobyname ( $name)"
+Get protocol number associated with protocol name \fBstring $name \fP The protocol name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the protocol number or -1 if the protocol is not found\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "getprotobynumber ( $number)"
+Get protocol name associated with protocol number \fBint $number \fP The protocol number\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the protocol name as a string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "getrandmax ()"
+Show largest possible random value \fBint The largest possible random value returned by rand  4\&.0  5\&.0 \fP
+.SS "getservbyname ( $service,  $protocol)"
+Get port number associated with an Internet service and protocol \fBstring $service \fP The Internet service name, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$protocol\fP 
+.RE
+.PP
+protocol is either 'tcp' or 'udp' (in lowercase)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the port number, or false if service or protocol is not found\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "getservbyport ( $port,  $protocol)"
+Get Internet service which corresponds to port and protocol \fBint $port \fP The port number\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$protocol\fP 
+.RE
+.PP
+protocol is either 'tcp' or 'udp' (in lowercase)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the Internet service name as a string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "http_build_query ( $query_data,  $numeric_prefix = \fC\fBnull\fP\fP,  $arg_separator = \fC\fBnull\fP\fP,  $enc_type = \fC\fBPHP_QUERY_RFC1738\fP\fP)"
+Generate URL-encoded query string \fBmixed $query_data \fP May be an array or object containing properties\&. 
+.PP
+If query_data is an array, it may be a simple one-dimensional structure, or an array of arrays (which in turn may contain other arrays)\&. 
+.PP
+If query_data is an object, then only public properties will be incorporated into the result\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$numeric_prefix\fP [optional] 
+.RE
+.PP
+If numeric indices are used in the base array and this parameter is provided, it will be prepended to the numeric index for elements in the base array only\&. 
+.PP
+This is meant to allow for legal variable names when the data is decoded by PHP or another CGI application later on\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$arg_separator\fP [optional] 
+.RE
+.PP
+arg_separator\&.output is used to separate arguments, unless this parameter is specified, and is then used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$enc_type\fP By default, PHP_QUERY_RFC1738\&. 
+.RE
+.PP
+If enc_type is PHP_QUERY_RFC1738, then encoding is performed per » RFC 1738 and the application/x-www-form-urlencoded media type, which implies that spaces are encoded as plus (+) signs\&. 
+.PP
+If enc_type is PHP_QUERY_RFC3986, then encoding is performed according to » RFC 3986, and spaces will be percent encoded (%20)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a URL-encoded string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "levenshtein ( $str1,  $str2,  $cost_ins = \fC\fBnull\fP\fP,  $cost_rep = \fC\fBnull\fP\fP,  $cost_del = \fC\fBnull\fP\fP)"
+Calculate Levenshtein distance between two strings \fBNote: In its simplest form the function will take only the two strings as parameter and will calculate just the number of insert, replace and delete operations needed to transform str1 into str2\&. Note: A second variant will take three additional parameters that define the cost of insert, replace and delete operations\&. This is more general and adaptive than variant one, but not as efficient\&.  string $str1 \fP One of the strings being evaluated for Levenshtein distance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$str2\fP 
+.RE
+.PP
+One of the strings being evaluated for Levenshtein distance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cost_ins\fP [optional] 
+.RE
+.PP
+Defines the cost of insertion\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cost_rep\fP [optional] 
+.RE
+.PP
+Defines the cost of replacement\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cost_del\fP [optional] 
+.RE
+.PP
+Defines the cost of deletion\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int This function returns the Levenshtein-Distance between the two argument strings or -1, if one of the argument strings is longer than the limit of 255 characters\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "link (string $target, string $link)"
+Create a hard link \fBstring $target Target of the link\&.  string $link The link name\&.  bool true on success or false on failure\&.  4\&.0  5\&.0 \fP
+.SS "linkinfo ( $path)"
+Gets information about a link \fBstring $path \fP Path to the link\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int linkinfo returns the st_dev field of the Unix C stat structure returned by the lstat system call\&. Returns 0 or false in case of error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mt_getrandmax ()"
+Show largest possible random value \fBint the maximum random value returned by mt_rand  4\&.0  5\&.0 \fP
+.SS "mt_rand ( $min = \fC0\fP,  $max = \fC\fBnull\fP\fP)"
+Generate a random value via the Mersenne Twister Random Number \fBGenerator\fP \fBint $min [optional] \fP Optional lowest value to be returned (default: 0) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$max\fP [optional] 
+.RE
+.PP
+Optional highest value to be returned (default: \fBmt_getrandmax()\fP) 
+.PP
+\fBReturns\fP
+.RS 4
+int \fBA\fP random integer value between min (or 0) and max (or mt_getrandmax, inclusive) 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mt_srand ( $seed = \fC\fBnull\fP\fP,  $mode = \fC\fBMT_RAND_MT19937\fP\fP)"
+Seed the better random number generator \fBint $seed [optional] \fP An optional seed value 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+Use one of the following constants to specify the implementation of the algorithm to use\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "nl_langinfo ( $item)"
+Query language and locale information \fBint $item \fP item may be an integer value of the element or the constant name of the element\&. The following is a list of constant names for item that may be used and their description\&. Some of these constants may not be defined or hold no value for certain locales\&. Constants 
+.PP
+Constant 
+.PP
+Description  
+.PP
+LC_TIME Category Constants  
+.PP
+ABDAY_(1-7) 
+.PP
+Abbreviated name of n-th day of the week\&.  
+.PP
+DAY_(1-7) 
+.PP
+Name of the n-th day of the week (DAY_1 = Sunday)\&.  
+.PP
+ABMON_(1-12) 
+.PP
+Abbreviated name of the n-th month of the year\&.  
+.PP
+MON_(1-12) 
+.PP
+Name of the n-th month of the year\&.  
+.PP
+AM_STR 
+.PP
+String for Ante meridian\&.  
+.PP
+PM_STR 
+.PP
+String for Post meridian\&.  
+.PP
+D_T_FMT 
+.PP
+String that can be used as the format string for strftime to represent time and date\&.  
+.PP
+D_FMT 
+.PP
+String that can be used as the format string for strftime to represent date\&.  
+.PP
+T_FMT 
+.PP
+String that can be used as the format string for strftime to represent time\&.  
+.PP
+T_FMT_AMPM 
+.PP
+String that can be used as the format string for strftime to represent time in 12-hour format with ante/post meridian\&.  
+.PP
+ERA 
+.PP
+Alternate era\&.  
+.PP
+ERA_YEAR 
+.PP
+Year in alternate era format\&.  
+.PP
+ERA_D_T_FMT 
+.PP
+Date and time in alternate era format (string can be used in strftime)\&.  
+.PP
+ERA_D_FMT 
+.PP
+Date in alternate era format (string can be used in strftime)\&.  
+.PP
+ERA_T_FMT 
+.PP
+Time in alternate era format (string can be used in strftime)\&.  
+.PP
+LC_MONETARY Category Constants  
+.PP
+INT_CURR_SYMBOL 
+.PP
+International currency symbol\&.  
+.PP
+CURRENCY_SYMBOL 
+.PP
+Local currency symbol\&.  
+.PP
+CRNCYSTR 
+.PP
+Same value as CURRENCY_SYMBOL\&.  
+.PP
+MON_DECIMAL_POINT 
+.PP
+Decimal point character\&.  
+.PP
+MON_THOUSANDS_SEP 
+.PP
+Thousands separator (groups of three digits)\&.  
+.PP
+MON_GROUPING 
+.PP
+Like 'grouping' element\&.  
+.PP
+POSITIVE_SIGN 
+.PP
+Sign for positive values\&.  
+.PP
+NEGATIVE_SIGN 
+.PP
+Sign for negative values\&.  
+.PP
+INT_FRAC_DIGITS 
+.PP
+International fractional digits\&.  
+.PP
+FRAC_DIGITS 
+.PP
+Local fractional digits\&.  
+.PP
+P_CS_PRECEDES 
+.PP
+Returns 1 if CURRENCY_SYMBOL precedes a positive value\&.  
+.PP
+P_SEP_BY_SPACE 
+.PP
+Returns 1 if a space separates CURRENCY_SYMBOL from a positive value\&.  
+.PP
+N_CS_PRECEDES 
+.PP
+Returns 1 if CURRENCY_SYMBOL precedes a negative value\&.  
+.PP
+N_SEP_BY_SPACE 
+.PP
+Returns 1 if a space separates CURRENCY_SYMBOL from a negative value\&.  
+.PP
+P_SIGN_POSN Returns 0 if parentheses surround the quantity and CURRENCY_SYMBOL\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the element as a string, or false if item is not valid\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ord ( $string)"
+Return ASCII value of character \fBstring $string \fP \fBA\fP character\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the ASCII value as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "parse_str ( $str, array & $result = \fC\fBnull\fP\fP)"
+Parses the string into variables \fBstring $str \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP [optional] 
+.RE
+.PP
+If the second parameter arr is present, variables are stored in this variable as array elements instead\&.
+.br
+ Since 7\&.2\&.0 this parameter is not optional\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "parse_url ( $url,  $component = \fC\-1\fP)"
+Parse a URL and return its components \fBstring $url \fP The URL to parse\&. Invalid characters are replaced by _\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$component\fP [optional] 
+.RE
+.PP
+Specify one of PHP_URL_SCHEME, PHP_URL_HOST, PHP_URL_PORT, PHP_URL_USER, PHP_URL_PASS, PHP_URL_PATH, PHP_URL_QUERY or PHP_URL_FRAGMENT to retrieve just a specific URL component as a string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|string|int|null|false On seriously malformed URLs, \fBparse_url()\fP may return FALSE\&. If the component parameter is omitted, an associative array is returned\&. At least one element will be present within the array\&. Potential keys within this array are: scheme - e\&.g\&. http host port user pass path query - after the question mark ? fragment - after the hashmark # 
+.RE
+.PP
+.PP
+If the component parameter is specified a string is returned instead of an array\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "passthru ( $command, & $return_var = \fC\fBnull\fP\fP)"
+Execute an external program and display raw output \fBstring $command \fP The command that will be executed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$return_var\fP [optional] 
+.RE
+.PP
+If the return_var argument is present, the return status of the Unix command will be placed here\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "printf ( $format,  $args = \fC\fBnull\fP\fP,  $_ = \fC\fBnull\fP\fP)"
+Output a formatted string \fBstring $format \fP See sprintf for a description of format\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$args\fP [optional] 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int the length of the outputted string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "proc_close ( $process)"
+Close a process opened by <function>proc_open</function> and return the exit code of that process \fBresource $process \fP The proc_open resource that will be closed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the termination status of the process that was run\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "proc_get_status ( $process)"
+Get information about a process opened by <function>proc_open</function> \fBresource $process \fP The proc_open resource that will be evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false An array of collected information on success, and false on failure\&. The returned array contains the following elements: 
+.RE
+.PP
+.PP
+element
+.PP
+type
+.PP
+description 
+.PP
+command 
+.PP
+string 
+.PP
+The command string that was passed to proc_open\&.   
+.PP
+pid 
+.PP
+int 
+.PP
+process id  
+.PP
+running 
+.PP
+bool 
+.PP
+true if the process is still running, false if it has terminated\&.   
+.PP
+signaled 
+.PP
+bool 
+.PP
+true if the child process has been terminated by an uncaught signal\&. Always set to false on Windows\&.   
+.PP
+stopped 
+.PP
+bool 
+.PP
+true if the child process has been stopped by a signal\&. Always set to false on Windows\&.   
+.PP
+exitcode 
+.PP
+int 
+.PP
+The exit code returned by the process (which is only meaningful if running is false)\&. Only first call of this function return real value, next calls return -1\&.   
+.PP
+termsig 
+.PP
+int 
+.PP
+The number of the signal that caused the child process to terminate its execution (only meaningful if signaled is true)\&.   
+.PP
+stopsig 
+.PP
+int 
+.PP
+The number of the signal that caused the child process to stop its execution (only meaningful if stopped is true)\&.   
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "proc_nice ( $increment)"
+Change the priority of the current process\&. 
+.br
+ Since 7\&.2\&.0 supported on Windows platforms\&. \fBint $increment \fP The increment value of the priority change\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. If an error occurs, like the user lacks permission to change the priority, an error of level E_WARNING is also generated\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "proc_open ( $cmd, array $descriptorspec, array & $pipes,  $cwd = \fC\fBnull\fP\fP, array $env = \fC\fBnull\fP\fP, array $other_options = \fC\fBnull\fP\fP)"
+Execute a command and open file pointers for input/output \fBstring $cmd \fP The command to execute 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$descriptorspec\fP 
+.RE
+.PP
+An indexed array where the key represents the descriptor number and the value represents how PHP will pass that descriptor to the child process\&. 0 is stdin, 1 is stdout, while 2 is stderr\&. 
+.PP
+Each element can be: An array describing the pipe to pass to the process\&. The first element is the descriptor type and the second element is an option for the given type\&. Valid types are pipe (the second element is either r to pass the read end of the pipe to the process, or w to pass the write end) and file (the second element is a filename)\&. \fBA\fP stream resource representing a real file descriptor (e\&.g\&. opened file, a socket, STDIN)\&. 
+.PP
+The file descriptor numbers are not limited to 0, 1 and 2 - you may specify any valid file descriptor number and it will be passed to the child process\&. This allows your script to interoperate with other scripts that run as 'co-processes'\&. In particular, this is useful for passing passphrases to programs like PGP, GPG and openssl in a more secure manner\&. It is also useful for reading status information provided by those programs on auxiliary file descriptors\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pipes\fP 
+.RE
+.PP
+Will be set to an indexed array of file pointers that correspond to PHP's end of any pipes that are created\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cwd\fP [optional] 
+.RE
+.PP
+The initial working dir for the command\&. This must be an absolute directory path, or  if you want to use the default value (the working dir of the current PHP process) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$env\fP [optional] 
+.RE
+.PP
+An array with the environment variables for the command that will be run, or  to use the same environment as the current PHP process 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$other_options\fP [optional] 
+.RE
+.PP
+Allows you to specify additional options\&. Currently supported options include: suppress_errors (windows only): suppresses errors generated by this function when it's set to true bypass_shell (windows only): bypass cmd\&.exe shell when set to true context: stream context used when opening files (created with stream_context_create) binary_pipes: open pipes in binary mode, instead of using the usual stream_encoding 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a resource representing the process, which should be freed using proc_close when you are finished with it\&. On failure returns false\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "proc_terminate ( $process,  $signal = \fC15\fP)"
+Kills a process opened by proc_open \fBresource $process \fP The proc_open resource that will be closed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$signal\fP [optional] 
+.RE
+.PP
+This optional parameter is only useful on POSIX operating systems; you may specify a signal to send to the process using the kill(2) system call\&. The default is SIGTERM\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool the termination status of the process that was run\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "rand ( $min = \fC0\fP,  $max = \fC\fBnull\fP\fP)"
+Generate a random integer \fBint $min [optional]  int $max [optional]  int A pseudo random value between min (or 0) and max (or getrandmax, inclusive)\&.  4\&.0  5\&.0 \fP
+.SS "rawurldecode ( $str)"
+Decode URL-encoded strings \fBstring $str \fP The URL to be decoded\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the decoded URL, as a string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "rawurlencode ( $str)"
+URL-encode according to RFC 1738 \fBstring $str \fP The URL to be encoded\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string in which all non-alphanumeric characters except -_\&. have been replaced with a percent (%) sign followed by two hex digits\&. This is the encoding described in RFC 1738 for protecting literal characters from being interpreted as special URL delimiters, and for protecting URLs from being mangled by transmission media with character conversions (like some email systems)\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "readlink ( $path)"
+Returns the target of a symbolic link \fBstring $path \fP The symbolic link path\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the contents of the symbolic link path or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "shell_exec ( $cmd)"
+Execute command via shell and return the complete output as a string \fBstring $cmd \fP The command that will be executed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|null The output from the executed command or NULL if an error occurred or the command produces no output\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "soundex ( $str)"
+Calculate the soundex key of a string \fBstring $str \fP The input string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the soundex key as a string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "sprintf ( $format,  $args = \fC\fBnull\fP\fP,  $_ = \fC\fBnull\fP\fP)"
+Return a formatted string \fBstring $format \fP The format string is composed of zero or more directives: ordinary characters (excluding %) that are copied directly to the result, and conversion specifications, each of which results in fetching its own parameter\&. This applies to both sprintf and printf\&. 
+.PP
+Each conversion specification consists of a percent sign (%), followed by one or more of these elements, in order: An optional sign specifier that forces a sign (- or +) to be used on a number\&. By default, only the - sign is used on a number if it's negative\&. This specifier forces positive numbers to have the + sign attached as well, and was added in PHP 4\&.3\&.0\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$args\fP [optional] 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string a string produced according to the formatting string format\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.PP
+\fBExamples\fP
+.in +1c
+\fB/usr/local/var/www/safaricom\-sdp\-sdk/vendor/roave/better\-reflection/src/Reflection/ReflectionClass\&.php\fP\&.
+.SS "srand ( $seed = \fC\fBnull\fP\fP,  $mode = \fC\fBMT_RAND_MT19937\fP\fP)"
+Seed the random number generator 
+.PP
+\fBNote\fP: As of PHP 7\&.1\&.0, {
+.PP
+\fBSee also\fP
+.RS 4
+\fBsrand()\fP} has been made an alias of {
+.PP
+\fBmt_srand()\fP}\&. 
+.RE
+.PP
+\fBint $seed [optional] \fP Optional seed value 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+Use one of the following constants to specify the implementation of the algorithm to use\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "sscanf ( $str,  $format, &\&.\&.\&. $_)"
+Parses input from a string according to a format \fBstring $str \fP The input string being parsed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$format\fP 
+.RE
+.PP
+The interpreted format for str, which is described in the documentation for sprintf with following differences: Function is not locale-aware\&. F, g, G and b are not supported\&. D stands for decimal number\&. i stands for integer with base detection\&. n stands for number of characters processed so far\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImixed\fP \&.\&.\&.$_ 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|int If only two parameters were passed to this function, the values parsed will be returned as an array\&. Otherwise, if optional parameters are passed, the function will return the number of assigned values\&. The optional parameters must be passed by reference\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "str_getcsv ( $input,  $delimiter = \fC','\fP,  $enclosure = \fC'''\fP,  $escape = \fC'\\\\'\fP)"
+Parse a CSV string into an array \fBstring $input \fP The string to parse\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$delimiter\fP [optional] 
+.RE
+.PP
+Set the field delimiter (one character only)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$enclosure\fP [optional] 
+.RE
+.PP
+Set the field enclosure character (one character only)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$escape\fP [optional] 
+.RE
+.PP
+Set the escape character (one character only)\&. Defaults as a backslash () 
+.PP
+\fBReturns\fP
+.RS 4
+array an indexed array containing the fields read\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "str_pad ( $input,  $pad_length,  $pad_string = \fC' '\fP,  $pad_type = \fC\fBSTR_PAD_RIGHT\fP\fP)"
+Pad a string to a certain length with another string \fBstring $input \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pad_length\fP 
+.RE
+.PP
+If the value of pad_length is negative, less than, or equal to the length of the input string, no padding takes place\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pad_string\fP [optional] 
+.RE
+.PP
+The pad_string may be truncated if the required number of padding characters can't be evenly divided by the pad_string's length\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pad_type\fP [optional] 
+.RE
+.PP
+Optional argument pad_type can be STR_PAD_RIGHT, STR_PAD_LEFT, or STR_PAD_BOTH\&. If pad_type is not specified it is assumed to be STR_PAD_RIGHT\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the padded string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strchr ( $haystack,  $needle,  $part = \fC\fBfalse\fP\fP)"
+<function>strstr</function> \fBNote: This function is case-sensitive\&. For case-insensitive searches, use stristr()\&. Note: If you only want to determine if a particular needle occurs within haystack, use the faster and less memory intensive function strpos() instead\&.  4\&.0  5\&.0  string $haystack The input string\&.  mixed $needle If needle is not a string, it is converted to an integer and applied as the ordinal value of a character\&.  bool $part [optional] If TRUE, strstr() returns the part of the haystack before the first occurrence of the needle (excluding the needle)\&.  string|false Returns the portion of string, or FALSE if needle is not found\&. \fP
+.SS "symlink ( $target,  $link)"
+Creates a symbolic link \fBstring $target \fP Target of the link\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP 
+.RE
+.PP
+The link name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "system ( $command, & $return_var = \fC\fBnull\fP\fP)"
+Execute an external program and display the output \fBstring $command \fP The command that will be executed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$return_var\fP [optional] 
+.RE
+.PP
+If the return_var argument is present, then the return status of the executed command will be written to this variable\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the last line of the command output on success, and false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "unlink ( $filename,  $context = \fC\fBnull\fP\fP)"
+Deletes a file \fBstring $filename \fP Path to the file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP [optional] &note\&.context-support; 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.PP
+\fBExamples\fP
+.in +1c
+\fB/usr/local/var/www/safaricom\-sdp\-sdk/vendor/jetbrains/phpstorm\-stubs/redis/Redis\&.php\fP\&.
+.SS "urldecode ( $str)"
+Decodes URL-encoded string \fBstring $str \fP The string to be decoded\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the decoded string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "urlencode ( $str)"
+URL-encodes string \fBstring $str \fP The string to be encoded\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string in which all non-alphanumeric characters except -_\&. have been replaced with a percent (%) sign followed by two hex digits and spaces encoded as plus (+) signs\&. It is encoded the same way that the posted data from a WWW form is encoded, that is the same way as in application/x-www-form-urlencoded media type\&. This differs from the RFC 1738 encoding (see rawurlencode) in that for historical reasons, spaces are encoded as plus (+) signs\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "vfprintf ( $handle,  $format, array $args)"
+Write a formatted string to a stream \fBresource $handle \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$format\fP 
+.RE
+.PP
+See sprintf for a description of format\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$args\fP 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int the length of the outputted string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "vprintf ( $format, array $args)"
+Output a formatted string \fBstring $format \fP See sprintf for a description of format\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$args\fP 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int the length of the outputted string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "vsprintf ( $format, array $args)"
+Return a formatted string \fBstring $format \fP See sprintf for a description of format\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$args\fP 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+string Return array values as a formatted string according to format (which is described in the documentation for sprintf)\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

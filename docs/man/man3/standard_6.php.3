@@ -1,0 +1,1501 @@
+.TH "vendor/jetbrains/phpstorm-stubs/standard/standard_6.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/standard/standard_6.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBstream_select\fP (array &$read, array &$write, array &$except, $tv_sec, $tv_usec=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_context_create\fP (array $options=\fBnull\fP, array $params=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_context_set_params\fP ($stream_or_context, array $params)"
+.br
+.ti -1c
+.RI "\fBstream_context_get_params\fP ($stream_or_context)"
+.br
+.ti -1c
+.RI "\fBstream_context_set_option\fP ($stream_or_context, $wrapper, $option, $value)"
+.br
+.ti -1c
+.RI "\fBstream_context_set_option\fP ($stream_or_context, array $options)"
+.br
+.ti -1c
+.RI "\fBstream_context_get_options\fP ($stream_or_context)"
+.br
+.ti -1c
+.RI "\fBstream_context_get_default\fP (array $options=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_context_set_default\fP (array $options)"
+.br
+.ti -1c
+.RI "\fBstream_filter_prepend\fP ($stream, $filtername, $read_write=\fBnull\fP, $params=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_filter_append\fP ($stream, $filtername, $read_write=\fBnull\fP, $params=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_filter_remove\fP ($stream_filter)"
+.br
+.ti -1c
+.RI "\fBstream_socket_client\fP ($remote_socket, &$errno=\fBnull\fP, &$errstr=\fBnull\fP, $timeout=\fBnull\fP, $flags=\fBnull\fP, $context=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_socket_server\fP ($local_socket, &$errno=\fBnull\fP, &$errstr=\fBnull\fP, $flags=\fBnull\fP, $context=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_socket_accept\fP ($server_socket, $timeout=\fBnull\fP, &$peername=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_socket_get_name\fP ($handle, $want_peer)"
+.br
+.ti -1c
+.RI "\fBstream_socket_recvfrom\fP ($socket, $length, $flags=\fBnull\fP, &$address=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_socket_sendto\fP ($socket, $data, $flags=\fBnull\fP, $address=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_socket_enable_crypto\fP ($stream, $enable, $crypto_type=\fBnull\fP, $session_stream=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_socket_shutdown\fP ($stream, $how)"
+.br
+.ti -1c
+.RI "\fBstream_socket_pair\fP ($domain, $type, $protocol)"
+.br
+.ti -1c
+.RI "\fBstream_copy_to_stream\fP ($source, $dest, $maxlength=\fBnull\fP, $offset=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_get_contents\fP ($handle, $maxlength=\fBnull\fP, $offset=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_supports_lock\fP ($stream)"
+.br
+.ti -1c
+.RI "\fBfgetcsv\fP ($handle, $length=0, $delimiter=',', $enclosure=''', $escape = '\\\\') "
+.br
+.ti -1c
+.RI "\fBfputcsv\fP ($handle, array $fields, $delimiter=',', $enclosure=''', $escape_char = '\\\\') "
+.br
+.ti -1c
+.RI "\fBflock\fP ($handle, $operation, &$wouldblock=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBget_meta_tags\fP ($filename, $use_include_path=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_set_write_buffer\fP ($stream, $buffer)"
+.br
+.ti -1c
+.RI "\fBstream_set_read_buffer\fP ($stream, $buffer)"
+.br
+.ti -1c
+.RI "\fBset_file_buffer\fP ($fp, $buffer)"
+.br
+.ti -1c
+.RI "\fBset_socket_blocking\fP ($socket, $mode)"
+.br
+.ti -1c
+.RI "\fBstream_set_blocking\fP ($stream, $mode)"
+.br
+.ti -1c
+.RI "\fBsocket_set_blocking\fP ($socket, $mode)"
+.br
+.ti -1c
+.RI "\fBstream_get_meta_data\fP ($stream)"
+.br
+.ti -1c
+.RI "\fBstream_get_line\fP ($handle, $length, $ending=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_wrapper_register\fP ($protocol, $classname, $flags=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_register_wrapper\fP ($protocol, $classname, $flags=0)"
+.br
+.ti -1c
+.RI "\fBstream_resolve_include_path\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBstream_wrapper_unregister\fP ($protocol)"
+.br
+.ti -1c
+.RI "\fBstream_wrapper_restore\fP ($protocol)"
+.br
+.ti -1c
+.RI "\fBstream_get_wrappers\fP ()"
+.br
+.ti -1c
+.RI "\fBstream_get_transports\fP ()"
+.br
+.ti -1c
+.RI "\fBstream_is_local\fP ($stream_or_url)"
+.br
+.ti -1c
+.RI "\fBget_headers\fP ($url, $format=\fBnull\fP, $context=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstream_set_timeout\fP ($stream, $seconds, $microseconds=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsocket_set_timeout\fP ($stream, $seconds, $microseconds=0)"
+.br
+.ti -1c
+.RI "\fBsocket_get_status\fP ($stream)"
+.br
+.ti -1c
+.RI "\fBrealpath\fP ($path)"
+.br
+.ti -1c
+.RI "\fBfnmatch\fP ($pattern, $string, $flags=\fBnull\fP)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "fgetcsv ( $handle,  $length = \fC0\fP,  $delimiter = \fC','\fP,  $enclosure = \fC'''\fP,  $escape = \fC'\\\\'\fP)"
+Gets line from file pointer and parse for CSV fields \fBresource $handle \fP \fBA\fP valid file pointer to a file successfully opened by fopen, popen, or fsockopen\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+Must be greater than the longest line (in characters) to be found in the CSV file (allowing for trailing line-end characters)\&. It became optional in PHP 5\&. Omitting this parameter (or setting it to 0 in PHP 5\&.0\&.4 and later) the maximum line length is not limited, which is slightly slower\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$delimiter\fP [optional] 
+.RE
+.PP
+Set the field delimiter (one character only)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$enclosure\fP [optional] 
+.RE
+.PP
+Set the field enclosure character (one character only)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$escape\fP [optional] 
+.RE
+.PP
+Set the escape character (one character only)\&. Defaults as a backslash\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|null|false an indexed array containing the fields read\&. 
+.RE
+.PP
+.PP
+\fBA\fP blank line in a CSV file will be returned as an array comprising a single null field, and will not be treated as an error\&. 
+.PP
+&note\&.line-endings; 
+.PP
+fgetcsv returns  if an invalid handle is supplied or false on other errors, including end of file\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "flock ( $handle,  $operation, & $wouldblock = \fC\fBnull\fP\fP)"
+Portable advisory file locking \fBresource $handle \fP An open file pointer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$operation\fP 
+.RE
+.PP
+operation is one of the following: LOCK_SH to acquire a shared lock (reader)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wouldblock\fP [optional] 
+.RE
+.PP
+The optional third argument is set to true if the lock would block (EWOULDBLOCK errno condition)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "fnmatch ( $pattern,  $string,  $flags = \fC\fBnull\fP\fP)"
+Match filename against a pattern \fBstring $pattern \fP The shell wildcard pattern\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$string\fP 
+.RE
+.PP
+The tested string\&. This function is especially useful for filenames, but may also be used on regular strings\&. 
+.PP
+The average user may be used to shell patterns or at least in their simplest form to '?' and '*' wildcards so using fnmatch instead of preg_match for frontend search expression input may be way more convenient for non-programming users\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+The value of flags can be any combination of the following flags, joined with the binary OR (|) operator\&. list of possible flags for fnmatch 
+.PP
+Flag 
+.PP
+Description  
+.PP
+FNM_NOESCAPE 
+.PP
+Disable backslash escaping\&.   
+.PP
+FNM_PATHNAME 
+.PP
+Slash in string only matches slash in the given pattern\&.   
+.PP
+FNM_PERIOD 
+.PP
+Leading period in string must be exactly matched by period in the given pattern\&.   
+.PP
+FNM_CASEFOLD 
+.PP
+Caseless match\&. Part of the GNU extension\&.   
+.PP
+\fBReturns\fP
+.RS 4
+bool true if there is a match, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "fputcsv ( $handle, array $fields,  $delimiter = \fC','\fP,  $enclosure = \fC'''\fP,  $escape_char = \fC'\\\\'\fP)"
+Format line as CSV and write to file pointer \fBresource $handle The file pointer must be valid, and must point to a file successfully opened by fopen() or fsockopen() (and not yet closed by fclose())\&.  array $fields \fP An array of values\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$delimiter\fP [optional] 
+.RE
+.PP
+The optional delimiter parameter sets the field delimiter (one character only)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$enclosure\fP [optional] 
+.RE
+.PP
+The optional enclosure parameter sets the field enclosure (one character only)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$escape_char\fP The optional escape_char parameter sets the escape character (one character only)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false the length of the written string or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "get_headers ( $url,  $format = \fC\fBnull\fP\fP,  $context = \fC\fBnull\fP\fP)"
+Fetches all the headers sent by the server in response to a HTTP request \fBstring $url \fP The target URL\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$format\fP [optional] 
+.RE
+.PP
+If the optional format parameter is set to non-zero, get_headers parses the response and sets the array's keys\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|false an indexed or associative array with the headers, or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "get_meta_tags ( $filename,  $use_include_path = \fC\fBnull\fP\fP)"
+Extracts all meta tag content attributes from a file and returns an array \fBstring $filename \fP The path to the HTML file, as a string\&. This can be a local file or an URL\&. 
+.PP
+What get_meta_tags parses 
+.PP
+.PP
+.nf
+
+<meta name='author' content='name'>
+<meta name='keywords' content='php documentation'>
+<meta name='DESCRIPTION' content='a php manual'>
+<meta name='geo\&.position' content='49\&.33;-86\&.59'>
+</head> 
+.fi
+.PP
+ <p<blockquote>
+.PP
+(pay attention to line endings - PHP uses a native function to parse the input, so a Mac file won't work on Unix)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$use_include_path\fP [optional] 
+.RE
+.PP
+Setting use_include_path to true will result in PHP trying to open the file along the standard include path as per the include_path directive\&. This is used for local files, not URLs\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array with all the parsed meta tags\&. 
+.RE
+.PP
+.PP
+The value of the name property becomes the key, the value of the content property becomes the value of the returned array, so you can easily use standard array functions to traverse it or access single values\&. Special characters in the value of the name property are substituted with '_', the rest is converted to lower case\&. If two meta tags have the same name, only the last one is returned\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "realpath ( $path)"
+Returns canonicalized absolute pathname \fBstring $path \fP The path being checked\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the canonicalized absolute pathname on success\&. The resulting path will have no symbolic link, '/\&./' or '/\&.\&./' components\&. 
+.RE
+.PP
+.PP
+realpath returns false on failure, e\&.g\&. if the file does not exist\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "set_file_buffer ( $fp,  $buffer)"
+<function>stream_set_write_buffer</function> 
+.PP
+Sets the buffering for write operations on the given stream to buffer bytes\&. Output using \fBfwrite()\fP is normally buffered at 8K\&. This means that if there are two processes wanting to write to the same output stream (a file), each is paused after 8K of data to allow the other to write\&. \fBresource $fp The file pointer\&.  int $buffer The number of bytes to buffer\&. If buffer is 0 then write operations are unbuffered\&. This ensures that all writes with fwrite() are completed before other processes are allowed to write to that output stream\&.  int  4\&.0  5\&.0 \fP
+.SS "set_socket_blocking ( $socket,  $mode)"
+<function>stream_set_blocking</function> 
+.PP
+Sets blocking or non-blocking mode on a stream\&. This function works for any stream that supports non-blocking mode (currently, regular files and socket streams)\&. \fBdeprecated 274\&. resource $socket  bool $mode If mode is FALSE, the given stream will be switched to non-blocking mode, and if TRUE, it will be switched to blocking mode\&. This affects calls like fgets() and fread() that read from the stream\&. In non-blocking mode an fgets() call will always return right away while in blocking mode it will wait for data to become available on the stream\&.  bool Returns TRUE on success or FALSE on failure\&.  4\&.0  5\&.0 \fP
+.SS "socket_get_status ( $stream)"
+<function>stream_get_meta_data</function> Retrieves header/meta data from streams/file pointers \fBresource $stream \fP The stream can be any stream created by fopen, fsockopen and pfsockopen\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array The result array contains the following items: 
+.RE
+.PP
+.PP
+timed_out (bool) - true if the stream timed out while waiting for data on the last call to fread or fgets\&. 
+.PP
+blocked (bool) - true if the stream is in blocking IO mode\&. See stream_set_blocking\&. 
+.PP
+eof (bool) - true if the stream has reached end-of-file\&. Note that for socket streams this member can be true even when unread_bytes is non-zero\&. To determine if there is more data to be read, use feof instead of reading this item\&. 
+.PP
+unread_bytes (int) - the number of bytes currently contained in the PHP's own internal buffer\&. 
+.PP
+You shouldn't use this value in a script\&. 
+.PP
+stream_type (string) - a label describing the underlying implementation of the stream\&. 
+.PP
+wrapper_type (string) - a label describing the protocol wrapper implementation layered over the stream\&. See for more information about wrappers\&. 
+.PP
+wrapper_data (mixed) - wrapper specific data attached to this stream\&. See for more information about wrappers and their wrapper data\&. 
+.PP
+filters (array) - and array containing the names of any filters that have been stacked onto this stream\&. Documentation on filters can be found in the Filters appendix\&. 
+.PP
+mode (string) - the type of access required for this stream (see Table 1 of the \fBfopen()\fP reference) 
+.PP
+seekable (bool) - whether the current stream can be seeked\&. 
+.PP
+uri (string) - the URI/filename associated with this stream\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_set_blocking ( $socket,  $mode)"
+<function>stream_set_blocking</function> \fBresource $socket \fP The stream\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+If mode is FALSE, the given stream will be switched to non-blocking mode, and if TRUE, it will be switched to blocking mode\&. This affects calls like fgets and fread that read from the stream\&. In non-blocking mode an fgets call will always return right away while in blocking mode it will wait for data to become available on the stream\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "socket_set_timeout ( $stream,  $seconds,  $microseconds = \fC0\fP)"
+<function>stream_set_timeout</function> 
+.PP
+Set timeout period on a stream \fBresource $stream \fP The target stream\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$seconds\fP 
+.RE
+.PP
+The seconds part of the timeout to be set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$microseconds\fP [optional] 
+.RE
+.PP
+The microseconds part of the timeout to be set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stream_context_create (array $options = \fC\fBnull\fP\fP, array $params = \fC\fBnull\fP\fP)"
+Create a streams context \fBarray $options [optional] \fP Must be an associative array of associative arrays in the format $arr['wrapper']['option'] = $value\&. 
+.PP
+Default to an empty array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$params\fP [optional] 
+.RE
+.PP
+Must be an associative array in the format $arr['parameter'] = $value\&. Refer to context parameters for a listing of standard stream parameters\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource \fBA\fP stream context resource\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stream_context_get_default (array $options = \fC\fBnull\fP\fP)"
+Retreive the default streams context \fBarray $options [optional] options must be an associative array of associative arrays in the format $arr['wrapper']['option'] = $value\&. \fP As of PHP 5\&.3\&.0, the stream_context_set_default function can be used to set the default context\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource \fBA\fP stream context resource\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "stream_context_get_options ( $stream_or_context)"
+Retrieve options for a stream/wrapper/context \fBresource $stream_or_context \fP The stream or context to get options from 
+.PP
+\fBReturns\fP
+.RS 4
+array an associative array with the options\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stream_context_get_params ( $stream_or_context)"
+Retrieves parameters from a context \fBresource $stream_or_context \fP \fBA\fP stream resource or a context resource 
+.PP
+\fBReturns\fP
+.RS 4
+array an associate array containing all context options and parameters\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "stream_context_set_default (array $options)"
+Set the default streams context \fBarray $options \fP The options to set for the default context\&. 
+.PP
+options must be an associative array of associative arrays in the format $arr['wrapper']['option'] = $value\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource the default stream context\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "stream_context_set_option ( $stream_or_context,  $wrapper,  $option,  $value)"
+Sets an option for a stream/wrapper/context \fBresource $stream_or_context \fP The stream or context resource to apply the options too\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wrapper\fP 
+.br
+\fI$option\fP 
+.br
+\fI$value\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stream_context_set_option ( $stream_or_context, array $options)"
+Sets an option for a stream/wrapper/context \fBresource $stream_or_context The stream or context resource to apply the options too\&.  array $options The options to set for the default context\&.  bool true on success or false on failure\&.  4\&.3  5\&.0 \fP
+.SS "stream_context_set_params ( $stream_or_context, array $params)"
+Set parameters for a stream/wrapper/context \fBresource $stream_or_context \fP The stream or context to apply the parameters too\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$params\fP 
+.RE
+.PP
+An array of parameters to set\&. 
+.PP
+params should be an associative array of the structure: $params['paramname'] = 'paramvalue';\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stream_copy_to_stream ( $source,  $dest,  $maxlength = \fC\fBnull\fP\fP,  $offset = \fC\fBnull\fP\fP)"
+Copies data from one stream to another \fBresource $source \fP The source stream 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dest\fP 
+.RE
+.PP
+The destination stream 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$maxlength\fP [optional] 
+.RE
+.PP
+Maximum bytes to copy 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+The offset where to start to copy data 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the total count of bytes copied, or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "stream_filter_append ( $stream,  $filtername,  $read_write = \fC\fBnull\fP\fP,  $params = \fC\fBnull\fP\fP)"
+Attach a filter to a stream \fBresource $stream \fP The target stream\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filtername\fP 
+.RE
+.PP
+The filter name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$read_write\fP [optional] 
+.RE
+.PP
+By default, stream_filter_append will attach the filter to the read filter chain if the file was opened for reading (i\&.e\&. File Mode: r, and/or +)\&. The filter will also be attached to the write filter chain if the file was opened for writing (i\&.e\&. File Mode: w, a, and/or +)\&. STREAM_FILTER_READ, STREAM_FILTER_WRITE, and/or STREAM_FILTER_ALL can also be passed to the read_write parameter to override this behavior\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$params\fP [optional] 
+.RE
+.PP
+This filter will be added with the specified params to the end of the list and will therefore be called last during stream operations\&. To add a filter to the beginning of the list, use stream_filter_prepend\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource a resource which can be used to refer to this filter instance during a call to stream_filter_remove\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stream_filter_prepend ( $stream,  $filtername,  $read_write = \fC\fBnull\fP\fP,  $params = \fC\fBnull\fP\fP)"
+Attach a filter to a stream \fBresource $stream \fP The target stream\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filtername\fP 
+.RE
+.PP
+The filter name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$read_write\fP [optional] 
+.RE
+.PP
+By default, stream_filter_prepend will attach the filter to the read filter chain if the file was opened for reading (i\&.e\&. File Mode: r, and/or +)\&. The filter will also be attached to the write filter chain if the file was opened for writing (i\&.e\&. File Mode: w, a, and/or +)\&. STREAM_FILTER_READ, STREAM_FILTER_WRITE, and/or STREAM_FILTER_ALL can also be passed to the read_write parameter to override this behavior\&. See stream_filter_append for an example of using this parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$params\fP [optional] 
+.RE
+.PP
+This filter will be added with the specified params to the beginning of the list and will therefore be called first during stream operations\&. To add a filter to the end of the list, use stream_filter_append\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource a resource which can be used to refer to this filter instance during a call to stream_filter_remove\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stream_filter_remove ( $stream_filter)"
+Remove a filter from a stream \fBresource $stream_filter \fP The stream filter to be removed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "stream_get_contents ( $handle,  $maxlength = \fC\fBnull\fP\fP,  $offset = \fC\fBnull\fP\fP)"
+Reads remainder of a stream into a string \fBresource $handle \fP \fBA\fP stream resource (e\&.g\&. returned from fopen) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$maxlength\fP [optional] 
+.RE
+.PP
+The maximum bytes to read\&. Defaults to -1 (read all the remaining buffer)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+Seek to the specified offset before reading\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false a string or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "stream_get_line ( $handle,  $length,  $ending = \fC\fBnull\fP\fP)"
+Gets line from stream resource up to a given delimiter \fBresource $handle \fP \fBA\fP valid file handle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP 
+.RE
+.PP
+The number of bytes to read from the handle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ending\fP [optional] 
+.RE
+.PP
+An optional string delimiter\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false a string of up to length bytes read from the file pointed to by handle\&. 
+.RE
+.PP
+.PP
+If an error occurs, returns false\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "stream_get_meta_data ( $stream)"
+Retrieves header/meta data from streams/file pointers \fBresource $stream \fP The stream can be any stream created by fopen, fsockopen and pfsockopen\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array The result array contains the following items: 
+.RE
+.PP
+.PP
+timed_out (bool) - true if the stream timed out while waiting for data on the last call to fread or fgets\&. 
+.PP
+blocked (bool) - true if the stream is in blocking IO mode\&. See stream_set_blocking\&. 
+.PP
+eof (bool) - true if the stream has reached end-of-file\&. Note that for socket streams this member can be true even when unread_bytes is non-zero\&. To determine if there is more data to be read, use feof instead of reading this item\&. 
+.PP
+unread_bytes (int) - the number of bytes currently contained in the PHP's own internal buffer\&. 
+.PP
+You shouldn't use this value in a script\&. 
+.PP
+stream_type (string) - a label describing the underlying implementation of the stream\&. 
+.PP
+wrapper_type (string) - a label describing the protocol wrapper implementation layered over the stream\&. See for more information about wrappers\&. 
+.PP
+wrapper_data (mixed) - wrapper specific data attached to this stream\&. See for more information about wrappers and their wrapper data\&. 
+.PP
+filters (array) - and array containing the names of any filters that have been stacked onto this stream\&. Documentation on filters can be found in the Filters appendix\&. 
+.PP
+mode (string) - the type of access required for this stream (see Table 1 of the \fBfopen()\fP reference) 
+.PP
+seekable (bool) - whether the current stream can be seeked\&. 
+.PP
+uri (string) - the URI/filename associated with this stream\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stream_get_transports ()"
+Retrieve list of registered socket transports \fBarray an indexed array of socket transports names\&.  5\&.0 \fP
+.SS "stream_get_wrappers ()"
+Retrieve list of registered streams \fBarray an indexed array containing the name of all stream wrappers available on the running system\&.  5\&.0 \fP
+.SS "stream_is_local ( $stream_or_url)"
+Checks if a stream is a local stream \fBmixed $stream_or_url \fP The stream resource or URL to check\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2\&.4 
+.RE
+.PP
+
+.SS "stream_register_wrapper ( $protocol,  $classname,  $flags = \fC0\fP)"
+<function>stream_wrapper_register</function> 
+.PP
+Register a URL wrapper implemented as a PHP class \fBstring $protocol \fP The wrapper name to be registered\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$classname\fP 
+.RE
+.PP
+The classname which implements the protocol\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+Should be set to STREAM_IS_URL if protocol is a URL protocol\&. Default is 0, local stream\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+.PP
+stream_wrapper_register will return false if the protocol already has a handler\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stream_resolve_include_path ( $filename)"
+Resolve filename against the include path according to the same rules as \fBfopen()\fP/include()\&. \fBstring $filename The filename to resolve\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+string|false containing the resolved absolute filename, or FALSE on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3\&.2 
+.RE
+.PP
+
+.SS "stream_select (array & $read, array & $write, array & $except,  $tv_sec,  $tv_usec = \fC\fBnull\fP\fP)"
+Runs the equivalent of the select() system call on the given arrays of streams with a timeout specified by tv_sec and tv_usec \fBarray $read \fP The streams listed in the read array will be watched to see if characters become available for reading (more precisely, to see if a read will not block - in particular, a stream resource is also ready on end-of-file, in which case an fread will return a zero length string)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$write\fP 
+.RE
+.PP
+The streams listed in the write array will be watched to see if a write will not block\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$except\fP 
+.RE
+.PP
+The streams listed in the except array will be watched for high priority exceptional ('out-of-band') data arriving\&. 
+.PP
+When stream_select returns, the arrays read, write and except are modified to indicate which stream resource(s) actually changed status\&. 
+.PP
+You do not need to pass every array to stream_select\&. You can leave it out and use an empty array or  instead\&. Also do not forget that those arrays are passed by reference and will be modified after stream_select returns\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tv_sec\fP 
+.RE
+.PP
+The tv_sec and tv_usec together form the timeout parameter, tv_sec specifies the number of seconds while tv_usec the number of microseconds\&. The timeout is an upper bound on the amount of time that stream_select will wait before it returns\&. If tv_sec and tv_usec are both set to 0, stream_select will not wait for data - instead it will return immediately, indicating the current status of the streams\&. 
+.PP
+If tv_sec is  stream_select can block indefinitely, returning only when an event on one of the watched streams occurs (or if a signal interrupts the system call)\&. 
+.PP
+Using a timeout value of 0 allows you to instantaneously poll the status of the streams, however, it is NOT a good idea to use a 0 timeout value in a loop as it will cause your script to consume too much CPU time\&. 
+.PP
+It is much better to specify a timeout value of a few seconds, although if you need to be checking and running other code concurrently, using a timeout value of at least 200000 microseconds will help reduce the CPU usage of your script\&. 
+.PP
+Remember that the timeout value is the maximum time that will elapse; stream_select will return as soon as the requested streams are ready for use\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tv_usec\fP [optional] 
+.RE
+.PP
+See tv_sec description\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int On success stream_select returns the number of stream resources contained in the modified arrays, which may be zero if the timeout expires before anything interesting happens\&. On error false is returned and a warning raised (this can happen if the system call is interrupted by an incoming signal)\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stream_set_blocking ( $stream,  $mode)"
+Set blocking/non-blocking mode on a stream \fBresource $stream \fP The stream\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+If mode is FALSE, the given stream will be switched to non-blocking mode, and if TRUE, it will be switched to blocking mode\&. This affects calls like fgets and fread that read from the stream\&. In non-blocking mode an fgets call will always return right away while in blocking mode it will wait for data to become available on the stream\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stream_set_read_buffer ( $stream,  $buffer)"
+Sets file buffering on the given stream \fBresource $stream \fP The file pointer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$buffer\fP 
+.RE
+.PP
+The number of bytes to buffer\&. If buffer is 0 then write operations are unbuffered\&. This ensures that all writes with fwrite are completed before other processes are allowed to write to that output stream\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int 0 on success, or EOF if the request cannot be honored\&. 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBstream_set_write_buffer()\fP 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stream_set_timeout ( $stream,  $seconds,  $microseconds = \fC\fBnull\fP\fP)"
+Set timeout period on a stream \fBresource $stream \fP The target stream\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$seconds\fP 
+.RE
+.PP
+The seconds part of the timeout to be set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$microseconds\fP [optional] 
+.RE
+.PP
+The microseconds part of the timeout to be set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stream_set_write_buffer ( $stream,  $buffer)"
+Sets file buffering on the given stream \fBresource $stream \fP The file pointer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$buffer\fP 
+.RE
+.PP
+The number of bytes to buffer\&. If buffer is 0 then write operations are unbuffered\&. This ensures that all writes with fwrite are completed before other processes are allowed to write to that output stream\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int 0 on success, or EOF if the request cannot be honored\&. 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBstream_set_read_buffer()\fP 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stream_socket_accept ( $server_socket,  $timeout = \fC\fBnull\fP\fP, & $peername = \fC\fBnull\fP\fP)"
+Accept a connection on a socket created by <function>stream_socket_server</function> \fBresource $server_socket  float $timeout [optional] \fP Override the default socket accept timeout\&. Time should be given in seconds\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$peername\fP [optional] 
+.RE
+.PP
+Will be set to the name (address) of the client which connected, if included and available from the selected transport\&. 
+.PP
+Can also be determined later using stream_socket_get_name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false Returns a stream to the accepted socket connection or FALSE on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "stream_socket_client ( $remote_socket, & $errno = \fC\fBnull\fP\fP, & $errstr = \fC\fBnull\fP\fP,  $timeout = \fC\fBnull\fP\fP,  $flags = \fC\fBnull\fP\fP,  $context = \fC\fBnull\fP\fP)"
+Open Internet or Unix domain socket connection \fBstring $remote_socket \fP Address to the socket to connect to\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$errno\fP [optional] 
+.RE
+.PP
+Will be set to the system level error number if connection fails\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$errstr\fP [optional] 
+.RE
+.PP
+Will be set to the system level error message if the connection fails\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+Number of seconds until the connect() system call should timeout\&. This parameter only applies when not making asynchronous connection attempts\&. 
+.PP
+To set a timeout for reading/writing data over the socket, use the stream_set_timeout, as the timeout only applies while making connecting the socket\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+Bitmask field which may be set to any combination of connection flags\&. Currently the select of connection flags is limited to STREAM_CLIENT_CONNECT (default), STREAM_CLIENT_ASYNC_CONNECT and STREAM_CLIENT_PERSISTENT\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP [optional] 
+.RE
+.PP
+\fBA\fP valid context resource created with stream_context_create\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false On success a stream resource is returned which may be used together with the other file functions (such as fgets, fgetss, fwrite, fclose, and feof), false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "stream_socket_enable_crypto ( $stream,  $enable,  $crypto_type = \fC\fBnull\fP\fP,  $session_stream = \fC\fBnull\fP\fP)"
+Turns encryption on/off on an already connected socket \fBresource $stream \fP The stream resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$enable\fP 
+.RE
+.PP
+Enable/disable cryptography on the stream\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$crypto_type\fP [optional] 
+.RE
+.PP
+Setup encryption on the stream\&. Valid methods are STREAM_CRYPTO_METHOD_SSLv2_CLIENT 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$session_stream\fP [optional] 
+.RE
+.PP
+Seed the stream with settings from session_stream\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool|int true on success, false if negotiation has failed or 0 if there isn't enough data and you should try again (only for non-blocking sockets)\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "stream_socket_get_name ( $handle,  $want_peer)"
+Retrieve the name of the local or remote sockets \fBresource $handle \fP The socket to get the name of\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$want_peer\fP 
+.RE
+.PP
+If set to true the remote socket name will be returned, if set to false the local socket name will be returned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The name of the socket\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "stream_socket_pair ( $domain,  $type,  $protocol)"
+Creates a pair of connected, indistinguishable socket streams \fBint $domain \fP The protocol family to be used: STREAM_PF_INET, STREAM_PF_INET6 or STREAM_PF_UNIX 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP 
+.RE
+.PP
+The type of communication to be used: STREAM_SOCK_DGRAM, STREAM_SOCK_RAW, STREAM_SOCK_RDM, STREAM_SOCK_SEQPACKET or STREAM_SOCK_STREAM 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$protocol\fP 
+.RE
+.PP
+The protocol to be used: STREAM_IPPROTO_ICMP, STREAM_IPPROTO_IP, STREAM_IPPROTO_RAW, STREAM_IPPROTO_TCP or STREAM_IPPROTO_UDP 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array with the two socket resources on success, or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "stream_socket_recvfrom ( $socket,  $length,  $flags = \fC\fBnull\fP\fP, & $address = \fC\fBnull\fP\fP)"
+Receives data from a socket, connected or not \fBresource $socket \fP The remote socket\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP 
+.RE
+.PP
+The number of bytes to receive from the socket\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+The value of flags can be any combination of the following: values for flags 
+.PP
+STREAM_OOB 
+.PP
+Process OOB (out-of-band) data\&.   
+.PP
+STREAM_PEEK 
+.PP
+Retrieve data from the socket, but do not consume the buffer\&. Subsequent calls to fread or stream_socket_recvfrom will see the same data\&.   
+.PP
+\fBParameters\fP
+.RS 4
+\fI$address\fP [optional] 
+.RE
+.PP
+If address is provided it will be populated with the address of the remote socket\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the read data, as a string 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "stream_socket_sendto ( $socket,  $data,  $flags = \fC\fBnull\fP\fP,  $address = \fC\fBnull\fP\fP)"
+Sends a message to a socket, whether it is connected or not \fBresource $socket \fP The socket to send data to\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+The data to be sent\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+The value of flags can be any combination of the following: values for flags 
+.PP
+STREAM_OOB 
+.PP
+Process OOB (out-of-band) data\&.   
+.PP
+\fBParameters\fP
+.RS 4
+\fI$address\fP [optional] 
+.RE
+.PP
+The address specified when the socket stream was created will be used unless an alternate address is specified in address\&. 
+.PP
+If specified, it must be in dotted quad (or [ipv6]) format\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int a result code, as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "stream_socket_server ( $local_socket, & $errno = \fC\fBnull\fP\fP, & $errstr = \fC\fBnull\fP\fP,  $flags = \fC\fBnull\fP\fP,  $context = \fC\fBnull\fP\fP)"
+Create an Internet or Unix domain server socket \fBstring $local_socket \fP The type of socket created is determined by the transport specified using standard URL formatting: transport://target\&. 
+.PP
+For Internet Domain sockets (AF_INET) such as TCP and UDP, the target portion of the remote_socket parameter should consist of a hostname or IP address followed by a colon and a port number\&. For Unix domain sockets, the target portion should point to the socket file on the filesystem\&. 
+.PP
+Depending on the environment, Unix domain sockets may not be available\&. \fBA\fP list of available transports can be retrieved using stream_get_transports\&. See for a list of bulitin transports\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$errno\fP [optional] 
+.RE
+.PP
+If the optional errno and errstr arguments are present they will be set to indicate the actual system level error that occurred in the system-level socket(), bind(), and listen() calls\&. If the value returned in errno is 0 and the function returned false, it is an indication that the error occurred before the bind() call\&. This is most likely due to a problem initializing the socket\&. Note that the errno and errstr arguments will always be passed by reference\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$errstr\fP [optional] 
+.RE
+.PP
+See errno description\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+\fBA\fP bitmask field which may be set to any combination of socket creation flags\&. 
+.PP
+For UDP sockets, you must use STREAM_SERVER_BIND as the flags parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP [optional] 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+resource|false the created stream, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "stream_socket_shutdown ( $stream,  $how)"
+Shutdown a full-duplex connection \fBresource $stream \fP An open stream (opened with stream_socket_client, for example) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$how\fP 
+.RE
+.PP
+One of the following constants: STREAM_SHUT_RD (disable further receptions), STREAM_SHUT_WR (disable further transmissions) or STREAM_SHUT_RDWR (disable further receptions and transmissions)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2\&.1 
+.RE
+.PP
+
+.SS "stream_supports_lock ( $stream)"
+Tells whether the stream supports locking\&. \fBresource $stream \fP The stream to check\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "stream_wrapper_register ( $protocol,  $classname,  $flags = \fC\fBnull\fP\fP)"
+Register a URL wrapper implemented as a PHP class \fBstring $protocol \fP The wrapper name to be registered\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$classname\fP 
+.RE
+.PP
+The classname which implements the protocol\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+Should be set to STREAM_IS_URL if protocol is a URL protocol\&. Default is 0, local stream\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+.PP
+stream_wrapper_register will return false if the protocol already has a handler\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.3\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stream_wrapper_restore ( $protocol)"
+Restores a previously unregistered built-in wrapper \fBstring $protocol \fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "stream_wrapper_unregister ( $protocol)"
+Unregister a URL wrapper \fBstring $protocol \fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,1767 @@
+.TH "vendor/jetbrains/phpstorm-stubs/date/date.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/date/date.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBstrtotime\fP ($\fBtime\fP, $now='\fBtime\fP()')"
+.br
+.ti -1c
+.RI "\fBdate\fP ($format, $timestamp='\fBtime\fP()')"
+.br
+.ti -1c
+.RI "\fBidate\fP ($format, $timestamp=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBgmdate\fP ($format, $timestamp=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmktime\fP ($hour=\fBnull\fP, $minute=\fBnull\fP, $second=\fBnull\fP, $month=\fBnull\fP, $day=\fBnull\fP, $year=\fBnull\fP, $is_dst=\-1)"
+.br
+.ti -1c
+.RI "\fBgmmktime\fP ($hour=\fBnull\fP, $minute=\fBnull\fP, $second=\fBnull\fP, $month=\fBnull\fP, $day=\fBnull\fP, $year=\fBnull\fP, $is_dst=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBcheckdate\fP ($month, $day, $year)"
+.br
+.ti -1c
+.RI "\fBstrftime\fP ($format, $timestamp=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBgmstrftime\fP ($format, $timestamp=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBtime\fP ()"
+.br
+.ti -1c
+.RI "\fBlocaltime\fP ($timestamp=\fBnull\fP, $is_associative=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBgetdate\fP ($timestamp=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdate_create\fP ($\fBtime\fP=\fBnull\fP, \fBDateTimeZone\fP $timezone=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdate_create_immutable\fP ($\fBtime\fP=\fBnull\fP, \fBDateTimeZone\fP $timezone=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdate_create_immutable_from_format\fP ($format, $\fBtime\fP, \fBDateTimeZone\fP $timezone=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdate_create_from_format\fP ($format, $\fBtime\fP, $timezone=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdate_parse\fP ($\fBdate\fP)"
+.br
+.ti -1c
+.RI "\fBdate_parse_from_format\fP ($format, $\fBdate\fP)"
+.br
+.ti -1c
+.RI "\fBdate_get_last_errors\fP ()"
+.br
+.ti -1c
+.RI "\fBdate_format\fP ($object, $format)"
+.br
+.ti -1c
+.RI "\fBdate_modify\fP ($object, $modify)"
+.br
+.ti -1c
+.RI "\fBdate_add\fP ($object, $interval)"
+.br
+.ti -1c
+.RI "\fBdate_sub\fP ($object, $interval)"
+.br
+.ti -1c
+.RI "\fBdate_timezone_get\fP ($object)"
+.br
+.ti -1c
+.RI "\fBdate_timezone_set\fP ($object, $timezone)"
+.br
+.ti -1c
+.RI "\fBdate_offset_get\fP ($object)"
+.br
+.ti -1c
+.RI "\fBdate_diff\fP ($object, $object2, $absolute=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBdate_time_set\fP ($object, $hour, $minute, $second=0, $microseconds=0)"
+.br
+.ti -1c
+.RI "\fBdate_date_set\fP ($object, $year, $month, $day)"
+.br
+.ti -1c
+.RI "\fBdate_isodate_set\fP ($object, $year, $week, $day=1)"
+.br
+.ti -1c
+.RI "\fBdate_timestamp_set\fP ($object, $unixtimestamp)"
+.br
+.ti -1c
+.RI "\fBdate_timestamp_get\fP ($object)"
+.br
+.ti -1c
+.RI "\fBtimezone_open\fP ($timezone)"
+.br
+.ti -1c
+.RI "\fBtimezone_name_get\fP ($object)"
+.br
+.ti -1c
+.RI "\fBtimezone_name_from_abbr\fP ($abbr, $gmtOffset=\fBnull\fP, $isdst=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBtimezone_offset_get\fP ($object, $datetime)"
+.br
+.ti -1c
+.RI "\fBtimezone_transitions_get\fP ($object, $timestamp_begin, $timestamp_end)"
+.br
+.ti -1c
+.RI "\fBtimezone_location_get\fP ($object)"
+.br
+.ti -1c
+.RI "\fBtimezone_identifiers_list\fP ($what=\fBDateTimeZone::ALL\fP, $country=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBtimezone_abbreviations_list\fP ()"
+.br
+.ti -1c
+.RI "\fBtimezone_version_get\fP ()"
+.br
+.ti -1c
+.RI "\fBdate_interval_create_from_date_string\fP ($\fBtime\fP)"
+.br
+.ti -1c
+.RI "\fBdate_interval_format\fP ($object, $format)"
+.br
+.ti -1c
+.RI "\fBdate_default_timezone_set\fP ($timezone_identifier)"
+.br
+.ti -1c
+.RI "\fBdate_default_timezone_get\fP ()"
+.br
+.ti -1c
+.RI "\fBdate_sunrise\fP ($timestamp, $format=\fBnull\fP, $latitude=\fBnull\fP, $longitude=\fBnull\fP, $zenith=\fBnull\fP, $gmt_offset=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdate_sunset\fP ($timestamp, $format=\fBnull\fP, $latitude=\fBnull\fP, $longitude=\fBnull\fP, $zenith=\fBnull\fP, $gmt_offset=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdate_sun_info\fP ($\fBtime\fP, $latitude, $longitude)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "checkdate ( $month,  $day,  $year)"
+Validate a Gregorian date \fBint $month \fP The month is between 1 and 12 inclusive\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$day\fP 
+.RE
+.PP
+The day is within the allowed number of days for the given month\&. Leap years are taken into consideration\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$year\fP 
+.RE
+.PP
+The year is between 1 and 32767 inclusive\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if the date given is valid; otherwise returns false\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "date ( $format,  $timestamp = \fC'\fBtime\fP()'\fP)"
+Format a local time/date \fBstring $format \fP The format of the outputted date string\&. See the formatting options below\&. There are also several predefined date constants that may be used instead, so for example DATE_RSS contains the format string 'D, d M Y H:i:s'\&. 
+.PP
+The following characters are recognized in the format parameter string format character Description \fBExample\fP returned values  
+.PP
+--- 
+.PP
+---  
+.PP
+d 
+.PP
+Day of the month, 2 digits with leading zeros 
+.PP
+01 to 31  
+.PP
+D 
+.PP
+\fBA\fP textual representation of a day, three letters 
+.PP
+Mon through Sun  
+.PP
+j 
+.PP
+Day of the month without leading zeros 
+.PP
+1 to 31  
+.PP
+l (lowercase 'L') 
+.PP
+\fBA\fP full textual representation of the day of the week 
+.PP
+Sunday through Saturday  
+.PP
+N 
+.PP
+ISO-8601 numeric representation of the day of the week (added in PHP 5\&.1\&.0) 
+.PP
+1 (for Monday) through 7 (for Sunday)  
+.PP
+S 
+.PP
+English ordinal suffix for the day of the month, 2 characters 
+.PP
+st, nd, rd or th\&. Works well with j   
+.PP
+w 
+.PP
+Numeric representation of the day of the week 
+.PP
+0 (for Sunday) through 6 (for Saturday)  
+.PP
+z 
+.PP
+The day of the year (starting from 0) 
+.PP
+0 through 365  
+.PP
+Week 
+.PP
+--- 
+.PP
+---  
+.PP
+W 
+.PP
+ISO-8601 week number of year, weeks starting on Monday (added in PHP 4\&.1\&.0) 
+.PP
+\fBExample\fP: 42 (the 42nd week in the year)  
+.PP
+Month 
+.PP
+--- 
+.PP
+---  
+.PP
+F 
+.PP
+\fBA\fP full textual representation of a month, such as January or March 
+.PP
+January through December  
+.PP
+m 
+.PP
+Numeric representation of a month, with leading zeros 
+.PP
+01 through 12  
+.PP
+M 
+.PP
+\fBA\fP short textual representation of a month, three letters 
+.PP
+Jan through Dec  
+.PP
+n 
+.PP
+Numeric representation of a month, without leading zeros 
+.PP
+1 through 12  
+.PP
+t 
+.PP
+Number of days in the given month 
+.PP
+28 through 31  
+.PP
+Year 
+.PP
+--- 
+.PP
+---  
+.PP
+L 
+.PP
+Whether it's a leap year 
+.PP
+1 if it is a leap year, 0 otherwise\&.  
+.PP
+o 
+.PP
+ISO-8601 year number\&. This has the same value as Y, except that if the ISO week number (W) belongs to the previous or next year, that year is used instead\&. (added in PHP 5\&.1\&.0) 
+.PP
+Examples: 1999 or 2003  
+.PP
+Y 
+.PP
+\fBA\fP full numeric representation of a year, 4 digits 
+.PP
+Examples: 1999 or 2003  
+.PP
+y 
+.PP
+\fBA\fP two digit representation of a year 
+.PP
+Examples: 99 or 03  
+.PP
+Time 
+.PP
+--- 
+.PP
+---  
+.PP
+a 
+.PP
+Lowercase Ante meridiem and Post meridiem 
+.PP
+am or pm  
+.PP
+\fBA\fP 
+.PP
+Uppercase Ante meridiem and Post meridiem 
+.PP
+AM or PM  
+.PP
+\fBB\fP 
+.PP
+Swatch Internet time 
+.PP
+000 through 999  
+.PP
+g 
+.PP
+12-hour format of an hour without leading zeros 
+.PP
+1 through 12  
+.PP
+G 
+.PP
+24-hour format of an hour without leading zeros 
+.PP
+0 through 23  
+.PP
+h 
+.PP
+12-hour format of an hour with leading zeros 
+.PP
+01 through 12  
+.PP
+H 
+.PP
+24-hour format of an hour with leading zeros 
+.PP
+00 through 23  
+.PP
+i 
+.PP
+Minutes with leading zeros 
+.PP
+00 to 59  
+.PP
+s 
+.PP
+Seconds, with leading zeros 
+.PP
+00 through 59  
+.PP
+u 
+.PP
+Microseconds (added in PHP 5\&.2\&.2) 
+.PP
+\fBExample\fP: 654321  
+.PP
+Timezone 
+.PP
+--- 
+.PP
+---  
+.PP
+e 
+.PP
+Timezone identifier (added in PHP 5\&.1\&.0) 
+.PP
+Examples: UTC, GMT, Atlantic/Azores  
+.PP
+I (capital i) 
+.PP
+Whether or not the date is in daylight saving time 
+.PP
+1 if Daylight Saving Time, 0 otherwise\&.  
+.PP
+O 
+.PP
+Difference to Greenwich time (GMT) in hours 
+.PP
+\fBExample\fP: +0200  
+.PP
+P 
+.PP
+Difference to Greenwich time (GMT) with colon between hours and minutes (added in PHP 5\&.1\&.3) 
+.PP
+\fBExample\fP: +02:00  
+.PP
+T 
+.PP
+Timezone abbreviation 
+.PP
+Examples: EST, MDT \&.\&.\&.  
+.PP
+Z 
+.PP
+Timezone offset in seconds\&. The offset for timezones west of UTC is always negative, and for those east of UTC is always positive\&. 
+.PP
+-43200 through 50400  
+.PP
+Full Date/Time 
+.PP
+--- 
+.PP
+---  
+.PP
+c 
+.PP
+ISO 8601 date (added in PHP 5) 
+.PP
+2004-02-12T15:19:21+00:00  
+.PP
+r 
+.PP
+RFC 2822 formatted date 
+.PP
+\fBExample\fP: Thu, 21 Dec 2000 16:01:07 +0200  
+.PP
+U 
+.PP
+Seconds since the Unix Epoch (January 1 1970 00:00:00 GMT) 
+.PP
+See also time  
+.PP
+Unrecognized characters in the format string will be printed as-is\&. The Z format will always return 0 when using gmdate\&. 
+.PP
+Since this function only accepts integer timestamps the u format character is only useful when using the date_format function with user based timestamps created with date_create\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timestamp\fP [optional] The optional timestamp parameter is an integer Unix timestamp that defaults to the current local time if a timestamp is not given\&. In other words, it defaults to the value of \fBtime()\fP\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false a formatted date string\&. If a non-numeric value is used for timestamp, false is returned and an E_WARNING level error is emitted\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "date_add ( $object,  $interval)"
+<methodname>\fBDateTime::add\fP</methodname> \fB$object \fPProcedural style only: \fBA\fP {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime\fP} object returned by {
+.PP
+\fBdate_create()\fP}\&. The \fBfunction\fP modifies this object\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$interval\fP 
+.RE
+.PP
+\fBA\fP {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateInterval\fP} object
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+DateTime|false 
+.RE
+.PP
+Returns the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime\fP} object for method chaining or \fBFALSE\fP on failure\&.
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "date_create ( $time = \fC\fBnull\fP\fP, \fBDateTimeZone\fP $timezone = \fC\fBnull\fP\fP)"
+Returns new \fBDateTime\fP object \fBstring $time [optional] \fP String in a format accepted by strtotime\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timezone\fP [optional] 
+.RE
+.PP
+Time zone of the time\&. 
+.PP
+\fBReturns\fP
+.RS 4
+DateTime|false \fBDateTime\fP object on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "date_create_from_format ( $format,  $time,  $timezone = \fC\fBnull\fP\fP)"
+Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime::createFromFormat\fP} \fBstring $format Format accepted by \fP\fBdate()\fP\&. 
+.RE
+.PP
+If format does not contain the character ! then portions of the generated time which are not specified in format will be set to the current system time\&. 
+.PP
+If format contains the character !, then portions of the generated time not provided in format, as well as values to the left-hand side of the !, will be set to corresponding values from the Unix epoch\&. 
+.PP
+The Unix epoch is 1970-01-01 00:00:00 UTC\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$time\fP String representing the time\&. 
+.br
+\fI$timezone\fP [optional] \fBA\fP \fBDateTimeZone\fP object representing the desired time zone\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+DateTime|false 
+.RE
+.PP
+Returns a new {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime\fP} instance or \fBFALSE\fP on failure\&.
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "date_create_immutable ( $time = \fC\fBnull\fP\fP, \fBDateTimeZone\fP $timezone = \fC\fBnull\fP\fP)"
+(PHP 5\&.5)
+.br
+ Alias for \fBDateTimeImmutable::__construct()\fP Returns new \fBDateTimeImmutable\fP object \fBDateTimeImmutable::__construct()  string $time [optional] \fP String in a format accepted by strtotime\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timezone\fP [optional] 
+.RE
+.PP
+Time zone of the time\&. 
+.PP
+\fBReturns\fP
+.RS 4
+DateTimeImmutable|false \fBDateTime\fP object on success or false on failure\&. 
+.RE
+.PP
+
+.SS "date_create_immutable_from_format ( $format,  $time, \fBDateTimeZone\fP $timezone = \fC\fBnull\fP\fP)"
+Returns new \fBDateTimeImmutable\fP object formatted according to the specified format \fBstring $format  string $time  DateTimeZone $timezone [optional]  DateTimeImmutable \fP
+.SS "date_date_set ( $object,  $year,  $month,  $day)"
+<methodname>\fBDateTime::setDate\fP</methodname> \fB$object \fPProcedural style only: \fBA\fP {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime\fP} object returned by {
+.PP
+\fBdate_create()\fP}\&. The \fBfunction\fP modifies this object\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$year\fP 
+.RE
+.PP
+Year of the date\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$month\fP 
+.RE
+.PP
+Month of the date\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$day\fP 
+.RE
+.PP
+Day of the date\&.
+.PP
+\fBReturns\fP
+.RS 4
+DateTime|false 
+.RE
+.PP
+Returns the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime\fP} object for method chaining or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "date_default_timezone_get ()"
+Gets the default timezone used by all date/time functions in a script \fBstring a string\&.  5\&.1 \fP
+.SS "date_default_timezone_set ( $timezone_identifier)"
+Sets the default timezone used by all date/time functions in a script \fBstring $timezone_identifier \fP The timezone identifier, like UTC or Europe/Lisbon\&. The list of valid identifiers is available in the \&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool This function returns false if the timezone_identifier isn't valid, or true otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "date_diff ( $object,  $object2,  $absolute = \fC\fBfalse\fP\fP)"
+Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime::diff\fP} \fBDateTime $object  DateTime $object2 The date to compare to  bool $absolute [optional] Whether to return absolute difference\&.  DateInterval|false The DateInterval object representing the difference between the two dates or FALSE on failure\&.  5\&.3 \fP
+.RE
+.PP
+
+.SS "date_format ( $object,  $format)"
+Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime::format\fP} \fB$object  $format  string|false formatted date string on success or \fBFALSE\fP on failure\&.  5\&.2 \fP
+.RE
+.PP
+
+.SS "date_get_last_errors ()"
+Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime::getLastErrors\fP} \fBarray \fPReturns array containing info about warnings and errors\&.
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "date_interval_create_from_date_string ( $time)"
+Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateInterval::createFromDateString\fP} \fB$time \fP\fBA\fP \fBdate\fP with relative parts\&. Specifically, the relative formats supported by the parser used for {
+.PP
+\fBstrtotime()\fP} and {
+.PP
+\fBDateTime\fP} will be used to construct the {
+.PP
+\fBDateInterval\fP}\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBDateInterval\fP 
+.RE
+.PP
+Returns a new \fBDateInterval\fP instance\&.
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "date_interval_format ( $object,  $format)"
+<methodname>\fBDateInterval::format\fP</methodname> \fB$object  $format  DateInterval  5\&.3 \fP
+.SS "date_isodate_set ( $object,  $year,  $week,  $day = \fC1\fP)"
+Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime::setISODate\fP} \fBDateTime $object  int $year \fPYear of the \fBdate\fP
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$week\fP 
+.RE
+.PP
+Week of the date\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$day\fP [optional] 
+.RE
+.PP
+Offset from the first day of the week\&.
+.PP
+\fBReturns\fP
+.RS 4
+DateTime|false 
+.RE
+.PP
+Returns the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime\fP} object for method chaining or \fB\fCFALSE\fP\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "date_modify ( $object,  $modify)"
+Alter the timestamp of a \fBDateTime\fP object by incrementing or decrementing in a format accepted by \fBstrtotime()\fP\&. Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime::modify\fP} \fBDateTime $object A DateTime object returned by date_create()\&. The function modifies this object\&.  string $modify A date/time string\&. Valid formats are explained in  https://secure.php.net/manual/en/datetime.formats.php Date and Time Formats}\&.  DateTime|false Returns the DateTime object for method chaining or \fBFALSE\fP on failure\&.  5\&.2 \fP
+.RE
+.PP
+
+.SS "date_offset_get ( $object)"
+Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime::getOffset\fP} \fB$object \fPProcedural style only: \fBA\fP {
+.PP
+\fBDateTime\fP} object returned by {
+.PP
+\fBdate_create()\fP}
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false 
+.RE
+.PP
+Returns the timezone offset in seconds from UTC on success or \fBFALSE\fP on failure\&.
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "date_parse ( $date)"
+Returns associative array with detailed info about given date \fBstring $date \fP Date in format accepted by strtotime\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false array with information about the parsed date on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "date_parse_from_format ( $format,  $date)"
+Get info about given date \fBstring $format \fP Format accepted by date with some extras\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$date\fP 
+.RE
+.PP
+String representing the date\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array associative array with detailed info about given date\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "date_sub ( $object,  $interval)"
+Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime::sub\fP} \fBDateTime $object Procedural style only: A { DateTime} object returned by { date_create()}\&. The function modifies this object\&.  DateInterval $interval \fP\fBA\fP {
+.PP
+\fBDateInterval\fP} object
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+DateTime|false 
+.RE
+.PP
+Returns the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime\fP} object for method chaining or \fBFALSE\fP on failure\&.
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "date_sun_info ( $time,  $latitude,  $longitude)"
+Returns an array with information about sunset/sunrise and twilight begin/end \fBint $time \fP Timestamp\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$latitude\fP 
+.RE
+.PP
+Latitude in degrees\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$longitude\fP 
+.RE
+.PP
+Longitude in degrees\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false array on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1\&.2 
+.RE
+.PP
+
+.SS "date_sunrise ( $timestamp,  $format = \fC\fBnull\fP\fP,  $latitude = \fC\fBnull\fP\fP,  $longitude = \fC\fBnull\fP\fP,  $zenith = \fC\fBnull\fP\fP,  $gmt_offset = \fC\fBnull\fP\fP)"
+Returns time of sunrise for a given day and location \fBint $timestamp \fP The timestamp of the day from which the sunrise time is taken\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$format\fP [optional] 
+.RE
+.PP
+constants 
+.PP
+constant 
+.PP
+description 
+.PP
+example  
+.PP
+SUNFUNCS_RET_STRING 
+.PP
+returns the result as string 
+.PP
+16:46  
+.PP
+SUNFUNCS_RET_DOUBLE 
+.PP
+returns the result as float 
+.PP
+16\&.78243132  
+.PP
+SUNFUNCS_RET_TIMESTAMP 
+.PP
+returns the result as integer (timestamp) 
+.PP
+1095034606  
+.PP
+\fBParameters\fP
+.RS 4
+\fI$latitude\fP [optional] 
+.RE
+.PP
+Defaults to North, pass in a negative value for South\&. See also: date\&.default_latitude 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$longitude\fP [optional] 
+.RE
+.PP
+Defaults to East, pass in a negative value for West\&. See also: date\&.default_longitude 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$zenith\fP [optional] 
+.RE
+.PP
+Default: date\&.sunrise_zenith 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$gmt_offset\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+mixed the sunrise time in a specified format on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "date_sunset ( $timestamp,  $format = \fC\fBnull\fP\fP,  $latitude = \fC\fBnull\fP\fP,  $longitude = \fC\fBnull\fP\fP,  $zenith = \fC\fBnull\fP\fP,  $gmt_offset = \fC\fBnull\fP\fP)"
+Returns time of sunset for a given day and location \fBint $timestamp \fP The timestamp of the day from which the sunset time is taken\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$format\fP [optional] 
+.RE
+.PP
+constants 
+.PP
+constant 
+.PP
+description 
+.PP
+example  
+.PP
+SUNFUNCS_RET_STRING 
+.PP
+returns the result as string 
+.PP
+16:46  
+.PP
+SUNFUNCS_RET_DOUBLE 
+.PP
+returns the result as float 
+.PP
+16\&.78243132  
+.PP
+SUNFUNCS_RET_TIMESTAMP 
+.PP
+returns the result as integer (timestamp) 
+.PP
+1095034606  
+.PP
+\fBParameters\fP
+.RS 4
+\fI$latitude\fP [optional] 
+.RE
+.PP
+Defaults to North, pass in a negative value for South\&. See also: date\&.default_latitude 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$longitude\fP [optional] 
+.RE
+.PP
+Defaults to East, pass in a negative value for West\&. See also: date\&.default_longitude 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$zenith\fP [optional] 
+.RE
+.PP
+Default: date\&.sunset_zenith 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$gmt_offset\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+mixed the sunset time in a specified format on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "date_time_set ( $object,  $hour,  $minute,  $second = \fC0\fP,  $microseconds = \fC0\fP)"
+<methodname>\fBDateTime::setTime\fP</methodname> \fB$object  $hour  $minute  $second [optional]  $microseconds [optional]  DateTime|false \fPReturns the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime\fP} object for method chaining or \fBFALSE\fP on failure\&.
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "date_timestamp_get ( $object)"
+Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime::getTimestamp\fP} \fBDateTimeInterface $object  int \fPReturns the Unix timestamp representing the \fBdate\fP\&.
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "date_timestamp_set ( $object,  $unixtimestamp)"
+<methodname>\fBDateTime::setTimestamp\fP</methodname> \fBDateTime $object \fPProcedural style only: \fBA\fP {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime\fP} object returned by {
+.PP
+\fBdate_create()\fP}\&. The \fBfunction\fP modifies this object\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$unixtimestamp\fP 
+.RE
+.PP
+Unix timestamp representing the date\&.
+.PP
+\fBReturns\fP
+.RS 4
+DateTime|false {
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime\fP} object for call chaining or \fBFALSE\fP on failure 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "date_timezone_get ( $object)"
+Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime::getTimezone\fP} \fB$object \fPProcedural style only: \fBA\fP {
+.PP
+\fBDateTime\fP} object returned by {
+.PP
+\fBdate_create()\fP}
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+DateTimeZone|false 
+.RE
+.PP
+Returns a {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTimeZone\fP} object on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "date_timezone_set ( $object,  $timezone)"
+Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime::setTimezone\fP} \fBDateTime $object \fP\fBA\fP {
+.PP
+\fBDateTime\fP} object returned by {
+.PP
+\fBdate_create()\fP}\&. The \fBfunction\fP modifies this object\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timezone\fP 
+.RE
+.PP
+\fBA\fP {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTimeZone\fP} object representing the desired \fBtime\fP zone\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+DateTime|false 
+.RE
+.PP
+Returns the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTime\fP} object for method chaining or \fBFALSE\fP on failure\&.
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "getdate ( $timestamp = \fC\fBnull\fP\fP)"
+Get date/time information \fBint $timestamp [optional]  array an associative array of information related to the timestamp\&. Elements from the returned associative array are as follows: \fP 
+.PP
+elements of the returned associative array 
+.PP
+Key 
+.PP
+Description 
+.PP
+\fBExample\fP returned values  
+.PP
+'seconds' 
+.PP
+Numeric representation of seconds 
+.PP
+0 to 59  
+.PP
+'minutes' 
+.PP
+Numeric representation of minutes 
+.PP
+0 to 59  
+.PP
+'hours' 
+.PP
+Numeric representation of hours 
+.PP
+0 to 23  
+.PP
+'mday' 
+.PP
+Numeric representation of the day of the month 
+.PP
+1 to 31  
+.PP
+'wday' 
+.PP
+Numeric representation of the day of the week 
+.PP
+0 (for Sunday) through 6 (for Saturday)  
+.PP
+'mon' 
+.PP
+Numeric representation of a month 
+.PP
+1 through 12  
+.PP
+'year' 
+.PP
+\fBA\fP full numeric representation of a year, 4 digits 
+.PP
+Examples: 1999 or 2003  
+.PP
+'yday' 
+.PP
+Numeric representation of the day of the year 
+.PP
+0 through 365  
+.PP
+'weekday' 
+.PP
+\fBA\fP full textual representation of the day of the week 
+.PP
+Sunday through Saturday  
+.PP
+'month' 
+.PP
+\fBA\fP full textual representation of a month, such as January or March 
+.PP
+January through December  
+.PP
+0 
+.PP
+Seconds since the Unix Epoch, similar to the values returned by time and used by date\&.  
+.PP
+System Dependent, typically -2147483648 through 2147483647\&.   
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gmdate ( $format,  $timestamp = \fC\fBnull\fP\fP)"
+Format a GMT/UTC date/time \fBstring $format \fP The format of the outputted date string\&. See the formatting options for the date function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timestamp\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false a formatted date string\&. If a non-numeric value is used for timestamp, false is returned and an E_WARNING level error is emitted\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gmmktime ( $hour = \fC\fBnull\fP\fP,  $minute = \fC\fBnull\fP\fP,  $second = \fC\fBnull\fP\fP,  $month = \fC\fBnull\fP\fP,  $day = \fC\fBnull\fP\fP,  $year = \fC\fBnull\fP\fP,  $is_dst = \fC\fBnull\fP\fP)"
+Get Unix timestamp for a GMT date \fBint $hour [optional] \fP The hour 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$minute\fP [optional] 
+.RE
+.PP
+The minute 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$second\fP [optional] 
+.RE
+.PP
+The second 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$month\fP [optional] 
+.RE
+.PP
+The month 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$day\fP [optional] 
+.RE
+.PP
+The day 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$year\fP [optional] 
+.RE
+.PP
+The year 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$is_dst\fP [optional] 
+.RE
+.PP
+Parameters always represent a GMT date so is_dst doesn't influence the result\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int a integer Unix timestamp\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gmstrftime ( $format,  $timestamp = \fC\fBnull\fP\fP)"
+Format a GMT/UTC time/date according to locale settings \fBstring $format \fP See description in strftime\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timestamp\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string a string formatted according to the given format string using the given timestamp or the current local time if no timestamp is given\&. Month and weekday names and other language dependent strings respect the current locale set with setlocale\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "idate ( $format,  $timestamp = \fC\fBnull\fP\fP)"
+Format a local time/date as integer \fBstring $format \fP following characters are recognized in the format parameter string 
+.PP
+format character 
+.PP
+Description  
+.PP
+\fBB\fP 
+.PP
+Swatch Beat/Internet Time  
+.PP
+d 
+.PP
+Day of the month  
+.PP
+h 
+.PP
+Hour (12 hour format)  
+.PP
+H 
+.PP
+Hour (24 hour format)  
+.PP
+i 
+.PP
+Minutes  
+.PP
+I (uppercase i) 
+.PP
+returns 1 if DST is activated, 0 otherwise  
+.PP
+L (uppercase l) 
+.PP
+returns 1 for leap year, 0 otherwise  
+.PP
+m 
+.PP
+Month number  
+.PP
+s 
+.PP
+Seconds  
+.PP
+t 
+.PP
+Days in current month  
+.PP
+U 
+.PP
+Seconds since the Unix Epoch - January 1 1970 00:00:00 UTC - this is the same as time  
+.PP
+w 
+.PP
+Day of the week (0 on Sunday)  
+.PP
+W 
+.PP
+ISO-8601 week number of year, weeks starting on Monday  
+.PP
+y 
+.PP
+Year (1 or 2 digits - check note below)  
+.PP
+Y 
+.PP
+Year (4 digits)  
+.PP
+z 
+.PP
+Day of the year  
+.PP
+Z 
+.PP
+Timezone offset in seconds  
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timestamp\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int an integer\&. 
+.RE
+.PP
+.PP
+As idate always returns an integer and as they can't start with a '0', idate may return fewer digits than you would expect\&. See the example below\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "localtime ( $timestamp = \fC\fBnull\fP\fP,  $is_associative = \fC\fBnull\fP\fP)"
+Get the local time \fBint $timestamp [optional]  bool $is_associative [optional] \fP If set to false or not supplied then the array is returned as a regular, numerically indexed array\&. If the argument is set to true then localtime returns an associative array containing all the different elements of the structure returned by the C function call to localtime\&. The names of the different keys of the associative array are as follows: 
+.PP
+'tm_sec' - seconds 
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mktime ( $hour = \fC\fBnull\fP\fP,  $minute = \fC\fBnull\fP\fP,  $second = \fC\fBnull\fP\fP,  $month = \fC\fBnull\fP\fP,  $day = \fC\fBnull\fP\fP,  $year = \fC\fBnull\fP\fP,  $is_dst = \fC\-1\fP)"
+Get Unix timestamp for a date \fBint $hour [optional] \fP The number of the hour\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$minute\fP [optional] 
+.RE
+.PP
+The number of the minute\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$second\fP [optional] 
+.RE
+.PP
+The number of seconds past the minute\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$month\fP [optional] 
+.RE
+.PP
+The number of the month\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$day\fP [optional] 
+.RE
+.PP
+The number of the day\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$year\fP [optional] 
+.RE
+.PP
+The number of the year, may be a two or four digit value, with values between 0-69 mapping to 2000-2069 and 70-100 to 1970-2000\&. On systems where time_t is a 32bit signed integer, as most common today, the valid range for year is somewhere between 1901 and 2038\&. However, before PHP 5\&.1\&.0 this range was limited from 1970 to 2038 on some systems (e\&.g\&. Windows)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$is_dst\fP [optional] 
+.RE
+.PP
+Deprecated since 5\&.3\&.0 - use Use the new timezone handling functions instead\&.
+.PP
+This parameter can be set to 1 if the time is during daylight savings time (DST), 0 if it is not, or -1 (the default) if it is unknown whether the time is within daylight savings time or not\&. If it's unknown, PHP tries to figure it out itself\&. This can cause unexpected (but not incorrect) results\&. Some times are invalid if DST is enabled on the system PHP is running on or is_dst is set to 1\&. If DST is enabled in e\&.g\&. 2:00, all times between 2:00 and 3:00 are invalid and mktime returns an undefined (usually negative) value\&. Some systems (e\&.g\&. Solaris 8) enable DST at midnight so time 0:30 of the day when DST is enabled is evaluated as 23:30 of the previous day\&. 
+.PP
+As of PHP 5\&.1\&.0, this parameter became deprecated\&. As a result, the new timezone handling features should be used instead\&. 
+.PP
+This parameter has been removed in PHP 7\&.0\&.0\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false mktime returns the Unix timestamp of the arguments given\&. If the arguments are invalid, the function returns false (before PHP 5\&.1 it returned -1)\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strftime ( $format,  $timestamp = \fC\fBnull\fP\fP)"
+Format a local time/date according to locale settings The following characters are recognized in the format parameter string format Description \fBExample\fP returned values  Day  a An abbreviated textual representation of the day Sun through Sat  A \fBA\fP full textual representation of the day Sunday through Saturday  d Two-digit day of the month (with leading zeros) 01 to 31  e Day of the month, with a space preceding single digits 1 to 31  j Day of the year, 3 digits with leading zeros 001 to 366  u ISO-8601 numeric representation of the day of the week 1 (for Monday) though 7 (for Sunday)  w Numeric representation of the day of the week 0 (for Sunday) through 6 (for Saturday)  Week  U Week number of the given year, starting with the first Sunday as the first week 13 (for the 13th full week of the year)  V ISO-8601:1988 week number of the given year, starting with the first week of the year with at least 4 weekdays, with Monday being the start of the week 01 through 53 (where 53 accounts for an overlapping week)  W \fBA\fP numeric representation of the week of the year, starting with the first Monday as the first week 46 (for the 46th week of the year beginning with a Monday)  Month  b Abbreviated month name, based on the locale Jan through Dec  B Full month name, based on the locale January through December  h Abbreviated month name, based on the locale (an alias of b) Jan through Dec  m Two digit representation of the month 01 (for January) through 12 (for December)  Year  C Two digit representation of the century (year divided by 100, truncated to an integer) 19 for the 20th Century  g Two digit representation of the year going by ISO-8601:1988 standards (see V) \fBExample\fP: 09 for the week of January 6, 2009  G The full four-digit version of g \fBExample\fP: 2008 for the week of January 3, 2009  y Two digit representation of the year \fBExample\fP: 09 for 2009, 79 for 1979  Y Four digit representation for the year \fBExample\fP: 2038  Time  H Two digit representation of the hour in 24-hour format 00 through 23  I Two digit representation of the hour in 12-hour format 01 through 12  l (lower-case 'L') Hour in 12-hour format, with a space preceeding single digits 1 through 12  M Two digit representation of the minute 00 through 59  p UPPER-CASE 'AM' or 'PM' based on the given time \fBExample\fP: AM for 00:31, PM for 22:23  P lower-case 'am' or 'pm' based on the given time \fBExample\fP: am for 00:31, pm for 22:23  r Same as '%I:%M:%S %p' \fBExample\fP: 09:34:17 PM for 21:34:17  R Same as '%H:%M' \fBExample\fP: 00:35 for 12:35 AM, 16:44 for 4:44 PM  S Two digit representation of the second 00 through 59  T Same as '%H:%M:%S' \fBExample\fP: 21:34:17 for 09:34:17 PM  X Preferred time representation based on locale, without the date \fBExample\fP: 03:59:16 or 15:59:16  z Either the time zone offset from UTC or the abbreviation (depends on operating system) \fBExample\fP: -0500 or EST for Eastern Time  Z The time zone offset/abbreviation option NOT given by z (depends on operating system) \fBExample\fP: -0500 or EST for Eastern Time  Time and Date Stamps  c Preferred date and time stamp based on local \fBExample\fP: Tue Feb 5 00:45:10 2009 for February 4, 2009 at 12:45:10 AM  D Same as '%m/%d/%y' \fBExample\fP: 02/05/09 for February 5, 2009  F Same as '%Y-%m-%d' (commonly used in database datestamps) \fBExample\fP: 2009-02-05 for February 5, 2009  s Unix Epoch Time timestamp (same as the time function) \fBExample\fP: 305815200 for September 10, 1979 08:40:00 AM  x Preferred date representation based on locale, without the time \fBExample\fP: 02/05/09 for February 5, 2009  Miscellaneous  n \fBA\fP newline character ('\\n') ---  t \fBA\fP Tab character ('\\t') ---  %% \fBA\fP literal percentage character ('%') ---  
+.PP
+Maximum length of this parameter is 1023 characters\&. 
+.PP
+Contrary to ISO-9899:1999, Sun Solaris starts with Sunday as 1\&. As a result, u may not function as described in this manual\&. \fBstring $format \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timestamp\fP [optional] defaults to the value of \fBtime()\fP Unix timestamp that defaults to the current local time if a timestamp is not given\&.\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string a string formatted according format using the given timestamp or the current local time if no timestamp is given\&. Month and weekday names and other language-dependent strings respect the current locale set with setlocale\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strtotime ( $time,  $now = \fC'\fBtime\fP()'\fP)"
+Parse about any English textual datetime description into a Unix timestamp \fBstring $time \fP The string to parse\&. Before PHP 5\&.0\&.0, microseconds weren't allowed in the time, since PHP 5\&.0\&.0 they are allowed but ignored\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$now\fP [optional] 
+.RE
+.PP
+The timestamp which is used as a base for the calculation of relative dates\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false a timestamp on success, false otherwise\&. Previous to PHP 5\&.1\&.0, this function would return -1 on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "time ()"
+Return current Unix timestamp \fBint \fPReturns the current time measured in the number of seconds since the Unix Epoch (January 1 1970 00:00:00 GMT)\&.
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.PP
+\fBExamples\fP
+.in +1c
+\fB/usr/local/var/www/safaricom\-sdp\-sdk/vendor/jetbrains/phpstorm\-stubs/redis/Redis\&.php\fP\&.
+.SS "timezone_abbreviations_list ()"
+Returns associative array containing dst, offset and the timezone name Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTimeZone::listAbbreviations\fP} \fBarray|false Array on success or \fBFALSE\fP on failure\&.  5\&.2 \fP
+.RE
+.PP
+
+.SS "timezone_identifiers_list ( $what = \fC\fBDateTimeZone::ALL\fP\fP,  $country = \fC\fBnull\fP\fP)"
+Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTimeZone::listIdentifiers()\fP} \fBint $what [optional] One of DateTimeZone class constants\&.  string $country [optional] A two-letter ISO 3166-1 compatible country code\&.  array|false Returns array on success or FALSE on failure\&. Note: This option is only used when what is set to DateTimeZone::PER_COUNTRY\&.  5\&.1 \fP
+.RE
+.PP
+
+.SS "timezone_location_get ( $object)"
+{
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTimeZone::getLocation\fP} \fB$object \fPProcedural style only: \fBA\fP {
+.PP
+\fBDateTimeZone\fP} object returned by {
+.PP
+\fBtimezone_open()\fP} 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+Array containing location information about timezone\&.
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "timezone_name_from_abbr ( $abbr,  $gmtOffset = \fC\fBnull\fP\fP,  $isdst = \fC\fBnull\fP\fP)"
+Returns the timezone name from abbreviation \fBstring $abbr \fP Time zone abbreviation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$gmtOffset\fP [optional] 
+.RE
+.PP
+Offset from GMT in seconds\&. Defaults to -1 which means that first found time zone corresponding to abbr is returned\&. Otherwise exact offset is searched and only if not found then the first time zone with any offset is returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$isdst\fP [optional] 
+.RE
+.PP
+Daylight saving time indicator\&. If abbr doesn't exist then the time zone is searched solely by offset and isdst\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false time zone name on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1\&.3 
+.RE
+.PP
+
+.SS "timezone_name_get ( $object)"
+Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTimeZone::getName\fP} \fB$object \fPThe {
+.PP
+\fBDateTimeZone\fP} for which to get \fBa\fP name\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string One of the timezone names in the list of timezones\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "timezone_offset_get ( $object,  $datetime)"
+Alias: \fBDateTimeZone::getOffset\fP \fB$object \fPProcedural style only: \fBA\fP {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTimeZone\fP} object returned by {
+.PP
+\fBtimezone_open()\fP}
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$datetime\fP 
+.RE
+.PP
+\fBDateTime\fP that contains the date/time to compute the offset from\&.
+.PP
+\fBReturns\fP
+.RS 4
+int|false 
+.RE
+.PP
+Returns time zone offset in seconds on success or \fBFALSE\fP on failure\&.
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "timezone_open ( $timezone)"
+Returns new \fBDateTimeZone\fP object \fBstring $timezone \fP Time zone identifier as full name (e\&.g\&. Europe/Prague) or abbreviation (e\&.g\&. CET)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+DateTimeZone|false \fBDateTimeZone\fP object on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "timezone_transitions_get ( $object,  $timestamp_begin,  $timestamp_end)"
+Alias: {
+.PP
+\fBSee also\fP
+.RS 4
+\fBDateTimeZone::getTransitions\fP} \fBDateTimeZone $object \fPProcedural style only: \fBA\fP {
+.PP
+\fBDateTimeZone\fP} object returned by {
+.PP
+\fBtimezone_open()\fP}
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timestamp_begin\fP [optional] 
+.RE
+.PP
+Begin timestamp
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timestamp_end\fP [optional] 
+.RE
+.PP
+End timestamp
+.PP
+\fBReturns\fP
+.RS 4
+array|false 
+.RE
+.PP
+Returns numerically indexed array containing associative array with all transitions on success or FALSE on failure\&.
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "timezone_version_get ()"
+Gets the version of the timezonedb \fBstring a string\&.  5\&.3 \fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,2746 @@
+\hypertarget{sockets_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/sockets/sockets.php File Reference}
+\label{sockets_8php}\index{vendor/jetbrains/phpstorm-\/stubs/sockets/sockets.php@{vendor/jetbrains/phpstorm-\/stubs/sockets/sockets.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{sockets_8php_a97ed9857440e58bbc42aab26b3681a40}{socket\+\_\+addrinfo\+\_\+lookup}} (\$host, \$service, \$hints)
+\item 
+\mbox{\hyperlink{sockets_8php_a2733927dee2d93f5952e560f0bc2eebb}{socket\+\_\+addrinfo\+\_\+connect}} (\$addr)
+\item 
+\mbox{\hyperlink{sockets_8php_a86b3a8b123902f13003665d99fbd394c}{socket\+\_\+addrinfo\+\_\+bind}} (\$addr)
+\item 
+\mbox{\hyperlink{sockets_8php_a716b65247783873da8a2bbe8d4f15d63}{socket\+\_\+addrinfo\+\_\+explain}} (\$addr)
+\item 
+\mbox{\hyperlink{sockets_8php_a2a718bb86ef2b1ae285ccc122e640bfd}{socket\+\_\+select}} (array \&\$read, array \&\$write, array \&\$except, \$tv\+\_\+sec, \$tv\+\_\+usec=0)
+\item 
+\mbox{\hyperlink{sockets_8php_a30b50c4b09d918f096b5d14fd4eb7875}{socket\+\_\+create}} (\$domain, \$type, \$protocol)
+\item 
+\mbox{\hyperlink{sockets_8php_aa14d41fba3da63391d407d03f6208f32}{socket\+\_\+export\+\_\+stream}} (\$socket)
+\item 
+\mbox{\hyperlink{sockets_8php_a60de1279166d68065ce2c16463bbae76}{socket\+\_\+create\+\_\+listen}} (\$port, \$backlog=128)
+\item 
+\mbox{\hyperlink{sockets_8php_a5c32c9b8421a7c90885f0bda368cf1e2}{socket\+\_\+create\+\_\+pair}} (\$domain, \$type, \$protocol, array \&\$fd)
+\item 
+\mbox{\hyperlink{sockets_8php_aadf092da8ee13ed21c2e4d82419f552f}{socket\+\_\+accept}} (\$socket)
+\item 
+\mbox{\hyperlink{sockets_8php_a47894f56743394d1c5289466e1bfa906}{socket\+\_\+set\+\_\+nonblock}} (\$socket)
+\item 
+\mbox{\hyperlink{sockets_8php_a70430d04cf786ac5fdba6c91beec6ea1}{socket\+\_\+set\+\_\+block}} (\$socket)
+\item 
+\mbox{\hyperlink{sockets_8php_a6445679aa1d063233525c14fa68f1b97}{socket\+\_\+listen}} (\$socket, \$backlog=0)
+\item 
+\mbox{\hyperlink{sockets_8php_adc3d4ad7da22b24a261afa129d21be08}{socket\+\_\+close}} (\$socket)
+\item 
+\mbox{\hyperlink{sockets_8php_a3c92509e53bd1de17229d0515c918681}{socket\+\_\+write}} (\$socket, \$buffer, \$length=0)
+\item 
+\mbox{\hyperlink{sockets_8php_a1af6712025ea6ac87c0b73726925b8a6}{socket\+\_\+read}} (\$socket, \$length, \$type=\mbox{\hyperlink{sockets_8php_adce533c2c77ae0921dbe6d2ce7985dec}{P\+H\+P\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+R\+E\+AD}})
+\item 
+\mbox{\hyperlink{sockets_8php_af5650f57863213981d0a28b00c77ee21}{socket\+\_\+getsockname}} (\$socket, \&\$addr, \&\$port=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{sockets_8php_a18f8dee2b80a028583de5f1c4ccef20e}{socket\+\_\+getpeername}} (\$socket, \&\$address, \&\$port=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{sockets_8php_ab1a5cb6ff78e494f17db61de2f19f2ae}{socket\+\_\+connect}} (\$socket, \$address, \$port=0)
+\item 
+\mbox{\hyperlink{sockets_8php_ab48929223ffd499babae64df815dc604}{socket\+\_\+strerror}} (\$errno)
+\item 
+\mbox{\hyperlink{sockets_8php_a6adb39a45d135261d7d9ce8496548055}{socket\+\_\+bind}} (\$socket, \$address, \$port=0)
+\item 
+\mbox{\hyperlink{sockets_8php_aebde9d7cfe89e11926a59c9b6f9bed5c}{socket\+\_\+recv}} (\$socket, \&\$buf, \$len, \$flags)
+\item 
+\mbox{\hyperlink{sockets_8php_a5add48b4f33d693a7802df7c35e91af1}{socket\+\_\+send}} (\$socket, \$buf, \$len, \$flags)
+\item 
+\mbox{\hyperlink{sockets_8php_a33cbcdd0372a1ec601480eb9165ff7a5}{socket\+\_\+sendmsg}} (\$socket, array \$message, \$flags)
+\item 
+\mbox{\hyperlink{sockets_8php_a64f43140e7019acea56d35d08f9771f6}{socket\+\_\+recvfrom}} (\$socket, \&\$buf, \$len, \$flags, \&\$name, \&\$port=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{sockets_8php_a7beea1ecb7257a6e845720d7e856c50c}{socket\+\_\+recvmsg}} (\$socket, \$message, \$flags)
+\item 
+\mbox{\hyperlink{sockets_8php_a4d0e2fc03e03235e0a7a49820b0c69e0}{socket\+\_\+sendto}} (\$socket, \$buf, \$len, \$flags, \$addr, \$port=0)
+\item 
+\mbox{\hyperlink{sockets_8php_a316cddec16ac1ed981fb41cb50b36f7b}{socket\+\_\+get\+\_\+option}} (\$socket, \$level, \$optname)
+\item 
+\mbox{\hyperlink{sockets_8php_a8fea8bc1e456df2cb00cf1340fb97699}{socket\+\_\+set\+\_\+option}} (\$socket, \$level, \$optname, \$optval)
+\item 
+\mbox{\hyperlink{sockets_8php_afd7606919da1f668c83e36ee021b47b9}{socket\+\_\+shutdown}} (\$socket, \$how=2)
+\item 
+\mbox{\hyperlink{sockets_8php_a4f00f90c64032dc84e018ec25dc16517}{socket\+\_\+last\+\_\+error}} (\$socket=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{sockets_8php_a747b493c62a7409aafd497345418923e}{socket\+\_\+clear\+\_\+error}} (\$socket=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{sockets_8php_ab10c0ae63ff9d2f159973131d5ba3635}{socket\+\_\+import\+\_\+stream}} (\$stream)
+\item 
+\mbox{\hyperlink{sockets_8php_adf7772e9113c5f23ebdaec22b1750898}{socket\+\_\+cmsg\+\_\+space}} (\$level, \$type, \$\mbox{\hyperlink{application__run1_8txt_abbb4eb55adebaf9468df11cca417f770}{n}}=0)
+\item 
+\mbox{\hyperlink{sockets_8php_a8e8ad81b249fcdb28d38fdbb380a7d4f}{socket\+\_\+getopt}} (\$socket, \$level, \$optname)
+\item 
+\mbox{\hyperlink{sockets_8php_a333264cbcd21b1d5ab7c731a093ffee1}{socket\+\_\+setopt}} (\$socket, \$level, \$optname, \$optval)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{sockets_8php_ad13479d4270838fc022da4e79c2b1c34}{A\+F\+\_\+\+U\+N\+IX}} 1
+\item 
+const \mbox{\hyperlink{sockets_8php_a5b2f5a3e5378f4bbbceb390d5b82a9c8}{A\+F\+\_\+\+I\+N\+ET}} 2
+\item 
+const \mbox{\hyperlink{sockets_8php_ad35ae7a3e76604200a5b21fd7d22efb7}{A\+F\+\_\+\+I\+N\+E\+T6}} 10
+\item 
+const \mbox{\hyperlink{sockets_8php_a2fbfb814803f7352a6bc8835065e3ab4}{S\+O\+C\+K\+\_\+\+S\+T\+R\+E\+AM}} 1
+\item 
+const \mbox{\hyperlink{sockets_8php_ae766b18ff4ff0c934f95c650cdad1ded}{S\+O\+C\+K\+\_\+\+D\+G\+R\+AM}} 2
+\item 
+const \mbox{\hyperlink{sockets_8php_a7087ab23db900f3a42a22ed03295b181}{S\+O\+C\+K\+\_\+\+R\+AW}} 3
+\item 
+const \mbox{\hyperlink{sockets_8php_a9ebc217fb74284b80379d96e21c1272d}{S\+O\+C\+K\+\_\+\+S\+E\+Q\+P\+A\+C\+K\+ET}} 5
+\item 
+const \mbox{\hyperlink{sockets_8php_adc7f6a9b2f1224258426f1b25ea03dc3}{S\+O\+C\+K\+\_\+\+R\+DM}} 4
+\item 
+const \mbox{\hyperlink{sockets_8php_a1841c651617988675686fad4df383ffa}{M\+S\+G\+\_\+\+O\+OB}} 1
+\item 
+const \mbox{\hyperlink{sockets_8php_ad0a5304b2bc875a1b1efdb2bcfe57cbf}{M\+S\+G\+\_\+\+W\+A\+I\+T\+A\+LL}} 256
+\item 
+const \mbox{\hyperlink{sockets_8php_aee40441374b1c3f72f1b9e18e721a1ac}{M\+S\+G\+\_\+\+C\+T\+R\+U\+NC}} 8
+\item 
+const \mbox{\hyperlink{sockets_8php_a910e96b0eae60949f59ac86b43426210}{M\+S\+G\+\_\+\+T\+R\+U\+NC}} 32
+\item 
+const \mbox{\hyperlink{sockets_8php_afccf7858594ff23d7fbd0630fb788088}{M\+S\+G\+\_\+\+P\+E\+EK}} 2
+\item 
+const \mbox{\hyperlink{sockets_8php_a9a4e2cb282a42626c1069bb65665dd05}{M\+S\+G\+\_\+\+D\+O\+N\+T\+R\+O\+U\+TE}} 4
+\item 
+const \mbox{\hyperlink{sockets_8php_ade7819d9ab8b417ae2be9a0ba8da7c08}{M\+S\+G\+\_\+\+E\+OR}} 128
+\item 
+const \mbox{\hyperlink{sockets_8php_a51c6242031a625608ef173b3d4d045c8}{M\+S\+G\+\_\+\+E\+OF}} 512
+\item 
+const \mbox{\hyperlink{sockets_8php_a9021d9ea0e038c0b0f05ec295f5d1cb8}{M\+S\+G\+\_\+\+C\+O\+N\+F\+I\+RM}} 2048
+\item 
+const \mbox{\hyperlink{sockets_8php_a51c09912199edb2bdd45c506e265a161}{M\+S\+G\+\_\+\+E\+R\+R\+Q\+U\+E\+UE}} 8192
+\item 
+const \mbox{\hyperlink{sockets_8php_a8def61af8c0a0ea2cf86c80e0e595228}{M\+S\+G\+\_\+\+N\+O\+S\+I\+G\+N\+AL}} 16384
+\item 
+const \mbox{\hyperlink{sockets_8php_a6031d6ced0ab6bd93e1ae3742d167eca}{M\+S\+G\+\_\+\+D\+O\+N\+T\+W\+A\+IT}} 64
+\item 
+const \mbox{\hyperlink{sockets_8php_a2ce74c723c097531c951a9c7b895583b}{M\+S\+G\+\_\+\+M\+O\+RE}} 32768
+\item 
+const \mbox{\hyperlink{sockets_8php_a3b87bbc898c8812c4a38d12737ae143c}{M\+S\+G\+\_\+\+W\+A\+I\+T\+F\+O\+R\+O\+NE}} 65536
+\item 
+const \mbox{\hyperlink{sockets_8php_a05ae8101377bfe4439234e46f583c406}{M\+S\+G\+\_\+\+C\+M\+S\+G\+\_\+\+C\+L\+O\+E\+X\+EC}} 1073741824
+\item 
+const \mbox{\hyperlink{sockets_8php_a761e6fb7238c7f3777a84c2f899c63f2}{S\+O\+\_\+\+D\+E\+B\+UG}} 1
+\item 
+const \mbox{\hyperlink{sockets_8php_ae45808f1218fa1486dbd9be64b373516}{S\+O\+\_\+\+R\+E\+U\+S\+E\+A\+D\+DR}} 2
+\item 
+const \mbox{\hyperlink{sockets_8php_ae388c5c87ecee1c2e5c3b0cdb57c71d6}{S\+O\+\_\+\+R\+E\+U\+S\+E\+P\+O\+RT}} 15
+\item 
+const \mbox{\hyperlink{sockets_8php_ae4531bd855a226fb072d9f55adf13866}{S\+O\+\_\+\+K\+E\+E\+P\+A\+L\+I\+VE}} 9
+\item 
+const \mbox{\hyperlink{sockets_8php_a5036b2d30f4abb530fc32b8f30730190}{S\+O\+\_\+\+D\+O\+N\+T\+R\+O\+U\+TE}} 5
+\item 
+const \mbox{\hyperlink{sockets_8php_a401c16d65dea7b8e11088919072f2284}{S\+O\+\_\+\+L\+I\+N\+G\+ER}} 13
+\item 
+const \mbox{\hyperlink{sockets_8php_a9eaec5be42b8163b688581d388326315}{S\+O\+\_\+\+B\+R\+O\+A\+D\+C\+A\+ST}} 6
+\item 
+const \mbox{\hyperlink{sockets_8php_aadeb09d0dafbeee05e05c8ae0f8f5b31}{S\+O\+\_\+\+O\+O\+B\+I\+N\+L\+I\+NE}} 10
+\item 
+const \mbox{\hyperlink{sockets_8php_a5bf302acdb0e58ea9f8325373abe1563}{S\+O\+\_\+\+S\+N\+D\+B\+UF}} 7
+\item 
+const \mbox{\hyperlink{sockets_8php_a3020bbc04dd0d8ba2488c4b4ea3038bc}{S\+O\+\_\+\+R\+C\+V\+B\+UF}} 8
+\item 
+const \mbox{\hyperlink{sockets_8php_a556e8987a8a24b0defbc6c4934caa4cc}{S\+O\+\_\+\+S\+N\+D\+L\+O\+W\+AT}} 19
+\item 
+const \mbox{\hyperlink{sockets_8php_ab256eb7e847c2d19dc35623fbda9f724}{S\+O\+\_\+\+R\+C\+V\+L\+O\+W\+AT}} 18
+\item 
+const \mbox{\hyperlink{sockets_8php_ace3cc8b4c558ad795574a9a5e4823e53}{S\+O\+\_\+\+S\+N\+D\+T\+I\+M\+EO}} 21
+\item 
+const \mbox{\hyperlink{sockets_8php_ab3a311d8b4e1a4df0664080e85dc95ae}{S\+O\+\_\+\+R\+C\+V\+T\+I\+M\+EO}} 20
+\item 
+const \mbox{\hyperlink{sockets_8php_a09229cb70d1c4ecd1b7d8303bb79b177}{S\+O\+\_\+\+T\+Y\+PE}} 3
+\item 
+const \mbox{\hyperlink{sockets_8php_ab1514d7afcdae3c4678b129509f46cac}{S\+O\+\_\+\+E\+R\+R\+OR}} 4
+\item 
+const \mbox{\hyperlink{sockets_8php_a1ce4638c3d00dabe6b16610eb1a5735b}{S\+O\+\_\+\+B\+I\+N\+D\+T\+O\+D\+E\+V\+I\+CE}} 25
+\item 
+const \mbox{\hyperlink{sockets_8php_a3f4ebb13b5393b49af8de1db30481640}{S\+O\+L\+\_\+\+S\+O\+C\+K\+ET}} 1
+\item 
+const \mbox{\hyperlink{sockets_8php_aa87fa5e1d399e08748d0b3b5d1146ed5}{S\+O\+M\+A\+X\+C\+O\+NN}} 128
+\item 
+const \mbox{\hyperlink{sockets_8php_a6e718032606d30e734b7ef9ce2a524ce}{T\+C\+P\+\_\+\+N\+O\+D\+E\+L\+AY}} 1
+\item 
+const \mbox{\hyperlink{sockets_8php_a0f1566f69c1f0d48be9152a1f8a03278}{P\+H\+P\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+R\+E\+AD}} 1
+\item 
+const \mbox{\hyperlink{sockets_8php_adce533c2c77ae0921dbe6d2ce7985dec}{P\+H\+P\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+R\+E\+AD}} 2
+\item 
+const \mbox{\hyperlink{sockets_8php_abcda5912b862011c1c6348deaf07c202}{M\+C\+A\+S\+T\+\_\+\+J\+O\+I\+N\+\_\+\+G\+R\+O\+UP}} 42
+\item 
+const \mbox{\hyperlink{sockets_8php_a2202c0949f07a42c5d3500f5c737825b}{M\+C\+A\+S\+T\+\_\+\+L\+E\+A\+V\+E\+\_\+\+G\+R\+O\+UP}} 45
+\item 
+const \mbox{\hyperlink{sockets_8php_a6e6b3fb687f80148d43f8b27b82ec251}{M\+C\+A\+S\+T\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}} 43
+\item 
+const \mbox{\hyperlink{sockets_8php_a48cb52751a5213e45a64640796051d42}{M\+C\+A\+S\+T\+\_\+\+U\+N\+B\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}} 44
+\item 
+const \mbox{\hyperlink{sockets_8php_ae9624e98110accbec9d3d9ae8859cb7d}{M\+C\+A\+S\+T\+\_\+\+J\+O\+I\+N\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+G\+R\+O\+UP}} 46
+\item 
+const \mbox{\hyperlink{sockets_8php_aa5c210683f1c12458d62e3682a4b0943}{M\+C\+A\+S\+T\+\_\+\+L\+E\+A\+V\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+G\+R\+O\+UP}} 47
+\item 
+const \mbox{\hyperlink{sockets_8php_ade6109aae31d6b416dcdd8a46d08d699}{I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+IF}} 32
+\item 
+const \mbox{\hyperlink{sockets_8php_aaf6385b9bf79c867cb27612201b38ab9}{I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+T\+TL}} 33
+\item 
+const \mbox{\hyperlink{sockets_8php_a959695551a1220e574544b353b1b8fcb}{I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+L\+O\+OP}} 34
+\item 
+const \mbox{\hyperlink{sockets_8php_aa0cc9eb80aae5e92c6710088be886721}{I\+P\+V6\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+IF}} 17
+\item 
+const \mbox{\hyperlink{sockets_8php_aeabb2da62727cd0037776a34745d04ed}{I\+P\+V6\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+H\+O\+PS}} 18
+\item 
+const \mbox{\hyperlink{sockets_8php_a43d5f72e3a4afa60da1203136f671927}{I\+P\+V6\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+L\+O\+OP}} 19
+\item 
+const \mbox{\hyperlink{sockets_8php_a1ad19112357ba9853fabfebccf04fdfa}{I\+P\+V6\+\_\+\+V6\+O\+N\+LY}} 26
+\item 
+const \mbox{\hyperlink{sockets_8php_a46cf69939762f2339d8f5f02690ece15}{S\+O\+C\+K\+E\+T\+\_\+\+E\+P\+E\+RM}} 1
+\item 
+const \mbox{\hyperlink{sockets_8php_a0ff1672dc82ee0910216556a733547e2}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+E\+NT}} 2
+\item 
+const \mbox{\hyperlink{sockets_8php_a692a4ee6f73256e5249dd4448a2cacbe}{S\+O\+C\+K\+E\+T\+\_\+\+E\+I\+N\+TR}} 4
+\item 
+const \mbox{\hyperlink{sockets_8php_a39a3dfa960c1d5d08788ec26fe58a943}{S\+O\+C\+K\+E\+T\+\_\+\+E\+IO}} 5
+\item 
+const \mbox{\hyperlink{sockets_8php_a9b853f1814f7d8252406be900b6ff677}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+X\+IO}} 6
+\item 
+const \mbox{\hyperlink{sockets_8php_ab8fb1734535dec4d8606c038de4030ab}{S\+O\+C\+K\+E\+T\+\_\+\+E2\+B\+IG}} 7
+\item 
+const \mbox{\hyperlink{sockets_8php_a83de695433b5e892d8ef250949cc314b}{S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+A\+DF}} 9
+\item 
+const \mbox{\hyperlink{sockets_8php_ad4e19bdbad4c803c742154a60270ef62}{S\+O\+C\+K\+E\+T\+\_\+\+E\+A\+G\+A\+IN}} 11
+\item 
+const \mbox{\hyperlink{sockets_8php_a42086a689f62c0ebecfdbbf18423358a}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+M\+EM}} 12
+\item 
+const \mbox{\hyperlink{sockets_8php_a168a33f8a621d50bb7f2986606b78622}{S\+O\+C\+K\+E\+T\+\_\+\+E\+A\+C\+C\+ES}} 13
+\item 
+const \mbox{\hyperlink{sockets_8php_a9ba45720d4575629d70716a9b696a853}{S\+O\+C\+K\+E\+T\+\_\+\+E\+F\+A\+U\+LT}} 14
+\item 
+const \mbox{\hyperlink{sockets_8php_a87249b5cb4b7ce7289bd9b22d8c446c8}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+T\+B\+LK}} 15
+\item 
+const \mbox{\hyperlink{sockets_8php_a42e096e31bb345bcf0884fba15d9f5a9}{S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+U\+SY}} 16
+\item 
+const \mbox{\hyperlink{sockets_8php_adcb6c3c3129af8bf7860b3cf434a09f2}{S\+O\+C\+K\+E\+T\+\_\+\+E\+E\+X\+I\+ST}} 17
+\item 
+const \mbox{\hyperlink{sockets_8php_a20f9656495b99354c03bb52fc37872f0}{S\+O\+C\+K\+E\+T\+\_\+\+E\+X\+D\+EV}} 18
+\item 
+const \mbox{\hyperlink{sockets_8php_a07007c5293cc780058d55c567797a049}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+D\+EV}} 19
+\item 
+const \mbox{\hyperlink{sockets_8php_a10bbdce3113a4d445701d9e89d84f098}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+T\+D\+IR}} 20
+\item 
+const \mbox{\hyperlink{sockets_8php_ae59a2bec15151aca9699fc4ccb738f25}{S\+O\+C\+K\+E\+T\+\_\+\+E\+I\+S\+D\+IR}} 21
+\item 
+const \mbox{\hyperlink{sockets_8php_a7262c2cc0f1e610d200617ba42f502ec}{S\+O\+C\+K\+E\+T\+\_\+\+E\+I\+N\+V\+AL}} 22
+\item 
+const \mbox{\hyperlink{sockets_8php_a0d5cfa1b05b111ab23f7b07444f32bf0}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+F\+I\+LE}} 23
+\item 
+const \mbox{\hyperlink{sockets_8php_a98457d41180fa81efe5566ef4a38534d}{S\+O\+C\+K\+E\+T\+\_\+\+E\+M\+F\+I\+LE}} 24
+\item 
+const \mbox{\hyperlink{sockets_8php_a247104a64d8ea16c30e22f1b3da5526d}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+T\+TY}} 25
+\item 
+const \mbox{\hyperlink{sockets_8php_affcee6366602d9f7568cbd35377cbe0a}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+S\+PC}} 28
+\item 
+const \mbox{\hyperlink{sockets_8php_ad8e0a9dfdc0ebf8160e6502c629fc324}{S\+O\+C\+K\+E\+T\+\_\+\+E\+S\+P\+I\+PE}} 29
+\item 
+const \mbox{\hyperlink{sockets_8php_a3736e31a5277447c3916f8d9819ba2b6}{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+O\+FS}} 30
+\item 
+const \mbox{\hyperlink{sockets_8php_a219dd933352985fef0cc7acecd8170da}{S\+O\+C\+K\+E\+T\+\_\+\+E\+M\+L\+I\+NK}} 31
+\item 
+const \mbox{\hyperlink{sockets_8php_aaa3bf306d26c81365e041ffc2e79e8de}{S\+O\+C\+K\+E\+T\+\_\+\+E\+P\+I\+PE}} 32
+\item 
+const \mbox{\hyperlink{sockets_8php_a2aa5f7fc88fedd8c079ac9808ebef815}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+A\+M\+E\+T\+O\+O\+L\+O\+NG}} 36
+\item 
+const \mbox{\hyperlink{sockets_8php_a72d0e63d21e0fae7e27bc3592c8c4ce3}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+L\+CK}} 37
+\item 
+const \mbox{\hyperlink{sockets_8php_a2acc6c69efa680d97966beac86bddf04}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+S\+YS}} 38
+\item 
+const \mbox{\hyperlink{sockets_8php_a380c5ca8b534bf526aa6a59ff4d3f1c5}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+T\+E\+M\+P\+TY}} 39
+\item 
+const \mbox{\hyperlink{sockets_8php_a410a7e771b1da37d2b6133a440ecf56b}{S\+O\+C\+K\+E\+T\+\_\+\+E\+L\+O\+OP}} 40
+\item 
+const \mbox{\hyperlink{sockets_8php_a6233132d0f02cc44b100c7fe3a310aff}{S\+O\+C\+K\+E\+T\+\_\+\+E\+W\+O\+U\+L\+D\+B\+L\+O\+CK}} 11
+\item 
+const \mbox{\hyperlink{sockets_8php_a6aa5f142d78f63cd956596f0b4de0c7b}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+M\+SG}} 42
+\item 
+const \mbox{\hyperlink{sockets_8php_aaa72a031acd2b060cc6e446ee13ede61}{S\+O\+C\+K\+E\+T\+\_\+\+E\+I\+D\+RM}} 43
+\item 
+const \mbox{\hyperlink{sockets_8php_a40f58eca00090045398a16797d1408eb}{S\+O\+C\+K\+E\+T\+\_\+\+E\+C\+H\+R\+NG}} 44
+\item 
+const \mbox{\hyperlink{sockets_8php_a0d79b7ecb373cb254f0c6e7b2d3ffe54}{S\+O\+C\+K\+E\+T\+\_\+\+E\+L2\+N\+S\+Y\+NC}} 45
+\item 
+const \mbox{\hyperlink{sockets_8php_acb3befe96a5959ca931d2d7917b2fa2e}{S\+O\+C\+K\+E\+T\+\_\+\+E\+L3\+H\+LT}} 46
+\item 
+const \mbox{\hyperlink{sockets_8php_abea3fd9b525b60a2f40a60e68880d4bb}{S\+O\+C\+K\+E\+T\+\_\+\+E\+L3\+R\+ST}} 47
+\item 
+const \mbox{\hyperlink{sockets_8php_a0b620944c4cc15e38e4fee4f20044400}{S\+O\+C\+K\+E\+T\+\_\+\+E\+L\+N\+R\+NG}} 48
+\item 
+const \mbox{\hyperlink{sockets_8php_acaf01ee38d7bfe73cf21183407dc5458}{S\+O\+C\+K\+E\+T\+\_\+\+E\+U\+N\+A\+T\+CH}} 49
+\item 
+const \mbox{\hyperlink{sockets_8php_a9d4330ea87606b8fc1ef4c9ecfb7cee9}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+C\+SI}} 50
+\item 
+const \mbox{\hyperlink{sockets_8php_a6d52d2d366b42e1960521eb7a06b8406}{S\+O\+C\+K\+E\+T\+\_\+\+E\+L2\+H\+LT}} 51
+\item 
+const \mbox{\hyperlink{sockets_8php_a88fef58c2c88755333d579918153b795}{S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+A\+DE}} 52
+\item 
+const \mbox{\hyperlink{sockets_8php_a59b3efc24ba4b6ba346718e39cc3fd5a}{S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+A\+DR}} 53
+\item 
+const \mbox{\hyperlink{sockets_8php_ac4ad9a396c5ddc1ff38e6dc22b76d1c2}{S\+O\+C\+K\+E\+T\+\_\+\+E\+X\+F\+U\+LL}} 54
+\item 
+const \mbox{\hyperlink{sockets_8php_ac7a94c0ff6efebd5e379934d43a86354}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+A\+NO}} 55
+\item 
+const \mbox{\hyperlink{sockets_8php_a2c7deac942c0552671d4d82bdde0423d}{S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+A\+D\+R\+QC}} 56
+\item 
+const \mbox{\hyperlink{sockets_8php_a3cc4bf15554a864a1d04ca45f8847d91}{S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+A\+D\+S\+LT}} 57
+\item 
+const \mbox{\hyperlink{sockets_8php_a0de9383eb0aeae4a57f3ca800a08f7f3}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+S\+TR}} 60
+\item 
+const \mbox{\hyperlink{sockets_8php_a6e29672ace3d265d4c8f14348a04b242}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+D\+A\+TA}} 61
+\item 
+const \mbox{\hyperlink{sockets_8php_a764c5e63ade137fa9b02cab9455f02a3}{S\+O\+C\+K\+E\+T\+\_\+\+E\+T\+I\+ME}} 62
+\item 
+const \mbox{\hyperlink{sockets_8php_a86172f7800038cc03dc95d8d4e5d7618}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+SR}} 63
+\item 
+const \mbox{\hyperlink{sockets_8php_afe342f717730f424d80753de0bc43a89}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+N\+ET}} 64
+\item 
+const \mbox{\hyperlink{sockets_8php_afc3d76fe0b7c70ec84a7eba480f71a07}{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+E\+M\+O\+TE}} 66
+\item 
+const \mbox{\hyperlink{sockets_8php_a6eebcbd87bdedacc207aaee21ab2e531}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+L\+I\+NK}} 67
+\item 
+const \mbox{\hyperlink{sockets_8php_a237bc26d4709dc667da2bf10dc19391c}{S\+O\+C\+K\+E\+T\+\_\+\+E\+A\+DV}} 68
+\item 
+const \mbox{\hyperlink{sockets_8php_a486b93cba89f8f8bedebf1eb2c54a7ee}{S\+O\+C\+K\+E\+T\+\_\+\+E\+S\+R\+M\+NT}} 69
+\item 
+const \mbox{\hyperlink{sockets_8php_a3c965d171659102b3a2afad723e7874e}{S\+O\+C\+K\+E\+T\+\_\+\+E\+C\+O\+MM}} 70
+\item 
+const \mbox{\hyperlink{sockets_8php_ae0598de140628d812917be18e80d20a7}{S\+O\+C\+K\+E\+T\+\_\+\+E\+P\+R\+O\+TO}} 71
+\item 
+const \mbox{\hyperlink{sockets_8php_a27a6f0a4ee55021e42b2803cb4c4b679}{S\+O\+C\+K\+E\+T\+\_\+\+E\+M\+U\+L\+T\+I\+H\+OP}} 72
+\item 
+const \mbox{\hyperlink{sockets_8php_aa0eee87f66a076500277d44ea84c28dc}{S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+A\+D\+M\+SG}} 74
+\item 
+const \mbox{\hyperlink{sockets_8php_a48f453ca2052f379a3b51e30f2e08151}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+T\+U\+N\+IQ}} 76
+\item 
+const \mbox{\hyperlink{sockets_8php_a76dc01ab1fc51095a135ae845be68cfd}{S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+A\+D\+FD}} 77
+\item 
+const \mbox{\hyperlink{sockets_8php_a134297cd7563a0c64ac17ea839fb67db}{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+E\+M\+C\+HG}} 78
+\item 
+const \mbox{\hyperlink{sockets_8php_a85d42970df2b5f192d4df47f7a2c2912}{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+E\+S\+T\+A\+RT}} 85
+\item 
+const \mbox{\hyperlink{sockets_8php_a84724270fec07cc29fa50d88bb866d85}{S\+O\+C\+K\+E\+T\+\_\+\+E\+S\+T\+R\+P\+I\+PE}} 86
+\item 
+const \mbox{\hyperlink{sockets_8php_a878285538c7bd5fbbd738283f375b9ba}{S\+O\+C\+K\+E\+T\+\_\+\+E\+U\+S\+E\+RS}} 87
+\item 
+const \mbox{\hyperlink{sockets_8php_a9a425880db6b8c3dc19c510c1dc0b489}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+T\+S\+O\+CK}} 88
+\item 
+const \mbox{\hyperlink{sockets_8php_a5e94d4982506d6fa157d0577b13a19b0}{S\+O\+C\+K\+E\+T\+\_\+\+E\+D\+E\+S\+T\+A\+D\+D\+R\+R\+EQ}} 89
+\item 
+const \mbox{\hyperlink{sockets_8php_a3514105a1a5bad0744af3c1da8bfb1b3}{S\+O\+C\+K\+E\+T\+\_\+\+E\+M\+S\+G\+S\+I\+ZE}} 90
+\item 
+const \mbox{\hyperlink{sockets_8php_a53ae396307ab2a8cfb51814ca7313cee}{S\+O\+C\+K\+E\+T\+\_\+\+E\+P\+R\+O\+T\+O\+T\+Y\+PE}} 91
+\item 
+const \mbox{\hyperlink{sockets_8php_a10c2c20542a782f483c88e3f8620d0e7}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+P\+R\+O\+T\+O\+O\+PT}} 92
+\item 
+const \mbox{\hyperlink{sockets_8php_a4aa4107a46fc857be288b94a0c2d078c}{S\+O\+C\+K\+E\+T\+\_\+\+E\+P\+R\+O\+T\+O\+N\+O\+S\+U\+P\+P\+O\+RT}} 93
+\item 
+const \mbox{\hyperlink{sockets_8php_a736bffbf832a1c871ff3d4da26e9480b}{S\+O\+C\+K\+E\+T\+\_\+\+E\+S\+O\+C\+K\+T\+N\+O\+S\+U\+P\+P\+O\+RT}} 94
+\item 
+const \mbox{\hyperlink{sockets_8php_ad084dfff462a3715af9f9c67c11ec536}{S\+O\+C\+K\+E\+T\+\_\+\+E\+O\+P\+N\+O\+T\+S\+U\+PP}} 95
+\item 
+const \mbox{\hyperlink{sockets_8php_ab425f419a67026283acfeaad3237836c}{S\+O\+C\+K\+E\+T\+\_\+\+E\+P\+F\+N\+O\+S\+U\+P\+P\+O\+RT}} 96
+\item 
+const \mbox{\hyperlink{sockets_8php_aba8301f4a0eecf71d47a742242fb70df}{S\+O\+C\+K\+E\+T\+\_\+\+E\+A\+F\+N\+O\+S\+U\+P\+P\+O\+RT}} 97
+\item 
+const \mbox{\hyperlink{sockets_8php_ab6275063f58267f9d4dd3327c7c8cb9b}{S\+O\+C\+K\+E\+T\+\_\+\+E\+A\+D\+D\+R\+I\+N\+U\+SE}} 98
+\item 
+const \mbox{\hyperlink{sockets_8php_a1b097ecc6dd545ef194df2936661dead}{S\+O\+C\+K\+E\+T\+\_\+\+E\+A\+D\+D\+R\+N\+O\+T\+A\+V\+A\+IL}} 99
+\item 
+const \mbox{\hyperlink{sockets_8php_a6bd2e93d5f6783d87290148e71dbe8fe}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+E\+T\+D\+O\+WN}} 100
+\item 
+const \mbox{\hyperlink{sockets_8php_a3d907b33d99bb74f2e84857f638ced4c}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+E\+T\+U\+N\+R\+E\+A\+CH}} 101
+\item 
+const \mbox{\hyperlink{sockets_8php_a3692d3fffff5a1041944d49319b44b7d}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+E\+T\+R\+E\+S\+ET}} 102
+\item 
+const \mbox{\hyperlink{sockets_8php_ae1711a9eba0c52f3e58bfeae8baf549e}{S\+O\+C\+K\+E\+T\+\_\+\+E\+C\+O\+N\+N\+A\+B\+O\+R\+T\+ED}} 103
+\item 
+const \mbox{\hyperlink{sockets_8php_a735e32d492601326465974966aa1c21a}{S\+O\+C\+K\+E\+T\+\_\+\+E\+C\+O\+N\+N\+R\+E\+S\+ET}} 104
+\item 
+const \mbox{\hyperlink{sockets_8php_ae89a8a5ebfda03b92b316c1d5c59c89f}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+B\+U\+FS}} 105
+\item 
+const \mbox{\hyperlink{sockets_8php_a75c2f939097858e2623a4e5ba669635a}{S\+O\+C\+K\+E\+T\+\_\+\+E\+I\+S\+C\+O\+NN}} 106
+\item 
+const \mbox{\hyperlink{sockets_8php_a0cf30ad6efb8e619344daa89d22e4ce0}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+T\+C\+O\+NN}} 107
+\item 
+const \mbox{\hyperlink{sockets_8php_a8ae814cbbf1511b3011b40c0b42ab168}{S\+O\+C\+K\+E\+T\+\_\+\+E\+S\+H\+U\+T\+D\+O\+WN}} 108
+\item 
+const \mbox{\hyperlink{sockets_8php_a8f054e8d7bd8777d90da16e0aea2531c}{S\+O\+C\+K\+E\+T\+\_\+\+E\+T\+O\+O\+M\+A\+N\+Y\+R\+E\+FS}} 109
+\item 
+const \mbox{\hyperlink{sockets_8php_a543167de8b9a9a84d4d053863d2c468b}{S\+O\+C\+K\+E\+T\+\_\+\+E\+T\+I\+M\+E\+D\+O\+UT}} 110
+\item 
+const \mbox{\hyperlink{sockets_8php_a498be00ae3f882426df9d4cf425c6977}{S\+O\+C\+K\+E\+T\+\_\+\+E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED}} 111
+\item 
+const \mbox{\hyperlink{sockets_8php_ada94b6d186bfab244fcef2d13c87182f}{S\+O\+C\+K\+E\+T\+\_\+\+E\+H\+O\+S\+T\+D\+O\+WN}} 112
+\item 
+const \mbox{\hyperlink{sockets_8php_a3ec1eaeaade108f2eeee8917869e5342}{S\+O\+C\+K\+E\+T\+\_\+\+E\+H\+O\+S\+T\+U\+N\+R\+E\+A\+CH}} 113
+\item 
+const \mbox{\hyperlink{sockets_8php_a3710fd53bfaa3d9e75cf500bc412d3ff}{S\+O\+C\+K\+E\+T\+\_\+\+E\+A\+L\+R\+E\+A\+DY}} 114
+\item 
+const \mbox{\hyperlink{sockets_8php_af99b1dc00c3ddbd654647125312ff6bc}{S\+O\+C\+K\+E\+T\+\_\+\+E\+I\+N\+P\+R\+O\+G\+R\+E\+SS}} 115
+\item 
+const \mbox{\hyperlink{sockets_8php_ad7d6a65b0cb10f5e9d3823fb202ded2f}{S\+O\+C\+K\+E\+T\+\_\+\+E\+I\+S\+N\+AM}} 120
+\item 
+const \mbox{\hyperlink{sockets_8php_ac8bbc32ceedb88b4437eb91a6b3e21d7}{S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+E\+M\+O\+T\+E\+IO}} 121
+\item 
+const \mbox{\hyperlink{sockets_8php_a25c391ccfe88ecdb4952d9d2117b42f4}{S\+O\+C\+K\+E\+T\+\_\+\+E\+D\+Q\+U\+OT}} 122
+\item 
+const \mbox{\hyperlink{sockets_8php_a560be67749e25951920f721bf23df6dd}{S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+M\+E\+D\+I\+UM}} 123
+\item 
+const \mbox{\hyperlink{sockets_8php_a8b9536a8d571da2c355e39fa9caafef5}{S\+O\+C\+K\+E\+T\+\_\+\+E\+M\+E\+D\+I\+U\+M\+T\+Y\+PE}} 124
+\item 
+const \mbox{\hyperlink{sockets_8php_a22bbde639b50fe8db3f321beb9ebc81c}{I\+P\+P\+R\+O\+T\+O\+\_\+\+IP}} 0
+\item 
+const \mbox{\hyperlink{sockets_8php_aae3d014dc202b7ecdf503489848f1e37}{I\+P\+P\+R\+O\+T\+O\+\_\+\+I\+P\+V6}} 41
+\item 
+const \mbox{\hyperlink{sockets_8php_a2703b7dca6968d4a4063d5e6abc26f59}{S\+O\+L\+\_\+\+T\+CP}} 6
+\item 
+const \mbox{\hyperlink{sockets_8php_acf583888ae860faaf5d7a747a02781c7}{S\+O\+L\+\_\+\+U\+DP}} 17
+\item 
+const \mbox{\hyperlink{sockets_8php_a27164650fd5b72c5838b37ea9238785f}{I\+P\+V6\+\_\+\+U\+N\+I\+C\+A\+S\+T\+\_\+\+H\+O\+PS}} 16
+\item 
+const \mbox{\hyperlink{sockets_8php_a786b6735f20704efb1f4534d0455bf38}{I\+P\+V6\+\_\+\+R\+E\+C\+V\+P\+K\+T\+I\+N\+FO}} 49
+\item 
+const \mbox{\hyperlink{sockets_8php_a274436e62a2de23b0f39b213ae8ac662}{I\+P\+V6\+\_\+\+P\+K\+T\+I\+N\+FO}} 50
+\item 
+const \mbox{\hyperlink{sockets_8php_a0605561c4e361c55fc4515055bd814ac}{I\+P\+V6\+\_\+\+R\+E\+C\+V\+H\+O\+P\+L\+I\+M\+IT}} 51
+\item 
+const \mbox{\hyperlink{sockets_8php_af793aa4d38694870bd3b3b3dcfbec2aa}{I\+P\+V6\+\_\+\+H\+O\+P\+L\+I\+M\+IT}} 52
+\item 
+const \mbox{\hyperlink{sockets_8php_ad624e8517955f96fc23ee080f2ca31e1}{I\+P\+V6\+\_\+\+R\+E\+C\+V\+T\+C\+L\+A\+SS}} 66
+\item 
+const \mbox{\hyperlink{sockets_8php_a28952797da47d467e9d6bc60a10ef73b}{I\+P\+V6\+\_\+\+T\+C\+L\+A\+SS}} 67
+\item 
+const \mbox{\hyperlink{sockets_8php_af08ed4879ebd5ef6e16eb4ff4963516e}{S\+C\+M\+\_\+\+R\+I\+G\+H\+TS}} 1
+\item 
+const \mbox{\hyperlink{sockets_8php_aa7a20bd1cc32beb58c32fbac2a419d9a}{S\+C\+M\+\_\+\+C\+R\+E\+D\+E\+N\+T\+I\+A\+LS}} 2
+\item 
+const \mbox{\hyperlink{sockets_8php_ae23796f1ae6eaca693130f645bf595cd}{S\+O\+\_\+\+P\+A\+S\+S\+C\+R\+ED}} 16
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sockets_8php_aadf092da8ee13ed21c2e4d82419f552f}\label{sockets_8php_aadf092da8ee13ed21c2e4d82419f552f}} 
+\index{sockets.php@{sockets.php}!socket\_accept@{socket\_accept}}
+\index{socket\_accept@{socket\_accept}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_accept()}{socket\_accept()}}
+{\footnotesize\ttfamily socket\+\_\+accept (\begin{DoxyParamCaption}\item[{}]{\$socket }\end{DoxyParamCaption})}
+
+Accepts a connection on a socket \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} \mbox{\hyperlink{class_a}{A}} valid socket resource created with {\bfseries{socket\+\_\+create}}. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false a new socket resource on success, or {\bfseries{F\+A\+L\+SE}} on error. The actual error code can be retrieved by calling {\bfseries{socket\+\_\+last\+\_\+error}}. This error code may be passed to {\bfseries{socket\+\_\+strerror}} to get a textual explanation of the error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a86b3a8b123902f13003665d99fbd394c}\label{sockets_8php_a86b3a8b123902f13003665d99fbd394c}} 
+\index{sockets.php@{sockets.php}!socket\_addrinfo\_bind@{socket\_addrinfo\_bind}}
+\index{socket\_addrinfo\_bind@{socket\_addrinfo\_bind}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_addrinfo\_bind()}{socket\_addrinfo\_bind()}}
+{\footnotesize\ttfamily socket\+\_\+addrinfo\+\_\+bind (\begin{DoxyParamCaption}\item[{}]{\$addr }\end{DoxyParamCaption})}
+
+(P\+HP 7 $>$= 7.\+2.\+0)~\newline
+ Create a Socket resource, and bind it to the provided Addr\+Info resource.~\newline
+ The return value of this function may be used with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{sockets_8php_a6445679aa1d063233525c14fa68f1b97}{socket\+\_\+listen()}}\}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$addr }} Resource created from \{
+
+\mbox{\hyperlink{sockets_8php_a97ed9857440e58bbc42aab26b3681a40}{socket\+\_\+addrinfo\+\_\+lookup()}}\} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+resource Socket resource on success or N\+U\+LL on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a2733927dee2d93f5952e560f0bc2eebb}\label{sockets_8php_a2733927dee2d93f5952e560f0bc2eebb}} 
+\index{sockets.php@{sockets.php}!socket\_addrinfo\_connect@{socket\_addrinfo\_connect}}
+\index{socket\_addrinfo\_connect@{socket\_addrinfo\_connect}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_addrinfo\_connect()}{socket\_addrinfo\_connect()}}
+{\footnotesize\ttfamily socket\+\_\+addrinfo\+\_\+connect (\begin{DoxyParamCaption}\item[{}]{\$addr }\end{DoxyParamCaption})}
+
+(P\+HP 7 $>$= 7.\+2.\+0)~\newline
+ Create a Socket resource, and connect it to the provided Addr\+Info resource.~\newline
+ The return value of this function may be used with the rest of the socket functions. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$addr }} Resource created from \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{sockets_8php_a97ed9857440e58bbc42aab26b3681a40}{socket\+\_\+addrinfo\+\_\+lookup()}}\} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+resource Socket resource on success or N\+U\+LL on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a716b65247783873da8a2bbe8d4f15d63}\label{sockets_8php_a716b65247783873da8a2bbe8d4f15d63}} 
+\index{sockets.php@{sockets.php}!socket\_addrinfo\_explain@{socket\_addrinfo\_explain}}
+\index{socket\_addrinfo\_explain@{socket\_addrinfo\_explain}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_addrinfo\_explain()}{socket\_addrinfo\_explain()}}
+{\footnotesize\ttfamily socket\+\_\+addrinfo\+\_\+explain (\begin{DoxyParamCaption}\item[{}]{\$addr }\end{DoxyParamCaption})}
+
+(P\+HP 7 $>$= 7.\+2.\+0)~\newline
+ Get information about addrinfo \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$addr }} Resource created from \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{sockets_8php_a97ed9857440e58bbc42aab26b3681a40}{socket\+\_\+addrinfo\+\_\+lookup()}}\} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+array containing the fields in the addrinfo structure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a97ed9857440e58bbc42aab26b3681a40}\label{sockets_8php_a97ed9857440e58bbc42aab26b3681a40}} 
+\index{sockets.php@{sockets.php}!socket\_addrinfo\_lookup@{socket\_addrinfo\_lookup}}
+\index{socket\_addrinfo\_lookup@{socket\_addrinfo\_lookup}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_addrinfo\_lookup()}{socket\_addrinfo\_lookup()}}
+{\footnotesize\ttfamily socket\+\_\+addrinfo\+\_\+lookup (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$service,  }\item[{}]{\$hints }\end{DoxyParamCaption})}
+
+(P\+HP 7 $>$= 7.\+2.\+0)~\newline
+ Get array with contents of getaddrinfo about the given hostname. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }} Hostname to search. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$service} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The service to connect to. If service is a name, it is translated to the corresponding port number. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$hints} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Hints provide criteria for selecting addresses returned. You may specify the hints as defined by getadrinfo. 
+
+\begin{DoxyReturn}{Returns}
+array of Addr\+Info resource handles that can be used with the other socket\+\_\+addrinfo functions. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a6adb39a45d135261d7d9ce8496548055}\label{sockets_8php_a6adb39a45d135261d7d9ce8496548055}} 
+\index{sockets.php@{sockets.php}!socket\_bind@{socket\_bind}}
+\index{socket\_bind@{socket\_bind}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_bind()}{socket\_bind()}}
+{\footnotesize\ttfamily socket\+\_\+bind (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{}]{\$address,  }\item[{}]{\$port = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Binds a name to a socket \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} \mbox{\hyperlink{class_a}{A}} valid socket resource created with {\bfseries{socket\+\_\+create}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & \\
+\hline
+\end{DoxyParams}
+If the socket is of the {\bfseries{A\+F\+\_\+\+I\+N\+ET}} family, the {\itshape address} is an IP in dotted-\/quad notation (e.\+g. 127.\+0.\+0.\+1). 
+
+If the socket is of the {\bfseries{A\+F\+\_\+\+U\+N\+IX}} family, the {\itshape address} is the path of a Unix-\/domain socket (e.\+g. /tmp/my.sock). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$port} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The {\itshape port} parameter is only used when binding an {\bfseries{A\+F\+\_\+\+I\+N\+ET}} socket, and designates the port on which to listen for connections. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+
+
+The error code can be retrieved with {\bfseries{socket\+\_\+last\+\_\+error}}. This code may be passed to {\bfseries{socket\+\_\+strerror}} to get a textual explanation of the error. \begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a747b493c62a7409aafd497345418923e}\label{sockets_8php_a747b493c62a7409aafd497345418923e}} 
+\index{sockets.php@{sockets.php}!socket\_clear\_error@{socket\_clear\_error}}
+\index{socket\_clear\_error@{socket\_clear\_error}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_clear\_error()}{socket\_clear\_error()}}
+{\footnotesize\ttfamily socket\+\_\+clear\+\_\+error (\begin{DoxyParamCaption}\item[{}]{\$socket = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Clears the error on the socket or the last error code \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket \mbox{[}optional\mbox{]} }} \mbox{\hyperlink{class_a}{A}} valid socket resource created with {\bfseries{socket\+\_\+create}}. 
+
+\begin{DoxyReturn}{Returns}
+void No value is returned. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_adc3d4ad7da22b24a261afa129d21be08}\label{sockets_8php_adc3d4ad7da22b24a261afa129d21be08}} 
+\index{sockets.php@{sockets.php}!socket\_close@{socket\_close}}
+\index{socket\_close@{socket\_close}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_close()}{socket\_close()}}
+{\footnotesize\ttfamily socket\+\_\+close (\begin{DoxyParamCaption}\item[{}]{\$socket }\end{DoxyParamCaption})}
+
+Closes a socket resource \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} \mbox{\hyperlink{class_a}{A}} valid socket resource created with {\bfseries{socket\+\_\+create}} or {\bfseries{socket\+\_\+accept}}. 
+
+\begin{DoxyReturn}{Returns}
+void No value is returned. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_adf7772e9113c5f23ebdaec22b1750898}\label{sockets_8php_adf7772e9113c5f23ebdaec22b1750898}} 
+\index{sockets.php@{sockets.php}!socket\_cmsg\_space@{socket\_cmsg\_space}}
+\index{socket\_cmsg\_space@{socket\_cmsg\_space}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_cmsg\_space()}{socket\_cmsg\_space()}}
+{\footnotesize\ttfamily socket\+\_\+cmsg\+\_\+space (\begin{DoxyParamCaption}\item[{}]{\$level,  }\item[{}]{\$type,  }\item[{}]{\$n = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Calculate message buffer size \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$level  int \$type  int \$n \mbox{[}optional\mbox{]}  int  5.\+5 }}\mbox{\Hypertarget{sockets_8php_ab1a5cb6ff78e494f17db61de2f19f2ae}\label{sockets_8php_ab1a5cb6ff78e494f17db61de2f19f2ae}} 
+\index{sockets.php@{sockets.php}!socket\_connect@{socket\_connect}}
+\index{socket\_connect@{socket\_connect}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_connect()}{socket\_connect()}}
+{\footnotesize\ttfamily socket\+\_\+connect (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{}]{\$address,  }\item[{}]{\$port = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Initiates a connection on a socket \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket  string \$address }} The {\itshape address} parameter is either an I\+Pv4 address in dotted-\/quad notation (e.\+g. 127.\+0.\+0.\+1) if {\itshape socket} is {\bfseries{A\+F\+\_\+\+I\+N\+ET}}, a valid I\+Pv6 address (e.\+g. \+::1) if I\+Pv6 support is enabled and {\itshape socket} is {\bfseries{A\+F\+\_\+\+I\+N\+E\+T6}} or the pathname of a Unix domain socket, if the socket family is {\bfseries{A\+F\+\_\+\+U\+N\+IX}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$port} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The {\itshape port} parameter is only used and is mandatory when connecting to an {\bfseries{A\+F\+\_\+\+I\+N\+ET}} or an {\bfseries{A\+F\+\_\+\+I\+N\+E\+T6}} socket, and designates the port on the remote host to which a connection should be made. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. The error code can be retrieved with {\bfseries{socket\+\_\+last\+\_\+error}}. This code may be passed to {\bfseries{socket\+\_\+strerror}} to get a textual explanation of the error. 
+\end{DoxyReturn}
+
+
+If the socket is non-\/blocking then this function returns {\bfseries{F\+A\+L\+SE}} with an error Operation now in progress. \begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a30b50c4b09d918f096b5d14fd4eb7875}\label{sockets_8php_a30b50c4b09d918f096b5d14fd4eb7875}} 
+\index{sockets.php@{sockets.php}!socket\_create@{socket\_create}}
+\index{socket\_create@{socket\_create}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_create()}{socket\_create()}}
+{\footnotesize\ttfamily socket\+\_\+create (\begin{DoxyParamCaption}\item[{}]{\$domain,  }\item[{}]{\$type,  }\item[{}]{\$protocol }\end{DoxyParamCaption})}
+
+Create a socket (endpoint for communication) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$domain }} The {\itshape domain} parameter specifies the protocol family to be used by the socket. 
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+address/protocol families 
+
+Domain 
+
+Description  
+
+{\bfseries{A\+F\+\_\+\+I\+N\+ET}} 
+
+I\+Pv4 Internet based protocols. T\+CP and U\+DP are common protocols of this protocol family.   
+
+{\bfseries{A\+F\+\_\+\+I\+N\+E\+T6}} 
+
+I\+Pv6 Internet based protocols. T\+CP and U\+DP are common protocols of this protocol family.   
+
+{\bfseries{A\+F\+\_\+\+U\+N\+IX}} 
+
+Local communication protocol family. High efficiency and low overhead make it a great form of I\+PC (Interprocess Communication).   
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+The {\itshape type} parameter selects the type of communication to be used by the socket. 
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+socket types 
+
+Type 
+
+Description  
+
+{\bfseries{S\+O\+C\+K\+\_\+\+S\+T\+R\+E\+AM}} 
+
+Provides sequenced, reliable, full-\/duplex, connection-\/based byte streams. An out-\/of-\/band data transmission mechanism may be supported. The T\+CP protocol is based on this socket type.   
+
+{\bfseries{S\+O\+C\+K\+\_\+\+D\+G\+R\+AM}} 
+
+Supports datagrams (connectionless, unreliable messages of a fixed maximum length). The U\+DP protocol is based on this socket type.   
+
+{\bfseries{S\+O\+C\+K\+\_\+\+S\+E\+Q\+P\+A\+C\+K\+ET}} 
+
+Provides a sequenced, reliable, two-\/way connection-\/based data transmission path for datagrams of fixed maximum length; a consumer is required to read an entire packet with each read call.   
+
+{\bfseries{S\+O\+C\+K\+\_\+\+R\+AW}} 
+
+Provides raw network protocol access. This special type of socket can be used to manually construct any type of protocol. \mbox{\hyperlink{class_a}{A}} common use for this socket type is to perform I\+C\+MP requests (like ping).   
+
+{\bfseries{S\+O\+C\+K\+\_\+\+R\+DM}} 
+
+Provides a reliable datagram layer that does not guarantee ordering. This is most likely not implemented on your operating system.   
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$protocol} & \\
+\hline
+\end{DoxyParams}
+The {\itshape protocol} parameter sets the specific protocol within the specified {\itshape domain} to be used when communicating on the returned socket. The proper value can be retrieved by name by using {\bfseries{getprotobyname}}. If the desired protocol is T\+CP, or U\+DP the corresponding constants {\bfseries{S\+O\+L\+\_\+\+T\+CP}}, and {\bfseries{S\+O\+L\+\_\+\+U\+DP}} can also be used. 
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+protocols 
+
+Name 
+
+Description  
+
+icmp 
+
+The Internet Control Message Protocol is used primarily by gateways and hosts to report errors in datagram communication. The \char`\"{}ping\char`\"{} command (present in most modern operating systems) is an example application of I\+C\+MP.   
+
+udp 
+
+The User Datagram Protocol is a connectionless, unreliable, protocol with fixed record lengths. Due to these aspects, U\+DP requires a minimum amount of protocol overhead.   
+
+tcp 
+
+The Transmission Control Protocol is a reliable, connection based, stream oriented, full duplex protocol. T\+CP guarantees that all data packets will be received in the order in which they were sent. If any packet is somehow lost during communication, T\+CP will automatically retransmit the packet until the destination host acknowledges that packet. For reliability and performance reasons, the T\+CP implementation itself decides the appropriate octet boundaries of the underlying datagram communication layer. Therefore, T\+CP applications must allow for the possibility of partial record transmission.   
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false {\bfseries{socket\+\_\+create}} returns a socket resource on success, or {\bfseries{F\+A\+L\+SE}} on error. The actual error code can be retrieved by calling {\bfseries{socket\+\_\+last\+\_\+error}}. This error code may be passed to {\bfseries{socket\+\_\+strerror}} to get a textual explanation of the error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a60de1279166d68065ce2c16463bbae76}\label{sockets_8php_a60de1279166d68065ce2c16463bbae76}} 
+\index{sockets.php@{sockets.php}!socket\_create\_listen@{socket\_create\_listen}}
+\index{socket\_create\_listen@{socket\_create\_listen}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_create\_listen()}{socket\_create\_listen()}}
+{\footnotesize\ttfamily socket\+\_\+create\+\_\+listen (\begin{DoxyParamCaption}\item[{}]{\$port,  }\item[{}]{\$backlog = {\ttfamily 128} }\end{DoxyParamCaption})}
+
+Opens a socket on port to accept connections \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$port }} The port on which to listen on all interfaces. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$backlog} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The {\itshape backlog} parameter defines the maximum length the queue of pending connections may grow to. {\bfseries{S\+O\+M\+A\+X\+C\+O\+NN}} may be passed as {\itshape backlog} parameter, see {\bfseries{socket\+\_\+listen}} for more information. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false {\bfseries{socket\+\_\+create\+\_\+listen}} returns a new socket resource on success or {\bfseries{F\+A\+L\+SE}} on error. The error code can be retrieved with {\bfseries{socket\+\_\+last\+\_\+error}}. This code may be passed to {\bfseries{socket\+\_\+strerror}} to get a textual explanation of the error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a5c32c9b8421a7c90885f0bda368cf1e2}\label{sockets_8php_a5c32c9b8421a7c90885f0bda368cf1e2}} 
+\index{sockets.php@{sockets.php}!socket\_create\_pair@{socket\_create\_pair}}
+\index{socket\_create\_pair@{socket\_create\_pair}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_create\_pair()}{socket\_create\_pair()}}
+{\footnotesize\ttfamily socket\+\_\+create\+\_\+pair (\begin{DoxyParamCaption}\item[{}]{\$domain,  }\item[{}]{\$type,  }\item[{}]{\$protocol,  }\item[{array \&}]{\$fd }\end{DoxyParamCaption})}
+
+Creates a pair of indistinguishable sockets and stores them in an array \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$domain }} The {\itshape domain} parameter specifies the protocol family to be used by the socket. See {\bfseries{socket\+\_\+create}} for the full list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+The {\itshape type} parameter selects the type of communication to be used by the socket. See {\bfseries{socket\+\_\+create}} for the full list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$protocol} & \\
+\hline
+\end{DoxyParams}
+The {\itshape protocol} parameter sets the specific protocol within the specified {\itshape domain} to be used when communicating on the returned socket. The proper value can be retrieved by name by using {\bfseries{getprotobyname}}. If the desired protocol is T\+CP, or U\+DP the corresponding constants {\bfseries{S\+O\+L\+\_\+\+T\+CP}}, and {\bfseries{S\+O\+L\+\_\+\+U\+DP}} can also be used. 
+
+See {\bfseries{socket\+\_\+create}} for the full list of supported protocols. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$fd} & \\
+\hline
+\end{DoxyParams}
+Reference to an array in which the two socket resources will be inserted. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_aa14d41fba3da63391d407d03f6208f32}\label{sockets_8php_aa14d41fba3da63391d407d03f6208f32}} 
+\index{sockets.php@{sockets.php}!socket\_export\_stream@{socket\_export\_stream}}
+\index{socket\_export\_stream@{socket\_export\_stream}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_export\_stream()}{socket\_export\_stream()}}
+{\footnotesize\ttfamily socket\+\_\+export\+\_\+stream (\begin{DoxyParamCaption}\item[{}]{\$socket }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$socket} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource$\vert$false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sockets_8php_a316cddec16ac1ed981fb41cb50b36f7b}\label{sockets_8php_a316cddec16ac1ed981fb41cb50b36f7b}} 
+\index{sockets.php@{sockets.php}!socket\_get\_option@{socket\_get\_option}}
+\index{socket\_get\_option@{socket\_get\_option}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_get\_option()}{socket\_get\_option()}}
+{\footnotesize\ttfamily socket\+\_\+get\+\_\+option (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{}]{\$level,  }\item[{}]{\$optname }\end{DoxyParamCaption})}
+
+Gets socket options for the socket \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} \mbox{\hyperlink{class_a}{A}} valid socket resource created with {\bfseries{socket\+\_\+create}} or {\bfseries{socket\+\_\+accept}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$level} & \\
+\hline
+\end{DoxyParams}
+The {\itshape level} parameter specifies the protocol level at which the option resides. For example, to retrieve options at the socket level, a {\itshape level} parameter of {\bfseries{S\+O\+L\+\_\+\+S\+O\+C\+K\+ET}} would be used. \mbox{\hyperlink{namespace_other}{Other}} levels, such as {\bfseries{T\+CP}}, can be used by specifying the protocol number of that level. Protocol numbers can be found by using the {\bfseries{getprotobyname}} function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$optname} & {\begin{tabularx}{\linewidth}{|*{0}{>{\raggedright\arraybackslash}X|}}\hline
+\end{tabularx}}
+Socket Options \\
+\hline
+\end{DoxyParams}
+
+
+Option 
+
+Description 
+
+Type  
+
+{\bfseries{S\+O\+\_\+\+D\+E\+B\+UG}} 
+
+Reports whether debugging information is being recorded.  
+
+int   
+
+{\bfseries{S\+O\+\_\+\+B\+R\+O\+A\+D\+C\+A\+ST}} 
+
+Reports whether transmission of broadcast messages is supported.  
+
+int   
+
+{\bfseries{S\+O\+\_\+\+R\+E\+U\+S\+E\+A\+D\+DR}} 
+
+Reports whether local addresses can be reused.  
+
+int   
+
+{\bfseries{S\+O\+\_\+\+K\+E\+E\+P\+A\+L\+I\+VE}} 
+
+Reports whether connections are kept active with periodic transmission of messages. If the connected socket fails to respond to these messages, the connection is broken and processes writing to that socket are notified with a S\+I\+G\+P\+I\+PE signal.  
+
+int   
+
+{\bfseries{S\+O\+\_\+\+L\+I\+N\+G\+ER}} 
+
+Reports whether the {\itshape socket} lingers on {\bfseries{socket\+\_\+close}} if data is present. By default, when the socket is closed, it attempts to send all unsent data. In the case of a connection-\/oriented socket, {\bfseries{socket\+\_\+close}} will wait for its peer to acknowledge the data. 
+
+If l\+\_\+onoff is non-\/zero and l\+\_\+linger is zero, all the unsent data will be discarded and R\+ST (reset) is sent to the peer in the case of a connection-\/oriented socket. 
+
+On the other hand, if l\+\_\+onoff is non-\/zero and l\+\_\+linger is non-\/zero, {\bfseries{socket\+\_\+close}} will block until all the data is sent or the time specified in l\+\_\+linger elapses. If the socket is non-\/blocking, {\bfseries{socket\+\_\+close}} will fail and return an error. 
+
+array. The array will contain two keys\+: l\+\_\+onoff and l\+\_\+linger.   
+
+{\bfseries{S\+O\+\_\+\+O\+O\+B\+I\+N\+L\+I\+NE}} 
+
+Reports whether the {\itshape socket} leaves out-\/of-\/band data inline.  
+
+int   
+
+{\bfseries{S\+O\+\_\+\+S\+N\+D\+B\+UF}} 
+
+Reports the size of the send buffer.  
+
+int   
+
+{\bfseries{S\+O\+\_\+\+R\+C\+V\+B\+UF}} 
+
+Reports the size of the receive buffer.  
+
+int   
+
+{\bfseries{S\+O\+\_\+\+E\+R\+R\+OR}} 
+
+Reports information about error status and clears it.  
+
+int (cannot be set by {\bfseries{socket\+\_\+set\+\_\+option}})   
+
+{\bfseries{S\+O\+\_\+\+T\+Y\+PE}} 
+
+Reports the {\itshape socket} type (e.\+g. {\bfseries{S\+O\+C\+K\+\_\+\+S\+T\+R\+E\+AM}}).  
+
+int (cannot be set by {\bfseries{socket\+\_\+set\+\_\+option}})   
+
+{\bfseries{S\+O\+\_\+\+D\+O\+N\+T\+R\+O\+U\+TE}} 
+
+Reports whether outgoing messages bypass the standard routing facilities.  
+
+int   
+
+{\bfseries{S\+O\+\_\+\+R\+C\+V\+L\+O\+W\+AT}} 
+
+Reports the minimum number of bytes to process for {\itshape socket} input operations.  
+
+int   
+
+{\bfseries{S\+O\+\_\+\+R\+C\+V\+T\+I\+M\+EO}} 
+
+Reports the timeout value for input operations.  
+
+array. The array will contain two keys\+: sec which is the seconds part on the timeout value and usec which is the microsecond part of the timeout value.   
+
+{\bfseries{S\+O\+\_\+\+S\+N\+D\+T\+I\+M\+EO}} 
+
+Reports the timeout value specifying the amount of time that an output function blocks because flow control prevents data from being sent.  
+
+array. The array will contain two keys\+: sec which is the seconds part on the timeout value and usec which is the microsecond part of the timeout value.   
+
+{\bfseries{S\+O\+\_\+\+S\+N\+D\+L\+O\+W\+AT}} 
+
+Reports the minimum number of bytes to process for {\itshape socket} output operations.  
+
+int   
+
+{\bfseries{T\+C\+P\+\_\+\+N\+O\+D\+E\+L\+AY}} 
+
+Reports whether the Nagle T\+CP algorithm is disabled.  
+
+int   
+
+{\bfseries{M\+C\+A\+S\+T\+\_\+\+J\+O\+I\+N\+\_\+\+G\+R\+O\+UP}} 
+
+Joins a multicast group. (added in P\+HP 5.\+4)  
+
+array with keys \char`\"{}group\char`\"{}, specifying a string with an I\+Pv4 or I\+Pv6 multicast address and \char`\"{}interface\char`\"{}, specifying either an interface number (type int) or a string with the interface name, like \char`\"{}eth0\char`\"{}. 0 can be specified to indicate the interface should be selected using routing rules. (can only be used in {\bfseries{socket\+\_\+set\+\_\+option}})   
+
+{\bfseries{M\+C\+A\+S\+T\+\_\+\+L\+E\+A\+V\+E\+\_\+\+G\+R\+O\+UP}} 
+
+Leaves a multicast group. (added in P\+HP 5.\+4)  
+
+array. See {\bfseries{M\+C\+A\+S\+T\+\_\+\+J\+O\+I\+N\+\_\+\+G\+R\+O\+UP}} for more information. (can only be used in {\bfseries{socket\+\_\+set\+\_\+option}})   
+
+{\bfseries{M\+C\+A\+S\+T\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}} 
+
+Blocks packets arriving from a specific source to a specific multicast group, which must have been previously joined. (added in P\+HP 5.\+4)  
+
+array with the same keys as {\bfseries{M\+C\+A\+S\+T\+\_\+\+J\+O\+I\+N\+\_\+\+G\+R\+O\+UP}}, plus one extra key, source, which maps to a string specifying an I\+Pv4 or I\+Pv6 address of the source to be blocked. (can only be used in {\bfseries{socket\+\_\+set\+\_\+option}})   
+
+{\bfseries{M\+C\+A\+S\+T\+\_\+\+U\+N\+B\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}} 
+
+Unblocks (start receiving again) packets arriving from a specific source address to a specific multicast group, which must have been previously joined. (added in P\+HP 5.\+4)  
+
+array with the same format as {\bfseries{M\+C\+A\+S\+T\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}}. (can only be used in {\bfseries{socket\+\_\+set\+\_\+option}})   
+
+{\bfseries{M\+C\+A\+S\+T\+\_\+\+J\+O\+I\+N\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+G\+R\+O\+UP}} 
+
+Receive packets destined to a specific multicast group whose source address matches a specific value. (added in P\+HP 5.\+4)  
+
+array with the same format as {\bfseries{M\+C\+A\+S\+T\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}}. (can only be used in {\bfseries{socket\+\_\+set\+\_\+option}})   
+
+{\bfseries{M\+C\+A\+S\+T\+\_\+\+L\+E\+A\+V\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+G\+R\+O\+UP}} 
+
+Stop receiving packets destined to a specific multicast group whose soure address matches a specific value. (added in P\+HP 5.\+4)  
+
+array with the same format as {\bfseries{M\+C\+A\+S\+T\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}}. (can only be used in {\bfseries{socket\+\_\+set\+\_\+option}})   
+
+{\bfseries{I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+IF}} 
+
+The outgoing interface for I\+Pv4 multicast packets. (added in P\+HP 5.\+4)  
+
+Either int specifying the interface number or a string with an interface name, like eth0. The value 0 can be used to indicate the routing table is to used in the interface selection. The function {\bfseries{socket\+\_\+get\+\_\+option}} returns an interface index. Note that, unlike the C A\+PI, this option does N\+OT take an IP address. This eliminates the interface difference between {\bfseries{I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+IF}} and {\bfseries{I\+P\+V6\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+IF}}.   
+
+{\bfseries{I\+P\+V6\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+IF}} 
+
+The outgoing interface for I\+Pv6 multicast packets. (added in P\+HP 5.\+4)  
+
+The same as {\bfseries{I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+IF}}.   
+
+{\bfseries{I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+L\+O\+OP}} 
+
+The multicast loopback policy for I\+Pv4 packets, which determines whether multicast packets sent by this socket also reach receivers in the same host that have joined the same multicast group on the outgoing interface used by this socket. This is the case by default. (added in P\+HP 5.\+4)  
+
+int (either 0 or 1). For {\bfseries{socket\+\_\+set\+\_\+option}} any value will be accepted and will be converted to a boolean following the usual P\+HP rules.   
+
+{\bfseries{I\+P\+V6\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+L\+O\+OP}} 
+
+Analogous to {\bfseries{I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+L\+O\+OP}}, but for I\+Pv6. (added in P\+HP 5.\+4)  
+
+int. See {\bfseries{I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+L\+O\+OP}}.   
+
+{\bfseries{I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+T\+TL}} 
+
+The time-\/to-\/live of outgoing I\+Pv4 multicast packets. This should be a value between 0 (don\textquotesingle{}t leave the interface) and 255. The default value is 1 (only the local network is reached). (added in P\+HP 5.\+4)  
+
+int between 0 and 255.   
+
+{\bfseries{I\+P\+V6\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+H\+O\+PS}} 
+
+Analogous to {\bfseries{I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+T\+TL}}, but for I\+Pv6 packets. The value -\/1 is also accepted, meaning the route default should be used. (added in P\+HP 5.\+4)  
+
+int between -\/1 and 255.   
+
+\begin{DoxyReturn}{Returns}
+mixed$\vert$false the value of the given option, or {\bfseries{F\+A\+L\+SE}} on errors. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a8e8ad81b249fcdb28d38fdbb380a7d4f}\label{sockets_8php_a8e8ad81b249fcdb28d38fdbb380a7d4f}} 
+\index{sockets.php@{sockets.php}!socket\_getopt@{socket\_getopt}}
+\index{socket\_getopt@{socket\_getopt}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_getopt()}{socket\_getopt()}}
+{\footnotesize\ttfamily socket\+\_\+getopt (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{}]{\$level,  }\item[{}]{\$optname }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$socket} & \\
+\hline
+{\em \$level} & \\
+\hline
+{\em \$optname} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sockets_8php_a18f8dee2b80a028583de5f1c4ccef20e}\label{sockets_8php_a18f8dee2b80a028583de5f1c4ccef20e}} 
+\index{sockets.php@{sockets.php}!socket\_getpeername@{socket\_getpeername}}
+\index{socket\_getpeername@{socket\_getpeername}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_getpeername()}{socket\_getpeername()}}
+{\footnotesize\ttfamily socket\+\_\+getpeername (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{\&}]{\$address,  }\item[{\&}]{\$port = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Queries the remote side of the given socket which may either result in host/port or in a Unix filesystem path, dependent on its type \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} \mbox{\hyperlink{class_a}{A}} valid socket resource created with {\bfseries{socket\+\_\+create}} or {\bfseries{socket\+\_\+accept}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & \\
+\hline
+\end{DoxyParams}
+If the given socket is of type {\bfseries{A\+F\+\_\+\+I\+N\+ET}} or {\bfseries{A\+F\+\_\+\+I\+N\+E\+T6}}, {\bfseries{socket\+\_\+getpeername}} will return the peers (remote) IP address in appropriate notation (e.\+g. 127.\+0.\+0.\+1 or fe80\+:\+:1) in the {\itshape address} parameter and, if the optional {\itshape port} parameter is present, also the associated port. 
+
+If the given socket is of type {\bfseries{A\+F\+\_\+\+U\+N\+IX}}, {\bfseries{socket\+\_\+getpeername}} will return the Unix filesystem path (e.\+g. /var/run/daemon.sock) in the {\itshape address} parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$port} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If given, this will hold the port associated to {\itshape address}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. {\bfseries{socket\+\_\+getpeername}} may also return {\bfseries{F\+A\+L\+SE}} if the socket type is not any of {\bfseries{A\+F\+\_\+\+I\+N\+ET}}, {\bfseries{A\+F\+\_\+\+I\+N\+E\+T6}}, or {\bfseries{A\+F\+\_\+\+U\+N\+IX}}, in which case the last socket error code is not updated. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_af5650f57863213981d0a28b00c77ee21}\label{sockets_8php_af5650f57863213981d0a28b00c77ee21}} 
+\index{sockets.php@{sockets.php}!socket\_getsockname@{socket\_getsockname}}
+\index{socket\_getsockname@{socket\_getsockname}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_getsockname()}{socket\_getsockname()}}
+{\footnotesize\ttfamily socket\+\_\+getsockname (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{\&}]{\$addr,  }\item[{\&}]{\$port = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Queries the local side of the given socket which may either result in host/port or in a Unix filesystem path, dependent on its type \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} \mbox{\hyperlink{class_a}{A}} valid socket resource created with {\bfseries{socket\+\_\+create}} or {\bfseries{socket\+\_\+accept}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$addr} & \\
+\hline
+\end{DoxyParams}
+If the given socket is of type {\bfseries{A\+F\+\_\+\+I\+N\+ET}} or {\bfseries{A\+F\+\_\+\+I\+N\+E\+T6}}, {\bfseries{socket\+\_\+getsockname}} will return the local IP address in appropriate notation (e.\+g. 127.\+0.\+0.\+1 or fe80\+:\+:1) in the {\itshape address} parameter and, if the optional {\itshape port} parameter is present, also the associated port. 
+
+If the given socket is of type {\bfseries{A\+F\+\_\+\+U\+N\+IX}}, {\bfseries{socket\+\_\+getsockname}} will return the Unix filesystem path (e.\+g. /var/run/daemon.sock) in the {\itshape address} parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$port} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If provided, this will hold the associated port. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. {\bfseries{socket\+\_\+getsockname}} may also return {\bfseries{F\+A\+L\+SE}} if the socket type is not any of {\bfseries{A\+F\+\_\+\+I\+N\+ET}}, {\bfseries{A\+F\+\_\+\+I\+N\+E\+T6}}, or {\bfseries{A\+F\+\_\+\+U\+N\+IX}}, in which case the last socket error code is not updated. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_ab10c0ae63ff9d2f159973131d5ba3635}\label{sockets_8php_ab10c0ae63ff9d2f159973131d5ba3635}} 
+\index{sockets.php@{sockets.php}!socket\_import\_stream@{socket\_import\_stream}}
+\index{socket\_import\_stream@{socket\_import\_stream}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_import\_stream()}{socket\_import\_stream()}}
+{\footnotesize\ttfamily socket\+\_\+import\+\_\+stream (\begin{DoxyParamCaption}\item[{}]{\$stream }\end{DoxyParamCaption})}
+
+Import a stream \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$stream }} The stream resource to import. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false$\vert$null {\bfseries{F\+A\+L\+SE}} or {\bfseries{N\+U\+LL}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a4f00f90c64032dc84e018ec25dc16517}\label{sockets_8php_a4f00f90c64032dc84e018ec25dc16517}} 
+\index{sockets.php@{sockets.php}!socket\_last\_error@{socket\_last\_error}}
+\index{socket\_last\_error@{socket\_last\_error}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_last\_error()}{socket\_last\_error()}}
+{\footnotesize\ttfamily socket\+\_\+last\+\_\+error (\begin{DoxyParamCaption}\item[{}]{\$socket = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Returns the last error on the socket \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket \mbox{[}optional\mbox{]} }} \mbox{\hyperlink{class_a}{A}} valid socket resource created with {\bfseries{socket\+\_\+create}}. 
+
+\begin{DoxyReturn}{Returns}
+int This function returns a socket error code. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a6445679aa1d063233525c14fa68f1b97}\label{sockets_8php_a6445679aa1d063233525c14fa68f1b97}} 
+\index{sockets.php@{sockets.php}!socket\_listen@{socket\_listen}}
+\index{socket\_listen@{socket\_listen}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_listen()}{socket\_listen()}}
+{\footnotesize\ttfamily socket\+\_\+listen (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{}]{\$backlog = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Listens for a connection on a socket \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} \mbox{\hyperlink{class_a}{A}} valid socket resource created with {\bfseries{socket\+\_\+create}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$backlog} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} maximum of {\itshape backlog} incoming connections will be queued for processing. If a connection request arrives with the queue full the client may receive an error with an indication of E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED, or, if the underlying protocol supports retransmission, the request may be ignored so that retries may succeed. 
+
+The maximum number passed to the {\itshape backlog} parameter highly depends on the underlying platform. On Linux, it is silently truncated to {\bfseries{S\+O\+M\+A\+X\+C\+O\+NN}}. On win32, if passed {\bfseries{S\+O\+M\+A\+X\+C\+O\+NN}}, the underlying service provider responsible for the socket will set the backlog to a maximum reasonable value. There is no standard provision to find out the actual backlog value on this platform. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. The error code can be retrieved with {\bfseries{socket\+\_\+last\+\_\+error}}. This code may be passed to {\bfseries{socket\+\_\+strerror}} to get a textual explanation of the error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a1af6712025ea6ac87c0b73726925b8a6}\label{sockets_8php_a1af6712025ea6ac87c0b73726925b8a6}} 
+\index{sockets.php@{sockets.php}!socket\_read@{socket\_read}}
+\index{socket\_read@{socket\_read}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_read()}{socket\_read()}}
+{\footnotesize\ttfamily socket\+\_\+read (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{}]{\$length,  }\item[{}]{\$type = {\ttfamily \mbox{\hyperlink{sockets_8php_adce533c2c77ae0921dbe6d2ce7985dec}{P\+H\+P\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+R\+E\+AD}}} }\end{DoxyParamCaption})}
+
+Reads a maximum of length bytes from a socket \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} \mbox{\hyperlink{class_a}{A}} valid socket resource created with {\bfseries{socket\+\_\+create}} or {\bfseries{socket\+\_\+accept}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+The maximum number of bytes read is specified by the {\itshape length} parameter. Otherwise you can use {\bfseries{\&\#92;r}}, {\bfseries{\&\#92;n}}, or {\bfseries{\&\#92;0}} to end reading (depending on the {\itshape type} parameter, see below). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$type} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Optional {\itshape type} parameter is a named constant\+: {\bfseries{P\+H\+P\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+R\+E\+AD}} (Default) -\/ use the system recv() function. Safe for reading binary data. \begin{DoxyReturn}{Returns}
+string$\vert$false {\bfseries{socket\+\_\+read}} returns the data as a string on success, or {\bfseries{F\+A\+L\+SE}} on error (including if the remote host has closed the connection). The error code can be retrieved with {\bfseries{socket\+\_\+last\+\_\+error}}. This code may be passed to {\bfseries{socket\+\_\+strerror}} to get a textual representation of the error. 
+\end{DoxyReturn}
+
+
+{\bfseries{socket\+\_\+read}} returns a zero length string (\char`\"{}\char`\"{}) when there is no more data to read. \begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_aebde9d7cfe89e11926a59c9b6f9bed5c}\label{sockets_8php_aebde9d7cfe89e11926a59c9b6f9bed5c}} 
+\index{sockets.php@{sockets.php}!socket\_recv@{socket\_recv}}
+\index{socket\_recv@{socket\_recv}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_recv()}{socket\_recv()}}
+{\footnotesize\ttfamily socket\+\_\+recv (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{\&}]{\$buf,  }\item[{}]{\$len,  }\item[{}]{\$flags }\end{DoxyParamCaption})}
+
+Receives data from a connected socket \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} The {\itshape socket} must be a socket resource previously created by \mbox{\hyperlink{sockets_8php_a30b50c4b09d918f096b5d14fd4eb7875}{socket\+\_\+create()}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$buf} & \\
+\hline
+\end{DoxyParams}
+The data received will be fetched to the variable specified with {\itshape buf}. If an error occurs, if the connection is reset, or if no data is available, {\itshape buf} will be set to {\bfseries{N\+U\+LL}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$len} & \\
+\hline
+\end{DoxyParams}
+Up to {\itshape len} bytes will be fetched from remote host. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \\
+\hline
+\end{DoxyParams}
+The value of {\itshape flags} can be any combination of the following flags, joined with the binary OR ($\vert$) operator. 
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+values for {\itshape flags} 
+
+Flag 
+
+Description  
+
+{\bfseries{M\+S\+G\+\_\+\+O\+OB}} 
+
+Process out-\/of-\/band data.   
+
+{\bfseries{M\+S\+G\+\_\+\+P\+E\+EK}} 
+
+Receive data from the beginning of the receive queue without removing it from the queue.   
+
+{\bfseries{M\+S\+G\+\_\+\+W\+A\+I\+T\+A\+LL}} 
+
+Block until at least {\itshape len} are received. However, if a signal is caught or the remote host disconnects, the function may return less data.   
+
+{\bfseries{M\+S\+G\+\_\+\+D\+O\+N\+T\+W\+A\+IT}} 
+
+With this flag set, the function returns even if it would normally have blocked.   
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false {\bfseries{socket\+\_\+recv}} returns the number of bytes received, or {\bfseries{F\+A\+L\+SE}} if there was an error. The actual error code can be retrieved by calling {\bfseries{socket\+\_\+last\+\_\+error}}. This error code may be passed to {\bfseries{socket\+\_\+strerror}} to get a textual explanation of the error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a64f43140e7019acea56d35d08f9771f6}\label{sockets_8php_a64f43140e7019acea56d35d08f9771f6}} 
+\index{sockets.php@{sockets.php}!socket\_recvfrom@{socket\_recvfrom}}
+\index{socket\_recvfrom@{socket\_recvfrom}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_recvfrom()}{socket\_recvfrom()}}
+{\footnotesize\ttfamily socket\+\_\+recvfrom (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{\&}]{\$buf,  }\item[{}]{\$len,  }\item[{}]{\$flags,  }\item[{\&}]{\$name,  }\item[{\&}]{\$port = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Receives data from a socket whether or not it is connection-\/oriented \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} The {\itshape socket} must be a socket resource previously created by \mbox{\hyperlink{sockets_8php_a30b50c4b09d918f096b5d14fd4eb7875}{socket\+\_\+create()}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$buf} & \\
+\hline
+\end{DoxyParams}
+The data received will be fetched to the variable specified with {\itshape buf}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$len} & \\
+\hline
+\end{DoxyParams}
+Up to {\itshape len} bytes will be fetched from remote host. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \\
+\hline
+\end{DoxyParams}
+The value of {\itshape flags} can be any combination of the following flags, joined with the binary OR ($\vert$) operator. 
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+values for {\itshape flags} 
+
+Flag 
+
+Description  
+
+{\bfseries{M\+S\+G\+\_\+\+O\+OB}} 
+
+Process out-\/of-\/band data.   
+
+{\bfseries{M\+S\+G\+\_\+\+P\+E\+EK}} 
+
+Receive data from the beginning of the receive queue without removing it from the queue.   
+
+{\bfseries{M\+S\+G\+\_\+\+W\+A\+I\+T\+A\+LL}} 
+
+Block until at least {\itshape len} are received. However, if a signal is caught or the remote host disconnects, the function may return less data.   
+
+{\bfseries{M\+S\+G\+\_\+\+D\+O\+N\+T\+W\+A\+IT}} 
+
+With this flag set, the function returns even if it would normally have blocked.   
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+If the socket is of the type {\bfseries{A\+F\+\_\+\+U\+N\+IX}} type, {\itshape name} is the path to the file. Else, for unconnected sockets, {\itshape name} is the IP address of, the remote host, or {\bfseries{N\+U\+LL}} if the socket is connection-\/oriented. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$port} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This argument only applies to {\bfseries{A\+F\+\_\+\+I\+N\+ET}} and {\bfseries{A\+F\+\_\+\+I\+N\+E\+T6}} sockets, and specifies the remote port from which the data is received. If the socket is connection-\/oriented, {\itshape port} will be {\bfseries{N\+U\+LL}}. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false {\bfseries{socket\+\_\+recvfrom}} returns the number of bytes received, or {\bfseries{F\+A\+L\+SE}} if there was an error. The actual error code can be retrieved by calling {\bfseries{socket\+\_\+last\+\_\+error}}. This error code may be passed to {\bfseries{socket\+\_\+strerror}} to get a textual explanation of the error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a7beea1ecb7257a6e845720d7e856c50c}\label{sockets_8php_a7beea1ecb7257a6e845720d7e856c50c}} 
+\index{sockets.php@{sockets.php}!socket\_recvmsg@{socket\_recvmsg}}
+\index{socket\_recvmsg@{socket\_recvmsg}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_recvmsg()}{socket\_recvmsg()}}
+{\footnotesize\ttfamily socket\+\_\+recvmsg (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{}]{\$message,  }\item[{}]{\$flags }\end{DoxyParamCaption})}
+
+Read a message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket  string \$message  int \$flags \mbox{[}optional\mbox{]}  int$\vert$false  5.\+5 }}\mbox{\Hypertarget{sockets_8php_a2a718bb86ef2b1ae285ccc122e640bfd}\label{sockets_8php_a2a718bb86ef2b1ae285ccc122e640bfd}} 
+\index{sockets.php@{sockets.php}!socket\_select@{socket\_select}}
+\index{socket\_select@{socket\_select}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_select()}{socket\_select()}}
+{\footnotesize\ttfamily socket\+\_\+select (\begin{DoxyParamCaption}\item[{array \&}]{\$read,  }\item[{array \&}]{\$write,  }\item[{array \&}]{\$except,  }\item[{}]{\$tv\+\_\+sec,  }\item[{}]{\$tv\+\_\+usec = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Runs the select() system call on the given arrays of sockets with a specified timeout \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array \$read }} The sockets listed in the {\itshape read} array will be watched to see if characters become available for reading (more precisely, to see if a read will not block -\/ in particular, a socket resource is also ready on end-\/of-\/file, in which case a {\bfseries{socket\+\_\+read}} will return a zero length string). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$write} & \\
+\hline
+\end{DoxyParams}
+The sockets listed in the {\itshape write} array will be watched to see if a write will not block. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$except} & \\
+\hline
+\end{DoxyParams}
+The sockets listed in the {\itshape except} array will be watched for exceptions. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$tv\+\_\+sec} & \\
+\hline
+\end{DoxyParams}
+The {\itshape tv\+\_\+sec} and {\itshape tv\+\_\+usec} together form the timeout parameter. The timeout is an upper bound on the amount of time elapsed before {\bfseries{socket\+\_\+select}} return. {\itshape tv\+\_\+sec} may be zero , causing {\bfseries{socket\+\_\+select}} to return immediately. This is useful for polling. If {\itshape tv\+\_\+sec} is {\bfseries{N\+U\+LL}} (no timeout), {\bfseries{socket\+\_\+select}} can block indefinitely. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$tv\+\_\+usec} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\vert$false On success {\bfseries{socket\+\_\+select}} returns the number of socket resources contained in the modified arrays, which may be zero if the timeout expires before anything interesting happens. On error {\bfseries{F\+A\+L\+SE}} is returned. The error code can be retrieved with {\bfseries{socket\+\_\+last\+\_\+error}}. 
+\end{DoxyReturn}
+
+
+Be sure to use the === operator when checking for an error. Since the {\bfseries{socket\+\_\+select}} may return 0 the comparison with == would evaluate to {\bfseries{T\+R\+UE}}\+: Understanding {\bfseries{socket\+\_\+select}}\textquotesingle{}s result {\ttfamily  \$e = N\+U\+LL; if (false === socket\+\_\+select(\$r, \$w, \$e, 0)) \{ echo \char`\"{}socket\+\_\+select() failed, reason\+: \char`\"{} . socket\+\_\+strerror(socket\+\_\+last\+\_\+error()) . \char`\"{}\textbackslash{}n\char`\"{}; \} } \begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a5add48b4f33d693a7802df7c35e91af1}\label{sockets_8php_a5add48b4f33d693a7802df7c35e91af1}} 
+\index{sockets.php@{sockets.php}!socket\_send@{socket\_send}}
+\index{socket\_send@{socket\_send}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_send()}{socket\_send()}}
+{\footnotesize\ttfamily socket\+\_\+send (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{}]{\$buf,  }\item[{}]{\$len,  }\item[{}]{\$flags }\end{DoxyParamCaption})}
+
+Sends data to a connected socket \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} \mbox{\hyperlink{class_a}{A}} valid socket resource created with {\bfseries{socket\+\_\+create}} or {\bfseries{socket\+\_\+accept}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$buf} & \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} buffer containing the data that will be sent to the remote host. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$len} & \\
+\hline
+\end{DoxyParams}
+The number of bytes that will be sent to the remote host from {\itshape buf}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \\
+\hline
+\end{DoxyParams}
+The value of {\itshape flags} can be any combination of the following flags, joined with the binary OR ($\vert$) operator. \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+values for {\itshape flags} 
+
+{\bfseries{M\+S\+G\+\_\+\+O\+OB}} 
+
+Send O\+OB (out-\/of-\/band) data.   
+
+{\bfseries{M\+S\+G\+\_\+\+E\+OR}} 
+
+Indicate a record mark. The sent data completes the record.   
+
+{\bfseries{M\+S\+G\+\_\+\+E\+OF}} 
+
+Close the sender side of the socket and include an appropriate notification of this at the end of the sent data. The sent data completes the transaction.   
+
+{\bfseries{M\+S\+G\+\_\+\+D\+O\+N\+T\+R\+O\+U\+TE}} 
+
+Bypass routing, use direct interface.   
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false {\bfseries{socket\+\_\+send}} returns the number of bytes sent, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a33cbcdd0372a1ec601480eb9165ff7a5}\label{sockets_8php_a33cbcdd0372a1ec601480eb9165ff7a5}} 
+\index{sockets.php@{sockets.php}!socket\_sendmsg@{socket\_sendmsg}}
+\index{socket\_sendmsg@{socket\_sendmsg}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_sendmsg()}{socket\_sendmsg()}}
+{\footnotesize\ttfamily socket\+\_\+sendmsg (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{array}]{\$message,  }\item[{}]{\$flags }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$=5.\+5.\+0)~\newline
+ Send a message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket  array \$message  int \$flags  int$\vert$false  5.\+5 }}\mbox{\Hypertarget{sockets_8php_a4d0e2fc03e03235e0a7a49820b0c69e0}\label{sockets_8php_a4d0e2fc03e03235e0a7a49820b0c69e0}} 
+\index{sockets.php@{sockets.php}!socket\_sendto@{socket\_sendto}}
+\index{socket\_sendto@{socket\_sendto}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_sendto()}{socket\_sendto()}}
+{\footnotesize\ttfamily socket\+\_\+sendto (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{}]{\$buf,  }\item[{}]{\$len,  }\item[{}]{\$flags,  }\item[{}]{\$addr,  }\item[{}]{\$port = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Sends a message to a socket, whether it is connected or not \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} \mbox{\hyperlink{class_a}{A}} valid socket resource created using {\bfseries{socket\+\_\+create}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$buf} & \\
+\hline
+\end{DoxyParams}
+The sent data will be taken from buffer {\itshape buf}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$len} & \\
+\hline
+\end{DoxyParams}
+{\itshape len} bytes from {\itshape buf} will be sent. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \\
+\hline
+\end{DoxyParams}
+The value of {\itshape flags} can be any combination of the following flags, joined with the binary OR ($\vert$) operator. \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+values for {\itshape flags} 
+
+{\bfseries{M\+S\+G\+\_\+\+O\+OB}} 
+
+Send O\+OB (out-\/of-\/band) data.   
+
+{\bfseries{M\+S\+G\+\_\+\+E\+OR}} 
+
+Indicate a record mark. The sent data completes the record.   
+
+{\bfseries{M\+S\+G\+\_\+\+E\+OF}} 
+
+Close the sender side of the socket and include an appropriate notification of this at the end of the sent data. The sent data completes the transaction.   
+
+{\bfseries{M\+S\+G\+\_\+\+D\+O\+N\+T\+R\+O\+U\+TE}} 
+
+Bypass routing, use direct interface.   
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$addr} & \\
+\hline
+\end{DoxyParams}
+IP address of the remote host. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$port} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+{\itshape port} is the remote port number at which the data will be sent. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false {\bfseries{socket\+\_\+sendto}} returns the number of bytes sent to the remote host, or {\bfseries{F\+A\+L\+SE}} if an error occurred. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a70430d04cf786ac5fdba6c91beec6ea1}\label{sockets_8php_a70430d04cf786ac5fdba6c91beec6ea1}} 
+\index{sockets.php@{sockets.php}!socket\_set\_block@{socket\_set\_block}}
+\index{socket\_set\_block@{socket\_set\_block}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_set\_block()}{socket\_set\_block()}}
+{\footnotesize\ttfamily socket\+\_\+set\+\_\+block (\begin{DoxyParamCaption}\item[{}]{\$socket }\end{DoxyParamCaption})}
+
+Sets blocking mode on a socket resource \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} \mbox{\hyperlink{class_a}{A}} valid socket resource created with {\bfseries{socket\+\_\+create}} or {\bfseries{socket\+\_\+accept}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a47894f56743394d1c5289466e1bfa906}\label{sockets_8php_a47894f56743394d1c5289466e1bfa906}} 
+\index{sockets.php@{sockets.php}!socket\_set\_nonblock@{socket\_set\_nonblock}}
+\index{socket\_set\_nonblock@{socket\_set\_nonblock}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_set\_nonblock()}{socket\_set\_nonblock()}}
+{\footnotesize\ttfamily socket\+\_\+set\+\_\+nonblock (\begin{DoxyParamCaption}\item[{}]{\$socket }\end{DoxyParamCaption})}
+
+Sets nonblocking mode for file descriptor fd \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} \mbox{\hyperlink{class_a}{A}} valid socket resource created with {\bfseries{socket\+\_\+create}} or {\bfseries{socket\+\_\+accept}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a8fea8bc1e456df2cb00cf1340fb97699}\label{sockets_8php_a8fea8bc1e456df2cb00cf1340fb97699}} 
+\index{sockets.php@{sockets.php}!socket\_set\_option@{socket\_set\_option}}
+\index{socket\_set\_option@{socket\_set\_option}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_set\_option()}{socket\_set\_option()}}
+{\footnotesize\ttfamily socket\+\_\+set\+\_\+option (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{}]{\$level,  }\item[{}]{\$optname,  }\item[{}]{\$optval }\end{DoxyParamCaption})}
+
+Sets socket options for the socket \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} \mbox{\hyperlink{class_a}{A}} valid socket resource created with {\bfseries{socket\+\_\+create}} or {\bfseries{socket\+\_\+accept}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$level} & \\
+\hline
+\end{DoxyParams}
+The {\itshape level} parameter specifies the protocol level at which the option resides. For example, to retrieve options at the socket level, a {\itshape level} parameter of {\bfseries{S\+O\+L\+\_\+\+S\+O\+C\+K\+ET}} would be used. \mbox{\hyperlink{namespace_other}{Other}} levels, such as T\+CP, can be used by specifying the protocol number of that level. Protocol numbers can be found by using the {\bfseries{getprotobyname}} function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$optname} & \\
+\hline
+\end{DoxyParams}
+The available socket options are the same as those for the {\bfseries{socket\+\_\+get\+\_\+option}} function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$optval} & \\
+\hline
+\end{DoxyParams}
+The option value. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a333264cbcd21b1d5ab7c731a093ffee1}\label{sockets_8php_a333264cbcd21b1d5ab7c731a093ffee1}} 
+\index{sockets.php@{sockets.php}!socket\_setopt@{socket\_setopt}}
+\index{socket\_setopt@{socket\_setopt}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_setopt()}{socket\_setopt()}}
+{\footnotesize\ttfamily socket\+\_\+setopt (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{}]{\$level,  }\item[{}]{\$optname,  }\item[{}]{\$optval }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$socket} & \\
+\hline
+{\em \$level} & \\
+\hline
+{\em \$optname} & \\
+\hline
+{\em \$optval} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sockets_8php_afd7606919da1f668c83e36ee021b47b9}\label{sockets_8php_afd7606919da1f668c83e36ee021b47b9}} 
+\index{sockets.php@{sockets.php}!socket\_shutdown@{socket\_shutdown}}
+\index{socket\_shutdown@{socket\_shutdown}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_shutdown()}{socket\_shutdown()}}
+{\footnotesize\ttfamily socket\+\_\+shutdown (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{}]{\$how = {\ttfamily 2} }\end{DoxyParamCaption})}
+
+Shuts down a socket for receiving, sending, or both \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket }} \mbox{\hyperlink{class_a}{A}} valid socket resource created with {\bfseries{socket\+\_\+create}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$how} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The value of {\itshape how} can be one of the following\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+values for {\itshape how} 
+
+0 
+
+Shutdown socket reading   
+
+1 
+
+Shutdown socket writing   
+
+2 
+
+Shutdown socket reading and writing   
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_ab48929223ffd499babae64df815dc604}\label{sockets_8php_ab48929223ffd499babae64df815dc604}} 
+\index{sockets.php@{sockets.php}!socket\_strerror@{socket\_strerror}}
+\index{socket\_strerror@{socket\_strerror}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_strerror()}{socket\_strerror()}}
+{\footnotesize\ttfamily socket\+\_\+strerror (\begin{DoxyParamCaption}\item[{}]{\$errno }\end{DoxyParamCaption})}
+
+Return a string describing a socket error \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$errno }} \mbox{\hyperlink{class_a}{A}} valid socket error number, likely produced by {\bfseries{socket\+\_\+last\+\_\+error}}. 
+
+\begin{DoxyReturn}{Returns}
+string the error message associated with the {\itshape errno} parameter. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a3c92509e53bd1de17229d0515c918681}\label{sockets_8php_a3c92509e53bd1de17229d0515c918681}} 
+\index{sockets.php@{sockets.php}!socket\_write@{socket\_write}}
+\index{socket\_write@{socket\_write}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{socket\_write()}{socket\_write()}}
+{\footnotesize\ttfamily socket\+\_\+write (\begin{DoxyParamCaption}\item[{}]{\$socket,  }\item[{}]{\$buffer,  }\item[{}]{\$length = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Write to a socket \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$socket  string \$buffer }} The buffer to be written. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The optional parameter {\itshape length} can specify an alternate length of bytes written to the socket. If this length is greater then the buffer length, it is silently truncated to the length of the buffer. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false the number of bytes successfully written to the socket or {\bfseries{F\+A\+L\+SE}} on failure. The error code can be retrieved with {\bfseries{socket\+\_\+last\+\_\+error}}. This code may be passed to {\bfseries{socket\+\_\+strerror}} to get a textual explanation of the error. 
+\end{DoxyReturn}
+
+
+It is perfectly valid for {\bfseries{socket\+\_\+write}} to return zero which means no bytes have been written. Be sure to use the === operator to check for {\bfseries{F\+A\+L\+SE}} in case of an error. \begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{sockets_8php_a5b2f5a3e5378f4bbbceb390d5b82a9c8}\label{sockets_8php_a5b2f5a3e5378f4bbbceb390d5b82a9c8}} 
+\index{sockets.php@{sockets.php}!AF\_INET@{AF\_INET}}
+\index{AF\_INET@{AF\_INET}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{AF\_INET}{AF\_INET}}
+{\footnotesize\ttfamily const A\+F\+\_\+\+I\+N\+ET 2}
+
+\mbox{\Hypertarget{sockets_8php_ad35ae7a3e76604200a5b21fd7d22efb7}\label{sockets_8php_ad35ae7a3e76604200a5b21fd7d22efb7}} 
+\index{sockets.php@{sockets.php}!AF\_INET6@{AF\_INET6}}
+\index{AF\_INET6@{AF\_INET6}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{AF\_INET6}{AF\_INET6}}
+{\footnotesize\ttfamily const A\+F\+\_\+\+I\+N\+E\+T6 10}
+
+Only available if compiled with I\+Pv6 support. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ad13479d4270838fc022da4e79c2b1c34}\label{sockets_8php_ad13479d4270838fc022da4e79c2b1c34}} 
+\index{sockets.php@{sockets.php}!AF\_UNIX@{AF\_UNIX}}
+\index{AF\_UNIX@{AF\_UNIX}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{AF\_UNIX}{AF\_UNIX}}
+{\footnotesize\ttfamily const A\+F\+\_\+\+U\+N\+IX 1}
+
+\mbox{\Hypertarget{sockets_8php_ade6109aae31d6b416dcdd8a46d08d699}\label{sockets_8php_ade6109aae31d6b416dcdd8a46d08d699}} 
+\index{sockets.php@{sockets.php}!IP\_MULTICAST\_IF@{IP\_MULTICAST\_IF}}
+\index{IP\_MULTICAST\_IF@{IP\_MULTICAST\_IF}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IP\_MULTICAST\_IF}{IP\_MULTICAST\_IF}}
+{\footnotesize\ttfamily const I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+IF 32}
+
+The outgoing interface for I\+Pv4 multicast packets. \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/function.\+socket-\/get-\/option.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a959695551a1220e574544b353b1b8fcb}\label{sockets_8php_a959695551a1220e574544b353b1b8fcb}} 
+\index{sockets.php@{sockets.php}!IP\_MULTICAST\_LOOP@{IP\_MULTICAST\_LOOP}}
+\index{IP\_MULTICAST\_LOOP@{IP\_MULTICAST\_LOOP}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IP\_MULTICAST\_LOOP}{IP\_MULTICAST\_LOOP}}
+{\footnotesize\ttfamily const I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+L\+O\+OP 34}
+
+The multicast loopback policy for I\+Pv4 packets, which determines whether multicast packets sent by this socket also reach receivers in the same host that have joined the same multicast group on the outgoing interface used by this socket. This is the case by default. \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/function.\+socket-\/get-\/option.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_aaf6385b9bf79c867cb27612201b38ab9}\label{sockets_8php_aaf6385b9bf79c867cb27612201b38ab9}} 
+\index{sockets.php@{sockets.php}!IP\_MULTICAST\_TTL@{IP\_MULTICAST\_TTL}}
+\index{IP\_MULTICAST\_TTL@{IP\_MULTICAST\_TTL}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IP\_MULTICAST\_TTL}{IP\_MULTICAST\_TTL}}
+{\footnotesize\ttfamily const I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+T\+TL 33}
+
+The outgoing interface for I\+Pv6 multicast packets. \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/function.\+socket-\/get-\/option.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a22bbde639b50fe8db3f321beb9ebc81c}\label{sockets_8php_a22bbde639b50fe8db3f321beb9ebc81c}} 
+\index{sockets.php@{sockets.php}!IPPROTO\_IP@{IPPROTO\_IP}}
+\index{IPPROTO\_IP@{IPPROTO\_IP}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IPPROTO\_IP}{IPPROTO\_IP}}
+{\footnotesize\ttfamily const I\+P\+P\+R\+O\+T\+O\+\_\+\+IP 0}
+
+\mbox{\Hypertarget{sockets_8php_aae3d014dc202b7ecdf503489848f1e37}\label{sockets_8php_aae3d014dc202b7ecdf503489848f1e37}} 
+\index{sockets.php@{sockets.php}!IPPROTO\_IPV6@{IPPROTO\_IPV6}}
+\index{IPPROTO\_IPV6@{IPPROTO\_IPV6}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IPPROTO\_IPV6}{IPPROTO\_IPV6}}
+{\footnotesize\ttfamily const I\+P\+P\+R\+O\+T\+O\+\_\+\+I\+P\+V6 41}
+
+\mbox{\Hypertarget{sockets_8php_af793aa4d38694870bd3b3b3dcfbec2aa}\label{sockets_8php_af793aa4d38694870bd3b3b3dcfbec2aa}} 
+\index{sockets.php@{sockets.php}!IPV6\_HOPLIMIT@{IPV6\_HOPLIMIT}}
+\index{IPV6\_HOPLIMIT@{IPV6\_HOPLIMIT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IPV6\_HOPLIMIT}{IPV6\_HOPLIMIT}}
+{\footnotesize\ttfamily const I\+P\+V6\+\_\+\+H\+O\+P\+L\+I\+M\+IT 52}
+
+\mbox{\Hypertarget{sockets_8php_aeabb2da62727cd0037776a34745d04ed}\label{sockets_8php_aeabb2da62727cd0037776a34745d04ed}} 
+\index{sockets.php@{sockets.php}!IPV6\_MULTICAST\_HOPS@{IPV6\_MULTICAST\_HOPS}}
+\index{IPV6\_MULTICAST\_HOPS@{IPV6\_MULTICAST\_HOPS}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IPV6\_MULTICAST\_HOPS}{IPV6\_MULTICAST\_HOPS}}
+{\footnotesize\ttfamily const I\+P\+V6\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+H\+O\+PS 18}
+
+The time-\/to-\/live of outgoing I\+Pv4 multicast packets. This should be a value between 0 (don\textquotesingle{}t leave the interface) and 255. The default value is 1 (only the local network is reached). \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/function.\+socket-\/get-\/option.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_aa0cc9eb80aae5e92c6710088be886721}\label{sockets_8php_aa0cc9eb80aae5e92c6710088be886721}} 
+\index{sockets.php@{sockets.php}!IPV6\_MULTICAST\_IF@{IPV6\_MULTICAST\_IF}}
+\index{IPV6\_MULTICAST\_IF@{IPV6\_MULTICAST\_IF}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IPV6\_MULTICAST\_IF}{IPV6\_MULTICAST\_IF}}
+{\footnotesize\ttfamily const I\+P\+V6\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+IF 17}
+
+Analogous to I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+L\+O\+OP, but for I\+Pv6. \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/function.\+socket-\/get-\/option.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a43d5f72e3a4afa60da1203136f671927}\label{sockets_8php_a43d5f72e3a4afa60da1203136f671927}} 
+\index{sockets.php@{sockets.php}!IPV6\_MULTICAST\_LOOP@{IPV6\_MULTICAST\_LOOP}}
+\index{IPV6\_MULTICAST\_LOOP@{IPV6\_MULTICAST\_LOOP}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IPV6\_MULTICAST\_LOOP}{IPV6\_MULTICAST\_LOOP}}
+{\footnotesize\ttfamily const I\+P\+V6\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+L\+O\+OP 19}
+
+Analogous to I\+P\+\_\+\+M\+U\+L\+T\+I\+C\+A\+S\+T\+\_\+\+T\+TL, but for I\+Pv6 packets. The value -\/1 is also accepted, meaning the route default should be used. \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/function.\+socket-\/get-\/option.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a274436e62a2de23b0f39b213ae8ac662}\label{sockets_8php_a274436e62a2de23b0f39b213ae8ac662}} 
+\index{sockets.php@{sockets.php}!IPV6\_PKTINFO@{IPV6\_PKTINFO}}
+\index{IPV6\_PKTINFO@{IPV6\_PKTINFO}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IPV6\_PKTINFO}{IPV6\_PKTINFO}}
+{\footnotesize\ttfamily const I\+P\+V6\+\_\+\+P\+K\+T\+I\+N\+FO 50}
+
+\mbox{\Hypertarget{sockets_8php_a0605561c4e361c55fc4515055bd814ac}\label{sockets_8php_a0605561c4e361c55fc4515055bd814ac}} 
+\index{sockets.php@{sockets.php}!IPV6\_RECVHOPLIMIT@{IPV6\_RECVHOPLIMIT}}
+\index{IPV6\_RECVHOPLIMIT@{IPV6\_RECVHOPLIMIT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IPV6\_RECVHOPLIMIT}{IPV6\_RECVHOPLIMIT}}
+{\footnotesize\ttfamily const I\+P\+V6\+\_\+\+R\+E\+C\+V\+H\+O\+P\+L\+I\+M\+IT 51}
+
+\mbox{\Hypertarget{sockets_8php_a786b6735f20704efb1f4534d0455bf38}\label{sockets_8php_a786b6735f20704efb1f4534d0455bf38}} 
+\index{sockets.php@{sockets.php}!IPV6\_RECVPKTINFO@{IPV6\_RECVPKTINFO}}
+\index{IPV6\_RECVPKTINFO@{IPV6\_RECVPKTINFO}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IPV6\_RECVPKTINFO}{IPV6\_RECVPKTINFO}}
+{\footnotesize\ttfamily const I\+P\+V6\+\_\+\+R\+E\+C\+V\+P\+K\+T\+I\+N\+FO 49}
+
+\mbox{\Hypertarget{sockets_8php_ad624e8517955f96fc23ee080f2ca31e1}\label{sockets_8php_ad624e8517955f96fc23ee080f2ca31e1}} 
+\index{sockets.php@{sockets.php}!IPV6\_RECVTCLASS@{IPV6\_RECVTCLASS}}
+\index{IPV6\_RECVTCLASS@{IPV6\_RECVTCLASS}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IPV6\_RECVTCLASS}{IPV6\_RECVTCLASS}}
+{\footnotesize\ttfamily const I\+P\+V6\+\_\+\+R\+E\+C\+V\+T\+C\+L\+A\+SS 66}
+
+\mbox{\Hypertarget{sockets_8php_a28952797da47d467e9d6bc60a10ef73b}\label{sockets_8php_a28952797da47d467e9d6bc60a10ef73b}} 
+\index{sockets.php@{sockets.php}!IPV6\_TCLASS@{IPV6\_TCLASS}}
+\index{IPV6\_TCLASS@{IPV6\_TCLASS}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IPV6\_TCLASS}{IPV6\_TCLASS}}
+{\footnotesize\ttfamily const I\+P\+V6\+\_\+\+T\+C\+L\+A\+SS 67}
+
+\mbox{\Hypertarget{sockets_8php_a27164650fd5b72c5838b37ea9238785f}\label{sockets_8php_a27164650fd5b72c5838b37ea9238785f}} 
+\index{sockets.php@{sockets.php}!IPV6\_UNICAST\_HOPS@{IPV6\_UNICAST\_HOPS}}
+\index{IPV6\_UNICAST\_HOPS@{IPV6\_UNICAST\_HOPS}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IPV6\_UNICAST\_HOPS}{IPV6\_UNICAST\_HOPS}}
+{\footnotesize\ttfamily const I\+P\+V6\+\_\+\+U\+N\+I\+C\+A\+S\+T\+\_\+\+H\+O\+PS 16}
+
+\mbox{\Hypertarget{sockets_8php_a1ad19112357ba9853fabfebccf04fdfa}\label{sockets_8php_a1ad19112357ba9853fabfebccf04fdfa}} 
+\index{sockets.php@{sockets.php}!IPV6\_V6ONLY@{IPV6\_V6ONLY}}
+\index{IPV6\_V6ONLY@{IPV6\_V6ONLY}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{IPV6\_V6ONLY}{IPV6\_V6ONLY}}
+{\footnotesize\ttfamily const I\+P\+V6\+\_\+\+V6\+O\+N\+LY 26}
+
+\mbox{\Hypertarget{sockets_8php_a6e6b3fb687f80148d43f8b27b82ec251}\label{sockets_8php_a6e6b3fb687f80148d43f8b27b82ec251}} 
+\index{sockets.php@{sockets.php}!MCAST\_BLOCK\_SOURCE@{MCAST\_BLOCK\_SOURCE}}
+\index{MCAST\_BLOCK\_SOURCE@{MCAST\_BLOCK\_SOURCE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MCAST\_BLOCK\_SOURCE}{MCAST\_BLOCK\_SOURCE}}
+{\footnotesize\ttfamily const M\+C\+A\+S\+T\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE 43}
+
+Blocks packets arriving from a specific source to a specific multicast group, which must have been previously joined. \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/function.\+socket-\/get-\/option.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_abcda5912b862011c1c6348deaf07c202}\label{sockets_8php_abcda5912b862011c1c6348deaf07c202}} 
+\index{sockets.php@{sockets.php}!MCAST\_JOIN\_GROUP@{MCAST\_JOIN\_GROUP}}
+\index{MCAST\_JOIN\_GROUP@{MCAST\_JOIN\_GROUP}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MCAST\_JOIN\_GROUP}{MCAST\_JOIN\_GROUP}}
+{\footnotesize\ttfamily const M\+C\+A\+S\+T\+\_\+\+J\+O\+I\+N\+\_\+\+G\+R\+O\+UP 42}
+
+Joins a multicast group. \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/function.\+socket-\/get-\/option.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_ae9624e98110accbec9d3d9ae8859cb7d}\label{sockets_8php_ae9624e98110accbec9d3d9ae8859cb7d}} 
+\index{sockets.php@{sockets.php}!MCAST\_JOIN\_SOURCE\_GROUP@{MCAST\_JOIN\_SOURCE\_GROUP}}
+\index{MCAST\_JOIN\_SOURCE\_GROUP@{MCAST\_JOIN\_SOURCE\_GROUP}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MCAST\_JOIN\_SOURCE\_GROUP}{MCAST\_JOIN\_SOURCE\_GROUP}}
+{\footnotesize\ttfamily const M\+C\+A\+S\+T\+\_\+\+J\+O\+I\+N\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+G\+R\+O\+UP 46}
+
+Receive packets destined to a specific multicast group whose source address matches a specific value. \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/function.\+socket-\/get-\/option.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a2202c0949f07a42c5d3500f5c737825b}\label{sockets_8php_a2202c0949f07a42c5d3500f5c737825b}} 
+\index{sockets.php@{sockets.php}!MCAST\_LEAVE\_GROUP@{MCAST\_LEAVE\_GROUP}}
+\index{MCAST\_LEAVE\_GROUP@{MCAST\_LEAVE\_GROUP}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MCAST\_LEAVE\_GROUP}{MCAST\_LEAVE\_GROUP}}
+{\footnotesize\ttfamily const M\+C\+A\+S\+T\+\_\+\+L\+E\+A\+V\+E\+\_\+\+G\+R\+O\+UP 45}
+
+Leaves a multicast group. \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/function.\+socket-\/get-\/option.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_aa5c210683f1c12458d62e3682a4b0943}\label{sockets_8php_aa5c210683f1c12458d62e3682a4b0943}} 
+\index{sockets.php@{sockets.php}!MCAST\_LEAVE\_SOURCE\_GROUP@{MCAST\_LEAVE\_SOURCE\_GROUP}}
+\index{MCAST\_LEAVE\_SOURCE\_GROUP@{MCAST\_LEAVE\_SOURCE\_GROUP}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MCAST\_LEAVE\_SOURCE\_GROUP}{MCAST\_LEAVE\_SOURCE\_GROUP}}
+{\footnotesize\ttfamily const M\+C\+A\+S\+T\+\_\+\+L\+E\+A\+V\+E\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+G\+R\+O\+UP 47}
+
+Stop receiving packets destined to a specific multicast group whose soure address matches a specific value. \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/function.\+socket-\/get-\/option.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a48cb52751a5213e45a64640796051d42}\label{sockets_8php_a48cb52751a5213e45a64640796051d42}} 
+\index{sockets.php@{sockets.php}!MCAST\_UNBLOCK\_SOURCE@{MCAST\_UNBLOCK\_SOURCE}}
+\index{MCAST\_UNBLOCK\_SOURCE@{MCAST\_UNBLOCK\_SOURCE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MCAST\_UNBLOCK\_SOURCE}{MCAST\_UNBLOCK\_SOURCE}}
+{\footnotesize\ttfamily const M\+C\+A\+S\+T\+\_\+\+U\+N\+B\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE 44}
+
+Unblocks (start receiving again) packets arriving from a specific source address to a specific multicast group, which must have been previously joined. \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/function.\+socket-\/get-\/option.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{sockets_8php_a05ae8101377bfe4439234e46f583c406}\label{sockets_8php_a05ae8101377bfe4439234e46f583c406}} 
+\index{sockets.php@{sockets.php}!MSG\_CMSG\_CLOEXEC@{MSG\_CMSG\_CLOEXEC}}
+\index{MSG\_CMSG\_CLOEXEC@{MSG\_CMSG\_CLOEXEC}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_CMSG\_CLOEXEC}{MSG\_CMSG\_CLOEXEC}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+C\+M\+S\+G\+\_\+\+C\+L\+O\+E\+X\+EC 1073741824}
+
+\mbox{\Hypertarget{sockets_8php_a9021d9ea0e038c0b0f05ec295f5d1cb8}\label{sockets_8php_a9021d9ea0e038c0b0f05ec295f5d1cb8}} 
+\index{sockets.php@{sockets.php}!MSG\_CONFIRM@{MSG\_CONFIRM}}
+\index{MSG\_CONFIRM@{MSG\_CONFIRM}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_CONFIRM}{MSG\_CONFIRM}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+C\+O\+N\+F\+I\+RM 2048}
+
+\mbox{\Hypertarget{sockets_8php_aee40441374b1c3f72f1b9e18e721a1ac}\label{sockets_8php_aee40441374b1c3f72f1b9e18e721a1ac}} 
+\index{sockets.php@{sockets.php}!MSG\_CTRUNC@{MSG\_CTRUNC}}
+\index{MSG\_CTRUNC@{MSG\_CTRUNC}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_CTRUNC}{MSG\_CTRUNC}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+C\+T\+R\+U\+NC 8}
+
+\mbox{\Hypertarget{sockets_8php_a9a4e2cb282a42626c1069bb65665dd05}\label{sockets_8php_a9a4e2cb282a42626c1069bb65665dd05}} 
+\index{sockets.php@{sockets.php}!MSG\_DONTROUTE@{MSG\_DONTROUTE}}
+\index{MSG\_DONTROUTE@{MSG\_DONTROUTE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_DONTROUTE}{MSG\_DONTROUTE}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+D\+O\+N\+T\+R\+O\+U\+TE 4}
+
+\mbox{\Hypertarget{sockets_8php_a6031d6ced0ab6bd93e1ae3742d167eca}\label{sockets_8php_a6031d6ced0ab6bd93e1ae3742d167eca}} 
+\index{sockets.php@{sockets.php}!MSG\_DONTWAIT@{MSG\_DONTWAIT}}
+\index{MSG\_DONTWAIT@{MSG\_DONTWAIT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_DONTWAIT}{MSG\_DONTWAIT}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+D\+O\+N\+T\+W\+A\+IT 64}
+
+\mbox{\Hypertarget{sockets_8php_a51c6242031a625608ef173b3d4d045c8}\label{sockets_8php_a51c6242031a625608ef173b3d4d045c8}} 
+\index{sockets.php@{sockets.php}!MSG\_EOF@{MSG\_EOF}}
+\index{MSG\_EOF@{MSG\_EOF}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_EOF}{MSG\_EOF}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+E\+OF 512}
+
+Not available on Windows platforms. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ade7819d9ab8b417ae2be9a0ba8da7c08}\label{sockets_8php_ade7819d9ab8b417ae2be9a0ba8da7c08}} 
+\index{sockets.php@{sockets.php}!MSG\_EOR@{MSG\_EOR}}
+\index{MSG\_EOR@{MSG\_EOR}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_EOR}{MSG\_EOR}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+E\+OR 128}
+
+Not available on Windows platforms. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a51c09912199edb2bdd45c506e265a161}\label{sockets_8php_a51c09912199edb2bdd45c506e265a161}} 
+\index{sockets.php@{sockets.php}!MSG\_ERRQUEUE@{MSG\_ERRQUEUE}}
+\index{MSG\_ERRQUEUE@{MSG\_ERRQUEUE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_ERRQUEUE}{MSG\_ERRQUEUE}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+E\+R\+R\+Q\+U\+E\+UE 8192}
+
+\mbox{\Hypertarget{sockets_8php_a2ce74c723c097531c951a9c7b895583b}\label{sockets_8php_a2ce74c723c097531c951a9c7b895583b}} 
+\index{sockets.php@{sockets.php}!MSG\_MORE@{MSG\_MORE}}
+\index{MSG\_MORE@{MSG\_MORE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_MORE}{MSG\_MORE}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+M\+O\+RE 32768}
+
+\mbox{\Hypertarget{sockets_8php_a8def61af8c0a0ea2cf86c80e0e595228}\label{sockets_8php_a8def61af8c0a0ea2cf86c80e0e595228}} 
+\index{sockets.php@{sockets.php}!MSG\_NOSIGNAL@{MSG\_NOSIGNAL}}
+\index{MSG\_NOSIGNAL@{MSG\_NOSIGNAL}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_NOSIGNAL}{MSG\_NOSIGNAL}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+N\+O\+S\+I\+G\+N\+AL 16384}
+
+\mbox{\Hypertarget{sockets_8php_a1841c651617988675686fad4df383ffa}\label{sockets_8php_a1841c651617988675686fad4df383ffa}} 
+\index{sockets.php@{sockets.php}!MSG\_OOB@{MSG\_OOB}}
+\index{MSG\_OOB@{MSG\_OOB}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_OOB}{MSG\_OOB}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+O\+OB 1}
+
+\mbox{\Hypertarget{sockets_8php_afccf7858594ff23d7fbd0630fb788088}\label{sockets_8php_afccf7858594ff23d7fbd0630fb788088}} 
+\index{sockets.php@{sockets.php}!MSG\_PEEK@{MSG\_PEEK}}
+\index{MSG\_PEEK@{MSG\_PEEK}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_PEEK}{MSG\_PEEK}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+P\+E\+EK 2}
+
+\mbox{\Hypertarget{sockets_8php_a910e96b0eae60949f59ac86b43426210}\label{sockets_8php_a910e96b0eae60949f59ac86b43426210}} 
+\index{sockets.php@{sockets.php}!MSG\_TRUNC@{MSG\_TRUNC}}
+\index{MSG\_TRUNC@{MSG\_TRUNC}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_TRUNC}{MSG\_TRUNC}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+T\+R\+U\+NC 32}
+
+\mbox{\Hypertarget{sockets_8php_ad0a5304b2bc875a1b1efdb2bcfe57cbf}\label{sockets_8php_ad0a5304b2bc875a1b1efdb2bcfe57cbf}} 
+\index{sockets.php@{sockets.php}!MSG\_WAITALL@{MSG\_WAITALL}}
+\index{MSG\_WAITALL@{MSG\_WAITALL}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_WAITALL}{MSG\_WAITALL}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+W\+A\+I\+T\+A\+LL 256}
+
+\mbox{\Hypertarget{sockets_8php_a3b87bbc898c8812c4a38d12737ae143c}\label{sockets_8php_a3b87bbc898c8812c4a38d12737ae143c}} 
+\index{sockets.php@{sockets.php}!MSG\_WAITFORONE@{MSG\_WAITFORONE}}
+\index{MSG\_WAITFORONE@{MSG\_WAITFORONE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_WAITFORONE}{MSG\_WAITFORONE}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+W\+A\+I\+T\+F\+O\+R\+O\+NE 65536}
+
+\mbox{\Hypertarget{sockets_8php_adce533c2c77ae0921dbe6d2ce7985dec}\label{sockets_8php_adce533c2c77ae0921dbe6d2ce7985dec}} 
+\index{sockets.php@{sockets.php}!PHP\_BINARY\_READ@{PHP\_BINARY\_READ}}
+\index{PHP\_BINARY\_READ@{PHP\_BINARY\_READ}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{PHP\_BINARY\_READ}{PHP\_BINARY\_READ}}
+{\footnotesize\ttfamily const P\+H\+P\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+R\+E\+AD 2}
+
+\mbox{\Hypertarget{sockets_8php_a0f1566f69c1f0d48be9152a1f8a03278}\label{sockets_8php_a0f1566f69c1f0d48be9152a1f8a03278}} 
+\index{sockets.php@{sockets.php}!PHP\_NORMAL\_READ@{PHP\_NORMAL\_READ}}
+\index{PHP\_NORMAL\_READ@{PHP\_NORMAL\_READ}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{PHP\_NORMAL\_READ}{PHP\_NORMAL\_READ}}
+{\footnotesize\ttfamily const P\+H\+P\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+R\+E\+AD 1}
+
+\mbox{\Hypertarget{sockets_8php_aa7a20bd1cc32beb58c32fbac2a419d9a}\label{sockets_8php_aa7a20bd1cc32beb58c32fbac2a419d9a}} 
+\index{sockets.php@{sockets.php}!SCM\_CREDENTIALS@{SCM\_CREDENTIALS}}
+\index{SCM\_CREDENTIALS@{SCM\_CREDENTIALS}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SCM\_CREDENTIALS}{SCM\_CREDENTIALS}}
+{\footnotesize\ttfamily const S\+C\+M\+\_\+\+C\+R\+E\+D\+E\+N\+T\+I\+A\+LS 2}
+
+\mbox{\Hypertarget{sockets_8php_af08ed4879ebd5ef6e16eb4ff4963516e}\label{sockets_8php_af08ed4879ebd5ef6e16eb4ff4963516e}} 
+\index{sockets.php@{sockets.php}!SCM\_RIGHTS@{SCM\_RIGHTS}}
+\index{SCM\_RIGHTS@{SCM\_RIGHTS}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SCM\_RIGHTS}{SCM\_RIGHTS}}
+{\footnotesize\ttfamily const S\+C\+M\+\_\+\+R\+I\+G\+H\+TS 1}
+
+\mbox{\Hypertarget{sockets_8php_a1ce4638c3d00dabe6b16610eb1a5735b}\label{sockets_8php_a1ce4638c3d00dabe6b16610eb1a5735b}} 
+\index{sockets.php@{sockets.php}!SO\_BINDTODEVICE@{SO\_BINDTODEVICE}}
+\index{SO\_BINDTODEVICE@{SO\_BINDTODEVICE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_BINDTODEVICE}{SO\_BINDTODEVICE}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+B\+I\+N\+D\+T\+O\+D\+E\+V\+I\+CE 25}
+
+\mbox{\Hypertarget{sockets_8php_a9eaec5be42b8163b688581d388326315}\label{sockets_8php_a9eaec5be42b8163b688581d388326315}} 
+\index{sockets.php@{sockets.php}!SO\_BROADCAST@{SO\_BROADCAST}}
+\index{SO\_BROADCAST@{SO\_BROADCAST}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_BROADCAST}{SO\_BROADCAST}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+B\+R\+O\+A\+D\+C\+A\+ST 6}
+
+\mbox{\Hypertarget{sockets_8php_a761e6fb7238c7f3777a84c2f899c63f2}\label{sockets_8php_a761e6fb7238c7f3777a84c2f899c63f2}} 
+\index{sockets.php@{sockets.php}!SO\_DEBUG@{SO\_DEBUG}}
+\index{SO\_DEBUG@{SO\_DEBUG}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_DEBUG}{SO\_DEBUG}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+D\+E\+B\+UG 1}
+
+\mbox{\Hypertarget{sockets_8php_a5036b2d30f4abb530fc32b8f30730190}\label{sockets_8php_a5036b2d30f4abb530fc32b8f30730190}} 
+\index{sockets.php@{sockets.php}!SO\_DONTROUTE@{SO\_DONTROUTE}}
+\index{SO\_DONTROUTE@{SO\_DONTROUTE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_DONTROUTE}{SO\_DONTROUTE}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+D\+O\+N\+T\+R\+O\+U\+TE 5}
+
+\mbox{\Hypertarget{sockets_8php_ab1514d7afcdae3c4678b129509f46cac}\label{sockets_8php_ab1514d7afcdae3c4678b129509f46cac}} 
+\index{sockets.php@{sockets.php}!SO\_ERROR@{SO\_ERROR}}
+\index{SO\_ERROR@{SO\_ERROR}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_ERROR}{SO\_ERROR}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+E\+R\+R\+OR 4}
+
+\mbox{\Hypertarget{sockets_8php_ae4531bd855a226fb072d9f55adf13866}\label{sockets_8php_ae4531bd855a226fb072d9f55adf13866}} 
+\index{sockets.php@{sockets.php}!SO\_KEEPALIVE@{SO\_KEEPALIVE}}
+\index{SO\_KEEPALIVE@{SO\_KEEPALIVE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_KEEPALIVE}{SO\_KEEPALIVE}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+K\+E\+E\+P\+A\+L\+I\+VE 9}
+
+\mbox{\Hypertarget{sockets_8php_a401c16d65dea7b8e11088919072f2284}\label{sockets_8php_a401c16d65dea7b8e11088919072f2284}} 
+\index{sockets.php@{sockets.php}!SO\_LINGER@{SO\_LINGER}}
+\index{SO\_LINGER@{SO\_LINGER}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_LINGER}{SO\_LINGER}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+L\+I\+N\+G\+ER 13}
+
+\mbox{\Hypertarget{sockets_8php_aadeb09d0dafbeee05e05c8ae0f8f5b31}\label{sockets_8php_aadeb09d0dafbeee05e05c8ae0f8f5b31}} 
+\index{sockets.php@{sockets.php}!SO\_OOBINLINE@{SO\_OOBINLINE}}
+\index{SO\_OOBINLINE@{SO\_OOBINLINE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_OOBINLINE}{SO\_OOBINLINE}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+O\+O\+B\+I\+N\+L\+I\+NE 10}
+
+\mbox{\Hypertarget{sockets_8php_ae23796f1ae6eaca693130f645bf595cd}\label{sockets_8php_ae23796f1ae6eaca693130f645bf595cd}} 
+\index{sockets.php@{sockets.php}!SO\_PASSCRED@{SO\_PASSCRED}}
+\index{SO\_PASSCRED@{SO\_PASSCRED}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_PASSCRED}{SO\_PASSCRED}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+P\+A\+S\+S\+C\+R\+ED 16}
+
+\mbox{\Hypertarget{sockets_8php_a3020bbc04dd0d8ba2488c4b4ea3038bc}\label{sockets_8php_a3020bbc04dd0d8ba2488c4b4ea3038bc}} 
+\index{sockets.php@{sockets.php}!SO\_RCVBUF@{SO\_RCVBUF}}
+\index{SO\_RCVBUF@{SO\_RCVBUF}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_RCVBUF}{SO\_RCVBUF}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+R\+C\+V\+B\+UF 8}
+
+\mbox{\Hypertarget{sockets_8php_ab256eb7e847c2d19dc35623fbda9f724}\label{sockets_8php_ab256eb7e847c2d19dc35623fbda9f724}} 
+\index{sockets.php@{sockets.php}!SO\_RCVLOWAT@{SO\_RCVLOWAT}}
+\index{SO\_RCVLOWAT@{SO\_RCVLOWAT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_RCVLOWAT}{SO\_RCVLOWAT}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+R\+C\+V\+L\+O\+W\+AT 18}
+
+\mbox{\Hypertarget{sockets_8php_ab3a311d8b4e1a4df0664080e85dc95ae}\label{sockets_8php_ab3a311d8b4e1a4df0664080e85dc95ae}} 
+\index{sockets.php@{sockets.php}!SO\_RCVTIMEO@{SO\_RCVTIMEO}}
+\index{SO\_RCVTIMEO@{SO\_RCVTIMEO}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_RCVTIMEO}{SO\_RCVTIMEO}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+R\+C\+V\+T\+I\+M\+EO 20}
+
+\mbox{\Hypertarget{sockets_8php_ae45808f1218fa1486dbd9be64b373516}\label{sockets_8php_ae45808f1218fa1486dbd9be64b373516}} 
+\index{sockets.php@{sockets.php}!SO\_REUSEADDR@{SO\_REUSEADDR}}
+\index{SO\_REUSEADDR@{SO\_REUSEADDR}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_REUSEADDR}{SO\_REUSEADDR}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+R\+E\+U\+S\+E\+A\+D\+DR 2}
+
+\mbox{\Hypertarget{sockets_8php_ae388c5c87ecee1c2e5c3b0cdb57c71d6}\label{sockets_8php_ae388c5c87ecee1c2e5c3b0cdb57c71d6}} 
+\index{sockets.php@{sockets.php}!SO\_REUSEPORT@{SO\_REUSEPORT}}
+\index{SO\_REUSEPORT@{SO\_REUSEPORT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_REUSEPORT}{SO\_REUSEPORT}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+R\+E\+U\+S\+E\+P\+O\+RT 15}
+
+This constant is only available in P\+HP 5.\+4.\+10 or later on platforms that support the {\bfseries{S\+O\+\_\+\+R\+E\+U\+S\+E\+P\+O\+RT}} socket option\+: this includes Mac OS X and Free\+B\+SD, but does not include Linux or Windows. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a5bf302acdb0e58ea9f8325373abe1563}\label{sockets_8php_a5bf302acdb0e58ea9f8325373abe1563}} 
+\index{sockets.php@{sockets.php}!SO\_SNDBUF@{SO\_SNDBUF}}
+\index{SO\_SNDBUF@{SO\_SNDBUF}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_SNDBUF}{SO\_SNDBUF}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+S\+N\+D\+B\+UF 7}
+
+\mbox{\Hypertarget{sockets_8php_a556e8987a8a24b0defbc6c4934caa4cc}\label{sockets_8php_a556e8987a8a24b0defbc6c4934caa4cc}} 
+\index{sockets.php@{sockets.php}!SO\_SNDLOWAT@{SO\_SNDLOWAT}}
+\index{SO\_SNDLOWAT@{SO\_SNDLOWAT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_SNDLOWAT}{SO\_SNDLOWAT}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+S\+N\+D\+L\+O\+W\+AT 19}
+
+\mbox{\Hypertarget{sockets_8php_ace3cc8b4c558ad795574a9a5e4823e53}\label{sockets_8php_ace3cc8b4c558ad795574a9a5e4823e53}} 
+\index{sockets.php@{sockets.php}!SO\_SNDTIMEO@{SO\_SNDTIMEO}}
+\index{SO\_SNDTIMEO@{SO\_SNDTIMEO}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_SNDTIMEO}{SO\_SNDTIMEO}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+S\+N\+D\+T\+I\+M\+EO 21}
+
+\mbox{\Hypertarget{sockets_8php_a09229cb70d1c4ecd1b7d8303bb79b177}\label{sockets_8php_a09229cb70d1c4ecd1b7d8303bb79b177}} 
+\index{sockets.php@{sockets.php}!SO\_TYPE@{SO\_TYPE}}
+\index{SO\_TYPE@{SO\_TYPE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SO\_TYPE}{SO\_TYPE}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+T\+Y\+PE 3}
+
+\mbox{\Hypertarget{sockets_8php_ae766b18ff4ff0c934f95c650cdad1ded}\label{sockets_8php_ae766b18ff4ff0c934f95c650cdad1ded}} 
+\index{sockets.php@{sockets.php}!SOCK\_DGRAM@{SOCK\_DGRAM}}
+\index{SOCK\_DGRAM@{SOCK\_DGRAM}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCK\_DGRAM}{SOCK\_DGRAM}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+\_\+\+D\+G\+R\+AM 2}
+
+\mbox{\Hypertarget{sockets_8php_a7087ab23db900f3a42a22ed03295b181}\label{sockets_8php_a7087ab23db900f3a42a22ed03295b181}} 
+\index{sockets.php@{sockets.php}!SOCK\_RAW@{SOCK\_RAW}}
+\index{SOCK\_RAW@{SOCK\_RAW}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCK\_RAW}{SOCK\_RAW}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+\_\+\+R\+AW 3}
+
+\mbox{\Hypertarget{sockets_8php_adc7f6a9b2f1224258426f1b25ea03dc3}\label{sockets_8php_adc7f6a9b2f1224258426f1b25ea03dc3}} 
+\index{sockets.php@{sockets.php}!SOCK\_RDM@{SOCK\_RDM}}
+\index{SOCK\_RDM@{SOCK\_RDM}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCK\_RDM}{SOCK\_RDM}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+\_\+\+R\+DM 4}
+
+\mbox{\Hypertarget{sockets_8php_a9ebc217fb74284b80379d96e21c1272d}\label{sockets_8php_a9ebc217fb74284b80379d96e21c1272d}} 
+\index{sockets.php@{sockets.php}!SOCK\_SEQPACKET@{SOCK\_SEQPACKET}}
+\index{SOCK\_SEQPACKET@{SOCK\_SEQPACKET}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCK\_SEQPACKET}{SOCK\_SEQPACKET}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+\_\+\+S\+E\+Q\+P\+A\+C\+K\+ET 5}
+
+\mbox{\Hypertarget{sockets_8php_a2fbfb814803f7352a6bc8835065e3ab4}\label{sockets_8php_a2fbfb814803f7352a6bc8835065e3ab4}} 
+\index{sockets.php@{sockets.php}!SOCK\_STREAM@{SOCK\_STREAM}}
+\index{SOCK\_STREAM@{SOCK\_STREAM}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCK\_STREAM}{SOCK\_STREAM}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+\_\+\+S\+T\+R\+E\+AM 1}
+
+\mbox{\Hypertarget{sockets_8php_ab8fb1734535dec4d8606c038de4030ab}\label{sockets_8php_ab8fb1734535dec4d8606c038de4030ab}} 
+\index{sockets.php@{sockets.php}!SOCKET\_E2BIG@{SOCKET\_E2BIG}}
+\index{SOCKET\_E2BIG@{SOCKET\_E2BIG}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_E2BIG}{SOCKET\_E2BIG}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E2\+B\+IG 7}
+
+Arg list too long. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a168a33f8a621d50bb7f2986606b78622}\label{sockets_8php_a168a33f8a621d50bb7f2986606b78622}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EACCES@{SOCKET\_EACCES}}
+\index{SOCKET\_EACCES@{SOCKET\_EACCES}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EACCES}{SOCKET\_EACCES}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+A\+C\+C\+ES 13}
+
+Permission denied. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ab6275063f58267f9d4dd3327c7c8cb9b}\label{sockets_8php_ab6275063f58267f9d4dd3327c7c8cb9b}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EADDRINUSE@{SOCKET\_EADDRINUSE}}
+\index{SOCKET\_EADDRINUSE@{SOCKET\_EADDRINUSE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EADDRINUSE}{SOCKET\_EADDRINUSE}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+A\+D\+D\+R\+I\+N\+U\+SE 98}
+
+\mbox{\Hypertarget{sockets_8php_a1b097ecc6dd545ef194df2936661dead}\label{sockets_8php_a1b097ecc6dd545ef194df2936661dead}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EADDRNOTAVAIL@{SOCKET\_EADDRNOTAVAIL}}
+\index{SOCKET\_EADDRNOTAVAIL@{SOCKET\_EADDRNOTAVAIL}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EADDRNOTAVAIL}{SOCKET\_EADDRNOTAVAIL}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+A\+D\+D\+R\+N\+O\+T\+A\+V\+A\+IL 99}
+
+Cannot assign requested address. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a237bc26d4709dc667da2bf10dc19391c}\label{sockets_8php_a237bc26d4709dc667da2bf10dc19391c}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EADV@{SOCKET\_EADV}}
+\index{SOCKET\_EADV@{SOCKET\_EADV}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EADV}{SOCKET\_EADV}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+A\+DV 68}
+
+Advertise error. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_aba8301f4a0eecf71d47a742242fb70df}\label{sockets_8php_aba8301f4a0eecf71d47a742242fb70df}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EAFNOSUPPORT@{SOCKET\_EAFNOSUPPORT}}
+\index{SOCKET\_EAFNOSUPPORT@{SOCKET\_EAFNOSUPPORT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EAFNOSUPPORT}{SOCKET\_EAFNOSUPPORT}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+A\+F\+N\+O\+S\+U\+P\+P\+O\+RT 97}
+
+Address family not supported by protocol. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ad4e19bdbad4c803c742154a60270ef62}\label{sockets_8php_ad4e19bdbad4c803c742154a60270ef62}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EAGAIN@{SOCKET\_EAGAIN}}
+\index{SOCKET\_EAGAIN@{SOCKET\_EAGAIN}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EAGAIN}{SOCKET\_EAGAIN}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+A\+G\+A\+IN 11}
+
+Try again. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a3710fd53bfaa3d9e75cf500bc412d3ff}\label{sockets_8php_a3710fd53bfaa3d9e75cf500bc412d3ff}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EALREADY@{SOCKET\_EALREADY}}
+\index{SOCKET\_EALREADY@{SOCKET\_EALREADY}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EALREADY}{SOCKET\_EALREADY}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+A\+L\+R\+E\+A\+DY 114}
+
+Operation already in progress. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a88fef58c2c88755333d579918153b795}\label{sockets_8php_a88fef58c2c88755333d579918153b795}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EBADE@{SOCKET\_EBADE}}
+\index{SOCKET\_EBADE@{SOCKET\_EBADE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EBADE}{SOCKET\_EBADE}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+A\+DE 52}
+
+Invalid exchange. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a83de695433b5e892d8ef250949cc314b}\label{sockets_8php_a83de695433b5e892d8ef250949cc314b}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EBADF@{SOCKET\_EBADF}}
+\index{SOCKET\_EBADF@{SOCKET\_EBADF}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EBADF}{SOCKET\_EBADF}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+A\+DF 9}
+
+Bad file number. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a76dc01ab1fc51095a135ae845be68cfd}\label{sockets_8php_a76dc01ab1fc51095a135ae845be68cfd}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EBADFD@{SOCKET\_EBADFD}}
+\index{SOCKET\_EBADFD@{SOCKET\_EBADFD}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EBADFD}{SOCKET\_EBADFD}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+A\+D\+FD 77}
+
+File descriptor in bad state. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_aa0eee87f66a076500277d44ea84c28dc}\label{sockets_8php_aa0eee87f66a076500277d44ea84c28dc}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EBADMSG@{SOCKET\_EBADMSG}}
+\index{SOCKET\_EBADMSG@{SOCKET\_EBADMSG}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EBADMSG}{SOCKET\_EBADMSG}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+A\+D\+M\+SG 74}
+
+Not a data message. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a59b3efc24ba4b6ba346718e39cc3fd5a}\label{sockets_8php_a59b3efc24ba4b6ba346718e39cc3fd5a}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EBADR@{SOCKET\_EBADR}}
+\index{SOCKET\_EBADR@{SOCKET\_EBADR}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EBADR}{SOCKET\_EBADR}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+A\+DR 53}
+
+Invalid request descriptor. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a2c7deac942c0552671d4d82bdde0423d}\label{sockets_8php_a2c7deac942c0552671d4d82bdde0423d}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EBADRQC@{SOCKET\_EBADRQC}}
+\index{SOCKET\_EBADRQC@{SOCKET\_EBADRQC}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EBADRQC}{SOCKET\_EBADRQC}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+A\+D\+R\+QC 56}
+
+Invalid request code. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a3cc4bf15554a864a1d04ca45f8847d91}\label{sockets_8php_a3cc4bf15554a864a1d04ca45f8847d91}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EBADSLT@{SOCKET\_EBADSLT}}
+\index{SOCKET\_EBADSLT@{SOCKET\_EBADSLT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EBADSLT}{SOCKET\_EBADSLT}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+A\+D\+S\+LT 57}
+
+Invalid slot. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a42e096e31bb345bcf0884fba15d9f5a9}\label{sockets_8php_a42e096e31bb345bcf0884fba15d9f5a9}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EBUSY@{SOCKET\_EBUSY}}
+\index{SOCKET\_EBUSY@{SOCKET\_EBUSY}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EBUSY}{SOCKET\_EBUSY}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+B\+U\+SY 16}
+
+Device or resource busy. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a40f58eca00090045398a16797d1408eb}\label{sockets_8php_a40f58eca00090045398a16797d1408eb}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ECHRNG@{SOCKET\_ECHRNG}}
+\index{SOCKET\_ECHRNG@{SOCKET\_ECHRNG}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ECHRNG}{SOCKET\_ECHRNG}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+C\+H\+R\+NG 44}
+
+Channel number out of range. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a3c965d171659102b3a2afad723e7874e}\label{sockets_8php_a3c965d171659102b3a2afad723e7874e}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ECOMM@{SOCKET\_ECOMM}}
+\index{SOCKET\_ECOMM@{SOCKET\_ECOMM}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ECOMM}{SOCKET\_ECOMM}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+C\+O\+MM 70}
+
+Communication error on send. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ae1711a9eba0c52f3e58bfeae8baf549e}\label{sockets_8php_ae1711a9eba0c52f3e58bfeae8baf549e}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ECONNABORTED@{SOCKET\_ECONNABORTED}}
+\index{SOCKET\_ECONNABORTED@{SOCKET\_ECONNABORTED}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ECONNABORTED}{SOCKET\_ECONNABORTED}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+C\+O\+N\+N\+A\+B\+O\+R\+T\+ED 103}
+
+Software caused connection abort. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a498be00ae3f882426df9d4cf425c6977}\label{sockets_8php_a498be00ae3f882426df9d4cf425c6977}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ECONNREFUSED@{SOCKET\_ECONNREFUSED}}
+\index{SOCKET\_ECONNREFUSED@{SOCKET\_ECONNREFUSED}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ECONNREFUSED}{SOCKET\_ECONNREFUSED}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+C\+O\+N\+N\+R\+E\+F\+U\+S\+ED 111}
+
+Connection refused. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a735e32d492601326465974966aa1c21a}\label{sockets_8php_a735e32d492601326465974966aa1c21a}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ECONNRESET@{SOCKET\_ECONNRESET}}
+\index{SOCKET\_ECONNRESET@{SOCKET\_ECONNRESET}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ECONNRESET}{SOCKET\_ECONNRESET}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+C\+O\+N\+N\+R\+E\+S\+ET 104}
+
+Connection reset by peer. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a5e94d4982506d6fa157d0577b13a19b0}\label{sockets_8php_a5e94d4982506d6fa157d0577b13a19b0}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EDESTADDRREQ@{SOCKET\_EDESTADDRREQ}}
+\index{SOCKET\_EDESTADDRREQ@{SOCKET\_EDESTADDRREQ}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EDESTADDRREQ}{SOCKET\_EDESTADDRREQ}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+D\+E\+S\+T\+A\+D\+D\+R\+R\+EQ 89}
+
+Destination address required. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a25c391ccfe88ecdb4952d9d2117b42f4}\label{sockets_8php_a25c391ccfe88ecdb4952d9d2117b42f4}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EDQUOT@{SOCKET\_EDQUOT}}
+\index{SOCKET\_EDQUOT@{SOCKET\_EDQUOT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EDQUOT}{SOCKET\_EDQUOT}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+D\+Q\+U\+OT 122}
+
+Quota exceeded. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_adcb6c3c3129af8bf7860b3cf434a09f2}\label{sockets_8php_adcb6c3c3129af8bf7860b3cf434a09f2}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EEXIST@{SOCKET\_EEXIST}}
+\index{SOCKET\_EEXIST@{SOCKET\_EEXIST}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EEXIST}{SOCKET\_EEXIST}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+E\+X\+I\+ST 17}
+
+File exists. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a9ba45720d4575629d70716a9b696a853}\label{sockets_8php_a9ba45720d4575629d70716a9b696a853}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EFAULT@{SOCKET\_EFAULT}}
+\index{SOCKET\_EFAULT@{SOCKET\_EFAULT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EFAULT}{SOCKET\_EFAULT}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+F\+A\+U\+LT 14}
+
+Bad address. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ada94b6d186bfab244fcef2d13c87182f}\label{sockets_8php_ada94b6d186bfab244fcef2d13c87182f}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EHOSTDOWN@{SOCKET\_EHOSTDOWN}}
+\index{SOCKET\_EHOSTDOWN@{SOCKET\_EHOSTDOWN}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EHOSTDOWN}{SOCKET\_EHOSTDOWN}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+H\+O\+S\+T\+D\+O\+WN 112}
+
+Host is down. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a3ec1eaeaade108f2eeee8917869e5342}\label{sockets_8php_a3ec1eaeaade108f2eeee8917869e5342}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EHOSTUNREACH@{SOCKET\_EHOSTUNREACH}}
+\index{SOCKET\_EHOSTUNREACH@{SOCKET\_EHOSTUNREACH}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EHOSTUNREACH}{SOCKET\_EHOSTUNREACH}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+H\+O\+S\+T\+U\+N\+R\+E\+A\+CH 113}
+
+No route to host. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_aaa72a031acd2b060cc6e446ee13ede61}\label{sockets_8php_aaa72a031acd2b060cc6e446ee13ede61}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EIDRM@{SOCKET\_EIDRM}}
+\index{SOCKET\_EIDRM@{SOCKET\_EIDRM}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EIDRM}{SOCKET\_EIDRM}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+I\+D\+RM 43}
+
+Identifier removed. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_af99b1dc00c3ddbd654647125312ff6bc}\label{sockets_8php_af99b1dc00c3ddbd654647125312ff6bc}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EINPROGRESS@{SOCKET\_EINPROGRESS}}
+\index{SOCKET\_EINPROGRESS@{SOCKET\_EINPROGRESS}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EINPROGRESS}{SOCKET\_EINPROGRESS}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+I\+N\+P\+R\+O\+G\+R\+E\+SS 115}
+
+Operation now in progress. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a692a4ee6f73256e5249dd4448a2cacbe}\label{sockets_8php_a692a4ee6f73256e5249dd4448a2cacbe}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EINTR@{SOCKET\_EINTR}}
+\index{SOCKET\_EINTR@{SOCKET\_EINTR}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EINTR}{SOCKET\_EINTR}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+I\+N\+TR 4}
+
+Interrupted system call. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a7262c2cc0f1e610d200617ba42f502ec}\label{sockets_8php_a7262c2cc0f1e610d200617ba42f502ec}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EINVAL@{SOCKET\_EINVAL}}
+\index{SOCKET\_EINVAL@{SOCKET\_EINVAL}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EINVAL}{SOCKET\_EINVAL}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+I\+N\+V\+AL 22}
+
+Invalid argument. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a39a3dfa960c1d5d08788ec26fe58a943}\label{sockets_8php_a39a3dfa960c1d5d08788ec26fe58a943}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EIO@{SOCKET\_EIO}}
+\index{SOCKET\_EIO@{SOCKET\_EIO}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EIO}{SOCKET\_EIO}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+IO 5}
+
+I/O error. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a75c2f939097858e2623a4e5ba669635a}\label{sockets_8php_a75c2f939097858e2623a4e5ba669635a}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EISCONN@{SOCKET\_EISCONN}}
+\index{SOCKET\_EISCONN@{SOCKET\_EISCONN}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EISCONN}{SOCKET\_EISCONN}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+I\+S\+C\+O\+NN 106}
+
+Transport endpoint is already connected. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ae59a2bec15151aca9699fc4ccb738f25}\label{sockets_8php_ae59a2bec15151aca9699fc4ccb738f25}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EISDIR@{SOCKET\_EISDIR}}
+\index{SOCKET\_EISDIR@{SOCKET\_EISDIR}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EISDIR}{SOCKET\_EISDIR}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+I\+S\+D\+IR 21}
+
+Is a directory. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ad7d6a65b0cb10f5e9d3823fb202ded2f}\label{sockets_8php_ad7d6a65b0cb10f5e9d3823fb202ded2f}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EISNAM@{SOCKET\_EISNAM}}
+\index{SOCKET\_EISNAM@{SOCKET\_EISNAM}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EISNAM}{SOCKET\_EISNAM}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+I\+S\+N\+AM 120}
+
+Is a named type file. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a6d52d2d366b42e1960521eb7a06b8406}\label{sockets_8php_a6d52d2d366b42e1960521eb7a06b8406}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EL2HLT@{SOCKET\_EL2HLT}}
+\index{SOCKET\_EL2HLT@{SOCKET\_EL2HLT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EL2HLT}{SOCKET\_EL2HLT}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+L2\+H\+LT 51}
+
+Level 2 halted. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a0d79b7ecb373cb254f0c6e7b2d3ffe54}\label{sockets_8php_a0d79b7ecb373cb254f0c6e7b2d3ffe54}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EL2NSYNC@{SOCKET\_EL2NSYNC}}
+\index{SOCKET\_EL2NSYNC@{SOCKET\_EL2NSYNC}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EL2NSYNC}{SOCKET\_EL2NSYNC}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+L2\+N\+S\+Y\+NC 45}
+
+Level 2 not synchronized. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_acb3befe96a5959ca931d2d7917b2fa2e}\label{sockets_8php_acb3befe96a5959ca931d2d7917b2fa2e}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EL3HLT@{SOCKET\_EL3HLT}}
+\index{SOCKET\_EL3HLT@{SOCKET\_EL3HLT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EL3HLT}{SOCKET\_EL3HLT}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+L3\+H\+LT 46}
+
+Level 3 halted. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_abea3fd9b525b60a2f40a60e68880d4bb}\label{sockets_8php_abea3fd9b525b60a2f40a60e68880d4bb}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EL3RST@{SOCKET\_EL3RST}}
+\index{SOCKET\_EL3RST@{SOCKET\_EL3RST}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EL3RST}{SOCKET\_EL3RST}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+L3\+R\+ST 47}
+
+Level 3 reset. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a0b620944c4cc15e38e4fee4f20044400}\label{sockets_8php_a0b620944c4cc15e38e4fee4f20044400}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ELNRNG@{SOCKET\_ELNRNG}}
+\index{SOCKET\_ELNRNG@{SOCKET\_ELNRNG}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ELNRNG}{SOCKET\_ELNRNG}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+L\+N\+R\+NG 48}
+
+Link number out of range. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a410a7e771b1da37d2b6133a440ecf56b}\label{sockets_8php_a410a7e771b1da37d2b6133a440ecf56b}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ELOOP@{SOCKET\_ELOOP}}
+\index{SOCKET\_ELOOP@{SOCKET\_ELOOP}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ELOOP}{SOCKET\_ELOOP}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+L\+O\+OP 40}
+
+Too many symbolic links encountered. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a8b9536a8d571da2c355e39fa9caafef5}\label{sockets_8php_a8b9536a8d571da2c355e39fa9caafef5}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EMEDIUMTYPE@{SOCKET\_EMEDIUMTYPE}}
+\index{SOCKET\_EMEDIUMTYPE@{SOCKET\_EMEDIUMTYPE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EMEDIUMTYPE}{SOCKET\_EMEDIUMTYPE}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+M\+E\+D\+I\+U\+M\+T\+Y\+PE 124}
+
+Wrong medium type. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a98457d41180fa81efe5566ef4a38534d}\label{sockets_8php_a98457d41180fa81efe5566ef4a38534d}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EMFILE@{SOCKET\_EMFILE}}
+\index{SOCKET\_EMFILE@{SOCKET\_EMFILE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EMFILE}{SOCKET\_EMFILE}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+M\+F\+I\+LE 24}
+
+Too many open files. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a219dd933352985fef0cc7acecd8170da}\label{sockets_8php_a219dd933352985fef0cc7acecd8170da}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EMLINK@{SOCKET\_EMLINK}}
+\index{SOCKET\_EMLINK@{SOCKET\_EMLINK}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EMLINK}{SOCKET\_EMLINK}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+M\+L\+I\+NK 31}
+
+Too many links. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a3514105a1a5bad0744af3c1da8bfb1b3}\label{sockets_8php_a3514105a1a5bad0744af3c1da8bfb1b3}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EMSGSIZE@{SOCKET\_EMSGSIZE}}
+\index{SOCKET\_EMSGSIZE@{SOCKET\_EMSGSIZE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EMSGSIZE}{SOCKET\_EMSGSIZE}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+M\+S\+G\+S\+I\+ZE 90}
+
+Message too long. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a27a6f0a4ee55021e42b2803cb4c4b679}\label{sockets_8php_a27a6f0a4ee55021e42b2803cb4c4b679}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EMULTIHOP@{SOCKET\_EMULTIHOP}}
+\index{SOCKET\_EMULTIHOP@{SOCKET\_EMULTIHOP}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EMULTIHOP}{SOCKET\_EMULTIHOP}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+M\+U\+L\+T\+I\+H\+OP 72}
+
+Multihop attempted. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a2aa5f7fc88fedd8c079ac9808ebef815}\label{sockets_8php_a2aa5f7fc88fedd8c079ac9808ebef815}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENAMETOOLONG@{SOCKET\_ENAMETOOLONG}}
+\index{SOCKET\_ENAMETOOLONG@{SOCKET\_ENAMETOOLONG}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENAMETOOLONG}{SOCKET\_ENAMETOOLONG}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+A\+M\+E\+T\+O\+O\+L\+O\+NG 36}
+
+File name too long. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a6bd2e93d5f6783d87290148e71dbe8fe}\label{sockets_8php_a6bd2e93d5f6783d87290148e71dbe8fe}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENETDOWN@{SOCKET\_ENETDOWN}}
+\index{SOCKET\_ENETDOWN@{SOCKET\_ENETDOWN}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENETDOWN}{SOCKET\_ENETDOWN}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+E\+T\+D\+O\+WN 100}
+
+Network is down. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a3692d3fffff5a1041944d49319b44b7d}\label{sockets_8php_a3692d3fffff5a1041944d49319b44b7d}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENETRESET@{SOCKET\_ENETRESET}}
+\index{SOCKET\_ENETRESET@{SOCKET\_ENETRESET}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENETRESET}{SOCKET\_ENETRESET}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+E\+T\+R\+E\+S\+ET 102}
+
+Network dropped connection because of reset. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a3d907b33d99bb74f2e84857f638ced4c}\label{sockets_8php_a3d907b33d99bb74f2e84857f638ced4c}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENETUNREACH@{SOCKET\_ENETUNREACH}}
+\index{SOCKET\_ENETUNREACH@{SOCKET\_ENETUNREACH}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENETUNREACH}{SOCKET\_ENETUNREACH}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+E\+T\+U\+N\+R\+E\+A\+CH 101}
+
+Network is unreachable. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a0d5cfa1b05b111ab23f7b07444f32bf0}\label{sockets_8php_a0d5cfa1b05b111ab23f7b07444f32bf0}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENFILE@{SOCKET\_ENFILE}}
+\index{SOCKET\_ENFILE@{SOCKET\_ENFILE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENFILE}{SOCKET\_ENFILE}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+F\+I\+LE 23}
+
+File table overflow. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ac7a94c0ff6efebd5e379934d43a86354}\label{sockets_8php_ac7a94c0ff6efebd5e379934d43a86354}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOANO@{SOCKET\_ENOANO}}
+\index{SOCKET\_ENOANO@{SOCKET\_ENOANO}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOANO}{SOCKET\_ENOANO}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+A\+NO 55}
+
+No anode. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ae89a8a5ebfda03b92b316c1d5c59c89f}\label{sockets_8php_ae89a8a5ebfda03b92b316c1d5c59c89f}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOBUFS@{SOCKET\_ENOBUFS}}
+\index{SOCKET\_ENOBUFS@{SOCKET\_ENOBUFS}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOBUFS}{SOCKET\_ENOBUFS}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+B\+U\+FS 105}
+
+No buffer space available. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a9d4330ea87606b8fc1ef4c9ecfb7cee9}\label{sockets_8php_a9d4330ea87606b8fc1ef4c9ecfb7cee9}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOCSI@{SOCKET\_ENOCSI}}
+\index{SOCKET\_ENOCSI@{SOCKET\_ENOCSI}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOCSI}{SOCKET\_ENOCSI}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+C\+SI 50}
+
+No C\+SI structure available. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a6e29672ace3d265d4c8f14348a04b242}\label{sockets_8php_a6e29672ace3d265d4c8f14348a04b242}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENODATA@{SOCKET\_ENODATA}}
+\index{SOCKET\_ENODATA@{SOCKET\_ENODATA}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENODATA}{SOCKET\_ENODATA}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+D\+A\+TA 61}
+
+No data available. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a07007c5293cc780058d55c567797a049}\label{sockets_8php_a07007c5293cc780058d55c567797a049}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENODEV@{SOCKET\_ENODEV}}
+\index{SOCKET\_ENODEV@{SOCKET\_ENODEV}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENODEV}{SOCKET\_ENODEV}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+D\+EV 19}
+
+No such device. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a0ff1672dc82ee0910216556a733547e2}\label{sockets_8php_a0ff1672dc82ee0910216556a733547e2}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOENT@{SOCKET\_ENOENT}}
+\index{SOCKET\_ENOENT@{SOCKET\_ENOENT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOENT}{SOCKET\_ENOENT}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+E\+NT 2}
+
+No such file or directory. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a72d0e63d21e0fae7e27bc3592c8c4ce3}\label{sockets_8php_a72d0e63d21e0fae7e27bc3592c8c4ce3}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOLCK@{SOCKET\_ENOLCK}}
+\index{SOCKET\_ENOLCK@{SOCKET\_ENOLCK}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOLCK}{SOCKET\_ENOLCK}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+L\+CK 37}
+
+No record locks available. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a6eebcbd87bdedacc207aaee21ab2e531}\label{sockets_8php_a6eebcbd87bdedacc207aaee21ab2e531}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOLINK@{SOCKET\_ENOLINK}}
+\index{SOCKET\_ENOLINK@{SOCKET\_ENOLINK}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOLINK}{SOCKET\_ENOLINK}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+L\+I\+NK 67}
+
+Link has been severed. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a560be67749e25951920f721bf23df6dd}\label{sockets_8php_a560be67749e25951920f721bf23df6dd}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOMEDIUM@{SOCKET\_ENOMEDIUM}}
+\index{SOCKET\_ENOMEDIUM@{SOCKET\_ENOMEDIUM}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOMEDIUM}{SOCKET\_ENOMEDIUM}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+M\+E\+D\+I\+UM 123}
+
+No medium found. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a42086a689f62c0ebecfdbbf18423358a}\label{sockets_8php_a42086a689f62c0ebecfdbbf18423358a}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOMEM@{SOCKET\_ENOMEM}}
+\index{SOCKET\_ENOMEM@{SOCKET\_ENOMEM}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOMEM}{SOCKET\_ENOMEM}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+M\+EM 12}
+
+Out of memory. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a6aa5f142d78f63cd956596f0b4de0c7b}\label{sockets_8php_a6aa5f142d78f63cd956596f0b4de0c7b}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOMSG@{SOCKET\_ENOMSG}}
+\index{SOCKET\_ENOMSG@{SOCKET\_ENOMSG}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOMSG}{SOCKET\_ENOMSG}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+M\+SG 42}
+
+No message of desired type. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_afe342f717730f424d80753de0bc43a89}\label{sockets_8php_afe342f717730f424d80753de0bc43a89}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENONET@{SOCKET\_ENONET}}
+\index{SOCKET\_ENONET@{SOCKET\_ENONET}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENONET}{SOCKET\_ENONET}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+N\+ET 64}
+
+Machine is not on the network. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a10c2c20542a782f483c88e3f8620d0e7}\label{sockets_8php_a10c2c20542a782f483c88e3f8620d0e7}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOPROTOOPT@{SOCKET\_ENOPROTOOPT}}
+\index{SOCKET\_ENOPROTOOPT@{SOCKET\_ENOPROTOOPT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOPROTOOPT}{SOCKET\_ENOPROTOOPT}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+P\+R\+O\+T\+O\+O\+PT 92}
+
+\mbox{\Hypertarget{sockets_8php_affcee6366602d9f7568cbd35377cbe0a}\label{sockets_8php_affcee6366602d9f7568cbd35377cbe0a}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOSPC@{SOCKET\_ENOSPC}}
+\index{SOCKET\_ENOSPC@{SOCKET\_ENOSPC}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOSPC}{SOCKET\_ENOSPC}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+S\+PC 28}
+
+No space left on device. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a86172f7800038cc03dc95d8d4e5d7618}\label{sockets_8php_a86172f7800038cc03dc95d8d4e5d7618}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOSR@{SOCKET\_ENOSR}}
+\index{SOCKET\_ENOSR@{SOCKET\_ENOSR}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOSR}{SOCKET\_ENOSR}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+SR 63}
+
+Out of streams resources. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a0de9383eb0aeae4a57f3ca800a08f7f3}\label{sockets_8php_a0de9383eb0aeae4a57f3ca800a08f7f3}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOSTR@{SOCKET\_ENOSTR}}
+\index{SOCKET\_ENOSTR@{SOCKET\_ENOSTR}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOSTR}{SOCKET\_ENOSTR}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+S\+TR 60}
+
+Device not a stream. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a2acc6c69efa680d97966beac86bddf04}\label{sockets_8php_a2acc6c69efa680d97966beac86bddf04}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOSYS@{SOCKET\_ENOSYS}}
+\index{SOCKET\_ENOSYS@{SOCKET\_ENOSYS}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOSYS}{SOCKET\_ENOSYS}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+S\+YS 38}
+
+Function not implemented. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a87249b5cb4b7ce7289bd9b22d8c446c8}\label{sockets_8php_a87249b5cb4b7ce7289bd9b22d8c446c8}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOTBLK@{SOCKET\_ENOTBLK}}
+\index{SOCKET\_ENOTBLK@{SOCKET\_ENOTBLK}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOTBLK}{SOCKET\_ENOTBLK}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+T\+B\+LK 15}
+
+Block device required. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a0cf30ad6efb8e619344daa89d22e4ce0}\label{sockets_8php_a0cf30ad6efb8e619344daa89d22e4ce0}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOTCONN@{SOCKET\_ENOTCONN}}
+\index{SOCKET\_ENOTCONN@{SOCKET\_ENOTCONN}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOTCONN}{SOCKET\_ENOTCONN}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+T\+C\+O\+NN 107}
+
+Transport endpoint is not connected. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a10bbdce3113a4d445701d9e89d84f098}\label{sockets_8php_a10bbdce3113a4d445701d9e89d84f098}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOTDIR@{SOCKET\_ENOTDIR}}
+\index{SOCKET\_ENOTDIR@{SOCKET\_ENOTDIR}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOTDIR}{SOCKET\_ENOTDIR}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+T\+D\+IR 20}
+
+Not a directory. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a380c5ca8b534bf526aa6a59ff4d3f1c5}\label{sockets_8php_a380c5ca8b534bf526aa6a59ff4d3f1c5}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOTEMPTY@{SOCKET\_ENOTEMPTY}}
+\index{SOCKET\_ENOTEMPTY@{SOCKET\_ENOTEMPTY}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOTEMPTY}{SOCKET\_ENOTEMPTY}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+T\+E\+M\+P\+TY 39}
+
+\mbox{\hyperlink{class_directory}{Directory}} not empty. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a9a425880db6b8c3dc19c510c1dc0b489}\label{sockets_8php_a9a425880db6b8c3dc19c510c1dc0b489}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOTSOCK@{SOCKET\_ENOTSOCK}}
+\index{SOCKET\_ENOTSOCK@{SOCKET\_ENOTSOCK}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOTSOCK}{SOCKET\_ENOTSOCK}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+T\+S\+O\+CK 88}
+
+Socket operation on non-\/socket. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a247104a64d8ea16c30e22f1b3da5526d}\label{sockets_8php_a247104a64d8ea16c30e22f1b3da5526d}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOTTY@{SOCKET\_ENOTTY}}
+\index{SOCKET\_ENOTTY@{SOCKET\_ENOTTY}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOTTY}{SOCKET\_ENOTTY}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+T\+TY 25}
+
+Not a typewriter. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a48f453ca2052f379a3b51e30f2e08151}\label{sockets_8php_a48f453ca2052f379a3b51e30f2e08151}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENOTUNIQ@{SOCKET\_ENOTUNIQ}}
+\index{SOCKET\_ENOTUNIQ@{SOCKET\_ENOTUNIQ}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENOTUNIQ}{SOCKET\_ENOTUNIQ}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+O\+T\+U\+N\+IQ 76}
+
+Name not unique on network. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a9b853f1814f7d8252406be900b6ff677}\label{sockets_8php_a9b853f1814f7d8252406be900b6ff677}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ENXIO@{SOCKET\_ENXIO}}
+\index{SOCKET\_ENXIO@{SOCKET\_ENXIO}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ENXIO}{SOCKET\_ENXIO}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+N\+X\+IO 6}
+
+No such device or address. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ad084dfff462a3715af9f9c67c11ec536}\label{sockets_8php_ad084dfff462a3715af9f9c67c11ec536}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EOPNOTSUPP@{SOCKET\_EOPNOTSUPP}}
+\index{SOCKET\_EOPNOTSUPP@{SOCKET\_EOPNOTSUPP}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EOPNOTSUPP}{SOCKET\_EOPNOTSUPP}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+O\+P\+N\+O\+T\+S\+U\+PP 95}
+
+Operation not supported on transport endpoint. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a46cf69939762f2339d8f5f02690ece15}\label{sockets_8php_a46cf69939762f2339d8f5f02690ece15}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EPERM@{SOCKET\_EPERM}}
+\index{SOCKET\_EPERM@{SOCKET\_EPERM}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EPERM}{SOCKET\_EPERM}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+P\+E\+RM 1}
+
+Operation not permitted. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ab425f419a67026283acfeaad3237836c}\label{sockets_8php_ab425f419a67026283acfeaad3237836c}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EPFNOSUPPORT@{SOCKET\_EPFNOSUPPORT}}
+\index{SOCKET\_EPFNOSUPPORT@{SOCKET\_EPFNOSUPPORT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EPFNOSUPPORT}{SOCKET\_EPFNOSUPPORT}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+P\+F\+N\+O\+S\+U\+P\+P\+O\+RT 96}
+
+Protocol family not supported. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_aaa3bf306d26c81365e041ffc2e79e8de}\label{sockets_8php_aaa3bf306d26c81365e041ffc2e79e8de}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EPIPE@{SOCKET\_EPIPE}}
+\index{SOCKET\_EPIPE@{SOCKET\_EPIPE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EPIPE}{SOCKET\_EPIPE}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+P\+I\+PE 32}
+
+Broken pipe. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ae0598de140628d812917be18e80d20a7}\label{sockets_8php_ae0598de140628d812917be18e80d20a7}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EPROTO@{SOCKET\_EPROTO}}
+\index{SOCKET\_EPROTO@{SOCKET\_EPROTO}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EPROTO}{SOCKET\_EPROTO}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+P\+R\+O\+TO 71}
+
+Protocol error. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a4aa4107a46fc857be288b94a0c2d078c}\label{sockets_8php_a4aa4107a46fc857be288b94a0c2d078c}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EPROTONOSUPPORT@{SOCKET\_EPROTONOSUPPORT}}
+\index{SOCKET\_EPROTONOSUPPORT@{SOCKET\_EPROTONOSUPPORT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EPROTONOSUPPORT}{SOCKET\_EPROTONOSUPPORT}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+P\+R\+O\+T\+O\+N\+O\+S\+U\+P\+P\+O\+RT 93}
+
+Protocol not supported. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a53ae396307ab2a8cfb51814ca7313cee}\label{sockets_8php_a53ae396307ab2a8cfb51814ca7313cee}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EPROTOTYPE@{SOCKET\_EPROTOTYPE}}
+\index{SOCKET\_EPROTOTYPE@{SOCKET\_EPROTOTYPE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EPROTOTYPE}{SOCKET\_EPROTOTYPE}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+P\+R\+O\+T\+O\+T\+Y\+PE 91}
+
+Protocol wrong type for socket. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a134297cd7563a0c64ac17ea839fb67db}\label{sockets_8php_a134297cd7563a0c64ac17ea839fb67db}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EREMCHG@{SOCKET\_EREMCHG}}
+\index{SOCKET\_EREMCHG@{SOCKET\_EREMCHG}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EREMCHG}{SOCKET\_EREMCHG}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+E\+M\+C\+HG 78}
+
+Remote address changed. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_afc3d76fe0b7c70ec84a7eba480f71a07}\label{sockets_8php_afc3d76fe0b7c70ec84a7eba480f71a07}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EREMOTE@{SOCKET\_EREMOTE}}
+\index{SOCKET\_EREMOTE@{SOCKET\_EREMOTE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EREMOTE}{SOCKET\_EREMOTE}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+E\+M\+O\+TE 66}
+
+Object is remote. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ac8bbc32ceedb88b4437eb91a6b3e21d7}\label{sockets_8php_ac8bbc32ceedb88b4437eb91a6b3e21d7}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EREMOTEIO@{SOCKET\_EREMOTEIO}}
+\index{SOCKET\_EREMOTEIO@{SOCKET\_EREMOTEIO}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EREMOTEIO}{SOCKET\_EREMOTEIO}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+E\+M\+O\+T\+E\+IO 121}
+
+Remote I/O error. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a85d42970df2b5f192d4df47f7a2c2912}\label{sockets_8php_a85d42970df2b5f192d4df47f7a2c2912}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ERESTART@{SOCKET\_ERESTART}}
+\index{SOCKET\_ERESTART@{SOCKET\_ERESTART}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ERESTART}{SOCKET\_ERESTART}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+E\+S\+T\+A\+RT 85}
+
+Interrupted system call should be restarted. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a3736e31a5277447c3916f8d9819ba2b6}\label{sockets_8php_a3736e31a5277447c3916f8d9819ba2b6}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EROFS@{SOCKET\_EROFS}}
+\index{SOCKET\_EROFS@{SOCKET\_EROFS}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EROFS}{SOCKET\_EROFS}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+R\+O\+FS 30}
+
+Read-\/only file system. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a8ae814cbbf1511b3011b40c0b42ab168}\label{sockets_8php_a8ae814cbbf1511b3011b40c0b42ab168}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ESHUTDOWN@{SOCKET\_ESHUTDOWN}}
+\index{SOCKET\_ESHUTDOWN@{SOCKET\_ESHUTDOWN}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ESHUTDOWN}{SOCKET\_ESHUTDOWN}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+S\+H\+U\+T\+D\+O\+WN 108}
+
+Cannot send after transport endpoint shutdown. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a736bffbf832a1c871ff3d4da26e9480b}\label{sockets_8php_a736bffbf832a1c871ff3d4da26e9480b}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ESOCKTNOSUPPORT@{SOCKET\_ESOCKTNOSUPPORT}}
+\index{SOCKET\_ESOCKTNOSUPPORT@{SOCKET\_ESOCKTNOSUPPORT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ESOCKTNOSUPPORT}{SOCKET\_ESOCKTNOSUPPORT}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+S\+O\+C\+K\+T\+N\+O\+S\+U\+P\+P\+O\+RT 94}
+
+Socket type not supported. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ad8e0a9dfdc0ebf8160e6502c629fc324}\label{sockets_8php_ad8e0a9dfdc0ebf8160e6502c629fc324}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ESPIPE@{SOCKET\_ESPIPE}}
+\index{SOCKET\_ESPIPE@{SOCKET\_ESPIPE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ESPIPE}{SOCKET\_ESPIPE}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+S\+P\+I\+PE 29}
+
+Illegal seek. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a486b93cba89f8f8bedebf1eb2c54a7ee}\label{sockets_8php_a486b93cba89f8f8bedebf1eb2c54a7ee}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ESRMNT@{SOCKET\_ESRMNT}}
+\index{SOCKET\_ESRMNT@{SOCKET\_ESRMNT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ESRMNT}{SOCKET\_ESRMNT}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+S\+R\+M\+NT 69}
+
+Srmount error. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a84724270fec07cc29fa50d88bb866d85}\label{sockets_8php_a84724270fec07cc29fa50d88bb866d85}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ESTRPIPE@{SOCKET\_ESTRPIPE}}
+\index{SOCKET\_ESTRPIPE@{SOCKET\_ESTRPIPE}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ESTRPIPE}{SOCKET\_ESTRPIPE}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+S\+T\+R\+P\+I\+PE 86}
+
+Streams pipe error. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a764c5e63ade137fa9b02cab9455f02a3}\label{sockets_8php_a764c5e63ade137fa9b02cab9455f02a3}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ETIME@{SOCKET\_ETIME}}
+\index{SOCKET\_ETIME@{SOCKET\_ETIME}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ETIME}{SOCKET\_ETIME}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+T\+I\+ME 62}
+
+Timer expired. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a543167de8b9a9a84d4d053863d2c468b}\label{sockets_8php_a543167de8b9a9a84d4d053863d2c468b}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ETIMEDOUT@{SOCKET\_ETIMEDOUT}}
+\index{SOCKET\_ETIMEDOUT@{SOCKET\_ETIMEDOUT}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ETIMEDOUT}{SOCKET\_ETIMEDOUT}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+T\+I\+M\+E\+D\+O\+UT 110}
+
+Connection timed out. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a8f054e8d7bd8777d90da16e0aea2531c}\label{sockets_8php_a8f054e8d7bd8777d90da16e0aea2531c}} 
+\index{sockets.php@{sockets.php}!SOCKET\_ETOOMANYREFS@{SOCKET\_ETOOMANYREFS}}
+\index{SOCKET\_ETOOMANYREFS@{SOCKET\_ETOOMANYREFS}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_ETOOMANYREFS}{SOCKET\_ETOOMANYREFS}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+T\+O\+O\+M\+A\+N\+Y\+R\+E\+FS 109}
+
+Too many references\+: cannot splice. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_acaf01ee38d7bfe73cf21183407dc5458}\label{sockets_8php_acaf01ee38d7bfe73cf21183407dc5458}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EUNATCH@{SOCKET\_EUNATCH}}
+\index{SOCKET\_EUNATCH@{SOCKET\_EUNATCH}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EUNATCH}{SOCKET\_EUNATCH}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+U\+N\+A\+T\+CH 49}
+
+Protocol driver not attached. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a878285538c7bd5fbbd738283f375b9ba}\label{sockets_8php_a878285538c7bd5fbbd738283f375b9ba}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EUSERS@{SOCKET\_EUSERS}}
+\index{SOCKET\_EUSERS@{SOCKET\_EUSERS}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EUSERS}{SOCKET\_EUSERS}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+U\+S\+E\+RS 87}
+
+Too many users. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a6233132d0f02cc44b100c7fe3a310aff}\label{sockets_8php_a6233132d0f02cc44b100c7fe3a310aff}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EWOULDBLOCK@{SOCKET\_EWOULDBLOCK}}
+\index{SOCKET\_EWOULDBLOCK@{SOCKET\_EWOULDBLOCK}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EWOULDBLOCK}{SOCKET\_EWOULDBLOCK}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+W\+O\+U\+L\+D\+B\+L\+O\+CK 11}
+
+Operation would block. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a20f9656495b99354c03bb52fc37872f0}\label{sockets_8php_a20f9656495b99354c03bb52fc37872f0}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EXDEV@{SOCKET\_EXDEV}}
+\index{SOCKET\_EXDEV@{SOCKET\_EXDEV}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EXDEV}{SOCKET\_EXDEV}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+X\+D\+EV 18}
+
+Cross-\/device link. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_ac4ad9a396c5ddc1ff38e6dc22b76d1c2}\label{sockets_8php_ac4ad9a396c5ddc1ff38e6dc22b76d1c2}} 
+\index{sockets.php@{sockets.php}!SOCKET\_EXFULL@{SOCKET\_EXFULL}}
+\index{SOCKET\_EXFULL@{SOCKET\_EXFULL}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_EXFULL}{SOCKET\_EXFULL}}
+{\footnotesize\ttfamily const S\+O\+C\+K\+E\+T\+\_\+\+E\+X\+F\+U\+LL 54}
+
+Exchange full. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}\mbox{\Hypertarget{sockets_8php_a3f4ebb13b5393b49af8de1db30481640}\label{sockets_8php_a3f4ebb13b5393b49af8de1db30481640}} 
+\index{sockets.php@{sockets.php}!SOL\_SOCKET@{SOL\_SOCKET}}
+\index{SOL\_SOCKET@{SOL\_SOCKET}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOL\_SOCKET}{SOL\_SOCKET}}
+{\footnotesize\ttfamily const S\+O\+L\+\_\+\+S\+O\+C\+K\+ET 1}
+
+\mbox{\Hypertarget{sockets_8php_a2703b7dca6968d4a4063d5e6abc26f59}\label{sockets_8php_a2703b7dca6968d4a4063d5e6abc26f59}} 
+\index{sockets.php@{sockets.php}!SOL\_TCP@{SOL\_TCP}}
+\index{SOL\_TCP@{SOL\_TCP}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOL\_TCP}{SOL\_TCP}}
+{\footnotesize\ttfamily const S\+O\+L\+\_\+\+T\+CP 6}
+
+\mbox{\Hypertarget{sockets_8php_acf583888ae860faaf5d7a747a02781c7}\label{sockets_8php_acf583888ae860faaf5d7a747a02781c7}} 
+\index{sockets.php@{sockets.php}!SOL\_UDP@{SOL\_UDP}}
+\index{SOL\_UDP@{SOL\_UDP}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOL\_UDP}{SOL\_UDP}}
+{\footnotesize\ttfamily const S\+O\+L\+\_\+\+U\+DP 17}
+
+\mbox{\Hypertarget{sockets_8php_aa87fa5e1d399e08748d0b3b5d1146ed5}\label{sockets_8php_aa87fa5e1d399e08748d0b3b5d1146ed5}} 
+\index{sockets.php@{sockets.php}!SOMAXCONN@{SOMAXCONN}}
+\index{SOMAXCONN@{SOMAXCONN}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{SOMAXCONN}{SOMAXCONN}}
+{\footnotesize\ttfamily const S\+O\+M\+A\+X\+C\+O\+NN 128}
+
+\mbox{\Hypertarget{sockets_8php_a6e718032606d30e734b7ef9ce2a524ce}\label{sockets_8php_a6e718032606d30e734b7ef9ce2a524ce}} 
+\index{sockets.php@{sockets.php}!TCP\_NODELAY@{TCP\_NODELAY}}
+\index{TCP\_NODELAY@{TCP\_NODELAY}!sockets.php@{sockets.php}}
+\doxysubsubsection{\texorpdfstring{TCP\_NODELAY}{TCP\_NODELAY}}
+{\footnotesize\ttfamily const T\+C\+P\+\_\+\+N\+O\+D\+E\+L\+AY 1}
+
+Used to disable Nagle T\+CP algorithm. Added in P\+HP 5.\+2.\+7. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/sockets.\+constants.\+php}}

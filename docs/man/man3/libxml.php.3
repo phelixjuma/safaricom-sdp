@@ -1,0 +1,280 @@
+.TH "vendor/jetbrains/phpstorm-stubs/libxml/libxml.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/libxml/libxml.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBLibXMLError\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBlibxml_set_streams_context\fP ($streams_context)"
+.br
+.ti -1c
+.RI "\fBlibxml_use_internal_errors\fP ($use_errors=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBlibxml_get_last_error\fP ()"
+.br
+.ti -1c
+.RI "\fBlibxml_clear_errors\fP ()"
+.br
+.ti -1c
+.RI "\fBlibxml_get_errors\fP ()"
+.br
+.ti -1c
+.RI "\fBlibxml_disable_entity_loader\fP ($disable=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBlibxml_set_external_entity_loader\fP (callable $resolver_function)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBLIBXML_VERSION\fP 20901"
+.br
+.ti -1c
+.RI "const \fBLIBXML_DOTTED_VERSION\fP '2\&.9\&.1'"
+.br
+.ti -1c
+.RI "const \fBLIBXML_LOADED_VERSION\fP 20901"
+.br
+.ti -1c
+.RI "const \fBLIBXML_NOENT\fP 2"
+.br
+.ti -1c
+.RI "const \fBLIBXML_DTDLOAD\fP 4"
+.br
+.ti -1c
+.RI "const \fBLIBXML_DTDATTR\fP 8"
+.br
+.ti -1c
+.RI "const \fBLIBXML_DTDVALID\fP 16"
+.br
+.ti -1c
+.RI "const \fBLIBXML_NOERROR\fP 32"
+.br
+.ti -1c
+.RI "const \fBLIBXML_NOWARNING\fP 64"
+.br
+.ti -1c
+.RI "const \fBLIBXML_NOBLANKS\fP 256"
+.br
+.ti -1c
+.RI "const \fBLIBXML_XINCLUDE\fP 1024"
+.br
+.ti -1c
+.RI "const \fBLIBXML_NSCLEAN\fP 8192"
+.br
+.ti -1c
+.RI "const \fBLIBXML_NOCDATA\fP 16384"
+.br
+.ti -1c
+.RI "const \fBLIBXML_NONET\fP 2048"
+.br
+.ti -1c
+.RI "const \fBLIBXML_PEDANTIC\fP 128"
+.br
+.ti -1c
+.RI "const \fBLIBXML_COMPACT\fP 65536"
+.br
+.ti -1c
+.RI "const \fBLIBXML_BIGLINES\fP 65535"
+.br
+.ti -1c
+.RI "const \fBLIBXML_NOXMLDECL\fP 2"
+.br
+.ti -1c
+.RI "const \fBLIBXML_PARSEHUGE\fP 524288"
+.br
+.ti -1c
+.RI "const \fBLIBXML_NOEMPTYTAG\fP 4"
+.br
+.ti -1c
+.RI "const \fBLIBXML_SCHEMA_CREATE\fP 1"
+.br
+.ti -1c
+.RI "const \fBLIBXML_HTML_NOIMPLIED\fP 8192"
+.br
+.ti -1c
+.RI "const \fBLIBXML_HTML_NODEFDTD\fP 4"
+.br
+.ti -1c
+.RI "const \fBLIBXML_ERR_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBLIBXML_ERR_WARNING\fP 1"
+.br
+.ti -1c
+.RI "const \fBLIBXML_ERR_ERROR\fP 2"
+.br
+.ti -1c
+.RI "const \fBLIBXML_ERR_FATAL\fP 3"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "libxml_clear_errors ()"
+Clear libxml error buffer \fBvoid No value is returned\&.  5\&.1 \fP
+.SS "libxml_disable_entity_loader ( $disable = \fC\fBtrue\fP\fP)"
+Disable the ability to load external entities \fBbool $disable [optional] \fP Disable (\fBTRUE\fP) or enable (\fBFALSE\fP) libxml extensions (such as , and ) to load external entities\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool the previous value\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2\&.11 
+.RE
+.PP
+
+.SS "libxml_get_errors ()"
+Retrieve array of errors \fBarray an array with LibXMLError objects if there are any errors in the buffer, or an empty array otherwise\&.  5\&.1 \fP
+.SS "libxml_get_last_error ()"
+Retrieve last error from libxml \fBLibXMLError a LibXMLError object if there is any error in the buffer, \fBFALSE\fP otherwise\&.  5\&.1 \fP
+.SS "libxml_set_external_entity_loader (callable $resolver_function)"
+Changes the default external entity loader \fBcallable $resolver_function \fP \fBA\fP callable that takes three arguments\&. Two strings, a public id and system id, and a context (an array with four keys) as the third argument\&. This callback should return a resource, a string from which a resource can be opened, or \fBNULL\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void No value is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 
+.RE
+.PP
+
+.SS "libxml_set_streams_context ( $streams_context)"
+Set the streams context for the next libxml document load or write \fBresource $streams_context \fP The stream context resource (created with \fBstream_context_create\fP) 
+.PP
+\fBReturns\fP
+.RS 4
+void No value is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "libxml_use_internal_errors ( $use_errors = \fC\fBfalse\fP\fP)"
+Disable libxml errors and allow user to fetch error information as needed \fBbool $use_errors [optional] \fP Enable (\fBTRUE\fP) user error handling or disable (\fBFALSE\fP) user error handling\&. Disabling will also clear any existing libxml errors\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool This function returns the previous value of \fIuse_errors\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const LIBXML_BIGLINES 65535"
+Allows line numbers greater than 65535 to be reported correctly\&. 
+.PP
+Only available in Libxml >= 2\&.9\&.0 
+.PP
+\fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_COMPACT 65536"
+Activate small nodes allocation optimization\&. This may speed up your application without needing to change the code\&. 
+.PP
+Only available in Libxml >= 2\&.6\&.21 
+.PP
+\fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_DOTTED_VERSION '2\&.9\&.1'"
+libxml version like 2\&.6\&.5 or 2\&.6\&.17 \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_DTDATTR 8"
+Default DTD attributes \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_DTDLOAD 4"
+Load the external subset \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_DTDVALID 16"
+Validate with the DTD \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_ERR_ERROR 2"
+\fBA\fP recoverable error \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_ERR_FATAL 3"
+\fBA\fP fatal error \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_ERR_NONE 0"
+No errors \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_ERR_WARNING 1"
+\fBA\fP simple warning \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_HTML_NODEFDTD 4"
+Sets HTML_PARSE_NODEFDTD flag, which prevents a default doctype being added when one is not found\&. 
+.PP
+Only available in Libxml >= 2\&.7\&.8 (as of PHP >= 5\&.4\&.0) 
+.PP
+\fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_HTML_NOIMPLIED 8192"
+Sets HTML_PARSE_NOIMPLIED flag, which turns off the automatic adding of implied html/body\&.\&.\&. elements\&. 
+.PP
+Only available in Libxml >= 2\&.7\&.7 (as of PHP >= 5\&.4\&.0) 
+.PP
+\fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_LOADED_VERSION 20901"
+
+.SS "const LIBXML_NOBLANKS 256"
+Remove blank nodes \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_NOCDATA 16384"
+Merge CDATA as text nodes \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_NOEMPTYTAG 4"
+Expand empty tags (e\&.g\&. <br/> to <br></br>) 
+.PP
+This option is currently just available in the and functions\&. 
+.PP
+\fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_NOENT 2"
+Substitute entities \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_NOERROR 32"
+Suppress error reports \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_NONET 2048"
+Disable network access when loading documents \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_NOWARNING 64"
+Suppress warning reports \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_NOXMLDECL 2"
+Drop the XML declaration when saving a document 
+.PP
+Only available in Libxml >= 2\&.6\&.21 
+.PP
+\fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_NSCLEAN 8192"
+Remove redundant namespaces declarations \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_PARSEHUGE 524288"
+Sets XML_PARSE_HUGE flag, which relaxes any hardcoded limit from the parser\&. This affects limits like maximum depth of a document or the entity recursion, as well as limits of the size of text nodes\&. 
+.PP
+Only available in Libxml >= 2\&.7\&.0 (as of PHP >= 5\&.3\&.2 and PHP >= 5\&.2\&.12) 
+.PP
+\fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_PEDANTIC 128"
+Sets XML_PARSE_PEDANTIC flag, which enables pedentic error reporting\&. \fB5\&.4 \fP
+.SS "const LIBXML_SCHEMA_CREATE 1"
+Create default/fixed value nodes during XSD schema validation 
+.PP
+Only available in Libxml >= 2\&.6\&.14 (as of PHP >= 5\&.5\&.2) 
+.PP
+\fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_VERSION 20901"
+libxml version like 20605 or 20617 \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SS "const LIBXML_XINCLUDE 1024"
+Implement XInclude substitution \fBhttps://php\&.net/manual/en/libxml\&.constants\&.php\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

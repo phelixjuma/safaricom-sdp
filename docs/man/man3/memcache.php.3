@@ -1,0 +1,210 @@
+.TH "vendor/jetbrains/phpstorm-stubs/memcache/memcache.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/memcache/memcache.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBMemcachePool\fP"
+.br
+.ti -1c
+.RI "class \fBMemcache\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBmemcache_connect\fP ($host, $port, $timeout=1)"
+.br
+.ti -1c
+.RI "\fBmemcache_pconnect\fP ($host, $port=\fBnull\fP, $timeout=1)"
+.br
+.ti -1c
+.RI "\fBmemcache_add_server\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_set_server_params\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_set_failure_callback\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_get_server_status\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_get_version\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_add\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_set\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_replace\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_cas\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_append\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_prepend\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_get\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_delete\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_debug\fP ($on_off)"
+.br
+.ti -1c
+.RI "\fBmemcache_get_stats\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_get_extended_stats\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_set_compress_threshold\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_increment\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_decrement\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_close\fP ()"
+.br
+.ti -1c
+.RI "\fBmemcache_flush\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBMEMCACHE_COMPRESSED\fP 2"
+.br
+.ti -1c
+.RI "const \fBMEMCACHE_USER1\fP 65536"
+.br
+.ti -1c
+.RI "const \fBMEMCACHE_USER2\fP 131072"
+.br
+.ti -1c
+.RI "const \fBMEMCACHE_USER3\fP 262144"
+.br
+.ti -1c
+.RI "const \fBMEMCACHE_USER4\fP 524288"
+.br
+.ti -1c
+.RI "const \fBMEMCACHE_HAVE_SESSION\fP 1"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "memcache_add ()"
+
+.SS "memcache_add_server ()"
+
+.SS "memcache_append ()"
+
+.SS "memcache_cas ()"
+
+.SS "memcache_close ()"
+
+.SS "memcache_connect ( $host,  $port,  $timeout = \fC1\fP)"
+(PECL memcache >= 0\&.2\&.0) \fBMemcache::connect\fP — Open memcached server connection \fBstring $host \fP Point to the host where memcached is listening for connections\&. This parameter may also specify other transports like unix:///path/to/memcached\&.sock to use UNIX domain sockets, in this case port must also be set to 0\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$port\fP [optional] 
+.RE
+.PP
+Point to the port where memcached is listening for connections\&. Set this parameter to 0 when using UNIX domain sockets\&. Note: port defaults to memcache\&.default_port if not specified\&. For this reason it is wise to specify the port explicitly in this method call\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+Value in seconds which will be used for connecting to the daemon\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "memcache_debug ( $on_off)"
+(PECL memcache >= 0\&.2\&.0)
+.br
+ Turn debug output on/off \fBbool $on_off \fP Turns debug output on if equals to \fBTRUE\fP\&. Turns debug output off if equals to \fBFALSE\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if PHP was built with --enable-debug option, otherwise returns \fBFALSE\fP\&. 
+.RE
+.PP
+
+.SS "memcache_decrement ()"
+
+.SS "memcache_delete ()"
+
+.SS "memcache_flush ()"
+
+.SS "memcache_get ()"
+
+.SS "memcache_get_extended_stats ()"
+
+.SS "memcache_get_server_status ()"
+
+.SS "memcache_get_stats ()"
+
+.SS "memcache_get_version ()"
+
+.SS "memcache_increment ()"
+
+.SS "memcache_pconnect ( $host,  $port = \fC\fBnull\fP\fP,  $timeout = \fC1\fP)"
+(PECL memcache >= 0\&.4\&.0) \fBMemcache::pconnect\fP — Open memcached server persistent connection
+.PP
+\fB$host  null $port  int $timeout  Memcache \fP
+.SS "memcache_prepend ()"
+
+.SS "memcache_replace ()"
+
+.SS "memcache_set ()"
+
+.SS "memcache_set_compress_threshold ()"
+
+.SS "memcache_set_failure_callback ()"
+
+.SS "memcache_set_server_params ()"
+
+.SH "Variable Documentation"
+.PP 
+.SS "const MEMCACHE_COMPRESSED 2"
+
+.SS "const MEMCACHE_HAVE_SESSION 1"
+
+.SS "const MEMCACHE_USER1 65536"
+
+.SS "const MEMCACHE_USER2 131072"
+
+.SS "const MEMCACHE_USER3 262144"
+
+.SS "const MEMCACHE_USER4 524288"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

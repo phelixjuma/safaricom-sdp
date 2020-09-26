@@ -1,0 +1,753 @@
+.TH "vendor/jetbrains/phpstorm-stubs/hash/hash.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/hash/hash.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBHashContext\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBhash\fP ($algo, $data, $raw_output=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBhash_equals\fP ($known_string, $user_string)"
+.br
+.ti -1c
+.RI "\fBhash_file\fP ($algo, $filename, $raw_output=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBhash_hmac\fP ($algo, $data, $\fBkey\fP, $raw_output=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBhash_hmac_file\fP ($algo, $filename, $\fBkey\fP, $raw_output=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBhash_init\fP ($algo, $options=0, $\fBkey\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhash_update\fP ($context, $data)"
+.br
+.ti -1c
+.RI "\fBhash_update_stream\fP ($context, $handle, $length=\-1)"
+.br
+.ti -1c
+.RI "\fBhash_update_file\fP ($hcontext, $filename, $scontext=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhash_final\fP ($context, $raw_output=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBhash_copy\fP ($context)"
+.br
+.ti -1c
+.RI "\fBhash_algos\fP ()"
+.br
+.ti -1c
+.RI "\fBhash_hkdf\fP (string $algo, string $ikm, int $length=0, string $info='', string $salt='')"
+.br
+.ti -1c
+.RI "\fBhash_hmac_algos\fP ()"
+.br
+.ti -1c
+.RI "\fBhash_pbkdf2\fP ($algo, $password, $salt, $iterations, $length=0, $raw_output=FALSE)"
+.br
+.ti -1c
+.RI "\fBmhash_keygen_s2k\fP ($\fBhash\fP, $password, $salt, $bytes)"
+.br
+.ti -1c
+.RI "\fBmhash_get_block_size\fP ($\fBhash\fP)"
+.br
+.ti -1c
+.RI "\fBmhash_get_hash_name\fP ($\fBhash\fP)"
+.br
+.ti -1c
+.RI "\fBmhash_count\fP ()"
+.br
+.ti -1c
+.RI "\fBmhash\fP ($\fBhash\fP, $data, $\fBkey\fP=\fBnull\fP)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBHASH_HMAC\fP 1"
+.br
+.ti -1c
+.RI "const \fBMHASH_CRC32\fP 0"
+.br
+.ti -1c
+.RI "const \fBMHASH_CRC32C\fP 34"
+.br
+.ti -1c
+.RI "const \fBMHASH_MD5\fP 1"
+.br
+.ti -1c
+.RI "const \fBMHASH_SHA1\fP 2"
+.br
+.ti -1c
+.RI "const \fBMHASH_HAVAL256\fP 3"
+.br
+.ti -1c
+.RI "const \fBMHASH_RIPEMD160\fP 5"
+.br
+.ti -1c
+.RI "const \fBMHASH_TIGER\fP 7"
+.br
+.ti -1c
+.RI "const \fBMHASH_GOST\fP 8"
+.br
+.ti -1c
+.RI "const \fBMHASH_CRC32B\fP 9"
+.br
+.ti -1c
+.RI "const \fBMHASH_HAVAL224\fP 10"
+.br
+.ti -1c
+.RI "const \fBMHASH_HAVAL192\fP 11"
+.br
+.ti -1c
+.RI "const \fBMHASH_HAVAL160\fP 12"
+.br
+.ti -1c
+.RI "const \fBMHASH_HAVAL128\fP 13"
+.br
+.ti -1c
+.RI "const \fBMHASH_TIGER128\fP 14"
+.br
+.ti -1c
+.RI "const \fBMHASH_TIGER160\fP 15"
+.br
+.ti -1c
+.RI "const \fBMHASH_MD4\fP 16"
+.br
+.ti -1c
+.RI "const \fBMHASH_SHA256\fP 17"
+.br
+.ti -1c
+.RI "const \fBMHASH_ADLER32\fP 18"
+.br
+.ti -1c
+.RI "const \fBMHASH_SHA224\fP 19"
+.br
+.ti -1c
+.RI "const \fBMHASH_SHA512\fP 20"
+.br
+.ti -1c
+.RI "const \fBMHASH_SHA384\fP 21"
+.br
+.ti -1c
+.RI "const \fBMHASH_WHIRLPOOL\fP 22"
+.br
+.ti -1c
+.RI "const \fBMHASH_RIPEMD128\fP 23"
+.br
+.ti -1c
+.RI "const \fBMHASH_RIPEMD256\fP 24"
+.br
+.ti -1c
+.RI "const \fBMHASH_RIPEMD320\fP 25"
+.br
+.ti -1c
+.RI "const \fBMHASH_SNEFRU256\fP 27"
+.br
+.ti -1c
+.RI "const \fBMHASH_MD2\fP 28"
+.br
+.ti -1c
+.RI "const \fBMHASH_FNV132\fP 29"
+.br
+.ti -1c
+.RI "const \fBMHASH_FNV1A32\fP 30"
+.br
+.ti -1c
+.RI "const \fBMHASH_FNV164\fP 31"
+.br
+.ti -1c
+.RI "const \fBMHASH_FNV1A64\fP 32"
+.br
+.ti -1c
+.RI "const \fBMHASH_JOAAT\fP 33"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "hash ( $algo,  $data,  $raw_output = \fC\fBfalse\fP\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL hash >= 1\&.1)
+.br
+ Generate a hash value (message digest) \fBstring $algo \fP Name of selected hashing algorithm (i\&.e\&. 'md5', 'sha256', 'haval160,4', etc\&.\&.) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+Message to be hashed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$raw_output\fP [optional] 
+.RE
+.PP
+When set to \fBTRUE\fP, outputs raw binary data\&. \fBFALSE\fP outputs lowercase hexits\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string containing the calculated message digest as lowercase hexits unless \fIraw_output\fP is set to true in which case the raw binary representation of the message digest is returned\&. 
+.RE
+.PP
+
+.SS "hash_algos ()"
+(PHP 5 >= 5\&.1\&.2, PECL hash >= 1\&.1)
+.br
+ Return a list of registered hashing algorithms \fBarray a numerically indexed array containing the list of supported hashing algorithms\&. \fP
+.SS "hash_copy ( $context)"
+Copy hashing context \fBresource $context \fP Hashing context returned by \fBhash_init\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource a copy of Hashing Context resource\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "hash_equals ( $known_string,  $user_string)"
+Timing attack safe string comparison \fBstring $known_string \fPThe string of known length to compare against
+.PP
+\fBParameters\fP
+.RS 4
+\fI$user_string\fP 
+.RE
+.PP
+The user-supplied string
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+Returns \fBTRUE\fP when the two strings are equal, \fBFALSE\fP otherwise\&.
+.PP
+\fBSince\fP
+.RS 4
+5\&.6 
+.RE
+.PP
+
+.SS "hash_file ( $algo,  $filename,  $raw_output = \fC\fBfalse\fP\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL hash >= 1\&.1)
+.br
+ Generate a hash value using the contents of a given file \fBstring $algo \fP Name of selected hashing algorithm (i\&.e\&. 'md5', 'sha256', 'haval160,4', etc\&.\&.) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP 
+.RE
+.PP
+URL describing location of file to be hashed; Supports fopen wrappers\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$raw_output\fP [optional] 
+.RE
+.PP
+When set to \fBTRUE\fP, outputs raw binary data\&. \fBFALSE\fP outputs lowercase hexits\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string containing the calculated message digest as lowercase hexits unless \fIraw_output\fP is set to true in which case the raw binary representation of the message digest is returned\&. 
+.RE
+.PP
+
+.SS "hash_final ( $context,  $raw_output = \fC\fBfalse\fP\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL hash >= 1\&.1)
+.br
+ Finalize an incremental hash and return resulting digest \fBresource $context \fP Hashing context returned by \fBhash_init\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$raw_output\fP [optional] 
+.RE
+.PP
+When set to \fBTRUE\fP, outputs raw binary data\&. \fBFALSE\fP outputs lowercase hexits\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string containing the calculated message digest as lowercase hexits unless \fIraw_output\fP is set to true in which case the raw binary representation of the message digest is returned\&. 
+.RE
+.PP
+
+.SS "hash_hkdf (string $algo, string $ikm, int $length = \fC0\fP, string $info = \fC''\fP, string $salt = \fC''\fP)"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.1\&.2 Generate a HKDF key derivation of a supplied key input \fBstring $algo Name of selected hashing algorithm (i\&.e\&. 'sha256', 'sha512', 'haval160,4', etc\&.\&.) See { hash_algos()} for a list of supported algorithms\&. \fP 
+.RE
+.PP
+\fBNote\fP
+.PP
+Non-cryptographic hash functions are not allowed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ikm\fP 
+.RE
+.PP
+Input keying material (raw binary)\&. Cannot be empty\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+Desired output length in bytes\&. Cannot be greater than 255 times the chosen hash function size\&. If \fBlength\fP is 0, the output length will default to the chosen hash function size\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$info\fP [optional] 
+.RE
+.PP
+Application/context-specific info string\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$salt\fP [optional] 
+.RE
+.PP
+Salt to use during derivation\&. While optional, adding random salt significantly improves the strength of HKDF\&.
+.PP
+\fBReturns\fP
+.RS 4
+string|false 
+.RE
+.PP
+Returns a string containing a raw binary representation of the derived key (also known as output keying material - OKM); or \fBFALSE\fP on failure\&.
+.SS "hash_hmac ( $algo,  $data,  $key,  $raw_output = \fC\fBfalse\fP\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL hash >= 1\&.1)
+.br
+ Generate a keyed hash value using the HMAC method \fBstring $algo \fP Name of selected hashing algorithm (i\&.e\&. 'md5', 'sha256', 'haval160,4', etc\&.\&.) See \fBhash_algos\fP for a list of supported algorithms\&.
+.br
+ Since 7\&.2\&.0 usage of non-cryptographic hash functions (adler32, crc32, crc32b, fnv132, fnv1a32, fnv164, fnv1a64, joaat) was disabled\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+Message to be hashed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP 
+.RE
+.PP
+Shared secret key used for generating the HMAC variant of the message digest\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$raw_output\fP [optional] 
+.RE
+.PP
+When set to \fBTRUE\fP, outputs raw binary data\&. \fBFALSE\fP outputs lowercase hexits\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string containing the calculated message digest as lowercase hexits unless \fIraw_output\fP is set to true in which case the raw binary representation of the message digest is returned\&. 
+.RE
+.PP
+
+.SS "hash_hmac_algos ()"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 Return a list of registered hashing algorithms suitable for hash_hmac 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string[] Returns a numerically indexed array containing the list of supported hashing algorithms suitable for {
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBhash_hmac()\fP}\&. 
+.RE
+.PP
+
+.SS "hash_hmac_file ( $algo,  $filename,  $key,  $raw_output = \fC\fBfalse\fP\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL hash >= 1\&.1)
+.br
+ Generate a keyed hash value using the HMAC method and the contents of a given file \fBstring $algo \fP Name of selected hashing algorithm (i\&.e\&. 'md5', 'sha256', 'haval160,4', etc\&.\&.) See \fBhash_algos\fP for a list of supported algorithms\&.
+.br
+ Since 7\&.2\&.0 usage of non-cryptographic hash functions (adler32, crc32, crc32b, fnv132, fnv1a32, fnv164, fnv1a64, joaat) was disabled\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP 
+.RE
+.PP
+URL describing location of file to be hashed; Supports fopen wrappers\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP 
+.RE
+.PP
+Shared secret key used for generating the HMAC variant of the message digest\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$raw_output\fP [optional] 
+.RE
+.PP
+When set to \fBTRUE\fP, outputs raw binary data\&. \fBFALSE\fP outputs lowercase hexits\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string containing the calculated message digest as lowercase hexits unless \fIraw_output\fP is set to true in which case the raw binary representation of the message digest is returned\&. 
+.RE
+.PP
+
+.SS "hash_init ( $algo,  $options = \fC0\fP,  $key = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL hash >= 1\&.1)
+.br
+ Initialize an incremental hashing context \fBstring $algo \fP Name of selected hashing algorithm (i\&.e\&. 'md5', 'sha256', 'haval160,4', etc\&.\&.)\&. For a list of supported algorithms see \fBhash_algos\fP\&.
+.br
+ Since 7\&.2\&.0 usage of non-cryptographic hash functions (adler32, crc32, crc32b, fnv132, fnv1a32, fnv164, fnv1a64, joaat) was disabled\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+Optional settings for hash generation, currently supports only one option: \fBHASH_HMAC\fP\&. When specified, the \fIkey\fP must be specified\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP [optional] 
+.RE
+.PP
+When \fBHASH_HMAC\fP is specified for \fIoptions\fP, a shared secret key to be used with the HMAC hashing method must be supplied in this parameter\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource a Hashing Context resource for use with \fBhash_update\fP, \fBhash_update_stream\fP, \fBhash_update_file\fP, and \fBhash_final\fP\&. 
+.RE
+.PP
+
+.SS "hash_pbkdf2 ( $algo,  $password,  $salt,  $iterations,  $length = \fC0\fP,  $raw_output = \fCFALSE\fP)"
+Generate a PBKDF2 key derivation of a supplied password \fBstring $algo \fP Name of selected hashing algorithm (i\&.e\&. 'md5', 'sha256', 'haval160,4', etc\&.\&.) See \fBhash_algos\fP for a list of supported algorithms\&.
+.br
+ Since 7\&.2\&.0 usage of non-cryptographic hash functions (adler32, crc32, crc32b, fnv132, fnv1a32, fnv164, fnv1a64, joaat) was disabled\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP 
+.RE
+.PP
+The password to use for the derivation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$salt\fP 
+.RE
+.PP
+The salt to use for the derivation\&. This value should be generated randomly\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$iterations\fP 
+.RE
+.PP
+The number of internal iterations to perform for the derivation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+The length of the output string\&. If raw_output is TRUE this corresponds to the byte-length of the derived key, if raw_output is FALSE this corresponds to twice the byte-length of the derived key (as every byte of the key is returned as two hexits)\&. 
+.br
+ If 0 is passed, the entire output of the supplied algorithm is used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$raw_output\fP [optional] 
+.RE
+.PP
+When set to TRUE, outputs raw binary data\&. FALSE outputs lowercase hexits\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed a string containing the derived key as lowercase hexits unless \fIraw_output\fP is set to \fBTRUE\fP in which case the raw binary representation of the derived key is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "hash_update ( $context,  $data)"
+(PHP 5 >= 5\&.1\&.2, PECL hash >= 1\&.1)
+.br
+ Pump data into an active hashing context \fBresource $context \fP Hashing context returned by \fBhash_init\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+Message to be included in the hash digest\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP\&. 
+.RE
+.PP
+
+.SS "hash_update_file ( $hcontext,  $filename,  $scontext = \fC\fBnull\fP\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL hash >= 1\&.1)
+.br
+ Pump data into an active hashing context from a file \fBresource $hcontext \fP Hashing context returned by \fBhash_init\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP 
+.RE
+.PP
+URL describing location of file to be hashed; Supports fopen wrappers\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$scontext\fP [optional] 
+.RE
+.PP
+Stream context as returned by \fBstream_context_create\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "hash_update_stream ( $context,  $handle,  $length = \fC\-1\fP)"
+(PHP 5 >= 5\&.1\&.2, PECL hash >= 1\&.1)
+.br
+ Pump data into an active hashing context from an open stream \fBresource $context \fP Hashing context returned by \fBhash_init\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$handle\fP 
+.RE
+.PP
+Open file handle as returned by any stream creation function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+Maximum number of characters to copy from \fIhandle\fP into the hashing context\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int Actual number of bytes added to the hashing context from \fIhandle\fP\&. 
+.RE
+.PP
+
+.SS "mhash ( $hash,  $data,  $key = \fC\fBnull\fP\fP)"
+Computes hash \fBint $hash \fP The hash ID\&. One of the \fBMHASH_hashname\fP constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+The user input, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP [optional] 
+.RE
+.PP
+If specified, the function will return the resulting HMAC instead\&. HMAC is keyed hashing for message authentication, or simply a message digest that depends on the specified key\&. Not all algorithms supported in mhash can be used in HMAC mode\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the resulting hash (also called digest) or HMAC as a string, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mhash_count ()"
+Gets the highest available hash ID \fBint the highest available hash ID\&. Hashes are numbered from 0 to this hash ID\&.  4\&.0  5\&.0 \fP
+.SS "mhash_get_block_size ( $hash)"
+Gets the block size of the specified hash \fBint $hash \fP The hash ID\&. One of the \fBMHASH_hashname\fP constants\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the size in bytes or \fBFALSE\fP, if the \fIhash\fP does not exist\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mhash_get_hash_name ( $hash)"
+Gets the name of the specified hash \fBint $hash \fP The hash ID\&. One of the \fBMHASH_hashname\fP constants\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the name of the hash or \fBFALSE\fP, if the hash does not exist\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mhash_keygen_s2k ( $hash,  $password,  $salt,  $bytes)"
+Generates a key \fBint $hash \fP The hash ID used to create the key\&. One of the \fBMHASH_hashname\fP constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP 
+.RE
+.PP
+An user supplied password\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$salt\fP 
+.RE
+.PP
+Must be different and random enough for every key you generate in order to create different keys\&. Because \fIsalt\fP must be known when you check the keys, it is a good idea to append the key to it\&. Salt has a fixed length of 8 bytes and will be padded with zeros if you supply less bytes\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bytes\fP 
+.RE
+.PP
+The key length, in bytes\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the generated key as a string, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const HASH_HMAC 1"
+Optional flag for \fBhash_init\fP\&. Indicates that the HMAC digest-keying algorithm should be applied to the current hashing context\&. \fBhttps://php\&.net/manual/en/hash\&.constants\&.php\fP
+.SS "const MHASH_ADLER32 18"
+
+.SS "const MHASH_CRC32 0"
+
+.SS "const MHASH_CRC32B 9"
+
+.SS "const MHASH_CRC32C 34"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "const MHASH_FNV132 29"
+
+.SS "const MHASH_FNV164 31"
+
+.SS "const MHASH_FNV1A32 30"
+
+.SS "const MHASH_FNV1A64 32"
+
+.SS "const MHASH_GOST 8"
+
+.SS "const MHASH_HAVAL128 13"
+
+.SS "const MHASH_HAVAL160 12"
+
+.SS "const MHASH_HAVAL192 11"
+
+.SS "const MHASH_HAVAL224 10"
+
+.SS "const MHASH_HAVAL256 3"
+
+.SS "const MHASH_JOAAT 33"
+
+.SS "const MHASH_MD2 28"
+
+.SS "const MHASH_MD4 16"
+
+.SS "const MHASH_MD5 1"
+
+.SS "const MHASH_RIPEMD128 23"
+
+.SS "const MHASH_RIPEMD160 5"
+
+.SS "const MHASH_RIPEMD256 24"
+
+.SS "const MHASH_RIPEMD320 25"
+
+.SS "const MHASH_SHA1 2"
+
+.SS "const MHASH_SHA224 19"
+
+.SS "const MHASH_SHA256 17"
+
+.SS "const MHASH_SHA384 21"
+
+.SS "const MHASH_SHA512 20"
+
+.SS "const MHASH_SNEFRU256 27"
+
+.SS "const MHASH_TIGER 7"
+
+.SS "const MHASH_TIGER128 14"
+
+.SS "const MHASH_TIGER160 15"
+
+.SS "const MHASH_WHIRLPOOL 22"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

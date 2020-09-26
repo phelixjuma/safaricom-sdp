@@ -1,0 +1,252 @@
+\hypertarget{rebuild_parsers_8php}{}\doxysection{vendor/nikic/php-\/parser/grammar/rebuild\+Parsers.php File Reference}
+\label{rebuild_parsers_8php}\index{vendor/nikic/php-\/parser/grammar/rebuildParsers.php@{vendor/nikic/php-\/parser/grammar/rebuildParsers.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+foreach(\$grammar\+File\+To\+Name as \$grammar\+File=$>$ \$name) \mbox{\hyperlink{rebuild_parsers_8php_a7353dd688a14ce760590543cb3cc045b}{resolve\+Nodes}} (\$code)
+\begin{DoxyCompactList}\small\item\em Preprocessing functions ///. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{rebuild_parsers_8php_a248dfbf2a8149ac6410418c03d7e93b1}{resolve\+Macros}} (\$code)
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_a20aa9727d9a067e11421c69d1e603d98}{assert\+Args}} (\$num, \$args, \$name)
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_ab9edec160c08019dbf2ce5ae699e097f}{resolve\+Stack\+Access}} (\$code)
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_a00e164ce988a8ca223ec64c386c49f56}{remove\+Trailing\+Whitespace}} (\$code)
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_ac4722f28f8b3b50d03c7d371780a7d8e}{ensure\+Dir\+Exists}} (\$\mbox{\hyperlink{standard__7_8php_a6d1d6ce373efce67a2bd07b55397c393}{dir}})
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_a0c4558ca021267c3b182374d4162a768}{exec\+Cmd}} (\$cmd)
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_a0c152f032743a1c15e57f5df931ea94a}{regex}} (\$regex)
+\begin{DoxyCompactList}\small\item\em Regex helper functions ///. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{rebuild_parsers_8php_a25eb33394ee65a5dc07a221380d331f0}{magic\+Split}} (\$\mbox{\hyperlink{rebuild_parsers_8php_a0c152f032743a1c15e57f5df931ea94a}{regex}}, \$string)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_a722f84b3733683c283f6e88bbffa7a5f}{\$grammar\+File\+To\+Name}}
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_a9fd3574107f4ca3f912c817427e01b22}{\$tokens\+File}} = \mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}} . \textquotesingle{}/tokens.\+y\textquotesingle{}
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_aca7726407aa6397143beb25709572c35}{\$tokens\+Template}} = \mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}} . \textquotesingle{}/tokens.\+template\textquotesingle{}
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_a1f702d16d6d09d3c3da7219813c565d8}{\$skeleton\+File}} = \mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}} . \textquotesingle{}/parser.\+template\textquotesingle{}
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_a4d8e050e3170aa76e75c3fbf86cd2131}{\$tmp\+Grammar\+File}} = \mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}} . \textquotesingle{}/tmp\+\_\+parser.\+phpy\textquotesingle{}
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_a5643cdc417b0bbcbeb029aea093166b2}{\$tmp\+Result\+File}} = \mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}} . \textquotesingle{}/\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{tmp\+\_\+parser.\+php}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_acf9b0a508729b11f65093e54c25c62aa}{\$result\+Dir}} = \mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}} . \textquotesingle{}/../lib/Php\+Parser/Parser\textquotesingle{}
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_a992c9e92e53a2c77e09c899dc1293f29}{\$tokens\+Results\+File}} = \$result\+Dir . \textquotesingle{}/\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{Tokens.\+php}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_a3bcbef238ae7ed75f89567466ee4c005}{\$kmyacc}} = \mbox{\hyperlink{standard__3_8php_a88add8f9e49b4aa5acc57b00f13af908}{getenv}}(\textquotesingle{}K\+M\+Y\+A\+CC\textquotesingle{})
+\item 
+\mbox{\hyperlink{apigen_2apigen_2bin_2bootstrap_8php_a18b663b7f311baed73ccaa681a5d3507}{if}}(! \$kmyacc) \mbox{\hyperlink{rebuild_parsers_8php_afccc0027dcfb3238aaffaebf99351b54}{\$options}} = \mbox{\hyperlink{standard__9_8php_a65a011ab7b9bde26df261abaedf76113}{array\+\_\+flip}}(\$argv)
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_a04f0dc88e3d1ffaa9907b0b189aac208}{\$option\+Debug}} = isset(\$options\mbox{[}\textquotesingle{}-\/-\/debug\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_ad2d5e1d85cadf957af699ffbaca1cb23}{\$option\+Keep\+Tmp\+Grammar}} = isset(\$options\mbox{[}\textquotesingle{}-\/-\/keep-\/tmp-\/grammar\textquotesingle{}\mbox{]})
+\item 
+const \mbox{\hyperlink{rebuild_parsers_8php_a514527ec3eba1a596624e43baa4c9373}{L\+IB}}
+\begin{DoxyCompactList}\small\item\em Utility regex constants ///. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{rebuild_parsers_8php_aacd3e6bbd2d882356c0e48999f57d83a}{P\+A\+R\+A\+MS}} = \textquotesingle{}\textbackslash{}\mbox{[}(?$<$params$>$\mbox{[}$^\wedge$\mbox{[}\textbackslash{}\mbox{]}\mbox{]}$\ast$+(?\+:\textbackslash{}\mbox{[}(?\&params)\textbackslash{}\mbox{]}\mbox{[}$^\wedge$\mbox{[}\textbackslash{}\mbox{]}\mbox{]}$\ast$+)$\ast$+)\textbackslash{}\mbox{]}\textquotesingle{}
+\item 
+const \mbox{\hyperlink{rebuild_parsers_8php_a55c1adb4af354e4d00fc05d4e76d42ce}{A\+R\+GS}} = \textquotesingle{}\textbackslash{}((?$<$args$>$\mbox{[}$^\wedge$()\mbox{]}$\ast$+(?\+:\textbackslash{}((?\&args)\textbackslash{})\mbox{[}$^\wedge$()\mbox{]}$\ast$+)$\ast$+)\textbackslash{})\textquotesingle{}
+\item 
+\mbox{\hyperlink{rebuild_parsers_8php_a72ead29e4317fbc4335fd3ba764e8b59}{\$tokens}} = \mbox{\hyperlink{standard__5_8php_aa8c27fa3ffebc64df41a035a5475cc37}{file\+\_\+get\+\_\+contents}}(\$tokens\+File)
+\begin{DoxyCompactList}\small\item\em Main script ///. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rebuild_parsers_8php_a20aa9727d9a067e11421c69d1e603d98}\label{rebuild_parsers_8php_a20aa9727d9a067e11421c69d1e603d98}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!assertArgs@{assertArgs}}
+\index{assertArgs@{assertArgs}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{assertArgs()}{assertArgs()}}
+{\footnotesize\ttfamily assert\+Args (\begin{DoxyParamCaption}\item[{}]{\$num,  }\item[{}]{\$args,  }\item[{}]{\$name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_ac4722f28f8b3b50d03c7d371780a7d8e}\label{rebuild_parsers_8php_ac4722f28f8b3b50d03c7d371780a7d8e}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!ensureDirExists@{ensureDirExists}}
+\index{ensureDirExists@{ensureDirExists}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{ensureDirExists()}{ensureDirExists()}}
+{\footnotesize\ttfamily ensure\+Dir\+Exists (\begin{DoxyParamCaption}\item[{}]{\$dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_a0c4558ca021267c3b182374d4162a768}\label{rebuild_parsers_8php_a0c4558ca021267c3b182374d4162a768}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!execCmd@{execCmd}}
+\index{execCmd@{execCmd}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{execCmd()}{execCmd()}}
+{\footnotesize\ttfamily exec\+Cmd (\begin{DoxyParamCaption}\item[{}]{\$cmd }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_a25eb33394ee65a5dc07a221380d331f0}\label{rebuild_parsers_8php_a25eb33394ee65a5dc07a221380d331f0}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!magicSplit@{magicSplit}}
+\index{magicSplit@{magicSplit}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{magicSplit()}{magicSplit()}}
+{\footnotesize\ttfamily magic\+Split (\begin{DoxyParamCaption}\item[{}]{\$regex,  }\item[{}]{\$string }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_a0c152f032743a1c15e57f5df931ea94a}\label{rebuild_parsers_8php_a0c152f032743a1c15e57f5df931ea94a}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!regex@{regex}}
+\index{regex@{regex}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{regex()}{regex()}}
+{\footnotesize\ttfamily regex (\begin{DoxyParamCaption}\item[{}]{\$regex }\end{DoxyParamCaption})}
+
+
+
+Regex helper functions ///. 
+
+\mbox{\Hypertarget{rebuild_parsers_8php_a00e164ce988a8ca223ec64c386c49f56}\label{rebuild_parsers_8php_a00e164ce988a8ca223ec64c386c49f56}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!removeTrailingWhitespace@{removeTrailingWhitespace}}
+\index{removeTrailingWhitespace@{removeTrailingWhitespace}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{removeTrailingWhitespace()}{removeTrailingWhitespace()}}
+{\footnotesize\ttfamily remove\+Trailing\+Whitespace (\begin{DoxyParamCaption}\item[{}]{\$code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_a248dfbf2a8149ac6410418c03d7e93b1}\label{rebuild_parsers_8php_a248dfbf2a8149ac6410418c03d7e93b1}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!resolveMacros@{resolveMacros}}
+\index{resolveMacros@{resolveMacros}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{resolveMacros()}{resolveMacros()}}
+{\footnotesize\ttfamily resolve\+Macros (\begin{DoxyParamCaption}\item[{}]{\$code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_a7353dd688a14ce760590543cb3cc045b}\label{rebuild_parsers_8php_a7353dd688a14ce760590543cb3cc045b}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!resolveNodes@{resolveNodes}}
+\index{resolveNodes@{resolveNodes}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{resolveNodes()}{resolveNodes()}}
+{\footnotesize\ttfamily foreach ( \$grammar\+File\+To\+Name as \$grammar\+File=$>$ \$name) resolve\+Nodes (\begin{DoxyParamCaption}\item[{}]{\$code }\end{DoxyParamCaption})}
+
+
+
+Preprocessing functions ///. 
+
+\mbox{\Hypertarget{rebuild_parsers_8php_ab9edec160c08019dbf2ce5ae699e097f}\label{rebuild_parsers_8php_ab9edec160c08019dbf2ce5ae699e097f}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!resolveStackAccess@{resolveStackAccess}}
+\index{resolveStackAccess@{resolveStackAccess}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{resolveStackAccess()}{resolveStackAccess()}}
+{\footnotesize\ttfamily resolve\+Stack\+Access (\begin{DoxyParamCaption}\item[{}]{\$code }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{rebuild_parsers_8php_a722f84b3733683c283f6e88bbffa7a5f}\label{rebuild_parsers_8php_a722f84b3733683c283f6e88bbffa7a5f}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!\$grammarFileToName@{\$grammarFileToName}}
+\index{\$grammarFileToName@{\$grammarFileToName}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{\$grammarFileToName}{$grammarFileToName}}
+{\footnotesize\ttfamily \$grammar\+File\+To\+Name}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{    \mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\_\_DIR\_\_}} . \textcolor{stringliteral}{'/php5.y'} => \textcolor{stringliteral}{'Php5'},}
+\DoxyCodeLine{    \mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\_\_DIR\_\_}} . \textcolor{stringliteral}{'/php7.y'} => \textcolor{stringliteral}{'Php7'},}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{rebuild_parsers_8php_a3bcbef238ae7ed75f89567466ee4c005}\label{rebuild_parsers_8php_a3bcbef238ae7ed75f89567466ee4c005}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!\$kmyacc@{\$kmyacc}}
+\index{\$kmyacc@{\$kmyacc}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{\$kmyacc}{$kmyacc}}
+{\footnotesize\ttfamily \$kmyacc = \mbox{\hyperlink{standard__3_8php_a88add8f9e49b4aa5acc57b00f13af908}{getenv}}(\textquotesingle{}K\+M\+Y\+A\+CC\textquotesingle{})}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_a04f0dc88e3d1ffaa9907b0b189aac208}\label{rebuild_parsers_8php_a04f0dc88e3d1ffaa9907b0b189aac208}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!\$optionDebug@{\$optionDebug}}
+\index{\$optionDebug@{\$optionDebug}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{\$optionDebug}{$optionDebug}}
+{\footnotesize\ttfamily \$option\+Debug = isset(\$options\mbox{[}\textquotesingle{}-\/-\/debug\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_ad2d5e1d85cadf957af699ffbaca1cb23}\label{rebuild_parsers_8php_ad2d5e1d85cadf957af699ffbaca1cb23}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!\$optionKeepTmpGrammar@{\$optionKeepTmpGrammar}}
+\index{\$optionKeepTmpGrammar@{\$optionKeepTmpGrammar}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{\$optionKeepTmpGrammar}{$optionKeepTmpGrammar}}
+{\footnotesize\ttfamily \$option\+Keep\+Tmp\+Grammar = isset(\$options\mbox{[}\textquotesingle{}-\/-\/keep-\/tmp-\/grammar\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_afccc0027dcfb3238aaffaebf99351b54}\label{rebuild_parsers_8php_afccc0027dcfb3238aaffaebf99351b54}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!\$options@{\$options}}
+\index{\$options@{\$options}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{\$options}{$options}}
+{\footnotesize\ttfamily \mbox{\hyperlink{apigen_2apigen_2bin_2bootstrap_8php_a18b663b7f311baed73ccaa681a5d3507}{if}} (! \$kmyacc) \$options = \mbox{\hyperlink{standard__9_8php_a65a011ab7b9bde26df261abaedf76113}{array\+\_\+flip}}(\$argv)}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2usr_2local_2var_2www_2safaricom-sdp-sdk_2vendor_2jetbrains_2phpstorm-stubs_2redis_2_redis_8php-example}{/usr/local/var/www/safaricom-\/sdp-\/sdk/vendor/jetbrains/phpstorm-\/stubs/redis/\+Redis.\+php}}, and \mbox{\hyperlink{_2usr_2local_2var_2www_2safaricom-sdp-sdk_2vendor_2jetbrains_2phpstorm-stubs_2redis_2_redis_cluster_8php-example}{/usr/local/var/www/safaricom-\/sdp-\/sdk/vendor/jetbrains/phpstorm-\/stubs/redis/\+Redis\+Cluster.\+php}}.\end{Desc}
+\mbox{\Hypertarget{rebuild_parsers_8php_acf9b0a508729b11f65093e54c25c62aa}\label{rebuild_parsers_8php_acf9b0a508729b11f65093e54c25c62aa}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!\$resultDir@{\$resultDir}}
+\index{\$resultDir@{\$resultDir}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{\$resultDir}{$resultDir}}
+{\footnotesize\ttfamily \$result\+Dir = \mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}} . \textquotesingle{}/../lib/Php\+Parser/Parser\textquotesingle{}}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_a1f702d16d6d09d3c3da7219813c565d8}\label{rebuild_parsers_8php_a1f702d16d6d09d3c3da7219813c565d8}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!\$skeletonFile@{\$skeletonFile}}
+\index{\$skeletonFile@{\$skeletonFile}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{\$skeletonFile}{$skeletonFile}}
+{\footnotesize\ttfamily \$skeleton\+File = \mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}} . \textquotesingle{}/parser.\+template\textquotesingle{}}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_a4d8e050e3170aa76e75c3fbf86cd2131}\label{rebuild_parsers_8php_a4d8e050e3170aa76e75c3fbf86cd2131}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!\$tmpGrammarFile@{\$tmpGrammarFile}}
+\index{\$tmpGrammarFile@{\$tmpGrammarFile}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{\$tmpGrammarFile}{$tmpGrammarFile}}
+{\footnotesize\ttfamily \$tmp\+Grammar\+File = \mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}} . \textquotesingle{}/tmp\+\_\+parser.\+phpy\textquotesingle{}}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_a5643cdc417b0bbcbeb029aea093166b2}\label{rebuild_parsers_8php_a5643cdc417b0bbcbeb029aea093166b2}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!\$tmpResultFile@{\$tmpResultFile}}
+\index{\$tmpResultFile@{\$tmpResultFile}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{\$tmpResultFile}{$tmpResultFile}}
+{\footnotesize\ttfamily \$tmp\+Result\+File = \mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}} . \textquotesingle{}/\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{tmp\+\_\+parser.\+php}}\textquotesingle{}}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_a72ead29e4317fbc4335fd3ba764e8b59}\label{rebuild_parsers_8php_a72ead29e4317fbc4335fd3ba764e8b59}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!\$tokens@{\$tokens}}
+\index{\$tokens@{\$tokens}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{\$tokens}{$tokens}}
+{\footnotesize\ttfamily \$tokens = \mbox{\hyperlink{standard__5_8php_aa8c27fa3ffebc64df41a035a5475cc37}{file\+\_\+get\+\_\+contents}}(\$tokens\+File)}
+
+
+
+Main script ///. 
+
+\mbox{\Hypertarget{rebuild_parsers_8php_a9fd3574107f4ca3f912c817427e01b22}\label{rebuild_parsers_8php_a9fd3574107f4ca3f912c817427e01b22}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!\$tokensFile@{\$tokensFile}}
+\index{\$tokensFile@{\$tokensFile}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{\$tokensFile}{$tokensFile}}
+{\footnotesize\ttfamily \$tokens\+File = \mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}} . \textquotesingle{}/tokens.\+y\textquotesingle{}}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_a992c9e92e53a2c77e09c899dc1293f29}\label{rebuild_parsers_8php_a992c9e92e53a2c77e09c899dc1293f29}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!\$tokensResultsFile@{\$tokensResultsFile}}
+\index{\$tokensResultsFile@{\$tokensResultsFile}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{\$tokensResultsFile}{$tokensResultsFile}}
+{\footnotesize\ttfamily \$tokens\+Results\+File = \$result\+Dir . \textquotesingle{}/\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{Tokens.\+php}}\textquotesingle{}}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_aca7726407aa6397143beb25709572c35}\label{rebuild_parsers_8php_aca7726407aa6397143beb25709572c35}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!\$tokensTemplate@{\$tokensTemplate}}
+\index{\$tokensTemplate@{\$tokensTemplate}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{\$tokensTemplate}{$tokensTemplate}}
+{\footnotesize\ttfamily \$tokens\+Template = \mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}} . \textquotesingle{}/tokens.\+template\textquotesingle{}}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_a55c1adb4af354e4d00fc05d4e76d42ce}\label{rebuild_parsers_8php_a55c1adb4af354e4d00fc05d4e76d42ce}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!ARGS@{ARGS}}
+\index{ARGS@{ARGS}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{ARGS}{ARGS}}
+{\footnotesize\ttfamily const A\+R\+GS = \textquotesingle{}\textbackslash{}((?$<$args$>$\mbox{[}$^\wedge$()\mbox{]}$\ast$+(?\+:\textbackslash{}((?\&args)\textbackslash{})\mbox{[}$^\wedge$()\mbox{]}$\ast$+)$\ast$+)\textbackslash{})\textquotesingle{}}
+
+\mbox{\Hypertarget{rebuild_parsers_8php_a514527ec3eba1a596624e43baa4c9373}\label{rebuild_parsers_8php_a514527ec3eba1a596624e43baa4c9373}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!LIB@{LIB}}
+\index{LIB@{LIB}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{LIB}{LIB}}
+{\footnotesize\ttfamily const L\+IB}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{stringliteral}{'(?(DEFINE)}}
+\DoxyCodeLine{\textcolor{stringliteral}{    (?<singleQuotedString>\(\backslash\)'[\string^\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)']*+(?:\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).[\string^\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)']*+)*+\(\backslash\)')}}
+\DoxyCodeLine{\textcolor{stringliteral}{    (?<doubleQuotedString>"{}[\string^\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)"{}]*+(?:\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\).[\string^\(\backslash\)\(\backslash\)\(\backslash\)\(\backslash\)"{}]*+)*+"{})}}
+\DoxyCodeLine{\textcolor{stringliteral}{    (?<string>(?\&singleQuotedString)|(?\&doubleQuotedString))}}
+\DoxyCodeLine{\textcolor{stringliteral}{    (?<comment>/\(\backslash\)*[\string^*]*+(?:\(\backslash\)*(?!/)[\string^*]*+)*+\(\backslash\)*/)}}
+\DoxyCodeLine{\textcolor{stringliteral}{    (?<code>\(\backslash\)\{[\string^\(\backslash\)'"{}/\{\}]*+(?:(?:(?\&string)|(?\&comment)|(?\&code)|/)[\string^\(\backslash\)'"{}/\{\}]*+)*+\})}}
+\DoxyCodeLine{\textcolor{stringliteral}{)'}}
+
+\end{DoxyCode}
+
+
+Utility regex constants ///. 
+
+\mbox{\Hypertarget{rebuild_parsers_8php_aacd3e6bbd2d882356c0e48999f57d83a}\label{rebuild_parsers_8php_aacd3e6bbd2d882356c0e48999f57d83a}} 
+\index{rebuildParsers.php@{rebuildParsers.php}!PARAMS@{PARAMS}}
+\index{PARAMS@{PARAMS}!rebuildParsers.php@{rebuildParsers.php}}
+\doxysubsubsection{\texorpdfstring{PARAMS}{PARAMS}}
+{\footnotesize\ttfamily const P\+A\+R\+A\+MS = \textquotesingle{}\textbackslash{}\mbox{[}(?$<$params$>$\mbox{[}$^\wedge$\mbox{[}\textbackslash{}\mbox{]}\mbox{]}$\ast$+(?\+:\textbackslash{}\mbox{[}(?\&params)\textbackslash{}\mbox{]}\mbox{[}$^\wedge$\mbox{[}\textbackslash{}\mbox{]}\mbox{]}$\ast$+)$\ast$+)\textbackslash{}\mbox{]}\textquotesingle{}}
+

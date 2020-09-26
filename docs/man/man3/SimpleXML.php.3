@@ -1,0 +1,143 @@
+.TH "vendor/jetbrains/phpstorm-stubs/SimpleXML/SimpleXML.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/SimpleXML/SimpleXML.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBSimpleXMLElement\fP"
+.br
+.ti -1c
+.RI "class \fBSimpleXMLIterator\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsimplexml_load_file\fP ($filename, $class_name='SimpleXMLElement', $options=0, $ns='', $is_prefix=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBsimplexml_load_string\fP ($data, $class_name='SimpleXMLElement', $options=0, $ns='', $is_prefix=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBsimplexml_import_dom\fP (\fBDOMNode\fP $node, $class_name='SimpleXMLElement')"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "simplexml_import_dom (\fBDOMNode\fP $node,  $class_name = \fC'SimpleXMLElement'\fP)"
+Get a \fBSimpleXMLElement\fP object from a DOM node\&. \fBDOMNode $node \fP \fBA\fP DOM Element node 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$class_name\fP [optional] 
+.RE
+.PP
+You may use this optional parameter so that \fBsimplexml_import_dom\fP will return an object of the specified class\&. That class should extend the \fBSimpleXMLElement\fP class\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBSimpleXMLElement\fP a \fBSimpleXMLElement\fP or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "simplexml_load_file ( $filename,  $class_name = \fC'SimpleXMLElement'\fP,  $options = \fC0\fP,  $ns = \fC''\fP,  $is_prefix = \fC\fBfalse\fP\fP)"
+Interprets an XML file into an object \fBstring $filename \fP Path to the XML file 
+.PP
+Libxml 2 unescapes the URI, so if you want to pass e\&.g\&. b&#38;#38;c as the URI parameter a, you have to call simplexml_load_file(rawurlencode('https://example.com/?a=' \&. urlencode('b&#38;#38;c')))\&. Since PHP 5\&.1\&.0 you don't need to do this because PHP will do it for you\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$class_name\fP [optional] 
+.RE
+.PP
+You may use this optional parameter so that \fBsimplexml_load_file\fP will return an object of the specified class\&. That class should extend the \fBSimpleXMLElement\fP class\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+Since PHP 5\&.1\&.0 and Libxml 2\&.6\&.0, you may also use the \fIoptions\fP parameter to specify additional Libxml parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ns\fP [optional] 
+.RE
+.PP
+Namespace prefix or URI\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$is_prefix\fP [optional] 
+.RE
+.PP
+\fBTRUE\fP if \fIns\fP is a prefix, \fBFALSE\fP if it's a URI; defaults to \fBFALSE\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBSimpleXMLElement\fP an object of class \fBSimpleXMLElement\fP with properties containing the data held within the XML document, or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "simplexml_load_string ( $data,  $class_name = \fC'SimpleXMLElement'\fP,  $options = \fC0\fP,  $ns = \fC''\fP,  $is_prefix = \fC\fBfalse\fP\fP)"
+Interprets a string of XML into an object \fBstring $data \fP \fBA\fP well-formed XML string 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$class_name\fP [optional] 
+.RE
+.PP
+You may use this optional parameter so that \fBsimplexml_load_string\fP will return an object of the specified class\&. That class should extend the \fBSimpleXMLElement\fP class\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+Since PHP 5\&.1\&.0 and Libxml 2\&.6\&.0, you may also use the \fIoptions\fP parameter to specify additional Libxml parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ns\fP [optional] 
+.RE
+.PP
+Namespace prefix or URI\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$is_prefix\fP [optional] 
+.RE
+.PP
+\fBTRUE\fP if \fIns\fP is a prefix, \fBFALSE\fP if it's a URI; defaults to \fBFALSE\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+\fBSimpleXMLElement\fP an object of class \fBSimpleXMLElement\fP with properties containing the data held within the xml document, or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

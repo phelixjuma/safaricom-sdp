@@ -1,0 +1,181 @@
+\hypertarget{sysvshm_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/sysvshm/sysvshm.php File Reference}
+\label{sysvshm_8php}\index{vendor/jetbrains/phpstorm-\/stubs/sysvshm/sysvshm.php@{vendor/jetbrains/phpstorm-\/stubs/sysvshm/sysvshm.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{sysvshm_8php_a9a9d302222f9407a17e1a3808c8ed2a2}{shm\+\_\+attach}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}, \$memsize=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$perm=0666)
+\item 
+\mbox{\hyperlink{sysvshm_8php_a3e61d0816aef2f465e71b1cc0545df87}{shm\+\_\+remove}} (\$shm\+\_\+identifier)
+\item 
+\mbox{\hyperlink{sysvshm_8php_a41494c3ece307cdb812e813e8ca7883a}{shm\+\_\+detach}} (\$shm\+\_\+identifier)
+\item 
+\mbox{\hyperlink{sysvshm_8php_aeb204b529f76d96f4b1ff59e7e91b97f}{shm\+\_\+put\+\_\+var}} (\$shm\+\_\+identifier, \$variable\+\_\+key, \$variable)
+\item 
+\mbox{\hyperlink{sysvshm_8php_a435873e843386e073528787dbf98de19}{shm\+\_\+has\+\_\+var}} (\$shm\+\_\+identifier, \$variable\+\_\+key)
+\item 
+\mbox{\hyperlink{sysvshm_8php_ad440d52218d73e164eb814cefd788afc}{shm\+\_\+get\+\_\+var}} (\$shm\+\_\+identifier, \$variable\+\_\+key)
+\item 
+\mbox{\hyperlink{sysvshm_8php_a80bd5d345c27cada759965f260e6292d}{shm\+\_\+remove\+\_\+var}} (\$shm\+\_\+identifier, \$variable\+\_\+key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sysvshm_8php_a9a9d302222f9407a17e1a3808c8ed2a2}\label{sysvshm_8php_a9a9d302222f9407a17e1a3808c8ed2a2}} 
+\index{sysvshm.php@{sysvshm.php}!shm\_attach@{shm\_attach}}
+\index{shm\_attach@{shm\_attach}!sysvshm.php@{sysvshm.php}}
+\doxysubsubsection{\texorpdfstring{shm\_attach()}{shm\_attach()}}
+{\footnotesize\ttfamily shm\+\_\+attach (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$memsize = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$perm = {\ttfamily 0666} }\end{DoxyParamCaption})}
+
+Creates or open a shared memory segment \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$key }} \mbox{\hyperlink{class_a}{A}} numeric shared memory segment ID 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$memsize} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The memory size. If not provided, default to the sysvshm.\+init\+\_\+mem in the {\itshape php.\+ini}, otherwise 10000 bytes. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$perm} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The optional permission bits. Default to 0666. 
+
+\begin{DoxyReturn}{Returns}
+resource a shared memory segment identifier. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sysvshm_8php_a41494c3ece307cdb812e813e8ca7883a}\label{sysvshm_8php_a41494c3ece307cdb812e813e8ca7883a}} 
+\index{sysvshm.php@{sysvshm.php}!shm\_detach@{shm\_detach}}
+\index{shm\_detach@{shm\_detach}!sysvshm.php@{sysvshm.php}}
+\doxysubsubsection{\texorpdfstring{shm\_detach()}{shm\_detach()}}
+{\footnotesize\ttfamily shm\+\_\+detach (\begin{DoxyParamCaption}\item[{}]{\$shm\+\_\+identifier }\end{DoxyParamCaption})}
+
+Disconnects from shared memory segment \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$shm\+\_\+identifier }} \mbox{\hyperlink{class_a}{A}} shared memory resource handle as returned by {\bfseries{shm\+\_\+attach}} 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{shm\+\_\+detach}} always returns {\bfseries{T\+R\+UE}}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sysvshm_8php_ad440d52218d73e164eb814cefd788afc}\label{sysvshm_8php_ad440d52218d73e164eb814cefd788afc}} 
+\index{sysvshm.php@{sysvshm.php}!shm\_get\_var@{shm\_get\_var}}
+\index{shm\_get\_var@{shm\_get\_var}!sysvshm.php@{sysvshm.php}}
+\doxysubsubsection{\texorpdfstring{shm\_get\_var()}{shm\_get\_var()}}
+{\footnotesize\ttfamily shm\+\_\+get\+\_\+var (\begin{DoxyParamCaption}\item[{}]{\$shm\+\_\+identifier,  }\item[{}]{\$variable\+\_\+key }\end{DoxyParamCaption})}
+
+Returns a variable from shared memory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$shm\+\_\+identifier }} Shared memory segment, obtained from {\bfseries{shm\+\_\+attach}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$variable\+\_\+key} & \\
+\hline
+\end{DoxyParams}
+The variable key. 
+
+\begin{DoxyReturn}{Returns}
+mixed the variable with the given key. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sysvshm_8php_a435873e843386e073528787dbf98de19}\label{sysvshm_8php_a435873e843386e073528787dbf98de19}} 
+\index{sysvshm.php@{sysvshm.php}!shm\_has\_var@{shm\_has\_var}}
+\index{shm\_has\_var@{shm\_has\_var}!sysvshm.php@{sysvshm.php}}
+\doxysubsubsection{\texorpdfstring{shm\_has\_var()}{shm\_has\_var()}}
+{\footnotesize\ttfamily shm\+\_\+has\+\_\+var (\begin{DoxyParamCaption}\item[{}]{\$shm\+\_\+identifier,  }\item[{}]{\$variable\+\_\+key }\end{DoxyParamCaption})}
+
+Check whether a specific entry exists \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$shm\+\_\+identifier }} Shared memory segment, obtained from {\bfseries{shm\+\_\+attach}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$variable\+\_\+key} & \\
+\hline
+\end{DoxyParams}
+The variable key. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} if the entry exists, otherwise {\bfseries{F\+A\+L\+SE}} 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{sysvshm_8php_aeb204b529f76d96f4b1ff59e7e91b97f}\label{sysvshm_8php_aeb204b529f76d96f4b1ff59e7e91b97f}} 
+\index{sysvshm.php@{sysvshm.php}!shm\_put\_var@{shm\_put\_var}}
+\index{shm\_put\_var@{shm\_put\_var}!sysvshm.php@{sysvshm.php}}
+\doxysubsubsection{\texorpdfstring{shm\_put\_var()}{shm\_put\_var()}}
+{\footnotesize\ttfamily shm\+\_\+put\+\_\+var (\begin{DoxyParamCaption}\item[{}]{\$shm\+\_\+identifier,  }\item[{}]{\$variable\+\_\+key,  }\item[{}]{\$variable }\end{DoxyParamCaption})}
+
+Inserts or updates a variable in shared memory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$shm\+\_\+identifier }} \mbox{\hyperlink{class_a}{A}} shared memory resource handle as returned by {\bfseries{shm\+\_\+attach}} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$variable\+\_\+key} & \\
+\hline
+\end{DoxyParams}
+The variable key. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$variable} & \\
+\hline
+\end{DoxyParams}
+The variable. All variable types that {\bfseries{serialize}} supports may be used\+: generally this means all types except for resources and some internal objects that cannot be serialized. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sysvshm_8php_a3e61d0816aef2f465e71b1cc0545df87}\label{sysvshm_8php_a3e61d0816aef2f465e71b1cc0545df87}} 
+\index{sysvshm.php@{sysvshm.php}!shm\_remove@{shm\_remove}}
+\index{shm\_remove@{shm\_remove}!sysvshm.php@{sysvshm.php}}
+\doxysubsubsection{\texorpdfstring{shm\_remove()}{shm\_remove()}}
+{\footnotesize\ttfamily shm\+\_\+remove (\begin{DoxyParamCaption}\item[{}]{\$shm\+\_\+identifier }\end{DoxyParamCaption})}
+
+Removes shared memory from Unix systems \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$shm\+\_\+identifier }} The shared memory identifier as returned by {\bfseries{shm\+\_\+attach}} 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sysvshm_8php_a80bd5d345c27cada759965f260e6292d}\label{sysvshm_8php_a80bd5d345c27cada759965f260e6292d}} 
+\index{sysvshm.php@{sysvshm.php}!shm\_remove\_var@{shm\_remove\_var}}
+\index{shm\_remove\_var@{shm\_remove\_var}!sysvshm.php@{sysvshm.php}}
+\doxysubsubsection{\texorpdfstring{shm\_remove\_var()}{shm\_remove\_var()}}
+{\footnotesize\ttfamily shm\+\_\+remove\+\_\+var (\begin{DoxyParamCaption}\item[{}]{\$shm\+\_\+identifier,  }\item[{}]{\$variable\+\_\+key }\end{DoxyParamCaption})}
+
+Removes a variable from shared memory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$shm\+\_\+identifier }} The shared memory identifier as returned by {\bfseries{shm\+\_\+attach}} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$variable\+\_\+key} & \\
+\hline
+\end{DoxyParams}
+The variable key. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}

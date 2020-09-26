@@ -1,0 +1,1641 @@
+.TH "vendor/jetbrains/phpstorm-stubs/http/http.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/http/http.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBHttpException\fP"
+.br
+.ti -1c
+.RI "class \fBHttpRuntimeException\fP"
+.br
+.ti -1c
+.RI "class \fBHttpInvalidParamException\fP"
+.br
+.ti -1c
+.RI "class \fBHttpHeaderException\fP"
+.br
+.ti -1c
+.RI "class \fBHttpMalformedHeadersException\fP"
+.br
+.ti -1c
+.RI "class \fBHttpRequestMethodException\fP"
+.br
+.ti -1c
+.RI "class \fBHttpMessageTypeException\fP"
+.br
+.ti -1c
+.RI "class \fBHttpEncodingException\fP"
+.br
+.ti -1c
+.RI "class \fBHttpRequestException\fP"
+.br
+.ti -1c
+.RI "class \fBHttpRequestPoolException\fP"
+.br
+.ti -1c
+.RI "class \fBHttpSocketException\fP"
+.br
+.ti -1c
+.RI "class \fBHttpResponseException\fP"
+.br
+.ti -1c
+.RI "class \fBHttpUrlException\fP"
+.br
+.ti -1c
+.RI "class \fBHttpQueryStringException\fP"
+.br
+.ti -1c
+.RI "class \fBHttpDeflateStream\fP"
+.br
+.ti -1c
+.RI "class \fBHttpInflateStream\fP"
+.br
+.ti -1c
+.RI "class \fBHttpMessage\fP"
+.br
+.ti -1c
+.RI "class \fBHttpQueryString\fP"
+.br
+.ti -1c
+.RI "class \fBHttpRequest\fP"
+.br
+.ti -1c
+.RI "class \fBHttpRequestDataShare\fP"
+.br
+.ti -1c
+.RI "class \fBHttpRequestPool\fP"
+.br
+.ti -1c
+.RI "class \fBHttpResponse\fP"
+.br
+.ti -1c
+.RI "class \fBHttpUtil\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBhttp_date\fP ($timestamp=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_build_url\fP ($url=\fBnull\fP, $parts=\fBnull\fP, $flags=\fBnull\fP, array &$new_url=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_build_str\fP (array $query, $prefix=\fBnull\fP, $arg_separator=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_negotiate_language\fP (array $supported, array &$result=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_negotiate_charset\fP (array $supported, array &$result=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_negotiate_content_type\fP (array $supported, array &$result=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_redirect\fP ($url=\fBnull\fP, array $params=\fBnull\fP, $session=\fBnull\fP, $status=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_throttle\fP ($sec=\fBnull\fP, $bytes=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_send_status\fP ($status)"
+.br
+.ti -1c
+.RI "\fBhttp_send_last_modified\fP ($timestamp=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_send_content_type\fP ($content_type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_send_content_disposition\fP ($filename, $inline=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_match_modified\fP ($timestamp=\fBnull\fP, $for_range=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_match_etag\fP ($etag, $for_range=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_cache_last_modified\fP ($timestamp_or_expires=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_cache_etag\fP ($etag=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_send_data\fP ($data)"
+.br
+.ti -1c
+.RI "\fBhttp_send_file\fP ($\fBfile\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_send_stream\fP ($stream)"
+.br
+.ti -1c
+.RI "\fBhttp_chunked_decode\fP ($encoded)"
+.br
+.ti -1c
+.RI "\fBhttp_parse_message\fP ($message)"
+.br
+.ti -1c
+.RI "\fBhttp_parse_headers\fP ($\fBheader\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_parse_cookie\fP ($cookie, $flags=\fBnull\fP, array $allowed_extras=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_build_cookie\fP (array $cookie)"
+.br
+.ti -1c
+.RI "\fBhttp_parse_params\fP ($param, $flags=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_get_request_headers\fP ()"
+.br
+.ti -1c
+.RI "\fBhttp_get_request_body\fP ()"
+.br
+.ti -1c
+.RI "\fBhttp_get_request_body_stream\fP ()"
+.br
+.ti -1c
+.RI "\fBhttp_match_request_header\fP ($\fBheader\fP, $value, $match_case=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_persistent_handles_count\fP ()"
+.br
+.ti -1c
+.RI "\fBhttp_persistent_handles_clean\fP ($ident=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_persistent_handles_ident\fP ($ident)"
+.br
+.ti -1c
+.RI "\fBhttp_get\fP ($url, array $options=\fBnull\fP, array &$info=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_head\fP ($url=\fBnull\fP, array $options=\fBnull\fP, array &$info=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_post_data\fP ($url, $data=\fBnull\fP, array $options=\fBnull\fP, array &$info=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_post_fields\fP ($url, array $data=\fBnull\fP, array $files=\fBnull\fP, array $options=\fBnull\fP, array &$info=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_put_data\fP ($url, $data=\fBnull\fP, array $options=\fBnull\fP, array &$info=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_put_file\fP ($url, $\fBfile\fP=\fBnull\fP, array $options=\fBnull\fP, array &$info=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_put_stream\fP ($url, $stream=\fBnull\fP, array $options=\fBnull\fP, array &$info=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_request\fP ($method, $url=\fBnull\fP, $body=\fBnull\fP, array $options=\fBnull\fP, array &$info=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_request_body_encode\fP (array $fields, array $files)"
+.br
+.ti -1c
+.RI "\fBhttp_request_method_register\fP ($method)"
+.br
+.ti -1c
+.RI "\fBhttp_request_method_unregister\fP ($method)"
+.br
+.ti -1c
+.RI "\fBhttp_request_method_exists\fP ($method)"
+.br
+.ti -1c
+.RI "\fBhttp_request_method_name\fP ($method)"
+.br
+.ti -1c
+.RI "\fBob_etaghandler\fP ($data, $mode)"
+.br
+.ti -1c
+.RI "\fBhttp_deflate\fP ($data, $flags=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhttp_inflate\fP ($data)"
+.br
+.ti -1c
+.RI "\fBob_deflatehandler\fP ($data, $mode)"
+.br
+.ti -1c
+.RI "\fBob_inflatehandler\fP ($data, $mode)"
+.br
+.ti -1c
+.RI "\fBhttp_support\fP ($feature=\fBnull\fP)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBHTTP_COOKIE_PARSE_RAW\fP 1"
+.br
+.ti -1c
+.RI "const \fBHTTP_COOKIE_SECURE\fP 16"
+.br
+.ti -1c
+.RI "const \fBHTTP_COOKIE_HTTPONLY\fP 32"
+.br
+.ti -1c
+.RI "const \fBHTTP_DEFLATE_LEVEL_DEF\fP 0"
+.br
+.ti -1c
+.RI "const \fBHTTP_DEFLATE_LEVEL_MIN\fP 1"
+.br
+.ti -1c
+.RI "const \fBHTTP_DEFLATE_LEVEL_MAX\fP 9"
+.br
+.ti -1c
+.RI "const \fBHTTP_DEFLATE_TYPE_ZLIB\fP 0"
+.br
+.ti -1c
+.RI "const \fBHTTP_DEFLATE_TYPE_GZIP\fP 16"
+.br
+.ti -1c
+.RI "const \fBHTTP_DEFLATE_TYPE_RAW\fP 32"
+.br
+.ti -1c
+.RI "const \fBHTTP_DEFLATE_STRATEGY_DEF\fP 0"
+.br
+.ti -1c
+.RI "const \fBHTTP_DEFLATE_STRATEGY_FILT\fP 256"
+.br
+.ti -1c
+.RI "const \fBHTTP_DEFLATE_STRATEGY_HUFF\fP 512"
+.br
+.ti -1c
+.RI "const \fBHTTP_DEFLATE_STRATEGY_RLE\fP 768"
+.br
+.ti -1c
+.RI "const \fBHTTP_DEFLATE_STRATEGY_FIXED\fP 1024"
+.br
+.ti -1c
+.RI "const \fBHTTP_ENCODING_STREAM_FLUSH_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBHTTP_ENCODING_STREAM_FLUSH_SYNC\fP 1048576"
+.br
+.ti -1c
+.RI "const \fBHTTP_ENCODING_STREAM_FLUSH_FULL\fP 2097152"
+.br
+.ti -1c
+.RI "const \fBHTTP_AUTH_BASIC\fP 1"
+.br
+.ti -1c
+.RI "const \fBHTTP_AUTH_DIGEST\fP 2"
+.br
+.ti -1c
+.RI "const \fBHTTP_AUTH_NTLM\fP 8"
+.br
+.ti -1c
+.RI "const \fBHTTP_AUTH_GSSNEG\fP 4"
+.br
+.ti -1c
+.RI "const \fBHTTP_AUTH_ANY\fP \-1"
+.br
+.ti -1c
+.RI "const \fBHTTP_VERSION_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBHTTP_VERSION_1_0\fP 1"
+.br
+.ti -1c
+.RI "const \fBHTTP_VERSION_1_1\fP 2"
+.br
+.ti -1c
+.RI "const \fBHTTP_VERSION_ANY\fP 0"
+.br
+.ti -1c
+.RI "const \fBHTTP_SSL_VERSION_TLSv1\fP 1"
+.br
+.ti -1c
+.RI "const \fBHTTP_SSL_VERSION_SSLv2\fP 2"
+.br
+.ti -1c
+.RI "const \fBHTTP_SSL_VERSION_SSLv3\fP 3"
+.br
+.ti -1c
+.RI "const \fBHTTP_SSL_VERSION_ANY\fP 0"
+.br
+.ti -1c
+.RI "const \fBHTTP_IPRESOLVE_V4\fP 1"
+.br
+.ti -1c
+.RI "const \fBHTTP_IPRESOLVE_V6\fP 2"
+.br
+.ti -1c
+.RI "const \fBHTTP_IPRESOLVE_ANY\fP 0"
+.br
+.ti -1c
+.RI "const \fBHTTP_PROXY_SOCKS4\fP 4"
+.br
+.ti -1c
+.RI "const \fBHTTP_PROXY_SOCKS5\fP 5"
+.br
+.ti -1c
+.RI "const \fBHTTP_PROXY_HTTP\fP 0"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_GET\fP 1"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_HEAD\fP 2"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_POST\fP 3"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_PUT\fP 4"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_DELETE\fP 5"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_OPTIONS\fP 6"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_TRACE\fP 7"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_CONNECT\fP 8"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_PROPFIND\fP 9"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_PROPPATCH\fP 10"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_MKCOL\fP 11"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_COPY\fP 12"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_MOVE\fP 13"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_LOCK\fP 14"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_UNLOCK\fP 15"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_VERSION_CONTROL\fP 16"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_REPORT\fP 17"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_CHECKOUT\fP 18"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_CHECKIN\fP 19"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_UNCHECKOUT\fP 20"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_MKWORKSPACE\fP 21"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_UPDATE\fP 22"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_LABEL\fP 23"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_MERGE\fP 24"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_BASELINE_CONTROL\fP 25"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_MKACTIVITY\fP 26"
+.br
+.ti -1c
+.RI "const \fBHTTP_METH_ACL\fP 27"
+.br
+.ti -1c
+.RI "const \fBHTTP_REDIRECT\fP 0"
+.br
+.ti -1c
+.RI "const \fBHTTP_REDIRECT_PERM\fP 301"
+.br
+.ti -1c
+.RI "const \fBHTTP_REDIRECT_FOUND\fP 302"
+.br
+.ti -1c
+.RI "const \fBHTTP_REDIRECT_POST\fP 303"
+.br
+.ti -1c
+.RI "const \fBHTTP_REDIRECT_PROXY\fP 305"
+.br
+.ti -1c
+.RI "const \fBHTTP_REDIRECT_TEMP\fP 307"
+.br
+.ti -1c
+.RI "const \fBHTTP_SUPPORT\fP 1"
+.br
+.ti -1c
+.RI "const \fBHTTP_SUPPORT_REQUESTS\fP 2"
+.br
+.ti -1c
+.RI "const \fBHTTP_SUPPORT_MAGICMIME\fP 4"
+.br
+.ti -1c
+.RI "const \fBHTTP_SUPPORT_ENCODINGS\fP 8"
+.br
+.ti -1c
+.RI "const \fBHTTP_SUPPORT_SSLREQUESTS\fP 32"
+.br
+.ti -1c
+.RI "const \fBHTTP_SUPPORT_EVENTS\fP 128"
+.br
+.ti -1c
+.RI "const \fBHTTP_PARAMS_ALLOW_COMMA\fP 1"
+.br
+.ti -1c
+.RI "const \fBHTTP_PARAMS_ALLOW_FAILURE\fP 2"
+.br
+.ti -1c
+.RI "const \fBHTTP_PARAMS_RAISE_ERROR\fP 4"
+.br
+.ti -1c
+.RI "const \fBHTTP_PARAMS_DEFAULT\fP 7"
+.br
+.ti -1c
+.RI "const \fBHTTP_URL_REPLACE\fP 0"
+.br
+.ti -1c
+.RI "const \fBHTTP_URL_JOIN_PATH\fP 1"
+.br
+.ti -1c
+.RI "const \fBHTTP_URL_JOIN_QUERY\fP 2"
+.br
+.ti -1c
+.RI "const \fBHTTP_URL_STRIP_USER\fP 4"
+.br
+.ti -1c
+.RI "const \fBHTTP_URL_STRIP_PASS\fP 8"
+.br
+.ti -1c
+.RI "const \fBHTTP_URL_STRIP_AUTH\fP 12"
+.br
+.ti -1c
+.RI "const \fBHTTP_URL_STRIP_PORT\fP 32"
+.br
+.ti -1c
+.RI "const \fBHTTP_URL_STRIP_PATH\fP 64"
+.br
+.ti -1c
+.RI "const \fBHTTP_URL_STRIP_QUERY\fP 128"
+.br
+.ti -1c
+.RI "const \fBHTTP_URL_STRIP_FRAGMENT\fP 256"
+.br
+.ti -1c
+.RI "const \fBHTTP_URL_STRIP_ALL\fP 492"
+.br
+.ti -1c
+.RI "const \fBHTTP_URL_FROM_ENV\fP 4096"
+.br
+.ti -1c
+.RI "const \fBHTTP_E_RUNTIME\fP 1"
+.br
+.ti -1c
+.RI "const \fBHTTP_E_INVALID_PARAM\fP 2"
+.br
+.ti -1c
+.RI "const \fBHTTP_E_HEADER\fP 3"
+.br
+.ti -1c
+.RI "const \fBHTTP_E_MALFORMED_HEADERS\fP 4"
+.br
+.ti -1c
+.RI "const \fBHTTP_E_REQUEST_METHOD\fP 5"
+.br
+.ti -1c
+.RI "const \fBHTTP_E_MESSAGE_TYPE\fP 6"
+.br
+.ti -1c
+.RI "const \fBHTTP_E_ENCODING\fP 7"
+.br
+.ti -1c
+.RI "const \fBHTTP_E_REQUEST\fP 8"
+.br
+.ti -1c
+.RI "const \fBHTTP_E_REQUEST_POOL\fP 9"
+.br
+.ti -1c
+.RI "const \fBHTTP_E_SOCKET\fP 10"
+.br
+.ti -1c
+.RI "const \fBHTTP_E_RESPONSE\fP 11"
+.br
+.ti -1c
+.RI "const \fBHTTP_E_URL\fP 12"
+.br
+.ti -1c
+.RI "const \fBHTTP_E_QUERYSTRING\fP 13"
+.br
+.ti -1c
+.RI "const \fBHTTP_MSG_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBHTTP_MSG_REQUEST\fP 1"
+.br
+.ti -1c
+.RI "const \fBHTTP_MSG_RESPONSE\fP 2"
+.br
+.ti -1c
+.RI "const \fBHTTP_QUERYSTRING_TYPE_BOOL\fP 3"
+.br
+.ti -1c
+.RI "const \fBHTTP_QUERYSTRING_TYPE_INT\fP 1"
+.br
+.ti -1c
+.RI "const \fBHTTP_QUERYSTRING_TYPE_FLOAT\fP 2"
+.br
+.ti -1c
+.RI "const \fBHTTP_QUERYSTRING_TYPE_STRING\fP 6"
+.br
+.ti -1c
+.RI "const \fBHTTP_QUERYSTRING_TYPE_ARRAY\fP 4"
+.br
+.ti -1c
+.RI "const \fBHTTP_QUERYSTRING_TYPE_OBJECT\fP 5"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "http_build_cookie (array $cookie)"
+(PECL pecl_http >= 1\&.2\&.0)
+.br
+ Build cookie string \fBarray $cookie \fP a cookie list like returned from http_parse_cookie 
+.PP
+\fBReturns\fP
+.RS 4
+string the cookie(s) as string\&. 
+.RE
+.PP
+
+.SS "http_build_str (array $query,  $prefix = \fC\fBnull\fP\fP,  $arg_separator = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.23\&.0)
+.br
+ Build query string \fBarray $query \fP associative array of query string parameters 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$prefix\fP [optional] 
+.RE
+.PP
+top level prefix 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$arg_separator\fP [optional] 
+.RE
+.PP
+argument separator to use (by default the INI setting arg_separator\&.output will be used, or "&" if neither is set 
+.PP
+\fBReturns\fP
+.RS 4
+string the built query as string on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_build_url ( $url = \fC\fBnull\fP\fP,  $parts = \fC\fBnull\fP\fP,  $flags = \fC\fBnull\fP\fP, array & $new_url = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.21\&.0)
+.br
+ Build an URL \fBmixed $url [optional] \fP (part(s) of) an URL in form of a string or associative array like parse_url returns 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parts\fP [optional] 
+.RE
+.PP
+same as the first argument 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+a bitmask of binary or'ed HTTP_URL constants; HTTP_URL_REPLACE is the default 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$new_url\fP [optional] 
+.RE
+.PP
+if set, it will be filled with the parts of the composed url like parse_url would return 
+.PP
+\fBReturns\fP
+.RS 4
+string the new URL as string on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_cache_etag ( $etag = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Caching by ETag \fBstring $etag [optional] \fP custom ETag 
+.PP
+\fBReturns\fP
+.RS 4
+bool &returns\&.http\&.false\&.orexits; with 304 Not Modified if the entity is cached\&. &see\&.http\&.configuration\&.force_exit; 
+.RE
+.PP
+
+.SS "http_cache_last_modified ( $timestamp_or_expires = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Caching by last modification \fBint $timestamp_or_expires [optional] \fP Unix timestamp 
+.PP
+\fBReturns\fP
+.RS 4
+bool &returns\&.http\&.false\&.orexits; with 304 Not Modified if the entity is cached\&. &see\&.http\&.configuration\&.force_exit; 
+.RE
+.PP
+
+.SS "http_chunked_decode ( $encoded)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Decode chunked-encoded data \fBstring $encoded \fP chunked encoded string 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the decoded string on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_date ( $timestamp = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Compose HTTP RFC compliant date \fBint $timestamp [optional] \fP Unix timestamp; current time if omitted 
+.PP
+\fBReturns\fP
+.RS 4
+string the HTTP date as string\&. 
+.RE
+.PP
+
+.SS "http_deflate ( $data,  $flags = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.15\&.0)
+.br
+ Deflate data \fBstring $data \fP String containing the data that should be encoded 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+deflate options 
+.PP
+\fBReturns\fP
+.RS 4
+string|null the encoded string on success, or NULL on failure\&. 
+.RE
+.PP
+
+.SS "http_get ( $url, array $options = \fC\fBnull\fP\fP, array & $info = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Perform GET request \fBstring $url \fP URL 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+&link\&.http\&.request\&.options; 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$info\fP [optional] 
+.RE
+.PP
+Will be filled with request/response information 
+.PP
+\fBReturns\fP
+.RS 4
+string &returns\&.http\&.response; 
+.RE
+.PP
+
+.SS "http_get_request_body ()"
+(PECL pecl_http >= 0\&.10\&.0)
+.br
+ Get request body as string \fBstring|null the raw request body as string on success or NULL on failure\&. \fP
+.SS "http_get_request_body_stream ()"
+(PECL pecl_http >= 0\&.22\&.0)
+.br
+ Get request body as stream \fBresource|null the raw request body as stream on success or NULL on failure\&. \fP
+.SS "http_get_request_headers ()"
+(PECL pecl_http >= 0\&.10\&.0)
+.br
+ Get request headers as array \fBarray an associative array of incoming request headers\&. \fP
+.SS "http_head ( $url = \fC\fBnull\fP\fP, array $options = \fC\fBnull\fP\fP, array & $info = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Perform HEAD request \fBstring $url [optional] \fP URL 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+&link\&.http\&.request\&.options; 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$info\fP [optional] 
+.RE
+.PP
+&link\&.http\&.request\&.info; 
+.PP
+\fBReturns\fP
+.RS 4
+string &returns\&.http\&.response; 
+.RE
+.PP
+
+.SS "http_inflate ( $data)"
+(PECL pecl_http >= 0\&.15\&.0)
+.br
+ Inflate data \fBstring $data \fP string containing the compressed data 
+.PP
+\fBReturns\fP
+.RS 4
+string|null the decoded string on success, or NULL on failure\&. 
+.RE
+.PP
+
+.SS "http_match_etag ( $etag,  $for_range = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Match ETag \fBstring $etag \fP the ETag to match 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$for_range\fP [optional] 
+.RE
+.PP
+if set to true, the header usually used to validate HTTP ranges will be checked 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if ETag matches or the header contained the asterisk ("*"), else false\&. 
+.RE
+.PP
+
+.SS "http_match_modified ( $timestamp = \fC\fBnull\fP\fP,  $for_range = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Match last modification \fBint $timestamp [optional] \fP Unix timestamp; current time, if omitted 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$for_range\fP [optional] 
+.RE
+.PP
+if set to true, the header usually used to validate HTTP ranges will be checked 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if timestamp represents an earlier date than the header, else false\&. 
+.RE
+.PP
+
+.SS "http_match_request_header ( $header,  $value,  $match_case = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.10\&.0)
+.br
+ Match any header \fBstring $header \fP the header name (case-insensitive) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+the header value that should be compared 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$match_case\fP [optional] 
+.RE
+.PP
+whether the value should be compared case sensitively 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if header value matches, else false\&. 
+.RE
+.PP
+
+.SS "http_negotiate_charset (array $supported, array & $result = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Negotiate clients preferred character set \fBarray $supported \fP array containing the supported charsets as values 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP [optional] 
+.RE
+.PP
+will be filled with an array containing the negotiation results 
+.PP
+\fBReturns\fP
+.RS 4
+string the negotiated charset or the default charset (i\&.e\&. first array entry) if none match\&. 
+.RE
+.PP
+
+.SS "http_negotiate_content_type (array $supported, array & $result = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.19\&.0)
+.br
+ Negotiate clients preferred content type \fBarray $supported \fP array containing the supported content types as values 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP [optional] 
+.RE
+.PP
+will be filled with an array containing the negotiation results 
+.PP
+\fBReturns\fP
+.RS 4
+string the negotiated content type or the default content type (i\&.e\&. first array entry) if none match\&. 
+.RE
+.PP
+
+.SS "http_negotiate_language (array $supported, array & $result = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Negotiate clients preferred language \fBarray $supported \fP array containing the supported languages as values 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP [optional] 
+.RE
+.PP
+will be filled with an array containing the negotiation results 
+.PP
+\fBReturns\fP
+.RS 4
+string the negotiated language or the default language (i\&.e\&. first array entry) if none match\&. 
+.RE
+.PP
+
+.SS "http_parse_cookie ( $cookie,  $flags = \fC\fBnull\fP\fP, array $allowed_extras = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.20\&.0)
+.br
+ Parse HTTP cookie \fBstring $cookie \fP string containing the value of a Set-Cookie response header 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+parse flags (HTTP_COOKIE_PARSE_RAW) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$allowed_extras\fP [optional] 
+.RE
+.PP
+array containing recognized extra keys; by default all unknown keys will be treated as cookie names 
+.PP
+\fBReturns\fP
+.RS 4
+stdClass|false a \fBstdClass\fP object on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_parse_headers ( $header)"
+(PECL pecl_http >= 0\&.10\&.0)
+.br
+ Parse HTTP headers \fBstring $header \fP string containing HTTP headers 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_parse_message ( $message)"
+(PECL pecl_http >= 0\&.12\&.0)
+.br
+ Parse HTTP messages \fBstring $message \fP string containing a single HTTP message or several consecutive HTTP messages 
+.PP
+\fBReturns\fP
+.RS 4
+object a hierarchical object structure of the parsed messages\&. 
+.RE
+.PP
+
+.SS "http_parse_params ( $param,  $flags = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 1\&.0\&.0)
+.br
+ Parse parameter list \fBstring $param \fP Parameters 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+Parse flags 
+.PP
+\fBReturns\fP
+.RS 4
+\fBstdClass\fP parameter list as \fBstdClass\fP object\&. 
+.RE
+.PP
+
+.SS "http_persistent_handles_clean ( $ident = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 1\&.5\&.0)
+.br
+ Clean up persistent handles \fBstring $ident [optional]  string \fP
+.SS "http_persistent_handles_count ()"
+(PECL pecl_http >= 1\&.5\&.0)
+.br
+ Stat persistent handles \fBstdClass|false persistent handles statistics as stdClass object on success or false on failure\&. \fP
+.SS "http_persistent_handles_ident ( $ident)"
+(PECL pecl_http >= 1\&.5\&.0)
+.br
+ Get/set ident of persistent handles \fBstring $ident \fP the identification string 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the prior ident as string on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_post_data ( $url,  $data = \fC\fBnull\fP\fP, array $options = \fC\fBnull\fP\fP, array & $info = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Perform POST request with pre-encoded data \fBstring $url \fP URL 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP [optional] 
+.RE
+.PP
+String containing the pre-encoded post data 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+&link\&.http\&.request\&.options; 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$info\fP [optional] 
+.RE
+.PP
+&link\&.http\&.request\&.info; 
+.PP
+\fBReturns\fP
+.RS 4
+string &returns\&.http\&.response; 
+.RE
+.PP
+
+.SS "http_post_fields ( $url, array $data = \fC\fBnull\fP\fP, array $files = \fC\fBnull\fP\fP, array $options = \fC\fBnull\fP\fP, array & $info = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.10\&.0)
+.br
+ Perform POST request with data to be encoded \fBstring $url \fP URL 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP [optional] 
+.RE
+.PP
+Associative array of POST values 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$files\fP [optional] 
+.RE
+.PP
+Array of files to post 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+&link\&.http\&.request\&.options; 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$info\fP [optional] 
+.RE
+.PP
+&link\&.http\&.request\&.info; 
+.PP
+\fBReturns\fP
+.RS 4
+string &returns\&.http\&.response; 
+.RE
+.PP
+
+.SS "http_put_data ( $url,  $data = \fC\fBnull\fP\fP, array $options = \fC\fBnull\fP\fP, array & $info = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.25\&.0)
+.br
+ Perform PUT request with data \fBstring $url \fP URL 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP [optional] 
+.RE
+.PP
+PUT request body 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+&link\&.http\&.request\&.options; 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$info\fP [optional] 
+.RE
+.PP
+&link\&.http\&.request\&.info; 
+.PP
+\fBReturns\fP
+.RS 4
+string &returns\&.http\&.response; 
+.RE
+.PP
+
+.SS "http_put_file ( $url,  $file = \fC\fBnull\fP\fP, array $options = \fC\fBnull\fP\fP, array & $info = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.10\&.0)
+.br
+ Perform PUT request with file \fBstring $url \fP URL 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$file\fP [optional] 
+.RE
+.PP
+The file to put 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+&link\&.http\&.request\&.options; 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$info\fP [optional] 
+.RE
+.PP
+&link\&.http\&.request\&.info; 
+.PP
+\fBReturns\fP
+.RS 4
+string &returns\&.http\&.response; 
+.RE
+.PP
+
+.SS "http_put_stream ( $url,  $stream = \fC\fBnull\fP\fP, array $options = \fC\fBnull\fP\fP, array & $info = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.10\&.0)
+.br
+ Perform PUT request with stream \fBstring $url \fP URL 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$stream\fP [optional] 
+.RE
+.PP
+The stream to read the PUT request body from 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+&link\&.http\&.request\&.options; 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$info\fP [optional] 
+.RE
+.PP
+&link\&.http\&.request\&.info; 
+.PP
+\fBReturns\fP
+.RS 4
+string &returns\&.http\&.response; 
+.RE
+.PP
+
+.SS "http_redirect ( $url = \fC\fBnull\fP\fP, array $params = \fC\fBnull\fP\fP,  $session = \fC\fBnull\fP\fP,  $status = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Issue HTTP redirect \fBstring $url [optional] \fP the URL to redirect to 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$params\fP [optional] 
+.RE
+.PP
+associative array of query parameters 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$session\fP [optional] 
+.RE
+.PP
+whether to append session information 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$status\fP [optional] 
+.RE
+.PP
+custom response status code 
+.PP
+\fBReturns\fP
+.RS 4
+void returns false or exits with the specified redirection status code 
+.RE
+.PP
+
+.SS "http_request ( $method,  $url = \fC\fBnull\fP\fP,  $body = \fC\fBnull\fP\fP, array $options = \fC\fBnull\fP\fP, array & $info = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 1\&.0\&.0)
+.br
+ Perform custom request \fBint $method \fP Request method 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$url\fP [optional] 
+.RE
+.PP
+URL 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$body\fP [optional] 
+.RE
+.PP
+Request body 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+&link\&.http\&.request\&.options; 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$info\fP [optional] 
+.RE
+.PP
+&link\&.http\&.request\&.info; 
+.PP
+\fBReturns\fP
+.RS 4
+string &returns\&.http\&.response; 
+.RE
+.PP
+
+.SS "http_request_body_encode (array $fields, array $files)"
+(PECL pecl_http >= 1\&.0\&.0)
+.br
+ Encode request body \fBarray $fields \fP POST fields 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$files\fP 
+.RE
+.PP
+POST files 
+.PP
+\fBReturns\fP
+.RS 4
+string|false encoded string on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_request_method_exists ( $method)"
+(PECL pecl_http >= 0\&.10\&.0)
+.br
+ Check whether request method exists \fBmixed $method \fP request method name or ID 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if the request method is known, else false\&. 
+.RE
+.PP
+
+.SS "http_request_method_name ( $method)"
+(PECL pecl_http >= 0\&.10\&.0)
+.br
+ Get request method name \fBint $method \fP request method ID 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the request method name as string on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_request_method_register ( $method)"
+(PECL pecl_http >= 0\&.10\&.0)
+.br
+ Register request method \fBstring $method \fP the request method name to register 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the ID of the request method on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_request_method_unregister ( $method)"
+(PECL pecl_http >= 0\&.10\&.0)
+.br
+ Unregister request method \fBmixed $method \fP The request method name or ID 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_send_content_disposition ( $filename,  $inline = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.10\&.0)
+.br
+ Send Content-Disposition \fBstring $filename \fP the file name the "Save as\&.\&.\&." dialog should display 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$inline\fP [optional] 
+.RE
+.PP
+if set to true and the user agent knows how to handle the content type, it will probably not cause the popup window to be shown 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_send_content_type ( $content_type = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.10\&.0)
+.br
+ Send Content-Type \fBstring $content_type [optional] \fP the desired content type (primary/secondary) 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_send_data ( $data)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Send arbitrary data \fBstring $data \fP data to send 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_send_file ( $file)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Send file \fBstring $file \fP the file to send 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_send_last_modified ( $timestamp = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Send Last-Modified \fBint $timestamp [optional] \fP a Unix timestamp, converted to a valid HTTP date; if omitted, the current time will be sent 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_send_status ( $status)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Send HTTP response status \fBint $status \fP HTTP status code (100-599) 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_send_stream ( $stream)"
+(PECL pecl_http >= 0\&.1\&.0)
+.br
+ Send stream \fBresource $stream \fP stream to read from (must be seekable) 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "http_support ( $feature = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.15\&.0)
+.br
+ Check built-in HTTP support \fBint $feature [optional] \fP feature to probe for 
+.PP
+\fBReturns\fP
+.RS 4
+int integer, whether requested feature is supported, or a bitmask with all supported features if feature was omitted\&. 
+.RE
+.PP
+
+.SS "http_throttle ( $sec = \fC\fBnull\fP\fP,  $bytes = \fC\fBnull\fP\fP)"
+(PECL pecl_http >= 0\&.10\&.0)
+.br
+ HTTP throttling \fBfloat $sec [optional] \fP seconds to sleep after each chunk sent 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bytes\fP [optional] 
+.RE
+.PP
+the chunk size in bytes 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "ob_deflatehandler ( $data,  $mode)"
+(PECL pecl_http >= 0\&.21\&.0)
+.br
+ Deflate output handler \fBstring $data  int $mode  string \fP
+.SS "ob_etaghandler ( $data,  $mode)"
+(PECL pecl_http >= 0\&.10\&.0)
+.br
+ ETag output handler \fBstring $data  int $mode  string \fP
+.SS "ob_inflatehandler ( $data,  $mode)"
+(PECL pecl_http >= 0\&.21\&.0)
+.br
+ Inflate output handler \fBstring $data  int $mode  string \fP
+.SH "Variable Documentation"
+.PP 
+.SS "const HTTP_AUTH_ANY \-1"
+try any authentication scheme \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_AUTH_BASIC 1"
+use "basic" authentication \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_AUTH_DIGEST 2"
+use "digest" authentication \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_AUTH_GSSNEG 4"
+use "GSS-NEGOTIATE" authentication \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_AUTH_NTLM 8"
+use "NTLM" authentication \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_COOKIE_HTTPONLY 32"
+whether "httpOnly" was found in the cookie's parameter list \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_COOKIE_PARSE_RAW 1"
+don't urldecode values \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_COOKIE_SECURE 16"
+whether "secure" was found in the cookie's parameters list \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_DEFLATE_LEVEL_DEF 0"
+
+.SS "const HTTP_DEFLATE_LEVEL_MAX 9"
+
+.SS "const HTTP_DEFLATE_LEVEL_MIN 1"
+
+.SS "const HTTP_DEFLATE_STRATEGY_DEF 0"
+
+.SS "const HTTP_DEFLATE_STRATEGY_FILT 256"
+
+.SS "const HTTP_DEFLATE_STRATEGY_FIXED 1024"
+
+.SS "const HTTP_DEFLATE_STRATEGY_HUFF 512"
+
+.SS "const HTTP_DEFLATE_STRATEGY_RLE 768"
+
+.SS "const HTTP_DEFLATE_TYPE_GZIP 16"
+
+.SS "const HTTP_DEFLATE_TYPE_RAW 32"
+
+.SS "const HTTP_DEFLATE_TYPE_ZLIB 0"
+
+.SS "const HTTP_E_ENCODING 7"
+encoding/decoding error \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_E_HEADER 3"
+\fBheader()\fP or similar operation failed \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_E_INVALID_PARAM 2"
+an invalid parameter was passed \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_E_MALFORMED_HEADERS 4"
+HTTP header parse error \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_E_MESSAGE_TYPE 6"
+with operation incompatible message type \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_E_QUERYSTRING 13"
+querystring operation failure \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_E_REQUEST 8"
+request failure \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_E_REQUEST_METHOD 5"
+unknown/invalid request method \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_E_REQUEST_POOL 9"
+request pool failure \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_E_RESPONSE 11"
+response failure \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_E_RUNTIME 1"
+runtime error \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_E_SOCKET 10"
+socket exception \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_E_URL 12"
+invalid URL \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_ENCODING_STREAM_FLUSH_FULL 2097152"
+full data flush \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_ENCODING_STREAM_FLUSH_NONE 0"
+don't flush \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_ENCODING_STREAM_FLUSH_SYNC 1048576"
+synchronized flush only \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_IPRESOLVE_ANY 0"
+use any IP mechanism only for name lookups \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_IPRESOLVE_V4 1"
+use IPv4 only for name lookups \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_IPRESOLVE_V6 2"
+use IPv6 only for name lookups \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_METH_ACL 27"
+
+.SS "const HTTP_METH_BASELINE_CONTROL 25"
+
+.SS "const HTTP_METH_CHECKIN 19"
+
+.SS "const HTTP_METH_CHECKOUT 18"
+
+.SS "const HTTP_METH_CONNECT 8"
+
+.SS "const HTTP_METH_COPY 12"
+
+.SS "const HTTP_METH_DELETE 5"
+
+.SS "const HTTP_METH_GET 1"
+
+.SS "const HTTP_METH_HEAD 2"
+
+.SS "const HTTP_METH_LABEL 23"
+
+.SS "const HTTP_METH_LOCK 14"
+
+.SS "const HTTP_METH_MERGE 24"
+
+.SS "const HTTP_METH_MKACTIVITY 26"
+
+.SS "const HTTP_METH_MKCOL 11"
+
+.SS "const HTTP_METH_MKWORKSPACE 21"
+
+.SS "const HTTP_METH_MOVE 13"
+
+.SS "const HTTP_METH_OPTIONS 6"
+
+.SS "const HTTP_METH_POST 3"
+
+.SS "const HTTP_METH_PROPFIND 9"
+
+.SS "const HTTP_METH_PROPPATCH 10"
+
+.SS "const HTTP_METH_PUT 4"
+
+.SS "const HTTP_METH_REPORT 17"
+
+.SS "const HTTP_METH_TRACE 7"
+
+.SS "const HTTP_METH_UNCHECKOUT 20"
+
+.SS "const HTTP_METH_UNLOCK 15"
+
+.SS "const HTTP_METH_UPDATE 22"
+
+.SS "const HTTP_METH_VERSION_CONTROL 16"
+
+.SS "const HTTP_MSG_NONE 0"
+the message is of no specific type \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_MSG_REQUEST 1"
+request style message \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_MSG_RESPONSE 2"
+response style message \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_PARAMS_ALLOW_COMMA 1"
+allow commands additionally to semicolons as separator \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_PARAMS_ALLOW_FAILURE 2"
+continue parsing after an error occurred \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_PARAMS_DEFAULT 7"
+all three values above, bitwise or'ed \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_PARAMS_RAISE_ERROR 4"
+raise PHP warnings on parse errors \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_PROXY_HTTP 0"
+standard HTTP proxy \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_PROXY_SOCKS4 4"
+the proxy is a SOCKS4 type proxy \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_PROXY_SOCKS5 5"
+the proxy is a SOCKS5 type proxy \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_QUERYSTRING_TYPE_ARRAY 4"
+
+.SS "const HTTP_QUERYSTRING_TYPE_BOOL 3"
+
+.SS "const HTTP_QUERYSTRING_TYPE_FLOAT 2"
+
+.SS "const HTTP_QUERYSTRING_TYPE_INT 1"
+
+.SS "const HTTP_QUERYSTRING_TYPE_OBJECT 5"
+
+.SS "const HTTP_QUERYSTRING_TYPE_STRING 6"
+
+.SS "const HTTP_REDIRECT 0"
+guess applicable redirect method \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_REDIRECT_FOUND 302"
+standard redirect (302 Found) RFC 1945 and RFC 2068 specify that the client is not allowed to change the method on the redirected request\&. However, most existing user agent implementations treat 302 as if it were a 303 response, performing a GET on the Location field-value regardless of the original request method\&. The status codes 303 and 307 have been added for servers that wish to make unambiguously clear which kind of reaction is expected of the client\&. \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_REDIRECT_PERM 301"
+permanent redirect (301 Moved permanently) \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_REDIRECT_POST 303"
+redirect applicable to POST requests (303 See other) \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_REDIRECT_PROXY 305"
+proxy redirect (305 Use proxy) \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_REDIRECT_TEMP 307"
+temporary redirect (307 Temporary Redirect) \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_SSL_VERSION_ANY 0"
+no specific SSL protocol version \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_SSL_VERSION_SSLv2 2"
+use SSLv2 only \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_SSL_VERSION_SSLv3 3"
+use SSLv3 only \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_SSL_VERSION_TLSv1 1"
+use TLSv1 only \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_SUPPORT 1"
+querying for this constant will always return true \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_SUPPORT_ENCODINGS 8"
+whether support for zlib encodings is given, ie\&. libz support was compiled in \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_SUPPORT_EVENTS 128"
+
+.SS "const HTTP_SUPPORT_MAGICMIME 4"
+whether support to guess the Content-Type of HTTP messages is given, ie\&. libmagic support was compiled in \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_SUPPORT_REQUESTS 2"
+whether support to issue HTTP requests is given, ie\&. libcurl support was compiled in \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_SUPPORT_SSLREQUESTS 32"
+whether support to issue HTTP requests over SSL is given, ie\&. linked libcurl was built with SSL support \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_URL_FROM_ENV 4096"
+
+.SS "const HTTP_URL_JOIN_PATH 1"
+join relative paths \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_URL_JOIN_QUERY 2"
+join query strings \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_URL_REPLACE 0"
+replace every part of the first URL when there's one of the second URL \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_URL_STRIP_ALL 492"
+strip anything but scheme and host \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_URL_STRIP_AUTH 12"
+strip any authentication information \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_URL_STRIP_FRAGMENT 256"
+strip any fragments (#identifier) \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_URL_STRIP_PASS 8"
+strip any password authentication information \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_URL_STRIP_PATH 64"
+strip complete path \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_URL_STRIP_PORT 32"
+strip explicit port numbers \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_URL_STRIP_QUERY 128"
+strip query string \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_URL_STRIP_USER 4"
+strip any user authentication information \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_VERSION_1_0 1"
+HTTP version 1\&.0 \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_VERSION_1_1 2"
+HTTP version 1\&.1 \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_VERSION_ANY 0"
+no specific HTTP protocol version \fBhttps://php\&.net/manual/en/http\&.constants\&.php\fP
+.SS "const HTTP_VERSION_NONE 0"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,288 @@
+\hypertarget{rrd_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/rrd/rrd.php File Reference}
+\label{rrd_8php}\index{vendor/jetbrains/phpstorm-\/stubs/rrd/rrd.php@{vendor/jetbrains/phpstorm-\/stubs/rrd/rrd.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_r_r_d_creator}{R\+R\+D\+Creator}}
+\item 
+class \mbox{\hyperlink{class_r_r_d_graph}{R\+R\+D\+Graph}}
+\item 
+class \mbox{\hyperlink{class_r_r_d_updater}{R\+R\+D\+Updater}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{rrd_8php_a203a7527a5f99f0d25dafb2ea16fead2}{rrd\+\_\+error}} ()
+\item 
+\mbox{\hyperlink{rrd_8php_a653c44cdb9b52375e4aace72c44c7af6}{rrd\+\_\+create}} (\$filename, \$options)
+\item 
+\mbox{\hyperlink{rrd_8php_aea750eaef6eae78c38b0e302bb768b7e}{rrd\+\_\+fetch}} (\$filename, \$options)
+\item 
+\mbox{\hyperlink{rrd_8php_a6d441f67ba626a206d19150d046738ed}{rrd\+\_\+first}} (\$\mbox{\hyperlink{standard__5_8php_ac0d353a97d1662c811425338985026b1}{file}}, \$raaindex=0)
+\item 
+\mbox{\hyperlink{rrd_8php_a933e8e0506e23c8b56eafdb9af22aad0}{rrd\+\_\+graph}} (\$filename, \$options)
+\item 
+\mbox{\hyperlink{rrd_8php_a061f52da987b223457ccc77397947271}{rrd\+\_\+info}} (\$filename)
+\item 
+\mbox{\hyperlink{rrd_8php_aaa26d4448b40305b78f6c0cc995cc3ce}{rrd\+\_\+last}} (\$filename)
+\item 
+\mbox{\hyperlink{rrd_8php_afdcc7e17d91375ec4bea8eaca11d834e}{rrd\+\_\+lastupdate}} (\$filename)
+\item 
+\mbox{\hyperlink{rrd_8php_ac5b2fe8cbc93d0ab2eb76631fcdd9760}{rrd\+\_\+restore}} (\$xml\+\_\+file, \$rrd\+\_\+file, \$options=array())
+\item 
+\mbox{\hyperlink{rrd_8php_ab9db1b7202c25b77123fdffcef1ba9e0}{rrd\+\_\+tune}} (\$filename, \$options)
+\item 
+\mbox{\hyperlink{rrd_8php_a1d9ff169ba8dfb167ee750e46223a595}{rrd\+\_\+update}} (\$filename, \$options)
+\item 
+\mbox{\hyperlink{rrd_8php_a6e75c36d98a52f995244d9a437a7f36a}{rrd\+\_\+version}} ()
+\item 
+\mbox{\hyperlink{rrd_8php_a7c054b2c31b3f7fcb57a7a06c4f36db8}{rrd\+\_\+xport}} (\$options)
+\item 
+\mbox{\hyperlink{rrd_8php_a56e4728335b017f187c52bbd7cbe6d14}{rrd\+\_\+disconnect}} ()
+\item 
+\mbox{\hyperlink{rrd_8php_aa7b4210652efc0ff7eb1abf5da896579}{rrdc\+\_\+disconnect}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rrd_8php_a653c44cdb9b52375e4aace72c44c7af6}\label{rrd_8php_a653c44cdb9b52375e4aace72c44c7af6}} 
+\index{rrd.php@{rrd.php}!rrd\_create@{rrd\_create}}
+\index{rrd\_create@{rrd\_create}!rrd.php@{rrd.php}}
+\doxysubsubsection{\texorpdfstring{rrd\_create()}{rrd\_create()}}
+{\footnotesize\ttfamily rrd\+\_\+create (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$options }\end{DoxyParamCaption})}
+
+Creates rrd database file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} Filename for newly created rrd file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+Options for rrd create -\/ list of strings. See man page of rrd create for whole list of options. 
+
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE on success or F\+A\+L\+SE on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+P\+E\+CL rrd $>$= 0.\+9.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{rrd_8php_a56e4728335b017f187c52bbd7cbe6d14}\label{rrd_8php_a56e4728335b017f187c52bbd7cbe6d14}} 
+\index{rrd.php@{rrd.php}!rrd\_disconnect@{rrd\_disconnect}}
+\index{rrd\_disconnect@{rrd\_disconnect}!rrd.php@{rrd.php}}
+\doxysubsubsection{\texorpdfstring{rrd\_disconnect()}{rrd\_disconnect()}}
+{\footnotesize\ttfamily rrd\+\_\+disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Close any outstanding connection to rrd caching daemon 
+
+This function is automatically called when the whole P\+HP process is terminated. It depends on used S\+A\+PI. For example, it\textquotesingle{}s called automatically at the end of command line script.
+
+It\textquotesingle{}s up user whether he wants to call this function at the end of every request or otherwise.
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{void  P\+E\+CL rrd $>$= 1.\+1.\+2 }}\mbox{\Hypertarget{rrd_8php_a203a7527a5f99f0d25dafb2ea16fead2}\label{rrd_8php_a203a7527a5f99f0d25dafb2ea16fead2}} 
+\index{rrd.php@{rrd.php}!rrd\_error@{rrd\_error}}
+\index{rrd\_error@{rrd\_error}!rrd.php@{rrd.php}}
+\doxysubsubsection{\texorpdfstring{rrd\_error()}{rrd\_error()}}
+{\footnotesize\ttfamily rrd\+\_\+error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stubs for P\+E\+C\+L/rrd extension Description taken from official documenation \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{Olegs Capligins \href{mailto:shader@dautkom.lv}{\texttt{ shader@dautkom.\+lv}} Returns latest global rrd error message.  \href{https://php.net/manual/en/function.rrd-error.php}{\texttt{ https\+://php.\+net/manual/en/function.\+rrd-\/error.\+php}}  string Latest error message.  P\+E\+CL rrd $>$= 0.\+9.\+0 }}\mbox{\Hypertarget{rrd_8php_aea750eaef6eae78c38b0e302bb768b7e}\label{rrd_8php_aea750eaef6eae78c38b0e302bb768b7e}} 
+\index{rrd.php@{rrd.php}!rrd\_fetch@{rrd\_fetch}}
+\index{rrd\_fetch@{rrd\_fetch}!rrd.php@{rrd.php}}
+\doxysubsubsection{\texorpdfstring{rrd\_fetch()}{rrd\_fetch()}}
+{\footnotesize\ttfamily rrd\+\_\+fetch (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$options }\end{DoxyParamCaption})}
+
+Gets data for graph output from R\+RD database file as array. This function has same result as \mbox{\hyperlink{rrd_8php_a933e8e0506e23c8b56eafdb9af22aad0}{rrd\+\_\+graph()}}, but fetched data are returned as array, no image file is created. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} R\+RD database file name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+Array of options for resolution specification. 
+
+\begin{DoxyReturn}{Returns}
+array Array with information about retrieved graph data. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+P\+E\+CL rrd $>$= 0.\+9.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{rrd_8php_a6d441f67ba626a206d19150d046738ed}\label{rrd_8php_a6d441f67ba626a206d19150d046738ed}} 
+\index{rrd.php@{rrd.php}!rrd\_first@{rrd\_first}}
+\index{rrd\_first@{rrd\_first}!rrd.php@{rrd.php}}
+\doxysubsubsection{\texorpdfstring{rrd\_first()}{rrd\_first()}}
+{\footnotesize\ttfamily rrd\+\_\+first (\begin{DoxyParamCaption}\item[{}]{\$file,  }\item[{}]{\$raaindex = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Gets the timestamp of the first sample from from the specified R\+RA of the R\+RD file. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$file }} R\+RD database file name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$raaindex} & \\
+\hline
+\end{DoxyParams}
+The index number of the R\+RA that is to be examined. Default value is 0. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false Integer as unix timestamp, F\+A\+L\+SE if some error occurs. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+P\+E\+CL rrd $>$= 0.\+9.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{rrd_8php_a933e8e0506e23c8b56eafdb9af22aad0}\label{rrd_8php_a933e8e0506e23c8b56eafdb9af22aad0}} 
+\index{rrd.php@{rrd.php}!rrd\_graph@{rrd\_graph}}
+\index{rrd\_graph@{rrd\_graph}!rrd.php@{rrd.php}}
+\doxysubsubsection{\texorpdfstring{rrd\_graph()}{rrd\_graph()}}
+{\footnotesize\ttfamily rrd\+\_\+graph (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$options }\end{DoxyParamCaption})}
+
+Creates image from a data. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} The filename to output the graph to. This will generally end in either .png, .svg or .eps, depending on the format you want to output. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+Options for generating image. See man page of rrd graph for all possible options. All options (data definitions, variable defintions, etc.) are allowed. 
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false If image is created successfully an array with information about generated image is returned, F\+A\+L\+SE when error occurs. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+P\+E\+CL rrd $>$= 0.\+9.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{rrd_8php_a061f52da987b223457ccc77397947271}\label{rrd_8php_a061f52da987b223457ccc77397947271}} 
+\index{rrd.php@{rrd.php}!rrd\_info@{rrd\_info}}
+\index{rrd\_info@{rrd\_info}!rrd.php@{rrd.php}}
+\doxysubsubsection{\texorpdfstring{rrd\_info()}{rrd\_info()}}
+{\footnotesize\ttfamily rrd\+\_\+info (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+Returns information about particular R\+RD database file. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} R\+RD database file name. 
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false Array with information about requsted R\+RD file, F\+A\+L\+SE when error occurs. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+P\+E\+CL rrd $>$= 0.\+9.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{rrd_8php_aaa26d4448b40305b78f6c0cc995cc3ce}\label{rrd_8php_aaa26d4448b40305b78f6c0cc995cc3ce}} 
+\index{rrd.php@{rrd.php}!rrd\_last@{rrd\_last}}
+\index{rrd\_last@{rrd\_last}!rrd.php@{rrd.php}}
+\doxysubsubsection{\texorpdfstring{rrd\_last()}{rrd\_last()}}
+{\footnotesize\ttfamily rrd\+\_\+last (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+Returns the U\+N\+IX timestamp of the most recent update of the R\+RD database. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} R\+RD database file name. 
+
+\begin{DoxyReturn}{Returns}
+int Integer as unix timestamp of the most recent data from the R\+RD database. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+P\+E\+CL rrd $>$= 0.\+9.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{rrd_8php_afdcc7e17d91375ec4bea8eaca11d834e}\label{rrd_8php_afdcc7e17d91375ec4bea8eaca11d834e}} 
+\index{rrd.php@{rrd.php}!rrd\_lastupdate@{rrd\_lastupdate}}
+\index{rrd\_lastupdate@{rrd\_lastupdate}!rrd.php@{rrd.php}}
+\doxysubsubsection{\texorpdfstring{rrd\_lastupdate()}{rrd\_lastupdate()}}
+{\footnotesize\ttfamily rrd\+\_\+lastupdate (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+Gets array of the U\+N\+IX timestamp and the values stored for each date in the most recent update of the R\+RD database file. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} R\+RD database file name. 
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false Array of information about last update, F\+A\+L\+SE when error occurs. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+P\+E\+CL rrd $>$= 0.\+9.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{rrd_8php_ac5b2fe8cbc93d0ab2eb76631fcdd9760}\label{rrd_8php_ac5b2fe8cbc93d0ab2eb76631fcdd9760}} 
+\index{rrd.php@{rrd.php}!rrd\_restore@{rrd\_restore}}
+\index{rrd\_restore@{rrd\_restore}!rrd.php@{rrd.php}}
+\doxysubsubsection{\texorpdfstring{rrd\_restore()}{rrd\_restore()}}
+{\footnotesize\ttfamily rrd\+\_\+restore (\begin{DoxyParamCaption}\item[{}]{\$xml\+\_\+file,  }\item[{}]{\$rrd\+\_\+file,  }\item[{}]{\$options = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Restores the R\+RD file from the X\+ML dump. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$xml\+\_\+file }} X\+ML filename with the dump of the original R\+RD database file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$rrd\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+Restored R\+RD database file name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+Array of options for restoring. See man page for rrd restore. 
+
+\begin{DoxyReturn}{Returns}
+bool Returns T\+R\+UE on success, F\+A\+L\+SE otherwise. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+P\+E\+CL rrd $>$= 0.\+9.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{rrd_8php_ab9db1b7202c25b77123fdffcef1ba9e0}\label{rrd_8php_ab9db1b7202c25b77123fdffcef1ba9e0}} 
+\index{rrd.php@{rrd.php}!rrd\_tune@{rrd\_tune}}
+\index{rrd\_tune@{rrd\_tune}!rrd.php@{rrd.php}}
+\doxysubsubsection{\texorpdfstring{rrd\_tune()}{rrd\_tune()}}
+{\footnotesize\ttfamily rrd\+\_\+tune (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$options }\end{DoxyParamCaption})}
+
+Change some options in the R\+RD dabase header file. E.\+g. renames the source for the data etc. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} R\+RD database file name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+Options with R\+RD database file properties which will be changed. See rrd tune man page for details. 
+
+\begin{DoxyReturn}{Returns}
+bool Returns T\+R\+UE on success, F\+A\+L\+SE otherwise. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+P\+E\+CL rrd $>$= 0.\+9.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{rrd_8php_a1d9ff169ba8dfb167ee750e46223a595}\label{rrd_8php_a1d9ff169ba8dfb167ee750e46223a595}} 
+\index{rrd.php@{rrd.php}!rrd\_update@{rrd\_update}}
+\index{rrd\_update@{rrd\_update}!rrd.php@{rrd.php}}
+\doxysubsubsection{\texorpdfstring{rrd\_update()}{rrd\_update()}}
+{\footnotesize\ttfamily rrd\+\_\+update (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$options }\end{DoxyParamCaption})}
+
+Updates the R\+RD database file. The input data is time interpolated according to the properties of the R\+RD database file. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} R\+RD database file name. This database will be updated. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+Options for updating the R\+RD database. This is list of strings. See man page of rrd update for whole list of options. 
+
+\begin{DoxyReturn}{Returns}
+bool Updates the R\+RD database file. The input data is time interpolated according to the properties of the R\+RD database file. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+P\+E\+CL rrd $>$= 0.\+9.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{rrd_8php_a6e75c36d98a52f995244d9a437a7f36a}\label{rrd_8php_a6e75c36d98a52f995244d9a437a7f36a}} 
+\index{rrd.php@{rrd.php}!rrd\_version@{rrd\_version}}
+\index{rrd\_version@{rrd\_version}!rrd.php@{rrd.php}}
+\doxysubsubsection{\texorpdfstring{rrd\_version()}{rrd\_version()}}
+{\footnotesize\ttfamily rrd\+\_\+version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns information about underlying rrdtool library. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string String with rrdtool version number e.\+g. \char`\"{}1.\+4.\+3\char`\"{}.  P\+E\+CL rrd $>$= 1.\+0.\+0 }}\mbox{\Hypertarget{rrd_8php_a7c054b2c31b3f7fcb57a7a06c4f36db8}\label{rrd_8php_a7c054b2c31b3f7fcb57a7a06c4f36db8}} 
+\index{rrd.php@{rrd.php}!rrd\_xport@{rrd\_xport}}
+\index{rrd\_xport@{rrd\_xport}!rrd.php@{rrd.php}}
+\doxysubsubsection{\texorpdfstring{rrd\_xport()}{rrd\_xport()}}
+{\footnotesize\ttfamily rrd\+\_\+xport (\begin{DoxyParamCaption}\item[{}]{\$options }\end{DoxyParamCaption})}
+
+Exports the information about R\+RD database file. This data can be converted to X\+ML file via user space P\+HP script and then restored back as R\+RD database file. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array \$options }} Array of options for the export, see rrd xport man page. 
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false Array with information about R\+RD database file, F\+A\+L\+SE when error occurs. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+P\+E\+CL rrd $>$= 0.\+9.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{rrd_8php_aa7b4210652efc0ff7eb1abf5da896579}\label{rrd_8php_aa7b4210652efc0ff7eb1abf5da896579}} 
+\index{rrd.php@{rrd.php}!rrdc\_disconnect@{rrdc\_disconnect}}
+\index{rrdc\_disconnect@{rrdc\_disconnect}!rrd.php@{rrd.php}}
+\doxysubsubsection{\texorpdfstring{rrdc\_disconnect()}{rrdc\_disconnect()}}
+{\footnotesize\ttfamily rrdc\+\_\+disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Close any outstanding connection to rrd caching daemon. This function is automatically called when the whole P\+HP process is terminated. It depends on used S\+A\+PI. For example, it\textquotesingle{}s called automatically at the end of command line script. It\textquotesingle{}s up user whether he wants to call this function at the end of every request or otherwise. 

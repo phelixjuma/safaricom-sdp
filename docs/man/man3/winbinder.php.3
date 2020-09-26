@@ -1,0 +1,3265 @@
+.TH "vendor/jetbrains/phpstorm-stubs/winbinder/winbinder.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/winbinder/winbinder.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBwb_main_loop\fP ()"
+.br
+.ti -1c
+.RI "\fBwb_find_file\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBwb_message_box\fP ($parent, $message, $title=\fBnull\fP, $style=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_play_sound\fP ($source, $command=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_stop_sound\fP ($command=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_exec\fP ($command, $param=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_get_system_info\fP ($info)"
+.br
+.ti -1c
+.RI "\fBwb_get_registry_key\fP ($\fBkey\fP, $subkey, $entry=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_set_registry_key\fP ($\fBkey\fP, $subkey, $entry=\fBnull\fP, $value=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_create_timer\fP ($window, $id, $interval)"
+.br
+.ti -1c
+.RI "\fBwb_wait\fP ($window=\fBnull\fP, $pause=\fBnull\fP, $flags=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_destroy_timer\fP ($window, $id)"
+.br
+.ti -1c
+.RI "\fBwb_load_image\fP ($filename, $index=\fBnull\fP, $param=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_save_image\fP ($image, $filename)"
+.br
+.ti -1c
+.RI "\fBwb_create_image\fP ($width=0, $height=0, $dibbmi=\fBnull\fP, $dibbits=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_create_mask\fP ($bitmap, $transparent_color)"
+.br
+.ti -1c
+.RI "\fBwb_destroy_image\fP ($image)"
+.br
+.ti -1c
+.RI "\fBwb_get_image_data\fP ($image, $compress4to3)"
+.br
+.ti -1c
+.RI "\fBwb_get_pixel\fP ($source, $xpos, $ypos)"
+.br
+.ti -1c
+.RI "\fBwb_draw_point\fP ($source, $xpos, $ypos, $color)"
+.br
+.ti -1c
+.RI "\fBwb_draw_line\fP ($target, $x0, $y0, $x1, $y1, $color, $linewidth=\fBnull\fP, $linestyle=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_draw_rect\fP ($target, $xpos, $ypos, $width, $height, $color, $filled=\fBnull\fP, $linewidth=\fBnull\fP, $linestyle=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_draw_ellipse\fP ($target, $xpos, $ypos, $width, $height, $color, $filled=\fBnull\fP, $linewidth=\fBnull\fP, $linestyle=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_draw_text\fP ($target, $text, $xpos, $ypos, $width=\fBnull\fP, $height=\fBnull\fP, $font=\fBnull\fP, $flags=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_draw_image\fP ($target, $bitmap, $xpos=0, $ypos=0, $width=\fBnull\fP, $height=\fBnull\fP, $transparentcolor=\fBnull\fP, $xoffset=\fBnull\fP, $yoffset=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_destroy_control\fP ($control)"
+.br
+.ti -1c
+.RI "\fBwb_get_value\fP ($wbobject, $item=\-1, $subitem=\-1)"
+.br
+.ti -1c
+.RI "\fBwb_refresh\fP ($wbobject, $now=\fBnull\fP, $xpos=\fBnull\fP, $ypos=\fBnull\fP, $width=\fBnull\fP, $height=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_set_enabled\fP ($control, $enabled)"
+.br
+.ti -1c
+.RI "\fBwb_set_image\fP ($wbobject, $source, $transparentcolor=\fBnull\fP, $index=\fBnull\fP, $param=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_set_item_image\fP ($wbobject, $index, $item=\fBnull\fP, $subitem=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_delete_items\fP ($ctrl, $items=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_get_class\fP ($wbobject)"
+.br
+.ti -1c
+.RI "\fBwb_get_control\fP ($wbobject, $id)"
+.br
+.ti -1c
+.RI "\fBwb_get_enabled\fP ($wbobject)"
+.br
+.ti -1c
+.RI "\fBwb_get_focus\fP ()"
+.br
+.ti -1c
+.RI "\fBwb_get_id\fP ($wbobject)"
+.br
+.ti -1c
+.RI "\fBwb_get_item_count\fP ($wbobject)"
+.br
+.ti -1c
+.RI "\fBwb_get_parent\fP ($wbobject, $item=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_get_selected\fP ($wbobject)"
+.br
+.ti -1c
+.RI "\fBwb_get_state\fP ($wbobject, $item=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_get_visible\fP ($wbobject)"
+.br
+.ti -1c
+.RI "\fBwb_set_cursor\fP ($wbobject, $source)"
+.br
+.ti -1c
+.RI "\fBwb_set_focus\fP ($wbobject)"
+.br
+.ti -1c
+.RI "\fBwb_set_handler\fP ($window, $fn_handler)"
+.br
+.ti -1c
+.RI "\fBwb_set_location\fP ($wbobject, $location)"
+.br
+.ti -1c
+.RI "\fBwb_set_range\fP ($control, $vmin, $vmax)"
+.br
+.ti -1c
+.RI "\fBwb_set_state\fP ($wbobject, $item, $state)"
+.br
+.ti -1c
+.RI "\fBwb_set_style\fP ($wbobject, $style, $set)"
+.br
+.ti -1c
+.RI "\fBwb_set_visible\fP ($wbobject, $visible)"
+.br
+.ti -1c
+.RI "\fBwb_sort\fP ($control, $ascending=\fBnull\fP, $subitem=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_get_level\fP ($wbobject, $item)"
+.br
+.ti -1c
+.RI "\fBwb_create_font\fP ($name, $height, $color=\fBnull\fP, $flags=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_destroy_font\fP ($nfont)"
+.br
+.ti -1c
+.RI "\fBwb_set_font\fP ($control, $font=\fBnull\fP, $redraw=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_get_address\fP ($var)"
+.br
+.ti -1c
+.RI "\fBwb_send_message\fP ($wbobject, $message, $wparam=0, $lparam=0)"
+.br
+.ti -1c
+.RI "\fBwb_peek\fP ($address, $length=0)"
+.br
+.ti -1c
+.RI "\fBwb_poke\fP ($address, $contents, $length=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_load_library\fP ($libname)"
+.br
+.ti -1c
+.RI "\fBwb_release_library\fP ($idlib)"
+.br
+.ti -1c
+.RI "\fBwb_get_function_address\fP ($fname, $idlib)"
+.br
+.ti -1c
+.RI "\fBwb_call_function\fP ($address, $args=[])"
+.br
+.ti -1c
+.RI "\fBwb_get_midi_callback\fP ()"
+.br
+.ti -1c
+.RI "\fBwb_get_enum_callback\fP ()"
+.br
+.ti -1c
+.RI "\fBwb_get_hook_callback\fP ()"
+.br
+.ti -1c
+.RI "\fBwb_destroy_window\fP ($window)"
+.br
+.ti -1c
+.RI "\fBwb_get_size\fP ($object, $param=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_set_size\fP ($wbobject, $width, $height=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_set_position\fP ($wbobject, $xpos=\fBnull\fP, $ypos=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_get_position\fP ($wbobject, $clientarea=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_create_window\fP ($parent, $wclass, $caption=\fBnull\fP, $xpos=\fBnull\fP, $ypos=\fBnull\fP, $width=\fBnull\fP, $height=\fBnull\fP, $style=\fBnull\fP, $param=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_get_instance\fP ($caption, $bringtofront=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_get_item_list\fP ($wbobject)"
+.br
+.ti -1c
+.RI "\fBwb_set_area\fP ($window, $type, $x=\fBnull\fP, $y=\fBnull\fP, $width=\fBnull\fP, $height=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_sys_dlg_path\fP ($parent, $title=\fBnull\fP, $path=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwb_sys_dlg_color\fP ($parent, $title=\fBnull\fP, $color=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwbtemp_set_accel_table\fP ($parent, $accels)"
+.br
+.ti -1c
+.RI "\fBwbtemp_create_control\fP ($parent, $\fBclass\fP, $caption, $xpos, $ypos, $width, $height, $id, $style, $lparam, $ntab)"
+.br
+.ti -1c
+.RI "\fBwbtemp_create_item\fP ($ctrl, $str)"
+.br
+.ti -1c
+.RI "\fBwbtemp_create_statusbar_items\fP ($ctrl, $items, $clear, $param)"
+.br
+.ti -1c
+.RI "\fBwbtemp_get_text\fP ($ctrl, $item=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwbtemp_set_text\fP ($ctrl, $text, $item)"
+.br
+.ti -1c
+.RI "\fBwbtemp_select_tab\fP ($ctrl, $selitems)"
+.br
+.ti -1c
+.RI "\fBwbtemp_set_value\fP ($ctrl, $value, $item=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwbtemp_create_listview_item\fP ($ctrl, $item, $image, $value)"
+.br
+.ti -1c
+.RI "\fBwbtemp_set_listview_item_checked\fP ($ctrl, $index, $value)"
+.br
+.ti -1c
+.RI "\fBwbtemp_get_listview_item_checked\fP ($ctrl, $item)"
+.br
+.ti -1c
+.RI "\fBwbtemp_set_listview_item_text\fP ($ctrl, $item, $subitem, $text)"
+.br
+.ti -1c
+.RI "\fBwbtemp_get_listview_text\fP ($ctrl, $item)"
+.br
+.ti -1c
+.RI "\fBwbtemp_get_listview_columns\fP ($ctrl)"
+.br
+.ti -1c
+.RI "\fBwbtemp_create_listview_column\fP ($ctrl, $\fBi\fP, $text, $width, $align)"
+.br
+.ti -1c
+.RI "\fBwbtemp_clear_listview_columns\fP ($ctrl)"
+.br
+.ti -1c
+.RI "\fBwbtemp_select_listview_item\fP ($ctrl, $item, $selected)"
+.br
+.ti -1c
+.RI "\fBwbtemp_select_all_listview_items\fP ($ctrl, $bool)"
+.br
+.ti -1c
+.RI "\fBwbtemp_create_menu\fP ($parent, $caption)"
+.br
+.ti -1c
+.RI "\fBwbtemp_get_menu_item_checked\fP ($ctrl, $item)"
+.br
+.ti -1c
+.RI "\fBwbtemp_set_menu_item_checked\fP ($ctrl, $selitems, $selected)"
+.br
+.ti -1c
+.RI "\fBwbtemp_set_menu_item_selected\fP ($ctrl, $item, $selected)"
+.br
+.ti -1c
+.RI "\fBwbtemp_set_menu_item_image\fP ($ctrl, $item, $imageHandle)"
+.br
+.ti -1c
+.RI "\fBwbtemp_create_toolbar\fP ($parent, $caption, $width, $height, $lparam)"
+.br
+.ti -1c
+.RI "\fBwbtemp_create_treeview_item\fP ($ctrl, $name, $value, $where=0, $image_index=0, $selected_image=0, $selected_image_index=0)"
+.br
+.ti -1c
+.RI "\fBwbtemp_set_treeview_item_selected\fP ($ctrl, $selitems)"
+.br
+.ti -1c
+.RI "\fBwbtemp_set_treeview_item_text\fP ($ctrl, $item, $text)"
+.br
+.ti -1c
+.RI "\fBwbtemp_set_treeview_item_value\fP ($ctrl, $item, $value)"
+.br
+.ti -1c
+.RI "\fBwbtemp_get_treeview_item_text\fP ($ctrl, $item)"
+.br
+.ti -1c
+.RI "\fBwbtemp_sys_dlg_open\fP ($parent, $title=\fBnull\fP, $filter=\fBnull\fP, $path=\fBnull\fP, $flags=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBwbtemp_sys_dlg_save\fP ($wbObj, $title='', $filter='', $path='', $filename='', $defext='')"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBAppWindow\fP 1"
+.br
+.ti -1c
+.RI "const \fBModalDialog\fP 2"
+.br
+.ti -1c
+.RI "const \fBModelessDialog\fP 3"
+.br
+.ti -1c
+.RI "const \fBNakedWindow\fP 4"
+.br
+.ti -1c
+.RI "const \fBPopupWindow\fP 5"
+.br
+.ti -1c
+.RI "const \fBResizableWindow\fP 6"
+.br
+.ti -1c
+.RI "const \fBToolDialog\fP 7"
+.br
+.ti -1c
+.RI "const \fBAccel\fP 8"
+.br
+.ti -1c
+.RI "const \fBCalendar\fP 9"
+.br
+.ti -1c
+.RI "const \fBCheckBox\fP 10"
+.br
+.ti -1c
+.RI "const \fBComboBox\fP 11"
+.br
+.ti -1c
+.RI "const \fBEditBox\fP 12"
+.br
+.ti -1c
+.RI "const \fBFrame\fP 13"
+.br
+.ti -1c
+.RI "const \fBGauge\fP 14"
+.br
+.ti -1c
+.RI "const \fBHTMLControl\fP 15"
+.br
+.ti -1c
+.RI "const \fBHyperLink\fP 16"
+.br
+.ti -1c
+.RI "const \fBImageButton\fP 17"
+.br
+.ti -1c
+.RI "const \fBInvisibleArea\fP 18"
+.br
+.ti -1c
+.RI "const \fBLabel\fP 19"
+.br
+.ti -1c
+.RI "const \fBListBox\fP 20"
+.br
+.ti -1c
+.RI "const \fBListView\fP 21"
+.br
+.ti -1c
+.RI "const \fBMenu\fP 22"
+.br
+.ti -1c
+.RI "const \fBPushButton\fP 23"
+.br
+.ti -1c
+.RI "const \fBRTFEditBox\fP 24"
+.br
+.ti -1c
+.RI "const \fBRadioButton\fP 25"
+.br
+.ti -1c
+.RI "const \fBScrollBar\fP 26"
+.br
+.ti -1c
+.RI "const \fBSlider\fP 27"
+.br
+.ti -1c
+.RI "const \fBSpinner\fP 28"
+.br
+.ti -1c
+.RI "const \fBStatusBar\fP 29"
+.br
+.ti -1c
+.RI "const \fBTabControl\fP 30"
+.br
+.ti -1c
+.RI "const \fBToolBar\fP 31"
+.br
+.ti -1c
+.RI "const \fBTreeView\fP 32"
+.br
+.ti -1c
+.RI "const \fBTimer\fP Timer"
+.br
+.ti -1c
+.RI "const \fBWBC_VERSION\fP '2010\&.10\&.14'"
+.br
+.ti -1c
+.RI "const \fBWBC_BORDER\fP 8"
+.br
+.ti -1c
+.RI "const \fBWBC_BOTTOM\fP 8192"
+.br
+.ti -1c
+.RI "const \fBWBC_CENTER\fP 2048"
+.br
+.ti -1c
+.RI "const \fBWBC_CHECKBOXES\fP 65536"
+.br
+.ti -1c
+.RI "const \fBWBC_CUSTOMDRAW\fP 268435456"
+.br
+.ti -1c
+.RI "const \fBWBC_DEFAULTPOS\fP \-2147483648"
+.br
+.ti -1c
+.RI "const \fBWBC_DISABLED\fP 2"
+.br
+.ti -1c
+.RI "const \fBWBC_ELLIPSIS\fP 131072"
+.br
+.ti -1c
+.RI "const \fBWBC_ENABLED\fP 0"
+.br
+.ti -1c
+.RI "const \fBWBC_GROUP\fP 524288"
+.br
+.ti -1c
+.RI "const \fBWBC_IMAGE\fP 4"
+.br
+.ti -1c
+.RI "const \fBWBC_INVISIBLE\fP 1"
+.br
+.ti -1c
+.RI "const \fBWBC_LEFT\fP 0"
+.br
+.ti -1c
+.RI "const \fBWBC_LINES\fP 128"
+.br
+.ti -1c
+.RI "const \fBWBC_MASKED\fP 256"
+.br
+.ti -1c
+.RI "const \fBWBC_MIDDLE\fP 0"
+.br
+.ti -1c
+.RI "const \fBWBC_MULTILINE\fP 128"
+.br
+.ti -1c
+.RI "const \fBWBC_NOTIFY\fP 16"
+.br
+.ti -1c
+.RI "const \fBWBC_NUMBER\fP 1024"
+.br
+.ti -1c
+.RI "const \fBWBC_READONLY\fP 64"
+.br
+.ti -1c
+.RI "const \fBWBC_RIGHT\fP 32"
+.br
+.ti -1c
+.RI "const \fBWBC_SINGLE\fP 1048576"
+.br
+.ti -1c
+.RI "const \fBWBC_SORT\fP 262144"
+.br
+.ti -1c
+.RI "const \fBWBC_TASKBAR\fP 512"
+.br
+.ti -1c
+.RI "const \fBWBC_AUTOREPEAT\fP 512"
+.br
+.ti -1c
+.RI "const \fBWBC_TOP\fP 4096"
+.br
+.ti -1c
+.RI "const \fBWBC_VISIBLE\fP 0"
+.br
+.ti -1c
+.RI "const \fBWBC_TRANSPARENT\fP 536870912"
+.br
+.ti -1c
+.RI "const \fBWBC_DEFAULT\fP 8"
+.br
+.ti -1c
+.RI "const \fBWBC_MULTISELECT\fP 1073741824"
+.br
+.ti -1c
+.RI "const \fBWBC_NOHEADER\fP 268435456"
+.br
+.ti -1c
+.RI "const \fBWBC_DBLCLICK\fP 64"
+.br
+.ti -1c
+.RI "const \fBWBC_MOUSEMOVE\fP 128"
+.br
+.ti -1c
+.RI "const \fBWBC_MOUSEDOWN\fP 256"
+.br
+.ti -1c
+.RI "const \fBWBC_MOUSEUP\fP 512"
+.br
+.ti -1c
+.RI "const \fBWBC_KEYDOWN\fP 1024"
+.br
+.ti -1c
+.RI "const \fBWBC_KEYUP\fP 2048"
+.br
+.ti -1c
+.RI "const \fBWBC_GETFOCUS\fP 4096"
+.br
+.ti -1c
+.RI "const \fBWBC_RESIZE\fP 8192"
+.br
+.ti -1c
+.RI "const \fBWBC_REDRAW\fP 16384"
+.br
+.ti -1c
+.RI "const \fBWBC_HEADERSEL\fP 32768"
+.br
+.ti -1c
+.RI "const \fBWBC_ALT\fP 32"
+.br
+.ti -1c
+.RI "const \fBWBC_CONTROL\fP 8"
+.br
+.ti -1c
+.RI "const \fBWBC_SHIFT\fP 4"
+.br
+.ti -1c
+.RI "const \fBWBC_LBUTTON\fP 1"
+.br
+.ti -1c
+.RI "const \fBWBC_MBUTTON\fP 16"
+.br
+.ti -1c
+.RI "const \fBWBC_RBUTTON\fP 2"
+.br
+.ti -1c
+.RI "const \fBWBC_BEEP\fP \-1"
+.br
+.ti -1c
+.RI "const \fBWBC_INFO\fP 64"
+.br
+.ti -1c
+.RI "const \fBWBC_OK\fP 0"
+.br
+.ti -1c
+.RI "const \fBWBC_OKCANCEL\fP 33"
+.br
+.ti -1c
+.RI "const \fBWBC_QUESTION\fP 32"
+.br
+.ti -1c
+.RI "const \fBWBC_STOP\fP 16"
+.br
+.ti -1c
+.RI "const \fBWBC_WARNING\fP 48"
+.br
+.ti -1c
+.RI "const \fBWBC_YESNO\fP 36"
+.br
+.ti -1c
+.RI "const \fBWBC_YESNOCANCEL\fP 35"
+.br
+.ti -1c
+.RI "const \fBWBC_MAXIMIZED\fP 2"
+.br
+.ti -1c
+.RI "const \fBWBC_MINIMIZED\fP 1"
+.br
+.ti -1c
+.RI "const \fBWBC_NORMAL\fP 0"
+.br
+.ti -1c
+.RI "const \fBWBC_MINSIZE\fP 2"
+.br
+.ti -1c
+.RI "const \fBWBC_MAXSIZE\fP 3"
+.br
+.ti -1c
+.RI "const \fBWBC_TITLE\fP 1"
+.br
+.ti -1c
+.RI "const \fBWBC_RTF_TEXT\fP 1"
+.br
+.ti -1c
+.RI "const \fBIDABORT\fP 3"
+.br
+.ti -1c
+.RI "const \fBIDCANCEL\fP 2"
+.br
+.ti -1c
+.RI "const \fBIDCLOSE\fP 8"
+.br
+.ti -1c
+.RI "const \fBIDDEFAULT\fP 0"
+.br
+.ti -1c
+.RI "const \fBIDHELP\fP 9"
+.br
+.ti -1c
+.RI "const \fBIDIGNORE\fP 5"
+.br
+.ti -1c
+.RI "const \fBIDNO\fP 7"
+.br
+.ti -1c
+.RI "const \fBIDOK\fP 1"
+.br
+.ti -1c
+.RI "const \fBIDRETRY\fP 4"
+.br
+.ti -1c
+.RI "const \fBIDYES\fP 6"
+.br
+.ti -1c
+.RI "const \fBFTA_BOLD\fP 1"
+.br
+.ti -1c
+.RI "const \fBFTA_ITALIC\fP 2"
+.br
+.ti -1c
+.RI "const \fBFTA_NORMAL\fP 0"
+.br
+.ti -1c
+.RI "const \fBFTA_REGULAR\fP 0"
+.br
+.ti -1c
+.RI "const \fBFTA_STRIKEOUT\fP 8"
+.br
+.ti -1c
+.RI "const \fBFTA_UNDERLINE\fP 4"
+.br
+.ti -1c
+.RI "const \fBBLACK\fP 0"
+.br
+.ti -1c
+.RI "const \fBBLUE\fP 16711680"
+.br
+.ti -1c
+.RI "const \fBCYAN\fP 16776960"
+.br
+.ti -1c
+.RI "const \fBDARKBLUE\fP 8388608"
+.br
+.ti -1c
+.RI "const \fBDARKCYAN\fP 8421376"
+.br
+.ti -1c
+.RI "const \fBDARKGRAY\fP 8421504"
+.br
+.ti -1c
+.RI "const \fBDARKGREEN\fP 32768"
+.br
+.ti -1c
+.RI "const \fBDARKMAGENTA\fP 8388736"
+.br
+.ti -1c
+.RI "const \fBDARKRED\fP 128"
+.br
+.ti -1c
+.RI "const \fBDARKYELLOW\fP 32896"
+.br
+.ti -1c
+.RI "const \fBGREEN\fP 65280"
+.br
+.ti -1c
+.RI "const \fBLIGHTGRAY\fP 12632256"
+.br
+.ti -1c
+.RI "const \fBMAGENTA\fP 16711935"
+.br
+.ti -1c
+.RI "const \fBRED\fP 255"
+.br
+.ti -1c
+.RI "const \fBWHITE\fP 16777215"
+.br
+.ti -1c
+.RI "const \fBYELLOW\fP 65535"
+.br
+.ti -1c
+.RI "const \fBNOCOLOR\fP \-1"
+.br
+.ti -1c
+.RI "const \fBbgrBLACK\fP 0"
+.br
+.ti -1c
+.RI "const \fBbgrBLUE\fP 255"
+.br
+.ti -1c
+.RI "const \fBbgrCYAN\fP 65535"
+.br
+.ti -1c
+.RI "const \fBbgrDARKBLUE\fP 128"
+.br
+.ti -1c
+.RI "const \fBbgrDARKCYAN\fP 32896"
+.br
+.ti -1c
+.RI "const \fBbgrDARKGRAY\fP 8421504"
+.br
+.ti -1c
+.RI "const \fBbgrDARKGREEN\fP 32768"
+.br
+.ti -1c
+.RI "const \fBbgrDARKMAGENTA\fP 8388736"
+.br
+.ti -1c
+.RI "const \fBbgrDARKRED\fP 8388608"
+.br
+.ti -1c
+.RI "const \fBbgrDARKYELLOW\fP 8421376"
+.br
+.ti -1c
+.RI "const \fBbgrGREEN\fP 65280"
+.br
+.ti -1c
+.RI "const \fBbgrLIGHTGRAY\fP 12632256"
+.br
+.ti -1c
+.RI "const \fBbgrMAGENTA\fP 16711935"
+.br
+.ti -1c
+.RI "const \fBbgrRED\fP 16711680"
+.br
+.ti -1c
+.RI "const \fBbgrWHITE\fP 16777215"
+.br
+.ti -1c
+.RI "const \fBbgrYELLOW\fP 16776960"
+.br
+.ti -1c
+.RI "const \fBbgrNOCOLOR\fP \-1"
+.br
+.ti -1c
+.RI "const \fBWBC_LV_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBWBC_LV_FORE\fP 1"
+.br
+.ti -1c
+.RI "const \fBWBC_LV_BACK\fP 2"
+.br
+.ti -1c
+.RI "const \fBWBC_LV_DEFAULT\fP 0"
+.br
+.ti -1c
+.RI "const \fBWBC_LV_DRAW\fP 1"
+.br
+.ti -1c
+.RI "const \fBWBC_LV_COLUMNS\fP 2"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "wb_call_function ( $address,  $args = \fC[]\fP)"
+Calls the DLL function pointed by address\&. args is an optional array of parameters that must match those of the function being called\&. Returns an integer that may be a valid value or a pointer to one object, according to the library function called\&.
+.PP
+NOTE: Function arguments are limited to a maximum of 20\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$address\fP 
+.br
+\fI$args\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_create_font ( $name,  $height,  $color = \fC\fBnull\fP\fP,  $flags = \fC\fBnull\fP\fP)"
+Creates a new font\&. name is the font name, height is its height in points (not pixels), and color is a RGB color value\&. flags can be a combination of the following values:\&.
+.PP
+FTA_NORMAL FTA_REGULAR FTA_BOLD FTA_ITALIC FTA_UNDERLINE FTA_STRIKEOUT
+.PP
+Constants of FTA_NORMAL and FTA_REGULAR mean the same thing and are defined as zero\&.
+.PP
+The function returns an integer value that is the font identifier\&.
+.PP
+After use, the font must be destroyed by a call to \fBwb_destroy_font()\fP to prevent resource leaks\&.
+.PP
+NOTE: The color parameter is not implemented yet\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.br
+\fI$height\fP 
+.br
+\fI$color\fP 
+.br
+\fI$flags\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_create_image ( $width = \fC0\fP,  $height = \fC0\fP,  $dibbmi = \fC\fBnull\fP\fP,  $dibbits = \fC\fBnull\fP\fP)"
+Creates a true-color image measuring width by height pixels\&.
+.PP
+NOTE: The resulting image must be destroyed by a call to \fBwb_destroy_image()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$width\fP 
+.br
+\fI$height\fP 
+.br
+\fI$dibbmi\fP 
+.br
+\fI$dibbits\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_create_mask ( $bitmap,  $transparent_color)"
+Creates a transparency mask of a true-color bitmap\&. The mask returned is also a bitmap\&. The transparent color is set by transparent_color\&.
+.PP
+NOTE: The resulting image must be destroyed by a call to \fBwb_destroy_image()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bitmap\fP 
+.br
+\fI$transparent_color\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_create_timer ( $window,  $id,  $interval)"
+Creates a timer in the specified window\&. The timer must be given an integer id that must be unique to all timers and controls\&. interval specifies the time-out value in milliseconds\&. Timer events are passed to and processed by the window callback function\&. \fBA\fP call to \fBwb_destroy_timer()\fP destroys the timer\&.
+.PP
+Low resolution and high resolution timers
+.PP
+This function supports both conventional (low-resolution) and multimedia (high-resolution) timers\&. Use a non-negative id to specify a low-resolution timer or a negative id to specify a high-resolution timer\&. Hi-res timers have a 10:1 increase in speed (resolution can go down to 1 ms opposed to 10 ms of a conventional timer) and much higher precision\&.
+.PP
+NOTE: Only one high-resolution timer is allowed per application and it must be on the main window\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$window\fP 
+.br
+\fI$id\fP 
+.br
+\fI$interval\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_create_window ( $parent,  $wclass,  $caption = \fC\fBnull\fP\fP,  $xpos = \fC\fBnull\fP\fP,  $ypos = \fC\fBnull\fP\fP,  $width = \fC\fBnull\fP\fP,  $height = \fC\fBnull\fP\fP,  $style = \fC\fBnull\fP\fP,  $param = \fC\fBnull\fP\fP)"
+Creates a window of class wclass\&. Click here for a list of the available window classes\&. Windows created with this function must be destroyed with a call to \fBwb_destroy_window()\fP\&. Optional style flags may be passed through parameter style\&. To enable additional messages in a particular window, include the WBC_NOTIFY style in the style parameter and use param to indicate which additional notification messages you want to process\&.
+.PP
+This function may set the text and/or the tooltip (small hint window) of the window when it is created\&. To create a tooltip, text must be an array with two elements\&. The first one is the new caption (or NULL if one is not required) and the second one is the new tooltip (or NULL if one is not required)\&. All classes support tooltips\&.
+.PP
+Returns the handle of the newly created window or NULL or zero if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parent\fP 
+.br
+\fI$wclass\fP 
+.br
+\fI$caption\fP 
+.br
+\fI$xpos\fP 
+.br
+\fI$ypos\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.br
+\fI$style\fP 
+.br
+\fI$param\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_delete_items ( $ctrl,  $items = \fC\fBnull\fP\fP)"
+Deletes an item, a range of items, or all items from a control\&. Returns TRUE on success or FALSE if an error occurs\&. Control classes\&.
+.PP
+This function applies to the following control classes: ListBox, ComboBox, ListView and TreeView\&.
+.PP
+$items can be: integer Deletes the specified item\&. array of integers Deletes the specified items\&. zero Deletes item zero\&. null Deletes all items\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$items\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_destroy_control ( $control)"
+Destroys a control created by wb_create_control()\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+Tip It is often preferable to hide a control instead of destroying it\&. To hide a window, use \fBwb_set_visible()\fP with parameter visible set to FALSE\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$control\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_destroy_font ( $nfont)"
+Destroys a font\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$nfont\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_destroy_image ( $image)"
+Destroys an image created by \fBwb_create_image()\fP, \fBwb_create_mask()\fP or \fBwb_load_image()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$image\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_destroy_timer ( $window,  $id)"
+Destroys a timer created with \fBwb_create_timer()\fP\&. The window and the id parameters must be the same that were passed to \fBwb_create_timer()\fP when the timer was created\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$window\fP 
+.br
+\fI$id\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_destroy_window ( $window)"
+Destroys a window created by \fBwb_create_window()\fP\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$window\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_draw_ellipse ( $target,  $xpos,  $ypos,  $width,  $height,  $color,  $filled = \fC\fBnull\fP\fP,  $linewidth = \fC\fBnull\fP\fP,  $linestyle = \fC\fBnull\fP\fP)"
+Draws a filled or hollow rectangle\&. The first parameter, target, may be a WinBinder object, a window handle, a drawing surface or a bitmap\&.
+.PP
+xpos and ypos are the coordinates of the upper-left corner of the rectangle, in pixels\&. width and height are the dimensions of the rectangle\&. color is a RGB color value\&. Set filled to FALSE to draw a border\&. In this case, linewidth sets the width of the border, in pixels\&. \fBA\fP linewidth of zero sets the width to 1 pixel\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$target\fP 
+.br
+\fI$xpos\fP 
+.br
+\fI$ypos\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.br
+\fI$color\fP 
+.br
+\fI$filled\fP 
+.br
+\fI$linewidth\fP 
+.br
+\fI$linestyle\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_draw_image ( $target,  $bitmap,  $xpos = \fC0\fP,  $ypos = \fC0\fP,  $width = \fC\fBnull\fP\fP,  $height = \fC\fBnull\fP\fP,  $transparentcolor = \fC\fBnull\fP\fP,  $xoffset = \fC\fBnull\fP\fP,  $yoffset = \fC\fBnull\fP\fP)"
+Draws a bitmap\&. The first parameter, target, may be a WinBinder object, a window handle, a drawing surface or another bitmap\&.
+.PP
+xpos and ypos are the coordinates of the upper-left corner, in pixels\&. These parameters default to zero\&. width and height are the dimensions of the rectangle\&. These parameters also default to zero\&. In this case the bitmap is drawn with its original size\&. The parameter transparentcolor may be used to indicate which color is to be made transparent\&. If is set to NOCOLOR (the default), no transparency is used and the image is opaque\&. Parameters xoffset and yoffset are optionally used to specify where the image will be drawn\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$target\fP 
+.br
+\fI$bitmap\fP 
+.br
+\fI$xpos\fP 
+.br
+\fI$ypos\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.br
+\fI$transparentcolor\fP 
+.br
+\fI$xoffset\fP 
+.br
+\fI$yoffset\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_draw_line ( $target,  $x0,  $y0,  $x1,  $y1,  $color,  $linewidth = \fC\fBnull\fP\fP,  $linestyle = \fC\fBnull\fP\fP)"
+Draws a straight line\&. The first parameter, target, may be a WinBinder object, a window handle, a drawing surface or a bitmap\&.
+.PP
+The start and end points of the line are (x0, y0) and (x1, y1) respectively, in pixels\&. color is a RGB color value and linewidth is the width of the line, in pixels\&. \fBA\fP linewidth of zero sets the width to 1 pixel\&. Parameter linestyle accepts the values specified in the table below\&.
+.PP
+0 Solid line (the default style) 1 Dotted line 2-7 Dashed lines with increasing lengths 8 Line with alternating dashes and dots 9 Line with alternating dashes and double dots
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$target\fP 
+.br
+\fI$x0\fP 
+.br
+\fI$y0\fP 
+.br
+\fI$x1\fP 
+.br
+\fI$y1\fP 
+.br
+\fI$color\fP 
+.br
+\fI$linewidth\fP 
+.br
+\fI$linestyle\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_draw_point ( $source,  $xpos,  $ypos,  $color)"
+Draws a point of color, setting the RGB color value of the pixel that exists at the given coordinates\&. The first parameter, source, may be a WinBinder object, a window handle, a drawing surface or a bitmap\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$source\fP 
+.br
+\fI$xpos\fP 
+.br
+\fI$ypos\fP 
+.br
+\fI$color\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_draw_rect ( $target,  $xpos,  $ypos,  $width,  $height,  $color,  $filled = \fC\fBnull\fP\fP,  $linewidth = \fC\fBnull\fP\fP,  $linestyle = \fC\fBnull\fP\fP)"
+Draws a filled or hollow rectangle\&. The first parameter, target, may be a WinBinder object, a window handle, a drawing surface or a bitmap\&.
+.PP
+xpos and ypos are the coordinates of the upper-left corner of the rectangle, in pixels\&. width and height are the dimensions of the rectangle\&. color is a RGB color value\&. Set filled to FALSE to draw a border\&. \fBA\fP linewidth of zero sets the width to 1 pixel\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$target\fP 
+.br
+\fI$xpos\fP 
+.br
+\fI$ypos\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.br
+\fI$color\fP 
+.br
+\fI$filled\fP 
+.br
+\fI$linewidth\fP 
+.br
+\fI$linestyle\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_draw_text ( $target,  $text,  $xpos,  $ypos,  $width = \fC\fBnull\fP\fP,  $height = \fC\fBnull\fP\fP,  $font = \fC\fBnull\fP\fP,  $flags = \fC\fBnull\fP\fP)"
+Draws a string\&. The first parameter, target, may be a WinBinder object, a window handle, a drawing surface or a bitmap\&.
+.PP
+The text parameter is the string to be drawn\&. xpos and ypos are the coordinates of the upper-left corner, in pixels\&. width and height optionally provide a limit to the drawing area\&. If they are not provided or zero, there is no limit to the drawing area\&. To use a specific font, an identifier created with \fBwb_create_font()\fP must be used as the font argument\&. If font is NULL, negative or not given, the most recently created font is used\&.
+.PP
+NOTE: To use the simplified call syntax (no width, no height) you must supply 4 or 5 parameters\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$target\fP 
+.br
+\fI$text\fP 
+.br
+\fI$xpos\fP 
+.br
+\fI$ypos\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.br
+\fI$font\fP 
+.br
+\fI$flags\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_exec ( $command,  $param = \fC\fBnull\fP\fP)"
+Opens or executes a command\&. The string passed to this function can be one of the following:\&.
+.PP
+\fBA\fP WinBinder script\&. An executable file\&. \fBA\fP non-executable file associated with an application\&. \fBA\fP folder name\&. Passing a null or empty string opens the current folder\&. \fBA\fP help file or help file topic\&. An URL, e-mail, newsgroup, or another Internet client application\&.
+.PP
+Optional parameters can be passed to the command or application through the variable param\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$command\fP 
+.br
+\fI$param\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_find_file ( $filename)"
+Looks for a file in the Windows and System directories, in this order\&. If the file exists, return the complete path to it\&. If not, return filename\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "wb_get_address ( $var)"
+Returns the address (as an integer pointer) of the variable var\&. var can be a string, integer, boolean, or double\&. This function is specially suited to use with \fBwb_peek()\fP and \fBwb_poke()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$var\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_get_class ( $wbobject)"
+Returns an integer that corresponds to the class of the object (control, window or menu) passed as the parameter\&. The class is passed as a parameter to functions wb_create_control() and \fBwb_create_window()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_get_control ( $wbobject,  $id)"
+Returns an integer handle that corresponds to the WinBinder object (control, toolbar item or menu item) wbobject that has the supplied identifier id\&. This function is typically used to retrieve the handle of a child control in a dialog box or in a menu item\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$id\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_get_enabled ( $wbobject)"
+Returns TRUE if wbobject is enabled or FALSE otherwise\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_get_enum_callback ()"
+Enumerate windows, i think: https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-enumwindows
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_get_focus ()"
+Returns a handle to the window or control that has the keyboard focus\&.
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_get_function_address ( $fname,  $idlib)"
+Returns the address of a library function\&. fname is the function name and idlib identifies a library already loaded\&. The idlib identifier must have been obtained with a call to \fBwb_load_library()\fP\&. If idlib is not set or is set to NULL, the last library sent to the function will be used\&.
+.PP
+Name expansion: The function prepends and appends some special characters to the function name until it finds the function name, then it returns the function address or NULL if the function was not found\&. These special characters are the most common ones encountered in various types of libraries\&.
+.PP
+For example, if fname is set to 'MyFunction', \fBwb_get_function_address()\fP looks for the following function names, in order:
+.PP
+MyFunction MyFunctionA MyFunctionW _MyFunction _MyFunctionA _MyFunctionW MyFunction@0, MyFunction@4, MyFunction@8\&.\&.\&. until MyFunction@80 _MyFunction@0, _MyFunction@4, _MyFunction@8\&.\&.\&. until MyFunction@80
+.PP
+The last two expansion options include a '@' character followed by the number of parameters times 4, which is a standard way to store function names inside DLLs\&. The loop starts from zero ('@0') and ends when it reaches 20 parameters ('@80')\&.
+.PP
+NOTE: Function names, including the expansion characters, are limited to 255 characters\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fname\fP 
+.br
+\fI$idlib\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_get_hook_callback ()"
+Unused, i think its https://docs.microsoft.com/en-us/windows/win32/api/winuser/nc-winuser-hookproc 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_get_id ( $wbobject)"
+Returns the integer identifier of the wbobject control\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_get_image_data ( $image,  $compress4to3)"
+Returns a string of data containing a copy of the internal true-color representation of the given image\&. If compress4to3 is TRUE, every fourth byte of the original 32-bit data is skipped, yielding a RGB (24-bit) data string\&. This is required for image libraries such as FreeImage\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$image\fP 
+.br
+\fI$compress4to3\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_get_instance ( $caption,  $bringtofront = \fC\fBnull\fP\fP)"
+Detects a running instance of a WinBinder application\&.
+.PP
+Detecting running instances
+.PP
+Each main window of all WinBinder applications stores a 32-bit identifier that is calculated according to the initial window caption and is unique to that caption\&. \fBwb_get_instance()\fP will try to find, among all current top-level windows, a WinBinder window that was created with the same caption\&. The function returns TRUE if it finds the existing window or FALSE if it is does not\&.
+.PP
+The function is effective even of the caption of the first instance of the application is changed at runtime because the 32-bit identifier does not change throughout the life of the application\&.
+.PP
+If bringtofront is set to TRUE, the function optionally restores the window (if minimized) and brings the corresponding window to the front of other windows\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$caption\fP 
+.br
+\fI$bringtofront\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_get_item_count ( $wbobject)"
+Returns the number of items of wbobject\&.
+.PP
+ComboBox The number of items ListBox The number of items ListView The number of rows
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_get_item_list ( $wbobject)"
+Returns an array with a list of the child controls in window or control wbobject\&. Each element is an integer identifier that represents a WinBinder object\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SS "wb_get_level ( $wbobject,  $item)"
+Retrieves an integer representing the level of a control item\&.
+.PP
+Retrieving states: This function currently returns the insertion level of the treeview node specified in item\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$item\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_get_midi_callback ()"
+returns a pointer to MidiOutProc (can also be used for MidiInProc, WaveInProc, WaveOutProc or any similar callback) for use with functions like midiOutOpen\&.
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_get_parent ( $wbobject,  $item = \fC\fBnull\fP\fP)"
+Returns the handle of the control parent if item specifies a control, or the node parent if item specifies a treeview node\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$item\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_get_pixel ( $source,  $xpos,  $ypos)"
+Returns the RGB color value of the pixel at the given coordinates\&. The first parameter, source, may be a WinBinder object, a window handle, a drawing surface or a bitmap\&.
+.PP
+Returns NOCOLOR if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$source\fP 
+.br
+\fI$xpos\fP 
+.br
+\fI$ypos\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_get_position ( $wbobject,  $clientarea = \fC\fBnull\fP\fP)"
+Returns an array with the position of the control or window related to its parent, in pixels\&. The first element is the horizontal position and the second is the vertical position\&. If clientarea is TRUE, the area returned will not include the title bar and borders\&.
+.PP
+The default is FALSE\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$clientarea\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SS "wb_get_registry_key ( $key,  $subkey,  $entry = \fC\fBnull\fP\fP)"
+Reads a string or integer value from the Windows registry item referenced by key, subkey and entry\&. The subkey may contain forward or reverse slashes\&. If entry is an empty string, a NULL value or is not supplied, the function retrieves the default value for the subkey\&.
+.PP
+Values are always returned as strings\&. If the requested entry is an empty string, an empty string is returned\&. If the key does not exist in the registry, the function returns NULL\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP 
+.br
+\fI$subkey\fP 
+.br
+\fI$entry\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string | NULL 
+.RE
+.PP
+
+.SS "wb_get_selected ( $wbobject)"
+Returns a value or array with the indices or identifiers of the selected elements or items in wbobject\&.
+.PP
+Retrives:
+.PP
+ComboBox The index of the currently selected item\&. ListBox The index of the currently selected item\&. If multiselected only the last on will be returned (use getText for all items text) ListView An array with the indices of the selected items\&. ¹ TabControl The index of the selected tab page\&. TreeView The handle of the currently selected node\&. Window 0 (zero)\&. \fBOther\fP controls 0 (zero)\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+mixed 
+.RE
+.PP
+
+.SS "wb_get_size ( $object,  $param = \fC\fBnull\fP\fP)"
+Gets the dimensions of a control, window, image or string\&. The image handle must have been obtained with \fBwb_create_image()\fP, \fBwb_create_mask()\fP or \fBwb_load_image()\fP\&.
+.PP
+This function generally returns an array where the first element is the width and the second is the height\&. Measurements are in pixels\&. If param is TRUE, the area returned will not include the title bar and borders\&. Default is FALSE\&.
+.PP
+The function will return the integer WBC_MINIMIZED instead of an array if the requested window is minimized, or NULL on error\&.
+.PP
+If object is a ListView handle and param is TRUE, the function returns an array with the widths of the column headers\&. If param is omitted or FALSE, the function behaves normally like described above
+.PP
+If object is a text string, param is optionally used to pass the handle to a font created with \fBwb_create_font()\fP\&. If param is null or not used, the default font is used\&. Object types accepted
+.PP
+object may be one of the following:
+.PP
+\fBA\fP control handle \fBA\fP window handle An icon handle \fBA\fP bitmap handle The name of a bitmap file The name of an icon file \fBA\fP text string
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object\fP 
+.br
+\fI$param\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SS "wb_get_state ( $wbobject,  $item = \fC\fBnull\fP\fP)"
+Retrieves an integer representing the current state of a control item\&. Retrieving states\&.
+.PP
+This function currently returns the expanded or collapsed state of a treeview node indicated by item\&. It returns TRUE if the node is expanded and FALSE if it is collapsed\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$item\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_get_system_info ( $info)"
+Returns information about the current system and application, according to the string info\&.
+.PP
+The parameter info is not case-sensitive\&.
+.PP
+'appmemory' The total memory used by the application¹ 'backgroundcolor' The main face color for Windows dialog boxes and controls 'colordepth' The current color depth in bits per pixel 'commandline' The original Windows command line including the executable file 'computername' The name of the computer inside the network 'consolemode' 1 indicates that console mode (DOS box) is active, 0 otherwise 'diskdrives' The list of all available disk drives 'exepath' The path to the main executable (PHP\&.EXE) 'fontpath' The current font path 'freememory' The available physical memory 'gdiobjects' The number of currently allocated GDI handles 'instance' The instance identifier of the current application 'osnumber' The numeric OS version number 'ospath' The current OS path 'osversion' The complete OS version name 'pgmpath' The default OS application path 'screenarea' The total area (x, y, width, height) of the screen, in pixels 'systemfont' The common (default) system font for dialog boxes 'systempath' The OS system path 'temppath' The path used by the OS to hold temporary files 'totalmemory' The total physical memory installed 'username' The name of the currently logged user 'userobjects' The number of currently allocated USER handles 'workarea' The valid area (x, y, width, height) of the screen, in pixels
+.PP
+\fBParameters\fP
+.RS 4
+\fI$info\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+mixed 
+.RE
+.PP
+
+.SS "wb_get_value ( $wbobject,  $item = \fC\-1\fP,  $subitem = \fC\-1\fP)"
+Retrieves the value of a control or control item\&. The item and subitem parameters are set to -1 if absent\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$item\fP 
+.br
+\fI$subitem\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+mixed 
+.RE
+.PP
+
+.SS "wb_get_visible ( $wbobject)"
+Tells whether an object is visible\&. Returns TRUE if wbobject is visible and FALSE otherwise\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_load_image ( $filename,  $index = \fC\fBnull\fP\fP,  $param = \fC\fBnull\fP\fP)"
+Loads the image, icon or cursor file filename from disk and returns a handle to it\&. If filename is an icon library, index specifies the index of the image inside the file\&. Default index is 0\&.
+.PP
+If source is an icon or a cursor, if param is 0 (the default), the function returns a large icon or cursor if param is 1, it returns a small icon or cursor; if param is -1, the function returns the default icon or cursor\&.
+.PP
+NOTE: The resulting image must be destroyed by a call to \fBwb_destroy_image()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP 
+.br
+\fI$index\fP 
+.br
+\fI$param\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_load_library ( $libname)"
+Loads a DLL into memory\&. Returns an integer identifying libname\&. If libname is NULL then returns the identifier of the last library returned\&. The function accepts fully qualified and raw names\&. Returns NULL if no library was found\&.
+.PP
+Name expansion
+.PP
+The function appends some characters to the library name until it finds the library, then it returns an identifier for that library, or NULL if the library was not found\&. If libname is 'LIB', for example, the function looks for the following files, in order:
+.PP
+LIB LIB\&.DLL LIB32 LIB32\&.DLL LIB\&.EXE LIB32\&.EXE
+.PP
+For each name, the function looks in the following locations:
+.PP
+The application directory; The current directory; The 32-bit System directory (Usually C:\\WINDOWS\\SYSTEM32 or C:\\WINNT\\SYSTEM32); The 16-bit System directory (Usually C:\\WINDOWS\\SYSTEM or C:\\WINNT\\SYSTEM); The Windows directory (Usually C:\\WINDOWS or C:\\WINNT); The directory list contained in the PATH environment variable\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$libname\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_main_loop ()"
+Begin functions\&. Enters the Windows main loop\&. This function must be called if the application has a window\&. The call to \fBwb_main_loop()\fP must be the last executable statement of the PHP script: All statements after it will be ignored\&. The return value is used for debugging purposes only and may be ignored\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void - For debugging 
+.RE
+.PP
+
+.SS "wb_message_box ( $parent,  $message,  $title = \fC\fBnull\fP\fP,  $style = \fC\fBnull\fP\fP)"
+Creates and displays a message box under the style supplied and returns a value according to the button pressed\&.
+.PP
+Value for style & What is displayed
+.PP
+WBC_OK (the default) - An OK button\&.
+.PP
+WBC_INFO - An information icon and an OK button\&.
+.PP
+WBC_WARNING - An exclamation point icon and an OK button\&.
+.PP
+WBC_STOP - \fBA\fP stop icon and an OK button\&.
+.PP
+WBC_QUESTION - \fBA\fP question mark icon and an OK button\&.
+.PP
+WBC_OKCANCEL - \fBA\fP question mark icon, an OK button and a Cancel button\&.
+.PP
+WBC_YESNO - \fBA\fP question mark icon, a Yes button and a No button\&.
+.PP
+WBC_YESNOCANCEL - \fBA\fP question mark icon, a Yes button, a No button and a Cancel button\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parent\fP 
+.br
+\fI$message\fP 
+.br
+\fI$title\fP 
+.br
+\fI$style\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_peek ( $address,  $length = \fC0\fP)"
+Gets the contents of a memory area pointed by address\&. If length is empty or zero, returns bytes up to the first NUL character (zero-character) or up to 32767 bytes, whichever comes first\&. If length is greater than zero, returns length bytes\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$address\fP 
+.br
+\fI$length\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "wb_play_sound ( $source,  $command = \fC\fBnull\fP\fP)"
+Loads and plays a sound file or system sound\&. Parameter source may be a sound file name or a system sound constant\&. Parameter command may be used used to play a WAV sound synchronously or in a loop\&. \fBA\fP synchronous sound stops the currently playing sound and suspends the application control until it finishes\&. \fBA\fP MIDI soundtrack always stops any currenly playing MIDI soundtrack\&. To stop one or more sounds, use function \fBwb_stop_sound()\fP\&.
+.PP
+Value of $source: MIDI file name - Load and play the specified MIDI file\&.
+.PP
+WBC_OK - Default system sound
+.PP
+WBC_INFO - System information sound
+.PP
+WBC_WARNING - Warning sound
+.PP
+WBC_STOP - \fBError\fP sound
+.PP
+WBC_QUESTION - Question sound
+.PP
+WBC_BEEP - Default beep (via the computer speaker)
+.PP
+Value of $command: null or empty - Load and play the specified WAV sound file\&.
+.PP
+'sync' - Load and play the specified WAV sound file synchronously\&.
+.PP
+'loop' - Load and loop the specified WAV sound file\&.
+.PP
+Returns TRUE on success or FALSE otherwise\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$source\fP 
+.br
+\fI$command\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_poke ( $address,  $contents,  $length = \fC\fBnull\fP\fP)"
+Sets the contents of a memory area pointed by address\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$address\fP 
+.br
+\fI$contents\fP 
+.br
+\fI$length\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_refresh ( $wbobject,  $now = \fC\fBnull\fP\fP,  $xpos = \fC\fBnull\fP\fP,  $ypos = \fC\fBnull\fP\fP,  $width = \fC\fBnull\fP\fP,  $height = \fC\fBnull\fP\fP)"
+Refreshes or redraws the WinBinder object wbobject, forcing an immediate redraw if the parameter now is TRUE (the default)\&. If now is FALSE, the redraw command is posted to the Windows message queue\&.
+.PP
+Optional parameters xpos, ypos, width and height will make the function invalidate and redraw only the specified part of the screen or control\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$now\fP 
+.br
+\fI$xpos\fP 
+.br
+\fI$ypos\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_release_library ( $idlib)"
+Releases the DLL identified by idlib from memory\&. The idlib identifier must have been obtained with a call to \fBwb_load_library()\fP\&.
+.PP
+NOTE: calling this function is usually not necessary\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$idlib\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_save_image ( $image,  $filename)"
+Saves the bitmap image to file filename\&. The image handle must have been obtained with \fBwb_create_image()\fP, \fBwb_create_mask()\fP or \fBwb_load_image()\fP\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$image\fP 
+.br
+\fI$filename\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_send_message ( $wbobject,  $message,  $wparam = \fC0\fP,  $lparam = \fC0\fP)"
+Sends a Windows message to the HWND handle of the WinBinder object wbobject\&. The parameters wparam and lparam, as well as the return value, depend on message\&. See SendMessage() in the Windows API documentation for more information\&.
+.PP
+The following constant may be used as the wbobject parameter:
+.PP
+0xFFFF
+.PP
+This constant is the value of HWND_BROADCAST in the Windows API\&. For more information consult the Windows API documentation\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$message\fP 
+.br
+\fI$wparam\fP 
+.br
+\fI$lparam\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_set_area ( $window,  $type,  $x = \fC\fBnull\fP\fP,  $y = \fC\fBnull\fP\fP,  $width = \fC\fBnull\fP\fP,  $height = \fC\fBnull\fP\fP)"
+Sets a specific area in a window\&. Possible values for type are:\&.
+.PP
+WBC_TITLE Sets the area used to drag a borderless window with the mouse\&.
+.PP
+WBC_MINSIZE Sets the minimum window size in a resizable window\&. Parameters x and y are ignored\&. If width is zero, no minimum horizontal dimension is set\&. if height is zero, no minimum vertical dimension is set\&.
+.PP
+WBC_MAXSIZE Sets the maximum window size in a resizable window\&. Parameters x and y are ignored\&. If width is zero, no maximum horizontal dimension is set\&. if height is zero, no maximum vertical dimension is set\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$window\fP 
+.br
+\fI$type\fP 
+.br
+\fI$x\fP 
+.br
+\fI$y\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_set_cursor ( $wbobject,  $source)"
+Set or change the mouse cursor shape of a window, control, a whole class or application-wide\&. * The cursor can be set for any window class and for control classes ImageButton, InvisibleArea (deprecated), HyperLink and EditBox\&.
+.PP
+The source parameter can be a cursor handle from function \fBwb_load_image()\fP or one of the preset system cursors: arrow, cross, finger, forbidden, help, ibeam, null (no cursor), sizeall, sizenesw, sizens, sizenwse, sizewe, uparrow, wait and waitarrow\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$source\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_set_enabled ( $control,  $enabled)"
+Enables or disables control according to the value of enabled\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$control\fP 
+.br
+\fI$enabled\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_set_focus ( $wbobject)"
+Assigns the keyboard focus to wbobject\&. Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_set_font ( $control,  $font = \fC\fBnull\fP\fP,  $redraw = \fC\fBnull\fP\fP)"
+Sets the font of control\&. font is a unique integer value returned by \fBwb_create_font()\fP\&. If font is zero or not given, the most recently created font is used\&. If font is a negative number, it means the system default font\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+Tip: To check the system font name and size, call \fBwb_get_system_info()\fP using ('systemfont') as the info parameter\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$control\fP 
+.br
+\fI$font\fP 
+.br
+\fI$redraw\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_set_handler ( $window,  $fn_handler)"
+Assigns the callback function fn_handler to window\&. The handler function may be a regular PHP function or class method that is used to process events for this particular window\&. \fBwb_set_handler()\fP must be called whenever the window needs to process messages and events from its controls\&.
+.PP
+To specify a function as the handler, pass the function name in fn_handler\&. If the handler is a class method, fn_handler must be an array which first element is the name of the object and the second one is the method name\&.
+.PP
+For additional information, see callback functions and window handlers\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$window\fP 
+.br
+\fI$fn_handler\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool|null 
+.RE
+.PP
+
+.SS "wb_set_image ( $wbobject,  $source,  $transparentcolor = \fC\fBnull\fP\fP,  $index = \fC\fBnull\fP\fP,  $param = \fC\fBnull\fP\fP)"
+Assigns the image source to the WinBinder object wbobject\&. Parameter source can be either an image, icon or cursor handle or a path to an image file name\&. If a handle, it must have been obtained with \fBwb_create_image()\fP, \fBwb_create_mask()\fP or \fBwb_load_image()\fP\&. The optional parameter transparentcolor tells the function which color is to be considered transparent\&. The default is NOCOLOR (no transparency)\&. index is used to select a specific image from a multi-image file (such as a DLL or executable)\&.
+.PP
+If source is an icon or a cursor, if param is 0 (the default), the function sets a large icon or cursor\&. if param is 1, it sets a small icon or cursor; if param is -1, the function sets the default icon or cursor\&. For minimized windows, this function will also change the icon that is displayed on the task bar\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$source\fP 
+.br
+\fI$transparentcolor\fP 
+.br
+\fI$index\fP 
+.br
+\fI$param\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_set_item_image ( $wbobject,  $index,  $item = \fC\fBnull\fP\fP,  $subitem = \fC\fBnull\fP\fP)"
+Retrieves a portion of the image already assigned to a control and assigns it to a item (and optional subitem)\&. The image must be previously assigned with \fBwb_set_image()\fP\&. The portion which is assigned is specified by index\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$index\fP 
+.br
+\fI$item\fP 
+.br
+\fI$subitem\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_set_location ( $wbobject,  $location)"
+Sets the location of an HTMLControl or sends a special command to it\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs (except when using 'cmd:busy' as explained below)\&.
+.PP
+'cmd:back' Go to previously visited page\&. 'cmd:forward' Go to a page previously viewed before issuing the back command\&. 'cmd:refresh' Redraw the current page\&. 'cmd:stop' Stop the current action, like loading a page\&. 'cmd:busy' Return TRUE if the browser is busy or FALSE if idle\&. 'cmd:blank' Clear the page\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$location\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_set_position ( $wbobject,  $xpos = \fC\fBnull\fP\fP,  $ypos = \fC\fBnull\fP\fP)"
+Moves the object wbobject to the coordinates xpos, ypos in relation to its parent window\&. If both xpos and ypos have the value WBC_CENTER or are not given, the window is centered on its parent window\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$xpos\fP 
+.br
+\fI$ypos\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_set_range ( $control,  $vmin,  $vmax)"
+Sets the valid range of values (vmin and vmax) of a control\&. Valid classes are Gauge, ScrollBar, Slider and Spinner\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$control\fP 
+.br
+\fI$vmin\fP 
+.br
+\fI$vmax\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_set_registry_key ( $key,  $subkey,  $entry = \fC\fBnull\fP\fP,  $value = \fC\fBnull\fP\fP)"
+Reads a string or integer value from the Windows registry item referenced by key, subkey and entry\&. The subkey may contain forward or reverse slashes\&. If entry is an empty string, a NULL value or is not supplied, the function retrieves the default value for the subkey\&.
+.PP
+Values are always returned as strings\&. If the requested entry is an empty string, an empty string is returned\&. If the key does not exist in the registry, the function returns NULL\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP 
+.br
+\fI$subkey\fP 
+.br
+\fI$entry\fP 
+.br
+\fI$value\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_set_size ( $wbobject,  $width,  $height = \fC\fBnull\fP\fP)"
+Sizes the object wbobject to width and height pixels\&.
+.PP
+Parameters width and height may be used as follows:
+.PP
+Positive integer window or control Sets the window or control size to width and height pixels\&. WBC_NORMAL window Restores the window, if it is not already\&. WBC_MINIMIZED window Minimizes the window, if it is not already\&. WBC_MAXIMIZED window Maximizes the window, if it is not already\&. Array of integers ListView Changes the column widths of the control\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_set_state ( $wbobject,  $item,  $state)"
+Sets the state of a control item (a treeview node)\&. Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+Setting states: This function can currently set the expanded or collapsed state of the treeview node indicated by item\&. Set state to TRUE to expand the node or FALSE to collapse it\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$item\fP 
+.br
+\fI$state\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_set_style ( $wbobject,  $style,  $set)"
+Sets or resets one or more styles of the WinBinder object wbobject\&. Only a limited set of styles is supported due to Windows limitations\&.
+.PP
+AppWindow ResizableWindow PopupWindow NakedWindow  WBC_TOP Make the window a topmost window\&.
+.PP
+ListView WBC_LINES Display grid lines around items ListView WBC_CHECKBOXES Display check boxes in the first column of all items Slider WBC_LINES Show tick marks\&. The control must be created with the WBC_LINES style TreeView WBC_LINES Draw dotted lines linking children objects to their parents
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$style\fP 
+.br
+\fI$set\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_set_visible ( $wbobject,  $visible)"
+Shows or hides the WinBinder object wbobject according to the value of visible\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbobject\fP 
+.br
+\fI$visible\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_sort ( $control,  $ascending = \fC\fBnull\fP\fP,  $subitem = \fC\fBnull\fP\fP)"
+Sorts the contents of a control, a control item, a ListView column or a sub-item\&. If the ascending parameter is TRUE (the default), the control or column is ordered starting with the lowest value or string, and vice-versa\&.
+.PP
+The sorting criteria between two given items, item1 and item2, are as follows:
+.PP
+String or number String Alphabetical order according to system locale String or number Empty The non-empty item is always greater than the empty one Number Number Numeric comparison
+.PP
+In a ListView, \fBwb_sort()\fP sorts the column indexed by subitem\&. The index of the first column is zero\&.
+.PP
+Returns TRUE on success or FALSE if an error occurs\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$control\fP 
+.br
+\fI$ascending\fP 
+.br
+\fI$subitem\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_stop_sound ( $command = \fC\fBnull\fP\fP)"
+Stops one or more sounds that were started with \fBwb_play_sound()\fP\&.
+.PP
+null, empty or 'all' - Stop all sounds\&.
+.PP
+'wav' or 'wave' - Stop all WAV sounds\&.
+.PP
+'mid' or 'midi' - Stop all MIDI sounds\&.
+.PP
+Returns TRUE on success or FALSE otherwise\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$command\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wb_sys_dlg_color ( $parent,  $title = \fC\fBnull\fP\fP,  $color = \fC\fBnull\fP\fP)"
+Displays the standard Select Color dialog box\&. Returns a RGB value which is the selected color value or NOCOLOR if the dialog box was canceled\&. Returns NULL if not successful\&.
+.PP
+Parameters:
+.PP
+parent is a handle to the WinBinder object that will serve as the parent for the dialog box\&. title is currently ignored\&. color is an optional RGB value used to initialize the dialog box\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parent\fP 
+.br
+\fI$title\fP 
+.br
+\fI$color\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wb_sys_dlg_path ( $parent,  $title = \fC\fBnull\fP\fP,  $path = \fC\fBnull\fP\fP)"
+Displays the standard Select Path dialog box\&. Returns the name of the selected path, if any, or a blank string if the dialog box was canceled\&. Returns NULL if not successful\&.
+.PP
+Parameters:
+.PP
+parent is a handle to the WinBinder object that will serve as the parent for the dialog box\&. title is an optional string to be displayed in the dialog box\&. path is an optional folder used to initialize the dialog box\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parent\fP 
+.br
+\fI$title\fP 
+.br
+\fI$path\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "wb_wait ( $window = \fC\fBnull\fP\fP,  $pause = \fC\fBnull\fP\fP,  $flags = \fC\fBnull\fP\fP)"
+This function creates a delay and verifies if mouse buttons are pressed and/or the keyboard state\&. This function is useful for lengthy operations\&. In this case, wb_wait guarantees that the message control is sent back to the main loop, avoiding an unpleasant 'freezing' effect\&. Using this function also provides an way to easily exit lengthy operations by constantly monitoring the keyboard and mouse\&.
+.PP
+Parameters: WBC_MOUSEDOWN WBC_MOUSEUP WBC_KEYDOWN WBC_KEYUP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$window\fP 
+.br
+\fI$pause\fP 
+.br
+\fI$flags\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_clear_listview_columns ( $ctrl)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_create_control ( $parent,  $class,  $caption,  $xpos,  $ypos,  $width,  $height,  $id,  $style,  $lparam,  $ntab)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parent\fP 
+.br
+\fI$class\fP 
+.br
+\fI$caption\fP 
+.br
+\fI$xpos\fP 
+.br
+\fI$ypos\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.br
+\fI$id\fP 
+.br
+\fI$style\fP 
+.br
+\fI$lparam\fP 
+.br
+\fI$ntab\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_create_item ( $ctrl,  $str)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$str\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_create_listview_column ( $ctrl,  $i,  $text,  $width,  $align)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$i\fP 
+.br
+\fI$text\fP 
+.br
+\fI$width\fP - If nWidth is negative, calculate width automatically 
+.br
+\fI$align\fP - WBC_LEFT, WBC_RIGHT, WBC_CENTER
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_create_listview_item ( $ctrl,  $item,  $image,  $value)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$item\fP 
+.br
+\fI$image\fP 
+.br
+\fI$value\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_create_menu ( $parent,  $caption)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parent\fP 
+.br
+\fI$caption\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_create_statusbar_items ( $ctrl,  $items,  $clear,  $param)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$items\fP 
+.br
+\fI$clear\fP 
+.br
+\fI$param\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_create_toolbar ( $parent,  $caption,  $width,  $height,  $lparam)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parent\fP 
+.br
+\fI$caption\fP 
+.br
+\fI$width\fP 
+.br
+\fI$height\fP 
+.br
+\fI$lparam\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_create_treeview_item ( $ctrl,  $name,  $value,  $where = \fC0\fP,  $image_index = \fC0\fP,  $selected_image = \fC0\fP,  $selected_image_index = \fC0\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$name\fP 
+.br
+\fI$value\fP 
+.br
+\fI$where\fP 
+.br
+\fI$image_index\fP 
+.br
+\fI$selected_image\fP 
+.br
+\fI$selected_image_index\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_get_listview_columns ( $ctrl)"
+Get the number of columns in the pwbo control,
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_get_listview_item_checked ( $ctrl,  $item)"
+Return TRUE if the item's checkbox is checked 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$item\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wbtemp_get_listview_text ( $ctrl,  $item)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$item\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+mixed 
+.RE
+.PP
+
+.SS "wbtemp_get_menu_item_checked ( $ctrl,  $item)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$item\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_get_text ( $ctrl,  $item = \fC\fBnull\fP\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$item\fP - item can also be WBC_RTF_TEXT to get the RTF code of an RTF input
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_get_treeview_item_text ( $ctrl,  $item)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$item\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_select_all_listview_items ( $ctrl,  $bool)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$bool\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_select_listview_item ( $ctrl,  $item,  $selected)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$item\fP 
+.br
+\fI$selected\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_select_tab ( $ctrl,  $selitems)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$selitems\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_set_accel_table ( $parent,  $accels)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parent\fP 
+.br
+\fI$accels\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_set_listview_item_checked ( $ctrl,  $index,  $value)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$index\fP 
+.br
+\fI$value\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_set_listview_item_text ( $ctrl,  $item,  $subitem,  $text)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$item\fP 
+.br
+\fI$subitem\fP 
+.br
+\fI$text\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_set_menu_item_checked ( $ctrl,  $selitems,  $selected)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$selitems\fP 
+.br
+\fI$selected\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_set_menu_item_image ( $ctrl,  $item,  $imageHandle)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$item\fP 
+.br
+\fI$imageHandle\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_set_menu_item_selected ( $ctrl,  $item,  $selected)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$item\fP 
+.br
+\fI$selected\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_set_text ( $ctrl,  $text,  $item)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$text\fP 
+.br
+\fI$item\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_set_treeview_item_selected ( $ctrl,  $selitems)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$selitems\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_set_treeview_item_text ( $ctrl,  $item,  $text)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$item\fP 
+.br
+\fI$text\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "wbtemp_set_treeview_item_value ( $ctrl,  $item,  $value)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$item\fP 
+.br
+\fI$value\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_set_value ( $ctrl,  $value,  $item = \fC\fBnull\fP\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ctrl\fP 
+.br
+\fI$value\fP 
+.br
+\fI$item\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_sys_dlg_open ( $parent,  $title = \fC\fBnull\fP\fP,  $filter = \fC\fBnull\fP\fP,  $path = \fC\fBnull\fP\fP,  $flags = \fC\fBnull\fP\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parent\fP 
+.br
+\fI$title\fP 
+.br
+\fI$filter\fP 
+.br
+\fI$path\fP 
+.br
+\fI$flags\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "wbtemp_sys_dlg_save ( $wbObj,  $title = \fC''\fP,  $filter = \fC''\fP,  $path = \fC''\fP,  $filename = \fC''\fP,  $defext = \fC''\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbObj\fP 
+.br
+\fI$title\fP 
+.br
+\fI$filter\fP 
+.br
+\fI$path\fP 
+.br
+\fI$filename\fP 
+.br
+\fI$defext\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const Accel 8"
+
+.SS "const AppWindow 1"
+@noinspection ALL Stub file - DO NOT INCLUDE! = For PHPStorm to analyse\&. Begin constants\&. 
+.SS "const bgrBLACK 0"
+
+.SS "const bgrBLUE 255"
+
+.SS "const bgrCYAN 65535"
+
+.SS "const bgrDARKBLUE 128"
+
+.SS "const bgrDARKCYAN 32896"
+
+.SS "const bgrDARKGRAY 8421504"
+
+.SS "const bgrDARKGREEN 32768"
+
+.SS "const bgrDARKMAGENTA 8388736"
+
+.SS "const bgrDARKRED 8388608"
+
+.SS "const bgrDARKYELLOW 8421376"
+
+.SS "const bgrGREEN 65280"
+
+.SS "const bgrLIGHTGRAY 12632256"
+
+.SS "const bgrMAGENTA 16711935"
+
+.SS "const bgrNOCOLOR \-1"
+
+.SS "const bgrRED 16711680"
+
+.SS "const bgrWHITE 16777215"
+
+.SS "const bgrYELLOW 16776960"
+
+.SS "const BLACK 0"
+
+.SS "const BLUE 16711680"
+
+.SS "const Calendar 9"
+
+.SS "const CheckBox 10"
+
+.SS "const ComboBox 11"
+
+.SS "const CYAN 16776960"
+
+.SS "const DARKBLUE 8388608"
+
+.SS "const DARKCYAN 8421376"
+
+.SS "const DARKGRAY 8421504"
+
+.SS "const DARKGREEN 32768"
+
+.SS "const DARKMAGENTA 8388736"
+
+.SS "const DARKRED 128"
+
+.SS "const DARKYELLOW 32896"
+
+.SS "const EditBox 12"
+
+.SS "const Frame 13"
+
+.SS "const FTA_BOLD 1"
+
+.SS "const FTA_ITALIC 2"
+
+.SS "const FTA_NORMAL 0"
+
+.SS "const FTA_REGULAR 0"
+
+.SS "const FTA_STRIKEOUT 8"
+
+.SS "const FTA_UNDERLINE 4"
+
+.SS "const Gauge 14"
+
+.SS "const GREEN 65280"
+
+.SS "const HTMLControl 15"
+
+.SS "const HyperLink 16"
+
+.SS "const IDABORT 3"
+
+.SS "const IDCANCEL 2"
+
+.SS "const IDCLOSE 8"
+
+.SS "const IDDEFAULT 0"
+
+.SS "const IDHELP 9"
+
+.SS "const IDIGNORE 5"
+
+.SS "const IDNO 7"
+
+.SS "const IDOK 1"
+
+.SS "const IDRETRY 4"
+
+.SS "const IDYES 6"
+
+.SS "const ImageButton 17"
+
+.SS "const InvisibleArea 18"
+
+.SS "const Label 19"
+
+.SS "const LIGHTGRAY 12632256"
+
+.SS "const ListBox 20"
+
+.SS "const ListView 21"
+
+.SS "const MAGENTA 16711935"
+
+.SS "const Menu 22"
+
+.SS "const ModalDialog 2"
+
+.SS "const ModelessDialog 3"
+
+.SS "const NakedWindow 4"
+
+.SS "const NOCOLOR \-1"
+
+.SS "const PopupWindow 5"
+
+.SS "const PushButton 23"
+
+.SS "const RadioButton 25"
+
+.SS "const RED 255"
+
+.SS "const ResizableWindow 6"
+
+.SS "const RTFEditBox 24"
+
+.SS "const ScrollBar 26"
+
+.SS "const Slider 27"
+
+.SS "const Spinner 28"
+
+.SS "const StatusBar 29"
+
+.SS "const TabControl 30"
+
+.SS "const Timer Timer"
+
+.SS "const ToolBar 31"
+
+.SS "const ToolDialog 7"
+
+.SS "const TreeView 32"
+
+.SS "const WBC_ALT 32"
+
+.SS "const WBC_AUTOREPEAT 512"
+
+.SS "const WBC_BEEP \-1"
+
+.SS "const WBC_BORDER 8"
+
+.SS "const WBC_BOTTOM 8192"
+
+.SS "const WBC_CENTER 2048"
+
+.SS "const WBC_CHECKBOXES 65536"
+
+.SS "const WBC_CONTROL 8"
+
+.SS "const WBC_CUSTOMDRAW 268435456"
+
+.SS "const WBC_DBLCLICK 64"
+
+.SS "const WBC_DEFAULT 8"
+
+.SS "const WBC_DEFAULTPOS \-2147483648"
+
+.SS "const WBC_DISABLED 2"
+
+.SS "const WBC_ELLIPSIS 131072"
+
+.SS "const WBC_ENABLED 0"
+
+.SS "const WBC_GETFOCUS 4096"
+
+.SS "const WBC_GROUP 524288"
+
+.SS "const WBC_HEADERSEL 32768"
+
+.SS "const WBC_IMAGE 4"
+
+.SS "const WBC_INFO 64"
+
+.SS "const WBC_INVISIBLE 1"
+
+.SS "const WBC_KEYDOWN 1024"
+
+.SS "const WBC_KEYUP 2048"
+
+.SS "const WBC_LBUTTON 1"
+
+.SS "const WBC_LEFT 0"
+
+.SS "const WBC_LINES 128"
+
+.SS "const WBC_LV_BACK 2"
+
+.SS "const WBC_LV_COLUMNS 2"
+
+.SS "const WBC_LV_DEFAULT 0"
+
+.SS "const WBC_LV_DRAW 1"
+
+.SS "const WBC_LV_FORE 1"
+
+.SS "const WBC_LV_NONE 0"
+
+.SS "const WBC_MASKED 256"
+
+.SS "const WBC_MAXIMIZED 2"
+
+.SS "const WBC_MAXSIZE 3"
+
+.SS "const WBC_MBUTTON 16"
+
+.SS "const WBC_MIDDLE 0"
+
+.SS "const WBC_MINIMIZED 1"
+
+.SS "const WBC_MINSIZE 2"
+
+.SS "const WBC_MOUSEDOWN 256"
+
+.SS "const WBC_MOUSEMOVE 128"
+
+.SS "const WBC_MOUSEUP 512"
+
+.SS "const WBC_MULTILINE 128"
+
+.SS "const WBC_MULTISELECT 1073741824"
+
+.SS "const WBC_NOHEADER 268435456"
+
+.SS "const WBC_NORMAL 0"
+
+.SS "const WBC_NOTIFY 16"
+
+.SS "const WBC_NUMBER 1024"
+
+.SS "const WBC_OK 0"
+
+.SS "const WBC_OKCANCEL 33"
+
+.SS "const WBC_QUESTION 32"
+
+.SS "const WBC_RBUTTON 2"
+
+.SS "const WBC_READONLY 64"
+
+.SS "const WBC_REDRAW 16384"
+
+.SS "const WBC_RESIZE 8192"
+
+.SS "const WBC_RIGHT 32"
+
+.SS "const WBC_RTF_TEXT 1"
+
+.SS "const WBC_SHIFT 4"
+
+.SS "const WBC_SINGLE 1048576"
+
+.SS "const WBC_SORT 262144"
+
+.SS "const WBC_STOP 16"
+
+.SS "const WBC_TASKBAR 512"
+
+.SS "const WBC_TITLE 1"
+
+.SS "const WBC_TOP 4096"
+
+.SS "const WBC_TRANSPARENT 536870912"
+
+.SS "const WBC_VERSION '2010\&.10\&.14'"
+
+.SS "const WBC_VISIBLE 0"
+
+.SS "const WBC_WARNING 48"
+
+.SS "const WBC_YESNO 36"
+
+.SS "const WBC_YESNOCANCEL 35"
+
+.SS "const WHITE 16777215"
+
+.SS "const YELLOW 65535"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

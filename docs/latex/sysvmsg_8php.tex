@@ -1,0 +1,314 @@
+\hypertarget{sysvmsg_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/sysvmsg/sysvmsg.php File Reference}
+\label{sysvmsg_8php}\index{vendor/jetbrains/phpstorm-\/stubs/sysvmsg/sysvmsg.php@{vendor/jetbrains/phpstorm-\/stubs/sysvmsg/sysvmsg.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{sysvmsg_8php_a7dde275c1a6ab0aa507ddec2c33920a6}{msg\+\_\+get\+\_\+queue}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}, \$perms=0666)
+\item 
+\mbox{\hyperlink{sysvmsg_8php_a3f964a9aee175d5a6ae5c6b12e8fc8ed}{msg\+\_\+send}} (\$queue, \$msgtype, \$message, \$\mbox{\hyperlink{standard__4_8php_aa120148bb7608edd3ece62b379e5b8b4}{serialize}}=\mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}, \$blocking=\mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}, \&\$errorcode=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{sysvmsg_8php_a9c6e6d746331292dd515f5297efac7f7}{msg\+\_\+receive}} (\$queue, \$desiredmsgtype, \&\$msgtype, \$maxsize, \&\$message, \$\mbox{\hyperlink{standard__4_8php_a9891e1553a8828910a805bb590e78a26}{unserialize}}=\mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}, \$flags=0, \&\$errorcode=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{sysvmsg_8php_a96bbb95d6bf34fd76c0b719211366a65}{msg\+\_\+remove\+\_\+queue}} (\$queue)
+\item 
+\mbox{\hyperlink{sysvmsg_8php_af6b17a3baae754d759cb5538caca3289}{msg\+\_\+stat\+\_\+queue}} (\$queue)
+\item 
+\mbox{\hyperlink{sysvmsg_8php_ab1872b8ab04d76448c8ae1e062cda62c}{msg\+\_\+set\+\_\+queue}} (\$queue, array \$data)
+\item 
+\mbox{\hyperlink{sysvmsg_8php_a4f95ab21adb53a2c7bef04320acb08fe}{msg\+\_\+queue\+\_\+exists}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{sysvmsg_8php_a0498b865c44e6467abb93f83815818c7}{M\+S\+G\+\_\+\+I\+P\+C\+\_\+\+N\+O\+W\+A\+IT}} 1
+\item 
+const \mbox{\hyperlink{sysvmsg_8php_ac02f4c59815bc91779dd71ce03bb8bc6}{M\+S\+G\+\_\+\+E\+A\+G\+A\+IN}} 11
+\item 
+const \mbox{\hyperlink{sysvmsg_8php_afe82af7130c1330e436825b5def14d61}{M\+S\+G\+\_\+\+E\+N\+O\+M\+SG}} 42
+\item 
+const \mbox{\hyperlink{sysvmsg_8php_a26f35477c767f92c68f57d7a9f759590}{M\+S\+G\+\_\+\+N\+O\+E\+R\+R\+OR}} 2
+\item 
+const \mbox{\hyperlink{sysvmsg_8php_ab077fcf53ca81982457e6ac0a9b1502a}{M\+S\+G\+\_\+\+E\+X\+C\+E\+PT}} 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sysvmsg_8php_a7dde275c1a6ab0aa507ddec2c33920a6}\label{sysvmsg_8php_a7dde275c1a6ab0aa507ddec2c33920a6}} 
+\index{sysvmsg.php@{sysvmsg.php}!msg\_get\_queue@{msg\_get\_queue}}
+\index{msg\_get\_queue@{msg\_get\_queue}!sysvmsg.php@{sysvmsg.php}}
+\doxysubsubsection{\texorpdfstring{msg\_get\_queue()}{msg\_get\_queue()}}
+{\footnotesize\ttfamily msg\+\_\+get\+\_\+queue (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$perms = {\ttfamily 0666} }\end{DoxyParamCaption})}
+
+Create or attach to a message queue \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$key }} Message queue numeric ID 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$perms} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Queue permissions. Default to 0666. If the message queue already exists, the {\itshape perms} will be ignored. 
+
+\begin{DoxyReturn}{Returns}
+resource a resource handle that can be used to access the System V message queue. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sysvmsg_8php_a4f95ab21adb53a2c7bef04320acb08fe}\label{sysvmsg_8php_a4f95ab21adb53a2c7bef04320acb08fe}} 
+\index{sysvmsg.php@{sysvmsg.php}!msg\_queue\_exists@{msg\_queue\_exists}}
+\index{msg\_queue\_exists@{msg\_queue\_exists}!sysvmsg.php@{sysvmsg.php}}
+\doxysubsubsection{\texorpdfstring{msg\_queue\_exists()}{msg\_queue\_exists()}}
+{\footnotesize\ttfamily msg\+\_\+queue\+\_\+exists (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Check whether a message queue exists \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$key }} Queue key. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{sysvmsg_8php_a9c6e6d746331292dd515f5297efac7f7}\label{sysvmsg_8php_a9c6e6d746331292dd515f5297efac7f7}} 
+\index{sysvmsg.php@{sysvmsg.php}!msg\_receive@{msg\_receive}}
+\index{msg\_receive@{msg\_receive}!sysvmsg.php@{sysvmsg.php}}
+\doxysubsubsection{\texorpdfstring{msg\_receive()}{msg\_receive()}}
+{\footnotesize\ttfamily msg\+\_\+receive (\begin{DoxyParamCaption}\item[{}]{\$queue,  }\item[{}]{\$desiredmsgtype,  }\item[{\&}]{\$msgtype,  }\item[{}]{\$maxsize,  }\item[{\&}]{\$message,  }\item[{}]{\$unserialize = {\ttfamily \mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}},  }\item[{}]{\$flags = {\ttfamily 0},  }\item[{\&}]{\$errorcode = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Receive a message from a message queue \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$queue  int \$desiredmsgtype }} If {\itshape desiredmsgtype} is 0, the message from the front of the queue is returned. If {\itshape desiredmsgtype} is greater than 0, then the first message of that type is returned. If {\itshape desiredmsgtype} is less than 0, the first message on the queue with the lowest type less than or equal to the absolute value of {\itshape desiredmsgtype} will be read. If no messages match the criteria, your script will wait until a suitable message arrives on the queue. You can prevent the script from blocking by specifying {\bfseries{M\+S\+G\+\_\+\+I\+P\+C\+\_\+\+N\+O\+W\+A\+IT}} in the {\itshape flags} parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$msgtype} & \\
+\hline
+\end{DoxyParams}
+The type of the message that was received will be stored in this parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$maxsize} & \\
+\hline
+\end{DoxyParams}
+The maximum size of message to be accepted is specified by the {\itshape maxsize}; if the message in the queue is larger than this size the function will fail (unless you set {\itshape flags} as described below). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+The received message will be stored in {\itshape message}, unless there were errors receiving the message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$unserialize} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If set to {\bfseries{T\+R\+UE}}, the message is treated as though it was serialized using the same mechanism as the session module. The message will be unserialized and then returned to your script. This allows you to easily receive arrays or complex object structures from other P\+HP scripts, or if you are using the W\+D\+DX serializer, from any W\+D\+DX compatible source. 
+
+If {\itshape unserialize} is {\bfseries{F\+A\+L\+SE}}, the message will be returned as a binary-\/safe string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The optional {\itshape flags} allows you to pass flags to the low-\/level msgrcv system call. It defaults to 0, but you may specify one or more of the following values (by adding or O\+Ring them together). \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+values for msg\+\_\+receive 
+
+{\bfseries{M\+S\+G\+\_\+\+I\+P\+C\+\_\+\+N\+O\+W\+A\+IT}} 
+
+If there are no messages of the {\itshape desiredmsgtype}, return immediately and do not wait. The function will fail and return an integer value corresponding to {\bfseries{M\+S\+G\+\_\+\+E\+N\+O\+M\+SG}}.   
+
+{\bfseries{M\+S\+G\+\_\+\+E\+X\+C\+E\+PT}} 
+
+Using this flag in combination with a {\itshape desiredmsgtype} greater than 0 will cause the function to receive the first message that is not equal to {\itshape desiredmsgtype}.  
+
+{\bfseries{M\+S\+G\+\_\+\+N\+O\+E\+R\+R\+OR}} 
+
+If the message is longer than {\itshape maxsize}, setting this flag will truncate the message to {\itshape maxsize} and will not signal an error.   
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$errorcode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If the function fails, the optional {\itshape errorcode} will be set to the value of the system errno variable. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+
+
+Upon successful completion the message queue data structure is updated as follows\+: msg\+\_\+lrpid is set to the process-\/\+ID of the calling process, msg\+\_\+qnum is decremented by 1 and msg\+\_\+rtime is set to the current time. \begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sysvmsg_8php_a96bbb95d6bf34fd76c0b719211366a65}\label{sysvmsg_8php_a96bbb95d6bf34fd76c0b719211366a65}} 
+\index{sysvmsg.php@{sysvmsg.php}!msg\_remove\_queue@{msg\_remove\_queue}}
+\index{msg\_remove\_queue@{msg\_remove\_queue}!sysvmsg.php@{sysvmsg.php}}
+\doxysubsubsection{\texorpdfstring{msg\_remove\_queue()}{msg\_remove\_queue()}}
+{\footnotesize\ttfamily msg\+\_\+remove\+\_\+queue (\begin{DoxyParamCaption}\item[{}]{\$queue }\end{DoxyParamCaption})}
+
+Destroy a message queue \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$queue }} Message queue resource handle 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sysvmsg_8php_a3f964a9aee175d5a6ae5c6b12e8fc8ed}\label{sysvmsg_8php_a3f964a9aee175d5a6ae5c6b12e8fc8ed}} 
+\index{sysvmsg.php@{sysvmsg.php}!msg\_send@{msg\_send}}
+\index{msg\_send@{msg\_send}!sysvmsg.php@{sysvmsg.php}}
+\doxysubsubsection{\texorpdfstring{msg\_send()}{msg\_send()}}
+{\footnotesize\ttfamily msg\+\_\+send (\begin{DoxyParamCaption}\item[{}]{\$queue,  }\item[{}]{\$msgtype,  }\item[{}]{\$message,  }\item[{}]{\$serialize = {\ttfamily \mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}},  }\item[{}]{\$blocking = {\ttfamily \mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}},  }\item[{\&}]{\$errorcode = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Send a message to a message queue \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$queue  int \$msgtype  mixed \$message  bool \$serialize \mbox{[}optional\mbox{]} }} The optional {\itshape serialize} controls how the {\itshape message} is sent. {\itshape serialize} defaults to {\bfseries{T\+R\+UE}} which means that the {\itshape message} is serialized using the same mechanism as the session module before being sent to the queue. This allows complex arrays and objects to be sent to other P\+HP scripts, or if you are using the W\+D\+DX serializer, to any W\+D\+DX compatible client. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$blocking} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If the message is too large to fit in the queue, your script will wait until another process reads messages from the queue and frees enough space for your message to be sent. This is called blocking; you can prevent blocking by setting the optional {\itshape blocking} parameter to {\bfseries{F\+A\+L\+SE}}, in which case {\bfseries{msg\+\_\+send}} will immediately return {\bfseries{F\+A\+L\+SE}} if the message is too big for the queue, and set the optional {\itshape errorcode} to {\bfseries{M\+S\+G\+\_\+\+E\+A\+G\+A\+IN}}, indicating that you should try to send your message again a little later on. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$errorcode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+
+
+Upon successful completion the message queue data structure is updated as follows\+: {\itshape msg\+\_\+lspid} is set to the process-\/\+ID of the calling process, {\itshape msg\+\_\+qnum} is incremented by 1 and {\itshape msg\+\_\+stime} is set to the current time. \begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sysvmsg_8php_ab1872b8ab04d76448c8ae1e062cda62c}\label{sysvmsg_8php_ab1872b8ab04d76448c8ae1e062cda62c}} 
+\index{sysvmsg.php@{sysvmsg.php}!msg\_set\_queue@{msg\_set\_queue}}
+\index{msg\_set\_queue@{msg\_set\_queue}!sysvmsg.php@{sysvmsg.php}}
+\doxysubsubsection{\texorpdfstring{msg\_set\_queue()}{msg\_set\_queue()}}
+{\footnotesize\ttfamily msg\+\_\+set\+\_\+queue (\begin{DoxyParamCaption}\item[{}]{\$queue,  }\item[{array}]{\$data }\end{DoxyParamCaption})}
+
+Set information in the message queue data structure \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$queue }} Message queue resource handle 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+You specify the values you require by setting the value of the keys that you require in the {\itshape data} array. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sysvmsg_8php_af6b17a3baae754d759cb5538caca3289}\label{sysvmsg_8php_af6b17a3baae754d759cb5538caca3289}} 
+\index{sysvmsg.php@{sysvmsg.php}!msg\_stat\_queue@{msg\_stat\_queue}}
+\index{msg\_stat\_queue@{msg\_stat\_queue}!sysvmsg.php@{sysvmsg.php}}
+\doxysubsubsection{\texorpdfstring{msg\_stat\_queue()}{msg\_stat\_queue()}}
+{\footnotesize\ttfamily msg\+\_\+stat\+\_\+queue (\begin{DoxyParamCaption}\item[{}]{\$queue }\end{DoxyParamCaption})}
+
+Returns information from the message queue data structure \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$queue }} Message queue resource handle 
+
+\begin{DoxyReturn}{Returns}
+array The return value is an array whose keys and values have the following meanings\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+structure for msg\+\_\+stat\+\_\+queue 
+\end{DoxyReturn}
+
+
+msg\+\_\+perm.\+uid 
+
+The uid of the owner of the queue.   
+
+msg\+\_\+perm.\+gid 
+
+The gid of the owner of the queue.   
+
+msg\+\_\+perm.\+mode 
+
+The file access mode of the queue.   
+
+msg\+\_\+stime 
+
+The time that the last message was sent to the queue.   
+
+msg\+\_\+rtime 
+
+The time that the last message was received from the queue.   
+
+msg\+\_\+ctime 
+
+The time that the queue was last changed.   
+
+msg\+\_\+qnum 
+
+The number of messages waiting to be read from the queue.   
+
+msg\+\_\+qbytes 
+
+The maximum number of bytes allowed in one message queue. On Linux, this value may be read and modified via /proc/sys/kernel/msgmnb.   
+
+msg\+\_\+lspid 
+
+The pid of the process that sent the last message to the queue.   
+
+msg\+\_\+lrpid 
+
+The pid of the process that received the last message from the queue.   
+
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{sysvmsg_8php_ac02f4c59815bc91779dd71ce03bb8bc6}\label{sysvmsg_8php_ac02f4c59815bc91779dd71ce03bb8bc6}} 
+\index{sysvmsg.php@{sysvmsg.php}!MSG\_EAGAIN@{MSG\_EAGAIN}}
+\index{MSG\_EAGAIN@{MSG\_EAGAIN}!sysvmsg.php@{sysvmsg.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_EAGAIN}{MSG\_EAGAIN}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+E\+A\+G\+A\+IN 11}
+
+\mbox{\Hypertarget{sysvmsg_8php_afe82af7130c1330e436825b5def14d61}\label{sysvmsg_8php_afe82af7130c1330e436825b5def14d61}} 
+\index{sysvmsg.php@{sysvmsg.php}!MSG\_ENOMSG@{MSG\_ENOMSG}}
+\index{MSG\_ENOMSG@{MSG\_ENOMSG}!sysvmsg.php@{sysvmsg.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_ENOMSG}{MSG\_ENOMSG}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+E\+N\+O\+M\+SG 42}
+
+\mbox{\Hypertarget{sysvmsg_8php_ab077fcf53ca81982457e6ac0a9b1502a}\label{sysvmsg_8php_ab077fcf53ca81982457e6ac0a9b1502a}} 
+\index{sysvmsg.php@{sysvmsg.php}!MSG\_EXCEPT@{MSG\_EXCEPT}}
+\index{MSG\_EXCEPT@{MSG\_EXCEPT}!sysvmsg.php@{sysvmsg.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_EXCEPT}{MSG\_EXCEPT}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+E\+X\+C\+E\+PT 4}
+
+\mbox{\Hypertarget{sysvmsg_8php_a0498b865c44e6467abb93f83815818c7}\label{sysvmsg_8php_a0498b865c44e6467abb93f83815818c7}} 
+\index{sysvmsg.php@{sysvmsg.php}!MSG\_IPC\_NOWAIT@{MSG\_IPC\_NOWAIT}}
+\index{MSG\_IPC\_NOWAIT@{MSG\_IPC\_NOWAIT}!sysvmsg.php@{sysvmsg.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_IPC\_NOWAIT}{MSG\_IPC\_NOWAIT}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+I\+P\+C\+\_\+\+N\+O\+W\+A\+IT 1}
+
+\mbox{\Hypertarget{sysvmsg_8php_a26f35477c767f92c68f57d7a9f759590}\label{sysvmsg_8php_a26f35477c767f92c68f57d7a9f759590}} 
+\index{sysvmsg.php@{sysvmsg.php}!MSG\_NOERROR@{MSG\_NOERROR}}
+\index{MSG\_NOERROR@{MSG\_NOERROR}!sysvmsg.php@{sysvmsg.php}}
+\doxysubsubsection{\texorpdfstring{MSG\_NOERROR}{MSG\_NOERROR}}
+{\footnotesize\ttfamily const M\+S\+G\+\_\+\+N\+O\+E\+R\+R\+OR 2}
+

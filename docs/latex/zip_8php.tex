@@ -1,0 +1,180 @@
+\hypertarget{zip_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/zip/zip.php File Reference}
+\label{zip_8php}\index{vendor/jetbrains/phpstorm-\/stubs/zip/zip.php@{vendor/jetbrains/phpstorm-\/stubs/zip/zip.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_zip_archive}{Zip\+Archive}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zip_8php_af436080981b669c6f1656971c84e68dd}{zip\+\_\+open}} (\$filename)
+\item 
+\mbox{\hyperlink{zip_8php_a2d543866579ec1c69721829139b39790}{zip\+\_\+close}} (\$zip)
+\item 
+\mbox{\hyperlink{zip_8php_a135eb4fcd94a2c33d682c1cefb6909bd}{zip\+\_\+read}} (\$zip)
+\item 
+\mbox{\hyperlink{zip_8php_ae467eeb2a45e2358094b34b841f0f132}{zip\+\_\+entry\+\_\+open}} (\$zip, \$zip\+\_\+entry, \$mode=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{zip_8php_ac20e6960fc19e3fe517aea1a2e83229a}{zip\+\_\+entry\+\_\+close}} (\$zip\+\_\+entry)
+\item 
+\mbox{\hyperlink{zip_8php_a4d3ee777a40f03392722e1d3c7d8a247}{zip\+\_\+entry\+\_\+read}} (\$zip\+\_\+entry, \$length=1024)
+\item 
+\mbox{\hyperlink{zip_8php_a5bb176e5c4fa965e57e3d94596281ba1}{zip\+\_\+entry\+\_\+filesize}} (\$zip\+\_\+entry)
+\item 
+\mbox{\hyperlink{zip_8php_aab35197974005eeeb190ecf28443084b}{zip\+\_\+entry\+\_\+name}} (\$zip\+\_\+entry)
+\item 
+\mbox{\hyperlink{zip_8php_a75ddc34f75b460293619f98c86b5b809}{zip\+\_\+entry\+\_\+compressedsize}} (\$zip\+\_\+entry)
+\item 
+\mbox{\hyperlink{zip_8php_a76c3e0113febf4497e2236be2bac1eae}{zip\+\_\+entry\+\_\+compressionmethod}} (\$zip\+\_\+entry)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{zip_8php_a2d543866579ec1c69721829139b39790}\label{zip_8php_a2d543866579ec1c69721829139b39790}} 
+\index{zip.php@{zip.php}!zip\_close@{zip\_close}}
+\index{zip\_close@{zip\_close}!zip.php@{zip.php}}
+\doxysubsubsection{\texorpdfstring{zip\_close()}{zip\_close()}}
+{\footnotesize\ttfamily zip\+\_\+close (\begin{DoxyParamCaption}\item[{}]{\$zip }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+1.\+0, P\+HP 5 $>$= 5.\+2.\+0, P\+E\+CL zip $>$= 1.\+0.\+0)~\newline
+ Close a Z\+IP file archive \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zip }} \mbox{\hyperlink{class_a}{A}} Z\+IP file previously opened with {\bfseries{zip\+\_\+open}}. 
+
+\begin{DoxyReturn}{Returns}
+void No value is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{zip_8php_ac20e6960fc19e3fe517aea1a2e83229a}\label{zip_8php_ac20e6960fc19e3fe517aea1a2e83229a}} 
+\index{zip.php@{zip.php}!zip\_entry\_close@{zip\_entry\_close}}
+\index{zip\_entry\_close@{zip\_entry\_close}!zip.php@{zip.php}}
+\doxysubsubsection{\texorpdfstring{zip\_entry\_close()}{zip\_entry\_close()}}
+{\footnotesize\ttfamily zip\+\_\+entry\+\_\+close (\begin{DoxyParamCaption}\item[{}]{\$zip\+\_\+entry }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+1.\+0, P\+HP 5 $>$= 5.\+2.\+0, P\+E\+CL zip $>$= 1.\+0.\+0)~\newline
+ Close a directory entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zip\+\_\+entry }} \mbox{\hyperlink{class_a}{A}} directory entry previously opened {\bfseries{zip\+\_\+entry\+\_\+open}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{zip_8php_a75ddc34f75b460293619f98c86b5b809}\label{zip_8php_a75ddc34f75b460293619f98c86b5b809}} 
+\index{zip.php@{zip.php}!zip\_entry\_compressedsize@{zip\_entry\_compressedsize}}
+\index{zip\_entry\_compressedsize@{zip\_entry\_compressedsize}!zip.php@{zip.php}}
+\doxysubsubsection{\texorpdfstring{zip\_entry\_compressedsize()}{zip\_entry\_compressedsize()}}
+{\footnotesize\ttfamily zip\+\_\+entry\+\_\+compressedsize (\begin{DoxyParamCaption}\item[{}]{\$zip\+\_\+entry }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+1.\+0, P\+HP 5 $>$= 5.\+2.\+0, P\+E\+CL zip $>$= 1.\+0.\+0)~\newline
+ Retrieve the compressed size of a directory entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zip\+\_\+entry }} \mbox{\hyperlink{class_a}{A}} directory entry returned by {\bfseries{zip\+\_\+read}}. 
+
+\begin{DoxyReturn}{Returns}
+int The compressed size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{zip_8php_a76c3e0113febf4497e2236be2bac1eae}\label{zip_8php_a76c3e0113febf4497e2236be2bac1eae}} 
+\index{zip.php@{zip.php}!zip\_entry\_compressionmethod@{zip\_entry\_compressionmethod}}
+\index{zip\_entry\_compressionmethod@{zip\_entry\_compressionmethod}!zip.php@{zip.php}}
+\doxysubsubsection{\texorpdfstring{zip\_entry\_compressionmethod()}{zip\_entry\_compressionmethod()}}
+{\footnotesize\ttfamily zip\+\_\+entry\+\_\+compressionmethod (\begin{DoxyParamCaption}\item[{}]{\$zip\+\_\+entry }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+1.\+0, P\+HP 5 $>$= 5.\+2.\+0, P\+E\+CL zip $>$= 1.\+0.\+0)~\newline
+ Retrieve the compression method of a directory entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zip\+\_\+entry }} \mbox{\hyperlink{class_a}{A}} directory entry returned by {\bfseries{zip\+\_\+read}}. 
+
+\begin{DoxyReturn}{Returns}
+string The compression method. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{zip_8php_a5bb176e5c4fa965e57e3d94596281ba1}\label{zip_8php_a5bb176e5c4fa965e57e3d94596281ba1}} 
+\index{zip.php@{zip.php}!zip\_entry\_filesize@{zip\_entry\_filesize}}
+\index{zip\_entry\_filesize@{zip\_entry\_filesize}!zip.php@{zip.php}}
+\doxysubsubsection{\texorpdfstring{zip\_entry\_filesize()}{zip\_entry\_filesize()}}
+{\footnotesize\ttfamily zip\+\_\+entry\+\_\+filesize (\begin{DoxyParamCaption}\item[{}]{\$zip\+\_\+entry }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+1.\+0, P\+HP 5 $>$= 5.\+2.\+0, P\+E\+CL zip $>$= 1.\+0.\+0)~\newline
+ Retrieve the actual file size of a directory entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zip\+\_\+entry }} \mbox{\hyperlink{class_a}{A}} directory entry returned by {\bfseries{zip\+\_\+read}}. 
+
+\begin{DoxyReturn}{Returns}
+int The size of the directory entry. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{zip_8php_aab35197974005eeeb190ecf28443084b}\label{zip_8php_aab35197974005eeeb190ecf28443084b}} 
+\index{zip.php@{zip.php}!zip\_entry\_name@{zip\_entry\_name}}
+\index{zip\_entry\_name@{zip\_entry\_name}!zip.php@{zip.php}}
+\doxysubsubsection{\texorpdfstring{zip\_entry\_name()}{zip\_entry\_name()}}
+{\footnotesize\ttfamily zip\+\_\+entry\+\_\+name (\begin{DoxyParamCaption}\item[{}]{\$zip\+\_\+entry }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+1.\+0, P\+HP 5 $>$= 5.\+2.\+0, P\+E\+CL zip $>$= 1.\+0.\+0)~\newline
+ Retrieve the name of a directory entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zip\+\_\+entry }} \mbox{\hyperlink{class_a}{A}} directory entry returned by {\bfseries{zip\+\_\+read}}. 
+
+\begin{DoxyReturn}{Returns}
+string The name of the directory entry. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{zip_8php_ae467eeb2a45e2358094b34b841f0f132}\label{zip_8php_ae467eeb2a45e2358094b34b841f0f132}} 
+\index{zip.php@{zip.php}!zip\_entry\_open@{zip\_entry\_open}}
+\index{zip\_entry\_open@{zip\_entry\_open}!zip.php@{zip.php}}
+\doxysubsubsection{\texorpdfstring{zip\_entry\_open()}{zip\_entry\_open()}}
+{\footnotesize\ttfamily zip\+\_\+entry\+\_\+open (\begin{DoxyParamCaption}\item[{}]{\$zip,  }\item[{}]{\$zip\+\_\+entry,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+1.\+0, P\+HP 5 $>$= 5.\+2.\+0, P\+E\+CL zip $>$= 1.\+0.\+0)~\newline
+ Open a directory entry for reading \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zip }} \mbox{\hyperlink{class_a}{A}} valid resource handle returned by {\bfseries{zip\+\_\+open}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$zip\+\_\+entry} & \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} directory entry returned by {\bfseries{zip\+\_\+read}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Any of the modes specified in the documentation of {\bfseries{fopen}}. 
+
+Currently, {\itshape mode} is ignored and is always \char`\"{}rb\char`\"{}. This is due to the fact that zip support in P\+HP is read only access. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+
+
+Unlike {\bfseries{fopen}} and other similar functions, the return value of {\bfseries{zip\+\_\+entry\+\_\+open}} only indicates the result of the operation and is not needed for reading or closing the directory entry. \mbox{\Hypertarget{zip_8php_a4d3ee777a40f03392722e1d3c7d8a247}\label{zip_8php_a4d3ee777a40f03392722e1d3c7d8a247}} 
+\index{zip.php@{zip.php}!zip\_entry\_read@{zip\_entry\_read}}
+\index{zip\_entry\_read@{zip\_entry\_read}!zip.php@{zip.php}}
+\doxysubsubsection{\texorpdfstring{zip\_entry\_read()}{zip\_entry\_read()}}
+{\footnotesize\ttfamily zip\+\_\+entry\+\_\+read (\begin{DoxyParamCaption}\item[{}]{\$zip\+\_\+entry,  }\item[{}]{\$length = {\ttfamily 1024} }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+1.\+0, P\+HP 5 $>$= 5.\+2.\+0, P\+E\+CL zip $>$= 1.\+0.\+0)~\newline
+ Read from an open directory entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zip\+\_\+entry }} \mbox{\hyperlink{class_a}{A}} directory entry returned by {\bfseries{zip\+\_\+read}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The number of bytes to return. 
+
+This should be the uncompressed length you wish to read. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false the data read, empty string on end of a file, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{zip_8php_af436080981b669c6f1656971c84e68dd}\label{zip_8php_af436080981b669c6f1656971c84e68dd}} 
+\index{zip.php@{zip.php}!zip\_open@{zip\_open}}
+\index{zip\_open@{zip\_open}!zip.php@{zip.php}}
+\doxysubsubsection{\texorpdfstring{zip\_open()}{zip\_open()}}
+{\footnotesize\ttfamily zip\+\_\+open (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+1.\+0, P\+HP 5 $>$= 5.\+2.\+0, P\+E\+CL zip $>$= 1.\+0.\+0)~\newline
+ Open a Z\+IP file archive \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} The file name of the Z\+IP archive to open. 
+
+\begin{DoxyReturn}{Returns}
+resource a resource handle for later use with {\bfseries{zip\+\_\+read}} and {\bfseries{zip\+\_\+close}} or returns the number of error if {\itshape filename} does not exist or in case of other error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{zip_8php_a135eb4fcd94a2c33d682c1cefb6909bd}\label{zip_8php_a135eb4fcd94a2c33d682c1cefb6909bd}} 
+\index{zip.php@{zip.php}!zip\_read@{zip\_read}}
+\index{zip\_read@{zip\_read}!zip.php@{zip.php}}
+\doxysubsubsection{\texorpdfstring{zip\_read()}{zip\_read()}}
+{\footnotesize\ttfamily zip\+\_\+read (\begin{DoxyParamCaption}\item[{}]{\$zip }\end{DoxyParamCaption})}
+
+(P\+HP 4 $>$= 4.\+1.\+0, P\+HP 5 $>$= 5.\+2.\+0, P\+E\+CL zip $>$= 1.\+0.\+0)~\newline
+ Read next entry in a Z\+IP file archive \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$zip }} \mbox{\hyperlink{class_a}{A}} Z\+IP file previously opened with {\bfseries{zip\+\_\+open}}. 
+
+\begin{DoxyReturn}{Returns}
+resource a directory entry resource for later use with the zip\+\_\+entry\+\_\+... functions, or {\bfseries{F\+A\+L\+SE}} if there are no more entries to read, or an error code if an error occurred. 
+\end{DoxyReturn}

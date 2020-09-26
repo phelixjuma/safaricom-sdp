@@ -1,0 +1,378 @@
+.TH "vendor/jetbrains/phpstorm-stubs/geoip/geoip.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/geoip/geoip.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBgeoip_database_info\fP ($database=\fBGEOIP_COUNTRY_EDITION\fP)"
+.br
+.ti -1c
+.RI "\fBgeoip_country_code_by_name\fP ($hostname)"
+.br
+.ti -1c
+.RI "\fBgeoip_country_code3_by_name\fP ($hostname)"
+.br
+.ti -1c
+.RI "\fBgeoip_country_name_by_name\fP ($hostname)"
+.br
+.ti -1c
+.RI "\fBgeoip_continent_code_by_name\fP ($hostname)"
+.br
+.ti -1c
+.RI "\fBgeoip_org_by_name\fP ($hostname)"
+.br
+.ti -1c
+.RI "\fBgeoip_record_by_name\fP ($hostname)"
+.br
+.ti -1c
+.RI "\fBgeoip_id_by_name\fP ($hostname)"
+.br
+.ti -1c
+.RI "\fBgeoip_region_by_name\fP ($hostname)"
+.br
+.ti -1c
+.RI "\fBgeoip_isp_by_name\fP ($hostname)"
+.br
+.ti -1c
+.RI "\fBgeoip_db_avail\fP ($database)"
+.br
+.ti -1c
+.RI "\fBgeoip_db_get_all_info\fP ()"
+.br
+.ti -1c
+.RI "\fBgeoip_db_filename\fP ($database)"
+.br
+.ti -1c
+.RI "\fBgeoip_region_name_by_code\fP ($country_code, $region_code)"
+.br
+.ti -1c
+.RI "\fBgeoip_time_zone_by_country_and_region\fP ($country_code, $region_code=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBgeoip_asnum_by_name\fP ($hostname)"
+.br
+.ti -1c
+.RI "\fBgeoip_netspeedcell_by_name\fP ($hostname)"
+.br
+.ti -1c
+.RI "\fBgeoip_setup_custom_directory\fP ($path)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBGEOIP_COUNTRY_EDITION\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEOIP_REGION_EDITION_REV0\fP 7"
+.br
+.ti -1c
+.RI "const \fBGEOIP_CITY_EDITION_REV0\fP 6"
+.br
+.ti -1c
+.RI "const \fBGEOIP_ORG_EDITION\fP 5"
+.br
+.ti -1c
+.RI "const \fBGEOIP_ISP_EDITION\fP 4"
+.br
+.ti -1c
+.RI "const \fBGEOIP_CITY_EDITION_REV1\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEOIP_REGION_EDITION_REV1\fP 3"
+.br
+.ti -1c
+.RI "const \fBGEOIP_PROXY_EDITION\fP 8"
+.br
+.ti -1c
+.RI "const \fBGEOIP_ASNUM_EDITION\fP 9"
+.br
+.ti -1c
+.RI "const \fBGEOIP_NETSPEED_EDITION\fP 10"
+.br
+.ti -1c
+.RI "const \fBGEOIP_DOMAIN_EDITION\fP 11"
+.br
+.ti -1c
+.RI "const \fBGEOIP_UNKNOWN_SPEED\fP 0"
+.br
+.ti -1c
+.RI "const \fBGEOIP_DIALUP_SPEED\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEOIP_CABLEDSL_SPEED\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEOIP_CORPORATE_SPEED\fP 3"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "geoip_asnum_by_name ( $hostname)"
+(PECL geoip >= 1\&.1\&.0)
+.br
+ 
+.PP
+The \fBgeoip_asnum_by_name()\fP function will return the Autonomous System Numbers (ASN) associated with an IP address\&. 
+.PP
+\fBstring $hostname The hostname or IP address  string|false Returns the ASN on success, or \fBFALSE\fP if the address cannot be found in the database\&.  1\&.1\&.0 \fP
+.SS "geoip_continent_code_by_name ( $hostname)"
+(PECL geoip >= 1\&.0\&.3)
+.br
+ Get the two letter continent code \fBstring $hostname \fP The hostname or IP address whose location is to be looked-up\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the two letter continent code on success, or \fBFALSE\fP if the address cannot be found in the database\&. 
+.RE
+.PP
+
+.SS "geoip_country_code3_by_name ( $hostname)"
+(PECL geoip >= 0\&.2\&.0)
+.br
+ Get the three letter country code \fBstring $hostname \fP The hostname or IP address whose location is to be looked-up\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the three letter country code on success, or \fBFALSE\fP if the address cannot be found in the database\&. 
+.RE
+.PP
+
+.SS "geoip_country_code_by_name ( $hostname)"
+(PECL geoip >= 0\&.2\&.0)
+.br
+ Get the two letter country code \fBstring $hostname \fP The hostname or IP address whose location is to be looked-up\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the two letter ISO country code on success, or \fBFALSE\fP if the address cannot be found in the database\&. 
+.RE
+.PP
+
+.SS "geoip_country_name_by_name ( $hostname)"
+(PECL geoip >= 0\&.2\&.0)
+.br
+ Get the full country name \fBstring $hostname \fP The hostname or IP address whose location is to be looked-up\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the country name on success, or \fBFALSE\fP if the address cannot be found in the database\&. 
+.RE
+.PP
+
+.SS "geoip_database_info ( $database = \fC\fBGEOIP_COUNTRY_EDITION\fP\fP)"
+(PECL geoip >= 0\&.2\&.0)
+.br
+ Get GeoIP Database information \fBint $database [optional] \fP The database type as an integer\&. You can use the various constants defined with this extension (ie: GEOIP_*_EDITION)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the corresponding database version, or \fBNULL\fP on error\&. 
+.RE
+.PP
+
+.SS "geoip_db_avail ( $database)"
+(PECL geoip >= 1\&.0\&.1)
+.br
+ Determine if GeoIP Database is available \fBint $database \fP The database type as an integer\&. You can use the various constants defined with this extension (ie: GEOIP_*_EDITION)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool|null \fBTRUE\fP is database exists, \fBFALSE\fP if not found, or \fBNULL\fP on error\&. 
+.RE
+.PP
+
+.SS "geoip_db_filename ( $database)"
+(PECL geoip >= 1\&.0\&.1)
+.br
+ Returns the filename of the corresponding GeoIP Database \fBint $database \fP The database type as an integer\&. You can use the various constants defined with this extension (ie: GEOIP_*_EDITION)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the filename of the corresponding database, or \fBNULL\fP on error\&. 
+.RE
+.PP
+
+.SS "geoip_db_get_all_info ()"
+(PECL geoip >= 1\&.0\&.1)
+.br
+ Returns detailed information about all GeoIP database types \fBarray the associative array\&. \fP
+.SS "geoip_id_by_name ( $hostname)"
+(PECL geoip >= 0\&.2\&.0)
+.br
+ Get the Internet connection type \fBstring $hostname \fP The hostname or IP address whose connection type is to be looked-up\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the connection type\&. 
+.RE
+.PP
+
+.SS "geoip_isp_by_name ( $hostname)"
+(PECL geoip >= 1\&.0\&.2)
+.br
+ Get the Internet Service Provider (ISP) name \fBstring $hostname \fP The hostname or IP address\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the ISP name on success, or \fBFALSE\fP if the address cannot be found in the database\&. 
+.RE
+.PP
+
+.SS "geoip_netspeedcell_by_name ( $hostname)"
+(PECL geoip >= 1\&.1\&.0)
+.br
+ 
+.PP
+The \fBgeoip_netspeedcell_by_name()\fP function will return the Internet connection type and speed corresponding to a hostname or an IP address\&.
+.br
+ 
+.br
+ This function is only available if using GeoIP Library version 1\&.4\&.8 or newer\&.
+.br
+ 
+.br
+ This function is currently only available to users who have bought a commercial GeoIP NetSpeedCell Edition\&. \fBA\fP warning will be issued if the proper database cannot be located\&.
+.br
+ 
+.br
+ The return value is a string, common values are:
+.br
+.IP "\(bu" 2
+Cable/DSL
+.br
+
+.IP "\(bu" 2
+Dialup
+.br
+
+.IP "\(bu" 2
+Cellular
+.br
+
+.IP "\(bu" 2
+Corporate
+.br
+ 
+.PP
+.PP
+\fBstring $hostname The hostname or IP address  string|false Returns the connection speed on success, or \fBFALSE\fP if the address cannot be found in the database\&.  1\&.1\&.0 \fP
+.SS "geoip_org_by_name ( $hostname)"
+(PECL geoip >= 0\&.2\&.0)
+.br
+ Get the organization name \fBstring $hostname \fP The hostname or IP address\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the organization name on success, or \fBFALSE\fP if the address cannot be found in the database\&. 
+.RE
+.PP
+
+.SS "geoip_record_by_name ( $hostname)"
+(PECL geoip >= 0\&.2\&.0)
+.br
+ Returns the detailed City information found in the GeoIP Database \fBstring $hostname \fP The hostname or IP address whose record is to be looked-up\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false the associative array on success, or \fBFALSE\fP if the address cannot be found in the database\&. 
+.RE
+.PP
+
+.SS "geoip_region_by_name ( $hostname)"
+(PECL geoip >= 0\&.2\&.0)
+.br
+ Get the country code and region \fBstring $hostname \fP The hostname or IP address whose region is to be looked-up\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false the associative array on success, or \fBFALSE\fP if the address cannot be found in the database\&. 
+.RE
+.PP
+
+.SS "geoip_region_name_by_code ( $country_code,  $region_code)"
+(PECL geoip >= 1\&.0\&.4)
+.br
+ Returns the region name for some country and region code combo \fBstring $country_code \fP The two-letter country code (see \fBgeoip_country_code_by_name\fP) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$region_code\fP 
+.RE
+.PP
+The two-letter (or digit) region code (see \fBgeoip_region_by_name\fP) 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the region name on success, or \fBFALSE\fP if the country and region code combo cannot be found\&. 
+.RE
+.PP
+
+.SS "geoip_setup_custom_directory ( $path)"
+(PECL geoip >= 1\&.1\&.0)
+.br
+ 
+.PP
+The \fBgeoip_setup_custom_directory()\fP function will change the default directory of the GeoIP database\&. This is equivalent to changing geoip\&.custom_directory 
+.PP
+\fBstring $path The full path of where the GeoIP database is on disk\&.  void  1\&.1\&.0 \fP
+.SS "geoip_time_zone_by_country_and_region ( $country_code,  $region_code = \fC\fBnull\fP\fP)"
+(PECL geoip >= 1\&.0\&.4)
+.br
+ Returns the time zone for some country and region code combo \fBstring $country_code \fP The two-letter country code (see \fBgeoip_country_code_by_name\fP) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$region_code\fP [optional] 
+.RE
+.PP
+The two-letter (or digit) region code (see \fBgeoip_region_by_name\fP) 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the time zone on success, or \fBFALSE\fP if the country and region code combo cannot be found\&. 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const GEOIP_ASNUM_EDITION 9"
+
+.SS "const GEOIP_CABLEDSL_SPEED 2"
+
+.SS "const GEOIP_CITY_EDITION_REV0 6"
+
+.SS "const GEOIP_CITY_EDITION_REV1 2"
+
+.SS "const GEOIP_CORPORATE_SPEED 3"
+
+.SS "const GEOIP_COUNTRY_EDITION 1"
+
+.SS "const GEOIP_DIALUP_SPEED 1"
+
+.SS "const GEOIP_DOMAIN_EDITION 11"
+
+.SS "const GEOIP_ISP_EDITION 4"
+
+.SS "const GEOIP_NETSPEED_EDITION 10"
+
+.SS "const GEOIP_ORG_EDITION 5"
+
+.SS "const GEOIP_PROXY_EDITION 8"
+
+.SS "const GEOIP_REGION_EDITION_REV0 7"
+
+.SS "const GEOIP_REGION_EDITION_REV1 3"
+
+.SS "const GEOIP_UNKNOWN_SPEED 0"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

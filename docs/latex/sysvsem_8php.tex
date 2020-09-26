@@ -1,0 +1,101 @@
+\hypertarget{sysvsem_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/sysvsem/sysvsem.php File Reference}
+\label{sysvsem_8php}\index{vendor/jetbrains/phpstorm-\/stubs/sysvsem/sysvsem.php@{vendor/jetbrains/phpstorm-\/stubs/sysvsem/sysvsem.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{sysvsem_8php_a4f028640a30fcf51e30c7e232e941db0}{sem\+\_\+get}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}, \$max\+\_\+acquire=1, \$perm=0666, \$auto\+\_\+release=1)
+\item 
+\mbox{\hyperlink{sysvsem_8php_a6938005af361b7b68d0ab522c3b2ff73}{sem\+\_\+acquire}} (\$sem\+\_\+identifier, \$nowait=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{sysvsem_8php_aa76737b82c7dfa2f2abfedf8edc21b2b}{sem\+\_\+release}} (\$sem\+\_\+identifier)
+\item 
+\mbox{\hyperlink{sysvsem_8php_a151c4928513400b0c7fe6119466dce86}{sem\+\_\+remove}} (\$sem\+\_\+identifier)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sysvsem_8php_a6938005af361b7b68d0ab522c3b2ff73}\label{sysvsem_8php_a6938005af361b7b68d0ab522c3b2ff73}} 
+\index{sysvsem.php@{sysvsem.php}!sem\_acquire@{sem\_acquire}}
+\index{sem\_acquire@{sem\_acquire}!sysvsem.php@{sysvsem.php}}
+\doxysubsubsection{\texorpdfstring{sem\_acquire()}{sem\_acquire()}}
+{\footnotesize\ttfamily sem\+\_\+acquire (\begin{DoxyParamCaption}\item[{}]{\$sem\+\_\+identifier,  }\item[{}]{\$nowait = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+Acquire a semaphore \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$sem\+\_\+identifier }} {\itshape sem\+\_\+identifier} is a semaphore resource, obtained from {\bfseries{sem\+\_\+get}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$nowait} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Specifies if the process shouldn\textquotesingle{}t wait for the semaphore to be acquired. If set to {\itshape true}, the call will return {\itshape false} immediately if a semaphore cannot be immediately acquired. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sysvsem_8php_a4f028640a30fcf51e30c7e232e941db0}\label{sysvsem_8php_a4f028640a30fcf51e30c7e232e941db0}} 
+\index{sysvsem.php@{sysvsem.php}!sem\_get@{sem\_get}}
+\index{sem\_get@{sem\_get}!sysvsem.php@{sysvsem.php}}
+\doxysubsubsection{\texorpdfstring{sem\_get()}{sem\_get()}}
+{\footnotesize\ttfamily sem\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$max\+\_\+acquire = {\ttfamily 1},  }\item[{}]{\$perm = {\ttfamily 0666},  }\item[{}]{\$auto\+\_\+release = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Get a semaphore id \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$key  int \$max\+\_\+acquire \mbox{[}optional\mbox{]} }} The number of processes that can acquire the semaphore simultaneously is set to {\itshape max\+\_\+acquire}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$perm} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The semaphore permissions. Actually this value is set only if the process finds it is the only process currently attached to the semaphore. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$auto\+\_\+release} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Specifies if the semaphore should be automatically released on request shutdown. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false a positive semaphore identifier on success, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sysvsem_8php_aa76737b82c7dfa2f2abfedf8edc21b2b}\label{sysvsem_8php_aa76737b82c7dfa2f2abfedf8edc21b2b}} 
+\index{sysvsem.php@{sysvsem.php}!sem\_release@{sem\_release}}
+\index{sem\_release@{sem\_release}!sysvsem.php@{sysvsem.php}}
+\doxysubsubsection{\texorpdfstring{sem\_release()}{sem\_release()}}
+{\footnotesize\ttfamily sem\+\_\+release (\begin{DoxyParamCaption}\item[{}]{\$sem\+\_\+identifier }\end{DoxyParamCaption})}
+
+Release a semaphore \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$sem\+\_\+identifier }} \mbox{\hyperlink{class_a}{A}} Semaphore resource handle as returned by {\bfseries{sem\+\_\+get}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{sysvsem_8php_a151c4928513400b0c7fe6119466dce86}\label{sysvsem_8php_a151c4928513400b0c7fe6119466dce86}} 
+\index{sysvsem.php@{sysvsem.php}!sem\_remove@{sem\_remove}}
+\index{sem\_remove@{sem\_remove}!sysvsem.php@{sysvsem.php}}
+\doxysubsubsection{\texorpdfstring{sem\_remove()}{sem\_remove()}}
+{\footnotesize\ttfamily sem\+\_\+remove (\begin{DoxyParamCaption}\item[{}]{\$sem\+\_\+identifier }\end{DoxyParamCaption})}
+
+Remove a semaphore \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$sem\+\_\+identifier }} \mbox{\hyperlink{class_a}{A}} semaphore resource identifier as returned by {\bfseries{sem\+\_\+get}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}

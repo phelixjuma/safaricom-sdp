@@ -1,0 +1,1545 @@
+.TH "vendor/jetbrains/phpstorm-stubs/interbase/interbase.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/interbase/interbase.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBibase_connect\fP ($database=\fBnull\fP, $username=\fBnull\fP, $password=\fBnull\fP, $charset=\fBnull\fP, $buffers=\fBnull\fP, $dialect=\fBnull\fP, $role=\fBnull\fP, $sync=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_pconnect\fP ($database=\fBnull\fP, $username=\fBnull\fP, $password=\fBnull\fP, $charset=\fBnull\fP, $buffers=\fBnull\fP, $dialect=\fBnull\fP, $role=\fBnull\fP, $sync=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_close\fP ($connection_id=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_drop_db\fP ($connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_query\fP ($link_identifier=\fBnull\fP, $query, $bind_args=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_fetch_row\fP ($result_identifier, $fetch_flag=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_fetch_assoc\fP ($result, $fetch_flag=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_fetch_object\fP ($result_id, $fetch_flag=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_free_result\fP ($result_identifier)"
+.br
+.ti -1c
+.RI "\fBibase_name_result\fP ($result, $name)"
+.br
+.ti -1c
+.RI "\fBibase_prepare\fP ($query)"
+.br
+.ti -1c
+.RI "\fBibase_execute\fP ($query, $bind_arg=\fBnull\fP, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_free_query\fP ($query)"
+.br
+.ti -1c
+.RI "\fBibase_gen_id\fP ($generator, $increment=\fBnull\fP, $link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_num_fields\fP ($result_id)"
+.br
+.ti -1c
+.RI "\fBibase_num_params\fP ($query)"
+.br
+.ti -1c
+.RI "\fBibase_affected_rows\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_field_info\fP ($result, $field_number)"
+.br
+.ti -1c
+.RI "\fBibase_param_info\fP ($query, $param_number)"
+.br
+.ti -1c
+.RI "\fBibase_trans\fP ($trans_args=\fBnull\fP, $link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_commit\fP ($link_or_trans_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_rollback\fP ($link_or_trans_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_commit_ret\fP ($link_or_trans_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_rollback_ret\fP ($link_or_trans_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_blob_info\fP ($link_identifier, $blob_id)"
+.br
+.ti -1c
+.RI "\fBibase_blob_create\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_blob_add\fP ($blob_handle, $data)"
+.br
+.ti -1c
+.RI "\fBibase_blob_cancel\fP ($blob_handle)"
+.br
+.ti -1c
+.RI "\fBibase_blob_close\fP ($blob_handle)"
+.br
+.ti -1c
+.RI "\fBibase_blob_open\fP ($link_identifier, $blob_id)"
+.br
+.ti -1c
+.RI "\fBibase_blob_get\fP ($blob_handle, $len)"
+.br
+.ti -1c
+.RI "\fBibase_blob_echo\fP ($blob_id)"
+.br
+.ti -1c
+.RI "\fBibase_blob_import\fP ($link_identifier, $file_handle)"
+.br
+.ti -1c
+.RI "\fBibase_errmsg\fP ()"
+.br
+.ti -1c
+.RI "\fBibase_errcode\fP ()"
+.br
+.ti -1c
+.RI "\fBibase_add_user\fP ($service_handle, $user_name, $password, $first_name=\fBnull\fP, $middle_name=\fBnull\fP, $last_name=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_modify_user\fP ($service_handle, $user_name, $password, $first_name=\fBnull\fP, $middle_name=\fBnull\fP, $last_name=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_delete_user\fP ($service_handle, $user_name)"
+.br
+.ti -1c
+.RI "\fBibase_service_attach\fP ($host, $dba_username, $dba_password)"
+.br
+.ti -1c
+.RI "\fBibase_service_detach\fP ($service_handle)"
+.br
+.ti -1c
+.RI "\fBibase_backup\fP ($service_handle, $source_db, $dest_file, $options=\fBnull\fP, $verbose=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_restore\fP ($service_handle, $source_file, $dest_db, $options=\fBnull\fP, $verbose=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_maintain_db\fP ($service_handle, $db, $action, $argument=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_db_info\fP ($service_handle, $db, $action, $argument=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_server_info\fP ($service_handle, $action)"
+.br
+.ti -1c
+.RI "\fBibase_wait_event\fP ($event_name1, $event_name2=\fBnull\fP, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_set_event_handler\fP ($event_handler, $event_name1, $event_name2=\fBnull\fP, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBibase_free_event_handler\fP ($event)"
+.br
+.ti -1c
+.RI "\fBfbird_connect\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_pconnect\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_close\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_drop_db\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_query\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_fetch_row\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_fetch_assoc\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_fetch_object\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_free_result\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_name_result\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_prepare\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_execute\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_free_query\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_gen_id\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_num_fields\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_num_params\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_affected_rows\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_field_info\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_param_info\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_trans\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_commit\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_rollback\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_commit_ret\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_rollback_ret\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_blob_info\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_blob_create\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_blob_add\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_blob_cancel\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_blob_close\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_blob_open\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_blob_get\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_blob_echo\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_blob_import\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_errmsg\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_errcode\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_add_user\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_modify_user\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_delete_user\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_service_attach\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_service_detach\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_backup\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_restore\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_maintain_db\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_db_info\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_server_info\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_wait_event\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_set_event_handler\fP ()"
+.br
+.ti -1c
+.RI "\fBfbird_free_event_handler\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBIBASE_DEFAULT\fP 0"
+.br
+.ti -1c
+.RI "const \fBIBASE_CREATE\fP 0"
+.br
+.ti -1c
+.RI "const \fBIBASE_TEXT\fP 1"
+.br
+.ti -1c
+.RI "const \fBIBASE_FETCH_BLOBS\fP 1"
+.br
+.ti -1c
+.RI "const \fBIBASE_FETCH_ARRAYS\fP 2"
+.br
+.ti -1c
+.RI "const \fBIBASE_UNIXTIME\fP 4"
+.br
+.ti -1c
+.RI "const \fBIBASE_WRITE\fP 1"
+.br
+.ti -1c
+.RI "const \fBIBASE_READ\fP 2"
+.br
+.ti -1c
+.RI "const \fBIBASE_COMMITTED\fP 8"
+.br
+.ti -1c
+.RI "const \fBIBASE_CONSISTENCY\fP 16"
+.br
+.ti -1c
+.RI "const \fBIBASE_CONCURRENCY\fP 4"
+.br
+.ti -1c
+.RI "const \fBIBASE_REC_VERSION\fP 64"
+.br
+.ti -1c
+.RI "const \fBIBASE_REC_NO_VERSION\fP 32"
+.br
+.ti -1c
+.RI "const \fBIBASE_NOWAIT\fP 256"
+.br
+.ti -1c
+.RI "const \fBIBASE_WAIT\fP 128"
+.br
+.ti -1c
+.RI "const \fBIBASE_BKP_IGNORE_CHECKSUMS\fP 1"
+.br
+.ti -1c
+.RI "const \fBIBASE_BKP_IGNORE_LIMBO\fP 2"
+.br
+.ti -1c
+.RI "const \fBIBASE_BKP_METADATA_ONLY\fP 4"
+.br
+.ti -1c
+.RI "const \fBIBASE_BKP_NO_GARBAGE_COLLECT\fP 8"
+.br
+.ti -1c
+.RI "const \fBIBASE_BKP_OLD_DESCRIPTIONS\fP 16"
+.br
+.ti -1c
+.RI "const \fBIBASE_BKP_NON_TRANSPORTABLE\fP 32"
+.br
+.ti -1c
+.RI "const \fBIBASE_BKP_CONVERT\fP 64"
+.br
+.ti -1c
+.RI "const \fBIBASE_RES_DEACTIVATE_IDX\fP 256"
+.br
+.ti -1c
+.RI "const \fBIBASE_RES_NO_SHADOW\fP 512"
+.br
+.ti -1c
+.RI "const \fBIBASE_RES_NO_VALIDITY\fP 1024"
+.br
+.ti -1c
+.RI "const \fBIBASE_RES_ONE_AT_A_TIME\fP 2048"
+.br
+.ti -1c
+.RI "const \fBIBASE_RES_REPLACE\fP 4096"
+.br
+.ti -1c
+.RI "const \fBIBASE_RES_CREATE\fP 8192"
+.br
+.ti -1c
+.RI "const \fBIBASE_RES_USE_ALL_SPACE\fP 16384"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_PAGE_BUFFERS\fP 5"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_SWEEP_INTERVAL\fP 6"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_SHUTDOWN_DB\fP 7"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_DENY_NEW_TRANSACTIONS\fP 10"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_DENY_NEW_ATTACHMENTS\fP 9"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_RESERVE_SPACE\fP 11"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_RES_USE_FULL\fP 35"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_RES\fP 36"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_WRITE_MODE\fP 12"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_WM_ASYNC\fP 37"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_WM_SYNC\fP 38"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_ACCESS_MODE\fP 13"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_AM_READONLY\fP 39"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_AM_READWRITE\fP 40"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_SET_SQL_DIALECT\fP 14"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_ACTIVATE\fP 256"
+.br
+.ti -1c
+.RI "const \fBIBASE_PRP_DB_ONLINE\fP 512"
+.br
+.ti -1c
+.RI "const \fBIBASE_RPR_CHECK_DB\fP 16"
+.br
+.ti -1c
+.RI "const \fBIBASE_RPR_IGNORE_CHECKSUM\fP 32"
+.br
+.ti -1c
+.RI "const \fBIBASE_RPR_KILL_SHADOWS\fP 64"
+.br
+.ti -1c
+.RI "const \fBIBASE_RPR_MEND_DB\fP 4"
+.br
+.ti -1c
+.RI "const \fBIBASE_RPR_VALIDATE_DB\fP 1"
+.br
+.ti -1c
+.RI "const \fBIBASE_RPR_FULL\fP 128"
+.br
+.ti -1c
+.RI "const \fBIBASE_RPR_SWEEP_DB\fP 2"
+.br
+.ti -1c
+.RI "const \fBIBASE_STS_DATA_PAGES\fP 1"
+.br
+.ti -1c
+.RI "const \fBIBASE_STS_DB_LOG\fP 2"
+.br
+.ti -1c
+.RI "const \fBIBASE_STS_HDR_PAGES\fP 4"
+.br
+.ti -1c
+.RI "const \fBIBASE_STS_IDX_PAGES\fP 8"
+.br
+.ti -1c
+.RI "const \fBIBASE_STS_SYS_RELATIONS\fP 16"
+.br
+.ti -1c
+.RI "const \fBIBASE_SVC_SERVER_VERSION\fP 55"
+.br
+.ti -1c
+.RI "const \fBIBASE_SVC_IMPLEMENTATION\fP 56"
+.br
+.ti -1c
+.RI "const \fBIBASE_SVC_GET_ENV\fP 59"
+.br
+.ti -1c
+.RI "const \fBIBASE_SVC_GET_ENV_LOCK\fP 60"
+.br
+.ti -1c
+.RI "const \fBIBASE_SVC_GET_ENV_MSG\fP 61"
+.br
+.ti -1c
+.RI "const \fBIBASE_SVC_USER_DBPATH\fP 58"
+.br
+.ti -1c
+.RI "const \fBIBASE_SVC_SVR_DB_INFO\fP 50"
+.br
+.ti -1c
+.RI "const \fBIBASE_SVC_GET_USERS\fP 68"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "fbird_add_user ()"
+
+.SS "fbird_affected_rows ()"
+
+.SS "fbird_backup ()"
+
+.SS "fbird_blob_add ()"
+
+.SS "fbird_blob_cancel ()"
+
+.SS "fbird_blob_close ()"
+
+.SS "fbird_blob_create ()"
+
+.SS "fbird_blob_echo ()"
+
+.SS "fbird_blob_get ()"
+
+.SS "fbird_blob_import ()"
+
+.SS "fbird_blob_info ()"
+
+.SS "fbird_blob_open ()"
+
+.SS "fbird_close ()"
+
+.SS "fbird_commit ()"
+
+.SS "fbird_commit_ret ()"
+
+.SS "fbird_connect ()"
+
+.SS "fbird_db_info ()"
+
+.SS "fbird_delete_user ()"
+
+.SS "fbird_drop_db ()"
+
+.SS "fbird_errcode ()"
+
+.SS "fbird_errmsg ()"
+
+.SS "fbird_execute ()"
+
+.SS "fbird_fetch_assoc ()"
+
+.SS "fbird_fetch_object ()"
+
+.SS "fbird_fetch_row ()"
+
+.SS "fbird_field_info ()"
+
+.SS "fbird_free_event_handler ()"
+
+.SS "fbird_free_query ()"
+
+.SS "fbird_free_result ()"
+
+.SS "fbird_gen_id ()"
+
+.SS "fbird_maintain_db ()"
+
+.SS "fbird_modify_user ()"
+
+.SS "fbird_name_result ()"
+
+.SS "fbird_num_fields ()"
+
+.SS "fbird_num_params ()"
+
+.SS "fbird_param_info ()"
+
+.SS "fbird_pconnect ()"
+
+.SS "fbird_prepare ()"
+
+.SS "fbird_query ()"
+
+.SS "fbird_restore ()"
+
+.SS "fbird_rollback ()"
+
+.SS "fbird_rollback_ret ()"
+
+.SS "fbird_server_info ()"
+
+.SS "fbird_service_attach ()"
+
+.SS "fbird_service_detach ()"
+
+.SS "fbird_set_event_handler ()"
+
+.SS "fbird_trans ()"
+
+.SS "fbird_wait_event ()"
+
+.SS "ibase_add_user ( $service_handle,  $user_name,  $password,  $first_name = \fC\fBnull\fP\fP,  $middle_name = \fC\fBnull\fP\fP,  $last_name = \fC\fBnull\fP\fP)"
+Add a user to a security database (only for IB6 or later) \fBresource $service_handle  string $user_name  string $password  string $first_name [optional]  string $middle_name [optional]  string $last_name [optional]  bool true on success or false on failure\&.  4\&.2  5\&.0 \fP
+.SS "ibase_affected_rows ( $link_identifier = \fC\fBnull\fP\fP)"
+Return the number of rows that were affected by the previous query \fBresource $link_identifier [optional] \fP \fBA\fP transaction context\&. If link_identifier is a connection resource, its default transaction is used\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of rows as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_backup ( $service_handle,  $source_db,  $dest_file,  $options = \fC\fBnull\fP\fP,  $verbose = \fC\fBnull\fP\fP)"
+Initiates a backup task in the service manager and returns immediately \fBresource $service_handle  string $source_db  string $dest_file  int $options [optional]  bool $verbose [optional]  mixed  5\&.0 \fP
+.SS "ibase_blob_add ( $blob_handle,  $data)"
+Add data into a newly created blob \fBresource $blob_handle \fP \fBA\fP blob handle opened with ibase_blob_create\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+The data to be added\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_blob_cancel ( $blob_handle)"
+Cancel creating blob \fBresource $blob_handle \fP \fBA\fP BLOB handle opened with ibase_blob_create\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_blob_close ( $blob_handle)"
+Close blob \fBresource $blob_handle \fP \fBA\fP BLOB handle opened with ibase_blob_create or ibase_blob_open\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed If the BLOB was being read, this function returns true on success, if the BLOB was being written to, this function returns a string containing the BLOB id that has been assigned to it by the database\&. On failure, this function returns false\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_blob_create ( $link_identifier = \fC\fBnull\fP\fP)"
+Create a new blob for adding data \fBresource $link_identifier [optional] \fP An InterBase link identifier\&. If omitted, the last opened link is assumed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource a BLOB handle for later use with ibase_blob_add or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_blob_echo ( $blob_id)"
+Output blob contents to browser \fBstring $blob_id \fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_blob_get ( $blob_handle,  $len)"
+Get len bytes data from open blob \fBresource $blob_handle \fP \fBA\fP BLOB handle opened with ibase_blob_open\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$len\fP 
+.RE
+.PP
+Size of returned data\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false at most len bytes from the BLOB, or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_blob_import ( $link_identifier,  $file_handle)"
+Create blob, copy file in it, and close it \fBresource $link_identifier \fP An InterBase link identifier\&. If omitted, the last opened link is assumed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$file_handle\fP 
+.RE
+.PP
+The file handle is a handle returned by fopen\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the BLOB id on success, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_blob_info ( $link_identifier,  $blob_id)"
+Return blob length and other useful info \fBresource $link_identifier \fP An InterBase link identifier\&. If omitted, the last opened link is assumed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blob_id\fP 
+.RE
+.PP
+\fBA\fP BLOB id\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array containing information about a BLOB\&. The information returned consists of the length of the BLOB, the number of segments it contains, the size of the largest segment, and whether it is a stream BLOB or a segmented BLOB\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_blob_open ( $link_identifier,  $blob_id)"
+Open blob for retrieving data parts \fBresource $link_identifier \fP An InterBase link identifier\&. If omitted, the last opened link is assumed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blob_id\fP 
+.RE
+.PP
+\fBA\fP BLOB id\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource a BLOB handle for later use with ibase_blob_get or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_close ( $connection_id = \fC\fBnull\fP\fP)"
+Close a connection to an InterBase database \fBresource $connection_id [optional] \fP An InterBase link identifier returned from ibase_connect\&. If omitted, the last opened link is assumed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_commit ( $link_or_trans_identifier = \fC\fBnull\fP\fP)"
+Commit a transaction \fBresource $link_or_trans_identifier [optional] \fP If called without an argument, this function commits the default transaction of the default link\&. If the argument is a connection identifier, the default transaction of the corresponding connection will be committed\&. If the argument is a transaction identifier, the corresponding transaction will be committed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_commit_ret ( $link_or_trans_identifier = \fC\fBnull\fP\fP)"
+Commit a transaction without closing it \fBresource $link_or_trans_identifier [optional] \fP If called without an argument, this function commits the default transaction of the default link\&. If the argument is a connection identifier, the default transaction of the corresponding connection will be committed\&. If the argument is a transaction identifier, the corresponding transaction will be committed\&. The transaction context will be retained, so statements executed from within this transaction will not be invalidated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_connect ( $database = \fC\fBnull\fP\fP,  $username = \fC\fBnull\fP\fP,  $password = \fC\fBnull\fP\fP,  $charset = \fC\fBnull\fP\fP,  $buffers = \fC\fBnull\fP\fP,  $dialect = \fC\fBnull\fP\fP,  $role = \fC\fBnull\fP\fP,  $sync = \fC\fBnull\fP\fP)"
+Open a connection to an InterBase database \fBstring $database [optional] \fP The database argument has to be a valid path to database file on the server it resides on\&. If the server is not local, it must be prefixed with either 'hostname:' (TCP/IP), '//hostname/' (NetBEUI) or 'hostname@' (IPX/SPX), depending on the connection protocol used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP [optional] 
+.RE
+.PP
+The user name\&. Can be set with the ibase\&.default_user &php\&.ini; directive\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP [optional] 
+.RE
+.PP
+The password for username\&. Can be set with the ibase\&.default_password &php\&.ini; directive\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charset\fP [optional] 
+.RE
+.PP
+charset is the default character set for a database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$buffers\fP [optional] 
+.RE
+.PP
+buffers is the number of database buffers to allocate for the server-side cache\&. If 0 or omitted, server chooses its own default\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dialect\fP [optional] 
+.RE
+.PP
+dialect selects the default SQL dialect for any statement executed within a connection, and it defaults to the highest one supported by client libraries\&. Functional only with InterBase 6 and up\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$role\fP [optional] 
+.RE
+.PP
+Functional only with InterBase 5 and up\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sync\fP [optional] 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an InterBase link identifier on success, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_db_info ( $service_handle,  $db,  $action,  $argument = \fC\fBnull\fP\fP)"
+Request statistics about a database \fBresource $service_handle  string $db  int $action  int $argument [optional]  string  5\&.0 \fP
+.SS "ibase_delete_user ( $service_handle,  $user_name)"
+Delete a user from a security database (only for IB6 or later) \fBresource $service_handle  string $user_name  bool true on success or false on failure\&.  4\&.2  5\&.0 \fP
+.SS "ibase_drop_db ( $connection = \fC\fBnull\fP\fP)"
+Drops a database \fBresource $connection [optional] \fP An InterBase link identifier\&. If omitted, the last opened link is assumed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_errcode ()"
+Return an error code \fBint|false the error code as an integer, or false if no error occurred\&.  5\&.0 \fP
+.SS "ibase_errmsg ()"
+Return error messages \fBstring|false the error message as a string, or false if no error occurred\&.  4\&.0  5\&.0 \fP
+.SS "ibase_execute ( $query,  $bind_arg = \fC\fBnull\fP\fP,  $_ = \fC\fBnull\fP\fP)"
+Execute a previously prepared query \fBresource $query \fP An InterBase query prepared by ibase_prepare\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bind_arg\fP [optional] 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|bool If the query raises an error, returns false\&. If it is successful and there is a (possibly empty) result set (such as with a SELECT query), returns a result identifier\&. If the query was successful and there were no results, returns true\&. 
+.RE
+.PP
+.PP
+In PHP 5\&.0\&.0 and up, this function returns the number of rows affected by the query (if > 0 and applicable to the statement type)\&. \fBA\fP query that succeeded, but did not affect any rows (e\&.g\&. an UPDATE of a non-existent record) will return true\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_fetch_assoc ( $result,  $fetch_flag = \fC\fBnull\fP\fP)"
+Fetch a result row from a query as an associative array \fBresource $result \fP The result handle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fetch_flag\fP [optional] 
+.RE
+.PP
+fetch_flag is a combination of the constants IBASE_TEXT and IBASE_UNIXTIME ORed together\&. Passing IBASE_TEXT will cause this function to return BLOB contents instead of BLOB ids\&. Passing IBASE_UNIXTIME will cause this function to return date/time values as Unix timestamps instead of as formatted strings\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an associative array that corresponds to the fetched row\&. Subsequent calls will return the next row in the result set, or false if there are no more rows\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_fetch_object ( $result_id,  $fetch_flag = \fC\fBnull\fP\fP)"
+Get an object from a InterBase database \fBresource $result_id \fP An InterBase result identifier obtained either by ibase_query or ibase_execute\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fetch_flag\fP [optional] 
+.RE
+.PP
+fetch_flag is a combination of the constants IBASE_TEXT and IBASE_UNIXTIME ORed together\&. Passing IBASE_TEXT will cause this function to return BLOB contents instead of BLOB ids\&. Passing IBASE_UNIXTIME will cause this function to return date/time values as Unix timestamps instead of as formatted strings\&. 
+.PP
+\fBReturns\fP
+.RS 4
+object|false an object with the next row information, or false if there are no more rows\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_fetch_row ( $result_identifier,  $fetch_flag = \fC\fBnull\fP\fP)"
+Fetch a row from an InterBase database \fBresource $result_identifier \fP An InterBase result identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fetch_flag\fP [optional] 
+.RE
+.PP
+fetch_flag is a combination of the constants IBASE_TEXT and IBASE_UNIXTIME ORed together\&. Passing IBASE_TEXT will cause this function to return BLOB contents instead of BLOB ids\&. Passing IBASE_UNIXTIME will cause this function to return date/time values as Unix timestamps instead of as formatted strings\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array that corresponds to the fetched row, or false if there are no more rows\&. Each result column is stored in an array offset, starting at offset 0\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_field_info ( $result,  $field_number)"
+Get information about a field \fBresource $result \fP An InterBase result identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_number\fP 
+.RE
+.PP
+Field offset\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array with the following keys: name, alias, relation, length and type\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_free_event_handler ( $event)"
+Cancels a registered event handler \fBresource $event \fP An event resource, created by ibase_set_event_handler\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_free_query ( $query)"
+Free memory allocated by a prepared query \fBresource $query \fP \fBA\fP query prepared with ibase_prepare\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_free_result ( $result_identifier)"
+Free a result set \fBresource $result_identifier \fP \fBA\fP result set created by ibase_query or ibase_execute\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_gen_id ( $generator,  $increment = \fC\fBnull\fP\fP,  $link_identifier = \fC\fBnull\fP\fP)"
+Increments the named generator and returns its new value \fBstring $generator  int $increment [optional]  resource $link_identifier [optional]  mixed new generator value as integer, or as string if the value is too big\&.  5\&.0 \fP
+.SS "ibase_maintain_db ( $service_handle,  $db,  $action,  $argument = \fC\fBnull\fP\fP)"
+Execute a maintenance command on the database server \fBresource $service_handle  string $db  int $action  int $argument [optional]  bool true on success or false on failure\&.  5\&.0 \fP
+.SS "ibase_modify_user ( $service_handle,  $user_name,  $password,  $first_name = \fC\fBnull\fP\fP,  $middle_name = \fC\fBnull\fP\fP,  $last_name = \fC\fBnull\fP\fP)"
+Modify a user to a security database (only for IB6 or later) \fBresource $service_handle  string $user_name  string $password  string $first_name [optional]  string $middle_name [optional]  string $last_name [optional]  bool true on success or false on failure\&.  4\&.2  5\&.0 \fP
+.SS "ibase_name_result ( $result,  $name)"
+Assigns a name to a result set \fBresource $result \fP An InterBase result set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The name to be assigned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_num_fields ( $result_id)"
+Get the number of fields in a result set \fBresource $result_id \fP An InterBase result identifier\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of fields as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_num_params ( $query)"
+Return the number of parameters in a prepared query \fBresource $query \fP The prepared query handle\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of parameters as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_param_info ( $query,  $param_number)"
+Return information about a parameter in a prepared query \fBresource $query \fP An InterBase prepared query handle\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$param_number\fP 
+.RE
+.PP
+Parameter offset\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array with the following keys: name, alias, relation, length and type\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_pconnect ( $database = \fC\fBnull\fP\fP,  $username = \fC\fBnull\fP\fP,  $password = \fC\fBnull\fP\fP,  $charset = \fC\fBnull\fP\fP,  $buffers = \fC\fBnull\fP\fP,  $dialect = \fC\fBnull\fP\fP,  $role = \fC\fBnull\fP\fP,  $sync = \fC\fBnull\fP\fP)"
+Open a persistent connection to an InterBase database \fBstring $database [optional] \fP The database argument has to be a valid path to database file on the server it resides on\&. If the server is not local, it must be prefixed with either 'hostname:' (TCP/IP), '//hostname/' (NetBEUI) or 'hostname@' (IPX/SPX), depending on the connection protocol used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP [optional] 
+.RE
+.PP
+The user name\&. Can be set with the ibase\&.default_user &php\&.ini; directive\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP [optional] 
+.RE
+.PP
+The password for username\&. Can be set with the ibase\&.default_password &php\&.ini; directive\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charset\fP [optional] 
+.RE
+.PP
+charset is the default character set for a database\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$buffers\fP [optional] 
+.RE
+.PP
+buffers is the number of database buffers to allocate for the server-side cache\&. If 0 or omitted, server chooses its own default\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dialect\fP [optional] 
+.RE
+.PP
+dialect selects the default SQL dialect for any statement executed within a connection, and it defaults to the highest one supported by client libraries\&. Functional only with InterBase 6 and up\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$role\fP [optional] 
+.RE
+.PP
+Functional only with InterBase 5 and up\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sync\fP [optional] 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an InterBase link identifier on success, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_prepare ( $query)"
+Prepare a query for later binding of parameter placeholders and execution \fBstring $query \fP An InterBase query\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a prepared query handle, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_query ( $link_identifier = \fC\fBnull\fP\fP,  $query,  $bind_args = \fC\fBnull\fP\fP)"
+Execute a query on an InterBase database \fBresource $link_identifier [optional] \fP An InterBase link identifier\&. If omitted, the last opened link is assumed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$query\fP 
+.RE
+.PP
+An InterBase query\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bind_args\fP [optional] 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+resource|bool If the query raises an error, returns false\&. If it is successful and there is a (possibly empty) result set (such as with a SELECT query), returns a result identifier\&. If the query was successful and there were no results, returns true\&. 
+.RE
+.PP
+.PP
+In PHP 5\&.0\&.0 and up, this function will return the number of rows affected by the query for INSERT, UPDATE and DELETE statements\&. In order to retain backward compatibility, it will return true for these statements if the query succeeded without affecting any rows\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_restore ( $service_handle,  $source_file,  $dest_db,  $options = \fC\fBnull\fP\fP,  $verbose = \fC\fBnull\fP\fP)"
+Initiates a restore task in the service manager and returns immediately \fBresource $service_handle  string $source_file  string $dest_db  int $options [optional]  bool $verbose [optional]  mixed  5\&.0 \fP
+.SS "ibase_rollback ( $link_or_trans_identifier = \fC\fBnull\fP\fP)"
+Roll back a transaction \fBresource $link_or_trans_identifier [optional] \fP If called without an argument, this function rolls back the default transaction of the default link\&. If the argument is a connection identifier, the default transaction of the corresponding connection will be rolled back\&. If the argument is a transaction identifier, the corresponding transaction will be rolled back\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_rollback_ret ( $link_or_trans_identifier = \fC\fBnull\fP\fP)"
+Roll back a transaction without closing it \fBresource $link_or_trans_identifier [optional] \fP If called without an argument, this function rolls back the default transaction of the default link\&. If the argument is a connection identifier, the default transaction of the corresponding connection will be rolled back\&. If the argument is a transaction identifier, the corresponding transaction will be rolled back\&. The transaction context will be retained, so statements executed from within this transaction will not be invalidated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_server_info ( $service_handle,  $action)"
+Request information about a database server \fBresource $service_handle  int $action  string  5\&.0 \fP
+.SS "ibase_service_attach ( $host,  $dba_username,  $dba_password)"
+Connect to the service manager \fBstring $host  string $dba_username  string $dba_password  resource  5\&.0 \fP
+.SS "ibase_service_detach ( $service_handle)"
+Disconnect from the service manager \fBresource $service_handle  bool true on success or false on failure\&.  5\&.0 \fP
+.SS "ibase_set_event_handler ( $event_handler,  $event_name1,  $event_name2 = \fC\fBnull\fP\fP,  $_ = \fC\fBnull\fP\fP)"
+Register a callback function to be called when events are posted \fBcallback $event_handler \fP The callback is called with the event name and the link resource as arguments whenever one of the specified events is posted by the database\&. 
+.PP
+The callback must return false if the event handler should be canceled\&. Any other return value is ignored\&. This function accepts up to 15 event arguments\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$event_name1\fP 
+.RE
+.PP
+An event name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$event_name2\fP [optional] 
+.RE
+.PP
+At most 15 events allowed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource The return value is an event resource\&. This resource can be used to free the event handler using ibase_free_event_handler\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_trans ( $trans_args = \fC\fBnull\fP\fP,  $link_identifier = \fC\fBnull\fP\fP)"
+Begin a transaction \fBint $trans_args [optional] \fP trans_args can be a combination of IBASE_READ, IBASE_WRITE, IBASE_COMMITTED, IBASE_CONSISTENCY, IBASE_CONCURRENCY, IBASE_REC_VERSION, IBASE_REC_NO_VERSION, IBASE_WAIT and IBASE_NOWAIT\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+An InterBase link identifier\&. If omitted, the last opened link is assumed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a transaction handle, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ibase_wait_event ( $event_name1,  $event_name2 = \fC\fBnull\fP\fP,  $_ = \fC\fBnull\fP\fP)"
+Wait for an event to be posted by the database \fBstring $event_name1 \fP The event name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$event_name2\fP [optional] 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string the name of the event that was posted\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const IBASE_BKP_CONVERT 64"
+Options to ibase_backup \fBhttps://php\&.net/manual/en/ibase\&.constants\&.php\fP
+.SS "const IBASE_BKP_IGNORE_CHECKSUMS 1"
+
+.SS "const IBASE_BKP_IGNORE_LIMBO 2"
+
+.SS "const IBASE_BKP_METADATA_ONLY 4"
+
+.SS "const IBASE_BKP_NO_GARBAGE_COLLECT 8"
+
+.SS "const IBASE_BKP_NON_TRANSPORTABLE 32"
+
+.SS "const IBASE_BKP_OLD_DESCRIPTIONS 16"
+
+.SS "const IBASE_COMMITTED 8"
+
+.SS "const IBASE_CONCURRENCY 4"
+
+.SS "const IBASE_CONSISTENCY 16"
+
+.SS "const IBASE_CREATE 0"
+
+.SS "const IBASE_DEFAULT 0"
+
+.SS "const IBASE_FETCH_ARRAYS 2"
+
+.SS "const IBASE_FETCH_BLOBS 1"
+
+.SS "const IBASE_NOWAIT 256"
+
+.SS "const IBASE_PRP_ACCESS_MODE 13"
+
+.SS "const IBASE_PRP_ACTIVATE 256"
+
+.SS "const IBASE_PRP_AM_READONLY 39"
+
+.SS "const IBASE_PRP_AM_READWRITE 40"
+
+.SS "const IBASE_PRP_DB_ONLINE 512"
+
+.SS "const IBASE_PRP_DENY_NEW_ATTACHMENTS 9"
+
+.SS "const IBASE_PRP_DENY_NEW_TRANSACTIONS 10"
+
+.SS "const IBASE_PRP_PAGE_BUFFERS 5"
+
+.SS "const IBASE_PRP_RES 36"
+
+.SS "const IBASE_PRP_RES_USE_FULL 35"
+
+.SS "const IBASE_PRP_RESERVE_SPACE 11"
+
+.SS "const IBASE_PRP_SET_SQL_DIALECT 14"
+
+.SS "const IBASE_PRP_SHUTDOWN_DB 7"
+
+.SS "const IBASE_PRP_SWEEP_INTERVAL 6"
+
+.SS "const IBASE_PRP_WM_ASYNC 37"
+
+.SS "const IBASE_PRP_WM_SYNC 38"
+
+.SS "const IBASE_PRP_WRITE_MODE 12"
+
+.SS "const IBASE_READ 2"
+
+.SS "const IBASE_REC_NO_VERSION 32"
+
+.SS "const IBASE_REC_VERSION 64"
+
+.SS "const IBASE_RES_CREATE 8192"
+
+.SS "const IBASE_RES_DEACTIVATE_IDX 256"
+
+.SS "const IBASE_RES_NO_SHADOW 512"
+
+.SS "const IBASE_RES_NO_VALIDITY 1024"
+
+.SS "const IBASE_RES_ONE_AT_A_TIME 2048"
+
+.SS "const IBASE_RES_REPLACE 4096"
+
+.SS "const IBASE_RES_USE_ALL_SPACE 16384"
+Options to ibase_restore \fBhttps://php\&.net/manual/en/ibase\&.constants\&.php\fP
+.SS "const IBASE_RPR_CHECK_DB 16"
+
+.SS "const IBASE_RPR_FULL 128"
+
+.SS "const IBASE_RPR_IGNORE_CHECKSUM 32"
+
+.SS "const IBASE_RPR_KILL_SHADOWS 64"
+
+.SS "const IBASE_RPR_MEND_DB 4"
+
+.SS "const IBASE_RPR_SWEEP_DB 2"
+Options to ibase_maintain_db \fBhttps://php\&.net/manual/en/ibase\&.constants\&.php\fP
+.SS "const IBASE_RPR_VALIDATE_DB 1"
+
+.SS "const IBASE_STS_DATA_PAGES 1"
+
+.SS "const IBASE_STS_DB_LOG 2"
+
+.SS "const IBASE_STS_HDR_PAGES 4"
+
+.SS "const IBASE_STS_IDX_PAGES 8"
+
+.SS "const IBASE_STS_SYS_RELATIONS 16"
+Options to ibase_db_info \fBhttps://php\&.net/manual/en/ibase\&.constants\&.php\fP
+.SS "const IBASE_SVC_GET_ENV 59"
+
+.SS "const IBASE_SVC_GET_ENV_LOCK 60"
+
+.SS "const IBASE_SVC_GET_ENV_MSG 61"
+
+.SS "const IBASE_SVC_GET_USERS 68"
+Options to ibase_server_info \fBhttps://php\&.net/manual/en/ibase\&.constants\&.php\fP
+.SS "const IBASE_SVC_IMPLEMENTATION 56"
+
+.SS "const IBASE_SVC_SERVER_VERSION 55"
+
+.SS "const IBASE_SVC_SVR_DB_INFO 50"
+
+.SS "const IBASE_SVC_USER_DBPATH 58"
+
+.SS "const IBASE_TEXT 1"
+
+.SS "const IBASE_UNIXTIME 4"
+
+.SS "const IBASE_WAIT 128"
+
+.SS "const IBASE_WRITE 1"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,994 @@
+\hypertarget{_2usr_2local_2var_2www_2safaricom-sdp-sdk_2vendor_2jetbrains_2phpstorm-stubs_2redis_2_redis_8php-example}{}\doxysection{/usr/local/var/www/safaricom-\/sdp-\/sdk/vendor/jetbrains/phpstorm-\/stubs/redis/\+Redis.\+php}
+Connects to a \mbox{\hyperlink{class_redis}{Redis}} instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$host} & can be a host, or the path to a unix domain socket \\
+\hline
+int & {\em \$port} & optional \\
+\hline
+float & {\em \$timeout} & value in seconds (optional, default is 0.\+0 meaning unlimited) \\
+\hline
+null & {\em \$reserved} & should be null if \$retry\+Interval is specified \\
+\hline
+int & {\em \$retry\+Interval} & retry interval in milliseconds. \\
+\hline
+float & {\em \$read\+Timeout} & value in seconds (optional, default is 0 meaning unlimited)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE on success, F\+A\+L\+SE on error
+\end{DoxyReturn}
+
+\begin{DoxyPre}
+\$redis-\/>connect('127.0.0.1', 6379);
+\$redis-\/>connect('127.0.0.1');            // port 6379 by default
+\$redis-\/>connect('127.0.0.1', 6379, 2.5); // 2.5 sec timeout.
+\$redis-\/>connect('/tmp/redis.sock');      // unix domain socket.
+\end{DoxyPre}
+
+
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{<?\mbox{\hyperlink{patch_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{php}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{class_redis}{Redis}}}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a5507b98b7cd5b08ed2bda290c8501baa}{AFTER}}                 = \textcolor{stringliteral}{'after'};}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a8cfc0b4008de0a3361a5320c4a0d8b06}{BEFORE}}                = \textcolor{stringliteral}{'before'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a61c06f5494a0e156b8b2b1209957b68a}{OPT\_SERIALIZER}}        = 1;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_acc7874ed644bd36b7f6c6381c344131f}{OPT\_PREFIX}}            = 2;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_aeede9d3f5636b3579e704c7433ceb834}{OPT\_READ\_TIMEOUT}}      = 3;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a851400963bfb72e9443297e76eac649d}{OPT\_SCAN}}              = 4;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_af5a89ca3a21a5f75800892aca6b6e527}{OPT\_SLAVE\_FAILOVER}}    = 5;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_af8cfe626d23450a5adf5193d1f2367fe}{FAILOVER\_NONE}}         = 0;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a880e3f32918bb06585b13e2fcfc6d107}{FAILOVER\_ERROR}}        = 1;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a49b3afbfbafdae13f847b1c4e02b9d0d}{FAILOVER\_DISTRIBUTE}}   = 2;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a3f25cd511584141d3f55947ef2bb3c6f}{SCAN\_NORETRY}}          = 0;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a39ea7a91d32b796560fb9e0f8693e691}{SCAN\_RETRY}}            = 1;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a26b1dad0b989e8be575032215240e2e9}{SERIALIZER\_NONE}}       = 0;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a0e322a9ee2c9862feefb59a1624700fe}{SERIALIZER\_PHP}}        = 1;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a00422823775715c9c7e2ef5dca9f0515}{SERIALIZER\_IGBINARY}}   = 2;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a135696843444c53ffd7a1cccf9143ee3}{SERIALIZER\_MSGPACK}}    = 3;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_ae99eb24362060feabd4b0d248d302d1b}{SERIALIZER\_JSON}}       = 4;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a3a2d2babc60ef6b1ca1953fbcc99da89}{ATOMIC}}                = 0;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a1d786a0085f3342381b6f10a21f2ee9a}{MULTI}}                 = 1;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a6574ed6f3b7f21320bd6ac2660241c6b}{PIPELINE}}              = 2;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_abc2fefe41581b611b89cda6f512fe892}{REDIS\_NOT\_FOUND}}       = 0;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a96c301e12b040ab9410a89bbebc416f3}{REDIS\_STRING}}          = 1;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a75dcf8317e4a0ed2a6a663edc0ab539d}{REDIS\_SET}}             = 2;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_a5c0717678b6469fdbbc7ffb037aefe7d}{REDIS\_LIST}}            = 3;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_aa9997ec83c06801a6b591e388e6ec07b}{REDIS\_ZSET}}            = 4;}
+\DoxyCodeLine{    \textcolor{keyword}{const} \mbox{\hyperlink{class_redis_ae85974434d7285a7123a98da3bce22a6}{REDIS\_HASH}}            = 5;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_a095c5d389db211932136b53f25f39685}{\_\_construct}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_aeafa7d7eafbcd0abde080c5e520173b7}{connect}}(}
+\DoxyCodeLine{        \$host,}
+\DoxyCodeLine{        \$port = 6379,}
+\DoxyCodeLine{        \$timeout = 0.0,}
+\DoxyCodeLine{        \$reserved = \textcolor{keyword}{null},}
+\DoxyCodeLine{        \$retryInterval = 0,}
+\DoxyCodeLine{        \$readTimeout = 0.0}
+\DoxyCodeLine{    ) \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_a72db01454ac0d7774316fae881d27820}{open}}(}
+\DoxyCodeLine{        \$host,}
+\DoxyCodeLine{        \$port = 6379,}
+\DoxyCodeLine{        \$timeout = 0.0,}
+\DoxyCodeLine{        \$reserved = \textcolor{keyword}{null},}
+\DoxyCodeLine{        \$retryInterval = 0,}
+\DoxyCodeLine{        \$readTimeout = 0.0}
+\DoxyCodeLine{    ) \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_af160f7fbbf281d018ae3162521b8267d}{isConnected}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_a39895a44b52bdced039e698588aaf18e}{getHost}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_afd4db46d3c12f47f0bee19cd2101be64}{getPort}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_afa30a2356a233846bf7d5bdd9c5da8fd}{getDbNum}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_abac5019c5daf3a27d739aa3a249fdb31}{getTimeout}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_a4c7014bbf032220b19a2ca9f7a6a52a2}{getReadTimeout}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_aab2c1cbe002853e2f27b2d89c201c696}{getPersistentID}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_a6addb0b156546cb01210249378902bd2}{getAuth}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_a822b595630cfc3566f49fd6520bb0bf4}{pconnect}}(}
+\DoxyCodeLine{        \$host,}
+\DoxyCodeLine{        \$port = 6379,}
+\DoxyCodeLine{        \$timeout = 0.0,}
+\DoxyCodeLine{        \$persistentId = \textcolor{keyword}{null},}
+\DoxyCodeLine{        \$retryInterval = 0,}
+\DoxyCodeLine{        \$readTimeout = 0.0}
+\DoxyCodeLine{    ) \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_a51f5f09cd2670dfb041502dd5e026228}{popen}}(}
+\DoxyCodeLine{        \$host,}
+\DoxyCodeLine{        \$port = 6379,}
+\DoxyCodeLine{        \$timeout = 0.0,}
+\DoxyCodeLine{        \$persistentId = \textcolor{stringliteral}{''},}
+\DoxyCodeLine{        \$retryInterval = 0,}
+\DoxyCodeLine{        \$readTimeout = 0.0}
+\DoxyCodeLine{    ) \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_aa69c8bf1f1dcf4e72552efff1fe3e87e}{close}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_a3710bcd28ee7167d12a428e978cad37d}{swapdb}}(\textcolor{keywordtype}{int} \$db1, \textcolor{keywordtype}{int} \$db2)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_a1eb6a860a7e2236618f8d800b9fad69d}{setOption}}(\$option, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_ae97cabd7c8b25210b82f5253635d247a}{getOption}}(\$option)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_a6dad377f74b0ce6f21b485ba11052746}{ping}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} echo(\$message)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \textcolor{keyword}{get}(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \textcolor{keyword}{set}(\$key, \$value, \$timeout = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} setex(\$key, \$ttl, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} psetex(\$key, \$ttl, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} setnx(\$key, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} del(\$key1, ...\$otherKeys)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \textcolor{keyword}{delete}(\$key1, \$key2 = \textcolor{keyword}{null}, \$key3 = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{standard__2_8php_a7316455e62933bb3606c384a6b14fd05}{unlink}}(\$key1, \$key2 = \textcolor{keyword}{null}, \$key3 = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} multi(\$mode = \mbox{\hyperlink{class_redis_a1d786a0085f3342381b6f10a21f2ee9a}{Redis::MULTI}})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{standard__2_8php_ad89e84f5a331176040e0e123ea49340d}{exec}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} discard()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} watch(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} unwatch()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} subscribe(\$channels, \$callback)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} psubscribe(\$patterns, \$callback)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} publish(\$channel, \$message)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} pubsub(\$keyword, \$argument)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} unsubscribe(\$channels = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} punsubscribe(\$patterns = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} exists(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} incr(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} incrByFloat(\$key, \$increment)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} incrBy(\$key, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} decr(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} decrBy(\$key, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} lPush(\$key, ...\$value1)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} rPush(\$key, ...\$value1)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} lPushx(\$key, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} rPushx(\$key, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} lPop(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} rPop(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} blPop(\$keys, \$timeout)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} brPop(array \$keys, \$timeout)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} lLen(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} lSize(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} lIndex(\$key, \$index)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} lGet(\$key, \$index)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} lSet(\$key, \$index, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} lRange(\$key, \$start, \$end)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} lGetRange(\$key, \$start, \$end)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} lTrim(\$key, \$start, \$stop)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} listTrim(\$key, \$start, \$stop)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} lRem(\$key, \$value, \$count)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} lRemove(\$key, \$value, \$count)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} lInsert(\$key, \$position, \$pivot, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sAdd(\$key, ...\$value1)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sRem(\$key, ...\$member1)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sRemove(\$key, ...\$member1)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sMove(\$srcKey, \$dstKey, \$member)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sIsMember(\$key, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sContains(\$key, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sCard(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sPop(\$key, \$count = 1)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sRandMember(\$key, \$count = 1)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sInter(\$key1, ...\$otherKeys)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sInterStore(\$dstKey, \$key1, ...\$otherKeys)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sUnion(\$key1, ...\$otherKeys)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sUnionStore(\$dstKey, \$key1, ...\$otherKeys)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sDiff(\$key1, ...\$otherKeys)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sDiffStore(\$dstKey, \$key1, ...\$otherKeys)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sMembers(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sGetMembers(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sScan(\$key, \&\$iterator, \$pattern = \textcolor{keyword}{null}, \$count = 0)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} getSet(\$key, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} randomKey()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} select(\$dbIndex)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} move(\$key, \$dbIndex)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{standard__5_8php_a7b7e891d58bc1e2c2520b774fe91be51}{rename}}(\$srcKey, \$dstKey)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} renameKey(\$srcKey, \$dstKey)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} renameNx(\$srcKey, \$dstKey)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} expire(\$key, \$ttl)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} pExpire(\$key, \$ttl)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} setTimeout(\$key, \$ttl)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} expireAt(\$key, \$timestamp)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} pExpireAt(\$key, \$timestamp)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} keys(\$pattern)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} getKeys(\$pattern)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} dbSize()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} auth(\$password)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} bgrewriteaof()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} slaveof(\$host = \textcolor{stringliteral}{'127.0.0.1'}, \$port = 6379)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} slowLog(\textcolor{keywordtype}{string} \$operation, \textcolor{keywordtype}{int} \$length = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} object(\$string = \textcolor{stringliteral}{''}, \$key = \textcolor{stringliteral}{''})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} save()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} bgsave()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} lastSave()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} wait(\$numSlaves, \$timeout)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{namespace_p_h_p_s_t_o_r_m___m_e_t_a_a7d58eacd5bfcf4504fc16db17c61f49a}{type}}(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} append(\$key, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} getRange(\$key, \$start, \$end)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{standard__1_8php_a2c4e4c5dbaee287b6debf71cb4fda394}{substr}}(\$key, \$start, \$end)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} setRange(\$key, \$offset, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{_core_8php_aa280f76645efe62221dc1348ebbbbd26}{strlen}}(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} bitpos(\$key, \$bit, \$start = 0, \$end = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} getBit(\$key, \$offset)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} setBit(\$key, \$offset, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} bitCount(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} bitOp(\$operation, \$retKey, \$key1, ...\$otherKeys)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} flushDB()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} flushAll()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{standard__8_8php_a9d43d77a7bea65b3d7d2debb1194c380}{sort}}(\$key, \$option = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} info(\$option = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} resetStat()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} ttl(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} pttl(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} persist(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} mset(array \$array)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} getMultiple(array \$keys)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} mget(array \$array)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} msetnx(array \$array)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} rpoplpush(\$srcKey, \$dstKey)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} brpoplpush(\$srcKey, \$dstKey, \$timeout)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zAdd(\$key, \mbox{\hyperlink{rebuild_parsers_8php_afccc0027dcfb3238aaffaebf99351b54}{\$options}}, \$score1, \$value1, \$score2 = \textcolor{keyword}{null}, \$value2 = \textcolor{keyword}{null}, \$scoreN = \textcolor{keyword}{null}, \$valueN = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zRange(\$key, \$start, \$end, \$withscores = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zRem(\$key, \$member1, ...\$otherMembers)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zDelete(\$key, \$member1, ...\$otherMembers)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zRevRange(\$key, \$start, \$end, \$withscore = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zRangeByScore(\$key, \$start, \$end, array \mbox{\hyperlink{rebuild_parsers_8php_afccc0027dcfb3238aaffaebf99351b54}{\$options}} = array())}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zRevRangeByScore(\$key, \$start, \$end, array \mbox{\hyperlink{rebuild_parsers_8php_afccc0027dcfb3238aaffaebf99351b54}{\$options}} = array())}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zRangeByLex(\$key, \$min, \$max, \$offset = \textcolor{keyword}{null}, \$limit = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zRevRangeByLex(\$key, \$min, \$max, \$offset = \textcolor{keyword}{null}, \$limit = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zCount(\$key, \$start, \$end)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zRemRangeByScore(\$key, \$start, \$end)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zDeleteRangeByScore(\$key, \$start, \$end)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zRemRangeByRank(\$key, \$start, \$end)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zDeleteRangeByRank(\$key, \$start, \$end)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zCard(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zSize(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zScore(\$key, \$member)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zRank(\$key, \$member)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zRevRank(\$key, \$member)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zIncrBy(\$key, \$value, \$member)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zUnionStore(\$output, \$zSetKeys, array \$weights = \textcolor{keyword}{null}, \$aggregateFunction = \textcolor{stringliteral}{'SUM'})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zUnion(\$Output, \$ZSetKeys, array \$Weights = \textcolor{keyword}{null}, \$aggregateFunction = \textcolor{stringliteral}{'SUM'})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zInterStore(\$output, \$zSetKeys, array \$weights = \textcolor{keyword}{null}, \$aggregateFunction = \textcolor{stringliteral}{'SUM'})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zInter(\$Output, \$ZSetKeys, array \$Weights = \textcolor{keyword}{null}, \$aggregateFunction = \textcolor{stringliteral}{'SUM'})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zScan(\$key, \&\$iterator, \$pattern = \textcolor{keyword}{null}, \$count = 0)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} bzPopMax(\$key1, \$key2, \$timeout)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} bzPopMin(\$key1, \$key2, \$timeout)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zPopMax(\$key, \$count = 1)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} zPopMin(\$key, \$count = 1)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} hSet(\$key, \$hashKey, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} hSetNx(\$key, \$hashKey, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} hGet(\$key, \$hashKey)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} hLen(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} hDel(\$key, \$hashKey1, ...\$otherHashKeys)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} hKeys(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} hVals(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} hGetAll(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} hExists(\$key, \$hashKey)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} hIncrBy(\$key, \$hashKey, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} hIncrByFloat(\$key, \$field, \$increment)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} hMSet(\$key, \$hashKeys)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} hMGet(\$key, \$hashKeys)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} hScan(\$key, \&\$iterator, \$pattern = \textcolor{keyword}{null}, \$count = 0)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} hStrLen(\textcolor{keywordtype}{string} \$key, \textcolor{keywordtype}{string} \$field)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} geoadd(\$key, \$longitude, \$latitude, \$member)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} geohash(\$key, ...\$member)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} geopos(\textcolor{keywordtype}{string} \$key, \textcolor{keywordtype}{string} \$member)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} geodist(\$key, \$member1, \$member2, \$unit = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} georadius(\$key, \$longitude, \$latitude, \$radius, \$unit, array \mbox{\hyperlink{rebuild_parsers_8php_afccc0027dcfb3238aaffaebf99351b54}{\$options}} = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} georadiusbymember(\$key, \$member, \$radius, \$units, array \mbox{\hyperlink{rebuild_parsers_8php_afccc0027dcfb3238aaffaebf99351b54}{\$options}} = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} config(\$operation, \$key, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} eval(\$script, \$args = array(), \$numKeys = 0)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} evaluate(\$script, \$args = array(), \$numKeys = 0)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} evalSha(\$scriptSha, \$args = array(), \$numKeys = 0)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} evaluateSha(\$scriptSha, \$args = array(), \$numKeys = 0)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} script(\$command, \$script)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} getLastError()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} clearLastError()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} client(\$command, \$value = \textcolor{stringliteral}{''})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \_prefix(\$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \_unserialize(\$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \_serialize(\$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} dump(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} restore(\$key, \$ttl, \$value)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} migrate(\$host, \$port, \$key, \$db, \$timeout, \$copy = \textcolor{keyword}{false}, \$replace = \textcolor{keyword}{false})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{date_8php_ad0150b710cab9ab24923212cbf226447}{time}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} scan(\&\$iterator, \$pattern = \textcolor{keyword}{null}, \$count = 0)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} pfAdd(\$key, array \$elements)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} pfCount(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} pfMerge(\$destKey, array \$sourceKeys)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} rawCommand(\$command, \$arguments)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} getMode()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} xAck(\$stream, \$group, \$messages)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} xAdd(\$key, \$id, \$messages, \$maxLen = 0, \$isApproximate = \textcolor{keyword}{false})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} xClaim(\$key, \$group, \$consumer, \$minIdleTime, \$ids, \mbox{\hyperlink{rebuild_parsers_8php_afccc0027dcfb3238aaffaebf99351b54}{\$options}} = [])}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} xDel(\$key, \$ids)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} xGroup(\$operation, \$key, \$group, \$msgId = \textcolor{stringliteral}{''}, \$mkStream = \textcolor{keyword}{false})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} xInfo(\$operation, \$stream, \$group)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} xLen(\$stream)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} xPending(\$stream, \$group, \$start = \textcolor{keyword}{null}, \$end = \textcolor{keyword}{null}, \$count = \textcolor{keyword}{null}, \$consumer = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} xRange(\$stream, \$start, \$end, \$count = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} xRead(\$streams, \$count = \textcolor{keyword}{null}, \$block = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} xReadGroup(\$group, \$consumer, \$streams, \$count = \textcolor{keyword}{null}, \$block = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} xRevRange(\$stream, \$end, \$start, \$count = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} xTrim(\$stream, \$maxLen, \$isApproximate)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} sAddArray(\$key, array \$values)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{class_redis_exception}{RedisException}} \textcolor{keyword}{extends} \mbox{\hyperlink{class_exception}{Exception}}}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{class_redis_array}{RedisArray}}}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_array_ab848f202040f0873fa00dc46b464e88c}{\_\_construct}}(\$hosts, array \$opts = \textcolor{keyword}{null})}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_array_ae4125a30daab68f4dc3860894024ec91}{\_hosts}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_array_aeaaecc4d117d0afb274f50b19882964b}{\_function}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_array_a943787cbc7f5f52db8ab2ee8480ac8c6}{\_target}}(\$key)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_array_af344305d61542f8cf7a9c59d27ef4ce6}{\_rehash}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_redis_array_a8ece94e57064ea71801015df652bed08}{info}}() \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\end{DoxyCodeInclude}
+ 

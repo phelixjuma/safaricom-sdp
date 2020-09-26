@@ -1,0 +1,132 @@
+.TH "vendor/jetbrains/phpstorm-stubs/sybase/sybase_ct.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/sybase/sybase_ct.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsybase_connect\fP ($servername=\fBnull\fP, $username=\fBnull\fP, $password=\fBnull\fP, $charset=\fBnull\fP, $appname=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsybase_pconnect\fP ($servername=\fBnull\fP, $username=\fBnull\fP, $password=\fBnull\fP, $charset=\fBnull\fP, $appname=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsybase_close\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsybase_select_db\fP ($database_name, $link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsybase_query\fP ($query, $link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsybase_unbuffered_query\fP ($query, $link_identifier, $store_result=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsybase_free_result\fP ($result)"
+.br
+.ti -1c
+.RI "\fBsybase_get_last_message\fP ()"
+.br
+.ti -1c
+.RI "\fBsybase_num_rows\fP ($result)"
+.br
+.ti -1c
+.RI "\fBsybase_num_fields\fP ($result)"
+.br
+.ti -1c
+.RI "\fBsybase_fetch_row\fP ($result)"
+.br
+.ti -1c
+.RI "\fBsybase_fetch_array\fP ($result)"
+.br
+.ti -1c
+.RI "\fBsybase_fetch_assoc\fP ($result)"
+.br
+.ti -1c
+.RI "\fBsybase_fetch_object\fP ($result, $object=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsybase_data_seek\fP ($result_identifier, $row_number)"
+.br
+.ti -1c
+.RI "\fBsybase_fetch_field\fP ($result, $field_offset=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsybase_field_seek\fP ($result, $field_offset)"
+.br
+.ti -1c
+.RI "\fBsybase_result\fP ($result, $row, $field)"
+.br
+.ti -1c
+.RI "\fBsybase_affected_rows\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsybase_min_client_severity\fP ($severity)"
+.br
+.ti -1c
+.RI "\fBsybase_min_server_severity\fP ($severity)"
+.br
+.ti -1c
+.RI "\fBsybase_set_message_handler\fP ($handler, $connection=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsybase_deadlock_retry_count\fP ($retry_count)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "sybase_affected_rows ( $link_identifier = \fC\fBnull\fP\fP)"
+Gets number of affected rows in last query \fB$link_identifier resource[optional]  int the number of affected rows, as an integer\&. \fP
+.SS "sybase_close ( $link_identifier = \fC\fBnull\fP\fP)"
+Closes a Sybase connection \fB$link_identifier resource[optional]  bool \fP
+.SS "sybase_connect ( $servername = \fC\fBnull\fP\fP,  $username = \fC\fBnull\fP\fP,  $password = \fC\fBnull\fP\fP,  $charset = \fC\fBnull\fP\fP,  $appname = \fC\fBnull\fP\fP)"
+Opens a Sybase server connection \fB$servername string[optional]  $username string[optional]  $password string[optional]  $charset string[optional]  $appname string[optional]  resource|false a positive Sybase link identifier on success, or false on \fP
+.SS "sybase_data_seek ( $result_identifier,  $row_number)"
+Moves internal row pointer \fB$result_identifier resource  $row_number int  bool \fP
+.SS "sybase_deadlock_retry_count ( $retry_count)"
+Sets the deadlock retry count \fB$retry_count int  void \fP
+.SS "sybase_fetch_array ( $result)"
+Fetch row as array \fB$result resource  array|false an array that corresponds to the fetched row, or false if there \fP
+.SS "sybase_fetch_assoc ( $result)"
+Fetch a result row as an associative array \fB$result resource  array|false an array that corresponds to the fetched row, or false if there \fP
+.SS "sybase_fetch_field ( $result,  $field_offset = \fC\fBnull\fP\fP)"
+Get field information from a result \fB$result resource  $field_offset int[optional]  object an object containing field information\&. \fP
+.SS "sybase_fetch_object ( $result,  $object = \fC\fBnull\fP\fP)"
+Fetch a row as an object \fB$result resource  $object mixed[optional]  object an object with properties that correspond to the fetched row, or \fP
+.SS "sybase_fetch_row ( $result)"
+Get a result row as an enumerated array \fB$result resource  array|false an array that corresponds to the fetched row, or false if there \fP
+.SS "sybase_field_seek ( $result,  $field_offset)"
+Sets field offset \fB$result resource  $field_offset int  bool \fP
+.SS "sybase_free_result ( $result)"
+Frees result memory \fB$result resource  bool \fP
+.SS "sybase_get_last_message ()"
+Returns the last message from the server \fBstring the message as a string\&. \fP
+.SS "sybase_min_client_severity ( $severity)"
+Sets minimum client severity \fB$severity int  void \fP
+.SS "sybase_min_server_severity ( $severity)"
+Sets minimum server severity \fB$severity int  void \fP
+.SS "sybase_num_fields ( $result)"
+Gets the number of fields in a result set \fB$result resource  int the number of fields as an integer\&. \fP
+.SS "sybase_num_rows ( $result)"
+Get number of rows in a result set \fB$result resource  int the number of rows as an integer\&. \fP
+.SS "sybase_pconnect ( $servername = \fC\fBnull\fP\fP,  $username = \fC\fBnull\fP\fP,  $password = \fC\fBnull\fP\fP,  $charset = \fC\fBnull\fP\fP,  $appname = \fC\fBnull\fP\fP)"
+Open persistent Sybase connection \fB$servername string[optional]  $username string[optional]  $password string[optional]  $charset string[optional]  $appname string[optional]  resource a positive Sybase persistent link identifier on success, or \fP
+.SS "sybase_query ( $query,  $link_identifier = \fC\fBnull\fP\fP)"
+Sends a Sybase query \fB$query string  $link_identifier resource[optional]  mixed a positive Sybase result identifier on success, false on error, \fP
+.SS "sybase_result ( $result,  $row,  $field)"
+Get result data \fB$result resource  $row int  $field mixed  string \fP
+.SS "sybase_select_db ( $database_name,  $link_identifier = \fC\fBnull\fP\fP)"
+Selects a Sybase database \fB$database_name string  $link_identifier resource[optional]  bool \fP
+.SS "sybase_set_message_handler ( $handler,  $connection = \fC\fBnull\fP\fP)"
+Sets the handler called when a server message is raised \fB$handler callback  $connection resource[optional]  bool \fP
+.SS "sybase_unbuffered_query ( $query,  $link_identifier,  $store_result = \fC\fBnull\fP\fP)"
+Send a Sybase query and do not block \fB$query string  $link_identifier resource  $store_result bool[optional]  resource|false a positive Sybase result identifier on success, or false on \fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

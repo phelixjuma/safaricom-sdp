@@ -1,0 +1,351 @@
+.TH "vendor/jetbrains/phpstorm-stubs/bcmath/bcmath.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/bcmath/bcmath.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBbcadd\fP ($left_operand, $right_operand, $scale=0)"
+.br
+.ti -1c
+.RI "\fBbcsub\fP ($left_operand, $right_operand, $scale=0)"
+.br
+.ti -1c
+.RI "\fBbcmul\fP ($left_operand, $right_operand, $scale=0)"
+.br
+.ti -1c
+.RI "\fBbcdiv\fP ($dividend, $divisor, $scale=0)"
+.br
+.ti -1c
+.RI "\fBbcmod\fP ($dividend, $divisor, $scale=0)"
+.br
+.ti -1c
+.RI "\fBbcpow\fP ($base, $exponent, $scale=0)"
+.br
+.ti -1c
+.RI "\fBbcsqrt\fP ($operand, $scale=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBbcscale\fP ($scale)"
+.br
+.ti -1c
+.RI "\fBbccomp\fP ($left_operand, $right_operand, $scale=0)"
+.br
+.ti -1c
+.RI "\fBbcpowmod\fP ($base, $exponent, $modulus, $scale=0)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "bcadd ( $left_operand,  $right_operand,  $scale = \fC0\fP)"
+Add two arbitrary precision numbers \fBstring $left_operand \fP The left operand, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$right_operand\fP 
+.RE
+.PP
+The right operand, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$scale\fP [optional] 
+.RE
+.PP
+This optional parameter is used to set the number of digits after the decimal place in the result\&. If omitted, it will default to the scale set globally with the \fBbcscale()\fP function, or fallback to 0 if this has not been set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The sum of the two operands, as a string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "bccomp ( $left_operand,  $right_operand,  $scale = \fC0\fP)"
+Compare two arbitrary precision numbers \fBstring $left_operand \fP The left operand, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$right_operand\fP 
+.RE
+.PP
+The right operand, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$scale\fP [optional] 
+.RE
+.PP
+The optional \fIscale\fP parameter is used to set the number of digits after the decimal place which will be used in the comparison\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int 0 if the two operands are equal, 1 if the \fIleft_operand\fP is larger than the \fIright_operand\fP, -1 otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "bcdiv ( $dividend,  $divisor,  $scale = \fC0\fP)"
+Divide two arbitrary precision numbers \fBstring $dividend \fP The dividend, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$divisor\fP 
+.RE
+.PP
+The divisor, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$scale\fP [optional] 
+.RE
+.PP
+This optional parameter is used to set the number of digits after the decimal place in the result\&. If omitted, it will default to the scale set globally with the \fBbcscale()\fP function, or fallback to 0 if this has not been set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|null the result of the division as a string, or \fBNULL\fP if \fIdivisor\fP is 0\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "bcmod ( $dividend,  $divisor,  $scale = \fC0\fP)"
+Get modulus of an arbitrary precision number \fBstring $dividend \fP The dividend, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$divisor\fP 
+.RE
+.PP
+The divisor, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$scale\fP [optional] 
+.RE
+.PP
+This optional parameter is used to set the number of digits after the decimal place in the result\&. If omitted, it will default to the scale set globally with the \fBbcscale()\fP function, or fallback to 0 if this has not been set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|null the modulus as a string, or \fBNULL\fP if \fIdivisor\fP is 0\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.PP
+7\&.2 scale param added, dividend/divisor no longer truncated 
+.RE
+.PP
+
+.SS "bcmul ( $left_operand,  $right_operand,  $scale = \fC0\fP)"
+Multiply two arbitrary precision numbers \fBstring $left_operand \fP The left operand, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$right_operand\fP 
+.RE
+.PP
+The right operand, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$scale\fP [optional] 
+.RE
+.PP
+This optional parameter is used to set the number of digits after the decimal place in the result\&. If omitted, it will default to the scale set globally with the \fBbcscale()\fP function, or fallback to 0 if this has not been set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the result as a string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "bcpow ( $base,  $exponent,  $scale = \fC0\fP)"
+Raise an arbitrary precision number to another \fBstring $base \fP The base, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$exponent\fP 
+.RE
+.PP
+The exponent, as a string\&. If the exponent is non-integral, it is truncated\&. The valid range of the exponent is platform specific, but is at least -2147483648 to 2147483647\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$scale\fP [optional] 
+.RE
+.PP
+This optional parameter is used to set the number of digits after the decimal place in the result\&. If omitted, it will default to the scale set globally with the \fBbcscale()\fP function, or fallback to 0 if this has not been set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the result as a string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "bcpowmod ( $base,  $exponent,  $modulus,  $scale = \fC0\fP)"
+Raise an arbitrary precision number to another, reduced by a specified modulus \fBstring $base \fP The base, as an integral string (i\&.e\&. the scale has to be zero)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$exponent\fP 
+.RE
+.PP
+The exponent, as an non-negative, integral string (i\&.e\&. the scale has to be zero)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$modulus\fP 
+.RE
+.PP
+The modulus, as an integral string (i\&.e\&. the scale has to be zero)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$scale\fP [optional] 
+.RE
+.PP
+This optional parameter is used to set the number of digits after the decimal place in the result\&. If omitted, it will default to the scale set globally with the \fBbcscale()\fP function, or fallback to 0 if this has not been set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|null the result as a string, or \fBNULL\fP if \fImodulus\fP is 0 or \fIexponent\fP is negative\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "bcscale ( $scale)"
+Set default scale parameter for all bc math functions \fBint $scale \fP The scale factor\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "bcsqrt ( $operand,  $scale = \fC\fBnull\fP\fP)"
+Get the square root of an arbitrary precision number \fBstring $operand \fP The operand, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$scale\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string the square root as a string, or \fBNULL\fP if \fIoperand\fP is negative\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "bcsub ( $left_operand,  $right_operand,  $scale = \fC0\fP)"
+Subtract one arbitrary precision number from another \fBstring $left_operand \fP The left operand, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$right_operand\fP 
+.RE
+.PP
+The right operand, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$scale\fP [optional] 
+.RE
+.PP
+This optional parameter is used to set the number of digits after the decimal place in the result\&. If omitted, it will default to the scale set globally with the \fBbcscale()\fP function, or fallback to 0 if this has not been set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The result of the subtraction, as a string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

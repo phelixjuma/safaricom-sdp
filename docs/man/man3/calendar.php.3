@@ -1,0 +1,576 @@
+.TH "vendor/jetbrains/phpstorm-stubs/calendar/calendar.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/calendar/calendar.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBjdtogregorian\fP ($julianday)"
+.br
+.ti -1c
+.RI "\fBgregoriantojd\fP ($month, $day, $year)"
+.br
+.ti -1c
+.RI "\fBjdtojulian\fP ($julianday)"
+.br
+.ti -1c
+.RI "\fBjuliantojd\fP ($month, $day, $year)"
+.br
+.ti -1c
+.RI "\fBjdtojewish\fP ($juliandaycount, $hebrew=\fBfalse\fP, $fl=0)"
+.br
+.ti -1c
+.RI "\fBjewishtojd\fP ($month, $day, $year)"
+.br
+.ti -1c
+.RI "\fBjdtofrench\fP ($juliandaycount)"
+.br
+.ti -1c
+.RI "\fBfrenchtojd\fP ($month, $day, $year)"
+.br
+.ti -1c
+.RI "\fBjddayofweek\fP ($julianday, $mode=\fBCAL_DOW_DAYNO\fP)"
+.br
+.ti -1c
+.RI "\fBjdmonthname\fP ($julianday, $mode)"
+.br
+.ti -1c
+.RI "\fBeaster_date\fP ($year=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBeaster_days\fP ($year=\fBnull\fP, $method=\fBCAL_EASTER_DEFAULT\fP)"
+.br
+.ti -1c
+.RI "\fBunixtojd\fP ($timestamp=0)"
+.br
+.ti -1c
+.RI "\fBjdtounix\fP ($jday)"
+.br
+.ti -1c
+.RI "\fBcal_to_jd\fP ($calendar, $month, $day, $year)"
+.br
+.ti -1c
+.RI "\fBcal_from_jd\fP ($jd, $calendar)"
+.br
+.ti -1c
+.RI "\fBcal_days_in_month\fP ($calendar, $month, $year)"
+.br
+.ti -1c
+.RI "\fBcal_info\fP ($calendar=\-1)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBCAL_GREGORIAN\fP 0"
+.br
+.ti -1c
+.RI "const \fBCAL_JULIAN\fP 1"
+.br
+.ti -1c
+.RI "const \fBCAL_JEWISH\fP 2"
+.br
+.ti -1c
+.RI "const \fBCAL_FRENCH\fP 3"
+.br
+.ti -1c
+.RI "const \fBCAL_NUM_CALS\fP 4"
+.br
+.ti -1c
+.RI "const \fBCAL_DOW_DAYNO\fP 0"
+.br
+.ti -1c
+.RI "const \fBCAL_DOW_SHORT\fP 2"
+.br
+.ti -1c
+.RI "const \fBCAL_DOW_LONG\fP 1"
+.br
+.ti -1c
+.RI "const \fBCAL_MONTH_GREGORIAN_SHORT\fP 0"
+.br
+.ti -1c
+.RI "const \fBCAL_MONTH_GREGORIAN_LONG\fP 1"
+.br
+.ti -1c
+.RI "const \fBCAL_MONTH_JULIAN_SHORT\fP 2"
+.br
+.ti -1c
+.RI "const \fBCAL_MONTH_JULIAN_LONG\fP 3"
+.br
+.ti -1c
+.RI "const \fBCAL_MONTH_JEWISH\fP 4"
+.br
+.ti -1c
+.RI "const \fBCAL_MONTH_FRENCH\fP 5"
+.br
+.ti -1c
+.RI "const \fBCAL_EASTER_DEFAULT\fP 0"
+.br
+.ti -1c
+.RI "const \fBCAL_EASTER_ROMAN\fP 1"
+.br
+.ti -1c
+.RI "const \fBCAL_EASTER_ALWAYS_GREGORIAN\fP 2"
+.br
+.ti -1c
+.RI "const \fBCAL_EASTER_ALWAYS_JULIAN\fP 3"
+.br
+.ti -1c
+.RI "const \fBCAL_JEWISH_ADD_ALAFIM_GERESH\fP 2"
+.br
+.ti -1c
+.RI "const \fBCAL_JEWISH_ADD_ALAFIM\fP 4"
+.br
+.ti -1c
+.RI "const \fBCAL_JEWISH_ADD_GERESHAYIM\fP 8"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "cal_days_in_month ( $calendar,  $month,  $year)"
+Return the number of days in a month for a given year and calendar \fBint $calendar \fP Calendar to use for calculation 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$month\fP 
+.RE
+.PP
+Month in the selected calendar 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$year\fP 
+.RE
+.PP
+Year in the selected calendar 
+.PP
+\fBReturns\fP
+.RS 4
+int The length in days of the selected month in the given calendar 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "cal_from_jd ( $jd,  $calendar)"
+Converts from Julian Day Count to a supported calendar \fBint $jd \fP Julian day as integer 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$calendar\fP 
+.RE
+.PP
+Calendar to convert to 
+.PP
+\fBReturns\fP
+.RS 4
+array an array containing calendar information like month, day, year, day of week, abbreviated and full names of weekday and month and the date in string form 'month/day/year'\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "cal_info ( $calendar = \fC\-1\fP)"
+Returns information about a particular calendar \fBint $calendar [optional] \fP Calendar to return information for\&. If no calendar is specified information about all calendars is returned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "cal_to_jd ( $calendar,  $month,  $day,  $year)"
+Converts from a supported calendar to Julian Day Count \fBint $calendar \fP Calendar to convert from, one of \fBCAL_GREGORIAN\fP, \fBCAL_JULIAN\fP, \fBCAL_JEWISH\fP or \fBCAL_FRENCH\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$month\fP 
+.RE
+.PP
+The month as a number, the valid range depends on the \fIcalendar\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$day\fP 
+.RE
+.PP
+The day as a number, the valid range depends on the \fIcalendar\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$year\fP 
+.RE
+.PP
+The year as a number, the valid range depends on the \fIcalendar\fP 
+.PP
+\fBReturns\fP
+.RS 4
+int \fBA\fP Julian Day number\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "easter_date ( $year = \fC\fBnull\fP\fP)"
+Get Unix timestamp for midnight on Easter of a given year \fBint $year [optional] \fP The year as a number between 1970 an 2037 
+.PP
+\fBReturns\fP
+.RS 4
+int The easter date as a unix timestamp\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "easter_days ( $year = \fC\fBnull\fP\fP,  $method = \fC\fBCAL_EASTER_DEFAULT\fP\fP)"
+Get number of days after March 21 on which Easter falls for a given year \fBint $year [optional] \fP The year as a positive number 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$method\fP [optional] 
+.RE
+.PP
+Allows to calculate easter dates based on the Gregorian calendar during the years 1582 - 1752 when set to \fBCAL_EASTER_ROMAN\fP\&. See the calendar constants for more valid constants\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The number of days after March 21st that the Easter Sunday is in the given \fIyear\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "frenchtojd ( $month,  $day,  $year)"
+Converts a date from the French Republican Calendar to a Julian Day Count \fBint $month \fP The month as a number from 1 (for Vendémiaire) to 13 (for the period of 5-6 days at the end of each year) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$day\fP 
+.RE
+.PP
+The day as a number from 1 to 30 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$year\fP 
+.RE
+.PP
+The year as a number between 1 and 14 
+.PP
+\fBReturns\fP
+.RS 4
+int The julian day for the given french revolution date as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gregoriantojd ( $month,  $day,  $year)"
+Converts a Gregorian date to Julian Day Count \fBint $month \fP The month as a number from 1 (for January) to 12 (for December) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$day\fP 
+.RE
+.PP
+The day as a number from 1 to 31 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$year\fP 
+.RE
+.PP
+The year as a number between -4714 and 9999 
+.PP
+\fBReturns\fP
+.RS 4
+int The julian day for the given gregorian date as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "jddayofweek ( $julianday,  $mode = \fC\fBCAL_DOW_DAYNO\fP\fP)"
+Returns the day of the week \fBint $julianday \fP \fBA\fP julian day number as integer 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] week modes 
+.RE
+.PP
+.PP
+Mode 
+.PP
+Meaning  
+.PP
+0 (Default) 
+.PP
+Return the day number as an int (0=Sunday, 1=Monday, etc)   
+.PP
+1 
+.PP
+Returns string containing the day of week (English-Gregorian)   
+.PP
+2 
+.PP
+Return a string containing the abbreviated day of week (English-Gregorian)   
+.PP
+\fBReturns\fP
+.RS 4
+mixed The gregorian weekday as either an integer or string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "jdmonthname ( $julianday,  $mode)"
+Returns a month name \fBint $julianday  int $mode  string The month name for the given Julian Day and \fIcalendar\fP\&.  4\&.0  5\&.0 \fP
+.SS "jdtofrench ( $juliandaycount)"
+Converts a Julian Day Count to the French Republican Calendar \fBint $juliandaycount  string The french revolution date as a string in the form 'month/day/year'  4\&.0  5\&.0 \fP
+.SS "jdtogregorian ( $julianday)"
+Converts Julian Day Count to Gregorian date \fBint $julianday \fP \fBA\fP julian day number as integer 
+.PP
+\fBReturns\fP
+.RS 4
+string The gregorian date as a string in the form 'month/day/year' 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "jdtojewish ( $juliandaycount,  $hebrew = \fC\fBfalse\fP\fP,  $fl = \fC0\fP)"
+Converts a Julian day count to a Jewish calendar date \fBint $juliandaycount  bool $hebrew [optional] \fP If the \fIhebrew\fP parameter is set to \fBTRUE\fP, the \fIfl\fP parameter is used for Hebrew, string based, output format\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fl\fP [optional] 
+.RE
+.PP
+The available formats are: \fBCAL_JEWISH_ADD_ALAFIM_GERESH\fP, \fBCAL_JEWISH_ADD_ALAFIM\fP, \fBCAL_JEWISH_ADD_GERESHAYIM\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The jewish date as a string in the form 'month/day/year' 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "jdtojulian ( $julianday)"
+Converts a Julian Day Count to a Julian Calendar Date \fBint $julianday \fP \fBA\fP julian day number as integer 
+.PP
+\fBReturns\fP
+.RS 4
+string The julian date as a string in the form 'month/day/year' 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "jdtounix ( $jday)"
+Convert Julian Day to Unix timestamp \fBint $jday \fP \fBA\fP julian day number between 2440588 and 2465342\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The unix timestamp for the start of the given julian day\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "jewishtojd ( $month,  $day,  $year)"
+Converts a date in the Jewish Calendar to Julian Day Count \fBint $month \fP The month as a number from 1 to 13 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$day\fP 
+.RE
+.PP
+The day as a number from 1 to 30 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$year\fP 
+.RE
+.PP
+The year as a number between 1 and 9999 
+.PP
+\fBReturns\fP
+.RS 4
+int The julian day for the given jewish date as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "juliantojd ( $month,  $day,  $year)"
+Converts a Julian Calendar date to Julian Day Count \fBint $month \fP The month as a number from 1 (for January) to 12 (for December) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$day\fP 
+.RE
+.PP
+The day as a number from 1 to 31 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$year\fP 
+.RE
+.PP
+The year as a number between -4713 and 9999 
+.PP
+\fBReturns\fP
+.RS 4
+int The julian day for the given julian date as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "unixtojd ( $timestamp = \fC0\fP)"
+Convert Unix timestamp to Julian Day \fBint $timestamp [optional] defaults to time() \fP \fBA\fP unix timestamp to convert\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int \fBA\fP julian day number as integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const CAL_DOW_DAYNO 0"
+
+.SS "const CAL_DOW_LONG 1"
+
+.SS "const CAL_DOW_SHORT 2"
+
+.SS "const CAL_EASTER_ALWAYS_GREGORIAN 2"
+
+.SS "const CAL_EASTER_ALWAYS_JULIAN 3"
+
+.SS "const CAL_EASTER_DEFAULT 0"
+
+.SS "const CAL_EASTER_ROMAN 1"
+
+.SS "const CAL_FRENCH 3"
+
+.SS "const CAL_GREGORIAN 0"
+
+.SS "const CAL_JEWISH 2"
+
+.SS "const CAL_JEWISH_ADD_ALAFIM 4"
+
+.SS "const CAL_JEWISH_ADD_ALAFIM_GERESH 2"
+
+.SS "const CAL_JEWISH_ADD_GERESHAYIM 8"
+
+.SS "const CAL_JULIAN 1"
+
+.SS "const CAL_MONTH_FRENCH 5"
+
+.SS "const CAL_MONTH_GREGORIAN_LONG 1"
+
+.SS "const CAL_MONTH_GREGORIAN_SHORT 0"
+
+.SS "const CAL_MONTH_JEWISH 4"
+
+.SS "const CAL_MONTH_JULIAN_LONG 3"
+
+.SS "const CAL_MONTH_JULIAN_SHORT 2"
+
+.SS "const CAL_NUM_CALS 4"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

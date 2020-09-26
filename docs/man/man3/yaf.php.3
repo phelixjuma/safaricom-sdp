@@ -1,0 +1,195 @@
+.TH "vendor/jetbrains/phpstorm-stubs/yaf/yaf.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/yaf/yaf.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBYaf_Application\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Dispatcher\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Loader\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Registry\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Session\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Router\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Bootstrap_Abstract\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Controller_Abstract\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Action_Abstract\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Config_Abstract\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Request_Abstract\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Plugin_Abstract\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Response_Abstract\fP"
+.br
+.ti -1c
+.RI "interface \fBYaf_View_Interface\fP"
+.br
+.ti -1c
+.RI "interface \fBYaf_Route_Interface\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Exception\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Response_Http\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Response_Cli\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Request_Http\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Request_Simple\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Config_Ini\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Config_Simple\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_View_Simple\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Route_Static\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Route_Simple\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Route_Supervar\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Route_Rewrite\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Route_Regex\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Route_Map\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Exception_TypeError\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Exception_StartupError\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Exception_RouterFailed\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Exception_DispatchFailed\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Exception_LoadFailed\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Exception_LoadFailed_Module\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Exception_LoadFailed_Controller\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Exception_LoadFailed_Action\fP"
+.br
+.ti -1c
+.RI "class \fBYaf_Exception_LoadFailed_View\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBYAF_VERSION\fP '3\&.0\&.8', \fBtrue\fP"
+.br
+.ti -1c
+.RI "const \fBYAF_ENVIRON\fP 'product', \fBtrue\fP"
+.br
+.ti -1c
+.RI "const \fBYAF_ERR_STARTUP_FAILED\fP 512, \fBtrue\fP"
+.br
+.ti -1c
+.RI "const \fBYAF_ERR_ROUTE_FAILED\fP 513, \fBtrue\fP"
+.br
+.ti -1c
+.RI "const \fBYAF_ERR_DISPATCH_FAILED\fP 514, \fBtrue\fP"
+.br
+.ti -1c
+.RI "const \fBYAF_ERR_NOTFOUND_MODULE\fP 515, \fBtrue\fP"
+.br
+.ti -1c
+.RI "const \fBYAF_ERR_NOTFOUND_CONTROLLER\fP 516, \fBtrue\fP"
+.br
+.ti -1c
+.RI "const \fBYAF_ERR_NOTFOUND_ACTION\fP 517, \fBtrue\fP"
+.br
+.ti -1c
+.RI "const \fBYAF_ERR_NOTFOUND_VIEW\fP 518, \fBtrue\fP"
+.br
+.ti -1c
+.RI "const \fBYAF_ERR_CALL_FAILED\fP 519, \fBtrue\fP"
+.br
+.ti -1c
+.RI "const \fBYAF_ERR_AUTOLOAD_FAILED\fP 520, \fBtrue\fP"
+.br
+.ti -1c
+.RI "const \fBYAF_ERR_TYPE_ERROR\fP 521, \fBtrue\fP"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "const YAF_ENVIRON 'product', \fBtrue\fP"
+
+.SS "const YAF_ERR_AUTOLOAD_FAILED 520, \fBtrue\fP"
+
+.SS "const YAF_ERR_CALL_FAILED 519, \fBtrue\fP"
+
+.SS "const YAF_ERR_DISPATCH_FAILED 514, \fBtrue\fP"
+
+.SS "const YAF_ERR_NOTFOUND_ACTION 517, \fBtrue\fP"
+
+.SS "const YAF_ERR_NOTFOUND_CONTROLLER 516, \fBtrue\fP"
+
+.SS "const YAF_ERR_NOTFOUND_MODULE 515, \fBtrue\fP"
+
+.SS "const YAF_ERR_NOTFOUND_VIEW 518, \fBtrue\fP"
+
+.SS "const YAF_ERR_ROUTE_FAILED 513, \fBtrue\fP"
+
+.SS "const YAF_ERR_STARTUP_FAILED 512, \fBtrue\fP"
+
+.SS "const YAF_ERR_TYPE_ERROR 521, \fBtrue\fP"
+
+.SS "const YAF_VERSION '3\&.0\&.8', \fBtrue\fP"
+The constants below are defined by this extension, and will only be available when the extension has either been compiled into PHP or dynamically loaded at runtime\&. \fBhttps://php\&.net/manual/en/yaf\&.constants\&.php\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

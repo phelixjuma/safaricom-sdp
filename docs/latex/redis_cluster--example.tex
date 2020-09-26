@@ -1,0 +1,20 @@
+\hypertarget{redis_cluster--example}{}\doxysection{redis\+Cluster-\/}
+Returns the type of data pointed by a given key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+Depending on the type of the data pointed by the key, this method will return the following value\+:
+\begin{DoxyItemize}
+\item string\+: \mbox{\hyperlink{class_redis_cluster_a96c301e12b040ab9410a89bbebc416f3}{Redis\+Cluster\+::\+R\+E\+D\+I\+S\+\_\+\+S\+T\+R\+I\+NG}}
+\item set\+: \mbox{\hyperlink{class_redis_cluster_a75dcf8317e4a0ed2a6a663edc0ab539d}{Redis\+Cluster\+::\+R\+E\+D\+I\+S\+\_\+\+S\+ET}}
+\item list\+: \mbox{\hyperlink{class_redis_cluster_a5c0717678b6469fdbbc7ffb037aefe7d}{Redis\+Cluster\+::\+R\+E\+D\+I\+S\+\_\+\+L\+I\+ST}}
+\item zset\+: \mbox{\hyperlink{class_redis_cluster_aa9997ec83c06801a6b591e388e6ec07b}{Redis\+Cluster\+::\+R\+E\+D\+I\+S\+\_\+\+Z\+S\+ET}}
+\item hash\+: \mbox{\hyperlink{class_redis_cluster_ae85974434d7285a7123a98da3bce22a6}{Redis\+Cluster\+::\+R\+E\+D\+I\+S\+\_\+\+H\+A\+SH}}
+\item other\+: \mbox{\hyperlink{class_redis_cluster_abc2fefe41581b611b89cda6f512fe892}{Redis\+Cluster\+::\+R\+E\+D\+I\+S\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}} \mbox{\hyperlink{}{$>$type(\textquotesingle{}key\textquotesingle{});  redis\+Cluster-\/ }}
+\end{DoxyItemize}

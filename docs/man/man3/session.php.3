@@ -1,0 +1,571 @@
+.TH "vendor/jetbrains/phpstorm-stubs/session/session.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/session/session.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsession_name\fP ($name=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsession_module_name\fP ($module=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsession_save_path\fP ($path=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsession_id\fP ($id=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsession_regenerate_id\fP ($delete_old_session=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBsession_register_shutdown\fP ()"
+.br
+.ti -1c
+.RI "\fBsession_decode\fP ($data)"
+.br
+.ti -1c
+.RI "\fBsession_register\fP ($name, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsession_unregister\fP ($name)"
+.br
+.ti -1c
+.RI "\fBsession_is_registered\fP ($name)"
+.br
+.ti -1c
+.RI "\fBsession_encode\fP ()"
+.br
+.ti -1c
+.RI "\fBsession_start\fP ($options=[])"
+.br
+.ti -1c
+.RI "\fBsession_create_id\fP ($prefix)"
+.br
+.ti -1c
+.RI "\fBsession_gc\fP ()"
+.br
+.ti -1c
+.RI "\fBsession_destroy\fP ()"
+.br
+.ti -1c
+.RI "\fBsession_unset\fP ()"
+.br
+.ti -1c
+.RI "\fBsession_set_save_handler\fP ($open, $close, $read, $write, $destroy, $gc, $create_sid=\fBnull\fP, $validate_sid=\fBnull\fP, $update_timestamp=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsession_set_save_handler\fP (\fBSessionHandlerInterface\fP $session_handler, $register_shutdown=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBsession_cache_limiter\fP ($cache_limiter=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsession_cache_expire\fP ($new_cache_expire=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsession_set_cookie_params\fP ($options)"
+.br
+.ti -1c
+.RI "\fBsession_set_cookie_params\fP ($lifetime, $path=\fBnull\fP, $domain=\fBnull\fP, $secure=\fBfalse\fP, $httponly=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBsession_get_cookie_params\fP ()"
+.br
+.ti -1c
+.RI "\fBsession_write_close\fP ()"
+.br
+.ti -1c
+.RI "\fBsession_commit\fP ()"
+.br
+.ti -1c
+.RI "\fBsession_status\fP ()"
+.br
+.ti -1c
+.RI "\fBsession_abort\fP ()"
+.br
+.ti -1c
+.RI "\fBsession_reset\fP ()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "session_abort ()"
+(PHP 5 >= 5\&.6\&.0)
+.br
+ Discard session array changes and finish session \fBvoid|bool since 7\&.2\&.0 returns true if a session was successfully reinitialized or false on failure\&. \fP
+.SS "session_cache_expire ( $new_cache_expire = \fC\fBnull\fP\fP)"
+Return current cache expire \fBstring $new_cache_expire [optional] \fP If \fInew_cache_expire\fP is given, the current cache expire is replaced with \fInew_cache_expire\fP\&. 
+.PP
+Setting \fInew_cache_expire\fP is of value only, if session\&.cache_limiter is set to a value different from nocache\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the current setting of session\&.cache_expire\&. The value returned should be read in minutes, defaults to 180\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "session_cache_limiter ( $cache_limiter = \fC\fBnull\fP\fP)"
+Get and/or set the current cache limiter \fBstring $cache_limiter [optional] \fP If \fIcache_limiter\fP is specified, the name of the current cache limiter is changed to the new value\&. 
+.PP
+values 
+.PP
+Value 
+.PP
+Headers sent  
+.PP
+public 
+.PP
+.PP
+.nf
+
+Expires: (sometime in the future, according session\&.cache_expire)
+Cache-Control: public, max-age=(sometime in the future, according to session\&.cache_expire)
+Last-Modified: (the timestamp of when the session was last saved)
+.fi
+.PP
+   
+.PP
+private_no_expire 
+.PP
+.PP
+.nf
+
+Cache-Control: private, max-age=(session\&.cache_expire in the future), pre-check=(session\&.cache_expire in the future)
+Last-Modified: (the timestamp of when the session was last saved)
+.fi
+.PP
+   
+.PP
+private 
+.PP
+.PP
+.nf
+
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: private, max-age=(session\&.cache_expire in the future), pre-check=(session\&.cache_expire in the future)
+Last-Modified: (the timestamp of when the session was last saved)
+.fi
+.PP
+   
+.PP
+nocache 
+.PP
+.PP
+.nf
+
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+.fi
+.PP
+   
+.PP
+\fBReturns\fP
+.RS 4
+string the name of the current cache limiter\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.3 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "session_commit ()"
+Alias of \fBsession_write_close\fP \fBvoid|bool since 7\&.2\&.0 returns true on success or false on failure\&.  4\&.4  5\&.0 \fP
+.SS "session_create_id ( $prefix)"
+Create new session id \fBstring $prefix [optional] If prefix is specified, new session id is prefixed by prefix\&. Not all characters are allowed within the session id\&. Characters in the range a-z A-Z 0-9 , (comma) and - (minus) are allowed\&.  string new collision free session id for the current session\&. If it is used without active session, it omits collision check\&.  7\&.1 \fP
+.SS "session_decode ( $data)"
+Decodes session data from a string \fBstring $data \fP The encoded data to be stored\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "session_destroy ()"
+Destroys all data registered to a session \fBbool true on success or false on failure\&.  4\&.0  5\&.0 \fP
+.SS "session_encode ()"
+Encodes the current session data as a string \fBstring the contents of the current session encoded\&.  4\&.0  5\&.0 \fP
+.SS "session_gc ()"
+Perform session data garbage collection 
+.PP
+\fBReturns\fP
+.RS 4
+int|false number of deleted session data for success, false for failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.1 
+.RE
+.PP
+
+.SS "session_get_cookie_params ()"
+Get the session cookie parameters \fBarray an array with the current session cookie information, the array contains the following items: 'lifetime' - The lifetime of the cookie in seconds\&. 'path' - The path where information is stored\&. 'domain' - The domain of the cookie\&. 'secure' - The cookie should only be sent over secure connections\&. 'httponly' - The cookie can only be accessed through the HTTP protocol\&.  4\&.0  5\&.0 \fP
+.SS "session_id ( $id = \fC\fBnull\fP\fP)"
+Get and/or set the current session id \fBstring $id [optional] \fP If \fIid\fP is specified, it will replace the current session id\&. \fBsession_id\fP needs to be called before \fBsession_start\fP for that purpose\&. Depending on the session handler, not all characters are allowed within the session id\&. For example, the file session handler only allows characters in the range a-z A-Z 0-9 , (comma) and - (minus)! 
+.PP
+When using session cookies, specifying an \fIid\fP for \fBsession_id\fP will always send a new cookie when \fBsession_start\fP is called, regardless if the current session id is identical to the one being set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBsession_id\fP returns the session id for the current session or the empty string ('') if there is no current session (no current session id exists)\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "session_is_registered ( $name)"
+Find out whether a global variable is registered in a session \fBstring $name \fP The variable name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBsession_is_registered\fP returns true if there is a global variable with the name \fIname\fP registered in the current session, false otherwise\&. 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.3 This function has been DEPRECATED as of PHP 5\&.3\&.0 and REMOVED as of PHP 5\&.4\&.0\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "session_module_name ( $module = \fC\fBnull\fP\fP)"
+Get and/or set the current session module\&.
+.br
+ Since 7\&.2\&.0 it is forbidden to set the module name to 'user'\&. \fBstring $module [optional] \fP If \fImodule\fP is specified, that module will be used instead\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the name of the current session module\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "session_name ( $name = \fC\fBnull\fP\fP)"
+Get and/or set the current session name\&.
+.br
+ Before 7\&.2\&.0 checked cookie status and since 7\&.2\&.0 checks both cookie and session status to avoid PHP crash\&. \fBstring $name [optional] \fP The session name references the name of the session, which is used in cookies and URLs (e\&.g\&. PHPSESSID)\&. It should contain only alphanumeric characters; it should be short and descriptive (i\&.e\&. for users with enabled cookie warnings)\&. If \fIname\fP is specified, the name of the current session is changed to its value\&. 
+.PP
+The session name can't consist of digits only, at least one letter must be present\&. Otherwise a new session id is generated every time\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the name of the current session\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "session_regenerate_id ( $delete_old_session = \fC\fBfalse\fP\fP)"
+Update the current session id with a newly generated one \fBbool $delete_old_session [optional] \fP Whether to delete the old associated session file or not\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "session_register ( $name,  $_ = \fC\fBnull\fP\fP)"
+Register one or more global variables with the current session \fBmixed $name \fP \fBA\fP string holding the name of a variable or an array consisting of variable names or other arrays\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.3 This function has been DEPRECATED as of PHP 5\&.3\&.0 and REMOVED as of PHP 5\&.4\&.0\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "session_register_shutdown ()"
+PHP > 5\&.4\&.0 
+.br
+ Session shutdown function \fBhttps://secure\&.php\&.net/manual/en/function\&.session-register-shutdown\&.php\fP
+.SS "session_reset ()"
+(PHP 5 >= 5\&.6\&.0)
+.br
+ Re-initialize session array with original values \fBvoid|bool since 7\&.2\&.0 returns true if a session was successfully reinitialized or false on failure\&. \fP
+.SS "session_save_path ( $path = \fC\fBnull\fP\fP)"
+Get and/or set the current session save path \fBstring $path [optional] \fP Session data path\&. If specified, the path to which data is saved will be changed\&. \fBsession_save_path\fP needs to be called before \fBsession_start\fP for that purpose\&. 
+.PP
+On some operating systems, you may want to specify a path on a filesystem that handles lots of small files efficiently\&. For example, on Linux, reiserfs may provide better performance than ext2fs\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the path of the current directory used for data storage\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "session_set_cookie_params ( $lifetime,  $path = \fC\fBnull\fP\fP,  $domain = \fC\fBnull\fP\fP,  $secure = \fC\fBfalse\fP\fP,  $httponly = \fC\fBfalse\fP\fP)"
+Set the session cookie parameters \fBint $lifetime \fP Lifetime of the session cookie, defined in seconds\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$path\fP [optional] 
+.RE
+.PP
+Path on the domain where the cookie will work\&. Use a single slash ('/') for all paths on the domain\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$domain\fP [optional] 
+.RE
+.PP
+Cookie domain, for example 'www\&.php\&.net'\&. To make cookies visible on all subdomains then the domain must be prefixed with a dot like '\&.php\&.net'\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$secure\fP [optional] 
+.RE
+.PP
+If true cookie will only be sent over secure connections\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$httponly\fP [optional] 
+.RE
+.PP
+If set to true then PHP will attempt to send the httponly flag when setting the session cookie\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void|bool since 7\&.2\&.0 returns true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "session_set_cookie_params ( $options)"
+Set the session cookie parameters \fBarray $options \fP An associative array which may have any of the keys lifetime, path, domain, secure, httponly and samesite\&. The values have the same meaning as described for the parameters with the same name\&. The value of the samesite element should be either Lax or Strict\&. If any of the allowed options are not given, their default values are the same as the default values of the explicit parameters\&. If the samesite element is omitted, no SameSite cookie attribute is set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool returns true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.3 
+.RE
+.PP
+
+.SS "session_set_save_handler ( $open,  $close,  $read,  $write,  $destroy,  $gc,  $create_sid = \fC\fBnull\fP\fP,  $validate_sid = \fC\fBnull\fP\fP,  $update_timestamp = \fC\fBnull\fP\fP)"
+Sets user-level session storage functions \fBcallback $open \fP Open function, this works like a constructor in classes and is executed when the session is being opened\&. The open function expects two parameters, where the first is the save path and the second is the session name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$close\fP 
+.RE
+.PP
+Close function, this works like a destructor in classes and is executed when the session operation is done\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$read\fP 
+.RE
+.PP
+Read function must return string value always to make save handler work as expected\&. Return empty string if there is no data to read\&. Return values from other handlers are converted to boolean expression\&. true for success, false for failure\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$write\fP 
+.RE
+.PP
+Write function that is called when session data is to be saved\&. This function expects two parameters: an identifier and the data associated with it\&. 
+.PP
+The 'write' handler is not executed until after the output stream is closed\&. Thus, output from debugging statements in the 'write' handler will never be seen in the browser\&. If debugging output is necessary, it is suggested that the debug output be written to a file instead\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$destroy\fP 
+.RE
+.PP
+The destroy handler, this is executed when a session is destroyed with \fBsession_destroy\fP and takes the session id as its only parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$gc\fP 
+.RE
+.PP
+The garbage collector, this is executed when the session garbage collector is executed and takes the max session lifetime as its only parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$create_sid\fP [optional] 
+.RE
+.PP
+This callback is executed when a new session ID is required\&. No parameters are provided, and the return value should be a string that is a valid session ID for your handler\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$validate_sid\fP [optional] 
+.br
+\fI$update_timestamp\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "session_set_save_handler (\fBSessionHandlerInterface\fP $session_handler,  $register_shutdown = \fC\fBtrue\fP\fP)"
+(PHP 5\&.4)
+.br
+ Sets user-level session storage functions \fBhttps://php\&.net/manual/en/function\&.session-set-save-handler\&.php\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$session_handler\fP An instance of a class implementing \fBSessionHandlerInterface\fP, such as \fBSessionHandler\fP, to register as the session handler\&. Since PHP 5\&.4 only\&. 
+.br
+\fI$register_shutdown\fP [optional] Register \fBsession_write_close()\fP as a \fBregister_shutdown_function()\fP function\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "session_start ( $options = \fC[]\fP)"
+Initialize session data \fBarray $options [optional] \fPIf provided, this is an associative array of options that will override the currently set session configuration directives\&. The keys should not include the session\&. prefix\&. In addition to the normal set of configuration directives, a read_and_close option may also be provided\&. If set to TRUE, this will result in the session being closed immediately after being read, thereby avoiding unnecessary locking if the session data won't be changed\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool This function returns true if a session was successfully started, otherwise false\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "session_status ()"
+(PHP 5 >= 5\&.4\&.0)
+.br
+ Returns the current session status \fBint \fBPHP_SESSION_DISABLED\fP if sessions are disabled\&. \fBPHP_SESSION_NONE\fP if sessions are enabled, but none exists\&. \fBPHP_SESSION_ACTIVE\fP if sessions are enabled, and one exists\&. \fP
+.SS "session_unregister ( $name)"
+Unregister a global variable from the current session \fBstring $name \fP The variable name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.3 This function has been DEPRECATED as of PHP 5\&.3\&.0 and REMOVED as of PHP 5\&.4\&.0\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "session_unset ()"
+Free all session variables \fBvoid|bool since 7\&.2\&.0 returns true on success or false on failure\&.  4\&.0  5\&.0 \fP
+.SS "session_write_close ()"
+Write session data and end session \fBvoid|bool since 7\&.2\&.0 returns true on success or false on failure\&.  4\&.0\&.4  5\&.0 \fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

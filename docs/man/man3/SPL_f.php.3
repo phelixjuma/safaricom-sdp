@@ -1,0 +1,292 @@
+.TH "vendor/jetbrains/phpstorm-stubs/SPL/SPL_f.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/SPL/SPL_f.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBspl_classes\fP ()"
+.br
+.ti -1c
+.RI "\fBspl_autoload\fP ($class_name, $file_extensions=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBspl_autoload_extensions\fP ($file_extensions=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBspl_autoload_register\fP ($autoload_function=\fBnull\fP, $throw=\fBtrue\fP, $prepend=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBspl_autoload_unregister\fP ($autoload_function)"
+.br
+.ti -1c
+.RI "\fBspl_autoload_functions\fP ()"
+.br
+.ti -1c
+.RI "\fBspl_autoload_call\fP ($class_name)"
+.br
+.ti -1c
+.RI "\fBclass_parents\fP ($\fBclass\fP, $autoload=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBclass_implements\fP ($\fBclass\fP, $autoload=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBspl_object_hash\fP ($obj)"
+.br
+.ti -1c
+.RI "\fBiterator_to_array\fP ($iterator, $use_keys=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBiterator_count\fP ($iterator)"
+.br
+.ti -1c
+.RI "\fBiterator_apply\fP ($iterator, $\fBfunction\fP, array $args=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBclass_uses\fP ($\fBclass\fP, bool $autoload=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBspl_object_id\fP ($obj)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "class_implements ( $class,  $autoload = \fC\fBnull\fP\fP)"
+Return the interfaces which are implemented by the given class \fBmixed $class \fP An object (class instance) or a string (class name)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$autoload\fP [optional] 
+.RE
+.PP
+Whether to allow this function to load the class automatically through the __autoload magic method\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array An array on success, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "class_parents ( $class,  $autoload = \fC\fBnull\fP\fP)"
+Return the parent classes of the given class \fBmixed $class \fP An object (class instance) or a string (class name)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$autoload\fP [optional] 
+.RE
+.PP
+Whether to allow this function to load the class automatically through the __autoload magic method\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array An array on success, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "class_uses ( $class, bool $autoload = \fC\fBtrue\fP\fP)"
+Return the traits used by the given class 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$class\fP An object (class instance) or a string (class name)\&. 
+.br
+\fI$autoload\fP Whether to allow this function to load the class automatically through the __autoload() magic method\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array Array on success, or FALSE on error\&. \fBclass_parents()  get_declared_traits()  5\&.4 \fP
+.RE
+.PP
+
+.SS "iterator_apply ( $iterator,  $function, array $args = \fC\fBnull\fP\fP)"
+Call a function for every element in an iterator \fBTraversable $iterator \fP The class to iterate over\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$function\fP 
+.RE
+.PP
+The callback function to call on every element\&. The function must return true in order to continue iterating over the iterator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$args\fP [optional] 
+.RE
+.PP
+Arguments to pass to the callback function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the iteration count\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "iterator_count ( $iterator)"
+Count the elements in an iterator \fBTraversable $iterator \fP The iterator being counted\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The number of elements in iterator\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "iterator_to_array ( $iterator,  $use_keys = \fC\fBtrue\fP\fP)"
+Copy the iterator into an array \fBTraversable $iterator \fP The iterator being copied\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$use_keys\fP [optional] 
+.RE
+.PP
+Whether to use the iterator element keys as index\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array An array containing the elements of the iterator\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "spl_autoload ( $class_name,  $file_extensions = \fC\fBnull\fP\fP)"
+Default implementation for __autoload() \fBstring $class_name \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$file_extensions\fP [optional] 
+.RE
+.PP
+By default it checks all include paths to contain filenames built up by the lowercase class name appended by the filename extensions \&.inc and \&.php\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1\&.2 
+.RE
+.PP
+
+.SS "spl_autoload_call ( $class_name)"
+Try all registered __autoload() function to load the requested class \fBstring $class_name \fP The class name being searched\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1\&.2 
+.RE
+.PP
+
+.SS "spl_autoload_extensions ( $file_extensions = \fC\fBnull\fP\fP)"
+Register and return default file extensions for spl_autoload \fBstring $file_extensions [optional] \fP When calling without an argument, it simply returns the current list of extensions each separated by comma\&. To modify the list of file extensions, simply invoke the functions with the new list of file extensions to use in a single string with each extensions separated by comma\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP comma delimited list of default file extensions for spl_autoload\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1\&.2 
+.RE
+.PP
+
+.SS "spl_autoload_functions ()"
+Return all registered __autoload() functions \fBarray An array of all registered __autoload functions\&. If the autoload stack is not activated then the return value is false\&. If no function is registered the return value will be an empty array\&.  5\&.1\&.2 \fP
+.SS "spl_autoload_register ( $autoload_function = \fC\fBnull\fP\fP,  $throw = \fC\fBtrue\fP\fP,  $prepend = \fC\fBfalse\fP\fP)"
+Register given function as __autoload() implementation \fBcallback $autoload_function [optional] \fP The autoload function being registered\&. If no parameter is provided, then the default implementation of spl_autoload will be registered\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$throw\fP This parameter specifies whether \fBspl_autoload_register()\fP should throw exceptions when the autoload_function cannot be registered\&. 
+.br
+\fI$prepend\fP If true, \fBspl_autoload_register()\fP will prepend the autoloader on the autoload stack instead of appending it\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1\&.2 
+.RE
+.PP
+
+.SS "spl_autoload_unregister ( $autoload_function)"
+Unregister given function as __autoload() implementation \fBmixed $autoload_function \fP The autoload function being unregistered\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1\&.2 
+.RE
+.PP
+
+.SS "spl_classes ()"
+Return available SPL classes \fBarray  5\&.0 \fP
+.SS "spl_object_hash ( $obj)"
+Return hash id for given object \fBobject $obj  string A string that is unique for each object and is always the same for the same object\&.  5\&.2 \fP
+.SS "spl_object_id ( $obj)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$obj\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

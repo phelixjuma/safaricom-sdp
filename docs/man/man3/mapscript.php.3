@@ -1,0 +1,959 @@
+.TH "vendor/jetbrains/phpstorm-stubs/mapscript/mapscript.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/mapscript/mapscript.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBclassObj\fP"
+.br
+.ti -1c
+.RI "class \fBclusterObj\fP"
+.br
+.ti -1c
+.RI "class \fBcolorObj\fP"
+.br
+.ti -1c
+.RI "class \fBerrorObj\fP"
+.br
+.ti -1c
+.RI "class \fBgridObj\fP"
+.br
+.ti -1c
+.RI "class \fBhashTableObj\fP"
+.br
+.ti -1c
+.RI "class \fBimageObj\fP"
+.br
+.ti -1c
+.RI "class \fBlabelcacheMemberObj\fP"
+.br
+.ti -1c
+.RI "class \fBlabelcacheObj\fP"
+.br
+.ti -1c
+.RI "class \fBlabelObj\fP"
+.br
+.ti -1c
+.RI "class \fBlayerObj\fP"
+.br
+.ti -1c
+.RI "class \fBlegendObj\fP"
+.br
+.ti -1c
+.RI "class \fBlineObj\fP"
+.br
+.ti -1c
+.RI "class \fBmapObj\fP"
+.br
+.ti -1c
+.RI "class \fBoutputformatObj\fP"
+.br
+.ti -1c
+.RI "class \fBOwsrequestObj\fP"
+.br
+.ti -1c
+.RI "class \fBpointObj\fP"
+.br
+.ti -1c
+.RI "class \fBprojectionObj\fP"
+.br
+.ti -1c
+.RI "class \fBquerymapObj\fP"
+.br
+.ti -1c
+.RI "class \fBrectObj\fP"
+.br
+.ti -1c
+.RI "class \fBreferenceMapObj\fP"
+.br
+.ti -1c
+.RI "class \fBresultObj\fP"
+.br
+.ti -1c
+.RI "class \fBscalebarObj\fP"
+.br
+.ti -1c
+.RI "class \fBshapefileObj\fP"
+.br
+.ti -1c
+.RI "class \fBshapeObj\fP"
+.br
+.ti -1c
+.RI "class \fBstyleObj\fP"
+.br
+.ti -1c
+.RI "class \fBsymbolObj\fP"
+.br
+.ti -1c
+.RI "class \fBwebObj\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBms_GetVersion\fP ()"
+.br
+.ti -1c
+.RI "\fBms_GetVersionInt\fP ()"
+.br
+.ti -1c
+.RI "\fBms_iogetStdoutBufferBytes\fP ()"
+.br
+.ti -1c
+.RI "\fBms_iogetstdoutbufferstring\fP ()"
+.br
+.ti -1c
+.RI "\fBms_ioinstallstdinfrombuffer\fP ()"
+.br
+.ti -1c
+.RI "\fBms_ioinstallstdouttobuffer\fP ()"
+.br
+.ti -1c
+.RI "\fBms_ioresethandlers\fP ()"
+.br
+.ti -1c
+.RI "\fBms_iostripstdoutbuffercontenttype\fP ()"
+.br
+.ti -1c
+.RI "\fBms_iostripstdoutbuffercontentheaders\fP ()"
+.br
+.ti -1c
+.RI "\fBms_TokenizeMap\fP ($map_file_name)"
+.br
+.ti -1c
+.RI "\fBms_GetErrorObj\fP ()"
+.br
+.ti -1c
+.RI "\fBms_ResetErrorList\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBMS_TRUE\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_FALSE\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_ON\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_OFF\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_YES\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_NO\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_INCHES\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_FEET\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_MILES\fP = 2"
+.br
+.ti -1c
+.RI "const \fBMS_METERS\fP = 3"
+.br
+.ti -1c
+.RI "const \fBMS_KILOMETERS\fP = 4"
+.br
+.ti -1c
+.RI "const \fBMS_DD\fP = 5"
+.br
+.ti -1c
+.RI "const \fBMS_PIXELS\fP = 6"
+.br
+.ti -1c
+.RI "const \fBMS_NAUTICALMILES\fP = 8"
+.br
+.ti -1c
+.RI "const \fBMS_LAYER_POINT\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_LAYER_LINE\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_LAYER_POLYGON\fP = 2"
+.br
+.ti -1c
+.RI "const \fBMS_LAYER_RASTER\fP = 3"
+.br
+.ti -1c
+.RI "const \fBMS_LAYER_ANNOTATION\fP = 4"
+.br
+.ti -1c
+.RI "const \fBMS_LAYER_QUERY\fP = 5"
+.br
+.ti -1c
+.RI "const \fBMS_LAYER_CIRCLE\fP = 6"
+.br
+.ti -1c
+.RI "const \fBMS_LAYER_TILEINDEX\fP = 7"
+.br
+.ti -1c
+.RI "const \fBMS_LAYER_CHART\fP = 8"
+.br
+.ti -1c
+.RI "const \fBMS_DEFAULT\fP = 2"
+.br
+.ti -1c
+.RI "const \fBMS_EMBED\fP = 3"
+.br
+.ti -1c
+.RI "const \fBMS_DELETE\fP = 4"
+.br
+.ti -1c
+.RI "const \fBMS_GD_ALPHA\fP = 1000"
+.br
+.ti -1c
+.RI "const \fBMS_UL\fP = 101"
+.br
+.ti -1c
+.RI "const \fBMS_LR\fP = 102"
+.br
+.ti -1c
+.RI "const \fBMS_UR\fP = 103"
+.br
+.ti -1c
+.RI "const \fBMS_LL\fP = 104"
+.br
+.ti -1c
+.RI "const \fBMS_CR\fP = 105"
+.br
+.ti -1c
+.RI "const \fBMS_CL\fP = 106"
+.br
+.ti -1c
+.RI "const \fBMS_UC\fP = 107"
+.br
+.ti -1c
+.RI "const \fBMS_LC\fP = 108"
+.br
+.ti -1c
+.RI "const \fBMS_CC\fP = 109"
+.br
+.ti -1c
+.RI "const \fBMS_XY\fP = 111"
+.br
+.ti -1c
+.RI "const \fBMS_AUTO\fP = 110"
+.br
+.ti -1c
+.RI "const \fBMS_AUTO2\fP = 114"
+.br
+.ti -1c
+.RI "const \fBMS_FOLLOW\fP = 112"
+.br
+.ti -1c
+.RI "const \fBMS_NONE\fP = 113"
+.br
+.ti -1c
+.RI "const \fBMS_TINY\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_SMALL\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_MEDIUM\fP = 2"
+.br
+.ti -1c
+.RI "const \fBMS_LARGE\fP = 3"
+.br
+.ti -1c
+.RI "const \fBMS_GIANT\fP = 4"
+.br
+.ti -1c
+.RI "const \fBMS_SHAPE_POINT\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_SHAPE_LINE\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_SHAPE_POLYGON\fP = 2"
+.br
+.ti -1c
+.RI "const \fBMS_SHAPE_NULL\fP = 3"
+.br
+.ti -1c
+.RI "const \fBMS_SHP_POINT\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_SHP_ARC\fP = 3"
+.br
+.ti -1c
+.RI "const \fBMS_SHP_POLYGON\fP = 5"
+.br
+.ti -1c
+.RI "const \fBMS_SHP_MULTIPOINT\fP = 8"
+.br
+.ti -1c
+.RI "const \fBMS_SINGLE\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_MULTIPLE\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_NORMAL\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_HILITE\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_SELECTED\fP = 2"
+.br
+.ti -1c
+.RI "const \fBMS_INLINE\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_SHAPEFILE\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_TILED_SHAPEFILE\fP = 2"
+.br
+.ti -1c
+.RI "const \fBMS_SDE\fP = 3"
+.br
+.ti -1c
+.RI "const \fBMS_OGR\fP = 4"
+.br
+.ti -1c
+.RI "const \fBMS_TILED_OGR\fP = 5"
+.br
+.ti -1c
+.RI "const \fBMS_POSTGIS\fP = 6"
+.br
+.ti -1c
+.RI "const \fBMS_WMS\fP = 7"
+.br
+.ti -1c
+.RI "const \fBMS_ORACLESPATIAL\fP = 8"
+.br
+.ti -1c
+.RI "const \fBMS_WFS\fP = 9"
+.br
+.ti -1c
+.RI "const \fBMS_GRATICULE\fP = 10"
+.br
+.ti -1c
+.RI "const \fBMS_RASTER\fP = 12"
+.br
+.ti -1c
+.RI "const \fBMS_PLUGIN\fP = 13"
+.br
+.ti -1c
+.RI "const \fBMS_UNION\fP = 14"
+.br
+.ti -1c
+.RI "const \fBMS_NOERR\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_IOERR\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_MEMERR\fP = 2"
+.br
+.ti -1c
+.RI "const \fBMS_TYPEERR\fP = 3"
+.br
+.ti -1c
+.RI "const \fBMS_SYMERR\fP = 4"
+.br
+.ti -1c
+.RI "const \fBMS_REGEXERR\fP = 5"
+.br
+.ti -1c
+.RI "const \fBMS_TTFERR\fP = 6"
+.br
+.ti -1c
+.RI "const \fBMS_DBFERR\fP = 7"
+.br
+.ti -1c
+.RI "const \fBMS_GDERR\fP = 8"
+.br
+.ti -1c
+.RI "const \fBMS_IDENTERR\fP = 9"
+.br
+.ti -1c
+.RI "const \fBMS_EOFERR\fP = 10"
+.br
+.ti -1c
+.RI "const \fBMS_PROJERR\fP = 11"
+.br
+.ti -1c
+.RI "const \fBMS_MISCERR\fP = 12"
+.br
+.ti -1c
+.RI "const \fBMS_CGIERR\fP = 13"
+.br
+.ti -1c
+.RI "const \fBMS_WEBERR\fP = 14"
+.br
+.ti -1c
+.RI "const \fBMS_IMGERR\fP = 15"
+.br
+.ti -1c
+.RI "const \fBMS_HASHERR\fP = 16"
+.br
+.ti -1c
+.RI "const \fBMS_JOINERR\fP = 17"
+.br
+.ti -1c
+.RI "const \fBMS_NOTFOUND\fP = 18"
+.br
+.ti -1c
+.RI "const \fBMS_SHPERR\fP = 19"
+.br
+.ti -1c
+.RI "const \fBMS_PARSEERR\fP = 20"
+.br
+.ti -1c
+.RI "const \fBMS_SDEERR\fP = 21"
+.br
+.ti -1c
+.RI "const \fBMS_OGRERR\fP = 22"
+.br
+.ti -1c
+.RI "const \fBMS_QUERYERR\fP = 23"
+.br
+.ti -1c
+.RI "const \fBMS_WMSERR\fP = 24"
+.br
+.ti -1c
+.RI "const \fBMS_WMSCONNERR\fP = 25"
+.br
+.ti -1c
+.RI "const \fBMS_ORACLESPATIALERR\fP = 26"
+.br
+.ti -1c
+.RI "const \fBMS_WFSERR\fP = 27"
+.br
+.ti -1c
+.RI "const \fBMS_WFSCONNERR\fP = 28"
+.br
+.ti -1c
+.RI "const \fBMS_MAPCONTEXTERR\fP = 29"
+.br
+.ti -1c
+.RI "const \fBMS_HTTPERR\fP = 30"
+.br
+.ti -1c
+.RI "const \fBMS_WCSERR\fP = 32"
+.br
+.ti -1c
+.RI "const \fBMS_SYMBOL_SIMPLE\fP = 1000"
+.br
+.ti -1c
+.RI "const \fBMS_SYMBOL_VECTOR\fP = 1001"
+.br
+.ti -1c
+.RI "const \fBMS_SYMBOL_ELLIPSE\fP = 1002"
+.br
+.ti -1c
+.RI "const \fBMS_SYMBOL_PIXMAP\fP = 1003"
+.br
+.ti -1c
+.RI "const \fBMS_SYMBOL_TRUETYPE\fP = 1004"
+.br
+.ti -1c
+.RI "const \fBMS_IMAGEMODE_PC256\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_IMAGEMODE_RGB\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_IMAGEMODE_RGBA\fP = 2"
+.br
+.ti -1c
+.RI "const \fBMS_IMAGEMODE_INT16\fP = 3"
+.br
+.ti -1c
+.RI "const \fBMS_IMAGEMODE_FLOAT32\fP = 4"
+.br
+.ti -1c
+.RI "const \fBMS_IMAGEMODE_BYTE\fP = 5"
+.br
+.ti -1c
+.RI "const \fBMS_IMAGEMODE_FEATURE\fP = 6"
+.br
+.ti -1c
+.RI "const \fBMS_IMAGEMODE_NULL\fP = 7"
+.br
+.ti -1c
+.RI "const \fBMS_STYLE_BINDING_SIZE\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_STYLE_BINDING_ANGLE\fP = 2"
+.br
+.ti -1c
+.RI "const \fBMS_STYLE_BINDING_COLOR\fP = 3"
+.br
+.ti -1c
+.RI "const \fBMS_STYLE_BINDING_OUTLINECOLOR\fP = 4"
+.br
+.ti -1c
+.RI "const \fBMS_STYLE_BINDING_SYMBOL\fP = 5"
+.br
+.ti -1c
+.RI "const \fBMS_STYLE_BINDING_WIDTH\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_LABEL_BINDING_SIZE\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_LABEL_BINDING_ANGLE\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_LABEL_BINDING_COLOR\fP = 2"
+.br
+.ti -1c
+.RI "const \fBMS_LABEL_BINDING_OUTLINECOLOR\fP = 3"
+.br
+.ti -1c
+.RI "const \fBMS_LABEL_BINDING_FONT\fP = 4"
+.br
+.ti -1c
+.RI "const \fBMS_LABEL_BINDING_PRIORITY\fP = 5"
+.br
+.ti -1c
+.RI "const \fBMS_LABEL_BINDING_POSITION\fP = 6"
+.br
+.ti -1c
+.RI "const \fBMS_LABEL_BINDING_SHADOWSIZEX\fP = 7"
+.br
+.ti -1c
+.RI "const \fBMS_LABEL_BINDING_SHADOWSIZEY\fP = 8"
+.br
+.ti -1c
+.RI "const \fBMS_ALIGN_LEFT\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_ALIGN_CENTER\fP = 1"
+.br
+.ti -1c
+.RI "const \fBMS_ALIGN_RIGHT\fP = 2"
+.br
+.ti -1c
+.RI "const \fBMS_GET_REQUEST\fP = 0"
+.br
+.ti -1c
+.RI "const \fBMS_POST_REQUEST\fP = 1"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "ms_GetErrorObj ()"
+Returns a reference to the head of the list of \fBerrorObj\fP\&.
+.PP
+\fBReturns\fP
+.RS 4
+\fBerrorObj\fP 
+.RE
+.PP
+
+.SS "ms_GetVersion ()"
+Returns the MapServer version and options in a string\&. This string can be parsed to find out which modules were compiled in, etc\&.
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "ms_GetVersionInt ()"
+Returns the MapServer version number (x\&.y\&.z) as an integer (x*10000 + y*100 + z)\&. (New in v5\&.0) e\&.g\&. V5\&.4\&.3 would return 50403\&.
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ms_iogetStdoutBufferBytes ()"
+Writes the current buffer to stdout\&. The PHP \fBheader()\fP function should be used to set the documents's content-type prior to calling the function\&. Returns the number of bytes written if output is sent to stdout\&. See :ref:\fCmapscript_ows\fP for more info\&.
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ms_iogetstdoutbufferstring ()"
+Fetch the current stdout buffer contents as a string\&. This method does not clear the buffer\&.
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "ms_ioinstallstdinfrombuffer ()"
+Installs a mapserver IO handler directing future stdin reading (ie\&. post request capture) to come from a buffer\&.
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "ms_ioinstallstdouttobuffer ()"
+Installs a mapserver IO handler directing future stdout output to a memory buffer\&.
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "ms_ioresethandlers ()"
+Resets the default stdin and stdout handlers in place of 'buffer' based handlers\&.
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "ms_iostripstdoutbuffercontentheaders ()"
+Strip all the Content-* headers off the stdout buffer if it has some\&.
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "ms_iostripstdoutbuffercontenttype ()"
+Strip the Content-type header off the stdout buffer if it has one, and if a content type is found it is return\&. Otherwise return false\&.
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "ms_ResetErrorList ()"
+Clear the current error list\&. Note that clearing the list invalidates any \fBerrorObj\fP handles obtained via the $error->\fBnext()\fP method\&.
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "ms_TokenizeMap ( $map_file_name)"
+Preparses a mapfile through the MapServer parser and return an array with one item for each token from the mapfile\&. Strings, logical expressions, regex expressions and comments are returned as individual tokens\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$map_file_name\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const MS_ALIGN_CENTER = 1"
+
+.SS "const MS_ALIGN_LEFT = 0"
+
+.SS "const MS_ALIGN_RIGHT = 2"
+
+.SS "const MS_AUTO = 110"
+
+.SS "const MS_AUTO2 = 114"
+
+.SS "const MS_CC = 109"
+
+.SS "const MS_CGIERR = 13"
+
+.SS "const MS_CL = 106"
+
+.SS "const MS_CR = 105"
+
+.SS "const MS_DBFERR = 7"
+
+.SS "const MS_DD = 5"
+
+.SS "const MS_DEFAULT = 2"
+
+.SS "const MS_DELETE = 4"
+
+.SS "const MS_EMBED = 3"
+
+.SS "const MS_EOFERR = 10"
+
+.SS "const MS_FALSE = 0"
+
+.SS "const MS_FEET = 1"
+
+.SS "const MS_FOLLOW = 112"
+
+.SS "const MS_GD_ALPHA = 1000"
+
+.SS "const MS_GDERR = 8"
+
+.SS "const MS_GET_REQUEST = 0"
+
+.SS "const MS_GIANT = 4"
+
+.SS "const MS_GRATICULE = 10"
+
+.SS "const MS_HASHERR = 16"
+
+.SS "const MS_HILITE = 1"
+
+.SS "const MS_HTTPERR = 30"
+
+.SS "const MS_IDENTERR = 9"
+
+.SS "const MS_IMAGEMODE_BYTE = 5"
+
+.SS "const MS_IMAGEMODE_FEATURE = 6"
+
+.SS "const MS_IMAGEMODE_FLOAT32 = 4"
+
+.SS "const MS_IMAGEMODE_INT16 = 3"
+
+.SS "const MS_IMAGEMODE_NULL = 7"
+
+.SS "const MS_IMAGEMODE_PC256 = 0"
+
+.SS "const MS_IMAGEMODE_RGB = 1"
+
+.SS "const MS_IMAGEMODE_RGBA = 2"
+
+.SS "const MS_IMGERR = 15"
+
+.SS "const MS_INCHES = 0"
+
+.SS "const MS_INLINE = 0"
+
+.SS "const MS_IOERR = 1"
+
+.SS "const MS_JOINERR = 17"
+
+.SS "const MS_KILOMETERS = 4"
+
+.SS "const MS_LABEL_BINDING_ANGLE = 1"
+
+.SS "const MS_LABEL_BINDING_COLOR = 2"
+
+.SS "const MS_LABEL_BINDING_FONT = 4"
+
+.SS "const MS_LABEL_BINDING_OUTLINECOLOR = 3"
+
+.SS "const MS_LABEL_BINDING_POSITION = 6"
+
+.SS "const MS_LABEL_BINDING_PRIORITY = 5"
+
+.SS "const MS_LABEL_BINDING_SHADOWSIZEX = 7"
+
+.SS "const MS_LABEL_BINDING_SHADOWSIZEY = 8"
+
+.SS "const MS_LABEL_BINDING_SIZE = 0"
+
+.SS "const MS_LARGE = 3"
+
+.SS "const MS_LAYER_ANNOTATION = 4"
+
+.SS "const MS_LAYER_CHART = 8"
+
+.SS "const MS_LAYER_CIRCLE = 6"
+
+.SS "const MS_LAYER_LINE = 1"
+
+.SS "const MS_LAYER_POINT = 0"
+
+.SS "const MS_LAYER_POLYGON = 2"
+
+.SS "const MS_LAYER_QUERY = 5"
+
+.SS "const MS_LAYER_RASTER = 3"
+
+.SS "const MS_LAYER_TILEINDEX = 7"
+
+.SS "const MS_LC = 108"
+
+.SS "const MS_LL = 104"
+
+.SS "const MS_LR = 102"
+
+.SS "const MS_MAPCONTEXTERR = 29"
+
+.SS "const MS_MEDIUM = 2"
+
+.SS "const MS_MEMERR = 2"
+
+.SS "const MS_METERS = 3"
+
+.SS "const MS_MILES = 2"
+
+.SS "const MS_MISCERR = 12"
+
+.SS "const MS_MULTIPLE = 1"
+
+.SS "const MS_NAUTICALMILES = 8"
+
+.SS "const MS_NO = 0"
+
+.SS "const MS_NOERR = 0"
+
+.SS "const MS_NONE = 113"
+
+.SS "const MS_NORMAL = 0"
+
+.SS "const MS_NOTFOUND = 18"
+
+.SS "const MS_OFF = 0"
+
+.SS "const MS_OGR = 4"
+
+.SS "const MS_OGRERR = 22"
+
+.SS "const MS_ON = 1"
+
+.SS "const MS_ORACLESPATIAL = 8"
+
+.SS "const MS_ORACLESPATIALERR = 26"
+
+.SS "const MS_PARSEERR = 20"
+
+.SS "const MS_PIXELS = 6"
+
+.SS "const MS_PLUGIN = 13"
+
+.SS "const MS_POST_REQUEST = 1"
+
+.SS "const MS_POSTGIS = 6"
+
+.SS "const MS_PROJERR = 11"
+
+.SS "const MS_QUERYERR = 23"
+
+.SS "const MS_RASTER = 12"
+
+.SS "const MS_REGEXERR = 5"
+
+.SS "const MS_SDE = 3"
+
+.SS "const MS_SDEERR = 21"
+
+.SS "const MS_SELECTED = 2"
+
+.SS "const MS_SHAPE_LINE = 1"
+
+.SS "const MS_SHAPE_NULL = 3"
+
+.SS "const MS_SHAPE_POINT = 0"
+
+.SS "const MS_SHAPE_POLYGON = 2"
+
+.SS "const MS_SHAPEFILE = 1"
+
+.SS "const MS_SHP_ARC = 3"
+
+.SS "const MS_SHP_MULTIPOINT = 8"
+
+.SS "const MS_SHP_POINT = 1"
+
+.SS "const MS_SHP_POLYGON = 5"
+
+.SS "const MS_SHPERR = 19"
+
+.SS "const MS_SINGLE = 0"
+
+.SS "const MS_SMALL = 1"
+
+.SS "const MS_STYLE_BINDING_ANGLE = 2"
+
+.SS "const MS_STYLE_BINDING_COLOR = 3"
+
+.SS "const MS_STYLE_BINDING_OUTLINECOLOR = 4"
+
+.SS "const MS_STYLE_BINDING_SIZE = 0"
+
+.SS "const MS_STYLE_BINDING_SYMBOL = 5"
+
+.SS "const MS_STYLE_BINDING_WIDTH = 1"
+
+.SS "const MS_SYMBOL_ELLIPSE = 1002"
+
+.SS "const MS_SYMBOL_PIXMAP = 1003"
+
+.SS "const MS_SYMBOL_SIMPLE = 1000"
+
+.SS "const MS_SYMBOL_TRUETYPE = 1004"
+
+.SS "const MS_SYMBOL_VECTOR = 1001"
+
+.SS "const MS_SYMERR = 4"
+
+.SS "const MS_TILED_OGR = 5"
+
+.SS "const MS_TILED_SHAPEFILE = 2"
+
+.SS "const MS_TINY = 0"
+
+.SS "const MS_TRUE = 1"
+Mapscript extension (version 7\&.0\&.*) Parsed from documentation Generated at 2017-08-24 16:06:54
+.PP
+\fBSee also\fP
+.RS 4
+https://mapserver.org/mapscript/php/phpmapscript.html 
+.PP
+https://raw.githubusercontent.com/mapserver/docs/branch-7-0/en/mapscript/php/phpmapscript.txt 
+.RE
+.PP
+
+.SS "const MS_TTFERR = 6"
+
+.SS "const MS_TYPEERR = 3"
+
+.SS "const MS_UC = 107"
+
+.SS "const MS_UL = 101"
+
+.SS "const MS_UNION = 14"
+
+.SS "const MS_UR = 103"
+
+.SS "const MS_WCSERR = 32"
+
+.SS "const MS_WEBERR = 14"
+
+.SS "const MS_WFS = 9"
+
+.SS "const MS_WFSCONNERR = 28"
+
+.SS "const MS_WFSERR = 27"
+
+.SS "const MS_WMS = 7"
+
+.SS "const MS_WMSCONNERR = 25"
+
+.SS "const MS_WMSERR = 24"
+
+.SS "const MS_XY = 111"
+
+.SS "const MS_YES = 1"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

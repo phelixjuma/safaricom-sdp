@@ -1,0 +1,1213 @@
+.TH "vendor/jetbrains/phpstorm-stubs/radius/radius.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/radius/radius.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBradius_acct_open\fP ()"
+.br
+.ti -1c
+.RI "\fBradius_add_server\fP ($radius_handle, $hostname, $port, $secret, $timeout, $max_tries)"
+.br
+.ti -1c
+.RI "\fBradius_auth_open\fP ()"
+.br
+.ti -1c
+.RI "\fBradius_close\fP ($radius_handle)"
+.br
+.ti -1c
+.RI "\fBradius_config\fP ($radius_handle, $\fBfile\fP)"
+.br
+.ti -1c
+.RI "\fBradius_create_request\fP ($radius_handle, $type)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBRAD_OPTION_TAG\fP 1"
+.br
+.ti -1c
+.RI "const \fBRADIUS_OPTION_SALT\fP 2"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCESS_REQUEST\fP 1"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCESS_ACCEPT\fP 2"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCESS_REJECT\fP 3"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCOUNTING_REQUEST\fP 4"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCOUNTING_RESPONSE\fP 5"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCESS_CHALLENGE\fP 11"
+.br
+.ti -1c
+.RI "const \fBRADIUS_DISCONNECT_REQUEST\fP 40"
+.br
+.ti -1c
+.RI "const \fBRADIUS_DISCONNECT_ACK\fP 41"
+.br
+.ti -1c
+.RI "const \fBRADIUS_DISCONNECT_NAK\fP 42"
+.br
+.ti -1c
+.RI "const \fBRADIUS_COA_REQUEST\fP 43"
+.br
+.ti -1c
+.RI "const \fBRADIUS_COA_ACK\fP 44"
+.br
+.ti -1c
+.RI "const \fBRADIUS_COA_NAK\fP 45"
+.br
+.ti -1c
+.RI "const \fBRADIUS_USER_NAME\fP 1"
+.br
+.ti -1c
+.RI "const \fBRADIUS_USER_PASSWORD\fP 2"
+.br
+.ti -1c
+.RI "const \fBRADIUS_CHAP_PASSWORD\fP 3"
+.br
+.ti -1c
+.RI "const \fBRADIUS_NAS_IP_ADDRESS\fP 4"
+.br
+.ti -1c
+.RI "const \fBRADIUS_NAS_PORT\fP 5"
+.br
+.ti -1c
+.RI "const \fBRADIUS_SERVICE_TYPE\fP 6"
+.br
+.ti -1c
+.RI "const \fBRADIUS_LOGIN\fP 1"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED\fP 2"
+.br
+.ti -1c
+.RI "const \fBRADIUS_CALLBACK_LOGIN\fP 3"
+.br
+.ti -1c
+.RI "const \fBRADIUS_CALLBACK_FRAMED\fP 4"
+.br
+.ti -1c
+.RI "const \fBRADIUS_OUTBOUND\fP 5"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ADMINISTRATIVE\fP 6"
+.br
+.ti -1c
+.RI "const \fBRADIUS_NAS_PROMPT\fP 7"
+.br
+.ti -1c
+.RI "const \fBRADIUS_AUTHENTICATE_ONLY\fP 8"
+.br
+.ti -1c
+.RI "const \fBRADIUS_CALLBACK_NAS_PROMPT\fP 9"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED_PROTOCOL\fP 7"
+.br
+.ti -1c
+.RI "const \fBRADIUS_PPP\fP 1"
+.br
+.ti -1c
+.RI "const \fBRADIUS_SLIP\fP 2"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ARAP\fP 3"
+.br
+.ti -1c
+.RI "const \fBRADIUS_GANDALF\fP 4"
+.br
+.ti -1c
+.RI "const \fBRADIUS_XYLOGICS\fP 5"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED_IP_ADDRESS\fP 8"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED_IP_NETMASK\fP 9"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED_ROUTING\fP 10"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FILTER_ID\fP 11"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED_MTU\fP 12"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED_COMPRESSION\fP 13"
+.br
+.ti -1c
+.RI "const \fBRADIUS_COMP_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBRADIUS_COMP_VJ\fP 1"
+.br
+.ti -1c
+.RI "const \fBRADIUS_COMP_IPXHDR\fP 2"
+.br
+.ti -1c
+.RI "const \fBRADIUS_LOGIN_IP_HOST\fP 14"
+.br
+.ti -1c
+.RI "const \fBRADIUS_LOGIN_SERVICE\fP 15"
+.br
+.ti -1c
+.RI "const \fBRADIUS_LOGIN_TCP_PORT\fP 16"
+.br
+.ti -1c
+.RI "const \fBRADIUS_REPLY_MESSAGE\fP 18"
+.br
+.ti -1c
+.RI "const \fBRADIUS_CALLBACK_NUMBER\fP 19"
+.br
+.ti -1c
+.RI "const \fBRADIUS_CALLBACK_ID\fP 20"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED_ROUTE\fP 22"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED_IPX_NETWORK\fP 23"
+.br
+.ti -1c
+.RI "const \fBRADIUS_STATE\fP 24"
+.br
+.ti -1c
+.RI "const \fBRADIUS_CLASS\fP 25"
+.br
+.ti -1c
+.RI "const \fBRADIUS_VENDOR_SPECIFIC\fP 26"
+.br
+.ti -1c
+.RI "const \fBRADIUS_SESSION_TIMEOUT\fP 27"
+.br
+.ti -1c
+.RI "const \fBRADIUS_IDLE_TIMEOUT\fP 28"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERMINATION_ACTION\fP 29"
+.br
+.ti -1c
+.RI "const \fBRADIUS_CALLED_STATION_ID\fP 30"
+.br
+.ti -1c
+.RI "const \fBRADIUS_CALLING_STATION_ID\fP 31"
+.br
+.ti -1c
+.RI "const \fBRADIUS_NAS_IDENTIFIER\fP 32"
+.br
+.ti -1c
+.RI "const \fBRADIUS_PROXY_STATE\fP 33"
+.br
+.ti -1c
+.RI "const \fBRADIUS_LOGIN_LAT_SERVICE\fP 34"
+.br
+.ti -1c
+.RI "const \fBRADIUS_LOGIN_LAT_NODE\fP 35"
+.br
+.ti -1c
+.RI "const \fBRADIUS_LOGIN_LAT_GROUP\fP 36"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED_APPLETALK_LINK\fP 37"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED_APPLETALK_NETWORK\fP 38"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED_APPLETALK_ZONE\fP 39"
+.br
+.ti -1c
+.RI "const \fBRADIUS_CHAP_CHALLENGE\fP 60"
+.br
+.ti -1c
+.RI "const \fBRADIUS_NAS_PORT_TYPE\fP 61"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ASYNC\fP 0"
+.br
+.ti -1c
+.RI "const \fBRADIUS_SYNC\fP 1"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ISDN_SYNC\fP 2"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ISDN_ASYNC_V120\fP 3"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ISDN_ASYNC_V110\fP 4"
+.br
+.ti -1c
+.RI "const \fBRADIUS_VIRTUAL\fP 5"
+.br
+.ti -1c
+.RI "const \fBRADIUS_PIAFS\fP 6"
+.br
+.ti -1c
+.RI "const \fBRADIUS_HDLC_CLEAR_CHANNEL\fP 7"
+.br
+.ti -1c
+.RI "const \fBRADIUS_X_25\fP 8"
+.br
+.ti -1c
+.RI "const \fBRADIUS_X_75\fP 9"
+.br
+.ti -1c
+.RI "const \fBRADIUS_G_3_FAX\fP 10"
+.br
+.ti -1c
+.RI "const \fBRADIUS_SDSL\fP 11"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ADSL_CAP\fP 12"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ADSL_DMT\fP 13"
+.br
+.ti -1c
+.RI "const \fBRADIUS_IDSL\fP 14"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ETHERNET\fP 15"
+.br
+.ti -1c
+.RI "const \fBRADIUS_XDSL\fP 16"
+.br
+.ti -1c
+.RI "const \fBRADIUS_CABLE\fP 17"
+.br
+.ti -1c
+.RI "const \fBRADIUS_WIRELESS_OTHER\fP 18"
+.br
+.ti -1c
+.RI "const \fBRADIUS_WIRELESS_IEEE_802_11\fP 19"
+.br
+.ti -1c
+.RI "const \fBRADIUS_PORT_LIMIT\fP 62"
+.br
+.ti -1c
+.RI "const \fBRADIUS_LOGIN_LAT_PORT\fP 63"
+.br
+.ti -1c
+.RI "const \fBRADIUS_CONNECT_INFO\fP 77"
+.br
+.ti -1c
+.RI "const \fBRADIUS_NAS_IPV6_ADDRESS\fP 95"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED_INTERFACE_ID\fP 96"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED_IPV6_PREFIX\fP 97"
+.br
+.ti -1c
+.RI "const \fBRADIUS_LOGIN_IPV6_HOST\fP 98"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED_IPV6_ROUTE\fP 99"
+.br
+.ti -1c
+.RI "const \fBRADIUS_FRAMED_IPV6_POOL\fP 100"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE\fP 101"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE_RESIDUAL_SESSION_CONTEXT_REMOVED\fP 201"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE_INVALID_EAP_PACKET\fP 202"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE_UNSUPPORTED_ATTRIBUTE\fP 401"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE_MISSING_ATTRIBUTE\fP 402"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE_NAS_IDENTIFICATION_MISMATCH\fP 403"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE_INVALID_REQUEST\fP 404"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE_UNSUPPORTED_SERVICE\fP 405"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE_UNSUPPORTED_EXCEPTION\fP 406"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE_ADMINISTRATIVELY_PROHIBITED\fP 501"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE_REQUEST_NOT_ROUTABLE\fP 502"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE_SESSION_CONTEXT_NOT_FOUND\fP 503"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE_SESSION_CONTEXT_NOT_REMOVABLE\fP 504"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE_OTHER_PROXY_PROCESSING_ERROR\fP 505"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE_RESOURCES_UNAVAILABLE\fP 506"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ERROR_CAUSE_REQUEST_INITIATED\fP 507"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCT_STATUS_TYPE\fP 40"
+.br
+.ti -1c
+.RI "const \fBRADIUS_START\fP 1"
+.br
+.ti -1c
+.RI "const \fBRADIUS_STOP\fP 2"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCOUNTING_ON\fP 7"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCOUNTING_OFF\fP 8"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCT_DELAY_TIME\fP 41"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCT_INPUT_OCTETS\fP 42"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCT_OUTPUT_OCTETS\fP 43"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCT_SESSION_ID\fP 44"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCT_AUTHENTIC\fP 45"
+.br
+.ti -1c
+.RI "const \fBRADIUS_AUTH_RADIUS\fP 1"
+.br
+.ti -1c
+.RI "const \fBRADIUS_AUTH_LOCAL\fP 2"
+.br
+.ti -1c
+.RI "const \fBRADIUS_AUTH_REMOTE\fP 3"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCT_SESSION_TIME\fP 46"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCT_INPUT_PACKETS\fP 47"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCT_OUTPUT_PACKETS\fP 48"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCT_TERMINATE_CAUSE\fP 49"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_USER_REQUEST\fP 1"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_LOST_CARRIER\fP 2"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_LOST_SERVICE\fP 3"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_IDLE_TIMEOUT\fP 4"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_SESSION_TIMEOUT\fP 5"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_ADMIN_RESET\fP 6"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_ADMIN_REBOOT\fP 7"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_PORT_ERROR\fP 8"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_NAS_ERROR\fP 9"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_NAS_REQUEST\fP 10"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_NAS_REBOOT\fP 11"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_PORT_UNNEEDED\fP 12"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_PORT_PREEMPTED\fP 13"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_PORT_SUSPENDED\fP 14"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_SERVICE_UNAVAILABLE\fP 15"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_CALLBACK\fP 16"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_USER_ERROR\fP 17"
+.br
+.ti -1c
+.RI "const \fBRADIUS_TERM_HOST_REQUEST\fP 18"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCT_MULTI_SESSION_ID\fP 50"
+.br
+.ti -1c
+.RI "const \fBRADIUS_ACCT_LINK_COUNT\fP 51"
+.br
+.ti -1c
+.RI "const \fBRADIUS_VENDOR_MICROSOFT\fP 311"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_CHAP_RESPONSE\fP 1"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_CHAP_ERROR\fP 2"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_CHAP_PW_1\fP 3"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_CHAP_PW_2\fP 4"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_CHAP_LM_ENC_PW\fP 5"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_CHAP_NT_ENC_PW\fP 6"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_MPPE_ENCRYPTION_POLICY\fP 7"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_MPPE_ENCRYPTION_TYPES\fP 8"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_RAS_VENDOR\fP 9"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_CHAP_DOMAIN\fP 10"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_CHAP_CHALLENGE\fP 11"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_CHAP_MPPE_KEYS\fP 12"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_BAP_USAGE\fP 13"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_LINK_UTILIZATION_THRESHOLD\fP 14"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_LINK_DROP_TIME_LIMIT\fP 15"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_MPPE_SEND_KEY\fP 16"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_MPPE_RECV_KEY\fP 17"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_RAS_VERSION\fP 18"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_OLD_ARAP_PASSWORD\fP 19"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_NEW_ARAP_PASSWORD\fP 20"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_ARAP_PASSWORD_CHANGE_REASON\fP 21"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_FILTER\fP 22"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_ACCT_AUTH_TYPE\fP 23"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_ACCT_EAP_TYPE\fP 24"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_CHAP2_RESPONSE\fP 25"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_CHAP2_SUCCESS\fP 26"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_CHAP2_PW\fP 27"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_PRIMARY_DNS_SERVER\fP 28"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_SECONDARY_DNS_SERVER\fP 29"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_PRIMARY_NBNS_SERVER\fP 30"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_SECONDARY_NBNS_SERVER\fP 31"
+.br
+.ti -1c
+.RI "const \fBRADIUS_MICROSOFT_MS_ARAP_CHALLENGE\fP 33"
+.br
+.ti -1c
+.RI "const \fBRADIUS_OPTION_NONE\fP RADIUS_OPTION_NONE"
+.br
+.ti -1c
+.RI "const \fBRADIUS_OPTION_TAGGED\fP RADIUS_OPTION_TAGGED"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "radius_acct_open ()"
+Creates a Radius handle for accounting \fBresource|false Returns a handle on success, \fBFALSE\fP on error\&. This function only fails if insufficient memory is available\&.  1\&.1\&.0 \fP
+.SS "radius_add_server ( $radius_handle,  $hostname,  $port,  $secret,  $timeout,  $max_tries)"
+\fB\fBradius_add_server()\fP\fP may be called multiple times, and it may be used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBradius_config()\fP}\&. At most 10 servers may be specified\&. When multiple servers are given, they are tried in round-robin fashion until \fBa\fP valid response is received, or until \fBeach\fP server's max_tries limit has been reached\&. \fBresource $radius_handle  string $hostname The \fBhostname\fP parameter specifies the server host, either as a fully qualified domain name or as a dotted-quad IP address in text form\&.  int $port The \fBport\fP specifies the UDP port to contact on the server\&.\fP If port is given as 0, the library looks up the radius/udp or radacct/udp service in the network services database, and uses the port found there\&.
+.br
+ If no entry is found, the library uses the standard Radius ports, 1812 for authentication and 1813 for accounting\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$secret\fP The shared secret for the server host is passed to the \fBsecret\fP parameter\&. The Radius protocol ignores all but the leading 128 bytes of the shared secret\&. 
+.br
+\fI$timeout\fP The timeout for receiving replies from the server is passed to the \fBtimeout\fP parameter, in units of seconds\&. 
+.br
+\fI$max_tries\fP The maximum number of repeated requests to make before giving up is passed into the \fBmax_tries\fP\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBradius_config()\fP 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+1\&.1\&.0 
+.RE
+.PP
+
+.SS "radius_auth_open ()"
+Creates a Radius handle for authentication \fBresource|false Returns a handle on success, \fBFALSE\fP on error\&. This function only fails if insufficient memory is available\&.  1\&.1\&.0 \fP
+.SS "radius_close ( $radius_handle)"
+Free all ressources\&. It is not needed to call this function because php frees all resources at the end of each request\&. \fBresource $radius_handle  bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&.  1\&.1\&.0 \fP
+.SS "radius_config ( $radius_handle,  $file)"
+Before issuing any Radius requests, the library must be made aware of the servers it can contact\&. The easiest way to configure the library is to call \fB\fBradius_config()\fP\fP\&. \fB\fBradius_config()\fP\fP causes the library to read a configuration file whose format is described in radius\&.conf\&. \fBhttps://www.freebsd.org/cgi/man.cgi?query=radius.conf  resource $radius_handle  string $file The pathname of the configuration file is passed as the file argument to { radius_config()}\&. The library can also be configured programmatically by calls to \fB{ radius_add_server()}\fP\&.  bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&.  radius_add_server()  1\&.1\&.0 \fP
+.SS "radius_create_request ( $radius_handle,  $type)"
+\fBA\fP Radius request consists of a code specifying the kind of request, and zero or more attributes which provide additional information\&. To begin constructing a new request, call \fB\fBradius_create_request()\fP\fP\&.
+.br
+ \fBNote:\fP Attention: You must call this function, before you can put any attribute! \fBresource $radius_handle  int $type Type is \fBRADIUS_ACCESS_REQUEST\fP or \fBRADIUS_ACCOUNTING_REQUEST\fP\&.  bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&.  radius_send_request()  1\&.1\&.0 \fP
+.SH "Variable Documentation"
+.PP 
+.SS "const RAD_OPTION_TAG 1"
+Radius constants \fBThe maximum length of MPPE keys\&. \fP
+.SS "const RADIUS_ACCESS_ACCEPT 2"
+An Access-Accept response to an Access-Request indicating that the RADIUS server authenticated the user successfully\&. 
+.SS "const RADIUS_ACCESS_CHALLENGE 11"
+An Access-Challenge response to an Access-Request indicating that the RADIUS server requires further information in another Access-Request before authenticating the user\&. 
+.SS "const RADIUS_ACCESS_REJECT 3"
+An Access-Reject response to an Access-Request indicating that the RADIUS server could not authenticate the user\&. 
+.SS "const RADIUS_ACCESS_REQUEST 1"
+RADIUS Packet Types \fBAn Access-Request, used to authenticate a user against a RADIUS server\&. Access request packets must include a \fBRADIUS_NAS_IP_ADDRESS\fP or a \fBRADIUS_NAS_IDENTIFIER\fP attribute, must also include a \fBRADIUS_USER_PASSWORD\fP, \fBRADIUS_CHAP_PASSWORD\fP or a \fBRADIUS_STATE\fP attribute, and should include a \fBRADIUS_USER_NAME\fP attribute\&. \fP
+.SS "const RADIUS_ACCOUNTING_OFF 8"
+
+.SS "const RADIUS_ACCOUNTING_ON 7"
+
+.SS "const RADIUS_ACCOUNTING_REQUEST 4"
+An Accounting-Request, used to convey accounting information for a service to the RADIUS server\&. 
+.SS "const RADIUS_ACCOUNTING_RESPONSE 5"
+An Accounting-Response response to an Accounting-Request\&. 
+.SS "const RADIUS_ACCT_AUTHENTIC 45"
+
+.SS "const RADIUS_ACCT_DELAY_TIME 41"
+
+.SS "const RADIUS_ACCT_INPUT_OCTETS 42"
+
+.SS "const RADIUS_ACCT_INPUT_PACKETS 47"
+
+.SS "const RADIUS_ACCT_LINK_COUNT 51"
+
+.SS "const RADIUS_ACCT_MULTI_SESSION_ID 50"
+
+.SS "const RADIUS_ACCT_OUTPUT_OCTETS 43"
+
+.SS "const RADIUS_ACCT_OUTPUT_PACKETS 48"
+
+.SS "const RADIUS_ACCT_SESSION_ID 44"
+
+.SS "const RADIUS_ACCT_SESSION_TIME 46"
+
+.SS "const RADIUS_ACCT_STATUS_TYPE 40"
+
+.SS "const RADIUS_ACCT_TERMINATE_CAUSE 49"
+
+.SS "const RADIUS_ADMINISTRATIVE 6"
+
+.SS "const RADIUS_ADSL_CAP 12"
+
+.SS "const RADIUS_ADSL_DMT 13"
+
+.SS "const RADIUS_ARAP 3"
+
+.SS "const RADIUS_ASYNC 0"
+
+.SS "const RADIUS_AUTH_LOCAL 2"
+
+.SS "const RADIUS_AUTH_RADIUS 1"
+
+.SS "const RADIUS_AUTH_REMOTE 3"
+
+.SS "const RADIUS_AUTHENTICATE_ONLY 8"
+
+.SS "const RADIUS_CABLE 17"
+
+.SS "const RADIUS_CALLBACK_FRAMED 4"
+
+.SS "const RADIUS_CALLBACK_ID 20"
+
+.SS "const RADIUS_CALLBACK_LOGIN 3"
+
+.SS "const RADIUS_CALLBACK_NAS_PROMPT 9"
+
+.SS "const RADIUS_CALLBACK_NUMBER 19"
+
+.SS "const RADIUS_CALLED_STATION_ID 30"
+
+.SS "const RADIUS_CALLING_STATION_ID 31"
+
+.SS "const RADIUS_CHAP_CHALLENGE 60"
+
+.SS "const RADIUS_CHAP_PASSWORD 3"
+The Chap-Password attribute\&. The attribute value is expected to be a string with the first byte containing the CHAP identifier, and the subsequent 16 bytes containing the MD5 hash of the CHAP identifier, the plaintext password and the CHAP challenge value concatenated together\&. Note that the CHAP challenge value should also be sent separately in a \fB{
+.PP
+\fBSee also\fP
+.RS 4
+\fBRADIUS_CHAP_CHALLENGE\fP} \fBattribute\fP\&. 
+.RE
+.PP
+\fP
+.SS "const RADIUS_CLASS 25"
+
+.SS "const RADIUS_COA_ACK 44"
+\fBA\fP CoA-ACK, sent to the RADIUS server to indicate that the user authorisations have been updated\&. 
+.PP
+\fBSince\fP
+.RS 4
+1\&.3\&.0 
+.RE
+.PP
+
+.SS "const RADIUS_COA_NAK 45"
+\fBA\fP CoA-NAK, sent to the RADIUS server to indicate that the user authorisations could not be updated\&. 
+.PP
+\fBSince\fP
+.RS 4
+1\&.3\&.0 
+.RE
+.PP
+
+.SS "const RADIUS_COA_REQUEST 43"
+\fBA\fP CoA-Request, sent from the RADIUS server to indicate that the authorisations within the user session have changed\&. \fBA\fP response must be sent in the form of a CoA-ACK or a CoA-NAK\&. 
+.PP
+\fBSince\fP
+.RS 4
+1\&.3\&.0 
+.RE
+.PP
+
+.SS "const RADIUS_COMP_IPXHDR 2"
+
+.SS "const RADIUS_COMP_NONE 0"
+
+.SS "const RADIUS_COMP_VJ 1"
+
+.SS "const RADIUS_CONNECT_INFO 77"
+
+.SS "const RADIUS_DISCONNECT_ACK 41"
+\fBA\fP Disconnect-ACK, sent to the RADIUS server to indicate that the user session has been terminated\&. 
+.PP
+\fBSince\fP
+.RS 4
+1\&.3\&.0 
+.RE
+.PP
+
+.SS "const RADIUS_DISCONNECT_NAK 42"
+\fBA\fP Disconnect-NAK, sent to the RADIUS server to indicate that the user session could not be terminated\&. 
+.PP
+\fBSince\fP
+.RS 4
+1\&.3\&.0 
+.RE
+.PP
+
+.SS "const RADIUS_DISCONNECT_REQUEST 40"
+\fBA\fP Disconnect-Request, sent from the RADIUS server to indicate that the user session must be terminated\&. 
+.PP
+\fBSince\fP
+.RS 4
+1\&.3\&.0 
+.RE
+.PP
+
+.SS "const RADIUS_ERROR_CAUSE 101"
+
+.SS "const RADIUS_ERROR_CAUSE_ADMINISTRATIVELY_PROHIBITED 501"
+
+.SS "const RADIUS_ERROR_CAUSE_INVALID_EAP_PACKET 202"
+
+.SS "const RADIUS_ERROR_CAUSE_INVALID_REQUEST 404"
+
+.SS "const RADIUS_ERROR_CAUSE_MISSING_ATTRIBUTE 402"
+
+.SS "const RADIUS_ERROR_CAUSE_NAS_IDENTIFICATION_MISMATCH 403"
+
+.SS "const RADIUS_ERROR_CAUSE_OTHER_PROXY_PROCESSING_ERROR 505"
+
+.SS "const RADIUS_ERROR_CAUSE_REQUEST_INITIATED 507"
+
+.SS "const RADIUS_ERROR_CAUSE_REQUEST_NOT_ROUTABLE 502"
+
+.SS "const RADIUS_ERROR_CAUSE_RESIDUAL_SESSION_CONTEXT_REMOVED 201"
+
+.SS "const RADIUS_ERROR_CAUSE_RESOURCES_UNAVAILABLE 506"
+
+.SS "const RADIUS_ERROR_CAUSE_SESSION_CONTEXT_NOT_FOUND 503"
+
+.SS "const RADIUS_ERROR_CAUSE_SESSION_CONTEXT_NOT_REMOVABLE 504"
+
+.SS "const RADIUS_ERROR_CAUSE_UNSUPPORTED_ATTRIBUTE 401"
+
+.SS "const RADIUS_ERROR_CAUSE_UNSUPPORTED_EXCEPTION 406"
+
+.SS "const RADIUS_ERROR_CAUSE_UNSUPPORTED_SERVICE 405"
+
+.SS "const RADIUS_ETHERNET 15"
+
+.SS "const RADIUS_FILTER_ID 11"
+The Filter-ID attribute\&. The attribute value is expected to be an implementation-specific, human-readable string of filters, which can be set using {
+.PP
+\fBSee also\fP
+.RS 4
+radius_put_attr()}\&. 
+.RE
+.PP
+
+.SS "const RADIUS_FRAMED 2"
+
+.SS "const RADIUS_FRAMED_APPLETALK_LINK 37"
+
+.SS "const RADIUS_FRAMED_APPLETALK_NETWORK 38"
+
+.SS "const RADIUS_FRAMED_APPLETALK_ZONE 39"
+
+.SS "const RADIUS_FRAMED_COMPRESSION 13"
+The Framed-Compression attribute\&. The attribute value is expected to be an integer indicating the compression protocol to be used, and can be set using radius_put_int()\&. Possible values include these constants:
+.IP "\(bu" 2
+\fBRADIUS_COMP_NONE\fP: No compression
+.IP "\(bu" 2
+\fBRADIUS_COMP_VJ\fP: VJ TCP/IP header compression
+.IP "\(bu" 2
+\fBRADIUS_COMP_IPXHDR\fP: IPX header compression
+.IP "\(bu" 2
+\fBRADIUS_COMP_STAC_LZS\fP: Stac-LZS compression (added in PECL radius 1\&.3\&.0b2) 
+.PP
+
+.SS "const RADIUS_FRAMED_INTERFACE_ID 96"
+
+.SS "const RADIUS_FRAMED_IP_ADDRESS 8"
+The Framed-IP-Address attribute\&. The attribute value is expected to be the address of the user's network encoded as an integer, which can be set using {
+.PP
+\fBSee also\fP
+.RS 4
+radius_put_addr()} and retrieved using {
+.PP
+radius_cvt_addr()}\&. 
+.RE
+.PP
+
+.SS "const RADIUS_FRAMED_IP_NETMASK 9"
+The Framed-IP-Netmask attribute\&. The attribute value is expected to be the netmask of the user's network encoded as an integer, which can be set using {
+.PP
+\fBSee also\fP
+.RS 4
+radius_put_addr()} and retrieved using {
+.PP
+radius_cvt_addr()}\&. 
+.RE
+.PP
+
+.SS "const RADIUS_FRAMED_IPV6_POOL 100"
+
+.SS "const RADIUS_FRAMED_IPV6_PREFIX 97"
+
+.SS "const RADIUS_FRAMED_IPV6_ROUTE 99"
+
+.SS "const RADIUS_FRAMED_IPX_NETWORK 23"
+
+.SS "const RADIUS_FRAMED_MTU 12"
+The Framed-MTU attribute\&. The attribute value is expected to be an integer indicating the MTU to be configured for the user, and can be set using {
+.PP
+\fBSee also\fP
+.RS 4
+radius_put_int()}\&. 
+.RE
+.PP
+
+.SS "const RADIUS_FRAMED_PROTOCOL 7"
+The Framed-Protocol attribute\&. The attribute value is expected to be an integer indicating the framing to be used for framed access, and can be set using {
+.PP
+\fBSee also\fP
+.RS 4
+radius_put_int()}\&. The possible \fBattribute\fP values include these constants:
+.IP "\(bu" 2
+\fBRADIUS_PPP\fP
+.IP "\(bu" 2
+\fBRADIUS_SLIP\fP
+.IP "\(bu" 2
+\fBRADIUS_ARAP\fP
+.IP "\(bu" 2
+\fBRADIUS_GANDALF\fP
+.IP "\(bu" 2
+\fBRADIUS_XYLOGICS\fP 
+.PP
+.RE
+.PP
+
+.SS "const RADIUS_FRAMED_ROUTE 22"
+
+.SS "const RADIUS_FRAMED_ROUTING 10"
+The Framed-Routing attribute\&. The attribute value is expected to be an integer indicating the routing method for the user, which can be set using {
+.PP
+\fBSee also\fP
+.RS 4
+radius_put_int()}\&.
+.br
+ 
+.br
+ Possible values include:
+.IP "\(bu" 2
+0: No routing
+.IP "\(bu" 2
+1: Send routing packets
+.IP "\(bu" 2
+2: Listen for routing packets
+.IP "\(bu" 2
+3: Send and listen 
+.PP
+.RE
+.PP
+
+.SS "const RADIUS_G_3_FAX 10"
+
+.SS "const RADIUS_GANDALF 4"
+
+.SS "const RADIUS_HDLC_CLEAR_CHANNEL 7"
+
+.SS "const RADIUS_IDLE_TIMEOUT 28"
+
+.SS "const RADIUS_IDSL 14"
+
+.SS "const RADIUS_ISDN_ASYNC_V110 4"
+
+.SS "const RADIUS_ISDN_ASYNC_V120 3"
+
+.SS "const RADIUS_ISDN_SYNC 2"
+
+.SS "const RADIUS_LOGIN 1"
+
+.SS "const RADIUS_LOGIN_IP_HOST 14"
+The Login-IP-Host attribute\&. The attribute value is expected to the IP address to connect the user to, encoded as an integer, which can be set using {
+.PP
+\fBSee also\fP
+.RS 4
+radius_put_addr()}\&. 
+.RE
+.PP
+
+.SS "const RADIUS_LOGIN_IPV6_HOST 98"
+
+.SS "const RADIUS_LOGIN_LAT_GROUP 36"
+
+.SS "const RADIUS_LOGIN_LAT_NODE 35"
+
+.SS "const RADIUS_LOGIN_LAT_PORT 63"
+
+.SS "const RADIUS_LOGIN_LAT_SERVICE 34"
+
+.SS "const RADIUS_LOGIN_SERVICE 15"
+The Login-Service attribute\&. The attribute value is an integer indicating the service to connect the user to on the login host\&. The value can be converted to a PHP integer via {
+.PP
+\fBSee also\fP
+.RS 4
+radius_cvt_int()}\&. 
+.RE
+.PP
+
+.SS "const RADIUS_LOGIN_TCP_PORT 16"
+
+.SS "const RADIUS_MICROSOFT_MS_ACCT_AUTH_TYPE 23"
+
+.SS "const RADIUS_MICROSOFT_MS_ACCT_EAP_TYPE 24"
+
+.SS "const RADIUS_MICROSOFT_MS_ARAP_CHALLENGE 33"
+
+.SS "const RADIUS_MICROSOFT_MS_ARAP_PASSWORD_CHANGE_REASON 21"
+
+.SS "const RADIUS_MICROSOFT_MS_BAP_USAGE 13"
+
+.SS "const RADIUS_MICROSOFT_MS_CHAP2_PW 27"
+
+.SS "const RADIUS_MICROSOFT_MS_CHAP2_RESPONSE 25"
+
+.SS "const RADIUS_MICROSOFT_MS_CHAP2_SUCCESS 26"
+
+.SS "const RADIUS_MICROSOFT_MS_CHAP_CHALLENGE 11"
+
+.SS "const RADIUS_MICROSOFT_MS_CHAP_DOMAIN 10"
+
+.SS "const RADIUS_MICROSOFT_MS_CHAP_ERROR 2"
+
+.SS "const RADIUS_MICROSOFT_MS_CHAP_LM_ENC_PW 5"
+
+.SS "const RADIUS_MICROSOFT_MS_CHAP_MPPE_KEYS 12"
+
+.SS "const RADIUS_MICROSOFT_MS_CHAP_NT_ENC_PW 6"
+
+.SS "const RADIUS_MICROSOFT_MS_CHAP_PW_1 3"
+
+.SS "const RADIUS_MICROSOFT_MS_CHAP_PW_2 4"
+
+.SS "const RADIUS_MICROSOFT_MS_CHAP_RESPONSE 1"
+
+.SS "const RADIUS_MICROSOFT_MS_FILTER 22"
+
+.SS "const RADIUS_MICROSOFT_MS_LINK_DROP_TIME_LIMIT 15"
+
+.SS "const RADIUS_MICROSOFT_MS_LINK_UTILIZATION_THRESHOLD 14"
+
+.SS "const RADIUS_MICROSOFT_MS_MPPE_ENCRYPTION_POLICY 7"
+
+.SS "const RADIUS_MICROSOFT_MS_MPPE_ENCRYPTION_TYPES 8"
+
+.SS "const RADIUS_MICROSOFT_MS_MPPE_RECV_KEY 17"
+
+.SS "const RADIUS_MICROSOFT_MS_MPPE_SEND_KEY 16"
+
+.SS "const RADIUS_MICROSOFT_MS_NEW_ARAP_PASSWORD 20"
+
+.SS "const RADIUS_MICROSOFT_MS_OLD_ARAP_PASSWORD 19"
+
+.SS "const RADIUS_MICROSOFT_MS_PRIMARY_DNS_SERVER 28"
+
+.SS "const RADIUS_MICROSOFT_MS_PRIMARY_NBNS_SERVER 30"
+
+.SS "const RADIUS_MICROSOFT_MS_RAS_VENDOR 9"
+
+.SS "const RADIUS_MICROSOFT_MS_RAS_VERSION 18"
+
+.SS "const RADIUS_MICROSOFT_MS_SECONDARY_DNS_SERVER 29"
+
+.SS "const RADIUS_MICROSOFT_MS_SECONDARY_NBNS_SERVER 31"
+
+.SS "const RADIUS_NAS_IDENTIFIER 32"
+
+.SS "const RADIUS_NAS_IP_ADDRESS 4"
+The NAS-IP-Address attribute\&. The attribute value is expected to the IP address of the RADIUS client encoded as an integer, which can be set using {
+.PP
+\fBSee also\fP
+.RS 4
+radius_put_addr()}\&. 
+.RE
+.PP
+
+.SS "const RADIUS_NAS_IPV6_ADDRESS 95"
+
+.SS "const RADIUS_NAS_PORT 5"
+The NAS-Port attribute\&. The attribute value is expected to be the physical port of the user on the RADIUS client encoded as an integer, which can be set using {
+.PP
+\fBSee also\fP
+.RS 4
+radius_put_int()}\&. 
+.RE
+.PP
+
+.SS "const RADIUS_NAS_PORT_TYPE 61"
+
+.SS "const RADIUS_NAS_PROMPT 7"
+
+.SS "const RADIUS_OPTION_NONE RADIUS_OPTION_NONE"
+
+.SS "const RADIUS_OPTION_SALT 2"
+When set, this option will result in the attribute value being tagged with the value of the tag parameter\&. 
+.SS "const RADIUS_OPTION_TAGGED RADIUS_OPTION_TAGGED"
+
+.SS "const RADIUS_OUTBOUND 5"
+
+.SS "const RADIUS_PIAFS 6"
+
+.SS "const RADIUS_PORT_LIMIT 62"
+
+.SS "const RADIUS_PPP 1"
+
+.SS "const RADIUS_PROXY_STATE 33"
+
+.SS "const RADIUS_REPLY_MESSAGE 18"
+
+.SS "const RADIUS_SDSL 11"
+
+.SS "const RADIUS_SERVICE_TYPE 6"
+The Service-Type attribute\&. The attribute value indicates the service type the user is requesting, and is expected to be an integer, which can be set using {
+.PP
+\fBSee also\fP
+.RS 4
+radius_put_int()}\&. \fBA\fP number of constants are provided to represent the possible values of this \fBattribute\fP\&. They include:
+.IP "\(bu" 2
+\fBRADIUS_LOGIN\fP
+.IP "\(bu" 2
+\fBRADIUS_FRAMED\fP
+.IP "\(bu" 2
+\fBRADIUS_CALLBACK_LOGIN\fP
+.IP "\(bu" 2
+\fBRADIUS_CALLBACK_FRAMED\fP
+.IP "\(bu" 2
+\fBRADIUS_OUTBOUND\fP
+.IP "\(bu" 2
+\fBRADIUS_ADMINISTRATIVE\fP
+.IP "\(bu" 2
+\fBRADIUS_NAS_PROMPT\fP
+.IP "\(bu" 2
+\fBRADIUS_AUTHENTICATE_ONLY\fP
+.IP "\(bu" 2
+\fBRADIUS_CALLBACK_NAS_PROMPT\fP 
+.PP
+.RE
+.PP
+
+.SS "const RADIUS_SESSION_TIMEOUT 27"
+
+.SS "const RADIUS_SLIP 2"
+
+.SS "const RADIUS_START 1"
+
+.SS "const RADIUS_STATE 24"
+
+.SS "const RADIUS_STOP 2"
+
+.SS "const RADIUS_SYNC 1"
+
+.SS "const RADIUS_TERM_ADMIN_REBOOT 7"
+
+.SS "const RADIUS_TERM_ADMIN_RESET 6"
+
+.SS "const RADIUS_TERM_CALLBACK 16"
+
+.SS "const RADIUS_TERM_HOST_REQUEST 18"
+
+.SS "const RADIUS_TERM_IDLE_TIMEOUT 4"
+
+.SS "const RADIUS_TERM_LOST_CARRIER 2"
+
+.SS "const RADIUS_TERM_LOST_SERVICE 3"
+
+.SS "const RADIUS_TERM_NAS_ERROR 9"
+
+.SS "const RADIUS_TERM_NAS_REBOOT 11"
+
+.SS "const RADIUS_TERM_NAS_REQUEST 10"
+
+.SS "const RADIUS_TERM_PORT_ERROR 8"
+
+.SS "const RADIUS_TERM_PORT_PREEMPTED 13"
+
+.SS "const RADIUS_TERM_PORT_SUSPENDED 14"
+
+.SS "const RADIUS_TERM_PORT_UNNEEDED 12"
+
+.SS "const RADIUS_TERM_SERVICE_UNAVAILABLE 15"
+
+.SS "const RADIUS_TERM_SESSION_TIMEOUT 5"
+
+.SS "const RADIUS_TERM_USER_ERROR 17"
+
+.SS "const RADIUS_TERM_USER_REQUEST 1"
+
+.SS "const RADIUS_TERMINATION_ACTION 29"
+
+.SS "const RADIUS_USER_NAME 1"
+RADIUS Attribute Types \fBThe User-Name attribute\&. The attribute value is expected to be a string containing the name of the user being authenticated, and can be set using { radius_put_attr()}\&. \fP
+.SS "const RADIUS_USER_PASSWORD 2"
+The User-Password attribute\&. The attribute value is expected to be a string containing the user's password, and can be set using {
+.PP
+\fBSee also\fP
+.RS 4
+radius_put_attr()}\&. This value will be obfuscated on transmission as described in section 5\&.2 of RFC 2865\&. \fBhttps://secure\&.php\&.net/manual/de/radius\&.constants\&.attributes\&.php\fP
+.RE
+.PP
+
+.SS "const RADIUS_VENDOR_MICROSOFT 311"
+
+.SS "const RADIUS_VENDOR_SPECIFIC 26"
+
+.SS "const RADIUS_VIRTUAL 5"
+
+.SS "const RADIUS_WIRELESS_IEEE_802_11 19"
+
+.SS "const RADIUS_WIRELESS_OTHER 18"
+
+.SS "const RADIUS_X_25 8"
+
+.SS "const RADIUS_X_75 9"
+
+.SS "const RADIUS_XDSL 16"
+
+.SS "const RADIUS_XYLOGICS 5"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

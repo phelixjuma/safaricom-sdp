@@ -1,0 +1,1315 @@
+.TH "vendor/jetbrains/phpstorm-stubs/standard/standard_5.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/standard/standard_5.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBboolval\fP ($var)"
+.br
+.ti -1c
+.RI "\fBintval\fP ($var, $base=10)"
+.br
+.ti -1c
+.RI "\fBfloatval\fP ($var)"
+.br
+.ti -1c
+.RI "\fBdoubleval\fP ($var)"
+.br
+.ti -1c
+.RI "\fBstrval\fP ($var)"
+.br
+.ti -1c
+.RI "\fBgettype\fP ($var)"
+.br
+.ti -1c
+.RI "\fBsettype\fP (&$var, $type)"
+.br
+.ti -1c
+.RI "\fBis_null\fP ($var)"
+.br
+.ti -1c
+.RI "\fBis_resource\fP ($var)"
+.br
+.ti -1c
+.RI "\fBis_bool\fP ($var)"
+.br
+.ti -1c
+.RI "\fBis_long\fP ($var)"
+.br
+.ti -1c
+.RI "\fBis_float\fP ($var)"
+.br
+.ti -1c
+.RI "\fBis_int\fP ($var)"
+.br
+.ti -1c
+.RI "\fBis_integer\fP ($var)"
+.br
+.ti -1c
+.RI "\fBis_double\fP ($var)"
+.br
+.ti -1c
+.RI "\fBis_real\fP ($var)"
+.br
+.ti -1c
+.RI "\fBis_numeric\fP ($var)"
+.br
+.ti -1c
+.RI "\fBis_string\fP ($var)"
+.br
+.ti -1c
+.RI "\fBis_array\fP ($var)"
+.br
+.ti -1c
+.RI "\fBis_object\fP ($var)"
+.br
+.ti -1c
+.RI "\fBis_scalar\fP ($var)"
+.br
+.ti -1c
+.RI "\fBis_callable\fP ($var, $syntax_only=\fBnull\fP, &$callable_name=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBis_countable\fP ($var)"
+.br
+.ti -1c
+.RI "\fBpclose\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBpopen\fP ($command, $mode)"
+.br
+.ti -1c
+.RI "\fBreadfile\fP ($filename, $use_include_path=\fBnull\fP, $context=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBrewind\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBrmdir\fP ($\fBdirname\fP, $context=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBumask\fP ($mask=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBfclose\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBfeof\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBfgetc\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBfgets\fP ($handle, $length=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBfgetss\fP ($handle, $length=\fBnull\fP, $allowable_tags=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBfread\fP ($handle, $length)"
+.br
+.ti -1c
+.RI "\fBfopen\fP ($filename, $mode, $use_include_path=\fBnull\fP, $context=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBfpassthru\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBftruncate\fP ($handle, $size)"
+.br
+.ti -1c
+.RI "\fBfstat\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBfseek\fP ($handle, $offset, $whence=\fBSEEK_SET\fP)"
+.br
+.ti -1c
+.RI "\fBftell\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBfflush\fP ($handle)"
+.br
+.ti -1c
+.RI "\fBfwrite\fP ($handle, $string, $length=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBfputs\fP ($handle, $string, $length=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmkdir\fP ($pathname, $mode=0777, $recursive=\fBfalse\fP, $context=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBrename\fP ($oldname, $newname, $context=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBcopy\fP ($source, $dest, $context=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBtempnam\fP ($\fBdir\fP, $prefix)"
+.br
+.ti -1c
+.RI "\fBtmpfile\fP ()"
+.br
+.ti -1c
+.RI "\fBfile\fP ($filename, $flags=\fBnull\fP, $context=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBfile_get_contents\fP ($filename, $use_include_path=\fBfalse\fP, $context=\fBnull\fP, $offset=0, $maxlen=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBfile_put_contents\fP ($filename, $data, $flags=0, $context=\fBnull\fP)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "boolval ( $var)"
+(PHP 5\&.5\&.0)
+.br
+ Get the boolean value of a variable 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$var\fP 
+.RE
+.PP
+the scalar value being converted to a boolean\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool The boolean value of var\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "copy ( $source,  $dest,  $context = \fC\fBnull\fP\fP)"
+Copies file \fBstring $source \fP Path to the source file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dest\fP 
+.RE
+.PP
+The destination path\&. If dest is a URL, the copy operation may fail if the wrapper does not support overwriting of existing files\&. 
+.PP
+If the destination file already exists, it will be overwritten\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP [optional] 
+.RE
+.PP
+\fBA\fP valid context resource created with stream_context_create\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "doubleval ( $var)"
+(PHP 4\&.2\&.0, PHP 5)
+.br
+ Alias of \fBfloatval()\fP Get float value of a variable  <function>floatval</function> \fBmixed $var May be any scalar type\&. should not be used on objects, as doing so will emit an E_NOTICE level error and return 1\&.  float value of the given variable\&. Empty arrays return 0, non-empty arrays return 1\&. \fP
+.SS "fclose ( $handle)"
+Closes an open file pointer \fBresource $handle \fP The file pointer must be valid, and must point to a file successfully opened by fopen or fsockopen\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "feof ( $handle)"
+Tests for end-of-file on a file pointer \fBresource $handle The file pointer must be valid, and must point to a file successfully opened by fopen() or fsockopen() (and not yet closed by fclose())\&.  bool true if the file pointer is at EOF or an error occurs (including socket timeout); otherwise returns false\&.  4\&.0  5\&.0 \fP
+.SS "fflush ( $handle)"
+Flushes the output to a file \fBresource $handle The file pointer must be valid, and must point to a file successfully opened by fopen() or fsockopen() (and not yet closed by fclose())\&.  bool true on success or false on failure\&.  4\&.0\&.1  5\&.0 \fP
+.SS "fgetc ( $handle)"
+Gets character from file pointer \fBresource $handle The file pointer must be valid, and must point to a file successfully opened by fopen() or fsockopen() (and not yet closed by fclose())\&.  string|false a string containing a single character read from the file pointed to by handle\&. Returns false on EOF\&.  4\&.0  5\&.0 \fP
+.SS "fgets ( $handle,  $length = \fC\fBnull\fP\fP)"
+Gets line from file pointer \fBresource $handle The file pointer must be valid, and must point to a file successfully opened by fopen() or fsockopen() (and not yet closed by fclose())\&.  int $length [optional] \fP Reading ends when length - 1 bytes have been read, on a newline (which is included in the return value), or on EOF (whichever comes first)\&. If no length is specified, it will keep reading from the stream until it reaches the end of the line\&. 
+.PP
+Until PHP 4\&.3\&.0, omitting it would assume 1024 as the line length\&. If the majority of the lines in the file are all larger than 8KB, it is more resource efficient for your script to specify the maximum line length\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false a string of up to length - 1 bytes read from the file pointed to by handle\&. 
+.RE
+.PP
+.PP
+If an error occurs, returns false\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "fgetss ( $handle,  $length = \fC\fBnull\fP\fP,  $allowable_tags = \fC\fBnull\fP\fP)"
+Gets line from file pointer and strip HTML tags \fBresource $handle The file pointer must be valid, and must point to a file successfully opened by fopen() or fsockopen() (and not yet closed by fclose())\&.  int $length [optional] \fP Length of the data to be retrieved\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$allowable_tags\fP [optional] 
+.RE
+.PP
+You can use the optional third parameter to specify tags which should not be stripped\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false a string of up to length - 1 bytes read from the file pointed to by handle, with all HTML and PHP code stripped\&. 
+.RE
+.PP
+.PP
+If an error occurs, returns false\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.3 
+.RE
+.PP
+
+.SS "file ( $filename,  $flags = \fC\fBnull\fP\fP,  $context = \fC\fBnull\fP\fP)"
+Reads entire file into an array \fBstring $filename \fP Path to the file\&. 
+.PP
+&tip\&.fopen-wrapper; 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+The optional parameter flags can be one, or more, of the following constants: FILE_USE_INCLUDE_PATH Search for the file in the include_path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP [optional] 
+.RE
+.PP
+\fBA\fP context resource created with the stream_context_create function\&. 
+.PP
+&note\&.context-support; 
+.PP
+\fBReturns\fP
+.RS 4
+array|false the file in an array\&. Each element of the array corresponds to a line in the file, with the newline still attached\&. Upon failure, file returns false\&. 
+.RE
+.PP
+.PP
+Each line in the resulting array will include the line ending, unless FILE_IGNORE_NEW_LINES is used, so you still need to use rtrim if you do not want the line ending present\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "file_get_contents ( $filename,  $use_include_path = \fC\fBfalse\fP\fP,  $context = \fC\fBnull\fP\fP,  $offset = \fC0\fP,  $maxlen = \fC\fBnull\fP\fP)"
+Reads entire file into a string \fBstring $filename \fP Name of the file to read\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$use_include_path\fP [optional] 
+.RE
+.PP
+Note: As of PHP 5 the FILE_USE_INCLUDE_PATH constant can be used to trigger include path search\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP [optional] 
+.RE
+.PP
+\fBA\fP valid context resource created with stream_context_create\&. If you don't need to use a custom context, you can skip this parameter by \&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+The offset where the reading starts\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$maxlen\fP [optional] 
+.RE
+.PP
+Maximum length of data read\&. The default is to read until end of file is reached\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The function returns the read data or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "file_put_contents ( $filename,  $data,  $flags = \fC0\fP,  $context = \fC\fBnull\fP\fP)"
+Write a string to a file \fBstring $filename \fP Path to the file where to write the data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+The data to write\&. Can be either a string, an array or a stream resource\&. 
+.PP
+If data is a stream resource, the remaining buffer of that stream will be copied to the specified file\&. This is similar with using stream_copy_to_stream\&. 
+.PP
+You can also specify the data parameter as a single dimension array\&. This is equivalent to file_put_contents($filename, implode('', $array))\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+The value of flags can be any combination of the following flags (with some restrictions), joined with the binary OR (|) operator\&. 
+.PP
+flags 
+.PP
+Flag 
+.PP
+Description  
+.PP
+FILE_USE_INCLUDE_PATH  
+.PP
+Search for filename in the include directory\&. See include_path for more information\&.   
+.PP
+FILE_APPEND  
+.PP
+If file filename already exists, append the data to the file instead of overwriting it\&. Mutually exclusive with LOCK_EX since appends are atomic and thus there is no reason to lock\&.   
+.PP
+LOCK_EX  
+.PP
+Acquire an exclusive lock on the file while proceeding to the writing\&. Mutually exclusive with FILE_APPEND\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.1   
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP [optional] 
+.RE
+.PP
+\fBA\fP valid context resource created with stream_context_create\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false The function returns the number of bytes that were written to the file, or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "floatval ( $var)"
+Get float value of a variable \fBmixed $var May be any scalar type\&. should not be used on objects, as doing so will emit an E_NOTICE level error and return 1\&.  float value of the given variable\&. Empty arrays return 0, non-empty arrays return 1\&.  4\&.2  5\&.0 \fP
+.SS "fopen ( $filename,  $mode,  $use_include_path = \fC\fBnull\fP\fP,  $context = \fC\fBnull\fP\fP)"
+Opens file or URL \fBstring $filename \fP If filename is of the form 'scheme://\&.\&.\&.', it is assumed to be a URL and PHP will search for a protocol handler (also known as a wrapper) for that scheme\&. If no wrappers for that protocol are registered, PHP will emit a notice to help you track potential problems in your script and then continue as though filename specifies a regular file\&. 
+.PP
+If PHP has decided that filename specifies a local file, then it will try to open a stream on that file\&. The file must be accessible to PHP, so you need to ensure that the file access permissions allow this access\&. If you have enabled , or open_basedir further restrictions may apply\&. 
+.PP
+If PHP has decided that filename specifies a registered protocol, and that protocol is registered as a network URL, PHP will check to make sure that allow_url_fopen is enabled\&. If it is switched off, PHP will emit a warning and the fopen call will fail\&. 
+.PP
+The list of supported protocols can be found in \&. Some protocols (also referred to as wrappers) support context and/or &php\&.ini; options\&. Refer to the specific page for the protocol in use for a list of options which can be set\&. (e\&.g\&. &php\&.ini; value user_agent used by the http wrapper)\&. 
+.PP
+On the Windows platform, be careful to escape any backslashes used in the path to the file, or use forward slashes\&. 
+.PP
+.PP
+.nf
+
+<?php
+$handle = fopen('c:\\\\folder\\\\resource\&.txt', 'r');
+?>
+.fi
+.PP
+ 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+The mode parameter specifies the type of access you require to the stream\&. It may be any of the following: list of possible modes for fopen using mode 
+.PP
+mode 
+.PP
+Description  
+.PP
+'r' 
+.PP
+Open for reading only; place the file pointer at the beginning of the file\&.   
+.PP
+'r+' 
+.PP
+Open for reading and writing; place the file pointer at the beginning of the file\&.   
+.PP
+'w' 
+.PP
+Open for writing only; place the file pointer at the beginning of the file and truncate the file to zero length\&. If the file does not exist, attempt to create it\&.   
+.PP
+'w+' 
+.PP
+Open for reading and writing; place the file pointer at the beginning of the file and truncate the file to zero length\&. If the file does not exist, attempt to create it\&.   
+.PP
+'a' 
+.PP
+Open for writing only; place the file pointer at the end of the file\&. If the file does not exist, attempt to create it\&.   
+.PP
+'a+' 
+.PP
+Open for reading and writing; place the file pointer at the end of the file\&. If the file does not exist, attempt to create it\&.   
+.PP
+'x' 
+.PP
+Create and open for writing only; place the file pointer at the beginning of the file\&. If the file already exists, the fopen call will fail by returning false and generating an error of level E_WARNING\&. If the file does not exist, attempt to create it\&. This is equivalent to specifying O_EXCL|O_CREAT flags for the underlying open(2) system call\&.   
+.PP
+'x+' 
+.PP
+Create and open for reading and writing; place the file pointer at the beginning of the file\&. If the file already exists, the fopen call will fail by returning false and generating an error of level E_WARNING\&. If the file does not exist, attempt to create it\&. This is equivalent to specifying O_EXCL|O_CREAT flags for the underlying open(2) system call\&.   
+.PP
+Different operating system families have different line-ending conventions\&. When you write a text file and want to insert a line break, you need to use the correct line-ending character(s) for your operating system\&. Unix based systems use 
+.br
+ as the line ending character, Windows based systems use \\r
+.br
+as the line ending characters and Macintosh based systems use \\r as the line ending character\&. 
+.PP
+If you use the wrong line ending characters when writing your files, you might find that other applications that open those files will 'look
+funny'\&. 
+.PP
+Windows offers a text-mode translation flag ('t') which will transparently translate 
+.br
+ to \\r
+.br
+ when working with the file\&. In contrast, you can also use 'b' to force binary mode, which will not translate your data\&. To use these flags, specify either 'b' or 't' as the last character of the mode parameter\&. 
+.PP
+The default translation mode depends on the SAPI and version of PHP that you are using, so you are encouraged to always specify the appropriate flag for portability reasons\&. You should use the 't' mode if you are working with plain-text files and you use 
+.br
+ to delimit your line endings in your script, but expect your files to be readable with applications such as notepad\&. You should use the 'b' in all other cases\&. 
+.PP
+If you do not specify the 'b' flag when working with binary files, you may experience strange problems with your data, including broken image files and strange problems with \\r
+.br
+ characters\&. 
+.PP
+For portability, it is strongly recommended that you always use the 'b' flag when opening files with fopen\&. 
+.PP
+Again, for portability, it is also strongly recommended that you re-write code that uses or relies upon the 't' mode so that it uses the correct line endings and 'b' mode instead\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$use_include_path\fP [optional] 
+.RE
+.PP
+The optional third use_include_path parameter can be set to '1' or true if you want to search for the file in the include_path, too\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP [optional] &note\&.context-support; 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a file pointer resource on success, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "fpassthru ( $handle)"
+Output all remaining data on a file pointer \fBresource $handle The file pointer must be valid, and must point to a file successfully opened by fopen() or fsockopen() (and not yet closed by fclose())\&.  int|false If an error occurs, fpassthru returns false\&. Otherwise, fpassthru returns the number of characters read from handle and passed through to the output\&.  4\&.0  5\&.0 \fP
+.SS "fputs ( $handle,  $string,  $length = \fC\fBnull\fP\fP)"
+<function>fwrite</function> 
+.PP
+\fBSee also\fP
+.RS 4
+\fBfwrite()\fP \fBBinary-safe file write  resource $handle A file system pointer resource that is typically created using fopen()\&.  string $string \fP The string that is to be written\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+If the length argument is given, writing will stop after length bytes have been written or the end of string is reached, whichever comes first\&. 
+.PP
+Note that if the length argument is given, then the magic_quotes_runtime configuration option will be ignored and no slashes will be stripped from string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the number of bytes written, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "fread ( $handle,  $length)"
+Binary-safe file read \fBresource $handle &fs\&.file\&.pointer;  int $length \fP Up to length number of bytes read\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the read string or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "fseek ( $handle,  $offset,  $whence = \fC\fBSEEK_SET\fP\fP)"
+Seeks on a file pointer \fBresource $handle &fs\&.file\&.pointer;  int $offset \fP The offset\&. 
+.PP
+To move to a position before the end-of-file, you need to pass a negative value in offset and set whence to SEEK_END\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$whence\fP [optional] 
+.RE
+.PP
+whence values are: SEEK_SET - Set position equal to offset bytes\&. SEEK_CUR - Set position to current location plus offset\&. SEEK_END - Set position to end-of-file plus offset\&. 
+.PP
+If whence is not specified, it is assumed to be SEEK_SET\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int Upon success, returns 0; otherwise, returns -1\&. Note that seeking past EOF is not considered an error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "fstat ( $handle)"
+Gets information about a file using an open file pointer \fBresource $handle &fs\&.file\&.pointer;  array an array with the statistics of the file; the format of the array is described in detail on the stat manual page\&.  4\&.0  5\&.0 \fP
+.SS "ftell ( $handle)"
+Returns the current position of the file read/write pointer \fBresource $handle \fP The file pointer must be valid, and must point to a file successfully opened by fopen or popen\&. ftell gives undefined results for append-only streams (opened with 'a' flag)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the position of the file pointer referenced by handle as an integer; i\&.e\&., its offset into the file stream\&. 
+.RE
+.PP
+.PP
+If an error occurs, returns false\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ftruncate ( $handle,  $size)"
+Truncates a file to a given length \fBresource $handle \fP The file pointer\&. 
+.PP
+The handle must be open for writing\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$size\fP 
+.RE
+.PP
+The size to truncate to\&. 
+.PP
+If size is larger than the file it is extended with null bytes\&. 
+.PP
+If size is smaller than the extra data will be lost\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "fwrite ( $handle,  $string,  $length = \fC\fBnull\fP\fP)"
+Binary-safe file write \fBresource $handle &fs\&.file\&.pointer;  string $string \fP The string that is to be written\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+If the length argument is given, writing will stop after length bytes have been written or the end of string is reached, whichever comes first\&. 
+.PP
+Note that if the length argument is given, then the magic_quotes_runtime configuration option will be ignored and no slashes will be stripped from string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the number of bytes written, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gettype ( $var)"
+Get the type of a variable \fBmixed $var \fP The variable being type checked\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string Possibles values for the returned string are: 'boolean' 'integer' 'double' (for historical reasons 'double' is returned in case of a float, and not simply 'float') 'string' 'array' 'object' 'resource' 'NULL' 'unknown type' 'resource (closed)' since 7\&.2\&.0 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "intval ( $var,  $base = \fC10\fP)"
+Get the integer value of a variable \fBmixed $var \fP The scalar value being converted to an integer 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$base\fP [optional] 
+.RE
+.PP
+The base for the conversion 
+.PP
+\fBReturns\fP
+.RS 4
+int The integer value of var on success, or 0 on failure\&. Empty arrays and objects return 0, non-empty arrays and objects return 1\&. 
+.RE
+.PP
+.PP
+The maximum value depends on the system\&. 32 bit systems have a maximum signed integer range of -2147483648 to 2147483647\&. So for example on such a system, intval('1000000000000') will return
+.IP "2147483647." 4
+The maximum signed integer value for 64 bit systems is 9223372036854775807\&. 
+.PP
+.PP
+Strings will most likely return 0 although this depends on the leftmost characters of the string\&. The common rules of integer casting apply\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "is_array ( $var)"
+Finds whether a variable is an array \fBmixed $var \fP The variable being evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if var is an array, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "is_bool ( $var)"
+Finds out whether a variable is a boolean \fBmixed $var \fP The variable being evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if var is a boolean, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "is_callable ( $var,  $syntax_only = \fC\fBnull\fP\fP, & $callable_name = \fC\fBnull\fP\fP)"
+Verify that the contents of a variable can be called as a function \fBcallable|mixed $var \fP The value to check 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$syntax_only\fP [optional] 
+.RE
+.PP
+If set to \fBTRUE\fP the function only verifies that name might be a function or method\&. It will only reject simple variables that are not strings, or an array that does not have a valid structure to be used as a callback\&. The valid ones are supposed to have only 2 entries, the first of which is an object or a string, and the second a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$callable_name\fP [optional] 
+.RE
+.PP
+Receives the 'callable name'\&. In the example below it is 'someClass::someMethod'\&. Note, however, that despite the implication that someClass::SomeMethod() is a callable static method, this is not the case\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if $var is callable, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.PP
+7\&.0 
+.RE
+.PP
+
+.SS "is_countable ( $var)"
+Verify that the contents of a variable is a countable value \fBmixed $var The value to check  bool \fBTRUE\fP if $var is countable, \fBFALSE\fP otherwise\&.  7\&.3 \fP
+.SS "is_double ( $var)"
+<function>is_float</function> \fBmixed $var \fP The variable being evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if var is a float, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "is_float ( $var)"
+Finds whether the type of a variable is float \fBmixed $var \fP The variable being evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if var is a float, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "is_int ( $var)"
+Find whether the type of a variable is integer \fBmixed $var \fP The variable being evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if var is an integer, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "is_integer ( $var)"
+<function>is_int</function> \fBmixed $var \fP The variable being evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if var is an integer, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "is_long ( $var)"
+<function>is_int</function> \fBmixed $var \fP The variable being evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if var is an integer, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "is_null ( $var)"
+Finds whether a variable is  \fBmixed $var \fP The variable being evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if var is null, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "is_numeric ( $var)"
+Finds whether a variable is a number or a numeric string \fBmixed $var \fP The variable being evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if var is a number or a numeric string, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "is_object ( $var)"
+Finds whether a variable is an object \fBmixed $var \fP The variable being evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if var is an object, false otherwise\&.
+.br
+ Since 7\&.2\&.0 returns true for unserialized objects without a class definition (class of \fB\fB__PHP_Incomplete_Class\fP\fP)\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "is_real ( $var)"
+<function>is_float</function> \fBmixed $var \fP The variable being evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if var is a float, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "is_resource ( $var)"
+Finds whether a variable is a resource \fBmixed $var \fP The variable being evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if var is a resource, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "is_scalar ( $var)"
+Finds whether a variable is a scalar \fBmixed $var \fP The variable being evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if var is a scalar false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "is_string ( $var)"
+Find whether the type of a variable is string \fBmixed $var \fP The variable being evaluated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if var is of type string, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "mkdir ( $pathname,  $mode = \fC0777\fP,  $recursive = \fC\fBfalse\fP\fP,  $context = \fC\fBnull\fP\fP)"
+Attempts to create the directory specified by pathname\&. \fBstring $pathname \fP The directory path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+The mode is 0777 by default, which means the widest possible access\&. For more information on modes, read the details on the chmod page\&. 
+.PP
+mode is ignored on Windows\&. 
+.PP
+Note that you probably want to specify the mode as an octal number, which means it should have a leading zero\&. The mode is also modified by the current umask, which you can change using \fBumask()\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$recursive\fP [optional] 
+.RE
+.PP
+Allows the creation of nested directories specified in the pathname\&. Default to false\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP [optional] &note\&.context-support; 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pclose ( $handle)"
+Closes process file pointer \fBresource $handle \fP The file pointer must be valid, and must have been returned by a successful call to popen\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the termination status of the process that was run\&. In case of an error then -1 is returned\&. 
+.RE
+.PP
+.PP
+If PHP has been compiled with \fC--enable-sigchild\fP, the return value of this function is undefined\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "popen ( $command,  $mode)"
+Opens process file pointer \fBstring $command \fP The command 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+The mode 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a file pointer identical to that returned by fopen, except that it is unidirectional (may only be used for reading or writing) and must be closed with pclose\&. This pointer may be used with fgets, fgetss, and fwrite\&. 
+.RE
+.PP
+.PP
+If an error occurs, returns false\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "readfile ( $filename,  $use_include_path = \fC\fBnull\fP\fP,  $context = \fC\fBnull\fP\fP)"
+Outputs a file \fBstring $filename \fP The filename being read\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$use_include_path\fP [optional] 
+.RE
+.PP
+You can use the optional second parameter and set it to true, if you want to search for the file in the include_path, too\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP [optional] 
+.RE
+.PP
+\fBA\fP context stream resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+false|int the number of bytes read from the file\&. If an error occurs, false is returned and unless the function was called as @readfile, an error message is printed\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "rename ( $oldname,  $newname,  $context = \fC\fBnull\fP\fP)"
+Renames a file or directory \fBstring $oldname \fP 
+.PP
+The old name\&. The wrapper used in oldname must match the wrapper used in newname\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$newname\fP 
+.RE
+.PP
+The new name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP [optional] &note\&.context-support; 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.PP
+\fBExamples\fP
+.in +1c
+\fB/usr/local/var/www/safaricom\-sdp\-sdk/vendor/jetbrains/phpstorm\-stubs/redis/Redis\&.php\fP\&.
+.SS "rewind ( $handle)"
+Rewind the position of a file pointer \fBresource $handle \fP The file pointer must be valid, and must point to a file successfully opened by fopen\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "rmdir ( $dirname,  $context = \fC\fBnull\fP\fP)"
+Removes directory \fBstring $dirname \fP Path to the directory\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP [optional] &note\&.context-support; 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "settype (& $var,  $type)"
+Set the type of a variable \fBmixed $var \fP The variable being converted\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP 
+.RE
+.PP
+Possibles values of \fBtype\fP are: 
+.PP
+.PD 0
+.IP "\(bu" 2
+'boolean' (or, since PHP 4\&.2\&.0, 'bool')  
+.IP "\(bu" 2
+'integer' (or, since PHP 4\&.2\&.0, 'int')  
+.IP "\(bu" 2
+'float' (only possible since PHP 4\&.2\&.0, for older versions use the deprecated variant 'double')  
+.IP "\(bu" 2
+'string'  
+.IP "\(bu" 2
+'array'  
+.IP "\(bu" 2
+'object'  
+.IP "\(bu" 2
+'null' (since PHP 4\&.2\&.0)  
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strval ( $var)"
+Get string value of a variable \fBmixed $var \fP The variable that is being converted to a string\&. 
+.PP
+$var may be any scalar type or an object that implements the __toString() method\&. You cannot use \fBstrval()\fP on arrays or objects that do not implement the __toString() method\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The string value of var\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "tempnam ( $dir,  $prefix)"
+Create file with unique file name \fBstring $dir \fP The directory where the temporary filename will be created\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$prefix\fP 
+.RE
+.PP
+The prefix of the generated temporary filename\&. 
+.PP
+Windows use only the first three characters of prefix\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the new temporary filename, or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "tmpfile ()"
+Creates a temporary file \fBresource|false a file handle, similar to the one returned by fopen, for the new file or false on failure\&.  4\&.0  5\&.0 \fP
+.SS "umask ( $mask = \fC\fBnull\fP\fP)"
+Changes the current umask \fBint $mask [optional] \fP The new umask\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int umask without arguments simply returns the current umask otherwise the old umask is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

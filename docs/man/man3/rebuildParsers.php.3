@@ -1,0 +1,181 @@
+.TH "vendor/nikic/php-parser/grammar/rebuildParsers.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/nikic/php-parser/grammar/rebuildParsers.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "foreach($grammarFileToName as $grammarFile=> $name) \fBresolveNodes\fP ($code)"
+.br
+.RI "Preprocessing functions ///\&. "
+.ti -1c
+.RI "\fBresolveMacros\fP ($code)"
+.br
+.ti -1c
+.RI "\fBassertArgs\fP ($num, $args, $name)"
+.br
+.ti -1c
+.RI "\fBresolveStackAccess\fP ($code)"
+.br
+.ti -1c
+.RI "\fBremoveTrailingWhitespace\fP ($code)"
+.br
+.ti -1c
+.RI "\fBensureDirExists\fP ($\fBdir\fP)"
+.br
+.ti -1c
+.RI "\fBexecCmd\fP ($cmd)"
+.br
+.ti -1c
+.RI "\fBregex\fP ($regex)"
+.br
+.RI "Regex helper functions ///\&. "
+.ti -1c
+.RI "\fBmagicSplit\fP ($\fBregex\fP, $string)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$grammarFileToName\fP"
+.br
+.ti -1c
+.RI "\fB$tokensFile\fP = \fB__DIR__\fP \&. '/tokens\&.y'"
+.br
+.ti -1c
+.RI "\fB$tokensTemplate\fP = \fB__DIR__\fP \&. '/tokens\&.template'"
+.br
+.ti -1c
+.RI "\fB$skeletonFile\fP = \fB__DIR__\fP \&. '/parser\&.template'"
+.br
+.ti -1c
+.RI "\fB$tmpGrammarFile\fP = \fB__DIR__\fP \&. '/tmp_parser\&.phpy'"
+.br
+.ti -1c
+.RI "\fB$tmpResultFile\fP = \fB__DIR__\fP \&. '/\fBtmp_parser\&.php\fP'"
+.br
+.ti -1c
+.RI "\fB$resultDir\fP = \fB__DIR__\fP \&. '/\&.\&./lib/PhpParser/Parser'"
+.br
+.ti -1c
+.RI "\fB$tokensResultsFile\fP = $resultDir \&. '/\fBTokens\&.php\fP'"
+.br
+.ti -1c
+.RI "\fB$kmyacc\fP = \fBgetenv\fP('KMYACC')"
+.br
+.ti -1c
+.RI "\fBif\fP(! $kmyacc) \fB$options\fP = \fBarray_flip\fP($argv)"
+.br
+.ti -1c
+.RI "\fB$optionDebug\fP = isset($options['\-\-debug'])"
+.br
+.ti -1c
+.RI "\fB$optionKeepTmpGrammar\fP = isset($options['\-\-keep\-tmp\-grammar'])"
+.br
+.ti -1c
+.RI "const \fBLIB\fP"
+.br
+.RI "Utility regex constants ///\&. "
+.ti -1c
+.RI "const \fBPARAMS\fP = '\\[(?<params>[^[\\]]*+(?:\\[(?&params)\\][^[\\]]*+)*+)\\]'"
+.br
+.ti -1c
+.RI "const \fBARGS\fP = '\\((?<args>[^()]*+(?:\\((?&args)\\)[^()]*+)*+)\\)'"
+.br
+.ti -1c
+.RI "\fB$tokens\fP = \fBfile_get_contents\fP($tokensFile)"
+.br
+.RI "Main script ///\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "assertArgs ( $num,  $args,  $name)"
+
+.SS "ensureDirExists ( $dir)"
+
+.SS "execCmd ( $cmd)"
+
+.SS "magicSplit ( $regex,  $string)"
+
+.SS "regex ( $regex)"
+
+.PP
+Regex helper functions ///\&. 
+.SS "removeTrailingWhitespace ( $code)"
+
+.SS "resolveMacros ( $code)"
+
+.SS "foreach ( $grammarFileToName as $grammarFile=> $name) resolveNodes ( $code)"
+
+.PP
+Preprocessing functions ///\&. 
+.SS "resolveStackAccess ( $code)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "$grammarFileToName"
+\fBInitial value:\fP
+.PP
+.nf
+= [
+    __DIR__ \&. '/php5\&.y' => 'Php5',
+    __DIR__ \&. '/php7\&.y' => 'Php7',
+]
+.fi
+.SS "$kmyacc = \fBgetenv\fP('KMYACC')"
+
+.SS "$optionDebug = isset($options['\-\-debug'])"
+
+.SS "$optionKeepTmpGrammar = isset($options['\-\-keep\-tmp\-grammar'])"
+
+.SS "\fBif\fP (! $kmyacc) $options = \fBarray_flip\fP($argv)"
+
+.PP
+\fBExamples\fP
+.in +1c
+\fB/usr/local/var/www/safaricom\-sdp\-sdk/vendor/jetbrains/phpstorm\-stubs/redis/Redis\&.php\fP, and \fB/usr/local/var/www/safaricom\-sdp\-sdk/vendor/jetbrains/phpstorm\-stubs/redis/RedisCluster\&.php\fP\&.
+.SS "$resultDir = \fB__DIR__\fP \&. '/\&.\&./lib/PhpParser/Parser'"
+
+.SS "$skeletonFile = \fB__DIR__\fP \&. '/parser\&.template'"
+
+.SS "$tmpGrammarFile = \fB__DIR__\fP \&. '/tmp_parser\&.phpy'"
+
+.SS "$tmpResultFile = \fB__DIR__\fP \&. '/\fBtmp_parser\&.php\fP'"
+
+.SS "$tokens = \fBfile_get_contents\fP($tokensFile)"
+
+.PP
+Main script ///\&. 
+.SS "$tokensFile = \fB__DIR__\fP \&. '/tokens\&.y'"
+
+.SS "$tokensResultsFile = $resultDir \&. '/\fBTokens\&.php\fP'"
+
+.SS "$tokensTemplate = \fB__DIR__\fP \&. '/tokens\&.template'"
+
+.SS "const ARGS = '\\((?<args>[^()]*+(?:\\((?&args)\\)[^()]*+)*+)\\)'"
+
+.SS "const LIB"
+\fBInitial value:\fP
+.PP
+.nf
+= '(?(DEFINE)
+    (?<singleQuotedString>\'[^\\\\\']*+(?:\\\\\&.[^\\\\\']*+)*+\')
+    (?<doubleQuotedString>"[^\\\\"]*+(?:\\\\\&.[^\\\\"]*+)*+")
+    (?<string>(?&singleQuotedString)|(?&doubleQuotedString))
+    (?<comment>/\*[^*]*+(?:\*(?!/)[^*]*+)*+\*/)
+    (?<code>\{[^\'"/{}]*+(?:(?:(?&string)|(?&comment)|(?&code)|/)[^\'"/{}]*+)*+})
+)'
+.fi
+.PP
+Utility regex constants ///\&. 
+.SS "const PARAMS = '\\[(?<params>[^[\\]]*+(?:\\[(?&params)\\][^[\\]]*+)*+)\\]'"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

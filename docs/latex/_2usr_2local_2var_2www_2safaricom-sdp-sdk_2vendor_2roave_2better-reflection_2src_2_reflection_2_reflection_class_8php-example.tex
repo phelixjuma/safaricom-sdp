@@ -1,0 +1,1148 @@
+\hypertarget{_2usr_2local_2var_2www_2safaricom-sdp-sdk_2vendor_2roave_2better-reflection_2src_2_reflection_2_reflection_class_8php-example}{}\doxysection{/usr/local/var/www/safaricom-\/sdp-\/sdk/vendor/roave/better-\/reflection/src/\+Reflection/\+Reflection\+Class.\+php}
+Return a list of the aliases used when importing traits for this class. The returned array is in key/value pair in this format\+:.
+
+\textquotesingle{}aliased\+Method\+Name\textquotesingle{} =$>$ \textquotesingle{}Actual\+Class\+::actual\+Method\textquotesingle{}
+
+\begin{DoxyReturn}{Returns}
+array$<$string, string$>$
+\end{DoxyReturn}
+// When reflecting a class such as\+: class \mbox{\hyperlink{class_foo}{Foo}} \{ use My\+Trait \{ my\+Trait\+Method as my\+Aliased\+Method; \} \} // This method would return // \mbox{[}\textquotesingle{}my\+Aliased\+Method\textquotesingle{} =$>$ \textquotesingle{}My\+Trait\+::my\+Trait\+Method\textquotesingle{}\mbox{]}
+
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{<?\mbox{\hyperlink{patch_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{php}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{declare(strict\_types=1);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_roave_1_1_better_reflection_1_1_reflection}{Roave\(\backslash\)BetterReflection\(\backslash\)Reflection}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use \mbox{\hyperlink{class_out_of_bounds_exception}{OutOfBoundsException}};}
+\DoxyCodeLine{use \mbox{\hyperlink{namespace_php_parser_1_1_node}{PhpParser\(\backslash\)Node}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class__}{PhpParser\(\backslash\)Node\(\backslash\)Stmt\(\backslash\)Class\_}} as ClassNode;}
+\DoxyCodeLine{use \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class_const}{PhpParser\(\backslash\)Node\(\backslash\)Stmt\(\backslash\)ClassConst}} as ConstNode;}
+\DoxyCodeLine{use \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class_like}{PhpParser\(\backslash\)Node\(\backslash\)Stmt\(\backslash\)ClassLike}} as ClassLikeNode;}
+\DoxyCodeLine{use \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class_method}{PhpParser\(\backslash\)Node\(\backslash\)Stmt\(\backslash\)ClassMethod}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_interface__}{PhpParser\(\backslash\)Node\(\backslash\)Stmt\(\backslash\)Interface\_}} as InterfaceNode;}
+\DoxyCodeLine{use \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_namespace__}{PhpParser\(\backslash\)Node\(\backslash\)Stmt\(\backslash\)Namespace\_}} as NamespaceNode;}
+\DoxyCodeLine{use \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_namespace__}{PhpParser\(\backslash\)Node\(\backslash\)Stmt\(\backslash\)Namespace\_}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_property}{PhpParser\(\backslash\)Node\(\backslash\)Stmt\(\backslash\)Property}} as PropertyNode;}
+\DoxyCodeLine{use \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_trait__}{PhpParser\(\backslash\)Node\(\backslash\)Stmt\(\backslash\)Trait\_}} as TraitNode;}
+\DoxyCodeLine{use \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_trait_use}{PhpParser\(\backslash\)Node\(\backslash\)Stmt\(\backslash\)TraitUse}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_reflection_class}{ReflectionClass}} as CoreReflectionClass;}
+\DoxyCodeLine{use \mbox{\hyperlink{namespace_zend_1_1_code_1_1_reflection_1_1_exception}{ReflectionException}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_reflection_property}{ReflectionProperty}} as CoreReflectionProperty;}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_better_reflection}{Roave\(\backslash\)BetterReflection\(\backslash\)BetterReflection}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_exception_1_1_class_does_not_exist}{Roave\(\backslash\)BetterReflection\(\backslash\)Reflection\(\backslash\)Exception\(\backslash\)ClassDoesNotExist}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_exception_1_1_no_object_provided}{Roave\(\backslash\)BetterReflection\(\backslash\)Reflection\(\backslash\)Exception\(\backslash\)NoObjectProvided}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_exception_1_1_not_a_class_reflection}{Roave\(\backslash\)BetterReflection\(\backslash\)Reflection\(\backslash\)Exception\(\backslash\)NotAClassReflection}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_exception_1_1_not_an_interface_reflection}{Roave\(\backslash\)BetterReflection\(\backslash\)Reflection\(\backslash\)Exception\(\backslash\)NotAnInterfaceReflection}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_exception_1_1_not_an_object}{Roave\(\backslash\)BetterReflection\(\backslash\)Reflection\(\backslash\)Exception\(\backslash\)NotAnObject}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_exception_1_1_object_not_instance_of_class}{Roave\(\backslash\)BetterReflection\(\backslash\)Reflection\(\backslash\)Exception\(\backslash\)ObjectNotInstanceOfClass}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_exception_1_1_property_does_not_exist}{Roave\(\backslash\)BetterReflection\(\backslash\)Reflection\(\backslash\)Exception\(\backslash\)PropertyDoesNotExist}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_exception_1_1_uncloneable}{Roave\(\backslash\)BetterReflection\(\backslash\)Reflection\(\backslash\)Exception\(\backslash\)Uncloneable}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_string_cast_1_1_reflection_class_string_cast}{Roave\(\backslash\)BetterReflection\(\backslash\)Reflection\(\backslash\)StringCast\(\backslash\)ReflectionClassStringCast}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflector_1_1_exception_1_1_identifier_not_found}{Roave\(\backslash\)BetterReflection\(\backslash\)Reflector\(\backslash\)Exception\(\backslash\)IdentifierNotFound}};}
+\DoxyCodeLine{use \mbox{\hyperlink{interface_roave_1_1_better_reflection_1_1_reflector_1_1_reflector}{Roave\(\backslash\)BetterReflection\(\backslash\)Reflector\(\backslash\)Reflector}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_source_locator_1_1_located_1_1_located_source}{Roave\(\backslash\)BetterReflection\(\backslash\)SourceLocator\(\backslash\)Located\(\backslash\)LocatedSource}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_util_1_1_calculate_reflection_column}{Roave\(\backslash\)BetterReflection\(\backslash\)Util\(\backslash\)CalculateReflectionColumn}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_util_1_1_get_last_doc_comment}{Roave\(\backslash\)BetterReflection\(\backslash\)Util\(\backslash\)GetLastDocComment}};}
+\DoxyCodeLine{use \mbox{\hyperlink{interface_traversable}{Traversable}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use \textcolor{keyword}{function} \mbox{\hyperlink{standard__9_8php_afd822dc94c700147b11caf87e16cf7eb}{array\_combine}};}
+\DoxyCodeLine{use \textcolor{keyword}{function} \mbox{\hyperlink{standard__9_8php_a955c68039919bbac737ab12dd6dcc3c4}{array\_filter}};}
+\DoxyCodeLine{use \textcolor{keyword}{function} \mbox{\hyperlink{standard__9_8php_a841580cdaffd3a5705df50d015b2595c}{array\_key\_exists}};}
+\DoxyCodeLine{use \textcolor{keyword}{function} \mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}};}
+\DoxyCodeLine{use \textcolor{keyword}{function} \mbox{\hyperlink{standard__8_8php_af7cdf72030b1554353cedd3c075acab5}{array\_merge}};}
+\DoxyCodeLine{use \textcolor{keyword}{function} \mbox{\hyperlink{standard__9_8php_af33e98944baee9b481acc6ee0110d089}{array\_reverse}};}
+\DoxyCodeLine{use \textcolor{keyword}{function} \mbox{\hyperlink{standard__8_8php_ad5eb206c5d32a925c7a9e22cdd68c95b}{array\_slice}};}
+\DoxyCodeLine{use \textcolor{keyword}{function} \mbox{\hyperlink{standard__9_8php_a5f91087a5082f9084f394a31e481c553}{array\_values}};}
+\DoxyCodeLine{use \textcolor{keyword}{function} \mbox{\hyperlink{standard__9_8php_a3b58d532485715ac382464bf2d212ac3}{assert}};}
+\DoxyCodeLine{use \textcolor{keyword}{function} \mbox{\hyperlink{standard__1_8php_a9e3dac000d17d1ced5c6cb79f65a1743}{implode}};}
+\DoxyCodeLine{use \textcolor{keyword}{function} \mbox{\hyperlink{standard__8_8php_af1c6680a1b7646bfaab2bc45fff33f3e}{in\_array}};}
+\DoxyCodeLine{use \textcolor{keyword}{function} \mbox{\hyperlink{standard__1_8php_a866eb086e701c4af519aa0f108e5ebfb}{ltrim}};}
+\DoxyCodeLine{use \textcolor{keyword}{function} \mbox{\hyperlink{standard__0_8php_aeb44f0e1038759e5c086db848661f845}{sha1}};}
+\DoxyCodeLine{use \textcolor{keyword}{function} \mbox{\hyperlink{standard__2_8php_a6e1cb197080c320ed8a13a989e8e2691}{sprintf}};}
+\DoxyCodeLine{use \textcolor{keyword}{function} \mbox{\hyperlink{standard__1_8php_a1b110623289b85debb6efaaff2bf722f}{strtolower}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class }\mbox{\hyperlink{class_reflection_class}{ReflectionClass}} \textcolor{keyword}{implements} \mbox{\hyperlink{class_reflection}{Reflection}}}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{const} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ad0307644d01cd7deaf52033e7a798423}{ANONYMOUS\_CLASS\_NAME\_PREFIX}} = \textcolor{stringliteral}{'class@anonymous'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \mbox{\hyperlink{interface_reflector}{Reflector}} \mbox{\hyperlink{example3_8php_a115d92bb17a873ed18747549d1888b15}{\$reflector}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} ?NamespaceNode \$declaringNamespace = \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} LocatedSource \$locatedSource;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} ClassLikeNode \$node;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} ?array \$cachedReflectionConstants = \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} ?array \$cachedImmediateProperties = \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} ?array \$cachedProperties = \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} ?array \$cachedMethods = \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} ?array \$cachedTraitAliases = \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} ?array \$cachedTraitPrecedences = \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} ?\mbox{\hyperlink{class_reflection_class}{ReflectionClass}} \$cachedParentClass = \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} \_\_construct()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a7516ca30af0db3cdbf9a7739b48ce91d}{\_\_toString}}(): string}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_string_cast_1_1_reflection_class_string_cast_ab35400ebc9c40340c49aae71aeb88d2e}{ReflectionClassStringCast::toString}}(\$this);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a914dd4591cf39f2016c31e77dc8bf3ad}{createFromName}}(\textcolor{keywordtype}{string} \$className): self}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} (\textcolor{keyword}{new} BetterReflection())-\/>classReflector()-\/>reflect(\$className);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a19363f797ba8fc12cd144479f90db80a}{createFromInstance}}(\textcolor{keywordtype}{object} \$instance): self}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_object_a1b6ce32bf2d7005e38537765c42f9ca2}{ReflectionObject::createFromInstance}}(\$instance);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a308ef9f623b76c3c0d8d8f0235fa24a2}{createFromNode}}(}
+\DoxyCodeLine{        \mbox{\hyperlink{interface_reflector}{Reflector}} \$reflector,}
+\DoxyCodeLine{        ClassLikeNode \$node,}
+\DoxyCodeLine{        LocatedSource \$locatedSource,}
+\DoxyCodeLine{        ?NamespaceNode \$namespace = \textcolor{keyword}{null}}
+\DoxyCodeLine{    ): self \{}
+\DoxyCodeLine{        \$class = \textcolor{keyword}{new} \textcolor{keyword}{self}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$class-\/>reflector          = \mbox{\hyperlink{example3_8php_a115d92bb17a873ed18747549d1888b15}{\$reflector}};}
+\DoxyCodeLine{        \$class-\/>locatedSource      = \$locatedSource;}
+\DoxyCodeLine{        \$class-\/>node               = \$node;}
+\DoxyCodeLine{        \$class-\/>declaringNamespace = \$namespace;}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$class;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a8722a2197880ef7d3f01238d2e97bfe5}{getShortName}}(): string}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a1e7b2580aa378d9676b1212e012a177f}{isAnonymous}}()) \{}
+\DoxyCodeLine{            \mbox{\hyperlink{standard__9_8php_a3b58d532485715ac382464bf2d212ac3}{assert}}(\$this-\/>node-\/>name instanceof Node\(\backslash\)Identifier);}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \$this-\/>node-\/>name-\/>name;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$fileName = \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_afdeebfe3fcf5806fc79c074a6a3a6eb1}{getFileName}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$fileName === \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{            \$fileName = \mbox{\hyperlink{standard__0_8php_aeb44f0e1038759e5c086db848661f845}{sha1}}(\$this-\/>locatedSource-\/>getSource());}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__2_8php_a6e1cb197080c320ed8a13a989e8e2691}{sprintf}}(\textcolor{stringliteral}{'\%s\%c\%s(\%d)'}, self::ANONYMOUS\_CLASS\_NAME\_PREFIX, \textcolor{stringliteral}{"{}\(\backslash\)0"{}}, \$fileName, \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a0c5336ffcf8d85709d6f212bd49c7bb4}{getStartLine}}());}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a3d0963e68bb313b163a73f2803c64600}{getName}}(): string}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ae5c171ed54ac74e44df3a9ed92d0f1fd}{inNamespace}}()) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a8722a2197880ef7d3f01238d2e97bfe5}{getShortName}}();}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>node-\/>namespacedName-\/>toString();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_af5438a8f8b82f3d239f5ad1eb3d07eff}{getNamespaceName}}(): string}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ae5c171ed54ac74e44df3a9ed92d0f1fd}{inNamespace}}()) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{stringliteral}{''};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__1_8php_a9e3dac000d17d1ced5c6cb79f65a1743}{implode}}(\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}, \$this-\/>declaringNamespace-\/>name-\/>parts);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ae5c171ed54ac74e44df3a9ed92d0f1fd}{inNamespace}}(): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>declaringNamespace !== \textcolor{keyword}{null}}
+\DoxyCodeLine{            \&\& \$this-\/>declaringNamespace-\/>name !== \textcolor{keyword}{null};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a7daf2e3cdf3d09e01a3a642235f38539}{getExtensionName}}(): ?string}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>locatedSource-\/>getExtensionName();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} createMethodsFromTrait(\mbox{\hyperlink{class_reflection_method}{ReflectionMethod}} \$method): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$traitAliases     = \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a91707133ad21fd603c17d0be59cca1ec}{getTraitAliases}}();}
+\DoxyCodeLine{        \$traitPrecedences = \$this-\/>getTraitPrecedences();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$methodAst = \$method-\/>getAst();}
+\DoxyCodeLine{        \mbox{\hyperlink{standard__9_8php_a3b58d532485715ac382464bf2d212ac3}{assert}}(\$methodAst instanceof ClassMethod);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$methodHash   = \$this-\/>methodHash(\$method-\/>getImplementingClass()-\/>\mbox{\hyperlink{class_reflection_function_abstract_a3d0963e68bb313b163a73f2803c64600}{getName}}(), \$method-\/>\mbox{\hyperlink{class_reflection_function_abstract_a3d0963e68bb313b163a73f2803c64600}{getName}}());}
+\DoxyCodeLine{        \$createMethod = \textcolor{keyword}{function} (?\textcolor{keywordtype}{string} \$aliasMethodName) use (\$method, \$methodAst): \mbox{\hyperlink{class_reflection_method}{ReflectionMethod}} \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_method_a5f1ca67ad4348b715c1ff8375642a63c}{ReflectionMethod::createFromNode}}(}
+\DoxyCodeLine{                \$this-\/>reflector,}
+\DoxyCodeLine{                \$methodAst,}
+\DoxyCodeLine{                \$method-\/>\mbox{\hyperlink{class_reflection_method_aacff3f8d93cc250281f0f73bff3422e1}{getDeclaringClass}}()-\/>getDeclaringNamespaceAst(),}
+\DoxyCodeLine{                \$method-\/>\mbox{\hyperlink{class_reflection_method_aacff3f8d93cc250281f0f73bff3422e1}{getDeclaringClass}}(),}
+\DoxyCodeLine{                \$this,}
+\DoxyCodeLine{                \$aliasMethodName,}
+\DoxyCodeLine{            );}
+\DoxyCodeLine{        \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$methods = [];}
+\DoxyCodeLine{        \textcolor{keywordflow}{foreach} (\$traitAliases as \$aliasMethodName => \$traitAliasDefinition) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} (\$methodHash !== \$traitAliasDefinition) \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \$methods[] = \$createMethod(\$aliasMethodName);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! \mbox{\hyperlink{standard__9_8php_a841580cdaffd3a5705df50d015b2595c}{array\_key\_exists}}(\$methodHash, \$traitPrecedences)) \{}
+\DoxyCodeLine{            \$methods[] = \$createMethod(\$method-\/>getAliasName());}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$methods;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} getParentMethods(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__8_8php_af7cdf72030b1554353cedd3c075acab5}{array\_merge}}(}
+\DoxyCodeLine{            [],}
+\DoxyCodeLine{            ...\mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                \textcolor{keyword}{static} \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_class}{ReflectionClass}} \$ancestor): array \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{return} \$ancestor-\/>\mbox{\hyperlink{class_reflection_class_a8796186ee6fe28382a1bb988b98ef2de}{getMethods}}();}
+\DoxyCodeLine{                \},}
+\DoxyCodeLine{                \mbox{\hyperlink{standard__9_8php_a955c68039919bbac737ab12dd6dcc3c4}{array\_filter}}([\$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a0102234be653614459dc1588c13d6f2e}{getParentClass}}()]),}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} getMethodsFromTraits(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__8_8php_af7cdf72030b1554353cedd3c075acab5}{array\_merge}}(}
+\DoxyCodeLine{            [],}
+\DoxyCodeLine{            ...\mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_class}{ReflectionClass}} \$trait): array \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__8_8php_af7cdf72030b1554353cedd3c075acab5}{array\_merge}}(}
+\DoxyCodeLine{                        [],}
+\DoxyCodeLine{                        ...\mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                            \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_method}{ReflectionMethod}} \$method): array \{}
+\DoxyCodeLine{                                \textcolor{keywordflow}{return} \$this-\/>createMethodsFromTrait(\$method);}
+\DoxyCodeLine{                            \},}
+\DoxyCodeLine{                            \$trait-\/>\mbox{\hyperlink{class_reflection_class_a8796186ee6fe28382a1bb988b98ef2de}{getMethods}}(),}
+\DoxyCodeLine{                        ),}
+\DoxyCodeLine{                    );}
+\DoxyCodeLine{                \},}
+\DoxyCodeLine{                \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a8985442e8133cd567bf7ce548f96561f}{getTraits}}(),}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} getMethodsFromInterfaces(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__8_8php_af7cdf72030b1554353cedd3c075acab5}{array\_merge}}(}
+\DoxyCodeLine{            [],}
+\DoxyCodeLine{            ...\mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                \textcolor{keyword}{static} \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_class}{ReflectionClass}} \$ancestor): array \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{return} \$ancestor-\/>\mbox{\hyperlink{class_reflection_class_a8796186ee6fe28382a1bb988b98ef2de}{getMethods}}();}
+\DoxyCodeLine{                \},}
+\DoxyCodeLine{                \mbox{\hyperlink{standard__9_8php_a5f91087a5082f9084f394a31e481c553}{array\_values}}(\$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_aacd41ad982fee4953d8ad245ab7e4ec9}{getInterfaces}}()),}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} getMethodsIndexedByName(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$this-\/>cachedMethods !== \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \$this-\/>cachedMethods;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$classMethods     = \$this-\/>getImmediateMethods();}
+\DoxyCodeLine{        \$parentClass      = \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a0102234be653614459dc1588c13d6f2e}{getParentClass}}();}
+\DoxyCodeLine{        \$parentClassName  = \$parentClass !== \textcolor{keyword}{null} ? \$parentClass-\/>getName() : \textcolor{keyword}{null};}
+\DoxyCodeLine{        \$parentMethods    = \$this-\/>getParentMethods();}
+\DoxyCodeLine{        \$traitsMethods    = \$this-\/>getMethodsFromTraits();}
+\DoxyCodeLine{        \$interfaceMethods = \$this-\/>getMethodsFromInterfaces();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$methods = [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{foreach} ([\$classMethods, \$parentMethods, \textcolor{stringliteral}{'traits'} => \$traitsMethods, \$interfaceMethods] as \$type => \$typeMethods) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{foreach} (\$typeMethods as \$method) \{}
+\DoxyCodeLine{                \$methodName = \mbox{\hyperlink{standard__1_8php_a1b110623289b85debb6efaaff2bf722f}{strtolower}}(\$method-\/>getName());}
+\DoxyCodeLine{}
+\DoxyCodeLine{                \textcolor{keywordflow}{if} (! \mbox{\hyperlink{standard__9_8php_a841580cdaffd3a5705df50d015b2595c}{array\_key\_exists}}(\$methodName, \$methods)) \{}
+\DoxyCodeLine{                    \$methods[\$methodName] = \$method;}
+\DoxyCodeLine{                    \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{                \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{                \textcolor{keywordflow}{if} (\$type !== \textcolor{stringliteral}{'traits'}) \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{                \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{                \$existingMethod = \$methods[\$methodName];}
+\DoxyCodeLine{}
+\DoxyCodeLine{                \textcolor{comment}{// Non-\/abstract trait method can overwrite existing methods:}}
+\DoxyCodeLine{                \textcolor{comment}{// -\/ when existing method comes from parent class}}
+\DoxyCodeLine{                \textcolor{comment}{// -\/ when existing method comes from trait and is abstract}}
+\DoxyCodeLine{                \textcolor{keywordflow}{if} (}
+\DoxyCodeLine{                    ! (}
+\DoxyCodeLine{                    ! \$method-\/>isAbstract()}
+\DoxyCodeLine{                    \&\& (}
+\DoxyCodeLine{                        \$existingMethod-\/>getDeclaringClass()-\/>getName() === \$parentClassName}
+\DoxyCodeLine{                        || (}
+\DoxyCodeLine{                            \$existingMethod-\/>isAbstract()}
+\DoxyCodeLine{                            \&\& \$existingMethod-\/>getDeclaringClass()-\/>isTrait()}
+\DoxyCodeLine{                        )}
+\DoxyCodeLine{                    )}
+\DoxyCodeLine{                    )}
+\DoxyCodeLine{                ) \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{                \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{                \$methods[\$methodName] = \$method;}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$this-\/>cachedMethods = \$methods;}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>cachedMethods;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ac3e9af4e4ff575852a035c23f7efd5b3}{getMethods}}(?\textcolor{keywordtype}{int} \$filter = \textcolor{keyword}{null}): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$filter === \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_a5f91087a5082f9084f394a31e481c553}{array\_values}}(\$this-\/>getMethodsIndexedByName());}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_a5f91087a5082f9084f394a31e481c553}{array\_values}}(}
+\DoxyCodeLine{            \mbox{\hyperlink{standard__9_8php_a955c68039919bbac737ab12dd6dcc3c4}{array\_filter}}(}
+\DoxyCodeLine{                \$this-\/>getMethodsIndexedByName(),}
+\DoxyCodeLine{                \textcolor{keyword}{static} \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_method}{ReflectionMethod}} \$method) use (\$filter): \textcolor{keywordtype}{bool} \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{return} (\textcolor{keywordtype}{bool}) (\$filter \& \$method-\/>\mbox{\hyperlink{class_reflection_method_a781d75979d7792ce3e5e4dcf79a623c9}{getModifiers}}());}
+\DoxyCodeLine{                \},}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} getImmediateMethods(?\textcolor{keywordtype}{int} \$filter = \textcolor{keyword}{null}): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$methods = \mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{            \textcolor{keyword}{function} (ClassMethod \$methodNode): \mbox{\hyperlink{class_reflection_method}{ReflectionMethod}} \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_method_a5f1ca67ad4348b715c1ff8375642a63c}{ReflectionMethod::createFromNode}}(}
+\DoxyCodeLine{                    \$this-\/>reflector,}
+\DoxyCodeLine{                    \$methodNode,}
+\DoxyCodeLine{                    \$this-\/>declaringNamespace,}
+\DoxyCodeLine{                    \$this,}
+\DoxyCodeLine{                    \$this,}
+\DoxyCodeLine{                );}
+\DoxyCodeLine{            \},}
+\DoxyCodeLine{            \$this-\/>node-\/>getMethods(),}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$methodsByName = [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{foreach} (\$methods as \$method) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} (\$filter !== \textcolor{keyword}{null} \&\& ! (\$filter \& \$method-\/>getModifiers())) \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \$methodsByName[\$method-\/>getName()] = \$method;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$methodsByName;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a6f76dab2f4b28fb066de3f90f80464ec}{getMethod}}(\textcolor{keywordtype}{string} \$methodName): \mbox{\hyperlink{class_reflection_method}{ReflectionMethod}}}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$lowercaseMethodName = \mbox{\hyperlink{standard__1_8php_a1b110623289b85debb6efaaff2bf722f}{strtolower}}(\$methodName);}
+\DoxyCodeLine{        \$methods             = \$this-\/>getMethodsIndexedByName();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! isset(\$methods[\$lowercaseMethodName])) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{throw} \textcolor{keyword}{new} \mbox{\hyperlink{class_out_of_bounds_exception}{OutOfBoundsException}}(\textcolor{stringliteral}{'Could not find method: '} . \$methodName);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$methods[\$lowercaseMethodName];}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ad962225be504a56f29c75d57c82d845b}{hasMethod}}(\textcolor{keywordtype}{string} \$methodName): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{            \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a6f76dab2f4b28fb066de3f90f80464ec}{getMethod}}(\$methodName);}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{        \} \textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_out_of_bounds_exception}{OutOfBoundsException}} \$exception) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a2d6363814137cc0dcec1f6bf30e708d4}{getImmediateConstants}}(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(\textcolor{keyword}{static} \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_class_constant}{ReflectionClassConstant}} \$classConstant) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \$classConstant-\/>\mbox{\hyperlink{class_reflection_class_constant_ac0bc18784b182c89fcfd276625aef435}{getValue}}();}
+\DoxyCodeLine{        \}, \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a4f07a3e1f1805ce5d4d3fbedd50f129c}{getImmediateReflectionConstants}}());}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a37357ff7fe8d1c1ea764fa1465637543}{getConstants}}(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(\textcolor{keyword}{static} \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_class_constant}{ReflectionClassConstant}} \$classConstant) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \$classConstant-\/>\mbox{\hyperlink{class_reflection_class_constant_ac0bc18784b182c89fcfd276625aef435}{getValue}}();}
+\DoxyCodeLine{        \}, \$this-\/>getReflectionConstants());}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a74961fd1965ff1197c45c6bf73e23f1c}{getConstant}}(\textcolor{keywordtype}{string} \$name)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$reflectionConstant = \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a0a93f0a7325c7b66e569dff5c058b74f}{getReflectionConstant}}(\$name);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! \$reflectionConstant) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$reflectionConstant-\/>getValue();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ae9ad641c134b5dea7c63674cd5eb0868}{hasConstant}}(\textcolor{keywordtype}{string} \$name): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a0a93f0a7325c7b66e569dff5c058b74f}{getReflectionConstant}}(\$name) !== \textcolor{keyword}{null};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a0a93f0a7325c7b66e569dff5c058b74f}{getReflectionConstant}}(\textcolor{keywordtype}{string} \$name): ?\mbox{\hyperlink{class_reflection_class_constant}{ReflectionClassConstant}}}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>getReflectionConstants()[\$name] ?? \textcolor{keyword}{null};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a4f07a3e1f1805ce5d4d3fbedd50f129c}{getImmediateReflectionConstants}}(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$this-\/>cachedReflectionConstants !== \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \$this-\/>cachedReflectionConstants;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$constants = \mbox{\hyperlink{standard__8_8php_af7cdf72030b1554353cedd3c075acab5}{array\_merge}}(}
+\DoxyCodeLine{            [],}
+\DoxyCodeLine{            ...\mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                \textcolor{keyword}{function} (ConstNode \$constNode): array \{}
+\DoxyCodeLine{                    \$constants = [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{foreach} (\$constNode-\/>consts as \$constantPositionInNode => \$constantNode) \{}
+\DoxyCodeLine{                        \$constants[] = ReflectionClassConstant::createFromNode(\$this-\/>reflector, \$constNode, \$constantPositionInNode, \$this);}
+\DoxyCodeLine{                    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{return} \$constants;}
+\DoxyCodeLine{                \},}
+\DoxyCodeLine{                \mbox{\hyperlink{standard__9_8php_a955c68039919bbac737ab12dd6dcc3c4}{array\_filter}}(}
+\DoxyCodeLine{                    \$this-\/>node-\/>stmts,}
+\DoxyCodeLine{                    \textcolor{keyword}{static} \mbox{\hyperlink{namespace_roave_1_1_better_reflection_test_1_1_fixture_a08cc3cfba1226a65d69a5c4f57aba5a7}{function}} (Node\(\backslash\)Stmt \$stmt): \textcolor{keywordtype}{bool} \{}
+\DoxyCodeLine{                        \textcolor{keywordflow}{return} \$stmt instanceof ConstNode;}
+\DoxyCodeLine{                    \},}
+\DoxyCodeLine{                ),}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>cachedReflectionConstants = \mbox{\hyperlink{standard__9_8php_afd822dc94c700147b11caf87e16cf7eb}{array\_combine}}(}
+\DoxyCodeLine{            \mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                \textcolor{keyword}{static} \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_class_constant}{ReflectionClassConstant}} \$constant): \textcolor{keywordtype}{string} \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{return} \$constant-\/>\mbox{\hyperlink{class_reflection_class_constant_a3d0963e68bb313b163a73f2803c64600}{getName}}();}
+\DoxyCodeLine{                \},}
+\DoxyCodeLine{                \$constants,}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{            \$constants,}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} getReflectionConstants(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{comment}{// Note: constants are not merged via their name as array index, since internal PHP constant}}
+\DoxyCodeLine{        \textcolor{comment}{//       sorting does not follow `\(\backslash\)array\_merge()` semantics}}
+\DoxyCodeLine{\textcolor{comment}{}        \$allReflectionConstants = \mbox{\hyperlink{standard__8_8php_af7cdf72030b1554353cedd3c075acab5}{array\_merge}}(}
+\DoxyCodeLine{            \mbox{\hyperlink{standard__9_8php_a5f91087a5082f9084f394a31e481c553}{array\_values}}(\$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a4f07a3e1f1805ce5d4d3fbedd50f129c}{getImmediateReflectionConstants}}()),}
+\DoxyCodeLine{            ...\mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                \textcolor{keyword}{static} \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_class}{ReflectionClass}} \$ancestor): array \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_a955c68039919bbac737ab12dd6dcc3c4}{array\_filter}}(}
+\DoxyCodeLine{                        \mbox{\hyperlink{standard__9_8php_a5f91087a5082f9084f394a31e481c553}{array\_values}}(\$ancestor-\/>\mbox{\hyperlink{class_reflection_class_afb52a80ba1945e647f2b103abe9c3822}{getReflectionConstants}}()),}
+\DoxyCodeLine{                        \textcolor{keyword}{static} \mbox{\hyperlink{namespace_roave_1_1_better_reflection_test_1_1_fixture_a08cc3cfba1226a65d69a5c4f57aba5a7}{function}} (\mbox{\hyperlink{class_reflection_class_constant}{ReflectionClassConstant}} \$classConstant): \textcolor{keywordtype}{bool} \{}
+\DoxyCodeLine{                            \textcolor{keywordflow}{return} ! \$classConstant-\/>\mbox{\hyperlink{class_reflection_class_constant_a55426c7f8596f9fc117210bf5311d4b9}{isPrivate}}();}
+\DoxyCodeLine{                        \},}
+\DoxyCodeLine{                    );}
+\DoxyCodeLine{                \},}
+\DoxyCodeLine{                \mbox{\hyperlink{standard__9_8php_a955c68039919bbac737ab12dd6dcc3c4}{array\_filter}}([\$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a0102234be653614459dc1588c13d6f2e}{getParentClass}}()]),}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{            ...\mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                \textcolor{keyword}{static} \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_class}{ReflectionClass}} \$interface): array \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_a5f91087a5082f9084f394a31e481c553}{array\_values}}(\$interface-\/>\mbox{\hyperlink{class_reflection_class_afb52a80ba1945e647f2b103abe9c3822}{getReflectionConstants}}());}
+\DoxyCodeLine{                \},}
+\DoxyCodeLine{                \mbox{\hyperlink{standard__9_8php_a5f91087a5082f9084f394a31e481c553}{array\_values}}(\$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_aacd41ad982fee4953d8ad245ab7e4ec9}{getInterfaces}}()),}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$reflectionConstants = [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{foreach} (\$allReflectionConstants as \$constant) \{}
+\DoxyCodeLine{            \$constantName = \$constant-\/>getName();}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} (isset(\$reflectionConstants[\$constantName])) \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \$reflectionConstants[\$constantName] = \$constant;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$reflectionConstants;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a10d1032e08a46b4448df02d422e1121d}{getConstructor}}(): \mbox{\hyperlink{class_reflection_method}{ReflectionMethod}}}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$constructors = \mbox{\hyperlink{standard__9_8php_a5f91087a5082f9084f394a31e481c553}{array\_values}}(\mbox{\hyperlink{standard__9_8php_a955c68039919bbac737ab12dd6dcc3c4}{array\_filter}}(\$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ac3e9af4e4ff575852a035c23f7efd5b3}{getMethods}}(), \textcolor{keyword}{static} \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_method}{ReflectionMethod}} \$method): \textcolor{keywordtype}{bool} \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \$method-\/>\mbox{\hyperlink{class_reflection_method_a2482f403ee15fe17572a1fde75366637}{isConstructor}}();}
+\DoxyCodeLine{        \}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! isset(\$constructors[0])) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{throw} \textcolor{keyword}{new} \mbox{\hyperlink{class_out_of_bounds_exception}{OutOfBoundsException}}(\textcolor{stringliteral}{'Could not find method: \_\_construct'});}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$constructors[0];}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_af152129c04165aa3b5f0bdcae47e8ab5}{getImmediateProperties}}(?\textcolor{keywordtype}{int} \$filter = \textcolor{keyword}{null}): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$this-\/>cachedImmediateProperties === \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{            \$properties = [];}
+\DoxyCodeLine{            \textcolor{keywordflow}{foreach} (\$this-\/>node-\/>stmts as \$stmt) \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{if} (! (\$stmt instanceof PropertyNode)) \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{                \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{                \textcolor{keywordflow}{foreach} (\$stmt-\/>props as \$propertyPositionInNode => \$propertyNode) \{}
+\DoxyCodeLine{                    \$prop                         = ReflectionProperty::createFromNode(}
+\DoxyCodeLine{                        \$this-\/>reflector,}
+\DoxyCodeLine{                        \$stmt,}
+\DoxyCodeLine{                        \$propertyPositionInNode,}
+\DoxyCodeLine{                        \$this-\/>declaringNamespace,}
+\DoxyCodeLine{                        \$this,}
+\DoxyCodeLine{                        \$this,}
+\DoxyCodeLine{                    );}
+\DoxyCodeLine{                    \$properties[\$prop-\/>getName()] = \$prop;}
+\DoxyCodeLine{                \}}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \$this-\/>cachedImmediateProperties = \$properties;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$filter === \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \$this-\/>cachedImmediateProperties;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_a955c68039919bbac737ab12dd6dcc3c4}{array\_filter}}(}
+\DoxyCodeLine{            \$this-\/>cachedImmediateProperties,}
+\DoxyCodeLine{            \textcolor{keyword}{static} \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_property}{ReflectionProperty}} \$property) use (\$filter): \textcolor{keywordtype}{bool} \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} (\textcolor{keywordtype}{bool}) (\$filter \& \$property-\/>\mbox{\hyperlink{class_reflection_property_a781d75979d7792ce3e5e4dcf79a623c9}{getModifiers}}());}
+\DoxyCodeLine{            \},}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a150c0d19adf7fb85ca24f561b9dd3b40}{getProperties}}(?\textcolor{keywordtype}{int} \$filter = \textcolor{keyword}{null}): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$this-\/>cachedProperties === \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{            \textcolor{comment}{// merging together properties from parent class, traits, current class (in this precise order)}}
+\DoxyCodeLine{            \$this-\/>cachedProperties = \mbox{\hyperlink{standard__8_8php_af7cdf72030b1554353cedd3c075acab5}{array\_merge}}(}
+\DoxyCodeLine{                \mbox{\hyperlink{standard__8_8php_af7cdf72030b1554353cedd3c075acab5}{array\_merge}}(}
+\DoxyCodeLine{                    [],}
+\DoxyCodeLine{                    ...\mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                        \textcolor{keyword}{static} \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_class}{ReflectionClass}} \$ancestor) use (\$filter): array \{}
+\DoxyCodeLine{                            \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_a955c68039919bbac737ab12dd6dcc3c4}{array\_filter}}(}
+\DoxyCodeLine{                                \$ancestor-\/>\mbox{\hyperlink{class_reflection_class_a92cd255e1658591ae8374e0c1eb9c38b}{getProperties}}(\$filter),}
+\DoxyCodeLine{                                \textcolor{keyword}{static} \mbox{\hyperlink{namespace_roave_1_1_better_reflection_test_1_1_fixture_a08cc3cfba1226a65d69a5c4f57aba5a7}{function}} (\mbox{\hyperlink{class_reflection_property}{ReflectionProperty}} \$property): \textcolor{keywordtype}{bool} \{}
+\DoxyCodeLine{                                    \textcolor{keywordflow}{return} ! \$property-\/>\mbox{\hyperlink{class_reflection_property_a55426c7f8596f9fc117210bf5311d4b9}{isPrivate}}();}
+\DoxyCodeLine{                                \},}
+\DoxyCodeLine{                            );}
+\DoxyCodeLine{                        \},}
+\DoxyCodeLine{                        \mbox{\hyperlink{standard__9_8php_a955c68039919bbac737ab12dd6dcc3c4}{array\_filter}}([\$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a0102234be653614459dc1588c13d6f2e}{getParentClass}}()]),}
+\DoxyCodeLine{                    ),}
+\DoxyCodeLine{                    ...\mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                        \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_class}{ReflectionClass}} \$trait) use (\$filter) \{}
+\DoxyCodeLine{                            \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(\textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_property}{ReflectionProperty}} \$property) use (\$trait): \mbox{\hyperlink{class_reflection_property}{ReflectionProperty}} \{}
+\DoxyCodeLine{                                \textcolor{keywordflow}{return} ReflectionProperty::createFromNode(}
+\DoxyCodeLine{                                    \$this-\/>reflector,}
+\DoxyCodeLine{                                    \$property-\/>getAst(),}
+\DoxyCodeLine{                                    \$property-\/>getPositionInAst(),}
+\DoxyCodeLine{                                    \$trait-\/>declaringNamespace,}
+\DoxyCodeLine{                                    \$property-\/>\mbox{\hyperlink{class_reflection_property_aacff3f8d93cc250281f0f73bff3422e1}{getDeclaringClass}}(),}
+\DoxyCodeLine{                                    \$this,}
+\DoxyCodeLine{                                );}
+\DoxyCodeLine{                            \}, \$trait-\/>\mbox{\hyperlink{class_reflection_class_a92cd255e1658591ae8374e0c1eb9c38b}{getProperties}}(\$filter));}
+\DoxyCodeLine{                        \},}
+\DoxyCodeLine{                        \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a8985442e8133cd567bf7ce548f96561f}{getTraits}}(),}
+\DoxyCodeLine{                    ),}
+\DoxyCodeLine{                ),}
+\DoxyCodeLine{                \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_af152129c04165aa3b5f0bdcae47e8ab5}{getImmediateProperties}}(),}
+\DoxyCodeLine{            );}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$filter === \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \$this-\/>cachedProperties;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_a955c68039919bbac737ab12dd6dcc3c4}{array\_filter}}(}
+\DoxyCodeLine{            \$this-\/>cachedProperties,}
+\DoxyCodeLine{            \textcolor{keyword}{static} \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_property}{ReflectionProperty}} \$property) use (\$filter): \textcolor{keywordtype}{bool} \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} (\textcolor{keywordtype}{bool}) (\$filter \& \$property-\/>\mbox{\hyperlink{class_reflection_property_a781d75979d7792ce3e5e4dcf79a623c9}{getModifiers}}());}
+\DoxyCodeLine{            \},}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a22f3453fc843f7acc55d6567c464617c}{getProperty}}(\textcolor{keywordtype}{string} \$name): ?\mbox{\hyperlink{class_reflection_property}{ReflectionProperty}}}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$properties = \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a150c0d19adf7fb85ca24f561b9dd3b40}{getProperties}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! isset(\$properties[\$name])) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$properties[\$name];}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a7e7419d9cba8c7d99a3f8dd85b57941d}{hasProperty}}(\textcolor{keywordtype}{string} \$name): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a22f3453fc843f7acc55d6567c464617c}{getProperty}}(\$name) !== \textcolor{keyword}{null};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a5fc70640aeda014b6bbdc9ab5151881e}{getDefaultProperties}}(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{            \textcolor{keyword}{static} \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_property}{ReflectionProperty}} \$property) \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} \$property-\/>getDefaultValue();}
+\DoxyCodeLine{            \},}
+\DoxyCodeLine{            \mbox{\hyperlink{standard__9_8php_a955c68039919bbac737ab12dd6dcc3c4}{array\_filter}}(\$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a150c0d19adf7fb85ca24f561b9dd3b40}{getProperties}}(), \textcolor{keyword}{static} \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_property}{ReflectionProperty}} \$property): \textcolor{keywordtype}{bool} \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} \$property-\/>\mbox{\hyperlink{class_reflection_property_a087ac7a1de40f76639dfc225e6e3f8ca}{isDefault}}();}
+\DoxyCodeLine{            \}),}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_afdeebfe3fcf5806fc79c074a6a3a6eb1}{getFileName}}(): ?string}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>locatedSource-\/>getFileName();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a9a9f01610944ec3cf7e8824f595ce7c2}{getLocatedSource}}(): LocatedSource}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>locatedSource;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a0c5336ffcf8d85709d6f212bd49c7bb4}{getStartLine}}(): int}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>node-\/>getStartLine();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a7ad149e4075bba710a8933065263fe0e}{getEndLine}}(): int}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>node-\/>getEndLine();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a961bb84bb7b77c9e0735710e2d19d7d6}{getStartColumn}}(): int}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_util_1_1_calculate_reflection_column_a2e98c812627b7c47dd4ed44adff91482}{CalculateReflectionColumn::getStartColumn}}(\$this-\/>locatedSource-\/>getSource(), \$this-\/>node);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a6ef6204d0c224aa56fd61fc290dc46a2}{getEndColumn}}(): int}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_util_1_1_calculate_reflection_column_aea188d5bce7cf8347f1d136a9beda1f5}{CalculateReflectionColumn::getEndColumn}}(\$this-\/>locatedSource-\/>getSource(), \$this-\/>node);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a0102234be653614459dc1588c13d6f2e}{getParentClass}}(): ?\mbox{\hyperlink{class_reflection_class}{ReflectionClass}}}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! (\$this-\/>node instanceof ClassNode) || \$this-\/>node-\/>extends === \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$this-\/>cachedParentClass === \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{            \$parent = \$this-\/>reflector-\/>reflect(\$this-\/>node-\/>extends-\/>toString());}
+\DoxyCodeLine{            \textcolor{comment}{// @TODO use actual `ClassReflector` or `FunctionReflector`?}}
+\DoxyCodeLine{            \mbox{\hyperlink{standard__9_8php_a3b58d532485715ac382464bf2d212ac3}{assert}}(\$parent instanceof \textcolor{keyword}{self});}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \$this-\/>cachedParentClass = \$parent;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$this-\/>cachedParentClass-\/>isInterface() || \$this-\/>cachedParentClass-\/>isTrait()) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_exception_1_1_not_a_class_reflection_a77a2d479fcc28ede6f95761679f9931e}{NotAClassReflection::fromReflectionClass}}(\$this-\/>cachedParentClass);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>cachedParentClass;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ac0fa1d5f7cb28a1977ae09819061d0d6}{getParentClassNames}}(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(\textcolor{keyword}{static} \textcolor{keyword}{function} (\textcolor{keyword}{self} \$parentClass): \textcolor{keywordtype}{string} \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \$parentClass-\/>getName();}
+\DoxyCodeLine{        \}, \mbox{\hyperlink{standard__8_8php_ad5eb206c5d32a925c7a9e22cdd68c95b}{array\_slice}}(\mbox{\hyperlink{standard__9_8php_af33e98944baee9b481acc6ee0110d089}{array\_reverse}}(\$this-\/>getInheritanceClassHierarchy()), 1));}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a7ad315042ad7fc45bd7e7d979647738a}{getDocComment}}(): string}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_util_1_1_get_last_doc_comment_aa31ddf778177f5c4c96b2072f6bdd879}{GetLastDocComment::forNode}}(\$this-\/>node);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a1e7b2580aa378d9676b1212e012a177f}{isAnonymous}}(): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>node-\/>name === \textcolor{keyword}{null};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a5c5dc75a49a363337e44544cfdeb0b44}{isInternal}}(): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>locatedSource-\/>isInternal();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a9c7fcf50a24d49fd99a8d3f8904894cf}{isUserDefined}}(): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} ! \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a5c5dc75a49a363337e44544cfdeb0b44}{isInternal}}();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_acc4237def73fe195ba526291e953acec}{isAbstract}}(): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>node instanceof ClassNode \&\& \$this-\/>node-\/>isAbstract();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_af5e2c93992e760dc57f31b31ed354cfa}{isFinal}}(): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>node instanceof ClassNode \&\& \$this-\/>node-\/>isFinal();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a781d75979d7792ce3e5e4dcf79a623c9}{getModifiers}}(): int}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$val  = 0;}
+\DoxyCodeLine{        \$val += \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_acc4237def73fe195ba526291e953acec}{isAbstract}}() ? CoreReflectionClass::IS\_EXPLICIT\_ABSTRACT : 0;}
+\DoxyCodeLine{        \$val += \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_af5e2c93992e760dc57f31b31ed354cfa}{isFinal}}() ? CoreReflectionClass::IS\_FINAL : 0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$val;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ab6a35e92e903321654280f47dd7eb631}{isTrait}}(): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>node instanceof TraitNode;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a24085f1d1916b88922901502e2b96edb}{isInterface}}(): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>node instanceof InterfaceNode;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a8985442e8133cd567bf7ce548f96561f}{getTraits}}(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{            \textcolor{keyword}{function} (Node\(\backslash\)Name \$importedTrait): \mbox{\hyperlink{class_reflection_class}{ReflectionClass}} \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} \$this-\/>reflectClassForNamedNode(\$importedTrait);}
+\DoxyCodeLine{            \},}
+\DoxyCodeLine{            \mbox{\hyperlink{standard__8_8php_af7cdf72030b1554353cedd3c075acab5}{array\_merge}}(}
+\DoxyCodeLine{                [],}
+\DoxyCodeLine{                ...\mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                    \textcolor{keyword}{static} \textcolor{keyword}{function} (TraitUse \$traitUse): array \{}
+\DoxyCodeLine{                        \textcolor{keywordflow}{return} \$traitUse-\/>traits;}
+\DoxyCodeLine{                    \},}
+\DoxyCodeLine{                    \mbox{\hyperlink{standard__9_8php_a955c68039919bbac737ab12dd6dcc3c4}{array\_filter}}(\$this-\/>node-\/>stmts, \textcolor{keyword}{static} \mbox{\hyperlink{namespace_roave_1_1_better_reflection_test_1_1_fixture_a08cc3cfba1226a65d69a5c4f57aba5a7}{function}} (Node \$node): \textcolor{keywordtype}{bool} \{}
+\DoxyCodeLine{                        \textcolor{keywordflow}{return} \$node instanceof TraitUse;}
+\DoxyCodeLine{                    \}),}
+\DoxyCodeLine{                ),}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} reflectClassForNamedNode(Node\(\backslash\)Name \$node): self}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{comment}{// @TODO use actual `ClassReflector` or `FunctionReflector`?}}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a1e7b2580aa378d9676b1212e012a177f}{isAnonymous}}()) \{}
+\DoxyCodeLine{            \$class = (\textcolor{keyword}{new} BetterReflection())-\/>classReflector()-\/>reflect(\$node-\/>toString());}
+\DoxyCodeLine{        \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{            \$class = \$this-\/>reflector-\/>reflect(\$node-\/>toString());}
+\DoxyCodeLine{            \mbox{\hyperlink{standard__9_8php_a3b58d532485715ac382464bf2d212ac3}{assert}}(\$class instanceof \textcolor{keyword}{self});}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$class;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a2f2f17807690ef02570efa263e1a33f8}{getTraitNames}}(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{            \textcolor{keyword}{static} \textcolor{keyword}{function} (\mbox{\hyperlink{class_reflection_class}{ReflectionClass}} \$trait): \textcolor{keywordtype}{string} \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} \$trait-\/>\mbox{\hyperlink{class_reflection_class_a3d0963e68bb313b163a73f2803c64600}{getName}}();}
+\DoxyCodeLine{            \},}
+\DoxyCodeLine{            \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a8985442e8133cd567bf7ce548f96561f}{getTraits}}(),}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a91707133ad21fd603c17d0be59cca1ec}{getTraitAliases}}(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$this-\/>parseTraitUsages();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>cachedTraitAliases;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} getTraitPrecedences(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$this-\/>parseTraitUsages();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>cachedTraitPrecedences;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} parseTraitUsages(): void}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$this-\/>cachedTraitAliases !== \textcolor{keyword}{null} \&\& \$this-\/>cachedTraitPrecedences !== \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$traitUsages = \mbox{\hyperlink{standard__9_8php_a955c68039919bbac737ab12dd6dcc3c4}{array\_filter}}(\$this-\/>node-\/>stmts, \textcolor{keyword}{static} \mbox{\hyperlink{namespace_roave_1_1_better_reflection_test_1_1_fixture_a08cc3cfba1226a65d69a5c4f57aba5a7}{function}} (Node \$node): \textcolor{keywordtype}{bool} \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \$node instanceof TraitUse;}
+\DoxyCodeLine{        \});}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$this-\/>cachedTraitAliases     = [];}
+\DoxyCodeLine{        \$this-\/>cachedTraitPrecedences = [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{foreach} (\$traitUsages as \$traitUsage) \{}
+\DoxyCodeLine{            \$traitNames  = \$traitUsage-\/>traits;}
+\DoxyCodeLine{            \$adaptations = \$traitUsage-\/>adaptations;}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{keywordflow}{foreach} (\$adaptations as \$adaptation) \{}
+\DoxyCodeLine{                \$usedTrait = \$adaptation-\/>trait;}
+\DoxyCodeLine{                \textcolor{keywordflow}{if} (\$usedTrait === \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{                    \$usedTrait = \$traitNames[0];}
+\DoxyCodeLine{                \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{                \textcolor{keywordflow}{if} (\$adaptation instanceof Node\(\backslash\)Stmt\(\backslash\)TraitUseAdaptation\(\backslash\)Alias \&\& \$adaptation-\/>newName) \{}
+\DoxyCodeLine{                    \$this-\/>cachedTraitAliases[\$adaptation-\/>newName-\/>name] = \$this-\/>methodHash(\$usedTrait-\/>toString(), \$adaptation-\/>method-\/>toString());}
+\DoxyCodeLine{                    \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{                \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{                \textcolor{keywordflow}{if} (! \$adaptation instanceof Node\(\backslash\)Stmt\(\backslash\)TraitUseAdaptation\(\backslash\)Precedence || ! \$adaptation-\/>insteadof) \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{                \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{                \textcolor{keywordflow}{foreach} (\$adaptation-\/>insteadof as \$insteadof) \{}
+\DoxyCodeLine{                    \$adaptationNameHash = \$this-\/>methodHash(\$insteadof-\/>toString(), \$adaptation-\/>method-\/>toString());}
+\DoxyCodeLine{                    \$originalNameHash   = \$this-\/>methodHash(\$usedTrait-\/>toString(), \$adaptation-\/>method-\/>toString());}
+\DoxyCodeLine{}
+\DoxyCodeLine{                    \$this-\/>cachedTraitPrecedences[\$adaptationNameHash] = \$originalNameHash;}
+\DoxyCodeLine{                \}}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} methodHash(\textcolor{keywordtype}{string} \$className, \textcolor{keywordtype}{string} \$methodName): string}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__2_8php_a6e1cb197080c320ed8a13a989e8e2691}{sprintf}}(}
+\DoxyCodeLine{            \textcolor{stringliteral}{'\%s::\%s'},}
+\DoxyCodeLine{            \$className,}
+\DoxyCodeLine{            \$methodName,}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_aacd41ad982fee4953d8ad245ab7e4ec9}{getInterfaces}}(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__8_8php_af7cdf72030b1554353cedd3c075acab5}{array\_merge}}(...\mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{            \textcolor{keyword}{static} \textcolor{keyword}{function} (\textcolor{keyword}{self} \$reflectionClass): array \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} \$reflectionClass-\/>getCurrentClassImplementedInterfacesIndexedByName();}
+\DoxyCodeLine{            \},}
+\DoxyCodeLine{            \$this-\/>getInheritanceClassHierarchy(),}
+\DoxyCodeLine{        ));}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ae0a55d6eebfe172d9711d628b87a942f}{getImmediateInterfaces}}(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ab6a35e92e903321654280f47dd7eb631}{isTrait}}()) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} [];}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \mbox{\hyperlink{standard__9_8php_a3b58d532485715ac382464bf2d212ac3}{assert}}(\$this-\/>node instanceof ClassNode || \$this-\/>node instanceof InterfaceNode);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$nodes = \$this-\/>node instanceof InterfaceNode ? \$this-\/>node-\/>extends : \$this-\/>node-\/>implements;}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_afd822dc94c700147b11caf87e16cf7eb}{array\_combine}}(}
+\DoxyCodeLine{            \mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                \textcolor{keyword}{static} \textcolor{keyword}{function} (Node\(\backslash\)Name \$interfaceName): \textcolor{keywordtype}{string} \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{return} \$interfaceName-\/>toString();}
+\DoxyCodeLine{                \},}
+\DoxyCodeLine{                \$nodes,}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{            \mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                \textcolor{keyword}{function} (Node\(\backslash\)Name \$interfaceName): \mbox{\hyperlink{class_reflection_class}{ReflectionClass}} \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{return} \$this-\/>reflectClassForNamedNode(\$interfaceName);}
+\DoxyCodeLine{                \},}
+\DoxyCodeLine{                \$nodes,}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a56fd0a925799bcab887f0d4bdbe76cf5}{getInterfaceNames}}(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__9_8php_a5f91087a5082f9084f394a31e481c553}{array\_values}}(\mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{            \textcolor{keyword}{static} \textcolor{keyword}{function} (\textcolor{keyword}{self} \$interface): \textcolor{keywordtype}{string} \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} \$interface-\/>getName();}
+\DoxyCodeLine{            \},}
+\DoxyCodeLine{            \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_aacd41ad982fee4953d8ad245ab7e4ec9}{getInterfaces}}(),}
+\DoxyCodeLine{        ));}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_aa4e191107d782a0ea7565df7c511eb56}{isInstance}}(\textcolor{keywordtype}{object} \$object): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$className = \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a3d0963e68bb313b163a73f2803c64600}{getName}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// note: since \$object was loaded, we can safely assume that \$className is available in the current}}
+\DoxyCodeLine{        \textcolor{comment}{//       php script execution context}}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$object instanceof \$className;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_aea94548dc4231c7f1fda553c1582b5b1}{isSubclassOf}}(\textcolor{keywordtype}{string} \$className): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__8_8php_af1c6680a1b7646bfaab2bc45fff33f3e}{in\_array}}(}
+\DoxyCodeLine{            \mbox{\hyperlink{standard__1_8php_a866eb086e701c4af519aa0f108e5ebfb}{ltrim}}(\$className, \textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}),}
+\DoxyCodeLine{            \mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                \textcolor{keyword}{static} \textcolor{keyword}{function} (\textcolor{keyword}{self} \$reflectionClass): \textcolor{keywordtype}{string} \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{return} \$reflectionClass-\/>getName();}
+\DoxyCodeLine{                \},}
+\DoxyCodeLine{                \mbox{\hyperlink{standard__8_8php_ad5eb206c5d32a925c7a9e22cdd68c95b}{array\_slice}}(\mbox{\hyperlink{standard__9_8php_af33e98944baee9b481acc6ee0110d089}{array\_reverse}}(\$this-\/>getInheritanceClassHierarchy()), 1),}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{            \textcolor{keyword}{true},}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a448176f12fb5b55a4c13c4ff877fa051}{implementsInterface}}(\textcolor{keywordtype}{string} \$interfaceName): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__8_8php_af1c6680a1b7646bfaab2bc45fff33f3e}{in\_array}}(\mbox{\hyperlink{standard__1_8php_a866eb086e701c4af519aa0f108e5ebfb}{ltrim}}(\$interfaceName, \textcolor{charliteral}{'\(\backslash\)\(\backslash\)'}), \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a56fd0a925799bcab887f0d4bdbe76cf5}{getInterfaceNames}}(), \textcolor{keyword}{true});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a4f9fa4895859fbbcda918bff01bdd7b8}{isInstantiable}}(): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{comment}{// @TODO doesn't consider internal non-\/instantiable classes yet.}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_acc4237def73fe195ba526291e953acec}{isAbstract}}()) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a24085f1d1916b88922901502e2b96edb}{isInterface}}()) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ab6a35e92e903321654280f47dd7eb631}{isTrait}}()) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a10d1032e08a46b4448df02d422e1121d}{getConstructor}}()-\/>isPublic();}
+\DoxyCodeLine{        \} \textcolor{keywordflow}{catch} (OutOfBoundsException \$e) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a78bdbb7eee4b228e07131e80bec3b87d}{isCloneable}}(): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a4f9fa4895859fbbcda918bff01bdd7b8}{isInstantiable}}()) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ad962225be504a56f29c75d57c82d845b}{hasMethod}}(\textcolor{stringliteral}{'\_\_clone'})) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a6f76dab2f4b28fb066de3f90f80464ec}{getMethod}}(\textcolor{stringliteral}{'\_\_clone'})-\/>isPublic();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ae0ea2567def0060ff1e9fc23f69db79e}{isIterateable}}(): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a4f9fa4895859fbbcda918bff01bdd7b8}{isInstantiable}}() \&\& \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a448176f12fb5b55a4c13c4ff877fa051}{implementsInterface}}(\mbox{\hyperlink{_nested_anonymous_class_instances_8php_aa3107c9087c19d2b948034e7274d44d8}{Traversable::class}});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} getCurrentClassImplementedInterfacesIndexedByName(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$node = \$this-\/>node;}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$node instanceof ClassNode) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__8_8php_af7cdf72030b1554353cedd3c075acab5}{array\_merge}}(}
+\DoxyCodeLine{                [],}
+\DoxyCodeLine{                ...\mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                    \textcolor{keyword}{function} (Node\(\backslash\)Name \$interfaceName): array \{}
+\DoxyCodeLine{                        \textcolor{keywordflow}{return} \$this}
+\DoxyCodeLine{                            -\/>reflectClassForNamedNode(\$interfaceName)}
+\DoxyCodeLine{                            -\/>getInterfacesHierarchy();}
+\DoxyCodeLine{                    \},}
+\DoxyCodeLine{                    \$node-\/>implements,}
+\DoxyCodeLine{                ),}
+\DoxyCodeLine{            );}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// assumption: first key is the current interface}}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a24085f1d1916b88922901502e2b96edb}{isInterface}}()}
+\DoxyCodeLine{            ? \mbox{\hyperlink{standard__8_8php_ad5eb206c5d32a925c7a9e22cdd68c95b}{array\_slice}}(\$this-\/>getInterfacesHierarchy(), 1)}
+\DoxyCodeLine{            : [];}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} getInheritanceClassHierarchy(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$parentClass = \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a0102234be653614459dc1588c13d6f2e}{getParentClass}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$parentClass}
+\DoxyCodeLine{            ? \mbox{\hyperlink{standard__8_8php_af7cdf72030b1554353cedd3c075acab5}{array\_merge}}(\$parentClass-\/>getInheritanceClassHierarchy(), [\$this])}
+\DoxyCodeLine{            : [\$this];}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} getInterfacesHierarchy(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a24085f1d1916b88922901502e2b96edb}{isInterface}}()) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_exception_1_1_not_an_interface_reflection_a77a2d479fcc28ede6f95761679f9931e}{NotAnInterfaceReflection::fromReflectionClass}}(\$this);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$node = \$this-\/>node;}
+\DoxyCodeLine{        \mbox{\hyperlink{standard__9_8php_a3b58d532485715ac382464bf2d212ac3}{assert}}(\$node instanceof InterfaceNode);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \mbox{\hyperlink{standard__8_8php_af7cdf72030b1554353cedd3c075acab5}{array\_merge}}(}
+\DoxyCodeLine{            [\$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a3d0963e68bb313b163a73f2803c64600}{getName}}() => \$this],}
+\DoxyCodeLine{            ...\mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(}
+\DoxyCodeLine{                \textcolor{keyword}{function} (Node\(\backslash\)Name \$interfaceName): array \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{return} \$this}
+\DoxyCodeLine{                        -\/>reflectClassForNamedNode(\$interfaceName)}
+\DoxyCodeLine{                        -\/>getInterfacesHierarchy();}
+\DoxyCodeLine{                \},}
+\DoxyCodeLine{                \$node-\/>extends,}
+\DoxyCodeLine{            ),}
+\DoxyCodeLine{        );}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_ad0cb87b388bc74d63dc884accdca8713}{\_\_clone}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_exception_1_1_uncloneable_a36bf55ca7690ab61a0b91446c61c9832}{Uncloneable::fromClass}}(\mbox{\hyperlink{_nested_anonymous_class_instances_8php_aa3107c9087c19d2b948034e7274d44d8}{static::class}});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a50b80e82f2561d890b64696686368e4b}{getStaticPropertyValue}}(\textcolor{keywordtype}{string} \$propertyName)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$property = \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a22f3453fc843f7acc55d6567c464617c}{getProperty}}(\$propertyName);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! \$property || ! \$property-\/>\mbox{\hyperlink{class_reflection_property_a9b2dd808ffcd764782fb11b3ea583a8d}{isStatic}}()) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_exception_1_1_property_does_not_exist_abf8fe74aba36b52247e1df0bea90b853}{PropertyDoesNotExist::fromName}}(\$propertyName);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$property-\/>\mbox{\hyperlink{class_reflection_property_ac7576c14fc42c3df9b9c01f670b493ed}{getValue}}();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_aba2f26d71add7d67e040ce9282f988ee}{setStaticPropertyValue}}(\textcolor{keywordtype}{string} \$propertyName, \$value): void}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$property = \$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a22f3453fc843f7acc55d6567c464617c}{getProperty}}(\$propertyName);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! \$property || ! \$property-\/>\mbox{\hyperlink{class_reflection_property_a9b2dd808ffcd764782fb11b3ea583a8d}{isStatic}}()) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_exception_1_1_property_does_not_exist_abf8fe74aba36b52247e1df0bea90b853}{PropertyDoesNotExist::fromName}}(\$propertyName);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$property-\/>\mbox{\hyperlink{class_reflection_property_ab83a98843d7a7ba3790d3c6be822228b}{setValue}}(\$value);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a62e6320276e62df5690ec2d38693162e}{getStaticProperties}}(): array}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$staticProperties = [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{foreach} (\$this-\/>\mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a150c0d19adf7fb85ca24f561b9dd3b40}{getProperties}}() as \$property) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} (! \$property-\/>isStatic()) \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \$staticProperties[\$property-\/>getName()] = \$property-\/>getValue();}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$staticProperties;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a1cdc0a404d5d825d8fef879baabd9230}{getAst}}(): ClassLikeNode}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>node;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a800e048ab75063952a5443cf42d2c499}{getDeclaringNamespaceAst}}(): ?Namespace\_}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>declaringNamespace;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a2e5d595f59508684f0e3b6554e87d6c4}{setFinal}}(\textcolor{keywordtype}{bool} \$isFinal): void}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (! \$this-\/>node instanceof ClassNode) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_exception_1_1_not_a_class_reflection_a77a2d479fcc28ede6f95761679f9931e}{NotAClassReflection::fromReflectionClass}}(\$this);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$isFinal === \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{            \$this-\/>node-\/>flags |= ClassNode::MODIFIER\_FINAL;}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$this-\/>node-\/>flags \&= \string~ClassNode::MODIFIER\_FINAL;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a9ee5acfa4e2603130e49d09be19f57ac}{removeMethod}}(\textcolor{keywordtype}{string} \$methodName): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$lowerName = \mbox{\hyperlink{standard__1_8php_a1b110623289b85debb6efaaff2bf722f}{strtolower}}(\$methodName);}
+\DoxyCodeLine{        \textcolor{keywordflow}{foreach} (\$this-\/>node-\/>stmts as \$key => \$stmt) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} (\$stmt instanceof ClassMethod \&\& \$lowerName === \$stmt-\/>name-\/>toLowerString()) \{}
+\DoxyCodeLine{                unset(\$this-\/>node-\/>stmts[\$key]);}
+\DoxyCodeLine{                \$this-\/>cachedMethods = \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a44f0f62b1432de8c7e61e034c95c53e2}{addMethod}}(\textcolor{keywordtype}{string} \$methodName): void}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$this-\/>node-\/>stmts[] = \textcolor{keyword}{new} ClassMethod(\$methodName);}
+\DoxyCodeLine{        \$this-\/>cachedMethods = \textcolor{keyword}{null};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_abe800e8016352b7faa95c2230837f230}{addProperty}}(}
+\DoxyCodeLine{        \textcolor{keywordtype}{string} \$propertyName,}
+\DoxyCodeLine{        \textcolor{keywordtype}{int} \$visibility = CoreReflectionProperty::IS\_PUBLIC,}
+\DoxyCodeLine{        \textcolor{keywordtype}{bool} \$static = \textcolor{keyword}{false}}
+\DoxyCodeLine{    ): void \{}
+\DoxyCodeLine{        \$type = 0;}
+\DoxyCodeLine{        \textcolor{keywordflow}{switch} (\$visibility) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} CoreReflectionProperty::IS\_PRIVATE:}
+\DoxyCodeLine{                \$type |= ClassNode::MODIFIER\_PRIVATE;}
+\DoxyCodeLine{                \textcolor{keywordflow}{break};}
+\DoxyCodeLine{            \textcolor{keywordflow}{case} CoreReflectionProperty::IS\_PROTECTED:}
+\DoxyCodeLine{                \$type |= ClassNode::MODIFIER\_PROTECTED;}
+\DoxyCodeLine{                \textcolor{keywordflow}{break};}
+\DoxyCodeLine{            \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{                \$type |= ClassNode::MODIFIER\_PUBLIC;}
+\DoxyCodeLine{                \textcolor{keywordflow}{break};}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (\$static) \{}
+\DoxyCodeLine{            \$type |= ClassNode::MODIFIER\_STATIC;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$this-\/>node-\/>stmts[]             = \textcolor{keyword}{new} PropertyNode(\$type, [\textcolor{keyword}{new} Node\(\backslash\)Stmt\(\backslash\)PropertyProperty(\$propertyName)]);}
+\DoxyCodeLine{        \$this-\/>cachedProperties          = \textcolor{keyword}{null};}
+\DoxyCodeLine{        \$this-\/>cachedImmediateProperties = \textcolor{keyword}{null};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflection_1_1_reflection_class_a4843ce1cde814802a6b6af7c22f510cc}{removeProperty}}(\textcolor{keywordtype}{string} \$propertyName): bool}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$lowerName = \mbox{\hyperlink{standard__1_8php_a1b110623289b85debb6efaaff2bf722f}{strtolower}}(\$propertyName);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{foreach} (\$this-\/>node-\/>stmts as \$key => \$stmt) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} (! (\$stmt instanceof PropertyNode)) \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \$propertyNames = \mbox{\hyperlink{standard__9_8php_a724d518ff99d21c073ec3d83bbf48ed2}{array\_map}}(\textcolor{keyword}{static} \textcolor{keyword}{function} (Node\(\backslash\)Stmt\(\backslash\)PropertyProperty \$propertyProperty): \textcolor{keywordtype}{string} \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} \$propertyProperty-\/>name-\/>toLowerString();}
+\DoxyCodeLine{            \}, \$stmt-\/>props);}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} (\mbox{\hyperlink{standard__8_8php_af1c6680a1b7646bfaab2bc45fff33f3e}{in\_array}}(\$lowerName, \$propertyNames, \textcolor{keyword}{true})) \{}
+\DoxyCodeLine{                \$this-\/>cachedProperties          = \textcolor{keyword}{null};}
+\DoxyCodeLine{                \$this-\/>cachedImmediateProperties = \textcolor{keyword}{null};}
+\DoxyCodeLine{                unset(\$this-\/>node-\/>stmts[\$key]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{                \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\end{DoxyCodeInclude}
+ 

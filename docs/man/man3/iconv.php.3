@@ -1,0 +1,473 @@
+.TH "vendor/jetbrains/phpstorm-stubs/iconv/iconv.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/iconv/iconv.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBiconv\fP ($in_charset, $out_charset, $str)"
+.br
+.ti -1c
+.RI "\fBob_iconv_handler\fP ($contents, $status)"
+.br
+.ti -1c
+.RI "\fBiconv_get_encoding\fP ($type='all')"
+.br
+.ti -1c
+.RI "\fBiconv_set_encoding\fP ($type, $charset)"
+.br
+.ti -1c
+.RI "\fBiconv_strlen\fP ($str, $charset='\fBini_get\fP('iconv\&.internal_encoding')')"
+.br
+.ti -1c
+.RI "\fBiconv_substr\fP ($str, $offset, $length='\fBiconv_strlen\fP($str, $charset)', $charset='\fBini_get\fP('iconv\&.internal_encoding')')"
+.br
+.ti -1c
+.RI "\fBiconv_strpos\fP ($haystack, $needle, $offset=0, $charset='\fBini_get\fP('iconv\&.internal_encoding')')"
+.br
+.ti -1c
+.RI "\fBiconv_strrpos\fP ($haystack, $needle, $charset='\fBini_get\fP('iconv\&.internal_encoding')')"
+.br
+.ti -1c
+.RI "\fBiconv_mime_encode\fP ($field_name, $field_value, array $preferences=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBiconv_mime_decode\fP ($encoded_header, $mode=0, $charset='\fBini_get\fP('iconv\&.internal_encoding')')"
+.br
+.ti -1c
+.RI "\fBiconv_mime_decode_headers\fP ($encoded_headers, $mode=0, $charset='\fBini_get\fP('iconv\&.internal_encoding')')"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBICONV_IMPL\fP 'glibc'"
+.br
+.ti -1c
+.RI "const \fBICONV_VERSION\fP 2\&.17"
+.br
+.ti -1c
+.RI "const \fBICONV_MIME_DECODE_STRICT\fP 1"
+.br
+.ti -1c
+.RI "const \fBICONV_MIME_DECODE_CONTINUE_ON_ERROR\fP 2"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "iconv ( $in_charset,  $out_charset,  $str)"
+Convert string to requested character encoding \fBstring $in_charset \fP The input charset\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$out_charset\fP 
+.RE
+.PP
+The output charset\&. 
+.PP
+If you append the string //TRANSLIT to \fIout_charset\fP transliteration is activated\&. This means that when a character can't be represented in the target charset, it can be approximated through one or several similarly looking characters\&. If you append the string //IGNORE, characters that cannot be represented in the target charset are silently discarded\&. Otherwise, \fIstr\fP is cut from the first illegal character and an \fBE_NOTICE\fP is generated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$str\fP 
+.RE
+.PP
+The string to be converted\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the converted string or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "iconv_get_encoding ( $type = \fC'all'\fP)"
+Retrieve internal configuration variables of iconv extension \fBstring $type [optional] \fP The value of the optional \fItype\fP can be: all input_encoding output_encoding internal_encoding 
+.PP
+\fBReturns\fP
+.RS 4
+mixed the current value of the internal configuration variable if successful or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+If \fItype\fP is omitted or set to 'all', \fBiconv_get_encoding\fP returns an array that stores all these variables\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "iconv_mime_decode ( $encoded_header,  $mode = \fC0\fP,  $charset = \fC'\fBini_get\fP('iconv\&.internal_encoding')'\fP)"
+Decodes a MIME header field \fBstring $encoded_header \fP The encoded header, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+\fImode\fP determines the behaviour in the event \fBiconv_mime_decode\fP encounters a malformed MIME header field\&. You can specify any combination of the following bitmasks\&. acceptable to \fBiconv_mime_decode\fP 
+.PP
+Value 
+.PP
+Constant 
+.PP
+Description  
+.PP
+1 
+.PP
+ICONV_MIME_DECODE_STRICT 
+.PP
+If set, the given header is decoded in full conformance with the standards defined in RFC2047\&. This option is disabled by default because there are a lot of broken mail user agents that don't follow the specification and don't produce correct MIME headers\&.   
+.PP
+2 
+.PP
+ICONV_MIME_DECODE_CONTINUE_ON_ERROR 
+.PP
+If set, \fBiconv_mime_decode_headers\fP attempts to ignore any grammatical errors and continue to process a given header\&.   
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charset\fP [optional] 
+.RE
+.PP
+The optional \fIcharset\fP parameter specifies the character set to represent the result by\&. If omitted, iconv\&.internal_encoding will be used\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false a decoded MIME field on success, or \fBFALSE\fP if an error occurs during the decoding\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "iconv_mime_decode_headers ( $encoded_headers,  $mode = \fC0\fP,  $charset = \fC'\fBini_get\fP('iconv\&.internal_encoding')'\fP)"
+Decodes multiple MIME header fields at once \fBstring $encoded_headers \fP The encoded headers, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+\fImode\fP determines the behaviour in the event \fBiconv_mime_decode_headers\fP encounters a malformed MIME header field\&. You can specify any combination of the following bitmasks\&. acceptable to \fBiconv_mime_decode_headers\fP 
+.PP
+Value 
+.PP
+Constant 
+.PP
+Description  
+.PP
+1 
+.PP
+ICONV_MIME_DECODE_STRICT 
+.PP
+If set, the given header is decoded in full conformance with the standards defined in RFC2047\&. This option is disabled by default because there are a lot of broken mail user agents that don't follow the specification and don't produce correct MIME headers\&.   
+.PP
+2 
+.PP
+ICONV_MIME_DECODE_CONTINUE_ON_ERROR 
+.PP
+If set, \fBiconv_mime_decode_headers\fP attempts to ignore any grammatical errors and continue to process a given header\&.   
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charset\fP [optional] 
+.RE
+.PP
+The optional \fIcharset\fP parameter specifies the character set to represent the result by\&. If omitted, iconv\&.internal_encoding will be used\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an associative array that holds a whole set of MIME header fields specified by \fIencoded_headers\fP on success, or \fBFALSE\fP if an error occurs during the decoding\&. 
+.RE
+.PP
+.PP
+Each key of the return value represents an individual field name and the corresponding element represents a field value\&. If more than one field of the same name are present, \fBiconv_mime_decode_headers\fP automatically incorporates them into a numerically indexed array in the order of occurrence\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "iconv_mime_encode ( $field_name,  $field_value, array $preferences = \fC\fBnull\fP\fP)"
+Composes a MIME header field \fBstring $field_name \fP The field name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_value\fP 
+.RE
+.PP
+The field value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$preferences\fP [optional] 
+.RE
+.PP
+You can control the behaviour of \fBiconv_mime_encode\fP by specifying an associative array that contains configuration items to the optional third parameter \fIpreferences\fP\&. The items supported by \fBiconv_mime_encode\fP are listed below\&. Note that item names are treated case-sensitive\&. items supported by \fBiconv_mime_encode\fP 
+.PP
+Item 
+.PP
+Type 
+.PP
+Description 
+.PP
+Default value 
+.PP
+\fBExample\fP  
+.PP
+scheme 
+.PP
+string 
+.PP
+Specifies the method to encode a field value by\&. The value of this item may be either 'B' or 'Q', where 'B' stands for base64 encoding scheme and 'Q' stands for quoted-printable encoding scheme\&.  
+.PP
+\fBB\fP 
+.PP
+\fBB\fP  
+.PP
+input-charset 
+.PP
+string 
+.PP
+Specifies the character set in which the first parameter \fIfield_name\fP and the second parameter \fIfield_value\fP are presented\&. If not given, \fBiconv_mime_encode\fP assumes those parameters are presented to it in the iconv\&.internal_encoding ini setting\&.  
+.PP
+iconv\&.internal_encoding  
+.PP
+ISO-8859-1  
+.PP
+output-charset 
+.PP
+string 
+.PP
+Specifies the character set to use to compose the MIME header\&.  
+.PP
+iconv\&.internal_encoding  
+.PP
+UTF-8  
+.PP
+line-length 
+.PP
+integer 
+.PP
+Specifies the maximum length of the header lines\&. The resulting header is 'folded' to a set of multiple lines in case the resulting header field would be longer than the value of this parameter, according to RFC2822 - Internet Message Format\&. If not given, the length will be limited to 76 characters\&.  
+.PP
+76 
+.PP
+996  
+.PP
+line-break-chars 
+.PP
+string 
+.PP
+Specifies the sequence of characters to append to each line as an end-of-line sign when 'folding' is performed on a long header field\&. If not given, this defaults to '\\r\\n' (CR LF)\&. Note that this parameter is always treated as an ASCII string regardless of the value of input-charset\&.  
+.PP
+\\r
+.br
+ 
+.PP
+
+.br
+  
+.PP
+\fBReturns\fP
+.RS 4
+string|false an encoded MIME field on success, or \fBFALSE\fP if an error occurs during the encoding\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "iconv_set_encoding ( $type,  $charset)"
+Set current setting for character encoding conversion \fBstring $type \fP The value of \fItype\fP can be any one of these: input_encoding output_encoding internal_encoding 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charset\fP 
+.RE
+.PP
+The character set\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "iconv_strlen ( $str,  $charset = \fC'\fBini_get\fP('iconv\&.internal_encoding')'\fP)"
+Returns the character count of string \fBstring $str \fP The string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charset\fP [optional] 
+.RE
+.PP
+If \fIcharset\fP parameter is omitted, \fIstr\fP is assumed to be encoded in iconv\&.internal_encoding\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the character count of \fIstr\fP, as an integer\&. False on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "iconv_strpos ( $haystack,  $needle,  $offset = \fC0\fP,  $charset = \fC'\fBini_get\fP('iconv\&.internal_encoding')'\fP)"
+Finds position of first occurrence of a needle within a haystack \fBstring $haystack \fP The entire string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+The searched substring\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+The optional \fIoffset\fP parameter specifies the position from which the search should be performed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charset\fP [optional] 
+.RE
+.PP
+If \fIcharset\fP parameter is omitted, \fIstring\fP are assumed to be encoded in iconv\&.internal_encoding\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the numeric position of the first occurrence of \fIneedle\fP in \fIhaystack\fP\&. 
+.RE
+.PP
+.PP
+If \fIneedle\fP is not found, \fBiconv_strpos\fP will return \fBFALSE\fP\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "iconv_strrpos ( $haystack,  $needle,  $charset = \fC'\fBini_get\fP('iconv\&.internal_encoding')'\fP)"
+Finds the last occurrence of a needle within a haystack \fBstring $haystack \fP The entire string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+The searched substring\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charset\fP [optional] 
+.RE
+.PP
+If \fIcharset\fP parameter is omitted, \fIstring\fP are assumed to be encoded in iconv\&.internal_encoding\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the numeric position of the last occurrence of \fIneedle\fP in \fIhaystack\fP\&. 
+.RE
+.PP
+.PP
+If \fIneedle\fP is not found, \fBiconv_strrpos\fP will return \fBFALSE\fP\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "iconv_substr ( $str,  $offset,  $length = \fC'\fBiconv_strlen\fP($str, $charset)'\fP,  $charset = \fC'\fBini_get\fP('iconv\&.internal_encoding')'\fP)"
+Cut out part of a string \fBstring $str \fP The original string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP 
+.RE
+.PP
+If \fIoffset\fP is non-negative, \fBiconv_substr\fP cuts the portion out of \fIstr\fP beginning at \fIoffset\fP'th character, counting from zero\&. 
+.PP
+If \fIoffset\fP is negative, \fBiconv_substr\fP cuts out the portion beginning at the position, \fIoffset\fP characters away from the end of \fIstr\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+If \fIlength\fP is given and is positive, the return value will contain at most \fIlength\fP characters of the portion that begins at \fIoffset\fP (depending on the length of \fIstring\fP)\&. 
+.PP
+If negative \fIlength\fP is passed, \fBiconv_substr\fP cuts the portion out of \fIstr\fP from the \fIoffset\fP'th character up to the character that is \fIlength\fP characters away from the end of the string\&. In case \fIoffset\fP is also negative, the start position is calculated beforehand according to the rule explained above\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charset\fP [optional] 
+.RE
+.PP
+If \fIcharset\fP parameter is omitted, \fIstring\fP are assumed to be encoded in iconv\&.internal_encoding\&. 
+.PP
+Note that \fIoffset\fP and \fIlength\fP parameters are always deemed to represent offsets that are calculated on the basis of the character set determined by \fIcharset\fP, whilst the counterpart \fBsubstr\fP always takes these for byte offsets\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the portion of \fIstr\fP specified by the \fIoffset\fP and \fIlength\fP parameters\&. 
+.RE
+.PP
+.PP
+If \fIstr\fP is shorter than \fIoffset\fP characters long, \fBFALSE\fP will be returned\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "ob_iconv_handler ( $contents,  $status)"
+Convert character encoding as output buffer handler \fBstring $contents  int $status  string See \fBob_start\fP for information about this handler return values\&.  4\&.0\&.5  5\&.0 \fP
+.SH "Variable Documentation"
+.PP 
+.SS "const ICONV_IMPL 'glibc'"
+string \fBhttps://php\&.net/manual/en/iconv\&.constants\&.php\fP
+.SS "const ICONV_MIME_DECODE_CONTINUE_ON_ERROR 2"
+integer \fBhttps://php\&.net/manual/en/iconv\&.constants\&.php\fP
+.SS "const ICONV_MIME_DECODE_STRICT 1"
+integer \fBhttps://php\&.net/manual/en/iconv\&.constants\&.php\fP
+.SS "const ICONV_VERSION 2\&.17"
+string \fBhttps://php\&.net/manual/en/iconv\&.constants\&.php\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

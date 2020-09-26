@@ -1,0 +1,936 @@
+.TH "vendor/jetbrains/phpstorm-stubs/zlib/zlib.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/zlib/zlib.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBreadgzfile\fP ($filename, $use_include_path=0)"
+.br
+.ti -1c
+.RI "\fBgzrewind\fP ($zp)"
+.br
+.ti -1c
+.RI "\fBgzclose\fP ($zp)"
+.br
+.ti -1c
+.RI "\fBgzeof\fP ($zp)"
+.br
+.ti -1c
+.RI "\fBgzgetc\fP ($zp)"
+.br
+.ti -1c
+.RI "\fBgzgets\fP ($zp, $length)"
+.br
+.ti -1c
+.RI "\fBgzgetss\fP ($zp, $length, $allowable_tags=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBgzread\fP ($zp, $length)"
+.br
+.ti -1c
+.RI "\fBgzopen\fP ($filename, $mode, $use_include_path=0)"
+.br
+.ti -1c
+.RI "\fBgzpassthru\fP ($zp)"
+.br
+.ti -1c
+.RI "\fBgzseek\fP ($zp, $offset, $whence=\fBSEEK_SET\fP)"
+.br
+.ti -1c
+.RI "\fBgztell\fP ($zp)"
+.br
+.ti -1c
+.RI "\fBgzwrite\fP ($zp, $string, $length=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBgzputs\fP ($fp, $str, $length)"
+.br
+.ti -1c
+.RI "\fBgzfile\fP ($filename, $use_include_path=0)"
+.br
+.ti -1c
+.RI "\fBgzcompress\fP ($data, $level=\-1, $encoding=\fBZLIB_ENCODING_DEFLATE\fP)"
+.br
+.ti -1c
+.RI "\fBgzuncompress\fP ($data, $length=0)"
+.br
+.ti -1c
+.RI "\fBgzdeflate\fP ($data, $level=\-1, $encoding=\fBZLIB_ENCODING_RAW\fP)"
+.br
+.ti -1c
+.RI "\fBgzinflate\fP ($data, $length=0)"
+.br
+.ti -1c
+.RI "\fBgzencode\fP ($data, $level=\-1, $encoding_mode=\fBFORCE_GZIP\fP)"
+.br
+.ti -1c
+.RI "\fBgzdecode\fP ($data, $length=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBzlib_encode\fP ($data, $encoding, $level)"
+.br
+.ti -1c
+.RI "\fBzlib_decode\fP ($data, $max_decoded_len=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBzlib_get_coding_type\fP ()"
+.br
+.ti -1c
+.RI "\fBob_gzhandler\fP ($buffer, $mode)"
+.br
+.ti -1c
+.RI "\fBdeflate_init\fP ($encoding, $options=array())"
+.br
+.ti -1c
+.RI "\fBdeflate_add\fP ($context, $data, $flush_mode=\fBZLIB_SYNC_FLUSH\fP)"
+.br
+.ti -1c
+.RI "\fBinflate_init\fP ($encoding, $options=array())"
+.br
+.ti -1c
+.RI "\fBinflate_add\fP ($context, $encoded_data, $flush_mode=\fBZLIB_SYNC_FLUSH\fP)"
+.br
+.ti -1c
+.RI "\fBinflate_get_read_len\fP ($context)"
+.br
+.ti -1c
+.RI "\fBinflate_get_status\fP ($context)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBFORCE_GZIP\fP 31"
+.br
+.ti -1c
+.RI "const \fBFORCE_DEFLATE\fP 15"
+.br
+.ti -1c
+.RI "const \fBZLIB_ENCODING_RAW\fP \-15"
+.br
+.ti -1c
+.RI "const \fBZLIB_ENCODING_GZIP\fP 31"
+.br
+.ti -1c
+.RI "const \fBZLIB_ENCODING_DEFLATE\fP 15"
+.br
+.ti -1c
+.RI "const \fBZLIB_NO_FLUSH\fP 0"
+.br
+.ti -1c
+.RI "const \fBZLIB_PARTIAL_FLUSH\fP 1"
+.br
+.ti -1c
+.RI "const \fBZLIB_SYNC_FLUSH\fP 2"
+.br
+.ti -1c
+.RI "const \fBZLIB_FULL_FLUSH\fP 3"
+.br
+.ti -1c
+.RI "const \fBZLIB_BLOCK\fP 5"
+.br
+.ti -1c
+.RI "const \fBZLIB_FINISH\fP 4"
+.br
+.ti -1c
+.RI "const \fBZLIB_FILTERED\fP 1"
+.br
+.ti -1c
+.RI "const \fBZLIB_HUFFMAN_ONLY\fP 2"
+.br
+.ti -1c
+.RI "const \fBZLIB_RLE\fP 3"
+.br
+.ti -1c
+.RI "const \fBZLIB_FIXED\fP 4"
+.br
+.ti -1c
+.RI "const \fBZLIB_DEFAULT_STRATEGY\fP 0"
+.br
+.ti -1c
+.RI "const \fBZLIB_OK\fP 0"
+.br
+.ti -1c
+.RI "const \fBZLIB_STREAM_END\fP 1"
+.br
+.ti -1c
+.RI "const \fBZLIB_NEED_DICT\fP 2"
+.br
+.ti -1c
+.RI "const \fBZLIB_ERRNO\fP \-1"
+.br
+.ti -1c
+.RI "const \fBZLIB_STREAM_ERROR\fP \-2"
+.br
+.ti -1c
+.RI "const \fBZLIB_DATA_ERROR\fP \-3"
+.br
+.ti -1c
+.RI "const \fBZLIB_MEM_ERROR\fP \-4"
+.br
+.ti -1c
+.RI "const \fBZLIB_BUF_ERROR\fP \-5"
+.br
+.ti -1c
+.RI "const \fBZLIB_VERSION_ERROR\fP \-6"
+.br
+.ti -1c
+.RI "const \fBZLIB_VERSION\fP 'zlib_version_string'"
+.br
+.ti -1c
+.RI "const \fBZLIB_VERNUM\fP 'zlib_version_string'"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "deflate_add ( $context,  $data,  $flush_mode = \fC\fBZLIB_SYNC_FLUSH\fP\fP)"
+Incrementally deflate data \fBresource $context \fP \fBA\fP context created with \fB\fBdeflate_init()\fP\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+\fBA\fP chunk of data to compress\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flush_mode\fP [optional] 
+.RE
+.PP
+One of \fBZLIB_BLOCK\fP, \fBZLIB_NO_FLUSH\fP, \fBZLIB_PARTIAL_FLUSH\fP, \fBZLIB_SYNC_FLUSH\fP (default), \fBZLIB_FULL_FLUSH\fP, \fBZLIB_FINISH\fP\&. Normally you will want to set \fBZLIB_NO_FLUSH\fP to maximize compression, and \fBZLIB_FINISH\fP to terminate with the last chunk of data\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false 
+.RE
+.PP
+Returns a chunk of compressed data, or \fBFALSE\fP on failure\&. 
+.PP
+\fBSince\fP
+.RS 4
+7\&.0 
+.RE
+.PP
+
+.SS "deflate_init ( $encoding,  $options = \fCarray()\fP)"
+Initialize an incremental deflate context \fBint $encoding \fP One of the \fBZLIB_ENCODING_*\fP constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP 
+.RE
+.PP
+An associative array which may contain the following elements: \fBlevel\fPThe compression level in range -1\&.\&.9; defaults to -1\&. \fBmemory\fPThe compression memory level in range 1\&.\&.9; defaults to 8\&. \fBwindow\fPThe zlib window size (logarithmic) in range 8\&.\&.15; defaults to 15\&. \fBstrategy\fPOne of \fBZLIB_FILTERED\fP, \fBZLIB_HUFFMAN_ONLY\fP, \fBZLIB_RLE\fP, \fBZLIB_FIXED\fP or \fBZLIB_DEFAULT_STRATEGY\fP (the default)\&. \fBdictionary\fP\fBA\fP string or an array of strings of the preset dictionary (default: no preset dictionary)\&.
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+Returns a deflate context resource (zlib\&.deflate) on success, or \fBFALSE\fP on failure\&. 
+.PP
+\fBSince\fP
+.RS 4
+7\&.0 
+.RE
+.PP
+
+.SS "gzclose ( $zp)"
+Close an open gz-file pointer \fBresource $zp \fP The gz-file pointer\&. It must be valid, and must point to a file successfully opened by \fBgzopen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gzcompress ( $data,  $level = \fC\-1\fP,  $encoding = \fC\fBZLIB_ENCODING_DEFLATE\fP\fP)"
+Compress a string \fBstring $data \fP The data to compress\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$level\fP [optional] 
+.RE
+.PP
+The level of compression\&. Can be given as 0 for no compression up to 9 for maximum compression\&. 
+.PP
+If -1 is used, the default compression of the zlib library is used which is 6\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP [optional] 
+.RE
+.PP
+One of \fBZLIB_ENCODING_*\fP constants\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The compressed string or \fBFALSE\fP if an error occurred\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gzdecode ( $data,  $length = \fC\fBnull\fP\fP)"
+Decodes a gzip compressed string \fBstring $data \fP The data to decode, encoded by \fBgzencode\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+The maximum length of data to decode\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The decoded string, or \fBFALSE\fP if an error occurred\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 
+.RE
+.PP
+
+.SS "gzdeflate ( $data,  $level = \fC\-1\fP,  $encoding = \fC\fBZLIB_ENCODING_RAW\fP\fP)"
+Deflate a string \fBstring $data \fP The data to deflate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$level\fP [optional] 
+.RE
+.PP
+The level of compression\&. Can be given as 0 for no compression up to 9 for maximum compression\&. If not given, the default compression level will be the default compression level of the zlib library\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP [optional] 
+.RE
+.PP
+One of \fBZLIB_ENCODING_*\fP constants\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The deflated string or \fBFALSE\fP if an error occurred\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gzencode ( $data,  $level = \fC\-1\fP,  $encoding_mode = \fC\fBFORCE_GZIP\fP\fP)"
+Create a gzip compressed string \fBstring $data \fP The data to encode\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$level\fP [optional] 
+.RE
+.PP
+The level of compression\&. Can be given as 0 for no compression up to 9 for maximum compression\&. If not given, the default compression level will be the default compression level of the zlib library\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding_mode\fP [optional] 
+.RE
+.PP
+The encoding mode\&. Can be \fBFORCE_GZIP\fP (the default) or \fBFORCE_DEFLATE\fP\&. 
+.PP
+Prior to PHP 5\&.4\&.0, using \fBFORCE_DEFLATE\fP results in a standard zlib deflated string (inclusive zlib headers) after a gzip file header but without the trailing crc32 checksum\&. 
+.PP
+In PHP 5\&.4\&.0 and later, \fBFORCE_DEFLATE\fP generates RFC 1950 compliant output, consisting of a zlib header, the deflated data, and an Adler checksum\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The encoded string, or \fBFALSE\fP if an error occurred\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gzeof ( $zp)"
+\fBTest\fP for EOF on a gz-file pointer \fBresource $zp \fP The gz-file pointer\&. It must be valid, and must point to a file successfully opened by \fBgzopen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|bool \fBTRUE\fP if the gz-file pointer is at EOF or an error occurs; otherwise returns \fBFALSE\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gzfile ( $filename,  $use_include_path = \fC0\fP)"
+Read entire gz-file into an array \fBstring $filename \fP The file name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$use_include_path\fP [optional] 
+.RE
+.PP
+You can set this optional parameter to 1, if you want to search for the file in the include_path too\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array An array containing the file, one line per cell\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gzgetc ( $zp)"
+Get character from gz-file pointer \fBresource $zp \fP The gz-file pointer\&. It must be valid, and must point to a file successfully opened by \fBgzopen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The uncompressed character or \fBFALSE\fP on EOF (unlike \fBgzeof\fP)\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gzgets ( $zp,  $length)"
+Get line from file pointer \fBresource $zp \fP The gz-file pointer\&. It must be valid, and must point to a file successfully opened by \fBgzopen\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+The length of data to get\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The uncompressed string, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gzgetss ( $zp,  $length,  $allowable_tags = \fC\fBnull\fP\fP)"
+Get line from gz-file pointer and strip HTML tags \fBresource $zp \fP The gz-file pointer\&. It must be valid, and must point to a file successfully opened by \fBgzopen\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP 
+.RE
+.PP
+The length of data to get\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$allowable_tags\fP [optional] 
+.RE
+.PP
+You can use this optional parameter to specify tags which should not be stripped\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The uncompressed and striped string, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.3 
+.RE
+.PP
+
+.SS "gzinflate ( $data,  $length = \fC0\fP)"
+Inflate a deflated string \fBstring $data \fP The data compressed by \fBgzdeflate\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+The maximum length of data to decode\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The original uncompressed data or \fBFALSE\fP on error\&. 
+.RE
+.PP
+.PP
+The function will return an error if the uncompressed data is more than 32768 times the length of the compressed input \fIdata\fP or more than the optional parameter \fIlength\fP\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gzopen ( $filename,  $mode,  $use_include_path = \fC0\fP)"
+Open gz-file \fBstring $filename \fP The file name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+As in \fBfopen\fP (rb or wb) but can also include a compression level (wb9) or a strategy: f for filtered data as in wb6f, h for Huffman only compression as in wb1h\&. (See the description of deflateInit2 in zlib\&.h for more information about the strategy parameter\&.) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$use_include_path\fP [optional] 
+.RE
+.PP
+You can set this optional parameter to 1, if you want to search for the file in the include_path too\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a file pointer to the file opened, after that, everything you read from this file descriptor will be transparently decompressed and what you write gets compressed\&. 
+.RE
+.PP
+.PP
+If the open fails, the function returns \fBFALSE\fP\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gzpassthru ( $zp)"
+Output all remaining data on a gz-file pointer \fBresource $zp \fP The gz-file pointer\&. It must be valid, and must point to a file successfully opened by \fBgzopen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The number of uncompressed characters read from \fIgz\fP and passed through to the input, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gzputs ( $fp,  $str,  $length)"
+Alias of \fBgzwrite\fP \fB$fp  $str  $length [optional]  4\&.0  5\&.0 \fP
+.SS "gzread ( $zp,  $length)"
+Binary-safe gz-file read \fBresource $zp \fP The gz-file pointer\&. It must be valid, and must point to a file successfully opened by \fBgzopen\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP 
+.RE
+.PP
+The number of bytes to read\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The data that have been read\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gzrewind ( $zp)"
+Rewind the position of a gz-file pointer \fBresource $zp \fP The gz-file pointer\&. It must be valid, and must point to a file successfully opened by \fBgzopen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gzseek ( $zp,  $offset,  $whence = \fC\fBSEEK_SET\fP\fP)"
+Seek on a gz-file pointer \fBresource $zp \fP The gz-file pointer\&. It must be valid, and must point to a file successfully opened by \fBgzopen\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP 
+.RE
+.PP
+The seeked offset\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$whence\fP [optional] 
+.RE
+.PP
+\fIwhence\fP values are: \fBSEEK_SET\fP - Set position equal to \fIoffset\fP bytes\&. \fBSEEK_CUR\fP - Set position to current location plus \fIoffset\fP\&. 
+.PP
+If \fIwhence\fP is not specified, it is assumed to be \fBSEEK_SET\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int Upon success, returns 0; otherwise, returns -1\&. Note that seeking past EOF is not considered an error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gztell ( $zp)"
+Tell gz-file pointer read/write position \fBresource $zp \fP The gz-file pointer\&. It must be valid, and must point to a file successfully opened by \fBgzopen\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false The position of the file pointer or \fBFALSE\fP if an error occurs\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gzuncompress ( $data,  $length = \fC0\fP)"
+Uncompress a compressed string \fBstring $data \fP The data compressed by \fBgzcompress\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+The maximum length of data to decode\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The original uncompressed data or \fBFALSE\fP on error\&. 
+.RE
+.PP
+.PP
+The function will return an error if the uncompressed data is more than 32768 times the length of the compressed input \fIdata\fP or more than the optional parameter \fIlength\fP\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "gzwrite ( $zp,  $string,  $length = \fC\fBnull\fP\fP)"
+Binary-safe gz-file write \fBresource $zp \fP The gz-file pointer\&. It must be valid, and must point to a file successfully opened by \fBgzopen\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$string\fP 
+.RE
+.PP
+The string to write\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+The number of uncompressed bytes to write\&. If supplied, writing will stop after \fIlength\fP (uncompressed) bytes have been written or the end of \fIstring\fP is reached, whichever comes first\&. 
+.PP
+Note that if the \fIlength\fP argument is given, then the magic_quotes_runtime configuration option will be ignored and no slashes will be stripped from \fIstring\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of (uncompressed) bytes written to the given gz-file stream\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "inflate_add ( $context,  $encoded_data,  $flush_mode = \fC\fBZLIB_SYNC_FLUSH\fP\fP)"
+Incrementally inflate data \fBresource $context \fP \fBA\fP context created with \fB\fBinflate_init()\fP\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoded_data\fP 
+.RE
+.PP
+\fBA\fP chunk of compressed data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flush_mode\fP [optional] 
+.RE
+.PP
+One of \fBZLIB_BLOCK\fP, \fBZLIB_NO_FLUSH\fP, \fBZLIB_PARTIAL_FLUSH\fP, \fBZLIB_SYNC_FLUSH\fP (default), \fBZLIB_FULL_FLUSH\fP, \fBZLIB_FINISH\fP\&. Normally you will want to set \fBZLIB_NO_FLUSH\fP to maximize compression, and \fBZLIB_FINISH\fP to terminate with the last chunk of data\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false 
+.RE
+.PP
+Returns a chunk of uncompressed data, or \fBFALSE\fP on failure\&. 
+.PP
+\fBSince\fP
+.RS 4
+7\&.0 
+.RE
+.PP
+
+.SS "inflate_get_read_len ( $context)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "inflate_get_status ( $context)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "inflate_init ( $encoding,  $options = \fCarray()\fP)"
+Initialize an incremental inflate context \fB$encoding \fP One of the ZLIB_ENCODING_* constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+An associative array which may contain the following elements: \fBlevel\fPThe compression level in range -1\&.\&.9; defaults to -1\&. \fBmemory\fPThe compression memory level in range 1\&.\&.9; defaults to 8\&. \fBwindow\fPThe zlib window size (logarithmic) in range 8\&.\&.15; defaults to 15\&. \fBstrategy\fPOne of \fBZLIB_FILTERED\fP, \fBZLIB_HUFFMAN_ONLY\fP, \fBZLIB_RLE\fP, \fBZLIB_FIXED\fP or \fBZLIB_DEFAULT_STRATEGY\fP (the default)\&. \fBdictionary\fP\fBA\fP string or an array of strings of the preset dictionary (default: no preset dictionary)\&.
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+Returns an inflate context resource (zlib\&.inflate) on success, or \fBFALSE\fP on failure\&. 
+.PP
+\fBSince\fP
+.RS 4
+7\&.0 
+.RE
+.PP
+
+.SS "ob_gzhandler ( $buffer,  $mode)"
+ob_start callback function to gzip output buffer \fBstring $buffer  int $mode  string  4\&.0\&.4  5\&.0 \fP
+.SS "readgzfile ( $filename,  $use_include_path = \fC0\fP)"
+Output a gz-file \fBstring $filename \fP The file name\&. This file will be opened from the filesystem and its contents written to standard output\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$use_include_path\fP [optional] 
+.RE
+.PP
+You can set this optional parameter to 1, if you want to search for the file in the include_path too\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of (uncompressed) bytes read from the file\&. If an error occurs, \fBFALSE\fP is returned and unless the function was called as @readgzfile, an error message is printed\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "zlib_decode ( $data,  $max_decoded_len = \fC\fBnull\fP\fP)"
+Uncompress any raw/gzip/zlib encoded data \fBstring $data \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$max_decoded_len\fP [optional] 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 
+.RE
+.PP
+
+.SS "zlib_encode ( $data,  $encoding,  $level)"
+Compress data with the specified encoding \fBstring $data \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$level\fP [optional] default -1 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 
+.RE
+.PP
+
+.SS "zlib_get_coding_type ()"
+Returns the coding type used for output compression \fBstring Possible return values are gzip, deflate, or \fBFALSE\fP\&.  4\&.3\&.2  5\&.0 \fP
+.SH "Variable Documentation"
+.PP 
+.SS "const FORCE_DEFLATE 15"
+
+.SS "const FORCE_GZIP 31"
+
+.SS "const ZLIB_BLOCK 5"
+
+.SS "const ZLIB_BUF_ERROR \-5"
+
+.SS "const ZLIB_DATA_ERROR \-3"
+
+.SS "const ZLIB_DEFAULT_STRATEGY 0"
+
+.SS "const ZLIB_ENCODING_DEFLATE 15"
+\fBhttps://php\&.net/manual/en/zlib\&.constants\&.php\fP
+.SS "const ZLIB_ENCODING_GZIP 31"
+\fBhttps://php\&.net/manual/en/zlib\&.constants\&.php\fP
+.SS "const ZLIB_ENCODING_RAW \-15"
+\fBhttps://php\&.net/manual/en/zlib\&.constants\&.php\fP
+.SS "const ZLIB_ERRNO \-1"
+
+.SS "const ZLIB_FILTERED 1"
+
+.SS "const ZLIB_FINISH 4"
+
+.SS "const ZLIB_FIXED 4"
+
+.SS "const ZLIB_FULL_FLUSH 3"
+
+.SS "const ZLIB_HUFFMAN_ONLY 2"
+
+.SS "const ZLIB_MEM_ERROR \-4"
+
+.SS "const ZLIB_NEED_DICT 2"
+
+.SS "const ZLIB_NO_FLUSH 0"
+
+.SS "const ZLIB_OK 0"
+
+.SS "const ZLIB_PARTIAL_FLUSH 1"
+
+.SS "const ZLIB_RLE 3"
+
+.SS "const ZLIB_STREAM_END 1"
+
+.SS "const ZLIB_STREAM_ERROR \-2"
+
+.SS "const ZLIB_SYNC_FLUSH 2"
+
+.SS "const ZLIB_VERNUM 'zlib_version_string'"
+
+.SS "const ZLIB_VERSION 'zlib_version_string'"
+
+.SS "const ZLIB_VERSION_ERROR \-6"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,189 @@
+.TH "vendor/jetbrains/phpstorm-stubs/amqp/amqp.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/amqp/amqp.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBAMQPBasicProperties\fP"
+.br
+.ti -1c
+.RI "class \fBAMQPChannel\fP"
+.br
+.ti -1c
+.RI "class \fBAMQPChannelException\fP"
+.br
+.ti -1c
+.RI "class \fBAMQPConnection\fP"
+.br
+.ti -1c
+.RI "class \fBAMQPConnectionException\fP"
+.br
+.ti -1c
+.RI "class \fBAMQPDecimal\fP"
+.br
+.ti -1c
+.RI "class \fBAMQPEnvelope\fP"
+.br
+.ti -1c
+.RI "class \fBAMQPEnvelopeException\fP"
+.br
+.ti -1c
+.RI "class \fBAMQPException\fP"
+.br
+.ti -1c
+.RI "class \fBAMQPExchange\fP"
+.br
+.ti -1c
+.RI "class \fBAMQPExchangeException\fP"
+.br
+.ti -1c
+.RI "class \fBAMQPQueue\fP"
+.br
+.ti -1c
+.RI "class \fBAMQPQueueException\fP"
+.br
+.ti -1c
+.RI "class \fBAMQPTimestamp\fP"
+.br
+.ti -1c
+.RI "class \fBAMQPExchangeValue\fP"
+.br
+.ti -1c
+.RI "class \fBAMQPValueException\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBAMQP_NOPARAM\fP 0"
+.br
+.ti -1c
+.RI "const \fBAMQP_JUST_CONSUME\fP 1"
+.br
+.ti -1c
+.RI "const \fBAMQP_DURABLE\fP 2"
+.br
+.ti -1c
+.RI "const \fBAMQP_PASSIVE\fP 4"
+.br
+.ti -1c
+.RI "const \fBAMQP_EXCLUSIVE\fP 8"
+.br
+.ti -1c
+.RI "const \fBAMQP_AUTODELETE\fP 16"
+.br
+.ti -1c
+.RI "const \fBAMQP_INTERNAL\fP 32"
+.br
+.ti -1c
+.RI "const \fBAMQP_NOLOCAL\fP 64"
+.br
+.ti -1c
+.RI "const \fBAMQP_AUTOACK\fP 128"
+.br
+.ti -1c
+.RI "const \fBAMQP_IFEMPTY\fP 256"
+.br
+.ti -1c
+.RI "const \fBAMQP_IFUNUSED\fP 512"
+.br
+.ti -1c
+.RI "const \fBAMQP_MANDATORY\fP 1024"
+.br
+.ti -1c
+.RI "const \fBAMQP_IMMEDIATE\fP 2048"
+.br
+.ti -1c
+.RI "const \fBAMQP_MULTIPLE\fP 4096"
+.br
+.ti -1c
+.RI "const \fBAMQP_NOWAIT\fP 8192"
+.br
+.ti -1c
+.RI "const \fBAMQP_REQUEUE\fP 16384"
+.br
+.ti -1c
+.RI "const \fBAMQP_EX_TYPE_DIRECT\fP 'direct'"
+.br
+.ti -1c
+.RI "const \fBAMQP_EX_TYPE_FANOUT\fP 'fanout'"
+.br
+.ti -1c
+.RI "const \fBAMQP_EX_TYPE_TOPIC\fP 'topic'"
+.br
+.ti -1c
+.RI "const \fBAMQP_EX_TYPE_HEADERS\fP 'headers'"
+.br
+.ti -1c
+.RI "const \fBAMQP_OS_SOCKET_TIMEOUT_ERRNO\fP 536870923"
+.br
+.ti -1c
+.RI "const \fBPHP_AMQP_MAX_CHANNELS\fP 256"
+.br
+.ti -1c
+.RI "const \fBAMQP_SASL_METHOD_PLAIN\fP 0"
+.br
+.ti -1c
+.RI "const \fBAMQP_SASL_METHOD_EXTERNAL\fP 1"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "const AMQP_AUTOACK 128"
+When passed to the \fBAMQPQueue::get()\fP and \fBAMQPQueue::consume()\fP methods as a flag, the messages will be immediately marked as acknowledged by the server upon delivery\&. 
+.SS "const AMQP_AUTODELETE 16"
+For exchanges, the auto delete flag indicates that the exchange will be deleted as soon as no more queues are bound to it\&. If no queues were ever bound the exchange, the exchange will never be deleted\&. For queues, the auto delete flag indicates that the queue will be deleted as soon as there are no more listeners subscribed to it\&. If no subscription has ever been active, the queue will never be deleted\&. Note: Exclusive queues will always be automatically deleted with the client disconnects\&. 
+.SS "const AMQP_DURABLE 2"
+Durable exchanges and queues will survive a broker restart, complete with all of their data\&. 
+.SS "const AMQP_EX_TYPE_DIRECT 'direct'"
+\fBA\fP direct exchange type\&. 
+.SS "const AMQP_EX_TYPE_FANOUT 'fanout'"
+\fBA\fP fanout exchange type\&. 
+.SS "const AMQP_EX_TYPE_HEADERS 'headers'"
+\fBA\fP header exchange type\&. 
+.SS "const AMQP_EX_TYPE_TOPIC 'topic'"
+\fBA\fP topic exchange type\&. 
+.SS "const AMQP_EXCLUSIVE 8"
+Valid for queues only, this flag indicates that only one client can be listening to and consuming from this queue\&. 
+.SS "const AMQP_IFEMPTY 256"
+Passed on queue creation, this flag indicates that the queue should be deleted if it becomes empty\&. 
+.SS "const AMQP_IFUNUSED 512"
+Passed on queue or exchange creation, this flag indicates that the queue or exchange should be deleted when no clients are connected to the given queue or exchange\&. 
+.SS "const AMQP_IMMEDIATE 2048"
+When publishing a message, mark this message for immediate processing by the broker\&. (High priority message\&.) 
+.SS "const AMQP_INTERNAL 32"
+Clients are not allowed to make specific queue bindings to exchanges defined with this flag\&. 
+.SS "const AMQP_JUST_CONSUME 1"
+Passing in this constant as a flag to proper methods will forcefully ignore all other flags\&. Do not send basic\&.consume request during \fBAMQPQueue::consume()\fP\&. Use this if you want to run callback on top of previously declared consumers\&. 
+.SS "const AMQP_MANDATORY 1024"
+When publishing a message, the message must be routed to a valid queue\&. If it is not, an error will be returned\&. 
+.SS "const AMQP_MULTIPLE 4096"
+If set during a call to \fBAMQPQueue::ack()\fP, the delivery tag is treated as 'up to and including', so that multiple messages can be acknowledged with a single method\&. If set to zero, the delivery tag refers to a single message\&. If the AMQP_MULTIPLE flag is set, and the delivery tag is zero, this indicates acknowledgement of all outstanding messages\&. 
+.SS "const AMQP_NOLOCAL 64"
+When passed to the consume method for a clustered environment, do not consume from the local node\&. 
+.SS "const AMQP_NOPARAM 0"
+Stubs for AMQP https://pecl.php.net/package/amqp https://github.com/pdezwart/php-amqp Passing in this constant as a flag will forcefully disable all other flags\&. Use this if you want to temporarily disable the amqp\&.auto_ack ini setting\&. 
+.SS "const AMQP_NOWAIT 8192"
+If set during a call to \fBAMQPExchange::bind()\fP, the server will not respond to the method\&.The client should not wait for a reply method\&. If the server could not complete the method it will raise a channel or connection exception\&. 
+.SS "const AMQP_OS_SOCKET_TIMEOUT_ERRNO 536870923"
+
+.SS "const AMQP_PASSIVE 4"
+Passive exchanges and queues will not be redeclared, but the broker will throw an error if the exchange or queue does not exist\&. 
+.SS "const AMQP_REQUEUE 16384"
+If set during a call to \fBAMQPQueue::nack()\fP, the message will be placed back to the queue\&. 
+.SS "const AMQP_SASL_METHOD_EXTERNAL 1"
+
+.SS "const AMQP_SASL_METHOD_PLAIN 0"
+
+.SS "const PHP_AMQP_MAX_CHANNELS 256"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,953 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\comment begin body}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+vendor/jetbrains/phpstorm-stubs/apcu/apcu.php File Reference\par \pard\plain 
+{\tc\tcl2 \v vendor/jetbrains/phpstorm-stubs/apcu/apcu.php}
+{\xe \v vendor/jetbrains/phpstorm-stubs/apcu/apcu.php}
+{\bkmkstart AAAAAAABAY}
+{\bkmkend AAAAAAABAY}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Structures\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b APCIterator}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b APCUIterator}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_cache_info} ($type='', $limited={\b false})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_clear_cache} ($cache_type='')\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_sma_info} ($limited={\b false})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_store} (${\b key}, $var, $ttl=0)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_fetch} (${\b key}, &$success={\b null})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_delete} (${\b key})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_define_constants} (${\b key}, array $constants, $case_sensitive={\b true})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_add} (${\b key}, $var, $ttl=0)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_compile_file} ($filename, $atomic={\b true})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_load_constants} (${\b key}, $case_sensitive={\b true})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_exists} ($keys)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_delete_file} ($keys)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_inc} (${\b key}, $step=1, &$success={\b null})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_dec} (${\b key}, $step=1, &$success={\b null})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_cas} (${\b key}, $old, $new)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_bin_dump} ($files={\b null}, $user_vars={\b null})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_bin_dumpfile} ($files, $user_vars, $filename, $flags=0, $context={\b null})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_bin_load} ($data, $flags=0)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apc_bin_loadfile} ($filename, $context={\b null}, $flags=0)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apcu_clear_cache} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apcu_sma_info} ($limited={\b false})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apcu_store} (${\b key}, $var, $ttl=0)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apcu_fetch} (${\b key}, &$success={\b null})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apcu_delete} (${\b key})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apcu_add} (${\b key}, $var, $ttl=0)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apcu_exists} ($keys)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apcu_inc} (${\b key}, $step=1, &$success={\b null})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apcu_dec} (${\b key}, $step=1, &$success={\b null})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apcu_cas} (${\b key}, $old, $new)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apcu_entry} (${\b key}, callable $generator, $ttl=0)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b apcu_cache_info} ($limited={\b false})\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_BIN_VERIFY_MD5} 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_BIN_VERIFY_CRC32} 2\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_LIST_ACTIVE} 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_LIST_DELETED} 2\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_TYPE} 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_KEY} 2\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_FILENAME} 4\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_DEVICE} 8\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_INODE} 16\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_VALUE} 32\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_MD5} 64\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_NUM_HITS} 128\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_MTIME} 256\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_CTIME} 512\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_DTIME} 1024\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_ATIME} 2048\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_REFCOUNT} 4096\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_MEM_SIZE} 8192\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_TTL} 16384\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_NONE} 0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b APC_ITER_ALL} -1\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v apc_add\:apcu.php}
+{\xe \v apcu.php\:apc_add}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_add (  {\i $key},   {\i $var},   {\i $ttl} = {\f2 0})}}
+\par
+{\bkmkstart AAAAAAABAZ}
+{\bkmkend AAAAAAABAZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Caches a variable in the data store, only if it's not already stored {\b string $key Store the variable using this name. Keys are cache-unique, so attempting to use apc_add() to store data with a key that already exists will not overwrite the existing data, and will instead return FALSE. (This is the only difference between apc_add() and apc_store().)  mixed $var The variable to store  int $ttl Time To Live; store var in the cache for ttl seconds. After the ttl has passed, the stored variable will be expunged from the cache (on the next request). If no ttl is supplied (or if the ttl is 0), the value will persist until it is removed from the cache manually, or otherwise fails to exist in the cache (clear, restart, etc.).  bool }\par
+}}
+{\xe \v apc_bin_dump\:apcu.php}
+{\xe \v apcu.php\:apc_bin_dump}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_bin_dump (  {\i $files} = {\f2 {\b null}},   {\i $user_vars} = {\f2 {\b null}})}}
+\par
+{\bkmkstart AAAAAAABBA}
+{\bkmkend AAAAAAABBA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns a binary dump of the given files and user variables from the APC cache\par
+{\b A} NULL for files or user_vars signals a dump of every entry, while array() will dump nothing.\par
+{\b string[]|null $files The files. Passing in NULL signals a dump of every entry, while passing in array() will dump nothing.  string[]|null $user_vars The user vars. Passing in NULL signals a dump of every entry, while passing in array() will dump nothing.  string|bool|null Returns a binary dump of the given files and user variables from the APC cache, FALSE if APC is not enabled, or NULL if an unknown error is encountered. }\par
+}}
+{\xe \v apc_bin_dumpfile\:apcu.php}
+{\xe \v apcu.php\:apc_bin_dumpfile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_bin_dumpfile (  {\i $files},   {\i $user_vars},   {\i $filename},   {\i $flags} = {\f2 0},   {\i $context} = {\f2 {\b null}})}}
+\par
+{\bkmkstart AAAAAAABBB}
+{\bkmkend AAAAAAABBB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Output a binary dump of the given files and user variables from the APC cache to the named file {\b string[]|null $files The file names being dumped.  string[]|null $user_vars The user variables being dumped.  string $filename The filename where the dump is being saved.  int $flags Flags passed to the filename stream. See the file_put_contents() documentation for details.  resource $context The context passed to the filename stream. See the file_put_contents() documentation for details.  int|bool The number of bytes written to the file, otherwise FALSE if APC is not enabled, filename is an invalid file name, filename can't be opened, the file dump can't be completed (e.g., the hard drive is out of disk space), or an unknown error was encountered. }\par
+}}
+{\xe \v apc_bin_load\:apcu.php}
+{\xe \v apcu.php\:apc_bin_load}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_bin_load (  {\i $data},   {\i $flags} = {\f2 0})}}
+\par
+{\bkmkstart AAAAAAABBC}
+{\bkmkend AAAAAAABBC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Load the given binary dump into the APC file/user cache {\b string $data The binary dump being loaded, likely from apc_bin_dump().  int $flags Either APC_BIN_VERIFY_CRC32, APC_BIN_VERIFY_MD5, or both.  bool Returns TRUE if the binary dump data was loaded with success, otherwise FALSE is returned. FALSE is returned if APC is not enabled, or if the data is not a valid APC binary dump (e.g., unexpected size). }\par
+}}
+{\xe \v apc_bin_loadfile\:apcu.php}
+{\xe \v apcu.php\:apc_bin_loadfile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_bin_loadfile (  {\i $filename},   {\i $context} = {\f2 {\b null}},   {\i $flags} = {\f2 0})}}
+\par
+{\bkmkstart AAAAAAABBD}
+{\bkmkend AAAAAAABBD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Load the given binary dump from the named file into the APC file/user cache {\b string $filename The file name containing the dump, likely from apc_bin_dumpfile().  resource $context The files context.  int $flags Either APC_BIN_VERIFY_CRC32, APC_BIN_VERIFY_MD5, or both.  bool Returns TRUE on success, otherwise FALSE Reasons it may return FALSE include APC is not enabled, filename is an invalid file name or empty, filename can't be opened, the file dump can't be completed, or if the data is not a valid APC binary dump (e.g., unexpected size). }\par
+}}
+{\xe \v apc_cache_info\:apcu.php}
+{\xe \v apcu.php\:apc_cache_info}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_cache_info (  {\i $type} = {\f2 ''},   {\i $limited} = {\f2 {\b false}})}}
+\par
+{\bkmkstart AAAAAAABBE}
+{\bkmkend AAAAAAABBE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Retrieves cached information and meta-data from APC's data store {\b string $type If cache_type is "user", information about the user cache will be returned. If cache_type is "filehits", information about which files have been served from the bytecode cache for the current request will be returned. This feature must be enabled at compile time using \'96enable-filehits. If an invalid or no cache_type is specified, information about the system cache (cached files) will be returned.  bool $limited If limited is TRUE, the return value will exclude the individual list of cache entries. This is useful when trying to optimize calls for statistics gathering.  array|bool Array of cached data (and meta-data) or FALSE on failure. }\par
+}}
+{\xe \v apc_cas\:apcu.php}
+{\xe \v apcu.php\:apc_cas}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_cas (  {\i $key},   {\i $old},   {\i $new})}}
+\par
+{\bkmkstart AAAAAAABBF}
+{\bkmkend AAAAAAABBF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b string $key  int $old  int $new  bool }\par
+}}
+{\xe \v apc_clear_cache\:apcu.php}
+{\xe \v apcu.php\:apc_clear_cache}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_clear_cache (  {\i $cache_type} = {\f2 ''})}}
+\par
+{\bkmkstart AAAAAAABBG}
+{\bkmkend AAAAAAABBG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Clears the APC cache {\b string $cache_type If cache_type is "user", the user cache will be cleared; otherwise, the system cache (cached files) will be cleared.  bool Returns TRUE on success or FALSE on failure. }\par
+}}
+{\xe \v apc_compile_file\:apcu.php}
+{\xe \v apcu.php\:apc_compile_file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_compile_file (  {\i $filename},   {\i $atomic} = {\f2 {\b true}})}}
+\par
+{\bkmkstart AAAAAAABBH}
+{\bkmkend AAAAAAABBH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Stores a file in the bytecode cache, bypassing all filters {\b string|string[] $filename Full or relative path to a PHP file that will be compiled and stored in the bytecode cache.  bool $atomic  bool Returns TRUE on success or FALSE on failure. }\par
+}}
+{\xe \v apc_dec\:apcu.php}
+{\xe \v apcu.php\:apc_dec}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_dec (  {\i $key},   {\i $step} = {\f2 1}, &  {\i $success} = {\f2 {\b null}})}}
+\par
+{\bkmkstart AAAAAAABBI}
+{\bkmkend AAAAAAABBI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Decrease a stored number {\b string $key The key of the value being decreased.  int $step The step, or value to decrease.  bool $success Optionally pass the success or fail boolean value to this referenced variable.  int|bool Returns the current value of key's value on success, or FALSE on failure. }\par
+}}
+{\xe \v apc_define_constants\:apcu.php}
+{\xe \v apcu.php\:apc_define_constants}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_define_constants (  {\i $key}, array  {\i $constants},   {\i $case_sensitive} = {\f2 {\b true}})}}
+\par
+{\bkmkstart AAAAAAABBJ}
+{\bkmkend AAAAAAABBJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Defines a set of constants for retrieval and mass-definition\par
+{\b define()} is notoriously slow. Since the main benefit of APC is to increase the performance of scripts/applications, this mechanism is provided to streamline the process of mass constant definition. However, this function does not perform as well as anticipated. For a better-performing solution, try the hidef extension from PECL.\par
+{\b string $key The key serves as the name of the constant set being stored. This key is used to retrieve the stored constants in apc_load_constants().  array $constants An associative array of constant_name => value pairs. The constant_name must follow the normal constant naming rules. Value must evaluate to a scalar value.  bool $case_sensitive The default behaviour for constants is to be declared case-sensitive; i.e. CONSTANT and Constant represent different values. If this parameter evaluates to FALSE the constants will be declared as case-insensitive symbols.  bool Returns TRUE on success or FALSE on failure. }\par
+}}
+{\xe \v apc_delete\:apcu.php}
+{\xe \v apcu.php\:apc_delete}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_delete (  {\i $key})}}
+\par
+{\bkmkstart AAAAAAABBK}
+{\bkmkend AAAAAAABBK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Removes a stored variable from the cache {\b string|string[]|APCIterator $key The key used to store the value (with apc_store()).  bool|string[] Returns TRUE on success or FALSE on failure. For array of keys returns list of failed keys. }\par
+}}
+{\xe \v apc_delete_file\:apcu.php}
+{\xe \v apcu.php\:apc_delete_file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_delete_file (  {\i $keys})}}
+\par
+{\bkmkstart AAAAAAABBL}
+{\bkmkend AAAAAAABBL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Deletes the given files from the opcode cache\par
+Accepts a string, array of strings, or {\b APCIterator} object. Returns True/False, or for an Array an Array of failed files.\par
+{\b string|string[]|APCIterator $keys  bool|string[] }\par
+}}
+{\xe \v apc_exists\:apcu.php}
+{\xe \v apcu.php\:apc_exists}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_exists (  {\i $keys})}}
+\par
+{\bkmkstart AAAAAAABBM}
+{\bkmkend AAAAAAABBM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Checks if APC key exists {\b bool|string[] $keys A string, or an array of strings, that contain keys.  bool|string[] Returns TRUE if the key exists, otherwise FALSE Or if an array was passed to keys, then an array is returned that contains all existing keys, or an empty array if none exist. }\par
+}}
+{\xe \v apc_fetch\:apcu.php}
+{\xe \v apcu.php\:apc_fetch}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_fetch (  {\i $key}, &  {\i $success} = {\f2 {\b null}})}}
+\par
+{\bkmkstart AAAAAAABBN}
+{\bkmkend AAAAAAABBN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Fetch a stored variable from the cache {\b string|string[] $key The key used to store the value (with apc_store()). If an array is passed then each element is fetched and returned.  bool $success Set to TRUE in success and FALSE in failure.  mixed The stored variable or array of variables on success; FALSE on failure. }\par
+}}
+{\xe \v apc_inc\:apcu.php}
+{\xe \v apcu.php\:apc_inc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_inc (  {\i $key},   {\i $step} = {\f2 1}, &  {\i $success} = {\f2 {\b null}})}}
+\par
+{\bkmkstart AAAAAAABBO}
+{\bkmkend AAAAAAABBO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Increase a stored number {\b string $key The key of the value being increased.  int $step The step, or value to increase.  bool $success Optionally pass the success or fail boolean value to this referenced variable.  int|bool Returns the current value of key's value on success, or FALSE on failure. }\par
+}}
+{\xe \v apc_load_constants\:apcu.php}
+{\xe \v apcu.php\:apc_load_constants}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_load_constants (  {\i $key},   {\i $case_sensitive} = {\f2 {\b true}})}}
+\par
+{\bkmkstart AAAAAAABBP}
+{\bkmkend AAAAAAABBP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Loads a set of constants from the cache {\b string $key The name of the constant set (that was stored with apc_define_constants()) to be retrieved.  bool $case_sensitive The default behaviour for constants is to be declared case-sensitive; i.e. CONSTANT and Constant represent different values. If this parameter evaluates to FALSE the constants will be declared as case-insensitive symbols.  bool Returns TRUE on success or FALSE on failure. }\par
+}}
+{\xe \v apc_sma_info\:apcu.php}
+{\xe \v apcu.php\:apc_sma_info}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_sma_info (  {\i $limited} = {\f2 {\b false}})}}
+\par
+{\bkmkstart AAAAAAABBQ}
+{\bkmkend AAAAAAABBQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Retrieves APC's Shared Memory Allocation information {\b bool $limited When set to FALSE (default) apc_sma_info() will return a detailed information about each segment.  array|bool Array of Shared Memory Allocation data; FALSE on failure. }\par
+}}
+{\xe \v apc_store\:apcu.php}
+{\xe \v apcu.php\:apc_store}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apc_store (  {\i $key},   {\i $var},   {\i $ttl} = {\f2 0})}}
+\par
+{\bkmkstart AAAAAAABBR}
+{\bkmkend AAAAAAABBR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cache a variable in the data store {\b string|array $key String: Store the variable using this name. Keys are cache-unique, so storing a second value with the same key will overwrite the original value. Array: Names in key, variables in value.  mixed $var [optional] The variable to store  int $ttl [optional] Time To Live; store var in the cache for ttl seconds. After the ttl has passed, the stored variable will be expunged from the cache (on the next request). If no ttl is supplied (or if the ttl is 0), the value will persist until it is removed from the cache manually, or otherwise fails to exist in the cache (clear, restart, etc.).  bool|array Returns TRUE on success or FALSE on failure | array with error keys. }\par
+}}
+{\xe \v apcu_add\:apcu.php}
+{\xe \v apcu.php\:apcu_add}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apcu_add (  {\i $key},   {\i $var},   {\i $ttl} = {\f2 0})}}
+\par
+{\bkmkstart AAAAAAABBS}
+{\bkmkend AAAAAAABBS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Caches a variable in the data store, only if it's not already stored {\b string|array $key Store the variable using this name. Keys are cache-unique, so attempting to use apcu_add() to store data with a key that already exists will not overwrite the existing data, and will instead return FALSE. (This is the only difference between apcu_add() and apcu_store().) Array: Names in key, variables in value.  mixed $var The variable to store  int $ttl Time To Live; store var in the cache for ttl seconds. After the ttl has passed, the stored variable will be expunged from the cache (on the next request). If no ttl is supplied (or if the ttl is 0), the value will persist until it is removed from the cache manually, or otherwise fails to exist in the cache (clear, restart, etc.).  bool|array Returns TRUE if something has effectively been added into the cache, FALSE otherwise. Second syntax returns array with error keys. }\par
+}}
+{\xe \v apcu_cache_info\:apcu.php}
+{\xe \v apcu.php\:apcu_cache_info}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apcu_cache_info (  {\i $limited} = {\f2 {\b false}})}}
+\par
+{\bkmkstart AAAAAAABBT}
+{\bkmkend AAAAAAABBT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Retrieves cached information from APCu's data store\par
+{\b bool $limited If limited is TRUE, the return value will exclude the individual list of cache entries. This is useful when trying to optimize calls for statistics gathering.  array|false Array of cached data (and meta-data) or FALSE on failure }\par
+}}
+{\xe \v apcu_cas\:apcu.php}
+{\xe \v apcu.php\:apcu_cas}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apcu_cas (  {\i $key},   {\i $old},   {\i $new})}}
+\par
+{\bkmkstart AAAAAAABBU}
+{\bkmkend AAAAAAABBU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Updates an old value with a new value\par
+{\b apcu_cas()} updates an already existing integer value if the old parameter matches the currently stored value with the value of the new parameter.\par
+{\b string $key The key of the value being updated.  int $old The old value (the value currently stored).  int $new The new value to update to.  bool Returns TRUE on success or FALSE on failure. }\par
+}}
+{\xe \v apcu_clear_cache\:apcu.php}
+{\xe \v apcu.php\:apcu_clear_cache}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apcu_clear_cache ()}}
+\par
+{\bkmkstart AAAAAAABBV}
+{\bkmkend AAAAAAABBV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Clears the APCu cache {\b bool Returns TRUE always. }\par
+}}
+{\xe \v apcu_dec\:apcu.php}
+{\xe \v apcu.php\:apcu_dec}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apcu_dec (  {\i $key},   {\i $step} = {\f2 1}, &  {\i $success} = {\f2 {\b null}})}}
+\par
+{\bkmkstart AAAAAAABBW}
+{\bkmkend AAAAAAABBW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Decrease a stored number {\b string $key The key of the value being decreased.  int $step The step, or value to decrease.  bool $success Optionally pass the success or fail boolean value to this referenced variable.  int|false Returns the current value of key's value on success, or FALSE on failure. }\par
+}}
+{\xe \v apcu_delete\:apcu.php}
+{\xe \v apcu.php\:apcu_delete}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apcu_delete (  {\i $key})}}
+\par
+{\bkmkstart AAAAAAABBX}
+{\bkmkend AAAAAAABBX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Removes a stored variable from the cache {\b string|string[]|APCUIterator $key The key used to store the value (with apcu_store()).  bool|string[] Returns TRUE on success or FALSE on failure. For array of keys returns list of failed keys. }\par
+}}
+{\xe \v apcu_entry\:apcu.php}
+{\xe \v apcu.php\:apcu_entry}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apcu_entry (  {\i $key}, callable  {\i $generator},   {\i $ttl} = {\f2 0})}}
+\par
+{\bkmkstart AAAAAAABBY}
+{\bkmkend AAAAAAABBY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Atomically fetch or generate a cache entry\par
+Atomically attempts to find key in the cache, if it cannot be found generator is called, passing key as the only argument. The return value of the call is then cached with the optionally specified ttl, and returned. \par
+Note: When control enters {\i {\b apcu_entry()}}  the lock for the cache is acquired exclusively, it is released when control leaves {\b apcu_entry()}: In effect, this turns the body of generator into a critical section, disallowing two processes from executing the same code paths concurrently. In addition, it prohibits the concurrent execution of any other APCu functions, since they will acquire the same lock. \par
+{\b string $key Identity of cache entry  callable $generator A callable that accepts key as the only argument and returns the value to cache. }Warning The only APCu function that can be called safely by generator is {\b apcu_entry()}.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{int\cell }{{\i $ttl} \cell }{[optional] Time To Live; store var in the cache for ttl seconds. After the ttl has passed, the stored variable will be expunged from the cache (on the next request). If no ttl is supplied (or if the ttl is 0), the value will persist until it is removed from the cache manually, or otherwise fails to exist in the cache (clear, restart, etc.). \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+mixed Returns the cached value \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Since\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+APCu 5.1.0 \par
+}}}}
+{\xe \v apcu_exists\:apcu.php}
+{\xe \v apcu.php\:apcu_exists}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apcu_exists (  {\i $keys})}}
+\par
+{\bkmkstart AAAAAAABBZ}
+{\bkmkend AAAAAAABBZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Checks if APCu key exists {\b string|string[] $keys A string, or an array of strings, that contain keys.  bool|string[] Returns TRUE if the key exists, otherwise FALSE Or if an array was passed to keys, then an array is returned that contains all existing keys, or an empty array if none exist. }\par
+}}
+{\xe \v apcu_fetch\:apcu.php}
+{\xe \v apcu.php\:apcu_fetch}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apcu_fetch (  {\i $key}, &  {\i $success} = {\f2 {\b null}})}}
+\par
+{\bkmkstart AAAAAAABCA}
+{\bkmkend AAAAAAABCA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Fetch a stored variable from the cache {\b string|string[] $key The key used to store the value (with apcu_store()). If an array is passed then each element is fetched and returned.  bool $success Set to TRUE in success and FALSE in failure.  mixed The stored variable or array of variables on success; FALSE on failure. }\par
+}}
+{\xe \v apcu_inc\:apcu.php}
+{\xe \v apcu.php\:apcu_inc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apcu_inc (  {\i $key},   {\i $step} = {\f2 1}, &  {\i $success} = {\f2 {\b null}})}}
+\par
+{\bkmkstart AAAAAAABCB}
+{\bkmkend AAAAAAABCB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Increase a stored number {\b string $key The key of the value being increased.  int $step The step, or value to increase.  bool $success Optionally pass the success or fail boolean value to this referenced variable.  int|false Returns the current value of key's value on success, or FALSE on failure. }\par
+}}
+{\xe \v apcu_sma_info\:apcu.php}
+{\xe \v apcu.php\:apcu_sma_info}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apcu_sma_info (  {\i $limited} = {\f2 {\b false}})}}
+\par
+{\bkmkstart AAAAAAABCC}
+{\bkmkend AAAAAAABCC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Retrieves APCu Shared Memory Allocation information {\b bool $limited When set to FALSE (default) apcu_sma_info() will return a detailed information about each segment.  array|false Array of Shared Memory Allocation data; FALSE on failure. }\par
+}}
+{\xe \v apcu_store\:apcu.php}
+{\xe \v apcu.php\:apcu_store}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+apcu_store (  {\i $key},   {\i $var},   {\i $ttl} = {\f2 0})}}
+\par
+{\bkmkstart AAAAAAABCD}
+{\bkmkend AAAAAAABCD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cache a variable in the data store {\b string|array $key String: Store the variable using this name. Keys are cache-unique, so storing a second value with the same key will overwrite the original value. Array: Names in key, variables in value.  mixed $var [optional] The variable to store  int $ttl [optional] Time To Live; store var in the cache for ttl seconds. After the ttl has passed, the stored variable will be expunged from the cache (on the next request). If no ttl is supplied (or if the ttl is 0), the value will persist until it is removed from the cache manually, or otherwise fails to exist in the cache (clear, restart, etc.).  bool|array Returns TRUE on success or FALSE on failure | array with error keys. }\par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variable Documentation\par
+\pard\plain 
+{\xe \v APC_BIN_VERIFY_CRC32\:apcu.php}
+{\xe \v apcu.php\:APC_BIN_VERIFY_CRC32}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_BIN_VERIFY_CRC32 2}}
+\par
+{\bkmkstart AAAAAAABCE}
+{\bkmkend AAAAAAABCE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apc.constants.php}\par
+}}
+{\xe \v APC_BIN_VERIFY_MD5\:apcu.php}
+{\xe \v apcu.php\:APC_BIN_VERIFY_MD5}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_BIN_VERIFY_MD5 1}}
+\par
+{\bkmkstart AAAAAAABCF}
+{\bkmkend AAAAAAABCF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Stubs for APC (apcu_bc nowadays) extension {\b https://php.net/manual/en/apc.constants.php}\par
+}}
+{\xe \v APC_ITER_ALL\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_ALL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_ALL -1}}
+\par
+{\bkmkstart AAAAAAABCG}
+{\bkmkend AAAAAAABCG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_ATIME\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_ATIME}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_ATIME 2048}}
+\par
+{\bkmkstart AAAAAAABCH}
+{\bkmkend AAAAAAABCH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_CTIME\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_CTIME}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_CTIME 512}}
+\par
+{\bkmkstart AAAAAAABCI}
+{\bkmkend AAAAAAABCI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_DEVICE\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_DEVICE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_DEVICE 8}}
+\par
+{\bkmkstart AAAAAAABCJ}
+{\bkmkend AAAAAAABCJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_DTIME\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_DTIME}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_DTIME 1024}}
+\par
+{\bkmkstart AAAAAAABCK}
+{\bkmkend AAAAAAABCK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_FILENAME\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_FILENAME}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_FILENAME 4}}
+\par
+{\bkmkstart AAAAAAABCL}
+{\bkmkend AAAAAAABCL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_INODE\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_INODE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_INODE 16}}
+\par
+{\bkmkstart AAAAAAABCM}
+{\bkmkend AAAAAAABCM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_KEY\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_KEY}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_KEY 2}}
+\par
+{\bkmkstart AAAAAAABCN}
+{\bkmkend AAAAAAABCN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_MD5\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_MD5}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_MD5 64}}
+\par
+{\bkmkstart AAAAAAABCO}
+{\bkmkend AAAAAAABCO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_MEM_SIZE\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_MEM_SIZE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_MEM_SIZE 8192}}
+\par
+{\bkmkstart AAAAAAABCP}
+{\bkmkend AAAAAAABCP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_MTIME\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_MTIME}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_MTIME 256}}
+\par
+{\bkmkstart AAAAAAABCQ}
+{\bkmkend AAAAAAABCQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_NONE\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_NONE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_NONE 0}}
+\par
+{\bkmkstart AAAAAAABCR}
+{\bkmkend AAAAAAABCR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_NUM_HITS\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_NUM_HITS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_NUM_HITS 128}}
+\par
+{\bkmkstart AAAAAAABCS}
+{\bkmkend AAAAAAABCS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_REFCOUNT\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_REFCOUNT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_REFCOUNT 4096}}
+\par
+{\bkmkstart AAAAAAABCT}
+{\bkmkend AAAAAAABCT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_TTL\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_TTL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_TTL 16384}}
+\par
+{\bkmkstart AAAAAAABCU}
+{\bkmkend AAAAAAABCU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_TYPE\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_TYPE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_TYPE 1}}
+\par
+{\bkmkstart AAAAAAABCV}
+{\bkmkend AAAAAAABCV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_ITER_VALUE\:apcu.php}
+{\xe \v apcu.php\:APC_ITER_VALUE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_ITER_VALUE 32}}
+\par
+{\bkmkstart AAAAAAABCW}
+{\bkmkend AAAAAAABCW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_LIST_ACTIVE\:apcu.php}
+{\xe \v apcu.php\:APC_LIST_ACTIVE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_LIST_ACTIVE 1}}
+\par
+{\bkmkstart AAAAAAABCX}
+{\bkmkend AAAAAAABCX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Stubs for APCu 5.0.0 {\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+{\xe \v APC_LIST_DELETED\:apcu.php}
+{\xe \v apcu.php\:APC_LIST_DELETED}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const APC_LIST_DELETED 2}}
+\par
+{\bkmkstart AAAAAAABCY}
+{\bkmkend AAAAAAABCY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b https://php.net/manual/en/apcu.constants.php}\par
+}}
+}

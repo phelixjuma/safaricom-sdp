@@ -1,0 +1,1659 @@
+.TH "vendor/jetbrains/phpstorm-stubs/standard/standard_1.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/standard/standard_1.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBstrtoupper\fP ($string)"
+.br
+.ti -1c
+.RI "\fBstrtolower\fP ($str)"
+.br
+.ti -1c
+.RI "\fBstrpos\fP ($haystack, $needle, $offset=0)"
+.br
+.ti -1c
+.RI "\fBstripos\fP ($haystack, $needle, $offset=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstrrpos\fP ($haystack, $needle, $offset=0)"
+.br
+.ti -1c
+.RI "\fBstrripos\fP ($haystack, $needle, $offset=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstrrev\fP ($string)"
+.br
+.ti -1c
+.RI "\fBhebrev\fP ($hebrew_text, $max_chars_per_line=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhebrevc\fP ($hebrew_text, $max_chars_per_line=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBnl2br\fP ($string, $is_xhtml=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBbasename\fP ($path, $suffix=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBdirname\fP ($path, $levels=1)"
+.br
+.ti -1c
+.RI "\fBpathinfo\fP ($path, $options=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstripslashes\fP ($str)"
+.br
+.ti -1c
+.RI "\fBstripcslashes\fP ($str)"
+.br
+.ti -1c
+.RI "\fBstrstr\fP ($haystack, $needle, $before_needle=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstristr\fP ($haystack, $needle, $before_needle=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstrrchr\fP ($haystack, $needle)"
+.br
+.ti -1c
+.RI "\fBstr_shuffle\fP ($str)"
+.br
+.ti -1c
+.RI "\fBstr_word_count\fP ($string, $format=\fBnull\fP, $charlist=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstr_split\fP ($string, $split_length=1)"
+.br
+.ti -1c
+.RI "\fBstrpbrk\fP ($haystack, $char_list)"
+.br
+.ti -1c
+.RI "\fBsubstr_compare\fP ($main_str, $str, $offset, $length=\fBnull\fP, $case_insensitivity=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstrcoll\fP ($str1, $str2)"
+.br
+.ti -1c
+.RI "\fBmoney_format\fP ($format, $number)"
+.br
+.ti -1c
+.RI "\fBsubstr\fP ($string, $start, $length=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsubstr_replace\fP ($string, $replacement, $start, $length=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBquotemeta\fP ($str)"
+.br
+.ti -1c
+.RI "\fBucfirst\fP ($str)"
+.br
+.ti -1c
+.RI "\fBlcfirst\fP ($str)"
+.br
+.ti -1c
+.RI "\fBucwords\fP ($str, $delimiters=' \\t\\r\\n\\f\\v')"
+.br
+.ti -1c
+.RI "\fBstrtr\fP ($str, $from, $to)"
+.br
+.ti -1c
+.RI "\fBstrtr\fP ($str, array $replace_pairs)"
+.br
+.ti -1c
+.RI "\fBaddslashes\fP ($str)"
+.br
+.ti -1c
+.RI "\fBaddcslashes\fP ($str, $charlist)"
+.br
+.ti -1c
+.RI "\fBrtrim\fP ($str, $charlist=' \\t\\n\\r\\0\\x0B')"
+.br
+.ti -1c
+.RI "\fBstr_replace\fP ($search, $replace, $subject, &$\fBcount\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstr_ireplace\fP ($search, $replace, $subject, &$\fBcount\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstr_repeat\fP ($input, $multiplier)"
+.br
+.ti -1c
+.RI "\fBcount_chars\fP ($string, $mode=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBchunk_split\fP ($body, $chunklen=\fBnull\fP, $\fBend\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBtrim\fP ($str, $charlist=' \\t\\n\\r\\0\\x0B')"
+.br
+.ti -1c
+.RI "\fBltrim\fP ($str, $charlist=' \\t\\n\\r\\0\\x0B')"
+.br
+.ti -1c
+.RI "\fBstrip_tags\fP ($str, $allowable_tags=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsimilar_text\fP ($first, $second, &$percent=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBexplode\fP ($delimiter, $string, $limit=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimplode\fP ($glue='', array $pieces)"
+.br
+.ti -1c
+.RI "\fBjoin\fP ($glue='', $pieces)"
+.br
+.ti -1c
+.RI "\fBsetlocale\fP ($category, $locale, $\fB_\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBlocaleconv\fP ()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "addcslashes ( $str,  $charlist)"
+Quote string with slashes in a C style \fBstring $str \fP The string to be escaped\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charlist\fP 
+.RE
+.PP
+\fBA\fP list of characters to be escaped\&. If charlist contains characters 
+.br
+, \\r etc\&., they are converted in C-like style, while other non-alphanumeric characters with ASCII codes lower than 32 and higher than 126 converted to octal representation\&. 
+.PP
+When you define a sequence of characters in the charlist argument make sure that you know what characters come between the characters that you set as the start and end of the range\&. 
+.PP
+.PP
+.nf
+
+<?php
+echo addcslashes('foo[ ]', '\fBA\fP\&.\&.z');
+// output:  \\f\\o\\o\\[ \\]
+// All upper and lower-case letters will be escaped
+// \&.\&.\&. but so will the [\\]^_`
+?>
+.fi
+.PP
+ <p<blockquote>
+.PP
+Also, if the first character in a range has a higher ASCII value than the second character in the range, no range will be constructed\&. Only the start, end and period characters will be escaped\&. Use the ord function to find the ASCII value for a character\&. 
+.PP
+.PP
+.nf
+
+<?php
+echo addcslashes('zoo['\&.']', 'z\&.\&.\fBA\fP');
+// output:  \\zoo['.']
+?>
+.fi
+.PP
+ <p<blockquote>
+.PP
+Be careful if you choose to escape characters 0, a, b, f, n, r, t and v\&. They will be converted to \\0, \fI\fP, \fB\fP, \\f, 
+.br
+, \\r, \\t and \\v\&. In PHP \\0 (NULL), \\r (carriage return), 
+.br
+ (newline), \\f (form feed), \\v (vertical tab) and \\t (tab) are predefined escape sequences, while in C all of these are predefined escape sequences\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the escaped string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "addslashes ( $str)"
+Quote string with slashes \fBstring $str \fP The string to be escaped\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the escaped string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "basename ( $path,  $suffix = \fC\fBnull\fP\fP)"
+Returns filename component of path \fBstring $path \fP \fBA\fP path\&. 
+.PP
+On Windows, both slash (/) and backslash () are used as directory separator character\&. In other environments, it is the forward slash (/)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$suffix\fP [optional] 
+.RE
+.PP
+If the filename ends in suffix this will also be cut off\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the base name of the given path\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "chunk_split ( $body,  $chunklen = \fC\fBnull\fP\fP,  $end = \fC\fBnull\fP\fP)"
+Split a string into smaller chunks \fBstring $body \fP The string to be chunked\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$chunklen\fP [optional] 
+.RE
+.PP
+The chunk length\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$end\fP [optional] 
+.RE
+.PP
+The line ending sequence\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the chunked string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "count_chars ( $string,  $mode = \fC\fBnull\fP\fP)"
+Return information about characters used in a string \fBstring $string \fP The examined string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+See return values\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int[]|string Depending on mode count_chars returns one of the following: 0 - an array with the byte-value as key and the frequency of every byte as value\&. 1 - same as 0 but only byte-values with a frequency greater than zero are listed\&. 2 - same as 0 but only byte-values with a frequency equal to zero are listed\&. 3 - a string containing all unique characters is returned\&. 4 - a string containing all not used characters is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "dirname ( $path,  $levels = \fC1\fP)"
+Returns directory name component of path \fBstring $path \fP \fBA\fP path\&. 
+.PP
+On Windows, both slash (/) and backslash () are used as directory separator character\&. In other environments, it is the forward slash (/)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$levels\fP 
+.RE
+.PP
+The number of parent directories to go up\&. This must be an integer greater than 0\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the name of the directory\&. If there are no slashes in path, a dot ('\&.') is returned, indicating the current directory\&. Otherwise, the returned string is path with any trailing /component removed\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "explode ( $delimiter,  $string,  $limit = \fC\fBnull\fP\fP)"
+Split a string by string \fBstring $delimiter \fP The boundary string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$string\fP 
+.RE
+.PP
+The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$limit\fP [optional] 
+.RE
+.PP
+If limit is set and positive, the returned array will contain a maximum of limit elements with the last element containing the rest of string\&. 
+.PP
+If the limit parameter is negative, all components except the last -limit are returned\&. 
+.PP
+If the limit parameter is zero, then this is treated as 1\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string[]|false If delimiter is an empty string (''), explode will return false\&. If delimiter contains a value that is not contained in string and a negative limit is used, then an empty array will be returned\&. For any other limit, an array containing string will be returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "hebrev ( $hebrew_text,  $max_chars_per_line = \fC\fBnull\fP\fP)"
+Convert logical Hebrew text to visual text \fBstring $hebrew_text \fP \fBA\fP Hebrew input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$max_chars_per_line\fP [optional] 
+.RE
+.PP
+This optional parameter indicates maximum number of characters per line that will be returned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the visual string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "hebrevc ( $hebrew_text,  $max_chars_per_line = \fC\fBnull\fP\fP)"
+Convert logical Hebrew text to visual text with newline conversion \fBstring $hebrew_text \fP \fBA\fP Hebrew input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$max_chars_per_line\fP [optional] 
+.RE
+.PP
+This optional parameter indicates maximum number of characters per line that will be returned\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the visual string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "implode ( $glue = \fC''\fP, array $pieces)"
+Join array elements with a string \fBstring $glue [optional]\fP Defaults to an empty string\&. This is not the preferred usage of implode as glue would be the second parameter and thus, the bad prototype would be used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pieces\fP 
+.RE
+.PP
+The array of strings to implode\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string containing a string representation of all the array elements in the same order, with the glue string between each element\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.PP
+\fBExamples\fP
+.in +1c
+\fB/usr/local/var/www/safaricom\-sdp\-sdk/vendor/roave/better\-reflection/src/Reflection/ReflectionClass\&.php\fP\&.
+.SS "join ( $glue = \fC''\fP,  $pieces)"
+<function>implode</function> \fBstring $glue [optional] \fP Defaults to an empty string\&. This is not the preferred usage of implode as glue would be the second parameter and thus, the bad prototype would be used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pieces\fP 
+.RE
+.PP
+The array of strings to implode\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string containing a string representation of all the array elements in the same order, with the glue string between each element\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "lcfirst ( $str)"
+Make a string's first character lowercase \fBstring $str \fP The input string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the resulting string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "localeconv ()"
+Get numeric formatting information \fBarray localeconv returns data based upon the current locale as set by setlocale\&. The associative array that is returned contains the following fields: \fP 
+.PP
+Array element 
+.PP
+Description  
+.PP
+decimal_point 
+.PP
+Decimal point character  
+.PP
+thousands_sep 
+.PP
+Thousands separator  
+.PP
+grouping 
+.PP
+Array containing numeric groupings  
+.PP
+int_curr_symbol 
+.PP
+International currency symbol (i\&.e\&. USD)  
+.PP
+currency_symbol 
+.PP
+Local currency symbol (i\&.e\&. $)  
+.PP
+mon_decimal_point 
+.PP
+Monetary decimal point character  
+.PP
+mon_thousands_sep 
+.PP
+Monetary thousands separator  
+.PP
+mon_grouping 
+.PP
+Array containing monetary groupings  
+.PP
+positive_sign 
+.PP
+Sign for positive values  
+.PP
+negative_sign 
+.PP
+Sign for negative values  
+.PP
+int_frac_digits 
+.PP
+International fractional digits  
+.PP
+frac_digits 
+.PP
+Local fractional digits  
+.PP
+p_cs_precedes 
+.PP
+true if currency_symbol precedes a positive value, false if it succeeds one   
+.PP
+p_sep_by_space 
+.PP
+true if a space separates currency_symbol from a positive value, false otherwise   
+.PP
+n_cs_precedes 
+.PP
+true if currency_symbol precedes a negative value, false if it succeeds one   
+.PP
+n_sep_by_space 
+.PP
+true if a space separates currency_symbol from a negative value, false otherwise   
+.PP
+p_sign_posn 
+.PP
+0 - Parentheses surround the quantity and currency_symbol 1 - The sign string precedes the quantity and currency_symbol 2 - The sign string succeeds the quantity and currency_symbol 3 - The sign string immediately precedes the currency_symbol 4 - The sign string immediately succeeds the currency_symbol   
+.PP
+n_sign_posn 
+.PP
+0 - Parentheses surround the quantity and currency_symbol 1 - The sign string precedes the quantity and currency_symbol 2 - The sign string succeeds the quantity and currency_symbol 3 - The sign string immediately precedes the currency_symbol 4 - The sign string immediately succeeds the currency_symbol   
+.PP
+The p_sign_posn, and n_sign_posn contain a string of formatting options\&. Each number representing one of the above listed conditions\&. 
+.PP
+The grouping fields contain arrays that define the way numbers should be grouped\&. For example, the monetary grouping field for the nl_NL locale (in UTF-8 mode with the euro sign), would contain a 2 item array with the values 3 and 3\&. The higher the index in the array, the farther left the grouping is\&. If an array element is equal to CHAR_MAX, no further grouping is done\&. If an array element is equal to 0, the previous element should be used\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ltrim ( $str,  $charlist = \fC' \\t\\n\\r\\0\\x0B'\fP)"
+Strip whitespace (or other characters) from the beginning of a string \fBstring $str \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charlist\fP [optional] 
+.RE
+.PP
+You can also specify the characters you want to strip, by means of the charlist parameter\&. Simply list all characters that you want to be stripped\&. With \&.\&. you can specify a range of characters\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string This function returns a string with whitespace stripped from the beginning of str\&. Without the second parameter, ltrim will strip these characters: ' ' (ASCII 32 (0x20)), an ordinary space\&. '\\t' (ASCII 9 (0x09)), a tab\&. '\\n' (ASCII 10 (0x0A)), a new line (line feed)\&. '\\r' (ASCII 13 (0x0D)), a carriage return\&. '\\0' (ASCII 0 (0x00)), the NUL-byte\&. '\\x0B' (ASCII 11 (0x0B)), a vertical tab\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.PP
+\fBExamples\fP
+.in +1c
+\fB/usr/local/var/www/safaricom\-sdp\-sdk/vendor/roave/better\-reflection/src/Reflection/ReflectionClass\&.php\fP\&.
+.SS "money_format ( $format,  $number)"
+Formats a number as a currency string \fBstring $format \fP The format specification consists of the following sequence: 
+.PP
+a % character
+.PP
+\fBParameters\fP
+.RS 4
+\fI$number\fP 
+.RE
+.PP
+The number to be formatted\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the formatted string\&. Characters before and after the formatting string will be returned unchanged\&. Non-numeric number causes returning  and emitting E_WARNING\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "nl2br ( $string,  $is_xhtml = \fC\fBtrue\fP\fP)"
+Inserts HTML line breaks before all newlines in a string \fBstring $string \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$is_xhtml\fP [optional] 
+.RE
+.PP
+Whenever to use XHTML compatible line breaks or not\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the altered string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pathinfo ( $path,  $options = \fC\fBnull\fP\fP)"
+Returns information about a file path \fBstring $path \fP The path being checked\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+You can specify which elements are returned with optional parameter options\&. It composes from PATHINFO_DIRNAME, PATHINFO_BASENAME, PATHINFO_EXTENSION and PATHINFO_FILENAME\&. It defaults to return all elements\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string[]|string The following associative array elements are returned: dirname, basename, extension (if any), and filename\&. 
+.RE
+.PP
+.PP
+If options is used, this function will return a string if not all elements are requested\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "quotemeta ( $str)"
+Quote meta characters \fBstring $str \fP The input string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the string with meta characters quoted\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "rtrim ( $str,  $charlist = \fC' \\t\\n\\r\\0\\x0B'\fP)"
+Strip whitespace (or other characters) from the end of a string\&. Without the second parameter, \fBrtrim()\fP will strip these characters: 
+.PD 0
+
+.IP "\(bu" 2
+' ' (ASCII 32 (0x20)), an ordinary space\&. 
+.IP "\(bu" 2
+'\\t' (ASCII 9 (0x09)), a tab\&. 
+.IP "\(bu" 2
+'\\n' (ASCII 10 (0x0A)), a new line (line feed)\&. 
+.IP "\(bu" 2
+'\\r' (ASCII 13 (0x0D)), a carriage return\&. 
+.IP "\(bu" 2
+'\\0' (ASCII 0 (0x00)), the NUL-byte\&. 
+.IP "\(bu" 2
+'\\x0B' (ASCII 11 (0x0B)), a vertical tab\&. 
+.PP
+\fBstring $str \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charlist\fP [optional] 
+.RE
+.PP
+You can also specify the characters you want to strip, by means of the charlist parameter\&. Simply list all characters that you want to be stripped\&. With \&.\&. you can specify a range of characters\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the modified string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "setlocale ( $category,  $locale,  $_ = \fC\fBnull\fP\fP)"
+Set locale information \fBint $category \fP 
+.PP
+\fIcategory\fP is a named constant specifying the category of the functions affected by the locale setting: 
+.PP
+.PD 0
+.IP "\(bu" 2
+\fBLC_ALL\fP for all of the below  
+.IP "\(bu" 2
+\fBLC_COLLATE\fP for string comparison, see {
+.PP
+\fBSee also\fP
+.RS 4
+\fBstrcoll()\fP}  
+.RE
+.PP
+
+.IP "\(bu" 2
+\fBLC_CTYPE\fP for character classification and conversion, for example {
+.PP
+\fBSee also\fP
+.RS 4
+\fBstrtoupper()\fP}  
+.RE
+.PP
+
+.IP "\(bu" 2
+\fBLC_MONETARY\fP for {
+.PP
+\fBSee also\fP
+.RS 4
+\fBlocaleconv()\fP}  
+.RE
+.PP
+
+.IP "\(bu" 2
+\fBLC_NUMERIC\fP for decimal separator (See also {
+.PP
+\fBSee also\fP
+.RS 4
+\fBlocaleconv()\fP})  
+.RE
+.PP
+
+.IP "\(bu" 2
+\fBLC_TIME\fP for date and time formatting with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBstrftime()\fP}
+.RE
+.PP
+
+.IP "\(bu" 2
+\fBLC_MESSAGES\fP for system responses (available if PHP was compiled with \fIlibintl\fP)
+.PP
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$locale\fP 
+.RE
+.PP
+If locale is  or the empty string '', the locale names will be set from the values of environment variables with the same names as the above categories, or from 'LANG'\&. 
+.PP
+If locale is '0', the locale setting is not affected, only the current setting is returned\&. 
+.PP
+If locale is an array or followed by additional parameters then each array element or parameter is tried to be set as new locale until success\&. This is useful if a locale is known under different names on different systems or for providing a fallback for a possibly not available locale\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false the new current locale, or false if the locale functionality is not implemented on your platform, the specified locale does not exist or the category name is invalid\&. 
+.RE
+.PP
+.PP
+An invalid category name also causes a warning message\&. Category/locale names can be found in RFC 1766 and ISO 639\&. Different systems have different naming schemes for locales\&. 
+.PP
+The return value of setlocale depends on the system that PHP is running\&. It returns exactly what the system setlocale function returns\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "similar_text ( $first,  $second, & $percent = \fC\fBnull\fP\fP)"
+Calculate the similarity between two strings \fBstring $first \fP The first string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$second\fP 
+.RE
+.PP
+The second string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$percent\fP [optional] 
+.RE
+.PP
+By passing a reference as third argument, similar_text will calculate the similarity in percent for you\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of matching chars in both strings\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "str_ireplace ( $search,  $replace,  $subject, & $count = \fC\fBnull\fP\fP)"
+Case-insensitive version of <function>str_replace</function>\&. \fBmixed $search \fP Every replacement with search array is performed on the result of previous replacement\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$replace\fP 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$subject\fP 
+.RE
+.PP
+If subject is an array, then the search and replace is performed with every entry of subject, and the return value is an array as well\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$count\fP [optional] 
+.RE
+.PP
+The number of matched and replaced needles will be returned in count which is passed by reference\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|string[] a string or an array of replacements\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "str_repeat ( $input,  $multiplier)"
+Repeat a string \fBstring $input \fP The string to be repeated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$multiplier\fP 
+.RE
+.PP
+Number of time the input string should be repeated\&. 
+.PP
+multiplier has to be greater than or equal to 0\&. If the multiplier is set to 0, the function will return an empty string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the repeated string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "str_replace ( $search,  $replace,  $subject, & $count = \fC\fBnull\fP\fP)"
+Replace all occurrences of the search string with the replacement string \fBmixed $search \fP The value being searched for, otherwise known as the needle\&. An array may be used to designate multiple needles\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$replace\fP 
+.RE
+.PP
+The replacement value that replaces found search values\&. An array may be used to designate multiple replacements\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$subject\fP 
+.RE
+.PP
+The string or array being searched and replaced on, otherwise known as the haystack\&. 
+.PP
+If subject is an array, then the search and replace is performed with every entry of subject, and the return value is an array as well\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$count\fP [optional] If passed, this will hold the number of matched and replaced needles\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|string[] This function returns a string or an array with the replaced values\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "str_shuffle ( $str)"
+Randomly shuffles a string \fBstring $str \fP The input string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the shuffled string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "str_split ( $string,  $split_length = \fC1\fP)"
+Convert a string to an array \fBstring $string \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$split_length\fP [optional] 
+.RE
+.PP
+Maximum length of the chunk\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array If the optional split_length parameter is specified, the returned array will be broken down into chunks with each being split_length in length, otherwise each chunk will be one character in length\&. 
+.RE
+.PP
+.PP
+false is returned if split_length is less than 1\&. If the split_length length exceeds the length of string, the entire string is returned as the first (and only) array element\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "str_word_count ( $string,  $format = \fC\fBnull\fP\fP,  $charlist = \fC\fBnull\fP\fP)"
+Return information about words used in a string \fBstring $string \fP The string 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$format\fP [optional] 
+.RE
+.PP
+Specify the return value of this function\&. The current supported values are: 0 - returns the number of words found 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charlist\fP [optional] 
+.RE
+.PP
+\fBA\fP list of additional characters which will be considered as 'word' 
+.PP
+\fBReturns\fP
+.RS 4
+string[]|int an array or an integer, depending on the format chosen\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strcoll ( $str1,  $str2)"
+\fBLocale\fP based string comparison \fBstring $str1 \fP The first string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$str2\fP 
+.RE
+.PP
+The second string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int < 0 if str1 is less than str2; > 0 if str1 is greater than str2, and 0 if they are equal\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strip_tags ( $str,  $allowable_tags = \fC\fBnull\fP\fP)"
+Strip HTML and PHP tags from a string \fBstring $str \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$allowable_tags\fP [optional] 
+.RE
+.PP
+You can use the optional second parameter to specify tags which should not be stripped\&. 
+.PP
+HTML comments and PHP tags are also stripped\&. This is hardcoded and can not be changed with allowable_tags\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the stripped string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stripcslashes ( $str)"
+Un-quote string quoted with <function>addcslashes</function> \fBstring $str \fP The string to be unescaped\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the unescaped string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stripos ( $haystack,  $needle,  $offset = \fC\fBnull\fP\fP)"
+Find position of first occurrence of a case-insensitive string \fBstring $haystack \fP The string to search in 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+Note that the needle may be a string of one or more characters\&. 
+.PP
+If needle is not a string, it is converted to an integer and applied as the ordinal value of a character\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+The optional offset parameter allows you to specify which character in haystack to start searching\&. The position returned is still relative to the beginning of haystack\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false If needle is not found, stripos will return boolean false\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "stripslashes ( $str)"
+Un-quotes a quoted string \fBstring $str \fP The input string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string with backslashes stripped off\&. (\\' becomes ' and so on\&.) Double backslashes (\\) are made into a single backslash ()\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "stristr ( $haystack,  $needle,  $before_needle = \fC\fBnull\fP\fP)"
+Case-insensitive <function>strstr</function> \fBstring $haystack \fP The string to search in 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+If needle is not a string, it is converted to an integer and applied as the ordinal value of a character\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$before_needle\fP [optional] 
+.RE
+.PP
+If true, stristr returns the part of the haystack before the first occurrence of the needle\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the matched substring\&. If needle is not found, returns false\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strpbrk ( $haystack,  $char_list)"
+Search a string for any of a set of characters \fBstring $haystack \fP The string where char_list is looked for\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$char_list\fP 
+.RE
+.PP
+This parameter is case sensitive\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false a string starting from the character found, or false if it is not found\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "strpos ( $haystack,  $needle,  $offset = \fC0\fP)"
+Find the position of the first occurrence of a substring in a string \fBstring $haystack \fP The string to search in 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+If \fBneedle\fP is not a string, it is converted to an integer and applied as the ordinal value of a character\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+If specified, search will start this number of characters counted from the beginning of the string\&. Unlike {
+.PP
+\fBSee also\fP
+.RS 4
+\fBstrrpos()\fP} and {
+.PP
+\fBstrripos()\fP}, the offset cannot be negative\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false 
+.RE
+.PP
+Returns the position where the needle exists relative to the beginnning of the \fBhaystack\fP string (independent of search direction or offset)\&. Also note that string positions start at 0, and not 1\&. 
+.PP
+Returns \fBFALSE\fP if the needle was not found\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strrchr ( $haystack,  $needle)"
+Find the last occurrence of a character in a string \fBstring $haystack \fP The string to search in 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+If \fBneedle\fP contains more than one character, only the first is used\&. This behavior is different from that of {
+.PP
+\fBSee also\fP
+.RS 4
+\fBstrstr()\fP}\&. 
+.RE
+.PP
+.PP
+If \fBneedle\fP is not a string, it is converted to an integer and applied as the ordinal value of a character\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false 
+.RE
+.PP
+This function returns the portion of string, or \fBFALSE\fP if \fBneedle\fP is not found\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strrev ( $string)"
+Reverse a string \fBstring $string \fP The string to be reversed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the reversed string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strripos ( $haystack,  $needle,  $offset = \fC\fBnull\fP\fP)"
+Find position of last occurrence of a case-insensitive string in a string \fBstring $haystack \fP The string to search in 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+Note that the needle may be a string of one or more characters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+The offset parameter may be specified to begin searching an arbitrary number of characters into the string\&. 
+.PP
+Negative offset values will start the search at offset characters from the start of the string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the numerical position of the last occurrence of needle\&. Also note that string positions start at 0, and not 1\&. 
+.RE
+.PP
+.PP
+If needle is not found, false is returned\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "strrpos ( $haystack,  $needle,  $offset = \fC0\fP)"
+Find the position of the last occurrence of a substring in a string \fBstring $haystack \fP The string to search in\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+If \fBneedle\fP is not a string, it is converted to an integer and applied as the ordinal value of a character\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+If specified, search will start this number of characters counted from the beginning of the string\&. If the value is negative, search will instead start from that many characters from the end of the string, searching backwards\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false 
+.RE
+.PP
+Returns the position where the needle exists relative to the beginning of the \fBhaystack\fP string (independent of search direction or offset)\&. Also note that string positions start at 0, and not 1\&. 
+.PP
+Returns \fBFALSE\fP if the needle was not found\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strstr ( $haystack,  $needle,  $before_needle = \fC\fBnull\fP\fP)"
+Find first occurrence of a string \fBstring $haystack \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+If needle is not a string, it is converted to an integer and applied as the ordinal value of a character\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$before_needle\fP [optional] 
+.RE
+.PP
+If true, strstr returns the part of the haystack before the first occurrence of the needle\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the portion of string, or false if needle is not found\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strtolower ( $str)"
+Make a string lowercase \fBstring $str \fP The input string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the lowercased string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.PP
+\fBExamples\fP
+.in +1c
+\fB/usr/local/var/www/safaricom\-sdp\-sdk/vendor/roave/better\-reflection/src/Reflection/ReflectionClass\&.php\fP\&.
+.SS "strtoupper ( $string)"
+Make a string uppercase \fBstring $string \fP The input string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the uppercased string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strtr ( $str,  $from,  $to)"
+Translate certain characters \fBstring $str \fP The string being translated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$from\fP 
+.RE
+.PP
+The string replacing from\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$to\fP 
+.RE
+.PP
+The string being translated to to\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string This function returns a copy of str, translating all occurrences of each character in from to the corresponding character in to\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "strtr ( $str, array $replace_pairs)"
+Translate certain characters \fBstring $str The string being translated\&.  array $replace_pairs The replace_pairs parameter may be used as a substitute for to and from in which case it's an array in the form array('from' => 'to', \&.\&.\&.)\&.  string A copy of str, translating all occurrences of each character in from to the corresponding character in to\&.  5\&.0 \fP
+.SS "substr ( $string,  $start,  $length = \fC\fBnull\fP\fP)"
+Return part of a string \fBstring $string \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$start\fP 
+.RE
+.PP
+If start is non-negative, the returned string will start at the start'th position in string, counting from zero\&. For instance, in the string 'abcdef', the character at position 0 is 'a', the character at position 2 is 'c', and so forth\&. 
+.PP
+If start is negative, the returned string will start at the start'th character from the end of string\&. 
+.PP
+If string is less than or equal to start characters long, false will be returned\&. 
+.PP
+Using a negative start 
+.PP
+.PP
+.nf
+
+<?php
+$rest = substr('abcdef', -1);    // returns 'f'
+$rest = substr('abcdef', -2);    // returns 'ef'
+$rest = substr('abcdef', -3, 1); // returns 'd'
+?>
+.fi
+.PP
+ 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+If length is given and is positive, the string returned will contain at most length characters beginning from start (depending on the length of string)\&. 
+.PP
+If length is given and is negative, then that many characters will be omitted from the end of string (after the start position has been calculated when a start is negative)\&. If start denotes a position beyond this truncation, an empty string will be returned\&. 
+.PP
+If length is given and is 0, false or  an empty string will be returned\&. 
+.PP
+Using a negative length: 
+.PP
+.nf
+
+<?php
+$rest = substr('abcdef', 0, -1);  // returns 'abcde'
+$rest = substr('abcdef', 2, -1);  // returns 'cde'
+$rest = substr('abcdef', 4, -4);  // returns false
+$rest = substr('abcdef', -3, -1); // returns 'de'
+?>
+.fi
+.PP
+ 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the extracted part of string or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.PP
+\fBExamples\fP
+.in +1c
+\fB/usr/local/var/www/safaricom\-sdp\-sdk/vendor/jetbrains/phpstorm\-stubs/redis/Redis\&.php\fP\&.
+.SS "substr_compare ( $main_str,  $str,  $offset,  $length = \fC\fBnull\fP\fP,  $case_insensitivity = \fC\fBnull\fP\fP)"
+Binary safe comparison of 2 strings from an offset, up to length characters \fBstring $main_str \fP The main string being compared\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$str\fP 
+.RE
+.PP
+The secondary string being compared\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP 
+.RE
+.PP
+The start position for the comparison\&. If negative, it starts counting from the end of the string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+The length of the comparison\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$case_insensitivity\fP [optional] 
+.RE
+.PP
+If case_insensitivity is true, comparison is case insensitive\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int < 0 if main_str from position offset is less than str, > 0 if it is greater than str, and 0 if they are equal\&. If offset is equal to or greater than the length of main_str or length is set and is less than 1, substr_compare prints a warning and returns false\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "substr_replace ( $string,  $replacement,  $start,  $length = \fC\fBnull\fP\fP)"
+Replace text within a portion of a string \fBmixed $string \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$replacement\fP 
+.RE
+.PP
+The replacement string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$start\fP 
+.RE
+.PP
+If start is positive, the replacing will begin at the start'th offset into string\&. 
+.PP
+If start is negative, the replacing will begin at the start'th character from the end of string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+If given and is positive, it represents the length of the portion of string which is to be replaced\&. If it is negative, it represents the number of characters from the end of string at which to stop replacing\&. If it is not given, then it will default to strlen( string ); i\&.e\&. end the replacing at the end of string\&. Of course, if length is zero then this function will have the effect of inserting replacement into string at the given start offset\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|string[] The result string is returned\&. If string is an array then array is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "trim ( $str,  $charlist = \fC' \\t\\n\\r\\0\\x0B'\fP)"
+Strip whitespace (or other characters) from the beginning and end of a string \fBstring $str \fP The string that will be trimmed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charlist\fP [optional] 
+.RE
+.PP
+Optionally, the stripped characters can also be specified using the charlist parameter\&. Simply list all characters that you want to be stripped\&. With \&.\&. you can specify a range of characters\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The trimmed string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ucfirst ( $str)"
+Make a string's first character uppercase \fBstring $str \fP The input string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the resulting string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "ucwords ( $str,  $delimiters = \fC' \\t\\r\\n\\f\\v'\fP)"
+Uppercase the first character of each word in a string \fBstring $str \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$delimiters\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string the modified string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

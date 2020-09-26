@@ -1,0 +1,331 @@
+.TH "vendor/jetbrains/phpstorm-stubs/stomp/stomp.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/stomp/stomp.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBStomp\fP"
+.br
+.ti -1c
+.RI "class \fBStompFrame\fP"
+.br
+.ti -1c
+.RI "class \fBStompException\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBstomp_version\fP ()"
+.br
+.ti -1c
+.RI "\fBstomp_connect\fP ($broker=\fBnull\fP, $username=\fBnull\fP, $password=\fBnull\fP, array $headers=array())"
+.br
+.ti -1c
+.RI "\fBstomp_get_session_id\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBstomp_close\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBstomp_send\fP ($\fBlink\fP, $destination, $msg, array $headers=array())"
+.br
+.ti -1c
+.RI "\fBstomp_subscribe\fP ($\fBlink\fP, $destination, array $headers=array())"
+.br
+.ti -1c
+.RI "\fBstomp_unsubscribe\fP ($\fBlink\fP, $destination, array $headers=array())"
+.br
+.ti -1c
+.RI "\fBstomp_has_frame\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBstomp_read_frame\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBstomp_begin\fP ($\fBlink\fP, $transaction_id)"
+.br
+.ti -1c
+.RI "\fBstomp_commit\fP ($\fBlink\fP, $transaction_id)"
+.br
+.ti -1c
+.RI "\fBstomp_abort\fP ($\fBlink\fP, $transaction_id)"
+.br
+.ti -1c
+.RI "\fBstomp_ack\fP ($\fBlink\fP, $msg, array $headers=array())"
+.br
+.ti -1c
+.RI "\fBstomp_error\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBstomp_set_timeout\fP ($\fBlink\fP, $seconds, $microseconds=0)"
+.br
+.ti -1c
+.RI "\fBstomp_get_timeout\fP ($\fBlink\fP)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "stomp_abort ( $link,  $transaction_id)"
+Roll back a transaction in progress
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP identifier returned by stomp_connect 
+.br
+\fI$transaction_id\fP transaction id 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+boolean TRUE on success, or FALSE on failure 
+.RE
+.PP
+
+.SS "stomp_ack ( $link,  $msg, array $headers = \fCarray()\fP)"
+Acknowledge consumption of a message from a subscription using client acknowledgment
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP identifier returned by stomp_connect 
+.br
+\fI$msg\fP message/messageId to be acknowledged 
+.br
+\fI$headers\fP additional headers (example: receipt)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+boolean TRUE on success, or FALSE on failure 
+.RE
+.PP
+
+.SS "stomp_begin ( $link,  $transaction_id)"
+Start a transaction
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP identifier returned by stomp_connect 
+.br
+\fI$transaction_id\fP transaction id 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+boolean TRUE on success, or FALSE on failure 
+.RE
+.PP
+
+.SS "stomp_close ( $link)"
+Close stomp connection
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP identifier returned by stomp_connect 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+boolean TRUE on success, or FALSE on failure 
+.RE
+.PP
+
+.SS "stomp_commit ( $link,  $transaction_id)"
+Commit a transaction in progress
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP identifier returned by stomp_connect 
+.br
+\fI$transaction_id\fP transaction id 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+boolean TRUE on success, or FALSE on failure 
+.RE
+.PP
+
+.SS "stomp_connect ( $broker = \fC\fBnull\fP\fP,  $username = \fC\fBnull\fP\fP,  $password = \fC\fBnull\fP\fP, array $headers = \fCarray()\fP)"
+Connect to server
+.PP
+\fBParameters\fP
+.RS 4
+\fI$broker\fP broker URI 
+.br
+\fI$username\fP The username 
+.br
+\fI$password\fP The password 
+.br
+\fI$headers\fP additional headers (example: receipt)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource stomp connection identifier on success, or FALSE on failure 
+.RE
+.PP
+
+.SS "stomp_error ( $link)"
+Get the last stomp error
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP identifier returned by stomp_connect 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string \fBError\fP message, or FALSE if no error 
+.RE
+.PP
+
+.SS "stomp_get_session_id ( $link)"
+Get the current stomp session ID
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP identifier returned by stomp_connect 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string stomp session ID if it exists, or FALSE otherwise 
+.RE
+.PP
+
+.SS "stomp_get_timeout ( $link)"
+Get timeout
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP identifier returned by stomp_connect 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array Array with timeout informations 
+.RE
+.PP
+
+.SS "stomp_has_frame ( $link)"
+Indicate whether or not there is a frame ready to read
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP identifier returned by stomp_connect 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+boolean TRUE if there is one, or FALSE otherwise 
+.RE
+.PP
+
+.SS "stomp_read_frame ( $link)"
+Read the next frame
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP identifier returned by stomp_connect 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array on success, or FALSE on failure 
+.RE
+.PP
+
+.SS "stomp_send ( $link,  $destination,  $msg, array $headers = \fCarray()\fP)"
+Sends a message to a destination in the messaging system
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP identifier returned by stomp_connect 
+.br
+\fI$destination\fP indicates where to send the message 
+.br
+\fI$msg\fP message to be sent 
+.br
+\fI$headers\fP additional headers (example: receipt)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+boolean TRUE on success, or FALSE on failure 
+.RE
+.PP
+
+.SS "stomp_set_timeout ( $link,  $seconds,  $microseconds = \fC0\fP)"
+Set timeout
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP identifier returned by stomp_connect 
+.br
+\fI$seconds\fP the seconds part of the timeout to be set 
+.br
+\fI$microseconds\fP the microseconds part of the timeout to be set 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "stomp_subscribe ( $link,  $destination, array $headers = \fCarray()\fP)"
+Register to listen to a given destination
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP identifier returned by stomp_connect 
+.br
+\fI$destination\fP indicates which destination to subscribe to 
+.br
+\fI$headers\fP additional headers (example: receipt)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+boolean TRUE on success, or FALSE on failure 
+.RE
+.PP
+
+.SS "stomp_unsubscribe ( $link,  $destination, array $headers = \fCarray()\fP)"
+Remove an existing subscription
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP identifier returned by stomp_connect 
+.br
+\fI$destination\fP indicates which subscription to remove 
+.br
+\fI$headers\fP additional headers (example: receipt)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+boolean TRUE on success, or FALSE on failure 
+.RE
+.PP
+
+.SS "stomp_version ()"
+Get the current version of the stomp extension
+.PP
+\fBReturns\fP
+.RS 4
+string version 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

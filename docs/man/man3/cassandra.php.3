@@ -1,0 +1,340 @@
+.TH "vendor/jetbrains/phpstorm-stubs/cassandra/cassandra.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/cassandra/cassandra.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBCassandra\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\Column\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\Session\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\Table\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\RetryPolicy\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\TimestampGenerator\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\Exception\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\Function_\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\UuidInterface\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\Index\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\Cluster\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\Numeric\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\Future\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\Keyspace\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\Value\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\Aggregate\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\Statement\fP"
+.br
+.ti -1c
+.RI "interface \fBCassandra\\Schema\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Rows\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\DefaultCluster\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\DefaultFunction\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\SimpleStatement\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Tuple\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Smallint\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\FuturePreparedStatement\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\DefaultSchema\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\BatchStatement\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Collection\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\FutureRows\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\DefaultMaterializedView\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\SSLOptions\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Bigint\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\FutureSession\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Set\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\DefaultIndex\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\DefaultAggregate\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Timestamp\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Tinyint\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Timeuuid\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\DefaultSession\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Custom\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\MaterializedView\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Time\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Type\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Varint\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Map\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Uuid\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Float_\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Duration\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\DefaultKeyspace\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Inet\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Date\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\DefaultColumn\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Blob\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\DefaultTable\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\FutureValue\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Decimal\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\FutureClose\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\PreparedStatement\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\ExecutionOptions\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\UserTypeValue\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Cluster\\Builder\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\TimestampGenerator\\ServerSide\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\TimestampGenerator\\Monotonic\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\RetryPolicy\\DefaultPolicy\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\RetryPolicy\\DowngradingConsistency\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\RetryPolicy\\Fallthrough\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\RetryPolicy\\Logging\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Type\\Tuple\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Type\\Collection\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Type\\Set\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Type\\Custom\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Type\\UserType\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Type\\Map\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Type\\Scalar\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\SSLOptions\\Builder\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\ConfigurationException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\DomainException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\InvalidQueryException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\UnpreparedException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\InvalidArgumentException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\ServerException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\RangeException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\UnauthorizedException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\LogicException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\UnavailableException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\AuthenticationException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\OverloadedException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\ReadTimeoutException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\IsBootstrappingException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\ProtocolException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\ExecutionException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\InvalidSyntaxException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\RuntimeException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\TimeoutException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\ValidationException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\TruncateException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\AlreadyExistsException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\DivideByZeroException\fP"
+.br
+.ti -1c
+.RI "class \fBCassandra\\Exception\\WriteTimeoutException\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBCassandra\fP"
+.br
+.ti -1c
+.RI " \fBCassandra\\Cluster\fP"
+.br
+.ti -1c
+.RI " \fBCassandra\\TimestampGenerator\fP"
+.br
+.ti -1c
+.RI " \fBCassandra\\RetryPolicy\fP"
+.br
+.ti -1c
+.RI " \fBCassandra\\Type\fP"
+.br
+.ti -1c
+.RI " \fBCassandra\\SSLOptions\fP"
+.br
+.ti -1c
+.RI " \fBCassandra\\Exception\fP"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

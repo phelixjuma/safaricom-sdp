@@ -1,0 +1,1756 @@
+\hypertarget{svn_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/svn/svn.php File Reference}
+\label{svn_8php}\index{vendor/jetbrains/phpstorm-\/stubs/svn/svn.php@{vendor/jetbrains/phpstorm-\/stubs/svn/svn.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_svn}{Svn}}
+\item 
+class \mbox{\hyperlink{class_svn_wc}{Svn\+Wc}}
+\item 
+class \mbox{\hyperlink{class_svn_wc_schedule}{Svn\+Wc\+Schedule}}
+\item 
+class \mbox{\hyperlink{class_svn_node}{Svn\+Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{svn_8php_abc0c4632e22d58ebaf00eb74fec1191a}{svn\+\_\+checkout}} (\$repos, \$targetpath, \$revision=\mbox{\hyperlink{svn_8php_af091db65d0aecfd91f9f54a6c01ffa27}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+H\+E\+AD}}, \$flags=0)
+\item 
+\mbox{\hyperlink{svn_8php_a05604aa9b424b0078ca70e65e8d32043}{svn\+\_\+cat}} (\$repos\+\_\+url, \$revision\+\_\+no=\mbox{\hyperlink{svn_8php_af091db65d0aecfd91f9f54a6c01ffa27}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+H\+E\+AD}})
+\item 
+\mbox{\hyperlink{svn_8php_a1613d522018381a1497a4da1e25c83d4}{svn\+\_\+ls}} (\$repos\+\_\+url, \$revision\+\_\+no=\mbox{\hyperlink{svn_8php_af091db65d0aecfd91f9f54a6c01ffa27}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+H\+E\+AD}}, \$recurse=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}, \$peg=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{svn_8php_ac003ec997aaddd67c7099254f1c09f42}{svn\+\_\+log}} (\$repos\+\_\+url, \$start\+\_\+revision=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$end\+\_\+revision=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$limit=0, \$flags=\mbox{\hyperlink{svn_8php_a34dbb3b9369236abe3e99df9b9d04808}{S\+V\+N\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+P\+A\+T\+HS}}$\vert$\mbox{\hyperlink{svn_8php_a28bdc4599020049c573790aa00f8b06f}{S\+V\+N\+\_\+\+S\+T\+O\+P\+\_\+\+O\+N\+\_\+\+C\+O\+PY}})
+\item 
+\mbox{\hyperlink{svn_8php_af3ac5bfc863472d7c388df64a02433a6}{svn\+\_\+auth\+\_\+set\+\_\+parameter}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}, \$value)
+\item 
+\mbox{\hyperlink{svn_8php_a6c0fc07b29bb0a9adea4448792235701}{svn\+\_\+auth\+\_\+get\+\_\+parameter}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{svn_8php_af8dc80787dc4f22a25390f01e3792224}{svn\+\_\+client\+\_\+version}} ()
+\item 
+\mbox{\hyperlink{svn_8php_ac104cc3ef6ad970b3766d84f7aae9649}{svn\+\_\+config\+\_\+ensure}} ()
+\item 
+\mbox{\hyperlink{svn_8php_a66a1682faab154decf6950d9feea0a58}{svn\+\_\+diff}} (\$path1, \$rev1, \$path2, \$rev2)
+\item 
+\mbox{\hyperlink{svn_8php_a7257d59e8dcd6766530c426bcd25ecd8}{svn\+\_\+cleanup}} (\$workingdir)
+\item 
+\mbox{\hyperlink{svn_8php_ab73074d60da0f6650ddb9ad813238611}{svn\+\_\+revert}} (\$path, \$recursive=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{svn_8php_a043d9c531dc9e52d329ecd92ee945202}{svn\+\_\+resolved}} ()
+\item 
+\mbox{\hyperlink{svn_8php_a60e27f81176f936061923592919416f2}{svn\+\_\+commit}} (\$\mbox{\hyperlink{standard__3_8php_aafd4d438fd4858e336452872dccfbc21}{log}}, array \$targets, \$recursive=\mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}})
+\item 
+\mbox{\hyperlink{svn_8php_afb442b1ade13cc67373ee99653d38184}{svn\+\_\+lock}} ()
+\item 
+\mbox{\hyperlink{svn_8php_a91ab4c07f4977abbc5dfa35edf1dc974}{svn\+\_\+unlock}} ()
+\item 
+\mbox{\hyperlink{svn_8php_acf602d3e5fdf494e323590d748f02ce3}{svn\+\_\+add}} (\$path, \$recursive=\mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}, \$force=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{svn_8php_a9d558abdb4b2072133e8a0999b5a9dde}{svn\+\_\+status}} (\$path, \$flags=0)
+\item 
+\mbox{\hyperlink{svn_8php_acd81bc49caf6fa6b33ee02bf63f64069}{svn\+\_\+update}} (\$path, \$revno=\mbox{\hyperlink{svn_8php_af091db65d0aecfd91f9f54a6c01ffa27}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+H\+E\+AD}}, \$recurse=\mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}})
+\item 
+\mbox{\hyperlink{svn_8php_a6356656ffe7d9512f0904ead71c004e8}{svn\+\_\+import}} (\$path, \$url, \$nonrecursive)
+\item 
+\mbox{\hyperlink{svn_8php_aaf42e71abc588c4e75e4f02484fb82f2}{svn\+\_\+info}} ()
+\item 
+\mbox{\hyperlink{svn_8php_a31ca3cdfe7c642adec8715ee95431229}{svn\+\_\+export}} (\$frompath, \$topath, \$working\+\_\+copy=\mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}, \$revision\+\_\+no=-\/1)
+\item 
+\mbox{\hyperlink{svn_8php_afeaaa7f13b116ba68b35f6bbd3ef4bdd}{svn\+\_\+copy}} ()
+\item 
+\mbox{\hyperlink{svn_8php_ab237f3148e349b3aacaa51d99fa11f93}{svn\+\_\+switch}} ()
+\item 
+\mbox{\hyperlink{svn_8php_a41f894573f02fc703dcfd27a92c68fda}{svn\+\_\+blame}} (\$repository\+\_\+url, \$revision\+\_\+no=\mbox{\hyperlink{svn_8php_af091db65d0aecfd91f9f54a6c01ffa27}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+H\+E\+AD}})
+\item 
+\mbox{\hyperlink{svn_8php_ab4804cf15ff3e50d60f1bc52d579f5c5}{svn\+\_\+delete}} (\$path, \$force=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{svn_8php_a8242ea5d4dc3a1442fccd2711923092b}{svn\+\_\+mkdir}} (\$path, \$log\+\_\+message=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{svn_8php_ac7d3f8ae7c9da377f2266bcb250dc25c}{svn\+\_\+move}} (\$src\+\_\+path, \$dst\+\_\+path, \$force=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{svn_8php_a7947fa9fe9d210f20804a7e5898cf83a}{svn\+\_\+proplist}} (\$path, \$recurse=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}, \$revision)
+\item 
+\mbox{\hyperlink{svn_8php_ac9da851747bb9f5408e293373b6b58a1}{svn\+\_\+propget}} (\$path, \$property\+\_\+name, \$recurse=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}, \$revision)
+\item 
+\mbox{\hyperlink{svn_8php_a1ae711e657b9b4ecea8509adb02c9505}{svn\+\_\+repos\+\_\+create}} (\$path, array \$config=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$fsconfig=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{svn_8php_a2c52e71881e1172959534e4b3c26c6c6}{svn\+\_\+repos\+\_\+recover}} (\$path)
+\item 
+\mbox{\hyperlink{svn_8php_a7dfd9b9b36026c065d740a0415bc50ca}{svn\+\_\+repos\+\_\+hotcopy}} (\$repospath, \$destpath, \$cleanlogs)
+\item 
+\mbox{\hyperlink{svn_8php_a69f5494f4fe91c95e30ffcf05944109e}{svn\+\_\+repos\+\_\+open}} (\$path)
+\item 
+\mbox{\hyperlink{svn_8php_aec787a833d4eabac69a94e972ee822ba}{svn\+\_\+repos\+\_\+fs}} (\$repos)
+\item 
+\mbox{\hyperlink{svn_8php_a7e43011c8c0a4d13feecb551d55c1ca4}{svn\+\_\+repos\+\_\+fs\+\_\+begin\+\_\+txn\+\_\+for\+\_\+commit}} (\$repos, \$rev, \$author, \$log\+\_\+msg)
+\item 
+\mbox{\hyperlink{svn_8php_ab74ee410f43f5ef75797390a36574636}{svn\+\_\+repos\+\_\+fs\+\_\+commit\+\_\+txn}} (\$txn)
+\item 
+\mbox{\hyperlink{svn_8php_aebd03abc07e337ed57913110d65dead3}{svn\+\_\+fs\+\_\+revision\+\_\+root}} (\$fs, \$revnum)
+\item 
+\mbox{\hyperlink{svn_8php_aa86b9167cdc257e020a04b5c40f92386}{svn\+\_\+fs\+\_\+check\+\_\+path}} (\$fsroot, \$path)
+\item 
+\mbox{\hyperlink{svn_8php_a3d0557533f9740f94a896809e1e34b54}{svn\+\_\+fs\+\_\+revision\+\_\+prop}} (\$fs, \$revnum, \$propname)
+\item 
+\mbox{\hyperlink{svn_8php_ac546fb01c6fec73e43f8ada4faa44fa0}{svn\+\_\+fs\+\_\+dir\+\_\+entries}} (\$fsroot, \$path)
+\item 
+\mbox{\hyperlink{svn_8php_adda5de16a1f8251b004ed07d1dd5ed2d}{svn\+\_\+fs\+\_\+node\+\_\+created\+\_\+rev}} (\$fsroot, \$path)
+\item 
+\mbox{\hyperlink{svn_8php_a12284fc1891608212c27441fb8bc0b10}{svn\+\_\+fs\+\_\+youngest\+\_\+rev}} (\$fs)
+\item 
+\mbox{\hyperlink{svn_8php_a5f71a1131648a742c06492bb77ec177c}{svn\+\_\+fs\+\_\+file\+\_\+contents}} (\$fsroot, \$path)
+\item 
+\mbox{\hyperlink{svn_8php_a2fe34917cf0850361604e339aa7dcb22}{svn\+\_\+fs\+\_\+file\+\_\+length}} (\$fsroot, \$path)
+\item 
+\mbox{\hyperlink{svn_8php_aec21135d821a07e493c3dda5fb5273e7}{svn\+\_\+fs\+\_\+txn\+\_\+root}} (\$txn)
+\item 
+\mbox{\hyperlink{svn_8php_a4c34e75e24b121378b546ec5c446a7aa}{svn\+\_\+fs\+\_\+make\+\_\+file}} (\$root, \$path)
+\item 
+\mbox{\hyperlink{svn_8php_a1c757d015456efa3e5db4ae6ef5deeea}{svn\+\_\+fs\+\_\+make\+\_\+dir}} (\$root, \$path)
+\item 
+\mbox{\hyperlink{svn_8php_a642cc88f934e25d86d0d58aaa3badf41}{svn\+\_\+fs\+\_\+apply\+\_\+text}} (\$root, \$path)
+\item 
+\mbox{\hyperlink{svn_8php_aebf4163e7e1d29f1e640e8bbd1dd5aae}{svn\+\_\+fs\+\_\+copy}} (\$from\+\_\+root, \$from\+\_\+path, \$to\+\_\+root, \$to\+\_\+path)
+\item 
+\mbox{\hyperlink{svn_8php_a8672375582fe01d76c9cb72ebaef56d4}{svn\+\_\+fs\+\_\+delete}} (\$root, \$path)
+\item 
+\mbox{\hyperlink{svn_8php_a3c79a9fdab2cf7baf621d348e3b1f91b}{svn\+\_\+fs\+\_\+begin\+\_\+txn2}} (\$repos, \$rev)
+\item 
+\mbox{\hyperlink{svn_8php_ae287996d9158114f86f9bc3389382efb}{svn\+\_\+fs\+\_\+is\+\_\+dir}} (\$root, \$path)
+\item 
+\mbox{\hyperlink{svn_8php_af88b99b3f6736f2e204a66d435ed80a0}{svn\+\_\+fs\+\_\+is\+\_\+file}} (\$root, \$path)
+\item 
+\mbox{\hyperlink{svn_8php_a0c37e095d69999a258fbe2b9a2a4f949}{svn\+\_\+fs\+\_\+node\+\_\+prop}} (\$fsroot, \$path, \$propname)
+\item 
+\mbox{\hyperlink{svn_8php_a85b210cc2a38d56b4ada24162c937f55}{svn\+\_\+fs\+\_\+change\+\_\+node\+\_\+prop}} (\$root, \$path, \$name, \$value)
+\item 
+\mbox{\hyperlink{svn_8php_a22efd71ead79412405b0187433c3c06a}{svn\+\_\+fs\+\_\+contents\+\_\+changed}} (\$root1, \$path1, \$root2, \$path2)
+\item 
+\mbox{\hyperlink{svn_8php_a9dc3ff9d1c3cfcbeadd2f9c625eeeee9}{svn\+\_\+fs\+\_\+props\+\_\+changed}} (\$root1, \$path1, \$root2, \$path2)
+\item 
+\mbox{\hyperlink{svn_8php_aba2e38ef997bbddfdb50de4c85cb1934}{svn\+\_\+fs\+\_\+abort\+\_\+txn}} (\$txn)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{svn_8php_a2ba64dece8be46008a48cea1582f9154}{S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+U\+S\+E\+R\+N\+A\+ME}} \char`\"{}svn\+:auth\+:username\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_a5d8e22155b66c6df8d7702e990956c4d}{S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+A\+S\+S\+W\+O\+RD}} \char`\"{}svn\+:auth\+:password\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_af2d2b716a0e4cafe907ce2f62139783b}{S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+O\+N\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE}} \char`\"{}svn\+:auth\+:non-\/interactive\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_abb64521bc70afb831a04fafeafdc91de}{S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+D\+O\+N\+T\+\_\+\+S\+T\+O\+R\+E\+\_\+\+P\+A\+S\+S\+W\+O\+R\+DS}} \char`\"{}svn\+:auth\+:dont-\/store-\/passwords\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_a1403d2fc3793e3c5358292ea2905fd80}{S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+O\+\_\+\+A\+U\+T\+H\+\_\+\+C\+A\+C\+HE}} \char`\"{}svn\+:auth\+:no-\/auth-\/cache\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_a4f723008dedd880d4c056fb268c1898c}{S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+S\+L\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+F\+A\+I\+L\+U\+R\+ES}} \char`\"{}svn\+:auth\+:ssl\+:failures\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_af66a40c1081d88f8260f4beb0e3bce85}{S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+S\+L\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+C\+E\+R\+T\+\_\+\+I\+N\+FO}} \char`\"{}svn\+:auth\+:ssl\+:cert-\/info\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_acf4aac2f3add202e016a31aa557b3a30}{S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+C\+O\+N\+F\+IG}} \char`\"{}svn\+:auth\+:config-\/category-\/servers\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_aa300d73fdb9307b8a85d40e68afdc700}{S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+G\+R\+O\+UP}} \char`\"{}svn\+:auth\+:server-\/group\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_ae16164e923250e4a61c00526e885d758}{S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+D\+IR}} \char`\"{}svn\+:auth\+:config-\/\mbox{\hyperlink{standard__7_8php_a6d1d6ce373efce67a2bd07b55397c393}{dir}}\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_a252a87f7de2ac8201c8681aec99fc91a}{P\+H\+P\+\_\+\+S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+S\+S\+L\+\_\+\+V\+E\+R\+I\+F\+Y\+\_\+\+E\+R\+R\+O\+RS}} \char`\"{}php\+:svn\+:auth\+:ignore-\/ssl-\/verify-\/errors\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_a778e5c9dec1fd997fecc7d15b4bdea5a}{S\+V\+N\+\_\+\+F\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+F\+S\+\_\+\+T\+Y\+PE}} \char`\"{}fs-\/type\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_a4ac1de92ca9542c5ada94ad5b11444ee}{S\+V\+N\+\_\+\+F\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+DB}} \char`\"{}bdb\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_a43bbd843a44599a009e4b8bc01612a65}{S\+V\+N\+\_\+\+F\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+S\+FS}} \char`\"{}fsfs\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_ad8cf57510e94733269e848bb0d7f972b}{S\+V\+N\+\_\+\+P\+R\+O\+P\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+D\+A\+TE}} \char`\"{}svn\+:date\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_a23e477cbcc78eeea7a485f50580a8d53}{S\+V\+N\+\_\+\+P\+R\+O\+P\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+O\+R\+I\+G\+\_\+\+D\+A\+TE}} \char`\"{}svn\+:original-\/\mbox{\hyperlink{date_8php_a13bb6fb39ea3bfc7b340f60f1377b5f4}{date}}\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_afb1a2e4e48b03827fc50aa9828d99967}{S\+V\+N\+\_\+\+P\+R\+O\+P\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+A\+U\+T\+H\+OR}} \char`\"{}svn\+:author\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_ad3b738273474dc9dc6e00da0908157de}{S\+V\+N\+\_\+\+P\+R\+O\+P\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+L\+OG}} \char`\"{}svn\+:log\char`\"{}
+\item 
+const \mbox{\hyperlink{svn_8php_adaa421208edb3e3bdaf2fd63be79a95b}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+I\+N\+I\+T\+I\+AL}} 1
+\item 
+const \mbox{\hyperlink{svn_8php_af091db65d0aecfd91f9f54a6c01ffa27}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+H\+E\+AD}} -\/1
+\item 
+const \mbox{\hyperlink{svn_8php_a13f33c86d8a01eef4967d74d20b60550}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+B\+A\+SE}} -\/2
+\item 
+const \mbox{\hyperlink{svn_8php_aa80a443c9ac6b39913ed9ea53034b28b}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+C\+O\+M\+M\+I\+T\+T\+ED}} -\/3
+\item 
+const \mbox{\hyperlink{svn_8php_a7878672c0c030d1dc8450bc48c958184}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+P\+R\+EV}} -\/4
+\item 
+const \mbox{\hyperlink{svn_8php_a34fd377e1cb0f168469b76d5fe5d3b07}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+ED}} -\/5
+\item 
+const \mbox{\hyperlink{svn_8php_a370fb85b794c10a83dd725f495f89f74}{S\+V\+N\+\_\+\+N\+O\+N\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE}} 1
+\item 
+const \mbox{\hyperlink{svn_8php_a34dbb3b9369236abe3e99df9b9d04808}{S\+V\+N\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+P\+A\+T\+HS}} 2
+\item 
+const \mbox{\hyperlink{svn_8php_a3917676085fc46e4ee4ec353dff0530f}{S\+V\+N\+\_\+\+O\+M\+I\+T\+\_\+\+M\+E\+S\+S\+A\+G\+ES}} 4
+\item 
+const \mbox{\hyperlink{svn_8php_a28bdc4599020049c573790aa00f8b06f}{S\+V\+N\+\_\+\+S\+T\+O\+P\+\_\+\+O\+N\+\_\+\+C\+O\+PY}} 8
+\item 
+const \mbox{\hyperlink{svn_8php_a09bd04eb83b626b3b608096f3780f149}{S\+V\+N\+\_\+\+A\+LL}} 16
+\item 
+const \mbox{\hyperlink{svn_8php_a3f5454914b78c6a023bc81173858370f}{S\+V\+N\+\_\+\+S\+H\+O\+W\+\_\+\+U\+P\+D\+A\+T\+ES}} 32
+\item 
+const \mbox{\hyperlink{svn_8php_aaef82daa8dee2da5e82876bc7eb4eae7}{S\+V\+N\+\_\+\+N\+O\+\_\+\+I\+G\+N\+O\+RE}} 64
+\item 
+const \mbox{\hyperlink{svn_8php_aaaeff9218a5ebe083baa7dba65257866}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+NE}} 1
+\item 
+const \mbox{\hyperlink{svn_8php_a373cd8b225e9efd6d9141267d450c12c}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+U\+N\+V\+E\+R\+S\+I\+O\+N\+ED}} 2
+\item 
+const \mbox{\hyperlink{svn_8php_a9e3e245bb292440aa0b8638f56487799}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+R\+M\+AL}} 3
+\item 
+const \mbox{\hyperlink{svn_8php_af6bdce78701a51379d6b20edbfd33289}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+D\+D\+ED}} 4
+\item 
+const \mbox{\hyperlink{svn_8php_a84b237b5f18a0e1ae20d4159efe04277}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+I\+S\+S\+I\+NG}} 5
+\item 
+const \mbox{\hyperlink{svn_8php_addc74519c26cba026f8c46818f2b7a87}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+E\+L\+E\+T\+ED}} 6
+\item 
+const \mbox{\hyperlink{svn_8php_a8d10314eaf19141923ff87b2a6eb289c}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+P\+L\+A\+C\+ED}} 7
+\item 
+const \mbox{\hyperlink{svn_8php_afc7b61ef67704e3ac879a4ca22418168}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+O\+D\+I\+F\+I\+ED}} 8
+\item 
+const \mbox{\hyperlink{svn_8php_a6bdbd56e4b42412f49fe95da2e506880}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+E\+R\+G\+ED}} 9
+\item 
+const \mbox{\hyperlink{svn_8php_a53c3a8f1c93923494f5ca11e6d8df596}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+F\+L\+I\+C\+T\+ED}} 10
+\item 
+const \mbox{\hyperlink{svn_8php_a5fb7951e299f9aa3ddfddec2c799a8cc}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+G\+N\+O\+R\+ED}} 11
+\item 
+const \mbox{\hyperlink{svn_8php_a83a443a4fc671ac10b11a3ba72a8f022}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+O\+B\+S\+T\+R\+U\+C\+T\+ED}} 12
+\item 
+const \mbox{\hyperlink{svn_8php_a37987e0362b1ee3cb94763e251876e2b}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+E\+X\+T\+E\+R\+N\+AL}} 13
+\item 
+const \mbox{\hyperlink{svn_8php_aa517aa2b69916952f06c4ce20791ef0b}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+TE}} 14
+\item 
+const \mbox{\hyperlink{svn_8php_abd1fb5501ae3fc19a2ec30dfeb1797cf}{S\+V\+N\+\_\+\+N\+O\+D\+E\+\_\+\+N\+O\+NE}} 0
+\item 
+const \mbox{\hyperlink{svn_8php_ae05490b942de54c953ad28fb2b616948}{S\+V\+N\+\_\+\+N\+O\+D\+E\+\_\+\+F\+I\+LE}} 1
+\item 
+const \mbox{\hyperlink{svn_8php_ad82c8b9bed53861f9bdce3a21540d92c}{S\+V\+N\+\_\+\+N\+O\+D\+E\+\_\+\+D\+IR}} 2
+\item 
+const \mbox{\hyperlink{svn_8php_a126e6bf4d93c1795b0f9f1a7dd6ae629}{S\+V\+N\+\_\+\+N\+O\+D\+E\+\_\+\+U\+N\+K\+N\+O\+WN}} 3
+\item 
+const \mbox{\hyperlink{svn_8php_a5d0801f8c152eaf59dd6162074f7a233}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+N\+O\+R\+M\+AL}} 0
+\item 
+const \mbox{\hyperlink{svn_8php_a884a671bc8ba54a02b934124cbbca715}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+A\+DD}} 1
+\item 
+const \mbox{\hyperlink{svn_8php_add814d730151faaf74b22ca7ac621235}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+D\+E\+L\+E\+TE}} 2
+\item 
+const \mbox{\hyperlink{svn_8php_adaf4c38879116ea76b9da0af073a29e8}{S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+R\+E\+P\+L\+A\+CE}} 3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{svn_8php_acf602d3e5fdf494e323590d748f02ce3}\label{svn_8php_acf602d3e5fdf494e323590d748f02ce3}} 
+\index{svn.php@{svn.php}!svn\_add@{svn\_add}}
+\index{svn\_add@{svn\_add}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_add()}{svn\_add()}}
+{\footnotesize\ttfamily svn\+\_\+add (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$recursive = {\ttfamily \mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}},  }\item[{}]{\$force = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Schedules the addition of an item in a working directory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$path }} Path of item to add. 
+
+Relative paths will be resolved as if the current working directory was the one that contains the P\+HP binary. To use the calling script\&\#x00027;s working directory, use {\bfseries{realpath}} or dirname({\bfseries{F\+I\+LE}}). 
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$recursive} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If item is directory, whether or not to recursively add all of its contents. Default is {\bfseries{T\+R\+UE}} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$force} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If true, Subversion will recurse into already versioned directories in order to add unversioned files that may be hiding in those directories. Default is {\bfseries{F\+A\+L\+SE}} 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a6c0fc07b29bb0a9adea4448792235701}\label{svn_8php_a6c0fc07b29bb0a9adea4448792235701}} 
+\index{svn.php@{svn.php}!svn\_auth\_get\_parameter@{svn\_auth\_get\_parameter}}
+\index{svn\_auth\_get\_parameter@{svn\_auth\_get\_parameter}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_auth\_get\_parameter()}{svn\_auth\_get\_parameter()}}
+{\footnotesize\ttfamily svn\+\_\+auth\+\_\+get\+\_\+parameter (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Retrieves authentication parameter \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$key }} String key name. Use the authentication constants defined by this extension to specify a key. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$null the string value of the parameter at {\itshape key}; returns {\bfseries{N\+U\+LL}} if parameter does not exist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_af3ac5bfc863472d7c388df64a02433a6}\label{svn_8php_af3ac5bfc863472d7c388df64a02433a6}} 
+\index{svn.php@{svn.php}!svn\_auth\_set\_parameter@{svn\_auth\_set\_parameter}}
+\index{svn\_auth\_set\_parameter@{svn\_auth\_set\_parameter}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_auth\_set\_parameter()}{svn\_auth\_set\_parameter()}}
+{\footnotesize\ttfamily svn\+\_\+auth\+\_\+set\+\_\+parameter (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Sets an authentication parameter \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$key }} String key name. Use the authentication constants defined by this extension to specify a key. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+String value to set to parameter at key. Format of value varies with the parameter. 
+
+\begin{DoxyReturn}{Returns}
+void No value is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a41f894573f02fc703dcfd27a92c68fda}\label{svn_8php_a41f894573f02fc703dcfd27a92c68fda}} 
+\index{svn.php@{svn.php}!svn\_blame@{svn\_blame}}
+\index{svn\_blame@{svn\_blame}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_blame()}{svn\_blame()}}
+{\footnotesize\ttfamily svn\+\_\+blame (\begin{DoxyParamCaption}\item[{}]{\$repository\+\_\+url,  }\item[{}]{\$revision\+\_\+no = {\ttfamily \mbox{\hyperlink{svn_8php_af091db65d0aecfd91f9f54a6c01ffa27}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+H\+E\+AD}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+3.\+0)~\newline
+ Get the S\+VN blame for a file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$repository\+\_\+url }} The repository U\+RL. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$revision\+\_\+no} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The revision number. 
+
+\begin{DoxyReturn}{Returns}
+array An array of S\+VN blame information separated by line which includes the revision number, line number, line of code, author, and date. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a05604aa9b424b0078ca70e65e8d32043}\label{svn_8php_a05604aa9b424b0078ca70e65e8d32043}} 
+\index{svn.php@{svn.php}!svn\_cat@{svn\_cat}}
+\index{svn\_cat@{svn\_cat}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_cat()}{svn\_cat()}}
+{\footnotesize\ttfamily svn\+\_\+cat (\begin{DoxyParamCaption}\item[{}]{\$repos\+\_\+url,  }\item[{}]{\$revision\+\_\+no = {\ttfamily \mbox{\hyperlink{svn_8php_af091db65d0aecfd91f9f54a6c01ffa27}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+H\+E\+AD}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Returns the contents of a file in a repository \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$repos\+\_\+url }} String U\+RL path to item in a repository. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$revision\+\_\+no} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Integer revision number of item to retrieve, default is the H\+E\+AD revision. 
+
+\begin{DoxyReturn}{Returns}
+string the string contents of the item from the repository on success, and {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_abc0c4632e22d58ebaf00eb74fec1191a}\label{svn_8php_abc0c4632e22d58ebaf00eb74fec1191a}} 
+\index{svn.php@{svn.php}!svn\_checkout@{svn\_checkout}}
+\index{svn\_checkout@{svn\_checkout}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_checkout()}{svn\_checkout()}}
+{\footnotesize\ttfamily svn\+\_\+checkout (\begin{DoxyParamCaption}\item[{}]{\$repos,  }\item[{}]{\$targetpath,  }\item[{}]{\$revision = {\ttfamily \mbox{\hyperlink{svn_8php_af091db65d0aecfd91f9f54a6c01ffa27}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+H\+E\+AD}}},  }\item[{}]{\$flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Checks out a working copy from the repository \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$repos }} String U\+RL path to directory in repository to check out. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$targetpath} & \\
+\hline
+\end{DoxyParams}
+String local path to directory to check out in to 
+
+Relative paths will be resolved as if the current working directory was the one that contains the P\+HP binary. To use the calling script\&\#x00027;s working directory, use {\bfseries{realpath}} or dirname({\bfseries{F\+I\+LE}}). 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$revision} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Integer revision number of repository to check out. Default is H\+E\+AD, the most recent revision. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Any combination of {\bfseries{S\+V\+N\+\_\+\+N\+O\+N\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE}} and {\bfseries{S\+V\+N\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+E\+X\+T\+E\+R\+N\+A\+LS}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a7257d59e8dcd6766530c426bcd25ecd8}\label{svn_8php_a7257d59e8dcd6766530c426bcd25ecd8}} 
+\index{svn.php@{svn.php}!svn\_cleanup@{svn\_cleanup}}
+\index{svn\_cleanup@{svn\_cleanup}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_cleanup()}{svn\_cleanup()}}
+{\footnotesize\ttfamily svn\+\_\+cleanup (\begin{DoxyParamCaption}\item[{}]{\$workingdir }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Recursively cleanup a working copy directory, finishing incomplete operations and removing locks \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$workingdir }} String path to local working directory to cleanup 
+
+Relative paths will be resolved as if the current working directory was the one that contains the P\+HP binary. To use the calling script\&\#x00027;s working directory, use {\bfseries{realpath}} or dirname({\bfseries{F\+I\+LE}}). \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_af8dc80787dc4f22a25390f01e3792224}\label{svn_8php_af8dc80787dc4f22a25390f01e3792224}} 
+\index{svn.php@{svn.php}!svn\_client\_version@{svn\_client\_version}}
+\index{svn\_client\_version@{svn\_client\_version}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_client\_version()}{svn\_client\_version()}}
+{\footnotesize\ttfamily svn\+\_\+client\+\_\+version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Returns the version of the S\+VN client libraries \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string String version number, usually in form of x.\+y.\+z. }}\mbox{\Hypertarget{svn_8php_a60e27f81176f936061923592919416f2}\label{svn_8php_a60e27f81176f936061923592919416f2}} 
+\index{svn.php@{svn.php}!svn\_commit@{svn\_commit}}
+\index{svn\_commit@{svn\_commit}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_commit()}{svn\_commit()}}
+{\footnotesize\ttfamily svn\+\_\+commit (\begin{DoxyParamCaption}\item[{}]{\$log,  }\item[{array}]{\$targets,  }\item[{}]{\$recursive = {\ttfamily \mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Sends changes from the local working copy to the repository \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$log }} String log text to commit 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$targets} & \\
+\hline
+\end{DoxyParams}
+Array of local paths of files to be committed 
+
+This parameter must be an array, a string for a single target is not acceptable. Relative paths will be resolved as if the current working directory was the one that contains the P\+HP binary. To use the calling script\&\#x00027;s working directory, use {\bfseries{realpath}} or dirname({\bfseries{F\+I\+LE}}). 
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$recursive} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Boolean flag to disable recursive committing of directories in the {\itshape targets} array. Default is {\bfseries{T\+R\+UE}}. 
+
+\begin{DoxyReturn}{Returns}
+array array in form of\+: 
+\end{DoxyReturn}
+
+\begin{DoxyPre}
+array(
+0 => integer revision number of commit
+1 => string ISO 8601 date and time of commit
+2 => name of committer
+)
+\end{DoxyPre}
+ $<$p$<$blockquote$>$
+
+Returns {\bfseries{F\+A\+L\+SE}} on failure. \mbox{\Hypertarget{svn_8php_ac104cc3ef6ad970b3766d84f7aae9649}\label{svn_8php_ac104cc3ef6ad970b3766d84f7aae9649}} 
+\index{svn.php@{svn.php}!svn\_config\_ensure@{svn\_config\_ensure}}
+\index{svn\_config\_ensure@{svn\_config\_ensure}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_config\_ensure()}{svn\_config\_ensure()}}
+{\footnotesize\ttfamily svn\+\_\+config\+\_\+ensure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{svn_8php_afeaaa7f13b116ba68b35f6bbd3ef4bdd}\label{svn_8php_afeaaa7f13b116ba68b35f6bbd3ef4bdd}} 
+\index{svn.php@{svn.php}!svn\_copy@{svn\_copy}}
+\index{svn\_copy@{svn\_copy}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_copy()}{svn\_copy()}}
+{\footnotesize\ttfamily svn\+\_\+copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{svn_8php_ab4804cf15ff3e50d60f1bc52d579f5c5}\label{svn_8php_ab4804cf15ff3e50d60f1bc52d579f5c5}} 
+\index{svn.php@{svn.php}!svn\_delete@{svn\_delete}}
+\index{svn\_delete@{svn\_delete}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_delete()}{svn\_delete()}}
+{\footnotesize\ttfamily svn\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$force = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+4.\+0)~\newline
+ Delete items from a working copy or repository. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$path }} Path of item to delete. 
+
+Relative paths will be resolved as if the current working directory was the one that contains the P\+HP binary. To use the calling script\&\#x00027;s working directory, use {\bfseries{realpath}} or dirname({\bfseries{F\+I\+LE}}). 
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$force} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If {\bfseries{T\+R\+UE}}, the file will be deleted even if it has local modifications. Otherwise, local modifications will result in a failure. Default is {\bfseries{F\+A\+L\+SE}} 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a66a1682faab154decf6950d9feea0a58}\label{svn_8php_a66a1682faab154decf6950d9feea0a58}} 
+\index{svn.php@{svn.php}!svn\_diff@{svn\_diff}}
+\index{svn\_diff@{svn\_diff}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_diff()}{svn\_diff()}}
+{\footnotesize\ttfamily svn\+\_\+diff (\begin{DoxyParamCaption}\item[{}]{\$path1,  }\item[{}]{\$rev1,  }\item[{}]{\$path2,  }\item[{}]{\$rev2 }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Recursively diffs two paths \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$path1 }} First path to diff. This can be a U\+RL to a file/directory in an S\+VN repository or a local file/directory path. 
+
+Relative paths will be resolved as if the current working directory was the one that contains the P\+HP binary. To use the calling script\&\#x00027;s working directory, use {\bfseries{realpath}} or dirname({\bfseries{F\+I\+LE}}). If a local file path has only backslashes and no forward slashes, this extension will fail to find the path. Always replace all backslashes with forward slashes when using this function. 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$rev1} & \\
+\hline
+\end{DoxyParams}
+First path\textquotesingle{}s revision number. Use {\bfseries{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+H\+E\+AD}} to specify the most recent revision. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path2} & \\
+\hline
+\end{DoxyParams}
+Second path to diff. See {\itshape path1} for description. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$rev2} & \\
+\hline
+\end{DoxyParams}
+Second path\textquotesingle{}s revision number. See {\itshape rev1} for description. 
+
+\begin{DoxyReturn}{Returns}
+array an array-\/list consisting of two streams\+: the first is the diff output and the second contains error stream output. The streams can be read using {\bfseries{fread}}. Returns {\bfseries{F\+A\+L\+SE}} or {\bfseries{N\+U\+LL}} on error. 
+\end{DoxyReturn}
+
+
+The diff output will, by default, be in the form of Subversion\textquotesingle{}s custom unified diff format, but an external diff engine may be used depending on Subversion\textquotesingle{}s configuration. \mbox{\Hypertarget{svn_8php_a31ca3cdfe7c642adec8715ee95431229}\label{svn_8php_a31ca3cdfe7c642adec8715ee95431229}} 
+\index{svn.php@{svn.php}!svn\_export@{svn\_export}}
+\index{svn\_export@{svn\_export}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_export()}{svn\_export()}}
+{\footnotesize\ttfamily svn\+\_\+export (\begin{DoxyParamCaption}\item[{}]{\$frompath,  }\item[{}]{\$topath,  }\item[{}]{\$working\+\_\+copy = {\ttfamily \mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}},  }\item[{}]{\$revision\+\_\+no = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+3.\+0)~\newline
+ Export the contents of a S\+VN directory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$frompath }} The path to the current repository. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$topath} & \\
+\hline
+\end{DoxyParams}
+The path to the new repository. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$working\+\_\+copy} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If {\bfseries{T\+R\+UE}}, it will export uncommitted files from the working copy. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$revision\+\_\+no} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_aba2e38ef997bbddfdb50de4c85cb1934}\label{svn_8php_aba2e38ef997bbddfdb50de4c85cb1934}} 
+\index{svn.php@{svn.php}!svn\_fs\_abort\_txn@{svn\_fs\_abort\_txn}}
+\index{svn\_fs\_abort\_txn@{svn\_fs\_abort\_txn}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_abort\_txn()}{svn\_fs\_abort\_txn()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+abort\+\_\+txn (\begin{DoxyParamCaption}\item[{}]{\$txn }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Abort a transaction, returns true if everything is okay, false otherwise \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$txn }} Its description 
+
+\begin{DoxyReturn}{Returns}
+bool What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a642cc88f934e25d86d0d58aaa3badf41}\label{svn_8php_a642cc88f934e25d86d0d58aaa3badf41}} 
+\index{svn.php@{svn.php}!svn\_fs\_apply\_text@{svn\_fs\_apply\_text}}
+\index{svn\_fs\_apply\_text@{svn\_fs\_apply\_text}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_apply\_text()}{svn\_fs\_apply\_text()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+apply\+\_\+text (\begin{DoxyParamCaption}\item[{}]{\$root,  }\item[{}]{\$path }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Creates and returns a stream that will be used to replace \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$root }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+resource What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a3c79a9fdab2cf7baf621d348e3b1f91b}\label{svn_8php_a3c79a9fdab2cf7baf621d348e3b1f91b}} 
+\index{svn.php@{svn.php}!svn\_fs\_begin\_txn2@{svn\_fs\_begin\_txn2}}
+\index{svn\_fs\_begin\_txn2@{svn\_fs\_begin\_txn2}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_begin\_txn2()}{svn\_fs\_begin\_txn2()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+begin\+\_\+txn2 (\begin{DoxyParamCaption}\item[{}]{\$repos,  }\item[{}]{\$rev }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Create a new transaction \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$repos }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$rev} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+resource What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a85b210cc2a38d56b4ada24162c937f55}\label{svn_8php_a85b210cc2a38d56b4ada24162c937f55}} 
+\index{svn.php@{svn.php}!svn\_fs\_change\_node\_prop@{svn\_fs\_change\_node\_prop}}
+\index{svn\_fs\_change\_node\_prop@{svn\_fs\_change\_node\_prop}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_change\_node\_prop()}{svn\_fs\_change\_node\_prop()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+change\+\_\+node\+\_\+prop (\begin{DoxyParamCaption}\item[{}]{\$root,  }\item[{}]{\$path,  }\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Return true if everything is ok, false otherwise \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$root }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+bool What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_aa86b9167cdc257e020a04b5c40f92386}\label{svn_8php_aa86b9167cdc257e020a04b5c40f92386}} 
+\index{svn.php@{svn.php}!svn\_fs\_check\_path@{svn\_fs\_check\_path}}
+\index{svn\_fs\_check\_path@{svn\_fs\_check\_path}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_check\_path()}{svn\_fs\_check\_path()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+check\+\_\+path (\begin{DoxyParamCaption}\item[{}]{\$fsroot,  }\item[{}]{\$path }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Determines what kind of item lives at path in a given repository fsroot \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$fsroot }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+int What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a22efd71ead79412405b0187433c3c06a}\label{svn_8php_a22efd71ead79412405b0187433c3c06a}} 
+\index{svn.php@{svn.php}!svn\_fs\_contents\_changed@{svn\_fs\_contents\_changed}}
+\index{svn\_fs\_contents\_changed@{svn\_fs\_contents\_changed}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_contents\_changed()}{svn\_fs\_contents\_changed()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+contents\+\_\+changed (\begin{DoxyParamCaption}\item[{}]{\$root1,  }\item[{}]{\$path1,  }\item[{}]{\$root2,  }\item[{}]{\$path2 }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Return true if content is different, false otherwise \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$root1 }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path1} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$root2} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path2} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+bool What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_aebf4163e7e1d29f1e640e8bbd1dd5aae}\label{svn_8php_aebf4163e7e1d29f1e640e8bbd1dd5aae}} 
+\index{svn.php@{svn.php}!svn\_fs\_copy@{svn\_fs\_copy}}
+\index{svn\_fs\_copy@{svn\_fs\_copy}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_copy()}{svn\_fs\_copy()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+copy (\begin{DoxyParamCaption}\item[{}]{\$from\+\_\+root,  }\item[{}]{\$from\+\_\+path,  }\item[{}]{\$to\+\_\+root,  }\item[{}]{\$to\+\_\+path }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Copies a file or a directory, returns true if all is ok, false otherwise \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$from\+\_\+root }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from\+\_\+path} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$to\+\_\+root} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$to\+\_\+path} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+bool What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a8672375582fe01d76c9cb72ebaef56d4}\label{svn_8php_a8672375582fe01d76c9cb72ebaef56d4}} 
+\index{svn.php@{svn.php}!svn\_fs\_delete@{svn\_fs\_delete}}
+\index{svn\_fs\_delete@{svn\_fs\_delete}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_delete()}{svn\_fs\_delete()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{\$root,  }\item[{}]{\$path }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Deletes a file or a directory, return true if all is ok, false otherwise \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$root }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+bool What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_ac546fb01c6fec73e43f8ada4faa44fa0}\label{svn_8php_ac546fb01c6fec73e43f8ada4faa44fa0}} 
+\index{svn.php@{svn.php}!svn\_fs\_dir\_entries@{svn\_fs\_dir\_entries}}
+\index{svn\_fs\_dir\_entries@{svn\_fs\_dir\_entries}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_dir\_entries()}{svn\_fs\_dir\_entries()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+dir\+\_\+entries (\begin{DoxyParamCaption}\item[{}]{\$fsroot,  }\item[{}]{\$path }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Enumerates the directory entries under path; returns a hash of dir names to file type \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$fsroot }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+array What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a5f71a1131648a742c06492bb77ec177c}\label{svn_8php_a5f71a1131648a742c06492bb77ec177c}} 
+\index{svn.php@{svn.php}!svn\_fs\_file\_contents@{svn\_fs\_file\_contents}}
+\index{svn\_fs\_file\_contents@{svn\_fs\_file\_contents}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_file\_contents()}{svn\_fs\_file\_contents()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+file\+\_\+contents (\begin{DoxyParamCaption}\item[{}]{\$fsroot,  }\item[{}]{\$path }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Returns a stream to access the contents of a file from a given version of the fs \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$fsroot }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+resource What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a2fe34917cf0850361604e339aa7dcb22}\label{svn_8php_a2fe34917cf0850361604e339aa7dcb22}} 
+\index{svn.php@{svn.php}!svn\_fs\_file\_length@{svn\_fs\_file\_length}}
+\index{svn\_fs\_file\_length@{svn\_fs\_file\_length}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_file\_length()}{svn\_fs\_file\_length()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+file\+\_\+length (\begin{DoxyParamCaption}\item[{}]{\$fsroot,  }\item[{}]{\$path }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Returns the length of a file from a given version of the fs \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$fsroot }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+int What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_ae287996d9158114f86f9bc3389382efb}\label{svn_8php_ae287996d9158114f86f9bc3389382efb}} 
+\index{svn.php@{svn.php}!svn\_fs\_is\_dir@{svn\_fs\_is\_dir}}
+\index{svn\_fs\_is\_dir@{svn\_fs\_is\_dir}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_is\_dir()}{svn\_fs\_is\_dir()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+is\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{\$root,  }\item[{}]{\$path }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Return true if the path points to a directory, false otherwise \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$root }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+bool What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_af88b99b3f6736f2e204a66d435ed80a0}\label{svn_8php_af88b99b3f6736f2e204a66d435ed80a0}} 
+\index{svn.php@{svn.php}!svn\_fs\_is\_file@{svn\_fs\_is\_file}}
+\index{svn\_fs\_is\_file@{svn\_fs\_is\_file}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_is\_file()}{svn\_fs\_is\_file()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+is\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$root,  }\item[{}]{\$path }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Return true if the path points to a file, false otherwise \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$root }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+bool What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a1c757d015456efa3e5db4ae6ef5deeea}\label{svn_8php_a1c757d015456efa3e5db4ae6ef5deeea}} 
+\index{svn.php@{svn.php}!svn\_fs\_make\_dir@{svn\_fs\_make\_dir}}
+\index{svn\_fs\_make\_dir@{svn\_fs\_make\_dir}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_make\_dir()}{svn\_fs\_make\_dir()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+make\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{\$root,  }\item[{}]{\$path }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Creates a new empty directory, returns true if all is ok, false otherwise \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$root }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+bool What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a4c34e75e24b121378b546ec5c446a7aa}\label{svn_8php_a4c34e75e24b121378b546ec5c446a7aa}} 
+\index{svn.php@{svn.php}!svn\_fs\_make\_file@{svn\_fs\_make\_file}}
+\index{svn\_fs\_make\_file@{svn\_fs\_make\_file}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_make\_file()}{svn\_fs\_make\_file()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+make\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$root,  }\item[{}]{\$path }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Creates a new empty file, returns true if all is ok, false otherwise \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$root }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+bool What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_adda5de16a1f8251b004ed07d1dd5ed2d}\label{svn_8php_adda5de16a1f8251b004ed07d1dd5ed2d}} 
+\index{svn.php@{svn.php}!svn\_fs\_node\_created\_rev@{svn\_fs\_node\_created\_rev}}
+\index{svn\_fs\_node\_created\_rev@{svn\_fs\_node\_created\_rev}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_node\_created\_rev()}{svn\_fs\_node\_created\_rev()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+node\+\_\+created\+\_\+rev (\begin{DoxyParamCaption}\item[{}]{\$fsroot,  }\item[{}]{\$path }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Returns the revision in which path under fsroot was created \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$fsroot }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+int What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a0c37e095d69999a258fbe2b9a2a4f949}\label{svn_8php_a0c37e095d69999a258fbe2b9a2a4f949}} 
+\index{svn.php@{svn.php}!svn\_fs\_node\_prop@{svn\_fs\_node\_prop}}
+\index{svn\_fs\_node\_prop@{svn\_fs\_node\_prop}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_node\_prop()}{svn\_fs\_node\_prop()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+node\+\_\+prop (\begin{DoxyParamCaption}\item[{}]{\$fsroot,  }\item[{}]{\$path,  }\item[{}]{\$propname }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Returns the value of a property for a node \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$fsroot }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$propname} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+string What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a9dc3ff9d1c3cfcbeadd2f9c625eeeee9}\label{svn_8php_a9dc3ff9d1c3cfcbeadd2f9c625eeeee9}} 
+\index{svn.php@{svn.php}!svn\_fs\_props\_changed@{svn\_fs\_props\_changed}}
+\index{svn\_fs\_props\_changed@{svn\_fs\_props\_changed}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_props\_changed()}{svn\_fs\_props\_changed()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+props\+\_\+changed (\begin{DoxyParamCaption}\item[{}]{\$root1,  }\item[{}]{\$path1,  }\item[{}]{\$root2,  }\item[{}]{\$path2 }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Return true if props are different, false otherwise \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$root1 }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path1} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$root2} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path2} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+bool What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a3d0557533f9740f94a896809e1e34b54}\label{svn_8php_a3d0557533f9740f94a896809e1e34b54}} 
+\index{svn.php@{svn.php}!svn\_fs\_revision\_prop@{svn\_fs\_revision\_prop}}
+\index{svn\_fs\_revision\_prop@{svn\_fs\_revision\_prop}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_revision\_prop()}{svn\_fs\_revision\_prop()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+revision\+\_\+prop (\begin{DoxyParamCaption}\item[{}]{\$fs,  }\item[{}]{\$revnum,  }\item[{}]{\$propname }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Fetches the value of a named property \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$fs }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$revnum} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$propname} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+string What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_aebd03abc07e337ed57913110d65dead3}\label{svn_8php_aebd03abc07e337ed57913110d65dead3}} 
+\index{svn.php@{svn.php}!svn\_fs\_revision\_root@{svn\_fs\_revision\_root}}
+\index{svn\_fs\_revision\_root@{svn\_fs\_revision\_root}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_revision\_root()}{svn\_fs\_revision\_root()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+revision\+\_\+root (\begin{DoxyParamCaption}\item[{}]{\$fs,  }\item[{}]{\$revnum }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Get a handle on a specific version of the repository root \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$fs }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$revnum} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+resource What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_aec21135d821a07e493c3dda5fb5273e7}\label{svn_8php_aec21135d821a07e493c3dda5fb5273e7}} 
+\index{svn.php@{svn.php}!svn\_fs\_txn\_root@{svn\_fs\_txn\_root}}
+\index{svn\_fs\_txn\_root@{svn\_fs\_txn\_root}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_txn\_root()}{svn\_fs\_txn\_root()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+txn\+\_\+root (\begin{DoxyParamCaption}\item[{}]{\$txn }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Creates and returns a transaction root \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$txn }} Its description 
+
+\begin{DoxyReturn}{Returns}
+resource What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a12284fc1891608212c27441fb8bc0b10}\label{svn_8php_a12284fc1891608212c27441fb8bc0b10}} 
+\index{svn.php@{svn.php}!svn\_fs\_youngest\_rev@{svn\_fs\_youngest\_rev}}
+\index{svn\_fs\_youngest\_rev@{svn\_fs\_youngest\_rev}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_fs\_youngest\_rev()}{svn\_fs\_youngest\_rev()}}
+{\footnotesize\ttfamily svn\+\_\+fs\+\_\+youngest\+\_\+rev (\begin{DoxyParamCaption}\item[{}]{\$fs }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Returns the number of the youngest revision in the filesystem \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$fs }} Its description 
+
+\begin{DoxyReturn}{Returns}
+int What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a6356656ffe7d9512f0904ead71c004e8}\label{svn_8php_a6356656ffe7d9512f0904ead71c004e8}} 
+\index{svn.php@{svn.php}!svn\_import@{svn\_import}}
+\index{svn\_import@{svn\_import}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_import()}{svn\_import()}}
+{\footnotesize\ttfamily svn\+\_\+import (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$url,  }\item[{}]{\$nonrecursive }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Imports an unversioned path into a repository \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$path }} Path of file or directory to import. 
+
+Relative paths will be resolved as if the current working directory was the one that contains the P\+HP binary. To use the calling script\&\#x00027;s working directory, use {\bfseries{realpath}} or dirname({\bfseries{F\+I\+LE}}). 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & \\
+\hline
+\end{DoxyParams}
+Repository U\+RL to import into. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$nonrecursive} & \\
+\hline
+\end{DoxyParams}
+Whether or not to refrain from recursively processing directories. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_aaf42e71abc588c4e75e4f02484fb82f2}\label{svn_8php_aaf42e71abc588c4e75e4f02484fb82f2}} 
+\index{svn.php@{svn.php}!svn\_info@{svn\_info}}
+\index{svn\_info@{svn\_info}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_info()}{svn\_info()}}
+{\footnotesize\ttfamily svn\+\_\+info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{svn_8php_afb442b1ade13cc67373ee99653d38184}\label{svn_8php_afb442b1ade13cc67373ee99653d38184}} 
+\index{svn.php@{svn.php}!svn\_lock@{svn\_lock}}
+\index{svn\_lock@{svn\_lock}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_lock()}{svn\_lock()}}
+{\footnotesize\ttfamily svn\+\_\+lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{svn_8php_ac003ec997aaddd67c7099254f1c09f42}\label{svn_8php_ac003ec997aaddd67c7099254f1c09f42}} 
+\index{svn.php@{svn.php}!svn\_log@{svn\_log}}
+\index{svn\_log@{svn\_log}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_log()}{svn\_log()}}
+{\footnotesize\ttfamily svn\+\_\+log (\begin{DoxyParamCaption}\item[{}]{\$repos\+\_\+url,  }\item[{}]{\$start\+\_\+revision = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$end\+\_\+revision = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$limit = {\ttfamily 0},  }\item[{}]{\$flags = {\ttfamily \mbox{\hyperlink{svn_8php_a34dbb3b9369236abe3e99df9b9d04808}{S\+V\+N\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+P\+A\+T\+HS}}~$\vert$~\mbox{\hyperlink{svn_8php_a28bdc4599020049c573790aa00f8b06f}{S\+V\+N\+\_\+\+S\+T\+O\+P\+\_\+\+O\+N\+\_\+\+C\+O\+PY}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Returns the commit log messages of a repository U\+RL \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$repos\+\_\+url }} Repository U\+RL of the item to retrieve log history from. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$start\+\_\+revision} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Revision number of the first log to retrieve. Use {\bfseries{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+H\+E\+AD}} to retrieve the log from the most recent revision. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$end\+\_\+revision} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Revision number of the last log to retrieve. Defaults to {\itshape start\+\_\+revision} if specified or to {\bfseries{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+I\+N\+I\+T\+I\+AL}} otherwise. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$limit} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Number of logs to retrieve. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Any combination of {\bfseries{S\+V\+N\+\_\+\+O\+M\+I\+T\+\_\+\+M\+E\+S\+S\+A\+G\+ES}}, {\bfseries{S\+V\+N\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+P\+A\+T\+HS}} and {\bfseries{S\+V\+N\+\_\+\+S\+T\+O\+P\+\_\+\+O\+N\+\_\+\+C\+O\+PY}}. 
+
+\begin{DoxyReturn}{Returns}
+array On success, this function returns an array file listing in the format of\+: 
+\begin{DoxyPre}
+[0] => Array, ordered most recent (highest) revision first
+(
+[rev] => integer revision number
+[author] => string author name
+[msg] => string log message
+[date] => string date formatted per ISO 8601, i.e. date('c')
+[paths] => Array, describing changed files
+(
+[0] => Array
+(
+[action] => string letter signifying change
+[path] => absolute repository path of changed file
+)
+[1] => ...
+)
+)
+[1] => ...
+\end{DoxyPre}
+ 
+\end{DoxyReturn}
+
+
+The output will always be a numerically indexed array of arrays, even when there are none or only one log message(s). 
+
+The value of action is a subset of the status output in the first column, where possible values are\+: 
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+
+
+Letter 
+
+Description  
+
+M 
+
+Item/props was modified  
+
+\mbox{\hyperlink{class_a}{A}} 
+
+Item was added  
+
+D 
+
+Item was deleted  
+
+R 
+
+Item was replaced  
+
+If no changes were made to the item, an empty array is returned. \mbox{\Hypertarget{svn_8php_a1613d522018381a1497a4da1e25c83d4}\label{svn_8php_a1613d522018381a1497a4da1e25c83d4}} 
+\index{svn.php@{svn.php}!svn\_ls@{svn\_ls}}
+\index{svn\_ls@{svn\_ls}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_ls()}{svn\_ls()}}
+{\footnotesize\ttfamily svn\+\_\+ls (\begin{DoxyParamCaption}\item[{}]{\$repos\+\_\+url,  }\item[{}]{\$revision\+\_\+no = {\ttfamily \mbox{\hyperlink{svn_8php_af091db65d0aecfd91f9f54a6c01ffa27}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+H\+E\+AD}}},  }\item[{}]{\$recurse = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}},  }\item[{}]{\$peg = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Returns list of directory contents in repository U\+RL, optionally at revision number \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$repos\+\_\+url  int \$revision\+\_\+no \mbox{[}optional\mbox{]}  bool \$recurse \mbox{[}optional\mbox{]} }} Enables recursion. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$peg} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array On success, this function returns an array file listing in the format of\+: 
+\begin{DoxyPre}
+[0] => Array
+(
+[created\_rev] => integer revision number of last edit
+[last\_author] => string author name of last edit
+[size] => integer byte file size of file
+[time] => string date of last edit in form 'M d H:i'
+or 'M d Y', depending on how old the file is
+[time\_t] => integer unix timestamp of last edit
+[name] => name of file/directory
+[type] => type, can be 'file' or 'dir'
+)
+[1] => ...
+\end{DoxyPre}
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a8242ea5d4dc3a1442fccd2711923092b}\label{svn_8php_a8242ea5d4dc3a1442fccd2711923092b}} 
+\index{svn.php@{svn.php}!svn\_mkdir@{svn\_mkdir}}
+\index{svn\_mkdir@{svn\_mkdir}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_mkdir()}{svn\_mkdir()}}
+{\footnotesize\ttfamily svn\+\_\+mkdir (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$log\+\_\+message = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+4.\+0)~\newline
+ Creates a directory in a working copy or repository \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$path }} The path to the working copy or repository. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$log\+\_\+message} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_ac7d3f8ae7c9da377f2266bcb250dc25c}\label{svn_8php_ac7d3f8ae7c9da377f2266bcb250dc25c}} 
+\index{svn.php@{svn.php}!svn\_move@{svn\_move}}
+\index{svn\_move@{svn\_move}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_move()}{svn\_move()}}
+{\footnotesize\ttfamily svn\+\_\+move (\begin{DoxyParamCaption}\item[{}]{\$src\+\_\+path,  }\item[{}]{\$dst\+\_\+path,  }\item[{}]{\$force = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$src\+\_\+path  string \$dst\+\_\+path  bool \$force \mbox{[}optional\mbox{]}  mixed }}\mbox{\Hypertarget{svn_8php_ac9da851747bb9f5408e293373b6b58a1}\label{svn_8php_ac9da851747bb9f5408e293373b6b58a1}} 
+\index{svn.php@{svn.php}!svn\_propget@{svn\_propget}}
+\index{svn\_propget@{svn\_propget}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_propget()}{svn\_propget()}}
+{\footnotesize\ttfamily svn\+\_\+propget (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$property\+\_\+name,  }\item[{}]{\$recurse = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}},  }\item[{}]{\$revision }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+string & {\em \$property\+\_\+name} & \\
+\hline
+bool & {\em \$recurse} & \mbox{[}optional\mbox{]} \\
+\hline
+int & {\em \$revision} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a7947fa9fe9d210f20804a7e5898cf83a}\label{svn_8php_a7947fa9fe9d210f20804a7e5898cf83a}} 
+\index{svn.php@{svn.php}!svn\_proplist@{svn\_proplist}}
+\index{svn\_proplist@{svn\_proplist}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_proplist()}{svn\_proplist()}}
+{\footnotesize\ttfamily svn\+\_\+proplist (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$recurse = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}},  }\item[{}]{\$revision }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$path  bool \$recurse \mbox{[}optional\mbox{]}  int \$revision \mbox{[}optional\mbox{]}  mixed }}\mbox{\Hypertarget{svn_8php_a1ae711e657b9b4ecea8509adb02c9505}\label{svn_8php_a1ae711e657b9b4ecea8509adb02c9505}} 
+\index{svn.php@{svn.php}!svn\_repos\_create@{svn\_repos\_create}}
+\index{svn\_repos\_create@{svn\_repos\_create}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_repos\_create()}{svn\_repos\_create()}}
+{\footnotesize\ttfamily svn\+\_\+repos\+\_\+create (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{array}]{\$config = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$fsconfig = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Create a new subversion repository at path \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$path }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$fsconfig} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+resource What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_aec787a833d4eabac69a94e972ee822ba}\label{svn_8php_aec787a833d4eabac69a94e972ee822ba}} 
+\index{svn.php@{svn.php}!svn\_repos\_fs@{svn\_repos\_fs}}
+\index{svn\_repos\_fs@{svn\_repos\_fs}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_repos\_fs()}{svn\_repos\_fs()}}
+{\footnotesize\ttfamily svn\+\_\+repos\+\_\+fs (\begin{DoxyParamCaption}\item[{}]{\$repos }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Gets a handle on the filesystem for a repository \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$repos }} Its description 
+
+\begin{DoxyReturn}{Returns}
+resource What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a7e43011c8c0a4d13feecb551d55c1ca4}\label{svn_8php_a7e43011c8c0a4d13feecb551d55c1ca4}} 
+\index{svn.php@{svn.php}!svn\_repos\_fs\_begin\_txn\_for\_commit@{svn\_repos\_fs\_begin\_txn\_for\_commit}}
+\index{svn\_repos\_fs\_begin\_txn\_for\_commit@{svn\_repos\_fs\_begin\_txn\_for\_commit}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_repos\_fs\_begin\_txn\_for\_commit()}{svn\_repos\_fs\_begin\_txn\_for\_commit()}}
+{\footnotesize\ttfamily svn\+\_\+repos\+\_\+fs\+\_\+begin\+\_\+txn\+\_\+for\+\_\+commit (\begin{DoxyParamCaption}\item[{}]{\$repos,  }\item[{}]{\$rev,  }\item[{}]{\$author,  }\item[{}]{\$log\+\_\+msg }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Create a new transaction \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$repos }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$rev} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$author} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$log\+\_\+msg} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+resource What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_ab74ee410f43f5ef75797390a36574636}\label{svn_8php_ab74ee410f43f5ef75797390a36574636}} 
+\index{svn.php@{svn.php}!svn\_repos\_fs\_commit\_txn@{svn\_repos\_fs\_commit\_txn}}
+\index{svn\_repos\_fs\_commit\_txn@{svn\_repos\_fs\_commit\_txn}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_repos\_fs\_commit\_txn()}{svn\_repos\_fs\_commit\_txn()}}
+{\footnotesize\ttfamily svn\+\_\+repos\+\_\+fs\+\_\+commit\+\_\+txn (\begin{DoxyParamCaption}\item[{}]{\$txn }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+2.\+0)~\newline
+ Commits a transaction and returns the new revision \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$txn }} Its description 
+
+\begin{DoxyReturn}{Returns}
+int What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a7dfd9b9b36026c065d740a0415bc50ca}\label{svn_8php_a7dfd9b9b36026c065d740a0415bc50ca}} 
+\index{svn.php@{svn.php}!svn\_repos\_hotcopy@{svn\_repos\_hotcopy}}
+\index{svn\_repos\_hotcopy@{svn\_repos\_hotcopy}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_repos\_hotcopy()}{svn\_repos\_hotcopy()}}
+{\footnotesize\ttfamily svn\+\_\+repos\+\_\+hotcopy (\begin{DoxyParamCaption}\item[{}]{\$repospath,  }\item[{}]{\$destpath,  }\item[{}]{\$cleanlogs }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Make a hot-\/copy of the repos at repospath; copy it to destpath \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$repospath }} Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$destpath} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$cleanlogs} & \\
+\hline
+\end{DoxyParams}
+Its description 
+
+\begin{DoxyReturn}{Returns}
+bool What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a69f5494f4fe91c95e30ffcf05944109e}\label{svn_8php_a69f5494f4fe91c95e30ffcf05944109e}} 
+\index{svn.php@{svn.php}!svn\_repos\_open@{svn\_repos\_open}}
+\index{svn\_repos\_open@{svn\_repos\_open}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_repos\_open()}{svn\_repos\_open()}}
+{\footnotesize\ttfamily svn\+\_\+repos\+\_\+open (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Open a shared lock on a repository. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$path }} Its description 
+
+\begin{DoxyReturn}{Returns}
+resource What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a2c52e71881e1172959534e4b3c26c6c6}\label{svn_8php_a2c52e71881e1172959534e4b3c26c6c6}} 
+\index{svn.php@{svn.php}!svn\_repos\_recover@{svn\_repos\_recover}}
+\index{svn\_repos\_recover@{svn\_repos\_recover}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_repos\_recover()}{svn\_repos\_recover()}}
+{\footnotesize\ttfamily svn\+\_\+repos\+\_\+recover (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Run recovery procedures on the repository located at path. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$path }} Its description 
+
+\begin{DoxyReturn}{Returns}
+bool What the function returns, first on success, then on failure. See also the \&\#38;\#38;return.\+success; entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a043d9c531dc9e52d329ecd92ee945202}\label{svn_8php_a043d9c531dc9e52d329ecd92ee945202}} 
+\index{svn.php@{svn.php}!svn\_resolved@{svn\_resolved}}
+\index{svn\_resolved@{svn\_resolved}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_resolved()}{svn\_resolved()}}
+{\footnotesize\ttfamily svn\+\_\+resolved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{svn_8php_ab73074d60da0f6650ddb9ad813238611}\label{svn_8php_ab73074d60da0f6650ddb9ad813238611}} 
+\index{svn.php@{svn.php}!svn\_revert@{svn\_revert}}
+\index{svn\_revert@{svn\_revert}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_revert()}{svn\_revert()}}
+{\footnotesize\ttfamily svn\+\_\+revert (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$recursive = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+3.\+0)~\newline
+ Revert changes to the working copy \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$path }} The path to the working repository. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$recursive} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Optionally make recursive changes. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{svn_8php_a9d558abdb4b2072133e8a0999b5a9dde}\label{svn_8php_a9d558abdb4b2072133e8a0999b5a9dde}} 
+\index{svn.php@{svn.php}!svn\_status@{svn\_status}}
+\index{svn\_status@{svn\_status}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_status()}{svn\_status()}}
+{\footnotesize\ttfamily svn\+\_\+status (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Returns the status of working copy files and directories \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$path }} Local path to file or directory to retrieve status of. 
+
+Relative paths will be resolved as if the current working directory was the one that contains the P\+HP binary. To use the calling script\&\#x00027;s working directory, use {\bfseries{realpath}} or dirname({\bfseries{F\+I\+LE}}). 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Any combination of {\bfseries{S\+V\+N\+\_\+\+N\+O\+N\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE}}, {\bfseries{S\+V\+N\+\_\+\+A\+LL}} (regardless of modification status), {\bfseries{S\+V\+N\+\_\+\+S\+H\+O\+W\+\_\+\+U\+P\+D\+A\+T\+ES}} (entries will be added for items that are out-\/of-\/date), {\bfseries{S\+V\+N\+\_\+\+N\+O\+\_\+\+I\+G\+N\+O\+RE}} (disregard svn\+:ignore properties when scanning for new files) and {\bfseries{S\+V\+N\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+E\+X\+T\+E\+R\+N\+A\+LS}}. 
+
+\begin{DoxyReturn}{Returns}
+array a numerically indexed array of associative arrays detailing the status of items in the repository\+: 
+\end{DoxyReturn}
+
+\begin{DoxyPre}
+Array (
+[0] => Array (
+// information on item
+)
+[1] => ...
+)
+\end{DoxyPre}
+ $<$p$<$blockquote$>$
+
+The information on the item is an associative array that can contain the following keys\+: 
+
+path String path to file/directory of this entry on local filesystem. text\+\_\+status Status of item\textquotesingle{}s text. Refer to status constants for possible values. repos\+\_\+text\+\_\+status Status of item\textquotesingle{}s text in repository. Only accurate if {\itshape update} was set to {\bfseries{T\+R\+UE}}. Refer to status constants for possible values. prop\+\_\+status Status of item\textquotesingle{}s properties. Refer to status constants for possible values. repos\+\_\+prop\+\_\+status Status of item\textquotesingle{}s property in repository. Only accurate if {\itshape update} was set to {\bfseries{T\+R\+UE}}. Refer to status constants for possible values. locked Whether or not the item is locked. (Only set if {\bfseries{T\+R\+UE}}.) copied Whether or not the item was copied (scheduled for addition with history). (Only set if {\bfseries{T\+R\+UE}}.) switched Whether or not the item was switched using the switch command. (Only set if {\bfseries{T\+R\+UE}}) 
+
+These keys are only set if the item is versioned\+: 
+
+name Base name of item in repository. url U\+RL of item in repository. repos Base U\+RL of repository. revision Integer revision of item in working copy. kind Type of item, i.\+e. file or directory. Refer to type constants for possible values. schedule Scheduled action for item, i.\+e. addition or deletion. Constants for these magic numbers are not available, they can be emulated by using\+: {\ttfamily  if (!defined(\textquotesingle{}svn\+\_\+wc\+\_\+schedule\+\_\+normal\textquotesingle{})) \{ define(\textquotesingle{}svn\+\_\+wc\+\_\+schedule\+\_\+normal\textquotesingle{}, 0); // nothing special define(\textquotesingle{}svn\+\_\+wc\+\_\+schedule\+\_\+add\textquotesingle{}, 1); // item will be added define(\textquotesingle{}svn\+\_\+wc\+\_\+schedule\+\_\+delete\textquotesingle{}, 2); // item will be deleted define(\textquotesingle{}svn\+\_\+wc\+\_\+schedule\+\_\+replace\textquotesingle{}, 3); // item will be added and deleted \} } deleted Whether or not the item was deleted, but parent revision lags behind. (Only set if {\bfseries{T\+R\+UE}}.) absent Whether or not the item is absent, that is, Subversion knows that there should be something there but there isn\textquotesingle{}t. (Only set if {\bfseries{T\+R\+UE}}.) incomplete Whether or not the entries file for a directory is incomplete. (Only set if {\bfseries{T\+R\+UE}}.) cmt\+\_\+date Integer Unix timestamp of last commit date. (Unaffected by {\itshape update}.) cmt\+\_\+rev Integer revision of last commit. (Unaffected by {\itshape update}.) cmt\+\_\+author String author of last commit. (Unaffected by {\itshape update }\mbox{\Hypertarget{svn_8php_ab237f3148e349b3aacaa51d99fa11f93}\label{svn_8php_ab237f3148e349b3aacaa51d99fa11f93}} 
+\index{svn.php@{svn.php}!svn\_switch@{svn\_switch}}
+\index{svn\_switch@{svn\_switch}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_switch()}{svn\_switch()}}
+{\footnotesize\ttfamily svn\+\_\+switch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{svn_8php_a91ab4c07f4977abbc5dfa35edf1dc974}\label{svn_8php_a91ab4c07f4977abbc5dfa35edf1dc974}} 
+\index{svn.php@{svn.php}!svn\_unlock@{svn\_unlock}}
+\index{svn\_unlock@{svn\_unlock}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_unlock()}{svn\_unlock()}}
+{\footnotesize\ttfamily svn\+\_\+unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{svn_8php_acd81bc49caf6fa6b33ee02bf63f64069}\label{svn_8php_acd81bc49caf6fa6b33ee02bf63f64069}} 
+\index{svn.php@{svn.php}!svn\_update@{svn\_update}}
+\index{svn\_update@{svn\_update}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{svn\_update()}{svn\_update()}}
+{\footnotesize\ttfamily svn\+\_\+update (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$revno = {\ttfamily \mbox{\hyperlink{svn_8php_af091db65d0aecfd91f9f54a6c01ffa27}{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+H\+E\+AD}}},  }\item[{}]{\$recurse = {\ttfamily \mbox{\hyperlink{_core__d_8php_a69480a775e33c1751d508c9b2470bc6d}{true}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL svn $>$= 0.\+1.\+0)~\newline
+ Update working copy \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$path }} Path to local working copy. 
+
+Relative paths will be resolved as if the current working directory was the one that contains the P\+HP binary. To use the calling script\&\#x00027;s working directory, use {\bfseries{realpath}} or dirname({\bfseries{F\+I\+LE}}). 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$revno} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Revision number to update to, default is {\bfseries{S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+H\+E\+AD}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$recurse} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Whether or not to recursively update directories. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false new revision number on success, returns {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{svn_8php_a252a87f7de2ac8201c8681aec99fc91a}\label{svn_8php_a252a87f7de2ac8201c8681aec99fc91a}} 
+\index{svn.php@{svn.php}!PHP\_SVN\_AUTH\_PARAM\_IGNORE\_SSL\_VERIFY\_ERRORS@{PHP\_SVN\_AUTH\_PARAM\_IGNORE\_SSL\_VERIFY\_ERRORS}}
+\index{PHP\_SVN\_AUTH\_PARAM\_IGNORE\_SSL\_VERIFY\_ERRORS@{PHP\_SVN\_AUTH\_PARAM\_IGNORE\_SSL\_VERIFY\_ERRORS}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{PHP\_SVN\_AUTH\_PARAM\_IGNORE\_SSL\_VERIFY\_ERRORS}{PHP\_SVN\_AUTH\_PARAM\_IGNORE\_SSL\_VERIFY\_ERRORS}}
+{\footnotesize\ttfamily const P\+H\+P\+\_\+\+S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+S\+S\+L\+\_\+\+V\+E\+R\+I\+F\+Y\+\_\+\+E\+R\+R\+O\+RS \char`\"{}php\+:svn\+:auth\+:ignore-\/ssl-\/verify-\/errors\char`\"{}}
+
+Custom property for ignoring S\+SL cert verification errors \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a09bd04eb83b626b3b608096f3780f149}\label{svn_8php_a09bd04eb83b626b3b608096f3780f149}} 
+\index{svn.php@{svn.php}!SVN\_ALL@{SVN\_ALL}}
+\index{SVN\_ALL@{SVN\_ALL}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_ALL}{SVN\_ALL}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+A\+LL 16}
+
+\mbox{\Hypertarget{svn_8php_acf4aac2f3add202e016a31aa557b3a30}\label{svn_8php_acf4aac2f3add202e016a31aa557b3a30}} 
+\index{svn.php@{svn.php}!SVN\_AUTH\_PARAM\_CONFIG@{SVN\_AUTH\_PARAM\_CONFIG}}
+\index{SVN\_AUTH\_PARAM\_CONFIG@{SVN\_AUTH\_PARAM\_CONFIG}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_AUTH\_PARAM\_CONFIG}{SVN\_AUTH\_PARAM\_CONFIG}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+C\+O\+N\+F\+IG \char`\"{}svn\+:auth\+:config-\/category-\/servers\char`\"{}}
+
+\mbox{\Hypertarget{svn_8php_ae16164e923250e4a61c00526e885d758}\label{svn_8php_ae16164e923250e4a61c00526e885d758}} 
+\index{svn.php@{svn.php}!SVN\_AUTH\_PARAM\_CONFIG\_DIR@{SVN\_AUTH\_PARAM\_CONFIG\_DIR}}
+\index{SVN\_AUTH\_PARAM\_CONFIG\_DIR@{SVN\_AUTH\_PARAM\_CONFIG\_DIR}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_AUTH\_PARAM\_CONFIG\_DIR}{SVN\_AUTH\_PARAM\_CONFIG\_DIR}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+D\+IR \char`\"{}svn\+:auth\+:config-\/\mbox{\hyperlink{standard__7_8php_a6d1d6ce373efce67a2bd07b55397c393}{dir}}\char`\"{}}
+
+\mbox{\Hypertarget{svn_8php_a5d8e22155b66c6df8d7702e990956c4d}\label{svn_8php_a5d8e22155b66c6df8d7702e990956c4d}} 
+\index{svn.php@{svn.php}!SVN\_AUTH\_PARAM\_DEFAULT\_PASSWORD@{SVN\_AUTH\_PARAM\_DEFAULT\_PASSWORD}}
+\index{SVN\_AUTH\_PARAM\_DEFAULT\_PASSWORD@{SVN\_AUTH\_PARAM\_DEFAULT\_PASSWORD}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_AUTH\_PARAM\_DEFAULT\_PASSWORD}{SVN\_AUTH\_PARAM\_DEFAULT\_PASSWORD}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+A\+S\+S\+W\+O\+RD \char`\"{}svn\+:auth\+:password\char`\"{}}
+
+Property for default password to use when performing basic authentication \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a2ba64dece8be46008a48cea1582f9154}\label{svn_8php_a2ba64dece8be46008a48cea1582f9154}} 
+\index{svn.php@{svn.php}!SVN\_AUTH\_PARAM\_DEFAULT\_USERNAME@{SVN\_AUTH\_PARAM\_DEFAULT\_USERNAME}}
+\index{SVN\_AUTH\_PARAM\_DEFAULT\_USERNAME@{SVN\_AUTH\_PARAM\_DEFAULT\_USERNAME}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_AUTH\_PARAM\_DEFAULT\_USERNAME}{SVN\_AUTH\_PARAM\_DEFAULT\_USERNAME}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+U\+S\+E\+R\+N\+A\+ME \char`\"{}svn\+:auth\+:username\char`\"{}}
+
+Property for default username to use when performing basic authentication \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_abb64521bc70afb831a04fafeafdc91de}\label{svn_8php_abb64521bc70afb831a04fafeafdc91de}} 
+\index{svn.php@{svn.php}!SVN\_AUTH\_PARAM\_DONT\_STORE\_PASSWORDS@{SVN\_AUTH\_PARAM\_DONT\_STORE\_PASSWORDS}}
+\index{SVN\_AUTH\_PARAM\_DONT\_STORE\_PASSWORDS@{SVN\_AUTH\_PARAM\_DONT\_STORE\_PASSWORDS}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_AUTH\_PARAM\_DONT\_STORE\_PASSWORDS}{SVN\_AUTH\_PARAM\_DONT\_STORE\_PASSWORDS}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+D\+O\+N\+T\+\_\+\+S\+T\+O\+R\+E\+\_\+\+P\+A\+S\+S\+W\+O\+R\+DS \char`\"{}svn\+:auth\+:dont-\/store-\/passwords\char`\"{}}
+
+\mbox{\Hypertarget{svn_8php_a1403d2fc3793e3c5358292ea2905fd80}\label{svn_8php_a1403d2fc3793e3c5358292ea2905fd80}} 
+\index{svn.php@{svn.php}!SVN\_AUTH\_PARAM\_NO\_AUTH\_CACHE@{SVN\_AUTH\_PARAM\_NO\_AUTH\_CACHE}}
+\index{SVN\_AUTH\_PARAM\_NO\_AUTH\_CACHE@{SVN\_AUTH\_PARAM\_NO\_AUTH\_CACHE}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_AUTH\_PARAM\_NO\_AUTH\_CACHE}{SVN\_AUTH\_PARAM\_NO\_AUTH\_CACHE}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+O\+\_\+\+A\+U\+T\+H\+\_\+\+C\+A\+C\+HE \char`\"{}svn\+:auth\+:no-\/auth-\/cache\char`\"{}}
+
+\mbox{\Hypertarget{svn_8php_af2d2b716a0e4cafe907ce2f62139783b}\label{svn_8php_af2d2b716a0e4cafe907ce2f62139783b}} 
+\index{svn.php@{svn.php}!SVN\_AUTH\_PARAM\_NON\_INTERACTIVE@{SVN\_AUTH\_PARAM\_NON\_INTERACTIVE}}
+\index{SVN\_AUTH\_PARAM\_NON\_INTERACTIVE@{SVN\_AUTH\_PARAM\_NON\_INTERACTIVE}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_AUTH\_PARAM\_NON\_INTERACTIVE}{SVN\_AUTH\_PARAM\_NON\_INTERACTIVE}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+O\+N\+\_\+\+I\+N\+T\+E\+R\+A\+C\+T\+I\+VE \char`\"{}svn\+:auth\+:non-\/interactive\char`\"{}}
+
+\mbox{\Hypertarget{svn_8php_aa300d73fdb9307b8a85d40e68afdc700}\label{svn_8php_aa300d73fdb9307b8a85d40e68afdc700}} 
+\index{svn.php@{svn.php}!SVN\_AUTH\_PARAM\_SERVER\_GROUP@{SVN\_AUTH\_PARAM\_SERVER\_GROUP}}
+\index{SVN\_AUTH\_PARAM\_SERVER\_GROUP@{SVN\_AUTH\_PARAM\_SERVER\_GROUP}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_AUTH\_PARAM\_SERVER\_GROUP}{SVN\_AUTH\_PARAM\_SERVER\_GROUP}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+G\+R\+O\+UP \char`\"{}svn\+:auth\+:server-\/group\char`\"{}}
+
+\mbox{\Hypertarget{svn_8php_af66a40c1081d88f8260f4beb0e3bce85}\label{svn_8php_af66a40c1081d88f8260f4beb0e3bce85}} 
+\index{svn.php@{svn.php}!SVN\_AUTH\_PARAM\_SSL\_SERVER\_CERT\_INFO@{SVN\_AUTH\_PARAM\_SSL\_SERVER\_CERT\_INFO}}
+\index{SVN\_AUTH\_PARAM\_SSL\_SERVER\_CERT\_INFO@{SVN\_AUTH\_PARAM\_SSL\_SERVER\_CERT\_INFO}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_AUTH\_PARAM\_SSL\_SERVER\_CERT\_INFO}{SVN\_AUTH\_PARAM\_SSL\_SERVER\_CERT\_INFO}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+S\+L\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+C\+E\+R\+T\+\_\+\+I\+N\+FO \char`\"{}svn\+:auth\+:ssl\+:cert-\/info\char`\"{}}
+
+\mbox{\Hypertarget{svn_8php_a4f723008dedd880d4c056fb268c1898c}\label{svn_8php_a4f723008dedd880d4c056fb268c1898c}} 
+\index{svn.php@{svn.php}!SVN\_AUTH\_PARAM\_SSL\_SERVER\_FAILURES@{SVN\_AUTH\_PARAM\_SSL\_SERVER\_FAILURES}}
+\index{SVN\_AUTH\_PARAM\_SSL\_SERVER\_FAILURES@{SVN\_AUTH\_PARAM\_SSL\_SERVER\_FAILURES}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_AUTH\_PARAM\_SSL\_SERVER\_FAILURES}{SVN\_AUTH\_PARAM\_SSL\_SERVER\_FAILURES}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+S\+L\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+F\+A\+I\+L\+U\+R\+ES \char`\"{}svn\+:auth\+:ssl\+:failures\char`\"{}}
+
+\mbox{\Hypertarget{svn_8php_a34dbb3b9369236abe3e99df9b9d04808}\label{svn_8php_a34dbb3b9369236abe3e99df9b9d04808}} 
+\index{svn.php@{svn.php}!SVN\_DISCOVER\_CHANGED\_PATHS@{SVN\_DISCOVER\_CHANGED\_PATHS}}
+\index{SVN\_DISCOVER\_CHANGED\_PATHS@{SVN\_DISCOVER\_CHANGED\_PATHS}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_DISCOVER\_CHANGED\_PATHS}{SVN\_DISCOVER\_CHANGED\_PATHS}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+P\+A\+T\+HS 2}
+
+\mbox{\Hypertarget{svn_8php_a778e5c9dec1fd997fecc7d15b4bdea5a}\label{svn_8php_a778e5c9dec1fd997fecc7d15b4bdea5a}} 
+\index{svn.php@{svn.php}!SVN\_FS\_CONFIG\_FS\_TYPE@{SVN\_FS\_CONFIG\_FS\_TYPE}}
+\index{SVN\_FS\_CONFIG\_FS\_TYPE@{SVN\_FS\_CONFIG\_FS\_TYPE}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_FS\_CONFIG\_FS\_TYPE}{SVN\_FS\_CONFIG\_FS\_TYPE}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+F\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+F\+S\+\_\+\+T\+Y\+PE \char`\"{}fs-\/type\char`\"{}}
+
+Configuration key that determines filesystem type \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a4ac1de92ca9542c5ada94ad5b11444ee}\label{svn_8php_a4ac1de92ca9542c5ada94ad5b11444ee}} 
+\index{svn.php@{svn.php}!SVN\_FS\_TYPE\_BDB@{SVN\_FS\_TYPE\_BDB}}
+\index{SVN\_FS\_TYPE\_BDB@{SVN\_FS\_TYPE\_BDB}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_FS\_TYPE\_BDB}{SVN\_FS\_TYPE\_BDB}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+F\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+DB \char`\"{}bdb\char`\"{}}
+
+Filesystem is Berkeley-\/\+DB implementation \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a43bbd843a44599a009e4b8bc01612a65}\label{svn_8php_a43bbd843a44599a009e4b8bc01612a65}} 
+\index{svn.php@{svn.php}!SVN\_FS\_TYPE\_FSFS@{SVN\_FS\_TYPE\_FSFS}}
+\index{SVN\_FS\_TYPE\_FSFS@{SVN\_FS\_TYPE\_FSFS}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_FS\_TYPE\_FSFS}{SVN\_FS\_TYPE\_FSFS}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+F\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+S\+FS \char`\"{}fsfs\char`\"{}}
+
+Filesystem is native-\/filesystem implementation \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_aaef82daa8dee2da5e82876bc7eb4eae7}\label{svn_8php_aaef82daa8dee2da5e82876bc7eb4eae7}} 
+\index{svn.php@{svn.php}!SVN\_NO\_IGNORE@{SVN\_NO\_IGNORE}}
+\index{SVN\_NO\_IGNORE@{SVN\_NO\_IGNORE}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_NO\_IGNORE}{SVN\_NO\_IGNORE}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+N\+O\+\_\+\+I\+G\+N\+O\+RE 64}
+
+\mbox{\Hypertarget{svn_8php_ad82c8b9bed53861f9bdce3a21540d92c}\label{svn_8php_ad82c8b9bed53861f9bdce3a21540d92c}} 
+\index{svn.php@{svn.php}!SVN\_NODE\_DIR@{SVN\_NODE\_DIR}}
+\index{SVN\_NODE\_DIR@{SVN\_NODE\_DIR}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_NODE\_DIR}{SVN\_NODE\_DIR}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+N\+O\+D\+E\+\_\+\+D\+IR 2}
+
+\mbox{\hyperlink{class_directory}{Directory}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_ae05490b942de54c953ad28fb2b616948}\label{svn_8php_ae05490b942de54c953ad28fb2b616948}} 
+\index{svn.php@{svn.php}!SVN\_NODE\_FILE@{SVN\_NODE\_FILE}}
+\index{SVN\_NODE\_FILE@{SVN\_NODE\_FILE}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_NODE\_FILE}{SVN\_NODE\_FILE}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+N\+O\+D\+E\+\_\+\+F\+I\+LE 1}
+
+File \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_abd1fb5501ae3fc19a2ec30dfeb1797cf}\label{svn_8php_abd1fb5501ae3fc19a2ec30dfeb1797cf}} 
+\index{svn.php@{svn.php}!SVN\_NODE\_NONE@{SVN\_NODE\_NONE}}
+\index{SVN\_NODE\_NONE@{SVN\_NODE\_NONE}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_NODE\_NONE}{SVN\_NODE\_NONE}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+N\+O\+D\+E\+\_\+\+N\+O\+NE 0}
+
+Absent \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a126e6bf4d93c1795b0f9f1a7dd6ae629}\label{svn_8php_a126e6bf4d93c1795b0f9f1a7dd6ae629}} 
+\index{svn.php@{svn.php}!SVN\_NODE\_UNKNOWN@{SVN\_NODE\_UNKNOWN}}
+\index{SVN\_NODE\_UNKNOWN@{SVN\_NODE\_UNKNOWN}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_NODE\_UNKNOWN}{SVN\_NODE\_UNKNOWN}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+N\+O\+D\+E\+\_\+\+U\+N\+K\+N\+O\+WN 3}
+
+Something Subversion cannot identify \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a370fb85b794c10a83dd725f495f89f74}\label{svn_8php_a370fb85b794c10a83dd725f495f89f74}} 
+\index{svn.php@{svn.php}!SVN\_NON\_RECURSIVE@{SVN\_NON\_RECURSIVE}}
+\index{SVN\_NON\_RECURSIVE@{SVN\_NON\_RECURSIVE}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_NON\_RECURSIVE}{SVN\_NON\_RECURSIVE}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+N\+O\+N\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE 1}
+
+\mbox{\Hypertarget{svn_8php_a3917676085fc46e4ee4ec353dff0530f}\label{svn_8php_a3917676085fc46e4ee4ec353dff0530f}} 
+\index{svn.php@{svn.php}!SVN\_OMIT\_MESSAGES@{SVN\_OMIT\_MESSAGES}}
+\index{SVN\_OMIT\_MESSAGES@{SVN\_OMIT\_MESSAGES}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_OMIT\_MESSAGES}{SVN\_OMIT\_MESSAGES}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+O\+M\+I\+T\+\_\+\+M\+E\+S\+S\+A\+G\+ES 4}
+
+\mbox{\Hypertarget{svn_8php_afb1a2e4e48b03827fc50aa9828d99967}\label{svn_8php_afb1a2e4e48b03827fc50aa9828d99967}} 
+\index{svn.php@{svn.php}!SVN\_PROP\_REVISION\_AUTHOR@{SVN\_PROP\_REVISION\_AUTHOR}}
+\index{SVN\_PROP\_REVISION\_AUTHOR@{SVN\_PROP\_REVISION\_AUTHOR}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_PROP\_REVISION\_AUTHOR}{SVN\_PROP\_REVISION\_AUTHOR}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+P\+R\+O\+P\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+A\+U\+T\+H\+OR \char`\"{}svn\+:author\char`\"{}}
+
+svn\+:author \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_ad8cf57510e94733269e848bb0d7f972b}\label{svn_8php_ad8cf57510e94733269e848bb0d7f972b}} 
+\index{svn.php@{svn.php}!SVN\_PROP\_REVISION\_DATE@{SVN\_PROP\_REVISION\_DATE}}
+\index{SVN\_PROP\_REVISION\_DATE@{SVN\_PROP\_REVISION\_DATE}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_PROP\_REVISION\_DATE}{SVN\_PROP\_REVISION\_DATE}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+P\+R\+O\+P\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+D\+A\+TE \char`\"{}svn\+:date\char`\"{}}
+
+svn\+:date \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_ad3b738273474dc9dc6e00da0908157de}\label{svn_8php_ad3b738273474dc9dc6e00da0908157de}} 
+\index{svn.php@{svn.php}!SVN\_PROP\_REVISION\_LOG@{SVN\_PROP\_REVISION\_LOG}}
+\index{SVN\_PROP\_REVISION\_LOG@{SVN\_PROP\_REVISION\_LOG}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_PROP\_REVISION\_LOG}{SVN\_PROP\_REVISION\_LOG}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+P\+R\+O\+P\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+L\+OG \char`\"{}svn\+:log\char`\"{}}
+
+svn\+:log \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a23e477cbcc78eeea7a485f50580a8d53}\label{svn_8php_a23e477cbcc78eeea7a485f50580a8d53}} 
+\index{svn.php@{svn.php}!SVN\_PROP\_REVISION\_ORIG\_DATE@{SVN\_PROP\_REVISION\_ORIG\_DATE}}
+\index{SVN\_PROP\_REVISION\_ORIG\_DATE@{SVN\_PROP\_REVISION\_ORIG\_DATE}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_PROP\_REVISION\_ORIG\_DATE}{SVN\_PROP\_REVISION\_ORIG\_DATE}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+P\+R\+O\+P\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+O\+R\+I\+G\+\_\+\+D\+A\+TE \char`\"{}svn\+:original-\/\mbox{\hyperlink{date_8php_a13bb6fb39ea3bfc7b340f60f1377b5f4}{date}}\char`\"{}}
+
+svn\+:original-\/date \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a13f33c86d8a01eef4967d74d20b60550}\label{svn_8php_a13f33c86d8a01eef4967d74d20b60550}} 
+\index{svn.php@{svn.php}!SVN\_REVISION\_BASE@{SVN\_REVISION\_BASE}}
+\index{SVN\_REVISION\_BASE@{SVN\_REVISION\_BASE}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_REVISION\_BASE}{SVN\_REVISION\_BASE}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+B\+A\+SE -\/2}
+
+\mbox{\Hypertarget{svn_8php_aa80a443c9ac6b39913ed9ea53034b28b}\label{svn_8php_aa80a443c9ac6b39913ed9ea53034b28b}} 
+\index{svn.php@{svn.php}!SVN\_REVISION\_COMMITTED@{SVN\_REVISION\_COMMITTED}}
+\index{SVN\_REVISION\_COMMITTED@{SVN\_REVISION\_COMMITTED}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_REVISION\_COMMITTED}{SVN\_REVISION\_COMMITTED}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+C\+O\+M\+M\+I\+T\+T\+ED -\/3}
+
+\mbox{\Hypertarget{svn_8php_af091db65d0aecfd91f9f54a6c01ffa27}\label{svn_8php_af091db65d0aecfd91f9f54a6c01ffa27}} 
+\index{svn.php@{svn.php}!SVN\_REVISION\_HEAD@{SVN\_REVISION\_HEAD}}
+\index{SVN\_REVISION\_HEAD@{SVN\_REVISION\_HEAD}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_REVISION\_HEAD}{SVN\_REVISION\_HEAD}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+H\+E\+AD -\/1}
+
+Magic number (-\/1) specifying the H\+E\+AD revision \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_adaa421208edb3e3bdaf2fd63be79a95b}\label{svn_8php_adaa421208edb3e3bdaf2fd63be79a95b}} 
+\index{svn.php@{svn.php}!SVN\_REVISION\_INITIAL@{SVN\_REVISION\_INITIAL}}
+\index{SVN\_REVISION\_INITIAL@{SVN\_REVISION\_INITIAL}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_REVISION\_INITIAL}{SVN\_REVISION\_INITIAL}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+I\+N\+I\+T\+I\+AL 1}
+
+\mbox{\Hypertarget{svn_8php_a7878672c0c030d1dc8450bc48c958184}\label{svn_8php_a7878672c0c030d1dc8450bc48c958184}} 
+\index{svn.php@{svn.php}!SVN\_REVISION\_PREV@{SVN\_REVISION\_PREV}}
+\index{SVN\_REVISION\_PREV@{SVN\_REVISION\_PREV}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_REVISION\_PREV}{SVN\_REVISION\_PREV}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+P\+R\+EV -\/4}
+
+\mbox{\Hypertarget{svn_8php_a34fd377e1cb0f168469b76d5fe5d3b07}\label{svn_8php_a34fd377e1cb0f168469b76d5fe5d3b07}} 
+\index{svn.php@{svn.php}!SVN\_REVISION\_UNSPECIFIED@{SVN\_REVISION\_UNSPECIFIED}}
+\index{SVN\_REVISION\_UNSPECIFIED@{SVN\_REVISION\_UNSPECIFIED}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_REVISION\_UNSPECIFIED}{SVN\_REVISION\_UNSPECIFIED}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+R\+E\+V\+I\+S\+I\+O\+N\+\_\+\+U\+N\+S\+P\+E\+C\+I\+F\+I\+ED -\/5}
+
+\mbox{\Hypertarget{svn_8php_a3f5454914b78c6a023bc81173858370f}\label{svn_8php_a3f5454914b78c6a023bc81173858370f}} 
+\index{svn.php@{svn.php}!SVN\_SHOW\_UPDATES@{SVN\_SHOW\_UPDATES}}
+\index{SVN\_SHOW\_UPDATES@{SVN\_SHOW\_UPDATES}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_SHOW\_UPDATES}{SVN\_SHOW\_UPDATES}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+S\+H\+O\+W\+\_\+\+U\+P\+D\+A\+T\+ES 32}
+
+\mbox{\Hypertarget{svn_8php_a28bdc4599020049c573790aa00f8b06f}\label{svn_8php_a28bdc4599020049c573790aa00f8b06f}} 
+\index{svn.php@{svn.php}!SVN\_STOP\_ON\_COPY@{SVN\_STOP\_ON\_COPY}}
+\index{SVN\_STOP\_ON\_COPY@{SVN\_STOP\_ON\_COPY}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_STOP\_ON\_COPY}{SVN\_STOP\_ON\_COPY}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+S\+T\+O\+P\+\_\+\+O\+N\+\_\+\+C\+O\+PY 8}
+
+\mbox{\Hypertarget{svn_8php_a884a671bc8ba54a02b934124cbbca715}\label{svn_8php_a884a671bc8ba54a02b934124cbbca715}} 
+\index{svn.php@{svn.php}!SVN\_WC\_SCHEDULE\_ADD@{SVN\_WC\_SCHEDULE\_ADD}}
+\index{SVN\_WC\_SCHEDULE\_ADD@{SVN\_WC\_SCHEDULE\_ADD}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_SCHEDULE\_ADD}{SVN\_WC\_SCHEDULE\_ADD}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+A\+DD 1}
+
+\mbox{\Hypertarget{svn_8php_add814d730151faaf74b22ca7ac621235}\label{svn_8php_add814d730151faaf74b22ca7ac621235}} 
+\index{svn.php@{svn.php}!SVN\_WC\_SCHEDULE\_DELETE@{SVN\_WC\_SCHEDULE\_DELETE}}
+\index{SVN\_WC\_SCHEDULE\_DELETE@{SVN\_WC\_SCHEDULE\_DELETE}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_SCHEDULE\_DELETE}{SVN\_WC\_SCHEDULE\_DELETE}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+D\+E\+L\+E\+TE 2}
+
+\mbox{\Hypertarget{svn_8php_a5d0801f8c152eaf59dd6162074f7a233}\label{svn_8php_a5d0801f8c152eaf59dd6162074f7a233}} 
+\index{svn.php@{svn.php}!SVN\_WC\_SCHEDULE\_NORMAL@{SVN\_WC\_SCHEDULE\_NORMAL}}
+\index{SVN\_WC\_SCHEDULE\_NORMAL@{SVN\_WC\_SCHEDULE\_NORMAL}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_SCHEDULE\_NORMAL}{SVN\_WC\_SCHEDULE\_NORMAL}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+N\+O\+R\+M\+AL 0}
+
+\mbox{\Hypertarget{svn_8php_adaf4c38879116ea76b9da0af073a29e8}\label{svn_8php_adaf4c38879116ea76b9da0af073a29e8}} 
+\index{svn.php@{svn.php}!SVN\_WC\_SCHEDULE\_REPLACE@{SVN\_WC\_SCHEDULE\_REPLACE}}
+\index{SVN\_WC\_SCHEDULE\_REPLACE@{SVN\_WC\_SCHEDULE\_REPLACE}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_SCHEDULE\_REPLACE}{SVN\_WC\_SCHEDULE\_REPLACE}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+C\+H\+E\+D\+U\+L\+E\+\_\+\+R\+E\+P\+L\+A\+CE 3}
+
+\mbox{\Hypertarget{svn_8php_af6bdce78701a51379d6b20edbfd33289}\label{svn_8php_af6bdce78701a51379d6b20edbfd33289}} 
+\index{svn.php@{svn.php}!SVN\_WC\_STATUS\_ADDED@{SVN\_WC\_STATUS\_ADDED}}
+\index{SVN\_WC\_STATUS\_ADDED@{SVN\_WC\_STATUS\_ADDED}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_STATUS\_ADDED}{SVN\_WC\_STATUS\_ADDED}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+D\+D\+ED 4}
+
+Item is scheduled for addition \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a53c3a8f1c93923494f5ca11e6d8df596}\label{svn_8php_a53c3a8f1c93923494f5ca11e6d8df596}} 
+\index{svn.php@{svn.php}!SVN\_WC\_STATUS\_CONFLICTED@{SVN\_WC\_STATUS\_CONFLICTED}}
+\index{SVN\_WC\_STATUS\_CONFLICTED@{SVN\_WC\_STATUS\_CONFLICTED}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_STATUS\_CONFLICTED}{SVN\_WC\_STATUS\_CONFLICTED}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+F\+L\+I\+C\+T\+ED 10}
+
+Item\textquotesingle{}s local modifications conflicted with repository modifications \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_addc74519c26cba026f8c46818f2b7a87}\label{svn_8php_addc74519c26cba026f8c46818f2b7a87}} 
+\index{svn.php@{svn.php}!SVN\_WC\_STATUS\_DELETED@{SVN\_WC\_STATUS\_DELETED}}
+\index{SVN\_WC\_STATUS\_DELETED@{SVN\_WC\_STATUS\_DELETED}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_STATUS\_DELETED}{SVN\_WC\_STATUS\_DELETED}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+E\+L\+E\+T\+ED 6}
+
+Item is scheduled for deletion \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a37987e0362b1ee3cb94763e251876e2b}\label{svn_8php_a37987e0362b1ee3cb94763e251876e2b}} 
+\index{svn.php@{svn.php}!SVN\_WC\_STATUS\_EXTERNAL@{SVN\_WC\_STATUS\_EXTERNAL}}
+\index{SVN\_WC\_STATUS\_EXTERNAL@{SVN\_WC\_STATUS\_EXTERNAL}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_STATUS\_EXTERNAL}{SVN\_WC\_STATUS\_EXTERNAL}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+E\+X\+T\+E\+R\+N\+AL 13}
+
+Unversioned path that is populated using svn\+:externals \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a5fb7951e299f9aa3ddfddec2c799a8cc}\label{svn_8php_a5fb7951e299f9aa3ddfddec2c799a8cc}} 
+\index{svn.php@{svn.php}!SVN\_WC\_STATUS\_IGNORED@{SVN\_WC\_STATUS\_IGNORED}}
+\index{SVN\_WC\_STATUS\_IGNORED@{SVN\_WC\_STATUS\_IGNORED}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_STATUS\_IGNORED}{SVN\_WC\_STATUS\_IGNORED}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+G\+N\+O\+R\+ED 11}
+
+Item is unversioned but configured to be ignored \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_aa517aa2b69916952f06c4ce20791ef0b}\label{svn_8php_aa517aa2b69916952f06c4ce20791ef0b}} 
+\index{svn.php@{svn.php}!SVN\_WC\_STATUS\_INCOMPLETE@{SVN\_WC\_STATUS\_INCOMPLETE}}
+\index{SVN\_WC\_STATUS\_INCOMPLETE@{SVN\_WC\_STATUS\_INCOMPLETE}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_STATUS\_INCOMPLETE}{SVN\_WC\_STATUS\_INCOMPLETE}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+TE 14}
+
+\mbox{\hyperlink{class_directory}{Directory}} does not contain complete entries list \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a6bdbd56e4b42412f49fe95da2e506880}\label{svn_8php_a6bdbd56e4b42412f49fe95da2e506880}} 
+\index{svn.php@{svn.php}!SVN\_WC\_STATUS\_MERGED@{SVN\_WC\_STATUS\_MERGED}}
+\index{SVN\_WC\_STATUS\_MERGED@{SVN\_WC\_STATUS\_MERGED}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_STATUS\_MERGED}{SVN\_WC\_STATUS\_MERGED}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+E\+R\+G\+ED 9}
+
+Item\textquotesingle{}s local modifications were merged with repository modifications \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a84b237b5f18a0e1ae20d4159efe04277}\label{svn_8php_a84b237b5f18a0e1ae20d4159efe04277}} 
+\index{svn.php@{svn.php}!SVN\_WC\_STATUS\_MISSING@{SVN\_WC\_STATUS\_MISSING}}
+\index{SVN\_WC\_STATUS\_MISSING@{SVN\_WC\_STATUS\_MISSING}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_STATUS\_MISSING}{SVN\_WC\_STATUS\_MISSING}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+I\+S\+S\+I\+NG 5}
+
+Item is versioned but missing from the working copy \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_afc7b61ef67704e3ac879a4ca22418168}\label{svn_8php_afc7b61ef67704e3ac879a4ca22418168}} 
+\index{svn.php@{svn.php}!SVN\_WC\_STATUS\_MODIFIED@{SVN\_WC\_STATUS\_MODIFIED}}
+\index{SVN\_WC\_STATUS\_MODIFIED@{SVN\_WC\_STATUS\_MODIFIED}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_STATUS\_MODIFIED}{SVN\_WC\_STATUS\_MODIFIED}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+O\+D\+I\+F\+I\+ED 8}
+
+Item (text or properties) was modified \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_aaaeff9218a5ebe083baa7dba65257866}\label{svn_8php_aaaeff9218a5ebe083baa7dba65257866}} 
+\index{svn.php@{svn.php}!SVN\_WC\_STATUS\_NONE@{SVN\_WC\_STATUS\_NONE}}
+\index{SVN\_WC\_STATUS\_NONE@{SVN\_WC\_STATUS\_NONE}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_STATUS\_NONE}{SVN\_WC\_STATUS\_NONE}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+NE 1}
+
+Status does not exist \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a9e3e245bb292440aa0b8638f56487799}\label{svn_8php_a9e3e245bb292440aa0b8638f56487799}} 
+\index{svn.php@{svn.php}!SVN\_WC\_STATUS\_NORMAL@{SVN\_WC\_STATUS\_NORMAL}}
+\index{SVN\_WC\_STATUS\_NORMAL@{SVN\_WC\_STATUS\_NORMAL}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_STATUS\_NORMAL}{SVN\_WC\_STATUS\_NORMAL}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+R\+M\+AL 3}
+
+Item exists, nothing else is happening \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a83a443a4fc671ac10b11a3ba72a8f022}\label{svn_8php_a83a443a4fc671ac10b11a3ba72a8f022}} 
+\index{svn.php@{svn.php}!SVN\_WC\_STATUS\_OBSTRUCTED@{SVN\_WC\_STATUS\_OBSTRUCTED}}
+\index{SVN\_WC\_STATUS\_OBSTRUCTED@{SVN\_WC\_STATUS\_OBSTRUCTED}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_STATUS\_OBSTRUCTED}{SVN\_WC\_STATUS\_OBSTRUCTED}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+O\+B\+S\+T\+R\+U\+C\+T\+ED 12}
+
+Unversioned item is in the way of a versioned resource \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a8d10314eaf19141923ff87b2a6eb289c}\label{svn_8php_a8d10314eaf19141923ff87b2a6eb289c}} 
+\index{svn.php@{svn.php}!SVN\_WC\_STATUS\_REPLACED@{SVN\_WC\_STATUS\_REPLACED}}
+\index{SVN\_WC\_STATUS\_REPLACED@{SVN\_WC\_STATUS\_REPLACED}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_STATUS\_REPLACED}{SVN\_WC\_STATUS\_REPLACED}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+P\+L\+A\+C\+ED 7}
+
+Item was deleted and then re-\/added \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}\mbox{\Hypertarget{svn_8php_a373cd8b225e9efd6d9141267d450c12c}\label{svn_8php_a373cd8b225e9efd6d9141267d450c12c}} 
+\index{svn.php@{svn.php}!SVN\_WC\_STATUS\_UNVERSIONED@{SVN\_WC\_STATUS\_UNVERSIONED}}
+\index{SVN\_WC\_STATUS\_UNVERSIONED@{SVN\_WC\_STATUS\_UNVERSIONED}!svn.php@{svn.php}}
+\doxysubsubsection{\texorpdfstring{SVN\_WC\_STATUS\_UNVERSIONED}{SVN\_WC\_STATUS\_UNVERSIONED}}
+{\footnotesize\ttfamily const S\+V\+N\+\_\+\+W\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+U\+N\+V\+E\+R\+S\+I\+O\+N\+ED 2}
+
+Item is not versioned in working copy \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/svn.\+constants.\+php}}

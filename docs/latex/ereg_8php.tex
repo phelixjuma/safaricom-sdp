@@ -1,0 +1,234 @@
+\hypertarget{ereg_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/regex/ereg.php File Reference}
+\label{ereg_8php}\index{vendor/jetbrains/phpstorm-\/stubs/regex/ereg.php@{vendor/jetbrains/phpstorm-\/stubs/regex/ereg.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ereg_8php_abf3ca56d1a3505cdac7ef86d9411e0be}{ereg}} (\$pattern, \$string, array \&\$regs=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{ereg_8php_a9475573858bf80d17450230050e25637}{ereg\+\_\+replace}} (\$pattern, \$replacement, \$string)
+\item 
+\mbox{\hyperlink{ereg_8php_a42e6edf0dbb199813bd21d6f1ef9fa75}{eregi}} (\$pattern, \$string, array \&\$regs=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{ereg_8php_a825dc925259981558b59d4641aeccb00}{eregi\+\_\+replace}} (\$pattern, \$replacement, \$string)
+\item 
+\mbox{\hyperlink{ereg_8php_aad53507bb1d74b68afa2f2f815c17e6f}{split}} (\$pattern, \$string, \$limit=-\/1)
+\item 
+\mbox{\hyperlink{ereg_8php_a64cfcc283ae052bdc5e8fb4b1de750a3}{spliti}} (\$pattern, \$string, \$limit=-\/1)
+\item 
+\mbox{\hyperlink{ereg_8php_a7bd0550fee48e5ff71ad9dcaed7dccf1}{sql\+\_\+regcase}} (\$string)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ereg_8php_abf3ca56d1a3505cdac7ef86d9411e0be}\label{ereg_8php_abf3ca56d1a3505cdac7ef86d9411e0be}} 
+\index{ereg.php@{ereg.php}!ereg@{ereg}}
+\index{ereg@{ereg}!ereg.php@{ereg.php}}
+\doxysubsubsection{\texorpdfstring{ereg()}{ereg()}}
+{\footnotesize\ttfamily ereg (\begin{DoxyParamCaption}\item[{}]{\$pattern,  }\item[{}]{\$string,  }\item[{array \&}]{\$regs = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Regular expression match \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{deprecated 244. string \$pattern }} Case sensitive regular expression. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+The input string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$regs} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If matches are found for parenthesized substrings of {\itshape pattern} and the function is called with the third argument {\itshape regs}, the matches will be stored in the elements of the array {\itshape regs}. 
+
+\$regs\mbox{[}1\mbox{]} will contain the substring which starts at the first left parenthesis; \$regs\mbox{[}2\mbox{]} will contain the substring starting at the second, and so on. \$regs\mbox{[}0\mbox{]} will contain a copy of the complete string matched. 
+
+\begin{DoxyReturn}{Returns}
+int the length of the matched string if a match for {\itshape pattern} was found in {\itshape string}, or {\bfseries{F\+A\+L\+SE}} if no matches were found or an error occurred. 
+\end{DoxyReturn}
+
+
+If the optional parameter {\itshape regs} was not passed or the length of the matched string is 0, this function returns 1. \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ereg_8php_a9475573858bf80d17450230050e25637}\label{ereg_8php_a9475573858bf80d17450230050e25637}} 
+\index{ereg.php@{ereg.php}!ereg\_replace@{ereg\_replace}}
+\index{ereg\_replace@{ereg\_replace}!ereg.php@{ereg.php}}
+\doxysubsubsection{\texorpdfstring{ereg\_replace()}{ereg\_replace()}}
+{\footnotesize\ttfamily ereg\+\_\+replace (\begin{DoxyParamCaption}\item[{}]{\$pattern,  }\item[{}]{\$replacement,  }\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Replace regular expression \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{deprecated 245. string \$pattern }} \mbox{\hyperlink{class_a}{A}} P\+O\+S\+IX extended regular expression. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$replacement} & \\
+\hline
+\end{DoxyParams}
+If {\itshape pattern} contains parenthesized substrings, {\itshape replacement} may contain substrings of the form \textbackslash{}digit, which will be replaced by the text matching the digit\textquotesingle{}th parenthesized substring; \textbackslash{}0 will produce the entire contents of string. Up to nine substrings may be used. Parentheses may be nested, in which case they are counted by the opening parenthesis. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+The input string. 
+
+\begin{DoxyReturn}{Returns}
+string The modified string is returned. If no matches are found in {\itshape string}, then it will be returned unchanged. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ereg_8php_a42e6edf0dbb199813bd21d6f1ef9fa75}\label{ereg_8php_a42e6edf0dbb199813bd21d6f1ef9fa75}} 
+\index{ereg.php@{ereg.php}!eregi@{eregi}}
+\index{eregi@{eregi}!ereg.php@{ereg.php}}
+\doxysubsubsection{\texorpdfstring{eregi()}{eregi()}}
+{\footnotesize\ttfamily eregi (\begin{DoxyParamCaption}\item[{}]{\$pattern,  }\item[{}]{\$string,  }\item[{array \&}]{\$regs = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Case insensitive regular expression match \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{deprecated 246. string \$pattern }} Case insensitive regular expression. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+The input string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$regs} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If matches are found for parenthesized substrings of {\itshape pattern} and the function is called with the third argument {\itshape regs}, the matches will be stored in the elements of the array {\itshape regs}. 
+
+\$regs\mbox{[}1\mbox{]} will contain the substring which starts at the first left parenthesis; \$regs\mbox{[}2\mbox{]} will contain the substring starting at the second, and so on. \$regs\mbox{[}0\mbox{]} will contain a copy of the complete string matched. 
+
+\begin{DoxyReturn}{Returns}
+int the length of the matched string if a match for {\itshape pattern} was found in {\itshape string}, or {\bfseries{F\+A\+L\+SE}} if no matches were found or an error occurred. 
+\end{DoxyReturn}
+
+
+If the optional parameter {\itshape regs} was not passed or the length of the matched string is 0, this function returns 1. \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ereg_8php_a825dc925259981558b59d4641aeccb00}\label{ereg_8php_a825dc925259981558b59d4641aeccb00}} 
+\index{ereg.php@{ereg.php}!eregi\_replace@{eregi\_replace}}
+\index{eregi\_replace@{eregi\_replace}!ereg.php@{ereg.php}}
+\doxysubsubsection{\texorpdfstring{eregi\_replace()}{eregi\_replace()}}
+{\footnotesize\ttfamily eregi\+\_\+replace (\begin{DoxyParamCaption}\item[{}]{\$pattern,  }\item[{}]{\$replacement,  }\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Replace regular expression case insensitive \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{deprecated 247. string \$pattern }} \mbox{\hyperlink{class_a}{A}} P\+O\+S\+IX extended regular expression. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$replacement} & \\
+\hline
+\end{DoxyParams}
+If {\itshape pattern} contains parenthesized substrings, {\itshape replacement} may contain substrings of the form \textbackslash{}digit, which will be replaced by the text matching the digit\textquotesingle{}th parenthesized substring; \textbackslash{}0 will produce the entire contents of string. Up to nine substrings may be used. Parentheses may be nested, in which case they are counted by the opening parenthesis. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+The input string. 
+
+\begin{DoxyReturn}{Returns}
+string The modified string is returned. If no matches are found in {\itshape string}, then it will be returned unchanged. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ereg_8php_aad53507bb1d74b68afa2f2f815c17e6f}\label{ereg_8php_aad53507bb1d74b68afa2f2f815c17e6f}} 
+\index{ereg.php@{ereg.php}!split@{split}}
+\index{split@{split}!ereg.php@{ereg.php}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily split (\begin{DoxyParamCaption}\item[{}]{\$pattern,  }\item[{}]{\$string,  }\item[{}]{\$limit = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Split string into array by regular expression \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{deprecated 248. string \$pattern }} Case sensitive regular expression. 
+
+If you want to split on any of the characters which are considered special by regular expressions, you\textquotesingle{}ll need to escape them first. If you think {\bfseries{split}} (or any other regex function, for that matter) is doing something weird, please read the file regex.\+7, included in the regex/ subdirectory of the P\+HP distribution. It\textquotesingle{}s in manpage format, so you\textquotesingle{}ll want to do something along the lines of man /usr/local/src/regex/regex.7 in order to read it. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+The input string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$limit} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If {\itshape limit} is set, the returned array will contain a maximum of {\itshape limit} elements with the last element containing the whole rest of {\itshape string}. 
+
+\begin{DoxyReturn}{Returns}
+array an array of strings, each of which is a substring of {\itshape string} formed by splitting it on boundaries formed by the case-\/sensitive regular expression {\itshape pattern}. 
+\end{DoxyReturn}
+
+
+If there are n occurrences of {\itshape pattern}, the returned array will contain n+1 items. For example, if there is no occurrence of {\itshape pattern}, an array with only one element will be returned. Of course, this is also true if {\itshape string} is empty. If an error occurs, {\bfseries{split}} returns {\bfseries{F\+A\+L\+SE}}. \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ereg_8php_a64cfcc283ae052bdc5e8fb4b1de750a3}\label{ereg_8php_a64cfcc283ae052bdc5e8fb4b1de750a3}} 
+\index{ereg.php@{ereg.php}!spliti@{spliti}}
+\index{spliti@{spliti}!ereg.php@{ereg.php}}
+\doxysubsubsection{\texorpdfstring{spliti()}{spliti()}}
+{\footnotesize\ttfamily spliti (\begin{DoxyParamCaption}\item[{}]{\$pattern,  }\item[{}]{\$string,  }\item[{}]{\$limit = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Split string into array by regular expression case insensitive \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{deprecated 249. string \$pattern }} Case insensitive regular expression. 
+
+If you want to split on any of the characters which are considered special by regular expressions, you\textquotesingle{}ll need to escape them first. If you think {\bfseries{spliti}} (or any other regex function, for that matter) is doing something weird, please read the file regex.\+7, included in the regex/ subdirectory of the P\+HP distribution. It\textquotesingle{}s in manpage format, so you\textquotesingle{}ll want to do something along the lines of man /usr/local/src/regex/regex.7 in order to read it. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+The input string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$limit} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If {\itshape limit} is set, the returned array will contain a maximum of {\itshape limit} elements with the last element containing the whole rest of {\itshape string}. 
+
+\begin{DoxyReturn}{Returns}
+array an array of strings, each of which is a substring of {\itshape string} formed by splitting it on boundaries formed by the case insensitive regular expression {\itshape pattern}. 
+\end{DoxyReturn}
+
+
+If there are n occurrences of {\itshape pattern}, the returned array will contain n+1 items. For example, if there is no occurrence of {\itshape pattern}, an array with only one element will be returned. Of course, this is also true if {\itshape string} is empty. If an error occurs, {\bfseries{spliti}} returns {\bfseries{F\+A\+L\+SE}}. \begin{DoxySince}{Since}
+4.\+0.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ereg_8php_a7bd0550fee48e5ff71ad9dcaed7dccf1}\label{ereg_8php_a7bd0550fee48e5ff71ad9dcaed7dccf1}} 
+\index{ereg.php@{ereg.php}!sql\_regcase@{sql\_regcase}}
+\index{sql\_regcase@{sql\_regcase}!ereg.php@{ereg.php}}
+\doxysubsubsection{\texorpdfstring{sql\_regcase()}{sql\_regcase()}}
+{\footnotesize\ttfamily sql\+\_\+regcase (\begin{DoxyParamCaption}\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Make regular expression for case insensitive match \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{deprecated 250. string \$string }} The input string. 
+
+\begin{DoxyReturn}{Returns}
+string a valid regular expression which will match {\itshape string}, ignoring case. This expression is {\itshape string} with each alphabetic character converted to a bracket expression; this bracket expression contains that character\textquotesingle{}s uppercase and lowercase form. \mbox{\hyperlink{namespace_other}{Other}} characters remain unchanged. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}

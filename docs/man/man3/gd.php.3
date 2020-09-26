@@ -1,0 +1,5098 @@
+.TH "vendor/jetbrains/phpstorm-stubs/gd/gd.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/gd/gd.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBgd_info\fP ()"
+.br
+.ti -1c
+.RI "\fBimagearc\fP ($image, $cx, $cy, $width, $height, $start, $\fBend\fP, $color)"
+.br
+.ti -1c
+.RI "\fBimageellipse\fP ($image, $cx, $cy, $width, $height, $color)"
+.br
+.ti -1c
+.RI "\fBimagechar\fP ($image, $font, $x, $y, $\fBc\fP, $color)"
+.br
+.ti -1c
+.RI "\fBimagecharup\fP ($image, $font, $x, $y, $\fBc\fP, $color)"
+.br
+.ti -1c
+.RI "\fBimagecolorat\fP ($image, $x, $y)"
+.br
+.ti -1c
+.RI "\fBimagecolorallocate\fP ($image, $red, $green, $blue)"
+.br
+.ti -1c
+.RI "\fBimagepalettecopy\fP ($destination, $source)"
+.br
+.ti -1c
+.RI "\fBimagecreatefromstring\fP ($image)"
+.br
+.ti -1c
+.RI "\fBimagecolorclosest\fP ($image, $red, $green, $blue)"
+.br
+.ti -1c
+.RI "\fBimagecolorclosesthwb\fP ($image, $red, $green, $blue)"
+.br
+.ti -1c
+.RI "\fBimagecolordeallocate\fP ($image, $color)"
+.br
+.ti -1c
+.RI "\fBimagecolorresolve\fP ($image, $red, $green, $blue)"
+.br
+.ti -1c
+.RI "\fBimagecolorexact\fP ($image, $red, $green, $blue)"
+.br
+.ti -1c
+.RI "\fBimagecolorset\fP ($image, $index, $red, $green, $blue, $alpha=0)"
+.br
+.ti -1c
+.RI "\fBimagecolortransparent\fP ($image, $color=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimagecolorstotal\fP ($image)"
+.br
+.ti -1c
+.RI "\fBimagecolorsforindex\fP ($image, $index)"
+.br
+.ti -1c
+.RI "\fBimagecopy\fP ($dst_im, $src_im, $dst_x, $dst_y, $src_x, $src_y, $src_w, $src_h)"
+.br
+.ti -1c
+.RI "\fBimagecopymerge\fP ($dst_im, $src_im, $dst_x, $dst_y, $src_x, $src_y, $src_w, $src_h, $pct)"
+.br
+.ti -1c
+.RI "\fBimagecopymergegray\fP ($dst_im, $src_im, $dst_x, $dst_y, $src_x, $src_y, $src_w, $src_h, $pct)"
+.br
+.ti -1c
+.RI "\fBimagecopyresized\fP ($dst_image, $src_image, $dst_x, $dst_y, $src_x, $src_y, $dst_w, $dst_h, $src_w, $src_h)"
+.br
+.ti -1c
+.RI "\fBimagecreate\fP ($width, $height)"
+.br
+.ti -1c
+.RI "\fBimagecreatetruecolor\fP ($width, $height)"
+.br
+.ti -1c
+.RI "\fBimageistruecolor\fP ($image)"
+.br
+.ti -1c
+.RI "\fBimagetruecolortopalette\fP ($image, $dither, $ncolors)"
+.br
+.ti -1c
+.RI "\fBimagesetthickness\fP ($image, $thickness)"
+.br
+.ti -1c
+.RI "\fBimagefilledarc\fP ($image, $cx, $cy, $width, $height, $start, $\fBend\fP, $color, $style)"
+.br
+.ti -1c
+.RI "\fBimagefilledellipse\fP ($image, $cx, $cy, $width, $height, $color)"
+.br
+.ti -1c
+.RI "\fBimagealphablending\fP ($image, $blendmode)"
+.br
+.ti -1c
+.RI "\fBimagesavealpha\fP ($image, $saveflag)"
+.br
+.ti -1c
+.RI "\fBimagecolorallocatealpha\fP ($image, $red, $green, $blue, $alpha)"
+.br
+.ti -1c
+.RI "\fBimagecolorresolvealpha\fP ($image, $red, $green, $blue, $alpha)"
+.br
+.ti -1c
+.RI "\fBimagecolorclosestalpha\fP ($image, $red, $green, $blue, $alpha)"
+.br
+.ti -1c
+.RI "\fBimagecolorexactalpha\fP ($image, $red, $green, $blue, $alpha)"
+.br
+.ti -1c
+.RI "\fBimagecopyresampled\fP ($dst_image, $src_image, $dst_x, $dst_y, $src_x, $src_y, $dst_w, $dst_h, $src_w, $src_h)"
+.br
+.ti -1c
+.RI "\fBimagerotate\fP ($image, $angle, $bgd_color, $ignore_transparent=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimageantialias\fP ($image, $enabled)"
+.br
+.ti -1c
+.RI "\fBimagesettile\fP ($image, $tile)"
+.br
+.ti -1c
+.RI "\fBimagesetbrush\fP ($image, $brush)"
+.br
+.ti -1c
+.RI "\fBimagesetstyle\fP ($image, array $style)"
+.br
+.ti -1c
+.RI "\fBimagecreatefrompng\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBimagecreatefromgif\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBimagecreatefromjpeg\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBimagecreatefromwbmp\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBimagecreatefromwebp\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBimagecreatefromxbm\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBimagecreatefromxpm\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBimagecreatefromgd\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBimagecreatefromgd2\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBimagecreatefromgd2part\fP ($filename, $srcX, $srcY, $width, $height)"
+.br
+.ti -1c
+.RI "\fBimagepng\fP ($image, $filename=\fBnull\fP, $quality=\fBnull\fP, $filters=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimagewebp\fP ($image, $to=\fBnull\fP, $quality=80)"
+.br
+.ti -1c
+.RI "\fBimagegif\fP ($image, $filename=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimagejpeg\fP ($image, $filename=\fBnull\fP, $quality=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimagewbmp\fP ($image, $filename=\fBnull\fP, $foreground=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimagegd\fP ($image, $filename=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimagegd2\fP ($image, $filename=\fBnull\fP, $chunk_size=\fBnull\fP, $type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimagedestroy\fP ($image)"
+.br
+.ti -1c
+.RI "\fBimagegammacorrect\fP ($image, $inputgamma, $outputgamma)"
+.br
+.ti -1c
+.RI "\fBimagefill\fP ($image, $x, $y, $color)"
+.br
+.ti -1c
+.RI "\fBimagefilledpolygon\fP ($image, array $points, $num_points, $color)"
+.br
+.ti -1c
+.RI "\fBimagefilledrectangle\fP ($image, $x1, $y1, $x2, $y2, $color)"
+.br
+.ti -1c
+.RI "\fBimagefilltoborder\fP ($image, $x, $y, $border, $color)"
+.br
+.ti -1c
+.RI "\fBimagefontwidth\fP ($font)"
+.br
+.ti -1c
+.RI "\fBimagefontheight\fP ($font)"
+.br
+.ti -1c
+.RI "\fBimageinterlace\fP ($image, $interlace=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimageline\fP ($image, $x1, $y1, $x2, $y2, $color)"
+.br
+.ti -1c
+.RI "\fBimageloadfont\fP ($\fBfile\fP)"
+.br
+.ti -1c
+.RI "\fBimagepolygon\fP ($image, array $points, $num_points, $color)"
+.br
+.ti -1c
+.RI "\fBimagerectangle\fP ($image, $x1, $y1, $x2, $y2, $color)"
+.br
+.ti -1c
+.RI "\fBimagesetpixel\fP ($image, $x, $y, $color)"
+.br
+.ti -1c
+.RI "\fBimagestring\fP ($image, $font, $x, $y, $string, $color)"
+.br
+.ti -1c
+.RI "\fBimagestringup\fP ($image, $font, $x, $y, $string, $color)"
+.br
+.ti -1c
+.RI "\fBimagesx\fP ($image)"
+.br
+.ti -1c
+.RI "\fBimagesy\fP ($image)"
+.br
+.ti -1c
+.RI "\fBimagedashedline\fP ($image, $x1, $y1, $x2, $y2, $color)"
+.br
+.ti -1c
+.RI "\fBimagettfbbox\fP ($size, $angle, $fontfile, $text)"
+.br
+.ti -1c
+.RI "\fBimagettftext\fP ($image, $size, $angle, $x, $y, $color, $fontfile, $text)"
+.br
+.ti -1c
+.RI "\fBimageftbbox\fP ($size, $angle, $fontfile, $text, $extrainfo=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimagefttext\fP ($image, $size, $angle, $x, $y, $color, $fontfile, $text, $extrainfo=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimagepsloadfont\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBimagepsfreefont\fP ($font_index)"
+.br
+.ti -1c
+.RI "\fBimagepsencodefont\fP ($font_index, $encodingfile)"
+.br
+.ti -1c
+.RI "\fBimagepsextendfont\fP ($font_index, $extend)"
+.br
+.ti -1c
+.RI "\fBimagepsslantfont\fP ($font_index, $slant)"
+.br
+.ti -1c
+.RI "\fBimagepstext\fP ($image, $text, $font_index, $size, $foreground, $background, $x, $y, $space=\fBnull\fP, $tightness=\fBnull\fP, $angle=\fBnull\fP, $antialias_steps=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimagepsbbox\fP ($text, $font, $size)"
+.br
+.ti -1c
+.RI "\fBimagetypes\fP ()"
+.br
+.ti -1c
+.RI "\fBjpeg2wbmp\fP ($jpegname, $wbmpname, $dest_height, $dest_width, $threshold)"
+.br
+.ti -1c
+.RI "\fBpng2wbmp\fP ($pngname, $wbmpname, $dest_height, $dest_width, $threshold)"
+.br
+.ti -1c
+.RI "\fBimage2wbmp\fP ($image, $filename=\fBnull\fP, $threshold=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimagelayereffect\fP ($image, $effect)"
+.br
+.ti -1c
+.RI "\fBimagecolormatch\fP ($image1, $image2)"
+.br
+.ti -1c
+.RI "\fBimagexbm\fP ($image, $filename, $foreground=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimagefilter\fP ($image, $filtertype, $arg1=\fBnull\fP, $arg2=\fBnull\fP, $arg3=\fBnull\fP, $arg4=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimageconvolution\fP ($image, array $matrix, $div, $offset)"
+.br
+.ti -1c
+.RI "\fBimageresolution\fP ($im, $res_x=96, $res_y=96)"
+.br
+.ti -1c
+.RI "\fBimagesetclip\fP ($im, $x1, $y1, $x2, $y2)"
+.br
+.ti -1c
+.RI "\fBimagegetclip\fP ($im)"
+.br
+.ti -1c
+.RI "\fBimageopenpolygon\fP ($image, $points, $num_points, $color)"
+.br
+.ti -1c
+.RI "\fBimagecreatefrombmp\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBimagebmp\fP ($image, $to=\fBnull\fP, $compressed=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBimageaffine\fP ($image, $affine, $clip=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimageaffinematrixconcat\fP (array $m1, array $m2)"
+.br
+.ti -1c
+.RI "\fBimageaffinematrixget\fP ($type, $options=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimagecrop\fP ($image, $rect)"
+.br
+.ti -1c
+.RI "\fBimagecropauto\fP ($image, $mode=\-1, $threshold=\&.5, $color=\-1)"
+.br
+.ti -1c
+.RI "\fBimageflip\fP ($image, $mode)"
+.br
+.ti -1c
+.RI "\fBimagepalettetotruecolor\fP ($image)"
+.br
+.ti -1c
+.RI "\fBimagescale\fP ($image, $new_width, $new_height=\-1, $mode=\fBIMG_BILINEAR_FIXED\fP)"
+.br
+.ti -1c
+.RI "\fBimagesetinterpolation\fP ($image, $method=\fBIMG_BILINEAR_FIXED\fP)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBIMG_GIF\fP 1"
+.br
+.ti -1c
+.RI "const \fBIMG_JPG\fP 2"
+.br
+.ti -1c
+.RI "const \fBIMG_JPEG\fP 2"
+.br
+.ti -1c
+.RI "const \fBIMG_PNG\fP 4"
+.br
+.ti -1c
+.RI "const \fBIMG_WBMP\fP 8"
+.br
+.ti -1c
+.RI "const \fBIMG_XPM\fP 16"
+.br
+.ti -1c
+.RI "const \fBIMG_WEBP\fP 32"
+.br
+.ti -1c
+.RI "const \fBIMG_BMP\fP 64"
+.br
+.ti -1c
+.RI "const \fBIMG_COLOR_TILED\fP \-5"
+.br
+.ti -1c
+.RI "const \fBIMG_COLOR_STYLED\fP \-2"
+.br
+.ti -1c
+.RI "const \fBIMG_COLOR_BRUSHED\fP \-3"
+.br
+.ti -1c
+.RI "const \fBIMG_COLOR_STYLEDBRUSHED\fP \-4"
+.br
+.ti -1c
+.RI "const \fBIMG_COLOR_TRANSPARENT\fP \-6"
+.br
+.ti -1c
+.RI "const \fBIMG_ARC_ROUNDED\fP 0"
+.br
+.ti -1c
+.RI "const \fBIMG_ARC_PIE\fP 0"
+.br
+.ti -1c
+.RI "const \fBIMG_ARC_CHORD\fP 1"
+.br
+.ti -1c
+.RI "const \fBIMG_ARC_NOFILL\fP 2"
+.br
+.ti -1c
+.RI "const \fBIMG_ARC_EDGED\fP 4"
+.br
+.ti -1c
+.RI "const \fBIMG_GD2_RAW\fP 1"
+.br
+.ti -1c
+.RI "const \fBIMG_GD2_COMPRESSED\fP 2"
+.br
+.ti -1c
+.RI "const \fBIMG_EFFECT_REPLACE\fP 0"
+.br
+.ti -1c
+.RI "const \fBIMG_EFFECT_ALPHABLEND\fP 1"
+.br
+.ti -1c
+.RI "const \fBIMG_EFFECT_NORMAL\fP 2"
+.br
+.ti -1c
+.RI "const \fBIMG_EFFECT_OVERLAY\fP 3"
+.br
+.ti -1c
+.RI "const \fBIMG_EFFECT_MULTIPLY\fP 4"
+.br
+.ti -1c
+.RI "const \fBGD_BUNDLED\fP 1"
+.br
+.ti -1c
+.RI "const \fBIMG_FILTER_NEGATE\fP 0"
+.br
+.ti -1c
+.RI "const \fBIMG_FILTER_GRAYSCALE\fP 1"
+.br
+.ti -1c
+.RI "const \fBIMG_FILTER_BRIGHTNESS\fP 2"
+.br
+.ti -1c
+.RI "const \fBIMG_FILTER_CONTRAST\fP 3"
+.br
+.ti -1c
+.RI "const \fBIMG_FILTER_COLORIZE\fP 4"
+.br
+.ti -1c
+.RI "const \fBIMG_FILTER_EDGEDETECT\fP 5"
+.br
+.ti -1c
+.RI "const \fBIMG_FILTER_GAUSSIAN_BLUR\fP 7"
+.br
+.ti -1c
+.RI "const \fBIMG_FILTER_SELECTIVE_BLUR\fP 8"
+.br
+.ti -1c
+.RI "const \fBIMG_FILTER_EMBOSS\fP 6"
+.br
+.ti -1c
+.RI "const \fBIMG_FILTER_MEAN_REMOVAL\fP 9"
+.br
+.ti -1c
+.RI "const \fBIMG_FILTER_SMOOTH\fP 10"
+.br
+.ti -1c
+.RI "const \fBIMG_FILTER_PIXELATE\fP 11"
+.br
+.ti -1c
+.RI "const \fBGD_VERSION\fP '2\&.0\&.35'"
+.br
+.ti -1c
+.RI "const \fBGD_MAJOR_VERSION\fP 2"
+.br
+.ti -1c
+.RI "const \fBGD_MINOR_VERSION\fP 0"
+.br
+.ti -1c
+.RI "const \fBGD_RELEASE_VERSION\fP 35"
+.br
+.ti -1c
+.RI "const \fBGD_EXTRA_VERSION\fP ''"
+.br
+.ti -1c
+.RI "const \fBPNG_NO_FILTER\fP 0"
+.br
+.ti -1c
+.RI "const \fBPNG_FILTER_NONE\fP 8"
+.br
+.ti -1c
+.RI "const \fBPNG_FILTER_SUB\fP 16"
+.br
+.ti -1c
+.RI "const \fBPNG_FILTER_UP\fP 32"
+.br
+.ti -1c
+.RI "const \fBPNG_FILTER_AVG\fP 64"
+.br
+.ti -1c
+.RI "const \fBPNG_FILTER_PAETH\fP 128"
+.br
+.ti -1c
+.RI "const \fBPNG_ALL_FILTERS\fP 248"
+.br
+.ti -1c
+.RI "const \fBIMG_AFFINE_TRANSLATE\fP 0"
+.br
+.ti -1c
+.RI "const \fBIMG_AFFINE_SCALE\fP 1"
+.br
+.ti -1c
+.RI "const \fBIMG_AFFINE_ROTATE\fP 2"
+.br
+.ti -1c
+.RI "const \fBIMG_AFFINE_SHEAR_HORIZONTAL\fP 3"
+.br
+.ti -1c
+.RI "const \fBIMG_AFFINE_SHEAR_VERTICAL\fP 4"
+.br
+.ti -1c
+.RI "const \fBIMG_CROP_DEFAULT\fP 0"
+.br
+.ti -1c
+.RI "const \fBIMG_CROP_TRANSPARENT\fP 1"
+.br
+.ti -1c
+.RI "const \fBIMG_CROP_BLACK\fP 2"
+.br
+.ti -1c
+.RI "const \fBIMG_CROP_WHITE\fP 3"
+.br
+.ti -1c
+.RI "const \fBIMG_CROP_SIDES\fP 4"
+.br
+.ti -1c
+.RI "const \fBIMG_CROP_THRESHOLD\fP 5"
+.br
+.ti -1c
+.RI "const \fBIMG_FLIP_BOTH\fP 3"
+.br
+.ti -1c
+.RI "const \fBIMG_FLIP_HORIZONTAL\fP 1"
+.br
+.ti -1c
+.RI "const \fBIMG_FLIP_VERTICAL\fP 2"
+.br
+.ti -1c
+.RI "const \fBIMG_BELL\fP 1"
+.br
+.ti -1c
+.RI "const \fBIMG_BESSEL\fP 2"
+.br
+.ti -1c
+.RI "const \fBIMG_BICUBIC\fP 4"
+.br
+.ti -1c
+.RI "const \fBIMG_BICUBIC_FIXED\fP 5"
+.br
+.ti -1c
+.RI "const \fBIMG_BILINEAR_FIXED\fP 3"
+.br
+.ti -1c
+.RI "const \fBIMG_BLACKMAN\fP 6"
+.br
+.ti -1c
+.RI "const \fBIMG_BOX\fP 7"
+.br
+.ti -1c
+.RI "const \fBIMG_BSPLINE\fP 8"
+.br
+.ti -1c
+.RI "const \fBIMG_CATMULLROM\fP 9"
+.br
+.ti -1c
+.RI "const \fBIMG_GAUSSIAN\fP 10"
+.br
+.ti -1c
+.RI "const \fBIMG_GENERALIZED_CUBIC\fP 11"
+.br
+.ti -1c
+.RI "const \fBIMG_HERMITE\fP 12"
+.br
+.ti -1c
+.RI "const \fBIMG_HAMMING\fP 13"
+.br
+.ti -1c
+.RI "const \fBIMG_HANNING\fP 14"
+.br
+.ti -1c
+.RI "const \fBIMG_MITCHELL\fP 15"
+.br
+.ti -1c
+.RI "const \fBIMG_POWER\fP 17"
+.br
+.ti -1c
+.RI "const \fBIMG_QUADRATIC\fP 18"
+.br
+.ti -1c
+.RI "const \fBIMG_SINC\fP 19"
+.br
+.ti -1c
+.RI "const \fBIMG_NEAREST_NEIGHBOUR\fP 16"
+.br
+.ti -1c
+.RI "const \fBIMG_WEIGHTED4\fP 21"
+.br
+.ti -1c
+.RI "const \fBIMG_TRIANGLE\fP 20"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "gd_info ()"
+Retrieve information about the currently installed GD library \fBarray an associative array\&. \fP 
+.PP
+of array returned by \fBgd_info\fP 
+.PP
+Attribute 
+.PP
+Meaning  
+.PP
+GD Version 
+.PP
+string value describing the installed libgd version\&.  
+.PP
+FreeType Support 
+.PP
+boolean value\&. \fBTRUE\fP if FreeType Support is installed\&.  
+.PP
+FreeType Linkage 
+.PP
+string value describing the way in which FreeType was linked\&. Expected values are: 'with freetype', 'with TTF library', and 'with unknown library'\&. This element will only be defined if FreeType Support evaluated to \fBTRUE\fP\&.  
+.PP
+T1Lib Support 
+.PP
+boolean value\&. \fBTRUE\fP if T1Lib support is included\&.  
+.PP
+GIF Read Support 
+.PP
+boolean value\&. \fBTRUE\fP if support for reading GIF images is included\&.  
+.PP
+GIF Create Support 
+.PP
+boolean value\&. \fBTRUE\fP if support for creating GIF images is included\&.  
+.PP
+JPEG Support 
+.PP
+boolean value\&. \fBTRUE\fP if JPEG support is included\&.  
+.PP
+PNG Support 
+.PP
+boolean value\&. \fBTRUE\fP if PNG support is included\&.  
+.PP
+WBMP Support 
+.PP
+boolean value\&. \fBTRUE\fP if WBMP support is included\&.  
+.PP
+XBM Support 
+.PP
+boolean value\&. \fBTRUE\fP if XBM support is included\&.  
+.PP
+WebP Support 
+.PP
+boolean value\&. \fBTRUE\fP if WebP support is included\&.  
+.PP
+Previous to PHP 5\&.3\&.0, the JPEG Support attribute was named JPG Support\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "image2wbmp ( $image,  $filename = \fC\fBnull\fP\fP,  $threshold = \fC\fBnull\fP\fP)"
+Output image to browser or file \fBresource $image  string $filename [optional] \fP Path to the saved file\&. If not given, the raw image stream will be outputted directly\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$threshold\fP [optional] 
+.RE
+.PP
+Threshold value, between 0 and 255 (inclusive)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.3 Use \fBimagewbmp()\fP instead 
+.RE
+.PP
+
+.SS "imageaffine ( $image,  $affine,  $clip = \fC\fBnull\fP\fP)"
+Return an image containing the affine tramsformed src image, using an optional clipping area \fBresource $image \fPAn image resource, returned by one of the image creation functions, such as \fBimagecreatetruecolor()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$affine\fP 
+.RE
+.PP
+Array with keys 0 to 5\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$clip\fP [optional] 
+.RE
+.PP
+Array with keys 'x', 'y', 'width' and 'height'\&.
+.PP
+\fBReturns\fP
+.RS 4
+resource|bool Return affined image resource on success or FALSE on failure\&. 
+.RE
+.PP
+
+.SS "imageaffinematrixconcat (array $m1, array $m2)"
+Concat two matrices (as in doing many ops in one go) \fBarray $m1 \fPArray with keys 0 to 5\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$m2\fP 
+.RE
+.PP
+Array with keys 0 to 5\&.
+.PP
+\fBReturns\fP
+.RS 4
+array|bool Array with keys 0 to 5 and float values or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "imageaffinematrixget ( $type,  $options = \fC\fBnull\fP\fP)"
+Return an image containing the affine tramsformed src image, using an optional clipping area \fBint $type \fP One of \fBIMG_AFFINE_*\fP constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|bool Array with keys 0 to 5 and float values or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "imagealphablending ( $image,  $blendmode)"
+Set the blending mode for an image \fBresource $image  bool $blendmode \fP Whether to enable the blending mode or not\&. On true color images the default value is true otherwise the default value is false 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imageantialias ( $image,  $enabled)"
+Should antialias functions be used or not\&. 
+.br
+ Before 7\&.2\&.0 it's only available if PHP iscompiled with the bundled version of the GD library\&. \fBresource $image  bool $enabled \fP Whether to enable antialiasing or not\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagearc ( $image,  $cx,  $cy,  $width,  $height,  $start,  $end,  $color)"
+Draws an arc \fBresource $image  int $cx \fP x-coordinate of the center\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cy\fP 
+.RE
+.PP
+y-coordinate of the center\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$width\fP 
+.RE
+.PP
+The arc width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$height\fP 
+.RE
+.PP
+The arc height\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$start\fP 
+.RE
+.PP
+The arc start angle, in degrees\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$end\fP 
+.RE
+.PP
+The arc end angle, in degrees\&. 0° is located at the three-o'clock position, and the arc is drawn clockwise\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+\fBA\fP color identifier created with \fBimagecolorallocate\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagebmp ( $image,  $to = \fC\fBnull\fP\fP,  $compressed = \fC\fBtrue\fP\fP)"
+Outputs or saves a BMP version of the given \fBimage\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$image\fP An image resource, returned by one of the image creation functions, such as {
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecreatetruecolor()\fP}\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$to\fP The path or an open stream resource (which is automatically being closed after this function returns) to save the file to\&. If not set or \fBNULL\fP, the raw image stream will be outputted directly\&. 
+.br
+ \fBNote:\fP \fBNULL\fP is invalid if the \fBcompressed\fP arguments is not used\&. 
+.br
+\fI$compressed\fP Whether the BMP should be compressed with run-length encoding (RLE), or not\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.br
+ \fBCaution\fP However, if libgd fails to output the image, this function returns \fBTRUE\fP\&. \fB7\&.2 \fP
+.RE
+.PP
+
+.SS "imagechar ( $image,  $font,  $x,  $y,  $c,  $color)"
+Draw a character horizontally \fBresource $image  int $font  int $x \fP x-coordinate of the start\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP 
+.RE
+.PP
+y-coordinate of the start\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$c\fP 
+.RE
+.PP
+The character to draw\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+\fBA\fP color identifier created with \fBimagecolorallocate\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecharup ( $image,  $font,  $x,  $y,  $c,  $color)"
+Draw a character vertically \fBresource $image  int $font  int $x \fP x-coordinate of the start\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP 
+.RE
+.PP
+y-coordinate of the start\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$c\fP 
+.RE
+.PP
+The character to draw\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+\fBA\fP color identifier created with \fBimagecolorallocate\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecolorallocate ( $image,  $red,  $green,  $blue)"
+Allocate a color for an image \fBresource $image  int $red \fPValue of red component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$green\fP 
+.RE
+.PP
+Value of green component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blue\fP 
+.RE
+.PP
+Value of blue component\&.
+.PP
+\fBReturns\fP
+.RS 4
+int|false \fBA\fP color identifier or \fBFALSE\fP if the allocation failed\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecolorallocatealpha ( $image,  $red,  $green,  $blue,  $alpha)"
+Allocate a color for an image \fBresource $image  int $red \fP Value of red component\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$green\fP 
+.RE
+.PP
+Value of green component\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blue\fP 
+.RE
+.PP
+Value of blue component\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$alpha\fP 
+.RE
+.PP
+\fBA\fP value between 0 and 127\&. 0 indicates completely opaque while 127 indicates completely transparent\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false \fBA\fP color identifier or false if the allocation failed\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecolorat ( $image,  $x,  $y)"
+Get the index of the color of a pixel \fBresource $image  int $x \fP x-coordinate of the point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP 
+.RE
+.PP
+y-coordinate of the point\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the index of the color or \fBFALSE\fP on failure 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecolorclosest ( $image,  $red,  $green,  $blue)"
+Get the index of the closest color to the specified color \fBresource $image  int $red \fPValue of red component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$green\fP 
+.RE
+.PP
+Value of green component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blue\fP 
+.RE
+.PP
+Value of blue component\&.
+.PP
+\fBReturns\fP
+.RS 4
+int|false the index of the closest color, in the palette of the image, to the specified one or \fBFALSE\fP on failure 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecolorclosestalpha ( $image,  $red,  $green,  $blue,  $alpha)"
+Get the index of the closest color to the specified color + alpha \fBresource $image  int $red \fP Value of red component\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$green\fP 
+.RE
+.PP
+Value of green component\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blue\fP 
+.RE
+.PP
+Value of blue component\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$alpha\fP 
+.RE
+.PP
+\fBA\fP value between 0 and 127\&. 0 indicates completely opaque while 127 indicates completely transparent\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the index of the closest color in the palette or \fBFALSE\fP on failure 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecolorclosesthwb ( $image,  $red,  $green,  $blue)"
+Get the index of the color which has the hue, white and blackness \fBresource $image  int $red \fPValue of red component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$green\fP 
+.RE
+.PP
+Value of green component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blue\fP 
+.RE
+.PP
+Value of blue component\&.
+.PP
+\fBReturns\fP
+.RS 4
+int|false an integer with the index of the color which has the hue, white and blackness nearest the given color or \fBFALSE\fP on failure 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecolordeallocate ( $image,  $color)"
+De-allocate a color for an image \fBresource $image  int $color \fP The color identifier\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecolorexact ( $image,  $red,  $green,  $blue)"
+Get the index of the specified color \fBresource $image  int $red \fPValue of red component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$green\fP 
+.RE
+.PP
+Value of green component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blue\fP 
+.RE
+.PP
+Value of blue component\&.
+.PP
+\fBReturns\fP
+.RS 4
+int|false the index of the specified color in the palette, -1 if the color does not exist, or \fBFALSE\fP on failure 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecolorexactalpha ( $image,  $red,  $green,  $blue,  $alpha)"
+Get the index of the specified color + alpha \fBresource $image  int $red \fP Value of red component\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$green\fP 
+.RE
+.PP
+Value of green component\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blue\fP 
+.RE
+.PP
+Value of blue component\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$alpha\fP 
+.RE
+.PP
+\fBA\fP value between 0 and 127\&. 0 indicates completely opaque while 127 indicates completely transparent\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the index of the specified color+alpha in the palette of the image, -1 if the color does not exist in the image's palette, or \fBFALSE\fP on failure 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecolormatch ( $image1,  $image2)"
+Makes the colors of the palette version of an image more closely match the true color version \fB$image1 resource \fP \fBA\fP truecolor image link resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$image2\fP resource 
+.RE
+.PP
+\fBA\fP palette image link resource pointing to an image that has the same size as image1\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "imagecolorresolve ( $image,  $red,  $green,  $blue)"
+Get the index of the specified color or its closest possible alternative \fBresource $image  int $red \fPValue of red component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$green\fP 
+.RE
+.PP
+Value of green component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blue\fP 
+.RE
+.PP
+Value of blue component\&.
+.PP
+\fBReturns\fP
+.RS 4
+int|false a color index or \fBFALSE\fP on failure 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecolorresolvealpha ( $image,  $red,  $green,  $blue,  $alpha)"
+Get the index of the specified color + alpha or its closest possible alternative \fBresource $image  int $red \fP Value of red component\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$green\fP 
+.RE
+.PP
+Value of green component\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blue\fP 
+.RE
+.PP
+Value of blue component\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$alpha\fP 
+.RE
+.PP
+\fBA\fP value between 0 and 127\&. 0 indicates completely opaque while 127 indicates completely transparent\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false a color index or \fBFALSE\fP on failure 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecolorset ( $image,  $index,  $red,  $green,  $blue,  $alpha = \fC0\fP)"
+Set the color for the specified palette index \fBresource $image  int $index \fP An index in the palette\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$red\fP 
+.RE
+.PP
+Value of red component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$green\fP 
+.RE
+.PP
+Value of green component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blue\fP 
+.RE
+.PP
+Value of blue component\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$alpha\fP [optional] 
+.RE
+.PP
+Value of alpha component\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void No value is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecolorsforindex ( $image,  $index)"
+Get the colors for an index \fBresource $image  int $index \fP The color index\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an associative array with red, green, blue and alpha keys that contain the appropriate values for the specified color index or \fBFALSE\fP on failure 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecolorstotal ( $image)"
+Find out the number of colors in an image's palette \fBresource $image \fP An image resource, returned by one of the image creation functions, such as \fBimagecreatefromgif\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the number of colors in the specified image's palette, 0 for truecolor images, or \fBFALSE\fP on failure 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecolortransparent ( $image,  $color = \fC\fBnull\fP\fP)"
+Define a color as transparent \fBresource $image  int $color [optional] \fP \fBA\fP color identifier created with \fBimagecolorallocate\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false The identifier of the new (or current, if none is specified) transparent color is returned\&. If \fIcolor\fP is not specified, and the image has no transparent color, the returned identifier will be -1\&. If an error occurs, \fBFALSE\fP is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imageconvolution ( $image, array $matrix,  $div,  $offset)"
+Apply a 3x3 convolution matrix, using coefficient and offset \fBresource $image  array $matrix \fP \fBA\fP 3x3 matrix: an array of three arrays of three floats\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$div\fP 
+.RE
+.PP
+The divisor of the result of the convolution, used for normalization\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP 
+.RE
+.PP
+Color offset\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "imagecopy ( $dst_im,  $src_im,  $dst_x,  $dst_y,  $src_x,  $src_y,  $src_w,  $src_h)"
+Copy part of an image \fBresource $dst_im \fP Destination image link resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_im\fP 
+.RE
+.PP
+Source image link resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dst_x\fP 
+.RE
+.PP
+x-coordinate of destination point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dst_y\fP 
+.RE
+.PP
+y-coordinate of destination point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_x\fP 
+.RE
+.PP
+x-coordinate of source point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_y\fP 
+.RE
+.PP
+y-coordinate of source point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_w\fP 
+.RE
+.PP
+Source width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_h\fP 
+.RE
+.PP
+Source height\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecopymerge ( $dst_im,  $src_im,  $dst_x,  $dst_y,  $src_x,  $src_y,  $src_w,  $src_h,  $pct)"
+Copy and merge part of an image \fBresource $dst_im \fP Destination image link resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_im\fP 
+.RE
+.PP
+Source image link resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dst_x\fP 
+.RE
+.PP
+x-coordinate of destination point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dst_y\fP 
+.RE
+.PP
+y-coordinate of destination point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_x\fP 
+.RE
+.PP
+x-coordinate of source point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_y\fP 
+.RE
+.PP
+y-coordinate of source point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_w\fP 
+.RE
+.PP
+Source width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_h\fP 
+.RE
+.PP
+Source height\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pct\fP 
+.RE
+.PP
+The two images will be merged according to pct which can range from 0 to 100\&. When pct = 0, no action is taken, when 100 this function behaves identically to imagecopy for pallete images, while it implements alpha transparency for true colour images\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecopymergegray ( $dst_im,  $src_im,  $dst_x,  $dst_y,  $src_x,  $src_y,  $src_w,  $src_h,  $pct)"
+Copy and merge part of an image with gray scale \fBresource $dst_im \fP Destination image link resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_im\fP 
+.RE
+.PP
+Source image link resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dst_x\fP 
+.RE
+.PP
+x-coordinate of destination point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dst_y\fP 
+.RE
+.PP
+y-coordinate of destination point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_x\fP 
+.RE
+.PP
+x-coordinate of source point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_y\fP 
+.RE
+.PP
+y-coordinate of source point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_w\fP 
+.RE
+.PP
+Source width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_h\fP 
+.RE
+.PP
+Source height\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pct\fP 
+.RE
+.PP
+The src_im will be changed to grayscale according to pct where 0 is fully grayscale and 100 is unchanged\&. When pct = 100 this function behaves identically to imagecopy for pallete images, while it implements alpha transparency for true colour images\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecopyresampled ( $dst_image,  $src_image,  $dst_x,  $dst_y,  $src_x,  $src_y,  $dst_w,  $dst_h,  $src_w,  $src_h)"
+Copy and resize part of an image with resampling \fBresource $dst_image  resource $src_image  int $dst_x \fP x-coordinate of destination point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dst_y\fP 
+.RE
+.PP
+y-coordinate of destination point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_x\fP 
+.RE
+.PP
+x-coordinate of source point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_y\fP 
+.RE
+.PP
+y-coordinate of source point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dst_w\fP 
+.RE
+.PP
+Destination width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dst_h\fP 
+.RE
+.PP
+Destination height\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_w\fP 
+.RE
+.PP
+Source width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_h\fP 
+.RE
+.PP
+Source height\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecopyresized ( $dst_image,  $src_image,  $dst_x,  $dst_y,  $src_x,  $src_y,  $dst_w,  $dst_h,  $src_w,  $src_h)"
+Copy and resize part of an image \fBresource $dst_image  resource $src_image  int $dst_x \fP x-coordinate of destination point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dst_y\fP 
+.RE
+.PP
+y-coordinate of destination point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_x\fP 
+.RE
+.PP
+x-coordinate of source point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_y\fP 
+.RE
+.PP
+y-coordinate of source point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dst_w\fP 
+.RE
+.PP
+Destination width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dst_h\fP 
+.RE
+.PP
+Destination height\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_w\fP 
+.RE
+.PP
+Source width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$src_h\fP 
+.RE
+.PP
+Source height\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecreate ( $width,  $height)"
+Create a new palette based image \fBint $width \fP The image width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$height\fP 
+.RE
+.PP
+The image height\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an image resource identifier on success, false on errors\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecreatefrombmp ( $filename)"
+\fB\fBimagecreatefrombmp()\fP\fP returns an image identifier representing the image obtained from the given filename\&. \fBTIP\fP \fBA\fP URL can be used as a filename with this function if the fopen wrappers have been enabled\&. See {
+.PP
+\fBSee also\fP
+.RS 4
+\fBfopen()\fP} for more details on how to specify the filename\&. See the Supported Protocols and Wrappers for links to information about what abilities the various wrappers have, notes on their usage, and information on \fBany\fP predefined variables they may provide\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP Path to the BMP image\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false Returns an image resource identifier on success, \fBFALSE\fP on errors\&. \fB7\&.2 \fP
+.RE
+.PP
+
+.SS "imagecreatefromgd ( $filename)"
+Create a new image from GD file or URL \fBstring $filename \fP Path to the GD file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an image resource identifier on success, false on errors\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.7 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecreatefromgd2 ( $filename)"
+Create a new image from GD2 file or URL \fBstring $filename \fP Path to the GD2 image\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an image resource identifier on success, false on errors\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.7 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecreatefromgd2part ( $filename,  $srcX,  $srcY,  $width,  $height)"
+Create a new image from a given part of GD2 file or URL \fBstring $filename \fP Path to the GD2 image\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$srcX\fP 
+.RE
+.PP
+x-coordinate of source point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$srcY\fP 
+.RE
+.PP
+y-coordinate of source point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$width\fP 
+.RE
+.PP
+Source width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$height\fP 
+.RE
+.PP
+Source height\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an image resource identifier on success, false on errors\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.7 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecreatefromgif ( $filename)"
+Create a new image from file or URL \fBstring $filename \fP Path to the GIF image\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an image resource identifier on success, false on errors\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecreatefromjpeg ( $filename)"
+Create a new image from file or URL \fBstring $filename \fP Path to the JPEG image\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an image resource identifier on success, false on errors\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecreatefrompng ( $filename)"
+Create a new image from file or URL \fBstring $filename \fP Path to the PNG image\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an image resource identifier on success, false on errors\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecreatefromstring ( $image)"
+Create a new image from the image stream in the string \fBstring $image \fP \fBA\fP string containing the image data\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false An image resource will be returned on success\&. \fBFALSE\fP is returned if the image type is unsupported, the data is not in a recognised format, or the image is corrupt and cannot be loaded\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecreatefromwbmp ( $filename)"
+Create a new image from file or URL \fBstring $filename \fP Path to the WBMP image\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an image resource identifier on success, false on errors\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecreatefromwebp ( $filename)"
+Create a new image from file or URL \fBstring $filename \fP Path to the WebP image\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an image resource identifier on success, false on errors\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 
+.RE
+.PP
+
+.SS "imagecreatefromxbm ( $filename)"
+Create a new image from file or URL \fBstring $filename \fP Path to the XBM image\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an image resource identifier on success, false on errors\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecreatefromxpm ( $filename)"
+Create a new image from file or URL \fBstring $filename \fP Path to the XPM image\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an image resource identifier on success, false on errors\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecreatetruecolor ( $width,  $height)"
+Create a new true color image \fBint $width \fP Image width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$height\fP 
+.RE
+.PP
+Image height\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an image resource identifier on success, false on errors\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagecrop ( $image,  $rect)"
+Crop an image using the given coordinates and size, x, y, width and height \fBresource $image \fP An image resource, returned by one of the image creation functions, such as \fBimagecreatetruecolor()\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$rect\fP 
+.RE
+.PP
+Array with keys 'x', 'y', 'width' and 'height'\&.
+.PP
+\fBReturns\fP
+.RS 4
+resource|bool Return cropped image resource on success or FALSE on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "imagecropauto ( $image,  $mode = \fC\-1\fP,  $threshold = \fC\&.5\fP,  $color = \fC\-1\fP)"
+Crop an image automatically using one of the available modes \fBresource $image \fP An image resource, returned by one of the image creation functions, such as \fBimagecreatetruecolor()\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+One of \fBIMG_CROP_*\fP constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$threshold\fP [optional] 
+.RE
+.PP
+Used \fBIMG_CROP_THRESHOLD\fP mode\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP [optional] 
+.RE
+.PP
+Used in \fBIMG_CROP_THRESHOLD\fP mode\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|bool Return cropped image resource on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "imagedashedline ( $image,  $x1,  $y1,  $x2,  $y2,  $color)"
+Draw a dashed line \fBresource $image  int $x1 \fP Upper left x coordinate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y1\fP 
+.RE
+.PP
+Upper left y coordinate 0, 0 is the top left corner of the image\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x2\fP 
+.RE
+.PP
+Bottom right x coordinate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y2\fP 
+.RE
+.PP
+Bottom right y coordinate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+The fill color\&. \fBA\fP color identifier created with imagecolorallocate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+Use combination of \fBimagesetstyle()\fP and \fBimageline()\fP instead 
+.RE
+.PP
+
+.SS "imagedestroy ( $image)"
+Destroy an image \fBresource $image  bool true on success or false on failure\&.  4\&.0  5\&.0 \fP
+.SS "imageellipse ( $image,  $cx,  $cy,  $width,  $height,  $color)"
+Draw an ellipse \fBresource $image  int $cx \fP x-coordinate of the center\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cy\fP 
+.RE
+.PP
+y-coordinate of the center\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$width\fP 
+.RE
+.PP
+The ellipse width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$height\fP 
+.RE
+.PP
+The ellipse height\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+The color of the ellipse\&. \fBA\fP color identifier created with \fBimagecolorallocate\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagefill ( $image,  $x,  $y,  $color)"
+Flood fill \fBresource $image  int $x \fP x-coordinate of start point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP 
+.RE
+.PP
+y-coordinate of start point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+The fill color\&. \fBA\fP color identifier created with imagecolorallocate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagefilledarc ( $image,  $cx,  $cy,  $width,  $height,  $start,  $end,  $color,  $style)"
+Draw a partial arc and fill it \fBresource $image  int $cx \fP x-coordinate of the center\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cy\fP 
+.RE
+.PP
+y-coordinate of the center\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$width\fP 
+.RE
+.PP
+The arc width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$height\fP 
+.RE
+.PP
+The arc height\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$start\fP 
+.RE
+.PP
+The arc start angle, in degrees\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$end\fP 
+.RE
+.PP
+The arc end angle, in degrees\&. 0 is located at the three-o'clock position, and the arc is drawn clockwise\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+\fBA\fP color identifier created with imagecolorallocate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$style\fP 
+.RE
+.PP
+\fBA\fP bitwise OR of the following possibilities: IMG_ARC_PIE 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagefilledellipse ( $image,  $cx,  $cy,  $width,  $height,  $color)"
+Draw a filled ellipse \fBresource $image  int $cx \fP x-coordinate of the center\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cy\fP 
+.RE
+.PP
+y-coordinate of the center\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$width\fP 
+.RE
+.PP
+The ellipse width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$height\fP 
+.RE
+.PP
+The ellipse height\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+The fill color\&. \fBA\fP color identifier created with imagecolorallocate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagefilledpolygon ( $image, array $points,  $num_points,  $color)"
+Draw a filled polygon \fBresource $image  array $points \fP An array containing the x and y coordinates of the polygons vertices consecutively\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$num_points\fP 
+.RE
+.PP
+Total number of vertices, which must be at least 3\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+\fBA\fP color identifier created with imagecolorallocate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagefilledrectangle ( $image,  $x1,  $y1,  $x2,  $y2,  $color)"
+Draw a filled rectangle \fBresource $image  int $x1 \fP x-coordinate for point 1\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y1\fP 
+.RE
+.PP
+y-coordinate for point 1\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x2\fP 
+.RE
+.PP
+x-coordinate for point 2\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y2\fP 
+.RE
+.PP
+y-coordinate for point 2\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+The fill color\&. \fBA\fP color identifier created with imagecolorallocate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagefilltoborder ( $image,  $x,  $y,  $border,  $color)"
+Flood fill to specific color \fBresource $image  int $x \fP x-coordinate of start\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP 
+.RE
+.PP
+y-coordinate of start\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$border\fP 
+.RE
+.PP
+The border color\&. \fBA\fP color identifier created with imagecolorallocate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+The fill color\&. \fBA\fP color identifier created with imagecolorallocate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagefilter ( $image,  $filtertype,  $arg1 = \fC\fBnull\fP\fP,  $arg2 = \fC\fBnull\fP\fP,  $arg3 = \fC\fBnull\fP\fP,  $arg4 = \fC\fBnull\fP\fP)"
+Applies a filter to an image \fBresource $image  int $filtertype \fP filtertype can be one of the following: IMG_FILTER_NEGATE: Reverses all colors of the image\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$arg1\fP [optional] 
+.RE
+.PP
+IMG_FILTER_BRIGHTNESS: Brightness level\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$arg2\fP [optional] 
+.RE
+.PP
+IMG_FILTER_COLORIZE: Value of green component\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$arg3\fP [optional] 
+.RE
+.PP
+IMG_FILTER_COLORIZE: Value of blue component\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$arg4\fP [optional] 
+.RE
+.PP
+IMG_FILTER_COLORIZE: Alpha channel, \fBA\fP value between 0 and 127\&. 0 indicates completely opaque while 127 indicates completely transparent\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "imageflip ( $image,  $mode)"
+Flips an image using a given mode \fBresource $image \fP An image resource, returned by one of the image creation functions, such as \fBimagecreatetruecolor()\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+Flip mode, this can be one of the \fBIMG_FLIP_*\fP constants: 
+.PP
+.PP
+Constant 
+.PP
+Meaning  </thead> 
+.PP
+\fBIMG_FLIP_HORIZONTAL\fP 
+.PP
+Flips the image horizontally\&.   
+.PP
+\fBIMG_FLIP_VERTICAL\fP 
+.PP
+Flips the image vertically\&.   
+.PP
+\fBIMG_FLIP_BOTH\fP 
+.PP
+Flips the image both horizontally and vertically\&.   </tbody> 
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "imagefontheight ( $font)"
+Get font height \fBint $font  int the height of the pixel\&.  4\&.0  5\&.0 \fP
+.SS "imagefontwidth ( $font)"
+Get font width \fBint $font  int the width of the pixel  4\&.0  5\&.0 \fP
+.SS "imageftbbox ( $size,  $angle,  $fontfile,  $text,  $extrainfo = \fC\fBnull\fP\fP)"
+Give the bounding box of a text using fonts via freetype2 \fBfloat $size \fP The font size\&. Depending on your version of GD, this should be specified as the pixel size (GD1) or point size (GD2)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$angle\fP 
+.RE
+.PP
+Angle in degrees in which text will be measured\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fontfile\fP 
+.RE
+.PP
+The name of the TrueType font file (can be a URL)\&. Depending on which version of the GD library that PHP is using, it may attempt to search for files that do not begin with a leading '/' by appending '\&.ttf' to the filename and searching along a library-defined font path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$text\fP 
+.RE
+.PP
+The string to be measured\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$extrainfo\fP [optional] 
+.RE
+.PP
+array indexes for extrainfo 
+.PP
+Key 
+.PP
+Type 
+.PP
+Meaning  
+.PP
+linespacing 
+.PP
+float 
+.PP
+Defines drawing linespacing  
+.PP
+\fBReturns\fP
+.RS 4
+array|false imageftbbox returns an array with 8 elements representing four points making the bounding box of the text: 
+.RE
+.PP
+.PP
+0 
+.PP
+lower left corner, X position  
+.PP
+1 
+.PP
+lower left corner, Y position  
+.PP
+2 
+.PP
+lower right corner, X position  
+.PP
+3 
+.PP
+lower right corner, Y position  
+.PP
+4 
+.PP
+upper right corner, X position  
+.PP
+5 
+.PP
+upper right corner, Y position  
+.PP
+6 
+.PP
+upper left corner, X position  
+.PP
+7 
+.PP
+upper left corner, Y position  
+.PP
+The points are relative to the text regardless of the angle, so 'upper left' means in the top left-hand corner seeing the text horizontally\&. Returns false on error\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.7 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagefttext ( $image,  $size,  $angle,  $x,  $y,  $color,  $fontfile,  $text,  $extrainfo = \fC\fBnull\fP\fP)"
+Write text to the image using fonts using FreeType 2 \fBresource $image  float $size \fP The font size to use in points\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$angle\fP 
+.RE
+.PP
+The angle in degrees, with 0 degrees being left-to-right reading text\&. Higher values represent a counter-clockwise rotation\&. For example, a value of 90 would result in bottom-to-top reading text\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP 
+.RE
+.PP
+The coordinates given by x and y will define the basepoint of the first character (roughly the lower-left corner of the character)\&. This is different from the imagestring, where x and y define the upper-left corner of the first character\&. For example, 'top left' is 0, 0\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP 
+.RE
+.PP
+The y-ordinate\&. This sets the position of the fonts baseline, not the very bottom of the character\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+The index of the desired color for the text, see imagecolorexact\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fontfile\fP 
+.RE
+.PP
+The path to the TrueType font you wish to use\&. 
+.PP
+Depending on which version of the GD library PHP is using, when fontfile does not begin with a leading / then \&.ttf will be appended to the filename and the library will attempt to search for that filename along a library-defined font path\&. 
+.PP
+When using versions of the GD library lower than 2\&.0\&.18, a space character, rather than a semicolon, was used as the 'path separator' for different font files\&. Unintentional use of this feature will result in the warning message: Warning: Could not find/open font\&. For these affected versions, the only solution is moving the font to a path which does not contain spaces\&. 
+.PP
+In many cases where a font resides in the same directory as the script using it the following trick will alleviate any include problems\&. 
+.PP
+.PP
+.nf
+
+<?php
+// Set the enviroment variable for GD
+putenv('GDFONTPATH=' \&. realpath('\&.'));
+.fi
+.PP
+.PP
+.PP
+.nf
+// Name the font to be used (note the lack of the \&.ttf extension)
+$font = 'SomeFont';
+?>
+.fi
+.PP
+ <p<blockquote>
+.PP
+\fBNote:\fP \fCopen_basedir\fP does \fInot\fP apply to fontfile\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$text\fP 
+.RE
+.PP
+Text to be inserted into image\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$extrainfo\fP [optional] 
+.RE
+.PP
+array indexes for extrainfo 
+.PP
+Key 
+.PP
+Type 
+.PP
+Meaning  
+.PP
+linespacing 
+.PP
+float 
+.PP
+Defines drawing linespacing  
+.PP
+\fBReturns\fP
+.RS 4
+array|false This function returns an array defining the four points of the box, starting in the lower left and moving counter-clockwise: 
+.RE
+.PP
+.PP
+0 
+.PP
+lower left x-coordinate  
+.PP
+1 
+.PP
+lower left y-coordinate  
+.PP
+2 
+.PP
+lower right x-coordinate  
+.PP
+3 
+.PP
+lower right y-coordinate  
+.PP
+4 
+.PP
+upper right x-coordinate  
+.PP
+5 
+.PP
+upper right y-coordinate  
+.PP
+6 
+.PP
+upper left x-coordinate  
+.PP
+7 
+.PP
+upper left y-coordinate  Returns false on error\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.7 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagegammacorrect ( $image,  $inputgamma,  $outputgamma)"
+Apply a gamma correction to a GD image \fBresource $image  float $inputgamma \fP The input gamma\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$outputgamma\fP 
+.RE
+.PP
+The output gamma\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagegd ( $image,  $filename = \fC\fBnull\fP\fP)"
+Output GD image to browser or file\&. 
+.br
+ Since 7\&.2\&.0 allows to output truecolor images\&. \fBresource $image  string $filename [optional] \fP The path to save the file to\&. If not set or , the raw image stream will be outputted directly\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.7 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagegd2 ( $image,  $filename = \fC\fBnull\fP\fP,  $chunk_size = \fC\fBnull\fP\fP,  $type = \fC\fBnull\fP\fP)"
+Output GD2 image to browser or file \fBresource $image  string $filename [optional] \fP The path to save the file to\&. If not set or , the raw image stream will be outputted directly\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$chunk_size\fP [optional] 
+.RE
+.PP
+Chunk size\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP [optional] 
+.RE
+.PP
+Either IMG_GD2_RAW or IMG_GD2_COMPRESSED\&. Default is IMG_GD2_RAW\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.7 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagegetclip ( $im)"
+\fB\fBimagegetclip()\fP\fP retrieves the current clipping rectangle, i\&.e\&. the area beyond which no pixels will be drawn\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$im\fP An image resource, returned by one of the image creation functions, such as {
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecreatetruecolor()\fP} 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|false an indexed array with the coordinates of the clipping rectangle which has the following entries: 
+.PD 0
+
+.IP "\(bu" 2
+x-coordinate of the upper left corner 
+.IP "\(bu" 2
+y-coordinate of the upper left corner 
+.IP "\(bu" 2
+x-coordinate of the lower right corner 
+.IP "\(bu" 2
+y-coordinate of the lower right corner 
+.PP
+Returns \fBFALSE\fP on error\&. \fBimagesetclip()  7\&.2 \fP
+.RE
+.PP
+
+.SS "imagegif ( $image,  $filename = \fC\fBnull\fP\fP)"
+Output image to browser or file \fBresource $image  string $filename [optional] \fP The path to save the file to\&. If not set or , the raw image stream will be outputted directly\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imageinterlace ( $image,  $interlace = \fC\fBnull\fP\fP)"
+Enable or disable interlace \fBresource $image  int $interlace [optional] \fP If non-zero, the image will be interlaced, else the interlace bit is turned off\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false 1 if the interlace bit is set for the image, 0 if it is not, or \fBFALSE\fP on failure 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imageistruecolor ( $image)"
+Finds whether an image is a truecolor image \fBresource $image  bool true if the image is truecolor, false otherwise\&.  4\&.3\&.2  5\&.0 \fP
+.SS "imagejpeg ( $image,  $filename = \fC\fBnull\fP\fP,  $quality = \fC\fBnull\fP\fP)"
+Output image to browser or file \fBresource $image  string $filename [optional] \fP The path to save the file to\&. If not set or , the raw image stream will be outputted directly\&. 
+.PP
+To skip this argument in order to provide the quality parameter, use \&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$quality\fP [optional] 
+.RE
+.PP
+quality is optional, and ranges from 0 (worst quality, smaller file) to 100 (best quality, biggest file)\&. The default is the default IJG quality value (about 75)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagelayereffect ( $image,  $effect)"
+Set the alpha blending flag to use the bundled libgd layering effects \fBresource $image  int $effect \fP One of the following constants: IMG_EFFECT_REPLACE Use pixel replacement (equivalent of passing true to imagealphablending) 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imageline ( $image,  $x1,  $y1,  $x2,  $y2,  $color)"
+Draw a line \fBresource $image  int $x1 \fP x-coordinate for first point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y1\fP 
+.RE
+.PP
+y-coordinate for first point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x2\fP 
+.RE
+.PP
+x-coordinate for second point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y2\fP 
+.RE
+.PP
+y-coordinate for second point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+The line color\&. \fBA\fP color identifier created with imagecolorallocate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imageloadfont ( $file)"
+Load a new font \fBstring $file \fP The font file format is currently binary and architecture dependent\&. This means you should generate the font files on the same type of CPU as the machine you are running PHP on\&. 
+.PP
+file format 
+.PP
+byte position 
+.PP
+C data type 
+.PP
+description  
+.PP
+byte 0-3 
+.PP
+int 
+.PP
+number of characters in the font  
+.PP
+byte 4-7 
+.PP
+int 
+.PP
+value of first character in the font (often 32 for space)   
+.PP
+byte 8-11 
+.PP
+int 
+.PP
+pixel width of each character  
+.PP
+byte 12-15 
+.PP
+int 
+.PP
+pixel height of each character  
+.PP
+byte 16- 
+.PP
+char 
+.PP
+array with character data, one byte per pixel in each character, for a total of (nchars*width*height) bytes\&.   
+.PP
+\fBReturns\fP
+.RS 4
+int|false The font identifier which is always bigger than 5 to avoid conflicts with built-in fonts or false on errors\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imageopenpolygon ( $image,  $points,  $num_points,  $color)"
+\fB\fBimageopenpolygon()\fP\fP draws an open polygon on the given \fBimage\&.\fP Contrary to {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagepolygon()\fP}, no \fBline\fP is drawn between the last and the first point\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$image\fP An image resource, returned by one of the image creation functions, such as {
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecreatetruecolor()\fP}\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$points\fP An array containing the polygon's vertices, e\&.g\&.: 
+.PP
+.nf
+
+points[0]   = x0
+points[1]   = y0
+points[2]   = x1
+points[3]   = y1
+.fi
+.PP
+ 
+.br
+\fI$num_points\fP Total number of points (vertices)\&. 
+.br
+\fI$color\fP \fBA\fP color identifier created with {
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecolorallocate()\fP}\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&. \fB7\&.2  imageplygon() \fP
+.RE
+.PP
+
+.SS "imagepalettecopy ( $destination,  $source)"
+Copy the palette from one image to another \fBresource $destination \fP The destination image resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$source\fP 
+.RE
+.PP
+The source image resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void No value is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagepalettetotruecolor ( $image)"
+Converts a palette based image to true color \fBresource $image \fP An image resource, returnd by one of the image creation functions, such as \fBimagecreatetruecolor()\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP if the convertion was complete, or if the source image already is a true color image, otherwise \fBFALSE\fP is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "imagepng ( $image,  $filename = \fC\fBnull\fP\fP,  $quality = \fC\fBnull\fP\fP,  $filters = \fC\fBnull\fP\fP)"
+Output a PNG image to either the browser or a file \fBresource $image  string $filename [optional] \fP The path to save the file to\&. If not set or , the raw image stream will be outputted directly\&. 
+.PP
+is invalid if the quality and filters arguments are not used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$quality\fP [optional] 
+.RE
+.PP
+Compression level: from 0 (no compression) to 9\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filters\fP [optional] 
+.RE
+.PP
+Allows reducing the PNG file size\&. It is a bitmask field which may be set to any combination of the PNG_FILTER_XXX constants\&. PNG_NO_FILTER or PNG_ALL_FILTERS may also be used to respectively disable or activate all filters\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagepolygon ( $image, array $points,  $num_points,  $color)"
+Draws a polygon \fBresource $image  array $points \fP An array containing the polygon's vertices, e\&.g\&.: 
+.PP
+points[0] 
+.PP
+= x0  
+.PP
+points[1] 
+.PP
+= y0  
+.PP
+points[2] 
+.PP
+= x1  
+.PP
+points[3] 
+.PP
+= y1  
+.PP
+\fBParameters\fP
+.RS 4
+\fI$num_points\fP 
+.RE
+.PP
+Total number of points (vertices)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+\fBA\fP color identifier created with imagecolorallocate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagepsbbox ( $text,  $font,  $size)"
+Give the bounding box of a text rectangle using PostScript Type1 fonts \fBstring $text \fP The text to be written\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$font\fP 
+.br
+\fI$size\fP 
+.RE
+.PP
+size is expressed in pixels\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array containing the following elements: 
+.RE
+.PP
+.PP
+0 
+.PP
+left x-coordinate  
+.PP
+1 
+.PP
+upper y-coordinate  
+.PP
+2 
+.PP
+right x-coordinate  
+.PP
+3 
+.PP
+lower y-coordinate  Returns false on error\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.0 This function was REMOVED in PHP 7\&.0\&.0\&. 
+.RE
+.PP
+
+.SS "imagepsencodefont ( $font_index,  $encodingfile)"
+Change the character encoding vector of a font \fBresource $font_index \fP \fBA\fP font resource, returned by imagepsloadfont\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encodingfile\fP 
+.RE
+.PP
+The exact format of this file is described in T1libs documentation\&. T1lib comes with two ready-to-use files, IsoLatin1\&.enc and IsoLatin2\&.enc\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.0 This function was REMOVED in PHP 7\&.0\&.0\&. 
+.RE
+.PP
+
+.SS "imagepsextendfont ( $font_index,  $extend)"
+Extend or condense a font \fBresource $font_index \fP \fBA\fP font resource, returned by imagepsloadfont\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$extend\fP 
+.RE
+.PP
+Extension value, must be greater than 0\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.0 This function was REMOVED in PHP 7\&.0\&.0\&. 
+.RE
+.PP
+
+.SS "imagepsfreefont ( $font_index)"
+Free memory used by a PostScript Type 1 font \fBresource $font_index \fP \fBA\fP font resource, returned by imagepsloadfont\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.0 This function was REMOVED in PHP 7\&.0\&.0\&. 
+.RE
+.PP
+
+.SS "imagepsloadfont ( $filename)"
+Load a PostScript Type 1 font from file \fBstring $filename \fP Path to the Postscript font file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false In the case everything went right, a valid font index will be returned and can be used for further purposes\&. Otherwise the function returns false\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.0 This function was REMOVED in PHP 7\&.0\&.0\&. 
+.RE
+.PP
+
+.SS "imagepsslantfont ( $font_index,  $slant)"
+Slant a font \fBresource $font_index \fP \fBA\fP font resource, returned by imagepsloadfont\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$slant\fP 
+.RE
+.PP
+Slant level\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.0 This function was REMOVED in PHP 7\&.0\&.0\&. 
+.RE
+.PP
+
+.SS "imagepstext ( $image,  $text,  $font_index,  $size,  $foreground,  $background,  $x,  $y,  $space = \fC\fBnull\fP\fP,  $tightness = \fC\fBnull\fP\fP,  $angle = \fC\fBnull\fP\fP,  $antialias_steps = \fC\fBnull\fP\fP)"
+Draws a text over an image using PostScript Type1 fonts \fBresource $image  string $text \fP The text to be written\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$font_index\fP 
+.RE
+.PP
+\fBA\fP font resource, returned by imagepsloadfont\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$size\fP 
+.RE
+.PP
+size is expressed in pixels\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$foreground\fP 
+.RE
+.PP
+The color in which the text will be painted\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$background\fP 
+.RE
+.PP
+The color to which the text will try to fade in with antialiasing\&. No pixels with the color background are actually painted, so the background image does not need to be of solid color\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP 
+.RE
+.PP
+x-coordinate for the lower-left corner of the first character\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP 
+.RE
+.PP
+y-coordinate for the lower-left corner of the first character\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$space\fP [optional] 
+.RE
+.PP
+Allows you to change the default value of a space in a font\&. This amount is added to the normal value and can also be negative\&. Expressed in character space units, where 1 unit is 1/1000th of an em-square\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tightness\fP [optional] 
+.RE
+.PP
+tightness allows you to control the amount of white space between characters\&. This amount is added to the normal character width and can also be negative\&. Expressed in character space units, where 1 unit is 1/1000th of an em-square\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$angle\fP [optional] 
+.RE
+.PP
+angle is in degrees\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$antialias_steps\fP [optional] 
+.RE
+.PP
+Allows you to control the number of colours used for antialiasing text\&. Allowed values are 4 and 16\&. The higher value is recommended for text sizes lower than 20, where the effect in text quality is quite visible\&. With bigger sizes, use 4\&. It's less computationally intensive\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false This function returns an array containing the following elements: 
+.RE
+.PP
+.PP
+0 
+.PP
+lower left x-coordinate  
+.PP
+1 
+.PP
+lower left y-coordinate  
+.PP
+2 
+.PP
+upper right x-coordinate  
+.PP
+3 
+.PP
+upper right y-coordinate  Returns false on error\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.0 This function was REMOVED in PHP 7\&.0\&.0\&. 
+.RE
+.PP
+
+.SS "imagerectangle ( $image,  $x1,  $y1,  $x2,  $y2,  $color)"
+Draw a rectangle \fBresource $image  int $x1 \fP Upper left x coordinate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y1\fP 
+.RE
+.PP
+Upper left y coordinate 0, 0 is the top left corner of the image\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x2\fP 
+.RE
+.PP
+Bottom right x coordinate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y2\fP 
+.RE
+.PP
+Bottom right y coordinate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+\fBA\fP color identifier created with imagecolorallocate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imageresolution ( $im,  $res_x = \fC96\fP,  $res_y = \fC96\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$im\fP An image resource, returned by one of the image creation functions, such as {
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecreatetruecolor()\fP}\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$res_x\fP [optional] The horizontal resolution in DPI\&. 
+.br
+\fI$res_y\fP [optional] The vertical resolution in DPI\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|bool When used as getter (that is without the optional parameters), it returns \fBTRUE\fP on success, or \fBFALSE\fP on failure\&. When used as setter (that is with one or both optional parameters given), it returns an indexed array of the horizontal and vertical resolution on success, or \fBFALSE\fP on failure\&. \fB7\&.2 \fP
+.RE
+.PP
+
+.SS "imagerotate ( $image,  $angle,  $bgd_color,  $ignore_transparent = \fC\fBnull\fP\fP)"
+Rotate an image with a given angle \fBresource $image  float $angle \fP Rotation angle, in degrees\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bgd_color\fP 
+.RE
+.PP
+Specifies the color of the uncovered zone after the rotation 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ignore_transparent\fP [optional] 
+.RE
+.PP
+If set and non-zero, transparent colors are ignored (otherwise kept)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false the rotated image or \fBFALSE\fP on failure 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagesavealpha ( $image,  $saveflag)"
+Set the flag to save full alpha channel information (as opposed to single-color transparency) when saving PNG images \fBresource $image  bool $saveflag \fP Whether to save the alpha channel or not\&. Default to false\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagescale ( $image,  $new_width,  $new_height = \fC\-1\fP,  $mode = \fC\fBIMG_BILINEAR_FIXED\fP\fP)"
+
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 Scale an image using the given new width and height \fBresource $image \fP An image resource, returnd by one of the image creation functions, such as \fBimagecreatetruecolor()\fP\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$new_width\fP 
+.br
+\fI$new_height\fP [optional] 
+.br
+\fI$mode\fP [optional] One of \fBIMG_NEAREST_NEIGHBOUR\fP, \fBIMG_BILINEAR_FIXED\fP, \fBIMG_BICUBIC\fP, \fBIMG_BICUBIC_FIXED\fP or anything else (will use two pass)\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|bool Return scaled image resource on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "imagesetbrush ( $image,  $brush)"
+Set the brush image for line drawing \fBresource $image  resource $brush \fP An image resource\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagesetclip ( $im,  $x1,  $y1,  $x2,  $y2)"
+\fB\fBimagesetclip()\fP\fP sets the current clipping rectangle, i\&.e\&. the area beyond which no pixels will be drawn\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$im\fP An image resource, returned by one of the image creation functions, such as {
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecreatetruecolor()\fP}\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x1\fP The x-coordinate of the upper left corner\&. 
+.br
+\fI$y1\fP The y-coordinate of the upper left corner\&. 
+.br
+\fI$x2\fP The x-coordinate of the lower right corner\&. 
+.br
+\fI$y2\fP The y-coordinate of the lower right corner\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns \fBTRUE\fP on success or \fBFALSE\fP on failure\&. \fBimagegetclip()  7\&.2 \fP
+.RE
+.PP
+
+.SS "imagesetinterpolation ( $image,  $method = \fC\fBIMG_BILINEAR_FIXED\fP\fP)"
+Set the interpolation method \fBresource $image \fP An image resource, returned by one of the image creation functions, such as \fBimagecreatetruecolor()\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$method\fP 
+.RE
+.PP
+The interpolation method, which can be one of the following: 
+.PD 0
+
+.IP "\(bu" 2
+IMG_BELL: Bell filter\&.  
+.IP "\(bu" 2
+IMG_BESSEL: Bessel filter\&.  
+.IP "\(bu" 2
+IMG_BICUBIC: Bicubic interpolation\&.  
+.IP "\(bu" 2
+IMG_BICUBIC_FIXED: Fixed point implementation of the bicubic interpolation\&.  
+.IP "\(bu" 2
+IMG_BILINEAR_FIXED: Fixed point implementation of the bilinear interpolation (\fIdefault (also on image creation)\fP)\&.  
+.IP "\(bu" 2
+IMG_BLACKMAN: Blackman window function\&.  
+.IP "\(bu" 2
+IMG_BOX: Box blur filter\&.  
+.IP "\(bu" 2
+IMG_BSPLINE: Spline interpolation\&.  
+.IP "\(bu" 2
+IMG_CATMULLROM: Cubbic Hermite spline interpolation\&.  
+.IP "\(bu" 2
+IMG_GAUSSIAN: Gaussian function\&.  
+.IP "\(bu" 2
+IMG_GENERALIZED_CUBIC: Generalized cubic spline fractal interpolation\&.  
+.IP "\(bu" 2
+IMG_HERMITE: Hermite interpolation\&.  
+.IP "\(bu" 2
+IMG_HAMMING: Hamming filter\&.  
+.IP "\(bu" 2
+IMG_HANNING: Hanning filter\&.  
+.IP "\(bu" 2
+IMG_MITCHELL: Mitchell filter\&.  
+.IP "\(bu" 2
+IMG_POWER: Power interpolation\&.  
+.IP "\(bu" 2
+IMG_QUADRATIC: Inverse quadratic interpolation\&.  
+.IP "\(bu" 2
+IMG_SINC: Sinc function\&.  
+.IP "\(bu" 2
+IMG_NEAREST_NEIGHBOUR: Nearest neighbour interpolation\&.  
+.IP "\(bu" 2
+IMG_WEIGHTED4: Weighting filter\&.  
+.IP "\(bu" 2
+IMG_TRIANGLE: Triangle interpolation\&.  
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns TRUE on success or FALSE on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "imagesetpixel ( $image,  $x,  $y,  $color)"
+Set a single pixel \fBresource $image  int $x \fP x-coordinate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP 
+.RE
+.PP
+y-coordinate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+\fBA\fP color identifier created with imagecolorallocate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagesetstyle ( $image, array $style)"
+Set the style for line drawing \fBresource $image  array $style \fP An array of pixel colors\&. You can use the IMG_COLOR_TRANSPARENT constant to add a transparent pixel\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagesetthickness ( $image,  $thickness)"
+Set the thickness for line drawing \fBresource $image  int $thickness \fP Thickness, in pixels\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagesettile ( $image,  $tile)"
+Set the tile image for filling \fBresource $image  resource $tile \fP The image resource to be used as a tile\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagestring ( $image,  $font,  $x,  $y,  $string,  $color)"
+Draw a string horizontally \fBresource $image  int $font  int $x \fP x-coordinate of the upper left corner\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP 
+.RE
+.PP
+y-coordinate of the upper left corner\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$string\fP 
+.RE
+.PP
+The string to be written\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+\fBA\fP color identifier created with imagecolorallocate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagestringup ( $image,  $font,  $x,  $y,  $string,  $color)"
+Draw a string vertically \fBresource $image  int $font  int $x \fP x-coordinate of the upper left corner\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP 
+.RE
+.PP
+y-coordinate of the upper left corner\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$string\fP 
+.RE
+.PP
+The string to be written\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+\fBA\fP color identifier created with imagecolorallocate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagesx ( $image)"
+Get image width \fBresource $image  int|false Return the width of the image or false on errors\&.  4\&.0  5\&.0 \fP
+.SS "imagesy ( $image)"
+Get image height \fBresource $image  int|false Return the height of the image or false on errors\&.  4\&.0  5\&.0 \fP
+.SS "imagetruecolortopalette ( $image,  $dither,  $ncolors)"
+Convert a true color image to a palette image \fBresource $image  bool $dither \fP Indicates if the image should be dithered - if it is true then dithering will be used which will result in a more speckled image but with better color approximation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ncolors\fP 
+.RE
+.PP
+Sets the maximum number of colors that should be retained in the palette\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagettfbbox ( $size,  $angle,  $fontfile,  $text)"
+Give the bounding box of a text using TrueType fonts \fBfloat $size \fP The font size\&. Depending on your version of GD, this should be specified as the pixel size (GD1) or point size (GD2)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$angle\fP 
+.RE
+.PP
+Angle in degrees in which text will be measured\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fontfile\fP 
+.RE
+.PP
+The name of the TrueType font file (can be a URL)\&. Depending on which version of the GD library that PHP is using, it may attempt to search for files that do not begin with a leading '/' by appending '\&.ttf' to the filename and searching along a library-defined font path\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$text\fP 
+.RE
+.PP
+The string to be measured\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false imagettfbbox returns an array with 8 elements representing four points making the bounding box of the text on success and false on error\&. 
+.RE
+.PP
+.PP
+key 
+.PP
+contents  
+.PP
+0 
+.PP
+lower left corner, X position  
+.PP
+1 
+.PP
+lower left corner, Y position  
+.PP
+2 
+.PP
+lower right corner, X position  
+.PP
+3 
+.PP
+lower right corner, Y position  
+.PP
+4 
+.PP
+upper right corner, X position  
+.PP
+5 
+.PP
+upper right corner, Y position  
+.PP
+6 
+.PP
+upper left corner, X position  
+.PP
+7 
+.PP
+upper left corner, Y position  
+.PP
+The points are relative to the text regardless of the angle, so 'upper left' means in the top left-hand corner seeing the text horizontally\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagettftext ( $image,  $size,  $angle,  $x,  $y,  $color,  $fontfile,  $text)"
+Write text to the image using TrueType fonts \fBresource $image  float $size \fP The font size\&. Depending on your version of GD, this should be specified as the pixel size (GD1) or point size (GD2)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$angle\fP 
+.RE
+.PP
+The angle in degrees, with 0 degrees being left-to-right reading text\&. Higher values represent a counter-clockwise rotation\&. For example, a value of 90 would result in bottom-to-top reading text\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP 
+.RE
+.PP
+The coordinates given by x and y will define the basepoint of the first character (roughly the lower-left corner of the character)\&. This is different from the imagestring, where x and y define the upper-left corner of the first character\&. For example, 'top left' is 0, 0\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP 
+.RE
+.PP
+The y-ordinate\&. This sets the position of the fonts baseline, not the very bottom of the character\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color\fP 
+.RE
+.PP
+The color index\&. Using the negative of a color index has the effect of turning off antialiasing\&. See imagecolorallocate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fontfile\fP 
+.RE
+.PP
+The path to the TrueType font you wish to use\&. 
+.PP
+Depending on which version of the GD library PHP is using, when fontfile does not begin with a leading / then \&.ttf will be appended to the filename and the library will attempt to search for that filename along a library-defined font path\&. 
+.PP
+When using versions of the GD library lower than 2\&.0\&.18, a space character, rather than a semicolon, was used as the 'path separator' for different font files\&. Unintentional use of this feature will result in the warning message: Warning: Could not find/open font\&. For these affected versions, the only solution is moving the font to a path which does not contain spaces\&. 
+.PP
+In many cases where a font resides in the same directory as the script using it the following trick will alleviate any include problems\&. 
+.PP
+.PP
+.nf
+
+<?php
+// Set the enviroment variable for GD
+putenv('GDFONTPATH=' \&. realpath('\&.'));
+.fi
+.PP
+.PP
+.PP
+.nf
+// Name the font to be used (note the lack of the \&.ttf extension)
+$font = 'SomeFont';
+?>
+.fi
+.PP
+ <p<blockquote>
+.PP
+\fBNote:\fP \fCopen_basedir\fP does \fInot\fP apply to fontfile\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$text\fP 
+.RE
+.PP
+The text string in UTF-8 encoding\&. 
+.PP
+May include decimal numeric character references (of the form: &#8364;) to access characters in a font beyond position 127\&. The hexadecimal format (like &#xA9;) is supported\&. Strings in UTF-8 encoding can be passed directly\&. 
+.PP
+Named entities, such as &copy;, are not supported\&. Consider using html_entity_decode to decode these named entities into UTF-8 strings (\fBhtml_entity_decode()\fP supports this as of PHP 5\&.0\&.0)\&. 
+.PP
+If a character is used in the string which is not supported by the font, a hollow rectangle will replace the character\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array with 8 elements representing four points making the bounding box of the text\&. The order of the points is lower left, lower right, upper right, upper left\&. The points are relative to the text regardless of the angle, so 'upper left' means in the top left-hand corner when you see the text horizontally\&. Returns false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagetypes ()"
+Return the image types supported by this PHP build \fBint a bit-field corresponding to the image formats supported by the version of GD linked into PHP\&. The following bits are returned, IMG_BMP | IMG_GIF | IMG_JPG | IMG_PNG | IMG_WBMP | IMG_XPM | IMG_WEBP  4\&.0\&.2  5\&.0 \fP
+.SS "imagewbmp ( $image,  $filename = \fC\fBnull\fP\fP,  $foreground = \fC\fBnull\fP\fP)"
+Output image to browser or file \fBresource $image  string $filename [optional] \fP The path to save the file to\&. If not set or , the raw image stream will be outputted directly\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$foreground\fP [optional] 
+.RE
+.PP
+You can set the foreground color with this parameter by setting an identifier obtained from imagecolorallocate\&. The default foreground color is black\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imagewebp ( $image,  $to = \fC\fBnull\fP\fP,  $quality = \fC80\fP)"
+Output a WebP image to browser or file \fBresource $image  string $to [optional] \fP The path to save the file to\&. If not set or , the raw image stream will be outputted directly\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$quality\fP [optional] 
+.RE
+.PP
+quality ranges from 0 (worst quality, smaller file) to 100 (best quality, biggest file)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.4 
+.RE
+.PP
+
+.SS "imagexbm ( $image,  $filename,  $foreground = \fC\fBnull\fP\fP)"
+Output XBM image to browser or file \fBresource $image  string $filename \fP The path to save the file to\&. If not set or , the raw image stream will be outputted directly\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$foreground\fP [optional] 
+.RE
+.PP
+You can set the foreground color with this parameter by setting an identifier obtained from imagecolorallocate\&. The default foreground color is black\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "jpeg2wbmp ( $jpegname,  $wbmpname,  $dest_height,  $dest_width,  $threshold)"
+Convert JPEG image file to WBMP image file \fBstring $jpegname \fP Path to JPEG file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbmpname\fP 
+.RE
+.PP
+Path to destination WBMP file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dest_height\fP 
+.RE
+.PP
+Destination image height\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dest_width\fP 
+.RE
+.PP
+Destination image width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$threshold\fP 
+.RE
+.PP
+Threshold value, between 0 and 8 (inclusive)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.2 Use \fBimagecreatefromjpeg()\fP and \fBimagewbmp()\fP instead 
+.RE
+.PP
+
+.SS "png2wbmp ( $pngname,  $wbmpname,  $dest_height,  $dest_width,  $threshold)"
+Convert PNG image file to WBMP image file \fBstring $pngname \fP Path to PNG file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$wbmpname\fP 
+.RE
+.PP
+Path to destination WBMP file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dest_height\fP 
+.RE
+.PP
+Destination image height\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dest_width\fP 
+.RE
+.PP
+Destination image width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$threshold\fP 
+.RE
+.PP
+Threshold value, between 0 and 8 (inclusive)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+\fBDeprecated\fP
+.RS 4
+7\&.2 Use \fBimagecreatefrompng()\fP and \fBimagewbmp()\fP instead 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const GD_BUNDLED 1"
+When the bundled version of GD is used this is 1 otherwise it's set to 0\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php\fP
+.SS "const GD_EXTRA_VERSION ''"
+The GD 'extra' version (beta/rc\&.\&.) PHP was compiled against\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.2\&.4 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.gd-extra-version\fP
+.RE
+.PP
+
+.SS "const GD_MAJOR_VERSION 2"
+The GD major version PHP was compiled against\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.2\&.4 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.gd-major-version\fP
+.RE
+.PP
+
+.SS "const GD_MINOR_VERSION 0"
+The GD minor version PHP was compiled against\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.2\&.4 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.gd-minor-version\fP
+.RE
+.PP
+
+.SS "const GD_RELEASE_VERSION 35"
+The GD release version PHP was compiled against\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.2\&.4 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.gd-release-version\fP
+.RE
+.PP
+
+.SS "const GD_VERSION '2\&.0\&.35'"
+The GD version PHP was compiled against\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.2\&.4 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.gd-version\fP
+.RE
+.PP
+
+.SS "const IMG_AFFINE_ROTATE 2"
+An affine transformation type constant used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimageaffinematrixget()\fP} \fBfunction\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-affine-rotate\fP
+.RE
+.PP
+
+.SS "const IMG_AFFINE_SCALE 1"
+An affine transformation type constant used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimageaffinematrixget()\fP} \fBfunction\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-affine-scale\fP
+.RE
+.PP
+
+.SS "const IMG_AFFINE_SHEAR_HORIZONTAL 3"
+An affine transformation type constant used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimageaffinematrixget()\fP} \fBfunction\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-affine-shear-horizontal\fP
+.RE
+.PP
+
+.SS "const IMG_AFFINE_SHEAR_VERTICAL 4"
+An affine transformation type constant used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimageaffinematrixget()\fP} \fBfunction\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-affine-shear-vertical\fP
+.RE
+.PP
+
+.SS "const IMG_AFFINE_TRANSLATE 0"
+An affine transformation type constant used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimageaffinematrixget()\fP} \fBfunction\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-affine-translate\fP
+.RE
+.PP
+
+.SS "const IMG_ARC_CHORD 1"
+\fBA\fP style constant used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilledarc()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-arc-chord\fP
+.RE
+.PP
+
+.SS "const IMG_ARC_EDGED 4"
+\fBA\fP style constant used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilledarc()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-arc-edged\fP
+.RE
+.PP
+
+.SS "const IMG_ARC_NOFILL 2"
+\fBA\fP style constant used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilledarc()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-arc-nofill\fP
+.RE
+.PP
+
+.SS "const IMG_ARC_PIE 0"
+\fBA\fP style constant used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilledarc()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-arc-pie\fP
+.RE
+.PP
+
+.SS "const IMG_ARC_ROUNDED 0"
+\fBA\fP style constant used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilledarc()\fP} \fBfunction\fP\&. 
+.RE
+.PP
+This constant has the same value as {
+.PP
+\fBSee also\fP
+.RS 4
+\fBIMG_ARC_PIE\fP} 
+.RE
+.PP
+\fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-arc-rounded\fP
+.SS "const IMG_BELL 1"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_BESSEL 2"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_BICUBIC 4"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_BICUBIC_FIXED 5"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_BILINEAR_FIXED 3"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_BLACKMAN 6"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_BMP 64"
+Used as a return value by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagetypes()\fP} 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-bmp\fP
+.RE
+.PP
+
+.SS "const IMG_BOX 7"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_BSPLINE 8"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_CATMULLROM 9"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_COLOR_BRUSHED \-3"
+Special color option which can be used instead of color allocated with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecolorallocate()\fP} or {
+.PP
+\fBimagecolorallocatealpha()\fP} \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-color-brushed\fP
+.RE
+.PP
+
+.SS "const IMG_COLOR_STYLED \-2"
+Special color option which can be used instead of color allocated with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecolorallocate()\fP} or {
+.PP
+\fBimagecolorallocatealpha()\fP} \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-color-styled\fP
+.RE
+.PP
+
+.SS "const IMG_COLOR_STYLEDBRUSHED \-4"
+Special color option which can be used instead of color allocated with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecolorallocate()\fP} or {
+.PP
+\fBimagecolorallocatealpha()\fP} \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-color-styledbrushed\fP
+.RE
+.PP
+
+.SS "const IMG_COLOR_TILED \-5"
+Special color option which can be used instead of color allocated with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecolorallocate()\fP} or {
+.PP
+\fBimagecolorallocatealpha()\fP} \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-color-tiled\fP
+.RE
+.PP
+
+.SS "const IMG_COLOR_TRANSPARENT \-6"
+Special color option which can be used instead of color allocated with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecolorallocate()\fP} or {
+.PP
+\fBimagecolorallocatealpha()\fP} \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-color-transparent\fP
+.RE
+.PP
+
+.SS "const IMG_CROP_BLACK 2"
+Crops out a black background\&. Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecropauto()\fP}\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "const IMG_CROP_DEFAULT 0"
+Same as {
+.PP
+\fBSee also\fP
+.RS 4
+\fBIMG_CROP_TRANSPARENT\fP}\&. Before PHP 7\&.4\&.0, the bundled libgd fell back to {
+.PP
+\fBIMG_CROP_SIDES\fP}, \fBif\fP the image had no transparent color\&. Used together with {
+.PP
+\fBimagecropauto()\fP}\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "const IMG_CROP_SIDES 4"
+Uses the 4 corners of the image to attempt to detect the background to crop\&. Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecropauto()\fP}\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "const IMG_CROP_THRESHOLD 5"
+Crops an image using the given \fBthreshold\fP and \fBcolor\fP\&. Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecropauto()\fP}\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "const IMG_CROP_TRANSPARENT 1"
+Crops out a transparent background\&. Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecropauto()\fP}\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "const IMG_CROP_WHITE 3"
+Crops out a white background\&. Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagecropauto()\fP}\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 
+.RE
+.PP
+
+.SS "const IMG_EFFECT_ALPHABLEND 1"
+Alpha blending effect used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagelayereffect()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-effect-alphablend\fP
+.RE
+.PP
+
+.SS "const IMG_EFFECT_MULTIPLY 4"
+Alpha blending effect used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagelayereffect()\fP} \fBfunction\fP\&. \fB7\&.2 \fP
+.RE
+.PP
+
+.SS "const IMG_EFFECT_NORMAL 2"
+Alpha blending effect used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagelayereffect()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-effect-normal\fP
+.RE
+.PP
+
+.SS "const IMG_EFFECT_OVERLAY 3"
+Alpha blending effect used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagelayereffect()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-effect-overlay\fP
+.RE
+.PP
+
+.SS "const IMG_EFFECT_REPLACE 0"
+Alpha blending effect used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagelayereffect()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-effect-replace\fP
+.RE
+.PP
+
+.SS "const IMG_FILTER_BRIGHTNESS 2"
+Special GD filter used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilter()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-filter-brightness\fP
+.RE
+.PP
+
+.SS "const IMG_FILTER_COLORIZE 4"
+Special GD filter used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilter()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-filter-colorize\fP
+.RE
+.PP
+
+.SS "const IMG_FILTER_CONTRAST 3"
+Special GD filter used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilter()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-filter-contrast\fP
+.RE
+.PP
+
+.SS "const IMG_FILTER_EDGEDETECT 5"
+Special GD filter used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilter()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-filter-edgedetect\fP
+.RE
+.PP
+
+.SS "const IMG_FILTER_EMBOSS 6"
+Special GD filter used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilter()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-filter-emboss\fP
+.RE
+.PP
+
+.SS "const IMG_FILTER_GAUSSIAN_BLUR 7"
+Special GD filter used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilter()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-filter-gaussian-blur\fP
+.RE
+.PP
+
+.SS "const IMG_FILTER_GRAYSCALE 1"
+Special GD filter used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilter()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-filter-grayscale\fP
+.RE
+.PP
+
+.SS "const IMG_FILTER_MEAN_REMOVAL 9"
+Special GD filter used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilter()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-filter-mean-removal\fP
+.RE
+.PP
+
+.SS "const IMG_FILTER_NEGATE 0"
+Special GD filter used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilter()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-filter-negate\fP
+.RE
+.PP
+
+.SS "const IMG_FILTER_PIXELATE 11"
+Special GD filter used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilter()\fP} \fBfunction\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-filter-pixelate\fP
+.RE
+.PP
+
+.SS "const IMG_FILTER_SELECTIVE_BLUR 8"
+Special GD filter used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilter()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-filter-selective-blur\fP
+.RE
+.PP
+
+.SS "const IMG_FILTER_SMOOTH 10"
+Special GD filter used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagefilter()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-filter-smooth\fP
+.RE
+.PP
+
+.SS "const IMG_FLIP_BOTH 3"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimageflip()\fP} 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-flip-both\fP
+.RE
+.PP
+
+.SS "const IMG_FLIP_HORIZONTAL 1"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimageflip()\fP} 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-flip-horizontal\fP
+.RE
+.PP
+
+.SS "const IMG_FLIP_VERTICAL 2"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimageflip()\fP} 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.5 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-flip-vertical\fP
+.RE
+.PP
+
+.SS "const IMG_GAUSSIAN 10"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_GD2_COMPRESSED 2"
+\fBA\fP type constant used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagegd2()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-gd2-compressed\fP
+.RE
+.PP
+
+.SS "const IMG_GD2_RAW 1"
+\fBA\fP type constant used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagegd2()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-gd2-raw\fP
+.RE
+.PP
+
+.SS "const IMG_GENERALIZED_CUBIC 11"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_GIF 1"
+Used as a return value by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagetypes()\fP} \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-gif\fP
+.RE
+.PP
+
+.SS "const IMG_HAMMING 13"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_HANNING 14"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_HERMITE 12"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_JPEG 2"
+Used as a return value by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagetypes()\fP} 
+.RE
+.PP
+This constant has the same value as {
+.PP
+\fBSee also\fP
+.RS 4
+\fBIMG_JPG\fP} 
+.RE
+.PP
+\fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-jpeg\fP
+.SS "const IMG_JPG 2"
+Used as a return value by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagetypes()\fP} \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-jpg\fP
+.RE
+.PP
+
+.SS "const IMG_MITCHELL 15"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_NEAREST_NEIGHBOUR 16"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_PNG 4"
+Used as a return value by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagetypes()\fP} \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-png\fP
+.RE
+.PP
+
+.SS "const IMG_POWER 17"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_QUADRATIC 18"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_SINC 19"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_TRIANGLE 20"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_WBMP 8"
+Used as a return value by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagetypes()\fP} \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-wbmp\fP
+.RE
+.PP
+
+.SS "const IMG_WEBP 32"
+Used as a return value by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagetypes()\fP} 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.6\&.25 
+.PP
+7\&.0\&.10 \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-webp\fP
+.RE
+.PP
+
+.SS "const IMG_WEIGHTED4 21"
+Used together with {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagesetinterpolation()\fP}\&. \fB5\&.5 \fP
+.RE
+.PP
+
+.SS "const IMG_XPM 16"
+Used as a return value by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagetypes()\fP} \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.img-xpm\fP
+.RE
+.PP
+
+.SS "const PNG_ALL_FILTERS 248"
+\fBA\fP special PNG filter, used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagepng()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.png-all-filters\fP
+.RE
+.PP
+
+.SS "const PNG_FILTER_AVG 64"
+\fBA\fP special PNG filter, used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagepng()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.png-filter-avg\fP
+.RE
+.PP
+
+.SS "const PNG_FILTER_NONE 8"
+\fBA\fP special PNG filter, used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagepng()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.png-filter-none\fP
+.RE
+.PP
+
+.SS "const PNG_FILTER_PAETH 128"
+\fBA\fP special PNG filter, used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagepng()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.png-filter-paeth\fP
+.RE
+.PP
+
+.SS "const PNG_FILTER_SUB 16"
+\fBA\fP special PNG filter, used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagepng()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.png-filter-sub\fP
+.RE
+.PP
+
+.SS "const PNG_FILTER_UP 32"
+\fBA\fP special PNG filter, used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagepng()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.png-filter-up\fP
+.RE
+.PP
+
+.SS "const PNG_NO_FILTER 0"
+\fBA\fP special PNG filter, used by the {
+.PP
+\fBSee also\fP
+.RS 4
+\fBimagepng()\fP} \fBfunction\fP\&. \fBhttps://php\&.net/manual/en/image\&.constants\&.php#constant\&.png-no-filter\fP
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

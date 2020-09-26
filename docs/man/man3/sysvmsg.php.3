@@ -1,0 +1,308 @@
+.TH "vendor/jetbrains/phpstorm-stubs/sysvmsg/sysvmsg.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/sysvmsg/sysvmsg.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBmsg_get_queue\fP ($\fBkey\fP, $perms=0666)"
+.br
+.ti -1c
+.RI "\fBmsg_send\fP ($queue, $msgtype, $message, $\fBserialize\fP=\fBtrue\fP, $blocking=\fBtrue\fP, &$errorcode=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmsg_receive\fP ($queue, $desiredmsgtype, &$msgtype, $maxsize, &$message, $\fBunserialize\fP=\fBtrue\fP, $flags=0, &$errorcode=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmsg_remove_queue\fP ($queue)"
+.br
+.ti -1c
+.RI "\fBmsg_stat_queue\fP ($queue)"
+.br
+.ti -1c
+.RI "\fBmsg_set_queue\fP ($queue, array $data)"
+.br
+.ti -1c
+.RI "\fBmsg_queue_exists\fP ($\fBkey\fP)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBMSG_IPC_NOWAIT\fP 1"
+.br
+.ti -1c
+.RI "const \fBMSG_EAGAIN\fP 11"
+.br
+.ti -1c
+.RI "const \fBMSG_ENOMSG\fP 42"
+.br
+.ti -1c
+.RI "const \fBMSG_NOERROR\fP 2"
+.br
+.ti -1c
+.RI "const \fBMSG_EXCEPT\fP 4"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "msg_get_queue ( $key,  $perms = \fC0666\fP)"
+Create or attach to a message queue \fBint $key \fP Message queue numeric ID 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$perms\fP [optional] 
+.RE
+.PP
+Queue permissions\&. Default to 0666\&. If the message queue already exists, the \fIperms\fP will be ignored\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource a resource handle that can be used to access the System V message queue\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "msg_queue_exists ( $key)"
+Check whether a message queue exists \fBint $key \fP Queue key\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "msg_receive ( $queue,  $desiredmsgtype, & $msgtype,  $maxsize, & $message,  $unserialize = \fC\fBtrue\fP\fP,  $flags = \fC0\fP, & $errorcode = \fC\fBnull\fP\fP)"
+Receive a message from a message queue \fBresource $queue  int $desiredmsgtype \fP If \fIdesiredmsgtype\fP is 0, the message from the front of the queue is returned\&. If \fIdesiredmsgtype\fP is greater than 0, then the first message of that type is returned\&. If \fIdesiredmsgtype\fP is less than 0, the first message on the queue with the lowest type less than or equal to the absolute value of \fIdesiredmsgtype\fP will be read\&. If no messages match the criteria, your script will wait until a suitable message arrives on the queue\&. You can prevent the script from blocking by specifying \fBMSG_IPC_NOWAIT\fP in the \fIflags\fP parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$msgtype\fP 
+.RE
+.PP
+The type of the message that was received will be stored in this parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$maxsize\fP 
+.RE
+.PP
+The maximum size of message to be accepted is specified by the \fImaxsize\fP; if the message in the queue is larger than this size the function will fail (unless you set \fIflags\fP as described below)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$message\fP 
+.RE
+.PP
+The received message will be stored in \fImessage\fP, unless there were errors receiving the message\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$unserialize\fP [optional] 
+.RE
+.PP
+If set to \fBTRUE\fP, the message is treated as though it was serialized using the same mechanism as the session module\&. The message will be unserialized and then returned to your script\&. This allows you to easily receive arrays or complex object structures from other PHP scripts, or if you are using the WDDX serializer, from any WDDX compatible source\&. 
+.PP
+If \fIunserialize\fP is \fBFALSE\fP, the message will be returned as a binary-safe string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+The optional \fIflags\fP allows you to pass flags to the low-level msgrcv system call\&. It defaults to 0, but you may specify one or more of the following values (by adding or ORing them together)\&. values for msg_receive 
+.PP
+\fBMSG_IPC_NOWAIT\fP 
+.PP
+If there are no messages of the \fIdesiredmsgtype\fP, return immediately and do not wait\&. The function will fail and return an integer value corresponding to \fBMSG_ENOMSG\fP\&.   
+.PP
+\fBMSG_EXCEPT\fP 
+.PP
+Using this flag in combination with a \fIdesiredmsgtype\fP greater than 0 will cause the function to receive the first message that is not equal to \fIdesiredmsgtype\fP\&.  
+.PP
+\fBMSG_NOERROR\fP 
+.PP
+If the message is longer than \fImaxsize\fP, setting this flag will truncate the message to \fImaxsize\fP and will not signal an error\&.   
+.PP
+\fBParameters\fP
+.RS 4
+\fI$errorcode\fP [optional] 
+.RE
+.PP
+If the function fails, the optional \fIerrorcode\fP will be set to the value of the system errno variable\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+Upon successful completion the message queue data structure is updated as follows: msg_lrpid is set to the process-ID of the calling process, msg_qnum is decremented by 1 and msg_rtime is set to the current time\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "msg_remove_queue ( $queue)"
+Destroy a message queue \fBresource $queue \fP Message queue resource handle 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "msg_send ( $queue,  $msgtype,  $message,  $serialize = \fC\fBtrue\fP\fP,  $blocking = \fC\fBtrue\fP\fP, & $errorcode = \fC\fBnull\fP\fP)"
+Send a message to a message queue \fBresource $queue  int $msgtype  mixed $message  bool $serialize [optional] \fP The optional \fIserialize\fP controls how the \fImessage\fP is sent\&. \fIserialize\fP defaults to \fBTRUE\fP which means that the \fImessage\fP is serialized using the same mechanism as the session module before being sent to the queue\&. This allows complex arrays and objects to be sent to other PHP scripts, or if you are using the WDDX serializer, to any WDDX compatible client\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blocking\fP [optional] 
+.RE
+.PP
+If the message is too large to fit in the queue, your script will wait until another process reads messages from the queue and frees enough space for your message to be sent\&. This is called blocking; you can prevent blocking by setting the optional \fIblocking\fP parameter to \fBFALSE\fP, in which case \fBmsg_send\fP will immediately return \fBFALSE\fP if the message is too big for the queue, and set the optional \fIerrorcode\fP to \fBMSG_EAGAIN\fP, indicating that you should try to send your message again a little later on\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$errorcode\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+Upon successful completion the message queue data structure is updated as follows: \fImsg_lspid\fP is set to the process-ID of the calling process, \fImsg_qnum\fP is incremented by 1 and \fImsg_stime\fP is set to the current time\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "msg_set_queue ( $queue, array $data)"
+Set information in the message queue data structure \fBresource $queue \fP Message queue resource handle 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+You specify the values you require by setting the value of the keys that you require in the \fIdata\fP array\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "msg_stat_queue ( $queue)"
+Returns information from the message queue data structure \fBresource $queue \fP Message queue resource handle 
+.PP
+\fBReturns\fP
+.RS 4
+array The return value is an array whose keys and values have the following meanings: structure for msg_stat_queue 
+.RE
+.PP
+.PP
+msg_perm\&.uid 
+.PP
+The uid of the owner of the queue\&.   
+.PP
+msg_perm\&.gid 
+.PP
+The gid of the owner of the queue\&.   
+.PP
+msg_perm\&.mode 
+.PP
+The file access mode of the queue\&.   
+.PP
+msg_stime 
+.PP
+The time that the last message was sent to the queue\&.   
+.PP
+msg_rtime 
+.PP
+The time that the last message was received from the queue\&.   
+.PP
+msg_ctime 
+.PP
+The time that the queue was last changed\&.   
+.PP
+msg_qnum 
+.PP
+The number of messages waiting to be read from the queue\&.   
+.PP
+msg_qbytes 
+.PP
+The maximum number of bytes allowed in one message queue\&. On Linux, this value may be read and modified via /proc/sys/kernel/msgmnb\&.   
+.PP
+msg_lspid 
+.PP
+The pid of the process that sent the last message to the queue\&.   
+.PP
+msg_lrpid 
+.PP
+The pid of the process that received the last message from the queue\&.   
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const MSG_EAGAIN 11"
+
+.SS "const MSG_ENOMSG 42"
+
+.SS "const MSG_EXCEPT 4"
+
+.SS "const MSG_IPC_NOWAIT 1"
+
+.SS "const MSG_NOERROR 2"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

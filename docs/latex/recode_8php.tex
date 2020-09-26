@@ -1,0 +1,73 @@
+\hypertarget{recode_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/recode/recode.php File Reference}
+\label{recode_8php}\index{vendor/jetbrains/phpstorm-\/stubs/recode/recode.php@{vendor/jetbrains/phpstorm-\/stubs/recode/recode.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{recode_8php_a6c9604e4c552f7a23c4b5c041ece8fd0}{recode\+\_\+string}} (\$request, \$string)
+\item 
+\mbox{\hyperlink{recode_8php_a75da4c010bf3071aeddb287cb0d31ea7}{recode\+\_\+file}} (\$request, \$input, \$output)
+\item 
+\mbox{\hyperlink{recode_8php_ac643122ecc2c5e103d3b9c2e9ef91c1f}{recode}} (\$request, \$str)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{recode_8php_ac643122ecc2c5e103d3b9c2e9ef91c1f}\label{recode_8php_ac643122ecc2c5e103d3b9c2e9ef91c1f}} 
+\index{recode.php@{recode.php}!recode@{recode}}
+\index{recode@{recode}!recode.php@{recode.php}}
+\doxysubsubsection{\texorpdfstring{recode()}{recode()}}
+{\footnotesize\ttfamily recode (\begin{DoxyParamCaption}\item[{}]{\$request,  }\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Alias of {\bfseries{recode\+\_\+string}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$request  \$str  4.\+0  5.\+0 }}\mbox{\Hypertarget{recode_8php_a75da4c010bf3071aeddb287cb0d31ea7}\label{recode_8php_a75da4c010bf3071aeddb287cb0d31ea7}} 
+\index{recode.php@{recode.php}!recode\_file@{recode\_file}}
+\index{recode\_file@{recode\_file}!recode.php@{recode.php}}
+\doxysubsubsection{\texorpdfstring{recode\_file()}{recode\_file()}}
+{\footnotesize\ttfamily recode\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$request,  }\item[{}]{\$input,  }\item[{}]{\$output }\end{DoxyParamCaption})}
+
+Recode from file to file according to recode request \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$request }} The desired recode request type 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$input} & \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} local file handle resource for the {\itshape input} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$output} & \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} local file handle resource for the {\itshape output} 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{F\+A\+L\+SE}}, if unable to comply, {\bfseries{T\+R\+UE}} otherwise. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{recode_8php_a6c9604e4c552f7a23c4b5c041ece8fd0}\label{recode_8php_a6c9604e4c552f7a23c4b5c041ece8fd0}} 
+\index{recode.php@{recode.php}!recode\_string@{recode\_string}}
+\index{recode\_string@{recode\_string}!recode.php@{recode.php}}
+\doxysubsubsection{\texorpdfstring{recode\_string()}{recode\_string()}}
+{\footnotesize\ttfamily recode\+\_\+string (\begin{DoxyParamCaption}\item[{}]{\$request,  }\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Recode a string according to a recode request \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$request }} The desired recode request type 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+The string to be recoded 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false the recoded string or {\bfseries{F\+A\+L\+SE}}, if unable to perform the recode request. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}

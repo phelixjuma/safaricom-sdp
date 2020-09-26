@@ -1,0 +1,1986 @@
+.TH "vendor/jetbrains/phpstorm-stubs/sodium/sodium.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/sodium/sodium.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBSodiumException\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsodium_crypto_aead_aes256gcm_is_available\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_aead_aes256gcm_decrypt\fP (string $ciphertext, string $ad, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_aead_aes256gcm_encrypt\fP (string $msg, string $ad, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_aead_chacha20poly1305_decrypt\fP (string $ciphertext, string $ad, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_aead_chacha20poly1305_encrypt\fP (string $msg, string $ad, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_aead_chacha20poly1305_ietf_decrypt\fP (string $ciphertext, string $ad, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_aead_chacha20poly1305_ietf_encrypt\fP (string $msg, string $ad, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_auth\fP (string $msg, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_auth_keygen\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_kx_keypair\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_kx_publickey\fP (string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_kx_secretkey\fP (string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_kx_seed_keypair\fP (string $string)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_kx_server_session_keys\fP (string $server_keypair, string $client_key)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_generichash_keygen\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_kx_client_session_keys\fP (string $client_keypair, string $server_key)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_kdf_derive_from_key\fP (int $subkey_len, int $subkey_id, string $context, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_kdf_keygen\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_shorthash_keygen\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_stream_keygen\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_pad\fP ($string, $length)"
+.br
+.ti -1c
+.RI "\fBsodium_unpad\fP ($string, $length)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_auth_verify\fP (string $mac, string $msg, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_box\fP (string $msg, string $nonce, string $keypair)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_box_keypair\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_box_seed_keypair\fP (string $seed)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_box_keypair_from_secretkey_and_publickey\fP (string $secretkey, string $publickey)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_box_open\fP (string $msg, string $nonce, string $keypair)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_box_publickey\fP (string $keypair)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_box_publickey_from_secretkey\fP (string $secretkey)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_box_seal\fP (string $message, string $publickey)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_box_seal_open\fP (string $encrypted, string $keypair)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_box_secretkey\fP (string $keypair)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_kx\fP (string $secretkey, string $publickey, string $client_publickey, string $server_publickey)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_generichash\fP (string $input, string $\fBkey\fP='', int $length=32)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_generichash_init\fP (string $\fBkey\fP='', int $length=32)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_generichash_update\fP (string &$state, string $append)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_generichash_final\fP (string $state, int $length=32)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_pwhash\fP (int $out_len, string $passwd, string $salt, int $opslimit, int $memlimit, int $alg)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_pwhash_str\fP (string $passwd, int $opslimit, int $memlimit)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_pwhash_str_verify\fP (string $\fBhash\fP, string $passwd)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_pwhash_scryptsalsa208sha256\fP (int $out_len, string $passwd, string $salt, int $opslimit, int $memlimit, int $alg)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_pwhash_scryptsalsa208sha256_str\fP (string $passwd, int $opslimit, int $memlimit)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_pwhash_scryptsalsa208sha256_str_verify\fP (string $\fBhash\fP, string $passwd)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_scalarmult\fP (string $ecdhA, string $ecdhB)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_secretbox\fP (string $plaintext, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_secretbox_open\fP (string $ciphertext, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_shorthash\fP (string $message, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_sign\fP (string $message, string $secretkey)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_sign_detached\fP (string $message, string $secretkey)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_sign_ed25519_pk_to_curve25519\fP (string $sign_pk)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_sign_ed25519_sk_to_curve25519\fP (string $sign_sk)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_sign_keypair\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_sign_keypair_from_secretkey_and_publickey\fP (string $secretkey, string $publickey)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_sign_open\fP (string $signed_message, string $publickey)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_sign_publickey\fP (string $keypair)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_sign_secretkey\fP (string $keypair)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_sign_publickey_from_secretkey\fP (string $secretkey)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_sign_seed_keypair\fP (string $seed)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_sign_verify_detached\fP (string $signature, string $msg, string $publickey)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_stream\fP (int $length, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_stream_xor\fP (string $plaintext, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_randombytes_buf\fP (int $length)"
+.br
+.ti -1c
+.RI "\fBsodium_randombytes_random16\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_randombytes_uniform\fP (int $upperBoundNonInclusive)"
+.br
+.ti -1c
+.RI "\fBsodium_bin2hex\fP (string $binary)"
+.br
+.ti -1c
+.RI "\fBsodium_compare\fP (string $left, string $right)"
+.br
+.ti -1c
+.RI "\fBsodium_hex2bin\fP (string $hex, string $ignore)"
+.br
+.ti -1c
+.RI "\fBsodium_increment\fP (string &$nonce)"
+.br
+.ti -1c
+.RI "\fBsodium_add\fP (string &$left, string $right)"
+.br
+.ti -1c
+.RI "\fBsodium_library_version_major\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_library_version_minor\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_memcmp\fP (string $left, string $right)"
+.br
+.ti -1c
+.RI "\fBsodium_memzero\fP (&$reference)"
+.br
+.ti -1c
+.RI "\fBsodium_version_string\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_scalarmult_base\fP (string $string_1, string $string_2)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_secretbox_keygen\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_aead_aes256gcm_keygen\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_aead_chacha20poly1305_keygen\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_aead_chacha20poly1305_ietf_keygen\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_aead_xchacha20poly1305_ietf_decrypt\fP (string $ciphertext, string $ad, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_aead_xchacha20poly1305_ietf_encrypt\fP (string $msg, string $ad, string $nonce, string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_aead_xchacha20poly1305_ietf_keygen\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_pwhash_str_needs_rehash\fP (string $password, int $opslimit, int $memlimit)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_secretstream_xchacha20poly1305_keygen\fP ()"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_secretstream_xchacha20poly1305_init_push\fP (string $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_secretstream_xchacha20poly1305_push\fP (string &$state, string $msg, string $ad, int $tag)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_secretstream_xchacha20poly1305_init_pull\fP ($\fBheader\fP, $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_secretstream_xchacha20poly1305_pull\fP (string &$state, string $\fBc\fP, string $ad='')"
+.br
+.ti -1c
+.RI "\fBsodium_crypto_secretstream_xchacha20poly1305_rekey\fP (string &$state)"
+.br
+.ti -1c
+.RI "\fBsodium_bin2base64\fP (string $bin, int $id)"
+.br
+.ti -1c
+.RI "\fBsodium_base642bin\fP (string $b64, int $id, string $ignore='')"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_AES256GCM_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_AES256GCM_NSECBYTES\fP = 0"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_AES256GCM_NPUBBYTES\fP = 12"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_AES256GCM_ABYTES\fP = 16"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_CHACHA20POLY1305_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_CHACHA20POLY1305_NSECBYTES\fP = 0"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_CHACHA20POLY1305_NPUBBYTES\fP = 8"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_CHACHA20POLY1305_ABYTES\fP = 16"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_CHACHA20POLY1305_IETF_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_CHACHA20POLY1305_IETF_NSECBYTES\fP = 0"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_CHACHA20POLY1305_IETF_NPUBBYTES\fP = 12"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_CHACHA20POLY1305_IETF_ABYTES\fP = 16"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_XCHACHA20POLY1305_IETF_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_XCHACHA20POLY1305_IETF_NSECBYTES\fP = 0"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_XCHACHA20POLY1305_IETF_NPUBBYTES\fP = 24"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AEAD_XCHACHA20POLY1305_IETF_ABYTES\fP = 16"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_ABYTES\fP = 17"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_HEADERBYTES\fP = 24"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_MESSAGEBYTES_MAX\fP = 274877906816"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_TAG_MESSAGE\fP = 0"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_TAG_PUSH\fP = 1"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_TAG_REKEY\fP = 2"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_TAG_FINAL\fP = 3"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_ALG_ARGON2ID13\fP = 2"
+.br
+.ti -1c
+.RI "const \fBSODIUM_BASE64_VARIANT_ORIGINAL\fP = 1"
+.br
+.ti -1c
+.RI "const \fBSODIUM_BASE64_VARIANT_ORIGINAL_NO_PADDING\fP = 3"
+.br
+.ti -1c
+.RI "const \fBSODIUM_BASE64_VARIANT_URLSAFE\fP = 5"
+.br
+.ti -1c
+.RI "const \fBSODIUM_BASE64_VARIANT_URLSAFE_NO_PADDING\fP = 7"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AUTH_BYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_AUTH_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_BOX_SEALBYTES\fP = 48"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_BOX_SECRETKEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_BOX_PUBLICKEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_BOX_KEYPAIRBYTES\fP = 64"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_BOX_MACBYTES\fP = 16"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_BOX_NONCEBYTES\fP = 24"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_BOX_SEEDBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_KX_BYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_KX_PUBLICKEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_KX_SECRETKEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_GENERICHASH_BYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_GENERICHASH_BYTES_MIN\fP = 16"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_GENERICHASH_BYTES_MAX\fP = 64"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_GENERICHASH_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_GENERICHASH_KEYBYTES_MIN\fP = 16"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_GENERICHASH_KEYBYTES_MAX\fP = 64"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_SCRYPTSALSA208SHA256_SALTBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_SCRYPTSALSA208SHA256_STRPREFIX\fP = '$7$'"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_SCRYPTSALSA208SHA256_OPSLIMIT_INTERACTIVE\fP = 524288"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_SCRYPTSALSA208SHA256_MEMLIMIT_INTERACTIVE\fP = 16777216"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_SCRYPTSALSA208SHA256_OPSLIMIT_SENSITIVE\fP = 33554432"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_SCRYPTSALSA208SHA256_MEMLIMIT_SENSITIVE\fP = 1073741824"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SCALARMULT_BYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SCALARMULT_SCALARBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SHORTHASH_BYTES\fP = 8"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SHORTHASH_KEYBYTES\fP = 16"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SECRETBOX_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SECRETBOX_MACBYTES\fP = 16"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SECRETBOX_NONCEBYTES\fP = 24"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SIGN_BYTES\fP = 64"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SIGN_SEEDBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SIGN_PUBLICKEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SIGN_SECRETKEYBYTES\fP = 64"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_SIGN_KEYPAIRBYTES\fP = 96"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_STREAM_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_STREAM_NONCEBYTES\fP = 24"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_OPSLIMIT_INTERACTIVE\fP = 2"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_MEMLIMIT_INTERACTIVE\fP = 67108864"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_OPSLIMIT_MODERATE\fP = 3"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_MEMLIMIT_MODERATE\fP = 268435456"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_OPSLIMIT_SENSITIVE\fP = 4"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_MEMLIMIT_SENSITIVE\fP = 1073741824"
+.br
+.ti -1c
+.RI "const \fBSODIUM_LIBRARY_VERSION\fP ='1\&.0\&.17'"
+.br
+.ti -1c
+.RI "const \fBSODIUM_LIBRARY_MAJOR_VERSION\fP = 10"
+.br
+.ti -1c
+.RI "const \fBSODIUM_LIBRARY_MINOR_VERSION\fP = 2"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_KDF_BYTES_MIN\fP = 16"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_KDF_BYTES_MAX\fP = 64"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_KDF_CONTEXTBYTES\fP = 8"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_KDF_KEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_KX_SEEDBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_KX_SESSIONKEYBYTES\fP = 32"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_KX_KEYPAIRBYTES\fP = 64"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_ALG_ARGON2I13\fP = 1"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_ALG_DEFAULT\fP = 2"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_SALTBYTES\fP = 16"
+.br
+.ti -1c
+.RI "const \fBSODIUM_CRYPTO_PWHASH_STRPREFIX\fP = '$argon2id$'"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "sodium_add (string & $left, string $right)"
+Add the right operand to the left
+.PP
+\fBParameters\fP
+.RS 4
+\fI&$left\fP 
+.br
+\fI$right\fP 
+.RE
+.PP
+
+.SS "sodium_base642bin (string $b64, int $id, string $ignore = \fC''\fP)"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://www.php.net/manual/en/function.sodium-base642bin.php 
+.RE
+.PP
+
+.SS "sodium_bin2base64 (string $bin, int $id)"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://www.php.net/manual/en/function.sodium-bin2base64.php 
+.RE
+.PP
+
+.SS "sodium_bin2hex (string $binary)"
+Convert to hex without side-chanels
+.PP
+\fBParameters\fP
+.RS 4
+\fI$binary\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_compare (string $left, string $right)"
+Compare two strings in constant time
+.PP
+\fBParameters\fP
+.RS 4
+\fI$left\fP 
+.br
+\fI$right\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "sodium_crypto_aead_aes256gcm_decrypt (string $ciphertext, string $ad, string $nonce, string $key)"
+Authenticated Encryption with Associated Data (decrypt) AES-256-GCM
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ciphertext\fP encrypted message 
+.br
+\fI$ad\fP additional data 
+.br
+\fI$nonce\fP 
+.br
+\fI$key\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false 
+.RE
+.PP
+
+.SS "sodium_crypto_aead_aes256gcm_encrypt (string $msg, string $ad, string $nonce, string $key)"
+Authenticated Encryption with Associated Data (encrypt) AES-256-GCM
+.PP
+\fBParameters\fP
+.RS 4
+\fI$msg\fP plaintext message 
+.br
+\fI$ad\fP 
+.br
+\fI$nonce\fP 
+.br
+\fI$key\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_aead_aes256gcm_is_available ()"
+Can you access AES-256-GCM? This is only available if you have supported hardware\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "sodium_crypto_aead_aes256gcm_keygen ()"
+Creates a random key
+.PP
+It is equivalent to calling \fBrandom_bytes()\fP but improves code clarity and can prevent misuse by ensuring that the provided key length is always be correct\&.
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://secure.php.net/manual/en/function.sodium-crypto-aead-aes256gcm-keygen.php 
+.RE
+.PP
+
+.SS "sodium_crypto_aead_chacha20poly1305_decrypt (string $ciphertext, string $ad, string $nonce, string $key)"
+Authenticated Encryption with Associated Data (decrypt) ChaCha20 + Poly1305
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ciphertext\fP encrypted message 
+.br
+\fI$ad\fP additional data 
+.br
+\fI$nonce\fP 
+.br
+\fI$key\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_aead_chacha20poly1305_encrypt (string $msg, string $ad, string $nonce, string $key)"
+Authenticated Encryption with Associated Data (encrypt) ChaCha20 + Poly1305
+.PP
+\fBParameters\fP
+.RS 4
+\fI$msg\fP plaintext message 
+.br
+\fI$ad\fP additional data 
+.br
+\fI$nonce\fP 
+.br
+\fI$key\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_aead_chacha20poly1305_ietf_decrypt (string $ciphertext, string $ad, string $nonce, string $key)"
+Authenticated Encryption with Associated Data (decrypt) ChaCha20 + Poly1305 (IETF version)
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ciphertext\fP encrypted message 
+.br
+\fI$ad\fP additional data 
+.br
+\fI$nonce\fP 
+.br
+\fI$key\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_aead_chacha20poly1305_ietf_encrypt (string $msg, string $ad, string $nonce, string $key)"
+Authenticated Encryption with Associated Data (encrypt) ChaCha20 + Poly1305 (IETF version)
+.PP
+\fBParameters\fP
+.RS 4
+\fI$msg\fP plaintext message 
+.br
+\fI$ad\fP additional data 
+.br
+\fI$nonce\fP 
+.br
+\fI$key\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_aead_chacha20poly1305_ietf_keygen ()"
+Creates a random key
+.PP
+It is equivalent to calling \fBrandom_bytes()\fP but improves code clarity and can prevent misuse by ensuring that the provided key length is always be correct\&.
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://secure.php.net/manual/en/function.sodium-crypto-aead-chacha20poly1305-ietf-keygen.php 
+.RE
+.PP
+
+.SS "sodium_crypto_aead_chacha20poly1305_keygen ()"
+Creates a random key It is equivalent to calling \fBrandom_bytes()\fP but improves code clarity and can prevent misuse by ensuring that the provided key length is always be correct\&.
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://secure.php.net/manual/en/function.sodium-crypto-aead-chacha20poly1305-keygen.php 
+.RE
+.PP
+
+.SS "sodium_crypto_aead_xchacha20poly1305_ietf_decrypt (string $ciphertext, string $ad, string $nonce, string $key)"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://www.php.net/manual/en/function.sodium-crypto-aead-xchacha20poly1305-ietf-decrypt.php 
+.RE
+.PP
+
+.SS "sodium_crypto_aead_xchacha20poly1305_ietf_encrypt (string $msg, string $ad, string $nonce, string $key)"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 https://www.php.net/manual/en/function.sodium-crypto-aead-xchacha20poly1305-ietf-encrypt.php 
+.RE
+.PP
+
+.SS "sodium_crypto_aead_xchacha20poly1305_ietf_keygen ()"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://www.php.net/manual/en/function.sodium-crypto-aead-xchacha20poly1305-ietf-keygen.php 
+.RE
+.PP
+
+.SS "sodium_crypto_auth (string $msg, string $key)"
+Secret-key message authentication HMAC SHA-512/256
+.PP
+\fBParameters\fP
+.RS 4
+\fI$msg\fP 
+.br
+\fI$key\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_auth_keygen ()"
+Get random bytes for key \fBstring \fP
+.SS "sodium_crypto_auth_verify (string $mac, string $msg, string $key)"
+Secret-key message verification HMAC SHA-512/256
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mac\fP 
+.br
+\fI$msg\fP 
+.br
+\fI$key\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "sodium_crypto_box (string $msg, string $nonce, string $keypair)"
+Public-key authenticated encryption (encrypt) X25519 + Xsalsa20 + Poly1305
+.PP
+\fBParameters\fP
+.RS 4
+\fI$msg\fP 
+.br
+\fI$nonce\fP 
+.br
+\fI$keypair\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_box_keypair ()"
+Generate an X25519 keypair for use with the sodium_crypto_box API
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_box_keypair_from_secretkey_and_publickey (string $secretkey, string $publickey)"
+Create an X25519 keypair from an X25519 secret key and X25519 public key
+.PP
+\fBParameters\fP
+.RS 4
+\fI$secretkey\fP 
+.br
+\fI$publickey\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_box_open (string $msg, string $nonce, string $keypair)"
+Public-key authenticated encryption (decrypt) X25519 + Xsalsa20 + Poly1305
+.PP
+\fBParameters\fP
+.RS 4
+\fI$msg\fP 
+.br
+\fI$nonce\fP 
+.br
+\fI$keypair\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false 
+.RE
+.PP
+
+.SS "sodium_crypto_box_publickey (string $keypair)"
+Get an X25519 public key from an X25519 keypair
+.PP
+\fBParameters\fP
+.RS 4
+\fI$keypair\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_box_publickey_from_secretkey (string $secretkey)"
+Derive an X25519 public key from an X25519 secret key
+.PP
+\fBParameters\fP
+.RS 4
+\fI$secretkey\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_box_seal (string $message, string $publickey)"
+Anonymous public-key encryption (encrypt) X25519 + Xsalsa20 + Poly1305 + BLAKE2b
+.PP
+\fBParameters\fP
+.RS 4
+\fI$message\fP 
+.br
+\fI$publickey\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_box_seal_open (string $encrypted, string $keypair)"
+Anonymous public-key encryption (decrypt) X25519 + Xsalsa20 + Poly1305 + BLAKE2b
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encrypted\fP 
+.br
+\fI$keypair\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false 
+.RE
+.PP
+
+.SS "sodium_crypto_box_secretkey (string $keypair)"
+Extract the X25519 secret key from an X25519 keypair
+.PP
+\fBParameters\fP
+.RS 4
+\fI$keypair\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_box_seed_keypair (string $seed)"
+Derive an X25519 keypair for use with the sodium_crypto_box API from a seed
+.PP
+\fBParameters\fP
+.RS 4
+\fI$seed\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_generichash (string $input, string $key = \fC''\fP, int $length = \fC32\fP)"
+Fast and secure cryptographic hash
+.PP
+\fBParameters\fP
+.RS 4
+\fI$input\fP 
+.br
+\fI$key\fP 
+.br
+\fI$length\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_generichash_final (string $state, int $length = \fC32\fP)"
+Get the final hash BLAKE2b
+.PP
+\fBParameters\fP
+.RS 4
+\fI$state\fP 
+.br
+\fI$length\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_generichash_init (string $key = \fC''\fP, int $length = \fC32\fP)"
+Create a new hash state (e\&.g\&. to use for streams) BLAKE2b
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP 
+.br
+\fI$length\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_generichash_keygen ()"
+Get random bytes for key \fB7\&.2  string \fP
+.SS "sodium_crypto_generichash_update (string & $state, string $append)"
+Update the hash state with some data BLAKE2b
+.PP
+\fBParameters\fP
+.RS 4
+\fI&$state\fP 
+.br
+\fI$append\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "sodium_crypto_kdf_derive_from_key (int $subkey_len, int $subkey_id, string $context, string $key)"
+\fB7\&.2  int $subkey_len  int $subkey_id  string $context  string $key  string \fP
+.SS "sodium_crypto_kdf_keygen ()"
+Get random bytes for key \fB7\&.2  string \fP
+.SS "sodium_crypto_kx (string $secretkey, string $publickey, string $client_publickey, string $server_publickey)"
+Elliptic Curve Diffie Hellman Key Exchange X25519
+.PP
+\fBParameters\fP
+.RS 4
+\fI$secretkey\fP 
+.br
+\fI$publickey\fP 
+.br
+\fI$client_publickey\fP 
+.br
+\fI$server_publickey\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_kx_client_session_keys (string $client_keypair, string $server_key)"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 \fBstring $client_keypair  string $server_key  string[] \fP
+.RE
+.PP
+
+.SS "sodium_crypto_kx_keypair ()"
+\fB7\&.2  string \fP
+.SS "sodium_crypto_kx_publickey (string $key)"
+\fB7\&.2  string $key  string \fP
+.SS "sodium_crypto_kx_secretkey (string $key)"
+\fB7\&.2  string $key  string \fP
+.SS "sodium_crypto_kx_seed_keypair (string $string)"
+\fB7\&.2  string $string  string \fP
+.SS "sodium_crypto_kx_server_session_keys (string $server_keypair, string $client_key)"
+\fB7\&.2  string $server_keypair  string $client_key  string[] \fP
+.SS "sodium_crypto_pwhash (int $out_len, string $passwd, string $salt, int $opslimit, int $memlimit, int $alg)"
+Secure password-based key derivation function Argon2i
+.PP
+\fBParameters\fP
+.RS 4
+\fI$out_len\fP 
+.br
+\fI$passwd\fP 
+.br
+\fI$salt\fP 
+.br
+\fI$opslimit\fP 
+.br
+\fI$memlimit\fP 
+.br
+\fI$alg\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_pwhash_scryptsalsa208sha256 (int $out_len, string $passwd, string $salt, int $opslimit, int $memlimit, int $alg)"
+Secure password-based key derivation function Scrypt
+.PP
+\fBParameters\fP
+.RS 4
+\fI$out_len\fP 
+.br
+\fI$passwd\fP 
+.br
+\fI$salt\fP 
+.br
+\fI$opslimit\fP 
+.br
+\fI$memlimit\fP 
+.br
+\fI$alg\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_pwhash_scryptsalsa208sha256_str (string $passwd, int $opslimit, int $memlimit)"
+Get a formatted password hash (for storage) Scrypt
+.PP
+\fBParameters\fP
+.RS 4
+\fI$passwd\fP 
+.br
+\fI$opslimit\fP 
+.br
+\fI$memlimit\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_pwhash_scryptsalsa208sha256_str_verify (string $hash, string $passwd)"
+Verify a password against a hash Scrypt
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hash\fP 
+.br
+\fI$passwd\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "sodium_crypto_pwhash_str (string $passwd, int $opslimit, int $memlimit)"
+Get a formatted password hash (for storage) Argon2i
+.PP
+\fBParameters\fP
+.RS 4
+\fI$passwd\fP 
+.br
+\fI$opslimit\fP 
+.br
+\fI$memlimit\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_pwhash_str_needs_rehash (string $password, int $opslimit, int $memlimit)"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://www.php.net/manual/en/function.sodium-crypto-pwhash-str-needs-rehash.php 
+.RE
+.PP
+
+.SS "sodium_crypto_pwhash_str_verify (string $hash, string $passwd)"
+Verify a password against a hash Argon2i
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hash\fP 
+.br
+\fI$passwd\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "sodium_crypto_scalarmult (string $ecdhA, string $ecdhB)"
+Elliptic Curve Diffie Hellman over Curve25519 X25519
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ecdhA\fP 
+.br
+\fI$ecdhB\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_scalarmult_base (string $string_1, string $string_2)"
+Scalar multiplication of the base point and your key
+.PP
+\fBParameters\fP
+.RS 4
+\fI$string_1\fP 
+.br
+\fI$string_2\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_secretbox (string $plaintext, string $nonce, string $key)"
+Authenticated secret-key encryption (encrypt) Xsals20 + Poly1305
+.PP
+\fBParameters\fP
+.RS 4
+\fI$plaintext\fP 
+.br
+\fI$nonce\fP 
+.br
+\fI$key\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_secretbox_keygen ()"
+Creates a random key
+.PP
+It is equivalent to calling \fBrandom_bytes()\fP but improves code clarity and can prevent misuse by ensuring that the provided key length is always be correct\&.
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://secure.php.net/manual/en/function.sodium-crypto-secretbox-keygen.php 
+.RE
+.PP
+
+.SS "sodium_crypto_secretbox_open (string $ciphertext, string $nonce, string $key)"
+Authenticated secret-key encryption (decrypt) Xsals20 + Poly1305
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ciphertext\fP 
+.br
+\fI$nonce\fP 
+.br
+\fI$key\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false 
+.RE
+.PP
+
+.SS "sodium_crypto_secretstream_xchacha20poly1305_init_pull ( $header,  $key)"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://www.php.net/manual/en/function.sodium-crypto-secretstream-xchacha20poly1305-init-pull.php 
+.RE
+.PP
+
+.SS "sodium_crypto_secretstream_xchacha20poly1305_init_push (string $key)"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://www.php.net/manual/en/function.sodium-crypto-secretstream-xchacha20poly1305-init-push.php 
+.RE
+.PP
+
+.SS "sodium_crypto_secretstream_xchacha20poly1305_keygen ()"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://www.php.net/manual/en/function.sodium-crypto-secretstream-xchacha20poly1305-keygen.php 
+.RE
+.PP
+
+.SS "sodium_crypto_secretstream_xchacha20poly1305_pull (string & $state, string $c, string $ad = \fC''\fP)"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://www.php.net/manual/en/function.sodium-crypto-secretstream-xchacha20poly1305-pull.php 
+.RE
+.PP
+
+.SS "sodium_crypto_secretstream_xchacha20poly1305_push (string & $state, string $msg, string $ad, int $tag)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$state\fP 
+.br
+\fI$msg\fP 
+.br
+\fI$ad\fP [optional] 
+.br
+\fI$tag\fP [optional] 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://www.php.net/manual/en/function.sodium-crypto-secretstream-xchacha20poly1305-push.php 
+.RE
+.PP
+
+.SS "sodium_crypto_secretstream_xchacha20poly1305_rekey (string & $state)"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+https://www.php.net/manual/en/function.sodium-crypto-secretstream-xchacha20poly1305-rekey.php 
+.RE
+.PP
+
+.SS "sodium_crypto_shorthash (string $message, string $key)"
+\fBA\fP short keyed hash suitable for data structures SipHash-2-4
+.PP
+\fBParameters\fP
+.RS 4
+\fI$message\fP 
+.br
+\fI$key\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_shorthash_keygen ()"
+Get random bytes for key \fB7\&.2  string \fP
+.SS "sodium_crypto_sign (string $message, string $secretkey)"
+Digital Signature Ed25519
+.PP
+\fBParameters\fP
+.RS 4
+\fI$message\fP 
+.br
+\fI$secretkey\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_sign_detached (string $message, string $secretkey)"
+Digital Signature (detached) Ed25519
+.PP
+\fBParameters\fP
+.RS 4
+\fI$message\fP 
+.br
+\fI$secretkey\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_sign_ed25519_pk_to_curve25519 (string $sign_pk)"
+Convert an Ed25519 public key to an X25519 public key
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sign_pk\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_sign_ed25519_sk_to_curve25519 (string $sign_sk)"
+Convert an Ed25519 secret key to an X25519 secret key
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sign_sk\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_sign_keypair ()"
+Generate an Ed25519 keypair for use with the crypto_sign API
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_sign_keypair_from_secretkey_and_publickey (string $secretkey, string $publickey)"
+Create an Ed25519 keypair from an Ed25519 secret key + Ed25519 public key
+.PP
+\fBParameters\fP
+.RS 4
+\fI$secretkey\fP 
+.br
+\fI$publickey\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_sign_open (string $signed_message, string $publickey)"
+Verify a signed message and return the plaintext
+.PP
+\fBParameters\fP
+.RS 4
+\fI$signed_message\fP 
+.br
+\fI$publickey\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false 
+.RE
+.PP
+
+.SS "sodium_crypto_sign_publickey (string $keypair)"
+Get the public key from an Ed25519 keypair
+.PP
+\fBParameters\fP
+.RS 4
+\fI$keypair\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_sign_publickey_from_secretkey (string $secretkey)"
+Derive an Ed25519 public key from an Ed25519 secret key
+.PP
+\fBParameters\fP
+.RS 4
+\fI$secretkey\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_sign_secretkey (string $keypair)"
+Get the secret key from an Ed25519 keypair
+.PP
+\fBParameters\fP
+.RS 4
+\fI$keypair\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_sign_seed_keypair (string $seed)"
+Derive an Ed25519 keypair for use with the crypto_sign API from a seed
+.PP
+\fBParameters\fP
+.RS 4
+\fI$seed\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_sign_verify_detached (string $signature, string $msg, string $publickey)"
+Verify a detached signature
+.PP
+\fBParameters\fP
+.RS 4
+\fI$signature\fP 
+.br
+\fI$msg\fP 
+.br
+\fI$publickey\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "sodium_crypto_stream (int $length, string $nonce, string $key)"
+Create a keystream from a key and nonce Xsalsa20
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP 
+.br
+\fI$nonce\fP 
+.br
+\fI$key\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_crypto_stream_keygen ()"
+Get random bytes for key \fB7\&.2  string \fP
+.SS "sodium_crypto_stream_xor (string $plaintext, string $nonce, string $key)"
+Encrypt a message using a stream cipher Xsalsa20
+.PP
+\fBParameters\fP
+.RS 4
+\fI$plaintext\fP 
+.br
+\fI$nonce\fP 
+.br
+\fI$key\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_hex2bin (string $hex, string $ignore)"
+Convert from hex without side-chanels
+.PP
+\fBParameters\fP
+.RS 4
+\fI$binary\fP 
+.br
+\fI$ignore\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_increment (string & $nonce)"
+Increment a string in little-endian
+.PP
+\fBParameters\fP
+.RS 4
+\fI&$nonce\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_library_version_major ()"
+Get the true major version of libsodium 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "sodium_library_version_minor ()"
+Get the true minor version of libsodium 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "sodium_memcmp (string $left, string $right)"
+Compare two strings in constant time
+.PP
+\fBParameters\fP
+.RS 4
+\fI$left\fP 
+.br
+\fI$right\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "sodium_memzero (& $reference)"
+Wipe a buffer
+.PP
+\fBParameters\fP
+.RS 4
+\fI&$nonce\fP 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "sodium_pad ( $string,  $length)"
+Add padding data \fB7\&.2  string $string  int $length  string \fP
+.SS "sodium_randombytes_buf (int $length)"
+Generate a string of random bytes /dev/urandom
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "sodium_randombytes_random16 ()"
+Generate a 16-bit integer /dev/urandom
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "sodium_randombytes_uniform (int $upperBoundNonInclusive)"
+Generate an unbiased random integer between 0 and a specified value /dev/urandom
+.PP
+\fBParameters\fP
+.RS 4
+\fI$upperBoundNonInclusive\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "sodium_unpad ( $string,  $length)"
+Remove padding data \fB7\&.2  string $string  int $length \fP
+.SS "sodium_version_string ()"
+Get the version string
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const SODIUM_BASE64_VARIANT_ORIGINAL = 1"
+
+.SS "const SODIUM_BASE64_VARIANT_ORIGINAL_NO_PADDING = 3"
+
+.SS "const SODIUM_BASE64_VARIANT_URLSAFE = 5"
+
+.SS "const SODIUM_BASE64_VARIANT_URLSAFE_NO_PADDING = 7"
+
+.SS "const SODIUM_CRYPTO_AEAD_AES256GCM_ABYTES = 16"
+
+.SS "const SODIUM_CRYPTO_AEAD_AES256GCM_KEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_AEAD_AES256GCM_NPUBBYTES = 12"
+
+.SS "const SODIUM_CRYPTO_AEAD_AES256GCM_NSECBYTES = 0"
+
+.SS "const SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_ABYTES = 16"
+
+.SS "const SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_IETF_ABYTES = 16"
+
+.SS "const SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_IETF_KEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_IETF_NPUBBYTES = 12"
+
+.SS "const SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_IETF_NSECBYTES = 0"
+
+.SS "const SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_KEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_NPUBBYTES = 8"
+
+.SS "const SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_NSECBYTES = 0"
+
+.SS "const SODIUM_CRYPTO_AEAD_XCHACHA20POLY1305_IETF_ABYTES = 16"
+
+.SS "const SODIUM_CRYPTO_AEAD_XCHACHA20POLY1305_IETF_KEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_AEAD_XCHACHA20POLY1305_IETF_NPUBBYTES = 24"
+
+.SS "const SODIUM_CRYPTO_AEAD_XCHACHA20POLY1305_IETF_NSECBYTES = 0"
+
+.SS "const SODIUM_CRYPTO_AUTH_BYTES = 32"
+
+.SS "const SODIUM_CRYPTO_AUTH_KEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_BOX_KEYPAIRBYTES = 64"
+
+.SS "const SODIUM_CRYPTO_BOX_MACBYTES = 16"
+
+.SS "const SODIUM_CRYPTO_BOX_NONCEBYTES = 24"
+
+.SS "const SODIUM_CRYPTO_BOX_PUBLICKEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_BOX_SEALBYTES = 48"
+
+.SS "const SODIUM_CRYPTO_BOX_SECRETKEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_BOX_SEEDBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_GENERICHASH_BYTES = 32"
+
+.SS "const SODIUM_CRYPTO_GENERICHASH_BYTES_MAX = 64"
+
+.SS "const SODIUM_CRYPTO_GENERICHASH_BYTES_MIN = 16"
+
+.SS "const SODIUM_CRYPTO_GENERICHASH_KEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_GENERICHASH_KEYBYTES_MAX = 64"
+
+.SS "const SODIUM_CRYPTO_GENERICHASH_KEYBYTES_MIN = 16"
+
+.SS "const SODIUM_CRYPTO_KDF_BYTES_MAX = 64"
+
+.SS "const SODIUM_CRYPTO_KDF_BYTES_MIN = 16"
+
+.SS "const SODIUM_CRYPTO_KDF_CONTEXTBYTES = 8"
+
+.SS "const SODIUM_CRYPTO_KDF_KEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_KX_BYTES = 32"
+
+.SS "const SODIUM_CRYPTO_KX_KEYPAIRBYTES = 64"
+
+.SS "const SODIUM_CRYPTO_KX_PUBLICKEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_KX_SECRETKEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_KX_SEEDBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_KX_SESSIONKEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_PWHASH_ALG_ARGON2I13 = 1"
+
+.SS "const SODIUM_CRYPTO_PWHASH_ALG_ARGON2ID13 = 2"
+
+.SS "const SODIUM_CRYPTO_PWHASH_ALG_DEFAULT = 2"
+
+.SS "const SODIUM_CRYPTO_PWHASH_MEMLIMIT_INTERACTIVE = 67108864"
+
+.SS "const SODIUM_CRYPTO_PWHASH_MEMLIMIT_MODERATE = 268435456"
+
+.SS "const SODIUM_CRYPTO_PWHASH_MEMLIMIT_SENSITIVE = 1073741824"
+
+.SS "const SODIUM_CRYPTO_PWHASH_OPSLIMIT_INTERACTIVE = 2"
+
+.SS "const SODIUM_CRYPTO_PWHASH_OPSLIMIT_MODERATE = 3"
+
+.SS "const SODIUM_CRYPTO_PWHASH_OPSLIMIT_SENSITIVE = 4"
+
+.SS "const SODIUM_CRYPTO_PWHASH_SALTBYTES = 16"
+
+.SS "const SODIUM_CRYPTO_PWHASH_SCRYPTSALSA208SHA256_MEMLIMIT_INTERACTIVE = 16777216"
+
+.SS "const SODIUM_CRYPTO_PWHASH_SCRYPTSALSA208SHA256_MEMLIMIT_SENSITIVE = 1073741824"
+
+.SS "const SODIUM_CRYPTO_PWHASH_SCRYPTSALSA208SHA256_OPSLIMIT_INTERACTIVE = 524288"
+
+.SS "const SODIUM_CRYPTO_PWHASH_SCRYPTSALSA208SHA256_OPSLIMIT_SENSITIVE = 33554432"
+
+.SS "const SODIUM_CRYPTO_PWHASH_SCRYPTSALSA208SHA256_SALTBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_PWHASH_SCRYPTSALSA208SHA256_STRPREFIX = '$7$'"
+
+.SS "const SODIUM_CRYPTO_PWHASH_STRPREFIX = '$argon2id$'"
+
+.SS "const SODIUM_CRYPTO_SCALARMULT_BYTES = 32"
+
+.SS "const SODIUM_CRYPTO_SCALARMULT_SCALARBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_SECRETBOX_KEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_SECRETBOX_MACBYTES = 16"
+
+.SS "const SODIUM_CRYPTO_SECRETBOX_NONCEBYTES = 24"
+
+.SS "const SODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_ABYTES = 17"
+
+.SS "const SODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_HEADERBYTES = 24"
+
+.SS "const SODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_KEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_MESSAGEBYTES_MAX = 274877906816"
+
+.SS "const SODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_TAG_FINAL = 3"
+
+.SS "const SODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_TAG_MESSAGE = 0"
+
+.SS "const SODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_TAG_PUSH = 1"
+
+.SS "const SODIUM_CRYPTO_SECRETSTREAM_XCHACHA20POLY1305_TAG_REKEY = 2"
+
+.SS "const SODIUM_CRYPTO_SHORTHASH_BYTES = 8"
+
+.SS "const SODIUM_CRYPTO_SHORTHASH_KEYBYTES = 16"
+
+.SS "const SODIUM_CRYPTO_SIGN_BYTES = 64"
+
+.SS "const SODIUM_CRYPTO_SIGN_KEYPAIRBYTES = 96"
+
+.SS "const SODIUM_CRYPTO_SIGN_PUBLICKEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_SIGN_SECRETKEYBYTES = 64"
+
+.SS "const SODIUM_CRYPTO_SIGN_SEEDBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_STREAM_KEYBYTES = 32"
+
+.SS "const SODIUM_CRYPTO_STREAM_NONCEBYTES = 24"
+
+.SS "const SODIUM_LIBRARY_MAJOR_VERSION = 10"
+
+.SS "const SODIUM_LIBRARY_MINOR_VERSION = 2"
+
+.SS "const SODIUM_LIBRARY_VERSION ='1\&.0\&.17'"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,434 @@
+\hypertarget{json_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/json/json.php File Reference}
+\label{json_8php}\index{vendor/jetbrains/phpstorm-\/stubs/json/json.php@{vendor/jetbrains/phpstorm-\/stubs/json/json.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+interface \mbox{\hyperlink{interface_json_serializable}{Json\+Serializable}}
+\item 
+class \mbox{\hyperlink{class_json_incremental_parser}{Json\+Incremental\+Parser}}
+\item 
+class \mbox{\hyperlink{class_json_exception}{Json\+Exception}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{json_8php_aca1cc4d7aecb5a201209bc21538b2c24}{json\+\_\+encode}} (\$value, \$options=0, \$depth=512)
+\item 
+\mbox{\hyperlink{json_8php_ac819628d47ec6a92cc4af51a796b102d}{json\+\_\+decode}} (\$\mbox{\hyperlink{application__run3_8txt_ad22bb84580d99b4679e4542590fd9c20}{json}}, \$assoc=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}, \$depth=512, \$options=0)
+\item 
+\mbox{\hyperlink{json_8php_a0558eae7ed6d1429b25fcfeca3a38ba9}{json\+\_\+last\+\_\+error}} ()
+\item 
+\mbox{\hyperlink{json_8php_af2b417d8e6f44eb65ac51f6bf6404fcb}{json\+\_\+last\+\_\+error\+\_\+msg}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{json_8php_a59bcbd7c847694aac91c3f03a1b12264}{J\+S\+O\+N\+\_\+\+H\+E\+X\+\_\+\+T\+AG}} 1
+\item 
+const \mbox{\hyperlink{json_8php_a36f6b2bb7ee40822eb58d6f07f4d3847}{J\+S\+O\+N\+\_\+\+H\+E\+X\+\_\+\+A\+MP}} 2
+\item 
+const \mbox{\hyperlink{json_8php_aed5c65b7118c0af3a9f31fac2e310bb4}{J\+S\+O\+N\+\_\+\+H\+E\+X\+\_\+\+A\+P\+OS}} 4
+\item 
+const \mbox{\hyperlink{json_8php_aef98b840dc3e629f784005bf089f7b41}{J\+S\+O\+N\+\_\+\+H\+E\+X\+\_\+\+Q\+U\+OT}} 8
+\item 
+const \mbox{\hyperlink{json_8php_a0410cd48f1abe49073510fef1d6f8eea}{J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+\_\+\+O\+B\+J\+E\+CT}} 16
+\item 
+const \mbox{\hyperlink{json_8php_a7120537ae6d1e69e5bc219257a9a344a}{J\+S\+O\+N\+\_\+\+N\+U\+M\+E\+R\+I\+C\+\_\+\+C\+H\+E\+CK}} 32
+\item 
+const \mbox{\hyperlink{json_8php_a83f7b153529651dcfdfdd9b843ee5144}{J\+S\+O\+N\+\_\+\+U\+N\+E\+S\+C\+A\+P\+E\+D\+\_\+\+S\+L\+A\+S\+H\+ES}} 64
+\item 
+const \mbox{\hyperlink{json_8php_ace4fb007c719c3eb300bbe933c9883a7}{J\+S\+O\+N\+\_\+\+P\+R\+E\+T\+T\+Y\+\_\+\+P\+R\+I\+NT}} 128
+\item 
+const \mbox{\hyperlink{json_8php_a93d977bfa7a1a0a60b9f3bf1fb925c66}{J\+S\+O\+N\+\_\+\+U\+N\+E\+S\+C\+A\+P\+E\+D\+\_\+\+U\+N\+I\+C\+O\+DE}} 256
+\item 
+const \mbox{\hyperlink{json_8php_a8db66866a1a7094a1722fc333b52e7e5}{J\+S\+O\+N\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+O\+N\+\_\+\+E\+R\+R\+OR}} 512
+\item 
+const \mbox{\hyperlink{json_8php_a5e662b95283d042afd23e2c5848c43c1}{J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+I\+S\+M\+A\+T\+CH}} 2
+\item 
+const \mbox{\hyperlink{json_8php_a56801b63d960d7b4ef43a0f6db31701d}{J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+T\+R\+L\+\_\+\+C\+H\+AR}} 3
+\item 
+const \mbox{\hyperlink{json_8php_a6bef4c27c352d0f1b71be447eb20b3c5}{J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+T\+F8}} 5
+\item 
+const \mbox{\hyperlink{json_8php_ae93c3fa30840c9d08bfddae90a606d4e}{J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+C\+U\+R\+S\+I\+ON}} 6
+\item 
+const \mbox{\hyperlink{json_8php_ac53006728e819ae544b93cc9a8ee8ffc}{J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+F\+\_\+\+O\+R\+\_\+\+N\+AN}} 7
+\item 
+const \mbox{\hyperlink{json_8php_ad6bd07f4b4a94aa151db3131811005f7}{J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+T\+Y\+PE}} 8
+\item 
+const \mbox{\hyperlink{json_8php_a1d5f6c3f636977753e33f3c4518f7d9d}{J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+NE}} 0
+\item 
+const \mbox{\hyperlink{json_8php_a51dc5eb3153aa846450120a905517cfb}{J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+E\+P\+TH}} 1
+\item 
+const \mbox{\hyperlink{json_8php_a9d0bdec26e1627eaec33c05108c0f042}{J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+Y\+N\+T\+AX}} 4
+\item 
+const \mbox{\hyperlink{json_8php_aa1ce8995e2a82f81d476d304f16ed3fb}{J\+S\+O\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+A\+S\+\_\+\+A\+R\+R\+AY}} 1
+\item 
+const \mbox{\hyperlink{json_8php_a3826058bd558a1f85cb4d38ef0a7d6b5}{J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+R\+\_\+\+N\+O\+T\+S\+T\+R\+I\+CT}} 4
+\item 
+const \mbox{\hyperlink{json_8php_a4c83041d36fc4b535ac76b7040badae2}{J\+S\+O\+N\+\_\+\+B\+I\+G\+I\+N\+T\+\_\+\+A\+S\+\_\+\+S\+T\+R\+I\+NG}} 2
+\item 
+const \mbox{\hyperlink{json_8php_abf83d1152a82b4d4836681fa90901f08}{J\+S\+O\+N\+\_\+\+P\+R\+E\+S\+E\+R\+V\+E\+\_\+\+Z\+E\+R\+O\+\_\+\+F\+R\+A\+C\+T\+I\+ON}} 1024
+\item 
+const \mbox{\hyperlink{json_8php_a942b53f83de6f393de55aa01fe40691b}{J\+S\+O\+N\+\_\+\+U\+N\+E\+S\+C\+A\+P\+E\+D\+\_\+\+L\+I\+N\+E\+\_\+\+T\+E\+R\+M\+I\+N\+A\+T\+O\+RS}} 2048
+\item 
+const \mbox{\hyperlink{json_8php_a51b83c45c92cee7ae4c170a24ec14c56}{J\+S\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+T\+F8\+\_\+\+I\+G\+N\+O\+RE}} 1048576
+\item 
+const \mbox{\hyperlink{json_8php_a1927f29716c23ac9f085345bd76cda34}{J\+S\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+T\+F8\+\_\+\+S\+U\+B\+S\+T\+I\+T\+U\+TE}} 2097152
+\item 
+const \mbox{\hyperlink{json_8php_a751fd1e27c3b407d124477c1d0156c98}{J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+N\+A\+ME}} 9
+\item 
+const \mbox{\hyperlink{json_8php_a6a73900697c39406e1a14e449ca28324}{J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+T\+F16}} 10
+\item 
+const \mbox{\hyperlink{json_8php_adf681d90130b6918312fc052791ab2ad}{J\+S\+O\+N\+\_\+\+T\+H\+R\+O\+W\+\_\+\+O\+N\+\_\+\+E\+R\+R\+OR}} 4194304
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{json_8php_ac819628d47ec6a92cc4af51a796b102d}\label{json_8php_ac819628d47ec6a92cc4af51a796b102d}} 
+\index{json.php@{json.php}!json\_decode@{json\_decode}}
+\index{json\_decode@{json\_decode}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{json\_decode()}{json\_decode()}}
+{\footnotesize\ttfamily json\+\_\+decode (\begin{DoxyParamCaption}\item[{}]{\$json,  }\item[{}]{\$assoc = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}},  }\item[{}]{\$depth = {\ttfamily 512},  }\item[{}]{\$options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+2.\+0, P\+E\+CL json $>$= 1.\+2.\+0)~\newline
+ Decodes a J\+S\+ON string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$json }} The {\itshape json} string being decoded. 
+
+This function only works with U\+T\+F-\/8 encoded strings. 
+
+P\+HP implements a superset of J\+S\+ON -\/ it will also encode and decode scalar types and {\bfseries{N\+U\+LL}}. The J\+S\+ON standard only supports these values when they are nested inside an array or an object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$assoc} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+When {\bfseries{T\+R\+UE}}, returned objects will be converted into associative arrays. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$depth} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+User specified recursion depth. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Bitmask of J\+S\+ON decode options\+:~\newline
+ \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{json_8php_a4c83041d36fc4b535ac76b7040badae2}{J\+S\+O\+N\+\_\+\+B\+I\+G\+I\+N\+T\+\_\+\+A\+S\+\_\+\+S\+T\+R\+I\+NG}}\} decodes large integers as their original string value.~\newline
+ \{
+
+\mbox{\hyperlink{json_8php_a51b83c45c92cee7ae4c170a24ec14c56}{J\+S\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+T\+F8\+\_\+\+I\+G\+N\+O\+RE}}\} ignores invalid U\+T\+F-\/8 characters,~\newline
+ \{
+
+\mbox{\hyperlink{json_8php_a1927f29716c23ac9f085345bd76cda34}{J\+S\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+T\+F8\+\_\+\+S\+U\+B\+S\+T\+I\+T\+U\+TE}}\} converts invalid U\+T\+F-\/8 characters to \textbackslash{}0xfffd,~\newline
+ \{
+
+\mbox{\hyperlink{json_8php_aa1ce8995e2a82f81d476d304f16ed3fb}{J\+S\+O\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+A\+S\+\_\+\+A\+R\+R\+AY}}\} decodes J\+S\+ON objects as P\+HP array, since 7.\+2.\+0 used by default \mbox{\hyperlink{apigen_2apigen_2bin_2bootstrap_8php_a18b663b7f311baed73ccaa681a5d3507}{if}} \$assoc parameter is \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}},~\newline
+ \{
+
+\mbox{\hyperlink{json_8php_adf681d90130b6918312fc052791ab2ad}{J\+S\+O\+N\+\_\+\+T\+H\+R\+O\+W\+\_\+\+O\+N\+\_\+\+E\+R\+R\+OR}}\} when passed this flag, the error behaviour of these functions is changed. The global error state is left untouched, and \mbox{\hyperlink{apigen_2apigen_2bin_2bootstrap_8php_a18b663b7f311baed73ccaa681a5d3507}{if}} an error occurs that would otherwise set it, these functions instead throw \mbox{\hyperlink{interfacea}{a}} \mbox{\hyperlink{class_json_exception}{Json\+Exception}}~\newline
+ 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+mixed the value encoded in {\itshape json} in appropriate P\+HP type. Values true, false and null (case-\/insensitive) are returned as {\bfseries{T\+R\+UE}}, {\bfseries{F\+A\+L\+SE}} and {\bfseries{N\+U\+LL}} respectively. {\bfseries{N\+U\+LL}} is returned if the {\itshape json} cannot be decoded or if the encoded data is deeper than the recursion limit. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{json_8php_aca1cc4d7aecb5a201209bc21538b2c24}\label{json_8php_aca1cc4d7aecb5a201209bc21538b2c24}} 
+\index{json.php@{json.php}!json\_encode@{json\_encode}}
+\index{json\_encode@{json\_encode}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{json\_encode()}{json\_encode()}}
+{\footnotesize\ttfamily json\+\_\+encode (\begin{DoxyParamCaption}\item[{}]{\$value,  }\item[{}]{\$options = {\ttfamily 0},  }\item[{}]{\$depth = {\ttfamily 512} }\end{DoxyParamCaption})}
+
+(P\+HP 5 $>$= 5.\+2.\+0, P\+E\+CL json $>$= 1.\+2.\+0)~\newline
+ Returns the J\+S\+ON representation of a value \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{mixed \$value }} The {\itshape value} being encoded. Can be any type except a resource. 
+
+All string data must be U\+T\+F-\/8 encoded. 
+
+P\+HP implements a superset of J\+S\+ON -\/ it will also encode and decode scalar types and {\bfseries{N\+U\+LL}}. The J\+S\+ON standard only supports these values when they are nested inside an array or an object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Bitmask consisting of {\bfseries{J\+S\+O\+N\+\_\+\+H\+E\+X\+\_\+\+Q\+U\+OT}}, {\bfseries{J\+S\+O\+N\+\_\+\+H\+E\+X\+\_\+\+T\+AG}}, {\bfseries{J\+S\+O\+N\+\_\+\+H\+E\+X\+\_\+\+A\+MP}}, {\bfseries{J\+S\+O\+N\+\_\+\+H\+E\+X\+\_\+\+A\+P\+OS}}, {\bfseries{J\+S\+O\+N\+\_\+\+N\+U\+M\+E\+R\+I\+C\+\_\+\+C\+H\+E\+CK}}, {\bfseries{J\+S\+O\+N\+\_\+\+P\+R\+E\+T\+T\+Y\+\_\+\+P\+R\+I\+NT}}, {\bfseries{J\+S\+O\+N\+\_\+\+U\+N\+E\+S\+C\+A\+P\+E\+D\+\_\+\+S\+L\+A\+S\+H\+ES}}, {\bfseries{J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+\_\+\+O\+B\+J\+E\+CT}}, {\bfseries{J\+S\+O\+N\+\_\+\+U\+N\+E\+S\+C\+A\+P\+E\+D\+\_\+\+U\+N\+I\+C\+O\+DE}}. {\bfseries{J\+S\+O\+N\+\_\+\+T\+H\+R\+O\+W\+\_\+\+O\+N\+\_\+\+E\+R\+R\+OR}} The behaviour of these constants is described on the J\+S\+ON constants page. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$depth} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Set the maximum depth. Must be greater than zero. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false a J\+S\+ON encoded string on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{json_8php_a0558eae7ed6d1429b25fcfeca3a38ba9}\label{json_8php_a0558eae7ed6d1429b25fcfeca3a38ba9}} 
+\index{json.php@{json.php}!json\_last\_error@{json\_last\_error}}
+\index{json\_last\_error@{json\_last\_error}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{json\_last\_error()}{json\_last\_error()}}
+{\footnotesize\ttfamily json\+\_\+last\+\_\+error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the last error occurred \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int an integer, the value can be one of the following constants\+:  5.\+3 }}\mbox{\Hypertarget{json_8php_af2b417d8e6f44eb65ac51f6bf6404fcb}\label{json_8php_af2b417d8e6f44eb65ac51f6bf6404fcb}} 
+\index{json.php@{json.php}!json\_last\_error\_msg@{json\_last\_error\_msg}}
+\index{json\_last\_error\_msg@{json\_last\_error\_msg}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{json\_last\_error\_msg()}{json\_last\_error\_msg()}}
+{\footnotesize\ttfamily json\+\_\+last\+\_\+error\+\_\+msg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the error string of the last \mbox{\hyperlink{json_8php_aca1cc4d7aecb5a201209bc21538b2c24}{json\+\_\+encode()}} or \mbox{\hyperlink{json_8php_ac819628d47ec6a92cc4af51a796b102d}{json\+\_\+decode()}} call \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string the error message on success or {\bfseries{N\+U\+LL}} with wrong parameters.  5.\+5 }}
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{json_8php_a4c83041d36fc4b535ac76b7040badae2}\label{json_8php_a4c83041d36fc4b535ac76b7040badae2}} 
+\index{json.php@{json.php}!JSON\_BIGINT\_AS\_STRING@{JSON\_BIGINT\_AS\_STRING}}
+\index{JSON\_BIGINT\_AS\_STRING@{JSON\_BIGINT\_AS\_STRING}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_BIGINT\_AS\_STRING}{JSON\_BIGINT\_AS\_STRING}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+B\+I\+G\+I\+N\+T\+\_\+\+A\+S\+\_\+\+S\+T\+R\+I\+NG 2}
+
+Decodes large integers as their original string value. \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_a56801b63d960d7b4ef43a0f6db31701d}\label{json_8php_a56801b63d960d7b4ef43a0f6db31701d}} 
+\index{json.php@{json.php}!JSON\_ERROR\_CTRL\_CHAR@{JSON\_ERROR\_CTRL\_CHAR}}
+\index{JSON\_ERROR\_CTRL\_CHAR@{JSON\_ERROR\_CTRL\_CHAR}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_ERROR\_CTRL\_CHAR}{JSON\_ERROR\_CTRL\_CHAR}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+T\+R\+L\+\_\+\+C\+H\+AR 3}
+
+Control character error, possibly incorrectly encoded. \begin{DoxySince}{Since}
+5.\+3 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_a51dc5eb3153aa846450120a905517cfb}\label{json_8php_a51dc5eb3153aa846450120a905517cfb}} 
+\index{json.php@{json.php}!JSON\_ERROR\_DEPTH@{JSON\_ERROR\_DEPTH}}
+\index{JSON\_ERROR\_DEPTH@{JSON\_ERROR\_DEPTH}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_ERROR\_DEPTH}{JSON\_ERROR\_DEPTH}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+E\+P\+TH 1}
+
+The maximum stack depth has been exceeded. \begin{DoxySince}{Since}
+5.\+3 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_ac53006728e819ae544b93cc9a8ee8ffc}\label{json_8php_ac53006728e819ae544b93cc9a8ee8ffc}} 
+\index{json.php@{json.php}!JSON\_ERROR\_INF\_OR\_NAN@{JSON\_ERROR\_INF\_OR\_NAN}}
+\index{JSON\_ERROR\_INF\_OR\_NAN@{JSON\_ERROR\_INF\_OR\_NAN}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_ERROR\_INF\_OR\_NAN}{JSON\_ERROR\_INF\_OR\_NAN}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+F\+\_\+\+O\+R\+\_\+\+N\+AN 7}
+
+The value passed to {\bfseries{json\+\_\+encode}} includes either {\bfseries{N\+AN}} or {\bfseries{I\+NF}}. If the {\bfseries{J\+S\+O\+N\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+O\+N\+\_\+\+E\+R\+R\+OR}} option was given, 0 will be encoded in the place of these special numbers. 
+
+This constant is available as of P\+HP 5.\+5.\+0. 
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}\mbox{\Hypertarget{json_8php_a751fd1e27c3b407d124477c1d0156c98}\label{json_8php_a751fd1e27c3b407d124477c1d0156c98}} 
+\index{json.php@{json.php}!JSON\_ERROR\_INVALID\_PROPERTY\_NAME@{JSON\_ERROR\_INVALID\_PROPERTY\_NAME}}
+\index{JSON\_ERROR\_INVALID\_PROPERTY\_NAME@{JSON\_ERROR\_INVALID\_PROPERTY\_NAME}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_ERROR\_INVALID\_PROPERTY\_NAME}{JSON\_ERROR\_INVALID\_PROPERTY\_NAME}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+R\+O\+P\+E\+R\+T\+Y\+\_\+\+N\+A\+ME 9}
+
+\mbox{\hyperlink{class_a}{A}} key starting with \textbackslash{}u0000 character was in the string passed to \mbox{\hyperlink{json_8php_ac819628d47ec6a92cc4af51a796b102d}{json\+\_\+decode()}} when decoding a J\+S\+ON object into a P\+HP object. Available since P\+HP 7.\+0.\+0. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+0 }}\mbox{\Hypertarget{json_8php_a1d5f6c3f636977753e33f3c4518f7d9d}\label{json_8php_a1d5f6c3f636977753e33f3c4518f7d9d}} 
+\index{json.php@{json.php}!JSON\_ERROR\_NONE@{JSON\_ERROR\_NONE}}
+\index{JSON\_ERROR\_NONE@{JSON\_ERROR\_NONE}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_ERROR\_NONE}{JSON\_ERROR\_NONE}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+NE 0}
+
+No error has occurred. \begin{DoxySince}{Since}
+5.\+3 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_ae93c3fa30840c9d08bfddae90a606d4e}\label{json_8php_ae93c3fa30840c9d08bfddae90a606d4e}} 
+\index{json.php@{json.php}!JSON\_ERROR\_RECURSION@{JSON\_ERROR\_RECURSION}}
+\index{JSON\_ERROR\_RECURSION@{JSON\_ERROR\_RECURSION}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_ERROR\_RECURSION}{JSON\_ERROR\_RECURSION}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+C\+U\+R\+S\+I\+ON 6}
+
+The object or array passed to {\bfseries{json\+\_\+encode}} include recursive references and cannot be encoded. If the {\bfseries{J\+S\+O\+N\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+O\+N\+\_\+\+E\+R\+R\+OR}} option was given, {\bfseries{N\+U\+LL}} will be encoded in the place of the recursive reference. 
+
+This constant is available as of P\+HP 5.\+5.\+0. 
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}\mbox{\Hypertarget{json_8php_a5e662b95283d042afd23e2c5848c43c1}\label{json_8php_a5e662b95283d042afd23e2c5848c43c1}} 
+\index{json.php@{json.php}!JSON\_ERROR\_STATE\_MISMATCH@{JSON\_ERROR\_STATE\_MISMATCH}}
+\index{JSON\_ERROR\_STATE\_MISMATCH@{JSON\_ERROR\_STATE\_MISMATCH}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_ERROR\_STATE\_MISMATCH}{JSON\_ERROR\_STATE\_MISMATCH}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+I\+S\+M\+A\+T\+CH 2}
+
+Occurs with underflow or with the modes mismatch. \begin{DoxySince}{Since}
+5.\+3 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_a9d0bdec26e1627eaec33c05108c0f042}\label{json_8php_a9d0bdec26e1627eaec33c05108c0f042}} 
+\index{json.php@{json.php}!JSON\_ERROR\_SYNTAX@{JSON\_ERROR\_SYNTAX}}
+\index{JSON\_ERROR\_SYNTAX@{JSON\_ERROR\_SYNTAX}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_ERROR\_SYNTAX}{JSON\_ERROR\_SYNTAX}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+Y\+N\+T\+AX 4}
+
+Syntax error. \begin{DoxySince}{Since}
+5.\+3 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_ad6bd07f4b4a94aa151db3131811005f7}\label{json_8php_ad6bd07f4b4a94aa151db3131811005f7}} 
+\index{json.php@{json.php}!JSON\_ERROR\_UNSUPPORTED\_TYPE@{JSON\_ERROR\_UNSUPPORTED\_TYPE}}
+\index{JSON\_ERROR\_UNSUPPORTED\_TYPE@{JSON\_ERROR\_UNSUPPORTED\_TYPE}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_ERROR\_UNSUPPORTED\_TYPE}{JSON\_ERROR\_UNSUPPORTED\_TYPE}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+T\+Y\+PE 8}
+
+\mbox{\hyperlink{class_a}{A}} value of an unsupported type was given to {\bfseries{json\+\_\+encode}}, such as a resource. If the {\bfseries{J\+S\+O\+N\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+O\+N\+\_\+\+E\+R\+R\+OR}} option was given, {\bfseries{N\+U\+LL}} will be encoded in the place of the unsupported value. 
+
+This constant is available as of P\+HP 5.\+5.\+0. 
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}\mbox{\Hypertarget{json_8php_a6a73900697c39406e1a14e449ca28324}\label{json_8php_a6a73900697c39406e1a14e449ca28324}} 
+\index{json.php@{json.php}!JSON\_ERROR\_UTF16@{JSON\_ERROR\_UTF16}}
+\index{JSON\_ERROR\_UTF16@{JSON\_ERROR\_UTF16}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_ERROR\_UTF16}{JSON\_ERROR\_UTF16}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+T\+F16 10}
+
+Single unpaired U\+T\+F-\/16 surrogate in unicode escape contained in the J\+S\+ON string passed to \mbox{\hyperlink{json_8php_aca1cc4d7aecb5a201209bc21538b2c24}{json\+\_\+encode()}}. Available since P\+HP 7.\+0.\+0. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+0 }}\mbox{\Hypertarget{json_8php_a6bef4c27c352d0f1b71be447eb20b3c5}\label{json_8php_a6bef4c27c352d0f1b71be447eb20b3c5}} 
+\index{json.php@{json.php}!JSON\_ERROR\_UTF8@{JSON\_ERROR\_UTF8}}
+\index{JSON\_ERROR\_UTF8@{JSON\_ERROR\_UTF8}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_ERROR\_UTF8}{JSON\_ERROR\_UTF8}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+T\+F8 5}
+
+Malformed U\+T\+F-\/8 characters, possibly incorrectly encoded. This constant is available as of P\+HP 5.\+3.\+3. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}\mbox{\Hypertarget{json_8php_a0410cd48f1abe49073510fef1d6f8eea}\label{json_8php_a0410cd48f1abe49073510fef1d6f8eea}} 
+\index{json.php@{json.php}!JSON\_FORCE\_OBJECT@{JSON\_FORCE\_OBJECT}}
+\index{JSON\_FORCE\_OBJECT@{JSON\_FORCE\_OBJECT}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_FORCE\_OBJECT}{JSON\_FORCE\_OBJECT}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+\_\+\+O\+B\+J\+E\+CT 16}
+
+Outputs an object rather than an array when a non-\/associative array is used. Especially useful when the recipient of the output is expecting an object and the array is empty. \begin{DoxySince}{Since}
+5.\+3 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_a36f6b2bb7ee40822eb58d6f07f4d3847}\label{json_8php_a36f6b2bb7ee40822eb58d6f07f4d3847}} 
+\index{json.php@{json.php}!JSON\_HEX\_AMP@{JSON\_HEX\_AMP}}
+\index{JSON\_HEX\_AMP@{JSON\_HEX\_AMP}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_HEX\_AMP}{JSON\_HEX\_AMP}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+H\+E\+X\+\_\+\+A\+MP 2}
+
+All \&\#38;\#38;s are converted to \textbackslash{}u0026. \begin{DoxySince}{Since}
+5.\+3 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_aed5c65b7118c0af3a9f31fac2e310bb4}\label{json_8php_aed5c65b7118c0af3a9f31fac2e310bb4}} 
+\index{json.php@{json.php}!JSON\_HEX\_APOS@{JSON\_HEX\_APOS}}
+\index{JSON\_HEX\_APOS@{JSON\_HEX\_APOS}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_HEX\_APOS}{JSON\_HEX\_APOS}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+H\+E\+X\+\_\+\+A\+P\+OS 4}
+
+All \textquotesingle{} are converted to \textbackslash{}u0027. \begin{DoxySince}{Since}
+5.\+3 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_aef98b840dc3e629f784005bf089f7b41}\label{json_8php_aef98b840dc3e629f784005bf089f7b41}} 
+\index{json.php@{json.php}!JSON\_HEX\_QUOT@{JSON\_HEX\_QUOT}}
+\index{JSON\_HEX\_QUOT@{JSON\_HEX\_QUOT}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_HEX\_QUOT}{JSON\_HEX\_QUOT}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+H\+E\+X\+\_\+\+Q\+U\+OT 8}
+
+All "{} are converted to \textbackslash{}u0022. \begin{DoxySince}{Since}
+5.\+3 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_a59bcbd7c847694aac91c3f03a1b12264}\label{json_8php_a59bcbd7c847694aac91c3f03a1b12264}} 
+\index{json.php@{json.php}!JSON\_HEX\_TAG@{JSON\_HEX\_TAG}}
+\index{JSON\_HEX\_TAG@{JSON\_HEX\_TAG}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_HEX\_TAG}{JSON\_HEX\_TAG}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+H\+E\+X\+\_\+\+T\+AG 1}
+
+All $<$ and $>$ are converted to \textbackslash{}u003C and \textbackslash{}u003E. \begin{DoxySince}{Since}
+5.\+3 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_a51b83c45c92cee7ae4c170a24ec14c56}\label{json_8php_a51b83c45c92cee7ae4c170a24ec14c56}} 
+\index{json.php@{json.php}!JSON\_INVALID\_UTF8\_IGNORE@{JSON\_INVALID\_UTF8\_IGNORE}}
+\index{JSON\_INVALID\_UTF8\_IGNORE@{JSON\_INVALID\_UTF8\_IGNORE}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_INVALID\_UTF8\_IGNORE}{JSON\_INVALID\_UTF8\_IGNORE}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+T\+F8\+\_\+\+I\+G\+N\+O\+RE 1048576}
+
+Ignore invalid U\+T\+F-\/8 characters. \begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_a1927f29716c23ac9f085345bd76cda34}\label{json_8php_a1927f29716c23ac9f085345bd76cda34}} 
+\index{json.php@{json.php}!JSON\_INVALID\_UTF8\_SUBSTITUTE@{JSON\_INVALID\_UTF8\_SUBSTITUTE}}
+\index{JSON\_INVALID\_UTF8\_SUBSTITUTE@{JSON\_INVALID\_UTF8\_SUBSTITUTE}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_INVALID\_UTF8\_SUBSTITUTE}{JSON\_INVALID\_UTF8\_SUBSTITUTE}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+T\+F8\+\_\+\+S\+U\+B\+S\+T\+I\+T\+U\+TE 2097152}
+
+Convert invalid U\+T\+F-\/8 characters to \textbackslash{}0xfffd (Unicode Character \textquotesingle{}R\+E\+P\+L\+A\+C\+E\+M\+E\+NT C\+H\+A\+R\+A\+C\+T\+ER\textquotesingle{}). \begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_a7120537ae6d1e69e5bc219257a9a344a}\label{json_8php_a7120537ae6d1e69e5bc219257a9a344a}} 
+\index{json.php@{json.php}!JSON\_NUMERIC\_CHECK@{JSON\_NUMERIC\_CHECK}}
+\index{JSON\_NUMERIC\_CHECK@{JSON\_NUMERIC\_CHECK}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_NUMERIC\_CHECK}{JSON\_NUMERIC\_CHECK}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+N\+U\+M\+E\+R\+I\+C\+\_\+\+C\+H\+E\+CK 32}
+
+Encodes numeric strings as numbers. \begin{DoxySince}{Since}
+5.\+3.\+3 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_aa1ce8995e2a82f81d476d304f16ed3fb}\label{json_8php_aa1ce8995e2a82f81d476d304f16ed3fb}} 
+\index{json.php@{json.php}!JSON\_OBJECT\_AS\_ARRAY@{JSON\_OBJECT\_AS\_ARRAY}}
+\index{JSON\_OBJECT\_AS\_ARRAY@{JSON\_OBJECT\_AS\_ARRAY}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_OBJECT\_AS\_ARRAY}{JSON\_OBJECT\_AS\_ARRAY}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+A\+S\+\_\+\+A\+R\+R\+AY 1}
+
+Decodes J\+S\+ON objects as P\+HP array. \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_a3826058bd558a1f85cb4d38ef0a7d6b5}\label{json_8php_a3826058bd558a1f85cb4d38ef0a7d6b5}} 
+\index{json.php@{json.php}!JSON\_PARSER\_NOTSTRICT@{JSON\_PARSER\_NOTSTRICT}}
+\index{JSON\_PARSER\_NOTSTRICT@{JSON\_PARSER\_NOTSTRICT}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_PARSER\_NOTSTRICT}{JSON\_PARSER\_NOTSTRICT}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+R\+\_\+\+N\+O\+T\+S\+T\+R\+I\+CT 4}
+
+\mbox{\Hypertarget{json_8php_a8db66866a1a7094a1722fc333b52e7e5}\label{json_8php_a8db66866a1a7094a1722fc333b52e7e5}} 
+\index{json.php@{json.php}!JSON\_PARTIAL\_OUTPUT\_ON\_ERROR@{JSON\_PARTIAL\_OUTPUT\_ON\_ERROR}}
+\index{JSON\_PARTIAL\_OUTPUT\_ON\_ERROR@{JSON\_PARTIAL\_OUTPUT\_ON\_ERROR}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_PARTIAL\_OUTPUT\_ON\_ERROR}{JSON\_PARTIAL\_OUTPUT\_ON\_ERROR}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+O\+N\+\_\+\+E\+R\+R\+OR 512}
+
+\mbox{\Hypertarget{json_8php_abf83d1152a82b4d4836681fa90901f08}\label{json_8php_abf83d1152a82b4d4836681fa90901f08}} 
+\index{json.php@{json.php}!JSON\_PRESERVE\_ZERO\_FRACTION@{JSON\_PRESERVE\_ZERO\_FRACTION}}
+\index{JSON\_PRESERVE\_ZERO\_FRACTION@{JSON\_PRESERVE\_ZERO\_FRACTION}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_PRESERVE\_ZERO\_FRACTION}{JSON\_PRESERVE\_ZERO\_FRACTION}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+P\+R\+E\+S\+E\+R\+V\+E\+\_\+\+Z\+E\+R\+O\+\_\+\+F\+R\+A\+C\+T\+I\+ON 1024}
+
+Ensures that float values are always encoded as a float value. \begin{DoxySince}{Since}
+5.\+6.\+6 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_ace4fb007c719c3eb300bbe933c9883a7}\label{json_8php_ace4fb007c719c3eb300bbe933c9883a7}} 
+\index{json.php@{json.php}!JSON\_PRETTY\_PRINT@{JSON\_PRETTY\_PRINT}}
+\index{JSON\_PRETTY\_PRINT@{JSON\_PRETTY\_PRINT}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_PRETTY\_PRINT}{JSON\_PRETTY\_PRINT}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+P\+R\+E\+T\+T\+Y\+\_\+\+P\+R\+I\+NT 128}
+
+Use whitespace in returned data to format it. \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_adf681d90130b6918312fc052791ab2ad}\label{json_8php_adf681d90130b6918312fc052791ab2ad}} 
+\index{json.php@{json.php}!JSON\_THROW\_ON\_ERROR@{JSON\_THROW\_ON\_ERROR}}
+\index{JSON\_THROW\_ON\_ERROR@{JSON\_THROW\_ON\_ERROR}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_THROW\_ON\_ERROR}{JSON\_THROW\_ON\_ERROR}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+T\+H\+R\+O\+W\+\_\+\+O\+N\+\_\+\+E\+R\+R\+OR 4194304}
+
+Throws \mbox{\hyperlink{class_json_exception}{Json\+Exception}} if an error occurs instead of setting the global error state that is retrieved with \mbox{\hyperlink{json_8php_a0558eae7ed6d1429b25fcfeca3a38ba9}{json\+\_\+last\+\_\+error()}} and \mbox{\hyperlink{json_8php_af2b417d8e6f44eb65ac51f6bf6404fcb}{json\+\_\+last\+\_\+error\+\_\+msg()}}.
+
+\{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{json_8php_a8db66866a1a7094a1722fc333b52e7e5}{J\+S\+O\+N\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+O\+N\+\_\+\+E\+R\+R\+OR}}\} takes precedence over \mbox{\hyperlink{json_8php_adf681d90130b6918312fc052791ab2ad}{J\+S\+O\+N\+\_\+\+T\+H\+R\+O\+W\+\_\+\+O\+N\+\_\+\+E\+R\+R\+OR}}. 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+7.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_a942b53f83de6f393de55aa01fe40691b}\label{json_8php_a942b53f83de6f393de55aa01fe40691b}} 
+\index{json.php@{json.php}!JSON\_UNESCAPED\_LINE\_TERMINATORS@{JSON\_UNESCAPED\_LINE\_TERMINATORS}}
+\index{JSON\_UNESCAPED\_LINE\_TERMINATORS@{JSON\_UNESCAPED\_LINE\_TERMINATORS}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_UNESCAPED\_LINE\_TERMINATORS}{JSON\_UNESCAPED\_LINE\_TERMINATORS}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+U\+N\+E\+S\+C\+A\+P\+E\+D\+\_\+\+L\+I\+N\+E\+\_\+\+T\+E\+R\+M\+I\+N\+A\+T\+O\+RS 2048}
+
+The line terminators are kept unescaped when J\+S\+O\+N\+\_\+\+U\+N\+E\+S\+C\+A\+P\+E\+D\+\_\+\+U\+N\+I\+C\+O\+DE is supplied. It uses the same behaviour as it was before P\+HP 7.\+1 without this constant. Available since P\+HP 7.\+1.\+0. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+1 }}\mbox{\Hypertarget{json_8php_a83f7b153529651dcfdfdd9b843ee5144}\label{json_8php_a83f7b153529651dcfdfdd9b843ee5144}} 
+\index{json.php@{json.php}!JSON\_UNESCAPED\_SLASHES@{JSON\_UNESCAPED\_SLASHES}}
+\index{JSON\_UNESCAPED\_SLASHES@{JSON\_UNESCAPED\_SLASHES}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_UNESCAPED\_SLASHES}{JSON\_UNESCAPED\_SLASHES}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+U\+N\+E\+S\+C\+A\+P\+E\+D\+\_\+\+S\+L\+A\+S\+H\+ES 64}
+
+Don\textquotesingle{}t escape /. \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}
+\mbox{\Hypertarget{json_8php_a93d977bfa7a1a0a60b9f3bf1fb925c66}\label{json_8php_a93d977bfa7a1a0a60b9f3bf1fb925c66}} 
+\index{json.php@{json.php}!JSON\_UNESCAPED\_UNICODE@{JSON\_UNESCAPED\_UNICODE}}
+\index{JSON\_UNESCAPED\_UNICODE@{JSON\_UNESCAPED\_UNICODE}!json.php@{json.php}}
+\doxysubsubsection{\texorpdfstring{JSON\_UNESCAPED\_UNICODE}{JSON\_UNESCAPED\_UNICODE}}
+{\footnotesize\ttfamily const J\+S\+O\+N\+\_\+\+U\+N\+E\+S\+C\+A\+P\+E\+D\+\_\+\+U\+N\+I\+C\+O\+DE 256}
+
+Encode multibyte Unicode characters literally (default is to escape as \textbackslash{}u\+X\+X\+XX). \begin{DoxySince}{Since}
+5.\+4 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/json.\+constants.\+php}}
+\end{DoxySince}

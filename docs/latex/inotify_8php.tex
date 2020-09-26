@@ -1,0 +1,305 @@
+\hypertarget{inotify_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/inotify/inotify.php File Reference}
+\label{inotify_8php}\index{vendor/jetbrains/phpstorm-\/stubs/inotify/inotify.php@{vendor/jetbrains/phpstorm-\/stubs/inotify/inotify.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{inotify_8php_ae6c91bbb99de733c080126bb52cd52c3}{inotify\+\_\+add\+\_\+watch}} ( \$inotify\+\_\+instance, \$pathname, \$mask)
+\item 
+\mbox{\hyperlink{inotify_8php_a1a236a4a0d11aed7aa84239cbbd4471a}{inotify\+\_\+init}} ()
+\item 
+\mbox{\hyperlink{inotify_8php_ad6aa1afdd641e6923294ba89774ebb9a}{inotify\+\_\+queue\+\_\+len}} ( \$inotify\+\_\+instance)
+\item 
+\mbox{\hyperlink{inotify_8php_a58340f7ddbb57edf60b663ec167389f8}{inotify\+\_\+read}} ( \$inotify\+\_\+instance)
+\item 
+\mbox{\hyperlink{inotify_8php_a7f18b0a359de92c1872eda59f277107b}{inotify\+\_\+rm\+\_\+watch}} ( \$inotify\+\_\+instance, \$watch\+\_\+descriptor)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{inotify_8php_a5d30ff78ec4b4e02db0b97ec4cf24c0b}{I\+N\+\_\+\+A\+C\+C\+E\+SS}} = 1
+\item 
+const \mbox{\hyperlink{inotify_8php_a42d8897f872ac7da06671ce2c7630cc3}{I\+N\+\_\+\+M\+O\+D\+I\+FY}} = 2
+\item 
+const \mbox{\hyperlink{inotify_8php_a0454f659641cfaecbd4dad9bfb78cdbe}{I\+N\+\_\+\+A\+T\+T\+R\+IB}} = 4
+\item 
+const \mbox{\hyperlink{inotify_8php_a0dd2ac7c832d604a9d93412f6a06de6f}{I\+N\+\_\+\+C\+L\+O\+S\+E\+\_\+\+W\+R\+I\+TE}} = 8
+\item 
+const \mbox{\hyperlink{inotify_8php_ac8dc04b2bc599cfeed6b01ef4eb321ea}{I\+N\+\_\+\+C\+L\+O\+S\+E\+\_\+\+N\+O\+W\+R\+I\+TE}} = 16
+\item 
+const \mbox{\hyperlink{inotify_8php_a75b3c44e0a7758a5652e28cf4329f4dd}{I\+N\+\_\+\+O\+P\+EN}} = 32
+\item 
+const \mbox{\hyperlink{inotify_8php_a2365497cf4b538003b54c7a2d11081f3}{I\+N\+\_\+\+M\+O\+V\+E\+D\+\_\+\+F\+R\+OM}} = 64
+\item 
+const \mbox{\hyperlink{inotify_8php_a06c7d1551ae6a0a4094553deb55e76ab}{I\+N\+\_\+\+M\+O\+V\+E\+D\+\_\+\+TO}} = 128
+\item 
+const \mbox{\hyperlink{inotify_8php_a726e59df321fa6ba60ff74bb5a870a53}{I\+N\+\_\+\+C\+R\+E\+A\+TE}} = 256
+\item 
+const \mbox{\hyperlink{inotify_8php_ac3c2b5b78067f4ccef4f6f652b64349b}{I\+N\+\_\+\+D\+E\+L\+E\+TE}} = 512
+\item 
+const \mbox{\hyperlink{inotify_8php_a4b4b0c21a85c58d0d814df6a69c4806d}{I\+N\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+S\+E\+LF}} = 1024
+\item 
+const \mbox{\hyperlink{inotify_8php_aa57282a46511c874b1a3ad45f7e5b98a}{I\+N\+\_\+\+M\+O\+V\+E\+\_\+\+S\+E\+LF}} = 2048
+\item 
+const \mbox{\hyperlink{inotify_8php_a9631ceb98f1344a676475c8528d9d522}{I\+N\+\_\+\+U\+N\+M\+O\+U\+NT}} = 8192
+\item 
+const \mbox{\hyperlink{inotify_8php_a1cdc1f27311ba6b6ba04a6dbfa1a83e7}{I\+N\+\_\+\+Q\+\_\+\+O\+V\+E\+R\+F\+L\+OW}} = 16384
+\item 
+const \mbox{\hyperlink{inotify_8php_a0e0acdaba873317ec0dfd683a0662d83}{I\+N\+\_\+\+I\+G\+N\+O\+R\+ED}} = 32768
+\item 
+const \mbox{\hyperlink{inotify_8php_a7f9de38965197ae043bc9b8ec97f6a3b}{I\+N\+\_\+\+C\+L\+O\+SE}} = 24
+\item 
+const \mbox{\hyperlink{inotify_8php_a812028bc81ddfc605f90aa1a69890e81}{I\+N\+\_\+\+M\+O\+VE}} = 192
+\item 
+const \mbox{\hyperlink{inotify_8php_a80041670cc25f6568df3d8f6366296fa}{I\+N\+\_\+\+A\+L\+L\+\_\+\+E\+V\+E\+N\+TS}} = 4095
+\item 
+const \mbox{\hyperlink{inotify_8php_a117874564173b9d10b5eaff159613129}{I\+N\+\_\+\+O\+N\+L\+Y\+D\+IR}} = 16777216
+\item 
+const \mbox{\hyperlink{inotify_8php_abfdd606c8536508f45cc0d4f20cb4f89}{I\+N\+\_\+\+D\+O\+N\+T\+\_\+\+F\+O\+L\+L\+OW}} = 33554432
+\item 
+const \mbox{\hyperlink{inotify_8php_a7c52570292e36516ad4c4d65e959904c}{I\+N\+\_\+\+M\+A\+S\+K\+\_\+\+A\+DD}} = 536870912
+\item 
+const \mbox{\hyperlink{inotify_8php_a10aeb9e06d25f845f111945681cf2a9b}{I\+N\+\_\+\+I\+S\+D\+IR}} = 1073741824
+\item 
+const \mbox{\hyperlink{inotify_8php_abe5c8fa6ad9082a6dba84eb46ec662d0}{I\+N\+\_\+\+O\+N\+E\+S\+H\+OT}} = 2147483648
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{inotify_8php_ae6c91bbb99de733c080126bb52cd52c3}\label{inotify_8php_ae6c91bbb99de733c080126bb52cd52c3}} 
+\index{inotify.php@{inotify.php}!inotify\_add\_watch@{inotify\_add\_watch}}
+\index{inotify\_add\_watch@{inotify\_add\_watch}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{inotify\_add\_watch()}{inotify\_add\_watch()}}
+{\footnotesize\ttfamily inotify\+\_\+add\+\_\+watch (\begin{DoxyParamCaption}\item[{}]{\$inotify\+\_\+instance,  }\item[{}]{\$pathname,  }\item[{}]{\$mask }\end{DoxyParamCaption})}
+
+(P\+HP $>$= 5.\+2.\+0, P\+E\+CL inotify $>$= 0.\+1.\+2)~\newline
+ Add a watch to an initialized inotify instance
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$inotify\+\_\+instance }}resource returned by \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{inotify\+\_\+init()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pathname} & \\
+\hline
+\end{DoxyParams}
+File or directory to watch
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mask} & \\
+\hline
+\end{DoxyParams}
+Events to watch for. See \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{Predefined Constants}}.
+
+\begin{DoxyReturn}{Returns}
+int a unique ({\itshape inotify} instance-\/wide) watch descriptor. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{inotify_8php_a1a236a4a0d11aed7aa84239cbbd4471a}\label{inotify_8php_a1a236a4a0d11aed7aa84239cbbd4471a}} 
+\index{inotify.php@{inotify.php}!inotify\_init@{inotify\_init}}
+\index{inotify\_init@{inotify\_init}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{inotify\_init()}{inotify\_init()}}
+{\footnotesize\ttfamily inotify\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP $>$= 5.\+2.\+0, P\+E\+CL inotify $>$= 0.\+1.\+2)~\newline
+ Initialize an inotify instance for use with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{inotify_8php_ae6c91bbb99de733c080126bb52cd52c3}{inotify\+\_\+add\+\_\+watch}}\}
+\end{DoxySeeAlso}
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource$\vert$false a stream resource or {\bfseries{F\+A\+L\+SE}} on error. }}\mbox{\Hypertarget{inotify_8php_ad6aa1afdd641e6923294ba89774ebb9a}\label{inotify_8php_ad6aa1afdd641e6923294ba89774ebb9a}} 
+\index{inotify.php@{inotify.php}!inotify\_queue\_len@{inotify\_queue\_len}}
+\index{inotify\_queue\_len@{inotify\_queue\_len}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{inotify\_queue\_len()}{inotify\_queue\_len()}}
+{\footnotesize\ttfamily inotify\+\_\+queue\+\_\+len (\begin{DoxyParamCaption}\item[{}]{\$inotify\+\_\+instance }\end{DoxyParamCaption})}
+
+(P\+HP $>$= 5.\+2.\+0, P\+E\+CL inotify $>$= 0.\+1.\+2)~\newline
+ This function allows to know if \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{inotify_8php_a58340f7ddbb57edf60b663ec167389f8}{inotify\+\_\+read}}\} will block or not. If \mbox{\hyperlink{interfacea}{a}} number upper than zero is returned, there are pending events and \{
+
+\mbox{\hyperlink{inotify_8php_a58340f7ddbb57edf60b663ec167389f8}{inotify\+\_\+read}}\} will not block.
+\end{DoxySeeAlso}
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$inotify\+\_\+instance }}resource returned by \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{inotify\+\_\+init()}}
+
+\begin{DoxyReturn}{Returns}
+int a number greater than zero if events are pending, otherwise zero. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{inotify_8php_a58340f7ddbb57edf60b663ec167389f8}\label{inotify_8php_a58340f7ddbb57edf60b663ec167389f8}} 
+\index{inotify.php@{inotify.php}!inotify\_read@{inotify\_read}}
+\index{inotify\_read@{inotify\_read}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{inotify\_read()}{inotify\_read()}}
+{\footnotesize\ttfamily inotify\+\_\+read (\begin{DoxyParamCaption}\item[{}]{\$inotify\+\_\+instance }\end{DoxyParamCaption})}
+
+(P\+HP $>$= 5.\+2.\+0, P\+E\+CL inotify $>$= 0.\+1.\+2)~\newline
+ Read inotify events from an inotify instance.
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$inotify\+\_\+instance }}resource returned by \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{inotify\+\_\+init()}}
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false an array of inotify events or {\bfseries{F\+A\+L\+SE}} if no events were pending and {\itshape inotify\+\_\+instance} is non-\/blocking. Each event is an array with the following keys\+:
+\end{DoxyReturn}
+
+\begin{DoxyItemize}
+\item {\bfseries{wd}} is a watch descriptor returned by \mbox{\hyperlink{inotify_8php_ae6c91bbb99de733c080126bb52cd52c3}{inotify\+\_\+add\+\_\+watch()}} 
+\item {\bfseries{mask}} is a bit mask of events 
+\item {\bfseries{cookie}} is a unique id to connect related events (e.\+g. I\+N\+\_\+\+M\+O\+V\+E\+\_\+\+F\+R\+OM and I\+N\+\_\+\+M\+O\+V\+E\+\_\+\+TO) 
+\item {\bfseries{name}} is the name of a file (e.\+g. if a file was modified in a watched directory) 
+\end{DoxyItemize}\mbox{\Hypertarget{inotify_8php_a7f18b0a359de92c1872eda59f277107b}\label{inotify_8php_a7f18b0a359de92c1872eda59f277107b}} 
+\index{inotify.php@{inotify.php}!inotify\_rm\_watch@{inotify\_rm\_watch}}
+\index{inotify\_rm\_watch@{inotify\_rm\_watch}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{inotify\_rm\_watch()}{inotify\_rm\_watch()}}
+{\footnotesize\ttfamily inotify\+\_\+rm\+\_\+watch (\begin{DoxyParamCaption}\item[{}]{\$inotify\+\_\+instance,  }\item[{}]{\$watch\+\_\+descriptor }\end{DoxyParamCaption})}
+
+(P\+HP $>$= 5.\+2.\+0, P\+E\+CL inotify $>$= 0.\+1.\+2)~\newline
+ Removes the watch {\itshape \$watch\+\_\+descriptor} from the inotify instance {\itshape \$inotify\+\_\+instance}.
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$inotify\+\_\+instance }}resource returned by \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{inotify\+\_\+init()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$watch\+\_\+descriptor} & \\
+\hline
+\end{DoxyParams}
+watch to remove from the instance
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{inotify_8php_a5d30ff78ec4b4e02db0b97ec4cf24c0b}\label{inotify_8php_a5d30ff78ec4b4e02db0b97ec4cf24c0b}} 
+\index{inotify.php@{inotify.php}!IN\_ACCESS@{IN\_ACCESS}}
+\index{IN\_ACCESS@{IN\_ACCESS}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_ACCESS}{IN\_ACCESS}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+A\+C\+C\+E\+SS = 1}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a80041670cc25f6568df3d8f6366296fa}\label{inotify_8php_a80041670cc25f6568df3d8f6366296fa}} 
+\index{inotify.php@{inotify.php}!IN\_ALL\_EVENTS@{IN\_ALL\_EVENTS}}
+\index{IN\_ALL\_EVENTS@{IN\_ALL\_EVENTS}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_ALL\_EVENTS}{IN\_ALL\_EVENTS}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+A\+L\+L\+\_\+\+E\+V\+E\+N\+TS = 4095}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a0454f659641cfaecbd4dad9bfb78cdbe}\label{inotify_8php_a0454f659641cfaecbd4dad9bfb78cdbe}} 
+\index{inotify.php@{inotify.php}!IN\_ATTRIB@{IN\_ATTRIB}}
+\index{IN\_ATTRIB@{IN\_ATTRIB}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_ATTRIB}{IN\_ATTRIB}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+A\+T\+T\+R\+IB = 4}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a7f9de38965197ae043bc9b8ec97f6a3b}\label{inotify_8php_a7f9de38965197ae043bc9b8ec97f6a3b}} 
+\index{inotify.php@{inotify.php}!IN\_CLOSE@{IN\_CLOSE}}
+\index{IN\_CLOSE@{IN\_CLOSE}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_CLOSE}{IN\_CLOSE}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+C\+L\+O\+SE = 24}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_ac8dc04b2bc599cfeed6b01ef4eb321ea}\label{inotify_8php_ac8dc04b2bc599cfeed6b01ef4eb321ea}} 
+\index{inotify.php@{inotify.php}!IN\_CLOSE\_NOWRITE@{IN\_CLOSE\_NOWRITE}}
+\index{IN\_CLOSE\_NOWRITE@{IN\_CLOSE\_NOWRITE}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_CLOSE\_NOWRITE}{IN\_CLOSE\_NOWRITE}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+C\+L\+O\+S\+E\+\_\+\+N\+O\+W\+R\+I\+TE = 16}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a0dd2ac7c832d604a9d93412f6a06de6f}\label{inotify_8php_a0dd2ac7c832d604a9d93412f6a06de6f}} 
+\index{inotify.php@{inotify.php}!IN\_CLOSE\_WRITE@{IN\_CLOSE\_WRITE}}
+\index{IN\_CLOSE\_WRITE@{IN\_CLOSE\_WRITE}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_CLOSE\_WRITE}{IN\_CLOSE\_WRITE}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+C\+L\+O\+S\+E\+\_\+\+W\+R\+I\+TE = 8}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a726e59df321fa6ba60ff74bb5a870a53}\label{inotify_8php_a726e59df321fa6ba60ff74bb5a870a53}} 
+\index{inotify.php@{inotify.php}!IN\_CREATE@{IN\_CREATE}}
+\index{IN\_CREATE@{IN\_CREATE}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_CREATE}{IN\_CREATE}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+C\+R\+E\+A\+TE = 256}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_ac3c2b5b78067f4ccef4f6f652b64349b}\label{inotify_8php_ac3c2b5b78067f4ccef4f6f652b64349b}} 
+\index{inotify.php@{inotify.php}!IN\_DELETE@{IN\_DELETE}}
+\index{IN\_DELETE@{IN\_DELETE}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_DELETE}{IN\_DELETE}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+D\+E\+L\+E\+TE = 512}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a4b4b0c21a85c58d0d814df6a69c4806d}\label{inotify_8php_a4b4b0c21a85c58d0d814df6a69c4806d}} 
+\index{inotify.php@{inotify.php}!IN\_DELETE\_SELF@{IN\_DELETE\_SELF}}
+\index{IN\_DELETE\_SELF@{IN\_DELETE\_SELF}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_DELETE\_SELF}{IN\_DELETE\_SELF}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+S\+E\+LF = 1024}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_abfdd606c8536508f45cc0d4f20cb4f89}\label{inotify_8php_abfdd606c8536508f45cc0d4f20cb4f89}} 
+\index{inotify.php@{inotify.php}!IN\_DONT\_FOLLOW@{IN\_DONT\_FOLLOW}}
+\index{IN\_DONT\_FOLLOW@{IN\_DONT\_FOLLOW}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_DONT\_FOLLOW}{IN\_DONT\_FOLLOW}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+D\+O\+N\+T\+\_\+\+F\+O\+L\+L\+OW = 33554432}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a0e0acdaba873317ec0dfd683a0662d83}\label{inotify_8php_a0e0acdaba873317ec0dfd683a0662d83}} 
+\index{inotify.php@{inotify.php}!IN\_IGNORED@{IN\_IGNORED}}
+\index{IN\_IGNORED@{IN\_IGNORED}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_IGNORED}{IN\_IGNORED}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+I\+G\+N\+O\+R\+ED = 32768}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a10aeb9e06d25f845f111945681cf2a9b}\label{inotify_8php_a10aeb9e06d25f845f111945681cf2a9b}} 
+\index{inotify.php@{inotify.php}!IN\_ISDIR@{IN\_ISDIR}}
+\index{IN\_ISDIR@{IN\_ISDIR}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_ISDIR}{IN\_ISDIR}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+I\+S\+D\+IR = 1073741824}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a7c52570292e36516ad4c4d65e959904c}\label{inotify_8php_a7c52570292e36516ad4c4d65e959904c}} 
+\index{inotify.php@{inotify.php}!IN\_MASK\_ADD@{IN\_MASK\_ADD}}
+\index{IN\_MASK\_ADD@{IN\_MASK\_ADD}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_MASK\_ADD}{IN\_MASK\_ADD}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+M\+A\+S\+K\+\_\+\+A\+DD = 536870912}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a42d8897f872ac7da06671ce2c7630cc3}\label{inotify_8php_a42d8897f872ac7da06671ce2c7630cc3}} 
+\index{inotify.php@{inotify.php}!IN\_MODIFY@{IN\_MODIFY}}
+\index{IN\_MODIFY@{IN\_MODIFY}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_MODIFY}{IN\_MODIFY}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+M\+O\+D\+I\+FY = 2}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a812028bc81ddfc605f90aa1a69890e81}\label{inotify_8php_a812028bc81ddfc605f90aa1a69890e81}} 
+\index{inotify.php@{inotify.php}!IN\_MOVE@{IN\_MOVE}}
+\index{IN\_MOVE@{IN\_MOVE}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_MOVE}{IN\_MOVE}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+M\+O\+VE = 192}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_aa57282a46511c874b1a3ad45f7e5b98a}\label{inotify_8php_aa57282a46511c874b1a3ad45f7e5b98a}} 
+\index{inotify.php@{inotify.php}!IN\_MOVE\_SELF@{IN\_MOVE\_SELF}}
+\index{IN\_MOVE\_SELF@{IN\_MOVE\_SELF}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_MOVE\_SELF}{IN\_MOVE\_SELF}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+M\+O\+V\+E\+\_\+\+S\+E\+LF = 2048}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a2365497cf4b538003b54c7a2d11081f3}\label{inotify_8php_a2365497cf4b538003b54c7a2d11081f3}} 
+\index{inotify.php@{inotify.php}!IN\_MOVED\_FROM@{IN\_MOVED\_FROM}}
+\index{IN\_MOVED\_FROM@{IN\_MOVED\_FROM}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_MOVED\_FROM}{IN\_MOVED\_FROM}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+M\+O\+V\+E\+D\+\_\+\+F\+R\+OM = 64}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a06c7d1551ae6a0a4094553deb55e76ab}\label{inotify_8php_a06c7d1551ae6a0a4094553deb55e76ab}} 
+\index{inotify.php@{inotify.php}!IN\_MOVED\_TO@{IN\_MOVED\_TO}}
+\index{IN\_MOVED\_TO@{IN\_MOVED\_TO}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_MOVED\_TO}{IN\_MOVED\_TO}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+M\+O\+V\+E\+D\+\_\+\+TO = 128}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_abe5c8fa6ad9082a6dba84eb46ec662d0}\label{inotify_8php_abe5c8fa6ad9082a6dba84eb46ec662d0}} 
+\index{inotify.php@{inotify.php}!IN\_ONESHOT@{IN\_ONESHOT}}
+\index{IN\_ONESHOT@{IN\_ONESHOT}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_ONESHOT}{IN\_ONESHOT}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+O\+N\+E\+S\+H\+OT = 2147483648}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a117874564173b9d10b5eaff159613129}\label{inotify_8php_a117874564173b9d10b5eaff159613129}} 
+\index{inotify.php@{inotify.php}!IN\_ONLYDIR@{IN\_ONLYDIR}}
+\index{IN\_ONLYDIR@{IN\_ONLYDIR}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_ONLYDIR}{IN\_ONLYDIR}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+O\+N\+L\+Y\+D\+IR = 16777216}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a75b3c44e0a7758a5652e28cf4329f4dd}\label{inotify_8php_a75b3c44e0a7758a5652e28cf4329f4dd}} 
+\index{inotify.php@{inotify.php}!IN\_OPEN@{IN\_OPEN}}
+\index{IN\_OPEN@{IN\_OPEN}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_OPEN}{IN\_OPEN}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+O\+P\+EN = 32}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a1cdc1f27311ba6b6ba04a6dbfa1a83e7}\label{inotify_8php_a1cdc1f27311ba6b6ba04a6dbfa1a83e7}} 
+\index{inotify.php@{inotify.php}!IN\_Q\_OVERFLOW@{IN\_Q\_OVERFLOW}}
+\index{IN\_Q\_OVERFLOW@{IN\_Q\_OVERFLOW}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_Q\_OVERFLOW}{IN\_Q\_OVERFLOW}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+Q\+\_\+\+O\+V\+E\+R\+F\+L\+OW = 16384}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}\mbox{\Hypertarget{inotify_8php_a9631ceb98f1344a676475c8528d9d522}\label{inotify_8php_a9631ceb98f1344a676475c8528d9d522}} 
+\index{inotify.php@{inotify.php}!IN\_UNMOUNT@{IN\_UNMOUNT}}
+\index{IN\_UNMOUNT@{IN\_UNMOUNT}!inotify.php@{inotify.php}}
+\doxysubsubsection{\texorpdfstring{IN\_UNMOUNT}{IN\_UNMOUNT}}
+{\footnotesize\ttfamily const I\+N\+\_\+\+U\+N\+M\+O\+U\+NT = 8192}
+
+@type int \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/inotify.\+constants.\+php}}

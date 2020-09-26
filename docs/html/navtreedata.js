@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Safaricom SDP", "index.html", [
+  [ "Safaricom SDP SDK", "index.html", [
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],

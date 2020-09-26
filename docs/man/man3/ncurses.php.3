@@ -1,0 +1,2925 @@
+.TH "vendor/jetbrains/phpstorm-stubs/ncurses/ncurses.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/ncurses/ncurses.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBncurses_addch\fP ($ch)"
+.br
+.ti -1c
+.RI "\fBncurses_color_set\fP ($pair)"
+.br
+.ti -1c
+.RI "\fBncurses_delwin\fP ($window)"
+.br
+.ti -1c
+.RI "\fBncurses_end\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_getch\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_has_colors\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_init\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_init_pair\fP ($pair, $fg, $bg)"
+.br
+.ti -1c
+.RI "\fBncurses_color_content\fP ($color, &$r, &$\fBg\fP, &$\fBb\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_pair_content\fP ($pair, &$f, &$\fBb\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_move\fP ($y, $x)"
+.br
+.ti -1c
+.RI "\fBncurses_newwin\fP ($rows, $cols, $y, $x)"
+.br
+.ti -1c
+.RI "\fBncurses_refresh\fP ($ch)"
+.br
+.ti -1c
+.RI "\fBncurses_start_color\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_standout\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_standend\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_baudrate\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_beep\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_can_change_color\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_cbreak\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_clear\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_clrtobot\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_clrtoeol\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_def_prog_mode\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_reset_prog_mode\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_def_shell_mode\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_reset_shell_mode\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_delch\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_deleteln\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_doupdate\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_echo\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_erase\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_werase\fP ($window)"
+.br
+.ti -1c
+.RI "\fBncurses_erasechar\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_flash\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_flushinp\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_has_ic\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_has_il\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_inch\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_insertln\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_isendwin\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_killchar\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_nl\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_nocbreak\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_noecho\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_nonl\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_noraw\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_raw\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_meta\fP ($window, $bit8)"
+.br
+.ti -1c
+.RI "\fBncurses_resetty\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_savetty\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_termattrs\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_use_default_colors\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_slk_attr\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_slk_clear\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_slk_noutrefresh\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_slk_refresh\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_slk_restore\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_slk_touch\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_attroff\fP ($attributes)"
+.br
+.ti -1c
+.RI "\fBncurses_attron\fP ($attributes)"
+.br
+.ti -1c
+.RI "\fBncurses_attrset\fP ($attributes)"
+.br
+.ti -1c
+.RI "\fBncurses_bkgd\fP ($attrchar)"
+.br
+.ti -1c
+.RI "\fBncurses_curs_set\fP ($visibility)"
+.br
+.ti -1c
+.RI "\fBncurses_delay_output\fP ($milliseconds)"
+.br
+.ti -1c
+.RI "\fBncurses_echochar\fP ($character)"
+.br
+.ti -1c
+.RI "\fBncurses_halfdelay\fP ($tenth)"
+.br
+.ti -1c
+.RI "\fBncurses_has_key\fP ($keycode)"
+.br
+.ti -1c
+.RI "\fBncurses_insch\fP ($character)"
+.br
+.ti -1c
+.RI "\fBncurses_insdelln\fP ($\fBcount\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_mouseinterval\fP ($milliseconds)"
+.br
+.ti -1c
+.RI "\fBncurses_napms\fP ($milliseconds)"
+.br
+.ti -1c
+.RI "\fBncurses_scrl\fP ($\fBcount\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_slk_attroff\fP ($intarg)"
+.br
+.ti -1c
+.RI "\fBncurses_slk_attron\fP ($intarg)"
+.br
+.ti -1c
+.RI "\fBncurses_slk_attrset\fP ($intarg)"
+.br
+.ti -1c
+.RI "\fBncurses_slk_color\fP ($intarg)"
+.br
+.ti -1c
+.RI "\fBncurses_slk_init\fP ($format)"
+.br
+.ti -1c
+.RI "\fBncurses_slk_set\fP ($labelnr, $label, $format)"
+.br
+.ti -1c
+.RI "\fBncurses_typeahead\fP ($fd)"
+.br
+.ti -1c
+.RI "\fBncurses_ungetch\fP ($keycode)"
+.br
+.ti -1c
+.RI "\fBncurses_vidattr\fP ($intarg)"
+.br
+.ti -1c
+.RI "\fBncurses_wrefresh\fP ($window)"
+.br
+.ti -1c
+.RI "\fBncurses_use_extended_names\fP ($flag)"
+.br
+.ti -1c
+.RI "\fBncurses_bkgdset\fP ($attrchar)"
+.br
+.ti -1c
+.RI "\fBncurses_filter\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_noqiflush\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_qiflush\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_timeout\fP ($millisec)"
+.br
+.ti -1c
+.RI "\fBncurses_use_env\fP ($flag)"
+.br
+.ti -1c
+.RI "\fBncurses_addstr\fP ($text)"
+.br
+.ti -1c
+.RI "\fBncurses_putp\fP ($text)"
+.br
+.ti -1c
+.RI "\fBncurses_scr_dump\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBncurses_scr_init\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBncurses_scr_restore\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBncurses_scr_set\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBncurses_mvaddch\fP ($y, $x, $\fBc\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_mvaddchnstr\fP ($y, $x, $s, $\fBn\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_addchnstr\fP ($s, $\fBn\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_mvaddchstr\fP ($y, $x, $s)"
+.br
+.ti -1c
+.RI "\fBncurses_addchstr\fP ($s)"
+.br
+.ti -1c
+.RI "\fBncurses_mvaddnstr\fP ($y, $x, $s, $\fBn\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_addnstr\fP ($s, $\fBn\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_mvaddstr\fP ($y, $x, $s)"
+.br
+.ti -1c
+.RI "\fBncurses_mvdelch\fP ($y, $x)"
+.br
+.ti -1c
+.RI "\fBncurses_mvgetch\fP ($y, $x)"
+.br
+.ti -1c
+.RI "\fBncurses_mvinch\fP ($y, $x)"
+.br
+.ti -1c
+.RI "\fBncurses_mvwaddstr\fP ($window, $y, $x, $text)"
+.br
+.ti -1c
+.RI "\fBncurses_insstr\fP ($text)"
+.br
+.ti -1c
+.RI "\fBncurses_instr\fP (&$buffer)"
+.br
+.ti -1c
+.RI "\fBncurses_mvhline\fP ($y, $x, $attrchar, $\fBn\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_mvcur\fP ($old_y, $old_x, $new_y, $new_x)"
+.br
+.ti -1c
+.RI "\fBncurses_init_color\fP ($color, $r, $\fBg\fP, $\fBb\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_border\fP ($left, $right, $top, $bottom, $tl_corner, $tr_corner, $bl_corner, $br_corner)"
+.br
+.ti -1c
+.RI "\fBncurses_assume_default_colors\fP ($fg, $bg)"
+.br
+.ti -1c
+.RI "\fBncurses_define_key\fP ($definition, $keycode)"
+.br
+.ti -1c
+.RI "\fBncurses_hline\fP ($charattr, $\fBn\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_vline\fP ($charattr, $\fBn\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_keyok\fP ($keycode, $enable)"
+.br
+.ti -1c
+.RI "\fBncurses_termname\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_longname\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_mousemask\fP ($newmask, &$oldmask)"
+.br
+.ti -1c
+.RI "\fBncurses_getmouse\fP (array &$mevent)"
+.br
+.ti -1c
+.RI "\fBncurses_ungetmouse\fP (array $mevent)"
+.br
+.ti -1c
+.RI "\fBncurses_mouse_trafo\fP (&$y, &$x, $toscreen)"
+.br
+.ti -1c
+.RI "\fBncurses_wmouse_trafo\fP ($window, &$y, &$x, $toscreen)"
+.br
+.ti -1c
+.RI "\fBncurses_waddstr\fP ($window, $str, $\fBn\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_wnoutrefresh\fP ($window)"
+.br
+.ti -1c
+.RI "\fBncurses_wclear\fP ($window)"
+.br
+.ti -1c
+.RI "\fBncurses_wcolor_set\fP ($window, $color_pair)"
+.br
+.ti -1c
+.RI "\fBncurses_wgetch\fP ($window)"
+.br
+.ti -1c
+.RI "\fBncurses_keypad\fP ($window, $bf)"
+.br
+.ti -1c
+.RI "\fBncurses_wmove\fP ($window, $y, $x)"
+.br
+.ti -1c
+.RI "\fBncurses_newpad\fP ($rows, $cols)"
+.br
+.ti -1c
+.RI "\fBncurses_prefresh\fP ($pad, $pminrow, $pmincol, $sminrow, $smincol, $smaxrow, $smaxcol)"
+.br
+.ti -1c
+.RI "\fBncurses_pnoutrefresh\fP ($pad, $pminrow, $pmincol, $sminrow, $smincol, $smaxrow, $smaxcol)"
+.br
+.ti -1c
+.RI "\fBncurses_wstandout\fP ($window)"
+.br
+.ti -1c
+.RI "\fBncurses_wstandend\fP ($window)"
+.br
+.ti -1c
+.RI "\fBncurses_wattrset\fP ($window, $attrs)"
+.br
+.ti -1c
+.RI "\fBncurses_wattron\fP ($window, $attrs)"
+.br
+.ti -1c
+.RI "\fBncurses_wattroff\fP ($window, $attrs)"
+.br
+.ti -1c
+.RI "\fBncurses_waddch\fP ($window, $ch)"
+.br
+.ti -1c
+.RI "\fBncurses_wborder\fP ($window, $left, $right, $top, $bottom, $tl_corner, $tr_corner, $bl_corner, $br_corner)"
+.br
+.ti -1c
+.RI "\fBncurses_whline\fP ($window, $charattr, $\fBn\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_wvline\fP ($window, $charattr, $\fBn\fP)"
+.br
+.ti -1c
+.RI "\fBncurses_getyx\fP ($window, &$y, &$x)"
+.br
+.ti -1c
+.RI "\fBncurses_getmaxyx\fP ($window, &$y, &$x)"
+.br
+.ti -1c
+.RI "\fBncurses_update_panels\fP ()"
+.br
+.ti -1c
+.RI "\fBncurses_panel_window\fP ($panel)"
+.br
+.ti -1c
+.RI "\fBncurses_panel_below\fP ($panel)"
+.br
+.ti -1c
+.RI "\fBncurses_panel_above\fP ($panel)"
+.br
+.ti -1c
+.RI "\fBncurses_replace_panel\fP ($panel, $window)"
+.br
+.ti -1c
+.RI "\fBncurses_move_panel\fP ($panel, $startx, $starty)"
+.br
+.ti -1c
+.RI "\fBncurses_bottom_panel\fP ($panel)"
+.br
+.ti -1c
+.RI "\fBncurses_top_panel\fP ($panel)"
+.br
+.ti -1c
+.RI "\fBncurses_show_panel\fP ($panel)"
+.br
+.ti -1c
+.RI "\fBncurses_hide_panel\fP ($panel)"
+.br
+.ti -1c
+.RI "\fBncurses_del_panel\fP ($panel)"
+.br
+.ti -1c
+.RI "\fBncurses_new_panel\fP ($window)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBNCURSES_COLOR_BLACK\fP 0"
+.br
+.ti -1c
+.RI "const \fBNCURSES_COLOR_RED\fP 1"
+.br
+.ti -1c
+.RI "const \fBNCURSES_COLOR_GREEN\fP 2"
+.br
+.ti -1c
+.RI "const \fBNCURSES_COLOR_YELLOW\fP 3"
+.br
+.ti -1c
+.RI "const \fBNCURSES_COLOR_BLUE\fP 4"
+.br
+.ti -1c
+.RI "const \fBNCURSES_COLOR_MAGENTA\fP 5"
+.br
+.ti -1c
+.RI "const \fBNCURSES_COLOR_CYAN\fP 6"
+.br
+.ti -1c
+.RI "const \fBNCURSES_COLOR_WHITE\fP 7"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_DOWN\fP 258"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_UP\fP 259"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_LEFT\fP 260"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_RIGHT\fP 261"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_HOME\fP 262"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_END\fP 360"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_BACKSPACE\fP 263"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_MOUSE\fP 409"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_F0\fP 264"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_F1\fP 265"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_F2\fP 266"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_F3\fP 267"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_F4\fP 268"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_F5\fP 269"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_F6\fP 270"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_F7\fP 271"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_F8\fP 272"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_F9\fP 273"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_F10\fP 274"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_F11\fP 275"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_F12\fP 276"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_DL\fP 328"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_IL\fP 329"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_DC\fP 330"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_IC\fP 331"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_EIC\fP 332"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_CLEAR\fP 333"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_EOS\fP 334"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_EOL\fP 335"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SF\fP 336"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SR\fP 337"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_NPAGE\fP 338"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_PPAGE\fP 339"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_STAB\fP 340"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_CTAB\fP 341"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_CATAB\fP 342"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_ENTER\fP 343"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SRESET\fP 344"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_RESET\fP 345"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_PRINT\fP 346"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_LL\fP 347"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_A1\fP 348"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_A3\fP 349"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_B2\fP 350"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_C1\fP 351"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_C3\fP 352"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_BTAB\fP 353"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_BEG\fP 354"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_CANCEL\fP 355"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_CLOSE\fP 356"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_COMMAND\fP 357"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_COPY\fP 358"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_CREATE\fP 359"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_EXIT\fP 361"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_FIND\fP 362"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_HELP\fP 363"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_MARK\fP 364"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_MESSAGE\fP 365"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_MOVE\fP 366"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_NEXT\fP 367"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_OPEN\fP 368"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_OPTIONS\fP 369"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_PREVIOUS\fP 370"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_REDO\fP 371"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_REFERENCE\fP 372"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_REFRESH\fP 373"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_REPLACE\fP 374"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_RESTART\fP 375"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_RESUME\fP 376"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SAVE\fP 377"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SBEG\fP 378"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SCANCEL\fP 379"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SCOMMAND\fP 380"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SCOPY\fP 381"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SCREATE\fP 382"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SDC\fP 383"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SDL\fP 384"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SELECT\fP 385"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SEND\fP 386"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SEOL\fP 387"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SEXIT\fP 388"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SFIND\fP 389"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SHELP\fP 390"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SHOME\fP 391"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SIC\fP 392"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SLEFT\fP 393"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SMESSAGE\fP 394"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SMOVE\fP 395"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SNEXT\fP 396"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SOPTIONS\fP 397"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SPREVIOUS\fP 398"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SPRINT\fP 399"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SREDO\fP 400"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SREPLACE\fP 401"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SRIGHT\fP 402"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SRSUME\fP 403"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SSAVE\fP 404"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SSUSPEND\fP 405"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SUNDO\fP 406"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_SUSPEND\fP 407"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_UNDO\fP 408"
+.br
+.ti -1c
+.RI "const \fBNCURSES_KEY_RESIZE\fP 410"
+.br
+.ti -1c
+.RI "const \fBNCURSES_A_NORMAL\fP 0"
+.br
+.ti -1c
+.RI "const \fBNCURSES_A_STANDOUT\fP 65536"
+.br
+.ti -1c
+.RI "const \fBNCURSES_A_UNDERLINE\fP 131072"
+.br
+.ti -1c
+.RI "const \fBNCURSES_A_REVERSE\fP 262144"
+.br
+.ti -1c
+.RI "const \fBNCURSES_A_BLINK\fP 524288"
+.br
+.ti -1c
+.RI "const \fBNCURSES_A_DIM\fP 1048576"
+.br
+.ti -1c
+.RI "const \fBNCURSES_A_BOLD\fP 2097152"
+.br
+.ti -1c
+.RI "const \fBNCURSES_A_PROTECT\fP 16777216"
+.br
+.ti -1c
+.RI "const \fBNCURSES_A_INVIS\fP 8388608"
+.br
+.ti -1c
+.RI "const \fBNCURSES_A_ALTCHARSET\fP 4194304"
+.br
+.ti -1c
+.RI "const \fBNCURSES_A_CHARTEXT\fP 255"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON1_PRESSED\fP 2"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON1_RELEASED\fP 1"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON1_CLICKED\fP 4"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON1_DOUBLE_CLICKED\fP 8"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON1_TRIPLE_CLICKED\fP 16"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON2_PRESSED\fP 128"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON2_RELEASED\fP 64"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON2_CLICKED\fP 256"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON2_DOUBLE_CLICKED\fP 512"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON2_TRIPLE_CLICKED\fP 1024"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON3_PRESSED\fP 8192"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON3_RELEASED\fP 4096"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON3_CLICKED\fP 16384"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON3_DOUBLE_CLICKED\fP 32768"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON3_TRIPLE_CLICKED\fP 65536"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON4_PRESSED\fP 524288"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON4_RELEASED\fP 262144"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON4_CLICKED\fP 1048576"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON4_DOUBLE_CLICKED\fP 2097152"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON4_TRIPLE_CLICKED\fP 4194304"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON_SHIFT\fP 33554432"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON_CTRL\fP 16777216"
+.br
+.ti -1c
+.RI "const \fBNCURSES_BUTTON_ALT\fP 67108864"
+.br
+.ti -1c
+.RI "const \fBNCURSES_ALL_MOUSE_EVENTS\fP 134217727"
+.br
+.ti -1c
+.RI "const \fBNCURSES_REPORT_MOUSE_POSITION\fP 134217728"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "ncurses_addch ( $ch)"
+Add character at current position and advance cursor \fB$ch int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_addchnstr ( $s,  $n)"
+Add attributed string with specified length at current position \fB$s string \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$n\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_addchstr ( $s)"
+Add attributed string at current position \fB$s string \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_addnstr ( $s,  $n)"
+Add string with specified length at current position \fB$s string \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$n\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_addstr ( $text)"
+Output text at current position \fB$text string \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_assume_default_colors ( $fg,  $bg)"
+Define default colors for color 0 \fB$fg int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bg\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_attroff ( $attributes)"
+Turn off the given attributes \fB$attributes int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_attron ( $attributes)"
+Turn on the given attributes \fB$attributes int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_attrset ( $attributes)"
+Set given attributes \fB$attributes int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_baudrate ()"
+Returns baudrate of terminal \fBint \fP
+.SS "ncurses_beep ()"
+Let the terminal beep \fBint \fP
+.SS "ncurses_bkgd ( $attrchar)"
+Set background property for terminal screen \fB$attrchar int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_bkgdset ( $attrchar)"
+Control screen background \fB$attrchar int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "ncurses_border ( $left,  $right,  $top,  $bottom,  $tl_corner,  $tr_corner,  $bl_corner,  $br_corner)"
+Draw a border around the screen using attributed characters \fB$left int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$right\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$top\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bottom\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tl_corner\fP int 
+.RE
+.PP
+Top left corner 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tr_corner\fP int 
+.RE
+.PP
+Top right corner 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bl_corner\fP int 
+.RE
+.PP
+Bottom left corner 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$br_corner\fP int 
+.RE
+.PP
+Bottom right corner 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_bottom_panel ( $panel)"
+Moves a visible panel to the bottom of the stack \fB$panel resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_can_change_color ()"
+Check if we can change terminals colors \fBbool Return true if the terminal has color capabilities and you can change the colors, false otherwise\&. \fP 
+.SS "ncurses_cbreak ()"
+Switch of input buffering \fBbool true or NCURSES_ERR if any error occurred\&. \fP 
+.SS "ncurses_clear ()"
+Clear screen \fBbool &return\&.success; \fP 
+.SS "ncurses_clrtobot ()"
+Clear screen from current position to bottom \fBbool &return\&.success; \fP 
+.SS "ncurses_clrtoeol ()"
+Clear screen from current position to end of line \fBbool &return\&.success; \fP 
+.SS "ncurses_color_content ( $color, & $r, & $g, & $b)"
+Gets the RGB value for color \fB$color int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$r\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$g\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$b\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_color_set ( $pair)"
+Set fore- and background color \fB$pair int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_curs_set ( $visibility)"
+Set cursor state \fB$visibility int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_def_prog_mode ()"
+Saves terminals (program) mode \fBbool false on success, otherwise true\&. \fP 
+.SS "ncurses_def_shell_mode ()"
+Saves terminals (shell) mode \fBbool false on success, true otherwise\&. \fP 
+.SS "ncurses_define_key ( $definition,  $keycode)"
+Define a keycode \fB$definition string \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$keycode\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_del_panel ( $panel)"
+Remove panel from the stack and delete it (but not the associated window) \fB$panel resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "ncurses_delay_output ( $milliseconds)"
+Delay output on terminal using padding characters \fB$milliseconds int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_delch ()"
+Delete character at current position, move rest of line left \fBbool false on success, true otherwise\&. \fP 
+.SS "ncurses_deleteln ()"
+Delete line at current position, move rest of screen up \fBbool false on success, otherwise true\&. \fP 
+.SS "ncurses_delwin ( $window)"
+Delete a ncurses window \fB$window resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "ncurses_doupdate ()"
+Write all prepared refreshes to terminal \fBbool &return\&.success; \fP 
+.SS "ncurses_echo ()"
+Activate keyboard input echo \fBbool false on success, true if any error occurred\&. \fP 
+.SS "ncurses_echochar ( $character)"
+Single character output including refresh \fB$character int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_end ()"
+Stop using ncurses, clean up the screen \fBint \fP
+.SS "ncurses_erase ()"
+Erase terminal screen \fBbool &return\&.success; \fP 
+.SS "ncurses_erasechar ()"
+Returns current erase character \fBstring The current erase char, as a string\&. \fP 
+.SS "ncurses_filter ()"
+Set LINES for iniscr() and newterm() to 1 \fBvoid \fP
+.SS "ncurses_flash ()"
+Flash terminal screen (visual bell) \fBbool false on success, otherwise true\&. \fP 
+.SS "ncurses_flushinp ()"
+Flush keyboard input buffer \fBbool false on success, otherwise true\&. \fP 
+.SS "ncurses_getch ()"
+Read a character from keyboard \fBint \fP
+.SS "ncurses_getmaxyx ( $window, & $y, & $x)"
+Returns the size of a window \fB$window resource \fP The measured window 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP int 
+.RE
+.PP
+This will be set to the window height 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+This will be set to the window width 
+.PP
+\fBReturns\fP
+.RS 4
+void &return\&.void; 
+.RE
+.PP
+
+.SS "ncurses_getmouse (array & $mevent)"
+Reads mouse event \fB$mevent array \fP \fBEvent\fP options will be delivered in this parameter which has to be an array, passed by reference (see example below)\&. 
+.PP
+On success an associative array with following keys will be delivered: 
+.PP
+'id' : Id to distinguish multiple devices 
+.PP
+\fBReturns\fP
+.RS 4
+bool false if a mouse event is actually visible in the given window, otherwise returns true\&. 
+.RE
+.PP
+
+.SS "ncurses_getyx ( $window, & $y, & $x)"
+Returns the current cursor position for a window \fB$window resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "ncurses_halfdelay ( $tenth)"
+Put terminal into halfdelay mode \fB$tenth int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_has_colors ()"
+Check if terminal has colors \fBbool Return true if the terminal has color capacities, false otherwise\&. \fP 
+.SS "ncurses_has_ic ()"
+Check for insert- and delete-capabilities \fBbool true if the terminal has insert/delete-capabilities, false otherwise\&. \fP 
+.SS "ncurses_has_il ()"
+Check for line insert- and delete-capabilities \fBbool true if the terminal has insert/delete-line capabilities, false otherwise\&. \fP 
+.SS "ncurses_has_key ( $keycode)"
+Check for presence of a function key on terminal keyboard \fB$keycode int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_hide_panel ( $panel)"
+Remove panel from the stack, making it invisible \fB$panel resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_hline ( $charattr,  $n)"
+Draw a horizontal line at current position using an attributed character and max\&. n characters long \fB$charattr int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$n\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_inch ()"
+Get character and attribute at current position \fBstring the character, as a string\&. \fP 
+.SS "ncurses_init ()"
+Initialize ncurses \fBvoid &return\&.void; \fP 
+.SS "ncurses_init_color ( $color,  $r,  $g,  $b)"
+Set new RGB value for color \fB$color int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$r\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$g\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$b\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_init_pair ( $pair,  $fg,  $bg)"
+Allocate a color pair \fB$pair int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fg\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bg\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_insch ( $character)"
+Insert character moving rest of line including character at current position \fB$character int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_insdelln ( $count)"
+Insert lines before current line scrolling down (negative numbers delete and scroll up) \fB$count int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_insertln ()"
+Insert a line, move rest of screen down \fBint \fP
+.SS "ncurses_insstr ( $text)"
+Insert string at current position, moving rest of line right \fB$text string \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_instr (& $buffer)"
+Reads string from terminal screen \fB$buffer string \fP The characters\&. Attributes will be stripped\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of characters\&. 
+.RE
+.PP
+
+.SS "ncurses_isendwin ()"
+Ncurses is in endwin mode, normal screen output may be performed \fBbool true, if ncurses_endwin has been called without any subsequent calls to ncurses_wrefresh, false otherwise\&. \fP 
+.SS "ncurses_keyok ( $keycode,  $enable)"
+Enable or disable a keycode \fB$keycode int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$enable\fP bool 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_keypad ( $window,  $bf)"
+Turns keypad on or off \fB$window resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bf\fP bool 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_killchar ()"
+Returns current line kill character \fBstring the kill character, as a string\&. \fP 
+.SS "ncurses_longname ()"
+Returns terminals description \fBstring the description, as a string truncated to 128 characters\&. On errors, returns \&. \fP 
+.SS "ncurses_meta ( $window,  $bit8)"
+Enables/Disable 8-bit meta key information \fB$window resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bit8\fP bool 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_mouse_trafo (& $y, & $x,  $toscreen)"
+Transforms coordinates \fB$y int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$toscreen\fP bool 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "ncurses_mouseinterval ( $milliseconds)"
+Set timeout for mouse button clicks \fB$milliseconds int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_mousemask ( $newmask, & $oldmask)"
+Sets mouse options \fB$newmask int \fP Mouse mask options can be set with the following predefined constants: 
+.PP
+NCURSES_BUTTON1_PRESSED
+.PP
+\fBParameters\fP
+.RS 4
+\fI$oldmask\fP int 
+.RE
+.PP
+This will be set to the previous value of the mouse event mask\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int a mask to indicated which of the in parameter newmask specified mouse events can be reported\&. On complete failure, it returns 0\&. 
+.RE
+.PP
+
+.SS "ncurses_move ( $y,  $x)"
+Move output position \fB$y int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_move_panel ( $panel,  $startx,  $starty)"
+Moves a panel so that its upper-left corner is at [startx, starty] \fB$panel resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$startx\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$starty\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_mvaddch ( $y,  $x,  $c)"
+Move current position and add character \fB$y int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$c\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_mvaddchnstr ( $y,  $x,  $s,  $n)"
+Move position and add attributed string with specified length \fB$y int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$s\fP string 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$n\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_mvaddchstr ( $y,  $x,  $s)"
+Move position and add attributed string \fB$y int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$s\fP string 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_mvaddnstr ( $y,  $x,  $s,  $n)"
+Move position and add string with specified length \fB$y int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$s\fP string 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$n\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_mvaddstr ( $y,  $x,  $s)"
+Move position and add string \fB$y int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$s\fP string 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_mvcur ( $old_y,  $old_x,  $new_y,  $new_x)"
+Move cursor immediately \fB$old_y int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$old_x\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$new_y\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$new_x\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_mvdelch ( $y,  $x)"
+Move position and delete character, shift rest of line left \fB$y int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_mvgetch ( $y,  $x)"
+Move position and get character at new position \fB$y int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_mvhline ( $y,  $x,  $attrchar,  $n)"
+Set new position and draw a horizontal line using an attributed character and max\&. n characters long \fB$y int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$attrchar\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$n\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_mvinch ( $y,  $x)"
+Move position and get attributed character at new position \fB$y int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_mvwaddstr ( $window,  $y,  $x,  $text)"
+Add string at new position in window \fB$window resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$text\fP string 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_napms ( $milliseconds)"
+Sleep \fB$milliseconds int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_new_panel ( $window)"
+Create a new panel and associate it with window \fB$window resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "ncurses_newpad ( $rows,  $cols)"
+Creates a new pad (window) \fB$rows int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cols\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "ncurses_newwin ( $rows,  $cols,  $y,  $x)"
+Create a new window \fB$rows int \fP Number of rows 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cols\fP int 
+.RE
+.PP
+Number of columns 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP int 
+.RE
+.PP
+y-ccordinate of the origin 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+x-ccordinate of the origin 
+.PP
+\fBReturns\fP
+.RS 4
+resource a resource ID for the new window\&. 
+.RE
+.PP
+
+.SS "ncurses_nl ()"
+Translate newline and carriage return / line feed \fBbool \fP
+.SS "ncurses_nocbreak ()"
+Switch terminal to cooked mode \fBbool true if any error occurred, otherwise false\&. \fP 
+.SS "ncurses_noecho ()"
+Switch off keyboard input echo \fBbool true if any error occurred, false otherwise\&. \fP 
+.SS "ncurses_nonl ()"
+Do not translate newline and carriage return / line feed \fBbool \fP
+.SS "ncurses_noqiflush ()"
+Do not flush on signal characters \fBvoid \fP
+.SS "ncurses_noraw ()"
+Switch terminal out of raw mode \fBbool true if any error occurred, otherwise false\&. \fP 
+.SS "ncurses_pair_content ( $pair, & $f, & $b)"
+Gets the RGB value for color \fB$pair int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$f\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$b\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_panel_above ( $panel)"
+Returns the panel above panel \fB$panel resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+resource If panel is null, returns the bottom panel in the stack\&. 
+.RE
+.PP
+
+.SS "ncurses_panel_below ( $panel)"
+Returns the panel below panel \fB$panel resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "ncurses_panel_window ( $panel)"
+Returns the window associated with panel \fB$panel resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "ncurses_pnoutrefresh ( $pad,  $pminrow,  $pmincol,  $sminrow,  $smincol,  $smaxrow,  $smaxcol)"
+Copies a region from a pad into the virtual screen \fB$pad resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pminrow\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pmincol\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sminrow\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$smincol\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$smaxrow\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$smaxcol\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_prefresh ( $pad,  $pminrow,  $pmincol,  $sminrow,  $smincol,  $smaxrow,  $smaxcol)"
+Copies a region from a pad into the virtual screen \fB$pad resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pminrow\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pmincol\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sminrow\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$smincol\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$smaxrow\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$smaxcol\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_putp ( $text)"
+Apply padding information to the string and output it \fB$text string \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_qiflush ()"
+Flush on signal characters \fBvoid \fP
+.SS "ncurses_raw ()"
+Switch terminal into raw mode \fBbool true if any error occurred, otherwise false\&. \fP 
+.SS "ncurses_refresh ( $ch)"
+Refresh screen \fB$ch int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_replace_panel ( $panel,  $window)"
+Replaces the window associated with panel \fB$panel resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$window\fP resource 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_reset_prog_mode ()"
+Resets the prog mode saved by def_prog_mode \fBint \fP
+.SS "ncurses_reset_shell_mode ()"
+Resets the shell mode saved by def_shell_mode \fBint \fP
+.SS "ncurses_resetty ()"
+Restores saved terminal state \fBbool Always returns false\&. \fP 
+.SS "ncurses_savetty ()"
+Saves terminal state \fBbool Always returns false\&. \fP 
+.SS "ncurses_scr_dump ( $filename)"
+Dump screen content to file \fB$filename string \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_scr_init ( $filename)"
+Initialize screen from file dump \fB$filename string \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_scr_restore ( $filename)"
+Restore screen from file dump \fB$filename string \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_scr_set ( $filename)"
+Inherit screen from file dump \fB$filename string \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_scrl ( $count)"
+Scroll window content up or down without changing current position \fB$count int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_show_panel ( $panel)"
+Places an invisible panel on top of the stack, making it visible \fB$panel resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_slk_attr ()"
+Returns current soft label key attribute \fBint The attribute, as an integer\&. \fP 
+.SS "ncurses_slk_attroff ( $intarg)"
+Turn off the given attributes for soft function-key labels \fB$intarg int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_slk_attron ( $intarg)"
+Turn on the given attributes for soft function-key labels \fB$intarg int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_slk_attrset ( $intarg)"
+Set given attributes for soft function-key labels \fB$intarg int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_slk_clear ()"
+Clears soft labels from screen \fBbool true on errors, false otherwise\&. \fP 
+.SS "ncurses_slk_color ( $intarg)"
+Sets color for soft label keys \fB$intarg int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_slk_init ( $format)"
+Initializes soft label key functions \fB$format int \fP If ncurses_initscr eventually uses a line from stdscr to emulate the soft labels, then this parameter determines how the labels are arranged of the screen\&. 
+.PP
+0 indicates a 3-2-3 arrangement of the labels, 1 indicates a 4-4 arrangement and 2 indicates the PC like 4-4-4 mode, but in addition an index line will be created\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool &return\&.success; 
+.RE
+.PP
+
+.SS "ncurses_slk_noutrefresh ()"
+Copies soft label keys to virtual screen \fBbool \fP
+.SS "ncurses_slk_refresh ()"
+Copies soft label keys to screen \fBint \fP
+.SS "ncurses_slk_restore ()"
+Restores soft label keys \fBint \fP
+.SS "ncurses_slk_set ( $labelnr,  $label,  $format)"
+Sets function key labels \fB$labelnr int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$label\fP string 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$format\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "ncurses_slk_touch ()"
+Forces output when ncurses_slk_noutrefresh is performed \fBint \fP
+.SS "ncurses_standend ()"
+Stop using 'standout' attribute \fBint \fP
+.SS "ncurses_standout ()"
+Start using 'standout' attribute \fBint \fP
+.SS "ncurses_start_color ()"
+Start using colors \fBint \fP
+.SS "ncurses_termattrs ()"
+Returns a logical OR of all attribute flags supported by terminal \fBbool \fP
+.SS "ncurses_termname ()"
+Returns terminals (short)-name \fBstring the shortname of the terminal, truncated to 14 characters\&. On errors, returns \&. \fP 
+.SS "ncurses_timeout ( $millisec)"
+Set timeout for special key sequences \fB$millisec int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "ncurses_top_panel ( $panel)"
+Moves a visible panel to the top of the stack \fB$panel resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_typeahead ( $fd)"
+Specify different filedescriptor for typeahead checking \fB$fd int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_ungetch ( $keycode)"
+Put a character back into the input stream \fB$keycode int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_ungetmouse (array $mevent)"
+Pushes mouse event to queue \fB$mevent array \fP An associative array specifying the event options: 
+.PP
+'id' : Id to distinguish multiple devices
+.PP
+\fBReturns\fP
+.RS 4
+bool false on success, true otherwise\&. 
+.RE
+.PP
+
+.SS "ncurses_update_panels ()"
+Refreshes the virtual screen to reflect the relations between panels in the stack \fBvoid \fP
+.SS "ncurses_use_default_colors ()"
+Assign terminal default colors to color id -1 \fBbool \fP
+.SS "ncurses_use_env ( $flag)"
+Control use of environment information about terminal size \fB$flag bool \fP 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "ncurses_use_extended_names ( $flag)"
+Control use of extended names in terminfo descriptions \fB$flag bool \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_vidattr ( $intarg)"
+Display the string on the terminal in the video attribute mode \fB$intarg int \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_vline ( $charattr,  $n)"
+Draw a vertical line at current position using an attributed character and max\&. n characters long \fB$charattr int \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$n\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_waddch ( $window,  $ch)"
+Adds character at current position in a window and advance cursor \fB$window resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ch\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_waddstr ( $window,  $str,  $n = \fC\fBnull\fP\fP)"
+Outputs text at current postion in window \fB$window resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$str\fP string 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$n\fP int[optional] 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_wattroff ( $window,  $attrs)"
+Turns off attributes for a window \fB$window resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$attrs\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_wattron ( $window,  $attrs)"
+Turns on attributes for a window \fB$window resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$attrs\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_wattrset ( $window,  $attrs)"
+Set the attributes for a window \fB$window resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$attrs\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_wborder ( $window,  $left,  $right,  $top,  $bottom,  $tl_corner,  $tr_corner,  $bl_corner,  $br_corner)"
+Draws a border around the window using attributed characters \fB$window resource \fP The window on which we operate 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$left\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$right\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$top\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bottom\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tl_corner\fP int 
+.RE
+.PP
+Top left corner 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tr_corner\fP int 
+.RE
+.PP
+Top right corner 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$bl_corner\fP int 
+.RE
+.PP
+Bottom left corner 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$br_corner\fP int 
+.RE
+.PP
+Bottom right corner 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_wclear ( $window)"
+Clears window \fB$window resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_wcolor_set ( $window,  $color_pair)"
+Sets windows color pairings \fB$window resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$color_pair\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_werase ( $window)"
+Erase window contents \fB$window resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_wgetch ( $window)"
+Reads a character from keyboard (window) \fB$window resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_whline ( $window,  $charattr,  $n)"
+Draws a horizontal line in a window at current position using an attributed character and max\&. n characters long \fB$window resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charattr\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$n\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_wmouse_trafo ( $window, & $y, & $x,  $toscreen)"
+Transforms window/stdscr coordinates \fB$window resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$toscreen\fP bool 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "ncurses_wmove ( $window,  $y,  $x)"
+Moves windows output position \fB$window resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$y\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_wnoutrefresh ( $window)"
+Copies window to virtual screen \fB$window resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_wrefresh ( $window)"
+Refresh window on terminal screen \fB$window resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_wstandend ( $window)"
+End standout mode for a window \fB$window resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_wstandout ( $window)"
+Enter standout mode for a window \fB$window resource \fP 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "ncurses_wvline ( $window,  $charattr,  $n)"
+Draws a vertical line in a window at current position using an attributed character and max\&. n characters long \fB$window resource \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charattr\fP int 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$n\fP int 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const NCURSES_A_ALTCHARSET 4194304"
+
+.SS "const NCURSES_A_BLINK 524288"
+
+.SS "const NCURSES_A_BOLD 2097152"
+
+.SS "const NCURSES_A_CHARTEXT 255"
+
+.SS "const NCURSES_A_DIM 1048576"
+
+.SS "const NCURSES_A_INVIS 8388608"
+
+.SS "const NCURSES_A_NORMAL 0"
+
+.SS "const NCURSES_A_PROTECT 16777216"
+
+.SS "const NCURSES_A_REVERSE 262144"
+
+.SS "const NCURSES_A_STANDOUT 65536"
+
+.SS "const NCURSES_A_UNDERLINE 131072"
+
+.SS "const NCURSES_ALL_MOUSE_EVENTS 134217727"
+
+.SS "const NCURSES_BUTTON1_CLICKED 4"
+
+.SS "const NCURSES_BUTTON1_DOUBLE_CLICKED 8"
+
+.SS "const NCURSES_BUTTON1_PRESSED 2"
+
+.SS "const NCURSES_BUTTON1_RELEASED 1"
+
+.SS "const NCURSES_BUTTON1_TRIPLE_CLICKED 16"
+
+.SS "const NCURSES_BUTTON2_CLICKED 256"
+
+.SS "const NCURSES_BUTTON2_DOUBLE_CLICKED 512"
+
+.SS "const NCURSES_BUTTON2_PRESSED 128"
+
+.SS "const NCURSES_BUTTON2_RELEASED 64"
+
+.SS "const NCURSES_BUTTON2_TRIPLE_CLICKED 1024"
+
+.SS "const NCURSES_BUTTON3_CLICKED 16384"
+
+.SS "const NCURSES_BUTTON3_DOUBLE_CLICKED 32768"
+
+.SS "const NCURSES_BUTTON3_PRESSED 8192"
+
+.SS "const NCURSES_BUTTON3_RELEASED 4096"
+
+.SS "const NCURSES_BUTTON3_TRIPLE_CLICKED 65536"
+
+.SS "const NCURSES_BUTTON4_CLICKED 1048576"
+
+.SS "const NCURSES_BUTTON4_DOUBLE_CLICKED 2097152"
+
+.SS "const NCURSES_BUTTON4_PRESSED 524288"
+
+.SS "const NCURSES_BUTTON4_RELEASED 262144"
+
+.SS "const NCURSES_BUTTON4_TRIPLE_CLICKED 4194304"
+
+.SS "const NCURSES_BUTTON_ALT 67108864"
+
+.SS "const NCURSES_BUTTON_CTRL 16777216"
+
+.SS "const NCURSES_BUTTON_SHIFT 33554432"
+
+.SS "const NCURSES_COLOR_BLACK 0"
+
+.SS "const NCURSES_COLOR_BLUE 4"
+
+.SS "const NCURSES_COLOR_CYAN 6"
+
+.SS "const NCURSES_COLOR_GREEN 2"
+
+.SS "const NCURSES_COLOR_MAGENTA 5"
+
+.SS "const NCURSES_COLOR_RED 1"
+
+.SS "const NCURSES_COLOR_WHITE 7"
+
+.SS "const NCURSES_COLOR_YELLOW 3"
+
+.SS "const NCURSES_KEY_A1 348"
+
+.SS "const NCURSES_KEY_A3 349"
+
+.SS "const NCURSES_KEY_B2 350"
+
+.SS "const NCURSES_KEY_BACKSPACE 263"
+
+.SS "const NCURSES_KEY_BEG 354"
+
+.SS "const NCURSES_KEY_BTAB 353"
+
+.SS "const NCURSES_KEY_C1 351"
+
+.SS "const NCURSES_KEY_C3 352"
+
+.SS "const NCURSES_KEY_CANCEL 355"
+
+.SS "const NCURSES_KEY_CATAB 342"
+
+.SS "const NCURSES_KEY_CLEAR 333"
+
+.SS "const NCURSES_KEY_CLOSE 356"
+
+.SS "const NCURSES_KEY_COMMAND 357"
+
+.SS "const NCURSES_KEY_COPY 358"
+
+.SS "const NCURSES_KEY_CREATE 359"
+
+.SS "const NCURSES_KEY_CTAB 341"
+
+.SS "const NCURSES_KEY_DC 330"
+
+.SS "const NCURSES_KEY_DL 328"
+
+.SS "const NCURSES_KEY_DOWN 258"
+
+.SS "const NCURSES_KEY_EIC 332"
+
+.SS "const NCURSES_KEY_END 360"
+
+.SS "const NCURSES_KEY_ENTER 343"
+
+.SS "const NCURSES_KEY_EOL 335"
+
+.SS "const NCURSES_KEY_EOS 334"
+
+.SS "const NCURSES_KEY_EXIT 361"
+
+.SS "const NCURSES_KEY_F0 264"
+
+.SS "const NCURSES_KEY_F1 265"
+
+.SS "const NCURSES_KEY_F10 274"
+
+.SS "const NCURSES_KEY_F11 275"
+
+.SS "const NCURSES_KEY_F12 276"
+
+.SS "const NCURSES_KEY_F2 266"
+
+.SS "const NCURSES_KEY_F3 267"
+
+.SS "const NCURSES_KEY_F4 268"
+
+.SS "const NCURSES_KEY_F5 269"
+
+.SS "const NCURSES_KEY_F6 270"
+
+.SS "const NCURSES_KEY_F7 271"
+
+.SS "const NCURSES_KEY_F8 272"
+
+.SS "const NCURSES_KEY_F9 273"
+
+.SS "const NCURSES_KEY_FIND 362"
+
+.SS "const NCURSES_KEY_HELP 363"
+
+.SS "const NCURSES_KEY_HOME 262"
+
+.SS "const NCURSES_KEY_IC 331"
+
+.SS "const NCURSES_KEY_IL 329"
+
+.SS "const NCURSES_KEY_LEFT 260"
+
+.SS "const NCURSES_KEY_LL 347"
+
+.SS "const NCURSES_KEY_MARK 364"
+
+.SS "const NCURSES_KEY_MESSAGE 365"
+
+.SS "const NCURSES_KEY_MOUSE 409"
+
+.SS "const NCURSES_KEY_MOVE 366"
+
+.SS "const NCURSES_KEY_NEXT 367"
+
+.SS "const NCURSES_KEY_NPAGE 338"
+
+.SS "const NCURSES_KEY_OPEN 368"
+
+.SS "const NCURSES_KEY_OPTIONS 369"
+
+.SS "const NCURSES_KEY_PPAGE 339"
+
+.SS "const NCURSES_KEY_PREVIOUS 370"
+
+.SS "const NCURSES_KEY_PRINT 346"
+
+.SS "const NCURSES_KEY_REDO 371"
+
+.SS "const NCURSES_KEY_REFERENCE 372"
+
+.SS "const NCURSES_KEY_REFRESH 373"
+
+.SS "const NCURSES_KEY_REPLACE 374"
+
+.SS "const NCURSES_KEY_RESET 345"
+
+.SS "const NCURSES_KEY_RESIZE 410"
+
+.SS "const NCURSES_KEY_RESTART 375"
+
+.SS "const NCURSES_KEY_RESUME 376"
+
+.SS "const NCURSES_KEY_RIGHT 261"
+
+.SS "const NCURSES_KEY_SAVE 377"
+
+.SS "const NCURSES_KEY_SBEG 378"
+
+.SS "const NCURSES_KEY_SCANCEL 379"
+
+.SS "const NCURSES_KEY_SCOMMAND 380"
+
+.SS "const NCURSES_KEY_SCOPY 381"
+
+.SS "const NCURSES_KEY_SCREATE 382"
+
+.SS "const NCURSES_KEY_SDC 383"
+
+.SS "const NCURSES_KEY_SDL 384"
+
+.SS "const NCURSES_KEY_SELECT 385"
+
+.SS "const NCURSES_KEY_SEND 386"
+
+.SS "const NCURSES_KEY_SEOL 387"
+
+.SS "const NCURSES_KEY_SEXIT 388"
+
+.SS "const NCURSES_KEY_SF 336"
+
+.SS "const NCURSES_KEY_SFIND 389"
+
+.SS "const NCURSES_KEY_SHELP 390"
+
+.SS "const NCURSES_KEY_SHOME 391"
+
+.SS "const NCURSES_KEY_SIC 392"
+
+.SS "const NCURSES_KEY_SLEFT 393"
+
+.SS "const NCURSES_KEY_SMESSAGE 394"
+
+.SS "const NCURSES_KEY_SMOVE 395"
+
+.SS "const NCURSES_KEY_SNEXT 396"
+
+.SS "const NCURSES_KEY_SOPTIONS 397"
+
+.SS "const NCURSES_KEY_SPREVIOUS 398"
+
+.SS "const NCURSES_KEY_SPRINT 399"
+
+.SS "const NCURSES_KEY_SR 337"
+
+.SS "const NCURSES_KEY_SREDO 400"
+
+.SS "const NCURSES_KEY_SREPLACE 401"
+
+.SS "const NCURSES_KEY_SRESET 344"
+
+.SS "const NCURSES_KEY_SRIGHT 402"
+
+.SS "const NCURSES_KEY_SRSUME 403"
+
+.SS "const NCURSES_KEY_SSAVE 404"
+
+.SS "const NCURSES_KEY_SSUSPEND 405"
+
+.SS "const NCURSES_KEY_STAB 340"
+
+.SS "const NCURSES_KEY_SUNDO 406"
+
+.SS "const NCURSES_KEY_SUSPEND 407"
+
+.SS "const NCURSES_KEY_UNDO 408"
+
+.SS "const NCURSES_KEY_UP 259"
+
+.SS "const NCURSES_REPORT_MOUSE_POSITION 134217728"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

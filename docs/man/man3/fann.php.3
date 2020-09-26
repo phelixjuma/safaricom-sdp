@@ -1,0 +1,3218 @@
+.TH "vendor/jetbrains/phpstorm-stubs/fann/fann.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/fann/fann.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBFANNConnection\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBfann_cascadetrain_on_data\fP ($ann, $data, $max_neurons, $neurons_between_reports, $desired_error)"
+.br
+.ti -1c
+.RI "\fBfann_cascadetrain_on_file\fP ($ann, $filename, $max_neurons, $neurons_between_reports, $desired_error)"
+.br
+.ti -1c
+.RI "\fBfann_clear_scaling_params\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_copy\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_create_from_file\fP ($configuration_file)"
+.br
+.ti -1c
+.RI "\fBfann_create_shortcut_array\fP ($num_layers, $layers)"
+.br
+.ti -1c
+.RI "\fBfann_create_shortcut\fP ($num_layers, $num_neurons1, $num_neurons2, $\fB_\fP=NULL)"
+.br
+.ti -1c
+.RI "\fBfann_create_sparse_array\fP ($connection_rate, $num_layers, $layers)"
+.br
+.ti -1c
+.RI "\fBfann_create_sparse\fP ($connection_rate, $num_layers, $num_neurons1, $num_neurons2, $\fB_\fP=NULL)"
+.br
+.ti -1c
+.RI "\fBfann_create_standard_array\fP ($num_layers, $layers)"
+.br
+.ti -1c
+.RI "\fBfann_create_standard\fP ($num_layers, $num_neurons1, $num_neurons2, $\fB_\fP=NULL)"
+.br
+.ti -1c
+.RI "\fBfann_create_train_from_callback\fP ($num_data, $num_input, $num_output, $user_function)"
+.br
+.ti -1c
+.RI "\fBfann_create_train\fP ($num_data, $num_input, $num_output)"
+.br
+.ti -1c
+.RI "\fBfann_descale_input\fP ($ann, $input_vector)"
+.br
+.ti -1c
+.RI "\fBfann_descale_output\fP ($ann, $output_vector)"
+.br
+.ti -1c
+.RI "\fBfann_descale_train\fP ($ann, $train_data)"
+.br
+.ti -1c
+.RI "\fBfann_destroy\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_destroy_train\fP ($train_data)"
+.br
+.ti -1c
+.RI "\fBfann_duplicate_train_data\fP ($data)"
+.br
+.ti -1c
+.RI "\fBfann_get_activation_function\fP ($ann, $layer, $neuron)"
+.br
+.ti -1c
+.RI "\fBfann_get_activation_steepness\fP ($ann, $layer, $neuron)"
+.br
+.ti -1c
+.RI "\fBfann_get_bias_array\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_bit_fail_limit\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_bit_fail\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_activation_functions_count\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_activation_functions\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_activation_steepnesses_count\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_activation_steepnesses\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_candidate_change_fraction\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_candidate_limit\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_candidate_stagnation_epochs\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_max_cand_epochs\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_max_out_epochs\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_min_cand_epochs\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_min_out_epochs\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_num_candidate_groups\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_num_candidates\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_output_change_fraction\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_output_stagnation_epochs\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_cascade_weight_multiplier\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_connection_array\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_connection_rate\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_errno\fP ($errdat)"
+.br
+.ti -1c
+.RI "\fBfann_get_errstr\fP ($errdat)"
+.br
+.ti -1c
+.RI "\fBfann_get_layer_array\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_learning_momentum\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_learning_rate\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_MSE\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_network_type\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_num_input\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_num_layers\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_num_output\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_quickprop_decay\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_quickprop_mu\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_rprop_decrease_factor\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_rprop_delta_max\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_rprop_delta_min\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_rprop_delta_zero\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_rprop_increase_factor\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_sarprop_step_error_shift\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_sarprop_step_error_threshold_factor\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_sarprop_temperature\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_sarprop_weight_decay_shift\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_total_connections\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_total_neurons\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_train_error_function\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_training_algorithm\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_get_train_stop_function\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_init_weights\fP ($ann, $train_data)"
+.br
+.ti -1c
+.RI "\fBfann_length_train_data\fP ($data)"
+.br
+.ti -1c
+.RI "\fBfann_merge_train_data\fP ($data1, $data2)"
+.br
+.ti -1c
+.RI "\fBfann_num_input_train_data\fP ($data)"
+.br
+.ti -1c
+.RI "\fBfann_num_output_train_data\fP ($data)"
+.br
+.ti -1c
+.RI "\fBfann_print_error\fP ($errdat)"
+.br
+.ti -1c
+.RI "\fBfann_randomize_weights\fP ($ann, $min_weight, $max_weight)"
+.br
+.ti -1c
+.RI "\fBfann_read_train_from_file\fP ($filename)"
+.br
+.ti -1c
+.RI "\fBfann_reset_errno\fP ($errdat)"
+.br
+.ti -1c
+.RI "\fBfann_reset_errstr\fP ($errdat)"
+.br
+.ti -1c
+.RI "\fBfann_reset_MSE\fP ($ann)"
+.br
+.ti -1c
+.RI "\fBfann_run\fP ($ann, $input)"
+.br
+.ti -1c
+.RI "\fBfann_save\fP ($ann, $configuration_file)"
+.br
+.ti -1c
+.RI "\fBfann_save_train\fP ($data, $file_name)"
+.br
+.ti -1c
+.RI "\fBfann_scale_input\fP ($ann, $input_vector)"
+.br
+.ti -1c
+.RI "\fBfann_scale_input_train_data\fP ($train_data, $new_min, $new_max)"
+.br
+.ti -1c
+.RI "\fBfann_scale_output\fP ($ann, $output_vector)"
+.br
+.ti -1c
+.RI "\fBfann_scale_output_train_data\fP ($train_data, $new_min, $new_max)"
+.br
+.ti -1c
+.RI "\fBfann_scale_train_data\fP ($train_data, $new_min, $new_max)"
+.br
+.ti -1c
+.RI "\fBfann_scale_train\fP ($ann, $train_data)"
+.br
+.ti -1c
+.RI "\fBfann_set_activation_function_hidden\fP ($ann, $activation_function)"
+.br
+.ti -1c
+.RI "\fBfann_set_activation_function_layer\fP ($ann, $activation_function, $layer)"
+.br
+.ti -1c
+.RI "\fBfann_set_activation_function_output\fP ($ann, $activation_function)"
+.br
+.ti -1c
+.RI "\fBfann_set_activation_function\fP ($ann, $activation_function, $layer, $neuron)"
+.br
+.ti -1c
+.RI "\fBfann_set_activation_steepness_hidden\fP ($ann, $activation_steepness)"
+.br
+.ti -1c
+.RI "\fBfann_set_activation_steepness_layer\fP ($ann, $activation_steepness, $layer)"
+.br
+.ti -1c
+.RI "\fBfann_set_activation_steepness_output\fP ($ann, $activation_steepness)"
+.br
+.ti -1c
+.RI "\fBfann_set_activation_steepness\fP ($ann, $activation_steepness, $layer, $neuron)"
+.br
+.ti -1c
+.RI "\fBfann_set_bit_fail_limit\fP ($ann, $bit_fail_limit)"
+.br
+.ti -1c
+.RI "\fBfann_set_callback\fP ($ann, $\fBcallback\fP)"
+.br
+.ti -1c
+.RI "\fBfann_set_cascade_activation_functions\fP ($ann, $cascade_activation_functions)"
+.br
+.ti -1c
+.RI "\fBfann_set_cascade_activation_steepnesses\fP ($ann, $cascade_activation_steepnesses_count)"
+.br
+.ti -1c
+.RI "\fBfann_set_cascade_candidate_change_fraction\fP ($ann, $cascade_candidate_change_fraction)"
+.br
+.ti -1c
+.RI "\fBfann_set_cascade_candidate_limit\fP ($ann, $cascade_candidate_limit)"
+.br
+.ti -1c
+.RI "\fBfann_set_cascade_candidate_stagnation_epochs\fP ($ann, $cascade_candidate_stagnation_epochs)"
+.br
+.ti -1c
+.RI "\fBfann_set_cascade_max_cand_epochs\fP ($ann, $cascade_max_cand_epochs)"
+.br
+.ti -1c
+.RI "\fBfann_set_cascade_max_out_epochs\fP ($ann, $cascade_max_out_epochs)"
+.br
+.ti -1c
+.RI "\fBfann_set_cascade_min_cand_epochs\fP ($ann, $cascade_min_cand_epochs)"
+.br
+.ti -1c
+.RI "\fBfann_set_cascade_min_out_epochs\fP ($ann, $cascade_min_out_epochs)"
+.br
+.ti -1c
+.RI "\fBfann_set_cascade_num_candidate_groups\fP ($ann, $cascade_num_candidate_groups)"
+.br
+.ti -1c
+.RI "\fBfann_set_cascade_output_change_fraction\fP ($ann, $cascade_output_change_fraction)"
+.br
+.ti -1c
+.RI "\fBfann_set_cascade_output_stagnation_epochs\fP ($ann, $cascade_output_stagnation_epochs)"
+.br
+.ti -1c
+.RI "\fBfann_set_cascade_weight_multiplier\fP ($ann, $cascade_weight_multiplier)"
+.br
+.ti -1c
+.RI "\fBfann_set_error_log\fP ($errdat, $log_file)"
+.br
+.ti -1c
+.RI "\fBfann_set_input_scaling_params\fP ($ann, $train_data, $new_input_min, $new_input_max)"
+.br
+.ti -1c
+.RI "\fBfann_set_learning_momentum\fP ($ann, $learning_momentum)"
+.br
+.ti -1c
+.RI "\fBfann_set_learning_rate\fP ($ann, $learning_rate)"
+.br
+.ti -1c
+.RI "\fBfann_set_output_scaling_params\fP ($ann, $train_data, $new_output_min, $new_output_max)"
+.br
+.ti -1c
+.RI "\fBfann_set_quickprop_decay\fP ($ann, $quickprop_decay)"
+.br
+.ti -1c
+.RI "\fBfann_set_quickprop_mu\fP ($ann, $quickprop_mu)"
+.br
+.ti -1c
+.RI "\fBfann_set_rprop_decrease_factor\fP ($ann, $rprop_decrease_factor)"
+.br
+.ti -1c
+.RI "\fBfann_set_rprop_delta_max\fP ($ann, $rprop_delta_max)"
+.br
+.ti -1c
+.RI "\fBfann_set_rprop_delta_min\fP ($ann, $rprop_delta_min)"
+.br
+.ti -1c
+.RI "\fBfann_set_rprop_delta_zero\fP ($ann, $rprop_delta_zero)"
+.br
+.ti -1c
+.RI "\fBfann_set_rprop_increase_factor\fP ($ann, $rprop_increase_factor)"
+.br
+.ti -1c
+.RI "\fBfann_set_sarprop_step_error_shift\fP ($ann, $sarprop_step_error_shift)"
+.br
+.ti -1c
+.RI "\fBfann_set_sarprop_step_error_threshold_factor\fP ($ann, $sarprop_step_error_threshold_factor)"
+.br
+.ti -1c
+.RI "\fBfann_set_sarprop_temperature\fP ($ann, $sarprop_temperature)"
+.br
+.ti -1c
+.RI "\fBfann_set_sarprop_weight_decay_shift\fP ($ann, $sarprop_weight_decay_shift)"
+.br
+.ti -1c
+.RI "\fBfann_set_scaling_params\fP ($ann, $train_data, $new_input_min, $new_input_max, $new_output_min, $new_output_max)"
+.br
+.ti -1c
+.RI "\fBfann_set_train_error_function\fP ($ann, $error_function)"
+.br
+.ti -1c
+.RI "\fBfann_set_training_algorithm\fP ($ann, $training_algorithm)"
+.br
+.ti -1c
+.RI "\fBfann_set_train_stop_function\fP ($ann, $stop_function)"
+.br
+.ti -1c
+.RI "\fBfann_set_weight_array\fP ($ann, $connections)"
+.br
+.ti -1c
+.RI "\fBfann_set_weight\fP ($ann, $from_neuron, $to_neuron, $weight)"
+.br
+.ti -1c
+.RI "\fBfann_shuffle_train_data\fP ($train_data)"
+.br
+.ti -1c
+.RI "\fBfann_subset_train_data\fP ($data, $\fBpos\fP, $length)"
+.br
+.ti -1c
+.RI "\fBfann_test_data\fP ($ann, $data)"
+.br
+.ti -1c
+.RI "\fBfann_test\fP ($ann, $input, $desired_output)"
+.br
+.ti -1c
+.RI "\fBfann_train_epoch\fP ($ann, $data)"
+.br
+.ti -1c
+.RI "\fBfann_train_on_data\fP ($ann, $data, $max_epochs, $epochs_between_reports, $desired_error)"
+.br
+.ti -1c
+.RI "\fBfann_train_on_file\fP ($ann, $filename, $max_epochs, $epochs_between_reports, $desired_error)"
+.br
+.ti -1c
+.RI "\fBfann_train\fP ($ann, $input, $desired_output)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBFANN_TRAIN_INCREMENTAL\fP 0"
+.br
+.ti -1c
+.RI "const \fBFANN_TRAIN_BATCH\fP 1"
+.br
+.ti -1c
+.RI "const \fBFANN_TRAIN_RPROP\fP 2"
+.br
+.ti -1c
+.RI "const \fBFANN_TRAIN_QUICKPROP\fP 3"
+.br
+.ti -1c
+.RI "const \fBFANN_TRAIN_SARPROP\fP 4"
+.br
+.ti -1c
+.RI "const \fBFANN_LINEAR\fP 0"
+.br
+.ti -1c
+.RI "const \fBFANN_THRESHOLD\fP 1"
+.br
+.ti -1c
+.RI "const \fBFANN_THRESHOLD_SYMMETRIC\fP 2"
+.br
+.ti -1c
+.RI "const \fBFANN_SIGMOID\fP 3"
+.br
+.ti -1c
+.RI "const \fBFANN_SIGMOID_STEPWISE\fP 4"
+.br
+.ti -1c
+.RI "const \fBFANN_SIGMOID_SYMMETRIC\fP 5"
+.br
+.ti -1c
+.RI "const \fBFANN_SIGMOID_SYMMETRIC_STEPWISE\fP 6"
+.br
+.ti -1c
+.RI "const \fBFANN_GAUSSIAN\fP 7"
+.br
+.ti -1c
+.RI "const \fBFANN_GAUSSIAN_SYMMETRIC\fP 8"
+.br
+.ti -1c
+.RI "const \fBFANN_GAUSSIAN_STEPWISE\fP 9"
+.br
+.ti -1c
+.RI "const \fBFANN_ELLIOT\fP 10"
+.br
+.ti -1c
+.RI "const \fBFANN_ELLIOT_SYMMETRIC\fP 11"
+.br
+.ti -1c
+.RI "const \fBFANN_LINEAR_PIECE\fP 12"
+.br
+.ti -1c
+.RI "const \fBFANN_LINEAR_PIECE_SYMMETRIC\fP 13"
+.br
+.ti -1c
+.RI "const \fBFANN_SIN_SYMMETRIC\fP 14"
+.br
+.ti -1c
+.RI "const \fBFANN_COS_SYMMETRIC\fP 15"
+.br
+.ti -1c
+.RI "const \fBFANN_SIN\fP 16"
+.br
+.ti -1c
+.RI "const \fBFANN_COS\fP 17"
+.br
+.ti -1c
+.RI "const \fBFANN_ERRORFUNC_LINEAR\fP 0"
+.br
+.ti -1c
+.RI "const \fBFANN_ERRORFUNC_TANH\fP 1"
+.br
+.ti -1c
+.RI "const \fBFANN_STOPFUNC_MSE\fP 0"
+.br
+.ti -1c
+.RI "const \fBFANN_STOPFUNC_BIT\fP 1"
+.br
+.ti -1c
+.RI "const \fBFANN_NETTYPE_LAYER\fP 0"
+.br
+.ti -1c
+.RI "const \fBFANN_NETTYPE_SHORTCUT\fP 1"
+.br
+.ti -1c
+.RI "const \fBFANN_E_NO_ERROR\fP 0"
+.br
+.ti -1c
+.RI "const \fBFANN_E_CANT_OPEN_CONFIG_R\fP 1"
+.br
+.ti -1c
+.RI "const \fBFANN_E_CANT_OPEN_CONFIG_W\fP 2"
+.br
+.ti -1c
+.RI "const \fBFANN_E_WRONG_CONFIG_VERSION\fP 3"
+.br
+.ti -1c
+.RI "const \fBFANN_E_CANT_READ_CONFIG\fP 4"
+.br
+.ti -1c
+.RI "const \fBFANN_E_CANT_READ_NEURON\fP 5"
+.br
+.ti -1c
+.RI "const \fBFANN_E_CANT_READ_CONNECTIONS\fP 6"
+.br
+.ti -1c
+.RI "const \fBFANN_E_WRONG_NUM_CONNECTIONS\fP 7"
+.br
+.ti -1c
+.RI "const \fBFANN_E_CANT_OPEN_TD_W\fP 8"
+.br
+.ti -1c
+.RI "const \fBFANN_E_CANT_OPEN_TD_R\fP 9"
+.br
+.ti -1c
+.RI "const \fBFANN_E_CANT_READ_TD\fP 10"
+.br
+.ti -1c
+.RI "const \fBFANN_E_CANT_ALLOCATE_MEM\fP 11"
+.br
+.ti -1c
+.RI "const \fBFANN_E_CANT_TRAIN_ACTIVATION\fP 12"
+.br
+.ti -1c
+.RI "const \fBFANN_E_CANT_USE_ACTIVATION\fP 13"
+.br
+.ti -1c
+.RI "const \fBFANN_E_TRAIN_DATA_MISMATCH\fP 14"
+.br
+.ti -1c
+.RI "const \fBFANN_E_CANT_USE_TRAIN_ALG\fP 15"
+.br
+.ti -1c
+.RI "const \fBFANN_E_TRAIN_DATA_SUBSET\fP 16"
+.br
+.ti -1c
+.RI "const \fBFANN_E_INDEX_OUT_OF_BOUND\fP 17"
+.br
+.ti -1c
+.RI "const \fBFANN_E_SCALE_NOT_PRESENT\fP 18"
+.br
+.ti -1c
+.RI "const \fBFANN_E_INPUT_NO_MATCH\fP 19"
+.br
+.ti -1c
+.RI "const \fBFANN_E_OUTPUT_NO_MATCH\fP 20"
+.br
+.ti -1c
+.RI "const \fBFANN_VERSION\fP '2\&.2'"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "fann_cascadetrain_on_data ( $ann,  $data,  $max_neurons,  $neurons_between_reports,  $desired_error)"
+Trains on an entire dataset, for a period of time using the Cascade2 training algorithm
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$data\fP 
+.br
+\fI$max_neurons\fP 
+.br
+\fI$neurons_between_reports\fP 
+.br
+\fI$desired_error\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_cascadetrain_on_file ( $ann,  $filename,  $max_neurons,  $neurons_between_reports,  $desired_error)"
+Trains on an entire dataset read from file, for a period of time using the Cascade2 training algorithm\&.
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$filename\fP 
+.br
+\fI$max_neurons\fP 
+.br
+\fI$neurons_between_reports\fP 
+.br
+\fI$desired_error\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_clear_scaling_params ( $ann)"
+Clears scaling parameters
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_copy ( $ann)"
+Creates a copy of a fann structure
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false Returns a copy of neural network resource on success, or false on error 
+.RE
+.PP
+
+.SS "fann_create_from_file ( $configuration_file)"
+Constructs a backpropagation neural network from a configuration file
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$configuration_file\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "fann_create_shortcut ( $num_layers,  $num_neurons1,  $num_neurons2,  $_ = \fCNULL\fP)"
+Creates a standard backpropagation neural network which is not fully connectected and has shortcut connections
+.PP
+@stub-variable-parameters @stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$num_layers\fP 
+.br
+\fI$num_neurons1\fP 
+.br
+\fI$num_neurons2\fP 
+.br
+\fI$_\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false Returns a neural network resource on success, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_create_shortcut_array ( $num_layers,  $layers)"
+Creates a standard backpropagation neural network which is not fully connectected and has shortcut connections
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$num_layers\fP 
+.br
+\fI$layers\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false Returns a neural network resource on success, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_create_sparse ( $connection_rate,  $num_layers,  $num_neurons1,  $num_neurons2,  $_ = \fCNULL\fP)"
+Creates a standard backpropagation neural network, which is not fully connected
+.PP
+@stub-variable-parameters @stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection_rate\fP 
+.br
+\fI$num_layers\fP 
+.br
+\fI$num_neurons1\fP 
+.br
+\fI$num_neurons2\fP 
+.br
+\fI$_\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false Returns a neural network resource on success, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_create_sparse_array ( $connection_rate,  $num_layers,  $layers)"
+Creates a standard backpropagation neural network, which is not fully connected using an array of layer sizes
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$connection_rate\fP 
+.br
+\fI$num_layers\fP 
+.br
+\fI$layers\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false Returns a neural network resource on success, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_create_standard ( $num_layers,  $num_neurons1,  $num_neurons2,  $_ = \fCNULL\fP)"
+Creates a standard fully connected backpropagation neural network
+.PP
+@stub-variable-parameters @stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$num_layers\fP 
+.br
+\fI$num_neurons1\fP 
+.br
+\fI$num_neurons2\fP 
+.br
+\fI$_\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false Returns a neural network resource on success, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_create_standard_array ( $num_layers,  $layers)"
+Creates a standard fully connected backpropagation neural network using an array of layer sizes
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$num_layers\fP 
+.br
+\fI$layers\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false Returns a neural network resource on success, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_create_train ( $num_data,  $num_input,  $num_output)"
+Creates an empty training data struct
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$num_data\fP 
+.br
+\fI$num_input\fP 
+.br
+\fI$num_output\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "fann_create_train_from_callback ( $num_data,  $num_input,  $num_output,  $user_function)"
+Creates the training data struct from a user supplied function
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$num_data\fP 
+.br
+\fI$num_input\fP 
+.br
+\fI$num_output\fP 
+.br
+\fI$user_function\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "fann_descale_input ( $ann,  $input_vector)"
+Scale data in input vector after get it from ann based on previously calculated parameters
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$input_vector\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_descale_output ( $ann,  $output_vector)"
+Scale data in output vector after get it from ann based on previously calculated parameters
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$output_vector\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_descale_train ( $ann,  $train_data)"
+Descale input and output data based on previously calculated parameters
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$train_data\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_destroy ( $ann)"
+Destroys the entire network and properly freeing all the associated memory
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_destroy_train ( $train_data)"
+Destructs the training data
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$train_data\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_duplicate_train_data ( $data)"
+Returns an exact copy of a fann train data
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "fann_get_activation_function ( $ann,  $layer,  $neuron)"
+Returns the activation function
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$layer\fP 
+.br
+\fI$neuron\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false constant or -1 if the neuron is not defined in the neural network, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_activation_steepness ( $ann,  $layer,  $neuron)"
+Returns the activation steepness for supplied neuron and layer number
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$layer\fP 
+.br
+\fI$neuron\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The activation steepness for the neuron or -1 if the neuron is not defined in the neural network, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_bias_array ( $ann)"
+Get the number of bias in each layer in the network
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array An array of numbers of bias in each layer 
+.RE
+.PP
+
+.SS "fann_get_bit_fail ( $ann)"
+The number of fail bits
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The number of bits fail, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_bit_fail_limit ( $ann)"
+Returns the bit fail limit used during training
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The bit fail limit, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_activation_functions ( $ann)"
+Returns the cascade activation functions
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|false The cascade activation functions, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_activation_functions_count ( $ann)"
+Returns the number of cascade activation functions
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The number of cascade activation functions, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_activation_steepnesses ( $ann)"
+Returns the cascade activation steepnesses
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|false The cascade activation steepnesses, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_activation_steepnesses_count ( $ann)"
+The number of activation steepnesses
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The number of activation steepnesses, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_candidate_change_fraction ( $ann)"
+Returns the cascade candidate change fraction
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The cascade candidate change fraction, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_candidate_limit ( $ann)"
+Return the candidate limit
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The candidate limit, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_candidate_stagnation_epochs ( $ann)"
+Returns the number of cascade candidate stagnation epochs
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The number of cascade candidate stagnation epochs, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_max_cand_epochs ( $ann)"
+Returns the maximum candidate epochs
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The maximum candidate epochs, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_max_out_epochs ( $ann)"
+Returns the maximum out epochs
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The maximum out epochs, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_min_cand_epochs ( $ann)"
+Returns the minimum candidate epochs
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The minimum candidate epochs, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_min_out_epochs ( $ann)"
+Returns the minimum out epochs
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The minimum out epochs, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_num_candidate_groups ( $ann)"
+Returns the number of candidate groups
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The number of candidate groups, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_num_candidates ( $ann)"
+Returns the number of candidates used during training
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The number of candidates used during training, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_output_change_fraction ( $ann)"
+Returns the cascade output change fraction
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The cascade output change fraction, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_output_stagnation_epochs ( $ann)"
+Returns the number of cascade output stagnation epochs
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The number of cascade output stagnation epochs, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_cascade_weight_multiplier ( $ann)"
+Returns the weight multiplier
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The weight multiplier, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_connection_array ( $ann)"
+Get connections in the network
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array An array of connections in the network 
+.RE
+.PP
+
+.SS "fann_get_connection_rate ( $ann)"
+Get the connection rate used when the network was created
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The connection rate used when the network was created, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_errno ( $errdat)"
+Returns the last error number
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$errdat\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The error number, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_errstr ( $errdat)"
+Returns the last errstr
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$errdat\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false The last error string, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_layer_array ( $ann)"
+Get the number of neurons in each layer in the network
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array An array of numbers of neurons in each leayer 
+.RE
+.PP
+
+.SS "fann_get_learning_momentum ( $ann)"
+Returns the learning momentum
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The learning momentum, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_learning_rate ( $ann)"
+Returns the learning rate
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The learning rate, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_MSE ( $ann)"
+Reads the mean square error from the network
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The mean square error, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_network_type ( $ann)"
+Get the type of neural network it was created as
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false constant, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_num_input ( $ann)"
+Get the number of input neurons
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false Number of input neurons, or false on error 
+.RE
+.PP
+
+.SS "fann_get_num_layers ( $ann)"
+Get the number of layers in the neural network
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The number of leayers in the neural network, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_num_output ( $ann)"
+Get the number of output neurons
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false Number of output neurons, or false on error 
+.RE
+.PP
+
+.SS "fann_get_quickprop_decay ( $ann)"
+Returns the decay which is a factor that weights should decrease in each iteration during quickprop training
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The decay, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_quickprop_mu ( $ann)"
+Returns the mu factor
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The mu factor, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_rprop_decrease_factor ( $ann)"
+Returns the increase factor used during RPROP training
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The decrease factor, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_rprop_delta_max ( $ann)"
+Returns the maximum step-size
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The maximum step-size, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_rprop_delta_min ( $ann)"
+Returns the minimum step-size
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The minimum step-size, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_rprop_delta_zero ( $ann)"
+Returns the initial step-size
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The initial step-size, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_rprop_increase_factor ( $ann)"
+Returns the increase factor used during RPROP training
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The increase factor, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_sarprop_step_error_shift ( $ann)"
+Returns the sarprop step error shift
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The sarprop step error shift , or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_sarprop_step_error_threshold_factor ( $ann)"
+Returns the sarprop step error threshold factor
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The sarprop step error threshold factor, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_sarprop_temperature ( $ann)"
+Returns the sarprop temperature
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The sarprop temperature, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_sarprop_weight_decay_shift ( $ann)"
+Returns the sarprop weight decay shift
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The sarprop weight decay shift, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_total_connections ( $ann)"
+Get the total number of connections in the entire network
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false Total number of connections in the entire network, or false on error 
+.RE
+.PP
+
+.SS "fann_get_total_neurons ( $ann)"
+Get the total number of neurons in the entire network
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false Total number of neurons in the entire network, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_train_error_function ( $ann)"
+Returns the error function used during training
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The constant, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_train_stop_function ( $ann)"
+Returns the stop function used during training
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The constant, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_get_training_algorithm ( $ann)"
+Returns the training algorithm
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false constant, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_init_weights ( $ann,  $train_data)"
+Initialize the weights using Widrow + Nguyen’s algorithm
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$train_data\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_length_train_data ( $data)"
+Returns the number of training patterns in the train data
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false Number of elements in the train data \fCresource\fP, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_merge_train_data ( $data1,  $data2)"
+Merges the train data
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data1\fP 
+.br
+\fI$data2\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false New merged train data \fCresource\fP, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_num_input_train_data ( $data)"
+Returns the number of inputs in each of the training patterns in the train data
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The number of inputs, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_num_output_train_data ( $data)"
+Returns the number of outputs in each of the training patterns in the train data
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false The number of outputs, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_print_error ( $errdat)"
+Prints the error string
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$errdat\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "fann_randomize_weights ( $ann,  $min_weight,  $max_weight)"
+Give each connection a random weight between min_weight and max_weight
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$min_weight\fP 
+.br
+\fI$max_weight\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_read_train_from_file ( $filename)"
+Reads a file that stores training data
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "fann_reset_errno ( $errdat)"
+Resets the last error number
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$errdat\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "fann_reset_errstr ( $errdat)"
+Resets the last error string
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$errdat\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "fann_reset_MSE ( $ann)"
+Resets the mean square error from the network
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_run ( $ann,  $input)"
+Will run input through the neural network
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$input\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|false Array of output values, or false on error 
+.RE
+.PP
+
+.SS "fann_save ( $ann,  $configuration_file)"
+Saves the entire network to a configuration file
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$configuration_file\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_save_train ( $data,  $file_name)"
+Save the training structure to a file
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.br
+\fI$file_name\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_scale_input ( $ann,  $input_vector)"
+Scale data in input vector before feed it to ann based on previously calculated parameters
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$input_vector\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_scale_input_train_data ( $train_data,  $new_min,  $new_max)"
+Scales the inputs in the training data to the specified range
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$train_data\fP 
+.br
+\fI$new_min\fP 
+.br
+\fI$new_max\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_scale_output ( $ann,  $output_vector)"
+Scale data in output vector before feed it to ann based on previously calculated parameters
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$output_vector\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_scale_output_train_data ( $train_data,  $new_min,  $new_max)"
+Scales the outputs in the training data to the specified range
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$train_data\fP 
+.br
+\fI$new_min\fP 
+.br
+\fI$new_max\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_scale_train ( $ann,  $train_data)"
+Scale input and output data based on previously calculated parameters
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$train_data\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_scale_train_data ( $train_data,  $new_min,  $new_max)"
+Scales the inputs and outputs in the training data to the specified range
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$train_data\fP 
+.br
+\fI$new_min\fP 
+.br
+\fI$new_max\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_activation_function ( $ann,  $activation_function,  $layer,  $neuron)"
+Sets the activation function for supplied neuron and layer
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$activation_function\fP 
+.br
+\fI$layer\fP 
+.br
+\fI$neuron\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_activation_function_hidden ( $ann,  $activation_function)"
+Sets the activation function for all of the hidden layers
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$activation_function\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_activation_function_layer ( $ann,  $activation_function,  $layer)"
+Sets the activation function for all the neurons in the supplied layer\&.
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$activation_function\fP 
+.br
+\fI$layer\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_activation_function_output ( $ann,  $activation_function)"
+Sets the activation function for the output layer
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$activation_function\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_activation_steepness ( $ann,  $activation_steepness,  $layer,  $neuron)"
+Sets the activation steepness for supplied neuron and layer number
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$activation_steepness\fP 
+.br
+\fI$layer\fP 
+.br
+\fI$neuron\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_activation_steepness_hidden ( $ann,  $activation_steepness)"
+Sets the steepness of the activation steepness for all neurons in the all hidden layers
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$activation_steepness\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_activation_steepness_layer ( $ann,  $activation_steepness,  $layer)"
+Sets the activation steepness for all of the neurons in the supplied layer number
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$activation_steepness\fP 
+.br
+\fI$layer\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_activation_steepness_output ( $ann,  $activation_steepness)"
+Sets the steepness of the activation steepness in the output layer
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$activation_steepness\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_bit_fail_limit ( $ann,  $bit_fail_limit)"
+Set the bit fail limit used during training
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$bit_fail_limit\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_callback ( $ann,  $callback)"
+Sets the callback function for use during training
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$callback\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_cascade_activation_functions ( $ann,  $cascade_activation_functions)"
+Sets the array of cascade candidate activation functions
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$cascade_activation_functions\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_cascade_activation_steepnesses ( $ann,  $cascade_activation_steepnesses_count)"
+Sets the array of cascade candidate activation steepnesses
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$cascade_activation_steepnesses_count\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_cascade_candidate_change_fraction ( $ann,  $cascade_candidate_change_fraction)"
+Sets the cascade candidate change fraction
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$cascade_candidate_change_fraction\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_cascade_candidate_limit ( $ann,  $cascade_candidate_limit)"
+Sets the candidate limit
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$cascade_candidate_limit\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_cascade_candidate_stagnation_epochs ( $ann,  $cascade_candidate_stagnation_epochs)"
+Sets the number of cascade candidate stagnation epochs
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$cascade_candidate_stagnation_epochs\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_cascade_max_cand_epochs ( $ann,  $cascade_max_cand_epochs)"
+Sets the max candidate epochs
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$cascade_max_cand_epochs\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_cascade_max_out_epochs ( $ann,  $cascade_max_out_epochs)"
+Sets the maximum out epochs
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$cascade_max_out_epochs\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_cascade_min_cand_epochs ( $ann,  $cascade_min_cand_epochs)"
+Sets the min candidate epochs
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$cascade_min_cand_epochs\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_cascade_min_out_epochs ( $ann,  $cascade_min_out_epochs)"
+Sets the minimum out epochs
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$cascade_min_out_epochs\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_cascade_num_candidate_groups ( $ann,  $cascade_num_candidate_groups)"
+Sets the number of candidate groups
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$cascade_num_candidate_groups\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_cascade_output_change_fraction ( $ann,  $cascade_output_change_fraction)"
+Sets the cascade output change fraction
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$cascade_output_change_fraction\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_cascade_output_stagnation_epochs ( $ann,  $cascade_output_stagnation_epochs)"
+Sets the number of cascade output stagnation epochs
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$cascade_output_stagnation_epochs\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_cascade_weight_multiplier ( $ann,  $cascade_weight_multiplier)"
+Sets the weight multiplier
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$cascade_weight_multiplier\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_error_log ( $errdat,  $log_file)"
+Sets where the errors are logged to
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$errdat\fP 
+.br
+\fI$log_file\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "fann_set_input_scaling_params ( $ann,  $train_data,  $new_input_min,  $new_input_max)"
+Calculate input scaling parameters for future use based on training data
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$train_data\fP 
+.br
+\fI$new_input_min\fP 
+.br
+\fI$new_input_max\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_learning_momentum ( $ann,  $learning_momentum)"
+Sets the learning momentum
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$learning_momentum\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_learning_rate ( $ann,  $learning_rate)"
+Sets the learning rate
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$learning_rate\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_output_scaling_params ( $ann,  $train_data,  $new_output_min,  $new_output_max)"
+Calculate output scaling parameters for future use based on training data
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$train_data\fP 
+.br
+\fI$new_output_min\fP 
+.br
+\fI$new_output_max\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_quickprop_decay ( $ann,  $quickprop_decay)"
+Sets the quickprop decay factor
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$quickprop_decay\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_quickprop_mu ( $ann,  $quickprop_mu)"
+Sets the quickprop mu factor
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$quickprop_mu\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_rprop_decrease_factor ( $ann,  $rprop_decrease_factor)"
+Sets the decrease factor used during RPROP training
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$rprop_decrease_factor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_rprop_delta_max ( $ann,  $rprop_delta_max)"
+Sets the maximum step-size
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$rprop_delta_max\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_rprop_delta_min ( $ann,  $rprop_delta_min)"
+Sets the minimum step-size
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$rprop_delta_min\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_rprop_delta_zero ( $ann,  $rprop_delta_zero)"
+Sets the initial step-size
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$rprop_delta_zero\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_rprop_increase_factor ( $ann,  $rprop_increase_factor)"
+Sets the increase factor used during RPROP training
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$rprop_increase_factor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_sarprop_step_error_shift ( $ann,  $sarprop_step_error_shift)"
+Sets the sarprop step error shift
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$sarprop_step_error_shift\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_sarprop_step_error_threshold_factor ( $ann,  $sarprop_step_error_threshold_factor)"
+Sets the sarprop step error threshold factor
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$sarprop_step_error_threshold_factor\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_sarprop_temperature ( $ann,  $sarprop_temperature)"
+Sets the sarprop temperature
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$sarprop_temperature\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_sarprop_weight_decay_shift ( $ann,  $sarprop_weight_decay_shift)"
+Sets the sarprop weight decay shift
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$sarprop_weight_decay_shift\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_scaling_params ( $ann,  $train_data,  $new_input_min,  $new_input_max,  $new_output_min,  $new_output_max)"
+Calculate input and output scaling parameters for future use based on training data
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$train_data\fP 
+.br
+\fI$new_input_min\fP 
+.br
+\fI$new_input_max\fP 
+.br
+\fI$new_output_min\fP 
+.br
+\fI$new_output_max\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_train_error_function ( $ann,  $error_function)"
+Sets the error function used during training
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$error_function\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_train_stop_function ( $ann,  $stop_function)"
+Sets the stop function used during training
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$stop_function\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_training_algorithm ( $ann,  $training_algorithm)"
+Sets the training algorithm
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$training_algorithm\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_weight ( $ann,  $from_neuron,  $to_neuron,  $weight)"
+Set a connection in the network
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$from_neuron\fP 
+.br
+\fI$to_neuron\fP 
+.br
+\fI$weight\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_set_weight_array ( $ann,  $connections)"
+Set connections in the network
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$connections\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_shuffle_train_data ( $train_data)"
+Shuffles training data, randomizing the order
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$train_data\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_subset_train_data ( $data,  $pos,  $length)"
+Returns an copy of a subset of the train data
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data\fP 
+.br
+\fI$pos\fP 
+.br
+\fI$length\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "fann_test ( $ann,  $input,  $desired_output)"
+\fBTest\fP with a set of inputs, and a set of desired outputs
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$input\fP 
+.br
+\fI$desired_output\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_test_data ( $ann,  $data)"
+\fBTest\fP a set of training data and calculates the MSE for the training data
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$data\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The updated MSE, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_train ( $ann,  $input,  $desired_output)"
+Train one iteration with a set of inputs, and a set of desired outputs
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$input\fP 
+.br
+\fI$desired_output\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_train_epoch ( $ann,  $data)"
+Train one epoch with a set of training data
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$data\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float|false The MSE, or false on error\&. 
+.RE
+.PP
+
+.SS "fann_train_on_data ( $ann,  $data,  $max_epochs,  $epochs_between_reports,  $desired_error)"
+Trains on an entire dataset for a period of time
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$data\fP 
+.br
+\fI$max_epochs\fP 
+.br
+\fI$epochs_between_reports\fP 
+.br
+\fI$desired_error\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "fann_train_on_file ( $ann,  $filename,  $max_epochs,  $epochs_between_reports,  $desired_error)"
+Trains on an entire dataset, which is read from file, for a period of time
+.PP
+@stub
+.PP
+\fBParameters\fP
+.RS 4
+\fI$ann\fP 
+.br
+\fI$filename\fP 
+.br
+\fI$max_epochs\fP 
+.br
+\fI$epochs_between_reports\fP 
+.br
+\fI$desired_error\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const FANN_COS 17"
+
+.SS "const FANN_COS_SYMMETRIC 15"
+
+.SS "const FANN_E_CANT_ALLOCATE_MEM 11"
+
+.SS "const FANN_E_CANT_OPEN_CONFIG_R 1"
+
+.SS "const FANN_E_CANT_OPEN_CONFIG_W 2"
+
+.SS "const FANN_E_CANT_OPEN_TD_R 9"
+
+.SS "const FANN_E_CANT_OPEN_TD_W 8"
+
+.SS "const FANN_E_CANT_READ_CONFIG 4"
+
+.SS "const FANN_E_CANT_READ_CONNECTIONS 6"
+
+.SS "const FANN_E_CANT_READ_NEURON 5"
+
+.SS "const FANN_E_CANT_READ_TD 10"
+
+.SS "const FANN_E_CANT_TRAIN_ACTIVATION 12"
+
+.SS "const FANN_E_CANT_USE_ACTIVATION 13"
+
+.SS "const FANN_E_CANT_USE_TRAIN_ALG 15"
+
+.SS "const FANN_E_INDEX_OUT_OF_BOUND 17"
+
+.SS "const FANN_E_INPUT_NO_MATCH 19"
+
+.SS "const FANN_E_NO_ERROR 0"
+
+.SS "const FANN_E_OUTPUT_NO_MATCH 20"
+
+.SS "const FANN_E_SCALE_NOT_PRESENT 18"
+
+.SS "const FANN_E_TRAIN_DATA_MISMATCH 14"
+
+.SS "const FANN_E_TRAIN_DATA_SUBSET 16"
+
+.SS "const FANN_E_WRONG_CONFIG_VERSION 3"
+
+.SS "const FANN_E_WRONG_NUM_CONNECTIONS 7"
+
+.SS "const FANN_ELLIOT 10"
+
+.SS "const FANN_ELLIOT_SYMMETRIC 11"
+
+.SS "const FANN_ERRORFUNC_LINEAR 0"
+
+.SS "const FANN_ERRORFUNC_TANH 1"
+
+.SS "const FANN_GAUSSIAN 7"
+
+.SS "const FANN_GAUSSIAN_STEPWISE 9"
+
+.SS "const FANN_GAUSSIAN_SYMMETRIC 8"
+
+.SS "const FANN_LINEAR 0"
+
+.SS "const FANN_LINEAR_PIECE 12"
+
+.SS "const FANN_LINEAR_PIECE_SYMMETRIC 13"
+
+.SS "const FANN_NETTYPE_LAYER 0"
+
+.SS "const FANN_NETTYPE_SHORTCUT 1"
+
+.SS "const FANN_SIGMOID 3"
+
+.SS "const FANN_SIGMOID_STEPWISE 4"
+
+.SS "const FANN_SIGMOID_SYMMETRIC 5"
+
+.SS "const FANN_SIGMOID_SYMMETRIC_STEPWISE 6"
+
+.SS "const FANN_SIN 16"
+
+.SS "const FANN_SIN_SYMMETRIC 14"
+
+.SS "const FANN_STOPFUNC_BIT 1"
+
+.SS "const FANN_STOPFUNC_MSE 0"
+
+.SS "const FANN_THRESHOLD 1"
+
+.SS "const FANN_THRESHOLD_SYMMETRIC 2"
+
+.SS "const FANN_TRAIN_BATCH 1"
+
+.SS "const FANN_TRAIN_INCREMENTAL 0"
+
+.SS "const FANN_TRAIN_QUICKPROP 3"
+
+.SS "const FANN_TRAIN_RPROP 2"
+
+.SS "const FANN_TRAIN_SARPROP 4"
+
+.SS "const FANN_VERSION '2\&.2'"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

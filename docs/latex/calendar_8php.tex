@@ -1,0 +1,623 @@
+\hypertarget{calendar_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/calendar/calendar.php File Reference}
+\label{calendar_8php}\index{vendor/jetbrains/phpstorm-\/stubs/calendar/calendar.php@{vendor/jetbrains/phpstorm-\/stubs/calendar/calendar.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{calendar_8php_a4f8001cb32ce7810311acd920a415624}{jdtogregorian}} (\$julianday)
+\item 
+\mbox{\hyperlink{calendar_8php_af6e250101c22be9130a5aee24faa21bf}{gregoriantojd}} (\$month, \$day, \$year)
+\item 
+\mbox{\hyperlink{calendar_8php_adf0e3bd72938e8d6a05e52e8a102dc2e}{jdtojulian}} (\$julianday)
+\item 
+\mbox{\hyperlink{calendar_8php_a2f1f3c8b51945c98481046a6d3412798}{juliantojd}} (\$month, \$day, \$year)
+\item 
+\mbox{\hyperlink{calendar_8php_a0a7e3a191a1c19f5a301c9ea58e14ad5}{jdtojewish}} (\$juliandaycount, \$hebrew=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}, \$fl=0)
+\item 
+\mbox{\hyperlink{calendar_8php_a3ce8c05797aac5b591b66004d6e9815e}{jewishtojd}} (\$month, \$day, \$year)
+\item 
+\mbox{\hyperlink{calendar_8php_a9e5f674587a1e1aca6dd0212141bb013}{jdtofrench}} (\$juliandaycount)
+\item 
+\mbox{\hyperlink{calendar_8php_a16110a14062b4daaa77cf559ad3874bb}{frenchtojd}} (\$month, \$day, \$year)
+\item 
+\mbox{\hyperlink{calendar_8php_a3f93b6434992d59deca69c51920a7154}{jddayofweek}} (\$julianday, \$mode=\mbox{\hyperlink{calendar_8php_a8e03f2e404f7086f630e226e77e9cb01}{C\+A\+L\+\_\+\+D\+O\+W\+\_\+\+D\+A\+Y\+NO}})
+\item 
+\mbox{\hyperlink{calendar_8php_ad3216bef475876f7eff4ff952d8baa94}{jdmonthname}} (\$julianday, \$mode)
+\item 
+\mbox{\hyperlink{calendar_8php_a613caf67a407b54515e17fbfe30e50fe}{easter\+\_\+date}} (\$year=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{calendar_8php_a1b01239b196c2bdf12f4eaf8253cbde1}{easter\+\_\+days}} (\$year=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$method=\mbox{\hyperlink{calendar_8php_ac9294b784da8bd2b7db6fefdcaa15993}{C\+A\+L\+\_\+\+E\+A\+S\+T\+E\+R\+\_\+\+D\+E\+F\+A\+U\+LT}})
+\item 
+\mbox{\hyperlink{calendar_8php_a718f26fe5e0cc69c56cb05475d7fa473}{unixtojd}} (\$timestamp=0)
+\item 
+\mbox{\hyperlink{calendar_8php_aff3a1628a9968dbb60ff3f72899026ee}{jdtounix}} (\$jday)
+\item 
+\mbox{\hyperlink{calendar_8php_a828d61e74504ee92d330e7f5c2a4b259}{cal\+\_\+to\+\_\+jd}} (\$calendar, \$month, \$day, \$year)
+\item 
+\mbox{\hyperlink{calendar_8php_a193cd8baa536c3f781b5b7a54b75b73f}{cal\+\_\+from\+\_\+jd}} (\$jd, \$calendar)
+\item 
+\mbox{\hyperlink{calendar_8php_ad72d26fe1c18778c62a7e707ab43d9c2}{cal\+\_\+days\+\_\+in\+\_\+month}} (\$calendar, \$month, \$year)
+\item 
+\mbox{\hyperlink{calendar_8php_a5f96f729170122fcf929638e56aec36c}{cal\+\_\+info}} (\$calendar=-\/1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{calendar_8php_a96ab6bacdfade32f5cb831aaaae0e450}{C\+A\+L\+\_\+\+G\+R\+E\+G\+O\+R\+I\+AN}} 0
+\item 
+const \mbox{\hyperlink{calendar_8php_a86de0041eb9fa138ae1574691259e7fe}{C\+A\+L\+\_\+\+J\+U\+L\+I\+AN}} 1
+\item 
+const \mbox{\hyperlink{calendar_8php_ad5d223f45816f9dde57f1be16b4cf85c}{C\+A\+L\+\_\+\+J\+E\+W\+I\+SH}} 2
+\item 
+const \mbox{\hyperlink{calendar_8php_ad8a2863f08bba37ea7dd5d6dac92ecd6}{C\+A\+L\+\_\+\+F\+R\+E\+N\+CH}} 3
+\item 
+const \mbox{\hyperlink{calendar_8php_a49793850c6d947089d57621b7195b9a6}{C\+A\+L\+\_\+\+N\+U\+M\+\_\+\+C\+A\+LS}} 4
+\item 
+const \mbox{\hyperlink{calendar_8php_a8e03f2e404f7086f630e226e77e9cb01}{C\+A\+L\+\_\+\+D\+O\+W\+\_\+\+D\+A\+Y\+NO}} 0
+\item 
+const \mbox{\hyperlink{calendar_8php_a92fa9e97dd2e491c1b87aadd44d6afc5}{C\+A\+L\+\_\+\+D\+O\+W\+\_\+\+S\+H\+O\+RT}} 2
+\item 
+const \mbox{\hyperlink{calendar_8php_ad4cb2e66821b67634b5d9b2d4e02d354}{C\+A\+L\+\_\+\+D\+O\+W\+\_\+\+L\+O\+NG}} 1
+\item 
+const \mbox{\hyperlink{calendar_8php_aba22f82346588baa43c5f6b680f54f9e}{C\+A\+L\+\_\+\+M\+O\+N\+T\+H\+\_\+\+G\+R\+E\+G\+O\+R\+I\+A\+N\+\_\+\+S\+H\+O\+RT}} 0
+\item 
+const \mbox{\hyperlink{calendar_8php_a9c9fe5f9ca669cef514f9dd9839c63d2}{C\+A\+L\+\_\+\+M\+O\+N\+T\+H\+\_\+\+G\+R\+E\+G\+O\+R\+I\+A\+N\+\_\+\+L\+O\+NG}} 1
+\item 
+const \mbox{\hyperlink{calendar_8php_a021e312653ef101cab6d84d6a4f87d98}{C\+A\+L\+\_\+\+M\+O\+N\+T\+H\+\_\+\+J\+U\+L\+I\+A\+N\+\_\+\+S\+H\+O\+RT}} 2
+\item 
+const \mbox{\hyperlink{calendar_8php_a0c175792f376f1309b223371824ee867}{C\+A\+L\+\_\+\+M\+O\+N\+T\+H\+\_\+\+J\+U\+L\+I\+A\+N\+\_\+\+L\+O\+NG}} 3
+\item 
+const \mbox{\hyperlink{calendar_8php_ae8e4242be22dee3ed690c04a133b4e72}{C\+A\+L\+\_\+\+M\+O\+N\+T\+H\+\_\+\+J\+E\+W\+I\+SH}} 4
+\item 
+const \mbox{\hyperlink{calendar_8php_a17a39e54f2173c134935858fe7371e29}{C\+A\+L\+\_\+\+M\+O\+N\+T\+H\+\_\+\+F\+R\+E\+N\+CH}} 5
+\item 
+const \mbox{\hyperlink{calendar_8php_ac9294b784da8bd2b7db6fefdcaa15993}{C\+A\+L\+\_\+\+E\+A\+S\+T\+E\+R\+\_\+\+D\+E\+F\+A\+U\+LT}} 0
+\item 
+const \mbox{\hyperlink{calendar_8php_a464779b703e6537eed5d62cb0f065063}{C\+A\+L\+\_\+\+E\+A\+S\+T\+E\+R\+\_\+\+R\+O\+M\+AN}} 1
+\item 
+const \mbox{\hyperlink{calendar_8php_a63f5f0848e0989b125d20d4053852084}{C\+A\+L\+\_\+\+E\+A\+S\+T\+E\+R\+\_\+\+A\+L\+W\+A\+Y\+S\+\_\+\+G\+R\+E\+G\+O\+R\+I\+AN}} 2
+\item 
+const \mbox{\hyperlink{calendar_8php_a6fe57914ab1bb01745cc1805a3dce573}{C\+A\+L\+\_\+\+E\+A\+S\+T\+E\+R\+\_\+\+A\+L\+W\+A\+Y\+S\+\_\+\+J\+U\+L\+I\+AN}} 3
+\item 
+const \mbox{\hyperlink{calendar_8php_af420b96dc98c8996232c514ac7c6602e}{C\+A\+L\+\_\+\+J\+E\+W\+I\+S\+H\+\_\+\+A\+D\+D\+\_\+\+A\+L\+A\+F\+I\+M\+\_\+\+G\+E\+R\+E\+SH}} 2
+\item 
+const \mbox{\hyperlink{calendar_8php_aeb9262aa017dbe9b32e73775dc30ff9d}{C\+A\+L\+\_\+\+J\+E\+W\+I\+S\+H\+\_\+\+A\+D\+D\+\_\+\+A\+L\+A\+F\+IM}} 4
+\item 
+const \mbox{\hyperlink{calendar_8php_abc0550e27de333684b55e0d652aeb1ce}{C\+A\+L\+\_\+\+J\+E\+W\+I\+S\+H\+\_\+\+A\+D\+D\+\_\+\+G\+E\+R\+E\+S\+H\+A\+Y\+IM}} 8
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{calendar_8php_ad72d26fe1c18778c62a7e707ab43d9c2}\label{calendar_8php_ad72d26fe1c18778c62a7e707ab43d9c2}} 
+\index{calendar.php@{calendar.php}!cal\_days\_in\_month@{cal\_days\_in\_month}}
+\index{cal\_days\_in\_month@{cal\_days\_in\_month}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{cal\_days\_in\_month()}{cal\_days\_in\_month()}}
+{\footnotesize\ttfamily cal\+\_\+days\+\_\+in\+\_\+month (\begin{DoxyParamCaption}\item[{}]{\$calendar,  }\item[{}]{\$month,  }\item[{}]{\$year }\end{DoxyParamCaption})}
+
+Return the number of days in a month for a given year and calendar \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$calendar }} Calendar to use for calculation 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$month} & \\
+\hline
+\end{DoxyParams}
+Month in the selected calendar 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$year} & \\
+\hline
+\end{DoxyParams}
+Year in the selected calendar 
+
+\begin{DoxyReturn}{Returns}
+int The length in days of the selected month in the given calendar 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{calendar_8php_a193cd8baa536c3f781b5b7a54b75b73f}\label{calendar_8php_a193cd8baa536c3f781b5b7a54b75b73f}} 
+\index{calendar.php@{calendar.php}!cal\_from\_jd@{cal\_from\_jd}}
+\index{cal\_from\_jd@{cal\_from\_jd}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{cal\_from\_jd()}{cal\_from\_jd()}}
+{\footnotesize\ttfamily cal\+\_\+from\+\_\+jd (\begin{DoxyParamCaption}\item[{}]{\$jd,  }\item[{}]{\$calendar }\end{DoxyParamCaption})}
+
+Converts from Julian Day Count to a supported calendar \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$jd }} Julian day as integer 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$calendar} & \\
+\hline
+\end{DoxyParams}
+Calendar to convert to 
+
+\begin{DoxyReturn}{Returns}
+array an array containing calendar information like month, day, year, day of week, abbreviated and full names of weekday and month and the date in string form \char`\"{}month/day/year\char`\"{}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{calendar_8php_a5f96f729170122fcf929638e56aec36c}\label{calendar_8php_a5f96f729170122fcf929638e56aec36c}} 
+\index{calendar.php@{calendar.php}!cal\_info@{cal\_info}}
+\index{cal\_info@{cal\_info}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{cal\_info()}{cal\_info()}}
+{\footnotesize\ttfamily cal\+\_\+info (\begin{DoxyParamCaption}\item[{}]{\$calendar = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Returns information about a particular calendar \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$calendar \mbox{[}optional\mbox{]} }} Calendar to return information for. If no calendar is specified information about all calendars is returned. 
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{calendar_8php_a828d61e74504ee92d330e7f5c2a4b259}\label{calendar_8php_a828d61e74504ee92d330e7f5c2a4b259}} 
+\index{calendar.php@{calendar.php}!cal\_to\_jd@{cal\_to\_jd}}
+\index{cal\_to\_jd@{cal\_to\_jd}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{cal\_to\_jd()}{cal\_to\_jd()}}
+{\footnotesize\ttfamily cal\+\_\+to\+\_\+jd (\begin{DoxyParamCaption}\item[{}]{\$calendar,  }\item[{}]{\$month,  }\item[{}]{\$day,  }\item[{}]{\$year }\end{DoxyParamCaption})}
+
+Converts from a supported calendar to Julian Day Count \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$calendar }} Calendar to convert from, one of {\bfseries{C\+A\+L\+\_\+\+G\+R\+E\+G\+O\+R\+I\+AN}}, {\bfseries{C\+A\+L\+\_\+\+J\+U\+L\+I\+AN}}, {\bfseries{C\+A\+L\+\_\+\+J\+E\+W\+I\+SH}} or {\bfseries{C\+A\+L\+\_\+\+F\+R\+E\+N\+CH}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$month} & \\
+\hline
+\end{DoxyParams}
+The month as a number, the valid range depends on the {\itshape calendar} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$day} & \\
+\hline
+\end{DoxyParams}
+The day as a number, the valid range depends on the {\itshape calendar} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$year} & \\
+\hline
+\end{DoxyParams}
+The year as a number, the valid range depends on the {\itshape calendar} 
+
+\begin{DoxyReturn}{Returns}
+int \mbox{\hyperlink{class_a}{A}} Julian Day number. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+1 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{calendar_8php_a613caf67a407b54515e17fbfe30e50fe}\label{calendar_8php_a613caf67a407b54515e17fbfe30e50fe}} 
+\index{calendar.php@{calendar.php}!easter\_date@{easter\_date}}
+\index{easter\_date@{easter\_date}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{easter\_date()}{easter\_date()}}
+{\footnotesize\ttfamily easter\+\_\+date (\begin{DoxyParamCaption}\item[{}]{\$year = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Get Unix timestamp for midnight on Easter of a given year \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$year \mbox{[}optional\mbox{]} }} The year as a number between 1970 an 2037 
+
+\begin{DoxyReturn}{Returns}
+int The easter date as a unix timestamp. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{calendar_8php_a1b01239b196c2bdf12f4eaf8253cbde1}\label{calendar_8php_a1b01239b196c2bdf12f4eaf8253cbde1}} 
+\index{calendar.php@{calendar.php}!easter\_days@{easter\_days}}
+\index{easter\_days@{easter\_days}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{easter\_days()}{easter\_days()}}
+{\footnotesize\ttfamily easter\+\_\+days (\begin{DoxyParamCaption}\item[{}]{\$year = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$method = {\ttfamily \mbox{\hyperlink{calendar_8php_ac9294b784da8bd2b7db6fefdcaa15993}{C\+A\+L\+\_\+\+E\+A\+S\+T\+E\+R\+\_\+\+D\+E\+F\+A\+U\+LT}}} }\end{DoxyParamCaption})}
+
+Get number of days after March 21 on which Easter falls for a given year \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$year \mbox{[}optional\mbox{]} }} The year as a positive number 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$method} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Allows to calculate easter dates based on the Gregorian calendar during the years 1582 -\/ 1752 when set to {\bfseries{C\+A\+L\+\_\+\+E\+A\+S\+T\+E\+R\+\_\+\+R\+O\+M\+AN}}. See the calendar constants for more valid constants. 
+
+\begin{DoxyReturn}{Returns}
+int The number of days after March 21st that the Easter Sunday is in the given {\itshape year}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{calendar_8php_a16110a14062b4daaa77cf559ad3874bb}\label{calendar_8php_a16110a14062b4daaa77cf559ad3874bb}} 
+\index{calendar.php@{calendar.php}!frenchtojd@{frenchtojd}}
+\index{frenchtojd@{frenchtojd}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{frenchtojd()}{frenchtojd()}}
+{\footnotesize\ttfamily frenchtojd (\begin{DoxyParamCaption}\item[{}]{\$month,  }\item[{}]{\$day,  }\item[{}]{\$year }\end{DoxyParamCaption})}
+
+Converts a date from the French Republican Calendar to a Julian Day Count \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$month }} The month as a number from 1 (for Vendémiaire) to 13 (for the period of 5-\/6 days at the end of each year) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$day} & \\
+\hline
+\end{DoxyParams}
+The day as a number from 1 to 30 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$year} & \\
+\hline
+\end{DoxyParams}
+The year as a number between 1 and 14 
+
+\begin{DoxyReturn}{Returns}
+int The julian day for the given french revolution date as an integer. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{calendar_8php_af6e250101c22be9130a5aee24faa21bf}\label{calendar_8php_af6e250101c22be9130a5aee24faa21bf}} 
+\index{calendar.php@{calendar.php}!gregoriantojd@{gregoriantojd}}
+\index{gregoriantojd@{gregoriantojd}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{gregoriantojd()}{gregoriantojd()}}
+{\footnotesize\ttfamily gregoriantojd (\begin{DoxyParamCaption}\item[{}]{\$month,  }\item[{}]{\$day,  }\item[{}]{\$year }\end{DoxyParamCaption})}
+
+Converts a Gregorian date to Julian Day Count \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$month }} The month as a number from 1 (for January) to 12 (for December) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$day} & \\
+\hline
+\end{DoxyParams}
+The day as a number from 1 to 31 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$year} & \\
+\hline
+\end{DoxyParams}
+The year as a number between -\/4714 and 9999 
+
+\begin{DoxyReturn}{Returns}
+int The julian day for the given gregorian date as an integer. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{calendar_8php_a3f93b6434992d59deca69c51920a7154}\label{calendar_8php_a3f93b6434992d59deca69c51920a7154}} 
+\index{calendar.php@{calendar.php}!jddayofweek@{jddayofweek}}
+\index{jddayofweek@{jddayofweek}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{jddayofweek()}{jddayofweek()}}
+{\footnotesize\ttfamily jddayofweek (\begin{DoxyParamCaption}\item[{}]{\$julianday,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{calendar_8php_a8e03f2e404f7086f630e226e77e9cb01}{C\+A\+L\+\_\+\+D\+O\+W\+\_\+\+D\+A\+Y\+NO}}} }\end{DoxyParamCaption})}
+
+Returns the day of the week \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$julianday }} \mbox{\hyperlink{class_a}{A}} julian day number as integer 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} {\begin{tabularx}{\linewidth}{|*{0}{>{\raggedright\arraybackslash}X|}}\hline
+\end{tabularx}}
+week modes \\
+\hline
+\end{DoxyParams}
+
+
+Mode 
+
+Meaning  
+
+0 (Default) 
+
+Return the day number as an int (0=Sunday, 1=Monday, etc)   
+
+1 
+
+Returns string containing the day of week (English-\/\+Gregorian)   
+
+2 
+
+Return a string containing the abbreviated day of week (English-\/\+Gregorian)   
+
+\begin{DoxyReturn}{Returns}
+mixed The gregorian weekday as either an integer or string. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{calendar_8php_ad3216bef475876f7eff4ff952d8baa94}\label{calendar_8php_ad3216bef475876f7eff4ff952d8baa94}} 
+\index{calendar.php@{calendar.php}!jdmonthname@{jdmonthname}}
+\index{jdmonthname@{jdmonthname}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{jdmonthname()}{jdmonthname()}}
+{\footnotesize\ttfamily jdmonthname (\begin{DoxyParamCaption}\item[{}]{\$julianday,  }\item[{}]{\$mode }\end{DoxyParamCaption})}
+
+Returns a month name \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$julianday  int \$mode  string The month name for the given Julian Day and {\itshape calendar}.  4.\+0  5.\+0 }}\mbox{\Hypertarget{calendar_8php_a9e5f674587a1e1aca6dd0212141bb013}\label{calendar_8php_a9e5f674587a1e1aca6dd0212141bb013}} 
+\index{calendar.php@{calendar.php}!jdtofrench@{jdtofrench}}
+\index{jdtofrench@{jdtofrench}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{jdtofrench()}{jdtofrench()}}
+{\footnotesize\ttfamily jdtofrench (\begin{DoxyParamCaption}\item[{}]{\$juliandaycount }\end{DoxyParamCaption})}
+
+Converts a Julian Day Count to the French Republican Calendar \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$juliandaycount  string The french revolution date as a string in the form \char`\"{}month/day/year\char`\"{}  4.\+0  5.\+0 }}\mbox{\Hypertarget{calendar_8php_a4f8001cb32ce7810311acd920a415624}\label{calendar_8php_a4f8001cb32ce7810311acd920a415624}} 
+\index{calendar.php@{calendar.php}!jdtogregorian@{jdtogregorian}}
+\index{jdtogregorian@{jdtogregorian}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{jdtogregorian()}{jdtogregorian()}}
+{\footnotesize\ttfamily jdtogregorian (\begin{DoxyParamCaption}\item[{}]{\$julianday }\end{DoxyParamCaption})}
+
+Converts Julian Day Count to Gregorian date \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$julianday }} \mbox{\hyperlink{class_a}{A}} julian day number as integer 
+
+\begin{DoxyReturn}{Returns}
+string The gregorian date as a string in the form \char`\"{}month/day/year\char`\"{} 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{calendar_8php_a0a7e3a191a1c19f5a301c9ea58e14ad5}\label{calendar_8php_a0a7e3a191a1c19f5a301c9ea58e14ad5}} 
+\index{calendar.php@{calendar.php}!jdtojewish@{jdtojewish}}
+\index{jdtojewish@{jdtojewish}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{jdtojewish()}{jdtojewish()}}
+{\footnotesize\ttfamily jdtojewish (\begin{DoxyParamCaption}\item[{}]{\$juliandaycount,  }\item[{}]{\$hebrew = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}},  }\item[{}]{\$fl = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Converts a Julian day count to a Jewish calendar date \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$juliandaycount  bool \$hebrew \mbox{[}optional\mbox{]} }} If the {\itshape hebrew} parameter is set to {\bfseries{T\+R\+UE}}, the {\itshape fl} parameter is used for Hebrew, string based, output format. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$fl} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The available formats are\+: {\bfseries{C\+A\+L\+\_\+\+J\+E\+W\+I\+S\+H\+\_\+\+A\+D\+D\+\_\+\+A\+L\+A\+F\+I\+M\+\_\+\+G\+E\+R\+E\+SH}}, {\bfseries{C\+A\+L\+\_\+\+J\+E\+W\+I\+S\+H\+\_\+\+A\+D\+D\+\_\+\+A\+L\+A\+F\+IM}}, {\bfseries{C\+A\+L\+\_\+\+J\+E\+W\+I\+S\+H\+\_\+\+A\+D\+D\+\_\+\+G\+E\+R\+E\+S\+H\+A\+Y\+IM}}. 
+
+\begin{DoxyReturn}{Returns}
+string The jewish date as a string in the form \char`\"{}month/day/year\char`\"{} 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{calendar_8php_adf0e3bd72938e8d6a05e52e8a102dc2e}\label{calendar_8php_adf0e3bd72938e8d6a05e52e8a102dc2e}} 
+\index{calendar.php@{calendar.php}!jdtojulian@{jdtojulian}}
+\index{jdtojulian@{jdtojulian}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{jdtojulian()}{jdtojulian()}}
+{\footnotesize\ttfamily jdtojulian (\begin{DoxyParamCaption}\item[{}]{\$julianday }\end{DoxyParamCaption})}
+
+Converts a Julian Day Count to a Julian Calendar Date \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$julianday }} \mbox{\hyperlink{class_a}{A}} julian day number as integer 
+
+\begin{DoxyReturn}{Returns}
+string The julian date as a string in the form \char`\"{}month/day/year\char`\"{} 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{calendar_8php_aff3a1628a9968dbb60ff3f72899026ee}\label{calendar_8php_aff3a1628a9968dbb60ff3f72899026ee}} 
+\index{calendar.php@{calendar.php}!jdtounix@{jdtounix}}
+\index{jdtounix@{jdtounix}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{jdtounix()}{jdtounix()}}
+{\footnotesize\ttfamily jdtounix (\begin{DoxyParamCaption}\item[{}]{\$jday }\end{DoxyParamCaption})}
+
+Convert Julian Day to Unix timestamp \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$jday }} \mbox{\hyperlink{class_a}{A}} julian day number between 2440588 and 2465342. 
+
+\begin{DoxyReturn}{Returns}
+int The unix timestamp for the start of the given julian day. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{calendar_8php_a3ce8c05797aac5b591b66004d6e9815e}\label{calendar_8php_a3ce8c05797aac5b591b66004d6e9815e}} 
+\index{calendar.php@{calendar.php}!jewishtojd@{jewishtojd}}
+\index{jewishtojd@{jewishtojd}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{jewishtojd()}{jewishtojd()}}
+{\footnotesize\ttfamily jewishtojd (\begin{DoxyParamCaption}\item[{}]{\$month,  }\item[{}]{\$day,  }\item[{}]{\$year }\end{DoxyParamCaption})}
+
+Converts a date in the Jewish Calendar to Julian Day Count \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$month }} The month as a number from 1 to 13 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$day} & \\
+\hline
+\end{DoxyParams}
+The day as a number from 1 to 30 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$year} & \\
+\hline
+\end{DoxyParams}
+The year as a number between 1 and 9999 
+
+\begin{DoxyReturn}{Returns}
+int The julian day for the given jewish date as an integer. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{calendar_8php_a2f1f3c8b51945c98481046a6d3412798}\label{calendar_8php_a2f1f3c8b51945c98481046a6d3412798}} 
+\index{calendar.php@{calendar.php}!juliantojd@{juliantojd}}
+\index{juliantojd@{juliantojd}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{juliantojd()}{juliantojd()}}
+{\footnotesize\ttfamily juliantojd (\begin{DoxyParamCaption}\item[{}]{\$month,  }\item[{}]{\$day,  }\item[{}]{\$year }\end{DoxyParamCaption})}
+
+Converts a Julian Calendar date to Julian Day Count \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$month }} The month as a number from 1 (for January) to 12 (for December) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$day} & \\
+\hline
+\end{DoxyParams}
+The day as a number from 1 to 31 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$year} & \\
+\hline
+\end{DoxyParams}
+The year as a number between -\/4713 and 9999 
+
+\begin{DoxyReturn}{Returns}
+int The julian day for the given julian date as an integer. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{calendar_8php_a718f26fe5e0cc69c56cb05475d7fa473}\label{calendar_8php_a718f26fe5e0cc69c56cb05475d7fa473}} 
+\index{calendar.php@{calendar.php}!unixtojd@{unixtojd}}
+\index{unixtojd@{unixtojd}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{unixtojd()}{unixtojd()}}
+{\footnotesize\ttfamily unixtojd (\begin{DoxyParamCaption}\item[{}]{\$timestamp = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Convert Unix timestamp to Julian Day \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$timestamp \mbox{[}optional\mbox{]} defaults to time() }} \mbox{\hyperlink{class_a}{A}} unix timestamp to convert. 
+
+\begin{DoxyReturn}{Returns}
+int \mbox{\hyperlink{class_a}{A}} julian day number as integer. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{calendar_8php_a8e03f2e404f7086f630e226e77e9cb01}\label{calendar_8php_a8e03f2e404f7086f630e226e77e9cb01}} 
+\index{calendar.php@{calendar.php}!CAL\_DOW\_DAYNO@{CAL\_DOW\_DAYNO}}
+\index{CAL\_DOW\_DAYNO@{CAL\_DOW\_DAYNO}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_DOW\_DAYNO}{CAL\_DOW\_DAYNO}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+D\+O\+W\+\_\+\+D\+A\+Y\+NO 0}
+
+\mbox{\Hypertarget{calendar_8php_ad4cb2e66821b67634b5d9b2d4e02d354}\label{calendar_8php_ad4cb2e66821b67634b5d9b2d4e02d354}} 
+\index{calendar.php@{calendar.php}!CAL\_DOW\_LONG@{CAL\_DOW\_LONG}}
+\index{CAL\_DOW\_LONG@{CAL\_DOW\_LONG}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_DOW\_LONG}{CAL\_DOW\_LONG}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+D\+O\+W\+\_\+\+L\+O\+NG 1}
+
+\mbox{\Hypertarget{calendar_8php_a92fa9e97dd2e491c1b87aadd44d6afc5}\label{calendar_8php_a92fa9e97dd2e491c1b87aadd44d6afc5}} 
+\index{calendar.php@{calendar.php}!CAL\_DOW\_SHORT@{CAL\_DOW\_SHORT}}
+\index{CAL\_DOW\_SHORT@{CAL\_DOW\_SHORT}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_DOW\_SHORT}{CAL\_DOW\_SHORT}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+D\+O\+W\+\_\+\+S\+H\+O\+RT 2}
+
+\mbox{\Hypertarget{calendar_8php_a63f5f0848e0989b125d20d4053852084}\label{calendar_8php_a63f5f0848e0989b125d20d4053852084}} 
+\index{calendar.php@{calendar.php}!CAL\_EASTER\_ALWAYS\_GREGORIAN@{CAL\_EASTER\_ALWAYS\_GREGORIAN}}
+\index{CAL\_EASTER\_ALWAYS\_GREGORIAN@{CAL\_EASTER\_ALWAYS\_GREGORIAN}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_EASTER\_ALWAYS\_GREGORIAN}{CAL\_EASTER\_ALWAYS\_GREGORIAN}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+E\+A\+S\+T\+E\+R\+\_\+\+A\+L\+W\+A\+Y\+S\+\_\+\+G\+R\+E\+G\+O\+R\+I\+AN 2}
+
+\mbox{\Hypertarget{calendar_8php_a6fe57914ab1bb01745cc1805a3dce573}\label{calendar_8php_a6fe57914ab1bb01745cc1805a3dce573}} 
+\index{calendar.php@{calendar.php}!CAL\_EASTER\_ALWAYS\_JULIAN@{CAL\_EASTER\_ALWAYS\_JULIAN}}
+\index{CAL\_EASTER\_ALWAYS\_JULIAN@{CAL\_EASTER\_ALWAYS\_JULIAN}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_EASTER\_ALWAYS\_JULIAN}{CAL\_EASTER\_ALWAYS\_JULIAN}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+E\+A\+S\+T\+E\+R\+\_\+\+A\+L\+W\+A\+Y\+S\+\_\+\+J\+U\+L\+I\+AN 3}
+
+\mbox{\Hypertarget{calendar_8php_ac9294b784da8bd2b7db6fefdcaa15993}\label{calendar_8php_ac9294b784da8bd2b7db6fefdcaa15993}} 
+\index{calendar.php@{calendar.php}!CAL\_EASTER\_DEFAULT@{CAL\_EASTER\_DEFAULT}}
+\index{CAL\_EASTER\_DEFAULT@{CAL\_EASTER\_DEFAULT}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_EASTER\_DEFAULT}{CAL\_EASTER\_DEFAULT}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+E\+A\+S\+T\+E\+R\+\_\+\+D\+E\+F\+A\+U\+LT 0}
+
+\mbox{\Hypertarget{calendar_8php_a464779b703e6537eed5d62cb0f065063}\label{calendar_8php_a464779b703e6537eed5d62cb0f065063}} 
+\index{calendar.php@{calendar.php}!CAL\_EASTER\_ROMAN@{CAL\_EASTER\_ROMAN}}
+\index{CAL\_EASTER\_ROMAN@{CAL\_EASTER\_ROMAN}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_EASTER\_ROMAN}{CAL\_EASTER\_ROMAN}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+E\+A\+S\+T\+E\+R\+\_\+\+R\+O\+M\+AN 1}
+
+\mbox{\Hypertarget{calendar_8php_ad8a2863f08bba37ea7dd5d6dac92ecd6}\label{calendar_8php_ad8a2863f08bba37ea7dd5d6dac92ecd6}} 
+\index{calendar.php@{calendar.php}!CAL\_FRENCH@{CAL\_FRENCH}}
+\index{CAL\_FRENCH@{CAL\_FRENCH}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_FRENCH}{CAL\_FRENCH}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+F\+R\+E\+N\+CH 3}
+
+\mbox{\Hypertarget{calendar_8php_a96ab6bacdfade32f5cb831aaaae0e450}\label{calendar_8php_a96ab6bacdfade32f5cb831aaaae0e450}} 
+\index{calendar.php@{calendar.php}!CAL\_GREGORIAN@{CAL\_GREGORIAN}}
+\index{CAL\_GREGORIAN@{CAL\_GREGORIAN}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_GREGORIAN}{CAL\_GREGORIAN}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+G\+R\+E\+G\+O\+R\+I\+AN 0}
+
+\mbox{\Hypertarget{calendar_8php_ad5d223f45816f9dde57f1be16b4cf85c}\label{calendar_8php_ad5d223f45816f9dde57f1be16b4cf85c}} 
+\index{calendar.php@{calendar.php}!CAL\_JEWISH@{CAL\_JEWISH}}
+\index{CAL\_JEWISH@{CAL\_JEWISH}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_JEWISH}{CAL\_JEWISH}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+J\+E\+W\+I\+SH 2}
+
+\mbox{\Hypertarget{calendar_8php_aeb9262aa017dbe9b32e73775dc30ff9d}\label{calendar_8php_aeb9262aa017dbe9b32e73775dc30ff9d}} 
+\index{calendar.php@{calendar.php}!CAL\_JEWISH\_ADD\_ALAFIM@{CAL\_JEWISH\_ADD\_ALAFIM}}
+\index{CAL\_JEWISH\_ADD\_ALAFIM@{CAL\_JEWISH\_ADD\_ALAFIM}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_JEWISH\_ADD\_ALAFIM}{CAL\_JEWISH\_ADD\_ALAFIM}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+J\+E\+W\+I\+S\+H\+\_\+\+A\+D\+D\+\_\+\+A\+L\+A\+F\+IM 4}
+
+\mbox{\Hypertarget{calendar_8php_af420b96dc98c8996232c514ac7c6602e}\label{calendar_8php_af420b96dc98c8996232c514ac7c6602e}} 
+\index{calendar.php@{calendar.php}!CAL\_JEWISH\_ADD\_ALAFIM\_GERESH@{CAL\_JEWISH\_ADD\_ALAFIM\_GERESH}}
+\index{CAL\_JEWISH\_ADD\_ALAFIM\_GERESH@{CAL\_JEWISH\_ADD\_ALAFIM\_GERESH}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_JEWISH\_ADD\_ALAFIM\_GERESH}{CAL\_JEWISH\_ADD\_ALAFIM\_GERESH}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+J\+E\+W\+I\+S\+H\+\_\+\+A\+D\+D\+\_\+\+A\+L\+A\+F\+I\+M\+\_\+\+G\+E\+R\+E\+SH 2}
+
+\mbox{\Hypertarget{calendar_8php_abc0550e27de333684b55e0d652aeb1ce}\label{calendar_8php_abc0550e27de333684b55e0d652aeb1ce}} 
+\index{calendar.php@{calendar.php}!CAL\_JEWISH\_ADD\_GERESHAYIM@{CAL\_JEWISH\_ADD\_GERESHAYIM}}
+\index{CAL\_JEWISH\_ADD\_GERESHAYIM@{CAL\_JEWISH\_ADD\_GERESHAYIM}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_JEWISH\_ADD\_GERESHAYIM}{CAL\_JEWISH\_ADD\_GERESHAYIM}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+J\+E\+W\+I\+S\+H\+\_\+\+A\+D\+D\+\_\+\+G\+E\+R\+E\+S\+H\+A\+Y\+IM 8}
+
+\mbox{\Hypertarget{calendar_8php_a86de0041eb9fa138ae1574691259e7fe}\label{calendar_8php_a86de0041eb9fa138ae1574691259e7fe}} 
+\index{calendar.php@{calendar.php}!CAL\_JULIAN@{CAL\_JULIAN}}
+\index{CAL\_JULIAN@{CAL\_JULIAN}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_JULIAN}{CAL\_JULIAN}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+J\+U\+L\+I\+AN 1}
+
+\mbox{\Hypertarget{calendar_8php_a17a39e54f2173c134935858fe7371e29}\label{calendar_8php_a17a39e54f2173c134935858fe7371e29}} 
+\index{calendar.php@{calendar.php}!CAL\_MONTH\_FRENCH@{CAL\_MONTH\_FRENCH}}
+\index{CAL\_MONTH\_FRENCH@{CAL\_MONTH\_FRENCH}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_MONTH\_FRENCH}{CAL\_MONTH\_FRENCH}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+M\+O\+N\+T\+H\+\_\+\+F\+R\+E\+N\+CH 5}
+
+\mbox{\Hypertarget{calendar_8php_a9c9fe5f9ca669cef514f9dd9839c63d2}\label{calendar_8php_a9c9fe5f9ca669cef514f9dd9839c63d2}} 
+\index{calendar.php@{calendar.php}!CAL\_MONTH\_GREGORIAN\_LONG@{CAL\_MONTH\_GREGORIAN\_LONG}}
+\index{CAL\_MONTH\_GREGORIAN\_LONG@{CAL\_MONTH\_GREGORIAN\_LONG}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_MONTH\_GREGORIAN\_LONG}{CAL\_MONTH\_GREGORIAN\_LONG}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+M\+O\+N\+T\+H\+\_\+\+G\+R\+E\+G\+O\+R\+I\+A\+N\+\_\+\+L\+O\+NG 1}
+
+\mbox{\Hypertarget{calendar_8php_aba22f82346588baa43c5f6b680f54f9e}\label{calendar_8php_aba22f82346588baa43c5f6b680f54f9e}} 
+\index{calendar.php@{calendar.php}!CAL\_MONTH\_GREGORIAN\_SHORT@{CAL\_MONTH\_GREGORIAN\_SHORT}}
+\index{CAL\_MONTH\_GREGORIAN\_SHORT@{CAL\_MONTH\_GREGORIAN\_SHORT}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_MONTH\_GREGORIAN\_SHORT}{CAL\_MONTH\_GREGORIAN\_SHORT}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+M\+O\+N\+T\+H\+\_\+\+G\+R\+E\+G\+O\+R\+I\+A\+N\+\_\+\+S\+H\+O\+RT 0}
+
+\mbox{\Hypertarget{calendar_8php_ae8e4242be22dee3ed690c04a133b4e72}\label{calendar_8php_ae8e4242be22dee3ed690c04a133b4e72}} 
+\index{calendar.php@{calendar.php}!CAL\_MONTH\_JEWISH@{CAL\_MONTH\_JEWISH}}
+\index{CAL\_MONTH\_JEWISH@{CAL\_MONTH\_JEWISH}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_MONTH\_JEWISH}{CAL\_MONTH\_JEWISH}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+M\+O\+N\+T\+H\+\_\+\+J\+E\+W\+I\+SH 4}
+
+\mbox{\Hypertarget{calendar_8php_a0c175792f376f1309b223371824ee867}\label{calendar_8php_a0c175792f376f1309b223371824ee867}} 
+\index{calendar.php@{calendar.php}!CAL\_MONTH\_JULIAN\_LONG@{CAL\_MONTH\_JULIAN\_LONG}}
+\index{CAL\_MONTH\_JULIAN\_LONG@{CAL\_MONTH\_JULIAN\_LONG}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_MONTH\_JULIAN\_LONG}{CAL\_MONTH\_JULIAN\_LONG}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+M\+O\+N\+T\+H\+\_\+\+J\+U\+L\+I\+A\+N\+\_\+\+L\+O\+NG 3}
+
+\mbox{\Hypertarget{calendar_8php_a021e312653ef101cab6d84d6a4f87d98}\label{calendar_8php_a021e312653ef101cab6d84d6a4f87d98}} 
+\index{calendar.php@{calendar.php}!CAL\_MONTH\_JULIAN\_SHORT@{CAL\_MONTH\_JULIAN\_SHORT}}
+\index{CAL\_MONTH\_JULIAN\_SHORT@{CAL\_MONTH\_JULIAN\_SHORT}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_MONTH\_JULIAN\_SHORT}{CAL\_MONTH\_JULIAN\_SHORT}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+M\+O\+N\+T\+H\+\_\+\+J\+U\+L\+I\+A\+N\+\_\+\+S\+H\+O\+RT 2}
+
+\mbox{\Hypertarget{calendar_8php_a49793850c6d947089d57621b7195b9a6}\label{calendar_8php_a49793850c6d947089d57621b7195b9a6}} 
+\index{calendar.php@{calendar.php}!CAL\_NUM\_CALS@{CAL\_NUM\_CALS}}
+\index{CAL\_NUM\_CALS@{CAL\_NUM\_CALS}!calendar.php@{calendar.php}}
+\doxysubsubsection{\texorpdfstring{CAL\_NUM\_CALS}{CAL\_NUM\_CALS}}
+{\footnotesize\ttfamily const C\+A\+L\+\_\+\+N\+U\+M\+\_\+\+C\+A\+LS 4}
+

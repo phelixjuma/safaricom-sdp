@@ -1,0 +1,1674 @@
+\hypertarget{radius_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/radius/radius.php File Reference}
+\label{radius_8php}\index{vendor/jetbrains/phpstorm-\/stubs/radius/radius.php@{vendor/jetbrains/phpstorm-\/stubs/radius/radius.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{radius_8php_a5596a0d1c9da4bd0fca8780277211c31}{radius\+\_\+acct\+\_\+open}} ()
+\item 
+\mbox{\hyperlink{radius_8php_a00a1ce066495e4ecf7f763f01f016a5d}{radius\+\_\+add\+\_\+server}} (\$radius\+\_\+handle, \$hostname, \$port, \$secret, \$timeout, \$max\+\_\+tries)
+\item 
+\mbox{\hyperlink{radius_8php_a85e86c68d9ddd733e0dc471e05645c4a}{radius\+\_\+auth\+\_\+open}} ()
+\item 
+\mbox{\hyperlink{radius_8php_ac52195f22c250f92cbd87c2616e13248}{radius\+\_\+close}} (\$radius\+\_\+handle)
+\item 
+\mbox{\hyperlink{radius_8php_ad9ed6add97df717981fc8479897244d8}{radius\+\_\+config}} (\$radius\+\_\+handle, \$\mbox{\hyperlink{standard__5_8php_ac0d353a97d1662c811425338985026b1}{file}})
+\item 
+\mbox{\hyperlink{radius_8php_ac40f82af5d7d3f6c2a6845ebdb94aef8}{radius\+\_\+create\+\_\+request}} (\$radius\+\_\+handle, \$type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{radius_8php_a1344bb4d7c7fbbbc0c21862f21882249}{R\+A\+D\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+AG}} 1
+\item 
+const \mbox{\hyperlink{radius_8php_a70f7e09fddddc035b30d2da65aff3234}{R\+A\+D\+I\+U\+S\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+S\+A\+LT}} 2
+\item 
+const \mbox{\hyperlink{radius_8php_a20f5c233bb217f61ec2ffb698bc5bd2a}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+R\+E\+Q\+U\+E\+ST}} 1
+\item 
+const \mbox{\hyperlink{radius_8php_a098c3c04b05315e23fee9c96ebc65ac1}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+A\+C\+C\+E\+PT}} 2
+\item 
+const \mbox{\hyperlink{radius_8php_a365a7439a73e20f891266b48375b8f1e}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+R\+E\+J\+E\+CT}} 3
+\item 
+const \mbox{\hyperlink{radius_8php_a93336ae4c0148a81d7879786cba8812e}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+R\+E\+Q\+U\+E\+ST}} 4
+\item 
+const \mbox{\hyperlink{radius_8php_a5be880fa75a72de8ac3623e4ec97ff47}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+R\+E\+S\+P\+O\+N\+SE}} 5
+\item 
+const \mbox{\hyperlink{radius_8php_adb5f94b367a9081cd8a631bd121790a3}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+C\+H\+A\+L\+L\+E\+N\+GE}} 11
+\item 
+const \mbox{\hyperlink{radius_8php_a1c2ce50d50300a8d081dd2e83798563e}{R\+A\+D\+I\+U\+S\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+\_\+\+R\+E\+Q\+U\+E\+ST}} 40
+\item 
+const \mbox{\hyperlink{radius_8php_a40c39f59469929bdf3720e5a95cced74}{R\+A\+D\+I\+U\+S\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+\_\+\+A\+CK}} 41
+\item 
+const \mbox{\hyperlink{radius_8php_ab44e1757b50cc1efd511288a9b9f9bc7}{R\+A\+D\+I\+U\+S\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+\_\+\+N\+AK}} 42
+\item 
+const \mbox{\hyperlink{radius_8php_a347d4857a45d06e5b23e29998ff4a50d}{R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+A\+\_\+\+R\+E\+Q\+U\+E\+ST}} 43
+\item 
+const \mbox{\hyperlink{radius_8php_a4335fea0d77333ebaa671ca2d69fa14c}{R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+A\+\_\+\+A\+CK}} 44
+\item 
+const \mbox{\hyperlink{radius_8php_a477469e8e0b440791841387598ba7a2d}{R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+A\+\_\+\+N\+AK}} 45
+\item 
+const \mbox{\hyperlink{radius_8php_af4037f903a9007cad16719b65761445c}{R\+A\+D\+I\+U\+S\+\_\+\+U\+S\+E\+R\+\_\+\+N\+A\+ME}} 1
+\item 
+const \mbox{\hyperlink{radius_8php_ae6e70ea7685ee31edf4c7d9f93c7bcbf}{R\+A\+D\+I\+U\+S\+\_\+\+U\+S\+E\+R\+\_\+\+P\+A\+S\+S\+W\+O\+RD}} 2
+\item 
+const \mbox{\hyperlink{radius_8php_ab6a65a0aa6e5dc885108e098ce65af44}{R\+A\+D\+I\+U\+S\+\_\+\+C\+H\+A\+P\+\_\+\+P\+A\+S\+S\+W\+O\+RD}} 3
+\item 
+const \mbox{\hyperlink{radius_8php_a0b15ab437b036f2772b85269f8dd7f19}{R\+A\+D\+I\+U\+S\+\_\+\+N\+A\+S\+\_\+\+I\+P\+\_\+\+A\+D\+D\+R\+E\+SS}} 4
+\item 
+const \mbox{\hyperlink{radius_8php_aa9fdc9979a0f734512d25efdfc3f603e}{R\+A\+D\+I\+U\+S\+\_\+\+N\+A\+S\+\_\+\+P\+O\+RT}} 5
+\item 
+const \mbox{\hyperlink{radius_8php_a4e945f7a157580d5fee1a667c07578ce}{R\+A\+D\+I\+U\+S\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}} 6
+\item 
+const \mbox{\hyperlink{radius_8php_a980b2e5463422134e378ffb3b902bbfb}{R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+IN}} 1
+\item 
+const \mbox{\hyperlink{radius_8php_aa9bdd8116628adeb8031d65e490d1d4e}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+ED}} 2
+\item 
+const \mbox{\hyperlink{radius_8php_a7f345d8dd1466c0230d62f1e7b3cfccb}{R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+L\+O\+G\+IN}} 3
+\item 
+const \mbox{\hyperlink{radius_8php_ad984ed15ad715e52e3966b824d7d0e78}{R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+F\+R\+A\+M\+ED}} 4
+\item 
+const \mbox{\hyperlink{radius_8php_add5c41a45b295f82a90eecf4f89a08f1}{R\+A\+D\+I\+U\+S\+\_\+\+O\+U\+T\+B\+O\+U\+ND}} 5
+\item 
+const \mbox{\hyperlink{radius_8php_a25f0d55ace434d5cd9276aec4b609d2d}{R\+A\+D\+I\+U\+S\+\_\+\+A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+I\+VE}} 6
+\item 
+const \mbox{\hyperlink{radius_8php_a79bfd57313a142d0ccfb4dd20074b480}{R\+A\+D\+I\+U\+S\+\_\+\+N\+A\+S\+\_\+\+P\+R\+O\+M\+PT}} 7
+\item 
+const \mbox{\hyperlink{radius_8php_ad312c629c649526b2b7e32362d38e588}{R\+A\+D\+I\+U\+S\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+E\+\_\+\+O\+N\+LY}} 8
+\item 
+const \mbox{\hyperlink{radius_8php_a34dc96ff03b38f7feda649f34c6dfc84}{R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+N\+A\+S\+\_\+\+P\+R\+O\+M\+PT}} 9
+\item 
+const \mbox{\hyperlink{radius_8php_ab0aa8625aee7b6ce7e23444307933220}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+P\+R\+O\+T\+O\+C\+OL}} 7
+\item 
+const \mbox{\hyperlink{radius_8php_a1b998af5d6c109f0a10dd936a2bcdacf}{R\+A\+D\+I\+U\+S\+\_\+\+P\+PP}} 1
+\item 
+const \mbox{\hyperlink{radius_8php_ad4b6cbaec20ddf566bb2f142f566aff0}{R\+A\+D\+I\+U\+S\+\_\+\+S\+L\+IP}} 2
+\item 
+const \mbox{\hyperlink{radius_8php_a47e2293adce2422f3365652c8b1879ad}{R\+A\+D\+I\+U\+S\+\_\+\+A\+R\+AP}} 3
+\item 
+const \mbox{\hyperlink{radius_8php_a17f3ad61075e9a14fe04793953e90f03}{R\+A\+D\+I\+U\+S\+\_\+\+G\+A\+N\+D\+A\+LF}} 4
+\item 
+const \mbox{\hyperlink{radius_8php_aec9bd1c22bd4a50bada28e9aeb014b64}{R\+A\+D\+I\+U\+S\+\_\+\+X\+Y\+L\+O\+G\+I\+CS}} 5
+\item 
+const \mbox{\hyperlink{radius_8php_ac36759da387be83efd45b69a92208043}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+I\+P\+\_\+\+A\+D\+D\+R\+E\+SS}} 8
+\item 
+const \mbox{\hyperlink{radius_8php_a3358e12d7789bc1ea922341e78f3d88b}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+I\+P\+\_\+\+N\+E\+T\+M\+A\+SK}} 9
+\item 
+const \mbox{\hyperlink{radius_8php_a7fe25031808e82370a52a3e574da0c39}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+R\+O\+U\+T\+I\+NG}} 10
+\item 
+const \mbox{\hyperlink{radius_8php_a295fcd7ce864ee355ad988dd3b0a0fc2}{R\+A\+D\+I\+U\+S\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+ID}} 11
+\item 
+const \mbox{\hyperlink{radius_8php_acf99007fa505abb45b60bcbc05c140f3}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+M\+TU}} 12
+\item 
+const \mbox{\hyperlink{radius_8php_a14ec6ada411443d4ed4758ff715c55bc}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+ON}} 13
+\item 
+const \mbox{\hyperlink{radius_8php_a0c73ac87962d16b81ad1911b6c2e7508}{R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+M\+P\+\_\+\+N\+O\+NE}} 0
+\item 
+const \mbox{\hyperlink{radius_8php_a6c9d74cf6c455c1cc95e1edfaec59dfc}{R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+M\+P\+\_\+\+VJ}} 1
+\item 
+const \mbox{\hyperlink{radius_8php_ae808038e79d1ac8571b1d1b6d17ff4a8}{R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+M\+P\+\_\+\+I\+P\+X\+H\+DR}} 2
+\item 
+const \mbox{\hyperlink{radius_8php_ad49f41a98579ed888fee71d140ef5c84}{R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+I\+P\+\_\+\+H\+O\+ST}} 14
+\item 
+const \mbox{\hyperlink{radius_8php_a831883dbbaa63281d679ebc31dcd4943}{R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+S\+E\+R\+V\+I\+CE}} 15
+\item 
+const \mbox{\hyperlink{radius_8php_aec8ed3a721ee4be5d50f5d079fadbfc3}{R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+T\+C\+P\+\_\+\+P\+O\+RT}} 16
+\item 
+const \mbox{\hyperlink{radius_8php_ae66cd8195c180de3eca650990ffac6fc}{R\+A\+D\+I\+U\+S\+\_\+\+R\+E\+P\+L\+Y\+\_\+\+M\+E\+S\+S\+A\+GE}} 18
+\item 
+const \mbox{\hyperlink{radius_8php_af1be94205788930bcd255027295201bb}{R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+N\+U\+M\+B\+ER}} 19
+\item 
+const \mbox{\hyperlink{radius_8php_aab5ae50c5dfee442e723014ac25c4592}{R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+ID}} 20
+\item 
+const \mbox{\hyperlink{radius_8php_a4cd09b0e9520298a8f274373ad293d01}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+R\+O\+U\+TE}} 22
+\item 
+const \mbox{\hyperlink{radius_8php_afd8c2b4147832fe5c5ec7cb8c6d63e19}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+I\+P\+X\+\_\+\+N\+E\+T\+W\+O\+RK}} 23
+\item 
+const \mbox{\hyperlink{radius_8php_a12dc5de873dbb1485905b303c9b91175}{R\+A\+D\+I\+U\+S\+\_\+\+S\+T\+A\+TE}} 24
+\item 
+const \mbox{\hyperlink{radius_8php_a515ddd3048ed6ac7dc3dee7e2dbd7cfa}{R\+A\+D\+I\+U\+S\+\_\+\+C\+L\+A\+SS}} 25
+\item 
+const \mbox{\hyperlink{radius_8php_a204520ea59ba8b072c99ad8dc4493488}{R\+A\+D\+I\+U\+S\+\_\+\+V\+E\+N\+D\+O\+R\+\_\+\+S\+P\+E\+C\+I\+F\+IC}} 26
+\item 
+const \mbox{\hyperlink{radius_8php_adfd511ec5681b8a1fac96097b342278b}{R\+A\+D\+I\+U\+S\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+UT}} 27
+\item 
+const \mbox{\hyperlink{radius_8php_ae3de1b4ab45998184e7ba9347f760703}{R\+A\+D\+I\+U\+S\+\_\+\+I\+D\+L\+E\+\_\+\+T\+I\+M\+E\+O\+UT}} 28
+\item 
+const \mbox{\hyperlink{radius_8php_abcdfe5a99cb712d273b6a7898c8521cf}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+I\+N\+A\+T\+I\+O\+N\+\_\+\+A\+C\+T\+I\+ON}} 29
+\item 
+const \mbox{\hyperlink{radius_8php_a7f19b7751eb74cae24b2a32dbb5c3e3d}{R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+E\+D\+\_\+\+S\+T\+A\+T\+I\+O\+N\+\_\+\+ID}} 30
+\item 
+const \mbox{\hyperlink{radius_8php_a43a69a37ba1437be35985c34f007069c}{R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+I\+N\+G\+\_\+\+S\+T\+A\+T\+I\+O\+N\+\_\+\+ID}} 31
+\item 
+const \mbox{\hyperlink{radius_8php_a49dff49d81c95ba77cd40045916d9294}{R\+A\+D\+I\+U\+S\+\_\+\+N\+A\+S\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+ER}} 32
+\item 
+const \mbox{\hyperlink{radius_8php_a5da362279688e85acc8bf457e2613a5a}{R\+A\+D\+I\+U\+S\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+S\+T\+A\+TE}} 33
+\item 
+const \mbox{\hyperlink{radius_8php_a825ece7f135a29451828eed4556f7db8}{R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+L\+A\+T\+\_\+\+S\+E\+R\+V\+I\+CE}} 34
+\item 
+const \mbox{\hyperlink{radius_8php_a0c35d9cec2591adf42225fb63c428c59}{R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+L\+A\+T\+\_\+\+N\+O\+DE}} 35
+\item 
+const \mbox{\hyperlink{radius_8php_ac0b1aee69ace258bb5f3a726ffc39b33}{R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+L\+A\+T\+\_\+\+G\+R\+O\+UP}} 36
+\item 
+const \mbox{\hyperlink{radius_8php_ab76f43932b9cd1bc6693f80eed52ade3}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+A\+P\+P\+L\+E\+T\+A\+L\+K\+\_\+\+L\+I\+NK}} 37
+\item 
+const \mbox{\hyperlink{radius_8php_a3c6fca47e019eb345c398ff136ed1e09}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+A\+P\+P\+L\+E\+T\+A\+L\+K\+\_\+\+N\+E\+T\+W\+O\+RK}} 38
+\item 
+const \mbox{\hyperlink{radius_8php_ad0bbe0e1018b52036c9b0e24b1a55984}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+A\+P\+P\+L\+E\+T\+A\+L\+K\+\_\+\+Z\+O\+NE}} 39
+\item 
+const \mbox{\hyperlink{radius_8php_a5269cf06915ad7d3cc2f166459cbf21b}{R\+A\+D\+I\+U\+S\+\_\+\+C\+H\+A\+P\+\_\+\+C\+H\+A\+L\+L\+E\+N\+GE}} 60
+\item 
+const \mbox{\hyperlink{radius_8php_ae51bed9f02d0dc2dff7770daadb46ed5}{R\+A\+D\+I\+U\+S\+\_\+\+N\+A\+S\+\_\+\+P\+O\+R\+T\+\_\+\+T\+Y\+PE}} 61
+\item 
+const \mbox{\hyperlink{radius_8php_a92c2c92e07251ac449cbb1ad784accc9}{R\+A\+D\+I\+U\+S\+\_\+\+A\+S\+Y\+NC}} 0
+\item 
+const \mbox{\hyperlink{radius_8php_a8036f57dd6ae2d149d8f9f0eab5f65f0}{R\+A\+D\+I\+U\+S\+\_\+\+S\+Y\+NC}} 1
+\item 
+const \mbox{\hyperlink{radius_8php_ab99f766672e2c1274b23b595f0a8e72c}{R\+A\+D\+I\+U\+S\+\_\+\+I\+S\+D\+N\+\_\+\+S\+Y\+NC}} 2
+\item 
+const \mbox{\hyperlink{radius_8php_a41b89b590a19a77cbb338ab90c556ecc}{R\+A\+D\+I\+U\+S\+\_\+\+I\+S\+D\+N\+\_\+\+A\+S\+Y\+N\+C\+\_\+\+V120}} 3
+\item 
+const \mbox{\hyperlink{radius_8php_afb8a3275d4cde1fd9ec703e20414d12b}{R\+A\+D\+I\+U\+S\+\_\+\+I\+S\+D\+N\+\_\+\+A\+S\+Y\+N\+C\+\_\+\+V110}} 4
+\item 
+const \mbox{\hyperlink{radius_8php_ad60d146aee62b82bfef85fcfe5736048}{R\+A\+D\+I\+U\+S\+\_\+\+V\+I\+R\+T\+U\+AL}} 5
+\item 
+const \mbox{\hyperlink{radius_8php_a48dfcbab69e704724767393000a855ef}{R\+A\+D\+I\+U\+S\+\_\+\+P\+I\+A\+FS}} 6
+\item 
+const \mbox{\hyperlink{radius_8php_aadf495d5618dfa1c96e1c54e558787bf}{R\+A\+D\+I\+U\+S\+\_\+\+H\+D\+L\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+C\+H\+A\+N\+N\+EL}} 7
+\item 
+const \mbox{\hyperlink{radius_8php_a6d83cc62c43dfec50b20043c288bdeb1}{R\+A\+D\+I\+U\+S\+\_\+\+X\+\_\+25}} 8
+\item 
+const \mbox{\hyperlink{radius_8php_af3896dcd44ed894281b0a710e23010cf}{R\+A\+D\+I\+U\+S\+\_\+\+X\+\_\+75}} 9
+\item 
+const \mbox{\hyperlink{radius_8php_a8ccb2e747313060b2d1ffaab32041957}{R\+A\+D\+I\+U\+S\+\_\+\+G\+\_\+3\+\_\+\+F\+AX}} 10
+\item 
+const \mbox{\hyperlink{radius_8php_a9f3acc50f140523e974a38578611c2e2}{R\+A\+D\+I\+U\+S\+\_\+\+S\+D\+SL}} 11
+\item 
+const \mbox{\hyperlink{radius_8php_a0d01c26a2dba8a87c1c9d00d711b812a}{R\+A\+D\+I\+U\+S\+\_\+\+A\+D\+S\+L\+\_\+\+C\+AP}} 12
+\item 
+const \mbox{\hyperlink{radius_8php_a4ad60c4889853f354150c550a7b82233}{R\+A\+D\+I\+U\+S\+\_\+\+A\+D\+S\+L\+\_\+\+D\+MT}} 13
+\item 
+const \mbox{\hyperlink{radius_8php_a97378ee3c79d4cefbca25a905ba22c07}{R\+A\+D\+I\+U\+S\+\_\+\+I\+D\+SL}} 14
+\item 
+const \mbox{\hyperlink{radius_8php_ae99531f0ee2253243b26c18c205dcdd8}{R\+A\+D\+I\+U\+S\+\_\+\+E\+T\+H\+E\+R\+N\+ET}} 15
+\item 
+const \mbox{\hyperlink{radius_8php_affe0cee5cdc3f96bc752170eb18b02f5}{R\+A\+D\+I\+U\+S\+\_\+\+X\+D\+SL}} 16
+\item 
+const \mbox{\hyperlink{radius_8php_a2ed2ceb20d597ef1a16160c5a8288c93}{R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+B\+LE}} 17
+\item 
+const \mbox{\hyperlink{radius_8php_aaa213e0f27613584cadb5345353f41ac}{R\+A\+D\+I\+U\+S\+\_\+\+W\+I\+R\+E\+L\+E\+S\+S\+\_\+\+O\+T\+H\+ER}} 18
+\item 
+const \mbox{\hyperlink{radius_8php_a21358e352807d45784315ab8c8a7d7fe}{R\+A\+D\+I\+U\+S\+\_\+\+W\+I\+R\+E\+L\+E\+S\+S\+\_\+\+I\+E\+E\+E\+\_\+802\+\_\+11}} 19
+\item 
+const \mbox{\hyperlink{radius_8php_aa03929c29dc2531bb47a1746bb08e0dc}{R\+A\+D\+I\+U\+S\+\_\+\+P\+O\+R\+T\+\_\+\+L\+I\+M\+IT}} 62
+\item 
+const \mbox{\hyperlink{radius_8php_aaf5adedba978cf4669b760616532f072}{R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+L\+A\+T\+\_\+\+P\+O\+RT}} 63
+\item 
+const \mbox{\hyperlink{radius_8php_a174b04fda15be62c3d99ec31a7c77ec9}{R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+I\+N\+FO}} 77
+\item 
+const \mbox{\hyperlink{radius_8php_a2d13f4dbd17130aa10476499867d9a76}{R\+A\+D\+I\+U\+S\+\_\+\+N\+A\+S\+\_\+\+I\+P\+V6\+\_\+\+A\+D\+D\+R\+E\+SS}} 95
+\item 
+const \mbox{\hyperlink{radius_8php_a682bee43a40976da589c1119af1fd681}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+ID}} 96
+\item 
+const \mbox{\hyperlink{radius_8php_a9e712336174b17a2a2f447dddbb4c165}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+I\+P\+V6\+\_\+\+P\+R\+E\+F\+IX}} 97
+\item 
+const \mbox{\hyperlink{radius_8php_a456be182a1285a2a4c28357d9d5cee04}{R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+I\+P\+V6\+\_\+\+H\+O\+ST}} 98
+\item 
+const \mbox{\hyperlink{radius_8php_aee19a49e3125a1f6078bae4a89be53eb}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+I\+P\+V6\+\_\+\+R\+O\+U\+TE}} 99
+\item 
+const \mbox{\hyperlink{radius_8php_a42e25eec51a63704a07bc72a50ae026e}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+I\+P\+V6\+\_\+\+P\+O\+OL}} 100
+\item 
+const \mbox{\hyperlink{radius_8php_ad0113114d5240b5205fcf7f64f02705b}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+SE}} 101
+\item 
+const \mbox{\hyperlink{radius_8php_a28585c011058cf4d9eccf5351dc08a7c}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+R\+E\+S\+I\+D\+U\+A\+L\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+E\+M\+O\+V\+ED}} 201
+\item 
+const \mbox{\hyperlink{radius_8php_acd53b89e7cc605b41c40b07ebfbb11cb}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+E\+A\+P\+\_\+\+P\+A\+C\+K\+ET}} 202
+\item 
+const \mbox{\hyperlink{radius_8php_aeaee37dfcd0ecd1ca01e370caf1525e9}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}} 401
+\item 
+const \mbox{\hyperlink{radius_8php_a34d07a7122484ace68f7cd5fc579810a}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+M\+I\+S\+S\+I\+N\+G\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}} 402
+\item 
+const \mbox{\hyperlink{radius_8php_a0a9ef838e5cd84f1e5a28ed0b6abca13}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+N\+A\+S\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+M\+I\+S\+M\+A\+T\+CH}} 403
+\item 
+const \mbox{\hyperlink{radius_8php_aca412c87bdce49014bb199797ca80101}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+R\+E\+Q\+U\+E\+ST}} 404
+\item 
+const \mbox{\hyperlink{radius_8php_aaebdd693c9941b7d54d69a2a5739fca8}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+S\+E\+R\+V\+I\+CE}} 405
+\item 
+const \mbox{\hyperlink{radius_8php_a213cab7dcdf293db0005ae65603958ee}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}} 406
+\item 
+const \mbox{\hyperlink{radius_8php_a6f03d7ee8561726daab197ecbd50e313}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+I\+V\+E\+L\+Y\+\_\+\+P\+R\+O\+H\+I\+B\+I\+T\+ED}} 501
+\item 
+const \mbox{\hyperlink{radius_8php_aea77625414141c77ba093382379aa9f5}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+N\+O\+T\+\_\+\+R\+O\+U\+T\+A\+B\+LE}} 502
+\item 
+const \mbox{\hyperlink{radius_8php_ae85bb5c9918ad2b7baccbcfb96fd40a6}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}} 503
+\item 
+const \mbox{\hyperlink{radius_8php_af6e4f9f57e7484b600a20955c0b93f2b}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+N\+O\+T\+\_\+\+R\+E\+M\+O\+V\+A\+B\+LE}} 504
+\item 
+const \mbox{\hyperlink{radius_8php_a01bdd0d673a6f01b99812a63d47e73a2}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+O\+T\+H\+E\+R\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+E\+R\+R\+OR}} 505
+\item 
+const \mbox{\hyperlink{radius_8php_abbaaa504657faa2dd8e5f4874196d27f}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}} 506
+\item 
+const \mbox{\hyperlink{radius_8php_a5c1d4a6ba3ee809b58037f32df807ef3}{R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+I\+N\+I\+T\+I\+A\+T\+ED}} 507
+\item 
+const \mbox{\hyperlink{radius_8php_a6d10307e9a87bf46c2362b0baa9a1fca}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}} 40
+\item 
+const \mbox{\hyperlink{radius_8php_a032c7da52bd966a81433459cefd7f1c8}{R\+A\+D\+I\+U\+S\+\_\+\+S\+T\+A\+RT}} 1
+\item 
+const \mbox{\hyperlink{radius_8php_a797b5e63401f36bd4646a8d9d3864bbb}{R\+A\+D\+I\+U\+S\+\_\+\+S\+T\+OP}} 2
+\item 
+const \mbox{\hyperlink{radius_8php_a4d2e9d8d653193dd24146b364079e1cd}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+ON}} 7
+\item 
+const \mbox{\hyperlink{radius_8php_a2926c654d1ec3ba4c06469021eeb0f5e}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+O\+FF}} 8
+\item 
+const \mbox{\hyperlink{radius_8php_aa2a0cf3ad6d15a76a6c0b9c06736daac}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+D\+E\+L\+A\+Y\+\_\+\+T\+I\+ME}} 41
+\item 
+const \mbox{\hyperlink{radius_8php_ab82a23db5ff8807efd1426c9802fe15f}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+I\+N\+P\+U\+T\+\_\+\+O\+C\+T\+E\+TS}} 42
+\item 
+const \mbox{\hyperlink{radius_8php_a82619147bce8bb05917c9503dc6b420c}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+O\+C\+T\+E\+TS}} 43
+\item 
+const \mbox{\hyperlink{radius_8php_a9ec85d5bb149138b490410c4267741f2}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+ID}} 44
+\item 
+const \mbox{\hyperlink{radius_8php_a22f3f7db6a915618d49af685645869bd}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+A\+U\+T\+H\+E\+N\+T\+IC}} 45
+\item 
+const \mbox{\hyperlink{radius_8php_ae881059ce195ee15d4717c5442fcd0ee}{R\+A\+D\+I\+U\+S\+\_\+\+A\+U\+T\+H\+\_\+\+R\+A\+D\+I\+US}} 1
+\item 
+const \mbox{\hyperlink{radius_8php_a615d920186bfb0bd6a32a7f3120f0453}{R\+A\+D\+I\+U\+S\+\_\+\+A\+U\+T\+H\+\_\+\+L\+O\+C\+AL}} 2
+\item 
+const \mbox{\hyperlink{radius_8php_abc616eb52d8f1770d2fdb31f57d53ef7}{R\+A\+D\+I\+U\+S\+\_\+\+A\+U\+T\+H\+\_\+\+R\+E\+M\+O\+TE}} 3
+\item 
+const \mbox{\hyperlink{radius_8php_af66be65afa576996d725cc273e433bcf}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+T\+I\+ME}} 46
+\item 
+const \mbox{\hyperlink{radius_8php_a07a15c338bbddb36cd5f5099e2a00ee8}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+I\+N\+P\+U\+T\+\_\+\+P\+A\+C\+K\+E\+TS}} 47
+\item 
+const \mbox{\hyperlink{radius_8php_a0fddad8ec3110310bdf6490d579145fc}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+A\+C\+K\+E\+TS}} 48
+\item 
+const \mbox{\hyperlink{radius_8php_a5455138f308d0cb72aaab4929d3bc95e}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+T\+E\+R\+M\+I\+N\+A\+T\+E\+\_\+\+C\+A\+U\+SE}} 49
+\item 
+const \mbox{\hyperlink{radius_8php_a228882456f3af876f0a6acfd8109c8ed}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+U\+S\+E\+R\+\_\+\+R\+E\+Q\+U\+E\+ST}} 1
+\item 
+const \mbox{\hyperlink{radius_8php_ae145db336298251edc6aaee89efaac10}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+L\+O\+S\+T\+\_\+\+C\+A\+R\+R\+I\+ER}} 2
+\item 
+const \mbox{\hyperlink{radius_8php_a68ca91b696d31268b746226740b22b56}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+L\+O\+S\+T\+\_\+\+S\+E\+R\+V\+I\+CE}} 3
+\item 
+const \mbox{\hyperlink{radius_8php_a9a598a882318a9df75e2a0285c183d14}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+I\+D\+L\+E\+\_\+\+T\+I\+M\+E\+O\+UT}} 4
+\item 
+const \mbox{\hyperlink{radius_8php_a8b3bff2b37999b32b4c368893d18f2c2}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+UT}} 5
+\item 
+const \mbox{\hyperlink{radius_8php_a0027e844077cce60e66d1044a9d711b1}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+A\+D\+M\+I\+N\+\_\+\+R\+E\+S\+ET}} 6
+\item 
+const \mbox{\hyperlink{radius_8php_a288d183a4b1a3195f7f009021ec65717}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+A\+D\+M\+I\+N\+\_\+\+R\+E\+B\+O\+OT}} 7
+\item 
+const \mbox{\hyperlink{radius_8php_a91d946ab993dce8679f483ce6687a413}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+P\+O\+R\+T\+\_\+\+E\+R\+R\+OR}} 8
+\item 
+const \mbox{\hyperlink{radius_8php_a2a6056c04ca7e937aad6522791bed03f}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+N\+A\+S\+\_\+\+E\+R\+R\+OR}} 9
+\item 
+const \mbox{\hyperlink{radius_8php_a303b91bef22a52b2710f80a433153baf}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+N\+A\+S\+\_\+\+R\+E\+Q\+U\+E\+ST}} 10
+\item 
+const \mbox{\hyperlink{radius_8php_a1a776e2dd7e823f54ba3610e01a99d0e}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+N\+A\+S\+\_\+\+R\+E\+B\+O\+OT}} 11
+\item 
+const \mbox{\hyperlink{radius_8php_a7865c08ab86487ea80f3488c492673c5}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+P\+O\+R\+T\+\_\+\+U\+N\+N\+E\+E\+D\+ED}} 12
+\item 
+const \mbox{\hyperlink{radius_8php_a37fda04ff12a6e38b8a501ed0e1773c1}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+P\+O\+R\+T\+\_\+\+P\+R\+E\+E\+M\+P\+T\+ED}} 13
+\item 
+const \mbox{\hyperlink{radius_8php_acecd5faaa363fc4a8b4d4668bab23bb9}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+P\+O\+R\+T\+\_\+\+S\+U\+S\+P\+E\+N\+D\+ED}} 14
+\item 
+const \mbox{\hyperlink{radius_8php_a7a0cb2f27f221c01e02f44cf9495202d}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}} 15
+\item 
+const \mbox{\hyperlink{radius_8php_a92143357d4e7ffdabdd6fc59818257ea}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+C\+A\+L\+L\+B\+A\+CK}} 16
+\item 
+const \mbox{\hyperlink{radius_8php_aee8af2a2750154ad7fe41d4191d9e5ba}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+U\+S\+E\+R\+\_\+\+E\+R\+R\+OR}} 17
+\item 
+const \mbox{\hyperlink{radius_8php_a7cfcdfbc516dde0956c03bd16b5d3018}{R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+H\+O\+S\+T\+\_\+\+R\+E\+Q\+U\+E\+ST}} 18
+\item 
+const \mbox{\hyperlink{radius_8php_a5385c43a9bcd821b3f626e793fbbd21b}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+ID}} 50
+\item 
+const \mbox{\hyperlink{radius_8php_a9f1958962d3ce0428b142c49baf7f93f}{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+L\+I\+N\+K\+\_\+\+C\+O\+U\+NT}} 51
+\item 
+const \mbox{\hyperlink{radius_8php_a9d6368b60a4ab7ae622e9117ac1915ef}{R\+A\+D\+I\+U\+S\+\_\+\+V\+E\+N\+D\+O\+R\+\_\+\+M\+I\+C\+R\+O\+S\+O\+FT}} 311
+\item 
+const \mbox{\hyperlink{radius_8php_a1ec50cc0693abc8ce103e79c73087180}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+R\+E\+S\+P\+O\+N\+SE}} 1
+\item 
+const \mbox{\hyperlink{radius_8php_a2092a178dccf6023c319cd097f792bbd}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+E\+R\+R\+OR}} 2
+\item 
+const \mbox{\hyperlink{radius_8php_a02cfc733c866b8dce88bc401547bb252}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+P\+W\+\_\+1}} 3
+\item 
+const \mbox{\hyperlink{radius_8php_a5d8ce3a47340b5b9b0647a690b466ba7}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+P\+W\+\_\+2}} 4
+\item 
+const \mbox{\hyperlink{radius_8php_a649d1a8815e2e67d6231b7a9dc031e09}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+L\+M\+\_\+\+E\+N\+C\+\_\+\+PW}} 5
+\item 
+const \mbox{\hyperlink{radius_8php_ac2687eba3b241d76334e71616cbb3aeb}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+N\+T\+\_\+\+E\+N\+C\+\_\+\+PW}} 6
+\item 
+const \mbox{\hyperlink{radius_8php_a3b003ecc912f8097f6842a15f54505d5}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+M\+P\+P\+E\+\_\+\+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+P\+O\+L\+I\+CY}} 7
+\item 
+const \mbox{\hyperlink{radius_8php_aae80b6f6b2b6f73f7feae22c861544e4}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+M\+P\+P\+E\+\_\+\+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+ES}} 8
+\item 
+const \mbox{\hyperlink{radius_8php_a996e1b21ef93b1181588c718afe7eca5}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+R\+A\+S\+\_\+\+V\+E\+N\+D\+OR}} 9
+\item 
+const \mbox{\hyperlink{radius_8php_aeec0de711eef9d293b33aa4534bc3fb1}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+D\+O\+M\+A\+IN}} 10
+\item 
+const \mbox{\hyperlink{radius_8php_aeb2383a72700f9b05192835d86cb2298}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+C\+H\+A\+L\+L\+E\+N\+GE}} 11
+\item 
+const \mbox{\hyperlink{radius_8php_a8801ee51f3bcd1e7fa922cc684138701}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+M\+P\+P\+E\+\_\+\+K\+E\+YS}} 12
+\item 
+const \mbox{\hyperlink{radius_8php_af10a93760dfbc2af9be4bd5939a76c2a}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+B\+A\+P\+\_\+\+U\+S\+A\+GE}} 13
+\item 
+const \mbox{\hyperlink{radius_8php_a5a66c11befc15a1c5295c79ab3c3c657}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+L\+I\+N\+K\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD}} 14
+\item 
+const \mbox{\hyperlink{radius_8php_aaf261cca7438456e3c3f8eb51d3d5388}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+L\+I\+N\+K\+\_\+\+D\+R\+O\+P\+\_\+\+T\+I\+M\+E\+\_\+\+L\+I\+M\+IT}} 15
+\item 
+const \mbox{\hyperlink{radius_8php_aab2aefc15a16373191e5def5f2441a2a}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+M\+P\+P\+E\+\_\+\+S\+E\+N\+D\+\_\+\+K\+EY}} 16
+\item 
+const \mbox{\hyperlink{radius_8php_a26e29a2ae2a10d7f927d8c4bbd011703}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+M\+P\+P\+E\+\_\+\+R\+E\+C\+V\+\_\+\+K\+EY}} 17
+\item 
+const \mbox{\hyperlink{radius_8php_aac1c56605cb625bcd103b75cc6c0ee4f}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+R\+A\+S\+\_\+\+V\+E\+R\+S\+I\+ON}} 18
+\item 
+const \mbox{\hyperlink{radius_8php_acde8f3811a05bce865e5e1936ca53de8}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+O\+L\+D\+\_\+\+A\+R\+A\+P\+\_\+\+P\+A\+S\+S\+W\+O\+RD}} 19
+\item 
+const \mbox{\hyperlink{radius_8php_a4e8c333f6a9b953ddc6693538ed12a65}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+N\+E\+W\+\_\+\+A\+R\+A\+P\+\_\+\+P\+A\+S\+S\+W\+O\+RD}} 20
+\item 
+const \mbox{\hyperlink{radius_8php_a93839e2b7b878769b5bb5fd69bfb925d}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+A\+R\+A\+P\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+C\+H\+A\+N\+G\+E\+\_\+\+R\+E\+A\+S\+ON}} 21
+\item 
+const \mbox{\hyperlink{radius_8php_a75dbfb0e57ed61d96129a42b0d8a0a26}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+F\+I\+L\+T\+ER}} 22
+\item 
+const \mbox{\hyperlink{radius_8php_aa11116f713bad2b6a1d54ade9c49d0ef}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+A\+C\+C\+T\+\_\+\+A\+U\+T\+H\+\_\+\+T\+Y\+PE}} 23
+\item 
+const \mbox{\hyperlink{radius_8php_a42cd23e231649f4a0210ff8bc9710d55}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+A\+C\+C\+T\+\_\+\+E\+A\+P\+\_\+\+T\+Y\+PE}} 24
+\item 
+const \mbox{\hyperlink{radius_8php_a9ae9392e9fdacd600dbeeebabb13deb2}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P2\+\_\+\+R\+E\+S\+P\+O\+N\+SE}} 25
+\item 
+const \mbox{\hyperlink{radius_8php_af8c249991ab26be709b9c0c5fa1a3e0c}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P2\+\_\+\+S\+U\+C\+C\+E\+SS}} 26
+\item 
+const \mbox{\hyperlink{radius_8php_abe128b048053aef3cffa953cd5f5a7d1}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P2\+\_\+\+PW}} 27
+\item 
+const \mbox{\hyperlink{radius_8php_aa117955cc1cfdedda4771cbd128ec086}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+P\+R\+I\+M\+A\+R\+Y\+\_\+\+D\+N\+S\+\_\+\+S\+E\+R\+V\+ER}} 28
+\item 
+const \mbox{\hyperlink{radius_8php_a9df7ab02c8a57ae8edcee4e900a255e9}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+S\+E\+C\+O\+N\+D\+A\+R\+Y\+\_\+\+D\+N\+S\+\_\+\+S\+E\+R\+V\+ER}} 29
+\item 
+const \mbox{\hyperlink{radius_8php_ade2d6a31e86bb61cb2f8de90b06cfcef}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+P\+R\+I\+M\+A\+R\+Y\+\_\+\+N\+B\+N\+S\+\_\+\+S\+E\+R\+V\+ER}} 30
+\item 
+const \mbox{\hyperlink{radius_8php_a473c0fb103b4db5f4d8cfb721cc80b2f}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+S\+E\+C\+O\+N\+D\+A\+R\+Y\+\_\+\+N\+B\+N\+S\+\_\+\+S\+E\+R\+V\+ER}} 31
+\item 
+const \mbox{\hyperlink{radius_8php_afab053e6300ec917b52724676acf4246}{R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+A\+R\+A\+P\+\_\+\+C\+H\+A\+L\+L\+E\+N\+GE}} 33
+\item 
+const \mbox{\hyperlink{radius_8php_a197ab63540900e334c6c7b0f2505ab0c}{R\+A\+D\+I\+U\+S\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+NE}} R\+A\+D\+I\+U\+S\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+NE
+\item 
+const \mbox{\hyperlink{radius_8php_a2c0588679c265efca544cd25aa1a50a5}{R\+A\+D\+I\+U\+S\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+A\+G\+G\+ED}} R\+A\+D\+I\+U\+S\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+A\+G\+G\+ED
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{radius_8php_a5596a0d1c9da4bd0fca8780277211c31}\label{radius_8php_a5596a0d1c9da4bd0fca8780277211c31}} 
+\index{radius.php@{radius.php}!radius\_acct\_open@{radius\_acct\_open}}
+\index{radius\_acct\_open@{radius\_acct\_open}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{radius\_acct\_open()}{radius\_acct\_open()}}
+{\footnotesize\ttfamily radius\+\_\+acct\+\_\+open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a Radius handle for accounting \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource$\vert$false Returns a handle on success, {\bfseries{F\+A\+L\+SE}} on error. This function only fails if insufficient memory is available.  1.\+1.\+0 }}\mbox{\Hypertarget{radius_8php_a00a1ce066495e4ecf7f763f01f016a5d}\label{radius_8php_a00a1ce066495e4ecf7f763f01f016a5d}} 
+\index{radius.php@{radius.php}!radius\_add\_server@{radius\_add\_server}}
+\index{radius\_add\_server@{radius\_add\_server}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{radius\_add\_server()}{radius\_add\_server()}}
+{\footnotesize\ttfamily radius\+\_\+add\+\_\+server (\begin{DoxyParamCaption}\item[{}]{\$radius\+\_\+handle,  }\item[{}]{\$hostname,  }\item[{}]{\$port,  }\item[{}]{\$secret,  }\item[{}]{\$timeout,  }\item[{}]{\$max\+\_\+tries }\end{DoxyParamCaption})}
+
+{\bfseries{\mbox{\hyperlink{radius_8php_a00a1ce066495e4ecf7f763f01f016a5d}{radius\+\_\+add\+\_\+server()}}}} may be called multiple times, and it may be used together with \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{radius_8php_ad9ed6add97df717981fc8479897244d8}{radius\+\_\+config()}}\}. At most 10 servers may be specified. When multiple servers are given, they are tried in round-\/robin fashion until \mbox{\hyperlink{interfacea}{a}} valid response is received, or until \mbox{\hyperlink{_core_8php_aa620b1e7e9a1fd15281f76efc9137584}{each}} server\textquotesingle{}s max\+\_\+tries limit has been reached. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$radius\+\_\+handle  string \$hostname The {\bfseries{hostname}} parameter specifies the server host, either as a fully qualified domain name or as a dotted-\/quad IP address in text form.  int \$port The {\bfseries{port}} specifies the U\+DP port to contact on the server.}} If port is given as 0, the library looks up the radius/udp or radacct/udp service in the network services database, and uses the port found there.~\newline
+ If no entry is found, the library uses the standard Radius ports, 1812 for authentication and 1813 for accounting. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$secret} & The shared secret for the server host is passed to the {\bfseries{secret}} parameter. The Radius protocol ignores all but the leading 128 bytes of the shared secret. \\
+\hline
+int & {\em \$timeout} & The timeout for receiving replies from the server is passed to the {\bfseries{timeout}} parameter, in units of seconds. \\
+\hline
+int & {\em \$max\+\_\+tries} & The maximum number of repeated requests to make before giving up is passed into the {\bfseries{max\+\_\+tries}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{radius_8php_ad9ed6add97df717981fc8479897244d8}{radius\+\_\+config()}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+1.\+1.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{radius_8php_a85e86c68d9ddd733e0dc471e05645c4a}\label{radius_8php_a85e86c68d9ddd733e0dc471e05645c4a}} 
+\index{radius.php@{radius.php}!radius\_auth\_open@{radius\_auth\_open}}
+\index{radius\_auth\_open@{radius\_auth\_open}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{radius\_auth\_open()}{radius\_auth\_open()}}
+{\footnotesize\ttfamily radius\+\_\+auth\+\_\+open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a Radius handle for authentication \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource$\vert$false Returns a handle on success, {\bfseries{F\+A\+L\+SE}} on error. This function only fails if insufficient memory is available.  1.\+1.\+0 }}\mbox{\Hypertarget{radius_8php_ac52195f22c250f92cbd87c2616e13248}\label{radius_8php_ac52195f22c250f92cbd87c2616e13248}} 
+\index{radius.php@{radius.php}!radius\_close@{radius\_close}}
+\index{radius\_close@{radius\_close}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{radius\_close()}{radius\_close()}}
+{\footnotesize\ttfamily radius\+\_\+close (\begin{DoxyParamCaption}\item[{}]{\$radius\+\_\+handle }\end{DoxyParamCaption})}
+
+Free all ressources. It is not needed to call this function because php frees all resources at the end of each request. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$radius\+\_\+handle  bool Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure.  1.\+1.\+0 }}\mbox{\Hypertarget{radius_8php_ad9ed6add97df717981fc8479897244d8}\label{radius_8php_ad9ed6add97df717981fc8479897244d8}} 
+\index{radius.php@{radius.php}!radius\_config@{radius\_config}}
+\index{radius\_config@{radius\_config}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{radius\_config()}{radius\_config()}}
+{\footnotesize\ttfamily radius\+\_\+config (\begin{DoxyParamCaption}\item[{}]{\$radius\+\_\+handle,  }\item[{}]{\$file }\end{DoxyParamCaption})}
+
+Before issuing any Radius requests, the library must be made aware of the servers it can contact. The easiest way to configure the library is to call {\bfseries{\mbox{\hyperlink{radius_8php_ad9ed6add97df717981fc8479897244d8}{radius\+\_\+config()}}}}. {\bfseries{\mbox{\hyperlink{radius_8php_ad9ed6add97df717981fc8479897244d8}{radius\+\_\+config()}}}} causes the library to read a configuration file whose format is described in radius.\+conf. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\href{https://www.freebsd.org/cgi/man.cgi?query=radius.conf}{\texttt{ https\+://www.\+freebsd.\+org/cgi/man.\+cgi?query=radius.\+conf}}  resource \$radius\+\_\+handle  string \$file The pathname of the configuration file is passed as the file argument to \{ radius\+\_\+config()\}. The library can also be configured programmatically by calls to {\bfseries{\{ radius\+\_\+add\+\_\+server()\}}}.  bool Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure.  radius\+\_\+add\+\_\+server()  1.\+1.\+0 }}\mbox{\Hypertarget{radius_8php_ac40f82af5d7d3f6c2a6845ebdb94aef8}\label{radius_8php_ac40f82af5d7d3f6c2a6845ebdb94aef8}} 
+\index{radius.php@{radius.php}!radius\_create\_request@{radius\_create\_request}}
+\index{radius\_create\_request@{radius\_create\_request}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{radius\_create\_request()}{radius\_create\_request()}}
+{\footnotesize\ttfamily radius\+\_\+create\+\_\+request (\begin{DoxyParamCaption}\item[{}]{\$radius\+\_\+handle,  }\item[{}]{\$type }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_a}{A}} Radius request consists of a code specifying the kind of request, and zero or more attributes which provide additional information. To begin constructing a new request, call {\bfseries{\mbox{\hyperlink{radius_8php_ac40f82af5d7d3f6c2a6845ebdb94aef8}{radius\+\_\+create\+\_\+request()}}}}.~\newline
+ {\bfseries{Note\+:}} Attention\+: You must call this function, before you can put any attribute! \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$radius\+\_\+handle  int \$type Type is {\bfseries{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+R\+E\+Q\+U\+E\+ST}} or {\bfseries{R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+R\+E\+Q\+U\+E\+ST}}.  bool Returns {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure.  radius\+\_\+send\+\_\+request()  1.\+1.\+0 }}
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{radius_8php_a1344bb4d7c7fbbbc0c21862f21882249}\label{radius_8php_a1344bb4d7c7fbbbc0c21862f21882249}} 
+\index{radius.php@{radius.php}!RAD\_OPTION\_TAG@{RAD\_OPTION\_TAG}}
+\index{RAD\_OPTION\_TAG@{RAD\_OPTION\_TAG}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RAD\_OPTION\_TAG}{RAD\_OPTION\_TAG}}
+{\footnotesize\ttfamily const R\+A\+D\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+AG 1}
+
+Radius constants \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{The maximum length of M\+P\+PE keys. }}\mbox{\Hypertarget{radius_8php_a098c3c04b05315e23fee9c96ebc65ac1}\label{radius_8php_a098c3c04b05315e23fee9c96ebc65ac1}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCESS\_ACCEPT@{RADIUS\_ACCESS\_ACCEPT}}
+\index{RADIUS\_ACCESS\_ACCEPT@{RADIUS\_ACCESS\_ACCEPT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCESS\_ACCEPT}{RADIUS\_ACCESS\_ACCEPT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+A\+C\+C\+E\+PT 2}
+
+An Access-\/\+Accept response to an Access-\/\+Request indicating that the R\+A\+D\+I\+US server authenticated the user successfully. \mbox{\Hypertarget{radius_8php_adb5f94b367a9081cd8a631bd121790a3}\label{radius_8php_adb5f94b367a9081cd8a631bd121790a3}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCESS\_CHALLENGE@{RADIUS\_ACCESS\_CHALLENGE}}
+\index{RADIUS\_ACCESS\_CHALLENGE@{RADIUS\_ACCESS\_CHALLENGE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCESS\_CHALLENGE}{RADIUS\_ACCESS\_CHALLENGE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+C\+H\+A\+L\+L\+E\+N\+GE 11}
+
+An Access-\/\+Challenge response to an Access-\/\+Request indicating that the R\+A\+D\+I\+US server requires further information in another Access-\/\+Request before authenticating the user. \mbox{\Hypertarget{radius_8php_a365a7439a73e20f891266b48375b8f1e}\label{radius_8php_a365a7439a73e20f891266b48375b8f1e}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCESS\_REJECT@{RADIUS\_ACCESS\_REJECT}}
+\index{RADIUS\_ACCESS\_REJECT@{RADIUS\_ACCESS\_REJECT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCESS\_REJECT}{RADIUS\_ACCESS\_REJECT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+R\+E\+J\+E\+CT 3}
+
+An Access-\/\+Reject response to an Access-\/\+Request indicating that the R\+A\+D\+I\+US server could not authenticate the user. \mbox{\Hypertarget{radius_8php_a20f5c233bb217f61ec2ffb698bc5bd2a}\label{radius_8php_a20f5c233bb217f61ec2ffb698bc5bd2a}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCESS\_REQUEST@{RADIUS\_ACCESS\_REQUEST}}
+\index{RADIUS\_ACCESS\_REQUEST@{RADIUS\_ACCESS\_REQUEST}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCESS\_REQUEST}{RADIUS\_ACCESS\_REQUEST}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+R\+E\+Q\+U\+E\+ST 1}
+
+R\+A\+D\+I\+US Packet Types \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{An Access-\/\+Request, used to authenticate a user against a R\+A\+D\+I\+US server. Access request packets must include a {\bfseries{R\+A\+D\+I\+U\+S\+\_\+\+N\+A\+S\+\_\+\+I\+P\+\_\+\+A\+D\+D\+R\+E\+SS}} or a {\bfseries{R\+A\+D\+I\+U\+S\+\_\+\+N\+A\+S\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+ER}} attribute, must also include a {\bfseries{R\+A\+D\+I\+U\+S\+\_\+\+U\+S\+E\+R\+\_\+\+P\+A\+S\+S\+W\+O\+RD}}, {\bfseries{R\+A\+D\+I\+U\+S\+\_\+\+C\+H\+A\+P\+\_\+\+P\+A\+S\+S\+W\+O\+RD}} or a {\bfseries{R\+A\+D\+I\+U\+S\+\_\+\+S\+T\+A\+TE}} attribute, and should include a {\bfseries{R\+A\+D\+I\+U\+S\+\_\+\+U\+S\+E\+R\+\_\+\+N\+A\+ME}} attribute. }}\mbox{\Hypertarget{radius_8php_a2926c654d1ec3ba4c06469021eeb0f5e}\label{radius_8php_a2926c654d1ec3ba4c06469021eeb0f5e}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCOUNTING\_OFF@{RADIUS\_ACCOUNTING\_OFF}}
+\index{RADIUS\_ACCOUNTING\_OFF@{RADIUS\_ACCOUNTING\_OFF}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCOUNTING\_OFF}{RADIUS\_ACCOUNTING\_OFF}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+O\+FF 8}
+
+\mbox{\Hypertarget{radius_8php_a4d2e9d8d653193dd24146b364079e1cd}\label{radius_8php_a4d2e9d8d653193dd24146b364079e1cd}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCOUNTING\_ON@{RADIUS\_ACCOUNTING\_ON}}
+\index{RADIUS\_ACCOUNTING\_ON@{RADIUS\_ACCOUNTING\_ON}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCOUNTING\_ON}{RADIUS\_ACCOUNTING\_ON}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+ON 7}
+
+\mbox{\Hypertarget{radius_8php_a93336ae4c0148a81d7879786cba8812e}\label{radius_8php_a93336ae4c0148a81d7879786cba8812e}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCOUNTING\_REQUEST@{RADIUS\_ACCOUNTING\_REQUEST}}
+\index{RADIUS\_ACCOUNTING\_REQUEST@{RADIUS\_ACCOUNTING\_REQUEST}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCOUNTING\_REQUEST}{RADIUS\_ACCOUNTING\_REQUEST}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+R\+E\+Q\+U\+E\+ST 4}
+
+An Accounting-\/\+Request, used to convey accounting information for a service to the R\+A\+D\+I\+US server. \mbox{\Hypertarget{radius_8php_a5be880fa75a72de8ac3623e4ec97ff47}\label{radius_8php_a5be880fa75a72de8ac3623e4ec97ff47}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCOUNTING\_RESPONSE@{RADIUS\_ACCOUNTING\_RESPONSE}}
+\index{RADIUS\_ACCOUNTING\_RESPONSE@{RADIUS\_ACCOUNTING\_RESPONSE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCOUNTING\_RESPONSE}{RADIUS\_ACCOUNTING\_RESPONSE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+R\+E\+S\+P\+O\+N\+SE 5}
+
+An Accounting-\/\+Response response to an Accounting-\/\+Request. \mbox{\Hypertarget{radius_8php_a22f3f7db6a915618d49af685645869bd}\label{radius_8php_a22f3f7db6a915618d49af685645869bd}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCT\_AUTHENTIC@{RADIUS\_ACCT\_AUTHENTIC}}
+\index{RADIUS\_ACCT\_AUTHENTIC@{RADIUS\_ACCT\_AUTHENTIC}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCT\_AUTHENTIC}{RADIUS\_ACCT\_AUTHENTIC}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+A\+U\+T\+H\+E\+N\+T\+IC 45}
+
+\mbox{\Hypertarget{radius_8php_aa2a0cf3ad6d15a76a6c0b9c06736daac}\label{radius_8php_aa2a0cf3ad6d15a76a6c0b9c06736daac}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCT\_DELAY\_TIME@{RADIUS\_ACCT\_DELAY\_TIME}}
+\index{RADIUS\_ACCT\_DELAY\_TIME@{RADIUS\_ACCT\_DELAY\_TIME}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCT\_DELAY\_TIME}{RADIUS\_ACCT\_DELAY\_TIME}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+D\+E\+L\+A\+Y\+\_\+\+T\+I\+ME 41}
+
+\mbox{\Hypertarget{radius_8php_ab82a23db5ff8807efd1426c9802fe15f}\label{radius_8php_ab82a23db5ff8807efd1426c9802fe15f}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCT\_INPUT\_OCTETS@{RADIUS\_ACCT\_INPUT\_OCTETS}}
+\index{RADIUS\_ACCT\_INPUT\_OCTETS@{RADIUS\_ACCT\_INPUT\_OCTETS}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCT\_INPUT\_OCTETS}{RADIUS\_ACCT\_INPUT\_OCTETS}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+I\+N\+P\+U\+T\+\_\+\+O\+C\+T\+E\+TS 42}
+
+\mbox{\Hypertarget{radius_8php_a07a15c338bbddb36cd5f5099e2a00ee8}\label{radius_8php_a07a15c338bbddb36cd5f5099e2a00ee8}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCT\_INPUT\_PACKETS@{RADIUS\_ACCT\_INPUT\_PACKETS}}
+\index{RADIUS\_ACCT\_INPUT\_PACKETS@{RADIUS\_ACCT\_INPUT\_PACKETS}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCT\_INPUT\_PACKETS}{RADIUS\_ACCT\_INPUT\_PACKETS}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+I\+N\+P\+U\+T\+\_\+\+P\+A\+C\+K\+E\+TS 47}
+
+\mbox{\Hypertarget{radius_8php_a9f1958962d3ce0428b142c49baf7f93f}\label{radius_8php_a9f1958962d3ce0428b142c49baf7f93f}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCT\_LINK\_COUNT@{RADIUS\_ACCT\_LINK\_COUNT}}
+\index{RADIUS\_ACCT\_LINK\_COUNT@{RADIUS\_ACCT\_LINK\_COUNT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCT\_LINK\_COUNT}{RADIUS\_ACCT\_LINK\_COUNT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+L\+I\+N\+K\+\_\+\+C\+O\+U\+NT 51}
+
+\mbox{\Hypertarget{radius_8php_a5385c43a9bcd821b3f626e793fbbd21b}\label{radius_8php_a5385c43a9bcd821b3f626e793fbbd21b}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCT\_MULTI\_SESSION\_ID@{RADIUS\_ACCT\_MULTI\_SESSION\_ID}}
+\index{RADIUS\_ACCT\_MULTI\_SESSION\_ID@{RADIUS\_ACCT\_MULTI\_SESSION\_ID}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCT\_MULTI\_SESSION\_ID}{RADIUS\_ACCT\_MULTI\_SESSION\_ID}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+M\+U\+L\+T\+I\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+ID 50}
+
+\mbox{\Hypertarget{radius_8php_a82619147bce8bb05917c9503dc6b420c}\label{radius_8php_a82619147bce8bb05917c9503dc6b420c}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCT\_OUTPUT\_OCTETS@{RADIUS\_ACCT\_OUTPUT\_OCTETS}}
+\index{RADIUS\_ACCT\_OUTPUT\_OCTETS@{RADIUS\_ACCT\_OUTPUT\_OCTETS}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCT\_OUTPUT\_OCTETS}{RADIUS\_ACCT\_OUTPUT\_OCTETS}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+O\+C\+T\+E\+TS 43}
+
+\mbox{\Hypertarget{radius_8php_a0fddad8ec3110310bdf6490d579145fc}\label{radius_8php_a0fddad8ec3110310bdf6490d579145fc}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCT\_OUTPUT\_PACKETS@{RADIUS\_ACCT\_OUTPUT\_PACKETS}}
+\index{RADIUS\_ACCT\_OUTPUT\_PACKETS@{RADIUS\_ACCT\_OUTPUT\_PACKETS}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCT\_OUTPUT\_PACKETS}{RADIUS\_ACCT\_OUTPUT\_PACKETS}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+A\+C\+K\+E\+TS 48}
+
+\mbox{\Hypertarget{radius_8php_a9ec85d5bb149138b490410c4267741f2}\label{radius_8php_a9ec85d5bb149138b490410c4267741f2}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCT\_SESSION\_ID@{RADIUS\_ACCT\_SESSION\_ID}}
+\index{RADIUS\_ACCT\_SESSION\_ID@{RADIUS\_ACCT\_SESSION\_ID}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCT\_SESSION\_ID}{RADIUS\_ACCT\_SESSION\_ID}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+ID 44}
+
+\mbox{\Hypertarget{radius_8php_af66be65afa576996d725cc273e433bcf}\label{radius_8php_af66be65afa576996d725cc273e433bcf}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCT\_SESSION\_TIME@{RADIUS\_ACCT\_SESSION\_TIME}}
+\index{RADIUS\_ACCT\_SESSION\_TIME@{RADIUS\_ACCT\_SESSION\_TIME}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCT\_SESSION\_TIME}{RADIUS\_ACCT\_SESSION\_TIME}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+T\+I\+ME 46}
+
+\mbox{\Hypertarget{radius_8php_a6d10307e9a87bf46c2362b0baa9a1fca}\label{radius_8php_a6d10307e9a87bf46c2362b0baa9a1fca}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCT\_STATUS\_TYPE@{RADIUS\_ACCT\_STATUS\_TYPE}}
+\index{RADIUS\_ACCT\_STATUS\_TYPE@{RADIUS\_ACCT\_STATUS\_TYPE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCT\_STATUS\_TYPE}{RADIUS\_ACCT\_STATUS\_TYPE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE 40}
+
+\mbox{\Hypertarget{radius_8php_a5455138f308d0cb72aaab4929d3bc95e}\label{radius_8php_a5455138f308d0cb72aaab4929d3bc95e}} 
+\index{radius.php@{radius.php}!RADIUS\_ACCT\_TERMINATE\_CAUSE@{RADIUS\_ACCT\_TERMINATE\_CAUSE}}
+\index{RADIUS\_ACCT\_TERMINATE\_CAUSE@{RADIUS\_ACCT\_TERMINATE\_CAUSE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ACCT\_TERMINATE\_CAUSE}{RADIUS\_ACCT\_TERMINATE\_CAUSE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+C\+C\+T\+\_\+\+T\+E\+R\+M\+I\+N\+A\+T\+E\+\_\+\+C\+A\+U\+SE 49}
+
+\mbox{\Hypertarget{radius_8php_a25f0d55ace434d5cd9276aec4b609d2d}\label{radius_8php_a25f0d55ace434d5cd9276aec4b609d2d}} 
+\index{radius.php@{radius.php}!RADIUS\_ADMINISTRATIVE@{RADIUS\_ADMINISTRATIVE}}
+\index{RADIUS\_ADMINISTRATIVE@{RADIUS\_ADMINISTRATIVE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ADMINISTRATIVE}{RADIUS\_ADMINISTRATIVE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+I\+VE 6}
+
+\mbox{\Hypertarget{radius_8php_a0d01c26a2dba8a87c1c9d00d711b812a}\label{radius_8php_a0d01c26a2dba8a87c1c9d00d711b812a}} 
+\index{radius.php@{radius.php}!RADIUS\_ADSL\_CAP@{RADIUS\_ADSL\_CAP}}
+\index{RADIUS\_ADSL\_CAP@{RADIUS\_ADSL\_CAP}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ADSL\_CAP}{RADIUS\_ADSL\_CAP}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+D\+S\+L\+\_\+\+C\+AP 12}
+
+\mbox{\Hypertarget{radius_8php_a4ad60c4889853f354150c550a7b82233}\label{radius_8php_a4ad60c4889853f354150c550a7b82233}} 
+\index{radius.php@{radius.php}!RADIUS\_ADSL\_DMT@{RADIUS\_ADSL\_DMT}}
+\index{RADIUS\_ADSL\_DMT@{RADIUS\_ADSL\_DMT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ADSL\_DMT}{RADIUS\_ADSL\_DMT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+D\+S\+L\+\_\+\+D\+MT 13}
+
+\mbox{\Hypertarget{radius_8php_a47e2293adce2422f3365652c8b1879ad}\label{radius_8php_a47e2293adce2422f3365652c8b1879ad}} 
+\index{radius.php@{radius.php}!RADIUS\_ARAP@{RADIUS\_ARAP}}
+\index{RADIUS\_ARAP@{RADIUS\_ARAP}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ARAP}{RADIUS\_ARAP}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+R\+AP 3}
+
+\mbox{\Hypertarget{radius_8php_a92c2c92e07251ac449cbb1ad784accc9}\label{radius_8php_a92c2c92e07251ac449cbb1ad784accc9}} 
+\index{radius.php@{radius.php}!RADIUS\_ASYNC@{RADIUS\_ASYNC}}
+\index{RADIUS\_ASYNC@{RADIUS\_ASYNC}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ASYNC}{RADIUS\_ASYNC}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+S\+Y\+NC 0}
+
+\mbox{\Hypertarget{radius_8php_a615d920186bfb0bd6a32a7f3120f0453}\label{radius_8php_a615d920186bfb0bd6a32a7f3120f0453}} 
+\index{radius.php@{radius.php}!RADIUS\_AUTH\_LOCAL@{RADIUS\_AUTH\_LOCAL}}
+\index{RADIUS\_AUTH\_LOCAL@{RADIUS\_AUTH\_LOCAL}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_AUTH\_LOCAL}{RADIUS\_AUTH\_LOCAL}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+U\+T\+H\+\_\+\+L\+O\+C\+AL 2}
+
+\mbox{\Hypertarget{radius_8php_ae881059ce195ee15d4717c5442fcd0ee}\label{radius_8php_ae881059ce195ee15d4717c5442fcd0ee}} 
+\index{radius.php@{radius.php}!RADIUS\_AUTH\_RADIUS@{RADIUS\_AUTH\_RADIUS}}
+\index{RADIUS\_AUTH\_RADIUS@{RADIUS\_AUTH\_RADIUS}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_AUTH\_RADIUS}{RADIUS\_AUTH\_RADIUS}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+U\+T\+H\+\_\+\+R\+A\+D\+I\+US 1}
+
+\mbox{\Hypertarget{radius_8php_abc616eb52d8f1770d2fdb31f57d53ef7}\label{radius_8php_abc616eb52d8f1770d2fdb31f57d53ef7}} 
+\index{radius.php@{radius.php}!RADIUS\_AUTH\_REMOTE@{RADIUS\_AUTH\_REMOTE}}
+\index{RADIUS\_AUTH\_REMOTE@{RADIUS\_AUTH\_REMOTE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_AUTH\_REMOTE}{RADIUS\_AUTH\_REMOTE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+U\+T\+H\+\_\+\+R\+E\+M\+O\+TE 3}
+
+\mbox{\Hypertarget{radius_8php_ad312c629c649526b2b7e32362d38e588}\label{radius_8php_ad312c629c649526b2b7e32362d38e588}} 
+\index{radius.php@{radius.php}!RADIUS\_AUTHENTICATE\_ONLY@{RADIUS\_AUTHENTICATE\_ONLY}}
+\index{RADIUS\_AUTHENTICATE\_ONLY@{RADIUS\_AUTHENTICATE\_ONLY}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_AUTHENTICATE\_ONLY}{RADIUS\_AUTHENTICATE\_ONLY}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+E\+\_\+\+O\+N\+LY 8}
+
+\mbox{\Hypertarget{radius_8php_a2ed2ceb20d597ef1a16160c5a8288c93}\label{radius_8php_a2ed2ceb20d597ef1a16160c5a8288c93}} 
+\index{radius.php@{radius.php}!RADIUS\_CABLE@{RADIUS\_CABLE}}
+\index{RADIUS\_CABLE@{RADIUS\_CABLE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_CABLE}{RADIUS\_CABLE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+B\+LE 17}
+
+\mbox{\Hypertarget{radius_8php_ad984ed15ad715e52e3966b824d7d0e78}\label{radius_8php_ad984ed15ad715e52e3966b824d7d0e78}} 
+\index{radius.php@{radius.php}!RADIUS\_CALLBACK\_FRAMED@{RADIUS\_CALLBACK\_FRAMED}}
+\index{RADIUS\_CALLBACK\_FRAMED@{RADIUS\_CALLBACK\_FRAMED}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_CALLBACK\_FRAMED}{RADIUS\_CALLBACK\_FRAMED}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+F\+R\+A\+M\+ED 4}
+
+\mbox{\Hypertarget{radius_8php_aab5ae50c5dfee442e723014ac25c4592}\label{radius_8php_aab5ae50c5dfee442e723014ac25c4592}} 
+\index{radius.php@{radius.php}!RADIUS\_CALLBACK\_ID@{RADIUS\_CALLBACK\_ID}}
+\index{RADIUS\_CALLBACK\_ID@{RADIUS\_CALLBACK\_ID}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_CALLBACK\_ID}{RADIUS\_CALLBACK\_ID}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+ID 20}
+
+\mbox{\Hypertarget{radius_8php_a7f345d8dd1466c0230d62f1e7b3cfccb}\label{radius_8php_a7f345d8dd1466c0230d62f1e7b3cfccb}} 
+\index{radius.php@{radius.php}!RADIUS\_CALLBACK\_LOGIN@{RADIUS\_CALLBACK\_LOGIN}}
+\index{RADIUS\_CALLBACK\_LOGIN@{RADIUS\_CALLBACK\_LOGIN}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_CALLBACK\_LOGIN}{RADIUS\_CALLBACK\_LOGIN}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+L\+O\+G\+IN 3}
+
+\mbox{\Hypertarget{radius_8php_a34dc96ff03b38f7feda649f34c6dfc84}\label{radius_8php_a34dc96ff03b38f7feda649f34c6dfc84}} 
+\index{radius.php@{radius.php}!RADIUS\_CALLBACK\_NAS\_PROMPT@{RADIUS\_CALLBACK\_NAS\_PROMPT}}
+\index{RADIUS\_CALLBACK\_NAS\_PROMPT@{RADIUS\_CALLBACK\_NAS\_PROMPT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_CALLBACK\_NAS\_PROMPT}{RADIUS\_CALLBACK\_NAS\_PROMPT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+N\+A\+S\+\_\+\+P\+R\+O\+M\+PT 9}
+
+\mbox{\Hypertarget{radius_8php_af1be94205788930bcd255027295201bb}\label{radius_8php_af1be94205788930bcd255027295201bb}} 
+\index{radius.php@{radius.php}!RADIUS\_CALLBACK\_NUMBER@{RADIUS\_CALLBACK\_NUMBER}}
+\index{RADIUS\_CALLBACK\_NUMBER@{RADIUS\_CALLBACK\_NUMBER}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_CALLBACK\_NUMBER}{RADIUS\_CALLBACK\_NUMBER}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+N\+U\+M\+B\+ER 19}
+
+\mbox{\Hypertarget{radius_8php_a7f19b7751eb74cae24b2a32dbb5c3e3d}\label{radius_8php_a7f19b7751eb74cae24b2a32dbb5c3e3d}} 
+\index{radius.php@{radius.php}!RADIUS\_CALLED\_STATION\_ID@{RADIUS\_CALLED\_STATION\_ID}}
+\index{RADIUS\_CALLED\_STATION\_ID@{RADIUS\_CALLED\_STATION\_ID}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_CALLED\_STATION\_ID}{RADIUS\_CALLED\_STATION\_ID}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+E\+D\+\_\+\+S\+T\+A\+T\+I\+O\+N\+\_\+\+ID 30}
+
+\mbox{\Hypertarget{radius_8php_a43a69a37ba1437be35985c34f007069c}\label{radius_8php_a43a69a37ba1437be35985c34f007069c}} 
+\index{radius.php@{radius.php}!RADIUS\_CALLING\_STATION\_ID@{RADIUS\_CALLING\_STATION\_ID}}
+\index{RADIUS\_CALLING\_STATION\_ID@{RADIUS\_CALLING\_STATION\_ID}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_CALLING\_STATION\_ID}{RADIUS\_CALLING\_STATION\_ID}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+I\+N\+G\+\_\+\+S\+T\+A\+T\+I\+O\+N\+\_\+\+ID 31}
+
+\mbox{\Hypertarget{radius_8php_a5269cf06915ad7d3cc2f166459cbf21b}\label{radius_8php_a5269cf06915ad7d3cc2f166459cbf21b}} 
+\index{radius.php@{radius.php}!RADIUS\_CHAP\_CHALLENGE@{RADIUS\_CHAP\_CHALLENGE}}
+\index{RADIUS\_CHAP\_CHALLENGE@{RADIUS\_CHAP\_CHALLENGE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_CHAP\_CHALLENGE}{RADIUS\_CHAP\_CHALLENGE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+H\+A\+P\+\_\+\+C\+H\+A\+L\+L\+E\+N\+GE 60}
+
+\mbox{\Hypertarget{radius_8php_ab6a65a0aa6e5dc885108e098ce65af44}\label{radius_8php_ab6a65a0aa6e5dc885108e098ce65af44}} 
+\index{radius.php@{radius.php}!RADIUS\_CHAP\_PASSWORD@{RADIUS\_CHAP\_PASSWORD}}
+\index{RADIUS\_CHAP\_PASSWORD@{RADIUS\_CHAP\_PASSWORD}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_CHAP\_PASSWORD}{RADIUS\_CHAP\_PASSWORD}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+H\+A\+P\+\_\+\+P\+A\+S\+S\+W\+O\+RD 3}
+
+The Chap-\/\+Password attribute. The attribute value is expected to be a string with the first byte containing the C\+H\+AP identifier, and the subsequent 16 bytes containing the M\+D5 hash of the C\+H\+AP identifier, the plaintext password and the C\+H\+AP challenge value concatenated together. Note that the C\+H\+AP challenge value should also be sent separately in a {\bfseries{\{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{radius_8php_a5269cf06915ad7d3cc2f166459cbf21b}{R\+A\+D\+I\+U\+S\+\_\+\+C\+H\+A\+P\+\_\+\+C\+H\+A\+L\+L\+E\+N\+GE}}\} \mbox{\hyperlink{phpunit_2phpunit_2src_2_framework_2_assert_2_functions_8php_a9563224b2369a1cc3a9c05ba5170134e}{attribute}}. 
+\end{DoxySeeAlso}
+}}\mbox{\Hypertarget{radius_8php_a515ddd3048ed6ac7dc3dee7e2dbd7cfa}\label{radius_8php_a515ddd3048ed6ac7dc3dee7e2dbd7cfa}} 
+\index{radius.php@{radius.php}!RADIUS\_CLASS@{RADIUS\_CLASS}}
+\index{RADIUS\_CLASS@{RADIUS\_CLASS}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_CLASS}{RADIUS\_CLASS}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+L\+A\+SS 25}
+
+\mbox{\Hypertarget{radius_8php_a4335fea0d77333ebaa671ca2d69fa14c}\label{radius_8php_a4335fea0d77333ebaa671ca2d69fa14c}} 
+\index{radius.php@{radius.php}!RADIUS\_COA\_ACK@{RADIUS\_COA\_ACK}}
+\index{RADIUS\_COA\_ACK@{RADIUS\_COA\_ACK}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_COA\_ACK}{RADIUS\_COA\_ACK}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+A\+\_\+\+A\+CK 44}
+
+\mbox{\hyperlink{class_a}{A}} Co\+A-\/\+A\+CK, sent to the R\+A\+D\+I\+US server to indicate that the user authorisations have been updated. \begin{DoxySince}{Since}
+1.\+3.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{radius_8php_a477469e8e0b440791841387598ba7a2d}\label{radius_8php_a477469e8e0b440791841387598ba7a2d}} 
+\index{radius.php@{radius.php}!RADIUS\_COA\_NAK@{RADIUS\_COA\_NAK}}
+\index{RADIUS\_COA\_NAK@{RADIUS\_COA\_NAK}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_COA\_NAK}{RADIUS\_COA\_NAK}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+A\+\_\+\+N\+AK 45}
+
+\mbox{\hyperlink{class_a}{A}} Co\+A-\/\+N\+AK, sent to the R\+A\+D\+I\+US server to indicate that the user authorisations could not be updated. \begin{DoxySince}{Since}
+1.\+3.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{radius_8php_a347d4857a45d06e5b23e29998ff4a50d}\label{radius_8php_a347d4857a45d06e5b23e29998ff4a50d}} 
+\index{radius.php@{radius.php}!RADIUS\_COA\_REQUEST@{RADIUS\_COA\_REQUEST}}
+\index{RADIUS\_COA\_REQUEST@{RADIUS\_COA\_REQUEST}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_COA\_REQUEST}{RADIUS\_COA\_REQUEST}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+A\+\_\+\+R\+E\+Q\+U\+E\+ST 43}
+
+\mbox{\hyperlink{class_a}{A}} Co\+A-\/\+Request, sent from the R\+A\+D\+I\+US server to indicate that the authorisations within the user session have changed. \mbox{\hyperlink{class_a}{A}} response must be sent in the form of a Co\+A-\/\+A\+CK or a Co\+A-\/\+N\+AK. \begin{DoxySince}{Since}
+1.\+3.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{radius_8php_ae808038e79d1ac8571b1d1b6d17ff4a8}\label{radius_8php_ae808038e79d1ac8571b1d1b6d17ff4a8}} 
+\index{radius.php@{radius.php}!RADIUS\_COMP\_IPXHDR@{RADIUS\_COMP\_IPXHDR}}
+\index{RADIUS\_COMP\_IPXHDR@{RADIUS\_COMP\_IPXHDR}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_COMP\_IPXHDR}{RADIUS\_COMP\_IPXHDR}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+M\+P\+\_\+\+I\+P\+X\+H\+DR 2}
+
+\mbox{\Hypertarget{radius_8php_a0c73ac87962d16b81ad1911b6c2e7508}\label{radius_8php_a0c73ac87962d16b81ad1911b6c2e7508}} 
+\index{radius.php@{radius.php}!RADIUS\_COMP\_NONE@{RADIUS\_COMP\_NONE}}
+\index{RADIUS\_COMP\_NONE@{RADIUS\_COMP\_NONE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_COMP\_NONE}{RADIUS\_COMP\_NONE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+M\+P\+\_\+\+N\+O\+NE 0}
+
+\mbox{\Hypertarget{radius_8php_a6c9d74cf6c455c1cc95e1edfaec59dfc}\label{radius_8php_a6c9d74cf6c455c1cc95e1edfaec59dfc}} 
+\index{radius.php@{radius.php}!RADIUS\_COMP\_VJ@{RADIUS\_COMP\_VJ}}
+\index{RADIUS\_COMP\_VJ@{RADIUS\_COMP\_VJ}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_COMP\_VJ}{RADIUS\_COMP\_VJ}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+M\+P\+\_\+\+VJ 1}
+
+\mbox{\Hypertarget{radius_8php_a174b04fda15be62c3d99ec31a7c77ec9}\label{radius_8php_a174b04fda15be62c3d99ec31a7c77ec9}} 
+\index{radius.php@{radius.php}!RADIUS\_CONNECT\_INFO@{RADIUS\_CONNECT\_INFO}}
+\index{RADIUS\_CONNECT\_INFO@{RADIUS\_CONNECT\_INFO}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_CONNECT\_INFO}{RADIUS\_CONNECT\_INFO}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+I\+N\+FO 77}
+
+\mbox{\Hypertarget{radius_8php_a40c39f59469929bdf3720e5a95cced74}\label{radius_8php_a40c39f59469929bdf3720e5a95cced74}} 
+\index{radius.php@{radius.php}!RADIUS\_DISCONNECT\_ACK@{RADIUS\_DISCONNECT\_ACK}}
+\index{RADIUS\_DISCONNECT\_ACK@{RADIUS\_DISCONNECT\_ACK}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_DISCONNECT\_ACK}{RADIUS\_DISCONNECT\_ACK}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+\_\+\+A\+CK 41}
+
+\mbox{\hyperlink{class_a}{A}} Disconnect-\/\+A\+CK, sent to the R\+A\+D\+I\+US server to indicate that the user session has been terminated. \begin{DoxySince}{Since}
+1.\+3.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{radius_8php_ab44e1757b50cc1efd511288a9b9f9bc7}\label{radius_8php_ab44e1757b50cc1efd511288a9b9f9bc7}} 
+\index{radius.php@{radius.php}!RADIUS\_DISCONNECT\_NAK@{RADIUS\_DISCONNECT\_NAK}}
+\index{RADIUS\_DISCONNECT\_NAK@{RADIUS\_DISCONNECT\_NAK}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_DISCONNECT\_NAK}{RADIUS\_DISCONNECT\_NAK}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+\_\+\+N\+AK 42}
+
+\mbox{\hyperlink{class_a}{A}} Disconnect-\/\+N\+AK, sent to the R\+A\+D\+I\+US server to indicate that the user session could not be terminated. \begin{DoxySince}{Since}
+1.\+3.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{radius_8php_a1c2ce50d50300a8d081dd2e83798563e}\label{radius_8php_a1c2ce50d50300a8d081dd2e83798563e}} 
+\index{radius.php@{radius.php}!RADIUS\_DISCONNECT\_REQUEST@{RADIUS\_DISCONNECT\_REQUEST}}
+\index{RADIUS\_DISCONNECT\_REQUEST@{RADIUS\_DISCONNECT\_REQUEST}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_DISCONNECT\_REQUEST}{RADIUS\_DISCONNECT\_REQUEST}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+\_\+\+R\+E\+Q\+U\+E\+ST 40}
+
+\mbox{\hyperlink{class_a}{A}} Disconnect-\/\+Request, sent from the R\+A\+D\+I\+US server to indicate that the user session must be terminated. \begin{DoxySince}{Since}
+1.\+3.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{radius_8php_ad0113114d5240b5205fcf7f64f02705b}\label{radius_8php_ad0113114d5240b5205fcf7f64f02705b}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE@{RADIUS\_ERROR\_CAUSE}}
+\index{RADIUS\_ERROR\_CAUSE@{RADIUS\_ERROR\_CAUSE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE}{RADIUS\_ERROR\_CAUSE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+SE 101}
+
+\mbox{\Hypertarget{radius_8php_a6f03d7ee8561726daab197ecbd50e313}\label{radius_8php_a6f03d7ee8561726daab197ecbd50e313}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE\_ADMINISTRATIVELY\_PROHIBITED@{RADIUS\_ERROR\_CAUSE\_ADMINISTRATIVELY\_PROHIBITED}}
+\index{RADIUS\_ERROR\_CAUSE\_ADMINISTRATIVELY\_PROHIBITED@{RADIUS\_ERROR\_CAUSE\_ADMINISTRATIVELY\_PROHIBITED}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE\_ADMINISTRATIVELY\_PROHIBITED}{RADIUS\_ERROR\_CAUSE\_ADMINISTRATIVELY\_PROHIBITED}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+I\+V\+E\+L\+Y\+\_\+\+P\+R\+O\+H\+I\+B\+I\+T\+ED 501}
+
+\mbox{\Hypertarget{radius_8php_acd53b89e7cc605b41c40b07ebfbb11cb}\label{radius_8php_acd53b89e7cc605b41c40b07ebfbb11cb}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE\_INVALID\_EAP\_PACKET@{RADIUS\_ERROR\_CAUSE\_INVALID\_EAP\_PACKET}}
+\index{RADIUS\_ERROR\_CAUSE\_INVALID\_EAP\_PACKET@{RADIUS\_ERROR\_CAUSE\_INVALID\_EAP\_PACKET}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE\_INVALID\_EAP\_PACKET}{RADIUS\_ERROR\_CAUSE\_INVALID\_EAP\_PACKET}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+E\+A\+P\+\_\+\+P\+A\+C\+K\+ET 202}
+
+\mbox{\Hypertarget{radius_8php_aca412c87bdce49014bb199797ca80101}\label{radius_8php_aca412c87bdce49014bb199797ca80101}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE\_INVALID\_REQUEST@{RADIUS\_ERROR\_CAUSE\_INVALID\_REQUEST}}
+\index{RADIUS\_ERROR\_CAUSE\_INVALID\_REQUEST@{RADIUS\_ERROR\_CAUSE\_INVALID\_REQUEST}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE\_INVALID\_REQUEST}{RADIUS\_ERROR\_CAUSE\_INVALID\_REQUEST}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+R\+E\+Q\+U\+E\+ST 404}
+
+\mbox{\Hypertarget{radius_8php_a34d07a7122484ace68f7cd5fc579810a}\label{radius_8php_a34d07a7122484ace68f7cd5fc579810a}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE\_MISSING\_ATTRIBUTE@{RADIUS\_ERROR\_CAUSE\_MISSING\_ATTRIBUTE}}
+\index{RADIUS\_ERROR\_CAUSE\_MISSING\_ATTRIBUTE@{RADIUS\_ERROR\_CAUSE\_MISSING\_ATTRIBUTE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE\_MISSING\_ATTRIBUTE}{RADIUS\_ERROR\_CAUSE\_MISSING\_ATTRIBUTE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+M\+I\+S\+S\+I\+N\+G\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE 402}
+
+\mbox{\Hypertarget{radius_8php_a0a9ef838e5cd84f1e5a28ed0b6abca13}\label{radius_8php_a0a9ef838e5cd84f1e5a28ed0b6abca13}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE\_NAS\_IDENTIFICATION\_MISMATCH@{RADIUS\_ERROR\_CAUSE\_NAS\_IDENTIFICATION\_MISMATCH}}
+\index{RADIUS\_ERROR\_CAUSE\_NAS\_IDENTIFICATION\_MISMATCH@{RADIUS\_ERROR\_CAUSE\_NAS\_IDENTIFICATION\_MISMATCH}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE\_NAS\_IDENTIFICATION\_MISMATCH}{RADIUS\_ERROR\_CAUSE\_NAS\_IDENTIFICATION\_MISMATCH}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+N\+A\+S\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+M\+I\+S\+M\+A\+T\+CH 403}
+
+\mbox{\Hypertarget{radius_8php_a01bdd0d673a6f01b99812a63d47e73a2}\label{radius_8php_a01bdd0d673a6f01b99812a63d47e73a2}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE\_OTHER\_PROXY\_PROCESSING\_ERROR@{RADIUS\_ERROR\_CAUSE\_OTHER\_PROXY\_PROCESSING\_ERROR}}
+\index{RADIUS\_ERROR\_CAUSE\_OTHER\_PROXY\_PROCESSING\_ERROR@{RADIUS\_ERROR\_CAUSE\_OTHER\_PROXY\_PROCESSING\_ERROR}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE\_OTHER\_PROXY\_PROCESSING\_ERROR}{RADIUS\_ERROR\_CAUSE\_OTHER\_PROXY\_PROCESSING\_ERROR}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+O\+T\+H\+E\+R\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+E\+R\+R\+OR 505}
+
+\mbox{\Hypertarget{radius_8php_a5c1d4a6ba3ee809b58037f32df807ef3}\label{radius_8php_a5c1d4a6ba3ee809b58037f32df807ef3}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE\_REQUEST\_INITIATED@{RADIUS\_ERROR\_CAUSE\_REQUEST\_INITIATED}}
+\index{RADIUS\_ERROR\_CAUSE\_REQUEST\_INITIATED@{RADIUS\_ERROR\_CAUSE\_REQUEST\_INITIATED}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE\_REQUEST\_INITIATED}{RADIUS\_ERROR\_CAUSE\_REQUEST\_INITIATED}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+I\+N\+I\+T\+I\+A\+T\+ED 507}
+
+\mbox{\Hypertarget{radius_8php_aea77625414141c77ba093382379aa9f5}\label{radius_8php_aea77625414141c77ba093382379aa9f5}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE\_REQUEST\_NOT\_ROUTABLE@{RADIUS\_ERROR\_CAUSE\_REQUEST\_NOT\_ROUTABLE}}
+\index{RADIUS\_ERROR\_CAUSE\_REQUEST\_NOT\_ROUTABLE@{RADIUS\_ERROR\_CAUSE\_REQUEST\_NOT\_ROUTABLE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE\_REQUEST\_NOT\_ROUTABLE}{RADIUS\_ERROR\_CAUSE\_REQUEST\_NOT\_ROUTABLE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+N\+O\+T\+\_\+\+R\+O\+U\+T\+A\+B\+LE 502}
+
+\mbox{\Hypertarget{radius_8php_a28585c011058cf4d9eccf5351dc08a7c}\label{radius_8php_a28585c011058cf4d9eccf5351dc08a7c}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE\_RESIDUAL\_SESSION\_CONTEXT\_REMOVED@{RADIUS\_ERROR\_CAUSE\_RESIDUAL\_SESSION\_CONTEXT\_REMOVED}}
+\index{RADIUS\_ERROR\_CAUSE\_RESIDUAL\_SESSION\_CONTEXT\_REMOVED@{RADIUS\_ERROR\_CAUSE\_RESIDUAL\_SESSION\_CONTEXT\_REMOVED}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE\_RESIDUAL\_SESSION\_CONTEXT\_REMOVED}{RADIUS\_ERROR\_CAUSE\_RESIDUAL\_SESSION\_CONTEXT\_REMOVED}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+R\+E\+S\+I\+D\+U\+A\+L\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+E\+M\+O\+V\+ED 201}
+
+\mbox{\Hypertarget{radius_8php_abbaaa504657faa2dd8e5f4874196d27f}\label{radius_8php_abbaaa504657faa2dd8e5f4874196d27f}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE\_RESOURCES\_UNAVAILABLE@{RADIUS\_ERROR\_CAUSE\_RESOURCES\_UNAVAILABLE}}
+\index{RADIUS\_ERROR\_CAUSE\_RESOURCES\_UNAVAILABLE@{RADIUS\_ERROR\_CAUSE\_RESOURCES\_UNAVAILABLE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE\_RESOURCES\_UNAVAILABLE}{RADIUS\_ERROR\_CAUSE\_RESOURCES\_UNAVAILABLE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE 506}
+
+\mbox{\Hypertarget{radius_8php_ae85bb5c9918ad2b7baccbcfb96fd40a6}\label{radius_8php_ae85bb5c9918ad2b7baccbcfb96fd40a6}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE\_SESSION\_CONTEXT\_NOT\_FOUND@{RADIUS\_ERROR\_CAUSE\_SESSION\_CONTEXT\_NOT\_FOUND}}
+\index{RADIUS\_ERROR\_CAUSE\_SESSION\_CONTEXT\_NOT\_FOUND@{RADIUS\_ERROR\_CAUSE\_SESSION\_CONTEXT\_NOT\_FOUND}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE\_SESSION\_CONTEXT\_NOT\_FOUND}{RADIUS\_ERROR\_CAUSE\_SESSION\_CONTEXT\_NOT\_FOUND}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND 503}
+
+\mbox{\Hypertarget{radius_8php_af6e4f9f57e7484b600a20955c0b93f2b}\label{radius_8php_af6e4f9f57e7484b600a20955c0b93f2b}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE\_SESSION\_CONTEXT\_NOT\_REMOVABLE@{RADIUS\_ERROR\_CAUSE\_SESSION\_CONTEXT\_NOT\_REMOVABLE}}
+\index{RADIUS\_ERROR\_CAUSE\_SESSION\_CONTEXT\_NOT\_REMOVABLE@{RADIUS\_ERROR\_CAUSE\_SESSION\_CONTEXT\_NOT\_REMOVABLE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE\_SESSION\_CONTEXT\_NOT\_REMOVABLE}{RADIUS\_ERROR\_CAUSE\_SESSION\_CONTEXT\_NOT\_REMOVABLE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+N\+O\+T\+\_\+\+R\+E\+M\+O\+V\+A\+B\+LE 504}
+
+\mbox{\Hypertarget{radius_8php_aeaee37dfcd0ecd1ca01e370caf1525e9}\label{radius_8php_aeaee37dfcd0ecd1ca01e370caf1525e9}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_ATTRIBUTE@{RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_ATTRIBUTE}}
+\index{RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_ATTRIBUTE@{RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_ATTRIBUTE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_ATTRIBUTE}{RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_ATTRIBUTE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE 401}
+
+\mbox{\Hypertarget{radius_8php_a213cab7dcdf293db0005ae65603958ee}\label{radius_8php_a213cab7dcdf293db0005ae65603958ee}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_EXCEPTION@{RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_EXCEPTION}}
+\index{RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_EXCEPTION@{RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_EXCEPTION}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_EXCEPTION}{RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_EXCEPTION}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON 406}
+
+\mbox{\Hypertarget{radius_8php_aaebdd693c9941b7d54d69a2a5739fca8}\label{radius_8php_aaebdd693c9941b7d54d69a2a5739fca8}} 
+\index{radius.php@{radius.php}!RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_SERVICE@{RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_SERVICE}}
+\index{RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_SERVICE@{RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_SERVICE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_SERVICE}{RADIUS\_ERROR\_CAUSE\_UNSUPPORTED\_SERVICE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+A\+U\+S\+E\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+S\+E\+R\+V\+I\+CE 405}
+
+\mbox{\Hypertarget{radius_8php_ae99531f0ee2253243b26c18c205dcdd8}\label{radius_8php_ae99531f0ee2253243b26c18c205dcdd8}} 
+\index{radius.php@{radius.php}!RADIUS\_ETHERNET@{RADIUS\_ETHERNET}}
+\index{RADIUS\_ETHERNET@{RADIUS\_ETHERNET}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ETHERNET}{RADIUS\_ETHERNET}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+E\+T\+H\+E\+R\+N\+ET 15}
+
+\mbox{\Hypertarget{radius_8php_a295fcd7ce864ee355ad988dd3b0a0fc2}\label{radius_8php_a295fcd7ce864ee355ad988dd3b0a0fc2}} 
+\index{radius.php@{radius.php}!RADIUS\_FILTER\_ID@{RADIUS\_FILTER\_ID}}
+\index{RADIUS\_FILTER\_ID@{RADIUS\_FILTER\_ID}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FILTER\_ID}{RADIUS\_FILTER\_ID}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+ID 11}
+
+The Filter-\/\+ID attribute. The attribute value is expected to be an implementation-\/specific, human-\/readable string of filters, which can be set using \{\begin{DoxySeeAlso}{See also}
+radius\+\_\+put\+\_\+attr()\}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{radius_8php_aa9bdd8116628adeb8031d65e490d1d4e}\label{radius_8php_aa9bdd8116628adeb8031d65e490d1d4e}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED@{RADIUS\_FRAMED}}
+\index{RADIUS\_FRAMED@{RADIUS\_FRAMED}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED}{RADIUS\_FRAMED}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+ED 2}
+
+\mbox{\Hypertarget{radius_8php_ab76f43932b9cd1bc6693f80eed52ade3}\label{radius_8php_ab76f43932b9cd1bc6693f80eed52ade3}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED\_APPLETALK\_LINK@{RADIUS\_FRAMED\_APPLETALK\_LINK}}
+\index{RADIUS\_FRAMED\_APPLETALK\_LINK@{RADIUS\_FRAMED\_APPLETALK\_LINK}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED\_APPLETALK\_LINK}{RADIUS\_FRAMED\_APPLETALK\_LINK}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+A\+P\+P\+L\+E\+T\+A\+L\+K\+\_\+\+L\+I\+NK 37}
+
+\mbox{\Hypertarget{radius_8php_a3c6fca47e019eb345c398ff136ed1e09}\label{radius_8php_a3c6fca47e019eb345c398ff136ed1e09}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED\_APPLETALK\_NETWORK@{RADIUS\_FRAMED\_APPLETALK\_NETWORK}}
+\index{RADIUS\_FRAMED\_APPLETALK\_NETWORK@{RADIUS\_FRAMED\_APPLETALK\_NETWORK}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED\_APPLETALK\_NETWORK}{RADIUS\_FRAMED\_APPLETALK\_NETWORK}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+A\+P\+P\+L\+E\+T\+A\+L\+K\+\_\+\+N\+E\+T\+W\+O\+RK 38}
+
+\mbox{\Hypertarget{radius_8php_ad0bbe0e1018b52036c9b0e24b1a55984}\label{radius_8php_ad0bbe0e1018b52036c9b0e24b1a55984}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED\_APPLETALK\_ZONE@{RADIUS\_FRAMED\_APPLETALK\_ZONE}}
+\index{RADIUS\_FRAMED\_APPLETALK\_ZONE@{RADIUS\_FRAMED\_APPLETALK\_ZONE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED\_APPLETALK\_ZONE}{RADIUS\_FRAMED\_APPLETALK\_ZONE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+A\+P\+P\+L\+E\+T\+A\+L\+K\+\_\+\+Z\+O\+NE 39}
+
+\mbox{\Hypertarget{radius_8php_a14ec6ada411443d4ed4758ff715c55bc}\label{radius_8php_a14ec6ada411443d4ed4758ff715c55bc}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED\_COMPRESSION@{RADIUS\_FRAMED\_COMPRESSION}}
+\index{RADIUS\_FRAMED\_COMPRESSION@{RADIUS\_FRAMED\_COMPRESSION}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED\_COMPRESSION}{RADIUS\_FRAMED\_COMPRESSION}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+I\+ON 13}
+
+The Framed-\/\+Compression attribute. The attribute value is expected to be an integer indicating the compression protocol to be used, and can be set using radius\+\_\+put\+\_\+int(). Possible values include these constants\+:
+\begin{DoxyItemize}
+\item {\bfseries{R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+M\+P\+\_\+\+N\+O\+NE}}\+: No compression
+\item {\bfseries{R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+M\+P\+\_\+\+VJ}}\+: VJ T\+C\+P/\+IP header compression
+\item {\bfseries{R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+M\+P\+\_\+\+I\+P\+X\+H\+DR}}\+: I\+PX header compression
+\item {\bfseries{R\+A\+D\+I\+U\+S\+\_\+\+C\+O\+M\+P\+\_\+\+S\+T\+A\+C\+\_\+\+L\+ZS}}\+: Stac-\/\+L\+ZS compression (added in P\+E\+CL radius 1.\+3.\+0b2) 
+\end{DoxyItemize}\mbox{\Hypertarget{radius_8php_a682bee43a40976da589c1119af1fd681}\label{radius_8php_a682bee43a40976da589c1119af1fd681}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED\_INTERFACE\_ID@{RADIUS\_FRAMED\_INTERFACE\_ID}}
+\index{RADIUS\_FRAMED\_INTERFACE\_ID@{RADIUS\_FRAMED\_INTERFACE\_ID}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED\_INTERFACE\_ID}{RADIUS\_FRAMED\_INTERFACE\_ID}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+ID 96}
+
+\mbox{\Hypertarget{radius_8php_ac36759da387be83efd45b69a92208043}\label{radius_8php_ac36759da387be83efd45b69a92208043}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED\_IP\_ADDRESS@{RADIUS\_FRAMED\_IP\_ADDRESS}}
+\index{RADIUS\_FRAMED\_IP\_ADDRESS@{RADIUS\_FRAMED\_IP\_ADDRESS}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED\_IP\_ADDRESS}{RADIUS\_FRAMED\_IP\_ADDRESS}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+I\+P\+\_\+\+A\+D\+D\+R\+E\+SS 8}
+
+The Framed-\/\+I\+P-\/\+Address attribute. The attribute value is expected to be the address of the user\textquotesingle{}s network encoded as an integer, which can be set using \{\begin{DoxySeeAlso}{See also}
+radius\+\_\+put\+\_\+addr()\} and retrieved using \{
+
+radius\+\_\+cvt\+\_\+addr()\}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{radius_8php_a3358e12d7789bc1ea922341e78f3d88b}\label{radius_8php_a3358e12d7789bc1ea922341e78f3d88b}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED\_IP\_NETMASK@{RADIUS\_FRAMED\_IP\_NETMASK}}
+\index{RADIUS\_FRAMED\_IP\_NETMASK@{RADIUS\_FRAMED\_IP\_NETMASK}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED\_IP\_NETMASK}{RADIUS\_FRAMED\_IP\_NETMASK}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+I\+P\+\_\+\+N\+E\+T\+M\+A\+SK 9}
+
+The Framed-\/\+I\+P-\/\+Netmask attribute. The attribute value is expected to be the netmask of the user\textquotesingle{}s network encoded as an integer, which can be set using \{\begin{DoxySeeAlso}{See also}
+radius\+\_\+put\+\_\+addr()\} and retrieved using \{
+
+radius\+\_\+cvt\+\_\+addr()\}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{radius_8php_a42e25eec51a63704a07bc72a50ae026e}\label{radius_8php_a42e25eec51a63704a07bc72a50ae026e}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED\_IPV6\_POOL@{RADIUS\_FRAMED\_IPV6\_POOL}}
+\index{RADIUS\_FRAMED\_IPV6\_POOL@{RADIUS\_FRAMED\_IPV6\_POOL}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED\_IPV6\_POOL}{RADIUS\_FRAMED\_IPV6\_POOL}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+I\+P\+V6\+\_\+\+P\+O\+OL 100}
+
+\mbox{\Hypertarget{radius_8php_a9e712336174b17a2a2f447dddbb4c165}\label{radius_8php_a9e712336174b17a2a2f447dddbb4c165}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED\_IPV6\_PREFIX@{RADIUS\_FRAMED\_IPV6\_PREFIX}}
+\index{RADIUS\_FRAMED\_IPV6\_PREFIX@{RADIUS\_FRAMED\_IPV6\_PREFIX}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED\_IPV6\_PREFIX}{RADIUS\_FRAMED\_IPV6\_PREFIX}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+I\+P\+V6\+\_\+\+P\+R\+E\+F\+IX 97}
+
+\mbox{\Hypertarget{radius_8php_aee19a49e3125a1f6078bae4a89be53eb}\label{radius_8php_aee19a49e3125a1f6078bae4a89be53eb}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED\_IPV6\_ROUTE@{RADIUS\_FRAMED\_IPV6\_ROUTE}}
+\index{RADIUS\_FRAMED\_IPV6\_ROUTE@{RADIUS\_FRAMED\_IPV6\_ROUTE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED\_IPV6\_ROUTE}{RADIUS\_FRAMED\_IPV6\_ROUTE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+I\+P\+V6\+\_\+\+R\+O\+U\+TE 99}
+
+\mbox{\Hypertarget{radius_8php_afd8c2b4147832fe5c5ec7cb8c6d63e19}\label{radius_8php_afd8c2b4147832fe5c5ec7cb8c6d63e19}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED\_IPX\_NETWORK@{RADIUS\_FRAMED\_IPX\_NETWORK}}
+\index{RADIUS\_FRAMED\_IPX\_NETWORK@{RADIUS\_FRAMED\_IPX\_NETWORK}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED\_IPX\_NETWORK}{RADIUS\_FRAMED\_IPX\_NETWORK}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+I\+P\+X\+\_\+\+N\+E\+T\+W\+O\+RK 23}
+
+\mbox{\Hypertarget{radius_8php_acf99007fa505abb45b60bcbc05c140f3}\label{radius_8php_acf99007fa505abb45b60bcbc05c140f3}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED\_MTU@{RADIUS\_FRAMED\_MTU}}
+\index{RADIUS\_FRAMED\_MTU@{RADIUS\_FRAMED\_MTU}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED\_MTU}{RADIUS\_FRAMED\_MTU}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+M\+TU 12}
+
+The Framed-\/\+M\+TU attribute. The attribute value is expected to be an integer indicating the M\+TU to be configured for the user, and can be set using \{\begin{DoxySeeAlso}{See also}
+radius\+\_\+put\+\_\+int()\}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{radius_8php_ab0aa8625aee7b6ce7e23444307933220}\label{radius_8php_ab0aa8625aee7b6ce7e23444307933220}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED\_PROTOCOL@{RADIUS\_FRAMED\_PROTOCOL}}
+\index{RADIUS\_FRAMED\_PROTOCOL@{RADIUS\_FRAMED\_PROTOCOL}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED\_PROTOCOL}{RADIUS\_FRAMED\_PROTOCOL}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+P\+R\+O\+T\+O\+C\+OL 7}
+
+The Framed-\/\+Protocol attribute. The attribute value is expected to be an integer indicating the framing to be used for framed access, and can be set using \{\begin{DoxySeeAlso}{See also}
+radius\+\_\+put\+\_\+int()\}. The possible \mbox{\hyperlink{phpunit_2phpunit_2src_2_framework_2_assert_2_functions_8php_a9563224b2369a1cc3a9c05ba5170134e}{attribute}} values include these constants\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{radius_8php_a1b998af5d6c109f0a10dd936a2bcdacf}{R\+A\+D\+I\+U\+S\+\_\+\+P\+PP}}
+\item \mbox{\hyperlink{radius_8php_ad4b6cbaec20ddf566bb2f142f566aff0}{R\+A\+D\+I\+U\+S\+\_\+\+S\+L\+IP}}
+\item \mbox{\hyperlink{radius_8php_a47e2293adce2422f3365652c8b1879ad}{R\+A\+D\+I\+U\+S\+\_\+\+A\+R\+AP}}
+\item \mbox{\hyperlink{radius_8php_a17f3ad61075e9a14fe04793953e90f03}{R\+A\+D\+I\+U\+S\+\_\+\+G\+A\+N\+D\+A\+LF}}
+\item \mbox{\hyperlink{radius_8php_aec9bd1c22bd4a50bada28e9aeb014b64}{R\+A\+D\+I\+U\+S\+\_\+\+X\+Y\+L\+O\+G\+I\+CS}} 
+\end{DoxyItemize}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{radius_8php_a4cd09b0e9520298a8f274373ad293d01}\label{radius_8php_a4cd09b0e9520298a8f274373ad293d01}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED\_ROUTE@{RADIUS\_FRAMED\_ROUTE}}
+\index{RADIUS\_FRAMED\_ROUTE@{RADIUS\_FRAMED\_ROUTE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED\_ROUTE}{RADIUS\_FRAMED\_ROUTE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+R\+O\+U\+TE 22}
+
+\mbox{\Hypertarget{radius_8php_a7fe25031808e82370a52a3e574da0c39}\label{radius_8php_a7fe25031808e82370a52a3e574da0c39}} 
+\index{radius.php@{radius.php}!RADIUS\_FRAMED\_ROUTING@{RADIUS\_FRAMED\_ROUTING}}
+\index{RADIUS\_FRAMED\_ROUTING@{RADIUS\_FRAMED\_ROUTING}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_FRAMED\_ROUTING}{RADIUS\_FRAMED\_ROUTING}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+E\+D\+\_\+\+R\+O\+U\+T\+I\+NG 10}
+
+The Framed-\/\+Routing attribute. The attribute value is expected to be an integer indicating the routing method for the user, which can be set using \{\begin{DoxySeeAlso}{See also}
+radius\+\_\+put\+\_\+int()\}.~\newline
+ ~\newline
+ Possible values include\+:
+\begin{DoxyItemize}
+\item 0\+: No routing
+\item 1\+: Send routing packets
+\item 2\+: Listen for routing packets
+\item 3\+: Send and listen 
+\end{DoxyItemize}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{radius_8php_a8ccb2e747313060b2d1ffaab32041957}\label{radius_8php_a8ccb2e747313060b2d1ffaab32041957}} 
+\index{radius.php@{radius.php}!RADIUS\_G\_3\_FAX@{RADIUS\_G\_3\_FAX}}
+\index{RADIUS\_G\_3\_FAX@{RADIUS\_G\_3\_FAX}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_G\_3\_FAX}{RADIUS\_G\_3\_FAX}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+G\+\_\+3\+\_\+\+F\+AX 10}
+
+\mbox{\Hypertarget{radius_8php_a17f3ad61075e9a14fe04793953e90f03}\label{radius_8php_a17f3ad61075e9a14fe04793953e90f03}} 
+\index{radius.php@{radius.php}!RADIUS\_GANDALF@{RADIUS\_GANDALF}}
+\index{RADIUS\_GANDALF@{RADIUS\_GANDALF}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_GANDALF}{RADIUS\_GANDALF}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+G\+A\+N\+D\+A\+LF 4}
+
+\mbox{\Hypertarget{radius_8php_aadf495d5618dfa1c96e1c54e558787bf}\label{radius_8php_aadf495d5618dfa1c96e1c54e558787bf}} 
+\index{radius.php@{radius.php}!RADIUS\_HDLC\_CLEAR\_CHANNEL@{RADIUS\_HDLC\_CLEAR\_CHANNEL}}
+\index{RADIUS\_HDLC\_CLEAR\_CHANNEL@{RADIUS\_HDLC\_CLEAR\_CHANNEL}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_HDLC\_CLEAR\_CHANNEL}{RADIUS\_HDLC\_CLEAR\_CHANNEL}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+H\+D\+L\+C\+\_\+\+C\+L\+E\+A\+R\+\_\+\+C\+H\+A\+N\+N\+EL 7}
+
+\mbox{\Hypertarget{radius_8php_ae3de1b4ab45998184e7ba9347f760703}\label{radius_8php_ae3de1b4ab45998184e7ba9347f760703}} 
+\index{radius.php@{radius.php}!RADIUS\_IDLE\_TIMEOUT@{RADIUS\_IDLE\_TIMEOUT}}
+\index{RADIUS\_IDLE\_TIMEOUT@{RADIUS\_IDLE\_TIMEOUT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_IDLE\_TIMEOUT}{RADIUS\_IDLE\_TIMEOUT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+I\+D\+L\+E\+\_\+\+T\+I\+M\+E\+O\+UT 28}
+
+\mbox{\Hypertarget{radius_8php_a97378ee3c79d4cefbca25a905ba22c07}\label{radius_8php_a97378ee3c79d4cefbca25a905ba22c07}} 
+\index{radius.php@{radius.php}!RADIUS\_IDSL@{RADIUS\_IDSL}}
+\index{RADIUS\_IDSL@{RADIUS\_IDSL}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_IDSL}{RADIUS\_IDSL}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+I\+D\+SL 14}
+
+\mbox{\Hypertarget{radius_8php_afb8a3275d4cde1fd9ec703e20414d12b}\label{radius_8php_afb8a3275d4cde1fd9ec703e20414d12b}} 
+\index{radius.php@{radius.php}!RADIUS\_ISDN\_ASYNC\_V110@{RADIUS\_ISDN\_ASYNC\_V110}}
+\index{RADIUS\_ISDN\_ASYNC\_V110@{RADIUS\_ISDN\_ASYNC\_V110}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ISDN\_ASYNC\_V110}{RADIUS\_ISDN\_ASYNC\_V110}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+I\+S\+D\+N\+\_\+\+A\+S\+Y\+N\+C\+\_\+\+V110 4}
+
+\mbox{\Hypertarget{radius_8php_a41b89b590a19a77cbb338ab90c556ecc}\label{radius_8php_a41b89b590a19a77cbb338ab90c556ecc}} 
+\index{radius.php@{radius.php}!RADIUS\_ISDN\_ASYNC\_V120@{RADIUS\_ISDN\_ASYNC\_V120}}
+\index{RADIUS\_ISDN\_ASYNC\_V120@{RADIUS\_ISDN\_ASYNC\_V120}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ISDN\_ASYNC\_V120}{RADIUS\_ISDN\_ASYNC\_V120}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+I\+S\+D\+N\+\_\+\+A\+S\+Y\+N\+C\+\_\+\+V120 3}
+
+\mbox{\Hypertarget{radius_8php_ab99f766672e2c1274b23b595f0a8e72c}\label{radius_8php_ab99f766672e2c1274b23b595f0a8e72c}} 
+\index{radius.php@{radius.php}!RADIUS\_ISDN\_SYNC@{RADIUS\_ISDN\_SYNC}}
+\index{RADIUS\_ISDN\_SYNC@{RADIUS\_ISDN\_SYNC}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_ISDN\_SYNC}{RADIUS\_ISDN\_SYNC}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+I\+S\+D\+N\+\_\+\+S\+Y\+NC 2}
+
+\mbox{\Hypertarget{radius_8php_a980b2e5463422134e378ffb3b902bbfb}\label{radius_8php_a980b2e5463422134e378ffb3b902bbfb}} 
+\index{radius.php@{radius.php}!RADIUS\_LOGIN@{RADIUS\_LOGIN}}
+\index{RADIUS\_LOGIN@{RADIUS\_LOGIN}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_LOGIN}{RADIUS\_LOGIN}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+IN 1}
+
+\mbox{\Hypertarget{radius_8php_ad49f41a98579ed888fee71d140ef5c84}\label{radius_8php_ad49f41a98579ed888fee71d140ef5c84}} 
+\index{radius.php@{radius.php}!RADIUS\_LOGIN\_IP\_HOST@{RADIUS\_LOGIN\_IP\_HOST}}
+\index{RADIUS\_LOGIN\_IP\_HOST@{RADIUS\_LOGIN\_IP\_HOST}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_LOGIN\_IP\_HOST}{RADIUS\_LOGIN\_IP\_HOST}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+I\+P\+\_\+\+H\+O\+ST 14}
+
+The Login-\/\+I\+P-\/\+Host attribute. The attribute value is expected to the IP address to connect the user to, encoded as an integer, which can be set using \{\begin{DoxySeeAlso}{See also}
+radius\+\_\+put\+\_\+addr()\}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{radius_8php_a456be182a1285a2a4c28357d9d5cee04}\label{radius_8php_a456be182a1285a2a4c28357d9d5cee04}} 
+\index{radius.php@{radius.php}!RADIUS\_LOGIN\_IPV6\_HOST@{RADIUS\_LOGIN\_IPV6\_HOST}}
+\index{RADIUS\_LOGIN\_IPV6\_HOST@{RADIUS\_LOGIN\_IPV6\_HOST}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_LOGIN\_IPV6\_HOST}{RADIUS\_LOGIN\_IPV6\_HOST}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+I\+P\+V6\+\_\+\+H\+O\+ST 98}
+
+\mbox{\Hypertarget{radius_8php_ac0b1aee69ace258bb5f3a726ffc39b33}\label{radius_8php_ac0b1aee69ace258bb5f3a726ffc39b33}} 
+\index{radius.php@{radius.php}!RADIUS\_LOGIN\_LAT\_GROUP@{RADIUS\_LOGIN\_LAT\_GROUP}}
+\index{RADIUS\_LOGIN\_LAT\_GROUP@{RADIUS\_LOGIN\_LAT\_GROUP}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_LOGIN\_LAT\_GROUP}{RADIUS\_LOGIN\_LAT\_GROUP}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+L\+A\+T\+\_\+\+G\+R\+O\+UP 36}
+
+\mbox{\Hypertarget{radius_8php_a0c35d9cec2591adf42225fb63c428c59}\label{radius_8php_a0c35d9cec2591adf42225fb63c428c59}} 
+\index{radius.php@{radius.php}!RADIUS\_LOGIN\_LAT\_NODE@{RADIUS\_LOGIN\_LAT\_NODE}}
+\index{RADIUS\_LOGIN\_LAT\_NODE@{RADIUS\_LOGIN\_LAT\_NODE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_LOGIN\_LAT\_NODE}{RADIUS\_LOGIN\_LAT\_NODE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+L\+A\+T\+\_\+\+N\+O\+DE 35}
+
+\mbox{\Hypertarget{radius_8php_aaf5adedba978cf4669b760616532f072}\label{radius_8php_aaf5adedba978cf4669b760616532f072}} 
+\index{radius.php@{radius.php}!RADIUS\_LOGIN\_LAT\_PORT@{RADIUS\_LOGIN\_LAT\_PORT}}
+\index{RADIUS\_LOGIN\_LAT\_PORT@{RADIUS\_LOGIN\_LAT\_PORT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_LOGIN\_LAT\_PORT}{RADIUS\_LOGIN\_LAT\_PORT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+L\+A\+T\+\_\+\+P\+O\+RT 63}
+
+\mbox{\Hypertarget{radius_8php_a825ece7f135a29451828eed4556f7db8}\label{radius_8php_a825ece7f135a29451828eed4556f7db8}} 
+\index{radius.php@{radius.php}!RADIUS\_LOGIN\_LAT\_SERVICE@{RADIUS\_LOGIN\_LAT\_SERVICE}}
+\index{RADIUS\_LOGIN\_LAT\_SERVICE@{RADIUS\_LOGIN\_LAT\_SERVICE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_LOGIN\_LAT\_SERVICE}{RADIUS\_LOGIN\_LAT\_SERVICE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+L\+A\+T\+\_\+\+S\+E\+R\+V\+I\+CE 34}
+
+\mbox{\Hypertarget{radius_8php_a831883dbbaa63281d679ebc31dcd4943}\label{radius_8php_a831883dbbaa63281d679ebc31dcd4943}} 
+\index{radius.php@{radius.php}!RADIUS\_LOGIN\_SERVICE@{RADIUS\_LOGIN\_SERVICE}}
+\index{RADIUS\_LOGIN\_SERVICE@{RADIUS\_LOGIN\_SERVICE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_LOGIN\_SERVICE}{RADIUS\_LOGIN\_SERVICE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+S\+E\+R\+V\+I\+CE 15}
+
+The Login-\/\+Service attribute. The attribute value is an integer indicating the service to connect the user to on the login host. The value can be converted to a P\+HP integer via \{\begin{DoxySeeAlso}{See also}
+radius\+\_\+cvt\+\_\+int()\}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{radius_8php_aec8ed3a721ee4be5d50f5d079fadbfc3}\label{radius_8php_aec8ed3a721ee4be5d50f5d079fadbfc3}} 
+\index{radius.php@{radius.php}!RADIUS\_LOGIN\_TCP\_PORT@{RADIUS\_LOGIN\_TCP\_PORT}}
+\index{RADIUS\_LOGIN\_TCP\_PORT@{RADIUS\_LOGIN\_TCP\_PORT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_LOGIN\_TCP\_PORT}{RADIUS\_LOGIN\_TCP\_PORT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+T\+C\+P\+\_\+\+P\+O\+RT 16}
+
+\mbox{\Hypertarget{radius_8php_aa11116f713bad2b6a1d54ade9c49d0ef}\label{radius_8php_aa11116f713bad2b6a1d54ade9c49d0ef}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_ACCT\_AUTH\_TYPE@{RADIUS\_MICROSOFT\_MS\_ACCT\_AUTH\_TYPE}}
+\index{RADIUS\_MICROSOFT\_MS\_ACCT\_AUTH\_TYPE@{RADIUS\_MICROSOFT\_MS\_ACCT\_AUTH\_TYPE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_ACCT\_AUTH\_TYPE}{RADIUS\_MICROSOFT\_MS\_ACCT\_AUTH\_TYPE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+A\+C\+C\+T\+\_\+\+A\+U\+T\+H\+\_\+\+T\+Y\+PE 23}
+
+\mbox{\Hypertarget{radius_8php_a42cd23e231649f4a0210ff8bc9710d55}\label{radius_8php_a42cd23e231649f4a0210ff8bc9710d55}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_ACCT\_EAP\_TYPE@{RADIUS\_MICROSOFT\_MS\_ACCT\_EAP\_TYPE}}
+\index{RADIUS\_MICROSOFT\_MS\_ACCT\_EAP\_TYPE@{RADIUS\_MICROSOFT\_MS\_ACCT\_EAP\_TYPE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_ACCT\_EAP\_TYPE}{RADIUS\_MICROSOFT\_MS\_ACCT\_EAP\_TYPE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+A\+C\+C\+T\+\_\+\+E\+A\+P\+\_\+\+T\+Y\+PE 24}
+
+\mbox{\Hypertarget{radius_8php_afab053e6300ec917b52724676acf4246}\label{radius_8php_afab053e6300ec917b52724676acf4246}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_ARAP\_CHALLENGE@{RADIUS\_MICROSOFT\_MS\_ARAP\_CHALLENGE}}
+\index{RADIUS\_MICROSOFT\_MS\_ARAP\_CHALLENGE@{RADIUS\_MICROSOFT\_MS\_ARAP\_CHALLENGE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_ARAP\_CHALLENGE}{RADIUS\_MICROSOFT\_MS\_ARAP\_CHALLENGE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+A\+R\+A\+P\+\_\+\+C\+H\+A\+L\+L\+E\+N\+GE 33}
+
+\mbox{\Hypertarget{radius_8php_a93839e2b7b878769b5bb5fd69bfb925d}\label{radius_8php_a93839e2b7b878769b5bb5fd69bfb925d}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_ARAP\_PASSWORD\_CHANGE\_REASON@{RADIUS\_MICROSOFT\_MS\_ARAP\_PASSWORD\_CHANGE\_REASON}}
+\index{RADIUS\_MICROSOFT\_MS\_ARAP\_PASSWORD\_CHANGE\_REASON@{RADIUS\_MICROSOFT\_MS\_ARAP\_PASSWORD\_CHANGE\_REASON}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_ARAP\_PASSWORD\_CHANGE\_REASON}{RADIUS\_MICROSOFT\_MS\_ARAP\_PASSWORD\_CHANGE\_REASON}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+A\+R\+A\+P\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+C\+H\+A\+N\+G\+E\+\_\+\+R\+E\+A\+S\+ON 21}
+
+\mbox{\Hypertarget{radius_8php_af10a93760dfbc2af9be4bd5939a76c2a}\label{radius_8php_af10a93760dfbc2af9be4bd5939a76c2a}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_BAP\_USAGE@{RADIUS\_MICROSOFT\_MS\_BAP\_USAGE}}
+\index{RADIUS\_MICROSOFT\_MS\_BAP\_USAGE@{RADIUS\_MICROSOFT\_MS\_BAP\_USAGE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_BAP\_USAGE}{RADIUS\_MICROSOFT\_MS\_BAP\_USAGE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+B\+A\+P\+\_\+\+U\+S\+A\+GE 13}
+
+\mbox{\Hypertarget{radius_8php_abe128b048053aef3cffa953cd5f5a7d1}\label{radius_8php_abe128b048053aef3cffa953cd5f5a7d1}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_CHAP2\_PW@{RADIUS\_MICROSOFT\_MS\_CHAP2\_PW}}
+\index{RADIUS\_MICROSOFT\_MS\_CHAP2\_PW@{RADIUS\_MICROSOFT\_MS\_CHAP2\_PW}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_CHAP2\_PW}{RADIUS\_MICROSOFT\_MS\_CHAP2\_PW}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P2\+\_\+\+PW 27}
+
+\mbox{\Hypertarget{radius_8php_a9ae9392e9fdacd600dbeeebabb13deb2}\label{radius_8php_a9ae9392e9fdacd600dbeeebabb13deb2}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_CHAP2\_RESPONSE@{RADIUS\_MICROSOFT\_MS\_CHAP2\_RESPONSE}}
+\index{RADIUS\_MICROSOFT\_MS\_CHAP2\_RESPONSE@{RADIUS\_MICROSOFT\_MS\_CHAP2\_RESPONSE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_CHAP2\_RESPONSE}{RADIUS\_MICROSOFT\_MS\_CHAP2\_RESPONSE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P2\+\_\+\+R\+E\+S\+P\+O\+N\+SE 25}
+
+\mbox{\Hypertarget{radius_8php_af8c249991ab26be709b9c0c5fa1a3e0c}\label{radius_8php_af8c249991ab26be709b9c0c5fa1a3e0c}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_CHAP2\_SUCCESS@{RADIUS\_MICROSOFT\_MS\_CHAP2\_SUCCESS}}
+\index{RADIUS\_MICROSOFT\_MS\_CHAP2\_SUCCESS@{RADIUS\_MICROSOFT\_MS\_CHAP2\_SUCCESS}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_CHAP2\_SUCCESS}{RADIUS\_MICROSOFT\_MS\_CHAP2\_SUCCESS}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P2\+\_\+\+S\+U\+C\+C\+E\+SS 26}
+
+\mbox{\Hypertarget{radius_8php_aeb2383a72700f9b05192835d86cb2298}\label{radius_8php_aeb2383a72700f9b05192835d86cb2298}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_CHAP\_CHALLENGE@{RADIUS\_MICROSOFT\_MS\_CHAP\_CHALLENGE}}
+\index{RADIUS\_MICROSOFT\_MS\_CHAP\_CHALLENGE@{RADIUS\_MICROSOFT\_MS\_CHAP\_CHALLENGE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_CHAP\_CHALLENGE}{RADIUS\_MICROSOFT\_MS\_CHAP\_CHALLENGE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+C\+H\+A\+L\+L\+E\+N\+GE 11}
+
+\mbox{\Hypertarget{radius_8php_aeec0de711eef9d293b33aa4534bc3fb1}\label{radius_8php_aeec0de711eef9d293b33aa4534bc3fb1}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_CHAP\_DOMAIN@{RADIUS\_MICROSOFT\_MS\_CHAP\_DOMAIN}}
+\index{RADIUS\_MICROSOFT\_MS\_CHAP\_DOMAIN@{RADIUS\_MICROSOFT\_MS\_CHAP\_DOMAIN}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_CHAP\_DOMAIN}{RADIUS\_MICROSOFT\_MS\_CHAP\_DOMAIN}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+D\+O\+M\+A\+IN 10}
+
+\mbox{\Hypertarget{radius_8php_a2092a178dccf6023c319cd097f792bbd}\label{radius_8php_a2092a178dccf6023c319cd097f792bbd}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_CHAP\_ERROR@{RADIUS\_MICROSOFT\_MS\_CHAP\_ERROR}}
+\index{RADIUS\_MICROSOFT\_MS\_CHAP\_ERROR@{RADIUS\_MICROSOFT\_MS\_CHAP\_ERROR}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_CHAP\_ERROR}{RADIUS\_MICROSOFT\_MS\_CHAP\_ERROR}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+E\+R\+R\+OR 2}
+
+\mbox{\Hypertarget{radius_8php_a649d1a8815e2e67d6231b7a9dc031e09}\label{radius_8php_a649d1a8815e2e67d6231b7a9dc031e09}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_CHAP\_LM\_ENC\_PW@{RADIUS\_MICROSOFT\_MS\_CHAP\_LM\_ENC\_PW}}
+\index{RADIUS\_MICROSOFT\_MS\_CHAP\_LM\_ENC\_PW@{RADIUS\_MICROSOFT\_MS\_CHAP\_LM\_ENC\_PW}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_CHAP\_LM\_ENC\_PW}{RADIUS\_MICROSOFT\_MS\_CHAP\_LM\_ENC\_PW}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+L\+M\+\_\+\+E\+N\+C\+\_\+\+PW 5}
+
+\mbox{\Hypertarget{radius_8php_a8801ee51f3bcd1e7fa922cc684138701}\label{radius_8php_a8801ee51f3bcd1e7fa922cc684138701}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_CHAP\_MPPE\_KEYS@{RADIUS\_MICROSOFT\_MS\_CHAP\_MPPE\_KEYS}}
+\index{RADIUS\_MICROSOFT\_MS\_CHAP\_MPPE\_KEYS@{RADIUS\_MICROSOFT\_MS\_CHAP\_MPPE\_KEYS}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_CHAP\_MPPE\_KEYS}{RADIUS\_MICROSOFT\_MS\_CHAP\_MPPE\_KEYS}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+M\+P\+P\+E\+\_\+\+K\+E\+YS 12}
+
+\mbox{\Hypertarget{radius_8php_ac2687eba3b241d76334e71616cbb3aeb}\label{radius_8php_ac2687eba3b241d76334e71616cbb3aeb}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_CHAP\_NT\_ENC\_PW@{RADIUS\_MICROSOFT\_MS\_CHAP\_NT\_ENC\_PW}}
+\index{RADIUS\_MICROSOFT\_MS\_CHAP\_NT\_ENC\_PW@{RADIUS\_MICROSOFT\_MS\_CHAP\_NT\_ENC\_PW}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_CHAP\_NT\_ENC\_PW}{RADIUS\_MICROSOFT\_MS\_CHAP\_NT\_ENC\_PW}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+N\+T\+\_\+\+E\+N\+C\+\_\+\+PW 6}
+
+\mbox{\Hypertarget{radius_8php_a02cfc733c866b8dce88bc401547bb252}\label{radius_8php_a02cfc733c866b8dce88bc401547bb252}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_CHAP\_PW\_1@{RADIUS\_MICROSOFT\_MS\_CHAP\_PW\_1}}
+\index{RADIUS\_MICROSOFT\_MS\_CHAP\_PW\_1@{RADIUS\_MICROSOFT\_MS\_CHAP\_PW\_1}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_CHAP\_PW\_1}{RADIUS\_MICROSOFT\_MS\_CHAP\_PW\_1}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+P\+W\+\_\+1 3}
+
+\mbox{\Hypertarget{radius_8php_a5d8ce3a47340b5b9b0647a690b466ba7}\label{radius_8php_a5d8ce3a47340b5b9b0647a690b466ba7}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_CHAP\_PW\_2@{RADIUS\_MICROSOFT\_MS\_CHAP\_PW\_2}}
+\index{RADIUS\_MICROSOFT\_MS\_CHAP\_PW\_2@{RADIUS\_MICROSOFT\_MS\_CHAP\_PW\_2}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_CHAP\_PW\_2}{RADIUS\_MICROSOFT\_MS\_CHAP\_PW\_2}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+P\+W\+\_\+2 4}
+
+\mbox{\Hypertarget{radius_8php_a1ec50cc0693abc8ce103e79c73087180}\label{radius_8php_a1ec50cc0693abc8ce103e79c73087180}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_CHAP\_RESPONSE@{RADIUS\_MICROSOFT\_MS\_CHAP\_RESPONSE}}
+\index{RADIUS\_MICROSOFT\_MS\_CHAP\_RESPONSE@{RADIUS\_MICROSOFT\_MS\_CHAP\_RESPONSE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_CHAP\_RESPONSE}{RADIUS\_MICROSOFT\_MS\_CHAP\_RESPONSE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+C\+H\+A\+P\+\_\+\+R\+E\+S\+P\+O\+N\+SE 1}
+
+\mbox{\Hypertarget{radius_8php_a75dbfb0e57ed61d96129a42b0d8a0a26}\label{radius_8php_a75dbfb0e57ed61d96129a42b0d8a0a26}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_FILTER@{RADIUS\_MICROSOFT\_MS\_FILTER}}
+\index{RADIUS\_MICROSOFT\_MS\_FILTER@{RADIUS\_MICROSOFT\_MS\_FILTER}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_FILTER}{RADIUS\_MICROSOFT\_MS\_FILTER}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+F\+I\+L\+T\+ER 22}
+
+\mbox{\Hypertarget{radius_8php_aaf261cca7438456e3c3f8eb51d3d5388}\label{radius_8php_aaf261cca7438456e3c3f8eb51d3d5388}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_LINK\_DROP\_TIME\_LIMIT@{RADIUS\_MICROSOFT\_MS\_LINK\_DROP\_TIME\_LIMIT}}
+\index{RADIUS\_MICROSOFT\_MS\_LINK\_DROP\_TIME\_LIMIT@{RADIUS\_MICROSOFT\_MS\_LINK\_DROP\_TIME\_LIMIT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_LINK\_DROP\_TIME\_LIMIT}{RADIUS\_MICROSOFT\_MS\_LINK\_DROP\_TIME\_LIMIT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+L\+I\+N\+K\+\_\+\+D\+R\+O\+P\+\_\+\+T\+I\+M\+E\+\_\+\+L\+I\+M\+IT 15}
+
+\mbox{\Hypertarget{radius_8php_a5a66c11befc15a1c5295c79ab3c3c657}\label{radius_8php_a5a66c11befc15a1c5295c79ab3c3c657}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_LINK\_UTILIZATION\_THRESHOLD@{RADIUS\_MICROSOFT\_MS\_LINK\_UTILIZATION\_THRESHOLD}}
+\index{RADIUS\_MICROSOFT\_MS\_LINK\_UTILIZATION\_THRESHOLD@{RADIUS\_MICROSOFT\_MS\_LINK\_UTILIZATION\_THRESHOLD}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_LINK\_UTILIZATION\_THRESHOLD}{RADIUS\_MICROSOFT\_MS\_LINK\_UTILIZATION\_THRESHOLD}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+L\+I\+N\+K\+\_\+\+U\+T\+I\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD 14}
+
+\mbox{\Hypertarget{radius_8php_a3b003ecc912f8097f6842a15f54505d5}\label{radius_8php_a3b003ecc912f8097f6842a15f54505d5}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_MPPE\_ENCRYPTION\_POLICY@{RADIUS\_MICROSOFT\_MS\_MPPE\_ENCRYPTION\_POLICY}}
+\index{RADIUS\_MICROSOFT\_MS\_MPPE\_ENCRYPTION\_POLICY@{RADIUS\_MICROSOFT\_MS\_MPPE\_ENCRYPTION\_POLICY}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_MPPE\_ENCRYPTION\_POLICY}{RADIUS\_MICROSOFT\_MS\_MPPE\_ENCRYPTION\_POLICY}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+M\+P\+P\+E\+\_\+\+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+P\+O\+L\+I\+CY 7}
+
+\mbox{\Hypertarget{radius_8php_aae80b6f6b2b6f73f7feae22c861544e4}\label{radius_8php_aae80b6f6b2b6f73f7feae22c861544e4}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_MPPE\_ENCRYPTION\_TYPES@{RADIUS\_MICROSOFT\_MS\_MPPE\_ENCRYPTION\_TYPES}}
+\index{RADIUS\_MICROSOFT\_MS\_MPPE\_ENCRYPTION\_TYPES@{RADIUS\_MICROSOFT\_MS\_MPPE\_ENCRYPTION\_TYPES}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_MPPE\_ENCRYPTION\_TYPES}{RADIUS\_MICROSOFT\_MS\_MPPE\_ENCRYPTION\_TYPES}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+M\+P\+P\+E\+\_\+\+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+ES 8}
+
+\mbox{\Hypertarget{radius_8php_a26e29a2ae2a10d7f927d8c4bbd011703}\label{radius_8php_a26e29a2ae2a10d7f927d8c4bbd011703}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_MPPE\_RECV\_KEY@{RADIUS\_MICROSOFT\_MS\_MPPE\_RECV\_KEY}}
+\index{RADIUS\_MICROSOFT\_MS\_MPPE\_RECV\_KEY@{RADIUS\_MICROSOFT\_MS\_MPPE\_RECV\_KEY}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_MPPE\_RECV\_KEY}{RADIUS\_MICROSOFT\_MS\_MPPE\_RECV\_KEY}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+M\+P\+P\+E\+\_\+\+R\+E\+C\+V\+\_\+\+K\+EY 17}
+
+\mbox{\Hypertarget{radius_8php_aab2aefc15a16373191e5def5f2441a2a}\label{radius_8php_aab2aefc15a16373191e5def5f2441a2a}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_MPPE\_SEND\_KEY@{RADIUS\_MICROSOFT\_MS\_MPPE\_SEND\_KEY}}
+\index{RADIUS\_MICROSOFT\_MS\_MPPE\_SEND\_KEY@{RADIUS\_MICROSOFT\_MS\_MPPE\_SEND\_KEY}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_MPPE\_SEND\_KEY}{RADIUS\_MICROSOFT\_MS\_MPPE\_SEND\_KEY}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+M\+P\+P\+E\+\_\+\+S\+E\+N\+D\+\_\+\+K\+EY 16}
+
+\mbox{\Hypertarget{radius_8php_a4e8c333f6a9b953ddc6693538ed12a65}\label{radius_8php_a4e8c333f6a9b953ddc6693538ed12a65}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_NEW\_ARAP\_PASSWORD@{RADIUS\_MICROSOFT\_MS\_NEW\_ARAP\_PASSWORD}}
+\index{RADIUS\_MICROSOFT\_MS\_NEW\_ARAP\_PASSWORD@{RADIUS\_MICROSOFT\_MS\_NEW\_ARAP\_PASSWORD}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_NEW\_ARAP\_PASSWORD}{RADIUS\_MICROSOFT\_MS\_NEW\_ARAP\_PASSWORD}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+N\+E\+W\+\_\+\+A\+R\+A\+P\+\_\+\+P\+A\+S\+S\+W\+O\+RD 20}
+
+\mbox{\Hypertarget{radius_8php_acde8f3811a05bce865e5e1936ca53de8}\label{radius_8php_acde8f3811a05bce865e5e1936ca53de8}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_OLD\_ARAP\_PASSWORD@{RADIUS\_MICROSOFT\_MS\_OLD\_ARAP\_PASSWORD}}
+\index{RADIUS\_MICROSOFT\_MS\_OLD\_ARAP\_PASSWORD@{RADIUS\_MICROSOFT\_MS\_OLD\_ARAP\_PASSWORD}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_OLD\_ARAP\_PASSWORD}{RADIUS\_MICROSOFT\_MS\_OLD\_ARAP\_PASSWORD}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+O\+L\+D\+\_\+\+A\+R\+A\+P\+\_\+\+P\+A\+S\+S\+W\+O\+RD 19}
+
+\mbox{\Hypertarget{radius_8php_aa117955cc1cfdedda4771cbd128ec086}\label{radius_8php_aa117955cc1cfdedda4771cbd128ec086}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_PRIMARY\_DNS\_SERVER@{RADIUS\_MICROSOFT\_MS\_PRIMARY\_DNS\_SERVER}}
+\index{RADIUS\_MICROSOFT\_MS\_PRIMARY\_DNS\_SERVER@{RADIUS\_MICROSOFT\_MS\_PRIMARY\_DNS\_SERVER}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_PRIMARY\_DNS\_SERVER}{RADIUS\_MICROSOFT\_MS\_PRIMARY\_DNS\_SERVER}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+P\+R\+I\+M\+A\+R\+Y\+\_\+\+D\+N\+S\+\_\+\+S\+E\+R\+V\+ER 28}
+
+\mbox{\Hypertarget{radius_8php_ade2d6a31e86bb61cb2f8de90b06cfcef}\label{radius_8php_ade2d6a31e86bb61cb2f8de90b06cfcef}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_PRIMARY\_NBNS\_SERVER@{RADIUS\_MICROSOFT\_MS\_PRIMARY\_NBNS\_SERVER}}
+\index{RADIUS\_MICROSOFT\_MS\_PRIMARY\_NBNS\_SERVER@{RADIUS\_MICROSOFT\_MS\_PRIMARY\_NBNS\_SERVER}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_PRIMARY\_NBNS\_SERVER}{RADIUS\_MICROSOFT\_MS\_PRIMARY\_NBNS\_SERVER}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+P\+R\+I\+M\+A\+R\+Y\+\_\+\+N\+B\+N\+S\+\_\+\+S\+E\+R\+V\+ER 30}
+
+\mbox{\Hypertarget{radius_8php_a996e1b21ef93b1181588c718afe7eca5}\label{radius_8php_a996e1b21ef93b1181588c718afe7eca5}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_RAS\_VENDOR@{RADIUS\_MICROSOFT\_MS\_RAS\_VENDOR}}
+\index{RADIUS\_MICROSOFT\_MS\_RAS\_VENDOR@{RADIUS\_MICROSOFT\_MS\_RAS\_VENDOR}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_RAS\_VENDOR}{RADIUS\_MICROSOFT\_MS\_RAS\_VENDOR}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+R\+A\+S\+\_\+\+V\+E\+N\+D\+OR 9}
+
+\mbox{\Hypertarget{radius_8php_aac1c56605cb625bcd103b75cc6c0ee4f}\label{radius_8php_aac1c56605cb625bcd103b75cc6c0ee4f}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_RAS\_VERSION@{RADIUS\_MICROSOFT\_MS\_RAS\_VERSION}}
+\index{RADIUS\_MICROSOFT\_MS\_RAS\_VERSION@{RADIUS\_MICROSOFT\_MS\_RAS\_VERSION}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_RAS\_VERSION}{RADIUS\_MICROSOFT\_MS\_RAS\_VERSION}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+R\+A\+S\+\_\+\+V\+E\+R\+S\+I\+ON 18}
+
+\mbox{\Hypertarget{radius_8php_a9df7ab02c8a57ae8edcee4e900a255e9}\label{radius_8php_a9df7ab02c8a57ae8edcee4e900a255e9}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_SECONDARY\_DNS\_SERVER@{RADIUS\_MICROSOFT\_MS\_SECONDARY\_DNS\_SERVER}}
+\index{RADIUS\_MICROSOFT\_MS\_SECONDARY\_DNS\_SERVER@{RADIUS\_MICROSOFT\_MS\_SECONDARY\_DNS\_SERVER}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_SECONDARY\_DNS\_SERVER}{RADIUS\_MICROSOFT\_MS\_SECONDARY\_DNS\_SERVER}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+S\+E\+C\+O\+N\+D\+A\+R\+Y\+\_\+\+D\+N\+S\+\_\+\+S\+E\+R\+V\+ER 29}
+
+\mbox{\Hypertarget{radius_8php_a473c0fb103b4db5f4d8cfb721cc80b2f}\label{radius_8php_a473c0fb103b4db5f4d8cfb721cc80b2f}} 
+\index{radius.php@{radius.php}!RADIUS\_MICROSOFT\_MS\_SECONDARY\_NBNS\_SERVER@{RADIUS\_MICROSOFT\_MS\_SECONDARY\_NBNS\_SERVER}}
+\index{RADIUS\_MICROSOFT\_MS\_SECONDARY\_NBNS\_SERVER@{RADIUS\_MICROSOFT\_MS\_SECONDARY\_NBNS\_SERVER}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_MICROSOFT\_MS\_SECONDARY\_NBNS\_SERVER}{RADIUS\_MICROSOFT\_MS\_SECONDARY\_NBNS\_SERVER}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+M\+I\+C\+R\+O\+S\+O\+F\+T\+\_\+\+M\+S\+\_\+\+S\+E\+C\+O\+N\+D\+A\+R\+Y\+\_\+\+N\+B\+N\+S\+\_\+\+S\+E\+R\+V\+ER 31}
+
+\mbox{\Hypertarget{radius_8php_a49dff49d81c95ba77cd40045916d9294}\label{radius_8php_a49dff49d81c95ba77cd40045916d9294}} 
+\index{radius.php@{radius.php}!RADIUS\_NAS\_IDENTIFIER@{RADIUS\_NAS\_IDENTIFIER}}
+\index{RADIUS\_NAS\_IDENTIFIER@{RADIUS\_NAS\_IDENTIFIER}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_NAS\_IDENTIFIER}{RADIUS\_NAS\_IDENTIFIER}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+N\+A\+S\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+ER 32}
+
+\mbox{\Hypertarget{radius_8php_a0b15ab437b036f2772b85269f8dd7f19}\label{radius_8php_a0b15ab437b036f2772b85269f8dd7f19}} 
+\index{radius.php@{radius.php}!RADIUS\_NAS\_IP\_ADDRESS@{RADIUS\_NAS\_IP\_ADDRESS}}
+\index{RADIUS\_NAS\_IP\_ADDRESS@{RADIUS\_NAS\_IP\_ADDRESS}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_NAS\_IP\_ADDRESS}{RADIUS\_NAS\_IP\_ADDRESS}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+N\+A\+S\+\_\+\+I\+P\+\_\+\+A\+D\+D\+R\+E\+SS 4}
+
+The N\+A\+S-\/\+I\+P-\/\+Address attribute. The attribute value is expected to the IP address of the R\+A\+D\+I\+US client encoded as an integer, which can be set using \{\begin{DoxySeeAlso}{See also}
+radius\+\_\+put\+\_\+addr()\}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{radius_8php_a2d13f4dbd17130aa10476499867d9a76}\label{radius_8php_a2d13f4dbd17130aa10476499867d9a76}} 
+\index{radius.php@{radius.php}!RADIUS\_NAS\_IPV6\_ADDRESS@{RADIUS\_NAS\_IPV6\_ADDRESS}}
+\index{RADIUS\_NAS\_IPV6\_ADDRESS@{RADIUS\_NAS\_IPV6\_ADDRESS}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_NAS\_IPV6\_ADDRESS}{RADIUS\_NAS\_IPV6\_ADDRESS}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+N\+A\+S\+\_\+\+I\+P\+V6\+\_\+\+A\+D\+D\+R\+E\+SS 95}
+
+\mbox{\Hypertarget{radius_8php_aa9fdc9979a0f734512d25efdfc3f603e}\label{radius_8php_aa9fdc9979a0f734512d25efdfc3f603e}} 
+\index{radius.php@{radius.php}!RADIUS\_NAS\_PORT@{RADIUS\_NAS\_PORT}}
+\index{RADIUS\_NAS\_PORT@{RADIUS\_NAS\_PORT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_NAS\_PORT}{RADIUS\_NAS\_PORT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+N\+A\+S\+\_\+\+P\+O\+RT 5}
+
+The N\+A\+S-\/\+Port attribute. The attribute value is expected to be the physical port of the user on the R\+A\+D\+I\+US client encoded as an integer, which can be set using \{\begin{DoxySeeAlso}{See also}
+radius\+\_\+put\+\_\+int()\}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{radius_8php_ae51bed9f02d0dc2dff7770daadb46ed5}\label{radius_8php_ae51bed9f02d0dc2dff7770daadb46ed5}} 
+\index{radius.php@{radius.php}!RADIUS\_NAS\_PORT\_TYPE@{RADIUS\_NAS\_PORT\_TYPE}}
+\index{RADIUS\_NAS\_PORT\_TYPE@{RADIUS\_NAS\_PORT\_TYPE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_NAS\_PORT\_TYPE}{RADIUS\_NAS\_PORT\_TYPE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+N\+A\+S\+\_\+\+P\+O\+R\+T\+\_\+\+T\+Y\+PE 61}
+
+\mbox{\Hypertarget{radius_8php_a79bfd57313a142d0ccfb4dd20074b480}\label{radius_8php_a79bfd57313a142d0ccfb4dd20074b480}} 
+\index{radius.php@{radius.php}!RADIUS\_NAS\_PROMPT@{RADIUS\_NAS\_PROMPT}}
+\index{RADIUS\_NAS\_PROMPT@{RADIUS\_NAS\_PROMPT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_NAS\_PROMPT}{RADIUS\_NAS\_PROMPT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+N\+A\+S\+\_\+\+P\+R\+O\+M\+PT 7}
+
+\mbox{\Hypertarget{radius_8php_a197ab63540900e334c6c7b0f2505ab0c}\label{radius_8php_a197ab63540900e334c6c7b0f2505ab0c}} 
+\index{radius.php@{radius.php}!RADIUS\_OPTION\_NONE@{RADIUS\_OPTION\_NONE}}
+\index{RADIUS\_OPTION\_NONE@{RADIUS\_OPTION\_NONE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_OPTION\_NONE}{RADIUS\_OPTION\_NONE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+NE R\+A\+D\+I\+U\+S\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+N\+O\+NE}
+
+\mbox{\Hypertarget{radius_8php_a70f7e09fddddc035b30d2da65aff3234}\label{radius_8php_a70f7e09fddddc035b30d2da65aff3234}} 
+\index{radius.php@{radius.php}!RADIUS\_OPTION\_SALT@{RADIUS\_OPTION\_SALT}}
+\index{RADIUS\_OPTION\_SALT@{RADIUS\_OPTION\_SALT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_OPTION\_SALT}{RADIUS\_OPTION\_SALT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+S\+A\+LT 2}
+
+When set, this option will result in the attribute value being tagged with the value of the tag parameter. \mbox{\Hypertarget{radius_8php_a2c0588679c265efca544cd25aa1a50a5}\label{radius_8php_a2c0588679c265efca544cd25aa1a50a5}} 
+\index{radius.php@{radius.php}!RADIUS\_OPTION\_TAGGED@{RADIUS\_OPTION\_TAGGED}}
+\index{RADIUS\_OPTION\_TAGGED@{RADIUS\_OPTION\_TAGGED}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_OPTION\_TAGGED}{RADIUS\_OPTION\_TAGGED}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+A\+G\+G\+ED R\+A\+D\+I\+U\+S\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+A\+G\+G\+ED}
+
+\mbox{\Hypertarget{radius_8php_add5c41a45b295f82a90eecf4f89a08f1}\label{radius_8php_add5c41a45b295f82a90eecf4f89a08f1}} 
+\index{radius.php@{radius.php}!RADIUS\_OUTBOUND@{RADIUS\_OUTBOUND}}
+\index{RADIUS\_OUTBOUND@{RADIUS\_OUTBOUND}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_OUTBOUND}{RADIUS\_OUTBOUND}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+O\+U\+T\+B\+O\+U\+ND 5}
+
+\mbox{\Hypertarget{radius_8php_a48dfcbab69e704724767393000a855ef}\label{radius_8php_a48dfcbab69e704724767393000a855ef}} 
+\index{radius.php@{radius.php}!RADIUS\_PIAFS@{RADIUS\_PIAFS}}
+\index{RADIUS\_PIAFS@{RADIUS\_PIAFS}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_PIAFS}{RADIUS\_PIAFS}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+P\+I\+A\+FS 6}
+
+\mbox{\Hypertarget{radius_8php_aa03929c29dc2531bb47a1746bb08e0dc}\label{radius_8php_aa03929c29dc2531bb47a1746bb08e0dc}} 
+\index{radius.php@{radius.php}!RADIUS\_PORT\_LIMIT@{RADIUS\_PORT\_LIMIT}}
+\index{RADIUS\_PORT\_LIMIT@{RADIUS\_PORT\_LIMIT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_PORT\_LIMIT}{RADIUS\_PORT\_LIMIT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+P\+O\+R\+T\+\_\+\+L\+I\+M\+IT 62}
+
+\mbox{\Hypertarget{radius_8php_a1b998af5d6c109f0a10dd936a2bcdacf}\label{radius_8php_a1b998af5d6c109f0a10dd936a2bcdacf}} 
+\index{radius.php@{radius.php}!RADIUS\_PPP@{RADIUS\_PPP}}
+\index{RADIUS\_PPP@{RADIUS\_PPP}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_PPP}{RADIUS\_PPP}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+P\+PP 1}
+
+\mbox{\Hypertarget{radius_8php_a5da362279688e85acc8bf457e2613a5a}\label{radius_8php_a5da362279688e85acc8bf457e2613a5a}} 
+\index{radius.php@{radius.php}!RADIUS\_PROXY\_STATE@{RADIUS\_PROXY\_STATE}}
+\index{RADIUS\_PROXY\_STATE@{RADIUS\_PROXY\_STATE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_PROXY\_STATE}{RADIUS\_PROXY\_STATE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+P\+R\+O\+X\+Y\+\_\+\+S\+T\+A\+TE 33}
+
+\mbox{\Hypertarget{radius_8php_ae66cd8195c180de3eca650990ffac6fc}\label{radius_8php_ae66cd8195c180de3eca650990ffac6fc}} 
+\index{radius.php@{radius.php}!RADIUS\_REPLY\_MESSAGE@{RADIUS\_REPLY\_MESSAGE}}
+\index{RADIUS\_REPLY\_MESSAGE@{RADIUS\_REPLY\_MESSAGE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_REPLY\_MESSAGE}{RADIUS\_REPLY\_MESSAGE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+R\+E\+P\+L\+Y\+\_\+\+M\+E\+S\+S\+A\+GE 18}
+
+\mbox{\Hypertarget{radius_8php_a9f3acc50f140523e974a38578611c2e2}\label{radius_8php_a9f3acc50f140523e974a38578611c2e2}} 
+\index{radius.php@{radius.php}!RADIUS\_SDSL@{RADIUS\_SDSL}}
+\index{RADIUS\_SDSL@{RADIUS\_SDSL}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_SDSL}{RADIUS\_SDSL}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+S\+D\+SL 11}
+
+\mbox{\Hypertarget{radius_8php_a4e945f7a157580d5fee1a667c07578ce}\label{radius_8php_a4e945f7a157580d5fee1a667c07578ce}} 
+\index{radius.php@{radius.php}!RADIUS\_SERVICE\_TYPE@{RADIUS\_SERVICE\_TYPE}}
+\index{RADIUS\_SERVICE\_TYPE@{RADIUS\_SERVICE\_TYPE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_SERVICE\_TYPE}{RADIUS\_SERVICE\_TYPE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+PE 6}
+
+The Service-\/\+Type attribute. The attribute value indicates the service type the user is requesting, and is expected to be an integer, which can be set using \{\begin{DoxySeeAlso}{See also}
+radius\+\_\+put\+\_\+int()\}. \mbox{\hyperlink{class_a}{A}} number of constants are provided to represent the possible values of this \mbox{\hyperlink{phpunit_2phpunit_2src_2_framework_2_assert_2_functions_8php_a9563224b2369a1cc3a9c05ba5170134e}{attribute}}. They include\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{radius_8php_a980b2e5463422134e378ffb3b902bbfb}{R\+A\+D\+I\+U\+S\+\_\+\+L\+O\+G\+IN}}
+\item \mbox{\hyperlink{radius_8php_aa9bdd8116628adeb8031d65e490d1d4e}{R\+A\+D\+I\+U\+S\+\_\+\+F\+R\+A\+M\+ED}}
+\item \mbox{\hyperlink{radius_8php_a7f345d8dd1466c0230d62f1e7b3cfccb}{R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+L\+O\+G\+IN}}
+\item \mbox{\hyperlink{radius_8php_ad984ed15ad715e52e3966b824d7d0e78}{R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+F\+R\+A\+M\+ED}}
+\item \mbox{\hyperlink{radius_8php_add5c41a45b295f82a90eecf4f89a08f1}{R\+A\+D\+I\+U\+S\+\_\+\+O\+U\+T\+B\+O\+U\+ND}}
+\item \mbox{\hyperlink{radius_8php_a25f0d55ace434d5cd9276aec4b609d2d}{R\+A\+D\+I\+U\+S\+\_\+\+A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+I\+VE}}
+\item \mbox{\hyperlink{radius_8php_a79bfd57313a142d0ccfb4dd20074b480}{R\+A\+D\+I\+U\+S\+\_\+\+N\+A\+S\+\_\+\+P\+R\+O\+M\+PT}}
+\item \mbox{\hyperlink{radius_8php_ad312c629c649526b2b7e32362d38e588}{R\+A\+D\+I\+U\+S\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+E\+\_\+\+O\+N\+LY}}
+\item \mbox{\hyperlink{radius_8php_a34dc96ff03b38f7feda649f34c6dfc84}{R\+A\+D\+I\+U\+S\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+N\+A\+S\+\_\+\+P\+R\+O\+M\+PT}} 
+\end{DoxyItemize}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{radius_8php_adfd511ec5681b8a1fac96097b342278b}\label{radius_8php_adfd511ec5681b8a1fac96097b342278b}} 
+\index{radius.php@{radius.php}!RADIUS\_SESSION\_TIMEOUT@{RADIUS\_SESSION\_TIMEOUT}}
+\index{RADIUS\_SESSION\_TIMEOUT@{RADIUS\_SESSION\_TIMEOUT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_SESSION\_TIMEOUT}{RADIUS\_SESSION\_TIMEOUT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+UT 27}
+
+\mbox{\Hypertarget{radius_8php_ad4b6cbaec20ddf566bb2f142f566aff0}\label{radius_8php_ad4b6cbaec20ddf566bb2f142f566aff0}} 
+\index{radius.php@{radius.php}!RADIUS\_SLIP@{RADIUS\_SLIP}}
+\index{RADIUS\_SLIP@{RADIUS\_SLIP}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_SLIP}{RADIUS\_SLIP}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+S\+L\+IP 2}
+
+\mbox{\Hypertarget{radius_8php_a032c7da52bd966a81433459cefd7f1c8}\label{radius_8php_a032c7da52bd966a81433459cefd7f1c8}} 
+\index{radius.php@{radius.php}!RADIUS\_START@{RADIUS\_START}}
+\index{RADIUS\_START@{RADIUS\_START}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_START}{RADIUS\_START}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+S\+T\+A\+RT 1}
+
+\mbox{\Hypertarget{radius_8php_a12dc5de873dbb1485905b303c9b91175}\label{radius_8php_a12dc5de873dbb1485905b303c9b91175}} 
+\index{radius.php@{radius.php}!RADIUS\_STATE@{RADIUS\_STATE}}
+\index{RADIUS\_STATE@{RADIUS\_STATE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_STATE}{RADIUS\_STATE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+S\+T\+A\+TE 24}
+
+\mbox{\Hypertarget{radius_8php_a797b5e63401f36bd4646a8d9d3864bbb}\label{radius_8php_a797b5e63401f36bd4646a8d9d3864bbb}} 
+\index{radius.php@{radius.php}!RADIUS\_STOP@{RADIUS\_STOP}}
+\index{RADIUS\_STOP@{RADIUS\_STOP}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_STOP}{RADIUS\_STOP}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+S\+T\+OP 2}
+
+\mbox{\Hypertarget{radius_8php_a8036f57dd6ae2d149d8f9f0eab5f65f0}\label{radius_8php_a8036f57dd6ae2d149d8f9f0eab5f65f0}} 
+\index{radius.php@{radius.php}!RADIUS\_SYNC@{RADIUS\_SYNC}}
+\index{RADIUS\_SYNC@{RADIUS\_SYNC}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_SYNC}{RADIUS\_SYNC}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+S\+Y\+NC 1}
+
+\mbox{\Hypertarget{radius_8php_a288d183a4b1a3195f7f009021ec65717}\label{radius_8php_a288d183a4b1a3195f7f009021ec65717}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_ADMIN\_REBOOT@{RADIUS\_TERM\_ADMIN\_REBOOT}}
+\index{RADIUS\_TERM\_ADMIN\_REBOOT@{RADIUS\_TERM\_ADMIN\_REBOOT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_ADMIN\_REBOOT}{RADIUS\_TERM\_ADMIN\_REBOOT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+A\+D\+M\+I\+N\+\_\+\+R\+E\+B\+O\+OT 7}
+
+\mbox{\Hypertarget{radius_8php_a0027e844077cce60e66d1044a9d711b1}\label{radius_8php_a0027e844077cce60e66d1044a9d711b1}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_ADMIN\_RESET@{RADIUS\_TERM\_ADMIN\_RESET}}
+\index{RADIUS\_TERM\_ADMIN\_RESET@{RADIUS\_TERM\_ADMIN\_RESET}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_ADMIN\_RESET}{RADIUS\_TERM\_ADMIN\_RESET}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+A\+D\+M\+I\+N\+\_\+\+R\+E\+S\+ET 6}
+
+\mbox{\Hypertarget{radius_8php_a92143357d4e7ffdabdd6fc59818257ea}\label{radius_8php_a92143357d4e7ffdabdd6fc59818257ea}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_CALLBACK@{RADIUS\_TERM\_CALLBACK}}
+\index{RADIUS\_TERM\_CALLBACK@{RADIUS\_TERM\_CALLBACK}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_CALLBACK}{RADIUS\_TERM\_CALLBACK}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+C\+A\+L\+L\+B\+A\+CK 16}
+
+\mbox{\Hypertarget{radius_8php_a7cfcdfbc516dde0956c03bd16b5d3018}\label{radius_8php_a7cfcdfbc516dde0956c03bd16b5d3018}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_HOST\_REQUEST@{RADIUS\_TERM\_HOST\_REQUEST}}
+\index{RADIUS\_TERM\_HOST\_REQUEST@{RADIUS\_TERM\_HOST\_REQUEST}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_HOST\_REQUEST}{RADIUS\_TERM\_HOST\_REQUEST}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+H\+O\+S\+T\+\_\+\+R\+E\+Q\+U\+E\+ST 18}
+
+\mbox{\Hypertarget{radius_8php_a9a598a882318a9df75e2a0285c183d14}\label{radius_8php_a9a598a882318a9df75e2a0285c183d14}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_IDLE\_TIMEOUT@{RADIUS\_TERM\_IDLE\_TIMEOUT}}
+\index{RADIUS\_TERM\_IDLE\_TIMEOUT@{RADIUS\_TERM\_IDLE\_TIMEOUT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_IDLE\_TIMEOUT}{RADIUS\_TERM\_IDLE\_TIMEOUT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+I\+D\+L\+E\+\_\+\+T\+I\+M\+E\+O\+UT 4}
+
+\mbox{\Hypertarget{radius_8php_ae145db336298251edc6aaee89efaac10}\label{radius_8php_ae145db336298251edc6aaee89efaac10}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_LOST\_CARRIER@{RADIUS\_TERM\_LOST\_CARRIER}}
+\index{RADIUS\_TERM\_LOST\_CARRIER@{RADIUS\_TERM\_LOST\_CARRIER}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_LOST\_CARRIER}{RADIUS\_TERM\_LOST\_CARRIER}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+L\+O\+S\+T\+\_\+\+C\+A\+R\+R\+I\+ER 2}
+
+\mbox{\Hypertarget{radius_8php_a68ca91b696d31268b746226740b22b56}\label{radius_8php_a68ca91b696d31268b746226740b22b56}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_LOST\_SERVICE@{RADIUS\_TERM\_LOST\_SERVICE}}
+\index{RADIUS\_TERM\_LOST\_SERVICE@{RADIUS\_TERM\_LOST\_SERVICE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_LOST\_SERVICE}{RADIUS\_TERM\_LOST\_SERVICE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+L\+O\+S\+T\+\_\+\+S\+E\+R\+V\+I\+CE 3}
+
+\mbox{\Hypertarget{radius_8php_a2a6056c04ca7e937aad6522791bed03f}\label{radius_8php_a2a6056c04ca7e937aad6522791bed03f}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_NAS\_ERROR@{RADIUS\_TERM\_NAS\_ERROR}}
+\index{RADIUS\_TERM\_NAS\_ERROR@{RADIUS\_TERM\_NAS\_ERROR}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_NAS\_ERROR}{RADIUS\_TERM\_NAS\_ERROR}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+N\+A\+S\+\_\+\+E\+R\+R\+OR 9}
+
+\mbox{\Hypertarget{radius_8php_a1a776e2dd7e823f54ba3610e01a99d0e}\label{radius_8php_a1a776e2dd7e823f54ba3610e01a99d0e}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_NAS\_REBOOT@{RADIUS\_TERM\_NAS\_REBOOT}}
+\index{RADIUS\_TERM\_NAS\_REBOOT@{RADIUS\_TERM\_NAS\_REBOOT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_NAS\_REBOOT}{RADIUS\_TERM\_NAS\_REBOOT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+N\+A\+S\+\_\+\+R\+E\+B\+O\+OT 11}
+
+\mbox{\Hypertarget{radius_8php_a303b91bef22a52b2710f80a433153baf}\label{radius_8php_a303b91bef22a52b2710f80a433153baf}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_NAS\_REQUEST@{RADIUS\_TERM\_NAS\_REQUEST}}
+\index{RADIUS\_TERM\_NAS\_REQUEST@{RADIUS\_TERM\_NAS\_REQUEST}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_NAS\_REQUEST}{RADIUS\_TERM\_NAS\_REQUEST}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+N\+A\+S\+\_\+\+R\+E\+Q\+U\+E\+ST 10}
+
+\mbox{\Hypertarget{radius_8php_a91d946ab993dce8679f483ce6687a413}\label{radius_8php_a91d946ab993dce8679f483ce6687a413}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_PORT\_ERROR@{RADIUS\_TERM\_PORT\_ERROR}}
+\index{RADIUS\_TERM\_PORT\_ERROR@{RADIUS\_TERM\_PORT\_ERROR}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_PORT\_ERROR}{RADIUS\_TERM\_PORT\_ERROR}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+P\+O\+R\+T\+\_\+\+E\+R\+R\+OR 8}
+
+\mbox{\Hypertarget{radius_8php_a37fda04ff12a6e38b8a501ed0e1773c1}\label{radius_8php_a37fda04ff12a6e38b8a501ed0e1773c1}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_PORT\_PREEMPTED@{RADIUS\_TERM\_PORT\_PREEMPTED}}
+\index{RADIUS\_TERM\_PORT\_PREEMPTED@{RADIUS\_TERM\_PORT\_PREEMPTED}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_PORT\_PREEMPTED}{RADIUS\_TERM\_PORT\_PREEMPTED}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+P\+O\+R\+T\+\_\+\+P\+R\+E\+E\+M\+P\+T\+ED 13}
+
+\mbox{\Hypertarget{radius_8php_acecd5faaa363fc4a8b4d4668bab23bb9}\label{radius_8php_acecd5faaa363fc4a8b4d4668bab23bb9}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_PORT\_SUSPENDED@{RADIUS\_TERM\_PORT\_SUSPENDED}}
+\index{RADIUS\_TERM\_PORT\_SUSPENDED@{RADIUS\_TERM\_PORT\_SUSPENDED}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_PORT\_SUSPENDED}{RADIUS\_TERM\_PORT\_SUSPENDED}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+P\+O\+R\+T\+\_\+\+S\+U\+S\+P\+E\+N\+D\+ED 14}
+
+\mbox{\Hypertarget{radius_8php_a7865c08ab86487ea80f3488c492673c5}\label{radius_8php_a7865c08ab86487ea80f3488c492673c5}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_PORT\_UNNEEDED@{RADIUS\_TERM\_PORT\_UNNEEDED}}
+\index{RADIUS\_TERM\_PORT\_UNNEEDED@{RADIUS\_TERM\_PORT\_UNNEEDED}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_PORT\_UNNEEDED}{RADIUS\_TERM\_PORT\_UNNEEDED}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+P\+O\+R\+T\+\_\+\+U\+N\+N\+E\+E\+D\+ED 12}
+
+\mbox{\Hypertarget{radius_8php_a7a0cb2f27f221c01e02f44cf9495202d}\label{radius_8php_a7a0cb2f27f221c01e02f44cf9495202d}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_SERVICE\_UNAVAILABLE@{RADIUS\_TERM\_SERVICE\_UNAVAILABLE}}
+\index{RADIUS\_TERM\_SERVICE\_UNAVAILABLE@{RADIUS\_TERM\_SERVICE\_UNAVAILABLE}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_SERVICE\_UNAVAILABLE}{RADIUS\_TERM\_SERVICE\_UNAVAILABLE}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE 15}
+
+\mbox{\Hypertarget{radius_8php_a8b3bff2b37999b32b4c368893d18f2c2}\label{radius_8php_a8b3bff2b37999b32b4c368893d18f2c2}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_SESSION\_TIMEOUT@{RADIUS\_TERM\_SESSION\_TIMEOUT}}
+\index{RADIUS\_TERM\_SESSION\_TIMEOUT@{RADIUS\_TERM\_SESSION\_TIMEOUT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_SESSION\_TIMEOUT}{RADIUS\_TERM\_SESSION\_TIMEOUT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+UT 5}
+
+\mbox{\Hypertarget{radius_8php_aee8af2a2750154ad7fe41d4191d9e5ba}\label{radius_8php_aee8af2a2750154ad7fe41d4191d9e5ba}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_USER\_ERROR@{RADIUS\_TERM\_USER\_ERROR}}
+\index{RADIUS\_TERM\_USER\_ERROR@{RADIUS\_TERM\_USER\_ERROR}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_USER\_ERROR}{RADIUS\_TERM\_USER\_ERROR}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+U\+S\+E\+R\+\_\+\+E\+R\+R\+OR 17}
+
+\mbox{\Hypertarget{radius_8php_a228882456f3af876f0a6acfd8109c8ed}\label{radius_8php_a228882456f3af876f0a6acfd8109c8ed}} 
+\index{radius.php@{radius.php}!RADIUS\_TERM\_USER\_REQUEST@{RADIUS\_TERM\_USER\_REQUEST}}
+\index{RADIUS\_TERM\_USER\_REQUEST@{RADIUS\_TERM\_USER\_REQUEST}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERM\_USER\_REQUEST}{RADIUS\_TERM\_USER\_REQUEST}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+\_\+\+U\+S\+E\+R\+\_\+\+R\+E\+Q\+U\+E\+ST 1}
+
+\mbox{\Hypertarget{radius_8php_abcdfe5a99cb712d273b6a7898c8521cf}\label{radius_8php_abcdfe5a99cb712d273b6a7898c8521cf}} 
+\index{radius.php@{radius.php}!RADIUS\_TERMINATION\_ACTION@{RADIUS\_TERMINATION\_ACTION}}
+\index{RADIUS\_TERMINATION\_ACTION@{RADIUS\_TERMINATION\_ACTION}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_TERMINATION\_ACTION}{RADIUS\_TERMINATION\_ACTION}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+T\+E\+R\+M\+I\+N\+A\+T\+I\+O\+N\+\_\+\+A\+C\+T\+I\+ON 29}
+
+\mbox{\Hypertarget{radius_8php_af4037f903a9007cad16719b65761445c}\label{radius_8php_af4037f903a9007cad16719b65761445c}} 
+\index{radius.php@{radius.php}!RADIUS\_USER\_NAME@{RADIUS\_USER\_NAME}}
+\index{RADIUS\_USER\_NAME@{RADIUS\_USER\_NAME}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_USER\_NAME}{RADIUS\_USER\_NAME}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+U\+S\+E\+R\+\_\+\+N\+A\+ME 1}
+
+R\+A\+D\+I\+US Attribute Types \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{The User-\/\+Name attribute. The attribute value is expected to be a string containing the name of the user being authenticated, and can be set using \{ radius\+\_\+put\+\_\+attr()\}. }}\mbox{\Hypertarget{radius_8php_ae6e70ea7685ee31edf4c7d9f93c7bcbf}\label{radius_8php_ae6e70ea7685ee31edf4c7d9f93c7bcbf}} 
+\index{radius.php@{radius.php}!RADIUS\_USER\_PASSWORD@{RADIUS\_USER\_PASSWORD}}
+\index{RADIUS\_USER\_PASSWORD@{RADIUS\_USER\_PASSWORD}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_USER\_PASSWORD}{RADIUS\_USER\_PASSWORD}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+U\+S\+E\+R\+\_\+\+P\+A\+S\+S\+W\+O\+RD 2}
+
+The User-\/\+Password attribute. The attribute value is expected to be a string containing the user\textquotesingle{}s password, and can be set using \{\begin{DoxySeeAlso}{See also}
+radius\+\_\+put\+\_\+attr()\}. This value will be obfuscated on transmission as described in section 5.\+2 of R\+FC 2865. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://secure.\+php.\+net/manual/de/radius.\+constants.\+attributes.\+php}}
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{radius_8php_a9d6368b60a4ab7ae622e9117ac1915ef}\label{radius_8php_a9d6368b60a4ab7ae622e9117ac1915ef}} 
+\index{radius.php@{radius.php}!RADIUS\_VENDOR\_MICROSOFT@{RADIUS\_VENDOR\_MICROSOFT}}
+\index{RADIUS\_VENDOR\_MICROSOFT@{RADIUS\_VENDOR\_MICROSOFT}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_VENDOR\_MICROSOFT}{RADIUS\_VENDOR\_MICROSOFT}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+V\+E\+N\+D\+O\+R\+\_\+\+M\+I\+C\+R\+O\+S\+O\+FT 311}
+
+\mbox{\Hypertarget{radius_8php_a204520ea59ba8b072c99ad8dc4493488}\label{radius_8php_a204520ea59ba8b072c99ad8dc4493488}} 
+\index{radius.php@{radius.php}!RADIUS\_VENDOR\_SPECIFIC@{RADIUS\_VENDOR\_SPECIFIC}}
+\index{RADIUS\_VENDOR\_SPECIFIC@{RADIUS\_VENDOR\_SPECIFIC}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_VENDOR\_SPECIFIC}{RADIUS\_VENDOR\_SPECIFIC}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+V\+E\+N\+D\+O\+R\+\_\+\+S\+P\+E\+C\+I\+F\+IC 26}
+
+\mbox{\Hypertarget{radius_8php_ad60d146aee62b82bfef85fcfe5736048}\label{radius_8php_ad60d146aee62b82bfef85fcfe5736048}} 
+\index{radius.php@{radius.php}!RADIUS\_VIRTUAL@{RADIUS\_VIRTUAL}}
+\index{RADIUS\_VIRTUAL@{RADIUS\_VIRTUAL}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_VIRTUAL}{RADIUS\_VIRTUAL}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+V\+I\+R\+T\+U\+AL 5}
+
+\mbox{\Hypertarget{radius_8php_a21358e352807d45784315ab8c8a7d7fe}\label{radius_8php_a21358e352807d45784315ab8c8a7d7fe}} 
+\index{radius.php@{radius.php}!RADIUS\_WIRELESS\_IEEE\_802\_11@{RADIUS\_WIRELESS\_IEEE\_802\_11}}
+\index{RADIUS\_WIRELESS\_IEEE\_802\_11@{RADIUS\_WIRELESS\_IEEE\_802\_11}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_WIRELESS\_IEEE\_802\_11}{RADIUS\_WIRELESS\_IEEE\_802\_11}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+W\+I\+R\+E\+L\+E\+S\+S\+\_\+\+I\+E\+E\+E\+\_\+802\+\_\+11 19}
+
+\mbox{\Hypertarget{radius_8php_aaa213e0f27613584cadb5345353f41ac}\label{radius_8php_aaa213e0f27613584cadb5345353f41ac}} 
+\index{radius.php@{radius.php}!RADIUS\_WIRELESS\_OTHER@{RADIUS\_WIRELESS\_OTHER}}
+\index{RADIUS\_WIRELESS\_OTHER@{RADIUS\_WIRELESS\_OTHER}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_WIRELESS\_OTHER}{RADIUS\_WIRELESS\_OTHER}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+W\+I\+R\+E\+L\+E\+S\+S\+\_\+\+O\+T\+H\+ER 18}
+
+\mbox{\Hypertarget{radius_8php_a6d83cc62c43dfec50b20043c288bdeb1}\label{radius_8php_a6d83cc62c43dfec50b20043c288bdeb1}} 
+\index{radius.php@{radius.php}!RADIUS\_X\_25@{RADIUS\_X\_25}}
+\index{RADIUS\_X\_25@{RADIUS\_X\_25}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_X\_25}{RADIUS\_X\_25}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+X\+\_\+25 8}
+
+\mbox{\Hypertarget{radius_8php_af3896dcd44ed894281b0a710e23010cf}\label{radius_8php_af3896dcd44ed894281b0a710e23010cf}} 
+\index{radius.php@{radius.php}!RADIUS\_X\_75@{RADIUS\_X\_75}}
+\index{RADIUS\_X\_75@{RADIUS\_X\_75}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_X\_75}{RADIUS\_X\_75}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+X\+\_\+75 9}
+
+\mbox{\Hypertarget{radius_8php_affe0cee5cdc3f96bc752170eb18b02f5}\label{radius_8php_affe0cee5cdc3f96bc752170eb18b02f5}} 
+\index{radius.php@{radius.php}!RADIUS\_XDSL@{RADIUS\_XDSL}}
+\index{RADIUS\_XDSL@{RADIUS\_XDSL}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_XDSL}{RADIUS\_XDSL}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+X\+D\+SL 16}
+
+\mbox{\Hypertarget{radius_8php_aec9bd1c22bd4a50bada28e9aeb014b64}\label{radius_8php_aec9bd1c22bd4a50bada28e9aeb014b64}} 
+\index{radius.php@{radius.php}!RADIUS\_XYLOGICS@{RADIUS\_XYLOGICS}}
+\index{RADIUS\_XYLOGICS@{RADIUS\_XYLOGICS}!radius.php@{radius.php}}
+\doxysubsubsection{\texorpdfstring{RADIUS\_XYLOGICS}{RADIUS\_XYLOGICS}}
+{\footnotesize\ttfamily const R\+A\+D\+I\+U\+S\+\_\+\+X\+Y\+L\+O\+G\+I\+CS 5}
+

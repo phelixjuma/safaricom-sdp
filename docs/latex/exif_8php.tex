@@ -1,0 +1,169 @@
+\hypertarget{exif_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/exif/exif.php File Reference}
+\label{exif_8php}\index{vendor/jetbrains/phpstorm-\/stubs/exif/exif.php@{vendor/jetbrains/phpstorm-\/stubs/exif/exif.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{exif_8php_a245586fabc2d7928d0d3bd13cbf5f37a}{exif\+\_\+read\+\_\+data}} (\$stream, \$sections=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$arrays=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}, \$thumbnail=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{exif_8php_a707d98c6f5ba04fd044c3fc642d57eec}{read\+\_\+exif\+\_\+data}} (\$filename, \$sections=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$arrays=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}, \$thumbnail=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{exif_8php_afa681b3b61527d65e7eed272dc8ed411}{exif\+\_\+tagname}} (\$index)
+\item 
+\mbox{\hyperlink{exif_8php_a1ca1156e0597ba8a0dcb3f1702c50bc3}{exif\+\_\+thumbnail}} (\$stream, \&\$width=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \&\$height=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \&\$imagetype=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{exif_8php_a35d74ac3a94a002f7f196be1a06b5996}{exif\+\_\+imagetype}} (\$filename)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{exif_8php_a294fb42d73ddf0c82e56902c08de4038}{E\+X\+I\+F\+\_\+\+U\+S\+E\+\_\+\+M\+B\+S\+T\+R\+I\+NG}} 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{exif_8php_a35d74ac3a94a002f7f196be1a06b5996}\label{exif_8php_a35d74ac3a94a002f7f196be1a06b5996}} 
+\index{exif.php@{exif.php}!exif\_imagetype@{exif\_imagetype}}
+\index{exif\_imagetype@{exif\_imagetype}!exif.php@{exif.php}}
+\doxysubsubsection{\texorpdfstring{exif\_imagetype()}{exif\_imagetype()}}
+{\footnotesize\ttfamily exif\+\_\+imagetype (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+Determine the type of an image \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename The image being checked.  int$\vert$false When a correct signature is found, the appropriate constant value will be returned otherwise the return value is {\bfseries{F\+A\+L\+SE}}. The return value is the same value that {\bfseries{getimagesize}} returns in index 2 but {\bfseries{exif\+\_\+imagetype}} is much faster. }} 
+
+{\bfseries{exif\+\_\+imagetype}} will emit an {\bfseries{E\+\_\+\+N\+O\+T\+I\+CE}} and return {\bfseries{F\+A\+L\+SE}} if it is unable to read enough bytes from the file to determine the image type. \begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{exif_8php_a245586fabc2d7928d0d3bd13cbf5f37a}\label{exif_8php_a245586fabc2d7928d0d3bd13cbf5f37a}} 
+\index{exif.php@{exif.php}!exif\_read\_data@{exif\_read\_data}}
+\index{exif\_read\_data@{exif\_read\_data}!exif.php@{exif.php}}
+\doxysubsubsection{\texorpdfstring{exif\_read\_data()}{exif\_read\_data()}}
+{\footnotesize\ttfamily exif\+\_\+read\+\_\+data (\begin{DoxyParamCaption}\item[{}]{\$stream,  }\item[{}]{\$sections = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$arrays = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}},  }\item[{}]{\$thumbnail = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+Reads the E\+X\+IF headers from J\+P\+EG or T\+I\+FF \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string$\vert$resource \$stream }} The location of the image file. This cannot be an U\+RL. Since 7.\+2.\+0 this can either be a path to the file (stream wrappers are also supported as usual) or a stream resource. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sections} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Is a comma separated list of sections that need to be present in file to produce a result array. If none of the requested sections could be found the return value is {\bfseries{F\+A\+L\+SE}}. 
+
+F\+I\+LE 
+
+File\+Name, File\+Size, File\+Date\+Time, Sections\+Found  
+
+C\+O\+M\+P\+U\+T\+ED 
+
+html, Width, Height, Is\+Color, and more if available. Height and Width are computed the same way {\bfseries{getimagesize}} does so their values must not be part of any header returned. Also, html is a height/width text string to be used inside normal H\+T\+ML.   
+
+A\+N\+Y\+\_\+\+T\+AG 
+
+Any information that has a Tag e.\+g. I\+F\+D0, E\+X\+IF, ...  
+
+I\+F\+D0 
+
+All tagged data of I\+F\+D0. In normal imagefiles this contains image size and so forth.   
+
+T\+H\+U\+M\+B\+N\+A\+IL 
+
+\mbox{\hyperlink{class_a}{A}} file is supposed to contain a thumbnail if it has a second I\+FD. All tagged information about the embedded thumbnail is stored in this section.   
+
+C\+O\+M\+M\+E\+NT 
+
+Comment headers of J\+P\+EG images.  
+
+E\+X\+IF 
+
+The E\+X\+IF section is a sub section of I\+F\+D0. It contains more detailed information about an image. Most of these entries are digital camera related.   
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$arrays} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Specifies whether or not each section becomes an array. The {\itshape sections} C\+O\+M\+P\+U\+T\+ED, T\+H\+U\+M\+B\+N\+A\+IL, and C\+O\+M\+M\+E\+NT always become arrays as they may contain values whose names conflict with other sections. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$thumbnail} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+When set to {\bfseries{T\+R\+UE}} the thumbnail itself is read. Otherwise, only the tagged data is read. 
+
+\begin{DoxyReturn}{Returns}
+array It returns an associative array where the array indexes are the header names and the array values are the values associated with those headers. If no data can be returned, {\bfseries{exif\+\_\+read\+\_\+data}} will return {\bfseries{F\+A\+L\+SE}}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{exif_8php_afa681b3b61527d65e7eed272dc8ed411}\label{exif_8php_afa681b3b61527d65e7eed272dc8ed411}} 
+\index{exif.php@{exif.php}!exif\_tagname@{exif\_tagname}}
+\index{exif\_tagname@{exif\_tagname}!exif.php@{exif.php}}
+\doxysubsubsection{\texorpdfstring{exif\_tagname()}{exif\_tagname()}}
+{\footnotesize\ttfamily exif\+\_\+tagname (\begin{DoxyParamCaption}\item[{}]{\$index }\end{DoxyParamCaption})}
+
+Get the header name for an index \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$index }} The Tag ID for which a Tag Name will be looked up. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false the header name, or {\bfseries{F\+A\+L\+SE}} if {\itshape index} is not a defined E\+X\+IF tag id. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{exif_8php_a1ca1156e0597ba8a0dcb3f1702c50bc3}\label{exif_8php_a1ca1156e0597ba8a0dcb3f1702c50bc3}} 
+\index{exif.php@{exif.php}!exif\_thumbnail@{exif\_thumbnail}}
+\index{exif\_thumbnail@{exif\_thumbnail}!exif.php@{exif.php}}
+\doxysubsubsection{\texorpdfstring{exif\_thumbnail()}{exif\_thumbnail()}}
+{\footnotesize\ttfamily exif\+\_\+thumbnail (\begin{DoxyParamCaption}\item[{}]{\$stream,  }\item[{\&}]{\$width = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{\&}]{\$height = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{\&}]{\$imagetype = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Retrieve the embedded thumbnail of a T\+I\+FF or J\+P\+EG image \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string$\vert$resource \$stream }} The location of the image file. This cannot be an U\+RL. Since 7.\+2.\+0 this can either be a path to the file (stream wrappers are also supported as usual) or a stream resource. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$width} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The return width of the returned thumbnail. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$height} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The returned height of the returned thumbnail. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$imagetype} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The returned image type of the returned thumbnail. This is either T\+I\+FF or J\+P\+EG. 
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false the embedded thumbnail, or {\bfseries{F\+A\+L\+SE}} if the image contains no thumbnail. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{exif_8php_a707d98c6f5ba04fd044c3fc642d57eec}\label{exif_8php_a707d98c6f5ba04fd044c3fc642d57eec}} 
+\index{exif.php@{exif.php}!read\_exif\_data@{read\_exif\_data}}
+\index{read\_exif\_data@{read\_exif\_data}!exif.php@{exif.php}}
+\doxysubsubsection{\texorpdfstring{read\_exif\_data()}{read\_exif\_data()}}
+{\footnotesize\ttfamily read\+\_\+exif\+\_\+data (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$sections = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$arrays = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}},  }\item[{}]{\$thumbnail = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+Alias of {\bfseries{exif\+\_\+read\+\_\+data}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$filename  \$sections \mbox{[}optional\mbox{]}  \$arrays \mbox{[}optional\mbox{]}  \$thumbnail \mbox{[}optional\mbox{]}  4.\+0.\+1  5.\+0  deprecated 36. exif\+\_\+read\+\_\+data()\} instead. }}
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{exif_8php_a294fb42d73ddf0c82e56902c08de4038}\label{exif_8php_a294fb42d73ddf0c82e56902c08de4038}} 
+\index{exif.php@{exif.php}!EXIF\_USE\_MBSTRING@{EXIF\_USE\_MBSTRING}}
+\index{EXIF\_USE\_MBSTRING@{EXIF\_USE\_MBSTRING}!exif.php@{exif.php}}
+\doxysubsubsection{\texorpdfstring{EXIF\_USE\_MBSTRING}{EXIF\_USE\_MBSTRING}}
+{\footnotesize\ttfamily const E\+X\+I\+F\+\_\+\+U\+S\+E\+\_\+\+M\+B\+S\+T\+R\+I\+NG 1}
+

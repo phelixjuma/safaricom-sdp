@@ -1,0 +1,2369 @@
+.TH "vendor/jetbrains/phpstorm-stubs/imap/imap.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/imap/imap.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBimap_open\fP ($mailbox, $username, $password, $options=0, $n_retries=0, array $params=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimap_reopen\fP ($imap_stream, $mailbox, $options=0, $n_retries=0)"
+.br
+.ti -1c
+.RI "\fBimap_close\fP ($imap_stream, $flag=0)"
+.br
+.ti -1c
+.RI "\fBimap_num_msg\fP ($imap_stream)"
+.br
+.ti -1c
+.RI "\fBimap_num_recent\fP ($imap_stream)"
+.br
+.ti -1c
+.RI "\fBimap_headers\fP ($imap_stream)"
+.br
+.ti -1c
+.RI "\fBimap_headerinfo\fP ($stream_id, $msg_no, $from_length=0, $subject_length=0, $default_host=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimap_rfc822_parse_headers\fP ($headers, $defaulthost='UNKNOWN')"
+.br
+.ti -1c
+.RI "\fBimap_rfc822_write_address\fP ($mailbox, $host, $personal)"
+.br
+.ti -1c
+.RI "\fBimap_rfc822_parse_adrlist\fP ($address, $default_host)"
+.br
+.ti -1c
+.RI "\fBimap_body\fP ($imap_stream, $msg_number, $options=0)"
+.br
+.ti -1c
+.RI "\fBimap_bodystruct\fP ($imap_stream, $msg_number, $section)"
+.br
+.ti -1c
+.RI "\fBimap_fetchbody\fP ($imap_stream, $msg_number, $section, $options=0)"
+.br
+.ti -1c
+.RI "\fBimap_fetchmime\fP ($imap_stream, $msg_number, $section, $options=0)"
+.br
+.ti -1c
+.RI "\fBimap_savebody\fP ($imap_stream, $\fBfile\fP, $msg_number, $part_number='', $options=0)"
+.br
+.ti -1c
+.RI "\fBimap_fetchheader\fP ($imap_stream, $msg_number, $options=0)"
+.br
+.ti -1c
+.RI "\fBimap_fetchstructure\fP ($imap_stream, $msg_number, $options=0)"
+.br
+.ti -1c
+.RI "\fBimap_gc\fP ($imap_stream, $caches)"
+.br
+.ti -1c
+.RI "\fBimap_expunge\fP ($imap_stream)"
+.br
+.ti -1c
+.RI "\fBimap_delete\fP ($imap_stream, $msg_number, $options=0)"
+.br
+.ti -1c
+.RI "\fBimap_undelete\fP ($imap_stream, $msg_number, $flags=0)"
+.br
+.ti -1c
+.RI "\fBimap_check\fP ($imap_stream)"
+.br
+.ti -1c
+.RI "\fBimap_listscan\fP ($imap_stream, $ref, $pattern, $content)"
+.br
+.ti -1c
+.RI "\fBimap_mail_copy\fP ($imap_stream, $msglist, $mailbox, $options=0)"
+.br
+.ti -1c
+.RI "\fBimap_mail_move\fP ($imap_stream, $msglist, $mailbox, $options=0)"
+.br
+.ti -1c
+.RI "\fBimap_mail_compose\fP (array $envelope, array $body)"
+.br
+.ti -1c
+.RI "\fBimap_createmailbox\fP ($imap_stream, $mailbox)"
+.br
+.ti -1c
+.RI "\fBimap_renamemailbox\fP ($imap_stream, $old_mbox, $new_mbox)"
+.br
+.ti -1c
+.RI "\fBimap_deletemailbox\fP ($imap_stream, $mailbox)"
+.br
+.ti -1c
+.RI "\fBimap_subscribe\fP ($imap_stream, $mailbox)"
+.br
+.ti -1c
+.RI "\fBimap_unsubscribe\fP ($imap_stream, $mailbox)"
+.br
+.ti -1c
+.RI "\fBimap_append\fP ($imap_stream, $mailbox, $message, $options=\fBnull\fP, $internal_date=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimap_ping\fP ($imap_stream)"
+.br
+.ti -1c
+.RI "\fBimap_base64\fP ($text)"
+.br
+.ti -1c
+.RI "\fBimap_qprint\fP ($string)"
+.br
+.ti -1c
+.RI "\fBimap_8bit\fP ($string)"
+.br
+.ti -1c
+.RI "\fBimap_binary\fP ($string)"
+.br
+.ti -1c
+.RI "\fBimap_utf8\fP ($mime_encoded_text)"
+.br
+.ti -1c
+.RI "\fBimap_status\fP ($imap_stream, $mailbox, $options)"
+.br
+.ti -1c
+.RI "\fBimap_status_current\fP ($stream_id, $options)"
+.br
+.ti -1c
+.RI "\fBimap_mailboxmsginfo\fP ($imap_stream)"
+.br
+.ti -1c
+.RI "\fBimap_setflag_full\fP ($imap_stream, $sequence, $flag, $options=\fBNIL\fP)"
+.br
+.ti -1c
+.RI "\fBimap_clearflag_full\fP ($imap_stream, $sequence, $flag, $options=0)"
+.br
+.ti -1c
+.RI "\fBimap_sort\fP ($imap_stream, $criteria, $reverse, $options=0, $search_criteria=\fBnull\fP, $charset='\fBNIL\fP')"
+.br
+.ti -1c
+.RI "\fBimap_uid\fP ($imap_stream, $msg_number)"
+.br
+.ti -1c
+.RI "\fBimap_msgno\fP ($imap_stream, $uid)"
+.br
+.ti -1c
+.RI "\fBimap_list\fP ($imap_stream, $ref, $pattern)"
+.br
+.ti -1c
+.RI "\fBimap_lsub\fP ($imap_stream, $ref, $pattern)"
+.br
+.ti -1c
+.RI "\fBimap_fetch_overview\fP ($imap_stream, $sequence, $options=0)"
+.br
+.ti -1c
+.RI "\fBimap_alerts\fP ()"
+.br
+.ti -1c
+.RI "\fBimap_errors\fP ()"
+.br
+.ti -1c
+.RI "\fBimap_last_error\fP ()"
+.br
+.ti -1c
+.RI "\fBimap_search\fP ($imap_stream, $criteria, $options=\fBSE_FREE\fP, $charset=\fBNIL\fP)"
+.br
+.ti -1c
+.RI "\fBimap_utf7_decode\fP ($text)"
+.br
+.ti -1c
+.RI "\fBimap_utf7_encode\fP ($data)"
+.br
+.ti -1c
+.RI "\fBimap_mime_header_decode\fP ($text)"
+.br
+.ti -1c
+.RI "\fBimap_thread\fP ($imap_stream, $options=\fBSE_FREE\fP)"
+.br
+.ti -1c
+.RI "\fBimap_timeout\fP ($timeout_type, $timeout=\-1)"
+.br
+.ti -1c
+.RI "\fBimap_get_quota\fP ($imap_stream, $quota_root)"
+.br
+.ti -1c
+.RI "\fBimap_get_quotaroot\fP ($imap_stream, $quota_root)"
+.br
+.ti -1c
+.RI "\fBimap_set_quota\fP ($imap_stream, $quota_root, $quota_limit)"
+.br
+.ti -1c
+.RI "\fBimap_setacl\fP ($imap_stream, $mailbox, $id, $rights)"
+.br
+.ti -1c
+.RI "\fBimap_getacl\fP ($imap_stream, $mailbox)"
+.br
+.ti -1c
+.RI "\fBimap_myrights\fP ($stream_id, $mailbox)"
+.br
+.ti -1c
+.RI "\fBimap_setannotation\fP ($stream_id, $mailbox, $entry, $attr, $value)"
+.br
+.ti -1c
+.RI "\fBimap_getannotation\fP ($stream_id, $mailbox, $entry, $attr)"
+.br
+.ti -1c
+.RI "\fBimap_mail\fP ($to, $subject, $message, $additional_headers=\fBnull\fP, $cc=\fBnull\fP, $bcc=\fBnull\fP, $rpath=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimap_header\fP ($stream_id, $msg_no, $from_length=0, $subject_length=0, $default_host=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimap_listmailbox\fP ($stream_id, $ref, $pattern)"
+.br
+.ti -1c
+.RI "\fBimap_getmailboxes\fP ($imap_stream, $ref, $pattern)"
+.br
+.ti -1c
+.RI "\fBimap_scanmailbox\fP ($stream_id, $ref, $pattern, $content)"
+.br
+.ti -1c
+.RI "\fBimap_listsubscribed\fP ($stream_id, $ref, $pattern)"
+.br
+.ti -1c
+.RI "\fBimap_getsubscribed\fP ($imap_stream, $ref, $pattern)"
+.br
+.ti -1c
+.RI "\fBimap_fetchtext\fP ($stream, $msg_no, $options=0)"
+.br
+.ti -1c
+.RI "\fBimap_scan\fP ($stream_id, $ref, $pattern, $content)"
+.br
+.ti -1c
+.RI "\fBimap_create\fP ($stream_id, $mailbox)"
+.br
+.ti -1c
+.RI "\fBimap_rename\fP ($stream_id, $old_name, $new_name)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBNIL\fP 0"
+.br
+.ti -1c
+.RI "const \fBIMAP_OPENTIMEOUT\fP 1"
+.br
+.ti -1c
+.RI "const \fBIMAP_READTIMEOUT\fP 2"
+.br
+.ti -1c
+.RI "const \fBIMAP_WRITETIMEOUT\fP 3"
+.br
+.ti -1c
+.RI "const \fBIMAP_CLOSETIMEOUT\fP 4"
+.br
+.ti -1c
+.RI "const \fBOP_DEBUG\fP 1"
+.br
+.ti -1c
+.RI "const \fBOP_READONLY\fP 2"
+.br
+.ti -1c
+.RI "const \fBOP_ANONYMOUS\fP 4"
+.br
+.ti -1c
+.RI "const \fBOP_SHORTCACHE\fP 8"
+.br
+.ti -1c
+.RI "const \fBOP_SILENT\fP 16"
+.br
+.ti -1c
+.RI "const \fBOP_PROTOTYPE\fP 32"
+.br
+.ti -1c
+.RI "const \fBOP_HALFOPEN\fP 64"
+.br
+.ti -1c
+.RI "const \fBOP_EXPUNGE\fP 128"
+.br
+.ti -1c
+.RI "const \fBOP_SECURE\fP 256"
+.br
+.ti -1c
+.RI "const \fBCL_EXPUNGE\fP 32768"
+.br
+.ti -1c
+.RI "const \fBFT_UID\fP 1"
+.br
+.ti -1c
+.RI "const \fBFT_PEEK\fP 2"
+.br
+.ti -1c
+.RI "const \fBFT_NOT\fP 4"
+.br
+.ti -1c
+.RI "const \fBFT_INTERNAL\fP 8"
+.br
+.ti -1c
+.RI "const \fBFT_PREFETCHTEXT\fP 32"
+.br
+.ti -1c
+.RI "const \fBST_UID\fP 1"
+.br
+.ti -1c
+.RI "const \fBST_SILENT\fP 2"
+.br
+.ti -1c
+.RI "const \fBST_SET\fP 4"
+.br
+.ti -1c
+.RI "const \fBCP_UID\fP 1"
+.br
+.ti -1c
+.RI "const \fBCP_MOVE\fP 2"
+.br
+.ti -1c
+.RI "const \fBSE_UID\fP 1"
+.br
+.ti -1c
+.RI "const \fBSE_FREE\fP 2"
+.br
+.ti -1c
+.RI "const \fBSE_NOPREFETCH\fP 4"
+.br
+.ti -1c
+.RI "const \fBSO_FREE\fP 8"
+.br
+.ti -1c
+.RI "const \fBSO_NOSERVER\fP 16"
+.br
+.ti -1c
+.RI "const \fBSA_MESSAGES\fP 1"
+.br
+.ti -1c
+.RI "const \fBSA_RECENT\fP 2"
+.br
+.ti -1c
+.RI "const \fBSA_UNSEEN\fP 4"
+.br
+.ti -1c
+.RI "const \fBSA_UIDNEXT\fP 8"
+.br
+.ti -1c
+.RI "const \fBSA_UIDVALIDITY\fP 16"
+.br
+.ti -1c
+.RI "const \fBSA_ALL\fP 31"
+.br
+.ti -1c
+.RI "const \fBLATT_NOINFERIORS\fP 1"
+.br
+.ti -1c
+.RI "const \fBLATT_NOSELECT\fP 2"
+.br
+.ti -1c
+.RI "const \fBLATT_MARKED\fP 4"
+.br
+.ti -1c
+.RI "const \fBLATT_UNMARKED\fP 8"
+.br
+.ti -1c
+.RI "const \fBLATT_REFERRAL\fP 16"
+.br
+.ti -1c
+.RI "const \fBLATT_HASCHILDREN\fP 32"
+.br
+.ti -1c
+.RI "const \fBLATT_HASNOCHILDREN\fP 64"
+.br
+.ti -1c
+.RI "const \fBSORTDATE\fP 0"
+.br
+.ti -1c
+.RI "const \fBSORTARRIVAL\fP 1"
+.br
+.ti -1c
+.RI "const \fBSORTFROM\fP 2"
+.br
+.ti -1c
+.RI "const \fBSORTSUBJECT\fP 3"
+.br
+.ti -1c
+.RI "const \fBSORTTO\fP 4"
+.br
+.ti -1c
+.RI "const \fBSORTCC\fP 5"
+.br
+.ti -1c
+.RI "const \fBSORTSIZE\fP 6"
+.br
+.ti -1c
+.RI "const \fBTYPETEXT\fP 0"
+.br
+.ti -1c
+.RI "const \fBTYPEMULTIPART\fP 1"
+.br
+.ti -1c
+.RI "const \fBTYPEMESSAGE\fP 2"
+.br
+.ti -1c
+.RI "const \fBTYPEAPPLICATION\fP 3"
+.br
+.ti -1c
+.RI "const \fBTYPEAUDIO\fP 4"
+.br
+.ti -1c
+.RI "const \fBTYPEIMAGE\fP 5"
+.br
+.ti -1c
+.RI "const \fBTYPEVIDEO\fP 6"
+.br
+.ti -1c
+.RI "const \fBTYPEMODEL\fP 7"
+.br
+.ti -1c
+.RI "const \fBTYPEOTHER\fP 8"
+.br
+.ti -1c
+.RI "const \fBENC7BIT\fP 0"
+.br
+.ti -1c
+.RI "const \fBENC8BIT\fP 1"
+.br
+.ti -1c
+.RI "const \fBENCBINARY\fP 2"
+.br
+.ti -1c
+.RI "const \fBENCBASE64\fP 3"
+.br
+.ti -1c
+.RI "const \fBENCQUOTEDPRINTABLE\fP 4"
+.br
+.ti -1c
+.RI "const \fBENCOTHER\fP 5"
+.br
+.ti -1c
+.RI "const \fBIMAP_GC_ELT\fP 1"
+.br
+.ti -1c
+.RI "const \fBIMAP_GC_ENV\fP 2"
+.br
+.ti -1c
+.RI "const \fBIMAP_GC_TEXTS\fP 4"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "imap_8bit ( $string)"
+Convert an 8bit string to a quoted-printable string \fBstring $string \fP The 8bit string to convert 
+.PP
+\fBReturns\fP
+.RS 4
+string a quoted-printable string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_alerts ()"
+Returns all IMAP alert messages that have occurred \fBarray|false an array of all of the IMAP alert messages generated or \fBFALSE\fP if no alert messages are available\&.  4\&.0  5\&.0 \fP
+.SS "imap_append ( $imap_stream,  $mailbox,  $message,  $options = \fC\fBnull\fP\fP,  $internal_date = \fC\fBnull\fP\fP)"
+Append a string message to a specified mailbox \fBresource $imap_stream  string $mailbox \fP The mailbox name, see \fBimap_open\fP for more information 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$message\fP 
+.RE
+.PP
+The message to be append, as a string 
+.PP
+When talking to the Cyrus IMAP server, you must use '\\r\\n' as your end-of-line terminator instead of '\\n' or the operation will fail 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+If provided, the \fIoptions\fP will also be written to the \fImailbox\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$internal_date\fP [optional] 
+.RE
+.PP
+If this parameter is set, it will set the INTERNALDATE on the appended message\&. The parameter should be a date string that conforms to the rfc2060 specifications for a date_time value\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_base64 ( $text)"
+Decode BASE64 encoded text \fBstring $text \fP The encoded text 
+.PP
+\fBReturns\fP
+.RS 4
+string the decoded message as a string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_binary ( $string)"
+Convert an 8bit string to a base64 string \fBstring $string \fP The 8bit string 
+.PP
+\fBReturns\fP
+.RS 4
+string a base64 encoded string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_body ( $imap_stream,  $msg_number,  $options = \fC0\fP)"
+Read the message body \fBresource $imap_stream  int $msg_number \fP The message number 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+The optional \fIoptions\fP are a bit mask with one or more of the following: \fBFT_UID\fP - The \fImsg_number\fP is a UID 
+.PP
+\fBReturns\fP
+.RS 4
+string the body of the specified message, as a string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_bodystruct ( $imap_stream,  $msg_number,  $section)"
+Read the structure of a specified body section of a specific message \fBresource $imap_stream  int $msg_number \fP The message number 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$section\fP 
+.RE
+.PP
+The body section to read 
+.PP
+\fBReturns\fP
+.RS 4
+object the information in an object, for a detailed description of the object structure and properties see \fBimap_fetchstructure\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_check ( $imap_stream)"
+Check current mailbox \fBresource $imap_stream  object|false the information in an object with following properties: \fBDate\fP - current system time formatted according to RFC2822 \fBDriver\fP - protocol used to access this mailbox: POP3, IMAP, NNTP \fBMailbox\fP - the mailbox name \fBNmsgs\fP - number of messages in the mailbox \fBRecent\fP - number of recent messages in the mailbox \fP 
+.PP
+Returns \fBFALSE\fP on failure\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_clearflag_full ( $imap_stream,  $sequence,  $flag,  $options = \fC0\fP)"
+Clears flags on messages \fBresource $imap_stream  string $sequence \fP \fBA\fP sequence of message numbers\&. You can enumerate desired messages with the X,Y syntax, or retrieve all messages within an interval with the X:Y syntax 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flag\fP 
+.RE
+.PP
+The flags which you can unset are '\\\\Seen', '\\\\Answered', '\\\\Flagged', '\\\\Deleted', and '\\\\Draft' (as defined by RFC2060) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+\fIoptions\fP are a bit mask and may contain the single option: \fBST_UID\fP - The sequence argument contains UIDs instead of sequence numbers 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_close ( $imap_stream,  $flag = \fC0\fP)"
+Close an IMAP stream \fBresource $imap_stream  int $flag [optional] \fP If set to \fBCL_EXPUNGE\fP, the function will silently expunge the mailbox before closing, removing all messages marked for deletion\&. You can achieve the same thing by using \fBimap_expunge\fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_create ( $stream_id,  $mailbox)"
+Alias of \fBimap_createmailbox\fP \fB$stream_id  $mailbox  4\&.0  5\&.0 \fP
+.SS "imap_createmailbox ( $imap_stream,  $mailbox)"
+Create a new mailbox \fBresource $imap_stream  string $mailbox \fP The mailbox name, see \fBimap_open\fP for more information\&. Names containing international characters should be encoded by \fBimap_utf7_encode\fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_delete ( $imap_stream,  $msg_number,  $options = \fC0\fP)"
+Mark a message for deletion from current mailbox \fBresource $imap_stream  int $msg_number \fP The message number 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+You can set the \fBFT_UID\fP which tells the function to treat the \fImsg_number\fP argument as an UID\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_deletemailbox ( $imap_stream,  $mailbox)"
+Delete a mailbox \fBresource $imap_stream  string $mailbox \fP The mailbox name, see \fBimap_open\fP for more information 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_errors ()"
+Returns all of the IMAP errors that have occurred \fBarray|false This function returns an array of all of the IMAP error messages generated since the last \fBimap_errors\fP call, or the beginning of the page\&. Returns \fBFALSE\fP if no error messages are available\&.  4\&.0  5\&.0 \fP
+.SS "imap_expunge ( $imap_stream)"
+Delete all messages marked for deletion \fBresource $imap_stream  bool \fBTRUE\fP\&.  4\&.0  5\&.0 \fP
+.SS "imap_fetch_overview ( $imap_stream,  $sequence,  $options = \fC0\fP)"
+Read an overview of the information in the headers of the given message \fBresource $imap_stream  string $sequence \fP \fBA\fP message sequence description\&. You can enumerate desired messages with the X,Y syntax, or retrieve all messages within an interval with the X:Y syntax 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+\fIsequence\fP will contain a sequence of message indices or UIDs, if this parameter is set to \fBFT_UID\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array of objects describing one message header each\&. The object will only define a property if it exists\&. The possible properties are: subject - the messages subject from - who sent it to - recipient date - when was it sent message_id - Message-ID references - is a reference to this message id in_reply_to - is a reply to this message id size - size in bytes uid - UID the message has in the mailbox msgno - message sequence number in the mailbox recent - this message is flagged as recent flagged - this message is flagged answered - this message is flagged as answered deleted - this message is flagged for deletion seen - this message is flagged as already read draft - this message is flagged as being a draft 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_fetchbody ( $imap_stream,  $msg_number,  $section,  $options = \fC0\fP)"
+Fetch a particular section of the body of the message \fBresource $imap_stream  int $msg_number \fP The message number 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$section\fP 
+.RE
+.PP
+The part number\&. It is a string of integers delimited by period which index into a body part list as per the IMAP4 specification 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+\fBA\fP bitmask with one or more of the following: \fBFT_UID\fP - The \fImsg_number\fP is a UID 
+.PP
+\fBReturns\fP
+.RS 4
+string a particular section of the body of the specified messages as a text string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_fetchheader ( $imap_stream,  $msg_number,  $options = \fC0\fP)"
+Returns header for a message \fBresource $imap_stream  int $msg_number \fP The message number 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+The possible \fIoptions\fP are: \fBFT_UID\fP - The \fImsgno\fP argument is a UID 
+.PP
+\fBReturns\fP
+.RS 4
+string the header of the specified message as a text string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_fetchmime ( $imap_stream,  $msg_number,  $section,  $options = \fC0\fP)"
+Fetch MIME headers for a particular section of the message \fBresource $imap_stream  int $msg_number \fP The message number 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$section\fP 
+.RE
+.PP
+The part number\&. It is a string of integers delimited by period which index into a body part list as per the IMAP4 specification 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+\fBA\fP bitmask with one or more of the following: \fBFT_UID\fP - The \fImsg_number\fP is a UID 
+.PP
+\fBReturns\fP
+.RS 4
+string the MIME headers of a particular section of the body of the specified messages as a text string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3\&.6 
+.RE
+.PP
+
+.SS "imap_fetchstructure ( $imap_stream,  $msg_number,  $options = \fC0\fP)"
+Read the structure of a particular message \fBresource $imap_stream  int $msg_number \fP The message number 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+This optional parameter only has a single option, \fBFT_UID\fP, which tells the function to treat the \fImsg_number\fP argument as a UID\&. 
+.PP
+\fBReturns\fP
+.RS 4
+object an object includes the envelope, internal date, size, flags and body structure along with a similar object for each mime attachment\&. The structure of the returned objects is as follows: 
+.RE
+.PP
+.PP
+Objects for \fBimap_fetchstructure\fP 
+.PP
+type 
+.PP
+Primary body type  
+.PP
+encoding 
+.PP
+Body transfer encoding  
+.PP
+ifsubtype 
+.PP
+\fBTRUE\fP if there is a subtype string  
+.PP
+subtype 
+.PP
+MIME subtype  
+.PP
+ifdescription 
+.PP
+\fBTRUE\fP if there is a description string  
+.PP
+description 
+.PP
+Content description string  
+.PP
+ifid 
+.PP
+\fBTRUE\fP if there is an identification string  
+.PP
+id 
+.PP
+Identification string  
+.PP
+lines 
+.PP
+Number of lines  
+.PP
+bytes 
+.PP
+Number of bytes  
+.PP
+ifdisposition 
+.PP
+\fBTRUE\fP if there is a disposition string  
+.PP
+disposition 
+.PP
+Disposition string  
+.PP
+ifdparameters 
+.PP
+\fBTRUE\fP if the dparameters array exists  
+.PP
+dparameters 
+.PP
+An array of objects where each object has an 'attribute' and a 'value' property corresponding to the parameters on the Content-disposition MIME header\&.  
+.PP
+ifparameters 
+.PP
+\fBTRUE\fP if the parameters array exists  
+.PP
+parameters 
+.PP
+An array of objects where each object has an 'attribute' and a 'value' property\&.  
+.PP
+parts 
+.PP
+An array of objects identical in structure to the top-level object, each of which corresponds to a MIME body part\&.  
+.PP
+body type (may vary with used library) 
+.PP
+0
+.PP
+text 
+.PP
+1
+.PP
+multipart 
+.PP
+2
+.PP
+message 
+.PP
+3
+.PP
+application 
+.PP
+4
+.PP
+audio 
+.PP
+5
+.PP
+image 
+.PP
+6
+.PP
+video 
+.PP
+7
+.PP
+other 
+.PP
+encodings (may vary with used library) 
+.PP
+0
+.PP
+7BIT 
+.PP
+1
+.PP
+8BIT 
+.PP
+2
+.PP
+BINARY 
+.PP
+3
+.PP
+BASE64 
+.PP
+4
+.PP
+QUOTED-PRINTABLE 
+.PP
+5
+.PP
+OTHER 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_fetchtext ( $stream,  $msg_no,  $options = \fC0\fP)"
+(PHP 4, PHP 5) Alias of \fBimap_body()\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$stream\fP An IMAP stream returned by \fBimap_open()\fP 
+.br
+\fI$msg_no\fP message number 
+.br
+\fI$options\fP [optional] \fBA\fP bitmask with one or more of the following:
+.PD 0
+
+.IP "\(bu" 2
+FT_UID - The msg_number is a UID 
+.IP "\(bu" 2
+FT_PEEK - Do not set the \\Seen flag if not already set 
+.IP "\(bu" 2
+FT_INTERNAL - The return string is in internal format, will not canonicalize to CRLF\&.
+.PP
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string body of the specified message 
+.RE
+.PP
+
+.SS "imap_gc ( $imap_stream,  $caches)"
+Clears IMAP cache \fBresource $imap_stream  int $caches \fP Specifies the cache to purge\&. It may one or a combination of the following constants: \fBIMAP_GC_ELT\fP (message cache elements), \fBIMAP_GC_ENV\fP (enveloppe and bodies), \fBIMAP_GC_TEXTS\fP (texts)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "imap_get_quota ( $imap_stream,  $quota_root)"
+Retrieve the quota level settings, and usage statics per mailbox \fBresource $imap_stream  string $quota_root \fP \fIquota_root\fP should normally be in the form of user\&.name where name is the mailbox you wish to retrieve information about\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array with integer values limit and usage for the given mailbox\&. The value of limit represents the total amount of space allowed for this mailbox\&. The usage value represents the mailboxes current level of capacity\&. Will return \fBFALSE\fP in the case of failure\&. 
+.RE
+.PP
+.PP
+As of PHP 4\&.3, the function more properly reflects the functionality as dictated by the RFC2087\&. The array return value has changed to support an unlimited number of returned resources (i\&.e\&. messages, or sub-folders) with each named resource receiving an individual array key\&. Each key value then contains an another array with the usage and limit values within it\&. 
+.PP
+For backwards compatibility reasons, the original access methods are still available for use, although it is suggested to update\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_get_quotaroot ( $imap_stream,  $quota_root)"
+Retrieve the quota settings per user \fBresource $imap_stream  string $quota_root \fP \fIquota_root\fP should normally be in the form of which mailbox (i\&.e\&. INBOX)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array of integer values pertaining to the specified user mailbox\&. All values contain a key based upon the resource name, and a corresponding array with the usage and limit values within\&. 
+.RE
+.PP
+.PP
+This function will return \fBFALSE\fP in the case of call failure, and an array of information about the connection upon an un-parsable response from the server\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_getacl ( $imap_stream,  $mailbox)"
+Gets the ACL for a given mailbox \fBresource $imap_stream  string $mailbox \fP The mailbox name, see \fBimap_open\fP for more information 
+.PP
+\fBReturns\fP
+.RS 4
+array an associative array of 'folder' => 'acl' pairs\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "imap_getannotation ( $stream_id,  $mailbox,  $entry,  $attr)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$stream_id\fP 
+.br
+\fI$mailbox\fP 
+.br
+\fI$entry\fP 
+.br
+\fI$attr\fP 
+.RE
+.PP
+
+.SS "imap_getmailboxes ( $imap_stream,  $ref,  $pattern)"
+Read the list of mailboxes, returning detailed information on each one \fBresource $imap_stream  string $ref \fP \fIref\fP should normally be just the server specification as described in \fBimap_open\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pattern\fP Specifies where in the mailbox hierarchy to start searching\&.
+.RE
+.PP
+There are two special characters you can pass as part of the \fIpattern\fP: &#x00027;\fI&#x00027; and &#x00027;&#37;&#x00027;\&. &#x00027;\fP&#x00027; means to return all mailboxes\&. If you pass \fIpattern\fP as &#x00027;*&#x00027;, you will get a list of the entire mailbox hierarchy\&. &#x00027;&#37;&#x00027; means to return the current level only\&. &#x00027;&#37;&#x00027; as the \fIpattern\fP parameter will return only the top level mailboxes; &#x00027;~/mail/&#37;&#x00027; on UW_IMAPD will return every mailbox in the ~/mail directory, but none in subfolders of that directory\&.
+.PP
+\fBReturns\fP
+.RS 4
+array an array of objects containing mailbox information\&. Each object has the attributes \fIname\fP, specifying the full name of the mailbox; \fIdelimiter\fP, which is the hierarchy delimiter for the part of the hierarchy this mailbox is in; and \fIattributes\fP\&. \fIAttributes\fP is a bitmask that can be tested against: 
+.RE
+.PP
+\fBLATT_NOINFERIORS\fP - This mailbox contains, and may not contain any 'children' (there are no mailboxes below this one)\&. Calling \fBimap_createmailbox\fP will not work on this mailbox\&. 
+.PP
+\fBLATT_NOSELECT\fP - This is only a container, not a mailbox - you cannot open it\&. 
+.PP
+\fBLATT_MARKED\fP - This mailbox is marked\&. This means that it may contain new messages since the last time it was checked\&. Not provided by all IMAP servers\&. 
+.PP
+\fBLATT_UNMARKED\fP - This mailbox is not marked, does not contain new messages\&. If either \fBMARKED\fP or \fBUNMARKED\fP is provided, you can assume the IMAP server supports this feature for this mailbox\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_getsubscribed ( $imap_stream,  $ref,  $pattern)"
+List all the subscribed mailboxes \fBresource $imap_stream  string $ref \fP \fIref\fP should normally be just the server specification as described in \fBimap_open\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pattern\fP Specifies where in the mailbox hierarchy to start searching\&.
+.RE
+.PP
+There are two special characters you can pass as part of the \fIpattern\fP: &#x00027;\fI&#x00027; and &#x00027;&#37;&#x00027;\&. &#x00027;\fP&#x00027; means to return all mailboxes\&. If you pass \fIpattern\fP as &#x00027;*&#x00027;, you will get a list of the entire mailbox hierarchy\&. &#x00027;&#37;&#x00027; means to return the current level only\&. &#x00027;&#37;&#x00027; as the \fIpattern\fP parameter will return only the top level mailboxes; &#x00027;~/mail/&#37;&#x00027; on UW_IMAPD will return every mailbox in the ~/mail directory, but none in subfolders of that directory\&.
+.PP
+\fBReturns\fP
+.RS 4
+array an array of objects containing mailbox information\&. Each object has the attributes \fIname\fP, specifying the full name of the mailbox; \fIdelimiter\fP, which is the hierarchy delimiter for the part of the hierarchy this mailbox is in; and \fIattributes\fP\&. \fIAttributes\fP is a bitmask that can be tested against: \fBLATT_NOINFERIORS\fP - This mailbox has no 'children' (there are no mailboxes below this one)\&. \fBLATT_NOSELECT\fP - This is only a container, not a mailbox - you cannot open it\&. \fBLATT_MARKED\fP - This mailbox is marked\&. Only used by UW-IMAPD\&. \fBLATT_UNMARKED\fP - This mailbox is not marked\&. Only used by UW-IMAPD\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_header ( $stream_id,  $msg_no,  $from_length = \fC0\fP,  $subject_length = \fC0\fP,  $default_host = \fC\fBnull\fP\fP)"
+Alias of \fBimap_headerinfo\fP \fBresource $stream_id An IMAP stream returned by imap_open()\&.  int $msg_no The message number  int $from_length [optional] Number of characters for the fetchfrom property\&. Must be greater than or equal to zero\&.  int $subject_length [optional] Number of characters for the fetchsubject property Must be greater than or equal to zero\&.  $default_host [optional]  object Returns the information in an object with following properties: \fP 
+.PP
+toaddress full to: line, up to 1024 characters 
+.PP
+to an array of objects from the To: line, with the following properties: personal, adl, mailbox, and host 
+.PP
+fromaddress full from: line, up to 1024 characters 
+.PP
+from an array of objects from the From: line, with the following properties: personal, adl, mailbox, and host 
+.PP
+ccaddress full cc: line, up to 1024 characters 
+.PP
+cc an array of objects from the Cc: line, with the following properties: personal, adl, mailbox, and host 
+.PP
+bccaddress full bcc: line, up to 1024 characters 
+.PP
+bcc an array of objects from the Bcc: line, with the following properties: personal, adl, mailbox, and host 
+.PP
+reply_toaddress full Reply-To: line, up to 1024 characters 
+.PP
+reply_to an array of objects from the Reply-To: line, with the following properties: personal, adl, mailbox, and host 
+.PP
+senderaddress full sender: line, up to 1024 characters 
+.PP
+sender an array of objects from the Sender: line, with the following properties: personal, adl, mailbox, and host 
+.PP
+return_pathaddress full Return-Path: line, up to 1024 characters 
+.PP
+return_path an array of objects from the Return-Path: line, with the following properties: personal, adl, mailbox, and host 
+.PP
+remail - 
+.PP
+date The message date as found in its headers 
+.PP
+Date Same as date 
+.PP
+subject The message subject 
+.PP
+Subject Same a subject 
+.PP
+in_reply_to - 
+.PP
+message_id - 
+.PP
+newsgroups - 
+.PP
+followup_to - 
+.PP
+references - 
+.PP
+Recent R if recent and seen, N if recent and not seen, ' ' if not recent\&. 
+.PP
+Unseen U if not seen AND not recent, ' ' if seen OR not seen and recent 
+.PP
+Flagged F if flagged, ' ' if not flagged 
+.PP
+Answered \fBA\fP if answered, ' ' if unanswered 
+.PP
+Deleted D if deleted, ' ' if not deleted 
+.PP
+Draft X if draft, ' ' if not draft 
+.PP
+Msgno The message number 
+.PP
+MailDate - 
+.PP
+Size The message size 
+.PP
+udate mail message date in Unix time 
+.PP
+fetchfrom from line formatted to fit fromlength characters 
+.PP
+fetchsubject subject line formatted to fit subjectlength characters 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_headerinfo ( $stream_id,  $msg_no,  $from_length = \fC0\fP,  $subject_length = \fC0\fP,  $default_host = \fC\fBnull\fP\fP)"
+Read the header of the message \fBresource $stream_id An IMAP stream returned by imap_open()\&.  int $msg_no The message number  int $from_length [optional] Number of characters for the fetchfrom property\&. Must be greater than or equal to zero\&.  int $subject_length [optional] Number of characters for the fetchsubject property Must be greater than or equal to zero\&.  $default_host [optional]  object Returns the information in an object with following properties: \fP 
+.PP
+toaddress full to: line, up to 1024 characters 
+.PP
+to an array of objects from the To: line, with the following properties: personal, adl, mailbox, and host 
+.PP
+fromaddress full from: line, up to 1024 characters 
+.PP
+from an array of objects from the From: line, with the following properties: personal, adl, mailbox, and host 
+.PP
+ccaddress full cc: line, up to 1024 characters 
+.PP
+cc an array of objects from the Cc: line, with the following properties: personal, adl, mailbox, and host 
+.PP
+bccaddress full bcc: line, up to 1024 characters 
+.PP
+bcc an array of objects from the Bcc: line, with the following properties: personal, adl, mailbox, and host 
+.PP
+reply_toaddress full Reply-To: line, up to 1024 characters 
+.PP
+reply_to an array of objects from the Reply-To: line, with the following properties: personal, adl, mailbox, and host 
+.PP
+senderaddress full sender: line, up to 1024 characters 
+.PP
+sender an array of objects from the Sender: line, with the following properties: personal, adl, mailbox, and host 
+.PP
+return_pathaddress full Return-Path: line, up to 1024 characters 
+.PP
+return_path an array of objects from the Return-Path: line, with the following properties: personal, adl, mailbox, and host 
+.PP
+remail - 
+.PP
+date The message date as found in its headers 
+.PP
+Date Same as date 
+.PP
+subject The message subject 
+.PP
+Subject Same a subject 
+.PP
+in_reply_to - 
+.PP
+message_id - 
+.PP
+newsgroups - 
+.PP
+followup_to - 
+.PP
+references - 
+.PP
+Recent R if recent and seen, N if recent and not seen, ' ' if not recent\&. 
+.PP
+Unseen U if not seen AND not recent, ' ' if seen OR not seen and recent 
+.PP
+Flagged F if flagged, ' ' if not flagged 
+.PP
+Answered \fBA\fP if answered, ' ' if unanswered 
+.PP
+Deleted D if deleted, ' ' if not deleted 
+.PP
+Draft X if draft, ' ' if not draft 
+.PP
+Msgno The message number 
+.PP
+MailDate - 
+.PP
+Size The message size 
+.PP
+udate mail message date in Unix time 
+.PP
+fetchfrom from line formatted to fit fromlength characters 
+.PP
+fetchsubject subject line formatted to fit subjectlength characters 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_headers ( $imap_stream)"
+Returns headers for all messages in a mailbox \fBresource $imap_stream  array an array of string formatted with header info\&. One element per mail message\&.  4\&.0  5\&.0 \fP
+.SS "imap_last_error ()"
+Gets the last IMAP error that occurred during this page request \fBstring|false the full text of the last IMAP error message that occurred on the current page\&. Returns \fBFALSE\fP if no error messages are available\&.  4\&.0  5\&.0 \fP
+.SS "imap_list ( $imap_stream,  $ref,  $pattern)"
+Read the list of mailboxes \fBresource $imap_stream  string $ref \fP \fIref\fP should normally be just the server specification as described in \fBimap_open\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pattern\fP Specifies where in the mailbox hierarchy to start searching\&.
+.RE
+.PP
+There are two special characters you can pass as part of the \fIpattern\fP: &#x00027;\fI&#x00027; and &#x00027;&#37;&#x00027;\&. &#x00027;\fP&#x00027; means to return all mailboxes\&. If you pass \fIpattern\fP as &#x00027;*&#x00027;, you will get a list of the entire mailbox hierarchy\&. &#x00027;&#37;&#x00027; means to return the current level only\&. &#x00027;&#37;&#x00027; as the \fIpattern\fP parameter will return only the top level mailboxes; &#x00027;~/mail/&#37;&#x00027; on UW_IMAPD will return every mailbox in the ~/mail directory, but none in subfolders of that directory\&.
+.PP
+\fBReturns\fP
+.RS 4
+array an array containing the names of the mailboxes\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_listmailbox ( $stream_id,  $ref,  $pattern)"
+Alias of \fBimap_list\fP \fB$stream_id  $ref  $pattern  4\&.0  5\&.0 \fP
+.SS "imap_listscan ( $imap_stream,  $ref,  $pattern,  $content)"
+Returns the list of mailboxes that matches the given text \fBresource $imap_stream  string $ref \fP \fIref\fP should normally be just the server specification as described in \fBimap_open\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pattern\fP Specifies where in the mailbox hierarchy to start searching\&.
+.RE
+.PP
+There are two special characters you can pass as part of the \fIpattern\fP: &#x00027;\fI&#x00027; and &#x00027;&#37;&#x00027;\&. &#x00027;\fP&#x00027; means to return all mailboxes\&. If you pass \fIpattern\fP as &#x00027;*&#x00027;, you will get a list of the entire mailbox hierarchy\&. &#x00027;&#37;&#x00027; means to return the current level only\&. &#x00027;&#37;&#x00027; as the \fIpattern\fP parameter will return only the top level mailboxes; &#x00027;~/mail/&#37;&#x00027; on UW_IMAPD will return every mailbox in the ~/mail directory, but none in subfolders of that directory\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$content\fP 
+.RE
+.PP
+The searched string 
+.PP
+\fBReturns\fP
+.RS 4
+array an array containing the names of the mailboxes that have \fIcontent\fP in the text of the mailbox\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_listsubscribed ( $stream_id,  $ref,  $pattern)"
+Alias of \fBimap_lsub\fP \fB$stream_id  $ref  $pattern  4\&.0  5\&.0 \fP
+.SS "imap_lsub ( $imap_stream,  $ref,  $pattern)"
+List all the subscribed mailboxes \fBresource $imap_stream  string $ref \fP \fIref\fP should normally be just the server specification as described in \fBimap_open\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pattern\fP Specifies where in the mailbox hierarchy to start searching\&.
+.RE
+.PP
+There are two special characters you can pass as part of the \fIpattern\fP: &#x00027;\fI&#x00027; and &#x00027;&#37;&#x00027;\&. &#x00027;\fP&#x00027; means to return all mailboxes\&. If you pass \fIpattern\fP as &#x00027;*&#x00027;, you will get a list of the entire mailbox hierarchy\&. &#x00027;&#37;&#x00027; means to return the current level only\&. &#x00027;&#37;&#x00027; as the \fIpattern\fP parameter will return only the top level mailboxes; &#x00027;~/mail/&#37;&#x00027; on UW_IMAPD will return every mailbox in the ~/mail directory, but none in subfolders of that directory\&.
+.PP
+\fBReturns\fP
+.RS 4
+array an array of all the subscribed mailboxes\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_mail ( $to,  $subject,  $message,  $additional_headers = \fC\fBnull\fP\fP,  $cc = \fC\fBnull\fP\fP,  $bcc = \fC\fBnull\fP\fP,  $rpath = \fC\fBnull\fP\fP)"
+Send an email message \fBstring $to \fP The receiver 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$subject\fP 
+.RE
+.PP
+The mail subject 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$message\fP 
+.RE
+.PP
+The mail body, see \fBimap_mail_compose\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$additional_headers\fP [optional] 
+.RE
+.PP
+As string with additional headers to be set on the mail 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cc\fP [optional] 
+.br
+\fI$bcc\fP [optional] 
+.RE
+.PP
+The receivers specified in \fIbcc\fP will get the mail, but are excluded from the headers\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$rpath\fP [optional] 
+.RE
+.PP
+Use this parameter to specify return path upon mail delivery failure\&. This is useful when using PHP as a mail client for multiple users\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_mail_compose (array $envelope, array $body)"
+Create a MIME message based on given envelope and body sections \fBarray $envelope \fP An associative array of headers fields\&. Valid keys are: 'remail', 'return_path', 'date', 'from', 'reply_to', 'in_reply_to', 'subject', 'to', 'cc', 'bcc', 'message_id' and 'custom_headers' (which contains associative array of other headers)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$body\fP 
+.RE
+.PP
+An indexed array of bodies 
+.PP
+\fBA\fP body is an associative array which can consist of the following keys: 'type', 'encoding', 'charset', 'type\&.parameters', 'subtype', 'id', 'description', 'disposition\&.type', 'disposition', 'contents\&.data', 'lines', 'bytes' and 'md5'\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the MIME message\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_mail_copy ( $imap_stream,  $msglist,  $mailbox,  $options = \fC0\fP)"
+Copy specified messages to a mailbox \fBresource $imap_stream  string $msglist \fP \fImsglist\fP is a range not just message numbers (as described in RFC2060)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mailbox\fP 
+.RE
+.PP
+The mailbox name, see \fBimap_open\fP for more information 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+\fIoptions\fP is a bitmask of one or more of \fBCP_UID\fP - the sequence numbers contain UIDS 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_mail_move ( $imap_stream,  $msglist,  $mailbox,  $options = \fC0\fP)"
+Move specified messages to a mailbox \fBresource $imap_stream  string $msglist \fP \fImsglist\fP is a range not just message numbers (as described in RFC2060)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mailbox\fP 
+.RE
+.PP
+The mailbox name, see \fBimap_open\fP for more information 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+\fIoptions\fP is a bitmask and may contain the single option: \fBCP_UID\fP - the sequence numbers contain UIDS 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_mailboxmsginfo ( $imap_stream)"
+Get information about the current mailbox \fBresource $imap_stream  object|false the information in an object with following properties: \fP Mailbox properties 
+.PP
+Date 
+.PP
+date of last change (current datetime)  
+.PP
+Driver 
+.PP
+driver  
+.PP
+Mailbox 
+.PP
+name of the mailbox  
+.PP
+Nmsgs 
+.PP
+number of messages  
+.PP
+Recent 
+.PP
+number of recent messages  
+.PP
+Unread 
+.PP
+number of unread messages  
+.PP
+Deleted 
+.PP
+number of deleted messages  
+.PP
+Size 
+.PP
+mailbox size  
+.PP
+Returns \fBFALSE\fP on failure\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_mime_header_decode ( $text)"
+Decode MIME header elements \fBstring $text \fP The MIME text 
+.PP
+\fBReturns\fP
+.RS 4
+array The decoded elements are returned in an array of objects, where each object has two properties, charset and text\&. 
+.RE
+.PP
+.PP
+If the element hasn't been encoded, and in other words is in plain US-ASCII, the charset property of that element is set to default\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_msgno ( $imap_stream,  $uid)"
+Gets the message sequence number for the given UID \fBresource $imap_stream  int $uid \fP The message UID 
+.PP
+\fBReturns\fP
+.RS 4
+int the message sequence number for the given \fIuid\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_myrights ( $stream_id,  $mailbox)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$stream_id\fP 
+.br
+\fI$mailbox\fP 
+.RE
+.PP
+
+.SS "imap_num_msg ( $imap_stream)"
+Gets the number of messages in the current mailbox \fBresource $imap_stream  int Return the number of messages in the current mailbox, as an integer\&.  4\&.0  5\&.0 \fP
+.SS "imap_num_recent ( $imap_stream)"
+Gets the number of recent messages in current mailbox \fBresource $imap_stream  int the number of recent messages in the current mailbox, as an integer\&.  4\&.0  5\&.0 \fP
+.SS "imap_open ( $mailbox,  $username,  $password,  $options = \fC0\fP,  $n_retries = \fC0\fP, array $params = \fC\fBnull\fP\fP)"
+Open an IMAP stream to a mailbox \fBstring $mailbox \fP \fBA\fP mailbox name consists of a server and a mailbox path on this server\&. The special name INBOX stands for the current users personal mailbox\&. Mailbox names that contain international characters besides those in the printable ASCII space have to be encoded width \fBimap_utf7_encode\fP\&. 
+.PP
+The server part, which is enclosed in '{' and '}', consists of the servers name or ip address, an optional port (prefixed by ':'), and an optional protocol specification (prefixed by '/')\&. 
+.PP
+The server part is mandatory in all mailbox parameters\&. 
+.PP
+All names which start with { are remote names, and are in the form '{' remote_system_name [':' port] [flags] '}' [mailbox_name] where: remote_system_name - Internet domain name or bracketed IP address of server\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP 
+.RE
+.PP
+The user name 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP 
+.RE
+.PP
+The password associated with the \fIusername\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+The \fIoptions\fP are a bit mask with one or more of the following: \fBOP_READONLY\fP - Open mailbox read-only 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$n_retries\fP [optional] 
+.RE
+.PP
+Number of maximum connect attempts 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$params\fP [optional] 
+.RE
+.PP
+Connection parameters, the following (string) keys maybe used to set one or more connection parameters: DISABLE_AUTHENTICATOR - Disable authentication properties 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an IMAP stream on success or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_ping ( $imap_stream)"
+Check if the IMAP stream is still active \fBresource $imap_stream  bool \fBTRUE\fP if the stream is still alive, \fBFALSE\fP otherwise\&.  4\&.0  5\&.0 \fP
+.SS "imap_qprint ( $string)"
+Convert a quoted-printable string to an 8 bit string \fBstring $string \fP \fBA\fP quoted-printable string 
+.PP
+\fBReturns\fP
+.RS 4
+string an 8 bits string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_rename ( $stream_id,  $old_name,  $new_name)"
+Alias of \fBimap_renamemailbox\fP \fB$stream_id  $old_name  $new_name  4\&.0  5\&.0 \fP
+.SS "imap_renamemailbox ( $imap_stream,  $old_mbox,  $new_mbox)"
+Rename an old mailbox to new mailbox \fBresource $imap_stream  string $old_mbox \fP The old mailbox name, see \fBimap_open\fP for more information 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$new_mbox\fP 
+.RE
+.PP
+The new mailbox name, see \fBimap_open\fP for more information 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_reopen ( $imap_stream,  $mailbox,  $options = \fC0\fP,  $n_retries = \fC0\fP)"
+Reopen IMAP stream to new mailbox \fBresource $imap_stream  string $mailbox \fP The mailbox name, see \fBimap_open\fP for more information 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+The \fIoptions\fP are a bit mask with one or more of the following: \fBOP_READONLY\fP - Open mailbox read-only 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$n_retries\fP [optional] 
+.RE
+.PP
+Number of maximum connect attempts 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if the stream is reopened, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_rfc822_parse_adrlist ( $address,  $default_host)"
+Parses an address string \fBstring $address \fP \fBA\fP string containing addresses 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$default_host\fP 
+.RE
+.PP
+The default host name 
+.PP
+\fBReturns\fP
+.RS 4
+array an array of objects\&. The objects properties are: 
+.RE
+.PP
+.PP
+mailbox - the mailbox name (username) host - the host name personal - the personal name adl - at domain source route 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_rfc822_parse_headers ( $headers,  $defaulthost = \fC'UNKNOWN'\fP)"
+Parse mail headers from a string \fBstring $headers \fP The parsed headers data 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$defaulthost\fP [optional] 
+.RE
+.PP
+The default host name 
+.PP
+\fBReturns\fP
+.RS 4
+object an object similar to the one returned by \fBimap_header\fP, except for the flags and other properties that come from the IMAP server\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_rfc822_write_address ( $mailbox,  $host,  $personal)"
+Returns a properly formatted email address given the mailbox, host, and personal info \fBstring $mailbox \fP The mailbox name, see \fBimap_open\fP for more information 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$host\fP 
+.RE
+.PP
+The email host part 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$personal\fP 
+.RE
+.PP
+The name of the account owner 
+.PP
+\fBReturns\fP
+.RS 4
+string a string properly formatted email address as defined in RFC2822\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_savebody ( $imap_stream,  $file,  $msg_number,  $part_number = \fC''\fP,  $options = \fC0\fP)"
+Save a specific body section to a file \fBresource $imap_stream  mixed $file \fP The path to the saved file as a string, or a valid file descriptor returned by \fBfopen\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$msg_number\fP 
+.RE
+.PP
+The message number 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$part_number\fP [optional] 
+.RE
+.PP
+The part number\&. It is a string of integers delimited by period which index into a body part list as per the IMAP4 specification 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+\fBA\fP bitmask with one or more of the following: \fBFT_UID\fP - The \fImsg_number\fP is a UID 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1\&.3 
+.RE
+.PP
+
+.SS "imap_scan ( $stream_id,  $ref,  $pattern,  $content)"
+Alias of \fBimap_listscan\fP \fB$stream_id  $ref  $pattern  $content  4\&.0  5\&.0 \fP
+.SS "imap_scanmailbox ( $stream_id,  $ref,  $pattern,  $content)"
+Alias of \fBimap_listscan\fP \fB$stream_id  $ref  $pattern  $content  4\&.0  5\&.0 \fP
+.SS "imap_search ( $imap_stream,  $criteria,  $options = \fC\fBSE_FREE\fP\fP,  $charset = \fC\fBNIL\fP\fP)"
+This function returns an array of messages matching the given search criteria \fBresource $imap_stream  string $criteria \fP \fBA\fP string, delimited by spaces, in which the following keywords are allowed\&. Any multi-word arguments (e\&.g\&. FROM 'joey smith') must be quoted\&. Results will match all \fIcriteria\fP entries\&. ALL - return all messages matching the rest of the criteria 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+Valid values for \fIoptions\fP are \fBSE_UID\fP, which causes the returned array to contain UIDs instead of messages sequence numbers\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charset\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array of message numbers or UIDs\&. 
+.RE
+.PP
+.PP
+Return \fBFALSE\fP if it does not understand the search \fIcriteria\fP or no messages have been found\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_set_quota ( $imap_stream,  $quota_root,  $quota_limit)"
+Sets a quota for a given mailbox \fBresource $imap_stream  string $quota_root \fP The mailbox to have a quota set\&. This should follow the IMAP standard format for a mailbox: user\&.name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$quota_limit\fP 
+.RE
+.PP
+The maximum size (in KB) for the \fIquota_root\fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_setacl ( $imap_stream,  $mailbox,  $id,  $rights)"
+Sets the ACL for a given mailbox \fBresource $imap_stream  string $mailbox \fP The mailbox name, see \fBimap_open\fP for more information 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$id\fP 
+.RE
+.PP
+The user to give the rights to\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$rights\fP 
+.RE
+.PP
+The rights to give to the user\&. Passing an empty string will delete acl\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.7 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_setannotation ( $stream_id,  $mailbox,  $entry,  $attr,  $value)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$stream_id\fP 
+.br
+\fI$mailbox\fP 
+.br
+\fI$entry\fP 
+.br
+\fI$attr\fP 
+.br
+\fI$value\fP 
+.RE
+.PP
+
+.SS "imap_setflag_full ( $imap_stream,  $sequence,  $flag,  $options = \fC\fBNIL\fP\fP)"
+Sets flags on messages \fBresource $imap_stream  string $sequence \fP \fBA\fP sequence of message numbers\&. You can enumerate desired messages with the X,Y syntax, or retrieve all messages within an interval with the X:Y syntax 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flag\fP 
+.RE
+.PP
+The flags which you can set are \\Seen, \\Answered, \\Flagged, \\Deleted, and \\Draft as defined by RFC2060\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+\fBA\fP bit mask that may contain the single option: \fBST_UID\fP - The sequence argument contains UIDs instead of sequence numbers 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_sort ( $imap_stream,  $criteria,  $reverse,  $options = \fC0\fP,  $search_criteria = \fC\fBnull\fP\fP,  $charset = \fC'\fBNIL\fP'\fP)"
+Gets and sort messages \fBresource $imap_stream  int $criteria \fP Criteria can be one (and only one) of the following: \fBSORTDATE\fP - message Date 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$reverse\fP 
+.RE
+.PP
+Set this to 1 for reverse sorting 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+The \fIoptions\fP are a bitmask of one or more of the following: \fBSE_UID\fP - Return UIDs instead of sequence numbers 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$search_criteria\fP [optional] 
+.br
+\fI$charset\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array an array of message numbers sorted by the given parameters\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_status ( $imap_stream,  $mailbox,  $options)"
+Returns status information on a mailbox \fBresource $imap_stream  string $mailbox \fP The mailbox name, see \fBimap_open\fP for more information 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP 
+.RE
+.PP
+Valid flags are: \fBSA_MESSAGES\fP - set $status->messages to the number of messages in the mailbox 
+.PP
+\fBReturns\fP
+.RS 4
+object This function returns an object containing status information\&. The object has the following properties: messages, recent, unseen, uidnext, and uidvalidity\&. 
+.RE
+.PP
+.PP
+flags is also set, which contains a bitmask which can be checked against any of the above constants\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_status_current ( $stream_id,  $options)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$stream_id\fP 
+.br
+\fI$options\fP 
+.RE
+.PP
+
+.SS "imap_subscribe ( $imap_stream,  $mailbox)"
+Subscribe to a mailbox \fBresource $imap_stream  string $mailbox \fP The mailbox name, see \fBimap_open\fP for more information 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_thread ( $imap_stream,  $options = \fC\fBSE_FREE\fP\fP)"
+Returns a tree of threaded message \fBresource $imap_stream  int $options [optional]  array \fBimap_thread\fP returns an associative array containing a tree of messages threaded by REFERENCES, or \fBFALSE\fP on error\&. \fP 
+.PP
+Every message in the current mailbox will be represented by three entries in the resulting array: 
+.PP
+$thread['XX\&.num'] - current message number 
+.PP
+$thread['XX\&.next'] 
+.PP
+$thread['XX\&.branch'] 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.7 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_timeout ( $timeout_type,  $timeout = \fC\-1\fP)"
+Set or fetch imap timeout \fBint $timeout_type \fP One of the following: \fBIMAP_OPENTIMEOUT\fP, \fBIMAP_READTIMEOUT\fP, \fBIMAP_WRITETIMEOUT\fP, or \fBIMAP_CLOSETIMEOUT\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The timeout, in seconds\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|bool If the \fItimeout\fP parameter is set, this function returns \fBTRUE\fP on success and \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+If \fItimeout\fP is not provided or evaluates to -1, the current timeout value of \fItimeout_type\fP is returned as an integer\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.3\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_uid ( $imap_stream,  $msg_number)"
+This function returns the UID for the given message sequence number \fBresource $imap_stream  int $msg_number \fP The message number\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int The UID of the given message\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_undelete ( $imap_stream,  $msg_number,  $flags = \fC0\fP)"
+Unmark the message which is marked deleted \fBresource $imap_stream  int $msg_number \fP The message number 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_unsubscribe ( $imap_stream,  $mailbox)"
+Unsubscribe from a mailbox \fBresource $imap_stream  string $mailbox \fP The mailbox name, see \fBimap_open\fP for more information 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_utf7_decode ( $text)"
+Decodes a modified UTF-7 encoded string \fBstring $text \fP \fBA\fP modified UTF-7 encoding string, as defined in RFC 2060, section 5\&.1\&.3 (original UTF-7 was defined in RFC1642)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string a string that is encoded in ISO-8859-1 and consists of the same sequence of characters in \fItext\fP, or \fBFALSE\fP if \fItext\fP contains invalid modified UTF-7 sequence or \fItext\fP contains a character that is not part of ISO-8859-1 character set\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_utf7_encode ( $data)"
+Converts ISO-8859-1 string to modified UTF-7 text \fBstring $data \fP An ISO-8859-1 string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fIdata\fP encoded with the modified UTF-7 encoding as defined in RFC 2060, section 5\&.1\&.3 (original UTF-7 was defined in RFC1642)\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "imap_utf8 ( $mime_encoded_text)"
+Converts MIME-encoded text to UTF-8 \fBstring $mime_encoded_text \fP \fBA\fP MIME encoded string\&. MIME encoding method and the UTF-8 specification are described in RFC2047 and RFC2044 respectively\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string an UTF-8 encoded string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const CL_EXPUNGE 32768"
+silently expunge the mailbox before closing when calling \fBimap_close\fP \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const CP_MOVE 2"
+Delete the messages from the current mailbox after copying with \fBimap_mail_copy\fP \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const CP_UID 1"
+the sequence numbers contain UIDS \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const ENC7BIT 0"
+
+.SS "const ENC8BIT 1"
+
+.SS "const ENCBASE64 3"
+
+.SS "const ENCBINARY 2"
+
+.SS "const ENCOTHER 5"
+
+.SS "const ENCQUOTEDPRINTABLE 4"
+
+.SS "const FT_INTERNAL 8"
+The return string is in internal format, will not canonicalize to CRLF\&. \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const FT_NOT 4"
+
+.SS "const FT_PEEK 2"
+Do not set the \\Seen flag if not already set \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const FT_PREFETCHTEXT 32"
+
+.SS "const FT_UID 1"
+The parameter is a UID \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const IMAP_CLOSETIMEOUT 4"
+
+.SS "const IMAP_GC_ELT 1"
+Garbage collector, clear message cache elements\&. \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const IMAP_GC_ENV 2"
+Garbage collector, clear envelopes and bodies\&. \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const IMAP_GC_TEXTS 4"
+Garbage collector, clear texts\&. \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const IMAP_OPENTIMEOUT 1"
+
+.SS "const IMAP_READTIMEOUT 2"
+
+.SS "const IMAP_WRITETIMEOUT 3"
+
+.SS "const LATT_HASCHILDREN 32"
+
+.SS "const LATT_HASNOCHILDREN 64"
+
+.SS "const LATT_MARKED 4"
+This mailbox is marked\&. Only used by UW-IMAPD\&. \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const LATT_NOINFERIORS 1"
+This mailbox has no 'children' (there are no mailboxes below this one)\&. \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const LATT_NOSELECT 2"
+This is only a container, not a mailbox - you cannot open it\&. \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const LATT_REFERRAL 16"
+
+.SS "const LATT_UNMARKED 8"
+This mailbox is not marked\&. Only used by UW-IMAPD\&. \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const NIL 0"
+
+.SS "const OP_ANONYMOUS 4"
+Don't use or update a \&.newsrc for news (NNTP only) \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const OP_DEBUG 1"
+
+.SS "const OP_EXPUNGE 128"
+
+.SS "const OP_HALFOPEN 64"
+For IMAP and NNTP names, open a connection but don't open a mailbox\&. \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const OP_PROTOTYPE 32"
+
+.SS "const OP_READONLY 2"
+Open mailbox read-only \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const OP_SECURE 256"
+
+.SS "const OP_SHORTCACHE 8"
+
+.SS "const OP_SILENT 16"
+
+.SS "const SA_ALL 31"
+
+.SS "const SA_MESSAGES 1"
+
+.SS "const SA_RECENT 2"
+
+.SS "const SA_UIDNEXT 8"
+
+.SS "const SA_UIDVALIDITY 16"
+
+.SS "const SA_UNSEEN 4"
+
+.SS "const SE_FREE 2"
+
+.SS "const SE_NOPREFETCH 4"
+Don't prefetch searched messages \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const SE_UID 1"
+Return UIDs instead of sequence numbers \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const SO_FREE 8"
+
+.SS "const SO_NOSERVER 16"
+
+.SS "const SORTARRIVAL 1"
+Sort criteria for \fBimap_sort\fP: arrival date \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const SORTCC 5"
+Sort criteria for \fBimap_sort\fP: mailbox in first cc address \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const SORTDATE 0"
+Sort criteria for \fBimap_sort\fP: message Date \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const SORTFROM 2"
+Sort criteria for \fBimap_sort\fP: mailbox in first From address \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const SORTSIZE 6"
+Sort criteria for \fBimap_sort\fP: size of message in octets \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const SORTSUBJECT 3"
+Sort criteria for \fBimap_sort\fP: message subject \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const SORTTO 4"
+Sort criteria for \fBimap_sort\fP: mailbox in first To address \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const ST_SET 4"
+
+.SS "const ST_SILENT 2"
+
+.SS "const ST_UID 1"
+The sequence argument contains UIDs instead of sequence numbers \fBhttps://php\&.net/manual/en/imap\&.constants\&.php\fP
+.SS "const TYPEAPPLICATION 3"
+
+.SS "const TYPEAUDIO 4"
+
+.SS "const TYPEIMAGE 5"
+
+.SS "const TYPEMESSAGE 2"
+
+.SS "const TYPEMODEL 7"
+
+.SS "const TYPEMULTIPART 1"
+
+.SS "const TYPEOTHER 8"
+
+.SS "const TYPETEXT 0"
+
+.SS "const TYPEVIDEO 6"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

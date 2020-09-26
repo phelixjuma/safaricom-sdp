@@ -1,0 +1,160 @@
+\hypertarget{_zend_cache_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/\+Zend\+Cache/\+Zend\+Cache.php File Reference}
+\label{_zend_cache_8php}\index{vendor/jetbrains/phpstorm-\/stubs/ZendCache/ZendCache.php@{vendor/jetbrains/phpstorm-\/stubs/ZendCache/ZendCache.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_zend_cache_8php_aa1612bb5f5f67bdfee23de4676877249}{zend\+\_\+shm\+\_\+cache\+\_\+store}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}, \$value, \$ttl=0)
+\item 
+\mbox{\hyperlink{_zend_cache_8php_a09129fbfcf600a2c4db761eb509557d6}{zend\+\_\+shm\+\_\+cache\+\_\+fetch}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{_zend_cache_8php_a318d2227f93f00dc87796489b002a252}{zend\+\_\+shm\+\_\+cache\+\_\+delete}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{_zend_cache_8php_a429b78bbadbafa9521b503f6c3d694bd}{zend\+\_\+shm\+\_\+cache\+\_\+clear}} (\$namespace=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_zend_cache_8php_aee6bbbb0cd733b6448a4395697c06396}{zend\+\_\+disk\+\_\+cache\+\_\+store}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}}, \$value, \$ttl=0)
+\item 
+\mbox{\hyperlink{_zend_cache_8php_ad9b3b216e33cd47afa48f0ace14ead6c}{zend\+\_\+disk\+\_\+cache\+\_\+fetch}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{_zend_cache_8php_ab705795d487319c3c45443a2e659c2e1}{zend\+\_\+disk\+\_\+cache\+\_\+delete}} (\$\mbox{\hyperlink{standard__8_8php_af7fce235ef822d2f9df754383b89cd63}{key}})
+\item 
+\mbox{\hyperlink{_zend_cache_8php_af830c6be441e7154e92d88412f2ab515}{zend\+\_\+disk\+\_\+cache\+\_\+clear}} (\$namespace=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_zend_cache_8php_af830c6be441e7154e92d88412f2ab515}\label{_zend_cache_8php_af830c6be441e7154e92d88412f2ab515}} 
+\index{ZendCache.php@{ZendCache.php}!zend\_disk\_cache\_clear@{zend\_disk\_cache\_clear}}
+\index{zend\_disk\_cache\_clear@{zend\_disk\_cache\_clear}!ZendCache.php@{ZendCache.php}}
+\doxysubsubsection{\texorpdfstring{zend\_disk\_cache\_clear()}{zend\_disk\_cache\_clear()}}
+{\footnotesize\ttfamily zend\+\_\+disk\+\_\+cache\+\_\+clear (\begin{DoxyParamCaption}\item[{}]{\$namespace = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Clear the entire Disk Memory cache or just the provided namespace.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$namespace} & string \mbox{[}optional\mbox{]} Namespace to clear. If blank or is not passed, it will clear entire cache.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE on success, F\+A\+L\+SE otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_zend_cache_8php_ab705795d487319c3c45443a2e659c2e1}\label{_zend_cache_8php_ab705795d487319c3c45443a2e659c2e1}} 
+\index{ZendCache.php@{ZendCache.php}!zend\_disk\_cache\_delete@{zend\_disk\_cache\_delete}}
+\index{zend\_disk\_cache\_delete@{zend\_disk\_cache\_delete}!ZendCache.php@{ZendCache.php}}
+\doxysubsubsection{\texorpdfstring{zend\_disk\_cache\_delete()}{zend\_disk\_cache\_delete()}}
+{\footnotesize\ttfamily zend\+\_\+disk\+\_\+cache\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Delete a key from the cache
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string the data\textquotesingle{}s key. Possibly prefixed with namespace\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null$\vert$mixed when no data matching the key is found, else it returns the stored data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_zend_cache_8php_ad9b3b216e33cd47afa48f0ace14ead6c}\label{_zend_cache_8php_ad9b3b216e33cd47afa48f0ace14ead6c}} 
+\index{ZendCache.php@{ZendCache.php}!zend\_disk\_cache\_fetch@{zend\_disk\_cache\_fetch}}
+\index{zend\_disk\_cache\_fetch@{zend\_disk\_cache\_fetch}!ZendCache.php@{ZendCache.php}}
+\doxysubsubsection{\texorpdfstring{zend\_disk\_cache\_fetch()}{zend\_disk\_cache\_fetch()}}
+{\footnotesize\ttfamily zend\+\_\+disk\+\_\+cache\+\_\+fetch (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Retrieves data stored in the Shared Memory Cache
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string N\+U\+LL when no data matching the key is found, else it returns the stored data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null$\vert$mixed N\+U\+LL when no data matching the key is found, else it returns the stored data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_zend_cache_8php_aee6bbbb0cd733b6448a4395697c06396}\label{_zend_cache_8php_aee6bbbb0cd733b6448a4395697c06396}} 
+\index{ZendCache.php@{ZendCache.php}!zend\_disk\_cache\_store@{zend\_disk\_cache\_store}}
+\index{zend\_disk\_cache\_store@{zend\_disk\_cache\_store}!ZendCache.php@{ZendCache.php}}
+\doxysubsubsection{\texorpdfstring{zend\_disk\_cache\_store()}{zend\_disk\_cache\_store()}}
+{\footnotesize\ttfamily zend\+\_\+disk\+\_\+cache\+\_\+store (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$value,  }\item[{}]{\$ttl = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Stores a serializable variable into Disk Cache
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string the data\textquotesingle{}s key. Possibly prefixed with namespace \\
+\hline
+{\em \$value} & mixed can be any P\+HP object that can be serialized \\
+\hline
+{\em \$ttl} & \mbox{[}optional\mbox{]} int time to live in seconds. Zend\+Cache keeps the objects in the cache as long as the T\+TL is no expired, once expired it will be removed from the cache\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool F\+A\+L\+SE when stored failed, T\+R\+UE otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_zend_cache_8php_a429b78bbadbafa9521b503f6c3d694bd}\label{_zend_cache_8php_a429b78bbadbafa9521b503f6c3d694bd}} 
+\index{ZendCache.php@{ZendCache.php}!zend\_shm\_cache\_clear@{zend\_shm\_cache\_clear}}
+\index{zend\_shm\_cache\_clear@{zend\_shm\_cache\_clear}!ZendCache.php@{ZendCache.php}}
+\doxysubsubsection{\texorpdfstring{zend\_shm\_cache\_clear()}{zend\_shm\_cache\_clear()}}
+{\footnotesize\ttfamily zend\+\_\+shm\+\_\+cache\+\_\+clear (\begin{DoxyParamCaption}\item[{}]{\$namespace = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Clear the entire Shared Memory cache or just the provided namespace.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$namespace} & string \mbox{[}optional\mbox{]} Namespace to clear. If blank or is not passed, it will clear entire cache.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE on success, F\+A\+L\+SE otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_zend_cache_8php_a318d2227f93f00dc87796489b002a252}\label{_zend_cache_8php_a318d2227f93f00dc87796489b002a252}} 
+\index{ZendCache.php@{ZendCache.php}!zend\_shm\_cache\_delete@{zend\_shm\_cache\_delete}}
+\index{zend\_shm\_cache\_delete@{zend\_shm\_cache\_delete}!ZendCache.php@{ZendCache.php}}
+\doxysubsubsection{\texorpdfstring{zend\_shm\_cache\_delete()}{zend\_shm\_cache\_delete()}}
+{\footnotesize\ttfamily zend\+\_\+shm\+\_\+cache\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Delete a key from the Shared Memory cache
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string the data\textquotesingle{}s key. Possibly prefixed with namespace\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null$\vert$mixed when no data matching the key is found, else it returns the stored data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_zend_cache_8php_a09129fbfcf600a2c4db761eb509557d6}\label{_zend_cache_8php_a09129fbfcf600a2c4db761eb509557d6}} 
+\index{ZendCache.php@{ZendCache.php}!zend\_shm\_cache\_fetch@{zend\_shm\_cache\_fetch}}
+\index{zend\_shm\_cache\_fetch@{zend\_shm\_cache\_fetch}!ZendCache.php@{ZendCache.php}}
+\doxysubsubsection{\texorpdfstring{zend\_shm\_cache\_fetch()}{zend\_shm\_cache\_fetch()}}
+{\footnotesize\ttfamily zend\+\_\+shm\+\_\+cache\+\_\+fetch (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Retrieves data stored in the Shared Memory Cache. If the key is not found, returns null.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string the data\textquotesingle{}s key. Possibly prefixed with namespace\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null$\vert$mixed N\+U\+LL when no data matching the key is found, else it returns the stored data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_zend_cache_8php_aa1612bb5f5f67bdfee23de4676877249}\label{_zend_cache_8php_aa1612bb5f5f67bdfee23de4676877249}} 
+\index{ZendCache.php@{ZendCache.php}!zend\_shm\_cache\_store@{zend\_shm\_cache\_store}}
+\index{zend\_shm\_cache\_store@{zend\_shm\_cache\_store}!ZendCache.php@{ZendCache.php}}
+\doxysubsubsection{\texorpdfstring{zend\_shm\_cache\_store()}{zend\_shm\_cache\_store()}}
+{\footnotesize\ttfamily zend\+\_\+shm\+\_\+cache\+\_\+store (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$value,  }\item[{}]{\$ttl = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Stores a serializable variable into Shared Memory Cache
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & string the data\textquotesingle{}s key. Possibly prefixed with namespace \\
+\hline
+{\em \$value} & mixed can be any P\+HP object that can be serialized. \\
+\hline
+{\em \$ttl} & int \mbox{[}optional\mbox{]} time to live in seconds. Zend\+Cache keeps the objects in the cache as long as the T\+TL is no expired, once expired it will be removed from the cache\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool F\+A\+L\+SE when stored failed, T\+R\+UE otherwise 
+\end{DoxyReturn}

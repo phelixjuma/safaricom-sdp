@@ -1,0 +1,508 @@
+.TH "vendor/jetbrains/phpstorm-stubs/com_dotnet/com_dotnet.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/com_dotnet/com_dotnet.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBCOM\fP"
+.br
+.ti -1c
+.RI "class \fBDOTNET\fP"
+.br
+.ti -1c
+.RI "class \fBVARIANT\fP"
+.br
+.ti -1c
+.RI "class \fBcom_exception\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcom_create_guid\fP ()"
+.br
+.ti -1c
+.RI "\fBcom_event_sink\fP ( $comobject, $sinkobject, $sinkinterface)"
+.br
+.ti -1c
+.RI "\fBcom_get_active_object\fP ( $progid, $code_page)"
+.br
+.ti -1c
+.RI "\fBcom_load_typelib\fP ( $typelib_name, $case_insensitive=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBcom_message_pump\fP ( $timeoutms=0)"
+.br
+.ti -1c
+.RI "\fBcom_print_typeinfo\fP ( $comobject, $dispinterface, $wantsink=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBvariant_abs\fP ( $comobject, $dispinterface, $wantsink=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBvariant_add\fP ( $left, $right)"
+.br
+.ti -1c
+.RI "\fBvariant_and\fP ( $left, $right)"
+.br
+.ti -1c
+.RI "\fBvariant_cast\fP ( $variant, $type)"
+.br
+.ti -1c
+.RI "\fBvariant_cat\fP ( $left, $right)"
+.br
+.ti -1c
+.RI "\fBvariant_cmp\fP ( $left, $right, $lcid, $flags)"
+.br
+.ti -1c
+.RI "\fBvariant_date_from_timestamp\fP ( $timestamp)"
+.br
+.ti -1c
+.RI "\fBvariant_date_to_timestamp\fP ( $variant)"
+.br
+.ti -1c
+.RI "\fBvariant_div\fP ( $left, $right)"
+.br
+.ti -1c
+.RI "\fBvariant_eqv\fP ( $left, $right)"
+.br
+.ti -1c
+.RI "\fBvariant_fix\fP ( $variant)"
+.br
+.ti -1c
+.RI "\fBvariant_get_type\fP ( $variant)"
+.br
+.ti -1c
+.RI "\fBvariant_idiv\fP ( $left, $right)"
+.br
+.ti -1c
+.RI "\fBvariant_imp\fP ( $left, $right)"
+.br
+.ti -1c
+.RI "\fBvariant_int\fP ( $variant)"
+.br
+.ti -1c
+.RI "\fBvariant_mod\fP ( $left, $right)"
+.br
+.ti -1c
+.RI "\fBvariant_mul\fP ( $left, $right)"
+.br
+.ti -1c
+.RI "\fBvariant_neg\fP ( $variant)"
+.br
+.ti -1c
+.RI "\fBvariant_not\fP ( $variant)"
+.br
+.ti -1c
+.RI "\fBvariant_or\fP ( $left, $right)"
+.br
+.ti -1c
+.RI "\fBvariant_pow\fP ( $left, $right)"
+.br
+.ti -1c
+.RI "\fBvariant_round\fP ( $variant, $decimals)"
+.br
+.ti -1c
+.RI "\fBvariant_set_type\fP ( $variant, $type)"
+.br
+.ti -1c
+.RI "\fBvariant_set\fP ( $variant, $value)"
+.br
+.ti -1c
+.RI "\fBvariant_sub\fP ( $left, $right)"
+.br
+.ti -1c
+.RI "\fBvariant_xor\fP ( $left, $right)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBCLSCTX_INPROC_SERVER\fP 1"
+.br
+.ti -1c
+.RI "const \fBCLSCTX_INPROC_HANDLER\fP 2"
+.br
+.ti -1c
+.RI "const \fBCLSCTX_LOCAL_SERVER\fP 4"
+.br
+.ti -1c
+.RI "const \fBCLSCTX_REMOTE_SERVER\fP 16"
+.br
+.ti -1c
+.RI "const \fBCLSCTX_SERVER\fP 21"
+.br
+.ti -1c
+.RI "const \fBCLSCTX_ALL\fP 23"
+.br
+.ti -1c
+.RI "const \fBVT_NULL\fP 1"
+.br
+.ti -1c
+.RI "const \fBVT_EMPTY\fP 0"
+.br
+.ti -1c
+.RI "const \fBVT_UI1\fP 17"
+.br
+.ti -1c
+.RI "const \fBVT_I2\fP 2"
+.br
+.ti -1c
+.RI "const \fBVT_I4\fP 3"
+.br
+.ti -1c
+.RI "const \fBVT_R4\fP 4"
+.br
+.ti -1c
+.RI "const \fBVT_R8\fP 5"
+.br
+.ti -1c
+.RI "const \fBVT_BOOL\fP 11"
+.br
+.ti -1c
+.RI "const \fBVT_ERROR\fP 10"
+.br
+.ti -1c
+.RI "const \fBVT_CY\fP 6"
+.br
+.ti -1c
+.RI "const \fBVT_DATE\fP 7"
+.br
+.ti -1c
+.RI "const \fBVT_BSTR\fP 8"
+.br
+.ti -1c
+.RI "const \fBVT_DECIMAL\fP 14"
+.br
+.ti -1c
+.RI "const \fBVT_UNKNOWN\fP 13"
+.br
+.ti -1c
+.RI "const \fBVT_DISPATCH\fP 9"
+.br
+.ti -1c
+.RI "const \fBVT_VARIANT\fP 12"
+.br
+.ti -1c
+.RI "const \fBVT_I1\fP 16"
+.br
+.ti -1c
+.RI "const \fBVT_UI2\fP 18"
+.br
+.ti -1c
+.RI "const \fBVT_UI4\fP 19"
+.br
+.ti -1c
+.RI "const \fBVT_INT\fP 22"
+.br
+.ti -1c
+.RI "const \fBVT_UINT\fP 23"
+.br
+.ti -1c
+.RI "const \fBVT_ARRAY\fP 8192"
+.br
+.ti -1c
+.RI "const \fBVT_BYREF\fP 16384"
+.br
+.ti -1c
+.RI "const \fBCP_ACP\fP 0"
+.br
+.ti -1c
+.RI "const \fBCP_MACCP\fP 2"
+.br
+.ti -1c
+.RI "const \fBCP_OEMCP\fP 1"
+.br
+.ti -1c
+.RI "const \fBCP_UTF7\fP 65000"
+.br
+.ti -1c
+.RI "const \fBCP_UTF8\fP 65001"
+.br
+.ti -1c
+.RI "const \fBCP_SYMBOL\fP 42"
+.br
+.ti -1c
+.RI "const \fBCP_THREAD_ACP\fP 3"
+.br
+.ti -1c
+.RI "const \fBVARCMP_LT\fP 0"
+.br
+.ti -1c
+.RI "const \fBVARCMP_EQ\fP 1"
+.br
+.ti -1c
+.RI "const \fBVARCMP_GT\fP 2"
+.br
+.ti -1c
+.RI "const \fBVARCMP_NULL\fP 3"
+.br
+.ti -1c
+.RI "const \fBNORM_IGNORECASE\fP 1"
+.br
+.ti -1c
+.RI "const \fBNORM_IGNORENONSPACE\fP 2"
+.br
+.ti -1c
+.RI "const \fBNORM_IGNORESYMBOLS\fP 4"
+.br
+.ti -1c
+.RI "const \fBNORM_IGNOREWIDTH\fP 131072"
+.br
+.ti -1c
+.RI "const \fBNORM_IGNOREKANATYPE\fP 65536"
+.br
+.ti -1c
+.RI "const \fBNORM_IGNOREKASHIDA\fP 262144"
+.br
+.ti -1c
+.RI "const \fBDISP_E_DIVBYZERO\fP \-2147352558"
+.br
+.ti -1c
+.RI "const \fBDISP_E_OVERFLOW\fP \-2147352566"
+.br
+.ti -1c
+.RI "const \fBMK_E_UNAVAILABLE\fP \-2147221021"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "com_create_guid ()"
+(PHP 5, PHP 7)
+.br
+ Generate a globally unique identifier (GUID) \fBstring \fP
+.SS "com_event_sink ( $comobject,  $sinkobject,  $sinkinterface)"
+(PHP 4 >= 4\&.2\&.0, PHP 5, PHP 7)
+.br
+ Connect events from a \fBCOM\fP object to a PHP object \fB$comobject  object $sinkobject  string $sinkinterface [optional]  bool \fP
+.SS "com_get_active_object ( $progid,  $code_page)"
+(PHP 5, PHP 7)
+.br
+ Returns a handle to an already running instance of a \fBCOM\fP object \fBstring $progid  int $code_page [optional]   \fP
+.SS "com_load_typelib ( $typelib_name,  $case_insensitive = \fC\fBtrue\fP\fP)"
+(PHP 4 >= 4\&.1\&.0, PHP 5, PHP 7)
+.br
+ Loads a Typelib \fBstring $typelib_name  bool $case_insensitive [optional]  bool \fP
+.SS "com_message_pump ( $timeoutms = \fC0\fP)"
+(PHP 4 >= 4\&.2\&.0, PHP 5, PHP 7)
+.br
+ Process \fBCOM\fP messages, sleeping for up to timeoutms milliseconds \fBint $timeoutms [optional]  bool \fP
+.SS "com_print_typeinfo ( $comobject,  $dispinterface,  $wantsink = \fC\fBfalse\fP\fP)"
+(PHP 4 >= 4\&.2\&.0, PHP 5, PHP 7)
+.br
+ Print out a PHP class definition for a dispatchable interface \fBobject $comobject  string $dispinterface [optional]  bool $wantsink [optional]  bool \fP
+.SS "variant_abs ( $comobject,  $dispinterface,  $wantsink = \fC\fBfalse\fP\fP)"
+(PHP 5, PHP 7)
+.br
+ Returns the absolute value of a variant \fBmixed $val  mixed \fP
+.SS "variant_add ( $left,  $right)"
+(PHP 5, PHP 7)
+.br
+ 'Adds' two variant values together and returns the result \fBmixed $left  mixed $right  mixed \fP
+.SS "variant_and ( $left,  $right)"
+(PHP 5, PHP 7)
+.br
+ Performs a bitwise AND operation between two variants \fBmixed $left  mixed $right  mixed \fP
+.SS "variant_cast ( $variant,  $type)"
+(PHP 5, PHP 7)
+.br
+ Convert a variant into a new variant object of another type \fB$variant  int $type   \fP
+.SS "variant_cat ( $left,  $right)"
+(PHP 5, PHP 7)
+.br
+ Concatenates two variant values together and returns the result \fBmixed $left  mixed $right  mixed \fP
+.SS "variant_cmp ( $left,  $right,  $lcid,  $flags)"
+(PHP 5, PHP 7)
+.br
+ Compares two variants \fBmixed $left  mixed $right  int $lcid [optional]  int $flags [optional]  int \fP
+.SS "variant_date_from_timestamp ( $timestamp)"
+(PHP 5, PHP 7)
+.br
+ Returns a variant date representation of a Unix timestamp \fBint $timestamp   \fP
+.SS "variant_date_to_timestamp ( $variant)"
+(PHP 5, PHP 7)
+.br
+ Converts a variant date/time value to Unix timestamp \fB$variant  int \fP
+.SS "variant_div ( $left,  $right)"
+(PHP 5, PHP 7)
+.br
+ Returns the result from dividing two variants \fBmixed $left  mixed $right  mixed \fP
+.SS "variant_eqv ( $left,  $right)"
+(PHP 5, PHP 7)
+.br
+ Performs a bitwise equivalence on two variants \fBmixed $left  mixed $right  mixed \fP
+.SS "variant_fix ( $variant)"
+(PHP 5, PHP 7)
+.br
+ Returns the integer portion of a variant \fBmixed $variant  mixed \fP
+.SS "variant_get_type ( $variant)"
+(PHP 5, PHP 7)
+.br
+ Returns the type of a variant object \fBmixed $variant  int \fP
+.SS "variant_idiv ( $left,  $right)"
+(PHP 5, PHP 7)
+.br
+ Converts variants to integers and then returns the result from dividing them \fBmixed $left  mixed $right  mixed \fP
+.SS "variant_imp ( $left,  $right)"
+(PHP 5, PHP 7)
+.br
+ Performs a bitwise implication on two variants \fBmixed $left  mixed $right  mixed \fP
+.SS "variant_int ( $variant)"
+(PHP 5, PHP 7)
+.br
+ Returns the integer portion of a variant \fBmixed $variant  mixed \fP
+.SS "variant_mod ( $left,  $right)"
+(PHP 5, PHP 7)
+.br
+ Divides two variants and returns only the remainder \fBmixed $left  mixed $right  mixed \fP
+.SS "variant_mul ( $left,  $right)"
+(PHP 5, PHP 7)
+.br
+ Multiplies the values of the two variants \fBmixed $left  mixed $right  mixed \fP
+.SS "variant_neg ( $variant)"
+(PHP 5, PHP 7)
+.br
+ Performs logical negation on a variant \fBmixed $variant  mixed \fP
+.SS "variant_not ( $variant)"
+(PHP 5, PHP 7)
+.br
+ Performs bitwise not negation on a variant \fBmixed $variant  mixed \fP
+.SS "variant_or ( $left,  $right)"
+(PHP 5, PHP 7)
+.br
+ Performs a logical disjunction on two variants \fBmixed $left  mixed $right  mixed \fP
+.SS "variant_pow ( $left,  $right)"
+(PHP 5, PHP 7)
+.br
+ Returns the result of performing the power function with two variants \fBmixed $left  mixed $right  mixed \fP
+.SS "variant_round ( $variant,  $decimals)"
+(PHP 5, PHP 7)
+.br
+ Rounds a variant to the specified number of decimal places \fBmixed $variant  int $decimals  mixed \fP
+.SS "variant_set ( $variant,  $value)"
+(PHP 5, PHP 7)
+.br
+ Assigns a new value for a variant object \fBmixed $variant  mixed $value  void \fP
+.SS "variant_set_type ( $variant,  $type)"
+(PHP 5, PHP 7)
+.br
+ Convert a variant into another type 'in-place' \fBmixed $variant  int $type  void \fP
+.SS "variant_sub ( $left,  $right)"
+(PHP 5, PHP 7)
+.br
+ Subtracts the value of the right variant from the left variant value \fBmixed $left  mixed $right  mixed \fP
+.SS "variant_xor ( $left,  $right)"
+(PHP 5, PHP 7)
+.br
+ Performs a logical exclusion on two variants \fBmixed $left  mixed $right  mixed \fP
+.SH "Variable Documentation"
+.PP 
+.SS "const CLSCTX_ALL 23"
+
+.SS "const CLSCTX_INPROC_HANDLER 2"
+
+.SS "const CLSCTX_INPROC_SERVER 1"
+
+.SS "const CLSCTX_LOCAL_SERVER 4"
+
+.SS "const CLSCTX_REMOTE_SERVER 16"
+
+.SS "const CLSCTX_SERVER 21"
+
+.SS "const CP_ACP 0"
+
+.SS "const CP_MACCP 2"
+
+.SS "const CP_OEMCP 1"
+
+.SS "const CP_SYMBOL 42"
+
+.SS "const CP_THREAD_ACP 3"
+
+.SS "const CP_UTF7 65000"
+
+.SS "const CP_UTF8 65001"
+
+.SS "const DISP_E_DIVBYZERO \-2147352558"
+
+.SS "const DISP_E_OVERFLOW \-2147352566"
+
+.SS "const MK_E_UNAVAILABLE \-2147221021"
+
+.SS "const NORM_IGNORECASE 1"
+
+.SS "const NORM_IGNOREKANATYPE 65536"
+
+.SS "const NORM_IGNOREKASHIDA 262144"
+
+.SS "const NORM_IGNORENONSPACE 2"
+
+.SS "const NORM_IGNORESYMBOLS 4"
+
+.SS "const NORM_IGNOREWIDTH 131072"
+
+.SS "const VARCMP_EQ 1"
+
+.SS "const VARCMP_GT 2"
+
+.SS "const VARCMP_LT 0"
+
+.SS "const VARCMP_NULL 3"
+
+.SS "const VT_ARRAY 8192"
+
+.SS "const VT_BOOL 11"
+
+.SS "const VT_BSTR 8"
+
+.SS "const VT_BYREF 16384"
+
+.SS "const VT_CY 6"
+
+.SS "const VT_DATE 7"
+
+.SS "const VT_DECIMAL 14"
+
+.SS "const VT_DISPATCH 9"
+
+.SS "const VT_EMPTY 0"
+
+.SS "const VT_ERROR 10"
+
+.SS "const VT_I1 16"
+
+.SS "const VT_I2 2"
+
+.SS "const VT_I4 3"
+
+.SS "const VT_INT 22"
+
+.SS "const VT_NULL 1"
+
+.SS "const VT_R4 4"
+
+.SS "const VT_R8 5"
+
+.SS "const VT_UI1 17"
+
+.SS "const VT_UI2 18"
+
+.SS "const VT_UI4 19"
+
+.SS "const VT_UINT 23"
+
+.SS "const VT_UNKNOWN 13"
+
+.SS "const VT_VARIANT 12"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

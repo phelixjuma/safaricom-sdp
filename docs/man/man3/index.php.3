@@ -1,0 +1,43 @@
+.TH "vendor/roave/better-reflection/demo/monkey-patching/index.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/roave/better-reflection/demo/monkey-patching/index.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$loader\fP = new \fBClassLoader\fP(FileCacheLoader::defaultFileCacheLoader(\fB__DIR__\fP))"
+.br
+.ti -1c
+.RI "\fB$classInfo\fP"
+.br
+.ti -1c
+.RI "$classInfo \fBgetMethod\fP ( '\fBfoo\fP') \-> setBodyFromClosure(\fBfunction\fP()"
+.br
+.ti -1c
+.RI "\fB$c\fP = new \fBMyClass\fP()"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$\fBc\fP = new \fBMyClass\fP()"
+
+.SS "$classInfo"
+\fBInitial value:\fP
+.PP
+.nf
+= (new ClassReflector(
+    new SingleFileSourceLocator(__DIR__ \&. '/MyClass\&.php', (new BetterReflection())->astLocator())
+))->reflect('MyClass')
+.fi
+.SS "$loader = new \fBClassLoader\fP(FileCacheLoader::defaultFileCacheLoader(\fB__DIR__\fP))"
+
+.SS "$classInfo getMethod('\fBfoo\fP') \-> setBodyFromClosure(\fBfunction\fP()"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

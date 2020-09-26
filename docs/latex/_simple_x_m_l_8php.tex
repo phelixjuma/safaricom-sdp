@@ -1,0 +1,128 @@
+\hypertarget{_simple_x_m_l_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/\+Simple\+X\+M\+L/\+Simple\+X\+ML.php File Reference}
+\label{_simple_x_m_l_8php}\index{vendor/jetbrains/phpstorm-\/stubs/SimpleXML/SimpleXML.php@{vendor/jetbrains/phpstorm-\/stubs/SimpleXML/SimpleXML.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_simple_x_m_l_element}{Simple\+X\+M\+L\+Element}}
+\item 
+class \mbox{\hyperlink{class_simple_x_m_l_iterator}{Simple\+X\+M\+L\+Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_simple_x_m_l_8php_a8ff2edffe814aeac62c8003af2c47655}{simplexml\+\_\+load\+\_\+file}} (\$filename, \$class\+\_\+name=\char`\"{}Simple\+X\+M\+L\+Element\char`\"{}, \$options=0, \$ns=\char`\"{}\char`\"{}, \$is\+\_\+prefix=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{_simple_x_m_l_8php_a29a60ef5c4e8f8929c4d054a8395c5c0}{simplexml\+\_\+load\+\_\+string}} (\$data, \$class\+\_\+name=\char`\"{}Simple\+X\+M\+L\+Element\char`\"{}, \$options=0, \$ns=\char`\"{}\char`\"{}, \$is\+\_\+prefix=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{_simple_x_m_l_8php_a14d9175f75688c3af118f3a65369c317}{simplexml\+\_\+import\+\_\+dom}} (\mbox{\hyperlink{class_d_o_m_node}{D\+O\+M\+Node}} \$node, \$class\+\_\+name=\char`\"{}Simple\+X\+M\+L\+Element\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_simple_x_m_l_8php_a14d9175f75688c3af118f3a65369c317}\label{_simple_x_m_l_8php_a14d9175f75688c3af118f3a65369c317}} 
+\index{SimpleXML.php@{SimpleXML.php}!simplexml\_import\_dom@{simplexml\_import\_dom}}
+\index{simplexml\_import\_dom@{simplexml\_import\_dom}!SimpleXML.php@{SimpleXML.php}}
+\doxysubsubsection{\texorpdfstring{simplexml\_import\_dom()}{simplexml\_import\_dom()}}
+{\footnotesize\ttfamily simplexml\+\_\+import\+\_\+dom (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_d_o_m_node}{D\+O\+M\+Node}}}]{\$node,  }\item[{}]{\$class\+\_\+name = {\ttfamily \char`\"{}SimpleXMLElement\char`\"{}} }\end{DoxyParamCaption})}
+
+Get a \mbox{\hyperlink{class_simple_x_m_l_element}{Simple\+X\+M\+L\+Element}} object from a D\+OM node. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{D\+O\+M\+Node \$node }} \mbox{\hyperlink{class_a}{A}} D\+OM Element node 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class\+\_\+name} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+You may use this optional parameter so that {\bfseries{simplexml\+\_\+import\+\_\+dom}} will return an object of the specified class. That class should extend the \mbox{\hyperlink{class_simple_x_m_l_element}{Simple\+X\+M\+L\+Element}} class. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_simple_x_m_l_element}{Simple\+X\+M\+L\+Element}} a \mbox{\hyperlink{class_simple_x_m_l_element}{Simple\+X\+M\+L\+Element}} or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{_simple_x_m_l_8php_a8ff2edffe814aeac62c8003af2c47655}\label{_simple_x_m_l_8php_a8ff2edffe814aeac62c8003af2c47655}} 
+\index{SimpleXML.php@{SimpleXML.php}!simplexml\_load\_file@{simplexml\_load\_file}}
+\index{simplexml\_load\_file@{simplexml\_load\_file}!SimpleXML.php@{SimpleXML.php}}
+\doxysubsubsection{\texorpdfstring{simplexml\_load\_file()}{simplexml\_load\_file()}}
+{\footnotesize\ttfamily simplexml\+\_\+load\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$class\+\_\+name = {\ttfamily \char`\"{}SimpleXMLElement\char`\"{}},  }\item[{}]{\$options = {\ttfamily 0},  }\item[{}]{\$ns = {\ttfamily \char`\"{}\char`\"{}},  }\item[{}]{\$is\+\_\+prefix = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+Interprets an X\+ML file into an object \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} Path to the X\+ML file 
+
+Libxml 2 unescapes the U\+RI, so if you want to pass e.\+g. b\&\#38;\#38;c as the U\+RI parameter a, you have to call simplexml\+\_\+load\+\_\+file(rawurlencode(\textquotesingle{}\href{https://example.com/?a='}{\texttt{ https\+://example.\+com/?a=\textquotesingle{}}} . urlencode(\textquotesingle{}b\&\#38;\#38;c\textquotesingle{}))). Since P\+HP 5.\+1.\+0 you don\textquotesingle{}t need to do this because P\+HP will do it for you. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class\+\_\+name} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+You may use this optional parameter so that {\bfseries{simplexml\+\_\+load\+\_\+file}} will return an object of the specified class. That class should extend the \mbox{\hyperlink{class_simple_x_m_l_element}{Simple\+X\+M\+L\+Element}} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Since P\+HP 5.\+1.\+0 and Libxml 2.\+6.\+0, you may also use the {\itshape options} parameter to specify additional Libxml parameters. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ns} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Namespace prefix or U\+RI. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$is\+\_\+prefix} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+{\bfseries{T\+R\+UE}} if {\itshape ns} is a prefix, {\bfseries{F\+A\+L\+SE}} if it\textquotesingle{}s a U\+RI; defaults to {\bfseries{F\+A\+L\+SE}}. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_simple_x_m_l_element}{Simple\+X\+M\+L\+Element}} an object of class \mbox{\hyperlink{class_simple_x_m_l_element}{Simple\+X\+M\+L\+Element}} with properties containing the data held within the X\+ML document, or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{_simple_x_m_l_8php_a29a60ef5c4e8f8929c4d054a8395c5c0}\label{_simple_x_m_l_8php_a29a60ef5c4e8f8929c4d054a8395c5c0}} 
+\index{SimpleXML.php@{SimpleXML.php}!simplexml\_load\_string@{simplexml\_load\_string}}
+\index{simplexml\_load\_string@{simplexml\_load\_string}!SimpleXML.php@{SimpleXML.php}}
+\doxysubsubsection{\texorpdfstring{simplexml\_load\_string()}{simplexml\_load\_string()}}
+{\footnotesize\ttfamily simplexml\+\_\+load\+\_\+string (\begin{DoxyParamCaption}\item[{}]{\$data,  }\item[{}]{\$class\+\_\+name = {\ttfamily \char`\"{}SimpleXMLElement\char`\"{}},  }\item[{}]{\$options = {\ttfamily 0},  }\item[{}]{\$ns = {\ttfamily \char`\"{}\char`\"{}},  }\item[{}]{\$is\+\_\+prefix = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+Interprets a string of X\+ML into an object \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data }} \mbox{\hyperlink{class_a}{A}} well-\/formed X\+ML string 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class\+\_\+name} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+You may use this optional parameter so that {\bfseries{simplexml\+\_\+load\+\_\+string}} will return an object of the specified class. That class should extend the \mbox{\hyperlink{class_simple_x_m_l_element}{Simple\+X\+M\+L\+Element}} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Since P\+HP 5.\+1.\+0 and Libxml 2.\+6.\+0, you may also use the {\itshape options} parameter to specify additional Libxml parameters. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ns} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Namespace prefix or U\+RI. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$is\+\_\+prefix} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+{\bfseries{T\+R\+UE}} if {\itshape ns} is a prefix, {\bfseries{F\+A\+L\+SE}} if it\textquotesingle{}s a U\+RI; defaults to {\bfseries{F\+A\+L\+SE}}. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_simple_x_m_l_element}{Simple\+X\+M\+L\+Element}} an object of class \mbox{\hyperlink{class_simple_x_m_l_element}{Simple\+X\+M\+L\+Element}} with properties containing the data held within the xml document, or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}

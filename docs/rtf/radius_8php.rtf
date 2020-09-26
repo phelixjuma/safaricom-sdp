@@ -1,0 +1,2862 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\comment begin body}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+vendor/jetbrains/phpstorm-stubs/radius/radius.php File Reference\par \pard\plain 
+{\tc\tcl2 \v vendor/jetbrains/phpstorm-stubs/radius/radius.php}
+{\xe \v vendor/jetbrains/phpstorm-stubs/radius/radius.php}
+{\bkmkstart AAAAAAALPG}
+{\bkmkend AAAAAAALPG}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b radius_acct_open} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b radius_add_server} ($radius_handle, $hostname, $port, $secret, $timeout, $max_tries)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b radius_auth_open} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b radius_close} ($radius_handle)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b radius_config} ($radius_handle, ${\b file})\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b radius_create_request} ($radius_handle, $type)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RAD_OPTION_TAG} 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_OPTION_SALT} 2\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCESS_REQUEST} 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCESS_ACCEPT} 2\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCESS_REJECT} 3\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCOUNTING_REQUEST} 4\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCOUNTING_RESPONSE} 5\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCESS_CHALLENGE} 11\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_DISCONNECT_REQUEST} 40\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_DISCONNECT_ACK} 41\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_DISCONNECT_NAK} 42\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_COA_REQUEST} 43\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_COA_ACK} 44\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_COA_NAK} 45\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_USER_NAME} 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_USER_PASSWORD} 2\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_CHAP_PASSWORD} 3\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_NAS_IP_ADDRESS} 4\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_NAS_PORT} 5\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_SERVICE_TYPE} 6\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_LOGIN} 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED} 2\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_CALLBACK_LOGIN} 3\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_CALLBACK_FRAMED} 4\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_OUTBOUND} 5\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ADMINISTRATIVE} 6\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_NAS_PROMPT} 7\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_AUTHENTICATE_ONLY} 8\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_CALLBACK_NAS_PROMPT} 9\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED_PROTOCOL} 7\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_PPP} 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_SLIP} 2\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ARAP} 3\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_GANDALF} 4\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_XYLOGICS} 5\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED_IP_ADDRESS} 8\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED_IP_NETMASK} 9\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED_ROUTING} 10\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FILTER_ID} 11\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED_MTU} 12\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED_COMPRESSION} 13\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_COMP_NONE} 0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_COMP_VJ} 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_COMP_IPXHDR} 2\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_LOGIN_IP_HOST} 14\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_LOGIN_SERVICE} 15\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_LOGIN_TCP_PORT} 16\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_REPLY_MESSAGE} 18\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_CALLBACK_NUMBER} 19\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_CALLBACK_ID} 20\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED_ROUTE} 22\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED_IPX_NETWORK} 23\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_STATE} 24\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_CLASS} 25\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_VENDOR_SPECIFIC} 26\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_SESSION_TIMEOUT} 27\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_IDLE_TIMEOUT} 28\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERMINATION_ACTION} 29\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_CALLED_STATION_ID} 30\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_CALLING_STATION_ID} 31\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_NAS_IDENTIFIER} 32\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_PROXY_STATE} 33\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_LOGIN_LAT_SERVICE} 34\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_LOGIN_LAT_NODE} 35\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_LOGIN_LAT_GROUP} 36\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED_APPLETALK_LINK} 37\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED_APPLETALK_NETWORK} 38\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED_APPLETALK_ZONE} 39\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_CHAP_CHALLENGE} 60\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_NAS_PORT_TYPE} 61\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ASYNC} 0\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_SYNC} 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ISDN_SYNC} 2\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ISDN_ASYNC_V120} 3\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ISDN_ASYNC_V110} 4\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_VIRTUAL} 5\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_PIAFS} 6\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_HDLC_CLEAR_CHANNEL} 7\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_X_25} 8\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_X_75} 9\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_G_3_FAX} 10\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_SDSL} 11\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ADSL_CAP} 12\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ADSL_DMT} 13\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_IDSL} 14\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ETHERNET} 15\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_XDSL} 16\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_CABLE} 17\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_WIRELESS_OTHER} 18\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_WIRELESS_IEEE_802_11} 19\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_PORT_LIMIT} 62\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_LOGIN_LAT_PORT} 63\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_CONNECT_INFO} 77\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_NAS_IPV6_ADDRESS} 95\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED_INTERFACE_ID} 96\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED_IPV6_PREFIX} 97\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_LOGIN_IPV6_HOST} 98\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED_IPV6_ROUTE} 99\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_FRAMED_IPV6_POOL} 100\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE} 101\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE_RESIDUAL_SESSION_CONTEXT_REMOVED} 201\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE_INVALID_EAP_PACKET} 202\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE_UNSUPPORTED_ATTRIBUTE} 401\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE_MISSING_ATTRIBUTE} 402\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE_NAS_IDENTIFICATION_MISMATCH} 403\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE_INVALID_REQUEST} 404\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE_UNSUPPORTED_SERVICE} 405\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE_UNSUPPORTED_EXCEPTION} 406\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE_ADMINISTRATIVELY_PROHIBITED} 501\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE_REQUEST_NOT_ROUTABLE} 502\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE_SESSION_CONTEXT_NOT_FOUND} 503\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE_SESSION_CONTEXT_NOT_REMOVABLE} 504\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE_OTHER_PROXY_PROCESSING_ERROR} 505\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE_RESOURCES_UNAVAILABLE} 506\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ERROR_CAUSE_REQUEST_INITIATED} 507\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCT_STATUS_TYPE} 40\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_START} 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_STOP} 2\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCOUNTING_ON} 7\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCOUNTING_OFF} 8\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCT_DELAY_TIME} 41\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCT_INPUT_OCTETS} 42\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCT_OUTPUT_OCTETS} 43\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCT_SESSION_ID} 44\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCT_AUTHENTIC} 45\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_AUTH_RADIUS} 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_AUTH_LOCAL} 2\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_AUTH_REMOTE} 3\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCT_SESSION_TIME} 46\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCT_INPUT_PACKETS} 47\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCT_OUTPUT_PACKETS} 48\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCT_TERMINATE_CAUSE} 49\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_USER_REQUEST} 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_LOST_CARRIER} 2\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_LOST_SERVICE} 3\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_IDLE_TIMEOUT} 4\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_SESSION_TIMEOUT} 5\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_ADMIN_RESET} 6\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_ADMIN_REBOOT} 7\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_PORT_ERROR} 8\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_NAS_ERROR} 9\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_NAS_REQUEST} 10\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_NAS_REBOOT} 11\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_PORT_UNNEEDED} 12\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_PORT_PREEMPTED} 13\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_PORT_SUSPENDED} 14\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_SERVICE_UNAVAILABLE} 15\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_CALLBACK} 16\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_USER_ERROR} 17\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_TERM_HOST_REQUEST} 18\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCT_MULTI_SESSION_ID} 50\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_ACCT_LINK_COUNT} 51\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_VENDOR_MICROSOFT} 311\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_CHAP_RESPONSE} 1\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_CHAP_ERROR} 2\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_CHAP_PW_1} 3\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_CHAP_PW_2} 4\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_CHAP_LM_ENC_PW} 5\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_CHAP_NT_ENC_PW} 6\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_MPPE_ENCRYPTION_POLICY} 7\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_MPPE_ENCRYPTION_TYPES} 8\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_RAS_VENDOR} 9\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_CHAP_DOMAIN} 10\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_CHAP_CHALLENGE} 11\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_CHAP_MPPE_KEYS} 12\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_BAP_USAGE} 13\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_LINK_UTILIZATION_THRESHOLD} 14\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_LINK_DROP_TIME_LIMIT} 15\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_MPPE_SEND_KEY} 16\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_MPPE_RECV_KEY} 17\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_RAS_VERSION} 18\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_OLD_ARAP_PASSWORD} 19\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_NEW_ARAP_PASSWORD} 20\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_ARAP_PASSWORD_CHANGE_REASON} 21\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_FILTER} 22\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_ACCT_AUTH_TYPE} 23\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_ACCT_EAP_TYPE} 24\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_CHAP2_RESPONSE} 25\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_CHAP2_SUCCESS} 26\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_CHAP2_PW} 27\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_PRIMARY_DNS_SERVER} 28\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_SECONDARY_DNS_SERVER} 29\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_PRIMARY_NBNS_SERVER} 30\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_SECONDARY_NBNS_SERVER} 31\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_MICROSOFT_MS_ARAP_CHALLENGE} 33\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_OPTION_NONE} RADIUS_OPTION_NONE\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b RADIUS_OPTION_TAGGED} RADIUS_OPTION_TAGGED\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v radius_acct_open\:radius.php}
+{\xe \v radius.php\:radius_acct_open}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+radius_acct_open ()}}
+\par
+{\bkmkstart AAAAAAALPH}
+{\bkmkend AAAAAAALPH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Creates a Radius handle for accounting {\b resource|false Returns a handle on success, {\b FALSE}  on error. This function only fails if insufficient memory is available.  1.1.0 }\par
+}}
+{\xe \v radius_add_server\:radius.php}
+{\xe \v radius.php\:radius_add_server}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+radius_add_server (  {\i $radius_handle},   {\i $hostname},   {\i $port},   {\i $secret},   {\i $timeout},   {\i $max_tries})}}
+\par
+{\bkmkstart AAAAAAALPI}
+{\bkmkend AAAAAAALPI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b {\b radius_add_server()}}  may be called multiple times, and it may be used together with \{\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+{\b radius_config()}\}. At most 10 servers may be specified. When multiple servers are given, they are tried in round-robin fashion until {\b a} valid response is received, or until {\b each} server's max_tries limit has been reached. {\b resource $radius_handle  string $hostname The {\b hostname}  parameter specifies the server host, either as a fully qualified domain name or as a dotted-quad IP address in text form.  int $port The {\b port}  specifies the UDP port to contact on the server.} If port is given as 0, the library looks up the radius/udp or radacct/udp service in the network services database, and uses the port found there.\par
+ If no entry is found, the library uses the standard Radius ports, 1812 for authentication and 1813 for accounting. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{string\cell }{{\i $secret} \cell }{The shared secret for the server host is passed to the {\b secret}  parameter. The Radius protocol ignores all but the leading 128 bytes of the shared secret. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{int\cell }{{\i $timeout} \cell }{The timeout for receiving replies from the server is passed to the {\b timeout}  parameter, in units of seconds. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx4374
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{int\cell }{{\i $max_tries} \cell }{The maximum number of repeated requests to make before giving up is passed into the {\b max_tries} . \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+bool Returns {\b TRUE}  on success or {\b FALSE}  on failure. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+{\b radius_config()} \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Since\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.1.0 \par
+}}}}
+{\xe \v radius_auth_open\:radius.php}
+{\xe \v radius.php\:radius_auth_open}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+radius_auth_open ()}}
+\par
+{\bkmkstart AAAAAAALPJ}
+{\bkmkend AAAAAAALPJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Creates a Radius handle for authentication {\b resource|false Returns a handle on success, {\b FALSE}  on error. This function only fails if insufficient memory is available.  1.1.0 }\par
+}}
+{\xe \v radius_close\:radius.php}
+{\xe \v radius.php\:radius_close}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+radius_close (  {\i $radius_handle})}}
+\par
+{\bkmkstart AAAAAAALPK}
+{\bkmkend AAAAAAALPK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Free all ressources. It is not needed to call this function because php frees all resources at the end of each request. {\b resource $radius_handle  bool Returns {\b TRUE}  on success or {\b FALSE}  on failure.  1.1.0 }\par
+}}
+{\xe \v radius_config\:radius.php}
+{\xe \v radius.php\:radius_config}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+radius_config (  {\i $radius_handle},   {\i $file})}}
+\par
+{\bkmkstart AAAAAAALPL}
+{\bkmkend AAAAAAALPL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Before issuing any Radius requests, the library must be made aware of the servers it can contact. The easiest way to configure the library is to call {\b {\b radius_config()}} . {\b {\b radius_config()}}  causes the library to read a configuration file whose format is described in radius.conf. {\b {\f2 https://www.freebsd.org/cgi/man.cgi?query=radius.conf}  resource $radius_handle  string $file The pathname of the configuration file is passed as the file argument to \{ radius_config()\}. The library can also be configured programmatically by calls to {\b \{ radius_add_server()\}} .  bool Returns {\b TRUE}  on success or {\b FALSE}  on failure.  radius_add_server()  1.1.0 }\par
+}}
+{\xe \v radius_create_request\:radius.php}
+{\xe \v radius.php\:radius_create_request}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+radius_create_request (  {\i $radius_handle},   {\i $type})}}
+\par
+{\bkmkstart AAAAAAALPM}
+{\bkmkend AAAAAAALPM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b A} Radius request consists of a code specifying the kind of request, and zero or more attributes which provide additional information. To begin constructing a new request, call {\b {\b radius_create_request()}} .\par
+ {\b Note:}  Attention: You must call this function, before you can put any attribute! {\b resource $radius_handle  int $type Type is {\b RADIUS_ACCESS_REQUEST}  or {\b RADIUS_ACCOUNTING_REQUEST} .  bool Returns {\b TRUE}  on success or {\b FALSE}  on failure.  radius_send_request()  1.1.0 }\par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variable Documentation\par
+\pard\plain 
+{\xe \v RAD_OPTION_TAG\:radius.php}
+{\xe \v radius.php\:RAD_OPTION_TAG}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RAD_OPTION_TAG 1}}
+\par
+{\bkmkstart AAAAAAALPN}
+{\bkmkend AAAAAAALPN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Radius constants {\b The maximum length of MPPE keys. }\par
+}}
+{\xe \v RADIUS_ACCESS_ACCEPT\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCESS_ACCEPT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCESS_ACCEPT 2}}
+\par
+{\bkmkstart AAAAAAALPO}
+{\bkmkend AAAAAAALPO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+An Access-Accept response to an Access-Request indicating that the RADIUS server authenticated the user successfully. \par
+}}
+{\xe \v RADIUS_ACCESS_CHALLENGE\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCESS_CHALLENGE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCESS_CHALLENGE 11}}
+\par
+{\bkmkstart AAAAAAALPP}
+{\bkmkend AAAAAAALPP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+An Access-Challenge response to an Access-Request indicating that the RADIUS server requires further information in another Access-Request before authenticating the user. \par
+}}
+{\xe \v RADIUS_ACCESS_REJECT\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCESS_REJECT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCESS_REJECT 3}}
+\par
+{\bkmkstart AAAAAAALPQ}
+{\bkmkend AAAAAAALPQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+An Access-Reject response to an Access-Request indicating that the RADIUS server could not authenticate the user. \par
+}}
+{\xe \v RADIUS_ACCESS_REQUEST\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCESS_REQUEST}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCESS_REQUEST 1}}
+\par
+{\bkmkstart AAAAAAALPR}
+{\bkmkend AAAAAAALPR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+RADIUS Packet Types {\b An Access-Request, used to authenticate a user against a RADIUS server. Access request packets must include a {\b RADIUS_NAS_IP_ADDRESS}  or a {\b RADIUS_NAS_IDENTIFIER}  attribute, must also include a {\b RADIUS_USER_PASSWORD} , {\b RADIUS_CHAP_PASSWORD}  or a {\b RADIUS_STATE}  attribute, and should include a {\b RADIUS_USER_NAME}  attribute. }\par
+}}
+{\xe \v RADIUS_ACCOUNTING_OFF\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCOUNTING_OFF}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCOUNTING_OFF 8}}
+\par
+{\bkmkstart AAAAAAALPS}
+{\bkmkend AAAAAAALPS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ACCOUNTING_ON\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCOUNTING_ON}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCOUNTING_ON 7}}
+\par
+{\bkmkstart AAAAAAALPT}
+{\bkmkend AAAAAAALPT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ACCOUNTING_REQUEST\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCOUNTING_REQUEST}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCOUNTING_REQUEST 4}}
+\par
+{\bkmkstart AAAAAAALPU}
+{\bkmkend AAAAAAALPU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+An Accounting-Request, used to convey accounting information for a service to the RADIUS server. \par
+}}
+{\xe \v RADIUS_ACCOUNTING_RESPONSE\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCOUNTING_RESPONSE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCOUNTING_RESPONSE 5}}
+\par
+{\bkmkstart AAAAAAALPV}
+{\bkmkend AAAAAAALPV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+An Accounting-Response response to an Accounting-Request. \par
+}}
+{\xe \v RADIUS_ACCT_AUTHENTIC\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCT_AUTHENTIC}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCT_AUTHENTIC 45}}
+\par
+{\bkmkstart AAAAAAALPW}
+{\bkmkend AAAAAAALPW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ACCT_DELAY_TIME\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCT_DELAY_TIME}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCT_DELAY_TIME 41}}
+\par
+{\bkmkstart AAAAAAALPX}
+{\bkmkend AAAAAAALPX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ACCT_INPUT_OCTETS\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCT_INPUT_OCTETS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCT_INPUT_OCTETS 42}}
+\par
+{\bkmkstart AAAAAAALPY}
+{\bkmkend AAAAAAALPY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ACCT_INPUT_PACKETS\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCT_INPUT_PACKETS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCT_INPUT_PACKETS 47}}
+\par
+{\bkmkstart AAAAAAALPZ}
+{\bkmkend AAAAAAALPZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ACCT_LINK_COUNT\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCT_LINK_COUNT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCT_LINK_COUNT 51}}
+\par
+{\bkmkstart AAAAAAALQA}
+{\bkmkend AAAAAAALQA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ACCT_MULTI_SESSION_ID\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCT_MULTI_SESSION_ID}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCT_MULTI_SESSION_ID 50}}
+\par
+{\bkmkstart AAAAAAALQB}
+{\bkmkend AAAAAAALQB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ACCT_OUTPUT_OCTETS\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCT_OUTPUT_OCTETS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCT_OUTPUT_OCTETS 43}}
+\par
+{\bkmkstart AAAAAAALQC}
+{\bkmkend AAAAAAALQC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ACCT_OUTPUT_PACKETS\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCT_OUTPUT_PACKETS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCT_OUTPUT_PACKETS 48}}
+\par
+{\bkmkstart AAAAAAALQD}
+{\bkmkend AAAAAAALQD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ACCT_SESSION_ID\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCT_SESSION_ID}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCT_SESSION_ID 44}}
+\par
+{\bkmkstart AAAAAAALQE}
+{\bkmkend AAAAAAALQE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ACCT_SESSION_TIME\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCT_SESSION_TIME}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCT_SESSION_TIME 46}}
+\par
+{\bkmkstart AAAAAAALQF}
+{\bkmkend AAAAAAALQF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ACCT_STATUS_TYPE\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCT_STATUS_TYPE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCT_STATUS_TYPE 40}}
+\par
+{\bkmkstart AAAAAAALQG}
+{\bkmkend AAAAAAALQG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ACCT_TERMINATE_CAUSE\:radius.php}
+{\xe \v radius.php\:RADIUS_ACCT_TERMINATE_CAUSE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ACCT_TERMINATE_CAUSE 49}}
+\par
+{\bkmkstart AAAAAAALQH}
+{\bkmkend AAAAAAALQH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ADMINISTRATIVE\:radius.php}
+{\xe \v radius.php\:RADIUS_ADMINISTRATIVE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ADMINISTRATIVE 6}}
+\par
+{\bkmkstart AAAAAAALQI}
+{\bkmkend AAAAAAALQI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ADSL_CAP\:radius.php}
+{\xe \v radius.php\:RADIUS_ADSL_CAP}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ADSL_CAP 12}}
+\par
+{\bkmkstart AAAAAAALQJ}
+{\bkmkend AAAAAAALQJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ADSL_DMT\:radius.php}
+{\xe \v radius.php\:RADIUS_ADSL_DMT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ADSL_DMT 13}}
+\par
+{\bkmkstart AAAAAAALQK}
+{\bkmkend AAAAAAALQK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ARAP\:radius.php}
+{\xe \v radius.php\:RADIUS_ARAP}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ARAP 3}}
+\par
+{\bkmkstart AAAAAAALQL}
+{\bkmkend AAAAAAALQL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ASYNC\:radius.php}
+{\xe \v radius.php\:RADIUS_ASYNC}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ASYNC 0}}
+\par
+{\bkmkstart AAAAAAALQM}
+{\bkmkend AAAAAAALQM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_AUTH_LOCAL\:radius.php}
+{\xe \v radius.php\:RADIUS_AUTH_LOCAL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_AUTH_LOCAL 2}}
+\par
+{\bkmkstart AAAAAAALQN}
+{\bkmkend AAAAAAALQN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_AUTH_RADIUS\:radius.php}
+{\xe \v radius.php\:RADIUS_AUTH_RADIUS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_AUTH_RADIUS 1}}
+\par
+{\bkmkstart AAAAAAALQO}
+{\bkmkend AAAAAAALQO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_AUTH_REMOTE\:radius.php}
+{\xe \v radius.php\:RADIUS_AUTH_REMOTE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_AUTH_REMOTE 3}}
+\par
+{\bkmkstart AAAAAAALQP}
+{\bkmkend AAAAAAALQP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_AUTHENTICATE_ONLY\:radius.php}
+{\xe \v radius.php\:RADIUS_AUTHENTICATE_ONLY}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_AUTHENTICATE_ONLY 8}}
+\par
+{\bkmkstart AAAAAAALQQ}
+{\bkmkend AAAAAAALQQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_CABLE\:radius.php}
+{\xe \v radius.php\:RADIUS_CABLE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_CABLE 17}}
+\par
+{\bkmkstart AAAAAAALQR}
+{\bkmkend AAAAAAALQR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_CALLBACK_FRAMED\:radius.php}
+{\xe \v radius.php\:RADIUS_CALLBACK_FRAMED}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_CALLBACK_FRAMED 4}}
+\par
+{\bkmkstart AAAAAAALQS}
+{\bkmkend AAAAAAALQS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_CALLBACK_ID\:radius.php}
+{\xe \v radius.php\:RADIUS_CALLBACK_ID}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_CALLBACK_ID 20}}
+\par
+{\bkmkstart AAAAAAALQT}
+{\bkmkend AAAAAAALQT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_CALLBACK_LOGIN\:radius.php}
+{\xe \v radius.php\:RADIUS_CALLBACK_LOGIN}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_CALLBACK_LOGIN 3}}
+\par
+{\bkmkstart AAAAAAALQU}
+{\bkmkend AAAAAAALQU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_CALLBACK_NAS_PROMPT\:radius.php}
+{\xe \v radius.php\:RADIUS_CALLBACK_NAS_PROMPT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_CALLBACK_NAS_PROMPT 9}}
+\par
+{\bkmkstart AAAAAAALQV}
+{\bkmkend AAAAAAALQV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_CALLBACK_NUMBER\:radius.php}
+{\xe \v radius.php\:RADIUS_CALLBACK_NUMBER}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_CALLBACK_NUMBER 19}}
+\par
+{\bkmkstart AAAAAAALQW}
+{\bkmkend AAAAAAALQW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_CALLED_STATION_ID\:radius.php}
+{\xe \v radius.php\:RADIUS_CALLED_STATION_ID}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_CALLED_STATION_ID 30}}
+\par
+{\bkmkstart AAAAAAALQX}
+{\bkmkend AAAAAAALQX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_CALLING_STATION_ID\:radius.php}
+{\xe \v radius.php\:RADIUS_CALLING_STATION_ID}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_CALLING_STATION_ID 31}}
+\par
+{\bkmkstart AAAAAAALQY}
+{\bkmkend AAAAAAALQY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_CHAP_CHALLENGE\:radius.php}
+{\xe \v radius.php\:RADIUS_CHAP_CHALLENGE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_CHAP_CHALLENGE 60}}
+\par
+{\bkmkstart AAAAAAALQZ}
+{\bkmkend AAAAAAALQZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_CHAP_PASSWORD\:radius.php}
+{\xe \v radius.php\:RADIUS_CHAP_PASSWORD}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_CHAP_PASSWORD 3}}
+\par
+{\bkmkstart AAAAAAALRA}
+{\bkmkend AAAAAAALRA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Chap-Password attribute. The attribute value is expected to be a string with the first byte containing the CHAP identifier, and the subsequent 16 bytes containing the MD5 hash of the CHAP identifier, the plaintext password and the CHAP challenge value concatenated together. Note that the CHAP challenge value should also be sent separately in a {\b \{\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+{\b RADIUS_CHAP_CHALLENGE}\} {\b attribute}. \par
+}}} \par
+}}
+{\xe \v RADIUS_CLASS\:radius.php}
+{\xe \v radius.php\:RADIUS_CLASS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_CLASS 25}}
+\par
+{\bkmkstart AAAAAAALRB}
+{\bkmkend AAAAAAALRB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_COA_ACK\:radius.php}
+{\xe \v radius.php\:RADIUS_COA_ACK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_COA_ACK 44}}
+\par
+{\bkmkstart AAAAAAALRC}
+{\bkmkend AAAAAAALRC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b A} CoA-ACK, sent to the RADIUS server to indicate that the user authorisations have been updated. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Since\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.3.0 \par
+}}}}
+{\xe \v RADIUS_COA_NAK\:radius.php}
+{\xe \v radius.php\:RADIUS_COA_NAK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_COA_NAK 45}}
+\par
+{\bkmkstart AAAAAAALRD}
+{\bkmkend AAAAAAALRD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b A} CoA-NAK, sent to the RADIUS server to indicate that the user authorisations could not be updated. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Since\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.3.0 \par
+}}}}
+{\xe \v RADIUS_COA_REQUEST\:radius.php}
+{\xe \v radius.php\:RADIUS_COA_REQUEST}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_COA_REQUEST 43}}
+\par
+{\bkmkstart AAAAAAALRE}
+{\bkmkend AAAAAAALRE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b A} CoA-Request, sent from the RADIUS server to indicate that the authorisations within the user session have changed. {\b A} response must be sent in the form of a CoA-ACK or a CoA-NAK. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Since\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.3.0 \par
+}}}}
+{\xe \v RADIUS_COMP_IPXHDR\:radius.php}
+{\xe \v radius.php\:RADIUS_COMP_IPXHDR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_COMP_IPXHDR 2}}
+\par
+{\bkmkstart AAAAAAALRF}
+{\bkmkend AAAAAAALRF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_COMP_NONE\:radius.php}
+{\xe \v radius.php\:RADIUS_COMP_NONE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_COMP_NONE 0}}
+\par
+{\bkmkstart AAAAAAALRG}
+{\bkmkend AAAAAAALRG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_COMP_VJ\:radius.php}
+{\xe \v radius.php\:RADIUS_COMP_VJ}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_COMP_VJ 1}}
+\par
+{\bkmkstart AAAAAAALRH}
+{\bkmkend AAAAAAALRH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_CONNECT_INFO\:radius.php}
+{\xe \v radius.php\:RADIUS_CONNECT_INFO}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_CONNECT_INFO 77}}
+\par
+{\bkmkstart AAAAAAALRI}
+{\bkmkend AAAAAAALRI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_DISCONNECT_ACK\:radius.php}
+{\xe \v radius.php\:RADIUS_DISCONNECT_ACK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_DISCONNECT_ACK 41}}
+\par
+{\bkmkstart AAAAAAALRJ}
+{\bkmkend AAAAAAALRJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b A} Disconnect-ACK, sent to the RADIUS server to indicate that the user session has been terminated. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Since\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.3.0 \par
+}}}}
+{\xe \v RADIUS_DISCONNECT_NAK\:radius.php}
+{\xe \v radius.php\:RADIUS_DISCONNECT_NAK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_DISCONNECT_NAK 42}}
+\par
+{\bkmkstart AAAAAAALRK}
+{\bkmkend AAAAAAALRK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b A} Disconnect-NAK, sent to the RADIUS server to indicate that the user session could not be terminated. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Since\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.3.0 \par
+}}}}
+{\xe \v RADIUS_DISCONNECT_REQUEST\:radius.php}
+{\xe \v radius.php\:RADIUS_DISCONNECT_REQUEST}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_DISCONNECT_REQUEST 40}}
+\par
+{\bkmkstart AAAAAAALRL}
+{\bkmkend AAAAAAALRL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b A} Disconnect-Request, sent from the RADIUS server to indicate that the user session must be terminated. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Since\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.3.0 \par
+}}}}
+{\xe \v RADIUS_ERROR_CAUSE\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE 101}}
+\par
+{\bkmkstart AAAAAAALRM}
+{\bkmkend AAAAAAALRM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ERROR_CAUSE_ADMINISTRATIVELY_PROHIBITED\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE_ADMINISTRATIVELY_PROHIBITED}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE_ADMINISTRATIVELY_PROHIBITED 501}}
+\par
+{\bkmkstart AAAAAAALRN}
+{\bkmkend AAAAAAALRN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ERROR_CAUSE_INVALID_EAP_PACKET\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE_INVALID_EAP_PACKET}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE_INVALID_EAP_PACKET 202}}
+\par
+{\bkmkstart AAAAAAALRO}
+{\bkmkend AAAAAAALRO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ERROR_CAUSE_INVALID_REQUEST\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE_INVALID_REQUEST}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE_INVALID_REQUEST 404}}
+\par
+{\bkmkstart AAAAAAALRP}
+{\bkmkend AAAAAAALRP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ERROR_CAUSE_MISSING_ATTRIBUTE\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE_MISSING_ATTRIBUTE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE_MISSING_ATTRIBUTE 402}}
+\par
+{\bkmkstart AAAAAAALRQ}
+{\bkmkend AAAAAAALRQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ERROR_CAUSE_NAS_IDENTIFICATION_MISMATCH\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE_NAS_IDENTIFICATION_MISMATCH}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE_NAS_IDENTIFICATION_MISMATCH 403}}
+\par
+{\bkmkstart AAAAAAALRR}
+{\bkmkend AAAAAAALRR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ERROR_CAUSE_OTHER_PROXY_PROCESSING_ERROR\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE_OTHER_PROXY_PROCESSING_ERROR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE_OTHER_PROXY_PROCESSING_ERROR 505}}
+\par
+{\bkmkstart AAAAAAALRS}
+{\bkmkend AAAAAAALRS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ERROR_CAUSE_REQUEST_INITIATED\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE_REQUEST_INITIATED}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE_REQUEST_INITIATED 507}}
+\par
+{\bkmkstart AAAAAAALRT}
+{\bkmkend AAAAAAALRT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ERROR_CAUSE_REQUEST_NOT_ROUTABLE\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE_REQUEST_NOT_ROUTABLE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE_REQUEST_NOT_ROUTABLE 502}}
+\par
+{\bkmkstart AAAAAAALRU}
+{\bkmkend AAAAAAALRU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ERROR_CAUSE_RESIDUAL_SESSION_CONTEXT_REMOVED\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE_RESIDUAL_SESSION_CONTEXT_REMOVED}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE_RESIDUAL_SESSION_CONTEXT_REMOVED 201}}
+\par
+{\bkmkstart AAAAAAALRV}
+{\bkmkend AAAAAAALRV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ERROR_CAUSE_RESOURCES_UNAVAILABLE\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE_RESOURCES_UNAVAILABLE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE_RESOURCES_UNAVAILABLE 506}}
+\par
+{\bkmkstart AAAAAAALRW}
+{\bkmkend AAAAAAALRW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ERROR_CAUSE_SESSION_CONTEXT_NOT_FOUND\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE_SESSION_CONTEXT_NOT_FOUND}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE_SESSION_CONTEXT_NOT_FOUND 503}}
+\par
+{\bkmkstart AAAAAAALRX}
+{\bkmkend AAAAAAALRX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ERROR_CAUSE_SESSION_CONTEXT_NOT_REMOVABLE\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE_SESSION_CONTEXT_NOT_REMOVABLE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE_SESSION_CONTEXT_NOT_REMOVABLE 504}}
+\par
+{\bkmkstart AAAAAAALRY}
+{\bkmkend AAAAAAALRY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ERROR_CAUSE_UNSUPPORTED_ATTRIBUTE\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE_UNSUPPORTED_ATTRIBUTE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE_UNSUPPORTED_ATTRIBUTE 401}}
+\par
+{\bkmkstart AAAAAAALRZ}
+{\bkmkend AAAAAAALRZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ERROR_CAUSE_UNSUPPORTED_EXCEPTION\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE_UNSUPPORTED_EXCEPTION}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE_UNSUPPORTED_EXCEPTION 406}}
+\par
+{\bkmkstart AAAAAAALSA}
+{\bkmkend AAAAAAALSA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ERROR_CAUSE_UNSUPPORTED_SERVICE\:radius.php}
+{\xe \v radius.php\:RADIUS_ERROR_CAUSE_UNSUPPORTED_SERVICE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ERROR_CAUSE_UNSUPPORTED_SERVICE 405}}
+\par
+{\bkmkstart AAAAAAALSB}
+{\bkmkend AAAAAAALSB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ETHERNET\:radius.php}
+{\xe \v radius.php\:RADIUS_ETHERNET}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ETHERNET 15}}
+\par
+{\bkmkstart AAAAAAALSC}
+{\bkmkend AAAAAAALSC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_FILTER_ID\:radius.php}
+{\xe \v radius.php\:RADIUS_FILTER_ID}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FILTER_ID 11}}
+\par
+{\bkmkstart AAAAAAALSD}
+{\bkmkend AAAAAAALSD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Filter-ID attribute. The attribute value is expected to be an implementation-specific, human-readable string of filters, which can be set using \{\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+radius_put_attr()\}. \par
+}}}}
+{\xe \v RADIUS_FRAMED\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED 2}}
+\par
+{\bkmkstart AAAAAAALSE}
+{\bkmkend AAAAAAALSE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_FRAMED_APPLETALK_LINK\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED_APPLETALK_LINK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED_APPLETALK_LINK 37}}
+\par
+{\bkmkstart AAAAAAALSF}
+{\bkmkend AAAAAAALSF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_FRAMED_APPLETALK_NETWORK\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED_APPLETALK_NETWORK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED_APPLETALK_NETWORK 38}}
+\par
+{\bkmkstart AAAAAAALSG}
+{\bkmkend AAAAAAALSG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_FRAMED_APPLETALK_ZONE\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED_APPLETALK_ZONE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED_APPLETALK_ZONE 39}}
+\par
+{\bkmkstart AAAAAAALSH}
+{\bkmkend AAAAAAALSH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_FRAMED_COMPRESSION\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED_COMPRESSION}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED_COMPRESSION 13}}
+\par
+{\bkmkstart AAAAAAALSI}
+{\bkmkend AAAAAAALSI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Framed-Compression attribute. The attribute value is expected to be an integer indicating the compression protocol to be used, and can be set using radius_put_int(). Possible values include these constants:{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_COMP_NONE} : No compression\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_COMP_VJ} : VJ TCP/IP header compression\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_COMP_IPXHDR} : IPX header compression\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_COMP_STAC_LZS} : Stac-LZS compression (added in PECL radius 1.3.0b2) \par}
+}}
+{\xe \v RADIUS_FRAMED_INTERFACE_ID\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED_INTERFACE_ID}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED_INTERFACE_ID 96}}
+\par
+{\bkmkstart AAAAAAALSJ}
+{\bkmkend AAAAAAALSJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_FRAMED_IP_ADDRESS\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED_IP_ADDRESS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED_IP_ADDRESS 8}}
+\par
+{\bkmkstart AAAAAAALSK}
+{\bkmkend AAAAAAALSK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Framed-IP-Address attribute. The attribute value is expected to be the address of the user's network encoded as an integer, which can be set using \{\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+radius_put_addr()\} and retrieved using \{\par
+radius_cvt_addr()\}. \par
+}}}}
+{\xe \v RADIUS_FRAMED_IP_NETMASK\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED_IP_NETMASK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED_IP_NETMASK 9}}
+\par
+{\bkmkstart AAAAAAALSL}
+{\bkmkend AAAAAAALSL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Framed-IP-Netmask attribute. The attribute value is expected to be the netmask of the user's network encoded as an integer, which can be set using \{\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+radius_put_addr()\} and retrieved using \{\par
+radius_cvt_addr()\}. \par
+}}}}
+{\xe \v RADIUS_FRAMED_IPV6_POOL\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED_IPV6_POOL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED_IPV6_POOL 100}}
+\par
+{\bkmkstart AAAAAAALSM}
+{\bkmkend AAAAAAALSM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_FRAMED_IPV6_PREFIX\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED_IPV6_PREFIX}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED_IPV6_PREFIX 97}}
+\par
+{\bkmkstart AAAAAAALSN}
+{\bkmkend AAAAAAALSN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_FRAMED_IPV6_ROUTE\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED_IPV6_ROUTE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED_IPV6_ROUTE 99}}
+\par
+{\bkmkstart AAAAAAALSO}
+{\bkmkend AAAAAAALSO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_FRAMED_IPX_NETWORK\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED_IPX_NETWORK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED_IPX_NETWORK 23}}
+\par
+{\bkmkstart AAAAAAALSP}
+{\bkmkend AAAAAAALSP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_FRAMED_MTU\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED_MTU}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED_MTU 12}}
+\par
+{\bkmkstart AAAAAAALSQ}
+{\bkmkend AAAAAAALSQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Framed-MTU attribute. The attribute value is expected to be an integer indicating the MTU to be configured for the user, and can be set using \{\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+radius_put_int()\}. \par
+}}}}
+{\xe \v RADIUS_FRAMED_PROTOCOL\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED_PROTOCOL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED_PROTOCOL 7}}
+\par
+{\bkmkstart AAAAAAALSR}
+{\bkmkend AAAAAAALSR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Framed-Protocol attribute. The attribute value is expected to be an integer indicating the framing to be used for framed access, and can be set using \{\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+radius_put_int()\}. The possible {\b attribute} values include these constants:{
+\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_PPP}\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_SLIP}\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_ARAP}\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_GANDALF}\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_XYLOGICS} \par}
+}}}}
+{\xe \v RADIUS_FRAMED_ROUTE\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED_ROUTE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED_ROUTE 22}}
+\par
+{\bkmkstart AAAAAAALSS}
+{\bkmkend AAAAAAALSS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_FRAMED_ROUTING\:radius.php}
+{\xe \v radius.php\:RADIUS_FRAMED_ROUTING}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_FRAMED_ROUTING 10}}
+\par
+{\bkmkstart AAAAAAALST}
+{\bkmkend AAAAAAALST}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Framed-Routing attribute. The attribute value is expected to be an integer indicating the routing method for the user, which can be set using \{\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+radius_put_int()\}.\par
+ \par
+ Possible values include:{
+\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+0: No routing\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+1: Send routing packets\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+2: Listen for routing packets\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+3: Send and listen \par}
+}}}}
+{\xe \v RADIUS_G_3_FAX\:radius.php}
+{\xe \v radius.php\:RADIUS_G_3_FAX}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_G_3_FAX 10}}
+\par
+{\bkmkstart AAAAAAALSU}
+{\bkmkend AAAAAAALSU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_GANDALF\:radius.php}
+{\xe \v radius.php\:RADIUS_GANDALF}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_GANDALF 4}}
+\par
+{\bkmkstart AAAAAAALSV}
+{\bkmkend AAAAAAALSV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_HDLC_CLEAR_CHANNEL\:radius.php}
+{\xe \v radius.php\:RADIUS_HDLC_CLEAR_CHANNEL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_HDLC_CLEAR_CHANNEL 7}}
+\par
+{\bkmkstart AAAAAAALSW}
+{\bkmkend AAAAAAALSW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_IDLE_TIMEOUT\:radius.php}
+{\xe \v radius.php\:RADIUS_IDLE_TIMEOUT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_IDLE_TIMEOUT 28}}
+\par
+{\bkmkstart AAAAAAALSX}
+{\bkmkend AAAAAAALSX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_IDSL\:radius.php}
+{\xe \v radius.php\:RADIUS_IDSL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_IDSL 14}}
+\par
+{\bkmkstart AAAAAAALSY}
+{\bkmkend AAAAAAALSY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ISDN_ASYNC_V110\:radius.php}
+{\xe \v radius.php\:RADIUS_ISDN_ASYNC_V110}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ISDN_ASYNC_V110 4}}
+\par
+{\bkmkstart AAAAAAALSZ}
+{\bkmkend AAAAAAALSZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ISDN_ASYNC_V120\:radius.php}
+{\xe \v radius.php\:RADIUS_ISDN_ASYNC_V120}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ISDN_ASYNC_V120 3}}
+\par
+{\bkmkstart AAAAAAALTA}
+{\bkmkend AAAAAAALTA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_ISDN_SYNC\:radius.php}
+{\xe \v radius.php\:RADIUS_ISDN_SYNC}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_ISDN_SYNC 2}}
+\par
+{\bkmkstart AAAAAAALTB}
+{\bkmkend AAAAAAALTB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_LOGIN\:radius.php}
+{\xe \v radius.php\:RADIUS_LOGIN}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_LOGIN 1}}
+\par
+{\bkmkstart AAAAAAALTC}
+{\bkmkend AAAAAAALTC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_LOGIN_IP_HOST\:radius.php}
+{\xe \v radius.php\:RADIUS_LOGIN_IP_HOST}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_LOGIN_IP_HOST 14}}
+\par
+{\bkmkstart AAAAAAALTD}
+{\bkmkend AAAAAAALTD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Login-IP-Host attribute. The attribute value is expected to the IP address to connect the user to, encoded as an integer, which can be set using \{\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+radius_put_addr()\}. \par
+}}}}
+{\xe \v RADIUS_LOGIN_IPV6_HOST\:radius.php}
+{\xe \v radius.php\:RADIUS_LOGIN_IPV6_HOST}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_LOGIN_IPV6_HOST 98}}
+\par
+{\bkmkstart AAAAAAALTE}
+{\bkmkend AAAAAAALTE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_LOGIN_LAT_GROUP\:radius.php}
+{\xe \v radius.php\:RADIUS_LOGIN_LAT_GROUP}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_LOGIN_LAT_GROUP 36}}
+\par
+{\bkmkstart AAAAAAALTF}
+{\bkmkend AAAAAAALTF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_LOGIN_LAT_NODE\:radius.php}
+{\xe \v radius.php\:RADIUS_LOGIN_LAT_NODE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_LOGIN_LAT_NODE 35}}
+\par
+{\bkmkstart AAAAAAALTG}
+{\bkmkend AAAAAAALTG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_LOGIN_LAT_PORT\:radius.php}
+{\xe \v radius.php\:RADIUS_LOGIN_LAT_PORT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_LOGIN_LAT_PORT 63}}
+\par
+{\bkmkstart AAAAAAALTH}
+{\bkmkend AAAAAAALTH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_LOGIN_LAT_SERVICE\:radius.php}
+{\xe \v radius.php\:RADIUS_LOGIN_LAT_SERVICE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_LOGIN_LAT_SERVICE 34}}
+\par
+{\bkmkstart AAAAAAALTI}
+{\bkmkend AAAAAAALTI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_LOGIN_SERVICE\:radius.php}
+{\xe \v radius.php\:RADIUS_LOGIN_SERVICE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_LOGIN_SERVICE 15}}
+\par
+{\bkmkstart AAAAAAALTJ}
+{\bkmkend AAAAAAALTJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Login-Service attribute. The attribute value is an integer indicating the service to connect the user to on the login host. The value can be converted to a PHP integer via \{\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+radius_cvt_int()\}. \par
+}}}}
+{\xe \v RADIUS_LOGIN_TCP_PORT\:radius.php}
+{\xe \v radius.php\:RADIUS_LOGIN_TCP_PORT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_LOGIN_TCP_PORT 16}}
+\par
+{\bkmkstart AAAAAAALTK}
+{\bkmkend AAAAAAALTK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_ACCT_AUTH_TYPE\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_ACCT_AUTH_TYPE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_ACCT_AUTH_TYPE 23}}
+\par
+{\bkmkstart AAAAAAALTL}
+{\bkmkend AAAAAAALTL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_ACCT_EAP_TYPE\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_ACCT_EAP_TYPE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_ACCT_EAP_TYPE 24}}
+\par
+{\bkmkstart AAAAAAALTM}
+{\bkmkend AAAAAAALTM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_ARAP_CHALLENGE\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_ARAP_CHALLENGE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_ARAP_CHALLENGE 33}}
+\par
+{\bkmkstart AAAAAAALTN}
+{\bkmkend AAAAAAALTN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_ARAP_PASSWORD_CHANGE_REASON\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_ARAP_PASSWORD_CHANGE_REASON}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_ARAP_PASSWORD_CHANGE_REASON 21}}
+\par
+{\bkmkstart AAAAAAALTO}
+{\bkmkend AAAAAAALTO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_BAP_USAGE\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_BAP_USAGE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_BAP_USAGE 13}}
+\par
+{\bkmkstart AAAAAAALTP}
+{\bkmkend AAAAAAALTP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_CHAP2_PW\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_CHAP2_PW}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_CHAP2_PW 27}}
+\par
+{\bkmkstart AAAAAAALTQ}
+{\bkmkend AAAAAAALTQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_CHAP2_RESPONSE\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_CHAP2_RESPONSE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_CHAP2_RESPONSE 25}}
+\par
+{\bkmkstart AAAAAAALTR}
+{\bkmkend AAAAAAALTR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_CHAP2_SUCCESS\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_CHAP2_SUCCESS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_CHAP2_SUCCESS 26}}
+\par
+{\bkmkstart AAAAAAALTS}
+{\bkmkend AAAAAAALTS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_CHAP_CHALLENGE\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_CHAP_CHALLENGE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_CHAP_CHALLENGE 11}}
+\par
+{\bkmkstart AAAAAAALTT}
+{\bkmkend AAAAAAALTT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_CHAP_DOMAIN\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_CHAP_DOMAIN}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_CHAP_DOMAIN 10}}
+\par
+{\bkmkstart AAAAAAALTU}
+{\bkmkend AAAAAAALTU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_CHAP_ERROR\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_CHAP_ERROR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_CHAP_ERROR 2}}
+\par
+{\bkmkstart AAAAAAALTV}
+{\bkmkend AAAAAAALTV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_CHAP_LM_ENC_PW\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_CHAP_LM_ENC_PW}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_CHAP_LM_ENC_PW 5}}
+\par
+{\bkmkstart AAAAAAALTW}
+{\bkmkend AAAAAAALTW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_CHAP_MPPE_KEYS\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_CHAP_MPPE_KEYS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_CHAP_MPPE_KEYS 12}}
+\par
+{\bkmkstart AAAAAAALTX}
+{\bkmkend AAAAAAALTX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_CHAP_NT_ENC_PW\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_CHAP_NT_ENC_PW}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_CHAP_NT_ENC_PW 6}}
+\par
+{\bkmkstart AAAAAAALTY}
+{\bkmkend AAAAAAALTY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_CHAP_PW_1\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_CHAP_PW_1}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_CHAP_PW_1 3}}
+\par
+{\bkmkstart AAAAAAALTZ}
+{\bkmkend AAAAAAALTZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_CHAP_PW_2\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_CHAP_PW_2}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_CHAP_PW_2 4}}
+\par
+{\bkmkstart AAAAAAALUA}
+{\bkmkend AAAAAAALUA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_CHAP_RESPONSE\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_CHAP_RESPONSE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_CHAP_RESPONSE 1}}
+\par
+{\bkmkstart AAAAAAALUB}
+{\bkmkend AAAAAAALUB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_FILTER\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_FILTER}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_FILTER 22}}
+\par
+{\bkmkstart AAAAAAALUC}
+{\bkmkend AAAAAAALUC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_LINK_DROP_TIME_LIMIT\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_LINK_DROP_TIME_LIMIT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_LINK_DROP_TIME_LIMIT 15}}
+\par
+{\bkmkstart AAAAAAALUD}
+{\bkmkend AAAAAAALUD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_LINK_UTILIZATION_THRESHOLD\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_LINK_UTILIZATION_THRESHOLD}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_LINK_UTILIZATION_THRESHOLD 14}}
+\par
+{\bkmkstart AAAAAAALUE}
+{\bkmkend AAAAAAALUE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_MPPE_ENCRYPTION_POLICY\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_MPPE_ENCRYPTION_POLICY}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_MPPE_ENCRYPTION_POLICY 7}}
+\par
+{\bkmkstart AAAAAAALUF}
+{\bkmkend AAAAAAALUF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_MPPE_ENCRYPTION_TYPES\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_MPPE_ENCRYPTION_TYPES}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_MPPE_ENCRYPTION_TYPES 8}}
+\par
+{\bkmkstart AAAAAAALUG}
+{\bkmkend AAAAAAALUG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_MPPE_RECV_KEY\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_MPPE_RECV_KEY}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_MPPE_RECV_KEY 17}}
+\par
+{\bkmkstart AAAAAAALUH}
+{\bkmkend AAAAAAALUH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_MPPE_SEND_KEY\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_MPPE_SEND_KEY}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_MPPE_SEND_KEY 16}}
+\par
+{\bkmkstart AAAAAAALUI}
+{\bkmkend AAAAAAALUI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_NEW_ARAP_PASSWORD\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_NEW_ARAP_PASSWORD}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_NEW_ARAP_PASSWORD 20}}
+\par
+{\bkmkstart AAAAAAALUJ}
+{\bkmkend AAAAAAALUJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_OLD_ARAP_PASSWORD\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_OLD_ARAP_PASSWORD}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_OLD_ARAP_PASSWORD 19}}
+\par
+{\bkmkstart AAAAAAALUK}
+{\bkmkend AAAAAAALUK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_PRIMARY_DNS_SERVER\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_PRIMARY_DNS_SERVER}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_PRIMARY_DNS_SERVER 28}}
+\par
+{\bkmkstart AAAAAAALUL}
+{\bkmkend AAAAAAALUL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_PRIMARY_NBNS_SERVER\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_PRIMARY_NBNS_SERVER}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_PRIMARY_NBNS_SERVER 30}}
+\par
+{\bkmkstart AAAAAAALUM}
+{\bkmkend AAAAAAALUM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_RAS_VENDOR\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_RAS_VENDOR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_RAS_VENDOR 9}}
+\par
+{\bkmkstart AAAAAAALUN}
+{\bkmkend AAAAAAALUN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_RAS_VERSION\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_RAS_VERSION}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_RAS_VERSION 18}}
+\par
+{\bkmkstart AAAAAAALUO}
+{\bkmkend AAAAAAALUO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_SECONDARY_DNS_SERVER\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_SECONDARY_DNS_SERVER}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_SECONDARY_DNS_SERVER 29}}
+\par
+{\bkmkstart AAAAAAALUP}
+{\bkmkend AAAAAAALUP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_MICROSOFT_MS_SECONDARY_NBNS_SERVER\:radius.php}
+{\xe \v radius.php\:RADIUS_MICROSOFT_MS_SECONDARY_NBNS_SERVER}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_MICROSOFT_MS_SECONDARY_NBNS_SERVER 31}}
+\par
+{\bkmkstart AAAAAAALUQ}
+{\bkmkend AAAAAAALUQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_NAS_IDENTIFIER\:radius.php}
+{\xe \v radius.php\:RADIUS_NAS_IDENTIFIER}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_NAS_IDENTIFIER 32}}
+\par
+{\bkmkstart AAAAAAALUR}
+{\bkmkend AAAAAAALUR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_NAS_IP_ADDRESS\:radius.php}
+{\xe \v radius.php\:RADIUS_NAS_IP_ADDRESS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_NAS_IP_ADDRESS 4}}
+\par
+{\bkmkstart AAAAAAALUS}
+{\bkmkend AAAAAAALUS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The NAS-IP-Address attribute. The attribute value is expected to the IP address of the RADIUS client encoded as an integer, which can be set using \{\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+radius_put_addr()\}. \par
+}}}}
+{\xe \v RADIUS_NAS_IPV6_ADDRESS\:radius.php}
+{\xe \v radius.php\:RADIUS_NAS_IPV6_ADDRESS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_NAS_IPV6_ADDRESS 95}}
+\par
+{\bkmkstart AAAAAAALUT}
+{\bkmkend AAAAAAALUT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_NAS_PORT\:radius.php}
+{\xe \v radius.php\:RADIUS_NAS_PORT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_NAS_PORT 5}}
+\par
+{\bkmkstart AAAAAAALUU}
+{\bkmkend AAAAAAALUU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The NAS-Port attribute. The attribute value is expected to be the physical port of the user on the RADIUS client encoded as an integer, which can be set using \{\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+radius_put_int()\}. \par
+}}}}
+{\xe \v RADIUS_NAS_PORT_TYPE\:radius.php}
+{\xe \v radius.php\:RADIUS_NAS_PORT_TYPE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_NAS_PORT_TYPE 61}}
+\par
+{\bkmkstart AAAAAAALUV}
+{\bkmkend AAAAAAALUV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_NAS_PROMPT\:radius.php}
+{\xe \v radius.php\:RADIUS_NAS_PROMPT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_NAS_PROMPT 7}}
+\par
+{\bkmkstart AAAAAAALUW}
+{\bkmkend AAAAAAALUW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_OPTION_NONE\:radius.php}
+{\xe \v radius.php\:RADIUS_OPTION_NONE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_OPTION_NONE RADIUS_OPTION_NONE}}
+\par
+{\bkmkstart AAAAAAALUX}
+{\bkmkend AAAAAAALUX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_OPTION_SALT\:radius.php}
+{\xe \v radius.php\:RADIUS_OPTION_SALT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_OPTION_SALT 2}}
+\par
+{\bkmkstart AAAAAAALUY}
+{\bkmkend AAAAAAALUY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+When set, this option will result in the attribute value being tagged with the value of the tag parameter. \par
+}}
+{\xe \v RADIUS_OPTION_TAGGED\:radius.php}
+{\xe \v radius.php\:RADIUS_OPTION_TAGGED}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_OPTION_TAGGED RADIUS_OPTION_TAGGED}}
+\par
+{\bkmkstart AAAAAAALUZ}
+{\bkmkend AAAAAAALUZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_OUTBOUND\:radius.php}
+{\xe \v radius.php\:RADIUS_OUTBOUND}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_OUTBOUND 5}}
+\par
+{\bkmkstart AAAAAAALVA}
+{\bkmkend AAAAAAALVA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_PIAFS\:radius.php}
+{\xe \v radius.php\:RADIUS_PIAFS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_PIAFS 6}}
+\par
+{\bkmkstart AAAAAAALVB}
+{\bkmkend AAAAAAALVB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_PORT_LIMIT\:radius.php}
+{\xe \v radius.php\:RADIUS_PORT_LIMIT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_PORT_LIMIT 62}}
+\par
+{\bkmkstart AAAAAAALVC}
+{\bkmkend AAAAAAALVC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_PPP\:radius.php}
+{\xe \v radius.php\:RADIUS_PPP}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_PPP 1}}
+\par
+{\bkmkstart AAAAAAALVD}
+{\bkmkend AAAAAAALVD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_PROXY_STATE\:radius.php}
+{\xe \v radius.php\:RADIUS_PROXY_STATE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_PROXY_STATE 33}}
+\par
+{\bkmkstart AAAAAAALVE}
+{\bkmkend AAAAAAALVE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_REPLY_MESSAGE\:radius.php}
+{\xe \v radius.php\:RADIUS_REPLY_MESSAGE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_REPLY_MESSAGE 18}}
+\par
+{\bkmkstart AAAAAAALVF}
+{\bkmkend AAAAAAALVF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_SDSL\:radius.php}
+{\xe \v radius.php\:RADIUS_SDSL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_SDSL 11}}
+\par
+{\bkmkstart AAAAAAALVG}
+{\bkmkend AAAAAAALVG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_SERVICE_TYPE\:radius.php}
+{\xe \v radius.php\:RADIUS_SERVICE_TYPE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_SERVICE_TYPE 6}}
+\par
+{\bkmkstart AAAAAAALVH}
+{\bkmkend AAAAAAALVH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Service-Type attribute. The attribute value indicates the service type the user is requesting, and is expected to be an integer, which can be set using \{\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+radius_put_int()\}. {\b A} number of constants are provided to represent the possible values of this {\b attribute}. They include:{
+\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_LOGIN}\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_FRAMED}\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_CALLBACK_LOGIN}\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_CALLBACK_FRAMED}\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_OUTBOUND}\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_ADMINISTRATIVE}\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_NAS_PROMPT}\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_AUTHENTICATE_ONLY}\par
+\pard\plain \s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RADIUS_CALLBACK_NAS_PROMPT} \par}
+}}}}
+{\xe \v RADIUS_SESSION_TIMEOUT\:radius.php}
+{\xe \v radius.php\:RADIUS_SESSION_TIMEOUT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_SESSION_TIMEOUT 27}}
+\par
+{\bkmkstart AAAAAAALVI}
+{\bkmkend AAAAAAALVI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_SLIP\:radius.php}
+{\xe \v radius.php\:RADIUS_SLIP}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_SLIP 2}}
+\par
+{\bkmkstart AAAAAAALVJ}
+{\bkmkend AAAAAAALVJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_START\:radius.php}
+{\xe \v radius.php\:RADIUS_START}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_START 1}}
+\par
+{\bkmkstart AAAAAAALVK}
+{\bkmkend AAAAAAALVK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_STATE\:radius.php}
+{\xe \v radius.php\:RADIUS_STATE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_STATE 24}}
+\par
+{\bkmkstart AAAAAAALVL}
+{\bkmkend AAAAAAALVL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_STOP\:radius.php}
+{\xe \v radius.php\:RADIUS_STOP}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_STOP 2}}
+\par
+{\bkmkstart AAAAAAALVM}
+{\bkmkend AAAAAAALVM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_SYNC\:radius.php}
+{\xe \v radius.php\:RADIUS_SYNC}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_SYNC 1}}
+\par
+{\bkmkstart AAAAAAALVN}
+{\bkmkend AAAAAAALVN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_ADMIN_REBOOT\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_ADMIN_REBOOT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_ADMIN_REBOOT 7}}
+\par
+{\bkmkstart AAAAAAALVO}
+{\bkmkend AAAAAAALVO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_ADMIN_RESET\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_ADMIN_RESET}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_ADMIN_RESET 6}}
+\par
+{\bkmkstart AAAAAAALVP}
+{\bkmkend AAAAAAALVP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_CALLBACK\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_CALLBACK}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_CALLBACK 16}}
+\par
+{\bkmkstart AAAAAAALVQ}
+{\bkmkend AAAAAAALVQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_HOST_REQUEST\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_HOST_REQUEST}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_HOST_REQUEST 18}}
+\par
+{\bkmkstart AAAAAAALVR}
+{\bkmkend AAAAAAALVR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_IDLE_TIMEOUT\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_IDLE_TIMEOUT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_IDLE_TIMEOUT 4}}
+\par
+{\bkmkstart AAAAAAALVS}
+{\bkmkend AAAAAAALVS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_LOST_CARRIER\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_LOST_CARRIER}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_LOST_CARRIER 2}}
+\par
+{\bkmkstart AAAAAAALVT}
+{\bkmkend AAAAAAALVT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_LOST_SERVICE\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_LOST_SERVICE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_LOST_SERVICE 3}}
+\par
+{\bkmkstart AAAAAAALVU}
+{\bkmkend AAAAAAALVU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_NAS_ERROR\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_NAS_ERROR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_NAS_ERROR 9}}
+\par
+{\bkmkstart AAAAAAALVV}
+{\bkmkend AAAAAAALVV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_NAS_REBOOT\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_NAS_REBOOT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_NAS_REBOOT 11}}
+\par
+{\bkmkstart AAAAAAALVW}
+{\bkmkend AAAAAAALVW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_NAS_REQUEST\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_NAS_REQUEST}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_NAS_REQUEST 10}}
+\par
+{\bkmkstart AAAAAAALVX}
+{\bkmkend AAAAAAALVX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_PORT_ERROR\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_PORT_ERROR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_PORT_ERROR 8}}
+\par
+{\bkmkstart AAAAAAALVY}
+{\bkmkend AAAAAAALVY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_PORT_PREEMPTED\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_PORT_PREEMPTED}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_PORT_PREEMPTED 13}}
+\par
+{\bkmkstart AAAAAAALVZ}
+{\bkmkend AAAAAAALVZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_PORT_SUSPENDED\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_PORT_SUSPENDED}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_PORT_SUSPENDED 14}}
+\par
+{\bkmkstart AAAAAAALWA}
+{\bkmkend AAAAAAALWA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_PORT_UNNEEDED\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_PORT_UNNEEDED}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_PORT_UNNEEDED 12}}
+\par
+{\bkmkstart AAAAAAALWB}
+{\bkmkend AAAAAAALWB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_SERVICE_UNAVAILABLE\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_SERVICE_UNAVAILABLE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_SERVICE_UNAVAILABLE 15}}
+\par
+{\bkmkstart AAAAAAALWC}
+{\bkmkend AAAAAAALWC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_SESSION_TIMEOUT\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_SESSION_TIMEOUT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_SESSION_TIMEOUT 5}}
+\par
+{\bkmkstart AAAAAAALWD}
+{\bkmkend AAAAAAALWD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_USER_ERROR\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_USER_ERROR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_USER_ERROR 17}}
+\par
+{\bkmkstart AAAAAAALWE}
+{\bkmkend AAAAAAALWE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERM_USER_REQUEST\:radius.php}
+{\xe \v radius.php\:RADIUS_TERM_USER_REQUEST}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERM_USER_REQUEST 1}}
+\par
+{\bkmkstart AAAAAAALWF}
+{\bkmkend AAAAAAALWF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_TERMINATION_ACTION\:radius.php}
+{\xe \v radius.php\:RADIUS_TERMINATION_ACTION}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_TERMINATION_ACTION 29}}
+\par
+{\bkmkstart AAAAAAALWG}
+{\bkmkend AAAAAAALWG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_USER_NAME\:radius.php}
+{\xe \v radius.php\:RADIUS_USER_NAME}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_USER_NAME 1}}
+\par
+{\bkmkstart AAAAAAALWH}
+{\bkmkend AAAAAAALWH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+RADIUS Attribute Types {\b The User-Name attribute. The attribute value is expected to be a string containing the name of the user being authenticated, and can be set using \{ radius_put_attr()\}. }\par
+}}
+{\xe \v RADIUS_USER_PASSWORD\:radius.php}
+{\xe \v radius.php\:RADIUS_USER_PASSWORD}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_USER_PASSWORD 2}}
+\par
+{\bkmkstart AAAAAAALWI}
+{\bkmkend AAAAAAALWI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The User-Password attribute. The attribute value is expected to be a string containing the user's password, and can be set using \{\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+See also\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+radius_put_attr()\}. This value will be obfuscated on transmission as described in section 5.2 of RFC 2865. {\b https://secure.php.net/manual/de/radius.constants.attributes.php}\par
+}}}}
+{\xe \v RADIUS_VENDOR_MICROSOFT\:radius.php}
+{\xe \v radius.php\:RADIUS_VENDOR_MICROSOFT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_VENDOR_MICROSOFT 311}}
+\par
+{\bkmkstart AAAAAAALWJ}
+{\bkmkend AAAAAAALWJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_VENDOR_SPECIFIC\:radius.php}
+{\xe \v radius.php\:RADIUS_VENDOR_SPECIFIC}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_VENDOR_SPECIFIC 26}}
+\par
+{\bkmkstart AAAAAAALWK}
+{\bkmkend AAAAAAALWK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_VIRTUAL\:radius.php}
+{\xe \v radius.php\:RADIUS_VIRTUAL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_VIRTUAL 5}}
+\par
+{\bkmkstart AAAAAAALWL}
+{\bkmkend AAAAAAALWL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_WIRELESS_IEEE_802_11\:radius.php}
+{\xe \v radius.php\:RADIUS_WIRELESS_IEEE_802_11}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_WIRELESS_IEEE_802_11 19}}
+\par
+{\bkmkstart AAAAAAALWM}
+{\bkmkend AAAAAAALWM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_WIRELESS_OTHER\:radius.php}
+{\xe \v radius.php\:RADIUS_WIRELESS_OTHER}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_WIRELESS_OTHER 18}}
+\par
+{\bkmkstart AAAAAAALWN}
+{\bkmkend AAAAAAALWN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_X_25\:radius.php}
+{\xe \v radius.php\:RADIUS_X_25}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_X_25 8}}
+\par
+{\bkmkstart AAAAAAALWO}
+{\bkmkend AAAAAAALWO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_X_75\:radius.php}
+{\xe \v radius.php\:RADIUS_X_75}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_X_75 9}}
+\par
+{\bkmkstart AAAAAAALWP}
+{\bkmkend AAAAAAALWP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_XDSL\:radius.php}
+{\xe \v radius.php\:RADIUS_XDSL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_XDSL 16}}
+\par
+{\bkmkstart AAAAAAALWQ}
+{\bkmkend AAAAAAALWQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v RADIUS_XYLOGICS\:radius.php}
+{\xe \v radius.php\:RADIUS_XYLOGICS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const RADIUS_XYLOGICS 5}}
+\par
+{\bkmkstart AAAAAAALWR}
+{\bkmkend AAAAAAALWR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+}

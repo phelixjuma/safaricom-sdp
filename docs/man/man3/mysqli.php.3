@@ -1,0 +1,1441 @@
+.TH "vendor/jetbrains/phpstorm-stubs/mysqli/mysqli.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/mysqli/mysqli.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBmysqli_sql_exception\fP"
+.br
+.ti -1c
+.RI "class \fBmysqli_driver\fP"
+.br
+.ti -1c
+.RI "class \fBmysqli\fP"
+.br
+.ti -1c
+.RI "class \fBmysqli_warning\fP"
+.br
+.ti -1c
+.RI "class \fBmysqli_result\fP"
+.br
+.ti -1c
+.RI "class \fBmysqli_stmt\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBmysqli_affected_rows\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_autocommit\fP ($\fBlink\fP, $mode)"
+.br
+.ti -1c
+.RI "\fBmysqli_begin_transaction\fP ($\fBlink\fP, $flags=0, $name=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_change_user\fP ($\fBlink\fP, $user, $password, $database)"
+.br
+.ti -1c
+.RI "\fBmysqli_character_set_name\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_close\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_commit\fP ($\fBlink\fP, $flags=0, $name=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_connect\fP ($host='', $user='', $password='', $database='', $port='', $socket='')"
+.br
+.ti -1c
+.RI "\fBmysqli_connect_errno\fP ()"
+.br
+.ti -1c
+.RI "\fBmysqli_connect_error\fP ()"
+.br
+.ti -1c
+.RI "\fBmysqli_data_seek\fP ($result, $offset)"
+.br
+.ti -1c
+.RI "\fBmysqli_dump_debug_info\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_debug\fP ($message)"
+.br
+.ti -1c
+.RI "\fBmysqli_errno\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_error_list\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_error_list\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_error\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_execute\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_execute\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_fetch_field\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysqli_fetch_fields\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysqli_fetch_field_direct\fP ($result, $fieldnr)"
+.br
+.ti -1c
+.RI "\fBmysqli_fetch_lengths\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysqli_fetch_all\fP ($result, $resulttype=\fBMYSQLI_NUM\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_fetch_array\fP ($result, $resulttype=\fBMYSQLI_BOTH\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_fetch_assoc\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysqli_fetch_object\fP ($result, $class_name='\fBstdClass\fP', $params=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_fetch_row\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysqli_field_count\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_field_seek\fP ($result, $fieldnr)"
+.br
+.ti -1c
+.RI "\fBmysqli_field_tell\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysqli_free_result\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysqli_get_cache_stats\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_get_connection_stats\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_get_client_stats\fP ()"
+.br
+.ti -1c
+.RI "\fBmysqli_get_charset\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_get_client_info\fP ()"
+.br
+.ti -1c
+.RI "\fBmysqli_get_client_version\fP ()"
+.br
+.ti -1c
+.RI "\fBmysqli_get_host_info\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_get_links_stats\fP ()"
+.br
+.ti -1c
+.RI "\fBmysqli_get_proto_info\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_get_server_info\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_get_server_version\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_get_warnings\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_init\fP ()"
+.br
+.ti -1c
+.RI "\fBmysqli_info\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_insert_id\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_kill\fP ($\fBlink\fP, $processid)"
+.br
+.ti -1c
+.RI "\fBmysqli_set_local_infile_default\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_set_local_infile_handler\fP ($\fBlink\fP, $read_func)"
+.br
+.ti -1c
+.RI "\fBmysqli_more_results\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_multi_query\fP ($\fBlink\fP, $query)"
+.br
+.ti -1c
+.RI "\fBmysqli_next_result\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_num_fields\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysqli_num_rows\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmysqli_options\fP ($\fBlink\fP, $option, $value)"
+.br
+.ti -1c
+.RI "\fBmysqli_ping\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_poll\fP (array &$read=\fBnull\fP, array &$error=\fBnull\fP, &$reject=\fBnull\fP, $sec, $usec=0)"
+.br
+.ti -1c
+.RI "\fBmysqli_prepare\fP ($\fBlink\fP, $query)"
+.br
+.ti -1c
+.RI "\fBmysqli_report\fP ($flags)"
+.br
+.ti -1c
+.RI "\fBmysqli_query\fP ($\fBlink\fP, $query, $resultmode=\fBMYSQLI_STORE_RESULT\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_real_connect\fP ($\fBlink\fP, $host='', $user='', $password='', $database='', $port='', $socket='', $flags=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_real_escape_string\fP ($\fBlink\fP, $escapestr)"
+.br
+.ti -1c
+.RI "\fBmysqli_real_query\fP ($\fBlink\fP, $query)"
+.br
+.ti -1c
+.RI "\fBmysqli_reap_async_query\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_release_savepoint\fP ($\fBlink\fP, $name)"
+.br
+.ti -1c
+.RI "\fBmysqli_rollback\fP ($\fBlink\fP, $flags=0, $name=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_savepoint\fP ($\fBlink\fP, $name)"
+.br
+.ti -1c
+.RI "\fBmysqli_select_db\fP ($\fBlink\fP, $dbname)"
+.br
+.ti -1c
+.RI "\fBmysqli_set_charset\fP ($\fBlink\fP, $charset)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_affected_rows\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_attr_get\fP ($stmt, $attr)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_attr_set\fP ($stmt, $attr, $mode)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_field_count\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_init\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_prepare\fP ($stmt, $query)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_result_metadata\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_send_long_data\fP ($stmt, $param_nr, $data)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_bind_param\fP ($stmt, $types, &$var1, &\&.\&.\&. $\fB_\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_bind_result\fP ($stmt, &$var1, &\&.\&.\&. $\fB_\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_fetch\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_free_result\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_get_result\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_get_warnings\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_insert_id\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_reset\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_param_count\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_sqlstate\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_stat\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_ssl_set\fP ($\fBlink\fP, $\fBkey\fP, $cert, $ca, $capath, $cipher)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_close\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_data_seek\fP ($stmt, $offset)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_errno\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_error\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_more_results\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_next_result\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_num_rows\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_sqlstate\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_stmt_store_result\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_store_result\fP ($\fBlink\fP, int $option)"
+.br
+.ti -1c
+.RI "\fBmysqli_thread_id\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_thread_safe\fP ()"
+.br
+.ti -1c
+.RI "\fBmysqli_use_result\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_warning_count\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_refresh\fP ($\fBlink\fP, $options)"
+.br
+.ti -1c
+.RI "\fBmysqli_bind_param\fP ($stmt, $types)"
+.br
+.ti -1c
+.RI "\fBmysqli_bind_result\fP ($stmt, $types, &$var1)"
+.br
+.ti -1c
+.RI "\fBmysqli_client_encoding\fP ($\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBmysqli_escape_string\fP ($\fBlink\fP, $escapestr)"
+.br
+.ti -1c
+.RI "\fBmysqli_fetch\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_param_count\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_get_metadata\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmysqli_send_long_data\fP ($stmt, $param_nr, $data)"
+.br
+.ti -1c
+.RI "\fBmysqli_set_opt\fP ($\fBlink\fP, $option, $value)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBMYSQLI_READ_DEFAULT_GROUP\fP 5"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_READ_DEFAULT_FILE\fP 4"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_OPT_CONNECT_TIMEOUT\fP 0"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_OPT_LOCAL_INFILE\fP 8"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_SERVER_PUBLIC_KEY\fP 35"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_INIT_COMMAND\fP 3"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_OPT_NET_CMD_BUFFER_SIZE\fP 202"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_OPT_NET_READ_BUFFER_SIZE\fP 203"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_OPT_INT_AND_FLOAT_NATIVE\fP 201"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_CLIENT_SSL\fP 2048"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_CLIENT_COMPRESS\fP 32"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_CLIENT_INTERACTIVE\fP 1024"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_CLIENT_IGNORE_SPACE\fP 256"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_CLIENT_NO_SCHEMA\fP 16"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_CLIENT_FOUND_ROWS\fP 2"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_STORE_RESULT\fP 0"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_USE_RESULT\fP 1"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_ASYNC\fP 8"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_ASSOC\fP 1"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_NUM\fP 2"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_BOTH\fP 3"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_STMT_ATTR_UPDATE_MAX_LENGTH\fP 0"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_STMT_ATTR_CURSOR_TYPE\fP 1"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_CURSOR_TYPE_NO_CURSOR\fP 0"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_CURSOR_TYPE_READ_ONLY\fP 1"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_CURSOR_TYPE_FOR_UPDATE\fP 2"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_CURSOR_TYPE_SCROLLABLE\fP 4"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_STMT_ATTR_PREFETCH_ROWS\fP 2"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_NOT_NULL_FLAG\fP 1"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_PRI_KEY_FLAG\fP 2"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_UNIQUE_KEY_FLAG\fP 4"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_MULTIPLE_KEY_FLAG\fP 8"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_BLOB_FLAG\fP 16"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_UNSIGNED_FLAG\fP 32"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_ZEROFILL_FLAG\fP 64"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_AUTO_INCREMENT_FLAG\fP 512"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TIMESTAMP_FLAG\fP 1024"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_SET_FLAG\fP 2048"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_NUM_FLAG\fP 32768"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_PART_KEY_FLAG\fP 16384"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_GROUP_FLAG\fP 32768"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_ENUM_FLAG\fP 256"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_BINARY_FLAG\fP 128"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_NO_DEFAULT_VALUE_FLAG\fP 4096"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_ON_UPDATE_NOW_FLAG\fP 8192"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TRANS_START_READ_ONLY\fP 4"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TRANS_START_READ_WRITE\fP 2"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TRANS_START_WITH_CONSISTENT_SNAPSHOT\fP 1"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_DECIMAL\fP 0"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_TINY\fP 1"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_SHORT\fP 2"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_LONG\fP 3"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_FLOAT\fP 4"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_DOUBLE\fP 5"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_NULL\fP 6"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_TIMESTAMP\fP 7"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_LONGLONG\fP 8"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_INT24\fP 9"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_DATE\fP 10"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_TIME\fP 11"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_DATETIME\fP 12"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_YEAR\fP 13"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_NEWDATE\fP 14"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_ENUM\fP 247"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_SET\fP 248"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_TINY_BLOB\fP 249"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_MEDIUM_BLOB\fP 250"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_LONG_BLOB\fP 251"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_BLOB\fP 252"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_VAR_STRING\fP 253"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_STRING\fP 254"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_CHAR\fP 1"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_INTERVAL\fP 247"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_GEOMETRY\fP 255"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_NEWDECIMAL\fP 246"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_BIT\fP 16"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_SET_CHARSET_NAME\fP 7"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_NO_DATA\fP 100"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_DATA_TRUNCATED\fP 101"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_REPORT_INDEX\fP 4"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_REPORT_ERROR\fP 1"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_REPORT_STRICT\fP 2"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_REPORT_ALL\fP 255"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_REPORT_OFF\fP 0"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_DEBUG_TRACE_ENABLED\fP 0"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_SERVER_QUERY_NO_GOOD_INDEX_USED\fP 16"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_SERVER_QUERY_NO_INDEX_USED\fP 32"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_REFRESH_GRANT\fP 1"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_REFRESH_LOG\fP 2"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_REFRESH_TABLES\fP 4"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_REFRESH_HOSTS\fP 8"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_REFRESH_STATUS\fP 16"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_REFRESH_THREADS\fP 32"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_REFRESH_SLAVE\fP 64"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_REFRESH_MASTER\fP 128"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_SERVER_QUERY_WAS_SLOW\fP 2048"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_REFRESH_BACKUP_LOG\fP 2097152"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_OPT_SSL_VERIFY_SERVER_CERT\fP 21"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_SET_CHARSET_DIR\fP 6"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_SERVER_PS_OUT_PARAMS\fP 4096"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_CLIENT_SSL_VERIFY_SERVER_CERT\fP 1073741824"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_CLIENT_SSL_DONT_VERIFY_SERVER_CERT\fP 64"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_CLIENT_CAN_HANDLE_EXPIRED_PASSWORDS\fP 4194304"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_OPT_CAN_HANDLE_EXPIRED_PASSWORDS\fP 37"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_OPT_READ_TIMEOUT\fP 11"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_STORE_RESULT_COPY_DATA\fP 16"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TYPE_JSON\fP 245"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TRANS_COR_AND_CHAIN\fP 1"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TRANS_COR_AND_NO_CHAIN\fP 2"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TRANS_COR_RELEASE\fP 4"
+.br
+.ti -1c
+.RI "const \fBMYSQLI_TRANS_COR_NO_RELEASE\fP 8"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "mysqli_affected_rows ( $link)"
+(PHP 5)
+.PP
+Gets the number of affected rows in a previous MySQL operation \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int An integer greater than zero indicates the number of rows affected or retrieved\&. Zero indicates that no records where updated for an UPDATE statement, no rows matched the WHERE clause in the query or that no query has yet been executed\&. -1 indicates that the query returned an error\&. \fP
+.SS "mysqli_autocommit ( $link,  $mode)"
+Turns on or off auto-committing database modifications \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  bool $mode Whether to turn on auto-commit or not\&.  bool \fP
+.SS "mysqli_begin_transaction ( $link,  $flags = \fC0\fP,  $name = \fC\fBnull\fP\fP)"
+Starts a transaction \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int $flags [optional]  string $name [optional]  bool true on success or false on failure\&.  5\&.5 \fP
+.SS "mysqli_bind_param ( $stmt,  $types)"
+Alias for \fBmysqli_stmt_bind_param\fP \fBmysqli_stmt $stmt  $types  deprecated 200\&. 5\&.0 \fP
+.SS "mysqli_bind_result ( $stmt,  $types, & $var1)"
+Alias for \fBmysqli_stmt_bind_result\fP \fBmysqli_stmt $stmt  string $types  mixed $var1  deprecated 201\&. 5\&.0 \fP
+.SS "mysqli_change_user ( $link,  $user,  $password,  $database)"
+Changes the user of the specified database connection \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string $user The MySQL user name\&.  string $password The MySQL password\&.  string|null $database The database to change to\&. If desired, the NULL value may be passed resulting in only changing the user and not selecting a database\&.  bool \fP
+.SS "mysqli_character_set_name ( $link)"
+Returns the default character set for the database connection \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string The default character set for the current connection \fP
+.SS "mysqli_client_encoding ( $link)"
+Alias of \fBmysqli_character_set_name\fP \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string  deprecated 202\&. 5\&.0 \fP
+.SS "mysqli_close ( $link)"
+Closes a previously opened database connection \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  bool \fP
+.SS "mysqli_commit ( $link,  $flags = \fC0\fP,  $name = \fC\fBnull\fP\fP)"
+Commits the current transaction \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int $flags [optional] A bitmask of MYSQLI_TRANS_COR_* constants  string $name [optional If provided then COMMITname is executed  bool \fP
+.SS "mysqli_connect ( $host = \fC''\fP,  $user = \fC''\fP,  $password = \fC''\fP,  $database = \fC''\fP,  $port = \fC''\fP,  $socket = \fC''\fP)"
+Open a new connection to the MySQL server Alias of \fB\fBmysqli::__construct\fP\fP \fBstring $host Can be either a host name or an IP address\&. Passing the NULL value or the string 'localhost' to this parameter, the local host is assumed\&. When possible, pipes will be used instead of the TCP/IP protocol\&.  string $user The MySQL user name\&.  string $password If not provided or NULL, the MySQL server will attempt to authenticate the user against those user records which have no password only\&.  string $database If provided will specify the default database to be used when performing queries\&.  string $port Specifies the port number to attempt to connect to the MySQL server\&.  string $socket Specifies the socket or named pipe that should be used\&.  mysqli|false object which represents the connection to a MySQL Server or false if an error occurred\&. \fP
+.SS "mysqli_connect_errno ()"
+Returns the error code from last connect call \fBint Last error code number from the last call to mysqli_connect()\&. Zero means no error occurred\&. \fP
+.SS "mysqli_connect_error ()"
+Returns a string description of the last connect error \fBstring Last error message string from the last call to mysqli_connect()\&. \fP
+.SS "mysqli_data_seek ( $result,  $offset)"
+Adjusts the result pointer to an arbitrary row in the result 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result\fP \fBA\fP result set identifier returned by \fBmysqli_query()\fP, \fBmysqli_store_result()\fP or \fBmysqli_use_result()\fP\&. 
+.br
+\fI$offset\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns TRUE on success or FALSE on failure\&. 
+.RE
+.PP
+
+.SS "mysqli_debug ( $message)"
+Performs debugging operations using the Fred Fish debugging library\&. \fBstring $message  bool \fP
+.SS "mysqli_dump_debug_info ( $link)"
+Dump debugging information into the log \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  bool \fP
+.SS "mysqli_errno ( $link)"
+Returns the error code for the most recent function call \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int An error code value for the last call, if it failed\&. zero means no error occurred\&. \fP
+.SS "mysqli_error ( $link)"
+Returns a string description of the last error \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string \fP
+.SS "mysqli_error_list ( $link)"
+Returns a list of errors from the last command executed PHP > 5\&.4\&.0  \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  array A list of errors, each as an associative array containing the errno, error, and sqlstate\&. \fP
+.SS "mysqli_escape_string ( $link,  $escapestr)"
+Alias of \fBmysqli_real_escape_string\fP \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string $escapestr The string to be escaped  string  5\&.0 \fP
+.SS "mysqli_execute ( $stmt)"
+Executes a prepared Query 
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 Alias for \fBmysqli_stmt_execute\fP \fBmysqli_stmt $stmt  deprecated 199\&. \fP
+.RE
+.PP
+
+.SS "mysqli_fetch ( $stmt)"
+Alias for \fBmysqli_stmt_fetch\fP \fBmysqli_stmt $stmt  bool  deprecated 203\&. 5\&.0 \fP
+.SS "mysqli_fetch_all ( $result,  $resulttype = \fC\fBMYSQLI_NUM\fP\fP)"
+Fetches all result rows as an associative array, a numeric array, or both\&. Available only with mysqlnd\&. \fBmysqli_result $result A result set identifier returned by mysqli_query(), mysqli_store_result() or mysqli_use_result()\&.  int $resulttype  array Returns an array of associative or numeric arrays holding result rows\&. \fP
+.SS "mysqli_fetch_array ( $result,  $resulttype = \fC\fBMYSQLI_BOTH\fP\fP)"
+Fetch a result row as an associative, a numeric array, or both\&. \fBmysqli_result $result A result set identifier returned by mysqli_query(), mysqli_store_result() or mysqli_use_result()\&.  int $resulttype  array|null \fP
+.SS "mysqli_fetch_assoc ( $result)"
+Fetch a result row as an associative array \fBmysqli_result $result A result set identifier returned by mysqli_query(), mysqli_store_result() or mysqli_use_result()\&.  string[]|null Returns an associative array of strings representing the fetched row in the result set, where each key in the array represents the name of one of the result set's columns or NULL if there are no more rows in resultset\&. If two or more columns of the result have the same field names, the last column will take precedence\&. To access the other column(s) of the same name, you either need to access the result with numeric indices by using mysqli_fetch_row() or add alias names\&. \fP
+.SS "mysqli_fetch_field ( $result)"
+Returns the next field in the result set \fBmysqli_result $result A result set identifier returned by mysqli_query(), mysqli_store_result() or mysqli_use_result()\&.  object|false Returns an object which contains field definition information or FALSE if no field information is available\&. \fP
+.SS "mysqli_fetch_field_direct ( $result,  $fieldnr)"
+Fetch meta-data for a single field \fBmysqli_result $result A result set identifier returned by mysqli_query(), mysqli_store_result() or mysqli_use_result()\&.  int $fieldnr The field number\&. This value must be in the range from 0 to number of fields - 1\&.  object|false Returns an object which contains field definition information or FALSE if no field information for specified fieldnr is available\&. \fP
+.SS "mysqli_fetch_fields ( $result)"
+Returns an array of objects representing the fields in a result set \fBmysqli_result $result A result set identifier returned by mysqli_query(), mysqli_store_result() or mysqli_use_result()\&.  array|false Returns an array of objects which contains field definition information or FALSE if no field information is available\&. \fP
+.SS "mysqli_fetch_lengths ( $result)"
+Returns the lengths of the columns of the current row in the result set \fBmysqli_result $result A result set identifier returned by mysqli_query(), mysqli_store_result() or mysqli_use_result()\&.  array|false An array of integers representing the size of each column (not including any terminating null characters)\&. FALSE if an error occurred\&. \fP
+.SS "mysqli_fetch_object ( $result,  $class_name = \fC'\fBstdClass\fP'\fP,  $params = \fC\fBnull\fP\fP)"
+Returns the current row of a result set as an object\&. \fBmysqli_result $result A result set identifier returned by mysqli_query(), mysqli_store_result() or mysqli_use_result()\&.  string $class_name The name of the class to instantiate, set the properties of and return\&. If not specified, a stdClass object is returned\&.  array|null $params An optional array of parameters to pass to the constructor for class_name objects\&.  object|null Returns an object with string properties that corresponds to the fetched row or NULL if there are no more rows in resultset\&. If two or more columns of the result have the same field names, the last column will take precedence\&. To access the other column(s) of the same name, you either need to access the result with numeric indices by using mysqli_fetch_row() or add alias names\&. \fP
+.SS "mysqli_fetch_row ( $result)"
+Get a result row as an enumerated array \fBmysqli_result $result A result set identifier returned by mysqli_query(), mysqli_store_result() or mysqli_use_result()\&.  https://php.net/manual/en/mysqli-result.fetch-row.php  array|null mysqli_fetch_row returns an array of strings that corresponds to the fetched row or  if there are no more rows in result set\&. \fP
+.SS "mysqli_field_count ( $link)"
+Returns the number of columns for the most recent query \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int An integer representing the number of fields in a result set\&. \fP
+.SS "mysqli_field_seek ( $result,  $fieldnr)"
+Set result pointer to a specified field offset \fBmysqli_result $result A result set identifier returned by mysqli_query(), mysqli_store_result() or mysqli_use_result()\&.  int $fieldnr The field number\&. This value must be in the range from 0 to number of fields - 1\&.  bool \fP
+.SS "mysqli_field_tell ( $result)"
+Get current field offset of a result pointer \fBmysqli_result $result A result set identifier returned by mysqli_query(), mysqli_store_result() or mysqli_use_result()\&.  int \fP
+.SS "mysqli_free_result ( $result)"
+Frees the memory associated with a result \fBmysqli_result $result A result set identifier returned by mysqli_query(), mysqli_store_result() or mysqli_use_result()\&.  void \fP
+.SS "mysqli_get_cache_stats ( $link)"
+Returns client Zval cache statistics 
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 Available only with mysqlnd\&. \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  array|false an array with client Zval cache stats if success, false otherwise\&. \fP
+.RE
+.PP
+
+.SS "mysqli_get_charset ( $link)"
+Returns a character set object \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  object \fP
+.SS "mysqli_get_client_info ()"
+Get MySQL client info \fBstring A string that represents the MySQL client library version \fP
+.SS "mysqli_get_client_stats ()"
+Returns client per-process statistics 
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 \fBarray|false an array with client stats if success, false otherwise\&. \fP
+.RE
+.PP
+
+.SS "mysqli_get_client_version ()"
+Returns the MySQL client version as an integer \fBint \fP
+.SS "mysqli_get_connection_stats ( $link)"
+Returns statistics about the client connection \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  array|false an array with connection stats if successful, FALSE otherwise\&. \fP
+.SS "mysqli_get_host_info ( $link)"
+Returns a string representing the type of connection used \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string A character string representing the server hostname and the connection type\&. \fP
+.SS "mysqli_get_links_stats ()"
+Return information about open and cached links 
+.PP
+\fBReturns\fP
+.RS 4
+array \fBmysqli_get_links_stats()\fP returns an associative array with three elements, keyed as follows: 
+.RE
+.PP
+.IP "\fB\fCtotal\fP \fP" 1c
+.PP
+.PP
+An integer indicating the total number of open links in any state\&. 
+.PP
+.PP
+.IP "\fB\fCactive_plinks\fP \fP" 1c
+.PP
+.PP
+An integer representing the number of active persistent connections\&. 
+.PP
+.PP
+.IP "\fB\fCcached_plinks\fP \fP" 1c
+.PP
+.PP
+An integer representing the number of inactive persistent connections\&. 
+.PP
+.PP
+.PP
+
+.SS "mysqli_get_metadata ( $stmt)"
+Alias for \fBmysqli_stmt_result_metadata\fP \fBmysqli_stmt $stmt  mysqli_result|false Returns a result object or FALSE if an error occurred  deprecated 205\&. 5\&.0 \fP
+.SS "mysqli_get_proto_info ( $link)"
+Returns the version of the MySQL protocol used \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int Returns an integer representing the protocol version \fP
+.SS "mysqli_get_server_info ( $link)"
+Returns the version of the MySQL server \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string A character string representing the server version\&. \fP
+.SS "mysqli_get_server_version ( $link)"
+Returns the version of the MySQL server as an integer \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int An integer representing the server version\&. The form of this version number is main_version * 10000 + minor_version * 100 + sub_version (i\&.e\&. version 4\&.1\&.0 is 40100)\&. \fP
+.SS "mysqli_get_warnings ( $link)"
+Get result of SHOW WARNINGS \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  mysqli_warning \fP
+.SS "mysqli_info ( $link)"
+Retrieves information about the most recently executed query \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string A character string representing additional information about the most recently executed query\&. \fP
+.SS "mysqli_init ()"
+Initializes MySQLi and returns a resource for use with \fBmysqli_real_connect()\fP \fBmysqli  mysqli_real_connect() \fP
+.SS "mysqli_insert_id ( $link)"
+Returns the auto generated id used in the last query \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int|string The value of the AUTO_INCREMENT field that was updated by the previous query\&. Returns zero if there was no previous query on the connection or if the query did not update an AUTO_INCREMENT value\&. If the number is greater than maximal int value, mysqli_insert_id() will return a string\&. \fP
+.SS "mysqli_kill ( $link,  $processid)"
+Asks the server to kill a MySQL thread \fBmysqli_thread_id()  mysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int $processid  bool \fP
+.SS "mysqli_more_results ( $link)"
+Check if there are any more query results from a multi query \fBmysqli_multi_query()  mysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  bool \fP
+.SS "mysqli_multi_query ( $link,  $query)"
+Performs a query on the database \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string $query One or more queries which are separated by semicolons\&.  bool Returns FALSE if the first statement failed\&. To retrieve subsequent errors from other statements you have to call mysqli_next_result() first\&. \fP
+.SS "mysqli_next_result ( $link)"
+Prepare next result from multi_query \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  bool \fP
+.SS "mysqli_num_fields ( $result)"
+Get the number of fields in a result \fBmysqli_result $result A result set identifier returned by mysqli_query(), mysqli_store_result() or mysqli_use_result()\&.  int \fP
+.SS "mysqli_num_rows ( $result)"
+Gets the number of rows in a result \fBmysqli_result $result A result set identifier returned by mysqli_query(), mysqli_store_result() or mysqli_use_result()\&.  int Returns number of rows in the result set\&. \fP
+.SS "mysqli_options ( $link,  $option,  $value)"
+Set options \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int $option  mixed $value  bool \fP
+.SS "mysqli_param_count ( $stmt)"
+Alias for \fBmysqli_stmt_param_count\fP \fBmysqli_stmt $stmt  int  deprecated 204\&. 5\&.0 \fP
+.SS "mysqli_ping ( $link)"
+Pings a server connection, or tries to reconnect if the connection has gone down \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  bool \fP
+.SS "mysqli_poll (array & $read = \fC\fBnull\fP\fP, array & $error = \fC\fBnull\fP\fP, & $reject = \fC\fBnull\fP\fP,  $sec,  $usec = \fC0\fP)"
+Poll connections \fBarray $read  array $error  array $reject  int $sec  int $usec  int|false number of ready connections upon success, FALSE otherwise\&. \fP
+.SS "mysqli_prepare ( $link,  $query)"
+Prepare an SQL statement for execution \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string $query  mysqli_stmt|false A statement object or FALSE if an error occurred\&. \fP
+.SS "mysqli_query ( $link,  $query,  $resultmode = \fC\fBMYSQLI_STORE_RESULT\fP\fP)"
+Performs a query on the database \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string $query An SQL query  int $resultmode  mysqli_result|bool For successful SELECT, SHOW, DESCRIBE or EXPLAIN queries, mysqli_query() will return a mysqli_result object\&. For other successful queries mysqli_query() will return TRUE\&. Returns FALSE on failure\&. \fP
+.SS "mysqli_real_connect ( $link,  $host = \fC''\fP,  $user = \fC''\fP,  $password = \fC''\fP,  $database = \fC''\fP,  $port = \fC''\fP,  $socket = \fC''\fP,  $flags = \fC\fBnull\fP\fP)"
+Opens a connection to a mysql server \fBmysqli_connect()  mysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string $host  string $user  string $password  string $database  string $port  string $socket  int $flags  bool \fP
+.SS "mysqli_real_escape_string ( $link,  $escapestr)"
+Escapes special characters in a string for use in an SQL statement, taking into account the current charset of the connection \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string $escapestr The string to be escaped\&. Characters encoded are NUL (ASCII 0), , , \\, ', ", and Control-Z\&.  string \fP
+.SS "mysqli_real_query ( $link,  $query)"
+Execute an SQL query \fBmysqli_field_count()  mysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string $query  bool \fP
+.SS "mysqli_reap_async_query ( $link)"
+Get result from async query Available only with mysqlnd\&. \fBmysqli_poll()  mysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  mysqli_result|false mysqli_result in success, FALSE otherwise\&. \fP
+.SS "mysqli_refresh ( $link,  $options)"
+Flushes tables or caches, or resets the replication server information \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int $options  bool \fP
+.SS "mysqli_release_savepoint ( $link,  $name)"
+Set a named transaction savepoint \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string $name  bool Returns TRUE on success or FALSE on failure\&.  5\&.5 \fP
+.SS "mysqli_report ( $flags)"
+Enables or disables internal report functions 
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 \fBint $flags \fP flags 
+.RE
+.PP
+.PP
+Name 
+.PP
+Description  
+.PP
+\fBMYSQLI_REPORT_OFF\fP 
+.PP
+Turns reporting off  
+.PP
+\fBMYSQLI_REPORT_ERROR\fP 
+.PP
+Report errors from mysqli function calls  
+.PP
+\fBMYSQLI_REPORT_STRICT\fP 
+.PP
+Throw \fB\fBmysqli_sql_exception\fP\fP for errors instead of warnings   
+.PP
+\fBMYSQLI_REPORT_INDEX\fP 
+.PP
+Report if no index or bad index was used in a query  
+.PP
+\fBMYSQLI_REPORT_ALL\fP 
+.PP
+Set all options (report all)  
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "mysqli_rollback ( $link,  $flags = \fC0\fP,  $name = \fC\fBnull\fP\fP)"
+Rolls back current transaction \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int $flags [optional] A bitmask of MYSQLI_TRANS_COR_* constants  string $name [optional] If provided then ROLLBACKname is executed  bool \fP
+.SS "mysqli_savepoint ( $link,  $name)"
+Set a named transaction savepoint \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string $name  bool Returns TRUE on success or FALSE on failure\&.  5\&.5 \fP
+.SS "mysqli_select_db ( $link,  $dbname)"
+Selects the default database for database queries \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string $dbname  bool \fP
+.SS "mysqli_send_long_data ( $stmt,  $param_nr,  $data)"
+Alias for \fBmysqli_stmt_send_long_data\fP \fBmysqli_stmt $stmt  int $param_nr  string $data  bool  deprecated 206\&. 5\&.0 \fP
+.SS "mysqli_set_charset ( $link,  $charset)"
+Sets the default client character set \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string $charset  bool \fP
+.SS "mysqli_set_local_infile_default ( $link)"
+Unsets user defined handler for load local infile command \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  void \fP
+.SS "mysqli_set_local_infile_handler ( $link,  $read_func)"
+Set callback function for LOAD DATA LOCAL INFILE command \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  callable $read_func  bool \fP
+.SS "mysqli_set_opt ( $link,  $option,  $value)"
+Alias of \fBmysqli_options\fP \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int $option  mixed $value  bool  5\&.0 \fP
+.SS "mysqli_sqlstate ( $link)"
+Returns the SQLSTATE error from previous MySQL operation \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string Returns a string containing the SQLSTATE error code for the last error\&. The error code consists of five characters\&. '00000' means no error\&. \fP
+.SS "mysqli_ssl_set ( $link,  $key,  $cert,  $ca,  $capath,  $cipher)"
+Used for establishing secure connections using SSL \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string $key The path name to the key file  string $cert The path name to the certificate file  string $ca The path name to the certificate authority file  string $capath The pathname to a directory that contains trusted SSL CA certificates in PEM format  string $cipher A list of allowable ciphers to use for SSL encryption  bool This function always returns TRUE value\&.  5\&.0 \fP
+.SS "mysqli_stat ( $link)"
+Gets the current system status \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  string|false A string describing the server status\&. FALSE if an error occurred\&. \fP
+.SS "mysqli_stmt_affected_rows ( $stmt)"
+Returns the total number of rows changed, deleted, or inserted by the last executed statement \fBmysqli_stmt $stmt  int|string If the number of affected rows is greater than maximal PHP int value, the number of affected rows will be returned as a string value\&. \fP
+.SS "mysqli_stmt_attr_get ( $stmt,  $attr)"
+Get the current value of a statement attribute \fBmysqli_stmt $stmt  int $attr  int|false Returns FALSE if the attribute is not found, otherwise returns the value of the attribute\&. \fP
+.SS "mysqli_stmt_attr_set ( $stmt,  $attr,  $mode)"
+Modify the behavior of a prepared statement \fBmysqli_stmt $stmt  int $attr  int $mode  bool \fP
+.SS "mysqli_stmt_bind_param ( $stmt,  $types, & $var1, &\&.\&.\&. $_)"
+Binds variables to a prepared statement as parameters \fBmysqli_stmt $stmt A statement identifier returned by mysqli_stmt_init()  string $types \fP \fBA\fP string that contains one or more characters which specify the types for the corresponding bind variables: specification chars 
+.PP
+Character 
+.PP
+Description  
+.PP
+i 
+.PP
+corresponding variable has type integer  
+.PP
+d 
+.PP
+corresponding variable has type double  
+.PP
+s 
+.PP
+corresponding variable has type string  
+.PP
+b 
+.PP
+corresponding variable is a blob and will be sent in packets  
+.PP
+\fBParameters\fP
+.RS 4
+\fI$var1\fP 
+.RE
+.PP
+The number of variables and length of string types must match the parameters in the statement\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$_\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "mysqli_stmt_bind_result ( $stmt, & $var1, &\&.\&.\&. $_)"
+Binds variables to a prepared statement for result storage \fBmysqli_stmt $stmt Statement  mixed $var1 The variable to be bound\&.  mixed \&.\&.\&.$_ The variables to be bound\&.  bool \fP
+.SS "mysqli_stmt_close ( $stmt)"
+Closes a prepared statement \fBmysqli_stmt $stmt  bool \fP
+.SS "mysqli_stmt_data_seek ( $stmt,  $offset)"
+Seeks to an arbitrary row in statement result set \fBmysqli_stmt $stmt  int $offset  void \fP
+.SS "mysqli_stmt_errno ( $stmt)"
+Returns the error code for the most recent statement call \fBmysqli_stmt $stmt  int \fP
+.SS "mysqli_stmt_error ( $stmt)"
+Returns a string description for last statement error \fBmysqli_stmt $stmt  string \fP
+.SS "mysqli_stmt_error_list ( $stmt)"
+Returns a list of errors from the last statement executed PHP > 5\&.4\&.0  \fBmysqli_stmt $stmt A statement identifier returned by mysqli_stmt_init()\&.  array A list of errors, each as an associative array containing the errno, error, and sqlstate\&. \fP
+.SS "mysqli_stmt_execute ( $stmt)"
+Executes a prepared Query \fBmysqli_stmt $stmt  bool \fP
+.SS "mysqli_stmt_fetch ( $stmt)"
+Fetch results from a prepared statement into the bound variables \fBmysqli_stmt $stmt  bool \fP
+.SS "mysqli_stmt_field_count ( $stmt)"
+Returns the number of fields in the given statement \fBmysqli_stmt $stmt  int \fP
+.SS "mysqli_stmt_free_result ( $stmt)"
+Frees stored result memory for the given statement handle \fBmysqli_stmt $stmt  void \fP
+.SS "mysqli_stmt_get_result ( $stmt)"
+Gets a result set from a prepared statement \fBmysqli_stmt $stmt  mysqli_result|false Returns a resultset or FALSE on failure\&. \fP
+.SS "mysqli_stmt_get_warnings ( $stmt)"
+Get result of SHOW WARNINGS \fBmysqli_stmt $stmt  object (not documented, but it's probably a mysqli_warning object) \fP
+.SS "mysqli_stmt_init ( $link)"
+Initializes a statement and returns an object for use with mysqli_stmt_prepare \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  mysqli_stmt \fP
+.SS "mysqli_stmt_insert_id ( $stmt)"
+Get the ID generated from the previous INSERT operation \fBmysqli_stmt $stmt  mixed \fP
+.SS "mysqli_stmt_more_results ( $stmt)"
+Check if there are more query results from a multiple query \fBmysqli_stmt $stmt  bool \fP
+.SS "mysqli_stmt_next_result ( $stmt)"
+Reads the next result from a multiple query \fBmysqli_stmt $stmt  bool \fP
+.SS "mysqli_stmt_num_rows ( $stmt)"
+Return the number of rows in statements result set \fBmysqli_stmt $stmt  int \fP
+.SS "mysqli_stmt_param_count ( $stmt)"
+Returns the number of parameter for the given statement \fBmysqli_stmt $stmt  int \fP
+.SS "mysqli_stmt_prepare ( $stmt,  $query)"
+Prepare an SQL statement for execution \fBmysqli_stmt $stmt  string $query  bool \fP
+.SS "mysqli_stmt_reset ( $stmt)"
+Resets a prepared statement \fBmysqli_stmt $stmt  bool \fP
+.SS "mysqli_stmt_result_metadata ( $stmt)"
+Returns result set metadata from a prepared statement \fBmysqli_stmt $stmt  mysqli_result|false Returns a result object or FALSE if an error occurred \fP
+.SS "mysqli_stmt_send_long_data ( $stmt,  $param_nr,  $data)"
+Send data in blocks \fBmysqli_stmt $stmt  int $param_nr  string $data  bool \fP
+.SS "mysqli_stmt_sqlstate ( $stmt)"
+Returns SQLSTATE error from previous statement operation \fBmysqli_stmt $stmt  string Returns a string containing the SQLSTATE error code for the last error\&. The error code consists of five characters\&. '00000' means no error\&. \fP
+.SS "mysqli_stmt_store_result ( $stmt)"
+Transfers a result set from a prepared statement \fBmysqli_stmt $stmt  bool \fP
+.SS "mysqli_store_result ( $link, int $option)"
+Transfers a result set from the last query \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int $option [optional] The option that you want to set  mysqli_result|false \fP
+.SS "mysqli_thread_id ( $link)"
+Returns the thread ID for the current connection \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int Returns the Thread ID for the current connection\&. \fP
+.SS "mysqli_thread_safe ()"
+Returns whether thread safety is given or not \fBbool \fP
+.SS "mysqli_use_result ( $link)"
+Initiate a result set retrieval \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  mysqli_result|false \fP
+.SS "mysqli_warning_count ( $link)"
+Returns the number of warnings from the last query for the given link \fBmysqli $link A link identifier returned by mysqli_connect() or mysqli_init()  int \fP
+.SH "Variable Documentation"
+.PP 
+.SS "const MYSQLI_ASSOC 1"
+Columns are returned into the array having the fieldname as the array index\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_ASYNC 8"
+
+.SS "const MYSQLI_AUTO_INCREMENT_FLAG 512"
+Field is defined as AUTO_INCREMENT 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_BINARY_FLAG 128"
+
+.SS "const MYSQLI_BLOB_FLAG 16"
+Field is defined as BLOB 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_BOTH 3"
+Columns are returned into the array having both a numerical index and the fieldname as the associative index\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_CLIENT_CAN_HANDLE_EXPIRED_PASSWORDS 4194304"
+
+.SS "const MYSQLI_CLIENT_COMPRESS 32"
+Use compression protocol 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_CLIENT_FOUND_ROWS 2"
+
+.SS "const MYSQLI_CLIENT_IGNORE_SPACE 256"
+Allow spaces after function names\&. Makes all functions names reserved words\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_CLIENT_INTERACTIVE 1024"
+Allow interactive_timeout seconds (instead of wait_timeout seconds) of inactivity before closing the connection\&. The client's session wait_timeout variable will be set to the value of the session interactive_timeout variable\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_CLIENT_NO_SCHEMA 16"
+Don't allow the db_name\&.tbl_name\&.col_name syntax\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_CLIENT_SSL 2048"
+Use SSL (encrypted protocol)\&. This option should not be set by application programs; it is set internally in the MySQL client library 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_CLIENT_SSL_DONT_VERIFY_SERVER_CERT 64"
+
+.SS "const MYSQLI_CLIENT_SSL_VERIFY_SERVER_CERT 1073741824"
+
+.SS "const MYSQLI_CURSOR_TYPE_FOR_UPDATE 2"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_CURSOR_TYPE_NO_CURSOR 0"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_CURSOR_TYPE_READ_ONLY 1"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_CURSOR_TYPE_SCROLLABLE 4"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_DATA_TRUNCATED 101"
+Data truncation occurred\&. Available since PHP 5\&.1\&.0 and MySQL 5\&.0\&.5\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_DEBUG_TRACE_ENABLED 0"
+Is set to 1 if \fBmysqli_debug\fP functionality is enabled\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_ENUM_FLAG 256"
+Field is defined as ENUM\&. Available since PHP 5\&.3\&.0\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_GROUP_FLAG 32768"
+Field is part of GROUP BY 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_INIT_COMMAND 3"
+Command to execute when connecting to MySQL server\&. Will automatically be re-executed when reconnecting\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_MULTIPLE_KEY_FLAG 8"
+Field is part of an index\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_NO_DATA 100"
+No more data available for bind variable 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_NO_DEFAULT_VALUE_FLAG 4096"
+
+.SS "const MYSQLI_NOT_NULL_FLAG 1"
+Indicates that a field is defined as NOT NULL 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_NUM 2"
+Columns are returned into the array having an enumerated index\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_NUM_FLAG 32768"
+Field is defined as NUMERIC 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_ON_UPDATE_NOW_FLAG 8192"
+
+.SS "const MYSQLI_OPT_CAN_HANDLE_EXPIRED_PASSWORDS 37"
+
+.SS "const MYSQLI_OPT_CONNECT_TIMEOUT 0"
+Connect timeout in seconds 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_OPT_INT_AND_FLOAT_NATIVE 201"
+
+.SS "const MYSQLI_OPT_LOCAL_INFILE 8"
+Enables command LOAD LOCAL INFILE 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_OPT_NET_CMD_BUFFER_SIZE 202"
+
+.SS "const MYSQLI_OPT_NET_READ_BUFFER_SIZE 203"
+
+.SS "const MYSQLI_OPT_READ_TIMEOUT 11"
+
+.SS "const MYSQLI_OPT_SSL_VERIFY_SERVER_CERT 21"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_PART_KEY_FLAG 16384"
+Field is part of an multi-index 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_PRI_KEY_FLAG 2"
+Field is part of a primary index 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_READ_DEFAULT_FILE 4"
+Read options from the named option file instead of from my\&.cnf 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_READ_DEFAULT_GROUP 5"
+Read options from the named group from my\&.cnf or the file specified with \fBMYSQLI_READ_DEFAULT_FILE\fP 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_REFRESH_BACKUP_LOG 2097152"
+
+.SS "const MYSQLI_REFRESH_GRANT 1"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_REFRESH_HOSTS 8"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_REFRESH_LOG 2"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_REFRESH_MASTER 128"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_REFRESH_SLAVE 64"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_REFRESH_STATUS 16"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_REFRESH_TABLES 4"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_REFRESH_THREADS 32"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_REPORT_ALL 255"
+Set all options on (report all)\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_REPORT_ERROR 1"
+Report errors from mysqli function calls\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_REPORT_INDEX 4"
+Report if no index or bad index was used in a query\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_REPORT_OFF 0"
+Turns reporting off\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_REPORT_STRICT 2"
+Throw a \fBmysqli_sql_exception\fP for errors instead of warnings\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_SERVER_PS_OUT_PARAMS 4096"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_SERVER_PUBLIC_KEY 35"
+RSA public key file used with the SHA-256 based authentication\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_SERVER_QUERY_NO_GOOD_INDEX_USED 16"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_SERVER_QUERY_NO_INDEX_USED 32"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_SERVER_QUERY_WAS_SLOW 2048"
+
+.SS "const MYSQLI_SET_CHARSET_DIR 6"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_SET_CHARSET_NAME 7"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_SET_FLAG 2048"
+Field is defined as SET 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_STMT_ATTR_CURSOR_TYPE 1"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_STMT_ATTR_PREFETCH_ROWS 2"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_STMT_ATTR_UPDATE_MAX_LENGTH 0"
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_STORE_RESULT 0"
+For using buffered resultsets 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_STORE_RESULT_COPY_DATA 16"
+
+.SS "const MYSQLI_TIMESTAMP_FLAG 1024"
+Field is defined as TIMESTAMP 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TRANS_COR_AND_CHAIN 1"
+
+.SS "const MYSQLI_TRANS_COR_AND_NO_CHAIN 2"
+
+.SS "const MYSQLI_TRANS_COR_NO_RELEASE 8"
+
+.SS "const MYSQLI_TRANS_COR_RELEASE 4"
+
+.SS "const MYSQLI_TRANS_START_READ_ONLY 4"
+
+.SS "const MYSQLI_TRANS_START_READ_WRITE 2"
+
+.SS "const MYSQLI_TRANS_START_WITH_CONSISTENT_SNAPSHOT 1"
+
+.SS "const MYSQLI_TYPE_BIT 16"
+Field is defined as BIT (MySQL 5\&.0\&.3 and up) 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_BLOB 252"
+Field is defined as BLOB 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_CHAR 1"
+Field is defined as CHAR 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_DATE 10"
+Field is defined as DATE 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_DATETIME 12"
+Field is defined as DATETIME 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_DECIMAL 0"
+Field is defined as DECIMAL 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_DOUBLE 5"
+Field is defined as DOUBLE 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_ENUM 247"
+Field is defined as ENUM 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_FLOAT 4"
+Field is defined as FLOAT 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_GEOMETRY 255"
+Field is defined as GEOMETRY 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_INT24 9"
+Field is defined as MEDIUMINT 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_INTERVAL 247"
+Field is defined as INTERVAL 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_JSON 245"
+
+.SS "const MYSQLI_TYPE_LONG 3"
+Field is defined as INT 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_LONG_BLOB 251"
+Field is defined as LONGBLOB 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_LONGLONG 8"
+Field is defined as BIGINT 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_MEDIUM_BLOB 250"
+Field is defined as MEDIUMBLOB 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_NEWDATE 14"
+Field is defined as DATE 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_NEWDECIMAL 246"
+Precision math DECIMAL or NUMERIC field (MySQL 5\&.0\&.3 and up) 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_NULL 6"
+Field is defined as DEFAULT NULL 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_SET 248"
+Field is defined as SET 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_SHORT 2"
+Field is defined as SMALLINT 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_STRING 254"
+Field is defined as STRING 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_TIME 11"
+Field is defined as TIME 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_TIMESTAMP 7"
+Field is defined as TIMESTAMP 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_TINY 1"
+Field is defined as TINYINT 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_TINY_BLOB 249"
+Field is defined as TINYBLOB 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_VAR_STRING 253"
+Field is defined as VARCHAR 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_TYPE_YEAR 13"
+Field is defined as YEAR 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_UNIQUE_KEY_FLAG 4"
+Field is part of a unique index\&. 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_UNSIGNED_FLAG 32"
+Field is defined as UNSIGNED 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_USE_RESULT 1"
+For using unbuffered resultsets 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SS "const MYSQLI_ZEROFILL_FLAG 64"
+Field is defined as ZEROFILL 
+.PP
+\fBhttps://php\&.net/manual/en/mysqli\&.constants\&.php\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

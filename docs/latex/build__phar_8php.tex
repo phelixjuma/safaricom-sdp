@@ -1,0 +1,33 @@
+\hypertarget{build__phar_8php}{}\doxysection{vendor/paragonie/random\+\_\+compat/other/build\+\_\+phar.php File Reference}
+\label{build__phar_8php}\index{vendor/paragonie/random\_compat/other/build\_phar.php@{vendor/paragonie/random\_compat/other/build\_phar.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{build__phar_8php_a2c65ce87b20f770bf48c5f6c585ec4a5}{\$dist}} = \mbox{\hyperlink{standard__1_8php_aaee8f3bac8e7a477a61af1d8d1faf560}{dirname}}(\mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}}).\textquotesingle{}/dist\textquotesingle{}
+\item 
+\mbox{\hyperlink{apigen_2apigen_2bin_2bootstrap_8php_a18b663b7f311baed73ccaa681a5d3507}{if}}(!\mbox{\hyperlink{standard__7_8php_a0c2278ca9b10d67946b240a90cc08a70}{is\+\_\+dir}}(\$dist)) \mbox{\hyperlink{apigen_2apigen_2bin_2bootstrap_8php_a18b663b7f311baed73ccaa681a5d3507}{if}}(\mbox{\hyperlink{standard__7_8php_ad02100ca321a733ef47017630254a584}{file\+\_\+exists}}(\$dist.\textquotesingle{}/random\+\_\+compat.\+phar\textquotesingle{})) \mbox{\hyperlink{build__phar_8php_af58c278ef9b5dfed14c6cf1c693bedb7}{\$phar}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{build__phar_8php_a2c65ce87b20f770bf48c5f6c585ec4a5}\label{build__phar_8php_a2c65ce87b20f770bf48c5f6c585ec4a5}} 
+\index{build\_phar.php@{build\_phar.php}!\$dist@{\$dist}}
+\index{\$dist@{\$dist}!build\_phar.php@{build\_phar.php}}
+\doxysubsubsection{\texorpdfstring{\$dist}{$dist}}
+{\footnotesize\ttfamily \$dist = \mbox{\hyperlink{standard__1_8php_aaee8f3bac8e7a477a61af1d8d1faf560}{dirname}}(\mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}}).\textquotesingle{}/dist\textquotesingle{}}
+
+\mbox{\Hypertarget{build__phar_8php_af58c278ef9b5dfed14c6cf1c693bedb7}\label{build__phar_8php_af58c278ef9b5dfed14c6cf1c693bedb7}} 
+\index{build\_phar.php@{build\_phar.php}!\$phar@{\$phar}}
+\index{\$phar@{\$phar}!build\_phar.php@{build\_phar.php}}
+\doxysubsubsection{\texorpdfstring{\$phar}{$phar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{apigen_2apigen_2bin_2bootstrap_8php_a18b663b7f311baed73ccaa681a5d3507}{if}} (!\mbox{\hyperlink{standard__7_8php_a0c2278ca9b10d67946b240a90cc08a70}{is\+\_\+dir}}( \$dist)) \mbox{\hyperlink{apigen_2apigen_2bin_2bootstrap_8php_a18b663b7f311baed73ccaa681a5d3507}{if}} (\mbox{\hyperlink{standard__7_8php_ad02100ca321a733ef47017630254a584}{file\+\_\+exists}}( \$dist.\textquotesingle{}/random\+\_\+compat.\+phar\textquotesingle{})) \$phar}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} \mbox{\hyperlink{class_phar}{Phar}}(}
+\DoxyCodeLine{    \mbox{\hyperlink{build__phar_8php_a2c65ce87b20f770bf48c5f6c585ec4a5}{\$dist}}.\textcolor{stringliteral}{'/random\_compat.phar'},}
+\DoxyCodeLine{    \mbox{\hyperlink{class_filesystem_iterator_a3ebf0298e7a454777f2d845444bbf61a}{FilesystemIterator::CURRENT\_AS\_FILEINFO}} | \(\backslash\)\mbox{\hyperlink{class_filesystem_iterator_a47f71549a721d7f2fe2230f366f0f2df}{FilesystemIterator::KEY\_AS\_FILENAME}},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'random\_compat.phar'}}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}

@@ -1,0 +1,210 @@
+\hypertarget{readline_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/readline/readline.php File Reference}
+\label{readline_8php}\index{vendor/jetbrains/phpstorm-\/stubs/readline/readline.php@{vendor/jetbrains/phpstorm-\/stubs/readline/readline.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{readline_8php_ad8ad1fe5d0a73bcf3ab77b27fe4ace63}{readline}} (\$prompt=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{readline_8php_a5ac94b19cc8922019b8e619c0b08aa82}{readline\+\_\+info}} (\$varname=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$newvalue=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{readline_8php_a2b21b8116e4cdc42f85967c745f8ff0b}{readline\+\_\+add\+\_\+history}} (\$\mbox{\hyperlink{application__renderexception3_8txt_a34d7e048569f42facb481cd960667ee4}{line}})
+\item 
+\mbox{\hyperlink{readline_8php_a2332cabfd2f35e3035f223d4f98e95ec}{readline\+\_\+clear\+\_\+history}} ()
+\item 
+\mbox{\hyperlink{readline_8php_ae6e2aee3a5969e5e327fb4b5158bbcd8}{readline\+\_\+list\+\_\+history}} ()
+\item 
+\mbox{\hyperlink{readline_8php_ab0686c265bbd32fe7bf938df913bab34}{readline\+\_\+read\+\_\+history}} (\$filename=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{readline_8php_ae9853a08307d9e3964d5f315fad4094d}{readline\+\_\+write\+\_\+history}} (\$filename=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{readline_8php_a6202f73a6cb4e23fc886aae4d691ae91}{readline\+\_\+completion\+\_\+function}} (callable \$\mbox{\hyperlink{interactive__command__1_8php_ab203aa61d1e8a9ac29ea9b66299b7d46}{function}})
+\item 
+\mbox{\hyperlink{readline_8php_a8618d893d5fb79b19e705b0130ce1352}{readline\+\_\+callback\+\_\+handler\+\_\+install}} (\$prompt, callable \$\mbox{\hyperlink{phpunit_2phpunit_2src_2_framework_2_assert_2_functions_8php_ae2242eb47799ca6a822b022dc1bd1ac9}{callback}})
+\item 
+\mbox{\hyperlink{readline_8php_aa0e061a33e608a2b364d6ce5f54249b9}{readline\+\_\+callback\+\_\+read\+\_\+char}} ()
+\item 
+\mbox{\hyperlink{readline_8php_a9b60c44182da762a2c33222aff1a4507}{readline\+\_\+callback\+\_\+handler\+\_\+remove}} ()
+\item 
+\mbox{\hyperlink{readline_8php_a4bd87ce80d36c4220bcad27f058fa2e0}{readline\+\_\+redisplay}} ()
+\item 
+\mbox{\hyperlink{readline_8php_a9cf82e5799240754dd714ff0b3936311}{readline\+\_\+on\+\_\+new\+\_\+line}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{readline_8php_a2c2db6d3208000ae28f1f93d2676c21b}{R\+E\+A\+D\+L\+I\+N\+E\+\_\+\+L\+IB}} \char`\"{}libedit\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{readline_8php_ad8ad1fe5d0a73bcf3ab77b27fe4ace63}\label{readline_8php_ad8ad1fe5d0a73bcf3ab77b27fe4ace63}} 
+\index{readline.php@{readline.php}!readline@{readline}}
+\index{readline@{readline}!readline.php@{readline.php}}
+\doxysubsubsection{\texorpdfstring{readline()}{readline()}}
+{\footnotesize\ttfamily readline (\begin{DoxyParamCaption}\item[{}]{\$prompt = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Reads a line \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$prompt \mbox{[}optional\mbox{]} }} You may specify a string with which to prompt the user. 
+
+\begin{DoxyReturn}{Returns}
+string a single string from the user. The line returned has the ending newline removed. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{readline_8php_a2b21b8116e4cdc42f85967c745f8ff0b}\label{readline_8php_a2b21b8116e4cdc42f85967c745f8ff0b}} 
+\index{readline.php@{readline.php}!readline\_add\_history@{readline\_add\_history}}
+\index{readline\_add\_history@{readline\_add\_history}!readline.php@{readline.php}}
+\doxysubsubsection{\texorpdfstring{readline\_add\_history()}{readline\_add\_history()}}
+{\footnotesize\ttfamily readline\+\_\+add\+\_\+history (\begin{DoxyParamCaption}\item[{}]{\$line }\end{DoxyParamCaption})}
+
+Adds a line to the history \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$line }} The line to be added in the history. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{readline_8php_a8618d893d5fb79b19e705b0130ce1352}\label{readline_8php_a8618d893d5fb79b19e705b0130ce1352}} 
+\index{readline.php@{readline.php}!readline\_callback\_handler\_install@{readline\_callback\_handler\_install}}
+\index{readline\_callback\_handler\_install@{readline\_callback\_handler\_install}!readline.php@{readline.php}}
+\doxysubsubsection{\texorpdfstring{readline\_callback\_handler\_install()}{readline\_callback\_handler\_install()}}
+{\footnotesize\ttfamily readline\+\_\+callback\+\_\+handler\+\_\+install (\begin{DoxyParamCaption}\item[{}]{\$prompt,  }\item[{callable}]{\$callback }\end{DoxyParamCaption})}
+
+Initializes the readline callback interface and terminal, prints the prompt and returns immediately \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$prompt }} The prompt message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+The {\itshape callback} function takes one parameter; the user input returned. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+1 
+\end{DoxySince}
+\mbox{\Hypertarget{readline_8php_a9b60c44182da762a2c33222aff1a4507}\label{readline_8php_a9b60c44182da762a2c33222aff1a4507}} 
+\index{readline.php@{readline.php}!readline\_callback\_handler\_remove@{readline\_callback\_handler\_remove}}
+\index{readline\_callback\_handler\_remove@{readline\_callback\_handler\_remove}!readline.php@{readline.php}}
+\doxysubsubsection{\texorpdfstring{readline\_callback\_handler\_remove()}{readline\_callback\_handler\_remove()}}
+{\footnotesize\ttfamily readline\+\_\+callback\+\_\+handler\+\_\+remove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Removes a previously installed callback handler and restores terminal settings \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{bool {\bfseries{T\+R\+UE}} if a previously installed callback handler was removed, or {\bfseries{F\+A\+L\+SE}} if one could not be found.  5.\+1 }}\mbox{\Hypertarget{readline_8php_aa0e061a33e608a2b364d6ce5f54249b9}\label{readline_8php_aa0e061a33e608a2b364d6ce5f54249b9}} 
+\index{readline.php@{readline.php}!readline\_callback\_read\_char@{readline\_callback\_read\_char}}
+\index{readline\_callback\_read\_char@{readline\_callback\_read\_char}!readline.php@{readline.php}}
+\doxysubsubsection{\texorpdfstring{readline\_callback\_read\_char()}{readline\_callback\_read\_char()}}
+{\footnotesize\ttfamily readline\+\_\+callback\+\_\+read\+\_\+char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reads a character and informs the readline callback interface when a line is received \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{void No value is returned.  5.\+1 }}\mbox{\Hypertarget{readline_8php_a2332cabfd2f35e3035f223d4f98e95ec}\label{readline_8php_a2332cabfd2f35e3035f223d4f98e95ec}} 
+\index{readline.php@{readline.php}!readline\_clear\_history@{readline\_clear\_history}}
+\index{readline\_clear\_history@{readline\_clear\_history}!readline.php@{readline.php}}
+\doxysubsubsection{\texorpdfstring{readline\_clear\_history()}{readline\_clear\_history()}}
+{\footnotesize\ttfamily readline\+\_\+clear\+\_\+history (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clears the history \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure.  4.\+0  5.\+0 }}\mbox{\Hypertarget{readline_8php_a6202f73a6cb4e23fc886aae4d691ae91}\label{readline_8php_a6202f73a6cb4e23fc886aae4d691ae91}} 
+\index{readline.php@{readline.php}!readline\_completion\_function@{readline\_completion\_function}}
+\index{readline\_completion\_function@{readline\_completion\_function}!readline.php@{readline.php}}
+\doxysubsubsection{\texorpdfstring{readline\_completion\_function()}{readline\_completion\_function()}}
+{\footnotesize\ttfamily readline\+\_\+completion\+\_\+function (\begin{DoxyParamCaption}\item[{callable}]{\$function }\end{DoxyParamCaption})}
+
+Registers a completion function \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{callable \$function }} You must supply the name of an existing function which accepts a partial command line and returns an array of possible matches. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{readline_8php_a5ac94b19cc8922019b8e619c0b08aa82}\label{readline_8php_a5ac94b19cc8922019b8e619c0b08aa82}} 
+\index{readline.php@{readline.php}!readline\_info@{readline\_info}}
+\index{readline\_info@{readline\_info}!readline.php@{readline.php}}
+\doxysubsubsection{\texorpdfstring{readline\_info()}{readline\_info()}}
+{\footnotesize\ttfamily readline\+\_\+info (\begin{DoxyParamCaption}\item[{}]{\$varname = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$newvalue = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Gets/sets various internal readline variables \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$varname \mbox{[}optional\mbox{]} }} \mbox{\hyperlink{class_a}{A}} variable name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$newvalue} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If provided, this will be the new value of the setting. 
+
+\begin{DoxyReturn}{Returns}
+mixed If called with no parameters, this function returns an array of values for all the setting readline uses. The elements will be indexed by the following values\+: done, end, erase\+\_\+empty\+\_\+line, library\+\_\+version, line\+\_\+buffer, mark, pending\+\_\+input, point, prompt, readline\+\_\+name, and terminal\+\_\+name. 
+\end{DoxyReturn}
+
+
+If called with one or two parameters, the old value is returned. \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{readline_8php_ae6e2aee3a5969e5e327fb4b5158bbcd8}\label{readline_8php_ae6e2aee3a5969e5e327fb4b5158bbcd8}} 
+\index{readline.php@{readline.php}!readline\_list\_history@{readline\_list\_history}}
+\index{readline\_list\_history@{readline\_list\_history}!readline.php@{readline.php}}
+\doxysubsubsection{\texorpdfstring{readline\_list\_history()}{readline\_list\_history()}}
+{\footnotesize\ttfamily readline\+\_\+list\+\_\+history (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Lists the history \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array an array of the entire command line history. The elements are indexed by integers starting at zero.  4.\+0  5.\+0 }}\mbox{\Hypertarget{readline_8php_a9cf82e5799240754dd714ff0b3936311}\label{readline_8php_a9cf82e5799240754dd714ff0b3936311}} 
+\index{readline.php@{readline.php}!readline\_on\_new\_line@{readline\_on\_new\_line}}
+\index{readline\_on\_new\_line@{readline\_on\_new\_line}!readline.php@{readline.php}}
+\doxysubsubsection{\texorpdfstring{readline\_on\_new\_line()}{readline\_on\_new\_line()}}
+{\footnotesize\ttfamily readline\+\_\+on\+\_\+new\+\_\+line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Inform readline that the cursor has moved to a new line \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{void No value is returned.  5.\+1 }}\mbox{\Hypertarget{readline_8php_ab0686c265bbd32fe7bf938df913bab34}\label{readline_8php_ab0686c265bbd32fe7bf938df913bab34}} 
+\index{readline.php@{readline.php}!readline\_read\_history@{readline\_read\_history}}
+\index{readline\_read\_history@{readline\_read\_history}!readline.php@{readline.php}}
+\doxysubsubsection{\texorpdfstring{readline\_read\_history()}{readline\_read\_history()}}
+{\footnotesize\ttfamily readline\+\_\+read\+\_\+history (\begin{DoxyParamCaption}\item[{}]{\$filename = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Reads the history \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename \mbox{[}optional\mbox{]} }} Path to the filename containing the command history. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{readline_8php_a4bd87ce80d36c4220bcad27f058fa2e0}\label{readline_8php_a4bd87ce80d36c4220bcad27f058fa2e0}} 
+\index{readline.php@{readline.php}!readline\_redisplay@{readline\_redisplay}}
+\index{readline\_redisplay@{readline\_redisplay}!readline.php@{readline.php}}
+\doxysubsubsection{\texorpdfstring{readline\_redisplay()}{readline\_redisplay()}}
+{\footnotesize\ttfamily readline\+\_\+redisplay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Redraws the display \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{void No value is returned.  5.\+1 }}\mbox{\Hypertarget{readline_8php_ae9853a08307d9e3964d5f315fad4094d}\label{readline_8php_ae9853a08307d9e3964d5f315fad4094d}} 
+\index{readline.php@{readline.php}!readline\_write\_history@{readline\_write\_history}}
+\index{readline\_write\_history@{readline\_write\_history}!readline.php@{readline.php}}
+\doxysubsubsection{\texorpdfstring{readline\_write\_history()}{readline\_write\_history()}}
+{\footnotesize\ttfamily readline\+\_\+write\+\_\+history (\begin{DoxyParamCaption}\item[{}]{\$filename = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Writes the history \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename \mbox{[}optional\mbox{]} }} Path to the saved file. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{readline_8php_a2c2db6d3208000ae28f1f93d2676c21b}\label{readline_8php_a2c2db6d3208000ae28f1f93d2676c21b}} 
+\index{readline.php@{readline.php}!READLINE\_LIB@{READLINE\_LIB}}
+\index{READLINE\_LIB@{READLINE\_LIB}!readline.php@{readline.php}}
+\doxysubsubsection{\texorpdfstring{READLINE\_LIB}{READLINE\_LIB}}
+{\footnotesize\ttfamily const R\+E\+A\+D\+L\+I\+N\+E\+\_\+\+L\+IB \char`\"{}libedit\char`\"{}}
+

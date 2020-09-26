@@ -1,0 +1,35 @@
+.TH "vendor/paragonie/random_compat/other/build_phar.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/paragonie/random_compat/other/build_phar.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$dist\fP = \fBdirname\fP(\fB__DIR__\fP)\&.'/dist'"
+.br
+.ti -1c
+.RI "\fBif\fP(!\fBis_dir\fP($dist)) \fBif\fP(\fBfile_exists\fP($dist\&.'/random_compat\&.phar')) \fB$phar\fP"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$dist = \fBdirname\fP(\fB__DIR__\fP)\&.'/dist'"
+
+.SS "\fBif\fP (!\fBis_dir\fP( $dist)) \fBif\fP (\fBfile_exists\fP( $dist\&.'/random_compat\&.phar')) $phar"
+\fBInitial value:\fP
+.PP
+.nf
+= new Phar(
+    $dist\&.'/random_compat\&.phar',
+    FilesystemIterator::CURRENT_AS_FILEINFO | \FilesystemIterator::KEY_AS_FILENAME,
+    'random_compat\&.phar'
+)
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

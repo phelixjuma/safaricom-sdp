@@ -1,0 +1,1202 @@
+\hypertarget{ftp_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/ftp/ftp.php File Reference}
+\label{ftp_8php}\index{vendor/jetbrains/phpstorm-\/stubs/ftp/ftp.php@{vendor/jetbrains/phpstorm-\/stubs/ftp/ftp.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ftp_8php_a8dcb8a33c44d36ad9fd22eb1660c57b9}{ftp\+\_\+append}} (\$ftp, \$remote\+\_\+file, \$local\+\_\+file, \$mode=\mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}})
+\item 
+\mbox{\hyperlink{ftp_8php_a58cf5b28f735471011b102083b23d30f}{ftp\+\_\+mlsd}} (\$ftp, \$directory)
+\item 
+\mbox{\hyperlink{ftp_8php_a8f78b0c555556c6303463f364a1a1b29}{ftp\+\_\+connect}} (\$host, \$port=21, \$timeout=90)
+\item 
+\mbox{\hyperlink{ftp_8php_aa268052816f45faa6faa212f9b0ade5e}{ftp\+\_\+ssl\+\_\+connect}} (\$host, \$port=21, \$timeout=90)
+\item 
+\mbox{\hyperlink{ftp_8php_a90f2e71bf63bee48883a09518fcdaa79}{ftp\+\_\+login}} (\$ftp\+\_\+stream, \$username, \$password)
+\item 
+\mbox{\hyperlink{ftp_8php_a07370829a70afe54716075278c8396d4}{ftp\+\_\+pwd}} (\$ftp\+\_\+stream)
+\item 
+\mbox{\hyperlink{ftp_8php_a866626ca5d07c5693ffb7c481dc7cc67}{ftp\+\_\+cdup}} (\$ftp\+\_\+stream)
+\item 
+\mbox{\hyperlink{ftp_8php_a36f84138cf8d2ba683da9b568b80fc73}{ftp\+\_\+chdir}} (\$ftp\+\_\+stream, \$directory)
+\item 
+\mbox{\hyperlink{ftp_8php_a116155c600ae6491b335251ef0c5da3c}{ftp\+\_\+exec}} (\$ftp\+\_\+stream, \$command)
+\item 
+\mbox{\hyperlink{ftp_8php_a15feb53176b7a6f67eefce5a9804bcf6}{ftp\+\_\+raw}} (\$ftp\+\_\+stream, \$command)
+\item 
+\mbox{\hyperlink{ftp_8php_adb88e3be0ea211f92766d7500d5e9bb1}{ftp\+\_\+mkdir}} (\$ftp\+\_\+stream, \$directory)
+\item 
+\mbox{\hyperlink{ftp_8php_a46ded71d82659583423be2c6b4cccf61}{ftp\+\_\+rmdir}} (\$ftp\+\_\+stream, \$directory)
+\item 
+\mbox{\hyperlink{ftp_8php_a10a49aa65be7d9310729c37ef6e9c8ef}{ftp\+\_\+chmod}} (\$ftp\+\_\+stream, \$mode, \$filename)
+\item 
+\mbox{\hyperlink{ftp_8php_a5c08fc1588d1d297916d67f9a1f5d789}{ftp\+\_\+alloc}} (\$ftp\+\_\+stream, \$\mbox{\hyperlink{standard__7_8php_a4d5b2a7091a899b3e812349d2771a691}{filesize}}, \&\$result=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{ftp_8php_ad8dd97fb1686323c36d8f86241aee219}{ftp\+\_\+nlist}} (\$ftp\+\_\+stream, \$directory)
+\item 
+\mbox{\hyperlink{ftp_8php_a75f41e26099ef47645c976e10bdeb319}{ftp\+\_\+rawlist}} (\$ftp\+\_\+stream, \$directory, \$recursive=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{ftp_8php_a6288d7b9c04c6c61402f53da8eb28241}{ftp\+\_\+systype}} (\$ftp\+\_\+stream)
+\item 
+\mbox{\hyperlink{ftp_8php_a46a96f9954908eaa09b0fc7b239ab6fe}{ftp\+\_\+pasv}} (\$ftp\+\_\+stream, \$pasv)
+\item 
+\mbox{\hyperlink{ftp_8php_aee7202eec62977712416773d8ae619f7}{ftp\+\_\+get}} (\$ftp\+\_\+stream, \$local\+\_\+file, \$remote\+\_\+file, \$mode=\mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}, \$resumepos=0)
+\item 
+\mbox{\hyperlink{ftp_8php_a73f2113bc194d0693faf77f063eb3892}{ftp\+\_\+fget}} (\$ftp\+\_\+stream, \$handle, \$remote\+\_\+file, \$mode=\mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}, \$resumepos=0)
+\item 
+\mbox{\hyperlink{ftp_8php_ad8886bbe2c167345d0818a70d3eaff48}{ftp\+\_\+put}} (\$ftp\+\_\+stream, \$remote\+\_\+file, \$local\+\_\+file, \$mode=\mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}, \$startpos=0)
+\item 
+\mbox{\hyperlink{ftp_8php_ae8c17994dfd99a1dac527f4eb07cb8a8}{ftp\+\_\+fput}} (\$ftp\+\_\+stream, \$remote\+\_\+file, \$handle, \$mode=\mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}, \$startpos=0)
+\item 
+\mbox{\hyperlink{ftp_8php_aa75bff83a1f5a398666575d79289a149}{ftp\+\_\+size}} (\$ftp\+\_\+stream, \$remote\+\_\+file)
+\item 
+\mbox{\hyperlink{ftp_8php_a7b1f6d082194461641e903c722eccf42}{ftp\+\_\+mdtm}} (\$ftp\+\_\+stream, \$remote\+\_\+file)
+\item 
+\mbox{\hyperlink{ftp_8php_a5f679c76f6bfc2e1a7c1d15dcac25851}{ftp\+\_\+rename}} (\$ftp\+\_\+stream, \$oldname, \$newname)
+\item 
+\mbox{\hyperlink{ftp_8php_a2c19e2e527c510119ede6db9602d6a68}{ftp\+\_\+delete}} (\$ftp\+\_\+stream, \$path)
+\item 
+\mbox{\hyperlink{ftp_8php_ac6862e0ea871a1de676340380d8ff153}{ftp\+\_\+site}} (\$ftp\+\_\+stream, \$command)
+\item 
+\mbox{\hyperlink{ftp_8php_aa473af68283159b118de47b9938d4131}{ftp\+\_\+close}} (\$ftp\+\_\+stream)
+\item 
+\mbox{\hyperlink{ftp_8php_a2fda08328c87b869b87ee089042a976a}{ftp\+\_\+set\+\_\+option}} (\$ftp\+\_\+stream, \$option, \$value)
+\item 
+\mbox{\hyperlink{ftp_8php_aa213c30a4b2a7c5b0e4347d7396db4c8}{ftp\+\_\+get\+\_\+option}} (\$ftp\+\_\+stream, \$option)
+\item 
+\mbox{\hyperlink{ftp_8php_aaf35da3650d4c07d20e1d2ce1bed8ac8}{ftp\+\_\+nb\+\_\+fget}} (\$ftp\+\_\+stream, \$handle, \$remote\+\_\+file, \$mode=\mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}, \$resumepos=0)
+\item 
+\mbox{\hyperlink{ftp_8php_a7a79cb540879ebbbc66bdf2568f13348}{ftp\+\_\+nb\+\_\+get}} (\$ftp\+\_\+stream, \$local\+\_\+file, \$remote\+\_\+file, \$mode=\mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}, \$resumepos=0)
+\item 
+\mbox{\hyperlink{ftp_8php_ae3ccd4e3d16d5dc39f0394f74d4652ad}{ftp\+\_\+nb\+\_\+continue}} (\$ftp\+\_\+stream)
+\item 
+\mbox{\hyperlink{ftp_8php_a481c586d01e19b36a8eac1f1d4c0f1c0}{ftp\+\_\+nb\+\_\+put}} (\$ftp\+\_\+stream, \$remote\+\_\+file, \$local\+\_\+file, \$mode=\mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}, \$startpos=0)
+\item 
+\mbox{\hyperlink{ftp_8php_abae1951f300fccf62bf2f40ba391a44b}{ftp\+\_\+nb\+\_\+fput}} (\$ftp\+\_\+stream, \$remote\+\_\+file, \$handle, \$mode=\mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}, \$startpos=0)
+\item 
+\mbox{\hyperlink{ftp_8php_aa7e87d51c51bb200b7c1559356438861}{ftp\+\_\+quit}} (\$ftp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{ftp_8php_a9f021895cc1505d75a85554f34e7ff23}{F\+T\+P\+\_\+\+A\+S\+C\+II}} 1
+\item 
+const \mbox{\hyperlink{ftp_8php_aef900262f7436650672a075f24363cc9}{F\+T\+P\+\_\+\+T\+E\+XT}} 1
+\item 
+const \mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}} 2
+\item 
+const \mbox{\hyperlink{ftp_8php_a94a46986d6bcf804397574a636da12b3}{F\+T\+P\+\_\+\+I\+M\+A\+GE}} 2
+\item 
+const \mbox{\hyperlink{ftp_8php_a21783877fdaf58628d49755affecbddd}{F\+T\+P\+\_\+\+A\+U\+T\+O\+R\+E\+S\+U\+ME}} -\/1
+\item 
+const \mbox{\hyperlink{ftp_8php_a0640c1ffd431966f7136e17668bf90b8}{F\+T\+P\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+S\+EC}} 0
+\item 
+const \mbox{\hyperlink{ftp_8php_ab9b59c2f0e7d9a9eba427d7eb07732a4}{F\+T\+P\+\_\+\+A\+U\+T\+O\+S\+E\+EK}} 1
+\item 
+const \mbox{\hyperlink{ftp_8php_a7f3370df295d81fba70f26697430168a}{F\+T\+P\+\_\+\+U\+S\+E\+P\+A\+S\+V\+A\+D\+D\+R\+E\+SS}} 2
+\item 
+const \mbox{\hyperlink{ftp_8php_a20b2d28b8d0c503635ca7f433e1aca18}{F\+T\+P\+\_\+\+F\+A\+I\+L\+ED}} 0
+\item 
+const \mbox{\hyperlink{ftp_8php_a69359205ea519161c9f064f0baa52372}{F\+T\+P\+\_\+\+F\+I\+N\+I\+S\+H\+ED}} 1
+\item 
+const \mbox{\hyperlink{ftp_8php_a5b803251f0ff071b0e05d4a1251e80ac}{F\+T\+P\+\_\+\+M\+O\+R\+E\+D\+A\+TA}} 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ftp_8php_a5c08fc1588d1d297916d67f9a1f5d789}\label{ftp_8php_a5c08fc1588d1d297916d67f9a1f5d789}} 
+\index{ftp.php@{ftp.php}!ftp\_alloc@{ftp\_alloc}}
+\index{ftp\_alloc@{ftp\_alloc}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_alloc()}{ftp\_alloc()}}
+{\footnotesize\ttfamily ftp\+\_\+alloc (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$filesize,  }\item[{\&}]{\$result = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Allocates space for a file to be uploaded \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$filesize} & \\
+\hline
+\end{DoxyParams}
+The number of bytes to allocate. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$result} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} textual representation of the servers response will be returned by reference in {\itshape result} if a variable is provided. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a8dcb8a33c44d36ad9fd22eb1660c57b9}\label{ftp_8php_a8dcb8a33c44d36ad9fd22eb1660c57b9}} 
+\index{ftp.php@{ftp.php}!ftp\_append@{ftp\_append}}
+\index{ftp\_append@{ftp\_append}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_append()}{ftp\_append()}}
+{\footnotesize\ttfamily ftp\+\_\+append (\begin{DoxyParamCaption}\item[{}]{\$ftp,  }\item[{}]{\$remote\+\_\+file,  }\item[{}]{\$local\+\_\+file,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$ftp} & \\
+\hline
+string & {\em \$remote\+\_\+file} & \\
+\hline
+string & {\em \$local\+\_\+file} & \\
+\hline
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a866626ca5d07c5693ffb7c481dc7cc67}\label{ftp_8php_a866626ca5d07c5693ffb7c481dc7cc67}} 
+\index{ftp.php@{ftp.php}!ftp\_cdup@{ftp\_cdup}}
+\index{ftp\_cdup@{ftp\_cdup}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_cdup()}{ftp\_cdup()}}
+{\footnotesize\ttfamily ftp\+\_\+cdup (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream }\end{DoxyParamCaption})}
+
+Changes to the parent directory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a36f84138cf8d2ba683da9b568b80fc73}\label{ftp_8php_a36f84138cf8d2ba683da9b568b80fc73}} 
+\index{ftp.php@{ftp.php}!ftp\_chdir@{ftp\_chdir}}
+\index{ftp\_chdir@{ftp\_chdir}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_chdir()}{ftp\_chdir()}}
+{\footnotesize\ttfamily ftp\+\_\+chdir (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$directory }\end{DoxyParamCaption})}
+
+Changes the current directory on a F\+TP server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+\end{DoxyParams}
+The target directory. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. If changing directory fails, P\+HP will also throw a warning. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a10a49aa65be7d9310729c37ef6e9c8ef}\label{ftp_8php_a10a49aa65be7d9310729c37ef6e9c8ef}} 
+\index{ftp.php@{ftp.php}!ftp\_chmod@{ftp\_chmod}}
+\index{ftp\_chmod@{ftp\_chmod}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_chmod()}{ftp\_chmod()}}
+{\footnotesize\ttfamily ftp\+\_\+chmod (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$mode,  }\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+Set permissions on a file via F\+TP \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+The new permissions, given as an octal value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+The remote file. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false the new file permissions on success or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_aa473af68283159b118de47b9938d4131}\label{ftp_8php_aa473af68283159b118de47b9938d4131}} 
+\index{ftp.php@{ftp.php}!ftp\_close@{ftp\_close}}
+\index{ftp\_close@{ftp\_close}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_close()}{ftp\_close()}}
+{\footnotesize\ttfamily ftp\+\_\+close (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream }\end{DoxyParamCaption})}
+
+Closes an F\+TP connection \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a8f78b0c555556c6303463f364a1a1b29}\label{ftp_8php_a8f78b0c555556c6303463f364a1a1b29}} 
+\index{ftp.php@{ftp.php}!ftp\_connect@{ftp\_connect}}
+\index{ftp\_connect@{ftp\_connect}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_connect()}{ftp\_connect()}}
+{\footnotesize\ttfamily ftp\+\_\+connect (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$port = {\ttfamily 21},  }\item[{}]{\$timeout = {\ttfamily 90} }\end{DoxyParamCaption})}
+
+Opens an F\+TP connection \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }} The F\+TP server address. This parameter shouldn\textquotesingle{}t have any trailing slashes and shouldn\textquotesingle{}t be prefixed with \href{ftp://}{\texttt{ ftp\+://}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$port} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This parameter specifies an alternate port to connect to. If it is omitted or set to zero, then the default F\+TP port, 21, will be used. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This parameter specifies the timeout for all subsequent network operations. If omitted, the default value is 90 seconds. The timeout can be changed and queried at any time with {\bfseries{ftp\+\_\+set\+\_\+option}} and {\bfseries{ftp\+\_\+get\+\_\+option}}. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false a F\+TP stream on success or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a2c19e2e527c510119ede6db9602d6a68}\label{ftp_8php_a2c19e2e527c510119ede6db9602d6a68}} 
+\index{ftp.php@{ftp.php}!ftp\_delete@{ftp\_delete}}
+\index{ftp\_delete@{ftp\_delete}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_delete()}{ftp\_delete()}}
+{\footnotesize\ttfamily ftp\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$path }\end{DoxyParamCaption})}
+
+Deletes a file on the F\+TP server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+The file to delete. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a116155c600ae6491b335251ef0c5da3c}\label{ftp_8php_a116155c600ae6491b335251ef0c5da3c}} 
+\index{ftp.php@{ftp.php}!ftp\_exec@{ftp\_exec}}
+\index{ftp\_exec@{ftp\_exec}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_exec()}{ftp\_exec()}}
+{\footnotesize\ttfamily ftp\+\_\+exec (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$command }\end{DoxyParamCaption})}
+
+Requests execution of a command on the F\+TP server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+The command to execute. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} if the command was successful (server sent response code\+: 200); otherwise returns {\bfseries{F\+A\+L\+SE}}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a73f2113bc194d0693faf77f063eb3892}\label{ftp_8php_a73f2113bc194d0693faf77f063eb3892}} 
+\index{ftp.php@{ftp.php}!ftp\_fget@{ftp\_fget}}
+\index{ftp\_fget@{ftp\_fget}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_fget()}{ftp\_fget()}}
+{\footnotesize\ttfamily ftp\+\_\+fget (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$handle,  }\item[{}]{\$remote\+\_\+file,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}},  }\item[{}]{\$resumepos = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Downloads a file from the F\+TP server and saves to an open file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$handle} & \\
+\hline
+\end{DoxyParams}
+An open file pointer in which we store the data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$remote\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+The remote file path. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The transfer mode. Must be either {\bfseries{F\+T\+P\+\_\+\+A\+S\+C\+II}} or {\bfseries{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$resumepos} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The position in the remote file to start downloading from. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_ae8c17994dfd99a1dac527f4eb07cb8a8}\label{ftp_8php_ae8c17994dfd99a1dac527f4eb07cb8a8}} 
+\index{ftp.php@{ftp.php}!ftp\_fput@{ftp\_fput}}
+\index{ftp\_fput@{ftp\_fput}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_fput()}{ftp\_fput()}}
+{\footnotesize\ttfamily ftp\+\_\+fput (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$remote\+\_\+file,  }\item[{}]{\$handle,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}},  }\item[{}]{\$startpos = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Uploads from an open file to the F\+TP server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$remote\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+The remote file path. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$handle} & \\
+\hline
+\end{DoxyParams}
+An open file pointer on the local file. Reading stops at end of file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The transfer mode. Must be either {\bfseries{F\+T\+P\+\_\+\+A\+S\+C\+II}} or {\bfseries{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$startpos} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The position in the remote file to start uploading to.
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_aee7202eec62977712416773d8ae619f7}\label{ftp_8php_aee7202eec62977712416773d8ae619f7}} 
+\index{ftp.php@{ftp.php}!ftp\_get@{ftp\_get}}
+\index{ftp\_get@{ftp\_get}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_get()}{ftp\_get()}}
+{\footnotesize\ttfamily ftp\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$local\+\_\+file,  }\item[{}]{\$remote\+\_\+file,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}},  }\item[{}]{\$resumepos = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Downloads a file from the F\+TP server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$local\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+The local file path (will be overwritten if the file already exists). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$remote\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+The remote file path. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The transfer mode. Must be either {\bfseries{F\+T\+P\+\_\+\+A\+S\+C\+II}} or {\bfseries{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$resumepos} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The position in the remote file to start downloading from. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_aa213c30a4b2a7c5b0e4347d7396db4c8}\label{ftp_8php_aa213c30a4b2a7c5b0e4347d7396db4c8}} 
+\index{ftp.php@{ftp.php}!ftp\_get\_option@{ftp\_get\_option}}
+\index{ftp\_get\_option@{ftp\_get\_option}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_get\_option()}{ftp\_get\_option()}}
+{\footnotesize\ttfamily ftp\+\_\+get\+\_\+option (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$option }\end{DoxyParamCaption})}
+
+Retrieves various runtime behaviours of the current F\+TP stream \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$option} & \\
+\hline
+\end{DoxyParams}
+Currently, the following options are supported\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+runtime F\+TP options 
+
+{\bfseries{F\+T\+P\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+S\+EC}} 
+
+Returns the current timeout used for network related operations.   
+
+{\bfseries{F\+T\+P\+\_\+\+A\+U\+T\+O\+S\+E\+EK}} 
+
+Returns {\bfseries{T\+R\+UE}} if this option is on, {\bfseries{F\+A\+L\+SE}} otherwise.   
+
+\begin{DoxyReturn}{Returns}
+mixed the value on success or {\bfseries{F\+A\+L\+SE}} if the given {\itshape option} is not supported. In the latter case, a warning message is also thrown. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a90f2e71bf63bee48883a09518fcdaa79}\label{ftp_8php_a90f2e71bf63bee48883a09518fcdaa79}} 
+\index{ftp.php@{ftp.php}!ftp\_login@{ftp\_login}}
+\index{ftp\_login@{ftp\_login}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_login()}{ftp\_login()}}
+{\footnotesize\ttfamily ftp\+\_\+login (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$username,  }\item[{}]{\$password }\end{DoxyParamCaption})}
+
+Logs in to an F\+TP connection \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+\end{DoxyParams}
+The username (U\+S\+ER). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+The password (P\+A\+SS). 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. If login fails, P\+HP will also throw a warning. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a7b1f6d082194461641e903c722eccf42}\label{ftp_8php_a7b1f6d082194461641e903c722eccf42}} 
+\index{ftp.php@{ftp.php}!ftp\_mdtm@{ftp\_mdtm}}
+\index{ftp\_mdtm@{ftp\_mdtm}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_mdtm()}{ftp\_mdtm()}}
+{\footnotesize\ttfamily ftp\+\_\+mdtm (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$remote\+\_\+file }\end{DoxyParamCaption})}
+
+Returns the last modified time of the given file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$remote\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+The file from which to extract the last modification time. 
+
+\begin{DoxyReturn}{Returns}
+int the last modified time as a Unix timestamp on success, or -\/1 on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_adb88e3be0ea211f92766d7500d5e9bb1}\label{ftp_8php_adb88e3be0ea211f92766d7500d5e9bb1}} 
+\index{ftp.php@{ftp.php}!ftp\_mkdir@{ftp\_mkdir}}
+\index{ftp\_mkdir@{ftp\_mkdir}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_mkdir()}{ftp\_mkdir()}}
+{\footnotesize\ttfamily ftp\+\_\+mkdir (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$directory }\end{DoxyParamCaption})}
+
+Creates a directory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+\end{DoxyParams}
+The name of the directory that will be created. 
+
+\begin{DoxyReturn}{Returns}
+string the newly created directory name on success or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a58cf5b28f735471011b102083b23d30f}\label{ftp_8php_a58cf5b28f735471011b102083b23d30f}} 
+\index{ftp.php@{ftp.php}!ftp\_mlsd@{ftp\_mlsd}}
+\index{ftp\_mlsd@{ftp\_mlsd}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_mlsd()}{ftp\_mlsd()}}
+{\footnotesize\ttfamily ftp\+\_\+mlsd (\begin{DoxyParamCaption}\item[{}]{\$ftp,  }\item[{}]{\$directory }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$ftp} & \\
+\hline
+string & {\em \$directory} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_ae3ccd4e3d16d5dc39f0394f74d4652ad}\label{ftp_8php_ae3ccd4e3d16d5dc39f0394f74d4652ad}} 
+\index{ftp.php@{ftp.php}!ftp\_nb\_continue@{ftp\_nb\_continue}}
+\index{ftp\_nb\_continue@{ftp\_nb\_continue}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_nb\_continue()}{ftp\_nb\_continue()}}
+{\footnotesize\ttfamily ftp\+\_\+nb\+\_\+continue (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream }\end{DoxyParamCaption})}
+
+Continues retrieving/sending a file (non-\/blocking) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+\begin{DoxyReturn}{Returns}
+int {\bfseries{F\+T\+P\+\_\+\+F\+A\+I\+L\+ED}} or {\bfseries{F\+T\+P\+\_\+\+F\+I\+N\+I\+S\+H\+ED}} or {\bfseries{F\+T\+P\+\_\+\+M\+O\+R\+E\+D\+A\+TA}}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_aaf35da3650d4c07d20e1d2ce1bed8ac8}\label{ftp_8php_aaf35da3650d4c07d20e1d2ce1bed8ac8}} 
+\index{ftp.php@{ftp.php}!ftp\_nb\_fget@{ftp\_nb\_fget}}
+\index{ftp\_nb\_fget@{ftp\_nb\_fget}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_nb\_fget()}{ftp\_nb\_fget()}}
+{\footnotesize\ttfamily ftp\+\_\+nb\+\_\+fget (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$handle,  }\item[{}]{\$remote\+\_\+file,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}},  }\item[{}]{\$resumepos = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Retrieves a file from the F\+TP server and writes it to an open file (non-\/blocking) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$handle} & \\
+\hline
+\end{DoxyParams}
+An open file pointer in which we store the data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$remote\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+The remote file path. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The transfer mode. Must be either {\bfseries{F\+T\+P\+\_\+\+A\+S\+C\+II}} or {\bfseries{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$resumepos} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The position in the remote file to start downloading from.
+
+\begin{DoxyReturn}{Returns}
+int {\bfseries{F\+T\+P\+\_\+\+F\+A\+I\+L\+ED}} or {\bfseries{F\+T\+P\+\_\+\+F\+I\+N\+I\+S\+H\+ED}} or {\bfseries{F\+T\+P\+\_\+\+M\+O\+R\+E\+D\+A\+TA}}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_abae1951f300fccf62bf2f40ba391a44b}\label{ftp_8php_abae1951f300fccf62bf2f40ba391a44b}} 
+\index{ftp.php@{ftp.php}!ftp\_nb\_fput@{ftp\_nb\_fput}}
+\index{ftp\_nb\_fput@{ftp\_nb\_fput}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_nb\_fput()}{ftp\_nb\_fput()}}
+{\footnotesize\ttfamily ftp\+\_\+nb\+\_\+fput (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$remote\+\_\+file,  }\item[{}]{\$handle,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}},  }\item[{}]{\$startpos = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Stores a file from an open file to the F\+TP server (non-\/blocking) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$remote\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+The remote file path. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$handle} & \\
+\hline
+\end{DoxyParams}
+An open file pointer on the local file. Reading stops at end of file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The transfer mode. Must be either {\bfseries{F\+T\+P\+\_\+\+A\+S\+C\+II}} or {\bfseries{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$startpos} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The position in the remote file to start uploading to.
+
+\begin{DoxyReturn}{Returns}
+int {\bfseries{F\+T\+P\+\_\+\+F\+A\+I\+L\+ED}} or {\bfseries{F\+T\+P\+\_\+\+F\+I\+N\+I\+S\+H\+ED}} or {\bfseries{F\+T\+P\+\_\+\+M\+O\+R\+E\+D\+A\+TA}}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a7a79cb540879ebbbc66bdf2568f13348}\label{ftp_8php_a7a79cb540879ebbbc66bdf2568f13348}} 
+\index{ftp.php@{ftp.php}!ftp\_nb\_get@{ftp\_nb\_get}}
+\index{ftp\_nb\_get@{ftp\_nb\_get}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_nb\_get()}{ftp\_nb\_get()}}
+{\footnotesize\ttfamily ftp\+\_\+nb\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$local\+\_\+file,  }\item[{}]{\$remote\+\_\+file,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}},  }\item[{}]{\$resumepos = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Retrieves a file from the F\+TP server and writes it to a local file (non-\/blocking) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$local\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+The local file path (will be overwritten if the file already exists). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$remote\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+The remote file path. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The transfer mode. Must be either {\bfseries{F\+T\+P\+\_\+\+A\+S\+C\+II}} or {\bfseries{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$resumepos} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The position in the remote file to start downloading from.
+
+\begin{DoxyReturn}{Returns}
+int {\bfseries{F\+T\+P\+\_\+\+F\+A\+I\+L\+ED}} or {\bfseries{F\+T\+P\+\_\+\+F\+I\+N\+I\+S\+H\+ED}} or {\bfseries{F\+T\+P\+\_\+\+M\+O\+R\+E\+D\+A\+TA}}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a481c586d01e19b36a8eac1f1d4c0f1c0}\label{ftp_8php_a481c586d01e19b36a8eac1f1d4c0f1c0}} 
+\index{ftp.php@{ftp.php}!ftp\_nb\_put@{ftp\_nb\_put}}
+\index{ftp\_nb\_put@{ftp\_nb\_put}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_nb\_put()}{ftp\_nb\_put()}}
+{\footnotesize\ttfamily ftp\+\_\+nb\+\_\+put (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$remote\+\_\+file,  }\item[{}]{\$local\+\_\+file,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}},  }\item[{}]{\$startpos = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Stores a file on the F\+TP server (non-\/blocking) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$remote\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+The remote file path. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$local\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+The local file path. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The transfer mode. Must be either {\bfseries{F\+T\+P\+\_\+\+A\+S\+C\+II}} or {\bfseries{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$startpos} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The position in the remote file to start uploading to.
+
+\begin{DoxyReturn}{Returns}
+int {\bfseries{F\+T\+P\+\_\+\+F\+A\+I\+L\+ED}} or {\bfseries{F\+T\+P\+\_\+\+F\+I\+N\+I\+S\+H\+ED}} or {\bfseries{F\+T\+P\+\_\+\+M\+O\+R\+E\+D\+A\+TA}}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_ad8dd97fb1686323c36d8f86241aee219}\label{ftp_8php_ad8dd97fb1686323c36d8f86241aee219}} 
+\index{ftp.php@{ftp.php}!ftp\_nlist@{ftp\_nlist}}
+\index{ftp\_nlist@{ftp\_nlist}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_nlist()}{ftp\_nlist()}}
+{\footnotesize\ttfamily ftp\+\_\+nlist (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$directory }\end{DoxyParamCaption})}
+
+Returns a list of files in the given directory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+\end{DoxyParams}
+The directory to be listed. This parameter can also include arguments, eg. ftp\+\_\+nlist(\$conn\+\_\+id, \char`\"{}-\/la /your/dir\char`\"{}); Note that this parameter isn\textquotesingle{}t escaped so there may be some issues with filenames containing spaces and other characters. 
+
+\begin{DoxyReturn}{Returns}
+array an array of filenames from the specified directory on success or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a46a96f9954908eaa09b0fc7b239ab6fe}\label{ftp_8php_a46a96f9954908eaa09b0fc7b239ab6fe}} 
+\index{ftp.php@{ftp.php}!ftp\_pasv@{ftp\_pasv}}
+\index{ftp\_pasv@{ftp\_pasv}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_pasv()}{ftp\_pasv()}}
+{\footnotesize\ttfamily ftp\+\_\+pasv (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$pasv }\end{DoxyParamCaption})}
+
+Turns passive mode on or off \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$pasv} & \\
+\hline
+\end{DoxyParams}
+If {\bfseries{T\+R\+UE}}, the passive mode is turned on, else it\textquotesingle{}s turned off. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_ad8886bbe2c167345d0818a70d3eaff48}\label{ftp_8php_ad8886bbe2c167345d0818a70d3eaff48}} 
+\index{ftp.php@{ftp.php}!ftp\_put@{ftp\_put}}
+\index{ftp\_put@{ftp\_put}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_put()}{ftp\_put()}}
+{\footnotesize\ttfamily ftp\+\_\+put (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$remote\+\_\+file,  }\item[{}]{\$local\+\_\+file,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}},  }\item[{}]{\$startpos = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Uploads a file to the F\+TP server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$remote\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+The remote file path. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$local\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+The local file path. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The transfer mode. Must be either {\bfseries{F\+T\+P\+\_\+\+A\+S\+C\+II}} or {\bfseries{F\+T\+P\+\_\+\+B\+I\+N\+A\+RY}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$startpos} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The position in the remote file to start uploading to.
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a07370829a70afe54716075278c8396d4}\label{ftp_8php_a07370829a70afe54716075278c8396d4}} 
+\index{ftp.php@{ftp.php}!ftp\_pwd@{ftp\_pwd}}
+\index{ftp\_pwd@{ftp\_pwd}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_pwd()}{ftp\_pwd()}}
+{\footnotesize\ttfamily ftp\+\_\+pwd (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream }\end{DoxyParamCaption})}
+
+Returns the current directory name \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+\begin{DoxyReturn}{Returns}
+string the current directory name or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_aa7e87d51c51bb200b7c1559356438861}\label{ftp_8php_aa7e87d51c51bb200b7c1559356438861}} 
+\index{ftp.php@{ftp.php}!ftp\_quit@{ftp\_quit}}
+\index{ftp\_quit@{ftp\_quit}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_quit()}{ftp\_quit()}}
+{\footnotesize\ttfamily ftp\+\_\+quit (\begin{DoxyParamCaption}\item[{}]{\$ftp }\end{DoxyParamCaption})}
+
+Alias of {\bfseries{ftp\+\_\+close}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$ftp  4.\+0  5.\+0 }}\mbox{\Hypertarget{ftp_8php_a15feb53176b7a6f67eefce5a9804bcf6}\label{ftp_8php_a15feb53176b7a6f67eefce5a9804bcf6}} 
+\index{ftp.php@{ftp.php}!ftp\_raw@{ftp\_raw}}
+\index{ftp\_raw@{ftp\_raw}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_raw()}{ftp\_raw()}}
+{\footnotesize\ttfamily ftp\+\_\+raw (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$command }\end{DoxyParamCaption})}
+
+Sends an arbitrary command to an F\+TP server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+The command to execute. 
+
+\begin{DoxyReturn}{Returns}
+array the server\textquotesingle{}s response as an array of strings. No parsing is performed on the response string, nor does {\bfseries{ftp\+\_\+raw}} determine if the command succeeded. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a75f41e26099ef47645c976e10bdeb319}\label{ftp_8php_a75f41e26099ef47645c976e10bdeb319}} 
+\index{ftp.php@{ftp.php}!ftp\_rawlist@{ftp\_rawlist}}
+\index{ftp\_rawlist@{ftp\_rawlist}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_rawlist()}{ftp\_rawlist()}}
+{\footnotesize\ttfamily ftp\+\_\+rawlist (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$directory,  }\item[{}]{\$recursive = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+Returns a detailed list of files in the given directory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+\end{DoxyParams}
+The directory path. May include arguments for the L\+I\+ST command. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$recursive} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If set to {\bfseries{T\+R\+UE}}, the issued command will be L\+I\+ST -\/R. 
+
+\begin{DoxyReturn}{Returns}
+array an array where each element corresponds to one line of text. 
+\end{DoxyReturn}
+
+
+The output is not parsed in any way. The system type identifier returned by {\bfseries{ftp\+\_\+systype}} can be used to determine how the results should be interpreted. \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a5f679c76f6bfc2e1a7c1d15dcac25851}\label{ftp_8php_a5f679c76f6bfc2e1a7c1d15dcac25851}} 
+\index{ftp.php@{ftp.php}!ftp\_rename@{ftp\_rename}}
+\index{ftp\_rename@{ftp\_rename}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_rename()}{ftp\_rename()}}
+{\footnotesize\ttfamily ftp\+\_\+rename (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$oldname,  }\item[{}]{\$newname }\end{DoxyParamCaption})}
+
+Renames a file or a directory on the F\+TP server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$oldname} & \\
+\hline
+\end{DoxyParams}
+The old file/directory name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$newname} & \\
+\hline
+\end{DoxyParams}
+The new name. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a46ded71d82659583423be2c6b4cccf61}\label{ftp_8php_a46ded71d82659583423be2c6b4cccf61}} 
+\index{ftp.php@{ftp.php}!ftp\_rmdir@{ftp\_rmdir}}
+\index{ftp\_rmdir@{ftp\_rmdir}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_rmdir()}{ftp\_rmdir()}}
+{\footnotesize\ttfamily ftp\+\_\+rmdir (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$directory }\end{DoxyParamCaption})}
+
+Removes a directory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+\end{DoxyParams}
+The directory to delete. This must be either an absolute or relative path to an empty directory. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a2fda08328c87b869b87ee089042a976a}\label{ftp_8php_a2fda08328c87b869b87ee089042a976a}} 
+\index{ftp.php@{ftp.php}!ftp\_set\_option@{ftp\_set\_option}}
+\index{ftp\_set\_option@{ftp\_set\_option}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_set\_option()}{ftp\_set\_option()}}
+{\footnotesize\ttfamily ftp\+\_\+set\+\_\+option (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$option,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Set miscellaneous runtime F\+TP options \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$option} & \\
+\hline
+\end{DoxyParams}
+Currently, the following options are supported\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+runtime F\+TP options 
+
+{\bfseries{F\+T\+P\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+S\+EC}} 
+
+Changes the timeout in seconds used for all network related functions. {\itshape value} must be an integer that is greater than 0. The default timeout is 90 seconds.   
+
+{\bfseries{F\+T\+P\+\_\+\+A\+U\+T\+O\+S\+E\+EK}} 
+
+When enabled, G\+ET or P\+UT requests with a {\itshape resumepos} or {\itshape startpos} parameter will first seek to the requested position within the file. This is enabled by default.   
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+This parameter depends on which {\itshape option} is chosen to be altered. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} if the option could be set; {\bfseries{F\+A\+L\+SE}} if not. \mbox{\hyperlink{class_a}{A}} warning message will be thrown if the {\itshape option} is not supported or the passed {\itshape value} doesn\textquotesingle{}t match the expected value for the given {\itshape option}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_ac6862e0ea871a1de676340380d8ff153}\label{ftp_8php_ac6862e0ea871a1de676340380d8ff153}} 
+\index{ftp.php@{ftp.php}!ftp\_site@{ftp\_site}}
+\index{ftp\_site@{ftp\_site}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_site()}{ftp\_site()}}
+{\footnotesize\ttfamily ftp\+\_\+site (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$command }\end{DoxyParamCaption})}
+
+Sends a S\+I\+TE command to the server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+The S\+I\+TE command. Note that this parameter isn\textquotesingle{}t escaped so there may be some issues with filenames containing spaces and other characters. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_aa75bff83a1f5a398666575d79289a149}\label{ftp_8php_aa75bff83a1f5a398666575d79289a149}} 
+\index{ftp.php@{ftp.php}!ftp\_size@{ftp\_size}}
+\index{ftp\_size@{ftp\_size}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_size()}{ftp\_size()}}
+{\footnotesize\ttfamily ftp\+\_\+size (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream,  }\item[{}]{\$remote\+\_\+file }\end{DoxyParamCaption})}
+
+Returns the size of the given file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$remote\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+The remote file. 
+
+\begin{DoxyReturn}{Returns}
+int the file size on success, or -\/1 on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_aa268052816f45faa6faa212f9b0ade5e}\label{ftp_8php_aa268052816f45faa6faa212f9b0ade5e}} 
+\index{ftp.php@{ftp.php}!ftp\_ssl\_connect@{ftp\_ssl\_connect}}
+\index{ftp\_ssl\_connect@{ftp\_ssl\_connect}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_ssl\_connect()}{ftp\_ssl\_connect()}}
+{\footnotesize\ttfamily ftp\+\_\+ssl\+\_\+connect (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$port = {\ttfamily 21},  }\item[{}]{\$timeout = {\ttfamily 90} }\end{DoxyParamCaption})}
+
+Opens an Secure S\+S\+L-\/\+F\+TP connection \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }} The F\+TP server address. This parameter shouldn\textquotesingle{}t have any trailing slashes and shouldn\textquotesingle{}t be prefixed with \href{ftp://}{\texttt{ ftp\+://}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$port} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This parameter specifies an alternate port to connect to. If it is omitted or set to zero, then the default F\+TP port, 21, will be used. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This parameter specifies the timeout for all subsequent network operations. If omitted, the default value is 90 seconds. The timeout can be changed and queried at any time with {\bfseries{ftp\+\_\+set\+\_\+option}} and {\bfseries{ftp\+\_\+get\+\_\+option}}. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false a S\+S\+L-\/\+F\+TP stream on success or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ftp_8php_a6288d7b9c04c6c61402f53da8eb28241}\label{ftp_8php_a6288d7b9c04c6c61402f53da8eb28241}} 
+\index{ftp.php@{ftp.php}!ftp\_systype@{ftp\_systype}}
+\index{ftp\_systype@{ftp\_systype}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{ftp\_systype()}{ftp\_systype()}}
+{\footnotesize\ttfamily ftp\+\_\+systype (\begin{DoxyParamCaption}\item[{}]{\$ftp\+\_\+stream }\end{DoxyParamCaption})}
+
+Returns the system type identifier of the remote F\+TP server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$ftp\+\_\+stream }} The link identifier of the F\+TP connection. 
+
+\begin{DoxyReturn}{Returns}
+string the remote system type, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{ftp_8php_a9f021895cc1505d75a85554f34e7ff23}\label{ftp_8php_a9f021895cc1505d75a85554f34e7ff23}} 
+\index{ftp.php@{ftp.php}!FTP\_ASCII@{FTP\_ASCII}}
+\index{FTP\_ASCII@{FTP\_ASCII}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{FTP\_ASCII}{FTP\_ASCII}}
+{\footnotesize\ttfamily const F\+T\+P\+\_\+\+A\+S\+C\+II 1}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ftp.\+constants.\+php}}\mbox{\Hypertarget{ftp_8php_a21783877fdaf58628d49755affecbddd}\label{ftp_8php_a21783877fdaf58628d49755affecbddd}} 
+\index{ftp.php@{ftp.php}!FTP\_AUTORESUME@{FTP\_AUTORESUME}}
+\index{FTP\_AUTORESUME@{FTP\_AUTORESUME}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{FTP\_AUTORESUME}{FTP\_AUTORESUME}}
+{\footnotesize\ttfamily const F\+T\+P\+\_\+\+A\+U\+T\+O\+R\+E\+S\+U\+ME -\/1}
+
+Automatically determine resume position and start position for G\+ET and P\+UT requests (only works if F\+T\+P\+\_\+\+A\+U\+T\+O\+S\+E\+EK is enabled) 
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ftp.\+constants.\+php}}\mbox{\Hypertarget{ftp_8php_ab9b59c2f0e7d9a9eba427d7eb07732a4}\label{ftp_8php_ab9b59c2f0e7d9a9eba427d7eb07732a4}} 
+\index{ftp.php@{ftp.php}!FTP\_AUTOSEEK@{FTP\_AUTOSEEK}}
+\index{FTP\_AUTOSEEK@{FTP\_AUTOSEEK}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{FTP\_AUTOSEEK}{FTP\_AUTOSEEK}}
+{\footnotesize\ttfamily const F\+T\+P\+\_\+\+A\+U\+T\+O\+S\+E\+EK 1}
+
+See {\bfseries{ftp\+\_\+set\+\_\+option}} for information. 
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ftp.\+constants.\+php}}\mbox{\Hypertarget{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}\label{ftp_8php_ac2d9dfed17192c76e1ff89f80e3b4a6e}} 
+\index{ftp.php@{ftp.php}!FTP\_BINARY@{FTP\_BINARY}}
+\index{FTP\_BINARY@{FTP\_BINARY}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{FTP\_BINARY}{FTP\_BINARY}}
+{\footnotesize\ttfamily const F\+T\+P\+\_\+\+B\+I\+N\+A\+RY 2}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ftp.\+constants.\+php}}\mbox{\Hypertarget{ftp_8php_a20b2d28b8d0c503635ca7f433e1aca18}\label{ftp_8php_a20b2d28b8d0c503635ca7f433e1aca18}} 
+\index{ftp.php@{ftp.php}!FTP\_FAILED@{FTP\_FAILED}}
+\index{FTP\_FAILED@{FTP\_FAILED}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{FTP\_FAILED}{FTP\_FAILED}}
+{\footnotesize\ttfamily const F\+T\+P\+\_\+\+F\+A\+I\+L\+ED 0}
+
+Asynchronous transfer has failed 
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ftp.\+constants.\+php}}\mbox{\Hypertarget{ftp_8php_a69359205ea519161c9f064f0baa52372}\label{ftp_8php_a69359205ea519161c9f064f0baa52372}} 
+\index{ftp.php@{ftp.php}!FTP\_FINISHED@{FTP\_FINISHED}}
+\index{FTP\_FINISHED@{FTP\_FINISHED}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{FTP\_FINISHED}{FTP\_FINISHED}}
+{\footnotesize\ttfamily const F\+T\+P\+\_\+\+F\+I\+N\+I\+S\+H\+ED 1}
+
+Asynchronous transfer has finished 
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ftp.\+constants.\+php}}\mbox{\Hypertarget{ftp_8php_a94a46986d6bcf804397574a636da12b3}\label{ftp_8php_a94a46986d6bcf804397574a636da12b3}} 
+\index{ftp.php@{ftp.php}!FTP\_IMAGE@{FTP\_IMAGE}}
+\index{FTP\_IMAGE@{FTP\_IMAGE}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{FTP\_IMAGE}{FTP\_IMAGE}}
+{\footnotesize\ttfamily const F\+T\+P\+\_\+\+I\+M\+A\+GE 2}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ftp.\+constants.\+php}}\mbox{\Hypertarget{ftp_8php_a5b803251f0ff071b0e05d4a1251e80ac}\label{ftp_8php_a5b803251f0ff071b0e05d4a1251e80ac}} 
+\index{ftp.php@{ftp.php}!FTP\_MOREDATA@{FTP\_MOREDATA}}
+\index{FTP\_MOREDATA@{FTP\_MOREDATA}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{FTP\_MOREDATA}{FTP\_MOREDATA}}
+{\footnotesize\ttfamily const F\+T\+P\+\_\+\+M\+O\+R\+E\+D\+A\+TA 2}
+
+Asynchronous transfer is still active 
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ftp.\+constants.\+php}}\mbox{\Hypertarget{ftp_8php_aef900262f7436650672a075f24363cc9}\label{ftp_8php_aef900262f7436650672a075f24363cc9}} 
+\index{ftp.php@{ftp.php}!FTP\_TEXT@{FTP\_TEXT}}
+\index{FTP\_TEXT@{FTP\_TEXT}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{FTP\_TEXT}{FTP\_TEXT}}
+{\footnotesize\ttfamily const F\+T\+P\+\_\+\+T\+E\+XT 1}
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ftp.\+constants.\+php}}\mbox{\Hypertarget{ftp_8php_a0640c1ffd431966f7136e17668bf90b8}\label{ftp_8php_a0640c1ffd431966f7136e17668bf90b8}} 
+\index{ftp.php@{ftp.php}!FTP\_TIMEOUT\_SEC@{FTP\_TIMEOUT\_SEC}}
+\index{FTP\_TIMEOUT\_SEC@{FTP\_TIMEOUT\_SEC}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{FTP\_TIMEOUT\_SEC}{FTP\_TIMEOUT\_SEC}}
+{\footnotesize\ttfamily const F\+T\+P\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+S\+EC 0}
+
+See {\bfseries{ftp\+\_\+set\+\_\+option}} for information. 
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ftp.\+constants.\+php}}\mbox{\Hypertarget{ftp_8php_a7f3370df295d81fba70f26697430168a}\label{ftp_8php_a7f3370df295d81fba70f26697430168a}} 
+\index{ftp.php@{ftp.php}!FTP\_USEPASVADDRESS@{FTP\_USEPASVADDRESS}}
+\index{FTP\_USEPASVADDRESS@{FTP\_USEPASVADDRESS}!ftp.php@{ftp.php}}
+\doxysubsubsection{\texorpdfstring{FTP\_USEPASVADDRESS}{FTP\_USEPASVADDRESS}}
+{\footnotesize\ttfamily const F\+T\+P\+\_\+\+U\+S\+E\+P\+A\+S\+V\+A\+D\+D\+R\+E\+SS 2}
+

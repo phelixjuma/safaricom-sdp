@@ -1,0 +1,682 @@
+.TH "vendor/jetbrains/phpstorm-stubs/Core/Core_d.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/Core/Core_d.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBE_ERROR\fP 1"
+.br
+.ti -1c
+.RI "const \fBE_RECOVERABLE_ERROR\fP 4096"
+.br
+.ti -1c
+.RI "const \fBE_WARNING\fP 2"
+.br
+.ti -1c
+.RI "const \fBE_PARSE\fP 4"
+.br
+.ti -1c
+.RI "const \fBE_NOTICE\fP 8"
+.br
+.ti -1c
+.RI "const \fBE_STRICT\fP 2048"
+.br
+.ti -1c
+.RI "const \fBE_DEPRECATED\fP 8192"
+.br
+.ti -1c
+.RI "const \fBE_CORE_ERROR\fP 16"
+.br
+.ti -1c
+.RI "const \fBE_CORE_WARNING\fP 32"
+.br
+.ti -1c
+.RI "const \fBE_COMPILE_ERROR\fP 64"
+.br
+.ti -1c
+.RI "const \fBE_COMPILE_WARNING\fP 128"
+.br
+.ti -1c
+.RI "const \fBE_USER_ERROR\fP 256"
+.br
+.ti -1c
+.RI "const \fBE_USER_WARNING\fP 512"
+.br
+.ti -1c
+.RI "const \fBE_USER_NOTICE\fP 1024"
+.br
+.ti -1c
+.RI "const \fBE_USER_DEPRECATED\fP 16384"
+.br
+.ti -1c
+.RI "const \fBE_ALL\fP 32767"
+.br
+.ti -1c
+.RI "const \fBDEBUG_BACKTRACE_PROVIDE_OBJECT\fP 1"
+.br
+.ti -1c
+.RI "const \fBDEBUG_BACKTRACE_IGNORE_ARGS\fP 2"
+.br
+.ti -1c
+.RI "const \fBS_MEMORY\fP 1"
+.br
+.ti -1c
+.RI "const \fBS_VARS\fP 4"
+.br
+.ti -1c
+.RI "const \fBS_FILES\fP 8"
+.br
+.ti -1c
+.RI "const \fBS_INCLUDE\fP 16"
+.br
+.ti -1c
+.RI "const \fBS_SQL\fP 32"
+.br
+.ti -1c
+.RI "const \fBS_EXECUTOR\fP 64"
+.br
+.ti -1c
+.RI "const \fBS_MAIL\fP 128"
+.br
+.ti -1c
+.RI "const \fBS_SESSION\fP 256"
+.br
+.ti -1c
+.RI "const \fBS_MISC\fP 2"
+.br
+.ti -1c
+.RI "const \fBS_INTERNAL\fP 536870912"
+.br
+.ti -1c
+.RI "const \fBS_ALL\fP 511"
+.br
+.ti -1c
+.RI "const \fBLOG_EMERG\fP 0"
+.br
+.ti -1c
+.RI "const \fBLOG_ALERT\fP 1"
+.br
+.ti -1c
+.RI "const \fBLOG_CRIT\fP 2"
+.br
+.ti -1c
+.RI "const \fBLOG_ERR\fP 3"
+.br
+.ti -1c
+.RI "const \fBLOG_WARNING\fP 4"
+.br
+.ti -1c
+.RI "const \fBLOG_NOTICE\fP 5"
+.br
+.ti -1c
+.RI "const \fBLOG_INFO\fP 6"
+.br
+.ti -1c
+.RI "const \fBLOG_DEBUG\fP 7"
+.br
+.ti -1c
+.RI "const \fBLOG_KERN\fP 0"
+.br
+.ti -1c
+.RI "const \fBLOG_USER\fP 8"
+.br
+.ti -1c
+.RI "const \fBLOG_MAIL\fP 16"
+.br
+.ti -1c
+.RI "const \fBLOG_DAEMON\fP 24"
+.br
+.ti -1c
+.RI "const \fBLOG_AUTH\fP 32"
+.br
+.ti -1c
+.RI "const \fBLOG_SYSLOG\fP 40"
+.br
+.ti -1c
+.RI "const \fBLOG_LPR\fP 48"
+.br
+.ti -1c
+.RI "const \fBLOG_NEWS\fP 56"
+.br
+.ti -1c
+.RI "const \fBLOG_UUCP\fP 64"
+.br
+.ti -1c
+.RI "const \fBLOG_CRON\fP 72"
+.br
+.ti -1c
+.RI "const \fBLOG_AUTHPRIV\fP 80"
+.br
+.ti -1c
+.RI "const \fBLOG_LOCAL0\fP 128"
+.br
+.ti -1c
+.RI "const \fBLOG_LOCAL1\fP 136"
+.br
+.ti -1c
+.RI "const \fBLOG_LOCAL2\fP 144"
+.br
+.ti -1c
+.RI "const \fBLOG_LOCAL3\fP 152"
+.br
+.ti -1c
+.RI "const \fBLOG_LOCAL4\fP 160"
+.br
+.ti -1c
+.RI "const \fBLOG_LOCAL5\fP 168"
+.br
+.ti -1c
+.RI "const \fBLOG_LOCAL6\fP 176"
+.br
+.ti -1c
+.RI "const \fBLOG_LOCAL7\fP 184"
+.br
+.ti -1c
+.RI "const \fBLOG_PID\fP 1"
+.br
+.ti -1c
+.RI "const \fBLOG_CONS\fP 2"
+.br
+.ti -1c
+.RI "const \fBLOG_ODELAY\fP 4"
+.br
+.ti -1c
+.RI "const \fBLOG_NDELAY\fP 8"
+.br
+.ti -1c
+.RI "const \fBLOG_NOWAIT\fP 16"
+.br
+.ti -1c
+.RI "const \fBLOG_PERROR\fP 32"
+.br
+.ti -1c
+.RI "const \fBtrue\fP (bool)1, true"
+.br
+.ti -1c
+.RI "const \fBfalse\fP (bool)0, \fBtrue\fP"
+.br
+.ti -1c
+.RI "const \fBnull\fP null, \fBtrue\fP"
+.br
+.ti -1c
+.RI "const \fBZEND_THREAD_SAFE\fP \fBfalse\fP"
+.br
+.ti -1c
+.RI "const \fBZEND_DEBUG_BUILD\fP \fBfalse\fP"
+.br
+.ti -1c
+.RI "const \fBPHP_WINDOWS_VERSION_BUILD\fP 0"
+.br
+.ti -1c
+.RI "const \fBPHP_WINDOWS_VERSION_MAJOR\fP 0"
+.br
+.ti -1c
+.RI "const \fBPHP_WINDOWS_VERSION_MINOR\fP 0"
+.br
+.ti -1c
+.RI "const \fBPHP_WINDOWS_VERSION_PLATFORM\fP 0"
+.br
+.ti -1c
+.RI "const \fBPHP_WINDOWS_VERSION_PRODUCTTYPE\fP 0"
+.br
+.ti -1c
+.RI "const \fBPHP_WINDOWS_VERSION_SP_MAJOR\fP 0"
+.br
+.ti -1c
+.RI "const \fBPHP_WINDOWS_VERSION_SP_MINOR\fP 0"
+.br
+.ti -1c
+.RI "const \fBPHP_WINDOWS_VERSION_SUITEMASK\fP 0"
+.br
+.ti -1c
+.RI "const \fBPHP_VERSION\fP '5\&.3\&.6\-13ubuntu3\&.2'"
+.br
+.ti -1c
+.RI "const \fBPHP_MAJOR_VERSION\fP 5"
+.br
+.ti -1c
+.RI "const \fBPHP_MINOR_VERSION\fP 3"
+.br
+.ti -1c
+.RI "const \fBPHP_RELEASE_VERSION\fP 6"
+.br
+.ti -1c
+.RI "const \fBPHP_EXTRA_VERSION\fP '\-13ubuntu3\&.2'"
+.br
+.ti -1c
+.RI "const \fBPHP_VERSION_ID\fP 50306"
+.br
+.ti -1c
+.RI "const \fBPHP_ZTS\fP 0"
+.br
+.ti -1c
+.RI "const \fBPHP_DEBUG\fP 0"
+.br
+.ti -1c
+.RI "const \fBPHP_OS\fP 'Linux'"
+.br
+.ti -1c
+.RI "const \fBPHP_OS_FAMILY\fP 'Linux'"
+.br
+.ti -1c
+.RI "const \fBPHP_SAPI\fP 'cli'"
+.br
+.ti -1c
+.RI "const \fBDEFAULT_INCLUDE_PATH\fP '\&.:/usr/share/php:/usr/share/pear'"
+.br
+.ti -1c
+.RI "const \fBPEAR_INSTALL_DIR\fP '/usr/share/\fBphp\fP'"
+.br
+.ti -1c
+.RI "const \fBPEAR_EXTENSION_DIR\fP '/usr/lib/php5/20090626'"
+.br
+.ti -1c
+.RI "const \fBPHP_EXTENSION_DIR\fP '/usr/lib/php5/20090626'"
+.br
+.ti -1c
+.RI "const \fBPHP_PREFIX\fP '/usr'"
+.br
+.ti -1c
+.RI "const \fBPHP_BINDIR\fP '/usr/bin'"
+.br
+.ti -1c
+.RI "const \fBPHP_LIBDIR\fP '/usr/lib/php5'"
+.br
+.ti -1c
+.RI "const \fBPHP_DATADIR\fP '/usr/share'"
+.br
+.ti -1c
+.RI "const \fBPHP_SYSCONFDIR\fP '/etc'"
+.br
+.ti -1c
+.RI "const \fBPHP_LOCALSTATEDIR\fP '/var'"
+.br
+.ti -1c
+.RI "const \fBPHP_CONFIG_FILE_PATH\fP '/etc/php5/cli'"
+.br
+.ti -1c
+.RI "const \fBPHP_CONFIG_FILE_SCAN_DIR\fP '/etc/php5/cli/conf\&.d'"
+.br
+.ti -1c
+.RI "const \fBPHP_SHLIB_SUFFIX\fP 'so'"
+.br
+.ti -1c
+.RI "const \fBPHP_EOL\fP '\\n'"
+.br
+.ti -1c
+.RI "const \fBSUHOSIN_PATCH\fP 1"
+.br
+.ti -1c
+.RI "const \fBSUHOSIN_PATCH_VERSION\fP '0\&.9\&.10'"
+.br
+.ti -1c
+.RI "const \fBPHP_MAXPATHLEN\fP 4096"
+.br
+.ti -1c
+.RI "const \fBPHP_INT_MAX\fP 9223372036854775807"
+.br
+.ti -1c
+.RI "const \fBPHP_INT_MIN\fP \-9223372036854775808"
+.br
+.ti -1c
+.RI "const \fBPHP_INT_SIZE\fP 8"
+.br
+.ti -1c
+.RI "const \fBPHP_FLOAT_DIG\fP 15"
+.br
+.ti -1c
+.RI "const \fBPHP_FLOAT_EPSILON\fP 2\&.2204460492503e\-16"
+.br
+.ti -1c
+.RI "const \fBPHP_FLOAT_MAX\fP 1\&.7976931348623e+308"
+.br
+.ti -1c
+.RI "const \fBPHP_FLOAT_MIN\fP 2\&.2250738585072e\-308"
+.br
+.ti -1c
+.RI "const \fBZEND_MULTIBYTE\fP 0"
+.br
+.ti -1c
+.RI "const \fBPHP_OUTPUT_HANDLER_START\fP 1"
+.br
+.ti -1c
+.RI "const \fBPHP_OUTPUT_HANDLER_CONT\fP 2"
+.br
+.ti -1c
+.RI "const \fBPHP_OUTPUT_HANDLER_END\fP 4"
+.br
+.ti -1c
+.RI "const \fBUPLOAD_ERR_OK\fP 0"
+.br
+.ti -1c
+.RI "const \fBUPLOAD_ERR_INI_SIZE\fP 1"
+.br
+.ti -1c
+.RI "const \fBUPLOAD_ERR_FORM_SIZE\fP 2"
+.br
+.ti -1c
+.RI "const \fBUPLOAD_ERR_PARTIAL\fP 3"
+.br
+.ti -1c
+.RI "const \fBUPLOAD_ERR_NO_FILE\fP 4"
+.br
+.ti -1c
+.RI "const \fBUPLOAD_ERR_NO_TMP_DIR\fP 6"
+.br
+.ti -1c
+.RI "const \fBUPLOAD_ERR_CANT_WRITE\fP 7"
+.br
+.ti -1c
+.RI "const \fBUPLOAD_ERR_EXTENSION\fP 8"
+.br
+.ti -1c
+.RI "const \fBSTDIN\fP \fBfopen\fP('php://stdin', 'r')"
+.br
+.ti -1c
+.RI "const \fBSTDOUT\fP \fBfopen\fP('php://stdout', 'w')"
+.br
+.ti -1c
+.RI "const \fBSTDERR\fP \fBfopen\fP('php://stderr', 'w')"
+.br
+.ti -1c
+.RI "const \fBPHP_FD_SETSIZE\fP 1024"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "const DEBUG_BACKTRACE_IGNORE_ARGS 2"
+
+.SS "const DEBUG_BACKTRACE_PROVIDE_OBJECT 1"
+
+.SS "const DEFAULT_INCLUDE_PATH '\&.:/usr/share/php:/usr/share/pear'"
+
+.SS "const E_ALL 32767"
+All errors and warnings, as supported, except of level \fBE_STRICT\fP prior to PHP 5\&.4\&.0\&. Value of \fBE_ALL\fP is 32767 since PHP 5\&.4\&.x, 30719 in PHP 5\&.3\&.x, 6143 in PHP 5\&.2\&.x, 2047 previously \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const E_COMPILE_ERROR 64"
+Fatal compile-time errors\&. This is like an \fBE_ERROR\fP, except it is generated by the \fBZend\fP Scripting Engine\&. \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const E_COMPILE_WARNING 128"
+Compile-time warnings (non-fatal errors)\&. This is like an \fBE_WARNING\fP, except it is generated by the \fBZend\fP Scripting Engine\&. \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const E_CORE_ERROR 16"
+Fatal errors that occur during PHP's initial startup\&. This is like an \fBE_ERROR\fP, except it is generated by the core of PHP\&. \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const E_CORE_WARNING 32"
+Warnings (non-fatal errors) that occur during PHP's initial startup\&. This is like an \fBE_WARNING\fP, except it is generated by the core of PHP\&. \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const E_DEPRECATED 8192"
+Run-time notices\&. Enable this to receive warnings about code that will not work in future versions\&. \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const E_ERROR 1"
+Fatal run-time errors\&. These indicate errors that can not be recovered from, such as a memory allocation problem\&. Execution of the script is halted\&. \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const E_NOTICE 8"
+Run-time notices\&. Indicate that the script encountered something that could indicate an error, but could also happen in the normal course of running a script\&. \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const E_PARSE 4"
+Compile-time parse errors\&. Parse errors should only be generated by the parser\&. \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const E_RECOVERABLE_ERROR 4096"
+Catchable fatal error\&. It indicates that a probably dangerous error occured, but did not leave the Engine in an unstable state\&. If the error is not caught by a user defined handle (see also \fBset_error_handler\fP), the application aborts as it was an \fBE_ERROR\fP\&. \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const E_STRICT 2048"
+Enable to have PHP suggest changes to your code which will ensure the best interoperability and forward compatibility of your code\&. \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const E_USER_DEPRECATED 16384"
+User-generated warning message\&. This is like an \fBE_DEPRECATED\fP, except it is generated in PHP code by using the PHP function \fBtrigger_error\fP\&. \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const E_USER_ERROR 256"
+User-generated error message\&. This is like an \fBE_ERROR\fP, except it is generated in PHP code by using the PHP function \fBtrigger_error\fP\&. \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const E_USER_NOTICE 1024"
+User-generated notice message\&. This is like an \fBE_NOTICE\fP, except it is generated in PHP code by using the PHP function \fBtrigger_error\fP\&. \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const E_USER_WARNING 512"
+User-generated warning message\&. This is like an \fBE_WARNING\fP, except it is generated in PHP code by using the PHP function \fBtrigger_error\fP\&. \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const E_WARNING 2"
+Run-time warnings (non-fatal errors)\&. Execution of the script is not halted\&. \fBhttps://php\&.net/manual/en/errorfunc\&.constants\&.php\fP
+.SS "const false (bool)0, \fBtrue\fP"
+
+.SS "const LOG_ALERT 1"
+action must be taken immediately \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_AUTH 32"
+security/authorization messages (use \fBLOG_AUTHPRIV\fP instead in systems where that constant is defined) \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_AUTHPRIV 80"
+security/authorization messages (private) \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_CONS 2"
+if there is an error while sending data to the system logger, write directly to the system console \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_CRIT 2"
+critical conditions \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_CRON 72"
+clock daemon (cron and at) \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_DAEMON 24"
+other system daemons \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_DEBUG 7"
+debug-level message \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_EMERG 0"
+system is unusable \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_ERR 3"
+error conditions \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_INFO 6"
+informational message \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_KERN 0"
+kernel messages \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_LOCAL0 128"
+
+.SS "const LOG_LOCAL1 136"
+
+.SS "const LOG_LOCAL2 144"
+
+.SS "const LOG_LOCAL3 152"
+
+.SS "const LOG_LOCAL4 160"
+
+.SS "const LOG_LOCAL5 168"
+
+.SS "const LOG_LOCAL6 176"
+
+.SS "const LOG_LOCAL7 184"
+
+.SS "const LOG_LPR 48"
+line printer subsystem \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_MAIL 16"
+mail subsystem \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_NDELAY 8"
+open the connection to the logger immediately \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_NEWS 56"
+USENET news subsystem \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_NOTICE 5"
+normal, but significant, condition \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_NOWAIT 16"
+
+.SS "const LOG_ODELAY 4"
+(default) delay opening the connection until the first message is logged \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_PERROR 32"
+print log message also to standard error \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_PID 1"
+include PID with each message \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_SYSLOG 40"
+messages generated internally by syslogd \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_USER 8"
+generic user-level messages \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_UUCP 64"
+UUCP subsystem \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const LOG_WARNING 4"
+warning conditions \fBhttps://php\&.net/manual/en/network\&.constants\&.php\fP
+.SS "const null null, \fBtrue\fP"
+
+.SS "const PEAR_EXTENSION_DIR '/usr/lib/php5/20090626'"
+
+.SS "const PEAR_INSTALL_DIR '/usr/share/\fBphp\fP'"
+
+.SS "const PHP_BINDIR '/usr/bin'"
+
+.SS "const PHP_CONFIG_FILE_PATH '/etc/php5/cli'"
+
+.SS "const PHP_CONFIG_FILE_SCAN_DIR '/etc/php5/cli/conf\&.d'"
+
+.SS "const PHP_DATADIR '/usr/share'"
+
+.SS "const PHP_DEBUG 0"
+
+.SS "const PHP_EOL '\\n'"
+
+.SS "const PHP_EXTENSION_DIR '/usr/lib/php5/20090626'"
+
+.SS "const PHP_EXTRA_VERSION '\-13ubuntu3\&.2'"
+
+.SS "const PHP_FD_SETSIZE 1024"
+
+.SS "const PHP_FLOAT_DIG 15"
+Number of decimal digits that can be rounded into a float and back without precision loss\&. Available as of PHP 7\&.2\&.0\&. 
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "const PHP_FLOAT_EPSILON 2\&.2204460492503e\-16"
+Smallest representable positive number x, so that x + 1\&.0 != 1\&.0\&. Available as of PHP 7\&.2\&.0\&. 
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "const PHP_FLOAT_MAX 1\&.7976931348623e+308"
+Largest representable floating point number\&. Available as of PHP 7\&.2\&.0\&. 
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "const PHP_FLOAT_MIN 2\&.2250738585072e\-308"
+Smallest representable floating point number\&. Available as of PHP 7\&.2\&.0\&. 
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "const PHP_INT_MAX 9223372036854775807"
+
+.SS "const PHP_INT_MIN \-9223372036854775808"
+
+.SS "const PHP_INT_SIZE 8"
+
+.SS "const PHP_LIBDIR '/usr/lib/php5'"
+
+.SS "const PHP_LOCALSTATEDIR '/var'"
+
+.SS "const PHP_MAJOR_VERSION 5"
+
+.SS "const PHP_MAXPATHLEN 4096"
+
+.SS "const PHP_MINOR_VERSION 3"
+
+.SS "const PHP_OS 'Linux'"
+
+.SS "const PHP_OS_FAMILY 'Linux'"
+The operating system family PHP was built for\&. Either of 'Windows', 'BSD', 'Darwin', 'Solaris', 'Linux' or 'Unknown'\&. Available as of PHP 7\&.2\&.0\&. 
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "const PHP_OUTPUT_HANDLER_CONT 2"
+
+.SS "const PHP_OUTPUT_HANDLER_END 4"
+
+.SS "const PHP_OUTPUT_HANDLER_START 1"
+
+.SS "const PHP_PREFIX '/usr'"
+
+.SS "const PHP_RELEASE_VERSION 6"
+
+.SS "const PHP_SAPI 'cli'"
+
+.SS "const PHP_SHLIB_SUFFIX 'so'"
+
+.SS "const PHP_SYSCONFDIR '/etc'"
+
+.SS "const PHP_VERSION '5\&.3\&.6\-13ubuntu3\&.2'"
+
+.SS "const PHP_VERSION_ID 50306"
+
+.SS "const PHP_WINDOWS_VERSION_BUILD 0"
+
+.SS "const PHP_WINDOWS_VERSION_MAJOR 0"
+
+.SS "const PHP_WINDOWS_VERSION_MINOR 0"
+
+.SS "const PHP_WINDOWS_VERSION_PLATFORM 0"
+
+.SS "const PHP_WINDOWS_VERSION_PRODUCTTYPE 0"
+
+.SS "const PHP_WINDOWS_VERSION_SP_MAJOR 0"
+
+.SS "const PHP_WINDOWS_VERSION_SP_MINOR 0"
+
+.SS "const PHP_WINDOWS_VERSION_SUITEMASK 0"
+
+.SS "const PHP_ZTS 0"
+
+.SS "const S_ALL 511"
+
+.SS "const S_EXECUTOR 64"
+
+.SS "const S_FILES 8"
+
+.SS "const S_INCLUDE 16"
+
+.SS "const S_INTERNAL 536870912"
+
+.SS "const S_MAIL 128"
+
+.SS "const S_MEMORY 1"
+
+.SS "const S_MISC 2"
+
+.SS "const S_SESSION 256"
+
+.SS "const S_SQL 32"
+
+.SS "const S_VARS 4"
+
+.SS "const STDERR \fBfopen\fP('php://stderr', 'w')"
+
+.SS "const STDIN \fBfopen\fP('php://stdin', 'r')"
+
+.SS "const STDOUT \fBfopen\fP('php://stdout', 'w')"
+
+.SS "const SUHOSIN_PATCH 1"
+
+.SS "const SUHOSIN_PATCH_VERSION '0\&.9\&.10'"
+
+.SS "const true (bool)1, true"
+
+.SS "const UPLOAD_ERR_CANT_WRITE 7"
+
+.SS "const UPLOAD_ERR_EXTENSION 8"
+
+.SS "const UPLOAD_ERR_FORM_SIZE 2"
+
+.SS "const UPLOAD_ERR_INI_SIZE 1"
+
+.SS "const UPLOAD_ERR_NO_FILE 4"
+
+.SS "const UPLOAD_ERR_NO_TMP_DIR 6"
+
+.SS "const UPLOAD_ERR_OK 0"
+
+.SS "const UPLOAD_ERR_PARTIAL 3"
+
+.SS "const ZEND_DEBUG_BUILD \fBfalse\fP"
+
+.SS "const ZEND_MULTIBYTE 0"
+
+.SS "const ZEND_THREAD_SAFE \fBfalse\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

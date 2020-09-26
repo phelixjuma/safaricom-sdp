@@ -1,0 +1,161 @@
+.TH "vendor/jetbrains/phpstorm-stubs/ZendCache/ZendCache.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/ZendCache/ZendCache.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBzend_shm_cache_store\fP ($\fBkey\fP, $value, $ttl=0)"
+.br
+.ti -1c
+.RI "\fBzend_shm_cache_fetch\fP ($\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBzend_shm_cache_delete\fP ($\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBzend_shm_cache_clear\fP ($namespace='')"
+.br
+.ti -1c
+.RI "\fBzend_disk_cache_store\fP ($\fBkey\fP, $value, $ttl=0)"
+.br
+.ti -1c
+.RI "\fBzend_disk_cache_fetch\fP ($\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBzend_disk_cache_delete\fP ($\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBzend_disk_cache_clear\fP ($namespace='')"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "zend_disk_cache_clear ( $namespace = \fC''\fP)"
+Clear the entire Disk Memory cache or just the provided namespace\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$namespace\fP string [optional] Namespace to clear\&. If blank or is not passed, it will clear entire cache\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool TRUE on success, FALSE otherwise 
+.RE
+.PP
+
+.SS "zend_disk_cache_delete ( $key)"
+Delete a key from the cache
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP string the data's key\&. Possibly prefixed with namespace
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+null|mixed when no data matching the key is found, else it returns the stored data 
+.RE
+.PP
+
+.SS "zend_disk_cache_fetch ( $key)"
+Retrieves data stored in the Shared Memory Cache
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP string NULL when no data matching the key is found, else it returns the stored data
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+null|mixed NULL when no data matching the key is found, else it returns the stored data 
+.RE
+.PP
+
+.SS "zend_disk_cache_store ( $key,  $value,  $ttl = \fC0\fP)"
+Stores a serializable variable into Disk Cache
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP string the data's key\&. Possibly prefixed with namespace 
+.br
+\fI$value\fP mixed can be any PHP object that can be serialized 
+.br
+\fI$ttl\fP [optional] int time to live in seconds\&. ZendCache keeps the objects in the cache as long as the TTL is no expired, once expired it will be removed from the cache
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool FALSE when stored failed, TRUE otherwise 
+.RE
+.PP
+
+.SS "zend_shm_cache_clear ( $namespace = \fC''\fP)"
+Clear the entire Shared Memory cache or just the provided namespace\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$namespace\fP string [optional] Namespace to clear\&. If blank or is not passed, it will clear entire cache\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool TRUE on success, FALSE otherwise 
+.RE
+.PP
+
+.SS "zend_shm_cache_delete ( $key)"
+Delete a key from the Shared Memory cache
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP string the data's key\&. Possibly prefixed with namespace
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+null|mixed when no data matching the key is found, else it returns the stored data 
+.RE
+.PP
+
+.SS "zend_shm_cache_fetch ( $key)"
+Retrieves data stored in the Shared Memory Cache\&. If the key is not found, returns null\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP string the data's key\&. Possibly prefixed with namespace
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+null|mixed NULL when no data matching the key is found, else it returns the stored data 
+.RE
+.PP
+
+.SS "zend_shm_cache_store ( $key,  $value,  $ttl = \fC0\fP)"
+Stores a serializable variable into Shared Memory Cache
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP string the data's key\&. Possibly prefixed with namespace 
+.br
+\fI$value\fP mixed can be any PHP object that can be serialized\&. 
+.br
+\fI$ttl\fP int [optional] time to live in seconds\&. ZendCache keeps the objects in the cache as long as the TTL is no expired, once expired it will be removed from the cache
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool FALSE when stored failed, TRUE otherwise 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

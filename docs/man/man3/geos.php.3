@@ -1,0 +1,262 @@
+.TH "vendor/jetbrains/phpstorm-stubs/geos/geos.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/geos/geos.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBGEOSWKTReader\fP"
+.br
+.ti -1c
+.RI "class \fBGEOSWKTWriter\fP"
+.br
+.ti -1c
+.RI "class \fBGEOSGeometry\fP"
+.br
+.ti -1c
+.RI "class \fBGEOSWKBWriter\fP"
+.br
+.ti -1c
+.RI "class \fBGEOSWKBReader\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGEOSVersion\fP ()"
+.br
+.ti -1c
+.RI "\fBGEOSSharedPaths\fP (\fBGEOSGeometry\fP $geom1, \fBGEOSGeometry\fP $geom2)"
+.br
+.ti -1c
+.RI "\fBGEOSLineMerge\fP (\fBGEOSGeometry\fP $geom)"
+.br
+.ti -1c
+.RI "\fBGEOSRelateMatch\fP (string $matrix, string $pattern)"
+.br
+.ti -1c
+.RI "\fBGEOSPolygonize\fP (\fBGEOSGeometry\fP $geom)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBGEOSBUF_CAP_ROUND\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEOSBUF_CAP_FLAT\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEOSBUF_CAP_SQUARE\fP 3"
+.br
+.ti -1c
+.RI "const \fBGEOSBUF_JOIN_ROUND\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEOSBUF_JOIN_MITRE\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEOSBUF_JOIN_BEVEL\fP 3"
+.br
+.ti -1c
+.RI "const \fBGEOS_POINT\fP 0"
+.br
+.ti -1c
+.RI "const \fBGEOS_LINESTRING\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEOS_LINEARRING\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEOS_POLYGON\fP 3"
+.br
+.ti -1c
+.RI "const \fBGEOS_MULTIPOINT\fP 4"
+.br
+.ti -1c
+.RI "const \fBGEOS_MULTILINESTRING\fP 5"
+.br
+.ti -1c
+.RI "const \fBGEOS_MULTIPOLYGON\fP 6"
+.br
+.ti -1c
+.RI "const \fBGEOS_GEOMETRYCOLLECTION\fP 7"
+.br
+.ti -1c
+.RI "const \fBGEOSVALID_ALLOW_SELFTOUCHING_RING_FORMING_HOLE\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEOSRELATE_BNR_MOD2\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEOSRELATE_BNR_OGC\fP 1"
+.br
+.ti -1c
+.RI "const \fBGEOSRELATE_BNR_ENDPOINT\fP 2"
+.br
+.ti -1c
+.RI "const \fBGEOSRELATE_BNR_MULTIVALENT_ENDPOINT\fP 3"
+.br
+.ti -1c
+.RI "const \fBGEOSRELATE_BNR_MONOVALENT_ENDPOINT\fP 4"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "GEOSLineMerge (\fBGEOSGeometry\fP $geom)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$geom\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fI\fBException\fP\fP 
+.RE
+.PP
+
+.SS "GEOSPolygonize (\fBGEOSGeometry\fP $geom)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$geom\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array
+.IP "\(bu" 2
+'rings' Type: array of \fBGEOSGeometry\fP Rings that can be formed by the costituent linework of geometry\&.
+.IP "\(bu" 2
+'cut_edges' (optional) Type: array of \fBGEOSGeometry\fP Edges which are connected at both ends but which do not form part of polygon\&.
+.IP "\(bu" 2
+'dangles' Type: array of \fBGEOSGeometry\fP Edges which have one or both ends which are not incident on another edge endpoint
+.IP "\(bu" 2
+'invalid_rings' Type: array of \fBGEOSGeometry\fP Edges which form rings which are invalid (e\&.g\&. the component lines contain a self-intersection) 
+.PP
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fI\fBException\fP\fP 
+.RE
+.PP
+
+.SS "GEOSRelateMatch (string $matrix, string $pattern)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$matrix\fP 
+.br
+\fI$pattern\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fI\fBException\fP\fP 
+.RE
+.PP
+
+.SS "GEOSSharedPaths (\fBGEOSGeometry\fP $geom1, \fBGEOSGeometry\fP $geom2)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$geom1\fP 
+.br
+\fI$geom2\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBGEOSGeometry\fP 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fI\fBException\fP\fP 
+.RE
+.PP
+
+.SS "GEOSVersion ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const GEOS_GEOMETRYCOLLECTION 7"
+
+.SS "const GEOS_LINEARRING 2"
+
+.SS "const GEOS_LINESTRING 1"
+
+.SS "const GEOS_MULTILINESTRING 5"
+
+.SS "const GEOS_MULTIPOINT 4"
+
+.SS "const GEOS_MULTIPOLYGON 6"
+
+.SS "const GEOS_POINT 0"
+
+.SS "const GEOS_POLYGON 3"
+
+.SS "const GEOSBUF_CAP_FLAT 2"
+
+.SS "const GEOSBUF_CAP_ROUND 1"
+
+.PP
+\fBSee also\fP
+.RS 4
+https://github.com/libgeos/php-geos/blob/master/tests/000_General.phpt 
+.RE
+.PP
+
+.SS "const GEOSBUF_CAP_SQUARE 3"
+
+.SS "const GEOSBUF_JOIN_BEVEL 3"
+
+.SS "const GEOSBUF_JOIN_MITRE 2"
+
+.SS "const GEOSBUF_JOIN_ROUND 1"
+
+.SS "const GEOSRELATE_BNR_ENDPOINT 2"
+
+.SS "const GEOSRELATE_BNR_MOD2 1"
+
+.SS "const GEOSRELATE_BNR_MONOVALENT_ENDPOINT 4"
+
+.SS "const GEOSRELATE_BNR_MULTIVALENT_ENDPOINT 3"
+
+.SS "const GEOSRELATE_BNR_OGC 1"
+
+.SS "const GEOSVALID_ALLOW_SELFTOUCHING_RING_FORMING_HOLE 1"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,703 @@
+.TH "vendor/jetbrains/phpstorm-stubs/mssql/mssql.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/mssql/mssql.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBmssql_connect\fP ($servername=\fBnull\fP, $username=\fBnull\fP, $password=\fBnull\fP, $new_link=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBmssql_pconnect\fP ($servername=\fBnull\fP, $username=\fBnull\fP, $password=\fBnull\fP, $new_link=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBmssql_close\fP ($link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmssql_select_db\fP ($database_name, $link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmssql_query\fP ($query, $link_identifier=\fBnull\fP, $batch_size=0)"
+.br
+.ti -1c
+.RI "\fBmssql_fetch_batch\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmssql_rows_affected\fP ($link_identifier)"
+.br
+.ti -1c
+.RI "\fBmssql_free_result\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmssql_get_last_message\fP ()"
+.br
+.ti -1c
+.RI "\fBmssql_num_rows\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmssql_num_fields\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmssql_fetch_field\fP ($result, $field_offset=\-1)"
+.br
+.ti -1c
+.RI "\fBmssql_fetch_row\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmssql_fetch_array\fP ($result, $result_type=\fBMSSQL_BOTH\fP)"
+.br
+.ti -1c
+.RI "\fBmssql_fetch_assoc\fP ($result_id)"
+.br
+.ti -1c
+.RI "\fBmssql_fetch_object\fP ($result)"
+.br
+.ti -1c
+.RI "\fBmssql_field_length\fP ($result, $offset=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmssql_field_name\fP ($result, $offset=\-1)"
+.br
+.ti -1c
+.RI "\fBmssql_field_type\fP ($result, $offset=\-1)"
+.br
+.ti -1c
+.RI "\fBmssql_data_seek\fP ($result_identifier, $row_number)"
+.br
+.ti -1c
+.RI "\fBmssql_field_seek\fP ($result, $field_offset)"
+.br
+.ti -1c
+.RI "\fBmssql_result\fP ($result, $row, $field)"
+.br
+.ti -1c
+.RI "\fBmssql_next_result\fP ($result_id)"
+.br
+.ti -1c
+.RI "\fBmssql_min_error_severity\fP ($severity)"
+.br
+.ti -1c
+.RI "\fBmssql_min_message_severity\fP ($severity)"
+.br
+.ti -1c
+.RI "\fBmssql_init\fP ($sp_name, $link_identifier=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBmssql_bind\fP ($stmt, $param_name, &$var, $type, $is_output=\fBfalse\fP, $\fBis_null\fP=\fBfalse\fP, $maxlen=\-1)"
+.br
+.ti -1c
+.RI "\fBmssql_execute\fP ($stmt, $skip_results=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBmssql_free_statement\fP ($stmt)"
+.br
+.ti -1c
+.RI "\fBmssql_guid_string\fP ($binary, $short_format=\fBnull\fP)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBMSSQL_ASSOC\fP 1"
+.br
+.ti -1c
+.RI "const \fBMSSQL_NUM\fP 2"
+.br
+.ti -1c
+.RI "const \fBMSSQL_BOTH\fP 3"
+.br
+.ti -1c
+.RI "const \fBSQLTEXT\fP 35"
+.br
+.ti -1c
+.RI "const \fBSQLVARCHAR\fP 39"
+.br
+.ti -1c
+.RI "const \fBSQLCHAR\fP 47"
+.br
+.ti -1c
+.RI "const \fBSQLINT1\fP 48"
+.br
+.ti -1c
+.RI "const \fBSQLINT2\fP 52"
+.br
+.ti -1c
+.RI "const \fBSQLINT4\fP 56"
+.br
+.ti -1c
+.RI "const \fBSQLBIT\fP 50"
+.br
+.ti -1c
+.RI "const \fBSQLFLT4\fP 59"
+.br
+.ti -1c
+.RI "const \fBSQLFLT8\fP 62"
+.br
+.ti -1c
+.RI "const \fBSQLFLTN\fP 109"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "mssql_bind ( $stmt,  $param_name, & $var,  $type,  $is_output = \fC\fBfalse\fP\fP,  $is_null = \fC\fBfalse\fP\fP,  $maxlen = \fC\-1\fP)"
+(PHP 4 >= 4\&.0\&.7, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Adds a parameter to a stored procedure or a remote stored procedure \fBresource $stmt \fP Statement resource, obtained with mssql_init\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$param_name\fP 
+.RE
+.PP
+The parameter name, as a string\&. 
+.PP
+You have to include the @ character, like in the T-SQL syntax\&. See the explanation included in mssql_execute\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$var\fP 
+.RE
+.PP
+The PHP variable you'll bind the MSSQL parameter to\&. It is passed by reference, to retrieve OUTPUT and RETVAL values after the procedure execution\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP 
+.RE
+.PP
+One of: SQLTEXT, SQLVARCHAR, SQLCHAR, SQLINT1, SQLINT2, SQLINT4, SQLBIT, SQLFLT4, SQLFLT8, SQLFLTN\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$is_output\fP [optional] 
+.RE
+.PP
+Whether the value is an OUTPUT parameter or not\&. If it's an OUTPUT parameter and you don't mention it, it will be treated as a normal input parameter and no error will be thrown\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$is_null\fP [optional] 
+.RE
+.PP
+Whether the parameter is null or not\&. Passing the null value as var will not do the job\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$maxlen\fP [optional] 
+.RE
+.PP
+Used with char/varchar values\&. You have to indicate the length of the data so if the parameter is a varchar(50), the type must be SQLVARCHAR and this value 50\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "mssql_close ( $link_identifier = \fC\fBnull\fP\fP)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Close MS SQL Server connection \fBresource $link_identifier [optional] \fP \fBA\fP MS SQL link identifier, returned by mssql_connect\&. 
+.PP
+This function will not close persistent links generated by mssql_pconnect\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "mssql_connect ( $servername = \fC\fBnull\fP\fP,  $username = \fC\fBnull\fP\fP,  $password = \fC\fBnull\fP\fP,  $new_link = \fC\fBfalse\fP\fP)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Open MS SQL server connection \fBstring $servername [optional] \fP The MS SQL server\&. It can also include a port number, e\&.g\&. hostname:port (Linux), or hostname,port (Windows)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP [optional] 
+.RE
+.PP
+The username\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP [optional] 
+.RE
+.PP
+The password\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$new_link\fP [optional] 
+.RE
+.PP
+If a second call is made to mssql_connect with the same arguments, no new link will be established, but instead, the link identifier of the already opened link will be returned\&. This parameter modifies this behavior and makes mssql_connect always open a new link, even if mssql_connect was called before with the same parameters\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a MS SQL link identifier on success, or false on error\&. 
+.RE
+.PP
+
+.SS "mssql_data_seek ( $result_identifier,  $row_number)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Moves internal row pointer \fBresource $result_identifier \fP The result resource that is being evaluated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row_number\fP 
+.RE
+.PP
+The desired row number of the new result pointer\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "mssql_execute ( $stmt,  $skip_results = \fC\fBfalse\fP\fP)"
+(PHP 4 >= 4\&.0\&.7, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Executes a stored procedure on a MS SQL server database \fBresource $stmt \fP Statement handle obtained with mssql_init\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$skip_results\fP [optional] 
+.RE
+.PP
+Whenever to skip the results or not\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed 
+.RE
+.PP
+
+.SS "mssql_fetch_array ( $result,  $result_type = \fC\fBMSSQL_BOTH\fP\fP)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Fetch a result row as an associative array, a numeric array, or both \fBresource $result \fP The result resource that is being evaluated\&. This result comes from a call to mssql_query\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_type\fP [optional] 
+.RE
+.PP
+The type of array that is to be fetched\&. It's a constant and can take the following values: MSSQL_ASSOC, MSSQL_NUM, and MSSQL_BOTH\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array that corresponds to the fetched row, or false if there are no more rows\&. 
+.RE
+.PP
+
+.SS "mssql_fetch_assoc ( $result_id)"
+(PHP 4 >= 4\&.2\&.0, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Returns an associative array of the current row in the result \fBresource $result_id \fP The result resource that is being evaluated\&. This result comes from a call to mssql_query\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an associative array that corresponds to the fetched row, or false if there are no more rows\&. 
+.RE
+.PP
+
+.SS "mssql_fetch_batch ( $result)"
+(PHP 4 >= 4\&.0\&.4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Returns the next batch of records \fBresource $result \fP The result resource that is being evaluated\&. This result comes from a call to mssql_query\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the batch number as an integer\&. 
+.RE
+.PP
+
+.SS "mssql_fetch_field ( $result,  $field_offset = \fC\-1\fP)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Get field information \fBresource $result \fP The result resource that is being evaluated\&. This result comes from a call to mssql_query\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_offset\fP [optional] 
+.RE
+.PP
+The numerical field offset\&. If the field offset is not specified, the next field that was not yet retrieved by this function is retrieved\&. The field_offset starts at 0\&. 
+.PP
+\fBReturns\fP
+.RS 4
+object an object containing field information\&. 
+.RE
+.PP
+.PP
+The properties of the object are: 
+.SS "mssql_fetch_object ( $result)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Fetch row as object \fBresource $result \fP The result resource that is being evaluated\&. This result comes from a call to mssql_query\&. 
+.PP
+\fBReturns\fP
+.RS 4
+object an object with properties that correspond to the fetched row, or false if there are no more rows\&. 
+.RE
+.PP
+
+.SS "mssql_fetch_row ( $result)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Get row as enumerated array \fBresource $result \fP The result resource that is being evaluated\&. This result comes from a call to mssql_query\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array that corresponds to the fetched row, or false if there are no more rows\&. 
+.RE
+.PP
+
+.SS "mssql_field_length ( $result,  $offset = \fC\fBnull\fP\fP)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Get the length of a field \fBresource $result \fP The result resource that is being evaluated\&. This result comes from a call to mssql_query\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+The field offset, starts at 0\&. If omitted, the current field is used\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false The length of the specified field index on success or false on failure\&. 
+.RE
+.PP
+
+.SS "mssql_field_name ( $result,  $offset = \fC\-1\fP)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Get the name of a field \fBresource $result \fP The result resource that is being evaluated\&. This result comes from a call to mssql_query\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+The field offset, starts at 0\&. If omitted, the current field is used\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The name of the specified field index on success or false on failure\&. 
+.RE
+.PP
+
+.SS "mssql_field_seek ( $result,  $field_offset)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Seeks to the specified field offset \fBresource $result \fP The result resource that is being evaluated\&. This result comes from a call to mssql_query\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_offset\fP 
+.RE
+.PP
+The field offset, starts at 0\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "mssql_field_type ( $result,  $offset = \fC\-1\fP)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Gets the type of a field \fBresource $result \fP The result resource that is being evaluated\&. This result comes from a call to mssql_query\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+The field offset, starts at 0\&. If omitted, the current field is used\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false The type of the specified field index on success or false on failure\&. 
+.RE
+.PP
+
+.SS "mssql_free_result ( $result)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Free result memory \fBresource $result \fP The result resource that is being freed\&. This result comes from a call to mssql_query\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "mssql_free_statement ( $stmt)"
+(PHP 4 >= 4\&.3\&.2, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Free statement memory \fBresource $stmt \fP Statement resource, obtained with mssql_init\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "mssql_get_last_message ()"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Returns the last message from the server \fBstring last error message from server, or an empty string if no error messages are returned from MSSQL\&. \fP
+.SS "mssql_guid_string ( $binary,  $short_format = \fC\fBnull\fP\fP)"
+(PHP 4 >= 4\&.0\&.7, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Converts a 16 byte binary GUID to a string \fBstring $binary \fP \fBA\fP 16 byte binary GUID\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$short_format\fP [optional] 
+.RE
+.PP
+Whenever to use short format\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the converted string on success\&. 
+.RE
+.PP
+
+.SS "mssql_init ( $sp_name,  $link_identifier = \fC\fBnull\fP\fP)"
+(PHP 4 >= 4\&.0\&.7, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Initializes a stored procedure or a remote stored procedure \fBstring $sp_name \fP Stored procedure name, like ownew\&.sp_name or otherdb\&.owner\&.sp_name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBA\fP MS SQL link identifier, returned by mssql_connect\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource a resource identifier 'statement', used in subsequent calls to mssql_bind and mssql_execute, or false on errors\&. 
+.RE
+.PP
+
+.SS "mssql_min_error_severity ( $severity)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Sets the minimum error severity \fBint $severity \fP The new error severity\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "mssql_min_message_severity ( $severity)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Sets the minimum message severity \fBint $severity \fP The new message severity\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "mssql_next_result ( $result_id)"
+(PHP 4 >= 4\&.0\&.5, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Move the internal result pointer to the next result \fBresource $result_id \fP The result resource that is being evaluated\&. This result comes from a call to mssql_query\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if an additional result set was available or false otherwise\&. 
+.RE
+.PP
+
+.SS "mssql_num_fields ( $result)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Gets the number of fields in result \fBresource $result \fP The result resource that is being evaluated\&. This result comes from a call to mssql_query\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of fields, as an integer\&. 
+.RE
+.PP
+
+.SS "mssql_num_rows ( $result)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Gets the number of rows in result \fBresource $result \fP The result resource that is being evaluated\&. This result comes from a call to mssql_query\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of rows, as an integer\&. 
+.RE
+.PP
+
+.SS "mssql_pconnect ( $servername = \fC\fBnull\fP\fP,  $username = \fC\fBnull\fP\fP,  $password = \fC\fBnull\fP\fP,  $new_link = \fC\fBfalse\fP\fP)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Open persistent MS SQL connection \fBstring $servername [optional] \fP The MS SQL server\&. It can also include a port number\&. e\&.g\&. hostname:port\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP [optional] 
+.RE
+.PP
+The username\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP [optional] 
+.RE
+.PP
+The password\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$new_link\fP [optional] 
+.RE
+.PP
+If a second call is made to mssql_pconnect with the same arguments, no new link will be established, but instead, the link identifier of the already opened link will be returned\&. This parameter modifies this behavior and makes mssql_pconnect always open a new link, even if mssql_pconnect was called before with the same parameters\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource a positive MS SQL persistent link identifier on success, or false on error\&. 
+.RE
+.PP
+
+.SS "mssql_query ( $query,  $link_identifier = \fC\fBnull\fP\fP,  $batch_size = \fC0\fP)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Send MS SQL query \fBstring $query \fP An SQL query\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBA\fP MS SQL link identifier, returned by mssql_connect or mssql_pconnect\&. 
+.PP
+If the link identifier isn't specified, the last opened link is assumed\&. If no link is open, the function tries to establish a link as if mssql_connect was called, and use it\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$batch_size\fP [optional] 
+.RE
+.PP
+The number of records to batch in the buffer\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed a MS SQL result resource on success, true if no rows were returned, or false on error\&. 
+.RE
+.PP
+
+.SS "mssql_result ( $result,  $row,  $field)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Get result data \fBresource $result \fP The result resource that is being evaluated\&. This result comes from a call to mssql_query\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row\fP 
+.RE
+.PP
+The row number\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+Can be the field's offset, the field's name or the field's table dot field's name (tablename\&.fieldname)\&. If the column name has been aliased ('select foo as bar from\&.\&.\&.'), it uses the alias instead of the column name\&. 
+.PP
+Specifying a numeric offset for the field argument is much quicker than specifying a fieldname or tablename\&.fieldname argument\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the contents of the specified cell\&. 
+.RE
+.PP
+
+.SS "mssql_rows_affected ( $link_identifier)"
+(PHP 4 >= 4\&.0\&.4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Returns the number of records affected by the query \fBresource $link_identifier \fP \fBA\fP MS SQL link identifier, returned by mssql_connect or mssql_pconnect\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of records affected by last operation\&. 
+.RE
+.PP
+
+.SS "mssql_select_db ( $database_name,  $link_identifier = \fC\fBnull\fP\fP)"
+(PHP 4, PHP 5, PECL odbtp >= 1\&.1\&.1)
+.br
+ Select MS SQL database \fBstring $database_name \fP The database name\&. 
+.PP
+To escape the name of a database that contains spaces, hyphens ('-'), or any other exceptional characters, the database name must be enclosed in brackets, as is shown in the example, below\&. This technique must also be applied when selecting a database name that is also a reserved word (such as primary)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link_identifier\fP [optional] 
+.RE
+.PP
+\fBA\fP MS SQL link identifier, returned by mssql_connect or mssql_pconnect\&. 
+.PP
+If no link identifier is specified, the last opened link is assumed\&. If no link is open, the function will try to establish a link as if mssql_connect was called, and use it\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const MSSQL_ASSOC 1"
+Return an associative array\&. Used on mssql_fetch_array's result_type parameter\&. \fBhttps://php\&.net/manual/en/mssql\&.constants\&.php\fP
+.SS "const MSSQL_BOTH 3"
+Return an array with both numeric keys and keys with their field name\&. This is the default value for mssql_fetch_array's result_type parameter\&. \fBhttps://php\&.net/manual/en/mssql\&.constants\&.php\fP
+.SS "const MSSQL_NUM 2"
+Return an array with numeric keys\&. Used on mssql_fetch_array's result_type parameter\&. \fBhttps://php\&.net/manual/en/mssql\&.constants\&.php\fP
+.SS "const SQLBIT 50"
+Indicates the 'BIT' type in MSSQL, used by mssql_bind's type parameter\&. \fBhttps://php\&.net/manual/en/mssql\&.constants\&.php\fP
+.SS "const SQLCHAR 47"
+Indicates the 'CHAR' type in MSSQL, used by mssql_bind's type parameter\&. \fBhttps://php\&.net/manual/en/mssql\&.constants\&.php\fP
+.SS "const SQLFLT4 59"
+Represents an four byte float\&. \fBhttps://php\&.net/manual/en/mssql\&.constants\&.php\fP
+.SS "const SQLFLT8 62"
+Represents an eight byte float\&. \fBhttps://php\&.net/manual/en/mssql\&.constants\&.php\fP
+.SS "const SQLFLTN 109"
+
+.SS "const SQLINT1 48"
+Represents one byte, with a range of -128 to 127\&. \fBhttps://php\&.net/manual/en/mssql\&.constants\&.php\fP
+.SS "const SQLINT2 52"
+Represents two bytes, with a range of -32768 to 32767\&. \fBhttps://php\&.net/manual/en/mssql\&.constants\&.php\fP
+.SS "const SQLINT4 56"
+Represents four bytes, with a range of -2147483648 to 2147483647\&. \fBhttps://php\&.net/manual/en/mssql\&.constants\&.php\fP
+.SS "const SQLTEXT 35"
+Indicates the 'TEXT' type in MSSQL, used by mssql_bind's type parameter\&. \fBhttps://php\&.net/manual/en/mssql\&.constants\&.php\fP
+.SS "const SQLVARCHAR 39"
+Indicates the 'VARCHAR' type in MSSQL, used by mssql_bind's type parameter\&. \fBhttps://php\&.net/manual/en/mssql\&.constants\&.php\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

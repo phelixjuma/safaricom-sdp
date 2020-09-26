@@ -1,0 +1,52 @@
+\hypertarget{igbinary_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/igbinary/igbinary.php File Reference}
+\label{igbinary_8php}\index{vendor/jetbrains/phpstorm-\/stubs/igbinary/igbinary.php@{vendor/jetbrains/phpstorm-\/stubs/igbinary/igbinary.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{igbinary_8php_adaa24700319ea052418e4844a4376d38}{igbinary\+\_\+serialize}} (\$value)
+\item 
+\mbox{\hyperlink{igbinary_8php_abb08bdf89d1fb8011add932e4b33562e}{igbinary\+\_\+unserialize}} (\$str)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{igbinary_8php_adaa24700319ea052418e4844a4376d38}\label{igbinary_8php_adaa24700319ea052418e4844a4376d38}} 
+\index{igbinary.php@{igbinary.php}!igbinary\_serialize@{igbinary\_serialize}}
+\index{igbinary\_serialize@{igbinary\_serialize}!igbinary.php@{igbinary.php}}
+\doxysubsubsection{\texorpdfstring{igbinary\_serialize()}{igbinary\_serialize()}}
+{\footnotesize\ttfamily igbinary\+\_\+serialize (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Generates a storable representation of a value. This is useful for storing or passing P\+HP values around without losing their type and structure. To make the serialized string into a P\+HP value again, use \mbox{\hyperlink{igbinary_8php_abb08bdf89d1fb8011add932e4b33562e}{igbinary\+\_\+unserialize}}.
+
+\mbox{\hyperlink{igbinary_8php_adaa24700319ea052418e4844a4376d38}{igbinary\+\_\+serialize()}} handles all types, except the resource-\/type. You can even \mbox{\hyperlink{standard__4_8php_aa120148bb7608edd3ece62b379e5b8b4}{serialize()}} arrays that contain references to itself. Circular references inside the array/object you are \mbox{\hyperlink{standard__4_8php_aa120148bb7608edd3ece62b379e5b8b4}{serialize()}}ing will also be stored.
+
+If object implements \mbox{\hyperlink{}{Serializable}} -\/interface, P\+HP will call the member function serialize to get serialized representation of object.
+
+When serializing objects, P\+HP will attempt to call the member function \+\_\+\+\_\+sleep prior to serialization. This is to allow the object to do any last minute clean-\/up, etc. prior to being serialized. Likewise, when the object is restored using \mbox{\hyperlink{standard__4_8php_a9891e1553a8828910a805bb590e78a26}{unserialize()}} the \+\_\+\+\_\+wakeup member function is called.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & The value to be serialized. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Returns a string containing a byte-\/stream representation of value that can be stored anywhere. \mbox{\hyperlink{}{P\+HP default serialize }}
+\end{DoxyReturn}
+\mbox{\Hypertarget{igbinary_8php_abb08bdf89d1fb8011add932e4b33562e}\label{igbinary_8php_abb08bdf89d1fb8011add932e4b33562e}} 
+\index{igbinary.php@{igbinary.php}!igbinary\_unserialize@{igbinary\_unserialize}}
+\index{igbinary\_unserialize@{igbinary\_unserialize}!igbinary.php@{igbinary.php}}
+\doxysubsubsection{\texorpdfstring{igbinary\_unserialize()}{igbinary\_unserialize()}}
+{\footnotesize\ttfamily igbinary\+\_\+unserialize (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Creates a P\+HP value from a stored representation. \mbox{\hyperlink{igbinary_8php_abb08bdf89d1fb8011add932e4b33562e}{igbinary\+\_\+unserialize()}} takes a single serialized variable and converts it back into a P\+HP value.
+
+If the variable being unserialized is an object, after successfully reconstructing the object P\+HP will automatically attempt to call the \+\_\+\+\_\+wakeup() member function (if it exists). In case the passed string is not unserializeable, N\+U\+LL is returned and E\+\_\+\+W\+A\+R\+N\+I\+NG is issued.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & The serialized string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The converted value is returned, and can be a boolean, integer, float, string, array or object. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{P\+HP default unserialize  \href{https://secure.php.net/~helly/php/ext/spl/interfaceSerializable.html}{\texttt{ https\+://secure.\+php.\+net/$\sim$helly/php/ext/spl/interface\+Serializable.\+html}} Serializable }}
+\end{DoxyReturn}

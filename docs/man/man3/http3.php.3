@@ -1,0 +1,329 @@
+.TH "vendor/jetbrains/phpstorm-stubs/http/http3.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/http/http3.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBClient\fP"
+.br
+.ti -1c
+.RI "class \fBCookie\fP"
+.br
+.ti -1c
+.RI "class \fBEnv\fP"
+.br
+.ti -1c
+.RI "interface \fBException\fP"
+.br
+.ti -1c
+.RI "class \fBHeader\fP"
+.br
+.ti -1c
+.RI "class \fBMessage\fP"
+.br
+.ti -1c
+.RI "class \fBParams\fP"
+.br
+.ti -1c
+.RI "class \fBQueryString\fP"
+.br
+.ti -1c
+.RI "class \fBUrl\fP"
+.br
+.ti -1c
+.RI "class \fBClient\\Request\fP"
+.br
+.ti -1c
+.RI "class \fBClient\\Response\fP"
+.br
+.ti -1c
+.RI "interface \fBUser\fP"
+.br
+.ti -1c
+.RI "class \fBStream\fP"
+.br
+.ti -1c
+.RI "class \fBStream\\Debrotli\fP"
+.br
+.ti -1c
+.RI "class \fBStream\\Dechunk\fP"
+.br
+.ti -1c
+.RI "class \fBStream\\Deflate\fP"
+.br
+.ti -1c
+.RI "class \fBStream\\Enbrotli\fP"
+.br
+.ti -1c
+.RI "class \fBStream\\Inflate\fP"
+.br
+.ti -1c
+.RI "class \fBEnv\\Request\fP"
+.br
+.ti -1c
+.RI "class \fBEnv\\Response\fP"
+.br
+.ti -1c
+.RI "class \fBEnv\\Url\fP"
+.br
+.ti -1c
+.RI "class \fBException\\BadConversionException\fP"
+.br
+.ti -1c
+.RI "class \fBException\\BadHeaderException\fP"
+.br
+.ti -1c
+.RI "class \fBException\\BadMessageException\fP"
+.br
+.ti -1c
+.RI "class \fBException\\BadMethodCallException\fP"
+.br
+.ti -1c
+.RI "class \fBException\\BadQueryStringException\fP"
+.br
+.ti -1c
+.RI "class \fBException\\BadUrlException\fP"
+.br
+.ti -1c
+.RI "class \fBException\\InvalidArgumentException\fP"
+.br
+.ti -1c
+.RI "class \fBException\\RuntimeException\fP"
+.br
+.ti -1c
+.RI "class \fBException\\UnexpectedValueException\fP"
+.br
+.ti -1c
+.RI "class \fBHeader\\Parser\fP"
+.br
+.ti -1c
+.RI "class \fBMessage\\Body\fP"
+.br
+.ti -1c
+.RI "class \fBMessage\\Parser\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBhttp\fP"
+.br
+.ti -1c
+.RI " \fBhttp\\Encoding\fP"
+.br
+.ti -1c
+.RI " \fBhttp\\Client\\Curl\fP"
+.br
+.ti -1c
+.RI " \fBhttp\\Client\fP"
+.br
+.ti -1c
+.RI " \fBhttp\\Client\\Curl\\Features\fP"
+.br
+.ti -1c
+.RI " \fBhttp\\Client\\Curl\\Versions\fP"
+.br
+.ti -1c
+.RI " \fBhttp\\Encoding\\Stream\fP"
+.br
+.ti -1c
+.RI " \fBhttp\\Env\fP"
+.br
+.ti -1c
+.RI " \fBhttp\\Exception\fP"
+.br
+.ti -1c
+.RI " \fBhttp\\Header\fP"
+.br
+.ti -1c
+.RI " \fBhttp\\Message\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBFEATURES\fP = 4179869"
+.br
+.ti -1c
+.RI "const \fBVERSIONS\fP = 'libcurl/7\&.64\&.0 OpenSSL/1\&.1\&.1\fBb\fP zlib/1\&.2\&.11 libidn2/2\&.0\&.5 libpsl/0\&.20\&.2 (+libidn2/2\&.0\&.5) libssh2/1\&.8\&.0 nghttp2/1\&.36\&.0 librtmp/2\&.3'"
+.br
+.ti -1c
+.RI "const \fBHTTP_VERSION_1_0\fP = 1"
+.br
+.ti -1c
+.RI "const \fBHTTP_VERSION_1_1\fP = 2"
+.br
+.ti -1c
+.RI "const \fBHTTP_VERSION_2_0\fP = 3"
+.br
+.ti -1c
+.RI "const \fBHTTP_VERSION_2TLS\fP = 4"
+.br
+.ti -1c
+.RI "const \fBHTTP_VERSION_ANY\fP = 0"
+.br
+.ti -1c
+.RI "const \fBSSL_VERSION_TLSv1_0\fP = 4"
+.br
+.ti -1c
+.RI "const \fBSSL_VERSION_TLSv1_1\fP = 5"
+.br
+.ti -1c
+.RI "const \fBSSL_VERSION_TLSv1_2\fP = 6"
+.br
+.ti -1c
+.RI "const \fBSSL_VERSION_TLSv1\fP = 1"
+.br
+.ti -1c
+.RI "const \fBSSL_VERSION_SSLv2\fP = 2"
+.br
+.ti -1c
+.RI "const \fBSSL_VERSION_SSLv3\fP = 3"
+.br
+.ti -1c
+.RI "const \fBSSL_VERSION_ANY\fP = 0"
+.br
+.ti -1c
+.RI "const \fBTLSAUTH_SRP\fP = 1"
+.br
+.ti -1c
+.RI "const \fBIPRESOLVE_V4\fP = 1"
+.br
+.ti -1c
+.RI "const \fBIPRESOLVE_V6\fP = 2"
+.br
+.ti -1c
+.RI "const \fBIPRESOLVE_ANY\fP = 0"
+.br
+.ti -1c
+.RI "const \fBAUTH_BASIC\fP = 1"
+.br
+.ti -1c
+.RI "const \fBAUTH_DIGEST\fP = 2"
+.br
+.ti -1c
+.RI "const \fBAUTH_DIGEST_IE\fP = 16"
+.br
+.ti -1c
+.RI "const \fBAUTH_NTLM\fP = 8"
+.br
+.ti -1c
+.RI "const \fBAUTH_GSSNEG\fP = 4"
+.br
+.ti -1c
+.RI "const \fBAUTH_SPNEGO\fP = 4"
+.br
+.ti -1c
+.RI "const \fBAUTH_ANY\fP = \-17"
+.br
+.ti -1c
+.RI "const \fBPROXY_SOCKS4\fP = 4"
+.br
+.ti -1c
+.RI "const \fBPROXY_SOCKS4A\fP = 5"
+.br
+.ti -1c
+.RI "const \fBPROXY_SOCKS5_HOSTNAME\fP = 5"
+.br
+.ti -1c
+.RI "const \fBPROXY_SOCKS5\fP = 5"
+.br
+.ti -1c
+.RI "const \fBPROXY_HTTP\fP = 0"
+.br
+.ti -1c
+.RI "const \fBPROXY_HTTP_1_0\fP = 1"
+.br
+.ti -1c
+.RI "const \fBPOSTREDIR_301\fP = 1"
+.br
+.ti -1c
+.RI "const \fBPOSTREDIR_302\fP = 2"
+.br
+.ti -1c
+.RI "const \fBPOSTREDIR_303\fP = 4"
+.br
+.ti -1c
+.RI "const \fBPOSTREDIR_ALL\fP = 7"
+.br
+.ti -1c
+.RI "const \fBASYNCHDNS\fP = 128"
+.br
+.ti -1c
+.RI "const \fBGSSAPI\fP = 131072"
+.br
+.ti -1c
+.RI "const \fBGSSNEGOTIATE\fP = 32"
+.br
+.ti -1c
+.RI "const \fBHTTP2\fP = 65536"
+.br
+.ti -1c
+.RI "const \fBIDN\fP = 1024"
+.br
+.ti -1c
+.RI "const \fBIPV6\fP = 1"
+.br
+.ti -1c
+.RI "const \fBKERBEROS4\fP = 2"
+.br
+.ti -1c
+.RI "const \fBKERBEROS5\fP = 262144"
+.br
+.ti -1c
+.RI "const \fBLARGEFILE\fP = 512"
+.br
+.ti -1c
+.RI "const \fBLIBZ\fP = 8"
+.br
+.ti -1c
+.RI "const \fBNTLM\fP = 16"
+.br
+.ti -1c
+.RI "const \fBNTLM_WB\fP = 32768"
+.br
+.ti -1c
+.RI "const \fBPSL\fP = 1048576"
+.br
+.ti -1c
+.RI "const \fBSPNEGO\fP = 256"
+.br
+.ti -1c
+.RI "const \fBSSL\fP = 4"
+.br
+.ti -1c
+.RI "const \fBSSPI\fP = 2048"
+.br
+.ti -1c
+.RI "const \fBTLSAUTH_SRP\fP = 16384"
+.br
+.ti -1c
+.RI "const \fBUNIX_SOCKETS\fP = 524288"
+.br
+.ti -1c
+.RI "const \fBCURL\fP = '7\&.64\&.0'"
+.br
+.ti -1c
+.RI "const \fBSSL\fP = 'OpenSSL/1\&.1\&.1\fBb\fP'"
+.br
+.ti -1c
+.RI "const \fBLIBZ\fP = '1\&.2\&.11'"
+.br
+.ti -1c
+.RI "const \fBARES\fP = NULL"
+.br
+.ti -1c
+.RI "const \fBIDN\fP = NULL"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

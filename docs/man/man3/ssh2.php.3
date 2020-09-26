@@ -1,0 +1,1077 @@
+.TH "vendor/jetbrains/phpstorm-stubs/ssh2/ssh2.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/ssh2/ssh2.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBssh2_connect\fP ($host, $port=\fBnull\fP, array $methods=\fBnull\fP, array $callbacks=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBssh2_disconnect\fP ($session)"
+.br
+.ti -1c
+.RI "\fBssh2_methods_negotiated\fP ($session)"
+.br
+.ti -1c
+.RI "\fBssh2_fingerprint\fP ($session, $flags=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBssh2_auth_none\fP ($session, $username)"
+.br
+.ti -1c
+.RI "\fBssh2_auth_password\fP ($session, $username, $password)"
+.br
+.ti -1c
+.RI "\fBssh2_auth_pubkey_file\fP ($session, $username, $pubkeyfile, $privkeyfile, $passphrase=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBssh2_auth_hostbased_file\fP ($session, $username, $hostname, $pubkeyfile, $privkeyfile, $passphrase=\fBnull\fP, $local_username=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBssh2_forward_listen\fP ()"
+.br
+.ti -1c
+.RI "\fBssh2_forward_accept\fP ()"
+.br
+.ti -1c
+.RI "\fBssh2_shell\fP ($session, $term_type=\fBnull\fP, array $env=\fBnull\fP, $width=\fBnull\fP, $height=\fBnull\fP, $width_height_type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBssh2_exec\fP ($session, $command, $pty=\fBnull\fP, array $env=\fBnull\fP, $width=\fBnull\fP, $height=\fBnull\fP, $width_height_type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBssh2_tunnel\fP ($session, $host, $port)"
+.br
+.ti -1c
+.RI "\fBssh2_scp_recv\fP ($session, $remote_file, $local_file)"
+.br
+.ti -1c
+.RI "\fBssh2_scp_send\fP ($session, $local_file, $remote_file, $create_mode=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBssh2_fetch_stream\fP ($channel, $streamid)"
+.br
+.ti -1c
+.RI "\fBssh2_poll\fP (&$var1)"
+.br
+.ti -1c
+.RI "\fBssh2_sftp\fP ($session)"
+.br
+.ti -1c
+.RI "\fBssh2_sftp_rename\fP ($sftp, $from, $to)"
+.br
+.ti -1c
+.RI "\fBssh2_sftp_unlink\fP ($sftp, $filename)"
+.br
+.ti -1c
+.RI "\fBssh2_sftp_mkdir\fP ($sftp, $\fBdirname\fP, $mode=\fBnull\fP, $recursive=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBssh2_sftp_rmdir\fP ($sftp, $\fBdirname\fP)"
+.br
+.ti -1c
+.RI "\fBssh2_sftp_stat\fP ($sftp, $path)"
+.br
+.ti -1c
+.RI "\fBssh2_sftp_lstat\fP ($sftp, $path)"
+.br
+.ti -1c
+.RI "\fBssh2_sftp_symlink\fP ($sftp, $target, $\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBssh2_sftp_readlink\fP ($sftp, $\fBlink\fP)"
+.br
+.ti -1c
+.RI "\fBssh2_sftp_realpath\fP ($sftp, $filename)"
+.br
+.ti -1c
+.RI "\fBssh2_publickey_init\fP ($session)"
+.br
+.ti -1c
+.RI "\fBssh2_publickey_add\fP ($pkey, $algoname, $blob, $overwrite=\fBnull\fP, array $attributes=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBssh2_publickey_remove\fP ($pkey, $algoname, $blob)"
+.br
+.ti -1c
+.RI "\fBssh2_publickey_list\fP ($pkey)"
+.br
+.ti -1c
+.RI "\fBssh2_sftp_chmod\fP ($sftp, $filename, $mode)"
+.br
+.ti -1c
+.RI "\fBssh2_auth_agent\fP ($session, $username)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBSSH2_FINGERPRINT_MD5\fP 0"
+.br
+.ti -1c
+.RI "const \fBSSH2_FINGERPRINT_SHA1\fP 1"
+.br
+.ti -1c
+.RI "const \fBSSH2_FINGERPRINT_HEX\fP 0"
+.br
+.ti -1c
+.RI "const \fBSSH2_FINGERPRINT_RAW\fP 2"
+.br
+.ti -1c
+.RI "const \fBSSH2_TERM_UNIT_CHARS\fP 0"
+.br
+.ti -1c
+.RI "const \fBSSH2_TERM_UNIT_PIXELS\fP 1"
+.br
+.ti -1c
+.RI "const \fBSSH2_DEFAULT_TERMINAL\fP 'vanilla'"
+.br
+.ti -1c
+.RI "const \fBSSH2_DEFAULT_TERM_WIDTH\fP 80"
+.br
+.ti -1c
+.RI "const \fBSSH2_DEFAULT_TERM_HEIGHT\fP 25"
+.br
+.ti -1c
+.RI "const \fBSSH2_DEFAULT_TERM_UNIT\fP 0"
+.br
+.ti -1c
+.RI "const \fBSSH2_STREAM_STDIO\fP 0"
+.br
+.ti -1c
+.RI "const \fBSSH2_STREAM_STDERR\fP 1"
+.br
+.ti -1c
+.RI "const \fBSSH2_POLLIN\fP 1"
+.br
+.ti -1c
+.RI "const \fBSSH2_POLLEXT\fP 2"
+.br
+.ti -1c
+.RI "const \fBSSH2_POLLOUT\fP 4"
+.br
+.ti -1c
+.RI "const \fBSSH2_POLLERR\fP 8"
+.br
+.ti -1c
+.RI "const \fBSSH2_POLLHUP\fP 16"
+.br
+.ti -1c
+.RI "const \fBSSH2_POLLNVAL\fP 32"
+.br
+.ti -1c
+.RI "const \fBSSH2_POLL_SESSION_CLOSED\fP 16"
+.br
+.ti -1c
+.RI "const \fBSSH2_POLL_CHANNEL_CLOSED\fP 128"
+.br
+.ti -1c
+.RI "const \fBSSH2_POLL_LISTENER_CLOSED\fP 128"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "ssh2_auth_agent ( $session,  $username)"
+(PECL ssh2 >= 0\&.12)
+.br
+ ssh2_auth_agent — Authenticate over SSH using the ssh agent \fBhttps://php\&.net/manual/en/function\&.ssh2-auth-agent\&.php\fP Authenticate over SSH using the ssh agent 
+.PP
+Note: The \fBssh2_auth_agent()\fP function will only be available when the ssh2 extension is compiled with libssh >= 1\&.2\&.3\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$session\fP 
+.RE
+.PP
+An SSH connection link identifier, obtained from a call to \fBssh2_connect()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP 
+.RE
+.PP
+Remote user name\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+Returns TRUE on success or FALSE on failure\&.
+.SS "ssh2_auth_hostbased_file ( $session,  $username,  $hostname,  $pubkeyfile,  $privkeyfile,  $passphrase = \fC\fBnull\fP\fP,  $local_username = \fC\fBnull\fP\fP)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Authenticate using a public hostkey \fBresource $session \fP An SSH connection link identifier, obtained from a call to ssh2_connect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hostname\fP 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pubkeyfile\fP 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$privkeyfile\fP 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$passphrase\fP [optional] 
+.RE
+.PP
+If privkeyfile is encrypted (which it should be), the passphrase must be provided\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$local_username\fP [optional] 
+.RE
+.PP
+If local_username is omitted, then the value for username will be used for it\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "ssh2_auth_none ( $session,  $username)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Authenticate as 'none' \fBresource $session \fP An SSH connection link identifier, obtained from a call to ssh2_connect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP 
+.RE
+.PP
+Remote user name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed true if the server does accept 'none' as an authentication method, or an array of accepted authentication methods on failure\&. 
+.RE
+.PP
+
+.SS "ssh2_auth_password ( $session,  $username,  $password)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Authenticate over SSH using a plain password \fBresource $session \fP An SSH connection link identifier, obtained from a call to ssh2_connect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP 
+.RE
+.PP
+Remote user name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP 
+.RE
+.PP
+Password for username 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "ssh2_auth_pubkey_file ( $session,  $username,  $pubkeyfile,  $privkeyfile,  $passphrase = \fC\fBnull\fP\fP)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Authenticate using a public key \fBresource $session \fP An SSH connection link identifier, obtained from a call to ssh2_connect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$username\fP 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pubkeyfile\fP 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$privkeyfile\fP 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$passphrase\fP [optional] 
+.RE
+.PP
+If privkeyfile is encrypted (which it should be), the passphrase must be provided\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "ssh2_connect ( $host,  $port = \fC\fBnull\fP\fP, array $methods = \fC\fBnull\fP\fP, array $callbacks = \fC\fBnull\fP\fP)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Connect to an SSH server \fBstring $host \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$port\fP [optional] 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$methods\fP [optional] 
+.RE
+.PP
+methods may be an associative array with up to four parameters as described below\&. 
+.PP
+may be an associative array with any or all of the following parameters\&. 
+.PP
+Index 
+.PP
+Meaning 
+.PP
+Supported Values*  
+.PP
+kex 
+.PP
+List of key exchange methods to advertise, comma separated in order of preference\&.  
+.PP
+diffie-hellman-group1-sha1, diffie-hellman-group14-sha1, and diffie-hellman-group-exchange-sha1   
+.PP
+hostkey 
+.PP
+List of hostkey methods to advertise, come separated in order of preference\&.  
+.PP
+ssh-rsa and ssh-dss   
+.PP
+client_to_server 
+.PP
+Associative array containing crypt, compression, and message authentication code (MAC) method preferences for messages sent from client to server\&.   
+.PP
+server_to_client 
+.PP
+Associative array containing crypt, compression, and message authentication code (MAC) method preferences for messages sent from server to client\&.   
+.PP
+.IP "\(bu" 2
+- Supported Values are dependent on methods supported by underlying library\&. See libssh2 documentation for additional information\&. 
+.PP
+.PP
+and server_to_client may be an associative array with any or all of the following parameters\&. 
+.PP
+Index 
+.PP
+Meaning 
+.PP
+Supported Values*  
+.PP
+crypt 
+.PP
+List of crypto methods to advertise, comma separated in order of preference\&. 
+.PP
+rijndael-cbc@lysator.liu.se, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc, cast128-cbc, arcfour, and none**   
+.PP
+comp 
+.PP
+List of compression methods to advertise, comma separated in order of preference\&. 
+.PP
+zlib and none   
+.PP
+mac 
+.PP
+List of MAC methods to advertise, come separated in order of preference\&. 
+.PP
+hmac-sha1, hmac-sha1-96, hmac-ripemd160, hmac-ripemd160@openssh.com, and none**   
+.PP
+Crypt and MAC method 'none' 
+.PP
+For security reasons, none is disabled by the underlying libssh2 library unless explicitly enabled during build time by using the appropriate \&./configure options\&. See documentation for the underlying library for more information\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$callbacks\fP [optional] 
+.RE
+.PP
+callbacks may be an associative array with any or all of the following parameters\&. parameters 
+.PP
+Index 
+.PP
+Meaning 
+.PP
+Prototype  
+.PP
+ignore 
+.PP
+Name of function to call when an SSH2_MSG_IGNORE packet is received  
+.PP
+void ignore_cb($message)  
+.PP
+debug 
+.PP
+Name of function to call when an SSH2_MSG_DEBUG packet is received  
+.PP
+void debug_cb($message, $language, $always_display)  
+.PP
+macerror 
+.PP
+Name of function to call when a packet is received but the message authentication code failed\&. If the callback returns true, the mismatch will be ignored, otherwise the connection will be terminated\&.  
+.PP
+bool macerror_cb($packet)  
+.PP
+disconnect 
+.PP
+Name of function to call when an SSH2_MSG_DISCONNECT packet is received  
+.PP
+void disconnect_cb($reason, $message, $language)  
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a resource on success, or false on error\&. 
+.RE
+.PP
+
+.SS "ssh2_disconnect ( $session)"
+(PECL ssh2 >= 1\&.0)
+.br
+ Close a connection to a remote SSH server \fBresource $session \fP An SSH connection link identifier, obtained from a call to ssh2_connect\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.SS "ssh2_exec ( $session,  $command,  $pty = \fC\fBnull\fP\fP, array $env = \fC\fBnull\fP\fP,  $width = \fC\fBnull\fP\fP,  $height = \fC\fBnull\fP\fP,  $width_height_type = \fC\fBnull\fP\fP)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Execute a command on a remote server \fBresource $session \fP An SSH connection link identifier, obtained from a call to ssh2_connect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$command\fP 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pty\fP [optional] 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$env\fP [optional] 
+.RE
+.PP
+env may be passed as an associative array of name/value pairs to set in the target environment\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$width\fP [optional] 
+.RE
+.PP
+Width of the virtual terminal\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$height\fP [optional] 
+.RE
+.PP
+Height of the virtual terminal\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$width_height_type\fP [optional] 
+.RE
+.PP
+width_height_type should be one of SSH2_TERM_UNIT_CHARS or SSH2_TERM_UNIT_PIXELS\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a stream on success or false on failure\&. 
+.RE
+.PP
+
+.SS "ssh2_fetch_stream ( $channel,  $streamid)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Fetch an extended data stream \fBresource $channel \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$streamid\fP 
+.RE
+.PP
+An SSH2 channel stream\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource the requested stream resource\&. 
+.RE
+.PP
+
+.SS "ssh2_fingerprint ( $session,  $flags = \fC\fBnull\fP\fP)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Retrieve fingerprint of remote server \fBresource $session \fP An SSH connection link identifier, obtained from a call to ssh2_connect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+flags may be either of SSH2_FINGERPRINT_MD5 or SSH2_FINGERPRINT_SHA1 logically ORed with SSH2_FINGERPRINT_HEX or SSH2_FINGERPRINT_RAW\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the hostkey hash as a string\&. 
+.RE
+.PP
+
+.SS "ssh2_forward_accept ()"
+
+.SS "ssh2_forward_listen ()"
+
+.SS "ssh2_methods_negotiated ( $session)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Return list of negotiated methods \fBresource $session \fP An SSH connection link identifier, obtained from a call to ssh2_connect\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+.SS "ssh2_poll (& $var1)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$var1\fP 
+.RE
+.PP
+
+.SS "ssh2_publickey_add ( $pkey,  $algoname,  $blob,  $overwrite = \fC\fBnull\fP\fP, array $attributes = \fC\fBnull\fP\fP)"
+(PECL ssh2 >= 0\&.10)
+.br
+ Add an authorized publickey \fBresource $pkey \fP Publickey Subsystem resource created by ssh2_publickey_init\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$algoname\fP 
+.RE
+.PP
+Publickey algorithm (e\&.g\&.): ssh-dss, ssh-rsa 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blob\fP 
+.RE
+.PP
+Publickey blob as raw binary data 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$overwrite\fP [optional] 
+.RE
+.PP
+If the specified key already exists, should it be overwritten? 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$attributes\fP [optional] 
+.RE
+.PP
+Associative array of attributes to assign to this public key\&. Refer to ietf-secsh-publickey-subsystem for a list of supported attributes\&. To mark an attribute as mandatory, precede its name with an asterisk\&. If the server is unable to support an attribute marked mandatory, it will abort the add process\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "ssh2_publickey_init ( $session)"
+(PECL ssh2 >= 0\&.10)
+.br
+ Initialize Publickey subsystem \fBresource $session \fP 
+.PP
+\fBReturns\fP
+.RS 4
+resource an SSH2 Publickey Subsystem resource for use with all other ssh2_publickey_*() methods or false on failure\&. 
+.RE
+.PP
+
+.SS "ssh2_publickey_list ( $pkey)"
+(PECL ssh2 >= 0\&.10)
+.br
+ List currently authorized publickeys \fBresource $pkey \fP Publickey Subsystem resource 
+.PP
+\fBReturns\fP
+.RS 4
+array a numerically indexed array of keys, each of which is an associative array containing: name, blob, and attrs elements\&. 
+.RE
+.PP
+.PP
+elements 
+.PP
+Array Key 
+.PP
+Meaning  
+.PP
+name 
+.PP
+Name of algorithm used by this publickey, for example: ssh-dss or ssh-rsa\&.  
+.PP
+blob 
+.PP
+Publickey blob as raw binary data\&.  
+.PP
+attrs 
+.PP
+Attributes assigned to this publickey\&. The most common attribute, and the only one supported by publickey version 1 servers, is comment, which may be any freeform string\&.  
+.SS "ssh2_publickey_remove ( $pkey,  $algoname,  $blob)"
+(PECL ssh2 >= 0\&.10)
+.br
+ Remove an authorized publickey \fBresource $pkey \fP Publickey Subsystem Resource 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$algoname\fP 
+.RE
+.PP
+Publickey algorithm (e\&.g\&.): ssh-dss, ssh-rsa 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$blob\fP 
+.RE
+.PP
+Publickey blob as raw binary data 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "ssh2_scp_recv ( $session,  $remote_file,  $local_file)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Request a file via SCP \fBresource $session \fP An SSH connection link identifier, obtained from a call to ssh2_connect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$remote_file\fP 
+.RE
+.PP
+Path to the remote file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$local_file\fP 
+.RE
+.PP
+Path to the local file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "ssh2_scp_send ( $session,  $local_file,  $remote_file,  $create_mode = \fC\fBnull\fP\fP)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Send a file via SCP \fBresource $session \fP An SSH connection link identifier, obtained from a call to ssh2_connect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$local_file\fP 
+.RE
+.PP
+Path to the local file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$remote_file\fP 
+.RE
+.PP
+Path to the remote file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$create_mode\fP [optional] 
+.RE
+.PP
+The file will be created with the mode specified by create_mode\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "ssh2_sftp ( $session)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Initialize SFTP subsystem \fBresource $session \fP An SSH connection link identifier, obtained from a call to ssh2_connect\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource This method returns an SSH2 SFTP resource for use with all other ssh2_sftp_*() methods and the ssh2\&.sftp:// fopen wrapper\&. 
+.RE
+.PP
+
+.SS "ssh2_sftp_chmod ( $sftp,  $filename,  $mode)"
+(PECL ssh2 >= 0\&.12)
+.br
+ ssh2_sftp_chmod — Changes file mode \fBresource $sftp \fPAn SSH2 SFTP resource opened by \fBssh2_sftp()\fP\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP 
+.RE
+.PP
+Path to the file\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+Permissions on the file\&. See the \fBchmod()\fP for more details on this parameter\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+Returns TRUE on success or FALSE on failure\&.
+.SS "ssh2_sftp_lstat ( $sftp,  $path)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Stat a symbolic link \fBresource $sftp \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$path\fP 
+.RE
+.PP
+Path to the remote symbolic link\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array See the documentation for stat for details on the values which may be returned\&. 
+.RE
+.PP
+
+.SS "ssh2_sftp_mkdir ( $sftp,  $dirname,  $mode = \fC\fBnull\fP\fP,  $recursive = \fC\fBnull\fP\fP)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Create a directory \fBresource $sftp \fP An SSH2 SFTP resource opened by ssh2_sftp\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dirname\fP 
+.RE
+.PP
+Path of the new directory\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+Permissions on the new directory\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$recursive\fP [optional] 
+.RE
+.PP
+If recursive is true any parent directories required for dirname will be automatically created as well\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "ssh2_sftp_readlink ( $sftp,  $link)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Return the target of a symbolic link \fBresource $sftp \fP An SSH2 SFTP resource opened by ssh2_sftp\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP 
+.RE
+.PP
+Path of the symbolic link\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the target of the symbolic link\&. 
+.RE
+.PP
+
+.SS "ssh2_sftp_realpath ( $sftp,  $filename)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Resolve the realpath of a provided path string \fBresource $sftp \fP An SSH2 SFTP resource opened by ssh2_sftp\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+string the real path as a string\&. 
+.RE
+.PP
+
+.SS "ssh2_sftp_rename ( $sftp,  $from,  $to)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Rename a remote file \fBresource $sftp \fP An SSH2 SFTP resource opened by ssh2_sftp\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$from\fP 
+.RE
+.PP
+The current file that is being renamed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$to\fP 
+.RE
+.PP
+The new file name that replaces from\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "ssh2_sftp_rmdir ( $sftp,  $dirname)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Remove a directory \fBresource $sftp \fP An SSH2 SFTP resource opened by ssh2_sftp\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dirname\fP 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "ssh2_sftp_stat ( $sftp,  $path)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Stat a file on a remote filesystem \fBresource $sftp \fP An SSH2 SFTP resource opened by ssh2_sftp\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$path\fP 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+array See the documentation for stat for details on the values which may be returned\&. 
+.RE
+.PP
+
+.SS "ssh2_sftp_symlink ( $sftp,  $target,  $link)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Create a symlink \fBresource $sftp \fP An SSH2 SFTP resource opened by ssh2_sftp\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$target\fP 
+.RE
+.PP
+Target of the symbolic link\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$link\fP 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "ssh2_sftp_unlink ( $sftp,  $filename)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Delete a file \fBresource $sftp \fP An SSH2 SFTP resource opened by ssh2_sftp\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$filename\fP 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+
+.SS "ssh2_shell ( $session,  $term_type = \fC\fBnull\fP\fP, array $env = \fC\fBnull\fP\fP,  $width = \fC\fBnull\fP\fP,  $height = \fC\fBnull\fP\fP,  $width_height_type = \fC\fBnull\fP\fP)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Request an interactive shell \fBresource $session \fP An SSH connection link identifier, obtained from a call to ssh2_connect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$term_type\fP [optional] 
+.RE
+.PP
+term_type should correspond to one of the entries in the target system's /etc/termcap file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$env\fP [optional] 
+.RE
+.PP
+env may be passed as an associative array of name/value pairs to set in the target environment\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$width\fP [optional] 
+.RE
+.PP
+Width of the virtual terminal\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$height\fP [optional] 
+.RE
+.PP
+Height of the virtual terminal\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$width_height_type\fP [optional] 
+.RE
+.PP
+width_height_type should be one of SSH2_TERM_UNIT_CHARS or SSH2_TERM_UNIT_PIXELS\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SS "ssh2_tunnel ( $session,  $host,  $port)"
+(PECL ssh2 >= 0\&.9\&.0)
+.br
+ Open a tunnel through a remote server \fBresource $session \fP An SSH connection link identifier, obtained from a call to ssh2_connect\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$host\fP 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$port\fP 
+.RE
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+resource 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const SSH2_DEFAULT_TERM_HEIGHT 25"
+Default terminal height requested by ssh2_shell\&. \fBhttps://php\&.net/manual/en/ssh2\&.constants\&.php\fP
+.SS "const SSH2_DEFAULT_TERM_UNIT 0"
+Default terminal units requested by ssh2_shell\&. \fBhttps://php\&.net/manual/en/ssh2\&.constants\&.php\fP
+.SS "const SSH2_DEFAULT_TERM_WIDTH 80"
+Default terminal width requested by ssh2_shell\&. \fBhttps://php\&.net/manual/en/ssh2\&.constants\&.php\fP
+.SS "const SSH2_DEFAULT_TERMINAL 'vanilla'"
+Default terminal type (e\&.g\&. vt102, ansi, xterm, vanilla) requested by ssh2_shell\&. \fBhttps://php\&.net/manual/en/ssh2\&.constants\&.php\fP
+.SS "const SSH2_FINGERPRINT_HEX 0"
+Flag to ssh2_fingerprint requesting hostkey fingerprint as a string of hexits\&. \fBhttps://php\&.net/manual/en/ssh2\&.constants\&.php\fP
+.SS "const SSH2_FINGERPRINT_MD5 0"
+Flag to ssh2_fingerprint requesting hostkey fingerprint as an MD5 hash\&. \fBhttps://php\&.net/manual/en/ssh2\&.constants\&.php\fP
+.SS "const SSH2_FINGERPRINT_RAW 2"
+Flag to ssh2_fingerprint requesting hostkey fingerprint as a raw string of 8-bit characters\&. \fBhttps://php\&.net/manual/en/ssh2\&.constants\&.php\fP
+.SS "const SSH2_FINGERPRINT_SHA1 1"
+Flag to ssh2_fingerprint requesting hostkey fingerprint as an SHA1 hash\&. \fBhttps://php\&.net/manual/en/ssh2\&.constants\&.php\fP
+.SS "const SSH2_POLL_CHANNEL_CLOSED 128"
+
+.SS "const SSH2_POLL_LISTENER_CLOSED 128"
+
+.SS "const SSH2_POLL_SESSION_CLOSED 16"
+
+.SS "const SSH2_POLLERR 8"
+
+.SS "const SSH2_POLLEXT 2"
+
+.SS "const SSH2_POLLHUP 16"
+
+.SS "const SSH2_POLLIN 1"
+
+.SS "const SSH2_POLLNVAL 32"
+
+.SS "const SSH2_POLLOUT 4"
+
+.SS "const SSH2_STREAM_STDERR 1"
+Flag to ssh2_fetch_stream requesting STDERR subchannel\&. \fBhttps://php\&.net/manual/en/ssh2\&.constants\&.php\fP
+.SS "const SSH2_STREAM_STDIO 0"
+Flag to ssh2_fetch_stream requesting STDIO subchannel\&. \fBhttps://php\&.net/manual/en/ssh2\&.constants\&.php\fP
+.SS "const SSH2_TERM_UNIT_CHARS 0"
+Flag to ssh2_shell specifying that width and height are provided as character sizes\&. \fBhttps://php\&.net/manual/en/ssh2\&.constants\&.php\fP
+.SS "const SSH2_TERM_UNIT_PIXELS 1"
+Flag to ssh2_shell specifying that width and height are provided in pixel units\&. \fBhttps://php\&.net/manual/en/ssh2\&.constants\&.php\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

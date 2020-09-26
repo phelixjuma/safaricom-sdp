@@ -1,0 +1,241 @@
+\hypertarget{bz2_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/bz2/bz2.php File Reference}
+\label{bz2_8php}\index{vendor/jetbrains/phpstorm-\/stubs/bz2/bz2.php@{vendor/jetbrains/phpstorm-\/stubs/bz2/bz2.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{bz2_8php_a134b95f45f4ec99fdada55d6721d05b0}{bzopen}} (\$filename, \$mode)
+\item 
+\mbox{\hyperlink{bz2_8php_a433ff6cdb94e221e1c0218c31707b19f}{bzread}} (\$bz, \$length=1024)
+\item 
+\mbox{\hyperlink{bz2_8php_a75c7286046d2effa17c3018e3cea2c22}{bzwrite}} (\$bz, \$data, \$length=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{bz2_8php_a57c4cf3b8d39ce0a1a1613f65a10ddef}{bzflush}} (\$bz)
+\item 
+\mbox{\hyperlink{bz2_8php_af65b9e9f5038dc1d6dec848379f0febc}{bzclose}} (\$bz)
+\item 
+\mbox{\hyperlink{bz2_8php_a07acdae3875c297d922ca06fd32e43b4}{bzerrno}} (\$bz)
+\item 
+\mbox{\hyperlink{bz2_8php_a55d9c980034ea03372d8437312d44508}{bzerrstr}} (\$bz)
+\item 
+\mbox{\hyperlink{bz2_8php_a48dd14742179888248761725c44e8b4d}{bzerror}} (\$bz)
+\item 
+\mbox{\hyperlink{bz2_8php_a3d5f6d951d8f4b2b77b1933dea0726c0}{bzcompress}} (\$source, \$blocksize=4, \$workfactor=0)
+\item 
+\mbox{\hyperlink{bz2_8php_aceba690b2e6fff19bc9b2b8d0764cf8d}{bzdecompress}} (\$source, \$small=0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{bz2_8php_af65b9e9f5038dc1d6dec848379f0febc}\label{bz2_8php_af65b9e9f5038dc1d6dec848379f0febc}} 
+\index{bz2.php@{bz2.php}!bzclose@{bzclose}}
+\index{bzclose@{bzclose}!bz2.php@{bz2.php}}
+\doxysubsubsection{\texorpdfstring{bzclose()}{bzclose()}}
+{\footnotesize\ttfamily bzclose (\begin{DoxyParamCaption}\item[{}]{\$bz }\end{DoxyParamCaption})}
+
+Close a bzip2 file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$bz }} The file pointer. It must be valid and must point to a file successfully opened by {\bfseries{bzopen}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bz2_8php_a3d5f6d951d8f4b2b77b1933dea0726c0}\label{bz2_8php_a3d5f6d951d8f4b2b77b1933dea0726c0}} 
+\index{bz2.php@{bz2.php}!bzcompress@{bzcompress}}
+\index{bzcompress@{bzcompress}!bz2.php@{bz2.php}}
+\doxysubsubsection{\texorpdfstring{bzcompress()}{bzcompress()}}
+{\footnotesize\ttfamily bzcompress (\begin{DoxyParamCaption}\item[{}]{\$source,  }\item[{}]{\$blocksize = {\ttfamily 4},  }\item[{}]{\$workfactor = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Compress a string into bzip2 encoded data \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$source }} The string to compress. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$blocksize} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Specifies the blocksize used during compression and should be a number from 1 to 9 with 9 giving the best compression, but using more resources to do so. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$workfactor} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Controls how the compression phase behaves when presented with worst case, highly repetitive, input data. The value can be between 0 and 250 with 0 being a special case. 
+
+Regardless of the {\itshape workfactor}, the generated output is the same. 
+
+\begin{DoxyReturn}{Returns}
+mixed The compressed string, or an error number if an error occurred. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bz2_8php_aceba690b2e6fff19bc9b2b8d0764cf8d}\label{bz2_8php_aceba690b2e6fff19bc9b2b8d0764cf8d}} 
+\index{bz2.php@{bz2.php}!bzdecompress@{bzdecompress}}
+\index{bzdecompress@{bzdecompress}!bz2.php@{bz2.php}}
+\doxysubsubsection{\texorpdfstring{bzdecompress()}{bzdecompress()}}
+{\footnotesize\ttfamily bzdecompress (\begin{DoxyParamCaption}\item[{}]{\$source,  }\item[{}]{\$small = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Decompresses bzip2 encoded data \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$source }} The string to decompress. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$small} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If {\bfseries{T\+R\+UE}}, an alternative decompression algorithm will be used which uses less memory (the maximum memory requirement drops to around 2300K) but works at roughly half the speed. 
+
+See the bzip2 documentation for more information about this feature. 
+
+\begin{DoxyReturn}{Returns}
+mixed The decompressed string, or an error number if an error occurred. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bz2_8php_a07acdae3875c297d922ca06fd32e43b4}\label{bz2_8php_a07acdae3875c297d922ca06fd32e43b4}} 
+\index{bz2.php@{bz2.php}!bzerrno@{bzerrno}}
+\index{bzerrno@{bzerrno}!bz2.php@{bz2.php}}
+\doxysubsubsection{\texorpdfstring{bzerrno()}{bzerrno()}}
+{\footnotesize\ttfamily bzerrno (\begin{DoxyParamCaption}\item[{}]{\$bz }\end{DoxyParamCaption})}
+
+Returns a bzip2 error number \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$bz }} The file pointer. It must be valid and must point to a file successfully opened by {\bfseries{bzopen}}. 
+
+\begin{DoxyReturn}{Returns}
+int the error number as an integer. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bz2_8php_a48dd14742179888248761725c44e8b4d}\label{bz2_8php_a48dd14742179888248761725c44e8b4d}} 
+\index{bz2.php@{bz2.php}!bzerror@{bzerror}}
+\index{bzerror@{bzerror}!bz2.php@{bz2.php}}
+\doxysubsubsection{\texorpdfstring{bzerror()}{bzerror()}}
+{\footnotesize\ttfamily bzerror (\begin{DoxyParamCaption}\item[{}]{\$bz }\end{DoxyParamCaption})}
+
+Returns the bzip2 error number and error string in an array \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$bz }} The file pointer. It must be valid and must point to a file successfully opened by {\bfseries{bzopen}}. 
+
+\begin{DoxyReturn}{Returns}
+array an associative array, with the error code in the errno entry, and the error message in the errstr entry. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bz2_8php_a55d9c980034ea03372d8437312d44508}\label{bz2_8php_a55d9c980034ea03372d8437312d44508}} 
+\index{bz2.php@{bz2.php}!bzerrstr@{bzerrstr}}
+\index{bzerrstr@{bzerrstr}!bz2.php@{bz2.php}}
+\doxysubsubsection{\texorpdfstring{bzerrstr()}{bzerrstr()}}
+{\footnotesize\ttfamily bzerrstr (\begin{DoxyParamCaption}\item[{}]{\$bz }\end{DoxyParamCaption})}
+
+Returns a bzip2 error string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$bz }} The file pointer. It must be valid and must point to a file successfully opened by {\bfseries{bzopen}}. 
+
+\begin{DoxyReturn}{Returns}
+string a string containing the error message. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bz2_8php_a57c4cf3b8d39ce0a1a1613f65a10ddef}\label{bz2_8php_a57c4cf3b8d39ce0a1a1613f65a10ddef}} 
+\index{bz2.php@{bz2.php}!bzflush@{bzflush}}
+\index{bzflush@{bzflush}!bz2.php@{bz2.php}}
+\doxysubsubsection{\texorpdfstring{bzflush()}{bzflush()}}
+{\footnotesize\ttfamily bzflush (\begin{DoxyParamCaption}\item[{}]{\$bz }\end{DoxyParamCaption})}
+
+Force a write of all buffered data \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$bz }} The file pointer. It must be valid and must point to a file successfully opened by {\bfseries{bzopen}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bz2_8php_a134b95f45f4ec99fdada55d6721d05b0}\label{bz2_8php_a134b95f45f4ec99fdada55d6721d05b0}} 
+\index{bz2.php@{bz2.php}!bzopen@{bzopen}}
+\index{bzopen@{bzopen}!bz2.php@{bz2.php}}
+\doxysubsubsection{\texorpdfstring{bzopen()}{bzopen()}}
+{\footnotesize\ttfamily bzopen (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$mode }\end{DoxyParamCaption})}
+
+Opens a bzip2 compressed file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$filename }} The name of the file to open, or an existing stream resource. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+Similar to the {\bfseries{fopen}} function, only \textquotesingle{}r\textquotesingle{} (read) and \textquotesingle{}w\textquotesingle{} (write) are supported. Everything else will cause bzopen to return {\bfseries{F\+A\+L\+SE}}. 
+
+\begin{DoxyReturn}{Returns}
+resource If the open fails, {\bfseries{bzopen}} returns {\bfseries{F\+A\+L\+SE}}, otherwise it returns a pointer to the newly opened file. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bz2_8php_a433ff6cdb94e221e1c0218c31707b19f}\label{bz2_8php_a433ff6cdb94e221e1c0218c31707b19f}} 
+\index{bz2.php@{bz2.php}!bzread@{bzread}}
+\index{bzread@{bzread}!bz2.php@{bz2.php}}
+\doxysubsubsection{\texorpdfstring{bzread()}{bzread()}}
+{\footnotesize\ttfamily bzread (\begin{DoxyParamCaption}\item[{}]{\$bz,  }\item[{}]{\$length = {\ttfamily 1024} }\end{DoxyParamCaption})}
+
+Binary safe bzip2 file read \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$bz }} The file pointer. It must be valid and must point to a file successfully opened by {\bfseries{bzopen}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If not specified, {\bfseries{bzread}} will read 1024 (uncompressed) bytes at a time. \mbox{\hyperlink{class_a}{A}} maximum of 8192 uncompressed bytes will be read at a time. 
+
+\begin{DoxyReturn}{Returns}
+string the uncompressed data, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{bz2_8php_a75c7286046d2effa17c3018e3cea2c22}\label{bz2_8php_a75c7286046d2effa17c3018e3cea2c22}} 
+\index{bz2.php@{bz2.php}!bzwrite@{bzwrite}}
+\index{bzwrite@{bzwrite}!bz2.php@{bz2.php}}
+\doxysubsubsection{\texorpdfstring{bzwrite()}{bzwrite()}}
+{\footnotesize\ttfamily bzwrite (\begin{DoxyParamCaption}\item[{}]{\$bz,  }\item[{}]{\$data,  }\item[{}]{\$length = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Binary safe bzip2 file write \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$bz }} The file pointer. It must be valid and must point to a file successfully opened by {\bfseries{bzopen}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+The written data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If supplied, writing will stop after {\itshape length} (uncompressed) bytes have been written or the end of {\itshape data} is reached, whichever comes first. 
+
+\begin{DoxyReturn}{Returns}
+int the number of bytes written, or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}

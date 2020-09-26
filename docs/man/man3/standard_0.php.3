@@ -1,0 +1,1478 @@
+.TH "vendor/jetbrains/phpstorm-stubs/standard/standard_0.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/standard/standard_0.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fB__PHP_Incomplete_Class\fP"
+.br
+.ti -1c
+.RI "class \fBphp_user_filter\fP"
+.br
+.ti -1c
+.RI "class \fBDirectory\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBconstant\fP ($name)"
+.br
+.ti -1c
+.RI "\fBbin2hex\fP ($str)"
+.br
+.ti -1c
+.RI "\fBsleep\fP ($seconds)"
+.br
+.ti -1c
+.RI "\fBusleep\fP ($micro_seconds)"
+.br
+.ti -1c
+.RI "\fBtime_nanosleep\fP ($seconds, $nanoseconds)"
+.br
+.ti -1c
+.RI "\fBtime_sleep_until\fP ($timestamp)"
+.br
+.ti -1c
+.RI "\fBstrptime\fP ($\fBdate\fP, $format)"
+.br
+.ti -1c
+.RI "\fBflush\fP ()"
+.br
+.ti -1c
+.RI "\fBwordwrap\fP ($str, $width=75, $break='\\n', $cut=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBhtmlspecialchars\fP ($string, $flags=\fBENT_COMPAT\fP|\fBENT_HTML401\fP, $encoding='UTF\-8', $double_encode=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBhtmlentities\fP ($string, $quote_style=\fBnull\fP, $charset=\fBnull\fP, $double_encode=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBhtml_entity_decode\fP ($string, $quote_style=\fBnull\fP, $charset=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBhtmlspecialchars_decode\fP ($string, $quote_style=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBget_html_translation_table\fP ($table=\fBnull\fP, $quote_style=\fBnull\fP, string $encoding='UTF\-8')"
+.br
+.ti -1c
+.RI "\fBsha1\fP ($str, $raw_output=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBsha1_file\fP ($filename, $raw_output=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBmd5\fP ($str, $raw_output=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBmd5_file\fP ($filename, $raw_output=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBcrc32\fP ($str)"
+.br
+.ti -1c
+.RI "\fBiptcparse\fP ($iptcblock)"
+.br
+.ti -1c
+.RI "\fBiptcembed\fP ($iptcdata, $jpeg_file_name, $spool=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBgetimagesize\fP ($filename, array &$imageinfo=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBimage_type_to_mime_type\fP ($imagetype)"
+.br
+.ti -1c
+.RI "\fBimage_type_to_extension\fP ($imagetype, $include_dot=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBphpinfo\fP ($what=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBphpversion\fP ($extension=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBphpcredits\fP ($flag=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBphp_logo_guid\fP ()"
+.br
+.ti -1c
+.RI "\fBphp_real_logo_guid\fP ()"
+.br
+.ti -1c
+.RI "\fBphp_egg_logo_guid\fP ()"
+.br
+.ti -1c
+.RI "\fBzend_logo_guid\fP ()"
+.br
+.ti -1c
+.RI "\fBphp_sapi_name\fP ()"
+.br
+.ti -1c
+.RI "\fBphp_uname\fP ($mode=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBphp_ini_scanned_files\fP ()"
+.br
+.ti -1c
+.RI "\fBphp_ini_loaded_file\fP ()"
+.br
+.ti -1c
+.RI "\fBstrnatcmp\fP ($str1, $str2)"
+.br
+.ti -1c
+.RI "\fBstrnatcasecmp\fP ($str1, $str2)"
+.br
+.ti -1c
+.RI "\fBsubstr_count\fP ($haystack, $needle, $offset=\fBnull\fP, $length=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstrspn\fP ($subject, $mask, $start=\fBnull\fP, $length=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstrcspn\fP ($str1, $str2, $start=\fBnull\fP, $length=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBstrtok\fP ($str=\fBnull\fP, $token)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "bin2hex ( $str)"
+Convert binary data into hexadecimal representation \fBstring $str \fP \fBA\fP character\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the hexadecimal representation of the given string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "constant ( $name)"
+Returns the value of a constant \fBstring $name \fP The constant name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed the value of the constant, or  if the constant is not defined\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "crc32 ( $str)"
+Calculates the crc32 polynomial of a string \fBstring $str \fP The data\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the crc32 checksum of str as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "flush ()"
+Flush the output buffer \fBvoid  4\&.0  5\&.0 \fP
+.SS "get_html_translation_table ( $table = \fC\fBnull\fP\fP,  $quote_style = \fC\fBnull\fP\fP, string $encoding = \fC'UTF\-8'\fP)"
+Returns the translation table used by <function>htmlspecialchars</function> and <function>htmlentities</function> \fBint $table [optional] \fP There are two new constants (HTML_ENTITIES, HTML_SPECIALCHARS) that allow you to specify the table you want\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$quote_style\fP [optional] 
+.RE
+.PP
+Like the htmlspecialchars and htmlentities functions you can optionally specify the quote_style you are working with\&. See the description of these modes in htmlspecialchars\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP 
+.RE
+.PP
+.PP
+Encoding to use\&. If omitted, the default value for this argument is ISO-8859-1 in versions of PHP prior to 5\&.4\&.0, and UTF-8 from PHP 5\&.4\&.0 onwards\&. 
+.PP
+The following character sets are supported: 
+.PP
+\fBSupported charsets\fP
+.PP
+Charset 
+.PP
+Aliases 
+.PP
+Description 
+.PP
+</thead>
+.PP
+<tbody class='tbody'> 
+.PP
+ISO-8859-1 
+.PP
+ISO8859-1 
+.PP
+Western European, Latin-1\&.  
+.PP
+ISO-8859-5 
+.PP
+ISO8859-5 
+.PP
+Little used cyrillic charset (Latin/Cyrillic)\&.  
+.PP
+ISO-8859-15 
+.PP
+ISO8859-15 
+.PP
+Western European, Latin-9\&. Adds the Euro sign, French and Finnish letters missing in Latin-1 (ISO-8859-1)\&.  
+.PP
+UTF-8 
+.PP
+  
+.PP
+ASCII compatible multi-byte 8-bit Unicode\&.  
+.PP
+cp866 
+.PP
+ibm866, 866 
+.PP
+DOS-specific Cyrillic charset\&.  
+.PP
+cp1251 
+.PP
+Windows-1251, win-1251, 1251 
+.PP
+Windows-specific Cyrillic charset\&.  
+.PP
+cp1252 
+.PP
+Windows-1252, 1252 
+.PP
+Windows specific charset for Western European\&.  
+.PP
+KOI8-R 
+.PP
+koi8-ru, koi8r 
+.PP
+Russian\&.  
+.PP
+BIG5 
+.PP
+950 
+.PP
+Traditional Chinese, mainly used in Taiwan\&.  
+.PP
+GB2312 
+.PP
+936 
+.PP
+Simplified Chinese, national standard character set\&.  
+.PP
+BIG5-HKSCS 
+.PP
+  
+.PP
+Big5 with Hong Kong extensions, Traditional Chinese\&.  
+.PP
+Shift_JIS 
+.PP
+SJIS, SJIS-win, cp932, 932 
+.PP
+Japanese  
+.PP
+EUC-JP 
+.PP
+EUCJP, eucJP-win 
+.PP
+Japanese  
+.PP
+MacRoman 
+.PP
+  
+.PP
+Charset that was used by Mac OS\&.  
+.PP
+\fI''\fP 
+.PP
+  
+.PP
+An empty string activates detection from script encoding (\fBZend\fP multibyte), \fBdefault_charset\fP and current locale \fBnl_langinfo()\fP and \fBsetlocale()\fP), in this order\&. Not recommended\&.  
+.PP
+</tbody>
+.PP
+.RS 4
+.PP
+\fBNote\fP:
+.PP
+Any other character sets are not recognized\&. The default encoding will be used instead and a warning will be emitted\&.
+.PP
+.PP
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array the translation table as an array\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "getimagesize ( $filename, array & $imageinfo = \fC\fBnull\fP\fP)"
+Get the size of an image \fBstring $filename \fP This parameter specifies the file you wish to retrieve information about\&. It can reference a local file or (configuration permitting) a remote file using one of the supported streams\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$imageinfo\fP [optional] 
+.RE
+.PP
+This optional parameter allows you to extract some extended information from the image file\&. Currently, this will return the different JPG APP markers as an associative array\&. Some programs use these APP markers to embed text information in images\&. \fBA\fP very common one is to embed IPTC information in the APP13 marker\&. You can use the iptcparse function to parse the binary APP13 marker into something readable\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array with 7 elements\&. 
+.RE
+.PP
+.PP
+Index 0 and 1 contains respectively the width and the height of the image\&. 
+.PP
+Some formats may contain no image or may contain multiple images\&. In these cases, getimagesize might not be able to properly determine the image size\&. getimagesize will return zero for width and height in these cases\&. 
+.PP
+Index 2 is one of the IMAGETYPE_XXX constants indicating the type of the image\&. 
+.PP
+Index 3 is a text string with the correct height='yyy' width='xxx' string that can be used directly in an IMG tag\&. 
+.PP
+mime is the correspondant MIME type of the image\&. This information can be used to deliver images with correct the HTTP Content-type header: getimagesize and MIME types 
+.PP
+channels will be 3 for RGB pictures and 4 for CMYK pictures\&. 
+.PP
+bits is the number of bits for each color\&. 
+.PP
+For some image types, the presence of channels and bits values can be a bit confusing\&. As an example, GIF always uses 3 channels per pixel, but the number of bits per pixel cannot be calculated for an animated GIF with a global color table\&. 
+.PP
+On failure, false is returned\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "html_entity_decode ( $string,  $quote_style = \fC\fBnull\fP\fP,  $charset = \fC\fBnull\fP\fP)"
+Convert all HTML entities to their applicable characters \fBstring $string \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$quote_style\fP [optional] 
+.RE
+.PP
+The optional second quote_style parameter lets you define what will be done with 'single' and 'double' quotes\&. It takes on one of three constants with the default being ENT_COMPAT: quote_style constants 
+.PP
+Constant Name 
+.PP
+Description  
+.PP
+ENT_COMPAT 
+.PP
+Will convert double-quotes and leave single-quotes alone\&.  
+.PP
+ENT_QUOTES 
+.PP
+Will convert both double and single quotes\&.  
+.PP
+ENT_NOQUOTES 
+.PP
+Will leave both double and single quotes unconverted\&.  
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charset\fP [optional] 
+.RE
+.PP
+The ISO-8859-1 character set is used as default for the optional third charset\&. This defines the character set used in conversion\&. 
+.PP
+&reference\&.strings\&.charsets; 
+.PP
+\fBReturns\fP
+.RS 4
+string the decoded string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "htmlentities ( $string,  $quote_style = \fC\fBnull\fP\fP,  $charset = \fC\fBnull\fP\fP,  $double_encode = \fC\fBtrue\fP\fP)"
+Convert all applicable characters to HTML entities \fBstring $string \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$quote_style\fP [optional] 
+.RE
+.PP
+Like htmlspecialchars, the optional second quote_style parameter lets you define what will be done with 'single' and 'double' quotes\&. It takes on one of three constants with the default being ENT_COMPAT: quote_style constants 
+.PP
+Constant Name 
+.PP
+Description  
+.PP
+ENT_COMPAT 
+.PP
+Will convert double-quotes and leave single-quotes alone\&.  
+.PP
+ENT_QUOTES 
+.PP
+Will convert both double and single quotes\&.  
+.PP
+ENT_NOQUOTES 
+.PP
+Will leave both double and single quotes unconverted\&.  
+.PP
+\fBParameters\fP
+.RS 4
+\fI$charset\fP [optional] 
+.RE
+.PP
+Like htmlspecialchars, it takes an optional third argument charset which defines character set used in conversion\&. Presently, the ISO-8859-1 character set is used as the default\&. 
+.PP
+&reference\&.strings\&.charsets; 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$double_encode\fP [optional] 
+.RE
+.PP
+When double_encode is turned off PHP will not encode existing html entities\&. The default is to convert everything\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the encoded string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "htmlspecialchars ( $string,  $flags = \fC\fBENT_COMPAT\fP | \fBENT_HTML401\fP\fP,  $encoding = \fC'UTF\-8'\fP,  $double_encode = \fC\fBtrue\fP\fP)"
+Convert special characters to HTML entities \fBstring $string \fP The \fBstring\fP being converted\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+\fBA\fP bitmask of one or more of the following flags, which specify how to handle quotes, invalid code unit sequences and the used document type\&. The default is \fI\fBENT_COMPAT | ENT_HTML401\fP\fP\&. 
+.PP
+\fBAvailable \fIflags\fP constants\fP
+.PP
+Constant Name 
+.PP
+Description 
+.PP
+</thead>
+.PP
+<tbody> 
+.PP
+\fBENT_COMPAT\fP 
+.PP
+Will convert double-quotes and leave single-quotes alone\&. 
+.PP
+\fBENT_QUOTES\fP 
+.PP
+Will convert both double and single quotes\&. 
+.PP
+\fBENT_NOQUOTES\fP 
+.PP
+Will leave both double and single quotes unconverted\&. 
+.PP
+\fBENT_IGNORE\fP 
+.PP
+Silently discard invalid code unit sequences instead of returning an empty string\&. Using this flag is discouraged as it \fB» may have security implications\fP\&.  
+.PP
+\fBENT_SUBSTITUTE\fP 
+.PP
+Replace invalid code unit sequences with a Unicode Replacement Character U+FFFD (UTF-8) or &#FFFD; (otherwise) instead of returning an empty string\&.  
+.PP
+\fBENT_DISALLOWED\fP 
+.PP
+Replace invalid code points for the given document type with a Unicode Replacement Character U+FFFD (UTF-8) or &#FFFD; (otherwise) instead of leaving them as is\&. This may be useful, for instance, to ensure the well-formedness of XML documents with embedded external content\&.  
+.PP
+\fBENT_HTML401\fP 
+.PP
+Handle code as HTML 4\&.01\&.  
+.PP
+\fBENT_XML1\fP 
+.PP
+Handle code as XML 1\&.  
+.PP
+\fBENT_XHTML\fP 
+.PP
+Handle code as XHTML\&.  
+.PP
+\fBENT_HTML5\fP 
+.PP
+Handle code as HTML 5\&.  
+.PP
+</tbody>
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP [optional] 
+.RE
+.PP
+Defines encoding used in conversion\&. If omitted, the default value for this argument is ISO-8859-1 in versions of PHP prior to 5\&.4\&.0, and UTF-8 from PHP 5\&.4\&.0 onwards\&. 
+.PP
+For the purposes of this function, the encodings \fIISO-8859-1\fP, \fIISO-8859-15\fP, \fIUTF-8\fP, \fIcp866\fP, \fIcp1251\fP, \fIcp1252\fP, and \fIKOI8-R\fP are effectively equivalent, provided the \fI\fBstring\fP\fP itself is valid for the encoding, as the characters affected by \fB\fBhtmlspecialchars()\fP\fP occupy the same positions in all of these encodings\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$double_encode\fP [optional] 
+.RE
+.PP
+When \fI\fBdouble_encode\fP\fP is turned off PHP will not encode existing html entities, the default is to convert everything\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string The converted string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "htmlspecialchars_decode ( $string,  $quote_style = \fC\fBnull\fP\fP)"
+Convert special HTML entities back to characters \fBstring $string \fP The string to decode 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$quote_style\fP [optional] 
+.RE
+.PP
+The quote style\&. One of the following constants: constants 
+.PP
+Constant Name 
+.PP
+Description  
+.PP
+ENT_COMPAT 
+.PP
+Will convert double-quotes and leave single-quotes alone (default)  
+.PP
+ENT_QUOTES 
+.PP
+Will convert both double and single quotes  
+.PP
+ENT_NOQUOTES 
+.PP
+Will leave both double and single quotes unconverted  
+.PP
+\fBReturns\fP
+.RS 4
+string the decoded string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "image_type_to_extension ( $imagetype,  $include_dot = \fC\fBnull\fP\fP)"
+Get file extension for image type \fBint $imagetype \fP One of the IMAGETYPE_XXX constant\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$include_dot\fP [optional] 
+.RE
+.PP
+Whether to prepend a dot to the extension or not\&. Default to true\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string with the extension corresponding to the given image type\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "image_type_to_mime_type ( $imagetype)"
+Get Mime-Type for image-type returned by getimagesize, exif_read_data, exif_thumbnail, exif_imagetype 
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 \fBint $imagetype \fP One of the IMAGETYPE_XXX constants\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string The returned values are as follows values Constants 
+.RE
+.PP
+.PP
+imagetype 
+.PP
+Returned value  
+.PP
+IMAGETYPE_GIF 
+.PP
+image/gif  
+.PP
+IMAGETYPE_JPEG 
+.PP
+image/jpeg  
+.PP
+IMAGETYPE_PNG 
+.PP
+image/png  
+.PP
+IMAGETYPE_SWF 
+.PP
+application/x-shockwave-flash  
+.PP
+IMAGETYPE_PSD 
+.PP
+image/psd  
+.PP
+IMAGETYPE_BMP 
+.PP
+image/bmp  
+.PP
+IMAGETYPE_TIFF_II (intel byte order) 
+.PP
+image/tiff  
+.PP
+IMAGETYPE_TIFF_MM (motorola byte order)  
+.PP
+image/tiff  
+.PP
+IMAGETYPE_JPC 
+.PP
+application/octet-stream  
+.PP
+IMAGETYPE_JP2 
+.PP
+image/jp2  
+.PP
+IMAGETYPE_JPX 
+.PP
+application/octet-stream  
+.PP
+IMAGETYPE_JB2 
+.PP
+application/octet-stream  
+.PP
+IMAGETYPE_SWC 
+.PP
+application/x-shockwave-flash  
+.PP
+IMAGETYPE_IFF 
+.PP
+image/iff  
+.PP
+IMAGETYPE_WBMP 
+.PP
+image/vnd\&.wap\&.wbmp  
+.PP
+IMAGETYPE_XBM 
+.PP
+image/xbm  
+.PP
+IMAGETYPE_ICO 
+.PP
+image/vnd\&.microsoft\&.icon  
+.SS "iptcembed ( $iptcdata,  $jpeg_file_name,  $spool = \fC\fBnull\fP\fP)"
+Embeds binary IPTC data into a JPEG image\&. Note: This function does not require the GD image library\&. \fBstring $iptcdata \fP The data to be written\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$jpeg_file_name\fP 
+.RE
+.PP
+Path to the JPEG image\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$spool\fP [optional] 
+.RE
+.PP
+Spool flag\&. If the spool flag is over 2 then the JPEG will be returned as a string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|bool If success and spool flag is lower than 2 then the JPEG will not be returned as a string, false on errors\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "iptcparse ( $iptcblock)"
+Parse a binary IPTC block into single tags\&. Note: This function does not require the GD image library\&. \fBstring $iptcblock \fP \fBA\fP binary IPTC block\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array using the tagmarker as an index and the value as the value\&. It returns false on error or if no IPTC data was found\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "md5 ( $str,  $raw_output = \fC\fBfalse\fP\fP)"
+Calculate the md5 hash of a string \fBstring $str \fP The string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$raw_output\fP [optional] 
+.RE
+.PP
+If the optional raw_output is set to true, then the md5 digest is instead returned in raw binary format with a length of 16\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the hash as a 32-character hexadecimal number\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "md5_file ( $filename,  $raw_output = \fC\fBfalse\fP\fP)"
+Calculates the md5 hash of a given file \fBstring $filename \fP The filename 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$raw_output\fP [optional] 
+.RE
+.PP
+When true, returns the digest in raw binary format with a length of 16\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false a string on success, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "php_egg_logo_guid ()"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Removed in PHP 5\&.5 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "php_ini_loaded_file ()"
+Retrieve a path to the loaded php\&.ini file \fBstring|false The loaded &php\&.ini; path, or false if one is not loaded\&.  5\&.2\&.4 \fP
+.SS "php_ini_scanned_files ()"
+Return a list of \&.ini files parsed from the additional ini dir \fBstring a comma-separated string of \&.ini files on success\&. Each comma is followed by a newline\&. If the directive --with-config-file-scan-dir wasn't set, false is returned\&. If it was set and the directory was empty, an empty string is returned\&. If a file is unrecognizable, the file will still make it into the returned string but a PHP error will also result\&. This PHP error will be seen both at compile time and while using php_ini_scanned_files\&.  4\&.3  5\&.0 \fP
+.SS "php_logo_guid ()"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Removed in PHP 5\&.5 Gets the logo guid \fBhttps://php\&.net/manual/en/function\&.php-logo-guid\&.php\fP
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string PHPE9568F34-D428-11d2-A769-00AA001ACF42\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "php_real_logo_guid ()"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Removed in PHP 5\&.5 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "php_sapi_name ()"
+Returns the type of interface between web server and PHP \fBstring the interface type, as a lowercase string\&. \fP 
+.PP
+Although not exhaustive, the possible return values include aolserver, apache, apache2filter, apache2handler, caudium, cgi (until PHP 5\&.3), cgi-fcgi, cli, continuity, embed, isapi, litespeed, milter, nsapi, phttpd, pi3web, roxen, thttpd, tux, and webjames\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.1 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "php_uname ( $mode = \fC\fBnull\fP\fP)"
+Returns information about the operating system PHP is running on \fBstring $mode [optional] \fP mode is a single character that defines what information is returned: 'a': This is the default\&. Contains all modes in the sequence 's n r v m'\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the description, as a string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "phpcredits ( $flag = \fC\fBnull\fP\fP)"
+Prints out the credits for PHP \fBint $flag [optional] \fP To generate a custom credits page, you may want to use the flag parameter\&. 
+.PP
+phpcredits flags 
+.PP
+name 
+.PP
+description  
+.PP
+CREDITS_ALL 
+.PP
+All the credits, equivalent to using: CREDITS_DOCS + CREDITS_GENERAL + CREDITS_GROUP + CREDITS_MODULES + CREDITS_FULLPAGE\&. It generates a complete stand-alone HTML page with the appropriate tags\&.   
+.PP
+CREDITS_DOCS 
+.PP
+The credits for the documentation team  
+.PP
+CREDITS_FULLPAGE 
+.PP
+Usually used in combination with the other flags\&. Indicates that a complete stand-alone HTML page needs to be printed including the information indicated by the other flags\&.   
+.PP
+CREDITS_GENERAL 
+.PP
+General credits: Language design and concept, PHP 4\&.0 authors and SAPI module\&.   
+.PP
+CREDITS_GROUP 
+.PP
+\fBA\fP list of the core developers  
+.PP
+CREDITS_MODULES 
+.PP
+\fBA\fP list of the extension modules for PHP, and their authors   
+.PP
+CREDITS_SAPI 
+.PP
+\fBA\fP list of the server API modules for PHP, and their authors   
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "phpinfo ( $what = \fC\fBnull\fP\fP)"
+Outputs lots of PHP information \fBint $what [optional] \fP The output may be customized by passing one or more of the following constants bitwise values summed together in the optional what parameter\&. One can also combine the respective constants or bitwise values together with the or operator\&. 
+.PP
+options 
+.PP
+Name (constant) 
+.PP
+Value 
+.PP
+Description  
+.PP
+INFO_GENERAL 
+.PP
+1 
+.PP
+The configuration line, &php\&.ini; location, build date, Web Server, System and more\&.   
+.PP
+INFO_CREDITS 
+.PP
+2 
+.PP
+PHP Credits\&. See also phpcredits\&.   
+.PP
+INFO_CONFIGURATION 
+.PP
+4 
+.PP
+Current Local and Master values for PHP directives\&. See also ini_get\&.   
+.PP
+INFO_MODULES 
+.PP
+8 
+.PP
+Loaded modules and their respective settings\&. See also get_loaded_extensions\&.   
+.PP
+INFO_ENVIRONMENT 
+.PP
+16 
+.PP
+Environment Variable information that's also available in $_ENV\&.   
+.PP
+INFO_VARIABLES 
+.PP
+32 
+.PP
+Shows all predefined variables from EGPCS (Environment, GET, POST, Cookie, Server)\&.   
+.PP
+INFO_LICENSE 
+.PP
+64 
+.PP
+PHP License information\&. See also the license FAQ\&.   
+.PP
+INFO_ALL 
+.PP
+-1 
+.PP
+Shows all of the above\&.   
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "phpversion ( $extension = \fC\fBnull\fP\fP)"
+Gets the current PHP version \fBstring $extension [optional] \fP An optional extension name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string If the optional extension parameter is specified, phpversion returns the version of that extension, or false if there is no version information associated or the extension isn't enabled\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "sha1 ( $str,  $raw_output = \fC\fBfalse\fP\fP)"
+Calculate the sha1 hash of a string \fBstring $str \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$raw_output\fP [optional] 
+.RE
+.PP
+If the optional raw_output is set to true, then the sha1 digest is instead returned in raw binary format with a length of 20, otherwise the returned value is a 40-character hexadecimal number\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the sha1 hash as a string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.PP
+\fBExamples\fP
+.in +1c
+\fB/usr/local/var/www/safaricom\-sdp\-sdk/vendor/roave/better\-reflection/src/Reflection/ReflectionClass\&.php\fP\&.
+.SS "sha1_file ( $filename,  $raw_output = \fC\fBfalse\fP\fP)"
+Calculate the sha1 hash of a file \fBstring $filename \fP The filename 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$raw_output\fP [optional] 
+.RE
+.PP
+When true, returns the digest in raw binary format with a length of 20\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false a string on success, false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "sleep ( $seconds)"
+Delay execution \fBint $seconds \fP Halt time in seconds\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int zero on success, or false on errors\&. If the call was interrupted by a signal, sleep returns the number of seconds left to sleep\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strcspn ( $str1,  $str2,  $start = \fC\fBnull\fP\fP,  $length = \fC\fBnull\fP\fP)"
+Find length of initial segment not matching mask \fBstring $str1 \fP The first string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$str2\fP 
+.RE
+.PP
+The second string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$start\fP [optional] 
+.RE
+.PP
+The start position of the string to examine\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+The length of the string to examine\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the length of the segment as an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strnatcasecmp ( $str1,  $str2)"
+Case insensitive string comparisons using a 'natural order' algorithm \fBstring $str1 \fP The first string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$str2\fP 
+.RE
+.PP
+The second string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int Similar to other string comparison functions, this one returns < 0 if str1 is less than str2 > 0 if str1 is greater than str2, and 0 if they are equal\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strnatcmp ( $str1,  $str2)"
+String comparisons using a 'natural order' algorithm \fBstring $str1 \fP The first string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$str2\fP 
+.RE
+.PP
+The second string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int Similar to other string comparison functions, this one returns < 0 if str1 is less than str2; > 0 if str1 is greater than str2, and 0 if they are equal\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strptime ( $date,  $format)"
+Parse a time/date generated with <function>strftime</function> \fBstring $date \fP The string to parse (e\&.g\&. returned from strftime) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$format\fP 
+.RE
+.PP
+The format used in date (e\&.g\&. the same as used in strftime)\&. 
+.PP
+For more information about the format options, read the strftime page\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array or false on failure\&. 
+.RE
+.PP
+.PP
+following parameters are returned in the array 
+.PP
+parameters 
+.PP
+Description  
+.PP
+'tm_sec' 
+.PP
+Seconds after the minute (0-61)  
+.PP
+'tm_min' 
+.PP
+Minutes after the hour (0-59)  
+.PP
+'tm_hour' 
+.PP
+Hour since midnight (0-23)  
+.PP
+'tm_mday' 
+.PP
+Day of the month (1-31)  
+.PP
+'tm_mon' 
+.PP
+Months since January (0-11)  
+.PP
+'tm_year' 
+.PP
+Years since 1900  
+.PP
+'tm_wday' 
+.PP
+Days since Sunday (0-6)  
+.PP
+'tm_yday' 
+.PP
+Days since January 1 (0-365)  
+.PP
+'unparsed' 
+.PP
+the date part which was not recognized using the specified format  
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "strspn ( $subject,  $mask,  $start = \fC\fBnull\fP\fP,  $length = \fC\fBnull\fP\fP)"
+Finds the length of the first segment of a string consisting entirely of characters contained within a given mask\&. \fBstring $subject \fP The string to examine\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mask\fP 
+.RE
+.PP
+The list of allowable characters to include in counted segments\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$start\fP [optional] 
+.RE
+.PP
+The position in subject to start searching\&. 
+.PP
+If start is given and is non-negative, then strspn will begin examining subject at the start'th position\&. For instance, in the string 'abcdef', the character at position 0 is 'a', the character at position 2 is 'c', and so forth\&. 
+.PP
+If start is given and is negative, then strspn will begin examining subject at the start'th position from the end of subject\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+The length of the segment from subject to examine\&. 
+.PP
+If length is given and is non-negative, then subject will be examined for length characters after the starting position\&. 
+.PP
+If lengthis given and is negative, then subject will be examined from the starting position up to length characters from the end of subject\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the length of the initial segment of str1 which consists entirely of characters in str2\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "strtok ( $str = \fC\fBnull\fP\fP,  $token)"
+Tokenize string Note that only the first call to strtok uses the string argument\&. Every subsequent call to strtok only needs the token to use, as it keeps track of where it is in the current string\&. To start over, or to tokenize a new string you simply call strtok with the string argument again to initialize it\&. Note that you may put multiple tokens in the token parameter\&. The string will be tokenized when any one of the characters in the argument are found\&. \fBstring $str [optional] \fP The string being split up into smaller strings (tokens)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$token\fP 
+.RE
+.PP
+The delimiter used when splitting up str\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string \fBA\fP string token\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "substr_count ( $haystack,  $needle,  $offset = \fC\fBnull\fP\fP,  $length = \fC\fBnull\fP\fP)"
+Count the number of substring occurrences \fBstring $haystack \fP The string to search in 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$needle\fP 
+.RE
+.PP
+The substring to search for 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+The offset where to start counting 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP [optional] 
+.RE
+.PP
+The maximum length after the specified offset to search for the substring\&. It outputs a warning if the offset plus the length is greater than the haystack length\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int This functions returns an integer\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "time_nanosleep ( $seconds,  $nanoseconds)"
+Delay for a number of seconds and nanoseconds \fBint $seconds \fP Must be a positive integer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$nanoseconds\fP 
+.RE
+.PP
+Must be a positive integer less than 1 billion\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool|array true on success or false on failure\&. 
+.RE
+.PP
+.PP
+If the delay was interrupted by a signal, an associative array will be returned with the components: seconds - number of seconds remaining in the delay nanoseconds - number of nanoseconds remaining in the delay 
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "time_sleep_until ( $timestamp)"
+Make the script sleep until the specified time \fBfloat $timestamp \fP The timestamp when the script should wake\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.1 
+.RE
+.PP
+
+.SS "usleep ( $micro_seconds)"
+Delay execution in microseconds \fBint $micro_seconds \fP Halt time in micro seconds\&. \fBA\fP micro second is one millionth of a second\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "wordwrap ( $str,  $width = \fC75\fP,  $break = \fC'\\n'\fP,  $cut = \fC\fBfalse\fP\fP)"
+Wraps a string to a given number of characters \fBstring $str \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$width\fP [optional] 
+.RE
+.PP
+The column width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$break\fP [optional] 
+.RE
+.PP
+The line is broken using the optional break parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cut\fP [optional] 
+.RE
+.PP
+If the cut is set to true, the string is always wrapped at or before the specified width\&. So if you have a word that is larger than the given width, it is broken apart\&. (See second example)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the given string wrapped at the specified column\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "zend_logo_guid ()"
+
+.PP
+\fBDeprecated\fP
+.RS 4
+5\&.5 Removed in PHP 5\&.5 Gets the \fBZend\fP guid \fBhttps://php\&.net/manual/en/function\&.zend-logo-guid\&.php\fP
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string PHPE9568F35-D428-11d2-A769-00AA001ACF42\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

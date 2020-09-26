@@ -1,0 +1,74 @@
+\hypertarget{__standard__manual_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/standard/\+\_\+standard\+\_\+manual.php File Reference}
+\label{__standard__manual_8php}\index{vendor/jetbrains/phpstorm-\/stubs/standard/\_standard\_manual.php@{vendor/jetbrains/phpstorm-\/stubs/standard/\_standard\_manual.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{__standard__manual_8php_a4fe05352f9cfe37964b5fd1e65f15e44}{P\+S\+\_\+\+U\+N\+R\+E\+S\+E\+R\+V\+E\+\_\+\+P\+R\+E\+F\+I\+X\+\_\+\+\_\+\+\_\+halt\+\_\+compiler}} ()
+\item 
+\mbox{\hyperlink{__standard__manual_8php_a657a857014c3097b6b9951e153dd8bc5}{hex2bin}} (\$data)
+\item 
+\mbox{\hyperlink{__standard__manual_8php_ae64bfa3150ebf52c7b4363256ed4f2d7}{fastcgi\+\_\+finish\+\_\+request}} ()
+\item 
+\mbox{\hyperlink{__standard__manual_8php_a83f9a79c2433e280e47345dcf195ca3b}{http\+\_\+response\+\_\+code}} (\$response\+\_\+code=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{__standard__manual_8php_ade6b111ad6f2e72bf3d76b1c39c8dde8}{\+\_\+\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R\+\_\+\+H\+A\+L\+T\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+\_\+}} 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{__standard__manual_8php_ae64bfa3150ebf52c7b4363256ed4f2d7}\label{__standard__manual_8php_ae64bfa3150ebf52c7b4363256ed4f2d7}} 
+\index{\_standard\_manual.php@{\_standard\_manual.php}!fastcgi\_finish\_request@{fastcgi\_finish\_request}}
+\index{fastcgi\_finish\_request@{fastcgi\_finish\_request}!\_standard\_manual.php@{\_standard\_manual.php}}
+\doxysubsubsection{\texorpdfstring{fastcgi\_finish\_request()}{fastcgi\_finish\_request()}}
+{\footnotesize\ttfamily fastcgi\+\_\+finish\+\_\+request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function flushes all response data to the client and finishes the request. This allows for time consuming tasks to be performed without leaving the connection to the client open. \begin{DoxyReturn}{Returns}
+bool Returns T\+R\+UE on success or F\+A\+L\+SE on failure. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{5.\+3.\+3 }}
+\end{DoxyReturn}
+\mbox{\Hypertarget{__standard__manual_8php_a657a857014c3097b6b9951e153dd8bc5}\label{__standard__manual_8php_a657a857014c3097b6b9951e153dd8bc5}} 
+\index{\_standard\_manual.php@{\_standard\_manual.php}!hex2bin@{hex2bin}}
+\index{hex2bin@{hex2bin}!\_standard\_manual.php@{\_standard\_manual.php}}
+\doxysubsubsection{\texorpdfstring{hex2bin()}{hex2bin()}}
+{\footnotesize\ttfamily hex2bin (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})}
+
+Convert hexadecimal string to its binary representation.
+
+If the hexadecimal input string is of odd length or invalid hexadecimal string an {\ttfamily E\+\_\+\+W\+A\+R\+N\+I\+NG} level error is emitted.
+
+\mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data Hexadecimal string to convert.  string$\vert$false The binary representation of the given data or {\bfseries{F\+A\+L\+SE}} on failure.  bin2hex()  unpack()  5.\+4 }}\mbox{\Hypertarget{__standard__manual_8php_a83f9a79c2433e280e47345dcf195ca3b}\label{__standard__manual_8php_a83f9a79c2433e280e47345dcf195ca3b}} 
+\index{\_standard\_manual.php@{\_standard\_manual.php}!http\_response\_code@{http\_response\_code}}
+\index{http\_response\_code@{http\_response\_code}!\_standard\_manual.php@{\_standard\_manual.php}}
+\doxysubsubsection{\texorpdfstring{http\_response\_code()}{http\_response\_code()}}
+{\footnotesize\ttfamily http\+\_\+response\+\_\+code (\begin{DoxyParamCaption}\item[{}]{\$response\+\_\+code = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Get or Set the H\+T\+TP response code 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$response\+\_\+code} & \mbox{[}optional\mbox{]} The optional response\+\_\+code will set the response code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The current response code. By default the return value is int(200). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{__standard__manual_8php_a4fe05352f9cfe37964b5fd1e65f15e44}\label{__standard__manual_8php_a4fe05352f9cfe37964b5fd1e65f15e44}} 
+\index{\_standard\_manual.php@{\_standard\_manual.php}!PS\_UNRESERVE\_PREFIX\_\_\_halt\_compiler@{PS\_UNRESERVE\_PREFIX\_\_\_halt\_compiler}}
+\index{PS\_UNRESERVE\_PREFIX\_\_\_halt\_compiler@{PS\_UNRESERVE\_PREFIX\_\_\_halt\_compiler}!\_standard\_manual.php@{\_standard\_manual.php}}
+\doxysubsubsection{\texorpdfstring{PS\_UNRESERVE\_PREFIX\_\_\_halt\_compiler()}{PS\_UNRESERVE\_PREFIX\_\_\_halt\_compiler()}}
+{\footnotesize\ttfamily P\+S\+\_\+\+U\+N\+R\+E\+S\+E\+R\+V\+E\+\_\+\+P\+R\+E\+F\+I\+X\+\_\+\+\_\+\+\_\+halt\+\_\+compiler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+(P\+HP 5.\+1)~\newline
+ Halts the execution of the compiler. This can be useful to embed data in P\+HP scripts, like the installation files. Byte position of the data start can be determined by the {\bfseries{C\+O\+M\+P\+I\+L\+E\+R\+\_\+\+H\+A\+L\+T\+\_\+\+O\+F\+F\+S\+ET}} constant which is defined only if there is a \+\_\+\+\_\+halt\+\_\+compiler() presented in the file. 
+
+Note\+: \+\_\+\+\_\+halt\+\_\+compiler() can only be used from the outermost scope. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{void }}
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{__standard__manual_8php_ade6b111ad6f2e72bf3d76b1c39c8dde8}\label{__standard__manual_8php_ade6b111ad6f2e72bf3d76b1c39c8dde8}} 
+\index{\_standard\_manual.php@{\_standard\_manual.php}!\_\_COMPILER\_HALT\_OFFSET\_\_@{\_\_COMPILER\_HALT\_OFFSET\_\_}}
+\index{\_\_COMPILER\_HALT\_OFFSET\_\_@{\_\_COMPILER\_HALT\_OFFSET\_\_}!\_standard\_manual.php@{\_standard\_manual.php}}
+\doxysubsubsection{\texorpdfstring{\_\_COMPILER\_HALT\_OFFSET\_\_}{\_\_COMPILER\_HALT\_OFFSET\_\_}}
+{\footnotesize\ttfamily const \+\_\+\+\_\+\+C\+O\+M\+P\+I\+L\+E\+R\+\_\+\+H\+A\+L\+T\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+\_\+ 0}
+
+(P\+HP 5.\+1)~\newline
+ Byte position of the data start, defined only if there is a \+\_\+\+\_\+halt\+\_\+compiler() presented in the file. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{void }}

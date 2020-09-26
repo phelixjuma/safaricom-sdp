@@ -1,0 +1,776 @@
+\hypertarget{xml_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/xml/xml.php File Reference}
+\label{xml_8php}\index{vendor/jetbrains/phpstorm-\/stubs/xml/xml.php@{vendor/jetbrains/phpstorm-\/stubs/xml/xml.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{xml_8php_a295f36ef85ae42cb99b91e71b93b744b}{xml\+\_\+parser\+\_\+create}} (\$encoding=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{xml_8php_ae9479604ab13e0a63f15cff57a85b291}{xml\+\_\+parser\+\_\+create\+\_\+ns}} (\$encoding=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$separator=\textquotesingle{}\+:\textquotesingle{})
+\item 
+\mbox{\hyperlink{xml_8php_a91c7fe8d903bcad57ff8d982e2d8cf11}{xml\+\_\+set\+\_\+object}} (\$parser, \&\$object)
+\item 
+\mbox{\hyperlink{xml_8php_a88fcddf972de6a2e6ea47952676c7a63}{xml\+\_\+set\+\_\+element\+\_\+handler}} (\$parser, callable \$start\+\_\+element\+\_\+handler, callable \$end\+\_\+element\+\_\+handler)
+\item 
+\mbox{\hyperlink{xml_8php_aead74367c337d27e31e10f49a638dc35}{xml\+\_\+set\+\_\+character\+\_\+data\+\_\+handler}} (\$parser, callable \$handler)
+\item 
+\mbox{\hyperlink{xml_8php_a12ae928450ad0d89006370587ceb8312}{xml\+\_\+set\+\_\+processing\+\_\+instruction\+\_\+handler}} (\$parser, callable \$handler)
+\item 
+\mbox{\hyperlink{xml_8php_a0bec2ba1bdafe589a702571807e52eb5}{xml\+\_\+set\+\_\+default\+\_\+handler}} (\$parser, callable \$handler)
+\item 
+\mbox{\hyperlink{xml_8php_a9a13c901042b68d12725e4a8d4fb0f40}{xml\+\_\+set\+\_\+unparsed\+\_\+entity\+\_\+decl\+\_\+handler}} (\$parser, callable \$handler)
+\item 
+\mbox{\hyperlink{xml_8php_a3f53dc659cbbe8f42a45999dfcb98250}{xml\+\_\+set\+\_\+notation\+\_\+decl\+\_\+handler}} (\$parser, callable \$handler)
+\item 
+\mbox{\hyperlink{xml_8php_a18d53a2d0b5857d432cf89a9103870a9}{xml\+\_\+set\+\_\+external\+\_\+entity\+\_\+ref\+\_\+handler}} (\$parser, callable \$handler)
+\item 
+\mbox{\hyperlink{xml_8php_adf124a6cafefcfce81663442128b5a97}{xml\+\_\+set\+\_\+start\+\_\+namespace\+\_\+decl\+\_\+handler}} (\$parser, callable \$handler)
+\item 
+\mbox{\hyperlink{xml_8php_a74166703b9c2a953340583c04f50e566}{xml\+\_\+set\+\_\+end\+\_\+namespace\+\_\+decl\+\_\+handler}} (\$parser, callable \$handler)
+\item 
+\mbox{\hyperlink{xml_8php_a0818c610138236be60e030829a142c71}{xml\+\_\+parse}} (\$parser, \$data, \$is\+\_\+final=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}})
+\item 
+\mbox{\hyperlink{xml_8php_a6d3720e2b25fb61ed49723b0996e69b4}{xml\+\_\+parse\+\_\+into\+\_\+struct}} (\$parser, \$data, array \&\$values, array \&\$index=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{xml_8php_a0cccc877c457e0f22af5ba7457b6f05f}{xml\+\_\+get\+\_\+error\+\_\+code}} (\$parser)
+\item 
+\mbox{\hyperlink{xml_8php_af8320f7759549edeb4941725a5a7770a}{xml\+\_\+error\+\_\+string}} (\$code)
+\item 
+\mbox{\hyperlink{xml_8php_a92458eb049e553f6690cef7781aee97a}{xml\+\_\+get\+\_\+current\+\_\+line\+\_\+number}} (\$parser)
+\item 
+\mbox{\hyperlink{xml_8php_ab2d5a2a5370d7eeb87d2c50f50b07b96}{xml\+\_\+get\+\_\+current\+\_\+column\+\_\+number}} (\$parser)
+\item 
+\mbox{\hyperlink{xml_8php_abeae62086fff8915519dbf3b6905a176}{xml\+\_\+get\+\_\+current\+\_\+byte\+\_\+index}} (\$parser)
+\item 
+\mbox{\hyperlink{xml_8php_a48b3ea53f3ae9c67eb092c4c1a483735}{xml\+\_\+parser\+\_\+free}} (\$parser)
+\item 
+\mbox{\hyperlink{xml_8php_a15e4041a6d96913d062c51737759509b}{xml\+\_\+parser\+\_\+set\+\_\+option}} (\$parser, \$option, \$value)
+\item 
+\mbox{\hyperlink{xml_8php_af29656dbf8eb750a1104912e59463bac}{xml\+\_\+parser\+\_\+get\+\_\+option}} (\$parser, \$option)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{xml_8php_a6b7c18864f76047b17ff4725039861be}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+NE}} 0
+\item 
+const \mbox{\hyperlink{xml_8php_ae45d4798b43dcf75376b69946ef066a2}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+\_\+\+M\+E\+M\+O\+RY}} 1
+\item 
+const \mbox{\hyperlink{xml_8php_a68299c320eb963badb149ab63ed8d67e}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+Y\+N\+T\+AX}} 2
+\item 
+const \mbox{\hyperlink{xml_8php_a38e14d8ba0bf0895dc4f5e0fbc61e88b}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+\_\+\+E\+L\+E\+M\+E\+N\+TS}} 3
+\item 
+const \mbox{\hyperlink{xml_8php_ac7578197b3c9c2a3c8ce119ea59a8059}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+O\+K\+EN}} 4
+\item 
+const \mbox{\hyperlink{xml_8php_ae2da275afff676d0b758a342acc26f65}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+N\+C\+L\+O\+S\+E\+D\+\_\+\+T\+O\+K\+EN}} 5
+\item 
+const \mbox{\hyperlink{xml_8php_a6ba286b087920dce00e356375372cc6a}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+C\+H\+AR}} 6
+\item 
+const \mbox{\hyperlink{xml_8php_ae02eb30d05f0936176f8939581fca112}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+A\+G\+\_\+\+M\+I\+S\+M\+A\+T\+CH}} 7
+\item 
+const \mbox{\hyperlink{xml_8php_ae96769f604827c8d376f922d26499bb2}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+U\+P\+L\+I\+C\+A\+T\+E\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}} 8
+\item 
+const \mbox{\hyperlink{xml_8php_a0ff806e0cea72ab3796f8bd3e27781bd}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+J\+U\+N\+K\+\_\+\+A\+F\+T\+E\+R\+\_\+\+D\+O\+C\+\_\+\+E\+L\+E\+M\+E\+NT}} 9
+\item 
+const \mbox{\hyperlink{xml_8php_a0bdb81b1a116939cf6ee8d0aad01ddfe}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+R\+EF}} 10
+\item 
+const \mbox{\hyperlink{xml_8php_ad77cadc046feb33a4a0c94ad25ae6d1c}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+E\+N\+T\+I\+TY}} 11
+\item 
+const \mbox{\hyperlink{xml_8php_a0d624864cdc571bd3bd262a8adca0695}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+R\+EF}} 12
+\item 
+const \mbox{\hyperlink{xml_8php_a8ab99805f02d1deb2e7dfee412d38ad7}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+S\+Y\+N\+C\+\_\+\+E\+N\+T\+I\+TY}} 13
+\item 
+const \mbox{\hyperlink{xml_8php_a91bb7f0cf513f43c63254f044f7a7c7a}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+B\+A\+D\+\_\+\+C\+H\+A\+R\+\_\+\+R\+EF}} 14
+\item 
+const \mbox{\hyperlink{xml_8php_af0bf394eed187bf1557cfd939210eafd}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+R\+EF}} 15
+\item 
+const \mbox{\hyperlink{xml_8php_a16111bd1f5407a6aa92b50a79148e436}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+R\+EF}} 16
+\item 
+const \mbox{\hyperlink{xml_8php_a0fc88083de39c43348dbdaf7d438c045}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+M\+I\+S\+P\+L\+A\+C\+E\+D\+\_\+\+X\+M\+L\+\_\+\+PI}} 17
+\item 
+const \mbox{\hyperlink{xml_8php_a04d0f66ce39b63b1ee95d33c2274e1e4}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+N\+C\+O\+D\+I\+NG}} 18
+\item 
+const \mbox{\hyperlink{xml_8php_a8ab44f0a24d0e69c0177699698c53f6e}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+C\+O\+R\+R\+E\+C\+T\+\_\+\+E\+N\+C\+O\+D\+I\+NG}} 19
+\item 
+const \mbox{\hyperlink{xml_8php_aa2cadc5a74354f226050f045a596247a}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+N\+C\+L\+O\+S\+E\+D\+\_\+\+C\+D\+A\+T\+A\+\_\+\+S\+E\+C\+T\+I\+ON}} 20
+\item 
+const \mbox{\hyperlink{xml_8php_a94cfbd239a63f9ab484f9ea41e8f1ddb}{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+H\+A\+N\+D\+L\+I\+NG}} 21
+\item 
+const \mbox{\hyperlink{xml_8php_a0b28ddedab806b5714fb812c09253307}{X\+M\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+C\+A\+S\+E\+\_\+\+F\+O\+L\+D\+I\+NG}} 1
+\item 
+const \mbox{\hyperlink{xml_8php_a096c18c9cfa078433146567075334271}{X\+M\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+E\+N\+C\+O\+D\+I\+NG}} 2
+\item 
+const \mbox{\hyperlink{xml_8php_abec10d6d3ab7645cb5e1dcb48c0b285f}{X\+M\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+S\+K\+I\+P\+\_\+\+T\+A\+G\+S\+T\+A\+RT}} 3
+\item 
+const \mbox{\hyperlink{xml_8php_aca59baf40b2a2ebdac95061f8897cd9f}{X\+M\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+S\+K\+I\+P\+\_\+\+W\+H\+I\+TE}} 4
+\item 
+const \mbox{\hyperlink{xml_8php_a90efc78e9d7785e94cad3390afe8df86}{X\+M\+L\+\_\+\+S\+A\+X\+\_\+\+I\+M\+PL}} \char`\"{}libxml\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{xml_8php_af8320f7759549edeb4941725a5a7770a}\label{xml_8php_af8320f7759549edeb4941725a5a7770a}} 
+\index{xml.php@{xml.php}!xml\_error\_string@{xml\_error\_string}}
+\index{xml\_error\_string@{xml\_error\_string}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_error\_string()}{xml\_error\_string()}}
+{\footnotesize\ttfamily xml\+\_\+error\+\_\+string (\begin{DoxyParamCaption}\item[{}]{\$code }\end{DoxyParamCaption})}
+
+Get X\+ML parser error string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$code }} An error code from {\bfseries{xml\+\_\+get\+\_\+error\+\_\+code}}. 
+
+\begin{DoxyReturn}{Returns}
+string a string with a textual description of the error {\itshape code}, or {\bfseries{F\+A\+L\+SE}} if no description was found. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_abeae62086fff8915519dbf3b6905a176}\label{xml_8php_abeae62086fff8915519dbf3b6905a176}} 
+\index{xml.php@{xml.php}!xml\_get\_current\_byte\_index@{xml\_get\_current\_byte\_index}}
+\index{xml\_get\_current\_byte\_index@{xml\_get\_current\_byte\_index}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_get\_current\_byte\_index()}{xml\_get\_current\_byte\_index()}}
+{\footnotesize\ttfamily xml\+\_\+get\+\_\+current\+\_\+byte\+\_\+index (\begin{DoxyParamCaption}\item[{}]{\$parser }\end{DoxyParamCaption})}
+
+Get current byte index for an X\+ML parser \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser to get byte index from. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false This function returns {\bfseries{F\+A\+L\+SE}} if {\itshape parser} does not refer to a valid parser, or else it returns which byte index the parser is currently at in its data buffer (starting at 0). 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_ab2d5a2a5370d7eeb87d2c50f50b07b96}\label{xml_8php_ab2d5a2a5370d7eeb87d2c50f50b07b96}} 
+\index{xml.php@{xml.php}!xml\_get\_current\_column\_number@{xml\_get\_current\_column\_number}}
+\index{xml\_get\_current\_column\_number@{xml\_get\_current\_column\_number}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_get\_current\_column\_number()}{xml\_get\_current\_column\_number()}}
+{\footnotesize\ttfamily xml\+\_\+get\+\_\+current\+\_\+column\+\_\+number (\begin{DoxyParamCaption}\item[{}]{\$parser }\end{DoxyParamCaption})}
+
+Get current column number for an X\+ML parser \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser to get column number from. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false This function returns {\bfseries{F\+A\+L\+SE}} if {\itshape parser} does not refer to a valid parser, or else it returns which column on the current line (as given by {\bfseries{xml\+\_\+get\+\_\+current\+\_\+line\+\_\+number}}) the parser is currently at. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_a92458eb049e553f6690cef7781aee97a}\label{xml_8php_a92458eb049e553f6690cef7781aee97a}} 
+\index{xml.php@{xml.php}!xml\_get\_current\_line\_number@{xml\_get\_current\_line\_number}}
+\index{xml\_get\_current\_line\_number@{xml\_get\_current\_line\_number}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_get\_current\_line\_number()}{xml\_get\_current\_line\_number()}}
+{\footnotesize\ttfamily xml\+\_\+get\+\_\+current\+\_\+line\+\_\+number (\begin{DoxyParamCaption}\item[{}]{\$parser }\end{DoxyParamCaption})}
+
+Get current line number for an X\+ML parser \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser to get line number from. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false This function returns {\bfseries{F\+A\+L\+SE}} if {\itshape parser} does not refer to a valid parser, or else it returns which line the parser is currently at in its data buffer. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_a0cccc877c457e0f22af5ba7457b6f05f}\label{xml_8php_a0cccc877c457e0f22af5ba7457b6f05f}} 
+\index{xml.php@{xml.php}!xml\_get\_error\_code@{xml\_get\_error\_code}}
+\index{xml\_get\_error\_code@{xml\_get\_error\_code}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_get\_error\_code()}{xml\_get\_error\_code()}}
+{\footnotesize\ttfamily xml\+\_\+get\+\_\+error\+\_\+code (\begin{DoxyParamCaption}\item[{}]{\$parser }\end{DoxyParamCaption})}
+
+Get X\+ML parser error code \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser to get error code from. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false This function returns {\bfseries{F\+A\+L\+SE}} if {\itshape parser} does not refer to a valid parser, or else it returns one of the error codes listed in the error codes section. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_a0818c610138236be60e030829a142c71}\label{xml_8php_a0818c610138236be60e030829a142c71}} 
+\index{xml.php@{xml.php}!xml\_parse@{xml\_parse}}
+\index{xml\_parse@{xml\_parse}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_parse()}{xml\_parse()}}
+{\footnotesize\ttfamily xml\+\_\+parse (\begin{DoxyParamCaption}\item[{}]{\$parser,  }\item[{}]{\$data,  }\item[{}]{\$is\+\_\+final = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}} }\end{DoxyParamCaption})}
+
+Start parsing an X\+ML document \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser to use. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+Chunk of data to parse. \mbox{\hyperlink{class_a}{A}} document may be parsed piece-\/wise by calling {\bfseries{xml\+\_\+parse}} several times with new data, as long as the {\itshape is\+\_\+final} parameter is set and {\bfseries{T\+R\+UE}} when the last data is parsed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$is\+\_\+final} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If set and {\bfseries{T\+R\+UE}}, {\itshape data} is the last piece of data sent in this parse. 
+
+\begin{DoxyReturn}{Returns}
+int 1 on success or 0 on failure. 
+\end{DoxyReturn}
+
+
+For unsuccessful parses, error information can be retrieved with {\bfseries{xml\+\_\+get\+\_\+error\+\_\+code}}, {\bfseries{xml\+\_\+error\+\_\+string}}, {\bfseries{xml\+\_\+get\+\_\+current\+\_\+line\+\_\+number}}, {\bfseries{xml\+\_\+get\+\_\+current\+\_\+column\+\_\+number}} and {\bfseries{xml\+\_\+get\+\_\+current\+\_\+byte\+\_\+index}}. 
+
+Entity errors are reported at the end of the data thus only if {\itshape is\+\_\+final} is set and {\bfseries{T\+R\+UE}}. \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_a6d3720e2b25fb61ed49723b0996e69b4}\label{xml_8php_a6d3720e2b25fb61ed49723b0996e69b4}} 
+\index{xml.php@{xml.php}!xml\_parse\_into\_struct@{xml\_parse\_into\_struct}}
+\index{xml\_parse\_into\_struct@{xml\_parse\_into\_struct}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_parse\_into\_struct()}{xml\_parse\_into\_struct()}}
+{\footnotesize\ttfamily xml\+\_\+parse\+\_\+into\+\_\+struct (\begin{DoxyParamCaption}\item[{}]{\$parser,  }\item[{}]{\$data,  }\item[{array \&}]{\$values,  }\item[{array \&}]{\$index = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Parse X\+ML data into an array structure \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} string containing the X\+ML data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+An array containing the values of the X\+ML data 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$index} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+An array containing pointers to the location of the appropriate values in the \$values. 
+
+\begin{DoxyReturn}{Returns}
+int {\bfseries{xml\+\_\+parse\+\_\+into\+\_\+struct}} returns 0 for failure and 1 for success. This is not the same as {\bfseries{F\+A\+L\+SE}} and {\bfseries{T\+R\+UE}}, be careful with operators such as ===. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_a295f36ef85ae42cb99b91e71b93b744b}\label{xml_8php_a295f36ef85ae42cb99b91e71b93b744b}} 
+\index{xml.php@{xml.php}!xml\_parser\_create@{xml\_parser\_create}}
+\index{xml\_parser\_create@{xml\_parser\_create}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_parser\_create()}{xml\_parser\_create()}}
+{\footnotesize\ttfamily xml\+\_\+parser\+\_\+create (\begin{DoxyParamCaption}\item[{}]{\$encoding = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Create an X\+ML parser \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$encoding \mbox{[}optional\mbox{]} }} The optional {\itshape encoding} specifies the character encoding for the input/output in P\+HP 4. Starting from P\+HP 5, the input encoding is automatically detected, so that the {\itshape encoding} parameter specifies only the output encoding. In P\+HP 4, the default output encoding is the same as the input charset. If empty string is passed, the parser attempts to identify which encoding the document is encoded in by looking at the heading 3 or 4 bytes. In P\+HP 5.\+0.\+0 and 5.\+0.\+1, the default output charset is I\+S\+O-\/8859-\/1, while in P\+HP 5.\+0.\+2 and upper is U\+T\+F-\/8. The supported encodings are I\+S\+O-\/8859-\/1, U\+T\+F-\/8 and U\+S-\/\+A\+S\+C\+II. 
+
+\begin{DoxyReturn}{Returns}
+resource a resource handle for the new X\+ML parser. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_ae9479604ab13e0a63f15cff57a85b291}\label{xml_8php_ae9479604ab13e0a63f15cff57a85b291}} 
+\index{xml.php@{xml.php}!xml\_parser\_create\_ns@{xml\_parser\_create\_ns}}
+\index{xml\_parser\_create\_ns@{xml\_parser\_create\_ns}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_parser\_create\_ns()}{xml\_parser\_create\_ns()}}
+{\footnotesize\ttfamily xml\+\_\+parser\+\_\+create\+\_\+ns (\begin{DoxyParamCaption}\item[{}]{\$encoding = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$separator = {\ttfamily \textquotesingle{}\+:\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Create an X\+ML parser with namespace support \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$encoding \mbox{[}optional\mbox{]} }} The optional {\itshape encoding} specifies the character encoding for the input/output in P\+HP 4. Starting from P\+HP 5, the input encoding is automatically detected, so that the {\itshape encoding} parameter specifies only the output encoding. In P\+HP 4, the default output encoding is the same as the input charset. In P\+HP 5.\+0.\+0 and 5.\+0.\+1, the default output charset is I\+S\+O-\/8859-\/1, while in P\+HP 5.\+0.\+2 and upper is U\+T\+F-\/8. The supported encodings are I\+S\+O-\/8859-\/1, U\+T\+F-\/8 and U\+S-\/\+A\+S\+C\+II. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$separator} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+With a namespace aware parser tag parameters passed to the various handler functions will consist of namespace and tag name separated by the string specified in {\itshape separator}. 
+
+\begin{DoxyReturn}{Returns}
+resource a resource handle for the new X\+ML parser. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+5 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_a48b3ea53f3ae9c67eb092c4c1a483735}\label{xml_8php_a48b3ea53f3ae9c67eb092c4c1a483735}} 
+\index{xml.php@{xml.php}!xml\_parser\_free@{xml\_parser\_free}}
+\index{xml\_parser\_free@{xml\_parser\_free}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_parser\_free()}{xml\_parser\_free()}}
+{\footnotesize\ttfamily xml\+\_\+parser\+\_\+free (\begin{DoxyParamCaption}\item[{}]{\$parser }\end{DoxyParamCaption})}
+
+Free an X\+ML parser \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser A reference to the X\+ML parser to free.  bool This function returns {\bfseries{F\+A\+L\+SE}} if {\itshape parser} does not refer to a valid parser, or else it frees the parser and returns {\bfseries{T\+R\+UE}}.  4.\+0  5.\+0 }}\mbox{\Hypertarget{xml_8php_af29656dbf8eb750a1104912e59463bac}\label{xml_8php_af29656dbf8eb750a1104912e59463bac}} 
+\index{xml.php@{xml.php}!xml\_parser\_get\_option@{xml\_parser\_get\_option}}
+\index{xml\_parser\_get\_option@{xml\_parser\_get\_option}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_parser\_get\_option()}{xml\_parser\_get\_option()}}
+{\footnotesize\ttfamily xml\+\_\+parser\+\_\+get\+\_\+option (\begin{DoxyParamCaption}\item[{}]{\$parser,  }\item[{}]{\$option }\end{DoxyParamCaption})}
+
+Get options from an X\+ML parser \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser A reference to the X\+ML parser to get an option from.  int \$option Which option to fetch. {\bfseries{X\+M\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+C\+A\+S\+E\+\_\+\+F\+O\+L\+D\+I\+NG}} and {\bfseries{X\+M\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+E\+N\+C\+O\+D\+I\+NG}} are available. See {\bfseries{xml\+\_\+parser\+\_\+set\+\_\+option}} for their description.  mixed This function returns {\bfseries{F\+A\+L\+SE}} if {\itshape parser} does not refer to a valid parser or if {\itshape option} isn\textquotesingle{}t valid (generates also a {\bfseries{E\+\_\+\+W\+A\+R\+N\+I\+NG}}). Else the option\textquotesingle{}s value is returned.  4.\+0  5.\+0 }}\mbox{\Hypertarget{xml_8php_a15e4041a6d96913d062c51737759509b}\label{xml_8php_a15e4041a6d96913d062c51737759509b}} 
+\index{xml.php@{xml.php}!xml\_parser\_set\_option@{xml\_parser\_set\_option}}
+\index{xml\_parser\_set\_option@{xml\_parser\_set\_option}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_parser\_set\_option()}{xml\_parser\_set\_option()}}
+{\footnotesize\ttfamily xml\+\_\+parser\+\_\+set\+\_\+option (\begin{DoxyParamCaption}\item[{}]{\$parser,  }\item[{}]{\$option,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Set options in an X\+ML parser \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser to set an option in. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$option} & \\
+\hline
+\end{DoxyParams}
+Which option to set. See below. 
+
+The following options are available\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+parser options 
+
+Option constant 
+
+Data type 
+
+Description  
+
+{\bfseries{X\+M\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+C\+A\+S\+E\+\_\+\+F\+O\+L\+D\+I\+NG}} 
+
+integer 
+
+Controls whether case-\/folding is enabled for this X\+ML parser. Enabled by default.   
+
+{\bfseries{X\+M\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+S\+K\+I\+P\+\_\+\+T\+A\+G\+S\+T\+A\+RT}} 
+
+integer 
+
+Specify how many characters should be skipped in the beginning of a tag name.   
+
+{\bfseries{X\+M\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+S\+K\+I\+P\+\_\+\+W\+H\+I\+TE}} 
+
+integer 
+
+Whether to skip values consisting of whitespace characters.   
+
+{\bfseries{X\+M\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+E\+N\+C\+O\+D\+I\+NG}} 
+
+string 
+
+Sets which target encoding to use in this X\+ML parser.\+By default, it is set to the same as the source encoding used by {\bfseries{xml\+\_\+parser\+\_\+create}}. Supported target encodings are I\+S\+O-\/8859-\/1, U\+S-\/\+A\+S\+C\+II and U\+T\+F-\/8.   
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+The option\textquotesingle{}s new value. 
+
+\begin{DoxyReturn}{Returns}
+bool This function returns {\bfseries{F\+A\+L\+SE}} if {\itshape parser} does not refer to a valid parser, or if the option could not be set. Else the option is set and {\bfseries{T\+R\+UE}} is returned. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_aead74367c337d27e31e10f49a638dc35}\label{xml_8php_aead74367c337d27e31e10f49a638dc35}} 
+\index{xml.php@{xml.php}!xml\_set\_character\_data\_handler@{xml\_set\_character\_data\_handler}}
+\index{xml\_set\_character\_data\_handler@{xml\_set\_character\_data\_handler}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_set\_character\_data\_handler()}{xml\_set\_character\_data\_handler()}}
+{\footnotesize\ttfamily xml\+\_\+set\+\_\+character\+\_\+data\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{\$parser,  }\item[{callable}]{\$handler }\end{DoxyParamCaption})}
+
+Set up character data handler \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser to set up character data handler function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$handler} & \\
+\hline
+\end{DoxyParams}
+{\itshape handler} is a string containing the name of a function that must exist when {\bfseries{xml\+\_\+parse}} is called for {\itshape parser}. 
+
+The function named by {\itshape handler} must accept two parameters\+: {\bfseries{handler}} {\bfseries{resource{\itshape parser}}} {\bfseries{string{\itshape data}}} {\itshape parser} The first parameter, parser, is a reference to the X\+ML parser calling the handler. \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_a0bec2ba1bdafe589a702571807e52eb5}\label{xml_8php_a0bec2ba1bdafe589a702571807e52eb5}} 
+\index{xml.php@{xml.php}!xml\_set\_default\_handler@{xml\_set\_default\_handler}}
+\index{xml\_set\_default\_handler@{xml\_set\_default\_handler}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_set\_default\_handler()}{xml\_set\_default\_handler()}}
+{\footnotesize\ttfamily xml\+\_\+set\+\_\+default\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{\$parser,  }\item[{callable}]{\$handler }\end{DoxyParamCaption})}
+
+Set up default handler \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser to set up default handler function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$handler} & \\
+\hline
+\end{DoxyParams}
+{\itshape handler} is a string containing the name of a function that must exist when {\bfseries{xml\+\_\+parse}} is called for {\itshape parser}. 
+
+The function named by {\itshape handler} must accept two parameters\+: {\bfseries{handler}} {\bfseries{resource{\itshape parser}}} {\bfseries{string{\itshape data}}} {\itshape parser} The first parameter, parser, is a reference to the X\+ML parser calling the handler. \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_a88fcddf972de6a2e6ea47952676c7a63}\label{xml_8php_a88fcddf972de6a2e6ea47952676c7a63}} 
+\index{xml.php@{xml.php}!xml\_set\_element\_handler@{xml\_set\_element\_handler}}
+\index{xml\_set\_element\_handler@{xml\_set\_element\_handler}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_set\_element\_handler()}{xml\_set\_element\_handler()}}
+{\footnotesize\ttfamily xml\+\_\+set\+\_\+element\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{\$parser,  }\item[{callable}]{\$start\+\_\+element\+\_\+handler,  }\item[{callable}]{\$end\+\_\+element\+\_\+handler }\end{DoxyParamCaption})}
+
+Set up start and end element handlers \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser to set up start and end element handler functions. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$start\+\_\+element\+\_\+handler} & \\
+\hline
+\end{DoxyParams}
+The function named by {\itshape start\+\_\+element\+\_\+handler} must accept three parameters\+: {\bfseries{start\+\_\+element\+\_\+handler}} {\bfseries{resource{\itshape parser}}} {\bfseries{string{\itshape name}}} {\bfseries{array{\itshape attribs}}} {\itshape parser} The first parameter, parser, is a reference to the X\+ML parser calling the handler. 
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$end\+\_\+element\+\_\+handler} & \\
+\hline
+\end{DoxyParams}
+The function named by {\itshape end\+\_\+element\+\_\+handler} must accept two parameters\+: {\bfseries{end\+\_\+element\+\_\+handler}} {\bfseries{resource{\itshape parser}}} {\bfseries{string{\itshape name}}} {\itshape parser} The first parameter, parser, is a reference to the X\+ML parser calling the handler. \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_a74166703b9c2a953340583c04f50e566}\label{xml_8php_a74166703b9c2a953340583c04f50e566}} 
+\index{xml.php@{xml.php}!xml\_set\_end\_namespace\_decl\_handler@{xml\_set\_end\_namespace\_decl\_handler}}
+\index{xml\_set\_end\_namespace\_decl\_handler@{xml\_set\_end\_namespace\_decl\_handler}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_set\_end\_namespace\_decl\_handler()}{xml\_set\_end\_namespace\_decl\_handler()}}
+{\footnotesize\ttfamily xml\+\_\+set\+\_\+end\+\_\+namespace\+\_\+decl\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{\$parser,  }\item[{callable}]{\$handler }\end{DoxyParamCaption})}
+
+Set up end namespace declaration handler \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$handler} & \\
+\hline
+\end{DoxyParams}
+{\itshape handler} is a string containing the name of a function that must exist when {\bfseries{xml\+\_\+parse}} is called for {\itshape parser}. 
+
+The function named by {\itshape handler} must accept two parameters, and should return an integer value. If the value returned from the handler is {\bfseries{F\+A\+L\+SE}} (which it will be if no value is returned), the X\+ML parser will stop parsing and {\bfseries{xml\+\_\+get\+\_\+error\+\_\+code}} will return {\bfseries{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+H\+A\+N\+D\+L\+I\+NG}}. {\bfseries{handler}} {\bfseries{resource{\itshape parser}}} {\bfseries{string{\itshape prefix}}} {\itshape parser} The first parameter, parser, is a reference to the X\+ML parser calling the handler. \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+5 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_a18d53a2d0b5857d432cf89a9103870a9}\label{xml_8php_a18d53a2d0b5857d432cf89a9103870a9}} 
+\index{xml.php@{xml.php}!xml\_set\_external\_entity\_ref\_handler@{xml\_set\_external\_entity\_ref\_handler}}
+\index{xml\_set\_external\_entity\_ref\_handler@{xml\_set\_external\_entity\_ref\_handler}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_set\_external\_entity\_ref\_handler()}{xml\_set\_external\_entity\_ref\_handler()}}
+{\footnotesize\ttfamily xml\+\_\+set\+\_\+external\+\_\+entity\+\_\+ref\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{\$parser,  }\item[{callable}]{\$handler }\end{DoxyParamCaption})}
+
+Set up external entity reference handler \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser to set up external entity reference handler function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$handler} & \\
+\hline
+\end{DoxyParams}
+{\itshape handler} is a string containing the name of a function that must exist when {\bfseries{xml\+\_\+parse}} is called for {\itshape parser}. 
+
+The function named by {\itshape handler} must accept five parameters, and should return an integer value.\+If the value returned from the handler is {\bfseries{F\+A\+L\+SE}} (which it will be if no value is returned), the X\+ML parser will stop parsing and {\bfseries{xml\+\_\+get\+\_\+error\+\_\+code}} will return {\bfseries{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+H\+A\+N\+D\+L\+I\+NG}}. {\bfseries{handler}} {\bfseries{resource{\itshape parser}}} {\bfseries{string{\itshape open\+\_\+entity\+\_\+names}}} {\bfseries{string{\itshape base}}} {\bfseries{string{\itshape system\+\_\+id}}} {\bfseries{string{\itshape public\+\_\+id}}} {\itshape parser} The first parameter, parser, is a reference to the X\+ML parser calling the handler. \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_a3f53dc659cbbe8f42a45999dfcb98250}\label{xml_8php_a3f53dc659cbbe8f42a45999dfcb98250}} 
+\index{xml.php@{xml.php}!xml\_set\_notation\_decl\_handler@{xml\_set\_notation\_decl\_handler}}
+\index{xml\_set\_notation\_decl\_handler@{xml\_set\_notation\_decl\_handler}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_set\_notation\_decl\_handler()}{xml\_set\_notation\_decl\_handler()}}
+{\footnotesize\ttfamily xml\+\_\+set\+\_\+notation\+\_\+decl\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{\$parser,  }\item[{callable}]{\$handler }\end{DoxyParamCaption})}
+
+Set up notation declaration handler \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser to set up notation declaration handler function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$handler} & \\
+\hline
+\end{DoxyParams}
+{\itshape handler} is a string containing the name of a function that must exist when {\bfseries{xml\+\_\+parse}} is called for {\itshape parser}. 
+
+The function named by {\itshape handler} must accept five parameters\+: {\bfseries{handler}} {\bfseries{resource{\itshape parser}}} {\bfseries{string{\itshape notation\+\_\+name}}} {\bfseries{string{\itshape base}}} {\bfseries{string{\itshape system\+\_\+id}}} {\bfseries{string{\itshape public\+\_\+id}}} {\itshape parser} The first parameter, parser, is a reference to the X\+ML parser calling the handler. \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_a91c7fe8d903bcad57ff8d982e2d8cf11}\label{xml_8php_a91c7fe8d903bcad57ff8d982e2d8cf11}} 
+\index{xml.php@{xml.php}!xml\_set\_object@{xml\_set\_object}}
+\index{xml\_set\_object@{xml\_set\_object}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_set\_object()}{xml\_set\_object()}}
+{\footnotesize\ttfamily xml\+\_\+set\+\_\+object (\begin{DoxyParamCaption}\item[{}]{\$parser,  }\item[{\&}]{\$object }\end{DoxyParamCaption})}
+
+Use X\+ML Parser within an object \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser to use inside the object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$object} & \\
+\hline
+\end{DoxyParams}
+The object where to use the X\+ML parser. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_a12ae928450ad0d89006370587ceb8312}\label{xml_8php_a12ae928450ad0d89006370587ceb8312}} 
+\index{xml.php@{xml.php}!xml\_set\_processing\_instruction\_handler@{xml\_set\_processing\_instruction\_handler}}
+\index{xml\_set\_processing\_instruction\_handler@{xml\_set\_processing\_instruction\_handler}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_set\_processing\_instruction\_handler()}{xml\_set\_processing\_instruction\_handler()}}
+{\footnotesize\ttfamily xml\+\_\+set\+\_\+processing\+\_\+instruction\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{\$parser,  }\item[{callable}]{\$handler }\end{DoxyParamCaption})}
+
+Set up processing instruction (PI) handler \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser to set up processing instruction (PI) handler function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$handler} & \\
+\hline
+\end{DoxyParams}
+{\itshape handler} is a string containing the name of a function that must exist when {\bfseries{xml\+\_\+parse}} is called for {\itshape parser}. 
+
+The function named by {\itshape handler} must accept three parameters\+: {\bfseries{handler}} {\bfseries{resource{\itshape parser}}} {\bfseries{string{\itshape target}}} {\bfseries{string{\itshape data}}} {\itshape parser} The first parameter, parser, is a reference to the X\+ML parser calling the handler. \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_adf124a6cafefcfce81663442128b5a97}\label{xml_8php_adf124a6cafefcfce81663442128b5a97}} 
+\index{xml.php@{xml.php}!xml\_set\_start\_namespace\_decl\_handler@{xml\_set\_start\_namespace\_decl\_handler}}
+\index{xml\_set\_start\_namespace\_decl\_handler@{xml\_set\_start\_namespace\_decl\_handler}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_set\_start\_namespace\_decl\_handler()}{xml\_set\_start\_namespace\_decl\_handler()}}
+{\footnotesize\ttfamily xml\+\_\+set\+\_\+start\+\_\+namespace\+\_\+decl\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{\$parser,  }\item[{callable}]{\$handler }\end{DoxyParamCaption})}
+
+Set up start namespace declaration handler \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$handler} & \\
+\hline
+\end{DoxyParams}
+{\itshape handler} is a string containing the name of a function that must exist when {\bfseries{xml\+\_\+parse}} is called for {\itshape parser}. 
+
+The function named by {\itshape handler} must accept three parameters, and should return an integer value. If the value returned from the handler is {\bfseries{F\+A\+L\+SE}} (which it will be if no value is returned), the X\+ML parser will stop parsing and {\bfseries{xml\+\_\+get\+\_\+error\+\_\+code}} will return {\bfseries{X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+H\+A\+N\+D\+L\+I\+NG}}. {\bfseries{handler}} {\bfseries{resource{\itshape parser}}} {\bfseries{string{\itshape prefix}}} {\bfseries{string{\itshape uri}}} {\itshape parser} The first parameter, parser, is a reference to the X\+ML parser calling the handler. \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+5 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{xml_8php_a9a13c901042b68d12725e4a8d4fb0f40}\label{xml_8php_a9a13c901042b68d12725e4a8d4fb0f40}} 
+\index{xml.php@{xml.php}!xml\_set\_unparsed\_entity\_decl\_handler@{xml\_set\_unparsed\_entity\_decl\_handler}}
+\index{xml\_set\_unparsed\_entity\_decl\_handler@{xml\_set\_unparsed\_entity\_decl\_handler}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{xml\_set\_unparsed\_entity\_decl\_handler()}{xml\_set\_unparsed\_entity\_decl\_handler()}}
+{\footnotesize\ttfamily xml\+\_\+set\+\_\+unparsed\+\_\+entity\+\_\+decl\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{\$parser,  }\item[{callable}]{\$handler }\end{DoxyParamCaption})}
+
+Set up unparsed entity declaration handler \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$parser }} \mbox{\hyperlink{class_a}{A}} reference to the X\+ML parser to set up unparsed entity declaration handler function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$handler} & \\
+\hline
+\end{DoxyParams}
+{\itshape handler} is a string containing the name of a function that must exist when {\bfseries{xml\+\_\+parse}} is called for {\itshape parser}. 
+
+The function named by {\itshape handler} must accept six parameters\+: {\bfseries{handler}} {\bfseries{resource{\itshape parser}}} {\bfseries{string{\itshape entity\+\_\+name}}} {\bfseries{string{\itshape base}}} {\bfseries{string{\itshape system\+\_\+id}}} {\bfseries{string{\itshape public\+\_\+id}}} {\bfseries{string{\itshape notation\+\_\+name}}} {\itshape parser} The first parameter, parser, is a reference to the X\+ML parser calling the handler. \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{xml_8php_a8ab99805f02d1deb2e7dfee412d38ad7}\label{xml_8php_a8ab99805f02d1deb2e7dfee412d38ad7}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_ASYNC\_ENTITY@{XML\_ERROR\_ASYNC\_ENTITY}}
+\index{XML\_ERROR\_ASYNC\_ENTITY@{XML\_ERROR\_ASYNC\_ENTITY}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_ASYNC\_ENTITY}{XML\_ERROR\_ASYNC\_ENTITY}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+S\+Y\+N\+C\+\_\+\+E\+N\+T\+I\+TY 13}
+
+\mbox{\Hypertarget{xml_8php_a16111bd1f5407a6aa92b50a79148e436}\label{xml_8php_a16111bd1f5407a6aa92b50a79148e436}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_ATTRIBUTE\_EXTERNAL\_ENTITY\_REF@{XML\_ERROR\_ATTRIBUTE\_EXTERNAL\_ENTITY\_REF}}
+\index{XML\_ERROR\_ATTRIBUTE\_EXTERNAL\_ENTITY\_REF@{XML\_ERROR\_ATTRIBUTE\_EXTERNAL\_ENTITY\_REF}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_ATTRIBUTE\_EXTERNAL\_ENTITY\_REF}{XML\_ERROR\_ATTRIBUTE\_EXTERNAL\_ENTITY\_REF}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+R\+EF 16}
+
+\mbox{\Hypertarget{xml_8php_a91bb7f0cf513f43c63254f044f7a7c7a}\label{xml_8php_a91bb7f0cf513f43c63254f044f7a7c7a}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_BAD\_CHAR\_REF@{XML\_ERROR\_BAD\_CHAR\_REF}}
+\index{XML\_ERROR\_BAD\_CHAR\_REF@{XML\_ERROR\_BAD\_CHAR\_REF}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_BAD\_CHAR\_REF}{XML\_ERROR\_BAD\_CHAR\_REF}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+B\+A\+D\+\_\+\+C\+H\+A\+R\+\_\+\+R\+EF 14}
+
+\mbox{\Hypertarget{xml_8php_af0bf394eed187bf1557cfd939210eafd}\label{xml_8php_af0bf394eed187bf1557cfd939210eafd}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_BINARY\_ENTITY\_REF@{XML\_ERROR\_BINARY\_ENTITY\_REF}}
+\index{XML\_ERROR\_BINARY\_ENTITY\_REF@{XML\_ERROR\_BINARY\_ENTITY\_REF}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_BINARY\_ENTITY\_REF}{XML\_ERROR\_BINARY\_ENTITY\_REF}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+B\+I\+N\+A\+R\+Y\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+R\+EF 15}
+
+\mbox{\Hypertarget{xml_8php_ae96769f604827c8d376f922d26499bb2}\label{xml_8php_ae96769f604827c8d376f922d26499bb2}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_DUPLICATE\_ATTRIBUTE@{XML\_ERROR\_DUPLICATE\_ATTRIBUTE}}
+\index{XML\_ERROR\_DUPLICATE\_ATTRIBUTE@{XML\_ERROR\_DUPLICATE\_ATTRIBUTE}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_DUPLICATE\_ATTRIBUTE}{XML\_ERROR\_DUPLICATE\_ATTRIBUTE}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+U\+P\+L\+I\+C\+A\+T\+E\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE 8}
+
+\mbox{\Hypertarget{xml_8php_a94cfbd239a63f9ab484f9ea41e8f1ddb}\label{xml_8php_a94cfbd239a63f9ab484f9ea41e8f1ddb}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_EXTERNAL\_ENTITY\_HANDLING@{XML\_ERROR\_EXTERNAL\_ENTITY\_HANDLING}}
+\index{XML\_ERROR\_EXTERNAL\_ENTITY\_HANDLING@{XML\_ERROR\_EXTERNAL\_ENTITY\_HANDLING}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_EXTERNAL\_ENTITY\_HANDLING}{XML\_ERROR\_EXTERNAL\_ENTITY\_HANDLING}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+H\+A\+N\+D\+L\+I\+NG 21}
+
+\mbox{\Hypertarget{xml_8php_a8ab44f0a24d0e69c0177699698c53f6e}\label{xml_8php_a8ab44f0a24d0e69c0177699698c53f6e}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_INCORRECT\_ENCODING@{XML\_ERROR\_INCORRECT\_ENCODING}}
+\index{XML\_ERROR\_INCORRECT\_ENCODING@{XML\_ERROR\_INCORRECT\_ENCODING}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_INCORRECT\_ENCODING}{XML\_ERROR\_INCORRECT\_ENCODING}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+C\+O\+R\+R\+E\+C\+T\+\_\+\+E\+N\+C\+O\+D\+I\+NG 19}
+
+\mbox{\Hypertarget{xml_8php_ac7578197b3c9c2a3c8ce119ea59a8059}\label{xml_8php_ac7578197b3c9c2a3c8ce119ea59a8059}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_INVALID\_TOKEN@{XML\_ERROR\_INVALID\_TOKEN}}
+\index{XML\_ERROR\_INVALID\_TOKEN@{XML\_ERROR\_INVALID\_TOKEN}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_INVALID\_TOKEN}{XML\_ERROR\_INVALID\_TOKEN}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+O\+K\+EN 4}
+
+\mbox{\Hypertarget{xml_8php_a0ff806e0cea72ab3796f8bd3e27781bd}\label{xml_8php_a0ff806e0cea72ab3796f8bd3e27781bd}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_JUNK\_AFTER\_DOC\_ELEMENT@{XML\_ERROR\_JUNK\_AFTER\_DOC\_ELEMENT}}
+\index{XML\_ERROR\_JUNK\_AFTER\_DOC\_ELEMENT@{XML\_ERROR\_JUNK\_AFTER\_DOC\_ELEMENT}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_JUNK\_AFTER\_DOC\_ELEMENT}{XML\_ERROR\_JUNK\_AFTER\_DOC\_ELEMENT}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+J\+U\+N\+K\+\_\+\+A\+F\+T\+E\+R\+\_\+\+D\+O\+C\+\_\+\+E\+L\+E\+M\+E\+NT 9}
+
+\mbox{\Hypertarget{xml_8php_a0fc88083de39c43348dbdaf7d438c045}\label{xml_8php_a0fc88083de39c43348dbdaf7d438c045}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_MISPLACED\_XML\_PI@{XML\_ERROR\_MISPLACED\_XML\_PI}}
+\index{XML\_ERROR\_MISPLACED\_XML\_PI@{XML\_ERROR\_MISPLACED\_XML\_PI}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_MISPLACED\_XML\_PI}{XML\_ERROR\_MISPLACED\_XML\_PI}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+M\+I\+S\+P\+L\+A\+C\+E\+D\+\_\+\+X\+M\+L\+\_\+\+PI 17}
+
+\mbox{\Hypertarget{xml_8php_a38e14d8ba0bf0895dc4f5e0fbc61e88b}\label{xml_8php_a38e14d8ba0bf0895dc4f5e0fbc61e88b}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_NO\_ELEMENTS@{XML\_ERROR\_NO\_ELEMENTS}}
+\index{XML\_ERROR\_NO\_ELEMENTS@{XML\_ERROR\_NO\_ELEMENTS}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_NO\_ELEMENTS}{XML\_ERROR\_NO\_ELEMENTS}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+\_\+\+E\+L\+E\+M\+E\+N\+TS 3}
+
+\mbox{\Hypertarget{xml_8php_ae45d4798b43dcf75376b69946ef066a2}\label{xml_8php_ae45d4798b43dcf75376b69946ef066a2}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_NO\_MEMORY@{XML\_ERROR\_NO\_MEMORY}}
+\index{XML\_ERROR\_NO\_MEMORY@{XML\_ERROR\_NO\_MEMORY}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_NO\_MEMORY}{XML\_ERROR\_NO\_MEMORY}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+\_\+\+M\+E\+M\+O\+RY 1}
+
+\mbox{\Hypertarget{xml_8php_a6b7c18864f76047b17ff4725039861be}\label{xml_8php_a6b7c18864f76047b17ff4725039861be}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_NONE@{XML\_ERROR\_NONE}}
+\index{XML\_ERROR\_NONE@{XML\_ERROR\_NONE}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_NONE}{XML\_ERROR\_NONE}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+NE 0}
+
+\mbox{\Hypertarget{xml_8php_a0bdb81b1a116939cf6ee8d0aad01ddfe}\label{xml_8php_a0bdb81b1a116939cf6ee8d0aad01ddfe}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_PARAM\_ENTITY\_REF@{XML\_ERROR\_PARAM\_ENTITY\_REF}}
+\index{XML\_ERROR\_PARAM\_ENTITY\_REF@{XML\_ERROR\_PARAM\_ENTITY\_REF}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_PARAM\_ENTITY\_REF}{XML\_ERROR\_PARAM\_ENTITY\_REF}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+R\+EF 10}
+
+\mbox{\Hypertarget{xml_8php_a6ba286b087920dce00e356375372cc6a}\label{xml_8php_a6ba286b087920dce00e356375372cc6a}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_PARTIAL\_CHAR@{XML\_ERROR\_PARTIAL\_CHAR}}
+\index{XML\_ERROR\_PARTIAL\_CHAR@{XML\_ERROR\_PARTIAL\_CHAR}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_PARTIAL\_CHAR}{XML\_ERROR\_PARTIAL\_CHAR}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+P\+A\+R\+T\+I\+A\+L\+\_\+\+C\+H\+AR 6}
+
+\mbox{\Hypertarget{xml_8php_a0d624864cdc571bd3bd262a8adca0695}\label{xml_8php_a0d624864cdc571bd3bd262a8adca0695}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_RECURSIVE\_ENTITY\_REF@{XML\_ERROR\_RECURSIVE\_ENTITY\_REF}}
+\index{XML\_ERROR\_RECURSIVE\_ENTITY\_REF@{XML\_ERROR\_RECURSIVE\_ENTITY\_REF}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_RECURSIVE\_ENTITY\_REF}{XML\_ERROR\_RECURSIVE\_ENTITY\_REF}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+R\+EF 12}
+
+\mbox{\Hypertarget{xml_8php_a68299c320eb963badb149ab63ed8d67e}\label{xml_8php_a68299c320eb963badb149ab63ed8d67e}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_SYNTAX@{XML\_ERROR\_SYNTAX}}
+\index{XML\_ERROR\_SYNTAX@{XML\_ERROR\_SYNTAX}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_SYNTAX}{XML\_ERROR\_SYNTAX}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+Y\+N\+T\+AX 2}
+
+\mbox{\Hypertarget{xml_8php_ae02eb30d05f0936176f8939581fca112}\label{xml_8php_ae02eb30d05f0936176f8939581fca112}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_TAG\_MISMATCH@{XML\_ERROR\_TAG\_MISMATCH}}
+\index{XML\_ERROR\_TAG\_MISMATCH@{XML\_ERROR\_TAG\_MISMATCH}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_TAG\_MISMATCH}{XML\_ERROR\_TAG\_MISMATCH}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+T\+A\+G\+\_\+\+M\+I\+S\+M\+A\+T\+CH 7}
+
+\mbox{\Hypertarget{xml_8php_aa2cadc5a74354f226050f045a596247a}\label{xml_8php_aa2cadc5a74354f226050f045a596247a}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_UNCLOSED\_CDATA\_SECTION@{XML\_ERROR\_UNCLOSED\_CDATA\_SECTION}}
+\index{XML\_ERROR\_UNCLOSED\_CDATA\_SECTION@{XML\_ERROR\_UNCLOSED\_CDATA\_SECTION}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_UNCLOSED\_CDATA\_SECTION}{XML\_ERROR\_UNCLOSED\_CDATA\_SECTION}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+N\+C\+L\+O\+S\+E\+D\+\_\+\+C\+D\+A\+T\+A\+\_\+\+S\+E\+C\+T\+I\+ON 20}
+
+\mbox{\Hypertarget{xml_8php_ae2da275afff676d0b758a342acc26f65}\label{xml_8php_ae2da275afff676d0b758a342acc26f65}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_UNCLOSED\_TOKEN@{XML\_ERROR\_UNCLOSED\_TOKEN}}
+\index{XML\_ERROR\_UNCLOSED\_TOKEN@{XML\_ERROR\_UNCLOSED\_TOKEN}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_UNCLOSED\_TOKEN}{XML\_ERROR\_UNCLOSED\_TOKEN}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+N\+C\+L\+O\+S\+E\+D\+\_\+\+T\+O\+K\+EN 5}
+
+\mbox{\Hypertarget{xml_8php_ad77cadc046feb33a4a0c94ad25ae6d1c}\label{xml_8php_ad77cadc046feb33a4a0c94ad25ae6d1c}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_UNDEFINED\_ENTITY@{XML\_ERROR\_UNDEFINED\_ENTITY}}
+\index{XML\_ERROR\_UNDEFINED\_ENTITY@{XML\_ERROR\_UNDEFINED\_ENTITY}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_UNDEFINED\_ENTITY}{XML\_ERROR\_UNDEFINED\_ENTITY}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+N\+D\+E\+F\+I\+N\+E\+D\+\_\+\+E\+N\+T\+I\+TY 11}
+
+\mbox{\Hypertarget{xml_8php_a04d0f66ce39b63b1ee95d33c2274e1e4}\label{xml_8php_a04d0f66ce39b63b1ee95d33c2274e1e4}} 
+\index{xml.php@{xml.php}!XML\_ERROR\_UNKNOWN\_ENCODING@{XML\_ERROR\_UNKNOWN\_ENCODING}}
+\index{XML\_ERROR\_UNKNOWN\_ENCODING@{XML\_ERROR\_UNKNOWN\_ENCODING}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_ERROR\_UNKNOWN\_ENCODING}{XML\_ERROR\_UNKNOWN\_ENCODING}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+N\+C\+O\+D\+I\+NG 18}
+
+\mbox{\Hypertarget{xml_8php_a0b28ddedab806b5714fb812c09253307}\label{xml_8php_a0b28ddedab806b5714fb812c09253307}} 
+\index{xml.php@{xml.php}!XML\_OPTION\_CASE\_FOLDING@{XML\_OPTION\_CASE\_FOLDING}}
+\index{XML\_OPTION\_CASE\_FOLDING@{XML\_OPTION\_CASE\_FOLDING}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_OPTION\_CASE\_FOLDING}{XML\_OPTION\_CASE\_FOLDING}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+C\+A\+S\+E\+\_\+\+F\+O\+L\+D\+I\+NG 1}
+
+\mbox{\Hypertarget{xml_8php_abec10d6d3ab7645cb5e1dcb48c0b285f}\label{xml_8php_abec10d6d3ab7645cb5e1dcb48c0b285f}} 
+\index{xml.php@{xml.php}!XML\_OPTION\_SKIP\_TAGSTART@{XML\_OPTION\_SKIP\_TAGSTART}}
+\index{XML\_OPTION\_SKIP\_TAGSTART@{XML\_OPTION\_SKIP\_TAGSTART}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_OPTION\_SKIP\_TAGSTART}{XML\_OPTION\_SKIP\_TAGSTART}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+S\+K\+I\+P\+\_\+\+T\+A\+G\+S\+T\+A\+RT 3}
+
+\mbox{\Hypertarget{xml_8php_aca59baf40b2a2ebdac95061f8897cd9f}\label{xml_8php_aca59baf40b2a2ebdac95061f8897cd9f}} 
+\index{xml.php@{xml.php}!XML\_OPTION\_SKIP\_WHITE@{XML\_OPTION\_SKIP\_WHITE}}
+\index{XML\_OPTION\_SKIP\_WHITE@{XML\_OPTION\_SKIP\_WHITE}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_OPTION\_SKIP\_WHITE}{XML\_OPTION\_SKIP\_WHITE}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+S\+K\+I\+P\+\_\+\+W\+H\+I\+TE 4}
+
+\mbox{\Hypertarget{xml_8php_a096c18c9cfa078433146567075334271}\label{xml_8php_a096c18c9cfa078433146567075334271}} 
+\index{xml.php@{xml.php}!XML\_OPTION\_TARGET\_ENCODING@{XML\_OPTION\_TARGET\_ENCODING}}
+\index{XML\_OPTION\_TARGET\_ENCODING@{XML\_OPTION\_TARGET\_ENCODING}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_OPTION\_TARGET\_ENCODING}{XML\_OPTION\_TARGET\_ENCODING}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+E\+N\+C\+O\+D\+I\+NG 2}
+
+\mbox{\Hypertarget{xml_8php_a90efc78e9d7785e94cad3390afe8df86}\label{xml_8php_a90efc78e9d7785e94cad3390afe8df86}} 
+\index{xml.php@{xml.php}!XML\_SAX\_IMPL@{XML\_SAX\_IMPL}}
+\index{XML\_SAX\_IMPL@{XML\_SAX\_IMPL}!xml.php@{xml.php}}
+\doxysubsubsection{\texorpdfstring{XML\_SAX\_IMPL}{XML\_SAX\_IMPL}}
+{\footnotesize\ttfamily const X\+M\+L\+\_\+\+S\+A\+X\+\_\+\+I\+M\+PL \char`\"{}libxml\char`\"{}}
+
+Holds the S\+AX implementation method. Can be libxml or expat. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/xml.\+constants.\+php}}

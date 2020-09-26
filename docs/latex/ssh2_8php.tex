@@ -1,0 +1,1174 @@
+\hypertarget{ssh2_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/ssh2/ssh2.php File Reference}
+\label{ssh2_8php}\index{vendor/jetbrains/phpstorm-\/stubs/ssh2/ssh2.php@{vendor/jetbrains/phpstorm-\/stubs/ssh2/ssh2.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ssh2_8php_a659ff819ba4ef537e79b441b1f78a192}{ssh2\+\_\+connect}} (\$host, \$port=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$methods=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$callbacks=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{ssh2_8php_a03c6205a5820690574db825205bb5f13}{ssh2\+\_\+disconnect}} (\$session)
+\item 
+\mbox{\hyperlink{ssh2_8php_a2eb776556847766754b07ac83cdf9e75}{ssh2\+\_\+methods\+\_\+negotiated}} (\$session)
+\item 
+\mbox{\hyperlink{ssh2_8php_ab4f80a9dd88c35037e066d81f77d1498}{ssh2\+\_\+fingerprint}} (\$session, \$flags=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{ssh2_8php_aec67ae6759fcd935b84ffc4eebe11810}{ssh2\+\_\+auth\+\_\+none}} (\$session, \$username)
+\item 
+\mbox{\hyperlink{ssh2_8php_a65923550880df97def8285b336ed125b}{ssh2\+\_\+auth\+\_\+password}} (\$session, \$username, \$password)
+\item 
+\mbox{\hyperlink{ssh2_8php_aa599fabde132cf9438f11113546277f1}{ssh2\+\_\+auth\+\_\+pubkey\+\_\+file}} (\$session, \$username, \$pubkeyfile, \$privkeyfile, \$passphrase=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{ssh2_8php_a1ab77b2cf5d338345cc959e678026d11}{ssh2\+\_\+auth\+\_\+hostbased\+\_\+file}} (\$session, \$username, \$hostname, \$pubkeyfile, \$privkeyfile, \$passphrase=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$local\+\_\+username=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{ssh2_8php_ae08f3f0a3b27658cd2659165fbcd25dc}{ssh2\+\_\+forward\+\_\+listen}} ()
+\item 
+\mbox{\hyperlink{ssh2_8php_a5aab49a23715f108568f7de2bcffcd78}{ssh2\+\_\+forward\+\_\+accept}} ()
+\item 
+\mbox{\hyperlink{ssh2_8php_aacfa59bbe0354852576e41b0b95ccd67}{ssh2\+\_\+shell}} (\$session, \$term\+\_\+type=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$env=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$width=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$height=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$width\+\_\+height\+\_\+type=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{ssh2_8php_a1ba225de9481ee0c3ddd07b7c1586e53}{ssh2\+\_\+exec}} (\$session, \$command, \$pty=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$env=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$width=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$height=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$width\+\_\+height\+\_\+type=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{ssh2_8php_af5f2de698dc0afc5f1e08cb1ecb08a1f}{ssh2\+\_\+tunnel}} (\$session, \$host, \$port)
+\item 
+\mbox{\hyperlink{ssh2_8php_a18d3411e6b7b72b8296b09d979ca7ad9}{ssh2\+\_\+scp\+\_\+recv}} (\$session, \$remote\+\_\+file, \$local\+\_\+file)
+\item 
+\mbox{\hyperlink{ssh2_8php_aeb5f30d302767e26b0d174cb234b7464}{ssh2\+\_\+scp\+\_\+send}} (\$session, \$local\+\_\+file, \$remote\+\_\+file, \$create\+\_\+mode=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{ssh2_8php_ae583d9b0df96304983b7dc7a7e3eb610}{ssh2\+\_\+fetch\+\_\+stream}} (\$channel, \$streamid)
+\item 
+\mbox{\hyperlink{ssh2_8php_a885285cf9b34f105c51bdac8c12e7cf7}{ssh2\+\_\+poll}} (\&\$var1)
+\item 
+\mbox{\hyperlink{ssh2_8php_a35cde40fe9cb3b370b7831af32007d9f}{ssh2\+\_\+sftp}} (\$session)
+\item 
+\mbox{\hyperlink{ssh2_8php_aa20753267860cbc01db0201c947e307b}{ssh2\+\_\+sftp\+\_\+rename}} (\$sftp, \$from, \$to)
+\item 
+\mbox{\hyperlink{ssh2_8php_a8a0a40c192a65b09e2b1766acdf33c30}{ssh2\+\_\+sftp\+\_\+unlink}} (\$sftp, \$filename)
+\item 
+\mbox{\hyperlink{ssh2_8php_ab92a2c04d4278cf08e5982e9ef5e4213}{ssh2\+\_\+sftp\+\_\+mkdir}} (\$sftp, \$\mbox{\hyperlink{standard__1_8php_aaee8f3bac8e7a477a61af1d8d1faf560}{dirname}}, \$mode=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$recursive=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{ssh2_8php_a10b03680e30dba512a4f5299dc7bd7e5}{ssh2\+\_\+sftp\+\_\+rmdir}} (\$sftp, \$\mbox{\hyperlink{standard__1_8php_aaee8f3bac8e7a477a61af1d8d1faf560}{dirname}})
+\item 
+\mbox{\hyperlink{ssh2_8php_a2cfc033cda74a32da74bb7ff429c7f85}{ssh2\+\_\+sftp\+\_\+stat}} (\$sftp, \$path)
+\item 
+\mbox{\hyperlink{ssh2_8php_a7ca7359551d897b725307dd6697291a3}{ssh2\+\_\+sftp\+\_\+lstat}} (\$sftp, \$path)
+\item 
+\mbox{\hyperlink{ssh2_8php_a53f5004527d394b7d224757f724f9428}{ssh2\+\_\+sftp\+\_\+symlink}} (\$sftp, \$target, \$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}})
+\item 
+\mbox{\hyperlink{ssh2_8php_a43e6aabe76376467dc4d30fec1eb1bca}{ssh2\+\_\+sftp\+\_\+readlink}} (\$sftp, \$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}})
+\item 
+\mbox{\hyperlink{ssh2_8php_ac37c5468af4faabe131b7e7a35c576cc}{ssh2\+\_\+sftp\+\_\+realpath}} (\$sftp, \$filename)
+\item 
+\mbox{\hyperlink{ssh2_8php_a2ac77e1b3682d0513b83ac6b2b92a34e}{ssh2\+\_\+publickey\+\_\+init}} (\$session)
+\item 
+\mbox{\hyperlink{ssh2_8php_a1e675af1d5ba02833f4f860ad1ba7bbc}{ssh2\+\_\+publickey\+\_\+add}} (\$pkey, \$algoname, \$blob, \$overwrite=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \$attributes=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{ssh2_8php_aa99491e382c2996a96c523e09fc26ea6}{ssh2\+\_\+publickey\+\_\+remove}} (\$pkey, \$algoname, \$blob)
+\item 
+\mbox{\hyperlink{ssh2_8php_a7edeccc0abffd55b6c9e2c9c08ffcb1c}{ssh2\+\_\+publickey\+\_\+list}} (\$pkey)
+\item 
+\mbox{\hyperlink{ssh2_8php_a528b92c91258e57cf12f7cad4e7ca31d}{ssh2\+\_\+sftp\+\_\+chmod}} (\$sftp, \$filename, \$mode)
+\item 
+\mbox{\hyperlink{ssh2_8php_ab44411ab65c3b2aa9c548bce0f0e90ec}{ssh2\+\_\+auth\+\_\+agent}} (\$session, \$username)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{ssh2_8php_aff0e2ba261b26e02d9e0e84932b96665}{S\+S\+H2\+\_\+\+F\+I\+N\+G\+E\+R\+P\+R\+I\+N\+T\+\_\+\+M\+D5}} 0
+\item 
+const \mbox{\hyperlink{ssh2_8php_a9dda9b278db536596d0eb36f08441e12}{S\+S\+H2\+\_\+\+F\+I\+N\+G\+E\+R\+P\+R\+I\+N\+T\+\_\+\+S\+H\+A1}} 1
+\item 
+const \mbox{\hyperlink{ssh2_8php_a991352b6f1a41782c7ae55188e9cf049}{S\+S\+H2\+\_\+\+F\+I\+N\+G\+E\+R\+P\+R\+I\+N\+T\+\_\+\+H\+EX}} 0
+\item 
+const \mbox{\hyperlink{ssh2_8php_a0290e5f08a6f6dd091190efbbb67efa5}{S\+S\+H2\+\_\+\+F\+I\+N\+G\+E\+R\+P\+R\+I\+N\+T\+\_\+\+R\+AW}} 2
+\item 
+const \mbox{\hyperlink{ssh2_8php_a25fa2f7ebbe9d66d0e99352329d92a56}{S\+S\+H2\+\_\+\+T\+E\+R\+M\+\_\+\+U\+N\+I\+T\+\_\+\+C\+H\+A\+RS}} 0
+\item 
+const \mbox{\hyperlink{ssh2_8php_a579e687a150896169ebd71dcfc070b85}{S\+S\+H2\+\_\+\+T\+E\+R\+M\+\_\+\+U\+N\+I\+T\+\_\+\+P\+I\+X\+E\+LS}} 1
+\item 
+const \mbox{\hyperlink{ssh2_8php_a742f6c70b2c8c2dea1cce235c1723715}{S\+S\+H2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+R\+M\+I\+N\+AL}} \char`\"{}vanilla\char`\"{}
+\item 
+const \mbox{\hyperlink{ssh2_8php_a10eef9ef922916563e0fd01675855cbf}{S\+S\+H2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+R\+M\+\_\+\+W\+I\+D\+TH}} 80
+\item 
+const \mbox{\hyperlink{ssh2_8php_a06f37d4afae0723422682b1af178a5f4}{S\+S\+H2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+R\+M\+\_\+\+H\+E\+I\+G\+HT}} 25
+\item 
+const \mbox{\hyperlink{ssh2_8php_a11f466b0187fd4f0561f9e39a15e77d1}{S\+S\+H2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+R\+M\+\_\+\+U\+N\+IT}} 0
+\item 
+const \mbox{\hyperlink{ssh2_8php_ae7c9b057cfed3d04943f209d1a348b8d}{S\+S\+H2\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+D\+IO}} 0
+\item 
+const \mbox{\hyperlink{ssh2_8php_a38aee0abc75f66a89cacbc146a5a2ccc}{S\+S\+H2\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+D\+E\+RR}} 1
+\item 
+const \mbox{\hyperlink{ssh2_8php_a748833152acb298e0dae566fb77fff63}{S\+S\+H2\+\_\+\+P\+O\+L\+L\+IN}} 1
+\item 
+const \mbox{\hyperlink{ssh2_8php_a8649b7fa00cd6411ef3bb417a32695c5}{S\+S\+H2\+\_\+\+P\+O\+L\+L\+E\+XT}} 2
+\item 
+const \mbox{\hyperlink{ssh2_8php_af128d750792bcd0e0517bbbde1a67689}{S\+S\+H2\+\_\+\+P\+O\+L\+L\+O\+UT}} 4
+\item 
+const \mbox{\hyperlink{ssh2_8php_acdb574c25572ff991e1119892d5d2dcb}{S\+S\+H2\+\_\+\+P\+O\+L\+L\+E\+RR}} 8
+\item 
+const \mbox{\hyperlink{ssh2_8php_af8a1f6674a8c0160ebe65291f2012eed}{S\+S\+H2\+\_\+\+P\+O\+L\+L\+H\+UP}} 16
+\item 
+const \mbox{\hyperlink{ssh2_8php_aa57cbe8adc6e54e14d7095f554772004}{S\+S\+H2\+\_\+\+P\+O\+L\+L\+N\+V\+AL}} 32
+\item 
+const \mbox{\hyperlink{ssh2_8php_a8fcd150f081baaf40ec5ae1e0e19c017}{S\+S\+H2\+\_\+\+P\+O\+L\+L\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+C\+L\+O\+S\+ED}} 16
+\item 
+const \mbox{\hyperlink{ssh2_8php_a4666094a44679a6c0fa80adaedcb1a33}{S\+S\+H2\+\_\+\+P\+O\+L\+L\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+C\+L\+O\+S\+ED}} 128
+\item 
+const \mbox{\hyperlink{ssh2_8php_aaaf3f3643ecf05328b8c0be63e12d726}{S\+S\+H2\+\_\+\+P\+O\+L\+L\+\_\+\+L\+I\+S\+T\+E\+N\+E\+R\+\_\+\+C\+L\+O\+S\+ED}} 128
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ssh2_8php_ab44411ab65c3b2aa9c548bce0f0e90ec}\label{ssh2_8php_ab44411ab65c3b2aa9c548bce0f0e90ec}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_auth\_agent@{ssh2\_auth\_agent}}
+\index{ssh2\_auth\_agent@{ssh2\_auth\_agent}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_auth\_agent()}{ssh2\_auth\_agent()}}
+{\footnotesize\ttfamily ssh2\+\_\+auth\+\_\+agent (\begin{DoxyParamCaption}\item[{}]{\$session,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+12)~\newline
+ ssh2\+\_\+auth\+\_\+agent — Authenticate over S\+SH using the ssh agent \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/function.\+ssh2-\/auth-\/agent.\+php}} Authenticate over S\+SH using the ssh agent 
+
+Note\+: The \mbox{\hyperlink{ssh2_8php_ab44411ab65c3b2aa9c548bce0f0e90ec}{ssh2\+\_\+auth\+\_\+agent()}} function will only be available when the ssh2 extension is compiled with libssh $>$= 1.\+2.\+3. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$session} & \\
+\hline
+\end{DoxyParams}
+An S\+SH connection link identifier, obtained from a call to \mbox{\hyperlink{ssh2_8php_a659ff819ba4ef537e79b441b1f78a192}{ssh2\+\_\+connect()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+\end{DoxyParams}
+Remote user name.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+Returns T\+R\+UE on success or F\+A\+L\+SE on failure.\mbox{\Hypertarget{ssh2_8php_a1ab77b2cf5d338345cc959e678026d11}\label{ssh2_8php_a1ab77b2cf5d338345cc959e678026d11}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_auth\_hostbased\_file@{ssh2\_auth\_hostbased\_file}}
+\index{ssh2\_auth\_hostbased\_file@{ssh2\_auth\_hostbased\_file}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_auth\_hostbased\_file()}{ssh2\_auth\_hostbased\_file()}}
+{\footnotesize\ttfamily ssh2\+\_\+auth\+\_\+hostbased\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$session,  }\item[{}]{\$username,  }\item[{}]{\$hostname,  }\item[{}]{\$pubkeyfile,  }\item[{}]{\$privkeyfile,  }\item[{}]{\$passphrase = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$local\+\_\+username = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Authenticate using a public hostkey \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$session }} An S\+SH connection link identifier, obtained from a call to ssh2\+\_\+connect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$hostname} & \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pubkeyfile} & \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$privkeyfile} & \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$passphrase} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If privkeyfile is encrypted (which it should be), the passphrase must be provided. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$local\+\_\+username} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If local\+\_\+username is omitted, then the value for username will be used for it. 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_aec67ae6759fcd935b84ffc4eebe11810}\label{ssh2_8php_aec67ae6759fcd935b84ffc4eebe11810}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_auth\_none@{ssh2\_auth\_none}}
+\index{ssh2\_auth\_none@{ssh2\_auth\_none}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_auth\_none()}{ssh2\_auth\_none()}}
+{\footnotesize\ttfamily ssh2\+\_\+auth\+\_\+none (\begin{DoxyParamCaption}\item[{}]{\$session,  }\item[{}]{\$username }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Authenticate as \char`\"{}none\char`\"{} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$session }} An S\+SH connection link identifier, obtained from a call to ssh2\+\_\+connect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+\end{DoxyParams}
+Remote user name. 
+
+\begin{DoxyReturn}{Returns}
+mixed true if the server does accept \char`\"{}none\char`\"{} as an authentication method, or an array of accepted authentication methods on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a65923550880df97def8285b336ed125b}\label{ssh2_8php_a65923550880df97def8285b336ed125b}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_auth\_password@{ssh2\_auth\_password}}
+\index{ssh2\_auth\_password@{ssh2\_auth\_password}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_auth\_password()}{ssh2\_auth\_password()}}
+{\footnotesize\ttfamily ssh2\+\_\+auth\+\_\+password (\begin{DoxyParamCaption}\item[{}]{\$session,  }\item[{}]{\$username,  }\item[{}]{\$password }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Authenticate over S\+SH using a plain password \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$session }} An S\+SH connection link identifier, obtained from a call to ssh2\+\_\+connect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+\end{DoxyParams}
+Remote user name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+Password for username 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_aa599fabde132cf9438f11113546277f1}\label{ssh2_8php_aa599fabde132cf9438f11113546277f1}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_auth\_pubkey\_file@{ssh2\_auth\_pubkey\_file}}
+\index{ssh2\_auth\_pubkey\_file@{ssh2\_auth\_pubkey\_file}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_auth\_pubkey\_file()}{ssh2\_auth\_pubkey\_file()}}
+{\footnotesize\ttfamily ssh2\+\_\+auth\+\_\+pubkey\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$session,  }\item[{}]{\$username,  }\item[{}]{\$pubkeyfile,  }\item[{}]{\$privkeyfile,  }\item[{}]{\$passphrase = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Authenticate using a public key \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$session }} An S\+SH connection link identifier, obtained from a call to ssh2\+\_\+connect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pubkeyfile} & \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$privkeyfile} & \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$passphrase} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If privkeyfile is encrypted (which it should be), the passphrase must be provided. 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a659ff819ba4ef537e79b441b1f78a192}\label{ssh2_8php_a659ff819ba4ef537e79b441b1f78a192}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_connect@{ssh2\_connect}}
+\index{ssh2\_connect@{ssh2\_connect}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_connect()}{ssh2\_connect()}}
+{\footnotesize\ttfamily ssh2\+\_\+connect (\begin{DoxyParamCaption}\item[{}]{\$host,  }\item[{}]{\$port = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$methods = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$callbacks = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Connect to an S\+SH server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$host }} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$port} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$methods} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+methods may be an associative array with up to four parameters as described below. 
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+may be an associative array with any or all of the following parameters. 
+
+Index 
+
+Meaning 
+
+Supported Values$\ast$  
+
+kex 
+
+List of key exchange methods to advertise, comma separated in order of preference.  
+
+diffie-\/hellman-\/group1-\/sha1, diffie-\/hellman-\/group14-\/sha1, and diffie-\/hellman-\/group-\/exchange-\/sha1   
+
+hostkey 
+
+List of hostkey methods to advertise, come separated in order of preference.  
+
+ssh-\/rsa and ssh-\/dss   
+
+client\+\_\+to\+\_\+server 
+
+Associative array containing crypt, compression, and message authentication code (M\+AC) method preferences for messages sent from client to server.   
+
+server\+\_\+to\+\_\+client 
+
+Associative array containing crypt, compression, and message authentication code (M\+AC) method preferences for messages sent from server to client.   
+
+
+\begin{DoxyItemize}
+\item -\/ Supported Values are dependent on methods supported by underlying library. See libssh2 documentation for additional information. 
+\end{DoxyItemize}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+and server\+\_\+to\+\_\+client may be an associative array with any or all of the following parameters. 
+
+Index 
+
+Meaning 
+
+Supported Values$\ast$  
+
+crypt 
+
+List of crypto methods to advertise, comma separated in order of preference. 
+
+\href{mailto:rijndael-cbc@lysator.liu.se}{\texttt{ rijndael-\/cbc@lysator.\+liu.\+se}}, aes256-\/cbc, aes192-\/cbc, aes128-\/cbc, 3des-\/cbc, blowfish-\/cbc, cast128-\/cbc, arcfour, and none$\ast$$\ast$   
+
+comp 
+
+List of compression methods to advertise, comma separated in order of preference. 
+
+zlib and none   
+
+mac 
+
+List of M\+AC methods to advertise, come separated in order of preference. 
+
+hmac-\/sha1, hmac-\/sha1-\/96, hmac-\/ripemd160, \href{mailto:hmac-ripemd160@openssh.com}{\texttt{ hmac-\/ripemd160@openssh.\+com}}, and none$\ast$$\ast$   
+
+Crypt and M\+AC method \char`\"{}none\char`\"{} 
+
+For security reasons, none is disabled by the underlying libssh2 library unless explicitly enabled during build time by using the appropriate ./configure options. See documentation for the underlying library for more information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$callbacks} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+callbacks may be an associative array with any or all of the following parameters. \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+parameters 
+
+Index 
+
+Meaning 
+
+Prototype  
+
+ignore 
+
+Name of function to call when an S\+S\+H2\+\_\+\+M\+S\+G\+\_\+\+I\+G\+N\+O\+RE packet is received  
+
+void ignore\+\_\+cb(\$message)  
+
+debug 
+
+Name of function to call when an S\+S\+H2\+\_\+\+M\+S\+G\+\_\+\+D\+E\+B\+UG packet is received  
+
+void debug\+\_\+cb(\$message, \$language, \$always\+\_\+display)  
+
+macerror 
+
+Name of function to call when a packet is received but the message authentication code failed. If the callback returns true, the mismatch will be ignored, otherwise the connection will be terminated.  
+
+bool macerror\+\_\+cb(\$packet)  
+
+disconnect 
+
+Name of function to call when an S\+S\+H2\+\_\+\+M\+S\+G\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+CT packet is received  
+
+void disconnect\+\_\+cb(\$reason, \$message, \$language)  
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false a resource on success, or false on error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a03c6205a5820690574db825205bb5f13}\label{ssh2_8php_a03c6205a5820690574db825205bb5f13}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_disconnect@{ssh2\_disconnect}}
+\index{ssh2\_disconnect@{ssh2\_disconnect}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_disconnect()}{ssh2\_disconnect()}}
+{\footnotesize\ttfamily ssh2\+\_\+disconnect (\begin{DoxyParamCaption}\item[{}]{\$session }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 1.\+0)~\newline
+ Close a connection to a remote S\+SH server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$session }} An S\+SH connection link identifier, obtained from a call to ssh2\+\_\+connect. 
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a1ba225de9481ee0c3ddd07b7c1586e53}\label{ssh2_8php_a1ba225de9481ee0c3ddd07b7c1586e53}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_exec@{ssh2\_exec}}
+\index{ssh2\_exec@{ssh2\_exec}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_exec()}{ssh2\_exec()}}
+{\footnotesize\ttfamily ssh2\+\_\+exec (\begin{DoxyParamCaption}\item[{}]{\$session,  }\item[{}]{\$command,  }\item[{}]{\$pty = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$env = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$width = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$height = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$width\+\_\+height\+\_\+type = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Execute a command on a remote server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$session }} An S\+SH connection link identifier, obtained from a call to ssh2\+\_\+connect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pty} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$env} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+env may be passed as an associative array of name/value pairs to set in the target environment. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$width} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Width of the virtual terminal. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$height} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Height of the virtual terminal. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$width\+\_\+height\+\_\+type} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+width\+\_\+height\+\_\+type should be one of S\+S\+H2\+\_\+\+T\+E\+R\+M\+\_\+\+U\+N\+I\+T\+\_\+\+C\+H\+A\+RS or S\+S\+H2\+\_\+\+T\+E\+R\+M\+\_\+\+U\+N\+I\+T\+\_\+\+P\+I\+X\+E\+LS. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false a stream on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_ae583d9b0df96304983b7dc7a7e3eb610}\label{ssh2_8php_ae583d9b0df96304983b7dc7a7e3eb610}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_fetch\_stream@{ssh2\_fetch\_stream}}
+\index{ssh2\_fetch\_stream@{ssh2\_fetch\_stream}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_fetch\_stream()}{ssh2\_fetch\_stream()}}
+{\footnotesize\ttfamily ssh2\+\_\+fetch\+\_\+stream (\begin{DoxyParamCaption}\item[{}]{\$channel,  }\item[{}]{\$streamid }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Fetch an extended data stream \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$channel }} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$streamid} & \\
+\hline
+\end{DoxyParams}
+An S\+S\+H2 channel stream. 
+
+\begin{DoxyReturn}{Returns}
+resource the requested stream resource. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_ab4f80a9dd88c35037e066d81f77d1498}\label{ssh2_8php_ab4f80a9dd88c35037e066d81f77d1498}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_fingerprint@{ssh2\_fingerprint}}
+\index{ssh2\_fingerprint@{ssh2\_fingerprint}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_fingerprint()}{ssh2\_fingerprint()}}
+{\footnotesize\ttfamily ssh2\+\_\+fingerprint (\begin{DoxyParamCaption}\item[{}]{\$session,  }\item[{}]{\$flags = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Retrieve fingerprint of remote server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$session }} An S\+SH connection link identifier, obtained from a call to ssh2\+\_\+connect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+flags may be either of S\+S\+H2\+\_\+\+F\+I\+N\+G\+E\+R\+P\+R\+I\+N\+T\+\_\+\+M\+D5 or S\+S\+H2\+\_\+\+F\+I\+N\+G\+E\+R\+P\+R\+I\+N\+T\+\_\+\+S\+H\+A1 logically O\+Red with S\+S\+H2\+\_\+\+F\+I\+N\+G\+E\+R\+P\+R\+I\+N\+T\+\_\+\+H\+EX or S\+S\+H2\+\_\+\+F\+I\+N\+G\+E\+R\+P\+R\+I\+N\+T\+\_\+\+R\+AW. 
+
+\begin{DoxyReturn}{Returns}
+string the hostkey hash as a string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a5aab49a23715f108568f7de2bcffcd78}\label{ssh2_8php_a5aab49a23715f108568f7de2bcffcd78}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_forward\_accept@{ssh2\_forward\_accept}}
+\index{ssh2\_forward\_accept@{ssh2\_forward\_accept}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_forward\_accept()}{ssh2\_forward\_accept()}}
+{\footnotesize\ttfamily ssh2\+\_\+forward\+\_\+accept (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ssh2_8php_ae08f3f0a3b27658cd2659165fbcd25dc}\label{ssh2_8php_ae08f3f0a3b27658cd2659165fbcd25dc}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_forward\_listen@{ssh2\_forward\_listen}}
+\index{ssh2\_forward\_listen@{ssh2\_forward\_listen}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_forward\_listen()}{ssh2\_forward\_listen()}}
+{\footnotesize\ttfamily ssh2\+\_\+forward\+\_\+listen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ssh2_8php_a2eb776556847766754b07ac83cdf9e75}\label{ssh2_8php_a2eb776556847766754b07ac83cdf9e75}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_methods\_negotiated@{ssh2\_methods\_negotiated}}
+\index{ssh2\_methods\_negotiated@{ssh2\_methods\_negotiated}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_methods\_negotiated()}{ssh2\_methods\_negotiated()}}
+{\footnotesize\ttfamily ssh2\+\_\+methods\+\_\+negotiated (\begin{DoxyParamCaption}\item[{}]{\$session }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Return list of negotiated methods \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$session }} An S\+SH connection link identifier, obtained from a call to ssh2\+\_\+connect. 
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a885285cf9b34f105c51bdac8c12e7cf7}\label{ssh2_8php_a885285cf9b34f105c51bdac8c12e7cf7}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_poll@{ssh2\_poll}}
+\index{ssh2\_poll@{ssh2\_poll}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_poll()}{ssh2\_poll()}}
+{\footnotesize\ttfamily ssh2\+\_\+poll (\begin{DoxyParamCaption}\item[{\&}]{\$var1 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$var1} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ssh2_8php_a1e675af1d5ba02833f4f860ad1ba7bbc}\label{ssh2_8php_a1e675af1d5ba02833f4f860ad1ba7bbc}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_publickey\_add@{ssh2\_publickey\_add}}
+\index{ssh2\_publickey\_add@{ssh2\_publickey\_add}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_publickey\_add()}{ssh2\_publickey\_add()}}
+{\footnotesize\ttfamily ssh2\+\_\+publickey\+\_\+add (\begin{DoxyParamCaption}\item[{}]{\$pkey,  }\item[{}]{\$algoname,  }\item[{}]{\$blob,  }\item[{}]{\$overwrite = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$attributes = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+10)~\newline
+ Add an authorized publickey \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$pkey }} Publickey Subsystem resource created by ssh2\+\_\+publickey\+\_\+init. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$algoname} & \\
+\hline
+\end{DoxyParams}
+Publickey algorithm (e.\+g.)\+: ssh-\/dss, ssh-\/rsa 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$blob} & \\
+\hline
+\end{DoxyParams}
+Publickey blob as raw binary data 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$overwrite} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If the specified key already exists, should it be overwritten? 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Associative array of attributes to assign to this public key. Refer to ietf-\/secsh-\/publickey-\/subsystem for a list of supported attributes. To mark an attribute as mandatory, precede its name with an asterisk. If the server is unable to support an attribute marked mandatory, it will abort the add process. 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a2ac77e1b3682d0513b83ac6b2b92a34e}\label{ssh2_8php_a2ac77e1b3682d0513b83ac6b2b92a34e}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_publickey\_init@{ssh2\_publickey\_init}}
+\index{ssh2\_publickey\_init@{ssh2\_publickey\_init}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_publickey\_init()}{ssh2\_publickey\_init()}}
+{\footnotesize\ttfamily ssh2\+\_\+publickey\+\_\+init (\begin{DoxyParamCaption}\item[{}]{\$session }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+10)~\newline
+ Initialize Publickey subsystem \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$session }} 
+
+\begin{DoxyReturn}{Returns}
+resource an S\+S\+H2 Publickey Subsystem resource for use with all other ssh2\+\_\+publickey\+\_\+$\ast$() methods or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a7edeccc0abffd55b6c9e2c9c08ffcb1c}\label{ssh2_8php_a7edeccc0abffd55b6c9e2c9c08ffcb1c}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_publickey\_list@{ssh2\_publickey\_list}}
+\index{ssh2\_publickey\_list@{ssh2\_publickey\_list}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_publickey\_list()}{ssh2\_publickey\_list()}}
+{\footnotesize\ttfamily ssh2\+\_\+publickey\+\_\+list (\begin{DoxyParamCaption}\item[{}]{\$pkey }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+10)~\newline
+ List currently authorized publickeys \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$pkey }} Publickey Subsystem resource 
+
+\begin{DoxyReturn}{Returns}
+array a numerically indexed array of keys, each of which is an associative array containing\+: name, blob, and attrs elements. 
+\end{DoxyReturn}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+elements 
+
+Array Key 
+
+Meaning  
+
+name 
+
+Name of algorithm used by this publickey, for example\+: ssh-\/dss or ssh-\/rsa.  
+
+blob 
+
+Publickey blob as raw binary data.  
+
+attrs 
+
+Attributes assigned to this publickey. The most common attribute, and the only one supported by publickey version 1 servers, is comment, which may be any freeform string.  \mbox{\Hypertarget{ssh2_8php_aa99491e382c2996a96c523e09fc26ea6}\label{ssh2_8php_aa99491e382c2996a96c523e09fc26ea6}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_publickey\_remove@{ssh2\_publickey\_remove}}
+\index{ssh2\_publickey\_remove@{ssh2\_publickey\_remove}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_publickey\_remove()}{ssh2\_publickey\_remove()}}
+{\footnotesize\ttfamily ssh2\+\_\+publickey\+\_\+remove (\begin{DoxyParamCaption}\item[{}]{\$pkey,  }\item[{}]{\$algoname,  }\item[{}]{\$blob }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+10)~\newline
+ Remove an authorized publickey \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$pkey }} Publickey Subsystem Resource 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$algoname} & \\
+\hline
+\end{DoxyParams}
+Publickey algorithm (e.\+g.)\+: ssh-\/dss, ssh-\/rsa 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$blob} & \\
+\hline
+\end{DoxyParams}
+Publickey blob as raw binary data 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a18d3411e6b7b72b8296b09d979ca7ad9}\label{ssh2_8php_a18d3411e6b7b72b8296b09d979ca7ad9}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_scp\_recv@{ssh2\_scp\_recv}}
+\index{ssh2\_scp\_recv@{ssh2\_scp\_recv}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_scp\_recv()}{ssh2\_scp\_recv()}}
+{\footnotesize\ttfamily ssh2\+\_\+scp\+\_\+recv (\begin{DoxyParamCaption}\item[{}]{\$session,  }\item[{}]{\$remote\+\_\+file,  }\item[{}]{\$local\+\_\+file }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Request a file via S\+CP \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$session }} An S\+SH connection link identifier, obtained from a call to ssh2\+\_\+connect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$remote\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+Path to the remote file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$local\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+Path to the local file. 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_aeb5f30d302767e26b0d174cb234b7464}\label{ssh2_8php_aeb5f30d302767e26b0d174cb234b7464}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_scp\_send@{ssh2\_scp\_send}}
+\index{ssh2\_scp\_send@{ssh2\_scp\_send}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_scp\_send()}{ssh2\_scp\_send()}}
+{\footnotesize\ttfamily ssh2\+\_\+scp\+\_\+send (\begin{DoxyParamCaption}\item[{}]{\$session,  }\item[{}]{\$local\+\_\+file,  }\item[{}]{\$remote\+\_\+file,  }\item[{}]{\$create\+\_\+mode = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Send a file via S\+CP \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$session }} An S\+SH connection link identifier, obtained from a call to ssh2\+\_\+connect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$local\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+Path to the local file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$remote\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+Path to the remote file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$create\+\_\+mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The file will be created with the mode specified by create\+\_\+mode. 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a35cde40fe9cb3b370b7831af32007d9f}\label{ssh2_8php_a35cde40fe9cb3b370b7831af32007d9f}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_sftp@{ssh2\_sftp}}
+\index{ssh2\_sftp@{ssh2\_sftp}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_sftp()}{ssh2\_sftp()}}
+{\footnotesize\ttfamily ssh2\+\_\+sftp (\begin{DoxyParamCaption}\item[{}]{\$session }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Initialize S\+F\+TP subsystem \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$session }} An S\+SH connection link identifier, obtained from a call to ssh2\+\_\+connect. 
+
+\begin{DoxyReturn}{Returns}
+resource This method returns an S\+S\+H2 S\+F\+TP resource for use with all other ssh2\+\_\+sftp\+\_\+$\ast$() methods and the ssh2.\+sftp\+:// fopen wrapper. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a528b92c91258e57cf12f7cad4e7ca31d}\label{ssh2_8php_a528b92c91258e57cf12f7cad4e7ca31d}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_sftp\_chmod@{ssh2\_sftp\_chmod}}
+\index{ssh2\_sftp\_chmod@{ssh2\_sftp\_chmod}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_sftp\_chmod()}{ssh2\_sftp\_chmod()}}
+{\footnotesize\ttfamily ssh2\+\_\+sftp\+\_\+chmod (\begin{DoxyParamCaption}\item[{}]{\$sftp,  }\item[{}]{\$filename,  }\item[{}]{\$mode }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+12)~\newline
+ ssh2\+\_\+sftp\+\_\+chmod — Changes file mode \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$sftp }}An S\+S\+H2 S\+F\+TP resource opened by \mbox{\hyperlink{ssh2_8php_a35cde40fe9cb3b370b7831af32007d9f}{ssh2\+\_\+sftp()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+Path to the file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+Permissions on the file. See the \mbox{\hyperlink{standard__7_8php_a11b9e11862a7fedee4d8642134376ff0}{chmod()}} for more details on this parameter.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+Returns T\+R\+UE on success or F\+A\+L\+SE on failure.\mbox{\Hypertarget{ssh2_8php_a7ca7359551d897b725307dd6697291a3}\label{ssh2_8php_a7ca7359551d897b725307dd6697291a3}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_sftp\_lstat@{ssh2\_sftp\_lstat}}
+\index{ssh2\_sftp\_lstat@{ssh2\_sftp\_lstat}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_sftp\_lstat()}{ssh2\_sftp\_lstat()}}
+{\footnotesize\ttfamily ssh2\+\_\+sftp\+\_\+lstat (\begin{DoxyParamCaption}\item[{}]{\$sftp,  }\item[{}]{\$path }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Stat a symbolic link \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$sftp }} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+Path to the remote symbolic link. 
+
+\begin{DoxyReturn}{Returns}
+array See the documentation for stat for details on the values which may be returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_ab92a2c04d4278cf08e5982e9ef5e4213}\label{ssh2_8php_ab92a2c04d4278cf08e5982e9ef5e4213}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_sftp\_mkdir@{ssh2\_sftp\_mkdir}}
+\index{ssh2\_sftp\_mkdir@{ssh2\_sftp\_mkdir}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_sftp\_mkdir()}{ssh2\_sftp\_mkdir()}}
+{\footnotesize\ttfamily ssh2\+\_\+sftp\+\_\+mkdir (\begin{DoxyParamCaption}\item[{}]{\$sftp,  }\item[{}]{\$dirname,  }\item[{}]{\$mode = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$recursive = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Create a directory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$sftp }} An S\+S\+H2 S\+F\+TP resource opened by ssh2\+\_\+sftp. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dirname} & \\
+\hline
+\end{DoxyParams}
+Path of the new directory. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$mode} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Permissions on the new directory. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$recursive} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If recursive is true any parent directories required for dirname will be automatically created as well. 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a43e6aabe76376467dc4d30fec1eb1bca}\label{ssh2_8php_a43e6aabe76376467dc4d30fec1eb1bca}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_sftp\_readlink@{ssh2\_sftp\_readlink}}
+\index{ssh2\_sftp\_readlink@{ssh2\_sftp\_readlink}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_sftp\_readlink()}{ssh2\_sftp\_readlink()}}
+{\footnotesize\ttfamily ssh2\+\_\+sftp\+\_\+readlink (\begin{DoxyParamCaption}\item[{}]{\$sftp,  }\item[{}]{\$link }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Return the target of a symbolic link \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$sftp }} An S\+S\+H2 S\+F\+TP resource opened by ssh2\+\_\+sftp. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$link} & \\
+\hline
+\end{DoxyParams}
+Path of the symbolic link. 
+
+\begin{DoxyReturn}{Returns}
+string the target of the symbolic link. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_ac37c5468af4faabe131b7e7a35c576cc}\label{ssh2_8php_ac37c5468af4faabe131b7e7a35c576cc}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_sftp\_realpath@{ssh2\_sftp\_realpath}}
+\index{ssh2\_sftp\_realpath@{ssh2\_sftp\_realpath}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_sftp\_realpath()}{ssh2\_sftp\_realpath()}}
+{\footnotesize\ttfamily ssh2\+\_\+sftp\+\_\+realpath (\begin{DoxyParamCaption}\item[{}]{\$sftp,  }\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Resolve the realpath of a provided path string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$sftp }} An S\+S\+H2 S\+F\+TP resource opened by ssh2\+\_\+sftp. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+string the real path as a string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_aa20753267860cbc01db0201c947e307b}\label{ssh2_8php_aa20753267860cbc01db0201c947e307b}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_sftp\_rename@{ssh2\_sftp\_rename}}
+\index{ssh2\_sftp\_rename@{ssh2\_sftp\_rename}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_sftp\_rename()}{ssh2\_sftp\_rename()}}
+{\footnotesize\ttfamily ssh2\+\_\+sftp\+\_\+rename (\begin{DoxyParamCaption}\item[{}]{\$sftp,  }\item[{}]{\$from,  }\item[{}]{\$to }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Rename a remote file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$sftp }} An S\+S\+H2 S\+F\+TP resource opened by ssh2\+\_\+sftp. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from} & \\
+\hline
+\end{DoxyParams}
+The current file that is being renamed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$to} & \\
+\hline
+\end{DoxyParams}
+The new file name that replaces from. 
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a10b03680e30dba512a4f5299dc7bd7e5}\label{ssh2_8php_a10b03680e30dba512a4f5299dc7bd7e5}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_sftp\_rmdir@{ssh2\_sftp\_rmdir}}
+\index{ssh2\_sftp\_rmdir@{ssh2\_sftp\_rmdir}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_sftp\_rmdir()}{ssh2\_sftp\_rmdir()}}
+{\footnotesize\ttfamily ssh2\+\_\+sftp\+\_\+rmdir (\begin{DoxyParamCaption}\item[{}]{\$sftp,  }\item[{}]{\$dirname }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Remove a directory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$sftp }} An S\+S\+H2 S\+F\+TP resource opened by ssh2\+\_\+sftp. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dirname} & \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a2cfc033cda74a32da74bb7ff429c7f85}\label{ssh2_8php_a2cfc033cda74a32da74bb7ff429c7f85}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_sftp\_stat@{ssh2\_sftp\_stat}}
+\index{ssh2\_sftp\_stat@{ssh2\_sftp\_stat}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_sftp\_stat()}{ssh2\_sftp\_stat()}}
+{\footnotesize\ttfamily ssh2\+\_\+sftp\+\_\+stat (\begin{DoxyParamCaption}\item[{}]{\$sftp,  }\item[{}]{\$path }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Stat a file on a remote filesystem \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$sftp }} An S\+S\+H2 S\+F\+TP resource opened by ssh2\+\_\+sftp. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+array See the documentation for stat for details on the values which may be returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a53f5004527d394b7d224757f724f9428}\label{ssh2_8php_a53f5004527d394b7d224757f724f9428}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_sftp\_symlink@{ssh2\_sftp\_symlink}}
+\index{ssh2\_sftp\_symlink@{ssh2\_sftp\_symlink}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_sftp\_symlink()}{ssh2\_sftp\_symlink()}}
+{\footnotesize\ttfamily ssh2\+\_\+sftp\+\_\+symlink (\begin{DoxyParamCaption}\item[{}]{\$sftp,  }\item[{}]{\$target,  }\item[{}]{\$link }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Create a symlink \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$sftp }} An S\+S\+H2 S\+F\+TP resource opened by ssh2\+\_\+sftp. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target} & \\
+\hline
+\end{DoxyParams}
+Target of the symbolic link. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$link} & \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_a8a0a40c192a65b09e2b1766acdf33c30}\label{ssh2_8php_a8a0a40c192a65b09e2b1766acdf33c30}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_sftp\_unlink@{ssh2\_sftp\_unlink}}
+\index{ssh2\_sftp\_unlink@{ssh2\_sftp\_unlink}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_sftp\_unlink()}{ssh2\_sftp\_unlink()}}
+{\footnotesize\ttfamily ssh2\+\_\+sftp\+\_\+unlink (\begin{DoxyParamCaption}\item[{}]{\$sftp,  }\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Delete a file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$sftp }} An S\+S\+H2 S\+F\+TP resource opened by ssh2\+\_\+sftp. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+bool true on success or false on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_aacfa59bbe0354852576e41b0b95ccd67}\label{ssh2_8php_aacfa59bbe0354852576e41b0b95ccd67}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_shell@{ssh2\_shell}}
+\index{ssh2\_shell@{ssh2\_shell}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_shell()}{ssh2\_shell()}}
+{\footnotesize\ttfamily ssh2\+\_\+shell (\begin{DoxyParamCaption}\item[{}]{\$session,  }\item[{}]{\$term\+\_\+type = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array}]{\$env = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$width = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$height = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$width\+\_\+height\+\_\+type = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Request an interactive shell \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$session }} An S\+SH connection link identifier, obtained from a call to ssh2\+\_\+connect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$term\+\_\+type} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+term\+\_\+type should correspond to one of the entries in the target system\textquotesingle{}s /etc/termcap file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$env} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+env may be passed as an associative array of name/value pairs to set in the target environment. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$width} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Width of the virtual terminal. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$height} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Height of the virtual terminal. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$width\+\_\+height\+\_\+type} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+width\+\_\+height\+\_\+type should be one of S\+S\+H2\+\_\+\+T\+E\+R\+M\+\_\+\+U\+N\+I\+T\+\_\+\+C\+H\+A\+RS or S\+S\+H2\+\_\+\+T\+E\+R\+M\+\_\+\+U\+N\+I\+T\+\_\+\+P\+I\+X\+E\+LS. 
+
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ssh2_8php_af5f2de698dc0afc5f1e08cb1ecb08a1f}\label{ssh2_8php_af5f2de698dc0afc5f1e08cb1ecb08a1f}} 
+\index{ssh2.php@{ssh2.php}!ssh2\_tunnel@{ssh2\_tunnel}}
+\index{ssh2\_tunnel@{ssh2\_tunnel}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{ssh2\_tunnel()}{ssh2\_tunnel()}}
+{\footnotesize\ttfamily ssh2\+\_\+tunnel (\begin{DoxyParamCaption}\item[{}]{\$session,  }\item[{}]{\$host,  }\item[{}]{\$port }\end{DoxyParamCaption})}
+
+(P\+E\+CL ssh2 $>$= 0.\+9.\+0)~\newline
+ Open a tunnel through a remote server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$session }} An S\+SH connection link identifier, obtained from a call to ssh2\+\_\+connect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$host} & \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$port} & \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{ssh2_8php_a06f37d4afae0723422682b1af178a5f4}\label{ssh2_8php_a06f37d4afae0723422682b1af178a5f4}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_DEFAULT\_TERM\_HEIGHT@{SSH2\_DEFAULT\_TERM\_HEIGHT}}
+\index{SSH2\_DEFAULT\_TERM\_HEIGHT@{SSH2\_DEFAULT\_TERM\_HEIGHT}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_DEFAULT\_TERM\_HEIGHT}{SSH2\_DEFAULT\_TERM\_HEIGHT}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+R\+M\+\_\+\+H\+E\+I\+G\+HT 25}
+
+Default terminal height requested by ssh2\+\_\+shell. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ssh2.\+constants.\+php}}\mbox{\Hypertarget{ssh2_8php_a11f466b0187fd4f0561f9e39a15e77d1}\label{ssh2_8php_a11f466b0187fd4f0561f9e39a15e77d1}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_DEFAULT\_TERM\_UNIT@{SSH2\_DEFAULT\_TERM\_UNIT}}
+\index{SSH2\_DEFAULT\_TERM\_UNIT@{SSH2\_DEFAULT\_TERM\_UNIT}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_DEFAULT\_TERM\_UNIT}{SSH2\_DEFAULT\_TERM\_UNIT}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+R\+M\+\_\+\+U\+N\+IT 0}
+
+Default terminal units requested by ssh2\+\_\+shell. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ssh2.\+constants.\+php}}\mbox{\Hypertarget{ssh2_8php_a10eef9ef922916563e0fd01675855cbf}\label{ssh2_8php_a10eef9ef922916563e0fd01675855cbf}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_DEFAULT\_TERM\_WIDTH@{SSH2\_DEFAULT\_TERM\_WIDTH}}
+\index{SSH2\_DEFAULT\_TERM\_WIDTH@{SSH2\_DEFAULT\_TERM\_WIDTH}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_DEFAULT\_TERM\_WIDTH}{SSH2\_DEFAULT\_TERM\_WIDTH}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+R\+M\+\_\+\+W\+I\+D\+TH 80}
+
+Default terminal width requested by ssh2\+\_\+shell. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ssh2.\+constants.\+php}}\mbox{\Hypertarget{ssh2_8php_a742f6c70b2c8c2dea1cce235c1723715}\label{ssh2_8php_a742f6c70b2c8c2dea1cce235c1723715}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_DEFAULT\_TERMINAL@{SSH2\_DEFAULT\_TERMINAL}}
+\index{SSH2\_DEFAULT\_TERMINAL@{SSH2\_DEFAULT\_TERMINAL}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_DEFAULT\_TERMINAL}{SSH2\_DEFAULT\_TERMINAL}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+E\+R\+M\+I\+N\+AL \char`\"{}vanilla\char`\"{}}
+
+Default terminal type (e.\+g. vt102, ansi, xterm, vanilla) requested by ssh2\+\_\+shell. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ssh2.\+constants.\+php}}\mbox{\Hypertarget{ssh2_8php_a991352b6f1a41782c7ae55188e9cf049}\label{ssh2_8php_a991352b6f1a41782c7ae55188e9cf049}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_FINGERPRINT\_HEX@{SSH2\_FINGERPRINT\_HEX}}
+\index{SSH2\_FINGERPRINT\_HEX@{SSH2\_FINGERPRINT\_HEX}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_FINGERPRINT\_HEX}{SSH2\_FINGERPRINT\_HEX}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+F\+I\+N\+G\+E\+R\+P\+R\+I\+N\+T\+\_\+\+H\+EX 0}
+
+Flag to ssh2\+\_\+fingerprint requesting hostkey fingerprint as a string of hexits. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ssh2.\+constants.\+php}}\mbox{\Hypertarget{ssh2_8php_aff0e2ba261b26e02d9e0e84932b96665}\label{ssh2_8php_aff0e2ba261b26e02d9e0e84932b96665}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_FINGERPRINT\_MD5@{SSH2\_FINGERPRINT\_MD5}}
+\index{SSH2\_FINGERPRINT\_MD5@{SSH2\_FINGERPRINT\_MD5}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_FINGERPRINT\_MD5}{SSH2\_FINGERPRINT\_MD5}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+F\+I\+N\+G\+E\+R\+P\+R\+I\+N\+T\+\_\+\+M\+D5 0}
+
+Flag to ssh2\+\_\+fingerprint requesting hostkey fingerprint as an M\+D5 hash. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ssh2.\+constants.\+php}}\mbox{\Hypertarget{ssh2_8php_a0290e5f08a6f6dd091190efbbb67efa5}\label{ssh2_8php_a0290e5f08a6f6dd091190efbbb67efa5}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_FINGERPRINT\_RAW@{SSH2\_FINGERPRINT\_RAW}}
+\index{SSH2\_FINGERPRINT\_RAW@{SSH2\_FINGERPRINT\_RAW}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_FINGERPRINT\_RAW}{SSH2\_FINGERPRINT\_RAW}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+F\+I\+N\+G\+E\+R\+P\+R\+I\+N\+T\+\_\+\+R\+AW 2}
+
+Flag to ssh2\+\_\+fingerprint requesting hostkey fingerprint as a raw string of 8-\/bit characters. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ssh2.\+constants.\+php}}\mbox{\Hypertarget{ssh2_8php_a9dda9b278db536596d0eb36f08441e12}\label{ssh2_8php_a9dda9b278db536596d0eb36f08441e12}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_FINGERPRINT\_SHA1@{SSH2\_FINGERPRINT\_SHA1}}
+\index{SSH2\_FINGERPRINT\_SHA1@{SSH2\_FINGERPRINT\_SHA1}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_FINGERPRINT\_SHA1}{SSH2\_FINGERPRINT\_SHA1}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+F\+I\+N\+G\+E\+R\+P\+R\+I\+N\+T\+\_\+\+S\+H\+A1 1}
+
+Flag to ssh2\+\_\+fingerprint requesting hostkey fingerprint as an S\+H\+A1 hash. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ssh2.\+constants.\+php}}\mbox{\Hypertarget{ssh2_8php_a4666094a44679a6c0fa80adaedcb1a33}\label{ssh2_8php_a4666094a44679a6c0fa80adaedcb1a33}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_POLL\_CHANNEL\_CLOSED@{SSH2\_POLL\_CHANNEL\_CLOSED}}
+\index{SSH2\_POLL\_CHANNEL\_CLOSED@{SSH2\_POLL\_CHANNEL\_CLOSED}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_POLL\_CHANNEL\_CLOSED}{SSH2\_POLL\_CHANNEL\_CLOSED}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+P\+O\+L\+L\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+C\+L\+O\+S\+ED 128}
+
+\mbox{\Hypertarget{ssh2_8php_aaaf3f3643ecf05328b8c0be63e12d726}\label{ssh2_8php_aaaf3f3643ecf05328b8c0be63e12d726}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_POLL\_LISTENER\_CLOSED@{SSH2\_POLL\_LISTENER\_CLOSED}}
+\index{SSH2\_POLL\_LISTENER\_CLOSED@{SSH2\_POLL\_LISTENER\_CLOSED}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_POLL\_LISTENER\_CLOSED}{SSH2\_POLL\_LISTENER\_CLOSED}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+P\+O\+L\+L\+\_\+\+L\+I\+S\+T\+E\+N\+E\+R\+\_\+\+C\+L\+O\+S\+ED 128}
+
+\mbox{\Hypertarget{ssh2_8php_a8fcd150f081baaf40ec5ae1e0e19c017}\label{ssh2_8php_a8fcd150f081baaf40ec5ae1e0e19c017}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_POLL\_SESSION\_CLOSED@{SSH2\_POLL\_SESSION\_CLOSED}}
+\index{SSH2\_POLL\_SESSION\_CLOSED@{SSH2\_POLL\_SESSION\_CLOSED}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_POLL\_SESSION\_CLOSED}{SSH2\_POLL\_SESSION\_CLOSED}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+P\+O\+L\+L\+\_\+\+S\+E\+S\+S\+I\+O\+N\+\_\+\+C\+L\+O\+S\+ED 16}
+
+\mbox{\Hypertarget{ssh2_8php_acdb574c25572ff991e1119892d5d2dcb}\label{ssh2_8php_acdb574c25572ff991e1119892d5d2dcb}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_POLLERR@{SSH2\_POLLERR}}
+\index{SSH2\_POLLERR@{SSH2\_POLLERR}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_POLLERR}{SSH2\_POLLERR}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+P\+O\+L\+L\+E\+RR 8}
+
+\mbox{\Hypertarget{ssh2_8php_a8649b7fa00cd6411ef3bb417a32695c5}\label{ssh2_8php_a8649b7fa00cd6411ef3bb417a32695c5}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_POLLEXT@{SSH2\_POLLEXT}}
+\index{SSH2\_POLLEXT@{SSH2\_POLLEXT}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_POLLEXT}{SSH2\_POLLEXT}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+P\+O\+L\+L\+E\+XT 2}
+
+\mbox{\Hypertarget{ssh2_8php_af8a1f6674a8c0160ebe65291f2012eed}\label{ssh2_8php_af8a1f6674a8c0160ebe65291f2012eed}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_POLLHUP@{SSH2\_POLLHUP}}
+\index{SSH2\_POLLHUP@{SSH2\_POLLHUP}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_POLLHUP}{SSH2\_POLLHUP}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+P\+O\+L\+L\+H\+UP 16}
+
+\mbox{\Hypertarget{ssh2_8php_a748833152acb298e0dae566fb77fff63}\label{ssh2_8php_a748833152acb298e0dae566fb77fff63}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_POLLIN@{SSH2\_POLLIN}}
+\index{SSH2\_POLLIN@{SSH2\_POLLIN}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_POLLIN}{SSH2\_POLLIN}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+P\+O\+L\+L\+IN 1}
+
+\mbox{\Hypertarget{ssh2_8php_aa57cbe8adc6e54e14d7095f554772004}\label{ssh2_8php_aa57cbe8adc6e54e14d7095f554772004}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_POLLNVAL@{SSH2\_POLLNVAL}}
+\index{SSH2\_POLLNVAL@{SSH2\_POLLNVAL}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_POLLNVAL}{SSH2\_POLLNVAL}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+P\+O\+L\+L\+N\+V\+AL 32}
+
+\mbox{\Hypertarget{ssh2_8php_af128d750792bcd0e0517bbbde1a67689}\label{ssh2_8php_af128d750792bcd0e0517bbbde1a67689}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_POLLOUT@{SSH2\_POLLOUT}}
+\index{SSH2\_POLLOUT@{SSH2\_POLLOUT}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_POLLOUT}{SSH2\_POLLOUT}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+P\+O\+L\+L\+O\+UT 4}
+
+\mbox{\Hypertarget{ssh2_8php_a38aee0abc75f66a89cacbc146a5a2ccc}\label{ssh2_8php_a38aee0abc75f66a89cacbc146a5a2ccc}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_STREAM\_STDERR@{SSH2\_STREAM\_STDERR}}
+\index{SSH2\_STREAM\_STDERR@{SSH2\_STREAM\_STDERR}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_STREAM\_STDERR}{SSH2\_STREAM\_STDERR}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+D\+E\+RR 1}
+
+Flag to ssh2\+\_\+fetch\+\_\+stream requesting S\+T\+D\+E\+RR subchannel. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ssh2.\+constants.\+php}}\mbox{\Hypertarget{ssh2_8php_ae7c9b057cfed3d04943f209d1a348b8d}\label{ssh2_8php_ae7c9b057cfed3d04943f209d1a348b8d}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_STREAM\_STDIO@{SSH2\_STREAM\_STDIO}}
+\index{SSH2\_STREAM\_STDIO@{SSH2\_STREAM\_STDIO}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_STREAM\_STDIO}{SSH2\_STREAM\_STDIO}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+S\+T\+D\+IO 0}
+
+Flag to ssh2\+\_\+fetch\+\_\+stream requesting S\+T\+D\+IO subchannel. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ssh2.\+constants.\+php}}\mbox{\Hypertarget{ssh2_8php_a25fa2f7ebbe9d66d0e99352329d92a56}\label{ssh2_8php_a25fa2f7ebbe9d66d0e99352329d92a56}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_TERM\_UNIT\_CHARS@{SSH2\_TERM\_UNIT\_CHARS}}
+\index{SSH2\_TERM\_UNIT\_CHARS@{SSH2\_TERM\_UNIT\_CHARS}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_TERM\_UNIT\_CHARS}{SSH2\_TERM\_UNIT\_CHARS}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+T\+E\+R\+M\+\_\+\+U\+N\+I\+T\+\_\+\+C\+H\+A\+RS 0}
+
+Flag to ssh2\+\_\+shell specifying that width and height are provided as character sizes. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ssh2.\+constants.\+php}}\mbox{\Hypertarget{ssh2_8php_a579e687a150896169ebd71dcfc070b85}\label{ssh2_8php_a579e687a150896169ebd71dcfc070b85}} 
+\index{ssh2.php@{ssh2.php}!SSH2\_TERM\_UNIT\_PIXELS@{SSH2\_TERM\_UNIT\_PIXELS}}
+\index{SSH2\_TERM\_UNIT\_PIXELS@{SSH2\_TERM\_UNIT\_PIXELS}!ssh2.php@{ssh2.php}}
+\doxysubsubsection{\texorpdfstring{SSH2\_TERM\_UNIT\_PIXELS}{SSH2\_TERM\_UNIT\_PIXELS}}
+{\footnotesize\ttfamily const S\+S\+H2\+\_\+\+T\+E\+R\+M\+\_\+\+U\+N\+I\+T\+\_\+\+P\+I\+X\+E\+LS 1}
+
+Flag to ssh2\+\_\+shell specifying that width and height are provided in pixel units. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ssh2.\+constants.\+php}}

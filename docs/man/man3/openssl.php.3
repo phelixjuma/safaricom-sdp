@@ -1,0 +1,1914 @@
+.TH "vendor/jetbrains/phpstorm-stubs/openssl/openssl.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/openssl/openssl.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBopenssl_pkey_free\fP ($\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_pkey_new\fP (array $configargs=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_pkey_export\fP ($\fBkey\fP, &$out, $passphrase=\fBnull\fP, array $configargs=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_pkey_export_to_file\fP ($\fBkey\fP, $outfilename, $passphrase=\fBnull\fP, array $configargs=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_pkey_get_private\fP ($\fBkey\fP, $passphrase='')"
+.br
+.ti -1c
+.RI "\fBopenssl_pkey_get_public\fP ($certificate)"
+.br
+.ti -1c
+.RI "\fBopenssl_pkey_get_details\fP ($\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_free_key\fP ($key_identifier)"
+.br
+.ti -1c
+.RI "\fBopenssl_get_privatekey\fP ($\fBkey\fP, $passphrase)"
+.br
+.ti -1c
+.RI "\fBopenssl_get_publickey\fP ($certificate)"
+.br
+.ti -1c
+.RI "\fBopenssl_spki_new\fP (&$privkey, &$challenge, $algorithm=0)"
+.br
+.ti -1c
+.RI "\fBopenssl_spki_verify\fP (&$spkac)"
+.br
+.ti -1c
+.RI "\fBopenssl_spki_export_challenge\fP (&$spkac)"
+.br
+.ti -1c
+.RI "\fBopenssl_spki_export\fP (&$spkac)"
+.br
+.ti -1c
+.RI "\fBopenssl_x509_read\fP ($x509certdata)"
+.br
+.ti -1c
+.RI "\fBopenssl_x509_fingerprint\fP ($x509, $type, $binary)"
+.br
+.ti -1c
+.RI "\fBopenssl_x509_free\fP ($x509cert)"
+.br
+.ti -1c
+.RI "\fBopenssl_x509_parse\fP ($x509cert, $shortnames=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_x509_checkpurpose\fP ($x509cert, $purpose, array $cainfo=\fBnull\fP, $untrustedfile=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_x509_check_private_key\fP ($cert, $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_x509_export\fP ($x509, &$output, $notext=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_x509_export_to_file\fP ($x509, $outfilename, $notext=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_x509_verify\fP ($cert, $\fBkey\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_pkcs12_export\fP ($x509, &$out, $priv_key, $pass, array $args=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_pkcs12_export_to_file\fP ($x509, $filename, $priv_key, $pass, array $args=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_pkcs12_read\fP ($pkcs12, array &$certs, $pass)"
+.br
+.ti -1c
+.RI "\fBopenssl_csr_new\fP (array $dn, &$privkey, array $configargs=\fBnull\fP, array $extraattribs=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_csr_export\fP ($csr, &$out, $notext=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_csr_export_to_file\fP ($csr, $outfilename, $notext=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_csr_sign\fP ($csr, $cacert, $priv_key, $days, array $configargs=\fBnull\fP, $serial=0)"
+.br
+.ti -1c
+.RI "\fBopenssl_csr_get_subject\fP ($csr, $use_shortnames=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_csr_get_public_key\fP ($csr, $use_shortnames=\fBtrue\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_digest\fP ($data, $method, $raw_output=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_encrypt\fP ($data, $method, $\fBkey\fP, $options=0, $iv='', &$tag=NULL, $aad='', $tag_length=16)"
+.br
+.ti -1c
+.RI "\fBopenssl_decrypt\fP ($data, $method, $password, $options=1, $iv='', $tag='', $aad='')"
+.br
+.ti -1c
+.RI "\fBopenssl_cipher_iv_length\fP ($method)"
+.br
+.ti -1c
+.RI "\fBopenssl_sign\fP ($data, &$signature, $priv_key_id, $signature_alg=\fBOPENSSL_ALGO_SHA1\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_verify\fP ($data, $signature, $pub_key_id, $signature_alg=\fBOPENSSL_ALGO_SHA1\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_seal\fP ($data, &$sealed_data, array &$env_keys, array $pub_key_ids, $method=\fBnull\fP, $iv='')"
+.br
+.ti -1c
+.RI "\fBopenssl_open\fP ($sealed_data, &$open_data, $env_key, $priv_key_id, $method='RC4', string $iv)"
+.br
+.ti -1c
+.RI "\fBopenssl_pbkdf2\fP ($password, $salt, $key_length, $iterations, $digest_algorithm)"
+.br
+.ti -1c
+.RI "\fBopenssl_pkcs7_verify\fP ($filename, $flags, $outfilename=\fBnull\fP, array $cainfo=\fBnull\fP, $extracerts=\fBnull\fP, $content=\fBnull\fP, $pk7=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_pkcs7_decrypt\fP ($infilename, $outfilename, $recipcert, $recipkey=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_pkcs7_sign\fP ($infilename, $outfilename, $signcert, $privkey, array $headers, $flags=\fBPKCS7_DETACHED\fP, $extracerts=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_pkcs7_encrypt\fP ($infile, $outfile, $recipcerts, array $headers, $flags=0, $cipherid=\fBOPENSSL_CIPHER_RC2_40\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_private_encrypt\fP ($data, &$crypted, $\fBkey\fP, $padding=\fBOPENSSL_PKCS1_PADDING\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_private_decrypt\fP ($data, &$decrypted, $\fBkey\fP, $padding=\fBOPENSSL_PKCS1_PADDING\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_public_encrypt\fP ($data, &$crypted, $\fBkey\fP, $padding=\fBOPENSSL_PKCS1_PADDING\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_public_decrypt\fP ($data, &$decrypted, $\fBkey\fP, $padding=\fBOPENSSL_PKCS1_PADDING\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_get_md_methods\fP ($aliases=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_get_cipher_methods\fP ($aliases=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_dh_compute_key\fP ($pub_key, $dh_key)"
+.br
+.ti -1c
+.RI "\fBopenssl_pkey_derive\fP ($peer_pub_key, $priv_key, $keylen)"
+.br
+.ti -1c
+.RI "\fBopenssl_random_pseudo_bytes\fP ($length, &$crypto_strong=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBopenssl_error_string\fP ()"
+.br
+.ti -1c
+.RI "\fBopenssl_get_cert_locations\fP ()"
+.br
+.ti -1c
+.RI "\fBopenssl_get_curve_names\fP ()"
+.br
+.ti -1c
+.RI "\fBopenssl_pkcs7_read\fP ($P7B, &$certs)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBOPENSSL_VERSION_TEXT\fP 'OpenSSL 1\&.0\&.0e 6 Sep 2011'"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_VERSION_NUMBER\fP 268435551"
+.br
+.ti -1c
+.RI "const \fBX509_PURPOSE_SSL_CLIENT\fP 1"
+.br
+.ti -1c
+.RI "const \fBX509_PURPOSE_SSL_SERVER\fP 2"
+.br
+.ti -1c
+.RI "const \fBX509_PURPOSE_NS_SSL_SERVER\fP 3"
+.br
+.ti -1c
+.RI "const \fBX509_PURPOSE_SMIME_SIGN\fP 4"
+.br
+.ti -1c
+.RI "const \fBX509_PURPOSE_SMIME_ENCRYPT\fP 5"
+.br
+.ti -1c
+.RI "const \fBX509_PURPOSE_CRL_SIGN\fP 6"
+.br
+.ti -1c
+.RI "const \fBX509_PURPOSE_ANY\fP 7"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_ALGO_SHA1\fP 1"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_ALGO_MD5\fP 2"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_ALGO_MD4\fP 3"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_ALGO_MD2\fP 4"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_ALGO_DSS1\fP 5"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_ALGO_SHA224\fP 6"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_ALGO_SHA256\fP 7"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_ALGO_SHA384\fP 8"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_ALGO_SHA512\fP 9"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_ALGO_RMD160\fP 10"
+.br
+.ti -1c
+.RI "const \fBPKCS7_DETACHED\fP 64"
+.br
+.ti -1c
+.RI "const \fBPKCS7_TEXT\fP 1"
+.br
+.ti -1c
+.RI "const \fBPKCS7_NOINTERN\fP 16"
+.br
+.ti -1c
+.RI "const \fBPKCS7_NOVERIFY\fP 32"
+.br
+.ti -1c
+.RI "const \fBPKCS7_NOCHAIN\fP 8"
+.br
+.ti -1c
+.RI "const \fBPKCS7_NOCERTS\fP 2"
+.br
+.ti -1c
+.RI "const \fBPKCS7_NOATTR\fP 256"
+.br
+.ti -1c
+.RI "const \fBPKCS7_BINARY\fP 128"
+.br
+.ti -1c
+.RI "const \fBPKCS7_NOSIGS\fP 4"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_PKCS1_PADDING\fP 1"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_SSLV23_PADDING\fP 2"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_NO_PADDING\fP 3"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_PKCS1_OAEP_PADDING\fP 4"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_CIPHER_RC2_40\fP 0"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_CIPHER_RC2_128\fP 1"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_CIPHER_RC2_64\fP 2"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_CIPHER_DES\fP 3"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_CIPHER_3DES\fP 4"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_KEYTYPE_RSA\fP 0"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_KEYTYPE_DSA\fP 1"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_KEYTYPE_DH\fP 2"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_KEYTYPE_EC\fP 3"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_TLSEXT_SERVER_NAME\fP 1"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_CIPHER_AES_128_CBC\fP 5"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_CIPHER_AES_192_CBC\fP 6"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_CIPHER_AES_256_CBC\fP 7"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_RAW_DATA\fP 1"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_ZERO_PADDING\fP 2"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_DONT_ZERO_PAD_KEY\fP 4"
+.br
+.ti -1c
+.RI "const \fBOPENSSL_DEFAULT_STREAM_CIPHERS\fP 'ECDHE\-RSA\-AES128\-GCM\-SHA256:ECDHE\-ECDSA\-AES128\-GCM\-SHA256:' \&. 'ECDHE\-RSA\-AES256\-GCM\-SHA384:ECDHE\-ECDSA\-AES256\-GCM\-SHA384:DHE\-RSA\-AES128\-GCM\-SHA256:' \&. 'DHE\-DSS\-AES128\-GCM\-SHA256:kEDH+AESGCM:ECDHE\-RSA\-AES128\-SHA256:ECDHE\-ECDSA\-AES128\-SHA256:' \&. 'ECDHE\-RSA\-AES128\-SHA:ECDHE\-ECDSA\-AES128\-SHA:ECDHE\-RSA\-AES256\-SHA384:ECDHE\-ECDSA\-AES256\-SHA384:' \&. 'ECDHE\-RSA\-AES256\-SHA:ECDHE\-ECDSA\-AES256\-SHA:DHE\-RSA\-AES128\-SHA256:DHE\-RSA\-AES128\-SHA:' \&. 'DHE\-DSS\-AES128\-SHA256:DHE\-RSA\-AES256\-SHA256:DHE\-DSS\-AES256\-SHA:DHE\-RSA\-AES256\-SHA:AES128\-GCM\-SHA256:' \&. 'AES256\-GCM\-SHA384:AES128:AES256:HIGH:!SSLv2:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!RC4:!ADH'"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_SSLv2_CLIENT\fP 3"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_SSLv3_CLIENT\fP 5"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_SSLv23_CLIENT\fP 57"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_TLS_CLIENT\fP 121"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_SSLv2_SERVER\fP 2"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_SSLv3_SERVER\fP 4"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_SSLv23_SERVER\fP 120"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_TLS_SERVER\fP 120"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_ANY_CLIENT\fP 127"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_ANY_SERVER\fP 126"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_TLSv1_0_CLIENT\fP 9"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_TLSv1_0_SERVER\fP 8"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_TLSv1_1_CLIENT\fP 17"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_TLSv1_1_SERVER\fP 16"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_TLSv1_2_CLIENT\fP 33"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_TLSv1_2_SERVER\fP 32"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_TLSv1_3_CLIENT\fP 65"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_METHOD_TLSv1_3_SERVER\fP 64"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_PROTO_SSLv3\fP 4"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_PROTO_TLSv1_0\fP 8"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_PROTO_TLSv1_1\fP 16"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_PROTO_TLSv1_2\fP 32"
+.br
+.ti -1c
+.RI "const \fBSTREAM_CRYPTO_PROTO_TLSv1_3\fP 64"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "openssl_cipher_iv_length ( $method)"
+(PHP 5 >= PHP 5\&.3\&.3)
+.br
+ Gets the cipher iv length \fBstring $method \fP The method\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the cipher length on success, or false on failure\&. 
+.RE
+.PP
+
+.SS "openssl_csr_export ( $csr, & $out,  $notext = \fC\fBtrue\fP\fP)"
+Exports a CSR as a string \fBresource $csr  string $out  bool $notext [optional] &note\&.openssl\&.param-notext;  bool true on success or false on failure\&.  4\&.2  5\&.0 \fP
+.SS "openssl_csr_export_to_file ( $csr,  $outfilename,  $notext = \fC\fBtrue\fP\fP)"
+Exports a CSR to a file \fBresource $csr  string $outfilename \fP Path to the output file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$notext\fP [optional] &note\&.openssl\&.param-notext; 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_csr_get_public_key ( $csr,  $use_shortnames = \fC\fBtrue\fP\fP)"
+Returns the public key of a CERT \fBmixed $csr  bool $use_shortnames [optional]  resource|false  5\&.2 \fP
+.SS "openssl_csr_get_subject ( $csr,  $use_shortnames = \fC\fBtrue\fP\fP)"
+Returns the subject of a CERT \fBmixed $csr  bool $use_shortnames [optional]  array|false  5\&.2 \fP
+.SS "openssl_csr_new (array $dn, & $privkey, array $configargs = \fC\fBnull\fP\fP, array $extraattribs = \fC\fBnull\fP\fP)"
+Generates a CSR \fBarray $dn \fP The Distinguished Name to be used in the certificate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$privkey\fP 
+.RE
+.PP
+\fIprivkey\fP should be set to a private key that was previously generated by \fBopenssl_pkey_new\fP (or otherwise obtained from the other openssl_pkey family of functions)\&. The corresponding public portion of the key will be used to sign the CSR\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$configargs\fP [optional] 
+.RE
+.PP
+By default, the information in your system openssl\&.conf is used to initialize the request; you can specify a configuration file section by setting the config_section_section key of \fIconfigargs\fP\&. You can also specify an alternative openssl configuration file by setting the value of the config key to the path of the file you want to use\&. The following keys, if present in \fIconfigargs\fP behave as their equivalents in the openssl\&.conf, as listed in the table below\&. overrides 
+.PP
+\fIconfigargs\fP key 
+.PP
+type 
+.PP
+openssl\&.conf equivalent 
+.PP
+description  
+.PP
+digest_alg 
+.PP
+string 
+.PP
+default_md 
+.PP
+Selects which digest method to use  
+.PP
+x509_extensions 
+.PP
+string 
+.PP
+x509_extensions 
+.PP
+Selects which extensions should be used when creating an x509 certificate  
+.PP
+req_extensions 
+.PP
+string 
+.PP
+req_extensions 
+.PP
+Selects which extensions should be used when creating a CSR  
+.PP
+private_key_bits 
+.PP
+integer 
+.PP
+default_bits 
+.PP
+Specifies how many bits should be used to generate a private key  
+.PP
+private_key_type 
+.PP
+integer 
+.PP
+none 
+.PP
+Specifies the type of private key to create\&. This can be one of \fBOPENSSL_KEYTYPE_DSA\fP, \fBOPENSSL_KEYTYPE_DH\fP or \fBOPENSSL_KEYTYPE_RSA\fP\&. The default value is \fBOPENSSL_KEYTYPE_RSA\fP which is currently the only supported key type\&.   
+.PP
+encrypt_key 
+.PP
+boolean 
+.PP
+encrypt_key 
+.PP
+Should an exported key (with passphrase) be encrypted?  
+.PP
+encrypt_key_cipher 
+.PP
+integer 
+.PP
+none 
+.PP
+One of cipher constants\&.   
+.PP
+\fBParameters\fP
+.RS 4
+\fI$extraattribs\fP [optional] 
+.RE
+.PP
+\fIextraattribs\fP is used to specify additional configuration options for the CSR\&. Both \fIdn\fP and \fIextraattribs\fP are associative arrays whose keys are converted to OIDs and applied to the relevant part of the request\&. 
+.PP
+\fBReturns\fP
+.RS 4
+false|resource the CSR\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_csr_sign ( $csr,  $cacert,  $priv_key,  $days, array $configargs = \fC\fBnull\fP\fP,  $serial = \fC0\fP)"
+Sign a CSR with another certificate (or itself) and generate a certificate \fBmixed $csr \fP \fBA\fP CSR previously generated by \fBopenssl_csr_new\fP\&. It can also be the path to a PEM encoded CSR when specified as file://path/to/csr or an exported string generated by \fBopenssl_csr_export\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cacert\fP 
+.RE
+.PP
+The generated certificate will be signed by \fIcacert\fP\&. If \fIcacert\fP is null, the generated certificate will be a self-signed certificate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$priv_key\fP 
+.RE
+.PP
+\fIpriv_key\fP is the private key that corresponds to \fIcacert\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$days\fP 
+.RE
+.PP
+\fIdays\fP specifies the length of time for which the generated certificate will be valid, in days\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$configargs\fP [optional] 
+.RE
+.PP
+You can finetune the CSR signing by \fIconfigargs\fP\&. See \fBopenssl_csr_new\fP for more information about \fIconfigargs\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$serial\fP [optional] 
+.RE
+.PP
+An optional the serial number of issued certificate\&. If not specified it will default to 0\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an x509 certificate resource on success, false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_decrypt ( $data,  $method,  $password,  $options = \fC1\fP,  $iv = \fC''\fP,  $tag = \fC''\fP,  $aad = \fC''\fP)"
+Decrypts data \fBstring $data \fP The data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$method\fP 
+.RE
+.PP
+The cipher method\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP 
+.RE
+.PP
+The password\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+Setting to true will take a raw encoded string, otherwise a base64 string is assumed for the \fIdata\fP parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$iv\fP [optional] 
+.RE
+.PP
+\fBA\fP non-NULL Initialization Vector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tag\fP [optional] 
+.RE
+.PP
+The authentication tag in AEAD cipher mode\&. If it is incorrect, the authentication fails and the function returns \fBFALSE\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$aad\fP [optional] 
+.RE
+.PP
+Additional authentication data\&.
+.PP
+\fBReturns\fP
+.RS 4
+string|false The decrypted string on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "openssl_dh_compute_key ( $pub_key,  $dh_key)"
+(No version information available, might only be in SVN)
+.br
+ Computes shared secret for public value of remote DH key and local DH key \fBstring $pub_key \fP Public key 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$dh_key\fP 
+.RE
+.PP
+DH key 
+.PP
+\fBReturns\fP
+.RS 4
+string|false computed key on success or false on failure\&. 
+.RE
+.PP
+
+.SS "openssl_digest ( $data,  $method,  $raw_output = \fC\fBfalse\fP\fP)"
+Computes a digest \fBstring $data \fP The data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$method\fP 
+.RE
+.PP
+The digest method\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$raw_output\fP [optional] 
+.RE
+.PP
+Setting to true will return as raw output data, otherwise the return value is binhex encoded\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the digested hash value on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "openssl_encrypt ( $data,  $method,  $key,  $options = \fC0\fP,  $iv = \fC''\fP, & $tag = \fCNULL\fP,  $aad = \fC''\fP,  $tag_length = \fC16\fP)"
+Encrypts data \fBstring $data \fP The data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$method\fP 
+.RE
+.PP
+The cipher method\&. For a list of available cipher methods, use {
+.PP
+\fBSee also\fP
+.RS 4
+\fBopenssl_get_cipher_methods()\fP}\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP 
+.RE
+.PP
+The key\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+options is a bitwise disjunction of the flags OPENSSL_RAW_DATA and OPENSSL_ZERO_PADDING\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$iv\fP [optional] 
+.RE
+.PP
+\fBA\fP non-NULL Initialization Vector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI&$tag\fP 
+.RE
+.PP
+The authentication tag passed by reference when using AEAD cipher mode (GCM or CCM)\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$aad\fP 
+.RE
+.PP
+Additional authentication data\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$tag_length\fP [optional] 
+.RE
+.PP
+The length of the authentication tag\&. Its value can be between 4 and 16 for GCM mode\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the encrypted string on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "openssl_error_string ()"
+Return openSSL error message \fBstring|false an error message string, or false if there are no more error messages to return\&.  4\&.0\&.6 \fP
+.SS "openssl_free_key ( $key_identifier)"
+Free key resource \fBresource $key_identifier  void  4\&.0\&.4  5\&.0 \fP
+.SS "openssl_get_cert_locations ()"
+Retrieve the available certificate locations \fBarray an array with the available certificate locations  5\&.6 \fP
+.SS "openssl_get_cipher_methods ( $aliases = \fC\fBfalse\fP\fP)"
+Gets available cipher methods \fBbool $aliases [optional] \fP Set to true if cipher aliases should be included within the returned array\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array An array of available cipher methods\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "openssl_get_curve_names ()"
+
+.SS "openssl_get_md_methods ( $aliases = \fC\fBfalse\fP\fP)"
+Gets available digest methods \fBbool $aliases [optional] \fP Set to true if digest aliases should be included within the returned array\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array An array of available digest methods\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "openssl_get_privatekey ( $key,  $passphrase)"
+Alias of \fBopenssl_pkey_get_private\fP \fB$key \fP \fB\fIkey\fP\fP can be one of the following: 
+.PD 0
+
+.IP "1." 4
+a string having the format \fIfile://path/to/file.pem\fP\&. The named file must contain a PEM encoded certificate/private key (it may contain both)\&.  
+.IP "2." 4
+\fBA\fP PEM formatted private key\&. 
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$passphrase\fP [optional] 
+.RE
+.PP
+The optional parameter \fB\fIpassphrase\fP\fP must be used if the specified key is encrypted (protected by a passphrase)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false Returns a positive key resource identifier on success, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_get_publickey ( $certificate)"
+Alias of \fBopenssl_pkey_get_public\fP \fBmixed $certificate \fP \fI\fBcertificate\fP\fP can be one of the following: 
+.PD 0
+
+.IP "1." 4
+an X\&.509 certificate resource 
+.IP "2." 4
+a string having the format \fIfile://path/to/file.pem\fP\&. The named file must contain a PEM encoded certificate/public key (it may contain both)\&.   
+.IP "3." 4
+\fBA\fP PEM formatted public key\&. 
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a positive key resource identifier on success, or FALSE on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_open ( $sealed_data, & $open_data,  $env_key,  $priv_key_id,  $method = \fC'RC4'\fP, string $iv)"
+Open sealed data \fBstring $sealed_data  string $open_data \fP If the call is successful the opened data is returned in this parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$env_key\fP 
+.br
+\fI$priv_key_id\fP 
+.br
+\fI$method\fP [optional] The cipher method\&. 
+.br
+\fI$iv\fP [optional] The initialization vector\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_pbkdf2 ( $password,  $salt,  $key_length,  $iterations,  $digest_algorithm)"
+Generates a PKCS5 v2 PBKDF2 string, defaults to SHA-1 \fBstring $password  string $salt  int $key_length  int $iterations  string $digest_algorithm [optional]  string|false Returns string or FALSE on failure\&.  5\&.5 \fP
+.SS "openssl_pkcs12_export ( $x509, & $out,  $priv_key,  $pass, array $args = \fC\fBnull\fP\fP)"
+Exports a PKCS#12 Compatible Certificate Store File to variable\&. \fBmixed $x509  string $out \fP On success, this will hold the PKCS#12\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$priv_key\fP 
+.RE
+.PP
+Private key component of PKCS#12 file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pass\fP 
+.RE
+.PP
+Encryption password for unlocking the PKCS#12 file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$args\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2\&.2 
+.RE
+.PP
+
+.SS "openssl_pkcs12_export_to_file ( $x509,  $filename,  $priv_key,  $pass, array $args = \fC\fBnull\fP\fP)"
+Exports a PKCS#12 Compatible Certificate Store File \fBmixed $x509  string $filename \fP Path to the output file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$priv_key\fP 
+.RE
+.PP
+Private key component of PKCS#12 file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pass\fP 
+.RE
+.PP
+Encryption password for unlocking the PKCS#12 file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$args\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2\&.2 
+.RE
+.PP
+
+.SS "openssl_pkcs12_read ( $pkcs12, array & $certs,  $pass)"
+Parse a PKCS#12 Certificate Store into an array \fBstring $pkcs12  array $certs \fP On success, this will hold the Certificate Store Data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pass\fP 
+.RE
+.PP
+Encryption password for unlocking the PKCS#12 file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2\&.2 
+.RE
+.PP
+
+.SS "openssl_pkcs7_decrypt ( $infilename,  $outfilename,  $recipcert,  $recipkey = \fC\fBnull\fP\fP)"
+Decrypts an S/MIME encrypted message \fBstring $infilename  string $outfilename \fP The decrypted message is written to the file specified by \fIoutfilename\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$recipcert\fP 
+.br
+\fI$recipkey\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_pkcs7_encrypt ( $infile,  $outfile,  $recipcerts, array $headers,  $flags = \fC0\fP,  $cipherid = \fC\fBOPENSSL_CIPHER_RC2_40\fP\fP)"
+Encrypt an S/MIME message \fBstring $infile  string $outfile  mixed $recipcerts \fP Either a lone X\&.509 certificate, or an array of X\&.509 certificates\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$headers\fP 
+.RE
+.PP
+\fIheaders\fP is an array of headers that will be prepended to the data after it has been encrypted\&. 
+.PP
+\fIheaders\fP can be either an associative array keyed by header name, or an indexed array, where each element contains a single header line\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+\fIflags\fP can be used to specify options that affect the encoding process - see PKCS7 constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cipherid\fP [optional] 
+.RE
+.PP
+One of cipher constants\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_pkcs7_read ( $P7B, & $certs)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$P7B\fP 
+.br
+\fI$certs\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "openssl_pkcs7_sign ( $infilename,  $outfilename,  $signcert,  $privkey, array $headers,  $flags = \fC\fBPKCS7_DETACHED\fP\fP,  $extracerts = \fC\fBnull\fP\fP)"
+Sign an S/MIME message \fBstring $infilename  string $outfilename  mixed $signcert  mixed $privkey  array $headers \fP \fIheaders\fP is an array of headers that will be prepended to the data after it has been signed (see \fBopenssl_pkcs7_encrypt\fP for more information about the format of this parameter)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+\fIflags\fP can be used to alter the output - see PKCS7 constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$extracerts\fP [optional] 
+.RE
+.PP
+\fIextracerts\fP specifies the name of a file containing a bunch of extra certificates to include in the signature which can for example be used to help the recipient to verify the certificate that you used\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_pkcs7_verify ( $filename,  $flags,  $outfilename = \fC\fBnull\fP\fP, array $cainfo = \fC\fBnull\fP\fP,  $extracerts = \fC\fBnull\fP\fP,  $content = \fC\fBnull\fP\fP,  $pk7 = \fC\fBnull\fP\fP)"
+Verifies the signature of an S/MIME signed message \fBstring $filename \fP Path to the message\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP 
+.RE
+.PP
+\fIflags\fP can be used to affect how the signature is verified - see PKCS7 constants for more information\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$outfilename\fP [optional] 
+.RE
+.PP
+If the \fIoutfilename\fP is specified, it should be a string holding the name of a file into which the certificates of the persons that signed the messages will be stored in PEM format\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cainfo\fP [optional] 
+.RE
+.PP
+If the \fIcainfo\fP is specified, it should hold information about the trusted CA certificates to use in the verification process - see certificate verification for more information about this parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$extracerts\fP [optional] 
+.RE
+.PP
+If the \fIextracerts\fP is specified, it is the filename of a file containing a bunch of certificates to use as untrusted CAs\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$content\fP [optional] 
+.RE
+.PP
+You can specify a filename with \fIcontent\fP that will be filled with the verified data, but with the signature information stripped\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pk7\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool|int true if the signature is verified, false if it is not correct (the message has been tampered with, or the signing certificate is invalid), or -1 on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_pkey_derive ( $peer_pub_key,  $priv_key,  $keylen)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$peer_pub_key\fP 
+.br
+\fI$priv_key\fP 
+.br
+\fI$keylen\fP 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.3 
+.RE
+.PP
+
+.SS "openssl_pkey_export ( $key, & $out,  $passphrase = \fC\fBnull\fP\fP, array $configargs = \fC\fBnull\fP\fP)"
+Gets an exportable representation of a key into a string \fBmixed $key  string $out  string $passphrase [optional] \fP The key is optionally protected by \fIpassphrase\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$configargs\fP [optional] 
+.RE
+.PP
+\fIconfigargs\fP can be used to fine-tune the export process by specifying and/or overriding options for the openssl configuration file\&. See \fBopenssl_csr_new\fP for more information about \fIconfigargs\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_pkey_export_to_file ( $key,  $outfilename,  $passphrase = \fC\fBnull\fP\fP, array $configargs = \fC\fBnull\fP\fP)"
+Gets an exportable representation of a key into a file \fBmixed $key  string $outfilename \fP Path to the output file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$passphrase\fP [optional] 
+.RE
+.PP
+The key can be optionally protected by a \fIpassphrase\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$configargs\fP [optional] 
+.RE
+.PP
+\fIconfigargs\fP can be used to fine-tune the export process by specifying and/or overriding options for the openssl configuration file\&. See \fBopenssl_csr_new\fP for more information about \fIconfigargs\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_pkey_free ( $key)"
+Frees a private key \fBresource $key \fP Resource holding the key\&. 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_pkey_get_details ( $key)"
+Returns an array with the key details \fBresource $key \fP Resource holding the key\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array with the key details in success or false in failure\&. Returned array has indexes bits (number of bits), key (string representation of the public key) and type (type of the key which is one of \fBOPENSSL_KEYTYPE_RSA\fP, \fBOPENSSL_KEYTYPE_DSA\fP, \fBOPENSSL_KEYTYPE_DH\fP, \fBOPENSSL_KEYTYPE_EC\fP or -1 meaning unknown)\&. 
+.RE
+.PP
+.PP
+Depending on the key type used, additional details may be returned\&. Note that some elements may not always be available\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "openssl_pkey_get_private ( $key,  $passphrase = \fC''\fP)"
+Get a private key \fB$key \fP \fB\fIkey\fP\fP can be one of the following: 
+.PD 0
+
+.IP "1." 4
+a string having the format \fIfile://path/to/file.pem\fP\&. The named file must contain a PEM encoded certificate/private key (it may contain both)\&.  
+.IP "2." 4
+\fBA\fP PEM formatted private key\&. 
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$passphrase\fP [optional] 
+.RE
+.PP
+The optional parameter \fB\fIpassphrase\fP\fP must be used if the specified key is encrypted (protected by a passphrase)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false Returns a positive key resource identifier on success, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_pkey_get_public ( $certificate)"
+Extract public key from certificate and prepare it for use \fBmixed $certificate \fP\fI\fBcertificate\fP\fP can be one of the following: 
+.PD 0
+
+.IP "1." 4
+an X\&.509 certificate resource 
+.IP "2." 4
+a string having the format \fIfile://path/to/file.pem\fP\&. The named file must contain a PEM encoded certificate/public key (it may contain both)\&.   
+.IP "3." 4
+\fBA\fP PEM formatted public key\&. 
+.PP
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a positive key resource identifier on success, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_pkey_new (array $configargs = \fC\fBnull\fP\fP)"
+Generates a new private key \fBarray $configargs [optional] \fP You can finetune the key generation (such as specifying the number of bits) using \fIconfigargs\fP\&. See \fBopenssl_csr_new\fP for more information about \fIconfigargs\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false a resource identifier for the pkey on success, or false on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_private_decrypt ( $data, & $decrypted,  $key,  $padding = \fC\fBOPENSSL_PKCS1_PADDING\fP\fP)"
+Decrypts data with private key \fBstring $data  string $decrypted  mixed $key \fP \fIkey\fP must be the private key corresponding that was used to encrypt the data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$padding\fP [optional] 
+.RE
+.PP
+\fIpadding\fP can be one of \fBOPENSSL_PKCS1_PADDING\fP, \fBOPENSSL_SSLV23_PADDING\fP, \fBOPENSSL_PKCS1_OAEP_PADDING\fP, \fBOPENSSL_NO_PADDING\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_private_encrypt ( $data, & $crypted,  $key,  $padding = \fC\fBOPENSSL_PKCS1_PADDING\fP\fP)"
+Encrypts data with private key \fBstring $data  string $crypted  mixed $key  int $padding [optional] \fP \fIpadding\fP can be one of \fBOPENSSL_PKCS1_PADDING\fP, \fBOPENSSL_NO_PADDING\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_public_decrypt ( $data, & $decrypted,  $key,  $padding = \fC\fBOPENSSL_PKCS1_PADDING\fP\fP)"
+Decrypts data with public key \fBstring $data  string $decrypted  mixed $key \fP \fIkey\fP must be the public key corresponding that was used to encrypt the data\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$padding\fP [optional] 
+.RE
+.PP
+\fIpadding\fP can be one of \fBOPENSSL_PKCS1_PADDING\fP, \fBOPENSSL_NO_PADDING\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_public_encrypt ( $data, & $crypted,  $key,  $padding = \fC\fBOPENSSL_PKCS1_PADDING\fP\fP)"
+Encrypts data with public key \fBstring $data  string $crypted \fP This will hold the result of the encryption\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP 
+.RE
+.PP
+The public key\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$padding\fP [optional] 
+.RE
+.PP
+\fIpadding\fP can be one of \fBOPENSSL_PKCS1_PADDING\fP, \fBOPENSSL_SSLV23_PADDING\fP, \fBOPENSSL_PKCS1_OAEP_PADDING\fP, \fBOPENSSL_NO_PADDING\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_random_pseudo_bytes ( $length, & $crypto_strong = \fC\fBnull\fP\fP)"
+Generates a string of pseudo-random bytes, with the number of bytes determined by the length parameter\&. 
+.PP
+It also indicates if a cryptographically strong algorithm was used to produce the pseudo-random bytes, and does this via the optional crypto_strong parameter\&. It's rare for this to be FALSE, but some systems may be broken or old\&. \fBint $length \fP The length of the desired string of bytes\&. Must be a positive integer\&. PHP will try to cast this parameter to a non-null integer to use it\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$crypto_strong\fP [optional]
+.RE
+.PP
+If passed into the function, this will hold a boolean value that determines if the algorithm used was 'cryptographically strong', e\&.g\&., safe for usage with GPG, passwords, etc\&. true if it did, otherwise false 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the generated  of bytes on success, or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "openssl_seal ( $data, & $sealed_data, array & $env_keys, array $pub_key_ids,  $method = \fC\fBnull\fP\fP,  $iv = \fC''\fP)"
+Seal (encrypt) data \fBstring $data  string $sealed_data  array $env_keys  array $pub_key_ids  string $method [optional]  string $iv [optional]  int|false the length of the sealed data on success, or false on error\&. If successful the sealed data is returned in \fIsealed_data\fP, and the envelope keys in \fIenv_keys\fP\&.  4\&.0\&.4  5\&.0 \fP
+.SS "openssl_sign ( $data, & $signature,  $priv_key_id,  $signature_alg = \fC\fBOPENSSL_ALGO_SHA1\fP\fP)"
+Generate signature \fBstring $data  string $signature \fP If the call was successful the signature is returned in \fIsignature\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$priv_key_id\fP 
+.br
+\fI$signature_alg\fP [optional] 
+.RE
+.PP
+For more information see the list of Signature Algorithms\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_spki_export (& $spkac)"
+Exports a valid PEM formatted public key signed public key and challenge \fBstring $spkac \fPExpects a valid signed public key and challenge
+.PP
+\fBReturns\fP
+.RS 4
+string|null Returns the associated PEM formatted public key or NULL on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.6 
+.RE
+.PP
+
+.SS "openssl_spki_export_challenge (& $spkac)"
+Exports the challenge assoicated with a signed public key and challenge \fBstring $spkac \fPExpects a valid signed public key and challenge
+.PP
+\fBReturns\fP
+.RS 4
+string|null Returns the associated challenge string or NULL on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.6 
+.RE
+.PP
+
+.SS "openssl_spki_new (& $privkey, & $challenge,  $algorithm = \fC0\fP)"
+Generate a new signed public key and challenge \fBresource $privkey \fP \fBprivkey\fP should be set to a private key that was previously generated by \fBopenssl_pkey_new()\fP (or otherwise obtained from the other openssl_pkey family of functions)\&. The corresponding public portion of the key will be used to sign the CSR\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$challenge\fP 
+.RE
+.PP
+The challenge associated to associate with the SPKAC
+.PP
+\fBParameters\fP
+.RS 4
+\fI$algorithm\fP 
+.RE
+.PP
+The digest algorithm\&. See openssl_get_md_method()\&.
+.PP
+\fBReturns\fP
+.RS 4
+string|null Returns a signed public key and challenge string or NULL on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.6 
+.RE
+.PP
+
+.SS "openssl_spki_verify (& $spkac)"
+Verifies a signed public key and challenge \fBstring $spkac \fPExpects a valid signed public key and challenge
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns a boolean on success or failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.6 
+.RE
+.PP
+
+.SS "openssl_verify ( $data,  $signature,  $pub_key_id,  $signature_alg = \fC\fBOPENSSL_ALGO_SHA1\fP\fP)"
+Verify signature \fBstring $data  string $signature  mixed $pub_key_id  int $signature_alg [optional] \fP For more information see the list of Signature Algorithms\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int 1 if the signature is correct, 0 if it is incorrect, and -1 on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.4 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_x509_check_private_key ( $cert,  $key)"
+Checks if a private key corresponds to a certificate \fBmixed $cert \fP The certificate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$key\fP 
+.RE
+.PP
+The private key\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool true if \fIkey\fP is the private key that corresponds to \fIcert\fP, or false otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_x509_checkpurpose ( $x509cert,  $purpose, array $cainfo = \fC\fBnull\fP\fP,  $untrustedfile = \fC\fBnull\fP\fP)"
+Verifies if a certificate can be used for a particular purpose \fBmixed $x509cert \fP The examined certificate\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$purpose\fP 
+.RE
+.PP
+openssl_x509_checkpurpose purposes 
+.PP
+Constant 
+.PP
+Description  
+.PP
+X509_PURPOSE_SSL_CLIENT 
+.PP
+Can the certificate be used for the client side of an SSL connection?  
+.PP
+X509_PURPOSE_SSL_SERVER 
+.PP
+Can the certificate be used for the server side of an SSL connection?  
+.PP
+X509_PURPOSE_NS_SSL_SERVER 
+.PP
+Can the cert be used for Netscape SSL server?  
+.PP
+X509_PURPOSE_SMIME_SIGN 
+.PP
+Can the cert be used to sign S/MIME email?  
+.PP
+X509_PURPOSE_SMIME_ENCRYPT 
+.PP
+Can the cert be used to encrypt S/MIME email?  
+.PP
+X509_PURPOSE_CRL_SIGN 
+.PP
+Can the cert be used to sign a certificate revocation list (CRL)?  
+.PP
+X509_PURPOSE_ANY 
+.PP
+Can the cert be used for Any/All purposes?  
+.PP
+These options are not bitfields - you may specify one only! 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cainfo\fP [optional] 
+.RE
+.PP
+\fIcainfo\fP should be an array of trusted CA files/dirs as described in Certificate Verification\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$untrustedfile\fP [optional] 
+.RE
+.PP
+If specified, this should be the name of a PEM encoded file holding certificates that can be used to help verify the certificate, although no trust is placed in the certificates that come from that file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|bool true if the certificate can be used for the intended purpose, false if it cannot, or -1 on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_x509_export ( $x509, & $output,  $notext = \fC\fBtrue\fP\fP)"
+Exports a certificate as a string \fBmixed $x509  string $output \fP On success, this will hold the PEM\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$notext\fP [optional] &note\&.openssl\&.param-notext; 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_x509_export_to_file ( $x509,  $outfilename,  $notext = \fC\fBtrue\fP\fP)"
+Exports a certificate to file \fBmixed $x509  string $outfilename \fP Path to the output file\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$notext\fP [optional] &note\&.openssl\&.param-notext; 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool true on success or false on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_x509_fingerprint ( $x509,  $type,  $binary)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$x509\fP 
+.br
+\fI$type\fP [optional] hash method 
+.br
+\fI$binary\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|false \fBFALSE\fP on failure 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.6 
+.RE
+.PP
+
+.SS "openssl_x509_free ( $x509cert)"
+Free certificate resource \fBresource $x509cert  void  4\&.0\&.6  5\&.0 \fP
+.SS "openssl_x509_parse ( $x509cert,  $shortnames = \fC\fBtrue\fP\fP)"
+Parse an X509 certificate and return the information as an array \fBmixed $x509cert  bool $shortnames [optional] \fP \fIshortnames\fP controls how the data is indexed in the array - if \fIshortnames\fP is true (the default) then fields will be indexed with the short name form, otherwise, the long name form will be used - e\&.g\&.: CN is the shortname form of commonName\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false The structure of the returned data is (deliberately) not yet documented, as it is still subject to change\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "openssl_x509_read ( $x509certdata)"
+Parse an X\&.509 certificate and return a resource identifier for 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.6 
+.PP
+5\&.0 it \fBmixed $x509certdata  resource|false a resource identifier on success or false on failure\&. \fP
+.RE
+.PP
+
+.SS "openssl_x509_verify ( $cert,  $key)"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const OPENSSL_ALGO_DSS1 5"
+
+.SS "const OPENSSL_ALGO_MD2 4"
+
+.SS "const OPENSSL_ALGO_MD4 3"
+
+.SS "const OPENSSL_ALGO_MD5 2"
+
+.SS "const OPENSSL_ALGO_RMD160 10"
+
+.SS "const OPENSSL_ALGO_SHA1 1"
+Used as default algorithm by \fBopenssl_sign\fP and \fBopenssl_verify\fP\&. \fBhttps://php\&.net/manual/en/openssl\&.constants\&.php\fP
+.SS "const OPENSSL_ALGO_SHA224 6"
+
+.SS "const OPENSSL_ALGO_SHA256 7"
+
+.SS "const OPENSSL_ALGO_SHA384 8"
+
+.SS "const OPENSSL_ALGO_SHA512 9"
+
+.SS "const OPENSSL_CIPHER_3DES 4"
+
+.SS "const OPENSSL_CIPHER_AES_128_CBC 5"
+\fBhttps://php\&.net/manual/en/openssl\&.ciphers\&.php\fP
+.SS "const OPENSSL_CIPHER_AES_192_CBC 6"
+\fBhttps://php\&.net/manual/en/openssl\&.ciphers\&.php\fP
+.SS "const OPENSSL_CIPHER_AES_256_CBC 7"
+\fBhttps://php\&.net/manual/en/openssl\&.ciphers\&.php\fP
+.SS "const OPENSSL_CIPHER_DES 3"
+
+.SS "const OPENSSL_CIPHER_RC2_128 1"
+
+.SS "const OPENSSL_CIPHER_RC2_40 0"
+
+.SS "const OPENSSL_CIPHER_RC2_64 2"
+
+.SS "const OPENSSL_DEFAULT_STREAM_CIPHERS 'ECDHE\-RSA\-AES128\-GCM\-SHA256:ECDHE\-ECDSA\-AES128\-GCM\-SHA256:' \&. 'ECDHE\-RSA\-AES256\-GCM\-SHA384:ECDHE\-ECDSA\-AES256\-GCM\-SHA384:DHE\-RSA\-AES128\-GCM\-SHA256:' \&. 'DHE\-DSS\-AES128\-GCM\-SHA256:kEDH+AESGCM:ECDHE\-RSA\-AES128\-SHA256:ECDHE\-ECDSA\-AES128\-SHA256:' \&. 'ECDHE\-RSA\-AES128\-SHA:ECDHE\-ECDSA\-AES128\-SHA:ECDHE\-RSA\-AES256\-SHA384:ECDHE\-ECDSA\-AES256\-SHA384:' \&. 'ECDHE\-RSA\-AES256\-SHA:ECDHE\-ECDSA\-AES256\-SHA:DHE\-RSA\-AES128\-SHA256:DHE\-RSA\-AES128\-SHA:' \&. 'DHE\-DSS\-AES128\-SHA256:DHE\-RSA\-AES256\-SHA256:DHE\-DSS\-AES256\-SHA:DHE\-RSA\-AES256\-SHA:AES128\-GCM\-SHA256:' \&. 'AES256\-GCM\-SHA384:AES128:AES256:HIGH:!SSLv2:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!RC4:!ADH'"
+
+.SS "const OPENSSL_DONT_ZERO_PAD_KEY 4"
+
+.SS "const OPENSSL_KEYTYPE_DH 2"
+
+.SS "const OPENSSL_KEYTYPE_DSA 1"
+
+.SS "const OPENSSL_KEYTYPE_EC 3"
+
+.SS "const OPENSSL_KEYTYPE_RSA 0"
+
+.SS "const OPENSSL_NO_PADDING 3"
+
+.SS "const OPENSSL_PKCS1_OAEP_PADDING 4"
+
+.SS "const OPENSSL_PKCS1_PADDING 1"
+
+.SS "const OPENSSL_RAW_DATA 1"
+
+.SS "const OPENSSL_SSLV23_PADDING 2"
+
+.SS "const OPENSSL_TLSEXT_SERVER_NAME 1"
+Whether SNI support is available or not\&. \fBhttps://php\&.net/manual/en/openssl\&.constants\&.php\fP
+.SS "const OPENSSL_VERSION_NUMBER 268435551"
+
+.SS "const OPENSSL_VERSION_TEXT 'OpenSSL 1\&.0\&.0e 6 Sep 2011'"
+
+.SS "const OPENSSL_ZERO_PADDING 2"
+
+.SS "const PKCS7_BINARY 128"
+Normally the input message is converted to 'canonical' format which is effectively using CR and LF as end of line: as required by the S/MIME specification\&. When this option is present, no translation occurs\&. This is useful when handling binary data which may not be in MIME format\&. \fBhttps://php\&.net/manual/en/openssl\&.constants\&.php\fP
+.SS "const PKCS7_DETACHED 64"
+When signing a message, use cleartext signing with the MIME type 'multipart/signed'\&. This is the default if you do not specify any \fIflags\fP to \fBopenssl_pkcs7_sign\fP\&. If you turn this option off, the message will be signed using opaque signing, which is more resistant to translation by mail relays but cannot be read by mail agents that do not support S/MIME\&. \fBhttps://php\&.net/manual/en/openssl\&.constants\&.php\fP
+.SS "const PKCS7_NOATTR 256"
+Normally when a message is signed, a set of attributes are included which include the signing time and the supported symmetric algorithms\&. With this option they are not included\&. \fBhttps://php\&.net/manual/en/openssl\&.constants\&.php\fP
+.SS "const PKCS7_NOCERTS 2"
+When signing a message the signer's certificate is normally included - with this option it is excluded\&. This will reduce the size of the signed message but the verifier must have a copy of the signers certificate available locally (passed using the \fIextracerts\fP to \fBopenssl_pkcs7_verify\fP for example)\&. \fBhttps://php\&.net/manual/en/openssl\&.constants\&.php\fP
+.SS "const PKCS7_NOCHAIN 8"
+Do not chain verification of signers certificates: that is don't use the certificates in the signed message as untrusted CAs\&. \fBhttps://php\&.net/manual/en/openssl\&.constants\&.php\fP
+.SS "const PKCS7_NOINTERN 16"
+When verifying a message, certificates (if any) included in the message are normally searched for the signing certificate\&. With this option only the certificates specified in the \fIextracerts\fP parameter of \fBopenssl_pkcs7_verify\fP are used\&. The supplied certificates can still be used as untrusted CAs however\&. \fBhttps://php\&.net/manual/en/openssl\&.constants\&.php\fP
+.SS "const PKCS7_NOSIGS 4"
+Don't try and verify the signatures on a message \fBhttps://php\&.net/manual/en/openssl\&.constants\&.php\fP
+.SS "const PKCS7_NOVERIFY 32"
+Do not verify the signers certificate of a signed message\&. \fBhttps://php\&.net/manual/en/openssl\&.constants\&.php\fP
+.SS "const PKCS7_TEXT 1"
+Adds text/plain content type headers to encrypted/signed message\&. If decrypting or verifying, it strips those headers from the output - if the decrypted or verified message is not of MIME type text/plain then an error will occur\&. \fBhttps://php\&.net/manual/en/openssl\&.constants\&.php\fP
+.SS "const STREAM_CRYPTO_METHOD_ANY_CLIENT 127"
+
+.SS "const STREAM_CRYPTO_METHOD_ANY_SERVER 126"
+
+.SS "const STREAM_CRYPTO_METHOD_SSLv23_CLIENT 57"
+
+.SS "const STREAM_CRYPTO_METHOD_SSLv23_SERVER 120"
+
+.SS "const STREAM_CRYPTO_METHOD_SSLv2_CLIENT 3"
+
+.SS "const STREAM_CRYPTO_METHOD_SSLv2_SERVER 2"
+
+.SS "const STREAM_CRYPTO_METHOD_SSLv3_CLIENT 5"
+
+.SS "const STREAM_CRYPTO_METHOD_SSLv3_SERVER 4"
+
+.SS "const STREAM_CRYPTO_METHOD_TLS_CLIENT 121"
+
+.SS "const STREAM_CRYPTO_METHOD_TLS_SERVER 120"
+
+.SS "const STREAM_CRYPTO_METHOD_TLSv1_0_CLIENT 9"
+
+.SS "const STREAM_CRYPTO_METHOD_TLSv1_0_SERVER 8"
+
+.SS "const STREAM_CRYPTO_METHOD_TLSv1_1_CLIENT 17"
+
+.SS "const STREAM_CRYPTO_METHOD_TLSv1_1_SERVER 16"
+
+.SS "const STREAM_CRYPTO_METHOD_TLSv1_2_CLIENT 33"
+
+.SS "const STREAM_CRYPTO_METHOD_TLSv1_2_SERVER 32"
+
+.SS "const STREAM_CRYPTO_METHOD_TLSv1_3_CLIENT 65"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "const STREAM_CRYPTO_METHOD_TLSv1_3_SERVER 64"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "const STREAM_CRYPTO_PROTO_SSLv3 4"
+
+.SS "const STREAM_CRYPTO_PROTO_TLSv1_0 8"
+
+.SS "const STREAM_CRYPTO_PROTO_TLSv1_1 16"
+
+.SS "const STREAM_CRYPTO_PROTO_TLSv1_2 32"
+
+.SS "const STREAM_CRYPTO_PROTO_TLSv1_3 64"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.4 
+.RE
+.PP
+
+.SS "const X509_PURPOSE_ANY 7"
+
+.SS "const X509_PURPOSE_CRL_SIGN 6"
+
+.SS "const X509_PURPOSE_NS_SSL_SERVER 3"
+
+.SS "const X509_PURPOSE_SMIME_ENCRYPT 5"
+
+.SS "const X509_PURPOSE_SMIME_SIGN 4"
+
+.SS "const X509_PURPOSE_SSL_CLIENT 1"
+
+.SS "const X509_PURPOSE_SSL_SERVER 2"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

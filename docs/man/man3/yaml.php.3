@@ -1,0 +1,183 @@
+.TH "vendor/jetbrains/phpstorm-stubs/yaml/yaml.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/yaml/yaml.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fByaml_emit_file\fP ($filename, $data, $encoding=\fBYAML_ANY_ENCODING\fP, $linebreak=\fBYAML_ANY_BREAK\fP, $callbacks=array())"
+.br
+.ti -1c
+.RI "\fByaml_emit\fP ($data, $encoding=\fBYAML_ANY_ENCODING\fP, $linebreak=\fBYAML_ANY_BREAK\fP, $callbacks=array())"
+.br
+.ti -1c
+.RI "\fByaml_parse_file\fP ($filename, $\fBpos\fP=0, &$ndocs=\fBnull\fP, $callbacks=array())"
+.br
+.ti -1c
+.RI "\fByaml_parse_url\fP ($url, $\fBpos\fP=0, &$ndocs=\fBnull\fP, $callbacks=array())"
+.br
+.ti -1c
+.RI "\fByaml_parse\fP ($input, $\fBpos\fP=0, &$ndocs=\fBnull\fP, $callbacks=array())"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBYAML_ANY_SCALAR_STYLE\fP 0"
+.br
+.ti -1c
+.RI "const \fBYAML_PLAIN_SCALAR_STYLE\fP 1"
+.br
+.ti -1c
+.RI "const \fBYAML_SINGLE_QUOTED_SCALAR_STYLE\fP 2"
+.br
+.ti -1c
+.RI "const \fBYAML_DOUBLE_QUOTED_SCALAR_STYLE\fP 3"
+.br
+.ti -1c
+.RI "const \fBYAML_LITERAL_SCALAR_STYLE\fP 4"
+.br
+.ti -1c
+.RI "const \fBYAML_FOLDED_SCALAR_STYLE\fP 5"
+.br
+.ti -1c
+.RI "const \fBYAML_NULL_TAG\fP 'tag:yaml\&.org,2002:\fBnull\fP'"
+.br
+.ti -1c
+.RI "const \fBYAML_BOOL_TAG\fP 'tag:yaml\&.org,2002:bool'"
+.br
+.ti -1c
+.RI "const \fBYAML_STR_TAG\fP 'tag:yaml\&.org,2002:str'"
+.br
+.ti -1c
+.RI "const \fBYAML_INT_TAG\fP 'tag:yaml\&.org,2002:int'"
+.br
+.ti -1c
+.RI "const \fBYAML_FLOAT_TAG\fP 'tag:yaml\&.org,2002:float'"
+.br
+.ti -1c
+.RI "const \fBYAML_TIMESTAMP_TAG\fP 'tag:yaml\&.org,2002:timestamp'"
+.br
+.ti -1c
+.RI "const \fBYAML_SEQ_TAG\fP 'tag:yaml\&.org,2002:seq'"
+.br
+.ti -1c
+.RI "const \fBYAML_MAP_TAG\fP 'tag:yaml\&.org,2002:map'"
+.br
+.ti -1c
+.RI "const \fBYAML_PHP_TAG\fP '!\fBphp\fP/object'"
+.br
+.ti -1c
+.RI "const \fBYAML_ANY_ENCODING\fP 0"
+.br
+.ti -1c
+.RI "const \fBYAML_UTF8_ENCODING\fP 1"
+.br
+.ti -1c
+.RI "const \fBYAML_UTF16LE_ENCODING\fP 2"
+.br
+.ti -1c
+.RI "const \fBYAML_UTF16BE_ENCODING\fP 3"
+.br
+.ti -1c
+.RI "const \fBYAML_ANY_BREAK\fP 0"
+.br
+.ti -1c
+.RI "const \fBYAML_CR_BREAK\fP 1"
+.br
+.ti -1c
+.RI "const \fBYAML_LN_BREAK\fP 2"
+.br
+.ti -1c
+.RI "const \fBYAML_CRLN_BREAK\fP 3"
+.br
+.ti -1c
+.RI "const \fBYAML_MERGE_TAG\fP 'tag:yaml\&.org,2002:merge'"
+.br
+.ti -1c
+.RI "const \fBYAML_BINARY_TAG\fP 'tag:yaml\&.org,2002:binary'"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "yaml_emit ( $data,  $encoding = \fC\fBYAML_ANY_ENCODING\fP\fP,  $linebreak = \fC\fBYAML_ANY_BREAK\fP\fP,  $callbacks = \fCarray()\fP)"
+(PHP 5 >= 5\&.2\&.0, PECL yaml >= 0\&.5\&.0)
+.br
+ \fBmixed $data The data being encoded\&. Can be any type except a resource\&.  int $encoding [optional] Output character encoding chosen from YAML_ANY_ENCODING, YAML_UTF8_ENCODING, YAML_UTF16LE_ENCODING, YAML_UTF16BE_ENCODING\&.  int $linebreak [optional] Output linebreak style chosen from YAML_ANY_BREAK, YAML_CR_BREAK, YAML_LN_BREAK, YAML_CRLN_BREAK\&.  array $callbacks [optional] Content handlers for YAML nodes\&. Associative array of YAML tag => callable mappings\&. See parse callbacks for more details\&.  string Returns a YAML encoded string on success\&. \fP
+.SS "yaml_emit_file ( $filename,  $data,  $encoding = \fC\fBYAML_ANY_ENCODING\fP\fP,  $linebreak = \fC\fBYAML_ANY_BREAK\fP\fP,  $callbacks = \fCarray()\fP)"
+(PHP 5 >= 5\&.2\&.0, PECL yaml >= 0\&.5\&.0)
+.br
+ Send the YAML representation of a value to a file \fBstring $filename Path to the file\&.  mixed $data The data being encoded\&. Can be any type except a resource\&.  int $encoding Output character encoding chosen from YAML_ANY_ENCODING, YAML_UTF8_ENCODING, YAML_UTF16LE_ENCODING, YAML_UTF16BE_ENCODING\&.  int $linebreak Output linebreak style chosen from YAML_ANY_BREAK, YAML_CR_BREAK, YAML_LN_BREAK, YAML_CRLN_BREAK\&.  array $callbacks [optional] Content handlers for YAML nodes\&. Associative array of YAML tag => callable mappings\&. See parse callbacks for more details\&.  bool Returns TRUE on success\&. \fP
+.SS "yaml_parse ( $input,  $pos = \fC0\fP, & $ndocs = \fC\fBnull\fP\fP,  $callbacks = \fCarray()\fP)"
+(PHP 5 >= 5\&.2\&.0, PECL yaml >= 0\&.4\&.0)
+.br
+ Parse a YAML stream \fBstring $input The string to parse as a YAML document stream\&.  int $pos [optional] Document to extract from stream (-1 for all documents, 0 for first document, \&.\&.\&.)\&.  int &$ndocs [optional] If ndocs is provided, then it is filled with the number of documents found in stream\&.  array $callbacks [optional] Content handlers for YAML nodes\&. Associative array of YAML tag => callable mappings\&. See parse callbacks for more details\&.  mixed Returns the value encoded in input in appropriate PHP type or FALSE on failure\&. If pos is -1 an array will be returned with one entry for each document found in the stream\&. \fP
+.SS "yaml_parse_file ( $filename,  $pos = \fC0\fP, & $ndocs = \fC\fBnull\fP\fP,  $callbacks = \fCarray()\fP)"
+(PHP 5 >= 5\&.2\&.0, PECL yaml >= 0\&.4\&.0)
+.br
+ Parse a YAML stream from a file \fBstring $filename Path to the file\&.  int $pos [optional] Document to extract from stream (-1 for all documents, 0 for first document, \&.\&.\&.)\&.  int &$ndocs [optional] If ndocs is provided, then it is filled with the number of documents found in stream\&.  array $callbacks [optional] Content handlers for YAML nodes\&. Associative array of YAML tag => callable mappings\&. See parse callbacks for more details\&.  mixed Returns the value encoded in input in appropriate PHP type or FALSE on failure\&. If pos is -1 an array will be returned with one entry for each document found in the stream\&. \fP
+.SS "yaml_parse_url ( $url,  $pos = \fC0\fP, & $ndocs = \fC\fBnull\fP\fP,  $callbacks = \fCarray()\fP)"
+(PHP 5 >= 5\&.2\&.0, PECL yaml >= 0\&.4\&.0)
+.br
+ Parse a Yaml stream from a URL \fBstring $url url should be of the form 'scheme://\&.\&.\&.'\&. PHP will search for a protocol handler (also known as a wrapper) for that scheme\&. If no wrappers for that protocol are registered, PHP will emit a notice to help you track potential problems in your script and then continue as though filename specifies a regular file\&.  int $pos [optional] Document to extract from stream (-1 for all documents, 0 for first document, \&.\&.\&.)\&.  int &$ndocs [optional] If ndocs is provided, then it is filled with the number of documents found in stream\&.  array $callbacks [optional] Content handlers for YAML nodes\&. Associative array of YAML tag => callable mappings\&. See parse callbacks for more details\&.  mixed Returns the value encoded in input in appropriate PHP type or FALSE on failure\&. If pos is -1 an array will be returned with one entry for each document found in the stream\&. \fP
+.SH "Variable Documentation"
+.PP 
+.SS "const YAML_ANY_BREAK 0"
+Linebreak types for \fByaml_emit()\fP \fBYAML_ANY_BREAK Let emitter choose linebreak character\&.  YAML_CR_BREAK Use  as break character (Mac style)\&.  YAML_LN_BREAK Use  as break character (Unix style)\&.  YAML_CRLN_BREAK Use  as break character (DOS style)\&. \fP
+.SS "const YAML_ANY_ENCODING 0"
+Encoding types for \fByaml_emit()\fP \fBhttps://php\&.net/manual/en/yaml\&.constants\&.php\fP
+.SS "const YAML_ANY_SCALAR_STYLE 0"
+Scalar entity styles usable by \fByaml_parse()\fP callback methods\&. \fBhttps://php\&.net/manual/en/yaml\&.constants\&.php\fP
+.SS "const YAML_BINARY_TAG 'tag:yaml\&.org,2002:binary'"
+
+.SS "const YAML_BOOL_TAG 'tag:yaml\&.org,2002:bool'"
+
+.SS "const YAML_CR_BREAK 1"
+
+.SS "const YAML_CRLN_BREAK 3"
+
+.SS "const YAML_DOUBLE_QUOTED_SCALAR_STYLE 3"
+
+.SS "const YAML_FLOAT_TAG 'tag:yaml\&.org,2002:float'"
+
+.SS "const YAML_FOLDED_SCALAR_STYLE 5"
+
+.SS "const YAML_INT_TAG 'tag:yaml\&.org,2002:int'"
+
+.SS "const YAML_LITERAL_SCALAR_STYLE 4"
+
+.SS "const YAML_LN_BREAK 2"
+
+.SS "const YAML_MAP_TAG 'tag:yaml\&.org,2002:map'"
+
+.SS "const YAML_MERGE_TAG 'tag:yaml\&.org,2002:merge'"
+
+.SS "const YAML_NULL_TAG 'tag:yaml\&.org,2002:\fBnull\fP'"
+Common tags usable by \fByaml_parse()\fP callback methods\&. \fBhttps://php\&.net/manual/en/yaml\&.constants\&.php\fP
+.SS "const YAML_PHP_TAG '!\fBphp\fP/object'"
+
+.SS "const YAML_PLAIN_SCALAR_STYLE 1"
+
+.SS "const YAML_SEQ_TAG 'tag:yaml\&.org,2002:seq'"
+
+.SS "const YAML_SINGLE_QUOTED_SCALAR_STYLE 2"
+
+.SS "const YAML_STR_TAG 'tag:yaml\&.org,2002:str'"
+
+.SS "const YAML_TIMESTAMP_TAG 'tag:yaml\&.org,2002:timestamp'"
+
+.SS "const YAML_UTF16BE_ENCODING 3"
+
+.SS "const YAML_UTF16LE_ENCODING 2"
+
+.SS "const YAML_UTF8_ENCODING 1"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

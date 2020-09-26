@@ -1,0 +1,460 @@
+.TH "vendor/jetbrains/phpstorm-stubs/pspell/pspell.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/pspell/pspell.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBpspell_new\fP ($language, $spelling=\fBnull\fP, $jargon=\fBnull\fP, $encoding=\fBnull\fP, $mode=0)"
+.br
+.ti -1c
+.RI "\fBpspell_new_personal\fP ($personal, $language, $spelling=\fBnull\fP, $jargon=\fBnull\fP, $encoding=\fBnull\fP, $mode=0)"
+.br
+.ti -1c
+.RI "\fBpspell_new_config\fP ($config)"
+.br
+.ti -1c
+.RI "\fBpspell_check\fP ($dictionary_link, $word)"
+.br
+.ti -1c
+.RI "\fBpspell_suggest\fP ($dictionary_link, $word)"
+.br
+.ti -1c
+.RI "\fBpspell_store_replacement\fP ($dictionary_link, $misspelled, $correct)"
+.br
+.ti -1c
+.RI "\fBpspell_add_to_personal\fP ($dictionary_link, $word)"
+.br
+.ti -1c
+.RI "\fBpspell_add_to_session\fP ($dictionary_link, $word)"
+.br
+.ti -1c
+.RI "\fBpspell_clear_session\fP ($dictionary_link)"
+.br
+.ti -1c
+.RI "\fBpspell_save_wordlist\fP ($dictionary_link)"
+.br
+.ti -1c
+.RI "\fBpspell_config_create\fP ($language, $spelling=\fBnull\fP, $jargon=\fBnull\fP, $encoding=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpspell_config_runtogether\fP ($dictionary_link, $flag)"
+.br
+.ti -1c
+.RI "\fBpspell_config_mode\fP ($dictionary_link, $mode)"
+.br
+.ti -1c
+.RI "\fBpspell_config_ignore\fP ($dictionary_link, $\fBn\fP)"
+.br
+.ti -1c
+.RI "\fBpspell_config_personal\fP ($dictionary_link, $\fBfile\fP)"
+.br
+.ti -1c
+.RI "\fBpspell_config_dict_dir\fP ($conf, $directory)"
+.br
+.ti -1c
+.RI "\fBpspell_config_data_dir\fP ($conf, $directory)"
+.br
+.ti -1c
+.RI "\fBpspell_config_repl\fP ($dictionary_link, $\fBfile\fP)"
+.br
+.ti -1c
+.RI "\fBpspell_config_save_repl\fP ($dictionary_link, $flag)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBPSPELL_FAST\fP 1"
+.br
+.ti -1c
+.RI "const \fBPSPELL_NORMAL\fP 2"
+.br
+.ti -1c
+.RI "const \fBPSPELL_BAD_SPELLERS\fP 3"
+.br
+.ti -1c
+.RI "const \fBPSPELL_RUN_TOGETHER\fP 8"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "pspell_add_to_personal ( $dictionary_link,  $word)"
+Add the word to a personal wordlist \fBint $dictionary_link  string $word \fP The added word\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pspell_add_to_session ( $dictionary_link,  $word)"
+Add the word to the wordlist in the current session \fBint $dictionary_link  string $word \fP The added word\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pspell_check ( $dictionary_link,  $word)"
+Check a word \fBint $dictionary_link  string $word \fP The tested word\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if the spelling is correct, \fBFALSE\fP if not\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pspell_clear_session ( $dictionary_link)"
+Clear the current session \fBint $dictionary_link  bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&.  4\&.0\&.2  5\&.0 \fP
+.SS "pspell_config_create ( $language,  $spelling = \fC\fBnull\fP\fP,  $jargon = \fC\fBnull\fP\fP,  $encoding = \fC\fBnull\fP\fP)"
+Create a config used to open a dictionary \fBstring $language \fP The language parameter is the language code which consists of the two letter ISO 639 language code and an optional two letter ISO 3166 country code after a dash or underscore\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$spelling\fP [optional] 
+.RE
+.PP
+The spelling parameter is the requested spelling for languages with more than one spelling such as English\&. Known values are 'american', 'british', and 'canadian'\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$jargon\fP [optional] 
+.RE
+.PP
+The jargon parameter contains extra information to distinguish two different words lists that have the same language and spelling parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP [optional] 
+.RE
+.PP
+The encoding parameter is the encoding that words are expected to be in\&. Valid values are 'utf-8', 'iso8859-*', 'koi8-r', 'viscii', 'cp1252', 'machine unsigned 16', 'machine unsigned 32'\&. This parameter is largely untested, so be careful when using\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false Retuns a pspell config identifier, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pspell_config_data_dir ( $conf,  $directory)"
+location of language data files \fBint $conf  string $directory  bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&.  5\&.0 \fP
+.SS "pspell_config_dict_dir ( $conf,  $directory)"
+Location of the main word list \fBint $conf  string $directory  bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&.  5\&.0 \fP
+.SS "pspell_config_ignore ( $dictionary_link,  $n)"
+Ignore words less than N characters long \fBint $dictionary_link  int $n \fP Words less than \fIn\fP characters will be skipped\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pspell_config_mode ( $dictionary_link,  $mode)"
+Change the mode number of suggestions returned \fBint $dictionary_link  int $mode \fP The mode parameter is the mode in which spellchecker will work\&. There are several modes available: \fBPSPELL_FAST\fP - Fast mode (least number of suggestions) 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pspell_config_personal ( $dictionary_link,  $file)"
+Set a file that contains personal wordlist \fBint $dictionary_link  string $file \fP The personal wordlist\&. If the file does not exist, it will be created\&. The file should be writable by whoever PHP runs as (e\&.g\&. nobody)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pspell_config_repl ( $dictionary_link,  $file)"
+Set a file that contains replacement pairs \fBint $dictionary_link  string $file \fP The file should be writable by whoever PHP runs as (e\&.g\&. nobody)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pspell_config_runtogether ( $dictionary_link,  $flag)"
+Consider run-together words as valid compounds \fBint $dictionary_link  bool $flag \fP \fBTRUE\fP if run-together words should be treated as legal compounds, \fBFALSE\fP otherwise\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pspell_config_save_repl ( $dictionary_link,  $flag)"
+Determine whether to save a replacement pairs list 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 along with the wordlist \fBint $dictionary_link  bool $flag \fP \fBTRUE\fP if replacement pairs should be saved, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "pspell_new ( $language,  $spelling = \fC\fBnull\fP\fP,  $jargon = \fC\fBnull\fP\fP,  $encoding = \fC\fBnull\fP\fP,  $mode = \fC0\fP)"
+Load a new dictionary \fBstring $language \fP The language parameter is the language code which consists of the two letter ISO 639 language code and an optional two letter ISO 3166 country code after a dash or underscore\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$spelling\fP [optional] 
+.RE
+.PP
+The spelling parameter is the requested spelling for languages with more than one spelling such as English\&. Known values are 'american', 'british', and 'canadian'\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$jargon\fP [optional] 
+.RE
+.PP
+The jargon parameter contains extra information to distinguish two different words lists that have the same language and spelling parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP [optional] 
+.RE
+.PP
+The encoding parameter is the encoding that words are expected to be in\&. Valid values are 'utf-8', 'iso8859-*', 'koi8-r', 'viscii', 'cp1252', 'machine unsigned 16', 'machine unsigned 32'\&. This parameter is largely untested, so be careful when using\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+The mode parameter is the mode in which spellchecker will work\&. There are several modes available: \fBPSPELL_FAST\fP - Fast mode (least number of suggestions) 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the dictionary link identifier on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pspell_new_config ( $config)"
+Load a new dictionary with settings based on a given config \fBint $config \fP The \fIconfig\fP parameter is the one returned by \fBpspell_config_create\fP when the config was created\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int a dictionary link identifier on success\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pspell_new_personal ( $personal,  $language,  $spelling = \fC\fBnull\fP\fP,  $jargon = \fC\fBnull\fP\fP,  $encoding = \fC\fBnull\fP\fP,  $mode = \fC0\fP)"
+Load a new dictionary with personal wordlist \fBstring $personal \fP The file where words added to the personal list will be stored\&. It should be an absolute filename beginning with '/' because otherwise it will be relative to $HOME, which is '/root' for most systems, and is probably not what you want\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$language\fP 
+.RE
+.PP
+The language code which consists of the two letter ISO 639 language code and an optional two letter ISO 3166 country code after a dash or underscore\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$spelling\fP [optional] 
+.RE
+.PP
+The requested spelling for languages with more than one spelling such as English\&. Known values are 'american', 'british', and 'canadian'\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$jargon\fP [optional] 
+.RE
+.PP
+Extra information to distinguish two different words lists that have the same language and spelling parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$encoding\fP [optional] 
+.RE
+.PP
+The encoding that words are expected to be in\&. Valid values are utf-8, iso8859-*, koi8-r, viscii, cp1252, machine unsigned 16, machine unsigned 32\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP [optional] 
+.RE
+.PP
+The mode in which spellchecker will work\&. There are several modes available: \fBPSPELL_FAST\fP - Fast mode (least number of suggestions) 
+.PP
+\fBReturns\fP
+.RS 4
+int the dictionary link identifier for use in other pspell functions\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pspell_save_wordlist ( $dictionary_link)"
+Save the personal wordlist to a file \fBint $dictionary_link \fP \fBA\fP dictionary link identifier opened with \fBpspell_new_personal\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pspell_store_replacement ( $dictionary_link,  $misspelled,  $correct)"
+Store a replacement pair for a word \fBint $dictionary_link \fP \fBA\fP dictionary link identifier, opened with \fBpspell_new_personal\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$misspelled\fP 
+.RE
+.PP
+The misspelled word\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$correct\fP 
+.RE
+.PP
+The fixed spelling for the \fImisspelled\fP word\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "pspell_suggest ( $dictionary_link,  $word)"
+Suggest spellings of a word \fBint $dictionary_link  string $word \fP The tested word\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array of possible spellings\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const PSPELL_BAD_SPELLERS 3"
+
+.SS "const PSPELL_FAST 1"
+
+.SS "const PSPELL_NORMAL 2"
+
+.SS "const PSPELL_RUN_TOGETHER 8"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

@@ -1,0 +1,52 @@
+\hypertarget{parsing-whole-directory_2example2_8php}{}\doxysection{vendor/roave/better-\/reflection/demo/parsing-\/whole-\/directory/example2.php File Reference}
+\label{parsing-whole-directory_2example2_8php}\index{vendor/roave/better-\/reflection/demo/parsing-\/whole-\/directory/example2.php@{vendor/roave/better-\/reflection/demo/parsing-\/whole-\/directory/example2.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{parsing-whole-directory_2example2_8php_aca1cfea95d9874525c94ddc586b87633}{\$directories}} = \mbox{[}\mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}} . \textquotesingle{}/../../src\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{parsing-whole-directory_2example2_8php_a2c94737411615cf1248f94645beea44b}{\$source\+Locator}}
+\item 
+\mbox{\hyperlink{parsing-whole-directory_2example2_8php_ae725481ec81f621f89aac120148d1fc9}{\$class\+Reflector}} = new \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflector_1_1_class_reflector}{Class\+Reflector}}(\$source\+Locator)
+\item 
+\mbox{\hyperlink{parsing-whole-directory_2example2_8php_a5ae0ebc640abc7761148e5b88eb7b6b9}{\$class\+Reflections}} = \$class\+Reflector-\/$>$get\+All\+Classes()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{parsing-whole-directory_2example2_8php_a5ae0ebc640abc7761148e5b88eb7b6b9}\label{parsing-whole-directory_2example2_8php_a5ae0ebc640abc7761148e5b88eb7b6b9}} 
+\index{example2.php@{example2.php}!\$classReflections@{\$classReflections}}
+\index{\$classReflections@{\$classReflections}!example2.php@{example2.php}}
+\doxysubsubsection{\texorpdfstring{\$classReflections}{$classReflections}}
+{\footnotesize\ttfamily \$class\+Reflections = \$class\+Reflector-\/$>$get\+All\+Classes()}
+
+\mbox{\Hypertarget{parsing-whole-directory_2example2_8php_ae725481ec81f621f89aac120148d1fc9}\label{parsing-whole-directory_2example2_8php_ae725481ec81f621f89aac120148d1fc9}} 
+\index{example2.php@{example2.php}!\$classReflector@{\$classReflector}}
+\index{\$classReflector@{\$classReflector}!example2.php@{example2.php}}
+\doxysubsubsection{\texorpdfstring{\$classReflector}{$classReflector}}
+{\footnotesize\ttfamily \$class\+Reflector = new \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_reflector_1_1_class_reflector}{Class\+Reflector}}(\$source\+Locator)}
+
+\mbox{\Hypertarget{parsing-whole-directory_2example2_8php_aca1cfea95d9874525c94ddc586b87633}\label{parsing-whole-directory_2example2_8php_aca1cfea95d9874525c94ddc586b87633}} 
+\index{example2.php@{example2.php}!\$directories@{\$directories}}
+\index{\$directories@{\$directories}!example2.php@{example2.php}}
+\doxysubsubsection{\texorpdfstring{\$directories}{$directories}}
+{\footnotesize\ttfamily \$directories = \mbox{[}\mbox{\hyperlink{jetbrains_2phpstorm-stubs_2standard_2basic_8php_ab860d59b3adca78574295d03e5c60b67}{\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+}} . \textquotesingle{}/../../src\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{parsing-whole-directory_2example2_8php_a2c94737411615cf1248f94645beea44b}\label{parsing-whole-directory_2example2_8php_a2c94737411615cf1248f94645beea44b}} 
+\index{example2.php@{example2.php}!\$sourceLocator@{\$sourceLocator}}
+\index{\$sourceLocator@{\$sourceLocator}!example2.php@{example2.php}}
+\doxysubsubsection{\texorpdfstring{\$sourceLocator}{$sourceLocator}}
+{\footnotesize\ttfamily \$source\+Locator}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_source_locator_1_1_type_1_1_aggregate_source_locator}{AggregateSourceLocator}}([}
+\DoxyCodeLine{    \textcolor{keyword}{new} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_source_locator_1_1_type_1_1_directories_source_locator}{DirectoriesSourceLocator}}(}
+\DoxyCodeLine{        \mbox{\hyperlink{parsing-whole-directory_2example2_8php_aca1cfea95d9874525c94ddc586b87633}{\$directories}},}
+\DoxyCodeLine{        (\textcolor{keyword}{new} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_better_reflection}{BetterReflection}}())-\/>astLocator()}
+\DoxyCodeLine{    ),}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keyword}{new} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_source_locator_1_1_type_1_1_autoload_source_locator}{AutoloadSourceLocator}}((\textcolor{keyword}{new} \mbox{\hyperlink{class_roave_1_1_better_reflection_1_1_better_reflection}{BetterReflection}}())-\/>astLocator())}
+\DoxyCodeLine{])}
+
+\end{DoxyCode}

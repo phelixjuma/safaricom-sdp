@@ -1,0 +1,1176 @@
+\hypertarget{tokenizer_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/tokenizer/tokenizer.php File Reference}
+\label{tokenizer_8php}\index{vendor/jetbrains/phpstorm-\/stubs/tokenizer/tokenizer.php@{vendor/jetbrains/phpstorm-\/stubs/tokenizer/tokenizer.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tokenizer_8php_accf5641391d717df2a76029d414f8255}{token\+\_\+get\+\_\+all}} (\$source, \$flags=0)
+\item 
+\mbox{\hyperlink{tokenizer_8php_a1cb8750eaa9b238758edc6d81b07ad2f}{token\+\_\+name}} (\$token)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a6ed289b222b1bf687ec5aab733ab47dd}{T\+O\+K\+E\+N\+\_\+\+P\+A\+R\+SE}} 1
+\item 
+const \mbox{\hyperlink{tokenizer_8php_aafaf3c2385e0181087573b5f9a5fefc4}{T\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+O\+N\+CE}} 262
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a80d646f034bb2101f96b647356c4a5a0}{T\+\_\+\+R\+E\+Q\+U\+I\+RE}} 261
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a86d1ab9e108fb3884d0e6cd70b1217ed}{T\+\_\+\+E\+V\+AL}} 318
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a7a1d7cbb7109aa71323749c8bcca4dac}{T\+\_\+\+I\+N\+C\+L\+U\+D\+E\+\_\+\+O\+N\+CE}} 260
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ad78ebf4943dd3f635c9fd82ad7fd5ef1}{T\+\_\+\+I\+N\+C\+L\+U\+DE}} 259
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a44de7b190bf0b3f5f9553f1fbae89e6c}{T\+\_\+\+L\+O\+G\+I\+C\+A\+L\+\_\+\+OR}} 263
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a406e45abf9febbb52f27e632969c3e94}{T\+\_\+\+L\+O\+G\+I\+C\+A\+L\+\_\+\+X\+OR}} 264
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a16181d2b1bdcf5ba03ce03e8993ed383}{T\+\_\+\+L\+O\+G\+I\+C\+A\+L\+\_\+\+A\+ND}} 265
+\item 
+const \mbox{\hyperlink{tokenizer_8php_afb6f291040be193d7ea73d9ab84c60bd}{T\+\_\+\+P\+R\+I\+NT}} 266
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a8ad3711fa281229e4ccecaf9b14de677}{T\+\_\+\+Y\+I\+E\+LD}} 267
+\item 
+const \mbox{\hyperlink{tokenizer_8php_aed9ebb0a856bdd6f2910dd51990e96e0}{T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+A\+R\+R\+OW}} 268
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a6439284931f917b38f27f3e2e1c7c1e4}{T\+\_\+\+Y\+I\+E\+L\+D\+\_\+\+F\+R\+OM}} 269
+\item 
+const \mbox{\hyperlink{tokenizer_8php_afcbb9d9ed10e1c3a91d499bc7ca43f84}{T\+\_\+\+P\+O\+W\+\_\+\+E\+Q\+U\+AL}} 281
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a67f311fa72d9c87e31765e7d1e1dbcb5}{T\+\_\+\+S\+R\+\_\+\+E\+Q\+U\+AL}} 280
+\item 
+const \mbox{\hyperlink{tokenizer_8php_af5fc1607a05c84be6399dc4533ad522c}{T\+\_\+\+S\+L\+\_\+\+E\+Q\+U\+AL}} 279
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a0733844fba994bdd3110544cc300ce33}{T\+\_\+\+X\+O\+R\+\_\+\+E\+Q\+U\+AL}} 278
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a5dfd57b2e4c91d1b400bf174c146d00f}{T\+\_\+\+O\+R\+\_\+\+E\+Q\+U\+AL}} 277
+\item 
+const \mbox{\hyperlink{tokenizer_8php_abf6423d7571cea83292dbecb8e81a791}{T\+\_\+\+A\+N\+D\+\_\+\+E\+Q\+U\+AL}} 276
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a4f733b1fbe8a1552f0d42dd528d4f8ca}{T\+\_\+\+M\+O\+D\+\_\+\+E\+Q\+U\+AL}} 275
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a62493697e373bfbd675918d55dc36b4d}{T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+E\+Q\+U\+AL}} 274
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a33e7219bbf45c82296792b4cb5db76e4}{T\+\_\+\+D\+I\+V\+\_\+\+E\+Q\+U\+AL}} 273
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a2acd56a06a64f94d12cb8f3fa1d3ae41}{T\+\_\+\+M\+U\+L\+\_\+\+E\+Q\+U\+AL}} 272
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ac616789d62fdffcf32db308ed4f963ee}{T\+\_\+\+M\+I\+N\+U\+S\+\_\+\+E\+Q\+U\+AL}} 271
+\item 
+const \mbox{\hyperlink{tokenizer_8php_aa60c549a32f41089eec4d97592e717c5}{T\+\_\+\+P\+L\+U\+S\+\_\+\+E\+Q\+U\+AL}} 270
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a6b6701d9a6882785724c0512c98774a2}{T\+\_\+\+C\+O\+A\+L\+E\+S\+C\+E\+\_\+\+E\+Q\+U\+AL}} 282
+\item 
+const \mbox{\hyperlink{tokenizer_8php_aeffaea23ff300f04d073f9063191c042}{T\+\_\+\+C\+O\+A\+L\+E\+S\+CE}} 283
+\item 
+const \mbox{\hyperlink{tokenizer_8php_adfc06a6eb34ed846a551baa4be0d0812}{T\+\_\+\+B\+O\+O\+L\+E\+A\+N\+\_\+\+OR}} 284
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a7c0985cb8a2a712bd5971f756f20a66e}{T\+\_\+\+B\+O\+O\+L\+E\+A\+N\+\_\+\+A\+ND}} 285
+\item 
+const \mbox{\hyperlink{tokenizer_8php_aadea628d9012833da7231f087adae22d}{T\+\_\+\+S\+P\+A\+C\+E\+S\+H\+IP}} 290
+\item 
+const \mbox{\hyperlink{tokenizer_8php_afcb6d9b30fcb2a424deb0cdb2f5ae813}{T\+\_\+\+I\+S\+\_\+\+N\+O\+T\+\_\+\+I\+D\+E\+N\+T\+I\+C\+AL}} 289
+\item 
+const \mbox{\hyperlink{tokenizer_8php_af60d152d83252a246dcbcb12b4a7d50d}{T\+\_\+\+I\+S\+\_\+\+I\+D\+E\+N\+T\+I\+C\+AL}} 288
+\item 
+const \mbox{\hyperlink{tokenizer_8php_aed8c5e4a5f723ef747ace5ac689a8482}{T\+\_\+\+I\+S\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+AL}} 287
+\item 
+const \mbox{\hyperlink{tokenizer_8php_acd642d285ffba3d2fdf189d7de67dde1}{T\+\_\+\+I\+S\+\_\+\+E\+Q\+U\+AL}} 286
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a670530d5d0c6dbdd96efc6e484c94987}{T\+\_\+\+I\+S\+\_\+\+G\+R\+E\+A\+T\+E\+R\+\_\+\+O\+R\+\_\+\+E\+Q\+U\+AL}} 292
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a08a33af03bb28fd75dd0a041e5a24992}{T\+\_\+\+I\+S\+\_\+\+S\+M\+A\+L\+L\+E\+R\+\_\+\+O\+R\+\_\+\+E\+Q\+U\+AL}} 291
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a0625fa59dbed07c4a909843e3b071463}{T\+\_\+\+SR}} 294
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a0ea3d081448e7629d449afd3c4e60528}{T\+\_\+\+SL}} 293
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a6e47f393fde6def1b764340a24869db2}{T\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+OF}} 295
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ae6e162cb9e63e0a5567c50f581537bb9}{T\+\_\+\+U\+N\+S\+E\+T\+\_\+\+C\+A\+ST}} 302
+\item 
+const \mbox{\hyperlink{tokenizer_8php_acc2ecd8d613fac5a66f45f293f80fb56}{T\+\_\+\+B\+O\+O\+L\+\_\+\+C\+A\+ST}} 301
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a174d4b178cc44183b26575fc6b0741ca}{T\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+C\+A\+ST}} 300
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ad06dd6bfa28c7fa4cdab19aa04850c3a}{T\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+C\+A\+ST}} 299
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a554303a3780d53d7d2aa71a6223bc189}{T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+C\+A\+ST}} 298
+\item 
+const \mbox{\hyperlink{tokenizer_8php_afd091d4438af5564ceb1f803e58b340b}{T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+A\+ST}} 297
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a7481e1b57d9ab6c7bb5908cdf3fd5b9f}{T\+\_\+\+I\+N\+T\+\_\+\+C\+A\+ST}} 296
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ae9213eda7f1a4856e725edd3017380cd}{T\+\_\+\+D\+EC}} 320
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a34c8fe2153a84e17391da1fee0fff786}{T\+\_\+\+I\+NC}} 319
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ac7c8759d75cc236cf7b554392ada5c87}{T\+\_\+\+P\+OW}} 303
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a7e27cbd3d91ba90e093650b7d9154ac6}{T\+\_\+\+C\+L\+O\+NE}} 305
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ad305c48565a48c5a7782a10f45cc73e5}{T\+\_\+\+N\+EW}} 304
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ae5ad54462f6957b0ed6ed16d18da03d4}{T\+\_\+\+E\+L\+S\+E\+IF}} 307
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a5fb5ba85ecbeec7d396be17756884a40}{T\+\_\+\+E\+L\+SE}} 308
+\item 
+const \mbox{\hyperlink{tokenizer_8php_adaad0829b47390eb0f2e585d849f7589}{T\+\_\+\+E\+N\+D\+IF}} 323
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a2ffd73ab87b57dcdb50285d5653ed8b9}{T\+\_\+\+P\+U\+B\+L\+IC}} 358
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ae903d4988f7287db0e6ea2fa081fc667}{T\+\_\+\+P\+R\+O\+T\+E\+C\+T\+ED}} 357
+\item 
+const \mbox{\hyperlink{tokenizer_8php_aafe6d13a3893d4042464fe0bc05fdea0}{T\+\_\+\+P\+R\+I\+V\+A\+TE}} 356
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ac3763ff83c1df2b2a26dcb2f30fee53b}{T\+\_\+\+F\+I\+N\+AL}} 355
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a131e96a61fd67df0bdbdeea21f2ec092}{T\+\_\+\+A\+B\+S\+T\+R\+A\+CT}} 354
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a5d2412f3ea943abd82d5320de451348f}{T\+\_\+\+S\+T\+A\+T\+IC}} 353
+\item 
+const \mbox{\hyperlink{tokenizer_8php_adc84d9c9f3e4f244eb77016fbbf6f1e6}{T\+\_\+\+L\+N\+U\+M\+B\+ER}} 309
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ac056b36b72c529937dcf0229d76e104e}{T\+\_\+\+D\+N\+U\+M\+B\+ER}} 310
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a301319d23bde4e1cb03a0ece6ba3429d}{T\+\_\+\+S\+T\+R\+I\+NG}} 311
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a50c0f2c8842d4f6810d2671441c86762}{T\+\_\+\+V\+A\+R\+I\+A\+B\+LE}} 312
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a7679306bb6915401742cd54b828e1d4e}{T\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+H\+T\+ML}} 313
+\item 
+const \mbox{\hyperlink{tokenizer_8php_afc6b7eb1a5e2ca7b12bcc9793b0b1a0b}{T\+\_\+\+E\+N\+C\+A\+P\+S\+E\+D\+\_\+\+A\+N\+D\+\_\+\+W\+H\+I\+T\+E\+S\+P\+A\+CE}} 314
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a849c2f70d32ff080fb67932c98e147dd}{T\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+E\+N\+C\+A\+P\+S\+E\+D\+\_\+\+S\+T\+R\+I\+NG}} 315
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ae1b8735e29b7557bdeb8be0b9b04c002}{T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+V\+A\+R\+N\+A\+ME}} 316
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a1ceea363d61b16e29a8bb7c199bfa2e8}{T\+\_\+\+N\+U\+M\+\_\+\+S\+T\+R\+I\+NG}} 317
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a9879bccfe3ec3d33b8271f894068910b}{T\+\_\+\+E\+X\+IT}} 321
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a7e608d628ff0b9246f9ae352f56be5a2}{T\+\_\+\+IF}} 322
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a6a119d01499d805b0705fe12e11799da}{T\+\_\+\+E\+C\+HO}} 324
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a26c33de663f19f8408e928c990399d5d}{T\+\_\+\+DO}} 325
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a97dc58d6df07d5f7373df6a897b91317}{T\+\_\+\+W\+H\+I\+LE}} 326
+\item 
+const \mbox{\hyperlink{tokenizer_8php_adbc85bdfd0050f7c8fd08b0232348c26}{T\+\_\+\+E\+N\+D\+W\+H\+I\+LE}} 327
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a80afa1f2e58ce2a0f01f37065aae994b}{T\+\_\+\+F\+OR}} 328
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a8048fbe5f0bfcc8ee1116b3614675809}{T\+\_\+\+E\+N\+D\+F\+OR}} 329
+\item 
+const \mbox{\hyperlink{tokenizer_8php_aa339f17b276a371b9c0d9674145ca519}{T\+\_\+\+F\+O\+R\+E\+A\+CH}} 330
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a8ff4c262b14d902e804b490f08069bef}{T\+\_\+\+E\+N\+D\+F\+O\+R\+E\+A\+CH}} 331
+\item 
+const \mbox{\hyperlink{tokenizer_8php_acddb0f3d79c9ee5d63f4f91ae7e5cfee}{T\+\_\+\+D\+E\+C\+L\+A\+RE}} 332
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ab3c4aba9d753569072119060cbf784f6}{T\+\_\+\+E\+N\+D\+D\+E\+C\+L\+A\+RE}} 333
+\item 
+const \mbox{\hyperlink{tokenizer_8php_adccab278127d17fcf65bb286c49858e0}{T\+\_\+\+AS}} 334
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a84842c092993771b9312cb10ca19db8b}{T\+\_\+\+S\+W\+I\+T\+CH}} 335
+\item 
+const \mbox{\hyperlink{tokenizer_8php_acc7b685915b5ab9ca2ad66aa5eb2ad28}{T\+\_\+\+E\+N\+D\+S\+W\+I\+T\+CH}} 336
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ad381a8a32d2e9cc91c7604de048cc24f}{T\+\_\+\+C\+A\+SE}} 337
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a789fc10f375b2c34f478fb0dd631471c}{T\+\_\+\+D\+E\+F\+A\+U\+LT}} 338
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a5c7d59fbdb1d1563259474fb145e436f}{T\+\_\+\+B\+R\+E\+AK}} 339
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a6ec135b3d2cf2805da23c538ef222e09}{T\+\_\+\+C\+O\+N\+T\+I\+N\+UE}} 340
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a3d484d694abb7404dde9a7b8f878067e}{T\+\_\+\+G\+O\+TO}} 341
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a4192d08dd8d82121af30543fe4e2e5b6}{T\+\_\+\+F\+U\+N\+C\+T\+I\+ON}} 342
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a811d97b76a2a6fc20d37f54c2fbd0c51}{T\+\_\+\+C\+O\+N\+ST}} 344
+\item 
+const \mbox{\hyperlink{tokenizer_8php_acaf7bdb7962432496c997e7db4abc747}{T\+\_\+\+R\+E\+T\+U\+RN}} 345
+\item 
+const \mbox{\hyperlink{tokenizer_8php_af1bcbf343f08d727d1ccc9197c75e003}{T\+\_\+\+T\+RY}} 346
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a329f5ed38ae2164bf43cd6f27b587a2c}{T\+\_\+\+C\+A\+T\+CH}} 347
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ab849be190419f8b5ba53881331de5030}{T\+\_\+\+F\+I\+N\+A\+L\+LY}} 348
+\item 
+const \mbox{\hyperlink{tokenizer_8php_abac96cb09bd1d68c2f1f313766075615}{T\+\_\+\+T\+H\+R\+OW}} 349
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a4d071933348f01b2d188763cdb7ed1d6}{T\+\_\+\+U\+SE}} 350
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a4ed28687325e12d4c9681a2b2b77babc}{T\+\_\+\+I\+N\+S\+T\+E\+A\+D\+OF}} 351
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a0d268812f4b72b6df0bcd3756583758a}{T\+\_\+\+G\+L\+O\+B\+AL}} 352
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a1773f7ded3f91dbf4490f6005c5586ac}{T\+\_\+\+V\+AR}} 359
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a56f750edd5741180e844859aadf9919c}{T\+\_\+\+U\+N\+S\+ET}} 360
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ab3c97ce1086628141132cf38485ee977}{T\+\_\+\+I\+S\+S\+ET}} 361
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a60834b7dd2391b9a38fabef82e068e74}{T\+\_\+\+E\+M\+P\+TY}} 362
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a80166f2a1a1e7f3300643f896ae3e801}{T\+\_\+\+H\+A\+L\+T\+\_\+\+C\+O\+M\+P\+I\+L\+ER}} 363
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a909d3f3f85b923b2559d83617284f9bb}{T\+\_\+\+C\+L\+A\+SS}} 364
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ae42ba6180092525d3ac43986bbd8d755}{T\+\_\+\+T\+R\+A\+IT}} 365
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a7ef173cd76763a323cdd3d8f6d20ad51}{T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}} 366
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a848350aaf5822b3274734ac6ef808888}{T\+\_\+\+E\+X\+T\+E\+N\+DS}} 367
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ad80d83662159f7b6fa31da0487b49119}{T\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+TS}} 368
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a3bc84c65cef799e9add55bcc7ed2e829}{T\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+O\+P\+E\+R\+A\+T\+OR}} 369
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ac3a675e21ce0d08e79516f4a8ac4b7bf}{T\+\_\+\+L\+I\+ST}} 370
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ab5ee7eeb61127bb9d963c49533bd0bf1}{T\+\_\+\+A\+R\+R\+AY}} 371
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a87f67a862119abba9ddac71e0fe90b34}{T\+\_\+\+C\+A\+L\+L\+A\+B\+LE}} 372
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ac7e87ba12f0a411165089f1a00048554}{T\+\_\+\+L\+I\+NE}} 373
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a4c94491df6d91d8c5172e4e6baf1114d}{T\+\_\+\+F\+I\+LE}} 374
+\item 
+const \mbox{\hyperlink{tokenizer_8php_abda63d735cd60ac77d564134d1b50654}{T\+\_\+\+D\+IR}} 375
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a2218e88c94fd9c3ea602653245754002}{T\+\_\+\+C\+L\+A\+S\+S\+\_\+C}} 376
+\item 
+const \mbox{\hyperlink{tokenizer_8php_aa860ccdd30372a11073952070bcfcfaf}{T\+\_\+\+T\+R\+A\+I\+T\+\_\+C}} 377
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a6bd4661178ac80f1080c6090cf9a6cfa}{T\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+C}} 378
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a64e89541a7edd49d41cf1d6a4bec096b}{T\+\_\+\+F\+U\+N\+C\+\_\+C}} 379
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a093f615d95a616c6902cb0426b7e3cfc}{T\+\_\+\+C\+O\+M\+M\+E\+NT}} 380
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a7f062386315b796411a3aa88b3d34b64}{T\+\_\+\+D\+O\+C\+\_\+\+C\+O\+M\+M\+E\+NT}} 381
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a13128c2c1ccfb33a0cd97c4bcfe48e07}{T\+\_\+\+O\+P\+E\+N\+\_\+\+T\+AG}} 382
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a77e88b1c16426951a85982923034d23a}{T\+\_\+\+O\+P\+E\+N\+\_\+\+T\+A\+G\+\_\+\+W\+I\+T\+H\+\_\+\+E\+C\+HO}} 383
+\item 
+const \mbox{\hyperlink{tokenizer_8php_aa4d83bde494a60f7b42ebebcab532891}{T\+\_\+\+C\+L\+O\+S\+E\+\_\+\+T\+AG}} 384
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a8a33686e58ec3907729269c1519eaea6}{T\+\_\+\+W\+H\+I\+T\+E\+S\+P\+A\+CE}} 385
+\item 
+const \mbox{\hyperlink{tokenizer_8php_adb385dc707621926e93c412256a4f520}{T\+\_\+\+S\+T\+A\+R\+T\+\_\+\+H\+E\+R\+E\+D\+OC}} 386
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a1414be123895477e3923cf7017febcfe}{T\+\_\+\+E\+N\+D\+\_\+\+H\+E\+R\+E\+D\+OC}} 387
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a4d25a6ba83c66d73d016e300345ba53a}{T\+\_\+\+D\+O\+L\+L\+A\+R\+\_\+\+O\+P\+E\+N\+\_\+\+C\+U\+R\+L\+Y\+\_\+\+B\+R\+A\+C\+ES}} 388
+\item 
+const \mbox{\hyperlink{tokenizer_8php_abbea2068cfd3322e0f62835ee6ed5ce0}{T\+\_\+\+C\+U\+R\+L\+Y\+\_\+\+O\+P\+EN}} 389
+\item 
+const \mbox{\hyperlink{tokenizer_8php_aa2008da5f5676435f8fcb3b85361a2ef}{T\+\_\+\+P\+A\+A\+M\+A\+Y\+I\+M\+\_\+\+N\+E\+K\+U\+D\+O\+T\+A\+Y\+IM}} 390
+\item 
+const \mbox{\hyperlink{tokenizer_8php_adc423626c24714bd4e9691f7223c2874}{T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}} 391
+\item 
+const \mbox{\hyperlink{tokenizer_8php_af8e9f8450c39f098356797a3fcbe0baf}{T\+\_\+\+N\+S\+\_\+C}} 392
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ada702c9850e4d8b33f463a1dd5975158}{T\+\_\+\+N\+S\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR}} 393
+\item 
+const \mbox{\hyperlink{tokenizer_8php_ab8e68f46b0ce32b76af36f9bf83a649b}{T\+\_\+\+E\+L\+L\+I\+P\+S\+IS}} 394
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a496c3366964733efef5b0e05a3043f96}{T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+O\+L\+ON}} 390
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a72a46ea9d79dfb1e2a3a46e1db748509}{T\+\_\+\+FN}} 343
+\item 
+const \mbox{\hyperlink{tokenizer_8php_a8b511336f2cff72fbee566de7414df19}{T\+\_\+\+B\+A\+D\+\_\+\+C\+H\+A\+R\+A\+C\+T\+ER}} 395
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tokenizer_8php_accf5641391d717df2a76029d414f8255}\label{tokenizer_8php_accf5641391d717df2a76029d414f8255}} 
+\index{tokenizer.php@{tokenizer.php}!token\_get\_all@{token\_get\_all}}
+\index{token\_get\_all@{token\_get\_all}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{token\_get\_all()}{token\_get\_all()}}
+{\footnotesize\ttfamily token\+\_\+get\+\_\+all (\begin{DoxyParamCaption}\item[{}]{\$source,  }\item[{}]{\$flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Split given source into P\+HP tokens \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$source }} The P\+HP source to parse. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \\
+\hline
+\end{DoxyParams}
+
+
+Valid flags\+: 
+
+
+\begin{DoxyItemize}
+\item 
+
+{\bfseries{T\+O\+K\+E\+N\+\_\+\+P\+A\+R\+SE}} -\/ Recognises the ability to use reserved words in specific contexts.  
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+array An array of token identifiers. Each individual token identifier is either a single character (i.\+e.\+: ;, ., $>$, !, etc...), or a three element array containing the token index in element 0, the string content of the original token in element 1 and the line number in element 2. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{tokenizer_8php_a1cb8750eaa9b238758edc6d81b07ad2f}\label{tokenizer_8php_a1cb8750eaa9b238758edc6d81b07ad2f}} 
+\index{tokenizer.php@{tokenizer.php}!token\_name@{token\_name}}
+\index{token\_name@{token\_name}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{token\_name()}{token\_name()}}
+{\footnotesize\ttfamily token\+\_\+name (\begin{DoxyParamCaption}\item[{}]{\$token }\end{DoxyParamCaption})}
+
+Get the symbolic name of a given P\+HP token \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$token }} The token value. 
+
+\begin{DoxyReturn}{Returns}
+string The symbolic name of the given {\itshape token}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{tokenizer_8php_a131e96a61fd67df0bdbdeea21f2ec092}\label{tokenizer_8php_a131e96a61fd67df0bdbdeea21f2ec092}} 
+\index{tokenizer.php@{tokenizer.php}!T\_ABSTRACT@{T\_ABSTRACT}}
+\index{T\_ABSTRACT@{T\_ABSTRACT}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_ABSTRACT}{T\_ABSTRACT}}
+{\footnotesize\ttfamily const T\+\_\+\+A\+B\+S\+T\+R\+A\+CT 354}
+
+\mbox{\Hypertarget{tokenizer_8php_abf6423d7571cea83292dbecb8e81a791}\label{tokenizer_8php_abf6423d7571cea83292dbecb8e81a791}} 
+\index{tokenizer.php@{tokenizer.php}!T\_AND\_EQUAL@{T\_AND\_EQUAL}}
+\index{T\_AND\_EQUAL@{T\_AND\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_AND\_EQUAL}{T\_AND\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+A\+N\+D\+\_\+\+E\+Q\+U\+AL 276}
+
+\mbox{\Hypertarget{tokenizer_8php_ab5ee7eeb61127bb9d963c49533bd0bf1}\label{tokenizer_8php_ab5ee7eeb61127bb9d963c49533bd0bf1}} 
+\index{tokenizer.php@{tokenizer.php}!T\_ARRAY@{T\_ARRAY}}
+\index{T\_ARRAY@{T\_ARRAY}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_ARRAY}{T\_ARRAY}}
+{\footnotesize\ttfamily const T\+\_\+\+A\+R\+R\+AY 371}
+
+\mbox{\Hypertarget{tokenizer_8php_ad06dd6bfa28c7fa4cdab19aa04850c3a}\label{tokenizer_8php_ad06dd6bfa28c7fa4cdab19aa04850c3a}} 
+\index{tokenizer.php@{tokenizer.php}!T\_ARRAY\_CAST@{T\_ARRAY\_CAST}}
+\index{T\_ARRAY\_CAST@{T\_ARRAY\_CAST}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_ARRAY\_CAST}{T\_ARRAY\_CAST}}
+{\footnotesize\ttfamily const T\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+C\+A\+ST 299}
+
+\mbox{\Hypertarget{tokenizer_8php_adccab278127d17fcf65bb286c49858e0}\label{tokenizer_8php_adccab278127d17fcf65bb286c49858e0}} 
+\index{tokenizer.php@{tokenizer.php}!T\_AS@{T\_AS}}
+\index{T\_AS@{T\_AS}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_AS}{T\_AS}}
+{\footnotesize\ttfamily const T\+\_\+\+AS 334}
+
+\mbox{\Hypertarget{tokenizer_8php_a8b511336f2cff72fbee566de7414df19}\label{tokenizer_8php_a8b511336f2cff72fbee566de7414df19}} 
+\index{tokenizer.php@{tokenizer.php}!T\_BAD\_CHARACTER@{T\_BAD\_CHARACTER}}
+\index{T\_BAD\_CHARACTER@{T\_BAD\_CHARACTER}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_BAD\_CHARACTER}{T\_BAD\_CHARACTER}}
+{\footnotesize\ttfamily const T\+\_\+\+B\+A\+D\+\_\+\+C\+H\+A\+R\+A\+C\+T\+ER 395}
+
+\mbox{\Hypertarget{tokenizer_8php_acc2ecd8d613fac5a66f45f293f80fb56}\label{tokenizer_8php_acc2ecd8d613fac5a66f45f293f80fb56}} 
+\index{tokenizer.php@{tokenizer.php}!T\_BOOL\_CAST@{T\_BOOL\_CAST}}
+\index{T\_BOOL\_CAST@{T\_BOOL\_CAST}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_BOOL\_CAST}{T\_BOOL\_CAST}}
+{\footnotesize\ttfamily const T\+\_\+\+B\+O\+O\+L\+\_\+\+C\+A\+ST 301}
+
+\mbox{\Hypertarget{tokenizer_8php_a7c0985cb8a2a712bd5971f756f20a66e}\label{tokenizer_8php_a7c0985cb8a2a712bd5971f756f20a66e}} 
+\index{tokenizer.php@{tokenizer.php}!T\_BOOLEAN\_AND@{T\_BOOLEAN\_AND}}
+\index{T\_BOOLEAN\_AND@{T\_BOOLEAN\_AND}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_BOOLEAN\_AND}{T\_BOOLEAN\_AND}}
+{\footnotesize\ttfamily const T\+\_\+\+B\+O\+O\+L\+E\+A\+N\+\_\+\+A\+ND 285}
+
+\mbox{\Hypertarget{tokenizer_8php_adfc06a6eb34ed846a551baa4be0d0812}\label{tokenizer_8php_adfc06a6eb34ed846a551baa4be0d0812}} 
+\index{tokenizer.php@{tokenizer.php}!T\_BOOLEAN\_OR@{T\_BOOLEAN\_OR}}
+\index{T\_BOOLEAN\_OR@{T\_BOOLEAN\_OR}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_BOOLEAN\_OR}{T\_BOOLEAN\_OR}}
+{\footnotesize\ttfamily const T\+\_\+\+B\+O\+O\+L\+E\+A\+N\+\_\+\+OR 284}
+
+\mbox{\Hypertarget{tokenizer_8php_a5c7d59fbdb1d1563259474fb145e436f}\label{tokenizer_8php_a5c7d59fbdb1d1563259474fb145e436f}} 
+\index{tokenizer.php@{tokenizer.php}!T\_BREAK@{T\_BREAK}}
+\index{T\_BREAK@{T\_BREAK}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_BREAK}{T\_BREAK}}
+{\footnotesize\ttfamily const T\+\_\+\+B\+R\+E\+AK 339}
+
+\mbox{\Hypertarget{tokenizer_8php_a87f67a862119abba9ddac71e0fe90b34}\label{tokenizer_8php_a87f67a862119abba9ddac71e0fe90b34}} 
+\index{tokenizer.php@{tokenizer.php}!T\_CALLABLE@{T\_CALLABLE}}
+\index{T\_CALLABLE@{T\_CALLABLE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_CALLABLE}{T\_CALLABLE}}
+{\footnotesize\ttfamily const T\+\_\+\+C\+A\+L\+L\+A\+B\+LE 372}
+
+\mbox{\Hypertarget{tokenizer_8php_ad381a8a32d2e9cc91c7604de048cc24f}\label{tokenizer_8php_ad381a8a32d2e9cc91c7604de048cc24f}} 
+\index{tokenizer.php@{tokenizer.php}!T\_CASE@{T\_CASE}}
+\index{T\_CASE@{T\_CASE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_CASE}{T\_CASE}}
+{\footnotesize\ttfamily const T\+\_\+\+C\+A\+SE 337}
+
+\mbox{\Hypertarget{tokenizer_8php_a329f5ed38ae2164bf43cd6f27b587a2c}\label{tokenizer_8php_a329f5ed38ae2164bf43cd6f27b587a2c}} 
+\index{tokenizer.php@{tokenizer.php}!T\_CATCH@{T\_CATCH}}
+\index{T\_CATCH@{T\_CATCH}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_CATCH}{T\_CATCH}}
+{\footnotesize\ttfamily const T\+\_\+\+C\+A\+T\+CH 347}
+
+\mbox{\Hypertarget{tokenizer_8php_a909d3f3f85b923b2559d83617284f9bb}\label{tokenizer_8php_a909d3f3f85b923b2559d83617284f9bb}} 
+\index{tokenizer.php@{tokenizer.php}!T\_CLASS@{T\_CLASS}}
+\index{T\_CLASS@{T\_CLASS}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_CLASS}{T\_CLASS}}
+{\footnotesize\ttfamily const T\+\_\+\+C\+L\+A\+SS 364}
+
+\mbox{\Hypertarget{tokenizer_8php_a2218e88c94fd9c3ea602653245754002}\label{tokenizer_8php_a2218e88c94fd9c3ea602653245754002}} 
+\index{tokenizer.php@{tokenizer.php}!T\_CLASS\_C@{T\_CLASS\_C}}
+\index{T\_CLASS\_C@{T\_CLASS\_C}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_CLASS\_C}{T\_CLASS\_C}}
+{\footnotesize\ttfamily const T\+\_\+\+C\+L\+A\+S\+S\+\_\+C 376}
+
+\mbox{\Hypertarget{tokenizer_8php_a7e27cbd3d91ba90e093650b7d9154ac6}\label{tokenizer_8php_a7e27cbd3d91ba90e093650b7d9154ac6}} 
+\index{tokenizer.php@{tokenizer.php}!T\_CLONE@{T\_CLONE}}
+\index{T\_CLONE@{T\_CLONE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_CLONE}{T\_CLONE}}
+{\footnotesize\ttfamily const T\+\_\+\+C\+L\+O\+NE 305}
+
+\mbox{\Hypertarget{tokenizer_8php_aa4d83bde494a60f7b42ebebcab532891}\label{tokenizer_8php_aa4d83bde494a60f7b42ebebcab532891}} 
+\index{tokenizer.php@{tokenizer.php}!T\_CLOSE\_TAG@{T\_CLOSE\_TAG}}
+\index{T\_CLOSE\_TAG@{T\_CLOSE\_TAG}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_CLOSE\_TAG}{T\_CLOSE\_TAG}}
+{\footnotesize\ttfamily const T\+\_\+\+C\+L\+O\+S\+E\+\_\+\+T\+AG 384}
+
+\mbox{\Hypertarget{tokenizer_8php_aeffaea23ff300f04d073f9063191c042}\label{tokenizer_8php_aeffaea23ff300f04d073f9063191c042}} 
+\index{tokenizer.php@{tokenizer.php}!T\_COALESCE@{T\_COALESCE}}
+\index{T\_COALESCE@{T\_COALESCE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_COALESCE}{T\_COALESCE}}
+{\footnotesize\ttfamily const T\+\_\+\+C\+O\+A\+L\+E\+S\+CE 283}
+
+\mbox{\Hypertarget{tokenizer_8php_a6b6701d9a6882785724c0512c98774a2}\label{tokenizer_8php_a6b6701d9a6882785724c0512c98774a2}} 
+\index{tokenizer.php@{tokenizer.php}!T\_COALESCE\_EQUAL@{T\_COALESCE\_EQUAL}}
+\index{T\_COALESCE\_EQUAL@{T\_COALESCE\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_COALESCE\_EQUAL}{T\_COALESCE\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+C\+O\+A\+L\+E\+S\+C\+E\+\_\+\+E\+Q\+U\+AL 282}
+
+\begin{DoxySince}{Since}
+7.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{tokenizer_8php_a093f615d95a616c6902cb0426b7e3cfc}\label{tokenizer_8php_a093f615d95a616c6902cb0426b7e3cfc}} 
+\index{tokenizer.php@{tokenizer.php}!T\_COMMENT@{T\_COMMENT}}
+\index{T\_COMMENT@{T\_COMMENT}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_COMMENT}{T\_COMMENT}}
+{\footnotesize\ttfamily const T\+\_\+\+C\+O\+M\+M\+E\+NT 380}
+
+\mbox{\Hypertarget{tokenizer_8php_a62493697e373bfbd675918d55dc36b4d}\label{tokenizer_8php_a62493697e373bfbd675918d55dc36b4d}} 
+\index{tokenizer.php@{tokenizer.php}!T\_CONCAT\_EQUAL@{T\_CONCAT\_EQUAL}}
+\index{T\_CONCAT\_EQUAL@{T\_CONCAT\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_CONCAT\_EQUAL}{T\_CONCAT\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+E\+Q\+U\+AL 274}
+
+\mbox{\Hypertarget{tokenizer_8php_a811d97b76a2a6fc20d37f54c2fbd0c51}\label{tokenizer_8php_a811d97b76a2a6fc20d37f54c2fbd0c51}} 
+\index{tokenizer.php@{tokenizer.php}!T\_CONST@{T\_CONST}}
+\index{T\_CONST@{T\_CONST}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_CONST}{T\_CONST}}
+{\footnotesize\ttfamily const T\+\_\+\+C\+O\+N\+ST 344}
+
+\mbox{\Hypertarget{tokenizer_8php_a849c2f70d32ff080fb67932c98e147dd}\label{tokenizer_8php_a849c2f70d32ff080fb67932c98e147dd}} 
+\index{tokenizer.php@{tokenizer.php}!T\_CONSTANT\_ENCAPSED\_STRING@{T\_CONSTANT\_ENCAPSED\_STRING}}
+\index{T\_CONSTANT\_ENCAPSED\_STRING@{T\_CONSTANT\_ENCAPSED\_STRING}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_CONSTANT\_ENCAPSED\_STRING}{T\_CONSTANT\_ENCAPSED\_STRING}}
+{\footnotesize\ttfamily const T\+\_\+\+C\+O\+N\+S\+T\+A\+N\+T\+\_\+\+E\+N\+C\+A\+P\+S\+E\+D\+\_\+\+S\+T\+R\+I\+NG 315}
+
+\mbox{\Hypertarget{tokenizer_8php_a6ec135b3d2cf2805da23c538ef222e09}\label{tokenizer_8php_a6ec135b3d2cf2805da23c538ef222e09}} 
+\index{tokenizer.php@{tokenizer.php}!T\_CONTINUE@{T\_CONTINUE}}
+\index{T\_CONTINUE@{T\_CONTINUE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_CONTINUE}{T\_CONTINUE}}
+{\footnotesize\ttfamily const T\+\_\+\+C\+O\+N\+T\+I\+N\+UE 340}
+
+\mbox{\Hypertarget{tokenizer_8php_abbea2068cfd3322e0f62835ee6ed5ce0}\label{tokenizer_8php_abbea2068cfd3322e0f62835ee6ed5ce0}} 
+\index{tokenizer.php@{tokenizer.php}!T\_CURLY\_OPEN@{T\_CURLY\_OPEN}}
+\index{T\_CURLY\_OPEN@{T\_CURLY\_OPEN}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_CURLY\_OPEN}{T\_CURLY\_OPEN}}
+{\footnotesize\ttfamily const T\+\_\+\+C\+U\+R\+L\+Y\+\_\+\+O\+P\+EN 389}
+
+\mbox{\Hypertarget{tokenizer_8php_ae9213eda7f1a4856e725edd3017380cd}\label{tokenizer_8php_ae9213eda7f1a4856e725edd3017380cd}} 
+\index{tokenizer.php@{tokenizer.php}!T\_DEC@{T\_DEC}}
+\index{T\_DEC@{T\_DEC}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_DEC}{T\_DEC}}
+{\footnotesize\ttfamily const T\+\_\+\+D\+EC 320}
+
+\mbox{\Hypertarget{tokenizer_8php_acddb0f3d79c9ee5d63f4f91ae7e5cfee}\label{tokenizer_8php_acddb0f3d79c9ee5d63f4f91ae7e5cfee}} 
+\index{tokenizer.php@{tokenizer.php}!T\_DECLARE@{T\_DECLARE}}
+\index{T\_DECLARE@{T\_DECLARE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_DECLARE}{T\_DECLARE}}
+{\footnotesize\ttfamily const T\+\_\+\+D\+E\+C\+L\+A\+RE 332}
+
+\mbox{\Hypertarget{tokenizer_8php_a789fc10f375b2c34f478fb0dd631471c}\label{tokenizer_8php_a789fc10f375b2c34f478fb0dd631471c}} 
+\index{tokenizer.php@{tokenizer.php}!T\_DEFAULT@{T\_DEFAULT}}
+\index{T\_DEFAULT@{T\_DEFAULT}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_DEFAULT}{T\_DEFAULT}}
+{\footnotesize\ttfamily const T\+\_\+\+D\+E\+F\+A\+U\+LT 338}
+
+\mbox{\Hypertarget{tokenizer_8php_abda63d735cd60ac77d564134d1b50654}\label{tokenizer_8php_abda63d735cd60ac77d564134d1b50654}} 
+\index{tokenizer.php@{tokenizer.php}!T\_DIR@{T\_DIR}}
+\index{T\_DIR@{T\_DIR}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_DIR}{T\_DIR}}
+{\footnotesize\ttfamily const T\+\_\+\+D\+IR 375}
+
+\mbox{\Hypertarget{tokenizer_8php_a33e7219bbf45c82296792b4cb5db76e4}\label{tokenizer_8php_a33e7219bbf45c82296792b4cb5db76e4}} 
+\index{tokenizer.php@{tokenizer.php}!T\_DIV\_EQUAL@{T\_DIV\_EQUAL}}
+\index{T\_DIV\_EQUAL@{T\_DIV\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_DIV\_EQUAL}{T\_DIV\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+D\+I\+V\+\_\+\+E\+Q\+U\+AL 273}
+
+\mbox{\Hypertarget{tokenizer_8php_ac056b36b72c529937dcf0229d76e104e}\label{tokenizer_8php_ac056b36b72c529937dcf0229d76e104e}} 
+\index{tokenizer.php@{tokenizer.php}!T\_DNUMBER@{T\_DNUMBER}}
+\index{T\_DNUMBER@{T\_DNUMBER}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_DNUMBER}{T\_DNUMBER}}
+{\footnotesize\ttfamily const T\+\_\+\+D\+N\+U\+M\+B\+ER 310}
+
+\mbox{\Hypertarget{tokenizer_8php_a26c33de663f19f8408e928c990399d5d}\label{tokenizer_8php_a26c33de663f19f8408e928c990399d5d}} 
+\index{tokenizer.php@{tokenizer.php}!T\_DO@{T\_DO}}
+\index{T\_DO@{T\_DO}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_DO}{T\_DO}}
+{\footnotesize\ttfamily const T\+\_\+\+DO 325}
+
+\mbox{\Hypertarget{tokenizer_8php_a7f062386315b796411a3aa88b3d34b64}\label{tokenizer_8php_a7f062386315b796411a3aa88b3d34b64}} 
+\index{tokenizer.php@{tokenizer.php}!T\_DOC\_COMMENT@{T\_DOC\_COMMENT}}
+\index{T\_DOC\_COMMENT@{T\_DOC\_COMMENT}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_DOC\_COMMENT}{T\_DOC\_COMMENT}}
+{\footnotesize\ttfamily const T\+\_\+\+D\+O\+C\+\_\+\+C\+O\+M\+M\+E\+NT 381}
+
+\mbox{\Hypertarget{tokenizer_8php_a4d25a6ba83c66d73d016e300345ba53a}\label{tokenizer_8php_a4d25a6ba83c66d73d016e300345ba53a}} 
+\index{tokenizer.php@{tokenizer.php}!T\_DOLLAR\_OPEN\_CURLY\_BRACES@{T\_DOLLAR\_OPEN\_CURLY\_BRACES}}
+\index{T\_DOLLAR\_OPEN\_CURLY\_BRACES@{T\_DOLLAR\_OPEN\_CURLY\_BRACES}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_DOLLAR\_OPEN\_CURLY\_BRACES}{T\_DOLLAR\_OPEN\_CURLY\_BRACES}}
+{\footnotesize\ttfamily const T\+\_\+\+D\+O\+L\+L\+A\+R\+\_\+\+O\+P\+E\+N\+\_\+\+C\+U\+R\+L\+Y\+\_\+\+B\+R\+A\+C\+ES 388}
+
+\mbox{\Hypertarget{tokenizer_8php_aed9ebb0a856bdd6f2910dd51990e96e0}\label{tokenizer_8php_aed9ebb0a856bdd6f2910dd51990e96e0}} 
+\index{tokenizer.php@{tokenizer.php}!T\_DOUBLE\_ARROW@{T\_DOUBLE\_ARROW}}
+\index{T\_DOUBLE\_ARROW@{T\_DOUBLE\_ARROW}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_DOUBLE\_ARROW}{T\_DOUBLE\_ARROW}}
+{\footnotesize\ttfamily const T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+A\+R\+R\+OW 268}
+
+\mbox{\Hypertarget{tokenizer_8php_afd091d4438af5564ceb1f803e58b340b}\label{tokenizer_8php_afd091d4438af5564ceb1f803e58b340b}} 
+\index{tokenizer.php@{tokenizer.php}!T\_DOUBLE\_CAST@{T\_DOUBLE\_CAST}}
+\index{T\_DOUBLE\_CAST@{T\_DOUBLE\_CAST}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_DOUBLE\_CAST}{T\_DOUBLE\_CAST}}
+{\footnotesize\ttfamily const T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+A\+ST 297}
+
+\mbox{\Hypertarget{tokenizer_8php_a496c3366964733efef5b0e05a3043f96}\label{tokenizer_8php_a496c3366964733efef5b0e05a3043f96}} 
+\index{tokenizer.php@{tokenizer.php}!T\_DOUBLE\_COLON@{T\_DOUBLE\_COLON}}
+\index{T\_DOUBLE\_COLON@{T\_DOUBLE\_COLON}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_DOUBLE\_COLON}{T\_DOUBLE\_COLON}}
+{\footnotesize\ttfamily const T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+C\+O\+L\+ON 390}
+
+\mbox{\Hypertarget{tokenizer_8php_a6a119d01499d805b0705fe12e11799da}\label{tokenizer_8php_a6a119d01499d805b0705fe12e11799da}} 
+\index{tokenizer.php@{tokenizer.php}!T\_ECHO@{T\_ECHO}}
+\index{T\_ECHO@{T\_ECHO}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_ECHO}{T\_ECHO}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+C\+HO 324}
+
+\mbox{\Hypertarget{tokenizer_8php_ab8e68f46b0ce32b76af36f9bf83a649b}\label{tokenizer_8php_ab8e68f46b0ce32b76af36f9bf83a649b}} 
+\index{tokenizer.php@{tokenizer.php}!T\_ELLIPSIS@{T\_ELLIPSIS}}
+\index{T\_ELLIPSIS@{T\_ELLIPSIS}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_ELLIPSIS}{T\_ELLIPSIS}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+L\+L\+I\+P\+S\+IS 394}
+
+\mbox{\Hypertarget{tokenizer_8php_a5fb5ba85ecbeec7d396be17756884a40}\label{tokenizer_8php_a5fb5ba85ecbeec7d396be17756884a40}} 
+\index{tokenizer.php@{tokenizer.php}!T\_ELSE@{T\_ELSE}}
+\index{T\_ELSE@{T\_ELSE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_ELSE}{T\_ELSE}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+L\+SE 308}
+
+\mbox{\Hypertarget{tokenizer_8php_ae5ad54462f6957b0ed6ed16d18da03d4}\label{tokenizer_8php_ae5ad54462f6957b0ed6ed16d18da03d4}} 
+\index{tokenizer.php@{tokenizer.php}!T\_ELSEIF@{T\_ELSEIF}}
+\index{T\_ELSEIF@{T\_ELSEIF}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_ELSEIF}{T\_ELSEIF}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+L\+S\+E\+IF 307}
+
+\mbox{\Hypertarget{tokenizer_8php_a60834b7dd2391b9a38fabef82e068e74}\label{tokenizer_8php_a60834b7dd2391b9a38fabef82e068e74}} 
+\index{tokenizer.php@{tokenizer.php}!T\_EMPTY@{T\_EMPTY}}
+\index{T\_EMPTY@{T\_EMPTY}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_EMPTY}{T\_EMPTY}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+M\+P\+TY 362}
+
+\mbox{\Hypertarget{tokenizer_8php_afc6b7eb1a5e2ca7b12bcc9793b0b1a0b}\label{tokenizer_8php_afc6b7eb1a5e2ca7b12bcc9793b0b1a0b}} 
+\index{tokenizer.php@{tokenizer.php}!T\_ENCAPSED\_AND\_WHITESPACE@{T\_ENCAPSED\_AND\_WHITESPACE}}
+\index{T\_ENCAPSED\_AND\_WHITESPACE@{T\_ENCAPSED\_AND\_WHITESPACE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_ENCAPSED\_AND\_WHITESPACE}{T\_ENCAPSED\_AND\_WHITESPACE}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+N\+C\+A\+P\+S\+E\+D\+\_\+\+A\+N\+D\+\_\+\+W\+H\+I\+T\+E\+S\+P\+A\+CE 314}
+
+\mbox{\Hypertarget{tokenizer_8php_a1414be123895477e3923cf7017febcfe}\label{tokenizer_8php_a1414be123895477e3923cf7017febcfe}} 
+\index{tokenizer.php@{tokenizer.php}!T\_END\_HEREDOC@{T\_END\_HEREDOC}}
+\index{T\_END\_HEREDOC@{T\_END\_HEREDOC}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_END\_HEREDOC}{T\_END\_HEREDOC}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+N\+D\+\_\+\+H\+E\+R\+E\+D\+OC 387}
+
+\mbox{\Hypertarget{tokenizer_8php_ab3c4aba9d753569072119060cbf784f6}\label{tokenizer_8php_ab3c4aba9d753569072119060cbf784f6}} 
+\index{tokenizer.php@{tokenizer.php}!T\_ENDDECLARE@{T\_ENDDECLARE}}
+\index{T\_ENDDECLARE@{T\_ENDDECLARE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_ENDDECLARE}{T\_ENDDECLARE}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+N\+D\+D\+E\+C\+L\+A\+RE 333}
+
+\mbox{\Hypertarget{tokenizer_8php_a8048fbe5f0bfcc8ee1116b3614675809}\label{tokenizer_8php_a8048fbe5f0bfcc8ee1116b3614675809}} 
+\index{tokenizer.php@{tokenizer.php}!T\_ENDFOR@{T\_ENDFOR}}
+\index{T\_ENDFOR@{T\_ENDFOR}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_ENDFOR}{T\_ENDFOR}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+N\+D\+F\+OR 329}
+
+\mbox{\Hypertarget{tokenizer_8php_a8ff4c262b14d902e804b490f08069bef}\label{tokenizer_8php_a8ff4c262b14d902e804b490f08069bef}} 
+\index{tokenizer.php@{tokenizer.php}!T\_ENDFOREACH@{T\_ENDFOREACH}}
+\index{T\_ENDFOREACH@{T\_ENDFOREACH}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_ENDFOREACH}{T\_ENDFOREACH}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+N\+D\+F\+O\+R\+E\+A\+CH 331}
+
+\mbox{\Hypertarget{tokenizer_8php_adaad0829b47390eb0f2e585d849f7589}\label{tokenizer_8php_adaad0829b47390eb0f2e585d849f7589}} 
+\index{tokenizer.php@{tokenizer.php}!T\_ENDIF@{T\_ENDIF}}
+\index{T\_ENDIF@{T\_ENDIF}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_ENDIF}{T\_ENDIF}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+N\+D\+IF 323}
+
+\mbox{\Hypertarget{tokenizer_8php_acc7b685915b5ab9ca2ad66aa5eb2ad28}\label{tokenizer_8php_acc7b685915b5ab9ca2ad66aa5eb2ad28}} 
+\index{tokenizer.php@{tokenizer.php}!T\_ENDSWITCH@{T\_ENDSWITCH}}
+\index{T\_ENDSWITCH@{T\_ENDSWITCH}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_ENDSWITCH}{T\_ENDSWITCH}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+N\+D\+S\+W\+I\+T\+CH 336}
+
+\mbox{\Hypertarget{tokenizer_8php_adbc85bdfd0050f7c8fd08b0232348c26}\label{tokenizer_8php_adbc85bdfd0050f7c8fd08b0232348c26}} 
+\index{tokenizer.php@{tokenizer.php}!T\_ENDWHILE@{T\_ENDWHILE}}
+\index{T\_ENDWHILE@{T\_ENDWHILE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_ENDWHILE}{T\_ENDWHILE}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+N\+D\+W\+H\+I\+LE 327}
+
+\mbox{\Hypertarget{tokenizer_8php_a86d1ab9e108fb3884d0e6cd70b1217ed}\label{tokenizer_8php_a86d1ab9e108fb3884d0e6cd70b1217ed}} 
+\index{tokenizer.php@{tokenizer.php}!T\_EVAL@{T\_EVAL}}
+\index{T\_EVAL@{T\_EVAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_EVAL}{T\_EVAL}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+V\+AL 318}
+
+\mbox{\Hypertarget{tokenizer_8php_a9879bccfe3ec3d33b8271f894068910b}\label{tokenizer_8php_a9879bccfe3ec3d33b8271f894068910b}} 
+\index{tokenizer.php@{tokenizer.php}!T\_EXIT@{T\_EXIT}}
+\index{T\_EXIT@{T\_EXIT}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_EXIT}{T\_EXIT}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+X\+IT 321}
+
+\mbox{\Hypertarget{tokenizer_8php_a848350aaf5822b3274734ac6ef808888}\label{tokenizer_8php_a848350aaf5822b3274734ac6ef808888}} 
+\index{tokenizer.php@{tokenizer.php}!T\_EXTENDS@{T\_EXTENDS}}
+\index{T\_EXTENDS@{T\_EXTENDS}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_EXTENDS}{T\_EXTENDS}}
+{\footnotesize\ttfamily const T\+\_\+\+E\+X\+T\+E\+N\+DS 367}
+
+\mbox{\Hypertarget{tokenizer_8php_a4c94491df6d91d8c5172e4e6baf1114d}\label{tokenizer_8php_a4c94491df6d91d8c5172e4e6baf1114d}} 
+\index{tokenizer.php@{tokenizer.php}!T\_FILE@{T\_FILE}}
+\index{T\_FILE@{T\_FILE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_FILE}{T\_FILE}}
+{\footnotesize\ttfamily const T\+\_\+\+F\+I\+LE 374}
+
+\mbox{\Hypertarget{tokenizer_8php_ac3763ff83c1df2b2a26dcb2f30fee53b}\label{tokenizer_8php_ac3763ff83c1df2b2a26dcb2f30fee53b}} 
+\index{tokenizer.php@{tokenizer.php}!T\_FINAL@{T\_FINAL}}
+\index{T\_FINAL@{T\_FINAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_FINAL}{T\_FINAL}}
+{\footnotesize\ttfamily const T\+\_\+\+F\+I\+N\+AL 355}
+
+\mbox{\Hypertarget{tokenizer_8php_ab849be190419f8b5ba53881331de5030}\label{tokenizer_8php_ab849be190419f8b5ba53881331de5030}} 
+\index{tokenizer.php@{tokenizer.php}!T\_FINALLY@{T\_FINALLY}}
+\index{T\_FINALLY@{T\_FINALLY}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_FINALLY}{T\_FINALLY}}
+{\footnotesize\ttfamily const T\+\_\+\+F\+I\+N\+A\+L\+LY 348}
+
+\mbox{\Hypertarget{tokenizer_8php_a72a46ea9d79dfb1e2a3a46e1db748509}\label{tokenizer_8php_a72a46ea9d79dfb1e2a3a46e1db748509}} 
+\index{tokenizer.php@{tokenizer.php}!T\_FN@{T\_FN}}
+\index{T\_FN@{T\_FN}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_FN}{T\_FN}}
+{\footnotesize\ttfamily const T\+\_\+\+FN 343}
+
+\begin{DoxySince}{Since}
+7.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{tokenizer_8php_a80afa1f2e58ce2a0f01f37065aae994b}\label{tokenizer_8php_a80afa1f2e58ce2a0f01f37065aae994b}} 
+\index{tokenizer.php@{tokenizer.php}!T\_FOR@{T\_FOR}}
+\index{T\_FOR@{T\_FOR}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_FOR}{T\_FOR}}
+{\footnotesize\ttfamily const T\+\_\+\+F\+OR 328}
+
+\mbox{\Hypertarget{tokenizer_8php_aa339f17b276a371b9c0d9674145ca519}\label{tokenizer_8php_aa339f17b276a371b9c0d9674145ca519}} 
+\index{tokenizer.php@{tokenizer.php}!T\_FOREACH@{T\_FOREACH}}
+\index{T\_FOREACH@{T\_FOREACH}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_FOREACH}{T\_FOREACH}}
+{\footnotesize\ttfamily const T\+\_\+\+F\+O\+R\+E\+A\+CH 330}
+
+\mbox{\Hypertarget{tokenizer_8php_a64e89541a7edd49d41cf1d6a4bec096b}\label{tokenizer_8php_a64e89541a7edd49d41cf1d6a4bec096b}} 
+\index{tokenizer.php@{tokenizer.php}!T\_FUNC\_C@{T\_FUNC\_C}}
+\index{T\_FUNC\_C@{T\_FUNC\_C}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_FUNC\_C}{T\_FUNC\_C}}
+{\footnotesize\ttfamily const T\+\_\+\+F\+U\+N\+C\+\_\+C 379}
+
+\mbox{\Hypertarget{tokenizer_8php_a4192d08dd8d82121af30543fe4e2e5b6}\label{tokenizer_8php_a4192d08dd8d82121af30543fe4e2e5b6}} 
+\index{tokenizer.php@{tokenizer.php}!T\_FUNCTION@{T\_FUNCTION}}
+\index{T\_FUNCTION@{T\_FUNCTION}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_FUNCTION}{T\_FUNCTION}}
+{\footnotesize\ttfamily const T\+\_\+\+F\+U\+N\+C\+T\+I\+ON 342}
+
+\mbox{\Hypertarget{tokenizer_8php_a0d268812f4b72b6df0bcd3756583758a}\label{tokenizer_8php_a0d268812f4b72b6df0bcd3756583758a}} 
+\index{tokenizer.php@{tokenizer.php}!T\_GLOBAL@{T\_GLOBAL}}
+\index{T\_GLOBAL@{T\_GLOBAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_GLOBAL}{T\_GLOBAL}}
+{\footnotesize\ttfamily const T\+\_\+\+G\+L\+O\+B\+AL 352}
+
+\mbox{\Hypertarget{tokenizer_8php_a3d484d694abb7404dde9a7b8f878067e}\label{tokenizer_8php_a3d484d694abb7404dde9a7b8f878067e}} 
+\index{tokenizer.php@{tokenizer.php}!T\_GOTO@{T\_GOTO}}
+\index{T\_GOTO@{T\_GOTO}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_GOTO}{T\_GOTO}}
+{\footnotesize\ttfamily const T\+\_\+\+G\+O\+TO 341}
+
+\mbox{\Hypertarget{tokenizer_8php_a80166f2a1a1e7f3300643f896ae3e801}\label{tokenizer_8php_a80166f2a1a1e7f3300643f896ae3e801}} 
+\index{tokenizer.php@{tokenizer.php}!T\_HALT\_COMPILER@{T\_HALT\_COMPILER}}
+\index{T\_HALT\_COMPILER@{T\_HALT\_COMPILER}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_HALT\_COMPILER}{T\_HALT\_COMPILER}}
+{\footnotesize\ttfamily const T\+\_\+\+H\+A\+L\+T\+\_\+\+C\+O\+M\+P\+I\+L\+ER 363}
+
+\mbox{\Hypertarget{tokenizer_8php_a7e608d628ff0b9246f9ae352f56be5a2}\label{tokenizer_8php_a7e608d628ff0b9246f9ae352f56be5a2}} 
+\index{tokenizer.php@{tokenizer.php}!T\_IF@{T\_IF}}
+\index{T\_IF@{T\_IF}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_IF}{T\_IF}}
+{\footnotesize\ttfamily const T\+\_\+\+IF 322}
+
+\mbox{\Hypertarget{tokenizer_8php_ad80d83662159f7b6fa31da0487b49119}\label{tokenizer_8php_ad80d83662159f7b6fa31da0487b49119}} 
+\index{tokenizer.php@{tokenizer.php}!T\_IMPLEMENTS@{T\_IMPLEMENTS}}
+\index{T\_IMPLEMENTS@{T\_IMPLEMENTS}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_IMPLEMENTS}{T\_IMPLEMENTS}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+TS 368}
+
+\mbox{\Hypertarget{tokenizer_8php_a34c8fe2153a84e17391da1fee0fff786}\label{tokenizer_8php_a34c8fe2153a84e17391da1fee0fff786}} 
+\index{tokenizer.php@{tokenizer.php}!T\_INC@{T\_INC}}
+\index{T\_INC@{T\_INC}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_INC}{T\_INC}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+NC 319}
+
+\mbox{\Hypertarget{tokenizer_8php_ad78ebf4943dd3f635c9fd82ad7fd5ef1}\label{tokenizer_8php_ad78ebf4943dd3f635c9fd82ad7fd5ef1}} 
+\index{tokenizer.php@{tokenizer.php}!T\_INCLUDE@{T\_INCLUDE}}
+\index{T\_INCLUDE@{T\_INCLUDE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_INCLUDE}{T\_INCLUDE}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+N\+C\+L\+U\+DE 259}
+
+\mbox{\Hypertarget{tokenizer_8php_a7a1d7cbb7109aa71323749c8bcca4dac}\label{tokenizer_8php_a7a1d7cbb7109aa71323749c8bcca4dac}} 
+\index{tokenizer.php@{tokenizer.php}!T\_INCLUDE\_ONCE@{T\_INCLUDE\_ONCE}}
+\index{T\_INCLUDE\_ONCE@{T\_INCLUDE\_ONCE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_INCLUDE\_ONCE}{T\_INCLUDE\_ONCE}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+N\+C\+L\+U\+D\+E\+\_\+\+O\+N\+CE 260}
+
+\mbox{\Hypertarget{tokenizer_8php_a7679306bb6915401742cd54b828e1d4e}\label{tokenizer_8php_a7679306bb6915401742cd54b828e1d4e}} 
+\index{tokenizer.php@{tokenizer.php}!T\_INLINE\_HTML@{T\_INLINE\_HTML}}
+\index{T\_INLINE\_HTML@{T\_INLINE\_HTML}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_INLINE\_HTML}{T\_INLINE\_HTML}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+H\+T\+ML 313}
+
+\mbox{\Hypertarget{tokenizer_8php_a6e47f393fde6def1b764340a24869db2}\label{tokenizer_8php_a6e47f393fde6def1b764340a24869db2}} 
+\index{tokenizer.php@{tokenizer.php}!T\_INSTANCEOF@{T\_INSTANCEOF}}
+\index{T\_INSTANCEOF@{T\_INSTANCEOF}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_INSTANCEOF}{T\_INSTANCEOF}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+OF 295}
+
+\mbox{\Hypertarget{tokenizer_8php_a4ed28687325e12d4c9681a2b2b77babc}\label{tokenizer_8php_a4ed28687325e12d4c9681a2b2b77babc}} 
+\index{tokenizer.php@{tokenizer.php}!T\_INSTEADOF@{T\_INSTEADOF}}
+\index{T\_INSTEADOF@{T\_INSTEADOF}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_INSTEADOF}{T\_INSTEADOF}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+N\+S\+T\+E\+A\+D\+OF 351}
+
+\mbox{\Hypertarget{tokenizer_8php_a7481e1b57d9ab6c7bb5908cdf3fd5b9f}\label{tokenizer_8php_a7481e1b57d9ab6c7bb5908cdf3fd5b9f}} 
+\index{tokenizer.php@{tokenizer.php}!T\_INT\_CAST@{T\_INT\_CAST}}
+\index{T\_INT\_CAST@{T\_INT\_CAST}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_INT\_CAST}{T\_INT\_CAST}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+N\+T\+\_\+\+C\+A\+ST 296}
+
+\mbox{\Hypertarget{tokenizer_8php_a7ef173cd76763a323cdd3d8f6d20ad51}\label{tokenizer_8php_a7ef173cd76763a323cdd3d8f6d20ad51}} 
+\index{tokenizer.php@{tokenizer.php}!T\_INTERFACE@{T\_INTERFACE}}
+\index{T\_INTERFACE@{T\_INTERFACE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_INTERFACE}{T\_INTERFACE}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE 366}
+
+\mbox{\Hypertarget{tokenizer_8php_acd642d285ffba3d2fdf189d7de67dde1}\label{tokenizer_8php_acd642d285ffba3d2fdf189d7de67dde1}} 
+\index{tokenizer.php@{tokenizer.php}!T\_IS\_EQUAL@{T\_IS\_EQUAL}}
+\index{T\_IS\_EQUAL@{T\_IS\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_IS\_EQUAL}{T\_IS\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+S\+\_\+\+E\+Q\+U\+AL 286}
+
+\mbox{\Hypertarget{tokenizer_8php_a670530d5d0c6dbdd96efc6e484c94987}\label{tokenizer_8php_a670530d5d0c6dbdd96efc6e484c94987}} 
+\index{tokenizer.php@{tokenizer.php}!T\_IS\_GREATER\_OR\_EQUAL@{T\_IS\_GREATER\_OR\_EQUAL}}
+\index{T\_IS\_GREATER\_OR\_EQUAL@{T\_IS\_GREATER\_OR\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_IS\_GREATER\_OR\_EQUAL}{T\_IS\_GREATER\_OR\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+S\+\_\+\+G\+R\+E\+A\+T\+E\+R\+\_\+\+O\+R\+\_\+\+E\+Q\+U\+AL 292}
+
+\mbox{\Hypertarget{tokenizer_8php_af60d152d83252a246dcbcb12b4a7d50d}\label{tokenizer_8php_af60d152d83252a246dcbcb12b4a7d50d}} 
+\index{tokenizer.php@{tokenizer.php}!T\_IS\_IDENTICAL@{T\_IS\_IDENTICAL}}
+\index{T\_IS\_IDENTICAL@{T\_IS\_IDENTICAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_IS\_IDENTICAL}{T\_IS\_IDENTICAL}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+S\+\_\+\+I\+D\+E\+N\+T\+I\+C\+AL 288}
+
+\mbox{\Hypertarget{tokenizer_8php_aed8c5e4a5f723ef747ace5ac689a8482}\label{tokenizer_8php_aed8c5e4a5f723ef747ace5ac689a8482}} 
+\index{tokenizer.php@{tokenizer.php}!T\_IS\_NOT\_EQUAL@{T\_IS\_NOT\_EQUAL}}
+\index{T\_IS\_NOT\_EQUAL@{T\_IS\_NOT\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_IS\_NOT\_EQUAL}{T\_IS\_NOT\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+S\+\_\+\+N\+O\+T\+\_\+\+E\+Q\+U\+AL 287}
+
+\mbox{\Hypertarget{tokenizer_8php_afcb6d9b30fcb2a424deb0cdb2f5ae813}\label{tokenizer_8php_afcb6d9b30fcb2a424deb0cdb2f5ae813}} 
+\index{tokenizer.php@{tokenizer.php}!T\_IS\_NOT\_IDENTICAL@{T\_IS\_NOT\_IDENTICAL}}
+\index{T\_IS\_NOT\_IDENTICAL@{T\_IS\_NOT\_IDENTICAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_IS\_NOT\_IDENTICAL}{T\_IS\_NOT\_IDENTICAL}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+S\+\_\+\+N\+O\+T\+\_\+\+I\+D\+E\+N\+T\+I\+C\+AL 289}
+
+\mbox{\Hypertarget{tokenizer_8php_a08a33af03bb28fd75dd0a041e5a24992}\label{tokenizer_8php_a08a33af03bb28fd75dd0a041e5a24992}} 
+\index{tokenizer.php@{tokenizer.php}!T\_IS\_SMALLER\_OR\_EQUAL@{T\_IS\_SMALLER\_OR\_EQUAL}}
+\index{T\_IS\_SMALLER\_OR\_EQUAL@{T\_IS\_SMALLER\_OR\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_IS\_SMALLER\_OR\_EQUAL}{T\_IS\_SMALLER\_OR\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+S\+\_\+\+S\+M\+A\+L\+L\+E\+R\+\_\+\+O\+R\+\_\+\+E\+Q\+U\+AL 291}
+
+\mbox{\Hypertarget{tokenizer_8php_ab3c97ce1086628141132cf38485ee977}\label{tokenizer_8php_ab3c97ce1086628141132cf38485ee977}} 
+\index{tokenizer.php@{tokenizer.php}!T\_ISSET@{T\_ISSET}}
+\index{T\_ISSET@{T\_ISSET}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_ISSET}{T\_ISSET}}
+{\footnotesize\ttfamily const T\+\_\+\+I\+S\+S\+ET 361}
+
+\mbox{\Hypertarget{tokenizer_8php_ac7e87ba12f0a411165089f1a00048554}\label{tokenizer_8php_ac7e87ba12f0a411165089f1a00048554}} 
+\index{tokenizer.php@{tokenizer.php}!T\_LINE@{T\_LINE}}
+\index{T\_LINE@{T\_LINE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_LINE}{T\_LINE}}
+{\footnotesize\ttfamily const T\+\_\+\+L\+I\+NE 373}
+
+\mbox{\Hypertarget{tokenizer_8php_ac3a675e21ce0d08e79516f4a8ac4b7bf}\label{tokenizer_8php_ac3a675e21ce0d08e79516f4a8ac4b7bf}} 
+\index{tokenizer.php@{tokenizer.php}!T\_LIST@{T\_LIST}}
+\index{T\_LIST@{T\_LIST}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_LIST}{T\_LIST}}
+{\footnotesize\ttfamily const T\+\_\+\+L\+I\+ST 370}
+
+\mbox{\Hypertarget{tokenizer_8php_adc84d9c9f3e4f244eb77016fbbf6f1e6}\label{tokenizer_8php_adc84d9c9f3e4f244eb77016fbbf6f1e6}} 
+\index{tokenizer.php@{tokenizer.php}!T\_LNUMBER@{T\_LNUMBER}}
+\index{T\_LNUMBER@{T\_LNUMBER}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_LNUMBER}{T\_LNUMBER}}
+{\footnotesize\ttfamily const T\+\_\+\+L\+N\+U\+M\+B\+ER 309}
+
+\mbox{\Hypertarget{tokenizer_8php_a16181d2b1bdcf5ba03ce03e8993ed383}\label{tokenizer_8php_a16181d2b1bdcf5ba03ce03e8993ed383}} 
+\index{tokenizer.php@{tokenizer.php}!T\_LOGICAL\_AND@{T\_LOGICAL\_AND}}
+\index{T\_LOGICAL\_AND@{T\_LOGICAL\_AND}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_LOGICAL\_AND}{T\_LOGICAL\_AND}}
+{\footnotesize\ttfamily const T\+\_\+\+L\+O\+G\+I\+C\+A\+L\+\_\+\+A\+ND 265}
+
+\mbox{\Hypertarget{tokenizer_8php_a44de7b190bf0b3f5f9553f1fbae89e6c}\label{tokenizer_8php_a44de7b190bf0b3f5f9553f1fbae89e6c}} 
+\index{tokenizer.php@{tokenizer.php}!T\_LOGICAL\_OR@{T\_LOGICAL\_OR}}
+\index{T\_LOGICAL\_OR@{T\_LOGICAL\_OR}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_LOGICAL\_OR}{T\_LOGICAL\_OR}}
+{\footnotesize\ttfamily const T\+\_\+\+L\+O\+G\+I\+C\+A\+L\+\_\+\+OR 263}
+
+\mbox{\Hypertarget{tokenizer_8php_a406e45abf9febbb52f27e632969c3e94}\label{tokenizer_8php_a406e45abf9febbb52f27e632969c3e94}} 
+\index{tokenizer.php@{tokenizer.php}!T\_LOGICAL\_XOR@{T\_LOGICAL\_XOR}}
+\index{T\_LOGICAL\_XOR@{T\_LOGICAL\_XOR}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_LOGICAL\_XOR}{T\_LOGICAL\_XOR}}
+{\footnotesize\ttfamily const T\+\_\+\+L\+O\+G\+I\+C\+A\+L\+\_\+\+X\+OR 264}
+
+\mbox{\Hypertarget{tokenizer_8php_a6bd4661178ac80f1080c6090cf9a6cfa}\label{tokenizer_8php_a6bd4661178ac80f1080c6090cf9a6cfa}} 
+\index{tokenizer.php@{tokenizer.php}!T\_METHOD\_C@{T\_METHOD\_C}}
+\index{T\_METHOD\_C@{T\_METHOD\_C}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_METHOD\_C}{T\_METHOD\_C}}
+{\footnotesize\ttfamily const T\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+C 378}
+
+\mbox{\Hypertarget{tokenizer_8php_ac616789d62fdffcf32db308ed4f963ee}\label{tokenizer_8php_ac616789d62fdffcf32db308ed4f963ee}} 
+\index{tokenizer.php@{tokenizer.php}!T\_MINUS\_EQUAL@{T\_MINUS\_EQUAL}}
+\index{T\_MINUS\_EQUAL@{T\_MINUS\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_MINUS\_EQUAL}{T\_MINUS\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+M\+I\+N\+U\+S\+\_\+\+E\+Q\+U\+AL 271}
+
+\mbox{\Hypertarget{tokenizer_8php_a4f733b1fbe8a1552f0d42dd528d4f8ca}\label{tokenizer_8php_a4f733b1fbe8a1552f0d42dd528d4f8ca}} 
+\index{tokenizer.php@{tokenizer.php}!T\_MOD\_EQUAL@{T\_MOD\_EQUAL}}
+\index{T\_MOD\_EQUAL@{T\_MOD\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_MOD\_EQUAL}{T\_MOD\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+M\+O\+D\+\_\+\+E\+Q\+U\+AL 275}
+
+\mbox{\Hypertarget{tokenizer_8php_a2acd56a06a64f94d12cb8f3fa1d3ae41}\label{tokenizer_8php_a2acd56a06a64f94d12cb8f3fa1d3ae41}} 
+\index{tokenizer.php@{tokenizer.php}!T\_MUL\_EQUAL@{T\_MUL\_EQUAL}}
+\index{T\_MUL\_EQUAL@{T\_MUL\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_MUL\_EQUAL}{T\_MUL\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+M\+U\+L\+\_\+\+E\+Q\+U\+AL 272}
+
+\mbox{\Hypertarget{tokenizer_8php_adc423626c24714bd4e9691f7223c2874}\label{tokenizer_8php_adc423626c24714bd4e9691f7223c2874}} 
+\index{tokenizer.php@{tokenizer.php}!T\_NAMESPACE@{T\_NAMESPACE}}
+\index{T\_NAMESPACE@{T\_NAMESPACE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_NAMESPACE}{T\_NAMESPACE}}
+{\footnotesize\ttfamily const T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE 391}
+
+\mbox{\Hypertarget{tokenizer_8php_ad305c48565a48c5a7782a10f45cc73e5}\label{tokenizer_8php_ad305c48565a48c5a7782a10f45cc73e5}} 
+\index{tokenizer.php@{tokenizer.php}!T\_NEW@{T\_NEW}}
+\index{T\_NEW@{T\_NEW}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_NEW}{T\_NEW}}
+{\footnotesize\ttfamily const T\+\_\+\+N\+EW 304}
+
+\mbox{\Hypertarget{tokenizer_8php_af8e9f8450c39f098356797a3fcbe0baf}\label{tokenizer_8php_af8e9f8450c39f098356797a3fcbe0baf}} 
+\index{tokenizer.php@{tokenizer.php}!T\_NS\_C@{T\_NS\_C}}
+\index{T\_NS\_C@{T\_NS\_C}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_NS\_C}{T\_NS\_C}}
+{\footnotesize\ttfamily const T\+\_\+\+N\+S\+\_\+C 392}
+
+\mbox{\Hypertarget{tokenizer_8php_ada702c9850e4d8b33f463a1dd5975158}\label{tokenizer_8php_ada702c9850e4d8b33f463a1dd5975158}} 
+\index{tokenizer.php@{tokenizer.php}!T\_NS\_SEPARATOR@{T\_NS\_SEPARATOR}}
+\index{T\_NS\_SEPARATOR@{T\_NS\_SEPARATOR}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_NS\_SEPARATOR}{T\_NS\_SEPARATOR}}
+{\footnotesize\ttfamily const T\+\_\+\+N\+S\+\_\+\+S\+E\+P\+A\+R\+A\+T\+OR 393}
+
+\mbox{\Hypertarget{tokenizer_8php_a1ceea363d61b16e29a8bb7c199bfa2e8}\label{tokenizer_8php_a1ceea363d61b16e29a8bb7c199bfa2e8}} 
+\index{tokenizer.php@{tokenizer.php}!T\_NUM\_STRING@{T\_NUM\_STRING}}
+\index{T\_NUM\_STRING@{T\_NUM\_STRING}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_NUM\_STRING}{T\_NUM\_STRING}}
+{\footnotesize\ttfamily const T\+\_\+\+N\+U\+M\+\_\+\+S\+T\+R\+I\+NG 317}
+
+\mbox{\Hypertarget{tokenizer_8php_a174d4b178cc44183b26575fc6b0741ca}\label{tokenizer_8php_a174d4b178cc44183b26575fc6b0741ca}} 
+\index{tokenizer.php@{tokenizer.php}!T\_OBJECT\_CAST@{T\_OBJECT\_CAST}}
+\index{T\_OBJECT\_CAST@{T\_OBJECT\_CAST}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_OBJECT\_CAST}{T\_OBJECT\_CAST}}
+{\footnotesize\ttfamily const T\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+C\+A\+ST 300}
+
+\mbox{\Hypertarget{tokenizer_8php_a3bc84c65cef799e9add55bcc7ed2e829}\label{tokenizer_8php_a3bc84c65cef799e9add55bcc7ed2e829}} 
+\index{tokenizer.php@{tokenizer.php}!T\_OBJECT\_OPERATOR@{T\_OBJECT\_OPERATOR}}
+\index{T\_OBJECT\_OPERATOR@{T\_OBJECT\_OPERATOR}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_OBJECT\_OPERATOR}{T\_OBJECT\_OPERATOR}}
+{\footnotesize\ttfamily const T\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+O\+P\+E\+R\+A\+T\+OR 369}
+
+\mbox{\Hypertarget{tokenizer_8php_a13128c2c1ccfb33a0cd97c4bcfe48e07}\label{tokenizer_8php_a13128c2c1ccfb33a0cd97c4bcfe48e07}} 
+\index{tokenizer.php@{tokenizer.php}!T\_OPEN\_TAG@{T\_OPEN\_TAG}}
+\index{T\_OPEN\_TAG@{T\_OPEN\_TAG}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_OPEN\_TAG}{T\_OPEN\_TAG}}
+{\footnotesize\ttfamily const T\+\_\+\+O\+P\+E\+N\+\_\+\+T\+AG 382}
+
+\mbox{\Hypertarget{tokenizer_8php_a77e88b1c16426951a85982923034d23a}\label{tokenizer_8php_a77e88b1c16426951a85982923034d23a}} 
+\index{tokenizer.php@{tokenizer.php}!T\_OPEN\_TAG\_WITH\_ECHO@{T\_OPEN\_TAG\_WITH\_ECHO}}
+\index{T\_OPEN\_TAG\_WITH\_ECHO@{T\_OPEN\_TAG\_WITH\_ECHO}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_OPEN\_TAG\_WITH\_ECHO}{T\_OPEN\_TAG\_WITH\_ECHO}}
+{\footnotesize\ttfamily const T\+\_\+\+O\+P\+E\+N\+\_\+\+T\+A\+G\+\_\+\+W\+I\+T\+H\+\_\+\+E\+C\+HO 383}
+
+\mbox{\Hypertarget{tokenizer_8php_a5dfd57b2e4c91d1b400bf174c146d00f}\label{tokenizer_8php_a5dfd57b2e4c91d1b400bf174c146d00f}} 
+\index{tokenizer.php@{tokenizer.php}!T\_OR\_EQUAL@{T\_OR\_EQUAL}}
+\index{T\_OR\_EQUAL@{T\_OR\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_OR\_EQUAL}{T\_OR\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+O\+R\+\_\+\+E\+Q\+U\+AL 277}
+
+\mbox{\Hypertarget{tokenizer_8php_aa2008da5f5676435f8fcb3b85361a2ef}\label{tokenizer_8php_aa2008da5f5676435f8fcb3b85361a2ef}} 
+\index{tokenizer.php@{tokenizer.php}!T\_PAAMAYIM\_NEKUDOTAYIM@{T\_PAAMAYIM\_NEKUDOTAYIM}}
+\index{T\_PAAMAYIM\_NEKUDOTAYIM@{T\_PAAMAYIM\_NEKUDOTAYIM}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_PAAMAYIM\_NEKUDOTAYIM}{T\_PAAMAYIM\_NEKUDOTAYIM}}
+{\footnotesize\ttfamily const T\+\_\+\+P\+A\+A\+M\+A\+Y\+I\+M\+\_\+\+N\+E\+K\+U\+D\+O\+T\+A\+Y\+IM 390}
+
+\mbox{\Hypertarget{tokenizer_8php_aa60c549a32f41089eec4d97592e717c5}\label{tokenizer_8php_aa60c549a32f41089eec4d97592e717c5}} 
+\index{tokenizer.php@{tokenizer.php}!T\_PLUS\_EQUAL@{T\_PLUS\_EQUAL}}
+\index{T\_PLUS\_EQUAL@{T\_PLUS\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_PLUS\_EQUAL}{T\_PLUS\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+P\+L\+U\+S\+\_\+\+E\+Q\+U\+AL 270}
+
+\mbox{\Hypertarget{tokenizer_8php_ac7c8759d75cc236cf7b554392ada5c87}\label{tokenizer_8php_ac7c8759d75cc236cf7b554392ada5c87}} 
+\index{tokenizer.php@{tokenizer.php}!T\_POW@{T\_POW}}
+\index{T\_POW@{T\_POW}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_POW}{T\_POW}}
+{\footnotesize\ttfamily const T\+\_\+\+P\+OW 303}
+
+\mbox{\Hypertarget{tokenizer_8php_afcbb9d9ed10e1c3a91d499bc7ca43f84}\label{tokenizer_8php_afcbb9d9ed10e1c3a91d499bc7ca43f84}} 
+\index{tokenizer.php@{tokenizer.php}!T\_POW\_EQUAL@{T\_POW\_EQUAL}}
+\index{T\_POW\_EQUAL@{T\_POW\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_POW\_EQUAL}{T\_POW\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+P\+O\+W\+\_\+\+E\+Q\+U\+AL 281}
+
+\mbox{\Hypertarget{tokenizer_8php_afb6f291040be193d7ea73d9ab84c60bd}\label{tokenizer_8php_afb6f291040be193d7ea73d9ab84c60bd}} 
+\index{tokenizer.php@{tokenizer.php}!T\_PRINT@{T\_PRINT}}
+\index{T\_PRINT@{T\_PRINT}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_PRINT}{T\_PRINT}}
+{\footnotesize\ttfamily const T\+\_\+\+P\+R\+I\+NT 266}
+
+\mbox{\Hypertarget{tokenizer_8php_aafe6d13a3893d4042464fe0bc05fdea0}\label{tokenizer_8php_aafe6d13a3893d4042464fe0bc05fdea0}} 
+\index{tokenizer.php@{tokenizer.php}!T\_PRIVATE@{T\_PRIVATE}}
+\index{T\_PRIVATE@{T\_PRIVATE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_PRIVATE}{T\_PRIVATE}}
+{\footnotesize\ttfamily const T\+\_\+\+P\+R\+I\+V\+A\+TE 356}
+
+\mbox{\Hypertarget{tokenizer_8php_ae903d4988f7287db0e6ea2fa081fc667}\label{tokenizer_8php_ae903d4988f7287db0e6ea2fa081fc667}} 
+\index{tokenizer.php@{tokenizer.php}!T\_PROTECTED@{T\_PROTECTED}}
+\index{T\_PROTECTED@{T\_PROTECTED}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_PROTECTED}{T\_PROTECTED}}
+{\footnotesize\ttfamily const T\+\_\+\+P\+R\+O\+T\+E\+C\+T\+ED 357}
+
+\mbox{\Hypertarget{tokenizer_8php_a2ffd73ab87b57dcdb50285d5653ed8b9}\label{tokenizer_8php_a2ffd73ab87b57dcdb50285d5653ed8b9}} 
+\index{tokenizer.php@{tokenizer.php}!T\_PUBLIC@{T\_PUBLIC}}
+\index{T\_PUBLIC@{T\_PUBLIC}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_PUBLIC}{T\_PUBLIC}}
+{\footnotesize\ttfamily const T\+\_\+\+P\+U\+B\+L\+IC 358}
+
+\mbox{\Hypertarget{tokenizer_8php_a80d646f034bb2101f96b647356c4a5a0}\label{tokenizer_8php_a80d646f034bb2101f96b647356c4a5a0}} 
+\index{tokenizer.php@{tokenizer.php}!T\_REQUIRE@{T\_REQUIRE}}
+\index{T\_REQUIRE@{T\_REQUIRE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_REQUIRE}{T\_REQUIRE}}
+{\footnotesize\ttfamily const T\+\_\+\+R\+E\+Q\+U\+I\+RE 261}
+
+\mbox{\Hypertarget{tokenizer_8php_aafaf3c2385e0181087573b5f9a5fefc4}\label{tokenizer_8php_aafaf3c2385e0181087573b5f9a5fefc4}} 
+\index{tokenizer.php@{tokenizer.php}!T\_REQUIRE\_ONCE@{T\_REQUIRE\_ONCE}}
+\index{T\_REQUIRE\_ONCE@{T\_REQUIRE\_ONCE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_REQUIRE\_ONCE}{T\_REQUIRE\_ONCE}}
+{\footnotesize\ttfamily const T\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+O\+N\+CE 262}
+
+\mbox{\Hypertarget{tokenizer_8php_acaf7bdb7962432496c997e7db4abc747}\label{tokenizer_8php_acaf7bdb7962432496c997e7db4abc747}} 
+\index{tokenizer.php@{tokenizer.php}!T\_RETURN@{T\_RETURN}}
+\index{T\_RETURN@{T\_RETURN}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_RETURN}{T\_RETURN}}
+{\footnotesize\ttfamily const T\+\_\+\+R\+E\+T\+U\+RN 345}
+
+\mbox{\Hypertarget{tokenizer_8php_a0ea3d081448e7629d449afd3c4e60528}\label{tokenizer_8php_a0ea3d081448e7629d449afd3c4e60528}} 
+\index{tokenizer.php@{tokenizer.php}!T\_SL@{T\_SL}}
+\index{T\_SL@{T\_SL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_SL}{T\_SL}}
+{\footnotesize\ttfamily const T\+\_\+\+SL 293}
+
+\mbox{\Hypertarget{tokenizer_8php_af5fc1607a05c84be6399dc4533ad522c}\label{tokenizer_8php_af5fc1607a05c84be6399dc4533ad522c}} 
+\index{tokenizer.php@{tokenizer.php}!T\_SL\_EQUAL@{T\_SL\_EQUAL}}
+\index{T\_SL\_EQUAL@{T\_SL\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_SL\_EQUAL}{T\_SL\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+S\+L\+\_\+\+E\+Q\+U\+AL 279}
+
+\mbox{\Hypertarget{tokenizer_8php_aadea628d9012833da7231f087adae22d}\label{tokenizer_8php_aadea628d9012833da7231f087adae22d}} 
+\index{tokenizer.php@{tokenizer.php}!T\_SPACESHIP@{T\_SPACESHIP}}
+\index{T\_SPACESHIP@{T\_SPACESHIP}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_SPACESHIP}{T\_SPACESHIP}}
+{\footnotesize\ttfamily const T\+\_\+\+S\+P\+A\+C\+E\+S\+H\+IP 290}
+
+\mbox{\Hypertarget{tokenizer_8php_a0625fa59dbed07c4a909843e3b071463}\label{tokenizer_8php_a0625fa59dbed07c4a909843e3b071463}} 
+\index{tokenizer.php@{tokenizer.php}!T\_SR@{T\_SR}}
+\index{T\_SR@{T\_SR}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_SR}{T\_SR}}
+{\footnotesize\ttfamily const T\+\_\+\+SR 294}
+
+\mbox{\Hypertarget{tokenizer_8php_a67f311fa72d9c87e31765e7d1e1dbcb5}\label{tokenizer_8php_a67f311fa72d9c87e31765e7d1e1dbcb5}} 
+\index{tokenizer.php@{tokenizer.php}!T\_SR\_EQUAL@{T\_SR\_EQUAL}}
+\index{T\_SR\_EQUAL@{T\_SR\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_SR\_EQUAL}{T\_SR\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+S\+R\+\_\+\+E\+Q\+U\+AL 280}
+
+\mbox{\Hypertarget{tokenizer_8php_adb385dc707621926e93c412256a4f520}\label{tokenizer_8php_adb385dc707621926e93c412256a4f520}} 
+\index{tokenizer.php@{tokenizer.php}!T\_START\_HEREDOC@{T\_START\_HEREDOC}}
+\index{T\_START\_HEREDOC@{T\_START\_HEREDOC}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_START\_HEREDOC}{T\_START\_HEREDOC}}
+{\footnotesize\ttfamily const T\+\_\+\+S\+T\+A\+R\+T\+\_\+\+H\+E\+R\+E\+D\+OC 386}
+
+\mbox{\Hypertarget{tokenizer_8php_a5d2412f3ea943abd82d5320de451348f}\label{tokenizer_8php_a5d2412f3ea943abd82d5320de451348f}} 
+\index{tokenizer.php@{tokenizer.php}!T\_STATIC@{T\_STATIC}}
+\index{T\_STATIC@{T\_STATIC}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_STATIC}{T\_STATIC}}
+{\footnotesize\ttfamily const T\+\_\+\+S\+T\+A\+T\+IC 353}
+
+\mbox{\Hypertarget{tokenizer_8php_a301319d23bde4e1cb03a0ece6ba3429d}\label{tokenizer_8php_a301319d23bde4e1cb03a0ece6ba3429d}} 
+\index{tokenizer.php@{tokenizer.php}!T\_STRING@{T\_STRING}}
+\index{T\_STRING@{T\_STRING}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_STRING}{T\_STRING}}
+{\footnotesize\ttfamily const T\+\_\+\+S\+T\+R\+I\+NG 311}
+
+\mbox{\Hypertarget{tokenizer_8php_a554303a3780d53d7d2aa71a6223bc189}\label{tokenizer_8php_a554303a3780d53d7d2aa71a6223bc189}} 
+\index{tokenizer.php@{tokenizer.php}!T\_STRING\_CAST@{T\_STRING\_CAST}}
+\index{T\_STRING\_CAST@{T\_STRING\_CAST}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_STRING\_CAST}{T\_STRING\_CAST}}
+{\footnotesize\ttfamily const T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+C\+A\+ST 298}
+
+\mbox{\Hypertarget{tokenizer_8php_ae1b8735e29b7557bdeb8be0b9b04c002}\label{tokenizer_8php_ae1b8735e29b7557bdeb8be0b9b04c002}} 
+\index{tokenizer.php@{tokenizer.php}!T\_STRING\_VARNAME@{T\_STRING\_VARNAME}}
+\index{T\_STRING\_VARNAME@{T\_STRING\_VARNAME}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_STRING\_VARNAME}{T\_STRING\_VARNAME}}
+{\footnotesize\ttfamily const T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+V\+A\+R\+N\+A\+ME 316}
+
+\mbox{\Hypertarget{tokenizer_8php_a84842c092993771b9312cb10ca19db8b}\label{tokenizer_8php_a84842c092993771b9312cb10ca19db8b}} 
+\index{tokenizer.php@{tokenizer.php}!T\_SWITCH@{T\_SWITCH}}
+\index{T\_SWITCH@{T\_SWITCH}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_SWITCH}{T\_SWITCH}}
+{\footnotesize\ttfamily const T\+\_\+\+S\+W\+I\+T\+CH 335}
+
+\mbox{\Hypertarget{tokenizer_8php_abac96cb09bd1d68c2f1f313766075615}\label{tokenizer_8php_abac96cb09bd1d68c2f1f313766075615}} 
+\index{tokenizer.php@{tokenizer.php}!T\_THROW@{T\_THROW}}
+\index{T\_THROW@{T\_THROW}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_THROW}{T\_THROW}}
+{\footnotesize\ttfamily const T\+\_\+\+T\+H\+R\+OW 349}
+
+\mbox{\Hypertarget{tokenizer_8php_ae42ba6180092525d3ac43986bbd8d755}\label{tokenizer_8php_ae42ba6180092525d3ac43986bbd8d755}} 
+\index{tokenizer.php@{tokenizer.php}!T\_TRAIT@{T\_TRAIT}}
+\index{T\_TRAIT@{T\_TRAIT}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_TRAIT}{T\_TRAIT}}
+{\footnotesize\ttfamily const T\+\_\+\+T\+R\+A\+IT 365}
+
+\mbox{\Hypertarget{tokenizer_8php_aa860ccdd30372a11073952070bcfcfaf}\label{tokenizer_8php_aa860ccdd30372a11073952070bcfcfaf}} 
+\index{tokenizer.php@{tokenizer.php}!T\_TRAIT\_C@{T\_TRAIT\_C}}
+\index{T\_TRAIT\_C@{T\_TRAIT\_C}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_TRAIT\_C}{T\_TRAIT\_C}}
+{\footnotesize\ttfamily const T\+\_\+\+T\+R\+A\+I\+T\+\_\+C 377}
+
+\mbox{\Hypertarget{tokenizer_8php_af1bcbf343f08d727d1ccc9197c75e003}\label{tokenizer_8php_af1bcbf343f08d727d1ccc9197c75e003}} 
+\index{tokenizer.php@{tokenizer.php}!T\_TRY@{T\_TRY}}
+\index{T\_TRY@{T\_TRY}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_TRY}{T\_TRY}}
+{\footnotesize\ttfamily const T\+\_\+\+T\+RY 346}
+
+\mbox{\Hypertarget{tokenizer_8php_a56f750edd5741180e844859aadf9919c}\label{tokenizer_8php_a56f750edd5741180e844859aadf9919c}} 
+\index{tokenizer.php@{tokenizer.php}!T\_UNSET@{T\_UNSET}}
+\index{T\_UNSET@{T\_UNSET}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_UNSET}{T\_UNSET}}
+{\footnotesize\ttfamily const T\+\_\+\+U\+N\+S\+ET 360}
+
+\mbox{\Hypertarget{tokenizer_8php_ae6e162cb9e63e0a5567c50f581537bb9}\label{tokenizer_8php_ae6e162cb9e63e0a5567c50f581537bb9}} 
+\index{tokenizer.php@{tokenizer.php}!T\_UNSET\_CAST@{T\_UNSET\_CAST}}
+\index{T\_UNSET\_CAST@{T\_UNSET\_CAST}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_UNSET\_CAST}{T\_UNSET\_CAST}}
+{\footnotesize\ttfamily const T\+\_\+\+U\+N\+S\+E\+T\+\_\+\+C\+A\+ST 302}
+
+\mbox{\Hypertarget{tokenizer_8php_a4d071933348f01b2d188763cdb7ed1d6}\label{tokenizer_8php_a4d071933348f01b2d188763cdb7ed1d6}} 
+\index{tokenizer.php@{tokenizer.php}!T\_USE@{T\_USE}}
+\index{T\_USE@{T\_USE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_USE}{T\_USE}}
+{\footnotesize\ttfamily const T\+\_\+\+U\+SE 350}
+
+\mbox{\Hypertarget{tokenizer_8php_a1773f7ded3f91dbf4490f6005c5586ac}\label{tokenizer_8php_a1773f7ded3f91dbf4490f6005c5586ac}} 
+\index{tokenizer.php@{tokenizer.php}!T\_VAR@{T\_VAR}}
+\index{T\_VAR@{T\_VAR}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_VAR}{T\_VAR}}
+{\footnotesize\ttfamily const T\+\_\+\+V\+AR 359}
+
+\mbox{\Hypertarget{tokenizer_8php_a50c0f2c8842d4f6810d2671441c86762}\label{tokenizer_8php_a50c0f2c8842d4f6810d2671441c86762}} 
+\index{tokenizer.php@{tokenizer.php}!T\_VARIABLE@{T\_VARIABLE}}
+\index{T\_VARIABLE@{T\_VARIABLE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_VARIABLE}{T\_VARIABLE}}
+{\footnotesize\ttfamily const T\+\_\+\+V\+A\+R\+I\+A\+B\+LE 312}
+
+\mbox{\Hypertarget{tokenizer_8php_a97dc58d6df07d5f7373df6a897b91317}\label{tokenizer_8php_a97dc58d6df07d5f7373df6a897b91317}} 
+\index{tokenizer.php@{tokenizer.php}!T\_WHILE@{T\_WHILE}}
+\index{T\_WHILE@{T\_WHILE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_WHILE}{T\_WHILE}}
+{\footnotesize\ttfamily const T\+\_\+\+W\+H\+I\+LE 326}
+
+\mbox{\Hypertarget{tokenizer_8php_a8a33686e58ec3907729269c1519eaea6}\label{tokenizer_8php_a8a33686e58ec3907729269c1519eaea6}} 
+\index{tokenizer.php@{tokenizer.php}!T\_WHITESPACE@{T\_WHITESPACE}}
+\index{T\_WHITESPACE@{T\_WHITESPACE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_WHITESPACE}{T\_WHITESPACE}}
+{\footnotesize\ttfamily const T\+\_\+\+W\+H\+I\+T\+E\+S\+P\+A\+CE 385}
+
+\mbox{\Hypertarget{tokenizer_8php_a0733844fba994bdd3110544cc300ce33}\label{tokenizer_8php_a0733844fba994bdd3110544cc300ce33}} 
+\index{tokenizer.php@{tokenizer.php}!T\_XOR\_EQUAL@{T\_XOR\_EQUAL}}
+\index{T\_XOR\_EQUAL@{T\_XOR\_EQUAL}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_XOR\_EQUAL}{T\_XOR\_EQUAL}}
+{\footnotesize\ttfamily const T\+\_\+\+X\+O\+R\+\_\+\+E\+Q\+U\+AL 278}
+
+\mbox{\Hypertarget{tokenizer_8php_a8ad3711fa281229e4ccecaf9b14de677}\label{tokenizer_8php_a8ad3711fa281229e4ccecaf9b14de677}} 
+\index{tokenizer.php@{tokenizer.php}!T\_YIELD@{T\_YIELD}}
+\index{T\_YIELD@{T\_YIELD}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_YIELD}{T\_YIELD}}
+{\footnotesize\ttfamily const T\+\_\+\+Y\+I\+E\+LD 267}
+
+\mbox{\Hypertarget{tokenizer_8php_a6439284931f917b38f27f3e2e1c7c1e4}\label{tokenizer_8php_a6439284931f917b38f27f3e2e1c7c1e4}} 
+\index{tokenizer.php@{tokenizer.php}!T\_YIELD\_FROM@{T\_YIELD\_FROM}}
+\index{T\_YIELD\_FROM@{T\_YIELD\_FROM}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{T\_YIELD\_FROM}{T\_YIELD\_FROM}}
+{\footnotesize\ttfamily const T\+\_\+\+Y\+I\+E\+L\+D\+\_\+\+F\+R\+OM 269}
+
+\mbox{\Hypertarget{tokenizer_8php_a6ed289b222b1bf687ec5aab733ab47dd}\label{tokenizer_8php_a6ed289b222b1bf687ec5aab733ab47dd}} 
+\index{tokenizer.php@{tokenizer.php}!TOKEN\_PARSE@{TOKEN\_PARSE}}
+\index{TOKEN\_PARSE@{TOKEN\_PARSE}!tokenizer.php@{tokenizer.php}}
+\doxysubsubsection{\texorpdfstring{TOKEN\_PARSE}{TOKEN\_PARSE}}
+{\footnotesize\ttfamily const T\+O\+K\+E\+N\+\_\+\+P\+A\+R\+SE 1}
+

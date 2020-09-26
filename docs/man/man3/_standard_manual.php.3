@@ -1,0 +1,77 @@
+.TH "vendor/jetbrains/phpstorm-stubs/standard/_standard_manual.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/standard/_standard_manual.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPS_UNRESERVE_PREFIX___halt_compiler\fP ()"
+.br
+.ti -1c
+.RI "\fBhex2bin\fP ($data)"
+.br
+.ti -1c
+.RI "\fBfastcgi_finish_request\fP ()"
+.br
+.ti -1c
+.RI "\fBhttp_response_code\fP ($response_code=\fBnull\fP)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fB__COMPILER_HALT_OFFSET__\fP 0"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "fastcgi_finish_request ()"
+This function flushes all response data to the client and finishes the request\&. This allows for time consuming tasks to be performed without leaving the connection to the client open\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Returns TRUE on success or FALSE on failure\&. \fB5\&.3\&.3 \fP
+.RE
+.PP
+
+.SS "hex2bin ( $data)"
+Convert hexadecimal string to its binary representation\&.
+.PP
+If the hexadecimal input string is of odd length or invalid hexadecimal string an \fCE_WARNING\fP level error is emitted\&.
+.PP
+\fBstring $data Hexadecimal string to convert\&.  string|false The binary representation of the given data or \fBFALSE\fP on failure\&.  bin2hex()  unpack()  5\&.4 \fP
+.SS "http_response_code ( $response_code = \fC\fBnull\fP\fP)"
+Get or Set the HTTP response code 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$response_code\fP [optional] The optional response_code will set the response code\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int The current response code\&. By default the return value is int(200)\&. 
+.RE
+.PP
+
+.SS "PS_UNRESERVE_PREFIX___halt_compiler ()"
+(PHP 5\&.1)
+.br
+ Halts the execution of the compiler\&. This can be useful to embed data in PHP scripts, like the installation files\&. Byte position of the data start can be determined by the \fBCOMPILER_HALT_OFFSET\fP constant which is defined only if there is a __halt_compiler() presented in the file\&. 
+.PP
+Note: __halt_compiler() can only be used from the outermost scope\&. \fBvoid \fP
+.SH "Variable Documentation"
+.PP 
+.SS "const __COMPILER_HALT_OFFSET__ 0"
+(PHP 5\&.1)
+.br
+ Byte position of the data start, defined only if there is a __halt_compiler() presented in the file\&. \fBvoid \fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

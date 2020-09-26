@@ -1,0 +1,2444 @@
+\hypertarget{ldap_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/ldap/ldap.php File Reference}
+\label{ldap_8php}\index{vendor/jetbrains/phpstorm-\/stubs/ldap/ldap.php@{vendor/jetbrains/phpstorm-\/stubs/ldap/ldap.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ldap_8php_a1334323526c6e386587376fab14b0304}{ldap\+\_\+exop\+\_\+passwd}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$user=\char`\"{}\char`\"{}, \$oldpw=\char`\"{}\char`\"{}, \$newpw=\char`\"{}\char`\"{}, array \&\$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_a59380590e857c7db20d796349968ae14}{ldap\+\_\+exop\+\_\+refresh}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$dn, \$ttl)
+\item 
+\mbox{\hyperlink{ldap_8php_a57fe3a57af8ee8ee3303e13c7e5ec40b}{ldap\+\_\+exop\+\_\+whoami}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}})
+\item 
+\mbox{\hyperlink{ldap_8php_a9cb0aac181c2b24598999fe07f04fa10}{ldap\+\_\+exop}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$reqoid, \$reqdata=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$serverctrls=\mbox{[}$\,$\mbox{]}, \&\$retdata, \&\$retoid)
+\item 
+\mbox{\hyperlink{ldap_8php_ad7f2248eb2df8a7df7ee6bacc88744cd}{ldap\+\_\+parse\+\_\+exop}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$result, \&\$retdata, \&\$retoid)
+\item 
+\mbox{\hyperlink{ldap_8php_ae370bf77c787c2d0b07e553ed28fa79e}{ldap\+\_\+8859\+\_\+to\+\_\+t61}} (\$value)
+\item 
+\mbox{\hyperlink{ldap_8php_a867457e967a9b0d1c69bb1b1bf77729c}{ldap\+\_\+t61\+\_\+to\+\_\+8859}} (\$value)
+\item 
+\mbox{\hyperlink{ldap_8php_ac683b99340642f222cfb51861eb7f034}{ldap\+\_\+connect}} (\$hostname=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$port=389)
+\item 
+\mbox{\hyperlink{ldap_8php_a83fe64f54644cc67e07dacf7a7c72e27}{ldap\+\_\+close}} (\$link\+\_\+identifier)
+\item 
+\mbox{\hyperlink{ldap_8php_afc7bf2d7ff05a87341adbcbf2cf0c654}{ldap\+\_\+bind}} (\$link\+\_\+identifier, \$bind\+\_\+rdn=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$bind\+\_\+password=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{ldap_8php_a0833e2a0201227fd720fa4c92a36206b}{ldap\+\_\+bind\+\_\+ext}} (\$link\+\_\+identifier, \$bind\+\_\+rdn=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$bind\+\_\+password=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_ad822521191bdae82ab2aa13727b67db4}{ldap\+\_\+sasl\+\_\+bind}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$binddn=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$password=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$sasl\+\_\+mech=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$sasl\+\_\+realm=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$sasl\+\_\+authc\+\_\+id=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$sasl\+\_\+authz\+\_\+id=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$props=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{ldap_8php_a8073e091ad3595c917dca35907ae1588}{ldap\+\_\+unbind}} (\$link\+\_\+identifier)
+\item 
+\mbox{\hyperlink{ldap_8php_a11e5ba586046cfd42a65413875b8d004}{ldap\+\_\+read}} (\$link\+\_\+identifier, \$base\+\_\+dn, \$filter, array \$attributes=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$attrsonly=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$sizelimit=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$timelimit=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$deref=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_a716118c50b953817134f2a326d2dccb9}{ldap\+\_\+list}} (\$link\+\_\+identifier, \$base\+\_\+dn, \$filter, array \$attributes=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$attrsonly=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$sizelimit=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$timelimit=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$deref=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_adc6a36d1307871a539d1ae7f6c107eaa}{ldap\+\_\+search}} (\$link\+\_\+identifier, \$base\+\_\+dn, \$filter, array \$attributes=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$attrsonly=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$sizelimit=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$timelimit=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$deref=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_aebc757de5451f54c83c62bb922738eda}{ldap\+\_\+free\+\_\+result}} (\$result\+\_\+identifier)
+\item 
+\mbox{\hyperlink{ldap_8php_a037e627ada061c9dc3853ca7e03c6724}{ldap\+\_\+count\+\_\+entries}} (\$link\+\_\+identifier, \$result\+\_\+identifier)
+\item 
+\mbox{\hyperlink{ldap_8php_a8562d055250c392010dc74c57c5596db}{ldap\+\_\+first\+\_\+entry}} (\$link\+\_\+identifier, \$result\+\_\+identifier)
+\item 
+\mbox{\hyperlink{ldap_8php_a7f5677dd2a1ff0d42c3fda8c20280333}{ldap\+\_\+next\+\_\+entry}} (\$link\+\_\+identifier, \$result\+\_\+entry\+\_\+identifier)
+\item 
+\mbox{\hyperlink{ldap_8php_a6f4b9ec4f34ad136aaa92d207ecf6fae}{ldap\+\_\+get\+\_\+entries}} (\$link\+\_\+identifier, \$result\+\_\+identifier)
+\item 
+\mbox{\hyperlink{ldap_8php_ad68c2fb0d6ce3a9fadb3baef9c9996b9}{ldap\+\_\+first\+\_\+attribute}} (\$link\+\_\+identifier, \$result\+\_\+entry\+\_\+identifier)
+\item 
+\mbox{\hyperlink{ldap_8php_a1cb55090e2e74bacb16feff889cc2e70}{ldap\+\_\+next\+\_\+attribute}} (\$link\+\_\+identifier, \$result\+\_\+entry\+\_\+identifier)
+\item 
+\mbox{\hyperlink{ldap_8php_aa9d58828173641bb4f15205b87403b03}{ldap\+\_\+get\+\_\+attributes}} (\$link\+\_\+identifier, \$result\+\_\+entry\+\_\+identifier)
+\item 
+\mbox{\hyperlink{ldap_8php_adfe9c7d87ad2a395911d488c23e7e231}{ldap\+\_\+get\+\_\+values}} (\$link\+\_\+identifier, \$result\+\_\+entry\+\_\+identifier, \$\mbox{\hyperlink{phpunit_2phpunit_2src_2_framework_2_assert_2_functions_8php_a9563224b2369a1cc3a9c05ba5170134e}{attribute}})
+\item 
+\mbox{\hyperlink{ldap_8php_a347111b9c6b19de17a25cb60912fc48e}{ldap\+\_\+get\+\_\+values\+\_\+len}} (\$link\+\_\+identifier, \$result\+\_\+entry\+\_\+identifier, \$\mbox{\hyperlink{phpunit_2phpunit_2src_2_framework_2_assert_2_functions_8php_a9563224b2369a1cc3a9c05ba5170134e}{attribute}})
+\item 
+\mbox{\hyperlink{ldap_8php_acfc579d01804f6b522d8d870202c1aaf}{ldap\+\_\+get\+\_\+dn}} (\$link\+\_\+identifier, \$result\+\_\+entry\+\_\+identifier)
+\item 
+\mbox{\hyperlink{ldap_8php_a933a9ba3d36ff547e53dd6b5adc904f5}{ldap\+\_\+explode\+\_\+dn}} (\$dn, \$with\+\_\+attrib)
+\item 
+\mbox{\hyperlink{ldap_8php_a58c06cdd5fc9681645dd6c242eacb1f5}{ldap\+\_\+dn2ufn}} (\$dn)
+\item 
+\mbox{\hyperlink{ldap_8php_a9c0b3fb920f9704267d873873bf0f994}{ldap\+\_\+add}} (\$link\+\_\+identifier, \$dn, array \$entry, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_a109d0b54ddf36aec1ebcc3833baeb251}{ldap\+\_\+add\+\_\+ext}} (\$link\+\_\+identifier, \$dn, array \$entry, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_a09a0fbb52d4e63e2b7f8774174525569}{ldap\+\_\+delete}} (\$link\+\_\+identifier, \$dn, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_a911cb6349475089fbdf070abbc0acf2a}{ldap\+\_\+delete\+\_\+ext}} (\$link\+\_\+identifier, \$dn, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_a2dab0d0ed3f0deda565ebdd4888be663}{ldap\+\_\+modify}} (\$link\+\_\+identifier, \$dn, array \$entry, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_a01c55841a9ac81b0299f88d2f70bc12e}{ldap\+\_\+mod\+\_\+add}} (\$link\+\_\+identifier, \$dn, array \$entry, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_a8aa53a5614a16db9d0db1d0ab5b5368d}{ldap\+\_\+mod\+\_\+add\+\_\+ext}} (\$link\+\_\+identifier, \$dn, array \$entry, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_a0f1c5cf3ff10b559348379fd66041b86}{ldap\+\_\+mod\+\_\+replace}} (\$link\+\_\+identifier, \$dn, array \$entry, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_aa7a5831234011a776785feacf3326ece}{ldap\+\_\+mod\+\_\+replace\+\_\+ext}} (\$link\+\_\+identifier, \$dn, array \$entry, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_ae0d43df7fed1bb83aa6cd187ee5116ee}{ldap\+\_\+mod\+\_\+del}} (\$link\+\_\+identifier, \$dn, array \$entry, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_ac300fc8e8643526a1b8a49f1379bc4ad}{ldap\+\_\+mod\+\_\+del\+\_\+ext}} (\$link\+\_\+identifier, \$dn, array \$entry, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_a73e0610fdd78559ee5596aaa2e9b9c6d}{ldap\+\_\+errno}} (\$link\+\_\+identifier)
+\item 
+\mbox{\hyperlink{ldap_8php_ac3e2a4606c700e5d44c274fcbd23a8b6}{ldap\+\_\+err2str}} (\$errno)
+\item 
+\mbox{\hyperlink{ldap_8php_abee69438e9d7de4fa1b8ee24cb795209}{ldap\+\_\+error}} (\$link\+\_\+identifier)
+\item 
+\mbox{\hyperlink{ldap_8php_a056d83d523a62f1efc1df173b944f5a9}{ldap\+\_\+compare}} (\$link\+\_\+identifier, \$dn, \$\mbox{\hyperlink{phpunit_2phpunit_2src_2_framework_2_assert_2_functions_8php_a9563224b2369a1cc3a9c05ba5170134e}{attribute}}, \$value, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_a1919c370bf425902fa89b74d48b83c6f}{ldap\+\_\+sort}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$result, \$sortfilter)
+\item 
+\mbox{\hyperlink{ldap_8php_a6c9d637a21c663944b0b6235b42cd036}{ldap\+\_\+rename}} (\$link\+\_\+identifier, \$dn, \$newrdn, \$newparent, \$deleteoldrdn, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_abf0ebdfb393b554a98bc6648e3c827b7}{ldap\+\_\+rename\+\_\+ext}} (\$link\+\_\+identifier, \$dn, \$newrdn, \$newparent, \$deleteoldrdn, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_a12ece97328df04ea16f171bbfc7a2c12}{ldap\+\_\+get\+\_\+option}} (\$link\+\_\+identifier, \$option, \&\$retval)
+\item 
+\mbox{\hyperlink{ldap_8php_aafd8f29b2bf1dffce886b1b0d8ca17f8}{ldap\+\_\+set\+\_\+option}} (\$link\+\_\+identifier, \$option, \$newval)
+\item 
+\mbox{\hyperlink{ldap_8php_aee6f7132a917052905f7c5407ad401fb}{ldap\+\_\+first\+\_\+reference}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$result)
+\item 
+\mbox{\hyperlink{ldap_8php_ae6a93742410811f702c18baf0332312c}{ldap\+\_\+next\+\_\+reference}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$entry)
+\item 
+\mbox{\hyperlink{ldap_8php_a45b69d7966be9062a754c43ae136235c}{ldap\+\_\+parse\+\_\+reference}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$entry, array \&\$referrals)
+\item 
+\mbox{\hyperlink{ldap_8php_aa9ee400b5a4c1afd9526d5cde61ab545}{ldap\+\_\+parse\+\_\+result}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$result, \&\$errcode, \&\$matcheddn=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \&\$errmsg=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, array \&\$referrals=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \&\$serverctrls=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{ldap_8php_acc087629314e2514251d201d26caf9cc}{ldap\+\_\+start\+\_\+tls}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}})
+\item 
+\mbox{\hyperlink{ldap_8php_aa03a6a6f4511a1432a3650d721ccef86}{ldap\+\_\+set\+\_\+rebind\+\_\+proc}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, callable \$\mbox{\hyperlink{phpunit_2phpunit_2src_2_framework_2_assert_2_functions_8php_ae2242eb47799ca6a822b022dc1bd1ac9}{callback}})
+\item 
+\mbox{\hyperlink{ldap_8php_a9b78c77b41c4f4ca80841f493eec27f3}{ldap\+\_\+control\+\_\+paged\+\_\+result}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$pagesize, \$iscritical=\mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}, \$cookie=\char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{ldap_8php_a04b14c90b6d0abd41f7ba66db422e4cc}{ldap\+\_\+control\+\_\+paged\+\_\+result\+\_\+response}} (\$\mbox{\hyperlink{standard__2_8php_af82e331d780a455cab2c8aaa9e03a9e6}{link}}, \$result, \&\$cookie=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \&\$estimated=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{ldap_8php_a43b397e18c638ee391bfca6e1fa4ea47}{ldap\+\_\+escape}} (\$value, \$ignore=\char`\"{}\char`\"{}, \$flags=0)
+\item 
+\mbox{\hyperlink{ldap_8php_acd6c48dbac3e8687e03569dbe1773d6b}{ldap\+\_\+modify\+\_\+batch}} ( \$link\+\_\+identifier, \$dn, \$entry, \$serverctrls=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{ldap_8php_ad6860f91a3800b68234cd55aff12ff90}{L\+D\+A\+P\+\_\+\+E\+S\+C\+A\+P\+E\+\_\+\+F\+I\+L\+T\+ER}} 1
+\item 
+const \mbox{\hyperlink{ldap_8php_a032c8ef362dd2605eb963a1322e7be8f}{L\+D\+A\+P\+\_\+\+E\+S\+C\+A\+P\+E\+\_\+\+DN}} 2
+\item 
+const \mbox{\hyperlink{ldap_8php_a1b5af1e4b93c1d9e14a10f558a92160f}{L\+D\+A\+P\+\_\+\+D\+E\+R\+E\+F\+\_\+\+N\+E\+V\+ER}} 0
+\item 
+const \mbox{\hyperlink{ldap_8php_a0bb4b12a3e61dfadb0db2d7991d52f9d}{L\+D\+A\+P\+\_\+\+D\+E\+R\+E\+F\+\_\+\+S\+E\+A\+R\+C\+H\+I\+NG}} 1
+\item 
+const \mbox{\hyperlink{ldap_8php_a60b9e1b75d1af611b9a04ac9c7d6024d}{L\+D\+A\+P\+\_\+\+D\+E\+R\+E\+F\+\_\+\+F\+I\+N\+D\+I\+NG}} 2
+\item 
+const \mbox{\hyperlink{ldap_8php_a1f903167339c654bc52cd8e08d4747ed}{L\+D\+A\+P\+\_\+\+D\+E\+R\+E\+F\+\_\+\+A\+L\+W\+A\+YS}} 3
+\item 
+const \mbox{\hyperlink{ldap_8php_a62e27eec1ec8a15d71825ecfa9f1e00c}{L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+R\+E\+M\+O\+VE}} 2
+\item 
+const \mbox{\hyperlink{ldap_8php_a7cf2523ed52b80e1d4a04f9e309b5166}{L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+A\+DD}} 1
+\item 
+const \mbox{\hyperlink{ldap_8php_a32e6e07083274b9c7d994174a7e5d640}{L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+A\+LL}} 18
+\item 
+const \mbox{\hyperlink{ldap_8php_ac382d080dc8af122117a42e31053dae5}{L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+R\+E\+P\+L\+A\+CE}} 3
+\item 
+const \mbox{\hyperlink{ldap_8php_a4ba61f22551089ae58d7fa57e6b6d6fa}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+C\+E\+RT}} 24582
+\item 
+const \mbox{\hyperlink{ldap_8php_ac7405cf6537bd0563b97e1b383073e42}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+N\+E\+V\+ER}} 0
+\item 
+const \mbox{\hyperlink{ldap_8php_a43ee8c5e46bfcfc98eb0398585a3c482}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+H\+A\+RD}} 1
+\item 
+const \mbox{\hyperlink{ldap_8php_a5a26497f6043b9456cc764dda7c37dfe}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+D\+E\+M\+A\+ND}} 2
+\item 
+const \mbox{\hyperlink{ldap_8php_a30ab0dbb423a7173e09aedc45b01670e}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+A\+L\+L\+OW}} 3
+\item 
+const \mbox{\hyperlink{ldap_8php_a38ec889c4dfb93d80b89e70f75c16c44}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+T\+RY}} 4
+\item 
+const \mbox{\hyperlink{ldap_8php_ac56857f7a265ff0d73a29a349d8a4971}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+E\+R\+T\+F\+I\+LE}} 24580
+\item 
+const \mbox{\hyperlink{ldap_8php_a569bac4e3dc53bc4ab3243ca2feac31f}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+I\+P\+H\+E\+R\+\_\+\+S\+U\+I\+TE}} 24584
+\item 
+const \mbox{\hyperlink{ldap_8php_a613408cbacc7c3c259fe342611b45def}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+K\+E\+Y\+F\+I\+LE}} 24581
+\item 
+const \mbox{\hyperlink{ldap_8php_a00a6ba0183bfd46a37b40916a69897a5}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+D\+H\+F\+I\+LE}} 24590
+\item 
+const \mbox{\hyperlink{ldap_8php_aa7128ea0028029290586b7faf746cc42}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+R\+L\+F\+I\+LE}} 24592
+\item 
+const \mbox{\hyperlink{ldap_8php_ad1bd98787170e6400ec9dc529cf8adfe}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+R\+A\+N\+D\+O\+M\+\_\+\+F\+I\+LE}} 24585
+\item 
+const \mbox{\hyperlink{ldap_8php_af420f0404bf3334a715cdae57fc29dea}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+R\+L\+C\+H\+E\+CK}} 24587
+\item 
+const \mbox{\hyperlink{ldap_8php_ab4faa1fa11f68b0b316428e4b47616f2}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+R\+L\+\_\+\+N\+O\+NE}} 0
+\item 
+const \mbox{\hyperlink{ldap_8php_a633e13ca0393fec15242005d84b7d6e4}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+R\+L\+\_\+\+P\+E\+ER}} 1
+\item 
+const \mbox{\hyperlink{ldap_8php_ade23eca9e87c641725cbbb56ec2111d2}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+R\+L\+\_\+\+A\+LL}} 2
+\item 
+const \mbox{\hyperlink{ldap_8php_aabd4085bf326fa86ddedbeb6cee6cb78}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+IN}} 24583
+\item 
+const \mbox{\hyperlink{ldap_8php_a841fb48e0e50803024dc5f20d914a53e}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+S\+S\+L2}} 512
+\item 
+const \mbox{\hyperlink{ldap_8php_aad574106c0a98139f78c309feb288558}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+S\+S\+L3}} 768
+\item 
+const \mbox{\hyperlink{ldap_8php_ac110888a81696ff8240f68fc451431dd}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+T\+L\+S1\+\_\+0}} 769
+\item 
+const \mbox{\hyperlink{ldap_8php_a4f9fcf2487990e5faec1bde7b9059e38}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+T\+L\+S1\+\_\+1}} 770
+\item 
+const \mbox{\hyperlink{ldap_8php_a5987078a1810b1ccedaa5715d1530be5}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+T\+L\+S1\+\_\+2}} 771
+\item 
+const \mbox{\hyperlink{ldap_8php_a903f8471d3ca2e12dfea3a40d04916bb}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+P\+A\+C\+K\+A\+GE}} 24593
+\item 
+const \mbox{\hyperlink{ldap_8php_a23b22030c57fb1e1ff0c19dad131ddd0}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+K\+E\+E\+P\+A\+L\+I\+V\+E\+\_\+\+I\+D\+LE}} 25344
+\item 
+const \mbox{\hyperlink{ldap_8php_ada80831a85899ca7c1b1e34e1a9ea0c0}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+K\+E\+E\+P\+A\+L\+I\+V\+E\+\_\+\+P\+R\+O\+B\+ES}} 25345
+\item 
+const \mbox{\hyperlink{ldap_8php_a5a275e62b9e9de7ce16057097b151455}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+K\+E\+E\+P\+A\+L\+I\+V\+E\+\_\+\+I\+N\+T\+E\+R\+V\+AL}} 25346
+\item 
+const \mbox{\hyperlink{ldap_8php_ab923273e8d7ed6a0d0037c47e5f4af7f}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+S\+A\+S\+L\+\_\+\+U\+S\+E\+R\+N\+A\+ME}} 24844
+\item 
+const \mbox{\hyperlink{ldap_8php_a9a897b68f0159b7aaeda91471955ca22}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+S\+A\+S\+L\+\_\+\+N\+O\+C\+A\+N\+ON}} 24843
+\item 
+const \mbox{\hyperlink{ldap_8php_afbb299e1dc6713c5059f8f7c1b34ba01}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+D\+E\+R\+EF}} 2
+\item 
+const \mbox{\hyperlink{ldap_8php_a53e2c4b506cb82d34bb51258115a74d0}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+S\+I\+Z\+E\+L\+I\+M\+IT}} 3
+\item 
+const \mbox{\hyperlink{ldap_8php_a90c57ec97f1f323285dcaa9b036af4c5}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+T\+I\+M\+E\+L\+I\+M\+IT}} 4
+\item 
+const \mbox{\hyperlink{ldap_8php_af4dd2f00090d66897fff89577a035287}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+I\+M\+E\+O\+UT}} 20485
+\item 
+const \mbox{\hyperlink{ldap_8php_a513fb767530951b6f135abfa3e22f9fa}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+V\+E\+R\+S\+I\+ON}} 17
+\item 
+const \mbox{\hyperlink{ldap_8php_a0218195dbfa834a06e1c749ca9829ef0}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+U\+M\+B\+ER}} 49
+\item 
+const \mbox{\hyperlink{ldap_8php_aa4c4d981241caa5edcf616c4b0bc67e1}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+R\+E\+F\+E\+R\+R\+A\+LS}} 8
+\item 
+const \mbox{\hyperlink{ldap_8php_a6a364d599d0b599dd038917eb86f653a}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+R\+E\+S\+T\+A\+RT}} 9
+\item 
+const \mbox{\hyperlink{ldap_8php_a50e69e4dbc6c99ae7711e0af45a3d282}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+H\+O\+S\+T\+\_\+\+N\+A\+ME}} 48
+\item 
+const \mbox{\hyperlink{ldap_8php_a0270f5e67c6cc4b6423addae45844a5c}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R\+I\+NG}} 50
+\item 
+const \mbox{\hyperlink{ldap_8php_ab10091b58644332a561200623b2f7a49}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+M\+A\+T\+C\+H\+E\+D\+\_\+\+DN}} 51
+\item 
+const \mbox{\hyperlink{ldap_8php_aae2a51708032317b160b10aba172a5b0}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+C\+O\+N\+T\+R\+O\+LS}} 18
+\item 
+const \mbox{\hyperlink{ldap_8php_aa4ec7aee0705dfef6f37e4d38fe0fcbd}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+T\+R\+O\+LS}} 19
+\item 
+const \mbox{\hyperlink{ldap_8php_adee7d320e6fe9c5580072af45e244269}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+D\+E\+B\+U\+G\+\_\+\+L\+E\+V\+EL}} 20481
+\item 
+const \mbox{\hyperlink{ldap_8php_a6baf9e5ca97b703284138436e95c4513}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+S\+A\+S\+L\+\_\+\+M\+E\+CH}} 24832
+\item 
+const \mbox{\hyperlink{ldap_8php_a5fecf0276a6bed55b79d7eff27fcb74c}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+S\+A\+S\+L\+\_\+\+R\+E\+A\+LM}} 24833
+\item 
+const \mbox{\hyperlink{ldap_8php_aa0f2b522a884a53fc88be647571a1c4a}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+S\+A\+S\+L\+\_\+\+A\+U\+T\+H\+C\+ID}} 24834
+\item 
+const \mbox{\hyperlink{ldap_8php_ae27193cd5693fbadfa8e1f8fdc31a672}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+S\+A\+S\+L\+\_\+\+A\+U\+T\+H\+Z\+ID}} 24835
+\item 
+const \mbox{\hyperlink{ldap_8php_a37b8910e1721897ccaf214840d682fa9}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+A\+C\+E\+R\+T\+D\+IR}} 24579
+\item 
+const \mbox{\hyperlink{ldap_8php_a0f7c046237de016fa72093f57ab890cb}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+A\+C\+E\+R\+T\+F\+I\+LE}} 24578
+\item 
+const \mbox{\hyperlink{ldap_8php_a4fc4c157f15a2579b493628e8a0b323a}{L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+A\+T\+T\+R\+IB}} \textquotesingle{}attrib\textquotesingle{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a7f569e67d20002204057c8610ec556dc}{L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+M\+O\+D\+T\+Y\+PE}} \textquotesingle{}modtype\textquotesingle{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a148eba8edf82a32d1e54cb598570e54e}{L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+V\+A\+L\+U\+ES}} \textquotesingle{}values\textquotesingle{}
+\item 
+const \mbox{\hyperlink{ldap_8php_aa4987ae6d8de8401941815f5c88d0f02}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+T\+I\+M\+E\+O\+UT}} 20482
+\item 
+const \mbox{\hyperlink{ldap_8php_a662cd6b119ca892ed08bf92def7716c4}{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+D\+I\+A\+G\+N\+O\+S\+T\+I\+C\+\_\+\+M\+E\+S\+S\+A\+GE}} 50
+\item 
+const \mbox{\hyperlink{ldap_8php_a6568fc8b6ad640c62956b52c0b133dd2}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+M\+A\+N\+A\+G\+E\+D\+S\+A\+IT}} \char`\"{}2.\+16.\+840.\+1.\+113730.\+3.\+4.\+2\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a537643c584b3c8d3cd27168c4cff071b}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+U\+B\+E\+N\+T\+R\+I\+ES}} \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+4203.\+1.\+10.\+1\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_ab9730717f8d568cd2b3d0810961ba9cf}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+V\+A\+L\+U\+E\+S\+R\+E\+T\+U\+R\+N\+F\+I\+L\+T\+ER}} \char`\"{}1.\+2.\+826.\+0.\+1.\+3344810.\+2.\+3\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a2f24fdbe318fb6a119d83ff8a0957ddf}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+S\+S\+E\+RT}} \char`\"{}1.\+3.\+6.\+1.\+1.\+12\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a7e5080c411b822f672d6d3df18379560}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+R\+E\+\_\+\+R\+E\+AD}} \char`\"{}1.\+3.\+6.\+1.\+1.\+13.\+1\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a4d9b2615ab5c45c97c9d49edd78ab29a}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+S\+T\+\_\+\+R\+E\+AD}} \char`\"{}1.\+3.\+6.\+1.\+1.\+13.\+2\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a9ee881db803bd6b95349031d08b387b1}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+O\+R\+T\+R\+E\+Q\+U\+E\+ST}} \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+473\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_adf5cae86af0ad087830039a160e43796}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+O\+R\+T\+R\+E\+S\+P\+O\+N\+SE}} \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+474\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a1964a440677d0dd6010e324e6d30d05c}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+A\+G\+E\+D\+R\+E\+S\+U\+L\+TS}} \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+319\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a672e80859beb4d7543c03faea43a6a57}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+Y\+NC}} \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+4203.\+1.\+9.\+1.\+1\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a604273e2e6e4024159833fb440e16a2f}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+T\+A\+TE}} \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+4203.\+1.\+9.\+1.\+2\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a519f6c4113a2acaecfad77e0ade1295b}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+Y\+N\+C\+\_\+\+D\+O\+NE}} \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+4203.\+1.\+9.\+1.\+3\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a976c9c63a35142e669e0ceb646c742a8}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+D\+O\+N\+T\+U\+S\+E\+C\+O\+PY}} \char`\"{}1.\+3.\+6.\+1.\+1.\+22\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_aeff1444719aab0fce0a16055ecb9945d}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+P\+O\+L\+I\+C\+Y\+R\+E\+Q\+U\+E\+ST}} \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+42.\+2.\+27.\+8.\+5.\+1\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a40660de51101ed830575cfd7b018ab25}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+P\+O\+L\+I\+C\+Y\+R\+E\+S\+P\+O\+N\+SE}} \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+42.\+2.\+27.\+8.\+5.\+1\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_aacf94ca70de62f246d370b9e0b6cb478}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+X\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+V\+A\+L\+U\+ES}} \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+802\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_af39c350b0e41971a18e48895e318aa19}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+X\+\_\+\+D\+O\+M\+A\+I\+N\+\_\+\+S\+C\+O\+PE}} \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+1339\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a8dec0e5ea8125a5736184c661ae9acdd}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+X\+\_\+\+P\+E\+R\+M\+I\+S\+S\+I\+V\+E\+\_\+\+M\+O\+D\+I\+FY}} \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+1413\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_aaead1f4ce7b8e77b3d16dc758d088ba4}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+X\+\_\+\+S\+E\+A\+R\+C\+H\+\_\+\+O\+P\+T\+I\+O\+NS}} \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+1340\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_ae83b78360cc55f253e24870a34f97f46}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+X\+\_\+\+T\+R\+E\+E\+\_\+\+D\+E\+L\+E\+TE}} \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+805\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_aae8b55fb914645d9d7280abe978b8457}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+X\+\_\+\+E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+DN}} \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+529\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_ad72f582af8ffccb9ee7d577262217c74}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+V\+L\+V\+R\+E\+Q\+U\+E\+ST}} \char`\"{}2.\+16.\+840.\+1.\+113730.\+3.\+4.\+9\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a840f4a06f5929cc93936ee8be18b5a86}{L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+V\+L\+V\+R\+E\+S\+P\+O\+N\+SE}} \char`\"{}2.\+16.\+840.\+1.\+113730.\+3.\+4.\+10\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_aba3a2779894e92638611a520ac1be29d}{L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+P\+A\+S\+S\+WD}} \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+4203.\+1.\+11.\+1\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a8119ec14c93a5ab3aafebd6798b845d7}{L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+R\+E\+F\+R\+E\+SH}} \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+1466.\+101.\+119.\+1\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a77ea4095333ef2a41f5a53e02b9084f7}{L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+S\+T\+A\+R\+T\+\_\+\+T\+LS}} \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+1466.\+20037\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a3b297e25ad26083413708883da74d3af}{L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+T\+U\+RN}} \char`\"{}1.\+3.\+6.\+1.\+1.\+19\char`\"{}
+\item 
+const \mbox{\hyperlink{ldap_8php_a9283ff2b38898130e0686b5dfa5aab34}{L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+W\+H\+O\+\_\+\+A\+M\+\_\+I}} \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+4203.\+1.\+11.\+3\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ldap_8php_ae370bf77c787c2d0b07e553ed28fa79e}\label{ldap_8php_ae370bf77c787c2d0b07e553ed28fa79e}} 
+\index{ldap.php@{ldap.php}!ldap\_8859\_to\_t61@{ldap\_8859\_to\_t61}}
+\index{ldap\_8859\_to\_t61@{ldap\_8859\_to\_t61}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_8859\_to\_t61()}{ldap\_8859\_to\_t61()}}
+{\footnotesize\ttfamily ldap\+\_\+8859\+\_\+to\+\_\+t61 (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Translate 8859 characters to t61 characters \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$value  string  4.\+0.\+2  5.\+0  7.\+0 }}\mbox{\Hypertarget{ldap_8php_a9c0b3fb920f9704267d873873bf0f994}\label{ldap_8php_a9c0b3fb920f9704267d873873bf0f994}} 
+\index{ldap.php@{ldap.php}!ldap\_add@{ldap\_add}}
+\index{ldap\_add@{ldap\_add}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_add()}{ldap\_add()}}
+{\footnotesize\ttfamily ldap\+\_\+add (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$dn,  }\item[{array}]{\$entry,  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Add entries to L\+D\+AP directory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dn} & \\
+\hline
+\end{DoxyParams}
+The distinguished name of an L\+D\+AP entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$entry} & \\
+\hline
+\end{DoxyParams}
+An array that specifies the information about the entry. The values in the entries are indexed by individual attributes. In case of multiple values for an attribute, they are indexed using integers starting with 0. {\ttfamily  \$entree\mbox{[}\char`\"{}attribut1\char`\"{}\mbox{]} = \char`\"{}value\char`\"{}; \$entree\mbox{[}\char`\"{}attribut2\char`\"{}\mbox{]}\mbox{[}0\mbox{]} = \char`\"{}value1\char`\"{}; \$entree\mbox{[}\char`\"{}attribut2\char`\"{}\mbox{]}\mbox{[}1\mbox{]} = \char`\"{}value2\char`\"{}; } 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a109d0b54ddf36aec1ebcc3833baeb251}\label{ldap_8php_a109d0b54ddf36aec1ebcc3833baeb251}} 
+\index{ldap.php@{ldap.php}!ldap\_add\_ext@{ldap\_add\_ext}}
+\index{ldap\_add\_ext@{ldap\_add\_ext}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_add\_ext()}{ldap\_add\_ext()}}
+{\footnotesize\ttfamily ldap\+\_\+add\+\_\+ext (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$dn,  }\item[{array}]{\$entry,  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Add entries to L\+D\+AP directory Does the same thing as \mbox{\hyperlink{ldap_8php_a9c0b3fb920f9704267d873873bf0f994}{ldap\+\_\+add()}} but returns the L\+D\+AP result resource to be parsed with \mbox{\hyperlink{ldap_8php_aa9ee400b5a4c1afd9526d5cde61ab545}{ldap\+\_\+parse\+\_\+result()}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dn} & \\
+\hline
+\end{DoxyParams}
+The distinguished name of an L\+D\+AP entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$entry} & \\
+\hline
+\end{DoxyParams}
+An array that specifies the information about the entry. The values in the entries are indexed by individual attributes. In case of multiple values for an attribute, they are indexed using integers starting with 0. {\ttfamily  \$entree\mbox{[}\char`\"{}attribut1\char`\"{}\mbox{]} = \char`\"{}value\char`\"{}; \$entree\mbox{[}\char`\"{}attribut2\char`\"{}\mbox{]}\mbox{[}0\mbox{]} = \char`\"{}value1\char`\"{}; \$entree\mbox{[}\char`\"{}attribut2\char`\"{}\mbox{]}\mbox{[}1\mbox{]} = \char`\"{}value2\char`\"{}; } 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_afc7bf2d7ff05a87341adbcbf2cf0c654}\label{ldap_8php_afc7bf2d7ff05a87341adbcbf2cf0c654}} 
+\index{ldap.php@{ldap.php}!ldap\_bind@{ldap\_bind}}
+\index{ldap\_bind@{ldap\_bind}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_bind()}{ldap\_bind()}}
+{\footnotesize\ttfamily ldap\+\_\+bind (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$bind\+\_\+rdn = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$bind\+\_\+password = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Bind to L\+D\+AP directory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$bind\+\_\+rdn} & \mbox{[}optional\mbox{]} \\
+\hline
+string & {\em \$bind\+\_\+password} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a0833e2a0201227fd720fa4c92a36206b}\label{ldap_8php_a0833e2a0201227fd720fa4c92a36206b}} 
+\index{ldap.php@{ldap.php}!ldap\_bind\_ext@{ldap\_bind\_ext}}
+\index{ldap\_bind\_ext@{ldap\_bind\_ext}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_bind\_ext()}{ldap\_bind\_ext()}}
+{\footnotesize\ttfamily ldap\+\_\+bind\+\_\+ext (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$bind\+\_\+rdn = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$bind\+\_\+password = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Bind to L\+D\+AP directory Does the same thing as \mbox{\hyperlink{ldap_8php_afc7bf2d7ff05a87341adbcbf2cf0c654}{ldap\+\_\+bind()}} but returns the L\+D\+AP result resource to be parsed with \mbox{\hyperlink{ldap_8php_aa9ee400b5a4c1afd9526d5cde61ab545}{ldap\+\_\+parse\+\_\+result()}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$bind\+\_\+rdn} & \mbox{[}optional\mbox{]} \\
+\hline
+string & {\em \$bind\+\_\+password} & \mbox{[}optional\mbox{]} \\
+\hline
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a83fe64f54644cc67e07dacf7a7c72e27}\label{ldap_8php_a83fe64f54644cc67e07dacf7a7c72e27}} 
+\index{ldap.php@{ldap.php}!ldap\_close@{ldap\_close}}
+\index{ldap\_close@{ldap\_close}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_close()}{ldap\_close()}}
+{\footnotesize\ttfamily ldap\+\_\+close (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier }\end{DoxyParamCaption})}
+
+Alias of {\bfseries{ldap\+\_\+unbind}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$link\+\_\+identifier  4.\+0  5.\+0 }}\mbox{\Hypertarget{ldap_8php_a056d83d523a62f1efc1df173b944f5a9}\label{ldap_8php_a056d83d523a62f1efc1df173b944f5a9}} 
+\index{ldap.php@{ldap.php}!ldap\_compare@{ldap\_compare}}
+\index{ldap\_compare@{ldap\_compare}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_compare()}{ldap\_compare()}}
+{\footnotesize\ttfamily ldap\+\_\+compare (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$dn,  }\item[{}]{\$attribute,  }\item[{}]{\$value,  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Compare value of attribute found in entry specified with DN \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dn} & \\
+\hline
+\end{DoxyParams}
+The distinguished name of an L\+D\+AP entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+The attribute name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+The compared value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed {\bfseries{T\+R\+UE}} if {\itshape value} matches otherwise returns {\bfseries{F\+A\+L\+SE}}. Returns -\/1 on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+2 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_ac683b99340642f222cfb51861eb7f034}\label{ldap_8php_ac683b99340642f222cfb51861eb7f034}} 
+\index{ldap.php@{ldap.php}!ldap\_connect@{ldap\_connect}}
+\index{ldap\_connect@{ldap\_connect}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_connect()}{ldap\_connect()}}
+{\footnotesize\ttfamily ldap\+\_\+connect (\begin{DoxyParamCaption}\item[{}]{\$hostname = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$port = {\ttfamily 389} }\end{DoxyParamCaption})}
+
+Connect to an L\+D\+AP server \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$hostname \mbox{[}optional\mbox{]} }} If you are using Open\+L\+D\+AP 2.\+x.\+x you can specify a U\+RL instead of the hostname. To use L\+D\+AP with S\+SL, compile Open\+L\+D\+AP 2.\+x.\+x with S\+SL support, configure P\+HP with S\+SL, and set this parameter as ldaps\+://hostname/. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$port} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The port to connect to. Not used when using U\+R\+Ls. 
+
+\begin{DoxyReturn}{Returns}
+resource$\vert$false a positive L\+D\+AP link identifier on success, or {\bfseries{F\+A\+L\+SE}} on error. When Open\+L\+D\+AP 2.\+x.\+x is used, {\bfseries{ldap\+\_\+connect}} will always return a resource as it does not actually connect but just initializes the connecting parameters. The actual connect happens with the next calls to ldap\+\_\+$\ast$ funcs, usually with {\bfseries{ldap\+\_\+bind}}. 
+\end{DoxyReturn}
+
+
+If no arguments are specified then the link identifier of the already opened link will be returned. \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a9b78c77b41c4f4ca80841f493eec27f3}\label{ldap_8php_a9b78c77b41c4f4ca80841f493eec27f3}} 
+\index{ldap.php@{ldap.php}!ldap\_control\_paged\_result@{ldap\_control\_paged\_result}}
+\index{ldap\_control\_paged\_result@{ldap\_control\_paged\_result}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_control\_paged\_result()}{ldap\_control\_paged\_result()}}
+{\footnotesize\ttfamily ldap\+\_\+control\+\_\+paged\+\_\+result (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$pagesize,  }\item[{}]{\$iscritical = {\ttfamily \mbox{\hyperlink{_core__d_8php_a2f585b9641adc7a08b35a997065e95b4}{false}}},  }\item[{}]{\$cookie = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Send L\+D\+AP pagination control \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$pagesize} & \\
+\hline
+\end{DoxyParams}
+The number of entries by page. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$iscritical} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Indicates whether the pagination is critical of not. If true and if the server doesn\textquotesingle{}t support pagination, the search will return no result. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cookie} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+An opaque structure sent by the server ({\bfseries{ldap\+\_\+control\+\_\+paged\+\_\+result\+\_\+response}}). 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+4 
+\end{DoxySince}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000059}{Deprecated}}]Since 7.\+4 \end{DoxyRefDesc}
+\mbox{\Hypertarget{ldap_8php_a04b14c90b6d0abd41f7ba66db422e4cc}\label{ldap_8php_a04b14c90b6d0abd41f7ba66db422e4cc}} 
+\index{ldap.php@{ldap.php}!ldap\_control\_paged\_result\_response@{ldap\_control\_paged\_result\_response}}
+\index{ldap\_control\_paged\_result\_response@{ldap\_control\_paged\_result\_response}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_control\_paged\_result\_response()}{ldap\_control\_paged\_result\_response()}}
+{\footnotesize\ttfamily ldap\+\_\+control\+\_\+paged\+\_\+result\+\_\+response (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$result,  }\item[{\&}]{\$cookie = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{\&}]{\$estimated = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Retrieve the L\+D\+AP pagination cookie \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$result} & \\
+\hline
+string & {\em \$cookie} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+An opaque structure sent by the server. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$estimated} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The estimated number of entries to retrieve. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+4 
+\end{DoxySince}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000060}{Deprecated}}]Since 7.\+4 \end{DoxyRefDesc}
+\mbox{\Hypertarget{ldap_8php_a037e627ada061c9dc3853ca7e03c6724}\label{ldap_8php_a037e627ada061c9dc3853ca7e03c6724}} 
+\index{ldap.php@{ldap.php}!ldap\_count\_entries@{ldap\_count\_entries}}
+\index{ldap\_count\_entries@{ldap\_count\_entries}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_count\_entries()}{ldap\_count\_entries()}}
+{\footnotesize\ttfamily ldap\+\_\+count\+\_\+entries (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$result\+\_\+identifier }\end{DoxyParamCaption})}
+
+Count the number of entries in a search \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$result\+\_\+identifier} & \\
+\hline
+\end{DoxyParams}
+The internal L\+D\+AP result. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$false number of entries in the result or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a09a0fbb52d4e63e2b7f8774174525569}\label{ldap_8php_a09a0fbb52d4e63e2b7f8774174525569}} 
+\index{ldap.php@{ldap.php}!ldap\_delete@{ldap\_delete}}
+\index{ldap\_delete@{ldap\_delete}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_delete()}{ldap\_delete()}}
+{\footnotesize\ttfamily ldap\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$dn,  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Delete an entry from a directory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dn} & \\
+\hline
+\end{DoxyParams}
+The distinguished name of an L\+D\+AP entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a911cb6349475089fbdf070abbc0acf2a}\label{ldap_8php_a911cb6349475089fbdf070abbc0acf2a}} 
+\index{ldap.php@{ldap.php}!ldap\_delete\_ext@{ldap\_delete\_ext}}
+\index{ldap\_delete\_ext@{ldap\_delete\_ext}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_delete\_ext()}{ldap\_delete\_ext()}}
+{\footnotesize\ttfamily ldap\+\_\+delete\+\_\+ext (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$dn,  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Delete an entry from a directory Does the same thing as \mbox{\hyperlink{ldap_8php_a09a0fbb52d4e63e2b7f8774174525569}{ldap\+\_\+delete()}} but returns the L\+D\+AP result resource to be parsed with \mbox{\hyperlink{ldap_8php_aa9ee400b5a4c1afd9526d5cde61ab545}{ldap\+\_\+parse\+\_\+result()}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dn} & \\
+\hline
+\end{DoxyParams}
+The distinguished name of an L\+D\+AP entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a58c06cdd5fc9681645dd6c242eacb1f5}\label{ldap_8php_a58c06cdd5fc9681645dd6c242eacb1f5}} 
+\index{ldap.php@{ldap.php}!ldap\_dn2ufn@{ldap\_dn2ufn}}
+\index{ldap\_dn2ufn@{ldap\_dn2ufn}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_dn2ufn()}{ldap\_dn2ufn()}}
+{\footnotesize\ttfamily ldap\+\_\+dn2ufn (\begin{DoxyParamCaption}\item[{}]{\$dn }\end{DoxyParamCaption})}
+
+Convert DN to User Friendly Naming format \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$dn }} The distinguished name of an L\+D\+AP entity. 
+
+\begin{DoxyReturn}{Returns}
+string the user friendly name. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_ac3e2a4606c700e5d44c274fcbd23a8b6}\label{ldap_8php_ac3e2a4606c700e5d44c274fcbd23a8b6}} 
+\index{ldap.php@{ldap.php}!ldap\_err2str@{ldap\_err2str}}
+\index{ldap\_err2str@{ldap\_err2str}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_err2str()}{ldap\_err2str()}}
+{\footnotesize\ttfamily ldap\+\_\+err2str (\begin{DoxyParamCaption}\item[{}]{\$errno }\end{DoxyParamCaption})}
+
+Convert L\+D\+AP error number into string error message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$errno }} The error number. 
+
+\begin{DoxyReturn}{Returns}
+string the error message, as a string. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a73e0610fdd78559ee5596aaa2e9b9c6d}\label{ldap_8php_a73e0610fdd78559ee5596aaa2e9b9c6d}} 
+\index{ldap.php@{ldap.php}!ldap\_errno@{ldap\_errno}}
+\index{ldap\_errno@{ldap\_errno}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_errno()}{ldap\_errno()}}
+{\footnotesize\ttfamily ldap\+\_\+errno (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier }\end{DoxyParamCaption})}
+
+Return the L\+D\+AP error number of the last L\+D\+AP command \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+\begin{DoxyReturn}{Returns}
+int Return the L\+D\+AP error number of the last L\+D\+AP command for this link. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_abee69438e9d7de4fa1b8ee24cb795209}\label{ldap_8php_abee69438e9d7de4fa1b8ee24cb795209}} 
+\index{ldap.php@{ldap.php}!ldap\_error@{ldap\_error}}
+\index{ldap\_error@{ldap\_error}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_error()}{ldap\_error()}}
+{\footnotesize\ttfamily ldap\+\_\+error (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier }\end{DoxyParamCaption})}
+
+Return the L\+D\+AP error message of the last L\+D\+AP command \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+\begin{DoxyReturn}{Returns}
+string string error message. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a43b397e18c638ee391bfca6e1fa4ea47}\label{ldap_8php_a43b397e18c638ee391bfca6e1fa4ea47}} 
+\index{ldap.php@{ldap.php}!ldap\_escape@{ldap\_escape}}
+\index{ldap\_escape@{ldap\_escape}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_escape()}{ldap\_escape()}}
+{\footnotesize\ttfamily ldap\+\_\+escape (\begin{DoxyParamCaption}\item[{}]{\$value,  }\item[{}]{\$ignore = {\ttfamily \char`\"{}\char`\"{}},  }\item[{}]{\$flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Escape a string for use in an L\+D\+AP filter or DN 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & The value to escape. \\
+\hline
+string & {\em \$ignore} & \mbox{[}optional\mbox{]} Characters to ignore when escaping. \\
+\hline
+int & {\em \$flags} & \mbox{[}optional\mbox{]} The context the escaped string will be used in\+: L\+D\+A\+P\+\_\+\+E\+S\+C\+A\+P\+E\+\_\+\+F\+I\+L\+T\+ER for filters to be used with \mbox{\hyperlink{ldap_8php_adc6a36d1307871a539d1ae7f6c107eaa}{ldap\+\_\+search()}}, or L\+D\+A\+P\+\_\+\+E\+S\+C\+A\+P\+E\+\_\+\+DN for D\+Ns. If neither flag is passed, all chars are escaped. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+6 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a9cb0aac181c2b24598999fe07f04fa10}\label{ldap_8php_a9cb0aac181c2b24598999fe07f04fa10}} 
+\index{ldap.php@{ldap.php}!ldap\_exop@{ldap\_exop}}
+\index{ldap\_exop@{ldap\_exop}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_exop()}{ldap\_exop()}}
+{\footnotesize\ttfamily ldap\+\_\+exop (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$reqoid,  }\item[{}]{\$reqdata = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}},  }\item[{\&}]{\$retdata,  }\item[{\&}]{\$retoid }\end{DoxyParamCaption})}
+
+Performs an extended operation on the specified link with reqoid the O\+ID of the operation and reqdata the data. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link An L\+D\+AP link identifier, returned by ldap\+\_\+connect().  string \$reqoid The extended operation request O\+ID. You may use one of L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+S\+T\+A\+R\+T\+\_\+\+T\+LS, L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+P\+A\+S\+S\+WD, L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+R\+E\+F\+R\+E\+SH, L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+W\+H\+O\+\_\+\+A\+M\+\_\+I, L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+T\+U\+RN, or a string with the O\+ID of the operation you want to send.  string \$reqdata \mbox{[}optional\mbox{]} The extended operation request data. May be N\+U\+LL for some operations like L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+W\+H\+O\+\_\+\+A\+M\+\_\+I, may also need to be B\+ER encoded.  array \$serverctrls \mbox{[}optional\mbox{]} If provided, a password policy request control is send with the request and this is filled with an array of L\+D\+AP Controls returned with the request.  string \$retdata \mbox{[}optional\mbox{]} Will be filled with the extended operation response data if provided. If not provided you may use ldap\+\_\+parse\+\_\+exop on the result object later to get this data.  string \$retoid \mbox{[}optional\mbox{]} Will be filled with the response O\+ID if provided, usually equal to the request O\+ID.  mixed When used with retdata, returns T\+R\+UE on success or F\+A\+L\+SE on error. When used without retdata, returns a result identifier or F\+A\+L\+SE on error.  7.\+2 }}\mbox{\Hypertarget{ldap_8php_a1334323526c6e386587376fab14b0304}\label{ldap_8php_a1334323526c6e386587376fab14b0304}} 
+\index{ldap.php@{ldap.php}!ldap\_exop\_passwd@{ldap\_exop\_passwd}}
+\index{ldap\_exop\_passwd@{ldap\_exop\_passwd}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_exop\_passwd()}{ldap\_exop\_passwd()}}
+{\footnotesize\ttfamily ldap\+\_\+exop\+\_\+passwd (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$user = {\ttfamily \char`\"{}\char`\"{}},  }\item[{}]{\$oldpw = {\ttfamily \char`\"{}\char`\"{}},  }\item[{}]{\$newpw = {\ttfamily \char`\"{}\char`\"{}},  }\item[{array \&}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+P\+A\+S\+S\+WD extended operation helper \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link An L\+D\+AP link identifier, returned by ldap\+\_\+connect().  string \$user \mbox{[}optional\mbox{]} dn of the user to change the password of.  string \$oldpw \mbox{[}optional\mbox{]} The old password of this user. May be ommited depending of server configuration.  string \$newpw \mbox{[}optional\mbox{]} The new password for this user. May be omitted or empty to have a generated password.  array \$serverctrls \mbox{[}optional\mbox{]} If provided, a password policy request control is send with the request and this is filled with an array of L\+D\+AP Controls returned with the request.  mixed Returns the generated password if newpw is empty or omitted. Otherwise returns T\+R\+UE on success and F\+A\+L\+SE on failure.  7.\+2 }}\mbox{\Hypertarget{ldap_8php_a59380590e857c7db20d796349968ae14}\label{ldap_8php_a59380590e857c7db20d796349968ae14}} 
+\index{ldap.php@{ldap.php}!ldap\_exop\_refresh@{ldap\_exop\_refresh}}
+\index{ldap\_exop\_refresh@{ldap\_exop\_refresh}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_exop\_refresh()}{ldap\_exop\_refresh()}}
+{\footnotesize\ttfamily ldap\+\_\+exop\+\_\+refresh (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$dn,  }\item[{}]{\$ttl }\end{DoxyParamCaption})}
+
+Refresh extended operation helper \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link An L\+D\+AP link identifier, returned by ldap\+\_\+connect().  string \$dn dn of the entry to refresh.  int \$ttl \$ttl Time in seconds (between 1 and 31557600) that the client requests that the entry exists in the directory before being automatically removed.  mixed From R\+F\+C\+: The response\+Ttl field is the time in seconds which the server chooses to have as the time-\/to-\/live field for that entry. It must not be any smaller than that which the client requested, and it may be larger. However, to allow servers to maintain a relatively accurate directory, and to prevent clients from abusing the dynamic extensions, servers are permitted to shorten a client-\/requested time-\/to-\/live value, down to a minimum of 86400 seconds (one day). F\+A\+L\+SE will be returned on error.  7.\+3 }}\mbox{\Hypertarget{ldap_8php_a57fe3a57af8ee8ee3303e13c7e5ec40b}\label{ldap_8php_a57fe3a57af8ee8ee3303e13c7e5ec40b}} 
+\index{ldap.php@{ldap.php}!ldap\_exop\_whoami@{ldap\_exop\_whoami}}
+\index{ldap\_exop\_whoami@{ldap\_exop\_whoami}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_exop\_whoami()}{ldap\_exop\_whoami()}}
+{\footnotesize\ttfamily ldap\+\_\+exop\+\_\+whoami (\begin{DoxyParamCaption}\item[{}]{\$link }\end{DoxyParamCaption})}
+
+W\+H\+O\+A\+MI extended operation helper \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link An L\+D\+AP link identifier, returned by ldap\+\_\+connect().  mixed The data returned by the server, or F\+A\+L\+SE on error.  7.\+2 }}\mbox{\Hypertarget{ldap_8php_a933a9ba3d36ff547e53dd6b5adc904f5}\label{ldap_8php_a933a9ba3d36ff547e53dd6b5adc904f5}} 
+\index{ldap.php@{ldap.php}!ldap\_explode\_dn@{ldap\_explode\_dn}}
+\index{ldap\_explode\_dn@{ldap\_explode\_dn}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_explode\_dn()}{ldap\_explode\_dn()}}
+{\footnotesize\ttfamily ldap\+\_\+explode\+\_\+dn (\begin{DoxyParamCaption}\item[{}]{\$dn,  }\item[{}]{\$with\+\_\+attrib }\end{DoxyParamCaption})}
+
+Splits DN into its component parts \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$dn }} The distinguished name of an L\+D\+AP entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$with\+\_\+attrib} & \\
+\hline
+\end{DoxyParams}
+Used to request if the R\+D\+Ns are returned with only values or their attributes as well. To get R\+D\+Ns with the attributes (i.\+e. in attribute=value format) set {\itshape with\+\_\+attrib} to 0 and to get only values set it to 1. 
+
+\begin{DoxyReturn}{Returns}
+array an array of all DN components. The first element in this array has count key and represents the number of returned values, next elements are numerically indexed DN components. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_ad68c2fb0d6ce3a9fadb3baef9c9996b9}\label{ldap_8php_ad68c2fb0d6ce3a9fadb3baef9c9996b9}} 
+\index{ldap.php@{ldap.php}!ldap\_first\_attribute@{ldap\_first\_attribute}}
+\index{ldap\_first\_attribute@{ldap\_first\_attribute}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_first\_attribute()}{ldap\_first\_attribute()}}
+{\footnotesize\ttfamily ldap\+\_\+first\+\_\+attribute (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$result\+\_\+entry\+\_\+identifier }\end{DoxyParamCaption})}
+
+Return first attribute \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$result\+\_\+entry\+\_\+identifier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$false the first attribute in the entry on success and {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a8562d055250c392010dc74c57c5596db}\label{ldap_8php_a8562d055250c392010dc74c57c5596db}} 
+\index{ldap.php@{ldap.php}!ldap\_first\_entry@{ldap\_first\_entry}}
+\index{ldap\_first\_entry@{ldap\_first\_entry}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_first\_entry()}{ldap\_first\_entry()}}
+{\footnotesize\ttfamily ldap\+\_\+first\+\_\+entry (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$result\+\_\+identifier }\end{DoxyParamCaption})}
+
+Return first result id \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$result\+\_\+identifier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource the result entry identifier for the first entry on success and {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_aee6f7132a917052905f7c5407ad401fb}\label{ldap_8php_aee6f7132a917052905f7c5407ad401fb}} 
+\index{ldap.php@{ldap.php}!ldap\_first\_reference@{ldap\_first\_reference}}
+\index{ldap\_first\_reference@{ldap\_first\_reference}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_first\_reference()}{ldap\_first\_reference()}}
+{\footnotesize\ttfamily ldap\+\_\+first\+\_\+reference (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$result }\end{DoxyParamCaption})}
+
+Return first reference \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link  resource \$result  resource  4.\+0.\+5  5.\+0 }}\mbox{\Hypertarget{ldap_8php_aebc757de5451f54c83c62bb922738eda}\label{ldap_8php_aebc757de5451f54c83c62bb922738eda}} 
+\index{ldap.php@{ldap.php}!ldap\_free\_result@{ldap\_free\_result}}
+\index{ldap\_free\_result@{ldap\_free\_result}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_free\_result()}{ldap\_free\_result()}}
+{\footnotesize\ttfamily ldap\+\_\+free\+\_\+result (\begin{DoxyParamCaption}\item[{}]{\$result\+\_\+identifier }\end{DoxyParamCaption})}
+
+Free result memory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$result\+\_\+identifier  bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure.  4.\+0  5.\+0 }}\mbox{\Hypertarget{ldap_8php_aa9d58828173641bb4f15205b87403b03}\label{ldap_8php_aa9d58828173641bb4f15205b87403b03}} 
+\index{ldap.php@{ldap.php}!ldap\_get\_attributes@{ldap\_get\_attributes}}
+\index{ldap\_get\_attributes@{ldap\_get\_attributes}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_get\_attributes()}{ldap\_get\_attributes()}}
+{\footnotesize\ttfamily ldap\+\_\+get\+\_\+attributes (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$result\+\_\+entry\+\_\+identifier }\end{DoxyParamCaption})}
+
+Get attributes from a search result entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$result\+\_\+entry\+\_\+identifier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array a complete entry information in a multi-\/dimensional array on success and {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_acfc579d01804f6b522d8d870202c1aaf}\label{ldap_8php_acfc579d01804f6b522d8d870202c1aaf}} 
+\index{ldap.php@{ldap.php}!ldap\_get\_dn@{ldap\_get\_dn}}
+\index{ldap\_get\_dn@{ldap\_get\_dn}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_get\_dn()}{ldap\_get\_dn()}}
+{\footnotesize\ttfamily ldap\+\_\+get\+\_\+dn (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$result\+\_\+entry\+\_\+identifier }\end{DoxyParamCaption})}
+
+Get the DN of a result entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$result\+\_\+entry\+\_\+identifier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$false the DN of the result entry and {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a6f4b9ec4f34ad136aaa92d207ecf6fae}\label{ldap_8php_a6f4b9ec4f34ad136aaa92d207ecf6fae}} 
+\index{ldap.php@{ldap.php}!ldap\_get\_entries@{ldap\_get\_entries}}
+\index{ldap\_get\_entries@{ldap\_get\_entries}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_get\_entries()}{ldap\_get\_entries()}}
+{\footnotesize\ttfamily ldap\+\_\+get\+\_\+entries (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$result\+\_\+identifier }\end{DoxyParamCaption})}
+
+Get all result entries \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$result\+\_\+identifier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array a complete result information in a multi-\/dimensional array on success and {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+
+
+The structure of the array is as follows. The attribute index is converted to lowercase. (Attributes are case-\/insensitive for directory servers, but not when used as array indices.) 
+\begin{DoxyPre}
+return\_value["{}count"{}] = number of entries in the result
+return\_value[0] : refers to the details of first entry
+return\_value[i]["{}dn"{}] = DN of the ith entry in the result
+return\_value[i]["{}count"{}] = number of attributes in ith entry
+return\_value[i][j] = NAME of the jth attribute in the ith entry in the result
+return\_value[i]["{}attribute"{}]["{}count"{}] = number of values for
+attribute in ith entry
+return\_value[i]["{}attribute"{}][j] = jth value of attribute in ith entry
+\end{DoxyPre}
+ \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a12ece97328df04ea16f171bbfc7a2c12}\label{ldap_8php_a12ece97328df04ea16f171bbfc7a2c12}} 
+\index{ldap.php@{ldap.php}!ldap\_get\_option@{ldap\_get\_option}}
+\index{ldap\_get\_option@{ldap\_get\_option}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_get\_option()}{ldap\_get\_option()}}
+{\footnotesize\ttfamily ldap\+\_\+get\+\_\+option (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$option,  }\item[{\&}]{\$retval }\end{DoxyParamCaption})}
+
+Get the current value for given option \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$option} & \\
+\hline
+\end{DoxyParams}
+The parameter {\itshape option} can be one of\+: 
+
+Option 
+
+Type  
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+D\+E\+R\+EF}} 
+
+integer  
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+S\+I\+Z\+E\+L\+I\+M\+IT}} 
+
+integer  
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+T\+I\+M\+E\+L\+I\+M\+IT}} 
+
+integer  
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+I\+M\+E\+O\+UT}} 
+
+integer  
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+V\+E\+R\+S\+I\+ON}} 
+
+integer  
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+U\+M\+B\+ER}} 
+
+integer  
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+R\+E\+F\+E\+R\+R\+A\+LS}} 
+
+bool  
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+R\+E\+S\+T\+A\+RT}} 
+
+bool  
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+H\+O\+S\+T\+\_\+\+N\+A\+ME}} 
+
+string  
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R\+I\+NG}} 
+
+string  
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+M\+A\+T\+C\+H\+E\+D\+\_\+\+DN}} 
+
+string  
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+C\+O\+N\+T\+R\+O\+LS}} 
+
+array  
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+T\+R\+O\+LS}} 
+
+array  
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$retval} & \\
+\hline
+\end{DoxyParams}
+This will be set to the option value. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_adfe9c7d87ad2a395911d488c23e7e231}\label{ldap_8php_adfe9c7d87ad2a395911d488c23e7e231}} 
+\index{ldap.php@{ldap.php}!ldap\_get\_values@{ldap\_get\_values}}
+\index{ldap\_get\_values@{ldap\_get\_values}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_get\_values()}{ldap\_get\_values()}}
+{\footnotesize\ttfamily ldap\+\_\+get\+\_\+values (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$result\+\_\+entry\+\_\+identifier,  }\item[{}]{\$attribute }\end{DoxyParamCaption})}
+
+Get all values from a result entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$result\+\_\+entry\+\_\+identifier} & \\
+\hline
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$\vert$false an array of values for the attribute on success and {\bfseries{F\+A\+L\+SE}} on error. The number of values can be found by indexing \char`\"{}count\char`\"{} in the resultant array. Individual values are accessed by integer index in the array. The first index is 0. 
+\end{DoxyReturn}
+
+
+L\+D\+AP allows more than one entry for an attribute, so it can, for example, store a number of email addresses for one person\textquotesingle{}s directory entry all labeled with the attribute \char`\"{}mail\char`\"{} return\+\_\+value\mbox{[}\char`\"{}count\char`\"{}\mbox{]} = number of values for attribute return\+\_\+value\mbox{[}0\mbox{]} = first value of attribute return\+\_\+value\mbox{[}i\mbox{]} = ith value of attribute \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a347111b9c6b19de17a25cb60912fc48e}\label{ldap_8php_a347111b9c6b19de17a25cb60912fc48e}} 
+\index{ldap.php@{ldap.php}!ldap\_get\_values\_len@{ldap\_get\_values\_len}}
+\index{ldap\_get\_values\_len@{ldap\_get\_values\_len}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_get\_values\_len()}{ldap\_get\_values\_len()}}
+{\footnotesize\ttfamily ldap\+\_\+get\+\_\+values\+\_\+len (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$result\+\_\+entry\+\_\+identifier,  }\item[{}]{\$attribute }\end{DoxyParamCaption})}
+
+Get all binary values from a result entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$result\+\_\+entry\+\_\+identifier} & \\
+\hline
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$\vert$false an array of values for the attribute on success and {\bfseries{F\+A\+L\+SE}} on error. Individual values are accessed by integer index in the array. The first index is 0. The number of values can be found by indexing \char`\"{}count\char`\"{} in the resultant array. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a716118c50b953817134f2a326d2dccb9}\label{ldap_8php_a716118c50b953817134f2a326d2dccb9}} 
+\index{ldap.php@{ldap.php}!ldap\_list@{ldap\_list}}
+\index{ldap\_list@{ldap\_list}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_list()}{ldap\_list()}}
+{\footnotesize\ttfamily ldap\+\_\+list (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$base\+\_\+dn,  }\item[{}]{\$filter,  }\item[{array}]{\$attributes = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$attrsonly = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$sizelimit = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$timelimit = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$deref = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Single-\/level search \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$base\+\_\+dn} & \\
+\hline
+\end{DoxyParams}
+The base DN for the directory. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filter} & \\
+\hline
+array & {\em \$attributes} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+An array of the required attributes, e.\+g. array(\char`\"{}mail\char`\"{}, \char`\"{}sn\char`\"{}, \char`\"{}cn\char`\"{}). Note that the \char`\"{}dn\char`\"{} is always returned irrespective of which attributes types are requested. 
+
+Using this parameter is much more efficient than the default action (which is to return all attributes and their associated values). The use of this parameter should therefore be considered good practice. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$attrsonly} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Should be set to 1 if only attribute types are wanted. If set to 0 both attributes types and attribute values are fetched which is the default behaviour. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$sizelimit} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Enables you to limit the count of entries fetched. Setting this to 0 means no limit. 
+
+This parameter can N\+OT override server-\/side preset sizelimit. You can set it lower though. 
+
+Some directory server hosts will be configured to return no more than a preset number of entries. If this occurs, the server will indicate that it has only returned a partial results set. This also occurs if you use this parameter to limit the count of fetched entries. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timelimit} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Sets the number of seconds how long is spend on the search. Setting this to 0 means no limit. 
+
+This parameter can N\+OT override server-\/side preset timelimit. You can set it lower though. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$deref} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Specifies how aliases should be handled during the search. It can be one of the following\+: {\bfseries{L\+D\+A\+P\+\_\+\+D\+E\+R\+E\+F\+\_\+\+N\+E\+V\+ER}} -\/ (default) aliases are never dereferenced. 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource$\vert$false a search result identifier or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a01c55841a9ac81b0299f88d2f70bc12e}\label{ldap_8php_a01c55841a9ac81b0299f88d2f70bc12e}} 
+\index{ldap.php@{ldap.php}!ldap\_mod\_add@{ldap\_mod\_add}}
+\index{ldap\_mod\_add@{ldap\_mod\_add}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_mod\_add()}{ldap\_mod\_add()}}
+{\footnotesize\ttfamily ldap\+\_\+mod\+\_\+add (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$dn,  }\item[{array}]{\$entry,  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Add attribute values to current attributes \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dn} & \\
+\hline
+\end{DoxyParams}
+The distinguished name of an L\+D\+AP entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$entry} & \\
+\hline
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a8aa53a5614a16db9d0db1d0ab5b5368d}\label{ldap_8php_a8aa53a5614a16db9d0db1d0ab5b5368d}} 
+\index{ldap.php@{ldap.php}!ldap\_mod\_add\_ext@{ldap\_mod\_add\_ext}}
+\index{ldap\_mod\_add\_ext@{ldap\_mod\_add\_ext}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_mod\_add\_ext()}{ldap\_mod\_add\_ext()}}
+{\footnotesize\ttfamily ldap\+\_\+mod\+\_\+add\+\_\+ext (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$dn,  }\item[{array}]{\$entry,  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Add attribute values to current attributes Does the same thing as \mbox{\hyperlink{ldap_8php_a01c55841a9ac81b0299f88d2f70bc12e}{ldap\+\_\+mod\+\_\+add()}} but returns the L\+D\+AP result resource to be parsed with \mbox{\hyperlink{ldap_8php_aa9ee400b5a4c1afd9526d5cde61ab545}{ldap\+\_\+parse\+\_\+result()}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dn} & \\
+\hline
+\end{DoxyParams}
+The distinguished name of an L\+D\+AP entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$entry} & \\
+\hline
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_ae0d43df7fed1bb83aa6cd187ee5116ee}\label{ldap_8php_ae0d43df7fed1bb83aa6cd187ee5116ee}} 
+\index{ldap.php@{ldap.php}!ldap\_mod\_del@{ldap\_mod\_del}}
+\index{ldap\_mod\_del@{ldap\_mod\_del}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_mod\_del()}{ldap\_mod\_del()}}
+{\footnotesize\ttfamily ldap\+\_\+mod\+\_\+del (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$dn,  }\item[{array}]{\$entry,  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Delete attribute values from current attributes \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dn} & \\
+\hline
+\end{DoxyParams}
+The distinguished name of an L\+D\+AP entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$entry} & \\
+\hline
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_ac300fc8e8643526a1b8a49f1379bc4ad}\label{ldap_8php_ac300fc8e8643526a1b8a49f1379bc4ad}} 
+\index{ldap.php@{ldap.php}!ldap\_mod\_del\_ext@{ldap\_mod\_del\_ext}}
+\index{ldap\_mod\_del\_ext@{ldap\_mod\_del\_ext}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_mod\_del\_ext()}{ldap\_mod\_del\_ext()}}
+{\footnotesize\ttfamily ldap\+\_\+mod\+\_\+del\+\_\+ext (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$dn,  }\item[{array}]{\$entry,  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Delete attribute values from current attributes Does the same thing as \mbox{\hyperlink{ldap_8php_ae0d43df7fed1bb83aa6cd187ee5116ee}{ldap\+\_\+mod\+\_\+del()}} but returns the L\+D\+AP result resource to be parsed with \mbox{\hyperlink{ldap_8php_aa9ee400b5a4c1afd9526d5cde61ab545}{ldap\+\_\+parse\+\_\+result()}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dn} & \\
+\hline
+\end{DoxyParams}
+The distinguished name of an L\+D\+AP entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$entry} & \\
+\hline
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a0f1c5cf3ff10b559348379fd66041b86}\label{ldap_8php_a0f1c5cf3ff10b559348379fd66041b86}} 
+\index{ldap.php@{ldap.php}!ldap\_mod\_replace@{ldap\_mod\_replace}}
+\index{ldap\_mod\_replace@{ldap\_mod\_replace}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_mod\_replace()}{ldap\_mod\_replace()}}
+{\footnotesize\ttfamily ldap\+\_\+mod\+\_\+replace (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$dn,  }\item[{array}]{\$entry,  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Replace attribute values with new ones \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dn} & \\
+\hline
+\end{DoxyParams}
+The distinguished name of an L\+D\+AP entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$entry} & \\
+\hline
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_aa7a5831234011a776785feacf3326ece}\label{ldap_8php_aa7a5831234011a776785feacf3326ece}} 
+\index{ldap.php@{ldap.php}!ldap\_mod\_replace\_ext@{ldap\_mod\_replace\_ext}}
+\index{ldap\_mod\_replace\_ext@{ldap\_mod\_replace\_ext}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_mod\_replace\_ext()}{ldap\_mod\_replace\_ext()}}
+{\footnotesize\ttfamily ldap\+\_\+mod\+\_\+replace\+\_\+ext (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$dn,  }\item[{array}]{\$entry,  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Replace attribute values with new ones Does the same thing as \mbox{\hyperlink{ldap_8php_a0f1c5cf3ff10b559348379fd66041b86}{ldap\+\_\+mod\+\_\+replace()}} but returns the L\+D\+AP result resource to be parsed with \mbox{\hyperlink{ldap_8php_aa9ee400b5a4c1afd9526d5cde61ab545}{ldap\+\_\+parse\+\_\+result()}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dn} & \\
+\hline
+\end{DoxyParams}
+The distinguished name of an L\+D\+AP entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$entry} & \\
+\hline
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a2dab0d0ed3f0deda565ebdd4888be663}\label{ldap_8php_a2dab0d0ed3f0deda565ebdd4888be663}} 
+\index{ldap.php@{ldap.php}!ldap\_modify@{ldap\_modify}}
+\index{ldap\_modify@{ldap\_modify}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_modify()}{ldap\_modify()}}
+{\footnotesize\ttfamily ldap\+\_\+modify (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$dn,  }\item[{array}]{\$entry,  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+This function is an alias of\+: \mbox{\hyperlink{ldap_8php_a0f1c5cf3ff10b559348379fd66041b86}{ldap\+\_\+mod\+\_\+replace()}}. Replace attribute values with new ones \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dn} & \\
+\hline
+\end{DoxyParams}
+The distinguished name of an L\+D\+AP entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$entry} & \\
+\hline
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_acd6c48dbac3e8687e03569dbe1773d6b}\label{ldap_8php_acd6c48dbac3e8687e03569dbe1773d6b}} 
+\index{ldap.php@{ldap.php}!ldap\_modify\_batch@{ldap\_modify\_batch}}
+\index{ldap\_modify\_batch@{ldap\_modify\_batch}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_modify\_batch()}{ldap\_modify\_batch()}}
+{\footnotesize\ttfamily ldap\+\_\+modify\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$dn,  }\item[{}]{\$entry,  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+(P\+HP 5.\+4 $>$= 5.\+4.\+26, P\+HP 5.\+5 $>$= 5.\+5.\+10, P\+HP 5.\+6 $>$= 5.\+6.\+0) Batch and execute modifications on an L\+D\+AP entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by \{\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{ldap_8php_ac683b99340642f222cfb51861eb7f034}{ldap\+\_\+connect()}}\}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em \$dn} & \\
+\hline
+\end{DoxyParams}
+The distinguished name of an L\+D\+AP entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$entry} & \\
+\hline
+\end{DoxyParams}
+An array that specifies the modifications to make. Each entry in this array is an associative array with two or three keys\+: {\itshape attrib} maps to the name of the attribute to modify, {\itshape modtype} maps to the type of modification to perform, and (depending on the type of modification) {\itshape values} maps to an array of attribute values relevant to the modification. 
+
+Possible values for {\itshape modtype} include\+: 
+
+
+\begin{DoxyDescription}
+\item[{\bfseries{L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+A\+DD}} ]
+
+
+
+Each value specified through {\itshape values} is added (as an additional value) to the attribute named by {\itshape attrib}. 
+
+
+
+
+\item[{\bfseries{L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+R\+E\+M\+O\+VE}} ]
+
+
+
+Each value specified through {\itshape values} is removed from the attribute named by {\itshape attrib}. Any value of the attribute not contained in the {\itshape values} array will remain untouched. 
+
+
+\item[{\bfseries{L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+A\+LL}} ]
+
+
+
+All values are removed from the attribute named by {\itshape attrib}. \mbox{\hyperlink{class_a}{A}} {\itshape values} entry must not be provided. 
+
+
+
+
+\item[{\bfseries{L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+R\+E\+P\+L\+A\+CE}} ]
+
+
+
+All current values of the attribute named by {\itshape attrib} are replaced with the values specified through {\itshape values}. 
+
+
+\end{DoxyDescription}
+
+Note that any value for {\itshape attrib} must be a string, any value for {\itshape values} must be an array of strings, and any value for {\itshape modtype} must be one of the {\bfseries{L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+$\ast$}} constants listed above. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+4 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a1cb55090e2e74bacb16feff889cc2e70}\label{ldap_8php_a1cb55090e2e74bacb16feff889cc2e70}} 
+\index{ldap.php@{ldap.php}!ldap\_next\_attribute@{ldap\_next\_attribute}}
+\index{ldap\_next\_attribute@{ldap\_next\_attribute}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_next\_attribute()}{ldap\_next\_attribute()}}
+{\footnotesize\ttfamily ldap\+\_\+next\+\_\+attribute (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$result\+\_\+entry\+\_\+identifier }\end{DoxyParamCaption})}
+
+Get the next attribute in result \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$result\+\_\+entry\+\_\+identifier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$false the next attribute in an entry on success and {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a7f5677dd2a1ff0d42c3fda8c20280333}\label{ldap_8php_a7f5677dd2a1ff0d42c3fda8c20280333}} 
+\index{ldap.php@{ldap.php}!ldap\_next\_entry@{ldap\_next\_entry}}
+\index{ldap\_next\_entry@{ldap\_next\_entry}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_next\_entry()}{ldap\_next\_entry()}}
+{\footnotesize\ttfamily ldap\+\_\+next\+\_\+entry (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$result\+\_\+entry\+\_\+identifier }\end{DoxyParamCaption})}
+
+Get next result entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$result\+\_\+entry\+\_\+identifier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource$\vert$false entry identifier for the next entry in the result whose entries are being read starting with {\bfseries{ldap\+\_\+first\+\_\+entry}}. If there are no more entries in the result then it returns {\bfseries{F\+A\+L\+SE}}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_ae6a93742410811f702c18baf0332312c}\label{ldap_8php_ae6a93742410811f702c18baf0332312c}} 
+\index{ldap.php@{ldap.php}!ldap\_next\_reference@{ldap\_next\_reference}}
+\index{ldap\_next\_reference@{ldap\_next\_reference}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_next\_reference()}{ldap\_next\_reference()}}
+{\footnotesize\ttfamily ldap\+\_\+next\+\_\+reference (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$entry }\end{DoxyParamCaption})}
+
+Get next reference \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link  resource \$entry  resource  4.\+0.\+5  5.\+0 }}\mbox{\Hypertarget{ldap_8php_ad7f2248eb2df8a7df7ee6bacc88744cd}\label{ldap_8php_ad7f2248eb2df8a7df7ee6bacc88744cd}} 
+\index{ldap.php@{ldap.php}!ldap\_parse\_exop@{ldap\_parse\_exop}}
+\index{ldap\_parse\_exop@{ldap\_parse\_exop}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_parse\_exop()}{ldap\_parse\_exop()}}
+{\footnotesize\ttfamily ldap\+\_\+parse\+\_\+exop (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$result,  }\item[{\&}]{\$retdata,  }\item[{\&}]{\$retoid }\end{DoxyParamCaption})}
+
+Parse L\+D\+AP extended operation data from result object result \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link An L\+D\+AP link identifier, returned by ldap\+\_\+connect().  resource \$result An L\+D\+AP result resource, returned by ldap\+\_\+exop().  string \$retdata \mbox{[}optional\mbox{]} Will be filled by the response data.  string \$retoid \mbox{[}optional\mbox{]} Will be filled by the response O\+ID.  bool Returns T\+R\+UE on success or F\+A\+L\+SE on failure.  7.\+2 }}\mbox{\Hypertarget{ldap_8php_a45b69d7966be9062a754c43ae136235c}\label{ldap_8php_a45b69d7966be9062a754c43ae136235c}} 
+\index{ldap.php@{ldap.php}!ldap\_parse\_reference@{ldap\_parse\_reference}}
+\index{ldap\_parse\_reference@{ldap\_parse\_reference}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_parse\_reference()}{ldap\_parse\_reference()}}
+{\footnotesize\ttfamily ldap\+\_\+parse\+\_\+reference (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$entry,  }\item[{array \&}]{\$referrals }\end{DoxyParamCaption})}
+
+Extract information from reference entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link  resource \$entry  array \$referrals  bool  4.\+0.\+5  5.\+0 }}\mbox{\Hypertarget{ldap_8php_aa9ee400b5a4c1afd9526d5cde61ab545}\label{ldap_8php_aa9ee400b5a4c1afd9526d5cde61ab545}} 
+\index{ldap.php@{ldap.php}!ldap\_parse\_result@{ldap\_parse\_result}}
+\index{ldap\_parse\_result@{ldap\_parse\_result}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_parse\_result()}{ldap\_parse\_result()}}
+{\footnotesize\ttfamily ldap\+\_\+parse\+\_\+result (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$result,  }\item[{\&}]{\$errcode,  }\item[{\&}]{\$matcheddn = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{\&}]{\$errmsg = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{array \&}]{\$referrals = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{\&}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Extract information from result \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link  resource \$result  int \$errcode  string \$matcheddn \mbox{[}optional\mbox{]}  string \$errmsg \mbox{[}optional\mbox{]}  array \$referrals \mbox{[}optional\mbox{]}  array \$serverctrls \mbox{[}optional\mbox{]} An array of L\+D\+AP Controls which have been sent with the response.  bool  4.\+0.\+5  5.\+0 }}\mbox{\Hypertarget{ldap_8php_a11e5ba586046cfd42a65413875b8d004}\label{ldap_8php_a11e5ba586046cfd42a65413875b8d004}} 
+\index{ldap.php@{ldap.php}!ldap\_read@{ldap\_read}}
+\index{ldap\_read@{ldap\_read}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_read()}{ldap\_read()}}
+{\footnotesize\ttfamily ldap\+\_\+read (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$base\+\_\+dn,  }\item[{}]{\$filter,  }\item[{array}]{\$attributes = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$attrsonly = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$sizelimit = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$timelimit = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$deref = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Read an entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$base\+\_\+dn} & \\
+\hline
+\end{DoxyParams}
+The base DN for the directory. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filter} & \\
+\hline
+\end{DoxyParams}
+An empty filter is not allowed. If you want to retrieve absolutely all information for this entry, use a filter of object\+Class=$\ast$. If you know which entry types are used on the directory server, you might use an appropriate filter such as object\+Class=inet\+Org\+Person. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+An array of the required attributes, e.\+g. array(\char`\"{}mail\char`\"{}, \char`\"{}sn\char`\"{}, \char`\"{}cn\char`\"{}). Note that the \char`\"{}dn\char`\"{} is always returned irrespective of which attributes types are requested. 
+
+Using this parameter is much more efficient than the default action (which is to return all attributes and their associated values). The use of this parameter should therefore be considered good practice. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$attrsonly} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Should be set to 1 if only attribute types are wanted. If set to 0 both attributes types and attribute values are fetched which is the default behaviour. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$sizelimit} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Enables you to limit the count of entries fetched. Setting this to 0 means no limit. 
+
+This parameter can N\+OT override server-\/side preset sizelimit. You can set it lower though. 
+
+Some directory server hosts will be configured to return no more than a preset number of entries. If this occurs, the server will indicate that it has only returned a partial results set. This also occurs if you use this parameter to limit the count of fetched entries. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timelimit} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Sets the number of seconds how long is spend on the search. Setting this to 0 means no limit. 
+
+This parameter can N\+OT override server-\/side preset timelimit. You can set it lower though. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$deref} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Specifies how aliases should be handled during the search. It can be one of the following\+: {\bfseries{L\+D\+A\+P\+\_\+\+D\+E\+R\+E\+F\+\_\+\+N\+E\+V\+ER}} -\/ (default) aliases are never dereferenced. 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource$\vert$false a search result identifier or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_a6c9d637a21c663944b0b6235b42cd036}\label{ldap_8php_a6c9d637a21c663944b0b6235b42cd036}} 
+\index{ldap.php@{ldap.php}!ldap\_rename@{ldap\_rename}}
+\index{ldap\_rename@{ldap\_rename}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_rename()}{ldap\_rename()}}
+{\footnotesize\ttfamily ldap\+\_\+rename (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$dn,  }\item[{}]{\$newrdn,  }\item[{}]{\$newparent,  }\item[{}]{\$deleteoldrdn,  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Modify the name of an entry \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dn} & \\
+\hline
+\end{DoxyParams}
+The distinguished name of an L\+D\+AP entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$newrdn} & \\
+\hline
+\end{DoxyParams}
+The new R\+DN. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$newparent} & \\
+\hline
+\end{DoxyParams}
+The new parent/superior entry. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$deleteoldrdn} & \\
+\hline
+\end{DoxyParams}
+If {\bfseries{T\+R\+UE}} the old R\+DN value(s) is removed, else the old R\+DN value(s) is retained as non-\/distinguished values of the entry. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+5 
+
+5.\+0 
+
+7.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_abf0ebdfb393b554a98bc6648e3c827b7}\label{ldap_8php_abf0ebdfb393b554a98bc6648e3c827b7}} 
+\index{ldap.php@{ldap.php}!ldap\_rename\_ext@{ldap\_rename\_ext}}
+\index{ldap\_rename\_ext@{ldap\_rename\_ext}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_rename\_ext()}{ldap\_rename\_ext()}}
+{\footnotesize\ttfamily ldap\+\_\+rename\+\_\+ext (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$dn,  }\item[{}]{\$newrdn,  }\item[{}]{\$newparent,  }\item[{}]{\$deleteoldrdn,  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Modify the name of an entry Does the same thing as \mbox{\hyperlink{ldap_8php_a6c9d637a21c663944b0b6235b42cd036}{ldap\+\_\+rename()}} but returns the L\+D\+AP result resource to be parsed with \mbox{\hyperlink{ldap_8php_aa9ee400b5a4c1afd9526d5cde61ab545}{ldap\+\_\+parse\+\_\+result()}}. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dn} & \\
+\hline
+\end{DoxyParams}
+The distinguished name of an L\+D\+AP entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$newrdn} & \\
+\hline
+\end{DoxyParams}
+The new R\+DN. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$newparent} & \\
+\hline
+\end{DoxyParams}
+The new parent/superior entry. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$deleteoldrdn} & \\
+\hline
+\end{DoxyParams}
+If {\bfseries{T\+R\+UE}} the old R\+DN value(s) is removed, else the old R\+DN value(s) is retained as non-\/distinguished values of the entry. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+7.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_ad822521191bdae82ab2aa13727b67db4}\label{ldap_8php_ad822521191bdae82ab2aa13727b67db4}} 
+\index{ldap.php@{ldap.php}!ldap\_sasl\_bind@{ldap\_sasl\_bind}}
+\index{ldap\_sasl\_bind@{ldap\_sasl\_bind}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_sasl\_bind()}{ldap\_sasl\_bind()}}
+{\footnotesize\ttfamily ldap\+\_\+sasl\+\_\+bind (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$binddn = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$password = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$sasl\+\_\+mech = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$sasl\+\_\+realm = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$sasl\+\_\+authc\+\_\+id = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$sasl\+\_\+authz\+\_\+id = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$props = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Bind to L\+D\+AP directory using S\+A\+SL \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link  string \$binddn \mbox{[}optional\mbox{]}  string \$password \mbox{[}optional\mbox{]}  string \$sasl\+\_\+mech \mbox{[}optional\mbox{]}  string \$sasl\+\_\+realm \mbox{[}optional\mbox{]}  string \$sasl\+\_\+authc\+\_\+id \mbox{[}optional\mbox{]}  string \$sasl\+\_\+authz\+\_\+id \mbox{[}optional\mbox{]}  string \$props \mbox{[}optional\mbox{]}  bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure.  5.\+0 }}\mbox{\Hypertarget{ldap_8php_adc6a36d1307871a539d1ae7f6c107eaa}\label{ldap_8php_adc6a36d1307871a539d1ae7f6c107eaa}} 
+\index{ldap.php@{ldap.php}!ldap\_search@{ldap\_search}}
+\index{ldap\_search@{ldap\_search}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_search()}{ldap\_search()}}
+{\footnotesize\ttfamily ldap\+\_\+search (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$base\+\_\+dn,  }\item[{}]{\$filter,  }\item[{array}]{\$attributes = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$attrsonly = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$sizelimit = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$timelimit = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$deref = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$serverctrls = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Search L\+D\+AP tree \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$base\+\_\+dn} & \\
+\hline
+\end{DoxyParams}
+The base DN for the directory. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filter} & \\
+\hline
+\end{DoxyParams}
+The search filter can be simple or advanced, using boolean operators in the format described in the L\+D\+AP documentation (see the Netscape \mbox{\hyperlink{class_directory}{Directory}} S\+DK for full information on filters). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+An array of the required attributes, e.\+g. array(\char`\"{}mail\char`\"{}, \char`\"{}sn\char`\"{}, \char`\"{}cn\char`\"{}). Note that the \char`\"{}dn\char`\"{} is always returned irrespective of which attributes types are requested. 
+
+Using this parameter is much more efficient than the default action (which is to return all attributes and their associated values). The use of this parameter should therefore be considered good practice. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$attrsonly} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Should be set to 1 if only attribute types are wanted. If set to 0 both attributes types and attribute values are fetched which is the default behaviour. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$sizelimit} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Enables you to limit the count of entries fetched. Setting this to 0 means no limit. 
+
+This parameter can N\+OT override server-\/side preset sizelimit. You can set it lower though. 
+
+Some directory server hosts will be configured to return no more than a preset number of entries. If this occurs, the server will indicate that it has only returned a partial results set. This also occurs if you use this parameter to limit the count of fetched entries. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timelimit} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Sets the number of seconds how long is spend on the search. Setting this to 0 means no limit. 
+
+This parameter can N\+OT override server-\/side preset timelimit. You can set it lower though. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$deref} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Specifies how aliases should be handled during the search. It can be one of the following\+: {\bfseries{L\+D\+A\+P\+\_\+\+D\+E\+R\+E\+F\+\_\+\+N\+E\+V\+ER}} -\/ (default) aliases are never dereferenced. 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$serverctrls} & \mbox{[}optional\mbox{]} Array of L\+D\+AP Controls to send with the request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource$\vert$false a search result identifier or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_aafd8f29b2bf1dffce886b1b0d8ca17f8}\label{ldap_8php_aafd8f29b2bf1dffce886b1b0d8ca17f8}} 
+\index{ldap.php@{ldap.php}!ldap\_set\_option@{ldap\_set\_option}}
+\index{ldap\_set\_option@{ldap\_set\_option}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_set\_option()}{ldap\_set\_option()}}
+{\footnotesize\ttfamily ldap\+\_\+set\+\_\+option (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier,  }\item[{}]{\$option,  }\item[{}]{\$newval }\end{DoxyParamCaption})}
+
+Set the value of the given option \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$option} & \\
+\hline
+\end{DoxyParams}
+The parameter {\itshape option} can be one of\+: 
+
+Option 
+
+Type 
+
+Available since  
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+D\+E\+R\+EF}} 
+
+integer 
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+S\+I\+Z\+E\+L\+I\+M\+IT}} 
+
+integer 
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+T\+I\+M\+E\+L\+I\+M\+IT}} 
+
+integer 
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+I\+M\+E\+O\+UT}} 
+
+integer 
+
+P\+HP 5.\+3.\+0  
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+V\+E\+R\+S\+I\+ON}} 
+
+integer 
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+U\+M\+B\+ER}} 
+
+integer 
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+R\+E\+F\+E\+R\+R\+A\+LS}} 
+
+bool 
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+R\+E\+S\+T\+A\+RT}} 
+
+bool 
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+H\+O\+S\+T\+\_\+\+N\+A\+ME}} 
+
+string 
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R\+I\+NG}} 
+
+string 
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+M\+A\+T\+C\+H\+E\+D\+\_\+\+DN}} 
+
+string 
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+C\+O\+N\+T\+R\+O\+LS}} 
+
+array 
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+T\+R\+O\+LS}} 
+
+array 
+
+{\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+C\+O\+N\+T\+R\+O\+LS}} and {\bfseries{L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+T\+R\+O\+LS}} require a list of controls, this means that the value must be an array of controls. \mbox{\hyperlink{class_a}{A}} control consists of an oid identifying the control, an optional value, and an optional flag for criticality. In P\+HP a control is given by an array containing an element with the key oid and string value, and two optional elements. The optional elements are key value with string value and key iscritical with boolean value. iscritical defaults to {\bfseries{F\+A\+L\+SE}} if not supplied. See draft-\/ietf-\/ldapext-\/ldap-\/c-\/api-\/xx.\+txt for details. See also the second example below. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$newval} & \\
+\hline
+\end{DoxyParams}
+The new value for the specified {\itshape option}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+4 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_aa03a6a6f4511a1432a3650d721ccef86}\label{ldap_8php_aa03a6a6f4511a1432a3650d721ccef86}} 
+\index{ldap.php@{ldap.php}!ldap\_set\_rebind\_proc@{ldap\_set\_rebind\_proc}}
+\index{ldap\_set\_rebind\_proc@{ldap\_set\_rebind\_proc}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_set\_rebind\_proc()}{ldap\_set\_rebind\_proc()}}
+{\footnotesize\ttfamily ldap\+\_\+set\+\_\+rebind\+\_\+proc (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{callable}]{\$callback }\end{DoxyParamCaption})}
+
+Set a callback function to do re-\/binds on referral chasing \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link  callable \$callback  bool  4.\+2  5.\+0 }}\mbox{\Hypertarget{ldap_8php_a1919c370bf425902fa89b74d48b83c6f}\label{ldap_8php_a1919c370bf425902fa89b74d48b83c6f}} 
+\index{ldap.php@{ldap.php}!ldap\_sort@{ldap\_sort}}
+\index{ldap\_sort@{ldap\_sort}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_sort()}{ldap\_sort()}}
+{\footnotesize\ttfamily ldap\+\_\+sort (\begin{DoxyParamCaption}\item[{}]{\$link,  }\item[{}]{\$result,  }\item[{}]{\$sortfilter }\end{DoxyParamCaption})}
+
+Sort L\+D\+AP result entries \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$result} & \\
+\hline
+\end{DoxyParams}
+An search result identifier, returned by {\bfseries{ldap\+\_\+search}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sortfilter} & \\
+\hline
+\end{DoxyParams}
+The attribute to use as a key in the sort. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000058}{Deprecated}}]7.\+0 \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{ldap_8php_acc087629314e2514251d201d26caf9cc}\label{ldap_8php_acc087629314e2514251d201d26caf9cc}} 
+\index{ldap.php@{ldap.php}!ldap\_start\_tls@{ldap\_start\_tls}}
+\index{ldap\_start\_tls@{ldap\_start\_tls}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_start\_tls()}{ldap\_start\_tls()}}
+{\footnotesize\ttfamily ldap\+\_\+start\+\_\+tls (\begin{DoxyParamCaption}\item[{}]{\$link }\end{DoxyParamCaption})}
+
+Start T\+LS \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link  bool  4.\+2  5.\+0 }}\mbox{\Hypertarget{ldap_8php_a867457e967a9b0d1c69bb1b1bf77729c}\label{ldap_8php_a867457e967a9b0d1c69bb1b1bf77729c}} 
+\index{ldap.php@{ldap.php}!ldap\_t61\_to\_8859@{ldap\_t61\_to\_8859}}
+\index{ldap\_t61\_to\_8859@{ldap\_t61\_to\_8859}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_t61\_to\_8859()}{ldap\_t61\_to\_8859()}}
+{\footnotesize\ttfamily ldap\+\_\+t61\+\_\+to\+\_\+8859 (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Translate t61 characters to 8859 characters \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$value  string  4.\+0.\+2  5.\+0  7.\+0 }}\mbox{\Hypertarget{ldap_8php_a8073e091ad3595c917dca35907ae1588}\label{ldap_8php_a8073e091ad3595c917dca35907ae1588}} 
+\index{ldap.php@{ldap.php}!ldap\_unbind@{ldap\_unbind}}
+\index{ldap\_unbind@{ldap\_unbind}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{ldap\_unbind()}{ldap\_unbind()}}
+{\footnotesize\ttfamily ldap\+\_\+unbind (\begin{DoxyParamCaption}\item[{}]{\$link\+\_\+identifier }\end{DoxyParamCaption})}
+
+Unbind from L\+D\+AP directory \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$link\+\_\+identifier }} An L\+D\+AP link identifier, returned by {\bfseries{ldap\+\_\+connect}}. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{ldap_8php_a2f24fdbe318fb6a119d83ff8a0957ddf}\label{ldap_8php_a2f24fdbe318fb6a119d83ff8a0957ddf}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_ASSERT@{LDAP\_CONTROL\_ASSERT}}
+\index{LDAP\_CONTROL\_ASSERT@{LDAP\_CONTROL\_ASSERT}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_ASSERT}{LDAP\_CONTROL\_ASSERT}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+A\+S\+S\+E\+RT \char`\"{}1.\+3.\+6.\+1.\+1.\+12\char`\"{}}
+
+Control Constant -\/ Assertion (» R\+FC 4528) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_a976c9c63a35142e669e0ceb646c742a8}\label{ldap_8php_a976c9c63a35142e669e0ceb646c742a8}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_DONTUSECOPY@{LDAP\_CONTROL\_DONTUSECOPY}}
+\index{LDAP\_CONTROL\_DONTUSECOPY@{LDAP\_CONTROL\_DONTUSECOPY}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_DONTUSECOPY}{LDAP\_CONTROL\_DONTUSECOPY}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+D\+O\+N\+T\+U\+S\+E\+C\+O\+PY \char`\"{}1.\+3.\+6.\+1.\+1.\+22\char`\"{}}
+
+Control Constant -\/ Don\textquotesingle{}t Use Copy (» R\+FC 6171) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_a6568fc8b6ad640c62956b52c0b133dd2}\label{ldap_8php_a6568fc8b6ad640c62956b52c0b133dd2}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_MANAGEDSAIT@{LDAP\_CONTROL\_MANAGEDSAIT}}
+\index{LDAP\_CONTROL\_MANAGEDSAIT@{LDAP\_CONTROL\_MANAGEDSAIT}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_MANAGEDSAIT}{LDAP\_CONTROL\_MANAGEDSAIT}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+M\+A\+N\+A\+G\+E\+D\+S\+A\+IT \char`\"{}2.\+16.\+840.\+1.\+113730.\+3.\+4.\+2\char`\"{}}
+
+Control Constant -\/ Manage D\+SA IT (» R\+FC 3296) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_a1964a440677d0dd6010e324e6d30d05c}\label{ldap_8php_a1964a440677d0dd6010e324e6d30d05c}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_PAGEDRESULTS@{LDAP\_CONTROL\_PAGEDRESULTS}}
+\index{LDAP\_CONTROL\_PAGEDRESULTS@{LDAP\_CONTROL\_PAGEDRESULTS}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_PAGEDRESULTS}{LDAP\_CONTROL\_PAGEDRESULTS}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+A\+G\+E\+D\+R\+E\+S\+U\+L\+TS \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+319\char`\"{}}
+
+Control Constant -\/ Paged results (» R\+FC 2696) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_aeff1444719aab0fce0a16055ecb9945d}\label{ldap_8php_aeff1444719aab0fce0a16055ecb9945d}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_PASSWORDPOLICYREQUEST@{LDAP\_CONTROL\_PASSWORDPOLICYREQUEST}}
+\index{LDAP\_CONTROL\_PASSWORDPOLICYREQUEST@{LDAP\_CONTROL\_PASSWORDPOLICYREQUEST}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_PASSWORDPOLICYREQUEST}{LDAP\_CONTROL\_PASSWORDPOLICYREQUEST}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+P\+O\+L\+I\+C\+Y\+R\+E\+Q\+U\+E\+ST \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+42.\+2.\+27.\+8.\+5.\+1\char`\"{}}
+
+Control Constant -\/ Password Policy Request \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_a40660de51101ed830575cfd7b018ab25}\label{ldap_8php_a40660de51101ed830575cfd7b018ab25}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_PASSWORDPOLICYRESPONSE@{LDAP\_CONTROL\_PASSWORDPOLICYRESPONSE}}
+\index{LDAP\_CONTROL\_PASSWORDPOLICYRESPONSE@{LDAP\_CONTROL\_PASSWORDPOLICYRESPONSE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_PASSWORDPOLICYRESPONSE}{LDAP\_CONTROL\_PASSWORDPOLICYRESPONSE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+P\+O\+L\+I\+C\+Y\+R\+E\+S\+P\+O\+N\+SE \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+42.\+2.\+27.\+8.\+5.\+1\char`\"{}}
+
+Control Constant -\/ Password Policy Response \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_a4d9b2615ab5c45c97c9d49edd78ab29a}\label{ldap_8php_a4d9b2615ab5c45c97c9d49edd78ab29a}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_POST\_READ@{LDAP\_CONTROL\_POST\_READ}}
+\index{LDAP\_CONTROL\_POST\_READ@{LDAP\_CONTROL\_POST\_READ}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_POST\_READ}{LDAP\_CONTROL\_POST\_READ}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+S\+T\+\_\+\+R\+E\+AD \char`\"{}1.\+3.\+6.\+1.\+1.\+13.\+2\char`\"{}}
+
+Control Constant -\/ Post read (» R\+FC 4527) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_a7e5080c411b822f672d6d3df18379560}\label{ldap_8php_a7e5080c411b822f672d6d3df18379560}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_PRE\_READ@{LDAP\_CONTROL\_PRE\_READ}}
+\index{LDAP\_CONTROL\_PRE\_READ@{LDAP\_CONTROL\_PRE\_READ}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_PRE\_READ}{LDAP\_CONTROL\_PRE\_READ}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+R\+E\+\_\+\+R\+E\+AD \char`\"{}1.\+3.\+6.\+1.\+1.\+13.\+1\char`\"{}}
+
+Control Constant -\/ Pre read (» R\+FC 4527) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_a9ee881db803bd6b95349031d08b387b1}\label{ldap_8php_a9ee881db803bd6b95349031d08b387b1}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_SORTREQUEST@{LDAP\_CONTROL\_SORTREQUEST}}
+\index{LDAP\_CONTROL\_SORTREQUEST@{LDAP\_CONTROL\_SORTREQUEST}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_SORTREQUEST}{LDAP\_CONTROL\_SORTREQUEST}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+O\+R\+T\+R\+E\+Q\+U\+E\+ST \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+473\char`\"{}}
+
+Control Constant -\/ Sort request (» R\+FC 2891) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_adf5cae86af0ad087830039a160e43796}\label{ldap_8php_adf5cae86af0ad087830039a160e43796}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_SORTRESPONSE@{LDAP\_CONTROL\_SORTRESPONSE}}
+\index{LDAP\_CONTROL\_SORTRESPONSE@{LDAP\_CONTROL\_SORTRESPONSE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_SORTRESPONSE}{LDAP\_CONTROL\_SORTRESPONSE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+O\+R\+T\+R\+E\+S\+P\+O\+N\+SE \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+474\char`\"{}}
+
+Control Constant -\/ Sort response (» R\+FC 2891) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_a537643c584b3c8d3cd27168c4cff071b}\label{ldap_8php_a537643c584b3c8d3cd27168c4cff071b}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_SUBENTRIES@{LDAP\_CONTROL\_SUBENTRIES}}
+\index{LDAP\_CONTROL\_SUBENTRIES@{LDAP\_CONTROL\_SUBENTRIES}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_SUBENTRIES}{LDAP\_CONTROL\_SUBENTRIES}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+U\+B\+E\+N\+T\+R\+I\+ES \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+4203.\+1.\+10.\+1\char`\"{}}
+
+Control Constant -\/ Subentries (» R\+FC 3672) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_a672e80859beb4d7543c03faea43a6a57}\label{ldap_8php_a672e80859beb4d7543c03faea43a6a57}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_SYNC@{LDAP\_CONTROL\_SYNC}}
+\index{LDAP\_CONTROL\_SYNC@{LDAP\_CONTROL\_SYNC}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_SYNC}{LDAP\_CONTROL\_SYNC}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+Y\+NC \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+4203.\+1.\+9.\+1.\+1\char`\"{}}
+
+Control Constant -\/ Content Synchronization Operation (» R\+FC 4533) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_a519f6c4113a2acaecfad77e0ade1295b}\label{ldap_8php_a519f6c4113a2acaecfad77e0ade1295b}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_SYNC\_DONE@{LDAP\_CONTROL\_SYNC\_DONE}}
+\index{LDAP\_CONTROL\_SYNC\_DONE@{LDAP\_CONTROL\_SYNC\_DONE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_SYNC\_DONE}{LDAP\_CONTROL\_SYNC\_DONE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+Y\+N\+C\+\_\+\+D\+O\+NE \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+4203.\+1.\+9.\+1.\+3\char`\"{}}
+
+Control Constant -\/ Content Synchronization Operation Done (» R\+FC 4533) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_a604273e2e6e4024159833fb440e16a2f}\label{ldap_8php_a604273e2e6e4024159833fb440e16a2f}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_SYNC\_STATE@{LDAP\_CONTROL\_SYNC\_STATE}}
+\index{LDAP\_CONTROL\_SYNC\_STATE@{LDAP\_CONTROL\_SYNC\_STATE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_SYNC\_STATE}{LDAP\_CONTROL\_SYNC\_STATE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+T\+A\+TE \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+4203.\+1.\+9.\+1.\+2\char`\"{}}
+
+Control Constant -\/ Content Synchronization Operation State (» R\+FC 4533) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_ab9730717f8d568cd2b3d0810961ba9cf}\label{ldap_8php_ab9730717f8d568cd2b3d0810961ba9cf}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_VALUESRETURNFILTER@{LDAP\_CONTROL\_VALUESRETURNFILTER}}
+\index{LDAP\_CONTROL\_VALUESRETURNFILTER@{LDAP\_CONTROL\_VALUESRETURNFILTER}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_VALUESRETURNFILTER}{LDAP\_CONTROL\_VALUESRETURNFILTER}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+V\+A\+L\+U\+E\+S\+R\+E\+T\+U\+R\+N\+F\+I\+L\+T\+ER \char`\"{}1.\+2.\+826.\+0.\+1.\+3344810.\+2.\+3\char`\"{}}
+
+Control Constant -\/ Filter returned values (» R\+FC 3876) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_ad72f582af8ffccb9ee7d577262217c74}\label{ldap_8php_ad72f582af8ffccb9ee7d577262217c74}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_VLVREQUEST@{LDAP\_CONTROL\_VLVREQUEST}}
+\index{LDAP\_CONTROL\_VLVREQUEST@{LDAP\_CONTROL\_VLVREQUEST}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_VLVREQUEST}{LDAP\_CONTROL\_VLVREQUEST}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+V\+L\+V\+R\+E\+Q\+U\+E\+ST \char`\"{}2.\+16.\+840.\+1.\+113730.\+3.\+4.\+9\char`\"{}}
+
+Control Constant -\/ Virtual List View Request \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_a840f4a06f5929cc93936ee8be18b5a86}\label{ldap_8php_a840f4a06f5929cc93936ee8be18b5a86}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_VLVRESPONSE@{LDAP\_CONTROL\_VLVRESPONSE}}
+\index{LDAP\_CONTROL\_VLVRESPONSE@{LDAP\_CONTROL\_VLVRESPONSE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_VLVRESPONSE}{LDAP\_CONTROL\_VLVRESPONSE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+V\+L\+V\+R\+E\+S\+P\+O\+N\+SE \char`\"{}2.\+16.\+840.\+1.\+113730.\+3.\+4.\+10\char`\"{}}
+
+Control Constant -\/ Virtual List View Response \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_af39c350b0e41971a18e48895e318aa19}\label{ldap_8php_af39c350b0e41971a18e48895e318aa19}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_X\_DOMAIN\_SCOPE@{LDAP\_CONTROL\_X\_DOMAIN\_SCOPE}}
+\index{LDAP\_CONTROL\_X\_DOMAIN\_SCOPE@{LDAP\_CONTROL\_X\_DOMAIN\_SCOPE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_X\_DOMAIN\_SCOPE}{LDAP\_CONTROL\_X\_DOMAIN\_SCOPE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+X\+\_\+\+D\+O\+M\+A\+I\+N\+\_\+\+S\+C\+O\+PE \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+1339\char`\"{}}
+
+Control Constant -\/ Active \mbox{\hyperlink{class_directory}{Directory}} Domain Scope \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_aae8b55fb914645d9d7280abe978b8457}\label{ldap_8php_aae8b55fb914645d9d7280abe978b8457}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_X\_EXTENDED\_DN@{LDAP\_CONTROL\_X\_EXTENDED\_DN}}
+\index{LDAP\_CONTROL\_X\_EXTENDED\_DN@{LDAP\_CONTROL\_X\_EXTENDED\_DN}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_X\_EXTENDED\_DN}{LDAP\_CONTROL\_X\_EXTENDED\_DN}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+X\+\_\+\+E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+DN \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+529\char`\"{}}
+
+Control Constant -\/ Active \mbox{\hyperlink{class_directory}{Directory}} Extended DN \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_aacf94ca70de62f246d370b9e0b6cb478}\label{ldap_8php_aacf94ca70de62f246d370b9e0b6cb478}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_X\_INCREMENTAL\_VALUES@{LDAP\_CONTROL\_X\_INCREMENTAL\_VALUES}}
+\index{LDAP\_CONTROL\_X\_INCREMENTAL\_VALUES@{LDAP\_CONTROL\_X\_INCREMENTAL\_VALUES}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_X\_INCREMENTAL\_VALUES}{LDAP\_CONTROL\_X\_INCREMENTAL\_VALUES}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+X\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+A\+L\+\_\+\+V\+A\+L\+U\+ES \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+802\char`\"{}}
+
+Control Constant -\/ Active \mbox{\hyperlink{class_directory}{Directory}} Incremental Values \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_a8dec0e5ea8125a5736184c661ae9acdd}\label{ldap_8php_a8dec0e5ea8125a5736184c661ae9acdd}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_X\_PERMISSIVE\_MODIFY@{LDAP\_CONTROL\_X\_PERMISSIVE\_MODIFY}}
+\index{LDAP\_CONTROL\_X\_PERMISSIVE\_MODIFY@{LDAP\_CONTROL\_X\_PERMISSIVE\_MODIFY}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_X\_PERMISSIVE\_MODIFY}{LDAP\_CONTROL\_X\_PERMISSIVE\_MODIFY}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+X\+\_\+\+P\+E\+R\+M\+I\+S\+S\+I\+V\+E\+\_\+\+M\+O\+D\+I\+FY \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+1413\char`\"{}}
+
+Control Constant -\/ Active \mbox{\hyperlink{class_directory}{Directory}} Permissive Modify \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_aaead1f4ce7b8e77b3d16dc758d088ba4}\label{ldap_8php_aaead1f4ce7b8e77b3d16dc758d088ba4}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_X\_SEARCH\_OPTIONS@{LDAP\_CONTROL\_X\_SEARCH\_OPTIONS}}
+\index{LDAP\_CONTROL\_X\_SEARCH\_OPTIONS@{LDAP\_CONTROL\_X\_SEARCH\_OPTIONS}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_X\_SEARCH\_OPTIONS}{LDAP\_CONTROL\_X\_SEARCH\_OPTIONS}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+X\+\_\+\+S\+E\+A\+R\+C\+H\+\_\+\+O\+P\+T\+I\+O\+NS \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+1340\char`\"{}}
+
+Control Constant -\/ Active \mbox{\hyperlink{class_directory}{Directory}} Search Options \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_ae83b78360cc55f253e24870a34f97f46}\label{ldap_8php_ae83b78360cc55f253e24870a34f97f46}} 
+\index{ldap.php@{ldap.php}!LDAP\_CONTROL\_X\_TREE\_DELETE@{LDAP\_CONTROL\_X\_TREE\_DELETE}}
+\index{LDAP\_CONTROL\_X\_TREE\_DELETE@{LDAP\_CONTROL\_X\_TREE\_DELETE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_CONTROL\_X\_TREE\_DELETE}{LDAP\_CONTROL\_X\_TREE\_DELETE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+X\+\_\+\+T\+R\+E\+E\+\_\+\+D\+E\+L\+E\+TE \char`\"{}1.\+2.\+840.\+113556.\+1.\+4.\+805\char`\"{}}
+
+Control Constant -\/ Active \mbox{\hyperlink{class_directory}{Directory}} Tree Delete \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+3 }}\mbox{\Hypertarget{ldap_8php_a1f903167339c654bc52cd8e08d4747ed}\label{ldap_8php_a1f903167339c654bc52cd8e08d4747ed}} 
+\index{ldap.php@{ldap.php}!LDAP\_DEREF\_ALWAYS@{LDAP\_DEREF\_ALWAYS}}
+\index{LDAP\_DEREF\_ALWAYS@{LDAP\_DEREF\_ALWAYS}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_DEREF\_ALWAYS}{LDAP\_DEREF\_ALWAYS}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+D\+E\+R\+E\+F\+\_\+\+A\+L\+W\+A\+YS 3}
+
+\mbox{\Hypertarget{ldap_8php_a60b9e1b75d1af611b9a04ac9c7d6024d}\label{ldap_8php_a60b9e1b75d1af611b9a04ac9c7d6024d}} 
+\index{ldap.php@{ldap.php}!LDAP\_DEREF\_FINDING@{LDAP\_DEREF\_FINDING}}
+\index{LDAP\_DEREF\_FINDING@{LDAP\_DEREF\_FINDING}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_DEREF\_FINDING}{LDAP\_DEREF\_FINDING}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+D\+E\+R\+E\+F\+\_\+\+F\+I\+N\+D\+I\+NG 2}
+
+\mbox{\Hypertarget{ldap_8php_a1b5af1e4b93c1d9e14a10f558a92160f}\label{ldap_8php_a1b5af1e4b93c1d9e14a10f558a92160f}} 
+\index{ldap.php@{ldap.php}!LDAP\_DEREF\_NEVER@{LDAP\_DEREF\_NEVER}}
+\index{LDAP\_DEREF\_NEVER@{LDAP\_DEREF\_NEVER}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_DEREF\_NEVER}{LDAP\_DEREF\_NEVER}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+D\+E\+R\+E\+F\+\_\+\+N\+E\+V\+ER 0}
+
+\mbox{\Hypertarget{ldap_8php_a0bb4b12a3e61dfadb0db2d7991d52f9d}\label{ldap_8php_a0bb4b12a3e61dfadb0db2d7991d52f9d}} 
+\index{ldap.php@{ldap.php}!LDAP\_DEREF\_SEARCHING@{LDAP\_DEREF\_SEARCHING}}
+\index{LDAP\_DEREF\_SEARCHING@{LDAP\_DEREF\_SEARCHING}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_DEREF\_SEARCHING}{LDAP\_DEREF\_SEARCHING}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+D\+E\+R\+E\+F\+\_\+\+S\+E\+A\+R\+C\+H\+I\+NG 1}
+
+\mbox{\Hypertarget{ldap_8php_a032c8ef362dd2605eb963a1322e7be8f}\label{ldap_8php_a032c8ef362dd2605eb963a1322e7be8f}} 
+\index{ldap.php@{ldap.php}!LDAP\_ESCAPE\_DN@{LDAP\_ESCAPE\_DN}}
+\index{LDAP\_ESCAPE\_DN@{LDAP\_ESCAPE\_DN}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_ESCAPE\_DN}{LDAP\_ESCAPE\_DN}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+E\+S\+C\+A\+P\+E\+\_\+\+DN 2}
+
+\mbox{\Hypertarget{ldap_8php_ad6860f91a3800b68234cd55aff12ff90}\label{ldap_8php_ad6860f91a3800b68234cd55aff12ff90}} 
+\index{ldap.php@{ldap.php}!LDAP\_ESCAPE\_FILTER@{LDAP\_ESCAPE\_FILTER}}
+\index{LDAP\_ESCAPE\_FILTER@{LDAP\_ESCAPE\_FILTER}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_ESCAPE\_FILTER}{LDAP\_ESCAPE\_FILTER}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+E\+S\+C\+A\+P\+E\+\_\+\+F\+I\+L\+T\+ER 1}
+
+\mbox{\Hypertarget{ldap_8php_aba3a2779894e92638611a520ac1be29d}\label{ldap_8php_aba3a2779894e92638611a520ac1be29d}} 
+\index{ldap.php@{ldap.php}!LDAP\_EXOP\_MODIFY\_PASSWD@{LDAP\_EXOP\_MODIFY\_PASSWD}}
+\index{LDAP\_EXOP\_MODIFY\_PASSWD@{LDAP\_EXOP\_MODIFY\_PASSWD}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_EXOP\_MODIFY\_PASSWD}{LDAP\_EXOP\_MODIFY\_PASSWD}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+P\+A\+S\+S\+WD \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+4203.\+1.\+11.\+1\char`\"{}}
+
+Extended Operation constant -\/ Modify password \mbox{\Hypertarget{ldap_8php_a8119ec14c93a5ab3aafebd6798b845d7}\label{ldap_8php_a8119ec14c93a5ab3aafebd6798b845d7}} 
+\index{ldap.php@{ldap.php}!LDAP\_EXOP\_REFRESH@{LDAP\_EXOP\_REFRESH}}
+\index{LDAP\_EXOP\_REFRESH@{LDAP\_EXOP\_REFRESH}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_EXOP\_REFRESH}{LDAP\_EXOP\_REFRESH}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+R\+E\+F\+R\+E\+SH \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+1466.\+101.\+119.\+1\char`\"{}}
+
+Extended Operation Constant -\/ Refresh \mbox{\Hypertarget{ldap_8php_a77ea4095333ef2a41f5a53e02b9084f7}\label{ldap_8php_a77ea4095333ef2a41f5a53e02b9084f7}} 
+\index{ldap.php@{ldap.php}!LDAP\_EXOP\_START\_TLS@{LDAP\_EXOP\_START\_TLS}}
+\index{LDAP\_EXOP\_START\_TLS@{LDAP\_EXOP\_START\_TLS}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_EXOP\_START\_TLS}{LDAP\_EXOP\_START\_TLS}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+S\+T\+A\+R\+T\+\_\+\+T\+LS \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+1466.\+20037\char`\"{}}
+
+Extended Operation constant -\/ Start T\+LS \mbox{\Hypertarget{ldap_8php_a3b297e25ad26083413708883da74d3af}\label{ldap_8php_a3b297e25ad26083413708883da74d3af}} 
+\index{ldap.php@{ldap.php}!LDAP\_EXOP\_TURN@{LDAP\_EXOP\_TURN}}
+\index{LDAP\_EXOP\_TURN@{LDAP\_EXOP\_TURN}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_EXOP\_TURN}{LDAP\_EXOP\_TURN}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+T\+U\+RN \char`\"{}1.\+3.\+6.\+1.\+1.\+19\char`\"{}}
+
+Extended Operation Constant -\/ Turn \mbox{\Hypertarget{ldap_8php_a9283ff2b38898130e0686b5dfa5aab34}\label{ldap_8php_a9283ff2b38898130e0686b5dfa5aab34}} 
+\index{ldap.php@{ldap.php}!LDAP\_EXOP\_WHO\_AM\_I@{LDAP\_EXOP\_WHO\_AM\_I}}
+\index{LDAP\_EXOP\_WHO\_AM\_I@{LDAP\_EXOP\_WHO\_AM\_I}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_EXOP\_WHO\_AM\_I}{LDAP\_EXOP\_WHO\_AM\_I}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+E\+X\+O\+P\+\_\+\+W\+H\+O\+\_\+\+A\+M\+\_\+I \char`\"{}1.\+3.\+6.\+1.\+4.\+1.\+4203.\+1.\+11.\+3\char`\"{}}
+
+Extended Operation Constant -\/ W\+H\+O\+A\+MI \mbox{\Hypertarget{ldap_8php_a7cf2523ed52b80e1d4a04f9e309b5166}\label{ldap_8php_a7cf2523ed52b80e1d4a04f9e309b5166}} 
+\index{ldap.php@{ldap.php}!LDAP\_MODIFY\_BATCH\_ADD@{LDAP\_MODIFY\_BATCH\_ADD}}
+\index{LDAP\_MODIFY\_BATCH\_ADD@{LDAP\_MODIFY\_BATCH\_ADD}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_MODIFY\_BATCH\_ADD}{LDAP\_MODIFY\_BATCH\_ADD}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+A\+DD 1}
+
+\mbox{\Hypertarget{ldap_8php_a4fc4c157f15a2579b493628e8a0b323a}\label{ldap_8php_a4fc4c157f15a2579b493628e8a0b323a}} 
+\index{ldap.php@{ldap.php}!LDAP\_MODIFY\_BATCH\_ATTRIB@{LDAP\_MODIFY\_BATCH\_ATTRIB}}
+\index{LDAP\_MODIFY\_BATCH\_ATTRIB@{LDAP\_MODIFY\_BATCH\_ATTRIB}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_MODIFY\_BATCH\_ATTRIB}{LDAP\_MODIFY\_BATCH\_ATTRIB}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+A\+T\+T\+R\+IB \textquotesingle{}attrib\textquotesingle{}}
+
+\mbox{\Hypertarget{ldap_8php_a7f569e67d20002204057c8610ec556dc}\label{ldap_8php_a7f569e67d20002204057c8610ec556dc}} 
+\index{ldap.php@{ldap.php}!LDAP\_MODIFY\_BATCH\_MODTYPE@{LDAP\_MODIFY\_BATCH\_MODTYPE}}
+\index{LDAP\_MODIFY\_BATCH\_MODTYPE@{LDAP\_MODIFY\_BATCH\_MODTYPE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_MODIFY\_BATCH\_MODTYPE}{LDAP\_MODIFY\_BATCH\_MODTYPE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+M\+O\+D\+T\+Y\+PE \textquotesingle{}modtype\textquotesingle{}}
+
+\mbox{\Hypertarget{ldap_8php_a62e27eec1ec8a15d71825ecfa9f1e00c}\label{ldap_8php_a62e27eec1ec8a15d71825ecfa9f1e00c}} 
+\index{ldap.php@{ldap.php}!LDAP\_MODIFY\_BATCH\_REMOVE@{LDAP\_MODIFY\_BATCH\_REMOVE}}
+\index{LDAP\_MODIFY\_BATCH\_REMOVE@{LDAP\_MODIFY\_BATCH\_REMOVE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_MODIFY\_BATCH\_REMOVE}{LDAP\_MODIFY\_BATCH\_REMOVE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+R\+E\+M\+O\+VE 2}
+
+\mbox{\Hypertarget{ldap_8php_a32e6e07083274b9c7d994174a7e5d640}\label{ldap_8php_a32e6e07083274b9c7d994174a7e5d640}} 
+\index{ldap.php@{ldap.php}!LDAP\_MODIFY\_BATCH\_REMOVE\_ALL@{LDAP\_MODIFY\_BATCH\_REMOVE\_ALL}}
+\index{LDAP\_MODIFY\_BATCH\_REMOVE\_ALL@{LDAP\_MODIFY\_BATCH\_REMOVE\_ALL}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_MODIFY\_BATCH\_REMOVE\_ALL}{LDAP\_MODIFY\_BATCH\_REMOVE\_ALL}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+A\+LL 18}
+
+\mbox{\Hypertarget{ldap_8php_ac382d080dc8af122117a42e31053dae5}\label{ldap_8php_ac382d080dc8af122117a42e31053dae5}} 
+\index{ldap.php@{ldap.php}!LDAP\_MODIFY\_BATCH\_REPLACE@{LDAP\_MODIFY\_BATCH\_REPLACE}}
+\index{LDAP\_MODIFY\_BATCH\_REPLACE@{LDAP\_MODIFY\_BATCH\_REPLACE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_MODIFY\_BATCH\_REPLACE}{LDAP\_MODIFY\_BATCH\_REPLACE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+R\+E\+P\+L\+A\+CE 3}
+
+\mbox{\Hypertarget{ldap_8php_a148eba8edf82a32d1e54cb598570e54e}\label{ldap_8php_a148eba8edf82a32d1e54cb598570e54e}} 
+\index{ldap.php@{ldap.php}!LDAP\_MODIFY\_BATCH\_VALUES@{LDAP\_MODIFY\_BATCH\_VALUES}}
+\index{LDAP\_MODIFY\_BATCH\_VALUES@{LDAP\_MODIFY\_BATCH\_VALUES}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_MODIFY\_BATCH\_VALUES}{LDAP\_MODIFY\_BATCH\_VALUES}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+M\+O\+D\+I\+F\+Y\+\_\+\+B\+A\+T\+C\+H\+\_\+\+V\+A\+L\+U\+ES \textquotesingle{}values\textquotesingle{}}
+
+\mbox{\Hypertarget{ldap_8php_aa4ec7aee0705dfef6f37e4d38fe0fcbd}\label{ldap_8php_aa4ec7aee0705dfef6f37e4d38fe0fcbd}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_CLIENT\_CONTROLS@{LDAP\_OPT\_CLIENT\_CONTROLS}}
+\index{LDAP\_OPT\_CLIENT\_CONTROLS@{LDAP\_OPT\_CLIENT\_CONTROLS}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_CLIENT\_CONTROLS}{LDAP\_OPT\_CLIENT\_CONTROLS}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+T\+R\+O\+LS 19}
+
+Specifies a default list of client controls to be processed with each request. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ldap.\+constants.\+php}}\mbox{\Hypertarget{ldap_8php_adee7d320e6fe9c5580072af45e244269}\label{ldap_8php_adee7d320e6fe9c5580072af45e244269}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_DEBUG\_LEVEL@{LDAP\_OPT\_DEBUG\_LEVEL}}
+\index{LDAP\_OPT\_DEBUG\_LEVEL@{LDAP\_OPT\_DEBUG\_LEVEL}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_DEBUG\_LEVEL}{LDAP\_OPT\_DEBUG\_LEVEL}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+D\+E\+B\+U\+G\+\_\+\+L\+E\+V\+EL 20481}
+
+Specifies a bitwise level for debug traces. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ldap.\+constants.\+php}}\mbox{\Hypertarget{ldap_8php_afbb299e1dc6713c5059f8f7c1b34ba01}\label{ldap_8php_afbb299e1dc6713c5059f8f7c1b34ba01}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_DEREF@{LDAP\_OPT\_DEREF}}
+\index{LDAP\_OPT\_DEREF@{LDAP\_OPT\_DEREF}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_DEREF}{LDAP\_OPT\_DEREF}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+D\+E\+R\+EF 2}
+
+Specifies alternative rules for following aliases at the server. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ldap.\+constants.\+php}}\mbox{\Hypertarget{ldap_8php_a662cd6b119ca892ed08bf92def7716c4}\label{ldap_8php_a662cd6b119ca892ed08bf92def7716c4}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_DIAGNOSTIC\_MESSAGE@{LDAP\_OPT\_DIAGNOSTIC\_MESSAGE}}
+\index{LDAP\_OPT\_DIAGNOSTIC\_MESSAGE@{LDAP\_OPT\_DIAGNOSTIC\_MESSAGE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_DIAGNOSTIC\_MESSAGE}{LDAP\_OPT\_DIAGNOSTIC\_MESSAGE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+D\+I\+A\+G\+N\+O\+S\+T\+I\+C\+\_\+\+M\+E\+S\+S\+A\+GE 50}
+
+\mbox{\Hypertarget{ldap_8php_a0218195dbfa834a06e1c749ca9829ef0}\label{ldap_8php_a0218195dbfa834a06e1c749ca9829ef0}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_ERROR\_NUMBER@{LDAP\_OPT\_ERROR\_NUMBER}}
+\index{LDAP\_OPT\_ERROR\_NUMBER@{LDAP\_OPT\_ERROR\_NUMBER}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_ERROR\_NUMBER}{LDAP\_OPT\_ERROR\_NUMBER}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+U\+M\+B\+ER 49}
+
+\mbox{\Hypertarget{ldap_8php_a0270f5e67c6cc4b6423addae45844a5c}\label{ldap_8php_a0270f5e67c6cc4b6423addae45844a5c}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_ERROR\_STRING@{LDAP\_OPT\_ERROR\_STRING}}
+\index{LDAP\_OPT\_ERROR\_STRING@{LDAP\_OPT\_ERROR\_STRING}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_ERROR\_STRING}{LDAP\_OPT\_ERROR\_STRING}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R\+I\+NG 50}
+
+\mbox{\Hypertarget{ldap_8php_a50e69e4dbc6c99ae7711e0af45a3d282}\label{ldap_8php_a50e69e4dbc6c99ae7711e0af45a3d282}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_HOST\_NAME@{LDAP\_OPT\_HOST\_NAME}}
+\index{LDAP\_OPT\_HOST\_NAME@{LDAP\_OPT\_HOST\_NAME}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_HOST\_NAME}{LDAP\_OPT\_HOST\_NAME}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+H\+O\+S\+T\+\_\+\+N\+A\+ME 48}
+
+\mbox{\Hypertarget{ldap_8php_ab10091b58644332a561200623b2f7a49}\label{ldap_8php_ab10091b58644332a561200623b2f7a49}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_MATCHED\_DN@{LDAP\_OPT\_MATCHED\_DN}}
+\index{LDAP\_OPT\_MATCHED\_DN@{LDAP\_OPT\_MATCHED\_DN}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_MATCHED\_DN}{LDAP\_OPT\_MATCHED\_DN}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+M\+A\+T\+C\+H\+E\+D\+\_\+\+DN 51}
+
+\mbox{\Hypertarget{ldap_8php_af4dd2f00090d66897fff89577a035287}\label{ldap_8php_af4dd2f00090d66897fff89577a035287}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_NETWORK\_TIMEOUT@{LDAP\_OPT\_NETWORK\_TIMEOUT}}
+\index{LDAP\_OPT\_NETWORK\_TIMEOUT@{LDAP\_OPT\_NETWORK\_TIMEOUT}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_NETWORK\_TIMEOUT}{LDAP\_OPT\_NETWORK\_TIMEOUT}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+I\+M\+E\+O\+UT 20485}
+
+Option for {\bfseries{ldap\+\_\+set\+\_\+option}} to allow setting network timeout. (Available as of P\+HP 5.\+3.\+0) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ldap.\+constants.\+php}}\mbox{\Hypertarget{ldap_8php_a513fb767530951b6f135abfa3e22f9fa}\label{ldap_8php_a513fb767530951b6f135abfa3e22f9fa}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_PROTOCOL\_VERSION@{LDAP\_OPT\_PROTOCOL\_VERSION}}
+\index{LDAP\_OPT\_PROTOCOL\_VERSION@{LDAP\_OPT\_PROTOCOL\_VERSION}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_PROTOCOL\_VERSION}{LDAP\_OPT\_PROTOCOL\_VERSION}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+V\+E\+R\+S\+I\+ON 17}
+
+Specifies the L\+D\+AP protocol to be used (V2 or V3). \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ldap.\+constants.\+php}}\mbox{\Hypertarget{ldap_8php_aa4c4d981241caa5edcf616c4b0bc67e1}\label{ldap_8php_aa4c4d981241caa5edcf616c4b0bc67e1}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_REFERRALS@{LDAP\_OPT\_REFERRALS}}
+\index{LDAP\_OPT\_REFERRALS@{LDAP\_OPT\_REFERRALS}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_REFERRALS}{LDAP\_OPT\_REFERRALS}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+R\+E\+F\+E\+R\+R\+A\+LS 8}
+
+Specifies whether to automatically follow referrals returned by the L\+D\+AP server. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ldap.\+constants.\+php}}\mbox{\Hypertarget{ldap_8php_a6a364d599d0b599dd038917eb86f653a}\label{ldap_8php_a6a364d599d0b599dd038917eb86f653a}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_RESTART@{LDAP\_OPT\_RESTART}}
+\index{LDAP\_OPT\_RESTART@{LDAP\_OPT\_RESTART}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_RESTART}{LDAP\_OPT\_RESTART}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+R\+E\+S\+T\+A\+RT 9}
+
+\mbox{\Hypertarget{ldap_8php_aae2a51708032317b160b10aba172a5b0}\label{ldap_8php_aae2a51708032317b160b10aba172a5b0}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_SERVER\_CONTROLS@{LDAP\_OPT\_SERVER\_CONTROLS}}
+\index{LDAP\_OPT\_SERVER\_CONTROLS@{LDAP\_OPT\_SERVER\_CONTROLS}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_SERVER\_CONTROLS}{LDAP\_OPT\_SERVER\_CONTROLS}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+C\+O\+N\+T\+R\+O\+LS 18}
+
+Specifies a default list of server controls to be sent with each request. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ldap.\+constants.\+php}}\mbox{\Hypertarget{ldap_8php_a53e2c4b506cb82d34bb51258115a74d0}\label{ldap_8php_a53e2c4b506cb82d34bb51258115a74d0}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_SIZELIMIT@{LDAP\_OPT\_SIZELIMIT}}
+\index{LDAP\_OPT\_SIZELIMIT@{LDAP\_OPT\_SIZELIMIT}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_SIZELIMIT}{LDAP\_OPT\_SIZELIMIT}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+S\+I\+Z\+E\+L\+I\+M\+IT 3}
+
+Specifies the maximum number of entries that can be returned on a search operation. 
+
+The actual size limit for operations is also bounded by the server\textquotesingle{}s configured maximum number of return entries. The lesser of these two settings is the actual size limit. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ldap.\+constants.\+php}}\mbox{\Hypertarget{ldap_8php_a90c57ec97f1f323285dcaa9b036af4c5}\label{ldap_8php_a90c57ec97f1f323285dcaa9b036af4c5}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_TIMELIMIT@{LDAP\_OPT\_TIMELIMIT}}
+\index{LDAP\_OPT\_TIMELIMIT@{LDAP\_OPT\_TIMELIMIT}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_TIMELIMIT}{LDAP\_OPT\_TIMELIMIT}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+T\+I\+M\+E\+L\+I\+M\+IT 4}
+
+Specifies the number of seconds to wait for search results. The actual time limit for operations is also bounded by the server\textquotesingle{}s configured maximum time. The lesser of these two settings is the actual time limit. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/ldap.\+constants.\+php}}\mbox{\Hypertarget{ldap_8php_aa4987ae6d8de8401941815f5c88d0f02}\label{ldap_8php_aa4987ae6d8de8401941815f5c88d0f02}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_TIMEOUT@{LDAP\_OPT\_TIMEOUT}}
+\index{LDAP\_OPT\_TIMEOUT@{LDAP\_OPT\_TIMEOUT}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_TIMEOUT}{LDAP\_OPT\_TIMEOUT}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+T\+I\+M\+E\+O\+UT 20482}
+
+\mbox{\Hypertarget{ldap_8php_a23b22030c57fb1e1ff0c19dad131ddd0}\label{ldap_8php_a23b22030c57fb1e1ff0c19dad131ddd0}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_KEEPALIVE\_IDLE@{LDAP\_OPT\_X\_KEEPALIVE\_IDLE}}
+\index{LDAP\_OPT\_X\_KEEPALIVE\_IDLE@{LDAP\_OPT\_X\_KEEPALIVE\_IDLE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_KEEPALIVE\_IDLE}{LDAP\_OPT\_X\_KEEPALIVE\_IDLE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+K\+E\+E\+P\+A\+L\+I\+V\+E\+\_\+\+I\+D\+LE 25344}
+
+\mbox{\Hypertarget{ldap_8php_a5a275e62b9e9de7ce16057097b151455}\label{ldap_8php_a5a275e62b9e9de7ce16057097b151455}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_KEEPALIVE\_INTERVAL@{LDAP\_OPT\_X\_KEEPALIVE\_INTERVAL}}
+\index{LDAP\_OPT\_X\_KEEPALIVE\_INTERVAL@{LDAP\_OPT\_X\_KEEPALIVE\_INTERVAL}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_KEEPALIVE\_INTERVAL}{LDAP\_OPT\_X\_KEEPALIVE\_INTERVAL}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+K\+E\+E\+P\+A\+L\+I\+V\+E\+\_\+\+I\+N\+T\+E\+R\+V\+AL 25346}
+
+\mbox{\Hypertarget{ldap_8php_ada80831a85899ca7c1b1e34e1a9ea0c0}\label{ldap_8php_ada80831a85899ca7c1b1e34e1a9ea0c0}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_KEEPALIVE\_PROBES@{LDAP\_OPT\_X\_KEEPALIVE\_PROBES}}
+\index{LDAP\_OPT\_X\_KEEPALIVE\_PROBES@{LDAP\_OPT\_X\_KEEPALIVE\_PROBES}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_KEEPALIVE\_PROBES}{LDAP\_OPT\_X\_KEEPALIVE\_PROBES}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+K\+E\+E\+P\+A\+L\+I\+V\+E\+\_\+\+P\+R\+O\+B\+ES 25345}
+
+\mbox{\Hypertarget{ldap_8php_aa0f2b522a884a53fc88be647571a1c4a}\label{ldap_8php_aa0f2b522a884a53fc88be647571a1c4a}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_SASL\_AUTHCID@{LDAP\_OPT\_X\_SASL\_AUTHCID}}
+\index{LDAP\_OPT\_X\_SASL\_AUTHCID@{LDAP\_OPT\_X\_SASL\_AUTHCID}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_SASL\_AUTHCID}{LDAP\_OPT\_X\_SASL\_AUTHCID}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+S\+A\+S\+L\+\_\+\+A\+U\+T\+H\+C\+ID 24834}
+
+\mbox{\Hypertarget{ldap_8php_ae27193cd5693fbadfa8e1f8fdc31a672}\label{ldap_8php_ae27193cd5693fbadfa8e1f8fdc31a672}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_SASL\_AUTHZID@{LDAP\_OPT\_X\_SASL\_AUTHZID}}
+\index{LDAP\_OPT\_X\_SASL\_AUTHZID@{LDAP\_OPT\_X\_SASL\_AUTHZID}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_SASL\_AUTHZID}{LDAP\_OPT\_X\_SASL\_AUTHZID}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+S\+A\+S\+L\+\_\+\+A\+U\+T\+H\+Z\+ID 24835}
+
+\mbox{\Hypertarget{ldap_8php_a6baf9e5ca97b703284138436e95c4513}\label{ldap_8php_a6baf9e5ca97b703284138436e95c4513}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_SASL\_MECH@{LDAP\_OPT\_X\_SASL\_MECH}}
+\index{LDAP\_OPT\_X\_SASL\_MECH@{LDAP\_OPT\_X\_SASL\_MECH}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_SASL\_MECH}{LDAP\_OPT\_X\_SASL\_MECH}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+S\+A\+S\+L\+\_\+\+M\+E\+CH 24832}
+
+\mbox{\Hypertarget{ldap_8php_a9a897b68f0159b7aaeda91471955ca22}\label{ldap_8php_a9a897b68f0159b7aaeda91471955ca22}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_SASL\_NOCANON@{LDAP\_OPT\_X\_SASL\_NOCANON}}
+\index{LDAP\_OPT\_X\_SASL\_NOCANON@{LDAP\_OPT\_X\_SASL\_NOCANON}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_SASL\_NOCANON}{LDAP\_OPT\_X\_SASL\_NOCANON}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+S\+A\+S\+L\+\_\+\+N\+O\+C\+A\+N\+ON 24843}
+
+\mbox{\Hypertarget{ldap_8php_a5fecf0276a6bed55b79d7eff27fcb74c}\label{ldap_8php_a5fecf0276a6bed55b79d7eff27fcb74c}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_SASL\_REALM@{LDAP\_OPT\_X\_SASL\_REALM}}
+\index{LDAP\_OPT\_X\_SASL\_REALM@{LDAP\_OPT\_X\_SASL\_REALM}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_SASL\_REALM}{LDAP\_OPT\_X\_SASL\_REALM}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+S\+A\+S\+L\+\_\+\+R\+E\+A\+LM 24833}
+
+\mbox{\Hypertarget{ldap_8php_ab923273e8d7ed6a0d0037c47e5f4af7f}\label{ldap_8php_ab923273e8d7ed6a0d0037c47e5f4af7f}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_SASL\_USERNAME@{LDAP\_OPT\_X\_SASL\_USERNAME}}
+\index{LDAP\_OPT\_X\_SASL\_USERNAME@{LDAP\_OPT\_X\_SASL\_USERNAME}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_SASL\_USERNAME}{LDAP\_OPT\_X\_SASL\_USERNAME}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+S\+A\+S\+L\+\_\+\+U\+S\+E\+R\+N\+A\+ME 24844}
+
+\mbox{\Hypertarget{ldap_8php_a30ab0dbb423a7173e09aedc45b01670e}\label{ldap_8php_a30ab0dbb423a7173e09aedc45b01670e}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_ALLOW@{LDAP\_OPT\_X\_TLS\_ALLOW}}
+\index{LDAP\_OPT\_X\_TLS\_ALLOW@{LDAP\_OPT\_X\_TLS\_ALLOW}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_ALLOW}{LDAP\_OPT\_X\_TLS\_ALLOW}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+A\+L\+L\+OW 3}
+
+\mbox{\Hypertarget{ldap_8php_a37b8910e1721897ccaf214840d682fa9}\label{ldap_8php_a37b8910e1721897ccaf214840d682fa9}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_CACERTDIR@{LDAP\_OPT\_X\_TLS\_CACERTDIR}}
+\index{LDAP\_OPT\_X\_TLS\_CACERTDIR@{LDAP\_OPT\_X\_TLS\_CACERTDIR}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_CACERTDIR}{LDAP\_OPT\_X\_TLS\_CACERTDIR}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+A\+C\+E\+R\+T\+D\+IR 24579}
+
+Specifies the path of the directory containing CA certificates. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+1 }}\mbox{\Hypertarget{ldap_8php_a0f7c046237de016fa72093f57ab890cb}\label{ldap_8php_a0f7c046237de016fa72093f57ab890cb}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_CACERTFILE@{LDAP\_OPT\_X\_TLS\_CACERTFILE}}
+\index{LDAP\_OPT\_X\_TLS\_CACERTFILE@{LDAP\_OPT\_X\_TLS\_CACERTFILE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_CACERTFILE}{LDAP\_OPT\_X\_TLS\_CACERTFILE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+A\+C\+E\+R\+T\+F\+I\+LE 24578}
+
+Specifies the full-\/path of the CA certificate file. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{7.\+1 }}\mbox{\Hypertarget{ldap_8php_ac56857f7a265ff0d73a29a349d8a4971}\label{ldap_8php_ac56857f7a265ff0d73a29a349d8a4971}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_CERTFILE@{LDAP\_OPT\_X\_TLS\_CERTFILE}}
+\index{LDAP\_OPT\_X\_TLS\_CERTFILE@{LDAP\_OPT\_X\_TLS\_CERTFILE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_CERTFILE}{LDAP\_OPT\_X\_TLS\_CERTFILE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+E\+R\+T\+F\+I\+LE 24580}
+
+\mbox{\Hypertarget{ldap_8php_a569bac4e3dc53bc4ab3243ca2feac31f}\label{ldap_8php_a569bac4e3dc53bc4ab3243ca2feac31f}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_CIPHER\_SUITE@{LDAP\_OPT\_X\_TLS\_CIPHER\_SUITE}}
+\index{LDAP\_OPT\_X\_TLS\_CIPHER\_SUITE@{LDAP\_OPT\_X\_TLS\_CIPHER\_SUITE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_CIPHER\_SUITE}{LDAP\_OPT\_X\_TLS\_CIPHER\_SUITE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+I\+P\+H\+E\+R\+\_\+\+S\+U\+I\+TE 24584}
+
+\mbox{\Hypertarget{ldap_8php_ade23eca9e87c641725cbbb56ec2111d2}\label{ldap_8php_ade23eca9e87c641725cbbb56ec2111d2}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_CRL\_ALL@{LDAP\_OPT\_X\_TLS\_CRL\_ALL}}
+\index{LDAP\_OPT\_X\_TLS\_CRL\_ALL@{LDAP\_OPT\_X\_TLS\_CRL\_ALL}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_CRL\_ALL}{LDAP\_OPT\_X\_TLS\_CRL\_ALL}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+R\+L\+\_\+\+A\+LL 2}
+
+\mbox{\Hypertarget{ldap_8php_ab4faa1fa11f68b0b316428e4b47616f2}\label{ldap_8php_ab4faa1fa11f68b0b316428e4b47616f2}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_CRL\_NONE@{LDAP\_OPT\_X\_TLS\_CRL\_NONE}}
+\index{LDAP\_OPT\_X\_TLS\_CRL\_NONE@{LDAP\_OPT\_X\_TLS\_CRL\_NONE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_CRL\_NONE}{LDAP\_OPT\_X\_TLS\_CRL\_NONE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+R\+L\+\_\+\+N\+O\+NE 0}
+
+\mbox{\Hypertarget{ldap_8php_a633e13ca0393fec15242005d84b7d6e4}\label{ldap_8php_a633e13ca0393fec15242005d84b7d6e4}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_CRL\_PEER@{LDAP\_OPT\_X\_TLS\_CRL\_PEER}}
+\index{LDAP\_OPT\_X\_TLS\_CRL\_PEER@{LDAP\_OPT\_X\_TLS\_CRL\_PEER}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_CRL\_PEER}{LDAP\_OPT\_X\_TLS\_CRL\_PEER}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+R\+L\+\_\+\+P\+E\+ER 1}
+
+\mbox{\Hypertarget{ldap_8php_af420f0404bf3334a715cdae57fc29dea}\label{ldap_8php_af420f0404bf3334a715cdae57fc29dea}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_CRLCHECK@{LDAP\_OPT\_X\_TLS\_CRLCHECK}}
+\index{LDAP\_OPT\_X\_TLS\_CRLCHECK@{LDAP\_OPT\_X\_TLS\_CRLCHECK}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_CRLCHECK}{LDAP\_OPT\_X\_TLS\_CRLCHECK}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+R\+L\+C\+H\+E\+CK 24587}
+
+\mbox{\Hypertarget{ldap_8php_aa7128ea0028029290586b7faf746cc42}\label{ldap_8php_aa7128ea0028029290586b7faf746cc42}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_CRLFILE@{LDAP\_OPT\_X\_TLS\_CRLFILE}}
+\index{LDAP\_OPT\_X\_TLS\_CRLFILE@{LDAP\_OPT\_X\_TLS\_CRLFILE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_CRLFILE}{LDAP\_OPT\_X\_TLS\_CRLFILE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+C\+R\+L\+F\+I\+LE 24592}
+
+\mbox{\Hypertarget{ldap_8php_a5a26497f6043b9456cc764dda7c37dfe}\label{ldap_8php_a5a26497f6043b9456cc764dda7c37dfe}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_DEMAND@{LDAP\_OPT\_X\_TLS\_DEMAND}}
+\index{LDAP\_OPT\_X\_TLS\_DEMAND@{LDAP\_OPT\_X\_TLS\_DEMAND}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_DEMAND}{LDAP\_OPT\_X\_TLS\_DEMAND}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+D\+E\+M\+A\+ND 2}
+
+\mbox{\Hypertarget{ldap_8php_a00a6ba0183bfd46a37b40916a69897a5}\label{ldap_8php_a00a6ba0183bfd46a37b40916a69897a5}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_DHFILE@{LDAP\_OPT\_X\_TLS\_DHFILE}}
+\index{LDAP\_OPT\_X\_TLS\_DHFILE@{LDAP\_OPT\_X\_TLS\_DHFILE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_DHFILE}{LDAP\_OPT\_X\_TLS\_DHFILE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+D\+H\+F\+I\+LE 24590}
+
+\mbox{\Hypertarget{ldap_8php_a43ee8c5e46bfcfc98eb0398585a3c482}\label{ldap_8php_a43ee8c5e46bfcfc98eb0398585a3c482}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_HARD@{LDAP\_OPT\_X\_TLS\_HARD}}
+\index{LDAP\_OPT\_X\_TLS\_HARD@{LDAP\_OPT\_X\_TLS\_HARD}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_HARD}{LDAP\_OPT\_X\_TLS\_HARD}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+H\+A\+RD 1}
+
+\mbox{\Hypertarget{ldap_8php_a613408cbacc7c3c259fe342611b45def}\label{ldap_8php_a613408cbacc7c3c259fe342611b45def}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_KEYFILE@{LDAP\_OPT\_X\_TLS\_KEYFILE}}
+\index{LDAP\_OPT\_X\_TLS\_KEYFILE@{LDAP\_OPT\_X\_TLS\_KEYFILE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_KEYFILE}{LDAP\_OPT\_X\_TLS\_KEYFILE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+K\+E\+Y\+F\+I\+LE 24581}
+
+\mbox{\Hypertarget{ldap_8php_ac7405cf6537bd0563b97e1b383073e42}\label{ldap_8php_ac7405cf6537bd0563b97e1b383073e42}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_NEVER@{LDAP\_OPT\_X\_TLS\_NEVER}}
+\index{LDAP\_OPT\_X\_TLS\_NEVER@{LDAP\_OPT\_X\_TLS\_NEVER}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_NEVER}{LDAP\_OPT\_X\_TLS\_NEVER}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+N\+E\+V\+ER 0}
+
+\mbox{\Hypertarget{ldap_8php_a903f8471d3ca2e12dfea3a40d04916bb}\label{ldap_8php_a903f8471d3ca2e12dfea3a40d04916bb}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_PACKAGE@{LDAP\_OPT\_X\_TLS\_PACKAGE}}
+\index{LDAP\_OPT\_X\_TLS\_PACKAGE@{LDAP\_OPT\_X\_TLS\_PACKAGE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_PACKAGE}{LDAP\_OPT\_X\_TLS\_PACKAGE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+P\+A\+C\+K\+A\+GE 24593}
+
+\mbox{\Hypertarget{ldap_8php_aabd4085bf326fa86ddedbeb6cee6cb78}\label{ldap_8php_aabd4085bf326fa86ddedbeb6cee6cb78}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_PROTOCOL\_MIN@{LDAP\_OPT\_X\_TLS\_PROTOCOL\_MIN}}
+\index{LDAP\_OPT\_X\_TLS\_PROTOCOL\_MIN@{LDAP\_OPT\_X\_TLS\_PROTOCOL\_MIN}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_PROTOCOL\_MIN}{LDAP\_OPT\_X\_TLS\_PROTOCOL\_MIN}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+IN 24583}
+
+\mbox{\Hypertarget{ldap_8php_a841fb48e0e50803024dc5f20d914a53e}\label{ldap_8php_a841fb48e0e50803024dc5f20d914a53e}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_PROTOCOL\_SSL2@{LDAP\_OPT\_X\_TLS\_PROTOCOL\_SSL2}}
+\index{LDAP\_OPT\_X\_TLS\_PROTOCOL\_SSL2@{LDAP\_OPT\_X\_TLS\_PROTOCOL\_SSL2}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_PROTOCOL\_SSL2}{LDAP\_OPT\_X\_TLS\_PROTOCOL\_SSL2}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+S\+S\+L2 512}
+
+\mbox{\Hypertarget{ldap_8php_aad574106c0a98139f78c309feb288558}\label{ldap_8php_aad574106c0a98139f78c309feb288558}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_PROTOCOL\_SSL3@{LDAP\_OPT\_X\_TLS\_PROTOCOL\_SSL3}}
+\index{LDAP\_OPT\_X\_TLS\_PROTOCOL\_SSL3@{LDAP\_OPT\_X\_TLS\_PROTOCOL\_SSL3}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_PROTOCOL\_SSL3}{LDAP\_OPT\_X\_TLS\_PROTOCOL\_SSL3}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+S\+S\+L3 768}
+
+\mbox{\Hypertarget{ldap_8php_ac110888a81696ff8240f68fc451431dd}\label{ldap_8php_ac110888a81696ff8240f68fc451431dd}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_0@{LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_0}}
+\index{LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_0@{LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_0}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_0}{LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_0}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+T\+L\+S1\+\_\+0 769}
+
+\mbox{\Hypertarget{ldap_8php_a4f9fcf2487990e5faec1bde7b9059e38}\label{ldap_8php_a4f9fcf2487990e5faec1bde7b9059e38}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_1@{LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_1}}
+\index{LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_1@{LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_1}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_1}{LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_1}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+T\+L\+S1\+\_\+1 770}
+
+\mbox{\Hypertarget{ldap_8php_a5987078a1810b1ccedaa5715d1530be5}\label{ldap_8php_a5987078a1810b1ccedaa5715d1530be5}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_2@{LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_2}}
+\index{LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_2@{LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_2}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_2}{LDAP\_OPT\_X\_TLS\_PROTOCOL\_TLS1\_2}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+T\+L\+S1\+\_\+2 771}
+
+\mbox{\Hypertarget{ldap_8php_ad1bd98787170e6400ec9dc529cf8adfe}\label{ldap_8php_ad1bd98787170e6400ec9dc529cf8adfe}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_RANDOM\_FILE@{LDAP\_OPT\_X\_TLS\_RANDOM\_FILE}}
+\index{LDAP\_OPT\_X\_TLS\_RANDOM\_FILE@{LDAP\_OPT\_X\_TLS\_RANDOM\_FILE}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_RANDOM\_FILE}{LDAP\_OPT\_X\_TLS\_RANDOM\_FILE}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+R\+A\+N\+D\+O\+M\+\_\+\+F\+I\+LE 24585}
+
+\mbox{\Hypertarget{ldap_8php_a4ba61f22551089ae58d7fa57e6b6d6fa}\label{ldap_8php_a4ba61f22551089ae58d7fa57e6b6d6fa}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_REQUIRE\_CERT@{LDAP\_OPT\_X\_TLS\_REQUIRE\_CERT}}
+\index{LDAP\_OPT\_X\_TLS\_REQUIRE\_CERT@{LDAP\_OPT\_X\_TLS\_REQUIRE\_CERT}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_REQUIRE\_CERT}{LDAP\_OPT\_X\_TLS\_REQUIRE\_CERT}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+\_\+\+C\+E\+RT 24582}
+
+\mbox{\Hypertarget{ldap_8php_a38ec889c4dfb93d80b89e70f75c16c44}\label{ldap_8php_a38ec889c4dfb93d80b89e70f75c16c44}} 
+\index{ldap.php@{ldap.php}!LDAP\_OPT\_X\_TLS\_TRY@{LDAP\_OPT\_X\_TLS\_TRY}}
+\index{LDAP\_OPT\_X\_TLS\_TRY@{LDAP\_OPT\_X\_TLS\_TRY}!ldap.php@{ldap.php}}
+\doxysubsubsection{\texorpdfstring{LDAP\_OPT\_X\_TLS\_TRY}{LDAP\_OPT\_X\_TLS\_TRY}}
+{\footnotesize\ttfamily const L\+D\+A\+P\+\_\+\+O\+P\+T\+\_\+\+X\+\_\+\+T\+L\+S\+\_\+\+T\+RY 4}
+

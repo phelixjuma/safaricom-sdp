@@ -1,0 +1,204 @@
+.TH "vendor/jetbrains/phpstorm-stubs/oauth/oauth.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/oauth/oauth.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBOAuth\fP"
+.br
+.ti -1c
+.RI "class \fBOAuthException\fP"
+.br
+.ti -1c
+.RI "class \fBOAuthProvider\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBoauth_get_sbs\fP ($http_method, $uri, $request_parameters=array())"
+.br
+.ti -1c
+.RI "\fBoauth_urlencode\fP ($uri)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBOAUTH_SIG_METHOD_RSASHA1\fP 'RSA\-SHA1'"
+.br
+.ti -1c
+.RI "const \fBOAUTH_SIG_METHOD_HMACSHA1\fP 'HMAC\-SHA1'"
+.br
+.ti -1c
+.RI "const \fBOAUTH_SIG_METHOD_HMACSHA256\fP 'HMAC\-SHA256'"
+.br
+.ti -1c
+.RI "const \fBOAUTH_AUTH_TYPE_AUTHORIZATION\fP 3"
+.br
+.ti -1c
+.RI "const \fBOAUTH_AUTH_TYPE_NONE\fP 2"
+.br
+.ti -1c
+.RI "const \fBOAUTH_AUTH_TYPE_URI\fP 1"
+.br
+.ti -1c
+.RI "const \fBOAUTH_AUTH_TYPE_FORM\fP 2"
+.br
+.ti -1c
+.RI "const \fBOAUTH_HTTP_METHOD_GET\fP 'GET'"
+.br
+.ti -1c
+.RI "const \fBOAUTH_HTTP_METHOD_POST\fP 'POST'"
+.br
+.ti -1c
+.RI "const \fBOAUTH_HTTP_METHOD_PUT\fP 'PUT'"
+.br
+.ti -1c
+.RI "const \fBOAUTH_HTTP_METHOD_HEAD\fP 'HEAD'"
+.br
+.ti -1c
+.RI "const \fBOAUTH_HTTP_METHOD_DELETE\fP 'DELETE'"
+.br
+.ti -1c
+.RI "const \fBOAUTH_REQENGINE_STREAMS\fP 1"
+.br
+.ti -1c
+.RI "const \fBOAUTH_REQENGINE_CURL\fP 2"
+.br
+.ti -1c
+.RI "const \fBOAUTH_OK\fP 0"
+.br
+.ti -1c
+.RI "const \fBOAUTH_BAD_NONCE\fP 4"
+.br
+.ti -1c
+.RI "const \fBOAUTH_BAD_TIMESTAMP\fP 8"
+.br
+.ti -1c
+.RI "const \fBOAUTH_CONSUMER_KEY_UNKNOWN\fP 16"
+.br
+.ti -1c
+.RI "const \fBOAUTH_CONSUMER_KEY_REFUSED\fP 32"
+.br
+.ti -1c
+.RI "const \fBOAUTH_INVALID_SIGNATURE\fP 64"
+.br
+.ti -1c
+.RI "const \fBOAUTH_TOKEN_USED\fP 128"
+.br
+.ti -1c
+.RI "const \fBOAUTH_TOKEN_EXPIRED\fP 256"
+.br
+.ti -1c
+.RI "const \fBOAUTH_TOKEN_REJECTED\fP 1024"
+.br
+.ti -1c
+.RI "const \fBOAUTH_VERIFIER_INVALID\fP 2048"
+.br
+.ti -1c
+.RI "const \fBOAUTH_PARAMETER_ABSENT\fP 4096"
+.br
+.ti -1c
+.RI "const \fBOAUTH_SIGNATURE_METHOD_REJECTED\fP 8192"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "oauth_get_sbs ( $http_method,  $uri,  $request_parameters = \fCarray()\fP)"
+Generate a Signature Base String
+.PP
+\fBParameters\fP
+.RS 4
+\fI$http_method\fP 
+.br
+\fI$uri\fP 
+.br
+\fI$request_parameters\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "oauth_urlencode ( $uri)"
+Encode a URI to RFC 3986
+.PP
+\fBParameters\fP
+.RS 4
+\fI$uri\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const OAUTH_AUTH_TYPE_AUTHORIZATION 3"
+
+.SS "const OAUTH_AUTH_TYPE_FORM 2"
+
+.SS "const OAUTH_AUTH_TYPE_NONE 2"
+
+.SS "const OAUTH_AUTH_TYPE_URI 1"
+
+.SS "const OAUTH_BAD_NONCE 4"
+
+.SS "const OAUTH_BAD_TIMESTAMP 8"
+
+.SS "const OAUTH_CONSUMER_KEY_REFUSED 32"
+
+.SS "const OAUTH_CONSUMER_KEY_UNKNOWN 16"
+
+.SS "const OAUTH_HTTP_METHOD_DELETE 'DELETE'"
+
+.SS "const OAUTH_HTTP_METHOD_GET 'GET'"
+
+.SS "const OAUTH_HTTP_METHOD_HEAD 'HEAD'"
+
+.SS "const OAUTH_HTTP_METHOD_POST 'POST'"
+
+.SS "const OAUTH_HTTP_METHOD_PUT 'PUT'"
+
+.SS "const OAUTH_INVALID_SIGNATURE 64"
+
+.SS "const OAUTH_OK 0"
+
+.SS "const OAUTH_PARAMETER_ABSENT 4096"
+
+.SS "const OAUTH_REQENGINE_CURL 2"
+
+.SS "const OAUTH_REQENGINE_STREAMS 1"
+
+.SS "const OAUTH_SIG_METHOD_HMACSHA1 'HMAC\-SHA1'"
+
+.SS "const OAUTH_SIG_METHOD_HMACSHA256 'HMAC\-SHA256'"
+
+.SS "const OAUTH_SIG_METHOD_RSASHA1 'RSA\-SHA1'"
+
+.SS "const OAUTH_SIGNATURE_METHOD_REJECTED 8192"
+
+.SS "const OAUTH_TOKEN_EXPIRED 256"
+
+.SS "const OAUTH_TOKEN_REJECTED 1024"
+
+.SS "const OAUTH_TOKEN_USED 128"
+
+.SS "const OAUTH_VERIFIER_INVALID 2048"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

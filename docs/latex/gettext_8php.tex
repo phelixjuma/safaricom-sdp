@@ -1,0 +1,233 @@
+\hypertarget{gettext_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/gettext/gettext.php File Reference}
+\label{gettext_8php}\index{vendor/jetbrains/phpstorm-\/stubs/gettext/gettext.php@{vendor/jetbrains/phpstorm-\/stubs/gettext/gettext.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{gettext_8php_a4cd6f494ff29355a27f5f9c9fa9f01fb}{textdomain}} (\$text\+\_\+domain)
+\item 
+\mbox{\hyperlink{gettext_8php_ad0805366821acb94e51de79849c97e4c}{gettext}} (\$message)
+\item 
+\mbox{\hyperlink{gettext_8php_a846b230f82cfd260aff26f4287060106}{\+\_\+}} (\$message)
+\item 
+\mbox{\hyperlink{gettext_8php_ae59035b676fd89d328ac82c7e0d20603}{dgettext}} (\$domain, \$message)
+\item 
+\mbox{\hyperlink{gettext_8php_a9b367ba090d05cadc21b90c426405835}{dcgettext}} (\$domain, \$message, \$category)
+\item 
+\mbox{\hyperlink{gettext_8php_aa2e110ac7cf2ae147abab8ac324757e7}{bindtextdomain}} (\$domain, \$directory)
+\item 
+\mbox{\hyperlink{gettext_8php_a4b3a0c429b9a1489d00bc5d146b485c1}{ngettext}} (\$msgid1, \$msgid2, \$\mbox{\hyperlink{application__run1_8txt_abbb4eb55adebaf9468df11cca417f770}{n}})
+\item 
+\mbox{\hyperlink{gettext_8php_a0fdc78f2f152506a1026fbd0060c1953}{dngettext}} (\$domain, \$msgid1, \$msgid2, \$\mbox{\hyperlink{application__run1_8txt_abbb4eb55adebaf9468df11cca417f770}{n}})
+\item 
+\mbox{\hyperlink{gettext_8php_a808c03308508a3a730ac9ca307bd301c}{dcngettext}} (\$domain, \$msgid1, \$msgid2, \$\mbox{\hyperlink{application__run1_8txt_abbb4eb55adebaf9468df11cca417f770}{n}}, \$category)
+\item 
+\mbox{\hyperlink{gettext_8php_adc71c07dd5ea25e73e449de52e906e05}{bind\+\_\+textdomain\+\_\+codeset}} (\$domain, \$codeset)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{gettext_8php_a846b230f82cfd260aff26f4287060106}\label{gettext_8php_a846b230f82cfd260aff26f4287060106}} 
+\index{gettext.php@{gettext.php}!\_@{\_}}
+\index{\_@{\_}!gettext.php@{gettext.php}}
+\doxysubsubsection{\texorpdfstring{\_()}{\_()}}
+{\footnotesize\ttfamily \+\_\+ (\begin{DoxyParamCaption}\item[{}]{\$message }\end{DoxyParamCaption})}
+
+Lookup a message in the current domain \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$message }} The message being translated. 
+
+\begin{DoxyReturn}{Returns}
+string a translated string if one is found in the translation table, or the submitted message if not found. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{gettext_8php_adc71c07dd5ea25e73e449de52e906e05}\label{gettext_8php_adc71c07dd5ea25e73e449de52e906e05}} 
+\index{gettext.php@{gettext.php}!bind\_textdomain\_codeset@{bind\_textdomain\_codeset}}
+\index{bind\_textdomain\_codeset@{bind\_textdomain\_codeset}!gettext.php@{gettext.php}}
+\doxysubsubsection{\texorpdfstring{bind\_textdomain\_codeset()}{bind\_textdomain\_codeset()}}
+{\footnotesize\ttfamily bind\+\_\+textdomain\+\_\+codeset (\begin{DoxyParamCaption}\item[{}]{\$domain,  }\item[{}]{\$codeset }\end{DoxyParamCaption})}
+
+Specify the character encoding in which the messages from the D\+O\+M\+A\+IN message catalog will be returned \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$domain }} The domain 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$codeset} & \\
+\hline
+\end{DoxyParams}
+The code set 
+
+\begin{DoxyReturn}{Returns}
+string \mbox{\hyperlink{class_a}{A}} string on success. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{gettext_8php_aa2e110ac7cf2ae147abab8ac324757e7}\label{gettext_8php_aa2e110ac7cf2ae147abab8ac324757e7}} 
+\index{gettext.php@{gettext.php}!bindtextdomain@{bindtextdomain}}
+\index{bindtextdomain@{bindtextdomain}!gettext.php@{gettext.php}}
+\doxysubsubsection{\texorpdfstring{bindtextdomain()}{bindtextdomain()}}
+{\footnotesize\ttfamily bindtextdomain (\begin{DoxyParamCaption}\item[{}]{\$domain,  }\item[{}]{\$directory }\end{DoxyParamCaption})}
+
+Sets the path for a domain \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$domain }} The domain 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+\end{DoxyParams}
+The directory path 
+
+\begin{DoxyReturn}{Returns}
+string The full pathname for the {\itshape domain} currently being set. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{gettext_8php_a9b367ba090d05cadc21b90c426405835}\label{gettext_8php_a9b367ba090d05cadc21b90c426405835}} 
+\index{gettext.php@{gettext.php}!dcgettext@{dcgettext}}
+\index{dcgettext@{dcgettext}!gettext.php@{gettext.php}}
+\doxysubsubsection{\texorpdfstring{dcgettext()}{dcgettext()}}
+{\footnotesize\ttfamily dcgettext (\begin{DoxyParamCaption}\item[{}]{\$domain,  }\item[{}]{\$message,  }\item[{}]{\$category }\end{DoxyParamCaption})}
+
+Overrides the domain for a single lookup \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$domain }} The domain 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+The message 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$category} & \\
+\hline
+\end{DoxyParams}
+The category 
+
+\begin{DoxyReturn}{Returns}
+string \mbox{\hyperlink{class_a}{A}} string on success. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{gettext_8php_a808c03308508a3a730ac9ca307bd301c}\label{gettext_8php_a808c03308508a3a730ac9ca307bd301c}} 
+\index{gettext.php@{gettext.php}!dcngettext@{dcngettext}}
+\index{dcngettext@{dcngettext}!gettext.php@{gettext.php}}
+\doxysubsubsection{\texorpdfstring{dcngettext()}{dcngettext()}}
+{\footnotesize\ttfamily dcngettext (\begin{DoxyParamCaption}\item[{}]{\$domain,  }\item[{}]{\$msgid1,  }\item[{}]{\$msgid2,  }\item[{}]{\$n,  }\item[{}]{\$category }\end{DoxyParamCaption})}
+
+Plural version of dcgettext \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$domain }} The domain 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msgid1} & \\
+\hline
+string & {\em \$msgid2} & \\
+\hline
+int & {\em \$n} & \\
+\hline
+int & {\em \$category} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \mbox{\hyperlink{class_a}{A}} string on success. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{gettext_8php_ae59035b676fd89d328ac82c7e0d20603}\label{gettext_8php_ae59035b676fd89d328ac82c7e0d20603}} 
+\index{gettext.php@{gettext.php}!dgettext@{dgettext}}
+\index{dgettext@{dgettext}!gettext.php@{gettext.php}}
+\doxysubsubsection{\texorpdfstring{dgettext()}{dgettext()}}
+{\footnotesize\ttfamily dgettext (\begin{DoxyParamCaption}\item[{}]{\$domain,  }\item[{}]{\$message }\end{DoxyParamCaption})}
+
+Override the current domain \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$domain }} The domain 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+The message 
+
+\begin{DoxyReturn}{Returns}
+string \mbox{\hyperlink{class_a}{A}} string on success. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{gettext_8php_a0fdc78f2f152506a1026fbd0060c1953}\label{gettext_8php_a0fdc78f2f152506a1026fbd0060c1953}} 
+\index{gettext.php@{gettext.php}!dngettext@{dngettext}}
+\index{dngettext@{dngettext}!gettext.php@{gettext.php}}
+\doxysubsubsection{\texorpdfstring{dngettext()}{dngettext()}}
+{\footnotesize\ttfamily dngettext (\begin{DoxyParamCaption}\item[{}]{\$domain,  }\item[{}]{\$msgid1,  }\item[{}]{\$msgid2,  }\item[{}]{\$n }\end{DoxyParamCaption})}
+
+Plural version of dgettext \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$domain }} The domain 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msgid1} & \\
+\hline
+string & {\em \$msgid2} & \\
+\hline
+int & {\em \$n} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \mbox{\hyperlink{class_a}{A}} string on success. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+2 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{gettext_8php_ad0805366821acb94e51de79849c97e4c}\label{gettext_8php_ad0805366821acb94e51de79849c97e4c}} 
+\index{gettext.php@{gettext.php}!gettext@{gettext}}
+\index{gettext@{gettext}!gettext.php@{gettext.php}}
+\doxysubsubsection{\texorpdfstring{gettext()}{gettext()}}
+{\footnotesize\ttfamily gettext (\begin{DoxyParamCaption}\item[{}]{\$message }\end{DoxyParamCaption})}
+
+Lookup a message in the current domain \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$message }} The message being translated. 
+
+\begin{DoxyReturn}{Returns}
+string a translated string if one is found in the translation table, or the submitted message if not found. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{gettext_8php_a4b3a0c429b9a1489d00bc5d146b485c1}\label{gettext_8php_a4b3a0c429b9a1489d00bc5d146b485c1}} 
+\index{gettext.php@{gettext.php}!ngettext@{ngettext}}
+\index{ngettext@{ngettext}!gettext.php@{gettext.php}}
+\doxysubsubsection{\texorpdfstring{ngettext()}{ngettext()}}
+{\footnotesize\ttfamily ngettext (\begin{DoxyParamCaption}\item[{}]{\$msgid1,  }\item[{}]{\$msgid2,  }\item[{}]{\$n }\end{DoxyParamCaption})}
+
+Plural version of gettext \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$msgid1  string \$msgid2  int \$n  string correct plural form of message identified by {\itshape msgid1} and {\itshape msgid2} for count {\itshape n}.  4.\+2  5.\+0 }}\mbox{\Hypertarget{gettext_8php_a4cd6f494ff29355a27f5f9c9fa9f01fb}\label{gettext_8php_a4cd6f494ff29355a27f5f9c9fa9f01fb}} 
+\index{gettext.php@{gettext.php}!textdomain@{textdomain}}
+\index{textdomain@{textdomain}!gettext.php@{gettext.php}}
+\doxysubsubsection{\texorpdfstring{textdomain()}{textdomain()}}
+{\footnotesize\ttfamily textdomain (\begin{DoxyParamCaption}\item[{}]{\$text\+\_\+domain }\end{DoxyParamCaption})}
+
+Sets the default domain \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$text\+\_\+domain }} The new message domain, or {\bfseries{N\+U\+LL}} to get the current setting without changing it 
+
+\begin{DoxyReturn}{Returns}
+string If successful, this function returns the current message domain, after possibly changing it. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}

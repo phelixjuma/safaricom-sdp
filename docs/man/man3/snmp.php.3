@@ -1,0 +1,1440 @@
+.TH "vendor/jetbrains/phpstorm-stubs/snmp/snmp.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/snmp/snmp.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBSNMP\fP"
+.br
+.ti -1c
+.RI "class \fBSNMPException\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsnmpget\fP ($hostname, $community, $object_id, $timeout=1000000, $retries=5)"
+.br
+.ti -1c
+.RI "\fBsnmpgetnext\fP ($host, $community, $object_id, $timeout=1000000, $retries=5)"
+.br
+.ti -1c
+.RI "\fBsnmpwalk\fP ($hostname, $community, $object_id, $timeout=1000000, $retries=5)"
+.br
+.ti -1c
+.RI "\fBsnmprealwalk\fP ($host, $community, $object_id, $timeout=1000000, $retries=5)"
+.br
+.ti -1c
+.RI "\fBsnmpwalkoid\fP ($hostname, $community, $object_id, $timeout=1000000, $retries=5)"
+.br
+.ti -1c
+.RI "\fBsnmpset\fP ($host, $community, $object_id, $type, $value, $timeout=1000000, $retries=5)"
+.br
+.ti -1c
+.RI "\fBsnmp_get_quick_print\fP ()"
+.br
+.ti -1c
+.RI "\fBsnmp_set_quick_print\fP ($quick_print)"
+.br
+.ti -1c
+.RI "\fBsnmp_set_enum_print\fP ($enum_print)"
+.br
+.ti -1c
+.RI "\fBsnmp_set_oid_output_format\fP ($oid_format=\fBSNMP_OID_OUTPUT_MODULE\fP)"
+.br
+.ti -1c
+.RI "\fBsnmp_set_oid_numeric_print\fP ($oid_format)"
+.br
+.ti -1c
+.RI "\fBsnmp2_get\fP ($host, $community, $object_id, $timeout=1000000, $retries=5)"
+.br
+.ti -1c
+.RI "\fBsnmp2_getnext\fP ($host, $community, $object_id, $timeout=1000000, $retries=5)"
+.br
+.ti -1c
+.RI "\fBsnmp2_walk\fP ($host, $community, $object_id, $timeout=1000000, $retries=5)"
+.br
+.ti -1c
+.RI "\fBsnmp2_real_walk\fP ($host, $community, $object_id, $timeout=1000000, $retries=5)"
+.br
+.ti -1c
+.RI "\fBsnmp2_set\fP ($host, $community, $object_id, $type, $value, $timeout=1000000, $retries=5)"
+.br
+.ti -1c
+.RI "\fBsnmp3_get\fP ($host, $sec_name, $sec_level, $auth_protocol, $auth_passphrase, $priv_protocol, $priv_passphrase, $object_id, $timeout=1000000, $retries=5)"
+.br
+.ti -1c
+.RI "\fBsnmp3_getnext\fP ($host, $sec_name, $sec_level, $auth_protocol, $auth_passphrase, $priv_protocol, $priv_passphrase, $object_id, $timeout=1000000, $retries=5)"
+.br
+.ti -1c
+.RI "\fBsnmp3_walk\fP ($host, $sec_name, $sec_level, $auth_protocol, $auth_passphrase, $priv_protocol, $priv_passphrase, $object_id, $timeout=1000000, $retries=5)"
+.br
+.ti -1c
+.RI "\fBsnmp3_real_walk\fP ($host, $sec_name, $sec_level, $auth_protocol, $auth_passphrase, $priv_protocol, $priv_passphrase, $object_id, $timeout=\fBnull\fP, $retries=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBsnmp3_set\fP ($host, $sec_name, $sec_level, $auth_protocol, $auth_passphrase, $priv_protocol, $priv_passphrase, $object_id, $type, $value, $timeout=1000000, $retries=5)"
+.br
+.ti -1c
+.RI "\fBsnmp_set_valueretrieval\fP ($method)"
+.br
+.ti -1c
+.RI "\fBsnmp_get_valueretrieval\fP ()"
+.br
+.ti -1c
+.RI "\fBsnmp_read_mib\fP ($filename)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBSNMP_OID_OUTPUT_SUFFIX\fP 1"
+.br
+.ti -1c
+.RI "const \fBSNMP_OID_OUTPUT_MODULE\fP 2"
+.br
+.ti -1c
+.RI "const \fBSNMP_OID_OUTPUT_FULL\fP 3"
+.br
+.ti -1c
+.RI "const \fBSNMP_OID_OUTPUT_NUMERIC\fP 4"
+.br
+.ti -1c
+.RI "const \fBSNMP_OID_OUTPUT_UCD\fP 5"
+.br
+.ti -1c
+.RI "const \fBSNMP_OID_OUTPUT_NONE\fP 6"
+.br
+.ti -1c
+.RI "const \fBSNMP_VALUE_LIBRARY\fP 0"
+.br
+.ti -1c
+.RI "const \fBSNMP_VALUE_PLAIN\fP 1"
+.br
+.ti -1c
+.RI "const \fBSNMP_VALUE_OBJECT\fP 2"
+.br
+.ti -1c
+.RI "const \fBSNMP_BIT_STR\fP 3"
+.br
+.ti -1c
+.RI "const \fBSNMP_OCTET_STR\fP 4"
+.br
+.ti -1c
+.RI "const \fBSNMP_OPAQUE\fP 68"
+.br
+.ti -1c
+.RI "const \fBSNMP_NULL\fP 5"
+.br
+.ti -1c
+.RI "const \fBSNMP_OBJECT_ID\fP 6"
+.br
+.ti -1c
+.RI "const \fBSNMP_IPADDRESS\fP 64"
+.br
+.ti -1c
+.RI "const \fBSNMP_COUNTER\fP 66"
+.br
+.ti -1c
+.RI "const \fBSNMP_UNSIGNED\fP 66"
+.br
+.ti -1c
+.RI "const \fBSNMP_TIMETICKS\fP 67"
+.br
+.ti -1c
+.RI "const \fBSNMP_UINTEGER\fP 71"
+.br
+.ti -1c
+.RI "const \fBSNMP_INTEGER\fP 2"
+.br
+.ti -1c
+.RI "const \fBSNMP_COUNTER64\fP 70"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "snmp2_get ( $host,  $community,  $object_id,  $timeout = \fC1000000\fP,  $retries = \fC5\fP)"
+Fetch an \fBSNMP\fP object \fBstring $host \fP The \fBSNMP\fP agent\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$community\fP 
+.RE
+.PP
+The read community\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+The \fBSNMP\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false \fBSNMP\fP object value on success or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "snmp2_getnext ( $host,  $community,  $object_id,  $timeout = \fC1000000\fP,  $retries = \fC5\fP)"
+Fetch the \fBSNMP\fP object which follows the given object id \fBstring $host \fP The hostname of the \fBSNMP\fP agent (server)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$community\fP 
+.RE
+.PP
+The read community\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+The \fBSNMP\fP object id which precedes the wanted one\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false \fBSNMP\fP object value on success or \fBFALSE\fP on error\&. In case of an error, an E_WARNING message is shown\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "snmp2_real_walk ( $host,  $community,  $object_id,  $timeout = \fC1000000\fP,  $retries = \fC5\fP)"
+Return all objects including their respective object ID within the specified one \fBstring $host \fP The hostname of the \fBSNMP\fP agent (server)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$community\fP 
+.RE
+.PP
+The read community\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+The \fBSNMP\fP object id which precedes the wanted one\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an associative array of the \fBSNMP\fP object ids and their values on success or \fBFALSE\fP on error\&. In case of an error, an E_WARNING message is shown\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "snmp2_set ( $host,  $community,  $object_id,  $type,  $value,  $timeout = \fC1000000\fP,  $retries = \fC5\fP)"
+Set the value of an \fBSNMP\fP object \fBstring $host \fP The hostname of the \fBSNMP\fP agent (server)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$community\fP 
+.RE
+.PP
+The write community\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+The \fBSNMP\fP object id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP The MIB defines the type of each object id\&. It has to be specified as a single character from the below list\&. 
+.RE
+.PP
+types 
+.PP
+=
+.PP
+The type is taken from the MIB 
+.PP
+i
+.PP
+INTEGER  
+.PP
+u
+.PP
+INTEGER 
+.PP
+s
+.PP
+STRING 
+.PP
+x
+.PP
+HEX STRING 
+.PP
+d
+.PP
+DECIMAL STRING 
+.PP
+n
+.PP
+NULLOBJ 
+.PP
+o
+.PP
+OBJID 
+.PP
+t
+.PP
+TIMETICKS 
+.PP
+a
+.PP
+IPADDRESS 
+.PP
+b
+.PP
+BITS 
+.PP
+If \fBOPAQUE_SPECIAL_TYPES\fP was defined while compiling the \fBSNMP\fP library, the following are also valid: 
+.PP
+types 
+.PP
+U
+.PP
+unsigned int64 
+.PP
+I
+.PP
+signed int64 
+.PP
+F
+.PP
+float 
+.PP
+D
+.PP
+double 
+.PP
+Most of these will use the obvious corresponding ASN\&.1 type\&. &#x00027;s&#x00027;, &#x00027;x&#x00027;, &#x00027;d&#x00027; and &#x00027;b&#x00027; are all different ways of specifying an OCTET STRING value, and the &#x00027;u&#x00027; unsigned type is also used for handling Gauge32 values\&. 
+.PP
+If the MIB-Files are loaded by into the MIB Tree with 'snmp_read_mib' or by specifying it in the libsnmp config, &#x00027;=&#x00027; may be used as the \fItype\fP parameter for all object ids as the type can then be automatically read from the MIB\&. 
+.PP
+Note that there are two ways to set a variable of the type BITS like e\&.g\&. 'SYNTAX BITS {telnet(0), ftp(1), http(2), icmp(3), snmp(4), ssh(5), https(6)}': 
+.PP
+Using type 'b' and a list of bit numbers\&. This method is not recommended since GET query for the same OID would return e\&.g\&. 0xF8\&. Using type 'x' and a hex number but without(!) the usual '0x' prefix\&. See examples section for more details\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+The new value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+If the \fBSNMP\fP host rejects the data type, an E_WARNING message like 'Warning: Error in packet\&. Reason: (badValue) The value given has the wrong type or length\&.' is shown\&. If an unknown or invalid OID is specified the warning probably reads 'Could not add variable'\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "snmp2_walk ( $host,  $community,  $object_id,  $timeout = \fC1000000\fP,  $retries = \fC5\fP)"
+Fetch all the \fBSNMP\fP objects from an agent \fBstring $host \fP The \fBSNMP\fP agent (server)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$community\fP 
+.RE
+.PP
+The read community\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+If \fBNULL\fP, \fIobject_id\fP is taken as the root of the \fBSNMP\fP objects tree and all objects under that tree are returned as an array\&. 
+.PP
+If \fIobject_id\fP is specified, all the \fBSNMP\fP objects below that \fIobject_id\fP are returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array of \fBSNMP\fP object values starting from the \fIobject_id\fP as root or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "snmp3_get ( $host,  $sec_name,  $sec_level,  $auth_protocol,  $auth_passphrase,  $priv_protocol,  $priv_passphrase,  $object_id,  $timeout = \fC1000000\fP,  $retries = \fC5\fP)"
+Fetch an \fBSNMP\fP object \fBstring $host \fP The hostname of the \fBSNMP\fP agent (server)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sec_name\fP 
+.RE
+.PP
+the security name, usually some kind of username 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sec_level\fP 
+.RE
+.PP
+the security level (noAuthNoPriv|authNoPriv|authPriv) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$auth_protocol\fP 
+.RE
+.PP
+the authentication protocol (MD5 or SHA) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$auth_passphrase\fP 
+.RE
+.PP
+the authentication pass phrase 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$priv_protocol\fP 
+.RE
+.PP
+the privacy protocol (DES or AES) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$priv_passphrase\fP 
+.RE
+.PP
+the privacy pass phrase 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+The \fBSNMP\fP object id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false \fBSNMP\fP object value on success or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "snmp3_getnext ( $host,  $sec_name,  $sec_level,  $auth_protocol,  $auth_passphrase,  $priv_protocol,  $priv_passphrase,  $object_id,  $timeout = \fC1000000\fP,  $retries = \fC5\fP)"
+Fetch the \fBSNMP\fP object which follows the given object id \fBstring $host \fP The hostname of the \fBSNMP\fP agent (server)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sec_name\fP 
+.RE
+.PP
+the security name, usually some kind of username 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sec_level\fP 
+.RE
+.PP
+the security level (noAuthNoPriv|authNoPriv|authPriv) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$auth_protocol\fP 
+.RE
+.PP
+the authentication protocol (MD5 or SHA) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$auth_passphrase\fP 
+.RE
+.PP
+the authentication pass phrase 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$priv_protocol\fP 
+.RE
+.PP
+the privacy protocol (DES or AES) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$priv_passphrase\fP 
+.RE
+.PP
+the privacy pass phrase 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+The \fBSNMP\fP object id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false \fBSNMP\fP object value on success or \fBFALSE\fP on error\&. In case of an error, an E_WARNING message is shown\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "snmp3_real_walk ( $host,  $sec_name,  $sec_level,  $auth_protocol,  $auth_passphrase,  $priv_protocol,  $priv_passphrase,  $object_id,  $timeout = \fC\fBnull\fP\fP,  $retries = \fC\fBnull\fP\fP)"
+Return all objects including their respective object ID within the specified one \fBstring $host \fP The hostname of the \fBSNMP\fP agent (server)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sec_name\fP 
+.RE
+.PP
+the security name, usually some kind of username 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sec_level\fP 
+.RE
+.PP
+the security level (noAuthNoPriv|authNoPriv|authPriv) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$auth_protocol\fP 
+.RE
+.PP
+the authentication protocol (MD5 or SHA) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$auth_passphrase\fP 
+.RE
+.PP
+the authentication pass phrase 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$priv_protocol\fP 
+.RE
+.PP
+the privacy protocol (DES or AES) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$priv_passphrase\fP 
+.RE
+.PP
+the privacy pass phrase 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+The \fBSNMP\fP object id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an associative array of the \fBSNMP\fP object ids and their values on success or \fBFALSE\fP on error\&. In case of an error, an E_WARNING message is shown\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "snmp3_set ( $host,  $sec_name,  $sec_level,  $auth_protocol,  $auth_passphrase,  $priv_protocol,  $priv_passphrase,  $object_id,  $type,  $value,  $timeout = \fC1000000\fP,  $retries = \fC5\fP)"
+Set the value of an \fBSNMP\fP object \fBstring $host \fP The hostname of the \fBSNMP\fP agent (server)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sec_name\fP 
+.RE
+.PP
+the security name, usually some kind of username 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sec_level\fP 
+.RE
+.PP
+the security level (noAuthNoPriv|authNoPriv|authPriv) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$auth_protocol\fP 
+.RE
+.PP
+the authentication protocol (MD5 or SHA) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$auth_passphrase\fP 
+.RE
+.PP
+the authentication pass phrase 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$priv_protocol\fP 
+.RE
+.PP
+the privacy protocol (DES or AES) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$priv_passphrase\fP 
+.RE
+.PP
+the privacy pass phrase 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+The \fBSNMP\fP object id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP The MIB defines the type of each object id\&. It has to be specified as a single character from the below list\&. 
+.RE
+.PP
+types 
+.PP
+=
+.PP
+The type is taken from the MIB 
+.PP
+i
+.PP
+INTEGER  
+.PP
+u
+.PP
+INTEGER 
+.PP
+s
+.PP
+STRING 
+.PP
+x
+.PP
+HEX STRING 
+.PP
+d
+.PP
+DECIMAL STRING 
+.PP
+n
+.PP
+NULLOBJ 
+.PP
+o
+.PP
+OBJID 
+.PP
+t
+.PP
+TIMETICKS 
+.PP
+a
+.PP
+IPADDRESS 
+.PP
+b
+.PP
+BITS 
+.PP
+If \fBOPAQUE_SPECIAL_TYPES\fP was defined while compiling the \fBSNMP\fP library, the following are also valid: 
+.PP
+types 
+.PP
+U
+.PP
+unsigned int64 
+.PP
+I
+.PP
+signed int64 
+.PP
+F
+.PP
+float 
+.PP
+D
+.PP
+double 
+.PP
+Most of these will use the obvious corresponding ASN\&.1 type\&. &#x00027;s&#x00027;, &#x00027;x&#x00027;, &#x00027;d&#x00027; and &#x00027;b&#x00027; are all different ways of specifying an OCTET STRING value, and the &#x00027;u&#x00027; unsigned type is also used for handling Gauge32 values\&. 
+.PP
+If the MIB-Files are loaded by into the MIB Tree with 'snmp_read_mib' or by specifying it in the libsnmp config, &#x00027;=&#x00027; may be used as the \fItype\fP parameter for all object ids as the type can then be automatically read from the MIB\&. 
+.PP
+Note that there are two ways to set a variable of the type BITS like e\&.g\&. 'SYNTAX BITS {telnet(0), ftp(1), http(2), icmp(3), snmp(4), ssh(5), https(6)}': 
+.PP
+Using type 'b' and a list of bit numbers\&. This method is not recommended since GET query for the same OID would return e\&.g\&. 0xF8\&. Using type 'x' and a hex number but without(!) the usual '0x' prefix\&. See examples section for more details\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+The new value 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+If the \fBSNMP\fP host rejects the data type, an E_WARNING message like 'Warning: Error in packet\&. Reason: (badValue) The value given has the wrong type or length\&.' is shown\&. If an unknown or invalid OID is specified the warning probably reads 'Could not add variable'\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "snmp3_walk ( $host,  $sec_name,  $sec_level,  $auth_protocol,  $auth_passphrase,  $priv_protocol,  $priv_passphrase,  $object_id,  $timeout = \fC1000000\fP,  $retries = \fC5\fP)"
+Fetch all the \fBSNMP\fP objects from an agent \fBstring $host \fP The hostname of the \fBSNMP\fP agent (server)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sec_name\fP 
+.RE
+.PP
+the security name, usually some kind of username 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$sec_level\fP 
+.RE
+.PP
+the security level (noAuthNoPriv|authNoPriv|authPriv) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$auth_protocol\fP 
+.RE
+.PP
+the authentication protocol (MD5 or SHA) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$auth_passphrase\fP 
+.RE
+.PP
+the authentication pass phrase 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$priv_protocol\fP 
+.RE
+.PP
+the privacy protocol (DES or AES) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$priv_passphrase\fP 
+.RE
+.PP
+the privacy pass phrase 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+If \fBNULL\fP, \fIobject_id\fP is taken as the root of the \fBSNMP\fP objects tree and all objects under that tree are returned as an array\&. 
+.PP
+If \fIobject_id\fP is specified, all the \fBSNMP\fP objects below that \fIobject_id\fP are returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array of \fBSNMP\fP object values starting from the \fIobject_id\fP as root or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "snmp_get_quick_print ()"
+Fetches the current value of the UCD library's quick_print setting \fBbool \fBTRUE\fP if quick_print is on, \fBFALSE\fP otherwise\&.  4\&.0  5\&.0 \fP
+.SS "snmp_get_valueretrieval ()"
+Return the method how the \fBSNMP\fP values will be returned \fBint OR-ed combitantion of constants ( \fBSNMP_VALUE_LIBRARY\fP or \fBSNMP_VALUE_PLAIN\fP ) with possible SNMP_VALUE_OBJECT set\&.  4\&.3\&.3  5\&.0 \fP
+.SS "snmp_read_mib ( $filename)"
+Reads and parses a MIB file into the active MIB tree \fBstring $filename \fPThe filename of the MIB\&.
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "snmp_set_enum_print ( $enum_print)"
+Return all values that are enums with their enum value instead of the raw integer \fBint $enum_print \fP As the value is interpreted as boolean by the Net-SNMP library, it can only be '0' or '1'\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "snmp_set_oid_numeric_print ( $oid_format)"
+Return all objects including their respective object id within the specified one \fBint $oid_format  void  4\&.3  5\&.0 \fP
+.SS "snmp_set_oid_output_format ( $oid_format = \fC\fBSNMP_OID_OUTPUT_MODULE\fP\fP)"
+Set the OID output format \fBint $oid_format [optional] \fP OID \&.1\&.3\&.6\&.1\&.2\&.1\&.1\&.3\&.0 representation for various \fIoid_format\fP values 
+.PP
+\fBSNMP_OID_OUTPUT_FULL\fP
+.PP
+\&.iso\&.org\&.dod\&.internet\&.mgmt\&.mib-2\&.system\&.sysUpTime\&.sysUpTimeInstance 
+.PP
+\fBSNMP_OID_OUTPUT_NUMERIC\fP
+.PP
+\&.1\&.3\&.6\&.1\&.2\&.1\&.1\&.3\&.0  
+.PP
+Begining from PHP 5\&.4\&.0 four additional constants available: \fBSNMP_OID_OUTPUT_MODULE\fPDISMAN-EVENT-MIB::sysUpTimeInstance \fBSNMP_OID_OUTPUT_SUFFIX\fPsysUpTimeInstance \fBSNMP_OID_OUTPUT_UCD\fPsystem\&.sysUpTime\&.sysUpTimeInstance \fBSNMP_OID_OUTPUT_NONE\fPUndefined 
+.PP
+\fBReturns\fP
+.RS 4
+bool No value is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.2 
+.RE
+.PP
+
+.SS "snmp_set_quick_print ( $quick_print)"
+Set the value of \fIquick_print\fP within the UCD \fBSNMP\fP library \fBbool $quick_print  bool No value is returned\&.  4\&.0  5\&.0 \fP
+.SS "snmp_set_valueretrieval ( $method)"
+Specify the method how the \fBSNMP\fP values will be returned \fBint $method \fP types 
+.PP
+SNMP_VALUE_LIBRARY 
+.PP
+The return values will be as returned by the Net-SNMP library\&.  
+.PP
+SNMP_VALUE_PLAIN 
+.PP
+The return values will be the plain value without the \fBSNMP\fP type hint\&.  
+.PP
+SNMP_VALUE_OBJECT 
+.PP
+The return values will be objects with the properties 'value' and 'type', where the latter is one of the SNMP_OCTET_STR, SNMP_COUNTER etc\&. constants\&. The way 'value' is returned is based on which one of constants \fBSNMP_VALUE_LIBRARY\fP, \fBSNMP_VALUE_PLAIN\fP is set\&.   
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "snmpget ( $hostname,  $community,  $object_id,  $timeout = \fC1000000\fP,  $retries = \fC5\fP)"
+Fetch an \fBSNMP\fP object \fBstring $hostname \fP The \fBSNMP\fP agent\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$community\fP 
+.RE
+.PP
+The read community\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+The \fBSNMP\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false \fBSNMP\fP object value on success or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "snmpgetnext ( $host,  $community,  $object_id,  $timeout = \fC1000000\fP,  $retries = \fC5\fP)"
+Fetch the \fBSNMP\fP object which follows the given object id \fBstring $host \fPThe hostname of the \fBSNMP\fP agent (server)\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$community\fP 
+.RE
+.PP
+The read community\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+The \fBSNMP\fP object id which precedes the wanted one\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&.
+.PP
+\fBReturns\fP
+.RS 4
+string|false \fBSNMP\fP object value on success or \fBFALSE\fP on error\&. In case of an error, an E_WARNING message is shown\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+5\&.0 
+.RE
+.PP
+
+.SS "snmprealwalk ( $host,  $community,  $object_id,  $timeout = \fC1000000\fP,  $retries = \fC5\fP)"
+Return all objects including their respective object ID within the specified one \fBstring $host \fPThe hostname of the \fBSNMP\fP agent (server)\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$community\fP 
+.RE
+.PP
+The read community\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+The \fBSNMP\fP object id which precedes the wanted one\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&.
+.PP
+\fBReturns\fP
+.RS 4
+array|false an associative array of the \fBSNMP\fP object ids and their values on success or \fBFALSE\fP on error\&. In case of an error, an E_WARNING message is shown\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "snmpset ( $host,  $community,  $object_id,  $type,  $value,  $timeout = \fC1000000\fP,  $retries = \fC5\fP)"
+Set the value of an \fBSNMP\fP object \fBstring $host \fP The hostname of the \fBSNMP\fP agent (server)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$community\fP 
+.RE
+.PP
+The write community\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+The \fBSNMP\fP object id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP The MIB defines the type of each object id\&. It has to be specified as a single character from the below list\&. 
+.RE
+.PP
+types 
+.PP
+=
+.PP
+The type is taken from the MIB 
+.PP
+i
+.PP
+INTEGER  
+.PP
+u
+.PP
+INTEGER 
+.PP
+s
+.PP
+STRING 
+.PP
+x
+.PP
+HEX STRING 
+.PP
+d
+.PP
+DECIMAL STRING 
+.PP
+n
+.PP
+NULLOBJ 
+.PP
+o
+.PP
+OBJID 
+.PP
+t
+.PP
+TIMETICKS 
+.PP
+a
+.PP
+IPADDRESS 
+.PP
+b
+.PP
+BITS 
+.PP
+If \fBOPAQUE_SPECIAL_TYPES\fP was defined while compiling the \fBSNMP\fP library, the following are also valid: 
+.PP
+types 
+.PP
+U
+.PP
+unsigned int64 
+.PP
+I
+.PP
+signed int64 
+.PP
+F
+.PP
+float 
+.PP
+D
+.PP
+double 
+.PP
+Most of these will use the obvious corresponding ASN\&.1 type\&. &#x00027;s&#x00027;, &#x00027;x&#x00027;, &#x00027;d&#x00027; and &#x00027;b&#x00027; are all different ways of specifying an OCTET STRING value, and the &#x00027;u&#x00027; unsigned type is also used for handling Gauge32 values\&. 
+.PP
+If the MIB-Files are loaded by into the MIB Tree with 'snmp_read_mib' or by specifying it in the libsnmp config, &#x00027;=&#x00027; may be used as the \fItype\fP parameter for all object ids as the type can then be automatically read from the MIB\&. 
+.PP
+Note that there are two ways to set a variable of the type BITS like e\&.g\&. 'SYNTAX BITS {telnet(0), ftp(1), http(2), icmp(3), snmp(4), ssh(5), https(6)}': 
+.PP
+Using type 'b' and a list of bit numbers\&. This method is not recommended since GET query for the same OID would return e\&.g\&. 0xF8\&. Using type 'x' and a hex number but without(!) the usual '0x' prefix\&. See examples section for more details\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$value\fP 
+.RE
+.PP
+The new value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+If the \fBSNMP\fP host rejects the data type, an E_WARNING message like 'Warning: Error in packet\&. Reason: (badValue) The value given has the wrong type or length\&.' is shown\&. If an unknown or invalid OID is specified the warning probably reads 'Could not add variable'\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "snmpwalk ( $hostname,  $community,  $object_id,  $timeout = \fC1000000\fP,  $retries = \fC5\fP)"
+Fetch all the \fBSNMP\fP objects from an agent \fBstring $hostname \fP The \fBSNMP\fP agent (server)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$community\fP 
+.RE
+.PP
+The read community\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+If \fBNULL\fP, \fIobject_id\fP is taken as the root of the \fBSNMP\fP objects tree and all objects under that tree are returned as an array\&. 
+.PP
+If \fIobject_id\fP is specified, all the \fBSNMP\fP objects below that \fIobject_id\fP are returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&.
+.PP
+\fBReturns\fP
+.RS 4
+array an array of \fBSNMP\fP object values starting from the \fIobject_id\fP as root or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "snmpwalkoid ( $hostname,  $community,  $object_id,  $timeout = \fC1000000\fP,  $retries = \fC5\fP)"
+Query for a tree of information about a network entity \fBstring $hostname \fP The \fBSNMP\fP agent\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$community\fP 
+.RE
+.PP
+The read community\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$object_id\fP 
+.RE
+.PP
+If \fBNULL\fP, \fIobject_id\fP is taken as the root of the \fBSNMP\fP objects tree and all objects under that tree are returned as an array\&. 
+.PP
+If \fIobject_id\fP is specified, all the \fBSNMP\fP objects below that \fIobject_id\fP are returned\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$timeout\fP [optional] 
+.RE
+.PP
+The number of microseconds until the first timeout\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$retries\fP [optional] 
+.RE
+.PP
+The number of times to retry if timeouts occur\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an associative array with object ids and their respective object value starting from the \fIobject_id\fP as root or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const SNMP_BIT_STR 3"
+
+.SS "const SNMP_COUNTER 66"
+
+.SS "const SNMP_COUNTER64 70"
+
+.SS "const SNMP_INTEGER 2"
+
+.SS "const SNMP_IPADDRESS 64"
+
+.SS "const SNMP_NULL 5"
+
+.SS "const SNMP_OBJECT_ID 6"
+
+.SS "const SNMP_OCTET_STR 4"
+
+.SS "const SNMP_OID_OUTPUT_FULL 3"
+As of 5\&.2 \fBhttps://php\&.net/manual/en/snmp\&.constants\&.php\fP
+.SS "const SNMP_OID_OUTPUT_MODULE 2"
+As of 5\&.4 \fBhttps://php\&.net/manual/en/snmp\&.constants\&.php\fP
+.SS "const SNMP_OID_OUTPUT_NONE 6"
+As of 5\&.4 \fBhttps://php\&.net/manual/en/snmp\&.constants\&.php\fP
+.SS "const SNMP_OID_OUTPUT_NUMERIC 4"
+As of 5\&.2 \fBhttps://php\&.net/manual/en/snmp\&.constants\&.php\fP
+.SS "const SNMP_OID_OUTPUT_SUFFIX 1"
+As of 5\&.4 \fBhttps://php\&.net/manual/en/snmp\&.constants\&.php\fP
+.SS "const SNMP_OID_OUTPUT_UCD 5"
+As of 5\&.4 \fBhttps://php\&.net/manual/en/snmp\&.constants\&.php\fP
+.SS "const SNMP_OPAQUE 68"
+
+.SS "const SNMP_TIMETICKS 67"
+
+.SS "const SNMP_UINTEGER 71"
+
+.SS "const SNMP_UNSIGNED 66"
+
+.SS "const SNMP_VALUE_LIBRARY 0"
+
+.SS "const SNMP_VALUE_OBJECT 2"
+
+.SS "const SNMP_VALUE_PLAIN 1"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

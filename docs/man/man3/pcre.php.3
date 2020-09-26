@@ -1,0 +1,683 @@
+.TH "vendor/jetbrains/phpstorm-stubs/pcre/pcre.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/pcre/pcre.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBpreg_match\fP ($pattern, $subject, array &$\fBmatches\fP=\fBnull\fP, $flags=0, $offset=0)"
+.br
+.ti -1c
+.RI "\fBpreg_match_all\fP ($pattern, $subject, array &$\fBmatches\fP=\fBnull\fP, $flags=\fBPREG_PATTERN_ORDER\fP, $offset=0)"
+.br
+.ti -1c
+.RI "\fBpreg_replace\fP ($pattern, $replacement, $subject, $limit=\-1, &$\fBcount\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpreg_replace_callback\fP ($\fBregex\fP, callable $\fBcallback\fP, $subject, $limit=\-1, &$\fBcount\fP=\fBnull\fP, $flags=[])"
+.br
+.ti -1c
+.RI "\fBpreg_replace_callback_array\fP ($patterns_and_callbacks, $subject, $limit=\-1, &$\fBcount\fP=\fBnull\fP, $flags=[])"
+.br
+.ti -1c
+.RI "\fBpreg_filter\fP ($pattern, $replacement, $subject, $limit=\-1, &$\fBcount\fP=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpreg_split\fP ($pattern, $subject, $limit=\-1, $flags=0)"
+.br
+.ti -1c
+.RI "\fBpreg_quote\fP ($str, $delimiter=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBpreg_grep\fP ($pattern, array $input, $flags=0)"
+.br
+.ti -1c
+.RI "\fBpreg_last_error\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBPREG_PATTERN_ORDER\fP 1"
+.br
+.ti -1c
+.RI "const \fBPREG_JIT_STACKLIMIT_ERROR\fP 6"
+.br
+.ti -1c
+.RI "const \fBPREG_SET_ORDER\fP 2"
+.br
+.ti -1c
+.RI "const \fBPREG_OFFSET_CAPTURE\fP 256"
+.br
+.ti -1c
+.RI "const \fBPREG_SPLIT_NO_EMPTY\fP 1"
+.br
+.ti -1c
+.RI "const \fBPREG_SPLIT_DELIM_CAPTURE\fP 2"
+.br
+.ti -1c
+.RI "const \fBPREG_SPLIT_OFFSET_CAPTURE\fP 4"
+.br
+.ti -1c
+.RI "const \fBPREG_GREP_INVERT\fP 1"
+.br
+.ti -1c
+.RI "const \fBPREG_NO_ERROR\fP 0"
+.br
+.ti -1c
+.RI "const \fBPREG_INTERNAL_ERROR\fP 1"
+.br
+.ti -1c
+.RI "const \fBPREG_BACKTRACK_LIMIT_ERROR\fP 2"
+.br
+.ti -1c
+.RI "const \fBPREG_RECURSION_LIMIT_ERROR\fP 3"
+.br
+.ti -1c
+.RI "const \fBPREG_BAD_UTF8_ERROR\fP 4"
+.br
+.ti -1c
+.RI "const \fBPREG_BAD_UTF8_OFFSET_ERROR\fP 5"
+.br
+.ti -1c
+.RI "const \fBPREG_UNMATCHED_AS_NULL\fP 512"
+.br
+.ti -1c
+.RI "const \fBPCRE_VERSION\fP '8\&.31 2012\-07\-06'"
+.br
+.ti -1c
+.RI "const \fBPCRE_VERSION_MAJOR\fP 10"
+.br
+.ti -1c
+.RI "const \fBPCRE_VERSION_MINOR\fP 33"
+.br
+.ti -1c
+.RI "const \fBPCRE_JIT_SUPPORT\fP 1"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "preg_filter ( $pattern,  $replacement,  $subject,  $limit = \fC\-1\fP, & $count = \fC\fBnull\fP\fP)"
+Perform a regular expression search and replace \fBstring|string[] $pattern  string|string[] $replacement  string|string[] $subject  int $limit [optional]  int $count [optional]  string|string[]|null an array if the \fIsubject\fP parameter is an array, or a string otherwise\&. \fP 
+.PP
+If no matches are found or an error occurred, an empty array is returned when \fIsubject\fP is an array or \fBNULL\fP otherwise\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 
+.RE
+.PP
+
+.SS "preg_grep ( $pattern, array $input,  $flags = \fC0\fP)"
+Return array entries that match the pattern \fBstring $pattern \fP The pattern to search for, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$input\fP 
+.RE
+.PP
+The input array\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+If set to \fBPREG_GREP_INVERT\fP, this function returns the elements of the input array that do not match the given \fIpattern\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array an array indexed using the keys from the \fIinput\fP array\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "preg_last_error ()"
+Returns the error code of the last PCRE regex execution \fBint one of the following constants (explained on their own page): \fBPREG_NO_ERROR\fP \fBPREG_INTERNAL_ERROR\fP \fBPREG_BACKTRACK_LIMIT_ERROR\fP (see also pcre\&.backtrack_limit) \fBPREG_RECURSION_LIMIT_ERROR\fP (see also pcre\&.recursion_limit) \fBPREG_BAD_UTF8_ERROR\fP \fBPREG_BAD_UTF8_OFFSET_ERROR\fP (since PHP 5\&.3\&.0)  5\&.2 \fP
+.SS "preg_match ( $pattern,  $subject, array & $matches = \fC\fBnull\fP\fP,  $flags = \fC0\fP,  $offset = \fC0\fP)"
+Perform a regular expression match \fBstring $pattern \fP The pattern to search for, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$subject\fP 
+.RE
+.PP
+The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$matches\fP [optional] 
+.RE
+.PP
+If \fImatches\fP is provided, then it is filled with the results of search\&. $matches[0] will contain the text that matched the full pattern, $matches[1] will have the text that matched the first captured parenthesized subpattern, and so on\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+\fIflags\fP can be the following flag: \fBPREG_OFFSET_CAPTURE\fP 
+.PP
+.RS 4
+If this flag is passed, for every occurring match the appendant string offset will also be returned\&. Note that this changes the value of \fImatches\fP into an array where every element is an array consisting of the matched string at offset 0 and its string offset into \fIsubject\fP at offset 1\&. 
+.PP
+.nf
+
+<?php
+preg_match('/(foo)(bar)(baz)/', 'foobarbaz', $matches, PREG_OFFSET_CAPTURE);
+print_r($matches);
+?>
+.fi
+.PP
+ The above example will output: 
+.PP
+.nf
+
+Array
+(
+    [0] => Array
+        (
+            [0] => foobarbaz
+            [1] => 0
+        )
+.fi
+.PP
+.PP
+.PP
+.nf
+    [1] => Array
+        (
+            [0] => foo
+            [1] => 0
+        )
+.fi
+.PP
+.PP
+.PP
+.nf
+    [2] => Array
+        (
+            [0] => bar
+            [1] => 3
+        )
+.fi
+.PP
+.PP
+.PP
+.nf
+    [3] => Array
+        (
+            [0] => baz
+            [1] => 6
+        )
+.fi
+.PP
+.PP
+.PP
+.nf
+)
+.fi
+.PP
+ 
+.RE
+.PP
+\fBPREG_UNMATCHED_AS_NULL\fP 
+.PP
+.RS 4
+If this flag is passed, unmatched subpatterns are reported as NULL; otherwise they are reported as an empty string\&. 
+.PP
+.nf
+
+<?php
+preg_match('/(a)(b)*(c)/', 'ac', $matches);
+var_dump($matches);
+preg_match('/(a)(b)*(c)/', 'ac', $matches, PREG_UNMATCHED_AS_NULL);
+var_dump($matches);
+?>
+.fi
+.PP
+ The above example will output: 
+.PP
+.nf
+
+array(4) {
+  [0]=>
+  string(2) 'ac'
+  [1]=>
+  string(1) 'a'
+  [2]=>
+  string(0) ''
+  [3]=>
+  string(1) 'c'
+}
+array(4) {
+  [0]=>
+  string(2) 'ac'
+  [1]=>
+  string(1) 'a'
+  [2]=>
+  NULL
+  [3]=>
+  string(1) 'c'
+}
+.fi
+.PP
+ 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+Normally, the search starts from the beginning of the subject string\&. The optional parameter \fIoffset\fP can be used to specify the alternate place from which to start the search (in bytes)\&. 
+.PP
+Using \fIoffset\fP is not equivalent to passing substr($subject, $offset) to \fBpreg_match\fP in place of the subject string, because \fIpattern\fP can contain assertions such as ^, $ or (?<=x)\&. Compare: 
+.PP
+.nf
+
+$subject = 'abcdef';
+$pattern = '/^def/';
+preg_match($pattern, $subject, $matches, PREG_OFFSET_CAPTURE, 3);
+print_r($matches);
+.fi
+.PP
+ The above example will output:
+.PP
+.PP
+.nf
+
+Array
+(
+)
+.fi
+.PP
+ <p<blockquote>
+.PP
+while this example 
+.PP
+\fC $subject = 'abcdef'; $pattern = '/^def/'; preg_match($pattern, substr($subject,3), $matches, PREG_OFFSET_CAPTURE); print_r($matches); \fP 
+.PP
+will produce 
+.PP
+.PP
+.nf
+
+Array
+(
+    [0] => Array
+        (
+            [0] => def
+            [1] => 0
+        )
+)
+.fi
+.PP
+ Alternatively, to avoid using \fBsubstr()\fP, use the \\G assertion rather than the ^ anchor, or the \fBA\fP modifier instead, both of which work with the offset parameter\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false \fBpreg_match\fP returns 1 if the \fIpattern\fP matches given \fIsubject\fP, 0 if it does not, or \fBFALSE\fP if an error occurred\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "preg_match_all ( $pattern,  $subject, array & $matches = \fC\fBnull\fP\fP,  $flags = \fC\fBPREG_PATTERN_ORDER\fP\fP,  $offset = \fC0\fP)"
+Perform a global regular expression match \fBstring $pattern \fP The pattern to search for, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$subject\fP 
+.RE
+.PP
+The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$matches\fP [optional] 
+.RE
+.PP
+Array of all matches in multi-dimensional array ordered according to flags\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+Can be a combination of the following flags (note that it doesn't make sense to use \fBPREG_PATTERN_ORDER\fP together with \fBPREG_SET_ORDER\fP): \fBPREG_PATTERN_ORDER\fP 
+.PP
+Orders results so that $matches[0] is an array of full pattern matches, $matches[1] is an array of strings matched by the first parenthesized subpattern, and so on\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+Normally, the search starts from the beginning of the subject string\&. The optional parameter \fIoffset\fP can be used to specify the alternate place from which to start the search (in bytes)\&. 
+.PP
+Using \fIoffset\fP is not equivalent to passing substr($subject, $offset) to \fBpreg_match_all\fP in place of the subject string, because \fIpattern\fP can contain assertions such as ^, $ or (?<=x)\&. See \fBpreg_match\fP for examples\&. 
+.PP
+\fC preg_match_all('|]+>(\&.*)]+>|U', 'example: this is a test', $out, PREG_PATTERN_ORDER); echo $out[0][0] \&. ', ' \&. $out[0][1] \&. '\\n'; echo $out[1][0] \&. ', ' \&. $out[1][1] \&. '\\n'; \fP The above example will output:
+.PP
+.PP
+.nf
+
+example: , this is a test
+example: , this is a test
+.fi
+.PP
+ <p<blockquote>
+.PP
+So, $out[0] contains array of strings that matched full pattern, and $out[1] contains array of strings enclosed by tags\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$offset\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int|false the number of full pattern matches (which might be zero), or \fBFALSE\fP if an error occurred\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "preg_quote ( $str,  $delimiter = \fC\fBnull\fP\fP)"
+Quote regular expression characters \fBstring $str \fP The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$delimiter\fP [optional] 
+.RE
+.PP
+If the optional \fIdelimiter\fP is specified, it will also be escaped\&. This is useful for escaping the delimiter that is required by the PCRE functions\&. The / is the most commonly used delimiter\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the quoted (escaped) string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "preg_replace ( $pattern,  $replacement,  $subject,  $limit = \fC\-1\fP, & $count = \fC\fBnull\fP\fP)"
+Perform a regular expression search and replace \fBstring|string[] $pattern \fP The pattern to search for\&. It can be either a string or an array with strings\&. 
+.PP
+Several PCRE modifiers are also available, including the deprecated 'e' (PREG_REPLACE_EVAL), which is specific to this function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$replacement\fP 
+.RE
+.PP
+The string or an array with strings to replace\&. If this parameter is a string and the \fIpattern\fP parameter is an array, all patterns will be replaced by that string\&. If both \fIpattern\fP and \fIreplacement\fP parameters are arrays, each \fIpattern\fP will be replaced by the \fIreplacement\fP counterpart\&. If there are fewer elements in the \fIreplacement\fP array than in the \fIpattern\fP array, any extra \fIpattern\fPs will be replaced by an empty string\&. 
+.PP
+\fIreplacement\fP may contain references of the form \\n or (since PHP 4\&.0\&.4) $n, with the latter form being the preferred one\&. Every such reference will be replaced by the text captured by the n'th parenthesized pattern\&. n can be from 0 to 99, and \\0 or $0 refers to the text matched by the whole pattern\&. Opening parentheses are counted from left to right (starting from 1) to obtain the number of the capturing subpattern\&. To use backslash in replacement, it must be doubled ('\\\\\\\\' PHP string)\&. 
+.PP
+When working with a replacement pattern where a backreference is immediately followed by another number (i\&.e\&.: placing a literal number immediately after a matched pattern), you cannot use the familiar \\1 notation for your backreference\&. \\11, for example, would confuse \fBpreg_replace\fP since it does not know whether you want the \\1 backreference followed by a literal 1, or the \\11 backreference followed by nothing\&. In this case the solution is to use ${1}1\&. This creates an isolated $1 backreference, leaving the 1 as a literal\&. 
+.PP
+When using the deprecated e modifier, this function escapes some characters (namely ', ", \\ and NULL) in the strings that replace the backreferences\&. This is done to ensure that no syntax errors arise from backreference usage with either single or double quotes (e\&.g\&. 'strlen(\\'$1\\')+strlen('$2')')\&. Make sure you are aware of PHP's string syntax to know exactly how the interpreted string will look\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$subject\fP 
+.RE
+.PP
+The string or an array with strings to search and replace\&. 
+.PP
+If \fIsubject\fP is an array, then the search and replace is performed on every entry of \fIsubject\fP, and the return value is an array as well\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$limit\fP [optional] 
+.RE
+.PP
+The maximum possible replacements for each pattern in each \fIsubject\fP string\&. Defaults to -1 (no limit)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$count\fP [optional] 
+.RE
+.PP
+If specified, this variable will be filled with the number of replacements done\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|string[]|null \fBpreg_replace\fP returns an array if the \fIsubject\fP parameter is an array, or a string otherwise\&. 
+.RE
+.PP
+.PP
+If matches are found, the new \fIsubject\fP will be returned, otherwise \fIsubject\fP will be returned unchanged or \fBNULL\fP if an error occurred\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "preg_replace_callback ( $regex, callable $callback,  $subject,  $limit = \fC\-1\fP, & $count = \fC\fBnull\fP\fP,  $flags = \fC[]\fP)"
+Perform a regular expression search and replace using a callback \fBstring|string[] $regex \fP The pattern to search for\&. It can be either a string or an array with strings\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$callback\fP 
+.RE
+.PP
+\fBA\fP callback that will be called and passed an array of matched elements in the \fIsubject\fP string\&. The callback should return the replacement string\&. This is the callback signature: 
+.PP
+string\fBhandler\fP \fBarray\fImatches\fP\fP 
+.PP
+You'll often need the \fIcallback\fP function for a \fBpreg_replace_callback\fP in just one place\&. In this case you can use an anonymous function to declare the callback within the call to \fBpreg_replace_callback\fP\&. By doing it this way you have all information for the call in one place and do not clutter the function namespace with a callback function's name not used anywhere else\&. 
+.PP
+\fBpreg_replace_callback\fP and anonymous function \fC /* a unix-style command line filter to convert uppercase
+.IP "\(bu" 2
+letters at the beginning of paragraphs to lowercase * / $fp = fopen('php://stdin', 'r') or die('can't read stdin'); while (!feof($fp)) { $line = fgets($fp); $line = preg_replace_callback( '|
+.PP
+\fP
+.PP
+\fC\\s*\\w|', function ($matches) { return strtolower($matches[0]); }, $line ); echo $line; } fclose($fp); \fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$subject\fP 
+.RE
+.PP
+The string or an array with strings to search and replace\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$limit\fP [optional] 
+.RE
+.PP
+The maximum possible replacements for each pattern in each \fIsubject\fP string\&. Defaults to -1 (no limit)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$count\fP [optional] 
+.RE
+.PP
+If specified, this variable will be filled with the number of replacements done\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string|string[]|null \fBpreg_replace_callback\fP returns an array if the \fIsubject\fP parameter is an array, or a string otherwise\&. On errors the return value is \fBNULL\fP 
+.RE
+.PP
+.PP
+If matches are found, the new subject will be returned, otherwise \fIsubject\fP will be returned unchanged\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "preg_replace_callback_array ( $patterns_and_callbacks,  $subject,  $limit = \fC\-1\fP, & $count = \fC\fBnull\fP\fP,  $flags = \fC[]\fP)"
+Perform a regular expression search and replace using callbacks \fBarray|callable[] $patterns_and_callbacks An associative array mapping patterns (keys) to callbacks (values)  string|string[] $subject  int $limit [optional]  int $count [optional]  array $flags [optional]  string|string[]|null \fP\fBpreg_replace_callback_array()\fP returns an array if the subject parameter is an array, or a string otherwise\&. On errors the return value is NULL
+.PP
+If matches are found, the new subject will be returned, otherwise subject will be returned unchanged\&.
+.SS "preg_split ( $pattern,  $subject,  $limit = \fC\-1\fP,  $flags = \fC0\fP)"
+Split string by a regular expression \fBstring $pattern \fP The pattern to search for, as a string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$subject\fP 
+.RE
+.PP
+The input string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$limit\fP [optional] 
+.RE
+.PP
+If specified, then only substrings up to \fIlimit\fP are returned with the rest of the string being placed in the last substring\&. \fBA\fP \fIlimit\fP of -1, 0 or \fBNULL\fP means 'no limit' and, as is standard across PHP, you can use \fBNULL\fP to skip to the \fIflags\fP parameter\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+\fIflags\fP can be any combination of the following flags (combined with the | bitwise operator): \fBPREG_SPLIT_NO_EMPTY\fP If this flag is set, only non-empty pieces will be returned by \fBpreg_split\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string[]|array|false an array containing substrings of \fIsubject\fP split along boundaries matched by \fIpattern\fP, or \fBFALSE\fP if an error occurred\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const PCRE_JIT_SUPPORT 1"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.3 
+.RE
+.PP
+
+.SS "const PCRE_VERSION '8\&.31 2012\-07\-06'"
+PCRE version and release date (e\&.g\&. '7\&.0 18-Dec-2006')\&. \fBhttps://php\&.net/manual/en/pcre\&.constants\&.php\fP
+.SS "const PCRE_VERSION_MAJOR 10"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.3 
+.RE
+.PP
+
+.SS "const PCRE_VERSION_MINOR 33"
+
+.PP
+\fBSince\fP
+.RS 4
+7\&.3 
+.RE
+.PP
+
+.SS "const PREG_BACKTRACK_LIMIT_ERROR 2"
+Returned by \fBpreg_last_error\fP if backtrack limit was exhausted\&. \fBhttps://php\&.net/manual/en/pcre\&.constants\&.php\fP
+.SS "const PREG_BAD_UTF8_ERROR 4"
+Returned by \fBpreg_last_error\fP if the last error was caused by malformed UTF-8 data (only when running a regex in UTF-8 mode)\&. \fBhttps://php\&.net/manual/en/pcre\&.constants\&.php\fP
+.SS "const PREG_BAD_UTF8_OFFSET_ERROR 5"
+Returned by \fBpreg_last_error\fP if the offset didn't correspond to the begin of a valid UTF-8 code point (only when running a regex in UTF-8 mode)\&. \fBhttps://php\&.net/manual/en/pcre\&.constants\&.php\fP
+.SS "const PREG_GREP_INVERT 1"
+
+.SS "const PREG_INTERNAL_ERROR 1"
+Returned by \fBpreg_last_error\fP if there was an internal PCRE error\&. \fBhttps://php\&.net/manual/en/pcre\&.constants\&.php\fP
+.SS "const PREG_JIT_STACKLIMIT_ERROR 6"
+Returned by {
+.PP
+\fBSee also\fP
+.RS 4
+\fBpreg_last_error()\fP} \fBif\fP the last PCRE \fBfunction\fP failed due to limited JIT stack space\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.0 
+.RE
+.PP
+
+.SS "const PREG_NO_ERROR 0"
+Returned by \fBpreg_last_error\fP if there were no errors\&. \fBhttps://php\&.net/manual/en/pcre\&.constants\&.php\fP
+.SS "const PREG_OFFSET_CAPTURE 256"
+See the description of \fBPREG_SPLIT_OFFSET_CAPTURE\fP\&. \fBhttps://php\&.net/manual/en/pcre\&.constants\&.php\fP
+.SS "const PREG_PATTERN_ORDER 1"
+Orders results so that $matches[0] is an array of full pattern matches, $matches[1] is an array of strings matched by the first parenthesized subpattern, and so on\&. This flag is only used with \fBpreg_match_all\fP\&. \fBhttps://php\&.net/manual/en/pcre\&.constants\&.php\fP
+.SS "const PREG_RECURSION_LIMIT_ERROR 3"
+Returned by \fBpreg_last_error\fP if recursion limit was exhausted\&. \fBhttps://php\&.net/manual/en/pcre\&.constants\&.php\fP
+.SS "const PREG_SET_ORDER 2"
+Orders results so that $matches[0] is an array of first set of matches, $matches[1] is an array of second set of matches, and so on\&. This flag is only used with \fBpreg_match_all\fP\&. \fBhttps://php\&.net/manual/en/pcre\&.constants\&.php\fP
+.SS "const PREG_SPLIT_DELIM_CAPTURE 2"
+This flag tells \fBpreg_split\fP to capture parenthesized expression in the delimiter pattern as well\&. \fBhttps://php\&.net/manual/en/pcre\&.constants\&.php\fP
+.SS "const PREG_SPLIT_NO_EMPTY 1"
+This flag tells \fBpreg_split\fP to return only non-empty pieces\&. \fBhttps://php\&.net/manual/en/pcre\&.constants\&.php\fP
+.SS "const PREG_SPLIT_OFFSET_CAPTURE 4"
+If this flag is set, for every occurring match the appendant string offset will also be returned\&. Note that this changes the return values in an array where every element is an array consisting of the matched string at offset 0 and its string offset within subject at offset 1\&. This flag is only used for \fBpreg_split\fP\&. \fBhttps://php\&.net/manual/en/pcre\&.constants\&.php\fP
+.SS "const PREG_UNMATCHED_AS_NULL 512"
+This flag tells {
+.PP
+\fBSee also\fP
+.RS 4
+\fBpreg_match()\fP} and {
+.PP
+\fBpreg_match_all()\fP} to include unmatched subpatterns in \fB$matches\fP as NULL values\&. Without this flag, unmatched subpatterns are reported as empty strings, as \fBif\fP they were empty \fBmatches\fP\&. Setting this flag allows to distinguish between these two cases\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

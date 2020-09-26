@@ -1,0 +1,1586 @@
+.TH "vendor/jetbrains/phpstorm-stubs/odbc/odbc.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/odbc/odbc.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBodbc_autocommit\fP ($connection_id, $OnOff=\fBfalse\fP)"
+.br
+.ti -1c
+.RI "\fBodbc_binmode\fP ($result_id, $mode)"
+.br
+.ti -1c
+.RI "\fBodbc_close\fP ($connection_id)"
+.br
+.ti -1c
+.RI "\fBodbc_close_all\fP ()"
+.br
+.ti -1c
+.RI "\fBodbc_columns\fP ($connection_id, $qualifier=\fBnull\fP, $schema=\fBnull\fP, $table_name=\fBnull\fP, $column_name=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBodbc_commit\fP ($connection_id)"
+.br
+.ti -1c
+.RI "\fBodbc_connect\fP ($dsn, $user, $password, $cursor_type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBodbc_cursor\fP ($result_id)"
+.br
+.ti -1c
+.RI "\fBodbc_data_source\fP ($connection_id, $fetch_type)"
+.br
+.ti -1c
+.RI "\fBodbc_execute\fP ($result_id, array $parameters_array=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBodbc_error\fP ($connection_id=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBodbc_errormsg\fP ($connection_id=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBodbc_exec\fP ($connection_id, $query_string, $flags=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBodbc_fetch_array\fP ($result, $rownumber=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBodbc_fetch_object\fP ($result, $rownumber=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBodbc_fetch_row\fP ($result_id, $row_number=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBodbc_fetch_into\fP ($result_id, array &$result_array, $rownumber=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBodbc_field_len\fP ($result_id, $field_number)"
+.br
+.ti -1c
+.RI "\fBodbc_field_scale\fP ($result_id, $field_number)"
+.br
+.ti -1c
+.RI "\fBodbc_field_name\fP ($result_id, $field_number)"
+.br
+.ti -1c
+.RI "\fBodbc_field_type\fP ($result_id, $field_number)"
+.br
+.ti -1c
+.RI "\fBodbc_field_num\fP ($result_id, $field_name)"
+.br
+.ti -1c
+.RI "\fBodbc_free_result\fP ($result_id)"
+.br
+.ti -1c
+.RI "\fBodbc_gettypeinfo\fP ($connection_id, $data_type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBodbc_longreadlen\fP ($result_id, $length)"
+.br
+.ti -1c
+.RI "\fBodbc_next_result\fP ($result_id)"
+.br
+.ti -1c
+.RI "\fBodbc_num_fields\fP ($result_id)"
+.br
+.ti -1c
+.RI "\fBodbc_num_rows\fP ($result_id)"
+.br
+.ti -1c
+.RI "\fBodbc_pconnect\fP ($dsn, $user, $password, $cursor_type=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBodbc_prepare\fP ($connection_id, $query_string)"
+.br
+.ti -1c
+.RI "\fBodbc_result\fP ($result_id, $field)"
+.br
+.ti -1c
+.RI "\fBodbc_result_all\fP ($result_id, $format=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBodbc_rollback\fP ($connection_id)"
+.br
+.ti -1c
+.RI "\fBodbc_setoption\fP ($id, $\fBfunction\fP, $option, $param)"
+.br
+.ti -1c
+.RI "\fBodbc_specialcolumns\fP ($connection_id, $type, $qualifier, $owner, $table, $scope, $nullable)"
+.br
+.ti -1c
+.RI "\fBodbc_statistics\fP ($connection_id, $qualifier, $owner, $table_name, $unique, $accuracy)"
+.br
+.ti -1c
+.RI "\fBodbc_tables\fP ($connection_id, $qualifier=\fBnull\fP, $owner=\fBnull\fP, $name=\fBnull\fP, $types=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBodbc_primarykeys\fP ($connection_id, $qualifier, $owner, $table)"
+.br
+.ti -1c
+.RI "\fBodbc_columnprivileges\fP ($connection_id, $qualifier, $owner, $table_name, $column_name)"
+.br
+.ti -1c
+.RI "\fBodbc_tableprivileges\fP ($connection_id, $qualifier, $owner, $name)"
+.br
+.ti -1c
+.RI "\fBodbc_foreignkeys\fP ($connection_id, $pk_qualifier, $pk_owner, $pk_table, $fk_qualifier, $fk_owner, $fk_table)"
+.br
+.ti -1c
+.RI "\fBodbc_procedures\fP ($connection_id)"
+.br
+.ti -1c
+.RI "\fBodbc_procedurecolumns\fP ($connection_id)"
+.br
+.ti -1c
+.RI "\fBodbc_do\fP ($connection_id, $query, $flags)"
+.br
+.ti -1c
+.RI "\fBodbc_field_precision\fP ($result_id, $field_number)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBODBC_TYPE\fP 'unixODBC'"
+.br
+.ti -1c
+.RI "const \fBODBC_BINMODE_PASSTHRU\fP 0"
+.br
+.ti -1c
+.RI "const \fBODBC_BINMODE_RETURN\fP 1"
+.br
+.ti -1c
+.RI "const \fBODBC_BINMODE_CONVERT\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQL_ODBC_CURSORS\fP 110"
+.br
+.ti -1c
+.RI "const \fBSQL_CUR_USE_DRIVER\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQL_CUR_USE_IF_NEEDED\fP 0"
+.br
+.ti -1c
+.RI "const \fBSQL_CUR_USE_ODBC\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQL_CONCURRENCY\fP 7"
+.br
+.ti -1c
+.RI "const \fBSQL_CONCUR_READ_ONLY\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQL_CONCUR_LOCK\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQL_CONCUR_ROWVER\fP 3"
+.br
+.ti -1c
+.RI "const \fBSQL_CONCUR_VALUES\fP 4"
+.br
+.ti -1c
+.RI "const \fBSQL_CURSOR_TYPE\fP 6"
+.br
+.ti -1c
+.RI "const \fBSQL_CURSOR_FORWARD_ONLY\fP 0"
+.br
+.ti -1c
+.RI "const \fBSQL_CURSOR_KEYSET_DRIVEN\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQL_CURSOR_DYNAMIC\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQL_CURSOR_STATIC\fP 3"
+.br
+.ti -1c
+.RI "const \fBSQL_KEYSET_SIZE\fP 8"
+.br
+.ti -1c
+.RI "const \fBSQL_FETCH_FIRST\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQL_FETCH_NEXT\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQL_CHAR\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQL_VARCHAR\fP 12"
+.br
+.ti -1c
+.RI "const \fBSQL_LONGVARCHAR\fP \-1"
+.br
+.ti -1c
+.RI "const \fBSQL_DECIMAL\fP 3"
+.br
+.ti -1c
+.RI "const \fBSQL_NUMERIC\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQL_BIT\fP \-7"
+.br
+.ti -1c
+.RI "const \fBSQL_TINYINT\fP \-6"
+.br
+.ti -1c
+.RI "const \fBSQL_SMALLINT\fP 5"
+.br
+.ti -1c
+.RI "const \fBSQL_INTEGER\fP 4"
+.br
+.ti -1c
+.RI "const \fBSQL_BIGINT\fP \-5"
+.br
+.ti -1c
+.RI "const \fBSQL_REAL\fP 7"
+.br
+.ti -1c
+.RI "const \fBSQL_FLOAT\fP 6"
+.br
+.ti -1c
+.RI "const \fBSQL_DOUBLE\fP 8"
+.br
+.ti -1c
+.RI "const \fBSQL_BINARY\fP \-2"
+.br
+.ti -1c
+.RI "const \fBSQL_VARBINARY\fP \-3"
+.br
+.ti -1c
+.RI "const \fBSQL_LONGVARBINARY\fP \-4"
+.br
+.ti -1c
+.RI "const \fBSQL_DATE\fP 9"
+.br
+.ti -1c
+.RI "const \fBSQL_TIME\fP 10"
+.br
+.ti -1c
+.RI "const \fBSQL_TIMESTAMP\fP 11"
+.br
+.ti -1c
+.RI "const \fBSQL_TYPE_DATE\fP 91"
+.br
+.ti -1c
+.RI "const \fBSQL_TYPE_TIME\fP 92"
+.br
+.ti -1c
+.RI "const \fBSQL_TYPE_TIMESTAMP\fP 93"
+.br
+.ti -1c
+.RI "const \fBSQL_WCHAR\fP \-8"
+.br
+.ti -1c
+.RI "const \fBSQL_WVARCHAR\fP \-9"
+.br
+.ti -1c
+.RI "const \fBSQL_WLONGVARCHAR\fP \-10"
+.br
+.ti -1c
+.RI "const \fBSQL_BEST_ROWID\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQL_ROWVER\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQL_SCOPE_CURROW\fP 0"
+.br
+.ti -1c
+.RI "const \fBSQL_SCOPE_TRANSACTION\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQL_SCOPE_SESSION\fP 2"
+.br
+.ti -1c
+.RI "const \fBSQL_NO_NULLS\fP 0"
+.br
+.ti -1c
+.RI "const \fBSQL_NULLABLE\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQL_INDEX_UNIQUE\fP 0"
+.br
+.ti -1c
+.RI "const \fBSQL_INDEX_ALL\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQL_ENSURE\fP 1"
+.br
+.ti -1c
+.RI "const \fBSQL_QUICK\fP 0"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "odbc_autocommit ( $connection_id,  $OnOff = \fC\fBfalse\fP\fP)"
+Toggle autocommit behaviour \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$OnOff\fP [optional] 
+.RE
+.PP
+If \fIOnOff\fP is \fBTRUE\fP, auto-commit is enabled, if it is \fBFALSE\fP auto-commit is disabled\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed Without the \fIOnOff\fP parameter, this function returns auto-commit status for \fIconnection_id\fP\&. Non-zero is returned if auto-commit is on, 0 if it is off, or \fBFALSE\fP if an error occurs\&. 
+.RE
+.PP
+.PP
+If \fIOnOff\fP is set, this function returns \fBTRUE\fP on success and \fBFALSE\fP on failure\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_binmode ( $result_id,  $mode)"
+Handling of binary column data \fBresource $result_id \fP The result identifier\&. 
+.PP
+If \fIresult_id\fP is 0, the settings apply as default for new results\&. Default for longreadlen is 4096 and \fImode\fP defaults to ODBC_BINMODE_RETURN\&. Handling of binary long columns is also affected by \fBodbc_longreadlen\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$mode\fP 
+.RE
+.PP
+Possible values for \fImode\fP are: \fBODBC_BINMODE_PASSTHRU\fP: Passthru BINARY data 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_close ( $connection_id)"
+Close an ODBC connection \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+void No value is returned\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_close_all ()"
+Close all ODBC connections \fBvoid No value is returned\&.  4\&.0  5\&.0 \fP
+.SS "odbc_columnprivileges ( $connection_id,  $qualifier,  $owner,  $table_name,  $column_name)"
+Lists columns and associated privileges for the given table \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP 
+.RE
+.PP
+The qualifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$owner\fP 
+.RE
+.PP
+The owner\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+The table name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$column_name\fP 
+.RE
+.PP
+The \fIcolumn_name\fP argument accepts search patterns ('' to match zero or more characters and '_' to match a single character)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an ODBC result identifier or \fBFALSE\fP on failure\&. This result identifier can be used to fetch a list of columns and associated privileges\&. 
+.RE
+.PP
+.PP
+The result set has the following columns: TABLE_QUALIFIER TABLE_OWNER TABLE_NAME GRANTOR GRANTEE PRIVILEGE IS_GRANTABLE 
+.PP
+The result set is ordered by TABLE_QUALIFIER, TABLE_OWNER and TABLE_NAME\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_columns ( $connection_id,  $qualifier = \fC\fBnull\fP\fP,  $schema = \fC\fBnull\fP\fP,  $table_name = \fC\fBnull\fP\fP,  $column_name = \fC\fBnull\fP\fP)"
+Lists the column names in specified tables \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP [optional] 
+.RE
+.PP
+The qualifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$schema\fP [optional] 
+.RE
+.PP
+The owner\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP [optional] 
+.RE
+.PP
+The table name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$column_name\fP [optional] 
+.RE
+.PP
+The column name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an ODBC result identifier or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+The result set has the following columns: TABLE_QUALIFIER TABLE_SCHEM TABLE_NAME COLUMN_NAME DATA_TYPE TYPE_NAME PRECISION LENGTH SCALE RADIX NULLABLE REMARKS 
+.PP
+The result set is ordered by TABLE_QUALIFIER, TABLE_SCHEM and TABLE_NAME\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_commit ( $connection_id)"
+Commit an ODBC transaction \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_connect ( $dsn,  $user,  $password,  $cursor_type = \fC\fBnull\fP\fP)"
+Connect to a datasource \fBstring $dsn \fP The database source name for the connection\&. Alternatively, a DSN-less connection string can be used\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$user\fP 
+.RE
+.PP
+The username\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$password\fP 
+.RE
+.PP
+The password\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$cursor_type\fP [optional] 
+.RE
+.PP
+This sets the type of cursor to be used for this connection\&. This parameter is not normally needed, but can be useful for working around problems with some ODBC drivers\&. 
+.PP
+The following constants are defined for cursortype: 
+.PP
+SQL_CUR_USE_IF_NEEDED 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an ODBC connection or (\fBFALSE\fP) on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_cursor ( $result_id)"
+Get cursorname \fBresource $result_id \fP The result identifier\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the cursor name, as a string\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_data_source ( $connection_id,  $fetch_type)"
+Returns information about a current connection \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fetch_type\fP 
+.RE
+.PP
+The \fIfetch_type\fP can be one of two constant types: \fBSQL_FETCH_FIRST\fP, \fBSQL_FETCH_NEXT\fP\&. Use \fBSQL_FETCH_FIRST\fP the first time this function is called, thereafter use the \fBSQL_FETCH_NEXT\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false \fBFALSE\fP on error, and an array upon success\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_do ( $connection_id,  $query,  $flags)"
+Alias of \fBodbc_exec\fP \fB$connection_id  $query  $flags [optional]  4\&.0  5\&.0 \fP
+.SS "odbc_error ( $connection_id = \fC\fBnull\fP\fP)"
+Get the last error code \fBresource $connection_id [optional] The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+string If \fIconnection_id\fP is specified, the last state of that connection is returned, else the last state of any connection is returned\&. 
+.RE
+.PP
+.PP
+This function returns meaningful value only if last odbc query failed (i\&.e\&. \fBodbc_exec\fP returned \fBFALSE\fP)\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_errormsg ( $connection_id = \fC\fBnull\fP\fP)"
+Get the last error message \fBresource $connection_id [optional] The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+string If \fIconnection_id\fP is specified, the last state of that connection is returned, else the last state of any connection is returned\&. 
+.RE
+.PP
+.PP
+This function returns meaningful value only if last odbc query failed (i\&.e\&. \fBodbc_exec\fP returned \fBFALSE\fP)\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_exec ( $connection_id,  $query_string,  $flags = \fC\fBnull\fP\fP)"
+Prepare and execute an SQL statement \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$query_string\fP 
+.RE
+.PP
+The SQL statement\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$flags\fP [optional] 
+.RE
+.PP
+This parameter is currently not used\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource an ODBC result identifier if the SQL command was executed successfully, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_execute ( $result_id, array $parameters_array = \fC\fBnull\fP\fP)"
+Execute a prepared statement \fBresource $result_id \fP The result id resource, from \fBodbc_prepare\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$parameters_array\fP [optional] 
+.RE
+.PP
+Parameters in \fIparameter_array\fP will be substituted for placeholders in the prepared statement in order\&. Elements of this array will be converted to strings by calling this function\&. 
+.PP
+Any parameters in \fIparameter_array\fP which start and end with single quotes will be taken as the name of a file to read and send to the database server as the data for the appropriate placeholder\&. 
+.PP
+If you wish to store a string which actually begins and ends with single quotes, you must add a space or other non-single-quote character to the beginning or end of the parameter, which will prevent the parameter from being taken as a file name\&. If this is not an option, then you must use another mechanism to store the string, such as executing the query directly with \fBodbc_exec\fP)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_fetch_array ( $result,  $rownumber = \fC\fBnull\fP\fP)"
+Fetch a result row as an associative array \fBresource $result \fP The result resource from \fBodbc_exec\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$rownumber\fP [optional] 
+.RE
+.PP
+Optionally choose which row number to retrieve\&. 
+.PP
+\fBReturns\fP
+.RS 4
+array|false an array that corresponds to the fetched row, or \fBFALSE\fP if there are no more rows\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_fetch_into ( $result_id, array & $result_array,  $rownumber = \fC\fBnull\fP\fP)"
+Fetch one result row into array \fBresource $result_id \fP The result resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$result_array\fP 
+.RE
+.PP
+The result array that can be of any type since it will be converted to type array\&. The array will contain the column values starting at array index 0\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$rownumber\fP [optional] 
+.RE
+.PP
+The row number\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of columns in the result; \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_fetch_object ( $result,  $rownumber = \fC\fBnull\fP\fP)"
+Fetch a result row as an object \fBresource $result \fP The result resource from \fBodbc_exec\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$rownumber\fP [optional] 
+.RE
+.PP
+Optionally choose which row number to retrieve\&. 
+.PP
+\fBReturns\fP
+.RS 4
+object|false an object that corresponds to the fetched row, or \fBFALSE\fP if there are no more rows\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.2 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_fetch_row ( $result_id,  $row_number = \fC\fBnull\fP\fP)"
+Fetch a row \fBresource $result_id \fP The result identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$row_number\fP [optional] 
+.RE
+.PP
+If \fIrow_number\fP is not specified, \fBodbc_fetch_row\fP will try to fetch the next row in the result set\&. Calls to \fBodbc_fetch_row\fP with and without \fIrow_number\fP can be mixed\&. 
+.PP
+To step through the result more than once, you can call \fBodbc_fetch_row\fP with \fIrow_number\fP 1, and then continue doing \fBodbc_fetch_row\fP without \fIrow_number\fP to review the result\&. If a driver doesn't support fetching rows by number, the \fIrow_number\fP parameter is ignored\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if there was a row, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_field_len ( $result_id,  $field_number)"
+Get the length (precision) of a field \fBresource $result_id \fP The result identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_number\fP 
+.RE
+.PP
+The field number\&. Field numbering starts at 1\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the field name as a string, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_field_name ( $result_id,  $field_number)"
+Get the columnname \fBresource $result_id \fP The result identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_number\fP 
+.RE
+.PP
+The field number\&. Field numbering starts at 1\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the field name as a string, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_field_num ( $result_id,  $field_name)"
+Return column number \fBresource $result_id \fP The result identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_name\fP 
+.RE
+.PP
+The field name\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the field number as a integer, or \fBFALSE\fP on error\&. Field numbering starts at 1\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_field_precision ( $result_id,  $field_number)"
+Alias of \fBodbc_field_len\fP \fB$result_id  $field_number  4\&.0  5\&.0 \fP
+.SS "odbc_field_scale ( $result_id,  $field_number)"
+Get the scale of a field \fBresource $result_id \fP The result identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_number\fP 
+.RE
+.PP
+The field number\&. Field numbering starts at 1\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the field scale as a integer, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_field_type ( $result_id,  $field_number)"
+Datatype of a field \fBresource $result_id \fP The result identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field_number\fP 
+.RE
+.PP
+The field number\&. Field numbering starts at 1\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string|false the field type as a string, or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_foreignkeys ( $connection_id,  $pk_qualifier,  $pk_owner,  $pk_table,  $fk_qualifier,  $fk_owner,  $fk_table)"
+Retrieves a list of foreign keys \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pk_qualifier\fP 
+.RE
+.PP
+The primary key qualifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pk_owner\fP 
+.RE
+.PP
+The primary key owner\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$pk_table\fP 
+.RE
+.PP
+The primary key table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fk_qualifier\fP 
+.RE
+.PP
+The foreign key qualifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fk_owner\fP 
+.RE
+.PP
+The foreign key owner\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$fk_table\fP 
+.RE
+.PP
+The foreign key table\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an ODBC result identifier or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+The result set has the following columns: PKTABLE_QUALIFIER PKTABLE_OWNER PKTABLE_NAME PKCOLUMN_NAME FKTABLE_QUALIFIER FKTABLE_OWNER FKTABLE_NAME FKCOLUMN_NAME KEY_SEQ UPDATE_RULE DELETE_RULE FK_NAME PK_NAME 
+.PP
+If \fIpk_table\fP contains a table name, \fBodbc_foreignkeys\fP returns a result set containing the primary key of the specified table and all of the foreign keys that refer to it\&. If \fIfk_table\fP contains a table name, \fBodbc_foreignkeys\fP returns a result set containing all of the foreign keys in the specified table and the primary keys (in other tables) to which they refer\&. If both \fIpk_table\fP and \fIfk_table\fP contain table names, \fBodbc_foreignkeys\fP returns the foreign keys in the table specified in \fIfk_table\fP that refer to the primary key of the table specified in \fIpk_table 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+\fP
+.SS "odbc_free_result ( $result_id)"
+Free resources associated with a result \fBresource $result_id \fP The result identifier\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool Always returns \fBTRUE\fP\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_gettypeinfo ( $connection_id,  $data_type = \fC\fBnull\fP\fP)"
+Retrieves information about data types supported by the data source \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$data_type\fP [optional] 
+.RE
+.PP
+The data type, which can be used to restrict the information to a single data type\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource an ODBC result identifier or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+The result set has the following columns: TYPE_NAME DATA_TYPE PRECISION LITERAL_PREFIX LITERAL_SUFFIX CREATE_PARAMS NULLABLE CASE_SENSITIVE SEARCHABLE UNSIGNED_ATTRIBUTE MONEY AUTO_INCREMENT LOCAL_TYPE_NAME MINIMUM_SCALE MAXIMUM_SCALE 
+.PP
+The result set is ordered by DATA_TYPE and TYPE_NAME\&. 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_longreadlen ( $result_id,  $length)"
+Handling of LONG columns \fBresource $result_id \fP The result identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$length\fP 
+.RE
+.PP
+The number of bytes returned to PHP is controlled by the parameter length\&. If it is set to 0, Long column data is passed through to the client\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_next_result ( $result_id)"
+Checks if multiple results are available \fBresource $result_id \fP The result identifier\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP if there are more result sets, \fBFALSE\fP otherwise\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0\&.5 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_num_fields ( $result_id)"
+Number of columns in a result \fBresource $result_id \fP The result identifier returned by \fBodbc_exec\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of fields, or -1 on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_num_rows ( $result_id)"
+Number of rows in a result \fBresource $result_id \fP The result identifier returned by \fBodbc_exec\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int the number of rows in an ODBC result\&. This function will return -1 on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_pconnect ( $dsn,  $user,  $password,  $cursor_type = \fC\fBnull\fP\fP)"
+Open a persistent database connection \fBstring $dsn  string $user  string $password  int $cursor_type [optional]  resource|false an ODBC connection id or 0 (\fBFALSE\fP) on error\&.  4\&.0  5\&.0 \fP
+.SS "odbc_prepare ( $connection_id,  $query_string)"
+Prepares a statement for execution \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$query_string\fP 
+.RE
+.PP
+The query string statement being prepared\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an ODBC result identifier if the SQL command was prepared successfully\&. Returns \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_primarykeys ( $connection_id,  $qualifier,  $owner,  $table)"
+Gets the primary keys for a table \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP 
+.br
+\fI$owner\fP 
+.br
+\fI$table\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an ODBC result identifier or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+The result set has the following columns: TABLE_QUALIFIER TABLE_OWNER TABLE_NAME COLUMN_NAME KEY_SEQ PK_NAME 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_procedurecolumns ( $connection_id)"
+Retrieve information about parameters to procedures \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false the list of input and output parameters, as well as the columns that make up the result set for the specified procedures\&. Returns an ODBC result identifier or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+The result set has the following columns: PROCEDURE_QUALIFIER PROCEDURE_OWNER PROCEDURE_NAME COLUMN_NAME COLUMN_TYPE DATA_TYPE TYPE_NAME PRECISION LENGTH SCALE RADIX NULLABLE REMARKS 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_procedures ( $connection_id)"
+Get the list of procedures stored in a specific data source \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+resource an ODBC result identifier containing the information or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+The result set has the following columns: PROCEDURE_QUALIFIER PROCEDURE_OWNER PROCEDURE_NAME NUM_INPUT_PARAMS NUM_OUTPUT_PARAMS NUM_RESULT_SETS REMARKS PROCEDURE_TYPE 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_result ( $result_id,  $field)"
+Get result data \fBresource $result_id \fP The ODBC resource\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$field\fP 
+.RE
+.PP
+The field name being retrieved\&. It can either be an integer containing the column number of the field you want; or it can be a string containing the name of the field\&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed the string contents of the field, \fBFALSE\fP on error, \fBNULL\fP for NULL data, or \fBTRUE\fP for binary data\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_result_all ( $result_id,  $format = \fC\fBnull\fP\fP)"
+Print result as HTML table \fBresource $result_id \fP The result identifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$format\fP [optional] 
+.RE
+.PP
+Additional overall table formatting\&. 
+.PP
+\fBReturns\fP
+.RS 4
+int|false the number of rows in the result or \fBFALSE\fP on error\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_rollback ( $connection_id)"
+Rollback a transaction \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_setoption ( $id,  $function,  $option,  $param)"
+Adjust ODBC settings \fBresource $id \fP Is a connection id or result id on which to change the settings\&. For SQLSetConnectOption(), this is a connection id\&. For SQLSetStmtOption(), this is a result id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$function\fP 
+.RE
+.PP
+Is the ODBC function to use\&. The value should be 1 for SQLSetConnectOption() and 2 for SQLSetStmtOption()\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$option\fP 
+.RE
+.PP
+The option to set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$param\fP 
+.RE
+.PP
+The value for the given \fIoption\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_specialcolumns ( $connection_id,  $type,  $qualifier,  $owner,  $table,  $scope,  $nullable)"
+Retrieves special columns \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$type\fP When the type argument is \fBSQL_BEST_ROWID\fP, \fBodbc_specialcolumns\fP returns the column or columns that uniquely identify each row in the table\&. When the type argument is \fBSQL_ROWVER\fP, \fBodbc_specialcolumns\fP returns the column or columns in the specified table, if any, that are automatically updated by the data source when any value in the row is updated by any transaction\&. 
+.br
+\fI$qualifier\fP 
+.RE
+.PP
+The qualifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$owner\fP 
+.RE
+.PP
+The owner\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table\fP 
+.RE
+.PP
+The table\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$scope\fP 
+.RE
+.PP
+The scope, which orders the result set\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$nullable\fP 
+.RE
+.PP
+The nullable option\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an ODBC result identifier or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+The result set has the following columns: SCOPE COLUMN_NAME DATA_TYPE TYPE_NAME PRECISION LENGTH SCALE PSEUDO_COLUMN 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_statistics ( $connection_id,  $qualifier,  $owner,  $table_name,  $unique,  $accuracy)"
+Retrieve statistics about a table \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP 
+.RE
+.PP
+The qualifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$owner\fP 
+.RE
+.PP
+The owner\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$table_name\fP 
+.RE
+.PP
+The table name\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$unique\fP 
+.RE
+.PP
+The unique attribute\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$accuracy\fP 
+.RE
+.PP
+The accuracy\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false an ODBC result identifier or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+The result set has the following columns: TABLE_QUALIFIER TABLE_OWNER TABLE_NAME NON_UNIQUE INDEX_QUALIFIER INDEX_NAME TYPE SEQ_IN_INDEX COLUMN_NAME COLLATION CARDINALITY PAGES FILTER_CONDITION 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_tableprivileges ( $connection_id,  $qualifier,  $owner,  $name)"
+Lists tables and the privileges associated with each table \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP 
+.RE
+.PP
+The qualifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$owner\fP 
+.RE
+.PP
+The owner\&. Accepts the following search patterns: ('' to match zero or more characters and '_' to match a single character) 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP 
+.RE
+.PP
+The name\&. Accepts the following search patterns: ('' to match zero or more characters and '_' to match a single character) 
+.PP
+\fBReturns\fP
+.RS 4
+resource|false An ODBC result identifier or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+The result set has the following columns: TABLE_QUALIFIER TABLE_OWNER TABLE_NAME GRANTOR GRANTEE PRIVILEGE IS_GRANTABLE 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SS "odbc_tables ( $connection_id,  $qualifier = \fC\fBnull\fP\fP,  $owner = \fC\fBnull\fP\fP,  $name = \fC\fBnull\fP\fP,  $types = \fC\fBnull\fP\fP)"
+Get the list of table names stored in a specific data source \fBresource $connection_id The ODBC connection identifier, see \fBodbc_connect\fP for details\&.\fP 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qualifier\fP [optional] 
+.RE
+.PP
+The qualifier\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$owner\fP [optional] 
+.RE
+.PP
+The owner\&. Accepts search patterns ('' to match zero or more characters and '_' to match a single character)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$name\fP [optional] 
+.RE
+.PP
+The name\&. Accepts search patterns ('' to match zero or more characters and '_' to match a single character)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$types\fP [optional] 
+.RE
+.PP
+If \fItable_type\fP is not an empty string, it must contain a list of comma-separated values for the types of interest; each value may be enclosed in single quotes (') or unquoted\&. For example, ''TABLE','VIEW'' or 'TABLE, VIEW'\&. If the data source does not support a specified table type, \fBodbc_tables\fP does not return any results for that type\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource an ODBC result identifier containing the information or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+.PP
+The result set has the following columns: TABLE_QUALIFIER TABLE_OWNER TABLE_NAME TABLE_TYPE REMARKS 
+.PP
+\fBSince\fP
+.RS 4
+4\&.0 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const ODBC_BINMODE_CONVERT 2"
+
+.SS "const ODBC_BINMODE_PASSTHRU 0"
+
+.SS "const ODBC_BINMODE_RETURN 1"
+
+.SS "const ODBC_TYPE 'unixODBC'"
+
+.SS "const SQL_BEST_ROWID 1"
+
+.SS "const SQL_BIGINT \-5"
+
+.SS "const SQL_BINARY \-2"
+
+.SS "const SQL_BIT \-7"
+
+.SS "const SQL_CHAR 1"
+
+.SS "const SQL_CONCUR_LOCK 2"
+
+.SS "const SQL_CONCUR_READ_ONLY 1"
+
+.SS "const SQL_CONCUR_ROWVER 3"
+
+.SS "const SQL_CONCUR_VALUES 4"
+
+.SS "const SQL_CONCURRENCY 7"
+
+.SS "const SQL_CUR_USE_DRIVER 2"
+
+.SS "const SQL_CUR_USE_IF_NEEDED 0"
+
+.SS "const SQL_CUR_USE_ODBC 1"
+
+.SS "const SQL_CURSOR_DYNAMIC 2"
+
+.SS "const SQL_CURSOR_FORWARD_ONLY 0"
+
+.SS "const SQL_CURSOR_KEYSET_DRIVEN 1"
+
+.SS "const SQL_CURSOR_STATIC 3"
+
+.SS "const SQL_CURSOR_TYPE 6"
+
+.SS "const SQL_DATE 9"
+
+.SS "const SQL_DECIMAL 3"
+
+.SS "const SQL_DOUBLE 8"
+
+.SS "const SQL_ENSURE 1"
+
+.SS "const SQL_FETCH_FIRST 2"
+
+.SS "const SQL_FETCH_NEXT 1"
+
+.SS "const SQL_FLOAT 6"
+
+.SS "const SQL_INDEX_ALL 1"
+
+.SS "const SQL_INDEX_UNIQUE 0"
+
+.SS "const SQL_INTEGER 4"
+
+.SS "const SQL_KEYSET_SIZE 8"
+
+.SS "const SQL_LONGVARBINARY \-4"
+
+.SS "const SQL_LONGVARCHAR \-1"
+
+.SS "const SQL_NO_NULLS 0"
+
+.SS "const SQL_NULLABLE 1"
+
+.SS "const SQL_NUMERIC 2"
+
+.SS "const SQL_ODBC_CURSORS 110"
+
+.SS "const SQL_QUICK 0"
+
+.SS "const SQL_REAL 7"
+
+.SS "const SQL_ROWVER 2"
+
+.SS "const SQL_SCOPE_CURROW 0"
+
+.SS "const SQL_SCOPE_SESSION 2"
+
+.SS "const SQL_SCOPE_TRANSACTION 1"
+
+.SS "const SQL_SMALLINT 5"
+
+.SS "const SQL_TIME 10"
+
+.SS "const SQL_TIMESTAMP 11"
+
+.SS "const SQL_TINYINT \-6"
+
+.SS "const SQL_TYPE_DATE 91"
+
+.SS "const SQL_TYPE_TIME 92"
+
+.SS "const SQL_TYPE_TIMESTAMP 93"
+
+.SS "const SQL_VARBINARY \-3"
+
+.SS "const SQL_VARCHAR 12"
+
+.SS "const SQL_WCHAR \-8"
+
+.SS "const SQL_WLONGVARCHAR \-10"
+
+.SS "const SQL_WVARCHAR \-9"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

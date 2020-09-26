@@ -1,0 +1,6922 @@
+.TH "vendor/jetbrains/phpstorm-stubs/mqseries/mqseries.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/mqseries/mqseries.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBmqseries_back\fP ($hconn, &$compCode, &$reason)"
+.br
+.ti -1c
+.RI "\fBmqseries_begin\fP ($hconn, array $beginOptions, &$compCode, &$reason)"
+.br
+.ti -1c
+.RI "\fBmqseries_close\fP ($hconn, $hobj, $options, &$compCode, &$reason)"
+.br
+.ti -1c
+.RI "\fBmqseries_cmit\fP ($hconn, &$compCode, &$reason)"
+.br
+.ti -1c
+.RI "\fBmqseries_conn\fP ($qManagerName, &$hconn, &$compCode, &$reason)"
+.br
+.ti -1c
+.RI "\fBmqseries_connx\fP ($qManagerName, array &$connOptions, &$hconn, &$compCode, &$reason)"
+.br
+.ti -1c
+.RI "\fBmqseries_disc\fP ($hconn, &$compCode, &$reason)"
+.br
+.ti -1c
+.RI "\fBmqseries_get\fP ($hConn, $hObj, array &$md, array &$gmo, &$bufferLength, &$msg, &$data_length, &$compCode, &$reason)"
+.br
+.ti -1c
+.RI "\fBmqseries_inq\fP ($hconn, $hobj, $selectorCount, array $selectors, $intAttrCount, &$intAttr, $charAttrLength, &$charAttr, &$compCode, &$reason)"
+.br
+.ti -1c
+.RI "\fBmqseries_open\fP ($hconn, array &$objDesc, $option, &$hobj, &$compCode, &$reason)"
+.br
+.ti -1c
+.RI "\fBmqseries_put1\fP ($hconn, &$objDesc, &$msgDesc, &$pmo, $buffer, &$compCode, &$reason)"
+.br
+.ti -1c
+.RI "\fBmqseries_put\fP ($hConn, $hObj, array &$md, array &$pmo, $message, &$compCode, &$reason)"
+.br
+.ti -1c
+.RI "\fBmqseries_set\fP ($hconn, $hobj, $selectorcount, array $selectors, $intattrcount, array $intattrs, $charattrlength, array $charattrs, &$compCode, &$reason)"
+.br
+.ti -1c
+.RI "\fBmqseries_strerror\fP ($reason)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBMQSERIES_MQCC_OK\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCC_WARNING\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCC_FAILED\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCC_UNKNOWN\fP \-1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_APPL_FIRST\fP 900"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_APPL_LAST\fP 999"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ALIAS_BASE_Q_TYPE_ERROR\fP 2001"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ALREADY_CONNECTED\fP 2002"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_BACKED_OUT\fP 2003"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_BUFFER_ERROR\fP 2004"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_BUFFER_LENGTH_ERROR\fP 2005"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHAR_ATTR_LENGTH_ERROR\fP 2006"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHAR_ATTRS_ERROR\fP 2007"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHAR_ATTRS_TOO_SHORT\fP 2008"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONNECTION_BROKEN\fP 2009"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DATA_LENGTH_ERROR\fP 2010"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DYNAMIC_Q_NAME_ERROR\fP 2011"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ENVIRONMENT_ERROR\fP 2012"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_EXPIRY_ERROR\fP 2013"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_FEEDBACK_ERROR\fP 2014"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_GET_INHIBITED\fP 2016"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_HANDLE_NOT_AVAILABLE\fP 2017"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_HCONN_ERROR\fP 2018"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_HOBJ_ERROR\fP 2019"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INHIBIT_VALUE_ERROR\fP 2020"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INT_ATTR_COUNT_ERROR\fP 2021"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INT_ATTR_COUNT_TOO_SMALL\fP 2022"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INT_ATTRS_ARRAY_ERROR\fP 2023"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SYNCPOINT_LIMIT_REACHED\fP 2024"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MAX_CONNS_LIMIT_REACHED\fP 2025"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MD_ERROR\fP 2026"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MISSING_REPLY_TO_Q\fP 2027"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MSG_TYPE_ERROR\fP 2029"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MSG_TOO_BIG_FOR_Q\fP 2030"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MSG_TOO_BIG_FOR_Q_MGR\fP 2031"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NO_MSG_AVAILABLE\fP 2033"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NO_MSG_UNDER_CURSOR\fP 2034"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NOT_AUTHORIZED\fP 2035"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NOT_OPEN_FOR_BROWSE\fP 2036"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NOT_OPEN_FOR_INPUT\fP 2037"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NOT_OPEN_FOR_INQUIRE\fP 2038"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NOT_OPEN_FOR_OUTPUT\fP 2039"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NOT_OPEN_FOR_SET\fP 2040"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OBJECT_CHANGED\fP 2041"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OBJECT_IN_USE\fP 2042"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OBJECT_TYPE_ERROR\fP 2043"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OD_ERROR\fP 2044"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OPTION_NOT_VALID_FOR_TYPE\fP 2045"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OPTIONS_ERROR\fP 2046"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PERSISTENCE_ERROR\fP 2047"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PERSISTENT_NOT_ALLOWED\fP 2048"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PRIORITY_EXCEEDS_MAXIMUM\fP 2049"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PRIORITY_ERROR\fP 2050"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PUT_INHIBITED\fP 2051"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_DELETED\fP 2052"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_FULL\fP 2053"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_NOT_EMPTY\fP 2055"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_SPACE_NOT_AVAILABLE\fP 2056"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_TYPE_ERROR\fP 2057"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_MGR_NAME_ERROR\fP 2058"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_MGR_NOT_AVAILABLE\fP 2059"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_REPORT_OPTIONS_ERROR\fP 2061"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SECOND_MARK_NOT_ALLOWED\fP 2062"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SECURITY_ERROR\fP 2063"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTOR_COUNT_ERROR\fP 2065"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTOR_LIMIT_EXCEEDED\fP 2066"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTOR_ERROR\fP 2067"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTOR_NOT_FOR_TYPE\fP 2068"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SIGNAL_OUTSTANDING\fP 2069"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SIGNAL_REQUEST_ACCEPTED\fP 2070"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_STORAGE_NOT_AVAILABLE\fP 2071"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SYNCPOINT_NOT_AVAILABLE\fP 2072"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TRIGGER_CONTROL_ERROR\fP 2075"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TRIGGER_DEPTH_ERROR\fP 2076"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TRIGGER_MSG_PRIORITY_ERR\fP 2077"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TRIGGER_TYPE_ERROR\fP 2078"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TRUNCATED_MSG_ACCEPTED\fP 2079"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TRUNCATED_MSG_FAILED\fP 2080"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNKNOWN_ALIAS_BASE_Q\fP 2082"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNKNOWN_OBJECT_NAME\fP 2085"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNKNOWN_OBJECT_Q_MGR\fP 2086"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNKNOWN_REMOTE_Q_MGR\fP 2087"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_WAIT_INTERVAL_ERROR\fP 2090"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_XMIT_Q_TYPE_ERROR\fP 2091"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_XMIT_Q_USAGE_ERROR\fP 2092"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NOT_OPEN_FOR_PASS_ALL\fP 2093"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NOT_OPEN_FOR_PASS_IDENT\fP 2094"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NOT_OPEN_FOR_SET_ALL\fP 2095"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NOT_OPEN_FOR_SET_IDENT\fP 2096"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONTEXT_HANDLE_ERROR\fP 2097"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONTEXT_NOT_AVAILABLE\fP 2098"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SIGNAL1_ERROR\fP 2099"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OBJECT_ALREADY_EXISTS\fP 2100"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OBJECT_DAMAGED\fP 2101"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RESOURCE_PROBLEM\fP 2102"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ANOTHER_Q_MGR_CONNECTED\fP 2103"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNKNOWN_REPORT_OPTION\fP 2104"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_STORAGE_CLASS_ERROR\fP 2105"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_COD_NOT_VALID_FOR_XCF_Q\fP 2106"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_XWAIT_CANCELED\fP 2107"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_XWAIT_ERROR\fP 2108"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SUPPRESSED_BY_EXIT\fP 2109"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_FORMAT_ERROR\fP 2110"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SOURCE_CCSID_ERROR\fP 2111"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SOURCE_INTEGER_ENC_ERROR\fP 2112"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SOURCE_DECIMAL_ENC_ERROR\fP 2113"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SOURCE_FLOAT_ENC_ERROR\fP 2114"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TARGET_CCSID_ERROR\fP 2115"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TARGET_INTEGER_ENC_ERROR\fP 2116"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TARGET_DECIMAL_ENC_ERROR\fP 2117"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TARGET_FLOAT_ENC_ERROR\fP 2118"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NOT_CONVERTED\fP 2119"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONVERTED_MSG_TOO_BIG\fP 2120"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TRUNCATED\fP 2120"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NO_EXTERNAL_PARTICIPANTS\fP 2121"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PARTICIPANT_NOT_AVAILABLE\fP 2122"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OUTCOME_MIXED\fP 2123"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OUTCOME_PENDING\fP 2124"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_BRIDGE_STARTED\fP 2125"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_BRIDGE_STOPPED\fP 2126"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ADAPTER_STORAGE_SHORTAGE\fP 2127"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UOW_IN_PROGRESS\fP 2128"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ADAPTER_CONN_LOAD_ERROR\fP 2129"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ADAPTER_SERV_LOAD_ERROR\fP 2130"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ADAPTER_DEFS_ERROR\fP 2131"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ADAPTER_DEFS_LOAD_ERROR\fP 2132"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ADAPTER_CONV_LOAD_ERROR\fP 2133"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_BO_ERROR\fP 2134"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DH_ERROR\fP 2135"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MULTIPLE_REASONS\fP 2136"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OPEN_FAILED\fP 2137"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ADAPTER_DISC_LOAD_ERROR\fP 2138"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CNO_ERROR\fP 2139"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CICS_WAIT_FAILED\fP 2140"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DLH_ERROR\fP 2141"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_HEADER_ERROR\fP 2142"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SOURCE_LENGTH_ERROR\fP 2143"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TARGET_LENGTH_ERROR\fP 2144"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SOURCE_BUFFER_ERROR\fP 2145"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TARGET_BUFFER_ERROR\fP 2146"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_IIH_ERROR\fP 2148"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PCF_ERROR\fP 2149"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DBCS_ERROR\fP 2150"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OBJECT_NAME_ERROR\fP 2152"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OBJECT_Q_MGR_NAME_ERROR\fP 2153"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RECS_PRESENT_ERROR\fP 2154"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OBJECT_RECORDS_ERROR\fP 2155"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RESPONSE_RECORDS_ERROR\fP 2156"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ASID_MISMATCH\fP 2157"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PMO_RECORD_FLAGS_ERROR\fP 2158"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PUT_MSG_RECORDS_ERROR\fP 2159"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONN_ID_IN_USE\fP 2160"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_MGR_QUIESCING\fP 2161"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_MGR_STOPPING\fP 2162"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DUPLICATE_RECOV_COORD\fP 2163"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PMO_ERROR\fP 2173"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_API_EXIT_NOT_FOUND\fP 2182"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_API_EXIT_LOAD_ERROR\fP 2183"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_REMOTE_Q_NAME_ERROR\fP 2184"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INCONSISTENT_PERSISTENCE\fP 2185"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_GMO_ERROR\fP 2186"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CICS_BRIDGE_RESTRICTION\fP 2187"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_STOPPED_BY_CLUSTER_EXIT\fP 2188"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CLUSTER_RESOLUTION_ERROR\fP 2189"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONVERTED_STRING_TOO_BIG\fP 2190"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TMC_ERROR\fP 2191"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PAGESET_FULL\fP 2192"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_STORAGE_MEDIUM_FULL\fP 2192"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PAGESET_ERROR\fP 2193"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NAME_NOT_VALID_FOR_TYPE\fP 2194"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNEXPECTED_ERROR\fP 2195"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNKNOWN_XMIT_Q\fP 2196"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNKNOWN_DEF_XMIT_Q\fP 2197"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DEF_XMIT_Q_TYPE_ERROR\fP 2198"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DEF_XMIT_Q_USAGE_ERROR\fP 2199"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MSG_MARKED_BROWSE_CO_OP\fP 2200"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NAME_IN_USE\fP 2201"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONNECTION_QUIESCING\fP 2202"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONNECTION_STOPPING\fP 2203"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ADAPTER_NOT_AVAILABLE\fP 2204"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MSG_ID_ERROR\fP 2206"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CORREL_ID_ERROR\fP 2207"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_FILE_SYSTEM_ERROR\fP 2208"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NO_MSG_LOCKED\fP 2209"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SOAP_DOTNET_ERROR\fP 2210"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SOAP_AXIS_ERROR\fP 2211"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SOAP_URL_ERROR\fP 2212"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_FILE_NOT_AUDITED\fP 2216"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONNECTION_NOT_AUTHORIZED\fP 2217"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MSG_TOO_BIG_FOR_CHANNEL\fP 2218"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CALL_IN_PROGRESS\fP 2219"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RMH_ERROR\fP 2220"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_MGR_ACTIVE\fP 2222"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_MGR_NOT_ACTIVE\fP 2223"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_DEPTH_HIGH\fP 2224"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_DEPTH_LOW\fP 2225"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_SERVICE_INTERVAL_HIGH\fP 2226"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_SERVICE_INTERVAL_OK\fP 2227"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RFH_HEADER_FIELD_ERROR\fP 2228"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RAS_PROPERTY_ERROR\fP 2229"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNIT_OF_WORK_NOT_STARTED\fP 2232"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHANNEL_AUTO_DEF_OK\fP 2233"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHANNEL_AUTO_DEF_ERROR\fP 2234"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CFH_ERROR\fP 2235"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CFIL_ERROR\fP 2236"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CFIN_ERROR\fP 2237"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CFSL_ERROR\fP 2238"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CFST_ERROR\fP 2239"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INCOMPLETE_GROUP\fP 2241"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INCOMPLETE_MSG\fP 2242"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INCONSISTENT_CCSIDS\fP 2243"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INCONSISTENT_ENCODINGS\fP 2244"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INCONSISTENT_UOW\fP 2245"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INVALID_MSG_UNDER_CURSOR\fP 2246"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MATCH_OPTIONS_ERROR\fP 2247"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MDE_ERROR\fP 2248"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MSG_FLAGS_ERROR\fP 2249"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MSG_SEQ_NUMBER_ERROR\fP 2250"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OFFSET_ERROR\fP 2251"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ORIGINAL_LENGTH_ERROR\fP 2252"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SEGMENT_LENGTH_ZERO\fP 2253"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UOW_NOT_AVAILABLE\fP 2255"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_WRONG_GMO_VERSION\fP 2256"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_WRONG_MD_VERSION\fP 2257"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_GROUP_ID_ERROR\fP 2258"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INCONSISTENT_BROWSE\fP 2259"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_XQH_ERROR\fP 2260"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SRC_ENV_ERROR\fP 2261"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SRC_NAME_ERROR\fP 2262"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DEST_ENV_ERROR\fP 2263"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DEST_NAME_ERROR\fP 2264"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TM_ERROR\fP 2265"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CLUSTER_EXIT_ERROR\fP 2266"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CLUSTER_EXIT_LOAD_ERROR\fP 2267"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CLUSTER_PUT_INHIBITED\fP 2268"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CLUSTER_RESOURCE_ERROR\fP 2269"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NO_DESTINATIONS_AVAILABLE\fP 2270"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONN_TAG_IN_USE\fP 2271"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PARTIALLY_CONVERTED\fP 2272"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONNECTION_ERROR\fP 2273"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OPTION_ENVIRONMENT_ERROR\fP 2274"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CD_ERROR\fP 2277"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CLIENT_CONN_ERROR\fP 2278"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHANNEL_STOPPED_BY_USER\fP 2279"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_HCONFIG_ERROR\fP 2280"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_FUNCTION_ERROR\fP 2281"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHANNEL_STARTED\fP 2282"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHANNEL_STOPPED\fP 2283"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHANNEL_CONV_ERROR\fP 2284"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SERVICE_NOT_AVAILABLE\fP 2285"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INITIALIZATION_FAILED\fP 2286"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TERMINATION_FAILED\fP 2287"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNKNOWN_Q_NAME\fP 2288"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SERVICE_ERROR\fP 2289"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_ALREADY_EXISTS\fP 2290"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_USER_ID_NOT_AVAILABLE\fP 2291"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNKNOWN_ENTITY\fP 2292"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNKNOWN_AUTH_ENTITY\fP 2293"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNKNOWN_REF_OBJECT\fP 2294"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHANNEL_ACTIVATED\fP 2295"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHANNEL_NOT_ACTIVATED\fP 2296"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UOW_CANCELED\fP 2297"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_FUNCTION_NOT_SUPPORTED\fP 2298"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTOR_TYPE_ERROR\fP 2299"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_COMMAND_TYPE_ERROR\fP 2300"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MULTIPLE_INSTANCE_ERROR\fP 2301"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SYSTEM_ITEM_NOT_ALTERABLE\fP 2302"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_BAG_CONVERSION_ERROR\fP 2303"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTOR_OUT_OF_RANGE\fP 2304"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTOR_NOT_UNIQUE\fP 2305"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INDEX_NOT_PRESENT\fP 2306"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_STRING_ERROR\fP 2307"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ENCODING_NOT_SUPPORTED\fP 2308"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTOR_NOT_PRESENT\fP 2309"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OUT_SELECTOR_ERROR\fP 2310"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_STRING_TRUNCATED\fP 2311"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTOR_WRONG_TYPE\fP 2312"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INCONSISTENT_ITEM_TYPE\fP 2313"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INDEX_ERROR\fP 2314"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SYSTEM_BAG_NOT_ALTERABLE\fP 2315"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ITEM_COUNT_ERROR\fP 2316"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_FORMAT_NOT_SUPPORTED\fP 2317"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTOR_NOT_SUPPORTED\fP 2318"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ITEM_VALUE_ERROR\fP 2319"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_HBAG_ERROR\fP 2320"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PARAMETER_MISSING\fP 2321"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CMD_SERVER_NOT_AVAILABLE\fP 2322"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_STRING_LENGTH_ERROR\fP 2323"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INQUIRY_COMMAND_ERROR\fP 2324"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NESTED_BAG_NOT_SUPPORTED\fP 2325"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_BAG_WRONG_TYPE\fP 2326"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ITEM_TYPE_ERROR\fP 2327"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SYSTEM_BAG_NOT_DELETABLE\fP 2328"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SYSTEM_ITEM_NOT_DELETABLE\fP 2329"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CODED_CHAR_SET_ID_ERROR\fP 2330"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MSG_TOKEN_ERROR\fP 2331"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MISSING_WIH\fP 2332"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_WIH_ERROR\fP 2333"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RFH_ERROR\fP 2334"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RFH_STRING_ERROR\fP 2335"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RFH_COMMAND_ERROR\fP 2336"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RFH_PARM_ERROR\fP 2337"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RFH_DUPLICATE_PARM\fP 2338"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RFH_PARM_MISSING\fP 2339"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHAR_CONVERSION_ERROR\fP 2340"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UCS2_CONVERSION_ERROR\fP 2341"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DB2_NOT_AVAILABLE\fP 2342"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OBJECT_NOT_UNIQUE\fP 2343"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONN_TAG_NOT_RELEASED\fP 2344"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CF_NOT_AVAILABLE\fP 2345"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CF_STRUC_IN_USE\fP 2346"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CF_STRUC_LIST_HDR_IN_USE\fP 2347"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CF_STRUC_AUTH_FAILED\fP 2348"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CF_STRUC_ERROR\fP 2349"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONN_TAG_NOT_USABLE\fP 2350"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_GLOBAL_UOW_CONFLICT\fP 2351"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_LOCAL_UOW_CONFLICT\fP 2352"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_HANDLE_IN_USE_FOR_UOW\fP 2353"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UOW_ENLISTMENT_ERROR\fP 2354"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UOW_MIX_NOT_SUPPORTED\fP 2355"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_WXP_ERROR\fP 2356"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CURRENT_RECORD_ERROR\fP 2357"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NEXT_OFFSET_ERROR\fP 2358"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NO_RECORD_AVAILABLE\fP 2359"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OBJECT_LEVEL_INCOMPATIBLE\fP 2360"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NEXT_RECORD_ERROR\fP 2361"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_BACKOUT_THRESHOLD_REACHED\fP 2362"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MSG_NOT_MATCHED\fP 2363"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_JMS_FORMAT_ERROR\fP 2364"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SEGMENTS_NOT_SUPPORTED\fP 2365"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_WRONG_CF_LEVEL\fP 2366"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONFIG_CREATE_OBJECT\fP 2367"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONFIG_CHANGE_OBJECT\fP 2368"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONFIG_DELETE_OBJECT\fP 2369"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONFIG_REFRESH_OBJECT\fP 2370"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHANNEL_SSL_ERROR\fP 2371"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PARTICIPANT_NOT_DEFINED\fP 2372"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CF_STRUC_FAILED\fP 2373"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_API_EXIT_ERROR\fP 2374"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_API_EXIT_INIT_ERROR\fP 2375"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_API_EXIT_TERM_ERROR\fP 2376"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_EXIT_REASON_ERROR\fP 2377"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RESERVED_VALUE_ERROR\fP 2378"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NO_DATA_AVAILABLE\fP 2379"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SCO_ERROR\fP 2380"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_KEY_REPOSITORY_ERROR\fP 2381"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CRYPTO_HARDWARE_ERROR\fP 2382"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_AUTH_INFO_REC_COUNT_ERROR\fP 2383"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_AUTH_INFO_REC_ERROR\fP 2384"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_AIR_ERROR\fP 2385"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_AUTH_INFO_TYPE_ERROR\fP 2386"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_AUTH_INFO_CONN_NAME_ERROR\fP 2387"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_LDAP_USER_NAME_ERROR\fP 2388"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_LDAP_USER_NAME_LENGTH_ERR\fP 2389"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_LDAP_PASSWORD_ERROR\fP 2390"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SSL_ALREADY_INITIALIZED\fP 2391"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SSL_CONFIG_ERROR\fP 2392"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SSL_INITIALIZATION_ERROR\fP 2393"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_Q_INDEX_TYPE_ERROR\fP 2394"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CFBS_ERROR\fP 2395"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SSL_NOT_ALLOWED\fP 2396"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_JSSE_ERROR\fP 2397"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SSL_PEER_NAME_MISMATCH\fP 2398"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SSL_PEER_NAME_ERROR\fP 2399"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNSUPPORTED_CIPHER_SUITE\fP 2400"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SSL_CERTIFICATE_REVOKED\fP 2401"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SSL_CERT_STORE_ERROR\fP 2402"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CLIENT_EXIT_LOAD_ERROR\fP 2406"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CLIENT_EXIT_ERROR\fP 2407"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UOW_COMMITTED\fP 2408"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SSL_KEY_RESET_ERROR\fP 2409"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNKNOWN_COMPONENT_NAME\fP 2410"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_LOGGER_STATUS\fP 2411"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_COMMAND_MQSC\fP 2412"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_COMMAND_PCF\fP 2413"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CFIF_ERROR\fP 2414"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CFSF_ERROR\fP 2415"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CFGR_ERROR\fP 2416"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MSG_NOT_ALLOWED_IN_GROUP\fP 2417"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_FILTER_OPERATOR_ERROR\fP 2418"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NESTED_SELECTOR_ERROR\fP 2419"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_EPH_ERROR\fP 2420"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RFH_FORMAT_ERROR\fP 2421"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CFBF_ERROR\fP 2422"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CLIENT_CHANNEL_CONFLICT\fP 2423"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SD_ERROR\fP 2424"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TOPIC_STRING_ERROR\fP 2425"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_STS_ERROR\fP 2426"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NO_SUBSCRIPTION\fP 2428"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SUBSCRIPTION_IN_USE\fP 2429"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_STAT_TYPE_ERROR\fP 2430"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SUB_USER_DATA_ERROR\fP 2431"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SUB_ALREADY_EXISTS\fP 2432"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_IDENTITY_MISMATCH\fP 2434"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ALTER_SUB_ERROR\fP 2435"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DURABILITY_NOT_ALLOWED\fP 2436"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NO_RETAINED_MSG\fP 2437"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SRO_ERROR\fP 2438"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SUB_NAME_ERROR\fP 2440"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OBJECT_STRING_ERROR\fP 2441"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PROPERTY_NAME_ERROR\fP 2442"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SEGMENTATION_NOT_ALLOWED\fP 2443"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CBD_ERROR\fP 2444"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CTLO_ERROR\fP 2445"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NO_CALLBACKS_ACTIVE\fP 2446"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CALLBACK_NOT_REGISTERED\fP 2448"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OPTIONS_CHANGED\fP 2457"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_READ_AHEAD_MSGS\fP 2458"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTOR_SYNTAX_ERROR\fP 2459"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_HMSG_ERROR\fP 2460"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CMHO_ERROR\fP 2461"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DMHO_ERROR\fP 2462"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SMPO_ERROR\fP 2463"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_IMPO_ERROR\fP 2464"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PROPERTY_NAME_TOO_BIG\fP 2465"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PROP_VALUE_NOT_CONVERTED\fP 2466"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PROP_TYPE_NOT_SUPPORTED\fP 2467"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PROPERTY_VALUE_TOO_BIG\fP 2469"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PROP_CONV_NOT_SUPPORTED\fP 2470"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PROPERTY_NOT_AVAILABLE\fP 2471"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PROP_NUMBER_FORMAT_ERROR\fP 2472"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PROPERTY_TYPE_ERROR\fP 2473"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PROPERTIES_TOO_BIG\fP 2478"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PUT_NOT_RETAINED\fP 2479"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ALIAS_TARGTYPE_CHANGED\fP 2480"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DMPO_ERROR\fP 2481"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PD_ERROR\fP 2482"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CALLBACK_TYPE_ERROR\fP 2483"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CBD_OPTIONS_ERROR\fP 2484"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MAX_MSG_LENGTH_ERROR\fP 2485"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CALLBACK_ROUTINE_ERROR\fP 2486"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CALLBACK_LINK_ERROR\fP 2487"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OPERATION_ERROR\fP 2488"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_BMHO_ERROR\fP 2489"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNSUPPORTED_PROPERTY\fP 2490"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PROP_NAME_NOT_CONVERTED\fP 2492"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_GET_ENABLED\fP 2494"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MODULE_NOT_FOUND\fP 2495"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MODULE_INVALID\fP 2496"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MODULE_ENTRY_NOT_FOUND\fP 2497"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MIXED_CONTENT_NOT_ALLOWED\fP 2498"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MSG_HANDLE_IN_USE\fP 2499"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_HCONN_ASYNC_ACTIVE\fP 2500"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MHBO_ERROR\fP 2501"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PUBLICATION_FAILURE\fP 2502"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SUB_INHIBITED\fP 2503"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTOR_ALWAYS_FALSE\fP 2504"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_XEPO_ERROR\fP 2507"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DURABILITY_NOT_ALTERABLE\fP 2509"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_TOPIC_NOT_ALTERABLE\fP 2510"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SUBLEVEL_NOT_ALTERABLE\fP 2512"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PROPERTY_NAME_LENGTH_ERR\fP 2513"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DUPLICATE_GROUP_SUB\fP 2514"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_GROUPING_NOT_ALTERABLE\fP 2515"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTOR_INVALID_FOR_TYPE\fP 2516"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_HOBJ_QUIESCED\fP 2517"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_HOBJ_QUIESCED_NO_MSGS\fP 2518"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTION_STRING_ERROR\fP 2519"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RES_OBJECT_STRING_ERROR\fP 2520"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONNECTION_SUSPENDED\fP 2521"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INVALID_DESTINATION\fP 2522"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INVALID_SUBSCRIPTION\fP 2523"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTOR_NOT_ALTERABLE\fP 2524"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RETAINED_MSG_Q_ERROR\fP 2525"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RETAINED_NOT_DELIVERED\fP 2526"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RFH_RESTRICTED_FORMAT_ERR\fP 2527"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONNECTION_STOPPED\fP 2528"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ASYNC_UOW_CONFLICT\fP 2529"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ASYNC_XA_CONFLICT\fP 2530"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PUBSUB_INHIBITED\fP 2531"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MSG_HANDLE_COPY_FAILURE\fP 2532"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DEST_CLASS_NOT_ALTERABLE\fP 2533"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OPERATION_NOT_ALLOWED\fP 2534"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ACTION_ERROR\fP 2535"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHANNEL_NOT_AVAILABLE\fP 2537"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_HOST_NOT_AVAILABLE\fP 2538"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHANNEL_CONFIG_ERROR\fP 2539"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_UNKNOWN_CHANNEL_NAME\fP 2540"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_LOOPING_PUBLICATION\fP 2541"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ALREADY_JOINED\fP 2542"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_STANDBY_Q_MGR\fP 2543"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RECONNECTING\fP 2544"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RECONNECTED\fP 2545"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RECONNECT_QMID_MISMATCH\fP 2546"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RECONNECT_INCOMPATIBLE\fP 2547"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RECONNECT_FAILED\fP 2548"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CALL_INTERRUPTED\fP 2549"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NO_SUBS_MATCHED\fP 2550"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SELECTION_NOT_AVAILABLE\fP 2551"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHANNEL_SSL_WARNING\fP 2552"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_OCSP_URL_ERROR\fP 2553"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONTENT_ERROR\fP 2554"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RECONNECT_Q_MGR_REQD\fP 2555"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_RECONNECT_TIMED_OUT\fP 2556"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PUBLISH_EXIT_ERROR\fP 2557"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_COMMINFO_ERROR\fP 2558"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DEF_SYNCPOINT_INHIBITED\fP 2559"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MULTICAST_ONLY\fP 2560"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DATA_SET_NOT_AVAILABLE\fP 2561"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_GROUPING_NOT_ALLOWED\fP 2562"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_GROUP_ADDRESS_ERROR\fP 2563"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MULTICAST_CONFIG_ERROR\fP 2564"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MULTICAST_INTERFACE_ERROR\fP 2565"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MULTICAST_SEND_ERROR\fP 2566"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MULTICAST_INTERNAL_ERROR\fP 2567"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONNECTION_NOT_AVAILABLE\fP 2568"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SYNCPOINT_NOT_ALLOWED\fP 2569"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SSL_ALT_PROVIDER_REQUIRED\fP 2570"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MCAST_PUB_STATUS\fP 2571"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_MCAST_SUB_STATUS\fP 2572"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PRECONN_EXIT_LOAD_ERROR\fP 2573"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PRECONN_EXIT_NOT_FOUND\fP 2574"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PRECONN_EXIT_ERROR\fP 2575"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CD_ARRAY_ERROR\fP 2576"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHANNEL_BLOCKED\fP 2577"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CHANNEL_BLOCKED_WARNING\fP 2578"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SUBSCRIPTION_CREATE\fP 2579"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SUBSCRIPTION_DELETE\fP 2580"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SUBSCRIPTION_CHANGE\fP 2581"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SUBSCRIPTION_REFRESH\fP 2582"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INSTALLATION_MISMATCH\fP 2583"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NOT_PRIVILEGED\fP 2584"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_PROPERTIES_DISABLED\fP 2586"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_HMSG_NOT_AVAILABLE\fP 2587"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_EXIT_PROPS_NOT_SUPPORTED\fP 2588"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INSTALLATION_MISSING\fP 2589"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_FASTPATH_NOT_AVAILABLE\fP 2590"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CIPHER_SPEC_NOT_SUITE_B\fP 2591"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_SUITE_B_ERROR\fP 2592"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CERT_VAL_POLICY_ERROR\fP 2593"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_REOPEN_EXCL_INPUT_ERROR\fP 6100"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_REOPEN_INQUIRE_ERROR\fP 6101"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_REOPEN_SAVED_CONTEXT_ERR\fP 6102"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_REOPEN_TEMPORARY_Q_ERROR\fP 6103"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ATTRIBUTE_LOCKED\fP 6104"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CURSOR_NOT_VALID\fP 6105"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ENCODING_ERROR\fP 6106"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_STRUC_ID_ERROR\fP 6107"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NULL_POINTER\fP 6108"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NO_CONNECTION_REFERENCE\fP 6109"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NO_BUFFER\fP 6110"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_BINARY_DATA_LENGTH_ERROR\fP 6111"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_BUFFER_NOT_AUTOMATIC\fP 6112"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INSUFFICIENT_BUFFER\fP 6113"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INSUFFICIENT_DATA\fP 6114"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DATA_TRUNCATED\fP 6115"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_ZERO_LENGTH\fP 6116"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NEGATIVE_LENGTH\fP 6117"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NEGATIVE_OFFSET\fP 6118"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INCONSISTENT_FORMAT\fP 6119"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INCONSISTENT_OBJECT_STATE\fP 6120"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONTEXT_OBJECT_NOT_VALID\fP 6121"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_CONTEXT_OPEN_ERROR\fP 6122"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_STRUC_LENGTH_ERROR\fP 6123"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NOT_CONNECTED\fP 6124"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_NOT_OPEN\fP 6125"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_DISTRIBUTION_LIST_EMPTY\fP 6126"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_INCONSISTENT_OPEN_OPTIONS\fP 6127"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_WRONG_VERSION\fP 6128"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_REFERENCE_ERROR\fP 6129"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRC_XR_NOT_AVAILABLE\fP 6130"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_BIND_AS_Q_DEF\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_READ_AHEAD_AS_Q_DEF\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_INPUT_AS_Q_DEF\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_INPUT_SHARED\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_INPUT_EXCLUSIVE\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_BROWSE\fP 8"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_OUTPUT\fP 16"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_INQUIRE\fP 32"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_SET\fP 64"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_SAVE_ALL_CONTEXT\fP 128"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_PASS_IDENTITY_CONTEXT\fP 256"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_PASS_ALL_CONTEXT\fP 512"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_SET_IDENTITY_CONTEXT\fP 1024"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_SET_ALL_CONTEXT\fP 2048"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_ALTERNATE_USER_AUTHORITY\fP 4096"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_FAIL_IF_QUIESCING\fP 8192"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_BIND_ON_OPEN\fP 16384"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_BIND_ON_GROUP\fP 4194304"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_BIND_NOT_FIXED\fP 32768"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_CO_OP\fP 131072"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_NO_READ_AHEAD\fP 524288"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_READ_AHEAD\fP 1048576"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_NO_MULTICAST\fP 2097152"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_RESOLVE_LOCAL_Q\fP 262144"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOO_RESOLVE_LOCAL_TOPIC\fP 262144"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCO_IMMEDIATE\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCO_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCO_DELETE\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCO_DELETE_PURGE\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCO_KEEP_SUB\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCO_REMOVE_SUB\fP 8"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCO_QUIESCE\fP 32"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_VERSION_1\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_VERSION_2\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_VERSION_3\fP 3"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_VERSION_4\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_CURRENT_VERSION\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_WAIT\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_NO_WAIT\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_SET_SIGNAL\fP 8"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_FAIL_IF_QUIESCING\fP 8192"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_SYNCPOINT\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_SYNCPOINT_IF_PERSISTENT\fP 4096"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_NO_SYNCPOINT\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_MARK_SKIP_BACKOUT\fP 128"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_BROWSE_FIRST\fP 16"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_BROWSE_NEXT\fP 32"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_BROWSE_MSG_UNDER_CURSOR\fP 2048"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_MSG_UNDER_CURSOR\fP 256"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_LOCK\fP 512"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_UNLOCK\fP 1024"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_ACCEPT_TRUNCATED_MSG\fP 64"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_CONVERT\fP 16384"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_LOGICAL_ORDER\fP 32768"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_COMPLETE_MSG\fP 65536"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_ALL_MSGS_AVAILABLE\fP 131072"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_ALL_SEGMENTS_AVAILABLE\fP 262144"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_MARK_BROWSE_HANDLE\fP 1048576"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_MARK_BROWSE_CO_OP\fP 2097152"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_UNMARK_BROWSE_CO_OP\fP 4194304"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_UNMARK_BROWSE_HANDLE\fP 8388608"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_UNMARKED_BROWSE_MSG\fP 16777216"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_PROPERTIES_FORCE_MQRFH2\fP 33554432"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_NO_PROPERTIES\fP 67108864"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_PROPERTIES_IN_HANDLE\fP 134217728"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_PROPERTIES_COMPATIBILITY\fP 268435456"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_PROPERTIES_AS_Q_DEF\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_BROWSE_HANDLE\fP 17825808"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGMO_BROWSE_CO_OP\fP 18874384"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQWI_UNLIMITED\fP \-1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQEC_MSG_ARRIVED\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQEC_WAIT_INTERVAL_EXPIRED\fP 3"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQEC_WAIT_CANCELED\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQEC_Q_MGR_QUIESCING\fP 5"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQEC_CONNECTION_QUIESCING\fP 6"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMO_MATCH_MSG_ID\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMO_MATCH_CORREL_ID\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMO_MATCH_GROUP_ID\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMO_MATCH_MSG_SEQ_NUMBER\fP 8"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMO_MATCH_OFFSET\fP 16"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMO_MATCH_MSG_TOKEN\fP 32"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMO_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMTOK_NONE\fP ''"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRL_UNDEFINED\fP \-1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMD_VERSION_1\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMD_VERSION_2\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMD_CURRENT_VERSION\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_EXCEPTION\fP 16777216"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_EXCEPTION_WITH_DATA\fP 50331648"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_EXCEPTION_WITH_FULL_DATA\fP 117440512"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_EXPIRATION\fP 2097152"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_EXPIRATION_WITH_DATA\fP 6291456"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_EXPIRATION_WITH_FULL_DATA\fP 14680064"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_COA\fP 256"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_COA_WITH_DATA\fP 768"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_COA_WITH_FULL_DATA\fP 1792"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_COD\fP 2048"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_COD_WITH_DATA\fP 6144"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_COD_WITH_FULL_DATA\fP 14336"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_PAN\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_NAN\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_ACTIVITY\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_NEW_MSG_ID\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_PASS_MSG_ID\fP 128"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_COPY_MSG_ID_TO_CORREL_ID\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_PASS_CORREL_ID\fP 64"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_DEAD_LETTER_Q\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_DISCARD_MSG\fP 134217728"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_PASS_DISCARD_AND_EXPIRY\fP 16384"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_REJECT_UNSUP_MASK\fP 270270464"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_ACCEPT_UNSUP_MASK\fP 4024434943"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQRO_ACCEPT_UNSUP_IF_XMIT_MASK\fP 261888"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMT_SYSTEM_FIRST\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMT_REQUEST\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMT_REPLY\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMT_DATAGRAM\fP 8"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMT_REPORT\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMT_MQE_FIELDS_FROM_MQE\fP 112"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMT_MQE_FIELDS\fP 113"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMT_SYSTEM_LAST\fP 65535"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMT_APPL_FIRST\fP 65536"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMT_APPL_LAST\fP 999999999"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQEI_UNLIMITED\fP \-1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_SYSTEM_FIRST\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_QUIT\fP 256"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_EXPIRATION\fP 258"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_COA\fP 259"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_COD\fP 260"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CHANNEL_COMPLETED\fP 262"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CHANNEL_FAIL_RETRY\fP 263"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CHANNEL_FAIL\fP 264"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_APPL_CANNOT_BE_STARTED\fP 265"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_TM_ERROR\fP 266"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_APPL_TYPE_ERROR\fP 267"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_STOPPED_BY_MSG_EXIT\fP 268"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_ACTIVITY\fP 269"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_XMIT_Q_MSG_ERROR\fP 271"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_PAN\fP 275"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_NAN\fP 276"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_STOPPED_BY_CHAD_EXIT\fP 277"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_STOPPED_BY_PUBSUB_EXIT\fP 279"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_NOT_A_REPOSITORY_MSG\fP 280"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_BIND_OPEN_CLUSRCVR_DEL\fP 281"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_MAX_ACTIVITIES\fP 282"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_NOT_FORWARDED\fP 283"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_NOT_DELIVERED\fP 284"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_UNSUPPORTED_FORWARDING\fP 285"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_UNSUPPORTED_DELIVERY\fP 286"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_DATA_LENGTH_ZERO\fP 291"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_DATA_LENGTH_NEGATIVE\fP 292"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_DATA_LENGTH_TOO_BIG\fP 293"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_BUFFER_OVERFLOW\fP 294"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_LENGTH_OFF_BY_ONE\fP 295"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_IIH_ERROR\fP 296"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_NOT_AUTHORIZED_FOR_IMS\fP 298"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_IMS_ERROR\fP 300"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_IMS_FIRST\fP 301"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_IMS_LAST\fP 399"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CICS_INTERNAL_ERROR\fP 401"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CICS_NOT_AUTHORIZED\fP 402"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CICS_BRIDGE_FAILURE\fP 403"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CICS_CORREL_ID_ERROR\fP 404"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CICS_CCSID_ERROR\fP 405"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CICS_ENCODING_ERROR\fP 406"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CICS_CIH_ERROR\fP 407"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CICS_UOW_ERROR\fP 408"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CICS_COMMAREA_ERROR\fP 409"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CICS_APPL_NOT_STARTED\fP 410"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CICS_APPL_ABENDED\fP 411"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CICS_DLQ_ERROR\fP 412"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_CICS_UOW_BACKED_OUT\fP 413"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_PUBLICATIONS_ON_REQUEST\fP 501"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_SUBSCRIBER_IS_PUBLISHER\fP 502"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_MSG_SCOPE_MISMATCH\fP 503"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_SELECTOR_MISMATCH\fP 504"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_NOT_A_GROUPUR_MSG\fP 505"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_IMS_NACK_1A_REASON_FIRST\fP 600"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_IMS_NACK_1A_REASON_LAST\fP 855"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_SYSTEM_LAST\fP 65535"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_APPL_FIRST\fP 65536"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFB_APPL_LAST\fP 999999999"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_NATIVE\fP 546"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_INTEGER_MASK\fP 15"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_DECIMAL_MASK\fP 240"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_FLOAT_MASK\fP 3840"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_RESERVED_MASK\fP 4294963200"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_INTEGER_UNDEFINED\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_INTEGER_NORMAL\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_INTEGER_REVERSED\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_DECIMAL_UNDEFINED\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_DECIMAL_NORMAL\fP 16"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_DECIMAL_REVERSED\fP 32"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_FLOAT_UNDEFINED\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_FLOAT_IEEE_NORMAL\fP 256"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_FLOAT_IEEE_REVERSED\fP 512"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_FLOAT_S390\fP 768"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_FLOAT_TNS\fP 1024"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_NORMAL\fP 273"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_REVERSED\fP 546"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_S390\fP 785"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_TNS\fP 1041"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQENC_AS_PUBLISHED\fP \-1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCCSI_UNDEFINED\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCCSI_DEFAULT\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCCSI_Q_MGR\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCCSI_INHERIT\fP \-2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCCSI_EMBEDDED\fP \-1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCCSI_APPL\fP \-3"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCCSI_AS_PUBLISHED\fP \-4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_NONE\fP ''"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_ADMIN\fP 'MQADMIN'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_CHANNEL_COMPLETED\fP 'MQCHCOM'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_CICS\fP 'MQCICS'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_COMMAND_1\fP 'MQCMD1'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_COMMAND_2\fP 'MQCMD2'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_DEAD_LETTER_HEADER\fP 'MQDEAD'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_DIST_HEADER\fP 'MQHDIST'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_EMBEDDED_PCF\fP 'MQHEPCF'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_EVENT\fP 'MQEVENT'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_IMS\fP 'MQIMS'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_IMS_VAR_STRING\fP 'MQIMSVS'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_MD_EXTENSION\fP 'MQHMDE'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_PCF\fP 'MQPCF'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_REF_MSG_HEADER\fP 'MQHREF'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_RF_HEADER\fP 'MQHRF'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_RF_HEADER_1\fP 'MQHRF'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_RF_HEADER_2\fP 'MQHRF2'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_STRING\fP 'MQSTR'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_TRIGGER\fP 'MQTRIG'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_WORK_INFO_HEADER\fP 'MQHWIH'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQFMT_XMIT_Q_HEADER\fP 'MQXMIT'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPRI_PRIORITY_AS_Q_DEF\fP \-1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPRI_PRIORITY_AS_PARENT\fP \-2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPRI_PRIORITY_AS_PUBLISHED\fP \-3"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPRI_PRIORITY_AS_TOPIC_DEF\fP \-1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPER_PERSISTENCE_AS_PARENT\fP \-1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPER_NOT_PERSISTENT\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPER_PERSISTENT\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPER_PERSISTENCE_AS_Q_DEF\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPER_PERSISTENCE_AS_TOPIC_DEF\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPRT_RESPONSE_AS_PARENT\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPRT_SYNC_RESPONSE\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPRT_ASYNC_RESPONSE\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMI_NONE\fP ''"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCI_NONE\fP ''"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCI_NEW_SESSION\fP 'AMQ!NEW_SESSION_CORRELID'"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQACT_NONE\fP ''"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_UNKNOWN\fP \-1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_NO_CONTEXT\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_CICS\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_MVS\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_OS390\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_ZOS\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_IMS\fP 3"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_OS2\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_DOS\fP 5"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_AIX\fP 6"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_UNIX\fP 6"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_QMGR\fP 7"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_OS400\fP 8"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_WINDOWS\fP 9"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_CICS_VSE\fP 10"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_WINDOWS_NT\fP 11"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_VMS\fP 12"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_GUARDIAN\fP 13"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_NSK\fP 13"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_VOS\fP 14"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_OPEN_TP1\fP 15"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_VM\fP 18"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_IMS_BRIDGE\fP 19"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_XCF\fP 20"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_CICS_BRIDGE\fP 21"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_NOTES_AGENT\fP 22"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_TPF\fP 23"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_USER\fP 25"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_BROKER\fP 26"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_QMGR_PUBLISH\fP 26"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_JAVA\fP 28"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_DQM\fP 29"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_CHANNEL_INITIATOR\fP 30"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_WLM\fP 31"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_BATCH\fP 32"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_RRS_BATCH\fP 33"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_SIB\fP 34"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_SYSTEM_EXTENSION\fP 35"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_MCAST_PUBLISH\fP 36"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_DEFAULT\fP 6"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_USER_FIRST\fP 65536"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQAT_USER_LAST\fP 999999999"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQGI_NONE\fP ''"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMF_SEGMENTATION_INHIBITED\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMF_SEGMENTATION_ALLOWED\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMF_MSG_IN_GROUP\fP 8"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMF_LAST_MSG_IN_GROUP\fP 16"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMF_SEGMENT\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMF_LAST_SEGMENT\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMF_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMF_REJECT_UNSUP_MASK\fP 4095"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMF_ACCEPT_UNSUP_MASK\fP 4293918720"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQMF_ACCEPT_UNSUP_IF_XMIT_MASK\fP 1044480"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOL_UNDEFINED\fP \-1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQBO_VERSION_1\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQBO_CURRENT_VERSION\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQBO_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_VERSION_1\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_VERSION_2\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_VERSION_3\fP 3"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_CURRENT_VERSION\fP 3"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_SYNCPOINT\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_NO_SYNCPOINT\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_DEFAULT_CONTEXT\fP 32"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_NEW_MSG_ID\fP 64"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_NEW_CORREL_ID\fP 128"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_PASS_IDENTITY_CONTEXT\fP 256"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_PASS_ALL_CONTEXT\fP 512"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_SET_IDENTITY_CONTEXT\fP 1024"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_SET_ALL_CONTEXT\fP 2048"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_ALTERNATE_USER_AUTHORITY\fP 4096"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_FAIL_IF_QUIESCING\fP 8192"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_NO_CONTEXT\fP 16384"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_LOGICAL_ORDER\fP 32768"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_ASYNC_RESPONSE\fP 65536"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_SYNC_RESPONSE\fP 131072"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_RESOLVE_LOCAL_Q\fP 262144"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_WARN_IF_NO_SUBS_MATCHED\fP 524288"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_RETAIN\fP 2097152"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_MD_FOR_OUTPUT_ONLY\fP 8388608"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_SCOPE_QMGR\fP 67108864"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_SUPPRESS_REPLYTO\fP 134217728"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_NOT_OWN_SUBS\fP 268435456"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_RESPONSE_AS_Q_DEF\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_RESPONSE_AS_TOPIC_DEF\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQPMO_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_VERSION_1\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_VERSION_2\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_VERSION_3\fP 3"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_VERSION_4\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_VERSION_5\fP 5"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_CURRENT_VERSION\fP 5"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_STANDARD_BINDING\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_FASTPATH_BINDING\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_SERIALIZE_CONN_TAG_Q_MGR\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_SERIALIZE_CONN_TAG_QSG\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_RESTRICT_CONN_TAG_Q_MGR\fP 8"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_RESTRICT_CONN_TAG_QSG\fP 16"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_HANDLE_SHARE_NONE\fP 32"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_HANDLE_SHARE_BLOCK\fP 64"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_HANDLE_SHARE_NO_BLOCK\fP 128"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_SHARED_BINDING\fP 256"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_ISOLATED_BINDING\fP 512"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_LOCAL_BINDING\fP 1024"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_CLIENT_BINDING\fP 2048"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_ACCOUNTING_MQI_ENABLED\fP 4096"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_ACCOUNTING_MQI_DISABLED\fP 8192"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_ACCOUNTING_Q_ENABLED\fP 16384"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_ACCOUNTING_Q_DISABLED\fP 32768"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_NO_CONV_SHARING\fP 65536"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_ALL_CONVS_SHARE\fP 262144"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_CD_FOR_OUTPUT_ONLY\fP 524288"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_USE_CD_SELECTION\fP 1048576"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_RECONNECT_AS_DEF\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_RECONNECT\fP 16777216"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_RECONNECT_DISABLED\fP 33554432"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_RECONNECT_Q_MGR\fP 67108864"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_ACTIVITY_TRACE_ENABLED\fP 134217728"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_ACTIVITY_TRACE_DISABLED\fP 268435456"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCNO_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQXPT_ALL\fP \-1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQXPT_LOCAL\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQXPT_LU62\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQXPT_TCP\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQXPT_NETBIOS\fP 3"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQXPT_SPX\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQXPT_DECNET\fP 5"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQXPT_UDP\fP 6"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOT_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOT_Q\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOT_NAMELIST\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOT_PROCESS\fP 3"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOT_STORAGE_CLASS\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOT_Q_MGR\fP 5"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOT_CHANNEL\fP 6"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOT_AUTH_INFO\fP 7"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOT_TOPIC\fP 8"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOT_COMM_INFO\fP 9"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOT_CF_STRUC\fP 10"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOT_LISTENER\fP 11"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOT_SERVICE\fP 12"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOT_RESERVED_1\fP 999"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_ADMIN_TOPIC_NAME\fP 2105"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_ALTERATION_DATE\fP 2027"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_ALTERATION_TIME\fP 2028"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_APPL_ID\fP 2001"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_AUTH_INFO_CONN_NAME\fP 2053"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_AUTH_INFO_DESC\fP 2046"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_AUTH_INFO_NAME\fP 2045"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_AUTH_INFO_OCSP_URL\fP 2109"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_AUTO_REORG_CATALOG\fP 2091"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_AUTO_REORG_START_TIME\fP 2090"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_BACKOUT_REQ_Q_NAME\fP 2019"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_BASE_OBJECT_NAME\fP 2002"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_BASE_Q_NAME\fP 2002"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_BATCH_INTERFACE_ID\fP 2068"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CF_STRUC_DESC\fP 2052"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CF_STRUC_NAME\fP 2039"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CHANNEL_AUTO_DEF_EXIT\fP 2026"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CHILD\fP 2101"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CHINIT_SERVICE_PARM\fP 2076"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CICS_FILE_NAME\fP 2060"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CLUSTER_DATE\fP 2037"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CLUSTER_NAME\fP 2029"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CLUSTER_NAMELIST\fP 2030"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CLUSTER_Q_MGR_NAME\fP 2031"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CLUSTER_TIME\fP 2038"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CLUSTER_WORKLOAD_DATA\fP 2034"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CLUSTER_WORKLOAD_EXIT\fP 2033"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_COMMAND_INPUT_Q_NAME\fP 2003"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_COMMAND_REPLY_Q_NAME\fP 2067"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CREATION_DATE\fP 2004"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CREATION_TIME\fP 2005"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_DEAD_LETTER_Q_NAME\fP 2006"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_DEF_XMIT_Q_NAME\fP 2025"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_DNS_GROUP\fP 2071"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_ENV_DATA\fP 2007"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_FIRST\fP 2001"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_IGQ_USER_ID\fP 2041"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_INITIATION_Q_NAME\fP 2008"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_LAST\fP 4000"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_LDAP_PASSWORD\fP 2048"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_LDAP_USER_NAME\fP 2047"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_LU_GROUP_NAME\fP 2072"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_LU_NAME\fP 2073"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_LU62_ARM_SUFFIX\fP 2074"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_MODEL_DURABLE_Q\fP 2096"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_MODEL_NON_DURABLE_Q\fP 2097"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_MONITOR_Q_NAME\fP 2066"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_NAMELIST_DESC\fP 2009"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_NAMELIST_NAME\fP 2010"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_NAMES\fP 2020"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_PARENT\fP 2102"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_PASS_TICKET_APPL\fP 2086"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_PROCESS_DESC\fP 2011"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_PROCESS_NAME\fP 2012"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_Q_DESC\fP 2013"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_Q_MGR_DESC\fP 2014"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_Q_MGR_IDENTIFIER\fP 2032"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_Q_MGR_NAME\fP 2015"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_Q_NAME\fP 2016"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_QSG_NAME\fP 2040"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_REMOTE_Q_MGR_NAME\fP 2017"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_REMOTE_Q_NAME\fP 2018"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_REPOSITORY_NAME\fP 2035"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_REPOSITORY_NAMELIST\fP 2036"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_RESUME_DATE\fP 2098"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_RESUME_TIME\fP 2099"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_SERVICE_DESC\fP 2078"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_SERVICE_NAME\fP 2077"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_SERVICE_START_ARGS\fP 2080"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_SERVICE_START_COMMAND\fP 2079"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_SERVICE_STOP_ARGS\fP 2082"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_SERVICE_STOP_COMMAND\fP 2081"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_STDERR_DESTINATION\fP 2084"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_STDOUT_DESTINATION\fP 2083"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_SSL_CRL_NAMELIST\fP 2050"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_SSL_CRYPTO_HARDWARE\fP 2051"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_SSL_KEY_LIBRARY\fP 2069"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_SSL_KEY_MEMBER\fP 2070"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_SSL_KEY_REPOSITORY\fP 2049"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_STORAGE_CLASS\fP 2022"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_STORAGE_CLASS_DESC\fP 2042"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_SYSTEM_LOG_Q_NAME\fP 2065"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_TCP_NAME\fP 2075"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_TOPIC_DESC\fP 2093"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_TOPIC_NAME\fP 2092"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_TOPIC_STRING\fP 2094"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_TOPIC_STRING_FILTER\fP 2108"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_TPIPE_NAME\fP 2085"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_TRIGGER_CHANNEL_NAME\fP 2064"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_TRIGGER_DATA\fP 2023"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_TRIGGER_PROGRAM_NAME\fP 2062"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_TRIGGER_TERM_ID\fP 2063"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_TRIGGER_TRANS_ID\fP 2061"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_USER_DATA\fP 2021"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_USER_LIST\fP 4000"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_VERSION\fP 2120"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_XCF_GROUP_NAME\fP 2043"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_XCF_MEMBER_NAME\fP 2044"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_XMIT_Q_NAME\fP 2024"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_COMM_INFO_NAME\fP 2110"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_COMM_INFO_DESC\fP 2111"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_POLICY_NAME\fP 2112"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_SIGNER_DN\fP 2113"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_RECIPIENT_DN\fP 2114"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_INSTALLATION_DESC\fP 2115"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_INSTALLATION_NAME\fP 2116"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_INSTALLATION_PATH\fP 2117"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CHLAUTH_DESC\fP 2118"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CUSTOM\fP 2119"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_XR_VERSION\fP 2122"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_XR_SSL_CIPHER_SUITES\fP 2123"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_CLUS_CHL_NAME\fP 2124"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQCA_LAST_USED\fP 2137"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_ACCOUNTING_CONN_OVERRIDE\fP 136"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_ACCOUNTING_INTERVAL\fP 135"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_ACCOUNTING_MQI\fP 133"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_ACCOUNTING_Q\fP 134"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_ACTIVE_CHANNELS\fP 100"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_ACTIVITY_RECORDING\fP 138"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_ADOPTNEWMCA_CHECK\fP 102"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_ADOPTNEWMCA_TYPE\fP 103"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_ADOPTNEWMCA_INTERVAL\fP 104"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_APPL_TYPE\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_ARCHIVE\fP 60"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_AUTH_INFO_TYPE\fP 66"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_AUTHORITY_EVENT\fP 47"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_AUTO_REORG_INTERVAL\fP 174"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_AUTO_REORGANIZATION\fP 173"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_BACKOUT_THRESHOLD\fP 22"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_BASE_TYPE\fP 193"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_BATCH_INTERFACE_AUTO\fP 86"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_BRIDGE_EVENT\fP 74"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CERT_VAL_POLICY\fP 252"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CF_CFCONLOS\fP 246"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CF_LEVEL\fP 70"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CF_OFFLOAD\fP 224"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CF_OFFLOAD_THRESHOLD1\fP 225"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CF_OFFLOAD_THRESHOLD2\fP 226"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CF_OFFLOAD_THRESHOLD3\fP 227"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CF_OFFLDUSE\fP 229"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CF_RECOVER\fP 71"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CF_RECAUTO\fP 244"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CF_SMDS_BUFFERS\fP 228"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CHANNEL_AUTO_DEF\fP 55"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CHANNEL_AUTO_DEF_EVENT\fP 56"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CHANNEL_EVENT\fP 73"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CHINIT_ADAPTERS\fP 101"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CHINIT_CONTROL\fP 119"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CHINIT_DISPATCHERS\fP 105"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CHINIT_TRACE_AUTO_START\fP 117"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CHINIT_TRACE_TABLE_SIZE\fP 118"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CLUSTER_Q_TYPE\fP 59"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CLUSTER_WORKLOAD_LENGTH\fP 58"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CLWL_MRU_CHANNELS\fP 97"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CLWL_Q_RANK\fP 95"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CLWL_Q_PRIORITY\fP 96"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CLWL_USEQ\fP 98"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CMD_SERVER_AUTO\fP 87"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CMD_SERVER_CONTROL\fP 120"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CMD_SERVER_CONVERT_MSG\fP 88"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CMD_SERVER_DLQ_MSG\fP 89"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CODED_CHAR_SET_ID\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_COMMAND_EVENT\fP 99"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_COMMAND_LEVEL\fP 31"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CONFIGURATION_EVENT\fP 51"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CPI_LEVEL\fP 27"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CURRENT_Q_DEPTH\fP 3"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_DEF_BIND\fP 61"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_DEF_INPUT_OPEN_OPTION\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_DEF_PERSISTENCE\fP 5"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_DEF_PRIORITY\fP 6"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_DEF_PUT_RESPONSE_TYPE\fP 184"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_DEF_READ_AHEAD\fP 188"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_DEFINITION_TYPE\fP 7"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_DIST_LISTS\fP 34"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_DNS_WLM\fP 106"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_DURABLE_SUB\fP 175"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_EXPIRY_INTERVAL\fP 39"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_FIRST\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_GROUP_UR\fP 221"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_HARDEN_GET_BACKOUT\fP 8"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_HIGH_Q_DEPTH\fP 36"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_IGQ_PUT_AUTHORITY\fP 65"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_INDEX_TYPE\fP 57"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_INHIBIT_EVENT\fP 48"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_INHIBIT_GET\fP 9"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_INHIBIT_PUB\fP 181"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_INHIBIT_PUT\fP 10"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_INHIBIT_SUB\fP 182"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_INTRA_GROUP_QUEUING\fP 64"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_IP_ADDRESS_VERSION\fP 93"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_LAST\fP 2000"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_LISTENER_PORT_NUMBER\fP 85"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_LISTENER_TIMER\fP 107"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_LOGGER_EVENT\fP 94"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_LU62_CHANNELS\fP 108"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_LOCAL_EVENT\fP 49"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MSG_MARK_BROWSE_INTERVAL\fP 68"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MASTER_ADMIN\fP 186"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MAX_CHANNELS\fP 109"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MAX_CLIENTS\fP 172"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MAX_GLOBAL_LOCKS\fP 83"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MAX_HANDLES\fP 11"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MAX_LOCAL_LOCKS\fP 84"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MAX_MSG_LENGTH\fP 13"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MAX_OPEN_Q\fP 80"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MAX_PRIORITY\fP 14"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MAX_PROPERTIES_LENGTH\fP 192"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MAX_Q_DEPTH\fP 15"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MAX_Q_TRIGGERS\fP 90"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MAX_RECOVERY_TASKS\fP 171"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MAX_RESPONSES\fP 230"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MAX_UNCOMMITTED_MSGS\fP 33"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MONITOR_INTERVAL\fP 81"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MONITORING_AUTO_CLUSSDR\fP 124"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MONITORING_CHANNEL\fP 122"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MONITORING_Q\fP 123"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MSG_DELIVERY_SEQUENCE\fP 16"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MSG_DEQ_COUNT\fP 38"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MSG_ENQ_COUNT\fP 37"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_NAME_COUNT\fP 19"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_NAMELIST_TYPE\fP 72"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_NPM_CLASS\fP 78"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_NPM_DELIVERY\fP 196"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_OPEN_INPUT_COUNT\fP 17"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_OPEN_OUTPUT_COUNT\fP 18"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_OUTBOUND_PORT_MAX\fP 140"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_OUTBOUND_PORT_MIN\fP 110"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_PAGESET_ID\fP 62"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_PERFORMANCE_EVENT\fP 53"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_PLATFORM\fP 32"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_PM_DELIVERY\fP 195"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_PROPERTY_CONTROL\fP 190"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_PROXY_SUB\fP 199"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_PUB_COUNT\fP 215"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_PUB_SCOPE\fP 219"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_PUBSUB_CLUSTER\fP 249"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_PUBSUB_MAXMSG_RETRY_COUNT\fP 206"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_PUBSUB_MODE\fP 187"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_PUBSUB_NP_MSG\fP 203"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_PUBSUB_NP_RESP\fP 205"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_PUBSUB_SYNC_PT\fP 207"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_Q_DEPTH_HIGH_EVENT\fP 43"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_Q_DEPTH_HIGH_LIMIT\fP 40"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_Q_DEPTH_LOW_EVENT\fP 44"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_Q_DEPTH_LOW_LIMIT\fP 41"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_Q_DEPTH_MAX_EVENT\fP 42"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_Q_SERVICE_INTERVAL\fP 54"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_Q_SERVICE_INTERVAL_EVENT\fP 46"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_Q_TYPE\fP 20"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_Q_USERS\fP 82"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMGR_CFCONLOS\fP 245"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_CONS_COMMS_MSGS\fP 155"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_CONS_CRITICAL_MSGS\fP 154"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_CONS_ERROR_MSGS\fP 153"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_CONS_INFO_MSGS\fP 151"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_CONS_REORG_MSGS\fP 156"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_CONS_SYSTEM_MSGS\fP 157"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_CONS_WARNING_MSGS\fP 152"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_CSMT_ON_ERROR\fP 150"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_INTERNAL_DUMP\fP 170"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_LOG_COMMS_MSGS\fP 162"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_LOG_CRITICAL_MSGS\fP 161"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_LOG_ERROR_MSGS\fP 160"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_LOG_INFO_MSGS\fP 158"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_LOG_REORG_MSGS\fP 163"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_LOG_SYSTEM_MSGS\fP 164"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_LOG_WARNING_MSGS\fP 159"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_TRACE_COMMS\fP 166"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_TRACE_CONVERSION\fP 168"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_TRACE_REORG\fP 167"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_TRACE_MQI_CALLS\fP 165"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QMOPT_TRACE_SYSTEM\fP 169"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_QSG_DISP\fP 63"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_READ_AHEAD\fP 189"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_RECEIVE_TIMEOUT\fP 111"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_RECEIVE_TIMEOUT_MIN\fP 113"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_RECEIVE_TIMEOUT_TYPE\fP 112"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_REMOTE_EVENT\fP 50"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_RETENTION_INTERVAL\fP 21"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_RESPONSE_RESTART_POINT\fP 231"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SCOPE\fP 45"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SECURITY_CASE\fP 141"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SERVICE_CONTROL\fP 139"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SERVICE_TYPE\fP 121"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SHAREABILITY\fP 23"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SHARED_Q_Q_MGR_NAME\fP 77"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SSL_EVENT\fP 75"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SSL_FIPS_REQUIRED\fP 92"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SSL_RESET_COUNT\fP 76"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SSL_TASKS\fP 69"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_START_STOP_EVENT\fP 52"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_STATISTICS_CHANNEL\fP 129"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_STATISTICS_AUTO_CLUSSDR\fP 130"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_STATISTICS_INTERVAL\fP 131"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_STATISTICS_MQI\fP 127"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_STATISTICS_Q\fP 128"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SUB_COUNT\fP 204"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SUB_SCOPE\fP 218"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SYNCPOINT\fP 30"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_TCP_CHANNELS\fP 114"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_TCP_KEEP_ALIVE\fP 115"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_TCP_STACK_TYPE\fP 116"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_TIME_SINCE_RESET\fP 35"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_TOPIC_DEF_PERSISTENCE\fP 185"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_TOPIC_TYPE\fP 208"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_TRACE_ROUTE_RECORDING\fP 137"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_TREE_LIFE_TIME\fP 183"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_TRIGGER_CONTROL\fP 24"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_TRIGGER_DEPTH\fP 29"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_TRIGGER_INTERVAL\fP 25"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_TRIGGER_MSG_PRIORITY\fP 26"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_TRIGGER_TYPE\fP 28"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_TRIGGER_RESTART\fP 91"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_UR_DISP\fP 222"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_USAGE\fP 12"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_USER_LIST\fP 2000"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MULTICAST\fP 176"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_WILDCARD_OPERATION\fP 216"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_COMM_INFO_TYPE\fP 223"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_COMM_EVENT\fP 232"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_MCAST_BRIDGE\fP 233"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_USE_DEAD_LETTER_Q\fP 234"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_TOLERATE_UNPROTECTED\fP 235"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SIGNATURE_ALGORITHM\fP 236"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_ENCRYPTION_ALGORITHM\fP 237"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_POLICY_VERSION\fP 238"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_ACTIVITY_CONN_OVERRIDE\fP 239"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_ACTIVITY_TRACE\fP 240"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SUB_CONFIGURATION_EVENT\fP 242"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_XR_CAPABILITY\fP 243"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_SUITE_B_STRENGTH\fP 247"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_CHLAUTH_RECORDS\fP 248"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_DEF_CLUSTER_XMIT_Q_TYPE\fP 250"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQIA_PROT_POLICY_CAPABILITY\fP 251"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOD_VERSION_1\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOD_VERSION_2\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOD_VERSION_3\fP 3"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOD_VERSION_4\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQOD_CURRENT_VERSION\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_NON_DURABLE\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_READ_AHEAD_AS_Q_DEF\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_ALTER\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_CREATE\fP 2"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_RESUME\fP 4"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_DURABLE\fP 8"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_GROUP_SUB\fP 16"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_MANAGED\fP 32"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_SET_IDENTITY_CONTEXT\fP 64"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_NO_MULTICAST\fP 128"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_FIXED_USERID\fP 256"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_ANY_USERID\fP 512"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_PUBLICATIONS_ON_REQUEST\fP 2048"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_NEW_PUBLICATIONS_ONLY\fP 4096"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_FAIL_IF_QUIESCING\fP 8192"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_ALTERNATE_USER_AUTHORITY\fP 262144"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_WILDCARD_CHAR\fP 1048576"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_WILDCARD_TOPIC\fP 2097152"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_SET_CORREL_ID\fP 4194304"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_SCOPE_QMGR\fP 67108864"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_NO_READ_AHEAD\fP 134217728"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSO_READ_AHEAD\fP 268435456"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSTAT_TYPE_ASYNC_ERROR\fP 0"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSTAT_TYPE_RECONNECTION\fP 1"
+.br
+.ti -1c
+.RI "const \fBMQSERIES_MQSTAT_TYPE_RECONNECTION_ERROR\fP 2"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "mqseries_back ( $hconn, & $compCode, & $reason)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hconn\fP 
+.br
+\fI$compCode\fP 
+.br
+\fI$reason\fP 
+.RE
+.PP
+
+.SS "mqseries_begin ( $hconn, array $beginOptions, & $compCode, & $reason)"
+@noinspection MoreThanThreeArgumentsInspection 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hconn\fP 
+.br
+\fI$beginOptions\fP 
+.br
+\fI$compCode\fP 
+.br
+\fI$reason\fP 
+.RE
+.PP
+
+.SS "mqseries_close ( $hconn,  $hobj,  $options, & $compCode, & $reason)"
+@noinspection MoreThanThreeArgumentsInspection 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hconn\fP 
+.br
+\fI$hobj\fP 
+.br
+\fI$options\fP 
+.br
+\fI$compCode\fP 
+.br
+\fI$reason\fP 
+.RE
+.PP
+
+.SS "mqseries_cmit ( $hconn, & $compCode, & $reason)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hconn\fP 
+.br
+\fI$compCode\fP 
+.br
+\fI$reason\fP 
+.RE
+.PP
+
+.SS "mqseries_conn ( $qManagerName, & $hconn, & $compCode, & $reason)"
+@noinspection MoreThanThreeArgumentsInspection 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qManagerName\fP 
+.br
+\fI$hconn\fP 
+.br
+\fI$compCode\fP 
+.br
+\fI$reason\fP 
+.RE
+.PP
+
+.SS "mqseries_connx ( $qManagerName, array & $connOptions, & $hconn, & $compCode, & $reason)"
+@noinspection MoreThanThreeArgumentsInspection 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$qManagerName\fP 
+.br
+\fI$connOptions\fP 
+.br
+\fI$hconn\fP 
+.br
+\fI$compCode\fP 
+.br
+\fI$reason\fP 
+.RE
+.PP
+
+.SS "mqseries_disc ( $hconn, & $compCode, & $reason)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hconn\fP 
+.br
+\fI$compCode\fP 
+.br
+\fI$reason\fP 
+.RE
+.PP
+
+.SS "mqseries_get ( $hConn,  $hObj, array & $md, array & $gmo, & $bufferLength, & $msg, & $data_length, & $compCode, & $reason)"
+@noinspection MoreThanThreeArgumentsInspection 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hConn\fP 
+.br
+\fI$hObj\fP 
+.br
+\fI$md\fP 
+.br
+\fI$gmo\fP 
+.br
+\fI$bufferLength\fP 
+.br
+\fI$msg\fP 
+.br
+\fI$data_length\fP 
+.br
+\fI$compCode\fP 
+.br
+\fI$reason\fP 
+.RE
+.PP
+
+.SS "mqseries_inq ( $hconn,  $hobj,  $selectorCount, array $selectors,  $intAttrCount, & $intAttr,  $charAttrLength, & $charAttr, & $compCode, & $reason)"
+@noinspection MoreThanThreeArgumentsInspection 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hconn\fP 
+.br
+\fI$hobj\fP 
+.br
+\fI$selectorCount\fP 
+.br
+\fI$selectors\fP 
+.br
+\fI$intAttrCount\fP 
+.br
+\fI$intAttr\fP 
+.br
+\fI$charAttrLength\fP 
+.br
+\fI$charAttr\fP 
+.br
+\fI$compCode\fP 
+.br
+\fI$reason\fP 
+.RE
+.PP
+
+.SS "mqseries_open ( $hconn, array & $objDesc,  $option, & $hobj, & $compCode, & $reason)"
+@noinspection MoreThanThreeArgumentsInspection 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hconn\fP 
+.br
+\fI$objDesc\fP 
+.br
+\fI$option\fP 
+.br
+\fI$hobj\fP 
+.br
+\fI$compCode\fP 
+.br
+\fI$reason\fP 
+.RE
+.PP
+
+.SS "mqseries_put ( $hConn,  $hObj, array & $md, array & $pmo,  $message, & $compCode, & $reason)"
+@noinspection MoreThanThreeArgumentsInspection 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hConn\fP 
+.br
+\fI$hObj\fP 
+.br
+\fI$md\fP 
+.br
+\fI$pmo\fP 
+.br
+\fI$message\fP 
+.br
+\fI$compCode\fP 
+.br
+\fI$reason\fP 
+.RE
+.PP
+
+.SS "mqseries_put1 ( $hconn, & $objDesc, & $msgDesc, & $pmo,  $buffer, & $compCode, & $reason)"
+@noinspection MoreThanThreeArgumentsInspection 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hconn\fP 
+.br
+\fI$objDesc\fP 
+.br
+\fI$msgDesc\fP 
+.br
+\fI$pmo\fP 
+.br
+\fI$buffer\fP 
+.br
+\fI$compCode\fP 
+.br
+\fI$reason\fP 
+.RE
+.PP
+
+.SS "mqseries_set ( $hconn,  $hobj,  $selectorcount, array $selectors,  $intattrcount, array $intattrs,  $charattrlength, array $charattrs, & $compCode, & $reason)"
+@noinspection MoreThanThreeArgumentsInspection 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$hconn\fP 
+.br
+\fI$hobj\fP 
+.br
+\fI$selectorcount\fP 
+.br
+\fI$selectors\fP 
+.br
+\fI$intattrcount\fP 
+.br
+\fI$intattrs\fP 
+.br
+\fI$charattrlength\fP 
+.br
+\fI$charattrs\fP 
+.br
+\fI$compCode\fP 
+.br
+\fI$reason\fP 
+.RE
+.PP
+
+.SS "mqseries_strerror ( $reason)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fI$reason\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const MQSERIES_MQACT_NONE ''"
+
+.SS "const MQSERIES_MQAT_AIX 6"
+
+.SS "const MQSERIES_MQAT_BATCH 32"
+
+.SS "const MQSERIES_MQAT_BROKER 26"
+
+.SS "const MQSERIES_MQAT_CHANNEL_INITIATOR 30"
+
+.SS "const MQSERIES_MQAT_CICS 1"
+
+.SS "const MQSERIES_MQAT_CICS_BRIDGE 21"
+
+.SS "const MQSERIES_MQAT_CICS_VSE 10"
+
+.SS "const MQSERIES_MQAT_DEFAULT 6"
+
+.SS "const MQSERIES_MQAT_DOS 5"
+
+.SS "const MQSERIES_MQAT_DQM 29"
+
+.SS "const MQSERIES_MQAT_GUARDIAN 13"
+
+.SS "const MQSERIES_MQAT_IMS 3"
+
+.SS "const MQSERIES_MQAT_IMS_BRIDGE 19"
+
+.SS "const MQSERIES_MQAT_JAVA 28"
+
+.SS "const MQSERIES_MQAT_MCAST_PUBLISH 36"
+
+.SS "const MQSERIES_MQAT_MVS 2"
+
+.SS "const MQSERIES_MQAT_NO_CONTEXT 0"
+
+.SS "const MQSERIES_MQAT_NOTES_AGENT 22"
+
+.SS "const MQSERIES_MQAT_NSK 13"
+
+.SS "const MQSERIES_MQAT_OPEN_TP1 15"
+
+.SS "const MQSERIES_MQAT_OS2 4"
+
+.SS "const MQSERIES_MQAT_OS390 2"
+
+.SS "const MQSERIES_MQAT_OS400 8"
+
+.SS "const MQSERIES_MQAT_QMGR 7"
+
+.SS "const MQSERIES_MQAT_QMGR_PUBLISH 26"
+
+.SS "const MQSERIES_MQAT_RRS_BATCH 33"
+
+.SS "const MQSERIES_MQAT_SIB 34"
+
+.SS "const MQSERIES_MQAT_SYSTEM_EXTENSION 35"
+
+.SS "const MQSERIES_MQAT_TPF 23"
+
+.SS "const MQSERIES_MQAT_UNIX 6"
+
+.SS "const MQSERIES_MQAT_UNKNOWN \-1"
+
+.SS "const MQSERIES_MQAT_USER 25"
+
+.SS "const MQSERIES_MQAT_USER_FIRST 65536"
+
+.SS "const MQSERIES_MQAT_USER_LAST 999999999"
+
+.SS "const MQSERIES_MQAT_VM 18"
+
+.SS "const MQSERIES_MQAT_VMS 12"
+
+.SS "const MQSERIES_MQAT_VOS 14"
+
+.SS "const MQSERIES_MQAT_WINDOWS 9"
+
+.SS "const MQSERIES_MQAT_WINDOWS_NT 11"
+
+.SS "const MQSERIES_MQAT_WLM 31"
+
+.SS "const MQSERIES_MQAT_XCF 20"
+
+.SS "const MQSERIES_MQAT_ZOS 2"
+
+.SS "const MQSERIES_MQBO_CURRENT_VERSION 1"
+
+.SS "const MQSERIES_MQBO_NONE 0"
+
+.SS "const MQSERIES_MQBO_VERSION_1 1"
+
+.SS "const MQSERIES_MQCA_ADMIN_TOPIC_NAME 2105"
+
+.SS "const MQSERIES_MQCA_ALTERATION_DATE 2027"
+
+.SS "const MQSERIES_MQCA_ALTERATION_TIME 2028"
+
+.SS "const MQSERIES_MQCA_APPL_ID 2001"
+
+.SS "const MQSERIES_MQCA_AUTH_INFO_CONN_NAME 2053"
+
+.SS "const MQSERIES_MQCA_AUTH_INFO_DESC 2046"
+
+.SS "const MQSERIES_MQCA_AUTH_INFO_NAME 2045"
+
+.SS "const MQSERIES_MQCA_AUTH_INFO_OCSP_URL 2109"
+
+.SS "const MQSERIES_MQCA_AUTO_REORG_CATALOG 2091"
+
+.SS "const MQSERIES_MQCA_AUTO_REORG_START_TIME 2090"
+
+.SS "const MQSERIES_MQCA_BACKOUT_REQ_Q_NAME 2019"
+
+.SS "const MQSERIES_MQCA_BASE_OBJECT_NAME 2002"
+
+.SS "const MQSERIES_MQCA_BASE_Q_NAME 2002"
+
+.SS "const MQSERIES_MQCA_BATCH_INTERFACE_ID 2068"
+
+.SS "const MQSERIES_MQCA_CF_STRUC_DESC 2052"
+
+.SS "const MQSERIES_MQCA_CF_STRUC_NAME 2039"
+
+.SS "const MQSERIES_MQCA_CHANNEL_AUTO_DEF_EXIT 2026"
+
+.SS "const MQSERIES_MQCA_CHILD 2101"
+
+.SS "const MQSERIES_MQCA_CHINIT_SERVICE_PARM 2076"
+
+.SS "const MQSERIES_MQCA_CHLAUTH_DESC 2118"
+
+.SS "const MQSERIES_MQCA_CICS_FILE_NAME 2060"
+
+.SS "const MQSERIES_MQCA_CLUS_CHL_NAME 2124"
+
+.SS "const MQSERIES_MQCA_CLUSTER_DATE 2037"
+
+.SS "const MQSERIES_MQCA_CLUSTER_NAME 2029"
+
+.SS "const MQSERIES_MQCA_CLUSTER_NAMELIST 2030"
+
+.SS "const MQSERIES_MQCA_CLUSTER_Q_MGR_NAME 2031"
+
+.SS "const MQSERIES_MQCA_CLUSTER_TIME 2038"
+
+.SS "const MQSERIES_MQCA_CLUSTER_WORKLOAD_DATA 2034"
+
+.SS "const MQSERIES_MQCA_CLUSTER_WORKLOAD_EXIT 2033"
+
+.SS "const MQSERIES_MQCA_COMM_INFO_DESC 2111"
+
+.SS "const MQSERIES_MQCA_COMM_INFO_NAME 2110"
+
+.SS "const MQSERIES_MQCA_COMMAND_INPUT_Q_NAME 2003"
+
+.SS "const MQSERIES_MQCA_COMMAND_REPLY_Q_NAME 2067"
+
+.SS "const MQSERIES_MQCA_CREATION_DATE 2004"
+
+.SS "const MQSERIES_MQCA_CREATION_TIME 2005"
+
+.SS "const MQSERIES_MQCA_CUSTOM 2119"
+
+.SS "const MQSERIES_MQCA_DEAD_LETTER_Q_NAME 2006"
+
+.SS "const MQSERIES_MQCA_DEF_XMIT_Q_NAME 2025"
+
+.SS "const MQSERIES_MQCA_DNS_GROUP 2071"
+
+.SS "const MQSERIES_MQCA_ENV_DATA 2007"
+
+.SS "const MQSERIES_MQCA_FIRST 2001"
+
+.SS "const MQSERIES_MQCA_IGQ_USER_ID 2041"
+
+.SS "const MQSERIES_MQCA_INITIATION_Q_NAME 2008"
+
+.SS "const MQSERIES_MQCA_INSTALLATION_DESC 2115"
+
+.SS "const MQSERIES_MQCA_INSTALLATION_NAME 2116"
+
+.SS "const MQSERIES_MQCA_INSTALLATION_PATH 2117"
+
+.SS "const MQSERIES_MQCA_LAST 4000"
+
+.SS "const MQSERIES_MQCA_LAST_USED 2137"
+
+.SS "const MQSERIES_MQCA_LDAP_PASSWORD 2048"
+
+.SS "const MQSERIES_MQCA_LDAP_USER_NAME 2047"
+
+.SS "const MQSERIES_MQCA_LU62_ARM_SUFFIX 2074"
+
+.SS "const MQSERIES_MQCA_LU_GROUP_NAME 2072"
+
+.SS "const MQSERIES_MQCA_LU_NAME 2073"
+
+.SS "const MQSERIES_MQCA_MODEL_DURABLE_Q 2096"
+
+.SS "const MQSERIES_MQCA_MODEL_NON_DURABLE_Q 2097"
+
+.SS "const MQSERIES_MQCA_MONITOR_Q_NAME 2066"
+
+.SS "const MQSERIES_MQCA_NAMELIST_DESC 2009"
+
+.SS "const MQSERIES_MQCA_NAMELIST_NAME 2010"
+
+.SS "const MQSERIES_MQCA_NAMES 2020"
+
+.SS "const MQSERIES_MQCA_PARENT 2102"
+
+.SS "const MQSERIES_MQCA_PASS_TICKET_APPL 2086"
+
+.SS "const MQSERIES_MQCA_POLICY_NAME 2112"
+
+.SS "const MQSERIES_MQCA_PROCESS_DESC 2011"
+
+.SS "const MQSERIES_MQCA_PROCESS_NAME 2012"
+
+.SS "const MQSERIES_MQCA_Q_DESC 2013"
+
+.SS "const MQSERIES_MQCA_Q_MGR_DESC 2014"
+
+.SS "const MQSERIES_MQCA_Q_MGR_IDENTIFIER 2032"
+
+.SS "const MQSERIES_MQCA_Q_MGR_NAME 2015"
+
+.SS "const MQSERIES_MQCA_Q_NAME 2016"
+
+.SS "const MQSERIES_MQCA_QSG_NAME 2040"
+
+.SS "const MQSERIES_MQCA_RECIPIENT_DN 2114"
+
+.SS "const MQSERIES_MQCA_REMOTE_Q_MGR_NAME 2017"
+
+.SS "const MQSERIES_MQCA_REMOTE_Q_NAME 2018"
+
+.SS "const MQSERIES_MQCA_REPOSITORY_NAME 2035"
+
+.SS "const MQSERIES_MQCA_REPOSITORY_NAMELIST 2036"
+
+.SS "const MQSERIES_MQCA_RESUME_DATE 2098"
+
+.SS "const MQSERIES_MQCA_RESUME_TIME 2099"
+
+.SS "const MQSERIES_MQCA_SERVICE_DESC 2078"
+
+.SS "const MQSERIES_MQCA_SERVICE_NAME 2077"
+
+.SS "const MQSERIES_MQCA_SERVICE_START_ARGS 2080"
+
+.SS "const MQSERIES_MQCA_SERVICE_START_COMMAND 2079"
+
+.SS "const MQSERIES_MQCA_SERVICE_STOP_ARGS 2082"
+
+.SS "const MQSERIES_MQCA_SERVICE_STOP_COMMAND 2081"
+
+.SS "const MQSERIES_MQCA_SIGNER_DN 2113"
+
+.SS "const MQSERIES_MQCA_SSL_CRL_NAMELIST 2050"
+
+.SS "const MQSERIES_MQCA_SSL_CRYPTO_HARDWARE 2051"
+
+.SS "const MQSERIES_MQCA_SSL_KEY_LIBRARY 2069"
+
+.SS "const MQSERIES_MQCA_SSL_KEY_MEMBER 2070"
+
+.SS "const MQSERIES_MQCA_SSL_KEY_REPOSITORY 2049"
+
+.SS "const MQSERIES_MQCA_STDERR_DESTINATION 2084"
+
+.SS "const MQSERIES_MQCA_STDOUT_DESTINATION 2083"
+
+.SS "const MQSERIES_MQCA_STORAGE_CLASS 2022"
+
+.SS "const MQSERIES_MQCA_STORAGE_CLASS_DESC 2042"
+
+.SS "const MQSERIES_MQCA_SYSTEM_LOG_Q_NAME 2065"
+
+.SS "const MQSERIES_MQCA_TCP_NAME 2075"
+
+.SS "const MQSERIES_MQCA_TOPIC_DESC 2093"
+
+.SS "const MQSERIES_MQCA_TOPIC_NAME 2092"
+
+.SS "const MQSERIES_MQCA_TOPIC_STRING 2094"
+
+.SS "const MQSERIES_MQCA_TOPIC_STRING_FILTER 2108"
+
+.SS "const MQSERIES_MQCA_TPIPE_NAME 2085"
+
+.SS "const MQSERIES_MQCA_TRIGGER_CHANNEL_NAME 2064"
+
+.SS "const MQSERIES_MQCA_TRIGGER_DATA 2023"
+
+.SS "const MQSERIES_MQCA_TRIGGER_PROGRAM_NAME 2062"
+
+.SS "const MQSERIES_MQCA_TRIGGER_TERM_ID 2063"
+
+.SS "const MQSERIES_MQCA_TRIGGER_TRANS_ID 2061"
+
+.SS "const MQSERIES_MQCA_USER_DATA 2021"
+
+.SS "const MQSERIES_MQCA_USER_LIST 4000"
+
+.SS "const MQSERIES_MQCA_VERSION 2120"
+
+.SS "const MQSERIES_MQCA_XCF_GROUP_NAME 2043"
+
+.SS "const MQSERIES_MQCA_XCF_MEMBER_NAME 2044"
+
+.SS "const MQSERIES_MQCA_XMIT_Q_NAME 2024"
+
+.SS "const MQSERIES_MQCA_XR_SSL_CIPHER_SUITES 2123"
+
+.SS "const MQSERIES_MQCA_XR_VERSION 2122"
+
+.SS "const MQSERIES_MQCC_FAILED 2"
+
+.SS "const MQSERIES_MQCC_OK 0"
+
+.SS "const MQSERIES_MQCC_UNKNOWN \-1"
+
+.SS "const MQSERIES_MQCC_WARNING 1"
+
+.SS "const MQSERIES_MQCCSI_APPL \-3"
+
+.SS "const MQSERIES_MQCCSI_AS_PUBLISHED \-4"
+
+.SS "const MQSERIES_MQCCSI_DEFAULT 0"
+
+.SS "const MQSERIES_MQCCSI_EMBEDDED \-1"
+
+.SS "const MQSERIES_MQCCSI_INHERIT \-2"
+
+.SS "const MQSERIES_MQCCSI_Q_MGR 0"
+
+.SS "const MQSERIES_MQCCSI_UNDEFINED 0"
+
+.SS "const MQSERIES_MQCI_NEW_SESSION 'AMQ!NEW_SESSION_CORRELID'"
+
+.SS "const MQSERIES_MQCI_NONE ''"
+
+.SS "const MQSERIES_MQCNO_ACCOUNTING_MQI_DISABLED 8192"
+
+.SS "const MQSERIES_MQCNO_ACCOUNTING_MQI_ENABLED 4096"
+
+.SS "const MQSERIES_MQCNO_ACCOUNTING_Q_DISABLED 32768"
+
+.SS "const MQSERIES_MQCNO_ACCOUNTING_Q_ENABLED 16384"
+
+.SS "const MQSERIES_MQCNO_ACTIVITY_TRACE_DISABLED 268435456"
+
+.SS "const MQSERIES_MQCNO_ACTIVITY_TRACE_ENABLED 134217728"
+
+.SS "const MQSERIES_MQCNO_ALL_CONVS_SHARE 262144"
+
+.SS "const MQSERIES_MQCNO_CD_FOR_OUTPUT_ONLY 524288"
+
+.SS "const MQSERIES_MQCNO_CLIENT_BINDING 2048"
+
+.SS "const MQSERIES_MQCNO_CURRENT_VERSION 5"
+
+.SS "const MQSERIES_MQCNO_FASTPATH_BINDING 1"
+
+.SS "const MQSERIES_MQCNO_HANDLE_SHARE_BLOCK 64"
+
+.SS "const MQSERIES_MQCNO_HANDLE_SHARE_NO_BLOCK 128"
+
+.SS "const MQSERIES_MQCNO_HANDLE_SHARE_NONE 32"
+
+.SS "const MQSERIES_MQCNO_ISOLATED_BINDING 512"
+
+.SS "const MQSERIES_MQCNO_LOCAL_BINDING 1024"
+
+.SS "const MQSERIES_MQCNO_NO_CONV_SHARING 65536"
+
+.SS "const MQSERIES_MQCNO_NONE 0"
+
+.SS "const MQSERIES_MQCNO_RECONNECT 16777216"
+
+.SS "const MQSERIES_MQCNO_RECONNECT_AS_DEF 0"
+
+.SS "const MQSERIES_MQCNO_RECONNECT_DISABLED 33554432"
+
+.SS "const MQSERIES_MQCNO_RECONNECT_Q_MGR 67108864"
+
+.SS "const MQSERIES_MQCNO_RESTRICT_CONN_TAG_Q_MGR 8"
+
+.SS "const MQSERIES_MQCNO_RESTRICT_CONN_TAG_QSG 16"
+
+.SS "const MQSERIES_MQCNO_SERIALIZE_CONN_TAG_Q_MGR 2"
+
+.SS "const MQSERIES_MQCNO_SERIALIZE_CONN_TAG_QSG 4"
+
+.SS "const MQSERIES_MQCNO_SHARED_BINDING 256"
+
+.SS "const MQSERIES_MQCNO_STANDARD_BINDING 0"
+
+.SS "const MQSERIES_MQCNO_USE_CD_SELECTION 1048576"
+
+.SS "const MQSERIES_MQCNO_VERSION_1 1"
+
+.SS "const MQSERIES_MQCNO_VERSION_2 2"
+
+.SS "const MQSERIES_MQCNO_VERSION_3 3"
+
+.SS "const MQSERIES_MQCNO_VERSION_4 4"
+
+.SS "const MQSERIES_MQCNO_VERSION_5 5"
+
+.SS "const MQSERIES_MQCO_DELETE 1"
+
+.SS "const MQSERIES_MQCO_DELETE_PURGE 2"
+
+.SS "const MQSERIES_MQCO_IMMEDIATE 0"
+
+.SS "const MQSERIES_MQCO_KEEP_SUB 4"
+
+.SS "const MQSERIES_MQCO_NONE 0"
+
+.SS "const MQSERIES_MQCO_QUIESCE 32"
+
+.SS "const MQSERIES_MQCO_REMOVE_SUB 8"
+
+.SS "const MQSERIES_MQEC_CONNECTION_QUIESCING 6"
+
+.SS "const MQSERIES_MQEC_MSG_ARRIVED 2"
+
+.SS "const MQSERIES_MQEC_Q_MGR_QUIESCING 5"
+
+.SS "const MQSERIES_MQEC_WAIT_CANCELED 4"
+
+.SS "const MQSERIES_MQEC_WAIT_INTERVAL_EXPIRED 3"
+
+.SS "const MQSERIES_MQEI_UNLIMITED \-1"
+
+.SS "const MQSERIES_MQENC_AS_PUBLISHED \-1"
+
+.SS "const MQSERIES_MQENC_DECIMAL_MASK 240"
+
+.SS "const MQSERIES_MQENC_DECIMAL_NORMAL 16"
+
+.SS "const MQSERIES_MQENC_DECIMAL_REVERSED 32"
+
+.SS "const MQSERIES_MQENC_DECIMAL_UNDEFINED 0"
+
+.SS "const MQSERIES_MQENC_FLOAT_IEEE_NORMAL 256"
+
+.SS "const MQSERIES_MQENC_FLOAT_IEEE_REVERSED 512"
+
+.SS "const MQSERIES_MQENC_FLOAT_MASK 3840"
+
+.SS "const MQSERIES_MQENC_FLOAT_S390 768"
+
+.SS "const MQSERIES_MQENC_FLOAT_TNS 1024"
+
+.SS "const MQSERIES_MQENC_FLOAT_UNDEFINED 0"
+
+.SS "const MQSERIES_MQENC_INTEGER_MASK 15"
+
+.SS "const MQSERIES_MQENC_INTEGER_NORMAL 1"
+
+.SS "const MQSERIES_MQENC_INTEGER_REVERSED 2"
+
+.SS "const MQSERIES_MQENC_INTEGER_UNDEFINED 0"
+
+.SS "const MQSERIES_MQENC_NATIVE 546"
+
+.SS "const MQSERIES_MQENC_NORMAL 273"
+
+.SS "const MQSERIES_MQENC_RESERVED_MASK 4294963200"
+
+.SS "const MQSERIES_MQENC_REVERSED 546"
+
+.SS "const MQSERIES_MQENC_S390 785"
+
+.SS "const MQSERIES_MQENC_TNS 1041"
+
+.SS "const MQSERIES_MQFB_ACTIVITY 269"
+
+.SS "const MQSERIES_MQFB_APPL_CANNOT_BE_STARTED 265"
+
+.SS "const MQSERIES_MQFB_APPL_FIRST 65536"
+
+.SS "const MQSERIES_MQFB_APPL_LAST 999999999"
+
+.SS "const MQSERIES_MQFB_APPL_TYPE_ERROR 267"
+
+.SS "const MQSERIES_MQFB_BIND_OPEN_CLUSRCVR_DEL 281"
+
+.SS "const MQSERIES_MQFB_BUFFER_OVERFLOW 294"
+
+.SS "const MQSERIES_MQFB_CHANNEL_COMPLETED 262"
+
+.SS "const MQSERIES_MQFB_CHANNEL_FAIL 264"
+
+.SS "const MQSERIES_MQFB_CHANNEL_FAIL_RETRY 263"
+
+.SS "const MQSERIES_MQFB_CICS_APPL_ABENDED 411"
+
+.SS "const MQSERIES_MQFB_CICS_APPL_NOT_STARTED 410"
+
+.SS "const MQSERIES_MQFB_CICS_BRIDGE_FAILURE 403"
+
+.SS "const MQSERIES_MQFB_CICS_CCSID_ERROR 405"
+
+.SS "const MQSERIES_MQFB_CICS_CIH_ERROR 407"
+
+.SS "const MQSERIES_MQFB_CICS_COMMAREA_ERROR 409"
+
+.SS "const MQSERIES_MQFB_CICS_CORREL_ID_ERROR 404"
+
+.SS "const MQSERIES_MQFB_CICS_DLQ_ERROR 412"
+
+.SS "const MQSERIES_MQFB_CICS_ENCODING_ERROR 406"
+
+.SS "const MQSERIES_MQFB_CICS_INTERNAL_ERROR 401"
+
+.SS "const MQSERIES_MQFB_CICS_NOT_AUTHORIZED 402"
+
+.SS "const MQSERIES_MQFB_CICS_UOW_BACKED_OUT 413"
+
+.SS "const MQSERIES_MQFB_CICS_UOW_ERROR 408"
+
+.SS "const MQSERIES_MQFB_COA 259"
+
+.SS "const MQSERIES_MQFB_COD 260"
+
+.SS "const MQSERIES_MQFB_DATA_LENGTH_NEGATIVE 292"
+
+.SS "const MQSERIES_MQFB_DATA_LENGTH_TOO_BIG 293"
+
+.SS "const MQSERIES_MQFB_DATA_LENGTH_ZERO 291"
+
+.SS "const MQSERIES_MQFB_EXPIRATION 258"
+
+.SS "const MQSERIES_MQFB_IIH_ERROR 296"
+
+.SS "const MQSERIES_MQFB_IMS_ERROR 300"
+
+.SS "const MQSERIES_MQFB_IMS_FIRST 301"
+
+.SS "const MQSERIES_MQFB_IMS_LAST 399"
+
+.SS "const MQSERIES_MQFB_IMS_NACK_1A_REASON_FIRST 600"
+
+.SS "const MQSERIES_MQFB_IMS_NACK_1A_REASON_LAST 855"
+
+.SS "const MQSERIES_MQFB_LENGTH_OFF_BY_ONE 295"
+
+.SS "const MQSERIES_MQFB_MAX_ACTIVITIES 282"
+
+.SS "const MQSERIES_MQFB_MSG_SCOPE_MISMATCH 503"
+
+.SS "const MQSERIES_MQFB_NAN 276"
+
+.SS "const MQSERIES_MQFB_NONE 0"
+
+.SS "const MQSERIES_MQFB_NOT_A_GROUPUR_MSG 505"
+
+.SS "const MQSERIES_MQFB_NOT_A_REPOSITORY_MSG 280"
+
+.SS "const MQSERIES_MQFB_NOT_AUTHORIZED_FOR_IMS 298"
+
+.SS "const MQSERIES_MQFB_NOT_DELIVERED 284"
+
+.SS "const MQSERIES_MQFB_NOT_FORWARDED 283"
+
+.SS "const MQSERIES_MQFB_PAN 275"
+
+.SS "const MQSERIES_MQFB_PUBLICATIONS_ON_REQUEST 501"
+
+.SS "const MQSERIES_MQFB_QUIT 256"
+
+.SS "const MQSERIES_MQFB_SELECTOR_MISMATCH 504"
+
+.SS "const MQSERIES_MQFB_STOPPED_BY_CHAD_EXIT 277"
+
+.SS "const MQSERIES_MQFB_STOPPED_BY_MSG_EXIT 268"
+
+.SS "const MQSERIES_MQFB_STOPPED_BY_PUBSUB_EXIT 279"
+
+.SS "const MQSERIES_MQFB_SUBSCRIBER_IS_PUBLISHER 502"
+
+.SS "const MQSERIES_MQFB_SYSTEM_FIRST 1"
+
+.SS "const MQSERIES_MQFB_SYSTEM_LAST 65535"
+
+.SS "const MQSERIES_MQFB_TM_ERROR 266"
+
+.SS "const MQSERIES_MQFB_UNSUPPORTED_DELIVERY 286"
+
+.SS "const MQSERIES_MQFB_UNSUPPORTED_FORWARDING 285"
+
+.SS "const MQSERIES_MQFB_XMIT_Q_MSG_ERROR 271"
+
+.SS "const MQSERIES_MQFMT_ADMIN 'MQADMIN'"
+
+.SS "const MQSERIES_MQFMT_CHANNEL_COMPLETED 'MQCHCOM'"
+
+.SS "const MQSERIES_MQFMT_CICS 'MQCICS'"
+
+.SS "const MQSERIES_MQFMT_COMMAND_1 'MQCMD1'"
+
+.SS "const MQSERIES_MQFMT_COMMAND_2 'MQCMD2'"
+
+.SS "const MQSERIES_MQFMT_DEAD_LETTER_HEADER 'MQDEAD'"
+
+.SS "const MQSERIES_MQFMT_DIST_HEADER 'MQHDIST'"
+
+.SS "const MQSERIES_MQFMT_EMBEDDED_PCF 'MQHEPCF'"
+
+.SS "const MQSERIES_MQFMT_EVENT 'MQEVENT'"
+
+.SS "const MQSERIES_MQFMT_IMS 'MQIMS'"
+
+.SS "const MQSERIES_MQFMT_IMS_VAR_STRING 'MQIMSVS'"
+
+.SS "const MQSERIES_MQFMT_MD_EXTENSION 'MQHMDE'"
+
+.SS "const MQSERIES_MQFMT_NONE ''"
+
+.SS "const MQSERIES_MQFMT_PCF 'MQPCF'"
+
+.SS "const MQSERIES_MQFMT_REF_MSG_HEADER 'MQHREF'"
+
+.SS "const MQSERIES_MQFMT_RF_HEADER 'MQHRF'"
+
+.SS "const MQSERIES_MQFMT_RF_HEADER_1 'MQHRF'"
+
+.SS "const MQSERIES_MQFMT_RF_HEADER_2 'MQHRF2'"
+
+.SS "const MQSERIES_MQFMT_STRING 'MQSTR'"
+
+.SS "const MQSERIES_MQFMT_TRIGGER 'MQTRIG'"
+
+.SS "const MQSERIES_MQFMT_WORK_INFO_HEADER 'MQHWIH'"
+
+.SS "const MQSERIES_MQFMT_XMIT_Q_HEADER 'MQXMIT'"
+
+.SS "const MQSERIES_MQGI_NONE ''"
+
+.SS "const MQSERIES_MQGMO_ACCEPT_TRUNCATED_MSG 64"
+
+.SS "const MQSERIES_MQGMO_ALL_MSGS_AVAILABLE 131072"
+
+.SS "const MQSERIES_MQGMO_ALL_SEGMENTS_AVAILABLE 262144"
+
+.SS "const MQSERIES_MQGMO_BROWSE_CO_OP 18874384"
+
+.SS "const MQSERIES_MQGMO_BROWSE_FIRST 16"
+
+.SS "const MQSERIES_MQGMO_BROWSE_HANDLE 17825808"
+
+.SS "const MQSERIES_MQGMO_BROWSE_MSG_UNDER_CURSOR 2048"
+
+.SS "const MQSERIES_MQGMO_BROWSE_NEXT 32"
+
+.SS "const MQSERIES_MQGMO_COMPLETE_MSG 65536"
+
+.SS "const MQSERIES_MQGMO_CONVERT 16384"
+
+.SS "const MQSERIES_MQGMO_CURRENT_VERSION 4"
+
+.SS "const MQSERIES_MQGMO_FAIL_IF_QUIESCING 8192"
+
+.SS "const MQSERIES_MQGMO_LOCK 512"
+
+.SS "const MQSERIES_MQGMO_LOGICAL_ORDER 32768"
+
+.SS "const MQSERIES_MQGMO_MARK_BROWSE_CO_OP 2097152"
+
+.SS "const MQSERIES_MQGMO_MARK_BROWSE_HANDLE 1048576"
+
+.SS "const MQSERIES_MQGMO_MARK_SKIP_BACKOUT 128"
+
+.SS "const MQSERIES_MQGMO_MSG_UNDER_CURSOR 256"
+
+.SS "const MQSERIES_MQGMO_NO_PROPERTIES 67108864"
+
+.SS "const MQSERIES_MQGMO_NO_SYNCPOINT 4"
+
+.SS "const MQSERIES_MQGMO_NO_WAIT 0"
+
+.SS "const MQSERIES_MQGMO_NONE 0"
+
+.SS "const MQSERIES_MQGMO_PROPERTIES_AS_Q_DEF 0"
+
+.SS "const MQSERIES_MQGMO_PROPERTIES_COMPATIBILITY 268435456"
+
+.SS "const MQSERIES_MQGMO_PROPERTIES_FORCE_MQRFH2 33554432"
+
+.SS "const MQSERIES_MQGMO_PROPERTIES_IN_HANDLE 134217728"
+
+.SS "const MQSERIES_MQGMO_SET_SIGNAL 8"
+
+.SS "const MQSERIES_MQGMO_SYNCPOINT 2"
+
+.SS "const MQSERIES_MQGMO_SYNCPOINT_IF_PERSISTENT 4096"
+
+.SS "const MQSERIES_MQGMO_UNLOCK 1024"
+
+.SS "const MQSERIES_MQGMO_UNMARK_BROWSE_CO_OP 4194304"
+
+.SS "const MQSERIES_MQGMO_UNMARK_BROWSE_HANDLE 8388608"
+
+.SS "const MQSERIES_MQGMO_UNMARKED_BROWSE_MSG 16777216"
+
+.SS "const MQSERIES_MQGMO_VERSION_1 1"
+
+.SS "const MQSERIES_MQGMO_VERSION_2 2"
+
+.SS "const MQSERIES_MQGMO_VERSION_3 3"
+
+.SS "const MQSERIES_MQGMO_VERSION_4 4"
+
+.SS "const MQSERIES_MQGMO_WAIT 1"
+
+.SS "const MQSERIES_MQIA_ACCOUNTING_CONN_OVERRIDE 136"
+
+.SS "const MQSERIES_MQIA_ACCOUNTING_INTERVAL 135"
+
+.SS "const MQSERIES_MQIA_ACCOUNTING_MQI 133"
+
+.SS "const MQSERIES_MQIA_ACCOUNTING_Q 134"
+
+.SS "const MQSERIES_MQIA_ACTIVE_CHANNELS 100"
+
+.SS "const MQSERIES_MQIA_ACTIVITY_CONN_OVERRIDE 239"
+
+.SS "const MQSERIES_MQIA_ACTIVITY_RECORDING 138"
+
+.SS "const MQSERIES_MQIA_ACTIVITY_TRACE 240"
+
+.SS "const MQSERIES_MQIA_ADOPTNEWMCA_CHECK 102"
+
+.SS "const MQSERIES_MQIA_ADOPTNEWMCA_INTERVAL 104"
+
+.SS "const MQSERIES_MQIA_ADOPTNEWMCA_TYPE 103"
+
+.SS "const MQSERIES_MQIA_APPL_TYPE 1"
+
+.SS "const MQSERIES_MQIA_ARCHIVE 60"
+
+.SS "const MQSERIES_MQIA_AUTH_INFO_TYPE 66"
+
+.SS "const MQSERIES_MQIA_AUTHORITY_EVENT 47"
+
+.SS "const MQSERIES_MQIA_AUTO_REORG_INTERVAL 174"
+
+.SS "const MQSERIES_MQIA_AUTO_REORGANIZATION 173"
+
+.SS "const MQSERIES_MQIA_BACKOUT_THRESHOLD 22"
+
+.SS "const MQSERIES_MQIA_BASE_TYPE 193"
+
+.SS "const MQSERIES_MQIA_BATCH_INTERFACE_AUTO 86"
+
+.SS "const MQSERIES_MQIA_BRIDGE_EVENT 74"
+
+.SS "const MQSERIES_MQIA_CERT_VAL_POLICY 252"
+
+.SS "const MQSERIES_MQIA_CF_CFCONLOS 246"
+
+.SS "const MQSERIES_MQIA_CF_LEVEL 70"
+
+.SS "const MQSERIES_MQIA_CF_OFFLDUSE 229"
+
+.SS "const MQSERIES_MQIA_CF_OFFLOAD 224"
+
+.SS "const MQSERIES_MQIA_CF_OFFLOAD_THRESHOLD1 225"
+
+.SS "const MQSERIES_MQIA_CF_OFFLOAD_THRESHOLD2 226"
+
+.SS "const MQSERIES_MQIA_CF_OFFLOAD_THRESHOLD3 227"
+
+.SS "const MQSERIES_MQIA_CF_RECAUTO 244"
+
+.SS "const MQSERIES_MQIA_CF_RECOVER 71"
+
+.SS "const MQSERIES_MQIA_CF_SMDS_BUFFERS 228"
+
+.SS "const MQSERIES_MQIA_CHANNEL_AUTO_DEF 55"
+
+.SS "const MQSERIES_MQIA_CHANNEL_AUTO_DEF_EVENT 56"
+
+.SS "const MQSERIES_MQIA_CHANNEL_EVENT 73"
+
+.SS "const MQSERIES_MQIA_CHINIT_ADAPTERS 101"
+
+.SS "const MQSERIES_MQIA_CHINIT_CONTROL 119"
+
+.SS "const MQSERIES_MQIA_CHINIT_DISPATCHERS 105"
+
+.SS "const MQSERIES_MQIA_CHINIT_TRACE_AUTO_START 117"
+
+.SS "const MQSERIES_MQIA_CHINIT_TRACE_TABLE_SIZE 118"
+
+.SS "const MQSERIES_MQIA_CHLAUTH_RECORDS 248"
+
+.SS "const MQSERIES_MQIA_CLUSTER_Q_TYPE 59"
+
+.SS "const MQSERIES_MQIA_CLUSTER_WORKLOAD_LENGTH 58"
+
+.SS "const MQSERIES_MQIA_CLWL_MRU_CHANNELS 97"
+
+.SS "const MQSERIES_MQIA_CLWL_Q_PRIORITY 96"
+
+.SS "const MQSERIES_MQIA_CLWL_Q_RANK 95"
+
+.SS "const MQSERIES_MQIA_CLWL_USEQ 98"
+
+.SS "const MQSERIES_MQIA_CMD_SERVER_AUTO 87"
+
+.SS "const MQSERIES_MQIA_CMD_SERVER_CONTROL 120"
+
+.SS "const MQSERIES_MQIA_CMD_SERVER_CONVERT_MSG 88"
+
+.SS "const MQSERIES_MQIA_CMD_SERVER_DLQ_MSG 89"
+
+.SS "const MQSERIES_MQIA_CODED_CHAR_SET_ID 2"
+
+.SS "const MQSERIES_MQIA_COMM_EVENT 232"
+
+.SS "const MQSERIES_MQIA_COMM_INFO_TYPE 223"
+
+.SS "const MQSERIES_MQIA_COMMAND_EVENT 99"
+
+.SS "const MQSERIES_MQIA_COMMAND_LEVEL 31"
+
+.SS "const MQSERIES_MQIA_CONFIGURATION_EVENT 51"
+
+.SS "const MQSERIES_MQIA_CPI_LEVEL 27"
+
+.SS "const MQSERIES_MQIA_CURRENT_Q_DEPTH 3"
+
+.SS "const MQSERIES_MQIA_DEF_BIND 61"
+
+.SS "const MQSERIES_MQIA_DEF_CLUSTER_XMIT_Q_TYPE 250"
+
+.SS "const MQSERIES_MQIA_DEF_INPUT_OPEN_OPTION 4"
+
+.SS "const MQSERIES_MQIA_DEF_PERSISTENCE 5"
+
+.SS "const MQSERIES_MQIA_DEF_PRIORITY 6"
+
+.SS "const MQSERIES_MQIA_DEF_PUT_RESPONSE_TYPE 184"
+
+.SS "const MQSERIES_MQIA_DEF_READ_AHEAD 188"
+
+.SS "const MQSERIES_MQIA_DEFINITION_TYPE 7"
+
+.SS "const MQSERIES_MQIA_DIST_LISTS 34"
+
+.SS "const MQSERIES_MQIA_DNS_WLM 106"
+
+.SS "const MQSERIES_MQIA_DURABLE_SUB 175"
+
+.SS "const MQSERIES_MQIA_ENCRYPTION_ALGORITHM 237"
+
+.SS "const MQSERIES_MQIA_EXPIRY_INTERVAL 39"
+
+.SS "const MQSERIES_MQIA_FIRST 1"
+
+.SS "const MQSERIES_MQIA_GROUP_UR 221"
+
+.SS "const MQSERIES_MQIA_HARDEN_GET_BACKOUT 8"
+
+.SS "const MQSERIES_MQIA_HIGH_Q_DEPTH 36"
+
+.SS "const MQSERIES_MQIA_IGQ_PUT_AUTHORITY 65"
+
+.SS "const MQSERIES_MQIA_INDEX_TYPE 57"
+
+.SS "const MQSERIES_MQIA_INHIBIT_EVENT 48"
+
+.SS "const MQSERIES_MQIA_INHIBIT_GET 9"
+
+.SS "const MQSERIES_MQIA_INHIBIT_PUB 181"
+
+.SS "const MQSERIES_MQIA_INHIBIT_PUT 10"
+
+.SS "const MQSERIES_MQIA_INHIBIT_SUB 182"
+
+.SS "const MQSERIES_MQIA_INTRA_GROUP_QUEUING 64"
+
+.SS "const MQSERIES_MQIA_IP_ADDRESS_VERSION 93"
+
+.SS "const MQSERIES_MQIA_LAST 2000"
+
+.SS "const MQSERIES_MQIA_LISTENER_PORT_NUMBER 85"
+
+.SS "const MQSERIES_MQIA_LISTENER_TIMER 107"
+
+.SS "const MQSERIES_MQIA_LOCAL_EVENT 49"
+
+.SS "const MQSERIES_MQIA_LOGGER_EVENT 94"
+
+.SS "const MQSERIES_MQIA_LU62_CHANNELS 108"
+
+.SS "const MQSERIES_MQIA_MASTER_ADMIN 186"
+
+.SS "const MQSERIES_MQIA_MAX_CHANNELS 109"
+
+.SS "const MQSERIES_MQIA_MAX_CLIENTS 172"
+
+.SS "const MQSERIES_MQIA_MAX_GLOBAL_LOCKS 83"
+
+.SS "const MQSERIES_MQIA_MAX_HANDLES 11"
+
+.SS "const MQSERIES_MQIA_MAX_LOCAL_LOCKS 84"
+
+.SS "const MQSERIES_MQIA_MAX_MSG_LENGTH 13"
+
+.SS "const MQSERIES_MQIA_MAX_OPEN_Q 80"
+
+.SS "const MQSERIES_MQIA_MAX_PRIORITY 14"
+
+.SS "const MQSERIES_MQIA_MAX_PROPERTIES_LENGTH 192"
+
+.SS "const MQSERIES_MQIA_MAX_Q_DEPTH 15"
+
+.SS "const MQSERIES_MQIA_MAX_Q_TRIGGERS 90"
+
+.SS "const MQSERIES_MQIA_MAX_RECOVERY_TASKS 171"
+
+.SS "const MQSERIES_MQIA_MAX_RESPONSES 230"
+
+.SS "const MQSERIES_MQIA_MAX_UNCOMMITTED_MSGS 33"
+
+.SS "const MQSERIES_MQIA_MCAST_BRIDGE 233"
+
+.SS "const MQSERIES_MQIA_MONITOR_INTERVAL 81"
+
+.SS "const MQSERIES_MQIA_MONITORING_AUTO_CLUSSDR 124"
+
+.SS "const MQSERIES_MQIA_MONITORING_CHANNEL 122"
+
+.SS "const MQSERIES_MQIA_MONITORING_Q 123"
+
+.SS "const MQSERIES_MQIA_MSG_DELIVERY_SEQUENCE 16"
+
+.SS "const MQSERIES_MQIA_MSG_DEQ_COUNT 38"
+
+.SS "const MQSERIES_MQIA_MSG_ENQ_COUNT 37"
+
+.SS "const MQSERIES_MQIA_MSG_MARK_BROWSE_INTERVAL 68"
+
+.SS "const MQSERIES_MQIA_MULTICAST 176"
+
+.SS "const MQSERIES_MQIA_NAME_COUNT 19"
+
+.SS "const MQSERIES_MQIA_NAMELIST_TYPE 72"
+
+.SS "const MQSERIES_MQIA_NPM_CLASS 78"
+
+.SS "const MQSERIES_MQIA_NPM_DELIVERY 196"
+
+.SS "const MQSERIES_MQIA_OPEN_INPUT_COUNT 17"
+
+.SS "const MQSERIES_MQIA_OPEN_OUTPUT_COUNT 18"
+
+.SS "const MQSERIES_MQIA_OUTBOUND_PORT_MAX 140"
+
+.SS "const MQSERIES_MQIA_OUTBOUND_PORT_MIN 110"
+
+.SS "const MQSERIES_MQIA_PAGESET_ID 62"
+
+.SS "const MQSERIES_MQIA_PERFORMANCE_EVENT 53"
+
+.SS "const MQSERIES_MQIA_PLATFORM 32"
+
+.SS "const MQSERIES_MQIA_PM_DELIVERY 195"
+
+.SS "const MQSERIES_MQIA_POLICY_VERSION 238"
+
+.SS "const MQSERIES_MQIA_PROPERTY_CONTROL 190"
+
+.SS "const MQSERIES_MQIA_PROT_POLICY_CAPABILITY 251"
+
+.SS "const MQSERIES_MQIA_PROXY_SUB 199"
+
+.SS "const MQSERIES_MQIA_PUB_COUNT 215"
+
+.SS "const MQSERIES_MQIA_PUB_SCOPE 219"
+
+.SS "const MQSERIES_MQIA_PUBSUB_CLUSTER 249"
+
+.SS "const MQSERIES_MQIA_PUBSUB_MAXMSG_RETRY_COUNT 206"
+
+.SS "const MQSERIES_MQIA_PUBSUB_MODE 187"
+
+.SS "const MQSERIES_MQIA_PUBSUB_NP_MSG 203"
+
+.SS "const MQSERIES_MQIA_PUBSUB_NP_RESP 205"
+
+.SS "const MQSERIES_MQIA_PUBSUB_SYNC_PT 207"
+
+.SS "const MQSERIES_MQIA_Q_DEPTH_HIGH_EVENT 43"
+
+.SS "const MQSERIES_MQIA_Q_DEPTH_HIGH_LIMIT 40"
+
+.SS "const MQSERIES_MQIA_Q_DEPTH_LOW_EVENT 44"
+
+.SS "const MQSERIES_MQIA_Q_DEPTH_LOW_LIMIT 41"
+
+.SS "const MQSERIES_MQIA_Q_DEPTH_MAX_EVENT 42"
+
+.SS "const MQSERIES_MQIA_Q_SERVICE_INTERVAL 54"
+
+.SS "const MQSERIES_MQIA_Q_SERVICE_INTERVAL_EVENT 46"
+
+.SS "const MQSERIES_MQIA_Q_TYPE 20"
+
+.SS "const MQSERIES_MQIA_Q_USERS 82"
+
+.SS "const MQSERIES_MQIA_QMGR_CFCONLOS 245"
+
+.SS "const MQSERIES_MQIA_QMOPT_CONS_COMMS_MSGS 155"
+
+.SS "const MQSERIES_MQIA_QMOPT_CONS_CRITICAL_MSGS 154"
+
+.SS "const MQSERIES_MQIA_QMOPT_CONS_ERROR_MSGS 153"
+
+.SS "const MQSERIES_MQIA_QMOPT_CONS_INFO_MSGS 151"
+
+.SS "const MQSERIES_MQIA_QMOPT_CONS_REORG_MSGS 156"
+
+.SS "const MQSERIES_MQIA_QMOPT_CONS_SYSTEM_MSGS 157"
+
+.SS "const MQSERIES_MQIA_QMOPT_CONS_WARNING_MSGS 152"
+
+.SS "const MQSERIES_MQIA_QMOPT_CSMT_ON_ERROR 150"
+
+.SS "const MQSERIES_MQIA_QMOPT_INTERNAL_DUMP 170"
+
+.SS "const MQSERIES_MQIA_QMOPT_LOG_COMMS_MSGS 162"
+
+.SS "const MQSERIES_MQIA_QMOPT_LOG_CRITICAL_MSGS 161"
+
+.SS "const MQSERIES_MQIA_QMOPT_LOG_ERROR_MSGS 160"
+
+.SS "const MQSERIES_MQIA_QMOPT_LOG_INFO_MSGS 158"
+
+.SS "const MQSERIES_MQIA_QMOPT_LOG_REORG_MSGS 163"
+
+.SS "const MQSERIES_MQIA_QMOPT_LOG_SYSTEM_MSGS 164"
+
+.SS "const MQSERIES_MQIA_QMOPT_LOG_WARNING_MSGS 159"
+
+.SS "const MQSERIES_MQIA_QMOPT_TRACE_COMMS 166"
+
+.SS "const MQSERIES_MQIA_QMOPT_TRACE_CONVERSION 168"
+
+.SS "const MQSERIES_MQIA_QMOPT_TRACE_MQI_CALLS 165"
+
+.SS "const MQSERIES_MQIA_QMOPT_TRACE_REORG 167"
+
+.SS "const MQSERIES_MQIA_QMOPT_TRACE_SYSTEM 169"
+
+.SS "const MQSERIES_MQIA_QSG_DISP 63"
+
+.SS "const MQSERIES_MQIA_READ_AHEAD 189"
+
+.SS "const MQSERIES_MQIA_RECEIVE_TIMEOUT 111"
+
+.SS "const MQSERIES_MQIA_RECEIVE_TIMEOUT_MIN 113"
+
+.SS "const MQSERIES_MQIA_RECEIVE_TIMEOUT_TYPE 112"
+
+.SS "const MQSERIES_MQIA_REMOTE_EVENT 50"
+
+.SS "const MQSERIES_MQIA_RESPONSE_RESTART_POINT 231"
+
+.SS "const MQSERIES_MQIA_RETENTION_INTERVAL 21"
+
+.SS "const MQSERIES_MQIA_SCOPE 45"
+
+.SS "const MQSERIES_MQIA_SECURITY_CASE 141"
+
+.SS "const MQSERIES_MQIA_SERVICE_CONTROL 139"
+
+.SS "const MQSERIES_MQIA_SERVICE_TYPE 121"
+
+.SS "const MQSERIES_MQIA_SHAREABILITY 23"
+
+.SS "const MQSERIES_MQIA_SHARED_Q_Q_MGR_NAME 77"
+
+.SS "const MQSERIES_MQIA_SIGNATURE_ALGORITHM 236"
+
+.SS "const MQSERIES_MQIA_SSL_EVENT 75"
+
+.SS "const MQSERIES_MQIA_SSL_FIPS_REQUIRED 92"
+
+.SS "const MQSERIES_MQIA_SSL_RESET_COUNT 76"
+
+.SS "const MQSERIES_MQIA_SSL_TASKS 69"
+
+.SS "const MQSERIES_MQIA_START_STOP_EVENT 52"
+
+.SS "const MQSERIES_MQIA_STATISTICS_AUTO_CLUSSDR 130"
+
+.SS "const MQSERIES_MQIA_STATISTICS_CHANNEL 129"
+
+.SS "const MQSERIES_MQIA_STATISTICS_INTERVAL 131"
+
+.SS "const MQSERIES_MQIA_STATISTICS_MQI 127"
+
+.SS "const MQSERIES_MQIA_STATISTICS_Q 128"
+
+.SS "const MQSERIES_MQIA_SUB_CONFIGURATION_EVENT 242"
+
+.SS "const MQSERIES_MQIA_SUB_COUNT 204"
+
+.SS "const MQSERIES_MQIA_SUB_SCOPE 218"
+
+.SS "const MQSERIES_MQIA_SUITE_B_STRENGTH 247"
+
+.SS "const MQSERIES_MQIA_SYNCPOINT 30"
+
+.SS "const MQSERIES_MQIA_TCP_CHANNELS 114"
+
+.SS "const MQSERIES_MQIA_TCP_KEEP_ALIVE 115"
+
+.SS "const MQSERIES_MQIA_TCP_STACK_TYPE 116"
+
+.SS "const MQSERIES_MQIA_TIME_SINCE_RESET 35"
+
+.SS "const MQSERIES_MQIA_TOLERATE_UNPROTECTED 235"
+
+.SS "const MQSERIES_MQIA_TOPIC_DEF_PERSISTENCE 185"
+
+.SS "const MQSERIES_MQIA_TOPIC_TYPE 208"
+
+.SS "const MQSERIES_MQIA_TRACE_ROUTE_RECORDING 137"
+
+.SS "const MQSERIES_MQIA_TREE_LIFE_TIME 183"
+
+.SS "const MQSERIES_MQIA_TRIGGER_CONTROL 24"
+
+.SS "const MQSERIES_MQIA_TRIGGER_DEPTH 29"
+
+.SS "const MQSERIES_MQIA_TRIGGER_INTERVAL 25"
+
+.SS "const MQSERIES_MQIA_TRIGGER_MSG_PRIORITY 26"
+
+.SS "const MQSERIES_MQIA_TRIGGER_RESTART 91"
+
+.SS "const MQSERIES_MQIA_TRIGGER_TYPE 28"
+
+.SS "const MQSERIES_MQIA_UR_DISP 222"
+
+.SS "const MQSERIES_MQIA_USAGE 12"
+
+.SS "const MQSERIES_MQIA_USE_DEAD_LETTER_Q 234"
+
+.SS "const MQSERIES_MQIA_USER_LIST 2000"
+
+.SS "const MQSERIES_MQIA_WILDCARD_OPERATION 216"
+
+.SS "const MQSERIES_MQIA_XR_CAPABILITY 243"
+
+.SS "const MQSERIES_MQMD_CURRENT_VERSION 2"
+
+.SS "const MQSERIES_MQMD_VERSION_1 1"
+
+.SS "const MQSERIES_MQMD_VERSION_2 2"
+
+.SS "const MQSERIES_MQMF_ACCEPT_UNSUP_IF_XMIT_MASK 1044480"
+
+.SS "const MQSERIES_MQMF_ACCEPT_UNSUP_MASK 4293918720"
+
+.SS "const MQSERIES_MQMF_LAST_MSG_IN_GROUP 16"
+
+.SS "const MQSERIES_MQMF_LAST_SEGMENT 4"
+
+.SS "const MQSERIES_MQMF_MSG_IN_GROUP 8"
+
+.SS "const MQSERIES_MQMF_NONE 0"
+
+.SS "const MQSERIES_MQMF_REJECT_UNSUP_MASK 4095"
+
+.SS "const MQSERIES_MQMF_SEGMENT 2"
+
+.SS "const MQSERIES_MQMF_SEGMENTATION_ALLOWED 1"
+
+.SS "const MQSERIES_MQMF_SEGMENTATION_INHIBITED 0"
+
+.SS "const MQSERIES_MQMI_NONE ''"
+
+.SS "const MQSERIES_MQMO_MATCH_CORREL_ID 2"
+
+.SS "const MQSERIES_MQMO_MATCH_GROUP_ID 4"
+
+.SS "const MQSERIES_MQMO_MATCH_MSG_ID 1"
+
+.SS "const MQSERIES_MQMO_MATCH_MSG_SEQ_NUMBER 8"
+
+.SS "const MQSERIES_MQMO_MATCH_MSG_TOKEN 32"
+
+.SS "const MQSERIES_MQMO_MATCH_OFFSET 16"
+
+.SS "const MQSERIES_MQMO_NONE 0"
+
+.SS "const MQSERIES_MQMT_APPL_FIRST 65536"
+
+.SS "const MQSERIES_MQMT_APPL_LAST 999999999"
+
+.SS "const MQSERIES_MQMT_DATAGRAM 8"
+
+.SS "const MQSERIES_MQMT_MQE_FIELDS 113"
+
+.SS "const MQSERIES_MQMT_MQE_FIELDS_FROM_MQE 112"
+
+.SS "const MQSERIES_MQMT_REPLY 2"
+
+.SS "const MQSERIES_MQMT_REPORT 4"
+
+.SS "const MQSERIES_MQMT_REQUEST 1"
+
+.SS "const MQSERIES_MQMT_SYSTEM_FIRST 1"
+
+.SS "const MQSERIES_MQMT_SYSTEM_LAST 65535"
+
+.SS "const MQSERIES_MQMTOK_NONE ''"
+
+.SS "const MQSERIES_MQOD_CURRENT_VERSION 4"
+
+.SS "const MQSERIES_MQOD_VERSION_1 1"
+
+.SS "const MQSERIES_MQOD_VERSION_2 2"
+
+.SS "const MQSERIES_MQOD_VERSION_3 3"
+
+.SS "const MQSERIES_MQOD_VERSION_4 4"
+
+.SS "const MQSERIES_MQOL_UNDEFINED \-1"
+
+.SS "const MQSERIES_MQOO_ALTERNATE_USER_AUTHORITY 4096"
+
+.SS "const MQSERIES_MQOO_BIND_AS_Q_DEF 0"
+
+.SS "const MQSERIES_MQOO_BIND_NOT_FIXED 32768"
+
+.SS "const MQSERIES_MQOO_BIND_ON_GROUP 4194304"
+
+.SS "const MQSERIES_MQOO_BIND_ON_OPEN 16384"
+
+.SS "const MQSERIES_MQOO_BROWSE 8"
+
+.SS "const MQSERIES_MQOO_CO_OP 131072"
+
+.SS "const MQSERIES_MQOO_FAIL_IF_QUIESCING 8192"
+
+.SS "const MQSERIES_MQOO_INPUT_AS_Q_DEF 1"
+
+.SS "const MQSERIES_MQOO_INPUT_EXCLUSIVE 4"
+
+.SS "const MQSERIES_MQOO_INPUT_SHARED 2"
+
+.SS "const MQSERIES_MQOO_INQUIRE 32"
+
+.SS "const MQSERIES_MQOO_NO_MULTICAST 2097152"
+
+.SS "const MQSERIES_MQOO_NO_READ_AHEAD 524288"
+
+.SS "const MQSERIES_MQOO_OUTPUT 16"
+
+.SS "const MQSERIES_MQOO_PASS_ALL_CONTEXT 512"
+
+.SS "const MQSERIES_MQOO_PASS_IDENTITY_CONTEXT 256"
+
+.SS "const MQSERIES_MQOO_READ_AHEAD 1048576"
+
+.SS "const MQSERIES_MQOO_READ_AHEAD_AS_Q_DEF 0"
+
+.SS "const MQSERIES_MQOO_RESOLVE_LOCAL_Q 262144"
+
+.SS "const MQSERIES_MQOO_RESOLVE_LOCAL_TOPIC 262144"
+
+.SS "const MQSERIES_MQOO_SAVE_ALL_CONTEXT 128"
+
+.SS "const MQSERIES_MQOO_SET 64"
+
+.SS "const MQSERIES_MQOO_SET_ALL_CONTEXT 2048"
+
+.SS "const MQSERIES_MQOO_SET_IDENTITY_CONTEXT 1024"
+
+.SS "const MQSERIES_MQOT_AUTH_INFO 7"
+
+.SS "const MQSERIES_MQOT_CF_STRUC 10"
+
+.SS "const MQSERIES_MQOT_CHANNEL 6"
+
+.SS "const MQSERIES_MQOT_COMM_INFO 9"
+
+.SS "const MQSERIES_MQOT_LISTENER 11"
+
+.SS "const MQSERIES_MQOT_NAMELIST 2"
+
+.SS "const MQSERIES_MQOT_NONE 0"
+
+.SS "const MQSERIES_MQOT_PROCESS 3"
+
+.SS "const MQSERIES_MQOT_Q 1"
+
+.SS "const MQSERIES_MQOT_Q_MGR 5"
+
+.SS "const MQSERIES_MQOT_RESERVED_1 999"
+
+.SS "const MQSERIES_MQOT_SERVICE 12"
+
+.SS "const MQSERIES_MQOT_STORAGE_CLASS 4"
+
+.SS "const MQSERIES_MQOT_TOPIC 8"
+
+.SS "const MQSERIES_MQPER_NOT_PERSISTENT 0"
+
+.SS "const MQSERIES_MQPER_PERSISTENCE_AS_PARENT \-1"
+
+.SS "const MQSERIES_MQPER_PERSISTENCE_AS_Q_DEF 2"
+
+.SS "const MQSERIES_MQPER_PERSISTENCE_AS_TOPIC_DEF 2"
+
+.SS "const MQSERIES_MQPER_PERSISTENT 1"
+
+.SS "const MQSERIES_MQPMO_ALTERNATE_USER_AUTHORITY 4096"
+
+.SS "const MQSERIES_MQPMO_ASYNC_RESPONSE 65536"
+
+.SS "const MQSERIES_MQPMO_CURRENT_VERSION 3"
+
+.SS "const MQSERIES_MQPMO_DEFAULT_CONTEXT 32"
+
+.SS "const MQSERIES_MQPMO_FAIL_IF_QUIESCING 8192"
+
+.SS "const MQSERIES_MQPMO_LOGICAL_ORDER 32768"
+
+.SS "const MQSERIES_MQPMO_MD_FOR_OUTPUT_ONLY 8388608"
+
+.SS "const MQSERIES_MQPMO_NEW_CORREL_ID 128"
+
+.SS "const MQSERIES_MQPMO_NEW_MSG_ID 64"
+
+.SS "const MQSERIES_MQPMO_NO_CONTEXT 16384"
+
+.SS "const MQSERIES_MQPMO_NO_SYNCPOINT 4"
+
+.SS "const MQSERIES_MQPMO_NONE 0"
+
+.SS "const MQSERIES_MQPMO_NOT_OWN_SUBS 268435456"
+
+.SS "const MQSERIES_MQPMO_PASS_ALL_CONTEXT 512"
+
+.SS "const MQSERIES_MQPMO_PASS_IDENTITY_CONTEXT 256"
+
+.SS "const MQSERIES_MQPMO_RESOLVE_LOCAL_Q 262144"
+
+.SS "const MQSERIES_MQPMO_RESPONSE_AS_Q_DEF 0"
+
+.SS "const MQSERIES_MQPMO_RESPONSE_AS_TOPIC_DEF 0"
+
+.SS "const MQSERIES_MQPMO_RETAIN 2097152"
+
+.SS "const MQSERIES_MQPMO_SCOPE_QMGR 67108864"
+
+.SS "const MQSERIES_MQPMO_SET_ALL_CONTEXT 2048"
+
+.SS "const MQSERIES_MQPMO_SET_IDENTITY_CONTEXT 1024"
+
+.SS "const MQSERIES_MQPMO_SUPPRESS_REPLYTO 134217728"
+
+.SS "const MQSERIES_MQPMO_SYNC_RESPONSE 131072"
+
+.SS "const MQSERIES_MQPMO_SYNCPOINT 2"
+
+.SS "const MQSERIES_MQPMO_VERSION_1 1"
+
+.SS "const MQSERIES_MQPMO_VERSION_2 2"
+
+.SS "const MQSERIES_MQPMO_VERSION_3 3"
+
+.SS "const MQSERIES_MQPMO_WARN_IF_NO_SUBS_MATCHED 524288"
+
+.SS "const MQSERIES_MQPRI_PRIORITY_AS_PARENT \-2"
+
+.SS "const MQSERIES_MQPRI_PRIORITY_AS_PUBLISHED \-3"
+
+.SS "const MQSERIES_MQPRI_PRIORITY_AS_Q_DEF \-1"
+
+.SS "const MQSERIES_MQPRI_PRIORITY_AS_TOPIC_DEF \-1"
+
+.SS "const MQSERIES_MQPRT_ASYNC_RESPONSE 2"
+
+.SS "const MQSERIES_MQPRT_RESPONSE_AS_PARENT 0"
+
+.SS "const MQSERIES_MQPRT_SYNC_RESPONSE 1"
+
+.SS "const MQSERIES_MQRC_ACTION_ERROR 2535"
+
+.SS "const MQSERIES_MQRC_ADAPTER_CONN_LOAD_ERROR 2129"
+
+.SS "const MQSERIES_MQRC_ADAPTER_CONV_LOAD_ERROR 2133"
+
+.SS "const MQSERIES_MQRC_ADAPTER_DEFS_ERROR 2131"
+
+.SS "const MQSERIES_MQRC_ADAPTER_DEFS_LOAD_ERROR 2132"
+
+.SS "const MQSERIES_MQRC_ADAPTER_DISC_LOAD_ERROR 2138"
+
+.SS "const MQSERIES_MQRC_ADAPTER_NOT_AVAILABLE 2204"
+
+.SS "const MQSERIES_MQRC_ADAPTER_SERV_LOAD_ERROR 2130"
+
+.SS "const MQSERIES_MQRC_ADAPTER_STORAGE_SHORTAGE 2127"
+
+.SS "const MQSERIES_MQRC_AIR_ERROR 2385"
+
+.SS "const MQSERIES_MQRC_ALIAS_BASE_Q_TYPE_ERROR 2001"
+
+.SS "const MQSERIES_MQRC_ALIAS_TARGTYPE_CHANGED 2480"
+
+.SS "const MQSERIES_MQRC_ALREADY_CONNECTED 2002"
+
+.SS "const MQSERIES_MQRC_ALREADY_JOINED 2542"
+
+.SS "const MQSERIES_MQRC_ALTER_SUB_ERROR 2435"
+
+.SS "const MQSERIES_MQRC_ANOTHER_Q_MGR_CONNECTED 2103"
+
+.SS "const MQSERIES_MQRC_API_EXIT_ERROR 2374"
+
+.SS "const MQSERIES_MQRC_API_EXIT_INIT_ERROR 2375"
+
+.SS "const MQSERIES_MQRC_API_EXIT_LOAD_ERROR 2183"
+
+.SS "const MQSERIES_MQRC_API_EXIT_NOT_FOUND 2182"
+
+.SS "const MQSERIES_MQRC_API_EXIT_TERM_ERROR 2376"
+
+.SS "const MQSERIES_MQRC_APPL_FIRST 900"
+
+.SS "const MQSERIES_MQRC_APPL_LAST 999"
+
+.SS "const MQSERIES_MQRC_ASID_MISMATCH 2157"
+
+.SS "const MQSERIES_MQRC_ASYNC_UOW_CONFLICT 2529"
+
+.SS "const MQSERIES_MQRC_ASYNC_XA_CONFLICT 2530"
+
+.SS "const MQSERIES_MQRC_ATTRIBUTE_LOCKED 6104"
+
+.SS "const MQSERIES_MQRC_AUTH_INFO_CONN_NAME_ERROR 2387"
+
+.SS "const MQSERIES_MQRC_AUTH_INFO_REC_COUNT_ERROR 2383"
+
+.SS "const MQSERIES_MQRC_AUTH_INFO_REC_ERROR 2384"
+
+.SS "const MQSERIES_MQRC_AUTH_INFO_TYPE_ERROR 2386"
+
+.SS "const MQSERIES_MQRC_BACKED_OUT 2003"
+
+.SS "const MQSERIES_MQRC_BACKOUT_THRESHOLD_REACHED 2362"
+
+.SS "const MQSERIES_MQRC_BAG_CONVERSION_ERROR 2303"
+
+.SS "const MQSERIES_MQRC_BAG_WRONG_TYPE 2326"
+
+.SS "const MQSERIES_MQRC_BINARY_DATA_LENGTH_ERROR 6111"
+
+.SS "const MQSERIES_MQRC_BMHO_ERROR 2489"
+
+.SS "const MQSERIES_MQRC_BO_ERROR 2134"
+
+.SS "const MQSERIES_MQRC_BRIDGE_STARTED 2125"
+
+.SS "const MQSERIES_MQRC_BRIDGE_STOPPED 2126"
+
+.SS "const MQSERIES_MQRC_BUFFER_ERROR 2004"
+
+.SS "const MQSERIES_MQRC_BUFFER_LENGTH_ERROR 2005"
+
+.SS "const MQSERIES_MQRC_BUFFER_NOT_AUTOMATIC 6112"
+
+.SS "const MQSERIES_MQRC_CALL_IN_PROGRESS 2219"
+
+.SS "const MQSERIES_MQRC_CALL_INTERRUPTED 2549"
+
+.SS "const MQSERIES_MQRC_CALLBACK_LINK_ERROR 2487"
+
+.SS "const MQSERIES_MQRC_CALLBACK_NOT_REGISTERED 2448"
+
+.SS "const MQSERIES_MQRC_CALLBACK_ROUTINE_ERROR 2486"
+
+.SS "const MQSERIES_MQRC_CALLBACK_TYPE_ERROR 2483"
+
+.SS "const MQSERIES_MQRC_CBD_ERROR 2444"
+
+.SS "const MQSERIES_MQRC_CBD_OPTIONS_ERROR 2484"
+
+.SS "const MQSERIES_MQRC_CD_ARRAY_ERROR 2576"
+
+.SS "const MQSERIES_MQRC_CD_ERROR 2277"
+
+.SS "const MQSERIES_MQRC_CERT_VAL_POLICY_ERROR 2593"
+
+.SS "const MQSERIES_MQRC_CF_NOT_AVAILABLE 2345"
+
+.SS "const MQSERIES_MQRC_CF_STRUC_AUTH_FAILED 2348"
+
+.SS "const MQSERIES_MQRC_CF_STRUC_ERROR 2349"
+
+.SS "const MQSERIES_MQRC_CF_STRUC_FAILED 2373"
+
+.SS "const MQSERIES_MQRC_CF_STRUC_IN_USE 2346"
+
+.SS "const MQSERIES_MQRC_CF_STRUC_LIST_HDR_IN_USE 2347"
+
+.SS "const MQSERIES_MQRC_CFBF_ERROR 2422"
+
+.SS "const MQSERIES_MQRC_CFBS_ERROR 2395"
+
+.SS "const MQSERIES_MQRC_CFGR_ERROR 2416"
+
+.SS "const MQSERIES_MQRC_CFH_ERROR 2235"
+
+.SS "const MQSERIES_MQRC_CFIF_ERROR 2414"
+
+.SS "const MQSERIES_MQRC_CFIL_ERROR 2236"
+
+.SS "const MQSERIES_MQRC_CFIN_ERROR 2237"
+
+.SS "const MQSERIES_MQRC_CFSF_ERROR 2415"
+
+.SS "const MQSERIES_MQRC_CFSL_ERROR 2238"
+
+.SS "const MQSERIES_MQRC_CFST_ERROR 2239"
+
+.SS "const MQSERIES_MQRC_CHANNEL_ACTIVATED 2295"
+
+.SS "const MQSERIES_MQRC_CHANNEL_AUTO_DEF_ERROR 2234"
+
+.SS "const MQSERIES_MQRC_CHANNEL_AUTO_DEF_OK 2233"
+
+.SS "const MQSERIES_MQRC_CHANNEL_BLOCKED 2577"
+
+.SS "const MQSERIES_MQRC_CHANNEL_BLOCKED_WARNING 2578"
+
+.SS "const MQSERIES_MQRC_CHANNEL_CONFIG_ERROR 2539"
+
+.SS "const MQSERIES_MQRC_CHANNEL_CONV_ERROR 2284"
+
+.SS "const MQSERIES_MQRC_CHANNEL_NOT_ACTIVATED 2296"
+
+.SS "const MQSERIES_MQRC_CHANNEL_NOT_AVAILABLE 2537"
+
+.SS "const MQSERIES_MQRC_CHANNEL_SSL_ERROR 2371"
+
+.SS "const MQSERIES_MQRC_CHANNEL_SSL_WARNING 2552"
+
+.SS "const MQSERIES_MQRC_CHANNEL_STARTED 2282"
+
+.SS "const MQSERIES_MQRC_CHANNEL_STOPPED 2283"
+
+.SS "const MQSERIES_MQRC_CHANNEL_STOPPED_BY_USER 2279"
+
+.SS "const MQSERIES_MQRC_CHAR_ATTR_LENGTH_ERROR 2006"
+
+.SS "const MQSERIES_MQRC_CHAR_ATTRS_ERROR 2007"
+
+.SS "const MQSERIES_MQRC_CHAR_ATTRS_TOO_SHORT 2008"
+
+.SS "const MQSERIES_MQRC_CHAR_CONVERSION_ERROR 2340"
+
+.SS "const MQSERIES_MQRC_CICS_BRIDGE_RESTRICTION 2187"
+
+.SS "const MQSERIES_MQRC_CICS_WAIT_FAILED 2140"
+
+.SS "const MQSERIES_MQRC_CIPHER_SPEC_NOT_SUITE_B 2591"
+
+.SS "const MQSERIES_MQRC_CLIENT_CHANNEL_CONFLICT 2423"
+
+.SS "const MQSERIES_MQRC_CLIENT_CONN_ERROR 2278"
+
+.SS "const MQSERIES_MQRC_CLIENT_EXIT_ERROR 2407"
+
+.SS "const MQSERIES_MQRC_CLIENT_EXIT_LOAD_ERROR 2406"
+
+.SS "const MQSERIES_MQRC_CLUSTER_EXIT_ERROR 2266"
+
+.SS "const MQSERIES_MQRC_CLUSTER_EXIT_LOAD_ERROR 2267"
+
+.SS "const MQSERIES_MQRC_CLUSTER_PUT_INHIBITED 2268"
+
+.SS "const MQSERIES_MQRC_CLUSTER_RESOLUTION_ERROR 2189"
+
+.SS "const MQSERIES_MQRC_CLUSTER_RESOURCE_ERROR 2269"
+
+.SS "const MQSERIES_MQRC_CMD_SERVER_NOT_AVAILABLE 2322"
+
+.SS "const MQSERIES_MQRC_CMHO_ERROR 2461"
+
+.SS "const MQSERIES_MQRC_CNO_ERROR 2139"
+
+.SS "const MQSERIES_MQRC_COD_NOT_VALID_FOR_XCF_Q 2106"
+
+.SS "const MQSERIES_MQRC_CODED_CHAR_SET_ID_ERROR 2330"
+
+.SS "const MQSERIES_MQRC_COMMAND_MQSC 2412"
+
+.SS "const MQSERIES_MQRC_COMMAND_PCF 2413"
+
+.SS "const MQSERIES_MQRC_COMMAND_TYPE_ERROR 2300"
+
+.SS "const MQSERIES_MQRC_COMMINFO_ERROR 2558"
+
+.SS "const MQSERIES_MQRC_CONFIG_CHANGE_OBJECT 2368"
+
+.SS "const MQSERIES_MQRC_CONFIG_CREATE_OBJECT 2367"
+
+.SS "const MQSERIES_MQRC_CONFIG_DELETE_OBJECT 2369"
+
+.SS "const MQSERIES_MQRC_CONFIG_REFRESH_OBJECT 2370"
+
+.SS "const MQSERIES_MQRC_CONN_ID_IN_USE 2160"
+
+.SS "const MQSERIES_MQRC_CONN_TAG_IN_USE 2271"
+
+.SS "const MQSERIES_MQRC_CONN_TAG_NOT_RELEASED 2344"
+
+.SS "const MQSERIES_MQRC_CONN_TAG_NOT_USABLE 2350"
+
+.SS "const MQSERIES_MQRC_CONNECTION_BROKEN 2009"
+
+.SS "const MQSERIES_MQRC_CONNECTION_ERROR 2273"
+
+.SS "const MQSERIES_MQRC_CONNECTION_NOT_AUTHORIZED 2217"
+
+.SS "const MQSERIES_MQRC_CONNECTION_NOT_AVAILABLE 2568"
+
+.SS "const MQSERIES_MQRC_CONNECTION_QUIESCING 2202"
+
+.SS "const MQSERIES_MQRC_CONNECTION_STOPPED 2528"
+
+.SS "const MQSERIES_MQRC_CONNECTION_STOPPING 2203"
+
+.SS "const MQSERIES_MQRC_CONNECTION_SUSPENDED 2521"
+
+.SS "const MQSERIES_MQRC_CONTENT_ERROR 2554"
+
+.SS "const MQSERIES_MQRC_CONTEXT_HANDLE_ERROR 2097"
+
+.SS "const MQSERIES_MQRC_CONTEXT_NOT_AVAILABLE 2098"
+
+.SS "const MQSERIES_MQRC_CONTEXT_OBJECT_NOT_VALID 6121"
+
+.SS "const MQSERIES_MQRC_CONTEXT_OPEN_ERROR 6122"
+
+.SS "const MQSERIES_MQRC_CONVERTED_MSG_TOO_BIG 2120"
+
+.SS "const MQSERIES_MQRC_CONVERTED_STRING_TOO_BIG 2190"
+
+.SS "const MQSERIES_MQRC_CORREL_ID_ERROR 2207"
+
+.SS "const MQSERIES_MQRC_CRYPTO_HARDWARE_ERROR 2382"
+
+.SS "const MQSERIES_MQRC_CTLO_ERROR 2445"
+
+.SS "const MQSERIES_MQRC_CURRENT_RECORD_ERROR 2357"
+
+.SS "const MQSERIES_MQRC_CURSOR_NOT_VALID 6105"
+
+.SS "const MQSERIES_MQRC_DATA_LENGTH_ERROR 2010"
+
+.SS "const MQSERIES_MQRC_DATA_SET_NOT_AVAILABLE 2561"
+
+.SS "const MQSERIES_MQRC_DATA_TRUNCATED 6115"
+
+.SS "const MQSERIES_MQRC_DB2_NOT_AVAILABLE 2342"
+
+.SS "const MQSERIES_MQRC_DBCS_ERROR 2150"
+
+.SS "const MQSERIES_MQRC_DEF_SYNCPOINT_INHIBITED 2559"
+
+.SS "const MQSERIES_MQRC_DEF_XMIT_Q_TYPE_ERROR 2198"
+
+.SS "const MQSERIES_MQRC_DEF_XMIT_Q_USAGE_ERROR 2199"
+
+.SS "const MQSERIES_MQRC_DEST_CLASS_NOT_ALTERABLE 2533"
+
+.SS "const MQSERIES_MQRC_DEST_ENV_ERROR 2263"
+
+.SS "const MQSERIES_MQRC_DEST_NAME_ERROR 2264"
+
+.SS "const MQSERIES_MQRC_DH_ERROR 2135"
+
+.SS "const MQSERIES_MQRC_DISTRIBUTION_LIST_EMPTY 6126"
+
+.SS "const MQSERIES_MQRC_DLH_ERROR 2141"
+
+.SS "const MQSERIES_MQRC_DMHO_ERROR 2462"
+
+.SS "const MQSERIES_MQRC_DMPO_ERROR 2481"
+
+.SS "const MQSERIES_MQRC_DUPLICATE_GROUP_SUB 2514"
+
+.SS "const MQSERIES_MQRC_DUPLICATE_RECOV_COORD 2163"
+
+.SS "const MQSERIES_MQRC_DURABILITY_NOT_ALLOWED 2436"
+
+.SS "const MQSERIES_MQRC_DURABILITY_NOT_ALTERABLE 2509"
+
+.SS "const MQSERIES_MQRC_DYNAMIC_Q_NAME_ERROR 2011"
+
+.SS "const MQSERIES_MQRC_ENCODING_ERROR 6106"
+
+.SS "const MQSERIES_MQRC_ENCODING_NOT_SUPPORTED 2308"
+
+.SS "const MQSERIES_MQRC_ENVIRONMENT_ERROR 2012"
+
+.SS "const MQSERIES_MQRC_EPH_ERROR 2420"
+
+.SS "const MQSERIES_MQRC_EXIT_PROPS_NOT_SUPPORTED 2588"
+
+.SS "const MQSERIES_MQRC_EXIT_REASON_ERROR 2377"
+
+.SS "const MQSERIES_MQRC_EXPIRY_ERROR 2013"
+
+.SS "const MQSERIES_MQRC_FASTPATH_NOT_AVAILABLE 2590"
+
+.SS "const MQSERIES_MQRC_FEEDBACK_ERROR 2014"
+
+.SS "const MQSERIES_MQRC_FILE_NOT_AUDITED 2216"
+
+.SS "const MQSERIES_MQRC_FILE_SYSTEM_ERROR 2208"
+
+.SS "const MQSERIES_MQRC_FILTER_OPERATOR_ERROR 2418"
+
+.SS "const MQSERIES_MQRC_FORMAT_ERROR 2110"
+
+.SS "const MQSERIES_MQRC_FORMAT_NOT_SUPPORTED 2317"
+
+.SS "const MQSERIES_MQRC_FUNCTION_ERROR 2281"
+
+.SS "const MQSERIES_MQRC_FUNCTION_NOT_SUPPORTED 2298"
+
+.SS "const MQSERIES_MQRC_GET_ENABLED 2494"
+
+.SS "const MQSERIES_MQRC_GET_INHIBITED 2016"
+
+.SS "const MQSERIES_MQRC_GLOBAL_UOW_CONFLICT 2351"
+
+.SS "const MQSERIES_MQRC_GMO_ERROR 2186"
+
+.SS "const MQSERIES_MQRC_GROUP_ADDRESS_ERROR 2563"
+
+.SS "const MQSERIES_MQRC_GROUP_ID_ERROR 2258"
+
+.SS "const MQSERIES_MQRC_GROUPING_NOT_ALLOWED 2562"
+
+.SS "const MQSERIES_MQRC_GROUPING_NOT_ALTERABLE 2515"
+
+.SS "const MQSERIES_MQRC_HANDLE_IN_USE_FOR_UOW 2353"
+
+.SS "const MQSERIES_MQRC_HANDLE_NOT_AVAILABLE 2017"
+
+.SS "const MQSERIES_MQRC_HBAG_ERROR 2320"
+
+.SS "const MQSERIES_MQRC_HCONFIG_ERROR 2280"
+
+.SS "const MQSERIES_MQRC_HCONN_ASYNC_ACTIVE 2500"
+
+.SS "const MQSERIES_MQRC_HCONN_ERROR 2018"
+
+.SS "const MQSERIES_MQRC_HEADER_ERROR 2142"
+
+.SS "const MQSERIES_MQRC_HMSG_ERROR 2460"
+
+.SS "const MQSERIES_MQRC_HMSG_NOT_AVAILABLE 2587"
+
+.SS "const MQSERIES_MQRC_HOBJ_ERROR 2019"
+
+.SS "const MQSERIES_MQRC_HOBJ_QUIESCED 2517"
+
+.SS "const MQSERIES_MQRC_HOBJ_QUIESCED_NO_MSGS 2518"
+
+.SS "const MQSERIES_MQRC_HOST_NOT_AVAILABLE 2538"
+
+.SS "const MQSERIES_MQRC_IDENTITY_MISMATCH 2434"
+
+.SS "const MQSERIES_MQRC_IIH_ERROR 2148"
+
+.SS "const MQSERIES_MQRC_IMPO_ERROR 2464"
+
+.SS "const MQSERIES_MQRC_INCOMPLETE_GROUP 2241"
+
+.SS "const MQSERIES_MQRC_INCOMPLETE_MSG 2242"
+
+.SS "const MQSERIES_MQRC_INCONSISTENT_BROWSE 2259"
+
+.SS "const MQSERIES_MQRC_INCONSISTENT_CCSIDS 2243"
+
+.SS "const MQSERIES_MQRC_INCONSISTENT_ENCODINGS 2244"
+
+.SS "const MQSERIES_MQRC_INCONSISTENT_FORMAT 6119"
+
+.SS "const MQSERIES_MQRC_INCONSISTENT_ITEM_TYPE 2313"
+
+.SS "const MQSERIES_MQRC_INCONSISTENT_OBJECT_STATE 6120"
+
+.SS "const MQSERIES_MQRC_INCONSISTENT_OPEN_OPTIONS 6127"
+
+.SS "const MQSERIES_MQRC_INCONSISTENT_PERSISTENCE 2185"
+
+.SS "const MQSERIES_MQRC_INCONSISTENT_UOW 2245"
+
+.SS "const MQSERIES_MQRC_INDEX_ERROR 2314"
+
+.SS "const MQSERIES_MQRC_INDEX_NOT_PRESENT 2306"
+
+.SS "const MQSERIES_MQRC_INHIBIT_VALUE_ERROR 2020"
+
+.SS "const MQSERIES_MQRC_INITIALIZATION_FAILED 2286"
+
+.SS "const MQSERIES_MQRC_INQUIRY_COMMAND_ERROR 2324"
+
+.SS "const MQSERIES_MQRC_INSTALLATION_MISMATCH 2583"
+
+.SS "const MQSERIES_MQRC_INSTALLATION_MISSING 2589"
+
+.SS "const MQSERIES_MQRC_INSUFFICIENT_BUFFER 6113"
+
+.SS "const MQSERIES_MQRC_INSUFFICIENT_DATA 6114"
+
+.SS "const MQSERIES_MQRC_INT_ATTR_COUNT_ERROR 2021"
+
+.SS "const MQSERIES_MQRC_INT_ATTR_COUNT_TOO_SMALL 2022"
+
+.SS "const MQSERIES_MQRC_INT_ATTRS_ARRAY_ERROR 2023"
+
+.SS "const MQSERIES_MQRC_INVALID_DESTINATION 2522"
+
+.SS "const MQSERIES_MQRC_INVALID_MSG_UNDER_CURSOR 2246"
+
+.SS "const MQSERIES_MQRC_INVALID_SUBSCRIPTION 2523"
+
+.SS "const MQSERIES_MQRC_ITEM_COUNT_ERROR 2316"
+
+.SS "const MQSERIES_MQRC_ITEM_TYPE_ERROR 2327"
+
+.SS "const MQSERIES_MQRC_ITEM_VALUE_ERROR 2319"
+
+.SS "const MQSERIES_MQRC_JMS_FORMAT_ERROR 2364"
+
+.SS "const MQSERIES_MQRC_JSSE_ERROR 2397"
+
+.SS "const MQSERIES_MQRC_KEY_REPOSITORY_ERROR 2381"
+
+.SS "const MQSERIES_MQRC_LDAP_PASSWORD_ERROR 2390"
+
+.SS "const MQSERIES_MQRC_LDAP_USER_NAME_ERROR 2388"
+
+.SS "const MQSERIES_MQRC_LDAP_USER_NAME_LENGTH_ERR 2389"
+
+.SS "const MQSERIES_MQRC_LOCAL_UOW_CONFLICT 2352"
+
+.SS "const MQSERIES_MQRC_LOGGER_STATUS 2411"
+
+.SS "const MQSERIES_MQRC_LOOPING_PUBLICATION 2541"
+
+.SS "const MQSERIES_MQRC_MATCH_OPTIONS_ERROR 2247"
+
+.SS "const MQSERIES_MQRC_MAX_CONNS_LIMIT_REACHED 2025"
+
+.SS "const MQSERIES_MQRC_MAX_MSG_LENGTH_ERROR 2485"
+
+.SS "const MQSERIES_MQRC_MCAST_PUB_STATUS 2571"
+
+.SS "const MQSERIES_MQRC_MCAST_SUB_STATUS 2572"
+
+.SS "const MQSERIES_MQRC_MD_ERROR 2026"
+
+.SS "const MQSERIES_MQRC_MDE_ERROR 2248"
+
+.SS "const MQSERIES_MQRC_MHBO_ERROR 2501"
+
+.SS "const MQSERIES_MQRC_MISSING_REPLY_TO_Q 2027"
+
+.SS "const MQSERIES_MQRC_MISSING_WIH 2332"
+
+.SS "const MQSERIES_MQRC_MIXED_CONTENT_NOT_ALLOWED 2498"
+
+.SS "const MQSERIES_MQRC_MODULE_ENTRY_NOT_FOUND 2497"
+
+.SS "const MQSERIES_MQRC_MODULE_INVALID 2496"
+
+.SS "const MQSERIES_MQRC_MODULE_NOT_FOUND 2495"
+
+.SS "const MQSERIES_MQRC_MSG_FLAGS_ERROR 2249"
+
+.SS "const MQSERIES_MQRC_MSG_HANDLE_COPY_FAILURE 2532"
+
+.SS "const MQSERIES_MQRC_MSG_HANDLE_IN_USE 2499"
+
+.SS "const MQSERIES_MQRC_MSG_ID_ERROR 2206"
+
+.SS "const MQSERIES_MQRC_MSG_MARKED_BROWSE_CO_OP 2200"
+
+.SS "const MQSERIES_MQRC_MSG_NOT_ALLOWED_IN_GROUP 2417"
+
+.SS "const MQSERIES_MQRC_MSG_NOT_MATCHED 2363"
+
+.SS "const MQSERIES_MQRC_MSG_SEQ_NUMBER_ERROR 2250"
+
+.SS "const MQSERIES_MQRC_MSG_TOKEN_ERROR 2331"
+
+.SS "const MQSERIES_MQRC_MSG_TOO_BIG_FOR_CHANNEL 2218"
+
+.SS "const MQSERIES_MQRC_MSG_TOO_BIG_FOR_Q 2030"
+
+.SS "const MQSERIES_MQRC_MSG_TOO_BIG_FOR_Q_MGR 2031"
+
+.SS "const MQSERIES_MQRC_MSG_TYPE_ERROR 2029"
+
+.SS "const MQSERIES_MQRC_MULTICAST_CONFIG_ERROR 2564"
+
+.SS "const MQSERIES_MQRC_MULTICAST_INTERFACE_ERROR 2565"
+
+.SS "const MQSERIES_MQRC_MULTICAST_INTERNAL_ERROR 2567"
+
+.SS "const MQSERIES_MQRC_MULTICAST_ONLY 2560"
+
+.SS "const MQSERIES_MQRC_MULTICAST_SEND_ERROR 2566"
+
+.SS "const MQSERIES_MQRC_MULTIPLE_INSTANCE_ERROR 2301"
+
+.SS "const MQSERIES_MQRC_MULTIPLE_REASONS 2136"
+
+.SS "const MQSERIES_MQRC_NAME_IN_USE 2201"
+
+.SS "const MQSERIES_MQRC_NAME_NOT_VALID_FOR_TYPE 2194"
+
+.SS "const MQSERIES_MQRC_NEGATIVE_LENGTH 6117"
+
+.SS "const MQSERIES_MQRC_NEGATIVE_OFFSET 6118"
+
+.SS "const MQSERIES_MQRC_NESTED_BAG_NOT_SUPPORTED 2325"
+
+.SS "const MQSERIES_MQRC_NESTED_SELECTOR_ERROR 2419"
+
+.SS "const MQSERIES_MQRC_NEXT_OFFSET_ERROR 2358"
+
+.SS "const MQSERIES_MQRC_NEXT_RECORD_ERROR 2361"
+
+.SS "const MQSERIES_MQRC_NO_BUFFER 6110"
+
+.SS "const MQSERIES_MQRC_NO_CALLBACKS_ACTIVE 2446"
+
+.SS "const MQSERIES_MQRC_NO_CONNECTION_REFERENCE 6109"
+
+.SS "const MQSERIES_MQRC_NO_DATA_AVAILABLE 2379"
+
+.SS "const MQSERIES_MQRC_NO_DESTINATIONS_AVAILABLE 2270"
+
+.SS "const MQSERIES_MQRC_NO_EXTERNAL_PARTICIPANTS 2121"
+
+.SS "const MQSERIES_MQRC_NO_MSG_AVAILABLE 2033"
+
+.SS "const MQSERIES_MQRC_NO_MSG_LOCKED 2209"
+
+.SS "const MQSERIES_MQRC_NO_MSG_UNDER_CURSOR 2034"
+
+.SS "const MQSERIES_MQRC_NO_RECORD_AVAILABLE 2359"
+
+.SS "const MQSERIES_MQRC_NO_RETAINED_MSG 2437"
+
+.SS "const MQSERIES_MQRC_NO_SUBS_MATCHED 2550"
+
+.SS "const MQSERIES_MQRC_NO_SUBSCRIPTION 2428"
+
+.SS "const MQSERIES_MQRC_NONE 0"
+
+.SS "const MQSERIES_MQRC_NOT_AUTHORIZED 2035"
+
+.SS "const MQSERIES_MQRC_NOT_CONNECTED 6124"
+
+.SS "const MQSERIES_MQRC_NOT_CONVERTED 2119"
+
+.SS "const MQSERIES_MQRC_NOT_OPEN 6125"
+
+.SS "const MQSERIES_MQRC_NOT_OPEN_FOR_BROWSE 2036"
+
+.SS "const MQSERIES_MQRC_NOT_OPEN_FOR_INPUT 2037"
+
+.SS "const MQSERIES_MQRC_NOT_OPEN_FOR_INQUIRE 2038"
+
+.SS "const MQSERIES_MQRC_NOT_OPEN_FOR_OUTPUT 2039"
+
+.SS "const MQSERIES_MQRC_NOT_OPEN_FOR_PASS_ALL 2093"
+
+.SS "const MQSERIES_MQRC_NOT_OPEN_FOR_PASS_IDENT 2094"
+
+.SS "const MQSERIES_MQRC_NOT_OPEN_FOR_SET 2040"
+
+.SS "const MQSERIES_MQRC_NOT_OPEN_FOR_SET_ALL 2095"
+
+.SS "const MQSERIES_MQRC_NOT_OPEN_FOR_SET_IDENT 2096"
+
+.SS "const MQSERIES_MQRC_NOT_PRIVILEGED 2584"
+
+.SS "const MQSERIES_MQRC_NULL_POINTER 6108"
+
+.SS "const MQSERIES_MQRC_OBJECT_ALREADY_EXISTS 2100"
+
+.SS "const MQSERIES_MQRC_OBJECT_CHANGED 2041"
+
+.SS "const MQSERIES_MQRC_OBJECT_DAMAGED 2101"
+
+.SS "const MQSERIES_MQRC_OBJECT_IN_USE 2042"
+
+.SS "const MQSERIES_MQRC_OBJECT_LEVEL_INCOMPATIBLE 2360"
+
+.SS "const MQSERIES_MQRC_OBJECT_NAME_ERROR 2152"
+
+.SS "const MQSERIES_MQRC_OBJECT_NOT_UNIQUE 2343"
+
+.SS "const MQSERIES_MQRC_OBJECT_Q_MGR_NAME_ERROR 2153"
+
+.SS "const MQSERIES_MQRC_OBJECT_RECORDS_ERROR 2155"
+
+.SS "const MQSERIES_MQRC_OBJECT_STRING_ERROR 2441"
+
+.SS "const MQSERIES_MQRC_OBJECT_TYPE_ERROR 2043"
+
+.SS "const MQSERIES_MQRC_OCSP_URL_ERROR 2553"
+
+.SS "const MQSERIES_MQRC_OD_ERROR 2044"
+
+.SS "const MQSERIES_MQRC_OFFSET_ERROR 2251"
+
+.SS "const MQSERIES_MQRC_OPEN_FAILED 2137"
+
+.SS "const MQSERIES_MQRC_OPERATION_ERROR 2488"
+
+.SS "const MQSERIES_MQRC_OPERATION_NOT_ALLOWED 2534"
+
+.SS "const MQSERIES_MQRC_OPTION_ENVIRONMENT_ERROR 2274"
+
+.SS "const MQSERIES_MQRC_OPTION_NOT_VALID_FOR_TYPE 2045"
+
+.SS "const MQSERIES_MQRC_OPTIONS_CHANGED 2457"
+
+.SS "const MQSERIES_MQRC_OPTIONS_ERROR 2046"
+
+.SS "const MQSERIES_MQRC_ORIGINAL_LENGTH_ERROR 2252"
+
+.SS "const MQSERIES_MQRC_OUT_SELECTOR_ERROR 2310"
+
+.SS "const MQSERIES_MQRC_OUTCOME_MIXED 2123"
+
+.SS "const MQSERIES_MQRC_OUTCOME_PENDING 2124"
+
+.SS "const MQSERIES_MQRC_PAGESET_ERROR 2193"
+
+.SS "const MQSERIES_MQRC_PAGESET_FULL 2192"
+
+.SS "const MQSERIES_MQRC_PARAMETER_MISSING 2321"
+
+.SS "const MQSERIES_MQRC_PARTIALLY_CONVERTED 2272"
+
+.SS "const MQSERIES_MQRC_PARTICIPANT_NOT_AVAILABLE 2122"
+
+.SS "const MQSERIES_MQRC_PARTICIPANT_NOT_DEFINED 2372"
+
+.SS "const MQSERIES_MQRC_PCF_ERROR 2149"
+
+.SS "const MQSERIES_MQRC_PD_ERROR 2482"
+
+.SS "const MQSERIES_MQRC_PERSISTENCE_ERROR 2047"
+
+.SS "const MQSERIES_MQRC_PERSISTENT_NOT_ALLOWED 2048"
+
+.SS "const MQSERIES_MQRC_PMO_ERROR 2173"
+
+.SS "const MQSERIES_MQRC_PMO_RECORD_FLAGS_ERROR 2158"
+
+.SS "const MQSERIES_MQRC_PRECONN_EXIT_ERROR 2575"
+
+.SS "const MQSERIES_MQRC_PRECONN_EXIT_LOAD_ERROR 2573"
+
+.SS "const MQSERIES_MQRC_PRECONN_EXIT_NOT_FOUND 2574"
+
+.SS "const MQSERIES_MQRC_PRIORITY_ERROR 2050"
+
+.SS "const MQSERIES_MQRC_PRIORITY_EXCEEDS_MAXIMUM 2049"
+
+.SS "const MQSERIES_MQRC_PROP_CONV_NOT_SUPPORTED 2470"
+
+.SS "const MQSERIES_MQRC_PROP_NAME_NOT_CONVERTED 2492"
+
+.SS "const MQSERIES_MQRC_PROP_NUMBER_FORMAT_ERROR 2472"
+
+.SS "const MQSERIES_MQRC_PROP_TYPE_NOT_SUPPORTED 2467"
+
+.SS "const MQSERIES_MQRC_PROP_VALUE_NOT_CONVERTED 2466"
+
+.SS "const MQSERIES_MQRC_PROPERTIES_DISABLED 2586"
+
+.SS "const MQSERIES_MQRC_PROPERTIES_TOO_BIG 2478"
+
+.SS "const MQSERIES_MQRC_PROPERTY_NAME_ERROR 2442"
+
+.SS "const MQSERIES_MQRC_PROPERTY_NAME_LENGTH_ERR 2513"
+
+.SS "const MQSERIES_MQRC_PROPERTY_NAME_TOO_BIG 2465"
+
+.SS "const MQSERIES_MQRC_PROPERTY_NOT_AVAILABLE 2471"
+
+.SS "const MQSERIES_MQRC_PROPERTY_TYPE_ERROR 2473"
+
+.SS "const MQSERIES_MQRC_PROPERTY_VALUE_TOO_BIG 2469"
+
+.SS "const MQSERIES_MQRC_PUBLICATION_FAILURE 2502"
+
+.SS "const MQSERIES_MQRC_PUBLISH_EXIT_ERROR 2557"
+
+.SS "const MQSERIES_MQRC_PUBSUB_INHIBITED 2531"
+
+.SS "const MQSERIES_MQRC_PUT_INHIBITED 2051"
+
+.SS "const MQSERIES_MQRC_PUT_MSG_RECORDS_ERROR 2159"
+
+.SS "const MQSERIES_MQRC_PUT_NOT_RETAINED 2479"
+
+.SS "const MQSERIES_MQRC_Q_ALREADY_EXISTS 2290"
+
+.SS "const MQSERIES_MQRC_Q_DELETED 2052"
+
+.SS "const MQSERIES_MQRC_Q_DEPTH_HIGH 2224"
+
+.SS "const MQSERIES_MQRC_Q_DEPTH_LOW 2225"
+
+.SS "const MQSERIES_MQRC_Q_FULL 2053"
+
+.SS "const MQSERIES_MQRC_Q_INDEX_TYPE_ERROR 2394"
+
+.SS "const MQSERIES_MQRC_Q_MGR_ACTIVE 2222"
+
+.SS "const MQSERIES_MQRC_Q_MGR_NAME_ERROR 2058"
+
+.SS "const MQSERIES_MQRC_Q_MGR_NOT_ACTIVE 2223"
+
+.SS "const MQSERIES_MQRC_Q_MGR_NOT_AVAILABLE 2059"
+
+.SS "const MQSERIES_MQRC_Q_MGR_QUIESCING 2161"
+
+.SS "const MQSERIES_MQRC_Q_MGR_STOPPING 2162"
+
+.SS "const MQSERIES_MQRC_Q_NOT_EMPTY 2055"
+
+.SS "const MQSERIES_MQRC_Q_SERVICE_INTERVAL_HIGH 2226"
+
+.SS "const MQSERIES_MQRC_Q_SERVICE_INTERVAL_OK 2227"
+
+.SS "const MQSERIES_MQRC_Q_SPACE_NOT_AVAILABLE 2056"
+
+.SS "const MQSERIES_MQRC_Q_TYPE_ERROR 2057"
+
+.SS "const MQSERIES_MQRC_RAS_PROPERTY_ERROR 2229"
+
+.SS "const MQSERIES_MQRC_READ_AHEAD_MSGS 2458"
+
+.SS "const MQSERIES_MQRC_RECONNECT_FAILED 2548"
+
+.SS "const MQSERIES_MQRC_RECONNECT_INCOMPATIBLE 2547"
+
+.SS "const MQSERIES_MQRC_RECONNECT_Q_MGR_REQD 2555"
+
+.SS "const MQSERIES_MQRC_RECONNECT_QMID_MISMATCH 2546"
+
+.SS "const MQSERIES_MQRC_RECONNECT_TIMED_OUT 2556"
+
+.SS "const MQSERIES_MQRC_RECONNECTED 2545"
+
+.SS "const MQSERIES_MQRC_RECONNECTING 2544"
+
+.SS "const MQSERIES_MQRC_RECS_PRESENT_ERROR 2154"
+
+.SS "const MQSERIES_MQRC_REFERENCE_ERROR 6129"
+
+.SS "const MQSERIES_MQRC_REMOTE_Q_NAME_ERROR 2184"
+
+.SS "const MQSERIES_MQRC_REOPEN_EXCL_INPUT_ERROR 6100"
+
+.SS "const MQSERIES_MQRC_REOPEN_INQUIRE_ERROR 6101"
+
+.SS "const MQSERIES_MQRC_REOPEN_SAVED_CONTEXT_ERR 6102"
+
+.SS "const MQSERIES_MQRC_REOPEN_TEMPORARY_Q_ERROR 6103"
+
+.SS "const MQSERIES_MQRC_REPORT_OPTIONS_ERROR 2061"
+
+.SS "const MQSERIES_MQRC_RES_OBJECT_STRING_ERROR 2520"
+
+.SS "const MQSERIES_MQRC_RESERVED_VALUE_ERROR 2378"
+
+.SS "const MQSERIES_MQRC_RESOURCE_PROBLEM 2102"
+
+.SS "const MQSERIES_MQRC_RESPONSE_RECORDS_ERROR 2156"
+
+.SS "const MQSERIES_MQRC_RETAINED_MSG_Q_ERROR 2525"
+
+.SS "const MQSERIES_MQRC_RETAINED_NOT_DELIVERED 2526"
+
+.SS "const MQSERIES_MQRC_RFH_COMMAND_ERROR 2336"
+
+.SS "const MQSERIES_MQRC_RFH_DUPLICATE_PARM 2338"
+
+.SS "const MQSERIES_MQRC_RFH_ERROR 2334"
+
+.SS "const MQSERIES_MQRC_RFH_FORMAT_ERROR 2421"
+
+.SS "const MQSERIES_MQRC_RFH_HEADER_FIELD_ERROR 2228"
+
+.SS "const MQSERIES_MQRC_RFH_PARM_ERROR 2337"
+
+.SS "const MQSERIES_MQRC_RFH_PARM_MISSING 2339"
+
+.SS "const MQSERIES_MQRC_RFH_RESTRICTED_FORMAT_ERR 2527"
+
+.SS "const MQSERIES_MQRC_RFH_STRING_ERROR 2335"
+
+.SS "const MQSERIES_MQRC_RMH_ERROR 2220"
+
+.SS "const MQSERIES_MQRC_SCO_ERROR 2380"
+
+.SS "const MQSERIES_MQRC_SD_ERROR 2424"
+
+.SS "const MQSERIES_MQRC_SECOND_MARK_NOT_ALLOWED 2062"
+
+.SS "const MQSERIES_MQRC_SECURITY_ERROR 2063"
+
+.SS "const MQSERIES_MQRC_SEGMENT_LENGTH_ZERO 2253"
+
+.SS "const MQSERIES_MQRC_SEGMENTATION_NOT_ALLOWED 2443"
+
+.SS "const MQSERIES_MQRC_SEGMENTS_NOT_SUPPORTED 2365"
+
+.SS "const MQSERIES_MQRC_SELECTION_NOT_AVAILABLE 2551"
+
+.SS "const MQSERIES_MQRC_SELECTION_STRING_ERROR 2519"
+
+.SS "const MQSERIES_MQRC_SELECTOR_ALWAYS_FALSE 2504"
+
+.SS "const MQSERIES_MQRC_SELECTOR_COUNT_ERROR 2065"
+
+.SS "const MQSERIES_MQRC_SELECTOR_ERROR 2067"
+
+.SS "const MQSERIES_MQRC_SELECTOR_INVALID_FOR_TYPE 2516"
+
+.SS "const MQSERIES_MQRC_SELECTOR_LIMIT_EXCEEDED 2066"
+
+.SS "const MQSERIES_MQRC_SELECTOR_NOT_ALTERABLE 2524"
+
+.SS "const MQSERIES_MQRC_SELECTOR_NOT_FOR_TYPE 2068"
+
+.SS "const MQSERIES_MQRC_SELECTOR_NOT_PRESENT 2309"
+
+.SS "const MQSERIES_MQRC_SELECTOR_NOT_SUPPORTED 2318"
+
+.SS "const MQSERIES_MQRC_SELECTOR_NOT_UNIQUE 2305"
+
+.SS "const MQSERIES_MQRC_SELECTOR_OUT_OF_RANGE 2304"
+
+.SS "const MQSERIES_MQRC_SELECTOR_SYNTAX_ERROR 2459"
+
+.SS "const MQSERIES_MQRC_SELECTOR_TYPE_ERROR 2299"
+
+.SS "const MQSERIES_MQRC_SELECTOR_WRONG_TYPE 2312"
+
+.SS "const MQSERIES_MQRC_SERVICE_ERROR 2289"
+
+.SS "const MQSERIES_MQRC_SERVICE_NOT_AVAILABLE 2285"
+
+.SS "const MQSERIES_MQRC_SIGNAL1_ERROR 2099"
+
+.SS "const MQSERIES_MQRC_SIGNAL_OUTSTANDING 2069"
+
+.SS "const MQSERIES_MQRC_SIGNAL_REQUEST_ACCEPTED 2070"
+
+.SS "const MQSERIES_MQRC_SMPO_ERROR 2463"
+
+.SS "const MQSERIES_MQRC_SOAP_AXIS_ERROR 2211"
+
+.SS "const MQSERIES_MQRC_SOAP_DOTNET_ERROR 2210"
+
+.SS "const MQSERIES_MQRC_SOAP_URL_ERROR 2212"
+
+.SS "const MQSERIES_MQRC_SOURCE_BUFFER_ERROR 2145"
+
+.SS "const MQSERIES_MQRC_SOURCE_CCSID_ERROR 2111"
+
+.SS "const MQSERIES_MQRC_SOURCE_DECIMAL_ENC_ERROR 2113"
+
+.SS "const MQSERIES_MQRC_SOURCE_FLOAT_ENC_ERROR 2114"
+
+.SS "const MQSERIES_MQRC_SOURCE_INTEGER_ENC_ERROR 2112"
+
+.SS "const MQSERIES_MQRC_SOURCE_LENGTH_ERROR 2143"
+
+.SS "const MQSERIES_MQRC_SRC_ENV_ERROR 2261"
+
+.SS "const MQSERIES_MQRC_SRC_NAME_ERROR 2262"
+
+.SS "const MQSERIES_MQRC_SRO_ERROR 2438"
+
+.SS "const MQSERIES_MQRC_SSL_ALREADY_INITIALIZED 2391"
+
+.SS "const MQSERIES_MQRC_SSL_ALT_PROVIDER_REQUIRED 2570"
+
+.SS "const MQSERIES_MQRC_SSL_CERT_STORE_ERROR 2402"
+
+.SS "const MQSERIES_MQRC_SSL_CERTIFICATE_REVOKED 2401"
+
+.SS "const MQSERIES_MQRC_SSL_CONFIG_ERROR 2392"
+
+.SS "const MQSERIES_MQRC_SSL_INITIALIZATION_ERROR 2393"
+
+.SS "const MQSERIES_MQRC_SSL_KEY_RESET_ERROR 2409"
+
+.SS "const MQSERIES_MQRC_SSL_NOT_ALLOWED 2396"
+
+.SS "const MQSERIES_MQRC_SSL_PEER_NAME_ERROR 2399"
+
+.SS "const MQSERIES_MQRC_SSL_PEER_NAME_MISMATCH 2398"
+
+.SS "const MQSERIES_MQRC_STANDBY_Q_MGR 2543"
+
+.SS "const MQSERIES_MQRC_STAT_TYPE_ERROR 2430"
+
+.SS "const MQSERIES_MQRC_STOPPED_BY_CLUSTER_EXIT 2188"
+
+.SS "const MQSERIES_MQRC_STORAGE_CLASS_ERROR 2105"
+
+.SS "const MQSERIES_MQRC_STORAGE_MEDIUM_FULL 2192"
+
+.SS "const MQSERIES_MQRC_STORAGE_NOT_AVAILABLE 2071"
+
+.SS "const MQSERIES_MQRC_STRING_ERROR 2307"
+
+.SS "const MQSERIES_MQRC_STRING_LENGTH_ERROR 2323"
+
+.SS "const MQSERIES_MQRC_STRING_TRUNCATED 2311"
+
+.SS "const MQSERIES_MQRC_STRUC_ID_ERROR 6107"
+
+.SS "const MQSERIES_MQRC_STRUC_LENGTH_ERROR 6123"
+
+.SS "const MQSERIES_MQRC_STS_ERROR 2426"
+
+.SS "const MQSERIES_MQRC_SUB_ALREADY_EXISTS 2432"
+
+.SS "const MQSERIES_MQRC_SUB_INHIBITED 2503"
+
+.SS "const MQSERIES_MQRC_SUB_NAME_ERROR 2440"
+
+.SS "const MQSERIES_MQRC_SUB_USER_DATA_ERROR 2431"
+
+.SS "const MQSERIES_MQRC_SUBLEVEL_NOT_ALTERABLE 2512"
+
+.SS "const MQSERIES_MQRC_SUBSCRIPTION_CHANGE 2581"
+
+.SS "const MQSERIES_MQRC_SUBSCRIPTION_CREATE 2579"
+
+.SS "const MQSERIES_MQRC_SUBSCRIPTION_DELETE 2580"
+
+.SS "const MQSERIES_MQRC_SUBSCRIPTION_IN_USE 2429"
+
+.SS "const MQSERIES_MQRC_SUBSCRIPTION_REFRESH 2582"
+
+.SS "const MQSERIES_MQRC_SUITE_B_ERROR 2592"
+
+.SS "const MQSERIES_MQRC_SUPPRESSED_BY_EXIT 2109"
+
+.SS "const MQSERIES_MQRC_SYNCPOINT_LIMIT_REACHED 2024"
+
+.SS "const MQSERIES_MQRC_SYNCPOINT_NOT_ALLOWED 2569"
+
+.SS "const MQSERIES_MQRC_SYNCPOINT_NOT_AVAILABLE 2072"
+
+.SS "const MQSERIES_MQRC_SYSTEM_BAG_NOT_ALTERABLE 2315"
+
+.SS "const MQSERIES_MQRC_SYSTEM_BAG_NOT_DELETABLE 2328"
+
+.SS "const MQSERIES_MQRC_SYSTEM_ITEM_NOT_ALTERABLE 2302"
+
+.SS "const MQSERIES_MQRC_SYSTEM_ITEM_NOT_DELETABLE 2329"
+
+.SS "const MQSERIES_MQRC_TARGET_BUFFER_ERROR 2146"
+
+.SS "const MQSERIES_MQRC_TARGET_CCSID_ERROR 2115"
+
+.SS "const MQSERIES_MQRC_TARGET_DECIMAL_ENC_ERROR 2117"
+
+.SS "const MQSERIES_MQRC_TARGET_FLOAT_ENC_ERROR 2118"
+
+.SS "const MQSERIES_MQRC_TARGET_INTEGER_ENC_ERROR 2116"
+
+.SS "const MQSERIES_MQRC_TARGET_LENGTH_ERROR 2144"
+
+.SS "const MQSERIES_MQRC_TERMINATION_FAILED 2287"
+
+.SS "const MQSERIES_MQRC_TM_ERROR 2265"
+
+.SS "const MQSERIES_MQRC_TMC_ERROR 2191"
+
+.SS "const MQSERIES_MQRC_TOPIC_NOT_ALTERABLE 2510"
+
+.SS "const MQSERIES_MQRC_TOPIC_STRING_ERROR 2425"
+
+.SS "const MQSERIES_MQRC_TRIGGER_CONTROL_ERROR 2075"
+
+.SS "const MQSERIES_MQRC_TRIGGER_DEPTH_ERROR 2076"
+
+.SS "const MQSERIES_MQRC_TRIGGER_MSG_PRIORITY_ERR 2077"
+
+.SS "const MQSERIES_MQRC_TRIGGER_TYPE_ERROR 2078"
+
+.SS "const MQSERIES_MQRC_TRUNCATED 2120"
+
+.SS "const MQSERIES_MQRC_TRUNCATED_MSG_ACCEPTED 2079"
+
+.SS "const MQSERIES_MQRC_TRUNCATED_MSG_FAILED 2080"
+
+.SS "const MQSERIES_MQRC_UCS2_CONVERSION_ERROR 2341"
+
+.SS "const MQSERIES_MQRC_UNEXPECTED_ERROR 2195"
+
+.SS "const MQSERIES_MQRC_UNIT_OF_WORK_NOT_STARTED 2232"
+
+.SS "const MQSERIES_MQRC_UNKNOWN_ALIAS_BASE_Q 2082"
+
+.SS "const MQSERIES_MQRC_UNKNOWN_AUTH_ENTITY 2293"
+
+.SS "const MQSERIES_MQRC_UNKNOWN_CHANNEL_NAME 2540"
+
+.SS "const MQSERIES_MQRC_UNKNOWN_COMPONENT_NAME 2410"
+
+.SS "const MQSERIES_MQRC_UNKNOWN_DEF_XMIT_Q 2197"
+
+.SS "const MQSERIES_MQRC_UNKNOWN_ENTITY 2292"
+
+.SS "const MQSERIES_MQRC_UNKNOWN_OBJECT_NAME 2085"
+
+.SS "const MQSERIES_MQRC_UNKNOWN_OBJECT_Q_MGR 2086"
+
+.SS "const MQSERIES_MQRC_UNKNOWN_Q_NAME 2288"
+
+.SS "const MQSERIES_MQRC_UNKNOWN_REF_OBJECT 2294"
+
+.SS "const MQSERIES_MQRC_UNKNOWN_REMOTE_Q_MGR 2087"
+
+.SS "const MQSERIES_MQRC_UNKNOWN_REPORT_OPTION 2104"
+
+.SS "const MQSERIES_MQRC_UNKNOWN_XMIT_Q 2196"
+
+.SS "const MQSERIES_MQRC_UNSUPPORTED_CIPHER_SUITE 2400"
+
+.SS "const MQSERIES_MQRC_UNSUPPORTED_PROPERTY 2490"
+
+.SS "const MQSERIES_MQRC_UOW_CANCELED 2297"
+
+.SS "const MQSERIES_MQRC_UOW_COMMITTED 2408"
+
+.SS "const MQSERIES_MQRC_UOW_ENLISTMENT_ERROR 2354"
+
+.SS "const MQSERIES_MQRC_UOW_IN_PROGRESS 2128"
+
+.SS "const MQSERIES_MQRC_UOW_MIX_NOT_SUPPORTED 2355"
+
+.SS "const MQSERIES_MQRC_UOW_NOT_AVAILABLE 2255"
+
+.SS "const MQSERIES_MQRC_USER_ID_NOT_AVAILABLE 2291"
+
+.SS "const MQSERIES_MQRC_WAIT_INTERVAL_ERROR 2090"
+
+.SS "const MQSERIES_MQRC_WIH_ERROR 2333"
+
+.SS "const MQSERIES_MQRC_WRONG_CF_LEVEL 2366"
+
+.SS "const MQSERIES_MQRC_WRONG_GMO_VERSION 2256"
+
+.SS "const MQSERIES_MQRC_WRONG_MD_VERSION 2257"
+
+.SS "const MQSERIES_MQRC_WRONG_VERSION 6128"
+
+.SS "const MQSERIES_MQRC_WXP_ERROR 2356"
+
+.SS "const MQSERIES_MQRC_XEPO_ERROR 2507"
+
+.SS "const MQSERIES_MQRC_XMIT_Q_TYPE_ERROR 2091"
+
+.SS "const MQSERIES_MQRC_XMIT_Q_USAGE_ERROR 2092"
+
+.SS "const MQSERIES_MQRC_XQH_ERROR 2260"
+
+.SS "const MQSERIES_MQRC_XR_NOT_AVAILABLE 6130"
+
+.SS "const MQSERIES_MQRC_XWAIT_CANCELED 2107"
+
+.SS "const MQSERIES_MQRC_XWAIT_ERROR 2108"
+
+.SS "const MQSERIES_MQRC_ZERO_LENGTH 6116"
+
+.SS "const MQSERIES_MQRL_UNDEFINED \-1"
+
+.SS "const MQSERIES_MQRO_ACCEPT_UNSUP_IF_XMIT_MASK 261888"
+
+.SS "const MQSERIES_MQRO_ACCEPT_UNSUP_MASK 4024434943"
+
+.SS "const MQSERIES_MQRO_ACTIVITY 4"
+
+.SS "const MQSERIES_MQRO_COA 256"
+
+.SS "const MQSERIES_MQRO_COA_WITH_DATA 768"
+
+.SS "const MQSERIES_MQRO_COA_WITH_FULL_DATA 1792"
+
+.SS "const MQSERIES_MQRO_COD 2048"
+
+.SS "const MQSERIES_MQRO_COD_WITH_DATA 6144"
+
+.SS "const MQSERIES_MQRO_COD_WITH_FULL_DATA 14336"
+
+.SS "const MQSERIES_MQRO_COPY_MSG_ID_TO_CORREL_ID 0"
+
+.SS "const MQSERIES_MQRO_DEAD_LETTER_Q 0"
+
+.SS "const MQSERIES_MQRO_DISCARD_MSG 134217728"
+
+.SS "const MQSERIES_MQRO_EXCEPTION 16777216"
+
+.SS "const MQSERIES_MQRO_EXCEPTION_WITH_DATA 50331648"
+
+.SS "const MQSERIES_MQRO_EXCEPTION_WITH_FULL_DATA 117440512"
+
+.SS "const MQSERIES_MQRO_EXPIRATION 2097152"
+
+.SS "const MQSERIES_MQRO_EXPIRATION_WITH_DATA 6291456"
+
+.SS "const MQSERIES_MQRO_EXPIRATION_WITH_FULL_DATA 14680064"
+
+.SS "const MQSERIES_MQRO_NAN 2"
+
+.SS "const MQSERIES_MQRO_NEW_MSG_ID 0"
+
+.SS "const MQSERIES_MQRO_NONE 0"
+
+.SS "const MQSERIES_MQRO_PAN 1"
+
+.SS "const MQSERIES_MQRO_PASS_CORREL_ID 64"
+
+.SS "const MQSERIES_MQRO_PASS_DISCARD_AND_EXPIRY 16384"
+
+.SS "const MQSERIES_MQRO_PASS_MSG_ID 128"
+
+.SS "const MQSERIES_MQRO_REJECT_UNSUP_MASK 270270464"
+
+.SS "const MQSERIES_MQSO_ALTER 1"
+
+.SS "const MQSERIES_MQSO_ALTERNATE_USER_AUTHORITY 262144"
+
+.SS "const MQSERIES_MQSO_ANY_USERID 512"
+
+.SS "const MQSERIES_MQSO_CREATE 2"
+
+.SS "const MQSERIES_MQSO_DURABLE 8"
+
+.SS "const MQSERIES_MQSO_FAIL_IF_QUIESCING 8192"
+
+.SS "const MQSERIES_MQSO_FIXED_USERID 256"
+
+.SS "const MQSERIES_MQSO_GROUP_SUB 16"
+
+.SS "const MQSERIES_MQSO_MANAGED 32"
+
+.SS "const MQSERIES_MQSO_NEW_PUBLICATIONS_ONLY 4096"
+
+.SS "const MQSERIES_MQSO_NO_MULTICAST 128"
+
+.SS "const MQSERIES_MQSO_NO_READ_AHEAD 134217728"
+
+.SS "const MQSERIES_MQSO_NON_DURABLE 0"
+
+.SS "const MQSERIES_MQSO_NONE 0"
+
+.SS "const MQSERIES_MQSO_PUBLICATIONS_ON_REQUEST 2048"
+
+.SS "const MQSERIES_MQSO_READ_AHEAD 268435456"
+
+.SS "const MQSERIES_MQSO_READ_AHEAD_AS_Q_DEF 0"
+
+.SS "const MQSERIES_MQSO_RESUME 4"
+
+.SS "const MQSERIES_MQSO_SCOPE_QMGR 67108864"
+
+.SS "const MQSERIES_MQSO_SET_CORREL_ID 4194304"
+
+.SS "const MQSERIES_MQSO_SET_IDENTITY_CONTEXT 64"
+
+.SS "const MQSERIES_MQSO_WILDCARD_CHAR 1048576"
+
+.SS "const MQSERIES_MQSO_WILDCARD_TOPIC 2097152"
+
+.SS "const MQSERIES_MQSTAT_TYPE_ASYNC_ERROR 0"
+
+.SS "const MQSERIES_MQSTAT_TYPE_RECONNECTION 1"
+
+.SS "const MQSERIES_MQSTAT_TYPE_RECONNECTION_ERROR 2"
+
+.SS "const MQSERIES_MQWI_UNLIMITED \-1"
+
+.SS "const MQSERIES_MQXPT_ALL \-1"
+
+.SS "const MQSERIES_MQXPT_DECNET 5"
+
+.SS "const MQSERIES_MQXPT_LOCAL 0"
+
+.SS "const MQSERIES_MQXPT_LU62 1"
+
+.SS "const MQSERIES_MQXPT_NETBIOS 3"
+
+.SS "const MQSERIES_MQXPT_SPX 4"
+
+.SS "const MQSERIES_MQXPT_TCP 2"
+
+.SS "const MQSERIES_MQXPT_UDP 6"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

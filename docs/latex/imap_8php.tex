@@ -1,0 +1,2525 @@
+\hypertarget{imap_8php}{}\doxysection{vendor/jetbrains/phpstorm-\/stubs/imap/imap.php File Reference}
+\label{imap_8php}\index{vendor/jetbrains/phpstorm-\/stubs/imap/imap.php@{vendor/jetbrains/phpstorm-\/stubs/imap/imap.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{imap_8php_a7424e639697d4fb192363d37d1d60038}{imap\+\_\+open}} (\$mailbox, \$username, \$password, \$options=0, \$n\+\_\+retries=0, array \$params=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{imap_8php_aeab5eff38e67009f5aac2cbc8a11d027}{imap\+\_\+reopen}} (\$imap\+\_\+stream, \$mailbox, \$options=0, \$n\+\_\+retries=0)
+\item 
+\mbox{\hyperlink{imap_8php_a165cfd68a9eb9336a5d94532cd73f2c1}{imap\+\_\+close}} (\$imap\+\_\+stream, \$flag=0)
+\item 
+\mbox{\hyperlink{imap_8php_a2921be812cb692ec83d19b1751755557}{imap\+\_\+num\+\_\+msg}} (\$imap\+\_\+stream)
+\item 
+\mbox{\hyperlink{imap_8php_a4c52bfe6976371720124f994be3db0c9}{imap\+\_\+num\+\_\+recent}} (\$imap\+\_\+stream)
+\item 
+\mbox{\hyperlink{imap_8php_a2df8df72e8abf84e452f6ce058f54f95}{imap\+\_\+headers}} (\$imap\+\_\+stream)
+\item 
+\mbox{\hyperlink{imap_8php_a8ecc4474e599293038a5fe6123b8f900}{imap\+\_\+headerinfo}} (\$stream\+\_\+id, \$msg\+\_\+no, \$from\+\_\+length=0, \$subject\+\_\+length=0, \$default\+\_\+host=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{imap_8php_ad674682bc0e3c74894935ba1748eaf06}{imap\+\_\+rfc822\+\_\+parse\+\_\+headers}} (\$headers, \$defaulthost=\char`\"{}U\+N\+K\+N\+O\+WN\char`\"{})
+\item 
+\mbox{\hyperlink{imap_8php_a6a772fb05f5bbb34df4997734c6a69d9}{imap\+\_\+rfc822\+\_\+write\+\_\+address}} (\$mailbox, \$host, \$personal)
+\item 
+\mbox{\hyperlink{imap_8php_a95e6a22f65f241880c14c3036b501ccb}{imap\+\_\+rfc822\+\_\+parse\+\_\+adrlist}} (\$address, \$default\+\_\+host)
+\item 
+\mbox{\hyperlink{imap_8php_a64b4b07e11b9a1577d65b4b8e2d2968f}{imap\+\_\+body}} (\$imap\+\_\+stream, \$msg\+\_\+number, \$options=0)
+\item 
+\mbox{\hyperlink{imap_8php_a584e7435c7c32523b99afc897099ba51}{imap\+\_\+bodystruct}} (\$imap\+\_\+stream, \$msg\+\_\+number, \$section)
+\item 
+\mbox{\hyperlink{imap_8php_ac29a17742acaab1502f3e4497a706869}{imap\+\_\+fetchbody}} (\$imap\+\_\+stream, \$msg\+\_\+number, \$section, \$options=0)
+\item 
+\mbox{\hyperlink{imap_8php_ae206005ddcea179d4a823a950af17285}{imap\+\_\+fetchmime}} (\$imap\+\_\+stream, \$msg\+\_\+number, \$section, \$options=0)
+\item 
+\mbox{\hyperlink{imap_8php_aaa5e18e053a6896f458c8a4b412eae8e}{imap\+\_\+savebody}} (\$imap\+\_\+stream, \$\mbox{\hyperlink{standard__5_8php_ac0d353a97d1662c811425338985026b1}{file}}, \$msg\+\_\+number, \$part\+\_\+number=\char`\"{}\char`\"{}, \$options=0)
+\item 
+\mbox{\hyperlink{imap_8php_ae672c76548fd69aa2b5f7286325e3796}{imap\+\_\+fetchheader}} (\$imap\+\_\+stream, \$msg\+\_\+number, \$options=0)
+\item 
+\mbox{\hyperlink{imap_8php_a50fa65c730c029635010e765bdc362b8}{imap\+\_\+fetchstructure}} (\$imap\+\_\+stream, \$msg\+\_\+number, \$options=0)
+\item 
+\mbox{\hyperlink{imap_8php_a60101994c9a747355ef2b35eca5fd435}{imap\+\_\+gc}} (\$imap\+\_\+stream, \$caches)
+\item 
+\mbox{\hyperlink{imap_8php_a243fb3356e22b14c7538c902180b438e}{imap\+\_\+expunge}} (\$imap\+\_\+stream)
+\item 
+\mbox{\hyperlink{imap_8php_a7d44796c2d1c214680ac121fcce2b585}{imap\+\_\+delete}} (\$imap\+\_\+stream, \$msg\+\_\+number, \$options=0)
+\item 
+\mbox{\hyperlink{imap_8php_a32c821a21b9ce310acbc18de3ec9e037}{imap\+\_\+undelete}} (\$imap\+\_\+stream, \$msg\+\_\+number, \$flags=0)
+\item 
+\mbox{\hyperlink{imap_8php_a2f9f03b168c1c5eddd186046a2c7756f}{imap\+\_\+check}} (\$imap\+\_\+stream)
+\item 
+\mbox{\hyperlink{imap_8php_a09f09266b1f53e295ce5291b2987eafe}{imap\+\_\+listscan}} (\$imap\+\_\+stream, \$ref, \$pattern, \$content)
+\item 
+\mbox{\hyperlink{imap_8php_a64183b77018621a0e22f350bebe2d9f3}{imap\+\_\+mail\+\_\+copy}} (\$imap\+\_\+stream, \$msglist, \$mailbox, \$options=0)
+\item 
+\mbox{\hyperlink{imap_8php_af8233bf0f2406ab31342bee9a0665c3a}{imap\+\_\+mail\+\_\+move}} (\$imap\+\_\+stream, \$msglist, \$mailbox, \$options=0)
+\item 
+\mbox{\hyperlink{imap_8php_a37d8e244f5b26935df57d19e506c4b7a}{imap\+\_\+mail\+\_\+compose}} (array \$envelope, array \$body)
+\item 
+\mbox{\hyperlink{imap_8php_ab7c3e4ffe4adb6e3d6f4f506e7261f93}{imap\+\_\+createmailbox}} (\$imap\+\_\+stream, \$mailbox)
+\item 
+\mbox{\hyperlink{imap_8php_a25bb7a75227b858430b5424d9c168e92}{imap\+\_\+renamemailbox}} (\$imap\+\_\+stream, \$old\+\_\+mbox, \$new\+\_\+mbox)
+\item 
+\mbox{\hyperlink{imap_8php_a4f6ef3057e6162fa078ea43dc124f753}{imap\+\_\+deletemailbox}} (\$imap\+\_\+stream, \$mailbox)
+\item 
+\mbox{\hyperlink{imap_8php_a976d43ea0286eb62704b7f50028640cf}{imap\+\_\+subscribe}} (\$imap\+\_\+stream, \$mailbox)
+\item 
+\mbox{\hyperlink{imap_8php_a5f0db13458787cd4a1c04daa56f4c3f3}{imap\+\_\+unsubscribe}} (\$imap\+\_\+stream, \$mailbox)
+\item 
+\mbox{\hyperlink{imap_8php_ade2ed8b8ed83d7f3be939406b4ec09ce}{imap\+\_\+append}} (\$imap\+\_\+stream, \$mailbox, \$message, \$options=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$internal\+\_\+date=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{imap_8php_a100a5088419dcec429ffc85be2bcd924}{imap\+\_\+ping}} (\$imap\+\_\+stream)
+\item 
+\mbox{\hyperlink{imap_8php_aac1f880fa96ff3e326d3a2616e41b7c1}{imap\+\_\+base64}} (\$text)
+\item 
+\mbox{\hyperlink{imap_8php_a9297088adcad9dd54024cb9993bdff7d}{imap\+\_\+qprint}} (\$string)
+\item 
+\mbox{\hyperlink{imap_8php_a1b5d1511432a49a73b2f3d05b6ef6d78}{imap\+\_\+8bit}} (\$string)
+\item 
+\mbox{\hyperlink{imap_8php_a75ee94845f3465b3f87607caf4e6ce5e}{imap\+\_\+binary}} (\$string)
+\item 
+\mbox{\hyperlink{imap_8php_a9cd2e548ea347a0b9b0c773297ed661b}{imap\+\_\+utf8}} (\$mime\+\_\+encoded\+\_\+text)
+\item 
+\mbox{\hyperlink{imap_8php_a4ba7d217d70f58477063ed1ac9a77d73}{imap\+\_\+status}} (\$imap\+\_\+stream, \$mailbox, \$options)
+\item 
+\mbox{\hyperlink{imap_8php_ac377546d7e6de421e4f5ee20296ca7dd}{imap\+\_\+status\+\_\+current}} (\$stream\+\_\+id, \$options)
+\item 
+\mbox{\hyperlink{imap_8php_a7a7c76e23c46d1b0ae2880395d1b7b5c}{imap\+\_\+mailboxmsginfo}} (\$imap\+\_\+stream)
+\item 
+\mbox{\hyperlink{imap_8php_ade0eedc989c0283e8a0cf58221da6934}{imap\+\_\+setflag\+\_\+full}} (\$imap\+\_\+stream, \$sequence, \$flag, \$options=\mbox{\hyperlink{imap_8php_af7e6a0bd87326b75d22a0c4003a896c6}{N\+IL}})
+\item 
+\mbox{\hyperlink{imap_8php_a2b03649742a86a23d978a742d31bb62e}{imap\+\_\+clearflag\+\_\+full}} (\$imap\+\_\+stream, \$sequence, \$flag, \$options=0)
+\item 
+\mbox{\hyperlink{imap_8php_adc1a7ff41978b2c36592c0efc23949eb}{imap\+\_\+sort}} (\$imap\+\_\+stream, \$criteria, \$reverse, \$options=0, \$search\+\_\+criteria=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$charset=\textquotesingle{}\mbox{\hyperlink{imap_8php_af7e6a0bd87326b75d22a0c4003a896c6}{N\+IL}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{imap_8php_adfb62bec34696317863d94a4fba8a380}{imap\+\_\+uid}} (\$imap\+\_\+stream, \$msg\+\_\+number)
+\item 
+\mbox{\hyperlink{imap_8php_ad0dae7572c4c2e8c34051dad7d81a80f}{imap\+\_\+msgno}} (\$imap\+\_\+stream, \$uid)
+\item 
+\mbox{\hyperlink{imap_8php_a638126a0316e5e2825444019c8aac153}{imap\+\_\+list}} (\$imap\+\_\+stream, \$ref, \$pattern)
+\item 
+\mbox{\hyperlink{imap_8php_abfac56a43a014e3e35899cde2df1ea42}{imap\+\_\+lsub}} (\$imap\+\_\+stream, \$ref, \$pattern)
+\item 
+\mbox{\hyperlink{imap_8php_abe4f43f783d92ae0491d7a8a5edf6fcc}{imap\+\_\+fetch\+\_\+overview}} (\$imap\+\_\+stream, \$sequence, \$options=0)
+\item 
+\mbox{\hyperlink{imap_8php_aa520f056585bc0b63108eddae8ec1ae6}{imap\+\_\+alerts}} ()
+\item 
+\mbox{\hyperlink{imap_8php_a513eebbba18b1bed03b705a2ae10e2ed}{imap\+\_\+errors}} ()
+\item 
+\mbox{\hyperlink{imap_8php_af05cc3c8a83a9336437fd46119e924cf}{imap\+\_\+last\+\_\+error}} ()
+\item 
+\mbox{\hyperlink{imap_8php_a9545fbf9e734fe49050945bd5c660667}{imap\+\_\+search}} (\$imap\+\_\+stream, \$criteria, \$options=\mbox{\hyperlink{imap_8php_a4757c834b969ed2257fd834846979023}{S\+E\+\_\+\+F\+R\+EE}}, \$charset=\mbox{\hyperlink{imap_8php_af7e6a0bd87326b75d22a0c4003a896c6}{N\+IL}})
+\item 
+\mbox{\hyperlink{imap_8php_af3574c431c9a69e5312bf43f8d6244a4}{imap\+\_\+utf7\+\_\+decode}} (\$text)
+\item 
+\mbox{\hyperlink{imap_8php_a57662c569fb24f51ff649a7eadbb0e08}{imap\+\_\+utf7\+\_\+encode}} (\$data)
+\item 
+\mbox{\hyperlink{imap_8php_a2299ba4518c1d26e43a1c95b40d1b836}{imap\+\_\+mime\+\_\+header\+\_\+decode}} (\$text)
+\item 
+\mbox{\hyperlink{imap_8php_ab303de6c1afb44783aaca2b35e664907}{imap\+\_\+thread}} (\$imap\+\_\+stream, \$options=\mbox{\hyperlink{imap_8php_a4757c834b969ed2257fd834846979023}{S\+E\+\_\+\+F\+R\+EE}})
+\item 
+\mbox{\hyperlink{imap_8php_a375b8ae4b22ce6f85becbb29c2fafd2a}{imap\+\_\+timeout}} (\$timeout\+\_\+type, \$timeout=-\/1)
+\item 
+\mbox{\hyperlink{imap_8php_a707f56296c4776dfb24b37c22f3137ab}{imap\+\_\+get\+\_\+quota}} (\$imap\+\_\+stream, \$quota\+\_\+root)
+\item 
+\mbox{\hyperlink{imap_8php_afd2088c5c02e2501a7c6e481b77c7c14}{imap\+\_\+get\+\_\+quotaroot}} (\$imap\+\_\+stream, \$quota\+\_\+root)
+\item 
+\mbox{\hyperlink{imap_8php_a82d86ac20c22503c1b9533377798c14d}{imap\+\_\+set\+\_\+quota}} (\$imap\+\_\+stream, \$quota\+\_\+root, \$quota\+\_\+limit)
+\item 
+\mbox{\hyperlink{imap_8php_a474eb8260da8bd7ececb9e03737b0e59}{imap\+\_\+setacl}} (\$imap\+\_\+stream, \$mailbox, \$id, \$rights)
+\item 
+\mbox{\hyperlink{imap_8php_aaa72134fc219512cf5b7ad3ccf18353a}{imap\+\_\+getacl}} (\$imap\+\_\+stream, \$mailbox)
+\item 
+\mbox{\hyperlink{imap_8php_a4960aaf0bcc7a880d77962ccf40364df}{imap\+\_\+myrights}} (\$stream\+\_\+id, \$mailbox)
+\item 
+\mbox{\hyperlink{imap_8php_a060185a7a77cf0d7bdf527b2680688b9}{imap\+\_\+setannotation}} (\$stream\+\_\+id, \$mailbox, \$entry, \$attr, \$value)
+\item 
+\mbox{\hyperlink{imap_8php_a6e3130cd13e3b60b0e85614c88fb11f8}{imap\+\_\+getannotation}} (\$stream\+\_\+id, \$mailbox, \$entry, \$attr)
+\item 
+\mbox{\hyperlink{imap_8php_af3ab856d4c7677670d9fcb35cf5dea62}{imap\+\_\+mail}} (\$to, \$subject, \$message, \$additional\+\_\+headers=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$cc=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$bcc=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}, \$rpath=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{imap_8php_a80942f67e9cfb898b5e21572ed230ff6}{imap\+\_\+header}} (\$stream\+\_\+id, \$msg\+\_\+no, \$from\+\_\+length=0, \$subject\+\_\+length=0, \$default\+\_\+host=\mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}})
+\item 
+\mbox{\hyperlink{imap_8php_aecd910330ba8630f169c712f37bd6400}{imap\+\_\+listmailbox}} (\$stream\+\_\+id, \$ref, \$pattern)
+\item 
+\mbox{\hyperlink{imap_8php_a40b73b249fa5e2c6c2f862981ae9d0fb}{imap\+\_\+getmailboxes}} (\$imap\+\_\+stream, \$ref, \$pattern)
+\item 
+\mbox{\hyperlink{imap_8php_a23c3fc2a093ff05b749fca4fff9c9a71}{imap\+\_\+scanmailbox}} (\$stream\+\_\+id, \$ref, \$pattern, \$content)
+\item 
+\mbox{\hyperlink{imap_8php_ac2c70967a56e93cf442668cfcf24752d}{imap\+\_\+listsubscribed}} (\$stream\+\_\+id, \$ref, \$pattern)
+\item 
+\mbox{\hyperlink{imap_8php_a2d228438ebaae89250e414b6030ed63b}{imap\+\_\+getsubscribed}} (\$imap\+\_\+stream, \$ref, \$pattern)
+\item 
+\mbox{\hyperlink{imap_8php_a1d6597a9291a72ee2059fecc455b503d}{imap\+\_\+fetchtext}} (\$stream, \$msg\+\_\+no, \$options=0)
+\item 
+\mbox{\hyperlink{imap_8php_ad1f567af3a54d1b3100e04df3faee3ca}{imap\+\_\+scan}} (\$stream\+\_\+id, \$ref, \$pattern, \$content)
+\item 
+\mbox{\hyperlink{imap_8php_a70cf0d88fcb477bed819fbd6d295e817}{imap\+\_\+create}} (\$stream\+\_\+id, \$mailbox)
+\item 
+\mbox{\hyperlink{imap_8php_a038c2cff79c2d12d93738ae14dcdd75d}{imap\+\_\+rename}} (\$stream\+\_\+id, \$old\+\_\+name, \$new\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{imap_8php_af7e6a0bd87326b75d22a0c4003a896c6}{N\+IL}} 0
+\item 
+const \mbox{\hyperlink{imap_8php_ab8850a505385603763382823fb427d03}{I\+M\+A\+P\+\_\+\+O\+P\+E\+N\+T\+I\+M\+E\+O\+UT}} 1
+\item 
+const \mbox{\hyperlink{imap_8php_a85ad6bddd7bd81490db898c466b3884f}{I\+M\+A\+P\+\_\+\+R\+E\+A\+D\+T\+I\+M\+E\+O\+UT}} 2
+\item 
+const \mbox{\hyperlink{imap_8php_ac36b807dc776cb1558291a5acd8d313a}{I\+M\+A\+P\+\_\+\+W\+R\+I\+T\+E\+T\+I\+M\+E\+O\+UT}} 3
+\item 
+const \mbox{\hyperlink{imap_8php_a319a413d1cefd6b3f036370ed210bde7}{I\+M\+A\+P\+\_\+\+C\+L\+O\+S\+E\+T\+I\+M\+E\+O\+UT}} 4
+\item 
+const \mbox{\hyperlink{imap_8php_ab3387a573d44baffb6a8b592bac8359b}{O\+P\+\_\+\+D\+E\+B\+UG}} 1
+\item 
+const \mbox{\hyperlink{imap_8php_a5227f53e6b96f7cf93e5aea52433f53e}{O\+P\+\_\+\+R\+E\+A\+D\+O\+N\+LY}} 2
+\item 
+const \mbox{\hyperlink{imap_8php_a1e810b3d1a75dc003a9a0535b3dc95a7}{O\+P\+\_\+\+A\+N\+O\+N\+Y\+M\+O\+US}} 4
+\item 
+const \mbox{\hyperlink{imap_8php_a9411e5f27aac960fbda0ff677769fc94}{O\+P\+\_\+\+S\+H\+O\+R\+T\+C\+A\+C\+HE}} 8
+\item 
+const \mbox{\hyperlink{imap_8php_a1186362203162229cb0ecc984d57703b}{O\+P\+\_\+\+S\+I\+L\+E\+NT}} 16
+\item 
+const \mbox{\hyperlink{imap_8php_a4515ef002a570e42085b06080b6580fe}{O\+P\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+PE}} 32
+\item 
+const \mbox{\hyperlink{imap_8php_a5903ddb87f34be6433b6978f7be3624c}{O\+P\+\_\+\+H\+A\+L\+F\+O\+P\+EN}} 64
+\item 
+const \mbox{\hyperlink{imap_8php_a5bf452e04cc5a4f33cff239ea0a5e8ea}{O\+P\+\_\+\+E\+X\+P\+U\+N\+GE}} 128
+\item 
+const \mbox{\hyperlink{imap_8php_a96c536df853316f71dbeb0e36b051ff2}{O\+P\+\_\+\+S\+E\+C\+U\+RE}} 256
+\item 
+const \mbox{\hyperlink{imap_8php_a6d36caebb9a863d7689618ddc4ec3b0b}{C\+L\+\_\+\+E\+X\+P\+U\+N\+GE}} 32768
+\item 
+const \mbox{\hyperlink{imap_8php_adc9783464df34d1d4f29fd4cfb35107b}{F\+T\+\_\+\+U\+ID}} 1
+\item 
+const \mbox{\hyperlink{imap_8php_add50e936c642a6de2eee88b3a45341b9}{F\+T\+\_\+\+P\+E\+EK}} 2
+\item 
+const \mbox{\hyperlink{imap_8php_ac5ff99c33666f7b09551e6464280b349}{F\+T\+\_\+\+N\+OT}} 4
+\item 
+const \mbox{\hyperlink{imap_8php_acee1a4be04014176ca65f0afd0f50514}{F\+T\+\_\+\+I\+N\+T\+E\+R\+N\+AL}} 8
+\item 
+const \mbox{\hyperlink{imap_8php_a6d9dfb1a325c234f7219188267c701e7}{F\+T\+\_\+\+P\+R\+E\+F\+E\+T\+C\+H\+T\+E\+XT}} 32
+\item 
+const \mbox{\hyperlink{imap_8php_aecdf41aa37b2ae276b82a44f9649c837}{S\+T\+\_\+\+U\+ID}} 1
+\item 
+const \mbox{\hyperlink{imap_8php_a2aae9c1583b64bf71f5949a8d79002bd}{S\+T\+\_\+\+S\+I\+L\+E\+NT}} 2
+\item 
+const \mbox{\hyperlink{imap_8php_abaf338e0361f7e5cf865352643a62e36}{S\+T\+\_\+\+S\+ET}} 4
+\item 
+const \mbox{\hyperlink{imap_8php_a643dd4974b25d42ec9264bf210b430f0}{C\+P\+\_\+\+U\+ID}} 1
+\item 
+const \mbox{\hyperlink{imap_8php_a2837603eb4e146488e24677e893eed2f}{C\+P\+\_\+\+M\+O\+VE}} 2
+\item 
+const \mbox{\hyperlink{imap_8php_a5a12244dff2916998aac1fbf00a98969}{S\+E\+\_\+\+U\+ID}} 1
+\item 
+const \mbox{\hyperlink{imap_8php_a4757c834b969ed2257fd834846979023}{S\+E\+\_\+\+F\+R\+EE}} 2
+\item 
+const \mbox{\hyperlink{imap_8php_a59bf84bbb36ff082ce2150acc921b94c}{S\+E\+\_\+\+N\+O\+P\+R\+E\+F\+E\+T\+CH}} 4
+\item 
+const \mbox{\hyperlink{imap_8php_a780be7f7ec1df2b85901cd56df788763}{S\+O\+\_\+\+F\+R\+EE}} 8
+\item 
+const \mbox{\hyperlink{imap_8php_a67d005f3313b2747b379e072560e3de1}{S\+O\+\_\+\+N\+O\+S\+E\+R\+V\+ER}} 16
+\item 
+const \mbox{\hyperlink{imap_8php_aa87d1ef2924674323d5c9208fa919907}{S\+A\+\_\+\+M\+E\+S\+S\+A\+G\+ES}} 1
+\item 
+const \mbox{\hyperlink{imap_8php_ae62fc741fe7ed599e7cd932bc79da361}{S\+A\+\_\+\+R\+E\+C\+E\+NT}} 2
+\item 
+const \mbox{\hyperlink{imap_8php_a25a658b47e84e9bbcde7c9dcf6dcbc20}{S\+A\+\_\+\+U\+N\+S\+E\+EN}} 4
+\item 
+const \mbox{\hyperlink{imap_8php_aceabe6a50d81e4f7454d1b89618dc221}{S\+A\+\_\+\+U\+I\+D\+N\+E\+XT}} 8
+\item 
+const \mbox{\hyperlink{imap_8php_a25b87538ae0bb542e29064304b65e3a8}{S\+A\+\_\+\+U\+I\+D\+V\+A\+L\+I\+D\+I\+TY}} 16
+\item 
+const \mbox{\hyperlink{imap_8php_a08b4b6c9db7d4b1ba422c4320df470bd}{S\+A\+\_\+\+A\+LL}} 31
+\item 
+const \mbox{\hyperlink{imap_8php_a544baf0ae5bc8dea8679f5fbbdf67404}{L\+A\+T\+T\+\_\+\+N\+O\+I\+N\+F\+E\+R\+I\+O\+RS}} 1
+\item 
+const \mbox{\hyperlink{imap_8php_ae9c74878ee41e968abfeddcde7ce7009}{L\+A\+T\+T\+\_\+\+N\+O\+S\+E\+L\+E\+CT}} 2
+\item 
+const \mbox{\hyperlink{imap_8php_ac7b35ec08da93fd37264d8ae2b3fb9fd}{L\+A\+T\+T\+\_\+\+M\+A\+R\+K\+ED}} 4
+\item 
+const \mbox{\hyperlink{imap_8php_a80cf9bc6d9287de4a9e6ee18f2f3b25c}{L\+A\+T\+T\+\_\+\+U\+N\+M\+A\+R\+K\+ED}} 8
+\item 
+const \mbox{\hyperlink{imap_8php_a4eec020bf83f5922a53e39d2538d7db9}{L\+A\+T\+T\+\_\+\+R\+E\+F\+E\+R\+R\+AL}} 16
+\item 
+const \mbox{\hyperlink{imap_8php_aad450b7e13ea9b57b69e9f94be1426e8}{L\+A\+T\+T\+\_\+\+H\+A\+S\+C\+H\+I\+L\+D\+R\+EN}} 32
+\item 
+const \mbox{\hyperlink{imap_8php_a6361a712b350caa266c860b3346b060c}{L\+A\+T\+T\+\_\+\+H\+A\+S\+N\+O\+C\+H\+I\+L\+D\+R\+EN}} 64
+\item 
+const \mbox{\hyperlink{imap_8php_a25e1a60fb9c84d44aafc05e44c543b08}{S\+O\+R\+T\+D\+A\+TE}} 0
+\item 
+const \mbox{\hyperlink{imap_8php_a0d98cbbadfd2542006036fdce62f866f}{S\+O\+R\+T\+A\+R\+R\+I\+V\+AL}} 1
+\item 
+const \mbox{\hyperlink{imap_8php_a2ecefad26c107191ecc9b77d4f5585d3}{S\+O\+R\+T\+F\+R\+OM}} 2
+\item 
+const \mbox{\hyperlink{imap_8php_a66a490d8af074773005ef84c6245dccc}{S\+O\+R\+T\+S\+U\+B\+J\+E\+CT}} 3
+\item 
+const \mbox{\hyperlink{imap_8php_a848172e7f5d6e69111d20597e77e7c89}{S\+O\+R\+T\+TO}} 4
+\item 
+const \mbox{\hyperlink{imap_8php_a755df90691361648889c27e1731a0022}{S\+O\+R\+T\+CC}} 5
+\item 
+const \mbox{\hyperlink{imap_8php_ac625d08b86c6f4f18f95c8712dd9d594}{S\+O\+R\+T\+S\+I\+ZE}} 6
+\item 
+const \mbox{\hyperlink{imap_8php_a4774ed3dba05ede7ec0a1edc7d63f857}{T\+Y\+P\+E\+T\+E\+XT}} 0
+\item 
+const \mbox{\hyperlink{imap_8php_ab90d5c70878126e78ebef86637000ed3}{T\+Y\+P\+E\+M\+U\+L\+T\+I\+P\+A\+RT}} 1
+\item 
+const \mbox{\hyperlink{imap_8php_a1924c3273362b3170e35d09b32a6320c}{T\+Y\+P\+E\+M\+E\+S\+S\+A\+GE}} 2
+\item 
+const \mbox{\hyperlink{imap_8php_adc4c2284a8be76b155a2594dd4f98bb1}{T\+Y\+P\+E\+A\+P\+P\+L\+I\+C\+A\+T\+I\+ON}} 3
+\item 
+const \mbox{\hyperlink{imap_8php_a115bfc97353ed7db6d96b99897272784}{T\+Y\+P\+E\+A\+U\+D\+IO}} 4
+\item 
+const \mbox{\hyperlink{imap_8php_a200d532db81a1bd6aba3ef3d23767ff0}{T\+Y\+P\+E\+I\+M\+A\+GE}} 5
+\item 
+const \mbox{\hyperlink{imap_8php_a2e0279ee72453b4e00a9a4a3946c9a11}{T\+Y\+P\+E\+V\+I\+D\+EO}} 6
+\item 
+const \mbox{\hyperlink{imap_8php_a21441ce176cbbbf377341ebc9f93d4c0}{T\+Y\+P\+E\+M\+O\+D\+EL}} 7
+\item 
+const \mbox{\hyperlink{imap_8php_a8a2afd5c837229f8080564eb6e85f711}{T\+Y\+P\+E\+O\+T\+H\+ER}} 8
+\item 
+const \mbox{\hyperlink{imap_8php_a603763fb6f22a6b0a7813cbbb89645aa}{E\+N\+C7\+B\+IT}} 0
+\item 
+const \mbox{\hyperlink{imap_8php_a8feaf6b00098474260832b790f76ed09}{E\+N\+C8\+B\+IT}} 1
+\item 
+const \mbox{\hyperlink{imap_8php_ae1f61879ea1a811f356add884375d421}{E\+N\+C\+B\+I\+N\+A\+RY}} 2
+\item 
+const \mbox{\hyperlink{imap_8php_a9a16b0284ea2453ae7d005188c896d13}{E\+N\+C\+B\+A\+S\+E64}} 3
+\item 
+const \mbox{\hyperlink{imap_8php_a92ca7b03f2efd0218f79833d74763716}{E\+N\+C\+Q\+U\+O\+T\+E\+D\+P\+R\+I\+N\+T\+A\+B\+LE}} 4
+\item 
+const \mbox{\hyperlink{imap_8php_a8dff16976b09dae7af13b210d623ae91}{E\+N\+C\+O\+T\+H\+ER}} 5
+\item 
+const \mbox{\hyperlink{imap_8php_a959d5720de5555fef054399a5ff04447}{I\+M\+A\+P\+\_\+\+G\+C\+\_\+\+E\+LT}} 1
+\item 
+const \mbox{\hyperlink{imap_8php_a6d60d2909268d097c8c35a5dd71c424b}{I\+M\+A\+P\+\_\+\+G\+C\+\_\+\+E\+NV}} 2
+\item 
+const \mbox{\hyperlink{imap_8php_ae04744074aab26455ff9dbcff3dc8cca}{I\+M\+A\+P\+\_\+\+G\+C\+\_\+\+T\+E\+X\+TS}} 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{imap_8php_a1b5d1511432a49a73b2f3d05b6ef6d78}\label{imap_8php_a1b5d1511432a49a73b2f3d05b6ef6d78}} 
+\index{imap.php@{imap.php}!imap\_8bit@{imap\_8bit}}
+\index{imap\_8bit@{imap\_8bit}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_8bit()}{imap\_8bit()}}
+{\footnotesize\ttfamily imap\+\_\+8bit (\begin{DoxyParamCaption}\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Convert an 8bit string to a quoted-\/printable string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$string }} The 8bit string to convert 
+
+\begin{DoxyReturn}{Returns}
+string a quoted-\/printable string. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_aa520f056585bc0b63108eddae8ec1ae6}\label{imap_8php_aa520f056585bc0b63108eddae8ec1ae6}} 
+\index{imap.php@{imap.php}!imap\_alerts@{imap\_alerts}}
+\index{imap\_alerts@{imap\_alerts}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_alerts()}{imap\_alerts()}}
+{\footnotesize\ttfamily imap\+\_\+alerts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns all I\+M\+AP alert messages that have occurred \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array$\vert$false an array of all of the I\+M\+AP alert messages generated or {\bfseries{F\+A\+L\+SE}} if no alert messages are available.  4.\+0  5.\+0 }}\mbox{\Hypertarget{imap_8php_ade2ed8b8ed83d7f3be939406b4ec09ce}\label{imap_8php_ade2ed8b8ed83d7f3be939406b4ec09ce}} 
+\index{imap.php@{imap.php}!imap\_append@{imap\_append}}
+\index{imap\_append@{imap\_append}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_append()}{imap\_append()}}
+{\footnotesize\ttfamily imap\+\_\+append (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$mailbox,  }\item[{}]{\$message,  }\item[{}]{\$options = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$internal\+\_\+date = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Append a string message to a specified mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$mailbox }} The mailbox name, see {\bfseries{imap\+\_\+open}} for more information 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+The message to be append, as a string 
+
+When talking to the Cyrus I\+M\+AP server, you must use \char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{} as your end-\/of-\/line terminator instead of \char`\"{}\textbackslash{}n\char`\"{} or the operation will fail 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If provided, the {\itshape options} will also be written to the {\itshape mailbox} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$internal\+\_\+date} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+If this parameter is set, it will set the I\+N\+T\+E\+R\+N\+A\+L\+D\+A\+TE on the appended message. The parameter should be a date string that conforms to the rfc2060 specifications for a date\+\_\+time value. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_aac1f880fa96ff3e326d3a2616e41b7c1}\label{imap_8php_aac1f880fa96ff3e326d3a2616e41b7c1}} 
+\index{imap.php@{imap.php}!imap\_base64@{imap\_base64}}
+\index{imap\_base64@{imap\_base64}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_base64()}{imap\_base64()}}
+{\footnotesize\ttfamily imap\+\_\+base64 (\begin{DoxyParamCaption}\item[{}]{\$text }\end{DoxyParamCaption})}
+
+Decode B\+A\+S\+E64 encoded text \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$text }} The encoded text 
+
+\begin{DoxyReturn}{Returns}
+string the decoded message as a string. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a75ee94845f3465b3f87607caf4e6ce5e}\label{imap_8php_a75ee94845f3465b3f87607caf4e6ce5e}} 
+\index{imap.php@{imap.php}!imap\_binary@{imap\_binary}}
+\index{imap\_binary@{imap\_binary}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_binary()}{imap\_binary()}}
+{\footnotesize\ttfamily imap\+\_\+binary (\begin{DoxyParamCaption}\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Convert an 8bit string to a base64 string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$string }} The 8bit string 
+
+\begin{DoxyReturn}{Returns}
+string a base64 encoded string. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a64b4b07e11b9a1577d65b4b8e2d2968f}\label{imap_8php_a64b4b07e11b9a1577d65b4b8e2d2968f}} 
+\index{imap.php@{imap.php}!imap\_body@{imap\_body}}
+\index{imap\_body@{imap\_body}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_body()}{imap\_body()}}
+{\footnotesize\ttfamily imap\+\_\+body (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$msg\+\_\+number,  }\item[{}]{\$options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Read the message body \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int \$msg\+\_\+number }} The message number 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The optional {\itshape options} are a bit mask with one or more of the following\+: {\bfseries{F\+T\+\_\+\+U\+ID}} -\/ The {\itshape msg\+\_\+number} is a U\+ID \begin{DoxyReturn}{Returns}
+string the body of the specified message, as a string. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a584e7435c7c32523b99afc897099ba51}\label{imap_8php_a584e7435c7c32523b99afc897099ba51}} 
+\index{imap.php@{imap.php}!imap\_bodystruct@{imap\_bodystruct}}
+\index{imap\_bodystruct@{imap\_bodystruct}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_bodystruct()}{imap\_bodystruct()}}
+{\footnotesize\ttfamily imap\+\_\+bodystruct (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$msg\+\_\+number,  }\item[{}]{\$section }\end{DoxyParamCaption})}
+
+Read the structure of a specified body section of a specific message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int \$msg\+\_\+number }} The message number 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$section} & \\
+\hline
+\end{DoxyParams}
+The body section to read 
+
+\begin{DoxyReturn}{Returns}
+object the information in an object, for a detailed description of the object structure and properties see {\bfseries{imap\+\_\+fetchstructure}}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a2f9f03b168c1c5eddd186046a2c7756f}\label{imap_8php_a2f9f03b168c1c5eddd186046a2c7756f}} 
+\index{imap.php@{imap.php}!imap\_check@{imap\_check}}
+\index{imap\_check@{imap\_check}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_check()}{imap\_check()}}
+{\footnotesize\ttfamily imap\+\_\+check (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream }\end{DoxyParamCaption})}
+
+Check current mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  object$\vert$false the information in an object with following properties\+: {\bfseries{Date}} -\/ current system time formatted according to R\+F\+C2822 {\bfseries{Driver}} -\/ protocol used to access this mailbox\+: P\+O\+P3, I\+M\+AP, N\+N\+TP {\bfseries{Mailbox}} -\/ the mailbox name {\bfseries{Nmsgs}} -\/ number of messages in the mailbox {\bfseries{Recent}} -\/ number of recent messages in the mailbox }} 
+
+Returns {\bfseries{F\+A\+L\+SE}} on failure. \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a2b03649742a86a23d978a742d31bb62e}\label{imap_8php_a2b03649742a86a23d978a742d31bb62e}} 
+\index{imap.php@{imap.php}!imap\_clearflag\_full@{imap\_clearflag\_full}}
+\index{imap\_clearflag\_full@{imap\_clearflag\_full}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_clearflag\_full()}{imap\_clearflag\_full()}}
+{\footnotesize\ttfamily imap\+\_\+clearflag\+\_\+full (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$sequence,  }\item[{}]{\$flag,  }\item[{}]{\$options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Clears flags on messages \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$sequence }} \mbox{\hyperlink{class_a}{A}} sequence of message numbers. You can enumerate desired messages with the X,Y syntax, or retrieve all messages within an interval with the X\+:Y syntax 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$flag} & \\
+\hline
+\end{DoxyParams}
+The flags which you can unset are \char`\"{}\textbackslash{}\textbackslash{}\+Seen\char`\"{}, \char`\"{}\textbackslash{}\textbackslash{}\+Answered\char`\"{}, \char`\"{}\textbackslash{}\textbackslash{}\+Flagged\char`\"{}, \char`\"{}\textbackslash{}\textbackslash{}\+Deleted\char`\"{}, and \char`\"{}\textbackslash{}\textbackslash{}\+Draft\char`\"{} (as defined by R\+F\+C2060) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+{\itshape options} are a bit mask and may contain the single option\+: {\bfseries{S\+T\+\_\+\+U\+ID}} -\/ The sequence argument contains U\+I\+Ds instead of sequence numbers \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a165cfd68a9eb9336a5d94532cd73f2c1}\label{imap_8php_a165cfd68a9eb9336a5d94532cd73f2c1}} 
+\index{imap.php@{imap.php}!imap\_close@{imap\_close}}
+\index{imap\_close@{imap\_close}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_close()}{imap\_close()}}
+{\footnotesize\ttfamily imap\+\_\+close (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$flag = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Close an I\+M\+AP stream \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int \$flag \mbox{[}optional\mbox{]} }} If set to {\bfseries{C\+L\+\_\+\+E\+X\+P\+U\+N\+GE}}, the function will silently expunge the mailbox before closing, removing all messages marked for deletion. You can achieve the same thing by using {\bfseries{imap\+\_\+expunge}} 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a70cf0d88fcb477bed819fbd6d295e817}\label{imap_8php_a70cf0d88fcb477bed819fbd6d295e817}} 
+\index{imap.php@{imap.php}!imap\_create@{imap\_create}}
+\index{imap\_create@{imap\_create}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_create()}{imap\_create()}}
+{\footnotesize\ttfamily imap\+\_\+create (\begin{DoxyParamCaption}\item[{}]{\$stream\+\_\+id,  }\item[{}]{\$mailbox }\end{DoxyParamCaption})}
+
+Alias of {\bfseries{imap\+\_\+createmailbox}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$stream\+\_\+id  \$mailbox  4.\+0  5.\+0 }}\mbox{\Hypertarget{imap_8php_ab7c3e4ffe4adb6e3d6f4f506e7261f93}\label{imap_8php_ab7c3e4ffe4adb6e3d6f4f506e7261f93}} 
+\index{imap.php@{imap.php}!imap\_createmailbox@{imap\_createmailbox}}
+\index{imap\_createmailbox@{imap\_createmailbox}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_createmailbox()}{imap\_createmailbox()}}
+{\footnotesize\ttfamily imap\+\_\+createmailbox (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$mailbox }\end{DoxyParamCaption})}
+
+Create a new mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$mailbox }} The mailbox name, see {\bfseries{imap\+\_\+open}} for more information. Names containing international characters should be encoded by {\bfseries{imap\+\_\+utf7\+\_\+encode}} 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a7d44796c2d1c214680ac121fcce2b585}\label{imap_8php_a7d44796c2d1c214680ac121fcce2b585}} 
+\index{imap.php@{imap.php}!imap\_delete@{imap\_delete}}
+\index{imap\_delete@{imap\_delete}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_delete()}{imap\_delete()}}
+{\footnotesize\ttfamily imap\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$msg\+\_\+number,  }\item[{}]{\$options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Mark a message for deletion from current mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int \$msg\+\_\+number }} The message number 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+You can set the {\bfseries{F\+T\+\_\+\+U\+ID}} which tells the function to treat the {\itshape msg\+\_\+number} argument as an U\+ID. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a4f6ef3057e6162fa078ea43dc124f753}\label{imap_8php_a4f6ef3057e6162fa078ea43dc124f753}} 
+\index{imap.php@{imap.php}!imap\_deletemailbox@{imap\_deletemailbox}}
+\index{imap\_deletemailbox@{imap\_deletemailbox}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_deletemailbox()}{imap\_deletemailbox()}}
+{\footnotesize\ttfamily imap\+\_\+deletemailbox (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$mailbox }\end{DoxyParamCaption})}
+
+Delete a mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$mailbox }} The mailbox name, see {\bfseries{imap\+\_\+open}} for more information 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a513eebbba18b1bed03b705a2ae10e2ed}\label{imap_8php_a513eebbba18b1bed03b705a2ae10e2ed}} 
+\index{imap.php@{imap.php}!imap\_errors@{imap\_errors}}
+\index{imap\_errors@{imap\_errors}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_errors()}{imap\_errors()}}
+{\footnotesize\ttfamily imap\+\_\+errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns all of the I\+M\+AP errors that have occurred \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array$\vert$false This function returns an array of all of the I\+M\+AP error messages generated since the last {\bfseries{imap\+\_\+errors}} call, or the beginning of the page. Returns {\bfseries{F\+A\+L\+SE}} if no error messages are available.  4.\+0  5.\+0 }}\mbox{\Hypertarget{imap_8php_a243fb3356e22b14c7538c902180b438e}\label{imap_8php_a243fb3356e22b14c7538c902180b438e}} 
+\index{imap.php@{imap.php}!imap\_expunge@{imap\_expunge}}
+\index{imap\_expunge@{imap\_expunge}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_expunge()}{imap\_expunge()}}
+{\footnotesize\ttfamily imap\+\_\+expunge (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream }\end{DoxyParamCaption})}
+
+Delete all messages marked for deletion \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  bool {\bfseries{T\+R\+UE}}.  4.\+0  5.\+0 }}\mbox{\Hypertarget{imap_8php_abe4f43f783d92ae0491d7a8a5edf6fcc}\label{imap_8php_abe4f43f783d92ae0491d7a8a5edf6fcc}} 
+\index{imap.php@{imap.php}!imap\_fetch\_overview@{imap\_fetch\_overview}}
+\index{imap\_fetch\_overview@{imap\_fetch\_overview}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_fetch\_overview()}{imap\_fetch\_overview()}}
+{\footnotesize\ttfamily imap\+\_\+fetch\+\_\+overview (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$sequence,  }\item[{}]{\$options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Read an overview of the information in the headers of the given message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$sequence }} \mbox{\hyperlink{class_a}{A}} message sequence description. You can enumerate desired messages with the X,Y syntax, or retrieve all messages within an interval with the X\+:Y syntax 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+{\itshape sequence} will contain a sequence of message indices or U\+I\+Ds, if this parameter is set to {\bfseries{F\+T\+\_\+\+U\+ID}}. 
+
+\begin{DoxyReturn}{Returns}
+array an array of objects describing one message header each. The object will only define a property if it exists. The possible properties are\+: subject -\/ the messages subject from -\/ who sent it to -\/ recipient date -\/ when was it sent message\+\_\+id -\/ Message-\/\+ID references -\/ is a reference to this message id in\+\_\+reply\+\_\+to -\/ is a reply to this message id size -\/ size in bytes uid -\/ U\+ID the message has in the mailbox msgno -\/ message sequence number in the mailbox recent -\/ this message is flagged as recent flagged -\/ this message is flagged answered -\/ this message is flagged as answered deleted -\/ this message is flagged for deletion seen -\/ this message is flagged as already read draft -\/ this message is flagged as being a draft 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_ac29a17742acaab1502f3e4497a706869}\label{imap_8php_ac29a17742acaab1502f3e4497a706869}} 
+\index{imap.php@{imap.php}!imap\_fetchbody@{imap\_fetchbody}}
+\index{imap\_fetchbody@{imap\_fetchbody}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_fetchbody()}{imap\_fetchbody()}}
+{\footnotesize\ttfamily imap\+\_\+fetchbody (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$msg\+\_\+number,  }\item[{}]{\$section,  }\item[{}]{\$options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Fetch a particular section of the body of the message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int \$msg\+\_\+number }} The message number 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$section} & \\
+\hline
+\end{DoxyParams}
+The part number. It is a string of integers delimited by period which index into a body part list as per the I\+M\+A\+P4 specification 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} bitmask with one or more of the following\+: {\bfseries{F\+T\+\_\+\+U\+ID}} -\/ The {\itshape msg\+\_\+number} is a U\+ID \begin{DoxyReturn}{Returns}
+string a particular section of the body of the specified messages as a text string. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_ae672c76548fd69aa2b5f7286325e3796}\label{imap_8php_ae672c76548fd69aa2b5f7286325e3796}} 
+\index{imap.php@{imap.php}!imap\_fetchheader@{imap\_fetchheader}}
+\index{imap\_fetchheader@{imap\_fetchheader}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_fetchheader()}{imap\_fetchheader()}}
+{\footnotesize\ttfamily imap\+\_\+fetchheader (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$msg\+\_\+number,  }\item[{}]{\$options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Returns header for a message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int \$msg\+\_\+number }} The message number 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The possible {\itshape options} are\+: {\bfseries{F\+T\+\_\+\+U\+ID}} -\/ The {\itshape msgno} argument is a U\+ID \begin{DoxyReturn}{Returns}
+string the header of the specified message as a text string. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_ae206005ddcea179d4a823a950af17285}\label{imap_8php_ae206005ddcea179d4a823a950af17285}} 
+\index{imap.php@{imap.php}!imap\_fetchmime@{imap\_fetchmime}}
+\index{imap\_fetchmime@{imap\_fetchmime}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_fetchmime()}{imap\_fetchmime()}}
+{\footnotesize\ttfamily imap\+\_\+fetchmime (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$msg\+\_\+number,  }\item[{}]{\$section,  }\item[{}]{\$options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Fetch M\+I\+ME headers for a particular section of the message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int \$msg\+\_\+number }} The message number 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$section} & \\
+\hline
+\end{DoxyParams}
+The part number. It is a string of integers delimited by period which index into a body part list as per the I\+M\+A\+P4 specification 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} bitmask with one or more of the following\+: {\bfseries{F\+T\+\_\+\+U\+ID}} -\/ The {\itshape msg\+\_\+number} is a U\+ID \begin{DoxyReturn}{Returns}
+string the M\+I\+ME headers of a particular section of the body of the specified messages as a text string. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+3.\+6 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a50fa65c730c029635010e765bdc362b8}\label{imap_8php_a50fa65c730c029635010e765bdc362b8}} 
+\index{imap.php@{imap.php}!imap\_fetchstructure@{imap\_fetchstructure}}
+\index{imap\_fetchstructure@{imap\_fetchstructure}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_fetchstructure()}{imap\_fetchstructure()}}
+{\footnotesize\ttfamily imap\+\_\+fetchstructure (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$msg\+\_\+number,  }\item[{}]{\$options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Read the structure of a particular message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int \$msg\+\_\+number }} The message number 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+This optional parameter only has a single option, {\bfseries{F\+T\+\_\+\+U\+ID}}, which tells the function to treat the {\itshape msg\+\_\+number} argument as a U\+ID. 
+
+\begin{DoxyReturn}{Returns}
+object an object includes the envelope, internal date, size, flags and body structure along with a similar object for each mime attachment. The structure of the returned objects is as follows\+: 
+\end{DoxyReturn}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+Objects for {\bfseries{imap\+\_\+fetchstructure}} 
+
+type 
+
+Primary body type  
+
+encoding 
+
+Body transfer encoding  
+
+ifsubtype 
+
+{\bfseries{T\+R\+UE}} if there is a subtype string  
+
+subtype 
+
+M\+I\+ME subtype  
+
+ifdescription 
+
+{\bfseries{T\+R\+UE}} if there is a description string  
+
+description 
+
+Content description string  
+
+ifid 
+
+{\bfseries{T\+R\+UE}} if there is an identification string  
+
+id 
+
+Identification string  
+
+lines 
+
+Number of lines  
+
+bytes 
+
+Number of bytes  
+
+ifdisposition 
+
+{\bfseries{T\+R\+UE}} if there is a disposition string  
+
+disposition 
+
+Disposition string  
+
+ifdparameters 
+
+{\bfseries{T\+R\+UE}} if the dparameters array exists  
+
+dparameters 
+
+An array of objects where each object has an \char`\"{}attribute\char`\"{} and a \char`\"{}value\char`\"{} property corresponding to the parameters on the Content-\/disposition M\+I\+ME header.  
+
+ifparameters 
+
+{\bfseries{T\+R\+UE}} if the parameters array exists  
+
+parameters 
+
+An array of objects where each object has an \char`\"{}attribute\char`\"{} and a \char`\"{}value\char`\"{} property.  
+
+parts 
+
+An array of objects identical in structure to the top-\/level object, each of which corresponds to a M\+I\+ME body part.  
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+body type (may vary with used library) 
+
+0
+
+text 
+
+1
+
+multipart 
+
+2
+
+message 
+
+3
+
+application 
+
+4
+
+audio 
+
+5
+
+image 
+
+6
+
+video 
+
+7
+
+other 
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\end{longtabu}
+encodings (may vary with used library) 
+
+0
+
+7B\+IT 
+
+1
+
+8B\+IT 
+
+2
+
+B\+I\+N\+A\+RY 
+
+3
+
+B\+A\+S\+E64 
+
+4
+
+Q\+U\+O\+T\+E\+D-\/\+P\+R\+I\+N\+T\+A\+B\+LE 
+
+5
+
+O\+T\+H\+ER 
+
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a1d6597a9291a72ee2059fecc455b503d}\label{imap_8php_a1d6597a9291a72ee2059fecc455b503d}} 
+\index{imap.php@{imap.php}!imap\_fetchtext@{imap\_fetchtext}}
+\index{imap\_fetchtext@{imap\_fetchtext}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_fetchtext()}{imap\_fetchtext()}}
+{\footnotesize\ttfamily imap\+\_\+fetchtext (\begin{DoxyParamCaption}\item[{}]{\$stream,  }\item[{}]{\$msg\+\_\+no,  }\item[{}]{\$options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+(P\+HP 4, P\+HP 5) Alias of \mbox{\hyperlink{imap_8php_a64b4b07e11b9a1577d65b4b8e2d2968f}{imap\+\_\+body()}} 
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$stream} & An I\+M\+AP stream returned by \mbox{\hyperlink{imap_8php_a7424e639697d4fb192363d37d1d60038}{imap\+\_\+open()}} \\
+\hline
+int & {\em \$msg\+\_\+no} & message number \\
+\hline
+int & {\em \$options} & \mbox{[}optional\mbox{]} \mbox{\hyperlink{class_a}{A}} bitmask with one or more of the following\+:
+\begin{DoxyItemize}
+\item F\+T\+\_\+\+U\+ID -\/ The msg\+\_\+number is a U\+ID 
+\item F\+T\+\_\+\+P\+E\+EK -\/ Do not set the \textbackslash{}\+Seen flag if not already set 
+\item F\+T\+\_\+\+I\+N\+T\+E\+R\+N\+AL -\/ The return string is in internal format, will not canonicalize to C\+R\+LF.
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string body of the specified message 
+\end{DoxyReturn}
+\mbox{\Hypertarget{imap_8php_a60101994c9a747355ef2b35eca5fd435}\label{imap_8php_a60101994c9a747355ef2b35eca5fd435}} 
+\index{imap.php@{imap.php}!imap\_gc@{imap\_gc}}
+\index{imap\_gc@{imap\_gc}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_gc()}{imap\_gc()}}
+{\footnotesize\ttfamily imap\+\_\+gc (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$caches }\end{DoxyParamCaption})}
+
+Clears I\+M\+AP cache \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int \$caches }} Specifies the cache to purge. It may one or a combination of the following constants\+: {\bfseries{I\+M\+A\+P\+\_\+\+G\+C\+\_\+\+E\+LT}} (message cache elements), {\bfseries{I\+M\+A\+P\+\_\+\+G\+C\+\_\+\+E\+NV}} (enveloppe and bodies), {\bfseries{I\+M\+A\+P\+\_\+\+G\+C\+\_\+\+T\+E\+X\+TS}} (texts). 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a707f56296c4776dfb24b37c22f3137ab}\label{imap_8php_a707f56296c4776dfb24b37c22f3137ab}} 
+\index{imap.php@{imap.php}!imap\_get\_quota@{imap\_get\_quota}}
+\index{imap\_get\_quota@{imap\_get\_quota}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_get\_quota()}{imap\_get\_quota()}}
+{\footnotesize\ttfamily imap\+\_\+get\+\_\+quota (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$quota\+\_\+root }\end{DoxyParamCaption})}
+
+Retrieve the quota level settings, and usage statics per mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$quota\+\_\+root }} {\itshape quota\+\_\+root} should normally be in the form of user.\+name where name is the mailbox you wish to retrieve information about. 
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false an array with integer values limit and usage for the given mailbox. The value of limit represents the total amount of space allowed for this mailbox. The usage value represents the mailboxes current level of capacity. Will return {\bfseries{F\+A\+L\+SE}} in the case of failure. 
+\end{DoxyReturn}
+
+
+As of P\+HP 4.\+3, the function more properly reflects the functionality as dictated by the R\+F\+C2087. The array return value has changed to support an unlimited number of returned resources (i.\+e. messages, or sub-\/folders) with each named resource receiving an individual array key. Each key value then contains an another array with the usage and limit values within it. 
+
+For backwards compatibility reasons, the original access methods are still available for use, although it is suggested to update. \begin{DoxySince}{Since}
+4.\+0.\+5 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_afd2088c5c02e2501a7c6e481b77c7c14}\label{imap_8php_afd2088c5c02e2501a7c6e481b77c7c14}} 
+\index{imap.php@{imap.php}!imap\_get\_quotaroot@{imap\_get\_quotaroot}}
+\index{imap\_get\_quotaroot@{imap\_get\_quotaroot}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_get\_quotaroot()}{imap\_get\_quotaroot()}}
+{\footnotesize\ttfamily imap\+\_\+get\+\_\+quotaroot (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$quota\+\_\+root }\end{DoxyParamCaption})}
+
+Retrieve the quota settings per user \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$quota\+\_\+root }} {\itshape quota\+\_\+root} should normally be in the form of which mailbox (i.\+e. I\+N\+B\+OX). 
+
+\begin{DoxyReturn}{Returns}
+array$\vert$false an array of integer values pertaining to the specified user mailbox. All values contain a key based upon the resource name, and a corresponding array with the usage and limit values within. 
+\end{DoxyReturn}
+
+
+This function will return {\bfseries{F\+A\+L\+SE}} in the case of call failure, and an array of information about the connection upon an un-\/parsable response from the server. \begin{DoxySince}{Since}
+4.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_aaa72134fc219512cf5b7ad3ccf18353a}\label{imap_8php_aaa72134fc219512cf5b7ad3ccf18353a}} 
+\index{imap.php@{imap.php}!imap\_getacl@{imap\_getacl}}
+\index{imap\_getacl@{imap\_getacl}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_getacl()}{imap\_getacl()}}
+{\footnotesize\ttfamily imap\+\_\+getacl (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$mailbox }\end{DoxyParamCaption})}
+
+Gets the A\+CL for a given mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$mailbox }} The mailbox name, see {\bfseries{imap\+\_\+open}} for more information 
+
+\begin{DoxyReturn}{Returns}
+array an associative array of \char`\"{}folder\char`\"{} =$>$ \char`\"{}acl\char`\"{} pairs. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a6e3130cd13e3b60b0e85614c88fb11f8}\label{imap_8php_a6e3130cd13e3b60b0e85614c88fb11f8}} 
+\index{imap.php@{imap.php}!imap\_getannotation@{imap\_getannotation}}
+\index{imap\_getannotation@{imap\_getannotation}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_getannotation()}{imap\_getannotation()}}
+{\footnotesize\ttfamily imap\+\_\+getannotation (\begin{DoxyParamCaption}\item[{}]{\$stream\+\_\+id,  }\item[{}]{\$mailbox,  }\item[{}]{\$entry,  }\item[{}]{\$attr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$stream\+\_\+id} & \\
+\hline
+{\em \$mailbox} & \\
+\hline
+{\em \$entry} & \\
+\hline
+{\em \$attr} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{imap_8php_a40b73b249fa5e2c6c2f862981ae9d0fb}\label{imap_8php_a40b73b249fa5e2c6c2f862981ae9d0fb}} 
+\index{imap.php@{imap.php}!imap\_getmailboxes@{imap\_getmailboxes}}
+\index{imap\_getmailboxes@{imap\_getmailboxes}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_getmailboxes()}{imap\_getmailboxes()}}
+{\footnotesize\ttfamily imap\+\_\+getmailboxes (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$ref,  }\item[{}]{\$pattern }\end{DoxyParamCaption})}
+
+Read the list of mailboxes, returning detailed information on each one \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$ref }} {\itshape ref} should normally be just the server specification as described in {\bfseries{imap\+\_\+open}} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & Specifies where in the mailbox hierarchy to start searching.\\
+\hline
+\end{DoxyParams}
+There are two special characters you can pass as part of the {\itshape pattern}\+: \&\#x00027;{\itshape \&\#x00027; and \&\#x00027;\&\#37;\&\#x00027;. \&\#x00027;}\&\#x00027; means to return all mailboxes. If you pass {\itshape pattern} as \&\#x00027;$\ast$\&\#x00027;, you will get a list of the entire mailbox hierarchy. \&\#x00027;\&\#37;\&\#x00027; means to return the current level only. \&\#x00027;\&\#37;\&\#x00027; as the {\itshape pattern} parameter will return only the top level mailboxes; \&\#x00027;$\sim$/mail/\&\#37;\&\#x00027; on U\+W\+\_\+\+I\+M\+A\+PD will return every mailbox in the $\sim$/mail directory, but none in subfolders of that directory.
+
+\begin{DoxyReturn}{Returns}
+array an array of objects containing mailbox information. Each object has the attributes {\itshape name}, specifying the full name of the mailbox; {\itshape delimiter}, which is the hierarchy delimiter for the part of the hierarchy this mailbox is in; and {\itshape attributes}. {\itshape Attributes} is a bitmask that can be tested against\+: 
+\end{DoxyReturn}
+{\bfseries{L\+A\+T\+T\+\_\+\+N\+O\+I\+N\+F\+E\+R\+I\+O\+RS}} -\/ This mailbox contains, and may not contain any \char`\"{}children\char`\"{} (there are no mailboxes below this one). Calling {\bfseries{imap\+\_\+createmailbox}} will not work on this mailbox. 
+
+{\bfseries{L\+A\+T\+T\+\_\+\+N\+O\+S\+E\+L\+E\+CT}} -\/ This is only a container, not a mailbox -\/ you cannot open it. 
+
+{\bfseries{L\+A\+T\+T\+\_\+\+M\+A\+R\+K\+ED}} -\/ This mailbox is marked. This means that it may contain new messages since the last time it was checked. Not provided by all I\+M\+AP servers. 
+
+{\bfseries{L\+A\+T\+T\+\_\+\+U\+N\+M\+A\+R\+K\+ED}} -\/ This mailbox is not marked, does not contain new messages. If either {\bfseries{M\+A\+R\+K\+ED}} or {\bfseries{U\+N\+M\+A\+R\+K\+ED}} is provided, you can assume the I\+M\+AP server supports this feature for this mailbox. 
+
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a2d228438ebaae89250e414b6030ed63b}\label{imap_8php_a2d228438ebaae89250e414b6030ed63b}} 
+\index{imap.php@{imap.php}!imap\_getsubscribed@{imap\_getsubscribed}}
+\index{imap\_getsubscribed@{imap\_getsubscribed}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_getsubscribed()}{imap\_getsubscribed()}}
+{\footnotesize\ttfamily imap\+\_\+getsubscribed (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$ref,  }\item[{}]{\$pattern }\end{DoxyParamCaption})}
+
+List all the subscribed mailboxes \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$ref }} {\itshape ref} should normally be just the server specification as described in {\bfseries{imap\+\_\+open}} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & Specifies where in the mailbox hierarchy to start searching.\\
+\hline
+\end{DoxyParams}
+There are two special characters you can pass as part of the {\itshape pattern}\+: \&\#x00027;{\itshape \&\#x00027; and \&\#x00027;\&\#37;\&\#x00027;. \&\#x00027;}\&\#x00027; means to return all mailboxes. If you pass {\itshape pattern} as \&\#x00027;$\ast$\&\#x00027;, you will get a list of the entire mailbox hierarchy. \&\#x00027;\&\#37;\&\#x00027; means to return the current level only. \&\#x00027;\&\#37;\&\#x00027; as the {\itshape pattern} parameter will return only the top level mailboxes; \&\#x00027;$\sim$/mail/\&\#37;\&\#x00027; on U\+W\+\_\+\+I\+M\+A\+PD will return every mailbox in the $\sim$/mail directory, but none in subfolders of that directory.
+
+\begin{DoxyReturn}{Returns}
+array an array of objects containing mailbox information. Each object has the attributes {\itshape name}, specifying the full name of the mailbox; {\itshape delimiter}, which is the hierarchy delimiter for the part of the hierarchy this mailbox is in; and {\itshape attributes}. {\itshape Attributes} is a bitmask that can be tested against\+: {\bfseries{L\+A\+T\+T\+\_\+\+N\+O\+I\+N\+F\+E\+R\+I\+O\+RS}} -\/ This mailbox has no \char`\"{}children\char`\"{} (there are no mailboxes below this one). {\bfseries{L\+A\+T\+T\+\_\+\+N\+O\+S\+E\+L\+E\+CT}} -\/ This is only a container, not a mailbox -\/ you cannot open it. {\bfseries{L\+A\+T\+T\+\_\+\+M\+A\+R\+K\+ED}} -\/ This mailbox is marked. Only used by U\+W-\/\+I\+M\+A\+PD. {\bfseries{L\+A\+T\+T\+\_\+\+U\+N\+M\+A\+R\+K\+ED}} -\/ This mailbox is not marked. Only used by U\+W-\/\+I\+M\+A\+PD. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a80942f67e9cfb898b5e21572ed230ff6}\label{imap_8php_a80942f67e9cfb898b5e21572ed230ff6}} 
+\index{imap.php@{imap.php}!imap\_header@{imap\_header}}
+\index{imap\_header@{imap\_header}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_header()}{imap\_header()}}
+{\footnotesize\ttfamily imap\+\_\+header (\begin{DoxyParamCaption}\item[{}]{\$stream\+\_\+id,  }\item[{}]{\$msg\+\_\+no,  }\item[{}]{\$from\+\_\+length = {\ttfamily 0},  }\item[{}]{\$subject\+\_\+length = {\ttfamily 0},  }\item[{}]{\$default\+\_\+host = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Alias of {\bfseries{imap\+\_\+headerinfo}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$stream\+\_\+id An I\+M\+AP stream returned by imap\+\_\+open().  int \$msg\+\_\+no The message number  int \$from\+\_\+length \mbox{[}optional\mbox{]} Number of characters for the fetchfrom property. Must be greater than or equal to zero.  int \$subject\+\_\+length \mbox{[}optional\mbox{]} Number of characters for the fetchsubject property Must be greater than or equal to zero.  \$default\+\_\+host \mbox{[}optional\mbox{]}  object Returns the information in an object with following properties\+: }} 
+
+toaddress full to\+: line, up to 1024 characters 
+
+to an array of objects from the To\+: line, with the following properties\+: personal, adl, mailbox, and host 
+
+fromaddress full from\+: line, up to 1024 characters 
+
+from an array of objects from the From\+: line, with the following properties\+: personal, adl, mailbox, and host 
+
+ccaddress full cc\+: line, up to 1024 characters 
+
+cc an array of objects from the Cc\+: line, with the following properties\+: personal, adl, mailbox, and host 
+
+bccaddress full bcc\+: line, up to 1024 characters 
+
+bcc an array of objects from the Bcc\+: line, with the following properties\+: personal, adl, mailbox, and host 
+
+reply\+\_\+toaddress full Reply-\/\+To\+: line, up to 1024 characters 
+
+reply\+\_\+to an array of objects from the Reply-\/\+To\+: line, with the following properties\+: personal, adl, mailbox, and host 
+
+senderaddress full sender\+: line, up to 1024 characters 
+
+sender an array of objects from the Sender\+: line, with the following properties\+: personal, adl, mailbox, and host 
+
+return\+\_\+pathaddress full Return-\/\+Path\+: line, up to 1024 characters 
+
+return\+\_\+path an array of objects from the Return-\/\+Path\+: line, with the following properties\+: personal, adl, mailbox, and host 
+
+remail -\/ 
+
+date The message date as found in its headers 
+
+Date Same as date 
+
+subject The message subject 
+
+Subject Same a subject 
+
+in\+\_\+reply\+\_\+to -\/ 
+
+message\+\_\+id -\/ 
+
+newsgroups -\/ 
+
+followup\+\_\+to -\/ 
+
+references -\/ 
+
+Recent R if recent and seen, N if recent and not seen, \textquotesingle{} \textquotesingle{} if not recent. 
+
+Unseen U if not seen A\+ND not recent, \textquotesingle{} \textquotesingle{} if seen OR not seen and recent 
+
+Flagged F if flagged, \textquotesingle{} \textquotesingle{} if not flagged 
+
+Answered \mbox{\hyperlink{class_a}{A}} if answered, \textquotesingle{} \textquotesingle{} if unanswered 
+
+Deleted D if deleted, \textquotesingle{} \textquotesingle{} if not deleted 
+
+Draft X if draft, \textquotesingle{} \textquotesingle{} if not draft 
+
+Msgno The message number 
+
+Mail\+Date -\/ 
+
+Size The message size 
+
+udate mail message date in Unix time 
+
+fetchfrom from line formatted to fit fromlength characters 
+
+fetchsubject subject line formatted to fit subjectlength characters 
+
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a8ecc4474e599293038a5fe6123b8f900}\label{imap_8php_a8ecc4474e599293038a5fe6123b8f900}} 
+\index{imap.php@{imap.php}!imap\_headerinfo@{imap\_headerinfo}}
+\index{imap\_headerinfo@{imap\_headerinfo}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_headerinfo()}{imap\_headerinfo()}}
+{\footnotesize\ttfamily imap\+\_\+headerinfo (\begin{DoxyParamCaption}\item[{}]{\$stream\+\_\+id,  }\item[{}]{\$msg\+\_\+no,  }\item[{}]{\$from\+\_\+length = {\ttfamily 0},  }\item[{}]{\$subject\+\_\+length = {\ttfamily 0},  }\item[{}]{\$default\+\_\+host = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Read the header of the message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$stream\+\_\+id An I\+M\+AP stream returned by imap\+\_\+open().  int \$msg\+\_\+no The message number  int \$from\+\_\+length \mbox{[}optional\mbox{]} Number of characters for the fetchfrom property. Must be greater than or equal to zero.  int \$subject\+\_\+length \mbox{[}optional\mbox{]} Number of characters for the fetchsubject property Must be greater than or equal to zero.  \$default\+\_\+host \mbox{[}optional\mbox{]}  object Returns the information in an object with following properties\+: }} 
+
+toaddress full to\+: line, up to 1024 characters 
+
+to an array of objects from the To\+: line, with the following properties\+: personal, adl, mailbox, and host 
+
+fromaddress full from\+: line, up to 1024 characters 
+
+from an array of objects from the From\+: line, with the following properties\+: personal, adl, mailbox, and host 
+
+ccaddress full cc\+: line, up to 1024 characters 
+
+cc an array of objects from the Cc\+: line, with the following properties\+: personal, adl, mailbox, and host 
+
+bccaddress full bcc\+: line, up to 1024 characters 
+
+bcc an array of objects from the Bcc\+: line, with the following properties\+: personal, adl, mailbox, and host 
+
+reply\+\_\+toaddress full Reply-\/\+To\+: line, up to 1024 characters 
+
+reply\+\_\+to an array of objects from the Reply-\/\+To\+: line, with the following properties\+: personal, adl, mailbox, and host 
+
+senderaddress full sender\+: line, up to 1024 characters 
+
+sender an array of objects from the Sender\+: line, with the following properties\+: personal, adl, mailbox, and host 
+
+return\+\_\+pathaddress full Return-\/\+Path\+: line, up to 1024 characters 
+
+return\+\_\+path an array of objects from the Return-\/\+Path\+: line, with the following properties\+: personal, adl, mailbox, and host 
+
+remail -\/ 
+
+date The message date as found in its headers 
+
+Date Same as date 
+
+subject The message subject 
+
+Subject Same a subject 
+
+in\+\_\+reply\+\_\+to -\/ 
+
+message\+\_\+id -\/ 
+
+newsgroups -\/ 
+
+followup\+\_\+to -\/ 
+
+references -\/ 
+
+Recent R if recent and seen, N if recent and not seen, \textquotesingle{} \textquotesingle{} if not recent. 
+
+Unseen U if not seen A\+ND not recent, \textquotesingle{} \textquotesingle{} if seen OR not seen and recent 
+
+Flagged F if flagged, \textquotesingle{} \textquotesingle{} if not flagged 
+
+Answered \mbox{\hyperlink{class_a}{A}} if answered, \textquotesingle{} \textquotesingle{} if unanswered 
+
+Deleted D if deleted, \textquotesingle{} \textquotesingle{} if not deleted 
+
+Draft X if draft, \textquotesingle{} \textquotesingle{} if not draft 
+
+Msgno The message number 
+
+Mail\+Date -\/ 
+
+Size The message size 
+
+udate mail message date in Unix time 
+
+fetchfrom from line formatted to fit fromlength characters 
+
+fetchsubject subject line formatted to fit subjectlength characters 
+
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a2df8df72e8abf84e452f6ce058f54f95}\label{imap_8php_a2df8df72e8abf84e452f6ce058f54f95}} 
+\index{imap.php@{imap.php}!imap\_headers@{imap\_headers}}
+\index{imap\_headers@{imap\_headers}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_headers()}{imap\_headers()}}
+{\footnotesize\ttfamily imap\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream }\end{DoxyParamCaption})}
+
+Returns headers for all messages in a mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  array an array of string formatted with header info. One element per mail message.  4.\+0  5.\+0 }}\mbox{\Hypertarget{imap_8php_af05cc3c8a83a9336437fd46119e924cf}\label{imap_8php_af05cc3c8a83a9336437fd46119e924cf}} 
+\index{imap.php@{imap.php}!imap\_last\_error@{imap\_last\_error}}
+\index{imap\_last\_error@{imap\_last\_error}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_last\_error()}{imap\_last\_error()}}
+{\footnotesize\ttfamily imap\+\_\+last\+\_\+error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the last I\+M\+AP error that occurred during this page request \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string$\vert$false the full text of the last I\+M\+AP error message that occurred on the current page. Returns {\bfseries{F\+A\+L\+SE}} if no error messages are available.  4.\+0  5.\+0 }}\mbox{\Hypertarget{imap_8php_a638126a0316e5e2825444019c8aac153}\label{imap_8php_a638126a0316e5e2825444019c8aac153}} 
+\index{imap.php@{imap.php}!imap\_list@{imap\_list}}
+\index{imap\_list@{imap\_list}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_list()}{imap\_list()}}
+{\footnotesize\ttfamily imap\+\_\+list (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$ref,  }\item[{}]{\$pattern }\end{DoxyParamCaption})}
+
+Read the list of mailboxes \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$ref }} {\itshape ref} should normally be just the server specification as described in {\bfseries{imap\+\_\+open}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & Specifies where in the mailbox hierarchy to start searching.\\
+\hline
+\end{DoxyParams}
+There are two special characters you can pass as part of the {\itshape pattern}\+: \&\#x00027;{\itshape \&\#x00027; and \&\#x00027;\&\#37;\&\#x00027;. \&\#x00027;}\&\#x00027; means to return all mailboxes. If you pass {\itshape pattern} as \&\#x00027;$\ast$\&\#x00027;, you will get a list of the entire mailbox hierarchy. \&\#x00027;\&\#37;\&\#x00027; means to return the current level only. \&\#x00027;\&\#37;\&\#x00027; as the {\itshape pattern} parameter will return only the top level mailboxes; \&\#x00027;$\sim$/mail/\&\#37;\&\#x00027; on U\+W\+\_\+\+I\+M\+A\+PD will return every mailbox in the $\sim$/mail directory, but none in subfolders of that directory.
+
+\begin{DoxyReturn}{Returns}
+array an array containing the names of the mailboxes. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_aecd910330ba8630f169c712f37bd6400}\label{imap_8php_aecd910330ba8630f169c712f37bd6400}} 
+\index{imap.php@{imap.php}!imap\_listmailbox@{imap\_listmailbox}}
+\index{imap\_listmailbox@{imap\_listmailbox}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_listmailbox()}{imap\_listmailbox()}}
+{\footnotesize\ttfamily imap\+\_\+listmailbox (\begin{DoxyParamCaption}\item[{}]{\$stream\+\_\+id,  }\item[{}]{\$ref,  }\item[{}]{\$pattern }\end{DoxyParamCaption})}
+
+Alias of {\bfseries{imap\+\_\+list}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$stream\+\_\+id  \$ref  \$pattern  4.\+0  5.\+0 }}\mbox{\Hypertarget{imap_8php_a09f09266b1f53e295ce5291b2987eafe}\label{imap_8php_a09f09266b1f53e295ce5291b2987eafe}} 
+\index{imap.php@{imap.php}!imap\_listscan@{imap\_listscan}}
+\index{imap\_listscan@{imap\_listscan}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_listscan()}{imap\_listscan()}}
+{\footnotesize\ttfamily imap\+\_\+listscan (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$ref,  }\item[{}]{\$pattern,  }\item[{}]{\$content }\end{DoxyParamCaption})}
+
+Returns the list of mailboxes that matches the given text \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$ref }} {\itshape ref} should normally be just the server specification as described in {\bfseries{imap\+\_\+open}} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & Specifies where in the mailbox hierarchy to start searching.\\
+\hline
+\end{DoxyParams}
+There are two special characters you can pass as part of the {\itshape pattern}\+: \&\#x00027;{\itshape \&\#x00027; and \&\#x00027;\&\#37;\&\#x00027;. \&\#x00027;}\&\#x00027; means to return all mailboxes. If you pass {\itshape pattern} as \&\#x00027;$\ast$\&\#x00027;, you will get a list of the entire mailbox hierarchy. \&\#x00027;\&\#37;\&\#x00027; means to return the current level only. \&\#x00027;\&\#37;\&\#x00027; as the {\itshape pattern} parameter will return only the top level mailboxes; \&\#x00027;$\sim$/mail/\&\#37;\&\#x00027; on U\+W\+\_\+\+I\+M\+A\+PD will return every mailbox in the $\sim$/mail directory, but none in subfolders of that directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \\
+\hline
+\end{DoxyParams}
+The searched string 
+
+\begin{DoxyReturn}{Returns}
+array an array containing the names of the mailboxes that have {\itshape content} in the text of the mailbox. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_ac2c70967a56e93cf442668cfcf24752d}\label{imap_8php_ac2c70967a56e93cf442668cfcf24752d}} 
+\index{imap.php@{imap.php}!imap\_listsubscribed@{imap\_listsubscribed}}
+\index{imap\_listsubscribed@{imap\_listsubscribed}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_listsubscribed()}{imap\_listsubscribed()}}
+{\footnotesize\ttfamily imap\+\_\+listsubscribed (\begin{DoxyParamCaption}\item[{}]{\$stream\+\_\+id,  }\item[{}]{\$ref,  }\item[{}]{\$pattern }\end{DoxyParamCaption})}
+
+Alias of {\bfseries{imap\+\_\+lsub}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$stream\+\_\+id  \$ref  \$pattern  4.\+0  5.\+0 }}\mbox{\Hypertarget{imap_8php_abfac56a43a014e3e35899cde2df1ea42}\label{imap_8php_abfac56a43a014e3e35899cde2df1ea42}} 
+\index{imap.php@{imap.php}!imap\_lsub@{imap\_lsub}}
+\index{imap\_lsub@{imap\_lsub}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_lsub()}{imap\_lsub()}}
+{\footnotesize\ttfamily imap\+\_\+lsub (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$ref,  }\item[{}]{\$pattern }\end{DoxyParamCaption})}
+
+List all the subscribed mailboxes \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$ref }} {\itshape ref} should normally be just the server specification as described in {\bfseries{imap\+\_\+open}} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & Specifies where in the mailbox hierarchy to start searching.\\
+\hline
+\end{DoxyParams}
+There are two special characters you can pass as part of the {\itshape pattern}\+: \&\#x00027;{\itshape \&\#x00027; and \&\#x00027;\&\#37;\&\#x00027;. \&\#x00027;}\&\#x00027; means to return all mailboxes. If you pass {\itshape pattern} as \&\#x00027;$\ast$\&\#x00027;, you will get a list of the entire mailbox hierarchy. \&\#x00027;\&\#37;\&\#x00027; means to return the current level only. \&\#x00027;\&\#37;\&\#x00027; as the {\itshape pattern} parameter will return only the top level mailboxes; \&\#x00027;$\sim$/mail/\&\#37;\&\#x00027; on U\+W\+\_\+\+I\+M\+A\+PD will return every mailbox in the $\sim$/mail directory, but none in subfolders of that directory.
+
+\begin{DoxyReturn}{Returns}
+array an array of all the subscribed mailboxes. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_af3ab856d4c7677670d9fcb35cf5dea62}\label{imap_8php_af3ab856d4c7677670d9fcb35cf5dea62}} 
+\index{imap.php@{imap.php}!imap\_mail@{imap\_mail}}
+\index{imap\_mail@{imap\_mail}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_mail()}{imap\_mail()}}
+{\footnotesize\ttfamily imap\+\_\+mail (\begin{DoxyParamCaption}\item[{}]{\$to,  }\item[{}]{\$subject,  }\item[{}]{\$message,  }\item[{}]{\$additional\+\_\+headers = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$cc = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$bcc = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$rpath = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Send an email message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$to }} The receiver 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$subject} & \\
+\hline
+\end{DoxyParams}
+The mail subject 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+The mail body, see {\bfseries{imap\+\_\+mail\+\_\+compose}} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$additional\+\_\+headers} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+As string with additional headers to be set on the mail 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cc} & \mbox{[}optional\mbox{]} \\
+\hline
+string & {\em \$bcc} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The receivers specified in {\itshape bcc} will get the mail, but are excluded from the headers. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$rpath} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Use this parameter to specify return path upon mail delivery failure. This is useful when using P\+HP as a mail client for multiple users. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a37d8e244f5b26935df57d19e506c4b7a}\label{imap_8php_a37d8e244f5b26935df57d19e506c4b7a}} 
+\index{imap.php@{imap.php}!imap\_mail\_compose@{imap\_mail\_compose}}
+\index{imap\_mail\_compose@{imap\_mail\_compose}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_mail\_compose()}{imap\_mail\_compose()}}
+{\footnotesize\ttfamily imap\+\_\+mail\+\_\+compose (\begin{DoxyParamCaption}\item[{array}]{\$envelope,  }\item[{array}]{\$body }\end{DoxyParamCaption})}
+
+Create a M\+I\+ME message based on given envelope and body sections \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{array \$envelope }} An associative array of headers fields. Valid keys are\+: \char`\"{}remail\char`\"{}, \char`\"{}return\+\_\+path\char`\"{}, \char`\"{}date\char`\"{}, \char`\"{}from\char`\"{}, \char`\"{}reply\+\_\+to\char`\"{}, \char`\"{}in\+\_\+reply\+\_\+to\char`\"{}, \char`\"{}subject\char`\"{}, \char`\"{}to\char`\"{}, \char`\"{}cc\char`\"{}, \char`\"{}bcc\char`\"{}, \char`\"{}message\+\_\+id\char`\"{} and \char`\"{}custom\+\_\+headers\char`\"{} (which contains associative array of other headers). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$body} & \\
+\hline
+\end{DoxyParams}
+An indexed array of bodies 
+
+\mbox{\hyperlink{class_a}{A}} body is an associative array which can consist of the following keys\+: \char`\"{}type\char`\"{}, \char`\"{}encoding\char`\"{}, \char`\"{}charset\char`\"{}, \char`\"{}type.\+parameters\char`\"{}, \char`\"{}subtype\char`\"{}, \char`\"{}id\char`\"{}, \char`\"{}description\char`\"{}, \char`\"{}disposition.\+type\char`\"{}, \char`\"{}disposition\char`\"{}, \char`\"{}contents.\+data\char`\"{}, \char`\"{}lines\char`\"{}, \char`\"{}bytes\char`\"{} and \char`\"{}md5\char`\"{}. 
+
+\begin{DoxyReturn}{Returns}
+string the M\+I\+ME message. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a64183b77018621a0e22f350bebe2d9f3}\label{imap_8php_a64183b77018621a0e22f350bebe2d9f3}} 
+\index{imap.php@{imap.php}!imap\_mail\_copy@{imap\_mail\_copy}}
+\index{imap\_mail\_copy@{imap\_mail\_copy}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_mail\_copy()}{imap\_mail\_copy()}}
+{\footnotesize\ttfamily imap\+\_\+mail\+\_\+copy (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$msglist,  }\item[{}]{\$mailbox,  }\item[{}]{\$options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Copy specified messages to a mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$msglist }} {\itshape msglist} is a range not just message numbers (as described in R\+F\+C2060). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mailbox} & \\
+\hline
+\end{DoxyParams}
+The mailbox name, see {\bfseries{imap\+\_\+open}} for more information 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+{\itshape options} is a bitmask of one or more of {\bfseries{C\+P\+\_\+\+U\+ID}} -\/ the sequence numbers contain U\+I\+DS \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_af8233bf0f2406ab31342bee9a0665c3a}\label{imap_8php_af8233bf0f2406ab31342bee9a0665c3a}} 
+\index{imap.php@{imap.php}!imap\_mail\_move@{imap\_mail\_move}}
+\index{imap\_mail\_move@{imap\_mail\_move}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_mail\_move()}{imap\_mail\_move()}}
+{\footnotesize\ttfamily imap\+\_\+mail\+\_\+move (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$msglist,  }\item[{}]{\$mailbox,  }\item[{}]{\$options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Move specified messages to a mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$msglist }} {\itshape msglist} is a range not just message numbers (as described in R\+F\+C2060). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mailbox} & \\
+\hline
+\end{DoxyParams}
+The mailbox name, see {\bfseries{imap\+\_\+open}} for more information 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+{\itshape options} is a bitmask and may contain the single option\+: {\bfseries{C\+P\+\_\+\+U\+ID}} -\/ the sequence numbers contain U\+I\+DS \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a7a7c76e23c46d1b0ae2880395d1b7b5c}\label{imap_8php_a7a7c76e23c46d1b0ae2880395d1b7b5c}} 
+\index{imap.php@{imap.php}!imap\_mailboxmsginfo@{imap\_mailboxmsginfo}}
+\index{imap\_mailboxmsginfo@{imap\_mailboxmsginfo}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_mailboxmsginfo()}{imap\_mailboxmsginfo()}}
+{\footnotesize\ttfamily imap\+\_\+mailboxmsginfo (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream }\end{DoxyParamCaption})}
+
+Get information about the current mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  object$\vert$false the information in an object with following properties\+: }} Mailbox properties 
+
+Date 
+
+date of last change (current datetime)  
+
+Driver 
+
+driver  
+
+Mailbox 
+
+name of the mailbox  
+
+Nmsgs 
+
+number of messages  
+
+Recent 
+
+number of recent messages  
+
+Unread 
+
+number of unread messages  
+
+Deleted 
+
+number of deleted messages  
+
+Size 
+
+mailbox size  
+
+Returns {\bfseries{F\+A\+L\+SE}} on failure. \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a2299ba4518c1d26e43a1c95b40d1b836}\label{imap_8php_a2299ba4518c1d26e43a1c95b40d1b836}} 
+\index{imap.php@{imap.php}!imap\_mime\_header\_decode@{imap\_mime\_header\_decode}}
+\index{imap\_mime\_header\_decode@{imap\_mime\_header\_decode}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_mime\_header\_decode()}{imap\_mime\_header\_decode()}}
+{\footnotesize\ttfamily imap\+\_\+mime\+\_\+header\+\_\+decode (\begin{DoxyParamCaption}\item[{}]{\$text }\end{DoxyParamCaption})}
+
+Decode M\+I\+ME header elements \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$text }} The M\+I\+ME text 
+
+\begin{DoxyReturn}{Returns}
+array The decoded elements are returned in an array of objects, where each object has two properties, charset and text. 
+\end{DoxyReturn}
+
+
+If the element hasn\textquotesingle{}t been encoded, and in other words is in plain U\+S-\/\+A\+S\+C\+II, the charset property of that element is set to default. \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_ad0dae7572c4c2e8c34051dad7d81a80f}\label{imap_8php_ad0dae7572c4c2e8c34051dad7d81a80f}} 
+\index{imap.php@{imap.php}!imap\_msgno@{imap\_msgno}}
+\index{imap\_msgno@{imap\_msgno}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_msgno()}{imap\_msgno()}}
+{\footnotesize\ttfamily imap\+\_\+msgno (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$uid }\end{DoxyParamCaption})}
+
+Gets the message sequence number for the given U\+ID \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int \$uid }} The message U\+ID 
+
+\begin{DoxyReturn}{Returns}
+int the message sequence number for the given {\itshape uid}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a4960aaf0bcc7a880d77962ccf40364df}\label{imap_8php_a4960aaf0bcc7a880d77962ccf40364df}} 
+\index{imap.php@{imap.php}!imap\_myrights@{imap\_myrights}}
+\index{imap\_myrights@{imap\_myrights}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_myrights()}{imap\_myrights()}}
+{\footnotesize\ttfamily imap\+\_\+myrights (\begin{DoxyParamCaption}\item[{}]{\$stream\+\_\+id,  }\item[{}]{\$mailbox }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$stream\+\_\+id} & \\
+\hline
+{\em \$mailbox} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{imap_8php_a2921be812cb692ec83d19b1751755557}\label{imap_8php_a2921be812cb692ec83d19b1751755557}} 
+\index{imap.php@{imap.php}!imap\_num\_msg@{imap\_num\_msg}}
+\index{imap\_num\_msg@{imap\_num\_msg}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_num\_msg()}{imap\_num\_msg()}}
+{\footnotesize\ttfamily imap\+\_\+num\+\_\+msg (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream }\end{DoxyParamCaption})}
+
+Gets the number of messages in the current mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int Return the number of messages in the current mailbox, as an integer.  4.\+0  5.\+0 }}\mbox{\Hypertarget{imap_8php_a4c52bfe6976371720124f994be3db0c9}\label{imap_8php_a4c52bfe6976371720124f994be3db0c9}} 
+\index{imap.php@{imap.php}!imap\_num\_recent@{imap\_num\_recent}}
+\index{imap\_num\_recent@{imap\_num\_recent}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_num\_recent()}{imap\_num\_recent()}}
+{\footnotesize\ttfamily imap\+\_\+num\+\_\+recent (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream }\end{DoxyParamCaption})}
+
+Gets the number of recent messages in current mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int the number of recent messages in the current mailbox, as an integer.  4.\+0  5.\+0 }}\mbox{\Hypertarget{imap_8php_a7424e639697d4fb192363d37d1d60038}\label{imap_8php_a7424e639697d4fb192363d37d1d60038}} 
+\index{imap.php@{imap.php}!imap\_open@{imap\_open}}
+\index{imap\_open@{imap\_open}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_open()}{imap\_open()}}
+{\footnotesize\ttfamily imap\+\_\+open (\begin{DoxyParamCaption}\item[{}]{\$mailbox,  }\item[{}]{\$username,  }\item[{}]{\$password,  }\item[{}]{\$options = {\ttfamily 0},  }\item[{}]{\$n\+\_\+retries = {\ttfamily 0},  }\item[{array}]{\$params = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}} }\end{DoxyParamCaption})}
+
+Open an I\+M\+AP stream to a mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$mailbox }} \mbox{\hyperlink{class_a}{A}} mailbox name consists of a server and a mailbox path on this server. The special name I\+N\+B\+OX stands for the current users personal mailbox. Mailbox names that contain international characters besides those in the printable A\+S\+C\+II space have to be encoded width {\bfseries{imap\+\_\+utf7\+\_\+encode}}. 
+
+The server part, which is enclosed in \textquotesingle{}\{\textquotesingle{} and \textquotesingle{}\}\textquotesingle{}, consists of the servers name or ip address, an optional port (prefixed by \textquotesingle{}\+:\textquotesingle{}), and an optional protocol specification (prefixed by \textquotesingle{}/\textquotesingle{}). 
+
+The server part is mandatory in all mailbox parameters. 
+
+All names which start with \{ are remote names, and are in the form \char`\"{}\{\char`\"{} remote\+\_\+system\+\_\+name \mbox{[}\char`\"{}\+:\char`\"{} port\mbox{]} \mbox{[}flags\mbox{]} \char`\"{}\}\char`\"{} \mbox{[}mailbox\+\_\+name\mbox{]} where\+: remote\+\_\+system\+\_\+name -\/ Internet domain name or bracketed IP address of server. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+\end{DoxyParams}
+The user name 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+The password associated with the {\itshape username} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The {\itshape options} are a bit mask with one or more of the following\+: {\bfseries{O\+P\+\_\+\+R\+E\+A\+D\+O\+N\+LY}} -\/ Open mailbox read-\/only 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$n\+\_\+retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Number of maximum connect attempts 
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Connection parameters, the following (string) keys maybe used to set one or more connection parameters\+: D\+I\+S\+A\+B\+L\+E\+\_\+\+A\+U\+T\+H\+E\+N\+T\+I\+C\+A\+T\+OR -\/ Disable authentication properties \begin{DoxyReturn}{Returns}
+resource$\vert$false an I\+M\+AP stream on success or {\bfseries{F\+A\+L\+SE}} on error. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a100a5088419dcec429ffc85be2bcd924}\label{imap_8php_a100a5088419dcec429ffc85be2bcd924}} 
+\index{imap.php@{imap.php}!imap\_ping@{imap\_ping}}
+\index{imap\_ping@{imap\_ping}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_ping()}{imap\_ping()}}
+{\footnotesize\ttfamily imap\+\_\+ping (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream }\end{DoxyParamCaption})}
+
+Check if the I\+M\+AP stream is still active \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  bool {\bfseries{T\+R\+UE}} if the stream is still alive, {\bfseries{F\+A\+L\+SE}} otherwise.  4.\+0  5.\+0 }}\mbox{\Hypertarget{imap_8php_a9297088adcad9dd54024cb9993bdff7d}\label{imap_8php_a9297088adcad9dd54024cb9993bdff7d}} 
+\index{imap.php@{imap.php}!imap\_qprint@{imap\_qprint}}
+\index{imap\_qprint@{imap\_qprint}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_qprint()}{imap\_qprint()}}
+{\footnotesize\ttfamily imap\+\_\+qprint (\begin{DoxyParamCaption}\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Convert a quoted-\/printable string to an 8 bit string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$string }} \mbox{\hyperlink{class_a}{A}} quoted-\/printable string 
+
+\begin{DoxyReturn}{Returns}
+string an 8 bits string. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a038c2cff79c2d12d93738ae14dcdd75d}\label{imap_8php_a038c2cff79c2d12d93738ae14dcdd75d}} 
+\index{imap.php@{imap.php}!imap\_rename@{imap\_rename}}
+\index{imap\_rename@{imap\_rename}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_rename()}{imap\_rename()}}
+{\footnotesize\ttfamily imap\+\_\+rename (\begin{DoxyParamCaption}\item[{}]{\$stream\+\_\+id,  }\item[{}]{\$old\+\_\+name,  }\item[{}]{\$new\+\_\+name }\end{DoxyParamCaption})}
+
+Alias of {\bfseries{imap\+\_\+renamemailbox}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$stream\+\_\+id  \$old\+\_\+name  \$new\+\_\+name  4.\+0  5.\+0 }}\mbox{\Hypertarget{imap_8php_a25bb7a75227b858430b5424d9c168e92}\label{imap_8php_a25bb7a75227b858430b5424d9c168e92}} 
+\index{imap.php@{imap.php}!imap\_renamemailbox@{imap\_renamemailbox}}
+\index{imap\_renamemailbox@{imap\_renamemailbox}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_renamemailbox()}{imap\_renamemailbox()}}
+{\footnotesize\ttfamily imap\+\_\+renamemailbox (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$old\+\_\+mbox,  }\item[{}]{\$new\+\_\+mbox }\end{DoxyParamCaption})}
+
+Rename an old mailbox to new mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$old\+\_\+mbox }} The old mailbox name, see {\bfseries{imap\+\_\+open}} for more information 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$new\+\_\+mbox} & \\
+\hline
+\end{DoxyParams}
+The new mailbox name, see {\bfseries{imap\+\_\+open}} for more information 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_aeab5eff38e67009f5aac2cbc8a11d027}\label{imap_8php_aeab5eff38e67009f5aac2cbc8a11d027}} 
+\index{imap.php@{imap.php}!imap\_reopen@{imap\_reopen}}
+\index{imap\_reopen@{imap\_reopen}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_reopen()}{imap\_reopen()}}
+{\footnotesize\ttfamily imap\+\_\+reopen (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$mailbox,  }\item[{}]{\$options = {\ttfamily 0},  }\item[{}]{\$n\+\_\+retries = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Reopen I\+M\+AP stream to new mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$mailbox }} The mailbox name, see {\bfseries{imap\+\_\+open}} for more information 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The {\itshape options} are a bit mask with one or more of the following\+: {\bfseries{O\+P\+\_\+\+R\+E\+A\+D\+O\+N\+LY}} -\/ Open mailbox read-\/only 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$n\+\_\+retries} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Number of maximum connect attempts 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} if the stream is reopened, {\bfseries{F\+A\+L\+SE}} otherwise. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a95e6a22f65f241880c14c3036b501ccb}\label{imap_8php_a95e6a22f65f241880c14c3036b501ccb}} 
+\index{imap.php@{imap.php}!imap\_rfc822\_parse\_adrlist@{imap\_rfc822\_parse\_adrlist}}
+\index{imap\_rfc822\_parse\_adrlist@{imap\_rfc822\_parse\_adrlist}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_rfc822\_parse\_adrlist()}{imap\_rfc822\_parse\_adrlist()}}
+{\footnotesize\ttfamily imap\+\_\+rfc822\+\_\+parse\+\_\+adrlist (\begin{DoxyParamCaption}\item[{}]{\$address,  }\item[{}]{\$default\+\_\+host }\end{DoxyParamCaption})}
+
+Parses an address string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$address }} \mbox{\hyperlink{class_a}{A}} string containing addresses 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$default\+\_\+host} & \\
+\hline
+\end{DoxyParams}
+The default host name 
+
+\begin{DoxyReturn}{Returns}
+array an array of objects. The objects properties are\+: 
+\end{DoxyReturn}
+
+
+mailbox -\/ the mailbox name (username) host -\/ the host name personal -\/ the personal name adl -\/ at domain source route \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_ad674682bc0e3c74894935ba1748eaf06}\label{imap_8php_ad674682bc0e3c74894935ba1748eaf06}} 
+\index{imap.php@{imap.php}!imap\_rfc822\_parse\_headers@{imap\_rfc822\_parse\_headers}}
+\index{imap\_rfc822\_parse\_headers@{imap\_rfc822\_parse\_headers}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_rfc822\_parse\_headers()}{imap\_rfc822\_parse\_headers()}}
+{\footnotesize\ttfamily imap\+\_\+rfc822\+\_\+parse\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{\$headers,  }\item[{}]{\$defaulthost = {\ttfamily \char`\"{}UNKNOWN\char`\"{}} }\end{DoxyParamCaption})}
+
+Parse mail headers from a string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$headers }} The parsed headers data 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$defaulthost} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The default host name 
+
+\begin{DoxyReturn}{Returns}
+object an object similar to the one returned by {\bfseries{imap\+\_\+header}}, except for the flags and other properties that come from the I\+M\+AP server. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a6a772fb05f5bbb34df4997734c6a69d9}\label{imap_8php_a6a772fb05f5bbb34df4997734c6a69d9}} 
+\index{imap.php@{imap.php}!imap\_rfc822\_write\_address@{imap\_rfc822\_write\_address}}
+\index{imap\_rfc822\_write\_address@{imap\_rfc822\_write\_address}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_rfc822\_write\_address()}{imap\_rfc822\_write\_address()}}
+{\footnotesize\ttfamily imap\+\_\+rfc822\+\_\+write\+\_\+address (\begin{DoxyParamCaption}\item[{}]{\$mailbox,  }\item[{}]{\$host,  }\item[{}]{\$personal }\end{DoxyParamCaption})}
+
+Returns a properly formatted email address given the mailbox, host, and personal info \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$mailbox }} The mailbox name, see {\bfseries{imap\+\_\+open}} for more information 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$host} & \\
+\hline
+\end{DoxyParams}
+The email host part 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$personal} & \\
+\hline
+\end{DoxyParams}
+The name of the account owner 
+
+\begin{DoxyReturn}{Returns}
+string a string properly formatted email address as defined in R\+F\+C2822. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_aaa5e18e053a6896f458c8a4b412eae8e}\label{imap_8php_aaa5e18e053a6896f458c8a4b412eae8e}} 
+\index{imap.php@{imap.php}!imap\_savebody@{imap\_savebody}}
+\index{imap\_savebody@{imap\_savebody}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_savebody()}{imap\_savebody()}}
+{\footnotesize\ttfamily imap\+\_\+savebody (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$file,  }\item[{}]{\$msg\+\_\+number,  }\item[{}]{\$part\+\_\+number = {\ttfamily \char`\"{}\char`\"{}},  }\item[{}]{\$options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Save a specific body section to a file \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  mixed \$file }} The path to the saved file as a string, or a valid file descriptor returned by {\bfseries{fopen}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$msg\+\_\+number} & \\
+\hline
+\end{DoxyParams}
+The message number 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$part\+\_\+number} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The part number. It is a string of integers delimited by period which index into a body part list as per the I\+M\+A\+P4 specification 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} bitmask with one or more of the following\+: {\bfseries{F\+T\+\_\+\+U\+ID}} -\/ The {\itshape msg\+\_\+number} is a U\+ID \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+5.\+1.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_ad1f567af3a54d1b3100e04df3faee3ca}\label{imap_8php_ad1f567af3a54d1b3100e04df3faee3ca}} 
+\index{imap.php@{imap.php}!imap\_scan@{imap\_scan}}
+\index{imap\_scan@{imap\_scan}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_scan()}{imap\_scan()}}
+{\footnotesize\ttfamily imap\+\_\+scan (\begin{DoxyParamCaption}\item[{}]{\$stream\+\_\+id,  }\item[{}]{\$ref,  }\item[{}]{\$pattern,  }\item[{}]{\$content }\end{DoxyParamCaption})}
+
+Alias of {\bfseries{imap\+\_\+listscan}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$stream\+\_\+id  \$ref  \$pattern  \$content  4.\+0  5.\+0 }}\mbox{\Hypertarget{imap_8php_a23c3fc2a093ff05b749fca4fff9c9a71}\label{imap_8php_a23c3fc2a093ff05b749fca4fff9c9a71}} 
+\index{imap.php@{imap.php}!imap\_scanmailbox@{imap\_scanmailbox}}
+\index{imap\_scanmailbox@{imap\_scanmailbox}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_scanmailbox()}{imap\_scanmailbox()}}
+{\footnotesize\ttfamily imap\+\_\+scanmailbox (\begin{DoxyParamCaption}\item[{}]{\$stream\+\_\+id,  }\item[{}]{\$ref,  }\item[{}]{\$pattern,  }\item[{}]{\$content }\end{DoxyParamCaption})}
+
+Alias of {\bfseries{imap\+\_\+listscan}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{\$stream\+\_\+id  \$ref  \$pattern  \$content  4.\+0  5.\+0 }}\mbox{\Hypertarget{imap_8php_a9545fbf9e734fe49050945bd5c660667}\label{imap_8php_a9545fbf9e734fe49050945bd5c660667}} 
+\index{imap.php@{imap.php}!imap\_search@{imap\_search}}
+\index{imap\_search@{imap\_search}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_search()}{imap\_search()}}
+{\footnotesize\ttfamily imap\+\_\+search (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$criteria,  }\item[{}]{\$options = {\ttfamily \mbox{\hyperlink{imap_8php_a4757c834b969ed2257fd834846979023}{S\+E\+\_\+\+F\+R\+EE}}},  }\item[{}]{\$charset = {\ttfamily \mbox{\hyperlink{imap_8php_af7e6a0bd87326b75d22a0c4003a896c6}{N\+IL}}} }\end{DoxyParamCaption})}
+
+This function returns an array of messages matching the given search criteria \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$criteria }} \mbox{\hyperlink{class_a}{A}} string, delimited by spaces, in which the following keywords are allowed. Any multi-\/word arguments (e.\+g. F\+R\+OM \char`\"{}joey smith\char`\"{}) must be quoted. Results will match all {\itshape criteria} entries. A\+LL -\/ return all messages matching the rest of the criteria 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+Valid values for {\itshape options} are {\bfseries{S\+E\+\_\+\+U\+ID}}, which causes the returned array to contain U\+I\+Ds instead of messages sequence numbers. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$\vert$false an array of message numbers or U\+I\+Ds. 
+\end{DoxyReturn}
+
+
+Return {\bfseries{F\+A\+L\+SE}} if it does not understand the search {\itshape criteria} or no messages have been found. \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a82d86ac20c22503c1b9533377798c14d}\label{imap_8php_a82d86ac20c22503c1b9533377798c14d}} 
+\index{imap.php@{imap.php}!imap\_set\_quota@{imap\_set\_quota}}
+\index{imap\_set\_quota@{imap\_set\_quota}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_set\_quota()}{imap\_set\_quota()}}
+{\footnotesize\ttfamily imap\+\_\+set\+\_\+quota (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$quota\+\_\+root,  }\item[{}]{\$quota\+\_\+limit }\end{DoxyParamCaption})}
+
+Sets a quota for a given mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$quota\+\_\+root }} The mailbox to have a quota set. This should follow the I\+M\+AP standard format for a mailbox\+: user.\+name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$quota\+\_\+limit} & \\
+\hline
+\end{DoxyParams}
+The maximum size (in KB) for the {\itshape quota\+\_\+root} 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+5 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a474eb8260da8bd7ececb9e03737b0e59}\label{imap_8php_a474eb8260da8bd7ececb9e03737b0e59}} 
+\index{imap.php@{imap.php}!imap\_setacl@{imap\_setacl}}
+\index{imap\_setacl@{imap\_setacl}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_setacl()}{imap\_setacl()}}
+{\footnotesize\ttfamily imap\+\_\+setacl (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$mailbox,  }\item[{}]{\$id,  }\item[{}]{\$rights }\end{DoxyParamCaption})}
+
+Sets the A\+CL for a given mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$mailbox }} The mailbox name, see {\bfseries{imap\+\_\+open}} for more information 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+The user to give the rights to. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$rights} & \\
+\hline
+\end{DoxyParams}
+The rights to give to the user. Passing an empty string will delete acl. 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0.\+7 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a060185a7a77cf0d7bdf527b2680688b9}\label{imap_8php_a060185a7a77cf0d7bdf527b2680688b9}} 
+\index{imap.php@{imap.php}!imap\_setannotation@{imap\_setannotation}}
+\index{imap\_setannotation@{imap\_setannotation}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_setannotation()}{imap\_setannotation()}}
+{\footnotesize\ttfamily imap\+\_\+setannotation (\begin{DoxyParamCaption}\item[{}]{\$stream\+\_\+id,  }\item[{}]{\$mailbox,  }\item[{}]{\$entry,  }\item[{}]{\$attr,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$stream\+\_\+id} & \\
+\hline
+{\em \$mailbox} & \\
+\hline
+{\em \$entry} & \\
+\hline
+{\em \$attr} & \\
+\hline
+{\em \$value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{imap_8php_ade0eedc989c0283e8a0cf58221da6934}\label{imap_8php_ade0eedc989c0283e8a0cf58221da6934}} 
+\index{imap.php@{imap.php}!imap\_setflag\_full@{imap\_setflag\_full}}
+\index{imap\_setflag\_full@{imap\_setflag\_full}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_setflag\_full()}{imap\_setflag\_full()}}
+{\footnotesize\ttfamily imap\+\_\+setflag\+\_\+full (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$sequence,  }\item[{}]{\$flag,  }\item[{}]{\$options = {\ttfamily \mbox{\hyperlink{imap_8php_af7e6a0bd87326b75d22a0c4003a896c6}{N\+IL}}} }\end{DoxyParamCaption})}
+
+Sets flags on messages \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$sequence }} \mbox{\hyperlink{class_a}{A}} sequence of message numbers. You can enumerate desired messages with the X,Y syntax, or retrieve all messages within an interval with the X\+:Y syntax 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$flag} & \\
+\hline
+\end{DoxyParams}
+The flags which you can set are \textbackslash{}\+Seen, \textbackslash{}\+Answered, \textbackslash{}\+Flagged, \textbackslash{}\+Deleted, and \textbackslash{}\+Draft as defined by R\+F\+C2060. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\hyperlink{class_a}{A}} bit mask that may contain the single option\+: {\bfseries{S\+T\+\_\+\+U\+ID}} -\/ The sequence argument contains U\+I\+Ds instead of sequence numbers \begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_adc1a7ff41978b2c36592c0efc23949eb}\label{imap_8php_adc1a7ff41978b2c36592c0efc23949eb}} 
+\index{imap.php@{imap.php}!imap\_sort@{imap\_sort}}
+\index{imap\_sort@{imap\_sort}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_sort()}{imap\_sort()}}
+{\footnotesize\ttfamily imap\+\_\+sort (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$criteria,  }\item[{}]{\$reverse,  }\item[{}]{\$options = {\ttfamily 0},  }\item[{}]{\$search\+\_\+criteria = {\ttfamily \mbox{\hyperlink{_core__d_8php_afa4c647ecaee0da639b8549bb3abf62b}{null}}},  }\item[{}]{\$charset = {\ttfamily \textquotesingle{}\mbox{\hyperlink{imap_8php_af7e6a0bd87326b75d22a0c4003a896c6}{N\+IL}}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Gets and sort messages \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int \$criteria }} Criteria can be one (and only one) of the following\+: {\bfseries{S\+O\+R\+T\+D\+A\+TE}} -\/ message Date 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$reverse} & \\
+\hline
+\end{DoxyParams}
+Set this to 1 for reverse sorting 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The {\itshape options} are a bitmask of one or more of the following\+: {\bfseries{S\+E\+\_\+\+U\+ID}} -\/ Return U\+I\+Ds instead of sequence numbers 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$search\+\_\+criteria} & \mbox{[}optional\mbox{]} \\
+\hline
+string & {\em \$charset} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array an array of message numbers sorted by the given parameters. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a4ba7d217d70f58477063ed1ac9a77d73}\label{imap_8php_a4ba7d217d70f58477063ed1ac9a77d73}} 
+\index{imap.php@{imap.php}!imap\_status@{imap\_status}}
+\index{imap\_status@{imap\_status}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_status()}{imap\_status()}}
+{\footnotesize\ttfamily imap\+\_\+status (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$mailbox,  }\item[{}]{\$options }\end{DoxyParamCaption})}
+
+Returns status information on a mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$mailbox }} The mailbox name, see {\bfseries{imap\+\_\+open}} for more information 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+Valid flags are\+: {\bfseries{S\+A\+\_\+\+M\+E\+S\+S\+A\+G\+ES}} -\/ set \$status-\/$>$messages to the number of messages in the mailbox \begin{DoxyReturn}{Returns}
+object This function returns an object containing status information. The object has the following properties\+: messages, recent, unseen, uidnext, and uidvalidity. 
+\end{DoxyReturn}
+
+
+flags is also set, which contains a bitmask which can be checked against any of the above constants. \begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_ac377546d7e6de421e4f5ee20296ca7dd}\label{imap_8php_ac377546d7e6de421e4f5ee20296ca7dd}} 
+\index{imap.php@{imap.php}!imap\_status\_current@{imap\_status\_current}}
+\index{imap\_status\_current@{imap\_status\_current}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_status\_current()}{imap\_status\_current()}}
+{\footnotesize\ttfamily imap\+\_\+status\+\_\+current (\begin{DoxyParamCaption}\item[{}]{\$stream\+\_\+id,  }\item[{}]{\$options }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$stream\+\_\+id} & \\
+\hline
+{\em \$options} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{imap_8php_a976d43ea0286eb62704b7f50028640cf}\label{imap_8php_a976d43ea0286eb62704b7f50028640cf}} 
+\index{imap.php@{imap.php}!imap\_subscribe@{imap\_subscribe}}
+\index{imap\_subscribe@{imap\_subscribe}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_subscribe()}{imap\_subscribe()}}
+{\footnotesize\ttfamily imap\+\_\+subscribe (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$mailbox }\end{DoxyParamCaption})}
+
+Subscribe to a mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$mailbox }} The mailbox name, see {\bfseries{imap\+\_\+open}} for more information 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_ab303de6c1afb44783aaca2b35e664907}\label{imap_8php_ab303de6c1afb44783aaca2b35e664907}} 
+\index{imap.php@{imap.php}!imap\_thread@{imap\_thread}}
+\index{imap\_thread@{imap\_thread}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_thread()}{imap\_thread()}}
+{\footnotesize\ttfamily imap\+\_\+thread (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$options = {\ttfamily \mbox{\hyperlink{imap_8php_a4757c834b969ed2257fd834846979023}{S\+E\+\_\+\+F\+R\+EE}}} }\end{DoxyParamCaption})}
+
+Returns a tree of threaded message \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int \$options \mbox{[}optional\mbox{]}  array {\bfseries{imap\+\_\+thread}} returns an associative array containing a tree of messages threaded by R\+E\+F\+E\+R\+E\+N\+C\+ES, or {\bfseries{F\+A\+L\+SE}} on error. }} 
+
+Every message in the current mailbox will be represented by three entries in the resulting array\+: 
+
+\$thread\mbox{[}\char`\"{}\+X\+X.\+num\char`\"{}\mbox{]} -\/ current message number 
+
+\$thread\mbox{[}\char`\"{}\+X\+X.\+next\char`\"{}\mbox{]} 
+
+\$thread\mbox{[}\char`\"{}\+X\+X.\+branch\char`\"{}\mbox{]} 
+
+\begin{DoxySince}{Since}
+4.\+0.\+7 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a375b8ae4b22ce6f85becbb29c2fafd2a}\label{imap_8php_a375b8ae4b22ce6f85becbb29c2fafd2a}} 
+\index{imap.php@{imap.php}!imap\_timeout@{imap\_timeout}}
+\index{imap\_timeout@{imap\_timeout}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_timeout()}{imap\_timeout()}}
+{\footnotesize\ttfamily imap\+\_\+timeout (\begin{DoxyParamCaption}\item[{}]{\$timeout\+\_\+type,  }\item[{}]{\$timeout = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Set or fetch imap timeout \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{int \$timeout\+\_\+type }} One of the following\+: {\bfseries{I\+M\+A\+P\+\_\+\+O\+P\+E\+N\+T\+I\+M\+E\+O\+UT}}, {\bfseries{I\+M\+A\+P\+\_\+\+R\+E\+A\+D\+T\+I\+M\+E\+O\+UT}}, {\bfseries{I\+M\+A\+P\+\_\+\+W\+R\+I\+T\+E\+T\+I\+M\+E\+O\+UT}}, or {\bfseries{I\+M\+A\+P\+\_\+\+C\+L\+O\+S\+E\+T\+I\+M\+E\+O\+UT}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+The timeout, in seconds. 
+
+\begin{DoxyReturn}{Returns}
+int$\vert$bool If the {\itshape timeout} parameter is set, this function returns {\bfseries{T\+R\+UE}} on success and {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+
+
+If {\itshape timeout} is not provided or evaluates to -\/1, the current timeout value of {\itshape timeout\+\_\+type} is returned as an integer. \begin{DoxySince}{Since}
+4.\+3.\+3 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_adfb62bec34696317863d94a4fba8a380}\label{imap_8php_adfb62bec34696317863d94a4fba8a380}} 
+\index{imap.php@{imap.php}!imap\_uid@{imap\_uid}}
+\index{imap\_uid@{imap\_uid}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_uid()}{imap\_uid()}}
+{\footnotesize\ttfamily imap\+\_\+uid (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$msg\+\_\+number }\end{DoxyParamCaption})}
+
+This function returns the U\+ID for the given message sequence number \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int \$msg\+\_\+number }} The message number. 
+
+\begin{DoxyReturn}{Returns}
+int The U\+ID of the given message. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a32c821a21b9ce310acbc18de3ec9e037}\label{imap_8php_a32c821a21b9ce310acbc18de3ec9e037}} 
+\index{imap.php@{imap.php}!imap\_undelete@{imap\_undelete}}
+\index{imap\_undelete@{imap\_undelete}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_undelete()}{imap\_undelete()}}
+{\footnotesize\ttfamily imap\+\_\+undelete (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$msg\+\_\+number,  }\item[{}]{\$flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Unmark the message which is marked deleted \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  int \$msg\+\_\+number }} The message number 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$flags} & \mbox{[}optional\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a5f0db13458787cd4a1c04daa56f4c3f3}\label{imap_8php_a5f0db13458787cd4a1c04daa56f4c3f3}} 
+\index{imap.php@{imap.php}!imap\_unsubscribe@{imap\_unsubscribe}}
+\index{imap\_unsubscribe@{imap\_unsubscribe}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_unsubscribe()}{imap\_unsubscribe()}}
+{\footnotesize\ttfamily imap\+\_\+unsubscribe (\begin{DoxyParamCaption}\item[{}]{\$imap\+\_\+stream,  }\item[{}]{\$mailbox }\end{DoxyParamCaption})}
+
+Unsubscribe from a mailbox \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{resource \$imap\+\_\+stream  string \$mailbox }} The mailbox name, see {\bfseries{imap\+\_\+open}} for more information 
+
+\begin{DoxyReturn}{Returns}
+bool {\bfseries{T\+R\+UE}} on success or {\bfseries{F\+A\+L\+SE}} on failure. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_af3574c431c9a69e5312bf43f8d6244a4}\label{imap_8php_af3574c431c9a69e5312bf43f8d6244a4}} 
+\index{imap.php@{imap.php}!imap\_utf7\_decode@{imap\_utf7\_decode}}
+\index{imap\_utf7\_decode@{imap\_utf7\_decode}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_utf7\_decode()}{imap\_utf7\_decode()}}
+{\footnotesize\ttfamily imap\+\_\+utf7\+\_\+decode (\begin{DoxyParamCaption}\item[{}]{\$text }\end{DoxyParamCaption})}
+
+Decodes a modified U\+T\+F-\/7 encoded string \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$text }} \mbox{\hyperlink{class_a}{A}} modified U\+T\+F-\/7 encoding string, as defined in R\+FC 2060, section 5.\+1.\+3 (original U\+T\+F-\/7 was defined in R\+F\+C1642). 
+
+\begin{DoxyReturn}{Returns}
+string a string that is encoded in I\+S\+O-\/8859-\/1 and consists of the same sequence of characters in {\itshape text}, or {\bfseries{F\+A\+L\+SE}} if {\itshape text} contains invalid modified U\+T\+F-\/7 sequence or {\itshape text} contains a character that is not part of I\+S\+O-\/8859-\/1 character set. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a57662c569fb24f51ff649a7eadbb0e08}\label{imap_8php_a57662c569fb24f51ff649a7eadbb0e08}} 
+\index{imap.php@{imap.php}!imap\_utf7\_encode@{imap\_utf7\_encode}}
+\index{imap\_utf7\_encode@{imap\_utf7\_encode}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_utf7\_encode()}{imap\_utf7\_encode()}}
+{\footnotesize\ttfamily imap\+\_\+utf7\+\_\+encode (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})}
+
+Converts I\+S\+O-\/8859-\/1 string to modified U\+T\+F-\/7 text \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$data }} An I\+S\+O-\/8859-\/1 string. 
+
+\begin{DoxyReturn}{Returns}
+string {\itshape data} encoded with the modified U\+T\+F-\/7 encoding as defined in R\+FC 2060, section 5.\+1.\+3 (original U\+T\+F-\/7 was defined in R\+F\+C1642). 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{imap_8php_a9cd2e548ea347a0b9b0c773297ed661b}\label{imap_8php_a9cd2e548ea347a0b9b0c773297ed661b}} 
+\index{imap.php@{imap.php}!imap\_utf8@{imap\_utf8}}
+\index{imap\_utf8@{imap\_utf8}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{imap\_utf8()}{imap\_utf8()}}
+{\footnotesize\ttfamily imap\+\_\+utf8 (\begin{DoxyParamCaption}\item[{}]{\$mime\+\_\+encoded\+\_\+text }\end{DoxyParamCaption})}
+
+Converts M\+I\+M\+E-\/encoded text to U\+T\+F-\/8 \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{string \$mime\+\_\+encoded\+\_\+text }} \mbox{\hyperlink{class_a}{A}} M\+I\+ME encoded string. M\+I\+ME encoding method and the U\+T\+F-\/8 specification are described in R\+F\+C2047 and R\+F\+C2044 respectively. 
+
+\begin{DoxyReturn}{Returns}
+string an U\+T\+F-\/8 encoded string. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+4.\+0 
+
+5.\+0 
+\end{DoxySince}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{imap_8php_a6d36caebb9a863d7689618ddc4ec3b0b}\label{imap_8php_a6d36caebb9a863d7689618ddc4ec3b0b}} 
+\index{imap.php@{imap.php}!CL\_EXPUNGE@{CL\_EXPUNGE}}
+\index{CL\_EXPUNGE@{CL\_EXPUNGE}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{CL\_EXPUNGE}{CL\_EXPUNGE}}
+{\footnotesize\ttfamily const C\+L\+\_\+\+E\+X\+P\+U\+N\+GE 32768}
+
+silently expunge the mailbox before closing when calling {\bfseries{imap\+\_\+close}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a2837603eb4e146488e24677e893eed2f}\label{imap_8php_a2837603eb4e146488e24677e893eed2f}} 
+\index{imap.php@{imap.php}!CP\_MOVE@{CP\_MOVE}}
+\index{CP\_MOVE@{CP\_MOVE}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{CP\_MOVE}{CP\_MOVE}}
+{\footnotesize\ttfamily const C\+P\+\_\+\+M\+O\+VE 2}
+
+Delete the messages from the current mailbox after copying with {\bfseries{imap\+\_\+mail\+\_\+copy}} \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a643dd4974b25d42ec9264bf210b430f0}\label{imap_8php_a643dd4974b25d42ec9264bf210b430f0}} 
+\index{imap.php@{imap.php}!CP\_UID@{CP\_UID}}
+\index{CP\_UID@{CP\_UID}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{CP\_UID}{CP\_UID}}
+{\footnotesize\ttfamily const C\+P\+\_\+\+U\+ID 1}
+
+the sequence numbers contain U\+I\+DS \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a603763fb6f22a6b0a7813cbbb89645aa}\label{imap_8php_a603763fb6f22a6b0a7813cbbb89645aa}} 
+\index{imap.php@{imap.php}!ENC7BIT@{ENC7BIT}}
+\index{ENC7BIT@{ENC7BIT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{ENC7BIT}{ENC7BIT}}
+{\footnotesize\ttfamily const E\+N\+C7\+B\+IT 0}
+
+\mbox{\Hypertarget{imap_8php_a8feaf6b00098474260832b790f76ed09}\label{imap_8php_a8feaf6b00098474260832b790f76ed09}} 
+\index{imap.php@{imap.php}!ENC8BIT@{ENC8BIT}}
+\index{ENC8BIT@{ENC8BIT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{ENC8BIT}{ENC8BIT}}
+{\footnotesize\ttfamily const E\+N\+C8\+B\+IT 1}
+
+\mbox{\Hypertarget{imap_8php_a9a16b0284ea2453ae7d005188c896d13}\label{imap_8php_a9a16b0284ea2453ae7d005188c896d13}} 
+\index{imap.php@{imap.php}!ENCBASE64@{ENCBASE64}}
+\index{ENCBASE64@{ENCBASE64}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{ENCBASE64}{ENCBASE64}}
+{\footnotesize\ttfamily const E\+N\+C\+B\+A\+S\+E64 3}
+
+\mbox{\Hypertarget{imap_8php_ae1f61879ea1a811f356add884375d421}\label{imap_8php_ae1f61879ea1a811f356add884375d421}} 
+\index{imap.php@{imap.php}!ENCBINARY@{ENCBINARY}}
+\index{ENCBINARY@{ENCBINARY}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{ENCBINARY}{ENCBINARY}}
+{\footnotesize\ttfamily const E\+N\+C\+B\+I\+N\+A\+RY 2}
+
+\mbox{\Hypertarget{imap_8php_a8dff16976b09dae7af13b210d623ae91}\label{imap_8php_a8dff16976b09dae7af13b210d623ae91}} 
+\index{imap.php@{imap.php}!ENCOTHER@{ENCOTHER}}
+\index{ENCOTHER@{ENCOTHER}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{ENCOTHER}{ENCOTHER}}
+{\footnotesize\ttfamily const E\+N\+C\+O\+T\+H\+ER 5}
+
+\mbox{\Hypertarget{imap_8php_a92ca7b03f2efd0218f79833d74763716}\label{imap_8php_a92ca7b03f2efd0218f79833d74763716}} 
+\index{imap.php@{imap.php}!ENCQUOTEDPRINTABLE@{ENCQUOTEDPRINTABLE}}
+\index{ENCQUOTEDPRINTABLE@{ENCQUOTEDPRINTABLE}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{ENCQUOTEDPRINTABLE}{ENCQUOTEDPRINTABLE}}
+{\footnotesize\ttfamily const E\+N\+C\+Q\+U\+O\+T\+E\+D\+P\+R\+I\+N\+T\+A\+B\+LE 4}
+
+\mbox{\Hypertarget{imap_8php_acee1a4be04014176ca65f0afd0f50514}\label{imap_8php_acee1a4be04014176ca65f0afd0f50514}} 
+\index{imap.php@{imap.php}!FT\_INTERNAL@{FT\_INTERNAL}}
+\index{FT\_INTERNAL@{FT\_INTERNAL}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{FT\_INTERNAL}{FT\_INTERNAL}}
+{\footnotesize\ttfamily const F\+T\+\_\+\+I\+N\+T\+E\+R\+N\+AL 8}
+
+The return string is in internal format, will not canonicalize to C\+R\+LF. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_ac5ff99c33666f7b09551e6464280b349}\label{imap_8php_ac5ff99c33666f7b09551e6464280b349}} 
+\index{imap.php@{imap.php}!FT\_NOT@{FT\_NOT}}
+\index{FT\_NOT@{FT\_NOT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{FT\_NOT}{FT\_NOT}}
+{\footnotesize\ttfamily const F\+T\+\_\+\+N\+OT 4}
+
+\mbox{\Hypertarget{imap_8php_add50e936c642a6de2eee88b3a45341b9}\label{imap_8php_add50e936c642a6de2eee88b3a45341b9}} 
+\index{imap.php@{imap.php}!FT\_PEEK@{FT\_PEEK}}
+\index{FT\_PEEK@{FT\_PEEK}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{FT\_PEEK}{FT\_PEEK}}
+{\footnotesize\ttfamily const F\+T\+\_\+\+P\+E\+EK 2}
+
+Do not set the \textbackslash{}\+Seen flag if not already set \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a6d9dfb1a325c234f7219188267c701e7}\label{imap_8php_a6d9dfb1a325c234f7219188267c701e7}} 
+\index{imap.php@{imap.php}!FT\_PREFETCHTEXT@{FT\_PREFETCHTEXT}}
+\index{FT\_PREFETCHTEXT@{FT\_PREFETCHTEXT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{FT\_PREFETCHTEXT}{FT\_PREFETCHTEXT}}
+{\footnotesize\ttfamily const F\+T\+\_\+\+P\+R\+E\+F\+E\+T\+C\+H\+T\+E\+XT 32}
+
+\mbox{\Hypertarget{imap_8php_adc9783464df34d1d4f29fd4cfb35107b}\label{imap_8php_adc9783464df34d1d4f29fd4cfb35107b}} 
+\index{imap.php@{imap.php}!FT\_UID@{FT\_UID}}
+\index{FT\_UID@{FT\_UID}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{FT\_UID}{FT\_UID}}
+{\footnotesize\ttfamily const F\+T\+\_\+\+U\+ID 1}
+
+The parameter is a U\+ID \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a319a413d1cefd6b3f036370ed210bde7}\label{imap_8php_a319a413d1cefd6b3f036370ed210bde7}} 
+\index{imap.php@{imap.php}!IMAP\_CLOSETIMEOUT@{IMAP\_CLOSETIMEOUT}}
+\index{IMAP\_CLOSETIMEOUT@{IMAP\_CLOSETIMEOUT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{IMAP\_CLOSETIMEOUT}{IMAP\_CLOSETIMEOUT}}
+{\footnotesize\ttfamily const I\+M\+A\+P\+\_\+\+C\+L\+O\+S\+E\+T\+I\+M\+E\+O\+UT 4}
+
+\mbox{\Hypertarget{imap_8php_a959d5720de5555fef054399a5ff04447}\label{imap_8php_a959d5720de5555fef054399a5ff04447}} 
+\index{imap.php@{imap.php}!IMAP\_GC\_ELT@{IMAP\_GC\_ELT}}
+\index{IMAP\_GC\_ELT@{IMAP\_GC\_ELT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{IMAP\_GC\_ELT}{IMAP\_GC\_ELT}}
+{\footnotesize\ttfamily const I\+M\+A\+P\+\_\+\+G\+C\+\_\+\+E\+LT 1}
+
+Garbage collector, clear message cache elements. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a6d60d2909268d097c8c35a5dd71c424b}\label{imap_8php_a6d60d2909268d097c8c35a5dd71c424b}} 
+\index{imap.php@{imap.php}!IMAP\_GC\_ENV@{IMAP\_GC\_ENV}}
+\index{IMAP\_GC\_ENV@{IMAP\_GC\_ENV}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{IMAP\_GC\_ENV}{IMAP\_GC\_ENV}}
+{\footnotesize\ttfamily const I\+M\+A\+P\+\_\+\+G\+C\+\_\+\+E\+NV 2}
+
+Garbage collector, clear envelopes and bodies. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_ae04744074aab26455ff9dbcff3dc8cca}\label{imap_8php_ae04744074aab26455ff9dbcff3dc8cca}} 
+\index{imap.php@{imap.php}!IMAP\_GC\_TEXTS@{IMAP\_GC\_TEXTS}}
+\index{IMAP\_GC\_TEXTS@{IMAP\_GC\_TEXTS}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{IMAP\_GC\_TEXTS}{IMAP\_GC\_TEXTS}}
+{\footnotesize\ttfamily const I\+M\+A\+P\+\_\+\+G\+C\+\_\+\+T\+E\+X\+TS 4}
+
+Garbage collector, clear texts. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_ab8850a505385603763382823fb427d03}\label{imap_8php_ab8850a505385603763382823fb427d03}} 
+\index{imap.php@{imap.php}!IMAP\_OPENTIMEOUT@{IMAP\_OPENTIMEOUT}}
+\index{IMAP\_OPENTIMEOUT@{IMAP\_OPENTIMEOUT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{IMAP\_OPENTIMEOUT}{IMAP\_OPENTIMEOUT}}
+{\footnotesize\ttfamily const I\+M\+A\+P\+\_\+\+O\+P\+E\+N\+T\+I\+M\+E\+O\+UT 1}
+
+\mbox{\Hypertarget{imap_8php_a85ad6bddd7bd81490db898c466b3884f}\label{imap_8php_a85ad6bddd7bd81490db898c466b3884f}} 
+\index{imap.php@{imap.php}!IMAP\_READTIMEOUT@{IMAP\_READTIMEOUT}}
+\index{IMAP\_READTIMEOUT@{IMAP\_READTIMEOUT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{IMAP\_READTIMEOUT}{IMAP\_READTIMEOUT}}
+{\footnotesize\ttfamily const I\+M\+A\+P\+\_\+\+R\+E\+A\+D\+T\+I\+M\+E\+O\+UT 2}
+
+\mbox{\Hypertarget{imap_8php_ac36b807dc776cb1558291a5acd8d313a}\label{imap_8php_ac36b807dc776cb1558291a5acd8d313a}} 
+\index{imap.php@{imap.php}!IMAP\_WRITETIMEOUT@{IMAP\_WRITETIMEOUT}}
+\index{IMAP\_WRITETIMEOUT@{IMAP\_WRITETIMEOUT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{IMAP\_WRITETIMEOUT}{IMAP\_WRITETIMEOUT}}
+{\footnotesize\ttfamily const I\+M\+A\+P\+\_\+\+W\+R\+I\+T\+E\+T\+I\+M\+E\+O\+UT 3}
+
+\mbox{\Hypertarget{imap_8php_aad450b7e13ea9b57b69e9f94be1426e8}\label{imap_8php_aad450b7e13ea9b57b69e9f94be1426e8}} 
+\index{imap.php@{imap.php}!LATT\_HASCHILDREN@{LATT\_HASCHILDREN}}
+\index{LATT\_HASCHILDREN@{LATT\_HASCHILDREN}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{LATT\_HASCHILDREN}{LATT\_HASCHILDREN}}
+{\footnotesize\ttfamily const L\+A\+T\+T\+\_\+\+H\+A\+S\+C\+H\+I\+L\+D\+R\+EN 32}
+
+\mbox{\Hypertarget{imap_8php_a6361a712b350caa266c860b3346b060c}\label{imap_8php_a6361a712b350caa266c860b3346b060c}} 
+\index{imap.php@{imap.php}!LATT\_HASNOCHILDREN@{LATT\_HASNOCHILDREN}}
+\index{LATT\_HASNOCHILDREN@{LATT\_HASNOCHILDREN}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{LATT\_HASNOCHILDREN}{LATT\_HASNOCHILDREN}}
+{\footnotesize\ttfamily const L\+A\+T\+T\+\_\+\+H\+A\+S\+N\+O\+C\+H\+I\+L\+D\+R\+EN 64}
+
+\mbox{\Hypertarget{imap_8php_ac7b35ec08da93fd37264d8ae2b3fb9fd}\label{imap_8php_ac7b35ec08da93fd37264d8ae2b3fb9fd}} 
+\index{imap.php@{imap.php}!LATT\_MARKED@{LATT\_MARKED}}
+\index{LATT\_MARKED@{LATT\_MARKED}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{LATT\_MARKED}{LATT\_MARKED}}
+{\footnotesize\ttfamily const L\+A\+T\+T\+\_\+\+M\+A\+R\+K\+ED 4}
+
+This mailbox is marked. Only used by U\+W-\/\+I\+M\+A\+PD. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a544baf0ae5bc8dea8679f5fbbdf67404}\label{imap_8php_a544baf0ae5bc8dea8679f5fbbdf67404}} 
+\index{imap.php@{imap.php}!LATT\_NOINFERIORS@{LATT\_NOINFERIORS}}
+\index{LATT\_NOINFERIORS@{LATT\_NOINFERIORS}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{LATT\_NOINFERIORS}{LATT\_NOINFERIORS}}
+{\footnotesize\ttfamily const L\+A\+T\+T\+\_\+\+N\+O\+I\+N\+F\+E\+R\+I\+O\+RS 1}
+
+This mailbox has no \char`\"{}children\char`\"{} (there are no mailboxes below this one). \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_ae9c74878ee41e968abfeddcde7ce7009}\label{imap_8php_ae9c74878ee41e968abfeddcde7ce7009}} 
+\index{imap.php@{imap.php}!LATT\_NOSELECT@{LATT\_NOSELECT}}
+\index{LATT\_NOSELECT@{LATT\_NOSELECT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{LATT\_NOSELECT}{LATT\_NOSELECT}}
+{\footnotesize\ttfamily const L\+A\+T\+T\+\_\+\+N\+O\+S\+E\+L\+E\+CT 2}
+
+This is only a container, not a mailbox -\/ you cannot open it. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a4eec020bf83f5922a53e39d2538d7db9}\label{imap_8php_a4eec020bf83f5922a53e39d2538d7db9}} 
+\index{imap.php@{imap.php}!LATT\_REFERRAL@{LATT\_REFERRAL}}
+\index{LATT\_REFERRAL@{LATT\_REFERRAL}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{LATT\_REFERRAL}{LATT\_REFERRAL}}
+{\footnotesize\ttfamily const L\+A\+T\+T\+\_\+\+R\+E\+F\+E\+R\+R\+AL 16}
+
+\mbox{\Hypertarget{imap_8php_a80cf9bc6d9287de4a9e6ee18f2f3b25c}\label{imap_8php_a80cf9bc6d9287de4a9e6ee18f2f3b25c}} 
+\index{imap.php@{imap.php}!LATT\_UNMARKED@{LATT\_UNMARKED}}
+\index{LATT\_UNMARKED@{LATT\_UNMARKED}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{LATT\_UNMARKED}{LATT\_UNMARKED}}
+{\footnotesize\ttfamily const L\+A\+T\+T\+\_\+\+U\+N\+M\+A\+R\+K\+ED 8}
+
+This mailbox is not marked. Only used by U\+W-\/\+I\+M\+A\+PD. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_af7e6a0bd87326b75d22a0c4003a896c6}\label{imap_8php_af7e6a0bd87326b75d22a0c4003a896c6}} 
+\index{imap.php@{imap.php}!NIL@{NIL}}
+\index{NIL@{NIL}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{NIL}{NIL}}
+{\footnotesize\ttfamily const N\+IL 0}
+
+\mbox{\Hypertarget{imap_8php_a1e810b3d1a75dc003a9a0535b3dc95a7}\label{imap_8php_a1e810b3d1a75dc003a9a0535b3dc95a7}} 
+\index{imap.php@{imap.php}!OP\_ANONYMOUS@{OP\_ANONYMOUS}}
+\index{OP\_ANONYMOUS@{OP\_ANONYMOUS}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{OP\_ANONYMOUS}{OP\_ANONYMOUS}}
+{\footnotesize\ttfamily const O\+P\+\_\+\+A\+N\+O\+N\+Y\+M\+O\+US 4}
+
+Don\textquotesingle{}t use or update a .newsrc for news (N\+N\+TP only) \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_ab3387a573d44baffb6a8b592bac8359b}\label{imap_8php_ab3387a573d44baffb6a8b592bac8359b}} 
+\index{imap.php@{imap.php}!OP\_DEBUG@{OP\_DEBUG}}
+\index{OP\_DEBUG@{OP\_DEBUG}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{OP\_DEBUG}{OP\_DEBUG}}
+{\footnotesize\ttfamily const O\+P\+\_\+\+D\+E\+B\+UG 1}
+
+\mbox{\Hypertarget{imap_8php_a5bf452e04cc5a4f33cff239ea0a5e8ea}\label{imap_8php_a5bf452e04cc5a4f33cff239ea0a5e8ea}} 
+\index{imap.php@{imap.php}!OP\_EXPUNGE@{OP\_EXPUNGE}}
+\index{OP\_EXPUNGE@{OP\_EXPUNGE}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{OP\_EXPUNGE}{OP\_EXPUNGE}}
+{\footnotesize\ttfamily const O\+P\+\_\+\+E\+X\+P\+U\+N\+GE 128}
+
+\mbox{\Hypertarget{imap_8php_a5903ddb87f34be6433b6978f7be3624c}\label{imap_8php_a5903ddb87f34be6433b6978f7be3624c}} 
+\index{imap.php@{imap.php}!OP\_HALFOPEN@{OP\_HALFOPEN}}
+\index{OP\_HALFOPEN@{OP\_HALFOPEN}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{OP\_HALFOPEN}{OP\_HALFOPEN}}
+{\footnotesize\ttfamily const O\+P\+\_\+\+H\+A\+L\+F\+O\+P\+EN 64}
+
+For I\+M\+AP and N\+N\+TP names, open a connection but don\textquotesingle{}t open a mailbox. \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a4515ef002a570e42085b06080b6580fe}\label{imap_8php_a4515ef002a570e42085b06080b6580fe}} 
+\index{imap.php@{imap.php}!OP\_PROTOTYPE@{OP\_PROTOTYPE}}
+\index{OP\_PROTOTYPE@{OP\_PROTOTYPE}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{OP\_PROTOTYPE}{OP\_PROTOTYPE}}
+{\footnotesize\ttfamily const O\+P\+\_\+\+P\+R\+O\+T\+O\+T\+Y\+PE 32}
+
+\mbox{\Hypertarget{imap_8php_a5227f53e6b96f7cf93e5aea52433f53e}\label{imap_8php_a5227f53e6b96f7cf93e5aea52433f53e}} 
+\index{imap.php@{imap.php}!OP\_READONLY@{OP\_READONLY}}
+\index{OP\_READONLY@{OP\_READONLY}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{OP\_READONLY}{OP\_READONLY}}
+{\footnotesize\ttfamily const O\+P\+\_\+\+R\+E\+A\+D\+O\+N\+LY 2}
+
+Open mailbox read-\/only \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a96c536df853316f71dbeb0e36b051ff2}\label{imap_8php_a96c536df853316f71dbeb0e36b051ff2}} 
+\index{imap.php@{imap.php}!OP\_SECURE@{OP\_SECURE}}
+\index{OP\_SECURE@{OP\_SECURE}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{OP\_SECURE}{OP\_SECURE}}
+{\footnotesize\ttfamily const O\+P\+\_\+\+S\+E\+C\+U\+RE 256}
+
+\mbox{\Hypertarget{imap_8php_a9411e5f27aac960fbda0ff677769fc94}\label{imap_8php_a9411e5f27aac960fbda0ff677769fc94}} 
+\index{imap.php@{imap.php}!OP\_SHORTCACHE@{OP\_SHORTCACHE}}
+\index{OP\_SHORTCACHE@{OP\_SHORTCACHE}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{OP\_SHORTCACHE}{OP\_SHORTCACHE}}
+{\footnotesize\ttfamily const O\+P\+\_\+\+S\+H\+O\+R\+T\+C\+A\+C\+HE 8}
+
+\mbox{\Hypertarget{imap_8php_a1186362203162229cb0ecc984d57703b}\label{imap_8php_a1186362203162229cb0ecc984d57703b}} 
+\index{imap.php@{imap.php}!OP\_SILENT@{OP\_SILENT}}
+\index{OP\_SILENT@{OP\_SILENT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{OP\_SILENT}{OP\_SILENT}}
+{\footnotesize\ttfamily const O\+P\+\_\+\+S\+I\+L\+E\+NT 16}
+
+\mbox{\Hypertarget{imap_8php_a08b4b6c9db7d4b1ba422c4320df470bd}\label{imap_8php_a08b4b6c9db7d4b1ba422c4320df470bd}} 
+\index{imap.php@{imap.php}!SA\_ALL@{SA\_ALL}}
+\index{SA\_ALL@{SA\_ALL}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SA\_ALL}{SA\_ALL}}
+{\footnotesize\ttfamily const S\+A\+\_\+\+A\+LL 31}
+
+\mbox{\Hypertarget{imap_8php_aa87d1ef2924674323d5c9208fa919907}\label{imap_8php_aa87d1ef2924674323d5c9208fa919907}} 
+\index{imap.php@{imap.php}!SA\_MESSAGES@{SA\_MESSAGES}}
+\index{SA\_MESSAGES@{SA\_MESSAGES}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SA\_MESSAGES}{SA\_MESSAGES}}
+{\footnotesize\ttfamily const S\+A\+\_\+\+M\+E\+S\+S\+A\+G\+ES 1}
+
+\mbox{\Hypertarget{imap_8php_ae62fc741fe7ed599e7cd932bc79da361}\label{imap_8php_ae62fc741fe7ed599e7cd932bc79da361}} 
+\index{imap.php@{imap.php}!SA\_RECENT@{SA\_RECENT}}
+\index{SA\_RECENT@{SA\_RECENT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SA\_RECENT}{SA\_RECENT}}
+{\footnotesize\ttfamily const S\+A\+\_\+\+R\+E\+C\+E\+NT 2}
+
+\mbox{\Hypertarget{imap_8php_aceabe6a50d81e4f7454d1b89618dc221}\label{imap_8php_aceabe6a50d81e4f7454d1b89618dc221}} 
+\index{imap.php@{imap.php}!SA\_UIDNEXT@{SA\_UIDNEXT}}
+\index{SA\_UIDNEXT@{SA\_UIDNEXT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SA\_UIDNEXT}{SA\_UIDNEXT}}
+{\footnotesize\ttfamily const S\+A\+\_\+\+U\+I\+D\+N\+E\+XT 8}
+
+\mbox{\Hypertarget{imap_8php_a25b87538ae0bb542e29064304b65e3a8}\label{imap_8php_a25b87538ae0bb542e29064304b65e3a8}} 
+\index{imap.php@{imap.php}!SA\_UIDVALIDITY@{SA\_UIDVALIDITY}}
+\index{SA\_UIDVALIDITY@{SA\_UIDVALIDITY}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SA\_UIDVALIDITY}{SA\_UIDVALIDITY}}
+{\footnotesize\ttfamily const S\+A\+\_\+\+U\+I\+D\+V\+A\+L\+I\+D\+I\+TY 16}
+
+\mbox{\Hypertarget{imap_8php_a25a658b47e84e9bbcde7c9dcf6dcbc20}\label{imap_8php_a25a658b47e84e9bbcde7c9dcf6dcbc20}} 
+\index{imap.php@{imap.php}!SA\_UNSEEN@{SA\_UNSEEN}}
+\index{SA\_UNSEEN@{SA\_UNSEEN}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SA\_UNSEEN}{SA\_UNSEEN}}
+{\footnotesize\ttfamily const S\+A\+\_\+\+U\+N\+S\+E\+EN 4}
+
+\mbox{\Hypertarget{imap_8php_a4757c834b969ed2257fd834846979023}\label{imap_8php_a4757c834b969ed2257fd834846979023}} 
+\index{imap.php@{imap.php}!SE\_FREE@{SE\_FREE}}
+\index{SE\_FREE@{SE\_FREE}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SE\_FREE}{SE\_FREE}}
+{\footnotesize\ttfamily const S\+E\+\_\+\+F\+R\+EE 2}
+
+\mbox{\Hypertarget{imap_8php_a59bf84bbb36ff082ce2150acc921b94c}\label{imap_8php_a59bf84bbb36ff082ce2150acc921b94c}} 
+\index{imap.php@{imap.php}!SE\_NOPREFETCH@{SE\_NOPREFETCH}}
+\index{SE\_NOPREFETCH@{SE\_NOPREFETCH}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SE\_NOPREFETCH}{SE\_NOPREFETCH}}
+{\footnotesize\ttfamily const S\+E\+\_\+\+N\+O\+P\+R\+E\+F\+E\+T\+CH 4}
+
+Don\textquotesingle{}t prefetch searched messages \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a5a12244dff2916998aac1fbf00a98969}\label{imap_8php_a5a12244dff2916998aac1fbf00a98969}} 
+\index{imap.php@{imap.php}!SE\_UID@{SE\_UID}}
+\index{SE\_UID@{SE\_UID}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SE\_UID}{SE\_UID}}
+{\footnotesize\ttfamily const S\+E\+\_\+\+U\+ID 1}
+
+Return U\+I\+Ds instead of sequence numbers \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a780be7f7ec1df2b85901cd56df788763}\label{imap_8php_a780be7f7ec1df2b85901cd56df788763}} 
+\index{imap.php@{imap.php}!SO\_FREE@{SO\_FREE}}
+\index{SO\_FREE@{SO\_FREE}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SO\_FREE}{SO\_FREE}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+F\+R\+EE 8}
+
+\mbox{\Hypertarget{imap_8php_a67d005f3313b2747b379e072560e3de1}\label{imap_8php_a67d005f3313b2747b379e072560e3de1}} 
+\index{imap.php@{imap.php}!SO\_NOSERVER@{SO\_NOSERVER}}
+\index{SO\_NOSERVER@{SO\_NOSERVER}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SO\_NOSERVER}{SO\_NOSERVER}}
+{\footnotesize\ttfamily const S\+O\+\_\+\+N\+O\+S\+E\+R\+V\+ER 16}
+
+\mbox{\Hypertarget{imap_8php_a0d98cbbadfd2542006036fdce62f866f}\label{imap_8php_a0d98cbbadfd2542006036fdce62f866f}} 
+\index{imap.php@{imap.php}!SORTARRIVAL@{SORTARRIVAL}}
+\index{SORTARRIVAL@{SORTARRIVAL}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SORTARRIVAL}{SORTARRIVAL}}
+{\footnotesize\ttfamily const S\+O\+R\+T\+A\+R\+R\+I\+V\+AL 1}
+
+Sort criteria for {\bfseries{imap\+\_\+sort}}\+: arrival date \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a755df90691361648889c27e1731a0022}\label{imap_8php_a755df90691361648889c27e1731a0022}} 
+\index{imap.php@{imap.php}!SORTCC@{SORTCC}}
+\index{SORTCC@{SORTCC}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SORTCC}{SORTCC}}
+{\footnotesize\ttfamily const S\+O\+R\+T\+CC 5}
+
+Sort criteria for {\bfseries{imap\+\_\+sort}}\+: mailbox in first cc address \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a25e1a60fb9c84d44aafc05e44c543b08}\label{imap_8php_a25e1a60fb9c84d44aafc05e44c543b08}} 
+\index{imap.php@{imap.php}!SORTDATE@{SORTDATE}}
+\index{SORTDATE@{SORTDATE}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SORTDATE}{SORTDATE}}
+{\footnotesize\ttfamily const S\+O\+R\+T\+D\+A\+TE 0}
+
+Sort criteria for {\bfseries{imap\+\_\+sort}}\+: message Date \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a2ecefad26c107191ecc9b77d4f5585d3}\label{imap_8php_a2ecefad26c107191ecc9b77d4f5585d3}} 
+\index{imap.php@{imap.php}!SORTFROM@{SORTFROM}}
+\index{SORTFROM@{SORTFROM}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SORTFROM}{SORTFROM}}
+{\footnotesize\ttfamily const S\+O\+R\+T\+F\+R\+OM 2}
+
+Sort criteria for {\bfseries{imap\+\_\+sort}}\+: mailbox in first From address \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_ac625d08b86c6f4f18f95c8712dd9d594}\label{imap_8php_ac625d08b86c6f4f18f95c8712dd9d594}} 
+\index{imap.php@{imap.php}!SORTSIZE@{SORTSIZE}}
+\index{SORTSIZE@{SORTSIZE}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SORTSIZE}{SORTSIZE}}
+{\footnotesize\ttfamily const S\+O\+R\+T\+S\+I\+ZE 6}
+
+Sort criteria for {\bfseries{imap\+\_\+sort}}\+: size of message in octets \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a66a490d8af074773005ef84c6245dccc}\label{imap_8php_a66a490d8af074773005ef84c6245dccc}} 
+\index{imap.php@{imap.php}!SORTSUBJECT@{SORTSUBJECT}}
+\index{SORTSUBJECT@{SORTSUBJECT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SORTSUBJECT}{SORTSUBJECT}}
+{\footnotesize\ttfamily const S\+O\+R\+T\+S\+U\+B\+J\+E\+CT 3}
+
+Sort criteria for {\bfseries{imap\+\_\+sort}}\+: message subject \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_a848172e7f5d6e69111d20597e77e7c89}\label{imap_8php_a848172e7f5d6e69111d20597e77e7c89}} 
+\index{imap.php@{imap.php}!SORTTO@{SORTTO}}
+\index{SORTTO@{SORTTO}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{SORTTO}{SORTTO}}
+{\footnotesize\ttfamily const S\+O\+R\+T\+TO 4}
+
+Sort criteria for {\bfseries{imap\+\_\+sort}}\+: mailbox in first To address \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_abaf338e0361f7e5cf865352643a62e36}\label{imap_8php_abaf338e0361f7e5cf865352643a62e36}} 
+\index{imap.php@{imap.php}!ST\_SET@{ST\_SET}}
+\index{ST\_SET@{ST\_SET}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{ST\_SET}{ST\_SET}}
+{\footnotesize\ttfamily const S\+T\+\_\+\+S\+ET 4}
+
+\mbox{\Hypertarget{imap_8php_a2aae9c1583b64bf71f5949a8d79002bd}\label{imap_8php_a2aae9c1583b64bf71f5949a8d79002bd}} 
+\index{imap.php@{imap.php}!ST\_SILENT@{ST\_SILENT}}
+\index{ST\_SILENT@{ST\_SILENT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{ST\_SILENT}{ST\_SILENT}}
+{\footnotesize\ttfamily const S\+T\+\_\+\+S\+I\+L\+E\+NT 2}
+
+\mbox{\Hypertarget{imap_8php_aecdf41aa37b2ae276b82a44f9649c837}\label{imap_8php_aecdf41aa37b2ae276b82a44f9649c837}} 
+\index{imap.php@{imap.php}!ST\_UID@{ST\_UID}}
+\index{ST\_UID@{ST\_UID}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{ST\_UID}{ST\_UID}}
+{\footnotesize\ttfamily const S\+T\+\_\+\+U\+ID 1}
+
+The sequence argument contains U\+I\+Ds instead of sequence numbers \mbox{\hyperlink{patch2_8txt_a3f9992ab8fa942ed02faa63682c3a84c}{https\+://php.\+net/manual/en/imap.\+constants.\+php}}\mbox{\Hypertarget{imap_8php_adc4c2284a8be76b155a2594dd4f98bb1}\label{imap_8php_adc4c2284a8be76b155a2594dd4f98bb1}} 
+\index{imap.php@{imap.php}!TYPEAPPLICATION@{TYPEAPPLICATION}}
+\index{TYPEAPPLICATION@{TYPEAPPLICATION}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{TYPEAPPLICATION}{TYPEAPPLICATION}}
+{\footnotesize\ttfamily const T\+Y\+P\+E\+A\+P\+P\+L\+I\+C\+A\+T\+I\+ON 3}
+
+\mbox{\Hypertarget{imap_8php_a115bfc97353ed7db6d96b99897272784}\label{imap_8php_a115bfc97353ed7db6d96b99897272784}} 
+\index{imap.php@{imap.php}!TYPEAUDIO@{TYPEAUDIO}}
+\index{TYPEAUDIO@{TYPEAUDIO}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{TYPEAUDIO}{TYPEAUDIO}}
+{\footnotesize\ttfamily const T\+Y\+P\+E\+A\+U\+D\+IO 4}
+
+\mbox{\Hypertarget{imap_8php_a200d532db81a1bd6aba3ef3d23767ff0}\label{imap_8php_a200d532db81a1bd6aba3ef3d23767ff0}} 
+\index{imap.php@{imap.php}!TYPEIMAGE@{TYPEIMAGE}}
+\index{TYPEIMAGE@{TYPEIMAGE}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{TYPEIMAGE}{TYPEIMAGE}}
+{\footnotesize\ttfamily const T\+Y\+P\+E\+I\+M\+A\+GE 5}
+
+\mbox{\Hypertarget{imap_8php_a1924c3273362b3170e35d09b32a6320c}\label{imap_8php_a1924c3273362b3170e35d09b32a6320c}} 
+\index{imap.php@{imap.php}!TYPEMESSAGE@{TYPEMESSAGE}}
+\index{TYPEMESSAGE@{TYPEMESSAGE}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{TYPEMESSAGE}{TYPEMESSAGE}}
+{\footnotesize\ttfamily const T\+Y\+P\+E\+M\+E\+S\+S\+A\+GE 2}
+
+\mbox{\Hypertarget{imap_8php_a21441ce176cbbbf377341ebc9f93d4c0}\label{imap_8php_a21441ce176cbbbf377341ebc9f93d4c0}} 
+\index{imap.php@{imap.php}!TYPEMODEL@{TYPEMODEL}}
+\index{TYPEMODEL@{TYPEMODEL}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{TYPEMODEL}{TYPEMODEL}}
+{\footnotesize\ttfamily const T\+Y\+P\+E\+M\+O\+D\+EL 7}
+
+\mbox{\Hypertarget{imap_8php_ab90d5c70878126e78ebef86637000ed3}\label{imap_8php_ab90d5c70878126e78ebef86637000ed3}} 
+\index{imap.php@{imap.php}!TYPEMULTIPART@{TYPEMULTIPART}}
+\index{TYPEMULTIPART@{TYPEMULTIPART}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{TYPEMULTIPART}{TYPEMULTIPART}}
+{\footnotesize\ttfamily const T\+Y\+P\+E\+M\+U\+L\+T\+I\+P\+A\+RT 1}
+
+\mbox{\Hypertarget{imap_8php_a8a2afd5c837229f8080564eb6e85f711}\label{imap_8php_a8a2afd5c837229f8080564eb6e85f711}} 
+\index{imap.php@{imap.php}!TYPEOTHER@{TYPEOTHER}}
+\index{TYPEOTHER@{TYPEOTHER}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{TYPEOTHER}{TYPEOTHER}}
+{\footnotesize\ttfamily const T\+Y\+P\+E\+O\+T\+H\+ER 8}
+
+\mbox{\Hypertarget{imap_8php_a4774ed3dba05ede7ec0a1edc7d63f857}\label{imap_8php_a4774ed3dba05ede7ec0a1edc7d63f857}} 
+\index{imap.php@{imap.php}!TYPETEXT@{TYPETEXT}}
+\index{TYPETEXT@{TYPETEXT}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{TYPETEXT}{TYPETEXT}}
+{\footnotesize\ttfamily const T\+Y\+P\+E\+T\+E\+XT 0}
+
+\mbox{\Hypertarget{imap_8php_a2e0279ee72453b4e00a9a4a3946c9a11}\label{imap_8php_a2e0279ee72453b4e00a9a4a3946c9a11}} 
+\index{imap.php@{imap.php}!TYPEVIDEO@{TYPEVIDEO}}
+\index{TYPEVIDEO@{TYPEVIDEO}!imap.php@{imap.php}}
+\doxysubsubsection{\texorpdfstring{TYPEVIDEO}{TYPEVIDEO}}
+{\footnotesize\ttfamily const T\+Y\+P\+E\+V\+I\+D\+EO 6}
+

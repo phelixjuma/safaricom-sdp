@@ -1,0 +1,254 @@
+.TH "vendor/jetbrains/phpstorm-stubs/fileinfo/fileinfo.php" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vendor/jetbrains/phpstorm-stubs/fileinfo/fileinfo.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "class \fBfinfo\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBfinfo_open\fP ($options=\fBnull\fP, $magic_file=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBfinfo_close\fP ($\fBfinfo\fP)"
+.br
+.ti -1c
+.RI "\fBfinfo_set_flags\fP ($\fBfinfo\fP, $options)"
+.br
+.ti -1c
+.RI "\fBfinfo_file\fP ($\fBfinfo\fP, $file_name, $options=\fBnull\fP, $context=\fBnull\fP)"
+.br
+.ti -1c
+.RI "\fBfinfo_buffer\fP ($\fBfinfo\fP, $string, $options=\fBFILEINFO_NONE\fP, $context=NULL)"
+.br
+.ti -1c
+.RI "\fBmime_content_type\fP ($filename)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBFILEINFO_NONE\fP 0"
+.br
+.ti -1c
+.RI "const \fBFILEINFO_SYMLINK\fP 2"
+.br
+.ti -1c
+.RI "const \fBFILEINFO_MIME\fP 1040"
+.br
+.ti -1c
+.RI "const \fBFILEINFO_MIME_TYPE\fP 16"
+.br
+.ti -1c
+.RI "const \fBFILEINFO_MIME_ENCODING\fP 1024"
+.br
+.ti -1c
+.RI "const \fBFILEINFO_DEVICES\fP 8"
+.br
+.ti -1c
+.RI "const \fBFILEINFO_CONTINUE\fP 32"
+.br
+.ti -1c
+.RI "const \fBFILEINFO_PRESERVE_ATIME\fP 128"
+.br
+.ti -1c
+.RI "const \fBFILEINFO_RAW\fP 256"
+.br
+.ti -1c
+.RI "const \fBFILEINFO_EXTENSION\fP 2097152"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "finfo_buffer ( $finfo,  $string,  $options = \fC\fBFILEINFO_NONE\fP\fP,  $context = \fCNULL\fP)"
+(PHP 5 >= 5\&.3\&.0, PECL fileinfo >= 0\&.1\&.0)
+.br
+ Return information about a string buffer \fBresource $finfo \fP Fileinfo resource returned by finfo_open\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$string\fP 
+.RE
+.PP
+Content of a file to be checked\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+One or disjunction of more Fileinfo constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP [optional] 
+.RE
+.PP
+.PP
+\fBParameters\fP
+.RS 4
+\fI$string\fP 
+.br
+\fI$options\fP [optional] One or disjunction of more \fCFileinfo\fP constants\&. 
+.br
+\fI$context\fP [optional] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+string a textual description of the \fIstring\fP argument, or \fBFALSE\fP if an error occurred\&. 
+.RE
+.PP
+
+.SS "finfo_close ( $finfo)"
+(PHP >= 5\&.3\&.0, PECL fileinfo >= 0\&.1\&.0)
+.br
+ Close fileinfo resource \fBresource $finfo \fP Fileinfo resource returned by finfo_open\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "finfo_file ( $finfo,  $file_name,  $options = \fC\fBnull\fP\fP,  $context = \fC\fBnull\fP\fP)"
+(PHP >= 5\&.3\&.0, PECL fileinfo >= 0\&.1\&.0)
+.br
+ Return information about a file \fBresource $finfo \fP Fileinfo resource returned by finfo_open\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$file_name\fP 
+.RE
+.PP
+Name of a file to be checked\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP [optional] 
+.RE
+.PP
+One or disjunction of more Fileinfo constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$context\fP [optional] 
+.RE
+.PP
+For a description of contexts, refer to \&. 
+.PP
+\fBReturns\fP
+.RS 4
+mixed a textual description of the contents of the \fIfilename\fP argument, or \fBFALSE\fP if an error occurred\&. 
+.RE
+.PP
+
+.SS "finfo_open ( $options = \fC\fBnull\fP\fP,  $magic_file = \fC\fBnull\fP\fP)"
+(PHP >= 5\&.3\&.0, PECL fileinfo >= 0\&.1\&.0)
+.br
+ Create a new fileinfo resource \fBint $options [optional] \fP One or disjunction of more Fileinfo constants\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$magic_file\fP [optional] 
+.RE
+.PP
+Name of a magic database file, usually something like /path/to/magic\&.mime\&. If not specified, the MAGIC environment variable is used\&. If this variable is not set either, /usr/share/misc/magic is used by default\&. \fBA\fP \&.mime and/or \&.mgc suffix is added if needed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+resource a magic database resource on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "finfo_set_flags ( $finfo,  $options)"
+(PHP >= 5\&.3\&.0, PECL fileinfo >= 0\&.1\&.0)
+.br
+ Set libmagic configuration options \fBresource $finfo \fP Fileinfo resource returned by finfo_open\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$options\fP 
+.RE
+.PP
+One or disjunction of more Fileinfo constants\&. 
+.PP
+\fBReturns\fP
+.RS 4
+bool \fBTRUE\fP on success or \fBFALSE\fP on failure\&. 
+.RE
+.PP
+
+.SS "mime_content_type ( $filename)"
+Detect MIME Content-type for a file \fBstring $filename \fP Path to the tested file\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string the content type in MIME format, like text/plain or application/octet-stream\&. 
+.RE
+.PP
+\fBSince\fP
+.RS 4
+4\&.3 
+.PP
+5\&.0 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "const FILEINFO_CONTINUE 32"
+Return all matches, not just the first\&. \fBhttps://php\&.net/manual/en/fileinfo\&.constants\&.php\fP
+.SS "const FILEINFO_DEVICES 8"
+Look at the contents of blocks or character special devices\&. \fBhttps://php\&.net/manual/en/fileinfo\&.constants\&.php\fP
+.SS "const FILEINFO_EXTENSION 2097152"
+Returns the file extension appropiate for a the MIME type detected in the file\&. For types that commonly have multiple file extensions, such as JPEG images, then the return value is multiple extensions speparated by a forward slash e\&.g\&.: 'jpeg/jpg/jpe/jfif'\&. For unknown types not available in the magic\&.mime database, then return value is '???'\&. Available since PHP 7\&.2\&.0\&. 
+.PP
+\fBSince\fP
+.RS 4
+7\&.2 
+.RE
+.PP
+
+.SS "const FILEINFO_MIME 1040"
+Return the mime type and mime encoding as defined by RFC 2045\&. \fBhttps://php\&.net/manual/en/fileinfo\&.constants\&.php\fP
+.SS "const FILEINFO_MIME_ENCODING 1024"
+Return the mime encoding of the file\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 \fBhttps://php\&.net/manual/en/fileinfo\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const FILEINFO_MIME_TYPE 16"
+Return the mime type\&. 
+.PP
+\fBSince\fP
+.RS 4
+5\&.3 \fBhttps://php\&.net/manual/en/fileinfo\&.constants\&.php\fP
+.RE
+.PP
+
+.SS "const FILEINFO_NONE 0"
+No special handling\&. \fBhttps://php\&.net/manual/en/fileinfo\&.constants\&.php\fP
+.SS "const FILEINFO_PRESERVE_ATIME 128"
+If possible preserve the original access time\&. \fBhttps://php\&.net/manual/en/fileinfo\&.constants\&.php\fP
+.SS "const FILEINFO_RAW 256"
+Don't translate unprintable characters to a \\ooo octal representation\&. \fBhttps://php\&.net/manual/en/fileinfo\&.constants\&.php\fP
+.SS "const FILEINFO_SYMLINK 2"
+Follow symlinks\&. \fBhttps://php\&.net/manual/en/fileinfo\&.constants\&.php\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.
