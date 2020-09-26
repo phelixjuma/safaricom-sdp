@@ -46,7 +46,7 @@ configuration values required and then run the following command
     phpunit test
 
 
-#Documentation
+# Documentation
 
 The docs folder has the technical documentation of each of the classes,methods, properties, namespaces et al. In 
 order for you to make references to know what a class does or what a function does or what each of the method 
@@ -354,187 +354,215 @@ This is used when getting and handling bulk sms callback
             
 ```
 
-## 6. Sample Response Examples
+## 6. SDK General Response Structure
+
+```php
+
+    $response = [
+        "success" => true|false,
+        "statusCode" => "",
+        "statusText" => "",
+        "errorCode" => "",
+        "errorMessage" => "",
+        "data" => [],
+        "debugTrace" => [
+            'request' => [],
+            'response' => []
+        ]
+    ];
+```
+- **success**: Can be true | false. It implies success in submitting request to SDP. should not be confused to mean success of the operation eg sending sms
+- **statusCode**: Http status code from SDP eg 200,400,401,500. Standard definitions apply
+- **statusText**: Http status text corresponding to the status code. standard definitions apply
+- **errorCode**: Error code from SDP. This depends on the SDP error codes for the specific SDP API eg sendSMS, bulkSMS, subscription APIs could each have their own error codes denoting different meanings
+- **errorMessage**: The message from SDP describing the error
+- **data**: Has the response data from SDP in case of a success. If "success" is false, this value will be null. The data comes in different formats depending on the specific API being used
+- **debugTrace**: This contains a request and response trace. If 'SFC_SDP_DEBUG' is set to 1, this value will be set and can help debug an error. If the config value is 0, then this field will be null
+
+## 7. Sample Response Examples
+
+- All the response structures described below apply for the "data" key of the response structure described in section 6.
 
 #### i.Get Token API
 
-    ```php
+```php
     {
-    "msg": "You have been Authenticated to access this protected API System.",
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImF1ZCI6IkFDQ0VTUyIsInNjb3BlcyI6IkFETUlOIi wiaXNzIjoiaHR0cDovL3NpeGRlZS5jb20iLCJpYXQiOjE1Njk0OTc1MjksImV4cCI6MTU3NDI5NzUyOX0.- u2Db8OSDhtITMoFqIZYTgs6u4Ib_voynEA6k7ZwiqJqaPQ1_CnUaARxeaoSpC_BC-78_k- rzOr3v2Jdb9_KaA",
-    "refreshToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImF1ZCI6IlJFRlJFU0giLCJzY29wZXMiOiJBRE1J TiIsImlzcyI6Imh0dHA6Ly9zaXhkZWUuY29tIiwianRpIjoiZGIzOTk4OTYtMTU0ZS00ZDFjLTg1NmYtNTUy MDE2MDU3MDVkIiwiaWF0IjoxNTY5NDk3NTI5LCJleHAiOjE1ODAyOTc1Mjl9.uD7fvaMigBI0a2GC00fte qtTx79Elil1CFxRtXz5CTs1qRhJYUVsD0ZjF5Q13J9btY-5ppuzFDqDFkFfUpZAMw"
+        "msg": "You have been Authenticated to access this protected API System.",
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImF1ZCI6IkFDQ0VTUyIsInNjb3BlcyI6IkFETUlOIi wiaXNzIjoiaHR0cDovL3NpeGRlZS5jb20iLCJpYXQiOjE1Njk0OTc1MjksImV4cCI6MTU3NDI5NzUyOX0.- u2Db8OSDhtITMoFqIZYTgs6u4Ib_voynEA6k7ZwiqJqaPQ1_CnUaARxeaoSpC_BC-78_k- rzOr3v2Jdb9_KaA",
+        "refreshToken": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImF1ZCI6IlJFRlJFU0giLCJzY29wZXMiOiJBRE1J TiIsImlzcyI6Imh0dHA6Ly9zaXhkZWUuY29tIiwianRpIjoiZGIzOTk4OTYtMTU0ZS00ZDFjLTg1NmYtNTUy MDE2MDU3MDVkIiwiaWF0IjoxNTY5NDk3NTI5LCJleHAiOjE1ODAyOTc1Mjl9.uD7fvaMigBI0a2GC00fte qtTx79Elil1CFxRtXz5CTs1qRhJYUVsD0ZjF5Q13J9btY-5ppuzFDqDFkFfUpZAMw"
     }
-    ``` 
+``` 
     
 #### ii.Refresh Token API
     
-        ```php
-        {
+```php
+    {
         "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImF1ZCI6IkFDQ0VTUyIsInNjb3BlcyI6IkFETUlOI iwiaXNzIjoiaHR0cDovL3NpeGRlZS5jb20iLCJpYXQiOjE1Njk0OTc3NTgsImV4cCI6MTU3NDI5Nzc1OH 0.okOMCxGRFd1qt2OLVFFF4eDJ6aPZpLDhkNLA9STVMt9zH7fiMYaNz0S56_tJSXAtxYYq02PoQyG O4WBs716tCg"
-        }
-        ```
+    }
+```
 #### iii.Activate Subscription API
     
-        ```php
-         {
-            "requestId":"17",
-            "responseId":"cp2910183038077087336761",
-            "responseTimeStamp":"20191104092806",
-            "channel":"SMS",
-            "operation":"ACTIVATE",
-            "requestParam":{
-               "data":[
-                  {
-                     "name":"OfferCode",
-                     "value":"350032100559"
-                  },
-                  {
-                     "name":"Msisdn",
-                     "value":"795421629"
-                  },
-                  {
-                     "name":"Language",
-                     "value":"1"
-                  },
-                  {
-                     "name":"CpId",
-                     "value":"321"
-                  }
-               ]
-            },
-            "responseParam":{
-               "status":"0",
-               "statusCode":"0816",
-               "description":"Thank you, your activation of service 5000_Promotional is not processed."
-            }
-         }
-        ```
+```php
+     {
+        "requestId":"17",
+        "responseId":"cp2910183038077087336761",
+        "responseTimeStamp":"20191104092806",
+        "channel":"SMS",
+        "operation":"ACTIVATE",
+        "requestParam":{
+           "data":[
+              {
+                 "name":"OfferCode",
+                 "value":"350032100559"
+              },
+              {
+                 "name":"Msisdn",
+                 "value":"795421629"
+              },
+              {
+                 "name":"Language",
+                 "value":"1"
+              },
+              {
+                 "name":"CpId",
+                 "value":"321"
+              }
+           ]
+        },
+        "responseParam":{
+           "status":"0",
+           "statusCode":"0816",
+           "description":"Thank you, your activation of service 5000_Promotional is not processed."
+        }
+     }
+```
 #### iv.Deactivate Subscription API
     
-        ```php
-         {
-            "requestId":"17",
-            "responseId":"10189519962937756186",
-            "responseTimeStamp":"20190924161246",
-            "channel":"3",
-            "sourceAddress":"224.223.10.27",
-            "operation":"DEACTIVATE",
-            "requestParam":{
-               "data":[
-                  {
-                     "name":"OfferCode",
-                     "value":"1001"
-                  },
-                  {
-                     "name":"Msisdn",
-                     "value":"716848648"
-                  },
-                  {
-                     "value":"10"
-                  }
-               ]
-            },
-            "responseParam":{
-               "status":"0",
-               "statusCode":"302",
-               "description":"Dear subscriber,You have cancelled your subscription to LOCAL CHANNEL Pack. Thank you for using our service."
-            }
-         }
-        ```
+```php
+     {
+        "requestId":"17",
+        "responseId":"10189519962937756186",
+        "responseTimeStamp":"20190924161246",
+        "channel":"3",
+        "sourceAddress":"224.223.10.27",
+        "operation":"DEACTIVATE",
+        "requestParam":{
+           "data":[
+              {
+                 "name":"OfferCode",
+                 "value":"1001"
+              },
+              {
+                 "name":"Msisdn",
+                 "value":"716848648"
+              },
+              {
+                 "value":"10"
+              }
+           ]
+        },
+        "responseParam":{
+           "status":"0",
+           "statusCode":"302",
+           "description":"Dear subscriber,You have cancelled your subscription to LOCAL CHANNEL Pack. Thank you for using our service."
+        }
+     }
+```
+
 #### v.Send SMS
-    
-        ```php
-         {
-            "requestId":"17",
-            "responseId":"10189519182688287792",
-            "responseTimeStamp":"20190924155948",
-            "channel":"3",
-            "sourceAddress":"224.223.10.27",
-            "operation":"SendSMS",
-            "requestParam":{
-               "data":[
-                  {
-                     "name":"LinkId",
-                     "value":"00010310189519161781865526"
-                  },
-                  {
-                     "name":"Msisdn",
-                     "value":"254795421629"
-                  },
-                  {
-                     "value":"Thank You for Ondemand Subscription SAFRI TEST TUN Subscption test Send sms"
-                  },
-                  {
-                     "name":"OfferCode",
-                     "value":"1003"
-                  },
-                  {
-                     "value":"10"
-                  }
-               ]
-            },
-            "responseParam":{
-               "status":"1",
-               "statusCode":"782",
-               "description":"Send SMS Failed"
-            }
-         }
-        ```
+  
+```php
+     {
+        "requestId":"17",
+        "responseId":"10189519182688287792",
+        "responseTimeStamp":"20190924155948",
+        "channel":"3",
+        "sourceAddress":"224.223.10.27",
+        "operation":"SendSMS",
+        "requestParam":{
+           "data":[
+              {
+                 "name":"LinkId",
+                 "value":"00010310189519161781865526"
+              },
+              {
+                 "name":"Msisdn",
+                 "value":"254795421629"
+              },
+              {
+                 "value":"Thank You for Ondemand Subscription SAFRI TEST TUN Subscption test Send sms"
+              },
+              {
+                 "name":"OfferCode",
+                 "value":"1003"
+              },
+              {
+                 "value":"10"
+              }
+           ]
+        },
+        "responseParam":{
+           "status":"1",
+           "statusCode":"782",
+           "description":"Send SMS Failed"
+        }
+     }
+```
         
 #### vi.Bulk SMS
     
-        ```php
-         {
-            "keyword":"Bulk",
-            "status":"SUCCESS",
-            "statusCode":"SC0000"
-         }
-        ```
+```php
+     {
+        "keyword":"Bulk",
+        "status":"SUCCESS",
+        "statusCode":"SC0000"
+     }
+```
         
 #### vii. Bulk SMS Callback
     
-        ```php
-         {
-            "requestId":"",
-            "requestTimeStamp":"",
-            "channel":"",
-            "operation" :"",
-            "traceID": "".
-            "requestParam": {
-                "data" : [
-                    {
-                        "name" : "Msisdn",
-                        "value":""
-                    },
-                    {
-                        "name" : "CpId",
-                        "value":""
-                    },
-                    {
-                        "name" : "CorrelatorId",
-                        "value":""
-                    },
-                    {
-                        "name" : "Description",
-                        "value":""
-                    },
-                    {
-                        "name" : "DeliveryStatus",
-                        "value":""
-                    },
-                    {
-                        "name" : "Type",
-                        "value":""
-                    },
-                    {
-                        "name" : "CampaignId",
-                        "value":""
-                    }
-                
-                ]
-            }
-         }
-        ```
+```php
+     {
+        "requestId":"",
+        "requestTimeStamp":"",
+        "channel":"",
+        "operation" :"",
+        "traceID": "".
+        "requestParam": {
+            "data" : [
+                {
+                    "name" : "Msisdn",
+                    "value":""
+                },
+                {
+                    "name" : "CpId",
+                    "value":""
+                },
+                {
+                    "name" : "CorrelatorId",
+                    "value":""
+                },
+                {
+                    "name" : "Description",
+                    "value":""
+                },
+                {
+                    "name" : "DeliveryStatus",
+                    "value":""
+                },
+                {
+                    "name" : "Type",
+                    "value":""
+                },
+                {
+                    "name" : "CampaignId",
+                    "value":""
+                }
+            
+            ]
+        }
+     }
+```
 
 Credits
 =======
