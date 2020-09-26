@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p" kind="class" language="PHP" prot="public">
+    <compoundname>Phelix::SafaricomSDP::SDP</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a3e6d31b1f53b7ba717b9213631fb5de8" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>string $live_base_url</definition>
+        <argsstring></argsstring>
+        <name>$live_base_url</name>
+        <initializer>= &quot;https://dsvc.safaricom.com:9480/api/&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Base url for the production environment </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="25" column="13" bodyfile="src/SDP.php" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a1b25086632e75dbab1d35199bdf4f2e7" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>string $sandbox_base_url</definition>
+        <argsstring></argsstring>
+        <name>$sandbox_base_url</name>
+        <initializer>= &quot;https://dtsvc.safaricom.com:8480/api/&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Base url for the testing environment </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="30" column="13" bodyfile="src/SDP.php" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1ad48d203a13c3af525763f5b0fd9069e0" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>string $baseURL</definition>
+        <argsstring></argsstring>
+        <name>$baseURL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Actual base url to be used. Set depending on environment of use </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="36" column="13" bodyfile="src/SDP.php" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a0e1c52c81e653e5f9d8259f1205b2442" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>string $apiUsername</definition>
+        <argsstring></argsstring>
+        <name>$apiUsername</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>API username for the CP - to be retrieved from the CP&apos;s <ref refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p" kindref="compound">SDP</ref> account </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="42" column="13" bodyfile="src/SDP.php" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a1da1430d7264cca006854a6f603f34fb" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>string $apiPassword</definition>
+        <argsstring></argsstring>
+        <name>$apiPassword</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>API password for the CP - to be retrieved from the CP&apos;s <ref refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p" kindref="compound">SDP</ref> account </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="48" column="13" bodyfile="src/SDP.php" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1aed4a3740d14675bba18c8e20250d795e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>integer $cpId</definition>
+        <argsstring></argsstring>
+        <name>$cpId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The identifier for the CP </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="54" column="12" bodyfile="src/SDP.php" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a16bf0dc584c7bcaa244605cae4bbae1e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>string $linkId</definition>
+        <argsstring></argsstring>
+        <name>$linkId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This ID is generated when a user requests for a service in <ref refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p" kindref="compound">SDP</ref>. This parameter is mandatory while delivering content for ondemand services. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="61" column="12" bodyfile="src/SDP.php" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1aedd6f692161bb6bd70f3e4edd769d1bc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>string $cpUsername</definition>
+        <argsstring></argsstring>
+        <name>$cpUsername</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Username allocated by the <ref refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p" kindref="compound">SDP</ref> to the partner after successful registration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="67" column="12" bodyfile="src/SDP.php" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1aefa280e5a5586c9671664c695016babd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>string $token</definition>
+        <argsstring></argsstring>
+        <name>$token</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bearer token to use for all requests </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="73" column="12" bodyfile="src/SDP.php" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a5425eaccbcf038c24d23607b1f7d68b2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Request $request</definition>
+        <argsstring></argsstring>
+        <name>$request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="78" column="12" bodyfile="src/SDP.php" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a54c2b6e5cd51aa9f52ec4a5b54c4080a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__construct</definition>
+        <argsstring>($apiUsername, $apiPassword, $cpId)</argsstring>
+        <name>__construct</name>
+        <param>
+          <declname>$apiUsername</declname>
+        </param>
+        <param>
+          <declname>$apiPassword</declname>
+        </param>
+        <param>
+          <declname>$cpId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p" kindref="compound">SDP</ref> constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$apiUsername</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$apiPassword</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$cpId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="87" column="21" bodyfile="src/SDP.php" bodystart="87" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a4fc76d764097fc2d2d0277564638c71b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>useLive</definition>
+        <argsstring>()</argsstring>
+        <name>useLive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Switch to using live <simplesect kind="return"><para>$this </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="100" column="21" bodyfile="src/SDP.php" bodystart="100" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1ac7f3a08d67c3256854faf33b190614b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>useSandbox</definition>
+        <argsstring>()</argsstring>
+        <name>useSandbox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Switch to using sandbox <simplesect kind="return"><para>$this </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="110" column="21" bodyfile="src/SDP.php" bodystart="110" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a4be4055f3361d4800e16bc2e2e38cda6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the app. Sets token <parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="namespace_phelix_1_1_safaricom_s_d_p_1_1_exceptions" kindref="compound">Exceptions</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="120" column="21" bodyfile="src/SDP.php" bodystart="120" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1ab6fabf97f86e115bd7abcee1ca10cf45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>generateTimestamp</definition>
+        <argsstring>()</argsstring>
+        <name>generateTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="158" column="21" bodyfile="src/SDP.php" bodystart="158" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a57985dcea1cff794c7d5e9dd00e0539f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>generateToken</definition>
+        <argsstring>($username, $password)</argsstring>
+        <name>generateToken</name>
+        <param>
+          <declname>$username</declname>
+        </param>
+        <param>
+          <declname>$password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate a token</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>$username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>$password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>string </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SDPException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SDP.php" line="140" column="22" bodyfile="src/SDP.php" bodystart="140" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Main application class. </para>
+    </detaileddescription>
+    <location file="src/SDP.php" line="19" column="6" bodyfile="src/SDP.php" bodystart="19" bodyend="162"/>
+    <listofallmembers>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a1da1430d7264cca006854a6f603f34fb" prot="private" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>$apiPassword</name></member>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a0e1c52c81e653e5f9d8259f1205b2442" prot="private" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>$apiUsername</name></member>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1ad48d203a13c3af525763f5b0fd9069e0" prot="private" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>$baseURL</name></member>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1aed4a3740d14675bba18c8e20250d795e" prot="public" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>$cpId</name></member>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1aedd6f692161bb6bd70f3e4edd769d1bc" prot="public" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>$cpUsername</name></member>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a16bf0dc584c7bcaa244605cae4bbae1e" prot="public" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>$linkId</name></member>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a3e6d31b1f53b7ba717b9213631fb5de8" prot="private" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>$live_base_url</name></member>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a5425eaccbcf038c24d23607b1f7d68b2" prot="public" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>$request</name></member>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a1b25086632e75dbab1d35199bdf4f2e7" prot="private" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>$sandbox_base_url</name></member>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1aefa280e5a5586c9671664c695016babd" prot="public" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>$token</name></member>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a54c2b6e5cd51aa9f52ec4a5b54c4080a" prot="public" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>__construct</name></member>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1ab6fabf97f86e115bd7abcee1ca10cf45" prot="public" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>generateTimestamp</name></member>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a57985dcea1cff794c7d5e9dd00e0539f" prot="private" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>generateToken</name></member>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a4be4055f3361d4800e16bc2e2e38cda6" prot="public" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>init</name></member>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1a4fc76d764097fc2d2d0277564638c71b" prot="public" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>useLive</name></member>
+      <member refid="class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p_1ac7f3a08d67c3256854faf33b190614b4" prot="public" virt="non-virtual"><scope>Phelix::SafaricomSDP::SDP</scope><name>useSandbox</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

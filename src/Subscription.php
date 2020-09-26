@@ -67,7 +67,7 @@ final class Subscription {
 
         $response = $this->SDP->request->request("post", "public/SDP/activate", $this->SDP->token, $body);
 
-        return Response::getResponse($response);
+        return Utils::getResponse($response);
     }
 
     /**
@@ -105,7 +105,7 @@ final class Subscription {
 
         $response = $this->SDP->request->request("post", "public/SDP/deactivate", $this->SDP->token, $body);
 
-        return Response::getResponse($response);
+        return Utils::getResponse($response);
     }
 
 }

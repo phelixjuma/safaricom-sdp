@@ -1,0 +1,55 @@
+\hypertarget{class_phelix_1_1_safaricom_s_d_p_1_1_premium_s_m_s}{}\doxysection{Premium\+S\+MS Class Reference}
+\label{class_phelix_1_1_safaricom_s_d_p_1_1_premium_s_m_s}\index{PremiumSMS@{PremiumSMS}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_phelix_1_1_safaricom_s_d_p_1_1_premium_s_m_s_aa46ff3e01ed318582ad358a22b0384f7}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p}{S\+DP}} \$\mbox{\hyperlink{class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p}{S\+DP}})
+\item 
+\mbox{\hyperlink{class_phelix_1_1_safaricom_s_d_p_1_1_premium_s_m_s_a907d5a2accd5269cb0bd8202dbf982db}{send\+S\+MS}} (\$request\+Id, \$offer\+Code, \$link\+Id, \$phone\+Number, \$message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_phelix_1_1_safaricom_s_d_p_1_1_premium_s_m_s_aa46ff3e01ed318582ad358a22b0384f7}\label{class_phelix_1_1_safaricom_s_d_p_1_1_premium_s_m_s_aa46ff3e01ed318582ad358a22b0384f7}} 
+\index{PremiumSMS@{PremiumSMS}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PremiumSMS@{PremiumSMS}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p}{S\+DP}}}]{\$\+S\+DP }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_phelix_1_1_safaricom_s_d_p_1_1_subscription}{Subscription}} constructor. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p}{S\+DP}} & {\em \$\+S\+DP} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_phelix_1_1_safaricom_s_d_p_1_1_premium_s_m_s_a907d5a2accd5269cb0bd8202dbf982db}\label{class_phelix_1_1_safaricom_s_d_p_1_1_premium_s_m_s_a907d5a2accd5269cb0bd8202dbf982db}} 
+\index{PremiumSMS@{PremiumSMS}!sendSMS@{sendSMS}}
+\index{sendSMS@{sendSMS}!PremiumSMS@{PremiumSMS}}
+\doxysubsubsection{\texorpdfstring{sendSMS()}{sendSMS()}}
+{\footnotesize\ttfamily send\+S\+MS (\begin{DoxyParamCaption}\item[{}]{\$request\+Id,  }\item[{}]{\$offer\+Code,  }\item[{}]{\$link\+Id,  }\item[{}]{\$phone\+Number,  }\item[{}]{\$message }\end{DoxyParamCaption})}
+
+Send a premium message to a user
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$request\+Id} & Client generated transaction id for tracking purposes \\
+\hline
+string & {\em \$offer\+Code} & This is allocated by partner or Safaricom on successful service creation from \mbox{\hyperlink{class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p}{S\+DP}} \\
+\hline
+string & {\em \$link\+Id} & This ID is generated when a user requests for a service in \mbox{\hyperlink{class_phelix_1_1_safaricom_s_d_p_1_1_s_d_p}{S\+DP}}. \\
+\hline
+integer & {\em \$phone\+Number} & The phone number of the user to receive the message. Format is 2547... \\
+\hline
+string & {\em \$message} & The content/message to send to the user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_premium_s_m_s_8php}{Premium\+S\+M\+S.\+php}}\end{DoxyCompactItemize}

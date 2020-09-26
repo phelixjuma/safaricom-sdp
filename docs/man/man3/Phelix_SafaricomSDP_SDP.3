@@ -1,0 +1,111 @@
+.TH "SDP" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDP
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__construct\fP ($apiUsername, $apiPassword, $cpId)"
+.br
+.ti -1c
+.RI "\fBuseLive\fP ()"
+.br
+.ti -1c
+.RI "\fBuseSandbox\fP ()"
+.br
+.ti -1c
+.RI "\fBinit\fP ()"
+.br
+.ti -1c
+.RI "\fBgenerateTimestamp\fP ()"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB$cpId\fP"
+.br
+.ti -1c
+.RI "\fB$linkId\fP"
+.br
+.ti -1c
+.RI "\fB$cpUsername\fP"
+.br
+.ti -1c
+.RI "\fB$token\fP"
+.br
+.ti -1c
+.RI "\fB$request\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Main application class\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "__construct ( $apiUsername,  $apiPassword,  $cpId)"
+\fBSDP\fP constructor\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$apiUsername\fP 
+.br
+\fI$apiPassword\fP 
+.br
+\fI$cpId\fP 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "generateTimestamp ()"
+
+.SS "init ()"
+Initialize the app\&. Sets token 
+.PP
+\fBExceptions\fP
+.RS 4
+\fI\fBExceptions\fP\fP 
+.RE
+.PP
+
+.SS "useLive ()"
+Switch to using live 
+.PP
+\fBReturns\fP
+.RS 4
+$this 
+.RE
+.PP
+
+.SS "useSandbox ()"
+Switch to using sandbox 
+.PP
+\fBReturns\fP
+.RS 4
+$this 
+.RE
+.PP
+
+.SH "Field Documentation"
+.PP 
+.SS "integer $cpId"
+The identifier for the CP 
+.SS "string $cpUsername"
+Username allocated by the \fBSDP\fP to the partner after successful registration\&. 
+.SS "string $linkId"
+This ID is generated when a user requests for a service in \fBSDP\fP\&. This parameter is mandatory while delivering content for ondemand services\&. 
+.SS "\fBRequest\fP $request"
+
+.SS "string $token"
+Bearer token to use for all requests 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.

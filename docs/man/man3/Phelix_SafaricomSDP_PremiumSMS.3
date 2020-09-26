@@ -1,0 +1,57 @@
+.TH "PremiumSMS" 3 "Sat Sep 26 2020" "Safaricom SDP" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PremiumSMS
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__construct\fP (\fBSDP\fP $\fBSDP\fP)"
+.br
+.ti -1c
+.RI "\fBsendSMS\fP ($requestId, $offerCode, $linkId, $phoneNumber, $message)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "__construct (\fBSDP\fP $SDP)"
+\fBSubscription\fP constructor\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI$SDP\fP 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "sendSMS ( $requestId,  $offerCode,  $linkId,  $phoneNumber,  $message)"
+Send a premium message to a user
+.PP
+\fBParameters\fP
+.RS 4
+\fI$requestId\fP Client generated transaction id for tracking purposes 
+.br
+\fI$offerCode\fP This is allocated by partner or Safaricom on successful service creation from \fBSDP\fP 
+.br
+\fI$linkId\fP This ID is generated when a user requests for a service in \fBSDP\fP\&. 
+.br
+\fI$phoneNumber\fP The phone number of the user to receive the message\&. Format is 2547\&.\&.\&. 
+.br
+\fI$message\fP The content/message to send to the user 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+array 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Safaricom SDP from the source code\&.
