@@ -25,8 +25,7 @@ class SubscriptionTest extends TestCase {
 
         try {
 
-            $sdp = new SDP($_ENV["SFC_SDP_API_USERNAME"], $_ENV["SFC_SDP_API_PASSWORD"], $_ENV["SFC_SDP_CP_ID"],
-                $_ENV["SFC_SDP_LINK_ID"], $_ENV["SFC_SDP_CP_USERNAME"]);
+            $sdp = new SDP($_ENV["SFC_SDP_API_USERNAME"], $_ENV["SFC_SDP_API_PASSWORD"], $_ENV["SFC_SDP_CP_ID"]);
 
             $sdp->useLive()->init();
 
@@ -46,6 +45,16 @@ class SubscriptionTest extends TestCase {
     public function testActivateSubscription() {
 
         $response = $this->subscription->activateSubscription(1, 12, 729941254);
+
+        print_r($response);
+    }
+
+    /**
+     * Test subscription
+     */
+    public function testDeactivateSubscription() {
+
+        $response = $this->subscription->deactivateSubscription(1, 12, 729941254);
 
         print_r($response);
     }

@@ -83,16 +83,12 @@ final class SDP {
      * @param $apiUsername
      * @param $apiPassword
      * @param $cpId
-     * @param null $linkId
-     * @param null $cpUsername
      */
-    public function __construct($apiUsername, $apiPassword, $cpId, $linkId=null, $cpUsername=null) {
+    public function __construct($apiUsername, $apiPassword, $cpId) {
 
         $this->apiUsername = $apiUsername;
         $this->apiPassword = $apiPassword;
         $this->cpId = $cpId;
-        $this->linkId = $linkId;
-        $this->cpUsername = $cpUsername;
 
         $this->baseURL = $this->sandbox_base_url; // by default we use the testing environment
     }
@@ -160,7 +156,7 @@ final class SDP {
     }
 
     public function generateTimestamp() {
-        return date("YYYYmmddHHmmss", time());
+        return date("YYYYMMDDHHmmss", time());
     }
 
 }

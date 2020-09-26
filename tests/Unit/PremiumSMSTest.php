@@ -4,11 +4,18 @@ namespace Phelix\SafaricomSDP\Tests\Unit;
 
 
 use Phelix\SafaricomSDP\Exceptions\SDPException;
+use Phelix\SafaricomSDP\PremiumSMS;
 use Phelix\SafaricomSDP\SDP;
+use Phelix\SafaricomSDP\Subscription;
 use PHPUnit\Framework\TestCase;
 
-class SDPTest extends TestCase {
+class PremiumSMSTest extends TestCase {
 
+
+    /**
+     * @var PremiumSMS $premiumSMS
+     */
+    protected $premiumSMS;
 
     /**
      * Set up the test case.
@@ -17,22 +24,13 @@ class SDPTest extends TestCase {
 
         require_once dirname(__DIR__) .DIRECTORY_SEPARATOR. "LoadEnv.php";
 
-    }
-
-    /**
-     *
-     */
-    public function testInitializingSDP() {
-
         try {
 
             $sdp = new SDP($_ENV["SFC_SDP_API_USERNAME"], $_ENV["SFC_SDP_API_PASSWORD"], $_ENV["SFC_SDP_CP_ID"]);
 
             $sdp->useLive()->init();
 
-            print $sdp->token;
-
-            $this->assertNotEmpty($sdp->token);
+            $this->premiumSMS = new PremiumSMS($sdp);
 
         } catch (SDPException $exception) {
 
@@ -40,6 +38,15 @@ class SDPTest extends TestCase {
 
             $this->assertEmpty($exception->getMessage());
         }
+    }
 
+    /**
+     * Test subscription
+     */
+    public function testSendSMS() {
+
+        $response = $this->premiumSMS->sendSMS(1, 12, 23456799523,729941254, "Phelix Juma");
+
+        print_r($response);
     }
 }
