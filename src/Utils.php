@@ -45,14 +45,7 @@ final class Utils {
         $bodyString = file_get_contents("php://input");
 
         if (!empty($bodyString)) {
-
             $body = json_decode(file_get_contents("php://input"), JSON_FORCE_OBJECT);
-
-            if (is_array($body) && sizeof($body) > 0) {
-                array_walk_recursive($body, function(&$value, $key) {
-                    $value = self::escape($value);
-                });
-            }
         }
         return $body;
     }

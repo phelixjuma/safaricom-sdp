@@ -31,14 +31,14 @@ final class PremiumSMS {
     /**
      * Send a premium message to a user
      *
-     * @param string $requestId Client generated transaction id for tracking purposes
-     * @param string $offerCode This is allocated by partner or Safaricom on successful service creation from SDP
-     * @param string $linkId This ID is generated when a user requests for a service in SDP.
-     * @param integer $phoneNumber The phone number of the user to receive the message. Format is 2547...
-     * @param string $message The content/message to send to the user
+     * @param $requestId
+     * @param $offerCode
+     * @param $phoneNumber
+     * @param $message
+     * @param null $linkId
      * @return array
      */
-    public function sendSMS($requestId, $offerCode, $linkId, $phoneNumber, $message) {
+    public function sendSMS($requestId, $offerCode, $phoneNumber, $message, $linkId=null) {
 
         $body = [
             "requestId"=> $requestId,
@@ -49,7 +49,7 @@ final class PremiumSMS {
                 "data"=> [
                     [
                         "name"=> "LinkId",
-                        "value"=> $linkId
+                        "value"=> !is_null($linkId) ? $linkId : ""
                     ],
                     [
                         "name"=> "Msisdn",
