@@ -472,6 +472,7 @@ This is used when getting and handling bulk sms callback
 #### v.Send SMS
   
 ```php
+    // Success. Note responseParam['status']= 0
      {
         "requestId":"17",
         "responseId":"10189519182688287792",
@@ -502,11 +503,48 @@ This is used when getting and handling bulk sms callback
            ]
         },
         "responseParam":{
-           "status":"1",
-           "statusCode":"782",
-           "description":"Send SMS Failed"
+           "status" : 0,
+           "statusCode]" : 768,
+           "description" : "Mesage for xyz sent for processing..."
         }
      }
+     
+     // Fail. Note responseParam['status']= 1
+          {
+             "requestId":"17",
+             "responseId":"10189519182688287792",
+             "responseTimeStamp":"20190924155948",
+             "channel":"3",
+             "sourceAddress":"224.223.10.27",
+             "operation":"SendSMS",
+             "requestParam":{
+                "data":[
+                   {
+                      "name":"LinkId",
+                      "value":"00010310189519161781865526"
+                   },
+                   {
+                      "name":"Msisdn",
+                      "value":"254795421629"
+                   },
+                   {
+                      "value":"Thank You for Ondemand Subscription SAFRI TEST TUN Subscption test Send sms"
+                   },
+                   {
+                      "name":"OfferCode",
+                      "value":"1003"
+                   },
+                   {
+                      "value":"10"
+                   }
+                ]
+             },
+             "responseParam":{
+                "status" : 1,
+                "statusCode]" : 23,
+                "description" : "Subscription does not exists for the subscriber 7299412..."
+             }
+          }
 ```
         
 #### vi.Bulk SMS
