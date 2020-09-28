@@ -334,6 +334,8 @@ This is used when getting and handling bulk sms callback
 
 <?php 
 
+    // put this code in your callback route (controller)
+    
     use Phelix\SafaricomSDP\Utils;
 
     $responseData = Utils::getCallback();
