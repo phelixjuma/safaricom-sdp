@@ -337,20 +337,38 @@ This is used when getting and handling bulk sms callback
     use Phelix\SafaricomSDP\Utils;
 
     $responseData = Utils::getCallback();
-            
+    
     // get the request id. At this point, you can query your database to get the request so as to be able to update its status
     $requestId = isset($responseData['requestId']) ? $responseData['requestId'] : "";
-    
-    // check the delivery status
-    $deliveryStatus = Utils::getCallbackResponseDataItemValue($responseData['requestParam']['data'], "deliveryStatus");
-    $description = Utils::getCallbackResponseDataItemValue($responseData['requestParam']['data'], "Description");
-    
-    if ($deliveryStatus != 0) {
-        print("Delivery failed. Fail reason " . $description);
+        
+    // check status of the callback
+    if ($responseData['success'] == false) {
+        // callback received has an error
+        
+        // update to failed delivery with the error message as the reason
+        
+        print($responseData['errorMessage']);
+        
     } else {
-        // Delivery successful. Update the request and mark it as delivered
-        print("Message delivered");
+        
+        // correct callback data. 
+        $data = $responseData['data'];
+        
+        // check the delivery status
+ 
+        $status = $data['responseParam']['status'];
+        
+        if ($status != 0) {
+            // failed to deliver message eg when someone has no airtime or is not subscribed
+            print($data['responseParam']['description']);
+        } else {
+            // message successfully delivered. 
+            
+            // update request as being a succss
+            print("Request $requestId successfully delivered");
+        }
     }
+    
             
 ```
 
@@ -430,7 +448,7 @@ This is used when getting and handling bulk sms callback
            ]
         },
         "responseParam":{
-           "status":"0",
+           "status":"1",
            "statusCode":"0816",
            "description":"Thank you, your activation of service 5000_Promotional is not processed."
         }
@@ -504,7 +522,7 @@ This is used when getting and handling bulk sms callback
         },
         "responseParam":{
            "status" : 0,
-           "statusCode]" : 768,
+           "statusCode" : 768,
            "description" : "Mesage for xyz sent for processing..."
         }
      }
@@ -541,7 +559,7 @@ This is used when getting and handling bulk sms callback
              },
              "responseParam":{
                 "status" : 1,
-                "statusCode]" : 23,
+                "statusCode" : 23,
                 "description" : "Subscription does not exists for the subscriber 7299412..."
              }
           }

@@ -40,14 +40,36 @@ final class Utils {
      */
     public static function getCallback() {
 
-        $body = [];
+        $response = [
+            "success" => false,
+            "statusCode" => "",
+            "statusText" => "",
+            "errorCode" => "",
+            "errorMessage" => "",
+            "data" => null,
+            "debugTrace" => null
+        ];
 
         $bodyString = file_get_contents("php://input");
 
         if (!empty($bodyString)) {
+
             $body = json_decode(file_get_contents("php://input"), JSON_FORCE_OBJECT);
+
+            if (isset($body['error']) && !empty($body['error']) && $body['error'] != 0) {
+                $response['statusCode'] = isset($body['status']) ? $body['status'] : "";
+                $response['statusText'] = $body['error'];
+                $response['errorMessage'] = $body['message'];
+                $response['errorCode'] = $response['status'];
+            } else {
+                $response['success'] = true;
+                $response['statusCode'] = 200;
+                $response['statusText'] = "OK";
+                $response['errorCode'] = 0;
+                $response['data'] = $body;
+            }
         }
-        return $body;
+        return $response;
     }
 
     /**

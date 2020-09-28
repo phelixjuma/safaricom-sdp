@@ -99,7 +99,7 @@ final class Request {
                 $this->statusCode = $response->getStatusCode();
                 $this->statusText = $response->getReasonPhrase();
 
-                $this->errorCode = isset($responseBody['errorCode']) ? $responseBody['errorCode'] : "";
+                $this->errorCode = isset($responseBody['error']) ? $responseBody['error'] : "";
                 $this->errorMessage = isset($responseBody['message']) ? $responseBody['message'] : "";
             } else {
 
