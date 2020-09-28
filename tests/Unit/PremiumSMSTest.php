@@ -45,7 +45,7 @@ class PremiumSMSTest extends TestCase {
      */
     public function testSendSMS() {
 
-        $response = $this->premiumSMS->sendSMS(1, 12, 23456799523,729941254, "Phelix Juma");
+        $response = $this->premiumSMS->sendSMS('254722170907', '0010023000811', "1",'254722170907', "Phelix Juma");
 
         print_r($response);
     }
