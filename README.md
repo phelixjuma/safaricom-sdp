@@ -338,23 +338,23 @@ This is used when getting and handling bulk sms callback
     
     use Phelix\SafaricomSDP\Utils;
 
-    $responseData = Utils::getCallback();
+    $response = Utils::getCallback();
     
     // get the request id. At this point, you can query your database to get the request so as to be able to update its status
-    $requestId = isset($responseData['requestId']) ? $responseData['requestId'] : "";
+    $requestId = isset($response['requestId']) ? $response['requestId'] : "";
         
     // check status of the callback
-    if ($responseData['success'] == false) {
+    if ($response['success'] == false) {
         // callback received has an error
         
         // update to failed delivery with the error message as the reason
         
-        print($responseData['errorMessage']);
+        print($response['errorMessage']);
         
     } else {
         
         // correct callback data. 
-        $data = $responseData['data'];
+        $data = $response['data'];
         
         // check the delivery status
  
