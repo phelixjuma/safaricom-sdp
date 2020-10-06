@@ -73,7 +73,7 @@ final class PremiumSMS {
 
         $response = $this->SDP->request->request("post", "public/SDP/sendSMSRequest", $this->SDP->token, $body);
 
-        return Utils::getResponse($response);
+        return Utils::getResponse($response, $this->SDP->debugLevel);
     }
 
 

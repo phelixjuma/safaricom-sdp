@@ -17,9 +17,10 @@ final class Utils {
      * Get response
      *
      * @param Request $response
+     * @param null $debugLevel
      * @return array
      */
-    public static function getResponse(Request $response) {
+    public static function getResponse(Request $response, $debugLevel = null) {
 
         return [
             "success" => $response->success,
@@ -28,7 +29,7 @@ final class Utils {
             "errorCode" => $response->errorCode,
             "errorMessage" => $response->errorMessage,
             "data" => $response->responseBody,
-            "debugTrace" => $_ENV['SFC_SDP_DEBUG'] == 1 ? [
+            "debugTrace" => (!is_null($debugLevel) && $debugLevel == 1) ? [
                 'request' => $response->debugRequestTrace,
                 'response' => $response->debugResponseTrace
             ] : null

@@ -67,6 +67,12 @@ final class SDP {
     public $cpUsername;
 
     /**
+     * Holds the debug level
+     * @var $debugLevel
+     */
+    public $debugLevel;
+
+    /**
      * Bearer token to use for all requests
      * @var string $token
      */
@@ -83,12 +89,14 @@ final class SDP {
      * @param $apiUsername
      * @param $apiPassword
      * @param $cpId
+     * @param null $debugLevel
      */
-    public function __construct($apiUsername, $apiPassword, $cpId) {
+    public function __construct($apiUsername, $apiPassword, $cpId, $debugLevel = null) {
 
         $this->apiUsername = $apiUsername;
         $this->apiPassword = $apiPassword;
         $this->cpId = $cpId;
+        $this->debugLevel = $debugLevel;
 
         $this->baseURL = $this->sandbox_base_url; // by default we use the testing environment
     }
