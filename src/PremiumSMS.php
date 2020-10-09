@@ -40,6 +40,32 @@ final class PremiumSMS {
      */
     public function sendSMS($requestId, $offerCode, $phoneNumber, $message, $linkId=null) {
 
+        $data = [
+            [
+                "name"=> "Msisdn",
+                "value"=> $phoneNumber
+            ],
+            [
+                "name"=> "Content",
+                "value"=> $message
+            ],
+            [
+                "name"=> "OfferCode",
+                "value"=> $offerCode
+            ],
+            [
+                "name"=> "CpId",
+                "value"=> $this->SDP->cpId
+            ]
+        ];
+
+        if (!is_null($linkId)) {
+            $data[] = [
+                "name"=> "LinkId",
+                "value"=> $linkId
+            ];
+        }
+
         $body = [
             "requestId"=> $requestId,
             "requestTimeStamp"=> $this->SDP->generateTimestamp(),
