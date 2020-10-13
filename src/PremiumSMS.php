@@ -72,28 +72,7 @@ final class PremiumSMS {
             "channel"=> "3",
             "operation"=> "SendSMS",
             "requestParam" => [
-                "data"=> [
-                    [
-                        "name"=> "LinkId",
-                        "value"=> !is_null($linkId) ? $linkId : ""
-                    ],
-                    [
-                        "name"=> "Msisdn",
-                        "value"=> $phoneNumber
-                    ],
-                    [
-                        "name"=> "Content",
-                        "value"=> $message
-                    ],
-                    [
-                        "name"=> "OfferCode",
-                        "value"=> $offerCode
-                    ],
-                    [
-                        "name"=> "CpId",
-                        "value"=> $this->SDP->cpId
-                    ]
-                ]
+                "data"=> $data
             ]
         ];
 
