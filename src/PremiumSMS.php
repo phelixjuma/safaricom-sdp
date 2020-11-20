@@ -68,8 +68,8 @@ final class PremiumSMS {
 
         $body = [
             "requestId"=> $requestId,
-            "requestTimeStamp"=> $this->SDP->generateTimestamp(),
-            "channel"=> "3",
+            //"requestTimeStamp"=> $this->SDP->generateTimestamp(),
+            "channel"=> "APIGW",
             "operation"=> "SendSMS",
             "requestParam" => [
                 "data"=> $data
